@@ -29,6 +29,9 @@ WADE_BBR = "wadedw01"
 USA = "United States"
 
 # The coach's minutes by rank in his twelve (40-minute games; 200 minutes), a FIBA rotation's usual shape (judgement).
+# His rank order (`trust`): production, Game Score per 40 minutes, discounted below QUALITY_FULL_MINUTES a game (an NBA
+# player's closed simulated season; a FIBA player's past tournaments; 0 for a player with no record).
+QUALITY_FULL_MINUTES = 24
 MINUTES_BY_RANK = (32, 30, 28, 26, 24, 20, 16, 10, 6, 4, 2, 2)
 # USA committee (judgement, recorded with every selection): positional needs of a twelve, evidence weights.
 QUOTAS = {"G": 4, "F": 4, "C": 2}                # at least this many by group; the rest go to the best available
@@ -180,18 +183,22 @@ def latest_roster(team, e, root=ROOT):
 
 
 # -- USA committee --------------------------------------------------------------------------------------------------
-def non_usa(root=ROOT):
-    """bbr ids of NBA players who are not eligible for the USA (`library/fiba/nba_player_nationality.json`)."""
+def non_usa(on, root=ROOT):
+    """bbr ids of NBA players not eligible for the USA on the date (`library/fiba/nba_player_nationality.json`): every
+    non-US national, and a special case (a US-born player who represented another country, a dual national) from the
+    date he took that country (`effective_from`; with no date, when the file marks him not USA-eligible)."""
     path = Path(root) / "library/fiba/nba_player_nationality.json"
     if not path.is_file():
         raise ValueError("library/fiba/nba_player_nationality.json is missing; the committee cannot tell who is eligible")
     data = _read(path)
-    players = data.get("players", data)
-    out = {k for k in players if k not in ("schema_version", "kind", "special_cases", "research", "sources")}
-    for k in (data.get("special_cases") or {}):
-        case = data["special_cases"][k]
-        if (_v(case.get("national_team")) or USA) != USA:
-            out.add(k)
+    out = set(data["players"])
+    for bbr, case in (data.get("special_cases") or {}).items():
+        team = _v(case.get("national_team")) or USA
+        if team in (USA, "USA"):
+            continue
+        since = case.get("effective_from")
+        if (since and since <= on[:len(since)]) or (not since and case.get("usa_eligible_2005_2014") is False):
+            out.add(bbr)
     return out
 
 
@@ -224,7 +231,7 @@ def committee_board(e, root=ROOT):
     end = dates(season, root)["regular_season_end"]
     players, _ = season_lines(closed_results(root, season, end), end)
     ids = identities(root, season)
-    barred = non_usa(root) | other_rosters(e)
+    barred = non_usa(selection_date(e), root) | other_rosters(e)
     honors = _honors(root, season)
     board = []
     for name, t in players.items():
@@ -336,14 +343,13 @@ def _draw(root, e, event_id, day, question, options):
 # -- rosters and team inputs ----------------------------------------------------------------------------------------
 def lock_rosters(e, rec, day, root=ROOT):
     """The day before the first game: every team's twelve with each player's identity, profile key and the coach's
-    trust (expected minutes on a 40-minute scale: an NBA player's minutes per game in his closed simulated season,
-    a FIBA player's minutes per game in the tournaments behind his profile; 5 for a player with neither)."""
+    trust (production: Game Score per 40 minutes, see QUALITY_FULL_MINUTES)."""
     if rec.get("rosters"):
         return
     from .era import ability_season
     from .national_engine import edition_on
-    trust_fiba = edition_on(e["first_game"], root).get("minutes", {})
-    nba_minutes = _nba_minutes(ability_season(e["first_game"]), root)
+    trust_fiba = edition_on(e["first_game"], root).get("quality", {})
+    nba_quality = _nba_quality(ability_season(e["first_game"]), root)
     rosters = {}
     field = sorted({t for grp in rec["groups"].values() for t in grp["teams"] if not (len(t) <= 3 and t[-1:].isdigit())})
     for team in field:
@@ -363,16 +369,17 @@ def lock_rosters(e, rec, day, root=ROOT):
                                 "fiba_key": None if nba else p["fiba_key"], "position": _fiba_position(p.get("position"))})
         for p in players:
             if p.get("bbr_id"):
-                p["trust"] = round(nba_minutes.get(p["bbr_id"], 5.0 * 48 / 40) * 40 / 48, 1)
+                p["trust"] = round(nba_quality.get(p["bbr_id"], 0.0), 2)
             else:
-                p["trust"] = round(trust_fiba.get(p["fiba_key"], 5.0), 1)
+                p["trust"] = round(trust_fiba.get(p["fiba_key"], 0.0), 2)
         rosters[team] = {"coach": roster.get("coach"), "players": players}
     rec["rosters"] = rosters
     rec["rosters_locked_on"] = day
 
 
-def _nba_minutes(season, root):
-    """{bbr_id: minutes per game} in the season's closed simulated regular season."""
+def _nba_quality(season, root):
+    """{bbr_id: production} in the season's closed simulated regular season: Game Score per 40 minutes, discounted for a
+    player who played under 24 minutes a game (a reserve's per-minute rate is noisy and his role was smaller)."""
     from .season_awards import identities, season_lines
     from .seasons import dates
     from .write_back import closed_results
@@ -382,8 +389,9 @@ def _nba_minutes(season, root):
     out = {}
     for name, t in players.items():
         bbr = WADE_BBR if name == WADE else ids.get(name, (name, None, None))[1]
-        if bbr and t["games"]:
-            out[bbr] = t["minutes"] / t["games"]
+        if bbr and t["games"] and t["minutes"]:
+            mpg = t["minutes"] / t["games"]
+            out[bbr] = t["gmsc"] / t["minutes"] * 40 * min(1.0, mpg / QUALITY_FULL_MINUTES)
     return out
 
 

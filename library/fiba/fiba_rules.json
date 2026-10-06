@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "kind": "fiba_playing_rules",
+  "retrieved": "2026-10-06",
+  "scope": "FIBA senior men's rules for the global tournaments 2006-2014, each compared with the NBA rule of the same season. Rules are known before a tournament starts, so a tournament reads the period that was in force on its dates.",
+  "value_format": "{value, status: sourced|unverified|derived, source, note?}",
+  "periods": {
+    "fiba_pre_2010": {
+      "in_force": {
+        "value": {
+          "from": "before 2006",
+          "to": "2010-09-30"
+        },
+        "status": "sourced",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html",
+        "note": "The 2010 amendments took effect for Level 1 competitions (Olympics, World Championships) on 1 Oct 2010, after the 2010 World Championship. A 2008 edition of the rules (valid 1 Oct 2008) changed only minor articles (listed under changes_2008)."
+      },
+      "tournaments": {
+        "value": [
+          "2006 FIBA World Championship (Japan, 19 Aug - 3 Sep 2006)",
+          "2007 FIBA Americas Championship (Las Vegas, 22 Aug - 2 Sep 2007)",
+          "2008 Olympic Games (Beijing, 10-24 Aug 2008)",
+          "2009 continental championships",
+          "2010 FIBA World Championship (Turkey, 28 Aug - 12 Sep 2010)"
+        ],
+        "status": "derived",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html; https://en.wikipedia.org/wiki/Key_(basketball)",
+        "note": "Assigned by date against the 1 Oct 2010 effective date; Wikipedia (Key) states the rectangle was implemented following the 2010 World Championship, and its 2008 Olympics photo shows the trapezoid."
+      },
+      "three_point_distance_m": {
+        "value": 6.25,
+        "status": "sourced",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html",
+        "note": "\"6,75 m (and not 6,25 m as present)\""
+      },
+      "lane_shape": {
+        "value": "trapezoid: 3.6 m at the free-throw line, 6.0 m at the endline",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Key_(basketball)"
+      },
+      "no_charge_semicircle": {
+        "value": false,
+        "status": "sourced",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html",
+        "note": "introduced by the 2010 amendments"
+      },
+      "shot_clock_reset": {
+        "value": "Reset to 24 seconds whenever the game is stopped for a foul or violation by the defence, and when the ball touches the ring (either team then gets 24).",
+        "status": "unverified",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html",
+        "note": "The 2010 amendment text describes the new 24/14 split; the earlier full-reset wording is inferred from it, not read from a pre-2010 rulebook."
+      },
+      "late_game_timeout_advance": {
+        "value": "After a time-out in the last 2 minutes of the 4th period or an extra period, the throw-in by the team entitled to the ball from its backcourt is taken at the centre line extended.",
+        "status": "sourced",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      }
+    },
+    "fiba_2010_to_2014": {
+      "in_force": {
+        "value": {
+          "from": "2010-10-01",
+          "to": "2014-09-30"
+        },
+        "status": "sourced",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html; FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf",
+        "note": "Level 2 competitions and national federations adopted the court changes from 1 Oct 2012."
+      },
+      "tournaments": {
+        "value": [
+          "2011 continental championships (EuroBasket, FIBA Americas, etc.)",
+          "2012 Olympic Games (London, 29 Jul - 12 Aug 2012)",
+          "2013 continental championships",
+          "2014 FIBA Basketball World Cup (Spain, 30 Aug - 14 Sep 2014)"
+        ],
+        "status": "derived",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html; FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf",
+        "note": "The 2014 rules were valid from 1 Oct 2014, after the 2014 World Cup, so the World Cup played under the 2010/2012 text."
+      },
+      "three_point_distance_m": {
+        "value": 6.75,
+        "status": "sourced",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html; https://en.wikipedia.org/wiki/Three-point_field_goal",
+        "note": "Wikipedia: announced 2008, phased in from October 2010."
+      },
+      "lane_shape": {
+        "value": "rectangle, 4.9 m wide, to the free-throw line 5.80 m from the endline",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Key_(basketball); FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf"
+      },
+      "no_charge_semicircle": {
+        "value": {
+          "radius_m": 1.25,
+          "rule": "a charging foul is never called on contact with a defender standing inside the semicircle"
+        },
+        "status": "sourced",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      },
+      "shot_clock_reset": {
+        "value": "Foul or violation by the defence: throw-in in the backcourt resets to 24; throw-in in the frontcourt keeps the clock if 14 or more remain, otherwise resets to 14. Ball touching the ring: reset to 24 for whichever team gains control.",
+        "status": "sourced",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      },
+      "late_game_timeout_advance": {
+        "value": "After a time-out in the last 2 minutes, the throw-in is taken from the throw-in line in the frontcourt opposite the scorer's table (8.325 m from the endline).",
+        "status": "sourced",
+        "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      }
+    },
+    "fiba_from_2014_10": {
+      "in_force": {
+        "value": {
+          "from": "2014-10-01"
+        },
+        "status": "sourced",
+        "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf"
+      },
+      "tournaments": {
+        "value": [
+          "2015 continental championships",
+          "2016 Olympic Games"
+        ],
+        "status": "derived",
+        "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf"
+      },
+      "shot_clock_reset": {
+        "value": "As 2010, but after the ball touches the ring the clock resets to 14 if the team that had control regains it (24 if the opponents gain it).",
+        "status": "sourced",
+        "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 29.2.3; https://en.wikipedia.org/wiki/Shot_clock"
+      },
+      "timeouts": {
+        "value": "2 in the first half, 3 in the second half (no more than 2 of them in the last 2 minutes of the second half), 1 per extra period; 1 minute each",
+        "status": "sourced",
+        "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 18.2"
+      },
+      "note": "Outside the 2006-2014 window; recorded so later code does not apply the 14-second offensive-rebound reset to 2014 or earlier."
+    }
+  },
+  "constant_2006_2014": {
+    "game_length": {
+      "value": "4 periods of 10 minutes",
+      "status": "sourced",
+      "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 8.1",
+      "note": "FIBA adopted 4 x 10 in 2000; the 2014 text is the same."
+    },
+    "overtime": {
+      "value": "as many extra periods of 5 minutes as needed",
+      "status": "sourced",
+      "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 8"
+    },
+    "shot_clock_seconds": {
+      "value": 24,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Shot_clock; FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 29",
+      "note": "FIBA moved from 30 to 24 seconds in 2000."
+    },
+    "foul_out_limit": {
+      "value": 5,
+      "status": "sourced",
+      "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 40"
+    },
+    "team_foul_penalty": {
+      "value": "A team is in the penalty after 4 team fouls in a period: from the 5th, personal fouls on a player not shooting are 2 free throws. Fouls in an interval count to the next period; all extra-period fouls count as 4th-period fouls (no reset in overtime).",
+      "status": "sourced",
+      "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 41"
+    },
+    "timeouts": {
+      "value": "2 in the first half, 3 in the second half, 1 per extra period; unused time-outs do not carry over; 1 minute each",
+      "status": "sourced",
+      "source": "FIBA Official Basketball Rules Art. 18 as quoted at https://forum.officiating.com/673641-post2.html; FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 18.2",
+      "note": "The 2014 text adds that no more than 2 of the second-half time-outs may be taken in the last 2 minutes; whether that cap existed before the 2014 edition was not established (see research.unresolved)."
+    },
+    "goaltending_and_interference": {
+      "value": "Goaltending: touching a shot above the ring on its downward flight or after it touched the backboard. Once the ball has touched the ring any player may touch the ball (the restrictions end), but touching the basket or backboard while the ball is on the ring, or a defender touching the ball inside the basket, is interference. From 1 Oct 2008, reaching through the basket from below to touch the ball is interference.",
+      "status": "sourced",
+      "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 31.2; FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+    },
+    "offensive_three_seconds": {
+      "value": true,
+      "status": "sourced",
+      "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 26"
+    },
+    "defensive_three_seconds": {
+      "value": false,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Defensive_three-second_violation",
+      "note": "\"The rule is not used in the FIBA ruleset.\""
+    },
+    "zone_defence_legal": {
+      "value": true,
+      "status": "derived",
+      "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf",
+      "note": "The rulebook has no illegal-defence article (searched the 2014 text); zone defence has always been legal in FIBA play."
+    },
+    "team_members": {
+      "value": 12,
+      "status": "sourced",
+      "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 4: \"No more than 12 team members entitled to play, including a captain.\""
+    },
+    "players_dressed": {
+      "value": 12,
+      "status": "derived",
+      "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 4",
+      "note": "All 12 registered team members are entitled to play in every game; there is no inactive list."
+    },
+    "free_throw_line_distance_m": {
+      "value": 5.8,
+      "status": "sourced",
+      "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf Art. 2 (furthest edge from the endline)"
+    },
+    "players_on_floor": {
+      "value": 5,
+      "status": "sourced",
+      "source": "FIBA Official Basketball Rules 2014 (approved 2 Feb 2014, valid 1 Oct 2014), copy at https://faculty.kfupm.edu.sa/PE/rabaanha/Official_Basketball_Rules_2014_Y.pdf"
+    }
+  },
+  "changes_2008": {
+    "value": [
+      "T-shirts under uniforms no longer allowed",
+      "falling and sliding with the ball is legal",
+      "ball enters frontcourt when both feet of the dribbler and the ball touch it",
+      "no backcourt violation for a player who jumps from the frontcourt, gains control in the air and lands in the backcourt",
+      "reaching through the basket from below is interference",
+      "contact from behind or the side to stop a fast break with no defender ahead is unsportsmanlike",
+      "technical foul for excessive swinging of elbows without contact"
+    ],
+    "status": "sourced",
+    "source": "FIBA rule amendments approved by the Central Board, Beijing, 26 April 2008: https://www.ballineurope.com/the-rules-are-changing/ and https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html",
+    "note": "effective 1 Oct 2008, after the 2008 Olympics"
+  },
+  "nba_comparison": {
+    "seasons": "2005-06 through 2014-15 unless noted",
+    "game_length": {
+      "value": "4 periods of 12 minutes",
+      "status": "sourced",
+      "source": "runtime/era.py and library/2003/league/nba_1999_in_season_rules.json (this repository)"
+    },
+    "overtime": {
+      "value": "5 minutes",
+      "status": "sourced",
+      "source": "runtime/era.py and library/2003/league/nba_1999_in_season_rules.json (this repository)"
+    },
+    "shot_clock_seconds": {
+      "value": 24,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Shot_clock",
+      "note": "NBA since 1954. NBA resets to 24 after the ball hits the rim (the 14-second offensive-rebound reset came in 2018-19)."
+    },
+    "foul_out_limit": {
+      "value": 6,
+      "status": "sourced",
+      "source": "runtime/era.py and library/2003/league/nba_1999_in_season_rules.json (this repository)"
+    },
+    "team_foul_penalty": {
+      "value": "Penalty from the 5th team foul in a period (and from the 2nd foul in the last 2 minutes of a period); each overtime period has its own team-foul count",
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Personal_foul_(basketball)",
+      "note": "Wikipedia confirms the NBA resets the count each overtime; the 5th-foul and last-two-minutes thresholds are stated from general knowledge, not a fetched NBA rulebook."
+    },
+    "timeouts": {
+      "value": "6 full (90 s) and 2 twenty-second time-outs per game; 3 per overtime period; changed in 2017-18",
+      "status": "sourced",
+      "source": "https://www.nba.com/news/nba-board-governors-2017-rule-changes (and reporting of the 2017 change, e.g. https://www.si.com/nba/2017/07/12/nba-rule-changes-trade-deadline-timeouts-adam-silver)"
+    },
+    "three_point_distance": {
+      "value": "23 ft 9 in (7.24 m), 22 ft (6.71 m) in the corners",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Three-point_field_goal"
+    },
+    "lane_shape": {
+      "value": "rectangle, 16 ft (4.9 m)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Key_(basketball)"
+    },
+    "restricted_area_arc": {
+      "value": "4 ft arc since 1997-98",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Key_(basketball)",
+      "note": "Wikipedia: the restricted-area arc first appeared in the NBA in 1997-98."
+    },
+    "goaltending_and_interference": {
+      "value": "Basket interference continues after the ball touches the rim: no player may touch the ball while it is on or directly above the rim (inside the cylinder) - the main contrast with FIBA, where the ball may be played once it touches the ring.",
+      "status": "unverified",
+      "source": "NBA Rule 11 (not fetched); general knowledge",
+      "note": "Contrast is well known but the NBA rule text was not read in this session."
+    },
+    "defensive_three_seconds": {
+      "value": true,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Defensive_three-second_violation; runtime/era.py and library/2003/league/nba_1999_in_season_rules.json (this repository)",
+      "note": "NBA since 2001-02 together with legal zone defence."
+    },
+    "zone_defence_legal": {
+      "value": true,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Defensive_three-second_violation (Sun-Sentinel, 13 Apr 2001, \"NBA changes its rules to allow zone defense\"); runtime/era.py and library/2003/league/nba_1999_in_season_rules.json (this repository)"
+    },
+    "players_dressed": {
+      "value": 12,
+      "status": "sourced",
+      "source": "runtime/era.py and library/2003/league/nba_1999_in_season_rules.json (this repository)",
+      "note": "12 active players dress (2003-04 to 2005-06 in this repository); later NBA seasons are read from runtime/era.py when encoded."
+    },
+    "roster_maximum": {
+      "value": 15,
+      "status": "sourced",
+      "source": "runtime/era.py and library/2003/league/nba_1999_in_season_rules.json (this repository)"
+    }
+  },
+  "research": {
+    "unresolved": [
+      "Exact FIBA rulebook edition in force at the 2006 World Championship (2004 or 2006 edition) and its exact text on shot-clock resets before 2010.",
+      "Whether the FIBA cap of 2 second-half time-outs in the last 2 minutes predates the 2014 rules.",
+      "NBA team-foul penalty thresholds and Rule 11 basket-interference text were not read from an NBA rulebook in this session."
+    ],
+    "not_reachable": [
+      "web.archive.org (connection refused / 429) and archive.fiba.com (TLS failure), so the 2006, 2008 and 2010 FIBA rulebook PDFs could not be read directly."
+    ]
+  }
+}

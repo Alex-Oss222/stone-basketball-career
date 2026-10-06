@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "kind": "usa_basketball_senior_men_selection_process",
+  "retrieved": "2026-10-06",
+  "scope": "How USA Basketball chose its senior men's teams, 2005-2014: appointments, announcement dates, pool sizes, commitment model and stated criteria. Which players were chosen is deliberately not recorded (hindsight for the simulation).",
+  "hindsight_gate": "Every item carries known_from, the date it became public. The career clock (2004-12-31 when written) must not read an item before its known_from. These are real-world facts; whether the simulated USA Basketball follows them is a simulation decision, not settled by this file.",
+  "value_format": "{value, status: sourced|unverified|derived, source, known_from?, note?}",
+  "leadership": {
+    "managing_director": {
+      "value": {
+        "name": "Jerry Colangelo",
+        "title": "Managing Director, USA Basketball Men's Senior National Team program",
+        "term": "2005-2008 quadrennium",
+        "appointed": "2005-04-27"
+      },
+      "status": "sourced",
+      "source": "https://www.nba.com/suns/news/colangelo_usab_050427.html; https://jcolangelo.com/usa-basketball-names-jerry-colangeo-director-of-usa-basketball-mens-senior-national-team-program/",
+      "known_from": "2005-04-27",
+      "note": "New position. Responsible for selecting the senior men's coaching staff and players through 2008 and for the teams' preparation (training, exhibitions). Events planned: 2006 World Championship, 2007 FIBA Americas Olympic qualifier if needed, 2008 Olympics if qualified."
+    },
+    "sole_selector": {
+      "value": "Colangelo alone was made responsible for selecting the team (replacing the earlier committee approach).",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/United_States_men%27s_national_basketball_team",
+      "known_from": "2005-04-27"
+    },
+    "managing_director_2009_2012": {
+      "value": "Colangelo continued, styled USA Basketball chairman, and announced the 2009 camp and 2010-12 pool",
+      "status": "sourced",
+      "source": "https://www.foxnews.com/sports/bryant-and-james-to-lead-u-s-national-team (10 Feb 2010); https://nesn.com/2010/02/kendrick-perkins-on-20102012-usa-basketball-team-roster; https://m.lasvegassun.com/blogs/sports/2009/jun/25/team-usas-las-vegas-roster-released/; https://cuse.com/news/2009/7/21/USA3.21.09",
+      "known_from": "2009-06-25",
+      "note": "Exact date of his reappointment for 2009-2012 not found."
+    },
+    "head_coach_2006_2008": {
+      "value": {
+        "name": "Mike Krzyzewski",
+        "term": "2006-2008",
+        "announced": "2005-10 (25, 26 or 28 October; sources differ)"
+      },
+      "status": "sourced",
+      "source": "https://today.duke.edu/2005/10/coachk.html; https://www.dukechronicle.com/article/2006/03/3-blue-devils-join-usa-squad",
+      "known_from": "2005-10-28",
+      "note": "Duke Today dates its story 28 Oct 2005; later Duke articles say he was named 26 Oct 2005. Exact day unverified."
+    },
+    "assistant_coaches_2006_2008": {
+      "value": [
+        "Jim Boeheim",
+        "Mike D'Antoni",
+        "Nate McMillan"
+      ],
+      "status": "sourced",
+      "source": "https://www.dukechronicle.com/article/2006/03/3-blue-devils-join-usa-squad; https://en.wikipedia.org/wiki/United_States_men%27s_national_basketball_team",
+      "known_from": "2006-03-05",
+      "note": "Appointment date not established; in place by the March 2006 pool announcement."
+    },
+    "head_coach_2009_2012": {
+      "value": {
+        "name": "Mike Krzyzewski",
+        "term": "through the 2012 Olympics",
+        "announced": "2009-07-21"
+      },
+      "status": "sourced",
+      "source": "https://dukechronicle.com/article/2009/07/krzyzewski-coach-team-usa-2012-olympics; http://archives-new.honoluluadvertiser.com/article/2009/Jul/21/br/hawaii90721060.html",
+      "known_from": "2009-07-21"
+    },
+    "head_coach_2013_2016": {
+      "value": {
+        "name": "Mike Krzyzewski",
+        "term": "2013-2016",
+        "announced": "2013 (day not established)"
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2012_United_States_men%27s_Olympic_basketball_team",
+      "known_from": "2013-12-31",
+      "note": "\"In 2013, Team USA announced Krzyzewski would return as head coach from 2013 through 2016.\""
+    }
+  },
+  "commitment_model": {
+    "2006_2008": {
+      "value": "Players were asked for a three-year commitment covering the 2006 World Championship, the 2007 FIBA Americas Olympic qualifier (if needed) and the 2008 Olympics, instead of invitations weeks before a tournament. The pool was fluid: players could be added.",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/United_States_men%27s_national_basketball_team; https://en.wikipedia.org/wiki/2008_United_States_men%27s_Olympic_basketball_team; https://wccsports.com/news/2006/3/5/GU_s_Morrison_On_USA_Basketball_Senior_Team.aspx; https://www.dukechronicle.com/article/2006/03/3-blue-devils-join-usa-squad",
+      "known_from": "2005-04-27"
+    },
+    "2010_2012": {
+      "value": "Same model: a national team pool for the 2010 World Championship and 2012 Olympics, \"fluid\" with additions possible; Colangelo cited injuries, family issues and free agency as reasons a strong pool was needed.",
+      "status": "sourced",
+      "source": "https://www.foxnews.com/sports/bryant-and-james-to-lead-u-s-national-team (10 Feb 2010); https://nesn.com/2010/02/kendrick-perkins-on-20102012-usa-basketball-team-roster",
+      "known_from": "2010-02-10"
+    },
+    "2014_2016": {
+      "value": "Initial list of players to be considered for both the 2014 World Cup and the 2016 Olympics",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_United_States_FIBA_Basketball_World_Cup_team",
+      "known_from": "2014-01-31"
+    }
+  },
+  "criteria": {
+    "style_of_play": {
+      "value": "\"In making the player selections we took into consideration the style of play anticipated to be used by the coaching staff.\" (Colangelo, 5 Mar 2006)",
+      "status": "sourced",
+      "source": "https://wccsports.com/news/2006/3/5/GU_s_Morrison_On_USA_Basketball_Senior_Team.aspx; https://www.dukechronicle.com/article/2006/03/3-blue-devils-join-usa-squad",
+      "known_from": "2006-03-05"
+    },
+    "availability": {
+      "value": "Final rosters were cut from the training-camp finalists after camp; withdrawals for injury, free agency, rest or personal reasons were filled from the pool or by new additions (2010: all ten invited 2008 players declined by early July 2010).",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/United_States_men%27s_national_basketball_team; https://www.foxnews.com/sports/bryant-and-james-to-lead-u-s-national-team (10 Feb 2010); https://nesn.com/2010/02/kendrick-perkins-on-20102012-usa-basketball-team-roster",
+      "known_from": "2010-07-15"
+    },
+    "other": {
+      "value": null,
+      "status": "unverified",
+      "source": null,
+      "note": "No published numeric criteria (statistics thresholds, age limits) were found."
+    }
+  },
+  "events": {
+    "2006_world_championship": {
+      "pool_announced": {
+        "value": {
+          "date": "2006-03-05",
+          "players": 23
+        },
+        "status": "sourced",
+        "source": "https://wccsports.com/news/2006/3/5/GU_s_Morrison_On_USA_Basketball_Senior_Team.aspx; https://www.dukechronicle.com/article/2006/03/3-blue-devils-join-usa-squad",
+        "known_from": "2006-03-05",
+        "note": "18 of the 23 had previously played for USA Basketball. Players were expected to report for training in mid-July 2006."
+      },
+      "finalists": {
+        "value": {
+          "date": "2006-07-25",
+          "players": 15
+        },
+        "status": "sourced",
+        "source": "https://cuse.com/news/2006/7/25/USAmball7.25.06 (headline: \"Melo Makes List Of 15 USA Basketball Finalists\")",
+        "known_from": "2006-07-25",
+        "note": "Date from the article URL; number from its headline."
+      },
+      "final_12_announced": {
+        "value": "2006-08-17",
+        "status": "sourced",
+        "source": "https://cuse.com/news/2006/8/17/USA8.17.06; https://www2.kusports.com/news/2006/aug/17/hinrich_tapped_final_us_roster/",
+        "known_from": "2006-08-17",
+        "note": "Two days before the opening game (19 Aug). One player outside the original 23-man pool was on the final 12 (pool additions allowed)."
+      },
+      "tournament": {
+        "value": {
+          "start": "2006-08-19",
+          "end": "2006-09-03",
+          "host": "Japan"
+        },
+        "status": "sourced",
+        "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941",
+        "known_from": "2006-09-03"
+      }
+    },
+    "2007_fiba_americas": {
+      "pool_additions": {
+        "value": {
+          "date": "2007-05-23"
+        },
+        "status": "unverified",
+        "source": "https://lasvegassun.com/news/2007/jul/21/five-questions-team-usa/; https://cuse.com/news/2007/8/21/TeamUSA8.11.07; https://texaslonghorns.com/news/2007/5/23/052307aaa_772 (headline only: \"Durant named to USA Basketball Senior National Team roster\")",
+        "known_from": "2007-05-23",
+        "note": "Players were added to the senior national team roster on or about 23 May 2007 (article dates); number not established."
+      },
+      "mini_camp": {
+        "value": {
+          "dates": "2007-07-16/2007-07-22",
+          "site": "Las Vegas",
+          "note": "six days of training, ending with the USA Basketball Challenge on 22 July"
+        },
+        "status": "unverified",
+        "source": "https://lasvegassun.com/news/2007/jul/21/five-questions-team-usa/; https://cuse.com/news/2007/8/21/TeamUSA8.11.07; https://texaslonghorns.com/news/2007/5/23/052307aaa_772 (headline only: \"Durant named to USA Basketball Senior National Team roster\")",
+        "known_from": "2007-07-22",
+        "note": "Start date inferred from \"six days of training\" ending 22 July."
+      },
+      "final_12_announced": {
+        "value": "after the July 2007 camp (exact date not established)",
+        "status": "unverified",
+        "source": "https://lasvegassun.com/news/2007/jul/21/five-questions-team-usa/; https://cuse.com/news/2007/8/21/TeamUSA8.11.07; https://texaslonghorns.com/news/2007/5/23/052307aaa_772 (headline only: \"Durant named to USA Basketball Senior National Team roster\")",
+        "known_from": "2007-08-21"
+      },
+      "tournament": {
+        "value": {
+          "start": "2007-08-22",
+          "end": "2007-09-02",
+          "host": "Las Vegas"
+        },
+        "status": "sourced",
+        "source": "https://lasvegassun.com/news/2007/jul/21/five-questions-team-usa/; https://cuse.com/news/2007/8/21/TeamUSA8.11.07; https://texaslonghorns.com/news/2007/5/23/052307aaa_772 (headline only: \"Durant named to USA Basketball Senior National Team roster\")",
+        "known_from": "2007-09-02"
+      }
+    },
+    "2008_olympics": {
+      "final_12_announced": {
+        "value": "2008-06-23",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_United_States_men%27s_Olympic_basketball_team; https://www.heraldnet.com/2008/06/23/bryant-james-to-lead-u-s-olympic-basketball-team/; https://dukechronicle.com/article/2008/06/usa-team-officially-announced",
+        "known_from": "2008-06-23",
+        "note": "Announced in Chicago; mini-camp in Las Vegas 20-25 July 2008."
+      },
+      "tournament": {
+        "value": {
+          "start": "2008-08-10",
+          "end": "2008-08-24",
+          "host": "Beijing"
+        },
+        "status": "sourced",
+        "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html",
+        "known_from": "2008-08-24"
+      }
+    },
+    "2009_mini_camp": {
+      "value": {
+        "announced": "2009-06-25",
+        "players": 25,
+        "dates": "2009-07-22/2009-07-25",
+        "site": "Las Vegas",
+        "description": "rising NBA players; the camp fed the 2010-12 pool"
+      },
+      "status": "sourced",
+      "source": "https://m.lasvegassun.com/blogs/sports/2009/jun/25/team-usas-las-vegas-roster-released/; https://cuse.com/news/2009/7/21/USA3.21.09",
+      "known_from": "2009-06-25"
+    },
+    "2010_world_championship": {
+      "pool_announced": {
+        "value": {
+          "date": "2010-02-10",
+          "players": 27
+        },
+        "status": "sourced",
+        "source": "https://www.foxnews.com/sports/bryant-and-james-to-lead-u-s-national-team (10 Feb 2010); https://nesn.com/2010/02/kendrick-perkins-on-20102012-usa-basketball-team-roster",
+        "known_from": "2010-02-10",
+        "note": "Pool for both the 2010 World Championship and the 2012 Olympics; nine members were 2008 gold medallists."
+      },
+      "training_camp": {
+        "value": {
+          "start": "2010-07-24",
+          "site": "Las Vegas",
+          "then": "New York, 9-16 Aug 2010 (15 finalists)"
+        },
+        "status": "unverified",
+        "source": "https://www.nba.com/bulls/news/rose_usa_100728.html; https://zagsblog.com/?p=37450; https://iuhoosiers.com/news/2010/8/24/Gordon_Makes_Team_USA; https://goduke.com/sports/2010/8/21/204980724",
+        "known_from": "2010-08-09",
+        "note": "Las Vegas start date not confirmed; 15 finalists reassembled in New York on 9 Aug."
+      },
+      "final_12_announced": {
+        "value": "2010-08-21 to 2010-08-24 (submitted to FIBA at the technical meeting the day before the 28 Aug start)",
+        "status": "unverified",
+        "source": "https://www.nba.com/bulls/news/rose_usa_100728.html; https://zagsblog.com/?p=37450; https://iuhoosiers.com/news/2010/8/24/Gordon_Makes_Team_USA; https://goduke.com/sports/2010/8/21/204980724",
+        "known_from": "2010-08-24",
+        "note": "Exact announcement day not established."
+      },
+      "tournament": {
+        "value": {
+          "start": "2010-08-28",
+          "end": "2010-09-12",
+          "host": "Turkey"
+        },
+        "status": "sourced",
+        "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934",
+        "known_from": "2010-09-12"
+      }
+    },
+    "2012_olympics": {
+      "finalists_announced": {
+        "value": {
+          "date": "2012-01 (day not established)",
+          "players": 20
+        },
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2012_United_States_men%27s_Olympic_basketball_team",
+        "known_from": "2012-01-31",
+        "note": "\"The initial 20 finalists were announced in January 2012.\""
+      },
+      "final_12_announced": {
+        "value": "2012-07-07",
+        "status": "unverified",
+        "source": "general knowledge; not confirmed from a fetched source",
+        "known_from": "2012-07-07"
+      },
+      "tournament": {
+        "value": {
+          "start": "2012-07-29",
+          "end": "2012-08-12",
+          "host": "London"
+        },
+        "status": "sourced",
+        "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html",
+        "known_from": "2012-08-12"
+      }
+    },
+    "2014_world_cup": {
+      "pool_announced": {
+        "value": {
+          "date": "2014-01 (day not established)",
+          "players": 28
+        },
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_United_States_FIBA_Basketball_World_Cup_team",
+        "known_from": "2014-01-31",
+        "note": "Initial 28-man list for the 2014 World Cup and 2016 Olympics."
+      },
+      "training_camp_roster": {
+        "value": {
+          "date": "2014-07-14",
+          "players": 19
+        },
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_United_States_FIBA_Basketball_World_Cup_team",
+        "known_from": "2014-07-14",
+        "note": "Two players not on the January list were added."
+      },
+      "final_12_announced": {
+        "value": "2014-08 (day not established)",
+        "status": "unverified",
+        "source": "https://en.wikipedia.org/wiki/2014_United_States_FIBA_Basketball_World_Cup_team",
+        "known_from": "2014-08-29"
+      },
+      "tournament": {
+        "value": {
+          "start": "2014-08-30",
+          "end": "2014-09-14",
+          "host": "Spain"
+        },
+        "status": "sourced",
+        "source": "https://www.basketball-reference.com/international/fiba-world-cup/2014.html",
+        "known_from": "2014-09-14"
+      }
+    }
+  },
+  "pool_sizes_summary": {
+    "value": {
+      "2006": 23,
+      "2006_finalists": 15,
+      "2009_camp": 25,
+      "2010_2012_pool": 27,
+      "2010_finalists": 15,
+      "2012_finalists": 20,
+      "2014_pool": 28,
+      "2014_camp": 19,
+      "final_roster": 12
+    },
+    "status": "derived",
+    "source": "events above"
+  },
+  "eligibility": {
+    "usa_citizenship": {
+      "value": "A player must hold U.S. nationality (passport) to play for the USA.",
+      "status": "derived",
+      "source": "FIBA Internal Regulations Book 3 (Players and Officials), 2020 copy at https://basket.ba/wp-content/uploads/2020/04/FIBA-Internal-Regulations-BOOK-3.pdf; rule quoted in https://jamaicabasketball.org/eligibility",
+      "note": "FIBA eligibility is by legal nationality."
+    },
+    "one_naturalised_player": {
+      "value": "A national team in a FIBA competition may have only one player who acquired the nationality of that country by naturalisation or by any other means after reaching 16.",
+      "status": "sourced",
+      "source": "FIBA Internal Regulations Book 3 (Players and Officials), 2020 copy at https://basket.ba/wp-content/uploads/2020/04/FIBA-Internal-Regulations-BOOK-3.pdf; rule quoted in https://jamaicabasketball.org/eligibility",
+      "note": "Wording read from the 2020 Book 3 and secondary sources; the age-16 threshold applied in the 2005-2014 editions was not confirmed from a period copy."
+    },
+    "one_country_rule": {
+      "value": "A player who has played for one national team in an official FIBA competition after age 17 may not play for another country (exceptions only by FIBA decision).",
+      "status": "unverified",
+      "source": "FIBA Internal Regulations Book 3 (Players and Officials), 2020 copy at https://basket.ba/wp-content/uploads/2020/04/FIBA-Internal-Regulations-BOOK-3.pdf; rule quoted in https://jamaicabasketball.org/eligibility",
+      "note": "Standard FIBA rule; the period wording (age 17, exceptions) was not read from a 2005-2014 copy."
+    },
+    "roster_size": {
+      "value": 12,
+      "status": "sourced",
+      "source": "library/fiba/fiba_rules.json constant_2006_2014.team_members"
+    },
+    "territories": {
+      "value": "Puerto Rico and the U.S. Virgin Islands have their own FIBA federations; their players are U.S. citizens and may be eligible for either team, subject to the one-country rule.",
+      "status": "unverified",
+      "source": "general knowledge; see library/fiba/nba_player_nationality.json special_cases"
+    }
+  },
+  "research": {
+    "unresolved": [
+      "Krzyzewski 2005 appointment day (25, 26 or 28 Oct 2005).",
+      "Assistant-coach appointment dates (2005-06, and the 2009-12 staff).",
+      "Colangelo 2009-12 reappointment date.",
+      "2007 FIBA Americas pool additions (number, date) and final-roster day.",
+      "2010 training-camp start and final-roster day; 2012 final-roster day (7 Jul 2012 believed, unconfirmed); 2014 final-roster day.",
+      "FIBA eligibility rule wording in force 2005-2014 (naturalisation age, one-country rule)."
+    ]
+  }
+}

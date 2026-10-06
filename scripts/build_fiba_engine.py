@@ -14,7 +14,7 @@ Each built edition holds (`runtime/national_engine.py`, `runtime/national.py`):
   ratio for every other rate, each shrunk toward no change by the anchors' minutes;
 * `fiba_profiles`: every rostered non-NBA player's FIBA rates from his senior tournaments before the edition, shrunk
   toward a replacement prior by sample, and his defense (a share of his team's defensive margin);
-* `minutes`: each such player's minutes per game in those tournaments (the coach's trust).
+* `quality`: each such player's production in those tournaments, Game Score per 40 minutes (the coach's trust).
 Nothing reads the edition's own results. The configuration below records every judgement.
 """
 import argparse
@@ -55,7 +55,9 @@ CONFIG = {
         "baseline": "olympics_2004"},
     "world_cup_finals_2006": {
         "raw": "library/2006/fiba/fiba_2006_world_championship.json", "slug": "wc06", "tiebreak": "fiba_2004",
-        "host": "Japan", "usa": {"selection": "committee"}, "baseline": "olympics_2004",
+        "host": "Japan", "baseline": "olympics_2004",
+        "usa": {"selection": "committee", "selection_date": "2006-08-17",
+                "basis": "the real final-twelve date (library/fiba/usa_basketball_selection.json)"},
         "qualification": [{"source": "continental_qualifier_2005", "exclude": ["Argentina"], "ranks": [1, 2, 3, 4],
                            "slots": ["Brazil", "Venezuela", "United States", "Panama"], "wildcards": ["Puerto Rico"],
                            "basis": "library/2006/fiba/fiba_2006_qualification.json: four Americas places besides the 2004 "
@@ -77,7 +79,7 @@ CONFIG = {
         "pending": "needs library/fiba/player_tournament_stats/fiba_2006_world_championship.json and the 2007 continental "
                    "championships (roadmap N1)",
         "raw": "library/2008/fiba/olympics_2008.json", "slug": "oly08", "tiebreak": "fiba_2004", "host": "China",
-        "usa": {"selection": "committee"}, "baseline": "fiba_2006_world_championship",
+        "usa": {"selection": "committee", "selection_date": "2008-06-23"}, "baseline": "fiba_2006_world_championship",
         "qualification": [{"source": "continental_qualifier_2007", "ranks": [1, 2], "slots": ["United States", "Argentina"],
                            "basis": "2007 Americas places 1-2"},
                           {"source": "olympic_qualifier_2008", "ranks": [1, 2, 3], "slots": ["Germany", "Croatia", "Greece"],
@@ -187,7 +189,7 @@ def build(edition_id, cfg, root=ROOT):
             if team == "United States" and other["usa"]["selection"] == "committee":
                 continue                                   # the committee's players are NBA players
             e["_all_rosters"].append((team, roster["players"]))
-    e["fiba_profiles"], e["minutes"] = fiba_profiles_all(e, env, ability, index, root)
+    e["fiba_profiles"], e["quality"] = fiba_profiles_all(e, env, ability, index, root)
     del e["_all_rosters"]
     return e
 
@@ -314,6 +316,14 @@ def translation(first_game, env, root=ROOT):
             "method": "scripts/build_fiba_engine.translation"}
 
 
+QUALITY_FULL_MINUTES = 20      # a FIBA player's production is discounted below this many minutes a game (40-minute games)
+
+
+def game_score(p):
+    return (p["pts"] + 0.4 * p["fgm"] - 0.7 * p["fga"] - 0.4 * (p["fta"] - p["ftm"]) + 0.7 * p["orb"] + 0.3 * p["drb"]
+            + p["stl"] + 0.7 * p["ast"] + 0.7 * p["blk"] - 0.4 * p["pf"] - p["tov"])
+
+
 def _months(first, last):
     return (int(last[:4]) - int(first[:4])) * 12 + int(last[5:7]) - int(first[5:7])
 
@@ -387,9 +397,12 @@ def fiba_profiles(e, env, ability, index, root=ROOT):
                 "fiba_key": rp["fiba_key"], "model_version": MODEL, "as_of": e["first_game"],
                 "season_end_year": int(ability[:4]) + 1, "source_sha256": digest,
                 "rates": {k: round(max(0.0, v), 6) for k, v in rates.items()}, "defense": round(max(-6, min(6, defense)), 4)}
-            games = sum(g for _, g, _ in played)
-            if games:
-                minutes[rp["fiba_key"]] = round(mins / games, 2)
+            full = [(p, w) for p, _, w, _ in rows if p.get("minutes") and p.get("fga") is not None and p.get("orb") is not None]
+            m = sum(w * p["minutes"] for p, w in full)
+            if m:
+                gmsc = sum(w * game_score(p) for p, w in full)
+                mpg = sum(p["minutes"] for p, _ in full) / sum(p["games"] for p, _ in full)
+                minutes[rp["fiba_key"]] = round(gmsc / m * 40 * min(1.0, mpg / QUALITY_FULL_MINUTES * 40 / 40), 3)
     return profiles, minutes
 
 

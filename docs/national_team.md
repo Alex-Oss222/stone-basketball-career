@@ -33,7 +33,7 @@ The user's premises, December 31, 2004 on the career clock (`career/Dwyane_Wade/
    - **2005 FIBA Americas Championship:** the USA plays its real roster. USA Basketball sent no NBA players that summer.
 3. **Roster lock**, the day before the first game:
    - **Player type:** a player with a season profile for the ability season plays on his translated NBA profile. Everyone else plays on his FIBA profile.
-   - **Coach's trust:** an NBA player's simulated minutes per game, scaled to 40 minutes. For a FIBA player, his minutes per game in past tournaments, or 5 with no record.
+   - **Coach's trust:** production, measured as Game Score per 40 minutes. For an NBA player it comes from his closed simulated season, discounted below 24 minutes a game. For a FIBA player it comes from his past tournaments, discounted below 20 minutes, and is 0 with no record.
    - **Minutes:** the rotation gives 32, 30, 28, 26, 24, 20, 16, 10, 6, 4, 2 and 2 minutes by rank.
 4. **Games.** Each game day's requests are written once both teams are known, with frozen inputs.
    - **Venue:** neutral, except the host's games.
@@ -73,7 +73,7 @@ The user's premises, December 31, 2004 on the career clock (`career/Dwyane_Wade/
 
 ## Judgements and limits
 
-- **Rotation:** the minutes template and the coach's trust rule.
+- **Rotation:** the minutes template and the coach's trust rule. Ranking by minutes was tried first and dropped: on an all-star USA roster everyone played heavy NBA minutes, and the order was arbitrary.
 - **Committee:** the score, quotas and acceptance chance.
 - **Prior:** the prior level for players without records.
 - **Finish weights:** the multipliers used for the honors.

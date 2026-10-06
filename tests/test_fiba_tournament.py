@@ -99,5 +99,22 @@ class EngineRulesTests(unittest.TestCase):
         self.assertEqual(classify_spatial_zone(21.0, 1.0), "distance_16_three")    # a long two on an NBA court
 
 
+
+class BuiltEditionsTests(unittest.TestCase):
+    def test_engine_editions_match_a_fresh_build(self):
+        import subprocess, sys
+        from pathlib import Path
+        root = Path(__file__).resolve().parents[1]
+        out = subprocess.run([sys.executable, str(root / "scripts/build_fiba_engine.py"), "--check"], cwd=root,
+                             capture_output=True, text=True)
+        self.assertEqual(out.returncode, 0, out.stdout + out.stderr)
+
+    def test_eligibility_follows_the_date_a_player_changed_country(self):
+        from runtime.national import non_usa
+        self.assertNotIn("kamanch01", non_usa("2006-08-17"))          # Germany from July 2008
+        self.assertIn("kamanch01", non_usa("2008-07-20"))
+        self.assertIn("nowitdi01", non_usa("2006-08-17"))
+
+
 if __name__ == "__main__":
     unittest.main()

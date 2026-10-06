@@ -1,0 +1,1989 @@
+{
+  "schema_version": 1,
+  "kind": "nba_player_nationality",
+  "retrieved": "2026-10-06",
+  "scope": "Every player id in library/careers/nba_player_careers.json with a 2003-04 to 2007-08 NBA season (760 ids). \"players\" lists non-U.S. nationals (not eligible for the USA). \"special_cases\" lists foreign-born U.S. nationals, U.S.-born players who represented or became eligible for another country, and dual citizens. Everyone else is treated as USA-eligible.",
+  "counts": {
+    "ids_in_scope": 760,
+    "players_non_us": 135,
+    "special_cases": 53,
+    "special_cases_not_usa_eligible_at_some_point": 25,
+    "treated_usa_eligible_by_default": 572
+  },
+  "method": [
+    "Basketball-Reference birthplace pages (https://www.basketball-reference.com/friv/birthplaces.fcgi?country=XX, every non-U.S. country, 92 pages) matched by bbr_id: 143 in-scope players born outside the 50 states.",
+    "Nationality and representation notes from the Wikipedia list of NBA players born outside the United States (matched by name; 141 of 143).",
+    "Wikidata country of citizenship (P27) for all 760 ids via the Basketball-Reference id (P2685) to find U.S.-born players with a second citizenship (43 found).",
+    "Each special case and doubtful foreign-born case checked against the player's English Wikipedia page (national-team sentences).",
+    "Puerto Rico players are U.S. citizens but represent Puerto Rico (its own FIBA member); they are listed under players (born in Puerto Rico) or special_cases (born in the 50 states)."
+  ],
+  "field_notes": {
+    "status": "sourced = national team confirmed by the cited source; derived = nationality sourced, national team taken to be the country of nationality; unverified = doubtful, see note",
+    "effective_from": "special_cases only: the date the other nationality or first appearance became effective, when known. A simulation date before it should treat the player as USA-eligible (subject to the one-country rule).",
+    "hindsight": "Nationality and representation choices after the career date are hindsight about the player's later life; the simulation should read effective_from before applying a later choice."
+  },
+  "players": {
+    "andrima01": {
+      "name": "Martynas Andriuškevičius",
+      "nationality": "Lithuania",
+      "national_team": "Lithuania",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=LT; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Martynas_Andriu%C5%A1kevi%C4%8Dius",
+      "birth_country_code_bbr": "LT",
+      "note": "Wikipedia list notes: Born in the Lithuanian SSR , represented Lithuania internationally."
+    },
+    "anthojo01": {
+      "name": "Joel Anthony",
+      "nationality": "Canada",
+      "national_team": "Canada",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "CA",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "araujra01": {
+      "name": "Rafael Araújo",
+      "nationality": "Brazil",
+      "national_team": "Brazil",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=BR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Rafael_Ara%C3%BAjo_(basketball)",
+      "birth_country_code_bbr": "BR",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "archiro01": {
+      "name": "Robert Archibald",
+      "nationality": "United Kingdom",
+      "national_team": "Great Britain",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GB; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "GB",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "arroyca01": {
+      "name": "Carlos Arroyo",
+      "nationality": "United States (Puerto Rico)",
+      "national_team": "Puerto Rico",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=PR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Carlos_Arroyo",
+      "birth_country_code_bbr": "PR",
+      "note": "Puerto Rico at the 2004 Olympics and 2006 World Championship (player page)"
+    },
+    "barbole01": {
+      "name": "Leandro Barbosa",
+      "nationality": "Brazil",
+      "national_team": "Brazil",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=BR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "BR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "bareajo01": {
+      "name": "J.J. Barea",
+      "nationality": "United States (Puerto Rico)",
+      "national_team": "Puerto Rico",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=PR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/J._J._Barea",
+      "birth_country_code_bbr": "PR",
+      "note": "senior debut for Puerto Rico July 2006 (player page)"
+    },
+    "bargnan01": {
+      "name": "Andrea Bargnani",
+      "nationality": "Italy",
+      "national_team": "Italy",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=IT; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "IT",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "bateeme01": {
+      "name": "Mengke Bateer",
+      "nationality": "China",
+      "national_team": "China",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CN; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Mengke_Bateer",
+      "birth_country_code_bbr": "CN",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "batises01": {
+      "name": "Esteban Batista",
+      "nationality": "Uruguay",
+      "national_team": "Uruguay",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=UY; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Esteban_Batista",
+      "birth_country_code_bbr": "UY",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "belinma01": {
+      "name": "Marco Belinelli",
+      "nationality": "Italy",
+      "national_team": "Italy",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=IT; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "IT",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "biedran01": {
+      "name": "Andris Biedriņš",
+      "nationality": "Latvia",
+      "national_team": "Latvia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=LV; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "LV",
+      "note": "Wikipedia list notes: Born in the Latvian SSR , represented Latvia internationally."
+    },
+    "bogutan01": {
+      "name": "Andrew Bogut",
+      "nationality": "Australia",
+      "national_team": "Australia",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=AU; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "AU",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "boumtru01": {
+      "name": "Ruben Boumtje-Boumtje",
+      "nationality": "Cameroon",
+      "national_team": "Cameroon",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CM; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Ruben_Boumtje-Boumtje",
+      "birth_country_code_bbr": "CM",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "bradlsh01": {
+      "name": "Shawn Bradley",
+      "nationality": "Germany",
+      "national_team": "Germany",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=DE; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Shawn_Bradley",
+      "birth_country_code_bbr": "DE",
+      "note": "born in West Germany to American parents; obtained German citizenship and played for Germany at EuroBasket 2001 (player page). Dual US/German; the FIBA one-team rule binds him to Germany"
+    },
+    "brezepr01": {
+      "name": "Primož Brezec",
+      "nationality": "Slovenia",
+      "national_team": "Slovenia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SI; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "SI",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented Slovenia internationally."
+    },
+    "burkepa01": {
+      "name": "Pat Burke",
+      "nationality": "Ireland",
+      "national_team": "Ireland",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=IE; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Pat_Burke",
+      "birth_country_code_bbr": "IE",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "cabarza01": {
+      "name": "Žarko Čabarkapa",
+      "nationality": "Montenegro",
+      "national_team": "Serbia and Montenegro / Montenegro",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=RS; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/%C5%BDarko_%C4%8Cabarkapa",
+      "birth_country_code_bbr": "RS",
+      "note": "represented FR Yugoslavia, Serbia and Montenegro and Montenegro (Wikipedia list notes)"
+    },
+    "caldejo01": {
+      "name": "José Calderón",
+      "nationality": "Spain",
+      "national_team": "Spain",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=ES; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "ES",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "dalemsa01": {
+      "name": "Samuel Dalembert",
+      "nationality": "Canada",
+      "national_team": "Canada",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=HT; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Samuel_Dalembert",
+      "birth_country_code_bbr": "HT",
+      "note": "born in Haiti; Canadian citizen 7 Aug 2007; debut at 2007 FIBA Americas (player page). Before Aug 2007 Haitian national only"
+    },
+    "delfica01": {
+      "name": "Carlos Delfino",
+      "nationality": "Argentina",
+      "national_team": "Argentina",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=AR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "AR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "denglu01": {
+      "name": "Luol Deng",
+      "nationality": "United Kingdom",
+      "national_team": "Great Britain",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SS; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "SS",
+      "note": "born in Sudan; naturalized British; represented England and Great Britain (Wikipedia list notes)"
+    },
+    "diawaya01": {
+      "name": "Yakhouba Diawara",
+      "nationality": "France",
+      "national_team": "France",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=FR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Yakhouba_Diawara",
+      "birth_country_code_bbr": "FR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "diawbo01": {
+      "name": "Boris Diaw",
+      "nationality": "France",
+      "national_team": "France",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=FR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "FR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "diazgu01": {
+      "name": "Guillermo Díaz",
+      "nationality": "United States (Puerto Rico)",
+      "national_team": "Puerto Rico",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=PR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Guillermo_Diaz_(basketball)",
+      "birth_country_code_bbr": "PR",
+      "note": "Puerto Rico squad, 2009 FIBA Americas Championship (player page navbox)"
+    },
+    "diopde01": {
+      "name": "DeSagana Diop",
+      "nationality": "Senegal",
+      "national_team": "Senegal",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SN; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/DeSagana_Diop",
+      "birth_country_code_bbr": "SN",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "divacvl01": {
+      "name": "Vlade Divac",
+      "nationality": "Serbia",
+      "national_team": "Serbia and Montenegro (FR Yugoslavia)",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=RS; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "RS",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented SFR Yugoslavia and FR Yugoslavia internationally."
+    },
+    "drobnpr01": {
+      "name": "Predrag Drobnjak",
+      "nationality": "Montenegro",
+      "national_team": "Serbia and Montenegro / Montenegro",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=ME; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Predrag_Drobnjak",
+      "birth_country_code_bbr": "ME",
+      "note": "represented FR Yugoslavia, Serbia and Montenegro and Montenegro (Wikipedia list notes)"
+    },
+    "ebind01": {
+      "name": "Ndudi Ebi",
+      "nationality": "United Kingdom",
+      "national_team": "Nigeria or Great Britain (unresolved)",
+      "status": "unverified",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GB; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Ndudi_Ebi",
+      "birth_country_code_bbr": "GB",
+      "note": "born in England to Nigerian parents, grew up in the US; holds British and Nigerian citizenship (player page); no senior national team found"
+    },
+    "ekeziob01": {
+      "name": "Obinna Ekezie",
+      "nationality": "Nigeria",
+      "national_team": "Nigeria",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=NG; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Obinna_Ekezie",
+      "birth_country_code_bbr": "NG",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "elsonfr01": {
+      "name": "Francisco Elson",
+      "nationality": "Netherlands",
+      "national_team": "Netherlands",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=NL; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Francisco_Elson",
+      "birth_country_code_bbr": "NL",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "fesenky01": {
+      "name": "Kyrylo Fesenko",
+      "nationality": "Ukraine",
+      "national_team": "Ukraine",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=UA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Kyrylo_Fesenko",
+      "birth_country_code_bbr": "UA",
+      "note": "Wikipedia list notes: Born in the Soviet Union . represented Ukraine internationally."
+    },
+    "florelu01": {
+      "name": "Luis Flores",
+      "nationality": "Dominican Republic",
+      "national_team": "Dominican Republic",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=DO; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Luis_Flores_(basketball)",
+      "birth_country_code_bbr": "DO",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "foxri01": {
+      "name": "Rick Fox",
+      "nationality": "Canada",
+      "national_team": "Canada",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Rick_Fox",
+      "birth_country_code_bbr": "CA",
+      "note": "played for Canada at the 1990 and 1994 FIBA World Championships (player page)"
+    },
+    "gadzuda01": {
+      "name": "Dan Gadzuric",
+      "nationality": "Netherlands",
+      "national_team": "Netherlands",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=NL; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Dan_Gadzuric",
+      "birth_country_code_bbr": "NL",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "gaide01": {
+      "name": "Deng Gai",
+      "nationality": "South Sudan",
+      "national_team": "South Sudan / Sudan",
+      "status": "unverified",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SS; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Deng_Gai",
+      "birth_country_code_bbr": "SS",
+      "note": "born in present-day South Sudan (Wikipedia list); national team not confirmed"
+    },
+    "garbajo01": {
+      "name": "Jorge Garbajosa",
+      "nationality": "Spain",
+      "national_team": "Spain",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=ES; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "ES",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "garcial01": {
+      "name": "Alex Garcia",
+      "nationality": "Brazil",
+      "national_team": "Brazil",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=BR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Alex_Garcia_(basketball)",
+      "birth_country_code_bbr": "BR",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "garcifr01": {
+      "name": "Francisco García",
+      "nationality": "Dominican Republic",
+      "national_team": "Dominican Republic",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=DO; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "DO",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "gasolpa01": {
+      "name": "Pau Gasol",
+      "nationality": "Spain",
+      "national_team": "Spain",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=ES; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "ES",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "gelabmi01": {
+      "name": "Mickaël Gelabale",
+      "nationality": "France",
+      "national_team": "France",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GP; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Micka%C3%ABl_Gelabale",
+      "birth_country_code_bbr": "GP",
+      "note": "represented France at EuroBasket 2005 and later (player page)"
+    },
+    "ginobma01": {
+      "name": "Manu Ginóbili",
+      "nationality": "Argentina",
+      "national_team": "Argentina",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=AR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "AR",
+      "note": "also holds Italian citizenship (Wikipedia list notes)"
+    },
+    "giricgo01": {
+      "name": "Gordan Giriček",
+      "nationality": "Croatia",
+      "national_team": "Croatia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=HR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "HR",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented Croatia internationally."
+    },
+    "glynian01": {
+      "name": "Andreas Glyniadakis",
+      "nationality": "Greece",
+      "national_team": "Greece",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Andreas_Glyniadakis",
+      "birth_country_code_bbr": "GR",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "gortama01": {
+      "name": "Marcin Gortat",
+      "nationality": "Poland",
+      "national_team": "Poland",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=PL; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "PL",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "healsh01": {
+      "name": "Shane Heal",
+      "nationality": "Australia",
+      "national_team": "Australia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=AU; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Shane_Heal",
+      "birth_country_code_bbr": "AU",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "herrmwa01": {
+      "name": "Walter Herrmann",
+      "nationality": "Argentina",
+      "national_team": "Argentina",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=AR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Walter_Herrmann",
+      "birth_country_code_bbr": "AR",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "hilarne01": {
+      "name": "Nenê",
+      "nationality": "Brazil",
+      "national_team": "Brazil",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=BR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "BR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "horfoal01": {
+      "name": "Al Horford",
+      "nationality": "Dominican Republic",
+      "national_team": "Dominican Republic",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=DO; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "DO",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "ilgauzy01": {
+      "name": "Zydrunas Ilgauskas",
+      "nationality": "Lithuania",
+      "national_team": "Lithuania",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=LT; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "LT",
+      "note": "Wikipedia list notes: Born in the Lithuanian SSR , represented Lithuania internationally."
+    },
+    "ilicmi01": {
+      "name": "Mile Ilić",
+      "nationality": "Serbia",
+      "national_team": "Serbia and Montenegro / Serbia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=BA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Mile_Ili%C4%87",
+      "birth_country_code_bbr": "BA",
+      "note": "born in Bosnia; represented Serbia and Montenegro; called up by Serbia (player page)"
+    },
+    "ilyaser01": {
+      "name": "Ersan İlyasova",
+      "nationality": "Turkey",
+      "national_team": "Turkey",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=TR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "TR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "jaricma01": {
+      "name": "Marko Jarić",
+      "nationality": "Serbia",
+      "national_team": "Serbia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=RS; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "RS",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented FR Yugoslavia , Serbia and Montenegro , and Serbia internationally."
+    },
+    "jasiksa01": {
+      "name": "Šarūnas Jasikevičius",
+      "nationality": "Lithuania",
+      "national_team": "Lithuania",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=LT; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "LT",
+      "note": "Wikipedia list notes: Born in the Lithuanian SSR , represented Lithuania internationally."
+    },
+    "jianlyi01": {
+      "name": "Yi Jianlian",
+      "nationality": "China",
+      "national_team": "China",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CN; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "CN",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "kasunma01": {
+      "name": "Mario Kasun",
+      "nationality": "Croatia",
+      "national_team": "Croatia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=HR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Mario_Kasun",
+      "birth_country_code_bbr": "HR",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented Croatia internationally."
+    },
+    "khryavi01": {
+      "name": "Viktor Khryapa",
+      "nationality": "Russia",
+      "national_team": "Russia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=UA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Victor_Khryapa",
+      "birth_country_code_bbr": "UA",
+      "note": "born in Ukraine (USSR); represented Russia (Wikipedia list notes)"
+    },
+    "kirilan01": {
+      "name": "Andrei Kirilenko",
+      "nationality": "Russia",
+      "national_team": "Russia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=RU; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "RU",
+      "note": "represented Russia (Wikipedia list notes); U.S. citizenship only from 2010"
+    },
+    "kleizli01": {
+      "name": "Linas Kleiza",
+      "nationality": "Lithuania",
+      "national_team": "Lithuania",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=LT; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "LT",
+      "note": "Wikipedia list notes: Born in the Lithuanian SSR , represented Lithuania internationally."
+    },
+    "korolya01": {
+      "name": "Yaroslav Korolev",
+      "nationality": "Russia",
+      "national_team": "Russia",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=RU; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Yaroslav_Korolev",
+      "birth_country_code_bbr": "RU",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "krstine01": {
+      "name": "Nenad Krstić",
+      "nationality": "Serbia",
+      "national_team": "Serbia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=RS; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "RS",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented FR Yugoslavia , Serbia and Montenegro , and Serbia internationally."
+    },
+    "kukocto01": {
+      "name": "Toni Kukoč",
+      "nationality": "Croatia",
+      "national_team": "Croatia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=HR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "HR",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented SFR Yugoslavia and Croatia internationally."
+    },
+    "kutluib01": {
+      "name": "Ibo Kutluay",
+      "nationality": "Turkey",
+      "national_team": "Turkey",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=TR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/%C4%B0brahim_Kutluay",
+      "birth_country_code_bbr": "TR",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "lampema01": {
+      "name": "Maciej Lampe",
+      "nationality": "Poland",
+      "national_team": "Poland",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=PL; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Maciej_Lampe",
+      "birth_country_code_bbr": "PL",
+      "note": "played for Poland at EuroBasket 2009 (player page)"
+    },
+    "lasmest01": {
+      "name": "Stéphane Lasme",
+      "nationality": "Gabon",
+      "national_team": "Gabon",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/St%C3%A9phane_Lasme",
+      "birth_country_code_bbr": "GA",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "lopezra01": {
+      "name": "Raül López",
+      "nationality": "Spain",
+      "national_team": "Spain",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=ES; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "ES",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "macijar01": {
+      "name": "Arvydas Macijauskas",
+      "nationality": "Lithuania",
+      "national_team": "Lithuania",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=LT; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "LT",
+      "note": "Wikipedia list notes: Born in the Lithuanian SSR , represented Lithuania internationally."
+    },
+    "magloja01": {
+      "name": "Jamaal Magloire",
+      "nationality": "Canada",
+      "national_team": "Canada",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "CA",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "mahinia01": {
+      "name": "Ian Mahinmi",
+      "nationality": "France",
+      "national_team": "France",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=FR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "FR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "markoda01": {
+      "name": "Damir Markota",
+      "nationality": "Croatia",
+      "national_team": "Croatia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=BA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Damir_Markota",
+      "birth_country_code_bbr": "BA",
+      "note": "born in Bosnia, raised in Sweden; declined Sweden, played for Croatia at EuroBasket 2007 (player page)"
+    },
+    "marksse01": {
+      "name": "Sean Marks",
+      "nationality": "New Zealand",
+      "national_team": "New Zealand",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=NZ; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Sean_Marks",
+      "birth_country_code_bbr": "NZ",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "marshra01": {
+      "name": "Rawle Marshall",
+      "nationality": "Guyana",
+      "national_team": "Guyana",
+      "status": "unverified",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GY; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Rawle_Marshall",
+      "birth_country_code_bbr": "GY",
+      "note": "born in Guyana (BBR, Wikipedia list nationality Guyana); citizenship and national team not confirmed"
+    },
+    "mbengdj01": {
+      "name": "D.J. Mbenga",
+      "nationality": "Belgium",
+      "national_team": "Belgium",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CD; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "CD",
+      "note": "born in Zaire; naturalized Belgian; represented Belgium (Wikipedia list notes)"
+    },
+    "medvest01": {
+      "name": "Stanislav Medvedenko",
+      "nationality": "Ukraine",
+      "national_team": "Ukraine",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=UA; https://en.wikipedia.org/wiki/Slava_Medvedenko",
+      "birth_country_code_bbr": "UA",
+      "note": "born in Ukraine (BBR birthplace); not on the Wikipedia list snapshot by this name; national team not confirmed"
+    },
+    "mensapo01": {
+      "name": "Pops Mensah-Bonsu",
+      "nationality": "United Kingdom",
+      "national_team": "Great Britain",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GB; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "GB",
+      "note": "Wikipedia list notes: Born in England to Ghanaian parents, represented Great Britain internationally."
+    },
+    "milicda01": {
+      "name": "Darko Miličić",
+      "nationality": "Serbia",
+      "national_team": "Serbia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=RS; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "RS",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented FR Yugoslavia , Serbia and Montenegro , and Serbia internationally."
+    },
+    "mingya01": {
+      "name": "Yao Ming",
+      "nationality": "China",
+      "national_team": "China",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CN; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "CN",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "moisoje01": {
+      "name": "Jérôme Moïso",
+      "nationality": "France",
+      "national_team": "France",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=FR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/J%C3%A9r%C3%B4me_Mo%C3%AFso",
+      "birth_country_code_bbr": "FR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "moniase01": {
+      "name": "Sergei Monia",
+      "nationality": "Russia",
+      "national_team": "Russia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=RU; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "RU",
+      "note": "Wikipedia list notes: Born in the Soviet Union , represented Russia internationally."
+    },
+    "mutomdi01": {
+      "name": "Dikembe Mutombo",
+      "nationality": "Democratic Republic of the Congo",
+      "national_team": "DR Congo (Zaire)",
+      "status": "unverified",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CD; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Dikembe_Mutombo",
+      "birth_country_code_bbr": "CD",
+      "note": "born in Zaire; naturalized U.S. citizen 2006 (player page); his earlier Zaire national-team play is not confirmed from fetched sources"
+    },
+    "nachbbo01": {
+      "name": "Boštjan Nachbar",
+      "nationality": "Slovenia",
+      "national_team": "Slovenia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SI; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "SI",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented Slovenia internationally."
+    },
+    "najered01": {
+      "name": "Eduardo Nájera",
+      "nationality": "Mexico",
+      "national_team": "Mexico",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=MX; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "MX",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "nashst01": {
+      "name": "Steve Nash",
+      "nationality": "Canada",
+      "national_team": "Canada",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=ZA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "ZA",
+      "note": "born in South Africa; represented Canada (Wikipedia list notes)"
+    },
+    "navarju01": {
+      "name": "Juan Carlos Navarro",
+      "nationality": "Spain",
+      "national_team": "Spain",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=ES; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "ES",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "ndiayma02": {
+      "name": "Mamadou N'Diaye",
+      "nationality": "Senegal",
+      "national_team": "Senegal",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SN; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Mamadou_N%27Diaye_(basketball,_born_1975)",
+      "birth_country_code_bbr": "SN",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "ndongbo01": {
+      "name": "Boniface N'Dong",
+      "nationality": "Senegal",
+      "national_team": "Senegal",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SN; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Boniface_N%27Dong",
+      "birth_country_code_bbr": "SN",
+      "note": "Senegal at 2005 FIBA Africa Championship (player page); also holds German citizenship"
+    },
+    "nestera01": {
+      "name": "Rasho Nesterović",
+      "nationality": "Slovenia",
+      "national_team": "Slovenia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SI; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "SI",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented Slovenia internationally."
+    },
+    "nocioan01": {
+      "name": "Andrés Nocioni",
+      "nationality": "Argentina",
+      "national_team": "Argentina",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=AR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "AR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "nowitdi01": {
+      "name": "Dirk Nowitzki",
+      "nationality": "Germany",
+      "national_team": "Germany",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=DE; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "DE",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "obertfa01": {
+      "name": "Fabricio Oberto",
+      "nationality": "Argentina",
+      "national_team": "Argentina",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=AR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "AR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "okurme01": {
+      "name": "Mehmet Okur",
+      "nationality": "Turkey",
+      "national_team": "Turkey",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=TR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "TR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "olowomi01": {
+      "name": "Michael Olowokandi",
+      "nationality": "Nigeria",
+      "national_team": "Nigeria",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=NG; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Michael_Olowokandi",
+      "birth_country_code_bbr": "NG",
+      "note": "Nigerian citizenship, no British passport as of 2004 (player page); no senior national-team appearance found"
+    },
+    "pachuza01": {
+      "name": "Zaza Pachulia",
+      "nationality": "Georgia",
+      "national_team": "Georgia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GE; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "GE",
+      "note": "represented Georgia (Wikipedia list notes)"
+    },
+    "parketo01": {
+      "name": "Tony Parker",
+      "nationality": "France",
+      "national_team": "France",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=BE; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "BE",
+      "note": "born in Belgium; represented France (Wikipedia list notes)"
+    },
+    "pavloal01": {
+      "name": "Sasha Pavlović",
+      "nationality": "Serbia",
+      "national_team": "Serbia and Montenegro",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=ME; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Aleksandar_Pavlovi%C4%87_(basketball)",
+      "birth_country_code_bbr": "ME",
+      "note": "born in Montenegro; played for Serbia and Montenegro (2004 Olympics); did not play for Serbia or Montenegro afterwards (player page)"
+    },
+    "pecheol01": {
+      "name": "Oleksiy Pecherov",
+      "nationality": "Ukraine",
+      "national_team": "Ukraine",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=UA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Oleksiy_Pecherov",
+      "birth_country_code_bbr": "UA",
+      "note": "Wikipedia list notes: Born in the Soviet Union , represented Ukraine internationally."
+    },
+    "penneki01": {
+      "name": "Kirk Penney",
+      "nationality": "New Zealand",
+      "national_team": "New Zealand",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=NZ; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Kirk_Penney",
+      "birth_country_code_bbr": "NZ",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "perovko01": {
+      "name": "Kosta Perović",
+      "nationality": "Serbia",
+      "national_team": "Serbia and Montenegro / Serbia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=HR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Kosta_Perovi%C4%87",
+      "birth_country_code_bbr": "HR",
+      "note": "born in Croatia; represented FR Yugoslavia, Serbia and Montenegro and Serbia (Wikipedia list notes)"
+    },
+    "petrojo01": {
+      "name": "Johan Petro",
+      "nationality": "France",
+      "national_team": "France",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=FR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "FR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "pietrmi01": {
+      "name": "Mickaël Piétrus",
+      "nationality": "France",
+      "national_team": "France",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GP; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "GP",
+      "note": "born in Guadeloupe (France)"
+    },
+    "planizo01": {
+      "name": "Zoran Planinić",
+      "nationality": "Croatia",
+      "national_team": "Croatia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=BA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "BA",
+      "note": "born in Bosnia; represented Croatia (Wikipedia list notes)"
+    },
+    "podkopa01": {
+      "name": "Pavel Podkolzin",
+      "nationality": "Russia",
+      "national_team": "Russia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=RU; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "RU",
+      "note": "Wikipedia list notes: Born in the Soviet Union , represented Russia internationally."
+    },
+    "polynol01": {
+      "name": "Olden Polynice",
+      "nationality": "Haiti",
+      "national_team": "Haiti",
+      "status": "unverified",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=HT; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Olden_Polynice",
+      "birth_country_code_bbr": "HT",
+      "note": "born in Haiti, grew up in the US (Wikipedia list); citizenship and national-team history not confirmed"
+    },
+    "potapvi01": {
+      "name": "Vitaly Potapenko",
+      "nationality": "Ukraine",
+      "national_team": "Ukraine",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=UA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Vitaly_Potapenko",
+      "birth_country_code_bbr": "UA",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "radmavl01": {
+      "name": "Vladimir Radmanović",
+      "nationality": "Serbia",
+      "national_team": "Serbia and Montenegro / Serbia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=BA; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "BA",
+      "note": "born in Bosnia; represented FR Yugoslavia, Serbia and Montenegro and Serbia (Wikipedia list notes)"
+    },
+    "radojal01": {
+      "name": "Aleksandar Radojević",
+      "nationality": "Bosnia and Herzegovina",
+      "national_team": "Bosnia and Herzegovina",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=ME; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Aleksandar_Radojevi%C4%87",
+      "birth_country_code_bbr": "ME",
+      "note": "born in Montenegro; represented Bosnia and Herzegovina at EuroBasket 2005 (player page)"
+    },
+    "ramospe01": {
+      "name": "Peter John Ramos",
+      "nationality": "United States (Puerto Rico)",
+      "national_team": "Puerto Rico",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=PR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Peter_John_Ramos",
+      "birth_country_code_bbr": "PR",
+      "note": "Puerto Rico at the 2006 World Championship (player page)"
+    },
+    "rebraze01": {
+      "name": "Željko Rebrača",
+      "nationality": "Serbia",
+      "national_team": "Serbia and Montenegro",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=RS; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "RS",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented SFR Yugoslavia , FR Yugoslavia , and Serbia and Montenegro internationally."
+    },
+    "rodrise01": {
+      "name": "Sergio Rodríguez",
+      "nationality": "Spain",
+      "national_team": "Spain",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=ES; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "ES",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "sambch01": {
+      "name": "Cheikh Samb",
+      "nationality": "Senegal",
+      "national_team": "Senegal",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SN; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Cheikh_Samb",
+      "birth_country_code_bbr": "SN",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "schenlu01": {
+      "name": "Luke Schenscher",
+      "nationality": "Australia",
+      "national_team": "Australia",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=AU; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Luke_Schenscher",
+      "birth_country_code_bbr": "AU",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "scolalu01": {
+      "name": "Luis Scola",
+      "nationality": "Argentina",
+      "national_team": "Argentina",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=AR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "AR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "sefolth01": {
+      "name": "Thabo Sefolosha",
+      "nationality": "Switzerland",
+      "national_team": "Switzerland",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CH; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Thabo_Sefolosha",
+      "birth_country_code_bbr": "CH",
+      "note": "born in Switzerland (Wikipedia list nationality Switzerland)"
+    },
+    "senesa01": {
+      "name": "Mouhamed Sene",
+      "nationality": "Senegal",
+      "national_team": "Senegal",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SN; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Mouhamed_Sene",
+      "birth_country_code_bbr": "SN",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "seungha01": {
+      "name": "Ha Seung-Jin",
+      "nationality": "South Korea",
+      "national_team": "South Korea",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=KR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Ha_Seung-jin",
+      "birth_country_code_bbr": "KR",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "slokaur01": {
+      "name": "Uroš Slokar",
+      "nationality": "Slovenia",
+      "national_team": "Slovenia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SI; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Uro%C5%A1_Slokar",
+      "birth_country_code_bbr": "SI",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented Slovenia internationally."
+    },
+    "songada01": {
+      "name": "Darius Songaila",
+      "nationality": "Lithuania",
+      "national_team": "Lithuania",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=LT; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "LT",
+      "note": "Wikipedia list notes: Born in the Lithuanian SSR , represented Lithuania internationally."
+    },
+    "sowpa01": {
+      "name": "Pape Sow",
+      "nationality": "Senegal",
+      "national_team": "Senegal",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SN; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Pape_Sow",
+      "birth_country_code_bbr": "SN",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "spanova01": {
+      "name": "Vassilis Spanoulis",
+      "nationality": "Greece",
+      "national_team": "Greece",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "GR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "stepavl01": {
+      "name": "Vladimir Stepania",
+      "nationality": "Georgia",
+      "national_team": "Georgia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GE; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Vladimir_Stepania",
+      "birth_country_code_bbr": "GE",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    },
+    "stojape01": {
+      "name": "Peja Stojaković",
+      "nationality": "Serbia",
+      "national_team": "Serbia and Montenegro / Serbia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=HR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "HR",
+      "note": "born in Croatia; represented FR Yugoslavia, Serbia and Montenegro and Serbia (Wikipedia list notes)"
+    },
+    "sundobr01": {
+      "name": "Bruno Šundov",
+      "nationality": "Croatia",
+      "national_team": "Croatia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=HR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "HR",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented Croatia internationally."
+    },
+    "tabusyu01": {
+      "name": "Yuta Tabuse",
+      "nationality": "Japan",
+      "national_team": "Japan",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=JP; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Yuta_Tabuse",
+      "birth_country_code_bbr": "JP",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "trybace01": {
+      "name": "Cezary Trybański",
+      "nationality": "Poland",
+      "national_team": "Poland",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=PL; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Cezary_Tryba%C5%84ski",
+      "birth_country_code_bbr": "PL",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "tsakaja01": {
+      "name": "Jake Tsakalidis",
+      "nationality": "Greece",
+      "national_team": "Greece",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GE; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Jake_Tsakalidis",
+      "birth_country_code_bbr": "GE",
+      "note": "born in Georgia; represented Greece (Wikipedia list notes)"
+    },
+    "tskitni01": {
+      "name": "Nikoloz Tskitishvili",
+      "nationality": "Georgia",
+      "national_team": "Georgia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=GE; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "GE",
+      "note": "Wikipedia list notes: Born in the Soviet Union , represented Georgia internationally."
+    },
+    "turiaro01": {
+      "name": "Ronny Turiaf",
+      "nationality": "France",
+      "national_team": "France",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=MQ; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "MQ",
+      "note": "born in Martinique (France)"
+    },
+    "turkohe01": {
+      "name": "Hedo Türkoğlu",
+      "nationality": "Turkey",
+      "national_team": "Turkey",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=TR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "TR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "udrihbe01": {
+      "name": "Beno Udrih",
+      "nationality": "Slovenia",
+      "national_team": "Slovenia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SI; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "SI",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented Slovenia internationally."
+    },
+    "varejan01": {
+      "name": "Anderson Varejão",
+      "nationality": "Brazil",
+      "national_team": "Brazil",
+      "status": "derived",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=BR; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "BR",
+      "note": "national team taken as the country of nationality (Wikipedia list nationality column); no contrary record found"
+    },
+    "vincima01": {
+      "name": "Marcus Vinicius",
+      "nationality": "Brazil",
+      "national_team": "Brazil",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=BR; https://en.wikipedia.org/wiki/Marquinhos_Vieira",
+      "birth_country_code_bbr": "BR",
+      "note": "represents the senior Brazilian national team (Wikipedia, Marquinhos Vieira)"
+    },
+    "vranesl01": {
+      "name": "Slavko Vraneš",
+      "nationality": "Montenegro",
+      "national_team": "Montenegro",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=RS; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Slavko_Vrane%C5%A1",
+      "birth_country_code_bbr": "RS",
+      "note": "represented Montenegro (player page)"
+    },
+    "vujacsa01": {
+      "name": "Sasha Vujačić",
+      "nationality": "Slovenia",
+      "national_team": "Slovenia",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=SI; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "birth_country_code_bbr": "SI",
+      "note": "Wikipedia list notes: Born in SFR Yugoslavia , represented Slovenia internationally."
+    },
+    "welscji01": {
+      "name": "Jiří Welsch",
+      "nationality": "Czech Republic",
+      "national_team": "Czech Republic",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CZ; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Ji%C5%99%C3%AD_Welsch",
+      "birth_country_code_bbr": "CZ",
+      "note": "Wikipedia list notes: Born in Czechoslovakia, represented Czech Republic internationally."
+    },
+    "zhizhwa01": {
+      "name": "Wang Zhizhi",
+      "nationality": "China",
+      "national_team": "China",
+      "status": "sourced",
+      "source": "https://www.basketball-reference.com/friv/birthplaces.fcgi?country=CN; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552); https://en.wikipedia.org/wiki/Wang_Zhizhi",
+      "birth_country_code_bbr": "CN",
+      "note": "national-team play confirmed on the player Wikipedia page"
+    }
+  },
+  "special_cases": {
+    "boozeca01": {
+      "name": "Carlos Boozer",
+      "born": "West Germany (U.S. parents)",
+      "citizenship": [
+        "United States"
+      ],
+      "national_team": "United States",
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Carlos_Boozer; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "note": "Represented the USA (2004 and 2008 Olympics)."
+    },
+    "szczewa02": {
+      "name": "Wally Szczerbiak",
+      "born": "Spain (U.S. parents)",
+      "citizenship": [
+        "United States"
+      ],
+      "national_team": "United States",
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Wally_Szczerbiak; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "note": "Has represented the United States."
+    },
+    "stewami01": {
+      "name": "Michael Stewart",
+      "born": "France (U.S. parents)",
+      "citizenship": [
+        "United States"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Michael_Stewart_(basketball); https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "note": "Born in France to American parents (Wikipedia list nationality United States); no national-team appearance found."
+    },
+    "duncati01": {
+      "name": "Tim Duncan",
+      "born": "U.S. Virgin Islands",
+      "citizenship": [
+        "United States"
+      ],
+      "national_team": "United States",
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Tim_Duncan; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "note": "Represented the USA; announced international retirement in 2004. USVI has its own FIBA federation."
+    },
+    "bellra01": {
+      "name": "Raja Bell",
+      "born": "U.S. Virgin Islands",
+      "citizenship": [
+        "United States"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Raja_Bell; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "note": "U.S. citizen by birth; USVI also has its own federation; no senior national-team appearance found."
+    },
+    "foylead01": {
+      "name": "Adonal Foyle",
+      "born": "Saint Vincent and the Grenadines",
+      "citizenship": [
+        "United States (naturalized)",
+        "Saint Vincent and the Grenadines (unverified)"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Adonal_Foyle; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "note": "Naturalized U.S. citizen (Wikipedia list). Under FIBA rules he would count as the USA's one naturalised player if naturalised after 16; date not established."
+    },
+    "gordobe01": {
+      "name": "Ben Gordon",
+      "born": "England",
+      "citizenship": [
+        "United States",
+        "United Kingdom"
+      ],
+      "national_team": "United States at the 2003 Pan American Games; Great Britain from the 2017 EuroBasket qualifiers (2016)",
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Ben_Gordon; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "note": "Dual citizen; said in 2010 he hoped to play for Great Britain in 2012 but missed the June 2012 camp; first played for GB in 2016. Through 2014 he played for neither senior team in a FIBA event after 2003; whether the 2003 Pan American Games appearance would bar a switch was not established."
+    },
+    "azubuke01": {
+      "name": "Kelenna Azubuike",
+      "born": "England (Nigerian parents)",
+      "citizenship": [
+        "Nigeria",
+        "United States (unverified)"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": "unverified",
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Kelenna_Azubuike; https://en.wikipedia.org/wiki/List_of_NBA_players_born_outside_the_United_States (revision 1378191552)",
+      "note": "Grew up in the US; denied British citizenship (2012 attempt); eligible for Nigeria (player page). Wikipedia list gives nationality Nigeria. U.S. citizenship not confirmed."
+    },
+    "kamanch01": {
+      "name": "Chris Kaman",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Germany (July 2008)"
+      ],
+      "national_team": "Germany",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2008-07",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Chris_Kaman; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "German citizenship July 2008 (great-grandparents); 2008 Olympic qualifier and Olympics, EuroBasket 2011. USA-eligible before then."
+    },
+    "santida01": {
+      "name": "Daniel Santiago",
+      "born": "United States",
+      "citizenship": [
+        "United States"
+      ],
+      "national_team": "Puerto Rico",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "1998",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Daniel_Santiago",
+      "note": "Played for Puerto Rico from 1998 to 2014, incl. 2002 World Championship, 2004 Olympics, 2006 World Championship."
+    },
+    "balkmre01": {
+      "name": "Renaldo Balkman",
+      "born": "United States",
+      "citizenship": [
+        "United States"
+      ],
+      "national_team": "Puerto Rico",
+      "usa_eligible_2005_2014": false,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Renaldo_Balkman",
+      "note": "Has represented Puerto Rico (2013 FIBA Americas Championship); first appearance date not established."
+    },
+    "villach01": {
+      "name": "Charlie Villanueva",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Dominican Republic"
+      ],
+      "national_team": "Dominican Republic",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Charlie_Villanueva; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Represented the USA at youth level; switched sports citizenship to the Dominican Republic in 2009."
+    },
+    "noahjo01": {
+      "name": "Joakim Noah",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "France",
+        "Sweden"
+      ],
+      "national_team": "France",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2009-07-24",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Joakim_Noah; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Chose France; senior debut 24 July 2009 (friendly vs Austria); EuroBasket 2011."
+    },
+    "udokaim01": {
+      "name": "Ime Udoka",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Nigeria"
+      ],
+      "national_team": "Nigeria",
+      "usa_eligible_2005_2014": false,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Ime_Udoka; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Represented Nigeria during his playing career; first appearance date not established (2006 World Championship believed, unconfirmed)."
+    },
+    "dioguik01": {
+      "name": "Ike Diogu",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Nigeria"
+      ],
+      "national_team": "Nigeria",
+      "usa_eligible_2005_2014": false,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Ike_Diogu; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Represented Nigeria (AfroBasket 2015 and 2017 medals; 2017 MVP). First appearance date not established; possibly after 2014."
+    },
+    "blatcan01": {
+      "name": "Andray Blatche",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Philippines (June 2014)"
+      ],
+      "national_team": "Philippines",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2014-06",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Andray_Blatche; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Naturalised Filipino June 2014 for the 2014 World Cup and Asian Games (Philippines' naturalised player)."
+    },
+    "hayesja01": {
+      "name": "Jarvis Hayes",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Qatar (2013)"
+      ],
+      "national_team": "Qatar",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2013",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Jarvis_Hayes; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Naturalised Qatari in 2013; 2013 FIBA Asia Championship."
+    },
+    "dienetr01": {
+      "name": "Travis Diener",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Italy (May 2013)"
+      ],
+      "national_team": "Italy",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2013-05",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Travis_Diener; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Italian citizenship May 2013 through his wife; EuroBasket 2013."
+    },
+    "greenta01": {
+      "name": "Taurean Green",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Georgia (June 2010)"
+      ],
+      "national_team": "Georgia",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2010-06",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Taurean_Green; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Georgian citizenship June 2010; EuroBasket 2011 qualification."
+    },
+    "willish01": {
+      "name": "Shammond Williams",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Georgia"
+      ],
+      "national_team": "Georgia",
+      "usa_eligible_2005_2014": false,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Shammond_Williams; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Obtained Georgian citizenship while at Unics Kazan; played for Georgia. Date not established."
+    },
+    "holcora01": {
+      "name": "Randy Holcomb",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Libya"
+      ],
+      "national_team": "Libya",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2009-08",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Randy_Holcomb; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Libya at the 2009 FIBA Africa Championship."
+    },
+    "fullehi01": {
+      "name": "Hiram Fuller",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Libya"
+      ],
+      "national_team": "Libya",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2009-08",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Hiram_Fuller; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Played for Libya at the 2009 FIBA Africa Championship as Hesham Ali Salem."
+    },
+    "vromaja01": {
+      "name": "Jackson Vroman",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Lebanon"
+      ],
+      "national_team": "Lebanon",
+      "usa_eligible_2005_2014": false,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Jackson_Vroman; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Naturalised Lebanese to play for Lebanon, replacing Joe Vogel as its naturalised player. Date not established."
+    },
+    "freijma01": {
+      "name": "Matt Freije",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Lebanon"
+      ],
+      "national_team": "Lebanon",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2009",
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Matt_Freije; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Lebanese citizenship; his page links him to the 2009 FIBA Asia Championship before he joined a Lebanese club. Appearance not confirmed."
+    },
+    "washida01": {
+      "name": "Darius Washington",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "North Macedonia"
+      ],
+      "national_team": "North Macedonia",
+      "usa_eligible_2005_2014": false,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Darius_Washington_Jr.; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Granted Macedonian citizenship and joined the national team. Date not established."
+    },
+    "cookom01": {
+      "name": "Omar Cook",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Montenegro"
+      ],
+      "national_team": "Montenegro",
+      "usa_eligible_2005_2014": false,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Omar_Cook; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Represented Montenegro. Date not established."
+    },
+    "doubyqu01": {
+      "name": "Quincy Douby",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Montenegro"
+      ],
+      "national_team": "Montenegro (unconfirmed)",
+      "usa_eligible_2005_2014": false,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Quincy_Douby; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Montenegrin citizenship; senior appearance not confirmed."
+    },
+    "bremejr01": {
+      "name": "J.R. Bremer",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Bosnia and Herzegovina"
+      ],
+      "national_team": "Bosnia and Herzegovina",
+      "usa_eligible_2005_2014": false,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/J._R._Bremer; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Represented Bosnia and Herzegovina. Date not established."
+    },
+    "simmoce01": {
+      "name": "Cedric Simmons",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Bulgaria"
+      ],
+      "national_team": "Bulgaria",
+      "usa_eligible_2005_2014": false,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Cedric_Simmons; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Holds Bulgarian citizenship and has played for Bulgaria. Date not established."
+    },
+    "owensan01": {
+      "name": "Andre Owens",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Bulgaria"
+      ],
+      "national_team": "Bulgaria (unconfirmed)",
+      "usa_eligible_2005_2014": false,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Andre_Owens; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Bulgarian citizenship; senior appearance not confirmed."
+    },
+    "hansetr01": {
+      "name": "Travis Hansen",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Russia (March 2008)"
+      ],
+      "national_team": "Russia (eligible from March 2008; appearance unconfirmed)",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2008-03",
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Travis_Hansen; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Russian citizenship March 2008 to allow him to play for Russia at the 2008 Olympics; whether he played was not confirmed."
+    },
+    "obryapa01": {
+      "name": "Patrick O'Bryant",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Central African Republic"
+      ],
+      "national_team": "Central African Republic",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2013-08",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Patrick_O%27Bryant; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Played for the Central African Republic at AfroBasket 2013."
+    },
+    "smithdo04": {
+      "name": "Donta Smith",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Venezuela (Aug 2013)"
+      ],
+      "national_team": "Venezuela",
+      "usa_eligible_2005_2014": false,
+      "effective_from": "2013-08",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Donta_Smith; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Naturalised Venezuelan in August 2013 to play for Venezuela."
+    },
+    "strawdj01": {
+      "name": "D.J. Strawberry",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Cameroon"
+      ],
+      "national_team": "Cameroon",
+      "usa_eligible_2005_2014": true,
+      "effective_from": "2017",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/D._J._Strawberry; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Cleared to play for Cameroon in 2017, after the 2005-2014 period."
+    },
+    "fazekni01": {
+      "name": "Nick Fazekas",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Japan"
+      ],
+      "national_team": "Japan",
+      "usa_eligible_2005_2014": true,
+      "effective_from": "2019",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Nick_Fazekas; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Played for Japan at the 2019 World Cup, after the 2005-2014 period."
+    },
+    "jonesbo02": {
+      "name": "Bobby Jones",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Equatorial Guinea"
+      ],
+      "national_team": "United States (2005 Universiade); Equatorial Guinea passport for club purposes",
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Bobby_Jones_(basketball,_born_1984); Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Acquired an Equatorial Guinean passport for club eligibility; no senior appearance for Equatorial Guinea found."
+    },
+    "allrela01": {
+      "name": "Lance Allred",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Mexico"
+      ],
+      "national_team": "Mexico (2014 Central American and Caribbean Games, unclear)",
+      "usa_eligible_2005_2014": true,
+      "effective_from": "2014",
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Lance_Allred; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Received Mexican citizenship through his father; page mentions the 2014 Central American and Caribbean Games; status of that appearance not established."
+    },
+    "stoudam01": {
+      "name": "Amar'e Stoudemire",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Israel (later)"
+      ],
+      "national_team": "United States",
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Amar%27e_Stoudemire; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Played for the USA (2004 Olympics, 2007 FIBA Americas). Israeli citizenship came later."
+    },
+    "farmajo01": {
+      "name": "Jordan Farmar",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Israel (eligible)"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Jordan_Farmar; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Eligible to apply for Israeli citizenship and to play for Israel; no appearance found."
+    },
+    "dickada01": {
+      "name": "Dan Dickau",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Poland"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Dan_Dickau; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Poland citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "piatker01": {
+      "name": "Eric Piatkowski",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Poland"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Eric_Piatkowski; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Poland citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "drewbr01": {
+      "name": "Bryce Drew",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Italy"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Bryce_Drew; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Italy citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "johnsli01": {
+      "name": "Linton Johnson",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Italy"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Linton_Johnson; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Italy citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "tayloma01": {
+      "name": "Maurice Taylor",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Italy"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Maurice_Taylor; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Italy citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "ackeral01": {
+      "name": "Alex Acker",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Italy"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Alex_Acker; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Italy citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "gillke01": {
+      "name": "Kendall Gill",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "United Kingdom"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Kendall_Gill; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists United Kingdom citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "palacmi01": {
+      "name": "Milt Palacio",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Belize"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Milt_Palacio; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Belize citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "felixno01": {
+      "name": "Noel Felix",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Belize"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Noel_Felix; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Belize citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "gomesry01": {
+      "name": "Ryan Gomes",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Cape Verde"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Ryan_Gomes; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Cape Verde citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "hodgeju01": {
+      "name": "Julius Hodge",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Antigua and Barbuda"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Julius_Hodge; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Antigua and Barbuda citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "hallmi01": {
+      "name": "Mike Hall",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Ireland"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Mike_Hall_(basketball); Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Ireland citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "richaje01": {
+      "name": "Jeremy Richardson",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Georgia"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Jeremy_Richardson; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Georgia citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    },
+    "sandeme01": {
+      "name": "Melvin Sanders",
+      "born": "United States",
+      "citizenship": [
+        "United States",
+        "Georgia"
+      ],
+      "national_team": null,
+      "usa_eligible_2005_2014": true,
+      "effective_from": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Melvin_Sanders; Wikidata country of citizenship (P27) by Basketball-Reference id (P2685), query.wikidata.org, 2026-10-06",
+      "note": "Wikidata lists Georgia citizenship (often a passport for club purposes); no senior national-team appearance found; treated as USA-eligible."
+    }
+  },
+  "research": {
+    "unresolved": [
+      "Players whose national team is unverified: ebind01 (Ndudi Ebi), gaide01 (Deng Gai), marshra01 (Rawle Marshall), mutomdi01 (Dikembe Mutombo), polynol01 (Olden Polynice).",
+      "Special cases unverified: foylead01 (Adonal Foyle), azubuke01 (Kelenna Azubuike), freijma01 (Matt Freije), doubyqu01 (Quincy Douby), owensan01 (Andre Owens), hansetr01 (Travis Hansen), jonesbo02 (Bobby Jones), allrela01 (Lance Allred), dickada01 (Dan Dickau), piatker01 (Eric Piatkowski), drewbr01 (Bryce Drew), johnsli01 (Linton Johnson), tayloma01 (Maurice Taylor), ackeral01 (Alex Acker), gillke01 (Kendall Gill), palacmi01 (Milt Palacio), felixno01 (Noel Felix), gomesry01 (Ryan Gomes), hodgeju01 (Julius Hodge), hallmi01 (Mike Hall), richaje01 (Jeremy Richardson), sandeme01 (Melvin Sanders).",
+      "First-appearance dates missing for several U.S.-born representatives (Udoka, Diogu, Balkman, Williams, Vroman, Washington, Cook, Bremer, Simmons).",
+      "U.S.-born players without a Wikidata second citizenship who nevertheless represented another country would be missed; none known, but the Wikidata check is the only screen for U.S.-born players.",
+      "The NBA's yearly international-player lists (NBA.com, 2003-2008) could not be fetched (web.archive.org refused connections); birthplace pages and the Wikipedia list were used instead."
+    ]
+  }
+}
