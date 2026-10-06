@@ -2,9 +2,9 @@
 
 # Contract | LaPhonso Ellis
 
-Known through: 2004-11-01. [Open interactive contract](ellisla01.html#contract) · [Contract history](ellisla01.html#contract-history)
+Known through: 2004-11-02. [Open interactive contract](ellisla01.html#contract) · [Contract history](ellisla01.html#contract-history)
 
-LaPhonso Ellis: under contract guarantee amended. Evidence cutoff: 2004-11-01.
+LaPhonso Ellis: under contract guarantee amended. Evidence cutoff: 2004-11-02.
 
 ## Current contract
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-11-01",
+  "as_of": "2004-11-02",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-11-01-camp-cut",
+  "current_event": "2004-10-27-miami-heat-at-orlando-magic",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-11-01"
+              "2004-11-02"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-11-01-camp-cut"
+              "2004-10-27-miami-heat-at-orlando-magic"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2004-11-01",
+              "2004-11-02",
               "Current checkpoint",
-              "2004-11-01-camp-cut",
+              "2004-10-27-miami-heat-at-orlando-magic",
               "Recorded",
               {
                 "label": "Owning event",
@@ -91,6 +91,46 @@
               {
                 "label": "Training camp",
                 "href": "#training_camp"
+              }
+            ],
+            [
+              "2004-11-03",
+              "Next Miami game, at New Jersey Nets",
+              "Coach sets the rotation; the engine plays it",
+              "Scheduled",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2004-11-08",
+              "League awards announced: Player of the Week",
+              "League (closed results only)",
+              "Scheduled",
+              {
+                "label": "Awards",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2004-11-11",
+              "Staff rotation review",
+              "Coaching staff (same rule for every player)",
+              "Scheduled; a role request may be logged before it",
+              {
+                "label": "Rule",
+                "href": "../../../docs/front_office.md"
+              }
+            ],
+            [
+              "By 2005-10-31",
+              "Fourth-year (2006-07) team option on the rookie contract",
+              "Miami decides",
+              "Scheduled gate; no outcome implied",
+              {
+                "label": "Contract",
+                "href": "#contract_negotiation"
               }
             ],
             [
@@ -149,7 +189,7 @@
               "2004-11-01",
               "Roster cut to 15",
               "League calendar",
-              "today",
+              "done",
               {
                 "label": "Season",
                 "href": "#calendar"
@@ -159,7 +199,7 @@
               "2004-11-02",
               "Opening night",
               "League calendar",
-              "upcoming",
+              "today",
               {
                 "label": "Season",
                 "href": "#calendar"
@@ -350,6 +390,10 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -386,7 +430,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-01"
+          "value": "2004-11-02"
         },
         {
           "label": "Team",
@@ -592,6 +636,10 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -628,7 +676,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-01"
+          "value": "2004-11-02"
         },
         {
           "label": "Team",
@@ -807,6 +855,10 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -843,7 +895,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-01"
+          "value": "2004-11-02"
         },
         {
           "label": "Team",
@@ -1045,6 +1097,10 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -1081,7 +1137,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-01"
+          "value": "2004-11-02"
         },
         {
           "label": "Team",
@@ -1262,6 +1318,10 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -1298,7 +1358,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-01"
+          "value": "2004-11-02"
         },
         {
           "label": "Team",
@@ -1470,6 +1530,10 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -1506,7 +1570,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-01"
+          "value": "2004-11-02"
         },
         {
           "label": "Team",
@@ -1687,6 +1751,10 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -1723,7 +1791,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-01"
+          "value": "2004-11-02"
         },
         {
           "label": "Team",
@@ -2008,6 +2076,10 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -2044,7 +2116,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-01"
+          "value": "2004-11-02"
         },
         {
           "label": "Team",
@@ -2061,7 +2133,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "7 closed game records in 2004-05 through 2004-11-01. Competitions remain separate.",
+      "summary": "7 closed game records in 2004-05 through 2004-11-02. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2311,6 +2383,10 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -2347,7 +2423,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-01"
+          "value": "2004-11-02"
         },
         {
           "label": "Team",

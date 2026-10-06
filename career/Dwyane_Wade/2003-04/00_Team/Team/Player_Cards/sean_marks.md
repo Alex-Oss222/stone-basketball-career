@@ -7,7 +7,7 @@
 **Contract/control:** September 29, 2003: signs with San Antonio Spurs (signing, real move); his hold and rights leave Miami's books. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
-[Current contract](../../../../Contracts/players/marksse01.html#contract) · [Contract history](../../../../Contracts/players/marksse01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+[Current contract](../../../../Contracts/players/seanmarks.html#contract) · [Contract history](../../../../Contracts/players/seanmarks.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
 
 Contract pages follow the current career date; this personnel assessment retains its stated date.
 <!-- contract-navigation:end -->

@@ -2,9 +2,9 @@
 
 # Contract | Derek Fisher
 
-Known through: 2004-11-01. [Open interactive contract](fishede01.html#contract) · [Contract history](fishede01.html#contract-history)
+Known through: 2004-11-02. [Open interactive contract](fishede01.html#contract) · [Contract history](fishede01.html#contract-history)
 
-Derek Fisher: released. Evidence cutoff: 2004-11-01.
+Derek Fisher: released. Evidence cutoff: 2004-11-02.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Derek Fisher |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Utah Jazz |
 | Control status | released |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

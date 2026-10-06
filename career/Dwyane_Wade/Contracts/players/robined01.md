@@ -2,9 +2,9 @@
 
 # Contract | Eddie Robinson
 
-Known through: 2004-11-01. [Open interactive contract](robined01.html#contract) · [Contract history](robined01.html#contract-history)
+Known through: 2004-11-02. [Open interactive contract](robined01.html#contract) · [Contract history](robined01.html#contract-history)
 
-Eddie Robinson: under contract. Evidence cutoff: 2004-11-01.
+Eddie Robinson: under contract. Evidence cutoff: 2004-11-02.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Eddie Robinson |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Phoenix Suns |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

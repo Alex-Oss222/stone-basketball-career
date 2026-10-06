@@ -1,6 +1,6 @@
 # Miami Heat working depth chart
 
-**As of:** 2004-11-01 · **Staff decision in force:** 2004-10-28 (training-camp decision)  
+**As of:** 2004-11-02 · **Staff decision in force:** 2004-10-28 (training-camp decision)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
@@ -29,7 +29,7 @@
 
 Outside the rotation (dressing as the twelfth man or on the injured list): John Thomas, Maurice Evans, Maurice Baker, John Edwards.
 
-## Injured list on 2004-11-01
+## Injured list on 2004-11-02
 
 Nobody (no list kept yet: the lists start with the game of 2003-11-12). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 
