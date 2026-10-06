@@ -17,5 +17,6 @@ days: 15-21
 - 2004-11-16: Miami Heat 98 at Minnesota Timberwolves 84 — Miami Heat W 98-84 ([Game 1](Game_1.md), event `2004-11-16-miami-heat-at-minnesota-timberwolves`)
 - 2004-11-17: Miami Heat 112 at Milwaukee Bucks 111 — Miami Heat W 112-111 ([Game 2](Game_2.md), event `2004-11-17-miami-heat-at-milwaukee-bucks`)
 - 2004-11-19: Utah Jazz 80 at Miami Heat 92 — Miami Heat W 92-80 ([Game 3](Game_3.md), event `2004-11-19-utah-jazz-at-miami-heat`)
+- 2004-11-21: Philadelphia 76ers 82 at Miami Heat 98 — Miami Heat W 98-82 ([Game 4](Game_4.md), event `2004-11-21-philadelphia-76ers-at-miami-heat`)
 
 ## Consequences
