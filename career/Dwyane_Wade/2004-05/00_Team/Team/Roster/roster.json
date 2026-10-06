@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2004-11-01",
+ "as_of": "2004-12-20",
  "season": "2004-05",
  "team": "Miami Heat",
  "roster_kind": "team_control_register",
@@ -48,9 +48,9 @@
     "PF"
    ],
    "date_of_birth": "1976-04-19",
-   "status": "under_contract",
-   "control": "Signed July 14, 2004 (bird): 4 season(s) from 2004-05, $46,107,709 scheduled ($9,706,886 in 2004-05).",
-   "working_role": "Rotation at PF, staff plan 15 minutes (rotation 2004-12-09)",
+   "status": "traded",
+   "control": "December 20, 2004: traded to Toronto Raptors (2004-12-20-be4b6043a0).",
+   "working_role": "Left Miami (traded)",
    "player_card": "../Player_Cards/scott_padgett.md",
    "bbr_id": "padgesc01"
   },
@@ -171,9 +171,9 @@
     "PF"
    ],
    "date_of_birth": "1980-06-09",
-   "status": "under_contract",
-   "control": "Signed July 14, 2004 (minimum): 1 season(s) from 2004-05, $620,046 scheduled ($620,046 in 2004-05).",
-   "working_role": "Rotation at PF, staff plan 19 minutes (rotation 2004-12-09)",
+   "status": "traded",
+   "control": "December 20, 2004: traded to Toronto Raptors (2004-12-20-be4b6043a0).",
+   "working_role": "Left Miami (traded)",
    "player_card": "../Player_Cards/udonis_haslem.md",
    "bbr_id": "hasleud01"
   },
@@ -302,6 +302,32 @@
    "working_role": "Left Miami (released)",
    "player_card": "../Player_Cards/derek_fisher.md",
    "bbr_id": "fishede01"
+  },
+  {
+   "id": "donyell_marshall",
+   "name": "Donyell Marshall",
+   "positions": [
+    "PF"
+   ],
+   "date_of_birth": "1973-05-18",
+   "status": "under_contract",
+   "control": "Acquired by trade from Toronto Raptors on December 20, 2004: $5,023,850 in 2004-05; contract through 2004-05.",
+   "working_role": "Reserve outside the planned rotation (rotation 2004-12-09)",
+   "player_card": "../Player_Cards/donyell_marshall.md",
+   "bbr_id": "marshdo01"
+  },
+  {
+   "id": "lamond_murray",
+   "name": "Lamond Murray",
+   "positions": [
+    "SF"
+   ],
+   "date_of_birth": "1973-04-20",
+   "status": "under_contract",
+   "control": "Acquired by trade from Toronto Raptors on December 20, 2004: $4,875,000 in 2004-05; contract through 2005-06.",
+   "working_role": "Reserve outside the planned rotation (rotation 2004-12-09)",
+   "player_card": "../Player_Cards/lamond_murray.md",
+   "bbr_id": "murrala01"
   }
  ],
  "sources": [

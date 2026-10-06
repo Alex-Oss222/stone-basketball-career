@@ -1,0 +1,67 @@
+# Lamond Murray | 2004-05 Player Profile
+
+**Team:** Miami Heat · **League:** NBA · **Position:** SF  
+**Age at assessment:** 31 · **Height:** N/A · **Weight:** N/A  
+**Opening assessment:** December 20, 2004 · **Statistics through:** 2004-12-20 
+
+**Contract/control:** Acquired by trade from Toronto Raptors on December 20, 2004: $4,875,000 in 2004-05; contract through 2005-06. [Finance record](../../Finances/cap_sheet.md).
+
+<!-- contract-navigation:start -->
+[Current contract](../../../../Contracts/players/murrala01.html#contract) · [Contract history](../../../../Contracts/players/murrala01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+
+Contract pages follow the current career date; this personnel assessment retains its stated date.
+<!-- contract-navigation:end -->
+
+## Scouting report
+
+**Role:** Reserve outside the planned rotation (staff rotation dated 2004-12-09, [record](../Depth_Chart/Reviews/2004-12-09/rotation.json)).
+
+**Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
+
+**Defense:** Unassessed.
+
+## Player grades
+
+Unassessed. Statistical estimates can be generated from his 2002-03 record with `scripts/import_veteran_stats.py` once the card is included in the import.
+
+## Changes and coaching notes
+
+| Date | Finding and effect on role or grade | Evidence |
+| --- | --- | --- |
+| December 20, 2004 | Joined Miami. Card opened from the league baseline and the signing record; no role assigned. | [Signing record](../../../00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) |
+| 2004-10-28 | Staff rotation of 2004-10-28: reserve outside the planned rotation. | [Rotation](../Depth_Chart/rotation.json) |
+| 2004-11-11 | Staff rotation of 2004-11-11: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2004-11-11/rotation.json) |
+| 2004-11-25 | Staff rotation of 2004-11-25: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2004-11-25/rotation.json) |
+| 2004-12-09 | Staff rotation of 2004-12-09: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2004-12-09/rotation.json) |
+
+## Sources and uncertainty
+
+- **Assessment evidence:** [League baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json), [signing record](../../../00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json).
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-12-09.
+
+<!-- yearly-statistics:start -->
+
+## Regular-season statistics by year
+
+G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
+
+**Coverage:** 2002-03 from the league record; 2003-04 not started.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2002-03 | Toronto Raptors | 33 | N/A | 15.7 | 6.0 | 2.7 | 0.8 | 0.5 | 0.2 | 1.2 | 0.353 | 0.350 | 0.686 |
+| 2004-05 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
+
+## Playoff statistics by year
+
+**Coverage:** No playoff appearances recorded for Miami.
+
+<!-- yearly-statistics:end -->
+
+## Awards and honors
+
+| Season / year | Award or honor | Source |
+| --- | --- | --- |
+| — | No verified awards or honors recorded on this card. | — |

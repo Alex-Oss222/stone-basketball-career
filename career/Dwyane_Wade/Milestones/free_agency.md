@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2004-12-19 · Miami Heat · needs evidence
+Career date: 2004-12-20 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -44,6 +44,8 @@ These are Miami's roster negotiations, not offers to Wade.
 | 2004-11-01 | Bob Sura released at the cut to 15 (non-guaranteed camp contract; no dead money). |
 | 2004-11-01 | Derek Fisher released at the cut to 15 (non-guaranteed camp contract; no dead money). |
 | 2004-11-01 | Chris Mihm released at the cut to 15 (non-guaranteed camp contract; no dead money). |
+| 2004-12-20 | Scott Padgett traded to Toronto Raptors (2004-12-20-be4b6043a0). |
+| 2004-12-20 | Udonis Haslem traded to Toronto Raptors (2004-12-20-be4b6043a0). |
 
 ## Decision authority
 
@@ -77,6 +79,7 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-09/rotation.json)
 - [Rule](../../../docs/front_office.md)
+- [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Closed game](../2004-05/05_Preseason/Game_2.md)
 - [Closed game](../2004-05/05_Preseason/Game_3.md)

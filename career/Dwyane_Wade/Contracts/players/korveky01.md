@@ -2,9 +2,9 @@
 
 # Contract | Kyle Korver
 
-Known through: 2004-12-19. [Open interactive contract](korveky01.html#contract) · [Contract history](korveky01.html#contract-history)
+Known through: 2004-12-20. [Open interactive contract](korveky01.html#contract) · [Contract history](korveky01.html#contract-history)
 
-Kyle Korver: No verified contract record. Evidence cutoff: 2004-12-19.
+Kyle Korver: No verified contract record. Evidence cutoff: 2004-12-20.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Kyle Korver |
-| Club / rights baseline | Sacramento Kings |
+| Club / rights baseline | New Orleans Hornets |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

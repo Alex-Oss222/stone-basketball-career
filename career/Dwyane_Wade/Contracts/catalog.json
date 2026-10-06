@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-12-19",
+  "as_of": "2004-12-20",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -716,7 +716,7 @@
     {
       "player_id": "arroyca01",
       "name": "Carlos Arroyo",
-      "team": "Utah Jazz",
+      "team": "Milwaukee Bucks",
       "status": "under contract",
       "current_contract_id": "arroyca01-2004-08-19",
       "recorded_agreements": 3,
@@ -1454,9 +1454,9 @@
     {
       "player_id": "marshdo01",
       "name": "Donyell Marshall",
-      "team": "Toronto Raptors",
+      "team": "Miami Heat",
       "status": "under contract",
-      "current_contract_id": "marshdo01-2002-08-16",
+      "current_contract_id": "marshdo01-baseline-2003-06-26",
       "recorded_agreements": 1,
       "href": "players/marshdo01.html#contract"
     },
@@ -1472,7 +1472,7 @@
     {
       "player_id": "chrisdo01",
       "name": "Doug Christie",
-      "team": "Sacramento Kings",
+      "team": "New Orleans Hornets",
       "status": "under contract",
       "current_contract_id": "chrisdo01-existing-a6cafd087288",
       "recorded_agreements": 1,
@@ -1670,7 +1670,7 @@
     {
       "player_id": "stricer01",
       "name": "Erick Strickland",
-      "team": "Milwaukee Bucks",
+      "team": "Utah Jazz",
       "status": "under contract",
       "current_contract_id": "stricer01-2003-07-17",
       "recorded_agreements": 2,
@@ -2849,7 +2849,7 @@
     {
       "player_id": "korveky01",
       "name": "Kyle Korver",
-      "team": "Sacramento Kings",
+      "team": "New Orleans Hornets",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2876,9 +2876,9 @@
     {
       "player_id": "murrala01",
       "name": "Lamond Murray",
-      "team": "Toronto Raptors",
+      "team": "Miami Heat",
       "status": "under contract",
-      "current_contract_id": "murrala01-existing-2562be6cfbb5",
+      "current_contract_id": "murrala01-baseline-2003-06-26",
       "recorded_agreements": 1,
       "href": "players/murrala01.html#contract"
     },
@@ -3722,7 +3722,7 @@
     {
       "player_id": "brownpj01",
       "name": "P.J. Brown",
-      "team": "New Orleans Hornets",
+      "team": "Sacramento Kings",
       "status": "under contract",
       "current_contract_id": "brownpj01-2003-07-16",
       "recorded_agreements": 2,
@@ -4325,7 +4325,7 @@
     {
       "player_id": "padgesc01",
       "name": "Scott Padgett",
-      "team": "Miami Heat",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "padgesc01-2004-07-14",
       "recorded_agreements": 4,
@@ -4955,7 +4955,7 @@
     {
       "player_id": "hasleud01",
       "name": "Udonis Haslem",
-      "team": "Miami Heat",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "hasleud01-2004-07-14",
       "recorded_agreements": 2,

@@ -2,9 +2,9 @@
 
 # Contract | Lamond Murray
 
-Known through: 2004-12-19. [Open interactive contract](murrala01.html#contract) · [Contract history](murrala01.html#contract-history)
+Known through: 2004-12-20. [Open interactive contract](murrala01.html#contract) · [Contract history](murrala01.html#contract-history)
 
-Lamond Murray: under contract. Evidence cutoff: 2004-12-19.
+Lamond Murray: under contract. Evidence cutoff: 2004-12-20.
 
 ## Current contract
 
@@ -25,9 +25,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Toronto Raptors |
+| Assigned club | Miami Heat |
 | Signing club | Not recorded |
-| Contract ID | murrala01-existing-2562be6cfbb5 |
+| Contract ID | murrala01-baseline-2003-06-26 |
 | Signing route / evidence basis | salary_pattern |
 | Signing date | Not recorded |
 | Verified first season | Not recorded |
@@ -100,10 +100,11 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-12-20 | Toronto Raptors | Miami Heat | 2004-12-20-be4b6043a0 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) |
 
 ### Evidence and coverage
 
-Term inferred from a constant annual raise in the season salary lists; no contract history page was available, so options and the true final season are not established.
+Acquired from Toronto Raptors on December 20, 2004 by trade (2004-12-20-be4b6043a0); contract carried as the inventory records it (under_contract).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -114,6 +115,10 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 
 ### Current control and contract coverage
 
@@ -122,7 +127,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Lamond Murray |
-| Club / rights baseline | Toronto Raptors |
+| Club / rights baseline | Miami Heat |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -187,9 +192,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Toronto Raptors |
+| Assigned club | Miami Heat |
 | Signing club | Not recorded |
-| Contract ID | murrala01-existing-2562be6cfbb5 |
+| Contract ID | murrala01-baseline-2003-06-26 |
 | Signing route / evidence basis | salary_pattern |
 | Signing date | Not recorded |
 | Verified first season | Not recorded |
@@ -262,10 +267,11 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-12-20 | Toronto Raptors | Miami Heat | 2004-12-20-be4b6043a0 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) |
 
 ### Evidence and coverage
 
-Term inferred from a constant annual raise in the season salary lists; no contract history page was available, so options and the true final season are not established.
+Acquired from Toronto Raptors on December 20, 2004 by trade (2004-12-20-be4b6043a0); contract carried as the inventory records it (under_contract).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -276,6 +282,10 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 
 ## Source records
 
@@ -284,3 +294,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
+- [Dated signed-contract archive](../contract_records.json)

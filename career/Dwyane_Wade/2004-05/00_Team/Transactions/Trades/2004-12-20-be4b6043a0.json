@@ -1,0 +1,186 @@
+{
+ "trade_id": "2004-12-20-be4b6043a0",
+ "date": "2004-12-20",
+ "status": "completed",
+ "kind": "trade",
+ "origin": "offer_from_club",
+ "trade": {
+  "partner": "Toronto Raptors",
+  "miami_out": [
+   "Scott Padgett",
+   "Udonis Haslem"
+  ],
+  "miami_in": [
+   "Donyell Marshall",
+   "Lamond Murray"
+  ],
+  "picks_out": [],
+  "picks_in": []
+ },
+ "valuation": {
+  "partner": "Toronto Raptors",
+  "posture": "middle",
+  "miami_out": [
+   {
+    "player": "Scott Padgett",
+    "bbr_id": "padgesc01",
+    "value": -0.024,
+    "production": 1.386,
+    "contract_term": -1.86,
+    "relief": 0.0,
+    "salary": 9706886,
+    "years": 3,
+    "age": 28,
+    "basis": "production value 10.5 (2002-03 blended with closed 2003-04 games)",
+    "now": 1.386,
+    "future": 0.22,
+    "walk_year": false
+   },
+   {
+    "player": "Udonis Haslem",
+    "bbr_id": "hasleud01",
+    "value": 0.508,
+    "production": 0.335,
+    "contract_term": 0.173,
+    "relief": 0.0,
+    "salary": 620046,
+    "years": 1,
+    "age": 24,
+    "basis": "production value 6.3 (2002-03 blended with closed 2003-04 games)",
+    "now": 0.335,
+    "future": 0.508,
+    "walk_year": false
+   }
+  ],
+  "miami_in": [
+   {
+    "player": "Donyell Marshall",
+    "bbr_id": "marshdo01",
+    "value": 1.956,
+    "production": 1.99,
+    "contract_term": -0.034,
+    "relief": 0.0,
+    "salary": 5023850,
+    "years": 1,
+    "age": 31,
+    "basis": "production value 13.0 (2002-03 blended with closed 2003-04 games)",
+    "now": 1.99,
+    "future": -0.034,
+    "walk_year": true
+   },
+   {
+    "player": "Lamond Murray",
+    "bbr_id": "murrala01",
+    "value": -0.031,
+    "production": 0.0,
+    "contract_term": -0.611,
+    "relief": 0.0,
+    "salary": 4875000,
+    "years": 2,
+    "age": 31,
+    "basis": "production value 4.4 (2002-03 blended with closed 2003-04 games)",
+    "now": 0.0,
+    "future": -0.611,
+    "walk_year": false
+   }
+  ],
+  "picks_out": [],
+  "picks_in": [],
+  "partner_gain": 0.118,
+  "miami_gain": 0.242,
+  "miami_out_view": 1.519,
+  "dump": false,
+  "shed": -14966854,
+  "objective_gain": 0.118,
+  "untouchable": []
+ },
+ "ranking": {
+  "trade": {
+   "partner": "Toronto Raptors",
+   "miami_out": [
+    "Scott Padgett",
+    "Udonis Haslem"
+   ],
+   "miami_in": [
+    "Donyell Marshall",
+    "Lamond Murray"
+   ],
+   "picks_out": [],
+   "picks_in": []
+  },
+  "miami_gain": 0.455,
+  "partner_gain": 0.118,
+  "accept": 1.0,
+  "score": 0.455,
+  "wade_request": false
+ },
+ "decision_event": null,
+ "negotiation": null,
+ "standing": {
+  "as_of": "2004-06-24",
+  "standing": "franchise",
+  "trigger": "honor_recorded",
+  "basis": {
+   "closed_seasons": [
+    "2003-04"
+   ],
+   "window": [
+    "2003-04"
+   ],
+   "starter_lines": {
+    "2003-04": {
+     "season": "2003-04",
+     "gp": 75,
+     "gs": 70,
+     "scheduled": 82,
+     "minutes_per_game": 35.0,
+     "complete": true,
+     "met": true
+    }
+   },
+   "honors": [
+    "2003-04-all-star",
+    "2003-04-all_nba-first"
+   ],
+   "conflicts": [],
+   "ignored_honors": [
+    "2003-04-rookie_of_month-2003-10-28-east",
+    "2003-04-player_of_week-2003-12-15-east",
+    "2003-04-player_of_month-2003-12-01-east",
+    "2003-04-rookie_of_month-2003-12-01-east",
+    "2003-04-player_of_week-2003-12-29-east",
+    "2003-04-player_of_month-2004-01-01-east",
+    "2003-04-rookie_of_month-2004-01-01-east",
+    "2003-04-rookie_of_month-2004-02-01-east",
+    "2003-04-player_of_week-2004-03-08-east",
+    "2003-04-player_of_month-2004-03-01-east",
+    "2003-04-rookie_of_month-2004-03-01-east",
+    "2003-04-rookie_of_month-2004-04-01-east",
+    "2003-04-roy",
+    "2003-04-all_rookie-first"
+   ],
+   "rule": "All-NBA First or Second Team in the most recent closed season",
+   "signed_date": "2003-07-21",
+   "season_folder": "2003-04",
+   "statistics": {
+    "2003-04": {
+     "season": "2003-04",
+     "gp": 75,
+     "gs": 70,
+     "scheduled": 82,
+     "minutes_per_game": 35.0,
+     "complete": true
+    }
+   }
+  },
+  "source": "Stats_and_Awards/League/2003-04/All_Star.md"
+ },
+ "consultation": null,
+ "answer": {
+  "outcome": "accept",
+  "date": "2004-12-20",
+  "by": "Miami Heat front office (rule)"
+ },
+ "applied": "2004-12-20",
+ "basis": "Toronto Raptors offered it (its gain +0.118); Miami's scored gain +0.455 clears +0.10 (runtime/trades.py offers)."
+}

@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2004-12-19 · Miami Heat · planned
+Career date: 2004-12-20 · Miami Heat · planned
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -53,6 +53,8 @@ Snapshot: 2004-12-09. Draft rights and unassigned arrivals are not assigned minu
 | 2004-10-05 | Camp injury draws: nobody is hurt. |
 | 2004-10-28 | Staff decision from 7 preseason games: starters PG Mike James, SG Dwyane Wade, SF Caron Butler, PF Mehmet Okur, C Brian Grant; battles drawn: {'PF': 'Mehmet Okur'}. Wade's perimeter-defense grade 45 (No assignment-level defensive evidence; preseason steals and blocks do not change this grade.). Records: `../00_Team/Team/Depth_Chart/depth_chart.json`, `rotation.json`, `../00_Team/Team/defensive_grades.json`. |
 | 2004-11-01 | Cut to 15: Stephen Jackson, Calbert Cheaney, Bob Sura, Derek Fisher, Chris Mihm. Promise check: every promised role is in the rotation. Record: `promise_log.json`. |
+| 2004-12-20 | Trade with Toronto Raptors: Miami sends Scott Padgett, Udonis Haslem for Donyell Marshall, Lamond Murray (accepted by engine draw None). Record: `00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json`. |
+| 2004-12-20 | Toronto Raptors offers Donyell Marshall, Lamond Murray for Scott Padgett, Udonis Haslem; Miami's front office accepts. Record: `00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json`. |
 
 ## Your response to the staff
 
@@ -102,6 +104,7 @@ Snapshot: 2004-12-09. Draft rights and unassigned arrivals are not assigned minu
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-09/rotation.json)
 - [Rule](../../../docs/front_office.md)
+- [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Closed game](../2004-05/05_Preseason/Game_2.md)
 - [Closed game](../2004-05/05_Preseason/Game_3.md)

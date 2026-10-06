@@ -1,0 +1,12 @@
+{
+ "date": "2004-12-20",
+ "decider": "Milwaukee Bucks and Utah Jazz front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2004-12-20-arroyca01-stricer01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Milwaukee Bucks and Utah Jazz trade Erick Strickland for Carlos Arroyo?"
+}

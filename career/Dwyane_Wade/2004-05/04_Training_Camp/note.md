@@ -14,5 +14,7 @@ status: active
 - 2004-10-05: Camp injury draws: nobody is hurt.
 - 2004-10-28: Staff decision from 7 preseason games: starters PG Mike James, SG Dwyane Wade, SF Caron Butler, PF Mehmet Okur, C Brian Grant; battles drawn: {'PF': 'Mehmet Okur'}. Wade's perimeter-defense grade 45 (No assignment-level defensive evidence; preseason steals and blocks do not change this grade.). Records: `../00_Team/Team/Depth_Chart/depth_chart.json`, `rotation.json`, `../00_Team/Team/defensive_grades.json`.
 - 2004-11-01: Cut to 15: Stephen Jackson, Calbert Cheaney, Bob Sura, Derek Fisher, Chris Mihm. Promise check: every promised role is in the rotation. Record: `promise_log.json`.
+- 2004-12-20: Trade with Toronto Raptors: Miami sends Scott Padgett, Udonis Haslem for Donyell Marshall, Lamond Murray (accepted by engine draw None). Record: `00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json`.
+- 2004-12-20: Toronto Raptors offers Donyell Marshall, Lamond Murray for Scott Padgett, Udonis Haslem; Miami's front office accepts. Record: `00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json`.
 
 ## Consequences

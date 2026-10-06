@@ -44,14 +44,14 @@
    "player": "Scott Padgett",
    "bbr_id": "padgesc01",
    "from": "2003-09-30",
-   "until": null,
+   "until": "2004-12-20",
    "basis": "camp contract 2003-09-30 (camp_roster.json)"
   },
   {
    "player": "Udonis Haslem",
    "bbr_id": "hasleud01",
    "from": "2003-10-27",
-   "until": null,
+   "until": "2004-12-20",
    "basis": "refill signing 2003-10-27 (signing_corrections.json)"
   },
   {
@@ -158,6 +158,22 @@
    "from": "2004-10-05",
    "until": "2004-11-01",
    "basis": "camp contract 2004-10-05 (camp_roster.json)"
+  },
+  {
+   "player": "Donyell Marshall",
+   "bbr_id": "marshdo01",
+   "from": "2004-12-20",
+   "until": null,
+   "how": "trade",
+   "basis": "acquired by trade from Toronto Raptors (2004-12-20-be4b6043a0)"
+  },
+  {
+   "player": "Lamond Murray",
+   "bbr_id": "murrala01",
+   "from": "2004-12-20",
+   "until": null,
+   "how": "trade",
+   "basis": "acquired by trade from Toronto Raptors (2004-12-20-be4b6043a0)"
   }
  ],
  "void_definition": "An entry with void: true records a camp contract voided because the player was not truly available when Miami signed him (04_Training_Camp/signing_corrections.json). Its dates stay as played games used them, but it never made him Miami's: his real moves apply as if Miami had not signed him."

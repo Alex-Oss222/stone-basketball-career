@@ -2,9 +2,9 @@
 
 # Contract | Carlos Arroyo
 
-Known through: 2004-12-19. [Open interactive contract](arroyca01.html#contract) · [Contract history](arroyca01.html#contract-history)
+Known through: 2004-12-20. [Open interactive contract](arroyca01.html#contract) · [Contract history](arroyca01.html#contract-history)
 
-Carlos Arroyo: under contract. Evidence cutoff: 2004-12-19.
+Carlos Arroyo: under contract. Evidence cutoff: 2004-12-20.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Carlos Arroyo |
-| Club / rights baseline | Utah Jazz |
+| Club / rights baseline | Milwaukee Bucks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

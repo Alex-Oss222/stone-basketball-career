@@ -835,6 +835,110 @@
     }
    ],
    "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2004-05-player_of_week-2004-12-13-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-12-13",
+   "period_end": "2004-12-19",
+   "announced_on": "2004-12-20",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/12_December/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 27.8,
+     "reb": 7.2,
+     "ast": 7.2,
+     "game_score": 22.45,
+     "score": 95.8,
+     "rank": 1
+    },
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 22.2,
+     "reb": 7.8,
+     "ast": 5.5,
+     "game_score": 20.93,
+     "score": 95.7,
+     "rank": 2
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 22.0,
+     "reb": 3.8,
+     "ast": 5.2,
+     "game_score": 19.35,
+     "score": 86.4,
+     "rank": 3
+    }
+   ],
+   "winner": "LeBron James"
+  },
+  {
+   "id": "2004-05-player_of_week-2004-12-13-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-12-13",
+   "period_end": "2004-12-19",
+   "announced_on": "2004-12-20",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/12_December/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Brad Miller",
+     "team": "Sacramento Kings",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 21.3,
+     "reb": 11.3,
+     "ast": 5.3,
+     "game_score": 24.83,
+     "score": 83.5,
+     "rank": 1
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 17.5,
+     "reb": 10.5,
+     "ast": 2.8,
+     "game_score": 17.73,
+     "score": 82.9,
+     "rank": 2
+    },
+    {
+     "player": "Stephon Marbury",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 17.8,
+     "reb": 2.2,
+     "ast": 7.0,
+     "game_score": 16.23,
+     "score": 76.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Brad Miller"
   }
  ]
 }

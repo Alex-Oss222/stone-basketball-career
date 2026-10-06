@@ -1499,6 +1499,159 @@
     ],
     "signing_team": "Miami Heat"
    }
+  },
+  {
+   "record_id": "padgesc01-2004-07-14-assigned-2004-12-20-8fb928be1ee2",
+   "recorded_on": "2004-12-20",
+   "player_id": "padgesc01",
+   "player": "Scott Padgett",
+   "contract_id": "padgesc01-2004-07-14",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json",
+   "contract": {
+    "player": "Scott Padgett",
+    "bbr_id": "padgesc01",
+    "status": "under_contract",
+    "schedule": {
+     "2004-05": 9706886,
+     "2005-06": 10920247,
+     "2006-07": 12133608,
+     "2007-08": 13346968
+    },
+    "amount_kind": {
+     "2004-05": "contract_salary",
+     "2005-06": "contract_salary",
+     "2006-07": "contract_salary",
+     "2007-08": "contract_salary"
+    },
+    "guaranteed": {
+     "2004-05": 9706886,
+     "2005-06": 10920247,
+     "2006-07": 12133608,
+     "2007-08": 13346968
+    },
+    "signed_date": "2004-07-14",
+    "route": "bird",
+    "original_term_seasons": 4,
+    "notes": "Signed July 14, 2004 in the 2004-05 summer market (re sign, route bird); schedule from the league contract ledger (raises by route).",
+    "sources": [
+     "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+     "2004-05/League/contracts.json"
+    ]
+   },
+   "assignment": {
+    "date": "2004-12-20",
+    "from_team": "Miami Heat",
+    "to_team": "Toronto Raptors",
+    "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+   }
+  },
+  {
+   "record_id": "hasleud01-2004-07-14-assigned-2004-12-20-8fb928be1ee2",
+   "recorded_on": "2004-12-20",
+   "player_id": "hasleud01",
+   "player": "Udonis Haslem",
+   "contract_id": "hasleud01-2004-07-14",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json",
+   "contract": {
+    "player": "Udonis Haslem",
+    "bbr_id": "hasleud01",
+    "status": "under_contract",
+    "schedule": {
+     "2004-05": 620046
+    },
+    "amount_kind": {
+     "2004-05": "contract_salary"
+    },
+    "guaranteed": {
+     "2004-05": 620046
+    },
+    "signed_date": "2004-07-14",
+    "route": "minimum",
+    "original_term_seasons": 1,
+    "notes": "Signed July 14, 2004 in the 2004-05 summer market (re sign, route minimum); schedule from the league contract ledger (raises by route).",
+    "sources": [
+     "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+     "2004-05/League/contracts.json"
+    ]
+   },
+   "assignment": {
+    "date": "2004-12-20",
+    "from_team": "Miami Heat",
+    "to_team": "Toronto Raptors",
+    "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+   }
+  },
+  {
+   "record_id": "marshdo01-baseline-2003-06-26-assigned-2004-12-20-8fb928be1ee2",
+   "recorded_on": "2004-12-20",
+   "player_id": "marshdo01",
+   "player": "Donyell Marshall",
+   "contract_id": "marshdo01-baseline-2003-06-26",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json",
+   "contract": {
+    "player": "Donyell Marshall",
+    "bbr_id": "marshdo01",
+    "status": "under_contract",
+    "schedule": {
+     "2004-05": 5023850
+    },
+    "amount_kind": {
+     "2004-05": "contract_salary"
+    },
+    "held_on": "2004-12-20",
+    "terms_source": "career/Dwyane_Wade/2004-05/League/contracts.json",
+    "acquired": {
+     "how": "trade",
+     "date": "2004-12-20",
+     "from": "Toronto Raptors",
+     "record": "00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+    }
+   },
+   "assignment": {
+    "date": "2004-12-20",
+    "from_team": "Toronto Raptors",
+    "to_team": "Miami Heat",
+    "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+   }
+  },
+  {
+   "record_id": "murrala01-baseline-2003-06-26-assigned-2004-12-20-8fb928be1ee2",
+   "recorded_on": "2004-12-20",
+   "player_id": "murrala01",
+   "player": "Lamond Murray",
+   "contract_id": "murrala01-baseline-2003-06-26",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json",
+   "contract": {
+    "player": "Lamond Murray",
+    "bbr_id": "murrala01",
+    "status": "under_contract",
+    "schedule": {
+     "2004-05": 4875000,
+     "2005-06": 5250000
+    },
+    "amount_kind": {
+     "2004-05": "contract_salary",
+     "2005-06": "contract_salary"
+    },
+    "held_on": "2004-12-20",
+    "terms_source": "career/Dwyane_Wade/2004-05/League/contracts.json",
+    "acquired": {
+     "how": "trade",
+     "date": "2004-12-20",
+     "from": "Toronto Raptors",
+     "record": "00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+    }
+   },
+   "assignment": {
+    "date": "2004-12-20",
+    "from_team": "Toronto Raptors",
+    "to_team": "Miami Heat",
+    "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+   }
   }
  ]
 }

@@ -1790,6 +1790,51 @@
    "bbr_id": "lafrera01",
    "from": "Utah Jazz",
    "to": "Atlanta Hawks"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-20-arroyca01-stricer01",
+   "date": "2004-12-20",
+   "kind": "trade",
+   "player": "Erick Strickland",
+   "bbr_id": "stricer01",
+   "from": "Milwaukee Bucks",
+   "to": "Utah Jazz"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-20-arroyca01-stricer01",
+   "date": "2004-12-20",
+   "kind": "trade",
+   "player": "Carlos Arroyo",
+   "bbr_id": "arroyca01",
+   "from": "Utah Jazz",
+   "to": "Milwaukee Bucks"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-20-brownpj01-chrisdo01-korveky01",
+   "date": "2004-12-20",
+   "kind": "trade",
+   "player": "P.J. Brown",
+   "bbr_id": "brownpj01",
+   "from": "New Orleans Hornets",
+   "to": "Sacramento Kings"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-20-brownpj01-chrisdo01-korveky01",
+   "date": "2004-12-20",
+   "kind": "trade",
+   "player": "Kyle Korver",
+   "bbr_id": "korveky01",
+   "from": "Sacramento Kings",
+   "to": "New Orleans Hornets"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-20-brownpj01-chrisdo01-korveky01",
+   "date": "2004-12-20",
+   "kind": "trade",
+   "player": "Doug Christie",
+   "bbr_id": "chrisdo01",
+   "from": "Sacramento Kings",
+   "to": "New Orleans Hornets"
   }
  ],
  "market_days": [
@@ -1840,6 +1885,7 @@
   "2004-12-16",
   "2004-12-17",
   "2004-12-18",
-  "2004-12-19"
+  "2004-12-19",
+  "2004-12-20"
  ]
 }

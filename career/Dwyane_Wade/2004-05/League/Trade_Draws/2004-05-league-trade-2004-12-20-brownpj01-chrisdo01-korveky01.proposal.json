@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2004-12-20-brownpj01-chrisdo01-korveky01",
+ "date": "2004-12-20",
+ "clubs": [
+  "New Orleans Hornets",
+  "Sacramento Kings"
+ ],
+ "a": {
+  "club": "New Orleans Hornets",
+  "sends": [
+   "P.J. Brown"
+  ],
+  "bbr_ids": [
+   "brownpj01"
+  ],
+  "salary": 8500000
+ },
+ "b": {
+  "club": "Sacramento Kings",
+  "sends": [
+   "Kyle Korver",
+   "Doug Christie"
+  ],
+  "bbr_ids": [
+   "korveky01",
+   "chrisdo01"
+  ],
+  "salary": 8170046
+ },
+ "gain": {
+  "New Orleans Hornets": 0.265,
+  "Sacramento Kings": 0.2
+ },
+ "accept": {
+  "New Orleans Hornets": 0.95,
+  "Sacramento Kings": 0.95
+ },
+ "both": 0.9025
+}

@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2004-11-01",
+ "as_of": "2004-12-20",
  "team": "Miami Heat",
  "status": "camp_decision",
  "game_ready": true,
@@ -23,9 +23,7 @@
    "Dorell Wright"
   ],
   "PF": [
-   "Mehmet Okur",
-   "Scott Padgett",
-   "Udonis Haslem"
+   "Mehmet Okur"
   ],
   "C": [
    "Brian Grant",
@@ -37,7 +35,24 @@
   "PF": "Mehmet Okur"
  },
  "unassigned_draft_rights": [],
- "unassigned_arrivals": [],
+ "unassigned_arrivals": [
+  {
+   "name": "Donyell Marshall",
+   "positions": [
+    "PF"
+   ],
+   "status": "under_contract",
+   "date": "2004-12-20"
+  },
+  {
+   "name": "Lamond Murray",
+   "positions": [
+    "SF"
+   ],
+   "status": "under_contract",
+   "date": "2004-12-20"
+  }
+ ],
  "unavailable": [],
  "departed": [
   {
@@ -64,6 +79,16 @@
    "name": "Chris Mihm",
    "date": "2004-11-01",
    "status": "released"
+  },
+  {
+   "name": "Scott Padgett",
+   "date": "2004-12-20",
+   "status": "traded"
+  },
+  {
+   "name": "Udonis Haslem",
+   "date": "2004-12-20",
+   "status": "traded"
   }
  ]
 }

@@ -2,9 +2,9 @@
 
 # Contract | Doug Christie
 
-Known through: 2004-12-19. [Open interactive contract](chrisdo01.html#contract) · [Contract history](chrisdo01.html#contract-history)
+Known through: 2004-12-20. [Open interactive contract](chrisdo01.html#contract) · [Contract history](chrisdo01.html#contract-history)
 
-Doug Christie: under contract. Evidence cutoff: 2004-12-19.
+Doug Christie: under contract. Evidence cutoff: 2004-12-20.
 
 ## Current contract
 
@@ -122,7 +122,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Doug Christie |
-| Club / rights baseline | Sacramento Kings |
+| Club / rights baseline | New Orleans Hornets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

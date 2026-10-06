@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "owner": "ai_gm",
- "as_of": "2004-11-01",
+ "as_of": "2004-12-20",
  "team": "Miami Heat",
  "horizon": [
   "2004-05",
@@ -124,7 +124,7 @@
   {
    "player": "Scott Padgett",
    "bbr_id": "padgesc01",
-   "status": "under_contract",
+   "status": "traded",
    "schedule": {
     "2004-05": 9706886,
     "2005-06": 10920247,
@@ -488,7 +488,7 @@
   {
    "player": "Udonis Haslem",
    "bbr_id": "hasleud01",
-   "status": "under_contract",
+   "status": "traded",
    "schedule": {
     "2004-05": 620046
    },
@@ -702,6 +702,52 @@
    "sources": [
     "04_Training_Camp/camp_roster.json"
    ]
+  },
+  {
+   "player": "Donyell Marshall",
+   "bbr_id": "marshdo01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 5023850
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary"
+   },
+   "acquired": {
+    "how": "trade",
+    "date": "2004-12-20",
+    "from": "Toronto Raptors",
+    "record": "00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+   },
+   "notes": "Acquired from Toronto Raptors on December 20, 2004 by trade (2004-12-20-be4b6043a0); contract carried as the inventory records it (under_contract).",
+   "sources": [
+    "00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+   ],
+   "contract_id": "marshdo01-baseline-2003-06-26"
+  },
+  {
+   "player": "Lamond Murray",
+   "bbr_id": "murrala01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 4875000,
+    "2005-06": 5250000
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary",
+    "2005-06": "contract_salary"
+   },
+   "acquired": {
+    "how": "trade",
+    "date": "2004-12-20",
+    "from": "Toronto Raptors",
+    "record": "00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+   },
+   "notes": "Acquired from Toronto Raptors on December 20, 2004 by trade (2004-12-20-be4b6043a0); contract carried as the inventory records it (under_contract).",
+   "sources": [
+    "00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+   ],
+   "contract_id": "murrala01-baseline-2003-06-26"
   }
  ],
  "expiring_or_unresolved_without_scheduled_2003_04_salary": [

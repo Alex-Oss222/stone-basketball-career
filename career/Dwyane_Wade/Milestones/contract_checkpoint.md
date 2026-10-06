@@ -2,7 +2,7 @@
 
 # Contract checkpoint | Dwyane Wade
 
-Career date: 2004-12-19 · Miami Heat · active
+Career date: 2004-12-20 · Miami Heat · active
 
 [Live milestone desk](index.html#contract_checkpoint) · [All milestones](README.md)
 
@@ -20,7 +20,7 @@ Activation: A dated contract, option, expiry or draft-rights change.
 | Cap hold meaning | Team accounting charge; not player earnings or an accepted offer |
 | Free-agent classification | Requires dated expiry, option and rights review |
 | Actual signing date | 2003-07-21 |
-| Source snapshot | 2004-11-01 |
+| Source snapshot | 2004-12-20 |
 
 ## Existing amounts on the club's record
 
@@ -76,6 +76,7 @@ A real club offer, contract event or verified option/expiry deadline.
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-09/rotation.json)
 - [Rule](../../../docs/front_office.md)
+- [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Closed game](../2004-05/05_Preseason/Game_2.md)
 - [Closed game](../2004-05/05_Preseason/Game_3.md)

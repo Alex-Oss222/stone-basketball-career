@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "kind": "miami_departures",
+ "season": "2004-05",
+ "purpose": "Players simulated Miami sent to real clubs (conflict rule 3): the club, the dates and the previous minute share (last real season) rule 3 lets him keep up to the departing minutes. Read by runtime/rotations.py.",
+ "entries": [
+  {
+   "player": "Scott Padgett",
+   "bbr_id": "padgesc01",
+   "club": "Toronto Raptors",
+   "from": "2004-12-20",
+   "until": null,
+   "position": "PF",
+   "games": 58,
+   "minutes": 547,
+   "basis": "traded 2004-12-20 (2004-12-20-be4b6043a0); previous share from 2003-04 totals"
+  },
+  {
+   "player": "Udonis Haslem",
+   "bbr_id": "hasleud01",
+   "club": "Toronto Raptors",
+   "from": "2004-12-20",
+   "until": null,
+   "position": "PF",
+   "games": 75,
+   "minutes": 1795,
+   "basis": "traded 2004-12-20 (2004-12-20-be4b6043a0); previous share from 2003-04 totals"
+  }
+ ]
+}

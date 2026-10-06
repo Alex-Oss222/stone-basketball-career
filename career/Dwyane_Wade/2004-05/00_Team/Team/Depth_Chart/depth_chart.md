@@ -1,6 +1,6 @@
 # Miami Heat working depth chart
 
-**As of:** 2004-12-19 · **Staff decision in force:** 2004-12-09 (fortnightly review)  
+**As of:** 2004-12-20 · **Staff decision in force:** 2004-12-09 (fortnightly review)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
@@ -27,9 +27,9 @@
 | Dorell Wright | SF | 7.49 |  |
 | Eddie Jones | SG | 3.74 |  |
 
-Outside the rotation (dressing as the twelfth man or on the injured list): John Thomas, Maurice Evans, Maurice Baker, John Edwards.
+Outside the rotation (dressing as the twelfth man or on the injured list): John Thomas, Maurice Evans, Maurice Baker, John Edwards, Donyell Marshall, Lamond Murray.
 
-## Injured list on 2004-12-19
+## Injured list on 2004-12-20
 
 Eddie Jones, John Thomas, Maurice Evans ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 

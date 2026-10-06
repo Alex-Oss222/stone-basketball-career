@@ -1,0 +1,37 @@
+{
+ "id": "2004-05-league-trade-2004-12-20-arroyca01-stricer01",
+ "date": "2004-12-20",
+ "clubs": [
+  "Milwaukee Bucks",
+  "Utah Jazz"
+ ],
+ "a": {
+  "club": "Milwaukee Bucks",
+  "sends": [
+   "Erick Strickland"
+  ],
+  "bbr_ids": [
+   "stricer01"
+  ],
+  "salary": 1550000
+ },
+ "b": {
+  "club": "Utah Jazz",
+  "sends": [
+   "Carlos Arroyo"
+  ],
+  "bbr_ids": [
+   "arroyca01"
+  ],
+  "salary": 4774224
+ },
+ "gain": {
+  "Milwaukee Bucks": 0.248,
+  "Utah Jazz": 0.233
+ },
+ "accept": {
+  "Milwaukee Bucks": 0.95,
+  "Utah Jazz": 0.95
+ },
+ "both": 0.9025
+}

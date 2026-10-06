@@ -2,9 +2,9 @@
 
 # Contract | Erick Strickland
 
-Known through: 2004-12-19. [Open interactive contract](stricer01.html#contract) · [Contract history](stricer01.html#contract-history)
+Known through: 2004-12-20. [Open interactive contract](stricer01.html#contract) · [Contract history](stricer01.html#contract-history)
 
-Erick Strickland: under contract. Evidence cutoff: 2004-12-19.
+Erick Strickland: under contract. Evidence cutoff: 2004-12-20.
 
 ## Current contract
 
@@ -114,7 +114,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Erick Strickland |
-| Club / rights baseline | Milwaukee Bucks |
+| Club / rights baseline | Utah Jazz |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

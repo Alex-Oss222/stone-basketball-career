@@ -2,9 +2,9 @@
 
 # Contract | Udonis Haslem
 
-Known through: 2004-12-19. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
+Known through: 2004-12-20. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
 
-Udonis Haslem: under contract. Evidence cutoff: 2004-12-19.
+Udonis Haslem: under contract. Evidence cutoff: 2004-12-20.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Toronto Raptors |
 | Signing club | Miami Heat |
 | Contract ID | hasleud01-2004-07-14 |
 | Signing route / evidence basis | minimum |
@@ -94,6 +94,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-12-20 | Miami Heat | Toronto Raptors | 2004-12-20-be4b6043a0 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) |
 
 ### Evidence and coverage
 
@@ -106,6 +107,10 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/League/contracts.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 
 ### Current control and contract coverage
 
@@ -114,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Udonis Haslem |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -179,7 +184,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Toronto Raptors |
 | Signing club | Miami Heat |
 | Contract ID | hasleud01-2004-07-14 |
 | Signing route / evidence basis | minimum |
@@ -248,6 +253,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-12-20 | Miami Heat | Toronto Raptors | 2004-12-20-be4b6043a0 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) |
 
 ### Evidence and coverage
 
@@ -260,6 +266,10 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/League/contracts.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 
 ### Udonis Haslem · 2003-10-27
 
@@ -369,4 +379,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Dated signed-contract archive](../contract_records.json)
 - [Signing / contract source](../../2003-04/00_Team/Transactions/guarantee_review.json)
+- [Signing / contract source](../../2004-05/League/contracts.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
