@@ -2,9 +2,9 @@
 
 # Contract | Bryce Drew
 
-Known through: 2004-12-02. [Open interactive contract](drewbr01.html#contract) · [Contract history](drewbr01.html#contract-history)
+Known through: 2004-12-05. [Open interactive contract](drewbr01.html#contract) · [Contract history](drewbr01.html#contract-history)
 
-Bryce Drew: under contract. Evidence cutoff: 2004-12-02.
+Bryce Drew: under contract. Evidence cutoff: 2004-12-05.
 
 ## Current contract
 

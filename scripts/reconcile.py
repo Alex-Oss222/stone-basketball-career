@@ -76,6 +76,9 @@ def main():
         if not current and not args.check:
             print(out[-2000:])
             return 1
+    from runtime.write_back import identity_warnings
+    for warning in identity_warnings(ROOT):
+        print("warning: " + warning)
     if args.check:
         return 1 if stale else 0
     code, out = run("scripts/validate_repository.py")

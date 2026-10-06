@@ -1052,6 +1052,13 @@ def write_back_errors(root=ROOT, season=None, cards=False):
     return errors
 
 
+def identity_warnings(root=ROOT):
+    """Registry players without a birth date: their age reads N/A until one is added to
+    `library/careers/nba_player_births.json`. Reported by `scripts/reconcile.py`; never a stop (it changes no result)."""
+    return [f"registry {p.get('registry_id')} ({p['name']}): no birth date; age shows N/A (add it to library/careers/nba_player_births.json)"
+            for p in registry(root)["players"] if not p.get("birth_date")]
+
+
 def identity_errors(root=ROOT, on=None):
     """League identity checks (the user's request, November 2004 on the career clock: a player on a club must never
     read as a free agent). Every registry player has a bbr_id and a birth date and appears once (accents folded), and
@@ -1070,8 +1077,6 @@ def identity_errors(root=ROOT, on=None):
             errors.append(f"{label}: no bbr_id (python scripts/reconcile.py repairs it from the identity sources)")
         elif p["bbr_id"] in seen_bbr:
             errors.append(f"{label}: the same player as registry {seen_bbr[p['bbr_id']]}")
-        if not p.get("birth_date"):
-            errors.append(f"{label}: no birth date (add it to library/careers/nba_player_births.json)")
         seen_bbr.setdefault(p.get("bbr_id"), p.get("registry_id"))
         k = _key(p["name"])
         if k in seen_name and p.get("bbr_id") == seen_name[k][1]:

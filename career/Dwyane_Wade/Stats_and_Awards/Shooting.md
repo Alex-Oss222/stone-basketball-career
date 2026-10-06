@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-12-02**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-12-05**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -3196,23 +3196,23 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
 
-## 2004-05 · NBA regular season · through 2004-12-02
+## 2004-05 · NBA regular season · through 2004-12-05
 
 [Open this period](player_cards.html?period=regular-2004-05-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15 | 1 | 16 | 84 / 172 | 48.8% | 14 / 31 | 250 | complete |
+| 17 | 1 | 18 | 105 / 209 | 50.2% | 16 / 39 | 317 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 46 | 84 | 54.8% | 6.13 | 5.60 | 84 |
-| Outside paint, under 12 ft | 0 | 8 | 0.0% | 0.00 | 0.53 | 8 |
-| Outside paint, 12 to under 18 ft | 10 | 19 | 52.6% | 1.33 | 1.27 | 19 |
-| 18 ft to the three-point line | 14 | 30 | 46.7% | 1.87 | 2.00 | 30 |
-| Three-point range | 14 | 31 | 45.2% | 2.80 | 2.07 | 31 |
+| Paint | 60 | 103 | 58.3% | 7.06 | 6.06 | 103 |
+| Outside paint, under 12 ft | 0 | 8 | 0.0% | 0.00 | 0.47 | 8 |
+| Outside paint, 12 to under 18 ft | 14 | 24 | 58.3% | 1.65 | 1.41 | 24 |
+| 18 ft to the three-point line | 15 | 35 | 42.9% | 1.76 | 2.06 | 35 |
+| Three-point range | 16 | 39 | 41.0% | 2.82 | 2.29 | 39 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -3232,6 +3232,8 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-11-26 | Detroit Pistons | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.result.json) |
 | 2004-11-28 | Boston Celtics | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.result.json) |
 | 2004-11-30 | Toronto Raptors | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_5.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_5.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_5.result.json) |
+| 2004-12-03 | Chicago Bulls | Played | [Game](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
+| 2004-12-04 | Denver Nuggets | Played | [Game](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
 
 ## 2004-11 · NBA regular season
 
@@ -3369,6 +3371,52 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-11-26 | Detroit Pistons | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.result.json) |
 | 2004-11-28 | Boston Celtics | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.result.json) |
 | 2004-11-30 | Toronto Raptors | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_5.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_5.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_5.result.json) |
+
+## 2004-12 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-month-2004-12-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2 | 0 | 2 | 21 / 37 | 56.8% | 2 / 8 | 67 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 14 | 19 | 73.7% | 14.00 | 9.50 | 19 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 4 | 5 | 80.0% | 4.00 | 2.50 | 5 |
+| 18 ft to the three-point line | 1 | 5 | 20.0% | 1.00 | 2.50 | 5 |
+| Three-point range | 2 | 8 | 25.0% | 3.00 | 4.00 | 8 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-12-03 | Chicago Bulls | Played | [Game](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
+| 2004-12-04 | Denver Nuggets | Played | [Game](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
+
+## 2004-12-01 to 2004-12-05 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-week-2004-12-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2 | 0 | 2 | 21 / 37 | 56.8% | 2 / 8 | 67 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 14 | 19 | 73.7% | 14.00 | 9.50 | 19 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 4 | 5 | 80.0% | 4.00 | 2.50 | 5 |
+| 18 ft to the three-point line | 1 | 5 | 20.0% | 1.00 | 2.50 | 5 |
+| Three-point range | 2 | 8 | 25.0% | 3.00 | 4.00 | 8 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-12-03 | Chicago Bulls | Played | [Game](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
+| 2004-12-04 | Denver Nuggets | Played | [Game](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
 
 ## 2004-11-03 at New Jersey Nets · Played · NBA regular season
 
@@ -3722,7 +3770,51 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-11-30 | Toronto Raptors | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_5.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_5.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_5.result.json) |
 
-## 2004-05 · NBA preseason · through 2004-12-02
+## 2004-12-03 at Chicago Bulls · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-game-2c6ef01119b1c01e#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 11 / 18 | 61.1% | 1 / 3 | 32 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 7 | 9 | 77.8% | 14.00 | 9.00 | 9 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 3 | 3 | 100.0% | 6.00 | 3.00 | 3 |
+| 18 ft to the three-point line | 0 | 3 | 0.0% | 0.00 | 3.00 | 3 |
+| Three-point range | 1 | 3 | 33.3% | 3.00 | 3.00 | 3 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-12-03 | Chicago Bulls | Played | [Game](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
+
+## 2004-12-04 at Denver Nuggets · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-game-628aca80faeb7394#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 10 / 19 | 52.6% | 1 / 5 | 35 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 7 | 10 | 70.0% | 14.00 | 10.00 | 10 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 1 | 2 | 50.0% | 2.00 | 2.00 | 2 |
+| 18 ft to the three-point line | 1 | 2 | 50.0% | 2.00 | 2.00 | 2 |
+| Three-point range | 1 | 5 | 20.0% | 3.00 | 5.00 | 5 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-12-04 | Denver Nuggets | Played | [Game](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
+
+## 2004-05 · NBA preseason · through 2004-12-05
 
 [Open this period](player_cards.html?period=preseason-2004-05-season#shooting)
 

@@ -1806,7 +1806,7 @@
   {
    "player": "Anthony Goldwire",
    "bbr_id": "goldwan01",
-   "club": "Charlotte Bobcats",
+   "club": "Golden State Warriors",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -2247,7 +2247,7 @@
   {
    "player": "Juwan Howard",
    "bbr_id": "howarju01",
-   "club": "Charlotte Bobcats",
+   "club": "Golden State Warriors",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -3896,7 +3896,7 @@
   {
    "player": "Mickael Pietrus",
    "bbr_id": "pietrmi01",
-   "club": "Golden State Warriors",
+   "club": "Charlotte Bobcats",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -3909,7 +3909,8 @@
     "2006-07": "team_option"
    },
    "rookie_scale": true,
-   "scale_pick_2003": 11
+   "scale_pick_2003": 11,
+   "signed_club": "Golden State Warriors"
   },
   {
    "player": "Scottie Pippen",

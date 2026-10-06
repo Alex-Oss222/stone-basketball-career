@@ -2,9 +2,9 @@
 
 # Contract | David Wesley
 
-Known through: 2004-12-02. [Open interactive contract](wesleda01.html#contract) · [Contract history](wesleda01.html#contract-history)
+Known through: 2004-12-05. [Open interactive contract](wesleda01.html#contract) · [Contract history](wesleda01.html#contract-history)
 
-David Wesley: under contract. Evidence cutoff: 2004-12-02.
+David Wesley: under contract. Evidence cutoff: 2004-12-05.
 
 ## Current contract
 
