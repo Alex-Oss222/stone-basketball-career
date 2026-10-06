@@ -2924,6 +2924,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.23 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-02-04-ten_day-augmost01",
+   "date": "2005-02-04",
+   "kind": "ten_day",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": null,
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 55,
+    "minutes": 663
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-02-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.21 x fit"
   }
  ],
  "market_days": [
@@ -3020,6 +3042,7 @@
   "2005-01-31",
   "2005-02-01",
   "2005-02-02",
-  "2005-02-03"
+  "2005-02-03",
+  "2005-02-04"
  ]
 }
