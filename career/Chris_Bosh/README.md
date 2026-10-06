@@ -4,7 +4,7 @@
 
 ![Chris Bosh career overview](assets/career_overview.svg)
 
-Career date: **2005-02-07** · Toronto Raptors · #4 · PF · age 20
+Career date: **2005-02-08** · Toronto Raptors · #4 · PF · age 20
 
 A real player the user follows, not one the user controls: his club decides his moves and the engine plays his games. Every number below comes from closed simulated games and the league's recorded award decisions.
 
@@ -42,6 +42,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | --- | --- | --- |
 | 2003-04 | 2004-04-27 | All-Rookie Team: First Team |
 | 2004-05 | 2005-01-10 | East Player of the Week (2005-01-03 to 2005-01-09) |
+| 2004-05 | 2005-02-08 | All-Star (East, reserve) |
 
 ## Career firsts
 

@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2005-02-07](../assets/stat_reports/personal_2005-02-07.svg)
+![Player personal information and earned career awards through 2005-02-08](../assets/stat_reports/personal_2005-02-08.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-02-07; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-02-08; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -53,6 +53,7 @@ Identity as of 2005-02-07; status snapshot dated 2004-10-28. User-established al
 | All-Rookie First Team | 2003-10-28 to 2004-04-14 | 2004-04-27 | [All-Rookie 1st](../Stats_and_Awards/League/2003-04/Season_Awards.md#all-rookie-teams) |
 | Eastern Conference Player of the Month | 2004-12-01 to 2004-12-31 | 2005-01-02 | [East POM](../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month) |
 | Eastern Conference Player of the Week | 2005-01-24 to 2005-01-30 | 2005-01-31 | [East POW](../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week) |
+| All-Star | 2004-11-02 to 2005-02-08 | 2005-02-08 | [All-Star](../Stats_and_Awards/League/2004-05/All_Star.md#all-stars) |
 
 ## Statistics
 
@@ -76,4 +77,4 @@ FIBA is the governing body; the World Cup, Olympic tournament, continental event
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-02-07, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-02-08, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-02-07**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-02-08**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -504,7 +504,7 @@ Card date: **2005-02-07**. 573 registry players, one Markdown card and one inter
 | [Aaron Williams](williaa01.md) | New Jersey Nets | 33 | silhouette | [open](williaa01.html) |
 | [Adonal Foyle](foylead01.md) | Sacramento Kings | 29 | sourced | [open](foylead01.html) |
 | [Alan Henderson](hendeal01.md) | Utah Jazz | 32 | silhouette | [open](hendeal01.html) |
-| [Alonzo Mourning](mournal01.md) | Seattle SuperSonics | 34 | silhouette | [open](mournal01.html) |
+| [Alonzo Mourning](mournal01.md) | Seattle SuperSonics | 35 | silhouette | [open](mournal01.html) |
 | [Amal McCaskill](mccasam01.md) | Free agent | 31 | silhouette | [open](mccasam01.html) |
 | [Andreas Glyniadakis](glynian01.md) | Free agent | 23 | sourced | [open](glynian01.html) |
 | [Andrew DeClercq](declean01.md) | Orlando Magic | 32 | silhouette | [open](declean01.html) |

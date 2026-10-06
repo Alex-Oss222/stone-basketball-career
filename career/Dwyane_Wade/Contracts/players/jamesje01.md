@@ -2,9 +2,9 @@
 
 # Contract | Jerome James
 
-Known through: 2005-02-07. [Open interactive contract](jamesje01.html#contract) · [Contract history](jamesje01.html#contract-history)
+Known through: 2005-02-08. [Open interactive contract](jamesje01.html#contract) · [Contract history](jamesje01.html#contract-history)
 
-Jerome James: under contract. Evidence cutoff: 2005-02-07.
+Jerome James: under contract. Evidence cutoff: 2005-02-08.
 
 ## Current contract
 

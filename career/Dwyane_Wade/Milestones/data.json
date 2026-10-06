@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-02-07",
+  "as_of": "2005-02-08",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 21,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2005-02-05-chicago-bulls-at-miami-heat",
+  "current_event": "2005-02-07-golden-state-warriors-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-02-07"
+              "2005-02-08"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2005-02-05-chicago-bulls-at-miami-heat"
+              "2005-02-07-golden-state-warriors-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2005-02-07",
+              "2005-02-08",
               "Current checkpoint",
-              "2005-02-05-chicago-bulls-at-miami-heat",
+              "2005-02-07-golden-state-warriors-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -638,6 +638,10 @@
           "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -646,7 +650,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-07"
+          "value": "2005-02-08"
         },
         {
           "label": "Team",
@@ -1100,6 +1104,10 @@
           "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1108,7 +1116,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-07"
+          "value": "2005-02-08"
         },
         {
           "label": "Team",
@@ -1535,6 +1543,10 @@
           "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1543,7 +1555,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-07"
+          "value": "2005-02-08"
         },
         {
           "label": "Team",
@@ -2009,6 +2021,10 @@
           "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2017,7 +2033,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-07"
+          "value": "2005-02-08"
         },
         {
           "label": "Team",
@@ -2446,6 +2462,10 @@
           "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2454,7 +2474,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-07"
+          "value": "2005-02-08"
         },
         {
           "label": "Team",
@@ -2927,6 +2947,10 @@
           "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2935,7 +2959,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-07"
+          "value": "2005-02-08"
         },
         {
           "label": "Team",
@@ -3364,6 +3388,10 @@
           "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3372,7 +3400,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-07"
+          "value": "2005-02-08"
         },
         {
           "label": "Team",
@@ -3941,6 +3969,10 @@
           "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3949,7 +3981,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-07"
+          "value": "2005-02-08"
         },
         {
           "label": "Team",
@@ -3966,7 +3998,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "56 closed game records in 2004-05 through 2005-02-07. Competitions remain separate.",
+      "summary": "57 closed game records in 2004-05 through 2005-02-08. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3993,12 +4025,12 @@
             ],
             [
               "regular",
-              43,
-              36.231358527,
-              21.302325581,
-              5.279069767,
-              3.906976744,
-              1.348837209,
+              44,
+              36.314330682,
+              21.318181818,
+              5.25,
+              3.931818182,
+              1.340909091,
               "Complete"
             ]
           ]
@@ -4026,12 +4058,12 @@
             ],
             [
               "regular",
-              311,
-              574,
-              0.541811847,
-              52,
-              109,
-              0.47706422
+              315,
+              585,
+              0.538461538,
+              53,
+              111,
+              0.477477477
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -4605,6 +4637,16 @@
                 "label": "Closed game",
                 "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md"
               }
+            ],
+            [
+              "2005-02-07",
+              "regular",
+              "Golden State Warriors",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md"
+              }
             ]
           ]
         },
@@ -4954,6 +4996,10 @@
           "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4962,7 +5008,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-07"
+          "value": "2005-02-08"
         },
         {
           "label": "Team",
