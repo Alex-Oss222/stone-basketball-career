@@ -148,9 +148,90 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 7.53 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-03-waive-cabarza01",
+   "date": "2004-11-03",
+   "kind": "waive",
+   "player": "Žarko Čabarkapa",
+   "bbr_id": "cabarza01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "Žarko Čabarkapa",
+    "bbr_id": "cabarza01",
+    "position": "PF",
+    "games": 40,
+    "minutes": 475
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-05"
+  },
+  {
+   "id": "2004-05-market-2004-11-03-rest_of_season-mihmch01",
+   "date": "2004-11-03",
+   "kind": "rest_of_season",
+   "player": "Chris Mihm",
+   "bbr_id": "mihmch01",
+   "from": null,
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Chris Mihm",
+    "bbr_id": "mihmch01",
+    "position": "C",
+    "games": 75,
+    "minutes": 1870
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 7.51 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-03-waive-jacksje01",
+   "date": "2004-11-03",
+   "kind": "waive",
+   "player": "Jermaine Jackson",
+   "bbr_id": "jacksje01",
+   "from": "Utah Jazz",
+   "to": null,
+   "role": {
+    "player_id": "Jermaine Jackson",
+    "bbr_id": "jacksje01",
+    "position": "SG",
+    "games": 21,
+    "minutes": 230
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-05"
+  },
+  {
+   "id": "2004-05-market-2004-11-03-rest_of_season-surabo01",
+   "date": "2004-11-03",
+   "kind": "rest_of_season",
+   "player": "Bob Sura",
+   "bbr_id": "surabo01",
+   "from": null,
+   "to": "Utah Jazz",
+   "role": {
+    "player_id": "Bob Sura",
+    "bbr_id": "surabo01",
+    "position": "PG",
+    "games": 61,
+    "minutes": 1922
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.95 x fit"
   }
  ],
  "market_days": [
-  "2004-11-02"
+  "2004-11-02",
+  "2004-11-03"
  ]
 }

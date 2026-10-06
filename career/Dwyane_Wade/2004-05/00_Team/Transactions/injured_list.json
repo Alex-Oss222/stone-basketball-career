@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "kind": "injured_list",
+ "season": "2004-05",
+ "lists_from": "2003-11-12",
+ "rule": "12 active for each game, up to 3 on the injured list, at least 5 games on it once placed. Injured players are placed first; the remaining places go to the lowest healthy reserves (runtime/roster_moves.py).",
+ "entries": [
+  {
+   "player": "John Edwards",
+   "placed": "2004-11-03",
+   "activated": null,
+   "first_game_missed": "2004-11-03-miami-heat-at-new-jersey-nets",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 5
+  },
+  {
+   "player": "John Thomas",
+   "placed": "2004-11-03",
+   "activated": null,
+   "first_game_missed": "2004-11-03-miami-heat-at-new-jersey-nets",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 5
+  },
+  {
+   "player": "Maurice Evans",
+   "placed": "2004-11-03",
+   "activated": null,
+   "first_game_missed": "2004-11-03-miami-heat-at-new-jersey-nets",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 5
+  }
+ ],
+ "as_of": "2004-11-03"
+}
