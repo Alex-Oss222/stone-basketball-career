@@ -2,6 +2,9 @@ FROM python:3.12-slim AS verify
 WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 COPY . .
+# Generated views are rebuilt inside the build image first (the user's choice D, October 2026): the engine reads only
+# canonical records, so a stale page in the commit never blocks a deploy; every other check below still runs.
+RUN python scripts/write_back_results.py --write && python scripts/update_player_reports.py
 RUN python scripts/validate_repository.py
 RUN python scripts/run_tests.py
 

@@ -1,0 +1,18 @@
+# Generated views (the user's choice B, October 2026): never text-merge them. `merge=binary` (built into git) keeps our
+# copy without conflict markers and leaves the path conflicted; regenerate after the merge
+# (python scripts/update_player_reports.py and python scripts/write_back_results.py --write), then `git add`.
+# scripts/advance.py does this on its own when a push needs a merge. Canonical records are never listed here.
+career/Dwyane_Wade/Milestones/** merge=binary
+career/Dwyane_Wade/Contracts/** merge=binary
+career/Dwyane_Wade/Contracts/contract_records.json merge
+career/Dwyane_Wade/assets/** merge=binary
+career/Dwyane_Wade/README.md merge=binary
+career/Dwyane_Wade/Professional_Identity.md merge=binary
+career/Dwyane_Wade/Awards.md merge=binary
+career/Dwyane_Wade/*/README.md merge=binary
+career/Dwyane_Wade/Stats_and_Awards/**/*.md merge=binary
+career/Dwyane_Wade/Stats_and_Awards/**/*.html merge=binary
+career/Dwyane_Wade/Stats_and_Awards/**/*.svg merge=binary
+career/Dwyane_Wade/Stats_and_Awards/player_cards_data.json merge=binary
+career/Chris_Bosh/README.md merge=binary
+career/Chris_Bosh/*/README.md merge=binary

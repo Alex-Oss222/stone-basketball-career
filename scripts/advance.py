@@ -141,12 +141,36 @@ def checkpoint(day, push=True):
             git("fetch", "-q", "origin", "milestone-1")
             code, out = git("merge", "-q", "-X", "ours", "--no-edit", "origin/milestone-1")
             if code:
-                raise Stop("merge with origin failed: " + out)
+                regenerate_after_merge(out)
+            else:                                 # generated views kept our copy (`merge=binary`): rebuild from merged records
+                run("scripts/write_back_results.py", "--write", show=False)
+                run("scripts/update_player_reports.py", show=False)
+                commit("Regenerate views after merging origin")
             if "passed" not in run("scripts/validate_repository.py", ok=(0, 1), show=False):
                 raise Stop("validation failed after merging origin")
             continue
         time.sleep(2 ** (attempt + 1))
     raise Stop("push failed")
+
+
+def regenerate_after_merge(out):
+    """A merge left conflicts. Generated views (`merge=binary` in .gitattributes) keep our copy and are regenerated from
+    the merged records; any other conflicted path is a real conflict and stops the run."""
+    _, listing = git("diff", "--name-only", "--diff-filter=U")
+    paths = [p for p in listing.splitlines() if p.strip()]
+    _, attrs = git("check-attr", "merge", "--", *paths) if paths else (0, "")
+    real = [line.split(":")[0] for line in attrs.splitlines() if not line.endswith(": binary")]
+    if not paths or real:
+        git("merge", "--abort")
+        raise Stop("merge with origin failed: " + (", ".join(real[:5]) or out))
+    git("checkout", "--ours", "--", *paths)
+    run("scripts/write_back_results.py", "--write", show=False)
+    run("scripts/update_player_reports.py", show=False)
+    git("add", "-A")
+    code, out = git("commit", "-q", "--no-edit")
+    if code:
+        raise Stop("merge commit failed: " + out)
+    say(f"    merged origin: {len(paths)} generated view(s) regenerated")
 
 
 def draws_pending():

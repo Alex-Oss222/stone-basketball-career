@@ -11,13 +11,8 @@ from runtime.league_cards import CARDS_DIR, COLORS_FILE, build_cards
 from runtime.player_reports import build_reports
 
 
-def refresh_career_views(root: Path) -> list[Path]:
-    """Build the complete set before writing, then replace only changed pages.
-
-    Called at the successful CLI boundary, after the event driver has committed
-    its records. A stopped decision is a successful boundary too: the player
-    should immediately see the question on which the career is waiting.
-    """
+def career_view_outputs(root: Path) -> dict:
+    """{page: text} for every generated career view, built from canonical records without writing anything."""
     root = Path(root)
     outputs = {}
     for player in sorted((root / "career").iterdir()):
@@ -29,6 +24,17 @@ def refresh_career_views(root: Path) -> list[Path]:
         outputs.update(statistics_pages(root))   # not-started Miami pages follow the register; played periods their results
         from runtime.roster_moves import depth_views
         outputs.update(depth_views(root))        # the readable depth chart follows the staff's chart in force
+    return outputs
+
+
+def refresh_career_views(root: Path) -> list[Path]:
+    """Build the complete set before writing, then replace only changed pages.
+
+    Called at the successful CLI boundary, after the event driver has committed
+    its records. A stopped decision is a successful boundary too: the player
+    should immediately see the question on which the career is waiting.
+    """
+    outputs = career_view_outputs(root)
     changed = []
     for page, text in outputs.items():
         if not page.is_file() or page.read_text(encoding="utf-8") != text:
