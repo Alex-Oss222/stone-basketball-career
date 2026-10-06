@@ -195,8 +195,12 @@ def apply(record, season, root, day):
     if applied:
         ledger_file.write_text(json.dumps(ledger, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         if sheet_file.is_file():
+            if any(d["club"] == "Miami Heat" for d in record["decisions"] if d["id"] in applied):
+                from .signing import refresh_schedule_totals
+                refresh_schedule_totals(sheet)
             sheet_file.write_text(json.dumps(sheet, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return applied
+
 
 
 def _apply_schedule(entry, s, keep, d, ledger=False):

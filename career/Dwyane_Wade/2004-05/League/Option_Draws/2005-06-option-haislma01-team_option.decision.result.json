@@ -1,0 +1,12 @@
+{
+ "date": "2004-10-31",
+ "decider": "Milwaukee Bucks (drawn by rule)",
+ "event_id": "2005-06-option-haislma01-team_option",
+ "kind": "decision",
+ "options": {
+  "decline": 0.113,
+  "exercise": 0.887
+ },
+ "outcome": "exercise",
+ "question": "Does Milwaukee Bucks exercise its 2005-06 team option on Marcus Haislip ($2,000,600)?"
+}

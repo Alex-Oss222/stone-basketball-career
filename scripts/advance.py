@@ -114,10 +114,10 @@ def commit(message):
 
 def checkpoint(day, push=True):
     """The full write-back and page rebuild, validation; with `push`, the full suite and the push."""
-    run("scripts/write_back_results.py", "--write", show=False)
-    run("scripts/update_player_reports.py", show=False)
-    if "passed" not in run("scripts/validate_repository.py", ok=(0, 1)):
-        raise Stop("validation failed")
+    # Every derived record rebuilt from its sources, then validation (scripts/reconcile.py): a stale total or page is
+    # fixed here, so only a real conflict between source records stops the run.
+    if "passed" not in run("scripts/reconcile.py", ok=(0, 1)):
+        raise Stop("validation failed after rebuilding every derived record (a source conflict; see above)")
     commit(f"Advance {day}: checkpoint")
     if not push:
         return
@@ -143,8 +143,7 @@ def checkpoint(day, push=True):
             if code:
                 regenerate_after_merge(out)
             else:                                 # generated views kept our copy (`merge=binary`): rebuild from merged records
-                run("scripts/write_back_results.py", "--write", show=False)
-                run("scripts/update_player_reports.py", show=False)
+                run("scripts/reconcile.py", ok=(0, 1), show=False)
                 commit("Regenerate views after merging origin")
             if "passed" not in run("scripts/validate_repository.py", ok=(0, 1), show=False):
                 raise Stop("validation failed after merging origin")
@@ -164,8 +163,7 @@ def regenerate_after_merge(out):
         git("merge", "--abort")
         raise Stop("merge with origin failed: " + (", ".join(real[:5]) or out))
     git("checkout", "--ours", "--", *paths)
-    run("scripts/write_back_results.py", "--write", show=False)
-    run("scripts/update_player_reports.py", show=False)
+    run("scripts/reconcile.py", ok=(0, 1), show=False)
     git("add", "-A")
     code, out = git("commit", "-q", "--no-edit")
     if code:

@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-06-option-jonesfr01-team_option",
+ "date": "2004-10-31",
+ "question": "Does Indiana Pacers exercise its 2005-06 team option on Fred Jones ($2,328,843)?",
+ "decider": "Indiana Pacers (drawn by rule)",
+ "options": {
+  "exercise": 0.585,
+  "decline": 0.415
+ },
+ "basis": "worth $2,408,422 (market price of his production on 2004-10-31) against $2,328,843: ratio 1.034 inside the close band 0.8-1.2 (runtime/options.py)"
+}

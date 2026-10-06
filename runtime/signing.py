@@ -516,6 +516,24 @@ def refresh_aggregates(finance, sheet, room, day):
             pick["contract_status"] = "unsigned"
 
 
+def refresh_schedule_totals(sheet):
+    """The schedule's season totals recomputed from its own entries (`ledger_aggregates`), in place. Used after any
+    change to a later season (an option decision) and by `scripts/reconcile.py`; finance.json's current-season figures
+    are `refresh_aggregates`'s, written with the day's cap room."""
+    totals, _ = ledger_aggregates(sheet)
+    for row in sheet.get("projection", []):
+        t = totals.get(row["season"])
+        if t is None:
+            continue
+        base = t["contract_salary"] + t["draft_hold"]
+        row.update(scheduled_contract_salary=t["contract_salary"], unsigned_first_round_holds=t["draft_hold"],
+                   known_conditional_salary=t["options"], unpriced_option_count=t["unknown_options"],
+                   known_base_allocations=base, base_plus_priced_options=base + t["options"])
+    sheet["known_baseline"] = {s: t["contract_salary"] + t["draft_hold"] for s, t in totals.items()}
+    sheet["conditional_known_amounts"] = {s: t["options"] for s, t in totals.items()}
+    sheet["conditional_unknown_count"] = {s: t["unknown_options"] for s, t in totals.items()}
+
+
 def refresh_finance(writer, front_office, day):
     """Recompute the finance summary and cap sheet from the ledger on the date."""
     finance = writer.load(TEAM / "Finances/finance.json")

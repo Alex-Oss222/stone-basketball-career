@@ -1,0 +1,12 @@
+{
+ "date": "2004-10-31",
+ "decider": "Indiana Pacers (drawn by rule)",
+ "event_id": "2005-06-option-jonesfr01-team_option",
+ "kind": "decision",
+ "options": {
+  "decline": 0.415,
+  "exercise": 0.585
+ },
+ "outcome": "exercise",
+ "question": "Does Indiana Pacers exercise its 2005-06 team option on Fred Jones ($2,328,843)?"
+}

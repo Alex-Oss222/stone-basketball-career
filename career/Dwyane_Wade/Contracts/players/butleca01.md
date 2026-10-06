@@ -45,7 +45,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,678,800 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $1,804,680 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,930,680 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,461,617 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | season_salary_list | Fourth-year team option, not an unconditional June 26, 2003 commitment. |
+| 2005-06 | $2,461,617 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | season_salary_list | Fourth-year team option, not an unconditional June 26, 2003 commitment. |
 
 ### Options and decision deadlines
 
@@ -53,7 +53,6 @@ An option amount is conditional. No exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2005-06 | team_option | $2,461,617 | Not recorded | Not recorded | Not recorded |
 
 ### Additional recorded annual compensation
 
@@ -214,7 +213,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,678,800 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $1,804,680 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,930,680 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,461,617 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | season_salary_list | Fourth-year team option, not an unconditional June 26, 2003 commitment. |
+| 2005-06 | $2,461,617 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | season_salary_list | Fourth-year team option, not an unconditional June 26, 2003 commitment. |
 
 ### Options and decision deadlines
 
@@ -222,7 +221,6 @@ An option amount is conditional. No exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2005-06 | team_option | $2,461,617 | Not recorded | Not recorded | Not recorded |
 
 ### Additional recorded annual compensation
 

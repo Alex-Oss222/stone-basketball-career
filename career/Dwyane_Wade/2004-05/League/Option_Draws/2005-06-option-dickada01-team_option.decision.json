@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-06-option-dickada01-team_option",
+ "date": "2004-10-31",
+ "question": "Does Atlanta Hawks exercise its 2005-06 team option on Dan Dickau ($1,612,587)?",
+ "decider": "Atlanta Hawks (drawn by rule)",
+ "options": {
+  "exercise": 0.857,
+  "decline": 0.143
+ },
+ "basis": "worth $1,843,127 (market price of his production on 2004-10-31) against $1,612,587: ratio 1.143 inside the close band 0.8-1.2 (runtime/options.py)"
+}

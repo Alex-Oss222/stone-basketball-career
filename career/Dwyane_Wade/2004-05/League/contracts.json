@@ -130,9 +130,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 3471360
+    "2004-05": 3471360,
+    "2005-06": 3713640,
+    "2006-07": 4694041
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 3
   },
   {
    "player": "Rafael Araújo",
@@ -146,7 +153,8 @@
     "2006-07": 1221240
    },
    "source": "2004 rookie scale No. 21 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Gilbert Arenas",
@@ -257,9 +265,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1611840
+    "2004-05": 1611840,
+    "2005-06": 1724280,
+    "2006-07": 2463996
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 13
   },
   {
    "player": "Leandro Barbosa",
@@ -268,9 +283,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 870000
+    "2004-05": 870000,
+    "2005-06": 930600,
+    "2006-07": 1679733
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 28
   },
   {
    "player": "Andre Barrett",
@@ -316,7 +338,8 @@
    "schedule": {
     "2004-05": 3212402
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Tony Battie",
@@ -328,7 +351,10 @@
     "2004-05": 4800000,
     "2005-06": 5200000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2005-06": "early_termination_option"
+   }
   },
   {
    "player": "Lonny Baxter",
@@ -378,7 +404,11 @@
     "2007-08": 13500000,
     "2008-09": 14500000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2007-08": "early_termination_option",
+    "2008-09": "early_termination_option"
+   }
   },
   {
    "player": "Andris Biedriņš",
@@ -392,7 +422,8 @@
     "2006-07": 2863920
    },
    "source": "2004 rookie scale No. 6 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Chauncey Billups",
@@ -496,10 +527,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1280880,
-    "2005-06": 1969993
+    "2004-05": 1280880
    },
-   "source": "library/2003/league/nba_2003_contracts.json; traded 2004-07-29"
+   "source": "library/2003/league/nba_2003_contracts.json; traded 2004-07-29",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: decline (2004-10-31; his real career ended before 2005-06 (runtime/availability.py); runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Chris Bosh",
@@ -508,9 +543,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 3129720
+    "2004-05": 3129720,
+    "2005-06": 3348000,
+    "2006-07": 4235220
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 4
   },
   {
    "player": "Earl Boykins",
@@ -561,7 +603,8 @@
    "schedule": {
     "2004-05": 1554326
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)",
+   "rookie_scale": true
   },
   {
    "player": "Damone Brown",
@@ -594,7 +637,8 @@
    "schedule": {
     "2004-05": 2332388
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Kwame Brown",
@@ -605,7 +649,8 @@
    "schedule": {
     "2004-05": 5361873
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "P.J. Brown",
@@ -665,7 +710,10 @@
     "2006-07": 3360000,
     "2007-08": 3600000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2007-08": "early_termination_option"
+   }
   },
   {
    "player": "Antonio Burks",
@@ -688,7 +736,12 @@
     "2004-05": 1930680,
     "2005-06": 2461617
    },
-   "source": "Miami contract_schedules.json"
+   "source": "Miami contract_schedules.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 1.81 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Jackie Butler",
@@ -708,9 +761,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1312800
+    "2004-05": 1312800,
+    "2005-06": 1404360,
+    "2006-07": 2157097
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 17
   },
   {
    "player": "Marcus Camby",
@@ -817,7 +877,8 @@
    "schedule": {
     "2004-05": 4801102
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Josh Childress",
@@ -831,7 +892,8 @@
     "2006-07": 2201640
    },
    "source": "2004 rookie scale No. 9 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Doug Christie",
@@ -913,7 +975,8 @@
    "schedule": {
     "2004-05": 1887864
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Nick Collison",
@@ -933,9 +996,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 971160
+    "2004-05": 971160,
+    "2005-06": 1038960,
+    "2006-07": 1817141
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 24
   },
   {
    "player": "Chris Crawford",
@@ -947,7 +1017,10 @@
     "2004-05": 3250000,
     "2005-06": 3500000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2005-06": "team_option"
+   }
   },
   {
    "player": "Jamal Crawford",
@@ -962,7 +1035,8 @@
     "2007-08": 14847448,
     "2008-09": 16197216
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Austin Croshere",
@@ -984,7 +1058,8 @@
    "schedule": {
     "2004-05": 3896402
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Samuel Dalembert",
@@ -995,7 +1070,8 @@
    "schedule": {
     "2004-05": 1599549
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Erick Dampier",
@@ -1069,7 +1145,10 @@
     "2007-08": 16440000,
     "2008-09": 17810000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2008-09": "early_termination_option"
+   }
   },
   {
    "player": "Dale Davis",
@@ -1153,7 +1232,8 @@
     "2006-07": 3862080
    },
    "source": "2004 rookie scale No. 3 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Boris Diaw",
@@ -1162,9 +1242,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1097640
+    "2004-05": 1097640,
+    "2005-06": 1174200,
+    "2006-07": 1870501
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 21
   },
   {
    "player": "Dan Dickau",
@@ -1176,7 +1263,12 @@
     "2004-05": 893400,
     "2005-06": 1612587
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; engine draw; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Kaniel Dickens",
@@ -1198,7 +1290,8 @@
    "schedule": {
     "2004-05": 2695164
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Vlade Divac",
@@ -1221,7 +1314,12 @@
     "2004-05": 1348200,
     "2005-06": 2070835
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; engine draw; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Michael Doleac",
@@ -1282,7 +1380,12 @@
     "2004-05": 3565080,
     "2005-06": 4506261
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 1.52 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Ronald Dupree",
@@ -1315,9 +1418,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 901440
+    "2004-05": 901440,
+    "2005-06": 964320,
+    "2006-07": 1738669
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 26
   },
   {
    "player": "Corsley Edwards",
@@ -1381,10 +1491,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1742400,
-    "2005-06": 2401027
+    "2004-05": 1742400
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: decline (2004-10-31; clear: ratio 0.74 at or below 0.8; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Andre Emmett",
@@ -1463,9 +1577,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 2152800
+    "2004-05": 2152800,
+    "2005-06": 2303040,
+    "2006-07": 2929467
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 8
   },
   {
    "player": "Danny Fortson",
@@ -1519,7 +1640,10 @@
     "2007-08": 16440000,
     "2008-09": 17810000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2008-09": "early_termination_option"
+   }
   },
   {
    "player": "Matt Freije",
@@ -1550,9 +1674,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1454640
+    "2004-05": 1454640,
+    "2005-06": 1556160,
+    "2006-07": 2385593
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 15
   },
   {
    "player": "Alex Garcia",
@@ -1599,7 +1730,8 @@
    "schedule": {
     "2004-05": 3309651
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Devean George",
@@ -1688,7 +1820,12 @@
     "2004-05": 3214080,
     "2005-06": 4065811
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 1.26 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Ben Gordon",
@@ -1702,7 +1839,8 @@
     "2006-07": 3153120
    },
    "source": "2004 rookie scale No. 5 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Brian Grant",
@@ -1715,7 +1853,10 @@
     "2005-06": 14336220,
     "2006-07": 15439006
    },
-   "source": "Miami contract_schedules.json"
+   "source": "Miami contract_schedules.json",
+   "options": {
+    "2006-07": "early_termination_option"
+   }
   },
   {
    "player": "Willie Green",
@@ -1748,7 +1889,8 @@
    "schedule": {
     "2004-05": 2937205
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Marcus Haislip",
@@ -1760,7 +1902,12 @@
     "2004-05": 1400000,
     "2005-06": 2000600
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; engine draw; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Richard Hamilton",
@@ -1836,7 +1983,8 @@
     "2006-07": 1002840
    },
    "source": "2004 rookie scale No. 26 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Devin Harris",
@@ -1850,7 +1998,8 @@
     "2006-07": 2395200
    },
    "source": "2004 rookie scale No. 8 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Junior Harrington",
@@ -1925,9 +2074,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1879920
+    "2004-05": 1879920,
+    "2005-06": 2011080,
+    "2006-07": 2564127
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 10
   },
   {
    "player": "Brendan Haywood",
@@ -1938,7 +2094,8 @@
    "schedule": {
     "2004-05": 1735305
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Alan Henderson",
@@ -1961,7 +2118,12 @@
     "2004-05": 2260280,
     "2005-06": 2870556
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 2.70 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Grant Hill",
@@ -1983,9 +2145,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 2349840
+    "2004-05": 2349840,
+    "2005-06": 2513880,
+    "2006-07": 3192628
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 7
   },
   {
    "player": "Fred Hoiberg",
@@ -2047,7 +2216,8 @@
     "2006-07": 4806720
    },
    "source": "2004 rookie scale No. 1 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Josh Howard",
@@ -2056,9 +2226,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 863640
+    "2004-05": 863640,
+    "2005-06": 923880,
+    "2006-07": 1667603
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 29
   },
   {
    "player": "Juwan Howard",
@@ -2097,7 +2274,8 @@
     "2006-07": 1387560
    },
    "source": "2004 rookie scale No. 18 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Ryan Humphrey",
@@ -2106,10 +2284,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1223160,
-    "2005-06": 1883666
+    "2004-05": 1223160
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: decline (2004-10-31; his real career ended before 2005-06 (runtime/availability.py); runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Brandon Hunter",
@@ -2131,7 +2313,8 @@
    "schedule": {
     "2004-05": 720046
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Andre Iguodala",
@@ -2145,7 +2328,8 @@
     "2006-07": 2614440
    },
    "source": "2004 rookie scale No. 7 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Zydrunas Ilgauskas",
@@ -2226,7 +2410,8 @@
     "2006-07": 2091480
    },
    "source": "2004 rookie scale No. 10 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Marc Jackson",
@@ -2251,7 +2436,12 @@
     "2004-05": 1082160,
     "2005-06": 1780153
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 1.71 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Jerome James",
@@ -2271,9 +2461,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 4320360
+    "2004-05": 4320360,
+    "2005-06": 4621800,
+    "2006-07": 5828090
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 1
   },
   {
    "player": "Mike James",
@@ -2324,7 +2521,8 @@
     "2006-07": 1460640
    },
    "source": "2004 rookie scale No. 17 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Chris Jefferies",
@@ -2333,10 +2531,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 899040,
-    "2005-06": 1621868
+    "2004-05": 899040
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: decline (2004-10-31; his real career ended before 2005-06 (runtime/availability.py); runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Richard Jefferson",
@@ -2347,7 +2549,8 @@
    "schedule": {
     "2004-05": 2266794
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Jared Jeffries",
@@ -2359,7 +2562,12 @@
     "2004-05": 1834080,
     "2005-06": 2433824
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; engine draw; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Horace Jenkins",
@@ -2403,7 +2611,8 @@
    "schedule": {
     "2004-05": 2358954
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Damon Jones",
@@ -2426,9 +2635,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1143360
+    "2004-05": 1143360,
+    "2005-06": 1223160,
+    "2006-07": 1886113
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 20
   },
   {
    "player": "Eddie Jones",
@@ -2453,7 +2669,12 @@
     "2004-05": 1572480,
     "2005-06": 2328843
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; engine draw; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "James Jones",
@@ -2495,9 +2716,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 2574240
+    "2004-05": 2574240,
+    "2005-06": 2753760,
+    "2006-07": 3491768
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 6
   },
   {
    "player": "Jason Kapono",
@@ -2533,7 +2761,8 @@
     "2006-07": 1272120
    },
    "source": "2004 rookie scale No. 20 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Jason Kidd",
@@ -2694,7 +2923,8 @@
     "2006-07": 3481920
    },
    "source": "2004 rookie scale No. 4 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Raül López",
@@ -2705,7 +2935,8 @@
    "schedule": {
     "2004-05": 1087038
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Tyronn Lue",
@@ -2777,7 +3008,8 @@
    "schedule": {
     "2004-05": 8533333
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)",
+   "rookie_scale": true
   },
   {
    "player": "Stephon Marbury",
@@ -2840,7 +3072,8 @@
     "2007-08": 12881114,
     "2008-09": 14052124
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Kevin Martin",
@@ -2874,7 +3107,8 @@
    "schedule": {
     "2004-05": 6529630
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)",
+   "rookie_scale": true
   },
   {
    "player": "D.J. Mbenga",
@@ -2988,7 +3222,8 @@
     "2007-08": 6741625,
     "2008-09": 7354500
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Darko Milicic",
@@ -2997,9 +3232,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 3865440
+    "2004-05": 3865440,
+    "2005-06": 4135200,
+    "2006-07": 5218622
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 2
   },
   {
    "player": "Anthony Miller",
@@ -3052,7 +3294,8 @@
    "schedule": {
     "2004-05": 6000000
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)",
+   "rookie_scale": true
   },
   {
    "player": "Reggie Miller",
@@ -3076,7 +3319,12 @@
     "2004-05": 4436880,
     "2005-06": 5594906
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 1.92 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Cuttino Mobley",
@@ -3088,7 +3336,10 @@
     "2004-05": 5884500,
     "2005-06": 6374875
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2005-06": "early_termination_option"
+   }
   },
   {
    "player": "Nazr Mohammed",
@@ -3114,7 +3365,8 @@
     "2006-07": 1537440
    },
    "source": "2004 rookie scale No. 16 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Alonzo Mourning",
@@ -3136,7 +3388,8 @@
    "schedule": {
     "2004-05": 2231808
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Lamond Murray",
@@ -3179,10 +3432,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1493880,
-    "2005-06": 2290118
+    "2004-05": 1493880
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: decline (2004-10-31; engine draw; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Eduardo Najera",
@@ -3196,7 +3453,10 @@
     "2006-07": 4571428,
     "2007-08": 4952380
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2007-08": "early_termination_option"
+   }
   },
   {
    "player": "Steve Nash",
@@ -3223,7 +3483,8 @@
     "2006-07": 1793160
    },
    "source": "2004 rookie scale No. 13 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Rasho Nesterovic",
@@ -3286,7 +3547,10 @@
     "2006-07": 15101625,
     "2007-08": 16360094
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2007-08": "early_termination_option"
+   }
   },
   {
    "player": "Lamar Odom",
@@ -3311,7 +3575,8 @@
     "2006-07": 4300560
    },
    "source": "2004 rookie scale No. 2 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Mehmet Okur",
@@ -3380,7 +3645,10 @@
     "2004-05": 27696430,
     "2005-06": 30642861
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2005-06": "early_termination_option"
+   }
   },
   {
    "player": "Greg Ostertag",
@@ -3413,9 +3681,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1011600
+    "2004-05": 1011600,
+    "2005-06": 1082160,
+    "2006-07": 1836426
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 23
   },
   {
    "player": "Zaza Pachulia",
@@ -3484,7 +3759,8 @@
    "schedule": {
     "2004-05": 1545441
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Ruben Patterson",
@@ -3506,9 +3782,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1191000
+    "2004-05": 1191000,
+    "2005-06": 1274160,
+    "2006-07": 1962206
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale; traded 2004-07-29"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale; traded 2004-07-29",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 19
   },
   {
    "player": "Gary Payton",
@@ -3539,9 +3822,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 875400
+    "2004-05": 875400,
+    "2005-06": 936480,
+    "2006-07": 1689410
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 27
   },
   {
    "player": "Morris Peterson",
@@ -3556,7 +3846,8 @@
     "2007-08": 3750450,
     "2008-09": 4091400
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Eric Piatkowski",
@@ -3582,7 +3873,10 @@
     "2006-07": 15101625,
     "2007-08": 16360094
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2007-08": "early_termination_option"
+   }
   },
   {
    "player": "Mickael Pietrus",
@@ -3591,9 +3885,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1785960
+    "2004-05": 1785960,
+    "2005-06": 1910520,
+    "2006-07": 2535260
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 11
   },
   {
    "player": "Scottie Pippen",
@@ -3613,9 +3914,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1053720
+    "2004-05": 1053720,
+    "2005-06": 1127280,
+    "2006-07": 1854376
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale; expansion draft"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale; expansion draft",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 22
   },
   {
    "player": "Pavel Podkolzin",
@@ -3629,7 +3937,8 @@
     "2006-07": 1703520
    },
    "source": "2004 rookie scale No. 14 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Scot Pollard",
@@ -3688,7 +3997,12 @@
     "2004-05": 1038960,
     "2005-06": 1763115
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 3.49 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Laron Profit",
@@ -3710,7 +4024,8 @@
    "schedule": {
     "2004-05": 745046
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Vladimir Radmanovic",
@@ -3721,7 +4036,8 @@
    "schedule": {
     "2004-05": 2300984
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Aleksandar Radojević",
@@ -3746,7 +4062,8 @@
     "2006-07": 1172400
    },
    "source": "2004 rookie scale No. 22 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Zach Randolph",
@@ -3757,7 +4074,8 @@
    "schedule": {
     "2004-05": 1805126
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Theo Ratliff",
@@ -3780,7 +4098,10 @@
     "2004-05": 3000000,
     "2005-06": 3000000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2005-06": "player_option"
+   }
   },
   {
    "player": "Justin Reed",
@@ -3813,7 +4134,8 @@
    "schedule": {
     "2004-05": 3534018
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Quentin Richardson",
@@ -3827,7 +4149,8 @@
     "2006-07": 5564680,
     "2007-08": 6121148
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Luke Ridnour",
@@ -3836,9 +4159,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1531200
+    "2004-05": 1531200,
+    "2005-06": 1638000,
+    "2006-07": 2425878
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale; expansion draft"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale; expansion draft",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 14
   },
   {
    "player": "Clifford Robinson",
@@ -3908,7 +4238,12 @@
     "2004-05": 1174200,
     "2005-06": 1810616
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 1.29 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "John Salmons",
@@ -3920,7 +4255,12 @@
     "2004-05": 925680,
     "2005-06": 1669001
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 1.66 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Jamal Sampson",
@@ -4000,7 +4340,8 @@
     "2006-07": 967920
    },
    "source": "2004 rookie scale No. 28 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Joe Smith",
@@ -4027,7 +4368,8 @@
     "2006-07": 1887600
    },
    "source": "2004 rookie scale No. 12 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "J.R. Smith",
@@ -4041,7 +4383,8 @@
     "2006-07": 1325160
    },
    "source": "2004 rookie scale No. 19 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Theron Smith",
@@ -4090,7 +4433,8 @@
     "2006-07": 1986960
    },
    "source": "2004 rookie scale No. 11 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Darius Songaila",
@@ -4160,7 +4504,8 @@
     "2007-08": 3653796,
     "2008-09": 3985959
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Michael Stewart",
@@ -4184,7 +4529,10 @@
     "2005-06": 7500000,
     "2006-07": 8125000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2006-07": "team_option"
+   }
   },
   {
    "player": "Amar'e Stoudemire",
@@ -4196,7 +4544,12 @@
     "2004-05": 2032200,
     "2005-06": 2589023
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 3.38 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Damon Stoudamire",
@@ -4238,9 +4591,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1978920
+    "2004-05": 1978920,
+    "2005-06": 2116920,
+    "2006-07": 2696956
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 9
   },
   {
    "player": "Robert Swift",
@@ -4254,7 +4614,8 @@
     "2006-07": 1618320
    },
    "source": "2004 rookie scale No. 15 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Stromile Swift",
@@ -4269,7 +4630,8 @@
     "2007-08": 4500540,
     "2008-09": 4909680
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Wally Szczerbiak",
@@ -4297,7 +4659,10 @@
     "2005-06": 9100000,
     "2006-07": 9750000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2006-07": "early_termination_option"
+   }
   },
   {
    "player": "Sebastian Telfair",
@@ -4311,7 +4676,8 @@
     "2006-07": 1080480
    },
    "source": "2004 rookie scale No. 24 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Jason Terry",
@@ -4348,7 +4714,8 @@
     "2006-07": 6128750,
     "2007-08": 6741625
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "James Thomas",
@@ -4420,7 +4787,8 @@
    "schedule": {
     "2004-05": 1554326
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Robert Traylor",
@@ -4453,7 +4821,8 @@
    "schedule": {
     "2004-05": 745046
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Nikoloz Tskitishvili",
@@ -4462,10 +4831,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 2910600,
-    "2005-06": 3687730
+    "2004-05": 2910600
    },
-   "source": "library/2003/league/nba_2003_contracts.json; traded 2004-07-22"
+   "source": "library/2003/league/nba_2003_contracts.json; traded 2004-07-22",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: decline (2004-10-31; clear: ratio 0.63 at or below 0.8; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Hedo Turkoglu",
@@ -4480,7 +4853,8 @@
     "2007-08": 4316812,
     "2008-09": 4648875
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Beno Udrih",
@@ -4494,7 +4868,8 @@
     "2006-07": 960840
    },
    "source": "2004 rookie scale No. 29 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Nick Van Exel",
@@ -4533,7 +4908,8 @@
     "2006-07": 1037280
    },
    "source": "2004 rookie scale No. 25 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Jacque Vaughn",
@@ -4581,7 +4957,8 @@
     "2006-07": 973920
    },
    "source": "2004 rookie scale No. 27 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Dajuan Wagner",
@@ -4590,10 +4967,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 2643600,
-    "2005-06": 3352085
+    "2004-05": 2643600
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: decline (2004-10-31; clear: ratio 0.67 at or below 0.8; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Antoine Walker",
@@ -4638,7 +5019,8 @@
    "schedule": {
     "2004-05": 1652453
    },
-   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)"
+   "source": "library/2003/league/nba_2003_contracts.json (rookie option exercised by 2003-10-31: on the 2004-05 list)",
+   "rookie_scale": true
   },
   {
    "player": "Rasheed Wallace",
@@ -4722,7 +5104,10 @@
     "2004-05": 7700000,
     "2005-06": 8400000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2005-06": "team_option"
+   }
   },
   {
    "player": "Jiri Welsch",
@@ -4734,7 +5119,12 @@
     "2004-05": 1419240,
     "2005-06": 2177114
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 2.35 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "David Wesley",
@@ -4754,9 +5144,16 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1247160
+    "2004-05": 1247160,
+    "2005-06": 1334160,
+    "2006-07": 2051938
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true,
+   "scale_pick_2003": 18
   },
   {
    "player": "Jahidi White",
@@ -4782,7 +5179,8 @@
     "2007-08": 1232091,
     "2008-09": 1344099
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "rookie_scale": true
   },
   {
    "player": "Chris Wilcox",
@@ -4794,7 +5192,12 @@
     "2004-05": 2210880,
     "2005-06": 2812239
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 1.30 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Damien Wilkins",
@@ -4860,10 +5263,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 957480,
-    "2005-06": 1724421
+    "2004-05": 957480
    },
-   "source": "library/2003/league/nba_2003_contracts.json; expansion draft"
+   "source": "library/2003/league/nba_2003_contracts.json; expansion draft",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: decline (2004-10-31; his real career ended before 2005-06 (runtime/availability.py); runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Jason Williams",
@@ -4886,10 +5293,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1550551,
-    "2005-06": 1956795
+    "2004-05": 1550551
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: decline (2004-10-31; his real career ended before 2005-06 (runtime/availability.py); runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Jerome Williams",
@@ -4903,7 +5314,10 @@
     "2006-07": 6250000,
     "2007-08": 6500000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "options": {
+    "2007-08": "player_option"
+   }
   },
   {
    "player": "Qyntel Woods",
@@ -4915,7 +5329,12 @@
     "2004-05": 1127280,
     "2005-06": 1795757
    },
-   "source": "library/2003/league/nba_2003_contracts.json; expansion draft"
+   "source": "library/2003/league/nba_2003_contracts.json; expansion draft",
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 1.26 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "wrighdo01",
@@ -4929,7 +5348,8 @@
     "2006-07": 1125480
    },
    "source": "2004 rookie scale No. 23 at 120%",
-   "team_option": "2007-08"
+   "team_option": "2007-08",
+   "rookie_scale": true
   },
   {
    "player": "Lorenzen Wright",

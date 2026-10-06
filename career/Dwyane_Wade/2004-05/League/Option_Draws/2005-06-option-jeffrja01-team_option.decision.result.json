@@ -1,0 +1,12 @@
+{
+ "date": "2004-10-31",
+ "decider": "Washington Wizards (drawn by rule)",
+ "event_id": "2005-06-option-jeffrja01-team_option",
+ "kind": "decision",
+ "options": {
+  "decline": 0.458,
+  "exercise": 0.542
+ },
+ "outcome": "exercise",
+ "question": "Does Washington Wizards exercise its 2005-06 team option on Jared Jeffries ($2,433,824)?"
+}

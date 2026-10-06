@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-06-option-haislma01-team_option",
+ "date": "2004-10-31",
+ "question": "Does Milwaukee Bucks exercise its 2005-06 team option on Marcus Haislip ($2,000,600)?",
+ "decider": "Milwaukee Bucks (drawn by rule)",
+ "options": {
+  "exercise": 0.887,
+  "decline": 0.113
+ },
+ "basis": "worth $2,310,244 (market price of his production on 2004-10-31, x1.25 for a player 24 or younger) against $2,000,600: ratio 1.155 inside the close band 0.8-1.2 (runtime/options.py)"
+}

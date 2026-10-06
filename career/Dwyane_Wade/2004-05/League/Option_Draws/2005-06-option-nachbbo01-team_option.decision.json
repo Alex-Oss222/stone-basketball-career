@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-06-option-nachbbo01-team_option",
+ "date": "2004-10-31",
+ "question": "Does Houston Rockets exercise its 2005-06 team option on Bostjan Nachbar ($2,290,118)?",
+ "decider": "Houston Rockets (drawn by rule)",
+ "options": {
+  "exercise": 0.516,
+  "decline": 0.484
+ },
+ "basis": "worth $2,304,748 (market price of his production on 2004-10-31, x1.25 for a player 24 or younger) against $2,290,118: ratio 1.006 inside the close band 0.8-1.2 (runtime/options.py)"
+}

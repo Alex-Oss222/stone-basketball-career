@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-06-option-jeffrja01-team_option",
+ "date": "2004-10-31",
+ "question": "Does Washington Wizards exercise its 2005-06 team option on Jared Jeffries ($2,433,824)?",
+ "decider": "Washington Wizards (drawn by rule)",
+ "options": {
+  "exercise": 0.542,
+  "decline": 0.458
+ },
+ "basis": "worth $2,474,417 (market price of his production on 2004-10-31) against $2,433,824: ratio 1.017 inside the close band 0.8-1.2 (runtime/options.py)"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2004-10-31",
+ "decider": "Atlanta Hawks (drawn by rule)",
+ "event_id": "2005-06-option-dickada01-team_option",
+ "kind": "decision",
+ "options": {
+  "decline": 0.143,
+  "exercise": 0.857
+ },
+ "outcome": "exercise",
+ "question": "Does Atlanta Hawks exercise its 2005-06 team option on Dan Dickau ($1,612,587)?"
+}

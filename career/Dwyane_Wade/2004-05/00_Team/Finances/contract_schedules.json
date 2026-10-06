@@ -16,7 +16,7 @@
  "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
  "known_baseline": {
   "2004-05": 52819984,
-  "2005-06": 50334487,
+  "2005-06": 52796104,
   "2006-07": 32349731,
   "2007-08": 17022873,
   "2008-09": 3958667,
@@ -26,7 +26,7 @@
  },
  "conditional_known_amounts": {
   "2004-05": 0,
-  "2005-06": 2461617,
+  "2005-06": 0,
   "2006-07": 18640208,
   "2007-08": 0,
   "2008-09": 0,
@@ -374,7 +374,7 @@
    "amount_kind": {
     "2003-04": "contract_salary",
     "2004-05": "contract_salary",
-    "2005-06": "team_option"
+    "2005-06": "contract_salary"
    },
    "signed_date": "2002-07-02",
    "original_term_seasons": 4,
@@ -384,7 +384,10 @@
     "amount": 1678800,
     "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
    },
-   "bbr_id": "butleca01"
+   "bbr_id": "butleca01",
+   "option_history": [
+    "2005-06 team option: exercise (2004-10-31; clear: ratio 1.81 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Kendall Gill",
@@ -772,15 +775,15 @@
   },
   {
    "season": "2005-06",
-   "scheduled_contract_salary": 50334487,
+   "scheduled_contract_salary": 52796104,
    "unsigned_first_round_holds": 0,
-   "known_conditional_salary": 2461617,
+   "known_conditional_salary": 0,
    "unpriced_option_count": 0,
    "free_agent_holds": null,
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 50334487,
+   "known_base_allocations": 52796104,
    "base_plus_priced_options": 52796104,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",

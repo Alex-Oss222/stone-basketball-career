@@ -740,6 +740,8 @@ def main():
         print("Repository validation failed:")
         for error in errors:
             print(f"- {error}")
+        print("A stale total or page is fixed by `python scripts/reconcile.py` (every derived record rebuilt from its "
+              "sources); what remains after it is a conflict between source records.")
         return 1
     print("Repository validation passed.")
     return 0
