@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2005-01-24](../assets/stat_reports/personal_2005-01-24.svg)
+![Player personal information and earned career awards through 2005-01-27](../assets/stat_reports/personal_2005-01-27.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-01-24; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-01-27; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
@@ -57,7 +57,7 @@ Identity as of 2005-01-24; status snapshot dated 2004-10-28. User-established al
 
 ## Statistics
 
-Career cutoff: **2005-01-24**. Club competitions and national-team events have separate records.
+Career cutoff: **2005-01-27**. Club competitions and national-team events have separate records.
 
 ### NBA regular season
 
@@ -68,12 +68,12 @@ Career cutoff: **2005-01-24**. Club competitions and national-team events have s
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [2003-04](2003-04/README.md) | 20 | Miami Heat | NBA | SG / PG | 75 | 70 | 35.0 | 6.1 | 11.7 | .520 | 0.9 | 2.4 | .397 | 5.1 | 9.3 | .551 | .560 | 4.8 | 5.3 | .909 | 1.4 | 3.4 | 4.8 | 4.5 | 1.6 | 1.0 | 1.1 | 2.9 | 17.9 | .639 | [East ROM](League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week), [East POM](League/2003-04/12_December/League_Awards.md#player-of-the-month), [East ROM](League/2003-04/12_December/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/01_January/Week_1/League_Awards.md#player-of-the-week), [East POM](League/2003-04/01_January/League_Awards.md#player-of-the-month), [East ROM](League/2003-04/01_January/League_Awards.md#rookie-of-the-month), [All-Star](League/2003-04/All_Star.md#all-stars), [East ROM](League/2003-04/02_February/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/03_March/Week_2/League_Awards.md#player-of-the-week), [East POM](League/2003-04/03_March/League_Awards.md#player-of-the-month), [East ROM](League/2003-04/03_March/League_Awards.md#rookie-of-the-month), [East ROM](League/2003-04/04_April/League_Awards.md#rookie-of-the-month), [ROY](League/2003-04/Season_Awards.md#rookie-of-the-year), [All-NBA 1st](League/2003-04/Season_Awards.md#all-nba-teams), [All-Rookie 1st](League/2003-04/Season_Awards.md#all-rookie-teams) |
-| [2004-05](2004-05/README.md) | 21 | Miami Heat | NBA | SG / PG | 37 | 37 | 35.6 | 6.9 | 13.2 | .522 | 1.1 | 2.5 | .446 | 5.8 | 10.7 | .539 | .564 | 5.2 | 5.5 | .951 | 1.5 | 3.8 | 5.3 | 3.9 | 1.4 | 1.2 | 1.3 | 2.8 | 20.1 | .644 | [East POM](League/2004-05/12_December/League_Awards.md#player-of-the-month) |
-| Career total | 21 | Miami Heat | NBA | SG / PG | 112 | 107 | 35.2 | 6.3 | 12.2 | .520 | 1.0 | 2.4 | .413 | 5.3 | 9.8 | .547 | .561 | 4.9 | 5.3 | .923 | 1.4 | 3.6 | 5.0 | 4.3 | 1.5 | 1.1 | 1.2 | 2.9 | 18.6 | .640 | [East ROM](League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week), [East POM](League/2003-04/12_December/League_Awards.md#player-of-the-month), [East ROM](League/2003-04/12_December/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/01_January/Week_1/League_Awards.md#player-of-the-week), [East POM](League/2003-04/01_January/League_Awards.md#player-of-the-month), [East ROM](League/2003-04/01_January/League_Awards.md#rookie-of-the-month), [All-Star](League/2003-04/All_Star.md#all-stars), [East ROM](League/2003-04/02_February/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/03_March/Week_2/League_Awards.md#player-of-the-week), [East POM](League/2003-04/03_March/League_Awards.md#player-of-the-month), [East ROM](League/2003-04/03_March/League_Awards.md#rookie-of-the-month), [East ROM](League/2003-04/04_April/League_Awards.md#rookie-of-the-month), [ROY](League/2003-04/Season_Awards.md#rookie-of-the-year), [All-NBA 1st](League/2003-04/Season_Awards.md#all-nba-teams), [All-Rookie 1st](League/2003-04/Season_Awards.md#all-rookie-teams), [East POM](League/2004-05/12_December/League_Awards.md#player-of-the-month) |
+| [2004-05](2004-05/README.md) | 21 | Miami Heat | NBA | SG / PG | 38 | 38 | 35.9 | 7.0 | 13.3 | .528 | 1.2 | 2.5 | .463 | 5.9 | 10.8 | .543 | .571 | 5.3 | 5.7 | .944 | 1.5 | 3.9 | 5.4 | 3.9 | 1.4 | 1.2 | 1.3 | 2.9 | 20.6 | .650 | [East POM](League/2004-05/12_December/League_Awards.md#player-of-the-month) |
+| Career total | 21 | Miami Heat | NBA | SG / PG | 113 | 108 | 35.3 | 6.4 | 12.3 | .523 | 1.0 | 2.4 | .420 | 5.4 | 9.8 | .548 | .564 | 5.0 | 5.4 | .921 | 1.4 | 3.6 | 5.0 | 4.3 | 1.5 | 1.1 | 1.2 | 2.9 | 18.8 | .643 | [East ROM](League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week), [East POM](League/2003-04/12_December/League_Awards.md#player-of-the-month), [East ROM](League/2003-04/12_December/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/01_January/Week_1/League_Awards.md#player-of-the-week), [East POM](League/2003-04/01_January/League_Awards.md#player-of-the-month), [East ROM](League/2003-04/01_January/League_Awards.md#rookie-of-the-month), [All-Star](League/2003-04/All_Star.md#all-stars), [East ROM](League/2003-04/02_February/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/03_March/Week_2/League_Awards.md#player-of-the-week), [East POM](League/2003-04/03_March/League_Awards.md#player-of-the-month), [East ROM](League/2003-04/03_March/League_Awards.md#rookie-of-the-month), [East ROM](League/2003-04/04_April/League_Awards.md#rookie-of-the-month), [ROY](League/2003-04/Season_Awards.md#rookie-of-the-year), [All-NBA 1st](League/2003-04/Season_Awards.md#all-nba-teams), [All-Rookie 1st](League/2003-04/Season_Awards.md#all-rookie-teams), [East POM](League/2004-05/12_December/League_Awards.md#player-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-01-24, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-01-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### NBA playoffs
 
@@ -89,7 +89,7 @@ Awards are confirmed through 2005-01-24, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-01-24, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-01-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Browse
 

@@ -2,9 +2,9 @@
 
 # Contract | Maceo Baston
 
-Known through: 2005-01-24. [Open interactive contract](bastoma01.html#contract) · [Contract history](bastoma01.html#contract-history)
+Known through: 2005-01-27. [Open interactive contract](bastoma01.html#contract) · [Contract history](bastoma01.html#contract-history)
 
-Maceo Baston: No verified contract record. Evidence cutoff: 2005-01-24.
+Maceo Baston: No verified contract record. Evidence cutoff: 2005-01-27.
 
 ## Current contract
 

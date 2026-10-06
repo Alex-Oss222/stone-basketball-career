@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-01-24",
+  "as_of": "2005-01-27",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -4523,7 +4523,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Los Angeles Clippers",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,
