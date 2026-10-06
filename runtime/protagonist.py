@@ -31,6 +31,49 @@ AGE_STEPS = ((21, 1.05, 1.015), (24, 1.03, 1.01), (27, 1.01, 1.005), (30, 1.00, 
              (33, 0.97, 0.995), (99, 0.94, 0.990))
 
 
+# Role growth (the user's request, November 2004 on the career clock), from the 2005-06 expectation on: a player whose
+# closed season scored well above the league's true shooting at his usage is given more of the offense the next season,
+# and a clearly inefficient one less. Excess true shooting over the league's (the expectation's baseline season), shrunk
+# by his scoring attempts against ROLE_PRIOR_ATTEMPTS, clipped to ROLE_EXCESS_LIMITS, times ROLE_SLOPE is the relative
+# change in usage (0.08 above the league: +20%), bounded by USAGE_BOUNDS. More shots cost accuracy (the usage-efficiency
+# trade-off): two- and three-point accuracy fall by EFFICIENCY_COST per usage point gained. Judgement constants describing
+# how coaches redistribute shots; never fitted to the historical Wade. Applied to every model-built (alternate-history)
+# player the same way; real players' roles already follow their real careers (talent-trajectory exception).
+ROLE_GROWTH_FROM = "2005-06"
+ROLE_PRIOR_ATTEMPTS = 400.0
+ROLE_EXCESS_LIMITS = (-0.06, 0.08)
+ROLE_SLOPE = 2.5
+USAGE_BOUNDS = (0.10, 0.34)
+EFFICIENCY_COST = 0.004
+
+
+def league_true_shooting(source_totals):
+    t = source_totals
+    return t["points"] / (2 * (t["field_goals_attempted"] + .44 * t["free_throws_attempted"]))
+
+
+def role_growth(rates, totals, source_totals, to_season):
+    """Apply role growth to next-season `rates` in place from his closed season `totals`; returns the basis or None."""
+    if to_season < ROLE_GROWTH_FROM or not totals.get("fga"):
+        return None
+    attempts = totals["fga"] + .44 * totals["fta"]
+    pts = 2 * (totals["fgm"] - totals["tpm"]) + 3 * totals["tpm"] + totals["ftm"]
+    league = league_true_shooting(source_totals)
+    excess = pts / (2 * attempts) - league
+    shrunk = excess * attempts / (attempts + ROLE_PRIOR_ATTEMPTS)
+    clipped = min(max(shrunk, ROLE_EXCESS_LIMITS[0]), ROLE_EXCESS_LIMITS[1])
+    before = rates["usage_pct"]
+    after = min(max(before * (1 + ROLE_SLOPE * clipped), USAGE_BOUNDS[0]), max(USAGE_BOUNDS[1], before))
+    rates["usage_pct"] = after
+    gained = max(0.0, after - before) * 100
+    for key in ("two_point_pct", "three_point_pct"):
+        if rates.get(key) is not None:
+            rates[key] *= 1 - EFFICIENCY_COST * gained
+    return {"true_shooting": round(pts / (2 * attempts), 4), "league_true_shooting": round(league, 4),
+            "excess_shrunk": round(shrunk, 4), "usage_before": round(before, 4), "usage_after": round(after, 4),
+            "accuracy_factor": round(1 - EFFICIENCY_COST * gained, 4)}
+
+
 def season_age(season, birth=PROTAGONIST_BIRTH_DATE):
     feb1 = date(int(season[:4]) + 1, 2, 1)
     return feb1.year - birth.year - ((feb1.month, feb1.day) < (birth.month, birth.day))
@@ -118,7 +161,8 @@ def build_profile(root, from_season="2003-04", to_season="2004-05", on=None):
     src = SEASON_SOURCES[from_season]
     # The expectation in force at the season's last regular-season game: for 2003-04 the rookie-2003.3 estimate built
     # from the Player Profile (its scouting traits and shot style carry forward unchanged; only rates are updated).
-    last_day = {"2003-04": "2004-04-14"}[from_season]
+    from .seasons import dates
+    last_day = {"2003-04": "2004-04-14"}.get(from_season) or dates(from_season, root)["regular_season_end"]
     index = load_rating_index(last_day, from_season, root)
     prior = index.engine_profile("Dwyane Wade", "wadedw01")
     ratings = read_json(root / src["ratings"])
@@ -129,10 +173,14 @@ def build_profile(root, from_season="2003-04", to_season="2004-05", on=None):
             if r[side] == "Miami Heat":
                 lines += [p for p in r["player_stats"][side] if p["player_id"] == "Dwyane Wade" and p.get("seconds")]
     rates = next_season_rates(prior["rates"], lines, to_season, ratings["rate_baselines"], ratings["source_totals"])
+    growth = role_growth(rates, season_totals(lines), ratings["source_totals"], to_season)
     payload = {"prior": prior["rates"], "games": len(lines), "to_season": to_season}
     player = {"player_name": "Dwyane Wade", "bbr_id": "wadedw01", "season_end_year": int(to_season[:4]) + 1,
               "sample": {"games": len(lines), "minutes": round(sum(p["seconds"] for p in lines) / 60, 1)},
-              "estimated": rates, "basis": "runtime/protagonist.py: previous expectation + closed simulated season + age step"}
+              "estimated": rates, "basis": "runtime/protagonist.py: previous expectation + closed simulated season + age step"
+              + (" + role growth" if growth else "")}
+    if growth:
+        player["role_growth"] = growth
     for key in ("scouting", "style"):
         if key in prior:
             player[key] = prior[key]
@@ -216,6 +264,7 @@ def build_alternate_profile(root, bbr_id, from_season, to_season, on=None, targe
             p = (value * samples[key] + p * weight) / (samples[key] + weight)
         p = p * accuracy if key in ACCURACY else p * production if key in PRODUCTION else p / production if key in INVERSE else p
         out[key] = min(p, 0.99) if key in ACCURACY else p
+    growth = role_growth(out, t, ratings["source_totals"], to_season)
     minutes = t["seconds"] / 60
     pts = 2 * (t["fgm"] - t["tpm"]) + 3 * t["tpm"] + t["ftm"]
     reb = t["orb"] + t["drb"]
@@ -234,6 +283,8 @@ def build_alternate_profile(root, bbr_id, from_season, to_season, on=None, targe
               "target_rates": pulled, "profile_weight": PROFILE_WEIGHT,
               "basis": ("runtime/protagonist.py build_alternate_profile: previous expectation + closed simulated season + "
                         "age step + the user's development profile target line at PROFILE_WEIGHT")}
+    if growth:
+        player["role_growth"] = growth
     if "defense" in prior_profile:
         player["defense"] = prior_profile["defense"]
     return {"schema_version": 1, "model_version": PROFILE_MODEL, "as_of": on, "season": to_season,
