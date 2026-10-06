@@ -2,9 +2,9 @@
 
 # Contract | Maurice Taylor
 
-Known through: 2004-12-20. [Open interactive contract](tayloma01.html#contract) · [Contract history](tayloma01.html#contract-history)
+Known through: 2004-12-23. [Open interactive contract](tayloma01.html#contract) · [Contract history](tayloma01.html#contract-history)
 
-Maurice Taylor: under contract. Evidence cutoff: 2004-12-20.
+Maurice Taylor: under contract. Evidence cutoff: 2004-12-23.
 
 ## Current contract
 

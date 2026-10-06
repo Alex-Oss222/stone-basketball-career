@@ -65,3 +65,19 @@ class MinutesByGapTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ArrivalEstimateTests(unittest.TestCase):
+    """A player who joins after camp gets the staff's arrival estimate (efficiency per 30 minutes, the camp scale)."""
+
+    def test_trade_arrival_has_an_estimate_from_evidence_before_he_joined(self):
+        from pathlib import Path
+        from runtime.rotation_reviews import arrival_estimate
+        root = Path(__file__).resolve().parents[1]
+        if not (root / "career/Dwyane_Wade/2004-05/current_state.json").is_file():
+            self.skipTest("no 2004-05 season")
+        value = arrival_estimate("Donyell Marshall", "marshdo01", "2004-12-23", root, "2004-05")
+        self.assertIsNotNone(value)
+        self.assertGreater(value, 0)
+        self.assertLess(value, 40)
+        self.assertEqual(value, arrival_estimate("Donyell Marshall", "marshdo01", "2004-12-23", root, "2004-05"))  # deterministic

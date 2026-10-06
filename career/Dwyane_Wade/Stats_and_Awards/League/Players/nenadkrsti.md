@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `nenadkrsti.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-12-20 · **Club on this date:** New York Knicks · **Basis:** New York Knicks: the 2004-05 opening rosters and the league's dated moves (runtime/league_moves.py) · **League:** NBA  
+**Card date:** 2004-12-23 · **Club on this date:** New York Knicks · **Basis:** New York Knicks: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** Unassigned · **Born:** 1983-07-25 · **Age on card date:** 21  
 **Registry ID:** `nenadkrsti`
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `nenadk
 
 ## Simulated statistics
 
-As of **2004-12-20**: 24 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-12-23**: 26 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2004-05 regular season](../2004-05/League_Stats.md) | 21 | NY | NBA | SF | 22 | 22 | 28.2 | 4.7 | 10.1 | .462 | 0.0 | 0.2 | .250 | 4.6 | 10.0 | .466 | .464 | 3.3 | 5.2 | .626 | 2.5 | 3.5 | 6.0 | 1.1 | 0.5 | 0.8 | 2.1 | 3.2 | 12.7 | .510 | — |
+| [2004-05 regular season](../2004-05/League_Stats.md) | 21 | NY | NBA | SF | 24 | 24 | 28.3 | 5.0 | 10.5 | .478 | 0.0 | 0.2 | .167 | 5.0 | 10.2 | .486 | .480 | 3.3 | 5.2 | .645 | 2.3 | 3.8 | 6.1 | 1.1 | 0.4 | 0.8 | 2.2 | 3.0 | 13.4 | .525 | — |
 
 ### Month
 
@@ -42,7 +42,7 @@ As of **2004-12-20**: 24 closed games feed this card. Per-game columns use the r
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [November 2004](../2004-05/11_November/League_Stats.md) | 21 | NY | NBA | SF | 11 | 11 | 29.0 | 4.9 | 10.0 | .491 | 0.1 | 0.3 | .333 | 4.8 | 9.7 | .495 | .495 | 3.5 | 5.2 | .667 | 2.4 | 3.1 | 5.5 | 1.1 | 0.6 | 0.8 | 2.5 | 3.2 | 13.4 | .544 | — |
-| [December 2004](../2004-05/12_December/League_Stats.md) | 21 | NY | NBA | SF | 11 | 11 | 27.4 | 4.5 | 10.3 | .434 | 0.0 | 0.1 | .000 | 4.5 | 10.2 | .438 | .434 | 3.1 | 5.3 | .586 | 2.6 | 4.0 | 6.6 | 1.2 | 0.3 | 0.8 | 1.8 | 3.3 | 12.0 | .476 | — |
+| [December 2004](../2004-05/12_December/League_Stats.md) | 21 | NY | NBA | SF | 13 | 13 | 27.7 | 5.1 | 10.8 | .468 | 0.0 | 0.2 | .000 | 5.1 | 10.6 | .478 | .468 | 3.2 | 5.2 | .627 | 2.3 | 4.4 | 6.7 | 1.1 | 0.2 | 0.8 | 1.9 | 2.9 | 13.4 | .510 | — |
 | [January 2005](../2004-05/01_January/League_Stats.md) | 21 | NY | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2005](../2004-05/02_February/League_Stats.md) | 21 | NY | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [March 2005](../2004-05/03_March/League_Stats.md) | 21 | NY | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -63,8 +63,8 @@ As of **2004-12-20**: 24 closed games feed this card. Per-game columns use the r
 | [November 2004 week 4 (22 to 30)](../2004-05/11_November/Week_4/League_Stats.md) | 21 | NY | NBA | SF | 4 | 4 | 29.6 | 3.5 | 9.2 | .378 | 0.2 | 0.2 | 1.000 | 3.2 | 9.0 | .361 | .392 | 2.2 | 3.2 | .692 | 1.2 | 2.8 | 4.0 | 1.5 | 0.8 | 1.2 | 2.5 | 2.5 | 9.5 | .445 | — |
 | [December 2004 week 1 (01 to 07)](../2004-05/12_December/Week_1/League_Stats.md) | 21 | NY | NBA | SF | 4 | 4 | 27.7 | 3.8 | 11.0 | .341 | 0.0 | 0.0 | N/A | 3.8 | 11.0 | .341 | .341 | 2.5 | 4.5 | .556 | 3.0 | 4.8 | 7.8 | 1.5 | 0.0 | 1.0 | 1.2 | 2.0 | 10.0 | .385 | — |
 | [December 2004 week 2 (08 to 14)](../2004-05/12_December/Week_2/League_Stats.md) | 21 | NY | NBA | SF | 4 | 4 | 25.8 | 5.2 | 10.0 | .525 | 0.0 | 0.2 | .000 | 5.2 | 9.8 | .538 | .525 | 2.2 | 4.5 | .500 | 2.5 | 2.8 | 5.2 | 1.2 | 0.2 | 1.2 | 2.2 | 4.2 | 12.8 | .532 | — |
-| [December 2004 week 3 (15 to 21)](../2004-05/12_December/Week_3/League_Stats.md) | 21 | NY | NBA | SF | 3 | 3 | 29.3 | 4.3 | 9.7 | .448 | 0.0 | 0.0 | N/A | 4.3 | 9.7 | .448 | .448 | 5.0 | 7.3 | .682 | 2.3 | 4.7 | 7.0 | 0.7 | 0.7 | 0.0 | 2.0 | 3.7 | 13.7 | .530 | — |
-| [December 2004 week 4 (22 to 31)](../2004-05/12_December/Week_4/League_Stats.md) | 21 | NY | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [December 2004 week 3 (15 to 21)](../2004-05/12_December/Week_3/League_Stats.md) | 21 | NY | NBA | SF | 4 | 4 | 29.0 | 6.0 | 10.5 | .571 | 0.0 | 0.0 | N/A | 6.0 | 10.5 | .571 | .571 | 4.2 | 6.0 | .708 | 2.0 | 5.2 | 7.2 | 0.5 | 0.5 | 0.2 | 2.5 | 2.8 | 16.2 | .618 | — |
+| [December 2004 week 4 (22 to 31)](../2004-05/12_December/Week_4/League_Stats.md) | 21 | NY | NBA | SF | 1 | 1 | 29.9 | 6.0 | 15.0 | .400 | 0.0 | 2.0 | .000 | 6.0 | 13.0 | .462 | .400 | 6.0 | 7.0 | .857 | 0.0 | 6.0 | 6.0 | 1.0 | 0.0 | 0.0 | 1.0 | 2.0 | 18.0 | .498 | — |
 | [January 2005 week 1 (01 to 07)](../2004-05/01_January/Week_1/League_Stats.md) | 21 | NY | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2005 week 2 (08 to 14)](../2004-05/01_January/Week_2/League_Stats.md) | 21 | NY | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2005 week 3 (15 to 21)](../2004-05/01_January/Week_3/League_Stats.md) | 21 | NY | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -85,30 +85,30 @@ As of **2004-12-20**: 24 closed games feed this card. Per-game columns use the r
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2004-05 regular season. Coverage: **complete**; 223 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2004-05 regular season. Coverage: **complete**; 251 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 24 of 24 closed games; 22 tracked appearances form the denominator below (2004-11-03 to 2004-12-19).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 26 of 26 closed games; 24 tracked appearances form the denominator below (2004-11-03 to 2004-12-22).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 60 | 121 | 49.6% | 5.45 | 5.50 |
-| Outside paint, under 12 ft | 1 | 7 | 14.3% | 0.09 | 0.32 |
-| Outside paint, 12 to under 18 ft | 17 | 43 | 39.5% | 1.55 | 1.95 |
-| 18 ft to the three-point line | 24 | 48 | 50.0% | 2.18 | 2.18 |
-| Three-point range | 1 | 4 | 25.0% | 0.14 | 0.18 |
-| All field goals | 103 | 223 | 46.2% | 9.41 | 10.14 |
+| Paint | 69 | 135 | 51.1% | 5.75 | 5.62 |
+| Outside paint, under 12 ft | 1 | 8 | 12.5% | 0.08 | 0.33 |
+| Outside paint, 12 to under 18 ft | 17 | 44 | 38.6% | 1.42 | 1.83 |
+| 18 ft to the three-point line | 32 | 58 | 55.2% | 2.67 | 2.42 |
+| Three-point range | 1 | 6 | 16.7% | 0.12 | 0.25 |
+| All field goals | 120 | 251 | 47.8% | 10.04 | 10.46 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No 2002-03 record in the supplied statistics file. 2004-05 is simulated: 24 closed regular-season games through 2004-12-20. Earlier simulated seasons from their closed results.
+**Coverage:** No 2002-03 record in the supplied statistics file. 2004-05 is simulated: 26 closed regular-season games through 2004-12-23. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | NY | 22 | 22 | 28.2 | 12.7 | 6.0 | 1.1 | 0.5 | 0.8 | 2.1 | 46.2% | 25.0% | 62.6% |
+| 2004-05 | NY | 24 | 24 | 28.3 | 13.4 | 6.1 | 1.1 | 0.4 | 0.8 | 2.2 | 47.8% | 16.7% | 64.5% |
 
 ## Playoff statistics by year
 
@@ -120,4 +120,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2004-12-20. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2004-12-23. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

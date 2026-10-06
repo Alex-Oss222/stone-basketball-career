@@ -242,7 +242,61 @@ def preseason_priors(on, root=ROOT, season=None):
         for row in read_json(estimates).get("players", []):
             if row["as_of"] <= on:
                 priors.setdefault(row["player"], row["score"])
+    # Any other arrival (an in-season trade, claim or signing): the arrival rule, from evidence dated before he joined.
+    roster = base / "00_Team/Team/Roster/roster.json"
+    if roster.exists():
+        for p in read_json(roster)["players"]:
+            if camp.playable(p.get("status")) and p["name"] not in priors:
+                value = arrival_estimate(p["name"], p.get("bbr_id"), on, root, season)
+                if value is not None:
+                    priors[p["name"]] = value
     return priors
+
+
+ARRIVAL_MIN_MINUTES = 150.0           # below this many closed minutes this season, his previous season's line decides
+ARRIVAL_FLOOR = 0.0
+
+
+def arrival_estimate(name, bbr_id, on, root=ROOT, season=None):
+    """The staff's estimate for a player who joined after camp (December 2004 on the career clock, after a trade arrival
+    stopped a review): NBA efficiency per 30 minutes, the camp scale. Evidence dated before he joined Miami: his closed
+    games this season for any other club when they reach ARRIVAL_MIN_MINUTES, else his previous season's real totals.
+    The same rule for every arrival; no fit, request or later season is consulted. None without either."""
+    from .player_stats import alias
+    from .rotations import holdings_path
+    from .seasons import prior_path
+    from .write_back import closed_results, game_records
+    season = season or _active_season(root)
+    root = Path(root)
+    joined = on
+    hold = root / holdings_path(season)
+    if hold.exists():
+        starts = [e["from"] for e in read_json(hold)["entries"]
+                  if (bbr_id and e.get("bbr_id") == bbr_id) or alias(e["player"]) == alias(name)]
+        if starts:
+            joined = max(s for s in starts if s <= on) if any(s <= on for s in starts) else on
+    minutes = eff = 0.0
+    for row in closed_results(root, season, on):
+        if row["result"]["game_date"] >= joined:
+            continue
+        for side, pid, b, record in game_records(row, root, season):
+            if row["result"][side] != MIAMI and record.get("line") and ((bbr_id and b == bbr_id) or alias(pid) == alias(name)):
+                line = record["line"]
+                minutes += line["seconds"] / 60
+                eff += camp.efficiency(line)
+    if minutes >= ARRIVAL_MIN_MINUTES:
+        return round(max(ARRIVAL_FLOOR, eff / minutes * 30), 6)
+    path = root / prior_path(season, "player_stats")
+    if bbr_id and path.exists():
+        rec = next((r for r in read_json(path)["records"] if r.get("bbr_id") == bbr_id), None)
+        t = (rec or {}).get("totals") or {}
+        mins = t.get("minutes") or 0
+        if mins:
+            prior_eff = (t["points"] + t["offensive_rebounds"] + t["defensive_rebounds"] + t["assists"] + t["steals"] + t["blocks"]
+                         - (t["field_goals_attempted"] - t["field_goals_made"]) - (t["free_throws_attempted"] - t["free_throws_made"])
+                         - t["turnovers"])
+            return round(max(ARRIVAL_FLOOR, prior_eff / mins * 30), 6)
+    return None
 
 
 def review_input(on, root=ROOT, season=None):

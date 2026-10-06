@@ -2,7 +2,7 @@
 
 # Dwyane Wade | Career milestones
 
-Career date: 2004-12-20. Born 1984-01-17. 100 regular-season and 2 playoff games closed.
+Career date: 2004-12-23. Born 1984-01-17. 101 regular-season and 2 playoff games closed.
 
 Milestones count closed regular-season games (the NBA convention); playoff milestones are their own record and preseason never counts. Each is dated by the game that reached it, with his age on that day. [Season tracker](calendar.md) · [All milestones](README.md)
 
@@ -28,19 +28,20 @@ Milestones count closed regular-season games (the NBA convention); playoff miles
 | 100 career blocks | 2004-12-10 | 20 years, 328 days | 2004-05 | 95 | [Memphis Grizzlies](../2004-05/06_Regular_Season/12_December/Week_2/Game_2.md) | 100 |
 | 100 career three-pointers made | 2004-12-19 | 20 years, 337 days | 2004-05 | 100 | [Orlando Magic](../2004-05/06_Regular_Season/12_December/Week_3/Game_3.md) | 101 |
 | 100 career games played | 2004-12-19 | 20 years, 337 days | 2004-05 | 100 | [Orlando Magic](../2004-05/06_Regular_Season/12_December/Week_3/Game_3.md) | 100 |
+| 500 career rebounds | 2004-12-21 | 20 years, 339 days | 2004-05 | 101 | [Boston Celtics](../2004-05/06_Regular_Season/12_December/Week_3/Game_4.md) | 500 |
 
 ## Next regular-season milestones
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 2,000 career points | 1,834 | 166 |
-| 500 career rebounds | 495 | 5 |
+| 2,000 career points | 1,850 | 150 |
+| 1,000 career rebounds | 500 | 500 |
 | 500 career assists | 439 | 61 |
 | 250 career steals | 159 | 91 |
 | 250 career blocks | 108 | 142 |
 | 250 career three-pointers made | 101 | 149 |
-| 500 career free throws made | 495 | 5 |
-| 200 career games played | 100 | 100 |
+| 500 career free throws made | 499 | 1 |
+| 200 career games played | 101 | 99 |
 
 ## Playoff milestones reached
 

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-12-20**. 572 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-12-23**. 572 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -233,7 +233,7 @@ Card date: **2004-12-20**. 572 registry players, one Markdown card and one inter
 | [Antonio Burks](antonioburks.md) | Dallas Mavericks | 24 | silhouette | [open](antonioburks.html) |
 | [Ben Gordon](bengordon.md) | Utah Jazz | 21 | silhouette | [open](bengordon.html) |
 | [Beno Udrih](benoudrih.md) | Sacramento Kings | 22 | silhouette | [open](benoudrih.html) |
-| [Billy Thomas](billythomas.md) | Los Angeles Lakers | 28 | silhouette | [open](billythomas.html) |
+| [Billy Thomas](billythomas.md) | Los Angeles Lakers | 29 | silhouette | [open](billythomas.html) |
 | [Bostjan Nachbar](nachbbo01.md) | Houston Rockets | 24 | sourced | [open](nachbbo01.html) |
 | [Brandin Knight](brandinknight.md) | Minnesota Timberwolves | 23 | silhouette | [open](brandinknight.html) |
 | [Bruce Bowen](bowenbr01.md) | Chicago Bulls | 33 | sourced | [open](bowenbr01.html) |
@@ -447,7 +447,7 @@ Card date: **2004-12-20**. 572 registry players, one Markdown card and one inter
 | [Malick Badiane](badiama01.md) | Free agent | 20 | silhouette | [open](badiama01.html) |
 | [Malik Allen](allenma01.md) | Free agent | 26 | sourced | [open](allenma01.html) |
 | [Malik Rose](rosema01.md) | New York Knicks | 30 | sourced | [open](rosema01.html) |
-| [Marcus Haislip](haislma01.md) | Milwaukee Bucks | 23 | sourced | [open](haislma01.html) |
+| [Marcus Haislip](haislma01.md) | Milwaukee Bucks | 24 | sourced | [open](haislma01.html) |
 | [Mario Austin](austima01.md) | Free agent | 22 | silhouette | [open](austima01.html) |
 | [Mark Bryant](bryanma01.md) | Free agent | 39 | silhouette | [open](bryanma01.html) |
 | [Mark Madsen](madsema01.md) | Denver Nuggets | 28 | sourced | [open](madsema01.html) |
@@ -464,7 +464,7 @@ Card date: **2004-12-20**. 572 registry players, one Markdown card and one inter
 | [P.J. Brown](brownpj01.md) | Sacramento Kings | 35 | sourced | [open](brownpj01.html) |
 | [Pat Garrity](garripa01.md) | Orlando Magic | 28 | sourced | [open](garripa01.html) |
 | [Pau Gasol](gasolpa01.md) | Memphis Grizzlies | 24 | sourced | [open](gasolpa01.html) |
-| [Paul Shirley](shirlpa01.md) | Free agent | 26 | silhouette | [open](shirlpa01.html) |
+| [Paul Shirley](shirlpa01.md) | Free agent | 27 | silhouette | [open](shirlpa01.html) |
 | [Popeye Jones](jonespo01.md) | Free agent | 34 | silhouette | [open](jonespo01.html) |
 | [Qyntel Woods](woodsqy01.md) | Los Angeles Lakers | 23 | sourced | [open](woodsqy01.html) |
 | [Rasheed Wallace](wallara01.md) | Portland Trail Blazers | 30 | sourced | [open](wallara01.html) |
@@ -479,7 +479,7 @@ Card date: **2004-12-20**. 572 registry players, one Markdown card and one inter
 | [Shareef Abdur-Rahim](abdursh01.md) | Atlanta Hawks | 28 | sourced | [open](abdursh01.html) |
 | [Slava Medvedenko](medvest01.md) | Detroit Pistons | 25 | sourced | [open](medvest01.html) |
 | [Stromile Swift](swiftst01.md) | Memphis Grizzlies | 25 | sourced | [open](swiftst01.html) |
-| [Szymon Szewczyk](szewcsz01.md) | Free agent | 21 | sourced | [open](szewcsz01.html) |
+| [Szymon Szewczyk](szewcsz01.md) | Free agent | 22 | sourced | [open](szewcsz01.html) |
 | [Tim Duncan](duncati01.md) | San Antonio Spurs | 28 | sourced | [open](duncati01.html) |
 | [Tom Gugliotta](guglito01.md) | Free agent | 35 | sourced | [open](guglito01.html) |
 | [Tommy Smith](smithto03.md) | Free agent | 24 | silhouette | [open](smithto03.html) |
@@ -540,7 +540,7 @@ Card date: **2004-12-20**. 572 registry players, one Markdown card and one inter
 | [Efthimios Rentzias](rentzef01.md) | Free agent | 28 | sourced | [open](rentzef01.html) |
 | [Elden Campbell](campbel01.md) | Detroit Pistons | 36 | silhouette | [open](campbel01.html) |
 | [Erick Dampier](dampier01.md) | Detroit Pistons | 29 | sourced | [open](dampier01.html) |
-| [Ervin Johnson](johnser02.md) | Minnesota Timberwolves | 36 | sourced | [open](johnser02.html) |
+| [Ervin Johnson](johnser02.md) | Minnesota Timberwolves | 37 | sourced | [open](johnser02.html) |
 | [Etan Thomas](thomaet01.md) | Washington Wizards | 26 | silhouette | [open](thomaet01.html) |
 | [Evan Eschmeyer](eschmev01.md) | Free agent | 29 | silhouette | [open](eschmev01.html) |
 | [Francisco Elson](elsonfr01.md) | Denver Nuggets | 28 | silhouette | [open](elsonfr01.html) |
