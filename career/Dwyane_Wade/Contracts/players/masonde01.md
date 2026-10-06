@@ -2,9 +2,9 @@
 
 # Contract | Desmond Mason
 
-Known through: 2004-10-13. [Open interactive contract](masonde01.html#contract) · [Contract history](masonde01.html#contract-history)
+Known through: 2004-10-14. [Open interactive contract](masonde01.html#contract) · [Contract history](masonde01.html#contract-history)
 
-Desmond Mason: under rookie contract. Evidence cutoff: 2004-10-13.
+Desmond Mason: under rookie contract. Evidence cutoff: 2004-10-14.
 
 ## Current contract
 

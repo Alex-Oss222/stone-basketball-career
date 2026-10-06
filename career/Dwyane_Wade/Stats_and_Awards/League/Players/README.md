@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-13**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-14**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -252,7 +252,7 @@ Card date: **2004-10-13**. 504 registry players, one Markdown card and one inter
 | [James Posey](poseyja01.md) | Memphis Grizzlies | 27 | sourced | [open](poseyja01.html) |
 | [Jarvis Hayes](hayesja01.md) | Washington Wizards | 23 | sourced | [open](hayesja01.html) |
 | [Jason Kapono](kaponja01.md) | Charlotte Bobcats | 23 | sourced | [open](kaponja01.html) |
-| [Jim Jackson](jacksji01.md) | Houston Rockets | 33 | sourced | [open](jacksji01.html) |
+| [Jim Jackson](jacksji01.md) | Houston Rockets | 34 | sourced | [open](jacksji01.html) |
 | [Jiri Welsch](welscji01.md) | Boston Celtics | 24 | sourced | [open](welscji01.html) |
 | [Joe Smith](smithjo02.md) | Milwaukee Bucks | 29 | sourced | [open](smithjo02.html) |
 | [Jonathan Bender](bendejo01.md) | Indiana Pacers | 23 | silhouette | [open](bendejo01.html) |
@@ -395,7 +395,7 @@ Card date: **2004-10-13**. 504 registry players, one Markdown card and one inter
 | [Mike Batiste](batismi01.md) | Free agent | 26 | sourced | [open](batismi01.html) |
 | [Nick Collison](collini01.md) | Seattle SuperSonics | 23 | sourced | [open](collini01.html) |
 | [Othella Harrington](harriot01.md) | New York Knicks | None | silhouette | [open](harriot01.html) |
-| [P.J. Brown](brownpj01.md) | New Orleans Hornets | 34 | sourced | [open](brownpj01.html) |
+| [P.J. Brown](brownpj01.md) | New Orleans Hornets | 35 | sourced | [open](brownpj01.html) |
 | [Pat Garrity](garripa01.md) | Orlando Magic | 28 | sourced | [open](garripa01.html) |
 | [Pau Gasol](gasolpa01.md) | Memphis Grizzlies | 24 | sourced | [open](gasolpa01.html) |
 | [Paul Shirley](shirlpa01.md) | Free agent | None | silhouette | [open](shirlpa01.html) |

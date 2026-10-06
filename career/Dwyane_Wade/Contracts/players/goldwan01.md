@@ -2,9 +2,9 @@
 
 # Contract | Anthony Goldwire
 
-Known through: 2004-10-13. [Open interactive contract](goldwan01.html#contract) · [Contract history](goldwan01.html#contract-history)
+Known through: 2004-10-14. [Open interactive contract](goldwan01.html#contract) · [Contract history](goldwan01.html#contract-history)
 
-Anthony Goldwire: under contract. Evidence cutoff: 2004-10-13.
+Anthony Goldwire: under contract. Evidence cutoff: 2004-10-14.
 
 ## Current contract
 

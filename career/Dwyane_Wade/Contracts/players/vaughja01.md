@@ -2,9 +2,9 @@
 
 # Contract | Jacque Vaughn
 
-Known through: 2004-10-13. [Open interactive contract](vaughja01.html#contract) · [Contract history](vaughja01.html#contract-history)
+Known through: 2004-10-14. [Open interactive contract](vaughja01.html#contract) · [Contract history](vaughja01.html#contract-history)
 
-Jacque Vaughn: under contract. Evidence cutoff: 2004-10-13.
+Jacque Vaughn: under contract. Evidence cutoff: 2004-10-14.
 
 ## Current contract
 
