@@ -1,105 +1,48 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2004-10-01",
+ "as_of": "2004-10-28",
  "team": "Miami Heat",
- "status": "carried_over",
- "game_ready": false,
- "basis": "2003-04 closing order (career/Dwyane_Wade/2003-04/00_Team/Team/Depth_Chart/Reviews/2004-04-09/depth_chart.json) for the players who stay; training camp decides the new order.",
+ "status": "camp_decision",
+ "game_ready": true,
+ "basis": "Training-camp decision on 2004-10-28: staff scores (prior value 0.6, preseason production 0.4) with one evaluation draw per close battle",
  "positions": {
   "PG": [
-   "Mike James"
+   "Mike James",
+   "Rafer Alston",
+   "Derek Fisher",
+   "Maurice Baker"
   ],
   "SG": [
    "Dwyane Wade",
-   "Eddie Jones"
+   "Eddie Jones",
+   "Kendall Gill",
+   "Bob Sura",
+   "Calbert Cheaney",
+   "Stephen Jackson",
+   "Maurice Evans"
   ],
   "SF": [
-   "Caron Butler"
+   "Caron Butler",
+   "Dorell Wright"
   ],
   "PF": [
+   "Mehmet Okur",
    "Scott Padgett",
    "Udonis Haslem"
   ],
   "C": [
-   "Brian Grant"
+   "Brian Grant",
+   "Chris Mihm",
+   "John Thomas",
+   "John Edwards"
   ]
  },
- "unassigned_draft_rights": [
-  {
-   "name": "Bernard Robinson",
-   "positions": [
-    "SG"
-   ],
-   "status": "draft_rights_unsigned"
-  },
-  {
-   "name": "Christian Drejer",
-   "positions": [
-    "SF"
-   ],
-   "status": "draft_rights_unsigned"
-  }
- ],
- "unassigned_arrivals": [
-  {
-   "name": "Mehmet Okur",
-   "positions": [
-    "PF"
-   ],
-   "status": "under_contract",
-   "date": "2004-10-01"
-  },
-  {
-   "name": "Kendall Gill",
-   "positions": [
-    "SG"
-   ],
-   "status": "under_contract",
-   "date": "2004-10-01"
-  },
-  {
-   "name": "Dorell Wright",
-   "positions": [
-    "SF"
-   ],
-   "status": "under_contract",
-   "date": "2004-10-01"
-  },
-  {
-   "name": "John Thomas",
-   "positions": [
-    "C"
-   ],
-   "status": "under_contract",
-   "date": "2004-10-01"
-  },
-  {
-   "name": "Maurice Evans",
-   "positions": [
-    "SG"
-   ],
-   "status": "under_contract",
-   "date": "2004-10-01"
-  },
-  {
-   "name": "Maurice Baker",
-   "positions": [
-    "PG"
-   ],
-   "status": "under_contract",
-   "date": "2004-10-01"
-  },
-  {
-   "name": "John Edwards",
-   "positions": [
-    "C"
-   ],
-   "status": "under_contract",
-   "date": "2004-10-01"
-  }
- ],
+ "battles_drawn": {
+  "PF": "Mehmet Okur"
+ },
+ "unassigned_draft_rights": [],
+ "unassigned_arrivals": [],
  "unavailable": [],
- "departed": [],
- "corrections": []
+ "departed": []
 }

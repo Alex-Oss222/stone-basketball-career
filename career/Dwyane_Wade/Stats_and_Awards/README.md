@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-10-27](../assets/stat_reports/personal_2004-10-27.svg)
+![Player personal information and earned career awards through 2004-10-28](../assets/stat_reports/personal_2004-10-28.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -20,16 +20,16 @@
 | Wingspan / standing reach | 6 ft 11.5 in / 8 ft 7.5 in |
 | Shooting hand | Right |
 | Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option (2004-05: $2,361,800) |
-| Role | Carried-over starter at SG; training camp sets the 2004-05 rotation |
+| Role | Starting SG; staff plan 34 minutes |
 | NBA debut | October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
 | Nationality | United States (born in the Chicago area; Robbins, Illinois home community, per the player profile) |
 | National team | No selection recorded |
 | National-team eligibility | United States (USA Basketball); no selection yet |
 | Availability | No current restriction recorded in the established profile |
 | Physical measurements recorded | 2003-06-25 |
-| Professional status effective | 2004-10-01 |
+| Professional status effective | 2004-10-28 |
 
-Identity as of 2004-10-27; status snapshot dated 2004-10-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-10-28; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
@@ -56,7 +56,7 @@ Identity as of 2004-10-27; status snapshot dated 2004-10-01. User-established al
 
 ## Statistics
 
-Career cutoff: **2004-10-27**. Club competitions and national-team events have separate records.
+Career cutoff: **2004-10-28**. Club competitions and national-team events have separate records.
 
 ### NBA regular season
 
@@ -72,7 +72,7 @@ Career cutoff: **2004-10-27**. Club competitions and national-team events have s
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-10-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-10-28, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### NBA playoffs
 
@@ -88,7 +88,7 @@ Awards are confirmed through 2004-10-27, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-10-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-10-28, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Browse
 

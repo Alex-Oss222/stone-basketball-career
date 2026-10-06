@@ -165,6 +165,27 @@
    "availability": "No current restriction recorded in the established profile",
    "source_state": "2004-05/current_state.json",
    "source_event": "2003-04/00_Team/Team/Roster/Wade_Jersey/wade_choice.json"
+  },
+  {
+   "as_of": "2004-10-28",
+   "team": "Miami Heat",
+   "league": "NBA",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "jersey": "3",
+   "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+   "prior_program": "UConn (simulation canon)",
+   "roster_status": "Under contract",
+   "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option (2004-05: $2,361,800)",
+   "role": "Starting SG; staff plan 34 minutes",
+   "nba_debut": "October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)",
+   "national_team": null,
+   "national_team_eligibility": "United States (USA Basketball); no selection yet",
+   "availability": "No current restriction recorded in the established profile",
+   "source_state": "2004-05/current_state.json",
+   "source_event": "2004-05/04_Training_Camp/Wade_Camp_Review.md"
   }
  ]
 }

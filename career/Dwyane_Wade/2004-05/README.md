@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2004-05 awards through 2004-10-27](../assets/stat_reports/personal_2004-05_2004-10-27.svg)
+![Player personal information and earned 2004-05 awards through 2004-10-28](../assets/stat_reports/personal_2004-05_2004-10-28.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -22,16 +22,16 @@
 | Wingspan / standing reach | 6 ft 11.5 in / 8 ft 7.5 in |
 | Shooting hand | Right |
 | Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option (2004-05: $2,361,800) |
-| Role | Carried-over starter at SG; training camp sets the 2004-05 rotation |
+| Role | Starting SG; staff plan 34 minutes |
 | NBA debut | October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
 | Nationality | United States (born in the Chicago area; Robbins, Illinois home community, per the player profile) |
 | National team | No selection recorded |
 | National-team eligibility | United States (USA Basketball); no selection yet |
 | Availability | No current restriction recorded in the established profile |
 | Physical measurements recorded | 2003-06-25 |
-| Professional status effective | 2004-10-01 |
+| Professional status effective | 2004-10-28 |
 
-Identity as of 2004-10-27; status snapshot dated 2004-10-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-10-28; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
@@ -41,7 +41,7 @@ No 2004-05 awards yet.
 
 ## Statistics
 
-Report cutoff: **2004-10-27**. Each row is a separate competition; do not add the rates.
+Report cutoff: **2004-10-28**. Each row is a separate competition; do not add the rates.
 
 ### Competition summary
 
@@ -52,13 +52,13 @@ Report cutoff: **2004-10-27**. Each row is a separate competition; do not add th
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [Summer League](02_Summer_League/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [Preseason](05_Preseason/README.md) | 20 | Miami Heat | NBA | SG / PG | 6 | 6 | 30.0 | 4.2 | 9.3 | .446 | 0.7 | 2.0 | .333 | 3.5 | 7.3 | .477 | .482 | 4.8 | 5.2 | .935 | 1.2 | 2.8 | 4.0 | 3.8 | 1.7 | 1.5 | 0.8 | 1.7 | 13.8 | .596 | — |
+| [Preseason](05_Preseason/README.md) | 20 | Miami Heat | NBA | SG / PG | 7 | 7 | 30.2 | 4.4 | 9.6 | .463 | 0.6 | 2.0 | .286 | 3.9 | 7.6 | .509 | .493 | 5.3 | 5.6 | .949 | 1.3 | 2.9 | 4.1 | 4.0 | 1.4 | 1.4 | 0.9 | 1.9 | 14.7 | .612 | — |
 | [NBA regular season](06_Regular_Season/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [NBA playoffs](08_Playoffs/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-10-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-10-28, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Regular season by month
 
@@ -77,7 +77,7 @@ Awards are confirmed through 2004-10-27, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-10-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-10-28, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Career records
 

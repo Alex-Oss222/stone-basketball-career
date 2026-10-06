@@ -1,6 +1,6 @@
 # Working depth chart
 
-No staff decision is in force on 2004-10-27: training camp sets the order and the rotation.
+The staff's chart in force on 2004-10-28 comes from its 2004-10-28 decision. The staff reviews the roster every fourteen days (`scripts/review_rotation.py`); each review is kept under `Reviews/<date>/`.
 
 - [Readable depth chart](depth_chart.md)
-- [Carried-over order (machine-readable)](depth_chart.json)
+- [Camp decision (machine-readable)](depth_chart.json) and [camp rotation](rotation.json)

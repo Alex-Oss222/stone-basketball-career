@@ -253,5 +253,28 @@
   }
  ],
  "cuts": [],
- "injuries_applied": "2004-10-05"
+ "injuries_applied": "2004-10-05",
+ "staff_scores": {
+  "Eddie Jones": 7.515,
+  "Brian Grant": 11.426,
+  "Scott Padgett": 12.799,
+  "Mike James": 14.311,
+  "Mehmet Okur": 13.666,
+  "Dwyane Wade": 20.561,
+  "Caron Butler": 10.73,
+  "Kendall Gill": 7.239,
+  "Dorell Wright": 6.527,
+  "John Thomas": 5.0,
+  "Maurice Evans": 5.0,
+  "Udonis Haslem": 10.914,
+  "Maurice Baker": 5.0,
+  "John Edwards": 5.0,
+  "Stephen Jackson": 6.253,
+  "Bob Sura": 6.739,
+  "Calbert Cheaney": 6.655,
+  "Rafer Alston": 9.749,
+  "Chris Mihm": 7.643,
+  "Derek Fisher": 7.445
+ },
+ "evaluated": "2004-10-28"
 }

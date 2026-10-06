@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-10-27",
+  "as_of": "2004-10-28",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-10-26-miami-heat-at-charlotte-bobcats",
+  "current_event": "2004-10-28-camp-decision",
   "current_screen": "calendar",
   "screens": [
     {
@@ -18,7 +18,7 @@
       "title": "Your career calendar",
       "status": "active",
       "trigger": "The authoritative current date and recorded event determine what is open.",
-      "summary": "Dwyane Wade is at 05 Preseason. All milestone pages remain accessible; inactive pages explain their opening event.",
+      "summary": "Dwyane Wade is at 04 Training Camp. All milestone pages remain accessible; inactive pages explain their opening event.",
       "sections": [
         {
           "title": "What is happening now",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-10-27"
+              "2004-10-28"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-10-26-miami-heat-at-charlotte-bobcats"
+              "2004-10-28-camp-decision"
             ],
             [
               "Pending player decisions",
@@ -64,13 +64,13 @@
           ],
           "rows": [
             [
-              "2004-10-27",
+              "2004-10-28",
               "Current checkpoint",
-              "2004-10-26-miami-heat-at-charlotte-bobcats",
+              "2004-10-28-camp-decision",
               "Recorded",
               {
                 "label": "Owning event",
-                "href": "../2004-05/05_Preseason/note.md"
+                "href": "../2004-05/04_Training_Camp/note.md"
               }
             ],
             [
@@ -299,7 +299,7 @@
       "actions": [
         {
           "label": "Open the current event",
-          "href": "../2004-05/05_Preseason/note.md",
+          "href": "../2004-05/04_Training_Camp/note.md",
           "description": "Read the owning career note and record the player's actual response when one is due."
         },
         {
@@ -322,8 +322,8 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Owning event",
-          "href": "../2004-05/05_Preseason/note.md"
+          "label": "Owning dated record",
+          "href": "../2004-05/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -342,12 +342,12 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
-          "label": "Owning dated record",
-          "href": "../2004-05/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -374,6 +374,10 @@
           "href": "../2004-05/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -382,7 +386,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-27"
+          "value": "2004-10-28"
         },
         {
           "label": "Team",
@@ -434,7 +438,7 @@
             ],
             [
               "Source snapshot",
-              "2004-10-08"
+              "2004-10-28"
             ]
           ]
         },
@@ -560,8 +564,8 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Owning event",
-          "href": "../2004-05/05_Preseason/note.md"
+          "label": "Owning dated record",
+          "href": "../2004-05/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -580,12 +584,12 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
-          "label": "Owning dated record",
-          "href": "../2004-05/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -612,6 +616,10 @@
           "href": "../2004-05/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -620,7 +628,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-27"
+          "value": "2004-10-28"
         },
         {
           "label": "Team",
@@ -771,8 +779,8 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Owning event",
-          "href": "../2004-05/05_Preseason/note.md"
+          "label": "Owning dated record",
+          "href": "../2004-05/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -791,12 +799,12 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
-          "label": "Owning dated record",
-          "href": "../2004-05/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -823,6 +831,10 @@
           "href": "../2004-05/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -831,7 +843,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-27"
+          "value": "2004-10-28"
         },
         {
           "label": "Team",
@@ -985,8 +997,8 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Owning event",
-          "href": "../2004-05/05_Preseason/note.md"
+          "label": "Owning dated record",
+          "href": "../2004-05/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1005,12 +1017,12 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
-          "label": "Owning dated record",
-          "href": "../2004-05/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -1037,6 +1049,10 @@
           "href": "../2004-05/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1045,7 +1061,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-27"
+          "value": "2004-10-28"
         },
         {
           "label": "Team",
@@ -1073,7 +1089,7 @@
           "rows": [
             [
               "Current role",
-              "Carried-over starter at SG; training camp sets the 2004-05 rotation"
+              "Starting SG; staff plan 34 minutes"
             ],
             [
               "Availability",
@@ -1198,8 +1214,8 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Owning event",
-          "href": "../2004-05/05_Preseason/note.md"
+          "label": "Owning dated record",
+          "href": "../2004-05/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1218,12 +1234,12 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
-          "label": "Owning dated record",
-          "href": "../2004-05/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -1250,6 +1266,10 @@
           "href": "../2004-05/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1258,7 +1278,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-27"
+          "value": "2004-10-28"
         },
         {
           "label": "Team",
@@ -1308,7 +1328,7 @@
             ],
             [
               "Staff role after a move",
-              "Carried-over starter at SG; training camp sets the 2004-05 rotation"
+              "Starting SG; staff plan 34 minutes"
             ],
             [
               "Report / travel deadline",
@@ -1379,7 +1399,7 @@
       "actions": [
         {
           "label": "Open the current event discussion",
-          "href": "../2004-05/05_Preseason/note.md",
+          "href": "../2004-05/04_Training_Camp/note.md",
           "description": "Record a dated reaction to an actual transaction."
         },
         {
@@ -1402,8 +1422,8 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Owning event",
-          "href": "../2004-05/05_Preseason/note.md"
+          "label": "Owning dated record",
+          "href": "../2004-05/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1422,12 +1442,12 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
-          "label": "Owning dated record",
-          "href": "../2004-05/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -1454,6 +1474,10 @@
           "href": "../2004-05/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1462,7 +1486,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-27"
+          "value": "2004-10-28"
         },
         {
           "label": "Team",
@@ -1529,7 +1553,7 @@
             ],
             [
               "Communicated role and actual use",
-              "Carried-over starter at SG; training camp sets the 2004-05 rotation",
+              "Starting SG; staff plan 34 minutes",
               "Dated statements and closed minutes"
             ],
             [
@@ -1615,8 +1639,8 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Owning event",
-          "href": "../2004-05/05_Preseason/note.md"
+          "label": "Owning dated record",
+          "href": "../2004-05/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1635,12 +1659,12 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
-          "label": "Owning dated record",
-          "href": "../2004-05/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -1667,6 +1691,10 @@
           "href": "../2004-05/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1675,7 +1703,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-27"
+          "value": "2004-10-28"
         },
         {
           "label": "Team",
@@ -1711,15 +1739,15 @@
             ],
             [
               "Current role",
-              "Carried-over starter at SG; training camp sets the 2004-05 rotation"
+              "Starting SG; staff plan 34 minutes"
             ],
             [
               "Staff rotation minutes",
-              null
+              34.0
             ],
             [
               "Closed preseason games",
-              6
+              7
             ],
             [
               "Camp availability",
@@ -1737,31 +1765,31 @@
           "rows": [
             [
               "PG",
-              "Mike James",
+              "Mike James, Rafer Alston, Derek Fisher, Maurice Baker",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "SG",
-              "Dwyane Wade, Eddie Jones",
+              "Dwyane Wade, Eddie Jones, Kendall Gill, Bob Sura, Calbert Cheaney, Stephen Jackson, Maurice Evans",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "SF",
-              "Caron Butler",
+              "Caron Butler, Dorell Wright",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "PF",
-              "Scott Padgett, Udonis Haslem",
+              "Mehmet Okur, Scott Padgett, Udonis Haslem",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "C",
-              "Brian Grant",
+              "Brian Grant, Chris Mihm, John Thomas, John Edwards",
               "Staff ordering; not a future minutes promise"
             ]
           ],
-          "notice": "Snapshot: 2004-10-01. Draft rights and unassigned arrivals are not assigned minutes."
+          "notice": "Snapshot: 2004-10-28. Draft rights and unassigned arrivals are not assigned minutes."
         },
         {
           "title": "Role and promise review",
@@ -1774,12 +1802,12 @@
             [
               "Expected role",
               "Attributed coach statement",
-              "Carried-over starter at SG; training camp sets the 2004-05 rotation"
+              "Starting SG; staff plan 34 minutes"
             ],
             [
               "Actual use",
               "Closed preseason boxes",
-              "6 closed games"
+              "7 closed games"
             ],
             [
               "Promised minutes",
@@ -1820,6 +1848,10 @@
             [
               "2004-10-05",
               "Camp injury draws: nobody is hurt."
+            ],
+            [
+              "2004-10-28",
+              "Staff decision from 7 preseason games: starters PG Mike James, SG Dwyane Wade, SF Caron Butler, PF Mehmet Okur, C Brian Grant; battles drawn: {'PF': 'Mehmet Okur'}. Wade's perimeter-defense grade 45 (No assignment-level defensive evidence; preseason steals and blocks do not change this grade.). Records: `../00_Team/Team/Depth_Chart/depth_chart.json`, `rotation.json`, `../00_Team/Team/defensive_grades.json`."
             ]
           ]
         },
@@ -1895,6 +1927,11 @@
       ],
       "actions": [
         {
+          "label": "Answer your camp review",
+          "href": "../2004-05/04_Training_Camp/Wade_Camp_Review.md",
+          "description": "Respond to the actual staff review."
+        },
+        {
           "label": "Open camp events and discussion",
           "href": "../2004-05/04_Training_Camp/note.md",
           "description": "Inspect the dated camp record."
@@ -1919,8 +1956,8 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Owning event",
-          "href": "../2004-05/05_Preseason/note.md"
+          "label": "Owning dated record",
+          "href": "../2004-05/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1939,12 +1976,12 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
-          "label": "Owning dated record",
-          "href": "../2004-05/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -1971,6 +2008,10 @@
           "href": "../2004-05/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1979,7 +2020,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-27"
+          "value": "2004-10-28"
         },
         {
           "label": "Team",
@@ -1996,7 +2037,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "6 closed game records in 2004-05 through 2004-10-27. Competitions remain separate.",
+      "summary": "7 closed game records in 2004-05 through 2004-10-28. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2013,12 +2054,12 @@
           "rows": [
             [
               "preseason",
-              6,
-              29.973713889,
-              13.833333333,
+              7,
+              30.172135714,
+              14.714285714,
+              4.142857143,
               4.0,
-              3.833333333,
-              0.833333333,
+              0.857142857,
               "Complete"
             ],
             [
@@ -2047,12 +2088,12 @@
           "rows": [
             [
               "preseason",
-              25,
-              56,
-              0.446428571,
+              31,
+              67,
+              0.462686567,
               4,
-              12,
-              0.333333333
+              14,
+              0.285714286
             ],
             [
               "regular",
@@ -2135,6 +2176,16 @@
                 "label": "Closed game",
                 "href": "../2004-05/05_Preseason/Game_6.md"
               }
+            ],
+            [
+              "2004-10-27",
+              "preseason",
+              "Orlando Magic",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/05_Preseason/Game_7.md"
+              }
             ]
           ]
         },
@@ -2208,8 +2259,8 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Owning event",
-          "href": "../2004-05/05_Preseason/note.md"
+          "label": "Owning dated record",
+          "href": "../2004-05/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2228,12 +2279,12 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
-          "label": "Owning dated record",
-          "href": "../2004-05/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -2260,6 +2311,10 @@
           "href": "../2004-05/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2268,7 +2323,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-27"
+          "value": "2004-10-28"
         },
         {
           "label": "Team",

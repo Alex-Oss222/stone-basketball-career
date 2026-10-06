@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-camp-pf-starter",
+ "date": "2004-10-28",
+ "question": "Who starts at PF: Mehmet Okur or Scott Padgett?",
+ "decider": "Miami coaching staff (evaluation draw)",
+ "options": {
+  "Mehmet Okur": 0.659,
+  "Scott Padgett": 0.341
+ },
+ "basis": "Staff scores 13.666 and 12.799 within 10%: the leader's edge over half the margin, drawn once (docs/front_office_design.md 8)."
+}

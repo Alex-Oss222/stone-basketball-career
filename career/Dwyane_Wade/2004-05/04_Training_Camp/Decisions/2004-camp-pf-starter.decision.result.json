@@ -1,0 +1,12 @@
+{
+ "date": "2004-10-28",
+ "decider": "Miami coaching staff (evaluation draw)",
+ "event_id": "2004-camp-pf-starter",
+ "kind": "decision",
+ "options": {
+  "Mehmet Okur": 0.659,
+  "Scott Padgett": 0.341
+ },
+ "outcome": "Mehmet Okur",
+ "question": "Who starts at PF: Mehmet Okur or Scott Padgett?"
+}

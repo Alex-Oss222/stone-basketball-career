@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2004-10-27 · Miami Heat · inactive
+Career date: 2004-10-28 · Miami Heat · inactive
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 
@@ -22,7 +22,7 @@ Activation: An actual dated proposal, consultation or executed transaction.
 | --- | --- |
 | Current club | Miami Heat |
 | Trade involving Wade | Not established by a transaction record |
-| Staff role after a move | Carried-over starter at SG; training camp sets the 2004-05 rotation |
+| Staff role after a move | Starting SG; staff plan 34 minutes |
 | Report / travel deadline | No actual assignment notice supplied |
 | Physical or reporting requirements | Use the dated notice; no timer invented |
 | Contract or guarantees | Inspect executed transaction and contract records; no automatic rewrite |
@@ -51,7 +51,7 @@ Activation: An actual dated proposal, consultation or executed transaction.
 
 ## Available response paths
 
-- [Open the current event discussion](../2004-05/05_Preseason/note.md): Record a dated reaction to an actual transaction.
+- [Open the current event discussion](../2004-05/04_Training_Camp/note.md): Record a dated reaction to an actual transaction.
 - [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
@@ -63,17 +63,18 @@ An actual transaction update with its source and applicable player rights.
 - [Authoritative career checkpoint](../2004-05/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2004-05/05_Preseason/note.md)
+- [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
-- [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
+- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/rotation.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Closed game](../2004-05/05_Preseason/Game_2.md)
 - [Closed game](../2004-05/05_Preseason/Game_3.md)
 - [Closed game](../2004-05/05_Preseason/Game_4.md)
 - [Closed game](../2004-05/05_Preseason/Game_5.md)
 - [Closed game](../2004-05/05_Preseason/Game_6.md)
+- [Closed game](../2004-05/05_Preseason/Game_7.md)
 - [Dated milestone working records and player replies](../milestones.json)
