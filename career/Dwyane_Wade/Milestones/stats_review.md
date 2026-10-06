@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-10-26 · Miami Heat · active
+Career date: 2004-10-27 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-5 closed game records in 2004-05 through 2004-10-26. Competitions remain separate.
+6 closed game records in 2004-05 through 2004-10-27. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -14,7 +14,7 @@ Activation: A declared, closed game result supplies observed participation and t
 
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| preseason | 5 | 29.9 | 12.4 | 4.0 | 3.8 | 0.800 | Complete |
+| preseason | 6 | 30.0 | 13.8 | 4.0 | 3.8 | 0.833 | Complete |
 | regular | 0 | N/A | N/A | N/A | N/A | N/A | Complete |
 
 ## Pooled shooting
@@ -23,7 +23,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
-| preseason | 17 | 46 | 0.370 | 2 | 8 | 0.250 |
+| preseason | 25 | 56 | 0.446 | 4 | 12 | 0.333 |
 | regular | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ## Closed source games
@@ -35,6 +35,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-10-16 | preseason | Detroit Pistons | Played | [Closed game](../2004-05/05_Preseason/Game_3.md) |
 | 2004-10-18 | preseason | Atlanta Hawks | Played | [Closed game](../2004-05/05_Preseason/Game_4.md) |
 | 2004-10-22 | preseason | Atlanta Hawks | Played | [Closed game](../2004-05/05_Preseason/Game_5.md) |
+| 2004-10-26 | preseason | Charlotte Bobcats | Played | [Closed game](../2004-05/05_Preseason/Game_6.md) |
 
 ## Evidence available for decisions
 
@@ -78,4 +79,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/05_Preseason/Game_3.md)
 - [Closed game](../2004-05/05_Preseason/Game_4.md)
 - [Closed game](../2004-05/05_Preseason/Game_5.md)
+- [Closed game](../2004-05/05_Preseason/Game_6.md)
 - [Dated milestone working records and player replies](../milestones.json)

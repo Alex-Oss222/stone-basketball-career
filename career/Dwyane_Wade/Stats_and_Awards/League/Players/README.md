@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-26**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-27**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -522,7 +522,7 @@ Card date: **2004-10-26**. 504 registry players, one Markdown card and one inter
 | [Oliver Miller](milleol01.md) | Free agent | None | silhouette | [open](milleol01.html) |
 | [Pat Burke](burkepa01.md) | Free agent | 30 | sourced | [open](burkepa01.html) |
 | [Paul Grant](grantpa01.md) | Free agent | None | silhouette | [open](grantpa01.html) |
-| [Predrag Drobnjak](drobnpr01.md) | Los Angeles Clippers | 28 | silhouette | [open](drobnpr01.html) |
+| [Predrag Drobnjak](drobnpr01.md) | Los Angeles Clippers | 29 | silhouette | [open](drobnpr01.html) |
 | [Primož Brezec](brezepr01.md) | Indiana Pacers | None | silhouette | [open](brezepr01.html) |
 | [Raef LaFrentz](lafrera01.md) | Utah Jazz | 28 | sourced | [open](lafrera01.html) |
 | [Rasho Nesterovic](nestera01.md) | San Antonio Spurs | 28 | sourced | [open](nestera01.html) |

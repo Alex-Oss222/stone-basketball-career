@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-10-26**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-10-27**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -3196,7 +3196,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
 
-## 2004-05 · NBA regular season · through 2004-10-26
+## 2004-05 · NBA regular season · through 2004-10-27
 
 [Open this period](player_cards.html?period=regular-2004-05-season#shooting)
 
@@ -3216,23 +3216,23 @@ No closed games in this competition at the current career checkpoint. No appeara
 
 No closed source games in this period. Zero appearances do not establish a 0.0% shooting percentage.
 
-## 2004-05 · NBA preseason · through 2004-10-26
+## 2004-05 · NBA preseason · through 2004-10-27
 
 [Open this period](player_cards.html?period=preseason-2004-05-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 5 | 0 | 5 | 17 / 46 | 37.0% | 2 / 8 | 62 | complete |
+| 6 | 0 | 6 | 25 / 56 | 44.6% | 4 / 12 | 83 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 9 | 22 | 40.9% | 3.60 | 4.40 | 22 |
-| Outside paint, under 12 ft | 1 | 2 | 50.0% | 0.40 | 0.40 | 2 |
-| Outside paint, 12 to under 18 ft | 2 | 5 | 40.0% | 0.80 | 1.00 | 5 |
-| 18 ft to the three-point line | 3 | 9 | 33.3% | 1.20 | 1.80 | 9 |
-| Three-point range | 2 | 8 | 25.0% | 1.20 | 1.60 | 8 |
+| Paint | 13 | 26 | 50.0% | 4.33 | 4.33 | 26 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 0.33 | 0.33 | 2 |
+| Outside paint, 12 to under 18 ft | 3 | 6 | 50.0% | 1.00 | 1.00 | 6 |
+| 18 ft to the three-point line | 4 | 10 | 40.0% | 1.33 | 1.67 | 10 |
+| Three-point range | 4 | 12 | 33.3% | 2.00 | 2.00 | 12 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -3241,6 +3241,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-10-16 | Detroit Pistons | Played | [Game](../2004-05/05_Preseason/Game_3.md) | [Result](../2004-05/05_Preseason/Game_3.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_3.result.json) |
 | 2004-10-18 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_4.md) | [Result](../2004-05/05_Preseason/Game_4.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_4.result.json) |
 | 2004-10-22 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_5.md) | [Result](../2004-05/05_Preseason/Game_5.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_5.result.json) |
+| 2004-10-26 | Charlotte Bobcats | Played | [Game](../2004-05/05_Preseason/Game_6.md) | [Result](../2004-05/05_Preseason/Game_6.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_6.result.json) |
 
 ## 2004-10 · NBA preseason
 
@@ -3248,17 +3249,17 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 5 | 0 | 5 | 17 / 46 | 37.0% | 2 / 8 | 62 | complete |
+| 6 | 0 | 6 | 25 / 56 | 44.6% | 4 / 12 | 83 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 9 | 22 | 40.9% | 3.60 | 4.40 | 22 |
-| Outside paint, under 12 ft | 1 | 2 | 50.0% | 0.40 | 0.40 | 2 |
-| Outside paint, 12 to under 18 ft | 2 | 5 | 40.0% | 0.80 | 1.00 | 5 |
-| 18 ft to the three-point line | 3 | 9 | 33.3% | 1.20 | 1.80 | 9 |
-| Three-point range | 2 | 8 | 25.0% | 1.20 | 1.60 | 8 |
+| Paint | 13 | 26 | 50.0% | 4.33 | 4.33 | 26 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 0.33 | 0.33 | 2 |
+| Outside paint, 12 to under 18 ft | 3 | 6 | 50.0% | 1.00 | 1.00 | 6 |
+| 18 ft to the three-point line | 4 | 10 | 40.0% | 1.33 | 1.67 | 10 |
+| Three-point range | 4 | 12 | 33.3% | 2.00 | 2.00 | 12 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -3267,6 +3268,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-10-16 | Detroit Pistons | Played | [Game](../2004-05/05_Preseason/Game_3.md) | [Result](../2004-05/05_Preseason/Game_3.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_3.result.json) |
 | 2004-10-18 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_4.md) | [Result](../2004-05/05_Preseason/Game_4.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_4.result.json) |
 | 2004-10-22 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_5.md) | [Result](../2004-05/05_Preseason/Game_5.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_5.result.json) |
+| 2004-10-26 | Charlotte Bobcats | Played | [Game](../2004-05/05_Preseason/Game_6.md) | [Result](../2004-05/05_Preseason/Game_6.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_6.result.json) |
 
 ## 2004-10-08 to 2004-10-14 · NBA preseason
 
@@ -3314,27 +3316,28 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-10-16 | Detroit Pistons | Played | [Game](../2004-05/05_Preseason/Game_3.md) | [Result](../2004-05/05_Preseason/Game_3.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_3.result.json) |
 | 2004-10-18 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_4.md) | [Result](../2004-05/05_Preseason/Game_4.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_4.result.json) |
 
-## 2004-10-22 to 2004-10-26 · NBA preseason
+## 2004-10-22 to 2004-10-27 · NBA preseason
 
 [Open this period](player_cards.html?period=preseason-2004-05-week-2004-10-22#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 0 | 1 | 2 / 8 | 25.0% | 0 / 1 | 6 | complete |
+| 2 | 0 | 2 | 10 / 18 | 55.6% | 2 / 5 | 27 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
-| Outside paint, under 12 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
-| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
-| 18 ft to the three-point line | 0 | 3 | 0.0% | 0.00 | 3.00 | 3 |
-| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| Paint | 4 | 6 | 66.7% | 4.00 | 3.00 | 6 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 1.00 | 0.50 | 1 |
+| Outside paint, 12 to under 18 ft | 2 | 2 | 100.0% | 2.00 | 1.00 | 2 |
+| 18 ft to the three-point line | 1 | 4 | 25.0% | 1.00 | 2.00 | 4 |
+| Three-point range | 2 | 5 | 40.0% | 3.00 | 2.50 | 5 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-22 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_5.md) | [Result](../2004-05/05_Preseason/Game_5.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_5.result.json) |
+| 2004-10-26 | Charlotte Bobcats | Played | [Game](../2004-05/05_Preseason/Game_6.md) | [Result](../2004-05/05_Preseason/Game_6.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_6.result.json) |
 
 ## 2004-10-10 at Houston Rockets · Played · NBA preseason
 
@@ -3445,3 +3448,25 @@ Simulated engine shot locations come from the original closed game results. Part
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-22 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_5.md) | [Result](../2004-05/05_Preseason/Game_5.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_5.result.json) |
+
+## 2004-10-26 at Charlotte Bobcats · Played · NBA preseason
+
+[Open this period](player_cards.html?period=preseason-2004-05-game-17b70b86a87be856#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 10 | 80.0% | 2 / 4 | 21 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 4 | 4 | 100.0% | 8.00 | 4.00 | 4 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Three-point range | 2 | 4 | 50.0% | 6.00 | 4.00 | 4 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-10-26 | Charlotte Bobcats | Played | [Game](../2004-05/05_Preseason/Game_6.md) | [Result](../2004-05/05_Preseason/Game_6.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_6.result.json) |
