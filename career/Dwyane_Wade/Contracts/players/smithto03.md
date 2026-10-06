@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Tommy Smith |
-| Club / rights baseline | Chicago Bulls |
+| Club / rights baseline | Free agent |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

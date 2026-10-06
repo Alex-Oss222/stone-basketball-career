@@ -93,15 +93,15 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Carmelo Anthony](players/anthoca01.md) | Denver Nuggets | No verified contract record | No verified current agreement | 0 |
 | [Caron Butler](players/butleca01.md) | Miami Heat | under rookie contract | Caron Butler · 2002-07-02 | 1 |
 | [Casey Jacobsen](players/jacobca01.md) | Phoenix Suns | under rookie contract | Casey Jacobsen · 2002-07-05 | 1 |
-| [Cezary Trybanski](players/trybace01.md) | Charlotte Bobcats | under contract | Cezary Trybanski · existing contract; signing date not recorded | 1 |
+| [Cezary Trybanski](players/trybace01.md) | Free agent | under contract | Cezary Trybanski · existing contract; signing date not recorded | 1 |
 | [Charles Oakley](players/oaklech01.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
 | [Charlie Ward](players/wardch01.md) | Minnesota Timberwolves | under contract | Charlie Ward · 2004-09-09 | 2 |
 | [Chauncey Billups](players/billuch01.md) | Detroit Pistons | under contract | Chauncey Billups · existing contract; signing date not recorded | 1 |
 | [Cherokee Parks](players/parksch02.md) | Free agent | camp contract | Cherokee Parks · 2003-11-09 | 3 |
 | [Chris Andersen](players/anderch01.md) | Orlando Magic | under contract | Chris Andersen · 2004-07-15 | 4 |
 | [Chris Bosh](players/boshch01.md) | Toronto Raptors | No verified contract record | No verified current agreement | 0 |
-| [Chris Crawford](players/crawfch01.md) | Atlanta Hawks | under contract | Chris Crawford · 1999-08-24 | 1 |
-| [Chris Jefferies](players/jeffech01.md) | Chicago Bulls | under rookie contract | Chris Jefferies · 2002-09-30 | 1 |
+| [Chris Crawford](players/crawfch01.md) | Free agent | under contract | Chris Crawford · 1999-08-24 | 1 |
+| [Chris Jefferies](players/jeffech01.md) | Free agent | under rookie contract | Chris Jefferies · 2002-09-30 | 1 |
 | [Chris Kaman](players/kamanch01.md) | Los Angeles Clippers | No verified contract record | No verified current agreement | 0 |
 | [Chris Mihm](players/mihmch01.md) | Phoenix Suns | released | No verified current agreement | 2 |
 | [Chris Mills](players/millsch01.md) | Free agent | under contract | Chris Mills · existing contract; signing date not recorded | 1 |
@@ -238,7 +238,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jamaal Magloire](players/magloja01.md) | New Orleans Hornets | under rookie contract | Jamaal Magloire · 2000-07-18 | 1 |
 | [Jamaal Tinsley](players/tinslja01.md) | Indiana Pacers | under rookie contract | Jamaal Tinsley · 2001-07-19 | 1 |
 | [Jamal Crawford](players/crawfja01.md) | Chicago Bulls | under contract | Jamal Crawford · 2004-07-14 | 2 |
-| [Jamal Mashburn](players/mashbja01.md) | New Orleans Hornets | under contract | Jamal Mashburn · existing contract; signing date not recorded | 1 |
+| [Jamal Mashburn](players/mashbja01.md) | Free agent | under contract | Jamal Mashburn · existing contract; signing date not recorded | 1 |
 | [Jamal Sampson](players/sampsja01.md) | Houston Rockets | under contract | Jamal Sampson · 2002-09-17 | 1 |
 | [Jameer Nelson](players/jameernelson.md) | Seattle SuperSonics | under contract | Jameer Nelson · 2004-07-01 | 1 |
 | [James Jones](players/jonesja02.md) | Orlando Magic | No verified contract record | No verified current agreement | 0 |
@@ -260,7 +260,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jason Richardson](players/richaja01.md) | Golden State Warriors | under rookie contract | Jason Richardson · 2001-08-24 | 1 |
 | [Jason Terry](players/terryja01.md) | Atlanta Hawks | under contract | Jason Terry · 2003-09-25 | 2 |
 | [Jason Williams](players/willija02.md) | Memphis Grizzlies | under contract | Jason Williams · 2001-10-17 | 1 |
-| [Jay Williams](players/willija03.md) | Chicago Bulls | under rookie contract | Jay Williams · 2002-07-10 | 1 |
+| [Jay Williams](players/willija03.md) | Free agent | under rookie contract | Jay Williams · 2002-07-10 | 1 |
 | [Jeff Foster](players/fosteje01.md) | Indiana Pacers | under contract unverified | No verified current agreement | 0 |
 | [Jeff McInnis](players/mcinnje01.md) | New Orleans Hornets | under contract | Jeff McInnis · existing contract; signing date not recorded | 1 |
 | [Jeff Trepagnier](players/trepaje01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
@@ -490,7 +490,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Scot Pollard](players/pollasc01.md) | Indiana Pacers | under contract | Scot Pollard · existing contract; signing date not recorded | 1 |
 | [Scott Padgett](players/padgesc01.md) | Miami Heat | under contract | Scott Padgett · 2004-07-14 | 4 |
 | [Scott Williams](players/willisc01.md) | Free agent | under contract | No verified current agreement | 2 |
-| [Scottie Pippen](players/pippesc01.md) | Chicago Bulls | under contract | Scottie Pippen · 2003-07-20 | 2 |
+| [Scottie Pippen](players/pippesc01.md) | Free agent | under contract | Scottie Pippen · 2003-07-20 | 2 |
 | [Sean Lampley](players/lamplse01.md) | Free agent | team option exercised | Sean Lampley · 2002-09-29 | 1 |
 | [Sean Marks](players/seanmarks.md) | San Antonio Spurs | under contract | Sean Marks · 2004-07-14 | 2 |
 | [Sean Rooks](players/rooksse01.md) | Free agent | under contract | No verified current agreement | 2 |
@@ -523,7 +523,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Szymon Szewczyk](players/szewcsz01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [T.J. Ford](players/fordtj01.md) | Milwaukee Bucks | No verified contract record | No verified current agreement | 0 |
 | [Tamar Slay](players/slayta01.md) | Free agent | minimum contract unverified | No verified current agreement | 0 |
-| [Tariq Abdul-Wahad](players/abdulta01.md) | Dallas Mavericks | under contract | Tariq Abdul-Wahad · 2000-08-01 | 1 |
+| [Tariq Abdul-Wahad](players/abdulta01.md) | Free agent | under contract | Tariq Abdul-Wahad · 2000-08-01 | 1 |
 | [Tayshaun Prince](players/princta01.md) | Golden State Warriors | under rookie contract | Tayshaun Prince · 2002-07-02 | 1 |
 | [Terence Morris](players/morrite01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |
 | [Theo Ratliff](players/ratlith01.md) | Atlanta Hawks | under contract | Theo Ratliff · existing contract; signing date not recorded | 1 |
@@ -534,7 +534,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Tim Thomas](players/thomati01.md) | Milwaukee Bucks | under contract | Tim Thomas · existing contract; signing date not recorded | 1 |
 | [Tito Maddox](players/maddoti01.md) | Free agent | team option pending | Tito Maddox · 2002-09-12 | 1 |
 | [Tom Gugliotta](players/guglito01.md) | Free agent | under contract | Tom Gugliotta · existing contract; signing date not recorded | 1 |
-| [Tommy Smith](players/smithto03.md) | Chicago Bulls | No verified contract record | No verified current agreement | 0 |
+| [Tommy Smith](players/smithto03.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Toni Kukoc](players/kukocto01.md) | New Jersey Nets | under contract | Toni Kukoc · 2004-09-23 | 1 |
 | [Tony Allen](players/tonyallen.md) | San Antonio Spurs | under contract | Tony Allen · 2004-07-15 | 1 |
 | [Tony Battie](players/battito01.md) | Boston Celtics | under contract | Tony Battie · 1999-10-15 | 1 |

@@ -123,7 +123,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jay Williams |
-| Club / rights baseline | Chicago Bulls |
+| Club / rights baseline | Free agent |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

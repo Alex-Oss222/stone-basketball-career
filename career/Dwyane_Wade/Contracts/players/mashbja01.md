@@ -122,7 +122,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jamal Mashburn |
-| Club / rights baseline | New Orleans Hornets |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

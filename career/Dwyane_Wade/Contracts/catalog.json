@@ -770,7 +770,7 @@
     {
       "player_id": "trybace01",
       "name": "Cezary Trybanski",
-      "team": "Charlotte Bobcats",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "trybace01-existing-1a41fb5aae5b",
       "recorded_agreements": 1,
@@ -833,7 +833,7 @@
     {
       "player_id": "crawfch01",
       "name": "Chris Crawford",
-      "team": "Atlanta Hawks",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "crawfch01-1999-08-24",
       "recorded_agreements": 1,
@@ -842,7 +842,7 @@
     {
       "player_id": "jeffech01",
       "name": "Chris Jefferies",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "under rookie contract",
       "current_contract_id": "jeffech01-2002-09-30",
       "recorded_agreements": 1,
@@ -2075,7 +2075,7 @@
     {
       "player_id": "mashbja01",
       "name": "Jamal Mashburn",
-      "team": "New Orleans Hornets",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "mashbja01-existing-7e80df14785a",
       "recorded_agreements": 1,
@@ -2273,7 +2273,7 @@
     {
       "player_id": "willija03",
       "name": "Jay Williams",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "under rookie contract",
       "current_contract_id": "willija03-2002-07-10",
       "recorded_agreements": 1,
@@ -4343,7 +4343,7 @@
     {
       "player_id": "pippesc01",
       "name": "Scottie Pippen",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "pippesc01-2003-07-20",
       "recorded_agreements": 2,
@@ -4640,7 +4640,7 @@
     {
       "player_id": "abdulta01",
       "name": "Tariq Abdul-Wahad",
-      "team": "Dallas Mavericks",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "abdulta01-2000-08-01",
       "recorded_agreements": 1,
@@ -4739,7 +4739,7 @@
     {
       "player_id": "smithto03",
       "name": "Tommy Smith",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
