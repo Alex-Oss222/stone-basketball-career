@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-11-29 
+**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-11-30 
 
 **Contract/control:** Signed July 14, 2004 (bird): 4 season(s) from 2004-05, $46,107,709 scheduled ($9,706,886 in 2004-05). (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
 
@@ -65,7 +65,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Utah Jazz | 82 | N/A | 16.1 | 5.7 | 3.3 | 1.0 | 0.5 | 0.3 | 0.9 | 0.402 | 0.338 | 0.757 |
 | 2003-04 | MIA | 68 | 68 | 34.4 | 13.8 | 8.7 | 2.4 | 0.8 | 0.7 | 1.8 | 43.7% | 37.4% | 78.6% |
-| 2004-05 | MIA | 14 | 0 | 22.1 | 5.8 | 4.2 | 1.6 | 1.0 | 0.2 | 0.6 | 35.8% | 28.6% | 75.0% |
+| 2004-05 | MIA | 15 | 0 | 22.3 | 5.8 | 4.3 | 1.5 | 1.1 | 0.2 | 0.5 | 32.6% | 25.0% | 79.2% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 
