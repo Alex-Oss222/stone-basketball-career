@@ -14,7 +14,7 @@ Activation: A dated player priority and staff-supported development block.
 
 | Item | Recorded evidence |
 | --- | --- |
-| Current role | Starter; staff plan 34 minutes |
+| Current role | Carried-over starter at SG; training camp sets the 2004-05 rotation |
 | Availability | No current restriction recorded in the established profile |
 | Chosen focus | Not recorded |
 | Baseline measurement | Not recorded |

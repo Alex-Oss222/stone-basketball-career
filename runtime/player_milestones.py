@@ -425,10 +425,47 @@ def _basketball_views(c, contract):
     return training_view, camp_view, exit_view
 
 
+TRACKER_GATES = (("training_camp_opens", "Training camp opens"), ("preseason", "Preseason opens"),
+                 ("roster_cut", "Roster cut to 15"), ("opening_night", "Opening night"),
+                 ("waive_by", "Last day to waive before guarantees"), ("guarantee", "Contracts guaranteed"),
+                 ("all_star_weekend", "All-Star Weekend"), ("trade_deadline", "Trade deadline"),
+                 ("regular_season_end", "Regular season ends"), ("playoffs_start", "Playoffs begin"))
+
+
+def _season_tracker(c) -> list:
+    """Every dated gate of the live season from its registry (runtime/seasons.py) and Wade's recorded plans for it,
+    each marked done, today or upcoming against the career date."""
+    from .seasons import dates
+    rows = []
+    try:
+        gates = dates(c.season.name, c.root)
+    except (OSError, KeyError, ValueError):
+        return rows
+
+    def status(day):
+        return "done" if day < c.on else "today" if day == c.on else "upcoming"
+    for key, label in TRACKER_GATES:
+        day = gates.get(key)
+        if day:
+            rows.append([day, label, "League calendar", status(day), {"label": "Season", "href": "#calendar"}])
+    registry = c.root / "career/Dwyane_Wade/milestones.json"
+    events = json.loads(registry.read_text(encoding="utf-8")).get("events", []) if registry.is_file() else []
+    for e in events:
+        if e.get("season") == c.season.name and e.get("starts_on"):
+            span = e["starts_on"] + (f" to {e['ends_on']}" if e.get("ends_on") else "")
+            rows.append([span, e.get("title", e["id"]), e.get("owner", "player"), e.get("status", "planned"),
+                         c.link(c.root / e["source_ref"], "Record") if e.get("source_ref") else "—"])
+    return sorted(rows, key=lambda r: r[0])
+
+
 def _season_gates(c) -> list:
     """The next dated gates after the career date, each from its owning rule: Miami's next scheduled game, the next
     rotation review, the next league award announcement, the guarantee dates and the rookie option deadline."""
-    if c.season.name != "2003-04" or c.on < "2003-10-28":
+    from .seasons import dates as _dates
+    try:
+        if c.on < _dates(c.season.name, c.root)["opening_night"]:
+            return []
+    except (OSError, KeyError, ValueError):
         return []
     from .award_decisions import AWARDS, periods
     from .rotation_reviews import REVIEW_DAYS, assessment_date
@@ -516,6 +553,7 @@ def build_milestone_payload(player: Path, identity: dict, records: list, *, root
                 ["Last closed event", c.state.get("last_closed_event", "Not recorded")],
                 ["Pending player decisions", _text(pending, "None recorded")]]),
             _table("Milestone calendar", ["Date / gate", "Milestone", "Who acts", "Current meaning", "Open record"], calendar_rows),
+            _table(f"{c.season.name} season tracker", ["Date", "Milestone", "Who acts", "Status", "Record"], _season_tracker(c)),
             _table("Your recorded requests", ["Date", "Subject", "Player / target", "Request", "Explanation", "Source"], requests),
             _table("Franchise consultations", ["Asked", "Move", "Target", "Response", "Basis", "Source"], consultation_rows),
             {"title": "What opens the other pages", "items": [

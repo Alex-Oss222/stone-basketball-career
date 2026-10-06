@@ -106,6 +106,128 @@
           ]
         },
         {
+          "title": "2004-05 season tracker",
+          "columns": [
+            "Date",
+            "Milestone",
+            "Who acts",
+            "Status",
+            "Record"
+          ],
+          "rows": [
+            [
+              "2004-10-05",
+              "Training camp opens",
+              "League calendar",
+              "upcoming",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2004-10-05 to 2004-11-01",
+              "Wade's 2004 camp teamwork focus",
+              "player",
+              "planned",
+              {
+                "label": "Record",
+                "href": "../2004-05/04_Training_Camp/note.md"
+              }
+            ],
+            [
+              "2004-10-10",
+              "Preseason opens",
+              "League calendar",
+              "upcoming",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2004-11-01",
+              "Roster cut to 15",
+              "League calendar",
+              "upcoming",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2004-11-02",
+              "Opening night",
+              "League calendar",
+              "upcoming",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2005-01-07",
+              "Last day to waive before guarantees",
+              "League calendar",
+              "upcoming",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2005-01-10",
+              "Contracts guaranteed",
+              "League calendar",
+              "upcoming",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2005-02-18",
+              "All-Star Weekend",
+              "League calendar",
+              "upcoming",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2005-02-24",
+              "Trade deadline",
+              "League calendar",
+              "upcoming",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2005-04-20",
+              "Regular season ends",
+              "League calendar",
+              "upcoming",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2005-04-23",
+              "Playoffs begin",
+              "League calendar",
+              "upcoming",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ]
+          ]
+        },
+        {
           "title": "Your recorded requests",
           "columns": [
             "Date",
@@ -783,7 +905,7 @@
           "rows": [
             [
               "Current role",
-              "Starter; staff plan 34 minutes"
+              "Carried-over starter at SG; training camp sets the 2004-05 rotation"
             ],
             [
               "Availability",
@@ -982,7 +1104,7 @@
             ],
             [
               "Staff role after a move",
-              "Starter; staff plan 34 minutes"
+              "Carried-over starter at SG; training camp sets the 2004-05 rotation"
             ],
             [
               "Report / travel deadline",
@@ -1167,7 +1289,7 @@
             ],
             [
               "Communicated role and actual use",
-              "Starter; staff plan 34 minutes",
+              "Carried-over starter at SG; training camp sets the 2004-05 rotation",
               "Dated statements and closed minutes"
             ],
             [
@@ -1313,7 +1435,7 @@
             ],
             [
               "Current role",
-              "Starter; staff plan 34 minutes"
+              "Carried-over starter at SG; training camp sets the 2004-05 rotation"
             ],
             [
               "Staff rotation minutes",
@@ -1376,7 +1498,7 @@
             [
               "Expected role",
               "Attributed coach statement",
-              "Starter; staff plan 34 minutes"
+              "Carried-over starter at SG; training camp sets the 2004-05 rotation"
             ],
             [
               "Actual use",

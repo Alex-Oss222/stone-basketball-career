@@ -156,7 +156,9 @@ def miami_numbers(root=ROOT):
 def number_for(bbr, club, root=ROOT):
     """A league card's number: Miami's from its register, others' first preference (their real club's number)."""
     if club == MIAMI:
-        register = {p.get("bbr_id"): p["name"] for p in _read(register_path(root), root).get("players", [])}
+        # Wade's register entry carries no Basketball-Reference id (alternate history): his card's id is wadedw01.
+        register = {p.get("bbr_id") or ("wadedw01" if p["name"] == WADE else None): p["name"]
+                    for p in _read(register_path(root), root).get("players", [])}
         return miami_numbers(root).get(register.get(bbr))
     pref = candidates(bbr, club, root)
     return pref[0] if pref else None

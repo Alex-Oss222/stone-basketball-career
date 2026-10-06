@@ -22,7 +22,7 @@ Activation: An actual dated proposal, consultation or executed transaction.
 | --- | --- |
 | Current club | Miami Heat |
 | Trade involving Wade | Not established by a transaction record |
-| Staff role after a move | Starter; staff plan 34 minutes |
+| Staff role after a move | Carried-over starter at SG; training camp sets the 2004-05 rotation |
 | Report / travel deadline | No actual assignment notice supplied |
 | Physical or reporting requirements | Use the dated notice; no timer invented |
 | Contract or guarantees | Inspect executed transaction and contract records; no automatic rewrite |

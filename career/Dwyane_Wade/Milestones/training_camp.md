@@ -16,7 +16,7 @@ Activation: The club opens camp and records participation, evaluation or an actu
 | --- | --- |
 | Camp opened | Not recorded |
 | Participation | No camp participation record |
-| Current role | Starter; staff plan 34 minutes |
+| Current role | Carried-over starter at SG; training camp sets the 2004-05 rotation |
 | Staff rotation minutes | N/A |
 | Closed preseason games | 0 |
 | Camp availability | No camp assessment recorded |
@@ -37,7 +37,7 @@ Snapshot: 2004-10-01. Draft rights and unassigned arrivals are not assigned minu
 
 | Item | Evidence needed | Current position |
 | --- | --- | --- |
-| Expected role | Attributed coach statement | Starter; staff plan 34 minutes |
+| Expected role | Attributed coach statement | Carried-over starter at SG; training camp sets the 2004-05 rotation |
 | Actual use | Closed preseason boxes | 0 closed games |
 | Promised minutes | Written promise and date | Not recorded |
 | Promise review | Dated review against rotation | Not recorded |

@@ -4,7 +4,7 @@
   "identity": {
     "name": "Dwyane Wade",
     "team": "Miami Heat",
-    "jersey": null,
+    "jersey": "3",
     "position": "SG / PG",
     "age": 20,
     "height": "6 ft 6 in",
@@ -274642,7 +274642,7 @@
       "identity": {
         "name": "Dwyane Wade",
         "team": "Miami Heat",
-        "jersey": null,
+        "jersey": "3",
         "position": "SG / PG",
         "age": 20,
         "height": "6 ft 6 in",
@@ -274748,7 +274748,7 @@
         "identity": {
           "name": "Dwyane Wade",
           "team": "Miami Heat",
-          "jersey": null,
+          "jersey": "3",
           "position": "SG / PG",
           "age": 20,
           "height": "6 ft 6 in",
@@ -274771,7 +274771,7 @@
         "identity": {
           "name": "Dwyane Wade",
           "team": "Miami Heat",
-          "jersey": null,
+          "jersey": "3",
           "position": "SG / PG",
           "age": 20,
           "height": "6 ft 6 in",

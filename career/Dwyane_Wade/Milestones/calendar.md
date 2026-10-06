@@ -30,6 +30,22 @@ Activation: The authoritative current date and recorded event determine what is 
 | Not yet verified | Camp reporting | Club records the date | inactive | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
+## 2004-05 season tracker
+
+| Date | Milestone | Who acts | Status | Record |
+| --- | --- | --- | --- | --- |
+| 2004-10-05 | Training camp opens | League calendar | upcoming | [Season](index.html#calendar) |
+| 2004-10-05 to 2004-11-01 | Wade's 2004 camp teamwork focus | player | planned | [Record](../2004-05/04_Training_Camp/note.md) |
+| 2004-10-10 | Preseason opens | League calendar | upcoming | [Season](index.html#calendar) |
+| 2004-11-01 | Roster cut to 15 | League calendar | upcoming | [Season](index.html#calendar) |
+| 2004-11-02 | Opening night | League calendar | upcoming | [Season](index.html#calendar) |
+| 2005-01-07 | Last day to waive before guarantees | League calendar | upcoming | [Season](index.html#calendar) |
+| 2005-01-10 | Contracts guaranteed | League calendar | upcoming | [Season](index.html#calendar) |
+| 2005-02-18 | All-Star Weekend | League calendar | upcoming | [Season](index.html#calendar) |
+| 2005-02-24 | Trade deadline | League calendar | upcoming | [Season](index.html#calendar) |
+| 2005-04-20 | Regular season ends | League calendar | upcoming | [Season](index.html#calendar) |
+| 2005-04-23 | Playoffs begin | League calendar | upcoming | [Season](index.html#calendar) |
+
 ## Your recorded requests
 
 | Date | Subject | Player / target | Request | Explanation | Source |

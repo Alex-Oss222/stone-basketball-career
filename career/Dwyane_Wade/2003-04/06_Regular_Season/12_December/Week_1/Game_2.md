@@ -78,7 +78,7 @@ Did not dress: Shawn Kemp (illness or personal, this game only).
 <!-- player-report:start -->
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-12-05](../../../../assets/stat_reports/personal_2003-12-05.svg)
+![Player personal information and earned 2003-04 awards through 2003-12-05](../../../../assets/stat_reports/personal_2003-04_2003-12-05.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -96,7 +96,7 @@ Did not dress: Shawn Kemp (illness or personal, this game only).
 | Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option |
 | Role | Starter; staff plan 34 minutes |
 | NBA debut | October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
-| Nationality | Not recorded |
+| Nationality | United States (born in the Chicago area; Robbins, Illinois home community, per the player profile) |
 | National team | No selection recorded |
 | National-team eligibility | Not verified |
 | Availability | No current restriction recorded in the established profile |
@@ -105,7 +105,7 @@ Did not dress: Shawn Kemp (illness or personal, this game only).
 
 Identity as of 2003-12-05; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
-### Earned career awards
+### Earned 2003-04 awards
 
 | Award | Period | Announced | Decision record |
 | --- | --- | --- | --- |

@@ -21,10 +21,6 @@
 <text x="40" y="362" font-family="sans-serif" font-size="13" fill="#bdc0c5" font-weight="700" text-anchor="start">NBA ENTRY</text>
 <text x="200" y="362" font-family="sans-serif" font-size="17" fill="#ffffff" font-weight="500" text-anchor="start">2003 draft, round 1, No. 5 overall, Miami Heat</text>
 <text x="838" y="177" font-family="sans-serif" font-size="17" fill="#ffffff" font-weight="700" text-anchor="start">EARNED CAREER AWARDS</text>
-<rect x="838.0" y="196" width="195.0" height="62" rx="9" fill="#efbf58"/>
-<text x="935.5" y="223.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">Eastern Conference</text>
-<text x="935.5" y="243.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">Rookie of the Month</text>
-<rect x="1043.0" y="196" width="195.0" height="62" rx="9" fill="#efbf58"/>
-<text x="1140.5" y="223.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">Eastern Conference</text>
-<text x="1140.5" y="243.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">Player of the Week</text>
+<rect x="838" y="196" width="400" height="62" rx="10" fill="#34363a"/>
+<text x="1038.0" y="233" font-family="sans-serif" font-size="18" fill="#d0d1d4" font-weight="400" text-anchor="middle">No earned professional awards</text>
 </svg>

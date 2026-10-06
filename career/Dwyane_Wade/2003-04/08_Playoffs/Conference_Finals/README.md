@@ -6,11 +6,11 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-10-01](../../../assets/stat_reports/personal_2004-10-01.svg)
+![Player personal information and earned 2003-04 awards through 2004-10-01](../../../assets/stat_reports/personal_2003-04_2004-10-01.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
-| Dwyane Tyrone Wade Jr. | 20 | Miami Heat / NBA | SG / PG | Not assigned | Under contract |
+| Dwyane Tyrone Wade Jr. | 20 | Miami Heat / NBA | SG / PG | 3 | Under contract |
 
 | Identity field | Recorded value |
 | --- | --- |
@@ -21,19 +21,19 @@
 | Weight | 220 lb |
 | Wingspan / standing reach | 6 ft 11.5 in / 8 ft 7.5 in |
 | Shooting hand | Right |
-| Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option |
-| Role | Starter; staff plan 34 minutes |
+| Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option (2004-05: $2,361,800) |
+| Role | Carried-over starter at SG; training camp sets the 2004-05 rotation |
 | NBA debut | October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
-| Nationality | Not recorded |
+| Nationality | United States (born in the Chicago area; Robbins, Illinois home community, per the player profile) |
 | National team | No selection recorded |
-| National-team eligibility | Not verified |
+| National-team eligibility | United States (USA Basketball); no selection yet |
 | Availability | No current restriction recorded in the established profile |
 | Physical measurements recorded | 2003-06-25 |
-| Professional status effective | 2003-12-01 |
+| Professional status effective | 2004-10-01 |
 
-Identity as of 2004-10-01; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-10-01; status snapshot dated 2004-10-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
-### Earned career awards
+### Earned 2003-04 awards
 
 | Award | Period | Announced | Decision record |
 | --- | --- | --- | --- |

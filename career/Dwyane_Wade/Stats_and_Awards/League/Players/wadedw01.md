@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `wadedw01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-10-01 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2004-05 register · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** Unassigned · **Born:** 1984-01-17 · **Age on card date:** 20  
+**Position:** SG (Shooting guard) · **Jersey:** #3 · **Born:** 1984-01-17 · **Age on card date:** 20  
 **Registry ID:** `wadedw01` · [Basketball-Reference page](https://www.basketball-reference.com/players/w/wadedw01.html) · ESPN ID 1987
 
 **Measurements (career profile, dated 2003-06-25):** 6 ft 6 in (in shoes) · 220 lb · shoots Right · **Prior program:** UConn (simulation canon)

@@ -15,7 +15,7 @@
 <line x1="44" y1="267" x2="606" y2="267" stroke="#ffffff" stroke-opacity="0.18"/>
 <text x="123" y="308" font-family="sans-serif" fill="#ffffff" font-size="23" font-weight="600" text-anchor="middle">SG / PG</text>
 <text x="123" y="335" font-family="sans-serif" fill="#f3cbd2" font-size="17" font-weight="400" text-anchor="middle">Position</text>
-<text x="318" y="308" font-family="sans-serif" fill="#ffffff" font-size="23" font-weight="600" text-anchor="middle">Unassigned</text>
+<text x="318" y="308" font-family="sans-serif" fill="#ffffff" font-size="23" font-weight="600" text-anchor="middle">#3</text>
 <text x="318" y="335" font-family="sans-serif" fill="#f3cbd2" font-size="17" font-weight="400" text-anchor="middle">Number</text>
 <text x="513" y="308" font-family="sans-serif" fill="#ffffff" font-size="21" font-weight="600" text-anchor="middle">Jan 17, 1984</text>
 <text x="513" y="335" font-family="sans-serif" fill="#f3cbd2" font-size="17" font-weight="400" text-anchor="middle">Birthdate</text>

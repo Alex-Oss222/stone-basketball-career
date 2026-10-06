@@ -42,7 +42,7 @@ def badges(parts, labels, x, y, width, columns):
         cx = x + (i % columns) * (cell_width + gap)
         cy = y + (i // columns) * 72
         parts.append(rect(cx, cy, cell_width, 62, GOLD, 9))
-        lines = textwrap.wrap(label, width=max(15, int(cell_width / 9)))
+        lines = [row for part in label.split("\n") for row in textwrap.wrap(part, width=max(15, int(cell_width / 9)))]
         # A long official award name grows its label font down to fit without truncation.
         size = min(18, 48 / max(1, len(lines)))
         for j, row in enumerate(lines):
@@ -61,7 +61,7 @@ def honors_banner(awards, as_of):
     return "\n".join([*parts, "</svg>"]) + "\n"
 
 
-def personal_header(identity, as_of, awards):
+def personal_header(identity, as_of, awards, season=None):
     p = identity_at(identity, as_of)
     labels = badge_labels(awards, as_of)
     badge_rows = max(1, (len(labels) + 1) // 2)
@@ -87,7 +87,9 @@ def personal_header(identity, as_of, awards):
         y = 177 + i * 37
         parts.append(svg_text(40, y, label, 13, "#bdc0c5", 700))
         parts.append(svg_text(200, y, value, 17 if i == 5 else 18, weight=500))
-    parts.append(svg_text(838, 177, "EARNED CAREER HONORS", 17, weight=700))
+    parts.append(svg_text(838, 177, f"EARNED {season} HONORS" if season else "EARNED CAREER HONORS", 17, weight=700))
+    if season and not labels:
+        parts.append(svg_text(838, 214, "None yet this season", 16, "#9c9fa8"))
     badges(parts, labels, 838, 196, 400, 2)
     return "\n".join([*parts, "</svg>"]) + "\n"
 
@@ -198,10 +200,13 @@ class ReportStyle:
                 f"[Shooting detail]({shooting_path}) · [Current contract]({contract_path}#current-contract) · "
                 f"[Contract history]({contract_path}#contract-history) · [Annual award record]({awards_path})\n\n")
 
-    def header(self, page, cutoff):
-        asset = self.asset_dir / f"personal_{cutoff}.svg"
-        self.outputs[asset] = self.award_terms(personal_header(self.identity, cutoff, self.awards))
-        return self.award_terms("!" + link(page, asset, f"Player personal information and earned career honors through {cutoff}") + "\n\n")
+    def header(self, page, cutoff, season=None):
+        """The personal header: career honors, or one season's (a season page shows only what that season earned)."""
+        awards = [a for a in self.awards if a.get("season") == season] if season else self.awards
+        asset = self.asset_dir / (f"personal_{season}_{cutoff}.svg" if season else f"personal_{cutoff}.svg")
+        self.outputs[asset] = self.award_terms(personal_header(self.identity, cutoff, awards, season))
+        scope = f"earned {season} honors" if season else "earned career honors"
+        return self.award_terms("!" + link(page, asset, f"Player personal information and {scope} through {cutoff}") + "\n\n")
 
     def banner(self, page, cutoff):
         asset = self.asset_dir / f"awards_{cutoff}.svg"

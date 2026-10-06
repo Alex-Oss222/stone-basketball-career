@@ -33,7 +33,7 @@ class HonorDateTests(unittest.TestCase):
     def test_announcement_and_period_end_are_separate(self):
         awards = [honor()]
         self.assertEqual(badge_labels(awards, "2003-11-07"), [])
-        self.assertEqual(badge_labels(awards, "2003-11-10"), ["Player of the Week"])
+        self.assertEqual(badge_labels(awards, "2003-11-10"), ["Player of the Week\n2003"])
         self.assertEqual(honors_in_scope(awards, known_on="2003-11-09", start="2003-11-01", end="2003-11-07"), [])
         self.assertEqual(honors_in_scope(awards, known_on="2003-11-10", start="2003-11-01", end="2003-11-07"), awards)
         self.assertEqual(honors_in_scope(awards, known_on="2003-11-10", start="2003-11-08", end="2003-11-14"), [])
@@ -58,7 +58,7 @@ class HonorDateTests(unittest.TestCase):
 
     def test_badges_group_repeated_honors_and_keep_full_names(self):
         awards = [honor(), honor(id="two", period_start="2003-11-08", period_end="2003-11-14", awarded_on="2003-11-17")]
-        self.assertEqual(badge_labels(awards, "2003-11-17"), ["2× Player of the Week"])
+        self.assertEqual(badge_labels(awards, "2003-11-17"), ["2× Player of the Week\n2003"])
         svg = personal_header(IDENTITY, "2003-11-17", awards)
         ElementTree.fromstring(svg)
         self.assertIn("2× Player of the", svg)

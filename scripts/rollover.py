@@ -27,6 +27,13 @@ def finish():
     writer = signing.Writer(ROOT)
     signing.refresh_finance(writer, FrontOffice(day, season_market.for_date(day, ROOT), ROOT), day)
     writer.commit()
+    from runtime.jerseys import wade_number
+    number, source = wade_number(ROOT)                  # a number freed by the summer reaches Wade's dated identity
+    identity = json.loads((ROOT / "career/Dwyane_Wade/professional_identity.json").read_text(encoding="utf-8"))
+    latest = max((s for s in identity["snapshots"] if s["as_of"] <= day), key=lambda s: s["as_of"])
+    if number and latest.get("jersey") != number:
+        signing.player_status_snapshot(writer, day, f"jersey ({source})", jersey=number)
+        writer.commit()
     pages = season_pages.write(signing.SEASON, day, ROOT)
     print(f"{len(pages)} statistics and award pages written for {signing.SEASON}")
     from runtime import write_back

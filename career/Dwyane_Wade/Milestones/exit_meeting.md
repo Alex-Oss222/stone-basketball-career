@@ -26,7 +26,7 @@ Activation: The player's season closes and a dated exit meeting is recorded.
 | Discussion | Current evidence | Needed before a conclusion |
 | --- | --- | --- |
 | Strength and limiting possession | Not recorded | Specific game or film references |
-| Communicated role and actual use | Starter; staff plan 34 minutes | Dated statements and closed minutes |
+| Communicated role and actual use | Carried-over starter at SG; training camp sets the 2004-05 rotation | Dated statements and closed minutes |
 | Availability and recovery | No current restriction recorded in the established profile | Current qualified assessment |
 | Contract outlook | rookie_scale_contract | Actual terms, options and next verified gate |
 | Summer priorities | Not recorded | Player selection and staff-supported plan |

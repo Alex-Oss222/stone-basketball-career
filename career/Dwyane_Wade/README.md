@@ -17,7 +17,7 @@
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
-| Dwyane Tyrone Wade Jr. | 20 | Miami Heat / NBA | SG / PG | Not assigned | Under contract |
+| Dwyane Tyrone Wade Jr. | 20 | Miami Heat / NBA | SG / PG | 3 | Under contract |
 
 | Birth date | Height (in shoes) | Weight | Shoots | Prior program |
 | --- | --- | --- | --- | --- |
@@ -25,7 +25,7 @@
 
 NBA entry: 2003 draft, round 1, No. 5 overall, Miami Heat.
 
-Identity as of 2004-10-01; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-10-01; status snapshot dated 2004-10-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 </details>
 

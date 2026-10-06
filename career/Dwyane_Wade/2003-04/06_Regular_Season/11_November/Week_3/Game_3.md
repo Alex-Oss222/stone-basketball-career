@@ -79,7 +79,7 @@ TEAM                     240.0  110  41-88  10-19  18-24   14  30  27   9   1  1
 <!-- player-report:start -->
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-11-19](../../../../assets/stat_reports/personal_2003-11-19.svg)
+![Player personal information and earned 2003-04 awards through 2003-11-19](../../../../assets/stat_reports/personal_2003-04_2003-11-19.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -97,7 +97,7 @@ TEAM                     240.0  110  41-88  10-19  18-24   14  30  27   9   1  1
 | Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option |
 | Role | Starter; staff plan 34 minutes |
 | NBA debut | October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
-| Nationality | Not recorded |
+| Nationality | United States (born in the Chicago area; Robbins, Illinois home community, per the player profile) |
 | National team | No selection recorded |
 | National-team eligibility | Not verified |
 | Availability | No current restriction recorded in the established profile |
@@ -106,9 +106,9 @@ TEAM                     240.0  110  41-88  10-19  18-24   14  30  27   9   1  1
 
 Identity as of 2003-11-19; status snapshot dated 2003-11-07. User-established alternate-history player; historical Wade's biography and results are not this record.
 
-### Earned career awards
+### Earned 2003-04 awards
 
-No earned professional awards recorded by this page's identity cutoff.
+No 2003-04 awards yet.
 
 ## Statistics
 

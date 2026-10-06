@@ -534,6 +534,11 @@ class TradeDesk:
         last = (date.fromisoformat(SIGN_FROM) - timedelta(days=1)).isoformat()
         return (OPEN, last), SIGN_FROM
 
+    def partner_cap(self, club):
+        """The partner's own cap: an expansion club's where the season records one (league_book.club_cap)."""
+        from .league_book import club_cap
+        return club_cap(club, self.season, self.cap, self.root)
+
     def _december_15(self):
         return f"{self.season[:4]}-12-15"
 
@@ -625,7 +630,7 @@ class TradeDesk:
 
     def partner_over_cap_after_signing(self, club, first_year):
         """The incumbent's cap position after signing its own free agent (its ledger carries no other holds; inferred)."""
-        return (self.assets.payroll(club) or 0) + first_year > self.cap
+        return (self.assets.payroll(club) or 0) + first_year > self.partner_cap(club)
 
     def base_year_compensation(self, club, first_year, prior):
         """The flag attached at a signing by a real club: a raise over 20% while over the cap after the signing."""
@@ -746,7 +751,7 @@ class TradeDesk:
         if t["miami_after"] > self.cap and t["in_full"] > t["out_match"] * pct + plus:
             errors.append(f"Miami over the cap after the trade: incoming ${t['in_full']:,.0f} exceeds {pct:.0%} of outgoing ${t['out_match']:,.0f} plus ${plus:,} "
                           f"({rules['matching_over_cap']['status']})" + byc)
-        if t["partner_after"] > self.cap and t["out_full"] > t["in_match"] * pct + plus:
+        if t["partner_after"] > self.partner_cap(trade["partner"]) and t["out_full"] > t["in_match"] * pct + plus:
             errors.append(f"{club} over the cap after the trade: incoming ${t['out_full']:,.0f} exceeds {pct:.0%} of its outgoing ${t['in_match']:,.0f} plus ${plus:,}" + byc)
         # Rosters of at most 15 after the trade (Miami; the partner's count is not on the inventory for the date).
         # The same rule as the cut and the game builder (camp.playable): unsigned draft rights are not a roster spot.

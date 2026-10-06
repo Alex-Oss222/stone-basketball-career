@@ -1,149 +1,170 @@
 {
-  "schema_version": 1,
-  "player_id": "dwyane_wade",
-  "aliases": [
-    "Dwyane Wade",
-    "dwyane_wade",
-    "wadedw01"
-  ],
-  "full_name": "Dwyane Tyrone Wade Jr.",
-  "display_name": "Dwyane Wade",
-  "date_of_birth": "1984-01-17",
-  "record_type": "user_established_alternate_history",
-  "source_profile": "Dwyane_Wade_Player_Profile.md",
-  "physical_profile_as_of": "2003-06-25",
-  "height_in_shoes": "6 ft 6 in",
-  "height_without_shoes": "6 ft 4.75 in",
-  "weight_lb": 220,
-  "wingspan": "6 ft 11.5 in",
-  "standing_reach": "8 ft 7.5 in",
-  "shooting_hand": "Right",
-  "nationalities": null,
-  "snapshots": [
-    {
-      "as_of": "2003-06-26",
-      "team": "Miami Heat",
-      "league": "NBA",
-      "positions": [
-        "SG",
-        "PG"
-      ],
-      "jersey": null,
-      "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
-      "prior_program": "UConn (simulation canon)",
-      "roster_status": "Draft rights; unsigned",
-      "contract": "No executed professional contract",
-      "role": "Unassigned rookie",
-      "nba_debut": null,
-      "national_team": null,
-      "national_team_eligibility": "Not verified",
-      "availability": "No current restriction recorded in the established profile",
-      "source_state": "2003-04/current_state.json"
-    },
-    {
-      "as_of": "2003-07-21",
-      "team": "Miami Heat",
-      "league": "NBA",
-      "positions": [
-        "SG",
-        "PG"
-      ],
-      "jersey": null,
-      "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
-      "prior_program": "UConn (simulation canon)",
-      "roster_status": "Under contract",
-      "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
-      "role": "Unassigned rookie",
-      "nba_debut": null,
-      "national_team": null,
-      "national_team_eligibility": "Not verified",
-      "availability": "No current restriction recorded in the established profile",
-      "source_state": "2003-04/current_state.json",
-      "source_event": "2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json"
-    },
-    {
-      "as_of": "2003-10-24",
-      "team": "Miami Heat",
-      "league": "NBA",
-      "positions": [
-        "SG",
-        "PG"
-      ],
-      "jersey": null,
-      "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
-      "prior_program": "UConn (simulation canon)",
-      "roster_status": "Under contract",
-      "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
-      "role": "Rotation; staff plan 20 minutes",
-      "nba_debut": null,
-      "national_team": null,
-      "national_team_eligibility": "Not verified",
-      "availability": "No current restriction recorded in the established profile",
-      "source_state": "2003-04/current_state.json",
-      "source_event": "2003-04/04_Training_Camp/Wade_Camp_Review.md"
-    },
-    {
-      "as_of": "2003-10-28",
-      "team": "Miami Heat",
-      "league": "NBA",
-      "positions": [
-        "SG",
-        "PG"
-      ],
-      "jersey": null,
-      "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
-      "prior_program": "UConn (simulation canon)",
-      "roster_status": "Under contract",
-      "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
-      "role": "Rotation; staff plan 20 minutes",
-      "nba_debut": "October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)",
-      "national_team": null,
-      "national_team_eligibility": "Not verified",
-      "availability": "No current restriction recorded in the established profile",
-      "source_state": "2003-04/current_state.json",
-      "source_event": "2003-04/06_Regular_Season/10_October/Week_4/Game_1.md"
-    },
-    {
-      "as_of": "2003-11-07",
-      "team": "Miami Heat",
-      "league": "NBA",
-      "positions": [
-        "SG",
-        "PG"
-      ],
-      "jersey": null,
-      "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
-      "prior_program": "UConn (simulation canon)",
-      "roster_status": "Under contract",
-      "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
-      "role": "Starter; staff plan 34 minutes",
-      "nba_debut": "October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)",
-      "national_team": null,
-      "national_team_eligibility": "Not verified",
-      "availability": "No current restriction recorded in the established profile",
-      "source_state": "2003-04/current_state.json",
-      "source_event": "2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
-    },
-    {
-      "as_of": "2003-12-01",
-      "team": "Miami Heat",
-      "league": "NBA",
-      "positions": [
-        "SG",
-        "PG"
-      ],
-      "jersey": null,
-      "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
-      "prior_program": "UConn (simulation canon)",
-      "roster_status": "Under contract",
-      "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
-      "role": "Starter; staff plan 34 minutes",
-      "nba_debut": "October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)",
-      "national_team": null,
-      "national_team_eligibility": "Not verified",
-      "availability": "No current restriction recorded in the established profile",
-      "source_state": "2003-04/current_state.json",
-      "source_event": "2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json"
-    }
-  ]
+ "schema_version": 1,
+ "player_id": "dwyane_wade",
+ "aliases": [
+  "Dwyane Wade",
+  "dwyane_wade",
+  "wadedw01"
+ ],
+ "full_name": "Dwyane Tyrone Wade Jr.",
+ "display_name": "Dwyane Wade",
+ "date_of_birth": "1984-01-17",
+ "record_type": "user_established_alternate_history",
+ "source_profile": "Dwyane_Wade_Player_Profile.md",
+ "physical_profile_as_of": "2003-06-25",
+ "height_in_shoes": "6 ft 6 in",
+ "height_without_shoes": "6 ft 4.75 in",
+ "weight_lb": 220,
+ "wingspan": "6 ft 11.5 in",
+ "standing_reach": "8 ft 7.5 in",
+ "shooting_hand": "Right",
+ "nationalities": "United States (born in the Chicago area; Robbins, Illinois home community, per the player profile)",
+ "snapshots": [
+  {
+   "as_of": "2003-06-26",
+   "team": "Miami Heat",
+   "league": "NBA",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "jersey": null,
+   "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+   "prior_program": "UConn (simulation canon)",
+   "roster_status": "Draft rights; unsigned",
+   "contract": "No executed professional contract",
+   "role": "Unassigned rookie",
+   "nba_debut": null,
+   "national_team": null,
+   "national_team_eligibility": "Not verified",
+   "availability": "No current restriction recorded in the established profile",
+   "source_state": "2003-04/current_state.json"
+  },
+  {
+   "as_of": "2003-07-21",
+   "team": "Miami Heat",
+   "league": "NBA",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "jersey": null,
+   "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+   "prior_program": "UConn (simulation canon)",
+   "roster_status": "Under contract",
+   "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
+   "role": "Unassigned rookie",
+   "nba_debut": null,
+   "national_team": null,
+   "national_team_eligibility": "Not verified",
+   "availability": "No current restriction recorded in the established profile",
+   "source_state": "2003-04/current_state.json",
+   "source_event": "2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json"
+  },
+  {
+   "as_of": "2003-10-24",
+   "team": "Miami Heat",
+   "league": "NBA",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "jersey": null,
+   "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+   "prior_program": "UConn (simulation canon)",
+   "roster_status": "Under contract",
+   "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
+   "role": "Rotation; staff plan 20 minutes",
+   "nba_debut": null,
+   "national_team": null,
+   "national_team_eligibility": "Not verified",
+   "availability": "No current restriction recorded in the established profile",
+   "source_state": "2003-04/current_state.json",
+   "source_event": "2003-04/04_Training_Camp/Wade_Camp_Review.md"
+  },
+  {
+   "as_of": "2003-10-28",
+   "team": "Miami Heat",
+   "league": "NBA",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "jersey": null,
+   "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+   "prior_program": "UConn (simulation canon)",
+   "roster_status": "Under contract",
+   "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
+   "role": "Rotation; staff plan 20 minutes",
+   "nba_debut": "October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)",
+   "national_team": null,
+   "national_team_eligibility": "Not verified",
+   "availability": "No current restriction recorded in the established profile",
+   "source_state": "2003-04/current_state.json",
+   "source_event": "2003-04/06_Regular_Season/10_October/Week_4/Game_1.md"
+  },
+  {
+   "as_of": "2003-11-07",
+   "team": "Miami Heat",
+   "league": "NBA",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "jersey": null,
+   "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+   "prior_program": "UConn (simulation canon)",
+   "roster_status": "Under contract",
+   "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
+   "role": "Starter; staff plan 34 minutes",
+   "nba_debut": "October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)",
+   "national_team": null,
+   "national_team_eligibility": "Not verified",
+   "availability": "No current restriction recorded in the established profile",
+   "source_state": "2003-04/current_state.json",
+   "source_event": "2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+  },
+  {
+   "as_of": "2003-12-01",
+   "team": "Miami Heat",
+   "league": "NBA",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "jersey": null,
+   "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+   "prior_program": "UConn (simulation canon)",
+   "roster_status": "Under contract",
+   "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
+   "role": "Starter; staff plan 34 minutes",
+   "nba_debut": "October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)",
+   "national_team": null,
+   "national_team_eligibility": "Not verified",
+   "availability": "No current restriction recorded in the established profile",
+   "source_state": "2003-04/current_state.json",
+   "source_event": "2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json"
+  },
+  {
+   "as_of": "2004-10-01",
+   "team": "Miami Heat",
+   "league": "NBA",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "jersey": "3",
+   "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+   "prior_program": "UConn (simulation canon)",
+   "roster_status": "Under contract",
+   "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option (2004-05: $2,361,800)",
+   "role": "Carried-over starter at SG; training camp sets the 2004-05 rotation",
+   "nba_debut": "October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)",
+   "national_team": null,
+   "national_team_eligibility": "United States (USA Basketball); no selection yet",
+   "availability": "No current restriction recorded in the established profile",
+   "source_state": "2004-05/current_state.json",
+   "source_event": "2003-04/00_Team/Team/Roster/Wade_Jersey/wade_choice.json"
+  }
+ ]
 }

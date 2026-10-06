@@ -10,6 +10,7 @@ Judgement constants:
 - A mid-level exception counts as used when the club, over the cap, made a summer signing reported above
   the minimum to a player whose Bird rights it did not hold (an inference; the 1999 CBA allows one MLE a season).
 """
+import json
 from pathlib import Path
 
 from .trades import (CAP_RULES_PATH, MIAMI, SEASON, TRANSACTIONS_PATH, UNDER_CONTRACT, dated_inventory,
@@ -18,6 +19,19 @@ from .trades import (CAP_RULES_PATH, MIAMI, SEASON, TRANSACTIONS_PATH, UNDER_CON
 ROOT = Path(__file__).resolve().parents[1]
 SYMMETRIC_FROM = "2003-12-03"        # the user's switch: a date turns the league symmetric from then; None keeps option D
 OWNER_OVER_TAX_STRETCH = 1.02
+
+
+def club_cap(club, season, cap, root=ROOT):
+    """A club's salary cap for the season: the league cap, or an expansion club's own cap where the season's offseason
+    calendar records one (Charlotte 2004-05: $29.25M, `charlotte_cap_and_floor_2004_05`)."""
+    from .seasons import start_year
+    year = start_year(season)
+    path = Path(root) / f"library/{year}/league/nba_{year}_offseason_calendar.json"
+    if not path.is_file():
+        return cap
+    key = f"{club.split()[0].lower()}_cap_and_floor_{season.replace('-', '_')}"
+    entry = json.loads(path.read_text(encoding="utf-8")).get(key)
+    return entry["value"]["cap"] if entry else cap
 
 
 def owner_ceiling(payroll, tax_line):
@@ -62,9 +76,10 @@ class LeagueBook:
                            for r in self.signings) and payroll > self.cap
         else:
             mle_used = any(r["to"] == name for r in self.signings)
-        return {"club": name, "on": self.on, "payroll": payroll, "cap_room": max(0, self.cap - payroll),
+        cap = club_cap(name, self.season, self.cap, self.root)
+        return {"club": name, "on": self.on, "payroll": payroll, "cap_room": max(0, cap - payroll), "cap": cap,
                 "over_tax": payroll > self.tax_line, "roster": len([p for p in players if p.get("bbr_id")]),
-                "under_contract": len(signed), "mid_level_open": payroll > self.cap and not mle_used,
+                "under_contract": len(signed), "mid_level_open": payroll > cap and not mle_used,
                 "owner_ceiling": owner_ceiling(payroll, self.tax_line)}
 
     def all(self):

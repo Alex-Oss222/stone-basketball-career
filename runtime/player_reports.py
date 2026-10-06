@@ -56,14 +56,16 @@ def identity_block(identity, as_of, profile_link=None, full=False, *, style=None
     if style is not None:
         full = full or style.detailed
         plain = identity_block(identity, as_of, profile_link, full)
-        honors = honors_in_scope(style.awards, known_on=as_of)
-        plain += "### Earned career honors\n\n"
+        # A page inside a season's folders shows that season's honors; career pages show every season's.
+        season = next((part for part in (page.parts if page is not None else ()) if re.fullmatch(r"\d{4}-\d{2}", part)), None)
+        honors = honors_in_scope(style.awards, known_on=as_of, season=season)
+        plain += f"### Earned {season} honors\n\n" if season else "### Earned career honors\n\n"
         if honors:
             plain += table(["Honor", "Period", "Announced", "Decision record"], [
                 [a["name"], a["period_start"] + " to " + a["period_end"], a["awarded_on"], style.award_text(page, [a])] for a in honors])
         else:
-            plain += "No earned professional honors recorded by this page's identity cutoff.\n\n"
-        visual = "## Professional identity\n\n" + style.header(page, as_of)
+            plain += (f"No {season} honors yet." if season else "No earned professional honors recorded by this page's identity cutoff.") + "\n\n"
+        visual = "## Professional identity\n\n" + style.header(page, as_of, season)
         plain, visual = style.award_terms(plain), style.award_terms(visual)
         if full:
             return visual + plain.split("## Professional identity\n\n", 1)[1]

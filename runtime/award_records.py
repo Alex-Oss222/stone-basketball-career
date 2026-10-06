@@ -52,9 +52,21 @@ def honors_in_scope(awards, *, known_on, competition=None, season=None, start=No
             and (end is None or a["period_end"] <= end)]
 
 
+PERIODIC_AWARDS = ("player_of_week", "player_of_month", "rookie_of_month")   # weekly and monthly conference honors
+
+
 def badge_labels(awards, as_of):
-    counts = Counter(a["name"] for a in awards if a["awarded_on"] <= as_of)
-    return [f"{n}× {name}" if n > 1 else name for name, n in counts.items()]
+    """Career badges: season and career honors only (the user's choice, October 2026: weekly and monthly conference
+    awards stay on their period pages, not on the badges), each with the year its season began under the name."""
+    years = {}
+    for a in awards:
+        if a["awarded_on"] <= as_of and not any(k in a["id"] for k in PERIODIC_AWARDS):
+            years.setdefault(a["name"], []).append(str(a.get("season") or a["awarded_on"])[:4])
+    out = []
+    for name, ys in years.items():
+        label = f"{len(ys)}× {name}" if len(ys) > 1 else name
+        out.append(label + "\n" + ", ".join(sorted(set(ys))))
+    return out
 
 
 # -- the era-gated catalogue (library/2003/league/nba_awards_catalog.json, docs/awards_catalog.md) ------------

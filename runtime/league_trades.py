@@ -102,7 +102,8 @@ class LeagueTradeDesk:
         return base * fit * (STATUS_QUO if own else 1.0) - extra
 
     def legal(self, club, out_salary, in_salary):
-        if self.payroll[club] - out_salary + in_salary <= self.book.cap:
+        from .league_book import club_cap
+        if self.payroll[club] - out_salary + in_salary <= club_cap(club, self.book.season, self.book.cap, self.book.root):
             return True
         return in_salary <= out_salary * MATCH_PERCENT + MATCH_PLUS
 
