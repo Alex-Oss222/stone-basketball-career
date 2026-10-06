@@ -1197,6 +1197,44 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.79 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-12-clear-carlige01",
+   "date": "2004-11-12",
+   "kind": "clear",
+   "player": "Geno Carlisle",
+   "bbr_id": "carlige01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Geno Carlisle",
+    "bbr_id": "carlige01",
+    "position": "SG",
+    "games": 6,
+    "minutes": 16
+   },
+   "contract": null,
+   "note": "cleared waivers from Portland Trail Blazers: a free agent",
+   "waiver": "2004-05-market-2004-11-10-waive-carlige01"
+  },
+  {
+   "id": "2004-05-market-2004-11-12-clear-reineja01",
+   "date": "2004-11-12",
+   "kind": "clear",
+   "player": "Jared Reiner",
+   "bbr_id": "reineja01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Jared Reiner",
+    "bbr_id": "reineja01",
+    "position": "C",
+    "games": 19,
+    "minutes": 132
+   },
+   "contract": null,
+   "note": "cleared waivers from Sacramento Kings: a free agent",
+   "waiver": "2004-05-market-2004-11-10-waive-reineja01"
   }
  ],
  "market_days": [
@@ -1209,6 +1247,7 @@
   "2004-11-08",
   "2004-11-09",
   "2004-11-10",
-  "2004-11-11"
+  "2004-11-11",
+  "2004-11-12"
  ]
 }
