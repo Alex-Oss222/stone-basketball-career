@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `jefferi01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-10-30 · **Club on this date:** New Jersey Nets · **Basis:** New Jersey Nets: the 2004-05 opening rosters and the league's dated moves (runtime/league_moves.py) · **League:** NBA  
+**Card date:** 2004-10-31 · **Club on this date:** New Jersey Nets · **Basis:** New Jersey Nets: the 2004-05 opening rosters and the league's dated moves (runtime/league_moves.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #24 · **Born:** 1980-06-21 · **Age on card date:** 24  
 **Registry ID:** `jefferi01` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jefferi01.html) · ESPN ID 1006
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jeffer
 
 ## Simulated statistics
 
-As of **2004-10-30**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-10-31**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2004-10-30, from closed award decisions (3 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2004-10-31, from closed award decisions (3 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

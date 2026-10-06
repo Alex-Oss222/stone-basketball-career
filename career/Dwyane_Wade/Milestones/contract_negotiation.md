@@ -2,7 +2,7 @@
 
 # Contract negotiation | Dwyane Wade
 
-Career date: 2004-10-30 · Miami Heat · inactive
+Career date: 2004-10-31 · Miami Heat · inactive
 
 [Live milestone desk](index.html#contract_negotiation) · [All milestones](README.md)
 

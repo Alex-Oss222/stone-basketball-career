@@ -2,9 +2,9 @@
 
 # Contract | Brian Scalabrine
 
-Known through: 2004-10-30. [Open interactive contract](scalabr01.html#contract) · [Contract history](scalabr01.html#contract-history)
+Known through: 2004-10-31. [Open interactive contract](scalabr01.html#contract) · [Contract history](scalabr01.html#contract-history)
 
-Brian Scalabrine: under contract. Evidence cutoff: 2004-10-30.
+Brian Scalabrine: under contract. Evidence cutoff: 2004-10-31.
 
 ## Current contract
 

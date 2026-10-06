@@ -2,9 +2,9 @@
 
 # Contract | Chris Andersen
 
-Known through: 2004-10-30. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
+Known through: 2004-10-31. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
 
-Chris Andersen: under contract. Evidence cutoff: 2004-10-30.
+Chris Andersen: under contract. Evidence cutoff: 2004-10-31.
 
 ## Current contract
 

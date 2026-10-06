@@ -2,9 +2,9 @@
 
 # Contract | Wang Zhizhi
 
-Known through: 2004-10-30. [Open interactive contract](zhizhwa01.html#contract) · [Contract history](zhizhwa01.html#contract-history)
+Known through: 2004-10-31. [Open interactive contract](zhizhwa01.html#contract) · [Contract history](zhizhwa01.html#contract-history)
 
-Wang Zhizhi: under contract. Evidence cutoff: 2004-10-30.
+Wang Zhizhi: under contract. Evidence cutoff: 2004-10-31.
 
 ## Current contract
 

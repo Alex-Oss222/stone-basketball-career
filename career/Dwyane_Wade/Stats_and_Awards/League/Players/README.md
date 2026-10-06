@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-30**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-31**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -443,7 +443,7 @@ Card date: **2004-10-30**. 504 registry players, one Markdown card and one inter
 | [Andreas Glyniadakis](glynian01.md) | Free agent | 23 | sourced | [open](glynian01.html) |
 | [Andrew DeClercq](declean01.md) | Orlando Magic | 31 | silhouette | [open](declean01.html) |
 | [Anthony Mason](masonan01.md) | Free agent | 37 | silhouette | [open](masonan01.html) |
-| [Antonio Davis](davisan01.md) | Chicago Bulls | 35 | sourced | [open](davisan01.html) |
+| [Antonio Davis](davisan01.md) | Chicago Bulls | 36 | sourced | [open](davisan01.html) |
 | [Arvydas Sabonis](sabonar01.md) | Free agent | 39 | sourced | [open](sabonar01.html) |
 | [Ben Handlogten](handlbe01.md) | Portland Trail Blazers | None | silhouette | [open](handlbe01.html) |
 | [Ben Wallace](wallabe01.md) | Detroit Pistons | 30 | sourced | [open](wallabe01.html) |
@@ -539,7 +539,7 @@ Card date: **2004-10-30**. 504 registry players, one Markdown card and one inter
 | [Shawn Kemp](kempsh01.md) | Free agent | 34 | sourced | [open](kempsh01.html) |
 | [Slavko Vranes](vranesl01.md) | Free agent | 21 | sourced | [open](vranesl01.html) |
 | [Sofoklis Schortsanitis](schorso01.md) | Free agent | 19 | sourced | [open](schorso01.html) |
-| [Steven Hunter](huntest01.md) | New Orleans Hornets | 22 | sourced | [open](huntest01.html) |
+| [Steven Hunter](huntest01.md) | New Orleans Hornets | 23 | sourced | [open](huntest01.html) |
 | [Theo Ratliff](ratlith01.md) | Atlanta Hawks | 31 | sourced | [open](ratlith01.html) |
 | [Tony Battie](battito01.md) | Boston Celtics | 28 | sourced | [open](battito01.html) |
 | [Tony Massenburg](masseto01.md) | Free agent | 37 | sourced | [open](masseto01.html) |
