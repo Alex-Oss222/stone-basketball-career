@@ -2,9 +2,9 @@
 
 # Contract | Sean Rooks
 
-Known through: 2004-10-18. [Open interactive contract](rooksse01.html#contract) · [Contract history](rooksse01.html#contract-history)
+Known through: 2004-10-19. [Open interactive contract](rooksse01.html#contract) · [Contract history](rooksse01.html#contract-history)
 
-Sean Rooks: under contract. Evidence cutoff: 2004-10-18.
+Sean Rooks: under contract. Evidence cutoff: 2004-10-19.
 
 ## Current contract
 
