@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-12-05",
+  "as_of": "2004-12-06",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1310,7 +1310,7 @@
     {
       "player_id": "fishede01",
       "name": "Derek Fisher",
-      "team": "Utah Jazz",
+      "team": "Detroit Pistons",
       "status": "released",
       "current_contract_id": null,
       "recorded_agreements": 2,
@@ -2822,7 +2822,7 @@
     {
       "player_id": "krishumphries",
       "name": "Kris Humphries",
-      "team": "Detroit Pistons",
+      "team": "Utah Jazz",
       "status": "under contract",
       "current_contract_id": "krishumphries-2004-07-01",
       "recorded_agreements": 1,
@@ -2831,7 +2831,7 @@
     {
       "player_id": "thomaku01",
       "name": "Kurt Thomas",
-      "team": "New York Knicks",
+      "team": "San Antonio Spurs",
       "status": "under contract",
       "current_contract_id": "thomaku01-existing-233b1ae92182",
       "recorded_agreements": 1,
@@ -3110,7 +3110,7 @@
     {
       "player_id": "rosema01",
       "name": "Malik Rose",
-      "team": "San Antonio Spurs",
+      "team": "New York Knicks",
       "status": "under contract",
       "current_contract_id": "rosema01-existing-f6cc43891fc7",
       "recorded_agreements": 1,
@@ -4154,7 +4154,7 @@
     {
       "player_id": "rogerro01",
       "name": "Rodney Rogers",
-      "team": "Utah Jazz",
+      "team": "Detroit Pistons",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4379,7 +4379,7 @@
     {
       "player_id": "sebastiantelfair",
       "name": "Sebastian Telfair",
-      "team": "Detroit Pistons",
+      "team": "Utah Jazz",
       "status": "under contract",
       "current_contract_id": "sebastiantelfair-2004-07-01",
       "recorded_agreements": 1,
@@ -4757,7 +4757,7 @@
     {
       "player_id": "tonyallen",
       "name": "Tony Allen",
-      "team": "San Antonio Spurs",
+      "team": "New York Knicks",
       "status": "under contract",
       "current_contract_id": "tonyallen-2004-07-15",
       "recorded_agreements": 1,

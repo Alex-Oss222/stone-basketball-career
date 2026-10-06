@@ -627,6 +627,110 @@
     }
    ],
    "winner": "Josh Smith"
+  },
+  {
+   "id": "2004-05-player_of_week-2004-11-29-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-11-29",
+   "period_end": "2004-12-05",
+   "announced_on": "2004-12-06",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/12_December/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 26.2,
+     "reb": 7.5,
+     "ast": 4.0,
+     "game_score": 22.28,
+     "score": 98.1,
+     "rank": 1
+    },
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 25.8,
+     "reb": 6.0,
+     "ast": 3.2,
+     "game_score": 19.83,
+     "score": 88.3,
+     "rank": 2
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 25.0,
+     "reb": 9.0,
+     "ast": 5.2,
+     "game_score": 19.9,
+     "score": 85.6,
+     "rank": 3
+    }
+   ],
+   "winner": "Paul Pierce"
+  },
+  {
+   "id": "2004-05-player_of_week-2004-11-29-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-11-29",
+   "period_end": "2004-12-05",
+   "announced_on": "2004-12-06",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/12_December/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 21.5,
+     "reb": 11.2,
+     "ast": 1.5,
+     "game_score": 21.05,
+     "score": 96.2,
+     "rank": 1
+    },
+    {
+     "player": "Stephon Marbury",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 20.8,
+     "reb": 3.0,
+     "ast": 9.5,
+     "game_score": 19.78,
+     "score": 91.1,
+     "rank": 2
+    },
+    {
+     "player": "Amar'e Stoudemire",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 23.2,
+     "reb": 5.8,
+     "ast": 1.8,
+     "game_score": 18.22,
+     "score": 84.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Shawn Marion"
   }
  ]
 }

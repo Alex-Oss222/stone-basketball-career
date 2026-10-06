@@ -2,9 +2,9 @@
 
 # Contract | Mario Kasun
 
-Known through: 2004-12-05. [Open interactive contract](kasunma01.html#contract) · [Contract history](kasunma01.html#contract-history)
+Known through: 2004-12-06. [Open interactive contract](kasunma01.html#contract) · [Contract history](kasunma01.html#contract-history)
 
-Mario Kasun: No verified contract record. Evidence cutoff: 2004-12-05.
+Mario Kasun: No verified contract record. Evidence cutoff: 2004-12-06.
 
 ## Current contract
 

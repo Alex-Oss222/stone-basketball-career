@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-12-05. [Search the contract directory](index.html)
+Known through 2004-12-06. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -150,7 +150,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [David Wesley](players/wesleda01.md) | Portland Trail Blazers | under contract | David Wesley · existing contract; signing date not recorded | 1 |
 | [David West](players/westda01.md) | New Orleans Hornets | No verified contract record | No verified current agreement | 0 |
 | [Derek Anderson](players/anderde01.md) | Portland Trail Blazers | under contract | Derek Anderson · existing contract; signing date not recorded | 1 |
-| [Derek Fisher](players/fishede01.md) | Utah Jazz | released | No verified current agreement | 2 |
+| [Derek Fisher](players/fishede01.md) | Detroit Pistons | released | No verified current agreement | 2 |
 | [DerMarr Johnson](players/johnsde03.md) | Free agent | under contract | DerMarr Johnson · 2003-10-01 | 2 |
 | [Derrick Coleman](players/colemde01.md) | Philadelphia 76ers | under contract | Derrick Coleman · 2003-07-16 | 2 |
 | [Derrick Dial](players/dialde01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
@@ -321,8 +321,8 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Kirk Hinrich](players/hinriki01.md) | Chicago Bulls | No verified contract record | No verified current agreement | 0 |
 | [Kirk Snyder](players/kirksnyder.md) | Chicago Bulls | under contract | Kirk Snyder · 2004-07-01 | 1 |
 | [Kobe Bryant](players/bryanko01.md) | Los Angeles Lakers | under contract | Kobe Bryant · 1999-01-29 | 1 |
-| [Kris Humphries](players/krishumphries.md) | Detroit Pistons | under contract | Kris Humphries · 2004-07-01 | 1 |
-| [Kurt Thomas](players/thomaku01.md) | New York Knicks | under contract | Kurt Thomas · existing contract; signing date not recorded | 1 |
+| [Kris Humphries](players/krishumphries.md) | Utah Jazz | under contract | Kris Humphries · 2004-07-01 | 1 |
+| [Kurt Thomas](players/thomaku01.md) | San Antonio Spurs | under contract | Kurt Thomas · existing contract; signing date not recorded | 1 |
 | [Kwame Brown](players/brownkw01.md) | Washington Wizards | under rookie contract | Kwame Brown · 2001-07-13 | 1 |
 | [Kyle Korver](players/korveky01.md) | Sacramento Kings | No verified contract record | No verified current agreement | 0 |
 | [Lamar Odom](players/odomla01.md) | Los Angeles Clippers | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
@@ -353,7 +353,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Maciej Lampe](players/lampema01.md) | Atlanta Hawks | No verified contract record | No verified current agreement | 0 |
 | [Malick Badiane](players/badiama01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Malik Allen](players/allenma01.md) | Free agent | unsigned free agent; Miami holds his rights | Malik Allen · 2004-07-22 | 2 |
-| [Malik Rose](players/rosema01.md) | San Antonio Spurs | under contract | Malik Rose · existing contract; signing date not recorded | 1 |
+| [Malik Rose](players/rosema01.md) | New York Knicks | under contract | Malik Rose · existing contract; signing date not recorded | 1 |
 | [Mamadou N'diaye](players/ndiayma02.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
 | [Manu Ginobili](players/ginobma01.md) | San Antonio Spurs | under contract | Manu Ginobili · 2004-07-29 | 2 |
 | [Marc Jackson](players/jacksma02.md) | Philadelphia 76ers | under contract | Marc Jackson · existing contract; signing date not recorded | 1 |
@@ -469,7 +469,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Robert Traylor](players/traylro01.md) | Los Angeles Clippers | under contract | Robert Traylor · 2004-09-16 | 1 |
 | [Rod Strickland](players/stricro02.md) | Chicago Bulls | under contract | Rod Strickland · 2003-11-25 | 2 |
 | [Rodney Buford](players/buforro01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
-| [Rodney Rogers](players/rogerro01.md) | Utah Jazz | under contract unverified | No verified current agreement | 0 |
+| [Rodney Rogers](players/rogerro01.md) | Detroit Pistons | under contract unverified | No verified current agreement | 0 |
 | [Rodney White](players/whitero02.md) | Denver Nuggets | under contract | Rodney White · 2004-09-16 | 2 |
 | [Roger Mason Jr.](players/masonro01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Ron Artest](players/artesro01.md) | Indiana Pacers | under contract unverified | No verified current agreement | 0 |
@@ -494,7 +494,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Sean Lampley](players/lamplse01.md) | Free agent | team option exercised | Sean Lampley · 2002-09-29 | 1 |
 | [Sean Marks](players/seanmarks.md) | San Antonio Spurs | under contract | Sean Marks · 2004-07-14 | 2 |
 | [Sean Rooks](players/rooksse01.md) | Free agent | under contract | No verified current agreement | 2 |
-| [Sebastian Telfair](players/sebastiantelfair.md) | Detroit Pistons | under contract | Sebastian Telfair · 2004-07-01 | 1 |
+| [Sebastian Telfair](players/sebastiantelfair.md) | Utah Jazz | under contract | Sebastian Telfair · 2004-07-01 | 1 |
 | [Shammond Williams](players/willish01.md) | Free agent | under contract | Shammond Williams · 2003-09-29 | 2 |
 | [Shandon Anderson](players/andersh01.md) | New Jersey Nets | under contract | Shandon Anderson · existing contract; signing date not recorded | 1 |
 | [Shane Battier](players/battish01.md) | Memphis Grizzlies | under rookie contract | Shane Battier · 2001-07-03 | 1 |
@@ -536,7 +536,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Tom Gugliotta](players/guglito01.md) | Free agent | under contract | Tom Gugliotta · existing contract; signing date not recorded | 1 |
 | [Tommy Smith](players/smithto03.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Toni Kukoc](players/kukocto01.md) | New Jersey Nets | under contract | Toni Kukoc · 2004-09-23 | 1 |
-| [Tony Allen](players/tonyallen.md) | San Antonio Spurs | under contract | Tony Allen · 2004-07-15 | 1 |
+| [Tony Allen](players/tonyallen.md) | New York Knicks | under contract | Tony Allen · 2004-07-15 | 1 |
 | [Tony Battie](players/battito01.md) | Boston Celtics | under contract | Tony Battie · 1999-10-15 | 1 |
 | [Tony Bobbitt](players/tonybobbitt.md) | Free agent | under contract | Tony Bobbitt · 2004-07-22 | 1 |
 | [Tony Delk](players/delkto01.md) | Minnesota Timberwolves | under contract | Tony Delk · 2000-08-01 | 1 |

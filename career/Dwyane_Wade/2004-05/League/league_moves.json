@@ -1678,6 +1678,69 @@
    "bbr_id": "pietrmi01",
    "from": "Golden State Warriors",
    "to": "Charlotte Bobcats"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-06-allento01-rosema01-thomaku01",
+   "date": "2004-12-06",
+   "kind": "trade",
+   "player": "Kurt Thomas",
+   "bbr_id": "thomaku01",
+   "from": "New York Knicks",
+   "to": "San Antonio Spurs"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-06-allento01-rosema01-thomaku01",
+   "date": "2004-12-06",
+   "kind": "trade",
+   "player": "Malik Rose",
+   "bbr_id": "rosema01",
+   "from": "San Antonio Spurs",
+   "to": "New York Knicks"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-06-allento01-rosema01-thomaku01",
+   "date": "2004-12-06",
+   "kind": "trade",
+   "player": "Tony Allen",
+   "bbr_id": "allento01",
+   "from": "San Antonio Spurs",
+   "to": "New York Knicks"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-06-fishede01-humphkr01-rogerro01-telfase01",
+   "date": "2004-12-06",
+   "kind": "trade",
+   "player": "Sebastian Telfair",
+   "bbr_id": "telfase01",
+   "from": "Detroit Pistons",
+   "to": "Utah Jazz"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-06-fishede01-humphkr01-rogerro01-telfase01",
+   "date": "2004-12-06",
+   "kind": "trade",
+   "player": "Kris Humphries",
+   "bbr_id": "humphkr01",
+   "from": "Detroit Pistons",
+   "to": "Utah Jazz"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-06-fishede01-humphkr01-rogerro01-telfase01",
+   "date": "2004-12-06",
+   "kind": "trade",
+   "player": "Derek Fisher",
+   "bbr_id": "fishede01",
+   "from": "Utah Jazz",
+   "to": "Detroit Pistons"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-06-fishede01-humphkr01-rogerro01-telfase01",
+   "date": "2004-12-06",
+   "kind": "trade",
+   "player": "Rodney Rogers",
+   "bbr_id": "rogerro01",
+   "from": "Utah Jazz",
+   "to": "Detroit Pistons"
   }
  ],
  "market_days": [
@@ -1714,6 +1777,7 @@
   "2004-12-02",
   "2004-12-03",
   "2004-12-04",
-  "2004-12-05"
+  "2004-12-05",
+  "2004-12-06"
  ]
 }

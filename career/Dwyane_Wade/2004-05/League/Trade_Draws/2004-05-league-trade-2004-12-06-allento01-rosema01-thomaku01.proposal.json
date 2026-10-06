@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2004-12-06-allento01-rosema01-thomaku01",
+ "date": "2004-12-06",
+ "clubs": [
+  "New York Knicks",
+  "San Antonio Spurs"
+ ],
+ "a": {
+  "club": "New York Knicks",
+  "sends": [
+   "Kurt Thomas"
+  ],
+  "bbr_ids": [
+   "thomaku01"
+  ],
+  "salary": 5884500
+ },
+ "b": {
+  "club": "San Antonio Spurs",
+  "sends": [
+   "Malik Rose",
+   "Tony Allen"
+  ],
+  "bbr_ids": [
+   "rosema01",
+   "allento01"
+  ],
+  "salary": 5847777
+ },
+ "gain": {
+  "New York Knicks": 0.223,
+  "San Antonio Spurs": 0.183
+ },
+ "accept": {
+  "New York Knicks": 0.95,
+  "San Antonio Spurs": 0.95
+ },
+ "both": 0.9025
+}

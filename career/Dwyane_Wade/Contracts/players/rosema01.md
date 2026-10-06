@@ -2,9 +2,9 @@
 
 # Contract | Malik Rose
 
-Known through: 2004-12-05. [Open interactive contract](rosema01.html#contract) · [Contract history](rosema01.html#contract-history)
+Known through: 2004-12-06. [Open interactive contract](rosema01.html#contract) · [Contract history](rosema01.html#contract-history)
 
-Malik Rose: under contract. Evidence cutoff: 2004-12-05.
+Malik Rose: under contract. Evidence cutoff: 2004-12-06.
 
 ## Current contract
 
@@ -122,7 +122,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Malik Rose |
-| Club / rights baseline | San Antonio Spurs |
+| Club / rights baseline | New York Knicks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

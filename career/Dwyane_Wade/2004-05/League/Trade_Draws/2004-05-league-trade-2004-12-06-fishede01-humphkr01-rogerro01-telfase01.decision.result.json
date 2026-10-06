@@ -1,0 +1,12 @@
+{
+ "date": "2004-12-06",
+ "decider": "Detroit Pistons and Utah Jazz front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2004-12-06-fishede01-humphkr01-rogerro01-telfase01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Detroit Pistons and Utah Jazz trade Sebastian Telfair and Kris Humphries for Derek Fisher and Rodney Rogers?"
+}

@@ -2,9 +2,9 @@
 
 # Contract | Sebastian Telfair
 
-Known through: 2004-12-05. [Open interactive contract](sebastiantelfair.html#contract) · [Contract history](sebastiantelfair.html#contract-history)
+Known through: 2004-12-06. [Open interactive contract](sebastiantelfair.html#contract) · [Contract history](sebastiantelfair.html#contract-history)
 
-Sebastian Telfair: under contract. Evidence cutoff: 2004-12-05.
+Sebastian Telfair: under contract. Evidence cutoff: 2004-12-06.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Sebastian Telfair |
-| Club / rights baseline | Detroit Pistons |
+| Club / rights baseline | Utah Jazz |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
