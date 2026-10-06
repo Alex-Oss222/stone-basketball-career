@@ -2,9 +2,9 @@
 
 # Contract | Walt Williams
 
-Known through: 2004-10-23. [Open interactive contract](williwa02.html#contract) · [Contract history](williwa02.html#contract-history)
+Known through: 2004-10-24. [Open interactive contract](williwa02.html#contract) · [Contract history](williwa02.html#contract-history)
 
-Walt Williams: unsigned free agent. Evidence cutoff: 2004-10-23.
+Walt Williams: unsigned free agent. Evidence cutoff: 2004-10-24.
 
 ## Current contract
 

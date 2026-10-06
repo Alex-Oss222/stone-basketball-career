@@ -2,9 +2,9 @@
 
 # Contract | Derek Fisher
 
-Known through: 2004-10-23. [Open interactive contract](fishede01.html#contract) · [Contract history](fishede01.html#contract-history)
+Known through: 2004-10-24. [Open interactive contract](fishede01.html#contract) · [Contract history](fishede01.html#contract-history)
 
-Derek Fisher: camp contract. Evidence cutoff: 2004-10-23.
+Derek Fisher: camp contract. Evidence cutoff: 2004-10-24.
 
 ## Current contract
 

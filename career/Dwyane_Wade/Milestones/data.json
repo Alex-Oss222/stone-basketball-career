@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-10-23",
+  "as_of": "2004-10-24",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-10-23"
+              "2004-10-24"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2004-10-23",
+              "2004-10-24",
               "Current checkpoint",
               "2004-10-22-miami-heat-at-atlanta-hawks",
               "Recorded",
@@ -378,7 +378,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-23"
+          "value": "2004-10-24"
         },
         {
           "label": "Team",
@@ -612,7 +612,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-23"
+          "value": "2004-10-24"
         },
         {
           "label": "Team",
@@ -819,7 +819,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-23"
+          "value": "2004-10-24"
         },
         {
           "label": "Team",
@@ -1029,7 +1029,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-23"
+          "value": "2004-10-24"
         },
         {
           "label": "Team",
@@ -1238,7 +1238,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-23"
+          "value": "2004-10-24"
         },
         {
           "label": "Team",
@@ -1438,7 +1438,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-23"
+          "value": "2004-10-24"
         },
         {
           "label": "Team",
@@ -1647,7 +1647,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-23"
+          "value": "2004-10-24"
         },
         {
           "label": "Team",
@@ -1947,7 +1947,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-23"
+          "value": "2004-10-24"
         },
         {
           "label": "Team",
@@ -1964,7 +1964,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "5 closed game records in 2004-05 through 2004-10-23. Competitions remain separate.",
+      "summary": "5 closed game records in 2004-05 through 2004-10-24. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2222,7 +2222,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-23"
+          "value": "2004-10-24"
         },
         {
           "label": "Team",
