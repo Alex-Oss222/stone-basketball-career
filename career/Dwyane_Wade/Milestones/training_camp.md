@@ -18,7 +18,7 @@ Activation: The club opens camp and records participation, evaluation or an actu
 | Participation | under_contract |
 | Current role | Carried-over starter at SG; training camp sets the 2004-05 rotation |
 | Staff rotation minutes | N/A |
-| Closed preseason games | 0 |
+| Closed preseason games | 1 |
 | Camp availability | No camp injury restriction recorded |
 
 ## Current depth chart
@@ -38,7 +38,7 @@ Snapshot: 2004-10-01. Draft rights and unassigned arrivals are not assigned minu
 | Item | Evidence needed | Current position |
 | --- | --- | --- |
 | Expected role | Attributed coach statement | Carried-over starter at SG; training camp sets the 2004-05 rotation |
-| Actual use | Closed preseason boxes | 0 closed games |
+| Actual use | Closed preseason boxes | 1 closed games |
 | Promised minutes | Written promise and date | Not recorded |
 | Promise review | Dated review against rotation | Not recorded |
 | Defensive evaluation | Dated staff assessment | Steals and blocks alone do not establish overall defense |
@@ -97,4 +97,5 @@ Snapshot: 2004-10-01. Draft rights and unassigned arrivals are not assigned minu
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
+- [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

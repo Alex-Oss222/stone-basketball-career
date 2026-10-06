@@ -16,5 +16,5 @@ These are current career views, with activation gates and actual evidence. An in
 | [Trade update](trade_update.md) | inactive | An actual dated proposal, consultation or executed transaction. |
 | [Season exit meeting](exit_meeting.md) | inactive | The player's season closes and a dated exit meeting is recorded. |
 | [Training camp](training_camp.md) | planned | The club opens camp and records participation, evaluation or an actual role decision. |
-| [Stats review](stats_review.md) | inactive | A declared, closed game result supplies observed participation and the player box. |
+| [Stats review](stats_review.md) | active | A declared, closed game result supplies observed participation and the player box. |
 | [Career milestones](career_milestones.md) | 4 reached; latest 100 career steals on 2004-03-10 at 20 years, 53 days | Each closed game that crosses a career total (1,000 points, 500 rebounds, ...) |

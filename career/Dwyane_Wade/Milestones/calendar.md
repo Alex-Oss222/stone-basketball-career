@@ -18,14 +18,14 @@ Activation: The authoritative current date and recorded event determine what is 
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2004-10-08-preseason-requests |
+| Last closed event | 2004-10-10-miami-heat-at-houston-rockets |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2004-10-10 | Current checkpoint | 2004-10-08-preseason-requests | Recorded | [Owning event](../2004-05/05_Preseason/note.md) |
+| 2004-10-10 | Current checkpoint | 2004-10-10-miami-heat-at-houston-rockets | Recorded | [Owning event](../2004-05/05_Preseason/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2004-10-05 | Camp reporting | Club records the date | active | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
@@ -93,4 +93,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
+- [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

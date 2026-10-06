@@ -68,4 +68,5 @@ The actual season close and an agreed exit-meeting date.
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
+- [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)
