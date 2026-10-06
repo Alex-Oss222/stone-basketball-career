@@ -124,18 +124,10 @@ def _season_of(day):
 
 
 def holders_on(day, root=ROOT):
-    """{bbr_id: club} for every club's players on the date in the simulated league (`league_moves.effective_roster`):
-    a contract travels with a traded player, so the club deciding his option is the one holding him on the deadline."""
-    from .league_moves import effective_roster
-    from .seasons import clubs as season_clubs
-    season = _season_of(day)
-    out = {}
-    for club in season_clubs(season, root):
-        if club != "Miami Heat":
-            for p in effective_roster(club, day, season, root):
-                if p.get("bbr_id"):
-                    out[p["bbr_id"]] = club
-    return out
+    """{bbr_id: club} for every club's players on the date (`club_truth.rosters_on`): a contract travels with a traded
+    player, so the club deciding his option is the one holding him on the deadline."""
+    from .club_truth import rosters_on
+    return dict(rosters_on(day, root))
 
 
 _HOLDERS = {}

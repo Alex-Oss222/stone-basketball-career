@@ -170,7 +170,9 @@ Miami proposes trades on its scan days, and from 2004-05 every other club also o
 
 ## Derived records
 
-Source records are decisions and results; totals, pages and cards are derived from them. `python scripts/reconcile.py` rebuilds every derived record from its sources and then validates (`--check` reports only). The driver runs it before every validation, so a stale copy never stops the career; a writer that changes a later contract season refreshes Miami's schedule totals itself (`signing.refresh_schedule_totals`). A failure left after reconcile is a real conflict between source records and needs a decision.
+One club answer: from 2004-05 every reader of a player's club on a date (league and Miami cards, options, the contract ledger, the identity check) asks `runtime/club_truth.holder`, which reads the engine's own inputs (Miami's holdings, the effective rosters with every dated move and Miami's departures, a contract for a player out for the season). A new transaction type writes only its own source record; never compute a club a second way.
+
+Source records are decisions and results; totals, pages and cards are derived from them. `python scripts/reconcile.py` rebuilds every derived record from its sources and then validates (`--check` reports only). Miami's finance summary is one of them (rebuilt on the career date whenever it no longer reconciles to the contract sheet). The driver runs it before every validation, so a stale copy never stops the career; a writer that changes a later contract season refreshes Miami's schedule totals itself (`signing.refresh_schedule_totals`). A failure left after reconcile is a real conflict between source records and needs a decision.
 
 ## Build roadmap
 
