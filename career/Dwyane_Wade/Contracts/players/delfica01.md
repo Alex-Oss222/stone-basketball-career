@@ -2,9 +2,9 @@
 
 # Contract | Carlos Delfino
 
-Known through: 2004-10-17. [Open interactive contract](delfica01.html#contract) · [Contract history](delfica01.html#contract-history)
+Known through: 2004-10-18. [Open interactive contract](delfica01.html#contract) · [Contract history](delfica01.html#contract-history)
 
-Carlos Delfino: under contract. Evidence cutoff: 2004-10-17.
+Carlos Delfino: under contract. Evidence cutoff: 2004-10-18.
 
 ## Current contract
 

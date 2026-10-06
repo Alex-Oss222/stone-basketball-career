@@ -14,10 +14,10 @@
     "photo_url": null,
     "initials": "DW",
     "status": "Under contract",
-    "cutoff": "2004-10-17"
+    "cutoff": "2004-10-18"
   },
-  "clock": "2004-10-17",
-  "notice": "Career records through 2004-10-17. Closed games, recorded contracts and earned awards. Missing evidence remains explicit.",
+  "clock": "2004-10-18",
+  "notice": "Career records through 2004-10-18. Closed games, recorded contracts and earned awards. Missing evidence remains explicit.",
   "links": {
     "stats": "README.md",
     "shooting": "Shooting.md",
@@ -274405,14 +274405,14 @@
     },
     {
       "id": "regular-2004-05-season",
-      "label": "2004-05 · NBA regular season · through 2004-10-17",
+      "label": "2004-05 · NBA regular season · through 2004-10-18",
       "kind": "season",
       "season": "2004-05",
       "competition": "regular",
       "competition_label": "NBA regular season",
       "start": "2004-06-01",
-      "end": "2004-10-17",
-      "cutoff": "2004-10-17",
+      "end": "2004-10-18",
+      "cutoff": "2004-10-18",
       "games": 0,
       "appearances": 0,
       "dnp": 0,
@@ -274652,7 +274652,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-10-17"
+        "cutoff": "2004-10-18"
       },
       "geometry_supported": true,
       "source_note": "No closed games in this competition at the current career checkpoint. No appearance or shot sample is implied.",
@@ -274670,14 +274670,14 @@
     },
     {
       "id": "preseason-2004-05-season",
-      "label": "2004-05 · NBA preseason · through 2004-10-17",
+      "label": "2004-05 · NBA preseason · through 2004-10-18",
       "kind": "season",
       "season": "2004-05",
       "competition": "preseason",
       "competition_label": "NBA preseason",
       "start": "2004-06-01",
-      "end": "2004-10-17",
-      "cutoff": "2004-10-17",
+      "end": "2004-10-18",
+      "cutoff": "2004-10-18",
       "games": 3,
       "appearances": 3,
       "dnp": 0,
@@ -275932,7 +275932,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-10-17"
+        "cutoff": "2004-10-18"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -277204,8 +277204,8 @@
       "competition": "preseason",
       "competition_label": "NBA preseason",
       "start": "2004-10-01",
-      "end": "2004-10-17",
-      "cutoff": "2004-10-17",
+      "end": "2004-10-18",
+      "cutoff": "2004-10-18",
       "games": 3,
       "appearances": 3,
       "dnp": 0,
@@ -278460,7 +278460,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-10-17"
+        "cutoff": "2004-10-18"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -280920,14 +280920,14 @@
     },
     {
       "id": "preseason-2004-05-week-2004-10-15",
-      "label": "2004-10-15 to 2004-10-17 · NBA preseason",
+      "label": "2004-10-15 to 2004-10-18 · NBA preseason",
       "kind": "week",
       "season": "2004-05",
       "competition": "preseason",
       "competition_label": "NBA preseason",
       "start": "2004-10-15",
-      "end": "2004-10-17",
-      "cutoff": "2004-10-17",
+      "end": "2004-10-18",
+      "cutoff": "2004-10-18",
       "games": 2,
       "appearances": 2,
       "dnp": 0,
@@ -281858,7 +281858,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-10-17"
+        "cutoff": "2004-10-18"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -286466,7 +286466,7 @@
         "id": "2003-04",
         "label": "2003-04",
         "season": "2003-04",
-        "cutoff": "2004-10-17",
+        "cutoff": "2004-10-18",
         "records": [
           {
             "id": "2003-04-all-star",
@@ -286548,15 +286548,15 @@
           "photo_url": null,
           "initials": "DW",
           "status": "Under contract",
-          "cutoff": "2004-10-17"
+          "cutoff": "2004-10-18"
         },
-        "notice": "Only earned annual awards announced on or before 2004-10-17 appear. Weekly, monthly and unclassified recognition remains in the full award register."
+        "notice": "Only earned annual awards announced on or before 2004-10-18 appear. Weekly, monthly and unclassified recognition remains in the full award register."
       },
       {
         "id": "2004-05",
         "label": "2004-05",
         "season": "2004-05",
-        "cutoff": "2004-10-17",
+        "cutoff": "2004-10-18",
         "records": [],
         "identity": {
           "name": "Dwyane Wade",
@@ -286571,17 +286571,17 @@
           "photo_url": null,
           "initials": "DW",
           "status": "Under contract",
-          "cutoff": "2004-10-17"
+          "cutoff": "2004-10-18"
         },
-        "notice": "Only earned annual awards announced on or before 2004-10-17 appear. Weekly, monthly and unclassified recognition remains in the full award register."
+        "notice": "Only earned annual awards announced on or before 2004-10-18 appear. Weekly, monthly and unclassified recognition remains in the full award register."
       }
     ]
   },
   "contracts": {
-    "as_of": "2004-10-17",
+    "as_of": "2004-10-18",
     "player_id": "wadedw01",
     "status": "under_contract",
-    "summary": "Dwyane Wade: under contract. Evidence cutoff: 2004-10-17.",
+    "summary": "Dwyane Wade: under contract. Evidence cutoff: 2004-10-18.",
     "current": {
       "id": "wadedw01-2003-07-21",
       "status": "under_contract",
@@ -287561,7 +287561,7 @@
     "metrics": [
       {
         "label": "Career date",
-        "value": "2004-10-17"
+        "value": "2004-10-18"
       },
       {
         "label": "Recorded contracts",
@@ -287763,7 +287763,7 @@
       "history_complete": false,
       "recorded_contract_count": 1,
       "current_contract_verified": true,
-      "as_of": "2004-10-17",
+      "as_of": "2004-10-18",
       "note": "Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed."
     }
   }

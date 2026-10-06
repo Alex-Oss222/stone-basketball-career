@@ -1,13 +1,13 @@
 ---
 type: game
-status: scheduled
+status: played
 date: 2004-10-18
 opponent: Atlanta Hawks
 venue: home
 competition: preseason
 cup_stage:
 player_team: Miami Heat
-result:
+result: L 75-95
 reason:
 simulation_source: Railway engine (runtime/private_service.py)
 event_id: 2004-10-18-atlanta-hawks-at-miami-heat
@@ -19,10 +19,66 @@ result_file: Game_4.result.json
 Player identity and statistics are generated here by `python scripts/update_player_reports.py`.
 Decisions remain in the owning phase/week note. A scheduled game has no statistical result.
 
+<!-- game-result:start -->
+## Result
+
+**Atlanta Hawks 95 at Miami Heat 75** · Miami Heat L 75-95 vs Atlanta Hawks · home (Miami Heat) · 2004-10-18
+
+Event `2004-10-18-atlanta-hawks-at-miami-heat` · Railway engine (runtime/private_service.py) · result file [`Game_4.result.json`](Game_4.result.json) (the engine's answer as served; the note is the canonical record).
+
+Preseason result: evidence for the preseason record and the camp decisions only; it does not count in regular-season statistics.
+
+### Box score
+
+```text
+Atlanta Hawks 95 at Miami Heat 75
+2004-10-18  2004-05 preseason  event 2004-10-18-atlanta-hawks-at-miami-heat
+Kernel 2003.11, calibrated on 2003-04 (imported_source)
+
+Period      1    2    3    4     T
+Atlanta    24   19   26   26    95
+Miami He   24   10   23   18    75
+
+Atlanta Hawks
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Shareef Abdur-Rahim       40.8   22   9-23   2-3    2-3     5   7   3   2   0   4   2
+Jason Terry               41.5   21   8-18   3-11   2-4     0   4   5   0   0   2   4
+Dan Dickau                40.3   21   6-11   0-2    9-10    1   6   8   4   0   7   2
+Theo Ratliff              37.9    5   2-7    0-0    1-2     2   5   2   1   2   2   3
+Nazr Mohammed             34.7   15   6-9    0-0    3-3     6   6   3   1   0   2   4
+Theron Smith              21.4    7   3-7    1-1    0-0     2   1   1   0   0   2   2
+Alan Henderson            21.8    4   2-3    0-0    0-0     2   4   0   0   1   1   1
+Luis Flores                0.8    0   0-0    0-0    0-0     0   0   0   0   0   0   0
+Tony Bobbitt               0.8    0   0-0    0-0    0-0     0   1   0   0   0   0   0
+TEAM                     240.0   95  36-78   6-17  17-22   18  34  22   8   3  20  18
+
+Miami Heat
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Mike James                28.9   14   6-11   0-0    2-2     0   6   1   2   0   3   3
+Dwyane Wade               28.2    8   3-10   0-2    2-2     2   4   3   1   1   1   0
+Caron Butler              29.3    9   4-10   0-1    1-4     2   0   2   0   0   1   4
+Scott Padgett             28.9    4   2-10   0-3    0-0     2   0   1   3   0   1   3
+Brian Grant               29.3    2   1-3    0-0    0-0     5   1   3   0   0   1   3
+Mehmet Okur               21.0   12   3-8    0-0    6-8     2   3   1   0   1   3   3
+Rafer Alston              17.8    5   2-5    0-2    1-2     0   3   3   1   0   1   1
+Stephen Jackson           15.6   12   4-9    2-6    2-4     0   0   0   1   0   1   4
+Eddie Jones               14.0    0   0-4    0-2    0-0     0   2   4   0   0   0   0
+Kendall Gill              10.9    4   2-4    0-0    0-0     0   2   1   2   0   0   0
+Udonis Haslem              9.3    2   1-2    0-0    0-0     2   1   0   0   0   0   0
+Dorell Wright              6.7    3   1-5    1-3    0-0     1   1   1   0   0   1   0
+TEAM                     240.0   75  29-81   3-19  14-22   16  23  20  10   2  14  21
+  Includes 1 team turnover(s) not charged to an individual.
+```
+
+### Miami injuries
+
+No Miami injury was drawn in this game.
+<!-- game-result:end -->
+
 <!-- player-report:start -->
 ## Professional identity
 
-![Player personal information and earned 2004-05 awards through 2004-10-17](../../assets/stat_reports/personal_2004-05_2004-10-17.svg)
+![Player personal information and earned 2004-05 awards through 2004-10-18](../../assets/stat_reports/personal_2004-05_2004-10-18.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -47,7 +103,7 @@ Decisions remain in the owning phase/week note. A scheduled game has no statisti
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-01 |
 
-Identity as of 2004-10-17; status snapshot dated 2004-10-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-10-18; status snapshot dated 2004-10-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2004-05 awards
 
@@ -55,7 +111,7 @@ No 2004-05 awards yet.
 
 ## Statistics
 
-As of **2004-10-17**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2004-10-18**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -73,7 +129,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-10-17, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-10-18, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
