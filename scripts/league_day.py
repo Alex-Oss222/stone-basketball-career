@@ -27,7 +27,7 @@ def main():
     from runtime.league_market import LeagueMarket
     from runtime.market import Market
     for e in LeagueMarket(day, Market(day, ROOT), ROOT).run():
-        print(f"{e['date']}  {e['kind']:15} {e['player']}  {e['from'] or 'free agent'} -> {e['to'] or 'free agent'}")
+        print(f"{e['date']}  {e['kind']:15} {e['player']}  {e['from'] or 'free agent'} -> {e['to'] or ('retired' if e['kind'] == 'retire' else 'free agent')}")
     if date.fromisoformat(day).weekday() == 0:
         from runtime.league_trades import deadline, weekly
         if day <= deadline(day, ROOT):
