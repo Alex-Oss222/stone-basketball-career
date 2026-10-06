@@ -2,9 +2,9 @@
 
 # Contract | Jerome Williams
 
-Known through: 2005-01-10. [Open interactive contract](willije01.html#contract) · [Contract history](willije01.html#contract-history)
+Known through: 2005-01-16. [Open interactive contract](willije01.html#contract) · [Contract history](willije01.html#contract-history)
 
-Jerome Williams: under contract. Evidence cutoff: 2005-01-10.
+Jerome Williams: under contract. Evidence cutoff: 2005-01-16.
 
 ## Current contract
 

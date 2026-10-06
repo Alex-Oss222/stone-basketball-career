@@ -2,9 +2,9 @@
 
 # Contract | Sasha Pavlovic
 
-Known through: 2005-01-10. [Open interactive contract](pavloal01.html#contract) · [Contract history](pavloal01.html#contract-history)
+Known through: 2005-01-16. [Open interactive contract](pavloal01.html#contract) · [Contract history](pavloal01.html#contract-history)
 
-Sasha Pavlovic: No verified contract record. Evidence cutoff: 2005-01-10.
+Sasha Pavlovic: No verified contract record. Evidence cutoff: 2005-01-16.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Matt Harpring
 
-Known through: 2005-01-10. [Open interactive contract](harprma01.html#contract) · [Contract history](harprma01.html#contract-history)
+Known through: 2005-01-16. [Open interactive contract](harprma01.html#contract) · [Contract history](harprma01.html#contract-history)
 
-Matt Harpring: under contract unverified. Evidence cutoff: 2005-01-10.
+Matt Harpring: under contract unverified. Evidence cutoff: 2005-01-16.
 
 ## Current contract
 

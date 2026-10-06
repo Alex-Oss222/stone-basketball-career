@@ -2,9 +2,9 @@
 
 # Contract | Joe Johnson
 
-Known through: 2005-01-10. [Open interactive contract](johnsjo02.html#contract) · [Contract history](johnsjo02.html#contract-history)
+Known through: 2005-01-16. [Open interactive contract](johnsjo02.html#contract) · [Contract history](johnsjo02.html#contract-history)
 
-Joe Johnson: under rookie contract. Evidence cutoff: 2005-01-10.
+Joe Johnson: under rookie contract. Evidence cutoff: 2005-01-16.
 
 ## Current contract
 

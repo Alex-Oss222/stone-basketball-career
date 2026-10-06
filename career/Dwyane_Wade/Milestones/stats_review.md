@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-01-10 · Miami Heat · active
+Career date: 2005-01-16 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-43 closed game records in 2004-05 through 2005-01-10. Competitions remain separate.
+46 closed game records in 2004-05 through 2005-01-16. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
-| regular | 30 | 35.3 | 19.2 | 5.2 | 3.9 | 1.5 | Complete |
+| regular | 33 | 35.5 | 19.5 | 5.2 | 3.9 | 1.4 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
-| regular | 193 | 373 | 0.517 | 35 | 75 | 0.467 |
+| regular | 216 | 417 | 0.518 | 38 | 79 | 0.481 |
 
 ## Closed source games
 
@@ -73,6 +73,9 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-01-05 | regular | New York Knicks | Played | [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_3.md) |
 | 2005-01-07 | regular | Portland Trail Blazers | Played | [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_4.md) |
 | 2005-01-09 | regular | Seattle SuperSonics | Played | [Closed game](../2004-05/06_Regular_Season/01_January/Week_2/Game_1.md) |
+| 2005-01-11 | regular | Phoenix Suns | Played | [Closed game](../2004-05/06_Regular_Season/01_January/Week_2/Game_2.md) |
+| 2005-01-12 | regular | Golden State Warriors | Played | [Closed game](../2004-05/06_Regular_Season/01_January/Week_2/Game_3.md) |
+| 2005-01-14 | regular | Los Angeles Clippers | Played | [Closed game](../2004-05/06_Regular_Season/01_January/Week_2/Game_4.md) |
 
 ## Evidence available for decisions
 
@@ -157,4 +160,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_4.md)
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_2/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_2/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_2/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_2/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

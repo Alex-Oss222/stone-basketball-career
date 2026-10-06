@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-01-10",
+  "as_of": "2005-01-16",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2138,7 +2138,7 @@
     {
       "player_id": "breweja01",
       "name": "Jamison Brewer",
-      "team": "Free agent",
+      "team": "Philadelphia 76ers",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2975,7 +2975,7 @@
     {
       "player_id": "johnsli01",
       "name": "Linton Johnson",
-      "team": "Philadelphia 76ers",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4523,7 +4523,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Chicago Bulls",
+      "team": "Los Angeles Clippers",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,
@@ -4631,7 +4631,7 @@
     {
       "player_id": "slayta01",
       "name": "Tamar Slay",
-      "team": "Atlanta Hawks",
+      "team": "Free agent",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,

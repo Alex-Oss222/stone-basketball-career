@@ -2,9 +2,9 @@
 
 # Contract | Richard Jefferson
 
-Known through: 2005-01-10. [Open interactive contract](jefferi01.html#contract) · [Contract history](jefferi01.html#contract-history)
+Known through: 2005-01-16. [Open interactive contract](jefferi01.html#contract) · [Contract history](jefferi01.html#contract-history)
 
-Richard Jefferson: under rookie contract. Evidence cutoff: 2005-01-10.
+Richard Jefferson: under rookie contract. Evidence cutoff: 2005-01-16.
 
 ## Current contract
 
