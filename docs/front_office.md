@@ -113,6 +113,11 @@ Proposals to Miami from real clubs and injuries in the value are not built; the 
 | Legality | the rules above plus the partner's 15-player limit on the simulated roster; a partner never gives up two of its untouchables in one package; contracts carried over at the rollover (`existing`, `option` routes) were not newly signed and carry no restriction |
 | Write-back | the partner's contracts come from the season's dated inventory (the league ledger); a player Miami sends keeps the contract Miami assigned on the partner's inventory; his previous minute share is his last real season's; a trade acquisition is never a disturbed club (`club_replacements`): the partner chose the deal and received players back |
 
+| Cap room | Miami's ranking adds `CAP_FLEXIBILITY_WEIGHT` (0.3) times the committed salary a trade clears (or adds) in the seasons after this one, in caps (the user's priority, October 2026) |
+| Inventory | every contract a club holds is tradable, including a player who logged no minutes last season (an injured or end-of-bench contract, a salary filler), placed by the opening roster until a league move touches him; other clubs' summer signings are restricted from the date of the market event that made the contract (a signed first-round pick 30 days) |
+
+Wade can ask for a specific package (`subject: trade_package` with `package: {partner, miami_out, miami_in}` in a phase folder's `wade_requests.json`). The front office answers it once on its date (`run_trade.py --season-day`, also during camp): it proposes the package only if its own rules would, with his request weighed by his standing (a wanted arrival raises a gain and softens a loss), and records the answer and its numbers in `00_Team/Transactions/wade_trade_requests.json` and the phase note; a proposed package's answer from the other club is an engine draw.
+
 Wade's `trade_target` and `trade_opposed` requests from every phase folder of the season weigh on the ranking; at `franchise` standing the consultation gate covers every star arriving in a package.
 
 ## Training camp and preseason (roadmap items 9, 10 in part, 12; phase D of `front_office_design.md`)

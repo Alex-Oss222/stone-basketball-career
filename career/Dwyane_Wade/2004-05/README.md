@@ -2,6 +2,8 @@
 
 # 2004-05 | Player season
 
+![2004-05 season overview: professional identity, NBA regular-season and playoff statistics for the season only](../assets/season_overview_2004-05.svg)
+
 ## Professional identity
 
 ![Player personal information and earned 2004-05 awards through 2004-10-01](../assets/stat_reports/personal_2004-05_2004-10-01.svg)

@@ -493,8 +493,8 @@
       "name": "Brian Grant",
       "team": "Miami Heat",
       "status": "under contract",
-      "current_contract_id": "grantbr01-2004-10-01",
-      "recorded_agreements": 2,
+      "current_contract_id": "grantbr01-2000-08-30",
+      "recorded_agreements": 1,
       "href": "players/grantbr01.html#contract"
     },
     {
@@ -627,9 +627,9 @@
       "player_id": "butleca01",
       "name": "Caron Butler",
       "team": "Miami Heat",
-      "status": "under contract",
-      "current_contract_id": "butleca01-2004-10-01",
-      "recorded_agreements": 2,
+      "status": "under rookie contract",
+      "current_contract_id": "butleca01-2002-07-02",
+      "recorded_agreements": 1,
       "href": "players/butleca01.html#contract"
     },
     {
@@ -1366,8 +1366,8 @@
       "name": "Eddie Jones",
       "team": "Miami Heat",
       "status": "under contract",
-      "current_contract_id": "jonesed02-2004-10-01",
-      "recorded_agreements": 2,
+      "current_contract_id": "jonesed02-2000-08-01",
+      "recorded_agreements": 1,
       "href": "players/jonesed02.html#contract"
     },
     {

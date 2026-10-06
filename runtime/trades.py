@@ -81,9 +81,13 @@ ACCEPT_BOUNDS = (0.02, 0.95)
 DUMP_VALUE_PER_5M = 0.25                 # value points per $5M of a season's salary a club sheds on purpose
 SEARCH_MIN_ACCEPT = 0.40                 # Miami proposes only what the partner would plausibly take
 MAX_OUT, MAX_IN = 3, 2                   # players a search proposal moves each way (three for two at most)
+NEW_CONTRACT_EVENTS = ("signing", "re_sign", "rookie_scale_signing", "camp_signing", "offer_sheet_matched", "offer_sheet_not_matched",
+                       "qualifying_offer_accepted")   # summer-market events that make a new contract (its date starts the restriction)
 CARRIED_ROUTES = ("existing", "option")  # rollover routes of a contract signed in an earlier season: no newly-signed restriction
 IN_SEASON_MIN_GAIN = 0.10                # judgement: during the season Miami changes its roster only for a clear gain
 TRADE_COOLDOWN_DAYS = 28                 # judgement: after a completed trade the staff lets the roster settle before the next
+CAP_FLEXIBILITY_WEIGHT = 0.3            # judgement (the user's priority, October 2026): Miami values room in later seasons; a
+                                         # trade's change in committed salary after this season, in caps, moves its gain by this
 MAX_IN_SEASON_TRADES = 2                 # judgement: a club makes one or two in-season trades in a typical 2000s season
 FILLERS_PER_CANDIDATE = 6                # a second incoming player (salary or depth) is searched among the partner's next contracts
 # Distressed assets (design 7.5 item 6): an injured player's current-season production counts at this share to the
@@ -148,6 +152,23 @@ def _ledger_inventory(on, season, ledger, valuation, root=ROOT):
                                 "amount_kind": {season: "contract_salary"}, "held_on": on,
                                 "terms_source": "in-season signing: minimum for his service (estimate)"})
         out[club] = {"players": players, "as_of": on}
+    # A player under contract who logged no minutes last season (an injured or end-of-bench contract) is on no game
+    # roster but is still his club's contract: tradable, a salary filler. His holder is the opening roster's, while
+    # no league move has touched him since (a moved or waived player is placed by the move).
+    from .league_moves import read as read_moves
+    opening = Path(root) / f"career/Dwyane_Wade/{season}/League/opening_rosters.json"
+    if opening.is_file():
+        placed = {p["bbr_id"] for e in out.values() for p in e["players"]}
+        moved = {m.get("bbr_id") for m in read_moves(season, root)["entries"]}
+        for club, rows in read(opening, root)["clubs"].items():
+            for r in rows:
+                b = r.get("bbr_id")
+                c = ledger.get(b)
+                if club in out and b and c and b not in placed and b not in moved and b not in sent:
+                    out[club]["players"].append({"player": c["player"], "bbr_id": b, "status": "under_contract", "schedule": c["schedule"],
+                                                 "amount_kind": {s_: "contract_salary" for s_ in c["schedule"]}, "held_on": on,
+                                                 "inactive": True, "terms_source": ledger_path_label(season)})
+                    placed.add(b)
     return out
 
 
@@ -537,11 +558,18 @@ class TradeDesk:
         path = self.root / RECORD
         if not path.is_file() or self.season != "2004-05":
             return {}
+        record = read_json(RECORD, self.root)
+        # The club rows carry the contract; the events carry the dates (the latest contract-making event for the player).
+        signed_on = {}
+        for e in record.get("events", []):
+            if e.get("bbr_id") and e.get("date") and e.get("kind") in NEW_CONTRACT_EVENTS:
+                signed_on[e["bbr_id"]] = max(signed_on.get(e["bbr_id"], ""), e["date"])
         out = {}
-        for club, rows in read_json(RECORD, self.root)["clubs"].items():
+        for club, rows in record["clubs"].items():
             for r in rows:
-                if club != MIAMI and r.get("bbr_id") and r.get("date") and r.get("route") not in ("existing", "option") and r["date"] <= on:
-                    out[r["bbr_id"]] = dict(r, kind="rookie_signing" if r.get("route") == "rookie_scale" else "signing", to=club)
+                day = r.get("date") or signed_on.get(r.get("bbr_id"))
+                if club != MIAMI and r.get("bbr_id") and day and r.get("route") not in ("existing", "option") and day <= on:
+                    out[r["bbr_id"]] = dict(r, date=day, kind="rookie_signing" if r.get("route") == "rookie_scale" else "signing", to=club)
         return out
 
     def _moratorium(self):
@@ -630,6 +658,10 @@ class TradeDesk:
         row = self.signings.get(player.get("bbr_id"))
         signed = row and (row.get("date") or UNDATED_EXIT)      # an undated summer signing counts from the undated-exit day
         if signed and signed >= f"{self.season[:4]}-07-01":
+            if row.get("kind") == "rookie_signing":
+                days = self.cba["trades"]["signed_first_round_pick_restriction_days"]["days"]
+                until = (date.fromisoformat(signed) + timedelta(days=days)).isoformat()
+                return f"signed first-round pick on {signed}: not tradable until {until}" if self.on < until else None
             until = max(months_after(signed, 3), self._december_15())
             if self.on < until:
                 return f"newly signed on {signed}: not tradable until {until}"
@@ -1011,8 +1043,7 @@ class TradeDesk:
         if not hasattr(self, "_partner_counts"):
             self._partner_counts = {}
         if club not in self._partner_counts:
-            from .league_moves import effective_roster
-            self._partner_counts[club] = len(effective_roster(club, self.on, self.season, self.root))
+            self._partner_counts[club] = len(self.assets.contracts.get(club, {}).get("players", []))   # every contract, inactive ones included
         return self._partner_counts[club]
 
     def _prefilter(self, club, outs, ins, sal_out, sal_in, room, active):
@@ -1040,6 +1071,43 @@ class TradeDesk:
             come = sum(int((self.partner_player(club, n) or {}).get("schedule", {}).get(s_) or 0) for n in ins)
             out[s_] = (self._committed[s_], self._committed[s_] - leave + come)
         return out
+
+    def flexibility(self, outs, ins, club):
+        """Salary the trade clears (+) or adds (-) in the seasons after this one, in caps."""
+        return sum(before - after for s_, (before, after) in self.payroll_after(outs, ins, club).items()
+                   if s_ > self.season) / self.cap
+
+    def scored_gain(self, v, outs, ins, club, wanted=(), opposed=(), standing="unsigned_rookie"):
+        """Miami's gain for ranking: its objective, its later-season room (CAP_FLEXIBILITY_WEIGHT) and Wade's requests
+        by his standing weight (a wanted arrival raises a gain and softens a loss; an opposed departure the reverse)."""
+        from .standing import STANDING_WEIGHT
+        gain = v["miami_gain"] + CAP_FLEXIBILITY_WEIGHT * self.flexibility(outs, ins, club)
+        w = STANDING_WEIGHT[standing]
+        if any(n in wanted for n in ins):
+            gain *= (1 + w) if gain > 0 else (1 - w)
+        if any(o in opposed for o in outs):
+            gain *= (1 - w) if gain > 0 else (1 + w)
+        return gain
+
+    def evaluate_package(self, trade, standing="unsigned_rookie", min_gain=SEARCH_MIN_GAIN):
+        """The front office's answer to a package Wade asked for: (proposes, why, numbers). It proposes only what it
+        would make on its own rules, with his request weighed: legal, inside the payroll ceiling, the partner plausibly
+        accepting, and a scored gain at the threshold."""
+        outs, ins, club = trade.get("miami_out", []), trade.get("miami_in", []), trade["partner"]
+        packet, v = self.acceptance_packet(trade)
+        if packet is None:
+            return False, "; ".join(v), {}
+        numbers = {"miami_gain": v["miami_gain"], "flexibility_caps": round(self.flexibility(outs, ins, club), 3),
+                   "partner_gain": v["objective_gain"], "accept": packet["options"]["accept"]}
+        numbers["scored_gain"] = round(self.scored_gain(v, outs, ins, club, wanted=set(ins), standing=standing), 3)
+        if not self.within_budget(outs, ins, club):
+            return False, "it would take a later season over the owner's payroll ceiling", numbers
+        if packet["options"]["accept"] < SEARCH_MIN_ACCEPT:
+            return False, f"{club} would accept only {packet['options']['accept']:.0%} of the time (the front office asks at {SEARCH_MIN_ACCEPT:.0%})", numbers
+        if numbers["scored_gain"] < min_gain:
+            return False, (f"Miami's gain on its own objective is {v['miami_gain']:+.3f}, {numbers['flexibility_caps']:+.2f} caps of later room, "
+                           f"{numbers['scored_gain']:+.3f} with Wade's request weighed: below {min_gain:+.2f}"), numbers
+        return True, "the front office proposes it", numbers
 
     def within_budget(self, outs, ins, club):
         """The front office's payroll rule: no season of the next four ends above the ceiling because of the trade
@@ -1122,11 +1190,7 @@ class TradeDesk:
                         packet, v = self.acceptance_packet(trade)
                         if packet is None or packet["options"]["accept"] < SEARCH_MIN_ACCEPT:
                             continue           # only deals the partner would plausibly take; the next try adds the pick
-                        gain = v["miami_gain"]
-                        if any(n in wanted for n in ins):
-                            gain *= 1 + STANDING_WEIGHT[standing]
-                        if any(o in opposed for o in outs):
-                            gain *= 1 - STANDING_WEIGHT[standing]
+                        gain = self.scored_gain(v, outs, ins, club, wanted, opposed, standing)
                         if gain >= min_gain:
                             row = {"trade": trade, "miami_gain": round(gain, 3), "partner_gain": v["objective_gain"],
                                    "accept": packet["options"]["accept"], "score": round(gain, 3),

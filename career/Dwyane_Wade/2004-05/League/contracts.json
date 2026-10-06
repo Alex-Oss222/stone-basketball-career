@@ -685,7 +685,8 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 1930680
+    "2004-05": 1930680,
+    "2005-06": 2461617
    },
    "source": "Miami contract_schedules.json"
   },
@@ -1710,7 +1711,9 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 13233434
+    "2004-05": 13233434,
+    "2005-06": 14336220,
+    "2006-07": 15439006
    },
    "source": "Miami contract_schedules.json"
   },
@@ -2277,10 +2280,10 @@
    "bbr_id": "jamesmi01",
    "club": "Miami Heat",
    "route": "existing",
-   "kind": "new",
+   "kind": "existing",
    "schedule": {
     "2004-05": 3431474,
-    "2005-06": 3774621
+    "2005-06": 3812749
    },
    "source": "Miami contract_schedules.json"
   },
@@ -2432,11 +2435,11 @@
    "bbr_id": "jonesed02",
    "club": "Miami Heat",
    "route": "existing",
-   "kind": "new",
+   "kind": "existing",
    "schedule": {
     "2004-05": 13455000,
-    "2005-06": 14800500,
-    "2006-07": 16146000
+    "2005-06": 14576250,
+    "2006-07": 15697500
    },
    "source": "Miami contract_schedules.json"
   },

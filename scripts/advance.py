@@ -239,6 +239,7 @@ def camp_day(day):
     data = state()
     data["current_area"] = data.get("current_area") if data.get("current_area") in ("04_Training_Camp", "05_Preseason") else "04_Training_Camp"
     write_state(data)
+    miami_trade_day(day)                                    # Wade's trade requests answered; no scan before opening night
     out = run("scripts/run_camp.py", "--write", day, show=False)
     if draws_pending():
         draw()
@@ -262,7 +263,7 @@ def miami_trade_day(day):
         draw()
         out += "\n" + run("scripts/run_trade.py", "--season-day", day, show=False)
     for line in out.splitlines():
-        if line.startswith(("MIAMI TRADE", "Miami trade", "Miami proposes")):
+        if line.startswith(("MIAMI TRADE", "Miami trade", "Miami proposes", "Wade's request")):
             say("    " + line)
         if line.startswith("MIAMI TRADE"):
             TRADES_TODAY.append(line)

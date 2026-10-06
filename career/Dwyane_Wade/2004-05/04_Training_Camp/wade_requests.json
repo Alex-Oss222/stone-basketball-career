@@ -1,0 +1,12 @@
+{
+ "requests": [
+  {
+   "date": "2004-10-01",
+   "subject": "trade_package",
+   "player": "Luke Ridnour",
+   "requested": "pursue",
+   "package": {"partner": "Charlotte Bobcats", "miami_out": ["Brian Grant"], "miami_in": ["Luke Ridnour", "Cezary Trybanski"]},
+   "note": "Wade asks the front office to trade Brian Grant to Charlotte for Luke Ridnour and Cezary Trybanski: a young point guard next to him and room in later seasons (Grant is owed $14.3M in 2005-06 and $15.4M in 2006-07; Ridnour and Trybanski are on one-season contracts). The front office weighs it by Wade's standing and decides."
+  }
+ ]
+}

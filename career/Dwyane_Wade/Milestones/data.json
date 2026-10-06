@@ -237,7 +237,19 @@
             "Explanation",
             "Source"
           ],
-          "rows": []
+          "rows": [
+            [
+              "2004-10-01",
+              "trade_package",
+              "Luke Ridnour",
+              "pursue",
+              "Wade asks the front office to trade Brian Grant to Charlotte for Luke Ridnour and Cezary Trybanski: a young point guard next to him and room in later seasons (Grant is owed $14.3M in 2005-06 and $15.4M in 2006-07; Ridnour and Trybanski are on one-season contracts). The front office weighs it by Wade's standing and decides.",
+              {
+                "label": "Recorded request",
+                "href": "../2004-05/04_Training_Camp/wade_requests.json"
+              }
+            ]
+          ]
         },
         {
           "title": "Franchise consultations",
@@ -316,6 +328,10 @@
         {
           "label": "Current contract and cap-control record",
           "href": "../2004-05/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
           "label": "Current dated staff depth chart",
@@ -520,6 +536,10 @@
           "href": "../2004-05/00_Team/Finances/contract_schedules.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/04_Training_Camp/wade_requests.json"
+        },
+        {
           "label": "Current dated staff depth chart",
           "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
         },
@@ -695,6 +715,10 @@
           "href": "../2004-05/00_Team/Finances/contract_schedules.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/04_Training_Camp/wade_requests.json"
+        },
+        {
           "label": "Current dated staff depth chart",
           "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
         },
@@ -769,7 +793,19 @@
             "Explanation",
             "Source"
           ],
-          "rows": []
+          "rows": [
+            [
+              "2004-10-01",
+              "trade_package",
+              "Luke Ridnour",
+              "pursue",
+              "Wade asks the front office to trade Brian Grant to Charlotte for Luke Ridnour and Cezary Trybanski: a young point guard next to him and room in later seasons (Grant is owed $14.3M in 2005-06 and $15.4M in 2006-07; Ridnour and Trybanski are on one-season contracts). The front office weighs it by Wade's standing and decides.",
+              {
+                "label": "Recorded request",
+                "href": "../2004-05/04_Training_Camp/wade_requests.json"
+              }
+            ]
+          ]
         },
         {
           "title": "Miami's actual negotiation records",
@@ -859,6 +895,10 @@
         {
           "label": "Current contract and cap-control record",
           "href": "../2004-05/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
           "label": "Current dated staff depth chart",
@@ -1038,6 +1078,10 @@
           "href": "../2004-05/00_Team/Finances/contract_schedules.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/04_Training_Camp/wade_requests.json"
+        },
+        {
           "label": "Current dated staff depth chart",
           "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
         },
@@ -1204,6 +1248,10 @@
         {
           "label": "Current contract and cap-control record",
           "href": "../2004-05/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
           "label": "Current dated staff depth chart",
@@ -1383,6 +1431,10 @@
           "href": "../2004-05/00_Team/Finances/contract_schedules.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/04_Training_Camp/wade_requests.json"
+        },
+        {
           "label": "Current dated staff depth chart",
           "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
         },
@@ -1532,6 +1584,10 @@
             [
               "2004-10-01",
               "Wade sets his camp focus for October 5 through November 1: work within the team structure and build on-court chemistry through extra shared reps with Udonis Haslem, Dorell Wright, and Caron Butler. The focus is team concepts, timing, communication, and learning how the group fits together; staff retains depth-chart and rotation decisions."
+            ],
+            [
+              "2004-10-01",
+              "Wade asked the front office to trade Brian Grant to Charlotte Bobcats for Luke Ridnour, Cezary Trybanski. The front office declines to propose it: Charlotte Bobcats (middle) loses -15.7% on its own objective, below its floor -3%."
             ]
           ]
         },
@@ -1637,6 +1693,10 @@
         {
           "label": "Current contract and cap-control record",
           "href": "../2004-05/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
           "label": "Current dated staff depth chart",
@@ -1810,6 +1870,10 @@
         {
           "label": "Current contract and cap-control record",
           "href": "../2004-05/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
           "label": "Current dated staff depth chart",

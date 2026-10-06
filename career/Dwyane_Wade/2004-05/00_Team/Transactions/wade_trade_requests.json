@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "kind": "wade_trade_request_answers",
+ "season": "2004-05",
+ "rule": "The front office's answer to each package Wade asked for (`subject: trade_package` in a phase folder's     `wade_requests.json`, dated on or before the day), once: it proposes the package when its own rules, with his     request weighed by his standing, would make it (`TradeDesk.evaluate_package`), else records why not. A proposed     package's answer from the other club is an engine draw like any proposal. Returns the lines to report.",
+ "answers": [
+  {
+   "request_key": "2004-10-01|[\"Charlotte Bobcats\", [\"Brian Grant\"], [\"Cezary Trybanski\", \"Luke Ridnour\"], [], []]",
+   "requested_on": "2004-10-01",
+   "answered_on": "2004-10-01",
+   "package": {
+    "partner": "Charlotte Bobcats",
+    "miami_out": [
+     "Brian Grant"
+    ],
+    "miami_in": [
+     "Luke Ridnour",
+     "Cezary Trybanski"
+    ],
+    "picks_out": [],
+    "picks_in": []
+   },
+   "standing": "franchise",
+   "proposes": false,
+   "reason": "Charlotte Bobcats (middle) loses -15.7% on its own objective, below its floor -3%",
+   "numbers": {},
+   "trade_id": null
+  }
+ ]
+}

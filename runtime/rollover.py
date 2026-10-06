@@ -121,7 +121,10 @@ class Rollover:
         return [p for p in _read(draft)["picks"] if p["club"] == MIAMI and p.get("bbr_id") not in signed | elsewhere]
 
     def contract_entries(self, ledger):
-        old = {p.get("bbr_id") or (WADE_ID if p["player"] == "Dwyane Wade" else None): p
+        # The old sheet may lack a player's bbr_id (the register carries it): key each entry by the register's id, so a
+        # contract carried over keeps its signed schedule instead of being rebuilt from the market's first-year salary.
+        ids_by_name = {p["name"]: p.get("bbr_id") for p in _read(self.old_team / "Team/Roster/roster.json")["players"]}
+        old = {p.get("bbr_id") or ids_by_name.get(p["player"]) or (WADE_ID if p["player"] == "Dwyane Wade" else None): p
                for p in _read(self.old_team / "Finances/contract_schedules.json")["players"]}
         from .seasons import dates
         guarantee = dates(self.new, self.root)["guarantee"]

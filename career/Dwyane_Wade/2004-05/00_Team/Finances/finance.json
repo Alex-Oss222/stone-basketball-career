@@ -5,7 +5,7 @@
  "season": "2004-05",
  "team": "Miami Heat",
  "cap_status": "free_agency",
- "live_official_salary_cap": 43870000,
+ "live_official_salary_cap": 43840000,
  "historical_actual_salary_cap": 43840000,
  "historical_actual_salary_cap_publication_date": "2003-07-15",
  "league_cap_history_file": "league_cap_history.json",
@@ -13,7 +13,7 @@
  "known_counted_salary_before_free_agent_holds": 52068805,
  "reference_difference_to_historical_actual_cap_before_free_agent_holds": -8228805,
  "cap_space": null,
- "cap_room": -8198805,
+ "cap_room": -8228805,
  "cap_room_reason": [
   "Cap published July 13, 2004.",
   "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."
@@ -66,7 +66,7 @@
    "kind": "contract_salary",
    "amount": 1930680,
    "precision": "whole_dollars",
-   "status": "under_contract"
+   "status": "under_rookie_contract"
   },
   {
    "player": "Kendall Gill",
@@ -232,8 +232,8 @@
  },
  "subtotal_precision": "whole_dollars",
  "reported_rounded_salary_count": 0,
- "planning_cap": 43870000,
+ "planning_cap": 43840000,
  "known_counted_salary": 52068805,
  "roster_charge": 0,
- "projected_cap_room": -8198805
+ "projected_cap_room": -8228805
 }

@@ -56,11 +56,24 @@ def build(season, root=ROOT, market=None):
     draft = root / PLAYER / "2003-04/09_Draft/draft_2004.json"
     if draft.is_file():
         picks = {p["bbr_id"]: p["pick"] for p in json.loads(draft.read_text(encoding="utf-8"))["picks"] if p.get("bbr_id") and p["round"] == 1}
+    # Miami's carried contracts keep the schedule on its own previous cap sheet (AI/GM records), keyed by the register.
+    from .seasons import previous_season
+    prev_team = root / PLAYER / previous_season(season) / "00_Team"
+    miami_sheet = {}
+    if (prev_team / "Finances/contract_schedules.json").is_file():
+        ids = {p["name"]: p.get("bbr_id") for p in json.loads((prev_team / "Team/Roster/roster.json").read_text(encoding="utf-8"))["players"]}
+        for p in json.loads((prev_team / "Finances/contract_schedules.json").read_text(encoding="utf-8"))["players"]:
+            key = p.get("bbr_id") or ids.get(p["player"])
+            later = {s_: v for s_, v in (p.get("schedule") or {}).items() if s_ >= season and v}
+            if key and later:
+                miami_sheet[key] = later
     out = {}
     for club, rows in market["clubs"].items():
         for r in rows:
             b, route = r["bbr_id"], r.get("route")
-            if route in ("existing", "option") and b in terms:
+            if club == "Miami Heat" and route in ("existing", "option") and b in miami_sheet:
+                sched, kind = dict(miami_sheet[b]), "existing"
+            elif route in ("existing", "option") and b in terms:
                 sched = {s: v for s, v in terms[b]["schedule"].items() if v}
                 sched.setdefault(season, r["salary"])
                 kind = "existing"

@@ -418,7 +418,12 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
                 navigation=[("Cup stages", page), *nav], full=True)
             phase_groups.append(("Cup championship only", championship, cp))
         page = season / "README.md"
-        outputs[page] = GENERATED + f"\n# {year} | Player season\n\n" + identity_block(identity, cutoff, link(page, profile, "Complete professional identity"), style=style, page=page)
+        from .career_dashboard import season_highs as _season_highs
+        season_card = player / f"assets/season_overview_{year}.svg"
+        outputs[season_card] = career_overview(identity, cutoff, aggregate(regular), aggregate(select(year_records, competition="playoff")),
+                                               _season_highs(records, year) if regular else [], f"{year} regular-season highs", season=year)
+        outputs[page] = GENERATED + f"\n# {year} | Player season\n\n" + "!" + link(page, season_card,
+            f"{year} season overview: professional identity, NBA regular-season and playoff statistics for the season only") + "\n\n" + identity_block(identity, cutoff, link(page, profile, "Complete professional identity"), style=style, page=page)
         outputs[page] += "## Statistics\n\n" + f"Report cutoff: **{cutoff}**. Each row is a separate competition; do not add the rates.\n\n" + period_rollup(page, phase_groups, "Competition summary", as_of=cutoff)
         outputs[page] += period_rollup(page, months, "Regular season by month", as_of=cutoff)
         outputs[page] += "### Career records\n\n" + " · ".join(link(page, season / folder / "README.md", label) for label, folder in

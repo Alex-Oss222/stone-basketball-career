@@ -48,6 +48,7 @@ Snapshot: 2004-10-01. Draft rights and unassigned arrivals are not assigned minu
 | Date | Event / decision |
 | --- | --- |
 | 2004-10-01 | Wade sets his camp focus for October 5 through November 1: work within the team structure and build on-court chemistry through extra shared reps with Udonis Haslem, Dorell Wright, and Caron Butler. The focus is team concepts, timing, communication, and learning how the group fits together; staff retains depth-chart and rotation decisions. |
+| 2004-10-01 | Wade asked the front office to trade Brian Grant to Charlotte Bobcats for Luke Ridnour, Cezary Trybanski. The front office declines to propose it: Charlotte Bobcats (middle) loses -15.7% on its own objective, below its floor -3%. |
 
 ## Your response to the staff
 
@@ -89,6 +90,7 @@ Snapshot: 2004-10-01. Draft rights and unassigned arrivals are not assigned minu
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
+- [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Dated milestone working records and player replies](../milestones.json)

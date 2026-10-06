@@ -31,12 +31,14 @@ def season_highs(records: list[dict], season: str, competition: str = "regular")
 
 
 def career_overview(identity: dict, as_of: str, regular: dict, playoffs: dict, highs: list | None = None,
-                    highs_title: str = "Season highs") -> str:
+                    highs_title: str = "Season highs", season: str | None = None) -> str:
+    """The career overview card, or with `season` the same card for one season (its own totals and highs)."""
+    scope = season or "Career"
     p = identity_at(identity, as_of)
     red, dark, white, muted = "#a71930", "#222326", "#ffffff", "#d0d1d4"
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="{1110 if highs else 820}" viewBox="0 0 1280 {1110 if highs else 820}" role="img" aria-labelledby="title desc">',
-        f'<title id="title">{escape(p.get("display_name", p["full_name"]))} career overview</title>',
+        f'<title id="title">{escape(p.get("display_name", p["full_name"]))} {escape(scope.lower() if not season else season)} overview</title>',
         f'<desc id="desc">Simulation career as of {escape(as_of)}. Professional identity, NBA regular-season and playoff statistics. N/A means no qualifying denominator or missing data. An accessible text version follows this image in the README.</desc>',
         f'<rect width="1280" height="{1110 if highs else 820}" rx="28" fill="#141517"/>',
         '<g>',
@@ -84,12 +86,12 @@ def career_overview(identity: dict, as_of: str, regular: dict, playoffs: dict, h
         text(x + 24, y + 250, status, 16, muted)
 
     rect(20, 20, 1240, 170, red)
-    text(52, 57, "PLAYER CAREER", 16, "#f6c7cf", 700)
+    text(52, 57, "PLAYER CAREER" if not season else f"PLAYER SEASON · {season}", 16, "#f6c7cf", 700)
     text(52, 110, p.get("display_name", p["full_name"]), 46, weight=700)
     text(52, 152, f'{p["team"]}  ·  {p["league"]}  ·  {" / ".join(p["positions"])}', 23)
     text(1228, 58, "SIMULATION RECORD", 16, "#f6c7cf", 700, "end")
     text(1228, 90, date.fromisoformat(as_of).strftime("%B %d, %Y"), 22, white, 500, "end")
-    text(1228, 150, "Career overview", 20, "#f6c7cf", 500, "end")
+    text(1228, 150, "Career overview" if not season else f"{season} overview", 20, "#f6c7cf", 500, "end")
 
     rect(20, 210, 610, 270, red)
     text(44, 248, "Professional identity", 24, weight=700)
@@ -109,8 +111,8 @@ def career_overview(identity: dict, as_of: str, regular: dict, playoffs: dict, h
         text(cx, cy + 27, label, 17, "#f3cbd2", anchor="middle")
     text(44, 460, f'Measurements recorded {p["physical_profile_as_of"]}', 16, "#f3cbd2")
 
-    stats_card(650, 210, "Career playoffs", playoffs, dark)
-    stats_card(20, 500, "Career regular season", regular, red)
+    stats_card(650, 210, f"{scope} playoffs", playoffs, dark)
+    stats_card(20, 500, f"{scope} regular season", regular, red)
 
     rect(650, 500, 610, 270, dark)
     text(674, 538, "Professional status", 24, weight=700)

@@ -105,7 +105,9 @@ class DistressAndProofTests(unittest.TestCase):
     def test_live_search_keeps_untouchables_and_clears_every_partner_floor(self):
         for row in self.desk.search(limit=10):
             v = self.desk.valuation(row["trade"])
-            self.assertEqual(v["untouchable"], [])
+            self.assertLessEqual(len(v["untouchable"]), 1)               # never two cornerstones in one deal
+            if v["untouchable"]:
+                self.assertGreaterEqual(v["objective_gain"], UNTOUCHABLE_MARGIN)   # one only for the margin
             self.assertGreaterEqual(v["objective_gain"], ACCEPT_FLOOR)
             self.assertGreaterEqual(row["accept"], SEARCH_MIN_ACCEPT)
 

@@ -272,10 +272,63 @@ def shop(day, root=ROOT):
     return record, considered
 
 
+REQUEST_ANSWERS = signing.TEAM / "Transactions/wade_trade_requests.json"
+
+
+def answer_requests(day, root=ROOT):
+    """The front office's answer to each package Wade asked for (`subject: trade_package` in a phase folder's
+    `wade_requests.json`, dated on or before the day), once: it proposes the package when its own rules, with his
+    request weighed by his standing, would make it (`TradeDesk.evaluate_package`), else records why not. A proposed
+    package's answer from the other club is an engine draw like any proposal. Returns the lines to report."""
+    root = Path(root)
+    path = root / REQUEST_ANSWERS
+    record = json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {
+        "schema_version": 1, "owner": "ai_gm", "kind": "wade_trade_request_answers", "season": SEASON,
+        "rule": answer_requests.__doc__.split("\n\n")[0].replace("\n", " "), "answers": []}
+    done = {a["request_key"] for a in record["answers"]}
+    lines = []
+    for r in requests(root):
+        if r.get("subject") != "trade_package" or r.get("date", day) > day:
+            continue
+        trade = {"partner": r["package"]["partner"], "miami_out": list(r["package"]["miami_out"]), "miami_in": list(r["package"]["miami_in"]),
+                 "picks_out": list(r["package"].get("picks_out", [])), "picks_in": list(r["package"].get("picks_in", []))}
+        from runtime.trades import package_key
+        key = f"{r['date']}|{package_key(trade)}"
+        if key in done:
+            continue
+        if awaiting(day, root):
+            break
+        desk = TradeDesk(day, FrontOffice(day, Market(day, root), root), root)
+        snap = standing(root)
+        from runtime.trades import IN_SEASON_MIN_GAIN, SEARCH_MIN_GAIN
+        proposes, why, numbers = desk.evaluate_package(trade, snap["standing"], IN_SEASON_MIN_GAIN if in_season(day, root) else SEARCH_MIN_GAIN)
+        answer = {"request_key": key, "requested_on": r["date"], "answered_on": day, "package": trade, "standing": snap["standing"],
+                  "proposes": proposes, "reason": why, "numbers": numbers, "trade_id": None}
+        writer = signing.Writer(root)
+        state = writer.load(signing.STATE)
+        outs, ins = ", ".join(trade["miami_out"]), ", ".join(trade["miami_in"])
+        if proposes:
+            ranking = {"trade": trade, "miami_gain": numbers["miami_gain"], "partner_gain": numbers["partner_gain"], "accept": numbers["accept"],
+                       "score": numbers["scored_gain"], "wade_request": True}
+            proposal = signing.write_proposal(root, desk, trade, ranking, day, kind="trade", standing=snap)
+            answer["trade_id"] = proposal["trade_id"]
+            lines.append(f"Wade's request: the front office proposes to {trade['partner']}: {outs} for {ins} "
+                         f"(acceptance {numbers['accept']:.2f}, engine draw)")
+        else:
+            signing.note_event(writer, signing.phase_note_for(state), day,
+                               f"Wade asked the front office to trade {outs} to {trade['partner']} for {ins}. The front office declines to propose it: {why}.")
+            writer.commit()
+            lines.append(f"Wade's request: the front office declines to propose {outs} for {ins}: {why}")
+        record["answers"].append(answer)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return lines
+
+
 def season_day(day, root=ROOT):
     """The driver's in-season step (scripts/advance.py): apply answers drawn for earlier proposals, then, when a scan
     is due, the front office's proposal. Returns the lines to report; a completed trade starts with "MIAMI TRADE"."""
-    lines = []
+    lines = answer_requests(day, root)
     applied, pending = write(day, root)
     for trade_id, status in applied:
         record = json.loads((Path(root) / TRADES / f"{trade_id}.json").read_text(encoding="utf-8"))

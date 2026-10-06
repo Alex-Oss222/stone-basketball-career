@@ -65,6 +65,7 @@ An actual transaction update with its source and applicable player rights.
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
+- [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Dated milestone working records and player replies](../milestones.json)

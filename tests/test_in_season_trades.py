@@ -40,5 +40,32 @@ class BudgetTests(unittest.TestCase):
         self.assertTrue(d.within_budget([], [], "P"))   # a season already over may come down
 
 
+
+class ScoreTests(unittest.TestCase):
+    def desk(self, flex):
+        d = trades.TradeDesk.__new__(trades.TradeDesk)
+        d.flexibility = lambda outs, ins, club: flex
+        return d
+
+    def test_later_room_counts_and_a_request_softens_a_loss(self):
+        d = self.desk(0.5)
+        v = {"miami_gain": -0.2}
+        plain = d.scored_gain(v, ["A"], ["B"], "P")
+        self.assertAlmostEqual(plain, -0.2 + trades.CAP_FLEXIBILITY_WEIGHT * 0.5)
+        wanted = d.scored_gain(v, ["A"], ["B"], "P", wanted={"B"}, standing="franchise")
+        self.assertGreater(wanted, plain)          # closer to zero, never turned into a gain
+        self.assertLess(wanted, 0)
+
+
+class RookieRestrictionTests(unittest.TestCase):
+    def test_a_partner_rookie_waits_thirty_days_not_until_december(self):
+        d = trades.TradeDesk.__new__(trades.TradeDesk)
+        d.on, d.season = "2004-08-05", "2004-05"
+        d.cba = {"trades": {"signed_first_round_pick_restriction_days": {"days": 30}}}
+        d.signings = {"r": {"date": "2004-07-01", "kind": "rookie_signing"}, "v": {"date": "2004-07-20", "kind": "signing"}}
+        self.assertIsNone(d.partner_blocked("P", {"bbr_id": "r"}))
+        self.assertIn("2004-12-15", d.partner_blocked("P", {"bbr_id": "v"}))
+
+
 if __name__ == "__main__":
     unittest.main()

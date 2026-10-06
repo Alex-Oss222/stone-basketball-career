@@ -16,8 +16,8 @@
  "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
  "known_baseline": {
   "2004-05": 52068805,
-  "2005-06": 36222517,
-  "2006-07": 32798231,
+  "2005-06": 50334487,
+  "2006-07": 32349731,
   "2007-08": 17022873,
   "2008-09": 3958667,
   "2009-10": 0,
@@ -26,8 +26,8 @@
  },
  "conditional_known_amounts": {
   "2004-05": 0,
-  "2005-06": 0,
-  "2006-07": 3201202,
+  "2005-06": 2461617,
+  "2006-07": 18640208,
   "2007-08": 0,
   "2008-09": 0,
   "2009-10": 0,
@@ -47,53 +47,79 @@
  "players": [
   {
    "player": "Eddie Jones",
-   "bbr_id": "jonesed02",
    "status": "under_contract",
    "schedule": {
+    "2003-04": 12333750,
     "2004-05": 13455000,
-    "2005-06": 14800500,
-    "2006-07": 16146000
+    "2005-06": 14576250,
+    "2006-07": 15697500
    },
+   "notes": "Existing contract ends in 2006-07. The later report is used only to verify the original final-year amount; subsequent transactions are not applied.",
+   "sources": [
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+    "https://www.espn.com/nba/dailydime?page=dailydime_070210-11",
+    "https://www.upi.com/Archives/2000/08/01/Jones-Mashburn-in-9-player-deal/6267965102400/",
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "Carried over unchanged from career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json (rollover repair: the October 1, 2004 rollover rebuilt it from the market's first-year salary)"
+   ],
    "amount_kind": {
+    "2003-04": "contract_salary",
     "2004-05": "contract_salary",
     "2005-06": "contract_salary",
     "2006-07": "contract_salary"
    },
-   "guaranteed": {
-    "2004-05": 13455000,
-    "2005-06": 14800500,
-    "2006-07": 16146000
+   "signed_date": "2000-08-01",
+   "original_term_seasons": 7,
+   "salary_reconstruction": {
+    "first_year_salary": 8970000,
+    "annual_dollar_raise": 1121250,
+    "method": "Constant contract progression, anchored by the 2002-03 salary and the original 2006-07 salary."
    },
-   "signed_date": "2004-10-01",
-   "route": "existing",
-   "original_term_seasons": 3,
-   "notes": "Signed October 1, 2004 in the 2004-05 summer market (signing, route existing); schedule from the league contract ledger (raises by route).",
-   "sources": [
-    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
-    "2004-05/League/contracts.json"
-   ]
+   "prior_season_salary": {
+    "season": "2002-03",
+    "amount": 11212500,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
+   },
+   "bbr_id": "jonesed02"
   },
   {
    "player": "Brian Grant",
-   "bbr_id": "grantbr01",
    "status": "under_contract",
    "schedule": {
-    "2004-05": 13233434
+    "2003-04": 12130648,
+    "2004-05": 13233434,
+    "2005-06": 14336220,
+    "2006-07": 15439006
    },
-   "amount_kind": {
-    "2004-05": "contract_salary"
+   "conditions": {
+    "2006-07": "Existing contract year subject to Brian Grant's early-termination option after 2005-06."
    },
-   "guaranteed": {
-    "2004-05": 13233434
-   },
-   "signed_date": "2004-10-01",
-   "route": "existing",
-   "original_term_seasons": 1,
-   "notes": "Signed October 1, 2004 in the 2004-05 summer market (signing, route existing); schedule from the league contract ledger (raises by route).",
    "sources": [
-    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
-    "2004-05/League/contracts.json"
-   ]
+    "https://www.shamsports.com/players/brian-grant",
+    "https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html",
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "Carried over unchanged from career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json (rollover repair: the October 1, 2004 rollover rebuilt it from the market's first-year salary)"
+   ],
+   "amount_kind": {
+    "2003-04": "contract_salary",
+    "2004-05": "contract_salary",
+    "2005-06": "contract_salary",
+    "2006-07": "early_termination_option"
+   },
+   "signed_date": "2000-08-30",
+   "original_term_seasons": 7,
+   "salary_reconstruction": {
+    "anchor_season": "2002-03",
+    "anchor_salary": 11027862,
+    "annual_dollar_raise_in_remaining_schedule": 1102786,
+    "method": "Remaining salary progression from the contemporary 2002-03 amount to the independently published 2005-06 and 2006-07 amounts. The original seven-year total is not used to infer unverified earlier annual salaries."
+   },
+   "prior_season_salary": {
+    "season": "2002-03",
+    "amount": 11027862,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
+   },
+   "bbr_id": "grantbr01"
   },
   {
    "player": "Scott Padgett",
@@ -329,25 +355,36 @@
   },
   {
    "player": "Caron Butler",
-   "bbr_id": "butleca01",
-   "status": "under_contract",
+   "status": "under_rookie_contract",
    "schedule": {
-    "2004-05": 1930680
+    "2003-04": 1804680,
+    "2004-05": 1930680,
+    "2005-06": 2461617
    },
-   "amount_kind": {
-    "2004-05": "contract_salary"
+   "conditions": {
+    "2005-06": "Fourth-year team option, not an unconditional June 26, 2003 commitment."
    },
-   "guaranteed": {
-    "2004-05": 1930680
-   },
-   "signed_date": "2004-10-01",
-   "route": "existing",
-   "original_term_seasons": 1,
-   "notes": "Signed October 1, 2004 in the 2004-05 summer market (signing, route existing); schedule from the league contract ledger (raises by route).",
    "sources": [
-    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
-    "2004-05/League/contracts.json"
-   ]
+    "https://www.shamsports.com/players/caron-butler",
+    "https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html",
+    "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf",
+    "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+    "Carried over unchanged from career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json (rollover repair: the October 1, 2004 rollover rebuilt it from the market's first-year salary)"
+   ],
+   "amount_kind": {
+    "2003-04": "contract_salary",
+    "2004-05": "contract_salary",
+    "2005-06": "team_option"
+   },
+   "signed_date": "2002-07-02",
+   "original_term_seasons": 4,
+   "notes": "2002 No. 10 rookie-scale contract at 120%: three signed seasons, followed by a fourth-year team option. No later extension is scheduled.",
+   "prior_season_salary": {
+    "season": "2002-03",
+    "amount": 1678800,
+    "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
+   },
+   "bbr_id": "butleca01"
   },
   {
    "player": "Kendall Gill",
@@ -609,16 +646,16 @@
   },
   {
    "season": "2005-06",
-   "scheduled_contract_salary": 36222517,
+   "scheduled_contract_salary": 50334487,
    "unsigned_first_round_holds": 0,
-   "known_conditional_salary": 0,
+   "known_conditional_salary": 2461617,
    "unpriced_option_count": 0,
    "free_agent_holds": null,
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 36222517,
-   "base_plus_priced_options": 36222517,
+   "known_base_allocations": 50334487,
+   "base_plus_priced_options": 52796104,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": null,
@@ -626,16 +663,16 @@
   },
   {
    "season": "2006-07",
-   "scheduled_contract_salary": 32798231,
+   "scheduled_contract_salary": 32349731,
    "unsigned_first_round_holds": 0,
-   "known_conditional_salary": 3201202,
+   "known_conditional_salary": 18640208,
    "unpriced_option_count": 0,
    "free_agent_holds": null,
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 32798231,
-   "base_plus_priced_options": 35999433,
+   "known_base_allocations": 32349731,
+   "base_plus_priced_options": 50989939,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": null,

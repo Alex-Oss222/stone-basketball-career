@@ -62,7 +62,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Brevin Knight](players/knighbr01.md) | Free agent | under contract | Brevin Knight · 1999-11-01 | 1 |
 | [Brian Cardinal](players/cardibr01.md) | Chicago Bulls | under contract | Brian Cardinal · 2004-07-15 | 1 |
 | [Brian Cook](players/cookbr01.md) | Los Angeles Lakers | No verified contract record | No verified current agreement | 0 |
-| [Brian Grant](players/grantbr01.md) | Miami Heat | under contract | Brian Grant · 2004-10-01 | 2 |
+| [Brian Grant](players/grantbr01.md) | Miami Heat | under contract | Brian Grant · 2000-08-30 | 1 |
 | [Brian Scalabrine](players/scalabr01.md) | New Jersey Nets | under contract | Brian Scalabrine · 2003-08-21 | 2 |
 | [Brian Shaw](players/shawbr01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Brian Skinner](players/skinnbr01.md) | Washington Wizards | under contract | Brian Skinner · 2004-09-30 | 3 |
@@ -77,7 +77,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Carlos Boozer](players/boozeca01.md) | Cleveland Cavaliers | under contract | Carlos Boozer · 2002-08-07 | 1 |
 | [Carlos Delfino](players/delfica01.md) | Dallas Mavericks | under contract | Carlos Delfino · 2004-07-14 | 1 |
 | [Carmelo Anthony](players/anthoca01.md) | Denver Nuggets | No verified contract record | No verified current agreement | 0 |
-| [Caron Butler](players/butleca01.md) | Miami Heat | under contract | Caron Butler · 2004-10-01 | 2 |
+| [Caron Butler](players/butleca01.md) | Miami Heat | under rookie contract | Caron Butler · 2002-07-02 | 1 |
 | [Casey Jacobsen](players/jacobca01.md) | Phoenix Suns | under rookie contract | Casey Jacobsen · 2002-07-05 | 1 |
 | [Cezary Trybanski](players/trybace01.md) | Charlotte Bobcats | under contract | Cezary Trybanski · existing contract; signing date not recorded | 1 |
 | [Charles Oakley](players/oaklech01.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
@@ -159,7 +159,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Eddie Gill](players/gilled01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Eddie Griffin](players/griffed01.md) | Houston Rockets | under rookie contract | Eddie Griffin · 2001-09-19 | 1 |
 | [Eddie House](players/houseed01.md) | Los Angeles Clippers | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
-| [Eddie Jones](players/jonesed02.md) | Miami Heat | under contract | Eddie Jones · 2004-10-01 | 2 |
+| [Eddie Jones](players/jonesed02.md) | Miami Heat | under contract | Eddie Jones · 2000-08-01 | 1 |
 | [Eddie Robinson](players/robined01.md) | Free agent | under contract | Eddie Robinson · existing contract; signing date not recorded | 1 |
 | [Eddy Curry](players/curryed01.md) | Chicago Bulls | under rookie contract | Eddy Curry · 2001-10-01 | 1 |
 | [Eduardo Najera](players/najered01.md) | Dallas Mavericks | under contract | Eduardo Najera · 2002-09-28 | 1 |
