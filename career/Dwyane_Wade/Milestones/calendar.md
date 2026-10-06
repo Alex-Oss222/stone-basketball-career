@@ -50,6 +50,12 @@ Activation: The authoritative current date and recorded event determine what is 
 - Stats: declared, closed game results, never future or historical Wade results.
 - Exit meeting: the actual season close and a recorded meeting.
 
+## Your working calendar
+
+| Event | Dates | Status | Next checkpoint | Open |
+| --- | --- | --- | --- | --- |
+| Wade's 2004 camp teamwork focus | 2004-10-05 to 2004-11-01 | Planned | 2004-10-05: Training camp opens and the focus moves from planned to actual camp work | [Working record](index.html#training_camp) |
+
 ## Available response paths
 
 - [Open the current event](../2004-05/04_Training_Camp/note.md): Read the owning career note and record the player's actual response when one is due.
@@ -64,7 +70,7 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Authoritative career checkpoint](../2004-05/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2004-05/04_Training_Camp/note.md)
+- [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)

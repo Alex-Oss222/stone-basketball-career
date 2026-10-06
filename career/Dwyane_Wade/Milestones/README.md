@@ -15,5 +15,5 @@ These are current career views, with activation gates and actual evidence. An in
 | [Offseason training](offseason_training.md) | active | A dated player priority and staff-supported development block. |
 | [Trade update](trade_update.md) | inactive | An actual dated proposal, consultation or executed transaction. |
 | [Season exit meeting](exit_meeting.md) | inactive | The player's season closes and a dated exit meeting is recorded. |
-| [Training camp](training_camp.md) | inactive | The club opens camp and records participation, evaluation or an actual role decision. |
+| [Training camp](training_camp.md) | planned | The club opens camp and records participation, evaluation or an actual role decision. |
 | [Stats review](stats_review.md) | inactive | A declared, closed game result supplies observed participation and the player box. |
