@@ -2,9 +2,9 @@
 
 # Contract | Bob Sura
 
-Known through: 2004-10-21. [Open interactive contract](surabo01.html#contract) · [Contract history](surabo01.html#contract-history)
+Known through: 2004-10-22. [Open interactive contract](surabo01.html#contract) · [Contract history](surabo01.html#contract-history)
 
-Bob Sura: camp contract. Evidence cutoff: 2004-10-21.
+Bob Sura: camp contract. Evidence cutoff: 2004-10-22.
 
 ## Current contract
 

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-21**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-22**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -49,13 +49,13 @@ Card date: **2004-10-21**. 504 registry players, one Markdown card and one inter
 | [Jamaal Tinsley](tinslja01.md) | Indiana Pacers | 26 | sourced | [open](tinslja01.html) |
 | [Jamal Crawford](crawfja01.md) | Chicago Bulls | 24 | sourced | [open](crawfja01.html) |
 | [Jamison Brewer](breweja01.md) | Free agent | None | silhouette | [open](breweja01.html) |
-| [Jannero Pargo](pargoja01.md) | Charlotte Bobcats | 24 | sourced | [open](pargoja01.html) |
+| [Jannero Pargo](pargoja01.md) | Charlotte Bobcats | 25 | sourced | [open](pargoja01.html) |
 | [Jason Hart](hartja01.md) | Free agent | None | silhouette | [open](hartja01.html) |
 | [Jason Kidd](kiddja01.md) | New Jersey Nets | 31 | sourced | [open](kiddja01.html) |
 | [Jason Terry](terryja01.md) | Atlanta Hawks | 27 | sourced | [open](terryja01.html) |
 | [Jason Williams](willija02.md) | Memphis Grizzlies | 28 | sourced | [open](willija02.html) |
 | [Jay Williams](willija03.md) | Chicago Bulls | 23 | sourced | [open](willija03.html) |
-| [Jeff McInnis](mcinnje01.md) | New Orleans Hornets | 29 | sourced | [open](mcinnje01.html) |
+| [Jeff McInnis](mcinnje01.md) | New Orleans Hornets | 30 | sourced | [open](mcinnje01.html) |
 | [John Salmons](salmojo01.md) | Philadelphia 76ers | 24 | sourced | [open](salmojo01.html) |
 | [John Stockton](stockjo01.md) | Free agent | 42 | sourced | [open](stockjo01.html) |
 | [Juan Dixon](dixonju01.md) | Washington Wizards | 26 | sourced | [open](dixonju01.html) |
@@ -141,7 +141,7 @@ Card date: **2004-10-21**. 504 registry players, one Markdown card and one inter
 | [DeShawn Stevenson](stevede01.md) | Utah Jazz | 23 | sourced | [open](stevede01.html) |
 | [Derrick Dial](dialde01.md) | Free agent | None | silhouette | [open](dialde01.html) |
 | [Devin Brown](brownde02.md) | San Antonio Spurs | None | silhouette | [open](brownde02.html) |
-| [Dion Glover](glovedi01.md) | Memphis Grizzlies | 25 | silhouette | [open](glovedi01.html) |
+| [Dion Glover](glovedi01.md) | Memphis Grizzlies | 26 | silhouette | [open](glovedi01.html) |
 | [Doug Christie](chrisdo01.md) | Sacramento Kings | 34 | sourced | [open](chrisdo01.html) |
 | [Dwyane Wade](wadedw01.md) | Miami Heat | 20 | sourced | [open](wadedw01.html) |
 | [Eddie House](houseed01.md) | Los Angeles Clippers | 26 | sourced | [open](houseed01.html) |
