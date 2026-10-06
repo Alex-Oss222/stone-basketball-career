@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-14**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-15**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -148,7 +148,7 @@ Card date: **2004-10-14**. 504 registry players, one Markdown card and one inter
 | [Eddie Jones](jonesed02.md) | Miami Heat | 32 | silhouette | [open](jonesed02.html) |
 | [Eric Piatkowski](piatker01.md) | Houston Rockets | 34 | sourced | [open](piatker01.html) |
 | [Erick Strickland](stricer01.md) | Milwaukee Bucks | 30 | silhouette | [open](stricer01.html) |
-| [Fred Hoiberg](hoibefr01.md) | Denver Nuggets | 31 | sourced | [open](hoibefr01.html) |
+| [Fred Hoiberg](hoibefr01.md) | Denver Nuggets | 32 | sourced | [open](hoibefr01.html) |
 | [Fred Jones](jonesfr01.md) | Indiana Pacers | None | silhouette | [open](jonesfr01.html) |
 | [George Lynch](lynchge01.md) | New Orleans Hornets | 34 | silhouette | [open](lynchge01.html) |
 | [Greg Buckner](buckngr01.md) | Philadelphia 76ers | 28 | silhouette | [open](buckngr01.html) |
