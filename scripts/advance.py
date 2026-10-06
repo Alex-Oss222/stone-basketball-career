@@ -301,7 +301,7 @@ def miami_trade_day(day):
         draw()
         out += "\n" + run("scripts/run_trade.py", "--season-day", day, show=False)
     for line in out.splitlines():
-        if line.startswith(("MIAMI TRADE", "Miami trade", "Miami proposes", "Wade's request")):
+        if line.startswith(("MIAMI TRADE", "Miami trade", "Miami proposes", "Wade's request", "trade offers")):
             say("    " + line)
         if line.startswith("MIAMI TRADE"):
             TRADES_TODAY.append(line)

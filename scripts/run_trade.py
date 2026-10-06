@@ -325,6 +325,55 @@ def answer_requests(day, root=ROOT):
     return lines
 
 
+OFFERS = signing.TEAM / "Transactions/Trade_Offers"
+
+
+def incoming(day, root=ROOT):
+    """Offers other clubs make to Miami on a scan day (`TradeDesk.offers`), recorded once in
+    `00_Team/Transactions/Trade_Offers/<day>.json`; the best one Miami's rules accept is completed at once (the club
+    proposed it, Miami's answer is its rule). Returns the completed trade record or None."""
+    root = Path(root)
+    path = root / OFFERS / f"{day}.json"
+    if path.is_file():                                   # a day's offers are decided once
+        return None
+    if awaiting(day, root):
+        return None
+    from runtime.trades import IN_SEASON_MIN_GAIN, package_key
+    desk = TradeDesk(day, FrontOffice(day, Market(day, root), root), root)
+    snap = standing(root)
+    declined = {package_key(r["trade"]) for r in season_records(root) if r["status"] in ("declined", "void")}
+    offers = desk.offers(requests(root), snap["standing"], IN_SEASON_MIN_GAIN, exclude=declined)
+    chosen = next((o for o in offers if o["accepted"]), None)
+    record = None
+    writer = signing.Writer(root)
+    state = writer.load(signing.STATE)
+    if chosen:
+        trade = chosen["trade"]
+        trade_id = desk.trade_id(trade)
+        record = {"trade_id": trade_id, "date": day, "status": "completed", "kind": "trade", "origin": "offer_from_club",
+                  "trade": trade, "valuation": chosen["valuation"],
+                  "ranking": {"trade": trade, "miami_gain": chosen["miami_gain"], "partner_gain": chosen["partner_gain"],
+                              "accept": 1.0, "score": chosen["miami_gain"], "wade_request": False},
+                  "decision_event": None, "negotiation": None, "standing": snap, "consultation": None,
+                  "answer": {"outcome": "accept", "date": day, "by": "Miami Heat front office (rule)"}, "applied": day,
+                  "basis": f"{trade['partner']} offered it (its gain {chosen['partner_gain']:+.3f}); {chosen['reason']} (runtime/trades.py offers)."}
+        signing.apply_trade(writer, record, day, desk=desk)
+        (root / signing.TRADES).mkdir(parents=True, exist_ok=True)
+        (root / signing.TRADES / f"{trade_id}.json").write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        signing.note_event(writer, signing.phase_note_for(state), day,
+                           f"{trade['partner']} offers {', '.join(trade['miami_in'])} for {', '.join(trade['miami_out'])}; "
+                           f"Miami's front office accepts. Record: `00_Team/Transactions/Trades/{trade_id}.json`.")
+        writer.commit()
+        signing.refresh_finance(writer, FrontOffice(day, Market(day, root), root), day)
+    log = {"schema_version": 1, "owner": "ai_gm", "kind": "trade_offers_to_miami", "date": day,
+           "rule": incoming.__doc__.split("\n\n")[0].replace("\n", " "),
+           "offers": [{k: o[k] for k in ("trade", "partner_gain", "miami_gain", "accepted", "reason")} for o in offers],
+           "completed": record["trade_id"] if record else None}
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(log, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return record
+
+
 def season_day(day, root=ROOT):
     """The driver's in-season step (scripts/advance.py): apply answers drawn for earlier proposals, then, when a scan
     is due, the front office's proposal. Returns the lines to report; a completed trade starts with "MIAMI TRADE"."""
@@ -341,6 +390,14 @@ def season_day(day, root=ROOT):
         return lines + ["awaiting the draw: " + ", ".join(pending)]
     due = scan_due(day, root)
     if due and due[0]:
+        taken = incoming(day, root)
+        if taken:
+            t = taken["trade"]
+            return lines + [f"MIAMI TRADE: {t['partner']} offered and Miami accepts: Miami sends {', '.join(t['miami_out'])} "
+                            f"for {', '.join(t['miami_in'])} ({taken['trade_id']})"]
+        offered = json.loads((Path(root) / OFFERS / f"{day}.json").read_text(encoding="utf-8"))["offers"] if (Path(root) / OFFERS / f"{day}.json").is_file() else []
+        if offered:
+            lines.append(f"trade offers to Miami: {len(offered)} received, none accepted")
         record = propose(day, root)
         if record:
             t = record["trade"]

@@ -88,6 +88,8 @@ IN_SEASON_MIN_GAIN = 0.10                # judgement: during the season Miami ch
 TRADE_COOLDOWN_DAYS = 28                 # judgement: after a completed trade the staff lets the roster settle before the next
 CAP_FLEXIBILITY_WEIGHT = 0.3            # judgement (the user's priority, October 2026): Miami values room in later seasons; a
                                          # trade's change in committed salary after this season, in caps, moves its gain by this
+OFFER_MIN_GAIN = 0.08                    # judgement: another club offers Miami a deal only when it gains this much on its own objective
+OFFER_TARGETS, OFFER_OWN = 4, 8          # Miami players a club asks about (by its own valuation) and its own contracts it offers
 MAX_IN_SEASON_TRADES = 2                 # judgement: a club makes one or two in-season trades in a typical 2000s season
 FILLERS_PER_CANDIDATE = 6                # a second incoming player (salary or depth) is searched among the partner's next contracts
 # Distressed assets (design 7.5 item 6): an injured player's current-season production counts at this share to the
@@ -1213,6 +1215,72 @@ class TradeDesk:
         found.sort(key=lambda f: (-f["score"], package_key(f["trade"])))
         self.needing_consultation.sort(key=lambda f: (-f["score"], package_key(f["trade"])))
         return found[:limit]
+
+    # -- offers from other clubs ----------------------------------------------------------------
+    def offers(self, requests=(), standing="unsigned_rookie", min_gain=IN_SEASON_MIN_GAIN, exclude=()):
+        """Offers other clubs make to Miami on the date, each club's best, with Miami's answer by its own rules.
+
+        A club asks about the Miami players it values most (OFFER_TARGETS, its own stance weights) and offers one or
+        two of its tradeable contracts (OFFER_OWN, largest first) for one or two of them: legal under the salary and
+        roster rules, with minutes for the arrivals, none of its untouchables, and a gain of OFFER_MIN_GAIN on its own
+        objective (`valuation`'s objective_gain), among packages that are no loss on Miami's own view (a club offers what
+        the other side might take). Miami's front office accepts an offer only when it would make the
+        deal itself: inside the payroll ceiling, Wade's requests weighed by his standing, a scored gain of `min_gain`;
+        a star the franchise consultation covers is never taken without Wade (the offer is declined). Both answers are
+        rules, not chance. Returns [{"trade", "partner_gain", "miami_gain", "accepted", "reason"}], best for Miami first."""
+        from itertools import combinations
+        from .camp import playable
+        from .consultations import consultation_required
+        wanted = {r["player"] for r in requests if r.get("subject") == "trade_target"}
+        opposed = {r["player"] for r in requests if r.get("subject") == "trade_opposed"}
+        mine = self.miami_tradeable()
+        room = self.fo.cap_room()
+        active = sum(1 for r in self.fo.roster["players"] if playable(r["status"]))
+        sal_out = {p["player"]: self.matching_salary(p, True)[0] for p in mine}
+        out = []
+        for club, entry in self.assets.contracts.items():
+            if club == MIAMI:
+                continue
+            own = [p for p in entry["players"] if p["status"] in UNDER_CONTRACT and p.get("bbr_id")
+                   and self.assets.salary(p) and not self.partner_blocked(club, p)]
+            own = sorted(own, key=lambda p: -self.assets.salary(p))[:OFFER_OWN]
+            if not own:
+                continue
+            sal_in = {p["player"]: self.assets.salary(p) for p in own}
+            targets = sorted(mine, key=lambda p: -Assets.club_value(self.assets.player_value(p, for_club=club),
+                                                                    STANCE_WEIGHTS[self.assets.posture(club)]))[:OFFER_TARGETS]
+            asks = [[p["player"]] for p in targets] + [list(c) for c in combinations([p["player"] for p in targets], 2)]
+            gives = [[p["player"]] for p in own] + [list(c) for c in combinations([p["player"] for p in own[:6]], 2)]
+            best = None
+            for outs in asks:
+                for ins in gives:
+                    trade = {"partner": club, "miami_out": outs, "miami_in": ins, "picks_out": [], "picks_in": []}
+                    if package_key(trade) in exclude or not self._prefilter(club, outs, ins, sal_out, sal_in, room, active):
+                        continue
+                    v = self.valuation(trade)
+                    if v["untouchable"] or v["objective_gain"] < OFFER_MIN_GAIN or v["miami_gain"] < 0:
+                        continue                       # a club offers what Miami might take: not a loss on Miami's own view
+                    if best is None or (v["objective_gain"], package_key(trade)) > (best[1]["objective_gain"], package_key(best[0])):
+                        if not self.errors(trade) and self.fits_partner(trade):
+                            best = (trade, v)
+            if best is None:
+                continue
+            trade, v = best
+            outs, ins = trade["miami_out"], trade["miami_in"]
+            gain = self.scored_gain(v, outs, ins, club, wanted, opposed, standing)
+            stars = [n for n in ins if consultation_required(standing, self.assets.valuation.value((self.partner_player(club, n) or {}).get("bbr_id")))]
+            if stars:
+                accepted, reason = False, f"{stars[0]} is a star the franchise consultation covers; the front office does not take him unasked"
+            elif not self.within_budget(outs, ins, club):
+                accepted, reason = False, "it would take a later season over the owner's payroll ceiling"
+            elif gain < min_gain:
+                accepted, reason = False, f"Miami's scored gain {gain:+.3f} is below {min_gain:+.2f}"
+            else:
+                accepted, reason = True, f"Miami's scored gain {gain:+.3f} clears {min_gain:+.2f}"
+            out.append({"trade": trade, "partner_gain": v["objective_gain"], "miami_gain": round(gain, 3), "accepted": accepted,
+                        "reason": reason, "valuation": v})
+        out.sort(key=lambda o: (-o["miami_gain"], package_key(o["trade"])))
+        return out
 
     # -- sign-and-trade ------------------------------------------------------------------------
     def synthetic_from_terms(self, player, bbr_id, club, terms, route, agreement_date=None):
