@@ -121,7 +121,11 @@ def checkpoint(day, push=True):
     commit(f"Advance {day}: checkpoint")
     if not push:
         return
-    audit = run("scripts/audit_journal.py", ok=(0, 1), show=False)          # roadmap 18b: journal and the published engine hash
+    for _ in range(40):                                                    # roadmap 18b: journal and the published engine hash
+        audit = run("scripts/audit_journal.py", ok=(0, 1), show=False)
+        if "no problems" in audit or not any(code in audit for code in ("502", "503", "timed out", "unreachable")):
+            break
+        time.sleep(30)                                                     # the engine is restarting (a deploy); wait
     if "no problems" not in audit:
         raise Stop("the engine journal audit failed: " + audit.splitlines()[-1][:200])
     tests = run("scripts/run_tests.py", ok=(0, 1), show=False)
