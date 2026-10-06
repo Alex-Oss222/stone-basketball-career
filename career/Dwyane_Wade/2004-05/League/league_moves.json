@@ -2288,6 +2288,24 @@
     "salary": "pro-rated minimum"
    },
    "note": "kept: 28.4 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2004-05-market-2005-01-16-expire-slayta01",
+   "date": "2005-01-16",
+   "kind": "expire",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": null,
+   "note": "10-day contract ended (6.3 minutes a game)"
   }
  ],
  "market_days": [
@@ -2365,6 +2383,7 @@
   "2005-01-12",
   "2005-01-13",
   "2005-01-14",
-  "2005-01-15"
+  "2005-01-15",
+  "2005-01-16"
  ]
 }
