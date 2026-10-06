@@ -1318,6 +1318,46 @@
    "bbr_id": "howarju01",
    "from": "Orlando Magic",
    "to": "Charlotte Bobcats"
+  },
+  {
+   "id": "2004-05-market-2004-11-16-waive-borchcu01",
+   "date": "2004-11-16",
+   "kind": "waive",
+   "player": "Curtis Borchardt",
+   "bbr_id": "borchcu01",
+   "from": "Boston Celtics",
+   "to": null,
+   "role": {
+    "player_id": "Curtis Borchardt",
+    "bbr_id": "borchcu01",
+    "position": "C",
+    "games": 67,
+    "minutes": 859
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-18"
+  },
+  {
+   "id": "2004-05-market-2004-11-16-rest_of_season-bateeme01",
+   "date": "2004-11-16",
+   "kind": "rest_of_season",
+   "player": "Mengke Bateer",
+   "bbr_id": "bateeme01",
+   "from": null,
+   "to": "Boston Celtics",
+   "role": {
+    "player_id": "Mengke Bateer",
+    "bbr_id": "bateeme01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.91 x fit"
   }
  ],
  "market_days": [
@@ -1334,6 +1374,7 @@
   "2004-11-12",
   "2004-11-13",
   "2004-11-14",
-  "2004-11-15"
+  "2004-11-15",
+  "2004-11-16"
  ]
 }

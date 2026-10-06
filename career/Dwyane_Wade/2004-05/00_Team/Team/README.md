@@ -2,7 +2,7 @@
 
 <!-- team-status:start -->
 
-**Status on 2004-11-15:** 17 under contract (14 active, 3 on the injured list), Miami 4-3, 7th in the East. The [register](Roster/README.md) labels every player's control and availability; expired, released and voided contracts stay on it as history.
+**Status on 2004-11-16:** 17 under contract (14 active, 3 on the injured list), Miami 5-3, 5th in the East. The [register](Roster/README.md) labels every player's control and availability; expired, released and voided contracts stay on it as history.
 
 <!-- team-status:end -->
 
