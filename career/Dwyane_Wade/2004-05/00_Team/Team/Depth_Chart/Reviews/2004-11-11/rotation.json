@@ -1,0 +1,105 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2004-11-11",
+ "team": "Miami Heat",
+ "total_minutes": 240,
+ "purpose": "Miami's rotation for the game builder: minutes per game in rotation order; the engine's injury and foul logic changes a night's minutes.",
+ "players": [
+  {
+   "player_id": "Mike James",
+   "position": "PG",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "jamesmi01",
+   "starter": true
+  },
+  {
+   "player_id": "Dwyane Wade",
+   "position": "SG",
+   "minutes": 34.0,
+   "ratings": {},
+   "starter": true
+  },
+  {
+   "player_id": "Caron Butler",
+   "position": "SF",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "butleca01",
+   "starter": true
+  },
+  {
+   "player_id": "Mehmet Okur",
+   "position": "PF",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "okurme01",
+   "starter": true
+  },
+  {
+   "player_id": "Brian Grant",
+   "position": "C",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "grantbr01",
+   "starter": true
+  },
+  {
+   "player_id": "Scott Padgett",
+   "position": "PF",
+   "minutes": 20.0,
+   "ratings": {},
+   "bbr_id": "padgesc01",
+   "starter": false
+  },
+  {
+   "player_id": "Udonis Haslem",
+   "position": "PF",
+   "minutes": 16.0,
+   "ratings": {},
+   "bbr_id": "hasleud01",
+   "starter": false
+  },
+  {
+   "player_id": "Rafer Alston",
+   "position": "PG",
+   "minutes": 12.0,
+   "ratings": {},
+   "bbr_id": "alstora01",
+   "starter": false
+  },
+  {
+   "player_id": "Eddie Jones",
+   "position": "SG",
+   "minutes": 10.0,
+   "ratings": {},
+   "bbr_id": "jonesed02",
+   "starter": false
+  },
+  {
+   "player_id": "Kendall Gill",
+   "position": "SG",
+   "minutes": 8.0,
+   "ratings": {},
+   "bbr_id": "gillke01",
+   "starter": false
+  },
+  {
+   "player_id": "Dorell Wright",
+   "position": "SF",
+   "minutes": 4.0,
+   "ratings": {},
+   "bbr_id": "wrighdo01",
+   "starter": false
+  }
+ ],
+ "starters": {
+  "PG": "Mike James",
+  "SG": "Dwyane Wade",
+  "SF": "Caron Butler",
+  "PF": "Mehmet Okur",
+  "C": "Brian Grant"
+ },
+ "review": "review.json"
+}

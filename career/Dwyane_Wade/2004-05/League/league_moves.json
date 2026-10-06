@@ -1095,6 +1095,108 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.85 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-11-claim-woodsqy01",
+   "date": "2004-11-11",
+   "kind": "claim",
+   "player": "Qyntel Woods",
+   "bbr_id": "woodsqy01",
+   "from": null,
+   "to": "Los Angeles Lakers",
+   "role": {
+    "player_id": "Qyntel Woods",
+    "bbr_id": "woodsqy01",
+    "position": "SF",
+    "games": 62,
+    "minutes": 673
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Charlotte Bobcats (worst record first)",
+   "waiver": "2004-05-market-2004-11-09-waive-woodsqy01"
+  },
+  {
+   "id": "2004-05-market-2004-11-11-waive-allenma01",
+   "date": "2004-11-11",
+   "kind": "waive",
+   "player": "allenma01",
+   "bbr_id": "allenma01",
+   "from": "Los Angeles Lakers",
+   "to": null,
+   "role": {
+    "player_id": "allenma01",
+    "bbr_id": "allenma01",
+    "position": "SF",
+    "games": 26,
+    "minutes": 519
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-13"
+  },
+  {
+   "id": "2004-05-market-2004-11-11-rest_of_season-smithle01",
+   "date": "2004-11-11",
+   "kind": "rest_of_season",
+   "player": "Leon Smith",
+   "bbr_id": "smithle01",
+   "from": null,
+   "to": "Los Angeles Lakers",
+   "role": {
+    "player_id": "Leon Smith",
+    "bbr_id": "smithle01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.81 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-11-waive-brunsri01",
+   "date": "2004-11-11",
+   "kind": "waive",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 80,
+    "minutes": 1945
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-13"
+  },
+  {
+   "id": "2004-05-market-2004-11-11-rest_of_season-grantpa01",
+   "date": "2004-11-11",
+   "kind": "rest_of_season",
+   "player": "Paul Grant",
+   "bbr_id": "grantpa01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Paul Grant",
+    "bbr_id": "grantpa01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.79 x fit"
   }
  ],
  "market_days": [
@@ -1106,6 +1208,7 @@
   "2004-11-07",
   "2004-11-08",
   "2004-11-09",
-  "2004-11-10"
+  "2004-11-10",
+  "2004-11-11"
  ]
 }
