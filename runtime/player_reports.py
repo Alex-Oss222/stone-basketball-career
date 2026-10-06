@@ -490,7 +490,8 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
     page = player / "README.md"
     statistics = outputs[page].split("## Statistics\n\n", 1)[1]
     navigation = [("Professional identity", profile), ("Career statistics", stats / "README.md"), ("Earned honors", award_page),
-                  ("National team / FIBA", np)]
+                  ("National team / FIBA", np), ("Career milestones", player / "Milestones/career_milestones.md"),
+                  ("Season tracker", player / "Milestones/calendar.md")]
     outputs[page] = GENERATED + "\n# Dwyane Wade | Player career\n\n"
     outputs[page] += "!" + link(page, overview, "Player career overview: professional identity, NBA regular-season statistics and playoff statistics") + "\n\n"
     outputs[page] += style.banner(page, as_of)

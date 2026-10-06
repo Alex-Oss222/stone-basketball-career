@@ -8,7 +8,9 @@ Each day runs the dated systems in order, each idempotent, so a stopped day can 
   2. a due fortnightly staff rotation review is written, its close starting battles drawn by the engine, and
      the review completed;
   3. the league's market day (waivers, claims, 10-day contracts) and, on Mondays to the deadline, the trade scan,
-     its packets drawn and accepted deals executed; disturbed clubs replace players Miami took;
+     its packets drawn and accepted deals executed; then Miami's own trade step (`scripts/run_trade.py --season-day`:
+     Mondays from December 15 to the deadline, one proposal at a time, drawn by the engine); disturbed clubs replace
+     players Miami took. The run stops, checkpointed and pushed, on the day a Miami trade executes;
   4. the day's Miami game (one at a time, so an injury reaches the next game) and league games are built, their
      inputs frozen (`game_requests.freeze`) and checked against the dated records;
   5. awards announced that morning are decided (an exact tie is an engine draw);
@@ -249,6 +251,23 @@ def camp_day(day):
     play(day)
 
 
+TRADES_TODAY = []
+
+
+def miami_trade_day(day):
+    """Miami's in-season trades (scripts/run_trade.py --season-day): drawn answers applied, a due scan's proposal
+    written and drawn by the engine, an accepted trade executed the same day. Every line is reported."""
+    out = run("scripts/run_trade.py", "--season-day", day, show=False)
+    if draws_pending():
+        draw()
+        out += "\n" + run("scripts/run_trade.py", "--season-day", day, show=False)
+    for line in out.splitlines():
+        if line.startswith(("MIAMI TRADE", "Miami trade", "Miami proposes")):
+            say("    " + line)
+        if line.startswith("MIAMI TRADE"):
+            TRADES_TODAY.append(line)
+
+
 def advance_day(day):
     from runtime import roster_moves
     say(f"== {day}")
@@ -277,6 +296,7 @@ def advance_day(day):
     if draws_pending():
         draw()
         run("scripts/league_day.py", "--write", day)
+    miami_trade_day(day)
     run("scripts/club_replacements.py", "--write", ok=(0, 1), show=False)
     run("scripts/build_season_games.py", "--write", day)
     run("scripts/build_league_slate.py", "--write", day, show=False)
@@ -327,12 +347,18 @@ def main():
     parser.add_argument("--from", dest="start", help="first day (default: the career clock's day, rerun safely)")
     parser.add_argument("--series-end", action="store_true",
                         help="also stop (with the checkpoint and push) on the day a Miami playoff series is decided")
+    parser.add_argument("--through-trades", action="store_true",
+                        help="keep going after a Miami trade (by default the run stops, checkpointed and pushed, the day one executes)")
     args = parser.parse_args()
     day = date.fromisoformat(args.start or state()["current_date"])
     end = date.fromisoformat(args.to)
     try:
         while day <= end:
             advance_day(day.isoformat())
+            if TRADES_TODAY and not args.through_trades:
+                checkpoint(day.isoformat())
+                say("DONE: " + "; ".join(TRADES_TODAY))     # the user is told of every Miami trade the day it happens
+                return 0
             if args.series_end and miami_series_decided(day.isoformat()):
                 checkpoint(day.isoformat())
                 say(f"DONE: {miami_series_decided(day.isoformat())}")

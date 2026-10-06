@@ -80,7 +80,12 @@ ACCEPT_HURDLE, ACCEPT_STEEPNESS = 0.06, 25.0   # a flat deal is usually passed; 
 ACCEPT_BOUNDS = (0.02, 0.95)
 DUMP_VALUE_PER_5M = 0.25                 # value points per $5M of a season's salary a club sheds on purpose
 SEARCH_MIN_ACCEPT = 0.40                 # Miami proposes only what the partner would plausibly take
-MAX_OUT, MAX_IN = 2, 2                   # players a search proposal moves each way
+MAX_OUT, MAX_IN = 3, 2                   # players a search proposal moves each way (three for two at most)
+CARRIED_ROUTES = ("existing", "option")  # rollover routes of a contract signed in an earlier season: no newly-signed restriction
+IN_SEASON_MIN_GAIN = 0.10                # judgement: during the season Miami changes its roster only for a clear gain
+TRADE_COOLDOWN_DAYS = 28                 # judgement: after a completed trade the staff lets the roster settle before the next
+MAX_IN_SEASON_TRADES = 2                 # judgement: a club makes one or two in-season trades in a typical 2000s season
+FILLERS_PER_CANDIDATE = 6                # a second incoming player (salary or depth) is searched among the partner's next contracts
 # Distressed assets (design 7.5 item 6): an injured player's current-season production counts at this share to the
 # club that would take him on (judgement, within the 15-40% discount). Evidence on the date only: Miami's injured
 # list with an injury reason, or a real player who missed all of his club's last INJURY_GAMES closed games.
@@ -120,6 +125,11 @@ def _ledger_inventory(on, season, ledger, valuation, root=ROOT):
     minimum for his service, labelled as such."""
     from .league_moves import effective_roster
     from .seasons import clubs as season_clubs
+    # A player Miami traded away carries the contract Miami assigned (its cap sheet keeps the traded entry).
+    sheet = read(Path(f"career/Dwyane_Wade/{season}/00_Team/Finances/contract_schedules.json"), root) \
+        if (Path(root) / f"career/Dwyane_Wade/{season}/00_Team/Finances/contract_schedules.json").is_file() else {"players": []}
+    sent = {p.get("bbr_id"): p for p in sheet.get("players", []) if p.get("status") == "traded" and p.get("bbr_id")}
+    ledger = dict(ledger, **{b: {"player": p["player"], "schedule": p["schedule"]} for b, p in sent.items()})
     out = {}
     for club in season_clubs(season, root):
         if club == MIAMI:
@@ -270,7 +280,8 @@ class Assets:
             stance = "contending" if wins >= CONTENDING_WINS else "rebuilding" if wins <= REBUILDING_WINS else "middle"
             if stance == "middle":
                 ages = sorted(((self.valuation.value(p["bbr_id"]) or 0.0, self.valuation.age(p["bbr_id"]))
-                               for p in self.contracts.get(club, {}).get("players", []) if p.get("bbr_id")), reverse=True)[:8]
+                               for p in self.contracts.get(club, {}).get("players", []) if p.get("bbr_id")),
+                              key=lambda x: (x[0], -1 if x[1] is None else x[1]), reverse=True)[:8]   # an unknown birth date sorts last
                 ages = [a for _, a in ages if a is not None]
                 if ages and sum(ages) / len(ages) <= STANCE_YOUNG_AGE and wins < 41:
                     stance = "rebuilding"
@@ -462,6 +473,8 @@ def acceptance(v):
     """The partner's chance of accepting, from its objective (`TradeDesk.valuation`), or None for a flat no:
     below the floor (a salary dump counted), or an untouchable without UNTOUCHABLE_MARGIN more."""
     gain = v["objective_gain"]
+    if len(v.get("untouchable") or []) > 1:
+        return None                      # a club never parts with two of its cornerstones in one deal (judgement)
     if v.get("untouchable") and gain < UNTOUCHABLE_MARGIN:
         return None
     if gain < ACCEPT_FLOOR:
@@ -483,6 +496,13 @@ def st_in(trade):
 
 def st_out(trade):
     return trade.get("sign_and_trade_out")
+
+
+def package_key(trade):
+    """A proposal's players and picks without its date: the same package asked again is the same key."""
+    return json.dumps([trade.get("partner"), sorted(trade.get("miami_out", [])), sorted(trade.get("miami_in", [])),
+                       sorted((p["year"], p["round"]) for p in trade.get("picks_out", [])),
+                       sorted((p["year"], p["round"]) for p in trade.get("picks_in", []))])
 
 
 def is_sign_and_trade(trade):
@@ -592,6 +612,8 @@ class TradeDesk:
         if player["player"] == PROTAGONIST:
             return "Wade's trade would change the simulated club (AGENTS.md); not supported"
         signed = player.get("signed_date")
+        if player.get("route") in CARRIED_ROUTES:
+            signed = None                    # a contract carried over at the rollover or an exercised option: nothing new was signed
         if signed and signed >= f"{self.season[:4]}-07-01":
             rule = self.cba["trades"]
             if player.get("route") == "rookie_scale":
@@ -606,10 +628,11 @@ class TradeDesk:
 
     def partner_blocked(self, club, player):
         row = self.signings.get(player.get("bbr_id"))
-        if row and row["date"] >= f"{self.season[:4]}-07-01":
-            until = max(months_after(row["date"], 3), self._december_15())
+        signed = row and (row.get("date") or UNDATED_EXIT)      # an undated summer signing counts from the undated-exit day
+        if signed and signed >= f"{self.season[:4]}-07-01":
+            until = max(months_after(signed, 3), self._december_15())
             if self.on < until:
-                return f"newly signed on {row['date']}: not tradable until {until}"
+                return f"newly signed on {signed}: not tradable until {until}"
         return None
 
     def matching_salary(self, player, outgoing_from_miami):
@@ -759,6 +782,9 @@ class TradeDesk:
         leaving = [n for n in trade.get("miami_out", []) if not (own and own["player"] == n)]   # the own sign-and-trade player is not on the active register
         if active - len(leaving) + len(trade.get("miami_in", [])) > rules["roster_max_after_trade"]:
             errors.append(f"Miami would carry more than {rules['roster_max_after_trade']} players")
+        partner_count = self.partner_roster_count(club)
+        if partner_count is not None and partner_count - len(trade.get("miami_in", [])) + len(trade.get("miami_out", [])) > rules["roster_max_after_trade"]:
+            errors.append(f"{club} would carry more than {rules['roster_max_after_trade']} players")
         # Picks: ownership and the Stepien rule.
         owned = {(p["year"], p["round"]) for p in self.picks.get("picks", []) if p.get("owned")}
         for pick in trade.get("picks_out", []):
@@ -944,7 +970,8 @@ class TradeDesk:
         if p is None:
             why = (f"{trade['partner']} keeps {', '.join(n for n, _ in v['untouchable'])} "
                    f"({'; '.join(w for _, w in v['untouchable'])}): it needs {UNTOUCHABLE_MARGIN:.0%} more on its own objective"
-                   if v["untouchable"] and v["objective_gain"] < UNTOUCHABLE_MARGIN else
+                   + (", and never parts with two in one deal" if len(v["untouchable"]) > 1 else "")
+                   if v["untouchable"] and (v["objective_gain"] < UNTOUCHABLE_MARGIN or len(v["untouchable"]) > 1) else
                    f"{trade['partner']} ({v['posture']}) loses {v['objective_gain']:+.1%} on its own objective, below its floor {ACCEPT_FLOOR:+.0%}")
             return None, [why]
         outs = ", ".join(trade.get("miami_out", []) + [f"{x['year']} round {x['round']}" for x in trade.get("picks_out", [])]) or "nothing"
@@ -971,65 +998,149 @@ class TradeDesk:
                 "basis": basis}, v
 
     # -- Miami's search ----------------------------------------------------------------------
-    def _combos(self):
-        tradeable = [p for p in self.miami_tradeable()]
-        return [[p["player"]] for p in tradeable] + [[a["player"], b["player"]] for i, a in enumerate(tradeable) for b in tradeable[i + 1:]]
+    def _combos(self, most=2):
+        """Miami's outgoing groups of one to `most` tradeable players."""
+        from itertools import combinations
+        names = [p["player"] for p in self.miami_tradeable()]
+        return [list(c) for n in range(1, most + 1) for c in combinations(names, n)]
 
-    def search(self, requests=(), standing="unsigned_rookie", limit=10, consultations=None):
+    def partner_roster_count(self, club):
+        """The partner's players on the date (the simulated league's roster), or None before a season has one."""
+        if self.season == SEASON:
+            return None
+        if not hasattr(self, "_partner_counts"):
+            self._partner_counts = {}
+        if club not in self._partner_counts:
+            from .league_moves import effective_roster
+            self._partner_counts[club] = len(effective_roster(club, self.on, self.season, self.root))
+        return self._partner_counts[club]
+
+    def _prefilter(self, club, outs, ins, sal_out, sal_in, room, active):
+        """The salary rule and both roster limits on salaries alone, before the full legality and valuation."""
+        rules = self.cba["trades"]
+        pct, plus = rules["matching_over_cap"]["incoming_max_percent_of_outgoing"] / 100, rules["matching_over_cap"]["plus_dollars"]
+        out_s, in_s = sum(sal_out[n] for n in outs), sum(sal_in[n] for n in ins)
+        if room["committed"] + room["holds"] - out_s + in_s > self.cap and in_s > out_s * pct + plus:
+            return False
+        if (self.assets.payroll(club) or 0) - in_s + out_s > self.partner_cap(club) and out_s > in_s * pct + plus:
+            return False
+        if active - len(outs) + len(ins) > rules["roster_max_after_trade"]:
+            return False
+        count = self.partner_roster_count(club)
+        return count is None or count - len(ins) + len(outs) <= rules["roster_max_after_trade"]
+
+    def payroll_after(self, outs, ins, club):
+        """Miami's payroll by season (this one and the next three) before and after moving `outs` for `ins`."""
+        seasons = seasons_from(self.season, 4)
+        if not hasattr(self, "_committed"):
+            self._committed = {s_: self.fo.committed_in(s_) for s_ in seasons}
+        out = {}
+        for s_ in seasons:
+            leave = sum(int((self.miami_player(n)[0] or {}).get("schedule", {}).get(s_) or 0) for n in outs)
+            come = sum(int((self.partner_player(club, n) or {}).get("schedule", {}).get(s_) or 0) for n in ins)
+            out[s_] = (self._committed[s_], self._committed[s_] - leave + come)
+        return out
+
+    def within_budget(self, outs, ins, club):
+        """The front office's payroll rule: no season of the next four ends above the ceiling because of the trade
+        (a season already above it may not rise). Judgement, the owner's budget (`payroll_ceiling`)."""
+        ceiling = self.fo.payroll_ceiling()
+        return all(after <= max(ceiling, before) for before, after in self.payroll_after(outs, ins, club).values())
+
+    def search(self, requests=(), standing="unsigned_rookie", limit=10, consultations=None, min_gain=SEARCH_MIN_GAIN, exclude=()):
         """Proposals Miami's front office would make: legal, likely to be accepted, and a gain for Miami.
+
+        Packages: one to MAX_OUT of Miami's tradeable players for one or two of the partner's (a target Miami
+        needs, alone or with a second contract for salary or depth), and, when the partner would not take the
+        players alone, the same with Miami's next owned first-round pick added. `exclude` holds trade keys
+        (`package_key`) already declined this season, never asked twice.
 
         `consultations(kind, player)` answers "approve", "object" or None for a star the franchise
         consultation gate covers; an objected star is skipped, an unanswered one is evaluated but kept
         aside in `needing_consultation` rather than returned (runtime/consultations.py). Free agents are
         never candidates here; a sign-and-trade is a negotiation's execution, not a search result."""
+        from .camp import playable
         from .consultations import consultation_required
         from .standing import STANDING_WEIGHT
         needs = self.fo.needs()
         need_positions = [pos for pos, n in needs.items() if n["minutes_short"] > 0 or n["quality_gap"] >= 0.3]
         wanted = {r["player"] for r in requests if r.get("subject") == "trade_target"}
         opposed = {r["player"] for r in requests if r.get("subject") == "trade_opposed"}
-        combos = self._combos()
+        outs_all = self._combos(MAX_OUT)
+        sal_out = {}
+        for out in outs_all:
+            for n in out:
+                if n not in sal_out:
+                    sal_out[n] = self.matching_salary(self.miami_player(n)[0], True)[0]
+        room = self.fo.cap_room()
+        active = sum(1 for r in self.fo.roster["players"] if playable(r["status"]))
+        owned = [{"year": p["year"], "round": p["round"]} for p in self.picks.get("picks", []) if p.get("owned") and p["round"] == 1]
+        sweetener = sorted(owned, key=lambda x: x["year"])[:1]
         found = []
         self.needing_consultation = []
         for club, entry in self.assets.contracts.items():
             if club == MIAMI:
                 continue
+            tradeable = [p for p in entry["players"] if p["status"] in UNDER_CONTRACT and p.get("bbr_id")
+                         and self.assets.salary(p) and not self.partner_blocked(club, p)]
             candidates = []
-            for p in entry["players"]:
-                if p["status"] not in ("under_contract", "under_rookie_contract", "under_contract_unverified") or not p.get("bbr_id"):
-                    continue
+            for p in tradeable:
                 pos = self.assets.positions.get(p["bbr_id"], (None, "SF", 9))[1].split("-")[0]
                 value = self.assets.player_value(p, for_club=MIAMI)
                 helps = self.fo.skill_fit(p["bbr_id"]) >= SEARCH_SKILL_FIT     # a skill Miami lacks, at any position
                 if ((pos in need_positions or helps) and value["production"] >= 0.5) or p["player"] in wanted:
                     candidates.append(p)
-            for p in candidates[:8]:
+            candidates = candidates[:8]
+            if not candidates:
+                continue
+            sal_in = {p["player"]: self.assets.salary(p) for p in tradeable}
+            others = sorted(tradeable, key=lambda p: -sal_in[p["player"]])
+            incoming, seen = [], set()
+            for p in candidates:
+                groups = [[p["player"]]] + [[p["player"], f["player"]] for f in [o for o in others if o["player"] != p["player"]][:FILLERS_PER_CANDIDATE]]
+                if MAX_IN < 2:
+                    groups = groups[:1]
+                for g in groups:
+                    key = frozenset(g)
+                    if key not in seen:
+                        seen.add(key)
+                        incoming.append((p, g))
+            for p, ins in incoming:
                 name = p["player"]
-                star = consultation_required(standing, self.assets.valuation.value(p["bbr_id"]))
-                answer = consultations("trade", name) if (star and consultations) else None
-                if star and answer == "object":
+                stars = [n for n in ins if consultation_required(standing, self.assets.valuation.value(
+                    (self.partner_player(club, n) or {}).get("bbr_id")))]
+                answers = {n: consultations("trade", n) if consultations else None for n in stars}
+                if any(a == "object" for a in answers.values()):
                     continue
-                for outs in combos:
-                    trade = {"partner": club, "miami_out": outs, "miami_in": [name], "picks_out": [], "picks_in": []}
-                    packet, v = self.acceptance_packet(trade)
-                    if packet is None or packet["options"]["accept"] < SEARCH_MIN_ACCEPT:
-                        continue                   # only deals the partner would plausibly take
-                    gain = v["miami_gain"]
-                    if name in wanted:
-                        gain *= 1 + STANDING_WEIGHT[standing]
-                    if any(o in opposed for o in outs):
-                        gain *= 1 - STANDING_WEIGHT[standing]
-                    if gain < SEARCH_MIN_GAIN:
+                for outs in outs_all:
+                    if not self._prefilter(club, outs, ins, sal_out, sal_in, room, active) or not self.within_budget(outs, ins, club):
                         continue
-                    row = {"trade": trade, "miami_gain": round(gain, 3), "partner_gain": v["objective_gain"],
-                           "accept": packet["options"]["accept"], "score": round(gain, 3),
-                           "wade_request": name in wanted or any(o in opposed for o in outs)}
-                    if star and answer != "approve":
-                        self.needing_consultation.append(dict(row, consultation="required", star_value=round(self.assets.valuation.value(p["bbr_id"]), 3)))
-                    else:
-                        found.append(dict(row, consultation="approved" if star else None))
-        found.sort(key=lambda f: -f["score"])
-        self.needing_consultation.sort(key=lambda f: -f["score"])
+                    for picks_out in ([], sweetener) if sweetener else ([],):
+                        trade = {"partner": club, "miami_out": list(outs), "miami_in": list(ins), "picks_out": list(picks_out), "picks_in": []}
+                        if package_key(trade) in exclude:
+                            break
+                        packet, v = self.acceptance_packet(trade)
+                        if packet is None or packet["options"]["accept"] < SEARCH_MIN_ACCEPT:
+                            continue           # only deals the partner would plausibly take; the next try adds the pick
+                        gain = v["miami_gain"]
+                        if any(n in wanted for n in ins):
+                            gain *= 1 + STANDING_WEIGHT[standing]
+                        if any(o in opposed for o in outs):
+                            gain *= 1 - STANDING_WEIGHT[standing]
+                        if gain >= min_gain:
+                            row = {"trade": trade, "miami_gain": round(gain, 3), "partner_gain": v["objective_gain"],
+                                   "accept": packet["options"]["accept"], "score": round(gain, 3),
+                                   "wade_request": any(n in wanted for n in ins) or any(o in opposed for o in outs)}
+                            pending = [n for n in stars if answers[n] != "approve"]
+                            if pending:
+                                self.needing_consultation.append(dict(row, consultation="required", consultation_player=pending[0],
+                                                                      star_value=round(self.assets.valuation.value(self.partner_player(club, pending[0])["bbr_id"]), 3)))
+                            else:
+                                found.append(dict(row, consultation="approved" if stars else None,
+                                                  consultation_player=stars[0] if stars else None))
+                        break                  # the partner takes it (or Miami does not want it): no pick needed
+        found.sort(key=lambda f: (-f["score"], package_key(f["trade"])))
+        self.needing_consultation.sort(key=lambda f: (-f["score"], package_key(f["trade"])))
         return found[:limit]
 
     # -- sign-and-trade ------------------------------------------------------------------------

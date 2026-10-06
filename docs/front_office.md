@@ -100,6 +100,21 @@ Validation (`trade_record_errors`) checks every trade record: a known status, it
 
 Proposals to Miami from real clubs and injuries in the value are not built; the design (section 7) keeps them as later work.
 
+### In-season trades (from 2004-05; the user's request for a full trade system, October 2026)
+
+`scripts/advance.py` runs Miami's trade step every regular-season day (`python scripts/run_trade.py --season-day <date>`): answers drawn for earlier proposals are applied first, then, when a scan is due, the front office writes its top-ranked proposal and the engine draws the partner's answer; an accepted trade executes the same day and the run stops there, checkpointed and pushed, so the user is told the day it happens (`--through-trades` keeps going). Judgement constants in `runtime/trades.py`:
+
+| Piece | Rule |
+|---|---|
+| Packages | one to `MAX_OUT` (3) of Miami's tradeable players for one or two of the partner's: a target at a position Miami needs (or with a skill it lacks), alone or with a second contract for salary or depth (the partner's `FILLERS_PER_CANDIDATE` largest); when the partner would not take the players alone, the same with Miami's next owned first-round pick added |
+| Cadence | scans on Mondays from December 15 (when the summer's signings become tradable league-wide) to the trade deadline; one proposal at a time; none for `TRADE_COOLDOWN_DAYS` (28) after a completed trade; at most `MAX_IN_SEASON_TRADES` (2) completed in-season trades; a declined or void package is never asked again that season |
+| Threshold | Miami's gain on its own objective at least `IN_SEASON_MIN_GAIN` (0.10; the summer keeps `SEARCH_MIN_GAIN`); the partner's acceptance at least `SEARCH_MIN_ACCEPT` |
+| Budget | no season of the next four may end above the owner's payroll ceiling because of the trade (a season already above it may not rise) |
+| Legality | the rules above plus the partner's 15-player limit on the simulated roster; a partner never gives up two of its untouchables in one package; contracts carried over at the rollover (`existing`, `option` routes) were not newly signed and carry no restriction |
+| Write-back | the partner's contracts come from the season's dated inventory (the league ledger); a player Miami sends keeps the contract Miami assigned on the partner's inventory; his previous minute share is his last real season's; a trade acquisition is never a disturbed club (`club_replacements`): the partner chose the deal and received players back |
+
+Wade's `trade_target` and `trade_opposed` requests from every phase folder of the season weigh on the ranking; at `franchise` standing the consultation gate covers every star arriving in a package.
+
 ## Training camp and preseason (roadmap items 9, 10 in part, 12; phase D of `front_office_design.md`)
 
 `python scripts/run_camp.py --write <date>` runs the camp stages due by the date and stops when a draw or a game result is missing: September 30 invites and camp injury draws; October 5 the seven preseason requests; October 24 the staff decision from the box scores; October 27 the cut and the promise check. Records: `04_Training_Camp/camp_roster.json` (participants, contracts, injuries, staff scores, cuts), `Decisions/` (the draws), `05_Preseason/Game_N.md` and `Game_N.request.json` (played by the engine like any game; results are evidence, not statistics that count), `00_Team/Team/Depth_Chart/depth_chart.json` and `rotation.json`, `00_Team/Team/defensive_grades.json`, `04_Training_Camp/Wade_Camp_Review.md` (the camp and role review page for the user to answer) and `promise_log.json`.

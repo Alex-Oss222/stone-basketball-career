@@ -6,7 +6,7 @@
 
 ![Earned professional awards through 2004-10-01](assets/stat_reports/awards_2004-10-01.svg)
 
-[Professional identity](Professional_Identity.md) · [Career statistics](Stats_and_Awards/README.md) · [Earned awards](Awards.md) · [National team / FIBA](National_Team/README.md)
+[Professional identity](Professional_Identity.md) · [Career statistics](Stats_and_Awards/README.md) · [Earned awards](Awards.md) · [National team / FIBA](National_Team/README.md) · [Career milestones](Milestones/career_milestones.md) · [Season tracker](Milestones/calendar.md)
 
 **Season reports:** [2003-04](2003-04/README.md) · [2004-05](2004-05/README.md)
 

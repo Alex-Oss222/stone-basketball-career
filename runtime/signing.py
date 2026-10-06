@@ -821,8 +821,12 @@ def phase_note_for(state):
     return Path(f"career/Dwyane_Wade/{SEASON}") / state.get("current_note", "01_Free_Agency/note.md")
 
 
-def apply_trade(writer, record, day):
-    """Write an accepted trade: Miami's side into every record, the partner's side into the departures ledger."""
+def apply_trade(writer, record, day, desk=None):
+    """Write an accepted trade: Miami's side into every record, the partner's side into the departures ledger.
+
+    The partner's contracts come from the trade desk's dated inventory (`desk`, the season's league ledger) when it
+    is given, else from the June 26, 2003 inventory; a departing player's previous minute share is his last real
+    season's (the season before the live one)."""
     trade = record["trade"]
     club = trade["partner"]
     sheet, roster, holdings = writer.load(TEAM / "Finances/contract_schedules.json"), writer.load(TEAM / "Team/Roster/roster.json"), writer.load(TEAM / "Team/Roster/holdings.json")
@@ -834,8 +838,14 @@ def apply_trade(writer, record, day):
                                   "share (last real season) rule 3 lets him keep up to the departing minutes. Read by runtime/rotations.py."),
                       "entries": []}
         writer.files[DEPARTURES] = departures
-    stats = {r["bbr_id"]: r for r in read("library/2003/league/nba_2002_03_player_stats.json", writer.root)["records"]}
-    inventory = read("library/2003/league/nba_2003_contracts.json", writer.root)["clubs"][club]
+    if SEASON == "2003-04":
+        stats_path, prior_label = "library/2003/league/nba_2002_03_player_stats.json", "2002-03"
+    else:
+        from .seasons import prior_path, previous_season
+        stats_path, prior_label = prior_path(SEASON, "player_stats"), previous_season(SEASON)
+    stats = {r["bbr_id"]: r for r in read(stats_path, writer.root)["records"]}
+    inventory = (desk.assets.contracts[club] if desk is not None and club in desk.assets.contracts
+                 else read("library/2003/league/nba_2003_contracts.json", writer.root)["clubs"][club])
     record_rel = f"00_Team/Transactions/Trades/{record['trade_id']}.json"
     # Miami's outgoing players
     for name in trade.get("miami_out", []):
@@ -853,7 +863,7 @@ def apply_trade(writer, record, day):
         departures["entries"].append({"player": name, "bbr_id": bbr, "club": club, "from": day, "until": None,
                                       "position": (identity.get("position") or "SF").split("-")[0],
                                       "games": prior.get("games", 0), "minutes": prior.get("minutes", 0),
-                                      "basis": f"traded {day} ({record['trade_id']}); previous share from 2002-03 totals"})
+                                      "basis": f"traded {day} ({record['trade_id']}); previous share from {prior_label} totals"})
     # Miami's incoming players (a sign-and-trade acquisition was written by `sign` from the agreed terms)
     acquired = trade.get("sign_and_trade_in")
     for name in trade.get("miami_in", []):
@@ -882,13 +892,14 @@ def apply_trade(writer, record, day):
         sheet["players"] = [x for x in sheet["players"] if x["player"] != name] + [entry]
         identity = league_identity(writer.root, bbr)
         salary = p["schedule"].get(SEASON) or 0
-        control = f"Acquired by trade from {club} on {long_date(day)}: ${salary:,} in 2003-04; contract through {max(s for s, v in p['schedule'].items() if v)}."
+        control = f"Acquired by trade from {club} on {long_date(day)}: ${salary:,} in {SEASON}; contract through {max(s for s, v in p['schedule'].items() if v)}."
         roster["players"].append({"id": slug(name), "name": name, "positions": [x for x in (identity.get("position") or "SF").replace("/", "-").split("-")],
                                  "date_of_birth": identity.get("birth_date"), "status": "under_contract", "control": control,
                                  "working_role": "Unassigned arrival", "player_card": f"../Player_Cards/{slug(name)}.md", "bbr_id": bbr})
         writer.text(TEAM / f"Team/Player_Cards/{slug(name)}.md", player_card(name, identity, day, control, f"../../../{record_rel}", stats.get(bbr)))
         depth.setdefault("unassigned_arrivals", []).append({"name": name, "positions": roster["players"][-1]["positions"], "status": "under_contract", "date": day})
-        holdings["entries"].append({"player": name, "bbr_id": bbr, "from": day, "until": None, "basis": f"acquired by trade from {club} ({record['trade_id']})"})
+        holdings["entries"].append({"player": name, "bbr_id": bbr, "from": day, "until": None, "how": "trade",
+                                    "basis": f"acquired by trade from {club} ({record['trade_id']})"})
     # Picks
     for pick in trade.get("picks_out", []):
         for own in picks["picks"]:

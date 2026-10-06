@@ -741,5 +741,20 @@ def build_milestone_pages(player: Path, identity: dict, records: list, *, root: 
     for screen in payload["screens"]:
         outputs[folder / f"{screen['id']}.md"] = milestone_markdown(payload, screen)
         index += f"| [{screen['title']}]({screen['id']}.md) | {screen['status'].replace('_', ' ')} | {screen['trigger']} |\n"
+    import os
+    from .stat_milestones import career_milestones, markdown as milestones_markdown
+    birth = identity.get("date_of_birth")
+    base = Path(root) if root else Path(player).resolve().parents[1]
+    data = career_milestones(records, birth)
+    page = folder / "career_milestones.md"
+    outputs[page] = GENERATED + "\n" + milestones_markdown(
+        payload["identity"]["name"], birth, payload["as_of"], data,
+        lambda note: os.path.relpath(base / note if not Path(note).is_absolute() else Path(note), base / page.parent
+                                     if not Path(page).is_absolute() else page.parent).replace(os.sep, "/"))
+    reached = data["regular"] + data["playoff"]
+    latest = max(reached, key=lambda r: r["date"]) if reached else None
+    index += (f"| [Career milestones](career_milestones.md) | {len(reached)} reached"
+              + (f"; latest {latest['milestone']} on {latest['date']} at {latest['age']}" if latest else "")
+              + " | Each closed game that crosses a career total (1,000 points, 500 rebounds, ...) |\n")
     outputs[folder / "README.md"] = index
     return outputs

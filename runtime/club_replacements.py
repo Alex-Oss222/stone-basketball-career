@@ -66,8 +66,8 @@ def disturbed(season=None, root=ROOT):
     rosters = load_rosters(season, root)
     out = []
     for e in holdings:
-        if e["from"] < REPLACEMENT_FROM or e.get("void"):
-            continue
+        if e["from"] < REPLACEMENT_FROM or e.get("void") or e.get("how") == "trade":
+            continue                 # a trade sends players back: the partner chose it and is not disturbed
         fraction = season_fraction(season, _day_before(e["from"]), root)
         for club, entry in rosters.items():
             present = [p for p in entry["players"] if _present(p, fraction)]

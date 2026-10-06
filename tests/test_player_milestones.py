@@ -324,7 +324,7 @@ class LiveMilestonesTests(unittest.TestCase):
         self.assertEqual(outputs, build_milestone_pages(self.player, self.identity, [], root=self.root))
         self.assertEqual(self.identity, identity_before)
         self.assertEqual(before, {p: p.read_bytes() for p in self.root.rglob("*") if p.is_file()})
-        self.assertEqual(len(outputs), 13)
+        self.assertEqual(len(outputs), 14)            # nine screens, README, data, index, scale reference, career milestones
         html = outputs[self.player / "Milestones/index.html"]
         self.assertNotIn("__CAREER_MILESTONES_DATA__", html)
         self.assertIn('"mode": "live"', html)

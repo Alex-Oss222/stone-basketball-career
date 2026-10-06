@@ -196,7 +196,7 @@ class TradeGateTests(unittest.TestCase):
         self.assertIsNotNone(proposal)
         state = json.loads(state_path.read_text())
         self.assertNotIn(consultations.PENDING_PREFIX + record["id"], state["pending_player_decisions"])
-        self.assertEqual(proposal["trade"]["miami_in"], [record["player"]])
+        self.assertIn(record["player"], proposal["trade"]["miami_in"])           # alone or with a second contract (packages of two)
         self.assertEqual(proposal["consultation"], record["id"])
         self.assertEqual(proposal["standing"]["standing"], "franchise")
         self.assertTrue((trades / f"{proposal['decision_event']}.decision.json").exists())
