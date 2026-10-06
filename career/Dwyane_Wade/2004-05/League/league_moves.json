@@ -2858,6 +2858,28 @@
    "bbr_id": "jonesfr01",
    "from": "Utah Jazz",
    "to": "Houston Rockets"
+  },
+  {
+   "id": "2004-05-market-2005-02-01-rest_of_season-barnema02",
+   "date": "2005-02-01",
+   "kind": "rest_of_season",
+   "player": "Matt Barnes",
+   "bbr_id": "barnema02",
+   "from": "Memphis Grizzlies",
+   "to": "Memphis Grizzlies",
+   "role": {
+    "player_id": "Matt Barnes",
+    "bbr_id": "barnema02",
+    "position": "SF",
+    "games": 43,
+    "minutes": 715
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 16.0 minutes a game on his 10-day contracts"
   }
  ],
  "market_days": [
@@ -2951,6 +2973,7 @@
   "2005-01-28",
   "2005-01-29",
   "2005-01-30",
-  "2005-01-31"
+  "2005-01-31",
+  "2005-02-01"
  ]
 }
