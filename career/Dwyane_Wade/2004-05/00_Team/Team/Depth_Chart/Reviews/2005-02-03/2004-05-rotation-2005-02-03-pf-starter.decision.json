@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-05-rotation-2005-02-03-pf-starter",
+ "date": "2005-02-03",
+ "question": "Who starts at PF: Mehmet Okur or Donyell Marshall?",
+ "decider": "Miami coaching staff (engine evaluation draw)",
+ "options": {
+  "Mehmet Okur": 0.600428,
+  "Donyell Marshall": 0.399572
+ },
+ "basis": "Dated staff scores 17.075195 and 16.389266 within 10%; closed production per 30 minutes blended with 300 preseason prior minutes. No seniority, draft-slot or incumbent bonus."
+}

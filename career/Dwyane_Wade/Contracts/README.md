@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-02-02. [Search the contract directory](index.html)
+Known through 2005-02-03. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -245,7 +245,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [James Lang](players/langja01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [James Posey](players/poseyja01.md) | Memphis Grizzlies | under contract | James Posey · 2003-08-09 | 2 |
 | [James Thomas](players/jamesthomas.md) | Denver Nuggets | under contract | James Thomas · 2004-08-05 | 1 |
-| [Jamison Brewer](players/breweja01.md) | Free agent | minimum contract unverified | No verified current agreement | 0 |
+| [Jamison Brewer](players/breweja01.md) | Atlanta Hawks | minimum contract unverified | No verified current agreement | 0 |
 | [Jannero Pargo](players/pargoja01.md) | Charlotte Bobcats | under contract | Jannero Pargo · 2002-07-23 | 1 |
 | [Jared Jeffries](players/jeffrja01.md) | Washington Wizards | under rookie contract | Jared Jeffries · 2002-07-10 | 1 |
 | [Jared Reiner](players/jaredreiner.md) | Free agent | under contract | Jared Reiner · 2004-08-05 | 1 |
@@ -444,7 +444,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Rafer Alston](players/alstora01.md) | Miami Heat | camp contract | Rafer Alston · 2004-10-05 | 2 |
 | [Raja Bell](players/bellra01.md) | Miami Heat | under contract | Raja Bell · 2003-09-26 | 3 |
 | [Randy Brown](players/brownra02.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
-| [Randy Livingston](players/livinra01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
+| [Randy Livingston](players/livinra01.md) | New Jersey Nets | No verified contract record | No verified current agreement | 0 |
 | [Rashard Lewis](players/lewisra02.md) | Seattle SuperSonics | under contract | Rashard Lewis · 2002-09-19 | 1 |
 | [Rasheed Wallace](players/wallara01.md) | Portland Trail Blazers | under contract | Rasheed Wallace · 2004-08-12 | 2 |
 | [Rasho Nesterovic](players/nestera01.md) | San Antonio Spurs | under contract | Rasho Nesterovic · 2003-07-16 | 2 |

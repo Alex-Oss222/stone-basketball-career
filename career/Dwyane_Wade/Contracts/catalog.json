@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-02-02",
+  "as_of": "2005-02-03",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2138,7 +2138,7 @@
     {
       "player_id": "breweja01",
       "name": "Jamison Brewer",
-      "team": "Free agent",
+      "team": "Atlanta Hawks",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3929,7 +3929,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "Free agent",
+      "team": "New Jersey Nets",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

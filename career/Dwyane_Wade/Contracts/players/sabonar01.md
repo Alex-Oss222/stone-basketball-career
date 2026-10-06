@@ -2,9 +2,9 @@
 
 # Contract | Arvydas Sabonis
 
-Known through: 2005-02-02. [Open interactive contract](sabonar01.html#contract) · [Contract history](sabonar01.html#contract-history)
+Known through: 2005-02-03. [Open interactive contract](sabonar01.html#contract) · [Contract history](sabonar01.html#contract-history)
 
-Arvydas Sabonis: expired or unresolved. Evidence cutoff: 2005-02-02.
+Arvydas Sabonis: expired or unresolved. Evidence cutoff: 2005-02-03.
 
 ## Current contract
 

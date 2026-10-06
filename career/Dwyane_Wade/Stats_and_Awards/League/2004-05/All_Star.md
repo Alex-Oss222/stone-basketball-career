@@ -1,6 +1,28 @@
 # 2004-05 NBA All-Star selections
 
-All-Star Game: February 20, 2005, Pepsi Center, Denver. Rookie Challenge: February 18, 2005. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: January 27, 2005.
+All-Star Game: February 20, 2005, Pepsi Center, Denver. Rookie Challenge: February 18, 2005. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: February 3, 2005.
+
+## Starters (fan ballot, announced February 3, 2005; results through January 23, 2005)
+
+### East
+
+| Player | Pos | Team | G | PTS | REB | AST | GmSc | Ballots |
+|---|---|---|---|---|---|---|---|---|
+| Jason Kidd | G | New Jersey Nets | 40 | 17.5 | 8.8 | 8.2 | 16.33 | 101 |
+| Tracy McGrady | G | Orlando Magic | 36 | 23.3 | 6.5 | 5.2 | 16.13 | 101 |
+| Ben Wallace | C | Detroit Pistons | 38 | 10.7 | 11.2 | 1.9 | 11.55 | 98 |
+| LeBron James | F | Cleveland Cavaliers | 39 | 26.8 | 8.2 | 5.7 | 20.51 | 84 |
+| Jermaine O'Neal | F | Indiana Pacers | 15 | 24.3 | 7.5 | 1.7 | 17.59 | 70 |
+
+### West
+
+| Player | Pos | Team | G | PTS | REB | AST | GmSc | Ballots |
+|---|---|---|---|---|---|---|---|---|
+| Kevin Garnett | F | Minnesota Timberwolves | 40 | 23.0 | 13.2 | 6.0 | 21.79 | 101 |
+| Shaquille O'Neal | C | Los Angeles Lakers | 30 | 22.7 | 12.1 | 3.7 | 19.07 | 101 |
+| Kobe Bryant | G | Los Angeles Lakers | 29 | 24.6 | 6.1 | 6.4 | 17.66 | 101 |
+| Tim Duncan | F | San Antonio Spurs | 29 | 22.5 | 10.4 | 2.6 | 18.9 | 75 |
+| Stephon Marbury | G | Phoenix Suns | 42 | 21.1 | 3.3 | 9.2 | 18.44 | 73 |
 
 ## Rookie Challenge rosters (broadcaster panel, announced January 27, 2005)
 

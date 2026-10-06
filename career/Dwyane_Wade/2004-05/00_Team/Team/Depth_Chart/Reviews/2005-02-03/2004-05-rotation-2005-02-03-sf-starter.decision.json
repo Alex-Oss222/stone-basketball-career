@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-05-rotation-2005-02-03-sf-starter",
+ "date": "2005-02-03",
+ "question": "Who starts at SF: Matt Harpring or Caron Butler?",
+ "decider": "Miami coaching staff (engine evaluation draw)",
+ "options": {
+  "Matt Harpring": 0.630736,
+  "Caron Butler": 0.369264
+ },
+ "basis": "Dated staff scores 13.233027 and 12.541014 within 10%; closed production per 30 minutes blended with 300 preseason prior minutes. No seniority, draft-slot or incumbent bonus."
+}

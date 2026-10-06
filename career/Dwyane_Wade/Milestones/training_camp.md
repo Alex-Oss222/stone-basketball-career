@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-02-02 · Miami Heat · planned
+Career date: 2005-02-03 · Miami Heat · planned
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -16,28 +16,28 @@ Activation: The club opens camp and records participation, evaluation or an actu
 | --- | --- |
 | Camp opened | 2004-10-05 |
 | Participation | under_contract |
-| Current role | Starting SG; staff plan 36.8 minutes |
-| Staff rotation minutes | 36.8 |
+| Current role | Starting SG; staff plan 39.2 minutes |
+| Staff rotation minutes | 39.2 |
 | Closed preseason games | 7 |
 | Camp availability | No camp injury restriction recorded |
 
 ## Current depth chart
 
-Snapshot: 2005-01-20. Draft rights and unassigned arrivals are not assigned minutes.
+Snapshot: 2005-02-03. Draft rights and unassigned arrivals are not assigned minutes.
 
 | Position | Staff ordering | Interpretation |
 | --- | --- | --- |
-| PG | Mike James, Rafer Alston, Maurice Baker | Staff ordering; not a future minutes promise |
-| SG | Dwyane Wade, Kendall Gill, Eddie Jones, Maurice Evans | Staff ordering; not a future minutes promise |
-| SF | Caron Butler, Dorell Wright, Lamond Murray | Staff ordering; not a future minutes promise |
-| PF | Mehmet Okur, Donyell Marshall | Staff ordering; not a future minutes promise |
+| PG | Rafer Alston, Mike James, Maurice Baker | Staff ordering; not a future minutes promise |
+| SG | Dwyane Wade, Raja Bell, Maurice Evans | Staff ordering; not a future minutes promise |
+| SF | Matt Harpring, Caron Butler, Dorell Wright, Lamond Murray | Staff ordering; not a future minutes promise |
+| PF | Donyell Marshall, Mehmet Okur | Staff ordering; not a future minutes promise |
 | C | Brian Grant, John Thomas, John Edwards | Staff ordering; not a future minutes promise |
 
 ## Role and promise review
 
 | Item | Evidence needed | Current position |
 | --- | --- | --- |
-| Expected role | Attributed coach statement | Starting SG; staff plan 36.8 minutes |
+| Expected role | Attributed coach statement | Starting SG; staff plan 39.2 minutes |
 | Actual use | Closed preseason boxes | 7 closed games |
 | Promised minutes | Written promise and date | Not recorded |
 | Promise review | Dated review against rotation | Not recorded |
@@ -105,11 +105,11 @@ Snapshot: 2005-01-20. Draft rights and unassigned arrivals are not assigned minu
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
-- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-20/review.json)
-- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-20/depth_chart.json)
+- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-02-03/review.json)
+- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-02-03/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-20/rotation.json)
+- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-02-03/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json)

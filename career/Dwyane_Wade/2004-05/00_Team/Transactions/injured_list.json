@@ -106,11 +106,19 @@
   {
    "player": "Matt Harpring",
    "placed": "2005-01-24",
-   "activated": null,
+   "activated": "2005-02-03",
    "first_game_missed": "2005-01-24-miami-heat-at-philadelphia-76ers",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 5
+  },
+  {
+   "player": "Maurice Evans",
+   "placed": "2005-02-03",
+   "activated": null,
+   "first_game_missed": "2005-02-03-cleveland-cavaliers-at-miami-heat",
    "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
    "minimum_games": 5
   }
  ],
- "as_of": "2005-02-01"
+ "as_of": "2005-02-03"
 }
