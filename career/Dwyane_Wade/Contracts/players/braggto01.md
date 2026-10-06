@@ -2,9 +2,9 @@
 
 # Contract | Torraye Braggs
 
-Known through: 2004-10-10. [Open interactive contract](braggto01.html#contract) · [Contract history](braggto01.html#contract-history)
+Known through: 2004-10-11. [Open interactive contract](braggto01.html#contract) · [Contract history](braggto01.html#contract-history)
 
-Torraye Braggs: No verified contract record. Evidence cutoff: 2004-10-10.
+Torraye Braggs: No verified contract record. Evidence cutoff: 2004-10-11.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Antawn Jamison
 
-Known through: 2004-10-10. [Open interactive contract](jamisan01.html#contract) · [Contract history](jamisan01.html#contract-history)
+Known through: 2004-10-11. [Open interactive contract](jamisan01.html#contract) · [Contract history](jamisan01.html#contract-history)
 
-Antawn Jamison: under contract. Evidence cutoff: 2004-10-10.
+Antawn Jamison: under contract. Evidence cutoff: 2004-10-11.
 
 ## Current contract
 

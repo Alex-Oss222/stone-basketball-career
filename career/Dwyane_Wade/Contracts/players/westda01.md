@@ -2,9 +2,9 @@
 
 # Contract | David West
 
-Known through: 2004-10-10. [Open interactive contract](westda01.html#contract) · [Contract history](westda01.html#contract-history)
+Known through: 2004-10-11. [Open interactive contract](westda01.html#contract) · [Contract history](westda01.html#contract-history)
 
-David West: No verified contract record. Evidence cutoff: 2004-10-10.
+David West: No verified contract record. Evidence cutoff: 2004-10-11.
 
 ## Current contract
 

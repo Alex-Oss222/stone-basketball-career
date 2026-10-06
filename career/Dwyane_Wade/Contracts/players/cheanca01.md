@@ -2,9 +2,9 @@
 
 # Contract | Calbert Cheaney
 
-Known through: 2004-10-10. [Open interactive contract](cheanca01.html#contract) · [Contract history](cheanca01.html#contract-history)
+Known through: 2004-10-11. [Open interactive contract](cheanca01.html#contract) · [Contract history](cheanca01.html#contract-history)
 
-Calbert Cheaney: camp contract. Evidence cutoff: 2004-10-10.
+Calbert Cheaney: camp contract. Evidence cutoff: 2004-10-11.
 
 ## Current contract
 
