@@ -29,7 +29,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime import consultations, signing              # noqa: E402
 from runtime.gm import FrontOffice                      # noqa: E402
-from runtime.market import Market                       # noqa: E402
+from runtime.season_market import for_date as Market    # noqa: E402  the season's own market (2003 Market in 2003-04)
 from runtime.standing import standing_on                # noqa: E402
 from runtime.trades import TradeDesk                    # noqa: E402
 from runtime.valuation import read                      # noqa: E402

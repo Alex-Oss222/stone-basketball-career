@@ -237,33 +237,11 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
 
 
 def _club_in_book(player, on, season, root, transactions=None):
-    """A season after the first: the club Miami's register or the simulated league (its opening book, then its dated
-    moves) gives him on the date; None while he is an unsigned free agent."""
-    from .league_moves import club_of
-    bbr = player.get("bbr_id")
-    roster = Path(root) / miami_roster_path(season)
-    if roster.is_file():
-        for p in _read(root, miami_roster_path(season))["players"]:
-            if _matches(player, bbr_id=p.get("bbr_id"), name=p.get("name")) and not any(
-                    w in (p.get("status") or "") for w in ("released", "traded", "signed_elsewhere", "voided", "waived",
-                                                          "renounced", "declined", "expired")):
-                return {"club": MIAMI, "code": "MIA", "basis": f"on Miami's {season} register", "rights": False}
-    club = club_of(bbr, on, season, root) if bbr else None
-    dep_path = Path(root) / departures_path(season)
-    if bbr and dep_path.is_file():                     # a player simulated Miami sent away (rule 3): his new club
-        for e in _read(root, departures_path(season))["entries"]:
-            if e.get("bbr_id") == bbr and e["from"] <= on and (e.get("until") is None or on < e["until"]):
-                club = e["club"]
-    if club and bbr:
-        from .availability import status
-        from .league_moves import effective_roster
-        if (status(bbr, season, root) in ("retired", "unknown")    # no real season left and on no roster: out of the league
-                and not any(x.get("bbr_id") == bbr for x in effective_roster(club, on, season, root))):
-            return {"club": None, "code": None, "rights": False,
-                    "basis": f"out of the league: his real career has no {season} season (runtime/availability.py)"}
-    basis = (f"{club}: the {season} opening rosters and the league's dated moves (runtime/league_moves.py)" if club else
-             f"unsigned on {on} in the {season} league")
-    return {"club": club, "code": _code(club, transactions or {}, player) if club else None, "basis": basis, "rights": False}
+    """A season after the first: the one answer every reader shares (`runtime/club_truth.py`), the engine's own rosters."""
+    from .club_truth import holder
+    club, basis = holder(player.get("bbr_id"), player.get("name"), on, root)
+    return {"club": club, "code": ("MIA" if club == MIAMI else _code(club, transactions or {}, player)) if club else None,
+            "basis": basis, "rights": False}
 
 
 def _real_stint_club(player, on, root=ROOT):

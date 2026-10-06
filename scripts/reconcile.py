@@ -40,6 +40,22 @@ def schedule_totals(root, write):
     return [path]
 
 
+def finance_summary(root, write):
+    """Miami's finance summary (`finance.json`), rebuilt on the career date whenever it no longer reconciles to the
+    contract sheet (`signing.ledger_errors`): any writer that changed a contract and forgot the refresh is covered."""
+    from runtime import signing
+    from runtime.seasons import state
+    stale = [e for e in signing.ledger_errors(root) if e.startswith("finance.json")]
+    if stale and write:
+        from runtime.gm import FrontOffice
+        from runtime.season_market import for_date
+        day = state(None, root)["current_date"]
+        writer = signing.Writer(root)
+        signing.refresh_finance(writer, FrontOffice(day, for_date(day, root), root), day)
+        writer.commit()
+    return stale
+
+
 def ledger_holders(root, write):
     """The league contract ledger's `club`: the club holding each player on the career date (a trade assigns the
     contract; `league_contracts.refresh_holders`)."""
@@ -62,6 +78,10 @@ def main():
     if changed:
         stale.append("Miami schedule totals")
     print(f"Miami schedule totals: {'stale' if changed else 'current'}")
+    finance = finance_summary(ROOT, not args.check)
+    if finance:
+        stale.append("Miami finance summary")
+    print(f"Miami finance summary: {'stale' if finance else 'current'}")
     moved = ledger_holders(ROOT, not args.check)
     if moved:
         stale.append("league contract holders")

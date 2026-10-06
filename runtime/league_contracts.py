@@ -155,21 +155,18 @@ def refresh_holders(season, on, root=ROOT, write=True):
     contract; `league_moves.effective_roster`, Miami's register for Miami). The club that signed it stays as
     `signed_club`. A player no club holds (waived) keeps the club that owes the contract. Derived from the dated moves,
     so `scripts/reconcile.py` rebuilds it; returns the bbr_ids whose club changed."""
-    from .options import holders_on
-    from .rotations import miami_holds
+    from .club_truth import holder
     root = Path(root)
     path = root / ledger_path(season)
     if not path.is_file():
         return []
     data = json.loads(path.read_text(encoding="utf-8"))
-    holders = holders_on(on, root)
-    miami = set(miami_holds(season, on, root))
     changed = []
     for c in data["contracts"]:
-        holder = "Miami Heat" if c["bbr_id"] in miami else holders.get(c["bbr_id"])
-        if holder and holder != c["club"]:
+        club, _ = holder(c["bbr_id"], c.get("player"), on, root)     # the one club answer (runtime/club_truth.py)
+        if club and club != c["club"]:
             c.setdefault("signed_club", c["club"])
-            c["club"] = holder
+            c["club"] = club
             changed.append(c["bbr_id"])
     if changed and write:
         path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
