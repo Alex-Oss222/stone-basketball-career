@@ -2,9 +2,9 @@
 
 # Contract | J.R. Smith
 
-Known through: 2004-12-26. [Open interactive contract](jrsmith.html#contract) · [Contract history](jrsmith.html#contract-history)
+Known through: 2004-12-27. [Open interactive contract](jrsmith.html#contract) · [Contract history](jrsmith.html#contract-history)
 
-J.R. Smith: under contract. Evidence cutoff: 2004-12-26.
+J.R. Smith: under contract. Evidence cutoff: 2004-12-27.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | J.R. Smith |
-| Club / rights baseline | Memphis Grizzlies |
+| Club / rights baseline | Boston Celtics |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

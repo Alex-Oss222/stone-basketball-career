@@ -1,0 +1,12 @@
+{
+ "date": "2004-12-27",
+ "decider": "Chicago Bulls and Detroit Pistons front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2004-12-27-willico02-willije01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.820667,
+  "decline": 0.179333
+ },
+ "outcome": "accept",
+ "question": "Do Chicago Bulls and Detroit Pistons trade Jerome Williams for Corliss Williamson?"
+}

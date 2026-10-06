@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2004-12-27-blounma01-smithjr01-wrighlo02",
+ "date": "2004-12-27",
+ "clubs": [
+  "Boston Celtics",
+  "Memphis Grizzlies"
+ ],
+ "a": {
+  "club": "Boston Celtics",
+  "sends": [
+   "Mark Blount"
+  ],
+  "bbr_ids": [
+   "blounma01"
+  ],
+  "salary": 8343701
+ },
+ "b": {
+  "club": "Memphis Grizzlies",
+  "sends": [
+   "Lorenzen Wright",
+   "J.R. Smith"
+  ],
+  "bbr_ids": [
+   "wrighlo02",
+   "smithjr01"
+  ],
+  "salary": 8302240
+ },
+ "gain": {
+  "Boston Celtics": 0.182,
+  "Memphis Grizzlies": 0.242
+ },
+ "accept": {
+  "Boston Celtics": 0.95,
+  "Memphis Grizzlies": 0.95
+ },
+ "both": 0.9025
+}

@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG / SF  
 **Age at assessment:** 31 · **Height:** 6-6 · **Weight:** 190 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-12-26 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-12-27 
 
 **Contract/control:** Existing contract: 3 season(s) from 2004-05, $44,401,500 scheduled ($13,455,000 in 2004-05). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
@@ -88,13 +88,13 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 81 closed Miami game(s) through 2004-09-30; 2004-05: 24 closed Miami game(s) through 2004-12-26.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 81 closed Miami game(s) through 2004-09-30; 2004-05: 25 closed Miami game(s) through 2004-12-27.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | MIA | 47 | 47 | 38.1 | 18.5 | 4.8 | 3.7 | 1.4 | 0.7 | 1.8 | 42.3% | 40.7% | 82.2% |
 | 2003-04 | MIA | 81 | 21 | 17.4 | 8.7 | 2.0 | 1.6 | 0.5 | 0.2 | 0.9 | 40.2% | 41.9% | 69.8% |
-| 2004-05 | MIA | 24 | 7 | 9.1 | 3.0 | 1.0 | 0.5 | 0.5 | 0.1 | 0.4 | 35.8% | 25.0% | 63.0% |
+| 2004-05 | MIA | 25 | 7 | 9.0 | 3.0 | 1.0 | 0.6 | 0.5 | 0.1 | 0.4 | 36.1% | 24.1% | 60.7% |
 
 <!-- veteran-details:start -->
 ### Additional statistics

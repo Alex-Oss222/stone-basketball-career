@@ -2,9 +2,9 @@
 
 # Contract | Moochie Norris
 
-Known through: 2004-12-26. [Open interactive contract](norrimo01.html#contract) · [Contract history](norrimo01.html#contract-history)
+Known through: 2004-12-27. [Open interactive contract](norrimo01.html#contract) · [Contract history](norrimo01.html#contract-history)
 
-Moochie Norris: under contract. Evidence cutoff: 2004-12-26.
+Moochie Norris: under contract. Evidence cutoff: 2004-12-27.
 
 ## Current contract
 

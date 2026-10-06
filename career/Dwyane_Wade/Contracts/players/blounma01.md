@@ -2,9 +2,9 @@
 
 # Contract | Mark Blount
 
-Known through: 2004-12-26. [Open interactive contract](blounma01.html#contract) · [Contract history](blounma01.html#contract-history)
+Known through: 2004-12-27. [Open interactive contract](blounma01.html#contract) · [Contract history](blounma01.html#contract-history)
 
-Mark Blount: under contract. Evidence cutoff: 2004-12-26.
+Mark Blount: under contract. Evidence cutoff: 2004-12-27.
 
 ## Current contract
 
@@ -118,7 +118,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Mark Blount |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Memphis Grizzlies |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

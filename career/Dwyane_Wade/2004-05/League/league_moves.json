@@ -1835,6 +1835,51 @@
    "bbr_id": "chrisdo01",
    "from": "Sacramento Kings",
    "to": "New Orleans Hornets"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-27-blounma01-smithjr01-wrighlo02",
+   "date": "2004-12-27",
+   "kind": "trade",
+   "player": "Mark Blount",
+   "bbr_id": "blounma01",
+   "from": "Boston Celtics",
+   "to": "Memphis Grizzlies"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-27-blounma01-smithjr01-wrighlo02",
+   "date": "2004-12-27",
+   "kind": "trade",
+   "player": "Lorenzen Wright",
+   "bbr_id": "wrighlo02",
+   "from": "Memphis Grizzlies",
+   "to": "Boston Celtics"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-27-blounma01-smithjr01-wrighlo02",
+   "date": "2004-12-27",
+   "kind": "trade",
+   "player": "J.R. Smith",
+   "bbr_id": "smithjr01",
+   "from": "Memphis Grizzlies",
+   "to": "Boston Celtics"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-27-willico02-willije01",
+   "date": "2004-12-27",
+   "kind": "trade",
+   "player": "Jerome Williams",
+   "bbr_id": "willije01",
+   "from": "Chicago Bulls",
+   "to": "Detroit Pistons"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-27-willico02-willije01",
+   "date": "2004-12-27",
+   "kind": "trade",
+   "player": "Corliss Williamson",
+   "bbr_id": "willico02",
+   "from": "Detroit Pistons",
+   "to": "Chicago Bulls"
   }
  ],
  "market_days": [
@@ -1892,6 +1937,7 @@
   "2004-12-23",
   "2004-12-24",
   "2004-12-25",
-  "2004-12-26"
+  "2004-12-26",
+  "2004-12-27"
  ]
 }

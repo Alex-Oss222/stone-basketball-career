@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-12-26",
+  "as_of": "2004-12-27",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -977,7 +977,7 @@
     {
       "player_id": "willico02",
       "name": "Corliss Williamson",
-      "team": "Detroit Pistons",
+      "team": "Chicago Bulls",
       "status": "under contract",
       "current_contract_id": "willico02-existing-40573a80580b",
       "recorded_agreements": 1,
@@ -1967,7 +1967,7 @@
     {
       "player_id": "jrsmith",
       "name": "J.R. Smith",
-      "team": "Memphis Grizzlies",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "jrsmith-2004-07-01",
       "recorded_agreements": 1,
@@ -2363,7 +2363,7 @@
     {
       "player_id": "willije01",
       "name": "Jerome Williams",
-      "team": "Chicago Bulls",
+      "team": "Detroit Pistons",
       "status": "under contract",
       "current_contract_id": "willije01-2001-07-18",
       "recorded_agreements": 1,
@@ -3011,7 +3011,7 @@
     {
       "player_id": "wrighlo02",
       "name": "Lorenzen Wright",
-      "team": "Memphis Grizzlies",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "wrighlo02-existing-46006c169e52",
       "recorded_agreements": 1,
@@ -3200,7 +3200,7 @@
     {
       "player_id": "blounma01",
       "name": "Mark Blount",
-      "team": "Boston Celtics",
+      "team": "Memphis Grizzlies",
       "status": "under contract",
       "current_contract_id": "blounma01-2004-08-05",
       "recorded_agreements": 3,

@@ -4,26 +4,30 @@
 
 2004-05 · Calendar coverage: December 22-31, 2004
 
-As of October 1, 2004: no award decisions closed.
+As of December 27, 2004: 2 award decision(s) closed, announced December 27, 2004.
 
-Official award window: not recorded. Announcement date: not recorded.
+Official award window and announcement date: listed with each decision below.
 
 The rows below are an internal shortlist, not published NBA vote totals. A calendar bucket can contain no award decision; file a decision where its official period ends.
 
 ## Player of the Week
 
+### December 20, 2004 to December 26, 2004 (announced December 27, 2004)
+
 | Conference | Rank slot | Player | Team | Evidence | Result |
 | --- | ---: | --- | --- | --- | --- |
-| East | 1 | Not shortlisted | N/A | No closed period | Pending |
-| East | 2 | Not shortlisted | N/A | No closed period | Pending |
-| East | 3 | Not shortlisted | N/A | No closed period | Pending |
-| West | 1 | Not shortlisted | N/A | No closed period | Pending |
-| West | 2 | Not shortlisted | N/A | No closed period | Pending |
-| West | 3 | Not shortlisted | N/A | No closed period | Pending |
+| East | 1 | Paul Pierce | Boston Celtics | 3 G, 1-2 in his games, 26.0 PTS, 6.0 REB, 4.3 AST, Game Score 22.23 a game; score 69.7 | **WINNER** |
+| East | 2 | Chris Bosh | Toronto Raptors | 3 G, 2-1 in his games, 20.7 PTS, 10.0 REB, 4.3 AST, Game Score 21.13 a game; score 69.4 | Shortlist |
+| East | 3 | LeBron James | Cleveland Cavaliers | 3 G, 2-1 in his games, 27.3 PTS, 6.0 REB, 6.3 AST, Game Score 21.1 a game; score 69.3 | Shortlist |
+| West | 1 | Steve Nash | Dallas Mavericks | 3 G, 2-1 in his games, 24.3 PTS, 3.0 REB, 9.0 AST, Game Score 23.63 a game; score 76.9 | **WINNER** |
+| West | 2 | Grant Hill | Minnesota Timberwolves | 3 G, 2-1 in his games, 23.7 PTS, 5.0 REB, 4.7 AST, Game Score 22.83 a game; score 74.5 | Shortlist |
+| West | 3 | Tim Duncan | San Antonio Spurs | 3 G, 1-2 in his games, 28.0 PTS, 10.3 REB, 3.3 AST, Game Score 23.37 a game; score 73.1 | Shortlist |
 
 ## Decision record
 
-No award decision is filed in this calendar bucket yet.
+- East Player of the Week, December 20, 2004 to December 26, 2004, announced December 27, 2004: **Paul Pierce**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
+- West Player of the Week, December 20, 2004 to December 26, 2004, announced December 27, 2004: **Steve Nash**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
+
 
 [Awards procedure and research](../../../README.md) · [Player evidence for this calendar period](League_Stats.md)
 

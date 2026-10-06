@@ -2,9 +2,9 @@
 
 # Contract | Etan Thomas
 
-Known through: 2004-12-26. [Open interactive contract](thomaet01.html#contract) · [Contract history](thomaet01.html#contract-history)
+Known through: 2004-12-27. [Open interactive contract](thomaet01.html#contract) · [Contract history](thomaet01.html#contract-history)
 
-Etan Thomas: under contract. Evidence cutoff: 2004-12-26.
+Etan Thomas: under contract. Evidence cutoff: 2004-12-27.
 
 ## Current contract
 
