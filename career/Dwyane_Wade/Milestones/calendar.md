@@ -18,14 +18,14 @@ Activation: The authoritative current date and recorded event determine what is 
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2005-01-24-trade-2005-01-24-64ef582bc5 |
+| Last closed event | 2005-01-24-miami-heat-at-philadelphia-76ers |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-01-24 | Current checkpoint | 2005-01-24-trade-2005-01-24-64ef582bc5 | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
+| 2005-01-24 | Current checkpoint | 2005-01-24-miami-heat-at-philadelphia-76ers | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2004-10-05 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
 | 2005-01-26 | Next Miami game, at Toronto Raptors | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
@@ -152,4 +152,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_3/Game_1.md)
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_3/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

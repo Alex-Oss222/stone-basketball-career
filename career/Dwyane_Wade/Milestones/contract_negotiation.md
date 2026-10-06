@@ -135,4 +135,5 @@ Miami records its actual first offer; the player then chooses a response.
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_3/Game_1.md)
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_3/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

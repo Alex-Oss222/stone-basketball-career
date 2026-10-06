@@ -10,7 +10,7 @@
     "age": 21,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2005-01-24-trade-2005-01-24-64ef582bc5",
+  "current_event": "2005-01-24-miami-heat-at-philadelphia-76ers",
   "current_screen": "calendar",
   "screens": [
     {
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2005-01-24-trade-2005-01-24-64ef582bc5"
+              "2005-01-24-miami-heat-at-philadelphia-76ers"
             ],
             [
               "Pending player decisions",
@@ -66,7 +66,7 @@
             [
               "2005-01-24",
               "Current checkpoint",
-              "2005-01-24-trade-2005-01-24-64ef582bc5",
+              "2005-01-24-miami-heat-at-philadelphia-76ers",
               "Recorded",
               {
                 "label": "Owning event",
@@ -610,6 +610,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1044,6 +1048,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1449,6 +1457,10 @@
         {
           "label": "Closed game",
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md"
         },
         {
           "label": "Dated milestone working records and player replies",
@@ -1897,6 +1909,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2304,6 +2320,10 @@
         {
           "label": "Closed game",
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md"
         },
         {
           "label": "Dated milestone working records and player replies",
@@ -2759,6 +2779,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3166,6 +3190,10 @@
         {
           "label": "Closed game",
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md"
         },
         {
           "label": "Dated milestone working records and player replies",
@@ -3717,6 +3745,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3742,7 +3774,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "49 closed game records in 2004-05 through 2005-01-24. Competitions remain separate.",
+      "summary": "50 closed game records in 2004-05 through 2005-01-24. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3769,12 +3801,12 @@
             ],
             [
               "regular",
-              36,
-              35.83915,
-              20.166666667,
-              5.361111111,
-              3.861111111,
-              1.333333333,
+              37,
+              35.580001351,
+              20.054054054,
+              5.297297297,
+              3.891891892,
+              1.324324324,
               "Complete"
             ]
           ]
@@ -3802,12 +3834,12 @@
             ],
             [
               "regular",
-              248,
-              474,
-              0.523206751,
+              254,
+              487,
+              0.521560575,
               41,
-              90,
-              0.455555556
+              92,
+              0.445652174
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -4311,6 +4343,16 @@
                 "label": "Closed game",
                 "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md"
               }
+            ],
+            [
+              "2005-01-24",
+              "regular",
+              "Philadelphia 76ers",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md"
+              }
             ]
           ]
         },
@@ -4630,6 +4672,10 @@
         {
           "label": "Closed game",
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_2.md"
         },
         {
           "label": "Dated milestone working records and player replies",
