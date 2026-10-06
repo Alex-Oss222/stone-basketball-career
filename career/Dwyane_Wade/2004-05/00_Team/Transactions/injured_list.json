@@ -25,11 +25,19 @@
   {
    "player": "Maurice Evans",
    "placed": "2004-11-03",
-   "activated": null,
+   "activated": "2004-12-03",
    "first_game_missed": "2004-11-03-miami-heat-at-new-jersey-nets",
    "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
    "minimum_games": 5
+  },
+  {
+   "player": "Caron Butler",
+   "placed": "2004-12-03",
+   "activated": null,
+   "first_game_missed": "2004-12-03-miami-heat-at-chicago-bulls",
+   "reason": "injury: 1 more game(s) out on the engine's draw",
+   "minimum_games": 5
   }
  ],
- "as_of": "2004-11-30"
+ "as_of": "2004-12-03"
 }

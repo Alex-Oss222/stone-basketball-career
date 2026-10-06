@@ -231,6 +231,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Mitchell Butler](../../Players/butlemi02.md) | 33 | WSH | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Quentin Richardson](../../Players/richaqu01.md) | 24 | LAC | NBA | SG | 1 | 1 | 37.4 | 8.0 | 13.0 | .615 | 3.0 | 4.0 | .750 | 5.0 | 9.0 | .556 | .731 | 3.0 | 3.0 | 1.000 | 1.0 | 4.0 | 5.0 | 4.0 | 2.0 | 0.0 | 0.0 | 2.0 | 22.0 | .768 |
 | [Geno Carlisle](../../Players/carlige01.md) | 28 | POR | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [Maurice Evans](../../Players/evansma01.md) | N/A | MIA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 
