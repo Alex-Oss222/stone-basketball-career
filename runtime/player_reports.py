@@ -518,6 +518,8 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
             outputs[page] = old.rstrip() + "\n\n" + block + "\n"
     from .player_milestones import build_milestone_pages
     outputs.update(build_milestone_pages(player, identity, records, root=root))
+    from .followed_players import build as build_followed       # followed players' career and season READMEs
+    outputs.update({Path(k): v for k, v in build_followed(root, as_of).items()})
     from .milestone_records import build_phase_navigation
     outputs.update(build_phase_navigation(root, player))
     from .contract_navigation import build_contract_navigation

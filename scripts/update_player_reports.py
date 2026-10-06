@@ -17,7 +17,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="read-only freshness and source validation")
     args = parser.parse_args()
-    players = [p for p in (ROOT / "career").iterdir() if p.is_dir()]
+    players = [p for p in (ROOT / "career").iterdir() if p.is_dir() and (p / "professional_identity.json").is_file()]
     if not args.check:
         changed = refresh_career_views(ROOT)
         print(f"Updated {len(changed)} detailed career views. Career state and results were not changed.")

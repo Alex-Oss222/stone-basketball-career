@@ -67,7 +67,9 @@ Real players' on-court ability may follow their real careers. The engine may rea
 
 - never results, standings, statistics totals, awards, injuries, suspensions, contracts, trades, signings, coaching changes or any team decision;
 - never shown on player cards, scouting notes or anything the AI/GM or the user reads before the season is played; cards keep using evidence available on their date;
-- never applied to Wade, whose career is alternate history.
+- never applied to Wade, whose career is alternate history, nor to Chris Bosh from 2004-05 (the user's premise, October 2026: his 2003-04 season stands as played on his real path; from 2004-05 his expectation is his previous one, his simulated season, the age step and the user's development profile at one prior's weight, `protagonist.build_alternate_profile`, with the engine's journaled swing; Toronto's front office still decides his moves). `trajectories.ALTERNATE_FROM` names each alternate-history player and his first season, so every earlier game replays unchanged.
+
+Followed players (the user follows, does not control): a career README and one README per season under `career/<folder>/` (`foundation/followed_players.json`, `runtime/followed_players.py`), rebuilt with the player reports from closed results and award records only.
 
 Every season's development swing is journaled by the engine like a game draw and cannot be chosen or re-rolled.
 

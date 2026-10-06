@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-03**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-04**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -248,7 +248,7 @@ Card date: **2004-10-03**. 504 registry players, one Markdown card and one inter
 | [Ira Newble](newblir01.md) | Cleveland Cavaliers | 29 | sourced | [open](newblir01.html) |
 | [Jalen Rose](roseja01.md) | Boston Celtics | 31 | sourced | [open](roseja01.html) |
 | [Jamal Mashburn](mashbja01.md) | New Orleans Hornets | 31 | silhouette | [open](mashbja01.html) |
-| [James Jones](jonesja02.md) | Charlotte Bobcats | 23 | sourced | [open](jonesja02.html) |
+| [James Jones](jonesja02.md) | Charlotte Bobcats | 24 | sourced | [open](jonesja02.html) |
 | [James Posey](poseyja01.md) | Memphis Grizzlies | 27 | sourced | [open](poseyja01.html) |
 | [Jarvis Hayes](hayesja01.md) | Washington Wizards | 23 | sourced | [open](hayesja01.html) |
 | [Jason Kapono](kaponja01.md) | Charlotte Bobcats | 23 | sourced | [open](kaponja01.html) |
@@ -500,7 +500,7 @@ Card date: **2004-10-03**. 504 registry players, one Markdown card and one inter
 | [Kendrick Perkins](perkike01.md) | Boston Celtics | 19 | sourced | [open](perkike01.html) |
 | [Keon Clark](clarkke01.md) | Free agent | 29 | silhouette | [open](clarkke01.html) |
 | [Kevin Willis](willike02.md) | Free agent | 42 | sourced | [open](willike02.html) |
-| [Kurt Thomas](thomaku01.md) | New York Knicks | 31 | sourced | [open](thomaku01.html) |
+| [Kurt Thomas](thomaku01.md) | New York Knicks | 32 | sourced | [open](thomaku01.html) |
 | [Kwame Brown](brownkw01.md) | Washington Wizards | 22 | sourced | [open](brownkw01.html) |
 | [Leon Smith](smithle01.md) | Free agent | None | silhouette | [open](smithle01.html) |
 | [Lonny Baxter](baxtelo01.md) | Toronto Raptors | 25 | sourced | [open](baxtelo01.html) |
@@ -548,7 +548,7 @@ Card date: **2004-10-03**. 504 registry players, one Markdown card and one inter
 | [Vlade Divac](divacvl01.md) | Toronto Raptors | 36 | sourced | [open](divacvl01.html) |
 | [Vladimir Stepania](stepavl01.md) | Portland Trail Blazers | 28 | silhouette | [open](stepavl01.html) |
 | [Wang Zhizhi](zhizhwa01.md) | Utah Jazz | 27 | sourced | [open](zhizhwa01.html) |
-| [Xue Yuyang](yuyanxu01.md) | Free agent | 21 | silhouette | [open](yuyanxu01.html) |
+| [Xue Yuyang](yuyanxu01.md) | Free agent | 22 | silhouette | [open](yuyanxu01.html) |
 | [Yao Ming](mingya01.md) | Houston Rockets | 24 | sourced | [open](mingya01.html) |
 | [Zeljko Rebraca](rebraze01.md) | Free agent | 32 | sourced | [open](rebraze01.html) |
 | [Zendon Hamilton](hamilze01.md) | Free agent | None | silhouette | [open](hamilze01.html) |

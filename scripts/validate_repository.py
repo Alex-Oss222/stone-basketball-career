@@ -241,7 +241,8 @@ def front_matter(path):
 
 def discover():
     career = ROOT / "career"
-    players = [p for p in career.iterdir() if p.is_dir()]
+    # The controlled player carries a professional identity; a followed player's folder (career/<name>) does not.
+    players = [p for p in career.iterdir() if p.is_dir() and (p / "professional_identity.json").is_file()]
     if len(players) != 1:
         raise ValueError("career must contain exactly one player directory")
     # The active season is the one with a current state. The next season's folder can exist before the rollover

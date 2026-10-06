@@ -244,10 +244,26 @@ def build_ratings(data, data_hash, season="2003-04"):
             "rate_baselines": mean, "source_totals": sums, "players": players}
 
 
+def alternate_profiles(root, season):
+    """Expected profiles of the other alternate-history players for the season (`protagonist.build_alternate_profile`):
+    {bbr_id: (player, file metadata)}. They replace the player's veteran and real-trajectory profiles."""
+    from .protagonist import ALTERNATE_PLAYERS, ALTERNATE_PROFILE_PATH
+    from .trajectories import alternate
+    out = {}
+    for bbr_id, meta in ALTERNATE_PLAYERS.items():
+        path = Path(root) / ALTERNATE_PROFILE_PATH.format(folder=meta["folder"], season=season)
+        if alternate(bbr_id, season):
+            if not path.exists():
+                raise ValueError(f"{meta['name']} is alternate history in {season} but has no expected profile ({path.name})")
+            data = read_json(path)
+            out[bbr_id] = (data["players"][bbr_id], data)
+    return out
+
+
 class RatingIndex:
     """Veteran profiles, plus rookie estimates when supplied (same rate keys and baselines)."""
 
-    def __init__(self, data, rookies=None, trajectories=None, season=None):
+    def __init__(self, data, rookies=None, trajectories=None, season=None, overrides=None):
         self.data = data
         self.trajectories, self.season = trajectories, season
         self.players = {pid: dict(p, model_version=data["model_version"], as_of=data["as_of"],
@@ -259,6 +275,11 @@ class RatingIndex:
                                      source_sha256=rookies["source_sha256"])
             if "scouting" in p:
                 self.players[pid]["scouting_sources"] = rookies["scouting_sources"]
+        self.overrides = set()
+        for pid, (p, meta) in (overrides or {}).items():
+            # An alternate-history player's own expectation replaces his veteran profile and his real trajectory.
+            self.players[pid] = dict(p, model_version=meta["model_version"], as_of=meta["as_of"], source_sha256=meta["source_sha256"])
+            self.overrides.add(pid)
         if trajectories is not None:
             # Players known only from real careers (later draftees) still need a name lookup.
             for pid, p in trajectories.data["players"].items():
@@ -283,7 +304,8 @@ class RatingIndex:
         p = self.lookup(player_id, bbr_id)
         if p is None:
             return {}
-        if self.trajectories is not None and self.trajectories.has(p["bbr_id"], self.season):
+        if (self.trajectories is not None and p["bbr_id"] not in getattr(self, "overrides", ())
+                and self.trajectories.has(p["bbr_id"], self.season)):
             return self.trajectories.expected_profile(p["bbr_id"], self.season, self.data["rate_baselines"])
         if p.get("trajectory_only"):
             return {}
@@ -291,6 +313,8 @@ class RatingIndex:
                    "as_of": p["as_of"], "season_end_year": p["season_end_year"],
                    "source_sha256": p["source_sha256"],
                    "rates": {k:p["estimated"][k] for k in RATE_KEYS}}
+        if p["bbr_id"] in getattr(self, "overrides", ()) and "defense" in p:
+            profile["defense"] = p["defense"]   # his last real-path defensive expectation, carried
         if "scouting" in p:
             # Qualitative inputs and source identity travel in the packet;
             # later source changes cannot silently pass the replay check.
@@ -322,7 +346,7 @@ def load_rating_index(game_date, season, root=ROOT):
         protagonist = Path(root) / PROTAGONIST_PATH.format(season=season)
         rookies = read_json(protagonist) if protagonist.exists() else None
         from .trajectories import load_trajectories
-        index = RatingIndex(data, rookies, load_trajectories(root, season), season)
+        index = RatingIndex(data, rookies, load_trajectories(root, season), season, alternate_profiles(root, season))
         index.grades = staff_defensive_grades(game_date, season, root)
         return index
     from .prospects import (PROSPECTS_PATH, LEGACY_PROSPECTS_PATH, ROOKIE_MODEL_VERSION, ROOKIE_PATH, LEGACY_ROOKIE_PATH,
