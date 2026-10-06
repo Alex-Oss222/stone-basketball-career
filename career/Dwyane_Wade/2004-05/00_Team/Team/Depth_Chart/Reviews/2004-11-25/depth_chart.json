@@ -1,0 +1,41 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2004-11-25",
+ "team": "Miami Heat",
+ "status": "staff_review",
+ "game_ready": true,
+ "basis": "Fortnightly staff review 2004-11-25; fixed preseason estimate plus closed production per minute",
+ "positions": {
+  "PG": [
+   "Mike James",
+   "Rafer Alston",
+   "Maurice Baker"
+  ],
+  "SG": [
+   "Dwyane Wade",
+   "Kendall Gill",
+   "Eddie Jones",
+   "Maurice Evans"
+  ],
+  "SF": [
+   "Caron Butler",
+   "Dorell Wright"
+  ],
+  "PF": [
+   "Mehmet Okur",
+   "Scott Padgett",
+   "Udonis Haslem"
+  ],
+  "C": [
+   "Brian Grant",
+   "John Edwards",
+   "John Thomas"
+  ]
+ },
+ "battles_drawn": {},
+ "unassigned_draft_rights": [],
+ "unassigned_arrivals": [],
+ "unavailable": [],
+ "departed": []
+}

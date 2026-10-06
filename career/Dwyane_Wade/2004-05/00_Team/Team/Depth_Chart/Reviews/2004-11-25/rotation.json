@@ -1,0 +1,111 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2004-11-25",
+ "team": "Miami Heat",
+ "total_minutes": 240,
+ "purpose": "Miami's rotation for the game builder: minutes per game in rotation order; the engine's injury and foul logic changes a night's minutes.",
+ "players": [
+  {
+   "player_id": "Mike James",
+   "position": "PG",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "jamesmi01",
+   "starter": true
+  },
+  {
+   "player_id": "Dwyane Wade",
+   "position": "SG",
+   "minutes": 38.76,
+   "ratings": {},
+   "starter": true
+  },
+  {
+   "player_id": "Caron Butler",
+   "position": "SF",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "butleca01",
+   "starter": true
+  },
+  {
+   "player_id": "Mehmet Okur",
+   "position": "PF",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "okurme01",
+   "starter": true
+  },
+  {
+   "player_id": "Brian Grant",
+   "position": "C",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "grantbr01",
+   "starter": true
+  },
+  {
+   "player_id": "Scott Padgett",
+   "position": "PF",
+   "minutes": 18.64,
+   "ratings": {},
+   "bbr_id": "padgesc01",
+   "starter": false
+  },
+  {
+   "player_id": "Udonis Haslem",
+   "position": "PF",
+   "minutes": 14.91,
+   "ratings": {},
+   "bbr_id": "hasleud01",
+   "starter": false
+  },
+  {
+   "player_id": "Rafer Alston",
+   "position": "PG",
+   "minutes": 11.18,
+   "ratings": {},
+   "bbr_id": "alstora01",
+   "starter": false
+  },
+  {
+   "player_id": "Dorell Wright",
+   "position": "SF",
+   "minutes": 9.32,
+   "ratings": {},
+   "bbr_id": "wrighdo01",
+   "starter": false
+  },
+  {
+   "player_id": "Kendall Gill",
+   "position": "SG",
+   "minutes": 7.46,
+   "ratings": {},
+   "bbr_id": "gillke01",
+   "starter": false
+  },
+  {
+   "player_id": "Eddie Jones",
+   "position": "SG",
+   "minutes": 3.73,
+   "ratings": {},
+   "bbr_id": "jonesed02",
+   "starter": false
+  }
+ ],
+ "starters": {
+  "PG": "Mike James",
+  "SG": "Dwyane Wade",
+  "SF": "Caron Butler",
+  "PF": "Mehmet Okur",
+  "C": "Brian Grant"
+ },
+ "review": "review.json",
+ "minutes_by_gap": {
+  "player": "Dwyane Wade",
+  "lead": 0.2404,
+  "extra_minutes": 4.76,
+  "rule": "lead over the next starter beyond 5% x 25 minutes, at most 6; taken from the reserves in proportion"
+ }
+}
