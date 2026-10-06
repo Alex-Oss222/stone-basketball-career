@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2004-10-05 · Miami Heat · active
+Career date: 2004-10-06 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,7 +14,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2004-10-05 |
+| Career date | 2004-10-06 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
@@ -25,7 +25,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2004-10-05 | Current checkpoint | 2004-10-05-camp-opens | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
+| 2004-10-06 | Current checkpoint | 2004-10-05-camp-opens | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2004-10-05 | Camp reporting | Club records the date | active | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
@@ -34,7 +34,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date | Milestone | Who acts | Status | Record |
 | --- | --- | --- | --- | --- |
-| 2004-10-05 | Training camp opens | League calendar | today | [Season](index.html#calendar) |
+| 2004-10-05 | Training camp opens | League calendar | done | [Season](index.html#calendar) |
 | 2004-10-05 to 2004-11-01 | Wade's 2004 camp teamwork focus | player | planned | [Record](../2004-05/04_Training_Camp/note.md) |
 | 2004-10-10 | Preseason opens | League calendar | upcoming | [Season](index.html#calendar) |
 | 2004-11-01 | Roster cut to 15 | League calendar | upcoming | [Season](index.html#calendar) |
