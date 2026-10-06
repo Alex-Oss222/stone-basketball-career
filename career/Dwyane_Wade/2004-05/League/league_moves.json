@@ -971,6 +971,130 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 5.27 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-claim-smithth01",
+   "date": "2004-11-10",
+   "kind": "claim",
+   "player": "Theron Smith",
+   "bbr_id": "smithth01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Theron Smith",
+    "bbr_id": "smithth01",
+    "position": "SF",
+    "games": 33,
+    "minutes": 510
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Atlanta Hawks (worst record first)",
+   "waiver": "2004-05-market-2004-11-08-waive-smithth01"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-claim-korveky01",
+   "date": "2004-11-10",
+   "kind": "claim",
+   "player": "Kyle Korver",
+   "bbr_id": "korveky01",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Kyle Korver",
+    "bbr_id": "korveky01",
+    "position": "SF",
+    "games": 82,
+    "minutes": 2667
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Charlotte Bobcats (worst record first)",
+   "waiver": "2004-05-market-2004-11-08-waive-korveky01"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-waive-carlige01",
+   "date": "2004-11-10",
+   "kind": "waive",
+   "player": "Geno Carlisle",
+   "bbr_id": "carlige01",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Geno Carlisle",
+    "bbr_id": "carlige01",
+    "position": "SG",
+    "games": 6,
+    "minutes": 16
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-12"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-rest_of_season-martida01",
+   "date": "2004-11-10",
+   "kind": "rest_of_season",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Darrick Martin",
+    "bbr_id": "martida01",
+    "position": "PG",
+    "games": 11,
+    "minutes": 190
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.92 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-waive-reineja01",
+   "date": "2004-11-10",
+   "kind": "waive",
+   "player": "Jared Reiner",
+   "bbr_id": "reineja01",
+   "from": "Sacramento Kings",
+   "to": null,
+   "role": {
+    "player_id": "Jared Reiner",
+    "bbr_id": "reineja01",
+    "position": "C",
+    "games": 19,
+    "minutes": 132
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-12"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-rest_of_season-foylead01",
+   "date": "2004-11-10",
+   "kind": "rest_of_season",
+   "player": "Adonal Foyle",
+   "bbr_id": "foylead01",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Adonal Foyle",
+    "bbr_id": "foylead01",
+    "position": "C",
+    "games": 78,
+    "minutes": 1700
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.85 x fit"
   }
  ],
  "market_days": [
@@ -981,6 +1105,7 @@
   "2004-11-06",
   "2004-11-07",
   "2004-11-08",
-  "2004-11-09"
+  "2004-11-09",
+  "2004-11-10"
  ]
 }
