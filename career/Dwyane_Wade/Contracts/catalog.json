@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-01-07",
+  "as_of": "2005-01-09",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -590,7 +590,7 @@
     {
       "player_id": "knighbr01",
       "name": "Brevin Knight",
-      "team": "Free agent",
+      "team": "Washington Wizards",
       "status": "under contract",
       "current_contract_id": "knighbr01-1999-11-01",
       "recorded_agreements": 1,

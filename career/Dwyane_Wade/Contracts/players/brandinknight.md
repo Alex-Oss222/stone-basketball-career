@@ -2,9 +2,9 @@
 
 # Contract | Brandin Knight
 
-Known through: 2005-01-07. [Open interactive contract](brandinknight.html#contract) · [Contract history](brandinknight.html#contract-history)
+Known through: 2005-01-09. [Open interactive contract](brandinknight.html#contract) · [Contract history](brandinknight.html#contract-history)
 
-Brandin Knight: under contract. Evidence cutoff: 2005-01-07.
+Brandin Knight: under contract. Evidence cutoff: 2005-01-09.
 
 ## Current contract
 

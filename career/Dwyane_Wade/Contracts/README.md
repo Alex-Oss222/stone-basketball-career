@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-01-07. [Search the contract directory](index.html)
+Known through 2005-01-09. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -73,7 +73,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Brandon Hunter](players/huntebr01.md) | Charlotte Bobcats | No verified contract record | No verified current agreement | 0 |
 | [Brendan Haywood](players/haywobr01.md) | Washington Wizards | under rookie contract | Brendan Haywood · existing contract; signing date not recorded | 1 |
 | [Brent Barry](players/barrybr01.md) | Washington Wizards | under contract | Brent Barry · 2004-08-05 | 2 |
-| [Brevin Knight](players/knighbr01.md) | Free agent | under contract | Brevin Knight · 1999-11-01 | 1 |
+| [Brevin Knight](players/knighbr01.md) | Washington Wizards | under contract | Brevin Knight · 1999-11-01 | 1 |
 | [Brian Cardinal](players/cardibr01.md) | Chicago Bulls | under contract | Brian Cardinal · 2004-07-15 | 1 |
 | [Brian Cook](players/cookbr01.md) | Los Angeles Lakers | No verified contract record | No verified current agreement | 0 |
 | [Brian Grant](players/grantbr01.md) | Miami Heat | under contract | Brian Grant · 2000-08-30 | 1 |

@@ -176,13 +176,14 @@
   {
    "player": "Trevor Ariza",
    "bbr_id": "arizatr01",
-   "club": "Detroit Pistons",
+   "club": "Los Angeles Lakers",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2004-05": 385277
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "signed_club": "Detroit Pistons"
   },
   {
    "player": "Darrell Armstrong",
@@ -227,14 +228,15 @@
   {
    "player": "Chucky Atkins",
    "bbr_id": "atkinch01",
-   "club": "Detroit Pistons",
+   "club": "Los Angeles Lakers",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 4200000,
     "2005-06": 4500000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "Detroit Pistons"
   },
   {
    "player": "Maurice Baker",
@@ -1423,7 +1425,7 @@
   {
    "player": "Ndudi Ebi",
    "bbr_id": "ebind01",
-   "club": "Minnesota Timberwolves",
+   "club": "Cleveland Cavaliers",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -1436,7 +1438,8 @@
     "2006-07": "team_option"
    },
    "rookie_scale": true,
-   "scale_pick_2003": 26
+   "scale_pick_2003": 26,
+   "signed_club": "Minnesota Timberwolves"
   },
   {
    "player": "Corsley Edwards",
@@ -2070,13 +2073,14 @@
   {
    "player": "Trenton Hassell",
    "bbr_id": "hassetr01",
-   "club": "Minnesota Timberwolves",
+   "club": "Cleveland Cavaliers",
    "route": "qualifying_offer",
    "kind": "new",
    "schedule": {
     "2004-05": 895046
    },
-   "source": "2004 qualifying offer accepted"
+   "source": "2004 qualifying offer accepted",
+   "signed_club": "Minnesota Timberwolves"
   },
   {
    "player": "Jarvis Hayes",
@@ -3823,13 +3827,14 @@
   {
    "player": "Gary Payton",
    "bbr_id": "paytoga01",
-   "club": "Los Angeles Lakers",
+   "club": "Detroit Pistons",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 5162850
    },
-   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)"
+   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)",
+   "signed_club": "Los Angeles Lakers"
   },
   {
    "player": "Anthony Peeler",
@@ -4505,13 +4510,14 @@
   {
    "player": "Jerry Stackhouse",
    "bbr_id": "stackje01",
-   "club": "Cleveland Cavaliers",
+   "club": "Minnesota Timberwolves",
    "route": "mid_level",
    "kind": "new",
    "schedule": {
     "2004-05": 2109772
    },
-   "source": "2004 camp signing (roster minimum)"
+   "source": "2004 camp signing (roster minimum)",
+   "signed_club": "Cleveland Cavaliers"
   },
   {
    "player": "Vladimir Stepania",
