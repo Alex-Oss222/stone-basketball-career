@@ -57,6 +57,25 @@ SEASON_RULES = {
         "playoff_teams_per_conference": 8,
         "clubs": 30,
     },
+    "2005-06": {
+        # The 2005 agreement (library/2005/league/nba_2005_cba_rules.json `roster`, sourced): the injured list becomes
+        # an inactive list set game by game with no minimum stay, at most three inactive; 13 to 15 players under
+        # contract; twelve dress. Playing rules as 2004-05 (hand-check emphasis continues; no 2005-06 rule change is
+        # recorded in `game_rules`). Added in the season-change audit, December 2004 on the career clock.
+        "game_day_actives": 12,
+        "roster_minimum": 13,
+        "roster_maximum": 15,
+        "reserve_list": "inactive_list",
+        "reserve_list_maximum": 3,
+        "reserve_list_minimum_games": 0,
+        "zone_defense_legal": True,
+        "defensive_three_seconds": True,
+        "hand_check_emphasis": True,
+        "play_in_tournament": False,
+        "first_round_best_of": 7,
+        "playoff_teams_per_conference": 8,
+        "clubs": 30,
+    },
 }
 
 GAME_TYPES = ("preseason", "regular", "play_in", "playoff")

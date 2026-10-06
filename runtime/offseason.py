@@ -208,7 +208,9 @@ def later_book(season, root=ROOT):
     new = real_clubs(season, root)
     role = lambda b: (new.get(b) or (None, None, {}))[2]
     clubs, pool, held, counts = defaultdict(list), [], set(), Counter()
-    for club, rows in record["clubs"].items():
+    from .seasons import club_name
+    for market_club, rows in record["clubs"].items():
+        club = club_name(market_club, season)               # a renamed franchise plays the season under its new name
         for r in rows:
             b = r.get("bbr_id")
             if not b:

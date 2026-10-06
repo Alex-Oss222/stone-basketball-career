@@ -127,6 +127,13 @@ def rookies(root=ROOT, season=None):
     service = root / "library/2004/league/nba_2004_service_years.json"
     if service.is_file():                                            # a first NBA season in this season (identity data)
         bbrs |= {b for b, e in json.loads(service.read_text(encoding="utf-8"))["players"].items() if e.get("first_season") == season}
+    if year >= 2005:
+        # A later season (the season-change audit): its service file lists everyone who played an NBA season before it, so
+        # a player in the real careers table whose first season is this one and who is not listed is a rookie (identity).
+        listed = root / f"library/{year}/league/nba_{year}_service_years.json"
+        before = set(json.loads(listed.read_text(encoding="utf-8"))["players"]) if listed.is_file() else set()
+        careers = json.loads((root / "library/careers/nba_player_careers.json").read_text(encoding="utf-8"))["players"]
+        bbrs |= {b for b, e in careers.items() if b not in before and min(e.get("seasons") or {"9999": 0}) == season}
     names = {WADE} if season == "2003-04" else set()
     from .rotations import load_rosters
     for club in load_rosters(season, root).values():

@@ -245,7 +245,8 @@ def rookie_prior(player, root=ROOT):
     """A rookie's prior by his draft slot: the June 26, 2003 contract inventory's draft rights in the first season,
     the season's simulated draft after it."""
     if not FIRST:
-        draft = Path(root) / f"career/Dwyane_Wade/2003-04/09_Draft/draft_{SEASON[:4]}.json"
+        from .seasons import previous_season
+        draft = Path(root) / f"career/Dwyane_Wade/{previous_season(SEASON)}/09_Draft/draft_{SEASON[:4]}.json"   # the summer's draft
         picks = read(draft.relative_to(root), root)["picks"] if draft.is_file() else []
         pick = next((p for p in picks if p["player"] == player), None)
         if pick is None:

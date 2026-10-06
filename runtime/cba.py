@@ -68,7 +68,13 @@ def minimum_salary(years_of_service, season="2003-04", root=ROOT):
 
 def minimum_cap_amount(years_of_service, salary, seasons, season="2003-04", root=ROOT):
     """Team salary counted for a contract: a one-year minimum for a 5+ year veteran counts the
-    4-year minimum (the league reimburses the rest); every other contract counts its salary."""
+    4-year minimum (the league reimburses the rest; from 2005-06 a 3+ year veteran counts the 2-year minimum);
+    every other contract counts its salary."""
+    if season >= "2005-06":               # 2005 FAQ Q11: a 3+ year veteran's one-year minimum counts the 2-year minimum
+        if (years_of_service is not None and years_of_service >= 3 and seasons == 1
+                and salary == minimum_salary(years_of_service, season, root)):
+            return minimum_salary(2, season, root)
+        return salary
     if (years_of_service is not None and years_of_service >= MINIMUM_CAP_SERVICE and seasons == 1
             and salary == minimum_salary(years_of_service, season, root)):
         return minimum_scale(root)["cap_treatment"]["amount_counted"][season]

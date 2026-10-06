@@ -1,0 +1,263 @@
+{
+ "schema_version": 1,
+ "kind": "all_star_calendar",
+ "season": "2004-05",
+ "researched": "2026-10-06",
+ "dates": {
+  "fan_ballot_close": {
+   "value": "2005-01-23",
+   "status": "sourced",
+   "sources": [
+    "http://www.china.org.cn/english/2004/Dec/115233.htm",
+    "https://www.nba.com/news/fatalbert_041118.html"
+   ],
+   "note": "Xinhua (Dec 17, 2004) on the NBA balloting update: 'The balloting continues through January 23'"
+  },
+  "starters_announced": {
+   "value": "2005-02-03",
+   "status": "sourced",
+   "sources": [
+    "http://www.china.org.cn/english/2004/Dec/115233.htm",
+    "https://www.chinadaily.com.cn/english/doc/2005-02/04/content_415041.htm"
+   ],
+   "note": "the same update: results issued 'leading up to an unveiling on February 3' (Thursday)"
+  },
+  "coach_record_through": {
+   "value": "2005-02-06",
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2005_NBA_All-Star_Game",
+    "https://en.wikipedia.org/wiki/List_of_NBA_All-Star_Game_head_coaches"
+   ],
+   "note": "best winning percentage in each conference 'through the games of February 6, 2005' names the game's coaches"
+  },
+  "reserves_announced": {
+   "value": "2005-02-08",
+   "status": "sourced",
+   "sources": [
+    "https://www.espn.com/nba/allstar2005/news/story?id=1986997"
+   ],
+   "note": "AP (ESPN, Feb 8, 2005): 'the selections Tuesday, when the NBA announced the reserves for the Feb. 20 game'"
+  },
+  "rookie_challenge_announced": {
+   "value": "2005-01-27",
+   "status": "sourced",
+   "sources": [
+    "http://www.insidehoops.com/rookie-challenge.shtml"
+   ],
+   "note": "InsideHoops files the NBA's roster release ('lead a list of 18 players selected to play in the 2005 got milk? NBA Rookie Challenge') under the heading '2005 NBA ROOKIE CHALLENGE | JAN. 27, 2005'; the NBA's own release was not loaded"
+  },
+  "replacements_named": {
+   "value": "2005-02-18",
+   "status": "judgement",
+   "note": "the commissioner names injury replacements before the weekend; the simulation names them on the Friday the weekend opens, from closed results through the day before"
+  },
+  "rookie_challenge": {
+   "value": "2005-02-18",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/allstar/NBA_2005_rookie.html",
+    "http://www.insidehoops.com/rookie-challenge.shtml"
+   ]
+  },
+  "saturday_contests": {
+   "value": "2005-02-19",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/allstar/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_All-Star_Game",
+    "library/2004/league/nba_2004_05_calendar.json"
+   ]
+  },
+  "all_star_game": {
+   "value": "2005-02-20",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/allstar/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_All-Star_Game",
+    "library/2004/league/nba_2004_05_calendar.json"
+   ],
+   "venue": "Pepsi Center, Denver"
+  }
+ },
+ "shape": {
+  "starters": {
+   "G": 2,
+   "F": 2,
+   "C": 1
+  },
+  "reserves": {
+   "G": 2,
+   "F": 2,
+   "C": 1,
+   "any": 2
+  },
+  "roster": 12,
+  "rookie_challenge_roster": 9
+ },
+ "electorates": {
+  "starters": "fans (ballot plurality)",
+  "reserves": "the conference's head coaches, never their own players",
+  "replacements": "the Commissioner",
+  "rookie_challenge": "the NBA's assistant coaches, one ballot per club staff"
+ },
+ "previous_game_coaches": {
+  "value": {
+   "West": "Flip Saunders",
+   "East": "Rick Carlisle"
+  },
+  "status": "sourced",
+  "sources": [
+   "https://www.basketball-reference.com/allstar/NBA_2004.html",
+   "https://en.wikipedia.org/wiki/List_of_NBA_All-Star_Game_head_coaches"
+  ],
+  "note": "the Riley Rule: no coach coaches two All-Star Games in a row; these are the REAL 2004 game's coaches. The simulated 2004 game (Stats_and_Awards/League/2003-04/all_star.json) was coached by Lawrence Frank (East) and Flip Saunders (West); runtime/all_star.py reads only this value, so the simulated record is not consulted"
+ },
+ "research": {
+  "fan_ballot_open": {
+   "value": "2004-11-18",
+   "status": "sourced",
+   "sources": [
+    "http://www.china.org.cn/english/2004/Dec/115233.htm",
+    "https://www.nba.com/news/fatalbert_041118.html"
+   ],
+   "note": "Xinhua: 'the balloting program, which began on November 18'; NBA.com release dated 041118 ('Fat Albert Highlights 2005 NBA All-Star Balloting', no longer served). Ballots in all 30 arenas, NBA.com in 19 languages, Verizon Wireless, Foot Locker and Champs Sports (search summary of the release)."
+  },
+  "fan_ballot_close": {
+   "value": "2005-01-23",
+   "status": "sourced",
+   "sources": [
+    "http://www.china.org.cn/english/2004/Dec/115233.htm"
+   ],
+   "note": "'The balloting continues through January 23'."
+  },
+  "starters_announced": {
+   "value": "2005-02-03",
+   "status": "sourced",
+   "sources": [
+    "http://www.china.org.cn/english/2004/Dec/115233.htm",
+    "https://www.chinadaily.com.cn/english/doc/2005-02/04/content_415041.htm"
+   ],
+   "note": "Scheduled 'unveiling on February 3' in the balloting update; reports of the starters dated Feb 4, 2005 (Beijing time) agree."
+  },
+  "starter_shape_per_conference": {
+   "value": {
+    "guards": 2,
+    "forwards": 2,
+    "center": 1
+   },
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2005_NBA_All-Star_Game"
+   ],
+   "note": "'Two guards, two forwards and one center who received the highest vote were named the All-Star starters.'"
+  },
+  "reserves": {
+   "value": {
+    "voters": "the 30 NBA head coaches, each voting within own conference",
+    "announced": "2005-02-08",
+    "shape_per_conference": {
+     "guards": 2,
+     "forwards": 2,
+     "center": 1,
+     "wild_cards_any_position": 2,
+     "reserves_total": 7
+    },
+    "roster_size_per_conference": 12,
+    "may_vote_own_players": false
+   },
+   "status": "sourced",
+   "sources": [
+    "https://www.espn.com/nba/allstar2005/news/story?id=1986997",
+    "https://en.wikipedia.org/wiki/2005_NBA_All-Star_Game"
+   ],
+   "note": "AP: 'The league's 30 coaches chose the reserves' ... 'Coaches were required to select two guards, two forwards, one center and two other players regardless of position.' Wikipedia: 'The coaches were not permitted to vote for their own players.' First season with 30 clubs (Charlotte)."
+  },
+  "injury_replacement": {
+   "value": {
+    "replacement_named_by": "NBA Commissioner (David Stern)",
+    "replacement_starter_chosen_by": "conference All-Star head coach"
+   },
+   "status": "sourced",
+   "sources": [
+    "https://www.espn.com/nba/allstar2005/news/story?id=1986997",
+    "https://en.wikipedia.org/wiki/2005_NBA_All-Star_Game"
+   ],
+   "note": "AP: for an injured selection 'NBA commissioner David Stern will select his replacement'. That the coach chooses a replacement STARTER remains unverified for this season, as in 2003-04."
+  },
+  "all_star_game": {
+   "value": {
+    "date": "2005-02-20",
+    "day": "Sunday",
+    "tipoff": "8 p.m. ET (TNT)",
+    "venue": "Pepsi Center, Denver",
+    "edition": "54th"
+   },
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/allstar/NBA_2005.html",
+    "http://www.china.org.cn/english/2004/Dec/115233.htm",
+    "http://www.insidehoops.com/rookie-challenge.shtml"
+   ]
+  },
+  "coaches_rule": {
+   "value": {
+    "rule": "head coach of the team with the best winning percentage in each conference through games of 2005-02-06 (Sunday two weeks before the game)",
+    "repeat_restriction": "'Riley Rule': a coach may not coach consecutive All-Star Games; the next-best record coaches instead"
+   },
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2005_NBA_All-Star_Game",
+    "https://en.wikipedia.org/wiki/List_of_NBA_All-Star_Game_head_coaches"
+   ],
+   "note": "Tie-break procedure between equal records unverified."
+  },
+  "rookie_challenge": {
+   "value": {
+    "name": "got milk? Rookie Challenge",
+    "date": "2005-02-18",
+    "day": "Friday",
+    "tipoff": "9 p.m. ET (TNT)",
+    "venue": "Pepsi Center, Denver",
+    "format": "Rookies vs Sophomores (6th year of this format)",
+    "roster_size_per_team": 9,
+    "players_named": 18,
+    "selected_by": "the NBA's assistant coaches, each club's staff submitting one ballot",
+    "team_coaches": "lead assistants from the 2005 All-Star Game coaching staffs"
+   },
+   "status": "sourced",
+   "sources": [
+    "http://www.insidehoops.com/rookie-challenge.shtml",
+    "https://www.basketball-reference.com/allstar/NBA_2005_rookie.html"
+   ],
+   "note": "Release: '18 players selected ... The participants in the got milk? NBA Rookie Challenge were selected by the NBA's assistant coaches with each team submitting one ballot.' A change from 2004's broadcaster panel. Game rules for 2005 not loaded (2004 and 2006: two 20-minute halves)."
+  },
+  "rookie_challenge_rosters_announced": {
+   "value": "2005-01-27",
+   "status": "sourced",
+   "sources": [
+    "http://www.insidehoops.com/rookie-challenge.shtml"
+   ],
+   "note": "Date from the InsideHoops heading over the NBA release; the NBA's own dated release was not loaded."
+  },
+  "saturday_contests": {
+   "value": {
+    "date": "2005-02-19",
+    "day": "Saturday",
+    "tipoff": "8 p.m. ET (TNT)",
+    "events": [
+     "Three-Point Shootout",
+     "Skills Challenge",
+     "Shooting Stars",
+     "Slam Dunk"
+    ]
+   },
+   "status": "sourced",
+   "sources": [
+    "http://www.insidehoops.com/rookie-challenge.shtml",
+    "https://en.wikipedia.org/wiki/2004%E2%80%9305_NBA_season"
+   ],
+   "note": "Participant selection (league invitation) and announcement dates not researched; event order unverified."
+  }
+ }
+}

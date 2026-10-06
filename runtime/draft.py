@@ -237,6 +237,10 @@ def club_contexts(root=ROOT):
     if YEAR == 2004:
         out["Charlotte Bobcats"] = {"stance": "rebuilding", "record": "expansion", "need": {"G": 1.0, "F": 1.0, "C": 1.0},
                                 "cornerstone": {"G": False, "F": False, "C": False}}
+    from .seasons import club_aliases, label
+    for old_name, new_name in club_aliases(label(YEAR)).items():   # a renamed club's picks find its context
+        if old_name in out:
+            out.setdefault(new_name, out[old_name])
     return out
 
 
@@ -300,6 +304,7 @@ def run(root=ROOT, clock=None):
     pool, contexts = prospects(root), club_contexts(root)
     tier = tiers(pool)
     owners = {s["pick"]: s["owner_club"] for s in order}
+    rounds = {s["pick"]: s["round"] for s in order}            # the order's own rounds (29 first-rounders in 2004, 30 later)
     taken, picks, trades = set(), [], []
     for slot in sorted(owners):
         club = owners[slot]
@@ -316,12 +321,12 @@ def run(root=ROOT, clock=None):
                                       "decider": f"{club} front office (engine draw)",
                                       "options": {"accept": TRADE_DOWN_ACCEPT, "decline": round(1 - TRADE_DOWN_ACCEPT, 6)},
                                       "basis": f"{len(in_tier)} players left in tier {best_tier}; {owners[later]} values its target {gain:.2f}x its "
-                                               f"expected pick; chart value No. {slot} {pick_value(slot):.2f} vs No. {later} {pick_value(later):.2f} + a 2005 second-rounder (runtime/draft.py)."})
+                                               f"expected pick; chart value No. {slot} {pick_value(slot):.2f} vs No. {later} {pick_value(later):.2f} + a {YEAR + 1} second-rounder (runtime/draft.py)."})
                 if answer is None:
                     return None
                 if answer == "accept":
                     trades.append({"slot": slot, "from": club, "to": owners[later], "for_slot": later,
-                                   "plus": f"{owners[later]} 2005 second-round pick"})
+                                   "plus": f"{owners[later]} {YEAR + 1} second-round pick"})
                     owners[slot], owners[later] = owners[later], club
                     club, ctx = owners[slot], contexts[owners[slot]]
         scores = {k: utility(pool[k], ctx) for k in in_tier}
@@ -341,7 +346,7 @@ def run(root=ROOT, clock=None):
             choice = next(k for k in top3 if pool[k]["player"] == choice)
         taken.add(choice)
         p = pool[choice]
-        picks.append({"pick": slot, "round": 1 if slot <= 29 else 2, "club": club, "player": p["player"], "bbr_id": p["bbr_id"],
+        picks.append({"pick": slot, "round": rounds[slot], "club": club, "player": p["player"], "bbr_id": p["bbr_id"],
                       "position": p["position"], "tier": best_tier, "consensus_slot": p["consensus"],
                       "floor": p["floor"], "median": p["median"], "ceiling": p["ceiling"]})
     record = {"schema_version": 1, "kind": "draft", "draft": f"{YEAR} NBA Draft", "date": DRAFT_DATE,
@@ -358,15 +363,15 @@ def run(root=ROOT, clock=None):
 
 
 def _miami_pick_ledger(root, trades):
-    """A draft-night trade that sends Miami's 2005 second-round pick away is recorded in Miami's pick ledger."""
+    """A draft-night trade that sends Miami's next-year second-round pick away is recorded in Miami's pick ledger."""
     path = Path(root) / f"career/Dwyane_Wade/{SEASON}/00_Team/Finances/draft_picks.json"
     data = _read(path)
     changed = False
     for t in trades:
         if t["to"] != MIAMI:
-            continue                       # Miami moved up: it gave its own 2005 second-rounder
+            continue                       # Miami moved up: it gave its own next-year second-rounder
         for pick in data["picks"]:
-            if pick["year"] == 2005 and pick["round"] == 2 and pick["original_club"] == MIAMI and pick["owned"]:
+            if pick["year"] == YEAR + 1 and pick["round"] == 2 and pick["original_club"] == MIAMI and pick["owned"]:
                 pick["owned"] = False
                 pick["history"].append({"date": DRAFT_DATE, "event": f"traded to {t['from']} with Miami's move from No. "
                                         f"{t['for_slot']} to No. {t['slot']} in the {YEAR} draft", "source": RECORD.as_posix()})

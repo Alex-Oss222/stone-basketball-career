@@ -111,7 +111,7 @@ SIGN_AND_TRADE_RIGHTS = ("bird",)        # both directions; inferred (one 2003 o
 SIGN_AND_TRADE_RIGHTS_SHARE = 0.25       # judgement: the incumbent values the player it would otherwise lose for nothing at a quarter of his value (club-objective model; real sign-and-trade returns were small, e.g. Boston for Walker in 2005)
 PARTNER_LOCATION = 0.5                   # judgement: a partner club's location appeal in the player's consent draw
 OWN_OUT_ACCEPT_MARGIN = 0.1              # judgement: an own sign-and-trade-out goes to the first partner whose acceptance clears the floor by this
-BIRD_RAISE = 0.125
+BIRD_RAISE = 0.125                       # the 1999 agreement's Bird raise; a live schedule asks agreement.raise_share
 
 
 def read_json(path, root=ROOT):
@@ -809,7 +809,7 @@ class TradeDesk:
             errors.append(f"cash above ${rules['cash_per_season_max']['amount']:,} a season ({rules['cash_per_season_max']['status']})")
         # Salary matching for a club over the cap after the trade (115% + $100,000, reported for 1999); a club at or
         # under the cap after the trade absorbs the incoming salary into room (matching_under_cap, inferred).
-        pct, plus = rules["matching_over_cap"]["incoming_max_percent_of_outgoing"] / 100, rules["matching_over_cap"]["plus_dollars"]
+        pct, plus = self._matching(rules)
         t = self.totals(trade)
         byc = f"; {'; '.join(t['byc_notes'])}" if t["byc_notes"] else ""
         if t["miami_after"] > self.cap and t["in_full"] > t["out_match"] * pct + plus:
@@ -1055,10 +1055,28 @@ class TradeDesk:
             self._partner_counts[club] = len(self.assets.contracts.get(club, {}).get("players", []))   # every contract, inactive ones included
         return self._partner_counts[club]
 
+    def _league_year(self):
+        from .seasons import season_of_date
+        return season_of_date(self.on)
+
+    def _matching(self, rules):
+        """Traded-salary matching for a club over the cap: the 1999 rule from the season's CBA file through 2004-05,
+        then the 2005 agreement's 125% + $100,000 (`runtime/agreement.py`)."""
+        from .agreement import terms
+        if self._league_year() < "2005-06":
+            m = rules["matching_over_cap"]
+            return m["incoming_max_percent_of_outgoing"] / 100, m["plus_dollars"]
+        t = terms(self._league_year(), self.root)
+        return t["trade_match"], t["trade_plus"]
+
+    def _bird_raise(self):
+        from .agreement import raise_share
+        return raise_share("bird", self._league_year(), self.root)
+
     def _prefilter(self, club, outs, ins, sal_out, sal_in, room, active):
         """The salary rule and both roster limits on salaries alone, before the full legality and valuation."""
         rules = self.cba["trades"]
-        pct, plus = rules["matching_over_cap"]["incoming_max_percent_of_outgoing"] / 100, rules["matching_over_cap"]["plus_dollars"]
+        pct, plus = self._matching(rules)
         out_s, in_s = sum(sal_out[n] for n in outs), sum(sal_in[n] for n in ins)
         if room["committed"] + room["holds"] - out_s + in_s > self.cap and in_s > out_s * pct + plus:
             return False
@@ -1388,7 +1406,7 @@ class TradeDesk:
         ignored (the trade executes on the signing day). Returns (feasible, binding_constraint)."""
         years = max(3, int(target.get("years_asked") or 3))
         first = int(target["ask"])
-        terms = {"first_year": first, "years": years, "schedule": [int(round(first * (1 + BIRD_RAISE * i))) for i in range(years)]}
+        terms = {"first_year": first, "years": years, "schedule": [int(round(first * (1 + self._bird_raise() * i))) for i in range(years)]}
         terms["guaranteed"] = sum(terms["schedule"])
         st = self.synthetic_from_terms(target["player"], target["bbr_id"], target["club"], terms, "sign_and_trade", self.on)
         best = None

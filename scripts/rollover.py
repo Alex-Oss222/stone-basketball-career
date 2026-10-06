@@ -52,9 +52,9 @@ def finish():
 
 def report(summary):
     from runtime.rollover import miami_summer
-    from runtime.free_agency_2004 import RECORD
+    from runtime.free_agency_2004 import record_for
     from runtime.seasons import previous_season
-    record = json.loads((ROOT / RECORD).read_text(encoding="utf-8"))
+    record = json.loads((ROOT / record_for(summary["season"])).read_text(encoding="utf-8"))
     old = json.loads((ROOT / f"career/Dwyane_Wade/{previous_season(summary['season'])}/00_Team/Team/Roster/roster.json").read_text(encoding="utf-8"))
     s = miami_summer(record, old)
 

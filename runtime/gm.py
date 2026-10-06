@@ -27,7 +27,6 @@ ROSTER_CHARGE_SPOTS = 12                 # cap charge for empty roster spots bel
 OPEN_SHARE, CONCESSION_STEPS = 0.875, (0.925, 0.975, 1.0)   # open at 87.5% of the ask, then concede toward the valuation
 WALK_AWAY_OVER_VALUATION = 1.10          # never go past 110% of Miami's own valuation
 MAX_ROUNDS = 3
-RAISE = {"bird": 0.125, "other": 0.10}
 AVERAGE_VALUE = 9.0                      # league-average production value (efficiency per game) for the gap term
 ROOKIE_VALUE_SHARE = 0.7                 # a first-round rookie counts at this share of average until he has played
 ROOM_OVER_RIGHTS_SCORE = 20.0                # a target this good is worth renouncing cheap rights for
@@ -122,6 +121,15 @@ class FrontOffice:
         return {"mid_level": self.valuation.mid_level, "million": 1500000, "minimum": self.valuation.minimum(0)}
 
     def payroll_ceiling(self):
+        """The owner's ceiling: no luxury tax (`team_config.budget`, tax_tolerance "none"). Through 2004-05 the July 2003
+        projection as recorded; from 2005-06 the season's own tax line, which the 2005 agreement fixes before the season
+        (`cap_rules.luxury_tax_line`; the season-change audit found the 2003 figure carried forever)."""
+        from .seasons import live_season_on, path as season_path
+        season = live_season_on(self.on, self.root)
+        if self.budget.get("tax_tolerance", "none") == "none" and season >= "2005-06":
+            line = read(season_path(season, "cap_rules"), self.root).get("luxury_tax_line")
+            if line:
+                return int(line)
         return self.budget.get("payroll_ceiling", 57000000)
 
     # -- needs ---------------------------------------------------------------------------------
@@ -362,7 +370,7 @@ class FrontOffice:
         Round 1 opens at OPEN_SHARE of the ask, never above Miami's valuation, one season short of the
         years asked. Later rounds concede toward the player's counter in CONCESSION_STEPS of the gap,
         never past WALK_AWAY_OVER_VALUATION times the valuation; a counter beyond that ends the talks.
-        Raises follow the route (Bird 12.5%, otherwise 10%); the mid-level route starts at the exception.
+        Raises follow the route under the agreement in force (1999: Bird 12.5%, otherwise 10%; 2005: 10.5% and 8%); the mid-level route starts at the exception.
         """
         ask, own = target["ask"], target["valuation"]
         ceiling = own * WALK_AWAY_OVER_VALUATION
@@ -392,7 +400,11 @@ class FrontOffice:
             years = min(years, 2)
         if route == "sign_and_trade":
             years = min(max(3, years), 7)    # at least three non-option seasons, at most the Bird length (1999 rules)
-        raise_share = RAISE["bird" if route in ("bird", "early_bird", "sign_and_trade") else "other"]
+        from .agreement import raise_share as agreed_raise
+        from .seasons import season_of_date
+        # the agreement in force for the league year the contract starts (1999 through 2004-05, then 2005)
+        raise_share = agreed_raise("bird" if route in ("bird", "early_bird", "sign_and_trade") else "other",
+                                   season_of_date(self.on), self.root)
         schedule = [int(round(first * (1 + raise_share * i))) for i in range(years)]
         fits = self.future_fit(schedule)          # later seasons stay under the payroll ceiling too
         if fits < years:

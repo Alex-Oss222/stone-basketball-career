@@ -19,9 +19,11 @@ MIAMI = "Miami Heat"
 _ROSTERS = {}
 
 
-def _season(on):
-    from .seasons import season_of_date
-    return season_of_date(on)
+def _season(on, root=ROOT):
+    """The season whose records govern the date (`seasons.live_season_on`): never the next season's real rosters
+    before the rollover."""
+    from .seasons import live_season_on
+    return live_season_on(on, root)
 
 
 def rosters_on(on, root=ROOT):
@@ -30,7 +32,7 @@ def rosters_on(on, root=ROOT):
     from .seasons import clubs as season_clubs
     key = (str(Path(root).resolve()), on)
     if key not in _ROSTERS:
-        season = _season(on)
+        season = _season(on, root)
         out = {}
         for club in season_clubs(season, root):
             if club != MIAMI:
@@ -47,7 +49,7 @@ def holder(bbr_id, name, on, root=ROOT):
     from .league_moves import club_of
     from .player_stats import alias
     from .rotations import miami_holds
-    season = _season(on)
+    season = _season(on, root)
     miami = miami_holds(season, on, root)
     if (bbr_id and bbr_id in miami) or (name and alias(name) in miami):
         return MIAMI, f"on Miami's {season} register"

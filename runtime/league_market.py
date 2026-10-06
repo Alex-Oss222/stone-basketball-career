@@ -53,8 +53,14 @@ def _rules(root, season):
     data = json.loads((Path(root) / RULES).read_text(encoding="utf-8"))["rules"]
     roster = data["roster"]
     gates = dates(season, root)
-    return {"min": roster["minimum_players_under_contract_regular_season"]["value"],
-            "max": roster["maximum_players_under_contract_regular_season"]["value"],
+    if season >= "2005-06":               # the 2005 agreement's limits (runtime/era.py: 13 to 15)
+        from .era import rules_for
+        era = rules_for(season)
+        lo, hi = era["roster_minimum"], era["roster_maximum"]
+    else:
+        lo = roster["minimum_players_under_contract_regular_season"]["value"]
+        hi = roster["maximum_players_under_contract_regular_season"]["value"]
+    return {"min": lo, "max": hi,
             "ten_day_from": gates["ten_day_contracts_from"], "ten_day_per_club": 2, "guarantee": gates["guarantee"],
             "cut_day": gates["waive_by"], "season_end": gates["regular_season_end"]}
 
