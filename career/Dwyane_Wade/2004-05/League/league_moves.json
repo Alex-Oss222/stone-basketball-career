@@ -2142,6 +2142,28 @@
    "bbr_id": "robingl01",
    "from": "Philadelphia 76ers",
    "to": "Cleveland Cavaliers"
+  },
+  {
+   "id": "2004-05-market-2005-01-11-ten_day-breweja01",
+   "date": "2005-01-11",
+   "kind": "ten_day",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-21",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.28 x fit"
   }
  ],
  "market_days": [
@@ -2214,6 +2236,7 @@
   "2005-01-07",
   "2005-01-08",
   "2005-01-09",
-  "2005-01-10"
+  "2005-01-10",
+  "2005-01-11"
  ]
 }
