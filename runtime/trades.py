@@ -476,7 +476,7 @@ class Assets:
         wins = self.standings.get(owner_record_club, {}).get("wins", 41)
         order = sorted(self.standings.values(), key=lambda r: r["wins"])
         slot = 1 + sum(1 for r in order if r["wins"] < wins)      # worst record picks first (lottery ignored)
-        years_out = max(0, pick["year"] - int(self.season[:4]))
+        years_out = max(0, pick["year"] - max(2004, int(self.season[:4])))   # 2003-04 and 2004-05 as recorded
         slot = 15 + (slot - 15) * FUTURE_PICK_REGRESSION ** years_out
         if miami_own:
             slot += MIAMI_PICK_PESSIMISM
