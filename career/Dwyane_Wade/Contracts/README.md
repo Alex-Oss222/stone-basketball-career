@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-01-16. [Search the contract directory](index.html)
+Known through 2005-01-17. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -72,7 +72,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Brandon Armstrong](players/armstbr01.md) | Free agent | under rookie contract | Brandon Armstrong · existing contract; signing date not recorded | 1 |
 | [Brandon Hunter](players/huntebr01.md) | Charlotte Bobcats | No verified contract record | No verified current agreement | 0 |
 | [Brendan Haywood](players/haywobr01.md) | Washington Wizards | under rookie contract | Brendan Haywood · existing contract; signing date not recorded | 1 |
-| [Brent Barry](players/barrybr01.md) | Washington Wizards | under contract | Brent Barry · 2004-08-05 | 2 |
+| [Brent Barry](players/barrybr01.md) | Golden State Warriors | under contract | Brent Barry · 2004-08-05 | 2 |
 | [Brevin Knight](players/knighbr01.md) | Washington Wizards | under contract | Brevin Knight · 1999-11-01 | 1 |
 | [Brian Cardinal](players/cardibr01.md) | Chicago Bulls | under contract | Brian Cardinal · 2004-07-15 | 1 |
 | [Brian Cook](players/cookbr01.md) | Los Angeles Lakers | No verified contract record | No verified current agreement | 0 |
@@ -113,7 +113,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Christian Laettner](players/laettch01.md) | Washington Wizards | under contract | Christian Laettner · existing contract; signing date not recorded | 1 |
 | [Chucky Atkins](players/atkinch01.md) | Los Angeles Lakers | under contract | Chucky Atkins · existing contract; signing date not recorded | 1 |
 | [Clarence Weatherspoon](players/weathcl01.md) | New York Knicks | under contract | Clarence Weatherspoon · existing contract; signing date not recorded | 1 |
-| [Clifford Robinson](players/robincl02.md) | Golden State Warriors | under contract unverified | No verified current agreement | 0 |
+| [Clifford Robinson](players/robincl02.md) | Washington Wizards | under contract unverified | No verified current agreement | 0 |
 | [Corey Maggette](players/maggeco01.md) | Los Angeles Clippers | under contract | Corey Maggette · 2003-07-31 | 2 |
 | [Corie Blount](players/blounco01.md) | Free agent | under contract | Corie Blount · 2003-07-16 | 2 |
 | [Corliss Williamson](players/willico02.md) | Chicago Bulls | under contract | Corliss Williamson · existing contract; signing date not recorded | 1 |

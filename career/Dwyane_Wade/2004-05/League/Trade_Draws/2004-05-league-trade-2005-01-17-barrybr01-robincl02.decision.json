@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-05-league-trade-2005-01-17-barrybr01-robincl02",
+ "date": "2005-01-17",
+ "question": "Do Golden State Warriors and Washington Wizards trade Clifford Robinson for Brent Barry?",
+ "decider": "Golden State Warriors and Washington Wizards front offices (engine draw)",
+ "options": {
+  "accept": 0.80655,
+  "decline": 0.19345
+ },
+ "basis": "gains on own objectives {'Golden State Warriors': 0.267, 'Washington Wizards': 0.129}; acceptance {'Golden State Warriors': 0.95, 'Washington Wizards': 0.849}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

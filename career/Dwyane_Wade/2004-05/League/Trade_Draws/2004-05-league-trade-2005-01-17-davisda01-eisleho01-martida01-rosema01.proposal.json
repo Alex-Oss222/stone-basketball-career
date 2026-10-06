@@ -1,0 +1,41 @@
+{
+ "id": "2004-05-league-trade-2005-01-17-davisda01-eisleho01-martida01-rosema01",
+ "date": "2005-01-17",
+ "clubs": [
+  "New York Knicks",
+  "Portland Trail Blazers"
+ ],
+ "a": {
+  "club": "New York Knicks",
+  "sends": [
+   "Malik Rose",
+   "Howard Eisley"
+  ],
+  "bbr_ids": [
+   "rosema01",
+   "eisleho01"
+  ],
+  "salary": 11837500
+ },
+ "b": {
+  "club": "Portland Trail Blazers",
+  "sends": [
+   "Dale Davis",
+   "Darrick Martin"
+  ],
+  "bbr_ids": [
+   "davisda01",
+   "martida01"
+  ],
+  "salary": 11063796
+ },
+ "gain": {
+  "New York Knicks": 0.13,
+  "Portland Trail Blazers": 0.15
+ },
+ "accept": {
+  "New York Knicks": 0.852,
+  "Portland Trail Blazers": 0.905
+ },
+ "both": 0.77106
+}

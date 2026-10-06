@@ -2,9 +2,9 @@
 
 # Contract | Raja Bell
 
-Known through: 2005-01-16. [Open interactive contract](bellra01.html#contract) · [Contract history](bellra01.html#contract-history)
+Known through: 2005-01-17. [Open interactive contract](bellra01.html#contract) · [Contract history](bellra01.html#contract-history)
 
-Raja Bell: under contract. Evidence cutoff: 2005-01-16.
+Raja Bell: under contract. Evidence cutoff: 2005-01-17.
 
 ## Current contract
 

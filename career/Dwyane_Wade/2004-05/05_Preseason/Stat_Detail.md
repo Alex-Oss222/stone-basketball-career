@@ -6,11 +6,11 @@
 
 ## Professional identity
 
-![Player personal information and earned 2004-05 awards through 2005-01-16](../../assets/stat_reports/personal_2004-05_2005-01-16.svg)
+![Player personal information and earned 2004-05 awards through 2005-01-17](../../assets/stat_reports/personal_2004-05_2005-01-17.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
-| Dwyane Tyrone Wade Jr. | 20 | Miami Heat / NBA | SG / PG | 3 | Under contract |
+| Dwyane Tyrone Wade Jr. | 21 | Miami Heat / NBA | SG / PG | 3 | Under contract |
 
 | Identity field | Recorded value |
 | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-01-16; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-01-17; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2004-05 awards
 
@@ -41,7 +41,7 @@ Identity as of 2005-01-16; status snapshot dated 2004-10-28. User-established al
 
 ## Statistics
 
-As of **2005-01-16**: 7 closed games; 7/7 have player participation and box coverage; recorded DNPs: 0.
+As of **2005-01-17**: 7 closed games; 7/7 have player participation and box coverage; recorded DNPs: 0.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
@@ -53,11 +53,11 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This scope | 20 | Miami Heat | NBA | SG / PG | 7 | 7 | 30.2 | 4.4 | 9.6 | .463 | 0.6 | 2.0 | .286 | 3.9 | 7.6 | .509 | .493 | 5.3 | 5.6 | .949 | 1.3 | 2.9 | 4.1 | 4.0 | 1.4 | 1.4 | 0.9 | 1.9 | 14.7 | .612 | — |
+| This scope | 21 | Miami Heat | NBA | SG / PG | 7 | 7 | 30.2 | 4.4 | 9.6 | .463 | 0.6 | 2.0 | .286 | 3.9 | 7.6 | .509 | .493 | 5.3 | 5.6 | .949 | 1.3 | 2.9 | 4.1 | 4.0 | 1.4 | 1.4 | 0.9 | 1.9 | 14.7 | .612 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-01-16, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-01-17, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -117,16 +117,16 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Home | 20 | Miami Heat | NBA | SG / PG | 3 | 3 | 31.1 | 3.3 | 9.7 | .345 | 0.3 | 2.0 | .167 | 3.0 | 7.7 | .391 | .362 | 4.0 | 4.7 | .857 | 1.7 | 3.0 | 4.7 | 1.7 | 1.3 | 1.7 | 0.7 | 1.3 | 11.0 | .469 | — |
-| Away | 20 | Miami Heat | NBA | SG / PG | 4 | 4 | 29.5 | 5.2 | 9.5 | .553 | 0.8 | 2.0 | .375 | 4.5 | 7.5 | .600 | .592 | 6.2 | 6.2 | 1.000 | 1.0 | 2.8 | 3.8 | 5.8 | 1.5 | 1.2 | 1.0 | 2.2 | 17.5 | .714 | — |
-| Neutral | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Wins | 20 | Miami Heat | NBA | SG / PG | 4 | 4 | 28.8 | 4.8 | 9.2 | .514 | 0.8 | 2.0 | .375 | 4.0 | 7.2 | .552 | .554 | 5.2 | 5.2 | 1.000 | 0.8 | 2.8 | 3.5 | 5.0 | 1.5 | 1.2 | 1.0 | 2.2 | 15.5 | .670 | — |
-| Losses | 20 | Miami Heat | NBA | SG / PG | 3 | 3 | 32.0 | 4.0 | 10.0 | .400 | 0.3 | 2.0 | .167 | 3.7 | 8.0 | .458 | .417 | 5.3 | 6.0 | .889 | 2.0 | 3.0 | 5.0 | 2.7 | 1.3 | 1.7 | 0.7 | 1.3 | 13.7 | .541 | — |
-| Team: Miami Heat | 20 | Miami Heat | NBA | SG / PG | 7 | 7 | 30.2 | 4.4 | 9.6 | .463 | 0.6 | 2.0 | .286 | 3.9 | 7.6 | .509 | .493 | 5.3 | 5.6 | .949 | 1.3 | 2.9 | 4.1 | 4.0 | 1.4 | 1.4 | 0.9 | 1.9 | 14.7 | .612 | — |
+| Home | 21 | Miami Heat | NBA | SG / PG | 3 | 3 | 31.1 | 3.3 | 9.7 | .345 | 0.3 | 2.0 | .167 | 3.0 | 7.7 | .391 | .362 | 4.0 | 4.7 | .857 | 1.7 | 3.0 | 4.7 | 1.7 | 1.3 | 1.7 | 0.7 | 1.3 | 11.0 | .469 | — |
+| Away | 21 | Miami Heat | NBA | SG / PG | 4 | 4 | 29.5 | 5.2 | 9.5 | .553 | 0.8 | 2.0 | .375 | 4.5 | 7.5 | .600 | .592 | 6.2 | 6.2 | 1.000 | 1.0 | 2.8 | 3.8 | 5.8 | 1.5 | 1.2 | 1.0 | 2.2 | 17.5 | .714 | — |
+| Neutral | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Wins | 21 | Miami Heat | NBA | SG / PG | 4 | 4 | 28.8 | 4.8 | 9.2 | .514 | 0.8 | 2.0 | .375 | 4.0 | 7.2 | .552 | .554 | 5.2 | 5.2 | 1.000 | 0.8 | 2.8 | 3.5 | 5.0 | 1.5 | 1.2 | 1.0 | 2.2 | 15.5 | .670 | — |
+| Losses | 21 | Miami Heat | NBA | SG / PG | 3 | 3 | 32.0 | 4.0 | 10.0 | .400 | 0.3 | 2.0 | .167 | 3.7 | 8.0 | .458 | .417 | 5.3 | 6.0 | .889 | 2.0 | 3.0 | 5.0 | 2.7 | 1.3 | 1.7 | 0.7 | 1.3 | 13.7 | .541 | — |
+| Team: Miami Heat | 21 | Miami Heat | NBA | SG / PG | 7 | 7 | 30.2 | 4.4 | 9.6 | .463 | 0.6 | 2.0 | .286 | 3.9 | 7.6 | .509 | .493 | 5.3 | 5.6 | .949 | 1.3 | 2.9 | 4.1 | 4.0 | 1.4 | 1.4 | 0.9 | 1.9 | 14.7 | .612 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-01-16, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-01-17, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -167,7 +167,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-01-16, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-01-17, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 

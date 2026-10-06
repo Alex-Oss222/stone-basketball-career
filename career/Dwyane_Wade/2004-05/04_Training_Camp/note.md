@@ -17,5 +17,8 @@ status: active
 - 2004-12-20: Trade with Toronto Raptors: Miami sends Scott Padgett, Udonis Haslem for Donyell Marshall, Lamond Murray (accepted by engine draw None). Record: `00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json`.
 - 2004-12-20: Toronto Raptors offers Donyell Marshall, Lamond Murray for Scott Padgett, Udonis Haslem; Miami's front office accepts. Record: `00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json`.
 - 2005-01-10: Guarantee date: Rafer Alston guaranteed for 2004-05.
+- 2005-01-17: Miami proposes to Boston Celtics: Eddie Jones, Maurice Baker for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-adc5909b8d). Record: `00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json`.
+- 2005-01-17: Boston Celtics declines Miami's proposal (2005-01-17-adc5909b8d).
+- 2005-01-17: Miami proposes to Boston Celtics: Eddie Jones, Maurice Evans for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-14d65ed9c8). Record: `00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json`.
 
 ## Consequences

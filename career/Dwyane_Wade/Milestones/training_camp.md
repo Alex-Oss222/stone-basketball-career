@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-01-16 · Miami Heat · planned
+Career date: 2005-01-17 · Miami Heat · planned
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -56,6 +56,9 @@ Snapshot: 2005-01-06. Draft rights and unassigned arrivals are not assigned minu
 | 2004-12-20 | Trade with Toronto Raptors: Miami sends Scott Padgett, Udonis Haslem for Donyell Marshall, Lamond Murray (accepted by engine draw None). Record: `00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json`. |
 | 2004-12-20 | Toronto Raptors offers Donyell Marshall, Lamond Murray for Scott Padgett, Udonis Haslem; Miami's front office accepts. Record: `00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json`. |
 | 2005-01-10 | Guarantee date: Rafer Alston guaranteed for 2004-05. |
+| 2005-01-17 | Miami proposes to Boston Celtics: Eddie Jones, Maurice Baker for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-adc5909b8d). Record: `00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json`. |
+| 2005-01-17 | Boston Celtics declines Miami's proposal (2005-01-17-adc5909b8d). |
+| 2005-01-17 | Miami proposes to Boston Celtics: Eddie Jones, Maurice Evans for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-14d65ed9c8). Record: `00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json`. |
 
 ## Your response to the staff
 
@@ -106,6 +109,8 @@ Snapshot: 2005-01-06. Draft rights and unassigned arrivals are not assigned minu
 - [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-06/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
+- [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json)
+- [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Closed game](../2004-05/05_Preseason/Game_2.md)
 - [Closed game](../2004-05/05_Preseason/Game_3.md)

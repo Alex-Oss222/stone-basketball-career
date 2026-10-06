@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-01-16",
+  "as_of": "2005-01-17",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -581,7 +581,7 @@
     {
       "player_id": "barrybr01",
       "name": "Brent Barry",
-      "team": "Washington Wizards",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": "barrybr01-2004-08-05",
       "recorded_agreements": 2,
@@ -950,7 +950,7 @@
     {
       "player_id": "robincl02",
       "name": "Clifford Robinson",
-      "team": "Golden State Warriors",
+      "team": "Washington Wizards",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,

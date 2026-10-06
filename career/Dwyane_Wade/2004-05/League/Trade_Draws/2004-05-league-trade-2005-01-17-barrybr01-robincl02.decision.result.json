@@ -1,0 +1,12 @@
+{
+ "date": "2005-01-17",
+ "decider": "Golden State Warriors and Washington Wizards front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2005-01-17-barrybr01-robincl02",
+ "kind": "decision",
+ "options": {
+  "accept": 0.80655,
+  "decline": 0.19345
+ },
+ "outcome": "accept",
+ "question": "Do Golden State Warriors and Washington Wizards trade Clifford Robinson for Brent Barry?"
+}

@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-01-16",
+  "as_of": "2005-01-17",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
     "team": "Miami Heat",
     "position": "SG / PG",
-    "age": 20,
+    "age": 21,
     "contract_status": "rookie_scale_contract"
   },
   "current_event": "2005-01-14-miami-heat-at-los-angeles-clippers",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-01-16"
+              "2005-01-17"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2005-01-16",
+              "2005-01-17",
               "Current checkpoint",
               "2005-01-14-miami-heat-at-los-angeles-clippers",
               "Recorded",
@@ -94,16 +94,6 @@
               }
             ],
             [
-              "2005-01-17",
-              "League awards announced: Player of the Week",
-              "League (closed results only)",
-              "Scheduled",
-              {
-                "label": "Awards",
-                "href": "#calendar"
-              }
-            ],
-            [
               "2005-01-19",
               "Next Miami game, vs Atlanta Hawks",
               "Coach sets the rotation; the engine plays it",
@@ -121,6 +111,16 @@
               {
                 "label": "Rule",
                 "href": "../../../docs/front_office.md"
+              }
+            ],
+            [
+              "2005-01-24",
+              "League awards announced: Player of the Week",
+              "League (closed results only)",
+              "Scheduled",
+              {
+                "label": "Awards",
+                "href": "#calendar"
               }
             ],
             [
@@ -402,6 +402,14 @@
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
         },
         {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -594,7 +602,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-16"
+          "value": "2005-01-17"
         },
         {
           "label": "Team",
@@ -812,6 +820,14 @@
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
         },
         {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -1004,7 +1020,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-16"
+          "value": "2005-01-17"
         },
         {
           "label": "Team",
@@ -1193,6 +1209,14 @@
         {
           "label": "Transaction record",
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json"
         },
         {
           "label": "Closed game",
@@ -1387,7 +1411,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-16"
+          "value": "2005-01-17"
         },
         {
           "label": "Team",
@@ -1609,6 +1633,14 @@
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
         },
         {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -1801,7 +1833,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-16"
+          "value": "2005-01-17"
         },
         {
           "label": "Team",
@@ -1992,6 +2024,14 @@
         {
           "label": "Transaction record",
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json"
         },
         {
           "label": "Closed game",
@@ -2186,7 +2226,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-16"
+          "value": "2005-01-17"
         },
         {
           "label": "Team",
@@ -2229,6 +2269,32 @@
               {
                 "label": "Transaction record",
                 "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+              }
+            ],
+            [
+              "2005-01-17",
+              "Proposal; completion not recorded by this date",
+              "Boston Celtics",
+              "Eddie Jones; Maurice Evans",
+              "Reggie Miller; Austin Croshere",
+              "Not recorded",
+              "No dated answer recorded",
+              {
+                "label": "Transaction record",
+                "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json"
+              }
+            ],
+            [
+              "2005-01-17",
+              "Declined",
+              "Boston Celtics",
+              "Eddie Jones; Maurice Baker",
+              "Reggie Miller; Austin Croshere",
+              "Not recorded",
+              "decline",
+              {
+                "label": "Transaction record",
+                "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json"
               }
             ]
           ]
@@ -2382,6 +2448,14 @@
         {
           "label": "Transaction record",
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json"
         },
         {
           "label": "Closed game",
@@ -2576,7 +2650,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-16"
+          "value": "2005-01-17"
         },
         {
           "label": "Team",
@@ -2767,6 +2841,14 @@
         {
           "label": "Transaction record",
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json"
         },
         {
           "label": "Closed game",
@@ -2961,7 +3043,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-16"
+          "value": "2005-01-17"
         },
         {
           "label": "Team",
@@ -3126,6 +3208,18 @@
             [
               "2005-01-10",
               "Guarantee date: Rafer Alston guaranteed for 2004-05."
+            ],
+            [
+              "2005-01-17",
+              "Miami proposes to Boston Celtics: Eddie Jones, Maurice Baker for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-adc5909b8d). Record: `00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json`."
+            ],
+            [
+              "2005-01-17",
+              "Boston Celtics declines Miami's proposal (2005-01-17-adc5909b8d)."
+            ],
+            [
+              "2005-01-17",
+              "Miami proposes to Boston Celtics: Eddie Jones, Maurice Evans for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-14d65ed9c8). Record: `00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json`."
             ]
           ]
         },
@@ -3268,6 +3362,14 @@
         {
           "label": "Transaction record",
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json"
         },
         {
           "label": "Closed game",
@@ -3462,7 +3564,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-16"
+          "value": "2005-01-17"
         },
         {
           "label": "Team",
@@ -3479,7 +3581,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "46 closed game records in 2004-05 through 2005-01-16. Competitions remain separate.",
+      "summary": "46 closed game records in 2004-05 through 2005-01-17. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -4131,6 +4233,14 @@
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
         },
         {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2004-05/05_Preseason/Game_1.md"
         },
@@ -4323,7 +4433,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-16"
+          "value": "2005-01-17"
         },
         {
           "label": "Team",

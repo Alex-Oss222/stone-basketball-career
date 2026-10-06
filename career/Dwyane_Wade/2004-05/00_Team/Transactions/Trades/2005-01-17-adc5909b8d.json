@@ -1,0 +1,186 @@
+{
+ "trade_id": "2005-01-17-adc5909b8d",
+ "date": "2005-01-17",
+ "status": "declined",
+ "kind": "trade",
+ "trade": {
+  "partner": "Boston Celtics",
+  "miami_out": [
+   "Eddie Jones",
+   "Maurice Baker"
+  ],
+  "miami_in": [
+   "Reggie Miller",
+   "Austin Croshere"
+  ],
+  "picks_out": [],
+  "picks_in": []
+ },
+ "valuation": {
+  "partner": "Boston Celtics",
+  "posture": "rebuilding",
+  "miami_out": [
+   {
+    "player": "Eddie Jones",
+    "bbr_id": "jonesed02",
+    "value": -0.1,
+    "production": 0.0,
+    "contract_term": -2.0,
+    "relief": 0.0,
+    "salary": 13455000,
+    "years": 3,
+    "age": 33,
+    "basis": "production value 4.1 (2002-03 blended with closed 2003-04 games)",
+    "now": 0.0,
+    "future": -2.0,
+    "walk_year": false
+   },
+   {
+    "player": "Maurice Baker",
+    "bbr_id": "bakerma01",
+    "value": 0.152,
+    "production": 0.0,
+    "contract_term": 0.152,
+    "relief": 0.0,
+    "salary": 385277,
+    "years": 1,
+    "age": 25,
+    "basis": "production value 4.3 (2002-03 blended with closed 2003-04 games)",
+    "now": 0.0,
+    "future": 0.152,
+    "walk_year": false
+   }
+  ],
+  "miami_in": [
+   {
+    "player": "Reggie Miller",
+    "bbr_id": "millere01",
+    "value": -0.004,
+    "production": 0.527,
+    "contract_term": -0.608,
+    "relief": 0.0,
+    "salary": 5500000,
+    "years": 2,
+    "age": 39,
+    "basis": "production value 7.1 (2002-03 blended with closed 2003-04 games)",
+    "now": 0.527,
+    "future": -0.463,
+    "walk_year": false
+   },
+   {
+    "player": "Austin Croshere",
+    "bbr_id": "croshau01",
+    "value": 0.018,
+    "production": 0.596,
+    "contract_term": -0.578,
+    "relief": 0.0,
+    "salary": 8260000,
+    "years": 1,
+    "age": 29,
+    "basis": "production value 7.4 (2002-03 blended with closed 2003-04 games)",
+    "now": 0.596,
+    "future": -0.31,
+    "walk_year": true
+   }
+  ],
+  "picks_out": [],
+  "picks_in": [],
+  "partner_gain": 0.069,
+  "miami_gain": 0.642,
+  "miami_out_view": 0.031,
+  "dump": false,
+  "shed": -21490277,
+  "objective_gain": 0.069,
+  "untouchable": []
+ },
+ "ranking": {
+  "trade": {
+   "partner": "Boston Celtics",
+   "miami_out": [
+    "Eddie Jones",
+    "Maurice Baker"
+   ],
+   "miami_in": [
+    "Reggie Miller",
+    "Austin Croshere"
+   ],
+   "picks_out": [],
+   "picks_in": []
+  },
+  "miami_gain": 0.811,
+  "partner_gain": 0.069,
+  "accept": 0.556,
+  "score": 0.811,
+  "wade_request": false,
+  "consultation": null,
+  "consultation_player": null
+ },
+ "decision_event": "trade-2005-01-17-adc5909b8d",
+ "negotiation": null,
+ "standing": {
+  "as_of": "2004-06-24",
+  "standing": "franchise",
+  "trigger": "honor_recorded",
+  "basis": {
+   "closed_seasons": [
+    "2003-04"
+   ],
+   "window": [
+    "2003-04"
+   ],
+   "starter_lines": {
+    "2003-04": {
+     "season": "2003-04",
+     "gp": 75,
+     "gs": 70,
+     "scheduled": 82,
+     "minutes_per_game": 35.0,
+     "complete": true,
+     "met": true
+    }
+   },
+   "honors": [
+    "2003-04-all-star",
+    "2003-04-all_nba-first"
+   ],
+   "conflicts": [],
+   "ignored_honors": [
+    "2003-04-rookie_of_month-2003-10-28-east",
+    "2003-04-player_of_week-2003-12-15-east",
+    "2003-04-player_of_month-2003-12-01-east",
+    "2003-04-rookie_of_month-2003-12-01-east",
+    "2003-04-player_of_week-2003-12-29-east",
+    "2003-04-player_of_month-2004-01-01-east",
+    "2003-04-rookie_of_month-2004-01-01-east",
+    "2003-04-rookie_of_month-2004-02-01-east",
+    "2003-04-player_of_week-2004-03-08-east",
+    "2003-04-player_of_month-2004-03-01-east",
+    "2003-04-rookie_of_month-2004-03-01-east",
+    "2003-04-rookie_of_month-2004-04-01-east",
+    "2003-04-roy",
+    "2003-04-all_rookie-first"
+   ],
+   "rule": "All-NBA First or Second Team in the most recent closed season",
+   "signed_date": "2003-07-21",
+   "season_folder": "2003-04",
+   "statistics": {
+    "2003-04": {
+     "season": "2003-04",
+     "gp": 75,
+     "gs": 70,
+     "scheduled": 82,
+     "minutes_per_game": 35.0,
+     "complete": true
+    }
+   }
+  },
+  "source": "Stats_and_Awards/League/2003-04/All_Star.md"
+ },
+ "consultation": null,
+ "answer": {
+  "outcome": "decline",
+  "date": "2005-01-17"
+ },
+ "applied": null,
+ "basis": "Chosen by Miami's front office as the top-ranked legal proposal on the date (runtime/trades.py search)."
+}

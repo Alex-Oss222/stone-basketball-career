@@ -1,0 +1,11 @@
+{
+ "event_id": "trade-2005-01-17-adc5909b8d",
+ "date": "2005-01-17",
+ "question": "Does Boston Celtics accept Miami's proposal: Eddie Jones, Maurice Baker for Reggie Miller, Austin Croshere?",
+ "decider": "Boston Celtics (real club, drawn by rule)",
+ "options": {
+  "accept": 0.556,
+  "decline": 0.444
+ },
+ "basis": "Boston Celtics stance rebuilding (2002-03 record and the age of its core); its change on its own objective +0.069 (weights {'now': 0.35, 'future': 1.0, 'picks': 1.4, 'cash': 1.0}, star premium 7, pick chart, contract terms). Floor -3%; above it, 50% at +6% (steepness 25.0) inside (0.02, 0.95). Miami's own gain +0.642."
+}
