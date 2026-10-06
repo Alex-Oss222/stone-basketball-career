@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-11-22",
+  "as_of": "2004-11-23",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-11-21-philadelphia-76ers-at-miami-heat",
+  "current_event": "2004-11-23-portland-trail-blazers-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-11-22"
+              "2004-11-23"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-11-21-philadelphia-76ers-at-miami-heat"
+              "2004-11-23-portland-trail-blazers-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2004-11-22",
+              "2004-11-23",
               "Current checkpoint",
-              "2004-11-21-philadelphia-76ers-at-miami-heat",
+              "2004-11-23-portland-trail-blazers-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -94,8 +94,8 @@
               }
             ],
             [
-              "2004-11-23",
-              "Next Miami game, vs Portland Trail Blazers",
+              "2004-11-24",
+              "Next Miami game, at Atlanta Hawks",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
@@ -470,6 +470,10 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -478,7 +482,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-22"
+          "value": "2004-11-23"
         },
         {
           "label": "Team",
@@ -764,6 +768,10 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -772,7 +780,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-22"
+          "value": "2004-11-23"
         },
         {
           "label": "Team",
@@ -1031,6 +1039,10 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1039,7 +1051,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-22"
+          "value": "2004-11-23"
         },
         {
           "label": "Team",
@@ -1321,6 +1333,10 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1329,7 +1345,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-22"
+          "value": "2004-11-23"
         },
         {
           "label": "Team",
@@ -1590,6 +1606,10 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1598,7 +1618,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-22"
+          "value": "2004-11-23"
         },
         {
           "label": "Team",
@@ -1850,6 +1870,10 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1858,7 +1882,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-22"
+          "value": "2004-11-23"
         },
         {
           "label": "Team",
@@ -2119,6 +2143,10 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2127,7 +2155,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-22"
+          "value": "2004-11-23"
         },
         {
           "label": "Team",
@@ -2492,6 +2520,10 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2500,7 +2532,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-22"
+          "value": "2004-11-23"
         },
         {
           "label": "Team",
@@ -2517,7 +2549,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "18 closed game records in 2004-05 through 2004-11-22. Competitions remain separate.",
+      "summary": "19 closed game records in 2004-05 through 2004-11-23. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2776,6 +2808,16 @@
                 "label": "Closed game",
                 "href": "../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md"
               }
+            ],
+            [
+              "2004-11-23",
+              "regular",
+              "Portland Trail Blazers",
+              "DNP: inactive (reason not specified)",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md"
+              }
             ]
           ]
         },
@@ -2957,6 +2999,10 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2965,7 +3011,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-22"
+          "value": "2004-11-23"
         },
         {
           "label": "Team",

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-11-22**. 578 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-11-23**. 578 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -453,7 +453,7 @@ Card date: **2004-11-22**. 578 registry players, one Markdown card and one inter
 | [Maciej Lampe](lampema01.md) | Atlanta Hawks | 19 | sourced | [open](lampema01.html) |
 | [Malick Badiane](badiama01.md) | Free agent | 20 | silhouette | [open](badiama01.html) |
 | [Malik Allen](allenma01.md) | Free agent | 26 | sourced | [open](allenma01.html) |
-| [Malik Rose](rosema01.md) | San Antonio Spurs | 29 | sourced | [open](rosema01.html) |
+| [Malik Rose](rosema01.md) | San Antonio Spurs | 30 | sourced | [open](rosema01.html) |
 | [Marcus Haislip](haislma01.md) | Milwaukee Bucks | 23 | sourced | [open](haislma01.html) |
 | [Mario Austin](austima01.md) | Free agent | 22 | silhouette | [open](austima01.html) |
 | [Mark Bryant](bryanma01.md) | Free agent | 39 | silhouette | [open](bryanma01.html) |

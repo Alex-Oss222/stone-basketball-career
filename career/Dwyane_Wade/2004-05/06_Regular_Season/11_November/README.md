@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2004-05 awards through 2004-11-22](../../../assets/stat_reports/personal_2004-05_2004-11-22.svg)
+![Player personal information and earned 2004-05 awards through 2004-11-23](../../../assets/stat_reports/personal_2004-05_2004-11-23.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2004-11-22; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-11-23; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2004-05 awards
 
@@ -39,7 +39,7 @@ No 2004-05 awards yet.
 
 ## Statistics
 
-As of **2004-11-22**: 11 closed games; 11/11 have player participation and box coverage; recorded DNPs: 0.
+As of **2004-11-23**: 12 closed games; 12/12 have player participation and box coverage; recorded DNPs: 1.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
@@ -55,7 +55,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-11-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-11-23, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](../../../Stats_and_Awards/2004-05/11_November/Stat_Detail.md)
 
@@ -74,7 +74,7 @@ Awards are confirmed through 2004-11-22, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-11-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-11-23, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Period comparison
 
@@ -89,7 +89,7 @@ Awards are confirmed through 2004-11-22, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-11-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-11-23, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -158,7 +158,7 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-11-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-11-23, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -188,6 +188,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2004-11-17](Week_3/Game_2.md) | Milwaukee Bucks | away | W 112-111 | Played | 36.2 | 17 | 4 | 7 | 1 | 1 | 1 |
 | [2004-11-19](Week_3/Game_3.md) | Utah Jazz | home | W 92-80 | Played | 35.1 | 18 | 8 | 2 | 1 | 1 | 3 |
 | [2004-11-21](Week_3/Game_4.md) | Philadelphia 76ers | home | W 98-82 | Played | 37.3 | 21 | 7 | 8 | 1 | 1 | 1 |
+| [2004-11-23](Week_4/Game_1.md) | Portland Trail Blazers | home | L 95-97 | DNP: inactive (reason not specified) | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### Individual game boxes
 
@@ -204,10 +205,11 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2004-11-17](Week_3/Game_2.md) | 20 | Miami Heat | NBA | SG / PG | 1 | 1 | 36.2 | 6.0 | 12.0 | .500 | 0.0 | 1.0 | .000 | 6.0 | 11.0 | .545 | .500 | 5.0 | 5.0 | 1.000 | 2.0 | 2.0 | 4.0 | 7.0 | 1.0 | 1.0 | 1.0 | 2.0 | 17.0 | .599 | — |
 | [2004-11-19](Week_3/Game_3.md) | 20 | Miami Heat | NBA | SG / PG | 1 | 1 | 35.1 | 7.0 | 10.0 | .700 | 0.0 | 1.0 | .000 | 7.0 | 9.0 | .778 | .700 | 4.0 | 5.0 | .800 | 1.0 | 7.0 | 8.0 | 2.0 | 1.0 | 1.0 | 3.0 | 1.0 | 18.0 | .738 | — |
 | [2004-11-21](Week_3/Game_4.md) | 20 | Miami Heat | NBA | SG / PG | 1 | 1 | 37.3 | 5.0 | 12.0 | .417 | 1.0 | 1.0 | 1.000 | 4.0 | 11.0 | .364 | .458 | 10.0 | 11.0 | .909 | 2.0 | 5.0 | 7.0 | 8.0 | 1.0 | 1.0 | 1.0 | 3.0 | 21.0 | .624 | — |
+| [2004-11-23](Week_4/Game_1.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-11-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-11-23, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 

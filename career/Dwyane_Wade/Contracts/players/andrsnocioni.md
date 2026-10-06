@@ -2,9 +2,9 @@
 
 # Contract | Andrés Nocioni
 
-Known through: 2004-11-22. [Open interactive contract](andrsnocioni.html#contract) · [Contract history](andrsnocioni.html#contract-history)
+Known through: 2004-11-23. [Open interactive contract](andrsnocioni.html#contract) · [Contract history](andrsnocioni.html#contract-history)
 
-Andrés Nocioni: under contract. Evidence cutoff: 2004-11-22.
+Andrés Nocioni: under contract. Evidence cutoff: 2004-11-23.
 
 ## Current contract
 

@@ -4,13 +4,13 @@
 
 NBA regular season · November 22-30, 2004
 
-As of November 22, 2004: not started. The 17-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 17-player active roster.
+As of November 23, 2004: 1 closed Miami game in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
 | G | W | L | WIN% | PPG | OPP PPG | DIFF |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 0 | 0 | 0 | N/A | N/A | N/A | N/A |
+| 1 | 0 | 1 | .000 | 95.0 | 97.0 | -2.0 |
 
 ## Player production
 
@@ -18,23 +18,23 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | SG/SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Brian Grant | C/PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Scott Padgett | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Mike James | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Mehmet Okur | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Eddie Jones | SG/SF | 1 | 12.8 | 2.0 | 2.0 | 1.0 | 0.0 | 0.0 | 0.0 |
+| Brian Grant | C/PF | 1 | 28.6 | 4.0 | 5.0 | 2.0 | 0.0 | 0.0 | 1.0 |
+| Scott Padgett | PF | 1 | 29.2 | 7.0 | 5.0 | 2.0 | 1.0 | 0.0 | 1.0 |
+| Mike James | PG | 1 | 41.9 | 22.0 | 5.0 | 5.0 | 0.0 | 0.0 | 2.0 |
+| Mehmet Okur | PF | 1 | 41.9 | 21.0 | 13.0 | 2.0 | 0.0 | 1.0 | 3.0 |
 | Dwyane Wade | SG/PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Caron Butler | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Kendall Gill | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Dorell Wright | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Caron Butler | SF | 1 | 41.9 | 16.0 | 5.0 | 2.0 | 2.0 | 0.0 | 2.0 |
+| Kendall Gill | SG | 1 | 8.5 | 5.0 | 2.0 | 1.0 | 0.0 | 0.0 | 0.0 |
+| Dorell Wright | SF | 1 | 6.1 | 2.0 | 1.0 | 0.0 | 0.0 | 0.0 | 2.0 |
 | John Thomas | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Maurice Evans | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Udonis Haslem | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Udonis Haslem | PF | 1 | 16.4 | 6.0 | 5.0 | 3.0 | 0.0 | 0.0 | 2.0 |
 | Maurice Baker | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | John Edwards | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Bernard Robinson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Christian Drejer | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Rafer Alston | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Rafer Alston | PG | 1 | 12.8 | 10.0 | 0.0 | 2.0 | 0.0 | 0.0 | 0.0 |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -43,23 +43,23 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Brian Grant | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Scott Padgett | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Mike James | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Mehmet Okur | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| Eddie Jones | 1 | 0/0 | N/A | 0/0 | N/A | 2/2 | 1.000 | 0 | 2 |
+| Brian Grant | 1 | 1/3 | .333 | 0/0 | N/A | 2/3 | .667 | 1 | 4 |
+| Scott Padgett | 0 | 2/9 | .222 | 0/2 | .000 | 3/4 | .750 | 1 | 4 |
+| Mike James | 1 | 9/21 | .429 | 2/5 | .400 | 2/2 | 1.000 | 3 | 2 |
+| Mehmet Okur | 1 | 9/16 | .562 | 1/2 | .500 | 2/3 | .667 | 4 | 9 |
 | Dwyane Wade | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Caron Butler | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Kendall Gill | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Dorell Wright | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| Caron Butler | 1 | 4/14 | .286 | 2/5 | .400 | 6/8 | .750 | 2 | 3 |
+| Kendall Gill | 0 | 2/5 | .400 | 0/0 | N/A | 1/1 | 1.000 | 0 | 2 |
+| Dorell Wright | 0 | 1/1 | 1.000 | 0/0 | N/A | 0/0 | N/A | 0 | 1 |
 | John Thomas | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Maurice Evans | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Udonis Haslem | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| Udonis Haslem | 0 | 3/5 | .600 | 0/0 | N/A | 0/0 | N/A | 0 | 5 |
 | Maurice Baker | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | John Edwards | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Bernard Robinson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Christian Drejer | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Rafer Alston | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| Rafer Alston | 0 | 4/6 | .667 | 1/2 | .500 | 1/1 | 1.000 | 0 | 0 |
 
 </details>
 

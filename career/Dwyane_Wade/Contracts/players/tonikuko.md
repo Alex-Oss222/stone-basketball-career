@@ -2,9 +2,9 @@
 
 # Contract | Toni Kukoč
 
-Known through: 2004-11-22. [Open interactive contract](tonikuko.html#contract) · [Contract history](tonikuko.html#contract-history)
+Known through: 2004-11-23. [Open interactive contract](tonikuko.html#contract) · [Contract history](tonikuko.html#contract-history)
 
-Toni Kukoč: No verified contract record. Evidence cutoff: 2004-11-22.
+Toni Kukoč: No verified contract record. Evidence cutoff: 2004-11-23.
 
 ## Current contract
 

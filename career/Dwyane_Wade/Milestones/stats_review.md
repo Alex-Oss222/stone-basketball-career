@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-11-22 · Miami Heat · active
+Career date: 2004-11-23 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-18 closed game records in 2004-05 through 2004-11-22. Competitions remain separate.
+19 closed game records in 2004-05 through 2004-11-23. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -48,6 +48,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-11-17 | regular | Milwaukee Bucks | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.md) |
 | 2004-11-19 | regular | Utah Jazz | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md) |
 | 2004-11-21 | regular | Philadelphia 76ers | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md) |
+| 2004-11-23 | regular | Portland Trail Blazers | DNP: inactive (reason not specified) | [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md) |
 
 ## Evidence available for decisions
 
@@ -106,4 +107,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

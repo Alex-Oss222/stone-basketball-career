@@ -2,9 +2,9 @@
 
 # Contract | Danny Manning
 
-Known through: 2004-11-22. [Open interactive contract](mannida01.html#contract) · [Contract history](mannida01.html#contract-history)
+Known through: 2004-11-23. [Open interactive contract](mannida01.html#contract) · [Contract history](mannida01.html#contract-history)
 
-Danny Manning: unsigned free agent. Evidence cutoff: 2004-11-22.
+Danny Manning: unsigned free agent. Evidence cutoff: 2004-11-23.
 
 ## Current contract
 

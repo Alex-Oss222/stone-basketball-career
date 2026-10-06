@@ -2,9 +2,9 @@
 
 # Contract | Tim Hardaway
 
-Known through: 2004-11-22. [Open interactive contract](hardati01.html#contract) · [Contract history](hardati01.html#contract-history)
+Known through: 2004-11-23. [Open interactive contract](hardati01.html#contract) · [Contract history](hardati01.html#contract-history)
 
-Tim Hardaway: unsigned free agent. Evidence cutoff: 2004-11-22.
+Tim Hardaway: unsigned free agent. Evidence cutoff: 2004-11-23.
 
 ## Current contract
 
