@@ -1431,6 +1431,226 @@
    "bbr_id": "johnsan02",
    "from": "Utah Jazz",
    "to": "Indiana Pacers"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-retire-hillty01",
+   "date": "2004-11-24",
+   "kind": "retire",
+   "player": "Tyrone Hill",
+   "bbr_id": "hillty01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Tyrone Hill",
+    "bbr_id": "hillty01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "retired: his real career ended before 2004-05 (career continuity)"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-retire-boumtru01",
+   "date": "2004-11-24",
+   "kind": "retire",
+   "player": "Ruben Boumtje-Boumtje",
+   "bbr_id": "boumtru01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Ruben Boumtje-Boumtje",
+    "bbr_id": "boumtru01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "retired: his real career ended before 2004-05 (career continuity)"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-retire-bateeme01",
+   "date": "2004-11-24",
+   "kind": "retire",
+   "player": "Mengke Bateer",
+   "bbr_id": "bateeme01",
+   "from": "Boston Celtics",
+   "to": null,
+   "role": {
+    "player_id": "Mengke Bateer",
+    "bbr_id": "bateeme01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "retired: his real career ended before 2004-05 (career continuity)"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-retire-belltr01",
+   "date": "2004-11-24",
+   "kind": "retire",
+   "player": "Troy Bell",
+   "bbr_id": "belltr01",
+   "from": "Charlotte Bobcats",
+   "to": null,
+   "role": {
+    "player_id": "Troy Bell",
+    "bbr_id": "belltr01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "retired: his real career ended before 2004-05 (career continuity)"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-retire-trentga01",
+   "date": "2004-11-24",
+   "kind": "retire",
+   "player": "Gary Trent",
+   "bbr_id": "trentga01",
+   "from": "Charlotte Bobcats",
+   "to": null,
+   "role": {
+    "player_id": "Gary Trent",
+    "bbr_id": "trentga01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "retired: his real career ended before 2004-05 (career continuity)"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-retire-malonka01",
+   "date": "2004-11-24",
+   "kind": "retire",
+   "player": "Karl Malone",
+   "bbr_id": "malonka01",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Karl Malone",
+    "bbr_id": "malonka01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "retired: his real career ended before 2004-05 (career continuity)"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-retire-clarkke01",
+   "date": "2004-11-24",
+   "kind": "retire",
+   "player": "Keon Clark",
+   "bbr_id": "clarkke01",
+   "from": "Dallas Mavericks",
+   "to": null,
+   "role": {
+    "player_id": "Keon Clark",
+    "bbr_id": "clarkke01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "retired: his real career ended before 2004-05 (career continuity)"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-retire-smithle01",
+   "date": "2004-11-24",
+   "kind": "retire",
+   "player": "Leon Smith",
+   "bbr_id": "smithle01",
+   "from": "Los Angeles Lakers",
+   "to": null,
+   "role": {
+    "player_id": "Leon Smith",
+    "bbr_id": "smithle01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "retired: his real career ended before 2004-05 (career continuity)"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-retire-robined01",
+   "date": "2004-11-24",
+   "kind": "retire",
+   "player": "Eddie Robinson",
+   "bbr_id": "robined01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "Eddie Robinson",
+    "bbr_id": "robined01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "retired: his real career ended before 2004-05 (career continuity)"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-retire-grantho01",
+   "date": "2004-11-24",
+   "kind": "retire",
+   "player": "Horace Grant",
+   "bbr_id": "grantho01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "Horace Grant",
+    "bbr_id": "grantho01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "retired: his real career ended before 2004-05 (career continuity)"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-retire-grantpa01",
+   "date": "2004-11-24",
+   "kind": "retire",
+   "player": "Paul Grant",
+   "bbr_id": "grantpa01",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Paul Grant",
+    "bbr_id": "grantpa01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "retired: his real career ended before 2004-05 (career continuity)"
+  },
+  {
+   "id": "2004-05-market-2004-11-24-rest_of_season-stricro02",
+   "date": "2004-11-24",
+   "kind": "rest_of_season",
+   "player": "Rod Strickland",
+   "bbr_id": "stricro02",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Rod Strickland",
+    "bbr_id": "stricro02",
+    "position": "PG",
+    "games": 16,
+    "minutes": 196
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.77 x fit"
   }
  ],
  "market_days": [
@@ -1455,6 +1675,7 @@
   "2004-11-20",
   "2004-11-21",
   "2004-11-22",
-  "2004-11-23"
+  "2004-11-23",
+  "2004-11-24"
  ]
 }
