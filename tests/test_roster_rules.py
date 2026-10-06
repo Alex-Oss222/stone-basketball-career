@@ -3,6 +3,8 @@ import json
 import unittest
 from unittest import mock
 
+from pathlib import Path
+
 from runtime import camp
 from runtime.season_games import depth_order, rotation_for
 
@@ -66,6 +68,7 @@ class FuturePayrollTests(unittest.TestCase):
         from runtime.gm import FrontOffice
         fo = FrontOffice.__new__(FrontOffice)
         fo.budget = {"payroll_ceiling": 57000000}
+        fo.on, fo.root = "2004-12-01", Path(__file__).resolve().parents[1]         # a 2004-05 date: the recorded ceiling (from 2005-06 the season's tax line)
         fo.committed_in = lambda season: committed.get(season, 0)
         return fo
 

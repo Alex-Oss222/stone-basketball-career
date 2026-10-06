@@ -40,7 +40,8 @@ class EraTests(unittest.TestCase):
 
     def test_unencoded_season_fails_closed(self):
         with self.assertRaises(ValueError):
-            rules_for("2005-06")
+            rules_for("2006-07")
+        self.assertEqual(rules_for("2005-06")["roster_minimum"], 13)      # the 2005 agreement, encoded in the season-change audit
         self.assertTrue(rules_for("2004-05")["hand_check_emphasis"])      # encoded at the rollover, flag only
 
     def test_environment_is_prior_season_and_date_gated(self):

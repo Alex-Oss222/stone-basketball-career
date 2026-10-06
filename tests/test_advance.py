@@ -25,8 +25,11 @@ class AdvanceTests(unittest.TestCase):
 
     def test_the_driver_never_passes_a_seed_or_chooses_an_outcome(self):
         text = Path(A.__file__).read_text()
+        body = text.split('"""', 2)[2]
+        for name in ("seed_playoffs", "playoffs seeded", "cannot be seeded"):     # playoff seeding (the bracket), not a random seed
+            body = body.replace(name, "")
         for word in ("seed", "random", "outcome ="):
-            self.assertNotIn(word, text.split('"""', 2)[2])
+            self.assertNotIn(word, body)
         self.assertIn("pending_player_decisions", text)
 
 

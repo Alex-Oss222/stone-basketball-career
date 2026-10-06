@@ -237,7 +237,7 @@ def summary(day):
 
 
 def seed_playoffs(day):
-    """The first day after the regular season: seed the playoffs once every regular-season game is closed, drawing any
+    """The first day after the regular season: set the playoff bracket once every regular-season game is closed, drawing any
     tie the procedure cannot break (`scripts/seed_playoffs.py`). Nothing to do once the bracket exists."""
     from runtime import playoffs
     if playoffs.read(ROOT) is not None:
