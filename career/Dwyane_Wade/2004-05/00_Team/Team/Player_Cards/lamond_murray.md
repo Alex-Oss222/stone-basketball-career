@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 31 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** December 20, 2004 · **Statistics through:** 2004-12-21 
+**Opening assessment:** December 20, 2004 · **Statistics through:** 2004-12-22 
 
 **Contract/control:** Acquired by trade from Toronto Raptors on December 20, 2004: $4,875,000 in 2004-05; contract through 2005-06. (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
