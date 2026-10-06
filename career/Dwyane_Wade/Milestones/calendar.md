@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2004-11-23 · Miami Heat · active
+Career date: 2004-11-28 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,23 +14,23 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2004-11-23 |
+| Career date | 2004-11-28 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2004-11-23-portland-trail-blazers-at-miami-heat |
+| Last closed event | 2004-11-28-boston-celtics-at-miami-heat |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2004-11-23 | Current checkpoint | 2004-11-23-portland-trail-blazers-at-miami-heat | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
+| 2004-11-28 | Current checkpoint | 2004-11-28-boston-celtics-at-miami-heat | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2004-10-05 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2004-11-24 | Next Miami game, at Atlanta Hawks | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
-| 2004-11-25 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | 2004-11-29 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2004-11-30 | Next Miami game, vs Toronto Raptors | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2004-12-09 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | By 2005-10-31 | Fourth-year (2006-07) team option on the rookie contract | Miami decides | Scheduled gate; no outcome implied | [Contract](index.html#contract_negotiation) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
@@ -93,11 +93,11 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
-- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json)
-- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json)
+- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-25/review.json)
+- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-25/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json)
+- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-25/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Closed game](../2004-05/05_Preseason/Game_2.md)
@@ -118,4 +118,7 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md)
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

@@ -2,9 +2,9 @@
 
 # Contract | Tyrone Hill
 
-Known through: 2004-11-23. [Open interactive contract](hillty01.html#contract) · [Contract history](hillty01.html#contract-history)
+Known through: 2004-11-28. [Open interactive contract](hillty01.html#contract) · [Contract history](hillty01.html#contract-history)
 
-Tyrone Hill: released. Evidence cutoff: 2004-11-23.
+Tyrone Hill: released. Evidence cutoff: 2004-11-28.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Tyrone Hill |
-| Club / rights baseline | Atlanta Hawks |
+| Club / rights baseline | Free agent |
 | Control status | released |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

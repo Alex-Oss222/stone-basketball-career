@@ -2,9 +2,9 @@
 
 # Contract | Ruben Boumtje-Boumtje
 
-Known through: 2004-11-23. [Open interactive contract](boumtru01.html#contract) · [Contract history](boumtru01.html#contract-history)
+Known through: 2004-11-28. [Open interactive contract](boumtru01.html#contract) · [Contract history](boumtru01.html#contract-history)
 
-Ruben Boumtje-Boumtje: under contract. Evidence cutoff: 2004-11-23.
+Ruben Boumtje-Boumtje: under contract. Evidence cutoff: 2004-11-28.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ruben Boumtje-Boumtje |
-| Club / rights baseline | Atlanta Hawks |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

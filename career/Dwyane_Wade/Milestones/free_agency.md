@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2004-11-23 · Miami Heat · needs evidence
+Career date: 2004-11-28 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -71,11 +71,11 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
-- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json)
-- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json)
+- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-25/review.json)
+- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-25/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json)
+- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-25/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Closed game](../2004-05/05_Preseason/Game_2.md)
@@ -96,4 +96,7 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md)
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

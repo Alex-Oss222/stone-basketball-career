@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-11-23",
+  "as_of": "2004-11-28",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1571,7 +1571,7 @@
     {
       "player_id": "robined01",
       "name": "Eddie Robinson",
-      "team": "Phoenix Suns",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "robined01-existing-b96a8078c91c",
       "recorded_agreements": 1,
@@ -1760,7 +1760,7 @@
     {
       "player_id": "trentga01",
       "name": "Gary Trent",
-      "team": "Charlotte Bobcats",
+      "team": "Free agent",
       "status": "on the 2003-04 roster; contract terms not in the dated records",
       "current_contract_id": null,
       "recorded_agreements": 1,
@@ -1895,7 +1895,7 @@
     {
       "player_id": "grantho01",
       "name": "Horace Grant",
-      "team": "Phoenix Suns",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "grantho01-2003-07-29",
       "recorded_agreements": 1,
@@ -2624,7 +2624,7 @@
     {
       "player_id": "malonka01",
       "name": "Karl Malone",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "malonka01-2003-07-16",
       "recorded_agreements": 2,
@@ -2732,7 +2732,7 @@
     {
       "player_id": "clarkke01",
       "name": "Keon Clark",
-      "team": "Dallas Mavericks",
+      "team": "Free agent",
       "status": "voided",
       "current_contract_id": null,
       "recorded_agreements": 2,
@@ -2957,7 +2957,7 @@
     {
       "player_id": "smithle01",
       "name": "Leon Smith",
-      "team": "Los Angeles Lakers",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3380,7 +3380,7 @@
     {
       "player_id": "bateeme01",
       "name": "Mengke Bateer",
-      "team": "Boston Celtics",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "bateeme01-2003-07-17",
       "recorded_agreements": 2,
@@ -3776,7 +3776,7 @@
     {
       "player_id": "grantpa01",
       "name": "Paul Grant",
-      "team": "Portland Trail Blazers",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4136,7 +4136,7 @@
     {
       "player_id": "stricro02",
       "name": "Rod Strickland",
-      "team": "Free agent",
+      "team": "Chicago Bulls",
       "status": "under contract",
       "current_contract_id": "stricro02-2003-11-25",
       "recorded_agreements": 2,
@@ -4217,7 +4217,7 @@
     {
       "player_id": "boumtru01",
       "name": "Ruben Boumtje-Boumtje",
-      "team": "Atlanta Hawks",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "boumtru01-2002-09-30",
       "recorded_agreements": 1,
@@ -4901,7 +4901,7 @@
     {
       "player_id": "belltr01",
       "name": "Troy Bell",
-      "team": "Charlotte Bobcats",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4928,7 +4928,7 @@
     {
       "player_id": "hillty01",
       "name": "Tyrone Hill",
-      "team": "Atlanta Hawks",
+      "team": "Free agent",
       "status": "released",
       "current_contract_id": null,
       "recorded_agreements": 2,
