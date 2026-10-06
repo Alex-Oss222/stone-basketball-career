@@ -1,30 +1,54 @@
 {
-  "schema_version": 1,
-  "enabled": true,
-  "events": [
-    {
-      "id": "2004-06-24-wade-summer-plan",
-      "season": "2003-04",
-      "kind": "training",
-      "title": "Wade's 2004 summer plan",
-      "recorded_on": "2004-06-24",
-      "status": "planned",
-      "owner": "staff",
-      "needs_response": false,
-      "starts_on": "2004-06-24",
-      "ends_on": "2004-10-04",
-      "source_ref": "career/Dwyane_Wade/2003-04/03_Offseason/Wade_Summer_Plan_2004.md",
-      "prompt": "Miami's staff confirm the medical review, the designated program dates and the defensive and ballhandling work; private specialists answer Wade's approaches.",
-      "details": {
-        "Player focus": "Ballhandling under pressure, defensive discipline, physical durability, more situations for an existing jumper; a between-possession reset after mistakes",
-        "Staff plan and availability": "Miami medical and strength staff and Spoelstra's staff to confirm; Miami's designated program (at most two weeks) attended for the $236,180 incentive",
-        "Baseline and protocol": "Simulated 2003-04: 75 G, 39.7% 3P on 2.4 attempts, 90.9% FT; baselines (body composition, movement, shooting spots, turnovers under pressure, screen film) to be taken by staff",
-        "Planned / completed sessions": "None completed yet; private approaches (Tim Grover, Dave Hopla, Jim Loehr's practice, a sports dietitian) not yet agreed; Haslem invited privately"
-      },
-      "next_checkpoint": {
-        "date": null,
-        "trigger": "Miami schedules its designated offseason program and the staff confirm the baselines"
-      }
-    }
-  ]
+ "schema_version": 1,
+ "enabled": true,
+ "events": [
+  {
+   "id": "2004-06-24-wade-summer-plan",
+   "season": "2003-04",
+   "kind": "training",
+   "title": "Wade's 2004 summer plan",
+   "recorded_on": "2004-06-24",
+   "status": "planned",
+   "owner": "staff",
+   "needs_response": false,
+   "starts_on": "2004-06-24",
+   "ends_on": "2004-10-04",
+   "source_ref": "career/Dwyane_Wade/2003-04/03_Offseason/Wade_Summer_Plan_2004.md",
+   "prompt": "Miami's staff confirm the medical review, the designated program dates and the defensive and ballhandling work; private specialists answer Wade's approaches.",
+   "details": {
+    "Player focus": "Ballhandling under pressure, defensive discipline, physical durability, more situations for an existing jumper; a between-possession reset after mistakes",
+    "Staff plan and availability": "Miami medical and strength staff and Spoelstra's staff to confirm; Miami's designated program (at most two weeks) attended for the $236,180 incentive",
+    "Baseline and protocol": "Simulated 2003-04: 75 G, 39.7% 3P on 2.4 attempts, 90.9% FT; baselines (body composition, movement, shooting spots, turnovers under pressure, screen film) to be taken by staff",
+    "Planned / completed sessions": "None completed yet; private approaches (Tim Grover, Dave Hopla, Jim Loehr's practice, a sports dietitian) not yet agreed; Haslem invited privately"
+   },
+   "next_checkpoint": {
+    "date": null,
+    "trigger": "Miami schedules its designated offseason program and the staff confirm the baselines"
+   }
+  },
+  {
+   "id": "2004-10-01-wade-camp-teamwork-focus",
+   "season": "2004-05",
+   "kind": "camp",
+   "title": "Wade's 2004 camp teamwork focus",
+   "recorded_on": "2004-10-01",
+   "status": "planned",
+   "owner": "player",
+   "needs_response": false,
+   "starts_on": "2004-10-05",
+   "ends_on": "2004-11-01",
+   "source_ref": "career/Dwyane_Wade/2004-05/04_Training_Camp/note.md",
+   "prompt": "Wade's camp priority is team integration, with extra shared work alongside Udonis Haslem, Dorell Wright, and Caron Butler.",
+   "details": {
+    "Player focus": "Work within the team structure and improve group chemistry rather than chase an individual camp role.",
+    "Priority teammates": "Udonis Haslem, Dorell Wright, Caron Butler",
+    "Shared work": "Team concepts, timing, communication, and learning how the group fits together.",
+    "Role authority": "This is Wade's player focus; the coaching staff still owns depth-chart and rotation decisions."
+   },
+   "next_checkpoint": {
+    "date": "2004-10-05",
+    "trigger": "Training camp opens and the focus moves from planned to actual camp work"
+   }
+  }
+ ]
 }
