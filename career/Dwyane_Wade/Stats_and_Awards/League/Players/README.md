@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-12**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-13**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -178,7 +178,7 @@ Card date: **2004-10-12**. 504 registry players, one Markdown card and one inter
 | [Michael Redd](reddmi01.md) | Milwaukee Bucks | 25 | sourced | [open](reddmi01.html) |
 | [Mitchell Butler](butlemi02.md) | Free agent | None | silhouette | [open](butlemi02.html) |
 | [Nick Van Exel](vanexni01.md) | San Antonio Spurs | 32 | sourced | [open](vanexni01.html) |
-| [Paul Pierce](piercpa01.md) | Boston Celtics | 26 | sourced | [open](piercpa01.html) |
+| [Paul Pierce](piercpa01.md) | Boston Celtics | 27 | sourced | [open](piercpa01.html) |
 | [Quentin Richardson](richaqu01.md) | Los Angeles Clippers | None | silhouette | [open](richaqu01.html) |
 | [Raja Bell](bellra01.md) | Utah Jazz | 28 | sourced | [open](bellra01.html) |
 | [Rasual Butler](butlera01.md) | Free agent | 25 | sourced | [open](butlera01.html) |
@@ -362,7 +362,7 @@ Card date: **2004-10-12**. 504 registry players, one Markdown card and one inter
 | [Horace Grant](grantho01.md) | Free agent | None | silhouette | [open](grantho01.html) |
 | [Jared Jeffries](jeffrja01.md) | Washington Wizards | None | silhouette | [open](jeffrja01.html) |
 | [Jason Caffey](caffeja01.md) | Free agent | 31 | silhouette | [open](caffeja01.html) |
-| [Jermaine O'Neal](onealje01.md) | Indiana Pacers | 25 | sourced | [open](onealje01.html) |
+| [Jermaine O'Neal](onealje01.md) | Indiana Pacers | 26 | sourced | [open](onealje01.html) |
 | [Jerome Beasley](beaslje01.md) | Free agent | 24 | sourced | [open](beaslje01.html) |
 | [Jerome Williams](willije01.md) | Chicago Bulls | 31 | sourced | [open](willije01.html) |
 | [John Wallace](wallajo01.md) | Free agent | 30 | silhouette | [open](wallajo01.html) |

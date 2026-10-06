@@ -2,9 +2,9 @@
 
 # Contract | Larry Hughes
 
-Known through: 2004-10-12. [Open interactive contract](hughela01.html#contract) · [Contract history](hughela01.html#contract-history)
+Known through: 2004-10-13. [Open interactive contract](hughela01.html#contract) · [Contract history](hughela01.html#contract-history)
 
-Larry Hughes: under contract. Evidence cutoff: 2004-10-12.
+Larry Hughes: under contract. Evidence cutoff: 2004-10-13.
 
 ## Current contract
 
