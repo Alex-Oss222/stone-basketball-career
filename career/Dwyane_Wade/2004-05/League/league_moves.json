@@ -228,10 +228,129 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 6.95 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-clear-duhonch01",
+   "date": "2004-11-04",
+   "kind": "clear",
+   "player": "Chris Duhon",
+   "bbr_id": "duhonch01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Chris Duhon",
+    "bbr_id": "duhonch01",
+    "position": "PG",
+    "games": 82,
+    "minutes": 2177
+   },
+   "contract": null,
+   "note": "cleared waivers from Phoenix Suns: a free agent",
+   "waiver": "2004-05-market-2004-11-02-waive-duhonch01"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-clear-iveyro01",
+   "date": "2004-11-04",
+   "kind": "clear",
+   "player": "Royal Ivey",
+   "bbr_id": "iveyro01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Royal Ivey",
+    "bbr_id": "iveyro01",
+    "position": "PG",
+    "games": 62,
+    "minutes": 809
+   },
+   "contract": null,
+   "note": "cleared waivers from Utah Jazz: a free agent",
+   "waiver": "2004-05-market-2004-11-02-waive-iveyro01"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-waive-lampema01",
+   "date": "2004-11-04",
+   "kind": "waive",
+   "player": "Maciej Lampe",
+   "bbr_id": "lampema01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "Maciej Lampe",
+    "bbr_id": "lampema01",
+    "position": "C",
+    "games": 37,
+    "minutes": 380
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-06"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-rest_of_season-grantho01",
+   "date": "2004-11-04",
+   "kind": "rest_of_season",
+   "player": "Horace Grant",
+   "bbr_id": "grantho01",
+   "from": null,
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Horace Grant",
+    "bbr_id": "grantho01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.83 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-waive-zhizhwa01",
+   "date": "2004-11-04",
+   "kind": "waive",
+   "player": "Wang Zhizhi",
+   "bbr_id": "zhizhwa01",
+   "from": "Utah Jazz",
+   "to": null,
+   "role": {
+    "player_id": "Wang Zhizhi",
+    "bbr_id": "zhizhwa01",
+    "position": "C",
+    "games": 16,
+    "minutes": 114
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-06"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-rest_of_season-rogerro01",
+   "date": "2004-11-04",
+   "kind": "rest_of_season",
+   "player": "Rodney Rogers",
+   "bbr_id": "rogerro01",
+   "from": null,
+   "to": "Utah Jazz",
+   "role": {
+    "player_id": "Rodney Rogers",
+    "bbr_id": "rogerro01",
+    "position": "SF",
+    "games": 58,
+    "minutes": 1367
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.8 x fit"
   }
  ],
  "market_days": [
   "2004-11-02",
-  "2004-11-03"
+  "2004-11-03",
+  "2004-11-04"
  ]
 }

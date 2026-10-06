@@ -3,7 +3,7 @@
   "league": "NBA",
   "season": "2003-04",
   "as_of": "2003-06-26",
-  "player_count": 574,
+  "player_count": 576,
   "purpose": "League-wide player tracking pool for simulated statistics and awards.",
   "source_policy": "End-of-2002-03 club is a baseline roster location; 2003 draft entries identify post-draft rights. Neither source alone is a finalized 2003-04 opening-night roster.",
   "positions": [
@@ -7236,6 +7236,34 @@
       "registry_id": "tonybobbitt",
       "added_on": "2004-11-03",
       "added_basis": "first closed 2004-05 appearance, Atlanta Hawks, 2004-11-03-atlanta-hawks-at-phoenix-suns"
+    },
+    {
+      "name": "Shaun Livingston",
+      "position": "SF",
+      "team_name": "Charlotte Bobcats",
+      "team_code": null,
+      "conference": "East",
+      "cohort": "2003_04_appearance",
+      "bbr_id": null,
+      "espn_id": null,
+      "birth_date": null,
+      "registry_id": "shaunlivingston",
+      "added_on": "2004-11-04",
+      "added_basis": "first closed 2004-05 appearance, Charlotte Bobcats, 2004-11-04-washington-wizards-at-charlotte-bobcats"
+    },
+    {
+      "name": "Zoran Planinić",
+      "position": "SF",
+      "team_name": "Charlotte Bobcats",
+      "team_code": null,
+      "conference": "East",
+      "cohort": "2003_04_appearance",
+      "bbr_id": null,
+      "espn_id": null,
+      "birth_date": null,
+      "registry_id": "zoranplanini",
+      "added_on": "2004-11-04",
+      "added_basis": "first closed 2004-05 appearance, Charlotte Bobcats, 2004-11-04-washington-wizards-at-charlotte-bobcats"
     }
   ],
   "coverage": {
@@ -7243,7 +7271,7 @@
     "source_counts": {
       "end_2002_03_roster": 349,
       "2003_draft_rights": 58,
-      "2003_04_appearance": 167
+      "2003_04_appearance": 169
     },
     "population_policy": "Retain all 407 original registry entries; add every player who appears in a closed result, dated by his first appearance (write_back.extend_registry).",
     "changes_policy": "Use dated branch transactions; preserve completed-period team stints."
