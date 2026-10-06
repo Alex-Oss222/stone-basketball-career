@@ -358,6 +358,15 @@ def close_day(day, playoffs=False):
         data["last_closed_event"] = json.loads(results[-1].read_text(encoding="utf-8"))["event_id"]
         write_state(data)
     run("scripts/write_back_results.py", "--write", "--light", show=False)
+    # Name each new Miami injury or absence (runtime/injury_types.py): one engine draw each, then record it.
+    run("scripts/injury_types.py", "--write", show=False)
+    if draws_pending():
+        draw()
+    for line in run("scripts/injury_types.py", "--write", show=False).splitlines():
+        if not line.startswith("injury types:"):
+            say("    " + line)
+            if "Dwyane Wade" in line:
+                WADE_NEWS.append(f"{day}  {line.strip()}")
     if playoffs:
         say("    " + run("scripts/playoff_day.py", "--refresh", show=False).splitlines()[-1])
         run("scripts/decide_awards.py", "--write", ok=(0, 1))        # the Finals MVP is named on the clinching night
