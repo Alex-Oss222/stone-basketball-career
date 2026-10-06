@@ -1273,6 +1273,51 @@
    "contract": null,
    "note": "cleared waivers from Portland Trail Blazers: a free agent",
    "waiver": "2004-05-market-2004-11-11-waive-brunsri01"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-15-croshau01-millere01-roseja01",
+   "date": "2004-11-15",
+   "kind": "trade",
+   "player": "Jalen Rose",
+   "bbr_id": "roseja01",
+   "from": "Boston Celtics",
+   "to": "Indiana Pacers"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-15-croshau01-millere01-roseja01",
+   "date": "2004-11-15",
+   "kind": "trade",
+   "player": "Reggie Miller",
+   "bbr_id": "millere01",
+   "from": "Indiana Pacers",
+   "to": "Boston Celtics"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-15-croshau01-millere01-roseja01",
+   "date": "2004-11-15",
+   "kind": "trade",
+   "player": "Austin Croshere",
+   "bbr_id": "croshau01",
+   "from": "Indiana Pacers",
+   "to": "Boston Celtics"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-15-howarju01-jonesja02",
+   "date": "2004-11-15",
+   "kind": "trade",
+   "player": "James Jones",
+   "bbr_id": "jonesja02",
+   "from": "Charlotte Bobcats",
+   "to": "Orlando Magic"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-15-howarju01-jonesja02",
+   "date": "2004-11-15",
+   "kind": "trade",
+   "player": "Juwan Howard",
+   "bbr_id": "howarju01",
+   "from": "Orlando Magic",
+   "to": "Charlotte Bobcats"
   }
  ],
  "market_days": [
@@ -1288,6 +1333,7 @@
   "2004-11-11",
   "2004-11-12",
   "2004-11-13",
-  "2004-11-14"
+  "2004-11-14",
+  "2004-11-15"
  ]
 }

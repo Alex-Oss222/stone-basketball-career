@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-11-14. [Search the contract directory](index.html)
+Known through 2004-11-15. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -51,7 +51,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Antonio Davis](players/davisan01.md) | Chicago Bulls | under contract unverified | No verified current agreement | 0 |
 | [Antonio McDyess](players/mcdyean01.md) | New Orleans Hornets | under contract | Antonio McDyess · 2004-07-14 | 2 |
 | [Arvydas Sabonis](players/sabonar01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |
-| [Austin Croshere](players/croshau01.md) | Indiana Pacers | under contract | Austin Croshere · existing contract; signing date not recorded | 1 |
+| [Austin Croshere](players/croshau01.md) | Boston Celtics | under contract | Austin Croshere · existing contract; signing date not recorded | 1 |
 | [Avery Johnson](players/johnsav01.md) | Free agent | under contract | Avery Johnson · existing contract; signing date not recorded | 1 |
 | [Baron Davis](players/davisba01.md) | New Orleans Hornets | under contract | Baron Davis · 2002-07-30 | 1 |
 | [Ben Gordon](players/bengordon.md) | Free agent | under contract | Ben Gordon · 2004-07-01 | 1 |
@@ -238,14 +238,14 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jahidi White](players/whiteja01.md) | Phoenix Suns | under contract unverified | No verified current agreement | 0 |
 | [Jake Tsakalidis](players/tsakaja01.md) | Memphis Grizzlies | under contract | Jake Tsakalidis · 2004-08-19 | 2 |
 | [Jake Voskuhl](players/voskuja01.md) | Phoenix Suns | under contract | Jake Voskuhl · 2003-07-16 | 2 |
-| [Jalen Rose](players/roseja01.md) | Boston Celtics | under contract | Jalen Rose · existing contract; signing date not recorded | 1 |
+| [Jalen Rose](players/roseja01.md) | Indiana Pacers | under contract | Jalen Rose · existing contract; signing date not recorded | 1 |
 | [Jamaal Magloire](players/magloja01.md) | New Orleans Hornets | under rookie contract | Jamaal Magloire · 2000-07-18 | 1 |
 | [Jamaal Tinsley](players/tinslja01.md) | Indiana Pacers | under rookie contract | Jamaal Tinsley · 2001-07-19 | 1 |
 | [Jamal Crawford](players/crawfja01.md) | Chicago Bulls | under contract | Jamal Crawford · 2004-07-14 | 2 |
 | [Jamal Mashburn](players/mashbja01.md) | New Orleans Hornets | under contract | Jamal Mashburn · existing contract; signing date not recorded | 1 |
 | [Jamal Sampson](players/sampsja01.md) | Houston Rockets | under contract | Jamal Sampson · 2002-09-17 | 1 |
 | [Jameer Nelson](players/jameernelson.md) | Free agent | under contract | Jameer Nelson · 2004-07-01 | 1 |
-| [James Jones](players/jonesja02.md) | Charlotte Bobcats | No verified contract record | No verified current agreement | 0 |
+| [James Jones](players/jonesja02.md) | Orlando Magic | No verified contract record | No verified current agreement | 0 |
 | [James Lang](players/langja01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [James Posey](players/poseyja01.md) | Memphis Grizzlies | under contract | James Posey · 2003-08-09 | 2 |
 | [James Thomas](players/jamesthomas.md) | Free agent | under contract | James Thomas · 2004-08-05 | 1 |
@@ -300,7 +300,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jumaine Jones](players/jonesju01.md) | Boston Celtics | voided | No verified current agreement | 2 |
 | [Junior Harrington](players/harriju01.md) | Free agent | under contract | Junior Harrington · 2004-07-14 | 1 |
 | [Justin Reed](players/justinreed.md) | Free agent | under contract | Justin Reed · 2004-07-29 | 1 |
-| [Juwan Howard](players/howarju01.md) | Orlando Magic | under contract | Juwan Howard · 2003-07-16 | 2 |
+| [Juwan Howard](players/howarju01.md) | Charlotte Bobcats | under contract | Juwan Howard · 2003-07-16 | 2 |
 | [Kaniel Dickens](players/dickeka01.md) | Sacramento Kings | under contract | Kaniel Dickens · 2004-08-26 | 1 |
 | [Kareem Rush](players/rushka01.md) | Los Angeles Lakers | under rookie contract | Kareem Rush · 2002-07-03 | 1 |
 | [Karl Malone](players/malonka01.md) | Chicago Bulls | under contract | Karl Malone · 2003-07-16 | 2 |
@@ -457,7 +457,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Raül López](players/lopezra01.md) | Utah Jazz | under rookie contract | Raül López · existing contract; signing date not recorded | 1 |
 | [Reece Gaines](players/gainere01.md) | Orlando Magic | No verified contract record | No verified current agreement | 0 |
 | [Reggie Evans](players/evansre01.md) | Seattle SuperSonics | voided | No verified current agreement | 3 |
-| [Reggie Miller](players/millere01.md) | Indiana Pacers | under contract | Reggie Miller · 2003-08-21 | 2 |
+| [Reggie Miller](players/millere01.md) | Boston Celtics | under contract | Reggie Miller · 2003-08-21 | 2 |
 | [Remon van de Hare](players/vandera01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Richard Hamilton](players/hamilri01.md) | Detroit Pistons | under contract | Richard Hamilton · 2003-08-05 | 2 |
 | [Richard Jefferson](players/jefferi01.md) | New Jersey Nets | under rookie contract | Richard Jefferson · 2001-07-13 | 1 |

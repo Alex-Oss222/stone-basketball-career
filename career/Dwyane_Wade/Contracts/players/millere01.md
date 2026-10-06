@@ -2,9 +2,9 @@
 
 # Contract | Reggie Miller
 
-Known through: 2004-11-14. [Open interactive contract](millere01.html#contract) · [Contract history](millere01.html#contract-history)
+Known through: 2004-11-15. [Open interactive contract](millere01.html#contract) · [Contract history](millere01.html#contract-history)
 
-Reggie Miller: under contract. Evidence cutoff: 2004-11-14.
+Reggie Miller: under contract. Evidence cutoff: 2004-11-15.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Reggie Miller |
-| Club / rights baseline | Indiana Pacers |
+| Club / rights baseline | Boston Celtics |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

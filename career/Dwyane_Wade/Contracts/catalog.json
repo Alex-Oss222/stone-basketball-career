@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-11-14",
+  "as_of": "2004-11-15",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -383,7 +383,7 @@
     {
       "player_id": "croshau01",
       "name": "Austin Croshere",
-      "team": "Indiana Pacers",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "croshau01-existing-cef2473987f9",
       "recorded_agreements": 1,
@@ -2066,7 +2066,7 @@
     {
       "player_id": "roseja01",
       "name": "Jalen Rose",
-      "team": "Boston Celtics",
+      "team": "Indiana Pacers",
       "status": "under contract",
       "current_contract_id": "roseja01-existing-6434280dd7b3",
       "recorded_agreements": 1,
@@ -2129,7 +2129,7 @@
     {
       "player_id": "jonesja02",
       "name": "James Jones",
-      "team": "Charlotte Bobcats",
+      "team": "Orlando Magic",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2624,7 +2624,7 @@
     {
       "player_id": "howarju01",
       "name": "Juwan Howard",
-      "team": "Orlando Magic",
+      "team": "Charlotte Bobcats",
       "status": "under contract",
       "current_contract_id": "howarju01-2003-07-16",
       "recorded_agreements": 2,
@@ -4037,7 +4037,7 @@
     {
       "player_id": "millere01",
       "name": "Reggie Miller",
-      "team": "Indiana Pacers",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "millere01-2003-08-21",
       "recorded_agreements": 2,

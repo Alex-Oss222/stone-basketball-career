@@ -2,9 +2,9 @@
 
 # Contract | James Jones
 
-Known through: 2004-11-14. [Open interactive contract](jonesja02.html#contract) · [Contract history](jonesja02.html#contract-history)
+Known through: 2004-11-15. [Open interactive contract](jonesja02.html#contract) · [Contract history](jonesja02.html#contract-history)
 
-James Jones: No verified contract record. Evidence cutoff: 2004-11-14.
+James Jones: No verified contract record. Evidence cutoff: 2004-11-15.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | James Jones |
-| Club / rights baseline | Charlotte Bobcats |
+| Club / rights baseline | Orlando Magic |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2004-11-15-croshau01-millere01-roseja01",
+ "date": "2004-11-15",
+ "clubs": [
+  "Boston Celtics",
+  "Indiana Pacers"
+ ],
+ "a": {
+  "club": "Boston Celtics",
+  "sends": [
+   "Jalen Rose"
+  ],
+  "bbr_ids": [
+   "roseja01"
+  ],
+  "salary": 14487000
+ },
+ "b": {
+  "club": "Indiana Pacers",
+  "sends": [
+   "Reggie Miller",
+   "Austin Croshere"
+  ],
+  "bbr_ids": [
+   "millere01",
+   "croshau01"
+  ],
+  "salary": 13760000
+ },
+ "gain": {
+  "Boston Celtics": 0.988,
+  "Indiana Pacers": 0.204
+ },
+ "accept": {
+  "Boston Celtics": 0.95,
+  "Indiana Pacers": 0.95
+ },
+ "both": 0.9025
+}

@@ -2,9 +2,9 @@
 
 # Contract | Steve Kerr
 
-Known through: 2004-11-14. [Open interactive contract](kerrst01.html#contract) · [Contract history](kerrst01.html#contract-history)
+Known through: 2004-11-15. [Open interactive contract](kerrst01.html#contract) · [Contract history](kerrst01.html#contract-history)
 
-Steve Kerr: unsigned free agent. Evidence cutoff: 2004-11-14.
+Steve Kerr: unsigned free agent. Evidence cutoff: 2004-11-15.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Juwan Howard
 
-Known through: 2004-11-14. [Open interactive contract](howarju01.html#contract) · [Contract history](howarju01.html#contract-history)
+Known through: 2004-11-15. [Open interactive contract](howarju01.html#contract) · [Contract history](howarju01.html#contract-history)
 
-Juwan Howard: under contract. Evidence cutoff: 2004-11-14.
+Juwan Howard: under contract. Evidence cutoff: 2004-11-15.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Juwan Howard |
-| Club / rights baseline | Orlando Magic |
+| Club / rights baseline | Charlotte Bobcats |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

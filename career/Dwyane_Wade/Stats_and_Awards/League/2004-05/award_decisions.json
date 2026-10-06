@@ -107,6 +107,110 @@
     }
    ],
    "winner": "Kobe Bryant"
+  },
+  {
+   "id": "2004-05-player_of_week-2004-11-08-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-11-08",
+   "period_end": "2004-11-14",
+   "announced_on": "2004-11-15",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/11_November/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kenny Thomas",
+     "team": "Philadelphia 76ers",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 21.0,
+     "reb": 9.8,
+     "ast": 3.2,
+     "game_score": 21.02,
+     "score": 96.1,
+     "rank": 1
+    },
+    {
+     "player": "Allen Iverson",
+     "team": "Philadelphia 76ers",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 31.8,
+     "reb": 4.2,
+     "ast": 6.0,
+     "game_score": 19.98,
+     "score": 91.9,
+     "rank": 2
+    },
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "games": 3,
+     "wins": 1,
+     "losses": 2,
+     "pts": 32.7,
+     "reb": 2.7,
+     "ast": 6.0,
+     "game_score": 26.7,
+     "score": 83.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Kenny Thomas"
+  },
+  {
+   "id": "2004-05-player_of_week-2004-11-08-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-11-08",
+   "period_end": "2004-11-14",
+   "announced_on": "2004-11-15",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/11_November/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 5,
+     "wins": 4,
+     "losses": 1,
+     "pts": 25.8,
+     "reb": 10.0,
+     "ast": 3.6,
+     "game_score": 21.8,
+     "score": 121.0,
+     "rank": 1
+    },
+    {
+     "player": "Pau Gasol",
+     "team": "Memphis Grizzlies",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 26.8,
+     "reb": 8.2,
+     "ast": 3.0,
+     "game_score": 24.9,
+     "score": 111.6,
+     "rank": 2
+    },
+    {
+     "player": "Steve Nash",
+     "team": "Dallas Mavericks",
+     "games": 5,
+     "wins": 4,
+     "losses": 1,
+     "pts": 14.8,
+     "reb": 2.6,
+     "ast": 7.4,
+     "game_score": 14.78,
+     "score": 85.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Dirk Nowitzki"
   }
  ]
 }
