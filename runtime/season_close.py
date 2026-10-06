@@ -103,6 +103,18 @@ def close(season=None, root=ROOT, write=True):
         nxt.mkdir(parents=True, exist_ok=True)
         (nxt / "wade_expected_profile.json").write_text(
             json.dumps(build_profile(root, season, "2004-05", day), indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        # Other alternate-history players (trajectories.ALTERNATE_FROM): their own update, with the user's target line.
+        from .followed_players import followed
+        from .protagonist import ALTERNATE_PLAYERS, ALTERNATE_PROFILE_PATH, build_alternate_profile
+        from .trajectories import alternate
+        targets = {e["bbr_id"]: e.get("targets", {}) for e in followed(root)}
+        for bbr_id, meta in ALTERNATE_PLAYERS.items():
+            if alternate(bbr_id, "2004-05"):
+                t = {k: v for k, v in targets.get(bbr_id, {}).get("2004-05", {}).items() if k != "source"} or None
+                path = root / ALTERNATE_PROFILE_PATH.format(folder=meta["folder"], season="2004-05")
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(json.dumps(build_alternate_profile(root, bbr_id, season, "2004-05", day, t), indent=1,
+                                           ensure_ascii=False) + "\n", encoding="utf-8")
         (root / feedback_path("2004-05")).write_text(
             json.dumps(feedback(root, season, "2004-05", day), indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return record

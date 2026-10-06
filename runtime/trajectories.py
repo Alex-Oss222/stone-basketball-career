@@ -33,6 +33,21 @@ from .player_stats import PRIOR_ATTEMPTS, PRIOR_MINUTES, RATE_KEYS, ROOT, read_j
 TRAJECTORY_MODEL_VERSION = "trajectory-hybrid.1"
 CAREERS_PATH = Path("library/careers/nba_player_careers.json")
 PROTAGONIST_IDS = {"wadedw01"}   # the career's Wade is alternate history
+# Alternate-history players and the first season their own model applies (the user's premises): Wade from his rookie
+# season; Chris Bosh from 2004-05 (October 2026), his 2003-04 season having been played on his real path. Before its
+# first season a player keeps his real trajectory, so every journaled game replays unchanged.
+ALTERNATE_FROM = {"wadedw01": "2003-04", "boshch01": "2004-05"}
+
+
+def alternate(bbr_id, season):
+    """Whether the player's ability follows his own model (not his real career) in `season`."""
+    first = ALTERNATE_FROM.get(bbr_id)
+    return first is not None and season >= first
+
+
+def _season_of(profile):
+    end = profile.get("season_end_year")
+    return f"{end - 1}-{str(end)[-2:]}" if isinstance(end, int) else None
 FIRST_SEASON = "2003-04"
 PERSISTENCE = 0.5                # share of last season's swing that carries over
 # Log-scale spread of a season's swing around the real path. Judgement constants:
@@ -118,14 +133,15 @@ def development_packet(bbr_id, season):
 
 def needs_development(profile):
     """Real-career players and the protagonist both get an engine-drawn swing each season."""
-    return profile.get("model_version") == TRAJECTORY_MODEL_VERSION or profile.get("bbr_id") in PROTAGONIST_IDS
+    return (profile.get("model_version") == TRAJECTORY_MODEL_VERSION or profile.get("bbr_id") in PROTAGONIST_IDS
+            or alternate(profile.get("bbr_id"), _season_of(profile) or ""))
 
 
 def development_seasons(bbr_id, season):
     """Real players' swings persist, so their chain starts at FIRST_SEASON. The protagonist's
     simulated seasons already carry last year's swing into his next estimate, so he gets only
     the current season's draw; chaining it again would count it twice."""
-    return [season] if bbr_id in PROTAGONIST_IDS else season_list(FIRST_SEASON, season)
+    return [season] if bbr_id in PROTAGONIST_IDS or alternate(bbr_id, season) else season_list(FIRST_SEASON, season)
 
 
 def development_refs(journal, bbr_id, season):
@@ -216,8 +232,8 @@ def season_feedback(lines_by_player, expected_by_player, baselines, from_season,
                   "blocks": league["blk"] / minutes}
     seen = {}
     for bbr_id, lines in sorted(lines_by_player.items()):
-        if bbr_id in PROTAGONIST_IDS or bbr_id not in expected_by_player:
-            continue
+        if bbr_id in PROTAGONIST_IDS or alternate(bbr_id, applies_to) or bbr_id not in expected_by_player:
+            continue                 # an alternate-history player gets his own season update, not real-player feedback
         totals = season_totals(lines)
         seen[bbr_id] = (totals, *observed_rates(totals, baselines, per_minute))
     # Production rates are already relative to the simulated league. The others are made relative

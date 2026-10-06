@@ -142,3 +142,100 @@ def build_profile(root, from_season="2003-04", to_season="2004-05", on=None):
     if "scouting_sources" in prior:
         out["scouting_sources"] = prior["scouting_sources"]
     return out
+
+
+# -- other alternate-history players (the user's premises; trajectories.ALTERNATE_FROM) ------------------------------
+ALTERNATE_PROFILE_PATH = "career/{folder}/{season}/expected_profile.json"
+ALTERNATE_PLAYERS = {"boshch01": {"name": "Chris Bosh", "folder": "Chris_Bosh", "birth": date(1984, 3, 24)}}
+PROFILE_WEIGHT = 1.0     # judgement (the user's premise): the user's development profile counts as one prior's weight
+
+
+def target_rates(targets, prior, totals_per_minute, baselines, per_minute, observed):
+    """Engine rates implied by a user target line (per game and percentages). Rates the line does not name are absent.
+
+    Accuracy is read directly (two-point accuracy from FG% and his expected three-point share); production rates use
+    the same per-minute translation as `observed_rates`; usage scales his observed usage by the target points per
+    minute over his observed points per minute, divided by the ratio of target to observed true shooting (more
+    efficient scoring needs fewer possessions). Approximations, documented, applied the same way for every season."""
+    out = {}
+    mpg = targets.get("mpg")
+    if targets.get("ft_pct") is not None:
+        out["free_throw_pct"] = targets["ft_pct"]
+    if targets.get("three_pct") is not None:
+        out["three_point_pct"] = targets["three_pct"]
+    if targets.get("fg_pct") is not None and targets.get("three_pct") is not None:
+        r = prior["three_point_attempt_rate"]
+        out["two_point_pct"] = (targets["fg_pct"] - r * targets["three_pct"]) / (1 - r) if r < 1 else prior["two_point_pct"]
+    if not mpg:
+        return out
+    for key, stat, rate in (("assist_pct", "ast", "assists"), ("steal_pct", "stl", "steals"), ("block_pct", "blk", "blocks")):
+        if targets.get(stat) is not None:
+            out[key] = baselines[key] * targets[stat] / mpg / per_minute[rate]
+    if targets.get("reb") is not None and totals_per_minute.get("reb"):
+        share = totals_per_minute["orb"] / totals_per_minute["reb"]
+        out["offensive_rebound_pct"] = baselines["offensive_rebound_pct"] * targets["reb"] * share / mpg / per_minute["offensive_rebounds"]
+        out["defensive_rebound_pct"] = baselines["defensive_rebound_pct"] * targets["reb"] * (1 - share) / mpg / per_minute["defensive_rebounds"]
+    if targets.get("pts") is not None and totals_per_minute.get("pts") and observed.get("usage_pct"):
+        ts_ratio = (targets["ts_pct"] / totals_per_minute["ts"]) if targets.get("ts_pct") and totals_per_minute.get("ts") else 1.0
+        out["usage_pct"] = observed["usage_pct"] * (targets["pts"] / mpg) / totals_per_minute["pts"] / ts_ratio
+    return out
+
+
+def build_alternate_profile(root, bbr_id, from_season, to_season, on=None, targets=None):
+    """An alternate-history player's expected profile for `to_season`: his `from_season` expectation (his real path while
+    that season was real for him), his closed simulated box lines, the generic age step, and the user's target line
+    for `to_season` (`targets`) at PROFILE_WEIGHT. The engine then draws the season's swing (trajectories.alternate)."""
+    import hashlib
+    import json
+    from pathlib import Path
+    from .player_stats import SEASON_SOURCES, load_rating_index, read_json
+    from .seasons import dates
+    from .write_back import closed_results
+    meta = ALTERNATE_PLAYERS[bbr_id]
+    root = Path(root)
+    src = SEASON_SOURCES[from_season]
+    last_day = dates(from_season, root)["regular_season_end"]
+    prior_profile = load_rating_index(last_day, from_season, root).engine_profile(meta["name"], bbr_id)
+    prior = prior_profile["rates"]
+    ratings = read_json(root / src["ratings"])
+    lines = []
+    for row in closed_results(root, from_season, on):
+        r = row["result"]
+        for side in ("home", "away"):
+            lines += [p for p in r["player_stats"][side] if p["player_id"] == meta["name"] and p.get("seconds")]
+    age = season_age(to_season, meta["birth"])
+    production, accuracy = age_step(age)
+    t = season_totals(lines)
+    per_minute = league_per_minute(ratings["source_totals"])
+    observed, samples = observed_rates(t, ratings["rate_baselines"], per_minute)
+    out = {}
+    for key in RATE_KEYS:                     # next_season_rates with his own birth date
+        value, p = observed[key], prior[key]
+        if value is not None:
+            weight = PRIOR_ATTEMPTS.get(key, PRIOR_MINUTES)
+            p = (value * samples[key] + p * weight) / (samples[key] + weight)
+        p = p * accuracy if key in ACCURACY else p * production if key in PRODUCTION else p / production if key in INVERSE else p
+        out[key] = min(p, 0.99) if key in ACCURACY else p
+    minutes = t["seconds"] / 60
+    pts = 2 * (t["fgm"] - t["tpm"]) + 3 * t["tpm"] + t["ftm"]
+    reb = t["orb"] + t["drb"]
+    totals_pm = {"reb": reb, "orb": t["orb"], "pts": pts / minutes if minutes else None,
+                 "ts": pts / (2 * (t["fga"] + .44 * t["fta"])) if t["fga"] else None}
+    pulled = {}
+    if targets:
+        pulled = target_rates(targets, out, totals_pm, ratings["rate_baselines"], per_minute, observed)
+        for key, target in pulled.items():
+            out[key] = (out[key] + PROFILE_WEIGHT * target) / (1 + PROFILE_WEIGHT)
+            if key in ACCURACY:
+                out[key] = min(out[key], 0.99)
+    payload = {"prior": prior, "games": len(lines), "to_season": to_season, "targets": targets}
+    player = {"player_name": meta["name"], "bbr_id": bbr_id, "season_end_year": int(to_season[:4]) + 1,
+              "sample": {"games": len(lines), "minutes": round(minutes, 1)}, "estimated": out,
+              "target_rates": pulled, "profile_weight": PROFILE_WEIGHT,
+              "basis": ("runtime/protagonist.py build_alternate_profile: previous expectation + closed simulated season + "
+                        "age step + the user's development profile target line at PROFILE_WEIGHT")}
+    if "defense" in prior_profile:
+        player["defense"] = prior_profile["defense"]
+    return {"schema_version": 1, "model_version": PROFILE_MODEL, "as_of": on, "season": to_season,
+            "source_sha256": hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest(),
+            "players": {bbr_id: player}}

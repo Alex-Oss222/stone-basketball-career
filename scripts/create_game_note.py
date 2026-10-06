@@ -16,7 +16,8 @@ from scripts.refresh_career_views import refresh_career_views
 
 def season_dir(requested: str | None = None) -> Path:
     career = ROOT / "career"
-    players = [p for p in career.iterdir() if p.is_dir()]
+    # The controlled player carries a professional identity; a followed player's folder (career/<name>) does not.
+    players = [p for p in career.iterdir() if p.is_dir() and (p / "professional_identity.json").is_file()]
     if len(players) != 1:
         raise SystemExit("expected exactly one player directory under career")
     years = [p for p in players[0].iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)

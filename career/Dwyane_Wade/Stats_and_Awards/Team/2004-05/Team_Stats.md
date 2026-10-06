@@ -4,7 +4,11 @@
 
 NBA regular season · 2004-05
 
+<<<<<<< HEAD
 As of November 2, 2004: not started. The 17-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 17-player active roster.
+=======
+As of October 4, 2004: not started. The 16-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 16-player active roster.
+>>>>>>> bosh-alt
 
 ## Team record
 
