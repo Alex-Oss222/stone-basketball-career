@@ -50,6 +50,11 @@ def rotations(root, season=None):
 
 def role_in(rotation, name):
     starters = {v: k for k, v in (rotation.get("starters") or {}).items()}
+    if not starters and rotation.get("players"):
+        # A camp rotation lists its starting five first, one per position (rotation.json).
+        first = rotation["players"][:5]
+        if len({p.get("position") for p in first}) == 5:
+            starters = {p["player_id"]: p["position"] for p in first}
     row = next((p for p in rotation.get("players", []) if p["player_id"] == name), None)
     if name in starters:
         return f"starter at {starters[name]}, staff plan {row['minutes']:.0f} minutes" if row else f"starter at {starters[name]}"
@@ -149,4 +154,42 @@ def refresh(root=ROOT, write=True):
             changed.append(card)
             if write:
                 card.write_text(new, encoding="utf-8")
+    return changed
+
+
+GONE = ("released", "traded", "signed_elsewhere", "voided", "waived", "renounced", "declined")
+
+
+def sync_register_roles(root=ROOT, write=True, season=None):
+    """Miami's register `working_role` follows the staff's latest dated rotation and the injured list on the career date
+    (the user's request, October 2026: no stale arrival or camp labels once the staff has set roles). Returns the names
+    whose label changed."""
+    from .seasons import state
+    season = season or _season(root)
+    path = Path(root) / team_dir(season) / "Roster/roster.json"
+    if not path.is_file():
+        return []
+    register = _read(path)
+    on = state(season, root)["current_date"]
+    dated = [r for r in rotations(root, season) if r[0] <= on]
+    if not dated:
+        return []
+    as_of, rotation, _ = dated[-1]
+    changed = []
+    for p in register["players"]:
+        status = p.get("status") or ""
+        if any(w in status for w in GONE):
+            label = f"Left Miami ({status.replace('_', ' ')})"
+        elif status == "unsigned_draft_rights":
+            label = "Unsigned draft rights (not on the roster)"
+        elif injured_on(root, p["name"], on, season):
+            label = f"Injured list ({role_in(rotation, p['name'])} when healthy; rotation {as_of})"
+        else:
+            role = role_in(rotation, p["name"])
+            label = role[0].upper() + role[1:] + f" (rotation {as_of})"
+        if p.get("working_role") != label:
+            p["working_role"] = label
+            changed.append(p["name"])
+    if changed and write:
+        path.write_text(json.dumps(register, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return changed

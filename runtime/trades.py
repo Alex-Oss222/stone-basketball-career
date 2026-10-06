@@ -143,7 +143,9 @@ def _ledger_inventory(on, season, ledger, valuation, root=ROOT):
             b = p.get("bbr_id")
             c = ledger.get(b)
             if c:
-                players.append({"player": c["player"], "bbr_id": b, "status": "under_contract", "schedule": c["schedule"],
+                rookie = c.get("rookie_scale") or c.get("kind") == "rookie_scale"
+                players.append({"player": c["player"], "bbr_id": b, "status": "under_rookie_contract" if rookie else "under_contract",
+                                "schedule": c["schedule"],
                                 "amount_kind": {s_: "contract_salary" for s_ in c["schedule"]}, "held_on": on,
                                 "terms_source": ledger_path_label(season)})
             elif b:
@@ -297,7 +299,12 @@ class Assets:
         """The club's stance on the date: its 2002-03 record, and a middle club whose core is young is building
         (the top eight of its dated roster by production; judgement STANCE_YOUNG_AGE)."""
         if club not in self._stance:
-            wins = self.standings.get(club, {}).get("wins", 41)
+            row = self.standings.get(club)
+            if row is None and self.season != SEASON:
+                stance = "rebuilding"            # an expansion club with no previous season builds (Charlotte, 2004-05)
+                self._stance[club] = stance
+                return stance
+            wins = (row or {}).get("wins", 41)
             stance = "contending" if wins >= CONTENDING_WINS else "rebuilding" if wins <= REBUILDING_WINS else "middle"
             if stance == "middle":
                 ages = sorted(((self.valuation.value(p["bbr_id"]) or 0.0, self.valuation.age(p["bbr_id"]))

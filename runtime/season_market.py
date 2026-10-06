@@ -88,8 +88,11 @@ class SeasonMarket:
         return bbr_id in self.players and (e is None or e[0] > on)
 
     def pool(self, on=None):
+        """Free agents a club may sign on the date: unsigned, and playing in the NBA that season in history
+        (`runtime/availability.py`: a retired player or one who sat the season out is never signed)."""
         on = on or self.on
-        return {b: p for b, p in self.players.items() if self.available(b, on)}
+        from .availability import signable
+        return {b: p for b, p in self.players.items() if self.available(b, on) and signable(b, self.season, self.root)}
 
     # -- the cap -------------------------------------------------------------------------------
     def cap_known(self, on=None):

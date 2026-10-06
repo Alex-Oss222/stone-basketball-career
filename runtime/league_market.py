@@ -81,6 +81,9 @@ def _status_on(day, root):
     return snaps[newest]
 
 
+RETIREMENT_FROM = "2004-11-24"     # the user's request (October 2026); earlier market days stand as run
+
+
 class LeagueMarket:
     def __init__(self, day, market, root=ROOT):
         if not active(day):
@@ -128,7 +131,9 @@ class LeagueMarket:
             if e.get("to") is None and e.get("role") and e["date"] <= self.day and e["kind"] != "waive":
                 out.setdefault(e["bbr_id"], e["role"])         # cleared waivers, ended 10-day contracts
         waiting = {e["bbr_id"] for e in self.on_waivers()}     # on waivers: nobody may sign him yet
-        return {b: r for b, r in out.items() if b not in on_a_club and b not in held and b not in waiting}
+        from .availability import signable                     # retired or sitting the season out in history: never signed
+        return {b: r for b, r in out.items() if b not in on_a_club and b not in held and b not in waiting
+                and signable(b, self.season, self.root)}
 
     def fit_value(self, club, bbr, without=None):
         held = [(p["bbr_id"], max(1.0, self.value(p["bbr_id"]))) for p in self.rosters[club] if p["bbr_id"] != without]
@@ -236,6 +241,16 @@ class LeagueMarket:
         start = len(self.moves["entries"])
         pool = self.pool()
         self._resolve_waivers(pool)
+        # 0. retirements (runtime/availability.py, from RETIREMENT_FROM): a player history retired before this season
+        #    leaves his club for good; the club fills the spot below like any other vacancy.
+        if self.day >= RETIREMENT_FROM:
+            from .availability import status
+            for club in self.clubs:
+                for p in list(self.rosters[club]):
+                    if status(p["bbr_id"], self.season, self.root) == "retired":
+                        role = {k: p.get(k) for k in ("player_id", "bbr_id", "position", "games", "minutes")}
+                        self._add("retire", p["bbr_id"], role, club, None,
+                                  note=f"retired: his real career ended before {self.season} (career continuity)")
         ten_open = self.day >= self.rules["ten_day_from"]
         for club in self.clubs:
             # 1. expiring 10-day contracts

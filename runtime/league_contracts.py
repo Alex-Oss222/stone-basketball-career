@@ -85,6 +85,15 @@ def build(season, root=ROOT, market=None):
                       "schedule": dict(sorted(sched.items())), "source": r.get("source")}
             if kind == "rookie_scale":
                 out[b]["team_option"] = _season_after(season, 3)
+                out[b]["rookie_scale"] = True
+            carried_options = (terms.get(b) or {}).get("options") if kind == "existing" else None
+            if carried_options:
+                out[b]["options"] = dict(carried_options)
+            if (terms.get(b) or {}).get("rookie_scale"):
+                out[b]["rookie_scale"] = True
+    from .options import annotate_ledger, reapply
+    annotate_ledger(out, season, root)              # option seasons and the 2003 first-round picks' scale years
+    reapply(out, season, root)                      # option decisions already recorded for the season
     return out
 
 
@@ -120,6 +129,8 @@ def carried(season, root=ROOT):
             out[b] = {"club": c["club"], "salary": c["schedule"][season], "kind": "option" if option else "contract",
                       "option_kind": "team_option" if option else None,
                       "schedule": {s: v for s, v in c["schedule"].items() if s >= season},
+                      "options": {s: k for s, k in (c.get("options") or {}).items() if s >= season},
+                      "rookie_scale": bool(c.get("rookie_scale")),
                       "source": f"{ledger_path(prev).as_posix()} ({c['kind']})"}
     return out
 

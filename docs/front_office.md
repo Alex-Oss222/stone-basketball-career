@@ -211,3 +211,23 @@ Real clubs follow history (option D), so a club Miami takes a rotation player fr
 - **Effect.** He arrives with his 2002-03 minutes per game and games share (rule 3) in `game_requests._club`, and `league_cards.club_on` dates him to his new club.
 
 Records live in `career/Dwyane_Wade/<season>/League/club_replacements.json`. Run `python scripts/club_replacements.py --write` after any Miami acquisition; validation refuses a disturbed club without a replacement while the pool has one. Undisturbed clubs keep following history.
+
+
+## Contract options for every club (October 2026)
+
+`runtime/options.py`, run every career day by `scripts/advance.py` (`scripts/option_day.py --write <date>`). Team options,
+player options and early termination options are decided on their real deadlines, never assumed exercised: a rookie-scale
+team option by October 31 of the season before it, a veteran option at the end of June before it. The holder decides on
+its valuation dated on the deadline: worth (market price of production, x1.25 for a player 24 or younger) against the
+option salary; at or above 1.2 the option is exercised (or the player stays), at or below 0.8 it is declined (or he
+leaves), and in between the engine draws it (`League/Option_Draws/`). A player history retired before the option season
+is declined. Decisions are recorded in `League/option_decisions.json`, applied to the league ledger and Miami's cap sheet,
+and reapplied when a ledger is rebuilt. The 2004-05 ledger also restores the 2003 first-round picks' third scale season
+and fourth-year option (their 2004-05 salary is exactly 120% of their pick's scale).
+
+## Retirement and availability (October 2026)
+
+`runtime/availability.py`: a real player's NBA seasons from 2003-04 (`nba_player_careers.json`) decide whether he can
+play in a season. No club signs a player who is retired or sits that season out in history; from November 24, 2004 the
+league's market day retires any rostered player whose real career ended before the season, and his club fills the spot.
+Miami's refills and the summer markets read the same rule.

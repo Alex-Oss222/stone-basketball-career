@@ -845,7 +845,8 @@ def run(root=ROOT, season=None, write=False, pages=True):
             from scripts.format_league_reports import format_all
             format_all(root)                     # newly registered players get their rows on every league page
         report["notes"] = sync_note_statuses(root, season)
-        from .miami_cards import refresh as refresh_miami_cards
+        from .miami_cards import refresh as refresh_miami_cards, sync_register_roles
+        report["roles"] = sync_register_roles(root)      # register labels follow the staff's dated rotation
         report["miami_cards"] = refresh_miami_cards(root)
         from .team_status import refresh as refresh_team_status
         report["team_status"] = refresh_team_status(root)
