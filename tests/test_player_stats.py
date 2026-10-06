@@ -79,7 +79,11 @@ class ImportTests(unittest.TestCase):
     def test_date_and_source_gates(self):
         with self.assertRaisesRegex(ValueError, "not available"):
             load_rating_index("2003-06-25", "2003-04")
-        self.assertIsNone(load_rating_index("2005-10-28", "2005-06"))      # no baseline encoded yet
+        with self.assertRaisesRegex(ValueError, "not available"):
+            load_rating_index("2005-04-20", "2005-06")                       # 2004-05 totals known from April 21, 2005
+        if not (ROOT / "career/Dwyane_Wade/2005-06/wade_expected_profile.json").is_file():
+            with self.assertRaisesRegex(ValueError, "no expected profile"):    # alternate-history profiles: season close
+                load_rating_index("2005-10-28", "2005-06")
         with self.assertRaisesRegex(ValueError, "not available"):
             load_rating_index("2004-04-14", "2004-05")                       # 2003-04 totals known from April 15
         with tempfile.TemporaryDirectory() as temp:

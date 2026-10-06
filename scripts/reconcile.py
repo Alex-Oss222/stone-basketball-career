@@ -40,6 +40,14 @@ def schedule_totals(root, write):
     return [path]
 
 
+def ledger_holders(root, write):
+    """The league contract ledger's `club`: the club holding each player on the career date (a trade assigns the
+    contract; `league_contracts.refresh_holders`)."""
+    from runtime.league_contracts import refresh_holders
+    from runtime.seasons import active, state
+    return refresh_holders(active(root), state(None, root)["current_date"], root, write)
+
+
 def run(script, *args):
     out = subprocess.run([sys.executable, str(ROOT / script), *args], cwd=ROOT, capture_output=True, text=True)
     return out.returncode, (out.stdout + out.stderr).strip()
@@ -54,6 +62,10 @@ def main():
     if changed:
         stale.append("Miami schedule totals")
     print(f"Miami schedule totals: {'stale' if changed else 'current'}")
+    moved = ledger_holders(ROOT, not args.check)
+    if moved:
+        stale.append("league contract holders")
+    print(f"league contract holders: {f'{len(moved)} stale' if moved else 'current'}")
     for label, mode in (("results into notes, statistics pages, Miami and league cards", "scripts/write_back_results.py"),
                         ("career views", "scripts/update_player_reports.py")):
         code, out = run(mode, "--check") if args.check else run(mode, *(("--write",) if "write_back" in mode else ()))

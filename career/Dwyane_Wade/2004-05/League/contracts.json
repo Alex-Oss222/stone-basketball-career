@@ -114,14 +114,15 @@
   {
    "player": "Shandon Anderson",
    "bbr_id": "andersh01",
-   "club": "Seattle SuperSonics",
+   "club": "New Jersey Nets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 7300000,
     "2005-06": 7900000
    },
-   "source": "library/2003/league/nba_2003_contracts.json; traded 2004-07-15"
+   "source": "library/2003/league/nba_2003_contracts.json; traded 2004-07-15",
+   "signed_club": "Seattle SuperSonics"
   },
   {
    "player": "Carmelo Anthony",
@@ -620,13 +621,14 @@
   {
    "player": "Devin Brown",
    "bbr_id": "brownde02",
-   "club": "San Antonio Spurs",
+   "club": "New York Knicks",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 695046
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)",
+   "signed_club": "San Antonio Spurs"
   },
   {
    "player": "Kedrick Brown",
@@ -757,7 +759,7 @@
   {
    "player": "Zarko Cabarkapa",
    "bbr_id": "cabarza01",
-   "club": "Phoenix Suns",
+   "club": "Portland Trail Blazers",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -770,7 +772,8 @@
     "2006-07": "team_option"
    },
    "rookie_scale": true,
-   "scale_pick_2003": 17
+   "scale_pick_2003": 17,
+   "signed_club": "Phoenix Suns"
   },
   {
    "player": "Marcus Camby",
@@ -1041,13 +1044,14 @@
   {
    "player": "Austin Croshere",
    "bbr_id": "croshau01",
-   "club": "Indiana Pacers",
+   "club": "Boston Celtics",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 8260000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "Indiana Pacers"
   },
   {
    "player": "Eddy Curry",
@@ -1802,13 +1806,14 @@
   {
    "player": "Anthony Goldwire",
    "bbr_id": "goldwan01",
-   "club": "Utah Jazz",
+   "club": "Charlotte Bobcats",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2004-05": 1000000
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "signed_club": "Utah Jazz"
   },
   {
    "player": "Drew Gooden",
@@ -2128,7 +2133,7 @@
   {
    "player": "Grant Hill",
    "bbr_id": "hillgr01",
-   "club": "Orlando Magic",
+   "club": "Minnesota Timberwolves",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -2136,7 +2141,8 @@
     "2005-06": 15694250,
     "2006-07": 16901500
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "Orlando Magic"
   },
   {
    "player": "Kirk Hinrich",
@@ -2172,14 +2178,15 @@
   {
    "player": "Robert Horry",
    "bbr_id": "horryro01",
-   "club": "New Jersey Nets",
+   "club": "Seattle SuperSonics",
    "route": "mid_level",
    "kind": "new",
    "schedule": {
     "2004-05": 1235972,
     "2005-06": 1359569
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "signed_club": "New Jersey Nets"
   },
   {
    "player": "Eddie House",
@@ -2240,7 +2247,7 @@
   {
    "player": "Juwan Howard",
    "bbr_id": "howarju01",
-   "club": "Orlando Magic",
+   "club": "Charlotte Bobcats",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -2249,7 +2256,8 @@
     "2006-07": 5600000,
     "2007-08": 5600000
    },
-   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)"
+   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)",
+   "signed_club": "Orlando Magic"
   },
   {
    "player": "Larry Hughes",
@@ -2662,7 +2670,7 @@
   {
    "player": "Fred Jones",
    "bbr_id": "jonesfr01",
-   "club": "Indiana Pacers",
+   "club": "Utah Jazz",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -2674,18 +2682,20 @@
    "rookie_scale": true,
    "option_history": [
     "2005-06 team option: exercise (2004-10-31; engine draw; runtime/options.py, League/option_decisions.json)"
-   ]
+   ],
+   "signed_club": "Indiana Pacers"
   },
   {
    "player": "James Jones",
    "bbr_id": "jonesja02",
-   "club": "Charlotte Bobcats",
+   "club": "Orlando Magic",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 620046
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); expansion draft"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); expansion draft",
+   "signed_club": "Charlotte Bobcats"
   },
   {
    "player": "Jumaine Jones",
@@ -2815,13 +2825,14 @@
   {
    "player": "Kyle Korver",
    "bbr_id": "korveky01",
-   "club": "Charlotte Bobcats",
+   "club": "Sacramento Kings",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 620046
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); expansion draft"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); expansion draft",
+   "signed_club": "Charlotte Bobcats"
   },
   {
    "player": "Nenad Krstić",
@@ -2881,13 +2892,14 @@
   {
    "player": "Maciej Lampe",
    "bbr_id": "lampema01",
-   "club": "Phoenix Suns",
+   "club": "Atlanta Hawks",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 900000
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); 1999 rookie scale",
+   "signed_club": "Phoenix Suns"
   },
   {
    "player": "Voshon Lenard",
@@ -2941,13 +2953,14 @@
   {
    "player": "Tyronn Lue",
    "bbr_id": "luety01",
-   "club": "Orlando Magic",
+   "club": "Minnesota Timberwolves",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 1500000
    },
-   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)"
+   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)",
+   "signed_club": "Orlando Magic"
   },
   {
    "player": "George Lynch",
@@ -3300,14 +3313,15 @@
   {
    "player": "Reggie Miller",
    "bbr_id": "millere01",
-   "club": "Indiana Pacers",
+   "club": "Boston Celtics",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 5500000,
     "2005-06": 5500000
    },
-   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)"
+   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)",
+   "signed_club": "Indiana Pacers"
   },
   {
    "player": "Yao Ming",
@@ -3371,13 +3385,14 @@
   {
    "player": "Alonzo Mourning",
    "bbr_id": "mournal01",
-   "club": "New Jersey Nets",
+   "club": "Seattle SuperSonics",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 5408700
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)",
+   "signed_club": "New Jersey Nets"
   },
   {
    "player": "Troy Murphy",
@@ -4195,7 +4210,7 @@
   {
    "player": "Jalen Rose",
    "bbr_id": "roseja01",
-   "club": "Boston Celtics",
+   "club": "Indiana Pacers",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -4203,7 +4218,8 @@
     "2005-06": 15694250,
     "2006-07": 16901500
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "Boston Celtics"
   },
   {
    "player": "Malik Rose",
@@ -4389,13 +4405,14 @@
   {
    "player": "Theron Smith",
    "bbr_id": "smithth01",
-   "club": "Atlanta Hawks",
+   "club": "Portland Trail Blazers",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 620046
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)",
+   "signed_club": "Atlanta Hawks"
   },
   {
    "player": "Tommy Smith",
@@ -4461,13 +4478,14 @@
   {
    "player": "Latrell Sprewell",
    "bbr_id": "sprewla01",
-   "club": "Minnesota Timberwolves",
+   "club": "Orlando Magic",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 14625000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "Minnesota Timberwolves"
   },
   {
    "player": "Jerry Stackhouse",
@@ -4576,13 +4594,14 @@
   {
    "player": "Bruno Šundov",
    "bbr_id": "sundobr01",
-   "club": "Phoenix Suns",
+   "club": "Dallas Mavericks",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 870046
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)",
+   "signed_club": "Phoenix Suns"
   },
   {
    "player": "Michael Sweetney",
@@ -4874,18 +4893,19 @@
   {
    "player": "Nick Van Exel",
    "bbr_id": "vanexni01",
-   "club": "San Antonio Spurs",
+   "club": "New York Knicks",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 11933252
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)",
+   "signed_club": "San Antonio Spurs"
   },
   {
    "player": "Keith Van Horn",
    "bbr_id": "vanhoke01",
-   "club": "New York Knicks",
+   "club": "San Antonio Spurs",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -4894,7 +4914,8 @@
     "2006-07": 16901500,
     "2007-08": 18108750
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "New York Knicks"
   },
   {
    "player": "Anderson Varejão",
@@ -5322,7 +5343,7 @@
   {
    "player": "Qyntel Woods",
    "bbr_id": "woodsqy01",
-   "club": "Charlotte Bobcats",
+   "club": "Los Angeles Lakers",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -5334,7 +5355,8 @@
    "rookie_scale": true,
    "option_history": [
     "2005-06 team option: exercise (2004-10-31; clear: ratio 1.26 at or above 1.2; runtime/options.py, League/option_decisions.json)"
-   ]
+   ],
+   "signed_club": "Charlotte Bobcats"
   },
   {
    "player": "wrighdo01",
@@ -5366,13 +5388,14 @@
   {
    "player": "Wang Zhizhi",
    "bbr_id": "zhizhwa01",
-   "club": "Utah Jazz",
+   "club": "Atlanta Hawks",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2004-05": 745046
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "signed_club": "Utah Jazz"
   }
  ]
 }

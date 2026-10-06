@@ -148,3 +148,29 @@ def under_contract(season, root=ROOT):
         from .contract_terms import existing_terms
         return {b: {"club": t["club"], "salary": t["salary"]} for b, t in existing_terms(root).items() if t["kind"] == "contract"}
     return {b: {"club": t["club"], "salary": t["salary"]} for b, t in carried(season, root).items() if t["kind"] == "contract"}
+
+
+def refresh_holders(season, on, root=ROOT, write=True):
+    """Set each contract's `club` to the club holding the player on `on` in the simulated league (a trade assigns the
+    contract; `league_moves.effective_roster`, Miami's register for Miami). The club that signed it stays as
+    `signed_club`. A player no club holds (waived) keeps the club that owes the contract. Derived from the dated moves,
+    so `scripts/reconcile.py` rebuilds it; returns the bbr_ids whose club changed."""
+    from .options import holders_on
+    from .rotations import miami_holds
+    root = Path(root)
+    path = root / ledger_path(season)
+    if not path.is_file():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    holders = holders_on(on, root)
+    miami = set(miami_holds(season, on, root))
+    changed = []
+    for c in data["contracts"]:
+        holder = "Miami Heat" if c["bbr_id"] in miami else holders.get(c["bbr_id"])
+        if holder and holder != c["club"]:
+            c.setdefault("signed_club", c["club"])
+            c["club"] = holder
+            changed.append(c["bbr_id"])
+    if changed and write:
+        path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return changed
