@@ -2164,6 +2164,130 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.28 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-15-rest_of_season-moisoje01",
+   "date": "2005-01-15",
+   "kind": "rest_of_season",
+   "player": "Jérôme Moïso",
+   "bbr_id": "moisoje01",
+   "from": "Charlotte Bobcats",
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Jérôme Moïso",
+    "bbr_id": "moisoje01",
+    "position": "PF",
+    "games": 20,
+    "minutes": 120
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 14.6 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2004-05-market-2005-01-15-expire-augmost01",
+   "date": "2005-01-15",
+   "kind": "expire",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 55,
+    "minutes": 663
+   },
+   "contract": null,
+   "note": "10-day contract ended (4.4 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-01-15-ten_day-augmost01",
+   "date": "2005-01-15",
+   "kind": "ten_day",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": null,
+   "to": "Los Angeles Clippers",
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 55,
+    "minutes": 663
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-25",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.39 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-15-rest_of_season-fizerma01",
+   "date": "2005-01-15",
+   "kind": "rest_of_season",
+   "player": "Marcus Fizer",
+   "bbr_id": "fizerma01",
+   "from": "New Jersey Nets",
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Marcus Fizer",
+    "bbr_id": "fizerma01",
+    "position": "PF",
+    "games": 54,
+    "minutes": 903
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 23.0 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2004-05-market-2005-01-15-expire-johnsli01",
+   "date": "2005-01-15",
+   "kind": "expire",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 15
+   },
+   "contract": null,
+   "note": "10-day contract ended (4.4 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-01-15-rest_of_season-willima01",
+   "date": "2005-01-15",
+   "kind": "rest_of_season",
+   "player": "Mo Williams",
+   "bbr_id": "willima01",
+   "from": "San Antonio Spurs",
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "Mo Williams",
+    "bbr_id": "willima01",
+    "position": "PG",
+    "games": 80,
+    "minutes": 2254
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 28.4 minutes a game on his 10-day contracts"
   }
  ],
  "market_days": [
@@ -2240,6 +2364,7 @@
   "2005-01-11",
   "2005-01-12",
   "2005-01-13",
-  "2005-01-14"
+  "2005-01-14",
+  "2005-01-15"
  ]
 }
