@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-11-15",
+  "as_of": "2004-11-21",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1013,7 +1013,7 @@
     {
       "player_id": "borchcu01",
       "name": "Curtis Borchardt",
-      "team": "Boston Celtics",
+      "team": "Free agent",
       "status": "under rookie contract",
       "current_contract_id": "borchcu01-2002-07-12",
       "recorded_agreements": 1,
@@ -3407,7 +3407,7 @@
     {
       "player_id": "bateeme01",
       "name": "Mengke Bateer",
-      "team": "Free agent",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "bateeme01-2003-07-17",
       "recorded_agreements": 2,

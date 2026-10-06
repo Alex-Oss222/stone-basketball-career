@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-11-15. [Search the contract directory](index.html)
+Known through 2004-11-21. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -121,7 +121,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Corsley Edwards](players/corsleyedwards.md) | Free agent | under contract | Corsley Edwards · 2004-07-15 | 1 |
 | [Cory Alexander](players/coryalexander.md) | Free agent | under contract | Cory Alexander · 2004-07-15 | 1 |
 | [Courtney Alexander](players/alexaco02.md) | Free agent | under rookie contract | Courtney Alexander · 2000-07-06 | 1 |
-| [Curtis Borchardt](players/borchcu01.md) | Boston Celtics | under rookie contract | Curtis Borchardt · 2002-07-12 | 1 |
+| [Curtis Borchardt](players/borchcu01.md) | Free agent | under rookie contract | Curtis Borchardt · 2002-07-12 | 1 |
 | [Cuttino Mobley](players/moblecu01.md) | Houston Rockets | under contract | Cuttino Mobley · 2000-08-02 | 1 |
 | [D.J. Mbenga](players/djmbenga.md) | Free agent | under contract | D.J. Mbenga · 2004-07-14 | 1 |
 | [Dahntay Jones](players/jonesda02.md) | Memphis Grizzlies | No verified contract record | No verified current agreement | 0 |
@@ -387,7 +387,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Maurice Taylor](players/tayloma01.md) | Houston Rockets | under contract | Maurice Taylor · 2001-08-07 | 1 |
 | [Mehmet Okur](players/okurme01.md) | Miami Heat | under contract | Mehmet Okur · 2004-09-23 | 1 |
 | [Melvin Ely](players/elyme01.md) | Los Angeles Clippers | under rookie contract | Melvin Ely · 2002-09-04 | 1 |
-| [Mengke Bateer](players/bateeme01.md) | Free agent | under contract | Mengke Bateer · 2003-07-17 | 2 |
+| [Mengke Bateer](players/bateeme01.md) | Boston Celtics | under contract | Mengke Bateer · 2003-07-17 | 2 |
 | [Michael Bradley](players/bradlmi01.md) | Free agent | under rookie contract | Michael Bradley · 2001-07-23 | 1 |
 | [Michael Curry](players/currymi01.md) | Free agent | under contract | Michael Curry · existing contract; signing date not recorded | 1 |
 | [Michael Doleac](players/doleami01.md) | New York Knicks | under contract | Michael Doleac · 2002-08-07 | 1 |

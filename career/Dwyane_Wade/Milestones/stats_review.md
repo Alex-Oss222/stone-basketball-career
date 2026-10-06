@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-11-15 · Miami Heat · active
+Career date: 2004-11-21 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-14 closed game records in 2004-05 through 2004-11-15. Competitions remain separate.
+18 closed game records in 2004-05 through 2004-11-21. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
-| regular | 7 | 31.7 | 16.1 | 3.9 | 2.9 | 1.0 | Complete |
+| regular | 11 | 33.6 | 17.7 | 4.6 | 4.1 | 1.1 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
-| regular | 40 | 76 | 0.526 | 8 | 18 | 0.444 |
+| regular | 68 | 129 | 0.527 | 10 | 23 | 0.435 |
 
 ## Closed source games
 
@@ -44,6 +44,10 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-11-11 | regular | Dallas Mavericks | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md) |
 | 2004-11-12 | regular | San Antonio Spurs | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md) |
 | 2004-11-14 | regular | Milwaukee Bucks | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md) |
+| 2004-11-16 | regular | Minnesota Timberwolves | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.md) |
+| 2004-11-17 | regular | Milwaukee Bucks | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.md) |
+| 2004-11-19 | regular | Utah Jazz | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md) |
+| 2004-11-21 | regular | Philadelphia 76ers | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md) |
 
 ## Evidence available for decisions
 
@@ -98,4 +102,8 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

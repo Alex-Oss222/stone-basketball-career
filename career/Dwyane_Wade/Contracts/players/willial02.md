@@ -2,9 +2,9 @@
 
 # Contract | Alvin Williams
 
-Known through: 2004-11-15. [Open interactive contract](willial02.html#contract) · [Contract history](willial02.html#contract-history)
+Known through: 2004-11-21. [Open interactive contract](willial02.html#contract) · [Contract history](willial02.html#contract-history)
 
-Alvin Williams: under contract unverified. Evidence cutoff: 2004-11-15.
+Alvin Williams: under contract unverified. Evidence cutoff: 2004-11-21.
 
 ## Current contract
 

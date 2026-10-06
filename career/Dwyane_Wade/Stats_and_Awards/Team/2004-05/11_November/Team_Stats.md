@@ -4,13 +4,13 @@
 
 NBA regular season · November 1-30, 2004
 
-As of November 15, 2004: 7 closed Miami games in this period. Rows cover Miami's closed games only.
+As of November 21, 2004: 11 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
 | G | W | L | WIN% | PPG | OPP PPG | DIFF |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 7 | 4 | 3 | .571 | 97.4 | 100.3 | -2.9 |
+| 11 | 8 | 3 | .727 | 98.4 | 96.3 | +2.1 |
 
 ## Player production
 
@@ -18,23 +18,23 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | SG/SF | 7 | 12.7 | 4.7 | 1.6 | 0.7 | 0.3 | 0.3 | 0.3 |
-| Brian Grant | C/PF | 7 | 29.1 | 9.0 | 4.9 | 0.9 | 0.9 | 0.4 | 0.9 |
-| Scott Padgett | PF | 7 | 22.1 | 5.6 | 3.9 | 1.3 | 0.9 | 0.3 | 0.1 |
-| Mike James | PG | 6 | 31.8 | 14.7 | 2.7 | 3.8 | 1.2 | 0.2 | 1.7 |
-| Mehmet Okur | PF | 7 | 33.3 | 14.4 | 8.6 | 4.1 | 0.1 | 0.7 | 2.1 |
-| Dwyane Wade | SG/PG | 7 | 31.7 | 16.1 | 3.9 | 2.9 | 1.7 | 0.7 | 1.0 |
-| Caron Butler | SF | 6 | 35.3 | 17.2 | 3.3 | 1.7 | 1.2 | 0.0 | 2.8 |
-| Kendall Gill | SG | 7 | 10.4 | 3.1 | 1.6 | 0.9 | 1.0 | 0.3 | 0.3 |
-| Dorell Wright | SF | 6 | 6.7 | 4.2 | 0.5 | 0.7 | 0.3 | 0.5 | 0.5 |
+| Eddie Jones | SG/SF | 11 | 12.1 | 4.3 | 1.4 | 0.6 | 0.6 | 0.2 | 0.4 |
+| Brian Grant | C/PF | 11 | 28.0 | 8.6 | 4.9 | 1.0 | 0.8 | 0.4 | 0.7 |
+| Scott Padgett | PF | 10 | 22.0 | 5.4 | 4.4 | 1.3 | 1.0 | 0.3 | 0.6 |
+| Mike James | PG | 10 | 34.4 | 14.8 | 3.5 | 4.3 | 1.2 | 0.1 | 1.9 |
+| Mehmet Okur | PF | 11 | 35.1 | 15.0 | 8.9 | 3.7 | 0.4 | 1.2 | 2.1 |
+| Dwyane Wade | SG/PG | 11 | 33.6 | 17.7 | 4.6 | 4.1 | 1.5 | 0.9 | 1.1 |
+| Caron Butler | SF | 9 | 34.9 | 16.7 | 4.0 | 1.7 | 0.9 | 0.1 | 2.4 |
+| Kendall Gill | SG | 11 | 10.2 | 3.4 | 1.5 | 0.7 | 0.6 | 0.4 | 0.5 |
+| Dorell Wright | SF | 10 | 6.2 | 3.9 | 0.7 | 0.6 | 0.4 | 0.3 | 0.4 |
 | John Thomas | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Maurice Evans | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Udonis Haslem | PF | 7 | 18.9 | 6.1 | 3.3 | 0.4 | 0.1 | 0.7 | 0.4 |
-| Maurice Baker | PG | 4 | 6.1 | 1.5 | 0.8 | 0.0 | 0.0 | 0.0 | 1.0 |
+| Udonis Haslem | PF | 11 | 18.4 | 6.2 | 4.3 | 0.4 | 0.3 | 0.6 | 0.5 |
+| Maurice Baker | PG | 6 | 4.5 | 1.3 | 0.7 | 0.0 | 0.0 | 0.0 | 0.8 |
 | John Edwards | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Bernard Robinson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Christian Drejer | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Rafer Alston | PG | 7 | 15.0 | 6.6 | 1.1 | 3.1 | 0.6 | 0.0 | 1.6 |
+| Rafer Alston | PG | 11 | 14.5 | 6.9 | 1.2 | 2.4 | 0.4 | 0.2 | 1.4 |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -43,23 +43,23 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | 1 | 12/25 | .480 | 2/6 | .333 | 7/12 | .583 | 1 | 10 |
-| Brian Grant | 7 | 25/60 | .417 | 0/2 | .000 | 13/23 | .565 | 16 | 18 |
-| Scott Padgett | 0 | 15/44 | .341 | 2/13 | .154 | 7/10 | .700 | 5 | 22 |
-| Mike James | 6 | 35/76 | .461 | 6/26 | .231 | 12/16 | .750 | 3 | 13 |
-| Mehmet Okur | 7 | 35/66 | .530 | 0/4 | .000 | 31/33 | .939 | 16 | 44 |
-| Dwyane Wade | 7 | 40/76 | .526 | 8/18 | .444 | 25/27 | .926 | 9 | 18 |
-| Caron Butler | 6 | 44/94 | .468 | 6/17 | .353 | 9/13 | .692 | 8 | 12 |
-| Kendall Gill | 0 | 8/21 | .381 | 2/2 | 1.000 | 4/4 | 1.000 | 2 | 9 |
-| Dorell Wright | 0 | 9/16 | .562 | 2/4 | .500 | 5/5 | 1.000 | 0 | 3 |
+| Eddie Jones | 1 | 17/41 | .415 | 2/12 | .167 | 11/17 | .647 | 3 | 12 |
+| Brian Grant | 11 | 38/86 | .442 | 1/3 | .333 | 18/29 | .621 | 26 | 28 |
+| Scott Padgett | 0 | 20/56 | .357 | 5/18 | .278 | 9/12 | .750 | 7 | 37 |
+| Mike James | 10 | 58/128 | .453 | 17/43 | .395 | 15/22 | .682 | 6 | 29 |
+| Mehmet Okur | 11 | 57/118 | .483 | 2/11 | .182 | 49/56 | .875 | 27 | 71 |
+| Dwyane Wade | 11 | 68/129 | .527 | 10/23 | .435 | 49/53 | .925 | 16 | 35 |
+| Caron Butler | 9 | 60/125 | .480 | 9/21 | .429 | 21/26 | .808 | 11 | 25 |
+| Kendall Gill | 0 | 14/35 | .400 | 3/4 | .750 | 6/6 | 1.000 | 3 | 14 |
+| Dorell Wright | 1 | 14/26 | .538 | 3/6 | .500 | 8/9 | .889 | 3 | 4 |
 | John Thomas | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Maurice Evans | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Udonis Haslem | 0 | 19/40 | .475 | 0/2 | .000 | 5/6 | .833 | 11 | 12 |
-| Maurice Baker | 0 | 3/8 | .375 | 0/1 | .000 | 0/0 | N/A | 2 | 1 |
+| Udonis Haslem | 0 | 31/66 | .470 | 0/2 | .000 | 6/10 | .600 | 17 | 30 |
+| Maurice Baker | 0 | 4/9 | .444 | 0/1 | .000 | 0/0 | N/A | 2 | 2 |
 | John Edwards | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Bernard Robinson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Christian Drejer | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Rafer Alston | 1 | 15/31 | .484 | 4/11 | .364 | 12/16 | .750 | 1 | 7 |
+| Rafer Alston | 1 | 25/56 | .446 | 9/27 | .333 | 17/23 | .739 | 3 | 10 |
 
 </details>
 
@@ -69,7 +69,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/Team_Stats.md) | November 1-7, 2004 | 3 | Complete |
 | [Week 2](Week_2/Team_Stats.md) | November 8-14, 2004 | 4 | Complete |
-| [Week 3](Week_3/Team_Stats.md) | November 15-21, 2004 | 0 | Not started |
+| [Week 3](Week_3/Team_Stats.md) | November 15-21, 2004 | 4 | Through November 21, 2004 |
 | [Week 4](Week_4/Team_Stats.md) | November 22-30, 2004 | 0 | Not started |
 
 Departures retain their completed Miami appearances. Arrivals enter from their first applicable period. Team wins and losses count games once, not once per player.

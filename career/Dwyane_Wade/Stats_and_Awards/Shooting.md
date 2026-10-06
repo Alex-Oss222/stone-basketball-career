@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-11-15**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-11-21**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -3196,23 +3196,23 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
 
-## 2004-05 · NBA regular season · through 2004-11-15
+## 2004-05 · NBA regular season · through 2004-11-21
 
 [Open this period](player_cards.html?period=regular-2004-05-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 7 | 0 | 7 | 40 / 76 | 52.6% | 8 / 18 | 113 | complete |
+| 11 | 0 | 11 | 68 / 129 | 52.7% | 10 / 23 | 195 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 18 | 28 | 64.3% | 5.14 | 4.00 | 28 |
-| Outside paint, under 12 ft | 0 | 5 | 0.0% | 0.00 | 0.71 | 5 |
-| Outside paint, 12 to under 18 ft | 7 | 12 | 58.3% | 2.00 | 1.71 | 12 |
-| 18 ft to the three-point line | 7 | 13 | 53.8% | 2.00 | 1.86 | 13 |
-| Three-point range | 8 | 18 | 44.4% | 3.43 | 2.57 | 18 |
+| Paint | 37 | 63 | 58.7% | 6.73 | 5.73 | 63 |
+| Outside paint, under 12 ft | 0 | 6 | 0.0% | 0.00 | 0.55 | 6 |
+| Outside paint, 12 to under 18 ft | 9 | 14 | 64.3% | 1.64 | 1.27 | 14 |
+| 18 ft to the three-point line | 12 | 23 | 52.2% | 2.18 | 2.09 | 23 |
+| Three-point range | 10 | 23 | 43.5% | 2.73 | 2.09 | 23 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -3223,6 +3223,10 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-11-11 | Dallas Mavericks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.result.json) |
 | 2004-11-12 | San Antonio Spurs | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.result.json) |
 | 2004-11-14 | Milwaukee Bucks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.result.json) |
+| 2004-11-16 | Minnesota Timberwolves | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.result.json) |
+| 2004-11-17 | Milwaukee Bucks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) |
+| 2004-11-19 | Utah Jazz | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) |
+| 2004-11-21 | Philadelphia 76ers | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) |
 
 ## 2004-11 · NBA regular season
 
@@ -3230,17 +3234,17 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 7 | 0 | 7 | 40 / 76 | 52.6% | 8 / 18 | 113 | complete |
+| 11 | 0 | 11 | 68 / 129 | 52.7% | 10 / 23 | 195 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 18 | 28 | 64.3% | 5.14 | 4.00 | 28 |
-| Outside paint, under 12 ft | 0 | 5 | 0.0% | 0.00 | 0.71 | 5 |
-| Outside paint, 12 to under 18 ft | 7 | 12 | 58.3% | 2.00 | 1.71 | 12 |
-| 18 ft to the three-point line | 7 | 13 | 53.8% | 2.00 | 1.86 | 13 |
-| Three-point range | 8 | 18 | 44.4% | 3.43 | 2.57 | 18 |
+| Paint | 37 | 63 | 58.7% | 6.73 | 5.73 | 63 |
+| Outside paint, under 12 ft | 0 | 6 | 0.0% | 0.00 | 0.55 | 6 |
+| Outside paint, 12 to under 18 ft | 9 | 14 | 64.3% | 1.64 | 1.27 | 14 |
+| 18 ft to the three-point line | 12 | 23 | 52.2% | 2.18 | 2.09 | 23 |
+| Three-point range | 10 | 23 | 43.5% | 2.73 | 2.09 | 23 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -3251,6 +3255,10 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-11-11 | Dallas Mavericks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.result.json) |
 | 2004-11-12 | San Antonio Spurs | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.result.json) |
 | 2004-11-14 | Milwaukee Bucks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.result.json) |
+| 2004-11-16 | Minnesota Timberwolves | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.result.json) |
+| 2004-11-17 | Milwaukee Bucks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) |
+| 2004-11-19 | Utah Jazz | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) |
+| 2004-11-21 | Philadelphia 76ers | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) |
 
 ## 2004-11-01 to 2004-11-07 · NBA regular season
 
@@ -3300,6 +3308,31 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-11-11 | Dallas Mavericks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.result.json) |
 | 2004-11-12 | San Antonio Spurs | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.result.json) |
 | 2004-11-14 | Milwaukee Bucks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.result.json) |
+
+## 2004-11-15 to 2004-11-21 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-week-2004-11-15#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 4 | 0 | 4 | 28 / 53 | 52.8% | 2 / 5 | 82 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 19 | 35 | 54.3% | 9.50 | 8.75 | 35 |
+| Outside paint, under 12 ft | 0 | 1 | 0.0% | 0.00 | 0.25 | 1 |
+| Outside paint, 12 to under 18 ft | 2 | 2 | 100.0% | 1.00 | 0.50 | 2 |
+| 18 ft to the three-point line | 5 | 10 | 50.0% | 2.50 | 2.50 | 10 |
+| Three-point range | 2 | 5 | 40.0% | 1.50 | 1.25 | 5 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-11-16 | Minnesota Timberwolves | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.result.json) |
+| 2004-11-17 | Milwaukee Bucks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) |
+| 2004-11-19 | Utah Jazz | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) |
+| 2004-11-21 | Philadelphia 76ers | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) |
 
 ## 2004-11-03 at New Jersey Nets · Played · NBA regular season
 
@@ -3455,7 +3488,95 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-11-14 | Milwaukee Bucks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.result.json) |
 
-## 2004-05 · NBA preseason · through 2004-11-15
+## 2004-11-16 at Minnesota Timberwolves · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-game-39b07be160262d79#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 10 / 19 | 52.6% | 1 / 2 | 26 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 7 | 12 | 58.3% | 14.00 | 12.00 | 12 |
+| Outside paint, under 12 ft | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| 18 ft to the three-point line | 2 | 4 | 50.0% | 4.00 | 4.00 | 4 |
+| Three-point range | 1 | 2 | 50.0% | 3.00 | 2.00 | 2 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-11-16 | Minnesota Timberwolves | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_1.result.json) |
+
+## 2004-11-17 at Milwaukee Bucks · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-game-34f0c18cb887a7f9#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 6 / 12 | 50.0% | 0 / 1 | 17 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 4 | 9 | 44.4% | 8.00 | 9.00 | 9 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-11-17 | Milwaukee Bucks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) |
+
+## 2004-11-19 vs Utah Jazz · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-game-1781dffd2d1c9d82#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 7 / 10 | 70.0% | 0 / 1 | 18 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 5 | 6 | 83.3% | 10.00 | 6.00 | 6 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| 18 ft to the three-point line | 2 | 3 | 66.7% | 4.00 | 3.00 | 3 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-11-19 | Utah Jazz | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) |
+
+## 2004-11-21 vs Philadelphia 76ers · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-game-d503fcdef4530ea9#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 5 / 12 | 41.7% | 1 / 1 | 21 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 3 | 8 | 37.5% | 6.00 | 8.00 | 8 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
+| Three-point range | 1 | 1 | 100.0% | 3.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-11-21 | Philadelphia 76ers | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) |
+
+## 2004-05 · NBA preseason · through 2004-11-21
 
 [Open this period](player_cards.html?period=preseason-2004-05-season#shooting)
 

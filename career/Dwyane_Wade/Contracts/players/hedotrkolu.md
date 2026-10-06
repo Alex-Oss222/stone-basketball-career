@@ -2,9 +2,9 @@
 
 # Contract | Hedo Türkoğlu
 
-Known through: 2004-11-15. [Open interactive contract](hedotrkolu.html#contract) · [Contract history](hedotrkolu.html#contract-history)
+Known through: 2004-11-21. [Open interactive contract](hedotrkolu.html#contract) · [Contract history](hedotrkolu.html#contract-history)
 
-Hedo Türkoğlu: No verified contract record. Evidence cutoff: 2004-11-15.
+Hedo Türkoğlu: No verified contract record. Evidence cutoff: 2004-11-21.
 
 ## Current contract
 

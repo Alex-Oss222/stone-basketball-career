@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2004-11-15** · Toronto Raptors · #4 · PF · age 20
+Career date: **2004-11-21** · Toronto Raptors · #4 · PF · age 20
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,24 +14,24 @@ Career date: **2004-11-15** · Toronto Raptors · #4 · PF · age 20
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 7/7 | 39.1 | 18.4 | 7.6 | 3.0 | 1.1 | 1.3 | 57.0 | 50.0 | 73.3 | 60.5 | 6-1 |
+| 2004-05 | 20 | Toronto Raptors | 11/11 | 38.6 | 16.2 | 8.3 | 3.0 | 0.9 | 1.2 | 53.4 | 50.0 | 77.3 | 57.2 | 9-2 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 7 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 11 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 39.1 |
-| Points | 20.2 | 18.4 |
-| Rebounds | 11.1 | 7.6 |
+| Minutes | 36.5 | 38.6 |
+| Points | 20.2 | 16.2 |
+| Rebounds | 11.1 | 8.3 |
 | Assists | 3.5 | 3.0 |
-| Steals | 0.9 | 1.1 |
-| Blocks | 1.5 | 1.3 |
-| FG% | 51.4 | 57.0 |
+| Steals | 0.9 | 0.9 |
+| Blocks | 1.5 | 1.2 |
+| FG% | 51.4 | 53.4 |
 | 3P% | 41.2 | 50.0 |
-| FT% | 90.8 | 73.3 |
-| TS% (est.) | 64.0 | 60.5 |
+| FT% | 90.8 | 77.3 |
+| TS% (est.) | 64.0 | 57.2 |
 
 ## Playoffs
 
@@ -42,12 +42,12 @@ No playoff games closed.
 | Stat | High | Game |
 | --- | --- | --- |
 | Points | 27 | 2004-11-03 vs Houston Rockets |
-| Rebounds | 14 | 2004-11-05 vs Detroit Pistons |
+| Rebounds | 16 | 2004-11-19 vs Seattle SuperSonics |
 | Assists | 6 | 2004-11-13 at Portland Trail Blazers |
 | Steals | 3 | 2004-11-03 vs Houston Rockets |
-| Blocks | 3 | 2004-11-09 at Sacramento Kings (+1) |
+| Blocks | 3 | 2004-11-09 at Sacramento Kings (+2) |
 | Threes | 2 | 2004-11-12 at Seattle SuperSonics |
-| Free throws | 3 | 2004-11-03 vs Houston Rockets (+1) |
+| Free throws | 3 | 2004-11-03 vs Houston Rockets (+2) |
 
 ## Awards
 
