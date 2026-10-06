@@ -2,9 +2,9 @@
 
 # Contract | allenma01
 
-Known through: 2004-11-02. [Open interactive contract](allenma.html#contract) · [Contract history](allenma.html#contract-history)
+Known through: 2004-11-07. [Open interactive contract](allenma.html#contract) · [Contract history](allenma.html#contract-history)
 
-allenma01: No verified contract record. Evidence cutoff: 2004-11-02.
+allenma01: No verified contract record. Evidence cutoff: 2004-11-07.
 
 ## Current contract
 

@@ -1,15 +1,15 @@
 # Miami Heat working depth chart
 
-**As of:** 2004-11-02 · **Staff decision in force:** 2004-10-28 (training-camp decision)  
+**As of:** 2004-11-07 · **Staff decision in force:** 2004-10-28 (training-camp decision)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
 | PG | Mike James | Rafer Alston | Maurice Baker |  |
-| SG | Dwyane Wade | Eddie Jones | Kendall Gill | Maurice Evans |
+| SG | Dwyane Wade | Eddie Jones | Kendall Gill | Maurice Evans (injured list) |
 | SF | Caron Butler | Dorell Wright |  |  |
 | PF | Mehmet Okur | Scott Padgett | Udonis Haslem |  |
-| C | Brian Grant | John Thomas | John Edwards |  |
+| C | Brian Grant | John Thomas (injured list) | John Edwards (injured list) |  |
 
 ## Rotation in force
 
@@ -29,9 +29,9 @@
 
 Outside the rotation (dressing as the twelfth man or on the injured list): John Thomas, Maurice Evans, Maurice Baker, John Edwards.
 
-## Injured list on 2004-11-02
+## Injured list on 2004-11-07
 
-Nobody (no list kept yet: the lists start with the game of 2003-11-12). Up to three; at least five games once placed (`runtime/roster_moves.py`).
+John Edwards, John Thomas, Maurice Evans ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 
 ## Not on the active register
 

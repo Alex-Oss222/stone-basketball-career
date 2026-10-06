@@ -2,9 +2,9 @@
 
 # Contract | Anthony Johnson
 
-Known through: 2004-11-02. [Open interactive contract](johnsan02.html#contract) · [Contract history](johnsan02.html#contract-history)
+Known through: 2004-11-07. [Open interactive contract](johnsan02.html#contract) · [Contract history](johnsan02.html#contract-history)
 
-Anthony Johnson: under contract. Evidence cutoff: 2004-11-02.
+Anthony Johnson: under contract. Evidence cutoff: 2004-11-07.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Anthony Johnson |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Utah Jazz |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

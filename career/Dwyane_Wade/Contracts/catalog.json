@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-11-02",
+  "as_of": "2004-11-07",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -57,6 +57,15 @@
       "href": "players/harrial01.html#contract"
     },
     {
+      "player_id": "aljefferson",
+      "name": "Al Jefferson",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "aljefferson-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/aljefferson.html#contract"
+    },
+    {
       "player_id": "hendeal01",
       "name": "Alan Henderson",
       "team": "Atlanta Hawks",
@@ -64,6 +73,15 @@
       "current_contract_id": "hendeal01-existing-ffd1cadebf25",
       "recorded_agreements": 1,
       "href": "players/hendeal01.html#contract"
+    },
+    {
+      "player_id": "aleksandarradojevi",
+      "name": "Aleksandar Radojević",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "aleksandarradojevi-2004-07-22",
+      "recorded_agreements": 1,
+      "href": "players/aleksandarradojevi.html#contract"
     },
     {
       "player_id": "garcial01",
@@ -138,6 +156,42 @@
       "href": "players/stoudam01.html#contract"
     },
     {
+      "player_id": "andersonvarejo",
+      "name": "Anderson Varejão",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "andersonvarejo-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/andersonvarejo.html#contract"
+    },
+    {
+      "player_id": "andrebarrett",
+      "name": "Andre Barrett",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "andrebarrett-2004-07-22",
+      "recorded_agreements": 1,
+      "href": "players/andrebarrett.html#contract"
+    },
+    {
+      "player_id": "andreemmett",
+      "name": "Andre Emmett",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "andreemmett-2004-08-12",
+      "recorded_agreements": 1,
+      "href": "players/andreemmett.html#contract"
+    },
+    {
+      "player_id": "andreiguodala",
+      "name": "Andre Iguodala",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "andreiguodala-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/andreiguodala.html#contract"
+    },
+    {
       "player_id": "millean02",
       "name": "Andre Miller",
       "team": "Denver Nuggets",
@@ -172,6 +226,24 @@
       "current_contract_id": "declean01-2003-07-16",
       "recorded_agreements": 1,
       "href": "players/declean01.html#contract"
+    },
+    {
+      "player_id": "andrisbiedri",
+      "name": "Andris Biedriņš",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "andrisbiedri-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/andrisbiedri.html#contract"
+    },
+    {
+      "player_id": "andrsnocioni",
+      "name": "Andrés Nocioni",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "andrsnocioni-2004-07-15",
+      "recorded_agreements": 1,
+      "href": "players/andrsnocioni.html#contract"
     },
     {
       "player_id": "hardaan01",
@@ -212,7 +284,7 @@
     {
       "player_id": "goldwan01",
       "name": "Anthony Goldwire",
-      "team": "Utah Jazz",
+      "team": "Charlotte Bobcats",
       "status": "under contract",
       "current_contract_id": "goldwan01-2004-08-19",
       "recorded_agreements": 1,
@@ -221,7 +293,7 @@
     {
       "player_id": "johnsan02",
       "name": "Anthony Johnson",
-      "team": "Free agent",
+      "team": "Utah Jazz",
       "status": "under contract",
       "current_contract_id": null,
       "recorded_agreements": 2,
@@ -235,6 +307,15 @@
       "current_contract_id": null,
       "recorded_agreements": 0,
       "href": "players/masonan01.html#contract"
+    },
+    {
+      "player_id": "anthonymiller",
+      "name": "Anthony Miller",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "anthonymiller-2004-07-29",
+      "recorded_agreements": 1,
+      "href": "players/anthonymiller.html#contract"
     },
     {
       "player_id": "peelean01",
@@ -327,6 +408,15 @@
       "href": "players/davisba01.html#contract"
     },
     {
+      "player_id": "bengordon",
+      "name": "Ben Gordon",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "bengordon-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/bengordon.html#contract"
+    },
+    {
       "player_id": "handlbe01",
       "name": "Ben Handlogten",
       "team": "Portland Trail Blazers",
@@ -392,7 +482,7 @@
     {
       "player_id": "surabo01",
       "name": "Bob Sura",
-      "team": "Free agent",
+      "team": "Utah Jazz",
       "status": "released",
       "current_contract_id": null,
       "recorded_agreements": 1,
@@ -451,6 +541,15 @@
       "current_contract_id": "millebr01-2003-07-24",
       "recorded_agreements": 2,
       "href": "players/millebr01.html#contract"
+    },
+    {
+      "player_id": "brandinknight",
+      "name": "Brandin Knight",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "brandinknight-2004-08-26",
+      "recorded_agreements": 1,
+      "href": "players/brandinknight.html#contract"
     },
     {
       "player_id": "armstbr01",
@@ -572,7 +671,7 @@
     {
       "player_id": "sundobr01",
       "name": "Bruno Šundov",
-      "team": "Phoenix Suns",
+      "team": "Dallas Mavericks",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -599,7 +698,7 @@
     {
       "player_id": "cheanca01",
       "name": "Calbert Cheaney",
-      "team": "Free agent",
+      "team": "Phoenix Suns",
       "status": "released",
       "current_contract_id": null,
       "recorded_agreements": 3,
@@ -761,7 +860,7 @@
     {
       "player_id": "mihmch01",
       "name": "Chris Mihm",
-      "team": "Free agent",
+      "team": "Phoenix Suns",
       "status": "released",
       "current_contract_id": null,
       "recorded_agreements": 2,
@@ -885,6 +984,24 @@
       "href": "players/willico02.html#contract"
     },
     {
+      "player_id": "corsleyedwards",
+      "name": "Corsley Edwards",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "corsleyedwards-2004-07-15",
+      "recorded_agreements": 1,
+      "href": "players/corsleyedwards.html#contract"
+    },
+    {
+      "player_id": "coryalexander",
+      "name": "Cory Alexander",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "coryalexander-2004-07-15",
+      "recorded_agreements": 1,
+      "href": "players/coryalexander.html#contract"
+    },
+    {
       "player_id": "alexaco02",
       "name": "Courtney Alexander",
       "team": "Free agent",
@@ -910,6 +1027,15 @@
       "current_contract_id": "moblecu01-2000-08-02",
       "recorded_agreements": 1,
       "href": "players/moblecu01.html#contract"
+    },
+    {
+      "player_id": "djmbenga",
+      "name": "D.J. Mbenga",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "djmbenga-2004-07-14",
+      "recorded_agreements": 1,
+      "href": "players/djmbenga.html#contract"
     },
     {
       "player_id": "jonesda02",
@@ -1110,6 +1236,15 @@
       "href": "players/hamda01.html#contract"
     },
     {
+      "player_id": "davidharrison",
+      "name": "David Harrison",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "davidharrison-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/davidharrison.html#contract"
+    },
+    {
       "player_id": "robinda01",
       "name": "David Robinson",
       "team": "Free agent",
@@ -1254,6 +1389,15 @@
       "href": "players/brownde02.html#contract"
     },
     {
+      "player_id": "devinharris",
+      "name": "Devin Harris",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "devinharris-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/devinharris.html#contract"
+    },
+    {
       "player_id": "mutomdi01",
       "name": "Dikembe Mutombo",
       "team": "New York Knicks",
@@ -1299,6 +1443,15 @@
       "href": "players/harvedo01.html#contract"
     },
     {
+      "player_id": "dontasmith",
+      "name": "Donta Smith",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "dontasmith-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/dontasmith.html#contract"
+    },
+    {
       "player_id": "marshdo01",
       "name": "Donyell Marshall",
       "team": "Toronto Raptors",
@@ -1342,6 +1495,15 @@
       "current_contract_id": "goodedr01-2002-07-02",
       "recorded_agreements": 1,
       "href": "players/goodedr01.html#contract"
+    },
+    {
+      "player_id": "howardw01",
+      "name": "Dwight Howard",
+      "team": "Orlando Magic",
+      "status": "under contract",
+      "current_contract_id": "howardw01-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/howardw01.html#contract"
     },
     {
       "player_id": "wadedw01",
@@ -1470,6 +1632,15 @@
       "href": "players/brandel01.html#contract"
     },
     {
+      "player_id": "emekaokafor",
+      "name": "Emeka Okafor",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "emekaokafor-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/emekaokafor.html#contract"
+    },
+    {
       "player_id": "piatker01",
       "name": "Eric Piatkowski",
       "team": "Houston Rockets",
@@ -1513,6 +1684,15 @@
       "current_contract_id": "stricer01-2003-07-17",
       "recorded_agreements": 2,
       "href": "players/stricer01.html#contract"
+    },
+    {
+      "player_id": "erikdaniels",
+      "name": "Erik Daniels",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "erikdaniels-2004-07-14",
+      "recorded_agreements": 1,
+      "href": "players/erikdaniels.html#contract"
     },
     {
       "player_id": "johnser02",
@@ -1596,6 +1776,15 @@
       "href": "players/trentga01.html#contract"
     },
     {
+      "player_id": "carlige01",
+      "name": "Geno Carlisle",
+      "team": "Portland Trail Blazers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/carlige01.html#contract"
+    },
+    {
       "player_id": "lynchge01",
       "name": "George Lynch",
       "team": "New Orleans Hornets",
@@ -1659,6 +1848,15 @@
       "href": "players/gordangiriek.html#contract"
     },
     {
+      "player_id": "hillgr01",
+      "name": "Grant Hill",
+      "team": "Orlando Magic",
+      "status": "under contract",
+      "current_contract_id": "hillgr01-existing-6434280dd7b3",
+      "recorded_agreements": 1,
+      "href": "players/hillgr01.html#contract"
+    },
+    {
       "player_id": "longgr01",
       "name": "Grant Long",
       "team": "Free agent",
@@ -1686,6 +1884,15 @@
       "href": "players/ostergr01.html#contract"
     },
     {
+      "player_id": "haseungjin",
+      "name": "Ha Seung-Jin",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "haseungjin-2004-07-29",
+      "recorded_agreements": 1,
+      "href": "players/haseungjin.html#contract"
+    },
+    {
       "player_id": "turkohe01",
       "name": "Hedo Turkoglu",
       "team": "Toronto Raptors",
@@ -1693,6 +1900,15 @@
       "current_contract_id": "turkohe01-2004-09-16",
       "recorded_agreements": 2,
       "href": "players/turkohe01.html#contract"
+    },
+    {
+      "player_id": "hedotrkolu",
+      "name": "Hedo Türkoğlu",
+      "team": "Free agent",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/hedotrkolu.html#contract"
     },
     {
       "player_id": "fullehi01",
@@ -1706,11 +1922,20 @@
     {
       "player_id": "grantho01",
       "name": "Horace Grant",
-      "team": "Free agent",
+      "team": "Phoenix Suns",
       "status": "under contract",
       "current_contract_id": "grantho01-2003-07-29",
       "recorded_agreements": 1,
       "href": "players/grantho01.html#contract"
+    },
+    {
+      "player_id": "horacejenkins",
+      "name": "Horace Jenkins",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "horacejenkins-2004-08-26",
+      "recorded_agreements": 1,
+      "href": "players/horacejenkins.html#contract"
     },
     {
       "player_id": "eisleho01",
@@ -1729,6 +1954,15 @@
       "current_contract_id": "davishu01-existing-eae9f0863835",
       "recorded_agreements": 1,
       "href": "players/davishu01.html#contract"
+    },
+    {
+      "player_id": "ibokutluay",
+      "name": "Ibo Kutluay",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "ibokutluay-2004-08-26",
+      "recorded_agreements": 1,
+      "href": "players/ibokutluay.html#contract"
     },
     {
       "player_id": "udokaim01",
@@ -1758,6 +1992,15 @@
       "href": "players/bremejr01.html#contract"
     },
     {
+      "player_id": "jrsmith",
+      "name": "J.R. Smith",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "jrsmith-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/jrsmith.html#contract"
+    },
+    {
       "player_id": "smithja01",
       "name": "Jabari Smith",
       "team": "Free agent",
@@ -1765,6 +2008,24 @@
       "current_contract_id": null,
       "recorded_agreements": 0,
       "href": "players/smithja01.html#contract"
+    },
+    {
+      "player_id": "jackiebutler",
+      "name": "Jackie Butler",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "jackiebutler-2004-07-22",
+      "recorded_agreements": 1,
+      "href": "players/jackiebutler.html#contract"
+    },
+    {
+      "player_id": "jacksonvroman",
+      "name": "Jackson Vroman",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "jacksonvroman-2004-08-05",
+      "recorded_agreements": 1,
+      "href": "players/jacksonvroman.html#contract"
     },
     {
       "player_id": "vaughja01",
@@ -1855,6 +2116,15 @@
       "current_contract_id": "sampsja01-2002-09-17",
       "recorded_agreements": 1,
       "href": "players/sampsja01.html#contract"
+    },
+    {
+      "player_id": "jameernelson",
+      "name": "Jameer Nelson",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "jameernelson-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/jameernelson.html#contract"
     },
     {
       "player_id": "jonesja02",
@@ -2075,7 +2345,7 @@
     {
       "player_id": "jacksje01",
       "name": "Jermaine Jackson",
-      "team": "Utah Jazz",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "jacksje01-2004-08-19",
       "recorded_agreements": 2,
@@ -2271,6 +2541,15 @@
       "href": "players/fortejo01.html#contract"
     },
     {
+      "player_id": "joshchildress",
+      "name": "Josh Childress",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "joshchildress-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/joshchildress.html#contract"
+    },
+    {
       "player_id": "davisjo02",
       "name": "Josh Davis",
       "team": "Sacramento Kings",
@@ -2287,6 +2566,15 @@
       "current_contract_id": null,
       "recorded_agreements": 0,
       "href": "players/howarjo01.html#contract"
+    },
+    {
+      "player_id": "joshsmith",
+      "name": "Josh Smith",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "joshsmith-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/joshsmith.html#contract"
     },
     {
       "player_id": "dixonju01",
@@ -2318,7 +2606,7 @@
     {
       "player_id": "harriju01",
       "name": "Junior Harrington",
-      "team": "Dallas Mavericks",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "harriju01-2004-07-14",
       "recorded_agreements": 1,
@@ -2471,7 +2759,7 @@
     {
       "player_id": "clarkke01",
       "name": "Keon Clark",
-      "team": "Free agent",
+      "team": "Dallas Mavericks",
       "status": "voided",
       "current_contract_id": null,
       "recorded_agreements": 2,
@@ -2496,6 +2784,15 @@
       "href": "players/garneke01.html#contract"
     },
     {
+      "player_id": "kevinmartin",
+      "name": "Kevin Martin",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "kevinmartin-2004-09-02",
+      "recorded_agreements": 1,
+      "href": "players/kevinmartin.html#contract"
+    },
+    {
       "player_id": "ollieke01",
       "name": "Kevin Ollie",
       "team": "Cleveland Cavaliers",
@@ -2516,7 +2813,7 @@
     {
       "player_id": "doolike01",
       "name": "Keyon Dooling",
-      "team": "Free agent",
+      "team": "Atlanta Hawks",
       "status": "under rookie contract",
       "current_contract_id": "doolike01-2000-08-08",
       "recorded_agreements": 1,
@@ -2530,6 +2827,15 @@
       "current_contract_id": null,
       "recorded_agreements": 0,
       "href": "players/hinriki01.html#contract"
+    },
+    {
+      "player_id": "kirksnyder",
+      "name": "Kirk Snyder",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "kirksnyder-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/kirksnyder.html#contract"
     },
     {
       "player_id": "bryanko01",
@@ -2703,6 +3009,15 @@
       "href": "players/johnsli01.html#contract"
     },
     {
+      "player_id": "lionelchalmers",
+      "name": "Lionel Chalmers",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "lionelchalmers-2004-07-29",
+      "recorded_agreements": 1,
+      "href": "players/lionelchalmers.html#contract"
+    },
+    {
       "player_id": "baxtelo01",
       "name": "Lonny Baxter",
       "team": "Toronto Raptors",
@@ -2739,6 +3054,24 @@
       "href": "players/harrilu01.html#contract"
     },
     {
+      "player_id": "luisflores",
+      "name": "Luis Flores",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "luisflores-2004-08-26",
+      "recorded_agreements": 1,
+      "href": "players/luisflores.html#contract"
+    },
+    {
+      "player_id": "lukejackson",
+      "name": "Luke Jackson",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "lukejackson-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/lukejackson.html#contract"
+    },
+    {
       "player_id": "ridnolu01",
       "name": "Luke Ridnour",
       "team": "Charlotte Bobcats",
@@ -2757,6 +3090,15 @@
       "href": "players/waltolu01.html#contract"
     },
     {
+      "player_id": "luoldeng",
+      "name": "Luol Deng",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "luoldeng-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/luoldeng.html#contract"
+    },
+    {
       "player_id": "bastoma01",
       "name": "Maceo Baston",
       "team": "Free agent",
@@ -2768,7 +3110,7 @@
     {
       "player_id": "lampema01",
       "name": "Maciej Lampe",
-      "team": "Phoenix Suns",
+      "team": "Atlanta Hawks",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2872,6 +3214,15 @@
       "current_contract_id": null,
       "recorded_agreements": 0,
       "href": "players/austima01.html#contract"
+    },
+    {
+      "player_id": "kasunma01",
+      "name": "Mario Kasun",
+      "team": "Orlando Magic",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/kasunma01.html#contract"
     },
     {
       "player_id": "blounma01",
@@ -2980,6 +3331,15 @@
       "current_contract_id": null,
       "recorded_agreements": 0,
       "href": "players/carroma01.html#contract"
+    },
+    {
+      "player_id": "mattfreije",
+      "name": "Matt Freije",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "mattfreije-2004-07-14",
+      "recorded_agreements": 1,
+      "href": "players/mattfreije.html#contract"
     },
     {
       "player_id": "harprma01",
@@ -3297,6 +3657,15 @@
       "href": "players/sinanne01.html#contract"
     },
     {
+      "player_id": "nenadkrsti",
+      "name": "Nenad Krstić",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "nenadkrsti-2004-07-22",
+      "recorded_agreements": 1,
+      "href": "players/nenadkrsti.html#contract"
+    },
+    {
       "player_id": "hilarne01",
       "name": "Nene",
       "team": "Denver Nuggets",
@@ -3331,6 +3700,15 @@
       "current_contract_id": "tskitni01-existing-74fa35613b56",
       "recorded_agreements": 1,
       "href": "players/tskitni01.html#contract"
+    },
+    {
+      "player_id": "obinnaekezie",
+      "name": "Obinna Ekezie",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "obinnaekezie-2004-07-14",
+      "recorded_agreements": 1,
+      "href": "players/obinnaekezie.html#contract"
     },
     {
       "player_id": "polynol01",
@@ -3387,6 +3765,15 @@
       "href": "players/morlepa01.html#contract"
     },
     {
+      "player_id": "papesow",
+      "name": "Pape Sow",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "papesow-2004-07-29",
+      "recorded_agreements": 1,
+      "href": "players/papesow.html#contract"
+    },
+    {
       "player_id": "burkepa01",
       "name": "Pat Burke",
       "team": "Free agent",
@@ -3441,6 +3828,15 @@
       "href": "players/shirlpa01.html#contract"
     },
     {
+      "player_id": "pavelpodkolzin",
+      "name": "Pavel Podkolzin",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "pavelpodkolzin-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/pavelpodkolzin.html#contract"
+    },
+    {
       "player_id": "stojape01",
       "name": "Peja Stojakovic",
       "team": "Sacramento Kings",
@@ -3448,6 +3844,15 @@
       "current_contract_id": "stojape01-2000-08-16",
       "recorded_agreements": 1,
       "href": "players/stojape01.html#contract"
+    },
+    {
+      "player_id": "peterjohnramos",
+      "name": "Peter John Ramos",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "peterjohnramos-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/peterjohnramos.html#contract"
     },
     {
       "player_id": "jonespo01",
@@ -3677,7 +4082,7 @@
     {
       "player_id": "brunsri01",
       "name": "Rick Brunson",
-      "team": "Charlotte Bobcats",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "brunsri01-2003-08-13",
       "recorded_agreements": 2,
@@ -3738,6 +4143,15 @@
       "href": "players/packro01.html#contract"
     },
     {
+      "player_id": "robertswift",
+      "name": "Robert Swift",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "robertswift-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/robertswift.html#contract"
+    },
+    {
       "player_id": "traylro01",
       "name": "Robert Traylor",
       "team": "Los Angeles Clippers",
@@ -3767,7 +4181,7 @@
     {
       "player_id": "rogerro01",
       "name": "Rodney Rogers",
-      "team": "Free agent",
+      "team": "Utah Jazz",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3918,6 +4332,15 @@
       "href": "players/pavloal01.html#contract"
     },
     {
+      "player_id": "sashapavlovi",
+      "name": "Sasha Pavlović",
+      "team": "Free agent",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/sashapavlovi.html#contract"
+    },
+    {
       "player_id": "sashavujai",
       "name": "Sasha Vujačić",
       "team": "Free agent",
@@ -4051,6 +4474,15 @@
       "current_contract_id": "abdursh01-existing-02158f91187a",
       "recorded_agreements": 1,
       "href": "players/abdursh01.html#contract"
+    },
+    {
+      "player_id": "shaunlivingston",
+      "name": "Shaun Livingston",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "shaunlivingston-2004-07-01",
+      "recorded_agreements": 1,
+      "href": "players/shaunlivingston.html#contract"
     },
     {
       "player_id": "bradlsh01",
@@ -4368,6 +4800,24 @@
       "href": "players/kukocto01.html#contract"
     },
     {
+      "player_id": "tonikuko",
+      "name": "Toni Kukoč",
+      "team": "Free agent",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/tonikuko.html#contract"
+    },
+    {
+      "player_id": "tonyallen",
+      "name": "Tony Allen",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "tonyallen-2004-07-15",
+      "recorded_agreements": 1,
+      "href": "players/tonyallen.html#contract"
+    },
+    {
       "player_id": "battito01",
       "name": "Tony Battie",
       "team": "Boston Celtics",
@@ -4375,6 +4825,15 @@
       "current_contract_id": "battito01-1999-10-15",
       "recorded_agreements": 1,
       "href": "players/battito01.html#contract"
+    },
+    {
+      "player_id": "tonybobbitt",
+      "name": "Tony Bobbitt",
+      "team": "Free agent",
+      "status": "under contract",
+      "current_contract_id": "tonybobbitt-2004-07-22",
+      "recorded_agreements": 1,
+      "href": "players/tonybobbitt.html#contract"
     },
     {
       "player_id": "delkto01",
@@ -4496,7 +4955,7 @@
     {
       "player_id": "belltr01",
       "name": "Troy Bell",
-      "team": "Free agent",
+      "team": "Charlotte Bobcats",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4523,7 +4982,7 @@
     {
       "player_id": "hillty01",
       "name": "Tyrone Hill",
-      "team": "Free agent",
+      "team": "Atlanta Hawks",
       "status": "released",
       "current_contract_id": null,
       "recorded_agreements": 2,
@@ -4667,7 +5126,7 @@
     {
       "player_id": "zhizhwa01",
       "name": "Wang Zhizhi",
-      "team": "Utah Jazz",
+      "team": "Atlanta Hawks",
       "status": "under contract",
       "current_contract_id": "zhizhwa01-2004-07-14",
       "recorded_agreements": 1,
@@ -4721,7 +5180,7 @@
     {
       "player_id": "cabarza01",
       "name": "Zarko Cabarkapa",
-      "team": "Phoenix Suns",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4762,6 +5221,15 @@
       "current_contract_id": null,
       "recorded_agreements": 0,
       "href": "players/planizo01.html#contract"
+    },
+    {
+      "player_id": "zoranplanini",
+      "name": "Zoran Planinić",
+      "team": "Free agent",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/zoranplanini.html#contract"
     },
     {
       "player_id": "ilgauzy01",

@@ -2,9 +2,9 @@
 
 # Contract | Chris Mihm
 
-Known through: 2004-11-02. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
+Known through: 2004-11-07. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
 
-Chris Mihm: released. Evidence cutoff: 2004-11-02.
+Chris Mihm: released. Evidence cutoff: 2004-11-07.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Chris Mihm |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Phoenix Suns |
 | Control status | released |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

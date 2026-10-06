@@ -2,9 +2,9 @@
 
 # Contract | Wang Zhizhi
 
-Known through: 2004-11-02. [Open interactive contract](zhizhwa01.html#contract) · [Contract history](zhizhwa01.html#contract-history)
+Known through: 2004-11-07. [Open interactive contract](zhizhwa01.html#contract) · [Contract history](zhizhwa01.html#contract-history)
 
-Wang Zhizhi: under contract. Evidence cutoff: 2004-11-02.
+Wang Zhizhi: under contract. Evidence cutoff: 2004-11-07.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Wang Zhizhi |
-| Club / rights baseline | Utah Jazz |
+| Club / rights baseline | Atlanta Hawks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

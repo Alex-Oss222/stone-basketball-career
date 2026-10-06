@@ -2,9 +2,9 @@
 
 # Contract | Zarko Cabarkapa
 
-Known through: 2004-11-02. [Open interactive contract](cabarza01.html#contract) · [Contract history](cabarza01.html#contract-history)
+Known through: 2004-11-07. [Open interactive contract](cabarza01.html#contract) · [Contract history](cabarza01.html#contract-history)
 
-Zarko Cabarkapa: No verified contract record. Evidence cutoff: 2004-11-02.
+Zarko Cabarkapa: No verified contract record. Evidence cutoff: 2004-11-07.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Zarko Cabarkapa |
-| Club / rights baseline | Phoenix Suns |
+| Club / rights baseline | Free agent |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

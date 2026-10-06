@@ -2,9 +2,9 @@
 
 # Contract | Keon Clark
 
-Known through: 2004-11-02. [Open interactive contract](clarkke01.html#contract) · [Contract history](clarkke01.html#contract-history)
+Known through: 2004-11-07. [Open interactive contract](clarkke01.html#contract) · [Contract history](clarkke01.html#contract-history)
 
-Keon Clark: voided. Evidence cutoff: 2004-11-02.
+Keon Clark: voided. Evidence cutoff: 2004-11-07.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Keon Clark |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Dallas Mavericks |
 | Control status | voided |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

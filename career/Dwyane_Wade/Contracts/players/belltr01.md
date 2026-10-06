@@ -2,9 +2,9 @@
 
 # Contract | Troy Bell
 
-Known through: 2004-11-02. [Open interactive contract](belltr01.html#contract) · [Contract history](belltr01.html#contract-history)
+Known through: 2004-11-07. [Open interactive contract](belltr01.html#contract) · [Contract history](belltr01.html#contract-history)
 
-Troy Bell: No verified contract record. Evidence cutoff: 2004-11-02.
+Troy Bell: No verified contract record. Evidence cutoff: 2004-11-07.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Troy Bell |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Charlotte Bobcats |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

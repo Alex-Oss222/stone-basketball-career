@@ -2,9 +2,9 @@
 
 # Contract | Maciej Lampe
 
-Known through: 2004-11-02. [Open interactive contract](lampema01.html#contract) · [Contract history](lampema01.html#contract-history)
+Known through: 2004-11-07. [Open interactive contract](lampema01.html#contract) · [Contract history](lampema01.html#contract-history)
 
-Maciej Lampe: No verified contract record. Evidence cutoff: 2004-11-02.
+Maciej Lampe: No verified contract record. Evidence cutoff: 2004-11-07.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Maciej Lampe |
-| Club / rights baseline | Phoenix Suns |
+| Club / rights baseline | Atlanta Hawks |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

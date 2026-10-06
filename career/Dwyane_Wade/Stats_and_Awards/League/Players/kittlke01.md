@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `kittlke01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-11-02 · **Club on this date:** New Jersey Nets · **Basis:** New Jersey Nets: the 2004-05 opening rosters and the league's dated moves (runtime/league_moves.py) · **League:** NBA  
+**Card date:** 2004-11-07 · **Club on this date:** New Jersey Nets · **Basis:** New Jersey Nets: the 2004-05 opening rosters and the league's dated moves (runtime/league_moves.py) · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #30 · **Born:** 1974-06-12 · **Age on card date:** 30  
 **Registry ID:** `kittlke01` · [Basketball-Reference page](https://www.basketball-reference.com/players/k/kittlke01.html) · ESPN ID 437
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `kittlk
 
 ## Simulated statistics
 
-As of **2004-11-02**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-11-07**: 3 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -87,6 +87,10 @@ As of **2004-11-02**: 0 closed games feed this card. Per-game columns use the re
 
 Aggregated with `runtime/shot_chart.py` over closed results of the 2004-05 regular season. Coverage: **complete**; 0 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
+### Tracked games only
+
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 3 of 3 closed games; 0 tracked appearances form the denominator below (2004-11-03 to 2004-11-06).
+
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
 | Paint | 0 | 0 | N/A | N/A | N/A |
@@ -100,7 +104,7 @@ Aggregated with `runtime/shot_chart.py` over closed results of the 2004-05 regul
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated and has not started. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 3 closed regular-season games through 2004-11-07. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -119,7 +123,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2004-11-02, from closed award decisions (1 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2004-11-07, from closed award decisions (1 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
