@@ -467,12 +467,97 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 6.38 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-06-claim-lampema01",
+   "date": "2004-11-06",
+   "kind": "claim",
+   "player": "Maciej Lampe",
+   "bbr_id": "lampema01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Maciej Lampe",
+    "bbr_id": "lampema01",
+    "position": "C",
+    "games": 37,
+    "minutes": 380
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Phoenix Suns (worst record first)",
+   "waiver": "2004-05-market-2004-11-04-waive-lampema01"
+  },
+  {
+   "id": "2004-05-market-2004-11-06-claim-zhizhwa01",
+   "date": "2004-11-06",
+   "kind": "claim",
+   "player": "Wang Zhizhi",
+   "bbr_id": "zhizhwa01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Wang Zhizhi",
+    "bbr_id": "zhizhwa01",
+    "position": "C",
+    "games": 16,
+    "minutes": 114
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Utah Jazz (worst record first)",
+   "waiver": "2004-05-market-2004-11-04-waive-zhizhwa01"
+  },
+  {
+   "id": "2004-05-market-2004-11-06-waive-bobbito01",
+   "date": "2004-11-06",
+   "kind": "waive",
+   "player": "Tony Bobbitt",
+   "bbr_id": "bobbito01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Tony Bobbitt",
+    "bbr_id": "bobbito01",
+    "position": "SG",
+    "games": 2,
+    "minutes": 12
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-08"
+  },
+  {
+   "id": "2004-05-market-2004-11-06-rest_of_season-hillty01",
+   "date": "2004-11-06",
+   "kind": "rest_of_season",
+   "player": "Tyrone Hill",
+   "bbr_id": "hillty01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Tyrone Hill",
+    "bbr_id": "hillty01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.0 x fit"
   }
  ],
  "market_days": [
   "2004-11-02",
   "2004-11-03",
   "2004-11-04",
-  "2004-11-05"
+  "2004-11-05",
+  "2004-11-06"
  ]
 }
