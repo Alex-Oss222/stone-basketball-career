@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-02-03. [Search the contract directory](index.html)
+Known through 2005-02-06. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -254,7 +254,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jason Caffey](players/caffeja01.md) | Free agent | under contract | Jason Caffey · existing contract; signing date not recorded | 1 |
 | [Jason Collier](players/collija02.md) | Utah Jazz | under contract | Jason Collier · 2004-09-16 | 2 |
 | [Jason Collins](players/collija04.md) | New Jersey Nets | under rookie contract | Jason Collins · 2001-07-13 | 1 |
-| [Jason Hart](players/hartja01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
+| [Jason Hart](players/hartja01.md) | Detroit Pistons | No verified contract record | No verified current agreement | 0 |
 | [Jason Kapono](players/kaponja01.md) | Charlotte Bobcats | No verified contract record | No verified current agreement | 0 |
 | [Jason Kidd](players/kiddja01.md) | New Jersey Nets | under contract | Jason Kidd · 2003-07-16 | 2 |
 | [Jason Richardson](players/richaja01.md) | Golden State Warriors | under rookie contract | Jason Richardson · 2001-08-24 | 1 |
@@ -479,7 +479,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Ruben Boumtje-Boumtje](players/boumtru01.md) | Free agent | under contract | Ruben Boumtje-Boumtje · 2002-09-30 | 1 |
 | [Ruben Patterson](players/patteru01.md) | Portland Trail Blazers | under contract | Ruben Patterson · existing contract; signing date not recorded | 1 |
 | [Rusty LaRue](players/larueru01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
-| [Ryan Bowen](players/bowenry01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
+| [Ryan Bowen](players/bowenry01.md) | Chicago Bulls | under contract unverified | No verified current agreement | 0 |
 | [Ryan Humphrey](players/humphry01.md) | Memphis Grizzlies | under rookie contract | Ryan Humphrey · existing contract; signing date not recorded | 1 |
 | [Sam Cassell](players/cassesa01.md) | Minnesota Timberwolves | under contract unverified | No verified current agreement | 0 |
 | [Samaki Walker](players/walkesa01.md) | New Orleans Hornets | under contract | Samaki Walker · 2004-09-02 | 2 |
@@ -510,7 +510,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Smush Parker](players/parkesm01.md) | Indiana Pacers | under contract | Smush Parker · 2004-09-30 | 2 |
 | [Sofoklis Schortsanitis](players/schorso01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Speedy Claxton](players/claxtsp01.md) | Golden State Warriors | under contract | Speedy Claxton · 2003-07-23 | 2 |
-| [Stacey Augmon](players/augmost01.md) | Free agent | under contract | Stacey Augmon · existing contract; signing date not recorded | 1 |
+| [Stacey Augmon](players/augmost01.md) | New Jersey Nets | under contract | Stacey Augmon · existing contract; signing date not recorded | 1 |
 | [Stephen Jackson](players/jacksst02.md) | Atlanta Hawks | released | No verified current agreement | 4 |
 | [Stephon Marbury](players/marbust01.md) | Phoenix Suns | under contract | Stephon Marbury · existing contract; signing date not recorded | 1 |
 | [Steve Blake](players/blakest01.md) | Charlotte Bobcats | No verified contract record | No verified current agreement | 0 |

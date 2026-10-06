@@ -2,9 +2,9 @@
 
 # Contract | Ryan Bowen
 
-Known through: 2005-02-03. [Open interactive contract](bowenry01.html#contract) · [Contract history](bowenry01.html#contract-history)
+Known through: 2005-02-06. [Open interactive contract](bowenry01.html#contract) · [Contract history](bowenry01.html#contract-history)
 
-Ryan Bowen: under contract unverified. Evidence cutoff: 2005-02-03.
+Ryan Bowen: under contract unverified. Evidence cutoff: 2005-02-06.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ryan Bowen |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Chicago Bulls |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

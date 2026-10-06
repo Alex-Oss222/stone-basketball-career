@@ -2,9 +2,9 @@
 
 # Contract | Chris Whitney
 
-Known through: 2005-02-03. [Open interactive contract](whitnch01.html#contract) · [Contract history](whitnch01.html#contract-history)
+Known through: 2005-02-06. [Open interactive contract](whitnch01.html#contract) · [Contract history](whitnch01.html#contract-history)
 
-Chris Whitney: under contract. Evidence cutoff: 2005-02-03.
+Chris Whitney: under contract. Evidence cutoff: 2005-02-06.
 
 ## Current contract
 

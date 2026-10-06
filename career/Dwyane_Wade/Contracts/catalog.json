@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-02-03",
+  "as_of": "2005-02-06",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2219,7 +2219,7 @@
     {
       "player_id": "hartja01",
       "name": "Jason Hart",
-      "team": "Free agent",
+      "team": "Detroit Pistons",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4244,7 +4244,7 @@
     {
       "player_id": "bowenry01",
       "name": "Ryan Bowen",
-      "team": "Free agent",
+      "team": "Chicago Bulls",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4523,7 +4523,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Free agent",
+      "team": "New Jersey Nets",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,

@@ -115,7 +115,7 @@
   {
    "player": "Shandon Anderson",
    "bbr_id": "andersh01",
-   "club": "Denver Nuggets",
+   "club": "New York Knicks",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -350,7 +350,7 @@
   {
    "player": "Tony Battie",
    "bbr_id": "battito01",
-   "club": "New York Knicks",
+   "club": "Denver Nuggets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -1959,14 +1959,15 @@
   {
    "player": "Anfernee Hardaway",
    "bbr_id": "hardaan01",
-   "club": "Denver Nuggets",
+   "club": "New York Knicks",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 14625000,
     "2005-06": 15750000
    },
-   "source": "library/2003/league/nba_2003_contracts.json; traded 2004-07-22"
+   "source": "library/2003/league/nba_2003_contracts.json; traded 2004-07-22",
+   "signed_club": "Denver Nuggets"
   },
   {
    "player": "Matt Harpring",
@@ -2221,14 +2222,15 @@
   {
    "player": "Allan Houston",
    "bbr_id": "houstal01",
-   "club": "New York Knicks",
+   "club": "Denver Nuggets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 17531250,
     "2005-06": 19125000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "New York Knicks"
   },
   {
    "player": "Dwight Howard",
@@ -2692,7 +2694,7 @@
   {
    "player": "Fred Jones",
    "bbr_id": "jonesfr01",
-   "club": "Utah Jazz",
+   "club": "Houston Rockets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -3468,7 +3470,7 @@
   {
    "player": "Bostjan Nachbar",
    "bbr_id": "nachbbo01",
-   "club": "Houston Rockets",
+   "club": "Utah Jazz",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -3479,7 +3481,8 @@
    "rookie_scale": true,
    "option_history": [
     "2005-06 team option: decline (2004-10-31; engine draw; runtime/options.py, League/option_decisions.json)"
-   ]
+   ],
+   "signed_club": "Houston Rockets"
   },
   {
    "player": "Eduardo Najera",
@@ -4229,7 +4232,7 @@
   {
    "player": "Glenn Robinson",
    "bbr_id": "robingl01",
-   "club": "Houston Rockets",
+   "club": "Utah Jazz",
    "route": "existing",
    "kind": "existing",
    "schedule": {
