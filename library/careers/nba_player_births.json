@@ -1,0 +1,705 @@
+{
+  "schema_version": 1,
+  "kind": "player_birth_dates",
+  "use": "Identity only: birth dates for league registry players no other library file dates (read by runtime/write_back.identity_sources).",
+  "researched_on": "2026-10-06",
+  "players": {
+    "alexaco01": {
+      "name": "Cory Alexander",
+      "birth_date": "1973-06-22",
+      "source": "https://www.basketball-reference.com/players/a/alexaco01.html",
+      "status": "sourced"
+    },
+    "armstbr01": {
+      "name": "Brandon Armstrong",
+      "birth_date": "1980-06-16",
+      "source": "https://www.basketball-reference.com/players/a/armstbr01.html",
+      "status": "sourced"
+    },
+    "bakerma01": {
+      "name": "Maurice Baker",
+      "birth_date": "1979-07-28",
+      "source": "https://www.basketball-reference.com/players/b/bakerma01.html",
+      "status": "sourced"
+    },
+    "bakervi01": {
+      "name": "Vin Baker",
+      "birth_date": "1971-11-23",
+      "source": "https://www.basketball-reference.com/players/b/bakervi01.html",
+      "status": "sourced"
+    },
+    "barnema02": {
+      "name": "Matt Barnes",
+      "birth_date": "1980-03-09",
+      "source": "https://www.basketball-reference.com/players/b/barnema02.html",
+      "status": "sourced"
+    },
+    "barrean01": {
+      "name": "Andre Barrett",
+      "birth_date": "1982-02-21",
+      "source": "https://www.basketball-reference.com/players/b/barrean01.html",
+      "status": "sourced"
+    },
+    "barroda01": {
+      "name": "Dana Barros",
+      "birth_date": "1967-04-13",
+      "source": "https://www.basketball-reference.com/players/b/barroda01.html",
+      "status": "sourced"
+    },
+    "bateeme01": {
+      "name": "Mengke Bateer",
+      "birth_date": "1975-11-20",
+      "source": "https://www.basketball-reference.com/players/b/bateeme01.html",
+      "status": "sourced"
+    },
+    "bobbito01": {
+      "name": "Tony Bobbitt",
+      "birth_date": "1979-10-22",
+      "source": "https://www.basketball-reference.com/players/b/bobbito01.html",
+      "status": "sourced"
+    },
+    "borchcu01": {
+      "name": "Curtis Borchardt",
+      "birth_date": "1980-09-13",
+      "source": "https://www.basketball-reference.com/players/b/borchcu01.html",
+      "status": "sourced"
+    },
+    "boumtru01": {
+      "name": "Ruben Boumtje-Boumtje",
+      "birth_date": "1978-05-20",
+      "source": "https://www.basketball-reference.com/players/b/boumtru01.html",
+      "status": "sourced"
+    },
+    "bowenry01": {
+      "name": "Ryan Bowen",
+      "birth_date": "1975-11-20",
+      "source": "https://www.basketball-reference.com/players/b/bowenry01.html",
+      "status": "sourced"
+    },
+    "braggto01": {
+      "name": "Torraye Braggs",
+      "birth_date": "1976-05-15",
+      "source": "https://www.basketball-reference.com/players/b/braggto01.html",
+      "status": "sourced"
+    },
+    "breweja01": {
+      "name": "Jamison Brewer",
+      "birth_date": "1980-11-19",
+      "source": "https://www.basketball-reference.com/players/b/breweja01.html",
+      "status": "sourced"
+    },
+    "brezepr01": {
+      "name": "Primož Brezec",
+      "birth_date": "1979-10-02",
+      "source": "https://www.basketball-reference.com/players/b/brezepr01.html",
+      "status": "sourced"
+    },
+    "brownda02": {
+      "name": "Damone Brown",
+      "birth_date": "1979-06-28",
+      "source": "https://www.basketball-reference.com/players/b/brownda02.html",
+      "status": "sourced"
+    },
+    "brownde02": {
+      "name": "Devin Brown",
+      "birth_date": "1978-12-30",
+      "source": "https://www.basketball-reference.com/players/b/brownde02.html",
+      "status": "sourced"
+    },
+    "buforro01": {
+      "name": "Rodney Buford",
+      "birth_date": "1977-11-02",
+      "source": "https://www.basketball-reference.com/players/b/buforro01.html",
+      "status": "sourced"
+    },
+    "butlemi02": {
+      "name": "Mitchell Butler",
+      "birth_date": "1970-12-15",
+      "source": "https://www.basketball-reference.com/players/b/butlemi02.html",
+      "status": "sourced"
+    },
+    "campbel01": {
+      "name": "Elden Campbell",
+      "birth_date": "1968-07-23",
+      "source": "https://www.basketball-reference.com/players/c/campbel01.html",
+      "status": "sourced"
+    },
+    "cardibr01": {
+      "name": "Brian Cardinal",
+      "birth_date": "1977-05-02",
+      "source": "https://www.basketball-reference.com/players/c/cardibr01.html",
+      "status": "sourced"
+    },
+    "carlige01": {
+      "name": "Geno Carlisle",
+      "birth_date": "1976-08-13",
+      "source": "https://www.basketball-reference.com/players/c/carlige01.html",
+      "status": "sourced"
+    },
+    "carroma01": {
+      "name": "Matt Carroll",
+      "birth_date": "1980-08-28",
+      "source": "https://www.basketball-reference.com/players/c/carroma01.html",
+      "status": "sourced"
+    },
+    "cartema01": {
+      "name": "Maurice Carter",
+      "birth_date": "1976-10-12",
+      "source": "https://www.basketball-reference.com/players/c/cartema01.html",
+      "status": "sourced"
+    },
+    "chandty01": {
+      "name": "Tyson Chandler",
+      "birth_date": "1982-10-02",
+      "source": "https://www.basketball-reference.com/players/c/chandty01.html",
+      "status": "sourced"
+    },
+    "cleavma01": {
+      "name": "Mateen Cleaves",
+      "birth_date": "1977-09-07",
+      "source": "https://www.basketball-reference.com/players/c/cleavma01.html",
+      "status": "sourced"
+    },
+    "collija02": {
+      "name": "Jason Collier",
+      "birth_date": "1977-09-08",
+      "source": "https://www.basketball-reference.com/players/c/collija02.html",
+      "status": "sourced"
+    },
+    "collija03": {
+      "name": "Jarron Collins",
+      "birth_date": "1978-12-02",
+      "source": "https://www.basketball-reference.com/players/c/collija03.html",
+      "status": "sourced"
+    },
+    "cookom01": {
+      "name": "Omar Cook",
+      "birth_date": "1982-01-28",
+      "source": "https://www.basketball-reference.com/players/c/cookom01.html",
+      "status": "sourced"
+    },
+    "crawfch01": {
+      "name": "Chris Crawford",
+      "birth_date": "1975-05-13",
+      "source": "https://www.basketball-reference.com/players/c/crawfch01.html",
+      "status": "sourced"
+    },
+    "dalemsa01": {
+      "name": "Samuel Dalembert",
+      "birth_date": "1981-05-10",
+      "source": "https://www.basketball-reference.com/players/d/dalemsa01.html",
+      "status": "sourced"
+    },
+    "danieer01": {
+      "name": "Erik Daniels",
+      "birth_date": "1982-04-01",
+      "source": "https://www.basketball-reference.com/players/d/danieer01.html",
+      "status": "sourced"
+    },
+    "daniema01": {
+      "name": "Marquis Daniels",
+      "birth_date": "1981-01-07",
+      "source": "https://www.basketball-reference.com/players/d/daniema01.html",
+      "status": "sourced"
+    },
+    "davishu01": {
+      "name": "Hubert Davis",
+      "birth_date": "1970-05-17",
+      "source": "https://www.basketball-reference.com/players/d/davishu01.html",
+      "status": "sourced"
+    },
+    "davisjo02": {
+      "name": "Josh Davis",
+      "birth_date": "1980-08-10",
+      "source": "https://www.basketball-reference.com/players/d/davisjo02.html",
+      "status": "sourced"
+    },
+    "dialde01": {
+      "name": "Derrick Dial",
+      "birth_date": "1975-12-20",
+      "source": "https://www.basketball-reference.com/players/d/dialde01.html",
+      "status": "sourced"
+    },
+    "dickeka01": {
+      "name": "Kaniel Dickens",
+      "birth_date": "1978-07-21",
+      "source": "https://www.basketball-reference.com/players/d/dickeka01.html",
+      "status": "sourced"
+    },
+    "drewbr01": {
+      "name": "Bryce Drew",
+      "birth_date": "1974-09-21",
+      "source": "https://www.basketball-reference.com/players/d/drewbr01.html",
+      "status": "sourced"
+    },
+    "duprero01": {
+      "name": "Ronald Dupree",
+      "birth_date": "1981-01-26",
+      "source": "https://www.basketball-reference.com/players/d/duprero01.html",
+      "status": "sourced"
+    },
+    "edwarco01": {
+      "name": "Corsley Edwards",
+      "birth_date": "1979-03-05",
+      "source": "https://www.basketball-reference.com/players/e/edwarco01.html",
+      "status": "sourced"
+    },
+    "ekeziob01": {
+      "name": "Obinna Ekezie",
+      "birth_date": "1975-08-22",
+      "source": "https://www.basketball-reference.com/players/e/ekeziob01.html",
+      "status": "sourced"
+    },
+    "elsonfr01": {
+      "name": "Francisco Elson",
+      "birth_date": "1976-02-28",
+      "source": "https://www.basketball-reference.com/players/e/elsonfr01.html",
+      "status": "sourced"
+    },
+    "fergude01": {
+      "name": "Desmond Ferguson",
+      "birth_date": "1977-07-22",
+      "source": "https://www.basketball-reference.com/players/f/fergude01.html",
+      "status": "sourced"
+    },
+    "fizerma01": {
+      "name": "Marcus Fizer",
+      "birth_date": "1978-08-10",
+      "source": "https://www.basketball-reference.com/players/f/fizerma01.html",
+      "status": "sourced"
+    },
+    "fordal02": {
+      "name": "Alton Ford",
+      "birth_date": "1981-05-29",
+      "source": "https://www.basketball-reference.com/players/f/fordal02.html",
+      "status": "sourced"
+    },
+    "frahmri01": {
+      "name": "Richie Frahm",
+      "birth_date": "1977-08-14",
+      "source": "https://www.basketball-reference.com/players/f/frahmri01.html",
+      "status": "sourced"
+    },
+    "fullehi01": {
+      "name": "Hiram Fuller",
+      "birth_date": "1981-05-15",
+      "source": "https://www.basketball-reference.com/players/f/fullehi01.html",
+      "status": "sourced"
+    },
+    "garcial01": {
+      "name": "Alex Garcia",
+      "birth_date": "1980-03-04",
+      "source": "https://www.basketball-reference.com/players/g/garcial01.html",
+      "status": "sourced"
+    },
+    "gilled01": {
+      "name": "Eddie Gill",
+      "birth_date": "1978-08-16",
+      "source": "https://www.basketball-reference.com/players/g/gilled01.html",
+      "status": "sourced"
+    },
+    "goldwan01": {
+      "name": "Anthony Goldwire",
+      "birth_date": "1971-09-06",
+      "source": "https://www.basketball-reference.com/players/g/goldwan01.html",
+      "status": "sourced"
+    },
+    "grantho01": {
+      "name": "Horace Grant",
+      "birth_date": "1965-07-04",
+      "source": "https://www.basketball-reference.com/players/g/grantho01.html",
+      "status": "sourced"
+    },
+    "grantpa01": {
+      "name": "Paul Grant",
+      "birth_date": "1974-01-06",
+      "source": "https://www.basketball-reference.com/players/g/grantpa01.html",
+      "status": "sourced"
+    },
+    "hamilze01": {
+      "name": "Zendon Hamilton",
+      "birth_date": "1975-04-27",
+      "source": "https://www.basketball-reference.com/players/h/hamilze01.html",
+      "status": "sourced"
+    },
+    "handlbe01": {
+      "name": "Ben Handlogten",
+      "birth_date": "1973-11-16",
+      "source": "https://www.basketball-reference.com/players/h/handlbe01.html",
+      "status": "sourced"
+    },
+    "harriot01": {
+      "name": "Othella Harrington",
+      "birth_date": "1974-01-31",
+      "source": "https://www.basketball-reference.com/players/h/harriot01.html",
+      "status": "sourced"
+    },
+    "hartja01": {
+      "name": "Jason Hart",
+      "birth_date": "1978-04-29",
+      "source": "https://www.basketball-reference.com/players/h/hartja01.html",
+      "status": "sourced"
+    },
+    "healsh01": {
+      "name": "Shane Heal",
+      "birth_date": "1970-09-06",
+      "source": "https://www.basketball-reference.com/players/h/healsh01.html",
+      "status": "sourced"
+    },
+    "hillgr01": {
+      "name": "Grant Hill",
+      "birth_date": "1972-10-05",
+      "source": "https://www.basketball-reference.com/players/h/hillgr01.html",
+      "status": "sourced"
+    },
+    "jeffrja01": {
+      "name": "Jared Jeffries",
+      "birth_date": "1981-11-25",
+      "source": "https://www.basketball-reference.com/players/j/jeffrja01.html",
+      "status": "sourced"
+    },
+    "jenkiho01": {
+      "name": "Horace Jenkins",
+      "birth_date": "1974-10-14",
+      "source": "https://www.basketball-reference.com/players/j/jenkiho01.html",
+      "status": "sourced"
+    },
+    "johnsav01": {
+      "name": "Avery Johnson",
+      "birth_date": "1965-03-25",
+      "source": "https://www.basketball-reference.com/players/j/johnsav01.html",
+      "status": "sourced"
+    },
+    "johnsbr01": {
+      "name": "Britton Johnsen",
+      "birth_date": "1979-07-08",
+      "source": "https://www.basketball-reference.com/players/j/johnsbr01.html",
+      "status": "sourced"
+    },
+    "johnsde03": {
+      "name": "DerMarr Johnson",
+      "birth_date": "1980-05-05",
+      "source": "https://www.basketball-reference.com/players/j/johnsde03.html",
+      "status": "sourced"
+    },
+    "johnsli01": {
+      "name": "Linton Johnson",
+      "birth_date": "1980-06-13",
+      "source": "https://www.basketball-reference.com/players/j/johnsli01.html",
+      "status": "sourced"
+    },
+    "jonesda01": {
+      "name": "Damon Jones",
+      "birth_date": "1976-08-25",
+      "source": "https://www.basketball-reference.com/players/j/jonesda01.html",
+      "status": "sourced"
+    },
+    "jonesfr01": {
+      "name": "Fred Jones",
+      "birth_date": "1979-03-11",
+      "source": "https://www.basketball-reference.com/players/j/jonesfr01.html",
+      "status": "sourced"
+    },
+    "jonesma03": {
+      "name": "Mark Jones",
+      "birth_date": "1975-05-25",
+      "source": "https://www.basketball-reference.com/players/j/jonesma03.html",
+      "status": "sourced"
+    },
+    "jonespo01": {
+      "name": "Popeye Jones",
+      "birth_date": "1970-06-17",
+      "source": "https://www.basketball-reference.com/players/j/jonespo01.html",
+      "status": "sourced"
+    },
+    "kasunma01": {
+      "name": "Mario Kasun",
+      "birth_date": "1980-04-05",
+      "source": "https://www.basketball-reference.com/players/k/kasunma01.html",
+      "status": "sourced"
+    },
+    "knighbr02": {
+      "name": "Brandin Knight",
+      "birth_date": "1981-12-16",
+      "source": "https://www.basketball-reference.com/players/k/knighbr02.html",
+      "status": "sourced"
+    },
+    "krstine01": {
+      "name": "Nenad Krstić",
+      "birth_date": "1983-07-25",
+      "source": "https://www.basketball-reference.com/players/k/krstine01.html",
+      "status": "sourced"
+    },
+    "kutluib01": {
+      "name": "Ibo Kutluay",
+      "birth_date": "1974-07-01",
+      "source": "https://www.basketball-reference.com/players/k/kutluib01.html",
+      "status": "sourced"
+    },
+    "langhda01": {
+      "name": "Dan Langhi",
+      "birth_date": "1977-11-28",
+      "source": "https://www.basketball-reference.com/players/l/langhda01.html",
+      "status": "sourced"
+    },
+    "larueru01": {
+      "name": "Rusty LaRue",
+      "birth_date": "1973-12-10",
+      "source": "https://www.basketball-reference.com/players/l/larueru01.html",
+      "status": "sourced"
+    },
+    "lewisqu01": {
+      "name": "Quincy Lewis",
+      "birth_date": "1977-06-26",
+      "source": "https://www.basketball-reference.com/players/l/lewisqu01.html",
+      "status": "sourced"
+    },
+    "livinra01": {
+      "name": "Randy Livingston",
+      "birth_date": "1975-04-02",
+      "source": "https://www.basketball-reference.com/players/l/livinra01.html",
+      "status": "sourced"
+    },
+    "lopezra01": {
+      "name": "Raül López",
+      "birth_date": "1980-04-15",
+      "source": "https://www.basketball-reference.com/players/l/lopezra01.html",
+      "status": "sourced"
+    },
+    "marshdo01": {
+      "name": "Donyell Marshall",
+      "birth_date": "1973-05-18",
+      "source": "https://www.basketball-reference.com/players/m/marshdo01.html",
+      "status": "sourced"
+    },
+    "martida01": {
+      "name": "Darrick Martin",
+      "birth_date": "1971-03-06",
+      "source": "https://www.basketball-reference.com/players/m/martida01.html",
+      "status": "sourced"
+    },
+    "mbengdj01": {
+      "name": "D.J. Mbenga",
+      "birth_date": "1980-12-30",
+      "source": "https://www.basketball-reference.com/players/m/mbengdj01.html",
+      "status": "sourced"
+    },
+    "mccasam01": {
+      "name": "Amal McCaskill",
+      "birth_date": "1973-10-28",
+      "source": "https://www.basketball-reference.com/players/m/mccasam01.html",
+      "status": "sourced"
+    },
+    "mcdyean01": {
+      "name": "Antonio McDyess",
+      "birth_date": "1974-09-07",
+      "source": "https://www.basketball-reference.com/players/m/mcdyean01.html",
+      "status": "sourced"
+    },
+    "mcleoke01": {
+      "name": "Keith McLeod",
+      "birth_date": "1979-11-05",
+      "source": "https://www.basketball-reference.com/players/m/mcleoke01.html",
+      "status": "sourced"
+    },
+    "millean01": {
+      "name": "Anthony Miller",
+      "birth_date": "1971-10-22",
+      "source": "https://www.basketball-reference.com/players/m/millean01.html",
+      "status": "sourced"
+    },
+    "millemi01": {
+      "name": "Mike Miller",
+      "birth_date": "1980-02-19",
+      "source": "https://www.basketball-reference.com/players/m/millemi01.html",
+      "status": "sourced"
+    },
+    "milleol01": {
+      "name": "Oliver Miller",
+      "birth_date": "1970-04-06",
+      "source": "https://www.basketball-reference.com/players/m/milleol01.html",
+      "status": "sourced"
+    },
+    "mournal01": {
+      "name": "Alonzo Mourning",
+      "birth_date": "1970-02-08",
+      "source": "https://www.basketball-reference.com/players/m/mournal01.html",
+      "status": "sourced"
+    },
+    "murrala01": {
+      "name": "Lamond Murray",
+      "birth_date": "1973-04-20",
+      "source": "https://www.basketball-reference.com/players/m/murrala01.html",
+      "status": "sourced"
+    },
+    "murratr01": {
+      "name": "Tracy Murray",
+      "birth_date": "1971-07-25",
+      "source": "https://www.basketball-reference.com/players/m/murratr01.html",
+      "status": "sourced"
+    },
+    "nocioan01": {
+      "name": "Andrés Nocioni",
+      "birth_date": "1979-11-30",
+      "source": "https://www.basketball-reference.com/players/n/nocioan01.html",
+      "status": "sourced"
+    },
+    "olowomi01": {
+      "name": "Michael Olowokandi",
+      "birth_date": "1975-04-03",
+      "source": "https://www.basketball-reference.com/players/o/olowomi01.html",
+      "status": "sourced"
+    },
+    "overtdo01": {
+      "name": "Doug Overton",
+      "birth_date": "1969-08-03",
+      "source": "https://www.basketball-reference.com/players/o/overtdo01.html",
+      "status": "sourced"
+    },
+    "penigde01": {
+      "name": "Desmond Penigar",
+      "birth_date": "1981-07-16",
+      "source": "https://www.basketball-reference.com/players/p/penigde01.html",
+      "status": "sourced"
+    },
+    "polynol01": {
+      "name": "Olden Polynice",
+      "birth_date": "1964-11-21",
+      "source": "https://www.basketball-reference.com/players/p/polynol01.html",
+      "status": "sourced"
+    },
+    "popema01": {
+      "name": "Mark Pope",
+      "birth_date": "1972-09-11",
+      "source": "https://www.basketball-reference.com/players/p/popema01.html",
+      "status": "sourced"
+    },
+    "profila01": {
+      "name": "Laron Profit",
+      "birth_date": "1977-08-05",
+      "source": "https://www.basketball-reference.com/players/p/profila01.html",
+      "status": "sourced"
+    },
+    "radojal01": {
+      "name": "Aleksandar Radojević",
+      "birth_date": "1976-08-08",
+      "source": "https://www.basketball-reference.com/players/r/radojal01.html",
+      "status": "sourced"
+    },
+    "reiddo01": {
+      "name": "Don Reid",
+      "birth_date": "1973-12-30",
+      "source": "https://www.basketball-reference.com/players/r/reiddo01.html",
+      "status": "sourced"
+    },
+    "reineja01": {
+      "name": "Jared Reiner",
+      "birth_date": "1982-04-08",
+      "source": "https://www.basketball-reference.com/players/r/reineja01.html",
+      "status": "sourced"
+    },
+    "richaqu01": {
+      "name": "Quentin Richardson",
+      "birth_date": "1980-04-13",
+      "source": "https://www.basketball-reference.com/players/r/richaqu01.html",
+      "status": "sourced"
+    },
+    "ruffimi01": {
+      "name": "Michael Ruffin",
+      "birth_date": "1977-01-21",
+      "source": "https://www.basketball-reference.com/players/r/ruffimi01.html",
+      "status": "sourced"
+    },
+    "sampsja01": {
+      "name": "Jamal Sampson",
+      "birth_date": "1983-05-15",
+      "source": "https://www.basketball-reference.com/players/s/sampsja01.html",
+      "status": "sourced"
+    },
+    "santida01": {
+      "name": "Daniel Santiago",
+      "birth_date": "1976-06-24",
+      "source": "https://www.basketball-reference.com/players/s/santida01.html",
+      "status": "sourced"
+    },
+    "sesayan01": {
+      "name": "Ansu Sesay",
+      "birth_date": "1976-07-29",
+      "source": "https://www.basketball-reference.com/players/s/sesayan01.html",
+      "status": "sourced"
+    },
+    "shirlpa01": {
+      "name": "Paul Shirley",
+      "birth_date": "1977-12-23",
+      "source": "https://www.basketball-reference.com/players/s/shirlpa01.html",
+      "status": "sourced"
+    },
+    "smithja01": {
+      "name": "Jabari Smith",
+      "birth_date": "1977-02-12",
+      "source": "https://www.basketball-reference.com/players/s/smithja01.html",
+      "status": "sourced"
+    },
+    "smithle01": {
+      "name": "Leon Smith",
+      "birth_date": "1980-11-02",
+      "source": "https://www.basketball-reference.com/players/s/smithle01.html",
+      "status": "sourced"
+    },
+    "smithth01": {
+      "name": "Theron Smith",
+      "birth_date": "1980-10-03",
+      "source": "https://www.basketball-reference.com/players/s/smithth01.html",
+      "status": "sourced"
+    },
+    "songada01": {
+      "name": "Darius Songaila",
+      "birth_date": "1978-02-14",
+      "source": "https://www.basketball-reference.com/players/s/songada01.html",
+      "status": "sourced"
+    },
+    "sundobr01": {
+      "name": "Bruno Šundov",
+      "birth_date": "1980-02-10",
+      "source": "https://www.basketball-reference.com/players/s/sundobr01.html",
+      "status": "sourced"
+    },
+    "tayloma01": {
+      "name": "Maurice Taylor",
+      "birth_date": "1976-10-30",
+      "source": "https://www.basketball-reference.com/players/t/tayloma01.html",
+      "status": "sourced"
+    },
+    "thomabi01": {
+      "name": "Billy Thomas",
+      "birth_date": "1975-12-23",
+      "source": "https://www.basketball-reference.com/players/t/thomabi01.html",
+      "status": "sourced"
+    },
+    "thomaet01": {
+      "name": "Etan Thomas",
+      "birth_date": "1978-04-01",
+      "source": "https://www.basketball-reference.com/players/t/thomaet01.html",
+      "status": "sourced"
+    },
+    "thomaja02": {
+      "name": "James Thomas",
+      "birth_date": "1980-11-22",
+      "source": "https://www.basketball-reference.com/players/t/thomaja02.html",
+      "status": "sourced"
+    },
+    "udokaim01": {
+      "name": "Ime Udoka",
+      "birth_date": "1977-08-09",
+      "source": "https://www.basketball-reference.com/players/u/udokaim01.html",
+      "status": "sourced"
+    },
+    "wrighlo02": {
+      "name": "Lorenzen Wright",
+      "birth_date": "1975-11-04",
+      "source": "https://www.basketball-reference.com/players/w/wrighlo02.html",
+      "status": "sourced"
+    }
+  },
+  "missing": []
+}

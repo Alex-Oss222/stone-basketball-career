@@ -78,7 +78,10 @@ def long_date(day):
 
 
 def _key(name):
-    return re.sub(r"[^a-z]", "", str(name).lower())
+    """A name's match key: accents folded (Nájera = Najera, Türkoğlu = Turkoglu), letters only, lower case."""
+    import unicodedata
+    folded = unicodedata.normalize("NFKD", str(name)).encode("ascii", "ignore").decode("ascii")
+    return re.sub(r"[^a-z]", "", folded.lower())
 
 
 def _n(value, places=1):
@@ -400,6 +403,121 @@ APPEARANCE_COHORT = "2003_04_appearance"
 ORIGINAL_COHORTS = ("end_2002_03_roster", "2003_draft_rights")
 
 
+def identity_sources(root=ROOT):
+    """({name key: bbr_id} for names that identify one player, {bbr_id: birth date}) from every world identity source:
+    the real careers table, every season's real rosters and opening books, Miami's registers, the draft classes, the
+    prospect evidence (drafted and undrafted), the end-of-season rosters and the unattached identities."""
+    root = Path(root)
+    names, births = {}, {}
+
+    def name(n, b):
+        if n and b:
+            names.setdefault(_key(n), set()).add(b)
+
+    careers = root / "library/careers/nba_player_careers.json"
+    if careers.is_file():
+        for b, e in read_json(careers)["players"].items():
+            name(e.get("player_name"), b)
+    for path in sorted(root.glob("library/*/league/nba_*_team_rosters.json")):
+        for data in (read_json(path).get("clubs") or {}).values():
+            for p in data.get("players", []):
+                name(p.get("player_id"), p.get("bbr_id"))
+    for path in sorted(root.glob("career/Dwyane_Wade/*/League/opening_rosters.json")):
+        book = read_json(path)
+        for rows in list(book.get("clubs", {}).values()) + [book.get("pool", []), book.get("not_placed", [])]:
+            for p in rows:
+                name(p.get("player_id"), p.get("bbr_id"))
+    for path in sorted(root.glob("career/Dwyane_Wade/*/00_Team/Team/Roster/roster.json")):
+        for p in read_json(path)["players"]:
+            name(p.get("name"), p.get("bbr_id"))
+            if p.get("bbr_id") and p.get("date_of_birth"):
+                births.setdefault(p["bbr_id"], p["date_of_birth"])
+    for path in sorted(root.glob("library/*/league/nba_*_end_of_season.json")) + sorted(root.glob("library/*/league/nba_*_draft_class.json")):
+        for club in (read_json(path).get("clubs") or {}).values():
+            for p in club["players"]:
+                name(p.get("player_id") or p.get("name"), p.get("bbr_id"))
+                if p.get("bbr_id") and p.get("birth_date"):
+                    births.setdefault(p["bbr_id"], p["birth_date"])
+    for path in sorted(root.glob("library/*/league/nba_*_prospect_evidence.json")):
+        data = read_json(path)
+        groups = [data.get("players_drafted"), data.get("undrafted_candidates")]
+        rows = [r for g in groups for r in (g if isinstance(g, list) else (g or {}).get("players", []) if isinstance(g, dict) else [])]
+        for p in rows:
+            if not isinstance(p, dict):
+                continue
+            name(p.get("player_id"), p.get("bbr_id"))
+            if p.get("bbr_id") and p.get("birth_date"):
+                births.setdefault(p["bbr_id"], p["birth_date"])
+    for path in sorted(root.glob("library/*/league/nba_*_unattached_identities.json")):
+        for p in read_json(path)["players"]:
+            name(p.get("player_id") or p.get("name"), p.get("bbr_id"))
+            if p.get("bbr_id") and p.get("birth_date"):
+                births.setdefault(p["bbr_id"], p["birth_date"])
+    births.update({b: d for b, d in _researched_births(root).items() if b not in births})
+    return {k: next(iter(v)) for k, v in names.items() if len(v) == 1}, births
+
+
+def _researched_births(root):
+    """Birth dates researched for registry players no other source dates (`library/careers/nba_player_births.json`)."""
+    path = Path(root) / "library/careers/nba_player_births.json"
+    return {b: e["birth_date"] for b, e in read_json(path)["players"].items() if e.get("birth_date")} if path.is_file() else {}
+
+
+def repair_registry(root=ROOT, write=True):
+    """Fill a dated registry addition's missing bbr_id and birth date from the identity sources (never changing a
+    recorded value, never touching the original 407). Derived identity, so `scripts/reconcile.py` keeps it current.
+    Returns the registry ids repaired."""
+    path = Path(root) / PLAYER_DIR / "Stats_and_Awards/League/player_registry.json"
+    reg = read_json(path)
+    names, births = identity_sources(root)
+    taken = {p["bbr_id"] for p in reg["players"] if p.get("bbr_id")}
+    known = {_key(p["name"]) for p in reg["players"] if p.get("bbr_id")}
+    repaired, duplicates = [], []
+    for p in reg["players"]:
+        if p.get("cohort") != APPEARANCE_COHORT:
+            continue
+        changed = False
+        if not p.get("bbr_id"):
+            b = p["name"] if p["name"] in taken else names.get(_key(p["name"]))
+            if (b and b in taken) or _key(p["name"]) in known:
+                duplicates.append(p)          # the same player registered twice (an accented name, or his id as a name)
+                continue
+            if b:
+                p["bbr_id"], changed = b, True
+                taken.add(b)
+        if not p.get("birth_date") and births.get(p.get("bbr_id")):
+            p["birth_date"], changed = births[p["bbr_id"]], True
+        if changed:
+            repaired.append(p["registry_id"])
+    if duplicates:
+        reg["players"] = [p for p in reg["players"] if p not in duplicates]
+        reg["player_count"] = len(reg["players"])
+        counts = reg.setdefault("coverage", {}).setdefault("source_counts", {})
+        counts[APPEARANCE_COHORT] = sum(1 for p in reg["players"] if p.get("cohort") == APPEARANCE_COHORT)
+        repaired += [p["registry_id"] for p in duplicates]
+        if write:                             # a removed duplicate's generated card pages and page rows go with it
+            drop_registry_rows(root, [p["registry_id"] for p in duplicates])
+            for p in duplicates:
+                for folder in ("Stats_and_Awards/League/Players", "Contracts/players"):
+                    for ext in (".md", ".html"):
+                        page = Path(root) / PLAYER_DIR / folder / f"{p['registry_id']}{ext}"
+                        if page.is_file():
+                            page.unlink()
+    if repaired and write:
+        path.write_text(json.dumps(reg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return repaired
+
+
+def drop_registry_rows(root, registry_ids):
+    """Remove the table rows of registry ids no longer in the registry from every league statistics page."""
+    pattern = re.compile(r"\((?:\.\./)*Players/(" + "|".join(re.escape(i) for i in registry_ids) + r")\.md\)")
+    for page in (Path(root) / PLAYER_DIR / "Stats_and_Awards/League").rglob("League_Stats.md"):
+        text = page.read_text(encoding="utf-8")
+        kept = [line for line in text.split("\n") if not (line.startswith("|") and pattern.search(line))]
+        if len(kept) != text.count("\n") + 1:
+            page.write_text("\n".join(kept), encoding="utf-8")
+
+
 def registry_additions(root=ROOT, season=None, now=None):
     """Players in closed results who are not in the registry, as dated registry entries (cohort APPEARANCE_COHORT):
     identity from the season's rosters, Miami's register and the dated identity records; club and date of his first
@@ -447,11 +565,14 @@ def registry_additions(root=ROOT, season=None, now=None):
         for p in read_json(unattached)["players"]:
             births.setdefault(p["bbr_id"], p.get("birth_date"))
             positions.setdefault(p["bbr_id"], p.get("position"))
+    unique_names, more_births = identity_sources(root)
+    for b, d in more_births.items():
+        births.setdefault(b, d)
     added = {}
     for row in closed_results(root, season, now):
         for side, pid, bbr, record in game_records(row, root, season):
             club = row["result"][side]
-            bbr = bbr or lookup.get((club, _key(pid)))
+            bbr = bbr or lookup.get((club, _key(pid))) or (pid if pid in by_bbr else None) or unique_names.get(_key(pid))
             if (bbr and bbr in by_bbr) or _key(pid) in by_name:
                 continue
             key = bbr or _key(pid)
@@ -469,6 +590,7 @@ def registry_additions(root=ROOT, season=None, now=None):
 def extend_registry(root=ROOT, season=None, write=True):
     """Add every unregistered player from closed results to the registry. Returns the added entries."""
     season = season or _active_season(root)
+    repair_registry(root, write)
     new = registry_additions(root, season)
     if new and write:
         path = Path(root) / PLAYER_DIR / "Stats_and_Awards/League/player_registry.json"
@@ -557,11 +679,12 @@ def closed_lines(root=ROOT, season=None, now=None):
     for p in reg["players"]:
         by_name.setdefault(_key(p["name"]), p)
     lookup = bbr_lookup(root, season)
+    unique_names, _ = identity_sources(root)
     lines, unmatched = {}, set()
     for row in closed_results(root, season, now):
         for side, pid, bbr, record in game_records(row, root, season):
             club = row["result"][side]
-            bbr = bbr or lookup.get((club, _key(pid)))
+            bbr = bbr or lookup.get((club, _key(pid))) or (pid if pid in by_bbr else None) or unique_names.get(_key(pid))
             player = by_bbr.get(bbr) if bbr else None
             if player is None:
                 player = by_name.get(_key(pid))
@@ -926,4 +1049,59 @@ def write_back_errors(root=ROOT, season=None, cards=False):
         stale, errors = [], errors + [f"write-back: cannot build the league cards: {exc}"]
     if stale:
         errors.append(f"{len(stale)} league card file(s) differ from the closed results, for example {stale[0].relative_to(root)}; run scripts/build_league_cards.py --write")
+    return errors
+
+
+def identity_errors(root=ROOT, on=None):
+    """League identity checks (the user's request, November 2004 on the career clock: a player on a club must never
+    read as a free agent). Every registry player has a bbr_id and a birth date and appears once (accents folded), and
+    each card's club on the career date is the club the simulated league has him with (`options.holders_on`,
+    Miami's register for Miami): a mismatch names the player and both clubs."""
+    from .league_cards import club_on
+    from .options import holders_on
+    from .rotations import miami_holds
+    root = Path(root)
+    reg = registry(root)["players"]
+    errors = []
+    seen_bbr, seen_name = {}, {}
+    for p in reg:
+        label = f"registry {p.get('registry_id')} ({p['name']})"
+        if not p.get("bbr_id"):
+            errors.append(f"{label}: no bbr_id (python scripts/reconcile.py repairs it from the identity sources)")
+        elif p["bbr_id"] in seen_bbr:
+            errors.append(f"{label}: the same player as registry {seen_bbr[p['bbr_id']]}")
+        if not p.get("birth_date"):
+            errors.append(f"{label}: no birth date (add it to library/careers/nba_player_births.json)")
+        seen_bbr.setdefault(p.get("bbr_id"), p.get("registry_id"))
+        k = _key(p["name"])
+        if k in seen_name and p.get("bbr_id") == seen_name[k][1]:
+            errors.append(f"{label}: registered twice under one name")
+        seen_name.setdefault(k, (p.get("registry_id"), p.get("bbr_id")))
+    on = on or clock(root)
+    season = _active_season(root)
+    if on < f"{season[:4]}-10-01":
+        return errors
+    from .availability import status
+    from .league_moves import club_of
+    from .player_stats import alias
+    holders = holders_on(on, root)
+    miami = set(miami_holds(season, on, root))
+    for p in reg:
+        b = p.get("bbr_id")
+        if not b:
+            continue
+        if b in miami or alias(p["name"]) in miami:
+            actual = "Miami Heat"
+        elif status(b, season, root) == "unavailable":
+            actual = club_of(b, on, season, root)          # out for the season (injury): his contract's club holds him
+        else:
+            actual = holders.get(b)
+        try:
+            shown = (club_on(p, on, root=root) or {}).get("club")
+        except Exception as exc:                          # a player the dated rules cannot place
+            errors.append(f"registry {p['registry_id']} ({p['name']}): no club can be placed on {on} ({exc})")
+            continue
+        if actual != shown:
+            errors.append(f"registry {p['registry_id']} ({p['name']}): card shows {shown or 'free agent'} on {on}, "
+                          f"the league has him with {actual or 'no club (free agent)'}")
     return errors

@@ -665,6 +665,8 @@ def validate():
 
     from runtime.continuity import errors as continuity_errors          # contracts, clubs, players, numbers across seasons
     errors.extend(continuity_errors(ROOT))
+    from runtime.write_back import identity_errors                      # one identity per player; card club = actual club
+    errors.extend(identity_errors(ROOT))
 
     from runtime.trajectories import trajectory_errors
     errors.extend(trajectory_errors(ROOT))

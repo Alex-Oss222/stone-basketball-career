@@ -87,8 +87,9 @@ def _day(value):
 
 
 def _key(name):
-    """Name key tolerant of punctuation and spacing differences such as 'T.J.' and 'T. J.'."""
-    return re.sub(r"[^a-z]", "", name.lower())
+    """Name key tolerant of punctuation, spacing and accents ('T.J.' = 'T. J.', 'Nájera' = 'Najera'): the write-back's."""
+    from .write_back import _key as key
+    return key(name)
 
 
 # -- colours ------------------------------------------------------------------------------------------
@@ -248,6 +249,13 @@ def _club_in_book(player, on, season, root, transactions=None):
                                                           "renounced", "declined", "expired")):
                 return {"club": MIAMI, "code": "MIA", "basis": f"on Miami's {season} register", "rights": False}
     club = club_of(bbr, on, season, root) if bbr else None
+    if club and bbr:
+        from .availability import status
+        from .league_moves import effective_roster
+        if (status(bbr, season, root) in ("retired", "unknown")    # no real season left and on no roster: out of the league
+                and not any(x.get("bbr_id") == bbr for x in effective_roster(club, on, season, root))):
+            return {"club": None, "code": None, "rights": False,
+                    "basis": f"out of the league: his real career has no {season} season (runtime/availability.py)"}
     basis = (f"{club}: the {season} opening rosters and the league's dated moves (runtime/league_moves.py)" if club else
              f"unsigned on {on} in the {season} league")
     return {"club": club, "code": _code(club, transactions or {}, player) if club else None, "basis": basis, "rights": False}
@@ -638,7 +646,7 @@ def card_data(ctx, player, records=(), shots=()):
     closed = sum(1 for r in records if r.get("status") == "played")
     return dict(id=pid, player=player, on=ctx.on, club=held, label=label, club_label=club_label, colors=colors,
                 rights=rights, photo=photo, jersey=jersey, prior_program=prior_program, entry=entry, measurements=measurements,
-                age=age_on(player["birth_date"], ctx.on), prior=None if wade else ctx.prior.get(pid),
+                age=age_on(player["birth_date"], ctx.on) if player.get("birth_date") else "N/A", prior=None if wade else ctx.prior.get(pid),
                 contract=(contract_line(player, ctx.contracts, ctx.legend, rights if held["rights"] else None, signed, held)
                           if not wade else wade_contract_line(signed)),
                 miami_card=("README.md" if wade else ctx.miami_cards.get(_key(player["name"]))),
@@ -929,8 +937,9 @@ def closed_card_feeds(ctx):
     alone never establishes shot ownership, and an old result gains no locations.
     """
     from .season_games import note_meta
-    from .write_back import bbr_lookup, closed_results, game_records
+    from .write_back import bbr_lookup, closed_results, game_records, identity_sources
     by_bbr = {p["bbr_id"]: p for p in ctx.registry["players"] if p.get("bbr_id")}
+    unique_names, _ = identity_sources(ctx.root)
     by_name = {}
     for player in ctx.registry["players"]:
         by_name.setdefault(_key(player["name"]), []).append(player)
@@ -954,7 +963,7 @@ def closed_card_feeds(ctx):
             known_bbr = lookup.get((result[side], _key(player_id)))
             if tracked and bbr and known_bbr and bbr != known_bbr:
                 raise ValueError(f"{result['event_id']}: shot player identity disagrees with the club's recorded BBR ID")
-            bbr = bbr or known_bbr
+            bbr = bbr or known_bbr or (player_id if player_id in by_bbr else None) or unique_names.get(_key(player_id))
             matches = by_name.get(_key(player_id), [])
             if (tracked and bbr and len(matches) == 1 and matches[0].get("bbr_id")
                     and matches[0]["bbr_id"] != bbr):
