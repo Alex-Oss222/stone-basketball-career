@@ -2,7 +2,7 @@
 
 <!-- team-status:start -->
 
-2004-05 through 2011-12 · AI/GM record · live position from [finance.json](finance.json) (as of 2004-10-01), shown on 2004-10-03
+2004-05 through 2011-12 · AI/GM record · live position from [finance.json](finance.json) (as of 2004-10-01), shown on 2004-10-04
 
 Counted salary $52,068,805 against the published $43,840,000 cap: cap room -$8,228,805 (free agency). Tax threshold: not published at this date. Contract guarantee review: 2005-01-07 keep-or-waive, 2005-01-10 kept contracts guaranteed.
 
