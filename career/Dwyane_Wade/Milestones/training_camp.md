@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-01-17 · Miami Heat · planned
+Career date: 2005-01-18 · Miami Heat · planned
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -59,6 +59,7 @@ Snapshot: 2005-01-06. Draft rights and unassigned arrivals are not assigned minu
 | 2005-01-17 | Miami proposes to Boston Celtics: Eddie Jones, Maurice Baker for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-adc5909b8d). Record: `00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json`. |
 | 2005-01-17 | Boston Celtics declines Miami's proposal (2005-01-17-adc5909b8d). |
 | 2005-01-17 | Miami proposes to Boston Celtics: Eddie Jones, Maurice Evans for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-14d65ed9c8). Record: `00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json`. |
+| 2005-01-18 | Boston Celtics declines Miami's proposal (2005-01-17-14d65ed9c8). |
 
 ## Your response to the staff
 

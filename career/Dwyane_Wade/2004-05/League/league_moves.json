@@ -2346,6 +2346,50 @@
    "bbr_id": "barrybr01",
    "from": "Washington Wizards",
    "to": "Golden State Warriors"
+  },
+  {
+   "id": "2004-05-market-2005-01-18-ten_day-johnsli01",
+   "date": "2005-01-18",
+   "kind": "ten_day",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": null,
+   "to": "Detroit Pistons",
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 15
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-28",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.55 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-18-ten_day-slayta01",
+   "date": "2005-01-18",
+   "kind": "ten_day",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": null,
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-28",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.45 x fit"
   }
  ],
  "market_days": [
@@ -2425,6 +2469,7 @@
   "2005-01-14",
   "2005-01-15",
   "2005-01-16",
-  "2005-01-17"
+  "2005-01-17",
+  "2005-01-18"
  ]
 }

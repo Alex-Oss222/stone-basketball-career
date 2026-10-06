@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-01-17",
+  "as_of": "2005-01-18",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-01-17"
+              "2005-01-18"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2005-01-17",
+              "2005-01-18",
               "Current checkpoint",
               "2005-01-14-miami-heat-at-los-angeles-clippers",
               "Recorded",
@@ -602,7 +602,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-17"
+          "value": "2005-01-18"
         },
         {
           "label": "Team",
@@ -1020,7 +1020,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-17"
+          "value": "2005-01-18"
         },
         {
           "label": "Team",
@@ -1411,7 +1411,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-17"
+          "value": "2005-01-18"
         },
         {
           "label": "Team",
@@ -1833,7 +1833,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-17"
+          "value": "2005-01-18"
         },
         {
           "label": "Team",
@@ -2226,7 +2226,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-17"
+          "value": "2005-01-18"
         },
         {
           "label": "Team",
@@ -2273,12 +2273,12 @@
             ],
             [
               "2005-01-17",
-              "Proposal; completion not recorded by this date",
+              "Declined",
               "Boston Celtics",
               "Eddie Jones; Maurice Evans",
               "Reggie Miller; Austin Croshere",
               "Not recorded",
-              "No dated answer recorded",
+              "decline",
               {
                 "label": "Transaction record",
                 "href": "../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json"
@@ -2650,7 +2650,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-17"
+          "value": "2005-01-18"
         },
         {
           "label": "Team",
@@ -3043,7 +3043,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-17"
+          "value": "2005-01-18"
         },
         {
           "label": "Team",
@@ -3220,6 +3220,10 @@
             [
               "2005-01-17",
               "Miami proposes to Boston Celtics: Eddie Jones, Maurice Evans for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-14d65ed9c8). Record: `00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json`."
+            ],
+            [
+              "2005-01-18",
+              "Boston Celtics declines Miami's proposal (2005-01-17-14d65ed9c8)."
             ]
           ]
         },
@@ -3564,7 +3568,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-17"
+          "value": "2005-01-18"
         },
         {
           "label": "Team",
@@ -3581,7 +3585,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "46 closed game records in 2004-05 through 2005-01-17. Competitions remain separate.",
+      "summary": "46 closed game records in 2004-05 through 2005-01-18. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -4433,7 +4437,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-17"
+          "value": "2005-01-18"
         },
         {
           "label": "Team",

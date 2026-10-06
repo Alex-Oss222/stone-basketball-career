@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-01-17. [Search the contract directory](index.html)
+Known through 2005-01-18. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -338,7 +338,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Lee Nailon](players/nailole01.md) | Free agent | under contract | Lee Nailon · 2003-09-30 | 2 |
 | [Leon Smith](players/smithle01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Lindsey Hunter](players/hunteli01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
-| [Linton Johnson](players/johnsli01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
+| [Linton Johnson](players/johnsli01.md) | Detroit Pistons | No verified contract record | No verified current agreement | 0 |
 | [Lionel Chalmers](players/lionelchalmers.md) | Golden State Warriors | under contract | Lionel Chalmers · 2004-07-29 | 1 |
 | [Lonny Baxter](players/baxtelo01.md) | Toronto Raptors | under contract | Lonny Baxter · 2004-09-09 | 1 |
 | [Loren Woods](players/woodslo01.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
@@ -522,7 +522,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Stromile Swift](players/swiftst01.md) | Memphis Grizzlies | under contract | Stromile Swift · 2004-09-09 | 2 |
 | [Szymon Szewczyk](players/szewcsz01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [T.J. Ford](players/fordtj01.md) | Milwaukee Bucks | No verified contract record | No verified current agreement | 0 |
-| [Tamar Slay](players/slayta01.md) | Free agent | minimum contract unverified | No verified current agreement | 0 |
+| [Tamar Slay](players/slayta01.md) | New Jersey Nets | minimum contract unverified | No verified current agreement | 0 |
 | [Tariq Abdul-Wahad](players/abdulta01.md) | Free agent | under contract | Tariq Abdul-Wahad · 2000-08-01 | 1 |
 | [Tayshaun Prince](players/princta01.md) | Golden State Warriors | under rookie contract | Tayshaun Prince · 2002-07-02 | 1 |
 | [Terence Morris](players/morrite01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |

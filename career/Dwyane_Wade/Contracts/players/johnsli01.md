@@ -2,9 +2,9 @@
 
 # Contract | Linton Johnson
 
-Known through: 2005-01-17. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
+Known through: 2005-01-18. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
 
-Linton Johnson: No verified contract record. Evidence cutoff: 2005-01-17.
+Linton Johnson: No verified contract record. Evidence cutoff: 2005-01-18.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Linton Johnson |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Detroit Pistons |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

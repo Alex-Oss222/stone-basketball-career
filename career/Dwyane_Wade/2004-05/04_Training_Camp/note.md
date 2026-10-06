@@ -20,5 +20,6 @@ status: active
 - 2005-01-17: Miami proposes to Boston Celtics: Eddie Jones, Maurice Baker for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-adc5909b8d). Record: `00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json`.
 - 2005-01-17: Boston Celtics declines Miami's proposal (2005-01-17-adc5909b8d).
 - 2005-01-17: Miami proposes to Boston Celtics: Eddie Jones, Maurice Evans for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-14d65ed9c8). Record: `00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json`.
+- 2005-01-18: Boston Celtics declines Miami's proposal (2005-01-17-14d65ed9c8).
 
 ## Consequences
