@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-20 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-21 
 
 **Contract/control:** Signed August 5, 2004 (minimum): 1 season(s) from 2004-05, $720,046 scheduled ($720,046 in 2004-05). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Reserve outside the planned rotation (staff rotation dated 2004-12-09, [record](../Depth_Chart/Reviews/2004-12-09/rotation.json)). On the injured list since 2004-12-12 (reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)).
+**Role:** Reserve outside the planned rotation (staff rotation dated 2004-12-09, [record](../Depth_Chart/Reviews/2004-12-09/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -49,7 +49,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2004-05 | MIA | 3 | 0 | 2.4 | 1.7 | 1.0 | 0.7 | 0.3 | 0.3 | 0.0 | 66.7% | 100.0% | N/A |
+| 2004-05 | MIA | 4 | 0 | 4.8 | 2.2 | 2.0 | 0.8 | 0.5 | 0.2 | 0.0 | 60.0% | 100.0% | 100.0% |
 
 Source: 2003-04 from closed simulated results (`Stats_and_Awards/League/2003-04/season_totals.json`); 2004-05 from closed Miami game results.
 

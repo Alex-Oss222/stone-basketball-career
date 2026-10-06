@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG / PG  
 **Age at assessment:** 19 · **Height:** 6-6 in shoes · **Weight:** 220 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-12-20 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-12-21 
 
 **Contract/control:** Existing contract: 3 season(s) from 2004-05, $8,089,602 scheduled ($2,361,800 in 2004-05). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
@@ -94,6 +94,7 @@ Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.105. Pressure concerns affect t
 | 2004-11-11 | Staff rotation of 2004-11-11: starter at SG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-11/rotation.json) |
 | 2004-11-25 | Staff rotation of 2004-11-25: starter at SG, staff plan 39 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-25/rotation.json) |
 | 2004-12-09 | Staff rotation of 2004-12-09: starter at SG, staff plan 38 minutes. | [Rotation](../Depth_Chart/Reviews/2004-12-09/rotation.json) |
+| December 21, 2004 | Injured (long) in event `2004-12-21-boston-celtics-at-miami-heat`: out 36 games; the game builder leaves him out of Miami's next 36 games. No grade change. | [Game 4 result](../../../06_Regular_Season/12_December/Week_3/Game_4.md) |
 
 ## Sources and uncertainty
 
@@ -114,7 +115,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2003-04 | MIA | 75 | 70 | 35.0 | 17.9 | 4.8 | 4.5 | 1.6 | 1.0 | 1.1 | 52.0% | 39.7% | 90.9% |
-| 2004-05 | MIA | 25 | 25 | 36.1 | 19.6 | 5.4 | 4.0 | 1.6 | 1.3 | 1.6 | 52.1% | 47.6% | 95.7% |
+| 2004-05 | MIA | 26 | 26 | 35.8 | 19.4 | 5.4 | 3.9 | 1.5 | 1.3 | 1.5 | 51.9% | 46.2% | 95.9% |
 
 Source: [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json) for roster status; detailed historical statistical lines have not yet been imported.
 
