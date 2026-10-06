@@ -2,9 +2,9 @@
 
 # Contract | Stacey Augmon
 
-Known through: 2004-10-24. [Open interactive contract](augmost01.html#contract) · [Contract history](augmost01.html#contract-history)
+Known through: 2004-10-25. [Open interactive contract](augmost01.html#contract) · [Contract history](augmost01.html#contract-history)
 
-Stacey Augmon: under contract. Evidence cutoff: 2004-10-24.
+Stacey Augmon: under contract. Evidence cutoff: 2004-10-25.
 
 ## Current contract
 

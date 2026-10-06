@@ -2,9 +2,9 @@
 
 # Contract | Zaza Pachulia
 
-Known through: 2004-10-24. [Open interactive contract](pachuza01.html#contract) · [Contract history](pachuza01.html#contract-history)
+Known through: 2004-10-25. [Open interactive contract](pachuza01.html#contract) · [Contract history](pachuza01.html#contract-history)
 
-Zaza Pachulia: No verified contract record. Evidence cutoff: 2004-10-24.
+Zaza Pachulia: No verified contract record. Evidence cutoff: 2004-10-25.
 
 ## Current contract
 

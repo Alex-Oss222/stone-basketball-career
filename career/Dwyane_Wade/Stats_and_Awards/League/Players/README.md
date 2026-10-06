@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-24**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-25**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -391,7 +391,7 @@ Card date: **2004-10-24**. 504 registry players, one Markdown card and one inter
 | [Michael Bradley](bradlmi01.md) | Free agent | 25 | silhouette | [open](bradlmi01.html) |
 | [Michael Ruffin](ruffimi01.md) | New Jersey Nets | None | silhouette | [open](ruffimi01.html) |
 | [Michael Stewart](stewami01.md) | Cleveland Cavaliers | 29 | silhouette | [open](stewami01.html) |
-| [Michael Sweetney](sweetmi01.md) | New York Knicks | 21 | silhouette | [open](sweetmi01.html) |
+| [Michael Sweetney](sweetmi01.md) | New York Knicks | 22 | silhouette | [open](sweetmi01.html) |
 | [Mike Batiste](batismi01.md) | Free agent | 26 | sourced | [open](batismi01.html) |
 | [Nick Collison](collini01.md) | Seattle SuperSonics | 23 | sourced | [open](collini01.html) |
 | [Othella Harrington](harriot01.md) | New York Knicks | None | silhouette | [open](harriot01.html) |
