@@ -1934,6 +1934,116 @@
    "bbr_id": "hassetr01",
    "from": "Minnesota Timberwolves",
    "to": "Cleveland Cavaliers"
+  },
+  {
+   "id": "2004-05-market-2005-01-05-ten_day-moisoje01",
+   "date": "2005-01-05",
+   "kind": "ten_day",
+   "player": "Jérôme Moïso",
+   "bbr_id": "moisoje01",
+   "from": null,
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Jérôme Moïso",
+    "bbr_id": "moisoje01",
+    "position": "PF",
+    "games": 20,
+    "minutes": 120
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.98 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-05-ten_day-augmost01",
+   "date": "2005-01-05",
+   "kind": "ten_day",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 55,
+    "minutes": 663
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.68 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-05-ten_day-fizerma01",
+   "date": "2005-01-05",
+   "kind": "ten_day",
+   "player": "Marcus Fizer",
+   "bbr_id": "fizerma01",
+   "from": null,
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Marcus Fizer",
+    "bbr_id": "fizerma01",
+    "position": "PF",
+    "games": 54,
+    "minutes": 903
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.43 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-05-ten_day-johnsli01",
+   "date": "2005-01-05",
+   "kind": "ten_day",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 15
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.42 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-05-ten_day-willima01",
+   "date": "2005-01-05",
+   "kind": "ten_day",
+   "player": "Mo Williams",
+   "bbr_id": "willima01",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "Mo Williams",
+    "bbr_id": "willima01",
+    "position": "PG",
+    "games": 80,
+    "minutes": 2254
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.35 x fit"
   }
  ],
  "market_days": [
@@ -2000,6 +2110,7 @@
   "2005-01-01",
   "2005-01-02",
   "2005-01-03",
-  "2005-01-04"
+  "2005-01-04",
+  "2005-01-05"
  ]
 }
