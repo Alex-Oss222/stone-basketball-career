@@ -47,13 +47,16 @@ def rookie_schedule(pick, start_season, scale):
 def build(season, root=ROOT, market=None):
     """The ledger for `season` from the summer market's record: {bbr_id: entry}."""
     from .contract_terms import existing_terms
-    from .free_agency_2004 import RECORD, calendar
+    from .free_agency_2004 import calendar, market_year, record_for, year_context
+    from .seasons import previous_season
     root = Path(root)
-    market = market or json.loads((root / RECORD).read_text(encoding="utf-8"))
+    year = market_year(season)
+    market = market or json.loads((root / record_for(season)).read_text(encoding="utf-8"))
     terms = existing_terms(root) if season == "2004-05" else carried(season, root)
-    scale = calendar(root)["scale"]
+    with year_context(year, root):
+        scale = calendar(root)["scale"]
     picks = {}
-    draft = root / PLAYER / "2003-04/09_Draft/draft_2004.json"
+    draft = root / PLAYER / previous_season(season) / f"09_Draft/draft_{year}.json"
     if draft.is_file():
         picks = {p["bbr_id"]: p["pick"] for p in json.loads(draft.read_text(encoding="utf-8"))["picks"] if p.get("bbr_id") and p["round"] == 1}
     # Miami's carried contracts keep the schedule on its own previous cap sheet (AI/GM records), keyed by the register.

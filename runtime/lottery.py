@@ -9,6 +9,12 @@ in seed order; the playoff clubs take the rest of the first round by record, wor
 is forfeited by a pre-career sanction); the second round runs in reverse record of all 29 clubs, Charlotte at No. 33.
 Every chance answer is an engine draw, journaled and never re-rolled. Pick ownership follows
 `library/2004/league/nba_2004_pick_ownership.json`. The result is `09_Draft/draft_order_2004.json`.
+
+Every later draft (R5, October 2026) runs the same way from its own year's files (`library/<year>/league/
+nba_<year>_lottery_rules.json` and `nba_<year>_pick_ownership.json`), its season's simulated record and playoff field,
+into `career/Dwyane_Wade/<season>/09_Draft/draft_order_<year>.json`: every non-playoff club enters the lottery unless
+the ownership file fixes an expansion slot, a club the rules file makes ineligible for a pick (`ineligible`:
+{code: [picks]}) is left out of that pick's draw, and forfeited picks are skipped.
 """
 from __future__ import annotations
 
@@ -16,6 +22,30 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+MIAMI, MIA = "Miami Heat", "MIA"
+
+
+class Year:
+    """A draft year's files, folders and dates."""
+
+    def __init__(self, year=2004, root=ROOT):
+        from .seasons import dates
+        self.year = int(year)
+        self.season = f"{self.year - 1}-{str(self.year)[-2:]}"
+        self.next_season = f"{self.year}-{str(self.year + 1)[-2:]}"
+        lib = Path(f"library/{self.year}/league")
+        self.rules_path = lib / f"nba_{self.year}_lottery_rules.json"
+        self.ownership_path = lib / f"nba_{self.year}_pick_ownership.json"
+        self.rosters_path = lib / f"nba_{self.year}_{str(self.year + 1)[-2:]}_team_rosters.json"
+        self.folder = Path(f"career/Dwyane_Wade/{self.season}/09_Draft")
+        self.record = self.folder / f"draft_order_{self.year}.json"
+        self.draws = self.folder / "Lottery_Draws"
+        rules = _read(Path(root) / self.rules_path) if (Path(root) / self.rules_path).is_file() else {}
+        self.lottery_date = rules.get("lottery_date")
+        self.season_end = dates(self.season, root)["regular_season_end"]
+
+
+# The 2004 names other modules and records use.
 SEASON = "2003-04"
 RULES = Path("library/2004/league/nba_2004_lottery_rules.json")
 OWNERSHIP = Path("library/2004/league/nba_2004_pick_ownership.json")
@@ -25,27 +55,26 @@ RECORD = FOLDER / "draft_order_2004.json"
 DRAWS = FOLDER / "Lottery_Draws"
 LOTTERY_DATE = "2004-05-26"
 SEASON_END = "2004-04-14"
-MIAMI, MIA = "Miami Heat", "MIA"
 
 
 def _read(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
-def codes(root=ROOT):
-    out = {club: v["code"] for club, v in _read(Path(root) / ROSTERS)["clubs"].items()}
+def codes(root=ROOT, y=None):
+    out = {club: v["code"] for club, v in _read(Path(root) / (y.rosters_path if y else ROSTERS))["clubs"].items()}
     out[MIAMI] = MIA
     return out
 
 
-def records(root=ROOT):
+def records(root=ROOT, y=None):
     from .standings import standings_on
-    return standings_on(SEASON_END, root, SEASON)
+    return standings_on(y.season_end if y else SEASON_END, root, y.season if y else SEASON)
 
 
-def playoff_clubs(root=ROOT):
+def playoff_clubs(root=ROOT, y=None):
     from .playoffs import read
-    record = read(root)
+    record = read(root, y.season if y else SEASON)
     return {row["club"] for conf in ("East", "West") for row in record["seeds"][conf]}
 
 
@@ -58,10 +87,10 @@ def _packet(event_id, question, options, basis, date=LOTTERY_DATE):
             "options": probs, "basis": basis}
 
 
-def _draw(root, packet):
+def _draw(root, packet, y=None):
     """The drawn outcome, or None after writing the packet for the engine."""
     root = Path(root)
-    path = root / DRAWS / f"{packet['event_id']}.decision.json"
+    path = root / (y.draws if y else DRAWS) / f"{packet['event_id']}.decision.json"
     result = path.with_name(path.name.replace(".decision.json", ".decision.result.json"))
     if result.is_file():
         return _read(result)["outcome"]
@@ -71,8 +100,10 @@ def _draw(root, packet):
     return None
 
 
-def order_by_record(clubs, table, root, label, worst_first=True):
+def order_by_record(clubs, table, root, label, worst_first=True, y=None):
     """Clubs ordered by winning percentage (worst first); exact ties ordered by an engine drawing. None while waiting."""
+    year = y.year if y else 2004
+    date = (y.lottery_date if y else LOTTERY_DATE)
     groups = {}
     for c in clubs:
         groups.setdefault(table[c]["pct"], []).append(c)
@@ -80,9 +111,10 @@ def order_by_record(clubs, table, root, label, worst_first=True):
     for pct in sorted(groups, reverse=not worst_first):
         tied = sorted(groups[pct])
         while len(tied) > 1:
-            first = _draw(root, _packet(f"2004-draft-{label}-tie-{'-'.join(codes(root)[c].lower() for c in tied)}",
-                                        f"2004 draft order ({label}): which of " + ", ".join(tied) + f" (tied at {pct:.3f}) goes first?",
-                                        {c: 1 for c in tied}, "Equal simulated records; ordered by a drawing (runtime/lottery.py)."))
+            first = _draw(root, _packet(f"{year}-draft-{label}-tie-{'-'.join(codes(root, y)[c].lower() for c in tied)}",
+                                        f"{year} draft order ({label}): which of " + ", ".join(tied) + f" (tied at {pct:.3f}) goes first?",
+                                        {c: 1 for c in tied}, "Equal simulated records; ordered by a drawing (runtime/lottery.py).",
+                                        date), y)
             if first is None:
                 return None
             out.append(first)
@@ -91,14 +123,17 @@ def order_by_record(clubs, table, root, label, worst_first=True):
     return out
 
 
-def build(root=ROOT):
+def build(root=ROOT, year=2004):
     """The draft order record, or None while an engine draw is pending."""
     root = Path(root)
-    rules, own = _read(root / RULES), _read(root / OWNERSHIP)
-    table, playoff, code = records(root), playoff_clubs(root), codes(root)
+    y = None if int(year) == 2004 else Year(year, root)
+    rules, own = _read(root / (y.rules_path if y else RULES)), _read(root / (y.ownership_path if y else OWNERSHIP))
+    table, playoff, code = records(root, y), playoff_clubs(root, y), codes(root, y)
+    year = int(year)
+    date = y.lottery_date if y else LOTTERY_DATE
     clubs = sorted(table)
     lottery = [c for c in clubs if c not in playoff]
-    seeds = order_by_record(lottery, table, root, "lottery-seeding")
+    seeds = order_by_record(lottery, table, root, "lottery-seeding", y=y)
     if seeds is None:
         return None
     combos = rules["combinations_by_seed"]
@@ -108,50 +143,58 @@ def build(root=ROOT):
         idx = [seeds.index(x) for x in tied]
         total = sum(combos[i] for i in idx)
         chances[c] = total // len(tied) + (1 if tied.index(c) < total % len(tied) else 0)
+    ineligible = rules.get("ineligible", {})
     winners = []
     for n in range(1, rules["picks_drawn"] + 1):
-        left = {c: w for c, w in chances.items() if c not in winners}
-        won = _draw(root, _packet(f"2004-draft-lottery-pick-{n}", f"2004 NBA draft lottery: which club wins pick No. {n}?",
-                                  left, f"Lottery combinations by simulated record ({RULES.as_posix()}); clubs already drawn removed."))
+        left = {c: w for c, w in chances.items() if c not in winners and n not in ineligible.get(code[c], [])}
+        won = _draw(root, _packet(f"{year}-draft-lottery-pick-{n}", f"{year} NBA draft lottery: which club wins pick No. {n}?",
+                                  left, f"Lottery combinations by simulated record ({(y.rules_path if y else RULES).as_posix()}); "
+                                  "clubs already drawn or ineligible for this pick removed.", date), y)
         if won is None:
             return None
         winners.append(won)
     rest = [c for c in seeds if c not in winners]
-    expansion = own["expansion"]["club"]
+    expansion = (own.get("expansion") or {}).get("club")
+    names = {v: k for k, v in code.items()}
     first_round = winners + rest
-    first_round.insert(own["expansion"]["round_1_slot"] - 1, "__CHA__")     # Charlotte's fixed No. 4
-    playoffs_order = order_by_record(sorted(playoff), table, root, "playoff-clubs")
+    if expansion and own["expansion"].get("round_1_slot"):
+        first_round.insert(own["expansion"]["round_1_slot"] - 1, "__EXP__")     # an expansion club's fixed slot
+        names[expansion] = own["expansion"].get("name", "Charlotte Bobcats")
+    playoffs_order = order_by_record(sorted(playoff), table, root, "playoff-clubs", y=y)
     if playoffs_order is None:
         return None
-    forfeit = set(own["forfeited"]["round_1"])
-    names = {v: k for k, v in code.items()}
-    names[expansion] = "Charlotte Bobcats"
+    forfeit = set((own.get("forfeited") or {}).get("round_1", []))
     first_round += [c for c in playoffs_order if code[c] not in forfeit]
-    # Second round: reverse order of record for all 29 clubs, tied clubs in the opposite order to round one.
+    # Second round: reverse order of record for every club, tied clubs in the opposite order to round one.
     round_one_rank = {c: i for i, c in enumerate(seeds + playoffs_order)}
     second = sorted(clubs, key=lambda c: (table[c]["pct"], -round_one_rank[c]))
-    second.insert(own["expansion"]["round_2_slot"] - len(first_round) - 1, "__CHA__")
+    forfeit_2 = set((own.get("forfeited") or {}).get("round_2", []))
+    second = [c for c in second if code[c] not in forfeit_2]
+    if expansion and own["expansion"].get("round_2_slot"):
+        second.insert(own["expansion"]["round_2_slot"] - len(first_round) - 1, "__EXP__")
     slots = []
     for rnd, seq, owners in ((1, first_round, own["round_1"]), (2, second, own["round_2"])):
         for club in seq:
-            original = expansion if club == "__CHA__" else code[club]
+            original = expansion if club == "__EXP__" else code[club]
             owner = owners.get(original, {}).get("owner", original)
             slots.append({"pick": len(slots) + 1, "round": rnd, "original": original, "owner": owner,
                           "owner_club": names.get(owner, owner)})
-    return {"schema_version": 1, "kind": "draft_order", "draft": "2004 NBA Draft", "lottery_date": LOTTERY_DATE,
+    return {"schema_version": 1, "kind": "draft_order", "draft": f"{year} NBA Draft", "lottery_date": date,
             "rule": __doc__.split("\n\n", 1)[1].strip(), "lottery_seeds": [{"seed": i + 1, "club": c, "record":
             f"{table[c]['wins']}-{table[c]['losses']}", "combinations": chances[c]} for i, c in enumerate(seeds)],
             "lottery_winners": winners, "picks": slots}
 
 
-def run(root=ROOT, clock=None):
+def run(root=ROOT, clock=None, year=2004):
     """On or after the lottery date: write the order once every draw is in. Returns the record or None."""
     from .write_back import clock as career_clock
     root = Path(root)
-    if (clock or career_clock(root)) < LOTTERY_DATE or (root / RECORD).is_file():
+    y = None if int(year) == 2004 else Year(year, root)
+    date, record_path = (y.lottery_date, y.record) if y else (LOTTERY_DATE, RECORD)
+    if not date or (clock or career_clock(root)) < date or (root / record_path).is_file():
         return None
-    record = build(root)
+    record = build(root, year)
     if record:
-        (root / RECORD).parent.mkdir(parents=True, exist_ok=True)
-        (root / RECORD).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        (root / record_path).parent.mkdir(parents=True, exist_ok=True)
+        (root / record_path).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return record

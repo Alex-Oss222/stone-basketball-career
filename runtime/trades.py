@@ -476,7 +476,7 @@ class Assets:
         wins = self.standings.get(owner_record_club, {}).get("wins", 41)
         order = sorted(self.standings.values(), key=lambda r: r["wins"])
         slot = 1 + sum(1 for r in order if r["wins"] < wins)      # worst record picks first (lottery ignored)
-        years_out = max(0, pick["year"] - 2004)
+        years_out = max(0, pick["year"] - int(self.season[:4]))
         slot = 15 + (slot - 15) * FUTURE_PICK_REGRESSION ** years_out
         if miami_own:
             slot += MIAMI_PICK_PESSIMISM
@@ -561,11 +561,11 @@ class TradeDesk:
     def _market_signings(self, on):
         """New contracts other clubs signed in the season's summer market (its record's dated rows), for the
         newly-signed trade restriction. Existing contracts and exercised options carry no restriction."""
-        from .free_agency_2004 import RECORD
-        path = self.root / RECORD
-        if not path.is_file() or self.season != "2004-05":
+        from .free_agency_2004 import record_for
+        path = self.root / record_for(self.season)
+        if not path.is_file():
             return {}
-        record = read_json(RECORD, self.root)
+        record = read_json(record_for(self.season), self.root)
         # The club rows carry the contract; the events carry the dates (the latest contract-making event for the player).
         signed_on = {}
         for e in record.get("events", []):
@@ -583,11 +583,11 @@ class TradeDesk:
         """(first, last) day of the season's July moratorium and the first signing day."""
         if self.season == SEASON:
             return MORATORIUM, SIGNING_OPENS
-        from .free_agency_2004 import OPEN, SIGN_FROM
-        if self.season != "2004-05":
-            raise NotImplementedError(f"{self.season}: no summer market calendar (roadmap R5)")
-        last = (date.fromisoformat(SIGN_FROM) - timedelta(days=1)).isoformat()
-        return (OPEN, last), SIGN_FROM
+        from . import free_agency_2004 as fa
+        with fa.year_context(fa.market_year(self.season), self.root):
+            first, sign_from = fa.OPEN, fa.SIGN_FROM
+        last = (date.fromisoformat(sign_from) - timedelta(days=1)).isoformat()
+        return (first, last), sign_from
 
     def partner_cap(self, club):
         """The partner's own cap: an expansion club's where the season records one (league_book.club_cap)."""

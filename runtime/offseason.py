@@ -188,3 +188,62 @@ def write(root=ROOT, on=SEASON_END):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(book, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return book
+
+
+def book_for(season):
+    """The season's opening book (`league_moves.book_path`)."""
+    from .league_moves import book_path
+    return book_path(season)
+
+
+def later_book(season, root=ROOT):
+    """A later season's opening book (R5): the simulated summer market alone places every player (rules 7 and 8). Each
+    club keeps its fifteen with the most real minutes for the season; the rest, and every real player the market left
+    unsigned, start in the free-agent pool unless his real career has ended (runtime/availability.py: a retired player
+    never comes back; one who sits the season out is not in the pool)."""
+    from .availability import status
+    from .free_agency_2004 import market_year, record_path
+    root = Path(root)
+    record = _read(root / record_path(market_year(season)))
+    new = real_clubs(season, root)
+    role = lambda b: (new.get(b) or (None, None, {}))[2]
+    clubs, pool, held, counts = defaultdict(list), [], set(), Counter()
+    for club, rows in record["clubs"].items():
+        for r in rows:
+            b = r.get("bbr_id")
+            if not b:
+                continue
+            held.add(b)
+            row = dict(bbr_id=b, player_id=r["player"], club=club, rule="7_contract_after_the_summer_market",
+                       from_club=r.get("from"), games=role(b).get("games", 0), minutes=role(b).get("minutes", 0),
+                       position=role(b).get("position") or r.get("position"))
+            counts[row["rule"]] += 1
+            clubs[club].append(row)
+    miami = clubs.pop(MIAMI, [])
+    for club, players in clubs.items():
+        players.sort(key=lambda p: (-p["minutes"], p["bbr_id"]))
+        if len(players) > ROSTER_MAX:
+            pool += [dict(p, rule=p["rule"] + "+pool_over_fifteen") for p in players[ROSTER_MAX:]]
+            clubs[club] = players[:ROSTER_MAX]
+    for p in record.get("unsigned_pool", []):
+        b = p.get("bbr_id")
+        if not b or b in held or status(b, season, root) != "available":
+            continue
+        counts["8_unsigned_after_the_summer_market"] += 1
+        pool.append(dict(bbr_id=b, player_id=p["player"], club=None, rule="8_unsigned_after_the_summer_market+pool_unsigned",
+                         from_club=p.get("rights"), games=role(b).get("games", 0), minutes=role(b).get("minutes", 0),
+                         position=role(b).get("position") or p.get("position")))
+    return {"schema_version": 1, "season": season, "kind": "opening_rosters", "as_of": f"{market_year(season)}-09-30",
+            "rule": later_book.__doc__.strip(), "clubs": {c: clubs[c] for c in sorted(clubs)},
+            "pool": sorted(pool, key=lambda p: -p["minutes"]), "not_placed": miami, "counts": dict(counts)}
+
+
+def write_season(season, root=ROOT):
+    """Write the season's opening book: 2004-05 by its own rules, later seasons from their summer market."""
+    if season == NEW:
+        return write(root)
+    book = later_book(season, root)
+    path = Path(root) / book_for(season)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(book, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return book

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Run the dated offseason events due on a day (2004): the draft lottery on May 26 (runtime/lottery.py), the expansion
-draft on June 22 (runtime/expansion.py), the draft on June 24 (runtime/draft.py) and the summer market from June 30
-(runtime/free_agency_2004.py) for every club.
+"""Run the dated offseason events due on a day: the draft lottery (runtime/lottery.py), the 2004 expansion draft
+(runtime/expansion.py), the draft (runtime/draft.py) and the summer market from June 30 (runtime/free_agency_2004.py)
+for every club. The year is the date's: each module runs in its year context (R5); expansion happened only in 2004.
 
     python scripts/offseason_day.py --write DATE
 
@@ -23,22 +23,34 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--write", metavar="DATE", required=True)
     args = parser.parse_args()
-    order = lottery.run(ROOT, args.write)
+    year = int(args.write[:4])
+    calendar = ROOT / f"library/{year}/league/nba_{year}_offseason_calendar.json"
+    if not calendar.is_file():
+        if args.write < f"{year}-05-15":                # no offseason event before mid-May
+            print("offseason events checked for", args.write)
+            return 0
+        # stop the clock rather than let it pass an unbuilt offseason
+        print(f"no {year} offseason library data ({calendar.relative_to(ROOT)}): the {year} lottery, draft and market "
+              "cannot run (docs/ROADMAP.md, R5)", file=sys.stderr)
+        return 2
+    order = lottery.run(ROOT, args.write, year=year)
     if order:
-        print("2004 draft lottery: " + ", ".join(f"No. {i + 1} {c}" for i, c in enumerate(order["lottery_winners"])))
-    taken = expansion.run(ROOT, args.write)
-    if taken:
-        print(f"2004 expansion draft: Charlotte selects {len(taken['selections'])} players")
-    made = draft.run(ROOT, args.write)
+        print(f"{year} draft lottery: " + ", ".join(f"No. {i + 1} {c}" for i, c in enumerate(order["lottery_winners"])))
+    if year == 2004:
+        taken = expansion.run(ROOT, args.write)
+        if taken:
+            print(f"2004 expansion draft: Charlotte selects {len(taken['selections'])} players")
+    with draft.year_context(year, ROOT):
+        made = draft.run(ROOT, args.write)
     if made:
         for p in made["picks"]:
             if p["club"] == draft.MIAMI:
                 print(f"Miami selects {p['player']} ({p['position']}) at No. {p['pick']}")
-        print(f"2004 draft complete: {len(made['picks'])} picks, {len(made['trades'])} draft-night trade(s)")
-    market = free_agency_2004.run(ROOT, args.write)
+        print(f"{year} draft complete: {len(made['picks'])} picks, {len(made['trades'])} draft-night trade(s)")
+    market = free_agency_2004.run(ROOT, args.write, year=year)
     if market:
         miami = market["clubs"].get(draft.MIAMI, [])
-        print(f"2004 free agency complete: {sum(len(v) for v in market['clubs'].values())} contracts; Miami {len(miami)} players, "
+        print(f"{year} free agency complete: {sum(len(v) for v in market['clubs'].values())} contracts; Miami {len(miami)} players, "
               f"payroll ${market['payroll'].get(draft.MIAMI, 0):,}")
     print("offseason events checked for", args.write)
     return 0

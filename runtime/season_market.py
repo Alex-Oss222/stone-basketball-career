@@ -36,9 +36,9 @@ def for_date(on, root=ROOT):
 
 def summer_record(season, root=ROOT):
     """The summer market's record that opened the season, or None before it closed."""
-    from .free_agency_2004 import NEW, RECORD
-    path = Path(root) / RECORD
-    if season != NEW or not path.is_file():
+    from .free_agency_2004 import record_for
+    path = Path(root) / record_for(season)
+    if not path.is_file():
         return None
     return _read(path)
 

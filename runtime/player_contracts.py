@@ -201,12 +201,15 @@ MARKET_SIGNINGS = ("signing", "re_sign", "offer_sheet_matched", "qualifying_offe
 
 
 def _market_contracts(root, player, cutoff, add, profiles, match, protagonist):
-    from .free_agency_2004 import NEW, RECORD
+    """Every completed summer market's contracts (2004 onward), oldest first."""
+    for path in sorted(Path(root).glob("career/Dwyane_Wade/????-??/10_Free_Agency/free_agency_????.json")):
+        year = int(path.stem[-4:])
+        _market_year_contracts(root, player, cutoff, add, profiles, match, protagonist, path, f"{year}-{str(year + 1)[-2:]}")
+
+
+def _market_year_contracts(root, player, cutoff, add, profiles, match, protagonist, path, NEW):
     from .league_contracts import read as read_ledger, schedule_for
     from .seasons import dates
-    path = Path(root) / RECORD
-    if not path.is_file():
-        return
     record = _read(path)
     ledger = read_ledger(NEW, root) or {}
     guarantee = dates(NEW, root)["guarantee"]
