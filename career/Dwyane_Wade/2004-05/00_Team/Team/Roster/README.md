@@ -2,14 +2,14 @@
 
 <!-- team-status:start -->
 
-[roster.json](roster.json) is the machine-readable register (team-control record dated 2005-01-10). Availability below is on 2005-01-19, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
+[roster.json](roster.json) is the machine-readable register (team-control record dated 2005-01-10). Availability below is on 2005-01-20, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
 
-| Player | Pos | Control | Availability on 2005-01-19 | Staff role |
+| Player | Pos | Control | Availability on 2005-01-20 | Staff role |
 | --- | --- | --- | --- | --- |
 | [Eddie Jones](../Player_Cards/eddie_jones.md) | SG/SF | under contract | Available | rotation at SG, staff plan 8 minutes |
 | [Brian Grant](../Player_Cards/brian_grant.md) | C/PF | under contract | Available | starter at C, staff plan 34 minutes |
 | [Mike James](../Player_Cards/mike_james.md) | PG | under contract | Available | starter at PG, staff plan 34 minutes |
-| [Mehmet Okur](../Player_Cards/mehmet_okur.md) | PF | under contract | Available | rotation at PF, staff plan 19 minutes |
+| [Mehmet Okur](../Player_Cards/mehmet_okur.md) | PF | under contract | Available | starter at PF, staff plan 34 minutes |
 | [Dwyane Wade](../Player_Cards/dwyane_wade.md) | SG/PG | under contract | Available | starter at SG, staff plan 37 minutes |
 | [Caron Butler](../Player_Cards/caron_butler.md) | SF | under contract | Available | starter at SF, staff plan 34 minutes |
 | [Kendall Gill](../Player_Cards/kendall_gill.md) | SG | under contract | Available | rotation at SG, staff plan 12 minutes |
@@ -21,7 +21,7 @@
 | [Bernard Robinson](../Player_Cards/bernard_robinson.md) | SG | unsigned draft rights | Available | reserve outside the planned rotation |
 | [Christian Drejer](../Player_Cards/christian_drejer.md) | SF | unsigned draft rights | Available | reserve outside the planned rotation |
 | [Rafer Alston](../Player_Cards/rafer_alston.md) | PG | camp contract | Available | rotation at PG, staff plan 15 minutes |
-| [Donyell Marshall](../Player_Cards/donyell_marshall.md) | PF | under contract | Available | starter at PF, staff plan 34 minutes |
+| [Donyell Marshall](../Player_Cards/donyell_marshall.md) | PF | under contract | Available | rotation at PF, staff plan 19 minutes |
 | [Lamond Murray](../Player_Cards/lamond_murray.md) | SF | under contract | Available | rotation at SF, staff plan 4 minutes |
 
 Players whose contracts ended, were released or voided remain in roster.json with their labels as history.

@@ -2390,6 +2390,50 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.45 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-20-ten_day-shirlpa01",
+   "date": "2005-01-20",
+   "kind": "ten_day",
+   "player": "Paul Shirley",
+   "bbr_id": "shirlpa01",
+   "from": null,
+   "to": "Memphis Grizzlies",
+   "role": {
+    "player_id": "Paul Shirley",
+    "bbr_id": "shirlpa01",
+    "position": "PF",
+    "games": 9,
+    "minutes": 30
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-30",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.34 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-20-ten_day-borchcu01",
+   "date": "2005-01-20",
+   "kind": "ten_day",
+   "player": "Curtis Borchardt",
+   "bbr_id": "borchcu01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Curtis Borchardt",
+    "bbr_id": "borchcu01",
+    "position": "C",
+    "games": 67,
+    "minutes": 859
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-30",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.27 x fit"
   }
  ],
  "market_days": [
@@ -2471,6 +2515,7 @@
   "2005-01-16",
   "2005-01-17",
   "2005-01-18",
-  "2005-01-19"
+  "2005-01-19",
+  "2005-01-20"
  ]
 }

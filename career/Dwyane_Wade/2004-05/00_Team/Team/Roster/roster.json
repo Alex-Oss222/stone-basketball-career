@@ -20,7 +20,7 @@
    "college": "Temple",
    "status": "under_contract",
    "control": "Existing contract: 3 season(s) from 2004-05, $44,401,500 scheduled ($13,455,000 in 2004-05).",
-   "working_role": "Rotation at SG, staff plan 8 minutes (rotation 2005-01-06)",
+   "working_role": "Rotation at SG, staff plan 8 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/eddie_jones.md",
    "bbr_id": "jonesed02"
   },
@@ -37,7 +37,7 @@
    "college": "Xavier",
    "status": "under_contract",
    "control": "Existing contract: 1 season(s) from 2004-05, $13,233,434 scheduled ($13,233,434 in 2004-05).",
-   "working_role": "Starter at C, staff plan 34 minutes (rotation 2005-01-06)",
+   "working_role": "Starter at C, staff plan 34 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/brian_grant.md",
    "bbr_id": "grantbr01"
   },
@@ -66,7 +66,7 @@
    "college": "Duquesne",
    "status": "under_contract",
    "control": "Existing contract: 2 season(s) from 2004-05, $7,244,223 scheduled ($3,431,474 in 2004-05).",
-   "working_role": "Starter at PG, staff plan 34 minutes (rotation 2005-01-06)",
+   "working_role": "Starter at PG, staff plan 34 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/mike_james.md",
    "bbr_id": "jamesmi01"
   },
@@ -77,7 +77,7 @@
     "PF"
    ],
    "date_of_birth": "1979-05-26",
-   "working_role": "Rotation at PF, staff plan 19 minutes (rotation 2005-01-06)",
+   "working_role": "Starter at PF, staff plan 34 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/mehmet_okur.md",
    "bbr_id": "okurme01",
    "status": "under_contract",
@@ -96,7 +96,7 @@
    "college": "UConn (simulation canon)",
    "status": "under_contract",
    "control": "Existing contract: 3 season(s) from 2004-05, $8,089,602 scheduled ($2,361,800 in 2004-05).",
-   "working_role": "Starter at SG, staff plan 37 minutes (rotation 2005-01-06)",
+   "working_role": "Starter at SG, staff plan 37 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/dwyane_wade.md"
   },
   {
@@ -111,7 +111,7 @@
    "college": "UConn",
    "status": "under_contract",
    "control": "Existing contract: 1 season(s) from 2004-05, $1,930,680 scheduled ($1,930,680 in 2004-05).",
-   "working_role": "Starter at SF, staff plan 34 minutes (rotation 2005-01-06)",
+   "working_role": "Starter at SF, staff plan 34 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/caron_butler.md",
    "bbr_id": "butleca01"
   },
@@ -122,7 +122,7 @@
     "SG"
    ],
    "date_of_birth": "1968-05-25",
-   "working_role": "Rotation at SG, staff plan 12 minutes (rotation 2005-01-06)",
+   "working_role": "Rotation at SG, staff plan 12 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/kendall_gill.md",
    "bbr_id": "gillke01",
    "status": "under_contract",
@@ -134,7 +134,7 @@
    "positions": [
     "SF"
    ],
-   "working_role": "Rotation at SF, staff plan 10 minutes (rotation 2005-01-06)",
+   "working_role": "Rotation at SF, staff plan 10 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/dorell_wright.md",
    "bbr_id": "wrighdo01",
    "status": "under_contract",
@@ -146,7 +146,7 @@
    "positions": [
     "C"
    ],
-   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2005-01-06)",
+   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2005-01-20)",
    "player_card": "../Player_Cards/john_thomas.md",
    "bbr_id": "thomajo02",
    "status": "under_contract",
@@ -158,7 +158,7 @@
    "positions": [
     "SG"
    ],
-   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2005-01-06)",
+   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2005-01-20)",
    "player_card": "../Player_Cards/maurice_evans.md",
    "bbr_id": "evansma01",
    "status": "under_contract",
@@ -183,7 +183,7 @@
    "positions": [
     "PG"
    ],
-   "working_role": "Reserve outside the planned rotation (rotation 2005-01-06)",
+   "working_role": "Reserve outside the planned rotation (rotation 2005-01-20)",
    "player_card": "../Player_Cards/maurice_baker.md",
    "bbr_id": "bakerma01",
    "status": "under_contract",
@@ -195,7 +195,7 @@
    "positions": [
     "C"
    ],
-   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2005-01-06)",
+   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2005-01-20)",
    "player_card": "../Player_Cards/john_edwards.md",
    "bbr_id": "edwarjo01",
    "status": "under_contract",
@@ -273,7 +273,7 @@
    "date_of_birth": "1976-07-24",
    "status": "camp_contract",
    "control": "Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10; guaranteed 2005-01-10 (guarantee_review.json).",
-   "working_role": "Rotation at PG, staff plan 15 minutes (rotation 2005-01-06)",
+   "working_role": "Rotation at PG, staff plan 15 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/rafer_alston.md",
    "bbr_id": "alstora01"
   },
@@ -312,7 +312,7 @@
    "date_of_birth": "1973-05-18",
    "status": "under_contract",
    "control": "Acquired by trade from Toronto Raptors on December 20, 2004: $5,023,850 in 2004-05; contract through 2004-05.",
-   "working_role": "Starter at PF, staff plan 34 minutes (rotation 2005-01-06)",
+   "working_role": "Rotation at PF, staff plan 19 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/donyell_marshall.md",
    "bbr_id": "marshdo01"
   },
@@ -325,7 +325,7 @@
    "date_of_birth": "1973-04-20",
    "status": "under_contract",
    "control": "Acquired by trade from Toronto Raptors on December 20, 2004: $4,875,000 in 2004-05; contract through 2005-06.",
-   "working_role": "Rotation at SF, staff plan 4 minutes (rotation 2005-01-06)",
+   "working_role": "Rotation at SF, staff plan 4 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/lamond_murray.md",
    "bbr_id": "murrala01"
   }
