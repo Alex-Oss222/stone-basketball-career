@@ -14,4 +14,6 @@ days: 22-end
 
 ## Games and events
 
+- 2004-11-23: Portland Trail Blazers 97 at Miami Heat 95 — Miami Heat L 95-97 ([Game 1](Game_1.md), event `2004-11-23-portland-trail-blazers-at-miami-heat`)
+
 ## Consequences
