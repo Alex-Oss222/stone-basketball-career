@@ -276,8 +276,8 @@ def league_prior_salary(root, bbr_id):
 
 
 def planning_cap(root, day):
-    from .market import Market
-    return Market(day, root).planning_cap(day)
+    from .season_market import for_date              # the season's own cap (2003 Market in 2003-04)
+    return for_date(day, root).planning_cap(day)
 
 
 def base_year_compensation(sheet, rights, name, route, first_year, prior, cap, day):

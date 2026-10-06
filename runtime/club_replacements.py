@@ -123,7 +123,7 @@ def pool(day, season=None, root=ROOT):
 def choose(club, departing, day, season=None, root=ROOT):
     """The replacement a disturbed club signs and his terms, or None when the pool is empty."""
     season = season or _active_season(root)
-    from .market import Market
+    from .season_market import for_date as Market   # the season's own market
     from .skill_fit import SkillFit
     from .trades import Assets
     from .cba import minimum_salary

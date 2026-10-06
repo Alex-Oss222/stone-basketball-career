@@ -25,9 +25,12 @@ def main():
         print(f"symmetric league off on {day} (SYMMETRIC_FROM {league_book.SYMMETRIC_FROM}); nothing to do")
         return 0
     from runtime.league_market import LeagueMarket
-    from runtime.market import Market
+    from runtime.season_market import for_date as Market     # the season's own market
+    from runtime.write_back import registry
+    names = {r["bbr_id"]: r["name"] for r in registry(ROOT)["players"] if r.get("bbr_id")}
     for e in LeagueMarket(day, Market(day, ROOT), ROOT).run():
-        print(f"{e['date']}  {e['kind']:15} {e['player']}  {e['from'] or 'free agent'} -> {e['to'] or ('retired' if e['kind'] == 'retire' else 'free agent')}")
+        who = names.get(e["player"], e["player"])            # a roster listed by id (Malik Allen) prints his name
+        print(f"{e['date']}  {e['kind']:15} {who}  {e['from'] or 'free agent'} -> {e['to'] or ('retired' if e['kind'] == 'retire' else 'free agent')}")
     if date.fromisoformat(day).weekday() == 0:
         from runtime.league_trades import deadline, weekly
         if day <= deadline(day, ROOT):

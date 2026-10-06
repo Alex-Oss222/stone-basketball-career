@@ -225,6 +225,15 @@ def summary(day):
             if p["player_id"] == "Dwyane Wade":
                 say(f"    Wade {p['minutes']:.1f} min, {p['pts']} pts, {p['orb'] + p['drb']} reb, {p['ast']} ast, "
                     f"FG {p['fgm']}-{p['fga']}, 3P {p['tpm']}-{p['tpa']}, FT {p['ftm']}-{p['fta']}")
+        # Wade's injuries and absences, drawn by the engine, are always reported (the user's request, December 2004).
+        for e in (r.get("injuries") or []) + (r.get("absences") or []):
+            if e.get("player_id") == "Dwyane Wade":
+                line = (f"WADE {'INJURY' if e in (r.get('injuries') or []) else 'ABSENCE'}: {e.get('kind', 'unspecified')}, "
+                        f"{e.get('games_out', '?')} game(s) out (engine draw, {r['event_id']})")
+                say("    " + line)
+                WADE_NEWS.append(f"{day}  {line}")
+                if isinstance(e.get("games_out"), int) and e["games_out"] >= LONG_INJURY_GAMES:
+                    WADE_LONG.append(f"{day}  {line}")
 
 
 def playoff_day(day):
@@ -281,6 +290,9 @@ def camp_day(day):
 
 
 TRADES_TODAY = []
+WADE_NEWS = []                                   # Wade injuries and absences this run, repeated at the end
+WADE_LONG = []                                   # a long Wade injury stops the run like a Miami trade
+LONG_INJURY_GAMES = 10
 
 
 def option_day(day):
@@ -387,6 +399,8 @@ def main():
     parser.add_argument("--from", dest="start", help="first day (default: the career clock's day, rerun safely)")
     parser.add_argument("--series-end", action="store_true",
                         help="also stop (with the checkpoint and push) on the day a Miami playoff series is decided")
+    parser.add_argument("--through-injuries", action="store_true",
+                        help=f"keep going after a Wade injury of {LONG_INJURY_GAMES}+ games (by default the run stops, checkpointed and pushed)")
     parser.add_argument("--through-trades", action="store_true",
                         help="keep going after a Miami trade (by default the run stops, checkpointed and pushed, the day one executes)")
     args = parser.parse_args()
@@ -398,6 +412,10 @@ def main():
             if TRADES_TODAY and not args.through_trades:
                 checkpoint(day.isoformat())
                 say("DONE: " + "; ".join(TRADES_TODAY))     # the user is told of every Miami trade the day it happens
+                return 0
+            if WADE_LONG and not args.through_injuries:
+                checkpoint(day.isoformat())
+                say("DONE: " + "; ".join(WADE_LONG))       # the user is told of a long Wade injury the day it happens
                 return 0
             if args.series_end and miami_series_decided(day.isoformat()):
                 checkpoint(day.isoformat())
@@ -411,6 +429,8 @@ def main():
     except Stop as stop:
         say(f"STOPPED on {state()['current_date']}: {stop}")
         return 1
+    if WADE_NEWS:
+        say("Wade injuries and absences this run: " + "; ".join(WADE_NEWS))
     say(f"DONE through {end.isoformat()}")
     return 0
 

@@ -190,7 +190,7 @@ class LeagueTradeDesk:
 
 def weekly(root=ROOT, day=None, market=None):
     """Write the week's packet(s) and execute drawn acceptances. Returns (packets_written, moves_written)."""
-    from .market import Market
+    from .season_market import for_date as Market   # the season's own market (2003 Market in 2003-04)
     root = Path(root)
     market = market or Market(day, root)
     desk = LeagueTradeDesk(day, market, root)
