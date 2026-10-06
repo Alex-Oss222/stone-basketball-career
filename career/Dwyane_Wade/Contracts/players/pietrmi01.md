@@ -2,9 +2,9 @@
 
 # Contract | Mickael Pietrus
 
-Known through: 2004-11-28. [Open interactive contract](pietrmi01.html#contract) · [Contract history](pietrmi01.html#contract-history)
+Known through: 2004-11-29. [Open interactive contract](pietrmi01.html#contract) · [Contract history](pietrmi01.html#contract-history)
 
-Mickael Pietrus: No verified contract record. Evidence cutoff: 2004-11-28.
+Mickael Pietrus: No verified contract record. Evidence cutoff: 2004-11-29.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Mickael Pietrus |
-| Club / rights baseline | Golden State Warriors |
+| Club / rights baseline | Charlotte Bobcats |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

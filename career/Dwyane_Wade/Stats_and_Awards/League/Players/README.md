@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-11-28**. 570 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-11-29**. 570 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -12,7 +12,7 @@ Card date: **2004-11-28**. 570 registry players, one Markdown card and one inter
 | [Alvin Williams](willial02.md) | Toronto Raptors | 30 | sourced | [open](willial02.html) |
 | [Andre Miller](millean02.md) | Denver Nuggets | 28 | sourced | [open](millean02.html) |
 | [Anthony Carter](cartean01.md) | Free agent | 29 | sourced | [open](cartean01.html) |
-| [Anthony Goldwire](goldwan01.md) | Charlotte Bobcats | 33 | silhouette | [open](goldwan01.html) |
+| [Anthony Goldwire](goldwan01.md) | Golden State Warriors | 33 | silhouette | [open](goldwan01.html) |
 | [Anthony Johnson](johnsan02.md) | Indiana Pacers | 30 | sourced | [open](johnsan02.html) |
 | [Avery Johnson](johnsav01.md) | Free agent | 39 | silhouette | [open](johnsav01.html) |
 | [Baron Davis](davisba01.md) | New Orleans Hornets | 25 | sourced | [open](davisba01.html) |
@@ -72,7 +72,7 @@ Card date: **2004-11-28**. 570 registry players, one Markdown card and one inter
 | [Mark Jackson](jacksma01.md) | Free agent | 39 | sourced | [open](jacksma01.html) |
 | [Mateen Cleaves](cleavma01.md) | Cleveland Cavaliers | 27 | silhouette | [open](cleavma01.html) |
 | [Maurice Baker](bakerma01.md) | Miami Heat | 25 | silhouette | [open](bakerma01.html) |
-| [Mickael Pietrus](pietrmi01.md) | Golden State Warriors | 22 | sourced | [open](pietrmi01.html) |
+| [Mickael Pietrus](pietrmi01.md) | Charlotte Bobcats | 22 | sourced | [open](pietrmi01.html) |
 | [Mike Bibby](bibbymi01.md) | Sacramento Kings | 26 | sourced | [open](bibbymi01.html) |
 | [Mike James](jamesmi01.md) | Miami Heat | 29 | sourced | [open](jamesmi01.html) |
 | [Mike Wilks](wilksmi01.md) | Free agent | 25 | sourced | [open](wilksmi01.html) |
@@ -280,7 +280,7 @@ Card date: **2004-11-28**. 570 registry players, one Markdown card and one inter
 | [Jackie Butler](jackiebutler.md) | Philadelphia 76ers | 19 | silhouette | [open](jackiebutler.html) |
 | [Jackson Vroman](jacksonvroman.md) | Milwaukee Bucks | 23 | silhouette | [open](jacksonvroman.html) |
 | [Jalen Rose](roseja01.md) | Indiana Pacers | 31 | sourced | [open](roseja01.html) |
-| [Jamal Mashburn](mashbja01.md) | Free agent | 31 | silhouette | [open](mashbja01.html) |
+| [Jamal Mashburn](mashbja01.md) | Free agent | 32 | silhouette | [open](mashbja01.html) |
 | [Jameer Nelson](jameernelson.md) | Seattle SuperSonics | 22 | silhouette | [open](jameernelson.html) |
 | [James Jones](jonesja02.md) | Orlando Magic | 24 | sourced | [open](jonesja02.html) |
 | [James Posey](poseyja01.md) | Memphis Grizzlies | 27 | sourced | [open](poseyja01.html) |
@@ -432,7 +432,7 @@ Card date: **2004-11-28**. 570 registry players, one Markdown card and one inter
 | [Jerome Williams](willije01.md) | Chicago Bulls | 31 | sourced | [open](willije01.html) |
 | [John Wallace](wallajo01.md) | Free agent | 30 | silhouette | [open](wallajo01.html) |
 | [Josh Davis](davisjo02.md) | Sacramento Kings | 24 | silhouette | [open](davisjo02.html) |
-| [Juwan Howard](howarju01.md) | Charlotte Bobcats | 31 | sourced | [open](howarju01.html) |
+| [Juwan Howard](howarju01.md) | Golden State Warriors | 31 | sourced | [open](howarju01.html) |
 | [Kaniel Dickens](dickeka01.md) | Sacramento Kings | 26 | silhouette | [open](dickeka01.html) |
 | [Karl Malone](malonka01.md) | Free agent | 41 | sourced | [open](malonka01.html) |
 | [Keith Van Horn](vanhoke01.md) | San Antonio Spurs | 29 | sourced | [open](vanhoke01.html) |

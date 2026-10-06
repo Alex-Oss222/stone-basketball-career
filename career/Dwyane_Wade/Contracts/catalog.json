@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-11-28",
+  "as_of": "2004-11-29",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -284,7 +284,7 @@
     {
       "player_id": "goldwan01",
       "name": "Anthony Goldwire",
-      "team": "Charlotte Bobcats",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": "goldwan01-2004-08-19",
       "recorded_agreements": 1,
@@ -2597,7 +2597,7 @@
     {
       "player_id": "howarju01",
       "name": "Juwan Howard",
-      "team": "Charlotte Bobcats",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": "howarju01-2003-07-16",
       "recorded_agreements": 2,
@@ -3479,7 +3479,7 @@
     {
       "player_id": "pietrmi01",
       "name": "Mickael Pietrus",
-      "team": "Golden State Warriors",
+      "team": "Charlotte Bobcats",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

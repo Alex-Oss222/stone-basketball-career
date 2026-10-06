@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2004-11-29-goldwan01-howarju01-pietrmi01",
+ "date": "2004-11-29",
+ "clubs": [
+  "Charlotte Bobcats",
+  "Golden State Warriors"
+ ],
+ "a": {
+  "club": "Charlotte Bobcats",
+  "sends": [
+   "Juwan Howard",
+   "Anthony Goldwire"
+  ],
+  "bbr_ids": [
+   "howarju01",
+   "goldwan01"
+  ],
+  "salary": 6600000
+ },
+ "b": {
+  "club": "Golden State Warriors",
+  "sends": [
+   "Mickael Pietrus"
+  ],
+  "bbr_ids": [
+   "pietrmi01"
+  ],
+  "salary": 1785960
+ },
+ "gain": {
+  "Charlotte Bobcats": 0.161,
+  "Golden State Warriors": 0.2
+ },
+ "accept": {
+  "Charlotte Bobcats": 0.926,
+  "Golden State Warriors": 0.95
+ },
+ "both": 0.8797
+}

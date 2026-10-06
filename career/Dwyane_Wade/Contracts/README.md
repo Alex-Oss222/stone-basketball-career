@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-11-28. [Search the contract directory](index.html)
+Known through 2004-11-29. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -39,7 +39,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Ansu Sesay](players/sesayan01.md) | Free agent | minimum contract unverified | No verified current agreement | 0 |
 | [Antawn Jamison](players/jamisan01.md) | Dallas Mavericks | under contract | Antawn Jamison · 2001-08-28 | 1 |
 | [Anthony Carter](players/cartean01.md) | Free agent | player option exercised | Anthony Carter · existing contract; signing date not recorded | 1 |
-| [Anthony Goldwire](players/goldwan01.md) | Charlotte Bobcats | under contract | Anthony Goldwire · 2004-08-19 | 1 |
+| [Anthony Goldwire](players/goldwan01.md) | Golden State Warriors | under contract | Anthony Goldwire · 2004-08-19 | 1 |
 | [Anthony Johnson](players/johnsan02.md) | Indiana Pacers | under contract | No verified current agreement | 2 |
 | [Anthony Mason](players/masonan01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
 | [Anthony Miller](players/anthonymiller.md) | San Antonio Spurs | under contract | Anthony Miller · 2004-07-29 | 1 |
@@ -296,7 +296,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jumaine Jones](players/jonesju01.md) | Boston Celtics | voided | No verified current agreement | 2 |
 | [Junior Harrington](players/harriju01.md) | Free agent | under contract | Junior Harrington · 2004-07-14 | 1 |
 | [Justin Reed](players/justinreed.md) | Denver Nuggets | under contract | Justin Reed · 2004-07-29 | 1 |
-| [Juwan Howard](players/howarju01.md) | Charlotte Bobcats | under contract | Juwan Howard · 2003-07-16 | 2 |
+| [Juwan Howard](players/howarju01.md) | Golden State Warriors | under contract | Juwan Howard · 2003-07-16 | 2 |
 | [Kaniel Dickens](players/dickeka01.md) | Sacramento Kings | under contract | Kaniel Dickens · 2004-08-26 | 1 |
 | [Kareem Rush](players/rushka01.md) | Los Angeles Lakers | under rookie contract | Kareem Rush · 2002-07-03 | 1 |
 | [Karl Malone](players/malonka01.md) | Free agent | under contract | Karl Malone · 2003-07-16 | 2 |
@@ -394,7 +394,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Michael Ruffin](players/ruffimi01.md) | New Jersey Nets | under contract | Michael Ruffin · 2004-09-23 | 2 |
 | [Michael Stewart](players/stewami01.md) | Cleveland Cavaliers | under contract | Michael Stewart · 1999-08-12 | 1 |
 | [Michael Sweetney](players/sweetmi01.md) | New York Knicks | No verified contract record | No verified current agreement | 0 |
-| [Mickael Pietrus](players/pietrmi01.md) | Golden State Warriors | No verified contract record | No verified current agreement | 0 |
+| [Mickael Pietrus](players/pietrmi01.md) | Charlotte Bobcats | No verified contract record | No verified current agreement | 0 |
 | [Mike Batiste](players/batismi01.md) | Free agent | voided | No verified current agreement | 2 |
 | [Mike Bibby](players/bibbymi01.md) | Sacramento Kings | under contract | Mike Bibby · 2002-08-16 | 1 |
 | [Mike Dunleavy](players/dunlemi02.md) | Golden State Warriors | under rookie contract | Mike Dunleavy · 2002-07-07 | 1 |

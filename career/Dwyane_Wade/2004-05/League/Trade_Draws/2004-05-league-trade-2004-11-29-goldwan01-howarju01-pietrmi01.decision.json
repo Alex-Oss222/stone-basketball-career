@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-05-league-trade-2004-11-29-goldwan01-howarju01-pietrmi01",
+ "date": "2004-11-29",
+ "question": "Do Charlotte Bobcats and Golden State Warriors trade Juwan Howard and Anthony Goldwire for Mickael Pietrus?",
+ "decider": "Charlotte Bobcats and Golden State Warriors front offices (engine draw)",
+ "options": {
+  "accept": 0.8797,
+  "decline": 0.1203
+ },
+ "basis": "gains on own objectives {'Charlotte Bobcats': 0.161, 'Golden State Warriors': 0.2}; acceptance {'Charlotte Bobcats': 0.926, 'Golden State Warriors': 0.95}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

@@ -1651,6 +1651,33 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.77 x fit"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-29-goldwan01-howarju01-pietrmi01",
+   "date": "2004-11-29",
+   "kind": "trade",
+   "player": "Juwan Howard",
+   "bbr_id": "howarju01",
+   "from": "Charlotte Bobcats",
+   "to": "Golden State Warriors"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-29-goldwan01-howarju01-pietrmi01",
+   "date": "2004-11-29",
+   "kind": "trade",
+   "player": "Anthony Goldwire",
+   "bbr_id": "goldwan01",
+   "from": "Charlotte Bobcats",
+   "to": "Golden State Warriors"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-29-goldwan01-howarju01-pietrmi01",
+   "date": "2004-11-29",
+   "kind": "trade",
+   "player": "Mickael Pietrus",
+   "bbr_id": "pietrmi01",
+   "from": "Golden State Warriors",
+   "to": "Charlotte Bobcats"
   }
  ],
  "market_days": [
@@ -1680,6 +1707,7 @@
   "2004-11-25",
   "2004-11-26",
   "2004-11-27",
-  "2004-11-28"
+  "2004-11-28",
+  "2004-11-29"
  ]
 }

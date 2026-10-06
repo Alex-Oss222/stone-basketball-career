@@ -1,0 +1,41 @@
+{
+ "id": "2004-05-league-trade-2004-11-29-fishede01-humphkr01-rogerro01-telfase01",
+ "date": "2004-11-29",
+ "clubs": [
+  "Detroit Pistons",
+  "Utah Jazz"
+ ],
+ "a": {
+  "club": "Detroit Pistons",
+  "sends": [
+   "Sebastian Telfair",
+   "Kris Humphries"
+  ],
+  "bbr_ids": [
+   "telfase01",
+   "humphkr01"
+  ],
+  "salary": 2146080
+ },
+ "b": {
+  "club": "Utah Jazz",
+  "sends": [
+   "Derek Fisher",
+   "Rodney Rogers"
+  ],
+  "bbr_ids": [
+   "fishede01",
+   "rogerro01"
+  ],
+  "salary": 1883679
+ },
+ "gain": {
+  "Detroit Pistons": 0.358,
+  "Utah Jazz": 0.312
+ },
+ "accept": {
+  "Detroit Pistons": 0.95,
+  "Utah Jazz": 0.95
+ },
+ "both": 0.9025
+}
