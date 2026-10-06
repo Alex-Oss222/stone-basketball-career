@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-12-31**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-01-02**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -64,7 +64,7 @@ Card date: **2004-12-31**. 573 registry players, one Markdown card and one inter
 | [Keith McLeod](mcleoke01.md) | Free agent | 25 | silhouette | [open](mcleoke01.html) |
 | [Kenny Anderson](anderke01.md) | Toronto Raptors | 34 | sourced | [open](anderke01.html) |
 | [Kevin Ollie](ollieke01.md) | Cleveland Cavaliers | 32 | sourced | [open](ollieke01.html) |
-| [Kirk Hinrich](hinriki01.md) | Chicago Bulls | 23 | sourced | [open](hinriki01.html) |
+| [Kirk Hinrich](hinriki01.md) | Chicago Bulls | 24 | sourced | [open](hinriki01.html) |
 | [Larry Hughes](hughela01.md) | Washington Wizards | 25 | sourced | [open](hughela01.html) |
 | [Lindsey Hunter](hunteli01.md) | Free agent | 34 | sourced | [open](hunteli01.html) |
 | [Luke Ridnour](ridnolu01.md) | Charlotte Bobcats | 23 | sourced | [open](ridnolu01.html) |
@@ -444,7 +444,7 @@ Card date: **2004-12-31**. 573 registry players, one Markdown card and one inter
 | [Lawrence Funderburke](fundela01.md) | Free agent | 34 | silhouette | [open](fundela01.html) |
 | [Maceo Baston](bastoma01.md) | Free agent | 29 | sourced | [open](bastoma01.html) |
 | [Maciej Lampe](lampema01.md) | Atlanta Hawks | 19 | sourced | [open](lampema01.html) |
-| [Malick Badiane](badiama01.md) | Free agent | 20 | silhouette | [open](badiama01.html) |
+| [Malick Badiane](badiama01.md) | Free agent | 21 | silhouette | [open](badiama01.html) |
 | [Malik Allen](allenma01.md) | Free agent | 26 | sourced | [open](allenma01.html) |
 | [Malik Rose](rosema01.md) | New York Knicks | 30 | sourced | [open](rosema01.html) |
 | [Marcus Haislip](haislma01.md) | Milwaukee Bucks | 24 | sourced | [open](haislma01.html) |

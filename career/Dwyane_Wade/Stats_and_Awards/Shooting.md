@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-12-31**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2005-01-02**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -3196,13 +3196,13 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
 
-## 2004-05 · NBA regular season · through 2004-12-31
+## 2004-05 · NBA regular season · through 2005-01-02
 
 [Open this period](player_cards.html?period=regular-2004-05-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 26 | 5 | 31 | 168 / 324 | 51.9% | 30 / 65 | 505 | complete |
+| 26 | 6 | 32 | 168 / 324 | 51.9% | 30 / 65 | 505 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
@@ -3247,6 +3247,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-12-25 | Los Angeles Lakers | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/12_December/Week_4/Game_2.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_4/Game_2.result.json) |
 | 2004-12-27 | Atlanta Hawks | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/12_December/Week_4/Game_3.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_4/Game_3.result.json) |
 | 2004-12-30 | Detroit Pistons | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.result.json) |
+| 2005-01-01 | Charlotte Bobcats | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md) | [Result](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) |
 
 ## 2004-11 · NBA regular season
 
@@ -3519,6 +3520,50 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-12-25 | Los Angeles Lakers | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/12_December/Week_4/Game_2.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_4/Game_2.result.json) |
 | 2004-12-27 | Atlanta Hawks | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/12_December/Week_4/Game_3.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_4/Game_3.result.json) |
 | 2004-12-30 | Detroit Pistons | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.result.json) |
+
+## 2005-01 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-month-2005-01-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 1 | 0 / 0 | N/A | 0 / 0 | 0 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | 0 | 0 | N/A | N/A | N/A | 0 |
+| Three-point range | 0 | 0 | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-01-01 | Charlotte Bobcats | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md) | [Result](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) |
+
+## 2005-01-01 to 2005-01-02 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-week-2005-01-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 1 | 0 / 0 | N/A | 0 / 0 | 0 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | 0 | 0 | N/A | N/A | N/A | 0 |
+| Three-point range | 0 | 0 | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-01-01 | Charlotte Bobcats | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md) | [Result](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) |
 
 ## 2004-11-03 at New Jersey Nets · Played · NBA regular season
 
@@ -4202,7 +4247,29 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-12-30 | Detroit Pistons | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md) | [Result](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.result.json) |
 
-## 2004-05 · NBA preseason · through 2004-12-31
+## 2005-01-01 vs Charlotte Bobcats · DNP: injured list since 2004-12-23 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-game-f727f561ef9fc3fb#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 1 | 0 / 0 | N/A | 0 / 0 | 0 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | 0 | 0 | N/A | N/A | N/A | 0 |
+| Three-point range | 0 | 0 | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-01-01 | Charlotte Bobcats | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md) | [Result](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) |
+
+## 2004-05 · NBA preseason · through 2005-01-02
 
 [Open this period](player_cards.html?period=preseason-2004-05-season#shooting)
 

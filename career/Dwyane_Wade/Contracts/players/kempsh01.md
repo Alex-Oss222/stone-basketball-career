@@ -2,9 +2,9 @@
 
 # Contract | Shawn Kemp
 
-Known through: 2004-12-31. [Open interactive contract](kempsh01.html#contract) · [Contract history](kempsh01.html#contract-history)
+Known through: 2005-01-02. [Open interactive contract](kempsh01.html#contract) · [Contract history](kempsh01.html#contract-history)
 
-Shawn Kemp: camp contract. Evidence cutoff: 2004-12-31.
+Shawn Kemp: camp contract. Evidence cutoff: 2005-01-02.
 
 ## Current contract
 

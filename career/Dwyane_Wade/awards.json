@@ -194,6 +194,18 @@
       "period_end": "2004-04-14",
       "awarded_on": "2004-04-27",
       "source": "Stats_and_Awards/League/2003-04/Season_Awards.md#all-rookie-teams"
+    },
+    {
+      "id": "2004-05-player_of_month-2004-12-01-east",
+      "name": "Eastern Conference Player of the Month",
+      "short_name": "East POM",
+      "status": "earned",
+      "competition": "regular",
+      "season": "2004-05",
+      "period_start": "2004-12-01",
+      "period_end": "2004-12-31",
+      "awarded_on": "2005-01-02",
+      "source": "Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month"
     }
   ]
 }

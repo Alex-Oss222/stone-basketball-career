@@ -2,9 +2,9 @@
 
 # Contract | Tony Massenburg
 
-Known through: 2004-12-31. [Open interactive contract](masseto01.html#contract) · [Contract history](masseto01.html#contract-history)
+Known through: 2005-01-02. [Open interactive contract](masseto01.html#contract) · [Contract history](masseto01.html#contract-history)
 
-Tony Massenburg: under contract. Evidence cutoff: 2004-12-31.
+Tony Massenburg: under contract. Evidence cutoff: 2005-01-02.
 
 ## Current contract
 

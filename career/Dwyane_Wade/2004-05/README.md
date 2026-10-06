@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2004-05 awards through 2004-12-31](../assets/stat_reports/personal_2004-05_2004-12-31.svg)
+![Player personal information and earned 2004-05 awards through 2005-01-02](../assets/stat_reports/personal_2004-05_2005-01-02.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,17 +31,19 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2004-12-31; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-01-02; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
 ### Earned 2004-05 awards
 
-No 2004-05 awards yet.
+| Award | Period | Announced | Decision record |
+| --- | --- | --- | --- |
+| Eastern Conference Player of the Month | 2004-12-01 to 2004-12-31 | 2005-01-02 | [East POM](../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month) |
 
 ## Statistics
 
-Report cutoff: **2004-12-31**. Each row is a separate competition; do not add the rates.
+Report cutoff: **2005-01-02**. Each row is a separate competition; do not add the rates.
 
 ### Competition summary
 
@@ -53,12 +55,12 @@ Report cutoff: **2004-12-31**. Each row is a separate competition; do not add th
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [Summer League](02_Summer_League/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [Preseason](05_Preseason/README.md) | 20 | Miami Heat | NBA | SG / PG | 7 | 7 | 30.2 | 4.4 | 9.6 | .463 | 0.6 | 2.0 | .286 | 3.9 | 7.6 | .509 | .493 | 5.3 | 5.6 | .949 | 1.3 | 2.9 | 4.1 | 4.0 | 1.4 | 1.4 | 0.9 | 1.9 | 14.7 | .612 | — |
-| [NBA regular season](06_Regular_Season/README.md) | 20 | Miami Heat | NBA | SG / PG | 26 | 26 | 35.8 | 6.5 | 12.5 | .519 | 1.2 | 2.5 | .462 | 5.3 | 10.0 | .533 | .565 | 5.3 | 5.6 | .959 | 1.5 | 3.9 | 5.4 | 3.9 | 1.5 | 1.3 | 1.5 | 2.7 | 19.4 | .651 | — |
+| [NBA regular season](06_Regular_Season/README.md) | 20 | Miami Heat | NBA | SG / PG | 26 | 26 | 35.8 | 6.5 | 12.5 | .519 | 1.2 | 2.5 | .462 | 5.3 | 10.0 | .533 | .565 | 5.3 | 5.6 | .959 | 1.5 | 3.9 | 5.4 | 3.9 | 1.5 | 1.3 | 1.5 | 2.7 | 19.4 | .651 | [East POM](../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month) |
 | [NBA playoffs](08_Playoffs/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-12-31, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-01-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Regular season by month
 
@@ -69,7 +71,7 @@ Awards are confirmed through 2004-12-31, filed by the honor's period-end date; t
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [November 2004](../Stats_and_Awards/2004-05/11_November/README.md) | 20 | Miami Heat | NBA | SG / PG | 15 | 15 | 35.1 | 5.6 | 11.5 | .488 | 0.9 | 2.1 | .452 | 4.7 | 9.4 | .496 | .529 | 4.5 | 4.9 | .932 | 1.7 | 3.5 | 5.1 | 4.1 | 1.7 | 1.4 | 1.3 | 2.3 | 16.7 | .612 | — |
-| [December 2004](../Stats_and_Awards/2004-05/12_December/README.md) | 20 | Miami Heat | NBA | SG / PG | 11 | 11 | 36.8 | 7.6 | 13.8 | .553 | 1.5 | 3.1 | .471 | 6.2 | 10.7 | .576 | .605 | 6.5 | 6.5 | .986 | 1.3 | 4.5 | 5.8 | 3.6 | 1.3 | 1.1 | 1.8 | 3.3 | 23.2 | .694 | — |
+| [December 2004](../Stats_and_Awards/2004-05/12_December/README.md) | 20 | Miami Heat | NBA | SG / PG | 11 | 11 | 36.8 | 7.6 | 13.8 | .553 | 1.5 | 3.1 | .471 | 6.2 | 10.7 | .576 | .605 | 6.5 | 6.5 | .986 | 1.3 | 4.5 | 5.8 | 3.6 | 1.3 | 1.1 | 1.8 | 3.3 | 23.2 | .694 | [East POM](../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month) |
 | [January 2005](../Stats_and_Awards/2004-05/01_January/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2005](../Stats_and_Awards/2004-05/02_February/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [March 2005](../Stats_and_Awards/2004-05/03_March/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -77,7 +79,7 @@ Awards are confirmed through 2004-12-31, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-12-31, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-01-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Career records
 

@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2004-12-31 · Miami Heat · active
+Career date: 2005-01-02 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,22 +14,22 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2004-12-31 |
+| Career date | 2005-01-02 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2004-12-30-miami-heat-at-detroit-pistons |
+| Last closed event | 2005-01-01-charlotte-bobcats-at-miami-heat |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2004-12-31 | Current checkpoint | 2004-12-30-miami-heat-at-detroit-pistons | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
+| 2005-01-02 | Current checkpoint | 2005-01-01-charlotte-bobcats-at-miami-heat | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2004-10-05 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2005-01-01 | Next Miami game, vs Charlotte Bobcats | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
-| 2005-01-02 | League awards announced: Player of the Month, Rookie of the Month | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2005-01-03 | Next Miami game, vs Seattle SuperSonics | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2005-01-03 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2005-01-06 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | 2005-01-07 | Keep-or-waive review of non-guaranteed contracts | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
 | 2005-01-10 | Kept contracts become guaranteed | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
@@ -140,4 +140,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

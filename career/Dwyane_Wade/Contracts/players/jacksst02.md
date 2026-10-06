@@ -2,9 +2,9 @@
 
 # Contract | Stephen Jackson
 
-Known through: 2004-12-31. [Open interactive contract](jacksst02.html#contract) · [Contract history](jacksst02.html#contract-history)
+Known through: 2005-01-02. [Open interactive contract](jacksst02.html#contract) · [Contract history](jacksst02.html#contract-history)
 
-Stephen Jackson: released. Evidence cutoff: 2004-12-31.
+Stephen Jackson: released. Evidence cutoff: 2005-01-02.
 
 ## Current contract
 

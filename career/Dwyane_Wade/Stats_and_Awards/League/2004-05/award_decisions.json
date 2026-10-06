@@ -1043,6 +1043,214 @@
     }
    ],
    "winner": "Steve Nash"
+  },
+  {
+   "id": "2004-05-player_of_month-2004-12-01-east",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "East",
+   "period_start": "2004-12-01",
+   "period_end": "2004-12-31",
+   "announced_on": "2005-01-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/12_December/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 11,
+     "wins": 8,
+     "losses": 3,
+     "pts": 23.2,
+     "reb": 5.8,
+     "ast": 3.6,
+     "game_score": 20.24,
+     "score": 28.964,
+     "rank": 1
+    },
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 16,
+     "wins": 12,
+     "losses": 4,
+     "pts": 22.4,
+     "reb": 6.8,
+     "ast": 4.8,
+     "game_score": 19.21,
+     "score": 28.206,
+     "rank": 2
+    },
+    {
+     "player": "Tracy McGrady",
+     "team": "Orlando Magic",
+     "games": 12,
+     "wins": 8,
+     "losses": 4,
+     "pts": 26.7,
+     "reb": 6.2,
+     "ast": 5.3,
+     "game_score": 19.07,
+     "score": 27.067,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwyane Wade"
+  },
+  {
+   "id": "2004-05-player_of_month-2004-12-01-west",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "West",
+   "period_start": "2004-12-01",
+   "period_end": "2004-12-31",
+   "announced_on": "2005-01-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/12_December/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Stephon Marbury",
+     "team": "Phoenix Suns",
+     "games": 15,
+     "wins": 13,
+     "losses": 2,
+     "pts": 19.3,
+     "reb": 2.9,
+     "ast": 9.5,
+     "game_score": 18.53,
+     "score": 28.927,
+     "rank": 1
+    },
+    {
+     "player": "Tim Duncan",
+     "team": "San Antonio Spurs",
+     "games": 14,
+     "wins": 9,
+     "losses": 5,
+     "pts": 22.2,
+     "reb": 9.1,
+     "ast": 2.4,
+     "game_score": 18.79,
+     "score": 26.5,
+     "rank": 2
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 15,
+     "wins": 13,
+     "losses": 2,
+     "pts": 17.3,
+     "reb": 10.0,
+     "ast": 2.1,
+     "game_score": 16.07,
+     "score": 26.467,
+     "rank": 3
+    }
+   ],
+   "winner": "Stephon Marbury"
+  },
+  {
+   "id": "2004-05-rookie_of_month-2004-12-01-east",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "East",
+   "period_start": "2004-12-01",
+   "period_end": "2004-12-31",
+   "announced_on": "2005-01-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/12_December/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwight Howard",
+     "team": "Orlando Magic",
+     "games": 14,
+     "wins": 9,
+     "losses": 5,
+     "pts": 12.0,
+     "reb": 8.3,
+     "ast": 0.8,
+     "game_score": 11.29,
+     "score": 13.857,
+     "rank": 1
+    },
+    {
+     "player": "Emeka Okafor",
+     "team": "Washington Wizards",
+     "games": 10,
+     "wins": 4,
+     "losses": 6,
+     "pts": 14.6,
+     "reb": 8.7,
+     "ast": 0.3,
+     "game_score": 10.67,
+     "score": 12.27,
+     "rank": 2
+    },
+    {
+     "player": "Andre Iguodala",
+     "team": "New York Knicks",
+     "games": 16,
+     "wins": 7,
+     "losses": 9,
+     "pts": 9.5,
+     "reb": 5.8,
+     "ast": 3.7,
+     "game_score": 9.06,
+     "score": 10.806,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwight Howard"
+  },
+  {
+   "id": "2004-05-rookie_of_month-2004-12-01-west",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "West",
+   "period_start": "2004-12-01",
+   "period_end": "2004-12-31",
+   "announced_on": "2005-01-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/12_December/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Josh Childress",
+     "team": "Phoenix Suns",
+     "games": 15,
+     "wins": 13,
+     "losses": 2,
+     "pts": 12.3,
+     "reb": 5.8,
+     "ast": 1.8,
+     "game_score": 9.83,
+     "score": 13.3,
+     "rank": 1
+    },
+    {
+     "player": "Josh Smith",
+     "team": "Utah Jazz",
+     "games": 14,
+     "wins": 2,
+     "losses": 12,
+     "pts": 9.4,
+     "reb": 6.7,
+     "ast": 1.4,
+     "game_score": 8.8,
+     "score": 9.371,
+     "rank": 2
+    },
+    {
+     "player": "Nick Collison",
+     "team": "Seattle SuperSonics",
+     "games": 12,
+     "wins": 6,
+     "losses": 6,
+     "pts": 6.6,
+     "reb": 4.9,
+     "ast": 0.8,
+     "game_score": 5.83,
+     "score": 7.825,
+     "rank": 3
+    }
+   ],
+   "winner": "Josh Childress"
   }
  ]
 }

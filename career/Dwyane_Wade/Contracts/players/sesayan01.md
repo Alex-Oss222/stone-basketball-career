@@ -2,9 +2,9 @@
 
 # Contract | Ansu Sesay
 
-Known through: 2004-12-31. [Open interactive contract](sesayan01.html#contract) · [Contract history](sesayan01.html#contract-history)
+Known through: 2005-01-02. [Open interactive contract](sesayan01.html#contract) · [Contract history](sesayan01.html#contract-history)
 
-Ansu Sesay: minimum contract unverified. Evidence cutoff: 2004-12-31.
+Ansu Sesay: minimum contract unverified. Evidence cutoff: 2005-01-02.
 
 ## Current contract
 

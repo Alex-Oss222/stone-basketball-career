@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-12-31",
+  "as_of": "2005-01-02",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-12-30-miami-heat-at-detroit-pistons",
+  "current_event": "2005-01-01-charlotte-bobcats-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-12-31"
+              "2005-01-02"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-12-30-miami-heat-at-detroit-pistons"
+              "2005-01-01-charlotte-bobcats-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2004-12-31",
+              "2005-01-02",
               "Current checkpoint",
-              "2004-12-30-miami-heat-at-detroit-pistons",
+              "2005-01-01-charlotte-bobcats-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -94,8 +94,8 @@
               }
             ],
             [
-              "2005-01-01",
-              "Next Miami game, vs Charlotte Bobcats",
+              "2005-01-03",
+              "Next Miami game, vs Seattle SuperSonics",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
@@ -104,8 +104,8 @@
               }
             ],
             [
-              "2005-01-02",
-              "League awards announced: Player of the Month, Rookie of the Month",
+              "2005-01-03",
+              "League awards announced: Player of the Week",
               "League (closed results only)",
               "Scheduled",
               {
@@ -574,6 +574,10 @@
           "href": "../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -582,7 +586,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-12-31"
+          "value": "2005-01-02"
         },
         {
           "label": "Team",
@@ -952,6 +956,10 @@
           "href": "../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -960,7 +968,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-12-31"
+          "value": "2005-01-02"
         },
         {
           "label": "Team",
@@ -1303,6 +1311,10 @@
           "href": "../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1311,7 +1323,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-12-31"
+          "value": "2005-01-02"
         },
         {
           "label": "Team",
@@ -1685,6 +1697,10 @@
           "href": "../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1693,7 +1709,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-12-31"
+          "value": "2005-01-02"
         },
         {
           "label": "Team",
@@ -2038,6 +2054,10 @@
           "href": "../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2046,7 +2066,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-12-31"
+          "value": "2005-01-02"
         },
         {
           "label": "Team",
@@ -2396,6 +2416,10 @@
           "href": "../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2404,7 +2428,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-12-31"
+          "value": "2005-01-02"
         },
         {
           "label": "Team",
@@ -2749,6 +2773,10 @@
           "href": "../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2757,7 +2785,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-12-31"
+          "value": "2005-01-02"
         },
         {
           "label": "Team",
@@ -3214,6 +3242,10 @@
           "href": "../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3222,7 +3254,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-12-31"
+          "value": "2005-01-02"
         },
         {
           "label": "Team",
@@ -3239,7 +3271,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "38 closed game records in 2004-05 through 2004-12-31. Competitions remain separate.",
+      "summary": "39 closed game records in 2004-05 through 2005-01-02. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3698,6 +3730,16 @@
                 "label": "Closed game",
                 "href": "../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md"
               }
+            ],
+            [
+              "2005-01-01",
+              "regular",
+              "Charlotte Bobcats",
+              "DNP: injured list since 2004-12-23",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md"
+              }
             ]
           ]
         },
@@ -3963,6 +4005,10 @@
           "href": "../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3971,7 +4017,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-12-31"
+          "value": "2005-01-02"
         },
         {
           "label": "Team",

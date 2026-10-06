@@ -2,9 +2,9 @@
 
 # Contract | Rasho Nesterovic
 
-Known through: 2004-12-31. [Open interactive contract](nestera01.html#contract) · [Contract history](nestera01.html#contract-history)
+Known through: 2005-01-02. [Open interactive contract](nestera01.html#contract) · [Contract history](nestera01.html#contract-history)
 
-Rasho Nesterovic: under contract. Evidence cutoff: 2004-12-31.
+Rasho Nesterovic: under contract. Evidence cutoff: 2005-01-02.
 
 ## Current contract
 
