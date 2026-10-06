@@ -2622,6 +2622,130 @@
    },
    "contract": null,
    "note": "10-day contract ended (4.1 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-01-30-ten_day-johnsli01",
+   "date": "2005-01-30",
+   "kind": "ten_day",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": null,
+   "to": "Indiana Pacers",
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 15
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-02-09",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.62 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-30-expire-shirlpa01",
+   "date": "2005-01-30",
+   "kind": "expire",
+   "player": "Paul Shirley",
+   "bbr_id": "shirlpa01",
+   "from": "Memphis Grizzlies",
+   "to": null,
+   "role": {
+    "player_id": "Paul Shirley",
+    "bbr_id": "shirlpa01",
+    "position": "PF",
+    "games": 9,
+    "minutes": 30
+   },
+   "contract": null,
+   "note": "10-day contract ended (7.1 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-01-30-ten_day-slayta01",
+   "date": "2005-01-30",
+   "kind": "ten_day",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": null,
+   "to": "Memphis Grizzlies",
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-02-09",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.61 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-30-ten_day-shirlpa01",
+   "date": "2005-01-30",
+   "kind": "ten_day",
+   "player": "Paul Shirley",
+   "bbr_id": "shirlpa01",
+   "from": null,
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Paul Shirley",
+    "bbr_id": "shirlpa01",
+    "position": "PF",
+    "games": 9,
+    "minutes": 30
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-02-09",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.43 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-30-expire-borchcu01",
+   "date": "2005-01-30",
+   "kind": "expire",
+   "player": "Curtis Borchardt",
+   "bbr_id": "borchcu01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Curtis Borchardt",
+    "bbr_id": "borchcu01",
+    "position": "C",
+    "games": 67,
+    "minutes": 859
+   },
+   "contract": null,
+   "note": "10-day contract ended (9.8 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-01-30-ten_day-borchcu01",
+   "date": "2005-01-30",
+   "kind": "ten_day",
+   "player": "Curtis Borchardt",
+   "bbr_id": "borchcu01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Curtis Borchardt",
+    "bbr_id": "borchcu01",
+    "position": "C",
+    "games": 67,
+    "minutes": 859
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-02-09",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.47 x fit"
   }
  ],
  "market_days": [
@@ -2713,6 +2837,7 @@
   "2005-01-26",
   "2005-01-27",
   "2005-01-28",
-  "2005-01-29"
+  "2005-01-29",
+  "2005-01-30"
  ]
 }
