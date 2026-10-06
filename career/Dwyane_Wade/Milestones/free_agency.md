@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2005-01-23 · Miami Heat · needs evidence
+Career date: 2005-01-24 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -46,6 +46,8 @@ These are Miami's roster negotiations, not offers to Wade.
 | 2004-11-01 | Chris Mihm released at the cut to 15 (non-guaranteed camp contract; no dead money). |
 | 2004-12-20 | Scott Padgett traded to Toronto Raptors (2004-12-20-be4b6043a0). |
 | 2004-12-20 | Udonis Haslem traded to Toronto Raptors (2004-12-20-be4b6043a0). |
+| 2005-01-24 | Eddie Jones traded to Utah Jazz (2005-01-24-64ef582bc5). |
+| 2005-01-24 | Kendall Gill traded to Utah Jazz (2005-01-24-64ef582bc5). |
 
 ## Decision authority
 
@@ -82,6 +84,7 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json)
+- [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Closed game](../2004-05/05_Preseason/Game_2.md)
 - [Closed game](../2004-05/05_Preseason/Game_3.md)

@@ -2,9 +2,9 @@
 
 # Contract | Glenn Robinson
 
-Known through: 2005-01-23. [Open interactive contract](robingl01.html#contract) · [Contract history](robingl01.html#contract-history)
+Known through: 2005-01-24. [Open interactive contract](robingl01.html#contract) · [Contract history](robingl01.html#contract-history)
 
-Glenn Robinson: under contract. Evidence cutoff: 2005-01-23.
+Glenn Robinson: under contract. Evidence cutoff: 2005-01-24.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Glenn Robinson |
-| Club / rights baseline | Cleveland Cavaliers |
+| Club / rights baseline | Houston Rockets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

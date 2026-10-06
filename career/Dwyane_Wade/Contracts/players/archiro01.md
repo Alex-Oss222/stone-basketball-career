@@ -2,9 +2,9 @@
 
 # Contract | Robert Archibald
 
-Known through: 2005-01-23. [Open interactive contract](archiro01.html#contract) · [Contract history](archiro01.html#contract-history)
+Known through: 2005-01-24. [Open interactive contract](archiro01.html#contract) · [Contract history](archiro01.html#contract-history)
 
-Robert Archibald: team option pending. Evidence cutoff: 2005-01-23.
+Robert Archibald: team option pending. Evidence cutoff: 2005-01-24.
 
 ## Current contract
 

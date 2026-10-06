@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-01-23. [Search the contract directory](index.html)
+Known through 2005-01-24. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -50,7 +50,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Antonio Davis](players/davisan01.md) | Chicago Bulls | under contract unverified | No verified current agreement | 0 |
 | [Antonio McDyess](players/mcdyean01.md) | New Orleans Hornets | under contract | Antonio McDyess · 2004-07-14 | 2 |
 | [Arvydas Sabonis](players/sabonar01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |
-| [Austin Croshere](players/croshau01.md) | Boston Celtics | under contract | Austin Croshere · existing contract; signing date not recorded | 1 |
+| [Austin Croshere](players/croshau01.md) | New York Knicks | under contract | Austin Croshere · existing contract; signing date not recorded | 1 |
 | [Avery Johnson](players/johnsav01.md) | Free agent | under contract | Avery Johnson · existing contract; signing date not recorded | 1 |
 | [Baron Davis](players/davisba01.md) | New Orleans Hornets | under contract | Baron Davis · 2002-07-30 | 1 |
 | [Ben Gordon](players/bengordon.md) | Utah Jazz | under contract | Ben Gordon · 2004-07-01 | 1 |
@@ -161,7 +161,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Desmond Mason](players/masonde01.md) | Milwaukee Bucks | under rookie contract | Desmond Mason · 2000-08-03 | 1 |
 | [Desmond Penigar](players/penigde01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Devean George](players/georgde01.md) | Los Angeles Lakers | under contract | Devean George · existing contract; signing date not recorded | 1 |
-| [Devin Brown](players/brownde02.md) | New York Knicks | under contract | Devin Brown · 2003-07-31 | 1 |
+| [Devin Brown](players/brownde02.md) | Boston Celtics | under contract | Devin Brown · 2003-07-31 | 1 |
 | [Devin Harris](players/devinharris.md) | Cleveland Cavaliers | under contract | Devin Harris · 2004-07-01 | 1 |
 | [Dikembe Mutombo](players/mutomdi01.md) | New York Knicks | under contract | Dikembe Mutombo · 2003-10-09 | 1 |
 | [Dion Glover](players/glovedi01.md) | Memphis Grizzlies | under contract | Dion Glover · 2004-09-02 | 3 |
@@ -181,7 +181,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Eddie Gill](players/gilled01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Eddie Griffin](players/griffed01.md) | Houston Rockets | under rookie contract | Eddie Griffin · 2001-09-19 | 1 |
 | [Eddie House](players/houseed01.md) | Los Angeles Clippers | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
-| [Eddie Jones](players/jonesed02.md) | Miami Heat | under contract | Eddie Jones · 2000-08-01 | 1 |
+| [Eddie Jones](players/jonesed02.md) | Utah Jazz | under contract | Eddie Jones · 2000-08-01 | 1 |
 | [Eddie Robinson](players/robined01.md) | Free agent | under contract | Eddie Robinson · existing contract; signing date not recorded | 1 |
 | [Eddy Curry](players/curryed01.md) | Chicago Bulls | under rookie contract | Eddy Curry · 2001-10-01 | 1 |
 | [Eduardo Najera](players/najered01.md) | Dallas Mavericks | under contract | Eduardo Najera · 2002-09-28 | 1 |
@@ -209,7 +209,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Gerald Wallace](players/wallage01.md) | Sacramento Kings | under rookie contract | Gerald Wallace · 2001-07-06 | 1 |
 | [Gilbert Arenas](players/arenagi01.md) | Washington Wizards | under contract | Gilbert Arenas · 2003-08-08 | 2 |
 | [Glen Rice](players/ricegl01.md) | Free agent | under contract | Glen Rice · 2003-10-10 | 1 |
-| [Glenn Robinson](players/robingl01.md) | Cleveland Cavaliers | under contract | Glenn Robinson · existing contract; signing date not recorded | 1 |
+| [Glenn Robinson](players/robingl01.md) | Houston Rockets | under contract | Glenn Robinson · existing contract; signing date not recorded | 1 |
 | [Gordan Giricek](players/giricgo01.md) | Houston Rockets | under contract | Gordan Giricek · 2004-07-29 | 1 |
 | [Grant Hill](players/hillgr01.md) | Minnesota Timberwolves | under contract | Grant Hill · existing contract; signing date not recorded | 1 |
 | [Grant Long](players/longgr01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
@@ -224,7 +224,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Hubert Davis](players/davishu01.md) | Free agent | under contract | Hubert Davis · existing contract; signing date not recorded | 1 |
 | [Ibo Kutluay](players/ibokutluay.md) | Minnesota Timberwolves | under contract | Ibo Kutluay · 2004-08-26 | 1 |
 | [Ime Udoka](players/udokaim01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
-| [Ira Newble](players/newblir01.md) | Cleveland Cavaliers | under contract | Ira Newble · 2003-07-22 | 2 |
+| [Ira Newble](players/newblir01.md) | Houston Rockets | under contract | Ira Newble · 2003-07-22 | 2 |
 | [J.R. Bremer](players/bremejr01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [J.R. Smith](players/jrsmith.md) | Boston Celtics | under contract | J.R. Smith · 2004-07-01 | 1 |
 | [Jabari Smith](players/smithja01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
@@ -304,9 +304,9 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Keith Bogans](players/boganke01.md) | Orlando Magic | No verified contract record | No verified current agreement | 0 |
 | [Keith McLeod](players/mcleoke01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Keith Van Horn](players/vanhoke01.md) | San Antonio Spurs | under contract | Keith Van Horn · 1999-08-05 | 1 |
-| [Kelvin Cato](players/catoke01.md) | Houston Rockets | under contract | Kelvin Cato · existing contract; signing date not recorded | 1 |
+| [Kelvin Cato](players/catoke01.md) | Cleveland Cavaliers | under contract | Kelvin Cato · existing contract; signing date not recorded | 1 |
 | [Ken Johnson](players/johnske03.md) | Free agent | team option declined | No verified current agreement | 1 |
-| [Kendall Gill](players/gillke01.md) | Miami Heat | under contract | Kendall Gill · 2004-08-12 | 3 |
+| [Kendall Gill](players/gillke01.md) | Utah Jazz | under contract | Kendall Gill · 2004-08-12 | 3 |
 | [Kendrick Perkins](players/perkike01.md) | Boston Celtics | No verified contract record | No verified current agreement | 0 |
 | [Kenny Anderson](players/anderke01.md) | Toronto Raptors | under contract | Kenny Anderson · 2004-08-12 | 3 |
 | [Kenny Thomas](players/thomake01.md) | Philadelphia 76ers | under contract | Kenny Thomas · 2003-07-16 | 2 |
@@ -376,11 +376,11 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Matt Bonner](players/bonnema01.md) | Toronto Raptors | No verified contract record | No verified current agreement | 0 |
 | [Matt Carroll](players/carroma01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Matt Freije](players/mattfreije.md) | Toronto Raptors | under contract | Matt Freije · 2004-07-14 | 1 |
-| [Matt Harpring](players/harprma01.md) | Utah Jazz | under contract unverified | No verified current agreement | 0 |
+| [Matt Harpring](players/harprma01.md) | Miami Heat | under contract | Matt Harpring · existing contract; signing date not recorded | 1 |
 | [Maurice Baker](players/bakerma01.md) | Miami Heat | under contract | Maurice Baker · 2004-07-15 | 1 |
 | [Maurice Carter](players/cartema01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Maurice Evans](players/evansma01.md) | Miami Heat | under contract | Maurice Evans · 2004-08-05 | 1 |
-| [Maurice Taylor](players/tayloma01.md) | Houston Rockets | under contract | Maurice Taylor · 2001-08-07 | 1 |
+| [Maurice Taylor](players/tayloma01.md) | Cleveland Cavaliers | under contract | Maurice Taylor · 2001-08-07 | 1 |
 | [Mehmet Okur](players/okurme01.md) | Miami Heat | under contract | Mehmet Okur · 2004-09-23 | 1 |
 | [Melvin Ely](players/elyme01.md) | Los Angeles Clippers | under rookie contract | Melvin Ely · 2002-09-04 | 1 |
 | [Mengke Bateer](players/bateeme01.md) | Free agent | under contract | Mengke Bateer · 2003-07-17 | 2 |
@@ -414,7 +414,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Nenad Krstić](players/nenadkrsti.md) | New York Knicks | under contract | Nenad Krstić · 2004-07-22 | 1 |
 | [Nene](players/hilarne01.md) | Denver Nuggets | under rookie contract | Nene · 2002-07-23 | 1 |
 | [Nick Collison](players/collini01.md) | Seattle SuperSonics | No verified contract record | No verified current agreement | 0 |
-| [Nick Van Exel](players/vanexni01.md) | New York Knicks | under contract unverified | No verified current agreement | 0 |
+| [Nick Van Exel](players/vanexni01.md) | Boston Celtics | under contract unverified | No verified current agreement | 0 |
 | [Nikoloz Tskitishvili](players/tskitni01.md) | Phoenix Suns | under rookie contract | Nikoloz Tskitishvili · existing contract; signing date not recorded | 1 |
 | [Obinna Ekezie](players/obinnaekezie.md) | Toronto Raptors | under contract | Obinna Ekezie · 2004-07-14 | 1 |
 | [Olden Polynice](players/polynol01.md) | Free agent | under contract | No verified current agreement | 1 |
@@ -442,7 +442,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Raef LaFrentz](players/lafrera01.md) | Atlanta Hawks | under contract unverified | No verified current agreement | 0 |
 | [Rafael Araújo](players/rafaelarajo.md) | Denver Nuggets | under contract | Rafael Araújo · 2004-07-01 | 1 |
 | [Rafer Alston](players/alstora01.md) | Miami Heat | camp contract | Rafer Alston · 2004-10-05 | 2 |
-| [Raja Bell](players/bellra01.md) | Utah Jazz | under contract | Raja Bell · 2003-09-26 | 2 |
+| [Raja Bell](players/bellra01.md) | Miami Heat | under contract | Raja Bell · 2003-09-26 | 3 |
 | [Randy Brown](players/brownra02.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Randy Livingston](players/livinra01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Rashard Lewis](players/lewisra02.md) | Seattle SuperSonics | under contract | Rashard Lewis · 2002-09-19 | 1 |
@@ -537,7 +537,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Tommy Smith](players/smithto03.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Toni Kukoc](players/kukocto01.md) | New Jersey Nets | under contract | Toni Kukoc · 2004-09-23 | 1 |
 | [Tony Allen](players/tonyallen.md) | New York Knicks | under contract | Tony Allen · 2004-07-15 | 1 |
-| [Tony Battie](players/battito01.md) | Boston Celtics | under contract | Tony Battie · 1999-10-15 | 1 |
+| [Tony Battie](players/battito01.md) | New York Knicks | under contract | Tony Battie · 1999-10-15 | 1 |
 | [Tony Bobbitt](players/tonybobbitt.md) | Free agent | under contract | Tony Bobbitt · 2004-07-22 | 1 |
 | [Tony Delk](players/delkto01.md) | Minnesota Timberwolves | under contract | Tony Delk · 2000-08-01 | 1 |
 | [Tony Massenburg](players/masseto01.md) | Free agent | under contract | Tony Massenburg · 2003-08-22 | 2 |

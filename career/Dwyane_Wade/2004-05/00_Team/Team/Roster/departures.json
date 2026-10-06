@@ -26,6 +26,28 @@
    "games": 75,
    "minutes": 1795,
    "basis": "traded 2004-12-20 (2004-12-20-be4b6043a0); previous share from 2003-04 totals"
+  },
+  {
+   "player": "Eddie Jones",
+   "bbr_id": "jonesed02",
+   "club": "Utah Jazz",
+   "from": "2005-01-24",
+   "until": null,
+   "position": "SG",
+   "games": 81,
+   "minutes": 2998,
+   "basis": "traded 2005-01-24 (2005-01-24-64ef582bc5); previous share from 2003-04 totals"
+  },
+  {
+   "player": "Kendall Gill",
+   "bbr_id": "gillke01",
+   "club": "Utah Jazz",
+   "from": "2005-01-24",
+   "until": null,
+   "position": "SG",
+   "games": 56,
+   "minutes": 1411,
+   "basis": "traded 2005-01-24 (2005-01-24-64ef582bc5); previous share from 2003-04 totals"
   }
  ]
 }

@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-01-23 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-01-24 
 
-**Contract/control:** Signed August 5, 2004 (minimum): 1 season(s) from 2004-05, $720,046 scheduled ($720,046 in 2004-05). (register, 2005-01-10) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed August 5, 2004 (minimum): 1 season(s) from 2004-05, $720,046 scheduled ($720,046 in 2004-05). (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/evansma01.html#contract) · [Contract history](../../../../Contracts/players/evansma01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Reserve outside the planned rotation (staff rotation dated 2005-01-20, [record](../Depth_Chart/Reviews/2005-01-20/rotation.json)). On the injured list since 2005-01-03 (reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)).
+**Role:** Reserve outside the planned rotation (staff rotation dated 2005-01-20, [record](../Depth_Chart/Reviews/2005-01-20/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -52,7 +52,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2004-05 | MIA | 9 | 0 | 5.6 | 2.1 | 1.3 | 0.3 | 0.2 | 0.1 | 0.1 | 61.5% | 50.0% | 100.0% |
+| 2004-05 | MIA | 10 | 0 | 5.8 | 1.9 | 1.2 | 0.4 | 0.2 | 0.1 | 0.1 | 61.5% | 50.0% | 100.0% |
 
 Source: 2003-04 from closed simulated results (`Stats_and_Awards/League/2003-04/season_totals.json`); 2004-05 from closed Miami game results.
 

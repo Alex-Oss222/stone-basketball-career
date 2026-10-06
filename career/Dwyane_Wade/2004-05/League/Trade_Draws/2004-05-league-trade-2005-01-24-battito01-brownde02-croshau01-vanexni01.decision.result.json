@@ -1,0 +1,12 @@
+{
+ "date": "2005-01-24",
+ "decider": "Boston Celtics and New York Knicks front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2005-01-24-battito01-brownde02-croshau01-vanexni01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.78375,
+  "decline": 0.21625
+ },
+ "outcome": "accept",
+ "question": "Do Boston Celtics and New York Knicks trade Austin Croshere and Tony Battie for Nick Van Exel and Devin Brown?"
+}

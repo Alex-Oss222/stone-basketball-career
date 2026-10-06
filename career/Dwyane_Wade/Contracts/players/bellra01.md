@@ -2,9 +2,9 @@
 
 # Contract | Raja Bell
 
-Known through: 2005-01-23. [Open interactive contract](bellra01.html#contract) · [Contract history](bellra01.html#contract-history)
+Known through: 2005-01-24. [Open interactive contract](bellra01.html#contract) · [Contract history](bellra01.html#contract-history)
 
-Raja Bell: under contract. Evidence cutoff: 2005-01-23.
+Raja Bell: under contract. Evidence cutoff: 2005-01-24.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Utah Jazz |
+| Assigned club | Miami Heat |
 | Signing club | Utah Jazz |
 | Contract ID | bellra01-2003-09-26 |
 | Signing route / evidence basis | signing |
@@ -94,6 +94,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-01-24 | Utah Jazz | Miami Heat | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
 
 ### Evidence and coverage
 
@@ -104,6 +105,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 
 ### Current control and contract coverage
 
@@ -112,7 +114,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Raja Bell |
-| Club / rights baseline | Utah Jazz |
+| Club / rights baseline | Miami Heat |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -177,7 +179,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Utah Jazz |
+| Assigned club | Miami Heat |
 | Signing club | Utah Jazz |
 | Contract ID | bellra01-2003-09-26 |
 | Signing route / evidence basis | signing |
@@ -246,6 +248,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-01-24 | Utah Jazz | Miami Heat | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
 
 ### Evidence and coverage
 
@@ -256,6 +259,107 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+
+### Raja Bell · existing contract; signing date not recorded
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | Not recorded |  |
+| Original term | Not recorded |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | $1,320,000 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Miami Heat |
+| Signing club | Not recorded |
+| Contract ID | bellra01-baseline-2003-06-26 |
+| Signing route / evidence basis | Existing contract record |
+| Signing date | Not recorded |
+| Verified first season | Not recorded |
+| Verified final season | Not recorded |
+| Verified expiry date | Not recorded |
+| Status | under_contract |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2004-05 | $1,320,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. No exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2004-05 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+| 2005-01-24 | Utah Jazz | Miami Heat | Not recorded | [Archived contract assignment](../contract_records.json) |
+
+### Evidence and coverage
+
+Acquired from Utah Jazz on January 24, 2005 by trade (2005-01-24-64ef582bc5); contract carried as the inventory records it (under_contract).
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+
+#### Agreement evidence
+
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Dated signed-contract archive](../contract_records.json)
 
 ### Raja Bell · existing contract; signing date not recorded
 
@@ -363,3 +467,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/)
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 - [Dated league rights evidence](../../../../library/2003/league/nba_2003_free_agent_rights.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Dated signed-contract archive](../contract_records.json)

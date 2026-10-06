@@ -21,5 +21,7 @@ status: active
 - 2005-01-17: Boston Celtics declines Miami's proposal (2005-01-17-adc5909b8d).
 - 2005-01-17: Miami proposes to Boston Celtics: Eddie Jones, Maurice Evans for Reggie Miller, Austin Croshere (acceptance drawn by the engine, trade-2005-01-17-14d65ed9c8). Record: `00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json`.
 - 2005-01-18: Boston Celtics declines Miami's proposal (2005-01-17-14d65ed9c8).
+- 2005-01-24: Miami proposes to Utah Jazz: Eddie Jones, Kendall Gill for Raja Bell, Matt Harpring (acceptance drawn by the engine, trade-2005-01-24-64ef582bc5). Record: `00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json`.
+- 2005-01-24: Trade with Utah Jazz: Miami sends Eddie Jones, Kendall Gill, 2005 round 1 pick for Raja Bell, Matt Harpring (accepted by engine draw trade-2005-01-24-64ef582bc5). Record: `00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json`.
 
 ## Consequences

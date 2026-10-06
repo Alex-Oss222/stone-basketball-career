@@ -1683,6 +1683,164 @@
     ],
     "contract_id": "alstora01-2004-10-05"
    }
+  },
+  {
+   "record_id": "jonesed02-2000-08-01-assigned-2005-01-24-fa1a05053956",
+   "recorded_on": "2005-01-24",
+   "player_id": "jonesed02",
+   "player": "Eddie Jones",
+   "contract_id": "jonesed02-2000-08-01",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json",
+   "contract": {
+    "player": "Eddie Jones",
+    "status": "under_contract",
+    "schedule": {
+     "2003-04": 12333750,
+     "2004-05": 13455000,
+     "2005-06": 14576250,
+     "2006-07": 15697500
+    },
+    "notes": "Existing contract ends in 2006-07. The later report is used only to verify the original final-year amount; subsequent transactions are not applied.",
+    "sources": [
+     "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+     "https://www.espn.com/nba/dailydime?page=dailydime_070210-11",
+     "https://www.upi.com/Archives/2000/08/01/Jones-Mashburn-in-9-player-deal/6267965102400/",
+     "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+     "Carried over unchanged from career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json (rollover repair: the October 1, 2004 rollover rebuilt it from the market's first-year salary)"
+    ],
+    "amount_kind": {
+     "2003-04": "contract_salary",
+     "2004-05": "contract_salary",
+     "2005-06": "contract_salary",
+     "2006-07": "contract_salary"
+    },
+    "signed_date": "2000-08-01",
+    "original_term_seasons": 7,
+    "salary_reconstruction": {
+     "first_year_salary": 8970000,
+     "annual_dollar_raise": 1121250,
+     "method": "Constant contract progression, anchored by the 2002-03 salary and the original 2006-07 salary."
+    },
+    "prior_season_salary": {
+     "season": "2002-03",
+     "amount": 11212500,
+     "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
+    },
+    "bbr_id": "jonesed02"
+   },
+   "assignment": {
+    "date": "2005-01-24",
+    "from_team": "Miami Heat",
+    "to_team": "Utah Jazz",
+    "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json"
+   }
+  },
+  {
+   "record_id": "gillke01-2004-08-12-assigned-2005-01-24-fa1a05053956",
+   "recorded_on": "2005-01-24",
+   "player_id": "gillke01",
+   "player": "Kendall Gill",
+   "contract_id": "gillke01-2004-08-12",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json",
+   "contract": {
+    "player": "Kendall Gill",
+    "bbr_id": "gillke01",
+    "status": "under_contract",
+    "schedule": {
+     "2004-05": 1100000
+    },
+    "amount_kind": {
+     "2004-05": "contract_salary"
+    },
+    "guaranteed": {
+     "2004-05": 1100000
+    },
+    "signed_date": "2004-08-12",
+    "route": "minimum",
+    "original_term_seasons": 1,
+    "notes": "Signed August 12, 2004 in the 2004-05 summer market (signing, route minimum); schedule from the league contract ledger (raises by route).",
+    "sources": [
+     "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+     "2004-05/League/contracts.json"
+    ],
+    "previous_club": "Chicago Bulls"
+   },
+   "assignment": {
+    "date": "2005-01-24",
+    "from_team": "Miami Heat",
+    "to_team": "Utah Jazz",
+    "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json"
+   }
+  },
+  {
+   "record_id": "bellra01-baseline-2003-06-26-assigned-2005-01-24-fa1a05053956",
+   "recorded_on": "2005-01-24",
+   "player_id": "bellra01",
+   "player": "Raja Bell",
+   "contract_id": "bellra01-baseline-2003-06-26",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json",
+   "contract": {
+    "player": "Raja Bell",
+    "bbr_id": "bellra01",
+    "status": "under_contract",
+    "schedule": {
+     "2004-05": 1320000
+    },
+    "amount_kind": {
+     "2004-05": "contract_salary"
+    },
+    "held_on": "2005-01-24",
+    "terms_source": "career/Dwyane_Wade/2004-05/League/contracts.json",
+    "acquired": {
+     "how": "trade",
+     "date": "2005-01-24",
+     "from": "Utah Jazz",
+     "record": "00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json"
+    }
+   },
+   "assignment": {
+    "date": "2005-01-24",
+    "from_team": "Utah Jazz",
+    "to_team": "Miami Heat",
+    "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json"
+   }
+  },
+  {
+   "record_id": "harprma01-baseline-2003-06-26-assigned-2005-01-24-fa1a05053956",
+   "recorded_on": "2005-01-24",
+   "player_id": "harprma01",
+   "player": "Matt Harpring",
+   "contract_id": "harprma01-baseline-2003-06-26",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json",
+   "contract": {
+    "player": "Matt Harpring",
+    "bbr_id": "harprma01",
+    "status": "under_contract",
+    "schedule": {
+     "2004-05": 4690000
+    },
+    "amount_kind": {
+     "2004-05": "contract_salary"
+    },
+    "held_on": "2005-01-24",
+    "terms_source": "career/Dwyane_Wade/2004-05/League/contracts.json",
+    "acquired": {
+     "how": "trade",
+     "date": "2005-01-24",
+     "from": "Utah Jazz",
+     "record": "00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json"
+    }
+   },
+   "assignment": {
+    "date": "2005-01-24",
+    "from_team": "Utah Jazz",
+    "to_team": "Miami Heat",
+    "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json"
+   }
   }
  ]
 }

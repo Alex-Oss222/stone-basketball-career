@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-01-23 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-01-24 
 
-**Contract/control:** Signed August 19, 2004 (minimum): 1 season(s) from 2004-05, $932,546 scheduled ($932,546 in 2004-05). (register, 2005-01-10) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed August 19, 2004 (minimum): 1 season(s) from 2004-05, $932,546 scheduled ($932,546 in 2004-05). (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/thomajo02.html#contract) · [Contract history](../../../../Contracts/players/thomajo02.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

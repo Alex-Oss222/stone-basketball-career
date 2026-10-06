@@ -1,12 +1,12 @@
 # Miami Heat working depth chart
 
-**As of:** 2005-01-23 · **Staff decision in force:** 2005-01-20 (fortnightly review)  
+**As of:** 2005-01-24 · **Staff decision in force:** 2005-01-20 (fortnightly review)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
 | PG | Mike James (starter) | Rafer Alston | Maurice Baker |  |
-| SG | Dwyane Wade (starter) | Kendall Gill | Eddie Jones | Maurice Evans (injured list) |
+| SG | Dwyane Wade (starter) | Kendall Gill | Eddie Jones | Maurice Evans |
 | SF | Caron Butler (starter) | Dorell Wright | Lamond Murray |  |
 | PF | Mehmet Okur (starter) | Donyell Marshall |  |  |
 | C | Brian Grant (starter) | John Thomas (injured list) | John Edwards (injured list) |  |
@@ -27,11 +27,11 @@
 | Eddie Jones | SG | 7.68 |  |
 | Lamond Murray | SF | 3.84 |  |
 
-Outside the rotation (dressing as the twelfth man or on the injured list): John Thomas, Maurice Evans, Maurice Baker, John Edwards.
+Outside the rotation (dressing as the twelfth man or on the injured list): John Thomas, Maurice Evans, Maurice Baker, John Edwards, Raja Bell, Matt Harpring.
 
-## Injured list on 2005-01-23
+## Injured list on 2005-01-24
 
-John Edwards, John Thomas, Maurice Evans ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
+John Edwards, John Thomas, Matt Harpring ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 
 ## Not on the active register
 

@@ -2,9 +2,9 @@
 
 # Contract | Austin Croshere
 
-Known through: 2005-01-23. [Open interactive contract](croshau01.html#contract) · [Contract history](croshau01.html#contract-history)
+Known through: 2005-01-24. [Open interactive contract](croshau01.html#contract) · [Contract history](croshau01.html#contract-history)
 
-Austin Croshere: under contract. Evidence cutoff: 2005-01-23.
+Austin Croshere: under contract. Evidence cutoff: 2005-01-24.
 
 ## Current contract
 
@@ -119,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Austin Croshere |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | New York Knicks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

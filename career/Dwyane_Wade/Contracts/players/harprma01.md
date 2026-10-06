@@ -2,13 +2,112 @@
 
 # Contract | Matt Harpring
 
-Known through: 2005-01-23. [Open interactive contract](harprma01.html#contract) · [Contract history](harprma01.html#contract-history)
+Known through: 2005-01-24. [Open interactive contract](harprma01.html#contract) · [Contract history](harprma01.html#contract-history)
 
-Matt Harpring: under contract unverified. Evidence cutoff: 2005-01-23.
+Matt Harpring: under contract. Evidence cutoff: 2005-01-24.
 
 ## Current contract
 
-No verified current signed agreement is available in the dated record. The control and evidence sections below explain the recorded status.
+### Matt Harpring · existing contract; signing date not recorded
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | Not recorded |  |
+| Original term | Not recorded |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | $4,690,000 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Miami Heat |
+| Signing club | Not recorded |
+| Contract ID | harprma01-baseline-2003-06-26 |
+| Signing route / evidence basis | Existing contract record |
+| Signing date | Not recorded |
+| Verified first season | Not recorded |
+| Verified final season | Not recorded |
+| Verified expiry date | Not recorded |
+| Status | under_contract |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2004-05 | $4,690,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. No exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2004-05 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+| 2005-01-24 | Utah Jazz | Miami Heat | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
+
+### Evidence and coverage
+
+Acquired from Utah Jazz on January 24, 2005 by trade (2005-01-24-64ef582bc5); contract carried as the inventory records it (under_contract).
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+
+#### Agreement evidence
+
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 
 ### Current control and contract coverage
 
@@ -17,19 +116,18 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Matt Harpring |
-| Club / rights baseline | Utah Jazz |
-| Control status | under_contract_unverified |
-| Executed current contract | No verified current signed contract |
+| Club / rights baseline | Miami Heat |
+| Control status | under_contract |
+| Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
-Term inferred from a constant annual raise in the season salary lists; no contract history page was available, so options and the true final season are not established. The 2003-04 salary does not continue the 2001-02 to 2002-03 raise, so this may be an extension, a rookie-scale step, or a contract signed after June 2003.
+Current signed salary detail appears in the contract below.
 
 | Season | Amount | Record kind |
 | --- | --- | --- |
-| 2003-04 | $4,290,000 | contract_salary |
 
 ### Draft-rights scale reference
 
@@ -64,10 +162,114 @@ An offer, counteroffer or acceptance is not an executed contract.
 
 ## Contract history
 
-No executed agreement is recorded in the available contract history.
+The register preserves distinct agreements. An assignment by trade is part of the same agreement.
+
+### Matt Harpring · existing contract; signing date not recorded
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | Not recorded |  |
+| Original term | Not recorded |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | $4,690,000 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Miami Heat |
+| Signing club | Not recorded |
+| Contract ID | harprma01-baseline-2003-06-26 |
+| Signing route / evidence basis | Existing contract record |
+| Signing date | Not recorded |
+| Verified first season | Not recorded |
+| Verified final season | Not recorded |
+| Verified expiry date | Not recorded |
+| Status | under_contract |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2004-05 | $4,690,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. No exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2004-05 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+| 2005-01-24 | Utah Jazz | Miami Heat | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
+
+### Evidence and coverage
+
+Acquired from Utah Jazz on January 24, 2005 by trade (2005-01-24-64ef582bc5); contract carried as the inventory records it (under_contract).
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+
+#### Agreement evidence
+
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 
 ## Source records
 
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Dated signed-contract archive](../contract_records.json)

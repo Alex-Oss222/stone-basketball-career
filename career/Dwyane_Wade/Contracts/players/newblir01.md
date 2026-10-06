@@ -2,9 +2,9 @@
 
 # Contract | Ira Newble
 
-Known through: 2005-01-23. [Open interactive contract](newblir01.html#contract) · [Contract history](newblir01.html#contract-history)
+Known through: 2005-01-24. [Open interactive contract](newblir01.html#contract) · [Contract history](newblir01.html#contract-history)
 
-Ira Newble: under contract. Evidence cutoff: 2005-01-23.
+Ira Newble: under contract. Evidence cutoff: 2005-01-24.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ira Newble |
-| Club / rights baseline | Cleveland Cavaliers |
+| Club / rights baseline | Houston Rockets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Kendall Gill
 
-Known through: 2005-01-23. [Open interactive contract](gillke01.html#contract) · [Contract history](gillke01.html#contract-history)
+Known through: 2005-01-24. [Open interactive contract](gillke01.html#contract) · [Contract history](gillke01.html#contract-history)
 
-Kendall Gill: under contract. Evidence cutoff: 2005-01-23.
+Kendall Gill: under contract. Evidence cutoff: 2005-01-24.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Utah Jazz |
 | Signing club | Miami Heat |
 | Contract ID | gillke01-2004-08-12 |
 | Signing route / evidence basis | minimum |
@@ -94,6 +94,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-01-24 | Miami Heat | Utah Jazz | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
 
 ### Evidence and coverage
 
@@ -106,6 +107,10 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/League/contracts.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 
 ### Current control and contract coverage
 
@@ -114,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Kendall Gill |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Utah Jazz |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -179,7 +184,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Utah Jazz |
 | Signing club | Miami Heat |
 | Contract ID | gillke01-2004-08-12 |
 | Signing route / evidence basis | minimum |
@@ -248,6 +253,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-01-24 | Miami Heat | Utah Jazz | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
 
 ### Evidence and coverage
 
@@ -260,6 +266,10 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/League/contracts.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 
 ### Kendall Gill · 2003-08-20
 
@@ -467,4 +477,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/League/contracts.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)

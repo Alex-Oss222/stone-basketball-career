@@ -2,9 +2,9 @@
 
 # Contract | Eddie Jones
 
-Known through: 2005-01-23. [Open interactive contract](jonesed02.html#contract) · [Contract history](jonesed02.html#contract-history)
+Known through: 2005-01-24. [Open interactive contract](jonesed02.html#contract) · [Contract history](jonesed02.html#contract-history)
 
-Eddie Jones: under contract. Evidence cutoff: 2005-01-23.
+Eddie Jones: under contract. Evidence cutoff: 2005-01-24.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Utah Jazz |
 | Signing club | Not recorded |
 | Contract ID | jonesed02-2000-08-01 |
 | Signing route / evidence basis | salary_pattern |
@@ -102,6 +102,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-01-24 | Miami Heat | Utah Jazz | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
 
 ### Evidence and coverage
 
@@ -121,6 +122,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.espn.com/nba/dailydime?page=dailydime_070210-11)
 - [Contract source document](https://www.upi.com/Archives/2000/08/01/Jones-Mashburn-in-9-player-deal/6267965102400/)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 
 ### Current control and contract coverage
 
@@ -129,7 +133,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Eddie Jones |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Utah Jazz |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -194,7 +198,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Utah Jazz |
 | Signing club | Not recorded |
 | Contract ID | jonesed02-2000-08-01 |
 | Signing route / evidence basis | salary_pattern |
@@ -271,6 +275,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-01-24 | Miami Heat | Utah Jazz | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
 
 ### Evidence and coverage
 
@@ -290,6 +295,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.espn.com/nba/dailydime?page=dailydime_070210-11)
 - [Contract source document](https://www.upi.com/Archives/2000/08/01/Jones-Mashburn-in-9-player-deal/6267965102400/)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 
 ## Source records
 
@@ -303,3 +311,5 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.espn.com/nba/dailydime?page=dailydime_070210-11)
 - [Contract source document](https://www.upi.com/Archives/2000/08/01/Jones-Mashburn-in-9-player-deal/6267965102400/)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)

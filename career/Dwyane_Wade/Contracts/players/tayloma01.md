@@ -2,9 +2,9 @@
 
 # Contract | Maurice Taylor
 
-Known through: 2005-01-23. [Open interactive contract](tayloma01.html#contract) · [Contract history](tayloma01.html#contract-history)
+Known through: 2005-01-24. [Open interactive contract](tayloma01.html#contract) · [Contract history](tayloma01.html#contract-history)
 
-Maurice Taylor: under contract. Evidence cutoff: 2005-01-23.
+Maurice Taylor: under contract. Evidence cutoff: 2005-01-24.
 
 ## Current contract
 
@@ -126,7 +126,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Maurice Taylor |
-| Club / rights baseline | Houston Rockets |
+| Club / rights baseline | Cleveland Cavaliers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

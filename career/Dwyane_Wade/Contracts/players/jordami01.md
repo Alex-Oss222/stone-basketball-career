@@ -2,9 +2,9 @@
 
 # Contract | Michael Jordan
 
-Known through: 2005-01-23. [Open interactive contract](jordami01.html#contract) · [Contract history](jordami01.html#contract-history)
+Known through: 2005-01-24. [Open interactive contract](jordami01.html#contract) · [Contract history](jordami01.html#contract-history)
 
-Michael Jordan: expired or unresolved. Evidence cutoff: 2005-01-23.
+Michael Jordan: expired or unresolved. Evidence cutoff: 2005-01-24.
 
 ## Current contract
 

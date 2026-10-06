@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 31 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** December 20, 2004 · **Statistics through:** 2005-01-23 
+**Opening assessment:** December 20, 2004 · **Statistics through:** 2005-01-24 
 
-**Contract/control:** Acquired by trade from Toronto Raptors on December 20, 2004: $5,023,850 in 2004-05; contract through 2004-05. (register, 2005-01-10) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Acquired by trade from Toronto Raptors on December 20, 2004: $5,023,850 in 2004-05; contract through 2004-05. (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/marshdo01.html#contract) · [Contract history](../../../../Contracts/players/marshdo01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
@@ -53,7 +53,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Chicago Bulls | 82 | N/A | 36.4 | 14.7 | 9.9 | 1.5 | 1.1 | 1.5 | 1.4 | 0.461 | 0.403 | 0.736 |
-| 2004-05 | MIA | 16 | 6 | 26.9 | 12.2 | 5.9 | 1.4 | 0.8 | 0.8 | 0.9 | 43.7% | 45.2% | 85.7% |
+| 2004-05 | MIA | 17 | 6 | 26.6 | 11.7 | 5.8 | 1.4 | 0.8 | 0.8 | 0.9 | 42.9% | 43.8% | 84.1% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

@@ -4,26 +4,30 @@
 
 2004-05 · Calendar coverage: January 22-31, 2005
 
-As of October 1, 2004: no award decisions closed.
+As of January 24, 2005: 2 award decision(s) closed, announced January 24, 2005.
 
-Official award window: not recorded. Announcement date: not recorded.
+Official award window and announcement date: listed with each decision below.
 
 The rows below are an internal shortlist, not published NBA vote totals. A calendar bucket can contain no award decision; file a decision where its official period ends.
 
 ## Player of the Week
 
+### January 17, 2005 to January 23, 2005 (announced January 24, 2005)
+
 | Conference | Rank slot | Player | Team | Evidence | Result |
 | --- | ---: | --- | --- | --- | --- |
-| East | 1 | Not shortlisted | N/A | No closed period | Pending |
-| East | 2 | Not shortlisted | N/A | No closed period | Pending |
-| East | 3 | Not shortlisted | N/A | No closed period | Pending |
-| West | 1 | Not shortlisted | N/A | No closed period | Pending |
-| West | 2 | Not shortlisted | N/A | No closed period | Pending |
-| West | 3 | Not shortlisted | N/A | No closed period | Pending |
+| East | 1 | Jamal Crawford | Chicago Bulls | 4 G, 3-1 in his games, 24.2 PTS, 3.8 REB, 4.2 AST, Game Score 19.62 a game; score 87.5 | **WINNER** |
+| East | 2 | Vince Carter | Toronto Raptors | 4 G, 2-2 in his games, 25.2 PTS, 4.5 REB, 6.0 AST, Game Score 19.87 a game; score 85.5 | Shortlist |
+| East | 3 | Jalen Rose | Indiana Pacers | 4 G, 3-1 in his games, 24.2 PTS, 3.5 REB, 5.8 AST, Game Score 17.98 a game; score 80.9 | Shortlist |
+| West | 1 | Kevin Garnett | Minnesota Timberwolves | 4 G, 2-2 in his games, 23.0 PTS, 12.5 REB, 8.0 AST, Game Score 22.85 a game; score 97.4 | **WINNER** |
+| West | 2 | Stephon Marbury | Phoenix Suns | 4 G, 4-0 in his games, 24.0 PTS, 2.5 REB, 7.2 AST, Game Score 20.77 a game; score 95.1 | Shortlist |
+| West | 3 | Dirk Nowitzki | Dallas Mavericks | 4 G, 4-0 in his games, 25.2 PTS, 9.5 REB, 2.0 AST, Game Score 19.75 a game; score 91.0 | Shortlist |
 
 ## Decision record
 
-No award decision is filed in this calendar bucket yet.
+- East Player of the Week, January 17, 2005 to January 23, 2005, announced January 24, 2005: **Jamal Crawford**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
+- West Player of the Week, January 17, 2005 to January 23, 2005, announced January 24, 2005: **Kevin Garnett**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
+
 
 [Awards procedure and research](../../../README.md) · [Player evidence for this calendar period](League_Stats.md)
 

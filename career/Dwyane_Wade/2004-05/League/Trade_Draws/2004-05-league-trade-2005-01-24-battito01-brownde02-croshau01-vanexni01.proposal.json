@@ -1,0 +1,41 @@
+{
+ "id": "2004-05-league-trade-2005-01-24-battito01-brownde02-croshau01-vanexni01",
+ "date": "2005-01-24",
+ "clubs": [
+  "Boston Celtics",
+  "New York Knicks"
+ ],
+ "a": {
+  "club": "Boston Celtics",
+  "sends": [
+   "Austin Croshere",
+   "Tony Battie"
+  ],
+  "bbr_ids": [
+   "croshau01",
+   "battito01"
+  ],
+  "salary": 13060000
+ },
+ "b": {
+  "club": "New York Knicks",
+  "sends": [
+   "Nick Van Exel",
+   "Devin Brown"
+  ],
+  "bbr_ids": [
+   "vanexni01",
+   "brownde02"
+  ],
+  "salary": 12628298
+ },
+ "gain": {
+  "Boston Celtics": 0.122,
+  "New York Knicks": 0.183
+ },
+ "accept": {
+  "Boston Celtics": 0.825,
+  "New York Knicks": 0.95
+ },
+ "both": 0.78375
+}

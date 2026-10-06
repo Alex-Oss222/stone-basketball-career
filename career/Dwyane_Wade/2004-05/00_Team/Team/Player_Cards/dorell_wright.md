@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-01-23 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-01-24 
 
-**Contract/control:** Signed July 1, 2004 (rookie_scale): 3 season(s) from 2004-05, $3,156,240 scheduled ($978,720 in 2004-05). (register, 2005-01-10) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed July 1, 2004 (rookie_scale): 3 season(s) from 2004-05, $3,156,240 scheduled ($978,720 in 2004-05). (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/wrighdo01.html#contract) · [Contract history](../../../../Contracts/players/wrighdo01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
@@ -52,7 +52,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2004-05 | MIA | 39 | 1 | 8.9 | 3.6 | 1.2 | 1.1 | 0.5 | 0.2 | 0.7 | 42.1% | 28.6% | 75.6% |
+| 2004-05 | MIA | 40 | 1 | 9.0 | 3.6 | 1.3 | 1.1 | 0.5 | 0.1 | 0.7 | 42.9% | 30.4% | 75.6% |
 
 Source: 2003-04 from closed simulated results (`Stats_and_Awards/League/2003-04/season_totals.json`); 2004-05 from closed Miami game results.
 

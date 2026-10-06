@@ -1563,6 +1563,110 @@
     }
    ],
    "winner": "Grant Hill"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-01-17-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-01-17",
+   "period_end": "2005-01-23",
+   "announced_on": "2005-01-24",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Jamal Crawford",
+     "team": "Chicago Bulls",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 24.2,
+     "reb": 3.8,
+     "ast": 4.2,
+     "game_score": 19.62,
+     "score": 87.5,
+     "rank": 1
+    },
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 25.2,
+     "reb": 4.5,
+     "ast": 6.0,
+     "game_score": 19.87,
+     "score": 85.5,
+     "rank": 2
+    },
+    {
+     "player": "Jalen Rose",
+     "team": "Indiana Pacers",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 24.2,
+     "reb": 3.5,
+     "ast": 5.8,
+     "game_score": 17.98,
+     "score": 80.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Jamal Crawford"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-01-17-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-01-17",
+   "period_end": "2005-01-23",
+   "announced_on": "2005-01-24",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 23.0,
+     "reb": 12.5,
+     "ast": 8.0,
+     "game_score": 22.85,
+     "score": 97.4,
+     "rank": 1
+    },
+    {
+     "player": "Stephon Marbury",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 24.0,
+     "reb": 2.5,
+     "ast": 7.2,
+     "game_score": 20.77,
+     "score": 95.1,
+     "rank": 2
+    },
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 25.2,
+     "reb": 9.5,
+     "ast": 2.0,
+     "game_score": 19.75,
+     "score": 91.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
   }
  ]
 }

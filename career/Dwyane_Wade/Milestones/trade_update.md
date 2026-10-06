@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2005-01-23 · Miami Heat · active
+Career date: 2005-01-24 · Miami Heat · active
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 
@@ -17,6 +17,7 @@ Activation: An actual dated proposal, consultation or executed transaction.
 | 2004-12-20 | Completed | Toronto Raptors | Scott Padgett; Udonis Haslem | Donyell Marshall; Lamond Murray | 2004-12-20 | accept | [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) |
 | 2005-01-17 | Declined | Boston Celtics | Eddie Jones; Maurice Evans | Reggie Miller; Austin Croshere | Not recorded | decline | [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json) |
 | 2005-01-17 | Declined | Boston Celtics | Eddie Jones; Maurice Baker | Reggie Miller; Austin Croshere | Not recorded | decline | [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json) |
+| 2005-01-24 | Completed | Utah Jazz | Eddie Jones; Kendall Gill | Raja Bell; Matt Harpring | 2005-01-24 | accept | [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
 
 ## What this changes for you
 
@@ -77,6 +78,7 @@ An actual transaction update with its source and applicable player rights.
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json)
+- [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Closed game](../2004-05/05_Preseason/Game_2.md)
 - [Closed game](../2004-05/05_Preseason/Game_3.md)

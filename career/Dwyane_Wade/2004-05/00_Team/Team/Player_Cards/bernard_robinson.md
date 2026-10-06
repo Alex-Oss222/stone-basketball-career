@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-01-23 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-01-24 
 
-**Contract/control:** Unsigned draft rights: No. 51 pick of the 2004 draft. (register, 2005-01-10) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Unsigned draft rights: No. 51 pick of the 2004 draft. (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/robinbe01.html#contract) · [Contract history](../../../../Contracts/players/robinbe01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

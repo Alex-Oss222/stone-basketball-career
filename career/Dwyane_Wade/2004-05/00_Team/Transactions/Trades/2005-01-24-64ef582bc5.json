@@ -1,0 +1,206 @@
+{
+ "trade_id": "2005-01-24-64ef582bc5",
+ "date": "2005-01-24",
+ "status": "completed",
+ "kind": "trade",
+ "trade": {
+  "partner": "Utah Jazz",
+  "miami_out": [
+   "Eddie Jones",
+   "Kendall Gill"
+  ],
+  "miami_in": [
+   "Raja Bell",
+   "Matt Harpring"
+  ],
+  "picks_out": [
+   {
+    "year": 2005,
+    "round": 1
+   }
+  ],
+  "picks_in": []
+ },
+ "valuation": {
+  "partner": "Utah Jazz",
+  "posture": "rebuilding",
+  "miami_out": [
+   {
+    "player": "Eddie Jones",
+    "bbr_id": "jonesed02",
+    "value": -0.1,
+    "production": 0.0,
+    "contract_term": -2.0,
+    "relief": 0.0,
+    "salary": 13455000,
+    "years": 3,
+    "age": 33,
+    "basis": "production value 4.0 (2002-03 blended with closed 2003-04 games)",
+    "now": 0.0,
+    "future": -2.0,
+    "walk_year": false
+   },
+   {
+    "player": "Kendall Gill",
+    "bbr_id": "gillke01",
+    "value": 0.075,
+    "production": 0.0,
+    "contract_term": 0.075,
+    "relief": 0.0,
+    "salary": 1100000,
+    "years": 1,
+    "age": 36,
+    "basis": "production value 4.1 (2002-03 blended with closed 2003-04 games)",
+    "now": 0.0,
+    "future": 0.075,
+    "walk_year": true
+   }
+  ],
+  "miami_in": [
+   {
+    "player": "Raja Bell",
+    "bbr_id": "bellra01",
+    "value": 0.821,
+    "production": 0.681,
+    "contract_term": 0.14,
+    "relief": 0.0,
+    "salary": 1320000,
+    "years": 1,
+    "age": 28,
+    "basis": "production value 7.7 (2002-03 blended with closed 2003-04 games)",
+    "now": 0.681,
+    "future": 0.481,
+    "walk_year": true
+   },
+   {
+    "player": "Matt Harpring",
+    "bbr_id": "harprma01",
+    "value": 1.678,
+    "production": 1.728,
+    "contract_term": -0.05,
+    "relief": 0.0,
+    "salary": 4690000,
+    "years": 1,
+    "age": 28,
+    "basis": "production value 11.9 (2002-03 blended with closed 2003-04 games)",
+    "now": 1.728,
+    "future": 0.814,
+    "walk_year": true
+   }
+  ],
+  "picks_out": [
+   {
+    "value": 1.247,
+    "slot": 22.0,
+    "basis": "Miami Heat 48 wins in 2002-03; 2005 first regressed 1 year(s)",
+    "pick": {
+     "year": 2005,
+     "round": 1
+    }
+   }
+  ],
+  "picks_in": [],
+  "partner_gain": 0.4,
+  "miami_gain": 0.54,
+  "miami_out_view": 0.982,
+  "dump": false,
+  "shed": -35455000,
+  "objective_gain": 0.4,
+  "untouchable": []
+ },
+ "ranking": {
+  "trade": {
+   "partner": "Utah Jazz",
+   "miami_out": [
+    "Eddie Jones",
+    "Kendall Gill"
+   ],
+   "miami_in": [
+    "Raja Bell",
+    "Matt Harpring"
+   ],
+   "picks_out": [
+    {
+     "year": 2005,
+     "round": 1
+    }
+   ],
+   "picks_in": []
+  },
+  "miami_gain": 0.747,
+  "partner_gain": 0.4,
+  "accept": 0.95,
+  "score": 0.747,
+  "wade_request": false,
+  "consultation": null,
+  "consultation_player": null
+ },
+ "decision_event": "trade-2005-01-24-64ef582bc5",
+ "negotiation": null,
+ "standing": {
+  "as_of": "2004-06-24",
+  "standing": "franchise",
+  "trigger": "honor_recorded",
+  "basis": {
+   "closed_seasons": [
+    "2003-04"
+   ],
+   "window": [
+    "2003-04"
+   ],
+   "starter_lines": {
+    "2003-04": {
+     "season": "2003-04",
+     "gp": 75,
+     "gs": 70,
+     "scheduled": 82,
+     "minutes_per_game": 35.0,
+     "complete": true,
+     "met": true
+    }
+   },
+   "honors": [
+    "2003-04-all-star",
+    "2003-04-all_nba-first"
+   ],
+   "conflicts": [],
+   "ignored_honors": [
+    "2003-04-rookie_of_month-2003-10-28-east",
+    "2003-04-player_of_week-2003-12-15-east",
+    "2003-04-player_of_month-2003-12-01-east",
+    "2003-04-rookie_of_month-2003-12-01-east",
+    "2003-04-player_of_week-2003-12-29-east",
+    "2003-04-player_of_month-2004-01-01-east",
+    "2003-04-rookie_of_month-2004-01-01-east",
+    "2003-04-rookie_of_month-2004-02-01-east",
+    "2003-04-player_of_week-2004-03-08-east",
+    "2003-04-player_of_month-2004-03-01-east",
+    "2003-04-rookie_of_month-2004-03-01-east",
+    "2003-04-rookie_of_month-2004-04-01-east",
+    "2003-04-roy",
+    "2003-04-all_rookie-first"
+   ],
+   "rule": "All-NBA First or Second Team in the most recent closed season",
+   "signed_date": "2003-07-21",
+   "season_folder": "2003-04",
+   "statistics": {
+    "2003-04": {
+     "season": "2003-04",
+     "gp": 75,
+     "gs": 70,
+     "scheduled": 82,
+     "minutes_per_game": 35.0,
+     "complete": true
+    }
+   }
+  },
+  "source": "Stats_and_Awards/League/2003-04/All_Star.md"
+ },
+ "consultation": null,
+ "answer": {
+  "outcome": "accept",
+  "date": "2005-01-24"
+ },
+ "applied": "2005-01-24",
+ "basis": "Chosen by Miami's front office as the top-ranked legal proposal on the date (runtime/trades.py search)."
+}

@@ -1,0 +1,41 @@
+{
+ "id": "2004-05-league-trade-2005-01-24-catoke01-newblir01-robingl01-tayloma01",
+ "date": "2005-01-24",
+ "clubs": [
+  "Cleveland Cavaliers",
+  "Houston Rockets"
+ ],
+ "a": {
+  "club": "Cleveland Cavaliers",
+  "sends": [
+   "Ira Newble",
+   "Glenn Robinson"
+  ],
+  "bbr_ids": [
+   "newblir01",
+   "robingl01"
+  ],
+  "salary": 14775600
+ },
+ "b": {
+  "club": "Houston Rockets",
+  "sends": [
+   "Kelvin Cato",
+   "Maurice Taylor"
+  ],
+  "bbr_ids": [
+   "catoke01",
+   "tayloma01"
+  ],
+  "salary": 16442000
+ },
+ "gain": {
+  "Cleveland Cavaliers": 0.111,
+  "Houston Rockets": 0.177
+ },
+ "accept": {
+  "Cleveland Cavaliers": 0.782,
+  "Houston Rockets": 0.949
+ },
+ "both": 0.742118
+}

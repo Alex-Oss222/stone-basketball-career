@@ -1,0 +1,12 @@
+{
+ "date": "2005-01-24",
+ "decider": "Cleveland Cavaliers and Houston Rockets front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2005-01-24-catoke01-newblir01-robingl01-tayloma01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.742118,
+  "decline": 0.257882
+ },
+ "outcome": "accept",
+ "question": "Do Cleveland Cavaliers and Houston Rockets trade Ira Newble and Glenn Robinson for Kelvin Cato and Maurice Taylor?"
+}

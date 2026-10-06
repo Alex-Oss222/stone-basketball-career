@@ -4,7 +4,7 @@
 **Age at assessment:** 31 · **Height:** 6-6 · **Weight:** 190 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** 2005-01-23 
 
-**Contract/control:** Existing contract: 3 season(s) from 2004-05, $44,401,500 scheduled ($13,455,000 in 2004-05). (register, 2005-01-10) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** January 24, 2005: traded to Utah Jazz (2005-01-24-64ef582bc5). (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/jonesed02.html#contract) · [Contract history](../../../../Contracts/players/jonesed02.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-01-23",
+  "as_of": "2005-01-24",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -383,7 +383,7 @@
     {
       "player_id": "croshau01",
       "name": "Austin Croshere",
-      "team": "Boston Celtics",
+      "team": "New York Knicks",
       "status": "under contract",
       "current_contract_id": "croshau01-existing-cef2473987f9",
       "recorded_agreements": 1,
@@ -1382,7 +1382,7 @@
     {
       "player_id": "brownde02",
       "name": "Devin Brown",
-      "team": "New York Knicks",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "brownde02-2003-07-31",
       "recorded_agreements": 1,
@@ -1562,7 +1562,7 @@
     {
       "player_id": "jonesed02",
       "name": "Eddie Jones",
-      "team": "Miami Heat",
+      "team": "Utah Jazz",
       "status": "under contract",
       "current_contract_id": "jonesed02-2000-08-01",
       "recorded_agreements": 1,
@@ -1814,7 +1814,7 @@
     {
       "player_id": "robingl01",
       "name": "Glenn Robinson",
-      "team": "Cleveland Cavaliers",
+      "team": "Houston Rockets",
       "status": "under contract",
       "current_contract_id": "robingl01-existing-22b8500d0040",
       "recorded_agreements": 1,
@@ -1949,7 +1949,7 @@
     {
       "player_id": "newblir01",
       "name": "Ira Newble",
-      "team": "Cleveland Cavaliers",
+      "team": "Houston Rockets",
       "status": "under contract",
       "current_contract_id": "newblir01-2003-07-22",
       "recorded_agreements": 2,
@@ -2669,7 +2669,7 @@
     {
       "player_id": "catoke01",
       "name": "Kelvin Cato",
-      "team": "Houston Rockets",
+      "team": "Cleveland Cavaliers",
       "status": "under contract",
       "current_contract_id": "catoke01-existing-7cdb971d8072",
       "recorded_agreements": 1,
@@ -2687,7 +2687,7 @@
     {
       "player_id": "gillke01",
       "name": "Kendall Gill",
-      "team": "Miami Heat",
+      "team": "Utah Jazz",
       "status": "under contract",
       "current_contract_id": "gillke01-2004-08-12",
       "recorded_agreements": 3,
@@ -3317,10 +3317,10 @@
     {
       "player_id": "harprma01",
       "name": "Matt Harpring",
-      "team": "Utah Jazz",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "team": "Miami Heat",
+      "status": "under contract",
+      "current_contract_id": "harprma01-baseline-2003-06-26",
+      "recorded_agreements": 1,
       "href": "players/harprma01.html#contract"
     },
     {
@@ -3353,7 +3353,7 @@
     {
       "player_id": "tayloma01",
       "name": "Maurice Taylor",
-      "team": "Houston Rockets",
+      "team": "Cleveland Cavaliers",
       "status": "under contract",
       "current_contract_id": "tayloma01-2001-08-07",
       "recorded_agreements": 1,
@@ -3659,7 +3659,7 @@
     {
       "player_id": "vanexni01",
       "name": "Nick Van Exel",
-      "team": "New York Knicks",
+      "team": "Boston Celtics",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3911,10 +3911,10 @@
     {
       "player_id": "bellra01",
       "name": "Raja Bell",
-      "team": "Utah Jazz",
+      "team": "Miami Heat",
       "status": "under contract",
       "current_contract_id": "bellra01-2003-09-26",
-      "recorded_agreements": 2,
+      "recorded_agreements": 3,
       "href": "players/bellra01.html#contract"
     },
     {
@@ -4766,7 +4766,7 @@
     {
       "player_id": "battito01",
       "name": "Tony Battie",
-      "team": "Boston Celtics",
+      "team": "New York Knicks",
       "status": "under contract",
       "current_contract_id": "battito01-1999-10-15",
       "recorded_agreements": 1,

@@ -2496,6 +2496,78 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.22 x fit"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-24-battito01-brownde02-croshau01-vanexni01",
+   "date": "2005-01-24",
+   "kind": "trade",
+   "player": "Austin Croshere",
+   "bbr_id": "croshau01",
+   "from": "Boston Celtics",
+   "to": "New York Knicks"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-24-battito01-brownde02-croshau01-vanexni01",
+   "date": "2005-01-24",
+   "kind": "trade",
+   "player": "Tony Battie",
+   "bbr_id": "battito01",
+   "from": "Boston Celtics",
+   "to": "New York Knicks"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-24-battito01-brownde02-croshau01-vanexni01",
+   "date": "2005-01-24",
+   "kind": "trade",
+   "player": "Nick Van Exel",
+   "bbr_id": "vanexni01",
+   "from": "New York Knicks",
+   "to": "Boston Celtics"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-24-battito01-brownde02-croshau01-vanexni01",
+   "date": "2005-01-24",
+   "kind": "trade",
+   "player": "Devin Brown",
+   "bbr_id": "brownde02",
+   "from": "New York Knicks",
+   "to": "Boston Celtics"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-24-catoke01-newblir01-robingl01-tayloma01",
+   "date": "2005-01-24",
+   "kind": "trade",
+   "player": "Ira Newble",
+   "bbr_id": "newblir01",
+   "from": "Cleveland Cavaliers",
+   "to": "Houston Rockets"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-24-catoke01-newblir01-robingl01-tayloma01",
+   "date": "2005-01-24",
+   "kind": "trade",
+   "player": "Glenn Robinson",
+   "bbr_id": "robingl01",
+   "from": "Cleveland Cavaliers",
+   "to": "Houston Rockets"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-24-catoke01-newblir01-robingl01-tayloma01",
+   "date": "2005-01-24",
+   "kind": "trade",
+   "player": "Kelvin Cato",
+   "bbr_id": "catoke01",
+   "from": "Houston Rockets",
+   "to": "Cleveland Cavaliers"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-24-catoke01-newblir01-robingl01-tayloma01",
+   "date": "2005-01-24",
+   "kind": "trade",
+   "player": "Maurice Taylor",
+   "bbr_id": "tayloma01",
+   "from": "Houston Rockets",
+   "to": "Cleveland Cavaliers"
   }
  ],
  "market_days": [
@@ -2581,6 +2653,7 @@
   "2005-01-20",
   "2005-01-21",
   "2005-01-22",
-  "2005-01-23"
+  "2005-01-23",
+  "2005-01-24"
  ]
 }

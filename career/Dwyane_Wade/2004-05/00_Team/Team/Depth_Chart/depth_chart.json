@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2004-12-20",
+ "as_of": "2005-01-24",
  "team": "Miami Heat",
  "status": "camp_decision",
  "game_ready": true,
@@ -14,8 +14,6 @@
   ],
   "SG": [
    "Dwyane Wade",
-   "Eddie Jones",
-   "Kendall Gill",
    "Maurice Evans"
   ],
   "SF": [
@@ -51,6 +49,22 @@
    ],
    "status": "under_contract",
    "date": "2004-12-20"
+  },
+  {
+   "name": "Raja Bell",
+   "positions": [
+    "SG"
+   ],
+   "status": "under_contract",
+   "date": "2005-01-24"
+  },
+  {
+   "name": "Matt Harpring",
+   "positions": [
+    "SF"
+   ],
+   "status": "under_contract",
+   "date": "2005-01-24"
   }
  ],
  "unavailable": [],
@@ -88,6 +102,16 @@
   {
    "name": "Udonis Haslem",
    "date": "2004-12-20",
+   "status": "traded"
+  },
+  {
+   "name": "Eddie Jones",
+   "date": "2005-01-24",
+   "status": "traded"
+  },
+  {
+   "name": "Kendall Gill",
+   "date": "2005-01-24",
    "status": "traded"
   }
  ]

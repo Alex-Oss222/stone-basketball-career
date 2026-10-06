@@ -16,5 +16,7 @@ status: complete
 - 2004-11-01: Chris Mihm released at the cut to 15 (non-guaranteed camp contract; no dead money).
 - 2004-12-20: Scott Padgett traded to Toronto Raptors (2004-12-20-be4b6043a0).
 - 2004-12-20: Udonis Haslem traded to Toronto Raptors (2004-12-20-be4b6043a0).
+- 2005-01-24: Eddie Jones traded to Utah Jazz (2005-01-24-64ef582bc5).
+- 2005-01-24: Kendall Gill traded to Utah Jazz (2005-01-24-64ef582bc5).
 
 ## Consequences

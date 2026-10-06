@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2005-01-10",
+ "as_of": "2005-01-24",
  "season": "2004-05",
  "team": "Miami Heat",
  "roster_kind": "team_control_register",
@@ -18,9 +18,9 @@
    "weight_lb": 190,
    "date_of_birth": "1971-10-20",
    "college": "Temple",
-   "status": "under_contract",
-   "control": "Existing contract: 3 season(s) from 2004-05, $44,401,500 scheduled ($13,455,000 in 2004-05).",
-   "working_role": "Rotation at SG, staff plan 8 minutes (rotation 2005-01-20)",
+   "status": "traded",
+   "control": "January 24, 2005: traded to Utah Jazz (2005-01-24-64ef582bc5).",
+   "working_role": "Left Miami (traded)",
    "player_card": "../Player_Cards/eddie_jones.md",
    "bbr_id": "jonesed02"
   },
@@ -122,11 +122,11 @@
     "SG"
    ],
    "date_of_birth": "1968-05-25",
-   "working_role": "Rotation at SG, staff plan 12 minutes (rotation 2005-01-20)",
+   "working_role": "Left Miami (traded)",
    "player_card": "../Player_Cards/kendall_gill.md",
    "bbr_id": "gillke01",
-   "status": "under_contract",
-   "control": "Signed August 12, 2004 (minimum): 1 season(s) from 2004-05, $1,100,000 scheduled ($1,100,000 in 2004-05)."
+   "status": "traded",
+   "control": "January 24, 2005: traded to Utah Jazz (2005-01-24-64ef582bc5)."
   },
   {
    "id": "dorell_wright",
@@ -158,7 +158,7 @@
    "positions": [
     "SG"
    ],
-   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2005-01-20)",
+   "working_role": "Reserve outside the planned rotation (rotation 2005-01-20)",
    "player_card": "../Player_Cards/maurice_evans.md",
    "bbr_id": "evansma01",
    "status": "under_contract",
@@ -328,6 +328,32 @@
    "working_role": "Rotation at SF, staff plan 4 minutes (rotation 2005-01-20)",
    "player_card": "../Player_Cards/lamond_murray.md",
    "bbr_id": "murrala01"
+  },
+  {
+   "id": "raja_bell",
+   "name": "Raja Bell",
+   "positions": [
+    "SG"
+   ],
+   "date_of_birth": "1976-09-19",
+   "status": "under_contract",
+   "control": "Acquired by trade from Utah Jazz on January 24, 2005: $1,320,000 in 2004-05; contract through 2004-05.",
+   "working_role": "Reserve outside the planned rotation (rotation 2005-01-20)",
+   "player_card": "../Player_Cards/raja_bell.md",
+   "bbr_id": "bellra01"
+  },
+  {
+   "id": "matt_harpring",
+   "name": "Matt Harpring",
+   "positions": [
+    "SF"
+   ],
+   "date_of_birth": "1976-05-31",
+   "status": "under_contract",
+   "control": "Acquired by trade from Utah Jazz on January 24, 2005: $4,690,000 in 2004-05; contract through 2004-05.",
+   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2005-01-20)",
+   "player_card": "../Player_Cards/matt_harpring.md",
+   "bbr_id": "harprma01"
   }
  ],
  "sources": [

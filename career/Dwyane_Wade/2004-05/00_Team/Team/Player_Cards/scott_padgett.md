@@ -4,7 +4,7 @@
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** September 30, 2003 · **Statistics through:** 2004-12-19 
 
-**Contract/control:** December 20, 2004: traded to Toronto Raptors (2004-12-20-be4b6043a0). (register, 2005-01-10) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** December 20, 2004: traded to Toronto Raptors (2004-12-20-be4b6043a0). (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/padgesc01.html#contract) · [Contract history](../../../../Contracts/players/padgesc01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

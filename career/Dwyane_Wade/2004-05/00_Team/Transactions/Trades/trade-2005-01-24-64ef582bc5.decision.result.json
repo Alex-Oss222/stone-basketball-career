@@ -1,0 +1,12 @@
+{
+ "date": "2005-01-24",
+ "decider": "Utah Jazz (real club, drawn by rule)",
+ "event_id": "trade-2005-01-24-64ef582bc5",
+ "kind": "decision",
+ "options": {
+  "accept": 0.95,
+  "decline": 0.05
+ },
+ "outcome": "accept",
+ "question": "Does Utah Jazz accept Miami's proposal: Eddie Jones, Kendall Gill, 2005 round 1 for Raja Bell, Matt Harpring?"
+}

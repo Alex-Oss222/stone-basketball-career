@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-05-league-trade-2005-01-24-catoke01-newblir01-robingl01-tayloma01",
+ "date": "2005-01-24",
+ "question": "Do Cleveland Cavaliers and Houston Rockets trade Ira Newble and Glenn Robinson for Kelvin Cato and Maurice Taylor?",
+ "decider": "Cleveland Cavaliers and Houston Rockets front offices (engine draw)",
+ "options": {
+  "accept": 0.742118,
+  "decline": 0.257882
+ },
+ "basis": "gains on own objectives {'Cleveland Cavaliers': 0.111, 'Houston Rockets': 0.177}; acceptance {'Cleveland Cavaliers': 0.782, 'Houston Rockets': 0.949}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

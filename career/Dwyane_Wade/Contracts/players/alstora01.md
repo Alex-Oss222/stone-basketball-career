@@ -2,9 +2,9 @@
 
 # Contract | Rafer Alston
 
-Known through: 2005-01-23. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
+Known through: 2005-01-24. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
 
-Rafer Alston: camp contract. Evidence cutoff: 2005-01-23.
+Rafer Alston: camp contract. Evidence cutoff: 2005-01-24.
 
 ## Current contract
 
@@ -104,9 +104,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/guarantee_review.json)
 - [Signing / contract source](../../2004-05/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2004-05/00_Team/Transactions/guarantee_review.json)
 
 ### Current control and contract coverage
 
@@ -259,9 +259,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/guarantee_review.json)
 - [Signing / contract source](../../2004-05/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2004-05/00_Team/Transactions/guarantee_review.json)
 
 ### Rafer Alston · existing contract; signing date not recorded
 

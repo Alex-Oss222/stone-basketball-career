@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "owner": "ai_gm",
- "as_of": "2005-01-10",
+ "as_of": "2005-01-24",
  "team": "Miami Heat",
  "horizon": [
   "2004-05",
@@ -15,9 +15,9 @@
  ],
  "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
  "known_baseline": {
-  "2004-05": 52391902,
-  "2005-06": 47125857,
-  "2006-07": 20216123,
+  "2004-05": 43846902,
+  "2005-06": 32549607,
+  "2006-07": 4518623,
   "2007-08": 3675905,
   "2008-09": 3958667,
   "2009-10": 0,
@@ -47,7 +47,7 @@
  "players": [
   {
    "player": "Eddie Jones",
-   "status": "under_contract",
+   "status": "traded",
    "schedule": {
     "2003-04": 12333750,
     "2004-05": 13455000,
@@ -392,7 +392,7 @@
   {
    "player": "Kendall Gill",
    "bbr_id": "gillke01",
-   "status": "under_contract",
+   "status": "traded",
    "schedule": {
     "2004-05": 1100000
    },
@@ -748,6 +748,50 @@
     "00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
    ],
    "contract_id": "murrala01-baseline-2003-06-26"
+  },
+  {
+   "player": "Raja Bell",
+   "bbr_id": "bellra01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 1320000
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary"
+   },
+   "acquired": {
+    "how": "trade",
+    "date": "2005-01-24",
+    "from": "Utah Jazz",
+    "record": "00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json"
+   },
+   "notes": "Acquired from Utah Jazz on January 24, 2005 by trade (2005-01-24-64ef582bc5); contract carried as the inventory records it (under_contract).",
+   "sources": [
+    "00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json"
+   ],
+   "contract_id": "bellra01-baseline-2003-06-26"
+  },
+  {
+   "player": "Matt Harpring",
+   "bbr_id": "harprma01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 4690000
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary"
+   },
+   "acquired": {
+    "how": "trade",
+    "date": "2005-01-24",
+    "from": "Utah Jazz",
+    "record": "00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json"
+   },
+   "notes": "Acquired from Utah Jazz on January 24, 2005 by trade (2005-01-24-64ef582bc5); contract carried as the inventory records it (under_contract).",
+   "sources": [
+    "00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json"
+   ],
+   "contract_id": "harprma01-baseline-2003-06-26"
   }
  ],
  "expiring_or_unresolved_without_scheduled_2003_04_salary": [
@@ -776,7 +820,7 @@
   "kind": "existing_obligations_only",
   "currency": "USD",
   "unit": "whole dollars",
-  "known_baseline_definition": "Counted 2004-05 team salary on 2005-01-10: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+  "known_baseline_definition": "Counted 2004-05 team salary on 2005-01-24: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
   "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
   "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
   "missing_definition": "Null means unresolved or not yet projected, never zero.",
@@ -804,7 +848,7 @@
   },
   {
    "season": "2004-05",
-   "scheduled_contract_salary": 52391902,
+   "scheduled_contract_salary": 43846902,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -812,8 +856,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 52391902,
-   "base_plus_priced_options": 52391902,
+   "known_base_allocations": 43846902,
+   "base_plus_priced_options": 43846902,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": 0,
@@ -821,7 +865,7 @@
   },
   {
    "season": "2005-06",
-   "scheduled_contract_salary": 47125857,
+   "scheduled_contract_salary": 32549607,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -829,8 +873,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 47125857,
-   "base_plus_priced_options": 47125857,
+   "known_base_allocations": 32549607,
+   "base_plus_priced_options": 32549607,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": null,
@@ -838,7 +882,7 @@
   },
   {
    "season": "2006-07",
-   "scheduled_contract_salary": 20216123,
+   "scheduled_contract_salary": 4518623,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 18640208,
    "unpriced_option_count": 0,
@@ -846,8 +890,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 20216123,
-   "base_plus_priced_options": 38856331,
+   "known_base_allocations": 4518623,
+   "base_plus_priced_options": 23158831,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": null,

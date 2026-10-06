@@ -4,7 +4,7 @@
 
 NBA regular season · April 1-7, 2005
 
-As of January 23, 2005: not started. The 17-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 17-player active roster.
+As of January 24, 2005: not started. The 17-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 17-player active roster.
 
 ## Team record
 
@@ -18,13 +18,11 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | SG/SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Brian Grant | C/PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Mike James | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Mehmet Okur | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Dwyane Wade | SG/PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Caron Butler | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Kendall Gill | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Dorell Wright | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | John Thomas | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Maurice Evans | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -35,6 +33,8 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Rafer Alston | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Donyell Marshall | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Lamond Murray | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Raja Bell | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Matt Harpring | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -43,13 +43,11 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Brian Grant | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Mike James | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Mehmet Okur | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Dwyane Wade | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Caron Butler | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Kendall Gill | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Dorell Wright | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | John Thomas | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Maurice Evans | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
@@ -60,6 +58,8 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Rafer Alston | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Donyell Marshall | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Lamond Murray | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| Raja Bell | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| Matt Harpring | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 
 </details>
 

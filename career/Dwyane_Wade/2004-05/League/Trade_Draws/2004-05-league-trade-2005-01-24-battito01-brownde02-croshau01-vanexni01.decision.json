@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-05-league-trade-2005-01-24-battito01-brownde02-croshau01-vanexni01",
+ "date": "2005-01-24",
+ "question": "Do Boston Celtics and New York Knicks trade Austin Croshere and Tony Battie for Nick Van Exel and Devin Brown?",
+ "decider": "Boston Celtics and New York Knicks front offices (engine draw)",
+ "options": {
+  "accept": 0.78375,
+  "decline": 0.21625
+ },
+ "basis": "gains on own objectives {'Boston Celtics': 0.122, 'New York Knicks': 0.183}; acceptance {'Boston Celtics': 0.825, 'New York Knicks': 0.95}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}
