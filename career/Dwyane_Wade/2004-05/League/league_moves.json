@@ -2044,6 +2044,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.35 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-06-ten_day-slayta01",
+   "date": "2005-01-06",
+   "kind": "ten_day",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-16",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.43 x fit"
   }
  ],
  "market_days": [
@@ -2111,6 +2133,7 @@
   "2005-01-02",
   "2005-01-03",
   "2005-01-04",
-  "2005-01-05"
+  "2005-01-05",
+  "2005-01-06"
  ]
 }
