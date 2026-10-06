@@ -31,6 +31,8 @@ Activation: The authoritative current date and recorded event determine what is 
 | 2005-01-01 | Next Miami game, vs Charlotte Bobcats | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
 | 2005-01-02 | League awards announced: Player of the Month, Rookie of the Month | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2005-01-06 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
+| 2005-01-07 | Keep-or-waive review of non-guaranteed contracts | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
+| 2005-01-10 | Kept contracts become guaranteed | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
 | By 2005-10-31 | Fourth-year (2006-07) team option on the rookie contract | Miami decides | Scheduled gate; no outcome implied | [Contract](index.html#contract_negotiation) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
