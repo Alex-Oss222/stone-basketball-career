@@ -551,6 +551,170 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 6.0 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-claim-sundobr01",
+   "date": "2004-11-07",
+   "kind": "claim",
+   "player": "Bruno Šundov",
+   "bbr_id": "sundobr01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "role": {
+    "player_id": "Bruno Šundov",
+    "bbr_id": "sundobr01",
+    "position": "C",
+    "games": 21,
+    "minutes": 73
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Phoenix Suns (worst record first)",
+   "waiver": "2004-05-market-2004-11-05-waive-sundobr01"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-claim-goldwan01",
+   "date": "2004-11-07",
+   "kind": "claim",
+   "player": "Anthony Goldwire",
+   "bbr_id": "goldwan01",
+   "from": null,
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Anthony Goldwire",
+    "bbr_id": "goldwan01",
+    "position": "PG",
+    "games": 33,
+    "minutes": 537
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Utah Jazz (worst record first)",
+   "waiver": "2004-05-market-2004-11-05-waive-goldwan01"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-waive-cabarza01",
+   "date": "2004-11-07",
+   "kind": "waive",
+   "player": "Žarko Čabarkapa",
+   "bbr_id": "cabarza01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Žarko Čabarkapa",
+    "bbr_id": "cabarza01",
+    "position": "PF",
+    "games": 40,
+    "minutes": 475
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-09"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-rest_of_season-doolike01",
+   "date": "2004-11-07",
+   "kind": "rest_of_season",
+   "player": "Keyon Dooling",
+   "bbr_id": "doolike01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Keyon Dooling",
+    "bbr_id": "doolike01",
+    "position": "PG",
+    "games": 58,
+    "minutes": 1137
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.33 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-waive-brunsri01",
+   "date": "2004-11-07",
+   "kind": "waive",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": "Charlotte Bobcats",
+   "to": null,
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 80,
+    "minutes": 1945
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-09"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-rest_of_season-belltr01",
+   "date": "2004-11-07",
+   "kind": "rest_of_season",
+   "player": "Troy Bell",
+   "bbr_id": "belltr01",
+   "from": null,
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Troy Bell",
+    "bbr_id": "belltr01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.31 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-waive-harriju01",
+   "date": "2004-11-07",
+   "kind": "waive",
+   "player": "Junior Harrington",
+   "bbr_id": "harriju01",
+   "from": "Dallas Mavericks",
+   "to": null,
+   "role": {
+    "player_id": "Junior Harrington",
+    "bbr_id": "harriju01",
+    "position": "SG",
+    "games": 29,
+    "minutes": 550
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-09"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-rest_of_season-clarkke01",
+   "date": "2004-11-07",
+   "kind": "rest_of_season",
+   "player": "Keon Clark",
+   "bbr_id": "clarkke01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "role": {
+    "player_id": "Keon Clark",
+    "bbr_id": "clarkke01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.4 x fit"
   }
  ],
  "market_days": [
@@ -558,6 +722,7 @@
   "2004-11-03",
   "2004-11-04",
   "2004-11-05",
-  "2004-11-06"
+  "2004-11-06",
+  "2004-11-07"
  ]
 }
