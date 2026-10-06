@@ -2,9 +2,9 @@
 
 # Contract | Derek Fisher
 
-Known through: 2004-12-27. [Open interactive contract](fishede01.html#contract) · [Contract history](fishede01.html#contract-history)
+Known through: 2004-12-31. [Open interactive contract](fishede01.html#contract) · [Contract history](fishede01.html#contract-history)
 
-Derek Fisher: released. Evidence cutoff: 2004-12-27.
+Derek Fisher: released. Evidence cutoff: 2004-12-31.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Ben Gordon
 
-Known through: 2004-12-27. [Open interactive contract](bengordon.html#contract) · [Contract history](bengordon.html#contract-history)
+Known through: 2004-12-31. [Open interactive contract](bengordon.html#contract) · [Contract history](bengordon.html#contract-history)
 
-Ben Gordon: under contract. Evidence cutoff: 2004-12-27.
+Ben Gordon: under contract. Evidence cutoff: 2004-12-31.
 
 ## Current contract
 
