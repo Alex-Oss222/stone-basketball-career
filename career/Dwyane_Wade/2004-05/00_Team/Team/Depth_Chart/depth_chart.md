@@ -1,6 +1,6 @@
 # Miami Heat working depth chart
 
-**As of:** 2004-10-15 · **Staff decision in force:** none yet; training camp decides  
+**As of:** 2004-10-16 · **Staff decision in force:** none yet; training camp decides  
 **Status:** carried over: 2003-04 closing order (career/Dwyane_Wade/2003-04/00_Team/Team/Depth_Chart/Reviews/2004-04-09/depth_chart.json) for the players who stay; training camp decides the new order.
 
 | Position | 1 | 2 |

@@ -2,9 +2,9 @@
 
 # Contract | Qyntel Woods
 
-Known through: 2004-10-15. [Open interactive contract](woodsqy01.html#contract) · [Contract history](woodsqy01.html#contract-history)
+Known through: 2004-10-16. [Open interactive contract](woodsqy01.html#contract) · [Contract history](woodsqy01.html#contract-history)
 
-Qyntel Woods: under rookie contract. Evidence cutoff: 2004-10-15.
+Qyntel Woods: under rookie contract. Evidence cutoff: 2004-10-16.
 
 ## Current contract
 

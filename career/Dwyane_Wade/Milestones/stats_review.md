@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-10-15 · Miami Heat · active
+Career date: 2004-10-16 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-1 closed game records in 2004-05 through 2004-10-15. Competitions remain separate.
+2 closed game records in 2004-05 through 2004-10-16. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -14,7 +14,7 @@ Activation: A declared, closed game result supplies observed participation and t
 
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| preseason | 1 | 26.1 | 23.0 | 3.0 | 6.0 | 1.0 | Complete |
+| preseason | 2 | 27.3 | 17.5 | 3.5 | 4.0 | 1.0 | Complete |
 | regular | 0 | N/A | N/A | N/A | N/A | N/A | Complete |
 
 ## Pooled shooting
@@ -23,7 +23,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
-| preseason | 5 | 9 | 0.556 | 1 | 1 | 1.0 |
+| preseason | 9 | 19 | 0.474 | 1 | 3 | 0.333 |
 | regular | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ## Closed source games
@@ -31,6 +31,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Date | Competition | Opponent | Participation | Source |
 | --- | --- | --- | --- | --- |
 | 2004-10-10 | preseason | Houston Rockets | Played | [Closed game](../2004-05/05_Preseason/Game_1.md) |
+| 2004-10-15 | preseason | Orlando Magic | Played | [Closed game](../2004-05/05_Preseason/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -70,4 +71,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
+- [Closed game](../2004-05/05_Preseason/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

@@ -1,13 +1,13 @@
 ---
 type: game
-status: scheduled
+status: played
 date: 2004-10-16
 opponent: Detroit Pistons
 venue: home
 competition: preseason
 cup_stage:
 player_team: Miami Heat
-result:
+result: L 90-102
 reason:
 simulation_source: Railway engine (runtime/private_service.py)
 event_id: 2004-10-16-detroit-pistons-at-miami-heat
@@ -19,10 +19,69 @@ result_file: Game_3.result.json
 Player identity and statistics are generated here by `python scripts/update_player_reports.py`.
 Decisions remain in the owning phase/week note. A scheduled game has no statistical result.
 
+<!-- game-result:start -->
+## Result
+
+**Detroit Pistons 102 at Miami Heat 90** · Miami Heat L 90-102 vs Detroit Pistons · home (Miami Heat) · 2004-10-16
+
+Event `2004-10-16-detroit-pistons-at-miami-heat` · Railway engine (runtime/private_service.py) · result file [`Game_3.result.json`](Game_3.result.json) (the engine's answer as served; the note is the canonical record).
+
+Preseason result: evidence for the preseason record and the camp decisions only; it does not count in regular-season statistics.
+
+### Box score
+
+```text
+Detroit Pistons 102 at Miami Heat 90
+2004-10-16  2004-05 preseason  event 2004-10-16-detroit-pistons-at-miami-heat
+Kernel 2003.11, calibrated on 2003-04 (imported_source)
+
+Period      1    2    3    4     T
+Detroit    32   21   17   32   102
+Miami He   24   22   22   22    90
+
+Detroit Pistons
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Richard Hamilton          28.5    6   3-12   0-1    0-0     1   1   4   0   0   2   5
+Ben Wallace               36.9   12   5-14   0-0    2-8     5  12   2   0   1   1   4
+Chauncey Billups          39.0   33  11-19   5-6    6-6     1   2   3   2   0   2   1
+Chucky Atkins             36.2   21   7-9    3-4    4-4     0   2   2   0   0   2   2
+Erick Dampier             19.5    2   1-4    0-0    0-0     3   4   2   0   0   1   5
+Corliss Williamson        24.9   16   6-11   0-0    4-4     2   2   1   0   0   1   4
+Trevor Ariza              19.2    2   1-7    0-0    0-0     2   4   4   2   0   0   2
+Kris Humphries            14.6    6   2-6    1-2    1-1     4   3   1   1   0   0   2
+Stanislav Medvedenko       6.2    4   1-3    0-0    2-2     0   0   0   0   0   0   3
+Elden Campbell             5.9    0   0-0    0-0    0-0     0   2   0   0   1   1   0
+Darko Miličić              6.3    0   0-2    0-0    0-0     0   1   1   0   0   1   1
+Mark Jones                 2.7    0   0-0    0-0    0-0     0   0   0   0   0   1   0
+TEAM                     240.0  102  37-87   9-13  19-25   18  33  20   5   2  12  29
+
+Miami Heat
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Dwyane Wade               36.6   13   3-9    1-2    6-8     2   2   0   3   3   0   1
+Caron Butler              34.6   17   7-14   0-1    3-5     2   2   2   2   0   3   1
+Scott Padgett             10.2    6   2-2    2-2    0-0     1   1   1   1   1   2   5
+Brian Grant               33.5   12   5-9    0-0    2-2     2   6   1   1   1   1   3
+Mehmet Okur               24.4   15   4-7    0-0    7-8     2   3   4   0   1   1   2
+Rafer Alston              24.3    8   3-6    1-4    1-2     0   2   2   0   0   1   2
+Stephen Jackson           19.1    7   3-12   1-2    0-0     0   3   0   0   0   2   2
+Eddie Jones               19.2    5   2-7    1-5    0-0     0   2   1   0   0   1   1
+Kendall Gill              14.7    0   0-4    0-0    0-0     0   3   0   1   1   1   3
+Udonis Haslem             14.0    6   2-3    0-0    2-2     0   5   1   0   1   0   0
+Dorell Wright              9.5    1   0-1    0-0    1-2     0   1   0   0   1   1   0
+TEAM                     240.0   90  31-74   6-16  22-29    9  30  12   8   9  13  20
+```
+
+### Miami injuries
+
+No Miami injury was drawn in this game.
+
+Did not dress: Mike James (illness or personal, this game only).
+<!-- game-result:end -->
+
 <!-- player-report:start -->
 ## Professional identity
 
-![Player personal information and earned 2004-05 awards through 2004-10-15](../../assets/stat_reports/personal_2004-05_2004-10-15.svg)
+![Player personal information and earned 2004-05 awards through 2004-10-16](../../assets/stat_reports/personal_2004-05_2004-10-16.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -47,7 +106,7 @@ Decisions remain in the owning phase/week note. A scheduled game has no statisti
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-01 |
 
-Identity as of 2004-10-15; status snapshot dated 2004-10-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-10-16; status snapshot dated 2004-10-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2004-05 awards
 
@@ -55,7 +114,7 @@ No 2004-05 awards yet.
 
 ## Statistics
 
-As of **2004-10-15**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2004-10-16**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -73,7 +132,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-10-15, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-10-16, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 

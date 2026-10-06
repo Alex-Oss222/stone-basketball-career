@@ -2,9 +2,9 @@
 
 # Contract | Robert Pack
 
-Known through: 2004-10-15. [Open interactive contract](packro01.html#contract) · [Contract history](packro01.html#contract-history)
+Known through: 2004-10-16. [Open interactive contract](packro01.html#contract) · [Contract history](packro01.html#contract-history)
 
-Robert Pack: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-10-15.
+Robert Pack: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-10-16.
 
 ## Current contract
 

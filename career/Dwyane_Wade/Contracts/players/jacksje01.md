@@ -2,9 +2,9 @@
 
 # Contract | Jermaine Jackson
 
-Known through: 2004-10-15. [Open interactive contract](jacksje01.html#contract) · [Contract history](jacksje01.html#contract-history)
+Known through: 2004-10-16. [Open interactive contract](jacksje01.html#contract) · [Contract history](jacksje01.html#contract-history)
 
-Jermaine Jackson: under contract. Evidence cutoff: 2004-10-15.
+Jermaine Jackson: under contract. Evidence cutoff: 2004-10-16.
 
 ## Current contract
 
