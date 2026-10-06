@@ -2,9 +2,9 @@
 
 # Contract | Tyronn Lue
 
-Known through: 2004-11-07. [Open interactive contract](luety01.html#contract) · [Contract history](luety01.html#contract-history)
+Known through: 2004-11-08. [Open interactive contract](luety01.html#contract) · [Contract history](luety01.html#contract-history)
 
-Tyronn Lue: under contract. Evidence cutoff: 2004-11-07.
+Tyronn Lue: under contract. Evidence cutoff: 2004-11-08.
 
 ## Current contract
 
@@ -114,7 +114,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Tyronn Lue |
-| Club / rights baseline | Orlando Magic |
+| Club / rights baseline | Minnesota Timberwolves |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

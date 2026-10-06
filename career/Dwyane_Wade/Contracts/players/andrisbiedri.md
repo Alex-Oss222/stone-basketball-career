@@ -2,9 +2,9 @@
 
 # Contract | Andris Biedriņš
 
-Known through: 2004-11-07. [Open interactive contract](andrisbiedri.html#contract) · [Contract history](andrisbiedri.html#contract-history)
+Known through: 2004-11-08. [Open interactive contract](andrisbiedri.html#contract) · [Contract history](andrisbiedri.html#contract-history)
 
-Andris Biedriņš: under contract. Evidence cutoff: 2004-11-07.
+Andris Biedriņš: under contract. Evidence cutoff: 2004-11-08.
 
 ## Current contract
 

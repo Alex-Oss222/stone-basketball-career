@@ -2,9 +2,9 @@
 
 # Contract | Grant Hill
 
-Known through: 2004-11-07. [Open interactive contract](hillgr01.html#contract) · [Contract history](hillgr01.html#contract-history)
+Known through: 2004-11-08. [Open interactive contract](hillgr01.html#contract) · [Contract history](hillgr01.html#contract-history)
 
-Grant Hill: under contract. Evidence cutoff: 2004-11-07.
+Grant Hill: under contract. Evidence cutoff: 2004-11-08.
 
 ## Current contract
 
@@ -125,7 +125,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Grant Hill |
-| Club / rights baseline | Orlando Magic |
+| Club / rights baseline | Minnesota Timberwolves |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

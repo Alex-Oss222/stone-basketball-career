@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-11-07",
+  "as_of": "2004-11-08",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1382,7 +1382,7 @@
     {
       "player_id": "brownde02",
       "name": "Devin Brown",
-      "team": "San Antonio Spurs",
+      "team": "New York Knicks",
       "status": "under contract",
       "current_contract_id": "brownde02-2003-07-31",
       "recorded_agreements": 1,
@@ -1769,7 +1769,7 @@
     {
       "player_id": "trentga01",
       "name": "Gary Trent",
-      "team": "Free agent",
+      "team": "Charlotte Bobcats",
       "status": "on the 2003-04 roster; contract terms not in the dated records",
       "current_contract_id": null,
       "recorded_agreements": 1,
@@ -1850,7 +1850,7 @@
     {
       "player_id": "hillgr01",
       "name": "Grant Hill",
-      "team": "Orlando Magic",
+      "team": "Minnesota Timberwolves",
       "status": "under contract",
       "current_contract_id": "hillgr01-existing-6434280dd7b3",
       "recorded_agreements": 1,
@@ -2687,7 +2687,7 @@
     {
       "player_id": "vanhoke01",
       "name": "Keith Van Horn",
-      "team": "New York Knicks",
+      "team": "San Antonio Spurs",
       "status": "under contract",
       "current_contract_id": "vanhoke01-1999-08-05",
       "recorded_agreements": 1,
@@ -2876,7 +2876,7 @@
     {
       "player_id": "korveky01",
       "name": "Kyle Korver",
-      "team": "Charlotte Bobcats",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2930,7 +2930,7 @@
     {
       "player_id": "sprewla01",
       "name": "Latrell Sprewell",
-      "team": "Minnesota Timberwolves",
+      "team": "Orlando Magic",
       "status": "under contract",
       "current_contract_id": "sprewla01-existing-02158f91187a",
       "recorded_agreements": 1,
@@ -3686,7 +3686,7 @@
     {
       "player_id": "vanexni01",
       "name": "Nick Van Exel",
-      "team": "San Antonio Spurs",
+      "team": "New York Knicks",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4244,7 +4244,7 @@
     {
       "player_id": "boumtru01",
       "name": "Ruben Boumtje-Boumtje",
-      "team": "Free agent",
+      "team": "Atlanta Hawks",
       "status": "under contract",
       "current_contract_id": "boumtru01-2002-09-30",
       "recorded_agreements": 1,
@@ -4721,7 +4721,7 @@
     {
       "player_id": "smithth01",
       "name": "Theron Smith",
-      "team": "Atlanta Hawks",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "smithth01-2003-07-16",
       "recorded_agreements": 1,
@@ -4991,7 +4991,7 @@
     {
       "player_id": "luety01",
       "name": "Tyronn Lue",
-      "team": "Orlando Magic",
+      "team": "Minnesota Timberwolves",
       "status": "under contract",
       "current_contract_id": "luety01-2003-07-16",
       "recorded_agreements": 1,

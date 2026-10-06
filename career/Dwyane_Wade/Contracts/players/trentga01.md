@@ -2,9 +2,9 @@
 
 # Contract | Gary Trent
 
-Known through: 2004-11-07. [Open interactive contract](trentga01.html#contract) · [Contract history](trentga01.html#contract-history)
+Known through: 2004-11-08. [Open interactive contract](trentga01.html#contract) · [Contract history](trentga01.html#contract-history)
 
-Gary Trent: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-11-07.
+Gary Trent: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-11-08.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Gary Trent |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Charlotte Bobcats |
 | Control status | on the 2003-04 roster; contract terms not in the dated records |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

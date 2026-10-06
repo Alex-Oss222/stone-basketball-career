@@ -2,9 +2,9 @@
 
 # Contract | Gordan Giriček
 
-Known through: 2004-11-07. [Open interactive contract](gordangiriek.html#contract) · [Contract history](gordangiriek.html#contract-history)
+Known through: 2004-11-08. [Open interactive contract](gordangiriek.html#contract) · [Contract history](gordangiriek.html#contract-history)
 
-Gordan Giriček: No verified contract record. Evidence cutoff: 2004-11-07.
+Gordan Giriček: No verified contract record. Evidence cutoff: 2004-11-08.
 
 ## Current contract
 

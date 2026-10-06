@@ -1,0 +1,12 @@
+{
+ "date": "2004-11-08",
+ "decider": "New York Knicks and San Antonio Spurs front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2004-11-08-brownde02-vanexni01-vanhoke01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do New York Knicks and San Antonio Spurs trade Keith Van Horn for Nick Van Exel and Devin Brown?"
+}

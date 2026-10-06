@@ -2,9 +2,9 @@
 
 # Contract | Sasha Pavlović
 
-Known through: 2004-11-07. [Open interactive contract](sashapavlovi.html#contract) · [Contract history](sashapavlovi.html#contract-history)
+Known through: 2004-11-08. [Open interactive contract](sashapavlovi.html#contract) · [Contract history](sashapavlovi.html#contract-history)
 
-Sasha Pavlović: No verified contract record. Evidence cutoff: 2004-11-07.
+Sasha Pavlović: No verified contract record. Evidence cutoff: 2004-11-08.
 
 ## Current contract
 

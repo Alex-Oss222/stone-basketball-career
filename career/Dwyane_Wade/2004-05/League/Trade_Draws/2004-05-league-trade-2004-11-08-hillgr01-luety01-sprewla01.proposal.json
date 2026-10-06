@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2004-11-08-hillgr01-luety01-sprewla01",
+ "date": "2004-11-08",
+ "clubs": [
+  "Minnesota Timberwolves",
+  "Orlando Magic"
+ ],
+ "a": {
+  "club": "Minnesota Timberwolves",
+  "sends": [
+   "Latrell Sprewell"
+  ],
+  "bbr_ids": [
+   "sprewla01"
+  ],
+  "salary": 14625000
+ },
+ "b": {
+  "club": "Orlando Magic",
+  "sends": [
+   "Grant Hill",
+   "Tyronn Lue"
+  ],
+  "bbr_ids": [
+   "hillgr01",
+   "luety01"
+  ],
+  "salary": 15987000
+ },
+ "gain": {
+  "Minnesota Timberwolves": 0.223,
+  "Orlando Magic": 0.449
+ },
+ "accept": {
+  "Minnesota Timberwolves": 0.95,
+  "Orlando Magic": 0.95
+ },
+ "both": 0.9025
+}

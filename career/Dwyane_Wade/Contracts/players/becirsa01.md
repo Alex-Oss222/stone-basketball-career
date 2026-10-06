@@ -2,9 +2,9 @@
 
 # Contract | Sani Becirovic
 
-Known through: 2004-11-07. [Open interactive contract](becirsa01.html#contract) · [Contract history](becirsa01.html#contract-history)
+Known through: 2004-11-08. [Open interactive contract](becirsa01.html#contract) · [Contract history](becirsa01.html#contract-history)
 
-Sani Becirovic: No verified contract record. Evidence cutoff: 2004-11-07.
+Sani Becirovic: No verified contract record. Evidence cutoff: 2004-11-08.
 
 ## Current contract
 
