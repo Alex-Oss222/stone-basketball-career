@@ -2,9 +2,9 @@
 
 # Contract | Chris Jefferies
 
-Known through: 2005-01-27. [Open interactive contract](jeffech01.html#contract) · [Contract history](jeffech01.html#contract-history)
+Known through: 2005-01-30. [Open interactive contract](jeffech01.html#contract) · [Contract history](jeffech01.html#contract-history)
 
-Chris Jefferies: under rookie contract. Evidence cutoff: 2005-01-27.
+Chris Jefferies: under rookie contract. Evidence cutoff: 2005-01-30.
 
 ## Current contract
 

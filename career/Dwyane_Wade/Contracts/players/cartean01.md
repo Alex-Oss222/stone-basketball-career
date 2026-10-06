@@ -2,9 +2,9 @@
 
 # Contract | Anthony Carter
 
-Known through: 2005-01-27. [Open interactive contract](cartean01.html#contract) · [Contract history](cartean01.html#contract-history)
+Known through: 2005-01-30. [Open interactive contract](cartean01.html#contract) · [Contract history](cartean01.html#contract-history)
 
-Anthony Carter: player option exercised. Evidence cutoff: 2005-01-27.
+Anthony Carter: player option exercised. Evidence cutoff: 2005-01-30.
 
 ## Current contract
 

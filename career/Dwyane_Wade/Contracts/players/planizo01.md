@@ -2,9 +2,9 @@
 
 # Contract | Zoran Planinic
 
-Known through: 2005-01-27. [Open interactive contract](planizo01.html#contract) · [Contract history](planizo01.html#contract-history)
+Known through: 2005-01-30. [Open interactive contract](planizo01.html#contract) · [Contract history](planizo01.html#contract-history)
 
-Zoran Planinic: No verified contract record. Evidence cutoff: 2005-01-27.
+Zoran Planinic: No verified contract record. Evidence cutoff: 2005-01-30.
 
 ## Current contract
 

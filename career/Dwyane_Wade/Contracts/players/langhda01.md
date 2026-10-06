@@ -2,9 +2,9 @@
 
 # Contract | Dan Langhi
 
-Known through: 2005-01-27. [Open interactive contract](langhda01.html#contract) · [Contract history](langhda01.html#contract-history)
+Known through: 2005-01-30. [Open interactive contract](langhda01.html#contract) · [Contract history](langhda01.html#contract-history)
 
-Dan Langhi: under contract. Evidence cutoff: 2005-01-27.
+Dan Langhi: under contract. Evidence cutoff: 2005-01-30.
 
 ## Current contract
 

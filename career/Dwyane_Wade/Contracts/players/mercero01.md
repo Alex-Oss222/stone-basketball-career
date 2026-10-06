@@ -2,9 +2,9 @@
 
 # Contract | Ron Mercer
 
-Known through: 2005-01-27. [Open interactive contract](mercero01.html#contract) · [Contract history](mercero01.html#contract-history)
+Known through: 2005-01-30. [Open interactive contract](mercero01.html#contract) · [Contract history](mercero01.html#contract-history)
 
-Ron Mercer: under contract. Evidence cutoff: 2005-01-27.
+Ron Mercer: under contract. Evidence cutoff: 2005-01-30.
 
 ## Current contract
 

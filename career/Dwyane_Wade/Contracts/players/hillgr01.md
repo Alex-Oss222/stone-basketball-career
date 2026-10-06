@@ -2,9 +2,9 @@
 
 # Contract | Grant Hill
 
-Known through: 2005-01-27. [Open interactive contract](hillgr01.html#contract) · [Contract history](hillgr01.html#contract-history)
+Known through: 2005-01-30. [Open interactive contract](hillgr01.html#contract) · [Contract history](hillgr01.html#contract-history)
 
-Grant Hill: under contract. Evidence cutoff: 2005-01-27.
+Grant Hill: under contract. Evidence cutoff: 2005-01-30.
 
 ## Current contract
 

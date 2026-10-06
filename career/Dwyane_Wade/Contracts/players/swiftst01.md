@@ -2,9 +2,9 @@
 
 # Contract | Stromile Swift
 
-Known through: 2005-01-27. [Open interactive contract](swiftst01.html#contract) · [Contract history](swiftst01.html#contract-history)
+Known through: 2005-01-30. [Open interactive contract](swiftst01.html#contract) · [Contract history](swiftst01.html#contract-history)
 
-Stromile Swift: under contract. Evidence cutoff: 2005-01-27.
+Stromile Swift: under contract. Evidence cutoff: 2005-01-30.
 
 ## Current contract
 

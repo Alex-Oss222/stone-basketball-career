@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-01-27",
+  "as_of": "2005-01-30",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2975,7 +2975,7 @@
     {
       "player_id": "johnsli01",
       "name": "Linton Johnson",
-      "team": "Detroit Pistons",
+      "team": "Indiana Pacers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3794,7 +3794,7 @@
     {
       "player_id": "shirlpa01",
       "name": "Paul Shirley",
-      "team": "Memphis Grizzlies",
+      "team": "New Jersey Nets",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4631,7 +4631,7 @@
     {
       "player_id": "slayta01",
       "name": "Tamar Slay",
-      "team": "New Jersey Nets",
+      "team": "Memphis Grizzlies",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
