@@ -868,6 +868,109 @@
    "bbr_id": "luety01",
    "from": "Orlando Magic",
    "to": "Minnesota Timberwolves"
+  },
+  {
+   "id": "2004-05-market-2004-11-09-claim-cabarza01",
+   "date": "2004-11-09",
+   "kind": "claim",
+   "player": "Žarko Čabarkapa",
+   "bbr_id": "cabarza01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Žarko Čabarkapa",
+    "bbr_id": "cabarza01",
+    "position": "PF",
+    "games": 40,
+    "minutes": 475
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Atlanta Hawks (worst record first)",
+   "waiver": "2004-05-market-2004-11-07-waive-cabarza01"
+  },
+  {
+   "id": "2004-05-market-2004-11-09-claim-brunsri01",
+   "date": "2004-11-09",
+   "kind": "claim",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 80,
+    "minutes": 1945
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Charlotte Bobcats (worst record first)",
+   "waiver": "2004-05-market-2004-11-07-waive-brunsri01"
+  },
+  {
+   "id": "2004-05-market-2004-11-09-clear-harriju01",
+   "date": "2004-11-09",
+   "kind": "clear",
+   "player": "Junior Harrington",
+   "bbr_id": "harriju01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Junior Harrington",
+    "bbr_id": "harriju01",
+    "position": "SG",
+    "games": 29,
+    "minutes": 550
+   },
+   "contract": null,
+   "note": "cleared waivers from Dallas Mavericks: a free agent",
+   "waiver": "2004-05-market-2004-11-07-waive-harriju01"
+  },
+  {
+   "id": "2004-05-market-2004-11-09-waive-woodsqy01",
+   "date": "2004-11-09",
+   "kind": "waive",
+   "player": "Qyntel Woods",
+   "bbr_id": "woodsqy01",
+   "from": "Charlotte Bobcats",
+   "to": null,
+   "role": {
+    "player_id": "Qyntel Woods",
+    "bbr_id": "woodsqy01",
+    "position": "SF",
+    "games": 62,
+    "minutes": 673
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-11"
+  },
+  {
+   "id": "2004-05-market-2004-11-09-rest_of_season-hudsotr01",
+   "date": "2004-11-09",
+   "kind": "rest_of_season",
+   "player": "Troy Hudson",
+   "bbr_id": "hudsotr01",
+   "from": null,
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Troy Hudson",
+    "bbr_id": "hudsotr01",
+    "position": "PG",
+    "games": 79,
+    "minutes": 1729
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.27 x fit"
   }
  ],
  "market_days": [
@@ -877,6 +980,7 @@
   "2004-11-05",
   "2004-11-06",
   "2004-11-07",
-  "2004-11-08"
+  "2004-11-08",
+  "2004-11-09"
  ]
 }
