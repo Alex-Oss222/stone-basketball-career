@@ -488,7 +488,7 @@ def _season_gates(c) -> list:
                      "Scheduled; a role request may be logged before it", c.link(c.root / "docs/front_office.md", "Rule")])
     except (OSError, KeyError, ValueError):
         pass
-    announced = sorted({(a, award) for award, _s, _e, a in periods() if a > c.on})
+    announced = sorted({(a, award) for award, _s, _e, a in periods(c.season.name, c.root) if a > c.on})
     if announced:
         first = announced[0][0]
         names = sorted({AWARDS[award] for a, award in announced if a == first})
