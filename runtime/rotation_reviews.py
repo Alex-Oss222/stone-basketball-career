@@ -18,6 +18,12 @@ from .season_games import (MIAMI, ROOT, check_date, read_json,
                            season_base, season_games, written_notes, note_meta)
 
 REVIEW_DAYS = 14
+# Minutes by gap (the user's request, November 2004 on the career clock): from this date a review gives the staff's
+# clearly best starter more minutes when his score leads the next starter's by more than GAP_THRESHOLD, GAP_SLOPE minutes
+# per unit of lead beyond it, at most GAP_MAX_EXTRA (34 + 6 = 40, a heavy-minutes star of the era). The minutes come
+# from the reserves in proportion to theirs. The same rule for every player; earlier reviews stand as recorded.
+MINUTES_BY_GAP_FROM = "2004-11-20"
+GAP_THRESHOLD, GAP_SLOPE, GAP_MAX_EXTRA = 0.05, 25.0, 6.0
 PRIOR_MINUTES = 300.0
 SCORE_MINUTES = 30.0
 CLOSE_BATTLE = camp.CLOSE_BATTLE
@@ -317,7 +323,30 @@ def review_rotation(snapshot, winners):
     rotation.update(starters=starters, review="review.json")
     for player in rotation["players"]:
         player["starter"] = player["player_id"] in selected
+    if on >= MINUTES_BY_GAP_FROM:
+        rotation["minutes_by_gap"] = minutes_by_gap(rotation["players"], snapshot["scores"])
     return depth, rotation
+
+
+def minutes_by_gap(players, scores):
+    """Move minutes to the clearly best starter (MINUTES_BY_GAP_FROM). Changes `players` in place; returns the basis."""
+    starters = sorted((p for p in players if p["starter"]), key=lambda p: -scores.get(p["player_id"], 0))
+    if len(starters) < 2 or scores.get(starters[1]["player_id"], 0) <= 0:
+        return None
+    best, second = scores[starters[0]["player_id"]], scores[starters[1]["player_id"]]
+    lead = best / second - 1
+    extra = round(min(GAP_MAX_EXTRA, max(0.0, GAP_SLOPE * (lead - GAP_THRESHOLD))), 2)
+    reserves = [p for p in players if not p["starter"] and p["minutes"] > 0]
+    pool = sum(p["minutes"] for p in reserves)
+    if extra <= 0 or pool <= extra:
+        return {"player": starters[0]["player_id"], "lead": round(lead, 4), "extra_minutes": 0.0}
+    for p in reserves:
+        p["minutes"] = round(p["minutes"] * (1 - extra / pool), 2)
+    starters[0]["minutes"] = round(starters[0]["minutes"] + extra, 2)
+    starters[0]["minutes"] = round(starters[0]["minutes"] + 240 - sum(p["minutes"] for p in players), 2)
+    return {"player": starters[0]["player_id"], "lead": round(lead, 4), "extra_minutes": extra,
+            "rule": f"lead over the next starter beyond {GAP_THRESHOLD:.0%} x {GAP_SLOPE:g} minutes, at most {GAP_MAX_EXTRA:g}; "
+                    "taken from the reserves in proportion"}
 
 
 def write_review(on, root=ROOT, season=None):

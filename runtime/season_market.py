@@ -36,9 +36,9 @@ def for_date(on, root=ROOT):
 
 def summer_record(season, root=ROOT):
     """The summer market's record that opened the season, or None before it closed."""
-    from .free_agency_2004 import NEW, RECORD
-    path = Path(root) / RECORD
-    if season != NEW or not path.is_file():
+    from .free_agency_2004 import record_for
+    path = Path(root) / record_for(season)
+    if not path.is_file():
         return None
     return _read(path)
 
@@ -88,8 +88,11 @@ class SeasonMarket:
         return bbr_id in self.players and (e is None or e[0] > on)
 
     def pool(self, on=None):
+        """Free agents a club may sign on the date: unsigned, and playing in the NBA that season in history
+        (`runtime/availability.py`: a retired player or one who sat the season out is never signed)."""
         on = on or self.on
-        return {b: p for b, p in self.players.items() if self.available(b, on)}
+        from .availability import signable
+        return {b: p for b, p in self.players.items() if self.available(b, on) and signable(b, self.season, self.root)}
 
     # -- the cap -------------------------------------------------------------------------------
     def cap_known(self, on=None):

@@ -65,8 +65,8 @@ def contract_errors(root, prev, new):
     errors = []
     july = f"{new[:4]}-07-01"
     placed_elsewhere = set()
-    from .free_agency_2004 import RECORD
-    record = _read(Path(root) / RECORD) if new == "2004-05" else None
+    from .free_agency_2004 import record_for
+    record = _read(Path(root) / record_for(new))
     if record:
         placed_elsewhere = {r["bbr_id"] for c, rows in record["clubs"].items() if c != MIAMI for r in rows}
     seen = set()

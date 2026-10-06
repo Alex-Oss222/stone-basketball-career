@@ -1,7 +1,7 @@
 """Symmetric league, phase 3: trades between two real clubs (docs/symmetric_league_design.md).
 
 Only while `league_book.active(date)`. Once a week (Mondays) up to the deadline, every pair of real clubs is
-searched for deals of one or two rotation players for one that both clubs gain from on their own objectives:
+searched for deals of up to three rotation players for up to two (MAX_PLAYERS) that both clubs gain from on their own objectives:
 - values: `trades.Assets.player_value` split into this season and the future, weighted by each club's stance
   (`STANCE_WEIGHTS`), times its skill fit for the arriving player (`skill_fit.py`, the club's own needs);
 - legality: the 1999 salary rule (incoming at most 115% of outgoing plus $100,000, unless the club is under
@@ -34,6 +34,8 @@ def draws_dir(season):
     return Path(f"career/Dwyane_Wade/{season}/League/Trade_Draws")
 MAX_PER_WEEK = 2                     # calibrated against 16 real trades from December 3 to the deadline (rules file)
 ROTATION_CANDIDATES = 9
+TRIPLE_CANDIDATES = 7               # judgement: a three-player package comes from a club's top seven by minutes
+MAX_PLAYERS = 5                     # up to three for two (the user's request, October 2026; was two for one)
 MATCH_PERCENT, MATCH_PLUS = 1.15, 100000
 MIN_MUTUAL_GAIN = 0.06              # a club changes its roster only for a clear gain on its own objective (calibrated)
 STATUS_QUO = 1.15                   # judgement: a club values the player it has this much more than an equal arrival
@@ -102,25 +104,39 @@ class LeagueTradeDesk:
         return base * fit * (STATUS_QUO if own else 1.0) - extra
 
     def legal(self, club, out_salary, in_salary):
-        from .league_book import club_cap
-        if self.payroll[club] - out_salary + in_salary <= club_cap(club, self.book.season, self.book.cap, self.book.root):
+        if not hasattr(self, "_caps"):
+            from .league_book import club_cap
+            self._caps = {c: club_cap(c, self.book.season, self.book.cap, self.book.root) for c in self.rosters}
+        if self.payroll[club] - out_salary + in_salary <= self._caps[club]:
             return True
         return in_salary <= out_salary * MATCH_PERCENT + MATCH_PLUS
 
+    def _packages(self, club):
+        """(players, salary) a club can offer: one or two of its rotation, and three from its top TRIPLE_CANDIDATES."""
+        from itertools import combinations
+        ids = [p["bbr_id"] for p in self.rosters[club][:ROTATION_CANDIDATES]]
+        pay = {x: int((self.contracts.get(x) or {}).get("schedule", {}).get(self.season) or 0) for x in ids}
+        ids = [x for x in ids if pay[x]]                    # a player without a salary this season is not tradable here
+        groups = [list(c) for n in (1, 2) for c in combinations(ids, n)]
+        groups += [list(c) for c in combinations(ids[:TRIPLE_CANDIDATES], 3)]
+        return [(g, sum(pay[x] for x in g)) for g in groups]
+
     def proposals(self):
-        """Every legal deal of one or two rotation players for one, both clubs clearing MIN_MUTUAL_GAIN, best first."""
+        """Every legal deal of up to three rotation players for up to two (MAX_PLAYERS moved in all), both clubs clearing
+        MIN_MUTUAL_GAIN, best first. The salary rule and roster limits are checked on salaries alone first."""
         clubs = sorted(self.rosters)
+        packages = {c: self._packages(c) for c in clubs}
         found = []
         for i, a in enumerate(clubs):
             for b in clubs[i + 1:]:
-                ra = [p["bbr_id"] for p in self.rosters[a][:ROTATION_CANDIDATES]]
-                rb = [p["bbr_id"] for p in self.rosters[b][:ROTATION_CANDIDATES]]
-                packages_a = [[x] for x in ra] + [[x, y] for k, x in enumerate(ra) for y in ra[k + 1:]]
-                packages_b = [[x] for x in rb] + [[x, y] for k, x in enumerate(rb) for y in rb[k + 1:]]
-                for pa in packages_a:
-                    for pb in packages_b:
-                        if len(pa) + len(pb) > 3:
-                            continue                       # one or two for one
+                for pa, sa in packages[a]:
+                    for pb, sb in packages[b]:
+                        if len(pa) + len(pb) > MAX_PLAYERS or (len(pa) == 3 and len(pb) == 3):
+                            continue
+                        if not (self.legal(a, sa, sb) and self.legal(b, sb, sa)):
+                            continue
+                        if (len(self.rosters[a]) - len(pa) + len(pb) > 15 or len(self.rosters[b]) - len(pb) + len(pa) > 15):
+                            continue
                         row = self.evaluate(a, pa, b, pb)
                         if row:
                             found.append(row)

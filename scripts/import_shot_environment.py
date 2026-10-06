@@ -4,6 +4,7 @@
   python scripts/import_shot_environment.py --check                 # 2002-03 (default)
   python scripts/import_shot_environment.py --season 2003-04 --write
   python scripts/import_shot_environment.py --season 2003-04 --fetch --write
+  python scripts/import_shot_environment.py --season 2004-05 --fetch --write
 
 The default check and write are offline. --fetch verifies the pinned upstream
 files before retaining only that NBA season's rows; later-season rows never enter
@@ -42,6 +43,12 @@ SEASONS = {
         "snapshot_rule_extra": " The historical Dwyane Wade's rows (source player_id 3445) are dropped before the snapshot: his real statistics never enter the simulation, so league totals and zone weights exclude him.",
         "snapshot_sha256": {"shooting": "1c769a7877630db8518f818cbdba744da789de2d6652efb26b6da5ba00f3dc10",
                             "totals": "19e8153273e3ff0633e0fb8a3a94ac2559c5fdeaae2ec67eac37629c89d31f30"},
+    },
+    "2004-05": {
+        "published_after": "2005-04-20", "retrieved_on": "2026-10-06",
+        "snapshot_rule_extra": " The historical Dwyane Wade's rows (source player_id 3445) are dropped before the snapshot: his real statistics never enter the simulation, so league totals and zone weights exclude him.",
+        "snapshot_sha256": {"shooting": "4381a510d09f510ebf963021ef00c7ff6f12247c0a02fd83b7430c88059dc789",
+                            "totals": "7b4ad36b3b4f9871104dd484c54827631b9d941ac86cbe018d062ee171bed90b"},
     },
 }
 DEFAULT_SEASON = "2002-03"

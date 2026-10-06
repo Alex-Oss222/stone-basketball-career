@@ -1,0 +1,235 @@
+{
+ "schema_version": 1,
+ "season": "2005-06",
+ "kind": "season_award_calendar",
+ "purpose": "When each 2005-06 end-of-season award was announced, who voted and how ballots were scored, researched October 2026. Dates and rules only: no real 2006 winner or vote is recorded or used.",
+ "status_values": {
+  "sourced": "a cited source states it",
+  "derived": "inferred from cited sources, reasoning given",
+  "design_choice": "not verifiable for 2005-06; the simulation's documented choice"
+ },
+ "regular_season_last_day": "2006-04-19",
+ "ballot_due": {
+  "value": "2006-04-20",
+  "status": "derived",
+  "note": "After the last regular-season games (2006-04-19) and before the first media award (2006-04-25); no source states the deadline."
+ },
+ "awards": [
+  {
+   "id": "coy",
+   "name": "Coach of the Year",
+   "announced": "2006-04-25",
+   "electorate": 124,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "electorate_status": "derived",
+   "status": "sourced",
+   "note": "Announced Tuesday, April 25, 2006 (AP text: 'honored as the NBA's coach of the year Tuesday'; read in a same-day forum repost, so a secondary copy). Scoring 5-3-1 as for the other media awards (derived). Electorate: the Basketball-Reference first-place votes sum to 124, which this file uses; its stated maximum is 630 (126 x 5), so the panel size is not settled by the sources read.",
+   "sources": [
+    "https://www.ptt.cc/bbs/Mavericks/M.1145998314.A.429.html",
+    "https://hunewsservice.com/news/avery-johnson-named-nba-coach-of-the-year/",
+    "https://www.basketball-reference.com/awards/awards_2006.html"
+   ]
+  },
+  {
+   "id": "smoy",
+   "name": "Sixth Man of the Year",
+   "announced": "2006-04-28",
+   "electorate": 123,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "electorate_status": "derived",
+   "status": "sourced",
+   "note": "Announced Friday, April 28, 2006 (AP via Deseret News, April 29: 'won the NBA's Sixth Man Award Friday'). Electorate: Basketball-Reference first-place votes sum to 123 and its maximum is 615 (123 x 5). Scoring 5-3-1 (derived).",
+   "sources": [
+    "https://www.deseret.com/2006/4/29/19950831/miller-claims-sixth-man-award",
+    "https://www.actionnews5.com/story/4834284/grizzlies-mike-miller-wins-nbas-sixth-man-award/",
+    "https://www.basketball-reference.com/awards/awards_2006.html"
+   ]
+  },
+  {
+   "id": "mip",
+   "name": "Most Improved Player",
+   "announced": "2006-05-01",
+   "electorate": 124,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "status": "sourced",
+   "note": "Announced Monday, May 1, 2006 (AP via CBC, published May 1, 9:34 p.m. EDT: 'of a possible 124 first-place votes'). Basketball-Reference shows first-place votes summing to 126 and a maximum of 630; the 124 stated in the contemporaneous report is used. Scoring 5-3-1 (derived).",
+   "sources": [
+    "https://www.cbc.ca/sports/basketball/diaw-named-nba-s-most-improved-1.627946",
+    "https://www.basketball-reference.com/awards/awards_2006.html"
+   ]
+  },
+  {
+   "id": "all_rookie",
+   "name": "All-Rookie Teams",
+   "announced": "2006-05-04",
+   "electorate": 30,
+   "voters": "head coaches, not for their own players",
+   "ballot": [
+    2,
+    1
+   ],
+   "teams": 2,
+   "picks_per_team": 5,
+   "status": "sourced",
+   "note": "AP via KSL, May 4, 2006: named 'on Thursday' in 'balloting by the league's head coaches'. A unanimous player received 58 points (29 x 2), the Basketball-Reference maximum, so coaches did not vote for their own players (derived). Scoring 2-1 as in 2004-05 (derived).",
+   "sources": [
+    "https://www.ksl.com/article/246529",
+    "https://www.basketball-reference.com/awards/awards_2006.html"
+   ]
+  },
+  {
+   "id": "mvp",
+   "name": "Most Valuable Player",
+   "announced": "2006-05-07",
+   "electorate": 125,
+   "voters": "media",
+   "ballot": [
+    10,
+    7,
+    5,
+    3,
+    1
+   ],
+   "status": "sourced",
+   "note": "Announced Sunday, May 7, 2006 (Honolulu Advertiser, May 8: 'results announced yesterday'; 'a panel of 125 sports writers and broadcasters in the United States and Canada'). Basketball-Reference maximum 1250 (125 x 10). Scoring 10-7-5-3-1 as in 2004-05 (derived).",
+   "sources": [
+    "https://honoluluadvertiser.com/article/2006/May/08/sp/FP605080326.html",
+    "https://www.basketball-reference.com/awards/awards_2006.html"
+   ]
+  },
+  {
+   "id": "dpoy",
+   "name": "Defensive Player of the Year",
+   "announced": "2006-05-08",
+   "electorate": 124,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "status": "sourced",
+   "note": "NBA club release published Monday, May 8, 2006; AP via ESPN: 'of 124 first-place votes'. Basketball-Reference maximum 620 (124 x 5). An AP report of May 7 cited a team source before the announcement; the official date is used. Scoring 5-3-1 (derived).",
+   "sources": [
+    "https://www.nba.com/pistons/news/bwallace_dpoy_060508.html",
+    "https://www.espn.com/espn/wire/_/section/nba/id/2437567",
+    "https://www.basketball-reference.com/awards/awards_2006.html"
+   ]
+  },
+  {
+   "id": "roy",
+   "name": "Rookie of the Year",
+   "announced": "2006-05-10",
+   "electorate": 125,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "status": "sourced",
+   "note": "NBA club release published Wednesday, May 10, 2006; AP via KSL the same day: 'the 125 first-place votes from a panel of media members'. Basketball-Reference maximum 625 (125 x 5). Scoring 5-3-1 (derived).",
+   "sources": [
+    "https://www.nba.com/pelicans/news/paul_rookie_051006.html",
+    "https://www.ksl.com/article/257357",
+    "https://www.basketball-reference.com/awards/awards_2006.html"
+   ]
+  },
+  {
+   "id": "all_defensive",
+   "name": "All-Defensive Teams",
+   "announced": "2006-05-11",
+   "electorate": 30,
+   "voters": "head coaches, not for their own players",
+   "ballot": [
+    2,
+    1
+   ],
+   "teams": 2,
+   "by_position": {
+    "G": 2,
+    "F": 2,
+    "C": 1
+   },
+   "status": "sourced",
+   "note": "SportsTicker via ESPN, May 11, 2006: named 'on Thursday' in 'voting among the league's 30 coaches'. Two points for a first-team vote, one for a second-team vote, by position, and own-player exclusion as in 2004-05 (derived). Basketball-Reference gives a maximum of 60.",
+   "sources": [
+    "https://www.espn.com/nba/news/story?id=2441608",
+    "https://www.basketball-reference.com/awards/awards_2006.html"
+   ]
+  },
+  {
+   "id": "all_nba",
+   "name": "All-NBA Teams",
+   "announced": "2006-05-17",
+   "electorate": 126,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "teams": 3,
+   "by_position": {
+    "G": 2,
+    "F": 2,
+    "C": 1
+   },
+   "status": "sourced",
+   "note": "NBA club release published May 17, 2006: 'The 126-member voting panel ... voted for All-NBA First, Second and Third Teams by position with points awarded on a 5-3-1 basis.' Basketball-Reference maximum 630 (126 x 5).",
+   "sources": [
+    "https://www.nba.com/cavaliers/news/lbj_allnba_060517.html",
+    "https://www.basketball-reference.com/awards/awards_2006.html"
+   ]
+  },
+  {
+   "id": "finals_mvp",
+   "name": "Finals MVP",
+   "announced": "finals_clinch",
+   "electorate": 10,
+   "voters": "media panel",
+   "ballot": [
+    1
+   ],
+   "status": "design_choice",
+   "note": "Announced on court the night the Finals are clinched (sourced). Each panelist names one player (sourced). The 2006 ballot count is not published (bballhistorydatabase lists it as N/A); ten ballots were counted in 2005 and 2007, so the electorate of 10 is carried from 2004-05 (design choice). An even panel can split: a tie at the top is an engine decision draw (no published tie rule; the award has never been shared). A player on the losing club may win (Jerry West, 1969).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bill_Russell_NBA_Finals_Most_Valuable_Player_Award",
+    "https://bballhistorydatabase.com/finals-mvp-voting-history/",
+    "library/2004/league/nba_2004_05_season_awards.json"
+   ]
+  }
+ ],
+ "not_decided": [
+  {
+   "name": "Sportsmanship Award",
+   "announced": "unverified",
+   "reason": "a player-ballot character award with no evidence basis in simulated results; no sourced 2006 date"
+  },
+  {
+   "name": "Executive of the Year",
+   "announced": "unverified",
+   "reason": "no sourced 2006 date"
+  },
+  {
+   "name": "J. Walter Kennedy Citizenship Award",
+   "announced": "unverified",
+   "reason": "no sourced 2006 date; a community-service award with no evidence basis in simulated results"
+  }
+ ]
+}

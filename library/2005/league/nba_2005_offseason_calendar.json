@@ -1,0 +1,611 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "offseason_calendar",
+ "season": "2005",
+ "purpose": "Dated 2005 offseason facts: lottery, early-entry withdrawal, draft, option and qualifying-offer deadline, the new collective bargaining agreement, the moratorium as extended in 2005, cap publication, exceptions, minimum and rookie scales, 2005-06 opening day and the 30-team alignment. A cap figure is live only from its publication date; a 2005-CBA rule only from ratification (July 30, 2005; nba_2005_cba_rules.json).",
+ "finals_2005": {
+  "value": "San Antonio beat Detroit 4-3; series June 9-23, 2005; last game (Game 7) June 23, 2005",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2005_NBA_Finals"
+  ]
+ },
+ "draft_lottery": {
+  "value": "2005-05-24",
+  "status": "sourced",
+  "sources": [
+   "library/2005/league/nba_2005_lottery_rules.json (research.event)"
+  ]
+ },
+ "expansion_draft": {
+  "value": null,
+  "status": "sourced",
+  "note": "No expansion draft in 2005: Charlotte's 2004 expansion draft was the only one of this era (Wikipedia lists 2004 as the last expansion draft).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+  ]
+ },
+ "early_entry_withdrawal_deadline": {
+  "value": "2005-06-21",
+  "time": "5 p.m. (Eastern, per report)",
+  "note": "Underclassmen who had not signed with an agent could withdraw by this date and keep college eligibility. The NBA later announced that roughly fifty early-entry candidates withdrew (Wikipedia cites NBA.com, 'Fifty Early Entry Candidates Withdraw'). The early-entry application deadline itself is unverified.",
+  "status": "sourced (secondary)",
+  "sources": [
+   "https://www2.kusports.com/news/2005/oct/14/rush_almost_jumped_nba_fray/ (Lawrence Journal-World: withdrew 'one hour before the 5 p.m. deadline on June 21'; read through a search-engine extract)",
+   "https://basketballrecruiting.rivals.com/news/bennett-talks-draft (Rivals, May 17, 2005: prospects 'have until June 21 to withdraw'; read through a search-engine extract)",
+   "https://en.wikipedia.org/wiki/2005_NBA_draft"
+  ]
+ },
+ "draft": {
+  "value": "2005-06-28",
+  "location": "The Theater at Madison Square Garden, New York City",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2005_NBA_draft",
+   "https://www.basketball-reference.com/draft/NBA_2005.html"
+  ]
+ },
+ "cba_agreement_in_principle": {
+  "value": "2005-06-21",
+  "status": "sourced",
+  "sources": [
+   "library/2005/league/nba_2005_cba_rules.json (dates.agreement_in_principle)",
+   "https://catherwood.library.cornell.edu/wit/nba-reaches-new-six-year-labor-agreement/"
+  ]
+ },
+ "options_and_qualifying_offers_deadline": {
+  "value": "2005-06-30",
+  "note": "Team/player option decisions and qualifying offers to make a player a restricted free agent are due June 30 (the last day of the league year) under both the 1999 and 2005 agreements; the 1999 CBA expired the same day. No 2005-specific notice moving the date was found, but none confirming it either.",
+  "status": "sourced (rule: cbafaq05 Q37, qualifying offer due June 30); 2005-specific confirmation unverified",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm",
+   "http://www.cbafaq.com/salarycap99.htm"
+  ]
+ },
+ "free_agency_negotiation_opens": {
+  "value": "2005-07-01",
+  "note": "Free agents become free July 1; during the moratorium teams may negotiate but not sign (except required tenders, qualifying offers, first-round scale signings and second-round minimum signings).",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm"
+  ]
+ },
+ "july_moratorium": {
+  "value": "2005-07-01 through 2005-08-01",
+  "note": "Extended in 2005 (normally about two weeks) so that the new CBA could be finalized, ratified (July 30) and distributed; the moratorium ended when the new agreement took effect.",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm (Q6, Q93)",
+   "https://www.upi.com/Sports_News/2005/08/01/Collective-bargaining-agreement-for-NBA/58131122894853/",
+   "library/2005/league/nba_2005_cba_rules.json (dates.july_moratorium_2005)"
+  ]
+ },
+ "first_signing_and_trade_date": {
+  "value": "2005-08-02",
+  "status": "sourced",
+  "sources": [
+   "https://www.upi.com/Sports_News/2005/08/01/Collective-bargaining-agreement-for-NBA/58131122894853/",
+   "http://www.cbafaq.com/salarycap05.htm (Q93)"
+  ]
+ },
+ "cba_ratified": {
+  "value": "2005-07-30",
+  "status": "sourced",
+  "sources": [
+   "https://www.upi.com/Sports_News/2005/08/01/Collective-bargaining-agreement-for-NBA/58131122894853/",
+   "library/2005/league/nba_2005_cba_rules.json (dates.ratified_and_signed)"
+  ]
+ },
+ "amnesty_window_2005": {
+  "value": "2005-08-02 through 2005-08-15",
+  "note": "One-time luxury-tax amnesty waiver (tax only; salary still paid and counted on the cap). Real clubs' uses are hindsight and not recorded.",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm (Q18)"
+  ]
+ },
+ "salary_cap_2005_06": {
+  "value": 49500000,
+  "announced": "2005-07-30 at the latest (UPI report of the ratified agreement setting the 2005-06 cap at $49.5 million); the exact first public announcement date is unverified",
+  "effective": "2005-08-02 (cap adjusts on the first day after the July moratorium)",
+  "note": "A fixed figure agreed in the new CBA rather than the 49.5%-of-BRI formula (which would have given about $50.9 million).",
+  "status": "sourced",
+  "sources": [
+   "https://www.upi.com/Sports_News/2005/08/01/Collective-bargaining-agreement-for-NBA/58131122894853/",
+   "http://www.cbafaq.com/salarycap05.htm (Q10)"
+  ]
+ },
+ "luxury_tax_threshold_2005_06": {
+  "value": 61700000,
+  "note": "A fixed figure set by the 2005 CBA instead of the formula (about $63.7 million). From 2005-06 the tax level is set before the season and the tax is levied every season. Publication date unverified; the figure cannot be known before the agreement in principle (June 21, 2005) and is treated as live no earlier than ratification. The FAQ's list of real taxpaying clubs is hindsight and is not recorded.",
+  "status": "sourced; publication date unverified",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm (Q16)",
+   "library/2005/league/nba_2005_cba_rules.json (luxury_tax.level_2005_06)",
+   "library/2005/league/nba_2005_06_cap_rules.json"
+  ]
+ },
+ "salary_floor_2005_06": {
+  "value": 37125000,
+  "note": "75% of the $49.5 million cap (minimum team salary percentage sourced in cbafaq05 Q10); the dollar figure itself is computed.",
+  "status": "derived",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm (Q10)"
+  ]
+ },
+ "charlotte_cap_and_floor_2005_06": {
+  "value": {
+   "cap": 37125000,
+   "floor": 27843750
+  },
+  "note": "Cap sourced ($37.125 million for the Charlotte Bobcats in 2005-06, the expansion club's second season). Floor derived as 75% of Charlotte's cap, the 2004-05 relation ($21.94M = 75% of $29.25M); unverified for 2005-06.",
+  "status": "sourced (cap); derived (floor)",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm (Q10)",
+   "library/2004/league/nba_2004_offseason_calendar.json (charlotte_cap_and_floor_2004_05)"
+  ]
+ },
+ "mid_level_exception_2005_06": {
+  "value": 5000000,
+  "note": "Defined as the average salary, set at $5 million for 2005-06; up to 5 years, 8% raises.",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm (Q19)",
+   "https://www.upi.com/Sports_News/2005/08/01/Collective-bargaining-agreement-for-NBA/58131122894853/"
+  ]
+ },
+ "one_million_exception_2005_06": {
+  "value": 1670000,
+  "note": "The 1999-CBA $1 Million exception became the Bi-Annual exception under the 2005 CBA ($1.67 million in 2005-06, up to 2 years, not in consecutive seasons; unavailable in 2005-06 to a club that used the $1 Million exception in 2004-05). Same figure as bi_annual_exception_2005_06; key kept for the 2004 naming.",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm (Q19)"
+  ]
+ },
+ "bi_annual_exception_2005_06": {
+  "value": 1670000,
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm (Q19)",
+   "library/2005/league/nba_2005_cba_rules.json (exceptions.bi_annual)"
+  ]
+ },
+ "minimum_salary_scale_2005_06": {
+  "value": {
+   "0": 398762,
+   "1": 641748,
+   "2": 719373,
+   "3": 745248,
+   "4": 771123,
+   "5": 835810,
+   "6": 900498,
+   "7": 965185,
+   "8": 1029873,
+   "9": 1035000,
+   "10+": 1138500
+  },
+  "key": "years of NBA service",
+  "note": "Under the 2005 CBA the league reimburses one-year minimum contracts of 3+-year veterans above the 2-year minimum, and only the 2-year minimum counts on team salary. Expansion-club (Charlotte) reduced minimums applied to its first two seasons under the 1999 CBA; whether the 2005 CBA kept a reduced Charlotte scale for 2005-06 is unverified.",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm (Q11)",
+   "library/2005/league/nba_2005_cba_rules.json (minimum_salary_2005_06)"
+  ]
+ },
+ "rookie_scale_2005_first_round": {
+  "value": [
+   {
+    "pick": 1,
+    "year1": 3617100,
+    "year2": 3888300,
+    "year3": 4159600,
+    "year4_option_raise_pct": 26.1,
+    "qualifying_offer_raise_pct": 30.0,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 2,
+    "year1": 3236300,
+    "year2": 3479000,
+    "year3": 3721700,
+    "year4_option_raise_pct": 26.2,
+    "qualifying_offer_raise_pct": 30.5,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 3,
+    "year1": 2906200,
+    "year2": 3124200,
+    "year3": 3342200,
+    "year4_option_raise_pct": 26.4,
+    "qualifying_offer_raise_pct": 31.2,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 4,
+    "year1": 2620200,
+    "year2": 2816800,
+    "year3": 3013300,
+    "year4_option_raise_pct": 26.5,
+    "qualifying_offer_raise_pct": 31.9,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 5,
+    "year1": 2372800,
+    "year2": 2550700,
+    "year3": 2728700,
+    "year4_option_raise_pct": 26.7,
+    "qualifying_offer_raise_pct": 32.6,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 6,
+    "year1": 2155100,
+    "year2": 2316800,
+    "year3": 2478400,
+    "year4_option_raise_pct": 26.8,
+    "qualifying_offer_raise_pct": 33.4,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 7,
+    "year1": 1967400,
+    "year2": 2114900,
+    "year3": 2262500,
+    "year4_option_raise_pct": 27.0,
+    "qualifying_offer_raise_pct": 34.1,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 8,
+    "year1": 1802400,
+    "year2": 1937500,
+    "year3": 2072700,
+    "year4_option_raise_pct": 27.2,
+    "qualifying_offer_raise_pct": 34.8,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 9,
+    "year1": 1656800,
+    "year2": 1781000,
+    "year3": 1905300,
+    "year4_option_raise_pct": 27.4,
+    "qualifying_offer_raise_pct": 35.5,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 10,
+    "year1": 1573900,
+    "year2": 1691900,
+    "year3": 1810000,
+    "year4_option_raise_pct": 27.5,
+    "qualifying_offer_raise_pct": 36.2,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 11,
+    "year1": 1495200,
+    "year2": 1607300,
+    "year3": 1719500,
+    "year4_option_raise_pct": 32.7,
+    "qualifying_offer_raise_pct": 36.9,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 12,
+    "year1": 1420400,
+    "year2": 1526900,
+    "year3": 1633500,
+    "year4_option_raise_pct": 37.8,
+    "qualifying_offer_raise_pct": 37.6,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 13,
+    "year1": 1349400,
+    "year2": 1450600,
+    "year3": 1551800,
+    "year4_option_raise_pct": 42.9,
+    "qualifying_offer_raise_pct": 38.3,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 14,
+    "year1": 1282000,
+    "year2": 1378100,
+    "year3": 1474300,
+    "year4_option_raise_pct": 48.1,
+    "qualifying_offer_raise_pct": 39.1,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 15,
+    "year1": 1217800,
+    "year2": 1309100,
+    "year3": 1400500,
+    "year4_option_raise_pct": 53.3,
+    "qualifying_offer_raise_pct": 39.8,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 16,
+    "year1": 1157000,
+    "year2": 1243700,
+    "year3": 1330500,
+    "year4_option_raise_pct": 53.4,
+    "qualifying_offer_raise_pct": 40.5,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 17,
+    "year1": 1099100,
+    "year2": 1181500,
+    "year3": 1264000,
+    "year4_option_raise_pct": 53.6,
+    "qualifying_offer_raise_pct": 41.2,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 18,
+    "year1": 1044200,
+    "year2": 1122500,
+    "year3": 1200800,
+    "year4_option_raise_pct": 53.8,
+    "qualifying_offer_raise_pct": 41.9,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 19,
+    "year1": 997100,
+    "year2": 1071900,
+    "year3": 1146700,
+    "year4_option_raise_pct": 54.0,
+    "qualifying_offer_raise_pct": 42.6,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 20,
+    "year1": 957300,
+    "year2": 1029000,
+    "year3": 1100800,
+    "year4_option_raise_pct": 54.2,
+    "qualifying_offer_raise_pct": 43.3,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 21,
+    "year1": 918900,
+    "year2": 987900,
+    "year3": 1056800,
+    "year4_option_raise_pct": 59.3,
+    "qualifying_offer_raise_pct": 44.1,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 22,
+    "year1": 882200,
+    "year2": 948300,
+    "year3": 1014500,
+    "year4_option_raise_pct": 64.5,
+    "qualifying_offer_raise_pct": 44.8,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 23,
+    "year1": 847000,
+    "year2": 910500,
+    "year3": 974000,
+    "year4_option_raise_pct": 69.7,
+    "qualifying_offer_raise_pct": 45.5,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 24,
+    "year1": 813000,
+    "year2": 874000,
+    "year3": 935000,
+    "year4_option_raise_pct": 74.9,
+    "qualifying_offer_raise_pct": 46.2,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 25,
+    "year1": 780500,
+    "year2": 839000,
+    "year3": 897600,
+    "year4_option_raise_pct": 80.1,
+    "qualifying_offer_raise_pct": 46.9,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 26,
+    "year1": 754700,
+    "year2": 811200,
+    "year3": 867800,
+    "year4_option_raise_pct": 80.3,
+    "qualifying_offer_raise_pct": 47.6,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 27,
+    "year1": 732800,
+    "year2": 787800,
+    "year3": 842800,
+    "year4_option_raise_pct": 80.4,
+    "qualifying_offer_raise_pct": 48.3,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 28,
+    "year1": 728400,
+    "year2": 783000,
+    "year3": 837600,
+    "year4_option_raise_pct": 80.5,
+    "qualifying_offer_raise_pct": 49.0,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 29,
+    "year1": 723100,
+    "year2": 777300,
+    "year3": 831500,
+    "year4_option_raise_pct": 80.5,
+    "qualifying_offer_raise_pct": 50.0,
+    "year3_is_team_option": true
+   },
+   {
+    "pick": 30,
+    "year1": 717800,
+    "year2": 771700,
+    "year3": 825500,
+    "year4_option_raise_pct": 80.5,
+    "qualifying_offer_raise_pct": 50.0,
+    "year3_is_team_option": true
+   }
+  ],
+  "note": "Scale amounts for players drafted in 2005 (2005 CBA, 2005-06 table). Actual contracts may be 80%-120% of scale. Under the 2005 CBA only years 1 and 2 are guaranteed: year 3 is a team option exercised by October 31 before the second season and year 4 a team option exercised by October 31 before the third season; year4_option_raise_pct is the required raise of year 4 over year 3 and qualifying_offer_raise_pct the qualifying offer's raise over year 4. Picks 1 (3,617,100 / 3,888,300 / 4,159,600; 26.1% / 30.0%) and 30 (717,800; 80.5% / 50.0%) match Coon's FAQ.",
+  "status": "sourced (full table: SalarySwish 2005-06 rookie scale, a secondary transcription of CBA Exhibit B); picks 1 and 30 cross-checked against cbafaq05 Q42",
+  "sources": [
+   "https://www.salaryswish.com/rookie-scale/2006",
+   "http://www.cbafaq.com/salarycap05.htm (Q42)"
+  ]
+ },
+ "regular_season_2005_06_opens": {
+  "value": "2005-11-01",
+  "status": "sourced",
+  "sources": [
+   "https://www.basketball-reference.com/leagues/NBA_2006_games.html",
+   "library/2005/league/nba_2005_06_schedule.json (first game date)"
+  ]
+ },
+ "cba_term_note": {
+  "value": "The 1999 CBA expired June 30, 2005. The 2005 CBA (agreement in principle June 21, ratified July 30, effective with the end of the moratorium on August 2, 2005) runs six seasons, 2005-06 through 2010-11, with a league option for 2011-12. 2005-06 figures above are under the 2005 CBA.",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap05.htm (Q5, Q6)",
+   "https://www.upi.com/Sports_News/2005/08/01/Collective-bargaining-agreement-for-NBA/58131122894853/",
+   "library/2005/league/nba_2005_cba_rules.json"
+  ]
+ },
+ "alignment_2005_06": {
+  "teams": {
+   "value": 30,
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/leagues/NBA_2006_standings.html"
+   ]
+  },
+  "conferences": 2,
+  "divisions_count": 6,
+  "divisions": {
+   "Eastern": {
+    "Atlantic": [
+     "BOS",
+     "NJN",
+     "NYK",
+     "PHI",
+     "TOR"
+    ],
+    "Central": [
+     "CHI",
+     "CLE",
+     "DET",
+     "IND",
+     "MIL"
+    ],
+    "Southeast": [
+     "ATL",
+     "CHA",
+     "MIA",
+     "ORL",
+     "WAS"
+    ]
+   },
+   "Western": {
+    "Northwest": [
+     "DEN",
+     "MIN",
+     "POR",
+     "SEA",
+     "UTA"
+    ],
+    "Pacific": [
+     "GSW",
+     "LAC",
+     "LAL",
+     "PHO",
+     "SAC"
+    ],
+    "Southwest": [
+     "DAL",
+     "HOU",
+     "MEM",
+     "NOK",
+     "SAS"
+    ]
+   }
+  },
+  "status": "sourced",
+  "sources": [
+   "https://www.basketball-reference.com/leagues/NBA_2006_standings.html"
+  ],
+  "note": "Same membership as 2004-05; the Hornets appear as NOK (New Orleans/Oklahoma City Hornets), the code used by the source and by library/2005/league/nba_2005_06_team_rosters.json, NOH in 2004-05. Listed alphabetically; the source page orders by final 2005-06 standings (hindsight), which was deliberately not carried over. The Hornets played most 2005-06 home games in Oklahoma City as the New Orleans/Oklahoma City Hornets after Hurricane Katrina (August 29, 2005, after this offseason calendar's draft and moratorium dates); they stayed in the Southwest Division.",
+  "playoff_format_change": {
+   "value": null,
+   "status": "unverified",
+   "note": "Not researched here."
+  }
+ },
+ "researched_on": "2026-10-06",
+ "sources": [
+  {
+   "url": "http://www.cbafaq.com/salarycap05.htm",
+   "use": "Larry Coon's NBA Salary Cap FAQ, 2005-CBA version (final update): moratorium extension, 2005-06 cap, tax level, Charlotte cap, MLE, Bi-Annual, minimum salaries, rookie scale endpoints, amnesty window, CBA term"
+  },
+  {
+   "url": "https://www.upi.com/Sports_News/2005/08/01/Collective-bargaining-agreement-for-NBA/58131122894853/",
+   "use": "UPI, dateline July 30, 2005: CBA ratified; 2005-06 cap $49.5 million; MLE $5 million; agreement effective Aug 2 when the moratorium ended"
+  },
+  {
+   "url": "https://www.salaryswish.com/rookie-scale/2006",
+   "use": "2005-06 first-round rookie scale, picks 1-30 (year 1-3 amounts, year-4 and qualifying-offer raise percentages)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2005_NBA_draft",
+   "use": "draft date and location; early-entry lists"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2005_NBA_Finals",
+   "use": "Finals dates June 9-23, 2005"
+  },
+  {
+   "url": "https://www2.kusports.com/news/2005/oct/14/rush_almost_jumped_nba_fray/",
+   "use": "early-entry withdrawal deadline June 21, 2005, 5 p.m. (search extract)"
+  },
+  {
+   "url": "https://basketballrecruiting.rivals.com/news/bennett-talks-draft",
+   "use": "withdrawal deadline June 21 (search extract)"
+  },
+  {
+   "url": "https://www.basketball-reference.com/leagues/NBA_2006_games.html",
+   "use": "2005-06 opening night Nov 1, 2005"
+  },
+  {
+   "url": "https://www.basketball-reference.com/leagues/NBA_2006_standings.html",
+   "use": "2005-06 division membership"
+  },
+  {
+   "url": "https://www.deseret.com/2002/12/21/19695058/draft-rules-favorable-for-charlotte-franchise/",
+   "use": "Charlotte eligible for the No. 1 pick in 2005 and 2006 (lottery file)"
+  }
+ ],
+ "notes": [
+  "HINDSIGHT WARNING: Coon's 2005 FAQ lists later-season caps and tax levels (2006-07 onward), real taxpaying clubs and real amnesty waivers; none of these were copied. Only 2005-06 figures and dated rules are recorded.",
+  "HINDSIGHT WARNING: the Finals result and the Hornets' post-Katrina relocation are recorded with their dates; neither may be used before that date.",
+  "The cap's first public announcement date is not verified: the UPI ratification report (July 30, 2005) is the earliest dated source retrieved. A caller gating live use should treat the cap as known no earlier than 2005-07-30 and as effective from 2005-08-02.",
+  "web.archive.org was unreachable from this environment, so archived NBA.com releases (cap announcement, lottery odds, early-entry list) could not be read directly; ESPN pages returned a bot challenge."
+ ]
+}

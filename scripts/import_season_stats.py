@@ -20,7 +20,7 @@ from urllib.request import urlopen
 ROOT = Path(__file__).resolve().parents[1]
 COMMIT = "7f9b3375439b79cb4e62f66ae7d12160275c2863"
 BASE = f"https://raw.githubusercontent.com/sumitrodatta/nba-alt-awards/{COMMIT}/2026/Data/"
-LAST_DAY = {2004: "2004-04-14"}
+LAST_DAY = {2004: "2004-04-14", 2005: "2005-04-20"}
 EXCLUDED = {"wadedw01"}
 TOTALS = {"games": "g", "games_started": "gs", "minutes": "mp", "points": "pts", "field_goals_made": "fg",
           "field_goals_attempted": "fga", "three_pointers_made": "x3p", "three_pointers_attempted": "x3pa",

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "league": "NBA",
+  "season": "2004-05",
+  "kind": "league_environment",
+  "purpose": "Calibration baseline for the 2005-06 game engine. A season is simulated on the environment of the last completed season, never on its own final averages.",
+  "published_after": "2005-04-20",
+  "unit": "per team per game",
+  "verification": {
+    "status": "imported_source",
+    "method": "Read from the Basketball-Reference 2004-05 season page League Average rows (Per Game, Totals and Advanced team tables) by scripts/import_league_environment.py. Per-game values cross-checked against the Totals row; ORtg recomputed from points and pace; eFG%, FT/FGA and TOV% recomputed from the Totals row. Player-rate baselines and the team-turnover residual are added by scripts/build_season_baseline.py from the season's player totals.",
+    "sources": [
+      {
+        "table": "league_averages",
+        "url": "https://www.basketball-reference.com/leagues/NBA_2005.html",
+        "provider": "Basketball-Reference",
+        "retrieved_on": "2026-10-06",
+        "notes": "League Average row of the Per Game Stats team table; pace and four factors from the Advanced Stats team table League Average row."
+      }
+    ]
+  },
+  "averages": {
+    "pace": 90.9,
+    "points": 97.2,
+    "fga": 80.3,
+    "fg_pct": 0.447,
+    "three_pa": 15.8,
+    "three_pct": 0.356,
+    "fta": 26.1,
+    "ft_pct": 0.756,
+    "orb": 12.0,
+    "drb": 29.8,
+    "ast": 21.3,
+    "stl": 7.5,
+    "blk": 4.9,
+    "tov": 14.5,
+    "pf": 22.6
+  },
+  "engine_assumptions": {
+    "status": "provisional structural assumptions, not sourced league data",
+    "home_edge_points_per_game": 3.0,
+    "and_one_share_of_fta": 0.12,
+    "note": "Copied unchanged from the 2003-04 file's structure; not researched."
+  },
+  "extra_sourced_values": {
+    "offensive_rating": 106.1,
+    "efg_pct": 0.482,
+    "tov_pct": 13.6,
+    "orb_pct": 28.7,
+    "ft_per_fga": 0.245,
+    "ts_pct": 0.529,
+    "fta_per_fga": 0.324,
+    "three_pa_rate": 0.196,
+    "minutes_per_game": 241.9,
+    "fg": 35.9,
+    "three_p": 5.6,
+    "two_p": 30.3,
+    "two_pa": 64.6,
+    "two_pct": 0.47,
+    "ft": 19.7,
+    "trb": 41.9,
+    "status": "sourced",
+    "source": "https://www.basketball-reference.com/leagues/NBA_2005.html",
+    "derived_checks": {
+      "status": "derived",
+      "ft_per_fga_from_totals": "1615/6588 = 0.245",
+      "efg_from_totals": "(2948 + 0.5*459)/6588 = 0.482",
+      "tov_pct_from_totals": "1189/(6588 + 0.44*2137 + 1189) = 0.136",
+      "ortg_from_pace": "97.2 / (90.9 * 241.9/240) * 100 = 106.1"
+    }
+  },
+  "team_turnovers_per_game": 0.7752032520325205,
+  "player_turnovers_per_game": 13.72479674796748,
+  "team_turnover_note": "Inferred residual: published team TOV minus summed individual TOV / (clubs x 82).",
+  "player_rating_model": "veteran-2005.1",
+  "player_rate_baselines": {
+    "true_shooting_pct": 0.5291747697285133,
+    "usage_pct": 0.19822928891636515,
+    "assist_pct": 0.14881649454584764,
+    "offensive_rebound_pct": 0.057451958191025394,
+    "defensive_rebound_pct": 0.1428181363656326,
+    "steal_pct": 0.01638872448169506,
+    "block_pct": 0.015011085661778367,
+    "turnover_pct": 0.1308960402503676,
+    "three_point_attempt_rate": 0.19715447154471544,
+    "free_throw_attempt_rate": 0.32262057582981846,
+    "two_point_pct": 0.4697883950382285,
+    "three_point_pct": 0.35563134640725524,
+    "free_throw_pct": 0.7560197685250974,
+    "turnovers_per_fga": 0.17198993418505615,
+    "fouls_per_minute": 0.09364622499687514
+  }
+}

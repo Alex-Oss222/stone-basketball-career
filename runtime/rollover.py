@@ -54,17 +54,18 @@ def slug(name):
 
 class Rollover:
     def __init__(self, root=ROOT):
-        from .free_agency_2004 import PLACEMENT, RECORD
+        from .free_agency_2004 import market_year, record_for
         from .seasons import active, next_season
         self.root = Path(root)
         self.old = active(self.root)
         self.new = next_season(self.old)
-        self.day = (date.fromisoformat(PLACEMENT).toordinal() + 1)
+        self.year = market_year(self.new)
+        self.day = (date.fromisoformat(f"{self.year}-09-30").toordinal() + 1)   # the day after the market's placement day
         self.day = date.fromordinal(self.day).isoformat()
         self.old_dir = self.root / PLAYER / self.old
         self.new_dir = self.root / PLAYER / self.new
         self.old_team, self.team = self.old_dir / "00_Team", self.new_dir / "00_Team"
-        self.record_path = self.root / RECORD
+        self.record_path = self.root / record_for(self.new)
         self.record = _read(self.record_path) if self.record_path.is_file() else None
 
     # -- gates -----------------------------------------------------------------------------------
@@ -289,7 +290,7 @@ class Rollover:
         events = ""
         if folder == "01_Free_Agency":
             events = (f"- {self.day}: The {self.new[:4]} summer market closed on {_long(self.record['to'])}; its record is "
-                      f"`../../{self.old}/10_Free_Agency/free_agency_2004.json`, carried into `../00_Team` by the rollover.\n")
+                      f"`../../{self.old}/10_Free_Agency/free_agency_{self.year}.json`, carried into `../00_Team` by the rollover.\n")
         elif folder == "03_Offseason":
             events = f"- {self.day}: Wade's {self.new[:4]} summer is recorded in `../../{self.old}/03_Offseason/`.\n"
         return f"---\ntype: phase\nstatus: {status}\n---\n\n# {title}\n\n## Player decisions\n\n## Events\n{events}\n## Consequences\n"
@@ -310,8 +311,8 @@ class Rollover:
         written.append(season_evidence.write_totals(self.old, self.root))
         write_card_lines(self.root)
         written.append(league_contracts.write(self.new, self.root, self.record))
-        if not (self.root / offseason.BOOK).is_file():
-            offseason.write(self.root)
+        if not (self.root / offseason.book_for(self.new)).is_file():
+            offseason.write_season(self.new, self.root)
         ledger = league_contracts.read(self.new, self.root) or {}
         # 2. Miami
         ids = self.identities()

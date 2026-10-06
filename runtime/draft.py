@@ -63,6 +63,59 @@ TRADE_UP_GAIN, TRADE_DOWN_ACCEPT, MAX_TRADES, TRADE_WINDOW = 1.15, 0.5, 6, 6
 GROUP = {"PG": "G", "SG": "G", "G": "G", "SF": "F", "PF": "F", "F": "F", "C": "C"}
 TARGET_MINUTES = {"G": 96, "F": 96, "C": 48}
 RESEARCH_MOCKS = {"vitale_espn_2004_06_22": 31, "hrr_2004_06_24": 31, "nbadraft_net_2004_mock": 61}
+YEAR, SEASON_END = 2004, "2004-04-14"
+
+
+def _seasons_ahead(n=3):
+    return [f"{YEAR + i}-{str(YEAR + i + 1)[-2:]}" for i in range(n)]
+
+
+class year_context:
+    """Run the module for a later draft (R5, October 2026): its season, date, files, folder and the evidence's own mock
+    list (`research_mocks` in the evidence file: {key: rank given to an unlisted player}). 2004 keeps its constants."""
+
+    NAMES = ("YEAR", "SEASON", "DRAFT_DATE", "BOARDS", "EVIDENCE", "FOLDER", "RECORD", "DRAWS", "RESEARCH_MOCKS", "SEASON_END")
+
+    def __init__(self, year, root=ROOT):
+        self.year, self.root = int(year), Path(root)
+
+    def __enter__(self):
+        g = globals()
+        self.saved = {k: g[k] for k in self.NAMES}
+        if self.year == 2004:
+            return self
+        from .seasons import dates
+        y = self.year
+        season = f"{y - 1}-{str(y)[-2:]}"
+        lib = Path(f"library/{y}/league")
+        calendar = _read(self.root / lib / f"nba_{y}_offseason_calendar.json")
+        evidence = _read(self.root / lib / f"nba_{y}_prospect_evidence.json")
+        g.update(YEAR=y, SEASON=season, DRAFT_DATE=_calendar_date(calendar, "draft"),
+                 BOARDS=lib / f"nba_{y}_predraft_boards.json", EVIDENCE=lib / f"nba_{y}_prospect_evidence.json",
+                 FOLDER=Path(f"career/Dwyane_Wade/{season}/09_Draft"),
+                 RESEARCH_MOCKS=evidence.get("research_mocks", {}),
+                 SEASON_END=dates(season, self.root)["regular_season_end"])
+        g["RECORD"] = g["FOLDER"] / f"draft_{y}.json"
+        g["DRAWS"] = g["FOLDER"] / "Draft_Draws"
+        return self
+
+    def __exit__(self, *exc):
+        globals().update(self.saved)
+        return False
+
+
+def _calendar_date(calendar, key):
+    """A dated event from an offseason calendar file: the value of `key` or `<key>_date`, plain or {"value": ...}."""
+    for k in (key, f"{key}_date", f"{key}_day"):
+        v = calendar.get(k)
+        if isinstance(v, dict):
+            v = v.get("value") or v.get("date")
+        if isinstance(v, str) and len(v) >= 10:
+            return v[:10]
+    for e in calendar.get("events", []):
+        if e.get("id") in (key, f"{key}_date"):
+            return e.get("date")
+    raise KeyError(f"no {key} date in the offseason calendar")
 
 
 def _read(path):
@@ -155,8 +208,9 @@ def club_contexts(root=ROOT):
     from .valuation import Valuation
     from .write_back import closed_results
     root = Path(root)
-    table = records(root)
-    form, _ = candidates(root, closed_results(root, SEASON, "2004-04-14"))
+    from .lottery import Year
+    table = records(root) if YEAR == 2004 else records(root, Year(YEAR, root))
+    form, _ = candidates(root, closed_results(root, SEASON, SEASON_END))
     by_bbr = {}
     registry = _read(root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json")
     registry = registry["players"] if isinstance(registry, dict) else registry
@@ -171,16 +225,17 @@ def club_contexts(root=ROOT):
         need, cornerstone = {}, {}
         for g in ("G", "F", "C"):
             share = 0.0
-            for season, weight in (("2004-05", 0.5), ("2005-06", 0.3), ("2006-07", 0.2)):
+            for season, weight in zip(_seasons_ahead(), (0.5, 0.3, 0.2)):
                 minutes = sum(form[p["name"]]["mpg"] for p in players
                               if p["schedule"].get(season) and p["name"] in form and form[p["name"]]["position"] == g)
                 share += weight * max(0.0, TARGET_MINUTES[g] - minutes) / TARGET_MINUTES[g]
             need[g] = round(share, 3)
-            cornerstone[g] = any(p["schedule"].get("2005-06") and p["name"] in form and form[p["name"]]["position"] == g
+            cornerstone[g] = any(p["schedule"].get(_seasons_ahead()[1]) and p["name"] in form and form[p["name"]]["position"] == g
                                  and form[p["name"]]["game_score"] >= CORNERSTONE_GMSC for p in players)
         out[club] = {"stance": stance, "record": f"{t['wins']}-{t['losses']}", "need": need, "cornerstone": cornerstone}
-    # Charlotte, the expansion club: no record; rebuilding, with every position open until its roster exists.
-    out["Charlotte Bobcats"] = {"stance": "rebuilding", "record": "expansion", "need": {"G": 1.0, "F": 1.0, "C": 1.0},
+    # Charlotte, the expansion club in 2004: no record; rebuilding, with every position open until its roster exists.
+    if YEAR == 2004:
+        out["Charlotte Bobcats"] = {"stance": "rebuilding", "record": "expansion", "need": {"G": 1.0, "F": 1.0, "C": 1.0},
                                 "cornerstone": {"G": False, "F": False, "C": False}}
     return out
 
@@ -238,7 +293,7 @@ def run(root=ROOT, clock=None):
     root = Path(root)
     if (clock or career_clock(root)) < DRAFT_DATE or (root / RECORD).is_file():
         return None
-    order_path = root / FOLDER / "draft_order_2004.json"
+    order_path = root / FOLDER / f"draft_order_{YEAR}.json"
     if not order_path.is_file():
         return None
     order = _read(order_path)["picks"]
@@ -256,8 +311,8 @@ def run(root=ROOT, clock=None):
             partner = _trade_partner(slot, owners, contexts, pool, tier, available, best_tier)
             if partner:
                 later, gain = partner
-                answer = _draw(root, {"event_id": f"2004-draft-pick-{slot}-trade-down", "date": DRAFT_DATE,
-                                      "question": f"2004 draft: does {club} trade No. {slot} to {owners[later]} for No. {later} and its 2005 second-round pick?",
+                answer = _draw(root, {"event_id": f"{YEAR}-draft-pick-{slot}-trade-down", "date": DRAFT_DATE,
+                                      "question": f"{YEAR} draft: does {club} trade No. {slot} to {owners[later]} for No. {later} and its {YEAR + 1} second-round pick?",
                                       "decider": f"{club} front office (engine draw)",
                                       "options": {"accept": TRADE_DOWN_ACCEPT, "decline": round(1 - TRADE_DOWN_ACCEPT, 6)},
                                       "basis": f"{len(in_tier)} players left in tier {best_tier}; {owners[later]} values its target {gain:.2f}x its "
@@ -275,8 +330,8 @@ def run(root=ROOT, clock=None):
             choice = next(iter(top3))
         else:
             probs = _options(top3)
-            choice = _draw(root, {"event_id": f"2004-draft-pick-{slot}", "date": DRAFT_DATE,
-                                  "question": f"2004 draft, No. {slot}: whom does {club} select ({', '.join(pool[k]['player'] for k in top3)})?",
+            choice = _draw(root, {"event_id": f"{YEAR}-draft-pick-{slot}", "date": DRAFT_DATE,
+                                  "question": f"{YEAR} draft, No. {slot}: whom does {club} select ({', '.join(pool[k]['player'] for k in top3)})?",
                                   "decider": f"{club} front office (engine draw)",
                                   "options": {pool[k]["player"]: probs[k] for k in top3},
                                   "basis": f"Tier {best_tier} of the draft-night board; {ctx['stance']} club; utilities "
@@ -289,7 +344,7 @@ def run(root=ROOT, clock=None):
         picks.append({"pick": slot, "round": 1 if slot <= 29 else 2, "club": club, "player": p["player"], "bbr_id": p["bbr_id"],
                       "position": p["position"], "tier": best_tier, "consensus_slot": p["consensus"],
                       "floor": p["floor"], "median": p["median"], "ceiling": p["ceiling"]})
-    record = {"schema_version": 1, "kind": "draft", "draft": "2004 NBA Draft", "date": DRAFT_DATE,
+    record = {"schema_version": 1, "kind": "draft", "draft": f"{YEAR} NBA Draft", "date": DRAFT_DATE,
               "rule": __doc__.split("\n\n", 1)[1].strip(), "picks": picks, "trades": trades,
               "undrafted": sorted(pool[k]["player"] for k in pool if k not in taken),
               "board": [{"player": pool[k]["player"], "tier": tier[k], "consensus_slot": pool[k]["consensus"],
@@ -314,7 +369,7 @@ def _miami_pick_ledger(root, trades):
             if pick["year"] == 2005 and pick["round"] == 2 and pick["original_club"] == MIAMI and pick["owned"]:
                 pick["owned"] = False
                 pick["history"].append({"date": DRAFT_DATE, "event": f"traded to {t['from']} with Miami's move from No. "
-                                        f"{t['for_slot']} to No. {t['slot']} in the 2004 draft", "source": RECORD.as_posix()})
+                                        f"{t['for_slot']} to No. {t['slot']} in the {YEAR} draft", "source": RECORD.as_posix()})
                 changed = True
     if changed:
         path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")

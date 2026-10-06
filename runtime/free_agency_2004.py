@@ -113,6 +113,55 @@ GROUP = {"PG": "G", "SG": "G", "G": "G", "SF": "F", "PF": "F", "F": "F", "C": "C
 TARGET_MINUTES = {"G": 96, "F": 96, "C": 48}
 
 
+YEAR, SEASON_END = 2004, "2004-04-14"
+
+
+class year_context:
+    """Run the market for a later summer (R5, October 2026): the closed season, the new one, its calendar, folder and
+    dates. Contracts come from the league ledger (options already decided by `runtime/options.py` on June 29), rights
+    from each club's roster at the season's end, prior salaries and rookie-scale flags from the ledger. 2004 keeps its
+    constants and replays unchanged."""
+
+    NAMES = ("YEAR", "SEASON", "NEW", "FOLDER", "RECORD", "DRAWS", "CALENDAR", "SERVICE", "OPTIONS_DATE", "OPEN", "SIGN_FROM",
+             "LAST_ROUND", "PLACEMENT", "PRIOR_CAP", "CAP_KNOWN", "NEW_SIGNING_TRADABLE", "TRADE_FROM", "REQUESTS", "SEASON_END")
+
+    def __init__(self, year, root=ROOT):
+        self.year, self.root = int(year), Path(root)
+
+    def __enter__(self):
+        g = globals()
+        self.saved = {k: g[k] for k in self.NAMES}
+        if self.year == 2004:
+            return self
+        from .seasons import dates, path as season_path
+        y = self.year
+        season, new = f"{y - 1}-{str(y)[-2:]}", f"{y}-{str(y + 1)[-2:]}"
+        folder = Path(f"career/Dwyane_Wade/{season}/10_Free_Agency")
+        cal = _read(self.root / f"library/{y}/league/nba_{y}_offseason_calendar.json")
+        get = lambda *keys: next(v for v in (_date_of(cal, k) for k in keys) if v)
+        sign_from = get("first_signing_and_trade_date", "first_signing_day", "moratorium_end_signing", "signing_opens")
+        g.update(YEAR=y, SEASON=season, NEW=new, FOLDER=folder, RECORD=folder / f"free_agency_{y}.json",
+                 DRAWS=folder / "Free_Agency_Draws", CALENDAR=Path(f"library/{y}/league/nba_{y}_offseason_calendar.json"),
+                 SERVICE=Path(f"library/{y}/league/nba_{y}_service_years.json"), OPTIONS_DATE=f"{y}-06-30", OPEN=f"{y}-07-01",
+                 SIGN_FROM=sign_from, LAST_ROUND=f"{y}-09-29", PLACEMENT=f"{y}-09-30",
+                 PRIOR_CAP=_read(self.root / season_path(season, "cap_rules"))["salary_cap"],
+                 CAP_KNOWN=(date.fromisoformat(sign_from) - timedelta(days=1)).isoformat(),
+                 NEW_SIGNING_TRADABLE=f"{y}-12-15", TRADE_FROM=sign_from, REQUESTS=folder / "wade_requests.json",
+                 SEASON_END=dates(season, self.root)["regular_season_end"])
+        return self
+
+    def __exit__(self, *exc):
+        globals().update(self.saved)
+        return False
+
+
+def _date_of(cal, key):
+    v = cal.get(key)
+    if isinstance(v, dict):
+        v = v.get("value") or v.get("date")
+    return v[:10] if isinstance(v, str) and len(v) >= 10 and v[4] == "-" else None
+
+
 def _read(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
@@ -132,10 +181,13 @@ def rounds():
 
 def calendar(root=ROOT):
     c = _read(Path(root) / CALENDAR)
-    return {"cap": c["salary_cap_2004_05"]["value"], "tax": c["luxury_tax_threshold_2004_05"]["value"],
-            "mle": c["mid_level_exception_2004_05"]["value"], "charlotte_cap": c["charlotte_cap_and_floor_2004_05"]["value"]["cap"],
-            "minimum": {int(k.rstrip("+")): v for k, v in c["minimum_salary_scale_2004_05"]["value"].items()},
-            "scale": {r["pick"]: r for r in c["rookie_scale_2004_first_round"]["value"]}}
+    sfx = NEW.replace("-", "_")
+    charlotte = c.get(f"charlotte_cap_and_floor_{sfx}")
+    return {"cap": c[f"salary_cap_{sfx}"]["value"], "tax": c[f"luxury_tax_threshold_{sfx}"]["value"],
+            "mle": c[f"mid_level_exception_{sfx}"]["value"],
+            "charlotte_cap": charlotte["value"]["cap"] if charlotte else c[f"salary_cap_{sfx}"]["value"],
+            "minimum": {int(k.rstrip("+")): v for k, v in c[f"minimum_salary_scale_{sfx}"]["value"].items()},
+            "scale": {r["pick"]: r for r in c[f"rookie_scale_{YEAR}_first_round"]["value"]}}
 
 
 def minimum(service, cal):
@@ -157,7 +209,7 @@ def season_evidence(root=ROOT):
     root = Path(root)
     ids = identities(root)
     out = defaultdict(lambda: defaultdict(float))
-    for row in closed_results(root, SEASON, "2004-04-14"):
+    for row in closed_results(root, SEASON, SEASON_END):
         r = row["result"]
         for side in ("home", "away"):
             for p in r["player_stats"][side]:
@@ -195,6 +247,14 @@ def identity(root=ROOT):
                     e["position"] = e.get("position") or p.get("position")
     careers = _read(root / CAREERS)["players"]
     sourced = {}
+    if YEAR != 2004:                       # a later summer: the year's service file, else the real seasons played before
+        debut = _read(root / SERVICE)["players"] if (root / SERVICE).is_file() else {}
+        for b, e in out.items():
+            row = debut.get(b) or {}
+            e["service"] = next((v for k, v in row.items() if k.startswith("seasons") and isinstance(v, int)), None)
+            if e["service"] is None:
+                e["service"] = sum(1 for s in (careers.get(b) or {}).get("seasons", {}) if s < NEW)
+        return out
     for fa in (fa for c in _read(root / "library/2003/league/nba_2003_free_agent_rights.json")["clubs"].values() for fa in c["free_agents"]):
         if fa.get("bbr_id") and fa.get("nba_seasons_before_2003_04") is not None:
             sourced[fa["bbr_id"]] = fa["nba_seasons_before_2003_04"] + 1
@@ -305,6 +365,8 @@ def _slug(name):
 
 def starting_book(root=ROOT):
     """Clubs' 2004-05 contracts before June 30, and the market's rights: {"contracts": {bbr: {...}}, "rights": {bbr: club}}."""
+    if YEAR != 2004:
+        return _ledger_book(root)
     from .contract_terms import existing_terms
     from .draft import drafted_clubs
     from .expansion import charlotte_players
@@ -332,6 +394,50 @@ def starting_book(root=ROOT):
     return {"contracts": contracts, "options": options, "rights": rights, "drafted": drafted}
 
 
+def _ledger_book(root=ROOT):
+    """A later summer's starting book from the closed season's contract ledger (options decided on June 29 by
+    `runtime/options.py`) and each club's roster on the season's last day: a contract running into the new season stays
+    with the club holding him; a player whose contract ended is a free agent whose rights his club holds; Miami's
+    contracts are its own cap sheet's; the year's draft picks go to the clubs that drafted them."""
+    from .draft import drafted_clubs, year_context as draft_year
+    from .league_contracts import read as read_ledger
+    from .league_moves import effective_roster
+    from .rotations import miami_holds
+    from .seasons import clubs as season_clubs
+    root = Path(root)
+    ledger = read_ledger(SEASON, root) or {}
+    holder = {}
+    for club in season_clubs(SEASON, root):
+        if club == MIAMI:
+            continue
+        for p in effective_roster(club, SEASON_END, SEASON, root):
+            holder[p["bbr_id"]] = club
+    for b in miami_holds(SEASON, SEASON_END, root):
+        holder[b] = MIAMI
+    contracts, rights = {}, {}
+    for b, club in holder.items():
+        c = ledger.get(b)
+        if club == MIAMI:
+            continue
+        if c and c["schedule"].get(NEW):
+            years = sum(1 for k, v in c["schedule"].items() if k >= NEW and v)
+            contracts[b] = {"club": club, "salary": int(c["schedule"][NEW]), "years": years, "option_kind": None,
+                            "source": f"league contract ledger {SEASON} ({c.get('kind')})"}
+        else:
+            rights[b] = club
+    for b, t in miami_contracts(root).items():
+        contracts[b] = t
+    sheet = _read(root / f"career/Dwyane_Wade/{SEASON}/00_Team/Finances/contract_schedules.json")
+    ids = {p["name"]: p.get("bbr_id") for p in _read(root / f"career/Dwyane_Wade/{SEASON}/00_Team/Team/Roster/roster.json")["players"]}
+    for p in sheet["players"]:
+        b = p.get("bbr_id") or ids.get(p["player"])
+        if b and b not in contracts and (p.get("schedule") or {}).get(SEASON) and p.get("status") in ("under_contract", "under_rookie_contract"):
+            rights[b] = MIAMI                                   # Miami's own expiring contracts: its rights
+    with draft_year(YEAR, root):
+        drafted = dict(drafted_clubs(root))
+    return {"contracts": contracts, "options": {}, "rights": rights, "drafted": drafted}
+
+
 def miami_contracts(root=ROOT):
     """Miami's 2004-05 contracts from its own ledger (AI/GM records)."""
     sheet = _read(Path(root) / f"career/Dwyane_Wade/{SEASON}/00_Team/Finances/contract_schedules.json")
@@ -356,6 +462,11 @@ def miami_prior_salaries(root=ROOT):
 def prior_salaries(root=ROOT):
     """{bbr_id: 2003-04 salary} from the 2003 inventory, the 2003-04 salary list where held, and Miami's ledger."""
     out = {}
+    if YEAR != 2004:                       # a later summer: the closed season's ledger salaries, then Miami's sheet
+        from .league_contracts import read as read_ledger
+        out = {b: int(c["schedule"][SEASON]) for b, c in (read_ledger(SEASON, root) or {}).items() if c["schedule"].get(SEASON)}
+        out.update({b: s for b, s in miami_prior_salaries(root).items() if s})
+        return out
     for club, e in _read(Path(root) / "library/2003/league/nba_2003_contracts.json")["clubs"].items():
         for p in e["players"]:
             if p.get("bbr_id") and (p.get("schedule") or {}).get(SEASON):
@@ -372,10 +483,13 @@ def prior_salaries(root=ROOT):
 def real_roles(root=ROOT):
     """Players with a real 2004-05 role: minutes in the real careers table, which (unlike the club rosters) keeps real
     Miami's players (career continuity; the club itself is never read)."""
+    from .availability import status
     from .offseason import real_clubs
+    from .rotations import rosters_path
     careers = _read(Path(root) / CAREERS)["players"]
-    out = set(real_clubs(NEW, root))
-    out |= {b for b, e in careers.items() if (e.get("seasons", {}).get(NEW) or {}).get("minutes", 0) > 0}
+    out = set(real_clubs(NEW, root)) if (Path(root) / rosters_path(NEW)).is_file() else set()
+    # Past the careers table's last season, a player whose career ran to it stays available (runtime/availability.py).
+    out |= {b for b in careers if status(b, NEW, root) == "available"}
     return out
 
 
@@ -386,6 +500,9 @@ def rfa_eligible(b, ident, rookie_scale):
 
 
 def rookie_scale_players(root=ROOT):
+    if YEAR != 2004:
+        from .league_contracts import read as read_ledger
+        return {b for b, c in (read_ledger(SEASON, root) or {}).items() if c.get("rookie_scale") or c.get("kind") == "rookie_scale"}
     out = set()
     for e in _read(Path(root) / "library/2003/league/nba_2003_contracts.json")["clubs"].values():
         for p in e["players"]:
@@ -425,7 +542,7 @@ class Market:
     # ---- helpers
     def _standings(self):
         from .standings import standings_on
-        table = standings_on("2004-04-14", self.root, SEASON)
+        table = standings_on(SEASON_END, self.root, SEASON)
         rows = table if isinstance(table, list) else [r for conf in table.values() for r in (conf if isinstance(conf, list) else [])]
         out = {}
         for r in rows:
@@ -506,7 +623,7 @@ class Market:
             else:
                 gap = (price - o["salary"]) / o["salary"]
                 p_out = min(OPT_OUT_LIMITS[1], max(OPT_OUT_LIMITS[0], _sigmoid(OPT_OUT_SLOPE * gap)))
-                answer = self.draw({"event_id": f"2004-06-30-{_slug(self.name(b))}-{o['option_kind'].replace('_', '-')}", "date": OPTIONS_DATE,
+                answer = self.draw({"event_id": f"{YEAR}-06-30-{_slug(self.name(b))}-{o['option_kind'].replace('_', '-')}", "date": OPTIONS_DATE,
                                     "question": f"Does {self.name(b)} exercise his 2004-05 {o['option_kind'].replace('_', ' ')} with {o['club']} (${o['salary']:,})?",
                                     "decider": f"{self.name(b)} (simulated player, engine draw)",
                                     "options": {"exercise": round(1 - p_out, 6), "opt_out": round(p_out, 6)},
@@ -582,8 +699,10 @@ class Market:
         return self.record()
 
     def sign_first_round(self, drafted):
-        from .draft import _read as dread, RECORD as DREC
-        path = self.root / DREC
+        from .draft import _read as dread, year_context as draft_year
+        with draft_year(YEAR, self.root):
+            from . import draft as _draft
+            path = self.root / _draft.RECORD
         if not path.is_file():
             return
         for p in dread(path)["picks"]:
@@ -592,9 +711,9 @@ class Market:
             scale = self.cal["scale"].get(p["pick"]) or self.cal["scale"][max(self.cal["scale"])]
             salary = int(round(scale["year1"] * ROOKIE_SCALE_SHARE))
             self.contracts[p["bbr_id"]] = {"club": p["club"], "salary": salary, "years": 3, "date": OPEN, "route": "rookie_scale",
-                                           "source": f"2004 rookie scale No. {p['pick']} at {int(ROOKIE_SCALE_SHARE * 100)}%"}
+                                           "source": f"{YEAR} rookie scale No. {p['pick']} at {int(ROOKIE_SCALE_SHARE * 100)}%"}
             self.events.append({"date": OPEN, "kind": "rookie_scale_signing", "player": p["player"], "bbr_id": p["bbr_id"],
-                                "club": p["club"], "salary": salary, "years": 3, "team_option": "2007-08"})
+                                "club": p["club"], "salary": salary, "years": 3, "team_option": f"{YEAR + 3}-{str(YEAR + 4)[-2:]}"})
 
     def means(self, club, b, on, amount):
         """The route by which the club can pay `amount` to player b on the date, or None."""
@@ -640,7 +759,7 @@ class Market:
         p = request_override("let_go", "tender", margin, standing_on(self.root, OPTIONS_DATE)["standing"])
         if p <= 0:
             return False
-        answer = self.draw({"event_id": f"2004-06-30-{_slug(self.name(b))}-qualifying-offer-request", "date": OPTIONS_DATE,
+        answer = self.draw({"event_id": f"{YEAR}-06-30-{_slug(self.name(b))}-qualifying-offer-request", "date": OPTIONS_DATE,
                             "question": f"Does Miami tender {self.name(b)} a qualifying offer at Wade's request?",
                             "decider": "Miami front office (engine draw on Wade's request)",
                             "options": {"tender": p, "let_go": round(1 - p, 6)},
@@ -713,7 +832,7 @@ class Market:
         state = _read(state_path)
         C.ask(self.root, state, day, "free_agent", name, b, club, basis=f"Miami's market plan on {day}: offer ${amount:,} (runtime/free_agency_2004.py)",
               evidence={"value": round(value, 2), "line": self.line(b), "salary": f"${amount:,} offer", "cap_position": f"payroll ${self.payroll(MIAMI):,}",
-                        "fit": f"{self.group(b)} need {self.need(MIAMI, self.group(b)):.2f}", "reason": "2004 free agency"},
+                        "fit": f"{self.group(b)} need {self.need(MIAMI, self.group(b)):.2f}", "reason": f"{YEAR} free agency"},
               season=SEASON, standing=standing)
         _write(state_path, state)
         self.pending = True
@@ -732,7 +851,7 @@ class Market:
         for b in self.pool:
             a = self.pricing.age(b) or 27
             odds = next(o for limit, o in TRAIT_ODDS if a <= limit)
-            t = self.draw({"event_id": f"2004-07-01-{_slug(self.name(b))}-priorities", "date": OPEN,
+            t = self.draw({"event_id": f"{YEAR}-07-01-{_slug(self.name(b))}-priorities", "date": OPEN,
                            "question": f"What does {self.name(b)} weigh most in choosing his 2004 contract?",
                            "decider": f"{self.name(b)} (simulated player, engine draw)", "options": dict(odds),
                            "basis": f"Trait odds by age ({a}): money, fame, loyalty, winning (runtime/market.py TRAIT_ODDS; "
@@ -741,7 +860,7 @@ class Market:
                 self.trait[b] = t
 
     def wins(self, club):
-        return CHARLOTTE_WINS if club == CHARLOTTE else round(82 * self.standings.get(club, 0.5))
+        return CHARLOTTE_WINS if (club == CHARLOTTE and YEAR == 2004) else round(82 * self.standings.get(club, 0.5))
 
     def role_minutes(self, club, b):
         g, v = self.group(b), self.pricing.value(b)
@@ -880,13 +999,13 @@ class Market:
             if used & keys:
                 continue
             used |= keys
-            row["id"] = f"2004-summer-trade-{day}-" + "-".join(sorted(row["a"]["bbr_ids"] + row["b"]["bbr_ids"]))
+            row["id"] = f"{YEAR}-summer-trade-{day}-" + "-".join(sorted(row["a"]["bbr_ids"] + row["b"]["bbr_ids"]))
             chosen.append(row)
         return chosen
 
     def trade_round(self, day):
         """The round's proposals (searched once and stored), each an engine draw; accepted deals move the contracts."""
-        path = self.root / DRAWS / f"2004-summer-trades-{day}.proposals.json"
+        path = self.root / DRAWS / f"{YEAR}-summer-trades-{day}.proposals.json"
         if self.store and path.is_file():
             chosen = _read(path)["deals"]
         else:
@@ -938,7 +1057,7 @@ class Market:
             C.ask(self.root, state, day, "trade", name, b, row[side]["club"], basis=f"Miami's summer trade search on {day}: "
                   f"{' and '.join(row['a']['sends'])} for {' and '.join(row['b']['sends'])}",
                   evidence={"value": round(value, 2), "line": self.line(b), "salary": f"${self.contracts[b]['salary']:,}",
-                            "cap_position": f"payroll ${self.payroll(MIAMI):,}", "fit": self.group(b), "reason": "2004 summer trade"},
+                            "cap_position": f"payroll ${self.payroll(MIAMI):,}", "fit": self.group(b), "reason": f"{YEAR} summer trade"},
                   season=SEASON, standing=standing)
             _write(state_path, state)
             self.pending = True
@@ -970,8 +1089,8 @@ class Market:
             z = sum(ex.values())
             probs = {c: p_accept * v / z for c, v in ex.items()}
             probs["wait"] = 1 - p_accept
-            answer = self.draw({"event_id": f"2004-fa-{day}-{_slug(self.name(b))}", "date": day,
-                                "question": f"2004 free agency, {day}: which offer does {self.name(b)} accept ("
+            answer = self.draw({"event_id": f"{YEAR}-fa-{day}-{_slug(self.name(b))}", "date": day,
+                                "question": f"{YEAR} free agency, {day}: which offer does {self.name(b)} accept ("
                                             + ", ".join(f"{o['club']} ${o['salary']:,} x {o['years']}" for o in options) + "), or does he wait?",
                                 "decider": f"{self.name(b)} (simulated player, engine draw)", "options": probs,
                                 "basis": f"Ask ${self.ask(b, week):,}; best offer {ratio:.2f} of the ask in total; accept chance {p_accept:.3f}; "
@@ -1009,7 +1128,7 @@ class Market:
         if o["route"] == "mid_level":
             self.mle_used.add(club)
         self.contracts[b] = {"club": club, "salary": o["salary"], "years": o["years"], "date": when, "route": o["route"],
-                             "source": "2004 simulated free agency"}
+                             "source": f"{YEAR} simulated free agency"}
         if matched:
             return
         kind = "re_sign" if self.rights.get(b) == club else "signing"
@@ -1023,7 +1142,7 @@ class Market:
             if b in self.contracts or q.get("draft_rights"):
                 continue
             self.contracts[b] = {"club": q["club"], "salary": q["amount"], "years": 1, "date": PLACEMENT, "route": "qualifying_offer",
-                                 "source": "2004 qualifying offer accepted"}
+                                 "source": f"{YEAR} qualifying offer accepted"}
             self.events.append({"date": PLACEMENT, "kind": "qualifying_offer_accepted", "player": self.name(b), "bbr_id": b,
                                 "club": q["club"], "salary": q["amount"], "years": 1})
         left = sorted((b for b in self.pool if b not in self.contracts), key=lambda b: (-self.pricing.value(b), b))
@@ -1039,7 +1158,7 @@ class Market:
                 if route == "mid_level":
                     self.mle_used.add(club)
             self.contracts[b] = {"club": club, "salary": salary, "years": 1, "date": PLACEMENT, "route": route,
-                                 "source": "2004 camp signing (roster minimum)"}
+                                 "source": f"{YEAR} camp signing (roster minimum)"}
             self.events.append({"date": PLACEMENT, "kind": "camp_signing", "player": self.name(b), "bbr_id": b, "club": club,
                                 "from": self.rights.get(b), "salary": salary, "years": 1, "route": route})
         self.unsigned = [b for b in left if b not in self.contracts]
@@ -1057,25 +1176,43 @@ class Market:
                 "payroll": {c: sum(r["salary"] for r in v) for c, v in sorted(clubs.items())},
                 "unsigned_pool": [{"player": self.name(b), "bbr_id": b, "price": self.price[b], "rights": self.rights.get(b)}
                                   for b in self.unsigned],
-                "left_the_league": [{"player": self.name(b), "bbr_id": b, "basis": "no real 2004-05 role"} for b in departed if b not in self.roles]}
+                "left_the_league": [{"player": self.name(b), "bbr_id": b, "basis": f"no real {NEW} role"} for b in departed if b not in self.roles]}
 
 
-def run(root=ROOT, clock=None):
+def run(root=ROOT, clock=None, year=2004):
     """Replay the summer to the clock. Writes the record when the market is complete; returns it, else None."""
     from .write_back import clock as career_clock
     root = Path(root)
-    if (root / RECORD).is_file() or (clock or career_clock(root)) < OPTIONS_DATE:
-        return None
-    market = Market(root, clock)
-    record = market.run()
-    if record:
-        _write(root / RECORD, record)
-    return record
+    with year_context(year, root):
+        if (root / RECORD).is_file() or (clock or career_clock(root)) < OPTIONS_DATE:
+            return None
+        market = Market(root, clock)
+        record = market.run()
+        if record:
+            _write(root / RECORD, record)
+        return record
 
 
-def signed_clubs(root=ROOT):
-    """{bbr_id: club} for every 2004-05 contract once the market is complete, else {}."""
-    path = Path(root) / RECORD
+def record_path(year=2004):
+    """The summer market record for a year (its season's 10_Free_Agency folder)."""
+    y = int(year)
+    return Path(f"career/Dwyane_Wade/{y - 1}-{str(y)[-2:]}/10_Free_Agency/free_agency_{y}.json")
+
+
+def market_year(season):
+    """The summer whose market opened a season ("2005-06" opened in 2005)."""
+    return int(season[:4])
+
+
+def record_for(season):
+    """The summer market record that opened a season."""
+    return record_path(market_year(season))
+
+
+def signed_clubs(root=ROOT, year=None):
+    """{bbr_id: club} for every contract the year's market made once it is complete (default: the current context's
+    year, 2004 outside a year_context), else {}."""
+    path = Path(root) / (record_path(year) if year else RECORD)
     if not path.is_file():
         return {}
     return {r["bbr_id"]: club for club, rows in _read(path)["clubs"].items() for r in rows}

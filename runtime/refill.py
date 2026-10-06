@@ -66,6 +66,10 @@ def candidates(on, front_office, market, positions, root=ROOT, requested=()):
     needs = front_office.needs()
     pool = {b: p for b, p in market.pool(on).items() if not market.restricted(b) and p.get("club") != MIAMI}
     pool.update({b: p for b, p in unattached(on, root).items() if b not in pool})
+    from .availability import signable
+    from .seasons import season_of_date
+    if on >= "2004-07-01":                                  # 2003-04 refills used the researched status files
+        pool = {b: p for b, p in pool.items() if signable(b, season_of_date(on), root)}
     rows = []
     for bbr, p in pool.items():
         if bbr in held or p["player"] in held:

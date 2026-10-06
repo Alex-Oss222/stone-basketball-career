@@ -148,6 +148,8 @@ Before each review, every earlier scheduled Miami game must have a played note d
 
 The rating uses NBA efficiency—points, rebounds, assists, steals and blocks, less missed field goals, missed free throws and turnovers—per 30 minutes. Each player's fixed camp staff estimate contributes 300 prior minutes. The score is `(preseason estimate × 300 + closed efficiency × 30) / (300 + closed minutes)`. Every review starts from that same preseason prior, so earlier reviews do not count the evidence twice. A player with 30 closed minutes gets 9.1% weight on those results; at 300 minutes the weights are equal. New arrivals without a camp score need a dated staff estimate in `Depth_Chart/preseason_estimates.json`, with `players` entries containing `player`, `as_of` and `score`.
 
+Minutes by gap (the user's request; reviews dated from November 20, 2004): the season template gives each starter 34 minutes. When the best starter's score leads the next starter's by more than 5%, he gets 25 minutes per unit of lead beyond it, at most 6 (40 in all); the reserves give up the same total in proportion to their minutes, so the rotation still sums to 240. A 20% lead is worth about 3.75 minutes. The rule reads only the review's frozen scores, applies to whoever leads, and is recorded as `minutes_by_gap` in the review's `rotation.json`. Earlier reviews stand as recorded.
+
 At each primary position, a clear leader takes the starting job. If the top two scores differ by at most 10% of their absolute scale (with a floor of one), the engine draws the winner. A tie is 50–50; the leader's probability rises to 75% at the threshold. Eddie Jones has no incumbent or seniority bonus; Wade has no draft-slot or protagonist bonus in these reviews. Their frozen preseason assessments are treated by the same formula as everyone else's.
 
 Records live under `00_Team/Team/Depth_Chart/Reviews/YYYY-MM-DD/`: immutable `review.json`, battle `*.decision.json` requests and checked engine answers, then `depth_chart.json` and a 240-minute `rotation.json`. Submit pending battle requests through the existing authorized engine decision workflow and run the review command again after collection. No rotation is completed until every required answer is present. The original camp files remain the baseline; subsequent review files select the rotation in force for each new game.
@@ -211,3 +213,23 @@ Real clubs follow history (option D), so a club Miami takes a rotation player fr
 - **Effect.** He arrives with his 2002-03 minutes per game and games share (rule 3) in `game_requests._club`, and `league_cards.club_on` dates him to his new club.
 
 Records live in `career/Dwyane_Wade/<season>/League/club_replacements.json`. Run `python scripts/club_replacements.py --write` after any Miami acquisition; validation refuses a disturbed club without a replacement while the pool has one. Undisturbed clubs keep following history.
+
+
+## Contract options for every club (October 2026)
+
+`runtime/options.py`, run every career day by `scripts/advance.py` (`scripts/option_day.py --write <date>`). Team options,
+player options and early termination options are decided on their real deadlines, never assumed exercised: a rookie-scale
+team option by October 31 of the season before it, a veteran option at the end of June before it. The holder decides on
+its valuation dated on the deadline: worth (market price of production, x1.25 for a player 24 or younger) against the
+option salary; at or above 1.2 the option is exercised (or the player stays), at or below 0.8 it is declined (or he
+leaves), and in between the engine draws it (`League/Option_Draws/`). A player history retired before the option season
+is declined. Decisions are recorded in `League/option_decisions.json`, applied to the league ledger and Miami's cap sheet,
+and reapplied when a ledger is rebuilt. The 2004-05 ledger also restores the 2003 first-round picks' third scale season
+and fourth-year option (their 2004-05 salary is exactly 120% of their pick's scale).
+
+## Retirement and availability (October 2026)
+
+`runtime/availability.py`: a real player's NBA seasons from 2003-04 (`nba_player_careers.json`) decide whether he can
+play in a season. No club signs a player who is retired or sits that season out in history; from November 24, 2004 the
+league's market day retires any rostered player whose real career ended before the season, and his club fills the spot.
+Miami's refills and the summer markets read the same rule.

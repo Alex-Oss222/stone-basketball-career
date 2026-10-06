@@ -235,6 +235,7 @@ def playoff_day(day):
     data = state()
     data["current_area"] = "08_Playoffs"
     write_state(data)
+    option_day(day)                                     # veteran options at the end of June, before the summer market
     run("scripts/decide_awards.py", "--write", ok=(0, 1))
     draw()
     run("scripts/decide_awards.py", "--write", show=False)
@@ -267,6 +268,7 @@ def camp_day(day):
     data = state()
     data["current_area"] = data.get("current_area") if data.get("current_area") in ("04_Training_Camp", "05_Preseason") else "04_Training_Camp"
     write_state(data)
+    option_day(day)
     miami_trade_day(day)                                    # Wade's trade requests answered; no scan before opening night
     out = run("scripts/run_camp.py", "--write", day, show=False)
     if draws_pending():
@@ -281,6 +283,16 @@ def camp_day(day):
 
 
 TRADES_TODAY = []
+
+
+def option_day(day):
+    """Contract options for every club due by the day (scripts/option_day.py): close calls drawn by the engine."""
+    out = run("scripts/option_day.py", "--write", day, show=False)
+    if draws_pending():
+        draw()
+        out = run("scripts/option_day.py", "--write", day, show=False)
+    if not out.splitlines()[-1].startswith("options: 0 decided"):
+        say("    " + out.splitlines()[-1])
 
 
 def miami_trade_day(day):
@@ -325,6 +337,7 @@ def advance_day(day):
     if draws_pending():
         draw()
         run("scripts/league_day.py", "--write", day)
+    option_day(day)
     miami_trade_day(day)
     run("scripts/club_replacements.py", "--write", ok=(0, 1), show=False)
     run("scripts/build_season_games.py", "--write", day)

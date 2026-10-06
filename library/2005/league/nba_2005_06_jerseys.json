@@ -1,0 +1,3998 @@
+{
+ "schema_version": 1,
+ "season": "2005-06",
+ "kind": "jersey_numbers",
+ "researched": "2026-10-06",
+ "source_pattern": "https://www.basketball-reference.com/teams/{ABBR}/2006.html",
+ "players": {
+  "abdursh01": [
+   {
+    "player": "Shareef Abdur-Rahim",
+    "club": "Sacramento Kings",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "ackeral01": [
+   {
+    "player": "Alex Acker",
+    "club": "Detroit Pistons",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "allenma01": [
+   {
+    "player": "Malik Allen",
+    "club": "Chicago Bulls",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "allenra02": [
+   {
+    "player": "Ray Allen",
+    "club": "Seattle SuperSonics",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "allento01": [
+   {
+    "player": "Tony Allen",
+    "club": "Boston Celtics",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "alstora01": [
+   {
+    "player": "Rafer Alston",
+    "club": "Houston Rockets",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "anderal01": [
+   {
+    "player": "Alan Anderson",
+    "club": "Charlotte Bobcats",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "anderch01": [
+   {
+    "player": "Chris Andersen",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "anderde01": [
+   {
+    "player": "Derek Anderson",
+    "club": "Houston Rockets",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   },
+   {
+    "player": "Derek Anderson",
+    "club": "Miami Heat",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "andersh01": [
+   {
+    "player": "Shandon Anderson",
+    "club": "Miami Heat",
+    "number": "49",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "andrima01": [
+   {
+    "player": "Martynas Andriuškevičius",
+    "club": "Cleveland Cavaliers",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "anthoca01": [
+   {
+    "player": "Carmelo Anthony",
+    "club": "Denver Nuggets",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "araujra01": [
+   {
+    "player": "Rafael Araújo",
+    "club": "Toronto Raptors",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "arenagi01": [
+   {
+    "player": "Gilbert Arenas",
+    "club": "Washington Wizards",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "arizatr01": [
+   {
+    "player": "Trevor Ariza",
+    "club": "New York Knicks",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   },
+   {
+    "player": "Trevor Ariza",
+    "club": "Orlando Magic",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "armstda01": [
+   {
+    "player": "Darrell Armstrong",
+    "club": "Dallas Mavericks",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "arroyca01": [
+   {
+    "player": "Carlos Arroyo",
+    "club": "Detroit Pistons",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   },
+   {
+    "player": "Carlos Arroyo",
+    "club": "Orlando Magic",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "artesro01": [
+   {
+    "player": "Metta World Peace",
+    "club": "Indiana Pacers",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   },
+   {
+    "player": "Metta World Peace",
+    "club": "Sacramento Kings",
+    "number": "93",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "atkinch01": [
+   {
+    "player": "Chucky Atkins",
+    "club": "Memphis Grizzlies",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   },
+   {
+    "player": "Chucky Atkins",
+    "club": "Washington Wizards",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "augmost01": [
+   {
+    "player": "Stacey Augmon",
+    "club": "Orlando Magic",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "bakervi01": [
+   {
+    "player": "Vin Baker",
+    "club": "Los Angeles Clippers",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "banksma01": [
+   {
+    "player": "Marcus Banks",
+    "club": "Boston Celtics",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   },
+   {
+    "player": "Marcus Banks",
+    "club": "Minnesota Timberwolves",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "barbole01": [
+   {
+    "player": "Leandro Barbosa",
+    "club": "Phoenix Suns",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "barnema02": [
+   {
+    "player": "Matt Barnes",
+    "club": "New York Knicks",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   },
+   {
+    "player": "Matt Barnes",
+    "club": "Philadelphia 76ers",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "barrean01": [
+   {
+    "player": "Andre Barrett",
+    "club": "Phoenix Suns",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   },
+   {
+    "player": "Andre Barrett",
+    "club": "Toronto Raptors",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "barroea01": [
+   {
+    "player": "Earl Barron",
+    "club": "Miami Heat",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "barrybr01": [
+   {
+    "player": "Brent Barry",
+    "club": "San Antonio Spurs",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "barryjo01": [
+   {
+    "player": "Jon Barry",
+    "club": "Houston Rockets",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "basdeed01": [
+   {
+    "player": "Eddie Basden",
+    "club": "Chicago Bulls",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "bassbr01": [
+   {
+    "player": "Brandon Bass",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "batises01": [
+   {
+    "player": "Esteban Batista",
+    "club": "Atlanta Hawks",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "battish01": [
+   {
+    "player": "Shane Battier",
+    "club": "Memphis Grizzlies",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "battito01": [
+   {
+    "player": "Tony Battie",
+    "club": "Orlando Magic",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "baxtelo01": [
+   {
+    "player": "Lonny Baxter",
+    "club": "Charlotte Bobcats",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   },
+   {
+    "player": "Lonny Baxter",
+    "club": "Houston Rockets",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "bellch01": [
+   {
+    "player": "Charlie Bell",
+    "club": "Milwaukee Bucks",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "bellra01": [
+   {
+    "player": "Raja Bell",
+    "club": "Phoenix Suns",
+    "number": "19",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "bendejo01": [
+   {
+    "player": "Jonathan Bender",
+    "club": "Indiana Pacers",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "bibbymi01": [
+   {
+    "player": "Mike Bibby",
+    "club": "Sacramento Kings",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "biedran01": [
+   {
+    "player": "Andris Biedriņš",
+    "club": "Golden State Warriors",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "billuch01": [
+   {
+    "player": "Chauncey Billups",
+    "club": "Detroit Pistons",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "blakest01": [
+   {
+    "player": "Steve Blake",
+    "club": "Portland Trail Blazers",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "blatcan01": [
+   {
+    "player": "Andray Blatche",
+    "club": "Washington Wizards",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "blounma01": [
+   {
+    "player": "Mark Blount",
+    "club": "Boston Celtics",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   },
+   {
+    "player": "Mark Blount",
+    "club": "Minnesota Timberwolves",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "boganke01": [
+   {
+    "player": "Keith Bogans",
+    "club": "Charlotte Bobcats",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   },
+   {
+    "player": "Keith Bogans",
+    "club": "Houston Rockets",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "bogutan01": [
+   {
+    "player": "Andrew Bogut",
+    "club": "Milwaukee Bucks",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "bonnema01": [
+   {
+    "player": "Matt Bonner",
+    "club": "Toronto Raptors",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "boothca01": [
+   {
+    "player": "Calvin Booth",
+    "club": "Washington Wizards",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "boozeca01": [
+   {
+    "player": "Carlos Boozer",
+    "club": "Utah Jazz",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "boshch01": [
+   {
+    "player": "Chris Bosh",
+    "club": "Toronto Raptors",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "bowenbr01": [
+   {
+    "player": "Bruce Bowen",
+    "club": "San Antonio Spurs",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "bowenry01": [
+   {
+    "player": "Ryan Bowen",
+    "club": "Houston Rockets",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "boykiea01": [
+   {
+    "player": "Earl Boykins",
+    "club": "Denver Nuggets",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "bradlmi01": [
+   {
+    "player": "Michael Bradley",
+    "club": "Philadelphia 76ers",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "brandel01": [
+   {
+    "player": "Elton Brand",
+    "club": "Los Angeles Clippers",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "brezepr01": [
+   {
+    "player": "Primož Brezec",
+    "club": "Charlotte Bobcats",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "brownde02": [
+   {
+    "player": "Devin Brown",
+    "club": "Utah Jazz",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "brownkw01": [
+   {
+    "player": "Kwame Brown",
+    "club": "Los Angeles Lakers",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "brownpj01": [
+   {
+    "player": "P.J. Brown",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "brunsri01": [
+   {
+    "player": "Rick Brunson",
+    "club": "Houston Rockets",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   },
+   {
+    "player": "Rick Brunson",
+    "club": "Seattle SuperSonics",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "bryanko01": [
+   {
+    "player": "Kobe Bryant",
+    "club": "Los Angeles Lakers",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "buckngr01": [
+   {
+    "player": "Greg Buckner",
+    "club": "Denver Nuggets",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "burkepa01": [
+   {
+    "player": "Pat Burke",
+    "club": "Phoenix Suns",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "burksan01": [
+   {
+    "player": "Antonio Burks",
+    "club": "Memphis Grizzlies",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "burleke01": [
+   {
+    "player": "Kevin Burleson",
+    "club": "Charlotte Bobcats",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "butleca01": [
+   {
+    "player": "Caron Butler",
+    "club": "Washington Wizards",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "butleja01": [
+   {
+    "player": "Jackie Butler",
+    "club": "New York Knicks",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "butlera01": [
+   {
+    "player": "Rasual Butler",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "bynuman01": [
+   {
+    "player": "Andrew Bynum",
+    "club": "Los Angeles Lakers",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "bynumwi01": [
+   {
+    "player": "Will Bynum",
+    "club": "Golden State Warriors",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "cabarza01": [
+   {
+    "player": "Žarko Čabarkapa",
+    "club": "Golden State Warriors",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "caldejo01": [
+   {
+    "player": "José Calderón",
+    "club": "Toronto Raptors",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "cambyma01": [
+   {
+    "player": "Marcus Camby",
+    "club": "Denver Nuggets",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "cardibr01": [
+   {
+    "player": "Brian Cardinal",
+    "club": "Memphis Grizzlies",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "carroma01": [
+   {
+    "player": "Matt Carroll",
+    "club": "Charlotte Bobcats",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "cartean01": [
+   {
+    "player": "Anthony Carter",
+    "club": "Minnesota Timberwolves",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "cartevi01": [
+   {
+    "player": "Vince Carter",
+    "club": "New Jersey Nets",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "cassesa01": [
+   {
+    "player": "Sam Cassell",
+    "club": "Los Angeles Clippers",
+    "number": "19",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "catoke01": [
+   {
+    "player": "Kelvin Cato",
+    "club": "Detroit Pistons",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   },
+   {
+    "player": "Kelvin Cato",
+    "club": "Orlando Magic",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "chandty01": [
+   {
+    "player": "Tyson Chandler",
+    "club": "Chicago Bulls",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "cheanca01": [
+   {
+    "player": "Calbert Cheaney",
+    "club": "Golden State Warriors",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "childjo01": [
+   {
+    "player": "Josh Childress",
+    "club": "Atlanta Hawks",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "chrisdo01": [
+   {
+    "player": "Doug Christie",
+    "club": "Dallas Mavericks",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "claxtsp01": [
+   {
+    "player": "Speedy Claxton",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "cleavma01": [
+   {
+    "player": "Mateen Cleaves",
+    "club": "Seattle SuperSonics",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "collija03": [
+   {
+    "player": "Jarron Collins",
+    "club": "Utah Jazz",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "collija04": [
+   {
+    "player": "Jason Collins",
+    "club": "New Jersey Nets",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "collini01": [
+   {
+    "player": "Nick Collison",
+    "club": "Seattle SuperSonics",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "cookbr01": [
+   {
+    "player": "Brian Cook",
+    "club": "Los Angeles Lakers",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "crawfja01": [
+   {
+    "player": "Jamal Crawford",
+    "club": "New York Knicks",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "croshau01": [
+   {
+    "player": "Austin Croshere",
+    "club": "Indiana Pacers",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "curryed01": [
+   {
+    "player": "Eddy Curry",
+    "club": "New York Knicks",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "dalemsa01": [
+   {
+    "player": "Samuel Dalembert",
+    "club": "Philadelphia 76ers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "dampier01": [
+   {
+    "player": "Erick Dampier",
+    "club": "Dallas Mavericks",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "daniean01": [
+   {
+    "player": "Antonio Daniels",
+    "club": "Washington Wizards",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "daniema01": [
+   {
+    "player": "Marquis Daniels",
+    "club": "Dallas Mavericks",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "davisan01": [
+   {
+    "player": "Antonio Davis",
+    "club": "New York Knicks",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   },
+   {
+    "player": "Antonio Davis",
+    "club": "Toronto Raptors",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "davisba01": [
+   {
+    "player": "Baron Davis",
+    "club": "Golden State Warriors",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "davisda01": [
+   {
+    "player": "Dale Davis",
+    "club": "Detroit Pistons",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "davisjo02": [
+   {
+    "player": "Josh Davis",
+    "club": "Houston Rockets",
+    "number": "18",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   },
+   {
+    "player": "Josh Davis",
+    "club": "Milwaukee Bucks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   },
+   {
+    "player": "Josh Davis",
+    "club": "Phoenix Suns",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "davisri01": [
+   {
+    "player": "Ricky Davis",
+    "club": "Boston Celtics",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   },
+   {
+    "player": "Ricky Davis",
+    "club": "Minnesota Timberwolves",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "delfica01": [
+   {
+    "player": "Carlos Delfino",
+    "club": "Detroit Pistons",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "delkto01": [
+   {
+    "player": "Tony Delk",
+    "club": "Atlanta Hawks",
+    "number": "00",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   },
+   {
+    "player": "Tony Delk",
+    "club": "Detroit Pistons",
+    "number": "00",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "denglu01": [
+   {
+    "player": "Luol Deng",
+    "club": "Chicago Bulls",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "diawbo01": [
+   {
+    "player": "Boris Diaw",
+    "club": "Phoenix Suns",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "dickada01": [
+   {
+    "player": "Dan Dickau",
+    "club": "Boston Celtics",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "dienetr01": [
+   {
+    "player": "Travis Diener",
+    "club": "Orlando Magic",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "dioguik01": [
+   {
+    "player": "Ike Diogu",
+    "club": "Golden State Warriors",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "diopde01": [
+   {
+    "player": "DeSagana Diop",
+    "club": "Dallas Mavericks",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "dixonju01": [
+   {
+    "player": "Juan Dixon",
+    "club": "Portland Trail Blazers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "doleami01": [
+   {
+    "player": "Michael Doleac",
+    "club": "Miami Heat",
+    "number": "51",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "doolike01": [
+   {
+    "player": "Keyon Dooling",
+    "club": "Orlando Magic",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "duhonch01": [
+   {
+    "player": "Chris Duhon",
+    "club": "Chicago Bulls",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "duncati01": [
+   {
+    "player": "Tim Duncan",
+    "club": "San Antonio Spurs",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "dunlemi02": [
+   {
+    "player": "Mike Dunleavy",
+    "club": "Golden State Warriors",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "duprero01": [
+   {
+    "player": "Ronald Dupree",
+    "club": "Minnesota Timberwolves",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "edwarjo01": [
+   {
+    "player": "John Edwards",
+    "club": "Atlanta Hawks",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "eisleho01": [
+   {
+    "player": "Howard Eisley",
+    "club": "Denver Nuggets",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   },
+   {
+    "player": "Howard Eisley",
+    "club": "Los Angeles Clippers",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "ellismo01": [
+   {
+    "player": "Monta Ellis",
+    "club": "Golden State Warriors",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "elsonfr01": [
+   {
+    "player": "Francisco Elson",
+    "club": "Denver Nuggets",
+    "number": "56",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "elyme01": [
+   {
+    "player": "Melvin Ely",
+    "club": "Charlotte Bobcats",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "evansma01": [
+   {
+    "player": "Maurice Evans",
+    "club": "Detroit Pistons",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "evansre01": [
+   {
+    "player": "Reggie Evans",
+    "club": "Denver Nuggets",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   },
+   {
+    "player": "Reggie Evans",
+    "club": "Seattle SuperSonics",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "ewingda01": [
+   {
+    "player": "Daniel Ewing",
+    "club": "Los Angeles Clippers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "felixno01": [
+   {
+    "player": "Noel Felix",
+    "club": "Seattle SuperSonics",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "feltora01": [
+   {
+    "player": "Raymond Felton",
+    "club": "Charlotte Bobcats",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "finlemi01": [
+   {
+    "player": "Michael Finley",
+    "club": "San Antonio Spurs",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "fishede01": [
+   {
+    "player": "Derek Fisher",
+    "club": "Golden State Warriors",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "fitchge01": [
+   {
+    "player": "Gerald Fitch",
+    "club": "Miami Heat",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "fizerma01": [
+   {
+    "player": "Marcus Fizer",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "fordsh02": [
+   {
+    "player": "Sharrod Ford",
+    "club": "Phoenix Suns",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "fordtj01": [
+   {
+    "player": "T.J. Ford",
+    "club": "Milwaukee Bucks",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "fortsda01": [
+   {
+    "player": "Danny Fortson",
+    "club": "Seattle SuperSonics",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "fosteje01": [
+   {
+    "player": "Jeff Foster",
+    "club": "Indiana Pacers",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "foylead01": [
+   {
+    "player": "Adonal Foyle",
+    "club": "Golden State Warriors",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "frahmri01": [
+   {
+    "player": "Richie Frahm",
+    "club": "Houston Rockets",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   },
+   {
+    "player": "Richie Frahm",
+    "club": "Minnesota Timberwolves",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "francst01": [
+   {
+    "player": "Steve Francis",
+    "club": "New York Knicks",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   },
+   {
+    "player": "Steve Francis",
+    "club": "Orlando Magic",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "fryech01": [
+   {
+    "player": "Channing Frye",
+    "club": "New York Knicks",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "gadzuda01": [
+   {
+    "player": "Dan Gadzuric",
+    "club": "Milwaukee Bucks",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "gaide01": [
+   {
+    "player": "Deng Gai",
+    "club": "Philadelphia 76ers",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "gainere01": [
+   {
+    "player": "Reece Gaines",
+    "club": "Milwaukee Bucks",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "garcifr01": [
+   {
+    "player": "Francisco García",
+    "club": "Sacramento Kings",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "garneke01": [
+   {
+    "player": "Kevin Garnett",
+    "club": "Minnesota Timberwolves",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "garripa01": [
+   {
+    "player": "Pat Garrity",
+    "club": "Orlando Magic",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "gasolpa01": [
+   {
+    "player": "Pau Gasol",
+    "club": "Memphis Grizzlies",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "georgde01": [
+   {
+    "player": "Devean George",
+    "club": "Los Angeles Lakers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "gilled01": [
+   {
+    "player": "Eddie Gill",
+    "club": "Indiana Pacers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "ginobma01": [
+   {
+    "player": "Manu Ginóbili",
+    "club": "San Antonio Spurs",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "giricgo01": [
+   {
+    "player": "Gordan Giriček",
+    "club": "Utah Jazz",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "goldwan01": [
+   {
+    "player": "Anthony Goldwire",
+    "club": "Los Angeles Clippers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "gomesry01": [
+   {
+    "player": "Ryan Gomes",
+    "club": "Boston Celtics",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "goodedr01": [
+   {
+    "player": "Drew Gooden",
+    "club": "Cleveland Cavaliers",
+    "number": "90",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "gordobe01": [
+   {
+    "player": "Ben Gordon",
+    "club": "Chicago Bulls",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "grahajo01": [
+   {
+    "player": "Joey Graham",
+    "club": "Toronto Raptors",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "grahast01": [
+   {
+    "player": "Stephen Graham",
+    "club": "Chicago Bulls",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   },
+   {
+    "player": "Stephen Graham",
+    "club": "Cleveland Cavaliers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   },
+   {
+    "player": "Stephen Graham",
+    "club": "Houston Rockets",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "grangda01": [
+   {
+    "player": "Danny Granger",
+    "club": "Indiana Pacers",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "grantbr01": [
+   {
+    "player": "Brian Grant",
+    "club": "Phoenix Suns",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "greende01": [
+   {
+    "player": "Devin Green",
+    "club": "Los Angeles Lakers",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "greenge01": [
+   {
+    "player": "Gerald Green",
+    "club": "Boston Celtics",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "greenor01": [
+   {
+    "player": "Orien Greene",
+    "club": "Boston Celtics",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "greenwi01": [
+   {
+    "player": "Willie Green",
+    "club": "Philadelphia 76ers",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "griffad01": [
+   {
+    "player": "Adrian Griffin",
+    "club": "Dallas Mavericks",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "griffed01": [
+   {
+    "player": "Eddie Griffin",
+    "club": "Minnesota Timberwolves",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "grundan01": [
+   {
+    "player": "Anthony Grundy",
+    "club": "Atlanta Hawks",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "hamilri01": [
+   {
+    "player": "Richard Hamilton",
+    "club": "Detroit Pistons",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "hamilze01": [
+   {
+    "player": "Zendon Hamilton",
+    "club": "Cleveland Cavaliers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   },
+   {
+    "player": "Zendon Hamilton",
+    "club": "Philadelphia 76ers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "hardaan01": [
+   {
+    "player": "Anfernee Hardaway",
+    "club": "New York Knicks",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "harprma01": [
+   {
+    "player": "Matt Harpring",
+    "club": "Utah Jazz",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "harrial01": [
+   {
+    "player": "Al Harrington",
+    "club": "Atlanta Hawks",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "harrida01": [
+   {
+    "player": "David Harrison",
+    "club": "Indiana Pacers",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "harride01": [
+   {
+    "player": "Devin Harris",
+    "club": "Dallas Mavericks",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "harriot01": [
+   {
+    "player": "Othella Harrington",
+    "club": "Chicago Bulls",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "hartja01": [
+   {
+    "player": "Jason Hart",
+    "club": "Sacramento Kings",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "hasleud01": [
+   {
+    "player": "Udonis Haslem",
+    "club": "Miami Heat",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "hassetr01": [
+   {
+    "player": "Trenton Hassell",
+    "club": "Minnesota Timberwolves",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "hayesch01": [
+   {
+    "player": "Chuck Hayes",
+    "club": "Houston Rockets",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "hayesja01": [
+   {
+    "player": "Jarvis Hayes",
+    "club": "Washington Wizards",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "haywobr01": [
+   {
+    "player": "Brendan Haywood",
+    "club": "Washington Wizards",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "headlu01": [
+   {
+    "player": "Luther Head",
+    "club": "Houston Rockets",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "hendeal01": [
+   {
+    "player": "Alan Henderson",
+    "club": "Cleveland Cavaliers",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "hilarne01": [
+   {
+    "player": "Nenê",
+    "club": "Denver Nuggets",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "hillgr01": [
+   {
+    "player": "Grant Hill",
+    "club": "Orlando Magic",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "hinriki01": [
+   {
+    "player": "Kirk Hinrich",
+    "club": "Chicago Bulls",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "hodgeju01": [
+   {
+    "player": "Julius Hodge",
+    "club": "Denver Nuggets",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "holcora01": [
+   {
+    "player": "Randy Holcomb",
+    "club": "Chicago Bulls",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "horryro01": [
+   {
+    "player": "Robert Horry",
+    "club": "San Antonio Spurs",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "houseed01": [
+   {
+    "player": "Eddie House",
+    "club": "Phoenix Suns",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "howardw01": [
+   {
+    "player": "Dwight Howard",
+    "club": "Orlando Magic",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "howarjo01": [
+   {
+    "player": "Josh Howard",
+    "club": "Dallas Mavericks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "howarju01": [
+   {
+    "player": "Juwan Howard",
+    "club": "Houston Rockets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "hudsotr01": [
+   {
+    "player": "Troy Hudson",
+    "club": "Minnesota Timberwolves",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "hughela01": [
+   {
+    "player": "Larry Hughes",
+    "club": "Cleveland Cavaliers",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "humphkr01": [
+   {
+    "player": "Kris Humphries",
+    "club": "Utah Jazz",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "hunteli01": [
+   {
+    "player": "Lindsey Hunter",
+    "club": "Detroit Pistons",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "huntest01": [
+   {
+    "player": "Steven Hunter",
+    "club": "Philadelphia 76ers",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "iguodan01": [
+   {
+    "player": "Andre Iguodala",
+    "club": "Philadelphia 76ers",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "ilgauzy01": [
+   {
+    "player": "Zydrunas Ilgauskas",
+    "club": "Cleveland Cavaliers",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "iversal01": [
+   {
+    "player": "Allen Iverson",
+    "club": "Philadelphia 76ers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "iveyro01": [
+   {
+    "player": "Royal Ivey",
+    "club": "Atlanta Hawks",
+    "number": "36",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "jackja01": [
+   {
+    "player": "Jarrett Jack",
+    "club": "Portland Trail Blazers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "jacksbo01": [
+   {
+    "player": "Bobby Jackson",
+    "club": "Memphis Grizzlies",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "jacksje01": [
+   {
+    "player": "Jermaine Jackson",
+    "club": "Milwaukee Bucks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "jacksji01": [
+   {
+    "player": "Jim Jackson",
+    "club": "Los Angeles Lakers",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   },
+   {
+    "player": "Jim Jackson",
+    "club": "Phoenix Suns",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "jackslu02": [
+   {
+    "player": "Luke Jackson",
+    "club": "Cleveland Cavaliers",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "jacksma02": [
+   {
+    "player": "Marc Jackson",
+    "club": "New Jersey Nets",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   },
+   {
+    "player": "Marc Jackson",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "jacksst02": [
+   {
+    "player": "Stephen Jackson",
+    "club": "Indiana Pacers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "jamesje01": [
+   {
+    "player": "Jerome James",
+    "club": "New York Knicks",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "jamesle01": [
+   {
+    "player": "LeBron James",
+    "club": "Cleveland Cavaliers",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "jamesmi01": [
+   {
+    "player": "Mike James",
+    "club": "Toronto Raptors",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "jamisan01": [
+   {
+    "player": "Antawn Jamison",
+    "club": "Washington Wizards",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "jaricma01": [
+   {
+    "player": "Marko Jarić",
+    "club": "Minnesota Timberwolves",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "jasiksa01": [
+   {
+    "player": "Šarūnas Jasikevičius",
+    "club": "Indiana Pacers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "jeffeal01": [
+   {
+    "player": "Al Jefferson",
+    "club": "Boston Celtics",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "jefferi01": [
+   {
+    "player": "Richard Jefferson",
+    "club": "New Jersey Nets",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "jeffrja01": [
+   {
+    "player": "Jared Jeffries",
+    "club": "Washington Wizards",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "johnsam01": [
+   {
+    "player": "Amir Johnson",
+    "club": "Detroit Pistons",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "johnsan02": [
+   {
+    "player": "Anthony Johnson",
+    "club": "Indiana Pacers",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "johnsde03": [
+   {
+    "player": "DerMarr Johnson",
+    "club": "Denver Nuggets",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "johnser02": [
+   {
+    "player": "Ervin Johnson",
+    "club": "Milwaukee Bucks",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "johnsjo02": [
+   {
+    "player": "Joe Johnson",
+    "club": "Atlanta Hawks",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "johnsli01": [
+   {
+    "player": "Linton Johnson",
+    "club": "New Jersey Nets",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   },
+   {
+    "player": "Linton Johnson",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "jonesda01": [
+   {
+    "player": "Damon Jones",
+    "club": "Cleveland Cavaliers",
+    "number": "19",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "jonesda02": [
+   {
+    "player": "Dahntay Jones",
+    "club": "Memphis Grizzlies",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "jonesdw02": [
+   {
+    "player": "Dwayne Jones",
+    "club": "Boston Celtics",
+    "number": "27",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "jonesed02": [
+   {
+    "player": "Eddie Jones",
+    "club": "Memphis Grizzlies",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "jonesfr01": [
+   {
+    "player": "Fred Jones",
+    "club": "Indiana Pacers",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "jonesja02": [
+   {
+    "player": "James Jones",
+    "club": "Phoenix Suns",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "jonesju01": [
+   {
+    "player": "Jumaine Jones",
+    "club": "Charlotte Bobcats",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "kamanch01": [
+   {
+    "player": "Chris Kaman",
+    "club": "Los Angeles Clippers",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "kaponja01": [
+   {
+    "player": "Jason Kapono",
+    "club": "Miami Heat",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "kasunma01": [
+   {
+    "player": "Mario Kasun",
+    "club": "Orlando Magic",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "khryavi01": [
+   {
+    "player": "Viktor Khryapa",
+    "club": "Portland Trail Blazers",
+    "number": "38",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "kiddja01": [
+   {
+    "player": "Jason Kidd",
+    "club": "New Jersey Nets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "kirilan01": [
+   {
+    "player": "Andrei Kirilenko",
+    "club": "Utah Jazz",
+    "number": "47",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "kleizli01": [
+   {
+    "player": "Linas Kleiza",
+    "club": "Denver Nuggets",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "knighbr01": [
+   {
+    "player": "Brevin Knight",
+    "club": "Charlotte Bobcats",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "korolya01": [
+   {
+    "player": "Yaroslav Korolev",
+    "club": "Los Angeles Clippers",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "korveky01": [
+   {
+    "player": "Kyle Korver",
+    "club": "Philadelphia 76ers",
+    "number": "26",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "krstine01": [
+   {
+    "player": "Nenad Krstić",
+    "club": "New Jersey Nets",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "kukocto01": [
+   {
+    "player": "Toni Kukoč",
+    "club": "Milwaukee Bucks",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "lafrera01": [
+   {
+    "player": "Raef LaFrentz",
+    "club": "Boston Celtics",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "lampema01": [
+   {
+    "player": "Maciej Lampe",
+    "club": "Houston Rockets",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   },
+   {
+    "player": "Maciej Lampe",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "leeda02": [
+   {
+    "player": "David Lee",
+    "club": "New York Knicks",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "lenarvo01": [
+   {
+    "player": "Voshon Lenard",
+    "club": "Denver Nuggets",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   },
+   {
+    "player": "Voshon Lenard",
+    "club": "Portland Trail Blazers",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "lewisra02": [
+   {
+    "player": "Rashard Lewis",
+    "club": "Seattle SuperSonics",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "livinra01": [
+   {
+    "player": "Randy Livingston",
+    "club": "Chicago Bulls",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "livinsh01": [
+   {
+    "player": "Shaun Livingston",
+    "club": "Los Angeles Clippers",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "lucasjo02": [
+   {
+    "player": "John Lucas III",
+    "club": "Houston Rockets",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "luety01": [
+   {
+    "player": "Tyronn Lue",
+    "club": "Atlanta Hawks",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "macijar01": [
+   {
+    "player": "Arvydas Macijauskas",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "madsema01": [
+   {
+    "player": "Mark Madsen",
+    "club": "Minnesota Timberwolves",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "maggeco01": [
+   {
+    "player": "Corey Maggette",
+    "club": "Los Angeles Clippers",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "magloja01": [
+   {
+    "player": "Jamaal Magloire",
+    "club": "Milwaukee Bucks",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "marbust01": [
+   {
+    "player": "Stephon Marbury",
+    "club": "New York Knicks",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "mariosh01": [
+   {
+    "player": "Shawn Marion",
+    "club": "Phoenix Suns",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "marksse01": [
+   {
+    "player": "Sean Marks",
+    "club": "San Antonio Spurs",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "marshdo01": [
+   {
+    "player": "Donyell Marshall",
+    "club": "Cleveland Cavaliers",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "marshra01": [
+   {
+    "player": "Rawle Marshall",
+    "club": "Dallas Mavericks",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "martida01": [
+   {
+    "player": "Darrick Martin",
+    "club": "Toronto Raptors",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "martike01": [
+   {
+    "player": "Kenyon Martin",
+    "club": "Denver Nuggets",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "martike02": [
+   {
+    "player": "Kevin Martin",
+    "club": "Sacramento Kings",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "masonde01": [
+   {
+    "player": "Desmond Mason",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "maxieja01": [
+   {
+    "player": "Jason Maxiell",
+    "club": "Detroit Pistons",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "mayse01": [
+   {
+    "player": "Sean May",
+    "club": "Charlotte Bobcats",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "mbengdj01": [
+   {
+    "player": "D.J. Mbenga",
+    "club": "Dallas Mavericks",
+    "number": "28",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "mccanra01": [
+   {
+    "player": "Rashad McCants",
+    "club": "Minnesota Timberwolves",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "mccarwa01": [
+   {
+    "player": "Walter McCarty",
+    "club": "Los Angeles Clippers",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "mcdyean01": [
+   {
+    "player": "Antonio McDyess",
+    "club": "Detroit Pistons",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "mcgratr01": [
+   {
+    "player": "Tracy McGrady",
+    "club": "Houston Rockets",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "mcinnje01": [
+   {
+    "player": "Jeff McInnis",
+    "club": "New Jersey Nets",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "mckieaa01": [
+   {
+    "player": "Aaron McKie",
+    "club": "Los Angeles Lakers",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "mcleoke01": [
+   {
+    "player": "Keith McLeod",
+    "club": "Utah Jazz",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "medvest01": [
+   {
+    "player": "Stanislav Medvedenko",
+    "club": "Los Angeles Lakers",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "mihmch01": [
+   {
+    "player": "Chris Mihm",
+    "club": "Los Angeles Lakers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "milesaa01": [
+   {
+    "player": "Aaron Miles",
+    "club": "Golden State Warriors",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "milescj01": [
+   {
+    "player": "C.J. Miles",
+    "club": "Utah Jazz",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "milesda01": [
+   {
+    "player": "Darius Miles",
+    "club": "Portland Trail Blazers",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "milicda01": [
+   {
+    "player": "Darko Miličić",
+    "club": "Detroit Pistons",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   },
+   {
+    "player": "Darko Miličić",
+    "club": "Orlando Magic",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "millean02": [
+   {
+    "player": "Andre Miller",
+    "club": "Denver Nuggets",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "millebr01": [
+   {
+    "player": "Brad Miller",
+    "club": "Sacramento Kings",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "millemi01": [
+   {
+    "player": "Mike Miller",
+    "club": "Memphis Grizzlies",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "mingya01": [
+   {
+    "player": "Yao Ming",
+    "club": "Houston Rockets",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "moblecu01": [
+   {
+    "player": "Cuttino Mobley",
+    "club": "Los Angeles Clippers",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "mohamna01": [
+   {
+    "player": "Nazr Mohammed",
+    "club": "San Antonio Spurs",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "moniase01": [
+   {
+    "player": "Sergei Monia",
+    "club": "Portland Trail Blazers",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   },
+   {
+    "player": "Sergei Monia",
+    "club": "Sacramento Kings",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "mooremi01": [
+   {
+    "player": "Mikki Moore",
+    "club": "Seattle SuperSonics",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "morrite01": [
+   {
+    "player": "Terence Morris",
+    "club": "Orlando Magic",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "mournal01": [
+   {
+    "player": "Alonzo Mourning",
+    "club": "Miami Heat",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "murphtr01": [
+   {
+    "player": "Troy Murphy",
+    "club": "Golden State Warriors",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "murrala01": [
+   {
+    "player": "Lamond Murray",
+    "club": "New Jersey Nets",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "murraro01": [
+   {
+    "player": "Ronald Murray",
+    "club": "Cleveland Cavaliers",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   },
+   {
+    "player": "Ronald Murray",
+    "club": "Seattle SuperSonics",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "mutomdi01": [
+   {
+    "player": "Dikembe Mutombo",
+    "club": "Houston Rockets",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "nachbbo01": [
+   {
+    "player": "Boštjan Nachbar",
+    "club": "New Jersey Nets",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   },
+   {
+    "player": "Boštjan Nachbar",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "nailole01": [
+   {
+    "player": "Lee Nailon",
+    "club": "Philadelphia 76ers",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "najered01": [
+   {
+    "player": "Eduardo Nájera",
+    "club": "Denver Nuggets",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "nashst01": [
+   {
+    "player": "Steve Nash",
+    "club": "Phoenix Suns",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "ndongbo01": [
+   {
+    "player": "Boniface N'Dong",
+    "club": "Los Angeles Clippers",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "nelsoja01": [
+   {
+    "player": "Jameer Nelson",
+    "club": "Orlando Magic",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "nestera01": [
+   {
+    "player": "Rasho Nesterović",
+    "club": "San Antonio Spurs",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "newblir01": [
+   {
+    "player": "Ira Newble",
+    "club": "Cleveland Cavaliers",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "nocioan01": [
+   {
+    "player": "Andrés Nocioni",
+    "club": "Chicago Bulls",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "norrimo01": [
+   {
+    "player": "Moochie Norris",
+    "club": "Houston Rockets",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   },
+   {
+    "player": "Moochie Norris",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "nowitdi01": [
+   {
+    "player": "Dirk Nowitzki",
+    "club": "Dallas Mavericks",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "obertfa01": [
+   {
+    "player": "Fabricio Oberto",
+    "club": "San Antonio Spurs",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "odomla01": [
+   {
+    "player": "Lamar Odom",
+    "club": "Los Angeles Lakers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "okafoem01": [
+   {
+    "player": "Emeka Okafor",
+    "club": "Charlotte Bobcats",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "okurme01": [
+   {
+    "player": "Mehmet Okur",
+    "club": "Utah Jazz",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "ollieke01": [
+   {
+    "player": "Kevin Ollie",
+    "club": "Philadelphia 76ers",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "olowomi01": [
+   {
+    "player": "Michael Olowokandi",
+    "club": "Boston Celtics",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   },
+   {
+    "player": "Michael Olowokandi",
+    "club": "Minnesota Timberwolves",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "onealje01": [
+   {
+    "player": "Jermaine O'Neal",
+    "club": "Indiana Pacers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "onealsh01": [
+   {
+    "player": "Shaquille O'Neal",
+    "club": "Miami Heat",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "ostergr01": [
+   {
+    "player": "Greg Ostertag",
+    "club": "Utah Jazz",
+    "number": "00",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "outlabo01": [
+   {
+    "player": "Bo Outlaw",
+    "club": "Orlando Magic",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "outlatr01": [
+   {
+    "player": "Travis Outlaw",
+    "club": "Portland Trail Blazers",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "owensan01": [
+   {
+    "player": "Andre Owens",
+    "club": "Utah Jazz",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "pachuza01": [
+   {
+    "player": "Zaza Pachulia",
+    "club": "Atlanta Hawks",
+    "number": "27",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "padgesc01": [
+   {
+    "player": "Scott Padgett",
+    "club": "New Jersey Nets",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "palacmi01": [
+   {
+    "player": "Milt Palacio",
+    "club": "Utah Jazz",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "pargoja01": [
+   {
+    "player": "Jannero Pargo",
+    "club": "Chicago Bulls",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "parkesm01": [
+   {
+    "player": "Smush Parker",
+    "club": "Los Angeles Lakers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "parketo01": [
+   {
+    "player": "Tony Parker",
+    "club": "San Antonio Spurs",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "patteru01": [
+   {
+    "player": "Ruben Patterson",
+    "club": "Denver Nuggets",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   },
+   {
+    "player": "Ruben Patterson",
+    "club": "Portland Trail Blazers",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "paulch01": [
+   {
+    "player": "Chris Paul",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "pavloal01": [
+   {
+    "player": "Sasha Pavlović",
+    "club": "Cleveland Cavaliers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "paytoga01": [
+   {
+    "player": "Gary Payton",
+    "club": "Miami Heat",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "perkike01": [
+   {
+    "player": "Kendrick Perkins",
+    "club": "Boston Celtics",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "petermo01": [
+   {
+    "player": "Morris Peterson",
+    "club": "Toronto Raptors",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "petrojo01": [
+   {
+    "player": "Johan Petro",
+    "club": "Seattle SuperSonics",
+    "number": "27",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "piatker01": [
+   {
+    "player": "Eric Piatkowski",
+    "club": "Chicago Bulls",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "piercpa01": [
+   {
+    "player": "Paul Pierce",
+    "club": "Boston Celtics",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "pietrmi01": [
+   {
+    "player": "Mickaël Piétrus",
+    "club": "Golden State Warriors",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "planizo01": [
+   {
+    "player": "Zoran Planinić",
+    "club": "New Jersey Nets",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "podkopa01": [
+   {
+    "player": "Pavel Podkolzin",
+    "club": "Dallas Mavericks",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "pollasc01": [
+   {
+    "player": "Scot Pollard",
+    "club": "Indiana Pacers",
+    "number": "62",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "poseyja01": [
+   {
+    "player": "James Posey",
+    "club": "Miami Heat",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "potapvi01": [
+   {
+    "player": "Vitaly Potapenko",
+    "club": "Sacramento Kings",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   },
+   {
+    "player": "Vitaly Potapenko",
+    "club": "Seattle SuperSonics",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "poweljo01": [
+   {
+    "player": "Josh Powell",
+    "club": "Dallas Mavericks",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "pricero01": [
+   {
+    "player": "Ronnie Price",
+    "club": "Sacramento Kings",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "princta01": [
+   {
+    "player": "Tayshaun Prince",
+    "club": "Detroit Pistons",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "profila01": [
+   {
+    "player": "Laron Profit",
+    "club": "Los Angeles Lakers",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "przybjo01": [
+   {
+    "player": "Joel Przybilla",
+    "club": "Portland Trail Blazers",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "radmavl01": [
+   {
+    "player": "Vladimir Radmanović",
+    "club": "Los Angeles Clippers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   },
+   {
+    "player": "Vladimir Radmanović",
+    "club": "Seattle SuperSonics",
+    "number": "77",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "randosh01": [
+   {
+    "player": "Shavlik Randolph",
+    "club": "Philadelphia 76ers",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "randoza01": [
+   {
+    "player": "Zach Randolph",
+    "club": "Portland Trail Blazers",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "ratlith01": [
+   {
+    "player": "Theo Ratliff",
+    "club": "Portland Trail Blazers",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "rebraze01": [
+   {
+    "player": "Željko Rebrača",
+    "club": "Los Angeles Clippers",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "reddmi01": [
+   {
+    "player": "Michael Redd",
+    "club": "Milwaukee Bucks",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "reedju01": [
+   {
+    "player": "Justin Reed",
+    "club": "Boston Celtics",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   },
+   {
+    "player": "Justin Reed",
+    "club": "Minnesota Timberwolves",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "richaja01": [
+   {
+    "player": "Jason Richardson",
+    "club": "Golden State Warriors",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "richaqu01": [
+   {
+    "player": "Quentin Richardson",
+    "club": "New York Knicks",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "ridnolu01": [
+   {
+    "player": "Luke Ridnour",
+    "club": "Seattle SuperSonics",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "roberan02": [
+   {
+    "player": "Anthony Roberson",
+    "club": "Memphis Grizzlies",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "roberla01": [
+   {
+    "player": "Lawrence Roberts",
+    "club": "Memphis Grizzlies",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "robinbe01": [
+   {
+    "player": "Bernard Robinson",
+    "club": "Charlotte Bobcats",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "robincl02": [
+   {
+    "player": "Clifford Robinson",
+    "club": "New Jersey Nets",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "robinna01": [
+   {
+    "player": "Nate Robinson",
+    "club": "New York Knicks",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "roseja01": [
+   {
+    "player": "Jalen Rose",
+    "club": "New York Knicks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   },
+   {
+    "player": "Jalen Rose",
+    "club": "Toronto Raptors",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "rosema01": [
+   {
+    "player": "Malik Rose",
+    "club": "New York Knicks",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "rossqu01": [
+   {
+    "player": "Quinton Ross",
+    "club": "Los Angeles Clippers",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "ruffimi01": [
+   {
+    "player": "Michael Ruffin",
+    "club": "Washington Wizards",
+    "number": "51",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "rushka01": [
+   {
+    "player": "Kareem Rush",
+    "club": "Charlotte Bobcats",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "russebr01": [
+   {
+    "player": "Bryon Russell",
+    "club": "Denver Nuggets",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   }
+  ],
+  "salmojo01": [
+   {
+    "player": "John Salmons",
+    "club": "Philadelphia 76ers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "sampsja01": [
+   {
+    "player": "Jamal Sampson",
+    "club": "Sacramento Kings",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "sandeme01": [
+   {
+    "player": "Melvin Sanders",
+    "club": "San Antonio Spurs",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "scalabr01": [
+   {
+    "player": "Brian Scalabrine",
+    "club": "Boston Celtics",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "scaleal01": [
+   {
+    "player": "Alex Scales",
+    "club": "San Antonio Spurs",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "schenlu01": [
+   {
+    "player": "Luke Schenscher",
+    "club": "Chicago Bulls",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "seungha01": [
+   {
+    "player": "Ha Seung-Jin",
+    "club": "Portland Trail Blazers",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "simiewa01": [
+   {
+    "player": "Wayne Simien",
+    "club": "Miami Heat",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "simmobo01": [
+   {
+    "player": "Bobby Simmons",
+    "club": "Milwaukee Bucks",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "singlja01": [
+   {
+    "player": "James Singleton",
+    "club": "Los Angeles Clippers",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   }
+  ],
+  "skinnbr01": [
+   {
+    "player": "Brian Skinner",
+    "club": "Portland Trail Blazers",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   },
+   {
+    "player": "Brian Skinner",
+    "club": "Sacramento Kings",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "smithch04": [
+   {
+    "player": "Charles Smith",
+    "club": "Denver Nuggets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   },
+   {
+    "player": "Charles Smith",
+    "club": "Portland Trail Blazers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "smithdo04": [
+   {
+    "player": "Donta Smith",
+    "club": "Atlanta Hawks",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "smithjo02": [
+   {
+    "player": "Joe Smith",
+    "club": "Milwaukee Bucks",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "smithjo03": [
+   {
+    "player": "Josh Smith",
+    "club": "Atlanta Hawks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "smithjr01": [
+   {
+    "player": "J.R. Smith",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "snower01": [
+   {
+    "player": "Eric Snow",
+    "club": "Cleveland Cavaliers",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "snydeki01": [
+   {
+    "player": "Kirk Snyder",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "songada01": [
+   {
+    "player": "Darius Songaila",
+    "club": "Chicago Bulls",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "sowpa01": [
+   {
+    "player": "Pape Sow",
+    "club": "Toronto Raptors",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "stackje01": [
+   {
+    "player": "Jerry Stackhouse",
+    "club": "Dallas Mavericks",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "stevede01": [
+   {
+    "player": "DeShawn Stevenson",
+    "club": "Orlando Magic",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "stojape01": [
+   {
+    "player": "Peja Stojaković",
+    "club": "Indiana Pacers",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   },
+   {
+    "player": "Peja Stojaković",
+    "club": "Sacramento Kings",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "storeaw01": [
+   {
+    "player": "Awvee Storey",
+    "club": "Washington Wizards",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "stoudam01": [
+   {
+    "player": "Amar'e Stoudemire",
+    "club": "Phoenix Suns",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "stoudda01": [
+   {
+    "player": "Damon Stoudamire",
+    "club": "Memphis Grizzlies",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "stoudsa01": [
+   {
+    "player": "Salim Stoudamire",
+    "club": "Atlanta Hawks",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "sweetmi01": [
+   {
+    "player": "Mike Sweetney",
+    "club": "Chicago Bulls",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   }
+  ],
+  "swiftro01": [
+   {
+    "player": "Robert Swift",
+    "club": "Seattle SuperSonics",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "swiftst01": [
+   {
+    "player": "Stromile Swift",
+    "club": "Houston Rockets",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "szczewa02": [
+   {
+    "player": "Wally Szczerbiak",
+    "club": "Boston Celtics",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   },
+   {
+    "player": "Wally Szczerbiak",
+    "club": "Minnesota Timberwolves",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "taftch01": [
+   {
+    "player": "Chris Taft",
+    "club": "Golden State Warriors",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/GSW/2006.html"
+   }
+  ],
+  "taylodo01": [
+   {
+    "player": "Donell Taylor",
+    "club": "Washington Wizards",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "tayloma01": [
+   {
+    "player": "Maurice Taylor",
+    "club": "New York Knicks",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "telfase01": [
+   {
+    "player": "Sebastian Telfair",
+    "club": "Portland Trail Blazers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "terryja01": [
+   {
+    "player": "Jason Terry",
+    "club": "Dallas Mavericks",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "thomabi01": [
+   {
+    "player": "Billy Thomas",
+    "club": "Washington Wizards",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "thomaet01": [
+   {
+    "player": "Etan Thomas",
+    "club": "Washington Wizards",
+    "number": "36",
+    "source": "https://www.basketball-reference.com/teams/WAS/2006.html"
+   }
+  ],
+  "thomaja02": [
+   {
+    "player": "James Thomas",
+    "club": "Chicago Bulls",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   },
+   {
+    "player": "James Thomas",
+    "club": "Philadelphia 76ers",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "thomajo02": [
+   {
+    "player": "John Thomas",
+    "club": "Atlanta Hawks",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   },
+   {
+    "player": "John Thomas",
+    "club": "Memphis Grizzlies",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   },
+   {
+    "player": "John Thomas",
+    "club": "New Jersey Nets",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "thomake01": [
+   {
+    "player": "Kenny Thomas",
+    "club": "Sacramento Kings",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "thomaku01": [
+   {
+    "player": "Kurt Thomas",
+    "club": "Phoenix Suns",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "thomati01": [
+   {
+    "player": "Tim Thomas",
+    "club": "Chicago Bulls",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/CHI/2006.html"
+   },
+   {
+    "player": "Tim Thomas",
+    "club": "Phoenix Suns",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "thompdi01": [
+   {
+    "player": "Dijon Thompson",
+    "club": "Phoenix Suns",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "tinslja01": [
+   {
+    "player": "Jamaal Tinsley",
+    "club": "Indiana Pacers",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "tsakaja01": [
+   {
+    "player": "Jake Tsakalidis",
+    "club": "Memphis Grizzlies",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "tskitni01": [
+   {
+    "player": "Nikoloz Tskitishvili",
+    "club": "Minnesota Timberwolves",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   },
+   {
+    "player": "Nikoloz Tskitishvili",
+    "club": "Phoenix Suns",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/PHO/2006.html"
+   }
+  ],
+  "turiaro01": [
+   {
+    "player": "Ronny Turiaf",
+    "club": "Los Angeles Lakers",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "turkohe01": [
+   {
+    "player": "Hedo Türkoğlu",
+    "club": "Orlando Magic",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/ORL/2006.html"
+   }
+  ],
+  "udokaim01": [
+   {
+    "player": "Ime Udoka",
+    "club": "New York Knicks",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "udrihbe01": [
+   {
+    "player": "Beno Udrih",
+    "club": "San Antonio Spurs",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "vanexni01": [
+   {
+    "player": "Nick Van Exel",
+    "club": "San Antonio Spurs",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/SAS/2006.html"
+   }
+  ],
+  "vanhoke01": [
+   {
+    "player": "Keith Van Horn",
+    "club": "Dallas Mavericks",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/DAL/2006.html"
+   }
+  ],
+  "varejan01": [
+   {
+    "player": "Anderson Varejão",
+    "club": "Cleveland Cavaliers",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   }
+  ],
+  "vaughja01": [
+   {
+    "player": "Jacque Vaughn",
+    "club": "New Jersey Nets",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "villach01": [
+   {
+    "player": "Charlie Villanueva",
+    "club": "Toronto Raptors",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "voskuja01": [
+   {
+    "player": "Jake Voskuhl",
+    "club": "Charlotte Bobcats",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "vromaja01": [
+   {
+    "player": "Jackson Vroman",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "vujacsa01": [
+   {
+    "player": "Sasha Vujačić",
+    "club": "Los Angeles Lakers",
+    "number": "18",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "wafervo01": [
+   {
+    "player": "Von Wafer",
+    "club": "Los Angeles Lakers",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "walkean02": [
+   {
+    "player": "Antoine Walker",
+    "club": "Miami Heat",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "walkesa01": [
+   {
+    "player": "Samaki Walker",
+    "club": "Indiana Pacers",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/IND/2006.html"
+   }
+  ],
+  "wallabe01": [
+   {
+    "player": "Ben Wallace",
+    "club": "Detroit Pistons",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "wallage01": [
+   {
+    "player": "Gerald Wallace",
+    "club": "Charlotte Bobcats",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/CHA/2006.html"
+   }
+  ],
+  "wallara01": [
+   {
+    "player": "Rasheed Wallace",
+    "club": "Detroit Pistons",
+    "number": "36",
+    "source": "https://www.basketball-reference.com/teams/DET/2006.html"
+   }
+  ],
+  "walshma01": [
+   {
+    "player": "Matt Walsh",
+    "club": "Miami Heat",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "waltolu01": [
+   {
+    "player": "Luke Walton",
+    "club": "Los Angeles Lakers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/LAL/2006.html"
+   }
+  ],
+  "warriha01": [
+   {
+    "player": "Hakim Warrick",
+    "club": "Memphis Grizzlies",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "watsoea01": [
+   {
+    "player": "Earl Watson",
+    "club": "Denver Nuggets",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/DEN/2006.html"
+   },
+   {
+    "player": "Earl Watson",
+    "club": "Seattle SuperSonics",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "webbech01": [
+   {
+    "player": "Chris Webber",
+    "club": "Philadelphia 76ers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "webstma02": [
+   {
+    "player": "Martell Webster",
+    "club": "Portland Trail Blazers",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/POR/2006.html"
+   }
+  ],
+  "wellsbo01": [
+   {
+    "player": "Bonzi Wells",
+    "club": "Sacramento Kings",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "welscji01": [
+   {
+    "player": "Jiří Welsch",
+    "club": "Milwaukee Bucks",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "wesleda01": [
+   {
+    "player": "David Wesley",
+    "club": "Houston Rockets",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/HOU/2006.html"
+   }
+  ],
+  "westda01": [
+   {
+    "player": "David West",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   }
+  ],
+  "westde01": [
+   {
+    "player": "Delonte West",
+    "club": "Boston Celtics",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/BOS/2006.html"
+   }
+  ],
+  "whalero01": [
+   {
+    "player": "Robert Whaley",
+    "club": "Utah Jazz",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "wilcoch01": [
+   {
+    "player": "Chris Wilcox",
+    "club": "Los Angeles Clippers",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/LAC/2006.html"
+   },
+   {
+    "player": "Chris Wilcox",
+    "club": "Seattle SuperSonics",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "wilkida02": [
+   {
+    "player": "Damien Wilkins",
+    "club": "Seattle SuperSonics",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "wilksmi01": [
+   {
+    "player": "Mike Wilks",
+    "club": "Cleveland Cavaliers",
+    "number": "29",
+    "source": "https://www.basketball-reference.com/teams/CLE/2006.html"
+   },
+   {
+    "player": "Mike Wilks",
+    "club": "Seattle SuperSonics",
+    "number": "29",
+    "source": "https://www.basketball-reference.com/teams/SEA/2006.html"
+   }
+  ],
+  "williaa01": [
+   {
+    "player": "Aaron Williams",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/NOK/2006.html"
+   },
+   {
+    "player": "Aaron Williams",
+    "club": "Toronto Raptors",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "willial02": [
+   {
+    "player": "Alvin Williams",
+    "club": "Toronto Raptors",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "willico02": [
+   {
+    "player": "Corliss Williamson",
+    "club": "Sacramento Kings",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/SAC/2006.html"
+   }
+  ],
+  "willide01": [
+   {
+    "player": "Deron Williams",
+    "club": "Utah Jazz",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/UTA/2006.html"
+   }
+  ],
+  "willier01": [
+   {
+    "player": "Eric Williams",
+    "club": "Toronto Raptors",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "willija02": [
+   {
+    "player": "Jason Williams",
+    "club": "Miami Heat",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "willilo02": [
+   {
+    "player": "Lou Williams",
+    "club": "Philadelphia 76ers",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/PHI/2006.html"
+   }
+  ],
+  "willima01": [
+   {
+    "player": "Mo Williams",
+    "club": "Milwaukee Bucks",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/MIL/2006.html"
+   }
+  ],
+  "willima02": [
+   {
+    "player": "Marvin Williams",
+    "club": "Atlanta Hawks",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/ATL/2006.html"
+   }
+  ],
+  "woodslo01": [
+   {
+    "player": "Loren Woods",
+    "club": "Toronto Raptors",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/TOR/2006.html"
+   }
+  ],
+  "woodsqy01": [
+   {
+    "player": "Qyntel Woods",
+    "club": "New York Knicks",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/NYK/2006.html"
+   }
+  ],
+  "wrighan01": [
+   {
+    "player": "Antoine Wright",
+    "club": "New Jersey Nets",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ],
+  "wrighbr02": [
+   {
+    "player": "Bracey Wright",
+    "club": "Minnesota Timberwolves",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/MIN/2006.html"
+   }
+  ],
+  "wrighdo01": [
+   {
+    "player": "Dorell Wright",
+    "club": "Miami Heat",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/MIA/2006.html"
+   }
+  ],
+  "wrighlo02": [
+   {
+    "player": "Lorenzen Wright",
+    "club": "Memphis Grizzlies",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/MEM/2006.html"
+   }
+  ],
+  "zimmede01": [
+   {
+    "player": "Derrick Zimmerman",
+    "club": "New Jersey Nets",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/NJN/2006.html"
+   }
+  ]
+ },
+ "unresolved": [
+  {
+   "bbr_id": "wadedw01",
+   "player": "Dwyane Wade",
+   "club": "Miami Heat",
+   "source": "https://www.basketball-reference.com/teams/MIA/2006.html",
+   "note": "The real Dwyane Wade is not recorded here: the simulated Wade's uniform number is set by a simulated decision (runtime/jerseys.py)."
+  }
+ ]
+}
