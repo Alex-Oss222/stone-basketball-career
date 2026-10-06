@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `duncati01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-11-21 · **Club on this date:** San Antonio Spurs · **Basis:** San Antonio Spurs: the 2004-05 opening rosters and the league's dated moves (runtime/league_moves.py) · **League:** NBA  
+**Card date:** 2004-11-22 · **Club on this date:** San Antonio Spurs · **Basis:** San Antonio Spurs: the 2004-05 opening rosters and the league's dated moves (runtime/league_moves.py) · **League:** NBA  
 **Position:** PF (Power forward) · **Jersey:** #21 · **Born:** 1976-04-25 · **Age on card date:** 28  
 **Registry ID:** `duncati01` · [Basketball-Reference page](https://www.basketball-reference.com/players/d/duncati01.html) · ESPN ID 215
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `duncat
 
 ## Simulated statistics
 
-As of **2004-11-21**: 10 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-11-22**: 10 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 10 closed regular-season games through 2004-11-21. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 10 closed regular-season games through 2004-11-22. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -123,7 +123,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2004-11-21, from closed award decisions (5 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2004-11-22, from closed award decisions (6 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -138,3 +138,4 @@ Simulated honors and shortlist placings through 2004-11-21, from closed award de
 | All-NBA Second Team | 2003-10-28 to 2004-04-14 | 2004-04-25 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
 | All-Defensive First Team | 2003-10-28 to 2004-04-14 | 2004-04-26 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
 | West Player of the Week | 2004-11-02 to 2004-11-07 | 2004-11-08 | Shortlist, No. 3 | [Decision](../2004-05/11_November/Week_1/League_Awards.md) |
+| West Player of the Week | 2004-11-15 to 2004-11-21 | 2004-11-22 | **Winner** | [Decision](../2004-05/11_November/Week_3/League_Awards.md) |

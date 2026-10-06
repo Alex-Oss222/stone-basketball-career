@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `jamesle01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-11-21 · **Club on this date:** Cleveland Cavaliers · **Basis:** Cleveland Cavaliers: the 2004-05 opening rosters and the league's dated moves (runtime/league_moves.py) · **League:** NBA  
+**Card date:** 2004-11-22 · **Club on this date:** Cleveland Cavaliers · **Basis:** Cleveland Cavaliers: the 2004-05 opening rosters and the league's dated moves (runtime/league_moves.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #23 · **Born:** 1984-12-30 · **Age on card date:** 19  
 **Registry ID:** `jamesle01` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jamesle01.html) · ESPN ID 1966
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jamesl
 
 ## Simulated statistics
 
-As of **2004-11-21**: 10 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-11-22**: 10 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2004-05 is simulated: 10 closed regular-season games through 2004-11-21. Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2004-05 is simulated: 10 closed regular-season games through 2004-11-22. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -121,7 +121,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2004-11-21, from closed award decisions (1 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2004-11-22, from closed award decisions (2 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -136,3 +136,4 @@ Simulated honors and shortlist placings through 2004-11-21, from closed award de
 | Rookie of the Year | 2003-10-28 to 2004-04-14 | 2004-04-20 | No. 3 in the vote | [Decision](../2003-04/Season_Awards.md) |
 | All-Rookie First Team | 2003-10-28 to 2004-04-14 | 2004-04-27 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
 | East Player of the Week | 2004-11-02 to 2004-11-07 | 2004-11-08 | Shortlist, No. 3 | [Decision](../2004-05/11_November/Week_1/League_Awards.md) |
+| East Player of the Week | 2004-11-15 to 2004-11-21 | 2004-11-22 | **Winner** | [Decision](../2004-05/11_November/Week_3/League_Awards.md) |

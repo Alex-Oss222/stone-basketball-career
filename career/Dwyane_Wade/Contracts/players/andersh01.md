@@ -2,9 +2,9 @@
 
 # Contract | Shandon Anderson
 
-Known through: 2004-11-21. [Open interactive contract](andersh01.html#contract) · [Contract history](andersh01.html#contract-history)
+Known through: 2004-11-22. [Open interactive contract](andersh01.html#contract) · [Contract history](andersh01.html#contract-history)
 
-Shandon Anderson: under contract. Evidence cutoff: 2004-11-21.
+Shandon Anderson: under contract. Evidence cutoff: 2004-11-22.
 
 ## Current contract
 
@@ -124,7 +124,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Shandon Anderson |
-| Club / rights baseline | Seattle SuperSonics |
+| Club / rights baseline | New Jersey Nets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

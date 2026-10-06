@@ -211,6 +211,110 @@
     }
    ],
    "winner": "Dirk Nowitzki"
+  },
+  {
+   "id": "2004-05-player_of_week-2004-11-15-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-11-15",
+   "period_end": "2004-11-21",
+   "announced_on": "2004-11-22",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/11_November/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 28.8,
+     "reb": 8.2,
+     "ast": 4.2,
+     "game_score": 23.88,
+     "score": 104.5,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 20.5,
+     "reb": 6.0,
+     "ast": 6.2,
+     "game_score": 20.73,
+     "score": 94.9,
+     "rank": 2
+    },
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 23.5,
+     "reb": 4.5,
+     "ast": 6.5,
+     "game_score": 18.82,
+     "score": 84.3,
+     "rank": 3
+    }
+   ],
+   "winner": "LeBron James"
+  },
+  {
+   "id": "2004-05-player_of_week-2004-11-15-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-11-15",
+   "period_end": "2004-11-21",
+   "announced_on": "2004-11-22",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/11_November/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Tim Duncan",
+     "team": "San Antonio Spurs",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 27.0,
+     "reb": 12.5,
+     "ast": 3.2,
+     "game_score": 23.17,
+     "score": 98.7,
+     "rank": 1
+    },
+    {
+     "player": "Stephon Marbury",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 24.5,
+     "reb": 4.5,
+     "ast": 9.8,
+     "game_score": 21.27,
+     "score": 91.1,
+     "rank": 2
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 20.8,
+     "reb": 10.8,
+     "ast": 2.8,
+     "game_score": 19.88,
+     "score": 85.5,
+     "rank": 3
+    }
+   ],
+   "winner": "Tim Duncan"
   }
  ]
 }

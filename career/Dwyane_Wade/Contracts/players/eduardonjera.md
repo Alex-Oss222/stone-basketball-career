@@ -2,9 +2,9 @@
 
 # Contract | Eduardo Nájera
 
-Known through: 2004-11-21. [Open interactive contract](eduardonjera.html#contract) · [Contract history](eduardonjera.html#contract-history)
+Known through: 2004-11-22. [Open interactive contract](eduardonjera.html#contract) · [Contract history](eduardonjera.html#contract-history)
 
-Eduardo Nájera: No verified contract record. Evidence cutoff: 2004-11-21.
+Eduardo Nájera: No verified contract record. Evidence cutoff: 2004-11-22.
 
 ## Current contract
 

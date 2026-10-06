@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2004-11-22-andersh01-horryro01-mournal01",
+ "date": "2004-11-22",
+ "clubs": [
+  "New Jersey Nets",
+  "Seattle SuperSonics"
+ ],
+ "a": {
+  "club": "New Jersey Nets",
+  "sends": [
+   "Alonzo Mourning",
+   "Robert Horry"
+  ],
+  "bbr_ids": [
+   "mournal01",
+   "horryro01"
+  ],
+  "salary": 6644672
+ },
+ "b": {
+  "club": "Seattle SuperSonics",
+  "sends": [
+   "Shandon Anderson"
+  ],
+  "bbr_ids": [
+   "andersh01"
+  ],
+  "salary": 7300000
+ },
+ "gain": {
+  "New Jersey Nets": 0.262,
+  "Seattle SuperSonics": 0.196
+ },
+ "accept": {
+  "New Jersey Nets": 0.95,
+  "Seattle SuperSonics": 0.95
+ },
+ "both": 0.9025
+}

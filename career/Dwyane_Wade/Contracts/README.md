@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-11-21. [Search the contract directory](index.html)
+Known through 2004-11-22. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -41,7 +41,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Antawn Jamison](players/jamisan01.md) | Dallas Mavericks | under contract | Antawn Jamison · 2001-08-28 | 1 |
 | [Anthony Carter](players/cartean01.md) | Free agent | player option exercised | Anthony Carter · existing contract; signing date not recorded | 1 |
 | [Anthony Goldwire](players/goldwan01.md) | Charlotte Bobcats | under contract | Anthony Goldwire · 2004-08-19 | 1 |
-| [Anthony Johnson](players/johnsan02.md) | Utah Jazz | under contract | No verified current agreement | 2 |
+| [Anthony Johnson](players/johnsan02.md) | Indiana Pacers | under contract | No verified current agreement | 2 |
 | [Anthony Mason](players/masonan01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
 | [Anthony Miller](players/anthonymiller.md) | Free agent | under contract | Anthony Miller · 2004-07-29 | 1 |
 | [Anthony Peeler](players/peelean01.md) | Houston Rockets | under contract | Anthony Peeler · 2004-09-02 | 2 |
@@ -62,7 +62,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Billy Thomas](players/billythomas.md) | Free agent | under contract | Billy Thomas · 2004-08-05 | 1 |
 | [Bimbo Coles](players/colesbi01.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
 | [Bo Outlaw](players/outlabo01.md) | Charlotte Bobcats | under contract unverified | No verified current agreement | 0 |
-| [Bob Sura](players/surabo01.md) | Utah Jazz | released | No verified current agreement | 1 |
+| [Bob Sura](players/surabo01.md) | Indiana Pacers | released | No verified current agreement | 1 |
 | [Bobby Jackson](players/jacksbo01.md) | Sacramento Kings | under contract | Bobby Jackson · existing contract; signing date not recorded | 1 |
 | [Bobby Simmons](players/simmobo01.md) | Los Angeles Clippers | under contract | Bobby Simmons · 2003-09-27 | 2 |
 | [Bonzi Wells](players/wellsbo01.md) | Memphis Grizzlies | under contract | Bonzi Wells · 2002-09-30 | 1 |
@@ -203,7 +203,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Francisco Elson](players/elsonfr01.md) | Denver Nuggets | No verified contract record | No verified current agreement | 0 |
 | [Frank Williams](players/willifr02.md) | Charlotte Bobcats | under rookie contract | Frank Williams · 2002-07-08 | 1 |
 | [Fred Hoiberg](players/hoibefr01.md) | Denver Nuggets | under contract | Fred Hoiberg · 2004-09-09 | 3 |
-| [Fred Jones](players/jonesfr01.md) | Indiana Pacers | under rookie contract | Fred Jones · 2002-07-05 | 1 |
+| [Fred Jones](players/jonesfr01.md) | Utah Jazz | under rookie contract | Fred Jones · 2002-07-05 | 1 |
 | [Gary Payton](players/paytoga01.md) | Los Angeles Lakers | under contract | Gary Payton · 2003-07-16 | 2 |
 | [Gary Trent](players/trentga01.md) | Charlotte Bobcats | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
 | [Geno Carlisle](players/carlige01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
@@ -467,7 +467,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Rick Rickert](players/rickeri01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Ricky Davis](players/davisri01.md) | Cleveland Cavaliers | under contract | Ricky Davis · existing contract; signing date not recorded | 1 |
 | [Robert Archibald](players/archiro01.md) | Free agent | team option pending | Robert Archibald · 2002-07-02 | 1 |
-| [Robert Horry](players/horryro01.md) | New Jersey Nets | under contract | Robert Horry · 2004-07-22 | 2 |
+| [Robert Horry](players/horryro01.md) | Seattle SuperSonics | under contract | Robert Horry · 2004-07-22 | 2 |
 | [Robert Pack](players/packro01.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
 | [Robert Swift](players/robertswift.md) | Free agent | under contract | Robert Swift · 2004-07-01 | 1 |
 | [Robert Traylor](players/traylro01.md) | Los Angeles Clippers | under contract | Robert Traylor · 2004-09-16 | 1 |
@@ -501,7 +501,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Sean Rooks](players/rooksse01.md) | Free agent | under contract | No verified current agreement | 2 |
 | [Sebastian Telfair](players/sebastiantelfair.md) | Free agent | under contract | Sebastian Telfair · 2004-07-01 | 1 |
 | [Shammond Williams](players/willish01.md) | Free agent | under contract | Shammond Williams · 2003-09-29 | 2 |
-| [Shandon Anderson](players/andersh01.md) | Seattle SuperSonics | under contract | Shandon Anderson · existing contract; signing date not recorded | 1 |
+| [Shandon Anderson](players/andersh01.md) | New Jersey Nets | under contract | Shandon Anderson · existing contract; signing date not recorded | 1 |
 | [Shane Battier](players/battish01.md) | Memphis Grizzlies | under rookie contract | Shane Battier · 2001-07-03 | 1 |
 | [Shane Heal](players/healsh01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Shaquille O'Neal](players/onealsh01.md) | Los Angeles Lakers | under contract | Shaquille O'Neal · 2000-10-13 | 1 |

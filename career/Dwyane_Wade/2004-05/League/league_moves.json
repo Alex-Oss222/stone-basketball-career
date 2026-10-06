@@ -1377,6 +1377,60 @@
    "contract": null,
    "note": "cleared waivers from Boston Celtics: a free agent",
    "waiver": "2004-05-market-2004-11-16-waive-borchcu01"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-22-andersh01-horryro01-mournal01",
+   "date": "2004-11-22",
+   "kind": "trade",
+   "player": "Alonzo Mourning",
+   "bbr_id": "mournal01",
+   "from": "New Jersey Nets",
+   "to": "Seattle SuperSonics"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-22-andersh01-horryro01-mournal01",
+   "date": "2004-11-22",
+   "kind": "trade",
+   "player": "Robert Horry",
+   "bbr_id": "horryro01",
+   "from": "New Jersey Nets",
+   "to": "Seattle SuperSonics"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-22-andersh01-horryro01-mournal01",
+   "date": "2004-11-22",
+   "kind": "trade",
+   "player": "Shandon Anderson",
+   "bbr_id": "andersh01",
+   "from": "Seattle SuperSonics",
+   "to": "New Jersey Nets"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-22-johnsan02-jonesfr01-surabo01",
+   "date": "2004-11-22",
+   "kind": "trade",
+   "player": "Fred Jones",
+   "bbr_id": "jonesfr01",
+   "from": "Indiana Pacers",
+   "to": "Utah Jazz"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-22-johnsan02-jonesfr01-surabo01",
+   "date": "2004-11-22",
+   "kind": "trade",
+   "player": "Bob Sura",
+   "bbr_id": "surabo01",
+   "from": "Utah Jazz",
+   "to": "Indiana Pacers"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-22-johnsan02-jonesfr01-surabo01",
+   "date": "2004-11-22",
+   "kind": "trade",
+   "player": "Anthony Johnson",
+   "bbr_id": "johnsan02",
+   "from": "Utah Jazz",
+   "to": "Indiana Pacers"
   }
  ],
  "market_days": [
@@ -1399,6 +1453,7 @@
   "2004-11-18",
   "2004-11-19",
   "2004-11-20",
-  "2004-11-21"
+  "2004-11-21",
+  "2004-11-22"
  ]
 }

@@ -2,9 +2,9 @@
 
 # Contract | Bob Sura
 
-Known through: 2004-11-21. [Open interactive contract](surabo01.html#contract) · [Contract history](surabo01.html#contract-history)
+Known through: 2004-11-22. [Open interactive contract](surabo01.html#contract) · [Contract history](surabo01.html#contract-history)
 
-Bob Sura: released. Evidence cutoff: 2004-11-21.
+Bob Sura: released. Evidence cutoff: 2004-11-22.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Bob Sura |
-| Club / rights baseline | Utah Jazz |
+| Club / rights baseline | Indiana Pacers |
 | Control status | released |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

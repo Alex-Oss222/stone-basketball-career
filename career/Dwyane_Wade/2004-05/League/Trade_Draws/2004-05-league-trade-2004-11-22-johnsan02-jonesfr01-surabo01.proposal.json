@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2004-11-22-johnsan02-jonesfr01-surabo01",
+ "date": "2004-11-22",
+ "clubs": [
+  "Indiana Pacers",
+  "Utah Jazz"
+ ],
+ "a": {
+  "club": "Indiana Pacers",
+  "sends": [
+   "Fred Jones"
+  ],
+  "bbr_ids": [
+   "jonesfr01"
+  ],
+  "salary": 1572480
+ },
+ "b": {
+  "club": "Utah Jazz",
+  "sends": [
+   "Bob Sura",
+   "Anthony Johnson"
+  ],
+  "bbr_ids": [
+   "surabo01",
+   "johnsan02"
+  ],
+  "salary": 1814858
+ },
+ "gain": {
+  "Indiana Pacers": 0.113,
+  "Utah Jazz": 0.151
+ },
+ "accept": {
+  "Indiana Pacers": 0.79,
+  "Utah Jazz": 0.907
+ },
+ "both": 0.71653
+}

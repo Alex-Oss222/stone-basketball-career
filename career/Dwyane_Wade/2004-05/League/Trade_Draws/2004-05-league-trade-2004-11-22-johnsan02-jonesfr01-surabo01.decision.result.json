@@ -1,0 +1,12 @@
+{
+ "date": "2004-11-22",
+ "decider": "Indiana Pacers and Utah Jazz front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2004-11-22-johnsan02-jonesfr01-surabo01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.71653,
+  "decline": 0.28347
+ },
+ "outcome": "accept",
+ "question": "Do Indiana Pacers and Utah Jazz trade Fred Jones for Bob Sura and Anthony Johnson?"
+}

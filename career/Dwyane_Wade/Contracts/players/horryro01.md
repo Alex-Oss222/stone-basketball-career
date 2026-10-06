@@ -2,9 +2,9 @@
 
 # Contract | Robert Horry
 
-Known through: 2004-11-21. [Open interactive contract](horryro01.html#contract) · [Contract history](horryro01.html#contract-history)
+Known through: 2004-11-22. [Open interactive contract](horryro01.html#contract) · [Contract history](horryro01.html#contract-history)
 
-Robert Horry: under contract. Evidence cutoff: 2004-11-21.
+Robert Horry: under contract. Evidence cutoff: 2004-11-22.
 
 ## Current contract
 
@@ -114,7 +114,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Robert Horry |
-| Club / rights baseline | New Jersey Nets |
+| Club / rights baseline | Seattle SuperSonics |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

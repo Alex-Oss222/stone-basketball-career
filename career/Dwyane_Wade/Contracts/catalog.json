@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-11-21",
+  "as_of": "2004-11-22",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -293,7 +293,7 @@
     {
       "player_id": "johnsan02",
       "name": "Anthony Johnson",
-      "team": "Utah Jazz",
+      "team": "Indiana Pacers",
       "status": "under contract",
       "current_contract_id": null,
       "recorded_agreements": 2,
@@ -482,7 +482,7 @@
     {
       "player_id": "surabo01",
       "name": "Bob Sura",
-      "team": "Utah Jazz",
+      "team": "Indiana Pacers",
       "status": "released",
       "current_contract_id": null,
       "recorded_agreements": 1,
@@ -1751,7 +1751,7 @@
     {
       "player_id": "jonesfr01",
       "name": "Fred Jones",
-      "team": "Indiana Pacers",
+      "team": "Utah Jazz",
       "status": "under rookie contract",
       "current_contract_id": "jonesfr01-2002-07-05",
       "recorded_agreements": 1,
@@ -4127,7 +4127,7 @@
     {
       "player_id": "horryro01",
       "name": "Robert Horry",
-      "team": "New Jersey Nets",
+      "team": "Seattle SuperSonics",
       "status": "under contract",
       "current_contract_id": "horryro01-2004-07-22",
       "recorded_agreements": 2,
@@ -4433,7 +4433,7 @@
     {
       "player_id": "andersh01",
       "name": "Shandon Anderson",
-      "team": "Seattle SuperSonics",
+      "team": "New Jersey Nets",
       "status": "under contract",
       "current_contract_id": "andersh01-existing-f2497a228c70",
       "recorded_agreements": 1,
