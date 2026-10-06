@@ -2,9 +2,9 @@
 
 # Contract | Ndudi Ebi
 
-Known through: 2005-01-02. [Open interactive contract](ebind01.html#contract) · [Contract history](ebind01.html#contract-history)
+Known through: 2005-01-03. [Open interactive contract](ebind01.html#contract) · [Contract history](ebind01.html#contract-history)
 
-Ndudi Ebi: No verified contract record. Evidence cutoff: 2005-01-02.
+Ndudi Ebi: No verified contract record. Evidence cutoff: 2005-01-03.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ndudi Ebi |
-| Club / rights baseline | Minnesota Timberwolves |
+| Club / rights baseline | Cleveland Cavaliers |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

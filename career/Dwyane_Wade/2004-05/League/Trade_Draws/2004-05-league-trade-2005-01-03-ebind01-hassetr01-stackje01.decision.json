@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-05-league-trade-2005-01-03-ebind01-hassetr01-stackje01",
+ "date": "2005-01-03",
+ "question": "Do Cleveland Cavaliers and Minnesota Timberwolves trade Jerry Stackhouse for Ndudi Ebi and Trenton Hassell?",
+ "decider": "Cleveland Cavaliers and Minnesota Timberwolves front offices (engine draw)",
+ "options": {
+  "accept": 0.855,
+  "decline": 0.145
+ },
+ "basis": "gains on own objectives {'Cleveland Cavaliers': 0.148, 'Minnesota Timberwolves': 0.179}; acceptance {'Cleveland Cavaliers': 0.9, 'Minnesota Timberwolves': 0.95}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

@@ -2,20 +2,20 @@
 
 <!-- team-status:start -->
 
-[roster.json](roster.json) is the machine-readable register (team-control record dated 2004-12-20). Availability below is on 2005-01-02, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
+[roster.json](roster.json) is the machine-readable register (team-control record dated 2004-12-20). Availability below is on 2005-01-03, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
 
-| Player | Pos | Control | Availability on 2005-01-02 | Staff role |
+| Player | Pos | Control | Availability on 2005-01-03 | Staff role |
 | --- | --- | --- | --- | --- |
 | [Eddie Jones](../Player_Cards/eddie_jones.md) | SG/SF | under contract | Available | rotation at SG, staff plan 4 minutes |
 | [Brian Grant](../Player_Cards/brian_grant.md) | C/PF | under contract | Available | starter at C, staff plan 34 minutes |
 | [Mike James](../Player_Cards/mike_james.md) | PG | under contract | Available | starter at PG, staff plan 34 minutes |
 | [Mehmet Okur](../Player_Cards/mehmet_okur.md) | PF | under contract | Available | starter at PF, staff plan 34 minutes |
-| [Dwyane Wade](../Player_Cards/dwyane_wade.md) | SG/PG | under contract | Injured list since 2004-12-23, injured | starter at SG, staff plan 37 minutes |
+| [Dwyane Wade](../Player_Cards/dwyane_wade.md) | SG/PG | under contract | Available | starter at SG, staff plan 37 minutes |
 | [Caron Butler](../Player_Cards/caron_butler.md) | SF | under contract | Available | starter at SF, staff plan 34 minutes |
 | [Kendall Gill](../Player_Cards/kendall_gill.md) | SG | under contract | Available | rotation at SG, staff plan 11 minutes |
 | [Dorell Wright](../Player_Cards/dorell_wright.md) | SF | under contract | Available | rotation at SF, staff plan 8 minutes |
 | [John Thomas](../Player_Cards/john_thomas.md) | C | under contract | Injured list since 2005-01-01, inactive reserve | reserve outside the planned rotation |
-| [Maurice Evans](../Player_Cards/maurice_evans.md) | SG | under contract | Available | reserve outside the planned rotation |
+| [Maurice Evans](../Player_Cards/maurice_evans.md) | SG | under contract | Injured list since 2005-01-03, inactive reserve | reserve outside the planned rotation |
 | [Maurice Baker](../Player_Cards/maurice_baker.md) | PG | under contract | Available | reserve outside the planned rotation |
 | [John Edwards](../Player_Cards/john_edwards.md) | C | under contract | Injured list since 2004-12-25, inactive reserve | reserve outside the planned rotation |
 | [Bernard Robinson](../Player_Cards/bernard_robinson.md) | SG | unsigned draft rights | Available | reserve outside the planned rotation |

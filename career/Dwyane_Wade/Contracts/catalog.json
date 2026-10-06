@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-01-02",
+  "as_of": "2005-01-03",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -932,7 +932,7 @@
     {
       "player_id": "atkinch01",
       "name": "Chucky Atkins",
-      "team": "Detroit Pistons",
+      "team": "Los Angeles Lakers",
       "status": "under contract",
       "current_contract_id": "atkinch01-existing-9910d7d3f6f4",
       "recorded_agreements": 1,
@@ -1751,7 +1751,7 @@
     {
       "player_id": "paytoga01",
       "name": "Gary Payton",
-      "team": "Los Angeles Lakers",
+      "team": "Detroit Pistons",
       "status": "under contract",
       "current_contract_id": "paytoga01-2003-07-16",
       "recorded_agreements": 2,
@@ -2372,7 +2372,7 @@
     {
       "player_id": "stackje01",
       "name": "Jerry Stackhouse",
-      "team": "Cleveland Cavaliers",
+      "team": "Minnesota Timberwolves",
       "status": "under contract",
       "current_contract_id": "stackje01-2004-09-30",
       "recorded_agreements": 2,
@@ -3614,7 +3614,7 @@
     {
       "player_id": "ebind01",
       "name": "Ndudi Ebi",
-      "team": "Minnesota Timberwolves",
+      "team": "Cleveland Cavaliers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4883,7 +4883,7 @@
     {
       "player_id": "hassetr01",
       "name": "Trenton Hassell",
-      "team": "Minnesota Timberwolves",
+      "team": "Cleveland Cavaliers",
       "status": "under contract",
       "current_contract_id": "hassetr01-2004-09-30",
       "recorded_agreements": 3,
@@ -4892,7 +4892,7 @@
     {
       "player_id": "trevorariza",
       "name": "Trevor Ariza",
-      "team": "Detroit Pistons",
+      "team": "Los Angeles Lakers",
       "status": "under contract",
       "current_contract_id": "trevorariza-2004-07-14",
       "recorded_agreements": 1,

@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-01-02. [Search the contract directory](index.html)
+Known through 2005-01-03. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -111,7 +111,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Chris Wilcox](players/wilcoch01.md) | Los Angeles Clippers | under rookie contract | Chris Wilcox · 2002-07-31 | 1 |
 | [Christian Drejer](players/drejech01.md) | Miami Heat | unsigned draft rights | No verified current agreement | 0 |
 | [Christian Laettner](players/laettch01.md) | Washington Wizards | under contract | Christian Laettner · existing contract; signing date not recorded | 1 |
-| [Chucky Atkins](players/atkinch01.md) | Detroit Pistons | under contract | Chucky Atkins · existing contract; signing date not recorded | 1 |
+| [Chucky Atkins](players/atkinch01.md) | Los Angeles Lakers | under contract | Chucky Atkins · existing contract; signing date not recorded | 1 |
 | [Clarence Weatherspoon](players/weathcl01.md) | New York Knicks | under contract | Clarence Weatherspoon · existing contract; signing date not recorded | 1 |
 | [Clifford Robinson](players/robincl02.md) | Golden State Warriors | under contract unverified | No verified current agreement | 0 |
 | [Corey Maggette](players/maggeco01.md) | Los Angeles Clippers | under contract | Corey Maggette · 2003-07-31 | 2 |
@@ -202,7 +202,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Frank Williams](players/willifr02.md) | Charlotte Bobcats | under rookie contract | Frank Williams · 2002-07-08 | 1 |
 | [Fred Hoiberg](players/hoibefr01.md) | Denver Nuggets | under contract | Fred Hoiberg · 2004-09-09 | 3 |
 | [Fred Jones](players/jonesfr01.md) | Utah Jazz | under rookie contract | Fred Jones · 2002-07-05 | 1 |
-| [Gary Payton](players/paytoga01.md) | Los Angeles Lakers | under contract | Gary Payton · 2003-07-16 | 2 |
+| [Gary Payton](players/paytoga01.md) | Detroit Pistons | under contract | Gary Payton · 2003-07-16 | 2 |
 | [Gary Trent](players/trentga01.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
 | [Geno Carlisle](players/carlige01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [George Lynch](players/lynchge01.md) | New Orleans Hornets | under contract | George Lynch · existing contract; signing date not recorded | 1 |
@@ -271,7 +271,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jerome James](players/jamesje01.md) | Seattle SuperSonics | under contract | Jerome James · existing contract; signing date not recorded | 1 |
 | [Jerome Moiso](players/moisoje01.md) | Free agent | under contract | Jerome Moiso · 2003-07-16 | 2 |
 | [Jerome Williams](players/willije01.md) | Detroit Pistons | under contract | Jerome Williams · 2001-07-18 | 1 |
-| [Jerry Stackhouse](players/stackje01.md) | Cleveland Cavaliers | under contract | Jerry Stackhouse · 2004-09-30 | 2 |
+| [Jerry Stackhouse](players/stackje01.md) | Minnesota Timberwolves | under contract | Jerry Stackhouse · 2004-09-30 | 2 |
 | [Jeryl Sasser](players/sasseje01.md) | Free agent | under rookie contract | Jeryl Sasser · existing contract; signing date not recorded | 1 |
 | [Jim Jackson](players/jacksji01.md) | Houston Rockets | under contract | Jim Jackson · 2003-09-30 | 2 |
 | [Jiri Welsch](players/welscji01.md) | Boston Celtics | under rookie contract | Jiri Welsch · existing contract; signing date not recorded | 1 |
@@ -409,7 +409,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Moochie Norris](players/norrimo01.md) | Charlotte Bobcats | under contract | Moochie Norris · existing contract; signing date not recorded | 1 |
 | [Morris Peterson](players/petermo01.md) | Toronto Raptors | under contract | Morris Peterson · 2004-09-23 | 2 |
 | [Nazr Mohammed](players/mohamna01.md) | Atlanta Hawks | under contract | Nazr Mohammed · existing contract; signing date not recorded | 1 |
-| [Ndudi Ebi](players/ebind01.md) | Minnesota Timberwolves | No verified contract record | No verified current agreement | 0 |
+| [Ndudi Ebi](players/ebind01.md) | Cleveland Cavaliers | No verified contract record | No verified current agreement | 0 |
 | [Nedzad Sinanovic](players/sinanne01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Nenad Krstić](players/nenadkrsti.md) | New York Knicks | under contract | Nenad Krstić · 2004-07-22 | 1 |
 | [Nene](players/hilarne01.md) | Denver Nuggets | under rookie contract | Nene · 2002-07-23 | 1 |
@@ -550,8 +550,8 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Travis Knight](players/knightr01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
 | [Travis Outlaw](players/outlatr01.md) | Portland Trail Blazers | No verified contract record | No verified current agreement | 0 |
 | [Tremaine Fowlkes](players/fowlktr01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
-| [Trenton Hassell](players/hassetr01.md) | Minnesota Timberwolves | under contract | Trenton Hassell · 2004-09-30 | 3 |
-| [Trevor Ariza](players/trevorariza.md) | Detroit Pistons | under contract | Trevor Ariza · 2004-07-14 | 1 |
+| [Trenton Hassell](players/hassetr01.md) | Cleveland Cavaliers | under contract | Trenton Hassell · 2004-09-30 | 3 |
+| [Trevor Ariza](players/trevorariza.md) | Los Angeles Lakers | under contract | Trevor Ariza · 2004-07-14 | 1 |
 | [Troy Bell](players/belltr01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Troy Hudson](players/hudsotr01.md) | Charlotte Bobcats | under contract unverified | No verified current agreement | 0 |
 | [Troy Murphy](players/murphtr01.md) | Golden State Warriors | under rookie contract | Troy Murphy · 2001-08-24 | 1 |

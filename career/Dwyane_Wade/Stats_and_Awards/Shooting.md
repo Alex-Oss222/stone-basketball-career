@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2005-01-02**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2005-01-03**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -3196,7 +3196,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
 
-## 2004-05 · NBA regular season · through 2005-01-02
+## 2004-05 · NBA regular season · through 2005-01-03
 
 [Open this period](player_cards.html?period=regular-2004-05-season#shooting)
 
@@ -3543,7 +3543,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-01-01 | Charlotte Bobcats | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md) | [Result](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) |
 
-## 2005-01-01 to 2005-01-02 · NBA regular season
+## 2005-01-01 to 2005-01-03 · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2004-05-week-2005-01-01#shooting)
 
@@ -4269,7 +4269,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-01-01 | Charlotte Bobcats | DNP: injured list since 2004-12-23 | [Game](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md) | [Result](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.result.json) |
 
-## 2004-05 · NBA preseason · through 2005-01-02
+## 2004-05 · NBA preseason · through 2005-01-03
 
 [Open this period](player_cards.html?period=preseason-2004-05-season#shooting)
 

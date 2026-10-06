@@ -96,7 +96,7 @@
    "college": "UConn (simulation canon)",
    "status": "under_contract",
    "control": "Existing contract: 3 season(s) from 2004-05, $8,089,602 scheduled ($2,361,800 in 2004-05).",
-   "working_role": "Injured list (starter at SG, staff plan 37 minutes when healthy; rotation 2004-12-23)",
+   "working_role": "Starter at SG, staff plan 37 minutes (rotation 2004-12-23)",
    "player_card": "../Player_Cards/dwyane_wade.md"
   },
   {
@@ -158,7 +158,7 @@
    "positions": [
     "SG"
    ],
-   "working_role": "Reserve outside the planned rotation (rotation 2004-12-23)",
+   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2004-12-23)",
    "player_card": "../Player_Cards/maurice_evans.md",
    "bbr_id": "evansma01",
    "status": "under_contract",

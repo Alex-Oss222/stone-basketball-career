@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2005-01-03-ebind01-hassetr01-stackje01",
+ "date": "2005-01-03",
+ "clubs": [
+  "Cleveland Cavaliers",
+  "Minnesota Timberwolves"
+ ],
+ "a": {
+  "club": "Cleveland Cavaliers",
+  "sends": [
+   "Jerry Stackhouse"
+  ],
+  "bbr_ids": [
+   "stackje01"
+  ],
+  "salary": 2109772
+ },
+ "b": {
+  "club": "Minnesota Timberwolves",
+  "sends": [
+   "Ndudi Ebi",
+   "Trenton Hassell"
+  ],
+  "bbr_ids": [
+   "ebind01",
+   "hassetr01"
+  ],
+  "salary": 1796486
+ },
+ "gain": {
+  "Cleveland Cavaliers": 0.148,
+  "Minnesota Timberwolves": 0.179
+ },
+ "accept": {
+  "Cleveland Cavaliers": 0.9,
+  "Minnesota Timberwolves": 0.95
+ },
+ "both": 0.855
+}

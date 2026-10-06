@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2005-01-03-arizatr01-atkinch01-paytoga01",
+ "date": "2005-01-03",
+ "clubs": [
+  "Detroit Pistons",
+  "Los Angeles Lakers"
+ ],
+ "a": {
+  "club": "Detroit Pistons",
+  "sends": [
+   "Chucky Atkins",
+   "Trevor Ariza"
+  ],
+  "bbr_ids": [
+   "atkinch01",
+   "arizatr01"
+  ],
+  "salary": 4585277
+ },
+ "b": {
+  "club": "Los Angeles Lakers",
+  "sends": [
+   "Gary Payton"
+  ],
+  "bbr_ids": [
+   "paytoga01"
+  ],
+  "salary": 5162850
+ },
+ "gain": {
+  "Detroit Pistons": 0.222,
+  "Los Angeles Lakers": 0.234
+ },
+ "accept": {
+  "Detroit Pistons": 0.95,
+  "Los Angeles Lakers": 0.95
+ },
+ "both": 0.9025
+}

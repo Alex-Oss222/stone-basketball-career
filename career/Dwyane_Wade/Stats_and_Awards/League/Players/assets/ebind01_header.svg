@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="t d">
-<title id="t">Ndudi Ebi</title><desc id="d">Ndudi Ebi, Minnesota Timberwolves, Small forward, #44.</desc>
-<rect width="1280" height="180" rx="24" fill="#236192"/>
-<rect x="0" y="150" width="1280" height="30" fill="#00843d" fill-opacity=".92"/>
-<rect x="0" y="150" width="1280" height="6" fill="#00843d"/>
+<title id="t">Ndudi Ebi</title><desc id="d">Ndudi Ebi, Cleveland Cavaliers, Small forward, #44.</desc>
+<rect width="1280" height="180" rx="24" fill="#9d2235"/>
+<rect x="0" y="150" width="1280" height="30" fill="#8c714c" fill-opacity=".92"/>
+<rect x="0" y="150" width="1280" height="6" fill="#8c714c"/>
 <text x="48" y="78" font-family="sans-serif" font-size="54" font-weight="700" fill="#ffffff">Ndudi Ebi</text>
-<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Small forward · Minnesota Timberwolves</text>
+<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Small forward · Cleveland Cavaliers</text>
 <text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#44</text>
 </svg>

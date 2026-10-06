@@ -2,9 +2,9 @@
 
 # Contract | Chucky Atkins
 
-Known through: 2005-01-02. [Open interactive contract](atkinch01.html#contract) · [Contract history](atkinch01.html#contract-history)
+Known through: 2005-01-03. [Open interactive contract](atkinch01.html#contract) · [Contract history](atkinch01.html#contract-history)
 
-Chucky Atkins: under contract. Evidence cutoff: 2005-01-02.
+Chucky Atkins: under contract. Evidence cutoff: 2005-01-03.
 
 ## Current contract
 
@@ -122,7 +122,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Chucky Atkins |
-| Club / rights baseline | Detroit Pistons |
+| Club / rights baseline | Los Angeles Lakers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

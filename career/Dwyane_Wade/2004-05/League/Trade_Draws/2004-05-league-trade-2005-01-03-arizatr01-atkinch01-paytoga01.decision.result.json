@@ -1,0 +1,12 @@
+{
+ "date": "2005-01-03",
+ "decider": "Detroit Pistons and Los Angeles Lakers front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2005-01-03-arizatr01-atkinch01-paytoga01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Detroit Pistons and Los Angeles Lakers trade Chucky Atkins and Trevor Ariza for Gary Payton?"
+}

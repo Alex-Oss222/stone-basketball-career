@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-01-02",
+  "as_of": "2005-01-03",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-01-02"
+              "2005-01-03"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2005-01-02",
+              "2005-01-03",
               "Current checkpoint",
               "2005-01-01-charlotte-bobcats-at-miami-heat",
               "Recorded",
@@ -94,22 +94,12 @@
               }
             ],
             [
-              "2005-01-03",
-              "Next Miami game, vs Seattle SuperSonics",
+              "2005-01-05",
+              "Next Miami game, vs New York Knicks",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
                 "label": "Season",
-                "href": "#calendar"
-              }
-            ],
-            [
-              "2005-01-03",
-              "League awards announced: Player of the Week",
-              "League (closed results only)",
-              "Scheduled",
-              {
-                "label": "Awards",
                 "href": "#calendar"
               }
             ],
@@ -131,6 +121,16 @@
               {
                 "label": "Rule",
                 "href": "../../../docs/front_office.md"
+              }
+            ],
+            [
+              "2005-01-10",
+              "League awards announced: Player of the Week",
+              "League (closed results only)",
+              "Scheduled",
+              {
+                "label": "Awards",
+                "href": "#calendar"
               }
             ],
             [
@@ -586,7 +586,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-02"
+          "value": "2005-01-03"
         },
         {
           "label": "Team",
@@ -968,7 +968,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-02"
+          "value": "2005-01-03"
         },
         {
           "label": "Team",
@@ -1323,7 +1323,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-02"
+          "value": "2005-01-03"
         },
         {
           "label": "Team",
@@ -1709,7 +1709,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-02"
+          "value": "2005-01-03"
         },
         {
           "label": "Team",
@@ -2066,7 +2066,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-02"
+          "value": "2005-01-03"
         },
         {
           "label": "Team",
@@ -2428,7 +2428,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-02"
+          "value": "2005-01-03"
         },
         {
           "label": "Team",
@@ -2785,7 +2785,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-02"
+          "value": "2005-01-03"
         },
         {
           "label": "Team",
@@ -3254,7 +3254,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-02"
+          "value": "2005-01-03"
         },
         {
           "label": "Team",
@@ -3271,7 +3271,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "39 closed game records in 2004-05 through 2005-01-02. Competitions remain separate.",
+      "summary": "39 closed game records in 2004-05 through 2005-01-03. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -4017,7 +4017,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-02"
+          "value": "2005-01-03"
         },
         {
           "label": "Team",

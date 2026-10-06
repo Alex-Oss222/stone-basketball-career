@@ -2,9 +2,9 @@
 
 # Contract | Trenton Hassell
 
-Known through: 2005-01-02. [Open interactive contract](hassetr01.html#contract) · [Contract history](hassetr01.html#contract-history)
+Known through: 2005-01-03. [Open interactive contract](hassetr01.html#contract) · [Contract history](hassetr01.html#contract-history)
 
-Trenton Hassell: under contract. Evidence cutoff: 2005-01-02.
+Trenton Hassell: under contract. Evidence cutoff: 2005-01-03.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Trenton Hassell |
-| Club / rights baseline | Minnesota Timberwolves |
+| Club / rights baseline | Cleveland Cavaliers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

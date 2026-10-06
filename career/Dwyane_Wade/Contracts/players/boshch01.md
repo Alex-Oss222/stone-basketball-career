@@ -2,9 +2,9 @@
 
 # Contract | Chris Bosh
 
-Known through: 2005-01-02. [Open interactive contract](boshch01.html#contract) · [Contract history](boshch01.html#contract-history)
+Known through: 2005-01-03. [Open interactive contract](boshch01.html#contract) · [Contract history](boshch01.html#contract-history)
 
-Chris Bosh: No verified contract record. Evidence cutoff: 2005-01-02.
+Chris Bosh: No verified contract record. Evidence cutoff: 2005-01-03.
 
 ## Current contract
 

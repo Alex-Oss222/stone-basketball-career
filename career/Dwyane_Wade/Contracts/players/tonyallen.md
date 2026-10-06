@@ -2,9 +2,9 @@
 
 # Contract | Tony Allen
 
-Known through: 2005-01-02. [Open interactive contract](tonyallen.html#contract) · [Contract history](tonyallen.html#contract-history)
+Known through: 2005-01-03. [Open interactive contract](tonyallen.html#contract) · [Contract history](tonyallen.html#contract-history)
 
-Tony Allen: under contract. Evidence cutoff: 2005-01-02.
+Tony Allen: under contract. Evidence cutoff: 2005-01-03.
 
 ## Current contract
 

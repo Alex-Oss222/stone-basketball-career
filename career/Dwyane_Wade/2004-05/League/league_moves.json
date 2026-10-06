@@ -1880,6 +1880,60 @@
    "bbr_id": "willico02",
    "from": "Detroit Pistons",
    "to": "Chicago Bulls"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-03-arizatr01-atkinch01-paytoga01",
+   "date": "2005-01-03",
+   "kind": "trade",
+   "player": "Chucky Atkins",
+   "bbr_id": "atkinch01",
+   "from": "Detroit Pistons",
+   "to": "Los Angeles Lakers"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-03-arizatr01-atkinch01-paytoga01",
+   "date": "2005-01-03",
+   "kind": "trade",
+   "player": "Trevor Ariza",
+   "bbr_id": "arizatr01",
+   "from": "Detroit Pistons",
+   "to": "Los Angeles Lakers"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-03-arizatr01-atkinch01-paytoga01",
+   "date": "2005-01-03",
+   "kind": "trade",
+   "player": "Gary Payton",
+   "bbr_id": "paytoga01",
+   "from": "Los Angeles Lakers",
+   "to": "Detroit Pistons"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-03-ebind01-hassetr01-stackje01",
+   "date": "2005-01-03",
+   "kind": "trade",
+   "player": "Jerry Stackhouse",
+   "bbr_id": "stackje01",
+   "from": "Cleveland Cavaliers",
+   "to": "Minnesota Timberwolves"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-03-ebind01-hassetr01-stackje01",
+   "date": "2005-01-03",
+   "kind": "trade",
+   "player": "Ndudi Ebi",
+   "bbr_id": "ebind01",
+   "from": "Minnesota Timberwolves",
+   "to": "Cleveland Cavaliers"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-03-ebind01-hassetr01-stackje01",
+   "date": "2005-01-03",
+   "kind": "trade",
+   "player": "Trenton Hassell",
+   "bbr_id": "hassetr01",
+   "from": "Minnesota Timberwolves",
+   "to": "Cleveland Cavaliers"
   }
  ],
  "market_days": [
@@ -1944,6 +1998,7 @@
   "2004-12-30",
   "2004-12-31",
   "2005-01-01",
-  "2005-01-02"
+  "2005-01-02",
+  "2005-01-03"
  ]
 }

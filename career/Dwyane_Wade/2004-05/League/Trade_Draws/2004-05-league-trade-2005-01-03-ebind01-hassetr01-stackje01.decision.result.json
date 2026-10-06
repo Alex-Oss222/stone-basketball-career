@@ -1,0 +1,12 @@
+{
+ "date": "2005-01-03",
+ "decider": "Cleveland Cavaliers and Minnesota Timberwolves front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2005-01-03-ebind01-hassetr01-stackje01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.855,
+  "decline": 0.145
+ },
+ "outcome": "accept",
+ "question": "Do Cleveland Cavaliers and Minnesota Timberwolves trade Jerry Stackhouse for Ndudi Ebi and Trenton Hassell?"
+}

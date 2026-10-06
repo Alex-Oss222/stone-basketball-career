@@ -2,9 +2,9 @@
 
 # Contract | Gary Payton
 
-Known through: 2005-01-02. [Open interactive contract](paytoga01.html#contract) · [Contract history](paytoga01.html#contract-history)
+Known through: 2005-01-03. [Open interactive contract](paytoga01.html#contract) · [Contract history](paytoga01.html#contract-history)
 
-Gary Payton: under contract. Evidence cutoff: 2005-01-02.
+Gary Payton: under contract. Evidence cutoff: 2005-01-03.
 
 ## Current contract
 
@@ -114,7 +114,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Gary Payton |
-| Club / rights baseline | Los Angeles Lakers |
+| Club / rights baseline | Detroit Pistons |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

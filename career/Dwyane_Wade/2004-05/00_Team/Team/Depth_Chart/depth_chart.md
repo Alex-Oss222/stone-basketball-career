@@ -1,12 +1,12 @@
 # Miami Heat working depth chart
 
-**As of:** 2005-01-02 · **Staff decision in force:** 2004-12-23 (fortnightly review)  
+**As of:** 2005-01-03 · **Staff decision in force:** 2004-12-23 (fortnightly review)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
 | PG | Mike James (starter) | Rafer Alston | Maurice Baker |  |
-| SG | Dwyane Wade (starter, on the injured list) | Kendall Gill | Eddie Jones | Maurice Evans |
+| SG | Dwyane Wade (starter) | Kendall Gill | Eddie Jones | Maurice Evans (injured list) |
 | SF | Caron Butler (starter) | Lamond Murray | Dorell Wright |  |
 | PF | Mehmet Okur (starter) | Donyell Marshall |  |  |
 | C | Brian Grant (starter) | John Thomas (injured list) | John Edwards (injured list) |  |
@@ -16,7 +16,7 @@
 | Player | Slot | Minutes | Starter |
 |---|---|---:|---|
 | Mike James | PG | 34 | yes |
-| Dwyane Wade | SG | 37.36 | yes, on the injured list |
+| Dwyane Wade | SG | 37.36 | yes |
 | Caron Butler | SF | 34 | yes |
 | Mehmet Okur | PF | 34 | yes |
 | Brian Grant | C | 34 | yes |
@@ -29,9 +29,9 @@
 
 Outside the rotation (dressing as the twelfth man or on the injured list): John Thomas, Maurice Evans, Maurice Baker, John Edwards.
 
-## Injured list on 2005-01-02
+## Injured list on 2005-01-03
 
-Dwyane Wade, John Edwards, John Thomas ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
+John Edwards, John Thomas, Maurice Evans ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 
 ## Not on the active register
 
