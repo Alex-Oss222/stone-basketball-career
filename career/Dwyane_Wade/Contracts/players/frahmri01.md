@@ -2,9 +2,9 @@
 
 # Contract | Richie Frahm
 
-Known through: 2004-10-07. [Open interactive contract](frahmri01.html#contract) · [Contract history](frahmri01.html#contract-history)
+Known through: 2004-10-08. [Open interactive contract](frahmri01.html#contract) · [Contract history](frahmri01.html#contract-history)
 
-Richie Frahm: under contract. Evidence cutoff: 2004-10-07.
+Richie Frahm: under contract. Evidence cutoff: 2004-10-08.
 
 ## Current contract
 

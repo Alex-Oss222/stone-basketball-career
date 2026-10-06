@@ -1,7 +1,7 @@
 {
  "schema_version": 5,
  "owner": "ai_gm",
- "as_of": "2004-10-05",
+ "as_of": "2004-10-08",
  "season": "2004-05",
  "team": "Miami Heat",
  "cap_status": "training_camp",
@@ -188,7 +188,7 @@
   "2010-11"
  ],
  "currency": "USD",
- "known_counted_salary_definition": "Counted 2004-05 team salary on 2004-10-05: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+ "known_counted_salary_definition": "Counted 2004-05 team salary on 2004-10-08: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
  "scheduled_contract_salary_subtotal": 56949700,
  "known_pending_option_salary": 0,
  "known_base_plus_priced_options": 56949700,
@@ -236,7 +236,7 @@
  "known_free_agent_holds_subtotal": 0,
  "unpriced_free_agent_hold_count": 0,
  "free_agent_hold_total": null,
- "free_agent_hold_timing": "Holds on 2004-10-05 are the unrenounced free agents' cap holds in free_agent_rights.json.",
+ "free_agent_hold_timing": "Holds on 2004-10-08 are the unrenounced free agents' cap holds in free_agent_rights.json.",
  "research_date": "2026-10-02",
  "guarantee_review": [
   {

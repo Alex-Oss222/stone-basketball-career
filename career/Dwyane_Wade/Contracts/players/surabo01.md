@@ -2,9 +2,9 @@
 
 # Contract | Bob Sura
 
-Known through: 2004-10-07. [Open interactive contract](surabo01.html#contract) · [Contract history](surabo01.html#contract-history)
+Known through: 2004-10-08. [Open interactive contract](surabo01.html#contract) · [Contract history](surabo01.html#contract-history)
 
-Bob Sura: camp contract. Evidence cutoff: 2004-10-07.
+Bob Sura: camp contract. Evidence cutoff: 2004-10-08.
 
 ## Current contract
 
@@ -103,9 +103,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/04_Training_Camp/camp_roster.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 
 ### Current control and contract coverage
 
@@ -257,9 +257,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/04_Training_Camp/camp_roster.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 
 ## Source records
 
