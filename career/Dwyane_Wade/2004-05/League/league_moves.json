@@ -2474,6 +2474,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.27 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-22-ten_day-barnema02",
+   "date": "2005-01-22",
+   "kind": "ten_day",
+   "player": "Matt Barnes",
+   "bbr_id": "barnema02",
+   "from": null,
+   "to": "Memphis Grizzlies",
+   "role": {
+    "player_id": "Matt Barnes",
+    "bbr_id": "barnema02",
+    "position": "SF",
+    "games": 43,
+    "minutes": 715
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-02-01",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.22 x fit"
   }
  ],
  "market_days": [
@@ -2557,6 +2579,7 @@
   "2005-01-18",
   "2005-01-19",
   "2005-01-20",
-  "2005-01-21"
+  "2005-01-21",
+  "2005-01-22"
  ]
 }

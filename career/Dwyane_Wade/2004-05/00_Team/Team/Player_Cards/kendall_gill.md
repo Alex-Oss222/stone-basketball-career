@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG  
 **Age at assessment:** 36 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-01-21 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-01-22 
 
 **Contract/control:** Signed August 12, 2004 (minimum): 1 season(s) from 2004-05, $1,100,000 scheduled ($1,100,000 in 2004-05). (register, 2005-01-10) [Finance record](../../Finances/cap_sheet.md).
 
