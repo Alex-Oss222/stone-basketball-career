@@ -2,9 +2,9 @@
 
 # Contract | Keyon Dooling
 
-Known through: 2004-12-12. [Open interactive contract](doolike01.html#contract) · [Contract history](doolike01.html#contract-history)
+Known through: 2004-12-13. [Open interactive contract](doolike01.html#contract) · [Contract history](doolike01.html#contract-history)
 
-Keyon Dooling: under rookie contract. Evidence cutoff: 2004-12-12.
+Keyon Dooling: under rookie contract. Evidence cutoff: 2004-12-13.
 
 ## Current contract
 
@@ -117,7 +117,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Keyon Dooling |
-| Club / rights baseline | Atlanta Hawks |
+| Club / rights baseline | Utah Jazz |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

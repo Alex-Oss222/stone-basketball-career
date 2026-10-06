@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2004-12-13-doolike01-hendeal01-lafrera01",
+ "date": "2004-12-13",
+ "clubs": [
+  "Atlanta Hawks",
+  "Utah Jazz"
+ ],
+ "a": {
+  "club": "Atlanta Hawks",
+  "sends": [
+   "Keyon Dooling",
+   "Alan Henderson"
+  ],
+  "bbr_ids": [
+   "doolike01",
+   "hendeal01"
+  ],
+  "salary": 8961804
+ },
+ "b": {
+  "club": "Utah Jazz",
+  "sends": [
+   "Raef LaFrentz"
+  ],
+  "bbr_ids": [
+   "lafrera01"
+  ],
+  "salary": 9714538
+ },
+ "gain": {
+  "Atlanta Hawks": 0.262,
+  "Utah Jazz": 0.39
+ },
+ "accept": {
+  "Atlanta Hawks": 0.95,
+  "Utah Jazz": 0.95
+ },
+ "both": 0.9025
+}

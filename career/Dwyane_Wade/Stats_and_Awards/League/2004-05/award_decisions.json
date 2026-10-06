@@ -731,6 +731,110 @@
     }
    ],
    "winner": "Shawn Marion"
+  },
+  {
+   "id": "2004-05-player_of_week-2004-12-06-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-12-06",
+   "period_end": "2004-12-12",
+   "announced_on": "2004-12-13",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/12_December/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 22.2,
+     "reb": 6.0,
+     "ast": 5.5,
+     "game_score": 20.7,
+     "score": 91.8,
+     "rank": 1
+    },
+    {
+     "player": "Morris Peterson",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 23.8,
+     "reb": 5.5,
+     "ast": 4.5,
+     "game_score": 19.6,
+     "score": 87.4,
+     "rank": 2
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 21.0,
+     "reb": 6.8,
+     "ast": 2.8,
+     "game_score": 18.32,
+     "score": 82.3,
+     "rank": 3
+    }
+   ],
+   "winner": "Chauncey Billups"
+  },
+  {
+   "id": "2004-05-player_of_week-2004-12-06-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-12-06",
+   "period_end": "2004-12-12",
+   "announced_on": "2004-12-13",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/12_December/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 22.0,
+     "reb": 11.5,
+     "ast": 6.0,
+     "game_score": 20.22,
+     "score": 86.9,
+     "rank": 1
+    },
+    {
+     "player": "Manu Ginobili",
+     "team": "San Antonio Spurs",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 21.2,
+     "reb": 5.5,
+     "ast": 3.8,
+     "game_score": 16.92,
+     "score": 73.7,
+     "rank": 2
+    },
+    {
+     "player": "Tim Duncan",
+     "team": "San Antonio Spurs",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 17.5,
+     "reb": 8.0,
+     "ast": 2.0,
+     "game_score": 15.7,
+     "score": 68.8,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
   }
  ]
 }

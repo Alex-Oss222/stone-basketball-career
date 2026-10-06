@@ -2,9 +2,9 @@
 
 # Contract | Chucky Atkins
 
-Known through: 2004-12-12. [Open interactive contract](atkinch01.html#contract) · [Contract history](atkinch01.html#contract-history)
+Known through: 2004-12-13. [Open interactive contract](atkinch01.html#contract) · [Contract history](atkinch01.html#contract-history)
 
-Chucky Atkins: under contract. Evidence cutoff: 2004-12-12.
+Chucky Atkins: under contract. Evidence cutoff: 2004-12-13.
 
 ## Current contract
 

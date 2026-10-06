@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-12-12. [Search the contract directory](index.html)
+Known through 2004-12-13. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -15,7 +15,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Adrian Griffin](players/griffad01.md) | Houston Rockets | under contract | Adrian Griffin · 2003-08-07 | 2 |
 | [Al Harrington](players/harrial01.md) | Indiana Pacers | under contract | Al Harrington · 2001-11-01 | 1 |
 | [Al Jefferson](players/aljefferson.md) | Toronto Raptors | under contract | Al Jefferson · 2004-07-01 | 1 |
-| [Alan Henderson](players/hendeal01.md) | Atlanta Hawks | under contract | Alan Henderson · existing contract; signing date not recorded | 1 |
+| [Alan Henderson](players/hendeal01.md) | Utah Jazz | under contract | Alan Henderson · existing contract; signing date not recorded | 1 |
 | [Aleksandar Radojević](players/aleksandarradojevi.md) | Toronto Raptors | under contract | Aleksandar Radojević · 2004-07-22 | 1 |
 | [Alex Garcia](players/garcial01.md) | San Antonio Spurs | No verified contract record | No verified current agreement | 0 |
 | [Allan Houston](players/houstal01.md) | New York Knicks | under contract | Allan Houston · existing contract; signing date not recorded | 1 |
@@ -317,7 +317,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Kevin Martin](players/kevinmartin.md) | New York Knicks | under contract | Kevin Martin · 2004-09-02 | 1 |
 | [Kevin Ollie](players/ollieke01.md) | Cleveland Cavaliers | under contract | Kevin Ollie · 2003-07-17 | 2 |
 | [Kevin Willis](players/willike02.md) | Free agent | under contract | Kevin Willis · 2003-07-16 | 2 |
-| [Keyon Dooling](players/doolike01.md) | Atlanta Hawks | under rookie contract | Keyon Dooling · 2000-08-08 | 1 |
+| [Keyon Dooling](players/doolike01.md) | Utah Jazz | under rookie contract | Keyon Dooling · 2000-08-08 | 1 |
 | [Kirk Hinrich](players/hinriki01.md) | Chicago Bulls | No verified contract record | No verified current agreement | 0 |
 | [Kirk Snyder](players/kirksnyder.md) | Chicago Bulls | under contract | Kirk Snyder · 2004-07-01 | 1 |
 | [Kobe Bryant](players/bryanko01.md) | Los Angeles Lakers | under contract | Kobe Bryant · 1999-01-29 | 1 |
@@ -439,7 +439,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Quentin Richardson](players/richaqu01.md) | Los Angeles Clippers | under contract | Quentin Richardson · 2004-08-26 | 2 |
 | [Quincy Lewis](players/lewisqu01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Qyntel Woods](players/woodsqy01.md) | Los Angeles Lakers | under rookie contract | Qyntel Woods · 2002-07-12 | 1 |
-| [Raef LaFrentz](players/lafrera01.md) | Utah Jazz | under contract unverified | No verified current agreement | 0 |
+| [Raef LaFrentz](players/lafrera01.md) | Atlanta Hawks | under contract unverified | No verified current agreement | 0 |
 | [Rafael Araújo](players/rafaelarajo.md) | Denver Nuggets | under contract | Rafael Araújo · 2004-07-01 | 1 |
 | [Rafer Alston](players/alstora01.md) | Miami Heat | camp contract | Rafer Alston · 2004-10-05 | 2 |
 | [Raja Bell](players/bellra01.md) | Utah Jazz | under contract | Raja Bell · 2003-09-26 | 2 |

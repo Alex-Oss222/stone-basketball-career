@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-05-league-trade-2004-12-13-doolike01-hendeal01-lafrera01",
+ "date": "2004-12-13",
+ "question": "Do Atlanta Hawks and Utah Jazz trade Keyon Dooling and Alan Henderson for Raef LaFrentz?",
+ "decider": "Atlanta Hawks and Utah Jazz front offices (engine draw)",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "basis": "gains on own objectives {'Atlanta Hawks': 0.262, 'Utah Jazz': 0.39}; acceptance {'Atlanta Hawks': 0.95, 'Utah Jazz': 0.95}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

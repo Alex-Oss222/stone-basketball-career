@@ -2,9 +2,9 @@
 
 # Contract | Alan Henderson
 
-Known through: 2004-12-12. [Open interactive contract](hendeal01.html#contract) · [Contract history](hendeal01.html#contract-history)
+Known through: 2004-12-13. [Open interactive contract](hendeal01.html#contract) · [Contract history](hendeal01.html#contract-history)
 
-Alan Henderson: under contract. Evidence cutoff: 2004-12-12.
+Alan Henderson: under contract. Evidence cutoff: 2004-12-13.
 
 ## Current contract
 
@@ -119,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Alan Henderson |
-| Club / rights baseline | Atlanta Hawks |
+| Club / rights baseline | Utah Jazz |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

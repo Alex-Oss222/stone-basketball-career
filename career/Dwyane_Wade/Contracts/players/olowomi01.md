@@ -2,9 +2,9 @@
 
 # Contract | Michael Olowokandi
 
-Known through: 2004-12-12. [Open interactive contract](olowomi01.html#contract) · [Contract history](olowomi01.html#contract-history)
+Known through: 2004-12-13. [Open interactive contract](olowomi01.html#contract) · [Contract history](olowomi01.html#contract-history)
 
-Michael Olowokandi: under contract. Evidence cutoff: 2004-12-12.
+Michael Olowokandi: under contract. Evidence cutoff: 2004-12-13.
 
 ## Current contract
 

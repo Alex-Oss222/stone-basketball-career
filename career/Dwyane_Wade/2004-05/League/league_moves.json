@@ -1763,6 +1763,33 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.72 x fit"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-13-doolike01-hendeal01-lafrera01",
+   "date": "2004-12-13",
+   "kind": "trade",
+   "player": "Keyon Dooling",
+   "bbr_id": "doolike01",
+   "from": "Atlanta Hawks",
+   "to": "Utah Jazz"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-13-doolike01-hendeal01-lafrera01",
+   "date": "2004-12-13",
+   "kind": "trade",
+   "player": "Alan Henderson",
+   "bbr_id": "hendeal01",
+   "from": "Atlanta Hawks",
+   "to": "Utah Jazz"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-12-13-doolike01-hendeal01-lafrera01",
+   "date": "2004-12-13",
+   "kind": "trade",
+   "player": "Raef LaFrentz",
+   "bbr_id": "lafrera01",
+   "from": "Utah Jazz",
+   "to": "Atlanta Hawks"
   }
  ],
  "market_days": [
@@ -1806,6 +1833,7 @@
   "2004-12-09",
   "2004-12-10",
   "2004-12-11",
-  "2004-12-12"
+  "2004-12-12",
+  "2004-12-13"
  ]
 }

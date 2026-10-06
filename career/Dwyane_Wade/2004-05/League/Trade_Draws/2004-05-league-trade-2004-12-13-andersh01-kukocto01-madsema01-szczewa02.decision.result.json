@@ -1,0 +1,12 @@
+{
+ "date": "2004-12-13",
+ "decider": "Denver Nuggets and New Jersey Nets front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2004-12-13-andersh01-kukocto01-madsema01-szczewa02",
+ "kind": "decision",
+ "options": {
+  "accept": 0.77691,
+  "decline": 0.22309
+ },
+ "outcome": "decline",
+ "question": "Do Denver Nuggets and New Jersey Nets trade Wally Szczerbiak and Mark Madsen for Toni Kukoc and Shandon Anderson?"
+}

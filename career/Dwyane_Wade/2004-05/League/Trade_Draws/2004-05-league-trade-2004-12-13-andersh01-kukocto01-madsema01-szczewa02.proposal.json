@@ -1,0 +1,41 @@
+{
+ "id": "2004-05-league-trade-2004-12-13-andersh01-kukocto01-madsema01-szczewa02",
+ "date": "2004-12-13",
+ "clubs": [
+  "Denver Nuggets",
+  "New Jersey Nets"
+ ],
+ "a": {
+  "club": "Denver Nuggets",
+  "sends": [
+   "Wally Szczerbiak",
+   "Mark Madsen"
+  ],
+  "bbr_ids": [
+   "szczewa02",
+   "madsema01"
+  ],
+  "salary": 9745046
+ },
+ "b": {
+  "club": "New Jersey Nets",
+  "sends": [
+   "Toni Kukoc",
+   "Shandon Anderson"
+  ],
+  "bbr_ids": [
+   "kukocto01",
+   "andersh01"
+  ],
+  "salary": 8400000
+ },
+ "gain": {
+  "Denver Nuggets": 0.136,
+  "New Jersey Nets": 0.145
+ },
+ "accept": {
+  "Denver Nuggets": 0.87,
+  "New Jersey Nets": 0.893
+ },
+ "both": 0.77691
+}

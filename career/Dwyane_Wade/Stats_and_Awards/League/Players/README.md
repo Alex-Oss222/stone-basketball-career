@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-12-12**. 571 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-12-13**. 571 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -167,7 +167,7 @@ Card date: **2004-12-12**. 571 registry players, one Markdown card and one inter
 | [Keith Bogans](boganke01.md) | Orlando Magic | 24 | sourced | [open](boganke01.html) |
 | [Kendall Gill](gillke01.md) | Miami Heat | 36 | sourced | [open](gillke01.html) |
 | [Kerry Kittles](kittlke01.md) | New Jersey Nets | 30 | silhouette | [open](kittlke01.html) |
-| [Keyon Dooling](doolike01.md) | Atlanta Hawks | 24 | sourced | [open](doolike01.html) |
+| [Keyon Dooling](doolike01.md) | Utah Jazz | 24 | sourced | [open](doolike01.html) |
 | [Kobe Bryant](bryanko01.md) | Los Angeles Lakers | 26 | sourced | [open](bryanko01.html) |
 | [Kyle Korver](korveky01.md) | Sacramento Kings | 23 | sourced | [open](korveky01.html) |
 | [Lavor Postell](postela01.md) | Free agent | 26 | sourced | [open](postela01.html) |
@@ -503,7 +503,7 @@ Card date: **2004-12-12**. 571 registry players, one Markdown card and one inter
 | --- | --- | --- | --- | --- |
 | [Aaron Williams](williaa01.md) | New Jersey Nets | 33 | silhouette | [open](williaa01.html) |
 | [Adonal Foyle](foylead01.md) | Sacramento Kings | 29 | sourced | [open](foylead01.html) |
-| [Alan Henderson](hendeal01.md) | Atlanta Hawks | 32 | silhouette | [open](hendeal01.html) |
+| [Alan Henderson](hendeal01.md) | Utah Jazz | 32 | silhouette | [open](hendeal01.html) |
 | [Alonzo Mourning](mournal01.md) | Seattle SuperSonics | 34 | silhouette | [open](mournal01.html) |
 | [Amal McCaskill](mccasam01.md) | Free agent | 31 | silhouette | [open](mccasam01.html) |
 | [Andreas Glyniadakis](glynian01.md) | Free agent | 23 | sourced | [open](glynian01.html) |
@@ -591,7 +591,7 @@ Card date: **2004-12-12**. 571 registry players, one Markdown card and one inter
 | [Paul Grant](grantpa01.md) | Free agent | 30 | silhouette | [open](grantpa01.html) |
 | [Predrag Drobnjak](drobnpr01.md) | Los Angeles Clippers | 29 | silhouette | [open](drobnpr01.html) |
 | [Primož Brezec](brezepr01.md) | Indiana Pacers | 25 | silhouette | [open](brezepr01.html) |
-| [Raef LaFrentz](lafrera01.md) | Utah Jazz | 28 | sourced | [open](lafrera01.html) |
+| [Raef LaFrentz](lafrera01.md) | Atlanta Hawks | 28 | sourced | [open](lafrera01.html) |
 | [Rasho Nesterovic](nestera01.md) | San Antonio Spurs | 28 | sourced | [open](nestera01.html) |
 | [Remon van de Hare](vandera01.md) | Free agent | 22 | silhouette | [open](vandera01.html) |
 | [Robert Traylor](traylro01.md) | Los Angeles Clippers | 27 | sourced | [open](traylro01.html) |

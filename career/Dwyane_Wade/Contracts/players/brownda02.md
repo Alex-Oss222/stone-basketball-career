@@ -2,9 +2,9 @@
 
 # Contract | Damone Brown
 
-Known through: 2004-12-12. [Open interactive contract](brownda02.html#contract) · [Contract history](brownda02.html#contract-history)
+Known through: 2004-12-13. [Open interactive contract](brownda02.html#contract) · [Contract history](brownda02.html#contract-history)
 
-Damone Brown: under contract. Evidence cutoff: 2004-12-12.
+Damone Brown: under contract. Evidence cutoff: 2004-12-13.
 
 ## Current contract
 

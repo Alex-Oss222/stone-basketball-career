@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-12-12",
+  "as_of": "2004-12-13",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -68,7 +68,7 @@
     {
       "player_id": "hendeal01",
       "name": "Alan Henderson",
-      "team": "Atlanta Hawks",
+      "team": "Utah Jazz",
       "status": "under contract",
       "current_contract_id": "hendeal01-existing-ffd1cadebf25",
       "recorded_agreements": 1,
@@ -2786,7 +2786,7 @@
     {
       "player_id": "doolike01",
       "name": "Keyon Dooling",
-      "team": "Atlanta Hawks",
+      "team": "Utah Jazz",
       "status": "under rookie contract",
       "current_contract_id": "doolike01-2000-08-08",
       "recorded_agreements": 1,
@@ -3884,7 +3884,7 @@
     {
       "player_id": "lafrera01",
       "name": "Raef LaFrentz",
-      "team": "Utah Jazz",
+      "team": "Atlanta Hawks",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
