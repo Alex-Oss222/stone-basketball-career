@@ -2,9 +2,9 @@
 
 # Contract | Troy Murphy
 
-Known through: 2004-11-02. [Open interactive contract](murphtr01.html#contract) · [Contract history](murphtr01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](murphtr01.html#contract) · [Contract history](murphtr01.html#contract-history)
 
-Troy Murphy: under rookie contract. Evidence cutoff: 2004-11-02.
+Troy Murphy: under rookie contract. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 

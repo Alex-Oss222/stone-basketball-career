@@ -2,9 +2,9 @@
 
 # Contract | Keith Van Horn
 
-Known through: 2004-11-02. [Open interactive contract](vanhoke01.html#contract) · [Contract history](vanhoke01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](vanhoke01.html#contract) · [Contract history](vanhoke01.html#contract-history)
 
-Keith Van Horn: under contract. Evidence cutoff: 2004-11-02.
+Keith Van Horn: under contract. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 
@@ -127,7 +127,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Keith Van Horn |
-| Club / rights baseline | New York Knicks |
+| Club / rights baseline | San Antonio Spurs |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

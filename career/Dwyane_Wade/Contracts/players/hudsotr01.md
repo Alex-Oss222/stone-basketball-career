@@ -2,9 +2,9 @@
 
 # Contract | Troy Hudson
 
-Known through: 2004-11-02. [Open interactive contract](hudsotr01.html#contract) · [Contract history](hudsotr01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](hudsotr01.html#contract) · [Contract history](hudsotr01.html#contract-history)
 
-Troy Hudson: under contract unverified. Evidence cutoff: 2004-11-02.
+Troy Hudson: under contract unverified. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Troy Hudson |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Charlotte Bobcats |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

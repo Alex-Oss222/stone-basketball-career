@@ -2,7 +2,7 @@
 
 # Contract negotiation | Dwyane Wade
 
-Career date: 2004-11-02 · Miami Heat · inactive
+Career date: 2004-11-14 · Miami Heat · inactive
 
 [Live milestone desk](index.html#contract_negotiation) · [All milestones](README.md)
 
@@ -76,10 +76,11 @@ Miami records its actual first offer; the player then chooses a response.
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
-- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/depth_chart.json)
+- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json)
+- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/rotation.json)
+- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
 - [Closed game](../2004-05/05_Preseason/Game_2.md)
@@ -88,4 +89,11 @@ Miami records its actual first offer; the player then chooses a response.
 - [Closed game](../2004-05/05_Preseason/Game_5.md)
 - [Closed game](../2004-05/05_Preseason/Game_6.md)
 - [Closed game](../2004-05/05_Preseason/Game_7.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_1/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_1/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_1/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_2/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

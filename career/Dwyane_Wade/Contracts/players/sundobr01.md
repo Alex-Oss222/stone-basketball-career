@@ -2,9 +2,9 @@
 
 # Contract | Bruno Šundov
 
-Known through: 2004-11-02. [Open interactive contract](sundobr01.html#contract) · [Contract history](sundobr01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](sundobr01.html#contract) · [Contract history](sundobr01.html#contract-history)
 
-Bruno Šundov: minimum contract unverified. Evidence cutoff: 2004-11-02.
+Bruno Šundov: minimum contract unverified. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Bruno Šundov |
-| Club / rights baseline | Phoenix Suns |
+| Club / rights baseline | Dallas Mavericks |
 | Control status | minimum_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

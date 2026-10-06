@@ -3,6 +3,7 @@
 
   python scripts/import_jerseys.py --season 2004-05 --pages DIR --fetch --write
   python scripts/import_jerseys.py --season 2003-04 --pages DIR --check
+  python scripts/import_jerseys.py --season 2005-06 --pages DIR --fetch --write
 
 Team pages (https://www.basketball-reference.com/teams/{ABBR}/{YEAR}.html) are cached as DIR/{ABBR}.html;
 --fetch downloads the missing ones, one request every 3.5 seconds (Basketball-Reference crawl limit). Only the
@@ -35,6 +36,9 @@ CLUBS = [("ATL", "Atlanta Hawks"), ("BOS", "Boston Celtics"), ("CHA", "Charlotte
 SEASONS = {
     "2003-04": {"researched": "2026-10-05", "clubs": [c for c in CLUBS if c[0] != "CHA"]},
     "2004-05": {"researched": "2026-10-05", "clubs": CLUBS},
+    # The Hornets played 2005-06 in Oklahoma City after Hurricane Katrina (Basketball-Reference code NOK).
+    "2005-06": {"researched": "2026-10-06",
+                "clubs": [("NOK", "New Orleans/Oklahoma City Hornets") if c[0] == "NOH" else c for c in CLUBS]},
 }
 PATTERN = "https://www.basketball-reference.com/teams/{ABBR}/%d.html"
 WADE_NOTE = ("The real Dwyane Wade is not recorded here: the simulated Wade's uniform number is set by a "

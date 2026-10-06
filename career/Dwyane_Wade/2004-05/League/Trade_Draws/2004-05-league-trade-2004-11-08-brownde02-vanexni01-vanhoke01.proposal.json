@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2004-11-08-brownde02-vanexni01-vanhoke01",
+ "date": "2004-11-08",
+ "clubs": [
+  "New York Knicks",
+  "San Antonio Spurs"
+ ],
+ "a": {
+  "club": "New York Knicks",
+  "sends": [
+   "Keith Van Horn"
+  ],
+  "bbr_ids": [
+   "vanhoke01"
+  ],
+  "salary": 14487000
+ },
+ "b": {
+  "club": "San Antonio Spurs",
+  "sends": [
+   "Nick Van Exel",
+   "Devin Brown"
+  ],
+  "bbr_ids": [
+   "vanexni01",
+   "brownde02"
+  ],
+  "salary": 12628298
+ },
+ "gain": {
+  "New York Knicks": 0.735,
+  "San Antonio Spurs": 0.545
+ },
+ "accept": {
+  "New York Knicks": 0.95,
+  "San Antonio Spurs": 0.95
+ },
+ "both": 0.9025
+}

@@ -3,6 +3,7 @@
 
   python scripts/import_defense.py --check                    # 2002-03 (default)
   python scripts/import_defense.py --season 2003-04 --write
+  python scripts/import_defense.py --season 2004-05 --write
 
 Reads the pinned Basketball-Reference advanced table (sumitrodatta/nba-alt-awards copy), verifies its
 SHA-256, keeps only that season's NBA rows, takes a traded player's season-total row (TOT/2TM/3TM) once
@@ -34,6 +35,8 @@ NOTE = ("Defensive Box Plus/Minus for the completed {season} regular season (a t
 SEASONS = {
     "2002-03": {"as_of": "2003-06-26", "retrieved_on": "2026-10-04"},
     "2003-04": {"as_of": "2004-04-15", "retrieved_on": "2026-10-05",
+                "excluded": {"wadedw01": "the historical Dwyane Wade: his real statistics never enter the simulation"}},
+    "2004-05": {"as_of": "2005-04-21", "retrieved_on": "2026-10-06",
                 "excluded": {"wadedw01": "the historical Dwyane Wade: his real statistics never enter the simulation"}},
 }
 DEFAULT_SEASON = "2002-03"

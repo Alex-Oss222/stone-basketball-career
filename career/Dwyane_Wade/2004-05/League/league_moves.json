@@ -148,9 +148,1146 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 7.53 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-03-waive-cabarza01",
+   "date": "2004-11-03",
+   "kind": "waive",
+   "player": "Žarko Čabarkapa",
+   "bbr_id": "cabarza01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "Žarko Čabarkapa",
+    "bbr_id": "cabarza01",
+    "position": "PF",
+    "games": 40,
+    "minutes": 475
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-05"
+  },
+  {
+   "id": "2004-05-market-2004-11-03-rest_of_season-mihmch01",
+   "date": "2004-11-03",
+   "kind": "rest_of_season",
+   "player": "Chris Mihm",
+   "bbr_id": "mihmch01",
+   "from": null,
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Chris Mihm",
+    "bbr_id": "mihmch01",
+    "position": "C",
+    "games": 75,
+    "minutes": 1870
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 7.51 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-03-waive-jacksje01",
+   "date": "2004-11-03",
+   "kind": "waive",
+   "player": "Jermaine Jackson",
+   "bbr_id": "jacksje01",
+   "from": "Utah Jazz",
+   "to": null,
+   "role": {
+    "player_id": "Jermaine Jackson",
+    "bbr_id": "jacksje01",
+    "position": "SG",
+    "games": 21,
+    "minutes": 230
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-05"
+  },
+  {
+   "id": "2004-05-market-2004-11-03-rest_of_season-surabo01",
+   "date": "2004-11-03",
+   "kind": "rest_of_season",
+   "player": "Bob Sura",
+   "bbr_id": "surabo01",
+   "from": null,
+   "to": "Utah Jazz",
+   "role": {
+    "player_id": "Bob Sura",
+    "bbr_id": "surabo01",
+    "position": "PG",
+    "games": 61,
+    "minutes": 1922
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.95 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-clear-duhonch01",
+   "date": "2004-11-04",
+   "kind": "clear",
+   "player": "Chris Duhon",
+   "bbr_id": "duhonch01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Chris Duhon",
+    "bbr_id": "duhonch01",
+    "position": "PG",
+    "games": 82,
+    "minutes": 2177
+   },
+   "contract": null,
+   "note": "cleared waivers from Phoenix Suns: a free agent",
+   "waiver": "2004-05-market-2004-11-02-waive-duhonch01"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-clear-iveyro01",
+   "date": "2004-11-04",
+   "kind": "clear",
+   "player": "Royal Ivey",
+   "bbr_id": "iveyro01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Royal Ivey",
+    "bbr_id": "iveyro01",
+    "position": "PG",
+    "games": 62,
+    "minutes": 809
+   },
+   "contract": null,
+   "note": "cleared waivers from Utah Jazz: a free agent",
+   "waiver": "2004-05-market-2004-11-02-waive-iveyro01"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-waive-lampema01",
+   "date": "2004-11-04",
+   "kind": "waive",
+   "player": "Maciej Lampe",
+   "bbr_id": "lampema01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "Maciej Lampe",
+    "bbr_id": "lampema01",
+    "position": "C",
+    "games": 37,
+    "minutes": 380
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-06"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-rest_of_season-grantho01",
+   "date": "2004-11-04",
+   "kind": "rest_of_season",
+   "player": "Horace Grant",
+   "bbr_id": "grantho01",
+   "from": null,
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Horace Grant",
+    "bbr_id": "grantho01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.83 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-waive-zhizhwa01",
+   "date": "2004-11-04",
+   "kind": "waive",
+   "player": "Wang Zhizhi",
+   "bbr_id": "zhizhwa01",
+   "from": "Utah Jazz",
+   "to": null,
+   "role": {
+    "player_id": "Wang Zhizhi",
+    "bbr_id": "zhizhwa01",
+    "position": "C",
+    "games": 16,
+    "minutes": 114
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-06"
+  },
+  {
+   "id": "2004-05-market-2004-11-04-rest_of_season-rogerro01",
+   "date": "2004-11-04",
+   "kind": "rest_of_season",
+   "player": "Rodney Rogers",
+   "bbr_id": "rogerro01",
+   "from": null,
+   "to": "Utah Jazz",
+   "role": {
+    "player_id": "Rodney Rogers",
+    "bbr_id": "rogerro01",
+    "position": "SF",
+    "games": 58,
+    "minutes": 1367
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.8 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-05-claim-cabarza01",
+   "date": "2004-11-05",
+   "kind": "claim",
+   "player": "Žarko Čabarkapa",
+   "bbr_id": "cabarza01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Žarko Čabarkapa",
+    "bbr_id": "cabarza01",
+    "position": "PF",
+    "games": 40,
+    "minutes": 475
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Phoenix Suns (worst record first)",
+   "waiver": "2004-05-market-2004-11-03-waive-cabarza01"
+  },
+  {
+   "id": "2004-05-market-2004-11-05-clear-jacksje01",
+   "date": "2004-11-05",
+   "kind": "clear",
+   "player": "Jermaine Jackson",
+   "bbr_id": "jacksje01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Jermaine Jackson",
+    "bbr_id": "jacksje01",
+    "position": "SG",
+    "games": 21,
+    "minutes": 230
+   },
+   "contract": null,
+   "note": "cleared waivers from Utah Jazz: a free agent",
+   "waiver": "2004-05-market-2004-11-03-waive-jacksje01"
+  },
+  {
+   "id": "2004-05-market-2004-11-05-waive-sundobr01",
+   "date": "2004-11-05",
+   "kind": "waive",
+   "player": "Bruno Šundov",
+   "bbr_id": "sundobr01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "Bruno Šundov",
+    "bbr_id": "sundobr01",
+    "position": "C",
+    "games": 21,
+    "minutes": 73
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-07"
+  },
+  {
+   "id": "2004-05-market-2004-11-05-rest_of_season-cheanca01",
+   "date": "2004-11-05",
+   "kind": "rest_of_season",
+   "player": "Calbert Cheaney",
+   "bbr_id": "cheanca01",
+   "from": null,
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Calbert Cheaney",
+    "bbr_id": "cheanca01",
+    "position": "SG",
+    "games": 55,
+    "minutes": 951
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.55 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-05-waive-goldwan01",
+   "date": "2004-11-05",
+   "kind": "waive",
+   "player": "Anthony Goldwire",
+   "bbr_id": "goldwan01",
+   "from": "Utah Jazz",
+   "to": null,
+   "role": {
+    "player_id": "Anthony Goldwire",
+    "bbr_id": "goldwan01",
+    "position": "PG",
+    "games": 33,
+    "minutes": 537
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-07"
+  },
+  {
+   "id": "2004-05-market-2004-11-05-rest_of_season-johnsan02",
+   "date": "2004-11-05",
+   "kind": "rest_of_season",
+   "player": "Anthony Johnson",
+   "bbr_id": "johnsan02",
+   "from": null,
+   "to": "Utah Jazz",
+   "role": {
+    "player_id": "Anthony Johnson",
+    "bbr_id": "johnsan02",
+    "position": "PG",
+    "games": 63,
+    "minutes": 1747
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.38 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-06-claim-lampema01",
+   "date": "2004-11-06",
+   "kind": "claim",
+   "player": "Maciej Lampe",
+   "bbr_id": "lampema01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Maciej Lampe",
+    "bbr_id": "lampema01",
+    "position": "C",
+    "games": 37,
+    "minutes": 380
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Phoenix Suns (worst record first)",
+   "waiver": "2004-05-market-2004-11-04-waive-lampema01"
+  },
+  {
+   "id": "2004-05-market-2004-11-06-claim-zhizhwa01",
+   "date": "2004-11-06",
+   "kind": "claim",
+   "player": "Wang Zhizhi",
+   "bbr_id": "zhizhwa01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Wang Zhizhi",
+    "bbr_id": "zhizhwa01",
+    "position": "C",
+    "games": 16,
+    "minutes": 114
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Utah Jazz (worst record first)",
+   "waiver": "2004-05-market-2004-11-04-waive-zhizhwa01"
+  },
+  {
+   "id": "2004-05-market-2004-11-06-waive-bobbito01",
+   "date": "2004-11-06",
+   "kind": "waive",
+   "player": "Tony Bobbitt",
+   "bbr_id": "bobbito01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Tony Bobbitt",
+    "bbr_id": "bobbito01",
+    "position": "SG",
+    "games": 2,
+    "minutes": 12
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-08"
+  },
+  {
+   "id": "2004-05-market-2004-11-06-rest_of_season-hillty01",
+   "date": "2004-11-06",
+   "kind": "rest_of_season",
+   "player": "Tyrone Hill",
+   "bbr_id": "hillty01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Tyrone Hill",
+    "bbr_id": "hillty01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.0 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-claim-sundobr01",
+   "date": "2004-11-07",
+   "kind": "claim",
+   "player": "Bruno Šundov",
+   "bbr_id": "sundobr01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "role": {
+    "player_id": "Bruno Šundov",
+    "bbr_id": "sundobr01",
+    "position": "C",
+    "games": 21,
+    "minutes": 73
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Phoenix Suns (worst record first)",
+   "waiver": "2004-05-market-2004-11-05-waive-sundobr01"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-claim-goldwan01",
+   "date": "2004-11-07",
+   "kind": "claim",
+   "player": "Anthony Goldwire",
+   "bbr_id": "goldwan01",
+   "from": null,
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Anthony Goldwire",
+    "bbr_id": "goldwan01",
+    "position": "PG",
+    "games": 33,
+    "minutes": 537
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Utah Jazz (worst record first)",
+   "waiver": "2004-05-market-2004-11-05-waive-goldwan01"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-waive-cabarza01",
+   "date": "2004-11-07",
+   "kind": "waive",
+   "player": "Žarko Čabarkapa",
+   "bbr_id": "cabarza01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Žarko Čabarkapa",
+    "bbr_id": "cabarza01",
+    "position": "PF",
+    "games": 40,
+    "minutes": 475
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-09"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-rest_of_season-doolike01",
+   "date": "2004-11-07",
+   "kind": "rest_of_season",
+   "player": "Keyon Dooling",
+   "bbr_id": "doolike01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Keyon Dooling",
+    "bbr_id": "doolike01",
+    "position": "PG",
+    "games": 58,
+    "minutes": 1137
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.33 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-waive-brunsri01",
+   "date": "2004-11-07",
+   "kind": "waive",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": "Charlotte Bobcats",
+   "to": null,
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 80,
+    "minutes": 1945
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-09"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-rest_of_season-belltr01",
+   "date": "2004-11-07",
+   "kind": "rest_of_season",
+   "player": "Troy Bell",
+   "bbr_id": "belltr01",
+   "from": null,
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Troy Bell",
+    "bbr_id": "belltr01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.31 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-waive-harriju01",
+   "date": "2004-11-07",
+   "kind": "waive",
+   "player": "Junior Harrington",
+   "bbr_id": "harriju01",
+   "from": "Dallas Mavericks",
+   "to": null,
+   "role": {
+    "player_id": "Junior Harrington",
+    "bbr_id": "harriju01",
+    "position": "SG",
+    "games": 29,
+    "minutes": 550
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-09"
+  },
+  {
+   "id": "2004-05-market-2004-11-07-rest_of_season-clarkke01",
+   "date": "2004-11-07",
+   "kind": "rest_of_season",
+   "player": "Keon Clark",
+   "bbr_id": "clarkke01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "role": {
+    "player_id": "Keon Clark",
+    "bbr_id": "clarkke01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.4 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-08-clear-bobbito01",
+   "date": "2004-11-08",
+   "kind": "clear",
+   "player": "Tony Bobbitt",
+   "bbr_id": "bobbito01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Tony Bobbitt",
+    "bbr_id": "bobbito01",
+    "position": "SG",
+    "games": 2,
+    "minutes": 12
+   },
+   "contract": null,
+   "note": "cleared waivers from Atlanta Hawks: a free agent",
+   "waiver": "2004-05-market-2004-11-06-waive-bobbito01"
+  },
+  {
+   "id": "2004-05-market-2004-11-08-waive-smithth01",
+   "date": "2004-11-08",
+   "kind": "waive",
+   "player": "Theron Smith",
+   "bbr_id": "smithth01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Theron Smith",
+    "bbr_id": "smithth01",
+    "position": "SF",
+    "games": 33,
+    "minutes": 510
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-10"
+  },
+  {
+   "id": "2004-05-market-2004-11-08-rest_of_season-boumtru01",
+   "date": "2004-11-08",
+   "kind": "rest_of_season",
+   "player": "Ruben Boumtje-Boumtje",
+   "bbr_id": "boumtru01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Ruben Boumtje-Boumtje",
+    "bbr_id": "boumtru01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.28 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-08-waive-korveky01",
+   "date": "2004-11-08",
+   "kind": "waive",
+   "player": "Kyle Korver",
+   "bbr_id": "korveky01",
+   "from": "Charlotte Bobcats",
+   "to": null,
+   "role": {
+    "player_id": "Kyle Korver",
+    "bbr_id": "korveky01",
+    "position": "SF",
+    "games": 82,
+    "minutes": 2667
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-10"
+  },
+  {
+   "id": "2004-05-market-2004-11-08-rest_of_season-trentga01",
+   "date": "2004-11-08",
+   "kind": "rest_of_season",
+   "player": "Gary Trent",
+   "bbr_id": "trentga01",
+   "from": null,
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Gary Trent",
+    "bbr_id": "trentga01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.2 x fit"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-08-brownde02-vanexni01-vanhoke01",
+   "date": "2004-11-08",
+   "kind": "trade",
+   "player": "Keith Van Horn",
+   "bbr_id": "vanhoke01",
+   "from": "New York Knicks",
+   "to": "San Antonio Spurs"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-08-brownde02-vanexni01-vanhoke01",
+   "date": "2004-11-08",
+   "kind": "trade",
+   "player": "Nick Van Exel",
+   "bbr_id": "vanexni01",
+   "from": "San Antonio Spurs",
+   "to": "New York Knicks"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-08-brownde02-vanexni01-vanhoke01",
+   "date": "2004-11-08",
+   "kind": "trade",
+   "player": "Devin Brown",
+   "bbr_id": "brownde02",
+   "from": "San Antonio Spurs",
+   "to": "New York Knicks"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-08-hillgr01-luety01-sprewla01",
+   "date": "2004-11-08",
+   "kind": "trade",
+   "player": "Latrell Sprewell",
+   "bbr_id": "sprewla01",
+   "from": "Minnesota Timberwolves",
+   "to": "Orlando Magic"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-08-hillgr01-luety01-sprewla01",
+   "date": "2004-11-08",
+   "kind": "trade",
+   "player": "Grant Hill",
+   "bbr_id": "hillgr01",
+   "from": "Orlando Magic",
+   "to": "Minnesota Timberwolves"
+  },
+  {
+   "deal": "2004-05-league-trade-2004-11-08-hillgr01-luety01-sprewla01",
+   "date": "2004-11-08",
+   "kind": "trade",
+   "player": "Tyronn Lue",
+   "bbr_id": "luety01",
+   "from": "Orlando Magic",
+   "to": "Minnesota Timberwolves"
+  },
+  {
+   "id": "2004-05-market-2004-11-09-claim-cabarza01",
+   "date": "2004-11-09",
+   "kind": "claim",
+   "player": "Žarko Čabarkapa",
+   "bbr_id": "cabarza01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Žarko Čabarkapa",
+    "bbr_id": "cabarza01",
+    "position": "PF",
+    "games": 40,
+    "minutes": 475
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Atlanta Hawks (worst record first)",
+   "waiver": "2004-05-market-2004-11-07-waive-cabarza01"
+  },
+  {
+   "id": "2004-05-market-2004-11-09-claim-brunsri01",
+   "date": "2004-11-09",
+   "kind": "claim",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 80,
+    "minutes": 1945
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Charlotte Bobcats (worst record first)",
+   "waiver": "2004-05-market-2004-11-07-waive-brunsri01"
+  },
+  {
+   "id": "2004-05-market-2004-11-09-clear-harriju01",
+   "date": "2004-11-09",
+   "kind": "clear",
+   "player": "Junior Harrington",
+   "bbr_id": "harriju01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Junior Harrington",
+    "bbr_id": "harriju01",
+    "position": "SG",
+    "games": 29,
+    "minutes": 550
+   },
+   "contract": null,
+   "note": "cleared waivers from Dallas Mavericks: a free agent",
+   "waiver": "2004-05-market-2004-11-07-waive-harriju01"
+  },
+  {
+   "id": "2004-05-market-2004-11-09-waive-woodsqy01",
+   "date": "2004-11-09",
+   "kind": "waive",
+   "player": "Qyntel Woods",
+   "bbr_id": "woodsqy01",
+   "from": "Charlotte Bobcats",
+   "to": null,
+   "role": {
+    "player_id": "Qyntel Woods",
+    "bbr_id": "woodsqy01",
+    "position": "SF",
+    "games": 62,
+    "minutes": 673
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-11"
+  },
+  {
+   "id": "2004-05-market-2004-11-09-rest_of_season-hudsotr01",
+   "date": "2004-11-09",
+   "kind": "rest_of_season",
+   "player": "Troy Hudson",
+   "bbr_id": "hudsotr01",
+   "from": null,
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Troy Hudson",
+    "bbr_id": "hudsotr01",
+    "position": "PG",
+    "games": 79,
+    "minutes": 1729
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.27 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-claim-smithth01",
+   "date": "2004-11-10",
+   "kind": "claim",
+   "player": "Theron Smith",
+   "bbr_id": "smithth01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Theron Smith",
+    "bbr_id": "smithth01",
+    "position": "SF",
+    "games": 33,
+    "minutes": 510
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Atlanta Hawks (worst record first)",
+   "waiver": "2004-05-market-2004-11-08-waive-smithth01"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-claim-korveky01",
+   "date": "2004-11-10",
+   "kind": "claim",
+   "player": "Kyle Korver",
+   "bbr_id": "korveky01",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Kyle Korver",
+    "bbr_id": "korveky01",
+    "position": "SF",
+    "games": 82,
+    "minutes": 2667
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Charlotte Bobcats (worst record first)",
+   "waiver": "2004-05-market-2004-11-08-waive-korveky01"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-waive-carlige01",
+   "date": "2004-11-10",
+   "kind": "waive",
+   "player": "Geno Carlisle",
+   "bbr_id": "carlige01",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Geno Carlisle",
+    "bbr_id": "carlige01",
+    "position": "SG",
+    "games": 6,
+    "minutes": 16
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-12"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-rest_of_season-martida01",
+   "date": "2004-11-10",
+   "kind": "rest_of_season",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Darrick Martin",
+    "bbr_id": "martida01",
+    "position": "PG",
+    "games": 11,
+    "minutes": 190
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.92 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-waive-reineja01",
+   "date": "2004-11-10",
+   "kind": "waive",
+   "player": "Jared Reiner",
+   "bbr_id": "reineja01",
+   "from": "Sacramento Kings",
+   "to": null,
+   "role": {
+    "player_id": "Jared Reiner",
+    "bbr_id": "reineja01",
+    "position": "C",
+    "games": 19,
+    "minutes": 132
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-12"
+  },
+  {
+   "id": "2004-05-market-2004-11-10-rest_of_season-foylead01",
+   "date": "2004-11-10",
+   "kind": "rest_of_season",
+   "player": "Adonal Foyle",
+   "bbr_id": "foylead01",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Adonal Foyle",
+    "bbr_id": "foylead01",
+    "position": "C",
+    "games": 78,
+    "minutes": 1700
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.85 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-11-claim-woodsqy01",
+   "date": "2004-11-11",
+   "kind": "claim",
+   "player": "Qyntel Woods",
+   "bbr_id": "woodsqy01",
+   "from": null,
+   "to": "Los Angeles Lakers",
+   "role": {
+    "player_id": "Qyntel Woods",
+    "bbr_id": "woodsqy01",
+    "position": "SF",
+    "games": 62,
+    "minutes": 673
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Charlotte Bobcats (worst record first)",
+   "waiver": "2004-05-market-2004-11-09-waive-woodsqy01"
+  },
+  {
+   "id": "2004-05-market-2004-11-11-waive-allenma01",
+   "date": "2004-11-11",
+   "kind": "waive",
+   "player": "allenma01",
+   "bbr_id": "allenma01",
+   "from": "Los Angeles Lakers",
+   "to": null,
+   "role": {
+    "player_id": "allenma01",
+    "bbr_id": "allenma01",
+    "position": "SF",
+    "games": 26,
+    "minutes": 519
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-13"
+  },
+  {
+   "id": "2004-05-market-2004-11-11-rest_of_season-smithle01",
+   "date": "2004-11-11",
+   "kind": "rest_of_season",
+   "player": "Leon Smith",
+   "bbr_id": "smithle01",
+   "from": null,
+   "to": "Los Angeles Lakers",
+   "role": {
+    "player_id": "Leon Smith",
+    "bbr_id": "smithle01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.81 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-11-waive-brunsri01",
+   "date": "2004-11-11",
+   "kind": "waive",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 80,
+    "minutes": 1945
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-13"
+  },
+  {
+   "id": "2004-05-market-2004-11-11-rest_of_season-grantpa01",
+   "date": "2004-11-11",
+   "kind": "rest_of_season",
+   "player": "Paul Grant",
+   "bbr_id": "grantpa01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Paul Grant",
+    "bbr_id": "grantpa01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.79 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-12-clear-carlige01",
+   "date": "2004-11-12",
+   "kind": "clear",
+   "player": "Geno Carlisle",
+   "bbr_id": "carlige01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Geno Carlisle",
+    "bbr_id": "carlige01",
+    "position": "SG",
+    "games": 6,
+    "minutes": 16
+   },
+   "contract": null,
+   "note": "cleared waivers from Portland Trail Blazers: a free agent",
+   "waiver": "2004-05-market-2004-11-10-waive-carlige01"
+  },
+  {
+   "id": "2004-05-market-2004-11-12-clear-reineja01",
+   "date": "2004-11-12",
+   "kind": "clear",
+   "player": "Jared Reiner",
+   "bbr_id": "reineja01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Jared Reiner",
+    "bbr_id": "reineja01",
+    "position": "C",
+    "games": 19,
+    "minutes": 132
+   },
+   "contract": null,
+   "note": "cleared waivers from Sacramento Kings: a free agent",
+   "waiver": "2004-05-market-2004-11-10-waive-reineja01"
+  },
+  {
+   "id": "2004-05-market-2004-11-13-clear-allenma01",
+   "date": "2004-11-13",
+   "kind": "clear",
+   "player": "allenma01",
+   "bbr_id": "allenma01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "allenma01",
+    "bbr_id": "allenma01",
+    "position": "SF",
+    "games": 26,
+    "minutes": 519
+   },
+   "contract": null,
+   "note": "cleared waivers from Los Angeles Lakers: a free agent",
+   "waiver": "2004-05-market-2004-11-11-waive-allenma01"
+  },
+  {
+   "id": "2004-05-market-2004-11-13-clear-brunsri01",
+   "date": "2004-11-13",
+   "kind": "clear",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 80,
+    "minutes": 1945
+   },
+   "contract": null,
+   "note": "cleared waivers from Portland Trail Blazers: a free agent",
+   "waiver": "2004-05-market-2004-11-11-waive-brunsri01"
   }
  ],
  "market_days": [
-  "2004-11-02"
+  "2004-11-02",
+  "2004-11-03",
+  "2004-11-04",
+  "2004-11-05",
+  "2004-11-06",
+  "2004-11-07",
+  "2004-11-08",
+  "2004-11-09",
+  "2004-11-10",
+  "2004-11-11",
+  "2004-11-12",
+  "2004-11-13",
+  "2004-11-14"
  ]
 }

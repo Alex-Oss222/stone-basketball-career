@@ -1,0 +1,112 @@
+{
+ "schema_version": 1,
+ "season": "2004-05",
+ "kind": "award_decisions",
+ "rule": "Each award is split East and West (from 2001-02, `nba_awards_catalog.json`). An award closes on its\nannouncement date and only from closed regular-season results dated inside its period\n(`write_back.closed_results`), so no later game, real winner or historical vote enters it.\n\nPeriods (judgement, from the NBA's calendar of the era):\n- Player of the Week: Monday to Sunday (the opening week runs from opening night, October 28), announced\n  the Monday after; the final week ends on the last regular-season day.\n- Player and Rookie of the Month: calendar months, October folded into November because the season opened\n  October 28; announced two days after the month ends. The exact announcement day is an assumption.\n\nSelection: the league office named the winners without a published ballot, so the branch ranks the\nevidence. Each game is scored with Hollinger's Game Score (PTS + 0.4 FGM - 0.7 FGA - 0.4 missed FT\n+ 0.7 ORB + 0.3 DRB + STL + 0.7 AST + 0.7 BLK - 0.4 PF - TOV), and winning counts:\n- Player of the Week: at least two games; total Game Score + 3 per club win in his games.\n- Player of the Month: at least 60% of his club's games in the period; Game Score per game + 12 x his club's\n  win share in his games.\n- Rookie of the Month: first-season players (the registry's 2003 draft class and sourced identities with no earlier\n  NBA season); at least\n  half his club's games; Game Score per game + 4 x win share.\nThe highest score wins; the next two are the published shortlist. Decisions are appended once to\n`award_decisions.json` and never recomputed. A Wade win is added to his `awards.json` with the page as its\nsource. Rules apply to every player alike: no seniority, reputation or market bonus.",
+ "decisions": [
+  {
+   "id": "2004-05-player_of_week-2004-11-02-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-11-02",
+   "period_end": "2004-11-07",
+   "announced_on": "2004-11-08",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/11_November/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Jermaine O'Neal",
+     "team": "Indiana Pacers",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 33.0,
+     "reb": 7.3,
+     "ast": 1.3,
+     "game_score": 26.17,
+     "score": 84.5,
+     "rank": 1
+    },
+    {
+     "player": "Allen Iverson",
+     "team": "Philadelphia 76ers",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 27.0,
+     "reb": 4.3,
+     "ast": 11.7,
+     "game_score": 20.3,
+     "score": 69.9,
+     "rank": 2
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 25.7,
+     "reb": 8.3,
+     "ast": 7.0,
+     "game_score": 20.7,
+     "score": 68.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Jermaine O'Neal"
+  },
+  {
+   "id": "2004-05-player_of_week-2004-11-02-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-11-02",
+   "period_end": "2004-11-07",
+   "announced_on": "2004-11-08",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/11_November/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 23.2,
+     "reb": 5.0,
+     "ast": 6.2,
+     "game_score": 17.4,
+     "score": 75.6,
+     "rank": 1
+    },
+    {
+     "player": "Shaquille O'Neal",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 22.2,
+     "reb": 7.2,
+     "ast": 4.0,
+     "game_score": 16.83,
+     "score": 73.3,
+     "rank": 2
+    },
+    {
+     "player": "Tim Duncan",
+     "team": "San Antonio Spurs",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 24.0,
+     "reb": 8.3,
+     "ast": 3.0,
+     "game_score": 21.23,
+     "score": 72.7,
+     "rank": 3
+    }
+   ],
+   "winner": "Kobe Bryant"
+  }
+ ]
+}

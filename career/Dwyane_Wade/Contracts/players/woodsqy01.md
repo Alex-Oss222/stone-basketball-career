@@ -2,9 +2,9 @@
 
 # Contract | Qyntel Woods
 
-Known through: 2004-11-02. [Open interactive contract](woodsqy01.html#contract) · [Contract history](woodsqy01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](woodsqy01.html#contract) · [Contract history](woodsqy01.html#contract-history)
 
-Qyntel Woods: under rookie contract. Evidence cutoff: 2004-11-02.
+Qyntel Woods: under rookie contract. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 
@@ -123,7 +123,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Qyntel Woods |
-| Club / rights baseline | Charlotte Bobcats |
+| Club / rights baseline | Los Angeles Lakers |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

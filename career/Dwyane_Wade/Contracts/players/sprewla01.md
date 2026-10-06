@@ -2,9 +2,9 @@
 
 # Contract | Latrell Sprewell
 
-Known through: 2004-11-02. [Open interactive contract](sprewla01.html#contract) · [Contract history](sprewla01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](sprewla01.html#contract) · [Contract history](sprewla01.html#contract-history)
 
-Latrell Sprewell: under contract. Evidence cutoff: 2004-11-02.
+Latrell Sprewell: under contract. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 
@@ -119,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Latrell Sprewell |
-| Club / rights baseline | Minnesota Timberwolves |
+| Club / rights baseline | Orlando Magic |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Ronald Dupree
 
-Known through: 2004-11-02. [Open interactive contract](duprero01.html#contract) · [Contract history](duprero01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](duprero01.html#contract) · [Contract history](duprero01.html#contract-history)
 
-Ronald Dupree: under contract. Evidence cutoff: 2004-11-02.
+Ronald Dupree: under contract. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 

@@ -1,0 +1,338 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "season": "2004-05",
+ "as_of": "2004-11-11",
+ "assessment_date": "2004-10-28",
+ "prior_minutes": 300.0,
+ "score_minutes": 30.0,
+ "prior_scores": {
+  "Eddie Jones": 7.515,
+  "Brian Grant": 11.426,
+  "Scott Padgett": 12.799,
+  "Mike James": 14.311,
+  "Mehmet Okur": 13.666,
+  "Dwyane Wade": 20.561,
+  "Caron Butler": 10.73,
+  "Kendall Gill": 7.239,
+  "Dorell Wright": 6.527,
+  "John Thomas": 5.0,
+  "Maurice Evans": 5.0,
+  "Udonis Haslem": 10.914,
+  "Maurice Baker": 5.0,
+  "John Edwards": 5.0,
+  "Stephen Jackson": 6.253,
+  "Bob Sura": 6.739,
+  "Calbert Cheaney": 6.655,
+  "Rafer Alston": 9.749,
+  "Chris Mihm": 7.643,
+  "Derek Fisher": 7.445
+ },
+ "evidence_cutoff": "game_date strictly before review date",
+ "sources": [
+  {
+   "event_id": "2004-11-03-miami-heat-at-new-jersey-nets",
+   "date": "2004-11-03",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_1/Game_1.result.json",
+   "sha256": "c58b4137bfe4ebba2976f24d1f12ed460e1befdb7b7f7b83f98e40a58f61fe14"
+  },
+  {
+   "event_id": "2004-11-04-cleveland-cavaliers-at-miami-heat",
+   "date": "2004-11-04",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_1/Game_2.result.json",
+   "sha256": "276909cbd963b1e4badf6b5ee806d3d29660de9cfe84b16c63399baf1c9d2338"
+  },
+  {
+   "event_id": "2004-11-06-miami-heat-at-washington-wizards",
+   "date": "2004-11-06",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_1/Game_3.result.json",
+   "sha256": "5b9bd9fe76ed0bfab0df31a98aeb67d3f862449c28a37adc7ad7e2c4571c2d8d"
+  },
+  {
+   "event_id": "2004-11-09-washington-wizards-at-miami-heat",
+   "date": "2004-11-09",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_2/Game_1.result.json",
+   "sha256": "494f443af403e19499863086ed47a86216a2d706566722f2523077d3224c6101"
+  }
+ ],
+ "players": [
+  {
+   "player": "Brian Grant",
+   "positions": [
+    "C",
+    "PF"
+   ],
+   "bbr_id": "grantbr01",
+   "status": "roster"
+  },
+  {
+   "player": "Caron Butler",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "butleca01",
+   "status": "roster"
+  },
+  {
+   "player": "Dorell Wright",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "wrighdo01",
+   "status": "roster"
+  },
+  {
+   "player": "Dwyane Wade",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "bbr_id": null,
+   "status": "roster"
+  },
+  {
+   "player": "Eddie Jones",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "bbr_id": "jonesed02",
+   "status": "roster"
+  },
+  {
+   "player": "John Edwards",
+   "positions": [
+    "C"
+   ],
+   "bbr_id": "edwarjo01",
+   "status": "roster"
+  },
+  {
+   "player": "John Thomas",
+   "positions": [
+    "C"
+   ],
+   "bbr_id": "thomajo02",
+   "status": "roster"
+  },
+  {
+   "player": "Kendall Gill",
+   "positions": [
+    "SG"
+   ],
+   "bbr_id": "gillke01",
+   "status": "roster"
+  },
+  {
+   "player": "Maurice Baker",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "bakerma01",
+   "status": "roster"
+  },
+  {
+   "player": "Maurice Evans",
+   "positions": [
+    "SG"
+   ],
+   "bbr_id": "evansma01",
+   "status": "roster"
+  },
+  {
+   "player": "Mehmet Okur",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "okurme01",
+   "status": "roster"
+  },
+  {
+   "player": "Mike James",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "jamesmi01",
+   "status": "roster"
+  },
+  {
+   "player": "Rafer Alston",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "alstora01",
+   "status": "roster"
+  },
+  {
+   "player": "Scott Padgett",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "padgesc01",
+   "status": "roster"
+  },
+  {
+   "player": "Udonis Haslem",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "hasleud01",
+   "status": "roster"
+  }
+ ],
+ "scores": {
+  "Brian Grant": 10.771066,
+  "Caron Butler": 11.472472,
+  "Dorell Wright": 7.310762,
+  "Dwyane Wade": 19.867544,
+  "Eddie Jones": 8.221215,
+  "John Edwards": 5.0,
+  "John Thomas": 5.0,
+  "Kendall Gill": 7.565917,
+  "Maurice Baker": 4.932805,
+  "Maurice Evans": 5.0,
+  "Mehmet Okur": 16.515458,
+  "Mike James": 12.89354,
+  "Rafer Alston": 10.004023,
+  "Scott Padgett": 12.097559,
+  "Udonis Haslem": 11.283235
+ },
+ "evidence": {
+  "Brian Grant": {
+   "games": 4,
+   "minutes": 107.36914999999999,
+   "efficiency": 32.0,
+   "preseason_estimate": 11.426,
+   "observed_per_30": 8.941116,
+   "observed_weight": 0.263567,
+   "score": 10.771066
+  },
+  "Caron Butler": {
+   "games": 3,
+   "minutes": 108.71748333333333,
+   "efficiency": 49.0,
+   "preseason_estimate": 10.73,
+   "observed_per_30": 13.521284,
+   "observed_weight": 0.265997,
+   "score": 11.472472
+  },
+  "Dorell Wright": {
+   "games": 4,
+   "minutes": 25.28756666666667,
+   "efficiency": 14.0,
+   "preseason_estimate": 6.527,
+   "observed_per_30": 16.608953,
+   "observed_weight": 0.077739,
+   "score": 7.310762
+  },
+  "Dwyane Wade": {
+   "games": 4,
+   "minutes": 132.78121666666667,
+   "efficiency": 81.0,
+   "preseason_estimate": 20.561,
+   "observed_per_30": 18.300781,
+   "observed_weight": 0.306809,
+   "score": 19.867544
+  },
+  "Eddie Jones": {
+   "games": 4,
+   "minutes": 50.860566666666664,
+   "efficiency": 21.0,
+   "preseason_estimate": 7.515,
+   "observed_per_30": 12.386807,
+   "observed_weight": 0.144959,
+   "score": 8.221215
+  },
+  "John Edwards": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 5.0
+  },
+  "John Thomas": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 5.0
+  },
+  "Kendall Gill": {
+   "games": 4,
+   "minutes": 42.54936666666667,
+   "efficiency": 14.0,
+   "preseason_estimate": 7.239,
+   "observed_per_30": 9.870887,
+   "observed_weight": 0.124214,
+   "score": 7.565917
+  },
+  "Maurice Baker": {
+   "games": 3,
+   "minutes": 16.2501,
+   "efficiency": 2.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": 3.692285,
+   "observed_weight": 0.051384,
+   "score": 4.932805
+  },
+  "Maurice Evans": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 5.0
+  },
+  "Mehmet Okur": {
+   "games": 4,
+   "minutes": 126.25521666666666,
+   "efficiency": 98.0,
+   "preseason_estimate": 13.666,
+   "observed_per_30": 23.286167,
+   "observed_weight": 0.296196,
+   "score": 16.515458
+  },
+  "Mike James": {
+   "games": 4,
+   "minutes": 119.07033333333334,
+   "efficiency": 37.0,
+   "preseason_estimate": 14.311,
+   "observed_per_30": 9.322221,
+   "observed_weight": 0.28413,
+   "score": 12.89354
+  },
+  "Rafer Alston": {
+   "games": 4,
+   "minutes": 61.32463333333334,
+   "efficiency": 23.0,
+   "preseason_estimate": 9.749,
+   "observed_per_30": 11.251596,
+   "observed_weight": 0.169722,
+   "score": 10.004023
+  },
+  "Scott Padgett": {
+   "games": 4,
+   "minutes": 94.26961666666666,
+   "efficiency": 31.0,
+   "preseason_estimate": 12.799,
+   "observed_per_30": 9.865321,
+   "observed_weight": 0.239099,
+   "score": 12.097559
+  },
+  "Udonis Haslem": {
+   "games": 4,
+   "minutes": 75.26473333333334,
+   "efficiency": 32.0,
+   "preseason_estimate": 10.914,
+   "observed_per_30": 12.754978,
+   "observed_weight": 0.200564,
+   "score": 11.283235
+  }
+ },
+ "battles": []
+}

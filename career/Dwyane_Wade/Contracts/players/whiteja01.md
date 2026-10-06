@@ -2,9 +2,9 @@
 
 # Contract | Jahidi White
 
-Known through: 2004-11-02. [Open interactive contract](whiteja01.html#contract) · [Contract history](whiteja01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](whiteja01.html#contract) · [Contract history](whiteja01.html#contract-history)
 
-Jahidi White: under contract unverified. Evidence cutoff: 2004-11-02.
+Jahidi White: under contract unverified. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 

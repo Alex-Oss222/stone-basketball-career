@@ -2,9 +2,9 @@
 
 # Contract | Wally Szczerbiak
 
-Known through: 2004-11-02. [Open interactive contract](szczewa02.html#contract) · [Contract history](szczewa02.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](szczewa02.html#contract) · [Contract history](szczewa02.html#contract-history)
 
-Wally Szczerbiak: under contract. Evidence cutoff: 2004-11-02.
+Wally Szczerbiak: under contract. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 
