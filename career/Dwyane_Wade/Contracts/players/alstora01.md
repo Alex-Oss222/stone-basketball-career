@@ -2,9 +2,9 @@
 
 # Contract | Rafer Alston
 
-Known through: 2005-01-09. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
+Known through: 2005-01-10. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
 
-Rafer Alston: camp contract. Evidence cutoff: 2005-01-09.
+Rafer Alston: camp contract. Evidence cutoff: 2005-01-10.
 
 ## Current contract
 
@@ -42,7 +42,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | $751,179 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $751,179 | Not recorded | Not recorded | $751,179 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -97,7 +97,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10.
+Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10. Guaranteed 2005-01-10: on the roster on the guarantee date.
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -106,6 +106,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated signed-contract archive](../contract_records.json)
 - [Signing / contract source](../../2004-05/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/guarantee_review.json)
 
 ### Current control and contract coverage
 
@@ -196,7 +197,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | $751,179 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $751,179 | Not recorded | Not recorded | $751,179 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -251,7 +252,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10.
+Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10. Guaranteed 2005-01-10: on the roster on the guarantee date.
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -260,6 +261,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated signed-contract archive](../contract_records.json)
 - [Signing / contract source](../../2004-05/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/guarantee_review.json)
 
 ### Rafer Alston · existing contract; signing date not recorded
 
@@ -368,3 +370,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/guarantee_review.json)

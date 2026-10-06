@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-05-league-trade-2005-01-10-andersh01-scalabr01-szczewa02",
+ "date": "2005-01-10",
+ "question": "Do Denver Nuggets and New Jersey Nets trade Wally Szczerbiak for Brian Scalabrine and Shandon Anderson?",
+ "decider": "Denver Nuggets and New Jersey Nets front offices (engine draw)",
+ "options": {
+  "accept": 0.858312,
+  "decline": 0.141688
+ },
+ "basis": "gains on own objectives {'Denver Nuggets': 0.156, 'New Jersey Nets': 0.167}; acceptance {'Denver Nuggets': 0.917, 'New Jersey Nets': 0.936}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-01-09",
+  "as_of": "2005-01-10",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -626,7 +626,7 @@
     {
       "player_id": "scalabr01",
       "name": "Brian Scalabrine",
-      "team": "New Jersey Nets",
+      "team": "Denver Nuggets",
       "status": "under contract",
       "current_contract_id": "scalabr01-2003-08-21",
       "recorded_agreements": 2,
@@ -1814,7 +1814,7 @@
     {
       "player_id": "robingl01",
       "name": "Glenn Robinson",
-      "team": "Philadelphia 76ers",
+      "team": "Cleveland Cavaliers",
       "status": "under contract",
       "current_contract_id": "robingl01-existing-22b8500d0040",
       "recorded_agreements": 1,
@@ -1850,7 +1850,7 @@
     {
       "player_id": "buckngr01",
       "name": "Greg Buckner",
-      "team": "Philadelphia 76ers",
+      "team": "Cleveland Cavaliers",
       "status": "under contract",
       "current_contract_id": "buckngr01-2002-07-25",
       "recorded_agreements": 1,
@@ -4397,7 +4397,7 @@
     {
       "player_id": "andersh01",
       "name": "Shandon Anderson",
-      "team": "New Jersey Nets",
+      "team": "Denver Nuggets",
       "status": "under contract",
       "current_contract_id": "andersh01-existing-f2497a228c70",
       "recorded_agreements": 1,
@@ -5045,7 +5045,7 @@
     {
       "player_id": "szczewa02",
       "name": "Wally Szczerbiak",
-      "team": "Denver Nuggets",
+      "team": "New Jersey Nets",
       "status": "under contract",
       "current_contract_id": "szczewa02-2002-10-30",
       "recorded_agreements": 1,
@@ -5171,7 +5171,7 @@
     {
       "player_id": "ilgauzy01",
       "name": "Zydrunas Ilgauskas",
-      "team": "Cleveland Cavaliers",
+      "team": "Philadelphia 76ers",
       "status": "under contract",
       "current_contract_id": "ilgauzy01-existing-02158f91187a",
       "recorded_agreements": 1,

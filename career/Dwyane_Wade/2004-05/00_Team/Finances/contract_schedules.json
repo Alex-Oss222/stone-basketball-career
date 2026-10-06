@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "owner": "ai_gm",
- "as_of": "2005-01-07",
+ "as_of": "2005-01-10",
  "team": "Miami Heat",
  "horizon": [
   "2004-05",
@@ -651,12 +651,12 @@
     "2004-05": "contract_salary"
    },
    "guaranteed": {
-    "2004-05": 0
+    "2004-05": 751179
    },
    "guarantee_date": "2005-01-10",
    "signed_date": "2004-10-05",
    "route": "minimum",
-   "notes": "Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10.",
+   "notes": "Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10. Guaranteed 2005-01-10: on the roster on the guarantee date.",
    "sources": [
     "04_Training_Camp/camp_roster.json"
    ]
@@ -776,7 +776,7 @@
   "kind": "existing_obligations_only",
   "currency": "USD",
   "unit": "whole dollars",
-  "known_baseline_definition": "Counted 2004-05 team salary on 2005-01-07: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+  "known_baseline_definition": "Counted 2004-05 team salary on 2005-01-10: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
   "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
   "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
   "missing_definition": "Null means unresolved or not yet projected, never zero.",

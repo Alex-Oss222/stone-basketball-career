@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2005-01-09 · Miami Heat · active
+Career date: 2005-01-10 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,7 +14,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2005-01-09 |
+| Career date | 2005-01-10 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
@@ -25,12 +25,11 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-01-09 | Current checkpoint | 2005-01-09-miami-heat-at-seattle-supersonics | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
+| 2005-01-10 | Current checkpoint | 2005-01-09-miami-heat-at-seattle-supersonics | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2004-10-05 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2005-01-10 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
-| 2005-01-10 | Kept contracts become guaranteed | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
 | 2005-01-11 | Next Miami game, at Phoenix Suns | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2005-01-17 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2005-01-20 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | By 2005-10-31 | Fourth-year (2006-07) team option on the rookie contract | Miami decides | Scheduled gate; no outcome implied | [Contract](index.html#contract_negotiation) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
@@ -45,7 +44,7 @@ Activation: The authoritative current date and recorded event determine what is 
 | 2004-11-01 | Roster cut to 15 | League calendar | done | [Season](index.html#calendar) |
 | 2004-11-02 | Opening night | League calendar | done | [Season](index.html#calendar) |
 | 2005-01-07 | Last day to waive before guarantees | League calendar | done | [Season](index.html#calendar) |
-| 2005-01-10 | Contracts guaranteed | League calendar | upcoming | [Season](index.html#calendar) |
+| 2005-01-10 | Contracts guaranteed | League calendar | today | [Season](index.html#calendar) |
 | 2005-02-18 | All-Star Weekend | League calendar | upcoming | [Season](index.html#calendar) |
 | 2005-02-24 | Trade deadline | League calendar | upcoming | [Season](index.html#calendar) |
 | 2005-04-20 | Regular season ends | League calendar | upcoming | [Season](index.html#calendar) |

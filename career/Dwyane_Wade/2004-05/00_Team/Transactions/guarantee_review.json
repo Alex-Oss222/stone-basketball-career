@@ -13,5 +13,12 @@
    "decision": "keep",
    "basis": "payroll $52,391,902 stays under the owner's ceiling $57,000,000; he stays for depth"
   }
+ ],
+ "guaranteed_on": "2005-01-10",
+ "guaranteed": [
+  {
+   "player": "Rafer Alston",
+   "guaranteed": 751179
+  }
  ]
 }

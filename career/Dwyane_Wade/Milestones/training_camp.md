@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-01-09 · Miami Heat · planned
+Career date: 2005-01-10 · Miami Heat · planned
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -55,6 +55,7 @@ Snapshot: 2005-01-06. Draft rights and unassigned arrivals are not assigned minu
 | 2004-11-01 | Cut to 15: Stephen Jackson, Calbert Cheaney, Bob Sura, Derek Fisher, Chris Mihm. Promise check: every promised role is in the rotation. Record: `promise_log.json`. |
 | 2004-12-20 | Trade with Toronto Raptors: Miami sends Scott Padgett, Udonis Haslem for Donyell Marshall, Lamond Murray (accepted by engine draw None). Record: `00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json`. |
 | 2004-12-20 | Toronto Raptors offers Donyell Marshall, Lamond Murray for Scott Padgett, Udonis Haslem; Miami's front office accepts. Record: `00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json`. |
+| 2005-01-10 | Guarantee date: Rafer Alston guaranteed for 2004-05. |
 
 ## Your response to the staff
 

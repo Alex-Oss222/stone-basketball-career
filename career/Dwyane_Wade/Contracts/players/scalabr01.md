@@ -2,9 +2,9 @@
 
 # Contract | Brian Scalabrine
 
-Known through: 2005-01-09. [Open interactive contract](scalabr01.html#contract) · [Contract history](scalabr01.html#contract-history)
+Known through: 2005-01-10. [Open interactive contract](scalabr01.html#contract) · [Contract history](scalabr01.html#contract-history)
 
-Brian Scalabrine: under contract. Evidence cutoff: 2005-01-09.
+Brian Scalabrine: under contract. Evidence cutoff: 2005-01-10.
 
 ## Current contract
 
@@ -114,7 +114,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Brian Scalabrine |
-| Club / rights baseline | New Jersey Nets |
+| Club / rights baseline | Denver Nuggets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

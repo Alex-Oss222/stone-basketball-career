@@ -2,9 +2,9 @@
 
 # Contract | Shandon Anderson
 
-Known through: 2005-01-09. [Open interactive contract](andersh01.html#contract) · [Contract history](andersh01.html#contract-history)
+Known through: 2005-01-10. [Open interactive contract](andersh01.html#contract) · [Contract history](andersh01.html#contract-history)
 
-Shandon Anderson: under contract. Evidence cutoff: 2005-01-09.
+Shandon Anderson: under contract. Evidence cutoff: 2005-01-10.
 
 ## Current contract
 
@@ -124,7 +124,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Shandon Anderson |
-| Club / rights baseline | New Jersey Nets |
+| Club / rights baseline | Denver Nuggets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

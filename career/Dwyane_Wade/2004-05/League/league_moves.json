@@ -2088,6 +2088,60 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.37 x fit"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-10-andersh01-scalabr01-szczewa02",
+   "date": "2005-01-10",
+   "kind": "trade",
+   "player": "Wally Szczerbiak",
+   "bbr_id": "szczewa02",
+   "from": "Denver Nuggets",
+   "to": "New Jersey Nets"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-10-andersh01-scalabr01-szczewa02",
+   "date": "2005-01-10",
+   "kind": "trade",
+   "player": "Brian Scalabrine",
+   "bbr_id": "scalabr01",
+   "from": "New Jersey Nets",
+   "to": "Denver Nuggets"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-10-andersh01-scalabr01-szczewa02",
+   "date": "2005-01-10",
+   "kind": "trade",
+   "player": "Shandon Anderson",
+   "bbr_id": "andersh01",
+   "from": "New Jersey Nets",
+   "to": "Denver Nuggets"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-10-buckngr01-ilgauzy01-robingl01",
+   "date": "2005-01-10",
+   "kind": "trade",
+   "player": "Zydrunas Ilgauskas",
+   "bbr_id": "ilgauzy01",
+   "from": "Cleveland Cavaliers",
+   "to": "Philadelphia 76ers"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-10-buckngr01-ilgauzy01-robingl01",
+   "date": "2005-01-10",
+   "kind": "trade",
+   "player": "Greg Buckner",
+   "bbr_id": "buckngr01",
+   "from": "Philadelphia 76ers",
+   "to": "Cleveland Cavaliers"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-10-buckngr01-ilgauzy01-robingl01",
+   "date": "2005-01-10",
+   "kind": "trade",
+   "player": "Glenn Robinson",
+   "bbr_id": "robingl01",
+   "from": "Philadelphia 76ers",
+   "to": "Cleveland Cavaliers"
   }
  ],
  "market_days": [
@@ -2159,6 +2213,7 @@
   "2005-01-06",
   "2005-01-07",
   "2005-01-08",
-  "2005-01-09"
+  "2005-01-09",
+  "2005-01-10"
  ]
 }

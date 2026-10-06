@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2005-01-10-buckngr01-ilgauzy01-robingl01",
+ "date": "2005-01-10",
+ "clubs": [
+  "Cleveland Cavaliers",
+  "Philadelphia 76ers"
+ ],
+ "a": {
+  "club": "Cleveland Cavaliers",
+  "sends": [
+   "Zydrunas Ilgauskas"
+  ],
+  "bbr_ids": [
+   "ilgauzy01"
+  ],
+  "salary": 14625000
+ },
+ "b": {
+  "club": "Philadelphia 76ers",
+  "sends": [
+   "Greg Buckner",
+   "Glenn Robinson"
+  ],
+  "bbr_ids": [
+   "buckngr01",
+   "robingl01"
+  ],
+  "salary": 14951250
+ },
+ "gain": {
+  "Cleveland Cavaliers": 0.242,
+  "Philadelphia 76ers": 0.327
+ },
+ "accept": {
+  "Cleveland Cavaliers": 0.95,
+  "Philadelphia 76ers": 0.95
+ },
+ "both": 0.9025
+}

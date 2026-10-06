@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 28 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 5, 2004 · **Statistics through:** 2005-01-09 
+**Opening assessment:** October 5, 2004 · **Statistics through:** 2005-01-10 
 
-**Contract/control:** Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10. (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10; guaranteed 2005-01-10 (guarantee_review.json). (register, 2005-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/alstora01.html#contract) · [Contract history](../../../../Contracts/players/alstora01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

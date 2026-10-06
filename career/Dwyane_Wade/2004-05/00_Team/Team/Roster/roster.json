@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2004-12-20",
+ "as_of": "2005-01-10",
  "season": "2004-05",
  "team": "Miami Heat",
  "roster_kind": "team_control_register",
@@ -272,7 +272,7 @@
    ],
    "date_of_birth": "1976-07-24",
    "status": "camp_contract",
-   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10.",
+   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10; guaranteed 2005-01-10 (guarantee_review.json).",
    "working_role": "Rotation at PG, staff plan 15 minutes (rotation 2005-01-06)",
    "player_card": "../Player_Cards/rafer_alston.md",
    "bbr_id": "alstora01"

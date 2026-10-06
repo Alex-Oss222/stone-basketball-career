@@ -1,0 +1,39 @@
+{
+ "id": "2004-05-league-trade-2005-01-10-andersh01-scalabr01-szczewa02",
+ "date": "2005-01-10",
+ "clubs": [
+  "Denver Nuggets",
+  "New Jersey Nets"
+ ],
+ "a": {
+  "club": "Denver Nuggets",
+  "sends": [
+   "Wally Szczerbiak"
+  ],
+  "bbr_ids": [
+   "szczewa02"
+  ],
+  "salary": 9000000
+ },
+ "b": {
+  "club": "New Jersey Nets",
+  "sends": [
+   "Brian Scalabrine",
+   "Shandon Anderson"
+  ],
+  "bbr_ids": [
+   "scalabr01",
+   "andersh01"
+  ],
+  "salary": 8200000
+ },
+ "gain": {
+  "Denver Nuggets": 0.156,
+  "New Jersey Nets": 0.167
+ },
+ "accept": {
+  "Denver Nuggets": 0.917,
+  "New Jersey Nets": 0.936
+ },
+ "both": 0.858312
+}

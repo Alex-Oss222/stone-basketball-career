@@ -1,0 +1,12 @@
+{
+ "date": "2005-01-10",
+ "decider": "Cleveland Cavaliers and Philadelphia 76ers front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2005-01-10-buckngr01-ilgauzy01-robingl01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Cleveland Cavaliers and Philadelphia 76ers trade Zydrunas Ilgauskas for Greg Buckner and Glenn Robinson?"
+}

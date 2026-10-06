@@ -2,9 +2,9 @@
 
 # Contract | Shaun Livingston
 
-Known through: 2005-01-09. [Open interactive contract](shaunlivingston.html#contract) · [Contract history](shaunlivingston.html#contract-history)
+Known through: 2005-01-10. [Open interactive contract](shaunlivingston.html#contract) · [Contract history](shaunlivingston.html#contract-history)
 
-Shaun Livingston: under contract. Evidence cutoff: 2005-01-09.
+Shaun Livingston: under contract. Evidence cutoff: 2005-01-10.
 
 ## Current contract
 

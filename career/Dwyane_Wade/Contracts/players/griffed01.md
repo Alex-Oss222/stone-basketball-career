@@ -2,9 +2,9 @@
 
 # Contract | Eddie Griffin
 
-Known through: 2005-01-09. [Open interactive contract](griffed01.html#contract) · [Contract history](griffed01.html#contract-history)
+Known through: 2005-01-10. [Open interactive contract](griffed01.html#contract) · [Contract history](griffed01.html#contract-history)
 
-Eddie Griffin: under rookie contract. Evidence cutoff: 2005-01-09.
+Eddie Griffin: under rookie contract. Evidence cutoff: 2005-01-10.
 
 ## Current contract
 

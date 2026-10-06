@@ -2,9 +2,9 @@
 
 # Contract | Greg Buckner
 
-Known through: 2005-01-09. [Open interactive contract](buckngr01.html#contract) · [Contract history](buckngr01.html#contract-history)
+Known through: 2005-01-10. [Open interactive contract](buckngr01.html#contract) · [Contract history](buckngr01.html#contract-history)
 
-Greg Buckner: under contract. Evidence cutoff: 2005-01-09.
+Greg Buckner: under contract. Evidence cutoff: 2005-01-10.
 
 ## Current contract
 
@@ -126,7 +126,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Greg Buckner |
-| Club / rights baseline | Philadelphia 76ers |
+| Club / rights baseline | Cleveland Cavaliers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
