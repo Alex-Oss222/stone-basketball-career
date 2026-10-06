@@ -27,6 +27,9 @@ SEASON_SOURCES = {
     "2004-05": {"stats": Path("library/2004/league/nba_2003_04_player_stats.json"),
                 "ratings": Path("library/2004/league/nba_2004_veteran_ratings.json"), "cutoff": "2004-04-15",
                 "model": "veteran-2004.1", "baseline": "2003-04", "end_year": 2004},
+    "2005-06": {"stats": Path("library/2005/league/nba_2004_05_player_stats.json"),
+                "ratings": Path("library/2005/league/nba_2005_veteran_ratings.json"), "cutoff": "2005-04-21",
+                "model": "veteran-2005.1", "baseline": "2004-05", "end_year": 2005},
 }
 # Wade's expected profile for a season after his rookie year (`runtime/protagonist.py`, written at the rollover).
 PROTAGONIST_PATH = "career/Dwyane_Wade/{season}/wade_expected_profile.json"

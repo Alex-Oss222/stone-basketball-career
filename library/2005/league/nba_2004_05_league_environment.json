@@ -69,10 +69,25 @@
       "ortg_from_pace": "97.2 / (90.9 * 241.9/240) * 100 = 106.1"
     }
   },
-  "omitted_keys": {
-    "team_turnovers_per_game": "added by scripts/build_season_baseline.py from the 2004-05 player totals",
-    "player_turnovers_per_game": "same",
-    "player_rating_model": "repo-internal",
-    "player_rate_baselines": "added by scripts/build_season_baseline.py from the 2004-05 player totals"
+  "team_turnovers_per_game": 0.7752032520325205,
+  "player_turnovers_per_game": 13.72479674796748,
+  "team_turnover_note": "Inferred residual: published team TOV minus summed individual TOV / (clubs x 82).",
+  "player_rating_model": "veteran-2005.1",
+  "player_rate_baselines": {
+    "true_shooting_pct": 0.5291747697285133,
+    "usage_pct": 0.19822928891636515,
+    "assist_pct": 0.14881649454584764,
+    "offensive_rebound_pct": 0.057451958191025394,
+    "defensive_rebound_pct": 0.1428181363656326,
+    "steal_pct": 0.01638872448169506,
+    "block_pct": 0.015011085661778367,
+    "turnover_pct": 0.1308960402503676,
+    "three_point_attempt_rate": 0.19715447154471544,
+    "free_throw_attempt_rate": 0.32262057582981846,
+    "two_point_pct": 0.4697883950382285,
+    "three_point_pct": 0.35563134640725524,
+    "free_throw_pct": 0.7560197685250974,
+    "turnovers_per_fga": 0.17198993418505615,
+    "fouls_per_minute": 0.09364622499687514
   }
 }

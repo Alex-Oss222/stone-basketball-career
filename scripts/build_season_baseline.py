@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime.era import environment_path                                 # noqa: E402
 from runtime.player_stats import SEASON_SOURCES, build_ratings, read_json, sha256   # noqa: E402
-CLUBS = {"2003-04": 29}
+CLUBS = {"2003-04": 29, "2004-05": 30}
 
 
 def outputs(season, root=ROOT):
