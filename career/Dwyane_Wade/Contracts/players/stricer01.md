@@ -2,9 +2,9 @@
 
 # Contract | Erick Strickland
 
-Known through: 2004-10-20. [Open interactive contract](stricer01.html#contract) · [Contract history](stricer01.html#contract-history)
+Known through: 2004-10-21. [Open interactive contract](stricer01.html#contract) · [Contract history](stricer01.html#contract-history)
 
-Erick Strickland: under contract. Evidence cutoff: 2004-10-20.
+Erick Strickland: under contract. Evidence cutoff: 2004-10-21.
 
 ## Current contract
 
