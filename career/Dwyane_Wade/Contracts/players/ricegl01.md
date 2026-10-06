@@ -2,9 +2,9 @@
 
 # Contract | Glen Rice
 
-Known through: 2005-01-30. [Open interactive contract](ricegl01.html#contract) · [Contract history](ricegl01.html#contract-history)
+Known through: 2005-01-31. [Open interactive contract](ricegl01.html#contract) · [Contract history](ricegl01.html#contract-history)
 
-Glen Rice: under contract. Evidence cutoff: 2005-01-30.
+Glen Rice: under contract. Evidence cutoff: 2005-01-31.
 
 ## Current contract
 

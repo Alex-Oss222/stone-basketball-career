@@ -2746,6 +2746,118 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.47 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-31-expire-breweja01",
+   "date": "2005-01-31",
+   "kind": "expire",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.9 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-01-31-ten_day-mcleoke01",
+   "date": "2005-01-31",
+   "kind": "ten_day",
+   "player": "Keith McLeod",
+   "bbr_id": "mcleoke01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Keith McLeod",
+    "bbr_id": "mcleoke01",
+    "position": "PG",
+    "games": 53,
+    "minutes": 1382
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-02-10",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.2 x fit"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-31-andersh01-battito01-hardaan01-houstal01",
+   "date": "2005-01-31",
+   "kind": "trade",
+   "player": "Anfernee Hardaway",
+   "bbr_id": "hardaan01",
+   "from": "Denver Nuggets",
+   "to": "New York Knicks"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-31-andersh01-battito01-hardaan01-houstal01",
+   "date": "2005-01-31",
+   "kind": "trade",
+   "player": "Shandon Anderson",
+   "bbr_id": "andersh01",
+   "from": "Denver Nuggets",
+   "to": "New York Knicks"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-31-andersh01-battito01-hardaan01-houstal01",
+   "date": "2005-01-31",
+   "kind": "trade",
+   "player": "Allan Houston",
+   "bbr_id": "houstal01",
+   "from": "New York Knicks",
+   "to": "Denver Nuggets"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-31-andersh01-battito01-hardaan01-houstal01",
+   "date": "2005-01-31",
+   "kind": "trade",
+   "player": "Tony Battie",
+   "bbr_id": "battito01",
+   "from": "New York Knicks",
+   "to": "Denver Nuggets"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-31-jonesed02-jonesfr01-nachbbo01-robingl01",
+   "date": "2005-01-31",
+   "kind": "trade",
+   "player": "Bostjan Nachbar",
+   "bbr_id": "nachbbo01",
+   "from": "Houston Rockets",
+   "to": "Utah Jazz"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-31-jonesed02-jonesfr01-nachbbo01-robingl01",
+   "date": "2005-01-31",
+   "kind": "trade",
+   "player": "Glenn Robinson",
+   "bbr_id": "robingl01",
+   "from": "Houston Rockets",
+   "to": "Utah Jazz"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-31-jonesed02-jonesfr01-nachbbo01-robingl01",
+   "date": "2005-01-31",
+   "kind": "trade",
+   "player": "Eddie Jones",
+   "bbr_id": "jonesed02",
+   "from": "Utah Jazz",
+   "to": "Houston Rockets"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-01-31-jonesed02-jonesfr01-nachbbo01-robingl01",
+   "date": "2005-01-31",
+   "kind": "trade",
+   "player": "Fred Jones",
+   "bbr_id": "jonesfr01",
+   "from": "Utah Jazz",
+   "to": "Houston Rockets"
   }
  ],
  "market_days": [
@@ -2838,6 +2950,7 @@
   "2005-01-27",
   "2005-01-28",
   "2005-01-29",
-  "2005-01-30"
+  "2005-01-30",
+  "2005-01-31"
  ]
 }

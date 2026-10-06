@@ -206,6 +206,18 @@
       "period_end": "2004-12-31",
       "awarded_on": "2005-01-02",
       "source": "Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month"
+    },
+    {
+      "id": "2004-05-player_of_week-2005-01-24-east",
+      "name": "Eastern Conference Player of the Week",
+      "short_name": "East POW",
+      "status": "earned",
+      "competition": "regular",
+      "season": "2004-05",
+      "period_start": "2005-01-24",
+      "period_end": "2005-01-30",
+      "awarded_on": "2005-01-31",
+      "source": "Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week"
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+ "id": "2004-05-league-trade-2005-01-31-andersh01-battito01-hardaan01-houstal01",
+ "date": "2005-01-31",
+ "clubs": [
+  "Denver Nuggets",
+  "New York Knicks"
+ ],
+ "a": {
+  "club": "Denver Nuggets",
+  "sends": [
+   "Anfernee Hardaway",
+   "Shandon Anderson"
+  ],
+  "bbr_ids": [
+   "hardaan01",
+   "andersh01"
+  ],
+  "salary": 21925000
+ },
+ "b": {
+  "club": "New York Knicks",
+  "sends": [
+   "Allan Houston",
+   "Tony Battie"
+  ],
+  "bbr_ids": [
+   "houstal01",
+   "battito01"
+  ],
+  "salary": 22331250
+ },
+ "gain": {
+  "Denver Nuggets": 0.157,
+  "New York Knicks": 0.248
+ },
+ "accept": {
+  "Denver Nuggets": 0.919,
+  "New York Knicks": 0.95
+ },
+ "both": 0.87305
+}

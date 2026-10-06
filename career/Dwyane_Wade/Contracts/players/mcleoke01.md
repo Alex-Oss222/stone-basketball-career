@@ -2,9 +2,9 @@
 
 # Contract | Keith McLeod
 
-Known through: 2005-01-30. [Open interactive contract](mcleoke01.html#contract) · [Contract history](mcleoke01.html#contract-history)
+Known through: 2005-01-31. [Open interactive contract](mcleoke01.html#contract) · [Contract history](mcleoke01.html#contract-history)
 
-Keith McLeod: No verified contract record. Evidence cutoff: 2005-01-30.
+Keith McLeod: No verified contract record. Evidence cutoff: 2005-01-31.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Keith McLeod |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Philadelphia 76ers |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

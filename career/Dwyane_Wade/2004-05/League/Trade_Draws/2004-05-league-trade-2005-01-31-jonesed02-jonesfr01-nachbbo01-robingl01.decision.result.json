@@ -1,0 +1,12 @@
+{
+ "date": "2005-01-31",
+ "decider": "Houston Rockets and Utah Jazz front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2005-01-31-jonesed02-jonesfr01-nachbbo01-robingl01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.49305,
+  "decline": 0.50695
+ },
+ "outcome": "accept",
+ "question": "Do Houston Rockets and Utah Jazz trade Bostjan Nachbar and Glenn Robinson for Eddie Jones and Fred Jones?"
+}

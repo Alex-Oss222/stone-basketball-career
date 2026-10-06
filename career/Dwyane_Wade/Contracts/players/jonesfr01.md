@@ -2,9 +2,9 @@
 
 # Contract | Fred Jones
 
-Known through: 2005-01-30. [Open interactive contract](jonesfr01.html#contract) · [Contract history](jonesfr01.html#contract-history)
+Known through: 2005-01-31. [Open interactive contract](jonesfr01.html#contract) · [Contract history](jonesfr01.html#contract-history)
 
-Fred Jones: under rookie contract. Evidence cutoff: 2005-01-30.
+Fred Jones: under rookie contract. Evidence cutoff: 2005-01-31.
 
 ## Current contract
 
@@ -124,7 +124,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Fred Jones |
-| Club / rights baseline | Utah Jazz |
+| Club / rights baseline | Houston Rockets |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

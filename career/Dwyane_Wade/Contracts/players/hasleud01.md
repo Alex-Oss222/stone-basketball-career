@@ -2,9 +2,9 @@
 
 # Contract | Udonis Haslem
 
-Known through: 2005-01-30. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
+Known through: 2005-01-31. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
 
-Udonis Haslem: traded. Evidence cutoff: 2005-01-30.
+Udonis Haslem: traded. Evidence cutoff: 2005-01-31.
 
 ## Current contract
 

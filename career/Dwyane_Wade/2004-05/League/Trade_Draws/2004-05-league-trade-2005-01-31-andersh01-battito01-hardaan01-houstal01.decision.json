@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-05-league-trade-2005-01-31-andersh01-battito01-hardaan01-houstal01",
+ "date": "2005-01-31",
+ "question": "Do Denver Nuggets and New York Knicks trade Anfernee Hardaway and Shandon Anderson for Allan Houston and Tony Battie?",
+ "decider": "Denver Nuggets and New York Knicks front offices (engine draw)",
+ "options": {
+  "accept": 0.87305,
+  "decline": 0.12695
+ },
+ "basis": "gains on own objectives {'Denver Nuggets': 0.157, 'New York Knicks': 0.248}; acceptance {'Denver Nuggets': 0.919, 'New York Knicks': 0.95}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

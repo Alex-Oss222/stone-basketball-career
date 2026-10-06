@@ -1,0 +1,41 @@
+{
+ "id": "2004-05-league-trade-2005-01-31-jonesed02-jonesfr01-nachbbo01-robingl01",
+ "date": "2005-01-31",
+ "clubs": [
+  "Houston Rockets",
+  "Utah Jazz"
+ ],
+ "a": {
+  "club": "Houston Rockets",
+  "sends": [
+   "Bostjan Nachbar",
+   "Glenn Robinson"
+  ],
+  "bbr_ids": [
+   "nachbbo01",
+   "robingl01"
+  ],
+  "salary": 13565130
+ },
+ "b": {
+  "club": "Utah Jazz",
+  "sends": [
+   "Eddie Jones",
+   "Fred Jones"
+  ],
+  "bbr_ids": [
+   "jonesed02",
+   "jonesfr01"
+  ],
+  "salary": 15027480
+ },
+ "gain": {
+  "Houston Rockets": 0.498,
+  "Utah Jazz": 0.063
+ },
+ "accept": {
+  "Houston Rockets": 0.95,
+  "Utah Jazz": 0.519
+ },
+ "both": 0.49305
+}

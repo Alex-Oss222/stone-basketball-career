@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-01-30",
+  "as_of": "2005-01-31",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -95,7 +95,7 @@
     {
       "player_id": "houstal01",
       "name": "Allan Houston",
-      "team": "New York Knicks",
+      "team": "Denver Nuggets",
       "status": "under contract",
       "current_contract_id": "houstal01-existing-4181df4dc5c4",
       "recorded_agreements": 1,
@@ -248,7 +248,7 @@
     {
       "player_id": "hardaan01",
       "name": "Anfernee Hardaway",
-      "team": "Denver Nuggets",
+      "team": "New York Knicks",
       "status": "under contract",
       "current_contract_id": "hardaan01-existing-440992846d5f",
       "recorded_agreements": 1,
@@ -527,7 +527,7 @@
     {
       "player_id": "nachbbo01",
       "name": "Bostjan Nachbar",
-      "team": "Houston Rockets",
+      "team": "Utah Jazz",
       "status": "under rookie contract",
       "current_contract_id": "nachbbo01-existing-d125a3820b11",
       "recorded_agreements": 1,
@@ -1742,7 +1742,7 @@
     {
       "player_id": "jonesfr01",
       "name": "Fred Jones",
-      "team": "Utah Jazz",
+      "team": "Houston Rockets",
       "status": "under rookie contract",
       "current_contract_id": "jonesfr01-2002-07-05",
       "recorded_agreements": 1,
@@ -1814,7 +1814,7 @@
     {
       "player_id": "robingl01",
       "name": "Glenn Robinson",
-      "team": "Houston Rockets",
+      "team": "Utah Jazz",
       "status": "under contract",
       "current_contract_id": "robingl01-existing-22b8500d0040",
       "recorded_agreements": 1,
@@ -2138,7 +2138,7 @@
     {
       "player_id": "breweja01",
       "name": "Jamison Brewer",
-      "team": "Philadelphia 76ers",
+      "team": "Free agent",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2651,7 +2651,7 @@
     {
       "player_id": "mcleoke01",
       "name": "Keith McLeod",
-      "team": "Free agent",
+      "team": "Philadelphia 76ers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4397,7 +4397,7 @@
     {
       "player_id": "andersh01",
       "name": "Shandon Anderson",
-      "team": "Denver Nuggets",
+      "team": "New York Knicks",
       "status": "under contract",
       "current_contract_id": "andersh01-existing-f2497a228c70",
       "recorded_agreements": 1,
@@ -4766,7 +4766,7 @@
     {
       "player_id": "battito01",
       "name": "Tony Battie",
-      "team": "New York Knicks",
+      "team": "Denver Nuggets",
       "status": "under contract",
       "current_contract_id": "battito01-1999-10-15",
       "recorded_agreements": 1,
