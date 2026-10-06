@@ -261,4 +261,36 @@ def schedule_errors(root=ROOT):
             errors.append(f"{rel}: invalid JSON: {exc}")
             continue
         errors += [f"{rel}: {e}" for e in validate_schedule(data, season, root, kind)]
+    for path in sorted((Path(root) / "library").glob("*/league/nba_*_schedule_by_team.json")):
+        errors += by_team_errors(path, root)
+    return errors
+
+
+def by_team_errors(path, root=ROOT):
+    """A season's schedule by team (user-supplied, October 2026) is an independent view of the same games: every club
+    plays 82, each game appears in both clubs' lists with matching date and venue, and the set of games equals the
+    regular-season schedule the builders play from (`nba_<YYYY>_<YY>_schedule.json` beside it)."""
+    rel = Path(path).relative_to(root)
+    try:
+        teams = json.loads(Path(path).read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        return [f"{rel}: invalid JSON: {exc}"]
+    errors, seen = [], {}
+    for club, rows in teams.items():
+        if len(rows) != 82:
+            errors.append(f"{rel}: {club} has {len(rows)} games, not 82")
+        for g in rows:
+            if g.get("home_away") not in ("home", "away"):
+                errors.append(f"{rel}: {club} {g.get('date')}: home_away must be home or away")
+                continue
+            key = (g["date"], g["opponent"], club) if g["home_away"] == "home" else (g["date"], club, g["opponent"])
+            seen[key] = seen.get(key, 0) + 1
+    errors += [f"{rel}: {d} {a} at {h} is listed by {n} club(s), not both" for (d, a, h), n in sorted(seen.items()) if n != 2]
+    games_path = Path(path).with_name(Path(path).name.replace("_by_team", ""))
+    if games_path.is_file():
+        games = {(g["date"], g["away"], g["home"]) for g in json.loads(games_path.read_text(encoding="utf-8"))["games"]}
+        missing, extra = sorted(set(games) - set(seen)), sorted(set(seen) - set(games))
+        if missing or extra:
+            errors.append(f"{rel}: differs from {games_path.name}: {len(missing)} game(s) only there, {len(extra)} only here "
+                          f"(first: {(missing or extra)[0]})")
     return errors
