@@ -2,9 +2,9 @@
 
 # Contract | Andreas Glyniadakis
 
-Known through: 2004-10-01. [Open interactive contract](glynian01.html#contract) · [Contract history](glynian01.html#contract-history)
+Known through: 2004-10-03. [Open interactive contract](glynian01.html#contract) · [Contract history](glynian01.html#contract-history)
 
-Andreas Glyniadakis: No verified contract record. Evidence cutoff: 2004-10-01.
+Andreas Glyniadakis: No verified contract record. Evidence cutoff: 2004-10-03.
 
 ## Current contract
 

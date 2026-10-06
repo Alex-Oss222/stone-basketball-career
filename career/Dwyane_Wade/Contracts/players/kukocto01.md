@@ -2,9 +2,9 @@
 
 # Contract | Toni Kukoc
 
-Known through: 2004-10-01. [Open interactive contract](kukocto01.html#contract) · [Contract history](kukocto01.html#contract-history)
+Known through: 2004-10-03. [Open interactive contract](kukocto01.html#contract) · [Contract history](kukocto01.html#contract-history)
 
-Toni Kukoc: under contract. Evidence cutoff: 2004-10-01.
+Toni Kukoc: under contract. Evidence cutoff: 2004-10-03.
 
 ## Current contract
 
