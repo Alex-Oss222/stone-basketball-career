@@ -1741,6 +1741,28 @@
    "bbr_id": "rogerro01",
    "from": "Utah Jazz",
    "to": "Detroit Pistons"
+  },
+  {
+   "id": "2004-05-market-2004-12-07-rest_of_season-johnsde03",
+   "date": "2004-12-07",
+   "kind": "rest_of_season",
+   "player": "DerMarr Johnson",
+   "bbr_id": "johnsde03",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "DerMarr Johnson",
+    "bbr_id": "johnsde03",
+    "position": "SG",
+    "games": 71,
+    "minutes": 1232
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.72 x fit"
   }
  ],
  "market_days": [
@@ -1778,6 +1800,7 @@
   "2004-12-03",
   "2004-12-04",
   "2004-12-05",
-  "2004-12-06"
+  "2004-12-06",
+  "2004-12-07"
  ]
 }
