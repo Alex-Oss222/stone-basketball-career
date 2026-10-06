@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `mccoyje01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-10-08 · **Club on this date:** Indiana Pacers · **Basis:** Indiana Pacers: the 2004-05 opening rosters and the league's dated moves (runtime/league_moves.py) · **League:** NBA  
+**Card date:** 2004-10-09 · **Club on this date:** Indiana Pacers · **Basis:** Indiana Pacers: the 2004-05 opening rosters and the league's dated moves (runtime/league_moves.py) · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #34 · **Born:** 1977-12-06 · **Age on card date:** 26  
 **Registry ID:** `mccoyje01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/mccoyje01.html) · ESPN ID 525
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mccoyj
 
 ## Simulated statistics
 
-As of **2004-10-08**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-10-09**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -118,4 +118,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2004-10-08. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2004-10-09. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-08**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-09**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -58,11 +58,11 @@ Card date: **2004-10-08**. 504 registry players, one Markdown card and one inter
 | [Jeff McInnis](mcinnje01.md) | New Orleans Hornets | 29 | sourced | [open](mcinnje01.html) |
 | [John Salmons](salmojo01.md) | Philadelphia 76ers | 24 | sourced | [open](salmojo01.html) |
 | [John Stockton](stockjo01.md) | Free agent | 42 | sourced | [open](stockjo01.html) |
-| [Juan Dixon](dixonju01.md) | Washington Wizards | 25 | sourced | [open](dixonju01.html) |
+| [Juan Dixon](dixonju01.md) | Washington Wizards | 26 | sourced | [open](dixonju01.html) |
 | [Junior Harrington](harriju01.md) | Dallas Mavericks | 24 | silhouette | [open](harriju01.html) |
 | [Kareem Rush](rushka01.md) | Los Angeles Lakers | 23 | sourced | [open](rushka01.html) |
 | [Keith McLeod](mcleoke01.md) | Free agent | None | silhouette | [open](mcleoke01.html) |
-| [Kenny Anderson](anderke01.md) | Toronto Raptors | 33 | sourced | [open](anderke01.html) |
+| [Kenny Anderson](anderke01.md) | Toronto Raptors | 34 | sourced | [open](anderke01.html) |
 | [Kevin Ollie](ollieke01.md) | Cleveland Cavaliers | 31 | sourced | [open](ollieke01.html) |
 | [Kirk Hinrich](hinriki01.md) | Chicago Bulls | 23 | sourced | [open](hinriki01.html) |
 | [Larry Hughes](hughela01.md) | Washington Wizards | 25 | sourced | [open](hughela01.html) |
@@ -229,7 +229,7 @@ Card date: **2004-10-08**. 504 registry players, one Markdown card and one inter
 | [Corliss Williamson](willico02.md) | Detroit Pistons | 30 | sourced | [open](willico02.html) |
 | [Dan Langhi](langhda01.md) | Free agent | None | silhouette | [open](langhda01.html) |
 | [Danny Ferry](ferryda01.md) | Free agent | 37 | sourced | [open](ferryda01.html) |
-| [Darius Miles](milesda01.md) | Cleveland Cavaliers | 22 | sourced | [open](milesda01.html) |
+| [Darius Miles](milesda01.md) | Cleveland Cavaliers | 23 | sourced | [open](milesda01.html) |
 | [DerMarr Johnson](johnsde03.md) | Free agent | None | silhouette | [open](johnsde03.html) |
 | [Desmond Ferguson](fergude01.md) | Free agent | None | silhouette | [open](fergude01.html) |
 | [Desmond Mason](masonde01.md) | Milwaukee Bucks | 26 | sourced | [open](masonde01.html) |

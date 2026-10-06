@@ -4,7 +4,7 @@
 
 NBA regular season · 2004-05
 
-As of October 8, 2004: not started. The 22-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 22-player active roster.
+As of October 9, 2004: not started. The 22-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 22-player active roster.
 
 ## Team record
 
