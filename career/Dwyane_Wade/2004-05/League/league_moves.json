@@ -2946,6 +2946,50 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.21 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-02-06-ten_day-bowenry01",
+   "date": "2005-02-06",
+   "kind": "ten_day",
+   "player": "Ryan Bowen",
+   "bbr_id": "bowenry01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Ryan Bowen",
+    "bbr_id": "bowenry01",
+    "position": "SF",
+    "games": 66,
+    "minutes": 604
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-02-16",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.22 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-02-06-ten_day-hartja01",
+   "date": "2005-02-06",
+   "kind": "ten_day",
+   "player": "Jason Hart",
+   "bbr_id": "hartja01",
+   "from": null,
+   "to": "Detroit Pistons",
+   "role": {
+    "player_id": "Jason Hart",
+    "bbr_id": "hartja01",
+    "position": "PG",
+    "games": 74,
+    "minutes": 1887
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-02-16",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.19 x fit"
   }
  ],
  "market_days": [
@@ -3044,6 +3088,7 @@
   "2005-02-02",
   "2005-02-03",
   "2005-02-04",
-  "2005-02-05"
+  "2005-02-05",
+  "2005-02-06"
  ]
 }
