@@ -139,7 +139,7 @@ class year_context:
         folder = Path(f"career/Dwyane_Wade/{season}/10_Free_Agency")
         cal = _read(self.root / f"library/{y}/league/nba_{y}_offseason_calendar.json")
         get = lambda *keys: next(v for v in (_date_of(cal, k) for k in keys) if v)
-        sign_from = get("first_signing_day", "moratorium_end_signing", "signing_opens")
+        sign_from = get("first_signing_and_trade_date", "first_signing_day", "moratorium_end_signing", "signing_opens")
         g.update(YEAR=y, SEASON=season, NEW=new, FOLDER=folder, RECORD=folder / f"free_agency_{y}.json",
                  DRAWS=folder / "Free_Agency_Draws", CALENDAR=Path(f"library/{y}/league/nba_{y}_offseason_calendar.json"),
                  SERVICE=Path(f"library/{y}/league/nba_{y}_service_years.json"), OPTIONS_DATE=f"{y}-06-30", OPEN=f"{y}-07-01",
