@@ -126,6 +126,11 @@ def _highs(regular):
     return rows
 
 
+def _season_end(root, season):
+    from .seasons import dates
+    return dates(season, root)["regular_season_end"]
+
+
 def _model(entry, season):
     from .trajectories import alternate
     if alternate(entry["bbr_id"], season):
@@ -157,7 +162,9 @@ def build(root=ROOT, as_of=None):
     from .jerseys import number_for
     from .league_cards import club_on
     from .seasons import live_seasons, state
-    from .stat_milestones import age_on, age_text, career_milestones
+    from .stat_milestones import age_on, age_text, career_milestones, markdown as milestones_markdown
+    from .career_dashboard import career_overview, season_highs
+    from .league_cards import COLORS_FILE, club_colors
     root = Path(root)
     entries = followed(root)
     if not entries:
@@ -172,6 +179,21 @@ def build(root=ROOT, as_of=None):
         club = (club_on(reg, as_of, root=root) or {}).get("club") or reg.get("team_name")
         number = number_for(entry["bbr_id"], club, root) if club else None
         rel = lambda page, target: os.path.relpath(target, page.parent).replace(os.sep, "/")
+        colors = json.loads((root / COLORS_FILE).read_text(encoding="utf-8")) if (root / COLORS_FILE).is_file() else None
+
+        def palette(season, club=club):
+            if not colors:
+                return None
+            c = club_colors(club, int(season[:4]), colors)
+            return {"primary": c["primary"], "light": "#e6dcf5"}
+
+        def identity(season, club=club, number=number):
+            snap = {"as_of": "2003-06-26", "full_name": entry.get("full_name") or name, "display_name": name,
+                    "team": club or "Free agent", "league": "NBA", "positions": [reg.get("position", "PF")], "jersey": number,
+                    "height_in_shoes": entry.get("height", "N/A"), "weight_lb": entry.get("weight_lb", "N/A"),
+                    "physical_profile_as_of": entry.get("measured_on", "N/A"), "entry": entry.get("draft") or "N/A",
+                    "roster_status": f"{club}, real player followed (not controlled)", "prior_program": entry.get("college") or "N/A"}
+            return {"date_of_birth": birth, "snapshots": [snap]}
         head = (f"Career date: **{as_of}** · {club or 'No club'} · #{number or 'N/A'} · {reg.get('position', 'N/A')} · "
                 f"age {age_on(birth, as_of)[0] if birth else 'N/A'}\n\n")
         all_games, reg_rows, po_rows, honor_rows = [], [], [], []
@@ -193,7 +215,11 @@ def build(root=ROOT, as_of=None):
             data = career_milestones(all_games, birth)
             in_season = [[r["milestone"], r["date"], r["age"], r["opponent"]] for r in data["regular"] + data["playoff"] + data["firsts"]
                          if r.get("season") == season]
-            text = GENERATED + f"\n# {name} | {season} season\n\n" + head
+            card = folder / "assets" / f"season_overview_{season}.svg"
+            outputs[card] = career_overview(identity(season), min(as_of, _season_end(root, season)), aggregate(regular),
+                                            aggregate(playoff), season_highs(lines, season) if regular else [],
+                                            f"{season} regular-season highs", season=season, palette=palette(season))
+            text = GENERATED + f"\n# {name} | {season} season\n\n" + f"![{name} {season} season overview]({rel(page, card)})\n\n" + head
             text += f"[Career]({rel(page, folder / 'README.md')})"
             if entry.get("profile"):
                 text += f" · [Development profile (user-supplied)]({rel(page, folder / entry['profile'])})"
@@ -210,12 +236,24 @@ def build(root=ROOT, as_of=None):
             outputs[page] = text
         data = career_milestones(all_games, birth)
         career = folder / "README.md"
-        text = GENERATED + f"\n# {name} | Career\n\n" + head
+        current = max((g["season"] for g in all_games if g["competition"] == "regular"), default=None)
+        card = folder / "assets" / "career_overview.svg"
+        outputs[card] = career_overview(identity(seasons[-1]), as_of, aggregate([g for g in all_games if g["competition"] == "regular"]),
+                                        aggregate([g for g in all_games if g["competition"] == "playoff"]),
+                                        season_highs(all_games, current) if current else [],
+                                        f"{current} regular-season highs" if current else "Season highs", palette=palette(seasons[-1]))
+        milestones_page = folder / "career_milestones.md"
+        outputs[milestones_page] = GENERATED + "\n" + milestones_markdown(name, birth, as_of, data,
+            lambda note: rel(milestones_page, root / note) if note else "").replace(
+            "[Season tracker](calendar.md) · [All milestones](README.md)", "[Career](README.md)")
+        text = GENERATED + f"\n# {name} | Career\n\n" + f"![{name} career overview](assets/career_overview.svg)\n\n" + head
         text += ("A real player the user follows, not one the user controls: his club decides his moves and the engine plays his "
                  "games. Every number below comes from closed simulated games and the league's recorded award decisions.\n\n")
         if entry.get("profile"):
             text += f"[Development profile (user-supplied)]({entry['profile']}) · "
-        text += f"[League card]({rel(career, root / LEAGUE / 'Players' / (entry['bbr_id'] + '.md'))})\n\n"
+        text += (f"[League card]({rel(career, root / LEAGUE / 'Players' / (entry['bbr_id'] + '.md'))}) · "
+                 f"[Career milestones](career_milestones.md) · Seasons: "
+                 + " · ".join(f"[{s_}]({s_}/README.md)" for s_ in seasons) + "\n\n")
         ident = [["Full name", entry.get("full_name") or name], ["Born", birth or "N/A"], ["Hometown", entry.get("hometown") or "N/A"],
                  ["College", entry.get("college") or "N/A"], ["Draft", entry.get("draft") or "N/A"], ["Position", reg.get("position", "N/A")],
                  ["Club on the career date", club or "N/A"], ["Number", number or "N/A"]]

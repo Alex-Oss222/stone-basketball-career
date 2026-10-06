@@ -2,11 +2,34 @@
  "schema_version": 1,
  "purpose": "Players the user follows but does not control (runtime/followed_players.py): a career README and one README per season under career/<folder>/. Identity extras and targets are the user's; statistics, honors and milestones come only from closed results and award records.",
  "players": [
-  {"bbr_id": "boshch01", "name": "Chris Bosh", "folder": "Chris_Bosh", "full_name": "Christopher Wesson Bosh",
-   "hometown": "Hutchins / Dallas, Texas", "college": "Georgia Tech", "draft": "2003 NBA draft, No. 4 overall, Toronto Raptors",
-   "profile": "Development_Profile_2004-10-01.md", "added_on": "2004-10-01",
-   "targets": {"2004-05": {"source": "Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line)",
-                           "mpg": 36.5, "pts": 20.2, "reb": 11.1, "ast": 3.5, "stl": 0.9, "blk": 1.5,
-                           "fg_pct": 0.514, "three_pct": 0.412, "ft_pct": 0.908, "ts_pct": 0.640}}}
+  {
+   "bbr_id": "boshch01",
+   "name": "Chris Bosh",
+   "folder": "Chris_Bosh",
+   "full_name": "Christopher Wesson Bosh",
+   "hometown": "Hutchins / Dallas, Texas",
+   "college": "Georgia Tech",
+   "draft": "2003 NBA draft, No. 4 overall, Toronto Raptors",
+   "profile": "Development_Profile_2004-10-01.md",
+   "added_on": "2004-10-01",
+   "targets": {
+    "2004-05": {
+     "source": "Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line)",
+     "mpg": 36.5,
+     "pts": 20.2,
+     "reb": 11.1,
+     "ast": 3.5,
+     "stl": 0.9,
+     "blk": 1.5,
+     "fg_pct": 0.514,
+     "three_pct": 0.412,
+     "ft_pct": 0.908,
+     "ts_pct": 0.64
+    }
+   },
+   "height": "6 ft 11 in",
+   "weight_lb": 230,
+   "measured_on": "2004-10-01 (user's development profile)"
+  }
  ]
 }

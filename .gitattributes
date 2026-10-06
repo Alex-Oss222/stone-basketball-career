@@ -16,3 +16,5 @@ career/Dwyane_Wade/Stats_and_Awards/**/*.svg merge=binary
 career/Dwyane_Wade/Stats_and_Awards/player_cards_data.json merge=binary
 career/Chris_Bosh/README.md merge=binary
 career/Chris_Bosh/*/README.md merge=binary
+career/Chris_Bosh/assets/** merge=binary
+career/Chris_Bosh/career_milestones.md merge=binary

@@ -2,11 +2,13 @@
 
 # Chris Bosh | Career
 
+![Chris Bosh career overview](assets/career_overview.svg)
+
 Career date: **2004-11-02** · Toronto Raptors · #4 · PF · age 20
 
 A real player the user follows, not one the user controls: his club decides his moves and the engine plays his games. Every number below comes from closed simulated games and the league's recorded award decisions.
 
-[Development profile (user-supplied)](Development_Profile_2004-10-01.md) · [League card](../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
+[Development profile (user-supplied)](Development_Profile_2004-10-01.md) · [League card](../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md) · [Career milestones](career_milestones.md) · Seasons: [2003-04](2003-04/README.md) · [2004-05](2004-05/README.md)
 
 ## Identity
 
