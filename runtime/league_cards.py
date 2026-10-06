@@ -187,8 +187,8 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
     Returns {"club", "code", "basis", "rights"}; `club` is None for a free agent. `signed` is the
     pick's `signed_evidence`: once it is dated on or before `on`, he holds a contract, not rights.
     """
-    from .seasons import season_of_date
-    season = season_of_date(on) if on >= "2003-07-01" else FIRST_SEASON
+    from .seasons import live_season_on
+    season = live_season_on(on, root) if on >= "2003-07-01" else FIRST_SEASON   # the summer stays with the closed season
     from .league_moves import opening_book
     if season != FIRST_SEASON and opening_book(season, root) is not None:
         return _club_in_book(player, on, season, root, transactions)

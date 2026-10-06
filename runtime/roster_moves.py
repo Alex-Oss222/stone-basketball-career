@@ -58,6 +58,14 @@ def __getattr__(name):
 GAME_DAY_ACTIVES = 12
 IL_MAX = 3
 IL_MIN_GAMES = 5
+
+
+def min_games(game_date):
+    """Games a player placed on the list must miss: five under the 1999 agreement's injured list, none on the 2005
+    agreement's inactive list (era rules `reserve_list_minimum_games`, from 2005-06)."""
+    from .era import rules_for
+    from .seasons import season_of_date
+    return rules_for(season_of_date(game_date)).get("reserve_list_minimum_games", IL_MIN_GAMES)
 LISTS_FROM = "2003-11-12"           # first game day built under the lists; earlier games keep their inputs
 
 
@@ -91,7 +99,7 @@ def games_missed(entry, game_date, game_dates):
 
 def held_on_list(data, game_date, game_dates):
     """Players who must stay on the list for this game (fewer than IL_MIN_GAMES games missed)."""
-    return {e["player"] for e in list_on(data, game_date) if games_missed(e, game_date, game_dates) < IL_MIN_GAMES}
+    return {e["player"] for e in list_on(data, game_date) if games_missed(e, game_date, game_dates) < e.get("minimum_games", min_games(game_date))}
 
 
 def game_day(game_date, kept, depth_entries, injured, data, game_dates):
@@ -144,7 +152,7 @@ def record_lists(data, game_date, il, placements, activations, injured, event_id
             "player": name, "placed": game_date, "activated": None, "first_game_missed": event_id,
             "reason": (f"injury: {games} more game(s) out on the engine's draw" if why == "injury" else
                        "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)"),
-            "minimum_games": IL_MIN_GAMES})
+            "minimum_games": min_games(game_date)})
     data["as_of"] = max(data.get("as_of", game_date), game_date)
     return data
 
@@ -161,8 +169,8 @@ def ledger_errors(root=ROOT):
         if len(list_on(data, d)) > IL_MAX:
             errors.append(f"injured_list.json: more than {IL_MAX} players on the list for {d}")
     for e in data["entries"]:
-        if e.get("activated") and games_missed(e, e["activated"], dates) < IL_MIN_GAMES:
-            errors.append(f"injured_list.json: {e['player']} activated {e['activated']} after fewer than {IL_MIN_GAMES} games")
+        if e.get("activated") and games_missed(e, e["activated"], dates) < e.get("minimum_games", IL_MIN_GAMES):
+            errors.append(f"injured_list.json: {e['player']} activated {e['activated']} after fewer than {e.get('minimum_games', IL_MIN_GAMES)} games")
     for result in miami_results(root):
         d = result.get("game_date", "")
         if d < data["lists_from"]:

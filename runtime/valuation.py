@@ -208,13 +208,13 @@ class Valuation:
     def minimum(self, years_of_service):
         """The 1999 CBA minimum for the years of service (unknown service prices at the rookie minimum;
         a signing must pass recorded service, see `signing_minimum`)."""
-        return minimum_salary(years_of_service or 0, root=self.root)
+        return minimum_salary(years_of_service or 0, self.season, root=self.root)   # the season's own scale
 
     def signing_minimum(self, years_of_service, nba_history=True):
         """The minimum Miami must pay to sign him: a veteran without recorded service is refused."""
         if years_of_service is None and nba_history:
             raise ValueError("a veteran's years of NBA service must be recorded before a minimum contract")
-        return minimum_salary(years_of_service or 0, root=self.root)
+        return minimum_salary(years_of_service or 0, self.season, root=self.root)
 
     def comparables_price(self, value):
         """First-year salary the inventory pays for this production value."""

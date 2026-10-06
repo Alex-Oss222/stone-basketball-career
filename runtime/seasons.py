@@ -139,6 +139,47 @@ def season_of_date(day):
     return label(d.year if d.month >= 7 else d.year - 1)
 
 
+# A club renamed between seasons (same franchise): {first season of the new name: {old name: new name}} (the season-change
+# audit, December 2004: the Hornets play 2005-06 as the New Orleans/Oklahoma City Hornets in every 2005-06 library file).
+CLUB_RENAMES = {"2005-06": {"New Orleans Hornets": "New Orleans/Oklahoma City Hornets"},
+                "2007-08": {"New Orleans/Oklahoma City Hornets": "New Orleans Hornets"},
+                "2008-09": {"Seattle SuperSonics": "Oklahoma City Thunder"},
+                "2012-13": {"New Jersey Nets": "Brooklyn Nets"},
+                "2013-14": {"New Orleans Hornets": "New Orleans Pelicans"},
+                "2014-15": {"Charlotte Bobcats": "Charlotte Hornets"}}
+
+
+def club_name(club, season):
+    """The club's name in `season`: every rename that took effect by then applied (one franchise, one name a season)."""
+    for first in sorted(CLUB_RENAMES):
+        if first <= season:
+            club = CLUB_RENAMES[first].get(club, club)
+    return club
+
+
+def club_aliases(season):
+    """{old name: name in `season`} for every rename effective by the season: a closed season's records keyed by an old
+    name find the club under its new one."""
+    out = {}
+    for first in sorted(CLUB_RENAMES):
+        if first <= season:
+            for old, new in CLUB_RENAMES[first].items():
+                out[old] = club_name(new, season)
+    return {old: new for old, new in out.items() if old != new}
+
+
+def live_season_on(day, root=ROOT):
+    """The season whose records govern a date: the date's league year once its season has begun in the career (its
+    folder holds a current state, written by the rollover), else the season before it. July 1 starts a new league year,
+    but until the October rollover the summer's contracts, rosters and holdings are still the closed season's records;
+    reading the new season's real rosters before then would import hindsight (the season-change audit, December 2004)."""
+    season = season_of_date(day)
+    if (Path(root) / f"career/Dwyane_Wade/{season}/current_state.json").is_file():
+        return season
+    previous = label(int(season[:4]) - 1)
+    return previous if (Path(root) / f"career/Dwyane_Wade/{previous}/current_state.json").is_file() else season
+
+
 # ---- alignment
 
 def conferences(season, root=ROOT):
@@ -207,9 +248,14 @@ def clock(root=ROOT):
 def supported(season, root=ROOT):
     """Missing library files a season needs before it can be played (empty when ready)."""
     need = [path(season, k) for k in ("schedule", "preseason_schedule", "team_rosters", "calendar", "conferences",
-                                      "playoff_rules", "season_awards", "team_pace", "staffs")]
+                                      "playoff_rules", "season_awards", "team_pace", "staffs", "all_star", "cap_rules",
+                                      "jerseys")]
     need += [prior_path(season, k) for k in ("player_stats", "league_environment", "shot_environment")]
-    return [str(p) for p in need if not (Path(root) / p).is_file()]
+    missing = [str(p) for p in need if not (Path(root) / p).is_file()]
+    from .era import SEASON_RULES
+    if season not in SEASON_RULES:                     # the season-change audit: a season with no era row builds no game
+        missing.append(f"runtime/era.py SEASON_RULES row for {season}")
+    return missing
 
 
 # ---- the regular-season calendar folders

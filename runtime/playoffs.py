@@ -310,12 +310,12 @@ def page(record, root=ROOT):
     lines = [f"# {record['season']} NBA playoffs", "",
              f"Seeded {record['seeded_on']} from closed simulated regular-season results only "
              f"([standings](Standings.md); rules and sources: `{record['rules']}`, `runtime/playoffs.py`). "
-             "Real 2004 seeds, matchups and results are never used.", "",
-             "Division winners take seeds 1 and 2; seeds 3 to 8 are the next six records. Ties: the 2003-04 tiebreak "
+             f"Real {int(record['season'][:4]) + 1} seeds, matchups and results are never used.", "",
+             "Division winners take seeds 1 and 2; seeds 3 to 8 are the next six records. Ties: the " f"{record['season']} tiebreak "
              "procedure, an engine drawing if it cannot separate them. Best of seven; home court to the better record; "
              "2-2-1-1-1 in the conference rounds, 2-3-2 in the Finals. Games 5 to 7 are played only if needed.", "",
              "Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · "
-             "[Miami's playoff statistics](../../Team/2003-04/Playoffs/Team_Playoff_Stats.md).", ""]
+             f"[Miami's playoff statistics](../../Team/{record['season']}/Playoffs/Team_Playoff_Stats.md).", ""]
     for conf in ("East", "West"):
         lines += [f"## {conf}ern Conference seeds", "", "| Seed | Club | W | L | Note |", "| ---: | --- | ---: | ---: | --- |"]
         for row in record["seeds"][conf]:
@@ -337,7 +337,7 @@ def page(record, root=ROOT):
         lines.append("")
     lines += ["```", ""]
     if record.get("champion"):
-        lines += [f"**2004 NBA champion: {record['champion']}**", ""]
+        lines += [f"**{int(record['season'][:4]) + 1} NBA champion: {record['champion']}**", ""]
     for key, label, _ in ROUNDS:
         series = [x for x in record["series"] if x["round"] == key]
         if not series:

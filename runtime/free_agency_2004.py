@@ -131,6 +131,7 @@ class year_context:
     def __enter__(self):
         g = globals()
         self.saved = {k: g[k] for k in self.NAMES}
+        _IN_CONTEXT.append(self.year)
         if self.year == 2004:
             return self
         from .seasons import dates, path as season_path
@@ -152,6 +153,7 @@ class year_context:
 
     def __exit__(self, *exc):
         globals().update(self.saved)
+        _IN_CONTEXT.pop()
         return False
 
 
@@ -179,6 +181,11 @@ def rounds():
     return out
 
 
+def signing_week():
+    """The first round on or after the moratorium's end (2004: July 15, round 2; 2005: August 5, round 5)."""
+    return next(i for i, d in enumerate(rounds()) if d >= SIGN_FROM)
+
+
 def calendar(root=ROOT):
     c = _read(Path(root) / CALENDAR)
     sfx = NEW.replace("-", "_")
@@ -195,9 +202,11 @@ def minimum(service, cal):
 
 
 def maximum(service, cap):
-    """1999 agreement: 25%, 30% or 35% of the cap by years of service (the 105% of prior salary rule is applied by the caller)."""
-    share = 0.25 if (service or 0) <= 6 else 0.30 if service <= 9 else 0.35
-    return int(round(cap * share))
+    """The maximum by years of service under the agreement in force for the market's new season (`runtime/agreement.py`:
+    1999's 25/30/35% of the cap through 2004; the 2005 agreement's fixed 2005-06 figures after). The 105% of prior salary
+    rule is applied by the caller."""
+    from .agreement import maximum as agreement_maximum
+    return agreement_maximum(service, cap, NEW)
 
 
 # ---------------------------------------------------------------- evidence
@@ -229,10 +238,23 @@ def season_evidence(root=ROOT):
             for b, t in out.items()}
 
 
-def identity(root=ROOT):
-    """{bbr_id: {"name", "birth_date", "position", "service"}} from the registry, rosters and careers."""
-    from .rotations import load_rosters
+_IN_CONTEXT = []                           # year_context depth: inside a market year, identity() uses that year
+
+
+def identity(root=ROOT, year=None):
+    """{bbr_id: {"name", "birth_date", "position", "service"}} from the registry, rosters and careers.
+
+    The year's identity (service through the season before its summer): `year`, else the market year in force (inside
+    `year_context`), else the summer that opened the career's live season (the season-change audit: outside a context
+    this used the 2004 rules in every later season, one season of service short and without the new draftees)."""
     root = Path(root)
+    if year is None and not _IN_CONTEXT:
+        from .seasons import active
+        year = max(2004, market_year(active(root)))     # 2003-04 had no simulated summer market: 2004 is the first
+    if year is not None and int(year) != YEAR:
+        with year_context(int(year), root):
+            return identity(root)
+    from .rotations import load_rosters
     out = {}
     registry = _read(root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json")
     for p in registry["players"] if isinstance(registry, dict) else registry:
@@ -272,10 +294,10 @@ def identity(root=ROOT):
     return out
 
 
-def age(birth, on=OPEN):
+def age(birth, on=None):
     if not birth:
         return None
-    b, d = date.fromisoformat(birth), date.fromisoformat(on)
+    b, d = date.fromisoformat(birth), date.fromisoformat(on or OPEN)       # the market year's July 1 in force
     return d.year - b.year - ((d.month, d.day) < (b.month, b.day))
 
 
@@ -289,16 +311,22 @@ class Pricing:
         self.ident = identity(root) if ident is None else ident
         self._age_factor, self._prior, self._repl = age_factor, PRIOR_MINUTES, REPLACEMENT_EFF_PER_GAME
         self.honors = Valuation(OPEN, root)
-        terms = terms if terms is not None else __import__("runtime.contract_terms", fromlist=["x"]).existing_terms(root)
+        if terms is None:                  # the summer's existing contracts: 2004's inventory, later the closed season's ledger
+            if YEAR == 2004:
+                from .contract_terms import existing_terms
+                terms = existing_terms(root)
+            else:
+                from .league_contracts import carried
+                terms = carried(NEW, root)
         values, salaries = [], []
         for b, t in terms.items():
             e = self.evidence.get(b)
             if (t["kind"] == "contract" and e and e["minutes"] >= COMPARABLE_MINUTES
-                    and "rookie" not in t["source"]):
+                    and "rookie" not in t["source"] and not t.get("rookie_scale")):
                 values.append(self.value(b))
                 salaries.append(t["salary"])
         self.values, self.salaries = sorted(values), sorted(salaries)
-        self.fit = {"method": "quantile match of value to salary over existing 2004-05 contracts", "n": len(values)}
+        self.fit = {"method": f"quantile match of value to salary over existing {NEW} contracts", "n": len(values)}
 
     def comparables_price(self, v):
         """The salary at the same rank among the comparables as this value (linear between ranks)."""
@@ -337,7 +365,9 @@ class Pricing:
 
 
 def years_wanted(a):
-    return next(y for limit, y in YEARS_WANTED if (a or 27) <= limit)
+    """Years a player of age `a` asks for, within the agreement's longest non-Bird contract (5 from the 2005 agreement)."""
+    from .agreement import max_years
+    return min(next(y for limit, y in YEARS_WANTED if (a or 27) <= limit), max_years("other", NEW))
 
 
 # ---------------------------------------------------------------- draws
@@ -543,6 +573,8 @@ class Market:
     def _standings(self):
         from .standings import standings_on
         table = standings_on(SEASON_END, self.root, SEASON)
+        if YEAR != 2004:                   # {club: {"wins", "losses", "pct"}}; the 2004 summer replays its recorded empty table
+            return {club: r["wins"] / ((r["wins"] + r["losses"]) or 1) for club, r in table.items()}
         rows = table if isinstance(table, list) else [r for conf in table.values() for r in (conf if isinstance(conf, list) else [])]
         out = {}
         for r in rows:
@@ -603,7 +635,7 @@ class Market:
 
     def ask(self, b, week):
         floor = ASK_FLOOR_SHARE - LATE_DECAY * max(0, week - LATE_WEEK + 1)
-        decay = max(floor, 1 - ASK_DECAY_PER_WEEK * max(0, week - 2))                 # falls after the moratorium
+        decay = max(floor, 1 - ASK_DECAY_PER_WEEK * max(0, week - signing_week()))     # falls after the moratorium
         return max(minimum(self.service(b), self.cal), int(round(self.price[b] * decay)))
 
     def draw(self, packet):
@@ -710,10 +742,17 @@ class Market:
                 continue
             scale = self.cal["scale"].get(p["pick"]) or self.cal["scale"][max(self.cal["scale"])]
             salary = int(round(scale["year1"] * ROOKIE_SCALE_SHARE))
-            self.contracts[p["bbr_id"]] = {"club": p["club"], "salary": salary, "years": 3, "date": OPEN, "route": "rookie_scale",
+            from .agreement import terms
+            t = terms(NEW)                       # 1999: three guaranteed + a 4th-year option; 2005: two + options on 3 and 4
+            years = t["rookie_guaranteed_years"]
+            options = [f"{YEAR + n - 1}-{str(YEAR + n)[-2:]}" for n in t["rookie_option_years"]]
+            self.contracts[p["bbr_id"]] = {"club": p["club"], "salary": salary, "years": years, "date": OPEN, "route": "rookie_scale",
                                            "source": f"{YEAR} rookie scale No. {p['pick']} at {int(ROOKIE_SCALE_SHARE * 100)}%"}
-            self.events.append({"date": OPEN, "kind": "rookie_scale_signing", "player": p["player"], "bbr_id": p["bbr_id"],
-                                "club": p["club"], "salary": salary, "years": 3, "team_option": f"{YEAR + 3}-{str(YEAR + 4)[-2:]}"})
+            event = {"date": OPEN, "kind": "rookie_scale_signing", "player": p["player"], "bbr_id": p["bbr_id"],
+                     "club": p["club"], "salary": salary, "years": years, "team_option": options[-1]}
+            if len(options) > 1:
+                event["team_options"] = options
+            self.events.append(event)
 
     def means(self, club, b, on, amount):
         """The route by which the club can pay `amount` to player b on the date, or None."""
@@ -942,7 +981,9 @@ class Market:
     def legal_trade(self, club, out_salary, in_salary, day):
         if self.payroll(club) - out_salary + in_salary <= self.cap(club, day):
             return True
-        return in_salary <= out_salary * TRADE_MATCH + TRADE_PLUS
+        from .agreement import terms
+        t = terms(NEW) if YEAR != 2004 else {"trade_match": TRADE_MATCH, "trade_plus": TRADE_PLUS}
+        return in_salary <= out_salary * t["trade_match"] + t["trade_plus"]                 # 125% from the 2005 agreement
 
     def trade_proposals(self, day):
         from .trades import SEARCH_MIN_ACCEPT, acceptance

@@ -61,9 +61,30 @@ def _read(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
+def protected(entry, year, pick):
+    """Whether a traded first-round pick is protected at this slot in this year (`protection` in the ownership file:
+    "lottery-protected" = picks 1-14, "protected 1-N"); anything else conveys. Protections only; a later real move
+    that changed one is not applied (ownership is fixed at the December 3, 2003 activation)."""
+    import re
+    terms = (entry.get("protection") or {}).get(str(year))
+    if not terms:
+        return False
+    if terms.startswith("lottery-protected"):
+        return pick <= 14
+    m = re.match(r"protected 1-(\d+)", terms)
+    return bool(m) and pick <= int(m.group(1))
+
+
 def codes(root=ROOT, y=None):
+    """{club: code} from the next season's rosters, with a renamed club also under its old name (the closed season's
+    standings use it: `seasons.club_aliases`)."""
+    from .seasons import club_aliases
     out = {club: v["code"] for club, v in _read(Path(root) / (y.rosters_path if y else ROSTERS))["clubs"].items()}
     out[MIAMI] = MIA
+    if y is not None:
+        for old, new in club_aliases(y.next_season).items():
+            if new in out:
+                out.setdefault(old, out[new])
     return out
 
 
@@ -155,7 +176,9 @@ def build(root=ROOT, year=2004):
         winners.append(won)
     rest = [c for c in seeds if c not in winners]
     expansion = (own.get("expansion") or {}).get("club")
-    names = {v: k for k, v in code.items()}
+    from .seasons import club_aliases
+    renamed = set(club_aliases(y.next_season)) if y is not None else set()
+    names = {v: k for k, v in code.items() if k not in renamed}          # a code names the club as it is now called
     first_round = winners + rest
     if expansion and own["expansion"].get("round_1_slot"):
         first_round.insert(own["expansion"]["round_1_slot"] - 1, "__EXP__")     # an expansion club's fixed slot
@@ -177,6 +200,8 @@ def build(root=ROOT, year=2004):
         for club in seq:
             original = expansion if club == "__EXP__" else code[club]
             owner = owners.get(original, {}).get("owner", original)
+            if protected(owners.get(original, {}), year, len(slots) + 1):
+                owner = original                       # a protected pick stays with its club this year
             slots.append({"pick": len(slots) + 1, "round": rnd, "original": original, "owner": owner,
                           "owner_club": names.get(owner, owner)})
     return {"schema_version": 1, "kind": "draft_order", "draft": f"{year} NBA Draft", "lottery_date": date,

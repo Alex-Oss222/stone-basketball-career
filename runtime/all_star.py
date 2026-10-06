@@ -278,6 +278,19 @@ def reserves(root, c, day, rows, record):
             "lens": list(COACH_LENS), "conferences": out}
 
 
+def previous_coaches(c, root=ROOT):
+    """The Riley rule's barred coaches: the career's own previous All-Star Game where the career played one (a
+    simulated game's coaches, not history's), else the researched real previous game (the career's first season)."""
+    from .seasons import previous_season
+    earlier = Path(root) / c.record.parent.parent / previous_season(c.season) / "all_star.json"
+    if earlier.is_file():
+        step = next((s for s in json.loads(earlier.read_text(encoding="utf-8"))["steps"] if s["step"] == "coaches"), None)
+        if step:
+            return {r["coach"] for r in step["conferences"].values()}
+    barred = c.data["previous_game_coaches"]["value"]
+    return set(barred.values()) if isinstance(barred, dict) else set(barred)
+
+
 def game_coaches(root, c, day, rows):
     """(decision, pending packet or None)."""
     from .seasons import conference_of
@@ -291,8 +304,7 @@ def game_coaches(root, c, day, rows):
         w = r["home"] if r["final_score"]["home"] > r["final_score"]["away"] else r["away"]
         wins[w] += 1
     coaches = _coaches_on(root, c.season, through, rows)
-    barred = c.data["previous_game_coaches"]["value"]
-    barred = set(barred.values()) if isinstance(barred, dict) else set(barred)
+    barred = previous_coaches(c, root)
     out, pending = {}, None
     for conf in ("East", "West"):
         table = sorted(((wins[cl] / len(games[cl]), wins[cl], cl) for cl in games if conference_of(c.season, cl, root) == conf), reverse=True)
@@ -332,9 +344,12 @@ def rookie_challenge(root, c, day, rows):
     through = _plus(day, -1)
     players = pool(root, c.season, through, rows)
     first = rookies(root, c.season)
-    service_path = Path(root) / "library/2004/league/nba_2004_service_years.json"
-    service = _read(service_path if service_path.is_file() else ROOT / "library/2004/league/nba_2004_service_years.json")["players"]
     from .seasons import previous_season
+    year = int(c.season[:4])                                    # the season's own service file (players before it)
+    service_path = Path(root) / f"library/{year}/league/nba_{year}_service_years.json"
+    if not service_path.is_file():
+        service_path = Path(root) / "library/2004/league/nba_2004_service_years.json"
+    service = _read(service_path)["players"]
     second_bbr = {b for b, s in service.items() if s.get("first_season") == previous_season(c.season)}
     shape = {"G": 2, "F": 2, "C": 1, "any": c.data["shape"]["rookie_challenge_roster"] - 5}
     out = {}

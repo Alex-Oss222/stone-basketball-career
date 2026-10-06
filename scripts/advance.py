@@ -236,6 +236,24 @@ def summary(day):
                     WADE_LONG.append(f"{day}  {line}")
 
 
+def seed_playoffs(day):
+    """The first day after the regular season: seed the playoffs once every regular-season game is closed, drawing any
+    tie the procedure cannot break (`scripts/seed_playoffs.py`). Nothing to do once the bracket exists."""
+    from runtime import playoffs
+    if playoffs.read(ROOT) is not None:
+        return
+    for _ in range(5):
+        out = run("scripts/seed_playoffs.py", "--write", ok=(0, 1), show=False)
+        if playoffs.read(ROOT) is not None:
+            say("    playoffs seeded")
+            return
+        if "tiebreak drawing needed" in out and draws_pending():
+            draw()
+            continue
+        raise Stop("the playoffs cannot be seeded: " + out.splitlines()[-1][:200])
+    raise Stop("the playoffs cannot be seeded after the tiebreak drawings")
+
+
 def playoff_day(day):
     """After the regular season: awards, the day's playoff games, then the bracket. The market, trade scan and staff
     reviews are closed (the rotation in force carries into the playoffs)."""
@@ -246,6 +264,7 @@ def playoff_day(day):
     run("scripts/decide_awards.py", "--write", ok=(0, 1))
     draw()
     run("scripts/decide_awards.py", "--write", show=False)
+    seed_playoffs(day)
     run("scripts/playoff_day.py", "--refresh", show=False)
     for _ in range(150):                                                # lottery draws and draft picks, one at a time
         run("scripts/offseason_day.py", "--write", day, show=False)

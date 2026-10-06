@@ -34,21 +34,32 @@ def _season_after(season, n):
 
 def schedule_for(first_salary, years, start_season, route):
     """{season: salary} for a new contract from its first-year salary and the route it was signed by."""
-    raise_share = 0.0 if route in ("minimum", "qualifying_offer") else BIRD_RAISE if route == "bird" else OTHER_RAISE
+    from .agreement import raise_share as agreement_raise                 # 12.5/10% (1999); 10.5/8% from the 2005 agreement
+    raise_share = agreement_raise(route, start_season)
     return {_season_after(start_season, i): int(round(first_salary * (1 + raise_share * i))) for i in range(max(1, years))}
 
 
 def rookie_schedule(pick, start_season, scale):
-    """A first-round pick's three scale seasons at 120% of the scale amounts (year 4 is a team option)."""
+    """A first-round pick's scale seasons at 120% of the scale amounts: three (1999 agreement; year 4 a team option
+    recorded apart) or all four from the 2005 agreement (two guaranteed, team options on years 3 and 4, `rookie_options`)."""
+    from .agreement import terms
     row = scale.get(pick) or scale[max(scale)]
-    return {_season_after(start_season, i): int(round(row[f"year{i + 1}"] * SCALE_SHARE)) for i in range(3)}
+    t = terms(start_season)
+    n = 3 if t["agreement"] == "1999" else max(t["rookie_option_years"])
+    return {_season_after(start_season, i): int(round(row[f"year{i + 1}"] * SCALE_SHARE)) for i in range(n) if f"year{i + 1}" in row}
+
+
+def rookie_options(start_season):
+    """{season: "team_option"} for a rookie-scale contract signed for `start_season` (`agreement.terms`)."""
+    from .agreement import terms
+    return {_season_after(start_season, n - 1): "team_option" for n in terms(start_season)["rookie_option_years"]}
 
 
 def build(season, root=ROOT, market=None):
     """The ledger for `season` from the summer market's record: {bbr_id: entry}."""
     from .contract_terms import existing_terms
     from .free_agency_2004 import calendar, market_year, record_for, year_context
-    from .seasons import previous_season
+    from .seasons import club_name, previous_season
     root = Path(root)
     year = market_year(season)
     market = market or json.loads((root / record_for(season)).read_text(encoding="utf-8"))
@@ -84,11 +95,13 @@ def build(season, root=ROOT, market=None):
                 sched, kind = rookie_schedule(picks[b], season, scale), "rookie_scale"
             else:
                 sched, kind = schedule_for(r["salary"], r.get("years") or 1, season, route), "new"
-            out[b] = {"player": r["player"], "bbr_id": b, "club": club, "route": route, "kind": kind,
+            out[b] = {"player": r["player"], "bbr_id": b, "club": club_name(club, season), "route": route, "kind": kind,
                       "schedule": dict(sorted(sched.items())), "source": r.get("source")}
             if kind == "rookie_scale":
                 out[b]["team_option"] = _season_after(season, 3)
                 out[b]["rookie_scale"] = True
+                if season >= "2005-06":                     # 2005 agreement: options on years 3 and 4 (both in the schedule)
+                    out[b]["options"] = rookie_options(season)
             carried_options = (terms.get(b) or {}).get("options") if kind == "existing" else None
             if carried_options:
                 out[b]["options"] = dict(carried_options)

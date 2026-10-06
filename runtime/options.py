@@ -81,7 +81,9 @@ def open_options(season, root=ROOT):
         for s, kind in (p.get("amount_kind") or {}).items():
             if kind in OPTION_KINDS and s > season and p["schedule"].get(s):
                 rookie = p.get("route") == "rookie_scale" or "rookie" in (p.get("status") or "") or "rookie-scale" in (p.get("notes") or "")
-                out.append(("Miami Heat", p.get("bbr_id") or roster.get(p["player"]), p["player"], s, kind, int(p["schedule"][s]), rookie))
+                # Wade's sheet and register carry no bbr_id (alternate history); his records' key is wadedw01.
+                bbr = p.get("bbr_id") or roster.get(p["player"]) or ("wadedw01" if p["player"] == "Dwyane Wade" else None)
+                out.append(("Miami Heat", bbr, p["player"], s, kind, int(p["schedule"][s]), rookie))
     return out
 
 
@@ -95,6 +97,11 @@ def decide(day, row, valuation, root=ROOT):
     if age is not None and age <= YOUNG_AGE:
         worth *= YOUTH_PREMIUM
     retired = bbr and status(bbr, s, root) in ("retired", "unknown")
+    if value is None and not retired:
+        # No valuation is not zero worth: never decline an option for want of evidence (the season-change audit found
+        # Wade's own 2006-07 option would have been declined this way).
+        raise ValueError(f"{name}: no valuation on {day} for the {s} {kind.replace('_', ' ')} ({bbr or 'no bbr_id'}); "
+                         "the option cannot be decided")
     team = kind == "team_option"
     ratio = (worth / salary) if team else (salary / worth if worth else float("inf"))
     yes, no = ("exercise", "decline") if team else ("stay", "leave")
@@ -118,9 +125,11 @@ def decide(day, row, valuation, root=ROOT):
     return dict(base, decision=None, how="engine draw"), packet
 
 
-def _season_of(day):
-    from .seasons import season_of_date
-    return season_of_date(day)
+def _season_of(day, root=ROOT):
+    """The season whose ledger holds the contracts on `day` (`seasons.live_season_on`: the summer belongs to the closed
+    season until the rollover writes the next one)."""
+    from .seasons import live_season_on
+    return live_season_on(day, root)
 
 
 def holders_on(day, root=ROOT):
@@ -143,7 +152,7 @@ def _dated_holder(row, due, root):
         _HOLDERS[key] = holders_on(due, root)
     holders = _HOLDERS[key]
     from .rotations import miami_holds
-    if row[1] in set(miami_holds(_season_of(due), due, root)):
+    if row[1] in set(miami_holds(_season_of(due, root), due, root)):
         return None
     return (holders.get(row[1]) or row[0],) + tuple(row[1:])
 
@@ -153,7 +162,7 @@ def run(day, root=ROOT, evidence_day=None):
     Returns (decided now, packets written, applied)."""
     from .season_market import for_date
     root = Path(root)
-    season = _season_of(day)
+    season = _season_of(day, root)
     record = read_record(season, root)
     done = {d["id"] for d in record["decisions"]}
     decided, written = [], []

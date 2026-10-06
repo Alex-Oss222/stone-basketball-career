@@ -494,8 +494,15 @@ def _season_gates(c) -> list:
         names = sorted({AWARDS[award] for a, award in announced if a == first})
         rows.append([first, "League awards announced: " + ", ".join(names), "League (closed results only)",
                      "Scheduled", {"label": "Awards", "href": "#calendar"}])
-    for gate, what in (("2004-01-07", "Keep-or-waive review of non-guaranteed contracts"),
-                       ("2004-01-10", "Kept contracts become guaranteed")):
+    try:                                   # the season's own guarantee date (runtime/seasons.py), review three days before
+        from datetime import date as _date, timedelta as _td
+        from .seasons import dates as _season_dates
+        guarantee = _season_dates(c.season.name, c.root)["guarantee"]
+        review = (_date.fromisoformat(guarantee) - _td(days=3)).isoformat()
+    except (OSError, KeyError, ValueError):
+        guarantee, review = "2004-01-10", "2004-01-07"
+    for gate, what in ((review, "Keep-or-waive review of non-guaranteed contracts"),
+                       (guarantee, "Kept contracts become guaranteed")):
         if gate > c.on:
             rows.append([gate, what, "Miami front office", "Scheduled; does not involve Wade's guaranteed contract",
                          c.link(c.root / "docs/front_office.md", "Rule")])

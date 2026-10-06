@@ -665,6 +665,8 @@ def validate():
 
     from runtime.continuity import errors as continuity_errors          # contracts, clubs, players, numbers across seasons
     errors.extend(continuity_errors(ROOT))
+    from runtime.seasons import active as live_season, supported
+    errors.extend(f"{live_season(ROOT)} season data missing: {m}" for m in supported(live_season(ROOT), ROOT))
     from runtime.injury_types import errors as injury_type_errors        # every Miami injury and absence is named
     errors.extend(injury_type_errors(ROOT))
     from runtime.write_back import identity_errors                      # one identity per player; card club = actual club

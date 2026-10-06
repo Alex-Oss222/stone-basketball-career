@@ -68,6 +68,12 @@ class Rollover:
         self.record_path = self.root / record_for(self.new)
         self.record = _read(self.record_path) if self.record_path.is_file() else None
 
+    def draft_date(self):
+        """The summer's draft night (`draft.year_context`): the day Miami's unsigned picks' rights began."""
+        from . import draft
+        with draft.year_context(self.year, self.root):
+            return draft.DRAFT_DATE
+
     # -- gates -----------------------------------------------------------------------------------
     def blockers(self, clock):
         out = []
@@ -79,14 +85,16 @@ class Rollover:
             out.append(f"the summer market has not closed ({self.record_path.relative_to(self.root)})")
         if clock < self.day:
             out.append(f"the rollover is dated {self.day}; the clock is {clock}")
+        from .seasons import supported
+        out += [f"{self.new} data missing: {m}" for m in supported(self.new, self.root)]
         return out
 
     # -- identities ------------------------------------------------------------------------------
     def identities(self):
         """{bbr or id: {name, birth_date, position, ...}} for Miami's new season: the old register first."""
         from .free_agency_2004 import identity
-        out = {b: dict(e) for b, e in identity(self.root).items()}
-        draft = self.old_dir / "09_Draft/draft_2004.json"
+        out = {b: dict(e) for b, e in identity(self.root, self.year).items()}   # the closing summer's identity
+        draft = self.old_dir / f"09_Draft/draft_{self.year}.json"
         if draft.is_file():
             for p in _read(draft)["picks"]:
                 if p.get("bbr_id"):
@@ -114,7 +122,7 @@ class Rollover:
 
     def unsigned_picks(self):
         """Miami's drafted players without a contract: rights held (second-round picks negotiate; a pick abroad stays)."""
-        draft = self.old_dir / "09_Draft/draft_2004.json"
+        draft = self.old_dir / f"09_Draft/draft_{self.year}.json"
         if not draft.is_file():
             return []
         signed = {r["bbr_id"] for r in self.record["clubs"][MIAMI]}
@@ -169,14 +177,14 @@ class Rollover:
         for p in self.unsigned_picks():
             out.append({"player": p["player"], "bbr_id": p.get("bbr_id"), "status": "unsigned_draft_rights", "schedule": {},
                         "amount_kind": {}, "draft_pick": p["pick"], "draft_round": p["round"],
-                        "notes": f"No. {p['pick']} pick of the 2004 draft; Miami holds his rights, unsigned when the summer market closed.",
-                        "sources": [f"{self.old}/09_Draft/draft_2004.json"]})
+                        "notes": f"No. {p['pick']} pick of the {self.year} draft; Miami holds his rights, unsigned when the summer market closed.",
+                        "sources": [f"{self.old}/09_Draft/draft_{self.year}.json"]})
         return out
 
     def control_text(self, entry):
         s = entry.get("schedule") or {}
         if entry["status"] == "unsigned_draft_rights":
-            return f"Unsigned draft rights: No. {entry.get('draft_pick')} pick of the 2004 draft."
+            return f"Unsigned draft rights: No. {entry.get('draft_pick')} pick of the {self.year} draft."
         years = [k for k in sorted(s) if k >= self.new and s[k]]
         total = sum(s[k] for k in years)
         head = f"{len(years)} season(s) from {self.new}, ${total:,} scheduled (${s.get(self.new, 0):,} in {self.new})"
@@ -230,7 +238,7 @@ class Rollover:
                 continue
             if e["status"] == "unsigned_draft_rights":
                 # Miami holds his rights from the draft: he plays for no other club (world rule 2).
-                new_entries.append({"player": e["player"], "bbr_id": e["bbr_id"], "from": "2004-06-24", "until": None,
+                new_entries.append({"player": e["player"], "bbr_id": e["bbr_id"], "from": self.draft_date(), "until": None,
                                     "basis": f"draft rights (No. {e.get('draft_pick')} pick), unsigned"})
                 continue
             new_entries.append({"player": e["player"], "bbr_id": e["bbr_id"], "from": e.get("signed_date") or self.day,

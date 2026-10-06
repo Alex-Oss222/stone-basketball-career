@@ -21,8 +21,9 @@
       "season": "2005-06",
       "salary_cap": 49500000,
       "status": "historical_actual",
-      "published_date": null,
-      "live_at_checkpoint": false
+      "published_date": "2005-07-30",
+      "live_at_checkpoint": false,
+      "published_basis": "2005-07-30 at the latest: the UPI report of the ratified 2005 agreement setting the 2005-06 cap at $49.5 million (library/2005/league/nba_2005_offseason_calendar.json salary_cap_2005_06); effective 2005-08-02"
     },
     {
       "season": "2006-07",
