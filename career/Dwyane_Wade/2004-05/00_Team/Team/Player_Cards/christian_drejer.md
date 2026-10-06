@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-14 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-15 
 
 **Contract/control:** Unsigned draft rights: No. 54 pick of the 2004 draft. (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
 

@@ -231,7 +231,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Mitchell Butler](../../../Players/butlemi02.md) | 33 | WSH | NBA | SG | 3 | 0 | 9.5 | 2.0 | 3.3 | .600 | 0.3 | 1.0 | .333 | 1.7 | 2.3 | .714 | .650 | 0.3 | 0.7 | .500 | 1.0 | 1.3 | 2.3 | 1.3 | 0.0 | 0.3 | 0.0 | 1.7 | 4.7 | .643 |
 | [Quentin Richardson](../../../Players/richaqu01.md) | 23 | LAC | NBA | SG | 3 | 3 | 32.8 | 4.3 | 11.7 | .371 | 0.0 | 2.7 | .000 | 4.3 | 9.0 | .481 | .371 | 2.3 | 4.0 | .583 | 0.7 | 2.3 | 3.0 | 3.7 | 1.0 | 0.0 | 1.0 | 2.3 | 11.0 | .410 |
 | [Geno Carlisle](../../../Players/carlige01.md) | 27 | POR | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Maurice Evans](../../../Players/evansma01.md) | N/A | MIA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [Maurice Evans](../../../Players/evansma01.md) | 25 | MIA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 
@@ -652,6 +652,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Samuel Dalembert](../../../Players/dalemsa01.md) | 22 | PHI | NBA | C | 3 | 1 | 26.7 | 3.0 | 6.0 | .500 | 0.0 | 0.0 | N/A | 3.0 | 6.0 | .500 | .500 | 0.7 | 1.0 | .667 | 2.0 | 5.7 | 7.7 | 0.0 | 0.7 | 2.0 | 2.0 | 4.3 | 6.7 | .518 |
 | [Zendon Hamilton](../../../Players/hamilze01.md) | 28 | PHI | NBA | C | 2 | 0 | 3.4 | 0.5 | 1.0 | .500 | 0.0 | 0.0 | N/A | 0.5 | 1.0 | .500 | .500 | 0.0 | 0.0 | N/A | 0.0 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 | 0.5 | 0.0 | 1.0 | .500 |
 | [Mario Kasun](../../../Players/kasunma01.md) | 24 | ORL | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [John Edwards](../../../Players/edwarjo01.md) | N/A | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 

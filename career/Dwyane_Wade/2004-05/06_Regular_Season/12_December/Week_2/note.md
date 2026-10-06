@@ -1,6 +1,6 @@
 ---
 type: regular_season_week
-status: active
+status: complete
 month: December
 week: 2
 days: 8-14

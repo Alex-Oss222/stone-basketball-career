@@ -2,11 +2,11 @@
 
 <!-- team-status:start -->
 
-[roster.json](roster.json) is the machine-readable register (team-control record dated 2004-11-01). Availability below is on 2004-12-14, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
+[roster.json](roster.json) is the machine-readable register (team-control record dated 2004-11-01). Availability below is on 2004-12-15, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
 
-| Player | Pos | Control | Availability on 2004-12-14 | Staff role |
+| Player | Pos | Control | Availability on 2004-12-15 | Staff role |
 | --- | --- | --- | --- | --- |
-| [Eddie Jones](../Player_Cards/eddie_jones.md) | SG/SF | under contract | Available | rotation at SG, staff plan 4 minutes |
+| [Eddie Jones](../Player_Cards/eddie_jones.md) | SG/SF | under contract | Injured list since 2004-12-15, injured | rotation at SG, staff plan 4 minutes |
 | [Brian Grant](../Player_Cards/brian_grant.md) | C/PF | under contract | Available | starter at C, staff plan 34 minutes |
 | [Scott Padgett](../Player_Cards/scott_padgett.md) | PF | under contract | Available | rotation at PF, staff plan 15 minutes |
 | [Mike James](../Player_Cards/mike_james.md) | PG | under contract | Available | starter at PG, staff plan 34 minutes |
@@ -19,7 +19,7 @@
 | [Maurice Evans](../Player_Cards/maurice_evans.md) | SG | under contract | Injured list since 2004-12-12, inactive reserve | reserve outside the planned rotation |
 | [Udonis Haslem](../Player_Cards/udonis_haslem.md) | PF | under contract | Available | rotation at PF, staff plan 19 minutes |
 | [Maurice Baker](../Player_Cards/maurice_baker.md) | PG | under contract | Available | reserve outside the planned rotation |
-| [John Edwards](../Player_Cards/john_edwards.md) | C | under contract | Injured list since 2004-11-03, inactive reserve | reserve outside the planned rotation |
+| [John Edwards](../Player_Cards/john_edwards.md) | C | under contract | Available | reserve outside the planned rotation |
 | [Bernard Robinson](../Player_Cards/bernard_robinson.md) | SG | unsigned draft rights | Available | reserve outside the planned rotation |
 | [Christian Drejer](../Player_Cards/christian_drejer.md) | SF | unsigned draft rights | Available | reserve outside the planned rotation |
 | [Rafer Alston](../Player_Cards/rafer_alston.md) | PG | camp contract | Available | rotation at PG, staff plan 11 minutes |
