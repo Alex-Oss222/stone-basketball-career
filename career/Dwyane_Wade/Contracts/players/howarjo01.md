@@ -2,9 +2,9 @@
 
 # Contract | Josh Howard
 
-Known through: 2004-10-16. [Open interactive contract](howarjo01.html#contract) · [Contract history](howarjo01.html#contract-history)
+Known through: 2004-10-17. [Open interactive contract](howarjo01.html#contract) · [Contract history](howarjo01.html#contract-history)
 
-Josh Howard: No verified contract record. Evidence cutoff: 2004-10-16.
+Josh Howard: No verified contract record. Evidence cutoff: 2004-10-17.
 
 ## Current contract
 

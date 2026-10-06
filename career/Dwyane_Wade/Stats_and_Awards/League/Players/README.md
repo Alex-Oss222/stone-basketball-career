@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-16**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-17**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -228,7 +228,7 @@ Card date: **2004-10-16**. 504 registry players, one Markdown card and one inter
 | [Chris Owens](owensch01.md) | Free agent | 25 | sourced | [open](owensch01.html) |
 | [Corliss Williamson](willico02.md) | Detroit Pistons | 30 | sourced | [open](willico02.html) |
 | [Dan Langhi](langhda01.md) | Free agent | None | silhouette | [open](langhda01.html) |
-| [Danny Ferry](ferryda01.md) | Free agent | 37 | sourced | [open](ferryda01.html) |
+| [Danny Ferry](ferryda01.md) | Free agent | 38 | sourced | [open](ferryda01.html) |
 | [Darius Miles](milesda01.md) | Cleveland Cavaliers | 23 | sourced | [open](milesda01.html) |
 | [DerMarr Johnson](johnsde03.md) | Free agent | None | silhouette | [open](johnsde03.html) |
 | [Desmond Ferguson](fergude01.md) | Free agent | None | silhouette | [open](fergude01.html) |
@@ -485,7 +485,7 @@ Card date: **2004-10-16**. 504 registry players, one Markdown card and one inter
 | [Jake Voskuhl](voskuja01.md) | Phoenix Suns | 26 | sourced | [open](voskuja01.html) |
 | [Jamaal Magloire](magloja01.md) | New Orleans Hornets | 26 | sourced | [open](magloja01.html) |
 | [Jamal Sampson](sampsja01.md) | Houston Rockets | None | silhouette | [open](sampsja01.html) |
-| [James Lang](langja01.md) | Free agent | 20 | sourced | [open](langja01.html) |
+| [James Lang](langja01.md) | Free agent | 21 | sourced | [open](langja01.html) |
 | [Jarron Collins](collija03.md) | Utah Jazz | None | silhouette | [open](collija03.html) |
 | [Jason Collier](collija02.md) | Utah Jazz | None | silhouette | [open](collija02.html) |
 | [Jason Collins](collija04.md) | New Jersey Nets | 25 | sourced | [open](collija04.html) |

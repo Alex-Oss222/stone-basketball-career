@@ -2,9 +2,9 @@
 
 # Contract | Chris Mihm
 
-Known through: 2004-10-16. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
+Known through: 2004-10-17. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
 
-Chris Mihm: camp contract. Evidence cutoff: 2004-10-16.
+Chris Mihm: camp contract. Evidence cutoff: 2004-10-17.
 
 ## Current contract
 
