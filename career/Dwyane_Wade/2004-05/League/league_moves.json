@@ -1,0 +1,156 @@
+{
+ "schema_version": 1,
+ "kind": "league_moves",
+ "season": "2004-05",
+ "entries": [
+  {
+   "id": "2004-05-market-2004-11-02-rest_of_season-jacksst02",
+   "date": "2004-11-02",
+   "kind": "rest_of_season",
+   "player": "Stephen Jackson",
+   "bbr_id": "jacksst02",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Stephen Jackson",
+    "bbr_id": "jacksst02",
+    "position": "SF",
+    "games": 51,
+    "minutes": 1806
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 8.39 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-02-rest_of_season-bowenbr01",
+   "date": "2004-11-02",
+   "kind": "rest_of_season",
+   "player": "Bruce Bowen",
+   "bbr_id": "bowenbr01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Bruce Bowen",
+    "bbr_id": "bowenbr01",
+    "position": "SF",
+    "games": 82,
+    "minutes": 2627
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 8.26 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-02-rest_of_season-malonka01",
+   "date": "2004-11-02",
+   "kind": "rest_of_season",
+   "player": "Karl Malone",
+   "bbr_id": "malonka01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Karl Malone",
+    "bbr_id": "malonka01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 8.65 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-02-waive-duhonch01",
+   "date": "2004-11-02",
+   "kind": "waive",
+   "player": "Chris Duhon",
+   "bbr_id": "duhonch01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "Chris Duhon",
+    "bbr_id": "duhonch01",
+    "position": "PG",
+    "games": 82,
+    "minutes": 2177
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-04"
+  },
+  {
+   "id": "2004-05-market-2004-11-02-rest_of_season-robined01",
+   "date": "2004-11-02",
+   "kind": "rest_of_season",
+   "player": "Eddie Robinson",
+   "bbr_id": "robined01",
+   "from": null,
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Eddie Robinson",
+    "bbr_id": "robined01",
+    "position": null,
+    "games": 0,
+    "minutes": 0
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 7.52 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-02-waive-iveyro01",
+   "date": "2004-11-02",
+   "kind": "waive",
+   "player": "Royal Ivey",
+   "bbr_id": "iveyro01",
+   "from": "Utah Jazz",
+   "to": null,
+   "role": {
+    "player_id": "Royal Ivey",
+    "bbr_id": "iveyro01",
+    "position": "PG",
+    "games": 62,
+    "minutes": 809
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-11-04"
+  },
+  {
+   "id": "2004-05-market-2004-11-02-rest_of_season-fishede01",
+   "date": "2004-11-02",
+   "kind": "rest_of_season",
+   "player": "Derek Fisher",
+   "bbr_id": "fishede01",
+   "from": null,
+   "to": "Utah Jazz",
+   "role": {
+    "player_id": "Derek Fisher",
+    "bbr_id": "fishede01",
+    "position": "PG",
+    "games": 74,
+    "minutes": 2222
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 7.53 x fit"
+  }
+ ],
+ "market_days": [
+  "2004-11-02"
+ ]
+}
