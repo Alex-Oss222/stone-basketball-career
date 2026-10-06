@@ -2568,6 +2568,24 @@
    "bbr_id": "tayloma01",
    "from": "Houston Rockets",
    "to": "Cleveland Cavaliers"
+  },
+  {
+   "id": "2004-05-market-2005-01-25-expire-augmost01",
+   "date": "2005-01-25",
+   "kind": "expire",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": "Los Angeles Clippers",
+   "to": null,
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 55,
+    "minutes": 663
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
   }
  ],
  "market_days": [
@@ -2654,6 +2672,7 @@
   "2005-01-21",
   "2005-01-22",
   "2005-01-23",
-  "2005-01-24"
+  "2005-01-24",
+  "2005-01-25"
  ]
 }
