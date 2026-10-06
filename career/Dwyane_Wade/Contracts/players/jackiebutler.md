@@ -2,9 +2,9 @@
 
 # Contract | Jackie Butler
 
-Known through: 2004-12-23. [Open interactive contract](jackiebutler.html#contract) · [Contract history](jackiebutler.html#contract-history)
+Known through: 2004-12-26. [Open interactive contract](jackiebutler.html#contract) · [Contract history](jackiebutler.html#contract-history)
 
-Jackie Butler: under contract. Evidence cutoff: 2004-12-23.
+Jackie Butler: under contract. Evidence cutoff: 2004-12-26.
 
 ## Current contract
 

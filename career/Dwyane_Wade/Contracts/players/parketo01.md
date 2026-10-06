@@ -2,9 +2,9 @@
 
 # Contract | Tony Parker
 
-Known through: 2004-12-23. [Open interactive contract](parketo01.html#contract) · [Contract history](parketo01.html#contract-history)
+Known through: 2004-12-26. [Open interactive contract](parketo01.html#contract) · [Contract history](parketo01.html#contract-history)
 
-Tony Parker: under rookie contract. Evidence cutoff: 2004-12-23.
+Tony Parker: under rookie contract. Evidence cutoff: 2004-12-26.
 
 ## Current contract
 

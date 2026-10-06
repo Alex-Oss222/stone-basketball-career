@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2004-12-23 · Miami Heat · active
+Career date: 2004-12-26 · Miami Heat · active
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 
@@ -66,11 +66,11 @@ An actual transaction update with its source and applicable player rights.
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
-- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-09/review.json)
-- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-09/depth_chart.json)
+- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/review.json)
+- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-09/rotation.json)
+- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
@@ -107,4 +107,6 @@ An actual transaction update with its source and applicable player rights.
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_3/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_3/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_3/Game_4.md)
+- [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

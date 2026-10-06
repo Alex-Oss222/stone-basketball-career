@@ -2,9 +2,9 @@
 
 # Contract | Erik Daniels
 
-Known through: 2004-12-23. [Open interactive contract](erikdaniels.html#contract) · [Contract history](erikdaniels.html#contract-history)
+Known through: 2004-12-26. [Open interactive contract](erikdaniels.html#contract) · [Contract history](erikdaniels.html#contract-history)
 
-Erik Daniels: under contract. Evidence cutoff: 2004-12-23.
+Erik Daniels: under contract. Evidence cutoff: 2004-12-26.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Terence Morris
 
-Known through: 2004-12-23. [Open interactive contract](morrite01.html#contract) · [Contract history](morrite01.html#contract-history)
+Known through: 2004-12-26. [Open interactive contract](morrite01.html#contract) · [Contract history](morrite01.html#contract-history)
 
-Terence Morris: expired or unresolved. Evidence cutoff: 2004-12-23.
+Terence Morris: expired or unresolved. Evidence cutoff: 2004-12-26.
 
 ## Current contract
 
