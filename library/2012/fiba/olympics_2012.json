@@ -1,0 +1,964 @@
+{
+  "schema_version": 1,
+  "kind": "fiba_edition",
+  "slug": "olympics_2012",
+  "family": {
+    "value": "Olympics",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+  },
+  "stage_kind": {
+    "value": "Final_Tournament",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+  },
+  "edition": {
+    "value": 2012,
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+  },
+  "official_name": {
+    "value": "Basketball at the 2012 Summer Olympics – Men's tournament (Games of the XXX Olympiad, London)",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+  },
+  "hindsight_policy": "World data for the FIBA pipeline. Holds format, calendar and (where listed) real entry lists and squads only. No score, result, standing, award or statistic of this event is recorded. Real qualification routes and real group draws describe the real world; a simulated career must derive the field of any edition whose qualifiers it simulates from simulated results, and must not read this file before the dates given in known_from.",
+  "known_from": {
+    "field_complete": {
+      "value": "2012-07-08",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (2012 OQT dates 2-8 July 2012)"
+    },
+    "group_draw": {
+      "value": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "note": "draw date not stated; a source comment says a draw among the three OQT qualifiers decided their group placement"
+    },
+    "note": "The field depends on 2010-2012 results."
+  },
+  "host": {
+    "city": {
+      "value": "London",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "country": {
+      "value": "United Kingdom",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    }
+  },
+  "usa_participation": {
+    "took_part": {
+      "value": true,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "group": {
+      "value": "A",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "entry_route": {
+      "value": "automatic berth as 2010 FIBA World Championship winner",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament; https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    "note": "In a simulated career the USA enters as world champion only if it wins a simulated 2010 World Championship; otherwise through the 2011 FIBA Americas Championship (2 berths) or the 2012 OQT (3 Americas places)."
+  },
+  "dates": {
+    "start": {
+      "value": "2012-07-29",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "end": {
+      "value": "2012-08-12",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "time_zone": {
+      "value": "UTC+1 (British Summer Time)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "stages": [
+      {
+        "stage": "preliminary_round",
+        "name": "Preliminary round (two groups of six)",
+        "start": "2012-07-29",
+        "end": "2012-08-06",
+        "venues": [
+          "Basketball Arena (Olympic Park)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "stage": "quarterfinal",
+        "name": "Quarterfinals",
+        "start": "2012-08-08",
+        "end": "2012-08-08",
+        "venues": [
+          "North Greenwich Arena (The O2 Arena)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "stage": "semifinal",
+        "name": "Semifinals",
+        "start": "2012-08-10",
+        "end": "2012-08-10",
+        "venues": [
+          "North Greenwich Arena (The O2 Arena)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "stage": "bronze_medal",
+        "name": "Bronze medal game",
+        "start": "2012-08-12",
+        "end": "2012-08-12",
+        "venues": [
+          "North Greenwich Arena (The O2 Arena)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "stage": "gold_medal",
+        "name": "Gold medal game",
+        "start": "2012-08-12",
+        "end": "2012-08-12",
+        "venues": [
+          "North Greenwich Arena (The O2 Arena)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Basketball Arena (Olympic Park)",
+        "city": "London",
+        "country": "United Kingdom",
+        "stages": "preliminary round",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "name": "North Greenwich Arena (The O2 Arena)",
+        "city": "London",
+        "country": "United Kingdom",
+        "stages": "knockout round",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      }
+    ]
+  },
+  "format": {
+    "teams": {
+      "value": 12,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "berth_allocation": {
+      "value": {
+        "host": 1,
+        "2010 World champion": 1,
+        "Africa": 1,
+        "Americas": 2,
+        "Asia": 1,
+        "Europe": 2,
+        "Oceania": 1,
+        "World Olympic Qualifying Tournament": 3
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    "oqt_allocation": {
+      "value": {
+        "Africa": 2,
+        "Americas": 3,
+        "Asia": 2,
+        "Europe": 4,
+        "Oceania": 1
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    "groups": [
+      {
+        "group": "A",
+        "teams": 6,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "group": "B",
+        "teams": 6,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      }
+    ],
+    "rounds": [
+      {
+        "round": "preliminary_round",
+        "kind": "group_round_robin",
+        "games_per_team": 5,
+        "advance": "top 4 of each group to the knockout stage",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "round": "quarterfinal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "round": "semifinal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "round": "bronze_medal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "round": "gold_medal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      }
+    ],
+    "bracket": [
+      {
+        "slot": "QF1",
+        "a": "A1",
+        "b": "B4",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "QF2",
+        "a": "B2",
+        "b": "A3",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "QF3",
+        "a": "B1",
+        "b": "A4",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "QF4",
+        "a": "A2",
+        "b": "B3",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "SF1",
+        "a": "W-QF1",
+        "b": "W-QF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "SF2",
+        "a": "W-QF3",
+        "b": "W-QF4",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "3RD",
+        "a": "L-SF1",
+        "b": "L-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "F",
+        "a": "W-SF1",
+        "b": "W-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      }
+    ],
+    "classification": {
+      "value": {
+        "1-4": "gold and bronze medal games",
+        "5-8": [
+          "win-loss record in the preliminary group",
+          "standing in the preliminary group (A3 above B4)",
+          "goal average in the preliminary group"
+        ],
+        "9-10": "5th placers by record then goal average",
+        "11-12": "6th placers by record then goal average"
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "points": {
+      "win": {
+        "value": 2,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      "loss": {
+        "value": 1,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      "loss_by_default": {
+        "value": 1,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      "loss_by_forfeit": {
+        "value": 0,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      }
+    },
+    "tiebreak": {
+      "value": [
+        "head-to-head records",
+        "goal average of the games among the tied teams",
+        "goal average of all games",
+        "points scored",
+        "drawing of lots"
+      ],
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament citing FIBA Official Basketball Rules 2012 p.68"
+    },
+    "game_length": {
+      "periods": {
+        "value": 4,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "period_minutes": {
+        "value": 10,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "overtime_minutes": {
+        "value": 5,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "note": "The comparison page describes FIBA rules as of 2016; the per-edition rule books of this event were not opened. FIBA used 4 x 10 minutes throughout 2005-2014 (adopted 2000); that adoption date is not verified from a fetched source."
+    },
+    "court": {
+      "three_point_distance_m": {
+        "value": 6.75,
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html (effective 1 October 2010 for high-level competitions)"
+      },
+      "restricted_area": {
+        "value": "rectangle",
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      },
+      "no_charge_semicircle_m": {
+        "value": 1.25,
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      }
+    }
+  },
+  "teams": [
+    {
+      "team": "USA",
+      "name": "United States",
+      "group": "A",
+      "qualification_route": "2010 FIBA World Championship champion",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    },
+    {
+      "team": "FRA",
+      "name": "France",
+      "group": "A",
+      "qualification_route": "EuroBasket 2011",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    },
+    {
+      "team": "ARG",
+      "name": "Argentina",
+      "group": "A",
+      "qualification_route": "2011 FIBA Americas Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    },
+    {
+      "team": "LTU",
+      "name": "Lithuania",
+      "group": "A",
+      "qualification_route": "2012 FIBA World Olympic Qualifying Tournament (Venezuela)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    },
+    {
+      "team": "NGR",
+      "name": "Nigeria",
+      "group": "A",
+      "qualification_route": "2012 FIBA World Olympic Qualifying Tournament (Venezuela)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    },
+    {
+      "team": "TUN",
+      "name": "Tunisia",
+      "group": "A",
+      "qualification_route": "2011 FIBA Africa Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    },
+    {
+      "team": "RUS",
+      "name": "Russia",
+      "group": "B",
+      "qualification_route": "2012 FIBA World Olympic Qualifying Tournament (Venezuela)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    },
+    {
+      "team": "BRA",
+      "name": "Brazil",
+      "group": "B",
+      "qualification_route": "2011 FIBA Americas Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    },
+    {
+      "team": "ESP",
+      "name": "Spain",
+      "group": "B",
+      "qualification_route": "EuroBasket 2011",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    },
+    {
+      "team": "AUS",
+      "name": "Australia",
+      "group": "B",
+      "qualification_route": "2011 FIBA Oceania Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    },
+    {
+      "team": "GBR",
+      "name": "Great Britain",
+      "group": "B",
+      "qualification_route": "host (2005-07-06)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    },
+    {
+      "team": "CHN",
+      "name": "China",
+      "group": "B",
+      "qualification_route": "2011 FIBA Asia Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament (Qualification table)"
+    }
+  ],
+  "schedule": [
+    {
+      "game_id": "OLY12-01",
+      "date": "2012-07-29",
+      "time_local": "09:00",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "NGR",
+      "team_b": "TUN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-02",
+      "date": "2012-07-29",
+      "time_local": "14:30",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "USA",
+      "team_b": "FRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-03",
+      "date": "2012-07-29",
+      "time_local": "22:15",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ARG",
+      "team_b": "LTU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-04",
+      "date": "2012-07-31",
+      "time_local": "14:30",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "LTU",
+      "team_b": "NGR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-05",
+      "date": "2012-07-31",
+      "time_local": "20:00",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "FRA",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-06",
+      "date": "2012-07-31",
+      "time_local": "22:15",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "TUN",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-07",
+      "date": "2012-08-02",
+      "time_local": "09:00",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "FRA",
+      "team_b": "LTU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-08",
+      "date": "2012-08-02",
+      "time_local": "14:30",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ARG",
+      "team_b": "TUN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-09",
+      "date": "2012-08-02",
+      "time_local": "22:15",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "USA",
+      "team_b": "NGR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-10",
+      "date": "2012-08-04",
+      "time_local": "09:00",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "TUN",
+      "team_b": "FRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-11",
+      "date": "2012-08-04",
+      "time_local": "14:30",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "LTU",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-12",
+      "date": "2012-08-04",
+      "time_local": "22:15",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "NGR",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-13",
+      "date": "2012-08-06",
+      "time_local": "11:15",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "TUN",
+      "team_b": "LTU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-14",
+      "date": "2012-08-06",
+      "time_local": "14:30",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "FRA",
+      "team_b": "NGR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-15",
+      "date": "2012-08-06",
+      "time_local": "22:15",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ARG",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-16",
+      "date": "2012-07-29",
+      "time_local": "11:15",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "BRA",
+      "team_b": "AUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-17",
+      "date": "2012-07-29",
+      "time_local": "16:45",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ESP",
+      "team_b": "CHN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-18",
+      "date": "2012-07-29",
+      "time_local": "20:00",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "RUS",
+      "team_b": "GBR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-19",
+      "date": "2012-07-31",
+      "time_local": "09:00",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CHN",
+      "team_b": "RUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-20",
+      "date": "2012-07-31",
+      "time_local": "11:15",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "AUS",
+      "team_b": "ESP",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-21",
+      "date": "2012-07-31",
+      "time_local": "16:45",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "GBR",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-22",
+      "date": "2012-08-02",
+      "time_local": "11:15",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "AUS",
+      "team_b": "CHN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-23",
+      "date": "2012-08-02",
+      "time_local": "16:45",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "BRA",
+      "team_b": "RUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-24",
+      "date": "2012-08-02",
+      "time_local": "20:00",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ESP",
+      "team_b": "GBR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-25",
+      "date": "2012-08-04",
+      "time_local": "11:15",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "RUS",
+      "team_b": "ESP",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-26",
+      "date": "2012-08-04",
+      "time_local": "16:45",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CHN",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-27",
+      "date": "2012-08-04",
+      "time_local": "20:00",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "GBR",
+      "team_b": "AUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-28",
+      "date": "2012-08-06",
+      "time_local": "09:00",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "AUS",
+      "team_b": "RUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-29",
+      "date": "2012-08-06",
+      "time_local": "16:45",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "GBR",
+      "team_b": "CHN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-30",
+      "date": "2012-08-06",
+      "time_local": "20:00",
+      "venue": "Basketball Arena (Olympic Park)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ESP",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-31",
+      "date": "2012-08-08",
+      "time_local": "14:00",
+      "venue": "North Greenwich Arena (The O2 Arena)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF3",
+      "slot_a": "B1",
+      "slot_b": "A4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY12-32",
+      "date": "2012-08-08",
+      "time_local": "16:15",
+      "venue": "North Greenwich Arena (The O2 Arena)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF4",
+      "slot_a": "A2",
+      "slot_b": "B3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY12-33",
+      "date": "2012-08-08",
+      "time_local": "20:00",
+      "venue": "North Greenwich Arena (The O2 Arena)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF2",
+      "slot_a": "B2",
+      "slot_b": "A3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY12-34",
+      "date": "2012-08-08",
+      "time_local": "22:15",
+      "venue": "North Greenwich Arena (The O2 Arena)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF1",
+      "slot_a": "A1",
+      "slot_b": "B4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY12-35",
+      "date": "2012-08-10",
+      "time_local": "17:00",
+      "venue": "North Greenwich Arena (The O2 Arena)",
+      "stage": "semifinal",
+      "bracket_slot": "SF2",
+      "slot_a": "W-QF3",
+      "slot_b": "W-QF4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY12-36",
+      "date": "2012-08-10",
+      "time_local": "21:00",
+      "venue": "North Greenwich Arena (The O2 Arena)",
+      "stage": "semifinal",
+      "bracket_slot": "SF1",
+      "slot_a": "W-QF1",
+      "slot_b": "W-QF2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY12-37",
+      "date": "2012-08-12",
+      "time_local": "11:00",
+      "venue": "North Greenwich Arena (The O2 Arena)",
+      "stage": "bronze_medal",
+      "bracket_slot": "3RD",
+      "slot_a": "L-SF1",
+      "slot_b": "L-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY12-38",
+      "date": "2012-08-12",
+      "time_local": "15:00",
+      "venue": "North Greenwich Arena (The O2 Arena)",
+      "stage": "gold_medal",
+      "bracket_slot": "F",
+      "slot_a": "W-SF1",
+      "slot_b": "W-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    }
+  ],
+  "research": {
+    "sources": [
+      "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_qualification",
+      "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Date of the group draw."
+    ],
+    "notes": [
+      "First Olympic tournament after the October 2010 FIBA court changes (6.75 m line, rectangular lane)."
+    ]
+  },
+  "counts": {
+    "teams": 12,
+    "games": 38,
+    "group_games_with_teams": 30,
+    "slot_games": 8
+  }
+}

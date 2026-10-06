@@ -11,7 +11,7 @@ import math
 from pathlib import Path
 
 from .packets import canonical
-from .shot_chart import NBA_GEOMETRY, classify_zone
+from .shot_chart import GEOMETRIES, NBA_GEOMETRY, classify_zone
 
 ROOT = Path(__file__).resolve().parents[1]
 SPATIAL_MODEL_VERSION = "spatial-2003.1"
@@ -24,8 +24,10 @@ def spatial_environment_errors(environment, season=None, game_date=None):
     if not isinstance(environment, dict):
         return ["spatial environment must be an object"]
     if (environment.get("schema_version") != 1 or environment.get("kind") != "league_shot_environment"
-            or environment.get("league") != "NBA" or environment.get("model_version") != SPATIAL_MODEL_VERSION):
+            or environment.get("league") not in ("NBA", "FIBA") or environment.get("model_version") != SPATIAL_MODEL_VERSION):
         errors.append("unsupported spatial environment schema or model")
+    if environment.get("league") == "FIBA" and environment.get("coordinate_system") not in GEOMETRIES:
+        errors.append("a FIBA spatial environment names its court geometry")
     if season is not None:
         start = int(season[:4])
         previous = f"{start - 1}-{str(start)[-2:]}"
@@ -73,22 +75,28 @@ def load_spatial_environment(season, game_date=None, root=ROOT):
     return environment
 
 
+def geometry_of(environment):
+    """The court an environment's shots are drawn on: the NBA's unless a FIBA environment names its own."""
+    return environment.get("coordinate_system", "nba_feet_from_basket") if isinstance(environment, dict) else "nba_feet_from_basket"
+
+
 def tracking_metadata(environment):
     return {"schema_version": 1, "model_version": SPATIAL_MODEL_VERSION,
-            "coordinate_system": "nba_feet_from_basket", "source_type": "engine_generated",
+            "coordinate_system": geometry_of(environment), "source_type": "engine_generated",
             "prior_sha256": hashlib.sha256(canonical(environment)).hexdigest(), "coverage": "complete"}
 
 
-def classify_spatial_zone(x, y):
+def classify_spatial_zone(x, y, geometry=None):
     """Source distance bands, separate from the chart's custom paint regions."""
+    g = geometry or NBA_GEOMETRY
     try:
-        display_zone = classify_zone(x, y)
+        display_zone = classify_zone(x, y, g)
     except ValueError:
         return None
     if display_zone is None:
         return None
     if display_zone == "three":
-        return "corner_three" if y <= NBA_GEOMETRY["three_point_join_y"] else "arc_three"
+        return "corner_three" if y <= g["three_point_join_y"] else "arc_three"
     radius = math.hypot(x, y)
     for limit, zone in ((3, "distance_0_3"), (10, "distance_3_10"), (16, "distance_10_16")):
         if radius < limit:
@@ -145,28 +153,36 @@ def zone_probabilities(environment, value, target, spatial_weights=None, zone_ac
             for row, probability in zip(rows, probabilities)]
 
 
-def draw_location(rng, zone):
+def draw_location(rng, zone, geometry=None):
     """Choose a legal modeled point within a band, before drawing its outcome.
 
     Two-point distances are area-uniform, with a uniform angle in front of the
     basket; corners use uniform legal strips. Arc threes extend to 28 feet.
     These within-band distributions are assumptions, not measured tracking.
     """
-    bounds = {"distance_0_3": (0, 3), "distance_3_10": (3, 10),
-              "distance_10_16": (10, 16), "distance_16_three": (16, 23.75), "arc_three": (23.75, 28)}
+    g = geometry or NBA_GEOMETRY
+    if g is NBA_GEOMETRY:                  # the NBA's draws, exactly as every played game drew them
+        bounds = {"distance_0_3": (0, 3), "distance_3_10": (3, 10),
+                  "distance_10_16": (10, 16), "distance_16_three": (16, 23.75), "arc_three": (23.75, 28)}
+        corner = (22.0001, 24.9999)
+    else:                                  # the same bands on another court: arc threes reach 4.25 ft past the line
+        r = g["three_point_radius"]
+        bounds = {"distance_0_3": (0, 3), "distance_3_10": (3, 10),
+                  "distance_10_16": (10, 16), "distance_16_three": (16, r), "arc_three": (r, r + 4.25)}
+        corner = (g["corner_three_x"] + .0001, g["x_max"] - .0001)
     if zone not in SPATIAL_ZONES:
         raise ValueError("unsupported spatial zone")
     for _ in range(1000):
         if zone == "corner_three":
-            x = rng.uniform(22.0001, 24.9999) * (-1 if rng.random() < .5 else 1)
-            y = rng.uniform(NBA_GEOMETRY["baseline_y"] + .0001, NBA_GEOMETRY["three_point_join_y"] - .0001)
+            x = rng.uniform(*corner) * (-1 if rng.random() < .5 else 1)
+            y = rng.uniform(g["baseline_y"] + .0001, g["three_point_join_y"] - .0001)
         else:
             low, high = bounds[zone]
             radius = math.sqrt(rng.uniform(low * low, high * high))
             angle = rng.uniform(-math.pi / 2, math.pi / 2)
             x, y = radius * math.sin(angle), radius * math.cos(angle)
         x, y = round(x, 6), round(y, 6)
-        if classify_spatial_zone(x, y) == zone:
+        if classify_spatial_zone(x, y, g) == zone:
             return x, y
     raise RuntimeError("could not sample a point inside its spatial zone")
 
@@ -182,5 +198,6 @@ def draw_spatial_shot(rng, environment, value, target, spatial_weights=None, zon
             chosen = zone
             break
     zone, _, probability = chosen
-    x, y = draw_location(rng, zone)
+    geometry = environment.get("coordinate_system")
+    x, y = draw_location(rng, zone, GEOMETRIES[geometry] if geometry else None)
     return zone, x, y, probability

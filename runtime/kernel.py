@@ -48,6 +48,8 @@ from .spatial_shots import (draw_spatial_shot, load_spatial_environment,
                             spatial_environment_errors, tracking_metadata)
 from .trajectories import TRAJECTORY_MODEL_VERSION, needs_development
 
+FIBA_MODEL_VERSION = "fiba-2006.1"      # a non-NBA player's FIBA profile (runtime/national_engine.py)
+
 POSITIONS = ("PG", "SG", "SF", "PF", "C")
 GUARDS, BIGS = ("PG", "SG"), ("PF", "C")
 RATING_KEYS = (
@@ -152,6 +154,11 @@ class TeamInput:
     season_roster: bool = False     # dressed by the engine even when every availability is 0 or 1 (absence spells)
 
 
+def game_minutes(rules):
+    """Regulation minutes of one game: 48 in the NBA, 40 under FIBA rules (`runtime/era.py`)."""
+    return rules["quarters"] * rules["quarter_minutes"]
+
+
 def team_errors(team, rules):
     errors = []
     players = list(team.players)
@@ -193,8 +200,9 @@ def team_errors(team, rules):
     for p in players:
         if p.position not in POSITIONS:
             errors.append(f"{p.player_id}: unknown position {p.position!r}")
-        if isinstance(p.minutes, bool) or not isinstance(p.minutes, (int, float)) or not math.isfinite(p.minutes) or p.minutes < 0 or p.minutes > 48:
-            errors.append(f"{p.player_id}: minutes target must be 0-48")
+        full = game_minutes(rules)
+        if isinstance(p.minutes, bool) or not isinstance(p.minutes, (int, float)) or not math.isfinite(p.minutes) or p.minutes < 0 or p.minutes > full:
+            errors.append(f"{p.player_id}: minutes target must be 0-{full}")
         for key, value in p.ratings.items():
             if key not in RATING_KEYS:
                 errors.append(f"{p.player_id}: unknown rating {key!r}")
@@ -217,7 +225,15 @@ def team_errors(team, rules):
                 if profile.get("model_version") not in SCOUTED_MODEL_VERSIONS or not scouting_keys <= set(profile):
                     errors.append(f"{p.player_id}: scouting requires a complete current rookie profile")
                 errors.extend(f"{p.player_id}: {e}" for e in style_errors(profile.get("style")))
-            if (set(profile) - {"development", "defense", "feedback_sha256"} - scouting_keys != base_keys
+            national = rules.get("competition") == "FIBA"
+            if national and profile.get("model_version") == FIBA_MODEL_VERSION:
+                # A non-NBA player's FIBA profile (`runtime/national_engine.py`): keyed by his FIBA identity.
+                if (set(profile) - {"defense"} != {"fiba_key", "model_version", "as_of", "season_end_year",
+                                                   "source_sha256", "rates"}
+                        or profile.get("season_end_year") != int(rules["season"][:4]) + 1):
+                    errors.append(f"{p.player_id}: invalid FIBA profile metadata")
+            elif (set(profile) - {"development", "defense", "feedback_sha256"} - scouting_keys
+                    - ({"fiba_model"} if national else set()) != base_keys
                     or ("development" in profile and not needs_development(profile))
                     or profile.get("model_version") not in (MODEL_VERSION, LEGACY_ROOKIE_MODEL_VERSION,
                                                              ARCHIVED_ROOKIE_MODEL_VERSION, ROOKIE_MODEL_VERSION,
@@ -259,7 +275,7 @@ def team_packet(team):
     return data
 
 
-def calibrate(environment):
+def calibrate(environment, game_seconds=2880):
     a = environment["averages"]
     assumptions = environment["engine_assumptions"]
     fgm = a["fga"] * a["fg_pct"]
@@ -284,7 +300,7 @@ def calibrate(environment):
     p_extra_foul = max(0.0, a["pf"] - LATE_FOUL_PF - trips - and_one_fta) / box_possessions
     transition_share = ((a["stl"] * TRANSITION_AFTER_STEAL + a["drb"] * TRANSITION_AFTER_REBOUND)
                         / box_possessions * (1 - p_extra_foul))
-    mean_seconds = 2880 / (2 * box_possessions) - ORB_CONTINUATION_SECONDS * a["orb"] / box_possessions
+    mean_seconds = game_seconds / (2 * box_possessions) - ORB_CONTINUATION_SECONDS * a["orb"] / box_possessions
     continuation_value = a["orb"] / misses * per_possession
     and_one_value = and_one_fta / fgm * a["ft_pct"]
     two_value, three_value = 2 + and_one_value - continuation_value, 3 + and_one_value - continuation_value
@@ -407,8 +423,8 @@ def _rebound_transition_chance(player):
 
 def _expected_play_rates(club, opponent, cal, transition_share=None):
     """Minute-weighted points, misses, rebounds and steals for one play."""
-    presence = {pid: club.targets[pid] / 48 for pid in club.order}
-    against = {pid: opponent.targets[pid] / 48 for pid in opponent.order}
+    presence = {pid: club.targets[pid] / club.full for pid in club.order}
+    against = {pid: opponent.targets[pid] / opponent.full for pid in opponent.order}
     team_defense = sum(against[pid] * _defense(opponent.players[pid]) for pid in opponent.order)
     defense_two = sum(against[pid] * _defensive_split(opponent.players[pid], cal)[0] for pid in opponent.order)
     defense_three = sum(against[pid] * _defensive_split(opponent.players[pid], cal)[1] for pid in opponent.order)
@@ -478,7 +494,7 @@ def _expected_points(club, opponent, cal):
     rebound_chance = TRANSITION_AFTER_REBOUND
     if any(p.stat_profile.get("style", {}).get("rebound_transition_multiplier", 1) != 1
            for p in club.players.values()):
-        weights = {pid: club.targets[pid] / 48 * _rate_weight(
+        weights = {pid: club.targets[pid] / club.full * _rate_weight(
             club.players[pid], "defensive_rebound_pct", 2, cal, "rebounding") for pid in club.order}
         total = sum(weights.values())
         if total:
@@ -504,15 +520,18 @@ def _defense(player):
     return player.stat_profile.get("defense", 0.0) if player.stat_profile else 0.0
 
 
-def _allocate(players, total):
+def _allocate(players, total, full=48):
     """Minutes targets for the dressed players: each player's average in rotation order until the
     game is full; when short-handed, the shortfall is spread in proportion to the averages, first
-    within the realistic caps and only then up to 48."""
+    within the realistic caps and only then up to the whole game (`full` minutes: 48, or 40 under
+    FIBA rules, where the caps scale by the game's length)."""
     targets, left = {}, total
     for p in players:
         targets[p.player_id] = min(p.minutes, left)
         left -= targets[p.player_id]
-    for cap in (lambda p: max(p.minutes, min(MINUTES_CAP, p.minutes + SHORT_HANDED_RAISE)), lambda p: 48.0):
+    scale = full / 48
+    minutes_cap, raise_ = MINUTES_CAP * scale, SHORT_HANDED_RAISE * scale
+    for cap in (lambda p: max(p.minutes, min(minutes_cap, p.minutes + raise_)), lambda p: float(full)):
         while left > 1e-9:
             room = {p.player_id: cap(p) - targets[p.player_id] for p in players if cap(p) - targets[p.player_id] > 1e-9}
             if not room:
@@ -548,7 +567,9 @@ class _Club:
         self.order = available[:rules["game_day_actives"]]
         self.inactive = [p.player_id for p in team.players if p.player_id not in self.order]
         regulation = rules["players_on_floor"] * rules["quarters"] * rules["quarter_minutes"]
-        self.targets = _allocate([self.players[pid] for pid in self.order], regulation)
+        self.full = game_minutes(rules)                      # 48 (NBA) or 40 (FIBA)
+        self.regulation_seconds = self.full * 60
+        self.targets = _allocate([self.players[pid] for pid in self.order], regulation, self.full)
         self.lines = {pid: _blank_line() for pid in self.order}
         self.on_floor = []
         self.fouled_out = set()
@@ -594,7 +615,7 @@ def _choose_lineup(club, elapsed, game_seconds, mode="normal", sitting=frozenset
     """
     candidates = _eligible(club, sitting)
     def deficit(pid):
-        target = club.targets[pid] * 60 * (game_seconds / 2880)
+        target = club.targets[pid] * 60 * (game_seconds / club.regulation_seconds)
         expected = target * min(1.0, (elapsed + SUB_SECONDS) / game_seconds)
         return expected - club.lines[pid]["seconds"]
     if mode == "closing":
@@ -654,7 +675,7 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
     spatial_errors = spatial_environment_errors(spatial_environment, rules["season"])
     if spatial_errors:
         raise ValueError("; ".join(spatial_errors))
-    cal = calibrate(environment)
+    cal = calibrate(environment, game_minutes(rules) * 60)
     if any(p.stat_profile for team in (home, away) for p in team.players):
         if any(not isinstance(cal["rate_baselines"].get(k), (int, float)) or
                not math.isfinite(cal["rate_baselines"][k]) or cal["rate_baselines"][k] <= 0

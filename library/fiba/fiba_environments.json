@@ -1,0 +1,1357 @@
+{
+  "schema_version": 1,
+  "kind": "fiba_tournament_environments",
+  "retrieved": "2026-10-06",
+  "policy": "Each senior global tournament is calibrated on the real tournament-wide averages of the previous edition (the repository rule that a season is calibrated on the real averages of the one before it; AGENTS.md, Game engine, league environment policy). An edition may be read only on or after its publication_date. These describe the era's international style of play, not any team's results.",
+  "value_format": "{value, status: sourced|unverified|derived, source, note?}. sourced = stated by the source; derived = computed here from sourced totals (method recorded); unverified = not established, value null.",
+  "units": "Per team-game averages: every game counts twice (once per team). Games are 40 minutes (4 x 10) plus any overtime; no adjustment for overtime is made.",
+  "possessions_formula": "FGA - ORB + TOV + 0.44 * FTA, per team-game",
+  "calibration_map": {
+    "2006_world_championship": "2004_olympics",
+    "2008_olympics": "2006_world_championship",
+    "2010_world_championship": "2008_olympics",
+    "2012_olympics": "2010_world_championship",
+    "2014_world_cup": "2012_olympics",
+    "note": "2002_world_championship is recorded as the edition before 2004 (completeness; it calibrates no simulated tournament). Rule break: 2010 World Championship was played with the 6.25 m three-point line and trapezoid lane; the 2012 Olympics with 6.75 m and the rectangle (library/fiba/fiba_rules.json). Its three-point rates are a pre-change environment."
+  },
+  "editions": {
+    "2002_world_championship": {
+      "edition": "2002 FIBA World Championship",
+      "host": "Indianapolis, United States",
+      "teams": 16,
+      "dates": {
+        "start": {
+          "value": "2002-08-29",
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)"
+        },
+        "final": {
+          "value": "2002-09-08",
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)"
+        }
+      },
+      "publication_date": {
+        "value": "2002-09-09",
+        "status": "derived",
+        "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+        "note": "day after the final (the date the final statistics were available)"
+      },
+      "team_games": {
+        "value": 124,
+        "status": "derived",
+        "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+        "note": "62 games x 2. The page's GP field is wrong for several teams (it sums to 157); games per team were recomputed as PTS / PPG from the same rows (USA, ARG, GER, YUG, BRA, PUR, NZL, ESP 9 each; TUR, RUS, CHN, ANG 8; VEN, ALG, CAN, LBN 5) = 124, matching the 62 games listed on the edition games page"
+      },
+      "tournament_totals": {
+        "points": {
+          "value": 10370,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "fgm": {
+          "value": 3573,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "fga": {
+          "value": 8014,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "fg3m": {
+          "value": 994,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "fg3a": {
+          "value": 2773,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "ftm": {
+          "value": 2230,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "fta": {
+          "value": 3028,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        }
+      },
+      "per_team_game": {
+        "points": {
+          "value": 83.63,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 10370 / 124 team-games"
+        },
+        "fgm": {
+          "value": 28.81,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 3573 / 124 team-games"
+        },
+        "fga": {
+          "value": 64.63,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 8014 / 124 team-games"
+        },
+        "fg3m": {
+          "value": 8.02,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 994 / 124 team-games"
+        },
+        "fg3a": {
+          "value": 22.36,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 2773 / 124 team-games"
+        },
+        "ftm": {
+          "value": 17.98,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 2230 / 124 team-games"
+        },
+        "fta": {
+          "value": 24.42,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 3028 / 124 team-games"
+        },
+        "orb": {
+          "value": null,
+          "status": "unverified",
+          "source": null,
+          "note": "no complete official team totals for this statistic were reachable (FIBA archive offline; the current FIBA history site publishes only shooting totals by team and box scores for 1 of 62 games)"
+        },
+        "drb": {
+          "value": null,
+          "status": "unverified",
+          "source": null,
+          "note": "no complete official team totals for this statistic were reachable (FIBA archive offline; the current FIBA history site publishes only shooting totals by team and box scores for 1 of 62 games)"
+        },
+        "ast": {
+          "value": null,
+          "status": "unverified",
+          "source": null,
+          "note": "no complete official team totals for this statistic were reachable (FIBA archive offline; the current FIBA history site publishes only shooting totals by team and box scores for 1 of 62 games)"
+        },
+        "stl": {
+          "value": null,
+          "status": "unverified",
+          "source": null,
+          "note": "no complete official team totals for this statistic were reachable (FIBA archive offline; the current FIBA history site publishes only shooting totals by team and box scores for 1 of 62 games)"
+        },
+        "blk": {
+          "value": null,
+          "status": "unverified",
+          "source": null,
+          "note": "no complete official team totals for this statistic were reachable (FIBA archive offline; the current FIBA history site publishes only shooting totals by team and box scores for 1 of 62 games)"
+        },
+        "tov": {
+          "value": null,
+          "status": "unverified",
+          "source": null,
+          "note": "no complete official team totals for this statistic were reachable (FIBA archive offline; the current FIBA history site publishes only shooting totals by team and box scores for 1 of 62 games)"
+        },
+        "pf": {
+          "value": null,
+          "status": "unverified",
+          "source": null,
+          "note": "no complete official team totals for this statistic were reachable (FIBA archive offline; the current FIBA history site publishes only shooting totals by team and box scores for 1 of 62 games)"
+        },
+        "possessions_estimate": {
+          "value": null,
+          "status": "unverified",
+          "source": null,
+          "note": "needs ORB and TOV; possessions = FGA - ORB + TOV + 0.44 * FTA (per team-game; the common Oliver/Basketball-Reference estimate; FIBA TOV as recorded, team turnovers included where the source includes them)"
+        }
+      },
+      "shooting_pct": {
+        "fg_pct": {
+          "value": 0.4458,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)"
+        },
+        "fg3_pct": {
+          "value": 0.3585,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)"
+        },
+        "ft_pct": {
+          "value": 0.7365,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)"
+        },
+        "fg3a_rate": {
+          "value": 0.346,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)"
+        },
+        "fta_rate": {
+          "value": 0.3778,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2669/stats (team shooting totals, read 2026-10-06)"
+        }
+      },
+      "method": "Summed the team shooting totals embedded in the official FIBA competition stats page (all teams), checked points = 2*FGM + 3PM + FTM, divided by team-games."
+    },
+    "2004_olympics": {
+      "edition": "2004 Olympic Games, men's basketball tournament",
+      "host": "Athens, Greece",
+      "teams": 12,
+      "dates": {
+        "start": {
+          "value": "2004-08-15",
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)"
+        },
+        "final": {
+          "value": "2004-08-28",
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)"
+        }
+      },
+      "publication_date": {
+        "value": "2004-08-29",
+        "status": "derived",
+        "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+        "note": "day after the final (the date the final statistics were available)"
+      },
+      "team_games": {
+        "value": 84,
+        "status": "derived",
+        "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+        "note": "42 games x 2: two groups of six (30 games), quarterfinals 4, semifinals 2, medal games 2, classification 5th-8th 4, 9th and 11th place games 2; matches the sum of the team G column (84)"
+      },
+      "tournament_totals": {
+        "points": {
+          "value": 6677,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fgm": {
+          "value": 2340,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fga": {
+          "value": 5159,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fg3m": {
+          "value": 698,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fg3a": {
+          "value": 1921,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "ftm": {
+          "value": 1299,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fta": {
+          "value": 1871,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "orb": {
+          "value": 791,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "drb": {
+          "value": 1890,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "ast": {
+          "value": 944,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "stl": {
+          "value": 584,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "blk": {
+          "value": 198,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "tov": {
+          "value": 1170,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "pf": {
+          "value": 1915,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        }
+      },
+      "per_team_game": {
+        "points": {
+          "value": 79.49,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 6677 / 84 team-games"
+        },
+        "fgm": {
+          "value": 27.86,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 2340 / 84 team-games"
+        },
+        "fga": {
+          "value": 61.42,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 5159 / 84 team-games"
+        },
+        "fg3m": {
+          "value": 8.31,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 698 / 84 team-games"
+        },
+        "fg3a": {
+          "value": 22.87,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 1921 / 84 team-games"
+        },
+        "ftm": {
+          "value": 15.46,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 1299 / 84 team-games"
+        },
+        "fta": {
+          "value": 22.27,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 1871 / 84 team-games"
+        },
+        "orb": {
+          "value": 9.42,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 791 / 84 team-games"
+        },
+        "drb": {
+          "value": 22.5,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 1890 / 84 team-games"
+        },
+        "ast": {
+          "value": 11.24,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 944 / 84 team-games"
+        },
+        "stl": {
+          "value": 6.95,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 584 / 84 team-games"
+        },
+        "blk": {
+          "value": 2.36,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 198 / 84 team-games"
+        },
+        "tov": {
+          "value": 13.93,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 1170 / 84 team-games"
+        },
+        "pf": {
+          "value": 22.8,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "tournament total 1915 / 84 team-games"
+        },
+        "possessions_estimate": {
+          "value": 75.73,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)",
+          "note": "possessions = FGA - ORB + TOV + 0.44 * FTA (per team-game; the common Oliver/Basketball-Reference estimate; FIBA TOV as recorded, team turnovers included where the source includes them)"
+        }
+      },
+      "shooting_pct": {
+        "fg_pct": {
+          "value": 0.4536,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)"
+        },
+        "fg3_pct": {
+          "value": 0.3634,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)"
+        },
+        "ft_pct": {
+          "value": 0.6943,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)"
+        },
+        "fg3a_rate": {
+          "value": 0.3724,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)"
+        },
+        "fta_rate": {
+          "value": 0.3627,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2004.html (Team Totals table)"
+        }
+      },
+      "method": "Summed the official team totals table, checked points = 2*FGM + 3PM + FTM, divided by the number of team-games (2 per game played)."
+    },
+    "2006_world_championship": {
+      "edition": "2006 FIBA World Championship",
+      "host": "Japan",
+      "teams": 24,
+      "dates": {
+        "start": {
+          "value": "2006-08-19",
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)"
+        },
+        "final": {
+          "value": "2006-09-03",
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)"
+        }
+      },
+      "publication_date": {
+        "value": "2006-09-04",
+        "status": "derived",
+        "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+        "note": "day after the final (the date the final statistics were available)"
+      },
+      "team_games": {
+        "value": 160,
+        "status": "derived",
+        "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+        "note": "80 games x 2 (sum of team GP = 160: four groups of six 60, round of 16 8, quarterfinals 4, classification 5th-8th 4, semifinals 2, medal games 2)"
+      },
+      "tournament_totals": {
+        "points": {
+          "value": 12518,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "fgm": {
+          "value": 4434,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "fga": {
+          "value": 10044,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "fg3m": {
+          "value": 1211,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "fg3a": {
+          "value": 3522,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "ftm": {
+          "value": 2439,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        },
+        "fta": {
+          "value": 3595,
+          "status": "sourced",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "sum of the team rows on the official competition stats page"
+        }
+      },
+      "per_team_game": {
+        "points": {
+          "value": 78.24,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 12518 / 160 team-games"
+        },
+        "fgm": {
+          "value": 27.71,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 4434 / 160 team-games"
+        },
+        "fga": {
+          "value": 62.77,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 10044 / 160 team-games"
+        },
+        "fg3m": {
+          "value": 7.57,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 1211 / 160 team-games"
+        },
+        "fg3a": {
+          "value": 22.01,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 3522 / 160 team-games"
+        },
+        "ftm": {
+          "value": 15.24,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 2439 / 160 team-games"
+        },
+        "fta": {
+          "value": 22.47,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)",
+          "note": "tournament total 3595 / 160 team-games"
+        },
+        "orb": {
+          "value": 10.91,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/games/<game id> (official box scores, game ids 36960-37031)",
+          "note": "51 of 80 games have a published box score (72 game pages found; the 8 semifinal/classification/medal games were not reachable by id and 21 group/round-of-16 pages carry no box). Sample shooting matches the full tournament closely (sample 79.06 points and 62.77 FGA per team-game vs 78.24 and 62.78 in full); sample total 1113 / 102 team-games"
+        },
+        "drb": {
+          "value": 24.41,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/games/<game id> (official box scores, game ids 36960-37031)",
+          "note": "51 of 80 games have a published box score (72 game pages found; the 8 semifinal/classification/medal games were not reachable by id and 21 group/round-of-16 pages carry no box). Sample shooting matches the full tournament closely (sample 79.06 points and 62.77 FGA per team-game vs 78.24 and 62.78 in full); sample total 2490 / 102 team-games"
+        },
+        "ast": {
+          "value": 13.64,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/games/<game id> (official box scores, game ids 36960-37031)",
+          "note": "51 of 80 games have a published box score (72 game pages found; the 8 semifinal/classification/medal games were not reachable by id and 21 group/round-of-16 pages carry no box). Sample shooting matches the full tournament closely (sample 79.06 points and 62.77 FGA per team-game vs 78.24 and 62.78 in full); sample total 1391 / 102 team-games"
+        },
+        "stl": {
+          "value": 7.79,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/games/<game id> (official box scores, game ids 36960-37031)",
+          "note": "51 of 80 games have a published box score (72 game pages found; the 8 semifinal/classification/medal games were not reachable by id and 21 group/round-of-16 pages carry no box). Sample shooting matches the full tournament closely (sample 79.06 points and 62.77 FGA per team-game vs 78.24 and 62.78 in full); sample total 795 / 102 team-games"
+        },
+        "blk": {
+          "value": 2.53,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/games/<game id> (official box scores, game ids 36960-37031)",
+          "note": "51 of 80 games have a published box score (72 game pages found; the 8 semifinal/classification/medal games were not reachable by id and 21 group/round-of-16 pages carry no box). Sample shooting matches the full tournament closely (sample 79.06 points and 62.77 FGA per team-game vs 78.24 and 62.78 in full); sample total 258 / 102 team-games"
+        },
+        "tov": {
+          "value": 15.85,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/games/<game id> (official box scores, game ids 36960-37031)",
+          "note": "51 of 80 games have a published box score (72 game pages found; the 8 semifinal/classification/medal games were not reachable by id and 21 group/round-of-16 pages carry no box). Sample shooting matches the full tournament closely (sample 79.06 points and 62.77 FGA per team-game vs 78.24 and 62.78 in full); sample total 1617 / 102 team-games"
+        },
+        "pf": {
+          "value": 21.73,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/games/<game id> (official box scores, game ids 36960-37031)",
+          "note": "51 of 80 games have a published box score (72 game pages found; the 8 semifinal/classification/medal games were not reachable by id and 21 group/round-of-16 pages carry no box). Sample shooting matches the full tournament closely (sample 79.06 points and 62.77 FGA per team-game vs 78.24 and 62.78 in full); sample total 2216 / 102 team-games"
+        },
+        "possessions_estimate": {
+          "value": 77.6,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06); https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/games/<game id> (official box scores, game ids 36960-37031)",
+          "note": "possessions = FGA - ORB + TOV + 0.44 * FTA (per team-game; the common Oliver/Basketball-Reference estimate; FIBA TOV as recorded, team turnovers included where the source includes them); FGA and FTA from the full tournament, ORB and TOV from the box-score sample"
+        }
+      },
+      "shooting_pct": {
+        "fg_pct": {
+          "value": 0.4415,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)"
+        },
+        "fg3_pct": {
+          "value": 0.3438,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)"
+        },
+        "ft_pct": {
+          "value": 0.6784,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)"
+        },
+        "fg3a_rate": {
+          "value": 0.3507,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)"
+        },
+        "fta_rate": {
+          "value": 0.3579,
+          "status": "derived",
+          "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/stats (team shooting totals, read 2026-10-06)"
+        }
+      },
+      "method": "Summed the team shooting totals embedded in the official FIBA competition stats page (all teams), checked points = 2*FGM + 3PM + FTM, divided by team-games. Rebounds, assists, steals, blocks, turnovers and fouls come from the official box scores the FIBA site publishes for this edition (team totals per game), averaged over the games available."
+    },
+    "2008_olympics": {
+      "edition": "2008 Olympic Games, men's basketball tournament",
+      "host": "Beijing, China",
+      "teams": 12,
+      "dates": {
+        "start": {
+          "value": "2008-08-10",
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)"
+        },
+        "final": {
+          "value": "2008-08-24",
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)"
+        }
+      },
+      "publication_date": {
+        "value": "2008-08-25",
+        "status": "derived",
+        "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+        "note": "day after the final (the date the final statistics were available)"
+      },
+      "team_games": {
+        "value": 76,
+        "status": "derived",
+        "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+        "note": "38 games x 2: two groups of six (30), quarterfinals 4, semifinals 2, medal games 2; matches the sum of the team G column (76)"
+      },
+      "tournament_totals": {
+        "points": {
+          "value": 6179,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fgm": {
+          "value": 2198,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fga": {
+          "value": 4695,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fg3m": {
+          "value": 633,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fg3a": {
+          "value": 1721,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "ftm": {
+          "value": 1148,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fta": {
+          "value": 1553,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "orb": {
+          "value": 791,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "drb": {
+          "value": 1798,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "ast": {
+          "value": 1017,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "stl": {
+          "value": 617,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "blk": {
+          "value": 200,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "tov": {
+          "value": 1127,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "pf": {
+          "value": 1561,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        }
+      },
+      "per_team_game": {
+        "points": {
+          "value": 81.3,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 6179 / 76 team-games"
+        },
+        "fgm": {
+          "value": 28.92,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 2198 / 76 team-games"
+        },
+        "fga": {
+          "value": 61.78,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 4695 / 76 team-games"
+        },
+        "fg3m": {
+          "value": 8.33,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 633 / 76 team-games"
+        },
+        "fg3a": {
+          "value": 22.64,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 1721 / 76 team-games"
+        },
+        "ftm": {
+          "value": 15.11,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 1148 / 76 team-games"
+        },
+        "fta": {
+          "value": 20.43,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 1553 / 76 team-games"
+        },
+        "orb": {
+          "value": 10.41,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 791 / 76 team-games"
+        },
+        "drb": {
+          "value": 23.66,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 1798 / 76 team-games"
+        },
+        "ast": {
+          "value": 13.38,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 1017 / 76 team-games"
+        },
+        "stl": {
+          "value": 8.12,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 617 / 76 team-games"
+        },
+        "blk": {
+          "value": 2.63,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 200 / 76 team-games"
+        },
+        "tov": {
+          "value": 14.83,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 1127 / 76 team-games"
+        },
+        "pf": {
+          "value": 20.54,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "tournament total 1561 / 76 team-games"
+        },
+        "possessions_estimate": {
+          "value": 75.19,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)",
+          "note": "possessions = FGA - ORB + TOV + 0.44 * FTA (per team-game; the common Oliver/Basketball-Reference estimate; FIBA TOV as recorded, team turnovers included where the source includes them)"
+        }
+      },
+      "shooting_pct": {
+        "fg_pct": {
+          "value": 0.4682,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)"
+        },
+        "fg3_pct": {
+          "value": 0.3678,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)"
+        },
+        "ft_pct": {
+          "value": 0.7392,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)"
+        },
+        "fg3a_rate": {
+          "value": 0.3666,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)"
+        },
+        "fta_rate": {
+          "value": 0.3308,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2008.html (Team Totals table)"
+        }
+      },
+      "method": "Summed the official team totals table, checked points = 2*FGM + 3PM + FTM, divided by the number of team-games (2 per game played). Check: 2*FGM+3PM+FTM = 6177 vs listed points 6179; the source row for China lists 434 points against 432 implied by its makes. The listed points are kept."
+    },
+    "2010_world_championship": {
+      "edition": "2010 FIBA World Championship",
+      "host": "Turkey",
+      "teams": 24,
+      "dates": {
+        "start": {
+          "value": "2010-08-28",
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)"
+        },
+        "final": {
+          "value": "2010-09-12",
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)"
+        }
+      },
+      "publication_date": {
+        "value": "2010-09-13",
+        "status": "derived",
+        "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+        "note": "day after the final (the date the final statistics were available)"
+      },
+      "team_games": {
+        "value": 160,
+        "status": "derived",
+        "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+        "note": "80 games x 2 (FIBA team GP sum = 160: four groups of six 60, round of 16 8, quarterfinals 4, classification 5th-8th 4, semifinals 2, medal games 2). The Basketball-Reference G column sums to 177 and is wrong for several teams; its totals match FIBA exactly (12,338 points, 4,353 FGM, 9,727 FGA, 1,321 3PM, 3,729 3PA, 2,311 FTM, 3,255 FTA)"
+      },
+      "tournament_totals": {
+        "points": {
+          "value": 12338,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fgm": {
+          "value": 4353,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fga": {
+          "value": 9727,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fg3m": {
+          "value": 1321,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fg3a": {
+          "value": 3729,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "ftm": {
+          "value": 2311,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fta": {
+          "value": 3255,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "orb": {
+          "value": 1478,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "drb": {
+          "value": 3651,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "ast": {
+          "value": 2264,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "stl": {
+          "value": 1125,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "blk": {
+          "value": 427,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "tov": {
+          "value": 2047,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "pf": {
+          "value": 3232,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "sum of the 12/24 team totals rows"
+        }
+      },
+      "per_team_game": {
+        "points": {
+          "value": 77.11,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 12338 / 160 team-games"
+        },
+        "fgm": {
+          "value": 27.21,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 4353 / 160 team-games"
+        },
+        "fga": {
+          "value": 60.79,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 9727 / 160 team-games"
+        },
+        "fg3m": {
+          "value": 8.26,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 1321 / 160 team-games"
+        },
+        "fg3a": {
+          "value": 23.31,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 3729 / 160 team-games"
+        },
+        "ftm": {
+          "value": 14.44,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 2311 / 160 team-games"
+        },
+        "fta": {
+          "value": 20.34,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 3255 / 160 team-games"
+        },
+        "orb": {
+          "value": 9.24,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 1478 / 160 team-games"
+        },
+        "drb": {
+          "value": 22.82,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 3651 / 160 team-games"
+        },
+        "ast": {
+          "value": 14.15,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 2264 / 160 team-games"
+        },
+        "stl": {
+          "value": 7.03,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 1125 / 160 team-games"
+        },
+        "blk": {
+          "value": 2.67,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 427 / 160 team-games"
+        },
+        "tov": {
+          "value": 12.79,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 2047 / 160 team-games"
+        },
+        "pf": {
+          "value": 20.2,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "tournament total 3232 / 160 team-games"
+        },
+        "possessions_estimate": {
+          "value": 73.3,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)",
+          "note": "possessions = FGA - ORB + TOV + 0.44 * FTA (per team-game; the common Oliver/Basketball-Reference estimate; FIBA TOV as recorded, team turnovers included where the source includes them)"
+        }
+      },
+      "shooting_pct": {
+        "fg_pct": {
+          "value": 0.4475,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)"
+        },
+        "fg3_pct": {
+          "value": 0.3543,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)"
+        },
+        "ft_pct": {
+          "value": 0.71,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)"
+        },
+        "fg3a_rate": {
+          "value": 0.3834,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)"
+        },
+        "fta_rate": {
+          "value": 0.3346,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/fiba-world-cup/2010.html (Team Totals table); cross-checked against https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/3934/stats (team shooting totals)"
+        }
+      },
+      "method": "Summed the official team totals table, checked points = 2*FGM + 3PM + FTM, divided by the number of team-games (2 per game played)."
+    },
+    "2012_olympics": {
+      "edition": "2012 Olympic Games, men's basketball tournament",
+      "host": "London, United Kingdom",
+      "teams": 12,
+      "dates": {
+        "start": {
+          "value": "2012-07-29",
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)"
+        },
+        "final": {
+          "value": "2012-08-12",
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)"
+        }
+      },
+      "publication_date": {
+        "value": "2012-08-13",
+        "status": "derived",
+        "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+        "note": "day after the final (the date the final statistics were available)"
+      },
+      "team_games": {
+        "value": 76,
+        "status": "derived",
+        "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+        "note": "38 games x 2, same format as 2008; matches the sum of the team G column (76)"
+      },
+      "tournament_totals": {
+        "points": {
+          "value": 6114,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fgm": {
+          "value": 2229,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fga": {
+          "value": 4964,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fg3m": {
+          "value": 599,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fg3a": {
+          "value": 1694,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "ftm": {
+          "value": 1057,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "fta": {
+          "value": 1514,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "orb": {
+          "value": 715,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "drb": {
+          "value": 1861,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "ast": {
+          "value": 1305,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "stl": {
+          "value": 450,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "blk": {
+          "value": 234,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "tov": {
+          "value": 977,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        },
+        "pf": {
+          "value": 1570,
+          "status": "sourced",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "sum of the 12/24 team totals rows"
+        }
+      },
+      "per_team_game": {
+        "points": {
+          "value": 80.45,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 6114 / 76 team-games"
+        },
+        "fgm": {
+          "value": 29.33,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 2229 / 76 team-games"
+        },
+        "fga": {
+          "value": 65.32,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 4964 / 76 team-games"
+        },
+        "fg3m": {
+          "value": 7.88,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 599 / 76 team-games"
+        },
+        "fg3a": {
+          "value": 22.29,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 1694 / 76 team-games"
+        },
+        "ftm": {
+          "value": 13.91,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 1057 / 76 team-games"
+        },
+        "fta": {
+          "value": 19.92,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 1514 / 76 team-games"
+        },
+        "orb": {
+          "value": 9.41,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 715 / 76 team-games"
+        },
+        "drb": {
+          "value": 24.49,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 1861 / 76 team-games"
+        },
+        "ast": {
+          "value": 17.17,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 1305 / 76 team-games"
+        },
+        "stl": {
+          "value": 5.92,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 450 / 76 team-games"
+        },
+        "blk": {
+          "value": 3.08,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 234 / 76 team-games"
+        },
+        "tov": {
+          "value": 12.86,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 977 / 76 team-games"
+        },
+        "pf": {
+          "value": 20.66,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "tournament total 1570 / 76 team-games"
+        },
+        "possessions_estimate": {
+          "value": 77.53,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)",
+          "note": "possessions = FGA - ORB + TOV + 0.44 * FTA (per team-game; the common Oliver/Basketball-Reference estimate; FIBA TOV as recorded, team turnovers included where the source includes them)"
+        }
+      },
+      "shooting_pct": {
+        "fg_pct": {
+          "value": 0.449,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)"
+        },
+        "fg3_pct": {
+          "value": 0.3536,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)"
+        },
+        "ft_pct": {
+          "value": 0.6982,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)"
+        },
+        "fg3a_rate": {
+          "value": 0.3413,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)"
+        },
+        "fta_rate": {
+          "value": 0.305,
+          "status": "derived",
+          "source": "https://www.basketball-reference.com/international/mens-olympics/2012.html (Team Totals table)"
+        }
+      },
+      "method": "Summed the official team totals table, checked points = 2*FGM + 3PM + FTM, divided by the number of team-games (2 per game played)."
+    }
+  },
+  "research": {
+    "unresolved": [
+      "2002 World Championship: offensive and defensive rebounds, assists, steals, blocks, turnovers and personal fouls by team (and so possessions). archive.fiba.com is offline (TLS failure), web.archive.org refused connections, and the current FIBA history site publishes box scores for only 1 of 62 games.",
+      "2006 World Championship: ORB, DRB, AST, STL, BLK, TOV, PF are averages over the 51 of 80 games with a published official box score, not full-tournament totals.",
+      "2008 Olympics: the Basketball-Reference team row for China lists 434 points against 432 implied by its makes; listed points kept (difference 2 points over the tournament).",
+      "Turnover definitions across sources (Basketball-Reference international tables vs FIBA box scores) were not reconciled; team turnovers may be counted differently."
+    ],
+    "notes": [
+      "Shooting totals for 2010 agree exactly between Basketball-Reference and FIBA (12,338 points; 4,353/9,727 FG; 1,321/3,729 3P; 2,311/3,255 FT).",
+      "Basketball-Reference's G column for the 2010 World Championship sums to 177 instead of 160 and was not used for the divisor."
+    ]
+  }
+}

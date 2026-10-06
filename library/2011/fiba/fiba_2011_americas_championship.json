@@ -1,0 +1,968 @@
+{
+  "schema_version": 1,
+  "kind": "fiba_edition",
+  "slug": "fiba_2011_americas_championship",
+  "family": {
+    "value": "Continental_Cups",
+    "status": "derived",
+    "source": "task classification: an Americas championship that qualifies for a World Championship or Olympics is family Continental_Cups"
+  },
+  "stage_kind": {
+    "value": "Qualifiers",
+    "status": "derived",
+    "source": "task classification; the event is the FIBA Americas qualifying tournament for 2012 Olympic Games men's basketball tournament (London) (https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship)"
+  },
+  "edition": {
+    "value": 2011,
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+  },
+  "official_name": {
+    "value": "2011 FIBA Americas Championship for Men",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship (later FIBA AmeriCup)"
+  },
+  "hindsight_policy": "World data for the FIBA pipeline. Holds format, calendar and (where listed) real entry lists and squads only. No score, result, standing, award or statistic of this event is recorded. Real qualification routes and real group draws describe the real world; a simulated career must derive the field of any edition whose qualifiers it simulates from simulated results, and must not read this file before the dates given in known_from.",
+  "known_from": {
+    "draw": {
+      "value": "2011-01-27",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship citing FIBA.com"
+    },
+    "note": "Group composition public from the draw; second-round and medal pairings depend on results."
+  },
+  "host": {
+    "city": {
+      "value": "Mar del Plata",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "country": {
+      "value": "Argentina",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "awarded": {
+      "value": "2010-05-24",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship citing FIBA.com"
+    }
+  },
+  "qualifies_for": {
+    "event": {
+      "value": "2012 Olympic Games men's basketball tournament (London)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "berths": {
+      "value": 2,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "rule": {
+      "value": "The two semifinal winners qualify for the 2012 Olympics; the other three of the top five (the two semifinal losers and the 5th-placed second-round team) go to the 2012 FIBA World Olympic Qualifying Tournament.",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    }
+  },
+  "usa_participation": {
+    "took_part": {
+      "value": false,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "reason": {
+      "value": "The United States qualified automatically for the 2012 Olympics by winning the 2010 FIBA World Championship and withdrew; Paraguay (5th at the 2010 South American Championship) was invited in its place.",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "note": "In a simulated career the USA takes part only if it has not already qualified for the 2012 Olympics through a simulated 2010 World Championship; the North America sub-zone entry route (USA and Canada) applies as in 2005 and 2007."
+  },
+  "dates": {
+    "start": {
+      "value": "2011-08-30",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "end": {
+      "value": "2011-09-11",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "time_zone": {
+      "value": "UTC-3",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "stages": [
+      {
+        "stage": "preliminary_round",
+        "name": "Preliminary round (two groups of five)",
+        "start": "2011-08-30",
+        "end": "2011-09-03",
+        "venue": "Polideportivo Islas Malvinas",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "second_round",
+        "name": "Second round (single group of eight)",
+        "start": "2011-09-05",
+        "end": "2011-09-08",
+        "venue": "Polideportivo Islas Malvinas",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "semifinal",
+        "name": "Semifinals",
+        "start": "2011-09-10",
+        "end": "2011-09-10",
+        "venue": "Polideportivo Islas Malvinas",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "third_place",
+        "name": "Third-place game",
+        "start": "2011-09-11",
+        "end": "2011-09-11",
+        "venue": "Polideportivo Islas Malvinas",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "final",
+        "name": "Final",
+        "start": "2011-09-11",
+        "end": "2011-09-11",
+        "venue": "Polideportivo Islas Malvinas",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Polideportivo Islas Malvinas",
+        "city": "Mar del Plata",
+        "country": "Argentina",
+        "capacity": 8000,
+        "stages": "all games",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      }
+    ]
+  },
+  "format": {
+    "teams": {
+      "value": 10,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "groups": [
+      {
+        "group": "A",
+        "teams": 5,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      },
+      {
+        "group": "B",
+        "teams": 5,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      }
+    ],
+    "rounds": [
+      {
+        "round": "preliminary_round",
+        "kind": "group_round_robin",
+        "groups": [
+          "A",
+          "B"
+        ],
+        "games_per_team": 4,
+        "advance": "top 4 of each group to the second round; 5th placed teams are eliminated",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      },
+      {
+        "round": "second_round",
+        "name": "Second round (single group of eight)",
+        "kind": "group_round_robin_with_carryover",
+        "teams": 8,
+        "games_per_team": 4,
+        "pairing": "each team plays the four advanced teams from the other group",
+        "carryover": {
+          "value": "Each team carries over all points earned in the first round except those from the game against the eliminated team.",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+        },
+        "advance": "top 4 to the semifinals",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      },
+      {
+        "round": "semifinal",
+        "kind": "knockout",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship (pairing not stated; 1v4 and 2v3 derived from the real semifinals and the second-round table, matching the 2005 and 2007 rule)"
+      },
+      {
+        "round": "third_place",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      },
+      {
+        "round": "final",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      }
+    ],
+    "bracket": [
+      {
+        "slot": "SF1",
+        "a": "R1",
+        "b": "R4",
+        "note": "R = second-round final position",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship (pairing not stated; 1v4 and 2v3 derived from the real semifinals and the second-round table, matching the 2005 and 2007 rule)"
+      },
+      {
+        "slot": "SF2",
+        "a": "R2",
+        "b": "R3",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship (pairing not stated; 1v4 and 2v3 derived from the real semifinals and the second-round table, matching the 2005 and 2007 rule)"
+      },
+      {
+        "slot": "3RD",
+        "a": "L-SF1",
+        "b": "L-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      },
+      {
+        "slot": "F",
+        "a": "W-SF1",
+        "b": "W-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+      }
+    ],
+    "classification": {
+      "value": "Places 1-4 from the medal games; places 5-8 by second-round standing; places 9-10 are the 5th-placed preliminary teams.",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "qualification_places": {
+      "value": {
+        "olympics": [
+          "1",
+          "2"
+        ],
+        "olympic_qualifying_tournament": [
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "points": {
+      "win": {
+        "value": 2,
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship (group tables: points column equals 2 per win plus 1 per loss) and FIBA rules as stated for the 2012 Olympics"
+      },
+      "loss": {
+        "value": 1,
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship (group tables: points column equals 2 per win plus 1 per loss) and FIBA rules as stated for the 2012 Olympics"
+      },
+      "loss_by_forfeit": {
+        "value": 0,
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship (group tables: points column equals 2 per win plus 1 per loss) and FIBA rules as stated for the 2012 Olympics"
+      }
+    },
+    "tiebreak": {
+      "value": [
+        "head-to-head results",
+        "goal average of the games among the tied teams",
+        "goal average of all games",
+        "points scored",
+        "drawing of lots"
+      ],
+      "status": "unverified",
+      "source": "Not stated on the event page; the 2012 FIBA Official Basketball Rules procedure as summarised for the 2012 Olympics (https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament) is assumed"
+    },
+    "game_length": {
+      "periods": {
+        "value": 4,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "period_minutes": {
+        "value": 10,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "overtime_minutes": {
+        "value": 5,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "note": "The comparison page describes FIBA rules as of 2016; the per-edition rule books of this event were not opened. FIBA used 4 x 10 minutes throughout 2005-2014 (adopted 2000); that adoption date is not verified from a fetched source."
+    },
+    "court": {
+      "three_point_distance_m": {
+        "value": 6.75,
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html (effective 1 October 2010 for high-level competitions)"
+      },
+      "restricted_area": {
+        "value": "rectangle",
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      },
+      "no_charge_semicircle_m": {
+        "value": 1.25,
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      }
+    }
+  },
+  "draw": {
+    "date": {
+      "value": "2011-01-27",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "place": {
+      "value": "NH Gran Hotel Provincial, Mar del Plata",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "method": {
+      "value": "five pots of two paired by FIBA world ranking; first draw from each pot to Group A, second to Group B; host Argentina chose its group",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    "pots": {
+      "value": {
+        "1": [
+          "ARG",
+          "BRA"
+        ],
+        "2": [
+          "CAN",
+          "PUR"
+        ],
+        "3": [
+          "DOM",
+          "URU"
+        ],
+        "4": [
+          "PAN",
+          "VEN"
+        ],
+        "5": [
+          "CUB",
+          "PAR"
+        ]
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    }
+  },
+  "teams": [
+    {
+      "team": "DOM",
+      "name": "Dominican Republic",
+      "group": "A",
+      "qualification_route": "2010 Centrobasket",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "team": "BRA",
+      "name": "Brazil",
+      "group": "A",
+      "qualification_route": "2010 South American Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "team": "VEN",
+      "name": "Venezuela",
+      "group": "A",
+      "qualification_route": "2010 South American Championship (4th; invited because host Argentina finished in the top three)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "team": "CAN",
+      "name": "Canada",
+      "group": "A",
+      "qualification_route": "North America sub-zone",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "team": "CUB",
+      "name": "Cuba",
+      "group": "A",
+      "qualification_route": "2010 Centrobasket",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "team": "ARG",
+      "name": "Argentina",
+      "group": "B",
+      "qualification_route": "host; 2010 South American Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "team": "PUR",
+      "name": "Puerto Rico",
+      "group": "B",
+      "qualification_route": "2010 Centrobasket",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "team": "URU",
+      "name": "Uruguay",
+      "group": "B",
+      "qualification_route": "2010 South American Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "team": "PAN",
+      "name": "Panama",
+      "group": "B",
+      "qualification_route": "2010 Centrobasket",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "team": "PAR",
+      "name": "Paraguay",
+      "group": "B",
+      "qualification_route": "2010 South American Championship (5th; invited after the USA withdrew)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    }
+  ],
+  "schedule": [
+    {
+      "game_id": "AMC11-01",
+      "date": "2011-08-30",
+      "time_local": "11:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "DOM",
+      "team_b": "CUB",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-02",
+      "date": "2011-08-30",
+      "time_local": "14:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "BRA",
+      "team_b": "VEN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-03",
+      "date": "2011-08-31",
+      "time_local": "11:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "VEN",
+      "team_b": "DOM",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-04",
+      "date": "2011-08-31",
+      "time_local": "20:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "CAN",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-05",
+      "date": "2011-09-01",
+      "time_local": "14:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "CUB",
+      "team_b": "VEN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-06",
+      "date": "2011-09-01",
+      "time_local": "18:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "DOM",
+      "team_b": "CAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-07",
+      "date": "2011-09-02",
+      "time_local": "11:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "CAN",
+      "team_b": "CUB",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-08",
+      "date": "2011-09-02",
+      "time_local": "18:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "BRA",
+      "team_b": "DOM",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-09",
+      "date": "2011-09-03",
+      "time_local": "11:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "VEN",
+      "team_b": "CAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-10",
+      "date": "2011-09-03",
+      "time_local": "18:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "CUB",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-11",
+      "date": "2011-08-30",
+      "time_local": "18:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PAR",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-12",
+      "date": "2011-08-30",
+      "time_local": "20:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PAN",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-13",
+      "date": "2011-08-31",
+      "time_local": "14:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PUR",
+      "team_b": "PAR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-14",
+      "date": "2011-08-31",
+      "time_local": "18:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ARG",
+      "team_b": "URU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-15",
+      "date": "2011-09-01",
+      "time_local": "11:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PAR",
+      "team_b": "PAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-16",
+      "date": "2011-09-01",
+      "time_local": "20:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "URU",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-17",
+      "date": "2011-09-02",
+      "time_local": "14:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PAN",
+      "team_b": "URU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-18",
+      "date": "2011-09-02",
+      "time_local": "20:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PUR",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-19",
+      "date": "2011-09-03",
+      "time_local": "14:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "URU",
+      "team_b": "PAR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-20",
+      "date": "2011-09-03",
+      "time_local": "20:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ARG",
+      "team_b": "PAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-21",
+      "date": "2011-09-05",
+      "time_local": "11:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "A1",
+      "slot_b": "B4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-22",
+      "date": "2011-09-05",
+      "time_local": "14:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "A3",
+      "slot_b": "B2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-23",
+      "date": "2011-09-05",
+      "time_local": "18:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "A4",
+      "slot_b": "B1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-24",
+      "date": "2011-09-05",
+      "time_local": "20:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "A2",
+      "slot_b": "B3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-25",
+      "date": "2011-09-06",
+      "time_local": "11:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "B2",
+      "slot_b": "A4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-26",
+      "date": "2011-09-06",
+      "time_local": "14:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "B3",
+      "slot_b": "A1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-27",
+      "date": "2011-09-06",
+      "time_local": "18:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "B1",
+      "slot_b": "A3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-28",
+      "date": "2011-09-06",
+      "time_local": "20:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "B4",
+      "slot_b": "A2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-29",
+      "date": "2011-09-07",
+      "time_local": "11:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "A4",
+      "slot_b": "B3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-30",
+      "date": "2011-09-07",
+      "time_local": "14:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "A3",
+      "slot_b": "B4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-31",
+      "date": "2011-09-07",
+      "time_local": "18:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "A2",
+      "slot_b": "B1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-32",
+      "date": "2011-09-07",
+      "time_local": "20:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "A1",
+      "slot_b": "B2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-33",
+      "date": "2011-09-08",
+      "time_local": "11:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "B4",
+      "slot_b": "A4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-34",
+      "date": "2011-09-08",
+      "time_local": "14:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "B3",
+      "slot_b": "A3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-35",
+      "date": "2011-09-08",
+      "time_local": "18:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "B1",
+      "slot_b": "A1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-36",
+      "date": "2011-09-08",
+      "time_local": "20:30",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "second_round",
+      "slot_a": "B2",
+      "slot_b": "A2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC11-37",
+      "date": "2011-09-10",
+      "time_local": "19:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "semifinal",
+      "bracket_slot": "SF1",
+      "slot_a": "R1",
+      "slot_b": "R4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; SF1 = second-round 1st v 4th, SF2 = 2nd v 3rd; which pairing played in which time slot is derived from the real game."
+    },
+    {
+      "game_id": "AMC11-38",
+      "date": "2011-09-10",
+      "time_local": "21:15",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "semifinal",
+      "bracket_slot": "SF2",
+      "slot_a": "R2",
+      "slot_b": "R3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; SF1 = second-round 1st v 4th, SF2 = 2nd v 3rd; which pairing played in which time slot is derived from the real game."
+    },
+    {
+      "game_id": "AMC11-39",
+      "date": "2011-09-11",
+      "time_local": "19:00",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "third_place",
+      "bracket_slot": "3RD",
+      "slot_a": "L-SF1",
+      "slot_b": "L-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC11-40",
+      "date": "2011-09-11",
+      "time_local": "21:15",
+      "venue": "Polideportivo Islas Malvinas",
+      "stage": "final",
+      "bracket_slot": "F",
+      "slot_a": "W-SF1",
+      "slot_b": "W-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship"
+    }
+  ],
+  "research": {
+    "sources": [
+      "https://en.wikipedia.org/wiki/2011_FIBA_Americas_Championship",
+      "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Tiebreak procedure not stated on the page (unverified assumption recorded).",
+      "Semifinal pairing rule not stated (derived)."
+    ],
+    "notes": [
+      "The 2011 NBA lockout affected insurance for NBA players at this event (world context only)."
+    ]
+  },
+  "counts": {
+    "teams": 10,
+    "games": 40,
+    "group_games_with_teams": 20,
+    "slot_games": 20
+  }
+}

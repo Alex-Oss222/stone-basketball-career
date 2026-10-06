@@ -1,0 +1,1729 @@
+{
+  "schema_version": 1,
+  "kind": "fiba_edition",
+  "slug": "fiba_2014_world_cup",
+  "family": {
+    "value": "World_Cup",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+  },
+  "stage_kind": {
+    "value": "Final_Tournament",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+  },
+  "edition": {
+    "value": 2014,
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+  },
+  "official_name": {
+    "value": "2014 FIBA Basketball World Cup",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+  },
+  "hindsight_policy": "World data for the FIBA pipeline. Holds format, calendar and (where listed) real entry lists and squads only. No score, result, standing, award or statistic of this event is recorded. Real qualification routes and real group draws describe the real world; a simulated career must derive the field of any edition whose qualifiers it simulates from simulated results, and must not read this file before the dates given in known_from.",
+  "known_from": {
+    "wild_cards": {
+      "value": "2014-02-01",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "draw": {
+      "value": "2014-02-03",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "note": "The field depends on 2012-2013 results (Olympic champion, continental championships, wild cards)."
+  },
+  "host": {
+    "country": {
+      "value": "Spain",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "cities": {
+      "value": [
+        "Granada",
+        "Seville",
+        "Barakaldo (Bilbao)",
+        "Las Palmas de Gran Canaria",
+        "Madrid",
+        "Barcelona"
+      ],
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    }
+  },
+  "usa_participation": {
+    "took_part": {
+      "value": true,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "group": {
+      "value": "C",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "entry_route": {
+      "value": "automatic berth as 2012 Olympic champion (removed from the FIBA Americas allocation)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "note": "In a simulated career the USA enters as Olympic champion only if it wins a simulated 2012 Olympics; otherwise through the 2013 FIBA Americas Championship (4 berths) or a wild card."
+  },
+  "dates": {
+    "start": {
+      "value": "2014-08-30",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "end": {
+      "value": "2014-09-14",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "time_zone": {
+      "value": "UTC+2 (Central European Summer Time)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+    },
+    "stages": [
+      {
+        "stage": "preliminary_round",
+        "name": "Preliminary round (four groups of six, one city each)",
+        "start": "2014-08-30",
+        "end": "2014-09-04",
+        "venues": [
+          "Bizkaia Arena",
+          "Gran Canaria Arena",
+          "Palacio Municipal de Deportes San Pablo",
+          "Palacio Municipal de Deportes de Granada"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "stage": "round_of_16",
+        "name": "Round of 16",
+        "start": "2014-09-06",
+        "end": "2014-09-07",
+        "venues": [
+          "Palacio de Deportes de la Comunidad de Madrid",
+          "Palau Sant Jordi"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "stage": "quarterfinal",
+        "name": "Quarterfinals",
+        "start": "2014-09-09",
+        "end": "2014-09-10",
+        "venues": [
+          "Palacio de Deportes de la Comunidad de Madrid",
+          "Palau Sant Jordi"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "stage": "semifinal",
+        "name": "Semifinals",
+        "start": "2014-09-11",
+        "end": "2014-09-12",
+        "venues": [
+          "Palacio de Deportes de la Comunidad de Madrid",
+          "Palau Sant Jordi"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "stage": "third_place",
+        "name": "Third-place game",
+        "start": "2014-09-13",
+        "end": "2014-09-13",
+        "venues": [
+          "Palacio de Deportes de la Comunidad de Madrid"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "stage": "final",
+        "name": "Final",
+        "start": "2014-09-14",
+        "end": "2014-09-14",
+        "venues": [
+          "Palacio de Deportes de la Comunidad de Madrid"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Palacio Municipal de Deportes de Granada",
+        "city": "Granada",
+        "country": "Spain",
+        "capacity": 9507,
+        "stages": "Group A",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "name": "Palacio Municipal de Deportes San Pablo",
+        "city": "Seville",
+        "country": "Spain",
+        "capacity": 7200,
+        "stages": "Group B",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "name": "Bizkaia Arena",
+        "city": "Barakaldo (Bilbao)",
+        "country": "Spain",
+        "capacity": 16200,
+        "stages": "Group C",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "name": "Gran Canaria Arena",
+        "city": "Las Palmas de Gran Canaria",
+        "country": "Spain",
+        "capacity": 9700,
+        "stages": "Group D",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "name": "Palacio de Deportes de la Comunidad de Madrid",
+        "city": "Madrid",
+        "country": "Spain",
+        "capacity": 13700,
+        "stages": "final round, Group A/B half; third-place game and final",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "name": "Palau Sant Jordi",
+        "city": "Barcelona",
+        "country": "Spain",
+        "capacity": 15700,
+        "stages": "final round, Group C/D half",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      }
+    ]
+  },
+  "format": {
+    "teams": {
+      "value": 24,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "berth_allocation": {
+      "value": {
+        "host": 1,
+        "2012 Olympic champion": 1,
+        "Asia": 3,
+        "Oceania": 2,
+        "Africa": 3,
+        "Americas": 4,
+        "Europe": 6,
+        "wild cards": 4
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "groups": [
+      {
+        "group": "A",
+        "teams": 6,
+        "city": "Granada",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "group": "B",
+        "teams": 6,
+        "city": "Seville",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "group": "C",
+        "teams": 6,
+        "city": "Barakaldo (Bilbao)",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "group": "D",
+        "teams": 6,
+        "city": "Las Palmas de Gran Canaria",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      }
+    ],
+    "rounds": [
+      {
+        "round": "preliminary_round",
+        "kind": "group_round_robin",
+        "games_per_team": 5,
+        "advance": "top 4 of each group to the final round",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "round": "round_of_16",
+        "kind": "knockout",
+        "note": "Groups A and B form the Madrid half, Groups C and D the Barcelona half; the halves meet only in the final or third-place game",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "round": "quarterfinal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "round": "semifinal",
+        "kind": "knockout",
+        "note": "one semifinal per day",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "round": "third_place",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      {
+        "round": "final",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      }
+    ],
+    "bracket": [
+      {
+        "slot": "R16-1",
+        "a": "A1",
+        "b": "B4",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round (bracket of the real games mapped to group positions)"
+      },
+      {
+        "slot": "R16-2",
+        "a": "B2",
+        "b": "A3",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round (bracket of the real games mapped to group positions)"
+      },
+      {
+        "slot": "R16-3",
+        "a": "B1",
+        "b": "A4",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round (bracket of the real games mapped to group positions)"
+      },
+      {
+        "slot": "R16-4",
+        "a": "A2",
+        "b": "B3",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round (bracket of the real games mapped to group positions)"
+      },
+      {
+        "slot": "R16-5",
+        "a": "C1",
+        "b": "D4",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round (bracket of the real games mapped to group positions)"
+      },
+      {
+        "slot": "R16-6",
+        "a": "D2",
+        "b": "C3",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round (bracket of the real games mapped to group positions)"
+      },
+      {
+        "slot": "R16-7",
+        "a": "D1",
+        "b": "C4",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round (bracket of the real games mapped to group positions)"
+      },
+      {
+        "slot": "R16-8",
+        "a": "C2",
+        "b": "D3",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round (bracket of the real games mapped to group positions)"
+      },
+      {
+        "slot": "QF1",
+        "a": "W-R16-1",
+        "b": "W-R16-2",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "slot": "QF2",
+        "a": "W-R16-3",
+        "b": "W-R16-4",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "slot": "QF3",
+        "a": "W-R16-5",
+        "b": "W-R16-6",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "slot": "QF4",
+        "a": "W-R16-7",
+        "b": "W-R16-8",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "slot": "SF1",
+        "a": "W-QF1",
+        "b": "W-QF2",
+        "venue": "Madrid",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "slot": "SF2",
+        "a": "W-QF3",
+        "b": "W-QF4",
+        "venue": "Barcelona",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "slot": "3RD",
+        "a": "L-SF1",
+        "b": "L-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      },
+      {
+        "slot": "F",
+        "a": "W-SF1",
+        "b": "W-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round"
+      }
+    ],
+    "classification": {
+      "value": {
+        "1-4": "result of final and third-place game",
+        "5-16": [
+          "furthest round eliminated",
+          "win-loss record in preliminary group",
+          "place in preliminary group",
+          "goal average in preliminary group"
+        ],
+        "17-24": [
+          "place in preliminary group (5th placed 17-20, 6th placed 21-24)",
+          "win-loss record in preliminary group",
+          "goal average in preliminary group"
+        ],
+        "note": "no classification games for 5th place"
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Final standings, citing the 2014 FIBA Basketball World Cup Media Guide p.16)"
+    },
+    "points": {
+      "win": {
+        "value": 2,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      "loss": {
+        "value": 1,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      "loss_by_default": {
+        "value": 1,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      },
+      "loss_by_forfeit": {
+        "value": 0,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      }
+    },
+    "tiebreak": {
+      "value": [
+        "points",
+        "head-to-head record via the points system",
+        "goal average on games among tied teams",
+        "goal average on all group games",
+        "drawing of lots"
+      ],
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "game_length": {
+      "periods": {
+        "value": 4,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "period_minutes": {
+        "value": 10,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "overtime_minutes": {
+        "value": 5,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "note": "The comparison page describes FIBA rules as of 2016; the per-edition rule books of this event were not opened. FIBA used 4 x 10 minutes throughout 2005-2014 (adopted 2000); that adoption date is not verified from a fetched source."
+    },
+    "court": {
+      "three_point_distance_m": {
+        "value": 6.75,
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html (effective 1 October 2010 for high-level competitions)"
+      },
+      "restricted_area": {
+        "value": "rectangle",
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      },
+      "no_charge_semicircle_m": {
+        "value": 1.25,
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      },
+      "note": {
+        "value": "First World Cup with the rectangular lane, 1.25 m restricted arc and 6.75 m three-point line (6.6 m in the corners).",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+      }
+    },
+    "squads": {
+      "value": "12 players per team, at most one naturalized player; final 12 from a list of up to 24 submitted two months before; finalized at the team managers' meeting the night before the first game",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    }
+  },
+  "draw": {
+    "date": {
+      "value": "2014-02-03",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "place": {
+      "value": "Palau de la Música Catalana, Barcelona",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    },
+    "pots": {
+      "value": {
+        "1": [
+          "USA",
+          "ESP",
+          "ARG",
+          "LTU"
+        ],
+        "2": [
+          "ANG",
+          "FIN",
+          "SEN",
+          "EGY"
+        ],
+        "3": [
+          "NZL",
+          "IRI",
+          "KOR",
+          "PHI"
+        ],
+        "4": [
+          "SRB",
+          "SLO",
+          "CRO",
+          "UKR"
+        ],
+        "5": [
+          "BRA",
+          "PUR",
+          "MEX",
+          "DOM"
+        ],
+        "6": [
+          "GRE",
+          "TUR",
+          "FRA",
+          "AUS"
+        ]
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup"
+    }
+  },
+  "teams": [
+    {
+      "team": "ESP",
+      "name": "Spain",
+      "group": "A",
+      "qualification_route": "host (awarded 2009-05-23)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "BRA",
+      "name": "Brazil",
+      "group": "A",
+      "qualification_route": "FIBA wild card (2014-02-01)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "FRA",
+      "name": "France",
+      "group": "A",
+      "qualification_route": "EuroBasket 2013",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "SRB",
+      "name": "Serbia",
+      "group": "A",
+      "qualification_route": "EuroBasket 2013",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "IRI",
+      "name": "Iran",
+      "group": "A",
+      "qualification_route": "2013 FIBA Asia Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "EGY",
+      "name": "Egypt",
+      "group": "A",
+      "qualification_route": "2013 FIBA Africa Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "GRE",
+      "name": "Greece",
+      "group": "B",
+      "qualification_route": "FIBA wild card (2014-02-01)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "CRO",
+      "name": "Croatia",
+      "group": "B",
+      "qualification_route": "EuroBasket 2013",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "ARG",
+      "name": "Argentina",
+      "group": "B",
+      "qualification_route": "2013 FIBA Americas Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "SEN",
+      "name": "Senegal",
+      "group": "B",
+      "qualification_route": "2013 FIBA Africa Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "PUR",
+      "name": "Puerto Rico",
+      "group": "B",
+      "qualification_route": "2013 FIBA Americas Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "PHI",
+      "name": "Philippines",
+      "group": "B",
+      "qualification_route": "2013 FIBA Asia Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "USA",
+      "name": "United States",
+      "group": "C",
+      "qualification_route": "2012 Olympic champion",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "TUR",
+      "name": "Turkey",
+      "group": "C",
+      "qualification_route": "FIBA wild card (2014-02-01)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "DOM",
+      "name": "Dominican Republic",
+      "group": "C",
+      "qualification_route": "2013 FIBA Americas Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "NZL",
+      "name": "New Zealand",
+      "group": "C",
+      "qualification_route": "2013 FIBA Oceania Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "UKR",
+      "name": "Ukraine",
+      "group": "C",
+      "qualification_route": "EuroBasket 2013",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "FIN",
+      "name": "Finland",
+      "group": "C",
+      "qualification_route": "FIBA wild card (2014-02-01)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "LTU",
+      "name": "Lithuania",
+      "group": "D",
+      "qualification_route": "EuroBasket 2013",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "SLO",
+      "name": "Slovenia",
+      "group": "D",
+      "qualification_route": "EuroBasket 2013",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "AUS",
+      "name": "Australia",
+      "group": "D",
+      "qualification_route": "2013 FIBA Oceania Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "MEX",
+      "name": "Mexico",
+      "group": "D",
+      "qualification_route": "2013 FIBA Americas Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "ANG",
+      "name": "Angola",
+      "group": "D",
+      "qualification_route": "2013 FIBA Africa Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    },
+    {
+      "team": "KOR",
+      "name": "South Korea",
+      "group": "D",
+      "qualification_route": "2013 FIBA Asia Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup (Qualified teams)"
+    }
+  ],
+  "schedule": [
+    {
+      "game_id": "WC14-01",
+      "date": "2014-08-30",
+      "time_local": "15:30",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "EGY",
+      "team_b": "SRB",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-02",
+      "date": "2014-08-30",
+      "time_local": "18:00",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "FRA",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-03",
+      "date": "2014-08-30",
+      "time_local": "22:00",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "IRI",
+      "team_b": "ESP",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-04",
+      "date": "2014-08-31",
+      "time_local": "15:30",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "SRB",
+      "team_b": "FRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-05",
+      "date": "2014-08-31",
+      "time_local": "18:00",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "BRA",
+      "team_b": "IRI",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-06",
+      "date": "2014-08-31",
+      "time_local": "22:00",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ESP",
+      "team_b": "EGY",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-07",
+      "date": "2014-09-01",
+      "time_local": "15:30",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "IRI",
+      "team_b": "SRB",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-08",
+      "date": "2014-09-01",
+      "time_local": "18:00",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "FRA",
+      "team_b": "EGY",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-09",
+      "date": "2014-09-01",
+      "time_local": "22:00",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "BRA",
+      "team_b": "ESP",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-10",
+      "date": "2014-09-03",
+      "time_local": "15:30",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "EGY",
+      "team_b": "IRI",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-11",
+      "date": "2014-09-03",
+      "time_local": "18:00",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "SRB",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-12",
+      "date": "2014-09-03",
+      "time_local": "22:00",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ESP",
+      "team_b": "FRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-13",
+      "date": "2014-09-04",
+      "time_local": "15:30",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "BRA",
+      "team_b": "EGY",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-14",
+      "date": "2014-09-04",
+      "time_local": "18:00",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "IRI",
+      "team_b": "FRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-15",
+      "date": "2014-09-04",
+      "time_local": "22:00",
+      "venue": "Palacio Municipal de Deportes de Granada",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "SRB",
+      "team_b": "ESP",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A"
+    },
+    {
+      "game_id": "WC14-16",
+      "date": "2014-08-30",
+      "time_local": "12:30",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CRO",
+      "team_b": "PHI",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-17",
+      "date": "2014-08-30",
+      "time_local": "17:30",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PUR",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-18",
+      "date": "2014-08-30",
+      "time_local": "20:00",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "GRE",
+      "team_b": "SEN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-19",
+      "date": "2014-08-31",
+      "time_local": "13:30",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ARG",
+      "team_b": "CRO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-20",
+      "date": "2014-08-31",
+      "time_local": "17:30",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "SEN",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-21",
+      "date": "2014-08-31",
+      "time_local": "20:00",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PHI",
+      "team_b": "GRE",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-22",
+      "date": "2014-09-01",
+      "time_local": "12:30",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CRO",
+      "team_b": "SEN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-23",
+      "date": "2014-09-01",
+      "time_local": "17:30",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ARG",
+      "team_b": "PHI",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-24",
+      "date": "2014-09-01",
+      "time_local": "20:00",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PUR",
+      "team_b": "GRE",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-25",
+      "date": "2014-09-03",
+      "time_local": "13:30",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PHI",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-26",
+      "date": "2014-09-03",
+      "time_local": "17:30",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "SEN",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-27",
+      "date": "2014-09-03",
+      "time_local": "20:00",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "GRE",
+      "team_b": "CRO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-28",
+      "date": "2014-09-04",
+      "time_local": "14:00",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "SEN",
+      "team_b": "PHI",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-29",
+      "date": "2014-09-04",
+      "time_local": "18:00",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CRO",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-30",
+      "date": "2014-09-04",
+      "time_local": "22:00",
+      "venue": "Palacio Municipal de Deportes San Pablo",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ARG",
+      "team_b": "GRE",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B"
+    },
+    {
+      "game_id": "WC14-31",
+      "date": "2014-08-30",
+      "time_local": "12:30",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "UKR",
+      "team_b": "DOM",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_C"
+    },
+    {
+      "game_id": "WC14-32",
+      "date": "2014-08-30",
+      "time_local": "16:00",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "NZL",
+      "team_b": "TUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_C"
+    },
+    {
+      "game_id": "WC14-33",
+      "date": "2014-08-30",
+      "time_local": "21:30",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "USA",
+      "team_b": "FIN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Group_C_USA_vs_FIN"
+    },
+    {
+      "game_id": "WC14-34",
+      "date": "2014-08-31",
+      "time_local": "12:30",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "DOM",
+      "team_b": "NZL",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_C"
+    },
+    {
+      "game_id": "WC14-35",
+      "date": "2014-08-31",
+      "time_local": "16:00",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "FIN",
+      "team_b": "UKR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_C"
+    },
+    {
+      "game_id": "WC14-36",
+      "date": "2014-08-31",
+      "time_local": "21:30",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "TUR",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Group_C_TUR_vs_USA"
+    },
+    {
+      "game_id": "WC14-37",
+      "date": "2014-09-02",
+      "time_local": "15:00",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "UKR",
+      "team_b": "TUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_C"
+    },
+    {
+      "game_id": "WC14-38",
+      "date": "2014-09-02",
+      "time_local": "17:30",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "USA",
+      "team_b": "NZL",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Group_C_USA_vs_NZL"
+    },
+    {
+      "game_id": "WC14-39",
+      "date": "2014-09-02",
+      "time_local": "21:30",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "FIN",
+      "team_b": "DOM",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_C"
+    },
+    {
+      "game_id": "WC14-40",
+      "date": "2014-09-03",
+      "time_local": "15:00",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "NZL",
+      "team_b": "UKR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_C"
+    },
+    {
+      "game_id": "WC14-41",
+      "date": "2014-09-03",
+      "time_local": "17:30",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "TUR",
+      "team_b": "FIN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_C"
+    },
+    {
+      "game_id": "WC14-42",
+      "date": "2014-09-03",
+      "time_local": "21:30",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "DOM",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Group_C_DOM_vs_USA"
+    },
+    {
+      "game_id": "WC14-43",
+      "date": "2014-09-04",
+      "time_local": "15:00",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "FIN",
+      "team_b": "NZL",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_C"
+    },
+    {
+      "game_id": "WC14-44",
+      "date": "2014-09-04",
+      "time_local": "17:30",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "UKR",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Group_C_UKR_vs_USA"
+    },
+    {
+      "game_id": "WC14-45",
+      "date": "2014-09-04",
+      "time_local": "21:30",
+      "venue": "Bizkaia Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "TUR",
+      "team_b": "DOM",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_C"
+    },
+    {
+      "game_id": "WC14-46",
+      "date": "2014-08-30",
+      "time_local": "12:30",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "ANG",
+      "team_b": "KOR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-47",
+      "date": "2014-08-30",
+      "time_local": "16:30",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "AUS",
+      "team_b": "SLO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-48",
+      "date": "2014-08-30",
+      "time_local": "19:00",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "MEX",
+      "team_b": "LTU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-49",
+      "date": "2014-08-31",
+      "time_local": "12:30",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "KOR",
+      "team_b": "AUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-50",
+      "date": "2014-08-31",
+      "time_local": "16:30",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "SLO",
+      "team_b": "MEX",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-51",
+      "date": "2014-08-31",
+      "time_local": "19:00",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "LTU",
+      "team_b": "ANG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-52",
+      "date": "2014-09-02",
+      "time_local": "12:30",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "ANG",
+      "team_b": "MEX",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-53",
+      "date": "2014-09-02",
+      "time_local": "16:30",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "AUS",
+      "team_b": "LTU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-54",
+      "date": "2014-09-02",
+      "time_local": "19:00",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "KOR",
+      "team_b": "SLO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-55",
+      "date": "2014-09-03",
+      "time_local": "12:30",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "MEX",
+      "team_b": "AUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-56",
+      "date": "2014-09-03",
+      "time_local": "16:30",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "SLO",
+      "team_b": "ANG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-57",
+      "date": "2014-09-03",
+      "time_local": "19:00",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "LTU",
+      "team_b": "KOR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-58",
+      "date": "2014-09-04",
+      "time_local": "12:30",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "AUS",
+      "team_b": "ANG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-59",
+      "date": "2014-09-04",
+      "time_local": "16:30",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "KOR",
+      "team_b": "MEX",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-60",
+      "date": "2014-09-04",
+      "time_local": "20:30",
+      "venue": "Gran Canaria Arena",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "LTU",
+      "team_b": "SLO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D"
+    },
+    {
+      "game_id": "WC14-61",
+      "date": "2014-09-06",
+      "time_local": "16:00",
+      "venue": "Palau Sant Jordi",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-5",
+      "slot_a": "C1",
+      "slot_b": "D4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_USA_vs_MEX; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-62",
+      "date": "2014-09-06",
+      "time_local": "18:00",
+      "venue": "Palacio de Deportes de la Comunidad de Madrid",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-2",
+      "slot_a": "B2",
+      "slot_b": "A3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_FRA_vs_CRO; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-63",
+      "date": "2014-09-06",
+      "time_local": "20:00",
+      "venue": "Palau Sant Jordi",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-6",
+      "slot_a": "D2",
+      "slot_b": "C3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_DOM_vs_SVN; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-64",
+      "date": "2014-09-06",
+      "time_local": "22:00",
+      "venue": "Palacio de Deportes de la Comunidad de Madrid",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-1",
+      "slot_a": "A1",
+      "slot_b": "B4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_ESP_vs_SEN; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-65",
+      "date": "2014-09-07",
+      "time_local": "16:00",
+      "venue": "Palau Sant Jordi",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-7",
+      "slot_a": "D1",
+      "slot_b": "C4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_NZL_vs_LTU; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-66",
+      "date": "2014-09-07",
+      "time_local": "18:00",
+      "venue": "Palacio de Deportes de la Comunidad de Madrid",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-3",
+      "slot_a": "B1",
+      "slot_b": "A4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_SRB_vs_GRE; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-67",
+      "date": "2014-09-07",
+      "time_local": "20:00",
+      "venue": "Palau Sant Jordi",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-8",
+      "slot_a": "C2",
+      "slot_b": "D3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_TUR_vs_AUS; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-68",
+      "date": "2014-09-07",
+      "time_local": "22:00",
+      "venue": "Palacio de Deportes de la Comunidad de Madrid",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-4",
+      "slot_a": "A2",
+      "slot_b": "B3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_BRA_vs_ARG; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-69",
+      "date": "2014-09-09",
+      "time_local": "17:00",
+      "venue": "Palau Sant Jordi",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF4",
+      "slot_a": "W-R16-7",
+      "slot_b": "W-R16-8",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_LTU_vs_TUR; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-70",
+      "date": "2014-09-09",
+      "time_local": "21:00",
+      "venue": "Palau Sant Jordi",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF3",
+      "slot_a": "W-R16-5",
+      "slot_b": "W-R16-6",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_USA_vs_SLO; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-71",
+      "date": "2014-09-10",
+      "time_local": "18:00",
+      "venue": "Palacio de Deportes de la Comunidad de Madrid",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF2",
+      "slot_a": "W-R16-3",
+      "slot_b": "W-R16-4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_SRB_vs_BRA; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-72",
+      "date": "2014-09-10",
+      "time_local": "22:00",
+      "venue": "Palacio de Deportes de la Comunidad de Madrid",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF1",
+      "slot_a": "W-R16-1",
+      "slot_b": "W-R16-2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_ESP_vs_FRA; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date and venue sourced; per the source the order of games within the round of 16 and quarterfinals was set after the teams were known, so the tip-off time is the real assignment for this pairing, not a fixed slot time; bracket slot derived from the teams' real group positions"
+    },
+    {
+      "game_id": "WC14-73",
+      "date": "2014-09-11",
+      "time_local": "21:00",
+      "venue": "Palau Sant Jordi",
+      "stage": "semifinal",
+      "bracket_slot": "SF2",
+      "slot_a": "W-QF3",
+      "slot_b": "W-QF4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Final_LTU_vs_USA; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date, time and venue sourced; the Barcelona semifinal joins the two Group C/D quarterfinals"
+    },
+    {
+      "game_id": "WC14-74",
+      "date": "2014-09-12",
+      "time_local": "22:00",
+      "venue": "Palacio de Deportes de la Comunidad de Madrid",
+      "stage": "semifinal",
+      "bracket_slot": "SF1",
+      "slot_a": "W-QF1",
+      "slot_b": "W-QF2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Semifinal_Madrid; https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "derivation": "date, time and venue sourced; the Madrid semifinal joins the two Group A/B quarterfinals"
+    },
+    {
+      "game_id": "WC14-75",
+      "date": "2014-09-13",
+      "time_local": "18:00",
+      "venue": "Palacio de Deportes de la Comunidad de Madrid",
+      "stage": "third_place",
+      "bracket_slot": "3RD",
+      "slot_a": "L-SF1",
+      "slot_b": "L-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Bronze_Medal"
+    },
+    {
+      "game_id": "WC14-76",
+      "date": "2014-09-14",
+      "time_local": "21:00",
+      "venue": "Palacio de Deportes de la Comunidad de Madrid",
+      "stage": "final",
+      "bracket_slot": "F",
+      "slot_a": "W-SF1",
+      "slot_b": "W-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Gold_Medal"
+    }
+  ],
+  "research": {
+    "sources": [
+      "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup",
+      "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_final_round",
+      "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_A",
+      "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_B",
+      "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_C",
+      "https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup_Group_D",
+      "https://en.wikipedia.org/wiki/Template%3A2014_FIBA_Basketball_World_Cup_Group_C_USA_vs_FIN (match templates)"
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Round-of-16 and quarterfinal game order within each date was set after the teams were known; tip-off times per bracket slot are the real assignments."
+    ],
+    "notes": [
+      "Senegal's federation suspension (FIBA Central Board) is mentioned in the source; Senegal still played the tournament."
+    ]
+  },
+  "counts": {
+    "teams": 24,
+    "games": 76,
+    "group_games_with_teams": 60,
+    "slot_games": 16
+  }
+}

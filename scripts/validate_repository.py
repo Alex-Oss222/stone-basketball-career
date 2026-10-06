@@ -714,6 +714,8 @@ def validate():
     errors.extend(season_award_errors(ROOT))
     from runtime.all_star import all_star_errors
     errors.extend(all_star_errors(ROOT))
+    from runtime.national import national_errors                         # FIBA tournaments (runtime/national.py)
+    errors.extend(national_errors(ROOT))
 
     from runtime.club_replacements import replacement_errors
     errors.extend(replacement_errors(ROOT))

@@ -1,0 +1,15 @@
+{
+ "schema_version": 1,
+ "kind": "wade_standing_decision",
+ "owner": "user (Wade's own decision)",
+ "decided_on": "2004-12-31",
+ "decided_on_basis": "Career clock date when the user gave the rule (October 2026 in the real calendar).",
+ "rule": "accept_unless_injured",
+ "text": "Wade accepts every USA Basketball senior national-team invitation unless he is injured on the invitation date. Nothing stops the career clock for an invitation; the user may change this rule at any time by a new dated record.",
+ "applies_to": ["world_cup_finals", "world_cup_qualifier", "olympic_finals", "olympic_qualifier", "continental_finals", "continental_qualifier", "national_friendly"],
+ "related_premises": {
+  "usa_selection": "Simulated committee: USA Basketball picks from USA-eligible players by simulated NBA production and standing, the same rule for every player; Wade is invited only if his simulated career earns it. Other countries play their real rosters.",
+  "scope": "The engine plays every game of every tournament under FIBA rules.",
+  "athens_2004": "The 2004 Olympic tournament (August 2004) passed before the pipeline existed: no selection for Wade and no games are recorded for it."
+ }
+}

@@ -1,0 +1,3241 @@
+{
+  "schema_version": 1,
+  "kind": "fiba_edition",
+  "slug": "fiba_2005_americas_championship",
+  "family": {
+    "value": "Continental_Cups",
+    "status": "derived",
+    "source": "task classification: an Americas championship that qualifies for a World Championship or Olympics is family Continental_Cups"
+  },
+  "stage_kind": {
+    "value": "Qualifiers",
+    "status": "derived",
+    "source": "task classification; the event is the FIBA Americas qualifying tournament for 2006 FIBA World Championship (Japan) (https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship)"
+  },
+  "edition": {
+    "value": 2005,
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+  },
+  "official_name": {
+    "value": "2005 FIBA Americas Championship for Men",
+    "status": "sourced",
+    "source": "http://archive.fiba.com/pages/eng/fa/game/p/gid/1/grid/A/rid/4565/sid/3194/_/2005_FIBA_Americas_Championship_for_Men/statistic.html (FIBA archive game URL cited by Wikipedia; not fetched); https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship (also called the Tournament of the Americas; later FIBA AmeriCup)"
+  },
+  "hindsight_policy": "World data for the FIBA pipeline. Holds format, calendar and (where listed) real entry lists and squads only. No score, result, standing, award or statistic of this event is recorded. Real qualification routes and real group draws describe the real world; a simulated career must derive the field of any edition whose qualifiers it simulates from simulated results, and must not read this file before the dates given in known_from.",
+  "known_from": {
+    "draw": {
+      "value": "2005-04-18",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship citing DominicanToday.com, 18 April 2005"
+    },
+    "note": "Group composition is public from the draw date; the second-round, semifinal and medal pairings depend on results of this event."
+  },
+  "host": {
+    "city": {
+      "value": "Santo Domingo",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "country": {
+      "value": "Dominican Republic",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    }
+  },
+  "qualifies_for": {
+    "event": {
+      "value": "2006 FIBA World Championship (Japan)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "berths": {
+      "value": 4,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "rule": {
+      "value": "The two finalists and the two semifinal losers qualify. Argentina was already qualified as 2004 Olympic champion; should Argentina finish in the first four, the fifth-best team of the second round also qualifies.",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    }
+  },
+  "usa_participation": {
+    "took_part": {
+      "value": true,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship; https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+    },
+    "group": {
+      "value": "A",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "entry_route": {
+      "value": "automatic: North America sub-zone (USA and Canada are its only members)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "roster_kind": {
+      "value": "Professional players from leagues other than the NBA (CBA/NBDL, European and Asian club players), coached by Mo McHone; no NBA roster players. Charlie Bell is listed by the squad page with the Milwaukee Bucks as his club.",
+      "status": "sourced",
+      "source": "https://seminoles.com/news/2005/6/7/mo-mchone-named-to-usa-basketball-position (\"expected to be made up of professional players from leagues other than the NBA\"); https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+    },
+    "roster": "rosters.USA"
+  },
+  "dates": {
+    "start": {
+      "value": "2005-08-24",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "end": {
+      "value": "2005-09-04",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "time_zone": {
+      "value": "UTC-4 (Atlantic Standard Time)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "stages": [
+      {
+        "stage": "preliminary_round",
+        "name": "Preliminary round (two groups of five)",
+        "start": "2005-08-24",
+        "end": "2005-08-28",
+        "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "second_round",
+        "name": "Quarterfinal round (single group of eight)",
+        "start": "2005-08-30",
+        "end": "2005-09-02",
+        "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "semifinal",
+        "name": "Semifinals",
+        "start": "2005-09-03",
+        "end": "2005-09-03",
+        "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "third_place",
+        "name": "Third-place game",
+        "start": "2005-09-04",
+        "end": "2005-09-04",
+        "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "final",
+        "name": "Final",
+        "start": "2005-09-04",
+        "end": "2005-09-04",
+        "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Palacio de los Deportes Virgilio Travieso Soto",
+        "city": "Santo Domingo",
+        "country": "Dominican Republic",
+        "capacity": 8337,
+        "stages": "all games",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      }
+    ]
+  },
+  "format": {
+    "teams": {
+      "value": 10,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "groups": [
+      {
+        "group": "A",
+        "teams": 5,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "group": "B",
+        "teams": 5,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      }
+    ],
+    "rounds": [
+      {
+        "round": "preliminary_round",
+        "kind": "group_round_robin",
+        "groups": [
+          "A",
+          "B"
+        ],
+        "games_per_team": 4,
+        "advance": "top 4 of each group to the second round; 5th placed teams are eliminated",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "round": "second_round",
+        "name": "Quarterfinal round (single group of eight)",
+        "kind": "group_round_robin_with_carryover",
+        "teams": 8,
+        "games_per_team": 4,
+        "pairing": "each team plays the four advanced teams from the other group",
+        "carryover": {
+          "value": "Results among teams from the same preliminary group are carried over (results against the eliminated 5th-placed team are not).",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+        },
+        "advance": "top 4 to the semifinals",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "round": "semifinal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "round": "third_place",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "round": "final",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      }
+    ],
+    "bracket": [
+      {
+        "slot": "SF1",
+        "a": "R1",
+        "b": "R4",
+        "note": "R = second-round final position",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "slot": "SF2",
+        "a": "R2",
+        "b": "R3",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "slot": "3RD",
+        "a": "L-SF1",
+        "b": "L-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      },
+      {
+        "slot": "F",
+        "a": "W-SF1",
+        "b": "W-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      }
+    ],
+    "classification": {
+      "value": "Places 1-4 from the medal games; places 5-8 by second-round standing; places 9-10 are the 5th-placed preliminary teams (ranking between them not stated).",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship (format section and final-ranking table layout)"
+    },
+    "qualification_places": {
+      "value": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5 if Argentina is in the top 4"
+      ],
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "points": {
+      "win": {
+        "value": 2,
+        "status": "derived",
+        "source": "Not stated on this event's page; FIBA classification points (win 2, loss 1, forfeit 0) as stated for later FIBA events (https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament, https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup) and consistent with the points columns of the 2008 FIBA OQT group tables (https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men)."
+      },
+      "loss": {
+        "value": 1,
+        "status": "derived",
+        "source": "Not stated on this event's page; FIBA classification points (win 2, loss 1, forfeit 0) as stated for later FIBA events (https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament, https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup) and consistent with the points columns of the 2008 FIBA OQT group tables (https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men)."
+      },
+      "loss_by_forfeit": {
+        "value": 0,
+        "status": "derived",
+        "source": "Not stated on this event's page; FIBA classification points (win 2, loss 1, forfeit 0) as stated for later FIBA events (https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament, https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup) and consistent with the points columns of the 2008 FIBA OQT group tables (https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men)."
+      }
+    },
+    "tiebreak": {
+      "value": [
+        "head-to-head results",
+        "goal average (not difference) between the tied teams",
+        "goal average of the tied teams over all games in the group"
+      ],
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "game_length": {
+      "periods": {
+        "value": 4,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "period_minutes": {
+        "value": 10,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "overtime_minutes": {
+        "value": 5,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "note": "The comparison page describes FIBA rules as of 2016; the per-edition rule books of this event were not opened. FIBA used 4 x 10 minutes throughout 2005-2014 (adopted 2000); that adoption date is not verified from a fetched source."
+    },
+    "court": {
+      "three_point_distance_m": {
+        "value": 6.25,
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html (FIBA press release, April 2008: new 6.75 m line and rectangular restricted area apply to high-level competitions as of 1 October 2010, i.e. after the 2010 FIBA World Championship)"
+      },
+      "restricted_area": {
+        "value": "trapezoid",
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      }
+    },
+    "final_ranking_rule": {
+      "places": [
+        {
+          "places": [
+            1,
+            2
+          ],
+          "rule": "final: winner 1st, loser 2nd",
+          "slots": [
+            "W-F",
+            "L-F"
+          ],
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+        },
+        {
+          "places": [
+            3,
+            4
+          ],
+          "rule": "third-place game: winner 3rd, loser 4th",
+          "slots": [
+            "W-3RD",
+            "L-3RD"
+          ],
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+        },
+        {
+          "places": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "rule": "second-round (quarterfinal round) table positions 5-8, i.e. the teams that did not reach the semifinals, in table order",
+          "slots": [
+            "R5",
+            "R6",
+            "R7",
+            "R8"
+          ],
+          "status": "derived",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship (format: top four of the second round advance; final ranking table orders the rest by second-round standing)"
+        },
+        {
+          "places": [
+            9,
+            10
+          ],
+          "rule": "the two 5th-placed preliminary-round teams; the order between them is not stated in the source",
+          "slots": [
+            "A5",
+            "B5"
+          ],
+          "order_between": {
+            "value": null,
+            "status": "unverified",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+            "note": "presumably by preliminary-round record, then goal average (FIBA practice at the 2008 and 2012 Olympics); not sourced for this event"
+          }
+        }
+      ],
+      "second_round_table": {
+        "carryover": {
+          "value": "Results among teams from the same preliminary group are carried over (results against the eliminated 5th-placed team are not).",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+        },
+        "tiebreak": {
+          "value": [
+            "head-to-head results",
+            "goal average (not difference) between the tied teams",
+            "goal average of the tied teams over all games in the group"
+          ],
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+        }
+      },
+      "note": "R = second-round final position; A5/B5 = 5th place of preliminary Group A/B."
+    }
+  },
+  "draw": {
+    "date": {
+      "value": "2005-04-18",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "place": {
+      "value": "Santo Domingo",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "method": {
+      "value": "five pots of two; first team drawn from each pot to Group A, second to Group B",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    "pots": {
+      "value": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "note": "pot contents not listed in the source"
+    }
+  },
+  "teams": [
+    {
+      "team": "BRA",
+      "name": "Brazil",
+      "group": "A",
+      "qualification_route": "South America (2004 South American Championship per zone; not named on the page)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "team": "CAN",
+      "name": "Canada",
+      "group": "A",
+      "qualification_route": "North America sub-zone, automatic",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "team": "PAN",
+      "name": "Panama",
+      "group": "A",
+      "qualification_route": "Caribbean and Central America (2004 Centrobasket)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "team": "USA",
+      "name": "United States",
+      "group": "A",
+      "qualification_route": "North America sub-zone, automatic",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "team": "VEN",
+      "name": "Venezuela",
+      "group": "A",
+      "qualification_route": "South America",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "team": "ARG",
+      "name": "Argentina",
+      "group": "B",
+      "qualification_route": "South America",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "team": "DOM",
+      "name": "Dominican Republic",
+      "group": "B",
+      "qualification_route": "host; Caribbean and Central America (2004 Centrobasket)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "team": "MEX",
+      "name": "Mexico",
+      "group": "B",
+      "qualification_route": "Caribbean and Central America (2004 Centrobasket)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "team": "PUR",
+      "name": "Puerto Rico",
+      "group": "B",
+      "qualification_route": "Caribbean and Central America (2004 Centrobasket)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "team": "URU",
+      "name": "Uruguay",
+      "group": "B",
+      "qualification_route": "South America",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    }
+  ],
+  "schedule": [
+    {
+      "game_id": "AMC05-01",
+      "date": "2005-08-24",
+      "time_local": "14:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "USA",
+      "team_b": "PAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-02",
+      "date": "2005-08-24",
+      "time_local": "16:30",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "VEN",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-03",
+      "date": "2005-08-25",
+      "time_local": "13:30",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "BRA",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-04",
+      "date": "2005-08-25",
+      "time_local": "16:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "CAN",
+      "team_b": "VEN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-05",
+      "date": "2005-08-26",
+      "time_local": "14:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "PAN",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-06",
+      "date": "2005-08-26",
+      "time_local": "16:30",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "USA",
+      "team_b": "CAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-07",
+      "date": "2005-08-27",
+      "time_local": "16:30",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "VEN",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-08",
+      "date": "2005-08-27",
+      "time_local": "19:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "PAN",
+      "team_b": "CAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-09",
+      "date": "2005-08-28",
+      "time_local": "13:30",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "BRA",
+      "team_b": "CAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-10",
+      "date": "2005-08-28",
+      "time_local": "16:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "PAN",
+      "team_b": "VEN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-11",
+      "date": "2005-08-24",
+      "time_local": "19:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ARG",
+      "team_b": "MEX",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-12",
+      "date": "2005-08-24",
+      "time_local": "21:30",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "URU",
+      "team_b": "DOM",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-13",
+      "date": "2005-08-25",
+      "time_local": "18:30",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "MEX",
+      "team_b": "URU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-14",
+      "date": "2005-08-25",
+      "time_local": "21:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PUR",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-15",
+      "date": "2005-08-26",
+      "time_local": "19:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "URU",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-16",
+      "date": "2005-08-26",
+      "time_local": "21:30",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "DOM",
+      "team_b": "MEX",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-17",
+      "date": "2005-08-27",
+      "time_local": "13:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ARG",
+      "team_b": "URU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-18",
+      "date": "2005-08-27",
+      "time_local": "21:30",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "PUR",
+      "team_b": "DOM",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-19",
+      "date": "2005-08-28",
+      "time_local": "18:30",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "MEX",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-20",
+      "date": "2005-08-28",
+      "time_local": "21:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "DOM",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-21",
+      "date": "2005-08-30",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "B1",
+      "slot_b": "A4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-22",
+      "date": "2005-08-30",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "A1",
+      "slot_b": "B4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-23",
+      "date": "2005-08-30",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "A2",
+      "slot_b": "B3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-24",
+      "date": "2005-08-30",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "B2",
+      "slot_b": "A3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-25",
+      "date": "2005-08-31",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "B4",
+      "slot_b": "A2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-26",
+      "date": "2005-08-31",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "B3",
+      "slot_b": "A1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-27",
+      "date": "2005-08-31",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "A3",
+      "slot_b": "B1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-28",
+      "date": "2005-08-31",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "A4",
+      "slot_b": "B2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-29",
+      "date": "2005-09-01",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "B1",
+      "slot_b": "A2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-30",
+      "date": "2005-09-01",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "B4",
+      "slot_b": "A3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-31",
+      "date": "2005-09-01",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "B3",
+      "slot_b": "A4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-32",
+      "date": "2005-09-01",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "B2",
+      "slot_b": "A1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-33",
+      "date": "2005-09-02",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "A4",
+      "slot_b": "B4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-34",
+      "date": "2005-09-02",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "A1",
+      "slot_b": "B1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-35",
+      "date": "2005-09-02",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "A3",
+      "slot_b": "B3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-36",
+      "date": "2005-09-02",
+      "time_local": null,
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "second_round",
+      "slot_a": "A2",
+      "slot_b": "B2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found.",
+      "time_note": "no tip-off time in source; unresolved"
+    },
+    {
+      "game_id": "AMC05-37",
+      "date": "2005-09-03",
+      "time_local": "19:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "semifinal",
+      "bracket_slot": "SF2",
+      "slot_a": "R2",
+      "slot_b": "R3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; SF1 = second-round 1st v 4th, SF2 = 2nd v 3rd; which pairing played in which time slot is derived from the real game."
+    },
+    {
+      "game_id": "AMC05-38",
+      "date": "2005-09-03",
+      "time_local": "21:30",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "semifinal",
+      "bracket_slot": "SF1",
+      "slot_a": "R1",
+      "slot_b": "R4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; SF1 = second-round 1st v 4th, SF2 = 2nd v 3rd; which pairing played in which time slot is derived from the real game."
+    },
+    {
+      "game_id": "AMC05-39",
+      "date": "2005-09-04",
+      "time_local": "18:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "third_place",
+      "bracket_slot": "3RD",
+      "slot_a": "L-SF1",
+      "slot_b": "L-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC05-40",
+      "date": "2005-09-04",
+      "time_local": "21:00",
+      "venue": "Palacio de los Deportes Virgilio Travieso Soto",
+      "stage": "final",
+      "bracket_slot": "F",
+      "slot_a": "W-SF1",
+      "slot_b": "W-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+    }
+  ],
+  "research": {
+    "sources": [
+      "http://archive.fiba.com/pages/eng/fa/game/p/gid/1/grid/A/rid/4565/sid/3194/_/2005_FIBA_Americas_Championship_for_Men/statistic.html (FIBA archive game URL cited by Wikipedia; not fetched)",
+      "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+      "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship",
+      "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+      "https://seminoles.com/news/2005/6/7/mo-mchone-named-to-usa-basketball-position",
+      "https://www.basketball-reference.com/players/ (ids and birth dates of NBA-matched players)"
+    ],
+    "conflicts": [
+      {
+        "item": "2005 FIBA Americas: Francisco García birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads": "1980-12-31",
+          "basketball-reference garcifr01": "1981-12-31"
+        },
+        "resolution": "unresolved; squad value kept and marked unverified"
+      },
+      {
+        "item": "2005 FIBA Americas: Peter John Ramos birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads": "1985-05-23",
+          "basketball-reference ramospe01": "1985-05-13"
+        },
+        "resolution": "unresolved; squad value kept and marked unverified"
+      },
+      {
+        "item": "2005 FIBA Americas: Sebastián Izaguirre birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads": "1985-12-04",
+          "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads": "1985-04-12"
+        },
+        "resolution": "unresolved; 2005 squad value kept and marked unverified"
+      }
+    ],
+    "unresolved": [
+      "Pot contents of the 18 April 2005 draw.",
+      "The South American qualifying event is not named on the page (presumably the 2004 South American Championship).",
+      "Ranking rule between the two 5th-placed preliminary teams.",
+      "Tip-off times of the 16 second-round games are missing in the source.",
+      "Order between the two 5th-placed preliminary teams (places 9-10).",
+      "2004-05 clubs of players the squad page lists with an NBA club they joined only after 2004-05 (Charlie Bell)."
+    ],
+    "notes": [
+      "The DOM host status is inferred from the event being hosted by the Dominican Republic; the page lists DOM among the 2004 Centrobasket qualifiers.",
+      "Rosters: the squad page lists each player's last club before the tournament; for NBA-matched players the 2004-05 club is taken from the library 2004-05 rosters file."
+    ]
+  },
+  "counts": {
+    "teams": 10,
+    "games": 40,
+    "group_games_with_teams": 20,
+    "slot_games": 20,
+    "roster_teams": 10,
+    "roster_players": 120,
+    "players_with_bbr_id": 17
+  },
+  "rosters": {
+    "BRA": {
+      "team": "BRA",
+      "head_coach": {
+        "value": "Lula Ferreira",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "assistant_coaches": {
+        "value": [],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Marcelinho Machado",
+          "position": "G",
+          "birth_date": "1975-04-12",
+          "club_listed_by_source": "Uberlândia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Uberlândia",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Nezinho dos Santos",
+          "position": "G",
+          "birth_date": "1981-01-21",
+          "club_listed_by_source": "COC-Ribeirão Preto",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "COC-Ribeirão Preto",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Murilo Becker",
+          "position": "C",
+          "birth_date": "1983-07-14",
+          "club_listed_by_source": "Franca",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Franca",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Marcelinho Huertas",
+          "position": "G",
+          "birth_date": "1983-05-25",
+          "club_listed_by_source": "Joventut Badalona",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Joventut Badalona",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Leandro Barbosa",
+          "position": "G",
+          "birth_date": "1982-11-28",
+          "club_listed_by_source": "Phoenix Suns",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "barbole01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/b/barbole01.html",
+            "checked": "page gives name \"Leandro Barbosa\", birth 1982-11-28"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [
+              "2003-04",
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": [
+              "Phoenix Suns"
+            ],
+            "status": "derived",
+            "source": "library/2004/league/nba_2004_05_team_rosters.json (NBA 2004-05 clubs)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Jefferson Da Silva",
+          "position": "F",
+          "birth_date": "1983-03-29",
+          "club_listed_by_source": "Paulistano",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Paulistano",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Alex Garcia",
+          "position": "G/F",
+          "birth_date": "1980-03-04",
+          "club_listed_by_source": "COC Ribeirão Preto",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "garcial01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/g/garcial01.html",
+            "checked": "page gives name \"Alex Garcia\", birth 1980-03-04"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [
+              "2003-04",
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": [
+              "New Orleans Hornets"
+            ],
+            "status": "derived",
+            "source": "library/2004/league/nba_2004_05_team_rosters.json (NBA 2004-05 clubs); the squad page lists COC Ribeirão Preto"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Anderson Varejão",
+          "position": "C",
+          "birth_date": "1982-09-28",
+          "club_listed_by_source": "FC Barcelona",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "varejan01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/v/varejan01.html",
+            "checked": "page gives name \"Anderson Varejão\", birth 1982-09-28"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": [
+              "Cleveland Cavaliers"
+            ],
+            "status": "derived",
+            "source": "library/2004/league/nba_2004_05_team_rosters.json (NBA 2004-05 clubs); the squad page lists FC Barcelona"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Guilherme Giovannoni",
+          "position": "F",
+          "birth_date": "1980-06-02",
+          "club_listed_by_source": "Treviso Basket",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Treviso Basket",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Rafael Hettsheimeir",
+          "position": "C",
+          "birth_date": "1986-06-18",
+          "club_listed_by_source": "Akasvayu Vic",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Akasvayu Vic",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Caio Torres",
+          "position": "C",
+          "birth_date": "1987-06-03",
+          "club_listed_by_source": "Adecco Estudiantes",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Adecco Estudiantes",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Tiago Splitter",
+          "position": "F",
+          "birth_date": "1985-01-01",
+          "club_listed_by_source": "Tau Cerámica",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "splitti01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/s/splitti01.html",
+            "checked": "page gives name \"Tiago Splitter\", birth 1985-01-01"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": "Tau Cerámica",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "CAN": {
+      "team": "CAN",
+      "head_coach": {
+        "value": "Leo Rautins",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "assistant_coaches": {
+        "value": [
+          "David Smart",
+          "Greg Francis"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Jermaine Anderson",
+          "position": "G",
+          "birth_date": "1983-02-08",
+          "club_listed_by_source": "Fordham Rams",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Fordham Rams",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Denham Brown",
+          "position": "G",
+          "birth_date": "1983-01-06",
+          "club_listed_by_source": "University of Connecticut",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "University of Connecticut",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "James Gillingham",
+          "position": "G",
+          "birth_date": "1981-08-20",
+          "club_listed_by_source": "TBB Trier",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "TBB Trier",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Randall Nohr",
+          "position": "G",
+          "birth_date": "1977-06-26",
+          "club_listed_by_source": "Fribourg Olympic",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Fribourg Olympic",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Carl English",
+          "position": "G",
+          "birth_date": "1981-02-02",
+          "club_listed_by_source": "Florida Flame",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Florida Flame",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Levon Kendall",
+          "position": "F",
+          "birth_date": "1984-07-04",
+          "club_listed_by_source": "University of Pittsburgh",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "University of Pittsburgh",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Nathan Doornekamp",
+          "position": "C",
+          "birth_date": "1982-10-09",
+          "club_listed_by_source": "TBB Trier",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "TBB Trier",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Vidal Massiah",
+          "position": "F",
+          "birth_date": "1979-02-01",
+          "club_listed_by_source": "Oliveirense Caçarola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Oliveirense Caçarola",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Richard Anderson",
+          "position": "G",
+          "birth_date": "1977-11-30",
+          "club_listed_by_source": "Kraftwerk Wels",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Kraftwerk Wels",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Juan Mendez",
+          "position": "F",
+          "birth_date": "1981-09-23",
+          "club_listed_by_source": "Niagara University",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Niagara University",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Jermaine Bucknor",
+          "position": "F",
+          "birth_date": "1983-11-01",
+          "club_listed_by_source": "University of Richmond",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "University of Richmond",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Kevin Jobity",
+          "position": "C",
+          "birth_date": "1974-11-21",
+          "club_listed_by_source": "Champville",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Champville",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "PAN": {
+      "team": "PAN",
+      "head_coach": {
+        "value": "Nolan Richardson",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "assistant_coaches": {
+        "value": [
+          "Enrique Grenald",
+          "Raúl Pineda"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Joel Muñoz",
+          "position": "G",
+          "birth_date": "1980-06-24",
+          "club_listed_by_source": "John Brown University",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "John Brown University",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Jair Peralta",
+          "position": "G",
+          "birth_date": "1976-01-05",
+          "club_listed_by_source": "Canguros de Parque Lefevre",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Canguros de Parque Lefevre",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Danilo Pinnock",
+          "position": "F",
+          "birth_date": "1983-12-11",
+          "club_listed_by_source": "GW Colonials",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "GW Colonials",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Maximiliano Gómez",
+          "position": "G",
+          "birth_date": "1975-12-18",
+          "club_listed_by_source": "Toros del Chorrillo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Toros del Chorrillo",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Eduardo Isaac",
+          "position": "G",
+          "birth_date": "1980-02-11",
+          "club_listed_by_source": "Navieros de Colon",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Navieros de Colon",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Chris Warren",
+          "position": "F",
+          "birth_date": "1981-01-19",
+          "club_listed_by_source": "KK Reflex",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "KK Reflex",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Reyjavick De Gracia",
+          "position": "F",
+          "birth_date": "1981-11-05",
+          "club_listed_by_source": "John Brown University",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "John Brown University",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Michael Hicks",
+          "position": "F",
+          "birth_date": "1989-06-30",
+          "club_listed_by_source": "Agricola Glroai Montecatini",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Agricola Glroai Montecatini",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Dionisio Gómez",
+          "position": "F",
+          "birth_date": "1980-04-07",
+          "club_listed_by_source": "Central Entrerriano",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Central Entrerriano",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Antonio García",
+          "position": "F",
+          "birth_date": "1976-05-11",
+          "club_listed_by_source": "Club Deportivo Quevedo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Club Deportivo Quevedo",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Jaime Lloreda",
+          "position": "F/C",
+          "birth_date": "1980-10-11",
+          "club_listed_by_source": "Pınar Karşıyaka",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Pınar Karşıyaka",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Eric Cardenas",
+          "position": "F",
+          "birth_date": "1973-11-29",
+          "club_listed_by_source": "ESPE Quito",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "ESPE Quito",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "USA": {
+      "team": "USA",
+      "head_coach": {
+        "value": "Morris McHone",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads ; https://seminoles.com/news/2005/6/7/mo-mchone-named-to-usa-basketball-position"
+      },
+      "assistant_coaches": {
+        "value": [
+          "Dennis Johnson",
+          "Joey Meyer"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Tyus Edney",
+          "position": "G",
+          "birth_date": "1973-02-14",
+          "club_listed_by_source": "Lottomatica Roma",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "edneyty01",
+            "status": "sourced",
+            "source": "not a key in library/careers/nba_player_careers.json (no NBA season 2003-04 to 2013-14); id from basketball-reference; checked at https://www.basketball-reference.com/players/e/edneyty01.html",
+            "checked": "page gives name \"Tyus Edney\", birth 1973-02-14"
+          },
+          "club_2004_05": {
+            "value": "Lottomatica Roma",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Marque Perry",
+          "position": "G",
+          "birth_date": "1981-01-28",
+          "club_listed_by_source": "Olympiacos",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Olympiacos",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Lynn Greer",
+          "position": "G",
+          "birth_date": "1979-10-23",
+          "club_listed_by_source": "Pompea Napoli",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "greerly01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/g/greerly01.html",
+            "checked": "page gives name \"Lynn Greer\", birth 1979-10-23"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": "Pompea Napoli",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Charlie Bell",
+          "position": "G",
+          "birth_date": "1979-03-12",
+          "club_listed_by_source": "Milwaukee Bucks",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "bellch01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/b/bellch01.html",
+            "checked": "page gives name \"Charlie Bell\", birth 1979-03-12"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": null,
+            "status": "unverified",
+            "source": "the squad page lists the NBA club Milwaukee Bucks, but the player has no NBA 2004-05 season on file, so that is his club at or after the tournament, not his 2004-05 club; 2004-05 club unresolved"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Alex Scales",
+          "position": "G",
+          "birth_date": "1978-07-03",
+          "club_listed_by_source": "Seoul Samsung Thunders",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "scaleal01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/s/scaleal01.html",
+            "checked": "page gives name \"Alex Scales\", birth 1978-07-03"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": "Seoul Samsung Thunders",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Tang Hamilton",
+          "position": "F",
+          "birth_date": "1978-05-26",
+          "club_listed_by_source": "Fayetteville Patriots",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Fayetteville Patriots",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Ron Slay",
+          "position": "F",
+          "birth_date": "1981-06-29",
+          "club_listed_by_source": "Asheville Altitude",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Asheville Altitude",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Adam Chubb",
+          "position": "C",
+          "birth_date": "1981-07-05",
+          "club_listed_by_source": "Ulsan Mobis Phoebus",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Ulsan Mobis Phoebus",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Noel Felix",
+          "position": "C",
+          "birth_date": "1981-10-04",
+          "club_listed_by_source": "Talk 'N Text Phone Pals",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "felixno01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/f/felixno01.html",
+            "checked": "page gives name \"Noel Felix\", birth 1981-10-04"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": "Talk 'N Text Phone Pals",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Aaron McGhee",
+          "position": "F",
+          "birth_date": "1979-06-28",
+          "club_listed_by_source": "Busan KTF Magic Wings",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Busan KTF Magic Wings",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Jerome Beasley",
+          "position": "C",
+          "birth_date": "1980-05-17",
+          "club_listed_by_source": "Sioux Falls Skyforce",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "beaslje01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/b/beaslje01.html",
+            "checked": "page gives name \"Jerome Beasley\", birth 1980-05-17"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [
+              "2003-04"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": "Sioux Falls Skyforce",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Kris Lang",
+          "position": "C",
+          "birth_date": "1979-12-12",
+          "club_listed_by_source": "Caffe Maxim Virtus Bologna",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Caffe Maxim Virtus Bologna",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        }
+      ],
+      "player_count": 12,
+      "note": "USA Basketball's roster for the event, used as the USA roster in this edition. Source: the Wikipedia squad page (unreferenced on the page). USA Basketball's own 2005 roster page could not be fetched (web.archive.org blocked); a July 2005 trials list (Temple, Oklahoma athletics releases, per search snippets) names Edney, Felix, Lang, McGhee, Perry, Scales, Slay and Greer among invitees, consistent with this list."
+    },
+    "VEN": {
+      "team": "VEN",
+      "head_coach": {
+        "value": "Néstor Salazar",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "assistant_coaches": {
+        "value": [
+          "Nelson Solorzano",
+          "Carlos Gil"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Víctor Díaz",
+          "position": "F",
+          "birth_date": "1968-04-02",
+          "club_listed_by_source": "Cocodrilos de Caracas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Cocodrilos de Caracas",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Luis Julio",
+          "position": "F",
+          "birth_date": "1980-06-12",
+          "club_listed_by_source": "Gaiteros del Zulia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Gaiteros del Zulia",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Ernesto Mijares",
+          "position": "G",
+          "birth_date": "1976-09-30",
+          "club_listed_by_source": "Marinos de Anzoátegui",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Marinos de Anzoátegui",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Richard Lugo",
+          "position": "C",
+          "birth_date": "1976-09-30",
+          "club_listed_by_source": "Capitanes de Arecibo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Capitanes de Arecibo",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Tomás Aguilera",
+          "position": "F/C",
+          "birth_date": "1977-09-25",
+          "club_listed_by_source": "Cocodrilos de Caracas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Cocodrilos de Caracas",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Óscar Torres",
+          "position": "G",
+          "birth_date": "1976-12-18",
+          "club_listed_by_source": "BC Khimki",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "torreos01",
+            "status": "sourced",
+            "source": "not a key in library/careers/nba_player_careers.json (no NBA season 2003-04 to 2013-14); id from basketball-reference; checked at https://www.basketball-reference.com/players/t/torreos01.html",
+            "checked": "page gives name \"Óscar Torres\", birth 1976-12-18"
+          },
+          "club_2004_05": {
+            "value": "BC Khimki",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Askia Jones",
+          "position": "G",
+          "birth_date": "1971-12-19",
+          "club_listed_by_source": "Guaros de Lara",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Guaros de Lara",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Miguel Ángel Marriaga",
+          "position": "C",
+          "birth_date": "1984-06-06",
+          "club_listed_by_source": "Gaiteros del Zulia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Gaiteros del Zulia",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Héctor Romero",
+          "position": "F",
+          "birth_date": "1980-01-03",
+          "club_listed_by_source": "Marinos de Anzoátegui",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Marinos de Anzoátegui",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Diego Guevara",
+          "position": "G",
+          "birth_date": "1978-04-26",
+          "club_listed_by_source": "Guaros de Lara",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Guaros de Lara",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Heberth Bayona",
+          "position": "C",
+          "birth_date": "1978-04-26",
+          "club_listed_by_source": "Guaiqueríes de Margarita",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Guaiqueríes de Margarita",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Carlos Morris",
+          "position": "F/G",
+          "birth_date": "1975-11-10",
+          "club_listed_by_source": "Gatos de Monagas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Gatos de Monagas",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "ARG": {
+      "team": "ARG",
+      "head_coach": {
+        "value": "Sergio Hernández",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "assistant_coaches": {
+        "value": [],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Antonio Porta",
+          "position": "G",
+          "birth_date": "1983-10-28",
+          "club_listed_by_source": "Villaggio Solidago Livorno",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Villaggio Solidago Livorno",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Julio Mázzaro",
+          "position": "G",
+          "birth_date": "1979-01-31",
+          "club_listed_by_source": "River Plate",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "River Plate",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Román González",
+          "position": "C",
+          "birth_date": "1978-01-28",
+          "club_listed_by_source": "Argentino de Junín",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Argentino de Junín",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Diego Lo Grippo",
+          "position": "F",
+          "birth_date": "1978-01-22",
+          "club_listed_by_source": "Alerta Cantabria Lobos",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Alerta Cantabria Lobos",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Daniel Farabello",
+          "position": "G",
+          "birth_date": "1973-10-18",
+          "club_listed_by_source": "Casti Group Varese",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Casti Group Varese",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Gabriel Fernández",
+          "position": "C",
+          "birth_date": "1976-10-23",
+          "club_listed_by_source": "Casti Group Varese",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Casti Group Varese",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Leonardo Gutiérrez",
+          "position": "F",
+          "birth_date": "1978-05-16",
+          "club_listed_by_source": "Ben Hur",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Ben Hur",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Martín Leiva",
+          "position": "C",
+          "birth_date": "1980-04-23",
+          "club_listed_by_source": "Boca Juniors",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Boca Juniors",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Juan Pedro Gutiérrez",
+          "position": "C",
+          "birth_date": "1983-10-10",
+          "club_listed_by_source": "Obras Sanitarias",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Obras Sanitarias",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Paolo Quinteros",
+          "position": "G",
+          "birth_date": "1979-01-15",
+          "club_listed_by_source": "Boca Juniors",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Boca Juniors",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Hernán Jasen",
+          "position": "F",
+          "birth_date": "1978-02-04",
+          "club_listed_by_source": "Adecco Estudiantes",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Adecco Estudiantes",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Federico Kammerichs",
+          "position": "F",
+          "birth_date": "1980-06-21",
+          "club_listed_by_source": "Pamesa Valencia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Pamesa Valencia",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "DOM": {
+      "team": "DOM",
+      "head_coach": {
+        "value": "Keith Smart",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "assistant_coaches": {
+        "value": [],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Otto Ramírez",
+          "position": "G",
+          "birth_date": "1974-11-14",
+          "club_listed_by_source": null,
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": null,
+            "status": "unverified",
+            "source": "club cell blank in the squad page"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Marlon Martínez",
+          "position": "C",
+          "birth_date": "1979-01-17",
+          "club_listed_by_source": "Marineros de Puerto Plata",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Marineros de Puerto Plata",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Luis Flores",
+          "position": "G",
+          "birth_date": "1981-04-11",
+          "club_listed_by_source": "Denver Nuggets",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "florelu01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/f/florelu01.html",
+            "checked": "page gives name \"Luis Flores\", birth 1981-04-11"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": [
+              "Denver Nuggets",
+              "Golden State Warriors"
+            ],
+            "status": "derived",
+            "source": "library/2004/league/nba_2004_05_team_rosters.json (NBA 2004-05 clubs)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Andy Turner",
+          "position": "F",
+          "birth_date": "1980-12-26",
+          "club_listed_by_source": "Cañeros de La Romana",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Cañeros de La Romana",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Josh Asselin",
+          "position": "C",
+          "birth_date": "1978-12-24",
+          "club_listed_by_source": "Alerta Cantabria Lobos",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Alerta Cantabria Lobos",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Amaury Filion",
+          "position": "C",
+          "birth_date": "1981-08-01",
+          "club_listed_by_source": "Metros de Santiago",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Metros de Santiago",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Cristian Arias",
+          "position": "G",
+          "birth_date": "1981-11-15",
+          "club_listed_by_source": "Panteras del Distrito Nacional",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Panteras del Distrito Nacional",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Francisco García",
+          "position": "F",
+          "birth_date": {
+            "value": "1980-12-31",
+            "status": "unverified",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads; basketball-reference gives 1981-12-31"
+          },
+          "club_listed_by_source": "Sacramento Kings",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "garcifr01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/g/garcifr01.html",
+            "checked": "page gives name \"Francisco García\", birth 1981-12-31"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": "Louisville Cardinals (NCAA)",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/Francisco_Garc%C3%ADa_%28basketball%29 (played college basketball for Louisville before the 2005 NBA draft); the squad page lists Sacramento Kings, his club after the June 2005 draft"
+          }
+        },
+        {
+          "number": "12",
+          "name": "José Vargas",
+          "position": "C",
+          "birth_date": "1963-06-23",
+          "club_listed_by_source": "Universo Brasilia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Universo Brasilia",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Felipe López",
+          "position": "G",
+          "birth_date": "1974-12-19",
+          "club_listed_by_source": "Metros de Santiago",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "lopezfe01",
+            "status": "sourced",
+            "source": "not a key in library/careers/nba_player_careers.json (no NBA season 2003-04 to 2013-14); id from basketball-reference; checked at https://www.basketball-reference.com/players/l/lopezfe01.html",
+            "checked": "page gives name \"Felipe López\", birth 1974-12-19"
+          },
+          "club_2004_05": {
+            "value": "Metros de Santiago",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Jaime Peterson",
+          "position": "C",
+          "birth_date": "1971-09-29",
+          "club_listed_by_source": "ALM Évreux Basket",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "ALM Évreux Basket",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Jack Martinez",
+          "position": "F",
+          "birth_date": "1981-10-12",
+          "club_listed_by_source": "Atléticos de San Germán",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Atléticos de San Germán",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "MEX": {
+      "team": "MEX",
+      "head_coach": {
+        "value": "Jorge Ramírez",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "assistant_coaches": {
+        "value": [
+          "José Ramírez"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Romel Beck",
+          "position": "G",
+          "birth_date": "1982-05-29",
+          "club_listed_by_source": "University of Nevada, Las Vegas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "University of Nevada, Las Vegas",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Víctor Ávila",
+          "position": "C",
+          "birth_date": "1977-03-23",
+          "club_listed_by_source": "Halcones de Xalapa",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Halcones de Xalapa",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Anthony Pedroza",
+          "position": "G",
+          "birth_date": "1979-03-07",
+          "club_listed_by_source": "Osos de Guadalajara",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Osos de Guadalajara",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Horacio Llamas",
+          "position": "C",
+          "birth_date": "1973-07-17",
+          "club_listed_by_source": "Soles de Mexicali",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "llamaho01",
+            "status": "sourced",
+            "source": "not a key in library/careers/nba_player_careers.json (no NBA season 2003-04 to 2013-14); id from basketball-reference; checked at https://www.basketball-reference.com/players/l/llamaho01.html",
+            "checked": "page gives name \"Horacio Llamas\", birth 1973-07-17"
+          },
+          "club_2004_05": {
+            "value": "Soles de Mexicali",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Enrique González",
+          "position": "F",
+          "birth_date": "1968-09-10",
+          "club_listed_by_source": "Centauros de Chihuahua",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Centauros de Chihuahua",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Eric Hare",
+          "position": "F",
+          "birth_date": "1979-01-11",
+          "club_listed_by_source": "Paskolas de Navojoa",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Paskolas de Navojoa",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Ramsés Benítez",
+          "position": "C",
+          "birth_date": "1979-09-10",
+          "club_listed_by_source": "Soles de Mexicali",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Soles de Mexicali",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Omar Quintero",
+          "position": "G",
+          "birth_date": "1981-09-26",
+          "club_listed_by_source": "Forum Filatélico Valladolid",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Forum Filatélico Valladolid",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Alonso Izaguirre",
+          "position": "F",
+          "birth_date": "1976-12-14",
+          "club_listed_by_source": "Frayles de Guasave",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Frayles de Guasave",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Enrique Zúñiga",
+          "position": "G",
+          "birth_date": "1976-07-07",
+          "club_listed_by_source": "Lechugueros de Leon",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Lechugueros de Leon",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "David Crouse",
+          "position": "C",
+          "birth_date": "1974-08-10",
+          "club_listed_by_source": "Lobos de la UAC",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Lobos de la UAC",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Adam Parada",
+          "position": "C",
+          "birth_date": "1981-10-21",
+          "club_listed_by_source": "Correcaminos UAT Victoria",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Correcaminos UAT Victoria",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "PUR": {
+      "team": "PUR",
+      "head_coach": {
+        "value": "Julio Toro",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "assistant_coaches": {
+        "value": [],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Peter John Ramos",
+          "position": "C",
+          "birth_date": {
+            "value": "1985-05-23",
+            "status": "unverified",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads; basketball-reference gives 1985-05-13"
+          },
+          "club_listed_by_source": "Washington Wizards",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "ramospe01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/r/ramospe01.html",
+            "checked": "page gives name \"Peter John Ramos\", birth 1985-05-13"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": [
+              "Washington Wizards"
+            ],
+            "status": "derived",
+            "source": "library/2004/league/nba_2004_05_team_rosters.json (NBA 2004-05 clubs)"
+          }
+        },
+        {
+          "number": "5",
+          "name": "David Cortez",
+          "position": "F",
+          "birth_date": "1981-12-23",
+          "club_listed_by_source": "Capitanes de Arecibo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Capitanes de Arecibo",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Bobby Joe Hatton",
+          "position": "G",
+          "birth_date": "1976-10-11",
+          "club_listed_by_source": "Leones de Ponce",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Leones de Ponce",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Filiberto Rivera",
+          "position": "G",
+          "birth_date": "1982-09-28",
+          "club_listed_by_source": "University of Texas El Paso",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "University of Texas El Paso",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Rick Apodaca",
+          "position": "F",
+          "birth_date": "1980-07-01",
+          "club_listed_by_source": "Atléticos de San Germán",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Atléticos de San Germán",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Christian Dalmau",
+          "position": "G",
+          "birth_date": "1975-08-29",
+          "club_listed_by_source": "Atléticos de San Germán",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Atléticos de San Germán",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Elías Larry Ayuso",
+          "position": "G",
+          "birth_date": "1977-03-27",
+          "club_listed_by_source": "Capitanes de Arecibo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Capitanes de Arecibo",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Antonio Latimer",
+          "position": "F",
+          "birth_date": "1978-11-26",
+          "club_listed_by_source": "Vaqueros de Bayamón",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Vaqueros de Bayamón",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Gabriel Colón",
+          "position": "F",
+          "birth_date": "1984-12-20",
+          "club_listed_by_source": "Leones de Ponce",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Leones de Ponce",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Sharif Fajardo",
+          "position": "F",
+          "birth_date": "1976-06-09",
+          "club_listed_by_source": "Capitanes de Arecibo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Capitanes de Arecibo",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Ángel Figueroa",
+          "position": "F",
+          "birth_date": "1981-10-13",
+          "club_listed_by_source": "Capitanes de Arecibo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Capitanes de Arecibo",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Manuel Narvaez",
+          "position": "C",
+          "birth_date": "1981-12-18",
+          "club_listed_by_source": "Leones de Ponce",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Leones de Ponce",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "URU": {
+      "team": "URU",
+      "head_coach": {
+        "value": "Alberto Espasandin",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "assistant_coaches": {
+        "value": [],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Diego Castrillón",
+          "position": "F",
+          "birth_date": "1975-01-08",
+          "club_listed_by_source": "Club Atlético Capurro",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Club Atlético Capurro",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Sebastián Izaguirre",
+          "position": "F",
+          "birth_date": {
+            "value": "1985-12-04",
+            "status": "unverified",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads; 2007 squad page gives 1985-04-12"
+          },
+          "club_listed_by_source": "Club Social Larrañaga",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Club Social Larrañaga",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Mauricio Aguiar",
+          "position": "F",
+          "birth_date": "1983-02-03",
+          "club_listed_by_source": "Banco di Sardegna Sassari",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Banco di Sardegna Sassari",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Pablo Morales",
+          "position": "F",
+          "birth_date": "1978-05-31",
+          "club_listed_by_source": "Salto Uruguay",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Salto Uruguay",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Nicolás Mazzarino",
+          "position": "G",
+          "birth_date": "1975-10-21",
+          "club_listed_by_source": "Vertical Vision Cantù",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Vertical Vision Cantù",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Claudio Charquero",
+          "position": "F",
+          "birth_date": "1977-07-22",
+          "club_listed_by_source": "Paysandú BBC",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Paysandú BBC",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Leandro García Morales",
+          "position": "G",
+          "birth_date": "1980-06-27",
+          "club_listed_by_source": "Olimpia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Olimpia",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Martín Osimani",
+          "position": "G",
+          "birth_date": "1981-05-22",
+          "club_listed_by_source": "University of Duquesne",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "University of Duquesne",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Gastón Paez",
+          "position": "C",
+          "birth_date": "1979-09-22",
+          "club_listed_by_source": "Independiente de Mercedes",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Independiente de Mercedes",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Luis Silveira",
+          "position": "G/F",
+          "birth_date": "1971-01-16",
+          "club_listed_by_source": "Salto Uruguay",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Salto Uruguay",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Nicolás Borsellino",
+          "position": "F",
+          "birth_date": "1986-05-08",
+          "club_listed_by_source": "Club Atlético Capurro",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": null,
+          "club_2004_05": {
+            "value": "Club Atlético Capurro",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Esteban Batista",
+          "position": "F/C",
+          "birth_date": "1983-09-02",
+          "club_listed_by_source": "Calpe Aguas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "batises01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys; checked at https://www.basketball-reference.com/players/b/batises01.html",
+            "checked": "page gives name \"Esteban Batista\", birth 1983-09-02"
+          },
+          "nba_seasons_on_file_through_2004_05": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json"
+          },
+          "club_2004_05": {
+            "value": "Calpe Aguas",
+            "status": "sourced",
+            "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads (club as listed by the squad page, whose legend defines it as the last club before the tournament (ages on 24 August 2005); taken as the 2004-05 club)"
+          }
+        }
+      ],
+      "player_count": 12
+    }
+  }
+}

@@ -1,0 +1,2853 @@
+{
+  "schema_version": 1,
+  "kind": "fiba_edition",
+  "slug": "fiba_2007_americas_championship",
+  "family": {
+    "value": "Continental_Cups",
+    "status": "derived",
+    "source": "task classification: an Americas championship that qualifies for a World Championship or Olympics is family Continental_Cups"
+  },
+  "stage_kind": {
+    "value": "Qualifiers",
+    "status": "derived",
+    "source": "task classification; the event is the FIBA Americas qualifying tournament for 2008 Olympic Games men's basketball tournament (Beijing) (https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship)"
+  },
+  "edition": {
+    "value": 2007,
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+  },
+  "official_name": {
+    "value": "2007 FIBA Americas Championship",
+    "status": "sourced",
+    "source": "http://archive.fiba.com/pages/eng/fa/statistics/p/rpp/tid/0/sid/3965/... /2007_FIBA_Americas_Championship/... (FIBA archive URLs cited by Wikipedia; not fetched); https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship (later FIBA AmeriCup; also Tournament of the Americas)"
+  },
+  "hindsight_policy": "World data for the FIBA pipeline. Holds format, calendar and (where listed) real entry lists and squads only. No score, result, standing, award or statistic of this event is recorded. Real qualification routes and real group draws describe the real world; a simulated career must derive the field of any edition whose qualifiers it simulates from simulated results, and must not read this file before the dates given in known_from.",
+  "known_from": {
+    "draw": {
+      "value": "2007-03-21",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship; http://www.nba.com/news/fibaamericas_preview.html (Brad Friedman, NBA.com, 21 March 2007, cited by Wikipedia for the draw; not fetched)"
+    },
+    "note": "Group composition public from the draw; second-round and medal pairings depend on results."
+  },
+  "host": {
+    "city": {
+      "value": "Las Vegas",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "country": {
+      "value": "United States",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "history": {
+      "value": "Originally awarded to Venezuela; withdrawn when the Venezuelan federation had not paid a $1.5 million fee as of 31 August 2006.",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    }
+  },
+  "qualifies_for": {
+    "event": {
+      "value": "2008 Olympic Games men's basketball tournament (Beijing)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "berths": {
+      "value": 2,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship; https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    "rule": {
+      "value": "The two finalists qualify for the 2008 Olympics. The two semifinal losers (third-place game) and the 5th-placed second-round team qualify for the 2008 FIBA World Olympic Qualifying Tournament.",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    }
+  },
+  "usa_participation": {
+    "took_part": {
+      "value": true,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "group": {
+      "value": "B",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "entry_route": {
+      "value": "automatic: North America sub-zone (USA and Canada); also host",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "roster_kind": {
+      "value": "NBA players (USA Basketball senior national team), head coach Mike Krzyzewski",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads"
+    }
+  },
+  "dates": {
+    "start": {
+      "value": "2007-08-22",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "end": {
+      "value": "2007-09-02",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "time_zone": {
+      "value": "UTC-7 (Pacific Daylight Time)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "stages": [
+      {
+        "stage": "preliminary_round",
+        "name": "Preliminary round (two groups of five)",
+        "start": "2007-08-22",
+        "end": "2007-08-26",
+        "venue": "Thomas & Mack Center",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "second_round",
+        "name": "Quarterfinal round (single group of eight)",
+        "start": "2007-08-27",
+        "end": "2007-08-30",
+        "venue": "Thomas & Mack Center",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "semifinal",
+        "name": "Semifinals",
+        "start": "2007-09-01",
+        "end": "2007-09-01",
+        "venue": "Thomas & Mack Center",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "third_place",
+        "name": "Third-place game",
+        "start": "2007-09-02",
+        "end": "2007-09-02",
+        "venue": "Thomas & Mack Center",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "stage": "final",
+        "name": "Final",
+        "start": "2007-09-02",
+        "end": "2007-09-02",
+        "venue": "Thomas & Mack Center",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Thomas & Mack Center",
+        "city": "Las Vegas, Nevada",
+        "country": "United States",
+        "capacity": null,
+        "stages": "all games",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      }
+    ]
+  },
+  "format": {
+    "teams": {
+      "value": 10,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "groups": [
+      {
+        "group": "A",
+        "teams": 5,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "group": "B",
+        "teams": 5,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      }
+    ],
+    "rounds": [
+      {
+        "round": "preliminary_round",
+        "kind": "group_round_robin",
+        "groups": [
+          "A",
+          "B"
+        ],
+        "games_per_team": 4,
+        "advance": "top 4 of each group to the second round; 5th placed teams are eliminated",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "round": "second_round",
+        "name": "Quarterfinal round (single group of eight)",
+        "kind": "group_round_robin_with_carryover",
+        "teams": 8,
+        "games_per_team": 4,
+        "pairing": "each team plays the four advanced teams from the other group",
+        "carryover": {
+          "value": "Records from the preliminary groups carry over, but only against teams that also advanced.",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+        },
+        "advance": "top 4 to the semifinals",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "round": "semifinal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "round": "third_place",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "round": "final",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      }
+    ],
+    "bracket": [
+      {
+        "slot": "SF1",
+        "a": "R1",
+        "b": "R4",
+        "note": "R = second-round final position",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "slot": "SF2",
+        "a": "R2",
+        "b": "R3",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "slot": "3RD",
+        "a": "L-SF1",
+        "b": "L-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      },
+      {
+        "slot": "F",
+        "a": "W-SF1",
+        "b": "W-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+      }
+    ],
+    "classification": {
+      "value": "Places 1-4 from the medal games; places 5-8 by second-round standing; places 9-10 are the 5th-placed preliminary teams.",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "qualification_places": {
+      "value": {
+        "olympics": [
+          "1",
+          "2"
+        ],
+        "olympic_qualifying_tournament": [
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "points": {
+      "win": {
+        "value": 2,
+        "status": "derived",
+        "source": "Not stated on this event's page; FIBA classification points (win 2, loss 1, forfeit 0) as stated for later FIBA events (https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament, https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup) and consistent with the points columns of the 2008 FIBA OQT group tables (https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men)."
+      },
+      "loss": {
+        "value": 1,
+        "status": "derived",
+        "source": "Not stated on this event's page; FIBA classification points (win 2, loss 1, forfeit 0) as stated for later FIBA events (https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament, https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup) and consistent with the points columns of the 2008 FIBA OQT group tables (https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men)."
+      },
+      "loss_by_forfeit": {
+        "value": 0,
+        "status": "derived",
+        "source": "Not stated on this event's page; FIBA classification points (win 2, loss 1, forfeit 0) as stated for later FIBA events (https://en.wikipedia.org/wiki/Basketball_at_the_2012_Summer_Olympics_%E2%80%93_Men%27s_tournament, https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup) and consistent with the points columns of the 2008 FIBA OQT group tables (https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men)."
+      }
+    },
+    "tiebreak": {
+      "value": [
+        "head-to-head results",
+        "goal average (not difference) between the tied teams",
+        "goal average of the tied teams over all games in the group"
+      ],
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "game_length": {
+      "periods": {
+        "value": 4,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "period_minutes": {
+        "value": 10,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "overtime_minutes": {
+        "value": 5,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "note": "The comparison page describes FIBA rules as of 2016; the per-edition rule books of this event were not opened. FIBA used 4 x 10 minutes throughout 2005-2014 (adopted 2000); that adoption date is not verified from a fetched source."
+    },
+    "court": {
+      "three_point_distance_m": {
+        "value": 6.25,
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html (FIBA press release, April 2008: new 6.75 m line and rectangular restricted area apply to high-level competitions as of 1 October 2010, i.e. after the 2010 FIBA World Championship)"
+      },
+      "restricted_area": {
+        "value": "trapezoid",
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      }
+    }
+  },
+  "draw": {
+    "date": {
+      "value": "2007-03-21",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "place": {
+      "value": "Las Vegas",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "method": {
+      "value": "five pots; first team drawn to Group A, second to Group B",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    "pots": {
+      "value": {
+        "A": [
+          "ARG",
+          "USA"
+        ],
+        "B": [
+          "BRA",
+          "PUR"
+        ],
+        "C": [
+          "PAN",
+          "VEN"
+        ],
+        "D": [
+          "CAN",
+          "URU"
+        ],
+        "E": [
+          "MEX",
+          "ISV"
+        ]
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    }
+  },
+  "teams": [
+    {
+      "team": "ARG",
+      "name": "Argentina",
+      "group": "A",
+      "qualification_route": "South America (2006 South American Championship per zone; not named on the page)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "team": "MEX",
+      "name": "Mexico",
+      "group": "A",
+      "qualification_route": "Caribbean and Central America (2006 Centrobasket)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "team": "PAN",
+      "name": "Panama",
+      "group": "A",
+      "qualification_route": "Caribbean and Central America (2006 Centrobasket)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "team": "PUR",
+      "name": "Puerto Rico",
+      "group": "A",
+      "qualification_route": "Caribbean and Central America (2006 Centrobasket)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "team": "URU",
+      "name": "Uruguay",
+      "group": "A",
+      "qualification_route": "South America",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "team": "BRA",
+      "name": "Brazil",
+      "group": "B",
+      "qualification_route": "South America",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "team": "CAN",
+      "name": "Canada",
+      "group": "B",
+      "qualification_route": "North America sub-zone, automatic",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "team": "USA",
+      "name": "United States",
+      "group": "B",
+      "qualification_route": "North America sub-zone, automatic; host",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "team": "ISV",
+      "name": "U.S. Virgin Islands",
+      "group": "B",
+      "qualification_route": "Caribbean and Central America (2006 Centrobasket)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "team": "VEN",
+      "name": "Venezuela",
+      "group": "B",
+      "qualification_route": "South America",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    }
+  ],
+  "schedule": [
+    {
+      "game_id": "AMC07-01",
+      "date": "2007-08-22",
+      "time_local": "12:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "URU",
+      "team_b": "PAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-02",
+      "date": "2007-08-22",
+      "time_local": "15:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "PUR",
+      "team_b": "MEX",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-03",
+      "date": "2007-08-23",
+      "time_local": "12:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ARG",
+      "team_b": "URU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-04",
+      "date": "2007-08-23",
+      "time_local": "17:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "PAN",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-05",
+      "date": "2007-08-24",
+      "time_local": "12:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "MEX",
+      "team_b": "PAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-06",
+      "date": "2007-08-24",
+      "time_local": "17:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "PUR",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-07",
+      "date": "2007-08-25",
+      "time_local": "17:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "URU",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-08",
+      "date": "2007-08-25",
+      "time_local": "20:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ARG",
+      "team_b": "MEX",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-09",
+      "date": "2007-08-26",
+      "time_local": "15:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "MEX",
+      "team_b": "URU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-10",
+      "date": "2007-08-26",
+      "time_local": "21:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "PAN",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-11",
+      "date": "2007-08-22",
+      "time_local": "17:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CAN",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-12",
+      "date": "2007-08-22",
+      "time_local": "20:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "USA",
+      "team_b": "VEN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-13",
+      "date": "2007-08-23",
+      "time_local": "15:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "VEN",
+      "team_b": "CAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-14",
+      "date": "2007-08-23",
+      "time_local": "20:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ISV",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-15",
+      "date": "2007-08-24",
+      "time_local": "15:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CAN",
+      "team_b": "ISV",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-16",
+      "date": "2007-08-24",
+      "time_local": "20:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "BRA",
+      "team_b": "VEN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-17",
+      "date": "2007-08-25",
+      "time_local": {
+        "value": "00:00",
+        "status": "unverified",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+        "note": "source lists \"12:00 a.m.\" (midnight), implausible for this session; real tip-off unresolved"
+      },
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "USA",
+      "team_b": "CAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-18",
+      "date": "2007-08-25",
+      "time_local": "15:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ISV",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-19",
+      "date": "2007-08-26",
+      "time_local": "13:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "VEN",
+      "team_b": "ISV",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-20",
+      "date": "2007-08-26",
+      "time_local": "18:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "BRA",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-21",
+      "date": "2007-08-27",
+      "time_local": "12:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "A2",
+      "slot_b": "B3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-22",
+      "date": "2007-08-27",
+      "time_local": "15:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "A1",
+      "slot_b": "B4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-23",
+      "date": "2007-08-27",
+      "time_local": "17:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "B2",
+      "slot_b": "A3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-24",
+      "date": "2007-08-27",
+      "time_local": "20:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "B1",
+      "slot_b": "A4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-25",
+      "date": "2007-08-28",
+      "time_local": "12:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "B4",
+      "slot_b": "A2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-26",
+      "date": "2007-08-28",
+      "time_local": "15:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "B3",
+      "slot_b": "A1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-27",
+      "date": "2007-08-28",
+      "time_local": "17:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "A4",
+      "slot_b": "B2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-28",
+      "date": "2007-08-28",
+      "time_local": "20:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "A3",
+      "slot_b": "B1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-29",
+      "date": "2007-08-29",
+      "time_local": "12:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "B3",
+      "slot_b": "A4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-30",
+      "date": "2007-08-29",
+      "time_local": "15:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "B4",
+      "slot_b": "A3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-31",
+      "date": "2007-08-29",
+      "time_local": "17:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "A1",
+      "slot_b": "B2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-32",
+      "date": "2007-08-29",
+      "time_local": "20:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "A2",
+      "slot_b": "B1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-33",
+      "date": "2007-08-30",
+      "time_local": "13:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "A4",
+      "slot_b": "B4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-34",
+      "date": "2007-08-30",
+      "time_local": "16:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "B2",
+      "slot_b": "A2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-35",
+      "date": "2007-08-30",
+      "time_local": "18:30",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "A3",
+      "slot_b": "B3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-36",
+      "date": "2007-08-30",
+      "time_local": "21:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "second_round",
+      "slot_a": "B1",
+      "slot_b": "A1",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; the pairing is written as preliminary-round group positions, derived by mapping the real game to the two teams' real group positions. The day-by-day pattern (day 1: 1v4 and 2v3, day 2: 1v3 and 2v4, day 3: 1v2 and 3v4, day 4: like positions, across groups) is consistent with a slot-based schedule fixed before the round; FIBA's pre-tournament slot schedule itself was not found."
+    },
+    {
+      "game_id": "AMC07-37",
+      "date": "2007-09-01",
+      "time_local": "13:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "semifinal",
+      "bracket_slot": "SF2",
+      "slot_a": "R2",
+      "slot_b": "R3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; SF1 = second-round 1st v 4th, SF2 = 2nd v 3rd; which pairing played in which time slot is derived from the real game."
+    },
+    {
+      "game_id": "AMC07-38",
+      "date": "2007-09-01",
+      "time_local": "16:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "semifinal",
+      "bracket_slot": "SF1",
+      "slot_a": "R1",
+      "slot_b": "R4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "derivation": "date, time and venue sourced; SF1 = second-round 1st v 4th, SF2 = 2nd v 3rd; which pairing played in which time slot is derived from the real game."
+    },
+    {
+      "game_id": "AMC07-39",
+      "date": "2007-09-02",
+      "time_local": "13:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "third_place",
+      "bracket_slot": "3RD",
+      "slot_a": "L-SF1",
+      "slot_b": "L-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    },
+    {
+      "game_id": "AMC07-40",
+      "date": "2007-09-02",
+      "time_local": "16:00",
+      "venue": "Thomas & Mack Center",
+      "stage": "final",
+      "bracket_slot": "F",
+      "slot_a": "W-SF1",
+      "slot_b": "W-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship"
+    }
+  ],
+  "rosters": {
+    "ARG": {
+      "team": "ARG",
+      "head_coach": {
+        "value": "Sergio Hernández",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Luis Scola",
+          "position": "F",
+          "birth_date": "1980-04-30",
+          "club": "Houston Rockets",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "scolalu01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page scolalu01 gives name \"Luis Scola\", birth 1980-04-30"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Pablo Prigioni",
+          "position": "G",
+          "birth_date": "1977-05-17",
+          "club": "TAU Cerámica",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "prigipa01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page prigipa01 gives name \"Pablo Prigioni\", birth 1977-05-17"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Román González",
+          "position": "C",
+          "birth_date": "1978-01-28",
+          "club": "Peñarol de Mar del Plata",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Diego Lo Grippo",
+          "position": "F",
+          "birth_date": "1978-01-22",
+          "club": "CB Atapuerca",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Juan Pedro Gutiérrez",
+          "position": "C",
+          "birth_date": "1983-10-10",
+          "club": "CB Granada",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Antonio Porta",
+          "position": "G",
+          "birth_date": "1983-10-28",
+          "club": "Spartak St. Petersburg",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Carlos Delfino",
+          "position": "G",
+          "birth_date": "1982-08-29",
+          "club": "Toronto Raptors",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "delfica01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page delfica01 gives name \"Carlos Delfino\", birth 1982-08-29"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2004-05",
+              "2005-06",
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Detroit Pistons"
+            ],
+            "status": "derived",
+            "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Martín Leiva",
+          "position": "C",
+          "birth_date": "1980-04-23",
+          "club": "CB Atapuerca",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Leonardo Gutiérrez",
+          "position": "F",
+          "birth_date": "1978-05-16",
+          "club": "Boca Juniors",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Paolo Quinteros",
+          "position": "G",
+          "birth_date": "1979-01-15",
+          "club": "CAI Zaragoza",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Matías Sandes",
+          "position": "F",
+          "birth_date": "1984-06-14",
+          "club": "TAU Cerámica",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Federico Kammerichs",
+          "position": "F",
+          "birth_date": "1980-06-21",
+          "club": "CB Murcia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "MEX": {
+      "team": "MEX",
+      "head_coach": {
+        "value": "Nolan Richardson",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Adam Parada",
+          "position": "C",
+          "birth_date": "1981-10-21",
+          "club": "Fastlink",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Pedro David Meza",
+          "position": "G",
+          "birth_date": "1978-10-15",
+          "club": "Caballeros de Culiacán",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Anthony Pedroza",
+          "position": "G",
+          "birth_date": "1979-03-07",
+          "club": "Gaiteros del Zulia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Horacio Llamas",
+          "position": "C",
+          "birth_date": "1973-07-17",
+          "club": "Dorados de Playa del Carmen",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Arim Solares",
+          "position": "F/C",
+          "birth_date": "1983-04-24",
+          "club": "Santos Reales de San Luis",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Romel Beck",
+          "position": "G",
+          "birth_date": "1982-05-29",
+          "club": "Gatos de Monagas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Víctor Mariscal",
+          "position": "F",
+          "birth_date": "1972-05-24",
+          "club": "Halcones UV Xalapa",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Omar Quintero",
+          "position": "G",
+          "birth_date": "1981-09-26",
+          "club": "Marinos de Anzoategui",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Héctor Hernández",
+          "position": "F",
+          "birth_date": "1985-06-15",
+          "club": "Fresno State University",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Enrique Zúñiga",
+          "position": "G",
+          "birth_date": "1976-07-07",
+          "club": "Frayles de Guasave",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Gustavo Ayón",
+          "position": "F/C",
+          "birth_date": "1985-04-01",
+          "club": "Vaqueros de Agua Prieta",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "ayongu01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page ayongu01 gives name \"Gustavo Ayón\", birth 1985-04-01"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Victor Avila",
+          "position": "C",
+          "birth_date": "1977-03-23",
+          "club": "Caballeros de Culiacán",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "PAN": {
+      "team": "PAN",
+      "head_coach": {
+        "value": "Vicente Duncan",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Joel Muñoz",
+          "position": "G",
+          "birth_date": "1980-06-24",
+          "club": "Magnates de Calidonia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Jamar Green",
+          "position": "G",
+          "birth_date": "1979-02-18",
+          "club": "KK Mogren",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "J. R. Pinnock",
+          "position": "F",
+          "birth_date": "1983-12-11",
+          "club": "Arkansas Rimrockers",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Maximiliano Gómez",
+          "position": "G",
+          "birth_date": "1975-12-18",
+          "club": "Toros de Chorrillo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Jamaal Levy",
+          "position": "F/C",
+          "birth_date": "1983-01-08",
+          "club": "Peñarol de Mar del Plata",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Jorsua Chambers",
+          "position": "G",
+          "birth_date": "1981-06-11",
+          "club": "Toros de Chorrillo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Reyjavick Garcia",
+          "position": "F",
+          "birth_date": "1981-11-05",
+          "club": "Navieros de Colón",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Gary Forbes",
+          "position": "F/G",
+          "birth_date": "1985-02-25",
+          "club": "University of Massachusetts",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "forbega01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page forbega01 gives name \"Gary Forbes\", birth 1985-02-25"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Amir Alvarado",
+          "position": "F",
+          "birth_date": "1984-07-19",
+          "club": "Liceo de Costa Rica",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Antonio García",
+          "position": "F/C",
+          "birth_date": "1976-05-11",
+          "club": "Estudiantes de Olavarría",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Jaime Lloreda",
+          "position": "F/C",
+          "birth_date": "1980-10-11",
+          "club": "Lokomotiv Rostov",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Desmond Smith",
+          "position": "F",
+          "birth_date": "1986-11-24",
+          "club": "Magnates de Calidonia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "PUR": {
+      "team": "PUR",
+      "head_coach": {
+        "value": "Manolo Cintron",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Peter John Ramos",
+          "position": "C",
+          "birth_date": {
+            "value": "1985-05-23",
+            "status": "unverified",
+            "source": "squad page and Wikipedia player article; basketball-reference gives 1985-05-13"
+          },
+          "club": "Baloncesto Fuenlabrada",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "ramospe01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page ramospe01 gives name \"Peter John Ramos\", birth 1985-05-13"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          }
+        },
+        {
+          "number": "5",
+          "name": "José Juan Barea",
+          "position": "G",
+          "birth_date": "1984-06-26",
+          "club": "Dallas Mavericks",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "bareajo01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page bareajo01 gives name \"J.J. Barea\", birth 1984-06-26"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Dallas Mavericks"
+            ],
+            "status": "derived",
+            "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Filiberto Rivera",
+          "position": "G",
+          "birth_date": "1982-09-28",
+          "club": "Eldo Basket Napoli",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Carlos Arroyo",
+          "position": "G",
+          "birth_date": "1979-07-30",
+          "club": "Orlando Magic",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "arroyca01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page arroyca01 gives name \"Carlos Arroyo\", birth 1979-07-30"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Orlando Magic"
+            ],
+            "status": "derived",
+            "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Rick Apodaca",
+          "position": "F",
+          "birth_date": "1980-07-01",
+          "club": "Beşiktaş Cola Turka",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Alex Falcón",
+          "position": "F",
+          "birth_date": "1973-11-20",
+          "club": "Cangrejeros de Santurce",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Larry Ayuso",
+          "position": "G",
+          "birth_date": "1977-03-27",
+          "club": "KK Cibona",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Ricardo Sanchez",
+          "position": "F",
+          "birth_date": "1987-07-06",
+          "club": "Grises de Humacao",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Angelo Reyes",
+          "position": "F",
+          "birth_date": "1981-09-18",
+          "club": "Gigantes de Carolina",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Héctor Valenzuela",
+          "position": "C",
+          "birth_date": "1982-01-14",
+          "club": "Mets de Guaynabo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Carmelo Lee",
+          "position": "F",
+          "birth_date": "1977-06-07",
+          "club": "Mets de Guaynabo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Ángel Figueroa",
+          "position": "F",
+          "birth_date": "1981-10-13",
+          "club": "Capitanes de Arecibo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "URU": {
+      "team": "URU",
+      "head_coach": {
+        "value": "Alberto Espasandín",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Fernando Martínez",
+          "position": "G",
+          "birth_date": "1979-12-09",
+          "club": "Malvín",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Emilio Taboada",
+          "position": "G",
+          "birth_date": "1982-05-11",
+          "club": "Malvín",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Mauricio Aguiar",
+          "position": "F",
+          "birth_date": "1983-02-03",
+          "club": "Basket Livorno",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Omar Galeano",
+          "position": "F",
+          "birth_date": "1981-08-03",
+          "club": "Biguá",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Nicolás Mazzarino",
+          "position": "G",
+          "birth_date": "1975-10-21",
+          "club": "Tisettanta Cantù",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Claudio Charquero",
+          "position": "C",
+          "birth_date": "1977-07-22",
+          "club": "CB Illescas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Leandro García Morales",
+          "position": "G",
+          "birth_date": "1980-06-27",
+          "club": "Biguá",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Martín Osimani",
+          "position": "F",
+          "birth_date": "1981-05-22",
+          "club": "Biguá",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Gastón Páez",
+          "position": "C",
+          "birth_date": "1979-09-22",
+          "club": "Defensor Sporting",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Luis Silveira",
+          "position": "G",
+          "birth_date": "1971-01-16",
+          "club": "Atenas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Sebastián Izaguirre",
+          "position": "F",
+          "birth_date": "1985-04-12",
+          "club": "Paysandú",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Esteban Batista",
+          "position": "C",
+          "birth_date": "1983-09-02",
+          "club": "Maccabi Tel Aviv",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "batises01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page batises01 gives name \"Esteban Batista\", birth 1983-09-02"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2005-06",
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Atlanta Hawks"
+            ],
+            "status": "derived",
+            "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "BRA": {
+      "team": "BRA",
+      "head_coach": {
+        "value": "Lula Ferreira",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Marcelo Machado",
+          "position": "F",
+          "birth_date": "1975-04-12",
+          "club": "BC Žalgiris",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Nezinho Dos Santos",
+          "position": "G",
+          "birth_date": "1981-01-21",
+          "club": "Universo/Brasilia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Murilo Becker",
+          "position": "F/C",
+          "birth_date": "1983-07-14",
+          "club": "Maccabi Tel Aviv",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Marcelinho Huertas",
+          "position": "G",
+          "birth_date": "1983-05-25",
+          "club": "Joventut Badalona",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Alex Garcia",
+          "position": "G",
+          "birth_date": "1980-03-04",
+          "club": "Universo/Brasilia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "garcial01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page garcial01 gives name \"Alex Garcia\", birth 1980-03-04"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Valter Apolinario Da Silva",
+          "position": "G",
+          "birth_date": "1977-01-31",
+          "club": "Unitri Uberlândia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Leandro Barbosa",
+          "position": "G",
+          "birth_date": "1982-11-28",
+          "club": "Phoenix Suns",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "barbole01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page barbole01 gives name \"Leandro Barbosa\", birth 1982-11-28"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Phoenix Suns"
+            ],
+            "status": "derived",
+            "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "João Paulo Batista",
+          "position": "F",
+          "birth_date": "1981-10-29",
+          "club": "Lietuvos Rytas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Guilherme Giovannoni",
+          "position": "F",
+          "birth_date": "1980-06-02",
+          "club": "VidiVici Bologna",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Nenê",
+          "position": "C",
+          "birth_date": "1982-09-13",
+          "club": "Denver Nuggets",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "hilarne01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page hilarne01 gives name \"Nenê\", birth 1982-09-13"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Denver Nuggets"
+            ],
+            "status": "derived",
+            "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Marcus Vinicius",
+          "position": "F",
+          "birth_date": "1984-05-31",
+          "club": "New Orleans Hornets",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "vincima01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page vincima01 gives name \"Marcus Vinicius\", birth 1984-05-31"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "New Orleans/Oklahoma City Hornets"
+            ],
+            "status": "derived",
+            "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Tiago Splitter",
+          "position": "F/C",
+          "birth_date": "1985-01-01",
+          "club": "TAU Cerámica",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "splitti01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page splitti01 gives name \"Tiago Splitter\", birth 1985-01-01"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "CAN": {
+      "team": "CAN",
+      "head_coach": {
+        "value": "Leo Rautins",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Jermaine Anderson",
+          "position": "G",
+          "birth_date": "1983-02-08",
+          "club": "Polpak Świecie",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Denham Brown",
+          "position": "G",
+          "birth_date": "1983-01-06",
+          "club": "Tisettanta Cantù",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Samuel Dalembert",
+          "position": "C",
+          "birth_date": {
+            "value": "1981-05-10",
+            "status": "sourced",
+            "source": "basketball-reference and Wikipedia player article"
+          },
+          "club": "Philadelphia 76ers",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "dalemsa01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page dalemsa01 gives name \"Samuel Dalembert\", birth 1981-05-10"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Philadelphia 76ers"
+            ],
+            "status": "derived",
+            "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Vladimir Kuljanin",
+          "position": "C",
+          "birth_date": "1985-04-02",
+          "club": "University of North Carolina-Wilmington",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Carl English",
+          "position": "G",
+          "birth_date": "1981-02-02",
+          "club": "Gran Canaria Grupo Dunas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Olu Famutimi",
+          "position": "F",
+          "birth_date": "1984-02-21",
+          "club": "Arkansas RimRockers",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Andy Rautins",
+          "position": "G",
+          "birth_date": "1986-11-02",
+          "club": "Syracuse University",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "rautian01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page rautian01 gives name \"Andy Rautins\", birth 1986-11-02"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          }
+        },
+        {
+          "number": "11",
+          "name": "David Thomas",
+          "position": "G",
+          "birth_date": "1976-12-04",
+          "club": "Melbourne Tigers",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Jesse Young",
+          "position": "C",
+          "birth_date": "1980-04-29",
+          "club": "Joventut Badalona",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Juan Mendez",
+          "position": "F",
+          "birth_date": "1981-09-23",
+          "club": "Ironi Nahariya",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Levon Kendall",
+          "position": "F",
+          "birth_date": "1984-07-04",
+          "club": "Panionios",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Ryan Bell",
+          "position": "F",
+          "birth_date": "1984-04-17",
+          "club": "Carleton University",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "VEN": {
+      "team": "VEN",
+      "head_coach": {
+        "value": "Nestor Salazar",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Miguel Marriaga",
+          "position": "F/C",
+          "birth_date": "1984-06-06",
+          "club": "Gaiteros del Zulia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Axiers Sucre",
+          "position": "F",
+          "birth_date": "1978-07-27",
+          "club": "Marinos de Anzoátegui",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Carlos Cedeno",
+          "position": "G",
+          "birth_date": "1985-10-23",
+          "club": "Guaiqueríes de Margarita",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Luis Bethelmy",
+          "position": "F/C",
+          "birth_date": "1986-10-14",
+          "club": "Cocodrilos de Caracas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Hernán Salcedo",
+          "position": "F",
+          "birth_date": "1980-04-22",
+          "club": "Guaros de Lara",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Jesus Urbina",
+          "position": "F",
+          "birth_date": "1984-07-09",
+          "club": "George Mason University",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Kevin Palacios",
+          "position": "F",
+          "birth_date": "1984-09-29",
+          "club": "Duros de Lara",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "José Vargas",
+          "position": "F/G",
+          "birth_date": "1982-01-23",
+          "club": "Trotamundos de Carabobo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Héctor Romero",
+          "position": "F",
+          "birth_date": "1980-01-03",
+          "club": "Scafati Basket",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Alejandro Barrios",
+          "position": "F",
+          "birth_date": "1979-04-24",
+          "club": "Trotamundos de Carabobo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Greivis Vasquez",
+          "position": "G",
+          "birth_date": "1987-01-16",
+          "club": "University of Maryland",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": {
+            "value": "vasqugr01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page vasqugr01 gives name \"Greivis Vásquez\", birth 1987-01-16"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Heberth Bayona",
+          "position": "C",
+          "birth_date": "1978-04-26",
+          "club": "Guaiqueríes de Margarita",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "ISV": {
+      "team": "ISV",
+      "head_coach": {
+        "value": "Tevester Anderson",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Stephen Hodge",
+          "position": "G",
+          "birth_date": "1977-07-09",
+          "club": "Bucaneros de Guaymas",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Kevin Sheppard",
+          "position": "G",
+          "birth_date": "1979-09-17",
+          "club": "Maratonistas de Coamo",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Carl Krauser",
+          "position": "G",
+          "birth_date": "1981-05-13",
+          "club": "EWE Baskets Oldenburg",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Cuthbert Victor",
+          "position": "G",
+          "birth_date": "1983-01-30",
+          "club": "CAI Zaragoza",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Ja Ja Richards",
+          "position": "F",
+          "birth_date": "1974-11-19",
+          "club": "Mersin Büyükşehir Belediyesi",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Jason Edwin",
+          "position": "F/G",
+          "birth_date": "1981-06-24",
+          "club": "Paderborn Baskets",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Omari Peterkin",
+          "position": "F/C",
+          "birth_date": "1983-12-29",
+          "club": "Boston University",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Kaylen Gregory",
+          "position": "F/G",
+          "birth_date": "1986-10-30",
+          "club": "Marist College",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Akeem Francis",
+          "position": "F",
+          "birth_date": "1983-10-31",
+          "club": "Guidance",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Jameel Heywood",
+          "position": "F",
+          "birth_date": "1977-03-19",
+          "club": "Gaiteros del Zulia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Kitwana Rhymer",
+          "position": "C",
+          "birth_date": "1978-05-22",
+          "club": "Guidance",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Frank Elegar",
+          "position": "C",
+          "birth_date": "1986-12-03",
+          "club": "Drexel University",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    }
+  },
+  "real_usa_roster_reference": {
+    "team": "USA",
+    "head_coach": {
+      "value": "Mike Krzyzewski",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads"
+    },
+    "players": [
+      {
+        "number": "4",
+        "name": "Chauncey Billups",
+        "position": "G",
+        "birth_date": "1976-09-25",
+        "club": "Detroit Pistons",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "billuch01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page billuch01 gives name \"Chauncey Billups\", birth 1976-09-25"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Detroit Pistons"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "5",
+        "name": "Jason Kidd",
+        "position": "G",
+        "birth_date": "1973-03-23",
+        "club": "New Jersey Nets",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "kiddja01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page kiddja01 gives name \"Jason Kidd\", birth 1973-03-23"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "New Jersey Nets"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "6",
+        "name": "LeBron James",
+        "position": "F",
+        "birth_date": "1984-12-30",
+        "club": "Cleveland Cavaliers",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "jamesle01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page jamesle01 gives name \"LeBron James\", birth 1984-12-30"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Cleveland Cavaliers"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "7",
+        "name": "Deron Williams",
+        "position": "G",
+        "birth_date": "1984-06-26",
+        "club": "Utah Jazz",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "willide01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page willide01 gives name \"Deron Williams\", birth 1984-06-26"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Utah Jazz"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "8",
+        "name": "Michael Redd",
+        "position": "G",
+        "birth_date": "1979-08-24",
+        "club": "Milwaukee Bucks",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "reddmi01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page reddmi01 gives name \"Michael Redd\", birth 1979-08-24"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Milwaukee Bucks"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "9",
+        "name": "Tayshaun Prince",
+        "position": "F",
+        "birth_date": "1980-02-28",
+        "club": "Detroit Pistons",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "princta01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page princta01 gives name \"Tayshaun Prince\", birth 1980-02-28"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Detroit Pistons"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "10",
+        "name": "Kobe Bryant",
+        "position": "G",
+        "birth_date": "1978-08-23",
+        "club": "Los Angeles Lakers",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "bryanko01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page bryanko01 gives name \"Kobe Bryant\", birth 1978-08-23"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Los Angeles Lakers"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "11",
+        "name": "Dwight Howard",
+        "position": "C",
+        "birth_date": {
+          "value": "1985-12-08",
+          "status": "sourced",
+          "source": "basketball-reference and Wikipedia player article"
+        },
+        "club": "Orlando Magic",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "howardw01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page howardw01 gives name \"Dwight Howard\", birth 1985-12-08"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2004-05",
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Orlando Magic"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "12",
+        "name": "Amar'e Stoudemire",
+        "position": "C",
+        "birth_date": "1982-11-16",
+        "club": "Phoenix Suns",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "stoudam01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page stoudam01 gives name \"Amar'e Stoudemire\", birth 1982-11-16"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Phoenix Suns"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "13",
+        "name": "Mike Miller",
+        "position": "G",
+        "birth_date": "1980-02-19",
+        "club": "Memphis Grizzlies",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "millemi01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page millemi01 gives name \"Mike Miller\", birth 1980-02-19"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Memphis Grizzlies"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "14",
+        "name": "Tyson Chandler",
+        "position": "C",
+        "birth_date": "1982-10-02",
+        "club": "New Orleans Hornets",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "chandty01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page chandty01 gives name \"Tyson Chandler\", birth 1982-10-02"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "New Orleans/Oklahoma City Hornets"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "15",
+        "name": "Carmelo Anthony",
+        "position": "F",
+        "birth_date": "1984-05-29",
+        "club": "Denver Nuggets",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+        "bbr_id": {
+          "value": "anthoca01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page anthoca01 gives name \"Carmelo Anthony\", birth 1984-05-29"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2006-07"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Denver Nuggets"
+          ],
+          "status": "derived",
+          "source": "library/2006/league/nba_2006_07_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      }
+    ],
+    "player_count": 12,
+    "note": "Real-world reference only; the simulated USA roster is chosen by the FIBA pipeline."
+  },
+  "research": {
+    "sources": [
+      "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship",
+      "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
+      "http://www.nba.com/news/fibaamericas_preview.html (Brad Friedman, NBA.com, 21 March 2007, cited by Wikipedia for the draw; not fetched)",
+      "https://www.basketball-reference.com/players/ (birth dates of NBA-matched players)"
+    ],
+    "conflicts": [
+      {
+        "item": "2007 FIBA Americas: Peter John Ramos birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads": "1985-05-23",
+          "https://www.basketball-reference.com/players/r/ramospe01.html": "1985-05-13",
+          "https://en.wikipedia.org/wiki/Peter_John_Ramos (player article)": "1985-05-23"
+        },
+        "resolution": "unresolved: squad page and player article agree with each other but not with basketball-reference; squad value kept and marked unverified"
+      },
+      {
+        "item": "2007 FIBA Americas: Samuel Dalembert birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads": "1980-05-10",
+          "https://www.basketball-reference.com/players/d/dalemsa01.html": "1981-05-10",
+          "https://en.wikipedia.org/wiki/Samuel_Dalembert (player article)": "1981-05-10"
+        },
+        "resolution": "recorded 1981-05-10 (player article agrees with basketball-reference)"
+      },
+      {
+        "item": "2007 FIBA Americas: Dwight Howard birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads": "1985-08-12",
+          "https://www.basketball-reference.com/players/h/howardw01.html": "1985-12-08",
+          "https://en.wikipedia.org/wiki/Dwight_Howard (player article)": "1985-12-08"
+        },
+        "resolution": "recorded 1985-12-08 (player article agrees with basketball-reference)"
+      }
+    ],
+    "unresolved": [
+      "The South American qualifying event is not named on the page.",
+      "Tip-off time of USA v Canada on 25 August 2007: the source gives \"12:00 a.m.\"."
+    ],
+    "notes": [
+      "Second-round games are listed by Wikipedia under the heading \"Standings\"."
+    ]
+  },
+  "counts": {
+    "teams": 10,
+    "games": 40,
+    "group_games_with_teams": 20,
+    "slot_games": 20
+  }
+}
