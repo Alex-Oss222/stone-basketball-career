@@ -2,9 +2,9 @@
 
 # Contract | Rasual Butler
 
-Known through: 2004-10-22. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
+Known through: 2004-10-23. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
 
-Rasual Butler: team option exercised. Evidence cutoff: 2004-10-22.
+Rasual Butler: team option exercised. Evidence cutoff: 2004-10-23.
 
 ## Current contract
 

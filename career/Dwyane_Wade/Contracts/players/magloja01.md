@@ -2,9 +2,9 @@
 
 # Contract | Jamaal Magloire
 
-Known through: 2004-10-22. [Open interactive contract](magloja01.html#contract) · [Contract history](magloja01.html#contract-history)
+Known through: 2004-10-23. [Open interactive contract](magloja01.html#contract) · [Contract history](magloja01.html#contract-history)
 
-Jamaal Magloire: under rookie contract. Evidence cutoff: 2004-10-22.
+Jamaal Magloire: under rookie contract. Evidence cutoff: 2004-10-23.
 
 ## Current contract
 

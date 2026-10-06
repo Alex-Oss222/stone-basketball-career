@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-10-22",
+  "as_of": "2004-10-23",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-10-18-atlanta-hawks-at-miami-heat",
+  "current_event": "2004-10-22-miami-heat-at-atlanta-hawks",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-10-22"
+              "2004-10-23"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-10-18-atlanta-hawks-at-miami-heat"
+              "2004-10-22-miami-heat-at-atlanta-hawks"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2004-10-22",
+              "2004-10-23",
               "Current checkpoint",
-              "2004-10-18-atlanta-hawks-at-miami-heat",
+              "2004-10-22-miami-heat-at-atlanta-hawks",
               "Recorded",
               {
                 "label": "Owning event",
@@ -366,6 +366,10 @@
           "href": "../2004-05/05_Preseason/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -374,7 +378,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-22"
+          "value": "2004-10-23"
         },
         {
           "label": "Team",
@@ -596,6 +600,10 @@
           "href": "../2004-05/05_Preseason/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -604,7 +612,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-22"
+          "value": "2004-10-23"
         },
         {
           "label": "Team",
@@ -799,6 +807,10 @@
           "href": "../2004-05/05_Preseason/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -807,7 +819,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-22"
+          "value": "2004-10-23"
         },
         {
           "label": "Team",
@@ -1005,6 +1017,10 @@
           "href": "../2004-05/05_Preseason/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1013,7 +1029,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-22"
+          "value": "2004-10-23"
         },
         {
           "label": "Team",
@@ -1210,6 +1226,10 @@
           "href": "../2004-05/05_Preseason/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1218,7 +1238,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-22"
+          "value": "2004-10-23"
         },
         {
           "label": "Team",
@@ -1406,6 +1426,10 @@
           "href": "../2004-05/05_Preseason/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1414,7 +1438,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-22"
+          "value": "2004-10-23"
         },
         {
           "label": "Team",
@@ -1611,6 +1635,10 @@
           "href": "../2004-05/05_Preseason/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1619,7 +1647,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-22"
+          "value": "2004-10-23"
         },
         {
           "label": "Team",
@@ -1663,7 +1691,7 @@
             ],
             [
               "Closed preseason games",
-              4
+              5
             ],
             [
               "Camp availability",
@@ -1723,7 +1751,7 @@
             [
               "Actual use",
               "Closed preseason boxes",
-              "4 closed games"
+              "5 closed games"
             ],
             [
               "Promised minutes",
@@ -1907,6 +1935,10 @@
           "href": "../2004-05/05_Preseason/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1915,7 +1947,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-22"
+          "value": "2004-10-23"
         },
         {
           "label": "Team",
@@ -1932,7 +1964,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "4 closed game records in 2004-05 through 2004-10-22. Competitions remain separate.",
+      "summary": "5 closed game records in 2004-05 through 2004-10-23. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -1949,12 +1981,12 @@
           "rows": [
             [
               "preseason",
-              4,
-              29.836541667,
-              14.0,
-              4.25,
-              2.75,
-              0.75,
+              5,
+              29.93087,
+              12.4,
+              4.0,
+              3.8,
+              0.8,
               "Complete"
             ],
             [
@@ -1983,12 +2015,12 @@
           "rows": [
             [
               "preseason",
-              15,
-              38,
-              0.394736842,
+              17,
+              46,
+              0.369565217,
               2,
-              7,
-              0.285714286
+              8,
+              0.25
             ],
             [
               "regular",
@@ -2050,6 +2082,16 @@
               {
                 "label": "Closed game",
                 "href": "../2004-05/05_Preseason/Game_4.md"
+              }
+            ],
+            [
+              "2004-10-22",
+              "preseason",
+              "Atlanta Hawks",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/05_Preseason/Game_5.md"
               }
             ]
           ]
@@ -2168,6 +2210,10 @@
           "href": "../2004-05/05_Preseason/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/05_Preseason/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2176,7 +2222,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-22"
+          "value": "2004-10-23"
         },
         {
           "label": "Team",

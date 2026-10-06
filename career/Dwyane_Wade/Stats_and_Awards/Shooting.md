@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-10-22**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-10-23**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -3196,7 +3196,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
 
-## 2004-05 · NBA regular season · through 2004-10-22
+## 2004-05 · NBA regular season · through 2004-10-23
 
 [Open this period](player_cards.html?period=regular-2004-05-season#shooting)
 
@@ -3216,23 +3216,23 @@ No closed games in this competition at the current career checkpoint. No appeara
 
 No closed source games in this period. Zero appearances do not establish a 0.0% shooting percentage.
 
-## 2004-05 · NBA preseason · through 2004-10-22
+## 2004-05 · NBA preseason · through 2004-10-23
 
 [Open this period](player_cards.html?period=preseason-2004-05-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 4 | 0 | 4 | 15 / 38 | 39.5% | 2 / 7 | 56 | complete |
+| 5 | 0 | 5 | 17 / 46 | 37.0% | 2 / 8 | 62 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 9 | 20 | 45.0% | 4.50 | 5.00 | 20 |
-| Outside paint, under 12 ft | 0 | 1 | 0.0% | 0.00 | 0.25 | 1 |
-| Outside paint, 12 to under 18 ft | 1 | 4 | 25.0% | 0.50 | 1.00 | 4 |
-| 18 ft to the three-point line | 3 | 6 | 50.0% | 1.50 | 1.50 | 6 |
-| Three-point range | 2 | 7 | 28.6% | 1.50 | 1.75 | 7 |
+| Paint | 9 | 22 | 40.9% | 3.60 | 4.40 | 22 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 0.40 | 0.40 | 2 |
+| Outside paint, 12 to under 18 ft | 2 | 5 | 40.0% | 0.80 | 1.00 | 5 |
+| 18 ft to the three-point line | 3 | 9 | 33.3% | 1.20 | 1.80 | 9 |
+| Three-point range | 2 | 8 | 25.0% | 1.20 | 1.60 | 8 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -3240,6 +3240,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-10-15 | Orlando Magic | Played | [Game](../2004-05/05_Preseason/Game_2.md) | [Result](../2004-05/05_Preseason/Game_2.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_2.result.json) |
 | 2004-10-16 | Detroit Pistons | Played | [Game](../2004-05/05_Preseason/Game_3.md) | [Result](../2004-05/05_Preseason/Game_3.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_3.result.json) |
 | 2004-10-18 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_4.md) | [Result](../2004-05/05_Preseason/Game_4.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_4.result.json) |
+| 2004-10-22 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_5.md) | [Result](../2004-05/05_Preseason/Game_5.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_5.result.json) |
 
 ## 2004-10 · NBA preseason
 
@@ -3247,17 +3248,17 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 4 | 0 | 4 | 15 / 38 | 39.5% | 2 / 7 | 56 | complete |
+| 5 | 0 | 5 | 17 / 46 | 37.0% | 2 / 8 | 62 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 9 | 20 | 45.0% | 4.50 | 5.00 | 20 |
-| Outside paint, under 12 ft | 0 | 1 | 0.0% | 0.00 | 0.25 | 1 |
-| Outside paint, 12 to under 18 ft | 1 | 4 | 25.0% | 0.50 | 1.00 | 4 |
-| 18 ft to the three-point line | 3 | 6 | 50.0% | 1.50 | 1.50 | 6 |
-| Three-point range | 2 | 7 | 28.6% | 1.50 | 1.75 | 7 |
+| Paint | 9 | 22 | 40.9% | 3.60 | 4.40 | 22 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 0.40 | 0.40 | 2 |
+| Outside paint, 12 to under 18 ft | 2 | 5 | 40.0% | 0.80 | 1.00 | 5 |
+| 18 ft to the three-point line | 3 | 9 | 33.3% | 1.20 | 1.80 | 9 |
+| Three-point range | 2 | 8 | 25.0% | 1.20 | 1.60 | 8 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -3265,6 +3266,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-10-15 | Orlando Magic | Played | [Game](../2004-05/05_Preseason/Game_2.md) | [Result](../2004-05/05_Preseason/Game_2.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_2.result.json) |
 | 2004-10-16 | Detroit Pistons | Played | [Game](../2004-05/05_Preseason/Game_3.md) | [Result](../2004-05/05_Preseason/Game_3.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_3.result.json) |
 | 2004-10-18 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_4.md) | [Result](../2004-05/05_Preseason/Game_4.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_4.result.json) |
+| 2004-10-22 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_5.md) | [Result](../2004-05/05_Preseason/Game_5.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_5.result.json) |
 
 ## 2004-10-08 to 2004-10-14 · NBA preseason
 
@@ -3311,6 +3313,28 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-10-15 | Orlando Magic | Played | [Game](../2004-05/05_Preseason/Game_2.md) | [Result](../2004-05/05_Preseason/Game_2.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_2.result.json) |
 | 2004-10-16 | Detroit Pistons | Played | [Game](../2004-05/05_Preseason/Game_3.md) | [Result](../2004-05/05_Preseason/Game_3.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_3.result.json) |
 | 2004-10-18 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_4.md) | [Result](../2004-05/05_Preseason/Game_4.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_4.result.json) |
+
+## 2004-10-22 to 2004-10-23 · NBA preseason
+
+[Open this period](player_cards.html?period=preseason-2004-05-week-2004-10-22#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 2 / 8 | 25.0% | 0 / 1 | 6 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 0 | 3 | 0.0% | 0.00 | 3.00 | 3 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-10-22 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_5.md) | [Result](../2004-05/05_Preseason/Game_5.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_5.result.json) |
 
 ## 2004-10-10 at Houston Rockets · Played · NBA preseason
 
@@ -3399,3 +3423,25 @@ Simulated engine shot locations come from the original closed game results. Part
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-18 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_4.md) | [Result](../2004-05/05_Preseason/Game_4.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_4.result.json) |
+
+## 2004-10-22 at Atlanta Hawks · Played · NBA preseason
+
+[Open this period](player_cards.html?period=preseason-2004-05-game-89e0af5e349ddc27#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 2 / 8 | 25.0% | 0 / 1 | 6 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 0 | 3 | 0.0% | 0.00 | 3.00 | 3 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-10-22 | Atlanta Hawks | Played | [Game](../2004-05/05_Preseason/Game_5.md) | [Result](../2004-05/05_Preseason/Game_5.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_5.result.json) |
