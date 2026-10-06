@@ -4,7 +4,7 @@
 **Age at assessment:** 30 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** October 5, 2004 · **Statistics through:** 2004-10-31 
 
-**Contract/control:** Camp contract from October 5, 2004: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2005-01-10. (register, 2004-10-05) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** November 1, 2004: released at the cut to 15 (non-guaranteed camp contract; no dead money). (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/fishede01.html#contract) · [Contract history](../../../../Contracts/players/fishede01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

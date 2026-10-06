@@ -2,9 +2,9 @@
 
 # Contract | T.J. Ford
 
-Known through: 2004-10-31. [Open interactive contract](fordtj01.html#contract) · [Contract history](fordtj01.html#contract-history)
+Known through: 2004-11-01. [Open interactive contract](fordtj01.html#contract) · [Contract history](fordtj01.html#contract-history)
 
-T.J. Ford: No verified contract record. Evidence cutoff: 2004-10-31.
+T.J. Ford: No verified contract record. Evidence cutoff: 2004-11-01.
 
 ## Current contract
 

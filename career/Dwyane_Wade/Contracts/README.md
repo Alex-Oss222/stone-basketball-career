@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-10-31. [Search the contract directory](index.html)
+Known through 2004-11-01. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -48,7 +48,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Bernard Robinson](players/robinbe01.md) | Miami Heat | unsigned draft rights | No verified current agreement | 0 |
 | [Bimbo Coles](players/colesbi01.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
 | [Bo Outlaw](players/outlabo01.md) | Charlotte Bobcats | under contract unverified | No verified current agreement | 0 |
-| [Bob Sura](players/surabo01.md) | Miami Heat | camp contract | Bob Sura · 2004-10-05 | 1 |
+| [Bob Sura](players/surabo01.md) | Free agent | released | No verified current agreement | 1 |
 | [Bobby Jackson](players/jacksbo01.md) | Sacramento Kings | under contract | Bobby Jackson · existing contract; signing date not recorded | 1 |
 | [Bobby Simmons](players/simmobo01.md) | Los Angeles Clippers | under contract | Bobby Simmons · 2003-09-27 | 2 |
 | [Bonzi Wells](players/wellsbo01.md) | Memphis Grizzlies | under contract | Bonzi Wells · 2002-09-30 | 1 |
@@ -71,7 +71,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Bruno Šundov](players/sundobr01.md) | Phoenix Suns | minimum contract unverified | No verified current agreement | 0 |
 | [Bryce Drew](players/drewbr01.md) | Free agent | under contract | Bryce Drew · existing contract; signing date not recorded | 1 |
 | [Bryon Russell](players/russebr01.md) | Free agent | under contract | Bryon Russell · 2003-10-01 | 2 |
-| [Calbert Cheaney](players/cheanca01.md) | Miami Heat | camp contract | Calbert Cheaney · 2004-10-05 | 3 |
+| [Calbert Cheaney](players/cheanca01.md) | Free agent | released | No verified current agreement | 3 |
 | [Calvin Booth](players/boothca01.md) | Golden State Warriors | under contract | Calvin Booth · existing contract; signing date not recorded | 1 |
 | [Carlos Arroyo](players/arroyca01.md) | Utah Jazz | under contract | Carlos Arroyo · 2004-08-19 | 3 |
 | [Carlos Boozer](players/boozeca01.md) | Cleveland Cavaliers | under contract | Carlos Boozer · 2002-08-07 | 1 |
@@ -89,7 +89,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Chris Crawford](players/crawfch01.md) | Atlanta Hawks | under contract | Chris Crawford · 1999-08-24 | 1 |
 | [Chris Jefferies](players/jeffech01.md) | Chicago Bulls | under rookie contract | Chris Jefferies · 2002-09-30 | 1 |
 | [Chris Kaman](players/kamanch01.md) | Los Angeles Clippers | No verified contract record | No verified current agreement | 0 |
-| [Chris Mihm](players/mihmch01.md) | Miami Heat | camp contract | Chris Mihm · 2004-10-05 | 2 |
+| [Chris Mihm](players/mihmch01.md) | Free agent | released | No verified current agreement | 2 |
 | [Chris Mills](players/millsch01.md) | Free agent | under contract | Chris Mills · existing contract; signing date not recorded | 1 |
 | [Chris Owens](players/owensch01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |
 | [Chris Webber](players/webbech01.md) | Sacramento Kings | under contract | Chris Webber · existing contract; signing date not recorded | 1 |
@@ -131,7 +131,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [David Wesley](players/wesleda01.md) | Portland Trail Blazers | under contract | David Wesley · existing contract; signing date not recorded | 1 |
 | [David West](players/westda01.md) | New Orleans Hornets | No verified contract record | No verified current agreement | 0 |
 | [Derek Anderson](players/anderde01.md) | Portland Trail Blazers | under contract | Derek Anderson · existing contract; signing date not recorded | 1 |
-| [Derek Fisher](players/fishede01.md) | Miami Heat | camp contract | Derek Fisher · 2004-10-05 | 2 |
+| [Derek Fisher](players/fishede01.md) | Free agent | released | No verified current agreement | 2 |
 | [DerMarr Johnson](players/johnsde03.md) | Free agent | under contract | DerMarr Johnson · 2003-10-01 | 2 |
 | [Derrick Coleman](players/colemde01.md) | Philadelphia 76ers | under contract | Derrick Coleman · 2003-07-16 | 2 |
 | [Derrick Dial](players/dialde01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
@@ -452,7 +452,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Sofoklis Schortsanitis](players/schorso01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Speedy Claxton](players/claxtsp01.md) | Golden State Warriors | under contract | Speedy Claxton · 2003-07-23 | 2 |
 | [Stacey Augmon](players/augmost01.md) | Free agent | under contract | Stacey Augmon · existing contract; signing date not recorded | 1 |
-| [Stephen Jackson](players/jacksst02.md) | Miami Heat | camp contract | Stephen Jackson · 2004-10-05 | 4 |
+| [Stephen Jackson](players/jacksst02.md) | Free agent | released | No verified current agreement | 4 |
 | [Stephon Marbury](players/marbust01.md) | Phoenix Suns | under contract | Stephon Marbury · existing contract; signing date not recorded | 1 |
 | [Steve Blake](players/blakest01.md) | Charlotte Bobcats | No verified contract record | No verified current agreement | 0 |
 | [Steve Francis](players/francst01.md) | Houston Rockets | under contract | Steve Francis · 2002-08-26 | 1 |

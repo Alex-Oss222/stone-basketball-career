@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2004-10-28",
+ "as_of": "2004-11-01",
  "team": "Miami Heat",
  "status": "camp_decision",
  "game_ready": true,
@@ -10,16 +10,12 @@
   "PG": [
    "Mike James",
    "Rafer Alston",
-   "Derek Fisher",
    "Maurice Baker"
   ],
   "SG": [
    "Dwyane Wade",
    "Eddie Jones",
    "Kendall Gill",
-   "Bob Sura",
-   "Calbert Cheaney",
-   "Stephen Jackson",
    "Maurice Evans"
   ],
   "SF": [
@@ -33,7 +29,6 @@
   ],
   "C": [
    "Brian Grant",
-   "Chris Mihm",
    "John Thomas",
    "John Edwards"
   ]
@@ -44,5 +39,31 @@
  "unassigned_draft_rights": [],
  "unassigned_arrivals": [],
  "unavailable": [],
- "departed": []
+ "departed": [
+  {
+   "name": "Stephen Jackson",
+   "date": "2004-11-01",
+   "status": "released"
+  },
+  {
+   "name": "Calbert Cheaney",
+   "date": "2004-11-01",
+   "status": "released"
+  },
+  {
+   "name": "Bob Sura",
+   "date": "2004-11-01",
+   "status": "released"
+  },
+  {
+   "name": "Derek Fisher",
+   "date": "2004-11-01",
+   "status": "released"
+  },
+  {
+   "name": "Chris Mihm",
+   "date": "2004-11-01",
+   "status": "released"
+  }
+ ]
 }

@@ -3,7 +3,7 @@
  "owner": "ai_gm",
  "season": "2004-05",
  "opened": "2004-10-05",
- "status": "open",
+ "status": "closed",
  "purpose": "Miami's training-camp roster: the register plus invitees on non-guaranteed minimum contracts, camp injuries, and the cut.",
  "players": [
   {
@@ -155,7 +155,7 @@
    "positions": [
     "SG"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 688679,
@@ -172,7 +172,7 @@
    "positions": [
     "SG"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 938679,
@@ -189,7 +189,7 @@
    "positions": [
     "SG"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 1000000,
@@ -223,7 +223,7 @@
    "positions": [
     "C"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 688679,
@@ -240,7 +240,7 @@
    "positions": [
     "PG"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 813679,
@@ -252,7 +252,33 @@
    "injured_through": null
   }
  ],
- "cuts": [],
+ "cuts": [
+  {
+   "player": "Stephen Jackson",
+   "date": "2004-11-01",
+   "score": 6.253
+  },
+  {
+   "player": "Calbert Cheaney",
+   "date": "2004-11-01",
+   "score": 6.655
+  },
+  {
+   "player": "Bob Sura",
+   "date": "2004-11-01",
+   "score": 6.739
+  },
+  {
+   "player": "Derek Fisher",
+   "date": "2004-11-01",
+   "score": 7.445
+  },
+  {
+   "player": "Chris Mihm",
+   "date": "2004-11-01",
+   "score": 7.643
+  }
+ ],
  "injuries_applied": "2004-10-05",
  "staff_scores": {
   "Eddie Jones": 7.515,
@@ -276,5 +302,6 @@
   "Chris Mihm": 7.643,
   "Derek Fisher": 7.445
  },
- "evaluated": "2004-10-28"
+ "evaluated": "2004-10-28",
+ "cut_done": "2004-11-01"
 }

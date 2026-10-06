@@ -4,7 +4,7 @@
 
 NBA regular season · February 15-21, 2005
 
-As of October 31, 2004: not started. The 22-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 22-player active roster.
+As of November 1, 2004: not started. The 17-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 17-player active roster.
 
 ## Team record
 
@@ -34,12 +34,7 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | John Edwards | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Bernard Robinson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Christian Drejer | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Stephen Jackson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Bob Sura | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Calbert Cheaney | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Rafer Alston | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Chris Mihm | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Derek Fisher | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -64,12 +59,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | John Edwards | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Bernard Robinson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Christian Drejer | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Stephen Jackson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Bob Sura | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Calbert Cheaney | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Rafer Alston | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Chris Mihm | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Derek Fisher | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 
 </details>
 

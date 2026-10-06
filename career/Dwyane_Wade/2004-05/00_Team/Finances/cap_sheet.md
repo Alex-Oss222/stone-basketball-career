@@ -1,6 +1,6 @@
 # Miami Heat | Cap sheet
 
-October 28, 2004 · 2004-05 through 2011-12 · USD
+November 1, 2004 · 2004-05 through 2011-12 · USD
 
 [Finance guide](README.md) · [Roster and control](../Team/Roster/roster.json) · [Contract detail](contract_schedules.json)
 
@@ -8,9 +8,9 @@ October 28, 2004 · 2004-05 through 2011-12 · USD
 
 | Cap (published) | Committed salary | Free-agent holds | Roster charge | Room |
 | ---: | ---: | ---: | ---: | ---: |
-| 43,870,000 | 56,949,700 | 0 | 0 | -13,079,700 |
+| 43,870,000 | 52,819,984 | 0 | 0 | -8,949,984 |
 
-Committed salary counts contracts, exercised options and the unsigned first-round hold on October 28, 2004. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
+Committed salary counts contracts, exercised options and the unsigned first-round hold on November 1, 2004. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
 
 ## Eight-season commitments
 
@@ -24,21 +24,16 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | [Dwyane Wade](../Team/Player_Cards/dwyane_wade.md) | 2,361,800 | 2,526,600 | 3,201,202<sup>TO</sup> | — | — | — | — | — |
 | [Caron Butler](../Team/Player_Cards/caron_butler.md) | 1,930,680 | 2,461,617<sup>TO</sup> | — | — | — | — | — | — |
 | [Kendall Gill](../Team/Player_Cards/kendall_gill.md) | 1,100,000 | — | — | — | — | — | — | — |
-| [Calbert Cheaney](../Team/Player_Cards/calbert_cheaney.md) | 1,000,000 | — | — | — | — | — | — | — |
 | [Dorell Wright](../Team/Player_Cards/dorell_wright.md) | 978,720 | 1,052,040 | 1,125,480 | — | — | — | — | — |
-| [Bob Sura](../Team/Player_Cards/bob_sura.md) | 938,679 | — | — | — | — | — | — | — |
 | [John Thomas](../Team/Player_Cards/john_thomas.md) | 932,546 | — | — | — | — | — | — | — |
-| [Derek Fisher](../Team/Player_Cards/derek_fisher.md) | 813,679 | — | — | — | — | — | — | — |
 | [Rafer Alston](../Team/Player_Cards/rafer_alston.md) | 751,179 | — | — | — | — | — | — | — |
 | [Maurice Evans](../Team/Player_Cards/maurice_evans.md) | 720,046 | — | — | — | — | — | — | — |
-| [Stephen Jackson](../Team/Player_Cards/stephen_jackson.md) | 688,679 | — | — | — | — | — | — | — |
-| [Chris Mihm](../Team/Player_Cards/chris_mihm.md) | 688,679 | — | — | — | — | — | — | — |
 | [Udonis Haslem](../Team/Player_Cards/udonis_haslem.md) | 620,046 | — | — | — | — | — | — | — |
 | [Maurice Baker](../Team/Player_Cards/maurice_baker.md) | 385,277 | — | — | — | — | — | — | — |
 | [John Edwards](../Team/Player_Cards/john_edwards.md) | 385,277 | — | — | — | — | — | — | — |
 | [Bernard Robinson](../Team/Player_Cards/bernard_robinson.md) | — | — | — | — | — | — | — | — |
 | [Christian Drejer](../Team/Player_Cards/christian_drejer.md) | — | — | — | — | — | — | — | — |
-| Counted | 56,949,700 | 52,796,104 | 50,989,939 | 17,022,873 | 3,958,667 | 0 | 0 | 0 |
+| Counted | 52,819,984 | 52,796,104 | 50,989,939 | 17,022,873 | 3,958,667 | 0 | 0 | 0 |
 
 ## Free-agent holds
 

@@ -2,9 +2,9 @@
 
 # Contract | Brian Shaw
 
-Known through: 2004-10-31. [Open interactive contract](shawbr01.html#contract) · [Contract history](shawbr01.html#contract-history)
+Known through: 2004-11-01. [Open interactive contract](shawbr01.html#contract) · [Contract history](shawbr01.html#contract-history)
 
-Brian Shaw: unsigned free agent. Evidence cutoff: 2004-10-31.
+Brian Shaw: unsigned free agent. Evidence cutoff: 2004-11-01.
 
 ## Current contract
 

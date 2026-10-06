@@ -121,21 +121,21 @@
    "player": "Stephen Jackson",
    "bbr_id": "jacksst02",
    "from": "2004-10-05",
-   "until": null,
+   "until": "2004-11-01",
    "basis": "camp contract 2004-10-05 (camp_roster.json)"
   },
   {
    "player": "Bob Sura",
    "bbr_id": "surabo01",
    "from": "2004-10-05",
-   "until": null,
+   "until": "2004-11-01",
    "basis": "camp contract 2004-10-05 (camp_roster.json)"
   },
   {
    "player": "Calbert Cheaney",
    "bbr_id": "cheanca01",
    "from": "2004-10-05",
-   "until": null,
+   "until": "2004-11-01",
    "basis": "camp contract 2004-10-05 (camp_roster.json)"
   },
   {
@@ -149,14 +149,14 @@
    "player": "Chris Mihm",
    "bbr_id": "mihmch01",
    "from": "2004-10-05",
-   "until": null,
+   "until": "2004-11-01",
    "basis": "camp contract 2004-10-05 (camp_roster.json)"
   },
   {
    "player": "Derek Fisher",
    "bbr_id": "fishede01",
    "from": "2004-10-05",
-   "until": null,
+   "until": "2004-11-01",
    "basis": "camp contract 2004-10-05 (camp_roster.json)"
   }
  ],

@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "owner": "ai_gm",
- "as_of": "2004-10-28",
+ "as_of": "2004-11-01",
  "team": "Miami Heat",
  "horizon": [
   "2004-05",
@@ -15,7 +15,7 @@
  ],
  "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
  "known_baseline": {
-  "2004-05": 56949700,
+  "2004-05": 52819984,
   "2005-06": 50334487,
   "2006-07": 32349731,
   "2007-08": 17022873,
@@ -577,7 +577,7 @@
   {
    "player": "Stephen Jackson",
    "bbr_id": "jacksst02",
-   "status": "camp_contract",
+   "status": "released",
    "schedule": {
     "2004-05": 688679
    },
@@ -598,7 +598,7 @@
   {
    "player": "Bob Sura",
    "bbr_id": "surabo01",
-   "status": "camp_contract",
+   "status": "released",
    "schedule": {
     "2004-05": 938679
    },
@@ -619,7 +619,7 @@
   {
    "player": "Calbert Cheaney",
    "bbr_id": "cheanca01",
-   "status": "camp_contract",
+   "status": "released",
    "schedule": {
     "2004-05": 1000000
    },
@@ -661,7 +661,7 @@
   {
    "player": "Chris Mihm",
    "bbr_id": "mihmch01",
-   "status": "camp_contract",
+   "status": "released",
    "schedule": {
     "2004-05": 688679
    },
@@ -682,7 +682,7 @@
   {
    "player": "Derek Fisher",
    "bbr_id": "fishede01",
-   "status": "camp_contract",
+   "status": "released",
    "schedule": {
     "2004-05": 813679
    },
@@ -727,7 +727,7 @@
   "kind": "existing_obligations_only",
   "currency": "USD",
   "unit": "whole dollars",
-  "known_baseline_definition": "Counted 2004-05 team salary on 2004-10-28: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+  "known_baseline_definition": "Counted 2004-05 team salary on 2004-11-01: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
   "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
   "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
   "missing_definition": "Null means unresolved or not yet projected, never zero.",
@@ -755,7 +755,7 @@
   },
   {
    "season": "2004-05",
-   "scheduled_contract_salary": 56949700,
+   "scheduled_contract_salary": 52819984,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -763,8 +763,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 56949700,
-   "base_plus_priced_options": 56949700,
+   "known_base_allocations": 52819984,
+   "base_plus_priced_options": 52819984,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": 0,

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-10-31",
+  "as_of": "2004-11-01",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -365,9 +365,9 @@
     {
       "player_id": "surabo01",
       "name": "Bob Sura",
-      "team": "Miami Heat",
-      "status": "camp contract",
-      "current_contract_id": "surabo01-2004-10-05",
+      "team": "Free agent",
+      "status": "released",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/surabo01.html#contract"
     },
@@ -572,9 +572,9 @@
     {
       "player_id": "cheanca01",
       "name": "Calbert Cheaney",
-      "team": "Miami Heat",
-      "status": "camp contract",
-      "current_contract_id": "cheanca01-2004-10-05",
+      "team": "Free agent",
+      "status": "released",
+      "current_contract_id": null,
       "recorded_agreements": 3,
       "href": "players/cheanca01.html#contract"
     },
@@ -734,9 +734,9 @@
     {
       "player_id": "mihmch01",
       "name": "Chris Mihm",
-      "team": "Miami Heat",
-      "status": "camp contract",
-      "current_contract_id": "mihmch01-2004-10-05",
+      "team": "Free agent",
+      "status": "released",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/mihmch01.html#contract"
     },
@@ -1139,9 +1139,9 @@
     {
       "player_id": "fishede01",
       "name": "Derek Fisher",
-      "team": "Miami Heat",
-      "status": "camp contract",
-      "current_contract_id": "fishede01-2004-10-05",
+      "team": "Free agent",
+      "status": "released",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/fishede01.html#contract"
     },
@@ -4001,9 +4001,9 @@
     {
       "player_id": "jacksst02",
       "name": "Stephen Jackson",
-      "team": "Miami Heat",
-      "status": "camp contract",
-      "current_contract_id": "jacksst02-2004-10-05",
+      "team": "Free agent",
+      "status": "released",
+      "current_contract_id": null,
       "recorded_agreements": 4,
       "href": "players/jacksst02.html#contract"
     },

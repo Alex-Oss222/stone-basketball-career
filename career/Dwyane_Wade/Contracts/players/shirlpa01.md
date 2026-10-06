@@ -2,9 +2,9 @@
 
 # Contract | Paul Shirley
 
-Known through: 2004-10-31. [Open interactive contract](shirlpa01.html#contract) · [Contract history](shirlpa01.html#contract-history)
+Known through: 2004-11-01. [Open interactive contract](shirlpa01.html#contract) · [Contract history](shirlpa01.html#contract-history)
 
-Paul Shirley: No verified contract record. Evidence cutoff: 2004-10-31.
+Paul Shirley: No verified contract record. Evidence cutoff: 2004-11-01.
 
 ## Current contract
 

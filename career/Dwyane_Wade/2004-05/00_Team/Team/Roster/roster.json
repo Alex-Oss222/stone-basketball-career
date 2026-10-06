@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2004-10-05",
+ "as_of": "2004-11-01",
  "season": "2004-05",
  "team": "Miami Heat",
  "roster_kind": "team_control_register",
@@ -232,8 +232,8 @@
     "SG"
    ],
    "date_of_birth": "1978-04-05",
-   "status": "camp_contract",
-   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2005-01-10.",
+   "status": "released",
+   "control": "November 1, 2004: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
    "working_role": "Camp invitee",
    "player_card": "../Player_Cards/stephen_jackson.md",
    "bbr_id": "jacksst02"
@@ -245,8 +245,8 @@
     "SG"
    ],
    "date_of_birth": "1973-03-25",
-   "status": "camp_contract",
-   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2005-01-10.",
+   "status": "released",
+   "control": "November 1, 2004: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
    "working_role": "Camp invitee",
    "player_card": "../Player_Cards/bob_sura.md",
    "bbr_id": "surabo01"
@@ -258,8 +258,8 @@
     "SG"
    ],
    "date_of_birth": "1971-07-17",
-   "status": "camp_contract",
-   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $1,000,000, guaranteed if still on the roster on 2005-01-10.",
+   "status": "released",
+   "control": "November 1, 2004: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
    "working_role": "Camp invitee",
    "player_card": "../Player_Cards/calbert_cheaney.md",
    "bbr_id": "cheanca01"
@@ -284,8 +284,8 @@
     "C"
    ],
    "date_of_birth": "1979-07-16",
-   "status": "camp_contract",
-   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2005-01-10.",
+   "status": "released",
+   "control": "November 1, 2004: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
    "working_role": "Camp invitee",
    "player_card": "../Player_Cards/chris_mihm.md",
    "bbr_id": "mihmch01"
@@ -297,8 +297,8 @@
     "PG"
    ],
    "date_of_birth": "1974-08-09",
-   "status": "camp_contract",
-   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2005-01-10.",
+   "status": "released",
+   "control": "November 1, 2004: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
    "working_role": "Camp invitee",
    "player_card": "../Player_Cards/derek_fisher.md",
    "bbr_id": "fishede01"

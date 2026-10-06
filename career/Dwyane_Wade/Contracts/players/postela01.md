@@ -2,9 +2,9 @@
 
 # Contract | Lavor Postell
 
-Known through: 2004-10-31. [Open interactive contract](postela01.html#contract) · [Contract history](postela01.html#contract-history)
+Known through: 2004-11-01. [Open interactive contract](postela01.html#contract) · [Contract history](postela01.html#contract-history)
 
-Lavor Postell: unsigned free agent. Evidence cutoff: 2004-10-31.
+Lavor Postell: unsigned free agent. Evidence cutoff: 2004-11-01.
 
 ## Current contract
 

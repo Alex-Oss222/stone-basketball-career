@@ -1,7 +1,7 @@
 {
  "schema_version": 5,
  "owner": "ai_gm",
- "as_of": "2004-10-28",
+ "as_of": "2004-11-01",
  "season": "2004-05",
  "team": "Miami Heat",
  "cap_status": "training_camp",
@@ -10,10 +10,10 @@
  "historical_actual_salary_cap_publication_date": "2003-07-15",
  "league_cap_history_file": "league_cap_history.json",
  "contract_schedules_file": "contract_schedules.json",
- "known_counted_salary_before_free_agent_holds": 56949700,
- "reference_difference_to_historical_actual_cap_before_free_agent_holds": -13109700,
+ "known_counted_salary_before_free_agent_holds": 52819984,
+ "reference_difference_to_historical_actual_cap_before_free_agent_holds": -8979984,
  "cap_space": null,
- "cap_room": -13079700,
+ "cap_room": -8949984,
  "cap_room_reason": [
   "Cap published July 13, 2004.",
   "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."
@@ -118,44 +118,9 @@
    "status": "under_contract"
   },
   {
-   "player": "Stephen Jackson",
-   "kind": "contract_salary",
-   "amount": 688679,
-   "precision": "whole_dollars",
-   "status": "camp_contract"
-  },
-  {
-   "player": "Bob Sura",
-   "kind": "contract_salary",
-   "amount": 938679,
-   "precision": "whole_dollars",
-   "status": "camp_contract"
-  },
-  {
-   "player": "Calbert Cheaney",
-   "kind": "contract_salary",
-   "amount": 1000000,
-   "precision": "whole_dollars",
-   "status": "camp_contract"
-  },
-  {
    "player": "Rafer Alston",
    "kind": "contract_salary",
    "amount": 751179,
-   "precision": "whole_dollars",
-   "status": "camp_contract"
-  },
-  {
-   "player": "Chris Mihm",
-   "kind": "contract_salary",
-   "amount": 688679,
-   "precision": "whole_dollars",
-   "status": "camp_contract"
-  },
-  {
-   "player": "Derek Fisher",
-   "kind": "contract_salary",
-   "amount": 813679,
    "precision": "whole_dollars",
    "status": "camp_contract"
   }
@@ -188,10 +153,10 @@
   "2010-11"
  ],
  "currency": "USD",
- "known_counted_salary_definition": "Counted 2004-05 team salary on 2004-10-28: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
- "scheduled_contract_salary_subtotal": 56949700,
+ "known_counted_salary_definition": "Counted 2004-05 team salary on 2004-11-01: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+ "scheduled_contract_salary_subtotal": 52819984,
  "known_pending_option_salary": 0,
- "known_base_plus_priced_options": 56949700,
+ "known_base_plus_priced_options": 52819984,
  "live_official_tax_threshold": null,
  "tax_payroll": null,
  "luxury_tax_bill": null,
@@ -236,7 +201,7 @@
  "known_free_agent_holds_subtotal": 0,
  "unpriced_free_agent_hold_count": 0,
  "free_agent_hold_total": null,
- "free_agent_hold_timing": "Holds on 2004-10-28 are the unrenounced free agents' cap holds in free_agent_rights.json.",
+ "free_agent_hold_timing": "Holds on 2004-11-01 are the unrenounced free agents' cap holds in free_agent_rights.json.",
  "research_date": "2026-10-02",
  "guarantee_review": [
   {
@@ -275,7 +240,7 @@
  "subtotal_precision": "whole_dollars",
  "reported_rounded_salary_count": 0,
  "planning_cap": 43870000,
- "known_counted_salary": 56949700,
+ "known_counted_salary": 52819984,
  "roster_charge": 0,
- "projected_cap_room": -13079700
+ "projected_cap_room": -8949984
 }

@@ -1,15 +1,15 @@
 # Miami Heat working depth chart
 
-**As of:** 2004-10-31 · **Staff decision in force:** 2004-10-28 (training-camp decision)  
+**As of:** 2004-11-01 · **Staff decision in force:** 2004-10-28 (training-camp decision)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
-| Position | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
-|---|---|---|---|---|---|---|---|
-| PG | Mike James | Rafer Alston | Derek Fisher | Maurice Baker |  |  |  |
-| SG | Dwyane Wade | Eddie Jones | Kendall Gill | Bob Sura | Calbert Cheaney | Stephen Jackson | Maurice Evans |
-| SF | Caron Butler | Dorell Wright |  |  |  |  |  |
-| PF | Mehmet Okur | Scott Padgett | Udonis Haslem |  |  |  |  |
-| C | Brian Grant | Chris Mihm | John Thomas | John Edwards |  |  |  |
+| Position | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| PG | Mike James | Rafer Alston | Maurice Baker |  |
+| SG | Dwyane Wade | Eddie Jones | Kendall Gill | Maurice Evans |
+| SF | Caron Butler | Dorell Wright |  |  |
+| PF | Mehmet Okur | Scott Padgett | Udonis Haslem |  |
+| C | Brian Grant | John Thomas | John Edwards |  |
 
 ## Rotation in force
 
@@ -27,9 +27,9 @@
 | Kendall Gill | SG | 8 |  |
 | Dorell Wright | SF | 4 |  |
 
-Outside the rotation (dressing as the twelfth man or on the injured list): John Thomas, Maurice Evans, Maurice Baker, John Edwards, Stephen Jackson, Bob Sura, Calbert Cheaney, Chris Mihm, Derek Fisher.
+Outside the rotation (dressing as the twelfth man or on the injured list): John Thomas, Maurice Evans, Maurice Baker, John Edwards.
 
-## Injured list on 2004-10-31
+## Injured list on 2004-11-01
 
 Nobody (no list kept yet: the lists start with the game of 2003-11-12). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 

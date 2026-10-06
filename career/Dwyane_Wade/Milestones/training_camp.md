@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2004-10-31 · Miami Heat · planned
+Career date: 2004-11-01 · Miami Heat · planned
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -23,15 +23,15 @@ Activation: The club opens camp and records participation, evaluation or an actu
 
 ## Current depth chart
 
-Snapshot: 2004-10-28. Draft rights and unassigned arrivals are not assigned minutes.
+Snapshot: 2004-11-01. Draft rights and unassigned arrivals are not assigned minutes.
 
 | Position | Staff ordering | Interpretation |
 | --- | --- | --- |
-| PG | Mike James, Rafer Alston, Derek Fisher, Maurice Baker | Staff ordering; not a future minutes promise |
-| SG | Dwyane Wade, Eddie Jones, Kendall Gill, Bob Sura, Calbert Cheaney, Stephen Jackson, Maurice Evans | Staff ordering; not a future minutes promise |
+| PG | Mike James, Rafer Alston, Maurice Baker | Staff ordering; not a future minutes promise |
+| SG | Dwyane Wade, Eddie Jones, Kendall Gill, Maurice Evans | Staff ordering; not a future minutes promise |
 | SF | Caron Butler, Dorell Wright | Staff ordering; not a future minutes promise |
 | PF | Mehmet Okur, Scott Padgett, Udonis Haslem | Staff ordering; not a future minutes promise |
-| C | Brian Grant, Chris Mihm, John Thomas, John Edwards | Staff ordering; not a future minutes promise |
+| C | Brian Grant, John Thomas, John Edwards | Staff ordering; not a future minutes promise |
 
 ## Role and promise review
 
@@ -52,6 +52,7 @@ Snapshot: 2004-10-28. Draft rights and unassigned arrivals are not assigned minu
 | 2004-10-05 | Camp opens with 20 players: 6 invitees on non-guaranteed minimums (Stephen Jackson, Bob Sura, Calbert Cheaney, Rafer Alston, Chris Mihm, Derek Fisher). Record: `camp_roster.json`. |
 | 2004-10-05 | Camp injury draws: nobody is hurt. |
 | 2004-10-28 | Staff decision from 7 preseason games: starters PG Mike James, SG Dwyane Wade, SF Caron Butler, PF Mehmet Okur, C Brian Grant; battles drawn: {'PF': 'Mehmet Okur'}. Wade's perimeter-defense grade 45 (No assignment-level defensive evidence; preseason steals and blocks do not change this grade.). Records: `../00_Team/Team/Depth_Chart/depth_chart.json`, `rotation.json`, `../00_Team/Team/defensive_grades.json`. |
+| 2004-11-01 | Cut to 15: Stephen Jackson, Calbert Cheaney, Bob Sura, Derek Fisher, Chris Mihm. Promise check: every promised role is in the rotation. Record: `promise_log.json`. |
 
 ## Your response to the staff
 
