@@ -2,15 +2,9 @@
 
 # Contract | Sean Marks
 
-<<<<<<< HEAD
 Known through: 2004-11-01. [Open interactive contract](marksse01.html#contract) · [Contract history](marksse01.html#contract-history)
 
 Sean Marks: under contract. Evidence cutoff: 2004-11-01.
-=======
-Known through: 2004-10-04. [Open interactive contract](marksse01.html#contract) · [Contract history](marksse01.html#contract-history)
-
-Sean Marks: under contract. Evidence cutoff: 2004-10-04.
->>>>>>> bosh-alt
 
 ## Current contract
 
