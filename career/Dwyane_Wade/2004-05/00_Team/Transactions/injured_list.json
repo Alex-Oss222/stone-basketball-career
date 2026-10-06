@@ -49,7 +49,7 @@
   {
    "player": "Eddie Jones",
    "placed": "2004-12-15",
-   "activated": null,
+   "activated": "2004-12-25",
    "first_game_missed": "2004-12-15-miami-heat-at-washington-wizards",
    "reason": "injury: 2 more game(s) out on the engine's draw",
    "minimum_games": 5
@@ -69,7 +69,15 @@
    "first_game_missed": "2004-12-23-miami-heat-at-sacramento-kings",
    "reason": "injury: 36 more game(s) out on the engine's draw",
    "minimum_games": 5
+  },
+  {
+   "player": "John Edwards",
+   "placed": "2004-12-25",
+   "activated": null,
+   "first_game_missed": "2004-12-25-miami-heat-at-los-angeles-lakers",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 5
   }
  ],
- "as_of": "2004-12-23"
+ "as_of": "2004-12-25"
 }

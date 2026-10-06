@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-24 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-25 
 
 **Contract/control:** Signed July 22, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Reserve outside the planned rotation (staff rotation dated 2004-12-23, [record](../Depth_Chart/Reviews/2004-12-23/rotation.json)).
+**Role:** Reserve outside the planned rotation (staff rotation dated 2004-12-23, [record](../Depth_Chart/Reviews/2004-12-23/rotation.json)). On the injured list since 2004-12-25 (reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 

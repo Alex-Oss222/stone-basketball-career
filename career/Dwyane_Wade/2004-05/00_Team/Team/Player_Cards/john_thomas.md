@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-24 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-25 
 
 **Contract/control:** Signed August 19, 2004 (minimum): 1 season(s) from 2004-05, $932,546 scheduled ($932,546 in 2004-05). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
@@ -50,7 +50,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2004-05 | MIA | 1 | 1 | 9.9 | 2.0 | 1.0 | 1.0 | 0.0 | 0.0 | 1.0 | 50.0% | N/A | N/A |
+| 2004-05 | MIA | 2 | 1 | 7.0 | 2.0 | 1.0 | 0.5 | 0.0 | 0.0 | 0.5 | 66.7% | N/A | N/A |
 
 Source: 2003-04 from closed simulated results (`Stats_and_Awards/League/2003-04/season_totals.json`); 2004-05 from closed Miami game results.
 

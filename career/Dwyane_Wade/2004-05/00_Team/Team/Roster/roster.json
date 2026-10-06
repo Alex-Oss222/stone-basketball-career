@@ -20,7 +20,7 @@
    "college": "Temple",
    "status": "under_contract",
    "control": "Existing contract: 3 season(s) from 2004-05, $44,401,500 scheduled ($13,455,000 in 2004-05).",
-   "working_role": "Injured list (rotation at SG, staff plan 4 minutes when healthy; rotation 2004-12-23)",
+   "working_role": "Rotation at SG, staff plan 4 minutes (rotation 2004-12-23)",
    "player_card": "../Player_Cards/eddie_jones.md",
    "bbr_id": "jonesed02"
   },
@@ -195,7 +195,7 @@
    "positions": [
     "C"
    ],
-   "working_role": "Reserve outside the planned rotation (rotation 2004-12-23)",
+   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2004-12-23)",
    "player_card": "../Player_Cards/john_edwards.md",
    "bbr_id": "edwarjo01",
    "status": "under_contract",
