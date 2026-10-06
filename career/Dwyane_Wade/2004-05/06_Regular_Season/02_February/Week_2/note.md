@@ -14,4 +14,6 @@ days: 8-14
 
 ## Games and events
 
+- 2005-02-09: Miami Heat 111 at New York Knicks 97 — Miami Heat W 111-97 ([Game 1](Game_1.md), event `2005-02-09-miami-heat-at-new-york-knicks`)
+
 ## Consequences
