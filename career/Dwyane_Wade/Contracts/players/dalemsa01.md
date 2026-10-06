@@ -2,9 +2,9 @@
 
 # Contract | Samuel Dalembert
 
-Known through: 2005-02-06. [Open interactive contract](dalemsa01.html#contract) · [Contract history](dalemsa01.html#contract-history)
+Known through: 2005-02-07. [Open interactive contract](dalemsa01.html#contract) · [Contract history](dalemsa01.html#contract-history)
 
-Samuel Dalembert: under rookie contract. Evidence cutoff: 2005-02-06.
+Samuel Dalembert: under rookie contract. Evidence cutoff: 2005-02-07.
 
 ## Current contract
 

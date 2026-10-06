@@ -1,6 +1,6 @@
 # 2004-05 NBA All-Star selections
 
-All-Star Game: February 20, 2005, Pepsi Center, Denver. Rookie Challenge: February 18, 2005. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: February 3, 2005.
+All-Star Game: February 20, 2005, Pepsi Center, Denver. Rookie Challenge: February 18, 2005. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: February 7, 2005.
 
 ## Starters (fan ballot, announced February 3, 2005; results through January 23, 2005)
 
@@ -23,6 +23,13 @@ All-Star Game: February 20, 2005, Pepsi Center, Denver. Rookie Challenge: Februa
 | Kobe Bryant | G | Los Angeles Lakers | 29 | 24.6 | 6.1 | 6.4 | 17.66 | 101 |
 | Tim Duncan | F | San Antonio Spurs | 29 | 22.5 | 10.4 | 2.6 | 18.9 | 75 |
 | Stephon Marbury | G | Phoenix Suns | 42 | 21.1 | 3.3 | 9.2 | 18.44 | 73 |
+
+## Coaches (best record through February 6, 2005; Riley Rule barred Flip Saunders, Lawrence Frank)
+
+| Conference | Coach | Team | Record |
+|---|---|---|---|
+| East | Sam Mitchell | Toronto Raptors | 35-13 |
+| West | Mike D'Antoni | Phoenix Suns | 38-11 |
 
 ## Rookie Challenge rosters (broadcaster panel, announced January 27, 2005)
 

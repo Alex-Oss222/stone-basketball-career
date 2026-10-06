@@ -2,9 +2,9 @@
 
 # Contract | Bobby Simmons
 
-Known through: 2005-02-06. [Open interactive contract](simmobo01.html#contract) · [Contract history](simmobo01.html#contract-history)
+Known through: 2005-02-07. [Open interactive contract](simmobo01.html#contract) · [Contract history](simmobo01.html#contract-history)
 
-Bobby Simmons: under contract. Evidence cutoff: 2005-02-06.
+Bobby Simmons: under contract. Evidence cutoff: 2005-02-07.
 
 ## Current contract
 

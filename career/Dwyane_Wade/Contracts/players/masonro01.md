@@ -2,9 +2,9 @@
 
 # Contract | Roger Mason Jr.
 
-Known through: 2005-02-06. [Open interactive contract](masonro01.html#contract) · [Contract history](masonro01.html#contract-history)
+Known through: 2005-02-07. [Open interactive contract](masonro01.html#contract) · [Contract history](masonro01.html#contract-history)
 
-Roger Mason Jr.: No verified contract record. Evidence cutoff: 2005-02-06.
+Roger Mason Jr.: No verified contract record. Evidence cutoff: 2005-02-07.
 
 ## Current contract
 

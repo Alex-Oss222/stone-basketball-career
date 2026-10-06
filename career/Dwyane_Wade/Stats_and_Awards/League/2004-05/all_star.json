@@ -549,6 +549,111 @@
      ]
     }
    }
+  },
+  {
+   "step": "coaches",
+   "announced_on": "2005-02-07",
+   "evidence_through": "2005-02-06",
+   "riley_rule_barred": [
+    "Flip Saunders",
+    "Lawrence Frank"
+   ],
+   "conferences": {
+    "East": {
+     "coach": "Sam Mitchell",
+     "team": "Toronto Raptors",
+     "record": "35-13",
+     "standings": [
+      {
+       "team": "Toronto Raptors",
+       "coach": "Sam Mitchell",
+       "wins": 35,
+       "losses": 13,
+       "pct": 0.729,
+       "barred": false
+      },
+      {
+       "team": "Miami Heat",
+       "coach": "Erik Spoelstra",
+       "wins": 32,
+       "losses": 17,
+       "pct": 0.653,
+       "barred": false
+      },
+      {
+       "team": "Boston Celtics",
+       "coach": "Doc Rivers",
+       "wins": 31,
+       "losses": 17,
+       "pct": 0.646,
+       "barred": false
+      },
+      {
+       "team": "Cleveland Cavaliers",
+       "coach": "Paul Silas",
+       "wins": 29,
+       "losses": 17,
+       "pct": 0.63,
+       "barred": false
+      },
+      {
+       "team": "Chicago Bulls",
+       "coach": "Scott Skiles",
+       "wins": 27,
+       "losses": 17,
+       "pct": 0.614,
+       "barred": false
+      }
+     ]
+    },
+    "West": {
+     "coach": "Mike D'Antoni",
+     "team": "Phoenix Suns",
+     "record": "38-11",
+     "standings": [
+      {
+       "team": "Phoenix Suns",
+       "coach": "Mike D'Antoni",
+       "wins": 38,
+       "losses": 11,
+       "pct": 0.776,
+       "barred": false
+      },
+      {
+       "team": "San Antonio Spurs",
+       "coach": "Gregg Popovich",
+       "wins": 30,
+       "losses": 18,
+       "pct": 0.625,
+       "barred": false
+      },
+      {
+       "team": "Sacramento Kings",
+       "coach": "Rick Adelman",
+       "wins": 29,
+       "losses": 18,
+       "pct": 0.617,
+       "barred": false
+      },
+      {
+       "team": "Dallas Mavericks",
+       "coach": "Don Nelson",
+       "wins": 26,
+       "losses": 20,
+       "pct": 0.565,
+       "barred": false
+      },
+      {
+       "team": "Memphis Grizzlies",
+       "coach": "Mike Fratello",
+       "wins": 27,
+       "losses": 21,
+       "pct": 0.562,
+       "barred": false
+      }
+     ]
+    }
+   }
   }
  ],
  "all_stars": []

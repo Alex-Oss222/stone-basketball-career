@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-02-06",
+  "as_of": "2005-02-07",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -3389,7 +3389,7 @@
     {
       "player_id": "bradlmi01",
       "name": "Michael Bradley",
-      "team": "Free agent",
+      "team": "Houston Rockets",
       "status": "under rookie contract",
       "current_contract_id": "bradlmi01-2001-07-23",
       "recorded_agreements": 1,

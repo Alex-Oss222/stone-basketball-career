@@ -2990,6 +2990,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.19 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-02-07-ten_day-bradlmi01",
+   "date": "2005-02-07",
+   "kind": "ten_day",
+   "player": "Michael Bradley",
+   "bbr_id": "bradlmi01",
+   "from": null,
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Michael Bradley",
+    "bbr_id": "bradlmi01",
+    "position": "PF",
+    "games": 18,
+    "minutes": 119
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-02-17",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.19 x fit"
   }
  ],
  "market_days": [
@@ -3089,6 +3111,7 @@
   "2005-02-03",
   "2005-02-04",
   "2005-02-05",
-  "2005-02-06"
+  "2005-02-06",
+  "2005-02-07"
  ]
 }

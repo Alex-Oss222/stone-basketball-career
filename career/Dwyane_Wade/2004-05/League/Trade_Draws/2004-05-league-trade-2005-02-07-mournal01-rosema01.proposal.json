@@ -1,0 +1,37 @@
+{
+ "id": "2004-05-league-trade-2005-02-07-mournal01-rosema01",
+ "date": "2005-02-07",
+ "clubs": [
+  "New York Knicks",
+  "Seattle SuperSonics"
+ ],
+ "a": {
+  "club": "New York Knicks",
+  "sends": [
+   "Malik Rose"
+  ],
+  "bbr_ids": [
+   "rosema01"
+  ],
+  "salary": 5462500
+ },
+ "b": {
+  "club": "Seattle SuperSonics",
+  "sends": [
+   "Alonzo Mourning"
+  ],
+  "bbr_ids": [
+   "mournal01"
+  ],
+  "salary": 5408700
+ },
+ "gain": {
+  "New York Knicks": 0.066,
+  "Seattle SuperSonics": 0.069
+ },
+ "accept": {
+  "New York Knicks": 0.537,
+  "Seattle SuperSonics": 0.556
+ },
+ "both": 0.298572
+}

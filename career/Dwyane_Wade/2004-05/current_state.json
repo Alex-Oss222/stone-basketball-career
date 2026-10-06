@@ -2,7 +2,7 @@
  "schema_version": 1,
  "initialized": true,
  "season": "2004-05",
- "current_date": "2005-02-06",
+ "current_date": "2005-02-07",
  "current_area": "04_Training_Camp",
  "current_note": "04_Training_Camp/note.md",
  "team": "Miami Heat",
@@ -15,7 +15,7 @@
  },
  "contract_status": "rookie_scale_contract",
  "roster_status": "under_contract",
- "last_closed_event": "2005-02-05-chicago-bulls-at-miami-heat",
+ "last_closed_event": "2005-02-07-golden-state-warriors-at-miami-heat",
  "pending_player_decisions": [],
  "rolled_over_from": "2003-04",
  "rolled_over_on": "2004-10-01"

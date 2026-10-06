@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-02-06. [Search the contract directory](index.html)
+Known through 2005-02-07. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -384,7 +384,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Mehmet Okur](players/okurme01.md) | Miami Heat | under contract | Mehmet Okur · 2004-09-23 | 1 |
 | [Melvin Ely](players/elyme01.md) | Los Angeles Clippers | under rookie contract | Melvin Ely · 2002-09-04 | 1 |
 | [Mengke Bateer](players/bateeme01.md) | Free agent | under contract | Mengke Bateer · 2003-07-17 | 2 |
-| [Michael Bradley](players/bradlmi01.md) | Free agent | under rookie contract | Michael Bradley · 2001-07-23 | 1 |
+| [Michael Bradley](players/bradlmi01.md) | Houston Rockets | under rookie contract | Michael Bradley · 2001-07-23 | 1 |
 | [Michael Curry](players/currymi01.md) | Free agent | under contract | Michael Curry · existing contract; signing date not recorded | 1 |
 | [Michael Doleac](players/doleami01.md) | New York Knicks | under contract | Michael Doleac · 2002-08-07 | 1 |
 | [Michael Finley](players/finlemi01.md) | Dallas Mavericks | under contract | Michael Finley · existing contract; signing date not recorded | 1 |
