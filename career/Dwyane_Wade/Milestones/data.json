@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-10-28",
+  "as_of": "2004-10-29",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-10-28-camp-decision",
+  "current_event": "2004-10-27-miami-heat-at-orlando-magic",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-10-28"
+              "2004-10-29"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-10-28-camp-decision"
+              "2004-10-27-miami-heat-at-orlando-magic"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2004-10-28",
+              "2004-10-29",
               "Current checkpoint",
-              "2004-10-28-camp-decision",
+              "2004-10-27-miami-heat-at-orlando-magic",
               "Recorded",
               {
                 "label": "Owning event",
@@ -386,7 +386,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-28"
+          "value": "2004-10-29"
         },
         {
           "label": "Team",
@@ -628,7 +628,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-28"
+          "value": "2004-10-29"
         },
         {
           "label": "Team",
@@ -843,7 +843,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-28"
+          "value": "2004-10-29"
         },
         {
           "label": "Team",
@@ -1061,7 +1061,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-28"
+          "value": "2004-10-29"
         },
         {
           "label": "Team",
@@ -1278,7 +1278,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-28"
+          "value": "2004-10-29"
         },
         {
           "label": "Team",
@@ -1486,7 +1486,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-28"
+          "value": "2004-10-29"
         },
         {
           "label": "Team",
@@ -1703,7 +1703,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-28"
+          "value": "2004-10-29"
         },
         {
           "label": "Team",
@@ -2020,7 +2020,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-28"
+          "value": "2004-10-29"
         },
         {
           "label": "Team",
@@ -2037,7 +2037,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "7 closed game records in 2004-05 through 2004-10-28. Competitions remain separate.",
+      "summary": "7 closed game records in 2004-05 through 2004-10-29. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2323,7 +2323,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-28"
+          "value": "2004-10-29"
         },
         {
           "label": "Team",
