@@ -313,7 +313,7 @@
   {
    "player": "Brent Barry",
    "bbr_id": "barrybr01",
-   "club": "Washington Wizards",
+   "club": "Golden State Warriors",
    "route": "mid_level",
    "kind": "new",
    "schedule": {
@@ -321,7 +321,8 @@
     "2005-06": 5393300,
     "2006-07": 5883600
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "signed_club": "Washington Wizards"
   },
   {
    "player": "Jon Barry",
@@ -529,7 +530,7 @@
   {
    "player": "Curtis Borchardt",
    "bbr_id": "borchcu01",
-   "club": "Boston Celtics",
+   "club": "Philadelphia 76ers",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -540,7 +541,8 @@
    "rookie_scale": true,
    "option_history": [
     "2005-06 team option: decline (2004-10-31; his real career ended before 2005-06 (runtime/availability.py); runtime/options.py, League/option_decisions.json)"
-   ]
+   ],
+   "signed_club": "Boston Celtics"
   },
   {
    "player": "Chris Bosh",
@@ -4208,13 +4210,14 @@
   {
    "player": "Clifford Robinson",
    "bbr_id": "robincl02",
-   "club": "Golden State Warriors",
+   "club": "Washington Wizards",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 5287500
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)",
+   "signed_club": "Golden State Warriors"
   },
   {
    "player": "Glenn Robinson",

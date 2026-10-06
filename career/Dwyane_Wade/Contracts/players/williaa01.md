@@ -2,9 +2,9 @@
 
 # Contract | Aaron Williams
 
-Known through: 2005-01-18. [Open interactive contract](williaa01.html#contract) · [Contract history](williaa01.html#contract-history)
+Known through: 2005-01-23. [Open interactive contract](williaa01.html#contract) · [Contract history](williaa01.html#contract-history)
 
-Aaron Williams: under contract. Evidence cutoff: 2005-01-18.
+Aaron Williams: under contract. Evidence cutoff: 2005-01-23.
 
 ## Current contract
 

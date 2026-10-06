@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-01-18",
+  "as_of": "2005-01-23",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1013,7 +1013,7 @@
     {
       "player_id": "borchcu01",
       "name": "Curtis Borchardt",
-      "team": "Free agent",
+      "team": "Philadelphia 76ers",
       "status": "under rookie contract",
       "current_contract_id": "borchcu01-2002-07-12",
       "recorded_agreements": 1,
@@ -3281,7 +3281,7 @@
     {
       "player_id": "barnema02",
       "name": "Matt Barnes",
-      "team": "Free agent",
+      "team": "Memphis Grizzlies",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3794,7 +3794,7 @@
     {
       "player_id": "shirlpa01",
       "name": "Paul Shirley",
-      "team": "Free agent",
+      "team": "Memphis Grizzlies",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

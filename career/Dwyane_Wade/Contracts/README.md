@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-01-18. [Search the contract directory](index.html)
+Known through 2005-01-23. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -120,7 +120,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Corsley Edwards](players/corsleyedwards.md) | Seattle SuperSonics | under contract | Corsley Edwards · 2004-07-15 | 1 |
 | [Cory Alexander](players/coryalexander.md) | Minnesota Timberwolves | under contract | Cory Alexander · 2004-07-15 | 1 |
 | [Courtney Alexander](players/alexaco02.md) | Free agent | under rookie contract | Courtney Alexander · 2000-07-06 | 1 |
-| [Curtis Borchardt](players/borchcu01.md) | Free agent | under rookie contract | Curtis Borchardt · 2002-07-12 | 1 |
+| [Curtis Borchardt](players/borchcu01.md) | Philadelphia 76ers | under rookie contract | Curtis Borchardt · 2002-07-12 | 1 |
 | [Cuttino Mobley](players/moblecu01.md) | Houston Rockets | under contract | Cuttino Mobley · 2000-08-02 | 1 |
 | [D.J. Mbenga](players/djmbenga.md) | San Antonio Spurs | under contract | D.J. Mbenga · 2004-07-14 | 1 |
 | [Dahntay Jones](players/jonesda02.md) | Memphis Grizzlies | No verified contract record | No verified current agreement | 0 |
@@ -372,7 +372,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Marko Jaric](players/jaricma01.md) | Los Angeles Clippers | under contract | Marko Jaric · existing contract; signing date not recorded | 1 |
 | [Marquis Daniels](players/daniema01.md) | Dallas Mavericks | under contract | Marquis Daniels · 2004-09-30 | 2 |
 | [Mateen Cleaves](players/cleavma01.md) | Cleveland Cavaliers | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
-| [Matt Barnes](players/barnema02.md) | Free agent | No verified contract record | No verified current agreement | 0 |
+| [Matt Barnes](players/barnema02.md) | Memphis Grizzlies | No verified contract record | No verified current agreement | 0 |
 | [Matt Bonner](players/bonnema01.md) | Toronto Raptors | No verified contract record | No verified current agreement | 0 |
 | [Matt Carroll](players/carroma01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Matt Freije](players/mattfreije.md) | Toronto Raptors | under contract | Matt Freije · 2004-07-14 | 1 |
@@ -429,7 +429,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Pau Gasol](players/gasolpa01.md) | Memphis Grizzlies | under rookie contract | Pau Gasol · 2001-09-06 | 1 |
 | [Paul Grant](players/grantpa01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Paul Pierce](players/piercpa01.md) | Boston Celtics | under contract | Paul Pierce · 2001-08-01 | 1 |
-| [Paul Shirley](players/shirlpa01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
+| [Paul Shirley](players/shirlpa01.md) | Memphis Grizzlies | No verified contract record | No verified current agreement | 0 |
 | [Pavel Podkolzin](players/pavelpodkolzin.md) | Philadelphia 76ers | under contract | Pavel Podkolzin · 2004-07-01 | 1 |
 | [Peja Stojakovic](players/stojape01.md) | Sacramento Kings | under contract | Peja Stojakovic · 2000-08-16 | 1 |
 | [Peter John Ramos](players/peterjohnramos.md) | Boston Celtics | under contract | Peter John Ramos · 2004-07-01 | 1 |

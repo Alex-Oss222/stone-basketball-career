@@ -2,9 +2,9 @@
 
 # Contract | Tierre Brown
 
-Known through: 2005-01-18. [Open interactive contract](brownti01.html#contract) · [Contract history](brownti01.html#contract-history)
+Known through: 2005-01-23. [Open interactive contract](brownti01.html#contract) · [Contract history](brownti01.html#contract-history)
 
-Tierre Brown: under contract. Evidence cutoff: 2005-01-18.
+Tierre Brown: under contract. Evidence cutoff: 2005-01-23.
 
 ## Current contract
 
