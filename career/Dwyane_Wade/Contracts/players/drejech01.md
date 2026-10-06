@@ -2,9 +2,9 @@
 
 # Contract | Christian Drejer
 
-Known through: 2004-10-19. [Open interactive contract](drejech01.html#contract) · [Contract history](drejech01.html#contract-history)
+Known through: 2004-10-20. [Open interactive contract](drejech01.html#contract) · [Contract history](drejech01.html#contract-history)
 
-Christian Drejer: unsigned draft rights. Evidence cutoff: 2004-10-19.
+Christian Drejer: unsigned draft rights. Evidence cutoff: 2004-10-20.
 
 ## Current contract
 

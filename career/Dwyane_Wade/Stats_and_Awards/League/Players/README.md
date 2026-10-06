@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-19**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-20**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -145,7 +145,7 @@ Card date: **2004-10-19**. 504 registry players, one Markdown card and one inter
 | [Doug Christie](chrisdo01.md) | Sacramento Kings | 34 | sourced | [open](chrisdo01.html) |
 | [Dwyane Wade](wadedw01.md) | Miami Heat | 20 | sourced | [open](wadedw01.html) |
 | [Eddie House](houseed01.md) | Los Angeles Clippers | 26 | sourced | [open](houseed01.html) |
-| [Eddie Jones](jonesed02.md) | Miami Heat | 32 | silhouette | [open](jonesed02.html) |
+| [Eddie Jones](jonesed02.md) | Miami Heat | 33 | silhouette | [open](jonesed02.html) |
 | [Eric Piatkowski](piatker01.md) | Houston Rockets | 34 | sourced | [open](piatker01.html) |
 | [Erick Strickland](stricer01.md) | Milwaukee Bucks | 30 | silhouette | [open](stricer01.html) |
 | [Fred Hoiberg](hoibefr01.md) | Denver Nuggets | 32 | sourced | [open](hoibefr01.html) |

@@ -2,9 +2,9 @@
 
 # Contract | Dikembe Mutombo
 
-Known through: 2004-10-19. [Open interactive contract](mutomdi01.html#contract) · [Contract history](mutomdi01.html#contract-history)
+Known through: 2004-10-20. [Open interactive contract](mutomdi01.html#contract) · [Contract history](mutomdi01.html#contract-history)
 
-Dikembe Mutombo: under contract. Evidence cutoff: 2004-10-19.
+Dikembe Mutombo: under contract. Evidence cutoff: 2004-10-20.
 
 ## Current contract
 

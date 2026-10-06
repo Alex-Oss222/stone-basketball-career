@@ -2,9 +2,9 @@
 
 # Contract | James Lang
 
-Known through: 2004-10-19. [Open interactive contract](langja01.html#contract) · [Contract history](langja01.html#contract-history)
+Known through: 2004-10-20. [Open interactive contract](langja01.html#contract) · [Contract history](langja01.html#contract-history)
 
-James Lang: No verified contract record. Evidence cutoff: 2004-10-19.
+James Lang: No verified contract record. Evidence cutoff: 2004-10-20.
 
 ## Current contract
 
