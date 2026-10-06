@@ -14,4 +14,6 @@ days: 22-end
 
 ## Games and events
 
+- 2005-01-23: New Orleans Hornets 71 at Miami Heat 94 — Miami Heat W 94-71 ([Game 1](Game_1.md), event `2005-01-23-new-orleans-hornets-at-miami-heat`)
+
 ## Consequences
