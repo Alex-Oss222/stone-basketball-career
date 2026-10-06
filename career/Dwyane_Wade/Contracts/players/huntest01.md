@@ -2,9 +2,9 @@
 
 # Contract | Steven Hunter
 
-Known through: 2004-10-11. [Open interactive contract](huntest01.html#contract) · [Contract history](huntest01.html#contract-history)
+Known through: 2004-10-12. [Open interactive contract](huntest01.html#contract) · [Contract history](huntest01.html#contract-history)
 
-Steven Hunter: under contract. Evidence cutoff: 2004-10-11.
+Steven Hunter: under contract. Evidence cutoff: 2004-10-12.
 
 ## Current contract
 

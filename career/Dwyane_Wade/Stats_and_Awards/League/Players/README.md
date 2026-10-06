@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-10-11**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-10-12**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -22,7 +22,7 @@ Card date: **2004-10-11**. 504 registry players, one Markdown card and one inter
 | [Brian Shaw](shawbr01.md) | Free agent | 38 | sourced | [open](shawbr01.html) |
 | [Bryce Drew](drewbr01.md) | Free agent | None | silhouette | [open](drewbr01.html) |
 | [Carlos Arroyo](arroyca01.md) | Utah Jazz | 25 | sourced | [open](arroyca01.html) |
-| [Charlie Ward](wardch01.md) | Minnesota Timberwolves | 33 | sourced | [open](wardch01.html) |
+| [Charlie Ward](wardch01.md) | Minnesota Timberwolves | 34 | sourced | [open](wardch01.html) |
 | [Chauncey Billups](billuch01.md) | Detroit Pistons | 28 | sourced | [open](billuch01.html) |
 | [Chris Whitney](whitnch01.md) | Free agent | 33 | silhouette | [open](whitnch01.html) |
 | [Chucky Atkins](atkinch01.md) | Detroit Pistons | 30 | sourced | [open](atkinch01.html) |
@@ -267,7 +267,7 @@ Card date: **2004-10-11**. 504 registry players, one Markdown card and one inter
 | [Linton Johnson](johnsli01.md) | Free agent | None | silhouette | [open](johnsli01.html) |
 | [Luke Walton](waltolu01.md) | Los Angeles Lakers | 24 | sourced | [open](waltolu01.html) |
 | [Marcus Fizer](fizerma01.md) | Free agent | None | silhouette | [open](fizerma01.html) |
-| [Marko Jaric](jaricma01.md) | Los Angeles Clippers | 25 | sourced | [open](jaricma01.html) |
+| [Marko Jaric](jaricma01.md) | Los Angeles Clippers | 26 | sourced | [open](jaricma01.html) |
 | [Matt Barnes](barnema02.md) | Free agent | None | silhouette | [open](barnema02.html) |
 | [Matt Harpring](harprma01.md) | Utah Jazz | 28 | sourced | [open](harprma01.html) |
 | [Michael Curry](currymi01.md) | Free agent | 36 | silhouette | [open](currymi01.html) |

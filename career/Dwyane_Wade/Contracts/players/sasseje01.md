@@ -2,9 +2,9 @@
 
 # Contract | Jeryl Sasser
 
-Known through: 2004-10-11. [Open interactive contract](sasseje01.html#contract) · [Contract history](sasseje01.html#contract-history)
+Known through: 2004-10-12. [Open interactive contract](sasseje01.html#contract) · [Contract history](sasseje01.html#contract-history)
 
-Jeryl Sasser: under rookie contract. Evidence cutoff: 2004-10-11.
+Jeryl Sasser: under rookie contract. Evidence cutoff: 2004-10-12.
 
 ## Current contract
 

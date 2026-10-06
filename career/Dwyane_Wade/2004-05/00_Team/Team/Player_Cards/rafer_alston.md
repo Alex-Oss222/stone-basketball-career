@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 28 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 5, 2004 · **Statistics through:** 2004-10-11 
+**Opening assessment:** October 5, 2004 · **Statistics through:** 2004-10-12 
 
 **Contract/control:** Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10. (register, 2004-10-05) [Finance record](../../Finances/cap_sheet.md).
 

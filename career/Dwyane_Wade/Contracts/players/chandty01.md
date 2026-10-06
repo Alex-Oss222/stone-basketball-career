@@ -2,9 +2,9 @@
 
 # Contract | Tyson Chandler
 
-Known through: 2004-10-11. [Open interactive contract](chandty01.html#contract) · [Contract history](chandty01.html#contract-history)
+Known through: 2004-10-12. [Open interactive contract](chandty01.html#contract) · [Contract history](chandty01.html#contract-history)
 
-Tyson Chandler: under rookie contract. Evidence cutoff: 2004-10-11.
+Tyson Chandler: under rookie contract. Evidence cutoff: 2004-10-12.
 
 ## Current contract
 
