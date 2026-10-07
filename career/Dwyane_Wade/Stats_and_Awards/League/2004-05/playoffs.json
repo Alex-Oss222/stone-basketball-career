@@ -1307,7 +1307,7 @@
    ],
    "home_court": "Sacramento Kings",
    "wins": {
-    "Sacramento Kings": 2,
+    "Sacramento Kings": 3,
     "Minnesota Timberwolves": 0
    },
    "winner": null,
@@ -1338,7 +1338,9 @@
      "home": "Minnesota Timberwolves",
      "away": "Sacramento Kings",
      "conditional": false,
-     "event_id": "2005-05-28-sacramento-kings-at-minnesota-timberwolves"
+     "event_id": "2005-05-28-sacramento-kings-at-minnesota-timberwolves",
+     "result": "Sacramento Kings 106, Minnesota Timberwolves 105",
+     "winner": "Sacramento Kings"
     },
     {
      "game": 4,
