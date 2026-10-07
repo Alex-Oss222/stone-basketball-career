@@ -1,0 +1,12 @@
+{
+ "date": "2005-05-24",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2005-draft-playoff-clubs-tie-bos-dal",
+ "kind": "decision",
+ "options": {
+  "Boston Celtics": 0.5,
+  "Dallas Mavericks": 0.5
+ },
+ "outcome": "Dallas Mavericks",
+ "question": "2005 draft order (playoff-clubs): which of Boston Celtics, Dallas Mavericks (tied at 0.622) goes first?"
+}

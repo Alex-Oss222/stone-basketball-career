@@ -1,0 +1,23 @@
+{
+ "event_id": "2005-draft-lottery-pick-1",
+ "date": "2005-05-24",
+ "question": "2005 NBA draft lottery: which club wins pick No. 1?",
+ "decider": "NBA draft lottery (engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.25,
+  "Utah Jazz": 0.199,
+  "New Jersey Nets": 0.121,
+  "New Orleans Hornets": 0.121,
+  "Denver Nuggets": 0.121,
+  "New York Knicks": 0.063,
+  "Milwaukee Bucks": 0.043,
+  "Houston Rockets": 0.023,
+  "Washington Wizards": 0.022,
+  "Los Angeles Clippers": 0.011,
+  "Orlando Magic": 0.008,
+  "Seattle SuperSonics": 0.007,
+  "Indiana Pacers": 0.006,
+  "Memphis Grizzlies": 0.005
+ },
+ "basis": "Lottery combinations by simulated record (library/2005/league/nba_2005_lottery_rules.json); clubs already drawn or ineligible for this pick removed."
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-05-24",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2005-draft-playoff-clubs-tie-lal-phi",
+ "kind": "decision",
+ "options": {
+  "Los Angeles Lakers": 0.5,
+  "Philadelphia 76ers": 0.5
+ },
+ "outcome": "Philadelphia 76ers",
+ "question": "2005 draft order (playoff-clubs): which of Los Angeles Lakers, Philadelphia 76ers (tied at 0.500) goes first?"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-05-24",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2005-draft-lottery-seeding-tie-orl-sea",
+ "kind": "decision",
+ "options": {
+  "Orlando Magic": 0.5,
+  "Seattle SuperSonics": 0.5
+ },
+ "outcome": "Orlando Magic",
+ "question": "2005 draft order (lottery-seeding): which of Orlando Magic, Seattle SuperSonics (tied at 0.476) goes first?"
+}

@@ -1,0 +1,520 @@
+{
+ "schema_version": 1,
+ "kind": "draft_order",
+ "draft": "2005 NBA Draft",
+ "lottery_date": "2005-05-24",
+ "rule": "On the lottery date the 13 clubs that missed the simulated playoffs are seeded by their simulated records (worst\nfirst); an exact tie in record is ordered by an engine drawing. Picks 1 to 3 are three engine draws, each weighted by\nthe lottery combinations of the clubs not yet drawn (tied clubs split their seeds' combinations; a drawing orders\nthem and takes any remainder) (`library/2004/league/nba_2004_lottery_rules.json`). Charlotte,\nthe expansion club, holds No. 4 in each round and is not in the lottery. The other lottery clubs take picks 5 to 14\nin seed order; the playoff clubs take the rest of the first round by record, worst first (Minnesota's first-round pick\nis forfeited by a pre-career sanction); the second round runs in reverse record of all 29 clubs, Charlotte at No. 33.\nEvery chance answer is an engine draw, journaled and never re-rolled. Pick ownership follows\n`library/2004/league/nba_2004_pick_ownership.json`. The result is `09_Draft/draft_order_2004.json`.\n\nEvery later draft (R5, October 2026) runs the same way from its own year's files (`library/<year>/league/\nnba_<year>_lottery_rules.json` and `nba_<year>_pick_ownership.json`), its season's simulated record and playoff field,\ninto `career/Dwyane_Wade/<season>/09_Draft/draft_order_<year>.json`: every non-playoff club enters the lottery unless\nthe ownership file fixes an expansion slot, a club the rules file makes ineligible for a pick (`ineligible`:\n{code: [picks]}) is left out of that pick's draw, and forfeited picks are skipped.",
+ "lottery_seeds": [
+  {
+   "seed": 1,
+   "club": "Charlotte Bobcats",
+   "record": "13-69",
+   "combinations": 250
+  },
+  {
+   "seed": 2,
+   "club": "Utah Jazz",
+   "record": "25-57",
+   "combinations": 199
+  },
+  {
+   "seed": 3,
+   "club": "New Jersey Nets",
+   "record": "29-53",
+   "combinations": 121
+  },
+  {
+   "seed": 4,
+   "club": "New Orleans Hornets",
+   "record": "29-53",
+   "combinations": 121
+  },
+  {
+   "seed": 5,
+   "club": "Denver Nuggets",
+   "record": "29-53",
+   "combinations": 121
+  },
+  {
+   "seed": 6,
+   "club": "New York Knicks",
+   "record": "31-51",
+   "combinations": 63
+  },
+  {
+   "seed": 7,
+   "club": "Milwaukee Bucks",
+   "record": "34-48",
+   "combinations": 43
+  },
+  {
+   "seed": 8,
+   "club": "Houston Rockets",
+   "record": "37-45",
+   "combinations": 23
+  },
+  {
+   "seed": 9,
+   "club": "Washington Wizards",
+   "record": "37-45",
+   "combinations": 22
+  },
+  {
+   "seed": 10,
+   "club": "Los Angeles Clippers",
+   "record": "38-44",
+   "combinations": 11
+  },
+  {
+   "seed": 11,
+   "club": "Orlando Magic",
+   "record": "39-43",
+   "combinations": 8
+  },
+  {
+   "seed": 12,
+   "club": "Seattle SuperSonics",
+   "record": "39-43",
+   "combinations": 7
+  },
+  {
+   "seed": 13,
+   "club": "Indiana Pacers",
+   "record": "40-42",
+   "combinations": 6
+  },
+  {
+   "seed": 14,
+   "club": "Memphis Grizzlies",
+   "record": "40-42",
+   "combinations": 5
+  }
+ ],
+ "lottery_winners": [
+  "Charlotte Bobcats",
+  "Denver Nuggets",
+  "Utah Jazz"
+ ],
+ "picks": [
+  {
+   "pick": 1,
+   "round": 1,
+   "original": "CHA",
+   "owner": "CHA",
+   "owner_club": "Charlotte Bobcats"
+  },
+  {
+   "pick": 2,
+   "round": 1,
+   "original": "DEN",
+   "owner": "DEN",
+   "owner_club": "Denver Nuggets"
+  },
+  {
+   "pick": 3,
+   "round": 1,
+   "original": "UTA",
+   "owner": "UTA",
+   "owner_club": "Utah Jazz"
+  },
+  {
+   "pick": 4,
+   "round": 1,
+   "original": "NJN",
+   "owner": "NJN",
+   "owner_club": "New Jersey Nets"
+  },
+  {
+   "pick": 5,
+   "round": 1,
+   "original": "NOK",
+   "owner": "NOK",
+   "owner_club": "New Orleans/Oklahoma City Hornets"
+  },
+  {
+   "pick": 6,
+   "round": 1,
+   "original": "NYK",
+   "owner": "NYK",
+   "owner_club": "New York Knicks"
+  },
+  {
+   "pick": 7,
+   "round": 1,
+   "original": "MIL",
+   "owner": "MIL",
+   "owner_club": "Milwaukee Bucks"
+  },
+  {
+   "pick": 8,
+   "round": 1,
+   "original": "HOU",
+   "owner": "HOU",
+   "owner_club": "Houston Rockets"
+  },
+  {
+   "pick": 9,
+   "round": 1,
+   "original": "WAS",
+   "owner": "WAS",
+   "owner_club": "Washington Wizards"
+  },
+  {
+   "pick": 10,
+   "round": 1,
+   "original": "LAC",
+   "owner": "LAC",
+   "owner_club": "Los Angeles Clippers"
+  },
+  {
+   "pick": 11,
+   "round": 1,
+   "original": "ORL",
+   "owner": "ORL",
+   "owner_club": "Orlando Magic"
+  },
+  {
+   "pick": 12,
+   "round": 1,
+   "original": "SEA",
+   "owner": "SEA",
+   "owner_club": "Seattle SuperSonics"
+  },
+  {
+   "pick": 13,
+   "round": 1,
+   "original": "IND",
+   "owner": "IND",
+   "owner_club": "Indiana Pacers"
+  },
+  {
+   "pick": 14,
+   "round": 1,
+   "original": "MEM",
+   "owner": "MEM",
+   "owner_club": "Memphis Grizzlies"
+  },
+  {
+   "pick": 15,
+   "round": 1,
+   "original": "POR",
+   "owner": "POR",
+   "owner_club": "Portland Trail Blazers"
+  },
+  {
+   "pick": 16,
+   "round": 1,
+   "original": "PHI",
+   "owner": "DEN",
+   "owner_club": "Denver Nuggets"
+  },
+  {
+   "pick": 17,
+   "round": 1,
+   "original": "LAL",
+   "owner": "LAL",
+   "owner_club": "Los Angeles Lakers"
+  },
+  {
+   "pick": 18,
+   "round": 1,
+   "original": "DET",
+   "owner": "DET",
+   "owner_club": "Detroit Pistons"
+  },
+  {
+   "pick": 19,
+   "round": 1,
+   "original": "GSW",
+   "owner": "GSW",
+   "owner_club": "Golden State Warriors"
+  },
+  {
+   "pick": 20,
+   "round": 1,
+   "original": "ATL",
+   "owner": "ATL",
+   "owner_club": "Atlanta Hawks"
+  },
+  {
+   "pick": 21,
+   "round": 1,
+   "original": "CLE",
+   "owner": "PHO",
+   "owner_club": "Phoenix Suns"
+  },
+  {
+   "pick": 22,
+   "round": 1,
+   "original": "CHI",
+   "owner": "CHI",
+   "owner_club": "Chicago Bulls"
+  },
+  {
+   "pick": 23,
+   "round": 1,
+   "original": "MIN",
+   "owner": "MIN",
+   "owner_club": "Minnesota Timberwolves"
+  },
+  {
+   "pick": 24,
+   "round": 1,
+   "original": "SAC",
+   "owner": "SAC",
+   "owner_club": "Sacramento Kings"
+  },
+  {
+   "pick": 25,
+   "round": 1,
+   "original": "DAL",
+   "owner": "DAL",
+   "owner_club": "Dallas Mavericks"
+  },
+  {
+   "pick": 26,
+   "round": 1,
+   "original": "BOS",
+   "owner": "BOS",
+   "owner_club": "Boston Celtics"
+  },
+  {
+   "pick": 27,
+   "round": 1,
+   "original": "SAS",
+   "owner": "SAS",
+   "owner_club": "San Antonio Spurs"
+  },
+  {
+   "pick": 28,
+   "round": 1,
+   "original": "MIA",
+   "owner": "MIA",
+   "owner_club": "Miami Heat"
+  },
+  {
+   "pick": 29,
+   "round": 1,
+   "original": "TOR",
+   "owner": "TOR",
+   "owner_club": "Toronto Raptors"
+  },
+  {
+   "pick": 30,
+   "round": 1,
+   "original": "PHO",
+   "owner": "SAS",
+   "owner_club": "San Antonio Spurs"
+  },
+  {
+   "pick": 31,
+   "round": 2,
+   "original": "CHA",
+   "owner": "CHA",
+   "owner_club": "Charlotte Bobcats"
+  },
+  {
+   "pick": 32,
+   "round": 2,
+   "original": "UTA",
+   "owner": "UTA",
+   "owner_club": "Utah Jazz"
+  },
+  {
+   "pick": 33,
+   "round": 2,
+   "original": "DEN",
+   "owner": "DEN",
+   "owner_club": "Denver Nuggets"
+  },
+  {
+   "pick": 34,
+   "round": 2,
+   "original": "NOK",
+   "owner": "NOK",
+   "owner_club": "New Orleans/Oklahoma City Hornets"
+  },
+  {
+   "pick": 35,
+   "round": 2,
+   "original": "NJN",
+   "owner": "NJN",
+   "owner_club": "New Jersey Nets"
+  },
+  {
+   "pick": 36,
+   "round": 2,
+   "original": "NYK",
+   "owner": "NYK",
+   "owner_club": "New York Knicks"
+  },
+  {
+   "pick": 37,
+   "round": 2,
+   "original": "MIL",
+   "owner": "MIL",
+   "owner_club": "Milwaukee Bucks"
+  },
+  {
+   "pick": 38,
+   "round": 2,
+   "original": "WAS",
+   "owner": "WAS",
+   "owner_club": "Washington Wizards"
+  },
+  {
+   "pick": 39,
+   "round": 2,
+   "original": "HOU",
+   "owner": "NYK",
+   "owner_club": "New York Knicks"
+  },
+  {
+   "pick": 40,
+   "round": 2,
+   "original": "LAC",
+   "owner": "LAC",
+   "owner_club": "Los Angeles Clippers"
+  },
+  {
+   "pick": 41,
+   "round": 2,
+   "original": "SEA",
+   "owner": "SEA",
+   "owner_club": "Seattle SuperSonics"
+  },
+  {
+   "pick": 42,
+   "round": 2,
+   "original": "ORL",
+   "owner": "ORL",
+   "owner_club": "Orlando Magic"
+  },
+  {
+   "pick": 43,
+   "round": 2,
+   "original": "POR",
+   "owner": "POR",
+   "owner_club": "Portland Trail Blazers"
+  },
+  {
+   "pick": 44,
+   "round": 2,
+   "original": "MEM",
+   "owner": "MEM",
+   "owner_club": "Memphis Grizzlies"
+  },
+  {
+   "pick": 45,
+   "round": 2,
+   "original": "IND",
+   "owner": "IND",
+   "owner_club": "Indiana Pacers"
+  },
+  {
+   "pick": 46,
+   "round": 2,
+   "original": "LAL",
+   "owner": "LAL",
+   "owner_club": "Los Angeles Lakers"
+  },
+  {
+   "pick": 47,
+   "round": 2,
+   "original": "PHI",
+   "owner": "DET",
+   "owner_club": "Detroit Pistons"
+  },
+  {
+   "pick": 48,
+   "round": 2,
+   "original": "DET",
+   "owner": "DET",
+   "owner_club": "Detroit Pistons"
+  },
+  {
+   "pick": 49,
+   "round": 2,
+   "original": "ATL",
+   "owner": "ATL",
+   "owner_club": "Atlanta Hawks"
+  },
+  {
+   "pick": 50,
+   "round": 2,
+   "original": "GSW",
+   "owner": "GSW",
+   "owner_club": "Golden State Warriors"
+  },
+  {
+   "pick": 51,
+   "round": 2,
+   "original": "CHI",
+   "owner": "UTA",
+   "owner_club": "Utah Jazz"
+  },
+  {
+   "pick": 52,
+   "round": 2,
+   "original": "CLE",
+   "owner": "CLE",
+   "owner_club": "Cleveland Cavaliers"
+  },
+  {
+   "pick": 53,
+   "round": 2,
+   "original": "MIN",
+   "owner": "MIN",
+   "owner_club": "Minnesota Timberwolves"
+  },
+  {
+   "pick": 54,
+   "round": 2,
+   "original": "SAC",
+   "owner": "BOS",
+   "owner_club": "Boston Celtics"
+  },
+  {
+   "pick": 55,
+   "round": 2,
+   "original": "BOS",
+   "owner": "CLE",
+   "owner_club": "Cleveland Cavaliers"
+  },
+  {
+   "pick": 56,
+   "round": 2,
+   "original": "DAL",
+   "owner": "DAL",
+   "owner_club": "Dallas Mavericks"
+  },
+  {
+   "pick": 57,
+   "round": 2,
+   "original": "SAS",
+   "owner": "SAS",
+   "owner_club": "San Antonio Spurs"
+  },
+  {
+   "pick": 58,
+   "round": 2,
+   "original": "MIA",
+   "owner": "MIA",
+   "owner_club": "Miami Heat"
+  },
+  {
+   "pick": 59,
+   "round": 2,
+   "original": "TOR",
+   "owner": "TOR",
+   "owner_club": "Toronto Raptors"
+  },
+  {
+   "pick": 60,
+   "round": 2,
+   "original": "PHO",
+   "owner": "PHO",
+   "owner_club": "Phoenix Suns"
+  }
+ ]
+}

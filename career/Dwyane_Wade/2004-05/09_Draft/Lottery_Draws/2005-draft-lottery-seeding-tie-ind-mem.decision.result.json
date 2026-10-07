@@ -1,0 +1,12 @@
+{
+ "date": "2005-05-24",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2005-draft-lottery-seeding-tie-ind-mem",
+ "kind": "decision",
+ "options": {
+  "Indiana Pacers": 0.5,
+  "Memphis Grizzlies": 0.5
+ },
+ "outcome": "Indiana Pacers",
+ "question": "2005 draft order (lottery-seeding): which of Indiana Pacers, Memphis Grizzlies (tied at 0.488) goes first?"
+}

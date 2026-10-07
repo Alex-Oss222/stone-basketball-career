@@ -1,0 +1,13 @@
+{
+ "date": "2005-05-24",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2005-draft-lottery-seeding-tie-den-njn-nok",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.333334,
+  "New Jersey Nets": 0.333333,
+  "New Orleans Hornets": 0.333333
+ },
+ "outcome": "New Jersey Nets",
+ "question": "2005 draft order (lottery-seeding): which of Denver Nuggets, New Jersey Nets, New Orleans Hornets (tied at 0.354) goes first?"
+}

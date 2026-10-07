@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-playoff-clubs-tie-atl-gsw",
+ "date": "2005-05-24",
+ "question": "2005 draft order (playoff-clubs): which of Atlanta Hawks, Golden State Warriors (tied at 0.537) goes first?",
+ "decider": "NBA draft lottery (engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.5,
+  "Golden State Warriors": 0.5
+ },
+ "basis": "Equal simulated records; ordered by a drawing (runtime/lottery.py)."
+}

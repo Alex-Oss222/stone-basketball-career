@@ -1,0 +1,12 @@
+{
+ "date": "2005-05-24",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2005-draft-lottery-seeding-tie-hou-was",
+ "kind": "decision",
+ "options": {
+  "Houston Rockets": 0.5,
+  "Washington Wizards": 0.5
+ },
+ "outcome": "Houston Rockets",
+ "question": "2005 draft order (lottery-seeding): which of Houston Rockets, Washington Wizards (tied at 0.451) goes first?"
+}
