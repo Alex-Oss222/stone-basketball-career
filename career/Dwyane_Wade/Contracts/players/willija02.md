@@ -2,9 +2,9 @@
 
 # Contract | Jason Williams
 
-Known through: 2005-05-29. [Open interactive contract](willija02.html#contract) · [Contract history](willija02.html#contract-history)
+Known through: 2005-06-05. [Open interactive contract](willija02.html#contract) · [Contract history](willija02.html#contract-history)
 
-Jason Williams: under contract. Evidence cutoff: 2005-05-29.
+Jason Williams: under contract. Evidence cutoff: 2005-06-05.
 
 ## Current contract
 

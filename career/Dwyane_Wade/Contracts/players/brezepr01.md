@@ -2,9 +2,9 @@
 
 # Contract | Primož Brezec
 
-Known through: 2005-05-29. [Open interactive contract](brezepr01.html#contract) · [Contract history](brezepr01.html#contract-history)
+Known through: 2005-06-05. [Open interactive contract](brezepr01.html#contract) · [Contract history](brezepr01.html#contract-history)
 
-Primož Brezec: under rookie contract. Evidence cutoff: 2005-05-29.
+Primož Brezec: under rookie contract. Evidence cutoff: 2005-06-05.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Al Jefferson
 
-Known through: 2005-05-29. [Open interactive contract](aljefferson.html#contract) · [Contract history](aljefferson.html#contract-history)
+Known through: 2005-06-05. [Open interactive contract](aljefferson.html#contract) · [Contract history](aljefferson.html#contract-history)
 
-Al Jefferson: under contract. Evidence cutoff: 2005-05-29.
+Al Jefferson: under contract. Evidence cutoff: 2005-06-05.
 
 ## Current contract
 
