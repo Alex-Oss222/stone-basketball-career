@@ -37,7 +37,7 @@ Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profil
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 6/6 | 37.1 | 22.0 | 10.3 | 2.0 | 1.8 | 1.3 | 51.0 | 33.3 | 78.9 | 57.5 | 59-23 · won first round |
+| 2004-05 | 20 | Toronto Raptors | 7/7 | 35.5 | 20.4 | 10.0 | 1.9 | 1.6 | 1.6 | 51.9 | 42.9 | 78.9 | 58.3 | 59-23 · won first round |
 
 ## Season highs (regular season)
 

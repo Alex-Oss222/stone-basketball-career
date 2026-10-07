@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Atlanta Hawks | 3 | 0 | 3.2 | 0.0 | 0.7 | 0.0 | 0.0 | 0.0 | 0.3 | 0.0% | N/A | N/A |
-| 2004-05 | Minnesota Timberwolves | 5 | 0 | 3.5 | 0.8 | 0.6 | 0.2 | 0.0 | 0.0 | 0.0 | 33.3% | 0.0% | 100.0% |
+| 2004-05 | Minnesota Timberwolves | 6 | 0 | 3.5 | 0.7 | 0.5 | 0.2 | 0.0 | 0.0 | 0.0 | 20.0% | 0.0% | 100.0% |
 
 ## Awards and honors
 

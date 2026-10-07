@@ -117,7 +117,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Minnesota Timberwolves | 5 | 5 | 35.1 | 17.4 | 5.8 | 3.4 | 0.6 | 0.6 | 1.0 | 47.9% | N/A | 77.3% |
+| 2004-05 | Minnesota Timberwolves | 6 | 6 | 35.2 | 17.5 | 5.7 | 3.0 | 0.5 | 0.5 | 0.8 | 51.2% | N/A | 75.0% |
 
 ## Awards and honors
 

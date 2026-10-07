@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | San Antonio Spurs | 10 | 10 | 33.5 | 11.4 | 2.7 | 4.2 | 0.5 | 0.3 | 2.0 | 37.4% | 22.2% | 78.6% |
-| 2004-05 | Boston Celtics | 6 | 6 | 29.8 | 16.3 | 4.5 | 4.2 | 0.5 | 0.0 | 1.8 | 42.5% | 41.4% | 80.0% |
+| 2004-05 | Boston Celtics | 7 | 7 | 29.9 | 16.4 | 4.7 | 3.7 | 0.4 | 0.1 | 1.6 | 43.5% | 44.1% | 81.2% |
 
 ## Awards and honors
 

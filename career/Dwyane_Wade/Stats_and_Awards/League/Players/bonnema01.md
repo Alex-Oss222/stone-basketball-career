@@ -116,7 +116,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Toronto Raptors | 6 | 0 | 19.6 | 9.2 | 3.8 | 0.7 | 0.5 | 0.2 | 0.3 | 57.5% | 63.6% | 40.0% |
+| 2004-05 | Toronto Raptors | 7 | 0 | 19.4 | 9.4 | 4.0 | 0.9 | 0.4 | 0.1 | 0.4 | 56.0% | 66.7% | 40.0% |
 
 ## Awards and honors
 

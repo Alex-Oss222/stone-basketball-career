@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Denver Nuggets | 5 | 0 | 20.9 | 5.4 | 5.0 | 1.0 | 0.4 | 1.4 | 1.2 | 34.5% | 0.0% | 63.6% |
-| 2004-05 | Phoenix Suns | 5 | 0 | 11.2 | 6.2 | 2.2 | 0.4 | 0.6 | 0.4 | 0.4 | 68.4% | N/A | 62.5% |
+| 2004-05 | Phoenix Suns | 6 | 0 | 10.9 | 5.7 | 2.5 | 0.5 | 0.8 | 0.3 | 0.3 | 66.7% | N/A | 50.0% |
 
 ## Awards and honors
 

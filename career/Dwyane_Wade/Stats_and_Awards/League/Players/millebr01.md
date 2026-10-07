@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Sacramento Kings | 6 | 6 | 33.4 | 10.7 | 9.8 | 3.0 | 0.8 | 0.5 | 1.5 | 54.5% | 50.0% | 78.9% |
-| 2004-05 | Sacramento Kings | 5 | 5 | 31.6 | 17.0 | 5.2 | 4.0 | 1.0 | 0.4 | 1.4 | 60.4% | 33.3% | 83.9% |
+| 2004-05 | Sacramento Kings | 6 | 6 | 29.6 | 15.2 | 5.7 | 3.5 | 0.8 | 0.5 | 1.3 | 56.4% | 33.3% | 77.8% |
 
 ## Awards and honors
 

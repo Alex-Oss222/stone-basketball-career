@@ -35,7 +35,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | 19 | Toronto Raptors | 9/9 | 33.9 | 14.0 | 6.2 | 1.1 | 1.1 | 1.4 | 49.5 | 60.0 | 62.5 | 54.0 | 42-40 · lost conference semifinals |
-| 2004-05 | 20 | Toronto Raptors | 6/6 | 37.1 | 22.0 | 10.3 | 2.0 | 1.8 | 1.3 | 51.0 | 33.3 | 78.9 | 57.5 | 59-23 · won first round |
+| 2004-05 | 20 | Toronto Raptors | 7/7 | 35.5 | 20.4 | 10.0 | 1.9 | 1.6 | 1.6 | 51.9 | 42.9 | 78.9 | 58.3 | 59-23 · won first round |
 
 ## Awards
 

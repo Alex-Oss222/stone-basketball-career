@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Denver Nuggets | 5 | 0 | 14.4 | 4.2 | 3.0 | 1.0 | 0.8 | 0.6 | 1.2 | 42.1% | 37.5% | 40.0% |
-| 2004-05 | Minnesota Timberwolves | 5 | 0 | 23.1 | 13.6 | 3.2 | 2.0 | 0.2 | 0.0 | 1.2 | 51.1% | 45.8% | 90.0% |
+| 2004-05 | Minnesota Timberwolves | 6 | 0 | 23.2 | 14.7 | 3.0 | 1.7 | 0.2 | 0.0 | 1.0 | 55.2% | 50.0% | 84.6% |
 
 ## Awards and honors
 

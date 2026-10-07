@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Indiana Pacers | 19 | 0 | 19.2 | 6.2 | 2.1 | 2.3 | 0.4 | 0.2 | 1.2 | 43.9% | 0.0% | 72.0% |
-| 2004-05 | Toronto Raptors | 6 | 0 | 18.8 | 3.7 | 2.5 | 1.7 | 0.5 | 0.0 | 1.2 | 28.6% | 0.0% | 54.5% |
+| 2004-05 | Toronto Raptors | 7 | 0 | 18.4 | 3.7 | 3.0 | 2.1 | 0.7 | 0.1 | 1.3 | 27.8% | 0.0% | 54.5% |
 
 ## Awards and honors
 

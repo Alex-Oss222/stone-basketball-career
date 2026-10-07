@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Memphis Grizzlies | 4 | 0 | 25.2 | 12.2 | 3.0 | 1.5 | 0.8 | 0.8 | 1.2 | 46.2% | 0.0% | 33.3% |
-| 2004-05 | Boston Celtics | 6 | 6 | 37.3 | 14.5 | 13.3 | 1.7 | 1.7 | 2.2 | 2.3 | 39.7% | 0.0% | 71.4% |
+| 2004-05 | Boston Celtics | 7 | 7 | 37.6 | 13.7 | 13.0 | 1.4 | 1.9 | 2.3 | 2.4 | 40.2% | 0.0% | 70.3% |
 
 ## Awards and honors
 

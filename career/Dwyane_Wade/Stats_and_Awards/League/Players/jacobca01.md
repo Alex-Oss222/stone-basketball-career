@@ -118,7 +118,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Phoenix Suns | 5 | 0 | 21.5 | 6.0 | 2.8 | 2.4 | 0.6 | 0.2 | 1.0 | 39.1% | 20.0% | 78.6% |
+| 2004-05 | Phoenix Suns | 6 | 0 | 21.2 | 5.8 | 2.5 | 2.0 | 0.7 | 0.2 | 0.8 | 37.0% | 28.6% | 81.2% |
 
 ## Awards and honors
 

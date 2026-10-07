@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | New Orleans Hornets | 7 | 7 | 36.1 | 10.1 | 10.7 | 2.6 | 1.6 | 0.3 | 1.4 | 39.4% | 0.0% | 88.2% |
-| 2004-05 | Sacramento Kings | 5 | 5 | 31.2 | 8.0 | 8.4 | 3.6 | 0.4 | 1.4 | 0.6 | 37.8% | N/A | 80.0% |
+| 2004-05 | Sacramento Kings | 6 | 6 | 32.1 | 9.0 | 8.0 | 4.3 | 0.5 | 1.2 | 0.5 | 40.0% | 100.0% | 81.2% |
 
 ## Awards and honors
 

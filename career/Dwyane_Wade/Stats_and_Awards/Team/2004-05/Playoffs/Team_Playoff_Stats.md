@@ -1,12 +1,13 @@
 # Miami Heat 2004-05 playoff statistics
 
-Through 2005-05-01: 4 closed Miami playoff game(s). Playoff games only (`runtime/playoff_stats.py`). [League playoff statistics](../../../League/2004-05/Playoffs/Playoff_Stats.md) · [bracket](../../../League/2004-05/Playoffs.md).
+Through 2005-05-08: 6 closed Miami playoff game(s). Playoff games only (`runtime/playoff_stats.py`). [League playoff statistics](../../../League/2004-05/Playoffs/Playoff_Stats.md) · [bracket](../../../League/2004-05/Playoffs.md).
 
 ## Series
 
 | Round | Opponent | Result |
 | --- | --- | --- |
-| First round | Detroit Pistons | In progress 2-2 |
+| First round | Detroit Pistons | Won 4-2 |
+| Conference semifinals | Atlanta Hawks | In progress 0-0 |
 
 ## Games
 
@@ -16,20 +17,22 @@ Through 2005-05-01: 4 closed Miami playoff game(s). Playoff games only (`runtime
 | 2005-04-26 | vs Detroit Pistons | W 129-111 |
 | 2005-04-29 | at Detroit Pistons | L 96-98 |
 | 2005-05-01 | at Detroit Pistons | L 74-112 |
+| 2005-05-03 | vs Detroit Pistons | W 115-88 |
+| 2005-05-05 | at Detroit Pistons | W 106-94 |
 
 ## Players
 
 | Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Donyell Marshall | Miami Heat | 4 | 4 | 33.8 | 17.5 | 6.5 | 2.8 | 1.2 | 0.5 | 2.2 | 26-50 | .520 | 8-18 | .444 | 10-13 | .769 | .628 |
-| Dwyane Wade | Miami Heat | 4 | 4 | 33.2 | 15.2 | 3.0 | 2.8 | 2.0 | 1.0 | 1.5 | 24-43 | .558 | 3-7 | .429 | 10-10 | 1.000 | .643 |
-| Mike James | Miami Heat | 4 | 4 | 31.8 | 15.8 | 2.2 | 4.2 | 1.5 | 0.0 | 1.8 | 23-41 | .561 | 12-16 | .750 | 5-7 | .714 | .715 |
-| Matt Harpring | Miami Heat | 4 | 4 | 30.2 | 14.8 | 5.2 | 1.8 | 0.8 | 0.0 | 1.5 | 23-49 | .469 | 0-2 | .000 | 13-16 | .812 | .526 |
-| Brian Grant | Miami Heat | 4 | 4 | 22.3 | 5.8 | 3.0 | 0.8 | 1.2 | 0.5 | 0.2 | 9-18 | .500 | 1-1 | 1.000 | 4-4 | 1.000 | .582 |
-| Mehmet Okur | Miami Heat | 4 | 0 | 21.9 | 6.5 | 5.5 | 1.5 | 0.5 | 0.8 | 2.8 | 9-19 | .474 | 0-2 | .000 | 8-9 | .889 | .566 |
-| Rafer Alston | Miami Heat | 4 | 0 | 17.6 | 6.8 | 2.0 | 4.0 | 0.5 | 0.0 | 1.2 | 9-30 | .300 | 2-9 | .222 | 7-8 | .875 | .403 |
-| Caron Butler | Miami Heat | 4 | 0 | 15.0 | 5.8 | 3.0 | 1.2 | 0.0 | 0.0 | 1.0 | 8-22 | .364 | 1-3 | .333 | 6-7 | .857 | .459 |
-| Dorell Wright | Miami Heat | 4 | 0 | 12.6 | 2.5 | 1.8 | 1.8 | 0.8 | 0.0 | 0.8 | 3-9 | .333 | 0-0 | N/A | 4-4 | 1.000 | .465 |
-| Raja Bell | Miami Heat | 4 | 0 | 11.0 | 7.5 | 2.2 | 0.5 | 0.2 | 0.5 | 0.8 | 13-22 | .591 | 1-1 | 1.000 | 3-4 | .750 | .631 |
-| Lamond Murray | Miami Heat | 4 | 0 | 7.7 | 1.5 | 1.2 | 0.0 | 0.0 | 0.5 | 0.5 | 3-8 | .375 | 0-1 | .000 | 0-0 | N/A | .375 |
-| Maurice Baker | Miami Heat | 3 | 0 | 3.9 | 0.0 | 1.0 | 0.3 | 0.0 | 0.0 | 0.0 | 0-3 | .000 | 0-0 | N/A | 0-2 | .000 | .000 |
+| Dwyane Wade | Miami Heat | 6 | 6 | 35.3 | 18.2 | 4.0 | 3.8 | 1.3 | 1.2 | 1.2 | 41-71 | .577 | 8-15 | .533 | 19-19 | 1.000 | .687 |
+| Donyell Marshall | Miami Heat | 6 | 6 | 34.3 | 17.5 | 7.2 | 2.3 | 1.0 | 0.7 | 2.3 | 36-76 | .474 | 12-32 | .375 | 21-24 | .875 | .607 |
+| Matt Harpring | Miami Heat | 6 | 6 | 31.4 | 14.2 | 5.7 | 1.7 | 0.7 | 0.5 | 1.5 | 35-70 | .500 | 0-3 | .000 | 15-20 | .750 | .539 |
+| Mike James | Miami Heat | 6 | 6 | 31.0 | 15.3 | 2.8 | 4.2 | 1.2 | 0.0 | 1.7 | 32-64 | .500 | 16-22 | .727 | 12-17 | .706 | .644 |
+| Brian Grant | Miami Heat | 6 | 6 | 24.7 | 7.3 | 3.8 | 1.5 | 1.0 | 0.5 | 0.5 | 18-35 | .514 | 1-1 | 1.000 | 7-7 | 1.000 | .578 |
+| Mehmet Okur | Miami Heat | 6 | 0 | 20.3 | 6.5 | 5.0 | 1.5 | 0.5 | 1.2 | 2.2 | 14-32 | .438 | 1-3 | .333 | 10-15 | .667 | .505 |
+| Rafer Alston | Miami Heat | 6 | 0 | 16.8 | 6.8 | 2.2 | 3.5 | 1.0 | 0.2 | 1.0 | 13-43 | .302 | 6-19 | .316 | 9-10 | .900 | .432 |
+| Caron Butler | Miami Heat | 6 | 0 | 13.9 | 5.7 | 2.7 | 0.8 | 0.2 | 0.2 | 0.8 | 13-29 | .448 | 2-5 | .400 | 6-7 | .857 | .530 |
+| Dorell Wright | Miami Heat | 6 | 0 | 11.9 | 3.7 | 1.7 | 1.3 | 0.7 | 0.0 | 0.7 | 8-16 | .500 | 1-1 | 1.000 | 5-5 | 1.000 | .604 |
+| Raja Bell | Miami Heat | 6 | 0 | 10.4 | 6.3 | 2.2 | 0.5 | 0.3 | 0.3 | 0.7 | 16-28 | .571 | 1-1 | 1.000 | 5-6 | .833 | .620 |
+| Lamond Murray | Miami Heat | 6 | 0 | 7.0 | 1.0 | 1.3 | 0.0 | 0.0 | 0.3 | 0.3 | 3-11 | .273 | 0-2 | .000 | 0-0 | N/A | .273 |
+| Maurice Baker | Miami Heat | 5 | 0 | 3.4 | 0.8 | 0.6 | 0.4 | 0.0 | 0.0 | 0.0 | 2-6 | .333 | 0-0 | N/A | 0-2 | .000 | .291 |

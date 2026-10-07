@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Indiana Pacers | 19 | 19 | 29.4 | 10.4 | 2.5 | 3.7 | 1.1 | 0.2 | 1.1 | 42.9% | 42.5% | 97.4% |
-| 2004-05 | Boston Celtics | 6 | 6 | 32.2 | 12.2 | 3.8 | 1.3 | 0.7 | 0.0 | 1.0 | 43.9% | 27.8% | 85.7% |
+| 2004-05 | Boston Celtics | 7 | 7 | 32.0 | 12.0 | 3.7 | 1.4 | 0.6 | 0.1 | 0.9 | 43.1% | 28.6% | 88.0% |
 
 ## Awards and honors
 
