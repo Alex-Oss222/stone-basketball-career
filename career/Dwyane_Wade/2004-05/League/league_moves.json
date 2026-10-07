@@ -3518,6 +3518,68 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.24 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-03-05-expire-slayta01",
+   "date": "2005-03-05",
+   "kind": "expire",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.7 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-05-ten_day-slayta01",
+   "date": "2005-03-05",
+   "kind": "ten_day",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.84 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-03-05-ten_day-hunteli01",
+   "date": "2005-03-05",
+   "kind": "ten_day",
+   "player": "Lindsey Hunter",
+   "bbr_id": "hunteli01",
+   "from": null,
+   "to": "Washington Wizards",
+   "role": {
+    "player_id": "Lindsey Hunter",
+    "bbr_id": "hunteli01",
+    "position": "SG",
+    "games": 76,
+    "minutes": 1144
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.26 x fit"
   }
  ],
  "market_days": [
@@ -3643,6 +3705,7 @@
   "2005-03-01",
   "2005-03-02",
   "2005-03-03",
-  "2005-03-04"
+  "2005-03-04",
+  "2005-03-05"
  ]
 }
