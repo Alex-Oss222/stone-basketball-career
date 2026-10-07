@@ -4,7 +4,7 @@
 
 ![Chris Bosh career overview](assets/career_overview.svg)
 
-Career date: **2005-05-22** · Toronto Raptors · #4 · PF · age 21
+Career date: **2005-05-29** · Toronto Raptors · #4 · PF · age 21
 
 A real player the user follows, not one the user controls: his club decides his moves and the engine plays his games. Every number below comes from closed simulated games and the league's recorded award decisions.
 
@@ -35,7 +35,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | 19 | Toronto Raptors | 9/9 | 33.9 | 14.0 | 6.2 | 1.1 | 1.1 | 1.4 | 49.5 | 60.0 | 62.5 | 54.0 | 42-40 · lost conference semifinals |
-| 2004-05 | 20 | Toronto Raptors | 11/11 | 36.3 | 18.4 | 10.6 | 1.9 | 1.4 | 1.6 | 50.0 | 50.0 | 80.7 | 57.0 | 59-23 · won conference semifinals |
+| 2004-05 | 20 | Toronto Raptors | 14/14 | 36.6 | 18.5 | 10.4 | 1.8 | 1.2 | 1.6 | 52.4 | 44.4 | 75.6 | 58.5 | 59-23 · won conference semifinals |
 
 ## Awards
 
