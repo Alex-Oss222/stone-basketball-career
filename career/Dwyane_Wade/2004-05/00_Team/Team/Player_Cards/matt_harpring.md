@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 28 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** January 24, 2005 · **Statistics through:** 2005-03-02 
+**Opening assessment:** January 24, 2005 · **Statistics through:** 2005-03-03 
 
 **Contract/control:** Acquired by trade from Utah Jazz on January 24, 2005: $4,690,000 in 2004-05; contract through 2004-05. (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at SF, staff plan 34 minutes (staff rotation dated 2005-02-17, [record](../Depth_Chart/Reviews/2005-02-17/rotation.json)).
+**Role:** Starter at SF, staff plan 34 minutes (staff rotation dated 2005-03-03, [record](../Depth_Chart/Reviews/2005-03-03/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -44,11 +44,12 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 | 2005-01-20 | Staff rotation of 2005-01-20: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2005-01-20/rotation.json) |
 | 2005-02-03 | Staff rotation of 2005-02-03: starter at SF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2005-02-03/rotation.json) |
 | 2005-02-17 | Staff rotation of 2005-02-17: starter at SF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2005-02-17/rotation.json) |
+| 2005-03-03 | Staff rotation of 2005-03-03: starter at SF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2005-03-03/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [League baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json), [signing record](../../../00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-02-17.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-03-03.
 
 <!-- yearly-statistics:start -->
 
@@ -61,7 +62,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Utah Jazz | 31 | N/A | 36.6 | 16.2 | 8.0 | 2.0 | 0.7 | 0.1 | 2.1 | 0.471 | 0.242 | 0.688 |
-| 2004-05 | MIA | 11 | 11 | 35.0 | 12.8 | 7.5 | 3.6 | 0.9 | 0.4 | 1.8 | 50.0% | 33.3% | 85.7% |
+| 2004-05 | MIA | 12 | 12 | 34.9 | 12.6 | 7.3 | 3.8 | 1.0 | 0.3 | 1.8 | 50.5% | 33.3% | 85.7% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

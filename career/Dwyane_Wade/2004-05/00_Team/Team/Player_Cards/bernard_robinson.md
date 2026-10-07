@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-03-02 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-03-03 
 
 **Contract/control:** Unsigned draft rights: No. 51 pick of the 2004 draft. (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Reserve outside the planned rotation (staff rotation dated 2005-02-17, [record](../Depth_Chart/Reviews/2005-02-17/rotation.json)).
+**Role:** Reserve outside the planned rotation (staff rotation dated 2005-03-03, [record](../Depth_Chart/Reviews/2005-03-03/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -38,11 +38,12 @@ Unassessed.
 | 2005-01-20 | Staff rotation of 2005-01-20: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2005-01-20/rotation.json) |
 | 2005-02-03 | Staff rotation of 2005-02-03: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2005-02-03/rotation.json) |
 | 2005-02-17 | Staff rotation of 2005-02-17: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2005-02-17/rotation.json) |
+| 2005-03-03 | Staff rotation of 2005-03-03: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2005-03-03/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../../../../career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-02-17.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-03-03.
 
 <!-- yearly-statistics:start -->
 
