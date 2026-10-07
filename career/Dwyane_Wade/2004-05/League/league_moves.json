@@ -4286,6 +4286,126 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.17 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-04-10-ten_day-sesayan01",
+   "date": "2005-04-10",
+   "kind": "ten_day",
+   "player": "Ansu Sesay",
+   "bbr_id": "sesayan01",
+   "from": null,
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Ansu Sesay",
+    "bbr_id": "sesayan01",
+    "position": "SF",
+    "games": 16,
+    "minutes": 128
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.08 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-04-10-expire-breweja01",
+   "date": "2005-04-10",
+   "kind": "expire",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-04-10-expire-johnsli01",
+   "date": "2005-04-10",
+   "kind": "expire",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 15
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-04-10-ten_day-johnsli01",
+   "date": "2005-04-10",
+   "kind": "ten_day",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 15
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.5 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-04-10-waive-millean01",
+   "date": "2005-04-10",
+   "kind": "waive",
+   "player": "Anthony Miller",
+   "bbr_id": "millean01",
+   "from": "San Antonio Spurs",
+   "to": null,
+   "role": {
+    "player_id": "Anthony Miller",
+    "bbr_id": "millean01",
+    "position": "PF",
+    "games": 2,
+    "minutes": 9
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-04-12"
+  },
+  {
+   "id": "2004-05-market-2005-04-10-ten_day-breweja01",
+   "date": "2005-04-10",
+   "kind": "ten_day",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.44 x fit"
   }
  ],
  "market_days": [
@@ -4447,6 +4567,7 @@
   "2005-04-06",
   "2005-04-07",
   "2005-04-08",
-  "2005-04-09"
+  "2005-04-09",
+  "2005-04-10"
  ]
 }

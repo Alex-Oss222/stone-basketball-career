@@ -15,5 +15,6 @@ days: 8-14
 ## Games and events
 
 - 2005-04-08: Miami Heat 107 at Memphis Grizzlies 89 — Miami Heat W 107-89 ([Game 1](Game_1.md), event `2005-04-08-miami-heat-at-memphis-grizzlies`)
+- 2005-04-10: Detroit Pistons 86 at Miami Heat 95 — Miami Heat W 95-86 ([Game 2](Game_2.md), event `2005-04-10-detroit-pistons-at-miami-heat`)
 
 ## Consequences
