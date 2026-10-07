@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2005-05-08 · Miami Heat · active
+Career date: 2005-05-12 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,21 +14,21 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2005-05-08 |
+| Career date | 2005-05-12 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2005-05-05-miami-heat-at-detroit-pistons |
+| Last closed event | 2005-05-11-atlanta-hawks-at-miami-heat |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-05-08 | Current checkpoint | 2005-05-05-miami-heat-at-detroit-pistons | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
+| 2005-05-12 | Current checkpoint | 2005-05-11-atlanta-hawks-at-miami-heat | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2004-10-05 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2005-05-12 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
+| 2005-05-26 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | By 2005-10-31 | Fourth-year (2006-07) team option on the rookie contract | Miami decides | Scheduled gate; no outcome implied | [Contract](index.html#contract_negotiation) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
@@ -196,4 +196,6 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2004-05/08_Playoffs/First_Round/Game_4.md)
 - [Closed game](../2004-05/08_Playoffs/First_Round/Game_5.md)
 - [Closed game](../2004-05/08_Playoffs/First_Round/Game_6.md)
+- [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.md)
+- [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

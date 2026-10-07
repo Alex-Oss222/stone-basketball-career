@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-05-08**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-05-12**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -143,7 +143,7 @@ Card date: **2005-05-08**. 573 registry players, one Markdown card and one inter
 | [Derrick Dial](dialde01.md) | Free agent | 29 | silhouette | [open](dialde01.html) |
 | [Devin Brown](brownde02.md) | Boston Celtics | 26 | silhouette | [open](brownde02.html) |
 | [Dion Glover](glovedi01.md) | Memphis Grizzlies | 26 | silhouette | [open](glovedi01.html) |
-| [Doug Christie](chrisdo01.md) | New Orleans Hornets | 34 | sourced | [open](chrisdo01.html) |
+| [Doug Christie](chrisdo01.md) | New Orleans Hornets | 35 | sourced | [open](chrisdo01.html) |
 | [Dwyane Wade](wadedw01.md) | Miami Heat | 21 | sourced | [open](wadedw01.html) |
 | [Eddie House](houseed01.md) | Los Angeles Clippers | 26 | sourced | [open](houseed01.html) |
 | [Eddie Jones](jonesed02.md) | Utah Jazz | 33 | silhouette | [open](jonesed02.html) |
@@ -164,7 +164,7 @@ Card date: **2005-05-08**. 573 registry players, one Markdown card and one inter
 | [Jon Barry](barryjo01.md) | Indiana Pacers | 35 | sourced | [open](barryjo01.html) |
 | [Joseph Forte](fortejo01.md) | Free agent | 24 | silhouette | [open](fortejo01.html) |
 | [Juaquin Hawkins](hawkiju01.md) | Free agent | 31 | silhouette | [open](hawkiju01.html) |
-| [Keith Bogans](boganke01.md) | Orlando Magic | 24 | sourced | [open](boganke01.html) |
+| [Keith Bogans](boganke01.md) | Orlando Magic | 25 | sourced | [open](boganke01.html) |
 | [Kendall Gill](gillke01.md) | Utah Jazz | 36 | sourced | [open](gillke01.html) |
 | [Kerry Kittles](kittlke01.md) | New Jersey Nets | 30 | silhouette | [open](kittlke01.html) |
 | [Keyon Dooling](doolike01.md) | Utah Jazz | 25 | sourced | [open](doolike01.html) |
@@ -430,7 +430,7 @@ Card date: **2005-05-08**. 573 registry players, one Markdown card and one inter
 | [Jason Caffey](caffeja01.md) | Free agent | 31 | silhouette | [open](caffeja01.html) |
 | [Jermaine O'Neal](onealje01.md) | Indiana Pacers | 26 | sourced | [open](onealje01.html) |
 | [Jerome Beasley](beaslje01.md) | Free agent | 24 | sourced | [open](beaslje01.html) |
-| [Jerome Williams](willije01.md) | Detroit Pistons | 31 | sourced | [open](willije01.html) |
+| [Jerome Williams](willije01.md) | Detroit Pistons | 32 | sourced | [open](willije01.html) |
 | [John Wallace](wallajo01.md) | Free agent | 31 | silhouette | [open](wallajo01.html) |
 | [Josh Davis](davisjo02.md) | Sacramento Kings | 24 | silhouette | [open](davisjo02.html) |
 | [Juwan Howard](howarju01.md) | Golden State Warriors | 32 | sourced | [open](howarju01.html) |
@@ -599,7 +599,7 @@ Card date: **2005-05-08**. 573 registry players, one Markdown card and one inter
 | [Robert Traylor](traylro01.md) | Los Angeles Clippers | 28 | sourced | [open](traylro01.html) |
 | [Ruben Boumtje-Boumtje](boumtru01.md) | Free agent | 26 | silhouette | [open](boumtru01.html) |
 | [Samaki Walker](walkesa01.md) | New Orleans Hornets | 29 | sourced | [open](walkesa01.html) |
-| [Samuel Dalembert](dalemsa01.md) | Philadelphia 76ers | 23 | silhouette | [open](dalemsa01.html) |
+| [Samuel Dalembert](dalemsa01.md) | Philadelphia 76ers | 24 | silhouette | [open](dalemsa01.html) |
 | [Scot Pollard](pollasc01.md) | Indiana Pacers | 30 | sourced | [open](pollasc01.html) |
 | [Scott Williams](willisc01.md) | Free agent | 37 | sourced | [open](willisc01.html) |
 | [Sean Rooks](rooksse01.md) | Free agent | 35 | sourced | [open](rooksse01.html) |

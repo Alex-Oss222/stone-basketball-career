@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `piercpa01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-05-08 · **Club on this date:** Boston Celtics · **Basis:** Boston Celtics: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-05-12 · **Club on this date:** Boston Celtics · **Basis:** Boston Celtics: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #34 · **Born:** 1977-10-13 · **Age on card date:** 27  
 **Registry ID:** `piercpa01` · [Basketball-Reference page](https://www.basketball-reference.com/players/p/piercpa01.html) · ESPN ID 662
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `piercp
 
 ## Simulated statistics
 
-As of **2005-05-08**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-05-12**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 82 closed regular-season games through 2005-05-08. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 82 closed regular-season games through 2005-05-12. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -114,15 +114,15 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-08 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-12 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Boston Celtics | 7 | 7 | 35.5 | 18.9 | 6.6 | 3.6 | 1.6 | 0.7 | 2.1 | 48.5% | 35.7% | 71.8% |
+| 2004-05 | Boston Celtics | 8 | 8 | 33.6 | 18.0 | 6.1 | 3.4 | 1.4 | 0.6 | 2.2 | 49.5% | 35.7% | 73.2% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-05-08, from closed award decisions (5 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-05-12, from closed award decisions (6 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -140,3 +140,4 @@ Simulated honors and shortlist placings through 2005-05-08, from closed award de
 | East Player of the Week | 2004-12-20 to 2004-12-26 | 2004-12-27 | **Winner** | [Decision](../2004-05/12_December/Week_4/League_Awards.md) |
 | East Player of the Month | 2004-12-01 to 2004-12-31 | 2005-01-02 | Shortlist, No. 2 | [Decision](../2004-05/12_December/League_Awards.md) |
 | East Player of the Week | 2005-01-03 to 2005-01-09 | 2005-01-10 | Shortlist, No. 2 | [Decision](../2004-05/01_January/Week_2/League_Awards.md) |
+| All-Defensive Second Team | 2004-11-02 to 2005-04-20 | 2005-05-12 | **Selected** | [Decision](../2004-05/Season_Awards.md) |

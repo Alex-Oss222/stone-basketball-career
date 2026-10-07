@@ -862,7 +862,7 @@
    ],
    "home_court": "Phoenix Suns",
    "wins": {
-    "Phoenix Suns": 1,
+    "Phoenix Suns": 2,
     "Sacramento Kings": 1
    },
    "winner": null,
@@ -893,7 +893,9 @@
      "home": "Sacramento Kings",
      "away": "Phoenix Suns",
      "conditional": false,
-     "event_id": "2005-05-12-phoenix-suns-at-sacramento-kings"
+     "event_id": "2005-05-12-phoenix-suns-at-sacramento-kings",
+     "result": "Phoenix Suns 102, Sacramento Kings 99",
+     "winner": "Phoenix Suns"
     },
     {
      "game": 4,
@@ -943,7 +945,7 @@
    ],
    "home_court": "San Antonio Spurs",
    "wins": {
-    "Minnesota Timberwolves": 2,
+    "Minnesota Timberwolves": 3,
     "San Antonio Spurs": 0
    },
    "winner": null,
@@ -974,7 +976,9 @@
      "home": "Minnesota Timberwolves",
      "away": "San Antonio Spurs",
      "conditional": false,
-     "event_id": "2005-05-12-san-antonio-spurs-at-minnesota-timberwolves"
+     "event_id": "2005-05-12-san-antonio-spurs-at-minnesota-timberwolves",
+     "result": "San Antonio Spurs 93, Minnesota Timberwolves 94",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 4,
@@ -1024,7 +1028,7 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 1,
+    "Toronto Raptors": 2,
     "Boston Celtics": 1
    },
    "winner": null,
@@ -1055,7 +1059,9 @@
      "home": "Boston Celtics",
      "away": "Toronto Raptors",
      "conditional": false,
-     "event_id": "2005-05-12-toronto-raptors-at-boston-celtics"
+     "event_id": "2005-05-12-toronto-raptors-at-boston-celtics",
+     "result": "Toronto Raptors 75, Boston Celtics 73",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 4,

@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-05-08 · Miami Heat · active
+Career date: 2005-05-12 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-95 closed game records in 2004-05 through 2005-05-08. Competitions remain separate.
+97 closed game records in 2004-05 through 2005-05-12. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -14,7 +14,7 @@ Activation: A declared, closed game result supplies observed participation and t
 
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 6 | 35.3 | 18.2 | 4.0 | 3.8 | 1.2 | Complete |
+| playoff | 8 | 34.9 | 20.8 | 4.1 | 3.4 | 1.1 | Complete |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
 | regular | 76 | 36.2 | 21.3 | 5.4 | 4.0 | 1.3 | Complete |
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 41 | 71 | 0.577 | 8 | 15 | 0.533 |
+| playoff | 60 | 107 | 0.561 | 15 | 25 | 0.600 |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
 | regular | 539 | 1017 | 0.530 | 87 | 203 | 0.429 |
 
@@ -127,6 +127,8 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-05-01 | playoff | Detroit Pistons | Played | [Closed game](../2004-05/08_Playoffs/First_Round/Game_4.md) |
 | 2005-05-03 | playoff | Detroit Pistons | Played | [Closed game](../2004-05/08_Playoffs/First_Round/Game_5.md) |
 | 2005-05-05 | playoff | Detroit Pistons | Played | [Closed game](../2004-05/08_Playoffs/First_Round/Game_6.md) |
+| 2005-05-09 | playoff | Atlanta Hawks | Played | [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.md) |
+| 2005-05-11 | playoff | Atlanta Hawks | Played | [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -266,4 +268,6 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/08_Playoffs/First_Round/Game_4.md)
 - [Closed game](../2004-05/08_Playoffs/First_Round/Game_5.md)
 - [Closed game](../2004-05/08_Playoffs/First_Round/Game_6.md)
+- [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.md)
+- [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

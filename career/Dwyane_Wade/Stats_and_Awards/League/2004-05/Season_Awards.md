@@ -1,6 +1,6 @@
 # 2004-05 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-05-10.
+Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-05-12.
 
 ## Calendar
 
@@ -13,7 +13,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2005-05-05 | All-Rookie Teams | 30 head coaches, not for their own players | 2-1 | decided |
 | 2005-05-08 | Most Valuable Player | 127 media | 10-7-5-3-1 | decided |
 | 2005-05-10 | Coach of the Year | 126 media | 5-3-1 | decided |
-| 2005-05-12 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | pending |
+| 2005-05-12 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | decided |
 | 2005-05-18 | All-NBA Teams | 124 media | 5-3-1 | pending |
 | the night the Finals are clinched | Finals MVP | 10 media panel | 1 | pending |
 
@@ -114,3 +114,29 @@ Announced 2005-05-10; 126 media, ballot 5-3-1.
 | 3 | Doc Rivers | Boston Celtics | 51-31 | 30-52 | 0.42 | 126 | 0 |
 
 Complete tally: `season_awards.json` (3 receiving votes).
+
+## All-Defensive Teams
+
+Announced 2005-05-12; 30 head coaches, not for their own players, ballot 2-1.
+
+### First Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Manu Ginobili | G | San Antonio Spurs | 74 | 32.1 | 17.2 | 4.6 | 4.2 | 1.4 | 0.6 | 13.79 | 58 | 29 |
+| Marcus Camby | C | Minnesota Timberwolves | 65 | 33.5 | 7.7 | 10.0 | 2.9 | 1.4 | 3.6 | 11.16 | 58 | 29 |
+| Tim Duncan | F | San Antonio Spurs | 66 | 36.6 | 20.7 | 10.2 | 2.7 | 0.7 | 2.6 | 17.73 | 58 | 29 |
+| Tyson Chandler | F | Chicago Bulls | 80 | 28.9 | 8.0 | 9.4 | 1.0 | 1.1 | 1.6 | 8.42 | 58 | 29 |
+| Kirk Hinrich | G | Chicago Bulls | 77 | 36.4 | 15.8 | 4.5 | 7.2 | 1.6 | 0.5 | 12.28 | 49 | 20 |
+
+### Second Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Kevin Garnett | F | Minnesota Timberwolves | 82 | 39.6 | 24.0 | 13.2 | 6.0 | 1.8 | 0.9 | 22.74 | 25 | 0 |
+| Ben Wallace | C | Detroit Pistons | 74 | 36.9 | 10.3 | 11.7 | 2.1 | 1.2 | 3.0 | 11.71 | 23 | 1 |
+| Greg Buckner | G | Cleveland Cavaliers | 68 | 26.0 | 7.8 | 4.5 | 2.0 | 1.7 | 0.1 | 8.35 | 23 | 1 |
+| Emeka Okafor | F | Washington Wizards | 70 | 35.0 | 14.4 | 9.4 | 0.8 | 1.0 | 2.2 | 11.04 | 21 | 1 |
+| Paul Pierce | G | Boston Celtics | 82 | 35.8 | 19.0 | 6.5 | 4.6 | 1.9 | 0.6 | 15.91 | 20 | 6 |
+
+Also receiving votes: Tony Parker (San Antonio Spurs) 19, Brian Cardinal (Chicago Bulls) 12, Rasho Nesterovic (San Antonio Spurs) 9, Larry Hughes (Washington Wizards) 6, Jamal Crawford (Chicago Bulls) 5, Andrés Nocioni (San Antonio Spurs) 3, Darius Miles (Cleveland Cavaliers) 2, Shawn Marion (Phoenix Suns) 1.

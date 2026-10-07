@@ -845,6 +845,227 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2004-05-all_defensive",
+   "award": "all_defensive",
+   "name": "All-Defensive Teams",
+   "announced_on": "2005-05-12",
+   "electorate": 30,
+   "voters": "head coaches, not for their own players",
+   "ballot": [
+    2,
+    1
+   ],
+   "lens": [
+    0.3,
+    0.6
+   ],
+   "evidence_through": "2005-04-20",
+   "teams": [
+    {
+     "team": "First Team",
+     "players": [
+      {
+       "player": "Manu Ginobili",
+       "team": "San Antonio Spurs",
+       "games": 74,
+       "mpg": 32.1,
+       "pts": 17.2,
+       "reb": 4.6,
+       "ast": 4.2,
+       "stl": 1.4,
+       "blk": 0.6,
+       "game_score": 13.79,
+       "position": "G",
+       "points": 58,
+       "first_team_votes": 29
+      },
+      {
+       "player": "Marcus Camby",
+       "team": "Minnesota Timberwolves",
+       "games": 65,
+       "mpg": 33.5,
+       "pts": 7.7,
+       "reb": 10.0,
+       "ast": 2.9,
+       "stl": 1.4,
+       "blk": 3.6,
+       "game_score": 11.16,
+       "position": "C",
+       "points": 58,
+       "first_team_votes": 29
+      },
+      {
+       "player": "Tim Duncan",
+       "team": "San Antonio Spurs",
+       "games": 66,
+       "mpg": 36.6,
+       "pts": 20.7,
+       "reb": 10.2,
+       "ast": 2.7,
+       "stl": 0.7,
+       "blk": 2.6,
+       "game_score": 17.73,
+       "position": "F",
+       "points": 58,
+       "first_team_votes": 29
+      },
+      {
+       "player": "Tyson Chandler",
+       "team": "Chicago Bulls",
+       "games": 80,
+       "mpg": 28.9,
+       "pts": 8.0,
+       "reb": 9.4,
+       "ast": 1.0,
+       "stl": 1.1,
+       "blk": 1.6,
+       "game_score": 8.42,
+       "position": "F",
+       "points": 58,
+       "first_team_votes": 29
+      },
+      {
+       "player": "Kirk Hinrich",
+       "team": "Chicago Bulls",
+       "games": 77,
+       "mpg": 36.4,
+       "pts": 15.8,
+       "reb": 4.5,
+       "ast": 7.2,
+       "stl": 1.6,
+       "blk": 0.5,
+       "game_score": 12.28,
+       "position": "G",
+       "points": 49,
+       "first_team_votes": 20
+      }
+     ]
+    },
+    {
+     "team": "Second Team",
+     "players": [
+      {
+       "player": "Kevin Garnett",
+       "team": "Minnesota Timberwolves",
+       "games": 82,
+       "mpg": 39.6,
+       "pts": 24.0,
+       "reb": 13.2,
+       "ast": 6.0,
+       "stl": 1.8,
+       "blk": 0.9,
+       "game_score": 22.74,
+       "position": "F",
+       "points": 25,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Ben Wallace",
+       "team": "Detroit Pistons",
+       "games": 74,
+       "mpg": 36.9,
+       "pts": 10.3,
+       "reb": 11.7,
+       "ast": 2.1,
+       "stl": 1.2,
+       "blk": 3.0,
+       "game_score": 11.71,
+       "position": "C",
+       "points": 23,
+       "first_team_votes": 1
+      },
+      {
+       "player": "Greg Buckner",
+       "team": "Cleveland Cavaliers",
+       "games": 68,
+       "mpg": 26.0,
+       "pts": 7.8,
+       "reb": 4.5,
+       "ast": 2.0,
+       "stl": 1.7,
+       "blk": 0.1,
+       "game_score": 8.35,
+       "position": "G",
+       "points": 23,
+       "first_team_votes": 1
+      },
+      {
+       "player": "Emeka Okafor",
+       "team": "Washington Wizards",
+       "games": 70,
+       "mpg": 35.0,
+       "pts": 14.4,
+       "reb": 9.4,
+       "ast": 0.8,
+       "stl": 1.0,
+       "blk": 2.2,
+       "game_score": 11.04,
+       "position": "F",
+       "points": 21,
+       "first_team_votes": 1
+      },
+      {
+       "player": "Paul Pierce",
+       "team": "Boston Celtics",
+       "games": 82,
+       "mpg": 35.8,
+       "pts": 19.0,
+       "reb": 6.5,
+       "ast": 4.6,
+       "stl": 1.9,
+       "blk": 0.6,
+       "game_score": 15.91,
+       "position": "G",
+       "points": 20,
+       "first_team_votes": 6
+      }
+     ]
+    }
+   ],
+   "others": [
+    {
+     "player": "Tony Parker",
+     "team": "San Antonio Spurs",
+     "points": 19
+    },
+    {
+     "player": "Brian Cardinal",
+     "team": "Chicago Bulls",
+     "points": 12
+    },
+    {
+     "player": "Rasho Nesterovic",
+     "team": "San Antonio Spurs",
+     "points": 9
+    },
+    {
+     "player": "Larry Hughes",
+     "team": "Washington Wizards",
+     "points": 6
+    },
+    {
+     "player": "Jamal Crawford",
+     "team": "Chicago Bulls",
+     "points": 5
+    },
+    {
+     "player": "Andrés Nocioni",
+     "team": "San Antonio Spurs",
+     "points": 3
+    },
+    {
+     "player": "Darius Miles",
+     "team": "Cleveland Cavaliers",
+     "points": 2
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "points": 1
+    }
+   ]
   }
  ]
 }

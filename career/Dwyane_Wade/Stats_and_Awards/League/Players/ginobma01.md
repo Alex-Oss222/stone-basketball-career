@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `ginobma01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-05-08 · **Club on this date:** San Antonio Spurs · **Basis:** San Antonio Spurs: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-05-12 · **Club on this date:** San Antonio Spurs · **Basis:** San Antonio Spurs: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #20 · **Born:** 1977-07-28 · **Age on card date:** 27  
 **Registry ID:** `ginobma01` · [Basketball-Reference page](https://www.basketball-reference.com/players/g/ginobma01.html) · ESPN ID 272
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `ginobm
 
 ## Simulated statistics
 
-As of **2005-05-08**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-05-12**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 82 closed regular-season games through 2005-05-08. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 82 closed regular-season games through 2005-05-12. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -114,16 +114,16 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-08 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-12 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | San Antonio Spurs | 10 | 10 | 30.0 | 13.9 | 5.0 | 3.6 | 1.9 | 0.4 | 2.0 | 38.9% | 37.5% | 93.0% |
-| 2004-05 | San Antonio Spurs | 6 | 6 | 30.5 | 18.8 | 3.5 | 4.7 | 1.3 | 1.0 | 3.0 | 56.5% | 46.2% | 75.5% |
+| 2004-05 | San Antonio Spurs | 7 | 7 | 30.3 | 18.4 | 3.4 | 4.6 | 1.3 | 1.0 | 3.3 | 56.5% | 52.9% | 75.0% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-05-08, from closed award decisions (2 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-05-12, from closed award decisions (3 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -131,3 +131,4 @@ Simulated honors and shortlist placings through 2005-05-08, from closed award de
 | West Player of the Week | 2004-12-06 to 2004-12-12 | 2004-12-13 | Shortlist, No. 2 | [Decision](../2004-05/12_December/Week_2/League_Awards.md) |
 | West Player of the Week | 2004-12-27 to 2005-01-02 | 2005-01-03 | **Winner** | [Decision](../2004-05/01_January/Week_1/League_Awards.md) |
 | West Player of the Month | 2005-03-01 to 2005-03-31 | 2005-04-02 | Shortlist, No. 3 | [Decision](../2004-05/03_March/League_Awards.md) |
+| All-Defensive First Team | 2004-11-02 to 2005-04-20 | 2005-05-12 | **Selected** | [Decision](../2004-05/Season_Awards.md) |

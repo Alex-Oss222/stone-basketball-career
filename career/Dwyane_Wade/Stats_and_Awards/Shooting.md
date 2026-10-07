@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2005-05-08**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2005-05-12**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -3196,7 +3196,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
 
-## 2004-05 · NBA regular season · through 2005-05-08
+## 2004-05 · NBA regular season · through 2005-05-12
 
 [Open this period](player_cards.html?period=regular-2004-05-season#shooting)
 
@@ -5876,23 +5876,23 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-04-20 | Orlando Magic | Played | [Game](../2004-05/06_Regular_Season/04_April/Week_3/Game_4.md) | [Result](../2004-05/06_Regular_Season/04_April/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/04_April/Week_3/Game_4.result.json) |
 
-## 2004-05 · NBA playoffs · through 2005-05-08
+## 2004-05 · NBA playoffs · through 2005-05-12
 
 [Open this period](player_cards.html?period=playoff-2004-05-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 6 | 0 | 6 | 41 / 71 | 57.7% | 8 / 15 | 109 | complete |
+| 8 | 0 | 8 | 60 / 107 | 56.1% | 15 / 25 | 166 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 23 | 39 | 59.0% | 7.67 | 6.50 | 39 |
-| Outside paint, under 12 ft | 0 | 1 | 0.0% | 0.00 | 0.17 | 1 |
-| Outside paint, 12 to under 18 ft | 7 | 9 | 77.8% | 2.33 | 1.50 | 9 |
-| 18 ft to the three-point line | 3 | 7 | 42.9% | 1.00 | 1.17 | 7 |
-| Three-point range | 8 | 15 | 53.3% | 4.00 | 2.50 | 15 |
+| Paint | 32 | 55 | 58.2% | 8.00 | 6.88 | 55 |
+| Outside paint, under 12 ft | 1 | 3 | 33.3% | 0.25 | 0.38 | 3 |
+| Outside paint, 12 to under 18 ft | 8 | 14 | 57.1% | 2.00 | 1.75 | 14 |
+| 18 ft to the three-point line | 4 | 10 | 40.0% | 1.00 | 1.25 | 10 |
+| Three-point range | 15 | 25 | 60.0% | 5.62 | 3.12 | 25 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -5902,6 +5902,8 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2005-05-01 | Detroit Pistons | Played | [Game](../2004-05/08_Playoffs/First_Round/Game_4.md) | [Result](../2004-05/08_Playoffs/First_Round/Game_4.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/First_Round/Game_4.result.json) |
 | 2005-05-03 | Detroit Pistons | Played | [Game](../2004-05/08_Playoffs/First_Round/Game_5.md) | [Result](../2004-05/08_Playoffs/First_Round/Game_5.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/First_Round/Game_5.result.json) |
 | 2005-05-05 | Detroit Pistons | Played | [Game](../2004-05/08_Playoffs/First_Round/Game_6.md) | [Result](../2004-05/08_Playoffs/First_Round/Game_6.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/First_Round/Game_6.result.json) |
+| 2005-05-09 | Atlanta Hawks | Played | [Game](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.md) | [Result](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.result.json) |
+| 2005-05-11 | Atlanta Hawks | Played | [Game](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.md) | [Result](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.result.json) |
 
 ## 2005-04 · NBA playoffs
 
@@ -5957,23 +5959,25 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 3 | 0 | 3 | 20 / 33 | 60.6% | 5 / 8 | 54 | complete |
+| 5 | 0 | 5 | 39 / 69 | 56.5% | 12 / 18 | 111 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 11 | 18 | 61.1% | 7.33 | 6.00 | 18 |
-| Outside paint, under 12 ft | 0 | 1 | 0.0% | 0.00 | 0.33 | 1 |
-| Outside paint, 12 to under 18 ft | 3 | 4 | 75.0% | 2.00 | 1.33 | 4 |
-| 18 ft to the three-point line | 1 | 2 | 50.0% | 0.67 | 0.67 | 2 |
-| Three-point range | 5 | 8 | 62.5% | 5.00 | 2.67 | 8 |
+| Paint | 20 | 34 | 58.8% | 8.00 | 6.80 | 34 |
+| Outside paint, under 12 ft | 1 | 3 | 33.3% | 0.40 | 0.60 | 3 |
+| Outside paint, 12 to under 18 ft | 4 | 9 | 44.4% | 1.60 | 1.80 | 9 |
+| 18 ft to the three-point line | 2 | 5 | 40.0% | 0.80 | 1.00 | 5 |
+| Three-point range | 12 | 18 | 66.7% | 7.20 | 3.60 | 18 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2005-05-01 | Detroit Pistons | Played | [Game](../2004-05/08_Playoffs/First_Round/Game_4.md) | [Result](../2004-05/08_Playoffs/First_Round/Game_4.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/First_Round/Game_4.result.json) |
 | 2005-05-03 | Detroit Pistons | Played | [Game](../2004-05/08_Playoffs/First_Round/Game_5.md) | [Result](../2004-05/08_Playoffs/First_Round/Game_5.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/First_Round/Game_5.result.json) |
 | 2005-05-05 | Detroit Pistons | Played | [Game](../2004-05/08_Playoffs/First_Round/Game_6.md) | [Result](../2004-05/08_Playoffs/First_Round/Game_6.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/First_Round/Game_6.result.json) |
+| 2005-05-09 | Atlanta Hawks | Played | [Game](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.md) | [Result](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.result.json) |
+| 2005-05-11 | Atlanta Hawks | Played | [Game](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.md) | [Result](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.result.json) |
 
 ## 2005-05-01 to 2005-05-07 · NBA playoffs
 
@@ -5998,6 +6002,29 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2005-05-01 | Detroit Pistons | Played | [Game](../2004-05/08_Playoffs/First_Round/Game_4.md) | [Result](../2004-05/08_Playoffs/First_Round/Game_4.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/First_Round/Game_4.result.json) |
 | 2005-05-03 | Detroit Pistons | Played | [Game](../2004-05/08_Playoffs/First_Round/Game_5.md) | [Result](../2004-05/08_Playoffs/First_Round/Game_5.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/First_Round/Game_5.result.json) |
 | 2005-05-05 | Detroit Pistons | Played | [Game](../2004-05/08_Playoffs/First_Round/Game_6.md) | [Result](../2004-05/08_Playoffs/First_Round/Game_6.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/First_Round/Game_6.result.json) |
+
+## 2005-05-08 to 2005-05-12 · NBA playoffs
+
+[Open this period](player_cards.html?period=playoff-2004-05-week-2005-05-08#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2 | 0 | 2 | 19 / 36 | 52.8% | 7 / 10 | 57 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 9 | 16 | 56.2% | 9.00 | 8.00 | 16 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 1.00 | 1.00 | 2 |
+| Outside paint, 12 to under 18 ft | 1 | 5 | 20.0% | 1.00 | 2.50 | 5 |
+| 18 ft to the three-point line | 1 | 3 | 33.3% | 1.00 | 1.50 | 3 |
+| Three-point range | 7 | 10 | 70.0% | 10.50 | 5.00 | 10 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-05-09 | Atlanta Hawks | Played | [Game](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.md) | [Result](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.result.json) |
+| 2005-05-11 | Atlanta Hawks | Played | [Game](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.md) | [Result](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.result.json) |
 
 ## 2005-04-23 vs Detroit Pistons · Played · NBA playoffs
 
@@ -6131,7 +6158,51 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-05-05 | Detroit Pistons | Played | [Game](../2004-05/08_Playoffs/First_Round/Game_6.md) | [Result](../2004-05/08_Playoffs/First_Round/Game_6.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/First_Round/Game_6.result.json) |
 
-## 2004-05 · NBA preseason · through 2005-05-08
+## 2005-05-09 vs Atlanta Hawks · Played · NBA playoffs
+
+[Open this period](player_cards.html?period=playoff-2004-05-game-ea507d9a94052a1f#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 14 / 22 | 63.6% | 6 / 7 | 39 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 6 | 9 | 66.7% | 12.00 | 9.00 | 9 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 2.00 | 2.00 | 2 |
+| Outside paint, 12 to under 18 ft | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 1 | 3 | 33.3% | 2.00 | 3.00 | 3 |
+| Three-point range | 6 | 7 | 85.7% | 18.00 | 7.00 | 7 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-05-09 | Atlanta Hawks | Played | [Game](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.md) | [Result](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/Conference_Semifinals/Game_1.result.json) |
+
+## 2005-05-11 vs Atlanta Hawks · Played · NBA playoffs
+
+[Open this period](player_cards.html?period=playoff-2004-05-game-559467f034acef81#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 5 / 14 | 35.7% | 1 / 3 | 18 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 3 | 7 | 42.9% | 6.00 | 7.00 | 7 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 1 | 4 | 25.0% | 2.00 | 4.00 | 4 |
+| 18 ft to the three-point line | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Three-point range | 1 | 3 | 33.3% | 3.00 | 3.00 | 3 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-05-11 | Atlanta Hawks | Played | [Game](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.md) | [Result](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.result.json) | [Simulated engine shot locations](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.result.json) |
+
+## 2004-05 · NBA preseason · through 2005-05-12
 
 [Open this period](player_cards.html?period=preseason-2004-05-season#shooting)
 

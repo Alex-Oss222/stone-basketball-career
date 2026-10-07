@@ -2,9 +2,9 @@
 
 # Contract | Clarence Weatherspoon
 
-Known through: 2005-05-08. [Open interactive contract](weathcl01.html#contract) · [Contract history](weathcl01.html#contract-history)
+Known through: 2005-05-12. [Open interactive contract](weathcl01.html#contract) · [Contract history](weathcl01.html#contract-history)
 
-Clarence Weatherspoon: under contract. Evidence cutoff: 2005-05-08.
+Clarence Weatherspoon: under contract. Evidence cutoff: 2005-05-12.
 
 ## Current contract
 

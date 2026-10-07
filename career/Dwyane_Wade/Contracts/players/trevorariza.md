@@ -2,9 +2,9 @@
 
 # Contract | Trevor Ariza
 
-Known through: 2005-05-08. [Open interactive contract](trevorariza.html#contract) · [Contract history](trevorariza.html#contract-history)
+Known through: 2005-05-12. [Open interactive contract](trevorariza.html#contract) · [Contract history](trevorariza.html#contract-history)
 
-Trevor Ariza: under contract. Evidence cutoff: 2005-05-08.
+Trevor Ariza: under contract. Evidence cutoff: 2005-05-12.
 
 ## Current contract
 
