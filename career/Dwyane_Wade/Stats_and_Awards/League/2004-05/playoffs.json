@@ -1311,10 +1311,10 @@
    ],
    "home_court": "Sacramento Kings",
    "wins": {
-    "Sacramento Kings": 3,
+    "Sacramento Kings": 4,
     "Minnesota Timberwolves": 1
    },
-   "winner": null,
+   "winner": "Sacramento Kings",
    "games": [
     {
      "game": 1,
@@ -1362,7 +1362,9 @@
      "home": "Sacramento Kings",
      "away": "Minnesota Timberwolves",
      "conditional": true,
-     "event_id": "2005-06-01-minnesota-timberwolves-at-sacramento-kings"
+     "event_id": "2005-06-01-minnesota-timberwolves-at-sacramento-kings",
+     "result": "Minnesota Timberwolves 101, Sacramento Kings 109",
+     "winner": "Sacramento Kings"
     },
     {
      "game": 6,
@@ -1370,7 +1372,8 @@
      "home": "Minnesota Timberwolves",
      "away": "Sacramento Kings",
      "conditional": true,
-     "event_id": "2005-06-03-sacramento-kings-at-minnesota-timberwolves"
+     "event_id": "2005-06-03-sacramento-kings-at-minnesota-timberwolves",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -1378,9 +1381,11 @@
      "home": "Sacramento Kings",
      "away": "Minnesota Timberwolves",
      "conditional": true,
-     "event_id": "2005-06-05-minnesota-timberwolves-at-sacramento-kings"
+     "event_id": "2005-06-05-minnesota-timberwolves-at-sacramento-kings",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2005-06-01"
   }
  ],
  "champion": null
