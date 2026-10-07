@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `hinriki01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-05-04 · **Club on this date:** Chicago Bulls · **Basis:** Chicago Bulls: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-05-05 · **Club on this date:** Chicago Bulls · **Basis:** Chicago Bulls: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #12 · **Born:** 1981-01-02 · **Age on card date:** 24  
 **Registry ID:** `hinriki01` · [Basketball-Reference page](https://www.basketball-reference.com/players/h/hinriki01.html) · ESPN ID 1981
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hinrik
 
 ## Simulated statistics
 
-As of **2005-05-04**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-05-05**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2004-05 is simulated: 82 closed regular-season games through 2005-05-04. Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2004-05 is simulated: 82 closed regular-season games through 2005-05-05. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -113,15 +113,15 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-04 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-05 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Chicago Bulls | 4 | 4 | 32.8 | 10.2 | 7.0 | 8.5 | 1.0 | 0.5 | 1.8 | 30.0% | 22.2% | 100.0% |
+| 2004-05 | Chicago Bulls | 5 | 5 | 33.7 | 12.4 | 6.8 | 8.2 | 1.8 | 0.4 | 2.0 | 33.8% | 30.4% | 100.0% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-05-04, from closed award decisions (1 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-05-05, from closed award decisions (1 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

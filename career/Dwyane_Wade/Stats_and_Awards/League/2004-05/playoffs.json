@@ -311,7 +311,7 @@
    ],
    "home_court": "Cleveland Cavaliers",
    "wins": {
-    "Cleveland Cavaliers": 2,
+    "Cleveland Cavaliers": 3,
     "Atlanta Hawks": 3
    },
    "winner": null,
@@ -372,7 +372,9 @@
      "home": "Atlanta Hawks",
      "away": "Cleveland Cavaliers",
      "conditional": true,
-     "event_id": "2005-05-05-cleveland-cavaliers-at-atlanta-hawks"
+     "event_id": "2005-05-05-cleveland-cavaliers-at-atlanta-hawks",
+     "result": "Cleveland Cavaliers 109, Atlanta Hawks 92",
+     "winner": "Cleveland Cavaliers"
     },
     {
      "game": 7,
@@ -398,10 +400,10 @@
    ],
    "home_court": "Miami Heat",
    "wins": {
-    "Miami Heat": 3,
+    "Miami Heat": 4,
     "Detroit Pistons": 2
    },
-   "winner": null,
+   "winner": "Miami Heat",
    "games": [
     {
      "game": 1,
@@ -459,7 +461,9 @@
      "home": "Detroit Pistons",
      "away": "Miami Heat",
      "conditional": true,
-     "event_id": "2005-05-05-miami-heat-at-detroit-pistons"
+     "event_id": "2005-05-05-miami-heat-at-detroit-pistons",
+     "result": "Miami Heat 106, Detroit Pistons 94",
+     "winner": "Miami Heat"
     },
     {
      "game": 7,
@@ -467,9 +471,11 @@
      "home": "Miami Heat",
      "away": "Detroit Pistons",
      "conditional": true,
-     "event_id": "2005-05-07-detroit-pistons-at-miami-heat"
+     "event_id": "2005-05-07-detroit-pistons-at-miami-heat",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2005-05-05"
   },
   {
    "id": "west-1-8",

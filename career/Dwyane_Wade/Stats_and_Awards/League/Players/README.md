@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-05-04**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-05-05**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -252,7 +252,7 @@ Card date: **2005-05-04**. 573 registry players, one Markdown card and one inter
 | [Danny Ferry](ferryda01.md) | Free agent | 38 | sourced | [open](ferryda01.html) |
 | [Darius Miles](milesda01.md) | Cleveland Cavaliers | 23 | sourced | [open](milesda01.html) |
 | [David Harrison](davidharrison.md) | Orlando Magic | 22 | silhouette | [open](davidharrison.html) |
-| [DerMarr Johnson](johnsde03.md) | San Antonio Spurs | 24 | silhouette | [open](johnsde03.html) |
+| [DerMarr Johnson](johnsde03.md) | San Antonio Spurs | 25 | silhouette | [open](johnsde03.html) |
 | [Desmond Ferguson](fergude01.md) | Free agent | 27 | silhouette | [open](fergude01.html) |
 | [Desmond Mason](masonde01.md) | Milwaukee Bucks | 27 | sourced | [open](masonde01.html) |
 | [Devean George](georgde01.md) | Los Angeles Lakers | 27 | sourced | [open](georgde01.html) |
@@ -440,7 +440,7 @@ Card date: **2005-05-04**. 573 registry players, one Markdown card and one inter
 | [Kenny Thomas](thomake01.md) | Philadelphia 76ers | 27 | sourced | [open](thomake01.html) |
 | [Kenyon Martin](martike01.md) | New Jersey Nets | 27 | sourced | [open](martike01.html) |
 | [Kevin Garnett](garneke01.md) | Minnesota Timberwolves | 28 | sourced | [open](garneke01.html) |
-| [LaPhonso Ellis](ellisla01.md) | Free agent | 34 | sourced | [open](ellisla01.html) |
+| [LaPhonso Ellis](ellisla01.md) | Free agent | 35 | sourced | [open](ellisla01.html) |
 | [Lawrence Funderburke](fundela01.md) | Free agent | 34 | silhouette | [open](fundela01.html) |
 | [Maceo Baston](bastoma01.md) | Free agent | 29 | sourced | [open](bastoma01.html) |
 | [Maciej Lampe](lampema01.md) | Atlanta Hawks | 20 | sourced | [open](lampema01.html) |

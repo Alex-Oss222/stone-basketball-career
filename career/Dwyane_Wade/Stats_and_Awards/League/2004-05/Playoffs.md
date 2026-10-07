@@ -41,10 +41,10 @@ EAST
   (4) Boston Celtics           3
   (5) Chicago Bulls            2
         conference semifinal: winners meet
-  (3) Cleveland Cavaliers      2
+  (3) Cleveland Cavaliers      3
   (6) Atlanta Hawks            3
-  (2) Miami Heat               3
-  (7) Detroit Pistons          2
+  (2) Miami Heat               4
+  (7) Detroit Pistons          2   -> Miami Heat
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
@@ -95,7 +95,7 @@ Home court: Boston Celtics. Series Boston Celtics 3, Chicago Bulls 2.
 
 ### East: (3) Cleveland Cavaliers vs (6) Atlanta Hawks
 
-Home court: Cleveland Cavaliers. Series Cleveland Cavaliers 2, Atlanta Hawks 3.
+Home court: Cleveland Cavaliers. Series Cleveland Cavaliers 3, Atlanta Hawks 3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -104,12 +104,12 @@ Home court: Cleveland Cavaliers. Series Cleveland Cavaliers 2, Atlanta Hawks 3.
 | 3 | Fri Apr 29 | Atlanta Hawks | Cleveland Cavaliers | Cleveland Cavaliers 77, Atlanta Hawks 100 |
 | 4 | Sun May 1 | Atlanta Hawks | Cleveland Cavaliers | Cleveland Cavaliers 86, Atlanta Hawks 99 |
 | 5 | Tue May 3 | Cleveland Cavaliers | Atlanta Hawks | Atlanta Hawks 89, Cleveland Cavaliers 95 |
-| 6 | Thu May 5 | Atlanta Hawks | Cleveland Cavaliers | if needed |
+| 6 | Thu May 5 | Atlanta Hawks | Cleveland Cavaliers | Cleveland Cavaliers 109, Atlanta Hawks 92 |
 | 7 | Sat May 7 | Cleveland Cavaliers | Atlanta Hawks | if needed |
 
 ### East: (2) Miami Heat vs (7) Detroit Pistons
 
-Home court: Miami Heat. Series Miami Heat 3, Detroit Pistons 2.
+Home court: Miami Heat. Miami Heat wins 4-2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -118,8 +118,8 @@ Home court: Miami Heat. Series Miami Heat 3, Detroit Pistons 2.
 | 3 | Fri Apr 29 | Detroit Pistons | Miami Heat | Miami Heat 96, Detroit Pistons 98 |
 | 4 | Sun May 1 | Detroit Pistons | Miami Heat | Miami Heat 74, Detroit Pistons 112 |
 | 5 | Tue May 3 | Miami Heat | Detroit Pistons | Detroit Pistons 88, Miami Heat 115 |
-| 6 | Thu May 5 | Detroit Pistons | Miami Heat | if needed |
-| 7 | Sat May 7 | Miami Heat | Detroit Pistons | if needed |
+| 6 | Thu May 5 | Detroit Pistons | Miami Heat | Miami Heat 106, Detroit Pistons 94 |
+| 7 | Sat May 7 | Miami Heat | Detroit Pistons | not needed |
 
 ### West: (1) Phoenix Suns vs (8) Portland Trail Blazers
 

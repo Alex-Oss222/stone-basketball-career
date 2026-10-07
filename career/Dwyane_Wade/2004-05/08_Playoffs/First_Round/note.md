@@ -16,5 +16,6 @@ round: first_round
 - 2005-04-29: Miami Heat 96 at Detroit Pistons 98 — Miami Heat L 96-98 ([Game 3](Game_3.md), event `2005-04-29-miami-heat-at-detroit-pistons`)
 - 2005-05-01: Miami Heat 74 at Detroit Pistons 112 — Miami Heat L 74-112 ([Game 4](Game_4.md), event `2005-05-01-miami-heat-at-detroit-pistons`)
 - 2005-05-03: Detroit Pistons 88 at Miami Heat 115 — Miami Heat W 115-88 ([Game 5](Game_5.md), event `2005-05-03-detroit-pistons-at-miami-heat`)
+- 2005-05-05: Miami Heat 106 at Detroit Pistons 94 — Miami Heat W 106-94 ([Game 6](Game_6.md), event `2005-05-05-miami-heat-at-detroit-pistons`)
 
 ## Consequences

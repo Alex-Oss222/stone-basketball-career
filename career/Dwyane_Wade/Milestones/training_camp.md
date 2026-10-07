@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-05-04 · Miami Heat · planned
+Career date: 2005-05-05 · Miami Heat · planned
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 

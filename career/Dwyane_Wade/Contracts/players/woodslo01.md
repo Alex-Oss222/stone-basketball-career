@@ -2,9 +2,9 @@
 
 # Contract | Loren Woods
 
-Known through: 2005-05-04. [Open interactive contract](woodslo01.html#contract) · [Contract history](woodslo01.html#contract-history)
+Known through: 2005-05-05. [Open interactive contract](woodslo01.html#contract) · [Contract history](woodslo01.html#contract-history)
 
-Loren Woods: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-05-04.
+Loren Woods: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-05-05.
 
 ## Current contract
 

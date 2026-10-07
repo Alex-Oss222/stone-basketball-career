@@ -2,9 +2,9 @@
 
 # Contract | Pavel Podkolzin
 
-Known through: 2005-05-04. [Open interactive contract](pavelpodkolzin.html#contract) · [Contract history](pavelpodkolzin.html#contract-history)
+Known through: 2005-05-05. [Open interactive contract](pavelpodkolzin.html#contract) · [Contract history](pavelpodkolzin.html#contract-history)
 
-Pavel Podkolzin: under contract. Evidence cutoff: 2005-05-04.
+Pavel Podkolzin: under contract. Evidence cutoff: 2005-05-05.
 
 ## Current contract
 

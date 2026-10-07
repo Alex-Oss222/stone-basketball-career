@@ -1,6 +1,6 @@
 # 2004-05 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-05-04.
+Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-05-05.
 
 ## Calendar
 
@@ -10,7 +10,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2005-05-02 | Defensive Player of the Year | 125 media | 5-3-1 | decided |
 | 2005-05-03 | Sixth Man of the Year | 125 media | 5-3-1 | decided |
 | 2005-05-04 | Rookie of the Year | 126 media | 5-3-1 | decided |
-| 2005-05-05 | All-Rookie Teams | 30 head coaches, not for their own players | 2-1 | pending |
+| 2005-05-05 | All-Rookie Teams | 30 head coaches, not for their own players | 2-1 | decided |
 | 2005-05-08 | Most Valuable Player | 127 media | 10-7-5-3-1 | pending |
 | 2005-05-10 | Coach of the Year | 126 media | 5-3-1 | pending |
 | 2005-05-12 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | pending |
@@ -64,3 +64,29 @@ Announced 2005-05-04; 126 media, ballot 5-3-1.
 | 3 | Nenad Krstić | New York Knicks | 78 | 28.4 | 13.3 | 5.5 | 1.2 | 0.5 | 0.8 | 8.84 | 169 | 0 |
 
 Complete tally: `season_awards.json` (4 receiving votes).
+
+## All-Rookie Teams
+
+Announced 2005-05-05; 30 head coaches, not for their own players, ballot 2-1.
+
+### First Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dwight Howard | F | Orlando Magic | 82 | 32.0 | 10.2 | 8.5 | 0.9 | 1.2 | 1.3 | 9.8 | 58 | 29 |
+| Emeka Okafor | F | Washington Wizards | 70 | 35.0 | 14.4 | 9.4 | 0.8 | 1.0 | 2.2 | 11.04 | 58 | 29 |
+| Josh Childress | F | Phoenix Suns | 81 | 30.1 | 11.3 | 6.4 | 2.1 | 0.8 | 0.5 | 9.42 | 58 | 29 |
+| Nenad Krstić | F | New York Knicks | 78 | 28.4 | 13.3 | 5.5 | 1.2 | 0.5 | 0.8 | 8.84 | 58 | 29 |
+| Luol Deng | F | Boston Celtics | 60 | 28.3 | 12.1 | 5.7 | 2.1 | 0.9 | 0.4 | 9.04 | 51 | 22 |
+
+### Second Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Ben Gordon | F | Utah Jazz | 82 | 24.0 | 12.8 | 2.9 | 1.9 | 0.6 | 0.2 | 6.99 | 39 | 10 |
+| Andre Iguodala | F | New York Knicks | 82 | 35.0 | 9.8 | 5.7 | 2.9 | 1.3 | 0.6 | 8.46 | 29 | 0 |
+| J.R. Smith | F | Boston Celtics | 77 | 24.1 | 9.9 | 2.4 | 1.8 | 0.6 | 0.3 | 5.76 | 29 | 0 |
+| Josh Smith | F | Utah Jazz | 75 | 27.8 | 9.7 | 6.2 | 1.9 | 1.0 | 1.8 | 8.79 | 25 | 0 |
+| Andrés Nocioni | F | San Antonio Spurs | 81 | 26.0 | 9.1 | 4.4 | 2.0 | 0.7 | 0.6 | 5.7 | 24 | 0 |
+
+Also receiving votes: Matt Bonner (Toronto Raptors) 18, Al Jefferson (Toronto Raptors) 2, Jameer Nelson (Seattle SuperSonics) 1.
