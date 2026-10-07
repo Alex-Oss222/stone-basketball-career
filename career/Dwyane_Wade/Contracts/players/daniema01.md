@@ -2,9 +2,9 @@
 
 # Contract | Marquis Daniels
 
-Known through: 2005-04-28. [Open interactive contract](daniema01.html#contract) · [Contract history](daniema01.html#contract-history)
+Known through: 2005-05-01. [Open interactive contract](daniema01.html#contract) · [Contract history](daniema01.html#contract-history)
 
-Marquis Daniels: under contract. Evidence cutoff: 2005-04-28.
+Marquis Daniels: under contract. Evidence cutoff: 2005-05-01.
 
 ## Current contract
 
