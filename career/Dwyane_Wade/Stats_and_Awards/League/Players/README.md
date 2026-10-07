@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-05-02**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-05-03**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -108,7 +108,7 @@ Card date: **2005-05-02**. 573 registry players, one Markdown card and one inter
 | [Travis Best](besttr01.md) | Free agent | 32 | sourced | [open](besttr01.html) |
 | [Troy Bell](belltr01.md) | Free agent | 24 | silhouette | [open](belltr01.html) |
 | [Troy Hudson](hudsotr01.md) | Charlotte Bobcats | 29 | sourced | [open](hudsotr01.html) |
-| [Tyronn Lue](luety01.md) | Minnesota Timberwolves | 27 | sourced | [open](luety01.html) |
+| [Tyronn Lue](luety01.md) | Minnesota Timberwolves | 28 | sourced | [open](luety01.html) |
 
 </details>
 

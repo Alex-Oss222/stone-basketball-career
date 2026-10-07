@@ -2,9 +2,9 @@
 
 # Contract | Jerome Beasley
 
-Known through: 2005-05-02. [Open interactive contract](beaslje01.html#contract) · [Contract history](beaslje01.html#contract-history)
+Known through: 2005-05-03. [Open interactive contract](beaslje01.html#contract) · [Contract history](beaslje01.html#contract-history)
 
-Jerome Beasley: renounced. Evidence cutoff: 2005-05-02.
+Jerome Beasley: renounced. Evidence cutoff: 2005-05-03.
 
 ## Current contract
 

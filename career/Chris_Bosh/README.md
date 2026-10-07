@@ -4,7 +4,7 @@
 
 ![Chris Bosh career overview](assets/career_overview.svg)
 
-Career date: **2005-05-02** · Toronto Raptors · #4 · PF · age 21
+Career date: **2005-05-03** · Toronto Raptors · #4 · PF · age 21
 
 A real player the user follows, not one the user controls: his club decides his moves and the engine plays his games. Every number below comes from closed simulated games and the league's recorded award decisions.
 
@@ -35,7 +35,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | 19 | Toronto Raptors | 9/9 | 33.9 | 14.0 | 6.2 | 1.1 | 1.1 | 1.4 | 49.5 | 60.0 | 62.5 | 54.0 | 42-40 · lost conference semifinals |
-| 2004-05 | 20 | Toronto Raptors | 3/3 | 38.3 | 20.3 | 12.3 | 2.3 | 1.3 | 1.3 | 50.0 | 0.0 | 73.3 | 53.9 | 59-23 |
+| 2004-05 | 20 | Toronto Raptors | 4/4 | 38.3 | 23.2 | 12.5 | 2.2 | 1.2 | 1.5 | 50.7 | 33.3 | 80.0 | 56.7 | 59-23 |
 
 ## Awards
 
@@ -72,6 +72,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | 500 career free throws made | 2005-04-11 | 21 years, 18 days | 2004-05 | 151 | Indiana Pacers |
 | 100 career playoff points | 2004-05-05 | 20 years, 42 days | 2003-04 | 7 | New Jersey Nets |
 | 10 career playoff games | 2005-04-24 | 21 years, 31 days | 2004-05 | 10 | Philadelphia 76ers |
+| 100 career playoff rebounds | 2005-05-02 | 21 years, 39 days | 2004-05 | 13 | Philadelphia 76ers |
 
 ## Next milestones
 

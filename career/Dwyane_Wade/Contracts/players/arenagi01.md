@@ -2,9 +2,9 @@
 
 # Contract | Gilbert Arenas
 
-Known through: 2005-05-02. [Open interactive contract](arenagi01.html#contract) · [Contract history](arenagi01.html#contract-history)
+Known through: 2005-05-03. [Open interactive contract](arenagi01.html#contract) · [Contract history](arenagi01.html#contract-history)
 
-Gilbert Arenas: under contract. Evidence cutoff: 2005-05-02.
+Gilbert Arenas: under contract. Evidence cutoff: 2005-05-03.
 
 ## Current contract
 

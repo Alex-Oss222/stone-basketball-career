@@ -190,6 +190,109 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2004-05-smoy",
+   "award": "smoy",
+   "name": "Sixth Man of the Year",
+   "announced_on": "2005-05-03",
+   "electorate": 125,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.1,
+    0.3
+   ],
+   "evidence_through": "2005-04-20",
+   "winners": [
+    "Josh Howard"
+   ],
+   "tally": [
+    {
+     "player": "Josh Howard",
+     "team": "Dallas Mavericks",
+     "games": 76,
+     "mpg": 31.6,
+     "pts": 11.7,
+     "reb": 6.1,
+     "ast": 1.6,
+     "stl": 1.4,
+     "blk": 0.8,
+     "game_score": 9.51,
+     "starts": 35,
+     "points": 625,
+     "first_place": 125,
+     "votes_by_place": [
+      125,
+      0,
+      0
+     ]
+    },
+    {
+     "player": "Keith Van Horn",
+     "team": "San Antonio Spurs",
+     "games": 60,
+     "mpg": 26.2,
+     "pts": 11.6,
+     "reb": 4.3,
+     "ast": 1.4,
+     "stl": 0.5,
+     "blk": 0.4,
+     "game_score": 7.74,
+     "starts": 16,
+     "points": 375,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      125,
+      0
+     ]
+    },
+    {
+     "player": "Chris Mihm",
+     "team": "Phoenix Suns",
+     "games": 68,
+     "mpg": 24.6,
+     "pts": 10.4,
+     "reb": 5.6,
+     "ast": 1.0,
+     "stl": 0.3,
+     "blk": 1.1,
+     "game_score": 7.37,
+     "starts": 2,
+     "points": 86,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      86
+     ]
+    },
+    {
+     "player": "Anthony Johnson",
+     "team": "Indiana Pacers",
+     "games": 66,
+     "mpg": 29.1,
+     "pts": 10.6,
+     "reb": 3.5,
+     "ast": 4.9,
+     "stl": 1.0,
+     "blk": 0.2,
+     "game_score": 8.97,
+     "starts": 32,
+     "points": 39,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      39
+     ]
+    }
+   ]
   }
  ]
 }

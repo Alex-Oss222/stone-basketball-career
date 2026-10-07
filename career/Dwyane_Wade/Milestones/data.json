@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-05-02",
+  "as_of": "2005-05-03",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-05-02"
+              "2005-05-03"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2005-05-02",
+              "2005-05-03",
               "Current checkpoint",
               "2005-05-01-miami-heat-at-detroit-pistons",
               "Recorded",
@@ -774,7 +774,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-05-02"
+          "value": "2005-05-03"
         },
         {
           "label": "Team",
@@ -1384,7 +1384,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-05-02"
+          "value": "2005-05-03"
         },
         {
           "label": "Team",
@@ -1967,7 +1967,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-05-02"
+          "value": "2005-05-03"
         },
         {
           "label": "Team",
@@ -2589,7 +2589,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-05-02"
+          "value": "2005-05-03"
         },
         {
           "label": "Team",
@@ -3174,7 +3174,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-05-02"
+          "value": "2005-05-03"
         },
         {
           "label": "Team",
@@ -3803,7 +3803,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-05-02"
+          "value": "2005-05-03"
         },
         {
           "label": "Team",
@@ -4388,7 +4388,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-05-02"
+          "value": "2005-05-03"
         },
         {
           "label": "Team",
@@ -5113,7 +5113,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-05-02"
+          "value": "2005-05-03"
         },
         {
           "label": "Team",
@@ -5130,7 +5130,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "93 closed game records in 2004-05 through 2005-05-02. Competitions remain separate.",
+      "summary": "93 closed game records in 2004-05 through 2005-05-03. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -6663,7 +6663,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-05-02"
+          "value": "2005-05-03"
         },
         {
           "label": "Team",

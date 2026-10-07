@@ -2,9 +2,9 @@
 
 # Contract | Robert Swift
 
-Known through: 2005-05-02. [Open interactive contract](robertswift.html#contract) · [Contract history](robertswift.html#contract-history)
+Known through: 2005-05-03. [Open interactive contract](robertswift.html#contract) · [Contract history](robertswift.html#contract-history)
 
-Robert Swift: under contract. Evidence cutoff: 2005-05-02.
+Robert Swift: under contract. Evidence cutoff: 2005-05-03.
 
 ## Current contract
 
