@@ -15,5 +15,6 @@ days: 8-14
 ## Games and events
 
 - 2005-03-10: Minnesota Timberwolves 101 at Miami Heat 100 — Miami Heat L 100-101 ([Game 1](Game_1.md), event `2005-03-10-minnesota-timberwolves-at-miami-heat`)
+- 2005-03-12: New Jersey Nets 105 at Miami Heat 103 — Miami Heat L 103-105 ([Game 2](Game_2.md), event `2005-03-12-new-jersey-nets-at-miami-heat`)
 
 ## Consequences
