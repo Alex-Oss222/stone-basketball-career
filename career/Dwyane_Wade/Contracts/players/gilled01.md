@@ -2,9 +2,9 @@
 
 # Contract | Eddie Gill
 
-Known through: 2005-04-20. [Open interactive contract](gilled01.html#contract) · [Contract history](gilled01.html#contract-history)
+Known through: 2005-04-21. [Open interactive contract](gilled01.html#contract) · [Contract history](gilled01.html#contract-history)
 
-Eddie Gill: No verified contract record. Evidence cutoff: 2005-04-20.
+Eddie Gill: No verified contract record. Evidence cutoff: 2005-04-21.
 
 ## Current contract
 

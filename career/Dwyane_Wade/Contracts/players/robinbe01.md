@@ -2,9 +2,9 @@
 
 # Contract | Bernard Robinson
 
-Known through: 2005-04-20. [Open interactive contract](robinbe01.html#contract) · [Contract history](robinbe01.html#contract-history)
+Known through: 2005-04-21. [Open interactive contract](robinbe01.html#contract) · [Contract history](robinbe01.html#contract-history)
 
-Bernard Robinson: unsigned draft rights. Evidence cutoff: 2005-04-20.
+Bernard Robinson: unsigned draft rights. Evidence cutoff: 2005-04-21.
 
 ## Current contract
 

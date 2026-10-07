@@ -292,7 +292,7 @@ def build(root=ROOT, season=None, write=True):
                                for s, c, w, l, d in rows] for conf, rows in bracket["seeded"].items()},
               "series": bracket["series"], "champion": None}
     if write:
-        write(record, root)
+        _write_record(record, root)                     # the module's writer (the `write` flag shadows its name here)
         readme = root / league_dir(season).parent / "README.md"         # the league hub links the bracket once it exists
         text = readme.read_text(encoding="utf-8") if readme.is_file() else ""
         hub = f"[{season} standings]({season}/Standings.md)"
@@ -373,6 +373,9 @@ def write(record, root=ROOT):
     (root / record_path(record["season"])).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     (root / page_path(record["season"])).write_text(page(record, root), encoding="utf-8")
 
+
+
+_write_record = write
 
 def miami_paths(series, game, root=ROOT, season=None):
     season = season or _active_season(root)

@@ -3540,6 +3540,110 @@
     }
    ],
    "winner": "Stephon Marbury"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-04-18-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-04-18",
+   "period_end": "2005-04-20",
+   "announced_on": "2005-04-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Jermaine O'Neal",
+     "team": "Indiana Pacers",
+     "games": 2,
+     "wins": 1,
+     "losses": 1,
+     "pts": 33.0,
+     "reb": 10.0,
+     "ast": 0.0,
+     "game_score": 24.15,
+     "score": 51.3,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 23.5,
+     "reb": 8.0,
+     "ast": 4.0,
+     "game_score": 22.2,
+     "score": 50.4,
+     "rank": 2
+    },
+    {
+     "player": "Zydrunas Ilgauskas",
+     "team": "Philadelphia 76ers",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 20.5,
+     "reb": 10.0,
+     "ast": 3.0,
+     "game_score": 21.8,
+     "score": 49.6,
+     "rank": 3
+    }
+   ],
+   "winner": "Jermaine O'Neal"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-04-18-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-04-18",
+   "period_end": "2005-04-20",
+   "announced_on": "2005-04-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Rashard Lewis",
+     "team": "Seattle SuperSonics",
+     "games": 2,
+     "wins": 1,
+     "losses": 1,
+     "pts": 33.0,
+     "reb": 4.0,
+     "ast": 1.5,
+     "game_score": 26.05,
+     "score": 55.1,
+     "rank": 1
+    },
+    {
+     "player": "Steve Francis",
+     "team": "Houston Rockets",
+     "games": 2,
+     "wins": 1,
+     "losses": 1,
+     "pts": 22.5,
+     "reb": 5.5,
+     "ast": 9.5,
+     "game_score": 23.0,
+     "score": 49.0,
+     "rank": 2
+    },
+    {
+     "player": "Steve Nash",
+     "team": "Dallas Mavericks",
+     "games": 2,
+     "wins": 1,
+     "losses": 1,
+     "pts": 23.5,
+     "reb": 4.0,
+     "ast": 11.5,
+     "game_score": 21.35,
+     "score": 45.7,
+     "rank": 3
+    }
+   ],
+   "winner": "Rashard Lewis"
   }
  ]
 }

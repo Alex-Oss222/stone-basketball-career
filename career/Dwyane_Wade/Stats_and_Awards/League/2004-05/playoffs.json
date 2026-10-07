@@ -1,0 +1,744 @@
+{
+ "schema_version": 1,
+ "kind": "playoffs",
+ "season": "2004-05",
+ "rules": "library/2004/league/nba_2004_05_playoff_rules.json",
+ "seeded_on": "2005-04-20",
+ "seeds": {
+  "East": [
+   {
+    "seed": 1,
+    "club": "Toronto Raptors",
+    "wins": 59,
+    "losses": 23,
+    "division_winner": true
+   },
+   {
+    "seed": 2,
+    "club": "Miami Heat",
+    "wins": 56,
+    "losses": 26,
+    "division_winner": true
+   },
+   {
+    "seed": 3,
+    "club": "Cleveland Cavaliers",
+    "wins": 45,
+    "losses": 37,
+    "division_winner": true
+   },
+   {
+    "seed": 4,
+    "club": "Boston Celtics",
+    "wins": 51,
+    "losses": 31,
+    "division_winner": false
+   },
+   {
+    "seed": 5,
+    "club": "Chicago Bulls",
+    "wins": 45,
+    "losses": 37,
+    "division_winner": false
+   },
+   {
+    "seed": 6,
+    "club": "Atlanta Hawks",
+    "wins": 44,
+    "losses": 38,
+    "division_winner": false
+   },
+   {
+    "seed": 7,
+    "club": "Detroit Pistons",
+    "wins": 42,
+    "losses": 40,
+    "division_winner": false
+   },
+   {
+    "seed": 8,
+    "club": "Philadelphia 76ers",
+    "wins": 41,
+    "losses": 41,
+    "division_winner": false
+   }
+  ],
+  "West": [
+   {
+    "seed": 1,
+    "club": "Phoenix Suns",
+    "wins": 60,
+    "losses": 22,
+    "division_winner": true
+   },
+   {
+    "seed": 2,
+    "club": "San Antonio Spurs",
+    "wins": 55,
+    "losses": 27,
+    "division_winner": true
+   },
+   {
+    "seed": 3,
+    "club": "Minnesota Timberwolves",
+    "wins": 46,
+    "losses": 36,
+    "division_winner": true
+   },
+   {
+    "seed": 4,
+    "club": "Dallas Mavericks",
+    "wins": 51,
+    "losses": 31,
+    "division_winner": false
+   },
+   {
+    "seed": 5,
+    "club": "Sacramento Kings",
+    "wins": 50,
+    "losses": 32,
+    "division_winner": false
+   },
+   {
+    "seed": 6,
+    "club": "Golden State Warriors",
+    "wins": 44,
+    "losses": 38,
+    "division_winner": false
+   },
+   {
+    "seed": 7,
+    "club": "Los Angeles Lakers",
+    "wins": 41,
+    "losses": 41,
+    "division_winner": false
+   },
+   {
+    "seed": 8,
+    "club": "Portland Trail Blazers",
+    "wins": 40,
+    "losses": 42,
+    "division_winner": false
+   }
+  ]
+ },
+ "series": [
+  {
+   "id": "east-1-8",
+   "round": "first_round",
+   "conference": "East",
+   "seeds": [
+    1,
+    8
+   ],
+   "clubs": [
+    "Toronto Raptors",
+    "Philadelphia 76ers"
+   ],
+   "home_court": "Toronto Raptors",
+   "wins": {
+    "Toronto Raptors": 0,
+    "Philadelphia 76ers": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-04-24",
+     "home": "Toronto Raptors",
+     "away": "Philadelphia 76ers",
+     "conditional": false,
+     "event_id": "2005-04-24-philadelphia-76ers-at-toronto-raptors"
+    },
+    {
+     "game": 2,
+     "date": "2005-04-27",
+     "home": "Toronto Raptors",
+     "away": "Philadelphia 76ers",
+     "conditional": false,
+     "event_id": "2005-04-27-philadelphia-76ers-at-toronto-raptors"
+    },
+    {
+     "game": 3,
+     "date": "2005-04-30",
+     "home": "Philadelphia 76ers",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2005-04-30-toronto-raptors-at-philadelphia-76ers"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-02",
+     "home": "Philadelphia 76ers",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2005-05-02-toronto-raptors-at-philadelphia-76ers"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-04",
+     "home": "Toronto Raptors",
+     "away": "Philadelphia 76ers",
+     "conditional": true,
+     "event_id": "2005-05-04-philadelphia-76ers-at-toronto-raptors"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-06",
+     "home": "Philadelphia 76ers",
+     "away": "Toronto Raptors",
+     "conditional": true,
+     "event_id": "2005-05-06-toronto-raptors-at-philadelphia-76ers"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-08",
+     "home": "Toronto Raptors",
+     "away": "Philadelphia 76ers",
+     "conditional": true,
+     "event_id": "2005-05-08-philadelphia-76ers-at-toronto-raptors"
+    }
+   ]
+  },
+  {
+   "id": "east-4-5",
+   "round": "first_round",
+   "conference": "East",
+   "seeds": [
+    4,
+    5
+   ],
+   "clubs": [
+    "Boston Celtics",
+    "Chicago Bulls"
+   ],
+   "home_court": "Boston Celtics",
+   "wins": {
+    "Boston Celtics": 0,
+    "Chicago Bulls": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-04-24",
+     "home": "Boston Celtics",
+     "away": "Chicago Bulls",
+     "conditional": false,
+     "event_id": "2005-04-24-chicago-bulls-at-boston-celtics"
+    },
+    {
+     "game": 2,
+     "date": "2005-04-27",
+     "home": "Boston Celtics",
+     "away": "Chicago Bulls",
+     "conditional": false,
+     "event_id": "2005-04-27-chicago-bulls-at-boston-celtics"
+    },
+    {
+     "game": 3,
+     "date": "2005-04-30",
+     "home": "Chicago Bulls",
+     "away": "Boston Celtics",
+     "conditional": false,
+     "event_id": "2005-04-30-boston-celtics-at-chicago-bulls"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-02",
+     "home": "Chicago Bulls",
+     "away": "Boston Celtics",
+     "conditional": false,
+     "event_id": "2005-05-02-boston-celtics-at-chicago-bulls"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-04",
+     "home": "Boston Celtics",
+     "away": "Chicago Bulls",
+     "conditional": true,
+     "event_id": "2005-05-04-chicago-bulls-at-boston-celtics"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-06",
+     "home": "Chicago Bulls",
+     "away": "Boston Celtics",
+     "conditional": true,
+     "event_id": "2005-05-06-boston-celtics-at-chicago-bulls"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-08",
+     "home": "Boston Celtics",
+     "away": "Chicago Bulls",
+     "conditional": true,
+     "event_id": "2005-05-08-chicago-bulls-at-boston-celtics"
+    }
+   ]
+  },
+  {
+   "id": "east-3-6",
+   "round": "first_round",
+   "conference": "East",
+   "seeds": [
+    3,
+    6
+   ],
+   "clubs": [
+    "Cleveland Cavaliers",
+    "Atlanta Hawks"
+   ],
+   "home_court": "Cleveland Cavaliers",
+   "wins": {
+    "Cleveland Cavaliers": 0,
+    "Atlanta Hawks": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-04-23",
+     "home": "Cleveland Cavaliers",
+     "away": "Atlanta Hawks",
+     "conditional": false,
+     "event_id": "2005-04-23-atlanta-hawks-at-cleveland-cavaliers"
+    },
+    {
+     "game": 2,
+     "date": "2005-04-26",
+     "home": "Cleveland Cavaliers",
+     "away": "Atlanta Hawks",
+     "conditional": false,
+     "event_id": "2005-04-26-atlanta-hawks-at-cleveland-cavaliers"
+    },
+    {
+     "game": 3,
+     "date": "2005-04-29",
+     "home": "Atlanta Hawks",
+     "away": "Cleveland Cavaliers",
+     "conditional": false,
+     "event_id": "2005-04-29-cleveland-cavaliers-at-atlanta-hawks"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-01",
+     "home": "Atlanta Hawks",
+     "away": "Cleveland Cavaliers",
+     "conditional": false,
+     "event_id": "2005-05-01-cleveland-cavaliers-at-atlanta-hawks"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-03",
+     "home": "Cleveland Cavaliers",
+     "away": "Atlanta Hawks",
+     "conditional": true,
+     "event_id": "2005-05-03-atlanta-hawks-at-cleveland-cavaliers"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-05",
+     "home": "Atlanta Hawks",
+     "away": "Cleveland Cavaliers",
+     "conditional": true,
+     "event_id": "2005-05-05-cleveland-cavaliers-at-atlanta-hawks"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-07",
+     "home": "Cleveland Cavaliers",
+     "away": "Atlanta Hawks",
+     "conditional": true,
+     "event_id": "2005-05-07-atlanta-hawks-at-cleveland-cavaliers"
+    }
+   ]
+  },
+  {
+   "id": "east-2-7",
+   "round": "first_round",
+   "conference": "East",
+   "seeds": [
+    2,
+    7
+   ],
+   "clubs": [
+    "Miami Heat",
+    "Detroit Pistons"
+   ],
+   "home_court": "Miami Heat",
+   "wins": {
+    "Miami Heat": 0,
+    "Detroit Pistons": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-04-23",
+     "home": "Miami Heat",
+     "away": "Detroit Pistons",
+     "conditional": false,
+     "event_id": "2005-04-23-detroit-pistons-at-miami-heat"
+    },
+    {
+     "game": 2,
+     "date": "2005-04-26",
+     "home": "Miami Heat",
+     "away": "Detroit Pistons",
+     "conditional": false,
+     "event_id": "2005-04-26-detroit-pistons-at-miami-heat"
+    },
+    {
+     "game": 3,
+     "date": "2005-04-29",
+     "home": "Detroit Pistons",
+     "away": "Miami Heat",
+     "conditional": false,
+     "event_id": "2005-04-29-miami-heat-at-detroit-pistons"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-01",
+     "home": "Detroit Pistons",
+     "away": "Miami Heat",
+     "conditional": false,
+     "event_id": "2005-05-01-miami-heat-at-detroit-pistons"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-03",
+     "home": "Miami Heat",
+     "away": "Detroit Pistons",
+     "conditional": true,
+     "event_id": "2005-05-03-detroit-pistons-at-miami-heat"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-05",
+     "home": "Detroit Pistons",
+     "away": "Miami Heat",
+     "conditional": true,
+     "event_id": "2005-05-05-miami-heat-at-detroit-pistons"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-07",
+     "home": "Miami Heat",
+     "away": "Detroit Pistons",
+     "conditional": true,
+     "event_id": "2005-05-07-detroit-pistons-at-miami-heat"
+    }
+   ]
+  },
+  {
+   "id": "west-1-8",
+   "round": "first_round",
+   "conference": "West",
+   "seeds": [
+    1,
+    8
+   ],
+   "clubs": [
+    "Phoenix Suns",
+    "Portland Trail Blazers"
+   ],
+   "home_court": "Phoenix Suns",
+   "wins": {
+    "Phoenix Suns": 0,
+    "Portland Trail Blazers": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-04-24",
+     "home": "Phoenix Suns",
+     "away": "Portland Trail Blazers",
+     "conditional": false,
+     "event_id": "2005-04-24-portland-trail-blazers-at-phoenix-suns"
+    },
+    {
+     "game": 2,
+     "date": "2005-04-27",
+     "home": "Phoenix Suns",
+     "away": "Portland Trail Blazers",
+     "conditional": false,
+     "event_id": "2005-04-27-portland-trail-blazers-at-phoenix-suns"
+    },
+    {
+     "game": 3,
+     "date": "2005-04-30",
+     "home": "Portland Trail Blazers",
+     "away": "Phoenix Suns",
+     "conditional": false,
+     "event_id": "2005-04-30-phoenix-suns-at-portland-trail-blazers"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-02",
+     "home": "Portland Trail Blazers",
+     "away": "Phoenix Suns",
+     "conditional": false,
+     "event_id": "2005-05-02-phoenix-suns-at-portland-trail-blazers"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-04",
+     "home": "Phoenix Suns",
+     "away": "Portland Trail Blazers",
+     "conditional": true,
+     "event_id": "2005-05-04-portland-trail-blazers-at-phoenix-suns"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-06",
+     "home": "Portland Trail Blazers",
+     "away": "Phoenix Suns",
+     "conditional": true,
+     "event_id": "2005-05-06-phoenix-suns-at-portland-trail-blazers"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-08",
+     "home": "Phoenix Suns",
+     "away": "Portland Trail Blazers",
+     "conditional": true,
+     "event_id": "2005-05-08-portland-trail-blazers-at-phoenix-suns"
+    }
+   ]
+  },
+  {
+   "id": "west-4-5",
+   "round": "first_round",
+   "conference": "West",
+   "seeds": [
+    4,
+    5
+   ],
+   "clubs": [
+    "Dallas Mavericks",
+    "Sacramento Kings"
+   ],
+   "home_court": "Dallas Mavericks",
+   "wins": {
+    "Dallas Mavericks": 0,
+    "Sacramento Kings": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-04-23",
+     "home": "Dallas Mavericks",
+     "away": "Sacramento Kings",
+     "conditional": false,
+     "event_id": "2005-04-23-sacramento-kings-at-dallas-mavericks"
+    },
+    {
+     "game": 2,
+     "date": "2005-04-26",
+     "home": "Dallas Mavericks",
+     "away": "Sacramento Kings",
+     "conditional": false,
+     "event_id": "2005-04-26-sacramento-kings-at-dallas-mavericks"
+    },
+    {
+     "game": 3,
+     "date": "2005-04-29",
+     "home": "Sacramento Kings",
+     "away": "Dallas Mavericks",
+     "conditional": false,
+     "event_id": "2005-04-29-dallas-mavericks-at-sacramento-kings"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-01",
+     "home": "Sacramento Kings",
+     "away": "Dallas Mavericks",
+     "conditional": false,
+     "event_id": "2005-05-01-dallas-mavericks-at-sacramento-kings"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-03",
+     "home": "Dallas Mavericks",
+     "away": "Sacramento Kings",
+     "conditional": true,
+     "event_id": "2005-05-03-sacramento-kings-at-dallas-mavericks"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-05",
+     "home": "Sacramento Kings",
+     "away": "Dallas Mavericks",
+     "conditional": true,
+     "event_id": "2005-05-05-dallas-mavericks-at-sacramento-kings"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-07",
+     "home": "Dallas Mavericks",
+     "away": "Sacramento Kings",
+     "conditional": true,
+     "event_id": "2005-05-07-sacramento-kings-at-dallas-mavericks"
+    }
+   ]
+  },
+  {
+   "id": "west-3-6",
+   "round": "first_round",
+   "conference": "West",
+   "seeds": [
+    3,
+    6
+   ],
+   "clubs": [
+    "Minnesota Timberwolves",
+    "Golden State Warriors"
+   ],
+   "home_court": "Minnesota Timberwolves",
+   "wins": {
+    "Minnesota Timberwolves": 0,
+    "Golden State Warriors": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-04-23",
+     "home": "Minnesota Timberwolves",
+     "away": "Golden State Warriors",
+     "conditional": false,
+     "event_id": "2005-04-23-golden-state-warriors-at-minnesota-timberwolves"
+    },
+    {
+     "game": 2,
+     "date": "2005-04-26",
+     "home": "Minnesota Timberwolves",
+     "away": "Golden State Warriors",
+     "conditional": false,
+     "event_id": "2005-04-26-golden-state-warriors-at-minnesota-timberwolves"
+    },
+    {
+     "game": 3,
+     "date": "2005-04-29",
+     "home": "Golden State Warriors",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2005-04-29-minnesota-timberwolves-at-golden-state-warriors"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-01",
+     "home": "Golden State Warriors",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2005-05-01-minnesota-timberwolves-at-golden-state-warriors"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-03",
+     "home": "Minnesota Timberwolves",
+     "away": "Golden State Warriors",
+     "conditional": true,
+     "event_id": "2005-05-03-golden-state-warriors-at-minnesota-timberwolves"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-05",
+     "home": "Golden State Warriors",
+     "away": "Minnesota Timberwolves",
+     "conditional": true,
+     "event_id": "2005-05-05-minnesota-timberwolves-at-golden-state-warriors"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-07",
+     "home": "Minnesota Timberwolves",
+     "away": "Golden State Warriors",
+     "conditional": true,
+     "event_id": "2005-05-07-golden-state-warriors-at-minnesota-timberwolves"
+    }
+   ]
+  },
+  {
+   "id": "west-2-7",
+   "round": "first_round",
+   "conference": "West",
+   "seeds": [
+    2,
+    7
+   ],
+   "clubs": [
+    "San Antonio Spurs",
+    "Los Angeles Lakers"
+   ],
+   "home_court": "San Antonio Spurs",
+   "wins": {
+    "San Antonio Spurs": 0,
+    "Los Angeles Lakers": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-04-24",
+     "home": "San Antonio Spurs",
+     "away": "Los Angeles Lakers",
+     "conditional": false,
+     "event_id": "2005-04-24-los-angeles-lakers-at-san-antonio-spurs"
+    },
+    {
+     "game": 2,
+     "date": "2005-04-27",
+     "home": "San Antonio Spurs",
+     "away": "Los Angeles Lakers",
+     "conditional": false,
+     "event_id": "2005-04-27-los-angeles-lakers-at-san-antonio-spurs"
+    },
+    {
+     "game": 3,
+     "date": "2005-04-30",
+     "home": "Los Angeles Lakers",
+     "away": "San Antonio Spurs",
+     "conditional": false,
+     "event_id": "2005-04-30-san-antonio-spurs-at-los-angeles-lakers"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-02",
+     "home": "Los Angeles Lakers",
+     "away": "San Antonio Spurs",
+     "conditional": false,
+     "event_id": "2005-05-02-san-antonio-spurs-at-los-angeles-lakers"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-04",
+     "home": "San Antonio Spurs",
+     "away": "Los Angeles Lakers",
+     "conditional": true,
+     "event_id": "2005-05-04-los-angeles-lakers-at-san-antonio-spurs"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-06",
+     "home": "Los Angeles Lakers",
+     "away": "San Antonio Spurs",
+     "conditional": true,
+     "event_id": "2005-05-06-san-antonio-spurs-at-los-angeles-lakers"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-08",
+     "home": "San Antonio Spurs",
+     "away": "Los Angeles Lakers",
+     "conditional": true,
+     "event_id": "2005-05-08-los-angeles-lakers-at-san-antonio-spurs"
+    }
+   ]
+  }
+ ],
+ "champion": null
+}

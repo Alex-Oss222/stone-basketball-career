@@ -67,5 +67,23 @@ class PlayoffRuleTests(unittest.TestCase):
             self.assertEqual(days, sorted(days))
 
 
+
+class BuildWritesTests(unittest.TestCase):
+    def test_build_with_write_saves_through_the_module_writer(self):
+        """Regression (April 2005): `build(write=True)` called its own boolean flag instead of the writer."""
+        from unittest import mock
+        from runtime import playoffs
+        bracket = {"seeded": {"East": [], "West": []}, "series": []}
+        saved = []
+        with mock.patch.object(playoffs, "first_round", return_value=(bracket, [])), \
+                mock.patch.object(playoffs, "rules", return_value={"calendar": {"regular_season_last_day": "2005-04-20"}}), \
+                mock.patch.object(playoffs, "_write_record", side_effect=lambda record, root: saved.append(record)), \
+                mock.patch.object(playoffs, "league_dir", return_value=__import__("pathlib").Path("nowhere/x")):
+            record, pending = playoffs.build("/nonexistent-root", "2004-05", write=True)
+        self.assertEqual(pending, [])
+        self.assertEqual(len(saved), 1)
+        self.assertEqual(saved[0]["seeded_on"], "2005-04-20")
+
+
 if __name__ == "__main__":
     unittest.main()

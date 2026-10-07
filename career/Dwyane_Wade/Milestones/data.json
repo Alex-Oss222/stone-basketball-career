@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-04-20",
+  "as_of": "2005-04-21",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -18,7 +18,7 @@
       "title": "Your career calendar",
       "status": "active",
       "trigger": "The authoritative current date and recorded event determine what is open.",
-      "summary": "Dwyane Wade is at 04 Training Camp. All milestone pages remain accessible; inactive pages explain their opening event.",
+      "summary": "Dwyane Wade is at 08 Playoffs. All milestone pages remain accessible; inactive pages explain their opening event.",
       "sections": [
         {
           "title": "What is happening now",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-04-20"
+              "2005-04-21"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2005-04-20",
+              "2005-04-21",
               "Current checkpoint",
               "2005-04-20-miami-heat-at-orlando-magic",
               "Recorded",
@@ -94,8 +94,8 @@
               }
             ],
             [
-              "2005-04-21",
-              "League awards announced: Player of the Week",
+              "2005-04-22",
+              "League awards announced: Player of the Month, Rookie of the Month",
               "League (closed results only)",
               "Scheduled",
               {
@@ -239,7 +239,7 @@
               "2005-04-20",
               "Regular season ends",
               "League calendar",
-              "today",
+              "done",
               {
                 "label": "Season",
                 "href": "#calendar"
@@ -768,7 +768,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-20"
+          "value": "2005-04-21"
         },
         {
           "label": "Team",
@@ -1362,7 +1362,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-20"
+          "value": "2005-04-21"
         },
         {
           "label": "Team",
@@ -1929,7 +1929,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-20"
+          "value": "2005-04-21"
         },
         {
           "label": "Team",
@@ -2535,7 +2535,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-20"
+          "value": "2005-04-21"
         },
         {
           "label": "Team",
@@ -3104,7 +3104,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-20"
+          "value": "2005-04-21"
         },
         {
           "label": "Team",
@@ -3717,7 +3717,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-20"
+          "value": "2005-04-21"
         },
         {
           "label": "Team",
@@ -4286,7 +4286,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-20"
+          "value": "2005-04-21"
         },
         {
           "label": "Team",
@@ -4995,7 +4995,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-20"
+          "value": "2005-04-21"
         },
         {
           "label": "Team",
@@ -5012,7 +5012,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "89 closed game records in 2004-05 through 2005-04-20. Competitions remain separate.",
+      "summary": "89 closed game records in 2004-05 through 2005-04-21. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -6470,7 +6470,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-20"
+          "value": "2005-04-21"
         },
         {
           "label": "Team",

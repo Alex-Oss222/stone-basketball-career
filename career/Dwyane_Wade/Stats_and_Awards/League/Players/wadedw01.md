@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `wadedw01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-04-20 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2004-05 register · **League:** NBA  
+**Card date:** 2005-04-21 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2004-05 register · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #3 · **Born:** 1984-01-17 · **Age on card date:** 21  
 **Registry ID:** `wadedw01` · [Basketball-Reference page](https://www.basketball-reference.com/players/w/wadedw01.html) · ESPN ID 1987
 
@@ -28,7 +28,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wadedw
 
 ## Simulated statistics
 
-As of **2005-04-20**: 77 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-04-21**: 77 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -106,7 +106,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04. The historical Wade's statistics are never imported. 2004-05 is simulated: 77 closed regular-season games through 2005-04-20. Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04. The historical Wade's statistics are never imported. 2004-05 is simulated: 77 closed regular-season games through 2005-04-21. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -124,7 +124,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-04-20, from closed award decisions (18 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-04-21, from closed award decisions (18 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -157,3 +157,4 @@ Simulated honors and shortlist placings through 2005-04-20, from closed award de
 | East Player of the Month | 2005-02-01 to 2005-02-28 | 2005-03-02 | Shortlist, No. 2 | [Decision](../2004-05/02_February/League_Awards.md) |
 | East Player of the Week | 2005-03-14 to 2005-03-20 | 2005-03-21 | Shortlist, No. 2 | [Decision](../2004-05/03_March/Week_3/League_Awards.md) |
 | East Player of the Month | 2005-03-01 to 2005-03-31 | 2005-04-02 | **Winner** | [Decision](../2004-05/03_March/League_Awards.md) |
+| East Player of the Week | 2005-04-18 to 2005-04-20 | 2005-04-21 | Shortlist, No. 2 | [Decision](../2004-05/04_April/Week_3/League_Awards.md) |
