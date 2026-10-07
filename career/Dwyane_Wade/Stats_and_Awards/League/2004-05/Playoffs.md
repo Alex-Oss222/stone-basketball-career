@@ -37,9 +37,9 @@ Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · [Miam
 ```
 EAST
   (1) Toronto Raptors          2
-  (8) Philadelphia 76ers       1
+  (8) Philadelphia 76ers       2
   (4) Boston Celtics           2
-  (5) Chicago Bulls            1
+  (5) Chicago Bulls            2
         conference semifinal: winners meet
   (3) Cleveland Cavaliers      1
   (6) Atlanta Hawks            3
@@ -50,13 +50,13 @@ EAST
 
 WEST
   (1) Phoenix Suns             3
-  (8) Portland Trail Blazers   0
+  (8) Portland Trail Blazers   1
   (4) Dallas Mavericks         1
   (5) Sacramento Kings         3
         conference semifinal: winners meet
   (3) Minnesota Timberwolves   3
   (6) Golden State Warriors    1
-  (2) San Antonio Spurs        2
+  (2) San Antonio Spurs        3
   (7) Los Angeles Lakers       1
         conference semifinal: winners meet
     conference final, then the NBA Finals
@@ -67,28 +67,28 @@ WEST
 
 ### East: (1) Toronto Raptors vs (8) Philadelphia 76ers
 
-Home court: Toronto Raptors. Series Toronto Raptors 2, Philadelphia 76ers 1.
+Home court: Toronto Raptors. Series Toronto Raptors 2, Philadelphia 76ers 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 24 | Toronto Raptors | Philadelphia 76ers | Philadelphia 76ers 74, Toronto Raptors 100 |
 | 2 | Wed Apr 27 | Toronto Raptors | Philadelphia 76ers | Philadelphia 76ers 102, Toronto Raptors 107 (1OT) |
 | 3 | Sat Apr 30 | Philadelphia 76ers | Toronto Raptors | Toronto Raptors 91, Philadelphia 76ers 96 |
-| 4 | Mon May 2 | Philadelphia 76ers | Toronto Raptors |  |
+| 4 | Mon May 2 | Philadelphia 76ers | Toronto Raptors | Toronto Raptors 82, Philadelphia 76ers 96 |
 | 5 | Wed May 4 | Toronto Raptors | Philadelphia 76ers | if needed |
 | 6 | Fri May 6 | Philadelphia 76ers | Toronto Raptors | if needed |
 | 7 | Sun May 8 | Toronto Raptors | Philadelphia 76ers | if needed |
 
 ### East: (4) Boston Celtics vs (5) Chicago Bulls
 
-Home court: Boston Celtics. Series Boston Celtics 2, Chicago Bulls 1.
+Home court: Boston Celtics. Series Boston Celtics 2, Chicago Bulls 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 24 | Boston Celtics | Chicago Bulls | Chicago Bulls 93, Boston Celtics 86 |
 | 2 | Wed Apr 27 | Boston Celtics | Chicago Bulls | Chicago Bulls 79, Boston Celtics 96 |
 | 3 | Sat Apr 30 | Chicago Bulls | Boston Celtics | Boston Celtics 113, Chicago Bulls 102 (1OT) |
-| 4 | Mon May 2 | Chicago Bulls | Boston Celtics |  |
+| 4 | Mon May 2 | Chicago Bulls | Boston Celtics | Boston Celtics 88, Chicago Bulls 97 |
 | 5 | Wed May 4 | Boston Celtics | Chicago Bulls | if needed |
 | 6 | Fri May 6 | Chicago Bulls | Boston Celtics | if needed |
 | 7 | Sun May 8 | Boston Celtics | Chicago Bulls | if needed |
@@ -123,14 +123,14 @@ Home court: Miami Heat. Series Miami Heat 2, Detroit Pistons 2.
 
 ### West: (1) Phoenix Suns vs (8) Portland Trail Blazers
 
-Home court: Phoenix Suns. Series Phoenix Suns 3, Portland Trail Blazers 0.
+Home court: Phoenix Suns. Series Phoenix Suns 3, Portland Trail Blazers 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 24 | Phoenix Suns | Portland Trail Blazers | Portland Trail Blazers 92, Phoenix Suns 103 |
 | 2 | Wed Apr 27 | Phoenix Suns | Portland Trail Blazers | Portland Trail Blazers 104, Phoenix Suns 113 |
 | 3 | Sat Apr 30 | Portland Trail Blazers | Phoenix Suns | Phoenix Suns 91, Portland Trail Blazers 78 |
-| 4 | Mon May 2 | Portland Trail Blazers | Phoenix Suns |  |
+| 4 | Mon May 2 | Portland Trail Blazers | Phoenix Suns | Phoenix Suns 84, Portland Trail Blazers 100 |
 | 5 | Wed May 4 | Phoenix Suns | Portland Trail Blazers | if needed |
 | 6 | Fri May 6 | Portland Trail Blazers | Phoenix Suns | if needed |
 | 7 | Sun May 8 | Phoenix Suns | Portland Trail Blazers | if needed |
@@ -165,14 +165,14 @@ Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 3, Golden Stat
 
 ### West: (2) San Antonio Spurs vs (7) Los Angeles Lakers
 
-Home court: San Antonio Spurs. Series San Antonio Spurs 2, Los Angeles Lakers 1.
+Home court: San Antonio Spurs. Series San Antonio Spurs 3, Los Angeles Lakers 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 24 | San Antonio Spurs | Los Angeles Lakers | Los Angeles Lakers 89, San Antonio Spurs 107 |
 | 2 | Wed Apr 27 | San Antonio Spurs | Los Angeles Lakers | Los Angeles Lakers 107, San Antonio Spurs 104 (1OT) |
 | 3 | Sat Apr 30 | Los Angeles Lakers | San Antonio Spurs | San Antonio Spurs 100, Los Angeles Lakers 92 |
-| 4 | Mon May 2 | Los Angeles Lakers | San Antonio Spurs |  |
+| 4 | Mon May 2 | Los Angeles Lakers | San Antonio Spurs | San Antonio Spurs 103, Los Angeles Lakers 92 |
 | 5 | Wed May 4 | San Antonio Spurs | Los Angeles Lakers | if needed |
 | 6 | Fri May 6 | Los Angeles Lakers | San Antonio Spurs | if needed |
 | 7 | Sun May 8 | San Antonio Spurs | Los Angeles Lakers | if needed |

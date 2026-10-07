@@ -87,6 +87,109 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2004-05-dpoy",
+   "award": "dpoy",
+   "name": "Defensive Player of the Year",
+   "announced_on": "2005-05-02",
+   "electorate": 125,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.3,
+    0.6
+   ],
+   "evidence_through": "2005-04-20",
+   "winners": [
+    "Marcus Camby"
+   ],
+   "tally": [
+    {
+     "player": "Marcus Camby",
+     "team": "Minnesota Timberwolves",
+     "games": 65,
+     "mpg": 33.5,
+     "pts": 7.7,
+     "reb": 10.0,
+     "ast": 2.9,
+     "stl": 1.4,
+     "blk": 3.6,
+     "game_score": 11.16,
+     "club_drtg": 99.9,
+     "points": 595,
+     "first_place": 110,
+     "votes_by_place": [
+      110,
+      15,
+      0
+     ]
+    },
+    {
+     "player": "Tim Duncan",
+     "team": "San Antonio Spurs",
+     "games": 66,
+     "mpg": 36.6,
+     "pts": 20.7,
+     "reb": 10.2,
+     "ast": 2.7,
+     "stl": 0.7,
+     "blk": 2.6,
+     "game_score": 17.73,
+     "club_drtg": 94.8,
+     "points": 377,
+     "first_place": 15,
+     "votes_by_place": [
+      15,
+      96,
+      14
+     ]
+    },
+    {
+     "player": "Ben Wallace",
+     "team": "Detroit Pistons",
+     "games": 74,
+     "mpg": 36.9,
+     "pts": 10.3,
+     "reb": 11.7,
+     "ast": 2.1,
+     "stl": 1.2,
+     "blk": 3.0,
+     "game_score": 11.71,
+     "club_drtg": 101.2,
+     "points": 99,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      14,
+      57
+     ]
+    },
+    {
+     "player": "Tyson Chandler",
+     "team": "Chicago Bulls",
+     "games": 80,
+     "mpg": 28.9,
+     "pts": 8.0,
+     "reb": 9.4,
+     "ast": 1.0,
+     "stl": 1.1,
+     "blk": 1.6,
+     "game_score": 8.42,
+     "club_drtg": 96.5,
+     "points": 54,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      54
+     ]
+    }
+   ]
   }
  ]
 }

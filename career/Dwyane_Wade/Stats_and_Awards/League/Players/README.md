@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-05-01**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-05-02**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -396,7 +396,7 @@ Card date: **2005-05-01**. 573 registry players, one Markdown card and one inter
 | [Austin Croshere](croshau01.md) | New York Knicks | 30 | sourced | [open](croshau01.html) |
 | [Boris Diaw](diawbo01.md) | Atlanta Hawks | 23 | sourced | [open](diawbo01.html) |
 | [Brandon Hunter](huntebr01.md) | Charlotte Bobcats | 24 | sourced | [open](huntebr01.html) |
-| [Brian Cardinal](cardibr01.md) | Chicago Bulls | 27 | silhouette | [open](cardibr01.html) |
+| [Brian Cardinal](cardibr01.md) | Chicago Bulls | 28 | silhouette | [open](cardibr01.html) |
 | [Brian Cook](cookbr01.md) | Los Angeles Lakers | 24 | sourced | [open](cookbr01.html) |
 | [Brian Scalabrine](scalabr01.md) | Denver Nuggets | 27 | sourced | [open](scalabr01.html) |
 | [Brian Skinner](skinnbr01.md) | Washington Wizards | 28 | sourced | [open](skinnbr01.html) |
@@ -485,7 +485,7 @@ Card date: **2005-05-01**. 573 registry players, one Markdown card and one inter
 | [Tommy Smith](smithto03.md) | Free agent | 24 | silhouette | [open](smithto03.html) |
 | [Toni Kukoc](kukocto01.md) | New Jersey Nets | 36 | sourced | [open](kukocto01.html) |
 | [Torraye Braggs](braggto01.md) | Free agent | 28 | silhouette | [open](braggto01.html) |
-| [Troy Murphy](murphtr01.md) | Golden State Warriors | 24 | sourced | [open](murphtr01.html) |
+| [Troy Murphy](murphtr01.md) | Golden State Warriors | 25 | sourced | [open](murphtr01.html) |
 | [Tyrone Hill](hillty01.md) | Free agent | 37 | silhouette | [open](hillty01.html) |
 | [Tyson Chandler](chandty01.md) | Chicago Bulls | 22 | silhouette | [open](chandty01.html) |
 | [Udonis Haslem](hasleud01.md) | Toronto Raptors | 24 | silhouette | [open](hasleud01.html) |
@@ -579,7 +579,7 @@ Card date: **2005-05-01**. 573 registry players, one Markdown card and one inter
 | [Marcus Camby](cambyma01.md) | Minnesota Timberwolves | 31 | sourced | [open](cambyma01.html) |
 | [Mario Kasun](kasunma01.md) | Orlando Magic | 25 | silhouette | [open](kasunma01.html) |
 | [Mark Blount](blounma01.md) | Memphis Grizzlies | 29 | sourced | [open](blounma01.html) |
-| [Melvin Ely](elyme01.md) | Los Angeles Clippers | 26 | silhouette | [open](elyme01.html) |
+| [Melvin Ely](elyme01.md) | Los Angeles Clippers | 27 | silhouette | [open](elyme01.html) |
 | [Mengke Bateer](bateeme01.md) | Free agent | 29 | silhouette | [open](bateeme01.html) |
 | [Michael Doleac](doleami01.md) | New York Knicks | 27 | sourced | [open](doleami01.html) |
 | [Michael Olowokandi](olowomi01.md) | Phoenix Suns | 30 | silhouette | [open](olowomi01.html) |

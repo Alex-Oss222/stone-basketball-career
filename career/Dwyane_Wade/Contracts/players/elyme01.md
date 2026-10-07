@@ -2,9 +2,9 @@
 
 # Contract | Melvin Ely
 
-Known through: 2005-05-01. [Open interactive contract](elyme01.html#contract) · [Contract history](elyme01.html#contract-history)
+Known through: 2005-05-02. [Open interactive contract](elyme01.html#contract) · [Contract history](elyme01.html#contract-history)
 
-Melvin Ely: under rookie contract. Evidence cutoff: 2005-05-01.
+Melvin Ely: under rookie contract. Evidence cutoff: 2005-05-02.
 
 ## Current contract
 

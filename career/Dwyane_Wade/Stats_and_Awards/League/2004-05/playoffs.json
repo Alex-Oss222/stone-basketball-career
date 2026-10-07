@@ -138,7 +138,7 @@
    "home_court": "Toronto Raptors",
    "wins": {
     "Toronto Raptors": 2,
-    "Philadelphia 76ers": 1
+    "Philadelphia 76ers": 2
    },
    "winner": null,
    "games": [
@@ -178,7 +178,9 @@
      "home": "Philadelphia 76ers",
      "away": "Toronto Raptors",
      "conditional": false,
-     "event_id": "2005-05-02-toronto-raptors-at-philadelphia-76ers"
+     "event_id": "2005-05-02-toronto-raptors-at-philadelphia-76ers",
+     "result": "Toronto Raptors 82, Philadelphia 76ers 96",
+     "winner": "Philadelphia 76ers"
     },
     {
      "game": 5,
@@ -221,7 +223,7 @@
    "home_court": "Boston Celtics",
    "wins": {
     "Boston Celtics": 2,
-    "Chicago Bulls": 1
+    "Chicago Bulls": 2
    },
    "winner": null,
    "games": [
@@ -261,7 +263,9 @@
      "home": "Chicago Bulls",
      "away": "Boston Celtics",
      "conditional": false,
-     "event_id": "2005-05-02-boston-celtics-at-chicago-bulls"
+     "event_id": "2005-05-02-boston-celtics-at-chicago-bulls",
+     "result": "Boston Celtics 88, Chicago Bulls 97",
+     "winner": "Chicago Bulls"
     },
     {
      "game": 5,
@@ -474,7 +478,7 @@
    "home_court": "Phoenix Suns",
    "wins": {
     "Phoenix Suns": 3,
-    "Portland Trail Blazers": 0
+    "Portland Trail Blazers": 1
    },
    "winner": null,
    "games": [
@@ -514,7 +518,9 @@
      "home": "Portland Trail Blazers",
      "away": "Phoenix Suns",
      "conditional": false,
-     "event_id": "2005-05-02-phoenix-suns-at-portland-trail-blazers"
+     "event_id": "2005-05-02-phoenix-suns-at-portland-trail-blazers",
+     "result": "Phoenix Suns 84, Portland Trail Blazers 100",
+     "winner": "Portland Trail Blazers"
     },
     {
      "game": 5,
@@ -726,7 +732,7 @@
    ],
    "home_court": "San Antonio Spurs",
    "wins": {
-    "San Antonio Spurs": 2,
+    "San Antonio Spurs": 3,
     "Los Angeles Lakers": 1
    },
    "winner": null,
@@ -767,7 +773,9 @@
      "home": "Los Angeles Lakers",
      "away": "San Antonio Spurs",
      "conditional": false,
-     "event_id": "2005-05-02-san-antonio-spurs-at-los-angeles-lakers"
+     "event_id": "2005-05-02-san-antonio-spurs-at-los-angeles-lakers",
+     "result": "San Antonio Spurs 103, Los Angeles Lakers 92",
+     "winner": "San Antonio Spurs"
     },
     {
      "game": 5,
