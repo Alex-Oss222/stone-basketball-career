@@ -4,7 +4,7 @@
 
 ![Player career overview: professional identity, NBA regular-season statistics and playoff statistics](assets/career_overview.svg)
 
-![Earned professional awards through 2005-05-12](assets/stat_reports/awards_2005-05-12.svg)
+![Earned professional awards through 2005-05-15](assets/stat_reports/awards_2005-05-15.svg)
 
 [Professional identity](Professional_Identity.md) · [Career statistics](Stats_and_Awards/README.md) · [Earned awards](Awards.md) · [National team / FIBA](National_Team/README.md) · [Career milestones](Milestones/career_milestones.md) · [Season tracker](Milestones/calendar.md)
 
@@ -25,13 +25,13 @@
 
 NBA entry: 2003 draft, round 1, No. 5 overall, Miami Heat.
 
-Identity as of 2005-05-12; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-05-15; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 </details>
 
 ## Statistics
 
-Career cutoff: **2005-05-12**. Club competitions and national-team events have separate records.
+Career cutoff: **2005-05-15**. Club competitions and national-team events have separate records.
 
 ### NBA regular season
 
@@ -47,7 +47,7 @@ Career cutoff: **2005-05-12**. Club competitions and national-team events have s
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-05-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-05-15, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### NBA playoffs
 
@@ -58,12 +58,12 @@ Awards are confirmed through 2005-05-12, filed by the honor's period-end date; t
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [2003-04](2003-04/08_Playoffs/README.md) | 20 | Miami Heat | NBA | SG / PG | 2 | 2 | 26.0 | 3.5 | 6.5 | .538 | 1.5 | 2.0 | .750 | 2.0 | 4.5 | .444 | .654 | 2.0 | 2.0 | 1.000 | 1.0 | 3.0 | 4.0 | 4.0 | 1.0 | 1.0 | 1.0 | 4.5 | 10.5 | .711 | — |
-| [2004-05](2004-05/08_Playoffs/README.md) | 21 | Miami Heat | NBA | SG / PG | 8 | 8 | 34.9 | 7.5 | 13.4 | .561 | 1.9 | 3.1 | .600 | 5.6 | 10.2 | .549 | .631 | 3.9 | 4.0 | .969 | 1.2 | 2.9 | 4.1 | 3.4 | 1.8 | 1.2 | 1.1 | 3.2 | 20.8 | .685 | — |
-| Career total | 21 | Miami Heat | NBA | SG / PG | 10 | 10 | 33.1 | 6.7 | 12.0 | .558 | 1.8 | 2.9 | .621 | 4.9 | 9.1 | .538 | .633 | 3.5 | 3.6 | .972 | 1.2 | 2.9 | 4.1 | 3.5 | 1.6 | 1.2 | 1.1 | 3.5 | 18.7 | .688 | — |
+| [2004-05](2004-05/08_Playoffs/README.md) | 21 | Miami Heat | NBA | SG / PG | 10 | 10 | 36.1 | 7.5 | 14.2 | .528 | 1.6 | 3.1 | .516 | 5.9 | 11.1 | .532 | .585 | 4.4 | 4.5 | .978 | 1.3 | 3.2 | 4.5 | 4.8 | 1.6 | 1.1 | 1.2 | 2.9 | 21.0 | .649 | — |
+| Career total | 21 | Miami Heat | NBA | SG / PG | 12 | 12 | 34.4 | 6.8 | 12.9 | .529 | 1.6 | 2.9 | .543 | 5.2 | 10.0 | .525 | .590 | 4.0 | 4.1 | .980 | 1.2 | 3.2 | 4.4 | 4.7 | 1.5 | 1.1 | 1.2 | 3.2 | 19.2 | .654 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-05-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-05-15, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Browse
 

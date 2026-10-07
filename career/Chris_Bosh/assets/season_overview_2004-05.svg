@@ -28,29 +28,29 @@
 <text x="44" y="460" font-family="sans-serif" fill="#e6dcf5" font-size="16" font-weight="400" text-anchor="start">Measurements recorded 2004-10-01 (user&#x27;s development profile)</text>
 <rect x="650" y="210" width="610" height="270" rx="24" fill="#222326"/>
 <text x="674" y="248" font-family="sans-serif" fill="#ffffff" font-size="24" font-weight="700" text-anchor="start">2004-05 playoffs</text>
-<text x="1234" y="248" font-family="sans-serif" fill="#d0d1d4" font-size="19" font-weight="700" text-anchor="end">8 G</text>
+<text x="1234" y="248" font-family="sans-serif" fill="#d0d1d4" font-size="19" font-weight="700" text-anchor="end">10 G</text>
 <line x1="674" y1="267" x2="1236" y2="267" stroke="#ffffff" stroke-opacity="0.18"/>
-<text x="720.0" y="313" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">19.6</text>
+<text x="720.0" y="313" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">18.1</text>
 <text x="720.0" y="340" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">PPG</text>
-<text x="837.5" y="313" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">9.8</text>
+<text x="837.5" y="313" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">10.7</text>
 <text x="837.5" y="340" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">RPG</text>
 <text x="955.0" y="313" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">1.9</text>
 <text x="955.0" y="340" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">APG</text>
-<text x="1072.5" y="313" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">1.6</text>
+<text x="1072.5" y="313" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">1.5</text>
 <text x="1072.5" y="340" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">SPG</text>
-<text x="1190.0" y="313" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">1.4</text>
+<text x="1190.0" y="313" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">1.6</text>
 <text x="1190.0" y="340" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">BPG</text>
-<text x="720.0" y="401" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">35.5</text>
+<text x="720.0" y="401" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">36.0</text>
 <text x="720.0" y="428" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">MPG</text>
-<text x="837.5" y="401" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">51.3</text>
+<text x="837.5" y="401" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">49.3</text>
 <text x="837.5" y="428" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">FG%</text>
 <text x="955.0" y="401" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">42.9</text>
 <text x="955.0" y="428" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">3P%</text>
-<text x="1072.5" y="401" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">81.0</text>
+<text x="1072.5" y="401" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">81.6</text>
 <text x="1072.5" y="428" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">FT%</text>
-<text x="1190.0" y="401" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">57.9</text>
+<text x="1190.0" y="401" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">56.0</text>
 <text x="1190.0" y="428" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">TS% (est.)</text>
-<text x="674" y="460" font-family="sans-serif" fill="#d0d1d4" font-size="16" font-weight="400" text-anchor="start">Player box coverage: 8/8 closed games</text>
+<text x="674" y="460" font-family="sans-serif" fill="#d0d1d4" font-size="16" font-weight="400" text-anchor="start">Player box coverage: 10/10 closed games</text>
 <rect x="20" y="500" width="610" height="270" rx="24" fill="#753bbd"/>
 <text x="44" y="538" font-family="sans-serif" fill="#ffffff" font-size="24" font-weight="700" text-anchor="start">2004-05 regular season</text>
 <text x="604" y="538" font-family="sans-serif" fill="#d0d1d4" font-size="19" font-weight="700" text-anchor="end">81 G</text>
