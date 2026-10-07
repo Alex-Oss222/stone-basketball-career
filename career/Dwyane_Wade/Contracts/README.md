@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-03-06. [Search the contract directory](index.html)
+Known through 2005-03-07. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -429,7 +429,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Pau Gasol](players/gasolpa01.md) | Memphis Grizzlies | under rookie contract | Pau Gasol · 2001-09-06 | 1 |
 | [Paul Grant](players/grantpa01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Paul Pierce](players/piercpa01.md) | Boston Celtics | under contract | Paul Pierce · 2001-08-01 | 1 |
-| [Paul Shirley](players/shirlpa01.md) | Philadelphia 76ers | No verified contract record | No verified current agreement | 0 |
+| [Paul Shirley](players/shirlpa01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Pavel Podkolzin](players/pavelpodkolzin.md) | Philadelphia 76ers | under contract | Pavel Podkolzin · 2004-07-01 | 1 |
 | [Peja Stojakovic](players/stojape01.md) | Sacramento Kings | under contract | Peja Stojakovic · 2000-08-16 | 1 |
 | [Peter John Ramos](players/peterjohnramos.md) | Boston Celtics | under contract | Peter John Ramos · 2004-07-01 | 1 |
