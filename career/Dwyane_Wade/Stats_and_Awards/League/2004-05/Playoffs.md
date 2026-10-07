@@ -253,11 +253,11 @@ Home court: Toronto Raptors. Series Toronto Raptors 0, Atlanta Hawks 0.
 
 ### West: (5) Sacramento Kings vs (3) Minnesota Timberwolves
 
-Home court: Sacramento Kings. Series Sacramento Kings 0, Minnesota Timberwolves 0.
+Home court: Sacramento Kings. Series Sacramento Kings 1, Minnesota Timberwolves 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sun May 22 | Sacramento Kings | Minnesota Timberwolves |  |
+| 1 | Sun May 22 | Sacramento Kings | Minnesota Timberwolves | Minnesota Timberwolves 91, Sacramento Kings 107 |
 | 2 | Tue May 24 | Sacramento Kings | Minnesota Timberwolves |  |
 | 3 | Sat May 28 | Minnesota Timberwolves | Sacramento Kings |  |
 | 4 | Mon May 30 | Minnesota Timberwolves | Sacramento Kings |  |
