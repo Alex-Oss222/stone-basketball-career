@@ -3922,6 +3922,68 @@
    },
    "contract": null,
    "note": "10-day contract ended (5.9 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-19-ten_day-breweja01",
+   "date": "2005-03-19",
+   "kind": "ten_day",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": null,
+   "to": "Memphis Grizzlies",
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-29",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.47 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-03-19-expire-shirlpa01",
+   "date": "2005-03-19",
+   "kind": "expire",
+   "player": "Paul Shirley",
+   "bbr_id": "shirlpa01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Paul Shirley",
+    "bbr_id": "shirlpa01",
+    "position": "PF",
+    "games": 9,
+    "minutes": 30
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.9 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-19-ten_day-carroma01",
+   "date": "2005-03-19",
+   "kind": "ten_day",
+   "player": "Matt Carroll",
+   "bbr_id": "carroma01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Matt Carroll",
+    "bbr_id": "carroma01",
+    "position": "SG",
+    "games": 25,
+    "minutes": 430
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-29",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.1 x fit"
   }
  ],
  "market_days": [
@@ -4061,6 +4123,7 @@
   "2005-03-15",
   "2005-03-16",
   "2005-03-17",
-  "2005-03-18"
+  "2005-03-18",
+  "2005-03-19"
  ]
 }
