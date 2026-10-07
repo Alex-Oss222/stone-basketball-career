@@ -592,6 +592,185 @@
      "points": 1
     }
    ]
+  },
+  {
+   "id": "2004-05-mvp",
+   "award": "mvp",
+   "name": "Most Valuable Player",
+   "announced_on": "2005-05-08",
+   "electorate": 127,
+   "voters": "media",
+   "ballot": [
+    10,
+    7,
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.2,
+    0.5
+   ],
+   "evidence_through": "2005-04-20",
+   "winners": [
+    "Vince Carter"
+   ],
+   "tally": [
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 77,
+     "mpg": 38.2,
+     "pts": 24.1,
+     "reb": 5.0,
+     "ast": 5.6,
+     "stl": 1.5,
+     "blk": 0.5,
+     "game_score": 17.79,
+     "club_pct": 0.72,
+     "points": 1124,
+     "first_place": 91,
+     "votes_by_place": [
+      91,
+      17,
+      19,
+      0,
+      0
+     ]
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 82,
+     "mpg": 39.6,
+     "pts": 24.0,
+     "reb": 13.2,
+     "ast": 6.0,
+     "stl": 1.8,
+     "blk": 0.9,
+     "game_score": 22.74,
+     "club_pct": 0.561,
+     "points": 731,
+     "first_place": 36,
+     "votes_by_place": [
+      36,
+      34,
+      0,
+      43,
+      4
+     ]
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 76,
+     "mpg": 36.2,
+     "pts": 21.3,
+     "reb": 5.4,
+     "ast": 4.0,
+     "stl": 1.4,
+     "blk": 1.2,
+     "game_score": 19.38,
+     "club_pct": 0.683,
+     "points": 531,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      75,
+      52,
+      0
+     ]
+    },
+    {
+     "player": "Stephon Marbury",
+     "team": "Phoenix Suns",
+     "games": 82,
+     "mpg": 38.9,
+     "pts": 20.5,
+     "reb": 3.3,
+     "ast": 8.8,
+     "stl": 1.4,
+     "blk": 0.1,
+     "game_score": 17.85,
+     "club_pct": 0.732,
+     "points": 505,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      57,
+      3,
+      12,
+      55
+     ]
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 80,
+     "mpg": 41.5,
+     "pts": 26.8,
+     "reb": 7.8,
+     "ast": 5.8,
+     "stl": 1.9,
+     "blk": 0.7,
+     "game_score": 19.95,
+     "club_pct": 0.549,
+     "points": 346,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      19,
+      30,
+      6,
+      45
+     ]
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 81,
+     "mpg": 37.8,
+     "pts": 17.8,
+     "reb": 10.2,
+     "ast": 1.8,
+     "stl": 1.7,
+     "blk": 1.6,
+     "game_score": 15.88,
+     "club_pct": 0.732,
+     "points": 55,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      0,
+      14,
+      13
+     ]
+    },
+    {
+     "player": "Amar'e Stoudemire",
+     "team": "Phoenix Suns",
+     "games": 80,
+     "mpg": 33.5,
+     "pts": 19.2,
+     "reb": 7.0,
+     "ast": 1.7,
+     "stl": 0.7,
+     "blk": 1.3,
+     "game_score": 14.42,
+     "club_pct": 0.732,
+     "points": 10,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      0,
+      0,
+      10
+     ]
+    }
+   ]
   }
  ]
 }

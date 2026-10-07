@@ -181,11 +181,11 @@ Home court: San Antonio Spurs. San Antonio Spurs wins 4-1.
 
 ### West: (1) Phoenix Suns vs (5) Sacramento Kings
 
-Home court: Phoenix Suns. Series Phoenix Suns 0, Sacramento Kings 0.
+Home court: Phoenix Suns. Series Phoenix Suns 1, Sacramento Kings 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sun May 8 | Phoenix Suns | Sacramento Kings |  |
+| 1 | Sun May 8 | Phoenix Suns | Sacramento Kings | Sacramento Kings 110, Phoenix Suns 114 |
 | 2 | Tue May 10 | Phoenix Suns | Sacramento Kings |  |
 | 3 | Thu May 12 | Sacramento Kings | Phoenix Suns |  |
 | 4 | Sat May 14 | Sacramento Kings | Phoenix Suns |  |
@@ -195,11 +195,11 @@ Home court: Phoenix Suns. Series Phoenix Suns 0, Sacramento Kings 0.
 
 ### West: (3) Minnesota Timberwolves vs (2) San Antonio Spurs
 
-Home court: San Antonio Spurs. Series Minnesota Timberwolves 0, San Antonio Spurs 0.
+Home court: San Antonio Spurs. Series Minnesota Timberwolves 1, San Antonio Spurs 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sun May 8 | San Antonio Spurs | Minnesota Timberwolves |  |
+| 1 | Sun May 8 | San Antonio Spurs | Minnesota Timberwolves | Minnesota Timberwolves 96, San Antonio Spurs 95 |
 | 2 | Tue May 10 | San Antonio Spurs | Minnesota Timberwolves |  |
 | 3 | Thu May 12 | Minnesota Timberwolves | San Antonio Spurs |  |
 | 4 | Sat May 14 | Minnesota Timberwolves | San Antonio Spurs |  |
@@ -209,11 +209,11 @@ Home court: San Antonio Spurs. Series Minnesota Timberwolves 0, San Antonio Spur
 
 ### East: (1) Toronto Raptors vs (4) Boston Celtics
 
-Home court: Toronto Raptors. Series Toronto Raptors 0, Boston Celtics 0.
+Home court: Toronto Raptors. Series Toronto Raptors 0, Boston Celtics 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sun May 8 | Toronto Raptors | Boston Celtics |  |
+| 1 | Sun May 8 | Toronto Raptors | Boston Celtics | Boston Celtics 99, Toronto Raptors 98 |
 | 2 | Tue May 10 | Toronto Raptors | Boston Celtics |  |
 | 3 | Thu May 12 | Boston Celtics | Toronto Raptors |  |
 | 4 | Sat May 14 | Boston Celtics | Toronto Raptors |  |

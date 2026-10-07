@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2005-05-05** · Toronto Raptors · #4 · PF · age 21
+Career date: **2005-05-08** · Toronto Raptors · #4 · PF · age 21
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,7 +14,7 @@ Career date: **2005-05-05** · Toronto Raptors · #4 · PF · age 21
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 81/81 | 39.2 | 17.8 | 9.3 | 2.8 | 1.0 | 1.4 | 50.2 | 41.8 | 83.3 | 57.1 | 59-23 |
+| 2004-05 | 20 | Toronto Raptors | 81/81 | 39.2 | 17.8 | 9.3 | 2.8 | 1.0 | 1.4 | 50.2 | 41.8 | 83.3 | 57.1 | 59-23 · won first round |
 
 ## The user's target line against the closed games
 
@@ -37,7 +37,7 @@ Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profil
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 5/5 | 38.2 | 23.2 | 11.0 | 2.2 | 1.4 | 1.6 | 51.2 | 33.3 | 82.4 | 58.6 | 59-23 |
+| 2004-05 | 20 | Toronto Raptors | 6/6 | 37.1 | 22.0 | 10.3 | 2.0 | 1.8 | 1.3 | 51.0 | 33.3 | 78.9 | 57.5 | 59-23 · won first round |
 
 ## Season highs (regular season)
 
@@ -70,3 +70,4 @@ Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profil
 | 500 career free throws made | 2005-04-11 | 21 years, 18 days | Indiana Pacers |
 | 10 career playoff games | 2005-04-24 | 21 years, 31 days | Philadelphia 76ers |
 | 100 career playoff rebounds | 2005-05-02 | 21 years, 39 days | Philadelphia 76ers |
+| 250 career playoff points | 2005-05-06 | 21 years, 43 days | Philadelphia 76ers |

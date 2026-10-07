@@ -1,6 +1,6 @@
 # 2004-05 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-05-05.
+Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-05-08.
 
 ## Calendar
 
@@ -11,7 +11,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2005-05-03 | Sixth Man of the Year | 125 media | 5-3-1 | decided |
 | 2005-05-04 | Rookie of the Year | 126 media | 5-3-1 | decided |
 | 2005-05-05 | All-Rookie Teams | 30 head coaches, not for their own players | 2-1 | decided |
-| 2005-05-08 | Most Valuable Player | 127 media | 10-7-5-3-1 | pending |
+| 2005-05-08 | Most Valuable Player | 127 media | 10-7-5-3-1 | decided |
 | 2005-05-10 | Coach of the Year | 126 media | 5-3-1 | pending |
 | 2005-05-12 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | pending |
 | 2005-05-18 | All-NBA Teams | 124 media | 5-3-1 | pending |
@@ -90,3 +90,15 @@ Announced 2005-05-05; 30 head coaches, not for their own players, ballot 2-1.
 | Andrés Nocioni | F | San Antonio Spurs | 81 | 26.0 | 9.1 | 4.4 | 2.0 | 0.7 | 0.6 | 5.7 | 24 | 0 |
 
 Also receiving votes: Matt Bonner (Toronto Raptors) 18, Al Jefferson (Toronto Raptors) 2, Jameer Nelson (Seattle SuperSonics) 1.
+
+## Most Valuable Player
+
+Announced 2005-05-08; 127 media, ballot 10-7-5-3-1.
+
+| # | Player | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WINNER | Vince Carter | Toronto Raptors | 77 | 38.2 | 24.1 | 5.0 | 5.6 | 1.5 | 0.5 | 17.79 | 1124 | 91 |
+| 2 | Kevin Garnett | Minnesota Timberwolves | 82 | 39.6 | 24.0 | 13.2 | 6.0 | 1.8 | 0.9 | 22.74 | 731 | 36 |
+| 3 | Dwyane Wade | Miami Heat | 76 | 36.2 | 21.3 | 5.4 | 4.0 | 1.4 | 1.2 | 19.38 | 531 | 0 |
+
+Complete tally: `season_awards.json` (7 receiving votes).

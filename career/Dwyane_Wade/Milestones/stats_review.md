@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-05-05 · Miami Heat · active
+Career date: 2005-05-08 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-94 closed game records in 2004-05 through 2005-05-05. Competitions remain separate.
+95 closed game records in 2004-05 through 2005-05-08. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -14,7 +14,7 @@ Activation: A declared, closed game result supplies observed participation and t
 
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 5 | 34.3 | 17.4 | 4.0 | 3.8 | 1.2 | Complete |
+| playoff | 6 | 35.3 | 18.2 | 4.0 | 3.8 | 1.2 | Complete |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
 | regular | 76 | 36.2 | 21.3 | 5.4 | 4.0 | 1.3 | Complete |
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 33 | 54 | 0.611 | 4 | 9 | 0.444 |
+| playoff | 41 | 71 | 0.577 | 8 | 15 | 0.533 |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
 | regular | 539 | 1017 | 0.530 | 87 | 203 | 0.429 |
 
@@ -126,6 +126,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-04-29 | playoff | Detroit Pistons | Played | [Closed game](../2004-05/08_Playoffs/First_Round/Game_3.md) |
 | 2005-05-01 | playoff | Detroit Pistons | Played | [Closed game](../2004-05/08_Playoffs/First_Round/Game_4.md) |
 | 2005-05-03 | playoff | Detroit Pistons | Played | [Closed game](../2004-05/08_Playoffs/First_Round/Game_5.md) |
+| 2005-05-05 | playoff | Detroit Pistons | Played | [Closed game](../2004-05/08_Playoffs/First_Round/Game_6.md) |
 
 ## Evidence available for decisions
 
@@ -264,4 +265,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/08_Playoffs/First_Round/Game_3.md)
 - [Closed game](../2004-05/08_Playoffs/First_Round/Game_4.md)
 - [Closed game](../2004-05/08_Playoffs/First_Round/Game_5.md)
+- [Closed game](../2004-05/08_Playoffs/First_Round/Game_6.md)
 - [Dated milestone working records and player replies](../milestones.json)

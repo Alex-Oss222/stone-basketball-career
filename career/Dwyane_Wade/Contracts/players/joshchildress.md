@@ -2,9 +2,9 @@
 
 # Contract | Josh Childress
 
-Known through: 2005-05-05. [Open interactive contract](joshchildress.html#contract) · [Contract history](joshchildress.html#contract-history)
+Known through: 2005-05-08. [Open interactive contract](joshchildress.html#contract) · [Contract history](joshchildress.html#contract-history)
 
-Josh Childress: under contract. Evidence cutoff: 2005-05-05.
+Josh Childress: under contract. Evidence cutoff: 2005-05-08.
 
 ## Current contract
 
