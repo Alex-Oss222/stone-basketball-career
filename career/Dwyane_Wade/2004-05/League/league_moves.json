@@ -4202,6 +4202,24 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.46 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-04-05-expire-slayta01",
+   "date": "2005-04-05",
+   "kind": "expire",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": "Houston Rockets",
+   "to": null,
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.0 minutes a game)"
   }
  ],
  "market_days": [
@@ -4358,6 +4376,7 @@
   "2005-04-01",
   "2005-04-02",
   "2005-04-03",
-  "2005-04-04"
+  "2005-04-04",
+  "2005-04-05"
  ]
 }
