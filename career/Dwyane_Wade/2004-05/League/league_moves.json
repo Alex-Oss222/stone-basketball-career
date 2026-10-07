@@ -3368,6 +3368,28 @@
    },
    "contract": null,
    "note": "10-day contract ended (5.2 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-02-23-ten_day-slayta01",
+   "date": "2005-02-23",
+   "kind": "ten_day",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-05",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.84 x fit"
   }
  ],
  "market_days": [
@@ -3483,6 +3505,7 @@
   "2005-02-19",
   "2005-02-20",
   "2005-02-21",
-  "2005-02-22"
+  "2005-02-22",
+  "2005-02-23"
  ]
 }
