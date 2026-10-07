@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2005-06-05** · Toronto Raptors · #4 · PF · age 21
+Career date: **2005-06-12** · Toronto Raptors · #4 · PF · age 21
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,7 +14,7 @@ Career date: **2005-06-05** · Toronto Raptors · #4 · PF · age 21
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 81/81 | 39.2 | 17.8 | 9.3 | 2.8 | 1.0 | 1.4 | 50.2 | 41.8 | 83.3 | 57.1 | 59-23 · won conference semifinals |
+| 2004-05 | 20 | Toronto Raptors | 81/81 | 39.2 | 17.8 | 9.3 | 2.8 | 1.0 | 1.4 | 50.2 | 41.8 | 83.3 | 57.1 | 59-23 · won conference finals |
 
 ## The user's target line against the closed games
 
@@ -37,7 +37,7 @@ Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profil
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 17/17 | 36.0 | 17.6 | 9.9 | 1.8 | 1.2 | 1.6 | 51.3 | 50.0 | 73.9 | 57.1 | 59-23 · won conference semifinals |
+| 2004-05 | 20 | Toronto Raptors | 20/20 | 35.7 | 16.9 | 9.8 | 1.6 | 1.1 | 1.6 | 50.2 | 41.7 | 72.2 | 55.5 | 59-23 · won conference finals |
 
 ## Season highs (regular season)
 
@@ -72,3 +72,4 @@ Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profil
 | 100 career playoff rebounds | 2005-05-02 | 21 years, 39 days | Philadelphia 76ers |
 | 250 career playoff points | 2005-05-06 | 21 years, 43 days | Philadelphia 76ers |
 | 25 career playoff games | 2005-06-02 | 21 years, 70 days | Atlanta Hawks |
+| 250 career playoff rebounds | 2005-06-12 | 21 years, 80 days | Sacramento Kings |

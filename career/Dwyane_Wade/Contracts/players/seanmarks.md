@@ -2,9 +2,9 @@
 
 # Contract | Sean Marks
 
-Known through: 2005-06-05. [Open interactive contract](seanmarks.html#contract) · [Contract history](seanmarks.html#contract-history)
+Known through: 2005-06-12. [Open interactive contract](seanmarks.html#contract) · [Contract history](seanmarks.html#contract-history)
 
-Sean Marks: under contract. Evidence cutoff: 2005-06-05.
+Sean Marks: under contract. Evidence cutoff: 2005-06-12.
 
 ## Current contract
 

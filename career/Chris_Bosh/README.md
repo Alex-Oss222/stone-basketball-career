@@ -4,7 +4,7 @@
 
 ![Chris Bosh career overview](assets/career_overview.svg)
 
-Career date: **2005-06-05** · Toronto Raptors · #4 · PF · age 21
+Career date: **2005-06-12** · Toronto Raptors · #4 · PF · age 21
 
 A real player the user follows, not one the user controls: his club decides his moves and the engine plays his games. Every number below comes from closed simulated games and the league's recorded award decisions.
 
@@ -28,14 +28,14 @@ A real player the user follows, not one the user controls: his club decides his 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [2003-04](2003-04/README.md) | 19 | Toronto Raptors | 75/75 | 35.7 | 13.9 | 7.9 | 1.4 | 1.0 | 1.4 | 47.7 | 42.2 | 71.2 | 53.0 | 42-40 · lost conference semifinals |
-| [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 81/81 | 39.2 | 17.8 | 9.3 | 2.8 | 1.0 | 1.4 | 50.2 | 41.8 | 83.3 | 57.1 | 59-23 · won conference semifinals |
+| [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 81/81 | 39.2 | 17.8 | 9.3 | 2.8 | 1.0 | 1.4 | 50.2 | 41.8 | 83.3 | 57.1 | 59-23 · won conference finals |
 
 ## Playoffs
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | 19 | Toronto Raptors | 9/9 | 33.9 | 14.0 | 6.2 | 1.1 | 1.1 | 1.4 | 49.5 | 60.0 | 62.5 | 54.0 | 42-40 · lost conference semifinals |
-| 2004-05 | 20 | Toronto Raptors | 17/17 | 36.0 | 17.6 | 9.9 | 1.8 | 1.2 | 1.6 | 51.3 | 50.0 | 73.9 | 57.1 | 59-23 · won conference semifinals |
+| 2004-05 | 20 | Toronto Raptors | 20/20 | 35.7 | 16.9 | 9.8 | 1.6 | 1.1 | 1.6 | 50.2 | 41.7 | 72.2 | 55.5 | 59-23 · won conference finals |
 
 ## Awards
 
@@ -75,6 +75,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | 100 career playoff rebounds | 2005-05-02 | 21 years, 39 days | 2004-05 | 13 | Philadelphia 76ers |
 | 250 career playoff points | 2005-05-06 | 21 years, 43 days | 2004-05 | 15 | Philadelphia 76ers |
 | 25 career playoff games | 2005-06-02 | 21 years, 70 days | 2004-05 | 25 | Atlanta Hawks |
+| 250 career playoff rebounds | 2005-06-12 | 21 years, 80 days | 2004-05 | 29 | Sacramento Kings |
 
 ## Next milestones
 
