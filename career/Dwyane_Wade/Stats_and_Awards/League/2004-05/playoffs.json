@@ -1409,7 +1409,7 @@
    "home_court": "Toronto Raptors",
    "wins": {
     "Toronto Raptors": 0,
-    "Sacramento Kings": 2
+    "Sacramento Kings": 3
    },
    "winner": null,
    "games": [
@@ -1439,7 +1439,9 @@
      "home": "Sacramento Kings",
      "away": "Toronto Raptors",
      "conditional": false,
-     "event_id": "2005-06-14-toronto-raptors-at-sacramento-kings"
+     "event_id": "2005-06-14-toronto-raptors-at-sacramento-kings",
+     "result": "Toronto Raptors 86, Sacramento Kings 97",
+     "winner": "Sacramento Kings"
     },
     {
      "game": 4,
