@@ -3740,6 +3740,86 @@
    },
    "contract": null,
    "note": "10-day contract ended (3.7 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-15-expire-slayta01",
+   "date": "2005-03-15",
+   "kind": "expire",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": null,
+   "note": "10-day contract ended (3.1 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-15-waive-popema01",
+   "date": "2005-03-15",
+   "kind": "waive",
+   "player": "Mark Pope",
+   "bbr_id": "popema01",
+   "from": "Los Angeles Lakers",
+   "to": null,
+   "role": {
+    "player_id": "Mark Pope",
+    "bbr_id": "popema01",
+    "position": "PF",
+    "games": 9,
+    "minutes": 27
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-03-17"
+  },
+  {
+   "id": "2004-05-market-2005-03-15-ten_day-slayta01",
+   "date": "2005-03-15",
+   "kind": "ten_day",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": null,
+   "to": "Los Angeles Lakers",
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-25",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.51 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-03-15-rest_of_season-hunteli01",
+   "date": "2005-03-15",
+   "kind": "rest_of_season",
+   "player": "Lindsey Hunter",
+   "bbr_id": "hunteli01",
+   "from": "Washington Wizards",
+   "to": "Washington Wizards",
+   "role": {
+    "player_id": "Lindsey Hunter",
+    "bbr_id": "hunteli01",
+    "position": "SG",
+    "games": 76,
+    "minutes": 1144
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 11.1 minutes a game on his 10-day contracts"
   }
  ],
  "market_days": [
@@ -3875,6 +3955,7 @@
   "2005-03-11",
   "2005-03-12",
   "2005-03-13",
-  "2005-03-14"
+  "2005-03-14",
+  "2005-03-15"
  ]
 }
