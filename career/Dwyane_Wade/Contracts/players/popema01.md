@@ -2,9 +2,9 @@
 
 # Contract | Mark Pope
 
-Known through: 2005-03-14. [Open interactive contract](popema01.html#contract) · [Contract history](popema01.html#contract-history)
+Known through: 2005-03-20. [Open interactive contract](popema01.html#contract) · [Contract history](popema01.html#contract-history)
 
-Mark Pope: under contract. Evidence cutoff: 2005-03-14.
+Mark Pope: under contract. Evidence cutoff: 2005-03-20.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Mark Pope |
-| Club / rights baseline | Los Angeles Lakers |
+| Club / rights baseline | Chicago Bulls |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Linton Johnson
 
-Known through: 2005-03-14. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
+Known through: 2005-03-20. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
 
-Linton Johnson: No verified contract record. Evidence cutoff: 2005-03-14.
+Linton Johnson: No verified contract record. Evidence cutoff: 2005-03-20.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Linton Johnson |
-| Club / rights baseline | Houston Rockets |
+| Club / rights baseline | San Antonio Spurs |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-03-14",
+  "as_of": "2005-03-20",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2138,7 +2138,7 @@
     {
       "player_id": "breweja01",
       "name": "Jamison Brewer",
-      "team": "Milwaukee Bucks",
+      "team": "Memphis Grizzlies",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2975,7 +2975,7 @@
     {
       "player_id": "johnsli01",
       "name": "Linton Johnson",
-      "team": "Houston Rockets",
+      "team": "San Antonio Spurs",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3245,7 +3245,7 @@
     {
       "player_id": "popema01",
       "name": "Mark Pope",
-      "team": "Los Angeles Lakers",
+      "team": "Chicago Bulls",
       "status": "under contract",
       "current_contract_id": "popema01-2004-07-29",
       "recorded_agreements": 3,
@@ -3299,7 +3299,7 @@
     {
       "player_id": "carroma01",
       "name": "Matt Carroll",
-      "team": "Free agent",
+      "team": "Philadelphia 76ers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3794,7 +3794,7 @@
     {
       "player_id": "shirlpa01",
       "name": "Paul Shirley",
-      "team": "Philadelphia 76ers",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4244,7 +4244,7 @@
     {
       "player_id": "bowenry01",
       "name": "Ryan Bowen",
-      "team": "Free agent",
+      "team": "Chicago Bulls",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4631,7 +4631,7 @@
     {
       "player_id": "slayta01",
       "name": "Tamar Slay",
-      "team": "Chicago Bulls",
+      "team": "Los Angeles Lakers",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,

@@ -2,9 +2,9 @@
 
 # Contract | Tony Bobbitt
 
-Known through: 2005-03-14. [Open interactive contract](tonybobbitt.html#contract) · [Contract history](tonybobbitt.html#contract-history)
+Known through: 2005-03-20. [Open interactive contract](tonybobbitt.html#contract) · [Contract history](tonybobbitt.html#contract-history)
 
-Tony Bobbitt: under contract. Evidence cutoff: 2005-03-14.
+Tony Bobbitt: under contract. Evidence cutoff: 2005-03-20.
 
 ## Current contract
 
