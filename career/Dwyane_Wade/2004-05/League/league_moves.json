@@ -3700,6 +3700,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.23 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-03-10-rest_of_season-woodslo01",
+   "date": "2005-03-10",
+   "kind": "rest_of_season",
+   "player": "Loren Woods",
+   "bbr_id": "woodslo01",
+   "from": "Atlanta Hawks",
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Loren Woods",
+    "bbr_id": "woodslo01",
+    "position": "C",
+    "games": 45,
+    "minutes": 712
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 12.6 minutes a game on his 10-day contracts"
   }
  ],
  "market_days": [
@@ -3830,6 +3852,7 @@
   "2005-03-06",
   "2005-03-07",
   "2005-03-08",
-  "2005-03-09"
+  "2005-03-09",
+  "2005-03-10"
  ]
 }
