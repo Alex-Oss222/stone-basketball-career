@@ -15,5 +15,6 @@ round: conference_semifinals
 - 2005-05-11: Atlanta Hawks 100 at Miami Heat 88 — Miami Heat L 88-100 ([Game 2](Game_2.md), event `2005-05-11-atlanta-hawks-at-miami-heat`)
 - 2005-05-13: Miami Heat 111 at Atlanta Hawks 101 — Miami Heat W 111-101 ([Game 3](Game_3.md), event `2005-05-13-miami-heat-at-atlanta-hawks`)
 - 2005-05-15: Miami Heat 91 at Atlanta Hawks 100 — Miami Heat L 91-100 ([Game 4](Game_4.md), event `2005-05-15-miami-heat-at-atlanta-hawks`)
+- 2005-05-17: Atlanta Hawks 109 at Miami Heat 98 — Miami Heat L 98-109 ([Game 5](Game_5.md), event `2005-05-17-atlanta-hawks-at-miami-heat`)
 
 ## Consequences
