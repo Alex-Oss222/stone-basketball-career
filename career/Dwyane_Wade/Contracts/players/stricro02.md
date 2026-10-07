@@ -2,9 +2,9 @@
 
 # Contract | Rod Strickland
 
-Known through: 2005-05-15. [Open interactive contract](stricro02.html#contract) · [Contract history](stricro02.html#contract-history)
+Known through: 2005-05-18. [Open interactive contract](stricro02.html#contract) · [Contract history](stricro02.html#contract-history)
 
-Rod Strickland: under contract. Evidence cutoff: 2005-05-15.
+Rod Strickland: under contract. Evidence cutoff: 2005-05-18.
 
 ## Current contract
 

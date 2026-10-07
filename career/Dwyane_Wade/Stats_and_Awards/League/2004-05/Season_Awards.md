@@ -1,6 +1,6 @@
 # 2004-05 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-05-12.
+Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-05-18.
 
 ## Calendar
 
@@ -14,7 +14,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2005-05-08 | Most Valuable Player | 127 media | 10-7-5-3-1 | decided |
 | 2005-05-10 | Coach of the Year | 126 media | 5-3-1 | decided |
 | 2005-05-12 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | decided |
-| 2005-05-18 | All-NBA Teams | 124 media | 5-3-1 | pending |
+| 2005-05-18 | All-NBA Teams | 124 media | 5-3-1 | decided |
 | the night the Finals are clinched | Finals MVP | 10 media panel | 1 | pending |
 
 ## Most Improved Player
@@ -140,3 +140,39 @@ Announced 2005-05-12; 30 head coaches, not for their own players, ballot 2-1.
 | Paul Pierce | G | Boston Celtics | 82 | 35.8 | 19.0 | 6.5 | 4.6 | 1.9 | 0.6 | 15.91 | 20 | 6 |
 
 Also receiving votes: Tony Parker (San Antonio Spurs) 19, Brian Cardinal (Chicago Bulls) 12, Rasho Nesterovic (San Antonio Spurs) 9, Larry Hughes (Washington Wizards) 6, Jamal Crawford (Chicago Bulls) 5, Andrés Nocioni (San Antonio Spurs) 3, Darius Miles (Cleveland Cavaliers) 2, Shawn Marion (Phoenix Suns) 1.
+
+## All-NBA Teams
+
+Announced 2005-05-18; 124 media, ballot 5-3-1.
+
+### First Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Shaquille O'Neal | C | Los Angeles Lakers | 67 | 37.3 | 22.8 | 11.6 | 3.5 | 0.5 | 2.1 | 19.01 | 620 | 124 |
+| Vince Carter | G | Toronto Raptors | 77 | 38.2 | 24.1 | 5.0 | 5.6 | 1.5 | 0.5 | 17.79 | 620 | 124 |
+| Kevin Garnett | F | Minnesota Timberwolves | 82 | 39.6 | 24.0 | 13.2 | 6.0 | 1.8 | 0.9 | 22.74 | 600 | 114 |
+| LeBron James | F | Cleveland Cavaliers | 80 | 41.5 | 26.8 | 7.8 | 5.8 | 1.9 | 0.7 | 19.95 | 528 | 98 |
+| Dwyane Wade | G | Miami Heat | 76 | 36.2 | 21.3 | 5.4 | 4.0 | 1.4 | 1.2 | 19.38 | 504 | 66 |
+
+### Second Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Stephon Marbury | G | Phoenix Suns | 82 | 38.9 | 20.5 | 3.3 | 8.8 | 1.4 | 0.1 | 17.85 | 488 | 58 |
+| Shawn Marion | F | Phoenix Suns | 81 | 37.8 | 17.8 | 10.2 | 1.8 | 1.7 | 1.6 | 15.88 | 334 | 26 |
+| Dirk Nowitzki | F | Dallas Mavericks | 78 | 36.8 | 22.7 | 8.0 | 3.3 | 1.2 | 1.2 | 17.57 | 284 | 0 |
+| Allen Iverson | G | Philadelphia 76ers | 75 | 42.4 | 25.8 | 4.5 | 6.7 | 2.4 | 0.1 | 17.11 | 283 | 0 |
+| Kurt Thomas | C | San Antonio Spurs | 80 | 35.4 | 12.7 | 7.6 | 2.1 | 0.9 | 1.1 | 9.7 | 252 | 0 |
+
+### Third Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Amar'e Stoudemire | F | Phoenix Suns | 80 | 33.5 | 19.2 | 7.0 | 1.7 | 0.7 | 1.3 | 14.42 | 187 | 10 |
+| Tim Duncan | F | San Antonio Spurs | 66 | 36.6 | 20.7 | 10.2 | 2.7 | 0.7 | 2.6 | 17.73 | 172 | 0 |
+| Zydrunas Ilgauskas | C | Philadelphia 76ers | 79 | 35.9 | 15.6 | 8.7 | 1.6 | 0.8 | 2.2 | 13.26 | 143 | 0 |
+| Paul Pierce | G | Boston Celtics | 82 | 35.8 | 19.0 | 6.5 | 4.6 | 1.9 | 0.6 | 15.91 | 133 | 0 |
+| Kobe Bryant | G | Los Angeles Lakers | 66 | 40.8 | 25.6 | 6.2 | 6.3 | 0.9 | 0.8 | 19.4 | 93 | 0 |
+
+Also receiving votes: Chris Bosh (Toronto Raptors) 127, Chris Mihm (Phoenix Suns) 57, Tracy McGrady (Orlando Magic) 53, Manu Ginobili (San Antonio Spurs) 47, Yao Ming (Houston Rockets) 24, Brad Miller (Sacramento Kings) 20, Joe Johnson (Phoenix Suns) 11.

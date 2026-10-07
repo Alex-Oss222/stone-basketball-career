@@ -863,7 +863,7 @@
    "home_court": "Phoenix Suns",
    "wins": {
     "Phoenix Suns": 3,
-    "Sacramento Kings": 2
+    "Sacramento Kings": 3
    },
    "winner": null,
    "games": [
@@ -923,7 +923,9 @@
      "home": "Sacramento Kings",
      "away": "Phoenix Suns",
      "conditional": true,
-     "event_id": "2005-05-18-phoenix-suns-at-sacramento-kings"
+     "event_id": "2005-05-18-phoenix-suns-at-sacramento-kings",
+     "result": "Phoenix Suns 78, Sacramento Kings 112",
+     "winner": "Sacramento Kings"
     },
     {
      "game": 7,
@@ -949,10 +951,10 @@
    ],
    "home_court": "San Antonio Spurs",
    "wins": {
-    "Minnesota Timberwolves": 3,
+    "Minnesota Timberwolves": 4,
     "San Antonio Spurs": 2
    },
-   "winner": null,
+   "winner": "Minnesota Timberwolves",
    "games": [
     {
      "game": 1,
@@ -1010,7 +1012,9 @@
      "home": "Minnesota Timberwolves",
      "away": "San Antonio Spurs",
      "conditional": true,
-     "event_id": "2005-05-18-san-antonio-spurs-at-minnesota-timberwolves"
+     "event_id": "2005-05-18-san-antonio-spurs-at-minnesota-timberwolves",
+     "result": "San Antonio Spurs 90, Minnesota Timberwolves 101",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 7,
@@ -1018,9 +1022,11 @@
      "home": "San Antonio Spurs",
      "away": "Minnesota Timberwolves",
      "conditional": true,
-     "event_id": "2005-05-20-minnesota-timberwolves-at-san-antonio-spurs"
+     "event_id": "2005-05-20-minnesota-timberwolves-at-san-antonio-spurs",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2005-05-18"
   },
   {
    "id": "east-semi-a",

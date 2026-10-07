@@ -1066,6 +1066,303 @@
      "points": 1
     }
    ]
+  },
+  {
+   "id": "2004-05-all_nba",
+   "award": "all_nba",
+   "name": "All-NBA Teams",
+   "announced_on": "2005-05-18",
+   "electorate": 124,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.2,
+    0.5
+   ],
+   "evidence_through": "2005-04-20",
+   "teams": [
+    {
+     "team": "First Team",
+     "players": [
+      {
+       "player": "Shaquille O'Neal",
+       "team": "Los Angeles Lakers",
+       "games": 67,
+       "mpg": 37.3,
+       "pts": 22.8,
+       "reb": 11.6,
+       "ast": 3.5,
+       "stl": 0.5,
+       "blk": 2.1,
+       "game_score": 19.01,
+       "position": "C",
+       "points": 620,
+       "first_team_votes": 124
+      },
+      {
+       "player": "Vince Carter",
+       "team": "Toronto Raptors",
+       "games": 77,
+       "mpg": 38.2,
+       "pts": 24.1,
+       "reb": 5.0,
+       "ast": 5.6,
+       "stl": 1.5,
+       "blk": 0.5,
+       "game_score": 17.79,
+       "position": "G",
+       "points": 620,
+       "first_team_votes": 124
+      },
+      {
+       "player": "Kevin Garnett",
+       "team": "Minnesota Timberwolves",
+       "games": 82,
+       "mpg": 39.6,
+       "pts": 24.0,
+       "reb": 13.2,
+       "ast": 6.0,
+       "stl": 1.8,
+       "blk": 0.9,
+       "game_score": 22.74,
+       "position": "F",
+       "points": 600,
+       "first_team_votes": 114
+      },
+      {
+       "player": "LeBron James",
+       "team": "Cleveland Cavaliers",
+       "games": 80,
+       "mpg": 41.5,
+       "pts": 26.8,
+       "reb": 7.8,
+       "ast": 5.8,
+       "stl": 1.9,
+       "blk": 0.7,
+       "game_score": 19.95,
+       "position": "F",
+       "points": 528,
+       "first_team_votes": 98
+      },
+      {
+       "player": "Dwyane Wade",
+       "team": "Miami Heat",
+       "games": 76,
+       "mpg": 36.2,
+       "pts": 21.3,
+       "reb": 5.4,
+       "ast": 4.0,
+       "stl": 1.4,
+       "blk": 1.2,
+       "game_score": 19.38,
+       "position": "G",
+       "points": 504,
+       "first_team_votes": 66
+      }
+     ]
+    },
+    {
+     "team": "Second Team",
+     "players": [
+      {
+       "player": "Stephon Marbury",
+       "team": "Phoenix Suns",
+       "games": 82,
+       "mpg": 38.9,
+       "pts": 20.5,
+       "reb": 3.3,
+       "ast": 8.8,
+       "stl": 1.4,
+       "blk": 0.1,
+       "game_score": 17.85,
+       "position": "G",
+       "points": 488,
+       "first_team_votes": 58
+      },
+      {
+       "player": "Shawn Marion",
+       "team": "Phoenix Suns",
+       "games": 81,
+       "mpg": 37.8,
+       "pts": 17.8,
+       "reb": 10.2,
+       "ast": 1.8,
+       "stl": 1.7,
+       "blk": 1.6,
+       "game_score": 15.88,
+       "position": "F",
+       "points": 334,
+       "first_team_votes": 26
+      },
+      {
+       "player": "Dirk Nowitzki",
+       "team": "Dallas Mavericks",
+       "games": 78,
+       "mpg": 36.8,
+       "pts": 22.7,
+       "reb": 8.0,
+       "ast": 3.3,
+       "stl": 1.2,
+       "blk": 1.2,
+       "game_score": 17.57,
+       "position": "F",
+       "points": 284,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Allen Iverson",
+       "team": "Philadelphia 76ers",
+       "games": 75,
+       "mpg": 42.4,
+       "pts": 25.8,
+       "reb": 4.5,
+       "ast": 6.7,
+       "stl": 2.4,
+       "blk": 0.1,
+       "game_score": 17.11,
+       "position": "G",
+       "points": 283,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Kurt Thomas",
+       "team": "San Antonio Spurs",
+       "games": 80,
+       "mpg": 35.4,
+       "pts": 12.7,
+       "reb": 7.6,
+       "ast": 2.1,
+       "stl": 0.9,
+       "blk": 1.1,
+       "game_score": 9.7,
+       "position": "C",
+       "points": 252,
+       "first_team_votes": 0
+      }
+     ]
+    },
+    {
+     "team": "Third Team",
+     "players": [
+      {
+       "player": "Amar'e Stoudemire",
+       "team": "Phoenix Suns",
+       "games": 80,
+       "mpg": 33.5,
+       "pts": 19.2,
+       "reb": 7.0,
+       "ast": 1.7,
+       "stl": 0.7,
+       "blk": 1.3,
+       "game_score": 14.42,
+       "position": "F",
+       "points": 187,
+       "first_team_votes": 10
+      },
+      {
+       "player": "Tim Duncan",
+       "team": "San Antonio Spurs",
+       "games": 66,
+       "mpg": 36.6,
+       "pts": 20.7,
+       "reb": 10.2,
+       "ast": 2.7,
+       "stl": 0.7,
+       "blk": 2.6,
+       "game_score": 17.73,
+       "position": "F",
+       "points": 172,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Zydrunas Ilgauskas",
+       "team": "Philadelphia 76ers",
+       "games": 79,
+       "mpg": 35.9,
+       "pts": 15.6,
+       "reb": 8.7,
+       "ast": 1.6,
+       "stl": 0.8,
+       "blk": 2.2,
+       "game_score": 13.26,
+       "position": "C",
+       "points": 143,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Paul Pierce",
+       "team": "Boston Celtics",
+       "games": 82,
+       "mpg": 35.8,
+       "pts": 19.0,
+       "reb": 6.5,
+       "ast": 4.6,
+       "stl": 1.9,
+       "blk": 0.6,
+       "game_score": 15.91,
+       "position": "G",
+       "points": 133,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Kobe Bryant",
+       "team": "Los Angeles Lakers",
+       "games": 66,
+       "mpg": 40.8,
+       "pts": 25.6,
+       "reb": 6.2,
+       "ast": 6.3,
+       "stl": 0.9,
+       "blk": 0.8,
+       "game_score": 19.4,
+       "position": "G",
+       "points": 93,
+       "first_team_votes": 0
+      }
+     ]
+    }
+   ],
+   "others": [
+    {
+     "player": "Chris Bosh",
+     "team": "Toronto Raptors",
+     "points": 127
+    },
+    {
+     "player": "Chris Mihm",
+     "team": "Phoenix Suns",
+     "points": 57
+    },
+    {
+     "player": "Tracy McGrady",
+     "team": "Orlando Magic",
+     "points": 53
+    },
+    {
+     "player": "Manu Ginobili",
+     "team": "San Antonio Spurs",
+     "points": 47
+    },
+    {
+     "player": "Yao Ming",
+     "team": "Houston Rockets",
+     "points": 24
+    },
+    {
+     "player": "Brad Miller",
+     "team": "Sacramento Kings",
+     "points": 20
+    },
+    {
+     "player": "Joe Johnson",
+     "team": "Phoenix Suns",
+     "points": 11
+    }
+   ]
   }
  ]
 }

@@ -57,11 +57,11 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This scope | 21 | Miami Heat | NBA | SG / PG | 9 | 9 | 38.0 | 6.0 | 11.9 | .505 | 0.6 | 2.2 | .250 | 5.4 | 9.7 | .563 | .528 | 6.9 | 7.6 | .912 | 2.1 | 5.3 | 7.4 | 4.3 | 1.9 | 1.4 | 1.4 | 2.4 | 19.4 | .639 | [East POM](../../League/2004-05/04_April/League_Awards.md#player-of-the-month) |
+| This scope | 21 | Miami Heat | NBA | SG / PG | 9 | 9 | 38.0 | 6.0 | 11.9 | .505 | 0.6 | 2.2 | .250 | 5.4 | 9.7 | .563 | .528 | 6.9 | 7.6 | .912 | 2.1 | 5.3 | 7.4 | 4.3 | 1.9 | 1.4 | 1.4 | 2.4 | 19.4 | .639 | [East POM](../../League/2004-05/04_April/League_Awards.md#player-of-the-month), [All-NBA 1st](../../League/2004-05/Season_Awards.md#all-nba-teams) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-05-15, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-05-18, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -130,7 +130,7 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-05-15, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-05-18, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -175,7 +175,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-05-15, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-05-18, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 

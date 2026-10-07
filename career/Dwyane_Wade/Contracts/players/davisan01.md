@@ -2,9 +2,9 @@
 
 # Contract | Antonio Davis
 
-Known through: 2005-05-15. [Open interactive contract](davisan01.html#contract) · [Contract history](davisan01.html#contract-history)
+Known through: 2005-05-18. [Open interactive contract](davisan01.html#contract) · [Contract history](davisan01.html#contract-history)
 
-Antonio Davis: under contract unverified. Evidence cutoff: 2005-05-15.
+Antonio Davis: under contract unverified. Evidence cutoff: 2005-05-18.
 
 ## Current contract
 

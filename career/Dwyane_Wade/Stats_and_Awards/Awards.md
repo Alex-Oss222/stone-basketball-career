@@ -2,11 +2,11 @@
 
 # Annual awards | Dwyane Wade
 
-Career cutoff: **2005-05-15**. [Open interactive Awards](player_cards.html#awards) · [All earned awards](../Awards.md) · [Full statistics](README.md)
+Career cutoff: **2005-05-18**. [Open interactive Awards](player_cards.html#awards) · [All earned awards](../Awards.md) · [Full statistics](README.md)
 
 ## 2003-04
 
-Only earned annual awards announced on or before 2005-05-15 appear. Weekly, monthly and unclassified recognition remains in the full award register.
+Only earned annual awards announced on or before 2005-05-18 appear. Weekly, monthly and unclassified recognition remains in the full award register.
 
 | Earned award | Season | Announced | Decision record |
 | --- | --- | --- | --- |
@@ -25,10 +25,13 @@ Only earned annual awards announced on or before 2005-05-15 appear. Weekly, mont
 
 ## 2004-05
 
-Only earned annual awards announced on or before 2005-05-15 appear. Weekly, monthly and unclassified recognition remains in the full award register.
+Only earned annual awards announced on or before 2005-05-18 appear. Weekly, monthly and unclassified recognition remains in the full award register.
 
 | Earned award | Season | Announced | Decision record |
 | --- | --- | --- | --- |
 | All-Star | 2004-05 | 2005-02-08 | [Source](League/2004-05/All_Star.md#all-stars) |
+| All-NBA First Team | 2004-05 | 2005-05-18 | [Source](League/2004-05/Season_Awards.md#all-nba-teams) |
 
 ![All-Star](assets/annual_423e5f2f9a4e6643.svg)
+
+![All-NBA First Team](assets/annual_601e9be281b7269f.svg)

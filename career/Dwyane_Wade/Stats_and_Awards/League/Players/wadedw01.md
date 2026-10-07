@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `wadedw01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-05-15 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2004-05 register · **League:** NBA  
+**Card date:** 2005-05-18 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2004-05 register · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #3 · **Born:** 1984-01-17 · **Age on card date:** 21  
 **Registry ID:** `wadedw01` · [Basketball-Reference page](https://www.basketball-reference.com/players/w/wadedw01.html) · ESPN ID 1987
 
@@ -28,7 +28,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wadedw
 
 ## Simulated statistics
 
-As of **2005-05-15**: 77 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-05-18**: 77 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -106,7 +106,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04. The historical Wade's statistics are never imported. 2004-05 is simulated: 77 closed regular-season games through 2005-05-15. Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04. The historical Wade's statistics are never imported. 2004-05 is simulated: 77 closed regular-season games through 2005-05-18. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,16 +115,16 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-15 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-18 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Miami Heat | 2 | 2 | 26.0 | 10.5 | 4.0 | 4.0 | 1.0 | 1.0 | 1.0 | 53.8% | 75.0% | 100.0% |
-| 2004-05 | Miami Heat | 10 | 10 | 36.1 | 21.0 | 4.5 | 4.8 | 1.6 | 1.1 | 1.2 | 52.8% | 51.6% | 97.8% |
+| 2004-05 | Miami Heat | 11 | 11 | 36.3 | 20.0 | 4.6 | 5.0 | 1.6 | 1.0 | 1.2 | 50.0% | 45.9% | 95.9% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-05-15, from closed award decisions (19 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-05-18, from closed award decisions (20 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -160,3 +160,4 @@ Simulated honors and shortlist placings through 2005-05-15, from closed award de
 | East Player of the Week | 2005-04-18 to 2005-04-20 | 2005-04-21 | Shortlist, No. 2 | [Decision](../2004-05/04_April/Week_3/League_Awards.md) |
 | East Player of the Month | 2005-04-01 to 2005-04-20 | 2005-04-22 | **Winner** | [Decision](../2004-05/04_April/League_Awards.md) |
 | Most Valuable Player | 2004-11-02 to 2005-04-20 | 2005-05-08 | No. 3 in the vote | [Decision](../2004-05/Season_Awards.md) |
+| All-NBA First Team | 2004-11-02 to 2005-04-20 | 2005-05-18 | **Selected** | [Decision](../2004-05/Season_Awards.md) |

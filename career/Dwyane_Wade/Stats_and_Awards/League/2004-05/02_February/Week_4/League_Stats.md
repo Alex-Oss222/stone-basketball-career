@@ -4,7 +4,7 @@
 
 NBA regular season · February 22-28, 2005
 
-407 tracked players · 52 closed games in this record · Through May 15, 2005.
+407 tracked players · 52 closed games in this record · Through May 18, 2005.
 
 ## Leaders
 

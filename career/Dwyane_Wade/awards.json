@@ -255,6 +255,18 @@
       "period_end": "2005-04-20",
       "awarded_on": "2005-04-22",
       "source": "Stats_and_Awards/League/2004-05/04_April/League_Awards.md#player-of-the-month"
+    },
+    {
+      "id": "2004-05-all_nba-first",
+      "name": "All-NBA First Team",
+      "short_name": "All-NBA 1st",
+      "status": "earned",
+      "competition": "regular",
+      "season": "2004-05",
+      "period_start": "2004-11-02",
+      "period_end": "2005-04-20",
+      "awarded_on": "2005-05-18",
+      "source": "Stats_and_Awards/League/2004-05/Season_Awards.md#all-nba-teams"
     }
   ]
 }

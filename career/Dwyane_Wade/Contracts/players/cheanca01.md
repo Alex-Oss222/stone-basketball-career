@@ -2,9 +2,9 @@
 
 # Contract | Calbert Cheaney
 
-Known through: 2005-05-15. [Open interactive contract](cheanca01.html#contract) · [Contract history](cheanca01.html#contract-history)
+Known through: 2005-05-18. [Open interactive contract](cheanca01.html#contract) · [Contract history](cheanca01.html#contract-history)
 
-Calbert Cheaney: released. Evidence cutoff: 2005-05-15.
+Calbert Cheaney: released. Evidence cutoff: 2005-05-18.
 
 ## Current contract
 
