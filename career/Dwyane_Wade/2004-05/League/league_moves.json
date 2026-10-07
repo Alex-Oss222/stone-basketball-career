@@ -4406,6 +4406,112 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.44 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-04-12-claim-millean01",
+   "date": "2005-04-12",
+   "kind": "claim",
+   "player": "Anthony Miller",
+   "bbr_id": "millean01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Anthony Miller",
+    "bbr_id": "millean01",
+    "position": "PF",
+    "games": 2,
+    "minutes": 9
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from San Antonio Spurs (worst record first)",
+   "waiver": "2004-05-market-2005-04-10-waive-millean01"
+  },
+  {
+   "id": "2004-05-market-2005-04-12-waive-stricro02",
+   "date": "2005-04-12",
+   "kind": "waive",
+   "player": "Rod Strickland",
+   "bbr_id": "stricro02",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Rod Strickland",
+    "bbr_id": "stricro02",
+    "position": "PG",
+    "games": 16,
+    "minutes": 196
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-04-14"
+  },
+  {
+   "id": "2004-05-market-2005-04-12-ten_day-wilksmi01",
+   "date": "2005-04-12",
+   "kind": "ten_day",
+   "player": "Mike Wilks",
+   "bbr_id": "wilksmi01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Mike Wilks",
+    "bbr_id": "wilksmi01",
+    "position": "PG",
+    "games": 48,
+    "minutes": 278
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.22 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-04-12-ten_day-shirlpa01",
+   "date": "2005-04-12",
+   "kind": "ten_day",
+   "player": "Paul Shirley",
+   "bbr_id": "shirlpa01",
+   "from": "Detroit Pistons",
+   "to": "Detroit Pistons",
+   "role": {
+    "player_id": "Paul Shirley",
+    "bbr_id": "shirlpa01",
+    "position": "PF",
+    "games": 9,
+    "minutes": 30
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "second 10-day contract: still short-handed (0.6 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-04-12-ten_day-buforro01",
+   "date": "2005-04-12",
+   "kind": "ten_day",
+   "player": "Rodney Buford",
+   "bbr_id": "buforro01",
+   "from": null,
+   "to": "Detroit Pistons",
+   "role": {
+    "player_id": "Rodney Buford",
+    "bbr_id": "buforro01",
+    "position": "SF",
+    "games": 64,
+    "minutes": 1313
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.02 x fit"
   }
  ],
  "market_days": [
@@ -4569,6 +4675,7 @@
   "2005-04-08",
   "2005-04-09",
   "2005-04-10",
-  "2005-04-11"
+  "2005-04-11",
+  "2005-04-12"
  ]
 }
