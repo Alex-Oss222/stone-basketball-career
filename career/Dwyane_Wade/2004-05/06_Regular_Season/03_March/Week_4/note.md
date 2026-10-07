@@ -1,6 +1,6 @@
 ---
 type: regular_season_week
-status: not_started
+status: active
 month: March
 week: 4
 days: 22-end
@@ -13,5 +13,7 @@ days: 22-end
 ## Player decisions
 
 ## Games and events
+
+- 2005-03-22: Miami Heat 97 at Houston Rockets 95 — Miami Heat W 97-95 ([Game 1](Game_1.md), event `2005-03-22-miami-heat-at-houston-rockets`)
 
 ## Consequences
