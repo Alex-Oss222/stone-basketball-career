@@ -3496,6 +3496,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.18 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-03-04-ten_day-bradlmi01",
+   "date": "2005-03-04",
+   "kind": "ten_day",
+   "player": "Michael Bradley",
+   "bbr_id": "bradlmi01",
+   "from": null,
+   "to": "Indiana Pacers",
+   "role": {
+    "player_id": "Michael Bradley",
+    "bbr_id": "bradlmi01",
+    "position": "PF",
+    "games": 18,
+    "minutes": 119
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.24 x fit"
   }
  ],
  "market_days": [
@@ -3620,6 +3642,7 @@
   "2005-02-28",
   "2005-03-01",
   "2005-03-02",
-  "2005-03-03"
+  "2005-03-03",
+  "2005-03-04"
  ]
 }
