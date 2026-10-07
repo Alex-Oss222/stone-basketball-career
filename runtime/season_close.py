@@ -113,9 +113,9 @@ def close(season=None, root=ROOT, write=True):
         for bbr_id, meta in ALTERNATE_PLAYERS.items():
             if alternate(bbr_id, new):
                 t = {k: v for k, v in targets.get(bbr_id, {}).get(new, {}).items() if k != "source"} or None
-                path = root / ALTERNATE_PROFILE_PATH.format(folder=meta["folder"], season=new)
-                path.parent.mkdir(parents=True, exist_ok=True)
-                path.write_text(json.dumps(build_alternate_profile(root, bbr_id, season, new, day, t), indent=1,
+                profile_file = root / ALTERNATE_PROFILE_PATH.format(folder=meta["folder"], season=new)
+                profile_file.parent.mkdir(parents=True, exist_ok=True)
+                profile_file.write_text(json.dumps(build_alternate_profile(root, bbr_id, season, new, day, t), indent=1,
                                            ensure_ascii=False) + "\n", encoding="utf-8")
         (root / feedback_path(new)).write_text(
             json.dumps(feedback(root, season, new, day), indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
