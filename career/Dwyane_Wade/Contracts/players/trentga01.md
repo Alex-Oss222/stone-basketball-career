@@ -2,9 +2,9 @@
 
 # Contract | Gary Trent
 
-Known through: 2005-04-21. [Open interactive contract](trentga01.html#contract) · [Contract history](trentga01.html#contract-history)
+Known through: 2005-04-22. [Open interactive contract](trentga01.html#contract) · [Contract history](trentga01.html#contract-history)
 
-Gary Trent: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-04-21.
+Gary Trent: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-04-22.
 
 ## Current contract
 

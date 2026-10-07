@@ -2,9 +2,9 @@
 
 # Contract | Laron Profit
 
-Known through: 2005-04-21. [Open interactive contract](laronprofit.html#contract) · [Contract history](laronprofit.html#contract-history)
+Known through: 2005-04-22. [Open interactive contract](laronprofit.html#contract) · [Contract history](laronprofit.html#contract-history)
 
-Laron Profit: under contract. Evidence cutoff: 2005-04-21.
+Laron Profit: under contract. Evidence cutoff: 2005-04-22.
 
 ## Current contract
 

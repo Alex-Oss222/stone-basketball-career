@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2005-04-21](../../assets/stat_reports/personal_2005-04-21.svg)
+![Player personal information and earned career awards through 2005-04-22](../../assets/stat_reports/personal_2005-04-22.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-04-21; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-04-22; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -55,6 +55,7 @@ Identity as of 2005-04-21; status snapshot dated 2004-10-28. User-established al
 | Eastern Conference Player of the Week | 2005-01-24 to 2005-01-30 | 2005-01-31 | [East POW](../../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week) |
 | All-Star | 2004-11-02 to 2005-02-08 | 2005-02-08 | [All-Star](../../Stats_and_Awards/League/2004-05/All_Star.md#all-stars) |
 | Eastern Conference Player of the Month | 2005-03-01 to 2005-03-31 | 2005-04-02 | [East POM](../../Stats_and_Awards/League/2004-05/03_March/League_Awards.md#player-of-the-month) |
+| Eastern Conference Player of the Month | 2005-04-01 to 2005-04-20 | 2005-04-22 | [East POM](../../Stats_and_Awards/League/2004-05/04_April/League_Awards.md#player-of-the-month) |
 
 ## Statistics
 
@@ -72,7 +73,7 @@ Five-on-five only. Qualifiers, final tournaments and friendlies remain separate.
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-04-21, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 No national-team game or tournament appearance recorded.
 

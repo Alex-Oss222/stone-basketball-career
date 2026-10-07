@@ -2,9 +2,9 @@
 
 # Contract | Kevin Garnett
 
-Known through: 2005-04-21. [Open interactive contract](garneke01.html#contract) · [Contract history](garneke01.html#contract-history)
+Known through: 2005-04-22. [Open interactive contract](garneke01.html#contract) · [Contract history](garneke01.html#contract-history)
 
-Kevin Garnett: under contract. Evidence cutoff: 2005-04-21.
+Kevin Garnett: under contract. Evidence cutoff: 2005-04-22.
 
 ## Current contract
 

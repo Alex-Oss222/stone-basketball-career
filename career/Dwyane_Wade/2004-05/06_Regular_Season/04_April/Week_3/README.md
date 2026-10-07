@@ -56,11 +56,11 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This scope | 21 | Miami Heat | NBA | SG / PG | 4 | 4 | 36.5 | 7.2 | 11.2 | .644 | 0.2 | 1.2 | .200 | 7.0 | 10.0 | .700 | .656 | 6.8 | 7.2 | .931 | 1.8 | 5.5 | 7.2 | 4.8 | 0.5 | 1.2 | 2.0 | 3.5 | 21.5 | .744 | — |
+| This scope | 21 | Miami Heat | NBA | SG / PG | 4 | 4 | 36.5 | 7.2 | 11.2 | .644 | 0.2 | 1.2 | .200 | 7.0 | 10.0 | .700 | .656 | 6.8 | 7.2 | .931 | 1.8 | 5.5 | 7.2 | 4.8 | 0.5 | 1.2 | 2.0 | 3.5 | 21.5 | .744 | [East POM](../../../../Stats_and_Awards/League/2004-05/04_April/League_Awards.md#player-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-04-21, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](../../../../Stats_and_Awards/2004-05/04_April/Week_3/Stat_Detail.md)
 
@@ -72,14 +72,14 @@ Awards are confirmed through 2005-04-21, filed by the honor's period-end date; t
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This week | 21 | Miami Heat | NBA | SG / PG | 4 | 4 | 36.5 | 7.2 | 11.2 | .644 | 0.2 | 1.2 | .200 | 7.0 | 10.0 | .700 | .656 | 6.8 | 7.2 | .931 | 1.8 | 5.5 | 7.2 | 4.8 | 0.5 | 1.2 | 2.0 | 3.5 | 21.5 | .744 | — |
+| This week | 21 | Miami Heat | NBA | SG / PG | 4 | 4 | 36.5 | 7.2 | 11.2 | .644 | 0.2 | 1.2 | .200 | 7.0 | 10.0 | .700 | .656 | 6.8 | 7.2 | .931 | 1.8 | 5.5 | 7.2 | 4.8 | 0.5 | 1.2 | 2.0 | 3.5 | 21.5 | .744 | [East POM](../../../../Stats_and_Awards/League/2004-05/04_April/League_Awards.md#player-of-the-month) |
 | [Previous week](../../../../Stats_and_Awards/2004-05/04_April/Week_2/README.md) | 21 | Miami Heat | NBA | SG / PG | 3 | 3 | 39.4 | 6.3 | 13.7 | .463 | 0.7 | 2.3 | .286 | 5.7 | 11.3 | .500 | .488 | 7.0 | 8.3 | .840 | 3.0 | 5.3 | 8.3 | 4.0 | 3.0 | 2.0 | 1.3 | 1.3 | 20.3 | .587 | — |
-| Month through this week | 21 | Miami Heat | NBA | SG / PG | 9 | 9 | 38.0 | 6.0 | 11.9 | .505 | 0.6 | 2.2 | .250 | 5.4 | 9.7 | .563 | .528 | 6.9 | 7.6 | .912 | 2.1 | 5.3 | 7.4 | 4.3 | 1.9 | 1.4 | 1.4 | 2.4 | 19.4 | .639 | — |
-| Season through this week | 21 | Miami Heat | NBA | SG / PG | 76 | 76 | 36.2 | 7.1 | 13.4 | .530 | 1.1 | 2.7 | .429 | 5.9 | 10.7 | .555 | .573 | 6.0 | 6.4 | .932 | 1.5 | 3.9 | 5.4 | 4.0 | 1.4 | 1.2 | 1.3 | 3.0 | 21.3 | .657 | [East POM](../../../../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month), [East POW](../../../../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week), [All-Star](../../../../Stats_and_Awards/League/2004-05/All_Star.md#all-stars), [East POM](../../../../Stats_and_Awards/League/2004-05/03_March/League_Awards.md#player-of-the-month) |
+| Month through this week | 21 | Miami Heat | NBA | SG / PG | 9 | 9 | 38.0 | 6.0 | 11.9 | .505 | 0.6 | 2.2 | .250 | 5.4 | 9.7 | .563 | .528 | 6.9 | 7.6 | .912 | 2.1 | 5.3 | 7.4 | 4.3 | 1.9 | 1.4 | 1.4 | 2.4 | 19.4 | .639 | [East POM](../../../../Stats_and_Awards/League/2004-05/04_April/League_Awards.md#player-of-the-month) |
+| Season through this week | 21 | Miami Heat | NBA | SG / PG | 76 | 76 | 36.2 | 7.1 | 13.4 | .530 | 1.1 | 2.7 | .429 | 5.9 | 10.7 | .555 | .573 | 6.0 | 6.4 | .932 | 1.5 | 3.9 | 5.4 | 4.0 | 1.4 | 1.2 | 1.3 | 3.0 | 21.3 | .657 | [East POM](../../../../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month), [East POW](../../../../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week), [All-Star](../../../../Stats_and_Awards/League/2004-05/All_Star.md#all-stars), [East POM](../../../../Stats_and_Awards/League/2004-05/03_March/League_Awards.md#player-of-the-month), [East POM](../../../../Stats_and_Awards/League/2004-05/04_April/League_Awards.md#player-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-04-21, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -148,7 +148,7 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-04-21, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -183,7 +183,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-04-21, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 

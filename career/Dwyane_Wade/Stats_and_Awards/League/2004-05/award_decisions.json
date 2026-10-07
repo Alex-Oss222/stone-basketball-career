@@ -3644,6 +3644,214 @@
     }
    ],
    "winner": "Rashard Lewis"
+  },
+  {
+   "id": "2004-05-player_of_month-2005-04-01-east",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "East",
+   "period_start": "2005-04-01",
+   "period_end": "2005-04-20",
+   "announced_on": "2005-04-22",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 9,
+     "wins": 7,
+     "losses": 2,
+     "pts": 19.4,
+     "reb": 7.4,
+     "ast": 4.3,
+     "game_score": 19.84,
+     "score": 29.178,
+     "rank": 1
+    },
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 11,
+     "wins": 9,
+     "losses": 2,
+     "pts": 22.5,
+     "reb": 4.5,
+     "ast": 6.7,
+     "game_score": 16.52,
+     "score": 26.336,
+     "rank": 2
+    },
+    {
+     "player": "Zydrunas Ilgauskas",
+     "team": "Philadelphia 76ers",
+     "games": 10,
+     "wins": 6,
+     "losses": 4,
+     "pts": 20.0,
+     "reb": 10.2,
+     "ast": 2.1,
+     "game_score": 18.62,
+     "score": 25.82,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwyane Wade"
+  },
+  {
+   "id": "2004-05-player_of_month-2005-04-01-west",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "West",
+   "period_start": "2005-04-01",
+   "period_end": "2005-04-20",
+   "announced_on": "2005-04-22",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 11,
+     "wins": 8,
+     "losses": 3,
+     "pts": 28.5,
+     "reb": 7.7,
+     "ast": 3.0,
+     "game_score": 22.95,
+     "score": 31.682,
+     "rank": 1
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 10,
+     "wins": 7,
+     "losses": 3,
+     "pts": 24.2,
+     "reb": 12.6,
+     "ast": 5.9,
+     "game_score": 22.34,
+     "score": 30.74,
+     "rank": 2
+    },
+    {
+     "player": "Jason Richardson",
+     "team": "Golden State Warriors",
+     "games": 11,
+     "wins": 8,
+     "losses": 3,
+     "pts": 24.3,
+     "reb": 5.9,
+     "ast": 2.7,
+     "game_score": 17.59,
+     "score": 26.318,
+     "rank": 3
+    }
+   ],
+   "winner": "Dirk Nowitzki"
+  },
+  {
+   "id": "2004-05-rookie_of_month-2005-04-01-east",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "East",
+   "period_start": "2005-04-01",
+   "period_end": "2005-04-20",
+   "announced_on": "2005-04-22",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwight Howard",
+     "team": "Orlando Magic",
+     "games": 11,
+     "wins": 5,
+     "losses": 6,
+     "pts": 10.7,
+     "reb": 8.9,
+     "ast": 1.2,
+     "game_score": 10.85,
+     "score": 12.673,
+     "rank": 1
+    },
+    {
+     "player": "Emeka Okafor",
+     "team": "Washington Wizards",
+     "games": 12,
+     "wins": 7,
+     "losses": 5,
+     "pts": 13.0,
+     "reb": 9.8,
+     "ast": 1.0,
+     "game_score": 10.3,
+     "score": 12.633,
+     "rank": 2
+    },
+    {
+     "player": "Luol Deng",
+     "team": "Boston Celtics",
+     "games": 10,
+     "wins": 5,
+     "losses": 5,
+     "pts": 12.9,
+     "reb": 6.7,
+     "ast": 1.7,
+     "game_score": 10.0,
+     "score": 12.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwight Howard"
+  },
+  {
+   "id": "2004-05-rookie_of_month-2005-04-01-west",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "West",
+   "period_start": "2005-04-01",
+   "period_end": "2005-04-20",
+   "announced_on": "2005-04-22",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Josh Childress",
+     "team": "Phoenix Suns",
+     "games": 11,
+     "wins": 6,
+     "losses": 5,
+     "pts": 12.8,
+     "reb": 6.3,
+     "ast": 2.5,
+     "game_score": 10.71,
+     "score": 12.891,
+     "rank": 1
+    },
+    {
+     "player": "Damien Wilkins",
+     "team": "Los Angeles Lakers",
+     "games": 6,
+     "wins": 2,
+     "losses": 4,
+     "pts": 11.7,
+     "reb": 3.7,
+     "ast": 0.8,
+     "game_score": 8.97,
+     "score": 10.3,
+     "rank": 2
+    },
+    {
+     "player": "Andrés Nocioni",
+     "team": "San Antonio Spurs",
+     "games": 11,
+     "wins": 7,
+     "losses": 4,
+     "pts": 9.4,
+     "reb": 4.1,
+     "ast": 2.1,
+     "game_score": 5.9,
+     "score": 8.445,
+     "rank": 3
+    }
+   ],
+   "winner": "Josh Childress"
   }
  ]
 }

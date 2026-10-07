@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-04-21**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-04-22**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -16,7 +16,7 @@ Card date: **2005-04-21**. 573 registry players, one Markdown card and one inter
 | [Anthony Johnson](johnsan02.md) | Indiana Pacers | 30 | sourced | [open](johnsan02.html) |
 | [Avery Johnson](johnsav01.md) | Free agent | 40 | silhouette | [open](johnsav01.html) |
 | [Baron Davis](davisba01.md) | New Orleans Hornets | 26 | sourced | [open](davisba01.html) |
-| [Bimbo Coles](colesbi01.md) | Free agent | 36 | sourced | [open](colesbi01.html) |
+| [Bimbo Coles](colesbi01.md) | Free agent | 37 | sourced | [open](colesbi01.html) |
 | [Bobby Jackson](jacksbo01.md) | Sacramento Kings | 32 | sourced | [open](jacksbo01.html) |
 | [Brevin Knight](knighbr01.md) | Washington Wizards | 29 | sourced | [open](knighbr01.html) |
 | [Brian Shaw](shawbr01.md) | Free agent | 39 | sourced | [open](shawbr01.html) |
