@@ -605,7 +605,7 @@ def page(record, clock, root=ROOT):
             continue
         label = "WINNER" if len(d["winners"]) == 1 else "CO-WINNER"
         if d["award"] == "coy":
-            lines += _table(["#", "Coach", "Club", "Record", "2002-03", "Expected pct", "Points", "1st"],
+            lines += _table(["#", "Coach", "Club", "Record", C(root).previous, "Expected pct", "Points", "1st"],
                             [[label if v["coach"] in d["winners"] else i + 1, v["coach"], v["team"], f"{v['wins']}-{v['losses']}",
                               v["prior"], v["expected_pct"], v["points"], v["first_place"]] for i, v in enumerate(d["tally"][:3])])
         else:

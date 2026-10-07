@@ -107,7 +107,7 @@ Complete tally: `season_awards.json` (7 receiving votes).
 
 Announced 2005-05-10; 126 media, ballot 5-3-1.
 
-| # | Coach | Club | Record | 2002-03 | Expected pct | Points | 1st |
+| # | Coach | Club | Record | 2003-04 | Expected pct | Points | 1st |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | WINNER | Mike D'Antoni | Phoenix Suns | 60-22 | 31-51 | 0.427 | 630 | 126 |
 | 2 | Sam Mitchell | Toronto Raptors | 59-23 | 42-40 | 0.507 | 378 | 0 |
