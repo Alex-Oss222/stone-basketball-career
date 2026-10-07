@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-04-24",
+  "as_of": "2005-04-28",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 21,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2005-04-23-detroit-pistons-at-miami-heat",
+  "current_event": "2005-04-26-detroit-pistons-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-04-24"
+              "2005-04-28"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2005-04-23-detroit-pistons-at-miami-heat"
+              "2005-04-26-detroit-pistons-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2005-04-24",
+              "2005-04-28",
               "Current checkpoint",
-              "2005-04-23-detroit-pistons-at-miami-heat",
+              "2005-04-26-detroit-pistons-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -94,7 +94,7 @@
               }
             ],
             [
-              "2005-04-28",
+              "2005-05-12",
               "Staff rotation review",
               "Coaching staff (same rule for every player)",
               "Scheduled; a role request may be logged before it",
@@ -754,6 +754,10 @@
           "href": "../2004-05/08_Playoffs/First_Round/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/08_Playoffs/First_Round/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -762,7 +766,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-24"
+          "value": "2005-04-28"
         },
         {
           "label": "Team",
@@ -1352,6 +1356,10 @@
           "href": "../2004-05/08_Playoffs/First_Round/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/08_Playoffs/First_Round/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1360,7 +1368,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-24"
+          "value": "2005-04-28"
         },
         {
           "label": "Team",
@@ -1923,6 +1931,10 @@
           "href": "../2004-05/08_Playoffs/First_Round/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/08_Playoffs/First_Round/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1931,7 +1943,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-24"
+          "value": "2005-04-28"
         },
         {
           "label": "Team",
@@ -2533,6 +2545,10 @@
           "href": "../2004-05/08_Playoffs/First_Round/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/08_Playoffs/First_Round/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2541,7 +2557,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-24"
+          "value": "2005-04-28"
         },
         {
           "label": "Team",
@@ -3106,6 +3122,10 @@
           "href": "../2004-05/08_Playoffs/First_Round/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/08_Playoffs/First_Round/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3114,7 +3134,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-24"
+          "value": "2005-04-28"
         },
         {
           "label": "Team",
@@ -3723,6 +3743,10 @@
           "href": "../2004-05/08_Playoffs/First_Round/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/08_Playoffs/First_Round/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3731,7 +3755,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-24"
+          "value": "2005-04-28"
         },
         {
           "label": "Team",
@@ -4296,6 +4320,10 @@
           "href": "../2004-05/08_Playoffs/First_Round/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/08_Playoffs/First_Round/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4304,7 +4332,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-24"
+          "value": "2005-04-28"
         },
         {
           "label": "Team",
@@ -5009,6 +5037,10 @@
           "href": "../2004-05/08_Playoffs/First_Round/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/08_Playoffs/First_Round/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -5017,7 +5049,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-24"
+          "value": "2005-04-28"
         },
         {
           "label": "Team",
@@ -5034,7 +5066,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "90 closed game records in 2004-05 through 2005-04-24. Competitions remain separate.",
+      "summary": "91 closed game records in 2004-05 through 2005-04-28. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -5051,12 +5083,12 @@
           "rows": [
             [
               "playoff",
-              1,
-              33.1329,
+              2,
+              34.343883333,
               18.0,
               4.0,
-              3.0,
-              0.0,
+              2.5,
+              0.5,
               "Complete"
             ],
             [
@@ -5095,12 +5127,12 @@
           "rows": [
             [
               "playoff",
-              5,
-              11,
-              0.454545455,
+              12,
+              20,
+              0.6,
               2,
-              2,
-              1.0
+              3,
+              0.666666667
             ],
             [
               "preseason",
@@ -6032,6 +6064,16 @@
                 "label": "Closed game",
                 "href": "../2004-05/08_Playoffs/First_Round/Game_1.md"
               }
+            ],
+            [
+              "2005-04-26",
+              "playoff",
+              "Detroit Pistons",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/08_Playoffs/First_Round/Game_2.md"
+              }
             ]
           ]
         },
@@ -6517,6 +6559,10 @@
           "href": "../2004-05/08_Playoffs/First_Round/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/08_Playoffs/First_Round/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -6525,7 +6571,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-04-24"
+          "value": "2005-04-28"
         },
         {
           "label": "Team",

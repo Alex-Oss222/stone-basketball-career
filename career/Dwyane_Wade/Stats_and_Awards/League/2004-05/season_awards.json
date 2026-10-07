@@ -1,0 +1,92 @@
+{
+ "schema_version": 1,
+ "season": "2004-05",
+ "kind": "season_awards",
+ "rule": "The calendar, electorates and ballot scoring are researched per season (`library/<year>/league/nba_<season>_season_awards.json`,\nread through `runtime/seasons.py`); no real winner, vote or ballot is read. Each award closes on its announcement date. Its ballots use only closed\nregular-season results (`write_back.closed_results`, through April 14), standings from those results, the 2002-03\nseason as the prior-year baseline (Most Improved, Coach of the Year), and the season's head coaches.\n\nVoters (design choice, documented here and in `docs/player_statistics.md`): every voter in the real electorate files a\nballot. Voters differ only in how much they weigh two published criteria, spread evenly across a fixed range, so the\nelectorate is a deterministic panel: no chance enters a vote and nothing is re-rolled. Each criterion is a z-score\namong the eligible candidates; a voter ranks candidates by (1 - t) x first criterion + t x second, t his lens.\n\n  Award        first criterion                                  second criterion           lens t       eligible\n  MVP          production x durability                          club win share             0.20-0.50    55+ games\n  ROY          production x durability                          club win share             0.00-0.25    first-season player, 41+ games\n  DPOY         defensive box stocks per 36 x minutes factor     club defensive rating      0.30-0.60    55+ games, 24+ minutes\n  6MOY         production                                       club win share             0.10-0.30    55+ games, more off the bench than started\n  MIP          rise in Game Score per game over 2002-03         Game Score per game        0.10-0.40    55+ games, 25+ games in 2002-03, not a rookie\n  COY          club win share above its 2002-03 expectation      club win share             0.20-0.50    head coach for at least half the season and at its end\n  All-NBA      the MVP score, by position (2 G, 2 F, 1 C a team)                           MVP lens     55+ games\n  All-Defense  the DPOY score, by position; a coach never votes for his own players         DPOY lens    55+ games, 24+ minutes\n  All-Rookie   the ROY score, five a team regardless of position; not his own players       ROY lens     first-season player, 30+ games\n\nProduction = the mean of the z-scores of Game Score per game and points per game (voters weigh scoring);\ndurability = min(1, games / 70); minutes factor = min(1, minutes per game / 32); defensive box stocks = steals + blocks\n+ 0.3 x defensive rebounds; club defensive rating = points allowed per 100 opponent possessions (lower is better);\n2002-03 expectation = 0.5 + 0.6 x (2002-03 win share - 0.5). Positions are the registry's primary positions\n(PG/SG -> G, SF/PF/F -> F, C -> C).\n\nBallots score as published (5-3-1, 10-7-5-3-1, or team points 5/3/1 and 2/1). The highest total wins; first-place\nvotes break a points tie; a tie that remains names co-winners, as the NBA did (1994-95 and 1999-2000 Rookie of the\nYear). A team spot tied at the cut names both players, as the league did when ballots tied. Every rule applies to\nevery player alike; Wade gets no bonus. Decisions are recorded once in `season_awards.json` and never recomputed;\na Wade honor is added to `awards.json`.",
+ "calendar": "library/2004/league/nba_2004_05_season_awards.json",
+ "decisions": [
+  {
+   "id": "2004-05-mip",
+   "award": "mip",
+   "name": "Most Improved Player",
+   "announced_on": "2005-04-28",
+   "electorate": 123,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.1,
+    0.4
+   ],
+   "evidence_through": "2005-04-20",
+   "winners": [
+    "Dan Dickau"
+   ],
+   "tally": [
+    {
+     "player": "Dan Dickau",
+     "team": "Atlanta Hawks",
+     "games": 69,
+     "mpg": 34.0,
+     "pts": 15.1,
+     "reb": 4.1,
+     "ast": 6.4,
+     "stl": 1.5,
+     "blk": 0.1,
+     "game_score": 11.67,
+     "prior_game_score": 1.1,
+     "points": 597,
+     "first_place": 114,
+     "votes_by_place": [
+      114,
+      9,
+      0
+     ]
+    },
+    {
+     "player": "Gerald Wallace",
+     "team": "Sacramento Kings",
+     "games": 64,
+     "mpg": 31.0,
+     "pts": 14.7,
+     "reb": 6.4,
+     "ast": 2.0,
+     "stl": 1.4,
+     "blk": 1.1,
+     "game_score": 11.55,
+     "prior_game_score": 1.28,
+     "points": 329,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      103,
+      20
+     ]
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 80,
+     "mpg": 41.5,
+     "pts": 26.8,
+     "reb": 7.8,
+     "ast": 5.8,
+     "stl": 1.9,
+     "blk": 0.7,
+     "game_score": 19.95,
+     "prior_game_score": 12.49,
+     "points": 181,
+     "first_place": 9,
+     "votes_by_place": [
+      9,
+      11,
+      103
+     ]
+    }
+   ]
+  }
+ ]
+}

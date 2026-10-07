@@ -4,7 +4,7 @@
 
 NBA regular season · 2004-05
 
-407 tracked players · 1230 closed games in this record · Through April 24, 2005.
+407 tracked players · 1230 closed games in this record · Through April 28, 2005.
 
 ## Leaders
 
@@ -666,7 +666,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [January 2005](01_January/League_Stats.md) | January 1-31, 2005 | 232 | Complete |
 | [February 2005](02_February/League_Stats.md) | February 1-28, 2005 | 175 | Complete |
 | [March 2005](03_March/League_Stats.md) | March 1-31, 2005 | 232 | Complete |
-| [April 2005](04_April/League_Stats.md) | April 1-30, 2005 | 165 | Through April 24, 2005 |
+| [April 2005](04_April/League_Stats.md) | April 1-30, 2005 | 165 | Through April 28, 2005 |
 
 ## Coverage
 

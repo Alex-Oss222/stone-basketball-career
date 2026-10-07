@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-04-24 · Miami Heat · active
+Career date: 2005-04-28 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-90 closed game records in 2004-05 through 2005-04-24. Competitions remain separate.
+91 closed game records in 2004-05 through 2005-04-28. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -14,7 +14,7 @@ Activation: A declared, closed game result supplies observed participation and t
 
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 1 | 33.1 | 18.0 | 4.0 | 3.0 | 0.0 | Complete |
+| playoff | 2 | 34.3 | 18.0 | 4.0 | 2.5 | 0.500 | Complete |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
 | regular | 76 | 36.2 | 21.3 | 5.4 | 4.0 | 1.3 | Complete |
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 5 | 11 | 0.455 | 2 | 2 | 1.0 |
+| playoff | 12 | 20 | 0.600 | 2 | 3 | 0.667 |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
 | regular | 539 | 1017 | 0.530 | 87 | 203 | 0.429 |
 
@@ -122,6 +122,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-04-19 | regular | Charlotte Bobcats | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_3.md) |
 | 2005-04-20 | regular | Orlando Magic | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_4.md) |
 | 2005-04-23 | playoff | Detroit Pistons | Played | [Closed game](../2004-05/08_Playoffs/First_Round/Game_1.md) |
+| 2005-04-26 | playoff | Detroit Pistons | Played | [Closed game](../2004-05/08_Playoffs/First_Round/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -256,4 +257,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_4.md)
 - [Closed game](../2004-05/08_Playoffs/First_Round/Game_1.md)
+- [Closed game](../2004-05/08_Playoffs/First_Round/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)
