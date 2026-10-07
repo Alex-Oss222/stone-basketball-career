@@ -2,9 +2,9 @@
 
 # Contract | Anthony Johnson
 
-Known through: 2005-02-28. [Open interactive contract](johnsan02.html#contract) · [Contract history](johnsan02.html#contract-history)
+Known through: 2005-03-02. [Open interactive contract](johnsan02.html#contract) · [Contract history](johnsan02.html#contract-history)
 
-Anthony Johnson: under contract. Evidence cutoff: 2005-02-28.
+Anthony Johnson: under contract. Evidence cutoff: 2005-03-02.
 
 ## Current contract
 

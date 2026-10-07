@@ -2395,6 +2395,214 @@
     }
    ],
    "winner": "Shaquille O'Neal"
+  },
+  {
+   "id": "2004-05-player_of_month-2005-02-01-east",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "East",
+   "period_start": "2005-02-01",
+   "period_end": "2005-02-28",
+   "announced_on": "2005-03-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/02_February/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 10,
+     "wins": 8,
+     "losses": 2,
+     "pts": 28.5,
+     "reb": 5.7,
+     "ast": 5.8,
+     "game_score": 22.84,
+     "score": 32.44,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 12,
+     "wins": 8,
+     "losses": 4,
+     "pts": 23.2,
+     "reb": 4.8,
+     "ast": 3.7,
+     "game_score": 20.28,
+     "score": 28.283,
+     "rank": 2
+    },
+    {
+     "player": "Tracy McGrady",
+     "team": "Orlando Magic",
+     "games": 11,
+     "wins": 6,
+     "losses": 5,
+     "pts": 27.6,
+     "reb": 6.4,
+     "ast": 6.1,
+     "game_score": 20.34,
+     "score": 26.882,
+     "rank": 3
+    }
+   ],
+   "winner": "Vince Carter"
+  },
+  {
+   "id": "2004-05-player_of_month-2005-02-01-west",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "West",
+   "period_start": "2005-02-01",
+   "period_end": "2005-02-28",
+   "announced_on": "2005-03-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/02_February/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 11,
+     "wins": 7,
+     "losses": 4,
+     "pts": 26.7,
+     "reb": 6.5,
+     "ast": 7.0,
+     "game_score": 22.08,
+     "score": 29.718,
+     "rank": 1
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 13,
+     "wins": 8,
+     "losses": 5,
+     "pts": 23.0,
+     "reb": 12.7,
+     "ast": 6.1,
+     "game_score": 22.0,
+     "score": 29.385,
+     "rank": 2
+    },
+    {
+     "player": "Shaquille O'Neal",
+     "team": "Los Angeles Lakers",
+     "games": 13,
+     "wins": 8,
+     "losses": 5,
+     "pts": 25.8,
+     "reb": 11.2,
+     "ast": 3.5,
+     "game_score": 21.88,
+     "score": 29.269,
+     "rank": 3
+    }
+   ],
+   "winner": "Kobe Bryant"
+  },
+  {
+   "id": "2004-05-rookie_of_month-2005-02-01-east",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "East",
+   "period_start": "2005-02-01",
+   "period_end": "2005-02-28",
+   "announced_on": "2005-03-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/02_February/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Luol Deng",
+     "team": "Boston Celtics",
+     "games": 8,
+     "wins": 5,
+     "losses": 3,
+     "pts": 13.9,
+     "reb": 5.6,
+     "ast": 2.5,
+     "game_score": 10.39,
+     "score": 12.887,
+     "rank": 1
+    },
+    {
+     "player": "Emeka Okafor",
+     "team": "Washington Wizards",
+     "games": 11,
+     "wins": 6,
+     "losses": 5,
+     "pts": 13.0,
+     "reb": 12.0,
+     "ast": 0.6,
+     "game_score": 10.08,
+     "score": 12.264,
+     "rank": 2
+    },
+    {
+     "player": "Dwight Howard",
+     "team": "Orlando Magic",
+     "games": 11,
+     "wins": 6,
+     "losses": 5,
+     "pts": 10.1,
+     "reb": 10.0,
+     "ast": 0.8,
+     "game_score": 9.44,
+     "score": 11.618,
+     "rank": 3
+    }
+   ],
+   "winner": "Luol Deng"
+  },
+  {
+   "id": "2004-05-rookie_of_month-2005-02-01-west",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "West",
+   "period_start": "2005-02-01",
+   "period_end": "2005-02-28",
+   "announced_on": "2005-03-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/02_February/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Josh Childress",
+     "team": "Phoenix Suns",
+     "games": 11,
+     "wins": 8,
+     "losses": 3,
+     "pts": 12.0,
+     "reb": 8.0,
+     "ast": 2.1,
+     "game_score": 11.42,
+     "score": 14.327,
+     "rank": 1
+    },
+    {
+     "player": "Josh Smith",
+     "team": "Utah Jazz",
+     "games": 9,
+     "wins": 3,
+     "losses": 6,
+     "pts": 10.9,
+     "reb": 6.4,
+     "ast": 1.2,
+     "game_score": 8.82,
+     "score": 10.156,
+     "rank": 2
+    },
+    {
+     "player": "Damien Wilkins",
+     "team": "Los Angeles Lakers",
+     "games": 8,
+     "wins": 6,
+     "losses": 2,
+     "pts": 8.8,
+     "reb": 2.8,
+     "ast": 0.8,
+     "game_score": 5.85,
+     "score": 8.85,
+     "rank": 3
+    }
+   ],
+   "winner": "Josh Childress"
   }
  ]
 }

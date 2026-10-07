@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-02-28**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-03-02**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -242,7 +242,7 @@ Card date: **2005-02-28**. 573 registry players, one Markdown card and one inter
 | [Caron Butler](butleca01.md) | Miami Heat | 24 | sourced | [open](butleca01.html) |
 | [Casey Jacobsen](jacobca01.md) | Phoenix Suns | 23 | silhouette | [open](jacobca01.html) |
 | [Chris Jefferies](jeffech01.md) | Free agent | 25 | silhouette | [open](jeffech01.html) |
-| [Chris Owens](owensch01.md) | Free agent | 25 | sourced | [open](owensch01.html) |
+| [Chris Owens](owensch01.md) | Free agent | 26 | sourced | [open](owensch01.html) |
 | [Corliss Williamson](willico02.md) | Chicago Bulls | 31 | sourced | [open](willico02.html) |
 | [Corsley Edwards](corsleyedwards.md) | Seattle SuperSonics | 25 | silhouette | [open](corsleyedwards.html) |
 | [Cory Alexander](coryalexander.md) | Minnesota Timberwolves | 31 | silhouette | [open](coryalexander.html) |
@@ -404,7 +404,7 @@ Card date: **2005-02-28**. 573 registry players, one Markdown card and one inter
 | [Chris Bosh](boshch01.md) | Toronto Raptors | 20 | sourced | [open](boshch01.html) |
 | [Chris Crawford](crawfch01.md) | Free agent | 29 | silhouette | [open](crawfch01.html) |
 | [Chris Mills](millsch01.md) | Free agent | 35 | silhouette | [open](millsch01.html) |
-| [Chris Webber](webbech01.md) | Sacramento Kings | 31 | sourced | [open](webbech01.html) |
+| [Chris Webber](webbech01.md) | Sacramento Kings | 32 | sourced | [open](webbech01.html) |
 | [Chris Wilcox](wilcoch01.md) | Los Angeles Clippers | 22 | sourced | [open](wilcoch01.html) |
 | [Christian Laettner](laettch01.md) | Washington Wizards | 35 | sourced | [open](laettch01.html) |
 | [Clarence Weatherspoon](weathcl01.md) | New York Knicks | 34 | sourced | [open](weathcl01.html) |
