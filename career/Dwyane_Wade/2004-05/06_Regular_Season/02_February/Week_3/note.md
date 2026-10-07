@@ -1,6 +1,6 @@
 ---
 type: regular_season_week
-status: active
+status: complete
 month: February
 week: 3
 days: 15-21
