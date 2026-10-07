@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-02-08 · Miami Heat · active
+Career date: 2005-02-13 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-57 closed game records in 2004-05 through 2005-02-08. Competitions remain separate.
+60 closed game records in 2004-05 through 2005-02-13. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
-| regular | 44 | 36.3 | 21.3 | 5.2 | 3.9 | 1.3 | Complete |
+| regular | 47 | 36.3 | 21.1 | 5.3 | 3.9 | 1.3 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
-| regular | 315 | 585 | 0.538 | 53 | 111 | 0.477 |
+| regular | 334 | 625 | 0.534 | 55 | 120 | 0.458 |
 
 ## Closed source games
 
@@ -87,6 +87,9 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-02-03 | regular | Cleveland Cavaliers | Played | [Closed game](../2004-05/06_Regular_Season/02_February/Week_1/Game_2.md) |
 | 2005-02-05 | regular | Chicago Bulls | Played | [Closed game](../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md) |
 | 2005-02-07 | regular | Golden State Warriors | Played | [Closed game](../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md) |
+| 2005-02-09 | regular | New York Knicks | Played | [Closed game](../2004-05/06_Regular_Season/02_February/Week_2/Game_1.md) |
+| 2005-02-11 | regular | Charlotte Bobcats | Played | [Closed game](../2004-05/06_Regular_Season/02_February/Week_2/Game_2.md) |
+| 2005-02-13 | regular | San Antonio Spurs | Played | [Closed game](../2004-05/06_Regular_Season/02_February/Week_2/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -188,4 +191,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/02_February/Week_1/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/02_February/Week_1/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/02_February/Week_1/Game_4.md)
+- [Closed game](../2004-05/06_Regular_Season/02_February/Week_2/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/02_February/Week_2/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/02_February/Week_2/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

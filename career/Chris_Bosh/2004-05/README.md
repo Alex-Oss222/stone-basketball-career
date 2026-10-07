@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2005-02-08** · Toronto Raptors · #4 · PF · age 20
+Career date: **2005-02-13** · Toronto Raptors · #4 · PF · age 20
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,24 +14,24 @@ Career date: **2005-02-08** · Toronto Raptors · #4 · PF · age 20
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 47/47 | 39.2 | 18.0 | 8.9 | 2.9 | 1.0 | 1.2 | 51.7 | 47.1 | 81.7 | 58.0 | 35-13 |
+| 2004-05 | 20 | Toronto Raptors | 51/51 | 39.4 | 18.1 | 8.9 | 2.9 | 1.1 | 1.3 | 51.4 | 47.4 | 82.9 | 58.1 | 37-15 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 47 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 51 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 39.2 |
-| Points | 20.2 | 18.0 |
+| Minutes | 36.5 | 39.4 |
+| Points | 20.2 | 18.1 |
 | Rebounds | 11.1 | 8.9 |
 | Assists | 3.5 | 2.9 |
-| Steals | 0.9 | 1.0 |
-| Blocks | 1.5 | 1.2 |
-| FG% | 51.4 | 51.7 |
-| 3P% | 41.2 | 47.1 |
-| FT% | 90.8 | 81.7 |
-| TS% (est.) | 64.0 | 58.0 |
+| Steals | 0.9 | 1.1 |
+| Blocks | 1.5 | 1.3 |
+| FG% | 51.4 | 51.4 |
+| 3P% | 41.2 | 47.4 |
+| FT% | 90.8 | 82.9 |
+| TS% (est.) | 64.0 | 58.1 |
 
 ## Playoffs
 
@@ -44,10 +44,10 @@ No playoff games closed.
 | Points | 34 | 2004-11-23 at Washington Wizards |
 | Rebounds | 16 | 2004-11-19 vs Seattle SuperSonics (+1) |
 | Assists | 7 | 2005-01-28 at Charlotte Bobcats |
-| Steals | 3 | 2004-11-03 vs Houston Rockets (+5) |
-| Blocks | 3 | 2004-11-09 at Sacramento Kings (+5) |
+| Steals | 3 | 2004-11-03 vs Houston Rockets (+6) |
+| Blocks | 4 | 2005-02-09 vs Milwaukee Bucks |
 | Threes | 2 | 2004-11-12 at Seattle SuperSonics |
-| Free throws | 10 | 2004-12-20 at Houston Rockets |
+| Free throws | 11 | 2005-02-11 vs Philadelphia 76ers |
 
 ## Awards
 
@@ -63,3 +63,4 @@ No playoff games closed.
 | 100 career games played | 2004-12-19 | 20 years, 270 days | New Jersey Nets |
 | 100 career steals | 2004-12-28 | 20 years, 279 days | Los Angeles Lakers |
 | 1,000 career rebounds | 2005-02-02 | 20 years, 315 days | Indiana Pacers |
+| 250 career assists | 2005-02-13 | 20 years, 326 days | Los Angeles Clippers |

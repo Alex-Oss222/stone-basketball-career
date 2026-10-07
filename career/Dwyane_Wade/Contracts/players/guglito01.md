@@ -2,9 +2,9 @@
 
 # Contract | Tom Gugliotta
 
-Known through: 2005-02-08. [Open interactive contract](guglito01.html#contract) · [Contract history](guglito01.html#contract-history)
+Known through: 2005-02-13. [Open interactive contract](guglito01.html#contract) · [Contract history](guglito01.html#contract-history)
 
-Tom Gugliotta: under contract. Evidence cutoff: 2005-02-08.
+Tom Gugliotta: under contract. Evidence cutoff: 2005-02-13.
 
 ## Current contract
 

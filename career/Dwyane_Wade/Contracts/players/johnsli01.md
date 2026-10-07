@@ -2,9 +2,9 @@
 
 # Contract | Linton Johnson
 
-Known through: 2005-02-08. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
+Known through: 2005-02-13. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
 
-Linton Johnson: No verified contract record. Evidence cutoff: 2005-02-08.
+Linton Johnson: No verified contract record. Evidence cutoff: 2005-02-13.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Linton Johnson |
-| Club / rights baseline | Indiana Pacers |
+| Club / rights baseline | New Jersey Nets |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

@@ -12,8 +12,8 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `battito01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-02-08 · **Club on this date:** Denver Nuggets · **Basis:** Denver Nuggets: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #4 · **Born:** 1976-02-11 · **Age on card date:** 28  
+**Card date:** 2005-02-13 · **Club on this date:** Denver Nuggets · **Basis:** Denver Nuggets: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Position:** C (Center) · **Jersey:** #4 · **Born:** 1976-02-11 · **Age on card date:** 29  
 **Registry ID:** `battito01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/battito01.html) · ESPN ID 45
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $4,400,000) (league contract inventory status `under_contract`, as of June 26, 2003).
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `battit
 
 ## Simulated statistics
 
-As of **2005-02-08**: 46 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-02-13**: 50 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2004-05 regular season](../2004-05/League_Stats.md) | 28 | DEN | NBA | C | 46 | 7 | 23.4 | 2.2 | 4.9 | .440 | 0.0 | 0.2 | .000 | 2.2 | 4.7 | .460 | .440 | 0.8 | 1.3 | .650 | 1.4 | 3.3 | 4.7 | 0.7 | 0.5 | 0.8 | 1.1 | 2.9 | 5.2 | .471 | — |
+| [2004-05 regular season](../2004-05/League_Stats.md) | 29 | DEN | NBA | C | 50 | 9 | 23.4 | 2.2 | 4.9 | .449 | 0.0 | 0.2 | .000 | 2.2 | 4.7 | .468 | .449 | 0.8 | 1.3 | .646 | 1.3 | 3.4 | 4.8 | 0.8 | 0.5 | 0.8 | 1.2 | 2.8 | 5.2 | .479 | — |
 
 ### Month
 
@@ -41,12 +41,12 @@ As of **2005-02-08**: 46 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2004](../2004-05/11_November/League_Stats.md) | 28 | DEN | NBA | C | 13 | 0 | 22.8 | 2.3 | 5.0 | .462 | 0.0 | 0.2 | .000 | 2.3 | 4.8 | .476 | .462 | 0.4 | 0.6 | .625 | 1.5 | 2.9 | 4.4 | 0.8 | 0.6 | 0.7 | 0.9 | 2.6 | 5.0 | .474 | — |
-| [December 2004](../2004-05/12_December/League_Stats.md) | 28 | DEN | NBA | C | 16 | 1 | 23.2 | 2.2 | 5.0 | .450 | 0.0 | 0.4 | .000 | 2.2 | 4.6 | .486 | .450 | 1.2 | 1.6 | .731 | 1.2 | 2.9 | 4.2 | 1.1 | 0.4 | 0.8 | 1.1 | 3.2 | 5.7 | .498 | — |
-| [January 2005](../2004-05/01_January/League_Stats.md) | 28 | DEN | NBA | C | 14 | 4 | 23.4 | 1.8 | 4.6 | .385 | 0.0 | 0.0 | N/A | 1.8 | 4.6 | .385 | .385 | 0.8 | 1.4 | .579 | 1.6 | 3.7 | 5.3 | 0.3 | 0.5 | 0.9 | 1.1 | 2.9 | 4.4 | .416 | — |
-| [February 2005](../2004-05/02_February/League_Stats.md) | 28 | DEN | NBA | C | 3 | 2 | 27.1 | 2.7 | 5.0 | .533 | 0.0 | 0.7 | .000 | 2.7 | 4.3 | .615 | .533 | 1.3 | 2.3 | .571 | 1.0 | 4.3 | 5.3 | 0.7 | 0.7 | 1.0 | 2.0 | 2.0 | 6.7 | .553 | — |
-| [March 2005](../2004-05/03_March/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2005](../2004-05/04_April/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2004](../2004-05/11_November/League_Stats.md) | 29 | DEN | NBA | C | 13 | 0 | 22.8 | 2.3 | 5.0 | .462 | 0.0 | 0.2 | .000 | 2.3 | 4.8 | .476 | .462 | 0.4 | 0.6 | .625 | 1.5 | 2.9 | 4.4 | 0.8 | 0.6 | 0.7 | 0.9 | 2.6 | 5.0 | .474 | — |
+| [December 2004](../2004-05/12_December/League_Stats.md) | 29 | DEN | NBA | C | 16 | 1 | 23.2 | 2.2 | 5.0 | .450 | 0.0 | 0.4 | .000 | 2.2 | 4.6 | .486 | .450 | 1.2 | 1.6 | .731 | 1.2 | 2.9 | 4.2 | 1.1 | 0.4 | 0.8 | 1.1 | 3.2 | 5.7 | .498 | — |
+| [January 2005](../2004-05/01_January/League_Stats.md) | 29 | DEN | NBA | C | 14 | 4 | 23.4 | 1.8 | 4.6 | .385 | 0.0 | 0.0 | N/A | 1.8 | 4.6 | .385 | .385 | 0.8 | 1.4 | .579 | 1.6 | 3.7 | 5.3 | 0.3 | 0.5 | 0.9 | 1.1 | 2.9 | 4.4 | .416 | — |
+| [February 2005](../2004-05/02_February/League_Stats.md) | 29 | DEN | NBA | C | 7 | 4 | 25.1 | 2.7 | 5.0 | .543 | 0.0 | 0.3 | .000 | 2.7 | 4.7 | .576 | .543 | 1.0 | 1.7 | .583 | 0.7 | 5.0 | 5.7 | 0.9 | 0.6 | 1.1 | 2.0 | 2.0 | 6.4 | .559 | — |
+| [March 2005](../2004-05/03_March/League_Stats.md) | 29 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2005](../2004-05/04_April/League_Stats.md) | 29 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 </details>
 
@@ -57,60 +57,60 @@ As of **2005-02-08**: 46 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2004 week 1 (01 to 07)](../2004-05/11_November/Week_1/League_Stats.md) | 28 | DEN | NBA | C | 3 | 0 | 20.2 | 2.0 | 4.3 | .462 | 0.0 | 0.3 | .000 | 2.0 | 4.0 | .500 | .462 | 1.0 | 1.3 | .750 | 1.7 | 2.3 | 4.0 | 0.7 | 1.0 | 0.7 | 0.3 | 3.0 | 5.0 | .508 | — |
-| [November 2004 week 2 (08 to 14)](../2004-05/11_November/Week_2/League_Stats.md) | 28 | DEN | NBA | C | 2 | 0 | 22.5 | 2.5 | 4.5 | .556 | 0.0 | 0.0 | N/A | 2.5 | 4.5 | .556 | .556 | 0.0 | 0.0 | N/A | 2.0 | 2.5 | 4.5 | 1.0 | 0.0 | 2.0 | 2.0 | 1.0 | 5.0 | .556 | — |
-| [November 2004 week 3 (15 to 21)](../2004-05/11_November/Week_3/League_Stats.md) | 28 | DEN | NBA | C | 3 | 0 | 22.7 | 1.7 | 5.3 | .312 | 0.0 | 0.3 | .000 | 1.7 | 5.0 | .333 | .312 | 0.3 | 0.7 | .500 | 1.0 | 3.7 | 4.7 | 1.3 | 0.7 | 0.3 | 1.0 | 3.0 | 3.7 | .326 | — |
-| [November 2004 week 4 (22 to 30)](../2004-05/11_November/Week_4/League_Stats.md) | 28 | DEN | NBA | C | 5 | 0 | 24.4 | 2.8 | 5.4 | .519 | 0.0 | 0.0 | N/A | 2.8 | 5.4 | .519 | .519 | 0.2 | 0.4 | .500 | 1.4 | 3.0 | 4.4 | 0.4 | 0.6 | 0.4 | 0.8 | 2.8 | 5.8 | .520 | — |
-| [December 2004 week 1 (01 to 07)](../2004-05/12_December/Week_1/League_Stats.md) | 28 | DEN | NBA | C | 4 | 1 | 25.6 | 3.0 | 6.2 | .480 | 0.0 | 0.5 | .000 | 3.0 | 5.8 | .522 | .480 | 1.2 | 1.8 | .714 | 1.0 | 3.2 | 4.2 | 1.5 | 0.5 | 0.8 | 2.0 | 2.8 | 7.2 | .516 | — |
-| [December 2004 week 2 (08 to 14)](../2004-05/12_December/Week_2/League_Stats.md) | 28 | DEN | NBA | C | 3 | 0 | 23.3 | 2.3 | 4.7 | .500 | 0.0 | 0.3 | .000 | 2.3 | 4.3 | .538 | .500 | 1.0 | 1.0 | 1.000 | 1.3 | 3.3 | 4.7 | 1.3 | 0.0 | 0.7 | 1.7 | 3.0 | 5.7 | .555 | — |
-| [December 2004 week 3 (15 to 21)](../2004-05/12_December/Week_3/League_Stats.md) | 28 | DEN | NBA | C | 4 | 0 | 20.2 | 2.0 | 3.8 | .533 | 0.0 | 0.2 | .000 | 2.0 | 3.5 | .571 | .533 | 1.5 | 2.0 | .750 | 0.8 | 3.2 | 4.0 | 0.8 | 1.0 | 0.5 | 0.5 | 3.0 | 5.5 | .594 | — |
-| [December 2004 week 4 (22 to 31)](../2004-05/12_December/Week_4/League_Stats.md) | 28 | DEN | NBA | C | 5 | 0 | 23.5 | 1.8 | 5.2 | .346 | 0.0 | 0.4 | .000 | 1.8 | 4.8 | .375 | .346 | 1.0 | 1.6 | .625 | 1.8 | 2.2 | 4.0 | 1.0 | 0.2 | 1.2 | 0.6 | 4.0 | 4.6 | .390 | — |
-| [January 2005 week 1 (01 to 07)](../2004-05/01_January/Week_1/League_Stats.md) | 28 | DEN | NBA | C | 4 | 1 | 25.2 | 1.5 | 4.2 | .353 | 0.0 | 0.0 | N/A | 1.5 | 4.2 | .353 | .353 | 0.0 | 0.0 | N/A | 0.8 | 4.2 | 5.0 | 0.2 | 0.8 | 1.8 | 1.0 | 3.8 | 3.0 | .353 | — |
-| [January 2005 week 2 (08 to 14)](../2004-05/01_January/Week_2/League_Stats.md) | 28 | DEN | NBA | C | 4 | 0 | 22.8 | 2.5 | 5.5 | .455 | 0.0 | 0.0 | N/A | 2.5 | 5.5 | .455 | .455 | 0.8 | 1.5 | .500 | 2.0 | 4.8 | 6.8 | 0.2 | 0.2 | 0.5 | 1.2 | 3.0 | 5.8 | .467 | — |
-| [January 2005 week 3 (15 to 21)](../2004-05/01_January/Week_3/League_Stats.md) | 28 | DEN | NBA | C | 2 | 0 | 21.5 | 0.5 | 3.0 | .167 | 0.0 | 0.0 | N/A | 0.5 | 3.0 | .167 | .167 | 1.0 | 1.0 | 1.000 | 2.0 | 1.5 | 3.5 | 0.0 | 1.0 | 0.5 | 0.0 | 2.0 | 2.0 | .291 | — |
-| [January 2005 week 4 (22 to 31)](../2004-05/01_January/Week_4/League_Stats.md) | 28 | DEN | NBA | C | 4 | 3 | 23.3 | 2.0 | 5.0 | .400 | 0.0 | 0.0 | N/A | 2.0 | 5.0 | .400 | .400 | 1.5 | 2.8 | .545 | 1.8 | 3.2 | 5.0 | 0.5 | 0.2 | 0.5 | 1.8 | 2.2 | 5.5 | .443 | — |
-| [February 2005 week 1 (01 to 07)](../2004-05/02_February/Week_1/League_Stats.md) | 28 | DEN | NBA | C | 3 | 2 | 27.1 | 2.7 | 5.0 | .533 | 0.0 | 0.7 | .000 | 2.7 | 4.3 | .615 | .533 | 1.3 | 2.3 | .571 | 1.0 | 4.3 | 5.3 | 0.7 | 0.7 | 1.0 | 2.0 | 2.0 | 6.7 | .553 | — |
-| [February 2005 week 2 (08 to 14)](../2004-05/02_February/Week_2/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2005 week 3 (15 to 21)](../2004-05/02_February/Week_3/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2005 week 4 (22 to 28)](../2004-05/02_February/Week_4/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2005 week 1 (01 to 07)](../2004-05/03_March/Week_1/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2005 week 2 (08 to 14)](../2004-05/03_March/Week_2/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2005 week 3 (15 to 21)](../2004-05/03_March/Week_3/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2005 week 4 (22 to 31)](../2004-05/03_March/Week_4/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2005 week 1 (01 to 07)](../2004-05/04_April/Week_1/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2005 week 2 (08 to 14)](../2004-05/04_April/Week_2/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2005 week 3 (15 to 21)](../2004-05/04_April/Week_3/League_Stats.md) | 28 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2004 week 1 (01 to 07)](../2004-05/11_November/Week_1/League_Stats.md) | 29 | DEN | NBA | C | 3 | 0 | 20.2 | 2.0 | 4.3 | .462 | 0.0 | 0.3 | .000 | 2.0 | 4.0 | .500 | .462 | 1.0 | 1.3 | .750 | 1.7 | 2.3 | 4.0 | 0.7 | 1.0 | 0.7 | 0.3 | 3.0 | 5.0 | .508 | — |
+| [November 2004 week 2 (08 to 14)](../2004-05/11_November/Week_2/League_Stats.md) | 29 | DEN | NBA | C | 2 | 0 | 22.5 | 2.5 | 4.5 | .556 | 0.0 | 0.0 | N/A | 2.5 | 4.5 | .556 | .556 | 0.0 | 0.0 | N/A | 2.0 | 2.5 | 4.5 | 1.0 | 0.0 | 2.0 | 2.0 | 1.0 | 5.0 | .556 | — |
+| [November 2004 week 3 (15 to 21)](../2004-05/11_November/Week_3/League_Stats.md) | 29 | DEN | NBA | C | 3 | 0 | 22.7 | 1.7 | 5.3 | .312 | 0.0 | 0.3 | .000 | 1.7 | 5.0 | .333 | .312 | 0.3 | 0.7 | .500 | 1.0 | 3.7 | 4.7 | 1.3 | 0.7 | 0.3 | 1.0 | 3.0 | 3.7 | .326 | — |
+| [November 2004 week 4 (22 to 30)](../2004-05/11_November/Week_4/League_Stats.md) | 29 | DEN | NBA | C | 5 | 0 | 24.4 | 2.8 | 5.4 | .519 | 0.0 | 0.0 | N/A | 2.8 | 5.4 | .519 | .519 | 0.2 | 0.4 | .500 | 1.4 | 3.0 | 4.4 | 0.4 | 0.6 | 0.4 | 0.8 | 2.8 | 5.8 | .520 | — |
+| [December 2004 week 1 (01 to 07)](../2004-05/12_December/Week_1/League_Stats.md) | 29 | DEN | NBA | C | 4 | 1 | 25.6 | 3.0 | 6.2 | .480 | 0.0 | 0.5 | .000 | 3.0 | 5.8 | .522 | .480 | 1.2 | 1.8 | .714 | 1.0 | 3.2 | 4.2 | 1.5 | 0.5 | 0.8 | 2.0 | 2.8 | 7.2 | .516 | — |
+| [December 2004 week 2 (08 to 14)](../2004-05/12_December/Week_2/League_Stats.md) | 29 | DEN | NBA | C | 3 | 0 | 23.3 | 2.3 | 4.7 | .500 | 0.0 | 0.3 | .000 | 2.3 | 4.3 | .538 | .500 | 1.0 | 1.0 | 1.000 | 1.3 | 3.3 | 4.7 | 1.3 | 0.0 | 0.7 | 1.7 | 3.0 | 5.7 | .555 | — |
+| [December 2004 week 3 (15 to 21)](../2004-05/12_December/Week_3/League_Stats.md) | 29 | DEN | NBA | C | 4 | 0 | 20.2 | 2.0 | 3.8 | .533 | 0.0 | 0.2 | .000 | 2.0 | 3.5 | .571 | .533 | 1.5 | 2.0 | .750 | 0.8 | 3.2 | 4.0 | 0.8 | 1.0 | 0.5 | 0.5 | 3.0 | 5.5 | .594 | — |
+| [December 2004 week 4 (22 to 31)](../2004-05/12_December/Week_4/League_Stats.md) | 29 | DEN | NBA | C | 5 | 0 | 23.5 | 1.8 | 5.2 | .346 | 0.0 | 0.4 | .000 | 1.8 | 4.8 | .375 | .346 | 1.0 | 1.6 | .625 | 1.8 | 2.2 | 4.0 | 1.0 | 0.2 | 1.2 | 0.6 | 4.0 | 4.6 | .390 | — |
+| [January 2005 week 1 (01 to 07)](../2004-05/01_January/Week_1/League_Stats.md) | 29 | DEN | NBA | C | 4 | 1 | 25.2 | 1.5 | 4.2 | .353 | 0.0 | 0.0 | N/A | 1.5 | 4.2 | .353 | .353 | 0.0 | 0.0 | N/A | 0.8 | 4.2 | 5.0 | 0.2 | 0.8 | 1.8 | 1.0 | 3.8 | 3.0 | .353 | — |
+| [January 2005 week 2 (08 to 14)](../2004-05/01_January/Week_2/League_Stats.md) | 29 | DEN | NBA | C | 4 | 0 | 22.8 | 2.5 | 5.5 | .455 | 0.0 | 0.0 | N/A | 2.5 | 5.5 | .455 | .455 | 0.8 | 1.5 | .500 | 2.0 | 4.8 | 6.8 | 0.2 | 0.2 | 0.5 | 1.2 | 3.0 | 5.8 | .467 | — |
+| [January 2005 week 3 (15 to 21)](../2004-05/01_January/Week_3/League_Stats.md) | 29 | DEN | NBA | C | 2 | 0 | 21.5 | 0.5 | 3.0 | .167 | 0.0 | 0.0 | N/A | 0.5 | 3.0 | .167 | .167 | 1.0 | 1.0 | 1.000 | 2.0 | 1.5 | 3.5 | 0.0 | 1.0 | 0.5 | 0.0 | 2.0 | 2.0 | .291 | — |
+| [January 2005 week 4 (22 to 31)](../2004-05/01_January/Week_4/League_Stats.md) | 29 | DEN | NBA | C | 4 | 3 | 23.3 | 2.0 | 5.0 | .400 | 0.0 | 0.0 | N/A | 2.0 | 5.0 | .400 | .400 | 1.5 | 2.8 | .545 | 1.8 | 3.2 | 5.0 | 0.5 | 0.2 | 0.5 | 1.8 | 2.2 | 5.5 | .443 | — |
+| [February 2005 week 1 (01 to 07)](../2004-05/02_February/Week_1/League_Stats.md) | 29 | DEN | NBA | C | 3 | 2 | 27.1 | 2.7 | 5.0 | .533 | 0.0 | 0.7 | .000 | 2.7 | 4.3 | .615 | .533 | 1.3 | 2.3 | .571 | 1.0 | 4.3 | 5.3 | 0.7 | 0.7 | 1.0 | 2.0 | 2.0 | 6.7 | .553 | — |
+| [February 2005 week 2 (08 to 14)](../2004-05/02_February/Week_2/League_Stats.md) | 29 | DEN | NBA | C | 4 | 2 | 23.6 | 2.8 | 5.0 | .550 | 0.0 | 0.0 | N/A | 2.8 | 5.0 | .550 | .550 | 0.8 | 1.2 | .600 | 0.5 | 5.5 | 6.0 | 1.0 | 0.5 | 1.2 | 2.0 | 2.0 | 6.2 | .563 | — |
+| [February 2005 week 3 (15 to 21)](../2004-05/02_February/Week_3/League_Stats.md) | 29 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2005 week 4 (22 to 28)](../2004-05/02_February/Week_4/League_Stats.md) | 29 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2005 week 1 (01 to 07)](../2004-05/03_March/Week_1/League_Stats.md) | 29 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2005 week 2 (08 to 14)](../2004-05/03_March/Week_2/League_Stats.md) | 29 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2005 week 3 (15 to 21)](../2004-05/03_March/Week_3/League_Stats.md) | 29 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2005 week 4 (22 to 31)](../2004-05/03_March/Week_4/League_Stats.md) | 29 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2005 week 1 (01 to 07)](../2004-05/04_April/Week_1/League_Stats.md) | 29 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2005 week 2 (08 to 14)](../2004-05/04_April/Week_2/League_Stats.md) | 29 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2005 week 3 (15 to 21)](../2004-05/04_April/Week_3/League_Stats.md) | 29 | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 </details>
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2004-05 regular season. Coverage: **complete**; 225 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2004-05 regular season. Coverage: **complete**; 245 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 46 of 46 closed games; 46 tracked appearances form the denominator below (2004-11-03 to 2005-02-05).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 50 of 50 closed games; 50 tracked appearances form the denominator below (2004-11-03 to 2005-02-13).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 63 | 125 | 50.4% | 2.74 | 2.72 |
-| Outside paint, under 12 ft | 2 | 8 | 25.0% | 0.09 | 0.17 |
-| Outside paint, 12 to under 18 ft | 16 | 36 | 44.4% | 0.70 | 0.78 |
-| 18 ft to the three-point line | 18 | 46 | 39.1% | 0.78 | 1.00 |
-| Three-point range | 0 | 10 | 0.0% | 0.00 | 0.22 |
-| All field goals | 99 | 225 | 44.0% | 4.30 | 4.89 |
+| Paint | 69 | 137 | 50.4% | 2.76 | 2.74 |
+| Outside paint, under 12 ft | 3 | 10 | 30.0% | 0.12 | 0.20 |
+| Outside paint, 12 to under 18 ft | 17 | 38 | 44.7% | 0.68 | 0.76 |
+| 18 ft to the three-point line | 21 | 50 | 42.0% | 0.84 | 1.00 |
+| Three-point range | 0 | 10 | 0.0% | 0.00 | 0.20 |
+| All field goals | 110 | 245 | 44.9% | 4.40 | 4.90 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 46 closed regular-season games through 2005-02-08. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 50 closed regular-season games through 2005-02-13. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | BOS | 67 | 62 | 25.1 | 7.3 | 6.5 | 0.7 | 0.5 | 1.2 | 0.7 | 53.9% | 20.0% | 74.6% |
 | 2003-04 | BOS | 72 | 8 | 23.6 | 6.7 | 5.5 | 1.1 | 0.5 | 0.8 | 1.2 | 41.1% | 36.7% | 70.5% |
-| 2004-05 | DEN | 46 | 7 | 23.4 | 5.2 | 4.7 | 0.7 | 0.5 | 0.8 | 1.1 | 44.0% | 0.0% | 65.0% |
+| 2004-05 | DEN | 50 | 9 | 23.4 | 5.2 | 4.8 | 0.8 | 0.5 | 0.8 | 1.2 | 44.9% | 0.0% | 64.6% |
 
 ## Playoff statistics by year
 
@@ -122,4 +122,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2005-02-08. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2005-02-13. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

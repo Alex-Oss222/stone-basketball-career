@@ -4,13 +4,13 @@
 
 NBA regular season · February 1-28, 2005
 
-As of February 8, 2005: 4 closed Miami games in this period. Rows cover Miami's closed games only.
+As of February 13, 2005: 7 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
 | G | W | L | WIN% | PPG | OPP PPG | DIFF |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 4 | 2 | 2 | .500 | 97.5 | 95.2 | +2.2 |
+| 7 | 4 | 3 | .571 | 100.7 | 94.7 | +6.0 |
 
 ## Player production
 
@@ -18,23 +18,23 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Brian Grant | C/PF | 4 | 33.9 | 8.2 | 5.2 | 1.0 | 1.5 | 1.0 | 2.0 |
-| Mike James | PG | 4 | 18.6 | 7.8 | 2.8 | 2.2 | 1.2 | 0.0 | 1.2 |
-| Mehmet Okur | PF | 4 | 22.2 | 8.2 | 6.2 | 2.0 | 0.8 | 0.5 | 1.0 |
-| Dwyane Wade | SG/PG | 4 | 38.9 | 29.0 | 4.2 | 3.2 | 1.8 | 1.8 | 2.0 |
-| Caron Butler | SF | 4 | 17.0 | 3.8 | 1.8 | 1.0 | 0.2 | 0.0 | 0.5 |
-| Dorell Wright | SF | 4 | 9.9 | 2.2 | 1.0 | 1.5 | 0.0 | 0.0 | 0.8 |
+| Brian Grant | C/PF | 7 | 33.4 | 7.9 | 7.0 | 1.1 | 1.1 | 0.6 | 1.4 |
+| Mike James | PG | 7 | 17.3 | 8.6 | 3.1 | 1.4 | 1.0 | 0.0 | 1.1 |
+| Mehmet Okur | PF | 7 | 20.9 | 6.6 | 6.0 | 1.3 | 0.4 | 0.4 | 1.3 |
+| Dwyane Wade | SG/PG | 7 | 37.7 | 24.6 | 5.1 | 3.3 | 1.6 | 1.6 | 1.6 |
+| Caron Butler | SF | 7 | 15.1 | 5.0 | 1.9 | 0.7 | 0.4 | 0.1 | 0.7 |
+| Dorell Wright | SF | 7 | 9.8 | 4.3 | 1.3 | 1.4 | 0.1 | 0.1 | 0.6 |
 | John Thomas | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Maurice Evans | SG | 1 | 4.1 | 2.0 | 2.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Maurice Baker | PG | 1 | 5.1 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Maurice Baker | PG | 4 | 3.3 | 1.2 | 0.5 | 0.0 | 0.8 | 0.0 | 0.0 |
 | John Edwards | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Bernard Robinson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Christian Drejer | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Rafer Alston | PG | 4 | 30.8 | 10.0 | 3.2 | 5.0 | 0.5 | 0.0 | 3.0 |
-| Donyell Marshall | PF | 4 | 31.9 | 14.8 | 6.8 | 2.8 | 1.0 | 1.0 | 1.8 |
-| Lamond Murray | SF | 4 | 3.4 | 1.5 | 0.2 | 0.5 | 0.0 | 0.0 | 0.0 |
-| Raja Bell | SG | 3 | 7.2 | 4.7 | 0.7 | 0.3 | 0.3 | 0.0 | 0.3 |
-| Matt Harpring | SF | 3 | 34.5 | 10.7 | 11.7 | 1.3 | 1.0 | 0.3 | 2.0 |
+| Rafer Alston | PG | 7 | 31.2 | 11.7 | 2.9 | 5.4 | 0.7 | 0.1 | 2.6 |
+| Donyell Marshall | PF | 7 | 32.3 | 15.7 | 7.3 | 2.6 | 1.0 | 0.7 | 1.6 |
+| Lamond Murray | SF | 7 | 3.8 | 0.9 | 0.9 | 0.6 | 0.1 | 0.0 | 0.1 |
+| Raja Bell | SG | 6 | 7.9 | 4.5 | 1.3 | 0.3 | 0.3 | 0.2 | 0.5 |
+| Matt Harpring | SF | 6 | 34.0 | 12.5 | 9.3 | 2.3 | 0.8 | 0.2 | 2.2 |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -43,23 +43,23 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Brian Grant | 4 | 15/32 | .469 | 0/3 | .000 | 3/8 | .375 | 9 | 12 |
-| Mike James | 1 | 11/29 | .379 | 5/14 | .357 | 4/5 | .800 | 2 | 9 |
-| Mehmet Okur | 1 | 9/23 | .391 | 1/2 | .500 | 14/16 | .875 | 6 | 19 |
-| Dwyane Wade | 4 | 36/61 | .590 | 8/14 | .571 | 36/39 | .923 | 5 | 12 |
-| Caron Butler | 1 | 6/18 | .333 | 0/2 | .000 | 3/4 | .750 | 2 | 5 |
-| Dorell Wright | 0 | 3/12 | .250 | 1/4 | .250 | 2/2 | 1.000 | 2 | 2 |
+| Brian Grant | 7 | 21/45 | .467 | 0/3 | .000 | 13/21 | .619 | 24 | 25 |
+| Mike James | 1 | 20/52 | .385 | 8/19 | .421 | 12/14 | .857 | 5 | 17 |
+| Mehmet Okur | 1 | 15/37 | .405 | 1/3 | .333 | 15/18 | .833 | 11 | 31 |
+| Dwyane Wade | 7 | 55/101 | .545 | 10/23 | .435 | 52/55 | .945 | 10 | 26 |
+| Caron Butler | 1 | 12/34 | .353 | 2/6 | .333 | 9/10 | .900 | 5 | 8 |
+| Dorell Wright | 0 | 12/25 | .480 | 2/5 | .400 | 4/4 | 1.000 | 4 | 5 |
 | John Thomas | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Maurice Evans | 0 | 1/2 | .500 | 0/0 | N/A | 0/0 | N/A | 1 | 1 |
-| Maurice Baker | 0 | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 1 |
+| Maurice Baker | 0 | 2/5 | .400 | 0/0 | N/A | 1/1 | 1.000 | 1 | 1 |
 | John Edwards | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Bernard Robinson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Christian Drejer | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Rafer Alston | 3 | 15/48 | .312 | 3/17 | .176 | 7/8 | .875 | 4 | 9 |
-| Donyell Marshall | 3 | 22/45 | .489 | 10/18 | .556 | 5/8 | .625 | 6 | 21 |
-| Lamond Murray | 0 | 3/7 | .429 | 0/0 | N/A | 0/0 | N/A | 0 | 1 |
-| Raja Bell | 0 | 6/9 | .667 | 0/0 | N/A | 2/2 | 1.000 | 0 | 2 |
-| Matt Harpring | 3 | 12/28 | .429 | 0/3 | .000 | 8/10 | .800 | 11 | 24 |
+| Rafer Alston | 6 | 29/84 | .345 | 9/33 | .273 | 15/18 | .833 | 6 | 14 |
+| Donyell Marshall | 6 | 41/92 | .446 | 17/40 | .425 | 11/14 | .786 | 10 | 41 |
+| Lamond Murray | 0 | 3/10 | .300 | 0/0 | N/A | 0/0 | N/A | 0 | 6 |
+| Raja Bell | 0 | 11/24 | .458 | 0/0 | N/A | 5/6 | .833 | 1 | 7 |
+| Matt Harpring | 6 | 28/56 | .500 | 0/4 | .000 | 19/23 | .826 | 20 | 36 |
 
 </details>
 
@@ -68,7 +68,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Period | Calendar dates | Closed games | Status |
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/Team_Stats.md) | February 1-7, 2005 | 4 | Complete |
-| [Week 2](Week_2/Team_Stats.md) | February 8-14, 2005 | 0 | Not started |
+| [Week 2](Week_2/Team_Stats.md) | February 8-14, 2005 | 3 | Through February 13, 2005 |
 | [Week 3](Week_3/Team_Stats.md) | February 15-21, 2005 | 0 | Not started |
 | [Week 4](Week_4/Team_Stats.md) | February 22-28, 2005 | 0 | Not started |
 
