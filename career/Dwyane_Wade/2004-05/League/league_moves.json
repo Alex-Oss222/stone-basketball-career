@@ -3434,6 +3434,46 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.26 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-02-26-expire-breweja01",
+   "date": "2005-02-26",
+   "kind": "expire",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": null,
+   "note": "10-day contract ended (6.0 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-02-26-ten_day-breweja01",
+   "date": "2005-02-26",
+   "kind": "ten_day",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": null,
+   "to": "Milwaukee Bucks",
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-08",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.6 x fit"
   }
  ],
  "market_days": [
@@ -3552,6 +3592,7 @@
   "2005-02-22",
   "2005-02-23",
   "2005-02-24",
-  "2005-02-25"
+  "2005-02-25",
+  "2005-02-26"
  ]
 }
