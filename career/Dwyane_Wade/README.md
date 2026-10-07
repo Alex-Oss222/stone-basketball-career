@@ -4,7 +4,7 @@
 
 ![Player career overview: professional identity, NBA regular-season statistics and playoff statistics](assets/career_overview.svg)
 
-![Earned professional awards through 2005-06-12](assets/stat_reports/awards_2005-06-12.svg)
+![Earned professional awards through 2005-06-16](assets/stat_reports/awards_2005-06-16.svg)
 
 [Professional identity](Professional_Identity.md) · [Career statistics](Stats_and_Awards/README.md) · [Earned awards](Awards.md) · [National team / FIBA](National_Team/README.md) · [Career milestones](Milestones/career_milestones.md) · [Season tracker](Milestones/calendar.md)
 
@@ -25,17 +25,17 @@
 
 NBA entry: 2003 draft, round 1, No. 5 overall, Miami Heat.
 
-Identity as of 2005-06-12; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-06-16; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 </details>
 
 ## Statistics
 
-Career cutoff: **2005-06-12**. Club competitions and national-team events have separate records.
+Career cutoff: **2005-06-16**. Club competitions and national-team events have separate records.
 
 ### NBA regular season
 
-[![Shooting](Stats_and_Awards/assets/shooting_link.svg)](Stats_and_Awards/player_cards.html?period=regular-2004-05-season#shooting) [![Contract](Stats_and_Awards/assets/contract_link.svg)](Stats_and_Awards/player_cards.html#contract) [![Awards](Stats_and_Awards/assets/awards_link.svg)](Stats_and_Awards/player_cards.html#awards)
+[![Shooting](Stats_and_Awards/assets/shooting_link.svg)](Stats_and_Awards/player_cards.html?period=regular-2005-06-season#shooting) [![Contract](Stats_and_Awards/assets/contract_link.svg)](Stats_and_Awards/player_cards.html#contract) [![Awards](Stats_and_Awards/assets/awards_link.svg)](Stats_and_Awards/player_cards.html#awards)
 
 [Shooting detail](Stats_and_Awards/Shooting.md) · [Current contract](Stats_and_Awards/Contract.md#current-contract) · [Contract history](Stats_and_Awards/Contract.md#contract-history) · [Annual award record](Stats_and_Awards/Awards.md)
 
@@ -47,11 +47,11 @@ Career cutoff: **2005-06-12**. Club competitions and national-team events have s
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-06-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-06-16, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### NBA playoffs
 
-[![Shooting](Stats_and_Awards/assets/shooting_link.svg)](Stats_and_Awards/player_cards.html?period=regular-2004-05-season#shooting) [![Contract](Stats_and_Awards/assets/contract_link.svg)](Stats_and_Awards/player_cards.html#contract) [![Awards](Stats_and_Awards/assets/awards_link.svg)](Stats_and_Awards/player_cards.html#awards)
+[![Shooting](Stats_and_Awards/assets/shooting_link.svg)](Stats_and_Awards/player_cards.html?period=regular-2005-06-season#shooting) [![Contract](Stats_and_Awards/assets/contract_link.svg)](Stats_and_Awards/player_cards.html#contract) [![Awards](Stats_and_Awards/assets/awards_link.svg)](Stats_and_Awards/player_cards.html#awards)
 
 [Shooting detail](Stats_and_Awards/Shooting.md) · [Current contract](Stats_and_Awards/Contract.md#current-contract) · [Contract history](Stats_and_Awards/Contract.md#contract-history) · [Annual award record](Stats_and_Awards/Awards.md)
 
@@ -63,7 +63,7 @@ Awards are confirmed through 2005-06-12, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-06-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-06-16, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Browse
 

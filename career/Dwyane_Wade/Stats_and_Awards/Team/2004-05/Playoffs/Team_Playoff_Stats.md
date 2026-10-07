@@ -1,6 +1,6 @@
 # Miami Heat 2004-05 playoff statistics
 
-Through 2005-06-12: 12 closed Miami playoff game(s). Playoff games only (`runtime/playoff_stats.py`). [League playoff statistics](../../../League/2004-05/Playoffs/Playoff_Stats.md) · [bracket](../../../League/2004-05/Playoffs.md).
+Through 2005-06-16: 12 closed Miami playoff game(s). Playoff games only (`runtime/playoff_stats.py`). [League playoff statistics](../../../League/2004-05/Playoffs/Playoff_Stats.md) · [bracket](../../../League/2004-05/Playoffs.md).
 
 ## Series
 

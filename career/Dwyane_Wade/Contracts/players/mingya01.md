@@ -2,9 +2,9 @@
 
 # Contract | Yao Ming
 
-Known through: 2005-06-12. [Open interactive contract](mingya01.html#contract) · [Contract history](mingya01.html#contract-history)
+Known through: 2005-06-16. [Open interactive contract](mingya01.html#contract) · [Contract history](mingya01.html#contract-history)
 
-Yao Ming: under rookie contract. Evidence cutoff: 2005-06-12.
+Yao Ming: under rookie contract. Evidence cutoff: 2005-06-16.
 
 ## Current contract
 

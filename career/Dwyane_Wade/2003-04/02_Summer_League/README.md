@@ -64,7 +64,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 ### Per game
 
-[![Shooting](../../Stats_and_Awards/assets/shooting_link.svg)](../../Stats_and_Awards/player_cards.html?period=regular-2004-05-season#shooting) [![Contract](../../Stats_and_Awards/assets/contract_link.svg)](../../Stats_and_Awards/player_cards.html#contract) [![Awards](../../Stats_and_Awards/assets/awards_link.svg)](../../Stats_and_Awards/player_cards.html#awards)
+[![Shooting](../../Stats_and_Awards/assets/shooting_link.svg)](../../Stats_and_Awards/player_cards.html?period=regular-2005-06-season#shooting) [![Contract](../../Stats_and_Awards/assets/contract_link.svg)](../../Stats_and_Awards/player_cards.html#contract) [![Awards](../../Stats_and_Awards/assets/awards_link.svg)](../../Stats_and_Awards/player_cards.html#awards)
 
 [Shooting detail](../../Stats_and_Awards/Shooting.md) · [Current contract](../../Stats_and_Awards/Contract.md#current-contract) · [Contract history](../../Stats_and_Awards/Contract.md#contract-history) · [Annual award record](../../Stats_and_Awards/Awards.md)
 
@@ -74,7 +74,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-06-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-06-16, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](Stat_Detail.md)
 

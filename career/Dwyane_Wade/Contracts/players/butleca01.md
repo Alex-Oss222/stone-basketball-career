@@ -2,9 +2,9 @@
 
 # Contract | Caron Butler
 
-Known through: 2005-06-12. [Open interactive contract](butleca01.html#contract) · [Contract history](butleca01.html#contract-history)
+Known through: 2005-06-16. [Open interactive contract](butleca01.html#contract) · [Contract history](butleca01.html#contract-history)
 
-Caron Butler: under rookie contract. Evidence cutoff: 2005-06-12.
+Caron Butler: under rookie contract. Evidence cutoff: 2005-06-16.
 
 ## Current contract
 
