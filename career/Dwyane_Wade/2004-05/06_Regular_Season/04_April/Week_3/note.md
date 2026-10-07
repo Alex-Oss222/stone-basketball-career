@@ -17,5 +17,6 @@ days: 15-21
 - 2005-04-15: Miami Heat 112 at Boston Celtics 98 — Miami Heat W 112-98 ([Game 1](Game_1.md), event `2005-04-15-miami-heat-at-boston-celtics`)
 - 2005-04-17: Indiana Pacers 102 at Miami Heat 95 — Miami Heat L 95-102 ([Game 2](Game_2.md), event `2005-04-17-indiana-pacers-at-miami-heat`)
 - 2005-04-19: Charlotte Bobcats 95 at Miami Heat 103 — Miami Heat W 103-95 ([Game 3](Game_3.md), event `2005-04-19-charlotte-bobcats-at-miami-heat`)
+- 2005-04-20: Miami Heat 104 at Orlando Magic 92 — Miami Heat W 104-92 ([Game 4](Game_4.md), event `2005-04-20-miami-heat-at-orlando-magic`)
 
 ## Consequences
