@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-02-27",
+  "as_of": "2005-02-28",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -3002,7 +3002,7 @@
     {
       "player_id": "woodslo01",
       "name": "Loren Woods",
-      "team": "Free agent",
+      "team": "Atlanta Hawks",
       "status": "on the 2003-04 roster; contract terms not in the dated records",
       "current_contract_id": null,
       "recorded_agreements": 1,

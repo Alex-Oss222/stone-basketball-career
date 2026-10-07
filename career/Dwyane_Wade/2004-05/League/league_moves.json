@@ -3474,6 +3474,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.6 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-02-28-ten_day-woodslo01",
+   "date": "2005-02-28",
+   "kind": "ten_day",
+   "player": "Loren Woods",
+   "bbr_id": "woodslo01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Loren Woods",
+    "bbr_id": "woodslo01",
+    "position": "C",
+    "games": 45,
+    "minutes": 712
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-10",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.18 x fit"
   }
  ],
  "market_days": [
@@ -3594,6 +3616,7 @@
   "2005-02-24",
   "2005-02-25",
   "2005-02-26",
-  "2005-02-27"
+  "2005-02-27",
+  "2005-02-28"
  ]
 }

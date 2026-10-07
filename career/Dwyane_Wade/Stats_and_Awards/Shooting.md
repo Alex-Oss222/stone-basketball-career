@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2005-02-27**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2005-02-28**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -3196,7 +3196,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
 
-## 2004-05 · NBA regular season · through 2005-02-27
+## 2004-05 · NBA regular season · through 2005-02-28
 
 [Open this period](player_cards.html?period=regular-2004-05-season#shooting)
 
@@ -3786,7 +3786,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-02-16 | Los Angeles Clippers | Played | [Game](../2004-05/06_Regular_Season/02_February/Week_3/Game_1.md) | [Result](../2004-05/06_Regular_Season/02_February/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/02_February/Week_3/Game_1.result.json) |
 
-## 2005-02-22 to 2005-02-27 · NBA regular season
+## 2005-02-22 to 2005-02-28 · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2004-05-week-2005-02-22#shooting)
 
@@ -5087,7 +5087,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-02-27 | Orlando Magic | Played | [Game](../2004-05/06_Regular_Season/02_February/Week_4/Game_4.md) | [Result](../2004-05/06_Regular_Season/02_February/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/02_February/Week_4/Game_4.result.json) |
 
-## 2004-05 · NBA preseason · through 2005-02-27
+## 2004-05 · NBA preseason · through 2005-02-28
 
 [Open this period](player_cards.html?period=preseason-2004-05-season#shooting)
 

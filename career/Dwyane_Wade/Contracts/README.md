@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-02-27. [Search the contract directory](index.html)
+Known through 2005-02-28. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -341,7 +341,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Linton Johnson](players/johnsli01.md) | Houston Rockets | No verified contract record | No verified current agreement | 0 |
 | [Lionel Chalmers](players/lionelchalmers.md) | Golden State Warriors | under contract | Lionel Chalmers · 2004-07-29 | 1 |
 | [Lonny Baxter](players/baxtelo01.md) | Toronto Raptors | under contract | Lonny Baxter · 2004-09-09 | 1 |
-| [Loren Woods](players/woodslo01.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
+| [Loren Woods](players/woodslo01.md) | Atlanta Hawks | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
 | [Lorenzen Wright](players/wrighlo02.md) | Boston Celtics | under contract | Lorenzen Wright · existing contract; signing date not recorded | 1 |
 | [Lucious Harris](players/harrilu01.md) | New Jersey Nets | under contract | Lucious Harris · 2003-07-16 | 2 |
 | [Luis Flores](players/luisflores.md) | Atlanta Hawks | under contract | Luis Flores · 2004-08-26 | 1 |
