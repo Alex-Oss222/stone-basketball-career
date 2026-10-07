@@ -2,9 +2,9 @@
 
 # Contract | Tamar Slay
 
-Known through: 2005-02-18. [Open interactive contract](slayta01.html#contract) · [Contract history](slayta01.html#contract-history)
+Known through: 2005-02-20. [Open interactive contract](slayta01.html#contract) · [Contract history](slayta01.html#contract-history)
 
-Tamar Slay: minimum contract unverified. Evidence cutoff: 2005-02-18.
+Tamar Slay: minimum contract unverified. Evidence cutoff: 2005-02-20.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Tamar Slay |
-| Club / rights baseline | Memphis Grizzlies |
+| Club / rights baseline | Free agent |
 | Control status | minimum_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

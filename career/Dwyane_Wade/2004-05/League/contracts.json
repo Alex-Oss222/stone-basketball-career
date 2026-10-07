@@ -1170,13 +1170,14 @@
   {
    "player": "Dale Davis",
    "bbr_id": "davisda01",
-   "club": "Portland Trail Blazers",
+   "club": "New York Knicks",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 10068750
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "Portland Trail Blazers"
   },
   {
    "player": "Josh Davis",
@@ -1472,13 +1473,14 @@
   {
    "player": "Howard Eisley",
    "bbr_id": "eisleho01",
-   "club": "New York Knicks",
+   "club": "Portland Trail Blazers",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 6375000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "New York Knicks"
   },
   {
    "player": "Obinna Ekezie",
@@ -4258,7 +4260,7 @@
   {
    "player": "Malik Rose",
    "bbr_id": "rosema01",
-   "club": "New York Knicks",
+   "club": "Portland Trail Blazers",
    "route": "existing",
    "kind": "existing",
    "schedule": {

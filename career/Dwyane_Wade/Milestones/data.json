@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-02-18",
+  "as_of": "2005-02-20",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-02-18"
+              "2005-02-20"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2005-02-18",
+              "2005-02-20",
               "Current checkpoint",
               "2005-02-16-los-angeles-clippers-at-miami-heat",
               "Recorded",
@@ -229,7 +229,7 @@
               "2005-02-18",
               "All-Star Weekend",
               "League calendar",
-              "today",
+              "done",
               {
                 "label": "Season",
                 "href": "#calendar"
@@ -666,7 +666,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-18"
+          "value": "2005-02-20"
         },
         {
           "label": "Team",
@@ -1148,7 +1148,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-18"
+          "value": "2005-02-20"
         },
         {
           "label": "Team",
@@ -1603,7 +1603,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-18"
+          "value": "2005-02-20"
         },
         {
           "label": "Team",
@@ -2097,7 +2097,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-18"
+          "value": "2005-02-20"
         },
         {
           "label": "Team",
@@ -2554,7 +2554,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-18"
+          "value": "2005-02-20"
         },
         {
           "label": "Team",
@@ -3055,7 +3055,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-18"
+          "value": "2005-02-20"
         },
         {
           "label": "Team",
@@ -3512,7 +3512,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-18"
+          "value": "2005-02-20"
         },
         {
           "label": "Team",
@@ -4109,7 +4109,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-18"
+          "value": "2005-02-20"
         },
         {
           "label": "Team",
@@ -4126,7 +4126,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "61 closed game records in 2004-05 through 2005-02-18. Competitions remain separate.",
+      "summary": "61 closed game records in 2004-05 through 2005-02-20. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -5192,7 +5192,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-02-18"
+          "value": "2005-02-20"
         },
         {
           "label": "Team",

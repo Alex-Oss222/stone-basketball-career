@@ -2,9 +2,9 @@
 
 # Contract | Lindsey Hunter
 
-Known through: 2005-02-18. [Open interactive contract](hunteli01.html#contract) · [Contract history](hunteli01.html#contract-history)
+Known through: 2005-02-20. [Open interactive contract](hunteli01.html#contract) · [Contract history](hunteli01.html#contract-history)
 
-Lindsey Hunter: under contract unverified. Evidence cutoff: 2005-02-18.
+Lindsey Hunter: under contract unverified. Evidence cutoff: 2005-02-20.
 
 ## Current contract
 

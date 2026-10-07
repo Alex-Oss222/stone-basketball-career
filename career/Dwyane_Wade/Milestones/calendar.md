@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2005-02-18 · Miami Heat · active
+Career date: 2005-02-20 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,7 +14,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2005-02-18 |
+| Career date | 2005-02-20 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
@@ -25,7 +25,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-02-18 | Current checkpoint | 2005-02-16-los-angeles-clippers-at-miami-heat | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
+| 2005-02-20 | Current checkpoint | 2005-02-16-los-angeles-clippers-at-miami-heat | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2004-10-05 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
 | 2005-02-21 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
@@ -45,7 +45,7 @@ Activation: The authoritative current date and recorded event determine what is 
 | 2004-11-02 | Opening night | League calendar | done | [Season](index.html#calendar) |
 | 2005-01-07 | Last day to waive before guarantees | League calendar | done | [Season](index.html#calendar) |
 | 2005-01-10 | Contracts guaranteed | League calendar | done | [Season](index.html#calendar) |
-| 2005-02-18 | All-Star Weekend | League calendar | today | [Season](index.html#calendar) |
+| 2005-02-18 | All-Star Weekend | League calendar | done | [Season](index.html#calendar) |
 | 2005-02-24 | Trade deadline | League calendar | upcoming | [Season](index.html#calendar) |
 | 2005-04-20 | Regular season ends | League calendar | upcoming | [Season](index.html#calendar) |
 | 2005-04-23 | Playoffs begin | League calendar | upcoming | [Season](index.html#calendar) |

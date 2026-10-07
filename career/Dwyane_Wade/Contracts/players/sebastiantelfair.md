@@ -2,9 +2,9 @@
 
 # Contract | Sebastian Telfair
 
-Known through: 2005-02-18. [Open interactive contract](sebastiantelfair.html#contract) · [Contract history](sebastiantelfair.html#contract-history)
+Known through: 2005-02-20. [Open interactive contract](sebastiantelfair.html#contract) · [Contract history](sebastiantelfair.html#contract-history)
 
-Sebastian Telfair: under contract. Evidence cutoff: 2005-02-18.
+Sebastian Telfair: under contract. Evidence cutoff: 2005-02-20.
 
 ## Current contract
 
