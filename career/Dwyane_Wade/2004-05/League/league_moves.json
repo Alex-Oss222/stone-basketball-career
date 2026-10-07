@@ -4060,6 +4060,42 @@
    },
    "contract": null,
    "note": "10-day contract ended (0.4 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-29-expire-breweja01",
+   "date": "2005-03-29",
+   "kind": "expire",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": "Memphis Grizzlies",
+   "to": null,
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.7 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-29-expire-carroma01",
+   "date": "2005-03-29",
+   "kind": "expire",
+   "player": "Matt Carroll",
+   "bbr_id": "carroma01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Matt Carroll",
+    "bbr_id": "carroma01",
+    "position": "SG",
+    "games": 25,
+    "minutes": 430
+   },
+   "contract": null,
+   "note": "10-day contract ended (3.4 minutes a game)"
   }
  ],
  "market_days": [
@@ -4209,6 +4245,7 @@
   "2005-03-25",
   "2005-03-26",
   "2005-03-27",
-  "2005-03-28"
+  "2005-03-28",
+  "2005-03-29"
  ]
 }
