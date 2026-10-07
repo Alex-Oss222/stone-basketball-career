@@ -2,9 +2,9 @@
 
 # Contract | Peter John Ramos
 
-Known through: 2005-04-22. [Open interactive contract](peterjohnramos.html#contract) · [Contract history](peterjohnramos.html#contract-history)
+Known through: 2005-04-24. [Open interactive contract](peterjohnramos.html#contract) · [Contract history](peterjohnramos.html#contract-history)
 
-Peter John Ramos: under contract. Evidence cutoff: 2005-04-22.
+Peter John Ramos: under contract. Evidence cutoff: 2005-04-24.
 
 ## Current contract
 

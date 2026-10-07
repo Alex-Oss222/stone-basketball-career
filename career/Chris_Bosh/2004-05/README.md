@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2005-04-22** · Toronto Raptors · #4 · PF · age 21
+Career date: **2005-04-24** · Toronto Raptors · #4 · PF · age 21
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -35,7 +35,9 @@ Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profil
 
 ## Playoffs
 
-No playoff games closed.
+| Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2004-05 | 20 | Toronto Raptors | 1/1 | 37.0 | 22.0 | 12.0 | 1.0 | 2.0 | 1.0 | 71.4 | N/A | 50.0 | 69.8 | 59-23 |
 
 ## Season highs (regular season)
 
@@ -66,3 +68,4 @@ No playoff games closed.
 | 250 career assists | 2005-02-13 | 20 years, 326 days | Los Angeles Clippers |
 | 2,000 career points | 2005-02-22 | 20 years, 335 days | New Jersey Nets |
 | 500 career free throws made | 2005-04-11 | 21 years, 18 days | Indiana Pacers |
+| 10 career playoff games | 2005-04-24 | 21 years, 31 days | Philadelphia 76ers |

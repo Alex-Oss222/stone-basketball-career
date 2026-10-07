@@ -2,9 +2,9 @@
 
 # Contract | Popeye Jones
 
-Known through: 2005-04-22. [Open interactive contract](jonespo01.html#contract) · [Contract history](jonespo01.html#contract-history)
+Known through: 2005-04-24. [Open interactive contract](jonespo01.html#contract) · [Contract history](jonespo01.html#contract-history)
 
-Popeye Jones: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-04-22.
+Popeye Jones: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-04-24.
 
 ## Current contract
 

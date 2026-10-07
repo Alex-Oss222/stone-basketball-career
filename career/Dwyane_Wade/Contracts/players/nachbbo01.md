@@ -2,9 +2,9 @@
 
 # Contract | Bostjan Nachbar
 
-Known through: 2005-04-22. [Open interactive contract](nachbbo01.html#contract) · [Contract history](nachbbo01.html#contract-history)
+Known through: 2005-04-24. [Open interactive contract](nachbbo01.html#contract) · [Contract history](nachbbo01.html#contract-history)
 
-Bostjan Nachbar: under rookie contract. Evidence cutoff: 2005-04-22.
+Bostjan Nachbar: under rookie contract. Evidence cutoff: 2005-04-24.
 
 ## Current contract
 
