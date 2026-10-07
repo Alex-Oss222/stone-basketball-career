@@ -137,7 +137,7 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 1,
+    "Toronto Raptors": 2,
     "Philadelphia 76ers": 0
    },
    "winner": null,
@@ -158,7 +158,9 @@
      "home": "Toronto Raptors",
      "away": "Philadelphia 76ers",
      "conditional": false,
-     "event_id": "2005-04-27-philadelphia-76ers-at-toronto-raptors"
+     "event_id": "2005-04-27-philadelphia-76ers-at-toronto-raptors",
+     "result": "Philadelphia 76ers 102, Toronto Raptors 107 (1OT)",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 3,
@@ -216,7 +218,7 @@
    ],
    "home_court": "Boston Celtics",
    "wins": {
-    "Boston Celtics": 0,
+    "Boston Celtics": 1,
     "Chicago Bulls": 1
    },
    "winner": null,
@@ -237,7 +239,9 @@
      "home": "Boston Celtics",
      "away": "Chicago Bulls",
      "conditional": false,
-     "event_id": "2005-04-27-chicago-bulls-at-boston-celtics"
+     "event_id": "2005-04-27-chicago-bulls-at-boston-celtics",
+     "result": "Chicago Bulls 79, Boston Celtics 96",
+     "winner": "Boston Celtics"
     },
     {
      "game": 3,
@@ -457,7 +461,7 @@
    ],
    "home_court": "Phoenix Suns",
    "wins": {
-    "Phoenix Suns": 1,
+    "Phoenix Suns": 2,
     "Portland Trail Blazers": 0
    },
    "winner": null,
@@ -478,7 +482,9 @@
      "home": "Phoenix Suns",
      "away": "Portland Trail Blazers",
      "conditional": false,
-     "event_id": "2005-04-27-portland-trail-blazers-at-phoenix-suns"
+     "event_id": "2005-04-27-portland-trail-blazers-at-phoenix-suns",
+     "result": "Portland Trail Blazers 104, Phoenix Suns 113",
+     "winner": "Phoenix Suns"
     },
     {
      "game": 3,
@@ -699,7 +705,7 @@
    "home_court": "San Antonio Spurs",
    "wins": {
     "San Antonio Spurs": 1,
-    "Los Angeles Lakers": 0
+    "Los Angeles Lakers": 1
    },
    "winner": null,
    "games": [
@@ -719,7 +725,9 @@
      "home": "San Antonio Spurs",
      "away": "Los Angeles Lakers",
      "conditional": false,
-     "event_id": "2005-04-27-los-angeles-lakers-at-san-antonio-spurs"
+     "event_id": "2005-04-27-los-angeles-lakers-at-san-antonio-spurs",
+     "result": "Los Angeles Lakers 107, San Antonio Spurs 104 (1OT)",
+     "winner": "Los Angeles Lakers"
     },
     {
      "game": 3,
