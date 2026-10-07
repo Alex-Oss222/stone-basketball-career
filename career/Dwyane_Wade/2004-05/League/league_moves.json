@@ -4002,6 +4002,46 @@
    },
    "contract": null,
    "note": "10-day contract ended (2.6 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-26-expire-bowenry01",
+   "date": "2005-03-26",
+   "kind": "expire",
+   "player": "Ryan Bowen",
+   "bbr_id": "bowenry01",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Ryan Bowen",
+    "bbr_id": "bowenry01",
+    "position": "SF",
+    "games": 66,
+    "minutes": 604
+   },
+   "contract": null,
+   "note": "10-day contract ended (3.6 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-26-ten_day-slayta01",
+   "date": "2005-03-26",
+   "kind": "ten_day",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": null,
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-05",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.53 x fit"
   }
  ],
  "market_days": [
@@ -4148,6 +4188,7 @@
   "2005-03-22",
   "2005-03-23",
   "2005-03-24",
-  "2005-03-25"
+  "2005-03-25",
+  "2005-03-26"
  ]
 }
