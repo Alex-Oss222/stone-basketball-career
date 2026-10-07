@@ -4042,6 +4042,24 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.53 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-03-27-expire-johnsli01",
+   "date": "2005-03-27",
+   "kind": "expire",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": "San Antonio Spurs",
+   "to": null,
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 15
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.4 minutes a game)"
   }
  ],
  "market_days": [
@@ -4189,6 +4207,7 @@
   "2005-03-23",
   "2005-03-24",
   "2005-03-25",
-  "2005-03-26"
+  "2005-03-26",
+  "2005-03-27"
  ]
 }
