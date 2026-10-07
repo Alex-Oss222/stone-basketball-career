@@ -3314,6 +3314,24 @@
     "salary": "pro-rated minimum"
    },
    "note": "kept: 15.6 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2004-05-market-2005-02-17-expire-bradlmi01",
+   "date": "2005-02-17",
+   "kind": "expire",
+   "player": "Michael Bradley",
+   "bbr_id": "bradlmi01",
+   "from": "Houston Rockets",
+   "to": null,
+   "role": {
+    "player_id": "Michael Bradley",
+    "bbr_id": "bradlmi01",
+    "position": "PF",
+    "games": 18,
+    "minutes": 119
+   },
+   "contract": null,
+   "note": "10-day contract ended (4.8 minutes a game)"
   }
  ],
  "market_days": [
@@ -3423,6 +3441,7 @@
   "2005-02-13",
   "2005-02-14",
   "2005-02-15",
-  "2005-02-16"
+  "2005-02-16",
+  "2005-02-17"
  ]
 }

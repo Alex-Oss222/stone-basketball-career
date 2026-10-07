@@ -1,0 +1,12 @@
+{
+ "date": "2005-02-17",
+ "decider": "Miami coaching staff (engine evaluation draw)",
+ "event_id": "2004-05-rotation-2005-02-17-pf-starter",
+ "kind": "decision",
+ "options": {
+  "Donyell Marshall": 0.478211,
+  "Mehmet Okur": 0.521789
+ },
+ "outcome": "Mehmet Okur",
+ "question": "Who starts at PF: Mehmet Okur or Donyell Marshall?"
+}

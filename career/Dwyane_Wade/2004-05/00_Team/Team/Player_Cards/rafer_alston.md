@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 28 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 5, 2004 · **Statistics through:** 2005-02-16 
+**Opening assessment:** October 5, 2004 · **Statistics through:** 2005-02-17 
 
 **Contract/control:** Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10; guaranteed 2005-01-10 (guarantee_review.json). (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at PG, staff plan 34 minutes (staff rotation dated 2005-02-03, [record](../Depth_Chart/Reviews/2005-02-03/rotation.json)).
+**Role:** Rotation at PG, staff plan 11 minutes (staff rotation dated 2005-02-17, [record](../Depth_Chart/Reviews/2005-02-17/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -37,11 +37,12 @@ Unassessed.
 | 2005-01-06 | Staff rotation of 2005-01-06: rotation at PG, staff plan 15 minutes. | [Rotation](../Depth_Chart/Reviews/2005-01-06/rotation.json) |
 | 2005-01-20 | Staff rotation of 2005-01-20: rotation at PG, staff plan 15 minutes. | [Rotation](../Depth_Chart/Reviews/2005-01-20/rotation.json) |
 | 2005-02-03 | Staff rotation of 2005-02-03: starter at PG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2005-02-03/rotation.json) |
+| 2005-02-17 | Staff rotation of 2005-02-17: rotation at PG, staff plan 11 minutes. | [Rotation](../Depth_Chart/Reviews/2005-02-17/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../04_Training_Camp/camp_roster.json), 2003-04 simulated season totals.
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-02-03.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-02-17.
 
 <!-- yearly-statistics:start -->
 
