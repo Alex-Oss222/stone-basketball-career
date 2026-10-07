@@ -63,6 +63,8 @@ WEST
 
 ```
 
+**2005 NBA champion: Sacramento Kings**
+
 ## First round
 
 ### East: (1) Toronto Raptors vs (8) Philadelphia 76ers
@@ -269,14 +271,14 @@ Home court: Sacramento Kings. Sacramento Kings wins 4-1.
 
 ### Finals: (1) Toronto Raptors vs (5) Sacramento Kings
 
-Home court: Toronto Raptors. Series Toronto Raptors 0, Sacramento Kings 3.
+Home court: Toronto Raptors. Sacramento Kings wins 4-0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Thu Jun 9 | Toronto Raptors | Sacramento Kings | Sacramento Kings 103, Toronto Raptors 96 |
 | 2 | Sun Jun 12 | Toronto Raptors | Sacramento Kings | Sacramento Kings 103, Toronto Raptors 100 |
 | 3 | Tue Jun 14 | Sacramento Kings | Toronto Raptors | Toronto Raptors 86, Sacramento Kings 97 |
-| 4 | Thu Jun 16 | Sacramento Kings | Toronto Raptors |  |
-| 5 | Sun Jun 19 | Sacramento Kings | Toronto Raptors | if needed |
-| 6 | Tue Jun 21 | Toronto Raptors | Sacramento Kings | if needed |
-| 7 | Thu Jun 23 | Toronto Raptors | Sacramento Kings | if needed |
+| 4 | Thu Jun 16 | Sacramento Kings | Toronto Raptors | Toronto Raptors 94, Sacramento Kings 106 |
+| 5 | Sun Jun 19 | Sacramento Kings | Toronto Raptors | not needed |
+| 6 | Tue Jun 21 | Toronto Raptors | Sacramento Kings | not needed |
+| 7 | Thu Jun 23 | Toronto Raptors | Sacramento Kings | not needed |

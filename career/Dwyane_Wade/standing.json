@@ -308,6 +308,90 @@
     }
    },
    "source": "Stats_and_Awards/League/2004-05/Season_Awards.md"
+  },
+  {
+   "as_of": "2005-06-16",
+   "standing": "franchise",
+   "trigger": "season_close",
+   "basis": {
+    "closed_seasons": [
+     "2004-05",
+     "2003-04"
+    ],
+    "window": [
+     "2004-05",
+     "2003-04"
+    ],
+    "starter_lines": {
+     "2004-05": {
+      "season": "2004-05",
+      "gp": 76,
+      "gs": 76,
+      "scheduled": 82,
+      "minutes_per_game": 36.22,
+      "complete": true,
+      "met": true
+     },
+     "2003-04": {
+      "season": "2003-04",
+      "gp": 75,
+      "gs": 70,
+      "scheduled": 82,
+      "minutes_per_game": 35.0,
+      "complete": true,
+      "met": true
+     }
+    },
+    "honors": [
+     "2003-04-all-star",
+     "2003-04-all_nba-first",
+     "2004-05-all-star",
+     "2004-05-all_nba-first"
+    ],
+    "conflicts": [],
+    "ignored_honors": [
+     "2003-04-rookie_of_month-2003-10-28-east",
+     "2003-04-player_of_week-2003-12-15-east",
+     "2003-04-player_of_month-2003-12-01-east",
+     "2003-04-rookie_of_month-2003-12-01-east",
+     "2003-04-player_of_week-2003-12-29-east",
+     "2003-04-player_of_month-2004-01-01-east",
+     "2003-04-rookie_of_month-2004-01-01-east",
+     "2003-04-rookie_of_month-2004-02-01-east",
+     "2003-04-player_of_week-2004-03-08-east",
+     "2003-04-player_of_month-2004-03-01-east",
+     "2003-04-rookie_of_month-2004-03-01-east",
+     "2003-04-rookie_of_month-2004-04-01-east",
+     "2003-04-roy",
+     "2003-04-all_rookie-first",
+     "2004-05-player_of_month-2004-12-01-east",
+     "2004-05-player_of_week-2005-01-24-east",
+     "2004-05-player_of_month-2005-03-01-east",
+     "2004-05-player_of_month-2005-04-01-east"
+    ],
+    "rule": "All-NBA First or Second Team in the most recent closed season",
+    "signed_date": "2003-07-21",
+    "season_folder": "2004-05",
+    "statistics": {
+     "2004-05": {
+      "season": "2004-05",
+      "gp": 76,
+      "gs": 76,
+      "scheduled": 82,
+      "minutes_per_game": 36.22,
+      "complete": true
+     },
+     "2003-04": {
+      "season": "2003-04",
+      "gp": 75,
+      "gs": 70,
+      "scheduled": 82,
+      "minutes_per_game": 35.0,
+      "complete": true
+     }
+    }
+   },
+   "source": "2004-05/season_close.json"
   }
  ]
 }

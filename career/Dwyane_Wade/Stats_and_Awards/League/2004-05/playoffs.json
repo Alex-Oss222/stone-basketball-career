@@ -1409,9 +1409,9 @@
    "home_court": "Toronto Raptors",
    "wins": {
     "Toronto Raptors": 0,
-    "Sacramento Kings": 3
+    "Sacramento Kings": 4
    },
-   "winner": null,
+   "winner": "Sacramento Kings",
    "games": [
     {
      "game": 1,
@@ -1449,7 +1449,9 @@
      "home": "Sacramento Kings",
      "away": "Toronto Raptors",
      "conditional": false,
-     "event_id": "2005-06-16-toronto-raptors-at-sacramento-kings"
+     "event_id": "2005-06-16-toronto-raptors-at-sacramento-kings",
+     "result": "Toronto Raptors 94, Sacramento Kings 106",
+     "winner": "Sacramento Kings"
     },
     {
      "game": 5,
@@ -1457,7 +1459,8 @@
      "home": "Sacramento Kings",
      "away": "Toronto Raptors",
      "conditional": true,
-     "event_id": "2005-06-19-toronto-raptors-at-sacramento-kings"
+     "event_id": "2005-06-19-toronto-raptors-at-sacramento-kings",
+     "not_needed": true
     },
     {
      "game": 6,
@@ -1465,7 +1468,8 @@
      "home": "Toronto Raptors",
      "away": "Sacramento Kings",
      "conditional": true,
-     "event_id": "2005-06-21-sacramento-kings-at-toronto-raptors"
+     "event_id": "2005-06-21-sacramento-kings-at-toronto-raptors",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -1473,10 +1477,12 @@
      "home": "Toronto Raptors",
      "away": "Sacramento Kings",
      "conditional": true,
-     "event_id": "2005-06-23-sacramento-kings-at-toronto-raptors"
+     "event_id": "2005-06-23-sacramento-kings-at-toronto-raptors",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2005-06-16"
   }
  ],
- "champion": null
+ "champion": "Sacramento Kings"
 }

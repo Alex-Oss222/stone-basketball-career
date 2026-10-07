@@ -1363,6 +1363,48 @@
      "points": 11
     }
    ]
+  },
+  {
+   "id": "2004-05-finals_mvp",
+   "award": "finals_mvp",
+   "name": "Finals MVP",
+   "announced_on": "2005-06-16",
+   "electorate": 10,
+   "voters": "media panel",
+   "ballot": [
+    1
+   ],
+   "lens": [
+    0.3,
+    0.6
+   ],
+   "evidence_through": "2005-06-16",
+   "competition": "playoff",
+   "finals_games": 4,
+   "period_start": "2005-06-09",
+   "winners": [
+    "Mike Bibby"
+   ],
+   "tally": [
+    {
+     "player": "Mike Bibby",
+     "team": "Sacramento Kings",
+     "games": 4,
+     "mpg": 40.4,
+     "pts": 21.8,
+     "reb": 3.5,
+     "ast": 7.2,
+     "stl": 1.5,
+     "blk": 0.2,
+     "game_score": 19.8,
+     "champion": true,
+     "points": 10,
+     "first_place": 10,
+     "votes_by_place": [
+      10
+     ]
+    }
+   ]
   }
  ]
 }

@@ -1,6 +1,6 @@
 # 2004-05 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-05-18.
+Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-06-16.
 
 ## Calendar
 
@@ -15,7 +15,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2005-05-10 | Coach of the Year | 126 media | 5-3-1 | decided |
 | 2005-05-12 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | decided |
 | 2005-05-18 | All-NBA Teams | 124 media | 5-3-1 | decided |
-| the night the Finals are clinched | Finals MVP | 10 media panel | 1 | pending |
+| the night the Finals are clinched | Finals MVP | 10 media panel | 1 | decided |
 
 ## Most Improved Player
 
@@ -176,3 +176,13 @@ Announced 2005-05-18; 124 media, ballot 5-3-1.
 | Kobe Bryant | G | Los Angeles Lakers | 66 | 40.8 | 25.6 | 6.2 | 6.3 | 0.9 | 0.8 | 19.4 | 93 | 0 |
 
 Also receiving votes: Chris Bosh (Toronto Raptors) 127, Chris Mihm (Phoenix Suns) 57, Tracy McGrady (Orlando Magic) 53, Manu Ginobili (San Antonio Spurs) 47, Yao Ming (Houston Rockets) 24, Brad Miller (Sacramento Kings) 20, Joe Johnson (Phoenix Suns) 11.
+
+## Finals MVP
+
+Announced 2005-06-16; 10 media panel, ballot 1.
+
+| # | Player | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WINNER | Mike Bibby | Sacramento Kings | 4 | 40.4 | 21.8 | 3.5 | 7.2 | 1.5 | 0.2 | 19.8 | 10 | 10 |
+
+Complete tally: `season_awards.json` (1 receiving votes).

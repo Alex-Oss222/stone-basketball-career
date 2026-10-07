@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "season": "2004-05",
+ "close_date": "2005-06-16",
+ "competitions_closed": [
+  "regular",
+  "playoff"
+ ],
+ "regular_season_games_scheduled": 82,
+ "source": "08_Playoffs/README.md",
+ "rule": "Close a season the night its Finals end (roadmap 18): the season-close record, Wade's incentive evaluation and the `season_close` standing snapshot.",
+ "wade": {
+  "regular": {
+   "gp": 76,
+   "gs": 76,
+   "minutes_per_game": 36.22,
+   "points_per_game": 21.29,
+   "complete": true
+  },
+  "playoff": {
+   "gp": 12,
+   "gs": 12,
+   "minutes_per_game": 36.76,
+   "points_per_game": 20.5,
+   "complete": true
+  },
+  "honors": [
+   {
+    "name": "Eastern Conference Player of the Month",
+    "awarded_on": "2005-01-02",
+    "id": "2004-05-player_of_month-2004-12-01-east"
+   },
+   {
+    "name": "Eastern Conference Player of the Week",
+    "awarded_on": "2005-01-31",
+    "id": "2004-05-player_of_week-2005-01-24-east"
+   },
+   {
+    "name": "All-Star",
+    "awarded_on": "2005-02-08",
+    "id": "2004-05-all-star"
+   },
+   {
+    "name": "Eastern Conference Player of the Month",
+    "awarded_on": "2005-04-02",
+    "id": "2004-05-player_of_month-2005-03-01-east"
+   },
+   {
+    "name": "Eastern Conference Player of the Month",
+    "awarded_on": "2005-04-22",
+    "id": "2004-05-player_of_month-2005-04-01-east"
+   },
+   {
+    "name": "All-NBA First Team",
+    "awarded_on": "2005-05-18",
+    "id": "2004-05-all_nba-first"
+   }
+  ]
+ },
+ "incentive_evaluation": [
+  {
+   "id": "conditioning_program",
+   "kind": "conditioning_program",
+   "classification": "included",
+   "benchmark": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+   "amount": 236180,
+   "status": "unrecorded",
+   "evidence": "no recorded camp evaluation states this condition"
+  },
+  {
+   "id": "physical_condition",
+   "kind": "physical_condition",
+   "classification": "included",
+   "benchmark": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+   "amount": 236180,
+   "status": "met",
+   "evidence": "2004-05/04_Training_Camp/Wade_Camp_Review.md: | Conditioning / availability | cleared | camp injury draw: healthy | — |"
+  },
+  {
+   "id": "minutes",
+   "kind": "performance",
+   "classification": "unlikely",
+   "benchmark": "At least 1,200 regular-season minutes played.",
+   "amount": 236180,
+   "status": "met",
+   "evidence": "2,753 closed regular-season minutes in 76 games (career_stats, through 2005-06-16)"
+  },
+  {
+   "id": "achievement",
+   "kind": "performance",
+   "classification": "unlikely",
+   "benchmark": "At least 15.0 points per game while appearing in at least 60 games.",
+   "amount": 236180,
+   "status": "unrecorded",
+   "evidence": "benchmark not machine-readable; needs a recorded evaluation"
+  }
+ ]
+}
