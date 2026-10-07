@@ -42,9 +42,9 @@ EAST
   (5) Chicago Bulls            1
         conference semifinal: winners meet
   (3) Cleveland Cavaliers      1
-  (6) Atlanta Hawks            1
+  (6) Atlanta Hawks            2
   (2) Miami Heat               2
-  (7) Detroit Pistons          0
+  (7) Detroit Pistons          1
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
@@ -52,10 +52,10 @@ WEST
   (1) Phoenix Suns             2
   (8) Portland Trail Blazers   0
   (4) Dallas Mavericks         1
-  (5) Sacramento Kings         1
+  (5) Sacramento Kings         2
         conference semifinal: winners meet
   (3) Minnesota Timberwolves   2
-  (6) Golden State Warriors    0
+  (6) Golden State Warriors    1
   (2) San Antonio Spurs        1
   (7) Los Angeles Lakers       1
         conference semifinal: winners meet
@@ -95,13 +95,13 @@ Home court: Boston Celtics. Series Boston Celtics 1, Chicago Bulls 1.
 
 ### East: (3) Cleveland Cavaliers vs (6) Atlanta Hawks
 
-Home court: Cleveland Cavaliers. Series Cleveland Cavaliers 1, Atlanta Hawks 1.
+Home court: Cleveland Cavaliers. Series Cleveland Cavaliers 1, Atlanta Hawks 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 23 | Cleveland Cavaliers | Atlanta Hawks | Atlanta Hawks 99, Cleveland Cavaliers 88 |
 | 2 | Tue Apr 26 | Cleveland Cavaliers | Atlanta Hawks | Atlanta Hawks 81, Cleveland Cavaliers 96 |
-| 3 | Fri Apr 29 | Atlanta Hawks | Cleveland Cavaliers |  |
+| 3 | Fri Apr 29 | Atlanta Hawks | Cleveland Cavaliers | Cleveland Cavaliers 77, Atlanta Hawks 100 |
 | 4 | Sun May 1 | Atlanta Hawks | Cleveland Cavaliers |  |
 | 5 | Tue May 3 | Cleveland Cavaliers | Atlanta Hawks | if needed |
 | 6 | Thu May 5 | Atlanta Hawks | Cleveland Cavaliers | if needed |
@@ -109,13 +109,13 @@ Home court: Cleveland Cavaliers. Series Cleveland Cavaliers 1, Atlanta Hawks 1.
 
 ### East: (2) Miami Heat vs (7) Detroit Pistons
 
-Home court: Miami Heat. Series Miami Heat 2, Detroit Pistons 0.
+Home court: Miami Heat. Series Miami Heat 2, Detroit Pistons 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 23 | Miami Heat | Detroit Pistons | Detroit Pistons 85, Miami Heat 99 |
 | 2 | Tue Apr 26 | Miami Heat | Detroit Pistons | Detroit Pistons 111, Miami Heat 129 |
-| 3 | Fri Apr 29 | Detroit Pistons | Miami Heat |  |
+| 3 | Fri Apr 29 | Detroit Pistons | Miami Heat | Miami Heat 96, Detroit Pistons 98 |
 | 4 | Sun May 1 | Detroit Pistons | Miami Heat |  |
 | 5 | Tue May 3 | Miami Heat | Detroit Pistons | if needed |
 | 6 | Thu May 5 | Detroit Pistons | Miami Heat | if needed |
@@ -137,13 +137,13 @@ Home court: Phoenix Suns. Series Phoenix Suns 2, Portland Trail Blazers 0.
 
 ### West: (4) Dallas Mavericks vs (5) Sacramento Kings
 
-Home court: Dallas Mavericks. Series Dallas Mavericks 1, Sacramento Kings 1.
+Home court: Dallas Mavericks. Series Dallas Mavericks 1, Sacramento Kings 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 23 | Dallas Mavericks | Sacramento Kings | Sacramento Kings 103, Dallas Mavericks 116 |
 | 2 | Tue Apr 26 | Dallas Mavericks | Sacramento Kings | Sacramento Kings 116, Dallas Mavericks 105 |
-| 3 | Fri Apr 29 | Sacramento Kings | Dallas Mavericks |  |
+| 3 | Fri Apr 29 | Sacramento Kings | Dallas Mavericks | Dallas Mavericks 87, Sacramento Kings 108 |
 | 4 | Sun May 1 | Sacramento Kings | Dallas Mavericks |  |
 | 5 | Tue May 3 | Dallas Mavericks | Sacramento Kings | if needed |
 | 6 | Thu May 5 | Sacramento Kings | Dallas Mavericks | if needed |
@@ -151,13 +151,13 @@ Home court: Dallas Mavericks. Series Dallas Mavericks 1, Sacramento Kings 1.
 
 ### West: (3) Minnesota Timberwolves vs (6) Golden State Warriors
 
-Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 2, Golden State Warriors 0.
+Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 2, Golden State Warriors 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 23 | Minnesota Timberwolves | Golden State Warriors | Golden State Warriors 85, Minnesota Timberwolves 109 |
 | 2 | Tue Apr 26 | Minnesota Timberwolves | Golden State Warriors | Golden State Warriors 89, Minnesota Timberwolves 106 |
-| 3 | Fri Apr 29 | Golden State Warriors | Minnesota Timberwolves |  |
+| 3 | Fri Apr 29 | Golden State Warriors | Minnesota Timberwolves | Minnesota Timberwolves 87, Golden State Warriors 90 |
 | 4 | Sun May 1 | Golden State Warriors | Minnesota Timberwolves |  |
 | 5 | Tue May 3 | Minnesota Timberwolves | Golden State Warriors | if needed |
 | 6 | Thu May 5 | Golden State Warriors | Minnesota Timberwolves | if needed |
