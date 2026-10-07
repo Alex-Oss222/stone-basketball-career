@@ -1,6 +1,6 @@
 # 2004-05 standings
 
-Through 2005-02-11, from closed simulated results only (`runtime/standings.py`). Real 2004-05 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2005-02-12, from closed simulated results only (`runtime/standings.py`). Real 2004-05 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
@@ -11,14 +11,14 @@ Through 2005-02-11, from closed simulated results only (`runtime/standings.py`).
 | 3 | Boston Celtics | 33 | 18 | .647 | 4 |
 | 4 | Cleveland Cavaliers | 31 | 17 | .646 | 4.5 |
 | 5 | Chicago Bulls | 27 | 19 | .587 | 7.5 |
-| 6 | Indiana Pacers | 25 | 24 | .510 | 11 |
-| 7 | Philadelphia 76ers | 25 | 25 | .500 | 11.5 |
-| 8 | Atlanta Hawks | 24 | 24 | .500 | 11.5 |
-| 9 | Orlando Magic | 23 | 26 | .469 | 13 |
-| 10 | Washington Wizards | 23 | 26 | .469 | 13 |
-| 11 | Detroit Pistons | 21 | 27 | .438 | 14.5 |
-| 12 | Milwaukee Bucks | 18 | 29 | .383 | 17 |
-| 13 | New York Knicks | 19 | 31 | .380 | 17.5 |
+| 6 | Philadelphia 76ers | 26 | 25 | .510 | 11 |
+| 7 | Atlanta Hawks | 25 | 24 | .510 | 11 |
+| 8 | Indiana Pacers | 25 | 24 | .510 | 11 |
+| 9 | Orlando Magic | 23 | 27 | .460 | 13.5 |
+| 10 | Washington Wizards | 23 | 27 | .460 | 13.5 |
+| 11 | Detroit Pistons | 22 | 27 | .449 | 14 |
+| 12 | New York Knicks | 19 | 31 | .380 | 17.5 |
+| 13 | Milwaukee Bucks | 18 | 30 | .375 | 17.5 |
 | 14 | New Jersey Nets | 15 | 35 | .300 | 21.5 |
 | 15 | Charlotte Bobcats | 7 | 40 | .149 | 28 |
 
