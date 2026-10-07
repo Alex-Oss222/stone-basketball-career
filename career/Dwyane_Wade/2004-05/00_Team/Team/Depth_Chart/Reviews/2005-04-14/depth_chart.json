@@ -1,0 +1,44 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2005-04-14",
+ "team": "Miami Heat",
+ "status": "staff_review",
+ "game_ready": true,
+ "basis": "Fortnightly staff review 2005-04-14; fixed preseason estimate plus closed production per minute",
+ "positions": {
+  "PG": [
+   "Mike James",
+   "Rafer Alston",
+   "Maurice Baker"
+  ],
+  "SG": [
+   "Dwyane Wade",
+   "Raja Bell",
+   "Maurice Evans"
+  ],
+  "SF": [
+   "Matt Harpring",
+   "Caron Butler",
+   "Dorell Wright",
+   "Lamond Murray"
+  ],
+  "PF": [
+   "Donyell Marshall",
+   "Mehmet Okur"
+  ],
+  "C": [
+   "Brian Grant",
+   "John Thomas",
+   "John Edwards"
+  ]
+ },
+ "battles_drawn": {
+  "PG": "Mike James",
+  "PF": "Donyell Marshall"
+ },
+ "unassigned_draft_rights": [],
+ "unassigned_arrivals": [],
+ "unavailable": [],
+ "departed": []
+}

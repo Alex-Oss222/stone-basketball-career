@@ -1,0 +1,12 @@
+{
+ "date": "2005-04-14",
+ "decider": "Miami coaching staff (engine evaluation draw)",
+ "event_id": "2004-05-rotation-2005-04-14-pg-starter",
+ "kind": "decision",
+ "options": {
+  "Mike James": 0.683307,
+  "Rafer Alston": 0.316693
+ },
+ "outcome": "Mike James",
+ "question": "Who starts at PG: Mike James or Rafer Alston?"
+}

@@ -4552,6 +4552,65 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.15 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-04-14-clear-stricro02",
+   "date": "2005-04-14",
+   "kind": "clear",
+   "player": "Rod Strickland",
+   "bbr_id": "stricro02",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Rod Strickland",
+    "bbr_id": "stricro02",
+    "position": "PG",
+    "games": 16,
+    "minutes": 196
+   },
+   "contract": null,
+   "note": "cleared waivers from Chicago Bulls: a free agent",
+   "waiver": "2004-05-market-2005-04-12-waive-stricro02"
+  },
+  {
+   "id": "2004-05-market-2005-04-14-waive-popema01",
+   "date": "2005-04-14",
+   "kind": "waive",
+   "player": "Mark Pope",
+   "bbr_id": "popema01",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Mark Pope",
+    "bbr_id": "popema01",
+    "position": "PF",
+    "games": 9,
+    "minutes": 27
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-04-16"
+  },
+  {
+   "id": "2004-05-market-2005-04-14-ten_day-hamilze01",
+   "date": "2005-04-14",
+   "kind": "ten_day",
+   "player": "Zendon Hamilton",
+   "bbr_id": "hamilze01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Zendon Hamilton",
+    "bbr_id": "hamilze01",
+    "position": "C",
+    "games": 16,
+    "minutes": 159
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.02 x fit"
   }
  ],
  "market_days": [
@@ -4717,6 +4776,7 @@
   "2005-04-10",
   "2005-04-11",
   "2005-04-12",
-  "2005-04-13"
+  "2005-04-13",
+  "2005-04-14"
  ]
 }
