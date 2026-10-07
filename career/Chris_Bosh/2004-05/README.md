@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2005-04-11** · Toronto Raptors · #4 · PF · age 21
+Career date: **2005-04-17** · Toronto Raptors · #4 · PF · age 21
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,24 +14,24 @@ Career date: **2005-04-11** · Toronto Raptors · #4 · PF · age 21
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 75/75 | 39.4 | 18.0 | 9.3 | 2.8 | 1.1 | 1.5 | 50.7 | 42.3 | 82.0 | 57.3 | 54-22 |
+| 2004-05 | 20 | Toronto Raptors | 79/79 | 39.4 | 17.7 | 9.4 | 2.8 | 1.0 | 1.4 | 50.3 | 42.6 | 82.8 | 57.1 | 58-22 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 75 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 79 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
 | Minutes | 36.5 | 39.4 |
-| Points | 20.2 | 18.0 |
-| Rebounds | 11.1 | 9.3 |
+| Points | 20.2 | 17.7 |
+| Rebounds | 11.1 | 9.4 |
 | Assists | 3.5 | 2.8 |
-| Steals | 0.9 | 1.1 |
-| Blocks | 1.5 | 1.5 |
-| FG% | 51.4 | 50.7 |
-| 3P% | 41.2 | 42.3 |
-| FT% | 90.8 | 82.0 |
-| TS% (est.) | 64.0 | 57.3 |
+| Steals | 0.9 | 1.0 |
+| Blocks | 1.5 | 1.4 |
+| FG% | 51.4 | 50.3 |
+| 3P% | 41.2 | 42.6 |
+| FT% | 90.8 | 82.8 |
+| TS% (est.) | 64.0 | 57.1 |
 
 ## Playoffs
 
@@ -42,7 +42,7 @@ No playoff games closed.
 | Stat | High | Game |
 | --- | --- | --- |
 | Points | 34 | 2004-11-23 at Washington Wizards |
-| Rebounds | 16 | 2004-11-19 vs Seattle SuperSonics (+2) |
+| Rebounds | 18 | 2005-04-17 vs Boston Celtics |
 | Assists | 7 | 2005-01-28 at Charlotte Bobcats (+1) |
 | Steals | 4 | 2005-04-06 vs Memphis Grizzlies |
 | Blocks | 4 | 2005-02-09 vs Milwaukee Bucks (+3) |
@@ -65,3 +65,4 @@ No playoff games closed.
 | 1,000 career rebounds | 2005-02-02 | 20 years, 315 days | Indiana Pacers |
 | 250 career assists | 2005-02-13 | 20 years, 326 days | Los Angeles Clippers |
 | 2,000 career points | 2005-02-22 | 20 years, 335 days | New Jersey Nets |
+| 500 career free throws made | 2005-04-11 | 21 years, 18 days | Indiana Pacers |

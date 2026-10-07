@@ -2,9 +2,9 @@
 
 # Contract | Zendon Hamilton
 
-Known through: 2005-04-11. [Open interactive contract](hamilze01.html#contract) · [Contract history](hamilze01.html#contract-history)
+Known through: 2005-04-17. [Open interactive contract](hamilze01.html#contract) · [Contract history](hamilze01.html#contract-history)
 
-Zendon Hamilton: No verified contract record. Evidence cutoff: 2005-04-11.
+Zendon Hamilton: No verified contract record. Evidence cutoff: 2005-04-17.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Zendon Hamilton |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Chicago Bulls |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

@@ -2,7 +2,7 @@
 
 # Season exit meeting | Dwyane Wade
 
-Career date: 2005-04-11 · Miami Heat · inactive
+Career date: 2005-04-17 · Miami Heat · inactive
 
 [Live milestone desk](index.html#exit_meeting) · [All milestones](README.md)
 
@@ -26,7 +26,7 @@ Activation: The player's season closes and a dated exit meeting is recorded.
 | Discussion | Current evidence | Needed before a conclusion |
 | --- | --- | --- |
 | Strength and limiting possession | Not recorded | Specific game or film references |
-| Communicated role and actual use | Starting SG; staff plan 38.84 minutes | Dated statements and closed minutes |
+| Communicated role and actual use | Starting SG; staff plan 39.04 minutes | Dated statements and closed minutes |
 | Availability and recovery | No current restriction recorded in the established profile | Current qualified assessment |
 | Contract outlook | rookie_scale_contract | Actual terms, options and next verified gate |
 | Summer priorities | Not recorded | Player selection and staff-supported plan |
@@ -64,11 +64,11 @@ The actual season close and an agreed exit-meeting date.
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
-- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-03-31/review.json)
-- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-03-31/depth_chart.json)
+- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json)
+- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-03-31/rotation.json)
+- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json)
@@ -158,4 +158,7 @@ The actual season close and an agreed exit-meeting date.
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_1/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_1.md)
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

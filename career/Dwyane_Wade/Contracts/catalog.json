@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-04-11",
+  "as_of": "2005-04-17",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -419,7 +419,7 @@
     {
       "player_id": "handlbe01",
       "name": "Ben Handlogten",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "handlbe01-2004-08-26",
       "recorded_agreements": 1,
@@ -1535,7 +1535,7 @@
     {
       "player_id": "gilled01",
       "name": "Eddie Gill",
-      "team": "Free agent",
+      "team": "Chicago Bulls",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3245,7 +3245,7 @@
     {
       "player_id": "popema01",
       "name": "Mark Pope",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "popema01-2004-07-29",
       "recorded_agreements": 3,
@@ -3389,7 +3389,7 @@
     {
       "player_id": "bradlmi01",
       "name": "Michael Bradley",
-      "team": "New Orleans Hornets",
+      "team": "Free agent",
       "status": "under rookie contract",
       "current_contract_id": "bradlmi01-2001-07-23",
       "recorded_agreements": 1,
@@ -3533,7 +3533,7 @@
     {
       "player_id": "wilksmi01",
       "name": "Mike Wilks",
-      "team": "Free agent",
+      "team": "Chicago Bulls",
       "status": "under contract",
       "current_contract_id": "wilksmi01-2003-09-08",
       "recorded_agreements": 2,
@@ -4055,7 +4055,7 @@
     {
       "player_id": "brunsri01",
       "name": "Rick Brunson",
-      "team": "Free agent",
+      "team": "Chicago Bulls",
       "status": "under contract",
       "current_contract_id": "brunsri01-2003-08-13",
       "recorded_agreements": 2,
@@ -4136,7 +4136,7 @@
     {
       "player_id": "stricro02",
       "name": "Rod Strickland",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "stricro02-2003-11-25",
       "recorded_agreements": 2,
@@ -4145,7 +4145,7 @@
     {
       "player_id": "buforro01",
       "name": "Rodney Buford",
-      "team": "Free agent",
+      "team": "Detroit Pistons",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -5153,7 +5153,7 @@
     {
       "player_id": "hamilze01",
       "name": "Zendon Hamilton",
-      "team": "Free agent",
+      "team": "Chicago Bulls",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

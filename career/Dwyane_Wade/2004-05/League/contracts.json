@@ -691,13 +691,14 @@
   {
    "player": "Rick Brunson",
    "bbr_id": "brunsri01",
-   "club": "Charlotte Bobcats",
+   "club": "Chicago Bulls",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 932546
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); expansion draft"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); expansion draft",
+   "signed_club": "Charlotte Bobcats"
   },
   {
    "player": "Kobe Bryant",

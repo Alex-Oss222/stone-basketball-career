@@ -2,9 +2,9 @@
 
 # Contract | Rick Brunson
 
-Known through: 2005-04-11. [Open interactive contract](brunsri01.html#contract) · [Contract history](brunsri01.html#contract-history)
+Known through: 2005-04-17. [Open interactive contract](brunsri01.html#contract) · [Contract history](brunsri01.html#contract-history)
 
-Rick Brunson: under contract. Evidence cutoff: 2005-04-11.
+Rick Brunson: under contract. Evidence cutoff: 2005-04-17.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Rick Brunson |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Chicago Bulls |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

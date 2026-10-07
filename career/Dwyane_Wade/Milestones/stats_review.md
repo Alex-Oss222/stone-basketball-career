@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-04-11 · Miami Heat · active
+Career date: 2005-04-17 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-84 closed game records in 2004-05 through 2005-04-11. Competitions remain separate.
+87 closed game records in 2004-05 through 2005-04-17. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
-| regular | 71 | 36.1 | 21.4 | 5.3 | 4.0 | 1.3 | Complete |
+| regular | 74 | 36.2 | 21.2 | 5.4 | 4.0 | 1.3 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
-| regular | 505 | 960 | 0.526 | 85 | 196 | 0.434 |
+| regular | 524 | 992 | 0.528 | 86 | 200 | 0.430 |
 
 ## Closed source games
 
@@ -114,6 +114,9 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-04-05 | regular | Chicago Bulls | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_1/Game_2.md) |
 | 2005-04-08 | regular | Memphis Grizzlies | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_1.md) |
 | 2005-04-10 | regular | Detroit Pistons | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_2.md) |
+| 2005-04-14 | regular | Philadelphia 76ers | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_3.md) |
+| 2005-04-15 | regular | Boston Celtics | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_1.md) |
+| 2005-04-17 | regular | Indiana Pacers | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -148,11 +151,11 @@ The next declared, closed game result or a chosen completed-period review.
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
-- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-03-31/review.json)
-- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-03-31/depth_chart.json)
+- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json)
+- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-03-31/rotation.json)
+- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json)
@@ -242,4 +245,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_1/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_1.md)
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

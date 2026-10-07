@@ -2,9 +2,9 @@
 
 # Contract | Rodney Buford
 
-Known through: 2005-04-11. [Open interactive contract](buforro01.html#contract) · [Contract history](buforro01.html#contract-history)
+Known through: 2005-04-17. [Open interactive contract](buforro01.html#contract) · [Contract history](buforro01.html#contract-history)
 
-Rodney Buford: No verified contract record. Evidence cutoff: 2005-04-11.
+Rodney Buford: No verified contract record. Evidence cutoff: 2005-04-17.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Rodney Buford |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Detroit Pistons |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

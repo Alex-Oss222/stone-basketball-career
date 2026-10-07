@@ -2,9 +2,9 @@
 
 # Contract | Ha Seung-Jin
 
-Known through: 2005-04-11. [Open interactive contract](haseungjin.html#contract) · [Contract history](haseungjin.html#contract-history)
+Known through: 2005-04-17. [Open interactive contract](haseungjin.html#contract) · [Contract history](haseungjin.html#contract-history)
 
-Ha Seung-Jin: under contract. Evidence cutoff: 2005-04-11.
+Ha Seung-Jin: under contract. Evidence cutoff: 2005-04-17.
 
 ## Current contract
 

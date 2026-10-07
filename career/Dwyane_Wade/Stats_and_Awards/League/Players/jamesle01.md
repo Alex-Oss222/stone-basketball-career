@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `jamesle01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-04-11 · **Club on this date:** Cleveland Cavaliers · **Basis:** Cleveland Cavaliers: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-04-17 · **Club on this date:** Cleveland Cavaliers · **Basis:** Cleveland Cavaliers: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #23 · **Born:** 1984-12-30 · **Age on card date:** 20  
 **Registry ID:** `jamesle01` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jamesle01.html) · ESPN ID 1966
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jamesl
 
 ## Simulated statistics
 
-As of **2005-04-11**: 76 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-04-17**: 80 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2004-05 regular season](../2004-05/League_Stats.md) | 20 | CLE | NBA | SF | 74 | 74 | 41.5 | 10.4 | 21.7 | .480 | 1.6 | 3.9 | .408 | 8.8 | 17.7 | .496 | .517 | 4.4 | 6.5 | .686 | 1.3 | 6.5 | 7.8 | 5.7 | 1.9 | 0.7 | 3.4 | 2.2 | 26.9 | .548 | — |
+| [2004-05 regular season](../2004-05/League_Stats.md) | 20 | CLE | NBA | SF | 78 | 78 | 41.5 | 10.5 | 21.8 | .481 | 1.6 | 3.9 | .409 | 8.9 | 17.8 | .497 | .518 | 4.4 | 6.4 | .683 | 1.3 | 6.5 | 7.8 | 5.8 | 1.9 | 0.7 | 3.4 | 2.3 | 26.9 | .548 | — |
 
 ### Month
 
@@ -46,7 +46,7 @@ As of **2005-04-11**: 76 closed games feed this card. Per-game columns use the r
 | [January 2005](../2004-05/01_January/League_Stats.md) | 20 | CLE | NBA | SF | 14 | 14 | 39.5 | 9.4 | 20.9 | .447 | 2.2 | 4.1 | .534 | 7.1 | 16.8 | .426 | .500 | 4.2 | 5.8 | .728 | 1.4 | 5.8 | 7.1 | 6.1 | 2.6 | 0.5 | 3.6 | 1.8 | 25.1 | .536 | — |
 | [February 2005](../2004-05/02_February/League_Stats.md) | 20 | CLE | NBA | SF | 12 | 12 | 43.7 | 10.9 | 22.2 | .492 | 1.5 | 3.7 | .409 | 9.4 | 18.5 | .509 | .526 | 5.0 | 7.2 | .698 | 1.1 | 5.9 | 7.0 | 5.3 | 1.7 | 0.7 | 3.8 | 2.2 | 28.3 | .560 | — |
 | [March 2005](../2004-05/03_March/League_Stats.md) | 20 | CLE | NBA | SF | 13 | 13 | 40.5 | 10.8 | 23.7 | .458 | 1.5 | 4.8 | .323 | 9.3 | 18.9 | .492 | .490 | 3.3 | 5.2 | .642 | 1.4 | 6.5 | 7.9 | 5.9 | 1.5 | 0.8 | 2.9 | 2.6 | 26.5 | .511 | — |
-| [April 2005](../2004-05/04_April/League_Stats.md) | 20 | CLE | NBA | SF | 6 | 6 | 40.7 | 10.3 | 20.7 | .500 | 1.5 | 3.5 | .429 | 8.8 | 17.2 | .515 | .536 | 4.7 | 7.2 | .651 | 1.2 | 5.8 | 7.0 | 5.5 | 1.7 | 0.3 | 4.0 | 2.0 | 26.8 | .563 | — |
+| [April 2005](../2004-05/04_April/League_Stats.md) | 20 | CLE | NBA | SF | 10 | 10 | 41.1 | 10.9 | 21.9 | .498 | 1.6 | 3.7 | .432 | 9.3 | 18.2 | .511 | .534 | 4.2 | 6.6 | .636 | 1.3 | 6.0 | 7.3 | 6.1 | 1.7 | 0.2 | 3.5 | 2.3 | 27.6 | .556 | — |
 
 </details>
 
@@ -78,38 +78,38 @@ As of **2005-04-11**: 76 closed games feed this card. Per-game columns use the r
 | [March 2005 week 3 (15 to 21)](../2004-05/03_March/Week_3/League_Stats.md) | 20 | CLE | NBA | SF | 2 | 2 | 41.0 | 10.0 | 22.5 | .444 | 1.0 | 3.5 | .286 | 9.0 | 19.0 | .474 | .467 | 2.5 | 3.0 | .833 | 0.5 | 5.0 | 5.5 | 6.0 | 1.5 | 0.5 | 3.5 | 3.0 | 23.5 | .493 | — |
 | [March 2005 week 4 (22 to 31)](../2004-05/03_March/Week_4/League_Stats.md) | 20 | CLE | NBA | SF | 6 | 6 | 41.1 | 10.5 | 22.7 | .463 | 1.7 | 5.0 | .333 | 8.8 | 17.7 | .500 | .500 | 4.0 | 6.5 | .615 | 2.2 | 7.8 | 10.0 | 6.2 | 1.3 | 1.3 | 2.8 | 2.7 | 26.7 | .522 | — |
 | [April 2005 week 1 (01 to 07)](../2004-05/04_April/Week_1/League_Stats.md) | 20 | CLE | NBA | SF | 4 | 4 | 41.4 | 10.8 | 19.2 | .558 | 1.0 | 2.5 | .400 | 9.8 | 16.8 | .582 | .584 | 4.8 | 7.5 | .633 | 1.0 | 7.0 | 8.0 | 5.5 | 1.8 | 0.2 | 4.5 | 1.5 | 27.2 | .604 | — |
-| [April 2005 week 2 (08 to 14)](../2004-05/04_April/Week_2/League_Stats.md) | 20 | CLE | NBA | SF | 2 | 2 | 39.4 | 9.5 | 23.5 | .404 | 2.5 | 5.5 | .455 | 7.0 | 18.0 | .389 | .457 | 4.5 | 6.5 | .692 | 1.5 | 3.5 | 5.0 | 5.5 | 1.5 | 0.5 | 3.0 | 3.0 | 26.0 | .493 | — |
-| [April 2005 week 3 (15 to 21)](../2004-05/04_April/Week_3/League_Stats.md) | 20 | CLE | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2005 week 2 (08 to 14)](../2004-05/04_April/Week_2/League_Stats.md) | 20 | CLE | NBA | SF | 4 | 4 | 41.5 | 9.8 | 22.2 | .438 | 1.8 | 4.0 | .438 | 8.0 | 18.2 | .438 | .478 | 4.0 | 6.5 | .615 | 1.5 | 4.2 | 5.8 | 7.0 | 1.8 | 0.2 | 3.0 | 2.2 | 25.2 | .503 | — |
+| [April 2005 week 3 (15 to 21)](../2004-05/04_April/Week_3/League_Stats.md) | 20 | CLE | NBA | SF | 2 | 2 | 39.6 | 13.5 | 26.5 | .509 | 2.5 | 5.5 | .455 | 11.0 | 21.0 | .524 | .557 | 3.5 | 5.0 | .700 | 1.5 | 7.5 | 9.0 | 5.5 | 1.5 | 0.0 | 2.5 | 4.0 | 33.0 | .575 | — |
 
 </details>
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2004-05 regular season. Coverage: **complete**; 1604 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2004-05 regular season. Coverage: **complete**; 1699 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 76 of 76 closed games; 74 tracked appearances form the denominator below (2004-11-03 to 2005-04-09).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 80 of 80 closed games; 78 tracked appearances form the denominator below (2004-11-03 to 2005-04-17).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 411 | 763 | 53.9% | 11.11 | 10.31 |
-| Outside paint, under 12 ft | 24 | 55 | 43.6% | 0.65 | 0.74 |
-| Outside paint, 12 to under 18 ft | 93 | 200 | 46.5% | 2.51 | 2.70 |
-| 18 ft to the three-point line | 123 | 294 | 41.8% | 3.32 | 3.97 |
-| Three-point range | 119 | 292 | 40.8% | 4.82 | 3.95 |
-| All field goals | 770 | 1604 | 48.0% | 22.42 | 21.68 |
+| Paint | 437 | 812 | 53.8% | 11.21 | 10.41 |
+| Outside paint, under 12 ft | 25 | 57 | 43.9% | 0.64 | 0.73 |
+| Outside paint, 12 to under 18 ft | 97 | 212 | 45.8% | 2.49 | 2.72 |
+| 18 ft to the three-point line | 132 | 310 | 42.6% | 3.38 | 3.97 |
+| Three-point range | 126 | 308 | 40.9% | 4.85 | 3.95 |
+| All field goals | 817 | 1699 | 48.1% | 22.56 | 21.78 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2004-05 is simulated: 76 closed regular-season games through 2005-04-11. Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2004-05 is simulated: 80 closed regular-season games through 2005-04-17. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | CLE | 79 | 79 | 39.5 | 20.6 | 5.0 | 5.4 | 1.2 | 0.6 | 3.5 | 41.5% | 35.9% | 69.5% |
-| 2004-05 | CLE | 74 | 74 | 41.5 | 26.9 | 7.8 | 5.7 | 1.9 | 0.7 | 3.4 | 48.0% | 40.8% | 68.6% |
+| 2004-05 | CLE | 78 | 78 | 41.5 | 26.9 | 7.8 | 5.8 | 1.9 | 0.7 | 3.4 | 48.1% | 40.9% | 68.3% |
 
 ## Playoff statistics by year
 
@@ -121,7 +121,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-04-11, from closed award decisions (6 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-04-17, from closed award decisions (6 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
