@@ -181,7 +181,7 @@ Home court: San Antonio Spurs. San Antonio Spurs wins 4-1.
 
 ### West: (1) Phoenix Suns vs (5) Sacramento Kings
 
-Home court: Phoenix Suns. Series Phoenix Suns 3, Sacramento Kings 3.
+Home court: Phoenix Suns. Sacramento Kings wins 4-3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -191,7 +191,7 @@ Home court: Phoenix Suns. Series Phoenix Suns 3, Sacramento Kings 3.
 | 4 | Sat May 14 | Sacramento Kings | Phoenix Suns | Phoenix Suns 102, Sacramento Kings 113 |
 | 5 | Mon May 16 | Phoenix Suns | Sacramento Kings | Sacramento Kings 102, Phoenix Suns 103 |
 | 6 | Wed May 18 | Sacramento Kings | Phoenix Suns | Phoenix Suns 78, Sacramento Kings 112 |
-| 7 | Fri May 20 | Phoenix Suns | Sacramento Kings | if needed |
+| 7 | Fri May 20 | Phoenix Suns | Sacramento Kings | Sacramento Kings 114, Phoenix Suns 104 |
 
 ### West: (3) Minnesota Timberwolves vs (2) San Antonio Spurs
 
@@ -250,3 +250,17 @@ Home court: Toronto Raptors. Series Toronto Raptors 0, Atlanta Hawks 0.
 | 5 | Thu Jun 2 | Toronto Raptors | Atlanta Hawks | if needed |
 | 6 | Sat Jun 4 | Atlanta Hawks | Toronto Raptors | if needed |
 | 7 | Mon Jun 6 | Toronto Raptors | Atlanta Hawks | if needed |
+
+### West: (5) Sacramento Kings vs (3) Minnesota Timberwolves
+
+Home court: Sacramento Kings. Series Sacramento Kings 0, Minnesota Timberwolves 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun May 22 | Sacramento Kings | Minnesota Timberwolves |  |
+| 2 | Tue May 24 | Sacramento Kings | Minnesota Timberwolves |  |
+| 3 | Sat May 28 | Minnesota Timberwolves | Sacramento Kings |  |
+| 4 | Mon May 30 | Minnesota Timberwolves | Sacramento Kings |  |
+| 5 | Wed Jun 1 | Sacramento Kings | Minnesota Timberwolves | if needed |
+| 6 | Fri Jun 3 | Minnesota Timberwolves | Sacramento Kings | if needed |
+| 7 | Sun Jun 5 | Sacramento Kings | Minnesota Timberwolves | if needed |

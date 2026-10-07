@@ -863,9 +863,9 @@
    "home_court": "Phoenix Suns",
    "wins": {
     "Phoenix Suns": 3,
-    "Sacramento Kings": 3
+    "Sacramento Kings": 4
    },
-   "winner": null,
+   "winner": "Sacramento Kings",
    "games": [
     {
      "game": 1,
@@ -933,9 +933,12 @@
      "home": "Phoenix Suns",
      "away": "Sacramento Kings",
      "conditional": true,
-     "event_id": "2005-05-20-sacramento-kings-at-phoenix-suns"
+     "event_id": "2005-05-20-sacramento-kings-at-phoenix-suns",
+     "result": "Sacramento Kings 114, Phoenix Suns 104",
+     "winner": "Sacramento Kings"
     }
-   ]
+   ],
+   "clinched_on": "2005-05-20"
   },
   {
    "id": "west-semi-b",
@@ -1283,6 +1286,83 @@
      "away": "Atlanta Hawks",
      "conditional": true,
      "event_id": "2005-06-06-atlanta-hawks-at-toronto-raptors"
+    }
+   ]
+  },
+  {
+   "id": "west-final",
+   "round": "conference_finals",
+   "conference": "West",
+   "seeds": [
+    5,
+    3
+   ],
+   "clubs": [
+    "Sacramento Kings",
+    "Minnesota Timberwolves"
+   ],
+   "home_court": "Sacramento Kings",
+   "wins": {
+    "Sacramento Kings": 0,
+    "Minnesota Timberwolves": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-05-22",
+     "home": "Sacramento Kings",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2005-05-22-minnesota-timberwolves-at-sacramento-kings"
+    },
+    {
+     "game": 2,
+     "date": "2005-05-24",
+     "home": "Sacramento Kings",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2005-05-24-minnesota-timberwolves-at-sacramento-kings"
+    },
+    {
+     "game": 3,
+     "date": "2005-05-28",
+     "home": "Minnesota Timberwolves",
+     "away": "Sacramento Kings",
+     "conditional": false,
+     "event_id": "2005-05-28-sacramento-kings-at-minnesota-timberwolves"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-30",
+     "home": "Minnesota Timberwolves",
+     "away": "Sacramento Kings",
+     "conditional": false,
+     "event_id": "2005-05-30-sacramento-kings-at-minnesota-timberwolves"
+    },
+    {
+     "game": 5,
+     "date": "2005-06-01",
+     "home": "Sacramento Kings",
+     "away": "Minnesota Timberwolves",
+     "conditional": true,
+     "event_id": "2005-06-01-minnesota-timberwolves-at-sacramento-kings"
+    },
+    {
+     "game": 6,
+     "date": "2005-06-03",
+     "home": "Minnesota Timberwolves",
+     "away": "Sacramento Kings",
+     "conditional": true,
+     "event_id": "2005-06-03-sacramento-kings-at-minnesota-timberwolves"
+    },
+    {
+     "game": 7,
+     "date": "2005-06-05",
+     "home": "Sacramento Kings",
+     "away": "Minnesota Timberwolves",
+     "conditional": true,
+     "event_id": "2005-06-05-minnesota-timberwolves-at-sacramento-kings"
     }
    ]
   }
