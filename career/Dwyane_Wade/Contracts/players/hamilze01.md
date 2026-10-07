@@ -2,9 +2,9 @@
 
 # Contract | Zendon Hamilton
 
-Known through: 2005-05-18. [Open interactive contract](hamilze01.html#contract) · [Contract history](hamilze01.html#contract-history)
+Known through: 2005-05-22. [Open interactive contract](hamilze01.html#contract) · [Contract history](hamilze01.html#contract-history)
 
-Zendon Hamilton: No verified contract record. Evidence cutoff: 2005-05-18.
+Zendon Hamilton: No verified contract record. Evidence cutoff: 2005-05-22.
 
 ## Current contract
 

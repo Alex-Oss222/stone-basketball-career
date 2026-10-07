@@ -2,9 +2,9 @@
 
 # Contract | Vlade Divac
 
-Known through: 2005-05-18. [Open interactive contract](divacvl01.html#contract) · [Contract history](divacvl01.html#contract-history)
+Known through: 2005-05-22. [Open interactive contract](divacvl01.html#contract) · [Contract history](divacvl01.html#contract-history)
 
-Vlade Divac: under contract. Evidence cutoff: 2005-05-18.
+Vlade Divac: under contract. Evidence cutoff: 2005-05-22.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Alton Ford
 
-Known through: 2005-05-18. [Open interactive contract](fordal02.html#contract) · [Contract history](fordal02.html#contract-history)
+Known through: 2005-05-22. [Open interactive contract](fordal02.html#contract) · [Contract history](fordal02.html#contract-history)
 
-Alton Ford: under contract. Evidence cutoff: 2005-05-18.
+Alton Ford: under contract. Evidence cutoff: 2005-05-22.
 
 ## Current contract
 

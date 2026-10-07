@@ -2,9 +2,9 @@
 
 # Contract | Erick Dampier
 
-Known through: 2005-05-18. [Open interactive contract](dampier01.html#contract) · [Contract history](dampier01.html#contract-history)
+Known through: 2005-05-22. [Open interactive contract](dampier01.html#contract) · [Contract history](dampier01.html#contract-history)
 
-Erick Dampier: under contract. Evidence cutoff: 2005-05-18.
+Erick Dampier: under contract. Evidence cutoff: 2005-05-22.
 
 ## Current contract
 

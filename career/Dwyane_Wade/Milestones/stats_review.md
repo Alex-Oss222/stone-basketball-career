@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-05-18 · Miami Heat · active
+Career date: 2005-05-22 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-100 closed game records in 2004-05 through 2005-05-18. Competitions remain separate.
+101 closed game records in 2004-05 through 2005-05-22. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -14,7 +14,7 @@ Activation: A declared, closed game result supplies observed participation and t
 
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 11 | 36.3 | 20.0 | 4.6 | 5.0 | 1.2 | Complete |
+| playoff | 12 | 36.8 | 20.5 | 4.8 | 4.9 | 1.1 | Complete |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
 | regular | 76 | 36.2 | 21.3 | 5.4 | 4.0 | 1.3 | Complete |
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 78 | 156 | 0.500 | 17 | 37 | 0.459 |
+| playoff | 87 | 174 | 0.500 | 17 | 39 | 0.436 |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
 | regular | 539 | 1017 | 0.530 | 87 | 203 | 0.429 |
 
@@ -132,6 +132,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-05-13 | playoff | Atlanta Hawks | Played | [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_3.md) |
 | 2005-05-15 | playoff | Atlanta Hawks | Played | [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_4.md) |
 | 2005-05-17 | playoff | Atlanta Hawks | Played | [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_5.md) |
+| 2005-05-19 | playoff | Atlanta Hawks | Played | [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_6.md) |
 
 ## Evidence available for decisions
 
@@ -276,4 +277,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_3.md)
 - [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_4.md)
 - [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_5.md)
+- [Closed game](../2004-05/08_Playoffs/Conference_Semifinals/Game_6.md)
 - [Dated milestone working records and player replies](../milestones.json)
