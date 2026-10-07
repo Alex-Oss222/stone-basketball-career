@@ -4512,6 +4512,46 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.02 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-04-13-waive-millean01",
+   "date": "2005-04-13",
+   "kind": "waive",
+   "player": "Anthony Miller",
+   "bbr_id": "millean01",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Anthony Miller",
+    "bbr_id": "millean01",
+    "position": "PF",
+    "games": 2,
+    "minutes": 9
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-04-15"
+  },
+  {
+   "id": "2004-05-market-2005-04-13-ten_day-brunsri01",
+   "date": "2005-04-13",
+   "kind": "ten_day",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 80,
+    "minutes": 1945
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.15 x fit"
   }
  ],
  "market_days": [
@@ -4676,6 +4716,7 @@
   "2005-04-09",
   "2005-04-10",
   "2005-04-11",
-  "2005-04-12"
+  "2005-04-12",
+  "2005-04-13"
  ]
 }
