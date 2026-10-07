@@ -1,13 +1,13 @@
 # 2004-05 standings
 
-Through 2005-03-16, from closed simulated results only (`runtime/standings.py`). Real 2004-05 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2005-03-17, from closed simulated results only (`runtime/standings.py`). Real 2004-05 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Toronto Raptors | 46 | 18 | .719 | — |
-| 2 | **Miami Heat** | 44 | 22 | .667 | 3 |
+| 2 | **Miami Heat** | 45 | 22 | .672 | 2.5 |
 | 3 | Boston Celtics | 42 | 23 | .646 | 4.5 |
 | 4 | Cleveland Cavaliers | 36 | 26 | .581 | 9 |
 | 5 | Chicago Bulls | 35 | 27 | .565 | 10 |
@@ -28,16 +28,16 @@ Through 2005-03-16, from closed simulated results only (`runtime/standings.py`).
 | --- | --- | --- | --- | --- | --- |
 | 1 | Phoenix Suns | 48 | 15 | .762 | — |
 | 2 | San Antonio Spurs | 41 | 23 | .641 | 7.5 |
-| 3 | Sacramento Kings | 41 | 24 | .631 | 8 |
-| 4 | Dallas Mavericks | 37 | 26 | .587 | 11 |
-| 5 | Los Angeles Lakers | 37 | 26 | .587 | 11 |
-| 6 | Golden State Warriors | 34 | 30 | .531 | 14.5 |
+| 3 | Sacramento Kings | 41 | 25 | .621 | 8.5 |
+| 4 | Dallas Mavericks | 38 | 26 | .594 | 10.5 |
+| 5 | Los Angeles Lakers | 37 | 27 | .578 | 11.5 |
+| 6 | Golden State Warriors | 35 | 30 | .538 | 14 |
 | 7 | Minnesota Timberwolves | 35 | 31 | .530 | 14.5 |
 | 8 | Memphis Grizzlies | 33 | 31 | .516 | 15.5 |
 | 9 | Seattle SuperSonics | 30 | 33 | .476 | 18 |
 | 10 | Los Angeles Clippers | 30 | 34 | .469 | 18.5 |
 | 11 | Houston Rockets | 29 | 35 | .453 | 19.5 |
-| 12 | Portland Trail Blazers | 27 | 35 | .435 | 20.5 |
+| 12 | Portland Trail Blazers | 27 | 36 | .429 | 21 |
 | 13 | New Orleans Hornets | 23 | 40 | .365 | 25 |
 | 14 | Utah Jazz | 22 | 42 | .344 | 26.5 |
 | 15 | Denver Nuggets | 20 | 43 | .317 | 28 |

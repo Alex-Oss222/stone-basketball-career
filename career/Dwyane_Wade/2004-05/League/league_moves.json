@@ -3860,6 +3860,50 @@
    },
    "contract": null,
    "note": "10-day contract ended (1.9 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-17-claim-popema01",
+   "date": "2005-03-17",
+   "kind": "claim",
+   "player": "Mark Pope",
+   "bbr_id": "popema01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Mark Pope",
+    "bbr_id": "popema01",
+    "position": "PF",
+    "games": 9,
+    "minutes": 27
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2005-04-20"
+   },
+   "note": "claimed off waivers from Los Angeles Lakers (worst record first)",
+   "waiver": "2004-05-market-2005-03-15-waive-popema01"
+  },
+  {
+   "id": "2004-05-market-2005-03-17-ten_day-johnsli01",
+   "date": "2005-03-17",
+   "kind": "ten_day",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 15
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-27",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.49 x fit"
   }
  ],
  "market_days": [
@@ -3997,6 +4041,7 @@
   "2005-03-13",
   "2005-03-14",
   "2005-03-15",
-  "2005-03-16"
+  "2005-03-16",
+  "2005-03-17"
  ]
 }
