@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2005-03-28** · Toronto Raptors · #4 · PF · age 21
+Career date: **2005-04-02** · Toronto Raptors · #4 · PF · age 21
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,11 +14,11 @@ Career date: **2005-03-28** · Toronto Raptors · #4 · PF · age 21
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 68/68 | 39.6 | 18.0 | 9.5 | 2.9 | 1.1 | 1.4 | 50.4 | 41.7 | 82.6 | 57.0 | 48-21 |
+| 2004-05 | 20 | Toronto Raptors | 71/71 | 39.6 | 18.0 | 9.5 | 2.9 | 1.1 | 1.5 | 50.6 | 41.7 | 82.2 | 57.1 | 51-21 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 68 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 71 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
@@ -27,11 +27,11 @@ Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profil
 | Rebounds | 11.1 | 9.5 |
 | Assists | 3.5 | 2.9 |
 | Steals | 0.9 | 1.1 |
-| Blocks | 1.5 | 1.4 |
-| FG% | 51.4 | 50.4 |
+| Blocks | 1.5 | 1.5 |
+| FG% | 51.4 | 50.6 |
 | 3P% | 41.2 | 41.7 |
-| FT% | 90.8 | 82.6 |
-| TS% (est.) | 64.0 | 57.0 |
+| FT% | 90.8 | 82.2 |
+| TS% (est.) | 64.0 | 57.1 |
 
 ## Playoffs
 
@@ -45,7 +45,7 @@ No playoff games closed.
 | Rebounds | 16 | 2004-11-19 vs Seattle SuperSonics (+2) |
 | Assists | 7 | 2005-01-28 at Charlotte Bobcats (+1) |
 | Steals | 3 | 2004-11-03 vs Houston Rockets (+8) |
-| Blocks | 4 | 2005-02-09 vs Milwaukee Bucks (+2) |
+| Blocks | 4 | 2005-02-09 vs Milwaukee Bucks (+3) |
 | Threes | 2 | 2004-11-12 at Seattle SuperSonics |
 | Free throws | 11 | 2005-02-11 vs Philadelphia 76ers |
 

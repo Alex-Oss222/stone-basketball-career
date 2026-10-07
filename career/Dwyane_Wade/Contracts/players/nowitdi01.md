@@ -2,9 +2,9 @@
 
 # Contract | Dirk Nowitzki
 
-Known through: 2005-03-28. [Open interactive contract](nowitdi01.html#contract) · [Contract history](nowitdi01.html#contract-history)
+Known through: 2005-04-02. [Open interactive contract](nowitdi01.html#contract) · [Contract history](nowitdi01.html#contract-history)
 
-Dirk Nowitzki: under contract. Evidence cutoff: 2005-03-28.
+Dirk Nowitzki: under contract. Evidence cutoff: 2005-04-02.
 
 ## Current contract
 

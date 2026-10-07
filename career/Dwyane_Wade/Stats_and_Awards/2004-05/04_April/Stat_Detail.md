@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2004-05 awards through 2005-03-28](../../../assets/stat_reports/personal_2004-05_2005-03-28.svg)
+![Player personal information and earned 2004-05 awards through 2005-04-02](../../../assets/stat_reports/personal_2004-05_2005-04-02.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-03-28; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-04-02; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2004-05 awards
 
@@ -40,10 +40,11 @@ Identity as of 2005-03-28; status snapshot dated 2004-10-28. User-established al
 | Eastern Conference Player of the Month | 2004-12-01 to 2004-12-31 | 2005-01-02 | [East POM](../../League/2004-05/12_December/League_Awards.md#player-of-the-month) |
 | Eastern Conference Player of the Week | 2005-01-24 to 2005-01-30 | 2005-01-31 | [East POW](../../League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week) |
 | All-Star | 2004-11-02 to 2005-02-08 | 2005-02-08 | [All-Star](../../League/2004-05/All_Star.md#all-stars) |
+| Eastern Conference Player of the Month | 2005-03-01 to 2005-03-31 | 2005-04-02 | [East POM](../../League/2004-05/03_March/League_Awards.md#player-of-the-month) |
 
 ## Statistics
 
-As of **2005-03-28**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2005-04-02**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -61,7 +62,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-03-28, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -126,7 +127,9 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 ### Game log
 
-No game records in this scope.
+| Date / source | Opponent | Venue | Result | Participation | MIN | PTS | REB | AST | STL | BLK | TOV |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [2005-04-02](../../../2004-05/06_Regular_Season/04_April/Week_1/Game_1.md) | New Orleans Hornets | away | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### Additional data needed
 

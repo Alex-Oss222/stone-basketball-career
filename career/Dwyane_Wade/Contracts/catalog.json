@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-03-28",
+  "as_of": "2005-04-02",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -419,7 +419,7 @@
     {
       "player_id": "handlbe01",
       "name": "Ben Handlogten",
-      "team": "Portland Trail Blazers",
+      "team": "Chicago Bulls",
       "status": "under contract",
       "current_contract_id": "handlbe01-2004-08-26",
       "recorded_agreements": 1,
@@ -2138,7 +2138,7 @@
     {
       "player_id": "breweja01",
       "name": "Jamison Brewer",
-      "team": "Memphis Grizzlies",
+      "team": "Portland Trail Blazers",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2975,7 +2975,7 @@
     {
       "player_id": "johnsli01",
       "name": "Linton Johnson",
-      "team": "Free agent",
+      "team": "Portland Trail Blazers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3299,7 +3299,7 @@
     {
       "player_id": "carroma01",
       "name": "Matt Carroll",
-      "team": "Philadelphia 76ers",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3794,7 +3794,7 @@
     {
       "player_id": "shirlpa01",
       "name": "Paul Shirley",
-      "team": "Free agent",
+      "team": "Detroit Pistons",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

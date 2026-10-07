@@ -14,4 +14,6 @@ days: 1-7
 
 ## Games and events
 
+- 2005-04-02: Miami Heat 113 at New Orleans Hornets 88 — Miami Heat W 113-88 ([Game 1](Game_1.md), event `2005-04-02-miami-heat-at-new-orleans-hornets`)
+
 ## Consequences

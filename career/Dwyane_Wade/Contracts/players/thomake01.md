@@ -2,9 +2,9 @@
 
 # Contract | Kenny Thomas
 
-Known through: 2005-03-28. [Open interactive contract](thomake01.html#contract) · [Contract history](thomake01.html#contract-history)
+Known through: 2005-04-02. [Open interactive contract](thomake01.html#contract) · [Contract history](thomake01.html#contract-history)
 
-Kenny Thomas: under contract. Evidence cutoff: 2005-03-28.
+Kenny Thomas: under contract. Evidence cutoff: 2005-04-02.
 
 ## Current contract
 

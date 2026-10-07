@@ -2,9 +2,9 @@
 
 # Contract | Mark Jackson
 
-Known through: 2005-03-28. [Open interactive contract](jacksma01.html#contract) · [Contract history](jacksma01.html#contract-history)
+Known through: 2005-04-02. [Open interactive contract](jacksma01.html#contract) · [Contract history](jacksma01.html#contract-history)
 
-Mark Jackson: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-03-28.
+Mark Jackson: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-04-02.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Jamison Brewer
 
-Known through: 2005-03-28. [Open interactive contract](breweja01.html#contract) · [Contract history](breweja01.html#contract-history)
+Known through: 2005-04-02. [Open interactive contract](breweja01.html#contract) · [Contract history](breweja01.html#contract-history)
 
-Jamison Brewer: minimum contract unverified. Evidence cutoff: 2005-03-28.
+Jamison Brewer: minimum contract unverified. Evidence cutoff: 2005-04-02.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jamison Brewer |
-| Club / rights baseline | Memphis Grizzlies |
+| Club / rights baseline | Portland Trail Blazers |
 | Control status | minimum_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
