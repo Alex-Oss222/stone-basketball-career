@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2005-04-04 · Miami Heat · active
+Career date: 2005-04-10 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,22 +14,22 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2005-04-04 |
+| Career date | 2005-04-10 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2005-04-02-miami-heat-at-new-orleans-hornets |
+| Last closed event | 2005-04-10-detroit-pistons-at-miami-heat |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-04-04 | Current checkpoint | 2005-04-02-miami-heat-at-new-orleans-hornets | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
+| 2005-04-10 | Current checkpoint | 2005-04-10-detroit-pistons-at-miami-heat | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2004-10-05 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2005-04-05 | Next Miami game, vs Chicago Bulls | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
 | 2005-04-11 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2005-04-14 | Next Miami game, at Philadelphia 76ers | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
 | 2005-04-14 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | By 2005-10-31 | Fourth-year (2006-07) team option on the rookie contract | Miami decides | Scheduled gate; no outcome implied | [Contract](index.html#contract_negotiation) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
@@ -184,4 +184,7 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_4/Game_4.md)
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_4/Game_5.md)
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_1/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_1/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

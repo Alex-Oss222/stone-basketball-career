@@ -2,9 +2,9 @@
 
 # Contract | Tamar Slay
 
-Known through: 2005-04-04. [Open interactive contract](slayta01.html#contract) · [Contract history](slayta01.html#contract-history)
+Known through: 2005-04-10. [Open interactive contract](slayta01.html#contract) · [Contract history](slayta01.html#contract-history)
 
-Tamar Slay: minimum contract unverified. Evidence cutoff: 2005-04-04.
+Tamar Slay: minimum contract unverified. Evidence cutoff: 2005-04-10.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Tamar Slay |
-| Club / rights baseline | Houston Rockets |
+| Club / rights baseline | Philadelphia 76ers |
 | Control status | minimum_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

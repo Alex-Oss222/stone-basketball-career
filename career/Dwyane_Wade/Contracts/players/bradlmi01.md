@@ -2,9 +2,9 @@
 
 # Contract | Michael Bradley
 
-Known through: 2005-04-04. [Open interactive contract](bradlmi01.html#contract) · [Contract history](bradlmi01.html#contract-history)
+Known through: 2005-04-10. [Open interactive contract](bradlmi01.html#contract) · [Contract history](bradlmi01.html#contract-history)
 
-Michael Bradley: under rookie contract. Evidence cutoff: 2005-04-04.
+Michael Bradley: under rookie contract. Evidence cutoff: 2005-04-10.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Michael Bradley |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | New Orleans Hornets |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

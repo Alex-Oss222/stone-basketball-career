@@ -2,9 +2,9 @@
 
 # Contract | Ansu Sesay
 
-Known through: 2005-04-04. [Open interactive contract](sesayan01.html#contract) · [Contract history](sesayan01.html#contract-history)
+Known through: 2005-04-10. [Open interactive contract](sesayan01.html#contract) · [Contract history](sesayan01.html#contract-history)
 
-Ansu Sesay: minimum contract unverified. Evidence cutoff: 2005-04-04.
+Ansu Sesay: minimum contract unverified. Evidence cutoff: 2005-04-10.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ansu Sesay |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Phoenix Suns |
 | Control status | minimum_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

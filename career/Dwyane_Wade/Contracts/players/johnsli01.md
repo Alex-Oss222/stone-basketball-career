@@ -2,9 +2,9 @@
 
 # Contract | Linton Johnson
 
-Known through: 2005-04-04. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
+Known through: 2005-04-10. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
 
-Linton Johnson: No verified contract record. Evidence cutoff: 2005-04-04.
+Linton Johnson: No verified contract record. Evidence cutoff: 2005-04-10.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Linton Johnson |
-| Club / rights baseline | Portland Trail Blazers |
+| Club / rights baseline | San Antonio Spurs |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

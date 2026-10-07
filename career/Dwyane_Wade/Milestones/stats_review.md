@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-04-04 · Miami Heat · active
+Career date: 2005-04-10 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-81 closed game records in 2004-05 through 2005-04-04. Competitions remain separate.
+84 closed game records in 2004-05 through 2005-04-10. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
-| regular | 68 | 36.0 | 21.5 | 5.2 | 4.0 | 1.3 | Complete |
+| regular | 71 | 36.1 | 21.4 | 5.3 | 4.0 | 1.3 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
-| regular | 489 | 920 | 0.532 | 82 | 185 | 0.443 |
+| regular | 505 | 960 | 0.526 | 85 | 196 | 0.434 |
 
 ## Closed source games
 
@@ -111,6 +111,9 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-03-29 | regular | Toronto Raptors | Played | [Closed game](../2004-05/06_Regular_Season/03_March/Week_4/Game_4.md) |
 | 2005-03-31 | regular | Indiana Pacers | Played | [Closed game](../2004-05/06_Regular_Season/03_March/Week_4/Game_5.md) |
 | 2005-04-02 | regular | New Orleans Hornets | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_1/Game_1.md) |
+| 2005-04-05 | regular | Chicago Bulls | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_1/Game_2.md) |
+| 2005-04-08 | regular | Memphis Grizzlies | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_1.md) |
+| 2005-04-10 | regular | Detroit Pistons | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -236,4 +239,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_4/Game_4.md)
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_4/Game_5.md)
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_1/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_1/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

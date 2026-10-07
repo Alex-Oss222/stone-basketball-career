@@ -2,7 +2,7 @@
 
 # Chris Bosh | Career milestones
 
-Career date: 2005-04-04. Born 1984-03-24. 147 regular-season and 9 playoff games closed.
+Career date: 2005-04-10. Born 1984-03-24. 150 regular-season and 9 playoff games closed.
 
 Milestones count closed regular-season games (the NBA convention); playoff milestones are their own record and preseason never counts. Each is dated by the game that reached it, with his age on that day. [Career](README.md)
 
@@ -35,14 +35,14 @@ Milestones count closed regular-season games (the NBA convention); playoff miles
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 3,000 career points | 2,345 | 655 |
-| 1,500 career rebounds | 1,275 | 225 |
-| 500 career assists | 308 | 192 |
-| 250 career steals | 148 | 102 |
-| 250 career blocks | 211 | 39 |
+| 3,000 career points | 2,394 | 606 |
+| 1,500 career rebounds | 1,296 | 204 |
+| 500 career assists | 313 | 187 |
+| 250 career steals | 153 | 97 |
+| 250 career blocks | 216 | 34 |
 | 100 career three-pointers made | 41 | 59 |
-| 500 career free throws made | 482 | 18 |
-| 200 career games played | 147 | 53 |
+| 500 career free throws made | 499 | 1 |
+| 200 career games played | 150 | 50 |
 
 ## Playoff milestones reached
 

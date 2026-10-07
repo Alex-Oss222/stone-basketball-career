@@ -2,9 +2,9 @@
 
 # Contract | Anthony Miller
 
-Known through: 2005-04-04. [Open interactive contract](anthonymiller.html#contract) · [Contract history](anthonymiller.html#contract-history)
+Known through: 2005-04-10. [Open interactive contract](anthonymiller.html#contract) · [Contract history](anthonymiller.html#contract-history)
 
-Anthony Miller: under contract. Evidence cutoff: 2005-04-04.
+Anthony Miller: under contract. Evidence cutoff: 2005-04-10.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Anthony Miller |
-| Club / rights baseline | San Antonio Spurs |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

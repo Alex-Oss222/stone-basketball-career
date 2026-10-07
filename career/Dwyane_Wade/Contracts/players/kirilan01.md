@@ -2,9 +2,9 @@
 
 # Contract | Andrei Kirilenko
 
-Known through: 2005-04-04. [Open interactive contract](kirilan01.html#contract) · [Contract history](kirilan01.html#contract-history)
+Known through: 2005-04-10. [Open interactive contract](kirilan01.html#contract) · [Contract history](kirilan01.html#contract-history)
 
-Andrei Kirilenko: under contract unverified. Evidence cutoff: 2005-04-04.
+Andrei Kirilenko: under contract unverified. Evidence cutoff: 2005-04-10.
 
 ## Current contract
 

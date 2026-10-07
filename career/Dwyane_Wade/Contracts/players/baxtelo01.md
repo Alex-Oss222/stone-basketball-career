@@ -2,9 +2,9 @@
 
 # Contract | Lonny Baxter
 
-Known through: 2005-04-04. [Open interactive contract](baxtelo01.html#contract) · [Contract history](baxtelo01.html#contract-history)
+Known through: 2005-04-10. [Open interactive contract](baxtelo01.html#contract) · [Contract history](baxtelo01.html#contract-history)
 
-Lonny Baxter: under contract. Evidence cutoff: 2005-04-04.
+Lonny Baxter: under contract. Evidence cutoff: 2005-04-10.
 
 ## Current contract
 

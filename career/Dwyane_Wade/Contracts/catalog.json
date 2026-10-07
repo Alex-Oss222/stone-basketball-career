@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-04-04",
+  "as_of": "2005-04-10",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -257,7 +257,7 @@
     {
       "player_id": "sesayan01",
       "name": "Ansu Sesay",
-      "team": "Free agent",
+      "team": "Phoenix Suns",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -311,7 +311,7 @@
     {
       "player_id": "anthonymiller",
       "name": "Anthony Miller",
-      "team": "San Antonio Spurs",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "anthonymiller-2004-07-29",
       "recorded_agreements": 1,
@@ -2138,7 +2138,7 @@
     {
       "player_id": "breweja01",
       "name": "Jamison Brewer",
-      "team": "Portland Trail Blazers",
+      "team": "San Antonio Spurs",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2975,7 +2975,7 @@
     {
       "player_id": "johnsli01",
       "name": "Linton Johnson",
-      "team": "Portland Trail Blazers",
+      "team": "San Antonio Spurs",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3299,7 +3299,7 @@
     {
       "player_id": "carroma01",
       "name": "Matt Carroll",
-      "team": "Free agent",
+      "team": "San Antonio Spurs",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3389,7 +3389,7 @@
     {
       "player_id": "bradlmi01",
       "name": "Michael Bradley",
-      "team": "Free agent",
+      "team": "New Orleans Hornets",
       "status": "under rookie contract",
       "current_contract_id": "bradlmi01-2001-07-23",
       "recorded_agreements": 1,
@@ -4631,7 +4631,7 @@
     {
       "player_id": "slayta01",
       "name": "Tamar Slay",
-      "team": "Houston Rockets",
+      "team": "Philadelphia 76ers",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
