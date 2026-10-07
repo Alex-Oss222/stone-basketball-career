@@ -293,6 +293,109 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2004-05-roy",
+   "award": "roy",
+   "name": "Rookie of the Year",
+   "announced_on": "2005-05-04",
+   "electorate": 126,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.0,
+    0.25
+   ],
+   "evidence_through": "2005-04-20",
+   "winners": [
+    "Emeka Okafor"
+   ],
+   "tally": [
+    {
+     "player": "Emeka Okafor",
+     "team": "Washington Wizards",
+     "games": 70,
+     "mpg": 35.0,
+     "pts": 14.4,
+     "reb": 9.4,
+     "ast": 0.8,
+     "stl": 1.0,
+     "blk": 2.2,
+     "game_score": 11.04,
+     "club_pct": 0.451,
+     "points": 608,
+     "first_place": 115,
+     "votes_by_place": [
+      115,
+      11,
+      0
+     ]
+    },
+    {
+     "player": "Josh Childress",
+     "team": "Phoenix Suns",
+     "games": 81,
+     "mpg": 30.1,
+     "pts": 11.3,
+     "reb": 6.4,
+     "ast": 2.1,
+     "stl": 0.8,
+     "blk": 0.5,
+     "game_score": 9.42,
+     "club_pct": 0.732,
+     "points": 344,
+     "first_place": 11,
+     "votes_by_place": [
+      11,
+      87,
+      28
+     ]
+    },
+    {
+     "player": "Nenad Krstić",
+     "team": "New York Knicks",
+     "games": 78,
+     "mpg": 28.4,
+     "pts": 13.3,
+     "reb": 5.5,
+     "ast": 1.2,
+     "stl": 0.5,
+     "blk": 0.8,
+     "game_score": 8.84,
+     "club_pct": 0.378,
+     "points": 169,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      28,
+      85
+     ]
+    },
+    {
+     "player": "Luol Deng",
+     "team": "Boston Celtics",
+     "games": 60,
+     "mpg": 28.3,
+     "pts": 12.1,
+     "reb": 5.7,
+     "ast": 2.1,
+     "stl": 0.9,
+     "blk": 0.4,
+     "game_score": 9.04,
+     "club_pct": 0.622,
+     "points": 13,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      13
+     ]
+    }
+   ]
   }
  ]
 }

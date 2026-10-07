@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `wallabe01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-05-03 · **Club on this date:** Detroit Pistons · **Basis:** Detroit Pistons: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-05-04 · **Club on this date:** Detroit Pistons · **Basis:** Detroit Pistons: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #3 · **Born:** 1974-09-10 · **Age on card date:** 30  
 **Registry ID:** `wallabe01` · [Basketball-Reference page](https://www.basketball-reference.com/players/w/wallabe01.html) · ESPN ID 885
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wallab
 
 ## Simulated statistics
 
-As of **2005-05-03**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-05-04**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 82 closed regular-season games through 2005-05-03. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 82 closed regular-season games through 2005-05-04. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -114,16 +114,16 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-03 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-04 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Detroit Pistons | 5 | 5 | 35.7 | 11.4 | 10.2 | 1.8 | 1.0 | 3.4 | 2.0 | 51.1% | 100.0% | 50.0% |
-| 2004-05 | Detroit Pistons | 4 | 4 | 34.5 | 12.0 | 10.0 | 1.8 | 1.5 | 3.5 | 1.0 | 50.0% | 100.0% | 60.0% |
+| 2004-05 | Detroit Pistons | 5 | 5 | 32.0 | 10.2 | 10.2 | 1.6 | 1.2 | 3.2 | 0.8 | 43.9% | 100.0% | 59.1% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-05-03, from closed award decisions (2 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-05-04, from closed award decisions (2 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

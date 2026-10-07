@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `milicda01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-05-03 · **Club on this date:** Detroit Pistons · **Basis:** Detroit Pistons: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-05-04 · **Club on this date:** Detroit Pistons · **Basis:** Detroit Pistons: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #31 · **Born:** 1985-06-20 · **Age on card date:** 19  
 **Registry ID:** `milicda01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/milicda01.html) · ESPN ID 2171
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `milicd
 
 ## Simulated statistics
 
-As of **2005-05-03**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-05-04**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2004-05 is simulated: 82 closed regular-season games through 2005-05-03. Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2004-05 is simulated: 82 closed regular-season games through 2005-05-04. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -113,13 +113,13 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-03 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-04 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Detroit Pistons | 1 | 0 | 2.6 | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 0.0 | 0.0% | N/A | N/A |
-| 2004-05 | Detroit Pistons | 2 | 0 | 2.3 | 0.0 | 0.0 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0% | N/A | N/A |
+| 2004-05 | Detroit Pistons | 3 | 0 | 3.3 | 0.3 | 0.7 | 0.3 | 0.0 | 0.0 | 0.0 | 0.0% | N/A | 50.0% |
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2005-05-03. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2005-05-04. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

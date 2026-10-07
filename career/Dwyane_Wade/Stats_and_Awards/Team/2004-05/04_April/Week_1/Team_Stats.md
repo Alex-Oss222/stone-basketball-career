@@ -4,7 +4,7 @@
 
 NBA regular season · April 1-7, 2005
 
-As of May 3, 2005: 2 closed Miami games in this period. Rows cover Miami's closed games only.
+As of May 4, 2005: 2 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 

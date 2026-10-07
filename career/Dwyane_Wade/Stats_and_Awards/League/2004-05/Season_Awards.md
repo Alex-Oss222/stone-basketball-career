@@ -1,6 +1,6 @@
 # 2004-05 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-05-03.
+Decided on each award's real announcement date from closed simulated results through 2005-04-20 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2005-05-04.
 
 ## Calendar
 
@@ -9,7 +9,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2005-04-28 | Most Improved Player | 123 media | 5-3-1 | decided |
 | 2005-05-02 | Defensive Player of the Year | 125 media | 5-3-1 | decided |
 | 2005-05-03 | Sixth Man of the Year | 125 media | 5-3-1 | decided |
-| 2005-05-04 | Rookie of the Year | 126 media | 5-3-1 | pending |
+| 2005-05-04 | Rookie of the Year | 126 media | 5-3-1 | decided |
 | 2005-05-05 | All-Rookie Teams | 30 head coaches, not for their own players | 2-1 | pending |
 | 2005-05-08 | Most Valuable Player | 127 media | 10-7-5-3-1 | pending |
 | 2005-05-10 | Coach of the Year | 126 media | 5-3-1 | pending |
@@ -50,5 +50,17 @@ Announced 2005-05-03; 125 media, ballot 5-3-1.
 | WINNER | Josh Howard | Dallas Mavericks | 76 | 31.6 | 11.7 | 6.1 | 1.6 | 1.4 | 0.8 | 9.51 | 625 | 125 |
 | 2 | Keith Van Horn | San Antonio Spurs | 60 | 26.2 | 11.6 | 4.3 | 1.4 | 0.5 | 0.4 | 7.74 | 375 | 0 |
 | 3 | Chris Mihm | Phoenix Suns | 68 | 24.6 | 10.4 | 5.6 | 1.0 | 0.3 | 1.1 | 7.37 | 86 | 0 |
+
+Complete tally: `season_awards.json` (4 receiving votes).
+
+## Rookie of the Year
+
+Announced 2005-05-04; 126 media, ballot 5-3-1.
+
+| # | Player | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WINNER | Emeka Okafor | Washington Wizards | 70 | 35.0 | 14.4 | 9.4 | 0.8 | 1.0 | 2.2 | 11.04 | 608 | 115 |
+| 2 | Josh Childress | Phoenix Suns | 81 | 30.1 | 11.3 | 6.4 | 2.1 | 0.8 | 0.5 | 9.42 | 344 | 11 |
+| 3 | Nenad Krstić | New York Knicks | 78 | 28.4 | 13.3 | 5.5 | 1.2 | 0.5 | 0.8 | 8.84 | 169 | 0 |
 
 Complete tally: `season_awards.json` (4 receiving votes).

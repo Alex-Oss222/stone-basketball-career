@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `princta01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-05-03 · **Club on this date:** Golden State Warriors · **Basis:** Golden State Warriors: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-05-04 · **Club on this date:** Golden State Warriors · **Basis:** Golden State Warriors: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #22 · **Born:** 1980-02-28 · **Age on card date:** 25  
 **Registry ID:** `princta01` · [Basketball-Reference page](https://www.basketball-reference.com/players/p/princta01.html) · ESPN ID 1724
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `princt
 
 ## Simulated statistics
 
-As of **2005-05-03**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-05-04**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 82 closed regular-season games through 2005-05-03. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 82 closed regular-season games through 2005-05-04. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -114,13 +114,13 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-03 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2004-05 playoffs from closed playoff results through 2005-05-04 ([bracket](../2004-05/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Golden State Warriors | 5 | 5 | 32.7 | 10.6 | 4.8 | 3.0 | 0.8 | 0.8 | 1.6 | 37.5% | 25.0% | 83.3% |
-| 2004-05 | Golden State Warriors | 4 | 4 | 37.8 | 16.5 | 6.0 | 2.5 | 0.8 | 1.0 | 2.0 | 46.4% | 33.3% | 83.3% |
+| 2004-05 | Golden State Warriors | 5 | 5 | 37.9 | 16.4 | 5.6 | 2.0 | 0.8 | 1.0 | 1.8 | 46.4% | 33.3% | 72.2% |
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2005-05-03. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2005-05-04. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

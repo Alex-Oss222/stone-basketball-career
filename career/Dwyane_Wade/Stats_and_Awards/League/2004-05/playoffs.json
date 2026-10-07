@@ -137,7 +137,7 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 2,
+    "Toronto Raptors": 3,
     "Philadelphia 76ers": 2
    },
    "winner": null,
@@ -188,7 +188,9 @@
      "home": "Toronto Raptors",
      "away": "Philadelphia 76ers",
      "conditional": true,
-     "event_id": "2005-05-04-philadelphia-76ers-at-toronto-raptors"
+     "event_id": "2005-05-04-philadelphia-76ers-at-toronto-raptors",
+     "result": "Philadelphia 76ers 87, Toronto Raptors 110",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 6,
@@ -222,7 +224,7 @@
    ],
    "home_court": "Boston Celtics",
    "wins": {
-    "Boston Celtics": 2,
+    "Boston Celtics": 3,
     "Chicago Bulls": 2
    },
    "winner": null,
@@ -273,7 +275,9 @@
      "home": "Boston Celtics",
      "away": "Chicago Bulls",
      "conditional": true,
-     "event_id": "2005-05-04-chicago-bulls-at-boston-celtics"
+     "event_id": "2005-05-04-chicago-bulls-at-boston-celtics",
+     "result": "Chicago Bulls 105, Boston Celtics 110",
+     "winner": "Boston Celtics"
     },
     {
      "game": 6,
@@ -481,10 +485,10 @@
    ],
    "home_court": "Phoenix Suns",
    "wins": {
-    "Phoenix Suns": 3,
+    "Phoenix Suns": 4,
     "Portland Trail Blazers": 1
    },
-   "winner": null,
+   "winner": "Phoenix Suns",
    "games": [
     {
      "game": 1,
@@ -532,7 +536,9 @@
      "home": "Phoenix Suns",
      "away": "Portland Trail Blazers",
      "conditional": true,
-     "event_id": "2005-05-04-portland-trail-blazers-at-phoenix-suns"
+     "event_id": "2005-05-04-portland-trail-blazers-at-phoenix-suns",
+     "result": "Portland Trail Blazers 99, Phoenix Suns 110",
+     "winner": "Phoenix Suns"
     },
     {
      "game": 6,
@@ -540,7 +546,8 @@
      "home": "Portland Trail Blazers",
      "away": "Phoenix Suns",
      "conditional": true,
-     "event_id": "2005-05-06-phoenix-suns-at-portland-trail-blazers"
+     "event_id": "2005-05-06-phoenix-suns-at-portland-trail-blazers",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -548,9 +555,11 @@
      "home": "Phoenix Suns",
      "away": "Portland Trail Blazers",
      "conditional": true,
-     "event_id": "2005-05-08-portland-trail-blazers-at-phoenix-suns"
+     "event_id": "2005-05-08-portland-trail-blazers-at-phoenix-suns",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2005-05-04"
   },
   {
    "id": "west-4-5",
@@ -746,10 +755,10 @@
    ],
    "home_court": "San Antonio Spurs",
    "wins": {
-    "San Antonio Spurs": 3,
+    "San Antonio Spurs": 4,
     "Los Angeles Lakers": 1
    },
-   "winner": null,
+   "winner": "San Antonio Spurs",
    "games": [
     {
      "game": 1,
@@ -797,7 +806,9 @@
      "home": "San Antonio Spurs",
      "away": "Los Angeles Lakers",
      "conditional": true,
-     "event_id": "2005-05-04-los-angeles-lakers-at-san-antonio-spurs"
+     "event_id": "2005-05-04-los-angeles-lakers-at-san-antonio-spurs",
+     "result": "Los Angeles Lakers 82, San Antonio Spurs 102",
+     "winner": "San Antonio Spurs"
     },
     {
      "game": 6,
@@ -805,7 +816,8 @@
      "home": "Los Angeles Lakers",
      "away": "San Antonio Spurs",
      "conditional": true,
-     "event_id": "2005-05-06-san-antonio-spurs-at-los-angeles-lakers"
+     "event_id": "2005-05-06-san-antonio-spurs-at-los-angeles-lakers",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -813,7 +825,163 @@
      "home": "San Antonio Spurs",
      "away": "Los Angeles Lakers",
      "conditional": true,
-     "event_id": "2005-05-08-los-angeles-lakers-at-san-antonio-spurs"
+     "event_id": "2005-05-08-los-angeles-lakers-at-san-antonio-spurs",
+     "not_needed": true
+    }
+   ],
+   "clinched_on": "2005-05-04"
+  },
+  {
+   "id": "west-semi-a",
+   "round": "conference_semifinals",
+   "conference": "West",
+   "seeds": [
+    1,
+    5
+   ],
+   "clubs": [
+    "Phoenix Suns",
+    "Sacramento Kings"
+   ],
+   "home_court": "Phoenix Suns",
+   "wins": {
+    "Phoenix Suns": 0,
+    "Sacramento Kings": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-05-08",
+     "home": "Phoenix Suns",
+     "away": "Sacramento Kings",
+     "conditional": false,
+     "event_id": "2005-05-08-sacramento-kings-at-phoenix-suns"
+    },
+    {
+     "game": 2,
+     "date": "2005-05-10",
+     "home": "Phoenix Suns",
+     "away": "Sacramento Kings",
+     "conditional": false,
+     "event_id": "2005-05-10-sacramento-kings-at-phoenix-suns"
+    },
+    {
+     "game": 3,
+     "date": "2005-05-12",
+     "home": "Sacramento Kings",
+     "away": "Phoenix Suns",
+     "conditional": false,
+     "event_id": "2005-05-12-phoenix-suns-at-sacramento-kings"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-14",
+     "home": "Sacramento Kings",
+     "away": "Phoenix Suns",
+     "conditional": false,
+     "event_id": "2005-05-14-phoenix-suns-at-sacramento-kings"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-16",
+     "home": "Phoenix Suns",
+     "away": "Sacramento Kings",
+     "conditional": true,
+     "event_id": "2005-05-16-sacramento-kings-at-phoenix-suns"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-18",
+     "home": "Sacramento Kings",
+     "away": "Phoenix Suns",
+     "conditional": true,
+     "event_id": "2005-05-18-phoenix-suns-at-sacramento-kings"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-20",
+     "home": "Phoenix Suns",
+     "away": "Sacramento Kings",
+     "conditional": true,
+     "event_id": "2005-05-20-sacramento-kings-at-phoenix-suns"
+    }
+   ]
+  },
+  {
+   "id": "west-semi-b",
+   "round": "conference_semifinals",
+   "conference": "West",
+   "seeds": [
+    3,
+    2
+   ],
+   "clubs": [
+    "Minnesota Timberwolves",
+    "San Antonio Spurs"
+   ],
+   "home_court": "San Antonio Spurs",
+   "wins": {
+    "Minnesota Timberwolves": 0,
+    "San Antonio Spurs": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-05-08",
+     "home": "San Antonio Spurs",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2005-05-08-minnesota-timberwolves-at-san-antonio-spurs"
+    },
+    {
+     "game": 2,
+     "date": "2005-05-10",
+     "home": "San Antonio Spurs",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2005-05-10-minnesota-timberwolves-at-san-antonio-spurs"
+    },
+    {
+     "game": 3,
+     "date": "2005-05-12",
+     "home": "Minnesota Timberwolves",
+     "away": "San Antonio Spurs",
+     "conditional": false,
+     "event_id": "2005-05-12-san-antonio-spurs-at-minnesota-timberwolves"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-14",
+     "home": "Minnesota Timberwolves",
+     "away": "San Antonio Spurs",
+     "conditional": false,
+     "event_id": "2005-05-14-san-antonio-spurs-at-minnesota-timberwolves"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-16",
+     "home": "San Antonio Spurs",
+     "away": "Minnesota Timberwolves",
+     "conditional": true,
+     "event_id": "2005-05-16-minnesota-timberwolves-at-san-antonio-spurs"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-18",
+     "home": "Minnesota Timberwolves",
+     "away": "San Antonio Spurs",
+     "conditional": true,
+     "event_id": "2005-05-18-san-antonio-spurs-at-minnesota-timberwolves"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-20",
+     "home": "San Antonio Spurs",
+     "away": "Minnesota Timberwolves",
+     "conditional": true,
+     "event_id": "2005-05-20-minnesota-timberwolves-at-san-antonio-spurs"
     }
    ]
   }

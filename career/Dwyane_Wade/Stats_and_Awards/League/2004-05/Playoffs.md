@@ -36,9 +36,9 @@ Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · [Miam
 
 ```
 EAST
-  (1) Toronto Raptors          2
+  (1) Toronto Raptors          3
   (8) Philadelphia 76ers       2
-  (4) Boston Celtics           2
+  (4) Boston Celtics           3
   (5) Chicago Bulls            2
         conference semifinal: winners meet
   (3) Cleveland Cavaliers      2
@@ -49,15 +49,15 @@ EAST
     conference final, then the NBA Finals
 
 WEST
-  (1) Phoenix Suns             3
-  (8) Portland Trail Blazers   1
+  (1) Phoenix Suns             4
+  (8) Portland Trail Blazers   1   -> Phoenix Suns
   (4) Dallas Mavericks         1
   (5) Sacramento Kings         4   -> Sacramento Kings
         conference semifinal: winners meet
   (3) Minnesota Timberwolves   4
   (6) Golden State Warriors    1   -> Minnesota Timberwolves
-  (2) San Antonio Spurs        3
-  (7) Los Angeles Lakers       1
+  (2) San Antonio Spurs        4
+  (7) Los Angeles Lakers       1   -> San Antonio Spurs
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
@@ -67,7 +67,7 @@ WEST
 
 ### East: (1) Toronto Raptors vs (8) Philadelphia 76ers
 
-Home court: Toronto Raptors. Series Toronto Raptors 2, Philadelphia 76ers 2.
+Home court: Toronto Raptors. Series Toronto Raptors 3, Philadelphia 76ers 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -75,13 +75,13 @@ Home court: Toronto Raptors. Series Toronto Raptors 2, Philadelphia 76ers 2.
 | 2 | Wed Apr 27 | Toronto Raptors | Philadelphia 76ers | Philadelphia 76ers 102, Toronto Raptors 107 (1OT) |
 | 3 | Sat Apr 30 | Philadelphia 76ers | Toronto Raptors | Toronto Raptors 91, Philadelphia 76ers 96 |
 | 4 | Mon May 2 | Philadelphia 76ers | Toronto Raptors | Toronto Raptors 82, Philadelphia 76ers 96 |
-| 5 | Wed May 4 | Toronto Raptors | Philadelphia 76ers | if needed |
+| 5 | Wed May 4 | Toronto Raptors | Philadelphia 76ers | Philadelphia 76ers 87, Toronto Raptors 110 |
 | 6 | Fri May 6 | Philadelphia 76ers | Toronto Raptors | if needed |
 | 7 | Sun May 8 | Toronto Raptors | Philadelphia 76ers | if needed |
 
 ### East: (4) Boston Celtics vs (5) Chicago Bulls
 
-Home court: Boston Celtics. Series Boston Celtics 2, Chicago Bulls 2.
+Home court: Boston Celtics. Series Boston Celtics 3, Chicago Bulls 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -89,7 +89,7 @@ Home court: Boston Celtics. Series Boston Celtics 2, Chicago Bulls 2.
 | 2 | Wed Apr 27 | Boston Celtics | Chicago Bulls | Chicago Bulls 79, Boston Celtics 96 |
 | 3 | Sat Apr 30 | Chicago Bulls | Boston Celtics | Boston Celtics 113, Chicago Bulls 102 (1OT) |
 | 4 | Mon May 2 | Chicago Bulls | Boston Celtics | Boston Celtics 88, Chicago Bulls 97 |
-| 5 | Wed May 4 | Boston Celtics | Chicago Bulls | if needed |
+| 5 | Wed May 4 | Boston Celtics | Chicago Bulls | Chicago Bulls 105, Boston Celtics 110 |
 | 6 | Fri May 6 | Chicago Bulls | Boston Celtics | if needed |
 | 7 | Sun May 8 | Boston Celtics | Chicago Bulls | if needed |
 
@@ -123,7 +123,7 @@ Home court: Miami Heat. Series Miami Heat 3, Detroit Pistons 2.
 
 ### West: (1) Phoenix Suns vs (8) Portland Trail Blazers
 
-Home court: Phoenix Suns. Series Phoenix Suns 3, Portland Trail Blazers 1.
+Home court: Phoenix Suns. Phoenix Suns wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -131,9 +131,9 @@ Home court: Phoenix Suns. Series Phoenix Suns 3, Portland Trail Blazers 1.
 | 2 | Wed Apr 27 | Phoenix Suns | Portland Trail Blazers | Portland Trail Blazers 104, Phoenix Suns 113 |
 | 3 | Sat Apr 30 | Portland Trail Blazers | Phoenix Suns | Phoenix Suns 91, Portland Trail Blazers 78 |
 | 4 | Mon May 2 | Portland Trail Blazers | Phoenix Suns | Phoenix Suns 84, Portland Trail Blazers 100 |
-| 5 | Wed May 4 | Phoenix Suns | Portland Trail Blazers | if needed |
-| 6 | Fri May 6 | Portland Trail Blazers | Phoenix Suns | if needed |
-| 7 | Sun May 8 | Phoenix Suns | Portland Trail Blazers | if needed |
+| 5 | Wed May 4 | Phoenix Suns | Portland Trail Blazers | Portland Trail Blazers 99, Phoenix Suns 110 |
+| 6 | Fri May 6 | Portland Trail Blazers | Phoenix Suns | not needed |
+| 7 | Sun May 8 | Phoenix Suns | Portland Trail Blazers | not needed |
 
 ### West: (4) Dallas Mavericks vs (5) Sacramento Kings
 
@@ -165,7 +165,7 @@ Home court: Minnesota Timberwolves. Minnesota Timberwolves wins 4-1.
 
 ### West: (2) San Antonio Spurs vs (7) Los Angeles Lakers
 
-Home court: San Antonio Spurs. Series San Antonio Spurs 3, Los Angeles Lakers 1.
+Home court: San Antonio Spurs. San Antonio Spurs wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -173,6 +173,36 @@ Home court: San Antonio Spurs. Series San Antonio Spurs 3, Los Angeles Lakers 1.
 | 2 | Wed Apr 27 | San Antonio Spurs | Los Angeles Lakers | Los Angeles Lakers 107, San Antonio Spurs 104 (1OT) |
 | 3 | Sat Apr 30 | Los Angeles Lakers | San Antonio Spurs | San Antonio Spurs 100, Los Angeles Lakers 92 |
 | 4 | Mon May 2 | Los Angeles Lakers | San Antonio Spurs | San Antonio Spurs 103, Los Angeles Lakers 92 |
-| 5 | Wed May 4 | San Antonio Spurs | Los Angeles Lakers | if needed |
-| 6 | Fri May 6 | Los Angeles Lakers | San Antonio Spurs | if needed |
-| 7 | Sun May 8 | San Antonio Spurs | Los Angeles Lakers | if needed |
+| 5 | Wed May 4 | San Antonio Spurs | Los Angeles Lakers | Los Angeles Lakers 82, San Antonio Spurs 102 |
+| 6 | Fri May 6 | Los Angeles Lakers | San Antonio Spurs | not needed |
+| 7 | Sun May 8 | San Antonio Spurs | Los Angeles Lakers | not needed |
+
+## Conference semifinals
+
+### West: (1) Phoenix Suns vs (5) Sacramento Kings
+
+Home court: Phoenix Suns. Series Phoenix Suns 0, Sacramento Kings 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun May 8 | Phoenix Suns | Sacramento Kings |  |
+| 2 | Tue May 10 | Phoenix Suns | Sacramento Kings |  |
+| 3 | Thu May 12 | Sacramento Kings | Phoenix Suns |  |
+| 4 | Sat May 14 | Sacramento Kings | Phoenix Suns |  |
+| 5 | Mon May 16 | Phoenix Suns | Sacramento Kings | if needed |
+| 6 | Wed May 18 | Sacramento Kings | Phoenix Suns | if needed |
+| 7 | Fri May 20 | Phoenix Suns | Sacramento Kings | if needed |
+
+### West: (3) Minnesota Timberwolves vs (2) San Antonio Spurs
+
+Home court: San Antonio Spurs. Series Minnesota Timberwolves 0, San Antonio Spurs 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun May 8 | San Antonio Spurs | Minnesota Timberwolves |  |
+| 2 | Tue May 10 | San Antonio Spurs | Minnesota Timberwolves |  |
+| 3 | Thu May 12 | Minnesota Timberwolves | San Antonio Spurs |  |
+| 4 | Sat May 14 | Minnesota Timberwolves | San Antonio Spurs |  |
+| 5 | Mon May 16 | San Antonio Spurs | Minnesota Timberwolves | if needed |
+| 6 | Wed May 18 | Minnesota Timberwolves | San Antonio Spurs | if needed |
+| 7 | Fri May 20 | San Antonio Spurs | Minnesota Timberwolves | if needed |
