@@ -862,7 +862,7 @@
    ],
    "home_court": "Phoenix Suns",
    "wins": {
-    "Phoenix Suns": 2,
+    "Phoenix Suns": 3,
     "Sacramento Kings": 2
    },
    "winner": null,
@@ -913,7 +913,9 @@
      "home": "Phoenix Suns",
      "away": "Sacramento Kings",
      "conditional": true,
-     "event_id": "2005-05-16-sacramento-kings-at-phoenix-suns"
+     "event_id": "2005-05-16-sacramento-kings-at-phoenix-suns",
+     "result": "Sacramento Kings 102, Phoenix Suns 103",
+     "winner": "Phoenix Suns"
     },
     {
      "game": 6,
@@ -948,7 +950,7 @@
    "home_court": "San Antonio Spurs",
    "wins": {
     "Minnesota Timberwolves": 3,
-    "San Antonio Spurs": 1
+    "San Antonio Spurs": 2
    },
    "winner": null,
    "games": [
@@ -998,7 +1000,9 @@
      "home": "San Antonio Spurs",
      "away": "Minnesota Timberwolves",
      "conditional": true,
-     "event_id": "2005-05-16-minnesota-timberwolves-at-san-antonio-spurs"
+     "event_id": "2005-05-16-minnesota-timberwolves-at-san-antonio-spurs",
+     "result": "Minnesota Timberwolves 91, San Antonio Spurs 95",
+     "winner": "San Antonio Spurs"
     },
     {
      "game": 6,
@@ -1032,10 +1036,10 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 3,
+    "Toronto Raptors": 4,
     "Boston Celtics": 1
    },
-   "winner": null,
+   "winner": "Toronto Raptors",
    "games": [
     {
      "game": 1,
@@ -1083,7 +1087,9 @@
      "home": "Toronto Raptors",
      "away": "Boston Celtics",
      "conditional": true,
-     "event_id": "2005-05-16-boston-celtics-at-toronto-raptors"
+     "event_id": "2005-05-16-boston-celtics-at-toronto-raptors",
+     "result": "Boston Celtics 92, Toronto Raptors 99",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 6,
@@ -1091,7 +1097,8 @@
      "home": "Boston Celtics",
      "away": "Toronto Raptors",
      "conditional": true,
-     "event_id": "2005-05-18-toronto-raptors-at-boston-celtics"
+     "event_id": "2005-05-18-toronto-raptors-at-boston-celtics",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -1099,9 +1106,11 @@
      "home": "Toronto Raptors",
      "away": "Boston Celtics",
      "conditional": true,
-     "event_id": "2005-05-20-boston-celtics-at-toronto-raptors"
+     "event_id": "2005-05-20-boston-celtics-at-toronto-raptors",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2005-05-16"
   },
   {
    "id": "east-semi-b",
