@@ -42,8 +42,8 @@ EAST
   (5) Chicago Bulls            0
         conference semifinal: winners meet
   (3) Cleveland Cavaliers      0
-  (6) Atlanta Hawks            0
-  (2) Miami Heat               0
+  (6) Atlanta Hawks            1
+  (2) Miami Heat               1
   (7) Detroit Pistons          0
         conference semifinal: winners meet
     conference final, then the NBA Finals
@@ -51,10 +51,10 @@ EAST
 WEST
   (1) Phoenix Suns             0
   (8) Portland Trail Blazers   0
-  (4) Dallas Mavericks         0
+  (4) Dallas Mavericks         1
   (5) Sacramento Kings         0
         conference semifinal: winners meet
-  (3) Minnesota Timberwolves   0
+  (3) Minnesota Timberwolves   1
   (6) Golden State Warriors    0
   (2) San Antonio Spurs        0
   (7) Los Angeles Lakers       0
@@ -95,11 +95,11 @@ Home court: Boston Celtics. Series Boston Celtics 0, Chicago Bulls 0.
 
 ### East: (3) Cleveland Cavaliers vs (6) Atlanta Hawks
 
-Home court: Cleveland Cavaliers. Series Cleveland Cavaliers 0, Atlanta Hawks 0.
+Home court: Cleveland Cavaliers. Series Cleveland Cavaliers 0, Atlanta Hawks 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sat Apr 23 | Cleveland Cavaliers | Atlanta Hawks |  |
+| 1 | Sat Apr 23 | Cleveland Cavaliers | Atlanta Hawks | Atlanta Hawks 99, Cleveland Cavaliers 88 |
 | 2 | Tue Apr 26 | Cleveland Cavaliers | Atlanta Hawks |  |
 | 3 | Fri Apr 29 | Atlanta Hawks | Cleveland Cavaliers |  |
 | 4 | Sun May 1 | Atlanta Hawks | Cleveland Cavaliers |  |
@@ -109,11 +109,11 @@ Home court: Cleveland Cavaliers. Series Cleveland Cavaliers 0, Atlanta Hawks 0.
 
 ### East: (2) Miami Heat vs (7) Detroit Pistons
 
-Home court: Miami Heat. Series Miami Heat 0, Detroit Pistons 0.
+Home court: Miami Heat. Series Miami Heat 1, Detroit Pistons 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sat Apr 23 | Miami Heat | Detroit Pistons |  |
+| 1 | Sat Apr 23 | Miami Heat | Detroit Pistons | Detroit Pistons 85, Miami Heat 99 |
 | 2 | Tue Apr 26 | Miami Heat | Detroit Pistons |  |
 | 3 | Fri Apr 29 | Detroit Pistons | Miami Heat |  |
 | 4 | Sun May 1 | Detroit Pistons | Miami Heat |  |
@@ -137,11 +137,11 @@ Home court: Phoenix Suns. Series Phoenix Suns 0, Portland Trail Blazers 0.
 
 ### West: (4) Dallas Mavericks vs (5) Sacramento Kings
 
-Home court: Dallas Mavericks. Series Dallas Mavericks 0, Sacramento Kings 0.
+Home court: Dallas Mavericks. Series Dallas Mavericks 1, Sacramento Kings 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sat Apr 23 | Dallas Mavericks | Sacramento Kings |  |
+| 1 | Sat Apr 23 | Dallas Mavericks | Sacramento Kings | Sacramento Kings 103, Dallas Mavericks 116 |
 | 2 | Tue Apr 26 | Dallas Mavericks | Sacramento Kings |  |
 | 3 | Fri Apr 29 | Sacramento Kings | Dallas Mavericks |  |
 | 4 | Sun May 1 | Sacramento Kings | Dallas Mavericks |  |
@@ -151,11 +151,11 @@ Home court: Dallas Mavericks. Series Dallas Mavericks 0, Sacramento Kings 0.
 
 ### West: (3) Minnesota Timberwolves vs (6) Golden State Warriors
 
-Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 0, Golden State Warriors 0.
+Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 1, Golden State Warriors 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sat Apr 23 | Minnesota Timberwolves | Golden State Warriors |  |
+| 1 | Sat Apr 23 | Minnesota Timberwolves | Golden State Warriors | Golden State Warriors 85, Minnesota Timberwolves 109 |
 | 2 | Tue Apr 26 | Minnesota Timberwolves | Golden State Warriors |  |
 | 3 | Fri Apr 29 | Golden State Warriors | Minnesota Timberwolves |  |
 | 4 | Sun May 1 | Golden State Warriors | Minnesota Timberwolves |  |
