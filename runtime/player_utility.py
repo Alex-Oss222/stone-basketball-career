@@ -64,7 +64,8 @@ SMALL_MARKETS = {"Memphis Grizzlies", "Milwaukee Bucks", "Utah Jazz", "San Anton
 MARKET_SCORE = {"large": 100, "mid": 60, "small": 35}
 
 MONEY_CENTER, MONEY_SPAN = 60, 100       # money score at the ask, and points per unit of log(guaranteed / ask total)
-ASK_RAISE = 0.10                          # the ask's yearly raise when pricing the seasons he wants
+ASK_RAISE = 0.10                          # the ask's yearly raise when pricing the seasons he wants (1999 non-Bird raise;
+                                          # a later summer passes its agreement's rate as player["ask_raise"], see ask_raise)
 ROLE_FLOOR_MINUTES = 12                   # a player with almost no 2002-03 minutes compares against this
 DEFAULT_MINUTES = 24                      # no 2002-03 minutes recorded
 DEALBREAKER = {"minutes": 30, "start_share": 0.75, "ages": (25, 31), "offered_below": 20}
@@ -94,6 +95,13 @@ def weights(age, trait):
     return {f: round(v / total, 4) for f, v in raw.items()}
 
 
+def ask_raise(season, root=None):
+    """The yearly raise a player prices his ask with in a season: the agreement's non-Bird raise
+    (`runtime/agreement.py`: 10% under the 1999 agreement, 8% from 2005-06)."""
+    from . import agreement
+    return agreement.raise_share("other", season, *([root] if root else []))
+
+
 def clip(x, lo=0.0, hi=100.0):
     return max(lo, min(hi, x))
 
@@ -106,7 +114,8 @@ def scores(terms, situation, player):
     player: ask (first-year asking salary), years_wanted, prior_minutes, prior_club.
     """
     wanted = max(1, player["years_wanted"])
-    ask_total = sum(player["ask"] * (1 + ASK_RAISE * i) for i in range(wanted))
+    rate = player.get("ask_raise", ASK_RAISE)
+    ask_total = sum(player["ask"] * (1 + rate * i) for i in range(wanted))
     money = clip(MONEY_CENTER + MONEY_SPAN * math.log(max(terms["guaranteed"], 1) / max(ask_total, 1)))
     years = min(terms["years"], wanted) - (0.5 if terms.get("last_year_guaranteed") is False else 0)
     security = clip(100 * years / wanted)

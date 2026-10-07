@@ -916,9 +916,10 @@ class Market:
     def assess(self, b, offer, week):
         """(utility points, dealbreaker or None) of an offer, by the 2003 factor model with his drawn priority."""
         from . import player_utility as pu
-        player = self.profile(b, week)
+        rate = pu.ask_raise(NEW, self.root)
+        player = dict(self.profile(b, week), ask_raise=rate)
         situation = {"club": offer["club"], "role_minutes": self.role_minutes(offer["club"], b), "strength": self.wins(offer["club"])}
-        terms = {"guaranteed": sum(offer["salary"] * (1 + pu.ASK_RAISE * i) for i in range(offer["years"])), "years": offer["years"]}
+        terms = {"guaranteed": sum(offer["salary"] * (1 + rate * i) for i in range(offer["years"])), "years": offer["years"]}
         score = pu.scores(terms, situation, player)
         return pu.utility(score, pu.weights(player["age"], self.trait.get(b, "money"))), pu.dealbreaker(situation, player)
 

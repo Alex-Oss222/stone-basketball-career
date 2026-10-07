@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RULES_PATH = Path("library/2003/league/nba_1999_cba_rules.json")
 MINIMUM_SCALE_PATH = Path("library/2003/league/nba_1999_cba_minimum_salary_scale.json")
+MINIMUM_SCALE_2005_PATH = Path("library/2005/league/nba_2005_cba_minimum_salary_scale.json")
 MINIMUM_CAP_SERVICE = 5        # FAQ Q9: a one-year minimum for a 5+ year veteran counts the 4-year minimum
 CBA_2005_PATH = Path("library/2005/league/nba_2005_cba_rules.json")
 # The 2005 agreement governs contracts signed from its ratification (sourced: UPI, July 30, 2005; roadmap 19); every
@@ -55,13 +56,14 @@ def minimum_scale(root=ROOT):
 
 def minimum_salary(years_of_service, season="2003-04", root=ROOT):
     """The minimum salary for a player's years of NBA service before the season (1999 FAQ Q9; from 2005-06 the 2005
-    agreement's scale, 2005 FAQ Q11)."""
+    agreement's scale, 2005 FAQ Q11, in `library/2005/league/nba_2005_cba_minimum_salary_scale.json`)."""
     if years_of_service is None:
         raise ValueError("years of service are not recorded; the minimum salary cannot be set")
     seasons = minimum_scale(root)["seasons"]
-    if season not in seasons and season == "2005-06":
-        row = json.loads((Path(root) / CBA_2005_PATH).read_text(encoding="utf-8"))["minimum_salary_2005_06"]["value"]
-        return row["10_plus"] if years_of_service >= 10 else row[str(max(0, int(years_of_service)))]
+    if season not in seasons and season >= "2005-06":       # the 2005 agreement's fixed scale, 2005-06 to 2010-11
+        seasons = json.loads((Path(root) / MINIMUM_SCALE_2005_PATH).read_text(encoding="utf-8"))["seasons"]
+    if season not in seasons:
+        raise ValueError(f"no researched minimum salary scale for {season}; add it before signing a {season} minimum")
     row = seasons[season]
     return row["10_plus"] if years_of_service >= 10 else row[str(max(0, int(years_of_service)))]
 

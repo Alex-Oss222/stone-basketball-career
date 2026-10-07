@@ -91,5 +91,27 @@ class AllStarTests(unittest.TestCase):
         self.assertEqual(previous_coaches(ctx(ROOT, "2004-05"), ROOT), {r["coach"] for r in step["conferences"].values()})
 
 
+class MinimumScaleAndAskTests(unittest.TestCase):
+    def test_2005_scale_covers_the_agreement(self):
+        self.assertEqual(minimum_salary(0, "2006-07", ROOT), 412718)       # cbafaq05 Q11
+        self.assertEqual(minimum_salary(10, "2010-11", ROOT), 1352181)
+        self.assertEqual(minimum_salary(3, "2005-06", ROOT), 745248)       # same as the 2005 rules file
+        with self.assertRaises(ValueError):                                  # no figure is invented past the agreement
+            minimum_salary(1, "2011-12", ROOT)
+
+    def test_multi_year_minimum_has_every_season(self):
+        for season in ("2005-06", "2006-07", "2007-08", "2008-09", "2009-10", "2010-11"):
+            self.assertGreater(minimum_salary(4, season, ROOT), 0)
+
+    def test_ask_raise_follows_the_agreement(self):
+        from runtime import player_utility as pu
+        self.assertEqual(pu.ask_raise("2004-05", ROOT), pu.ASK_RAISE)     # 1999 summers replay unchanged
+        self.assertEqual(pu.ask_raise("2005-06", ROOT), 0.08)
+        terms, situation = {"guaranteed": 3 * 1_000_000 * 1.08, "years": 3}, {"club": None}
+        player = {"ask": 1_000_000, "years_wanted": 3}
+        self.assertGreater(pu.scores(terms, situation, dict(player, ask_raise=0.08))["money"],
+                           pu.scores(terms, situation, player)["money"])
+
+
 if __name__ == "__main__":
     unittest.main()

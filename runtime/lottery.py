@@ -144,6 +144,23 @@ def order_by_record(clubs, table, root, label, worst_first=True, y=None):
     return out
 
 
+def miami_pick_trades(root, season, year, code):
+    """Miami's own picks of this draft that simulated Miami traded, as {(round, "MIA"): owner code}. The ownership file
+    is fixed at the December 3, 2003 activation and never sees a simulated trade; Miami's pick ledger
+    (`00_Team/Finances/draft_picks.json`, appended by the trade write-back) does. The last recorded holder owns it."""
+    path = Path(root) / f"career/Dwyane_Wade/{season}/00_Team/Finances/draft_picks.json"
+    if not path.is_file():
+        return {}
+    out = {}
+    for p in _read(path).get("picks", []):
+        moves = [h for h in p.get("history", []) if h.get("to")]
+        if int(p["year"]) != int(year) or p.get("owned", True) or not moves:
+            continue
+        holder = moves[-1]["to"]
+        out[(int(p["round"]), code[p["original_club"]])] = code.get(holder, holder)
+    return out
+
+
 def build(root=ROOT, year=2004):
     """The draft order record, or None while an engine draw is pending."""
     root = Path(root)
@@ -195,6 +212,7 @@ def build(root=ROOT, year=2004):
     second = [c for c in second if code[c] not in forfeit_2]
     if expansion and own["expansion"].get("round_2_slot"):
         second.insert(own["expansion"]["round_2_slot"] - len(first_round) - 1, "__EXP__")
+    miami_traded = miami_pick_trades(root, y.season if y else SEASON, year, code)
     slots = []
     for rnd, seq, owners in ((1, first_round, own["round_1"]), (2, second, own["round_2"])):
         for club in seq:
@@ -202,6 +220,7 @@ def build(root=ROOT, year=2004):
             owner = owners.get(original, {}).get("owner", original)
             if protected(owners.get(original, {}), year, len(slots) + 1):
                 owner = original                       # a protected pick stays with its club this year
+            owner = miami_traded.get((rnd, original), owner)    # a simulated Miami trade of the pick wins
             slots.append({"pick": len(slots) + 1, "round": rnd, "original": original, "owner": owner,
                           "owner_club": names.get(owner, owner)})
     return {"schema_version": 1, "kind": "draft_order", "draft": f"{year} NBA Draft", "lottery_date": date,

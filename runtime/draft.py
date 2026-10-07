@@ -373,7 +373,7 @@ def _miami_pick_ledger(root, trades):
         for pick in data["picks"]:
             if pick["year"] == YEAR + 1 and pick["round"] == 2 and pick["original_club"] == MIAMI and pick["owned"]:
                 pick["owned"] = False
-                pick["history"].append({"date": DRAFT_DATE, "event": f"traded to {t['from']} with Miami's move from No. "
+                pick["history"].append({"date": DRAFT_DATE, "to": t["from"], "event": f"traded to {t['from']} with Miami's move from No. "
                                         f"{t['for_slot']} to No. {t['slot']} in the {YEAR} draft", "source": RECORD.as_posix()})
                 changed = True
     if changed:

@@ -1,0 +1,106 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "minimum_salary_scale",
+ "agreement": "2005 NBA/NBPA collective bargaining agreement",
+ "unit": "whole dollars",
+ "key": "years of NBA experience before the season; 10_plus means ten or more",
+ "seasons": {
+  "2005-06": {
+   "0": 398762,
+   "1": 641748,
+   "2": 719373,
+   "3": 745248,
+   "4": 771123,
+   "5": 835810,
+   "6": 900498,
+   "7": 965185,
+   "8": 1029873,
+   "9": 1035000,
+   "10_plus": 1138500
+  },
+  "2006-07": {
+   "0": 412718,
+   "1": 664209,
+   "2": 744551,
+   "3": 771331,
+   "4": 798112,
+   "5": 865063,
+   "6": 932015,
+   "7": 998967,
+   "8": 1065918,
+   "9": 1071225,
+   "10_plus": 1178348
+  },
+  "2007-08": {
+   "0": 427163,
+   "1": 687456,
+   "2": 770610,
+   "3": 798328,
+   "4": 826046,
+   "5": 895341,
+   "6": 964636,
+   "7": 1033930,
+   "8": 1103225,
+   "9": 1108718,
+   "10_plus": 1219590
+  },
+  "2008-09": {
+   "0": 442114,
+   "1": 711517,
+   "2": 797581,
+   "3": 826269,
+   "4": 854957,
+   "5": 926678,
+   "6": 998398,
+   "7": 1070118,
+   "8": 1141838,
+   "9": 1147523,
+   "10_plus": 1262275
+  },
+  "2009-10": {
+   "0": 457588,
+   "1": 736420,
+   "2": 825497,
+   "3": 855189,
+   "4": 884881,
+   "5": 959111,
+   "6": 1033342,
+   "7": 1107572,
+   "8": 1181803,
+   "9": 1187686,
+   "10_plus": 1306455
+  },
+  "2010-11": {
+   "0": 473604,
+   "1": 762195,
+   "2": 854389,
+   "3": 885120,
+   "4": 915852,
+   "5": 992680,
+   "6": 1069509,
+   "7": 1146337,
+   "8": 1223166,
+   "9": 1229255,
+   "10_plus": 1352181
+  }
+ },
+ "fixed_on": "2005-07-30",
+ "knowledge_note": "The scale is a fixed schedule written into the 2005 agreement, known from its ratification on July 30, 2005; it is not a later result. The FAQ's 2011-12 column is left out: the league opted out of the agreement before that season.",
+ "cap_treatment": {
+  "rule": "A 3+-year veteran's one-year minimum contract counts the 2-year minimum on team salary; the league reimburses the rest (cbafaq05 Q11).",
+  "implemented_in": "runtime/cba.minimum_cap_amount"
+ },
+ "sources": [
+  {
+   "url": "http://www.cbafaq.com/salarycap05.htm",
+   "use": "Question 11 minimum salary table (2005-06 to 2011-12 columns), parsed from the fetched page",
+   "retrieved_on": "2026-10-07"
+  }
+ ],
+ "verification": {
+  "cells": 66,
+  "cross_checked": "the 2005-06 column equals library/2005/league/nba_2005_cba_rules.json minimum_salary_2005_06 (same source, read 2026-10-05); every row rises each season",
+  "note": "The other 55 cells rest on one parsed reading of one page."
+ }
+}
