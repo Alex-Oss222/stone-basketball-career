@@ -3252,6 +3252,68 @@
    "bbr_id": "martida01",
    "from": "Portland Trail Blazers",
    "to": "New York Knicks"
+  },
+  {
+   "id": "2004-05-market-2005-02-16-ten_day-breweja01",
+   "date": "2005-02-16",
+   "kind": "ten_day",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-02-26",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.47 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-02-16-expire-bowenry01",
+   "date": "2005-02-16",
+   "kind": "expire",
+   "player": "Ryan Bowen",
+   "bbr_id": "bowenry01",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Ryan Bowen",
+    "bbr_id": "bowenry01",
+    "position": "SF",
+    "games": 66,
+    "minutes": 604
+   },
+   "contract": null,
+   "note": "10-day contract ended (7.7 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-02-16-rest_of_season-hartja01",
+   "date": "2005-02-16",
+   "kind": "rest_of_season",
+   "player": "Jason Hart",
+   "bbr_id": "hartja01",
+   "from": "Detroit Pistons",
+   "to": "Detroit Pistons",
+   "role": {
+    "player_id": "Jason Hart",
+    "bbr_id": "hartja01",
+    "position": "PG",
+    "games": 74,
+    "minutes": 1887
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 15.6 minutes a game on his 10-day contracts"
   }
  ],
  "market_days": [
@@ -3360,6 +3422,7 @@
   "2005-02-12",
   "2005-02-13",
   "2005-02-14",
-  "2005-02-15"
+  "2005-02-15",
+  "2005-02-16"
  ]
 }
