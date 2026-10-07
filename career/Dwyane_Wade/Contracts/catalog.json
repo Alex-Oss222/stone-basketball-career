@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-03-02",
+  "as_of": "2005-03-06",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2966,7 +2966,7 @@
     {
       "player_id": "hunteli01",
       "name": "Lindsey Hunter",
-      "team": "Free agent",
+      "team": "Washington Wizards",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3389,7 +3389,7 @@
     {
       "player_id": "bradlmi01",
       "name": "Michael Bradley",
-      "team": "Free agent",
+      "team": "Indiana Pacers",
       "status": "under rookie contract",
       "current_contract_id": "bradlmi01-2001-07-23",
       "recorded_agreements": 1,

@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2005-03-02** · Toronto Raptors · #4 · PF · age 20
+Career date: **2005-03-06** · Toronto Raptors · #4 · PF · age 20
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,24 +14,24 @@ Career date: **2005-03-02** · Toronto Raptors · #4 · PF · age 20
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 55/55 | 39.6 | 18.2 | 9.1 | 2.9 | 1.1 | 1.4 | 51.1 | 47.5 | 82.5 | 57.7 | 40-16 |
+| 2004-05 | 20 | Toronto Raptors | 58/58 | 39.7 | 17.9 | 9.3 | 2.9 | 1.1 | 1.4 | 50.3 | 46.3 | 82.6 | 56.9 | 42-17 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 55 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 58 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 39.6 |
-| Points | 20.2 | 18.2 |
-| Rebounds | 11.1 | 9.1 |
+| Minutes | 36.5 | 39.7 |
+| Points | 20.2 | 17.9 |
+| Rebounds | 11.1 | 9.3 |
 | Assists | 3.5 | 2.9 |
 | Steals | 0.9 | 1.1 |
 | Blocks | 1.5 | 1.4 |
-| FG% | 51.4 | 51.1 |
-| 3P% | 41.2 | 47.5 |
-| FT% | 90.8 | 82.5 |
-| TS% (est.) | 64.0 | 57.7 |
+| FG% | 51.4 | 50.3 |
+| 3P% | 41.2 | 46.3 |
+| FT% | 90.8 | 82.6 |
+| TS% (est.) | 64.0 | 56.9 |
 
 ## Playoffs
 
@@ -42,7 +42,7 @@ No playoff games closed.
 | Stat | High | Game |
 | --- | --- | --- |
 | Points | 34 | 2004-11-23 at Washington Wizards |
-| Rebounds | 16 | 2004-11-19 vs Seattle SuperSonics (+1) |
+| Rebounds | 16 | 2004-11-19 vs Seattle SuperSonics (+2) |
 | Assists | 7 | 2005-01-28 at Charlotte Bobcats (+1) |
 | Steals | 3 | 2004-11-03 vs Houston Rockets (+6) |
 | Blocks | 4 | 2005-02-09 vs Milwaukee Bucks (+1) |
