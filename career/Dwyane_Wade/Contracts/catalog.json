@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-02-21",
+  "as_of": "2005-02-27",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2138,7 +2138,7 @@
     {
       "player_id": "breweja01",
       "name": "Jamison Brewer",
-      "team": "Atlanta Hawks",
+      "team": "Milwaukee Bucks",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2975,7 +2975,7 @@
     {
       "player_id": "johnsli01",
       "name": "Linton Johnson",
-      "team": "Free agent",
+      "team": "Houston Rockets",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3794,7 +3794,7 @@
     {
       "player_id": "shirlpa01",
       "name": "Paul Shirley",
-      "team": "Free agent",
+      "team": "Philadelphia 76ers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4631,7 +4631,7 @@
     {
       "player_id": "slayta01",
       "name": "Tamar Slay",
-      "team": "Free agent",
+      "team": "Chicago Bulls",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
