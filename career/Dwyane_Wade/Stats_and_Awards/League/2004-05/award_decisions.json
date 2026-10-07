@@ -3332,6 +3332,110 @@
     }
    ],
    "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-04-04-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-04-04",
+   "period_end": "2005-04-10",
+   "announced_on": "2005-04-11",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Gilbert Arenas",
+     "team": "Washington Wizards",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 27.2,
+     "reb": 6.0,
+     "ast": 6.2,
+     "game_score": 21.5,
+     "score": 92.0,
+     "rank": 1
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 28.0,
+     "reb": 6.0,
+     "ast": 5.5,
+     "game_score": 19.55,
+     "score": 84.2,
+     "rank": 2
+    },
+    {
+     "player": "Drew Gooden",
+     "team": "Orlando Magic",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 29.3,
+     "reb": 9.7,
+     "ast": 1.7,
+     "game_score": 24.43,
+     "score": 79.3,
+     "rank": 3
+    }
+   ],
+   "winner": "Gilbert Arenas"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-04-04-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-04-04",
+   "period_end": "2005-04-10",
+   "announced_on": "2005-04-11",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 26.8,
+     "reb": 7.0,
+     "ast": 5.5,
+     "game_score": 22.73,
+     "score": 93.9,
+     "rank": 1
+    },
+    {
+     "player": "Jason Richardson",
+     "team": "Golden State Warriors",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 26.5,
+     "reb": 5.8,
+     "ast": 2.5,
+     "game_score": 20.8,
+     "score": 89.2,
+     "rank": 2
+    },
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 34.0,
+     "reb": 5.7,
+     "ast": 2.7,
+     "game_score": 24.57,
+     "score": 82.7,
+     "rank": 3
+    }
+   ],
+   "winner": "Kobe Bryant"
   }
  ]
 }
