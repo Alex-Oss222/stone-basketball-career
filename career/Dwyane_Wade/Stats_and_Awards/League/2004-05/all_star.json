@@ -1154,6 +1154,26 @@
      ]
     }
    }
+  },
+  {
+   "step": "replacements",
+   "announced_on": "2005-02-18",
+   "evidence_through": "2005-02-17",
+   "electorate": "the Commissioner",
+   "conferences": {
+    "East": [
+     {
+      "out": "Jason Kidd",
+      "out_team": "New Jersey Nets",
+      "role": "starter",
+      "reason": "played in none of New Jersey Nets's last two games (2005-02-15, 2005-02-16)",
+      "replacement": "Jamal Crawford",
+      "replacement_team": "Chicago Bulls",
+      "position": "G"
+     }
+    ],
+    "West": []
+   }
   }
  ],
  "all_stars": [
@@ -1164,7 +1184,7 @@
    "conference": "East",
    "role": "starter",
    "selected_on": "2005-02-03",
-   "recorded_on": "2005-02-08"
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Tracy McGrady",
@@ -1173,7 +1193,7 @@
    "conference": "East",
    "role": "starter",
    "selected_on": "2005-02-03",
-   "recorded_on": "2005-02-08"
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Ben Wallace",
@@ -1182,7 +1202,7 @@
    "conference": "East",
    "role": "starter",
    "selected_on": "2005-02-03",
-   "recorded_on": "2005-02-08"
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "LeBron James",
@@ -1191,7 +1211,7 @@
    "conference": "East",
    "role": "starter",
    "selected_on": "2005-02-03",
-   "recorded_on": "2005-02-08"
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Jermaine O'Neal",
@@ -1200,7 +1220,7 @@
    "conference": "East",
    "role": "starter",
    "selected_on": "2005-02-03",
-   "recorded_on": "2005-02-08"
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Vince Carter",
@@ -1208,7 +1228,8 @@
    "team": "Toronto Raptors",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Paul Pierce",
@@ -1216,7 +1237,8 @@
    "team": "Boston Celtics",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Chris Bosh",
@@ -1224,7 +1246,8 @@
    "team": "Toronto Raptors",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Zydrunas Ilgauskas",
@@ -1232,7 +1255,8 @@
    "team": "Philadelphia 76ers",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Morris Peterson",
@@ -1240,7 +1264,8 @@
    "team": "Toronto Raptors",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Dwyane Wade",
@@ -1248,7 +1273,8 @@
    "team": "Miami Heat",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Allen Iverson",
@@ -1256,7 +1282,8 @@
    "team": "Philadelphia 76ers",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Kevin Garnett",
@@ -1265,7 +1292,7 @@
    "conference": "West",
    "role": "starter",
    "selected_on": "2005-02-03",
-   "recorded_on": "2005-02-08"
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Shaquille O'Neal",
@@ -1274,7 +1301,7 @@
    "conference": "West",
    "role": "starter",
    "selected_on": "2005-02-03",
-   "recorded_on": "2005-02-08"
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Kobe Bryant",
@@ -1283,7 +1310,7 @@
    "conference": "West",
    "role": "starter",
    "selected_on": "2005-02-03",
-   "recorded_on": "2005-02-08"
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Tim Duncan",
@@ -1292,7 +1319,7 @@
    "conference": "West",
    "role": "starter",
    "selected_on": "2005-02-03",
-   "recorded_on": "2005-02-08"
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Stephon Marbury",
@@ -1301,7 +1328,7 @@
    "conference": "West",
    "role": "starter",
    "selected_on": "2005-02-03",
-   "recorded_on": "2005-02-08"
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Shawn Marion",
@@ -1309,7 +1336,8 @@
    "team": "Phoenix Suns",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Amar'e Stoudemire",
@@ -1317,7 +1345,8 @@
    "team": "Phoenix Suns",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Manu Ginobili",
@@ -1325,7 +1354,8 @@
    "team": "San Antonio Spurs",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Joe Johnson",
@@ -1333,7 +1363,8 @@
    "team": "Phoenix Suns",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Kurt Thomas",
@@ -1341,7 +1372,8 @@
    "team": "San Antonio Spurs",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Dirk Nowitzki",
@@ -1349,7 +1381,8 @@
    "team": "Dallas Mavericks",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
   },
   {
    "player": "Peja Stojakovic",
@@ -1357,7 +1390,59 @@
    "team": "Sacramento Kings",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2005-02-08"
+   "selected_on": "2005-02-08",
+   "recorded_on": "2005-02-18"
+  },
+  {
+   "player": "Jamal Crawford",
+   "bbr_id": "crawfja01",
+   "team": "Chicago Bulls",
+   "conference": "East",
+   "role": "injury replacement",
+   "selected_on": "2005-02-18",
+   "replacing": "Jason Kidd"
   }
- ]
+ ],
+ "game_rosters": {
+  "East": {
+   "starters": [
+    "Tracy McGrady",
+    "Ben Wallace",
+    "LeBron James",
+    "Jermaine O'Neal",
+    "Vince Carter"
+   ],
+   "reserves": [
+    "Paul Pierce",
+    "Chris Bosh",
+    "Zydrunas Ilgauskas",
+    "Morris Peterson",
+    "Dwyane Wade",
+    "Allen Iverson",
+    "Jamal Crawford"
+   ],
+   "out": [
+    "Jason Kidd"
+   ]
+  },
+  "West": {
+   "starters": [
+    "Kevin Garnett",
+    "Shaquille O'Neal",
+    "Kobe Bryant",
+    "Tim Duncan",
+    "Stephon Marbury"
+   ],
+   "reserves": [
+    "Shawn Marion",
+    "Amar'e Stoudemire",
+    "Manu Ginobili",
+    "Joe Johnson",
+    "Kurt Thomas",
+    "Dirk Nowitzki",
+    "Peja Stojakovic"
+   ],
+   "out": []
+  }
+ }
 }

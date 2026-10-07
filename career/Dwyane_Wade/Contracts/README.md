@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-02-14. [Search the contract directory](index.html)
+Known through 2005-02-18. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -245,7 +245,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [James Lang](players/langja01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [James Posey](players/poseyja01.md) | Memphis Grizzlies | under contract | James Posey · 2003-08-09 | 2 |
 | [James Thomas](players/jamesthomas.md) | Denver Nuggets | under contract | James Thomas · 2004-08-05 | 1 |
-| [Jamison Brewer](players/breweja01.md) | Free agent | minimum contract unverified | No verified current agreement | 0 |
+| [Jamison Brewer](players/breweja01.md) | Atlanta Hawks | minimum contract unverified | No verified current agreement | 0 |
 | [Jannero Pargo](players/pargoja01.md) | Charlotte Bobcats | under contract | Jannero Pargo · 2002-07-23 | 1 |
 | [Jared Jeffries](players/jeffrja01.md) | Washington Wizards | under rookie contract | Jared Jeffries · 2002-07-10 | 1 |
 | [Jared Reiner](players/jaredreiner.md) | Free agent | under contract | Jared Reiner · 2004-08-05 | 1 |
@@ -384,7 +384,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Mehmet Okur](players/okurme01.md) | Miami Heat | under contract | Mehmet Okur · 2004-09-23 | 1 |
 | [Melvin Ely](players/elyme01.md) | Los Angeles Clippers | under rookie contract | Melvin Ely · 2002-09-04 | 1 |
 | [Mengke Bateer](players/bateeme01.md) | Free agent | under contract | Mengke Bateer · 2003-07-17 | 2 |
-| [Michael Bradley](players/bradlmi01.md) | Houston Rockets | under rookie contract | Michael Bradley · 2001-07-23 | 1 |
+| [Michael Bradley](players/bradlmi01.md) | Free agent | under rookie contract | Michael Bradley · 2001-07-23 | 1 |
 | [Michael Curry](players/currymi01.md) | Free agent | under contract | Michael Curry · existing contract; signing date not recorded | 1 |
 | [Michael Doleac](players/doleami01.md) | New York Knicks | under contract | Michael Doleac · 2002-08-07 | 1 |
 | [Michael Finley](players/finlemi01.md) | Dallas Mavericks | under contract | Michael Finley · existing contract; signing date not recorded | 1 |
@@ -479,7 +479,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Ruben Boumtje-Boumtje](players/boumtru01.md) | Free agent | under contract | Ruben Boumtje-Boumtje · 2002-09-30 | 1 |
 | [Ruben Patterson](players/patteru01.md) | Portland Trail Blazers | under contract | Ruben Patterson · existing contract; signing date not recorded | 1 |
 | [Rusty LaRue](players/larueru01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
-| [Ryan Bowen](players/bowenry01.md) | Chicago Bulls | under contract unverified | No verified current agreement | 0 |
+| [Ryan Bowen](players/bowenry01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
 | [Ryan Humphrey](players/humphry01.md) | Memphis Grizzlies | under rookie contract | Ryan Humphrey · existing contract; signing date not recorded | 1 |
 | [Sam Cassell](players/cassesa01.md) | Minnesota Timberwolves | under contract unverified | No verified current agreement | 0 |
 | [Samaki Walker](players/walkesa01.md) | New Orleans Hornets | under contract | Samaki Walker · 2004-09-02 | 2 |

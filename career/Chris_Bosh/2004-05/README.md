@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2005-02-14** · Toronto Raptors · #4 · PF · age 20
+Career date: **2005-02-18** · Toronto Raptors · #4 · PF · age 20
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,24 +14,24 @@ Career date: **2005-02-14** · Toronto Raptors · #4 · PF · age 20
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 51/51 | 39.4 | 18.1 | 8.9 | 2.9 | 1.1 | 1.3 | 51.4 | 47.4 | 82.9 | 58.1 | 37-15 |
+| 2004-05 | 20 | Toronto Raptors | 52/52 | 39.3 | 18.1 | 9.0 | 2.9 | 1.1 | 1.3 | 51.1 | 47.4 | 83.2 | 57.8 | 38-15 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 51 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 52 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 39.4 |
+| Minutes | 36.5 | 39.3 |
 | Points | 20.2 | 18.1 |
-| Rebounds | 11.1 | 8.9 |
+| Rebounds | 11.1 | 9.0 |
 | Assists | 3.5 | 2.9 |
 | Steals | 0.9 | 1.1 |
 | Blocks | 1.5 | 1.3 |
-| FG% | 51.4 | 51.4 |
+| FG% | 51.4 | 51.1 |
 | 3P% | 41.2 | 47.4 |
-| FT% | 90.8 | 82.9 |
-| TS% (est.) | 64.0 | 58.1 |
+| FT% | 90.8 | 83.2 |
+| TS% (est.) | 64.0 | 57.8 |
 
 ## Playoffs
 
@@ -43,7 +43,7 @@ No playoff games closed.
 | --- | --- | --- |
 | Points | 34 | 2004-11-23 at Washington Wizards |
 | Rebounds | 16 | 2004-11-19 vs Seattle SuperSonics (+1) |
-| Assists | 7 | 2005-01-28 at Charlotte Bobcats |
+| Assists | 7 | 2005-01-28 at Charlotte Bobcats (+1) |
 | Steals | 3 | 2004-11-03 vs Houston Rockets (+6) |
 | Blocks | 4 | 2005-02-09 vs Milwaukee Bucks |
 | Threes | 2 | 2004-11-12 at Seattle SuperSonics |

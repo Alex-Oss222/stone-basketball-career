@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-02-14",
+  "as_of": "2005-02-18",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2138,7 +2138,7 @@
     {
       "player_id": "breweja01",
       "name": "Jamison Brewer",
-      "team": "Free agent",
+      "team": "Atlanta Hawks",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3389,7 +3389,7 @@
     {
       "player_id": "bradlmi01",
       "name": "Michael Bradley",
-      "team": "Houston Rockets",
+      "team": "Free agent",
       "status": "under rookie contract",
       "current_contract_id": "bradlmi01-2001-07-23",
       "recorded_agreements": 1,
@@ -4244,7 +4244,7 @@
     {
       "player_id": "bowenry01",
       "name": "Ryan Bowen",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,

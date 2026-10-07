@@ -2,9 +2,9 @@
 
 # Contract | Mario Austin
 
-Known through: 2005-02-14. [Open interactive contract](austima01.html#contract) · [Contract history](austima01.html#contract-history)
+Known through: 2005-02-18. [Open interactive contract](austima01.html#contract) · [Contract history](austima01.html#contract-history)
 
-Mario Austin: No verified contract record. Evidence cutoff: 2005-02-14.
+Mario Austin: No verified contract record. Evidence cutoff: 2005-02-18.
 
 ## Current contract
 

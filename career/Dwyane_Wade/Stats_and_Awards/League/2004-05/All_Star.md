@@ -1,6 +1,6 @@
 # 2004-05 NBA All-Star selections
 
-All-Star Game: February 20, 2005, Pepsi Center, Denver. Rookie Challenge: February 18, 2005. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: February 8, 2005.
+All-Star Game: February 20, 2005, Pepsi Center, Denver. Rookie Challenge: February 18, 2005. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: February 18, 2005.
 
 ## Starters (fan ballot, announced February 3, 2005; results through January 23, 2005)
 
@@ -87,6 +87,12 @@ All-Star Game: February 20, 2005, Pepsi Center, Denver. Rookie Challenge: Februa
 | Luke Ridnour | G | Charlotte Bobcats | 38 | 11.7 | 4.5 | 6.4 | 9.79 | 8 |
 | Josh Howard | F | Dallas Mavericks | 35 | 11.7 | 6.1 | 1.6 | 9.25 | 6 |
 
+## Injury replacements (the Commissioner, February 18, 2005)
+
+| Conference | Out | Reason | Replacement | Team |
+|---|---|---|---|---|
+| East | Jason Kidd | played in none of New Jersey Nets's last two games (2005-02-15, 2005-02-16) | Jamal Crawford | Chicago Bulls |
+
 ## All-Stars
 
 | Player | Team | Conference | Role | Selected |
@@ -115,5 +121,6 @@ All-Star Game: February 20, 2005, Pepsi Center, Denver. Rookie Challenge: Februa
 | Kurt Thomas | San Antonio Spurs | West | reserve | 2005-02-08 |
 | Dirk Nowitzki | Dallas Mavericks | West | reserve | 2005-02-08 |
 | Peja Stojakovic | Sacramento Kings | West | reserve | 2005-02-08 |
+| Jamal Crawford | Chicago Bulls | East | injury replacement | 2005-02-18 |
 
 Rules: library/2004/league/nba_2004_05_all_star.json; method in `runtime/all_star.py`.
