@@ -137,10 +137,10 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 3,
+    "Toronto Raptors": 4,
     "Philadelphia 76ers": 2
    },
-   "winner": null,
+   "winner": "Toronto Raptors",
    "games": [
     {
      "game": 1,
@@ -198,7 +198,9 @@
      "home": "Philadelphia 76ers",
      "away": "Toronto Raptors",
      "conditional": true,
-     "event_id": "2005-05-06-toronto-raptors-at-philadelphia-76ers"
+     "event_id": "2005-05-06-toronto-raptors-at-philadelphia-76ers",
+     "result": "Toronto Raptors 97, Philadelphia 76ers 79",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 7,
@@ -206,9 +208,11 @@
      "home": "Toronto Raptors",
      "away": "Philadelphia 76ers",
      "conditional": true,
-     "event_id": "2005-05-08-philadelphia-76ers-at-toronto-raptors"
+     "event_id": "2005-05-08-philadelphia-76ers-at-toronto-raptors",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2005-05-06"
   },
   {
    "id": "east-4-5",
@@ -224,10 +228,10 @@
    ],
    "home_court": "Boston Celtics",
    "wins": {
-    "Boston Celtics": 3,
+    "Boston Celtics": 4,
     "Chicago Bulls": 2
    },
-   "winner": null,
+   "winner": "Boston Celtics",
    "games": [
     {
      "game": 1,
@@ -285,7 +289,9 @@
      "home": "Chicago Bulls",
      "away": "Boston Celtics",
      "conditional": true,
-     "event_id": "2005-05-06-boston-celtics-at-chicago-bulls"
+     "event_id": "2005-05-06-boston-celtics-at-chicago-bulls",
+     "result": "Boston Celtics 92, Chicago Bulls 80",
+     "winner": "Boston Celtics"
     },
     {
      "game": 7,
@@ -293,9 +299,11 @@
      "home": "Boston Celtics",
      "away": "Chicago Bulls",
      "conditional": true,
-     "event_id": "2005-05-08-chicago-bulls-at-boston-celtics"
+     "event_id": "2005-05-08-chicago-bulls-at-boston-celtics",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2005-05-06"
   },
   {
    "id": "east-3-6",
@@ -988,6 +996,83 @@
      "away": "Minnesota Timberwolves",
      "conditional": true,
      "event_id": "2005-05-20-minnesota-timberwolves-at-san-antonio-spurs"
+    }
+   ]
+  },
+  {
+   "id": "east-semi-a",
+   "round": "conference_semifinals",
+   "conference": "East",
+   "seeds": [
+    1,
+    4
+   ],
+   "clubs": [
+    "Toronto Raptors",
+    "Boston Celtics"
+   ],
+   "home_court": "Toronto Raptors",
+   "wins": {
+    "Toronto Raptors": 0,
+    "Boston Celtics": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-05-08",
+     "home": "Toronto Raptors",
+     "away": "Boston Celtics",
+     "conditional": false,
+     "event_id": "2005-05-08-boston-celtics-at-toronto-raptors"
+    },
+    {
+     "game": 2,
+     "date": "2005-05-10",
+     "home": "Toronto Raptors",
+     "away": "Boston Celtics",
+     "conditional": false,
+     "event_id": "2005-05-10-boston-celtics-at-toronto-raptors"
+    },
+    {
+     "game": 3,
+     "date": "2005-05-12",
+     "home": "Boston Celtics",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2005-05-12-toronto-raptors-at-boston-celtics"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-14",
+     "home": "Boston Celtics",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2005-05-14-toronto-raptors-at-boston-celtics"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-16",
+     "home": "Toronto Raptors",
+     "away": "Boston Celtics",
+     "conditional": true,
+     "event_id": "2005-05-16-boston-celtics-at-toronto-raptors"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-18",
+     "home": "Boston Celtics",
+     "away": "Toronto Raptors",
+     "conditional": true,
+     "event_id": "2005-05-18-toronto-raptors-at-boston-celtics"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-20",
+     "home": "Toronto Raptors",
+     "away": "Boston Celtics",
+     "conditional": true,
+     "event_id": "2005-05-20-boston-celtics-at-toronto-raptors"
     }
    ]
   }

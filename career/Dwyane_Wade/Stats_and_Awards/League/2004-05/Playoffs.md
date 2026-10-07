@@ -36,10 +36,10 @@ Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · [Miam
 
 ```
 EAST
-  (1) Toronto Raptors          3
-  (8) Philadelphia 76ers       2
-  (4) Boston Celtics           3
-  (5) Chicago Bulls            2
+  (1) Toronto Raptors          4
+  (8) Philadelphia 76ers       2   -> Toronto Raptors
+  (4) Boston Celtics           4
+  (5) Chicago Bulls            2   -> Boston Celtics
         conference semifinal: winners meet
   (3) Cleveland Cavaliers      3
   (6) Atlanta Hawks            3
@@ -67,7 +67,7 @@ WEST
 
 ### East: (1) Toronto Raptors vs (8) Philadelphia 76ers
 
-Home court: Toronto Raptors. Series Toronto Raptors 3, Philadelphia 76ers 2.
+Home court: Toronto Raptors. Toronto Raptors wins 4-2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -76,12 +76,12 @@ Home court: Toronto Raptors. Series Toronto Raptors 3, Philadelphia 76ers 2.
 | 3 | Sat Apr 30 | Philadelphia 76ers | Toronto Raptors | Toronto Raptors 91, Philadelphia 76ers 96 |
 | 4 | Mon May 2 | Philadelphia 76ers | Toronto Raptors | Toronto Raptors 82, Philadelphia 76ers 96 |
 | 5 | Wed May 4 | Toronto Raptors | Philadelphia 76ers | Philadelphia 76ers 87, Toronto Raptors 110 |
-| 6 | Fri May 6 | Philadelphia 76ers | Toronto Raptors | if needed |
-| 7 | Sun May 8 | Toronto Raptors | Philadelphia 76ers | if needed |
+| 6 | Fri May 6 | Philadelphia 76ers | Toronto Raptors | Toronto Raptors 97, Philadelphia 76ers 79 |
+| 7 | Sun May 8 | Toronto Raptors | Philadelphia 76ers | not needed |
 
 ### East: (4) Boston Celtics vs (5) Chicago Bulls
 
-Home court: Boston Celtics. Series Boston Celtics 3, Chicago Bulls 2.
+Home court: Boston Celtics. Boston Celtics wins 4-2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -90,8 +90,8 @@ Home court: Boston Celtics. Series Boston Celtics 3, Chicago Bulls 2.
 | 3 | Sat Apr 30 | Chicago Bulls | Boston Celtics | Boston Celtics 113, Chicago Bulls 102 (1OT) |
 | 4 | Mon May 2 | Chicago Bulls | Boston Celtics | Boston Celtics 88, Chicago Bulls 97 |
 | 5 | Wed May 4 | Boston Celtics | Chicago Bulls | Chicago Bulls 105, Boston Celtics 110 |
-| 6 | Fri May 6 | Chicago Bulls | Boston Celtics | if needed |
-| 7 | Sun May 8 | Boston Celtics | Chicago Bulls | if needed |
+| 6 | Fri May 6 | Chicago Bulls | Boston Celtics | Boston Celtics 92, Chicago Bulls 80 |
+| 7 | Sun May 8 | Boston Celtics | Chicago Bulls | not needed |
 
 ### East: (3) Cleveland Cavaliers vs (6) Atlanta Hawks
 
@@ -206,3 +206,17 @@ Home court: San Antonio Spurs. Series Minnesota Timberwolves 0, San Antonio Spur
 | 5 | Mon May 16 | San Antonio Spurs | Minnesota Timberwolves | if needed |
 | 6 | Wed May 18 | Minnesota Timberwolves | San Antonio Spurs | if needed |
 | 7 | Fri May 20 | San Antonio Spurs | Minnesota Timberwolves | if needed |
+
+### East: (1) Toronto Raptors vs (4) Boston Celtics
+
+Home court: Toronto Raptors. Series Toronto Raptors 0, Boston Celtics 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun May 8 | Toronto Raptors | Boston Celtics |  |
+| 2 | Tue May 10 | Toronto Raptors | Boston Celtics |  |
+| 3 | Thu May 12 | Boston Celtics | Toronto Raptors |  |
+| 4 | Sat May 14 | Boston Celtics | Toronto Raptors |  |
+| 5 | Mon May 16 | Toronto Raptors | Boston Celtics | if needed |
+| 6 | Wed May 18 | Boston Celtics | Toronto Raptors | if needed |
+| 7 | Fri May 20 | Toronto Raptors | Boston Celtics | if needed |
