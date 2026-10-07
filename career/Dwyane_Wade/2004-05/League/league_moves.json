@@ -3350,6 +3350,24 @@
    },
    "contract": null,
    "note": "10-day contract ended (7.0 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-02-20-expire-slayta01",
+   "date": "2005-02-20",
+   "kind": "expire",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": "Memphis Grizzlies",
+   "to": null,
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": null,
+   "note": "10-day contract ended (5.2 minutes a game)"
   }
  ],
  "market_days": [
@@ -3462,6 +3480,7 @@
   "2005-02-16",
   "2005-02-17",
   "2005-02-18",
-  "2005-02-19"
+  "2005-02-19",
+  "2005-02-20"
  ]
 }
