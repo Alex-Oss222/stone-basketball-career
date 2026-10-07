@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-03-07 · Miami Heat · active
+Career date: 2005-03-13 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-68 closed game records in 2004-05 through 2005-03-07. Competitions remain separate.
+71 closed game records in 2004-05 through 2005-03-13. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
-| regular | 55 | 36.6 | 21.4 | 5.3 | 3.9 | 1.4 | Complete |
+| regular | 58 | 36.7 | 21.5 | 5.3 | 4.0 | 1.4 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
-| regular | 396 | 732 | 0.541 | 65 | 146 | 0.445 |
+| regular | 419 | 776 | 0.540 | 70 | 158 | 0.443 |
 
 ## Closed source games
 
@@ -98,6 +98,9 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-03-03 | regular | New Jersey Nets | Played | [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_1.md) |
 | 2005-03-04 | regular | Sacramento Kings | Played | [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_2.md) |
 | 2005-03-06 | regular | Cleveland Cavaliers | Played | [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_3.md) |
+| 2005-03-07 | regular | Philadelphia 76ers | Played | [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_4.md) |
+| 2005-03-10 | regular | Minnesota Timberwolves | Played | [Closed game](../2004-05/06_Regular_Season/03_March/Week_2/Game_1.md) |
+| 2005-03-12 | regular | New Jersey Nets | Played | [Closed game](../2004-05/06_Regular_Season/03_March/Week_2/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -210,4 +213,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_1.md)
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_4.md)
+- [Closed game](../2004-05/06_Regular_Season/03_March/Week_2/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/03_March/Week_2/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

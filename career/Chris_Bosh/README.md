@@ -4,7 +4,7 @@
 
 ![Chris Bosh career overview](assets/career_overview.svg)
 
-Career date: **2005-03-07** · Toronto Raptors · #4 · PF · age 20
+Career date: **2005-03-13** · Toronto Raptors · #4 · PF · age 20
 
 A real player the user follows, not one the user controls: his club decides his moves and the engine plays his games. Every number below comes from closed simulated games and the league's recorded award decisions.
 
@@ -28,7 +28,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [2003-04](2003-04/README.md) | 19 | Toronto Raptors | 75/75 | 35.7 | 13.9 | 7.9 | 1.4 | 1.0 | 1.4 | 47.7 | 42.2 | 71.2 | 53.0 | 42-40 · lost conference semifinals |
-| [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 58/58 | 39.7 | 17.9 | 9.3 | 2.9 | 1.1 | 1.4 | 50.3 | 46.3 | 82.6 | 56.9 | 42-17 |
+| [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 62/62 | 39.4 | 17.8 | 9.4 | 2.9 | 1.1 | 1.4 | 50.6 | 45.2 | 83.0 | 57.2 | 45-18 |
 
 ## Playoffs
 
@@ -74,11 +74,11 @@ A real player the user follows, not one the user controls: his club decides his 
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 3,000 career points | 2,084 | 916 |
-| 1,500 career rebounds | 1,137 | 363 |
-| 500 career assists | 273 | 227 |
-| 250 career steals | 134 | 116 |
-| 250 career blocks | 186 | 64 |
+| 3,000 career points | 2,149 | 851 |
+| 1,500 career rebounds | 1,177 | 323 |
+| 500 career assists | 282 | 218 |
+| 250 career steals | 139 | 111 |
+| 250 career blocks | 193 | 57 |
 | 100 career three-pointers made | 38 | 62 |
-| 500 career free throws made | 426 | 74 |
-| 200 career games played | 133 | 67 |
+| 500 career free throws made | 443 | 57 |
+| 200 career games played | 137 | 63 |

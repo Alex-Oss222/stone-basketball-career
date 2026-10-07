@@ -2,7 +2,7 @@
 
 # Contract negotiation | Dwyane Wade
 
-Career date: 2005-03-07 · Miami Heat · inactive
+Career date: 2005-03-13 · Miami Heat · inactive
 
 [Live milestone desk](index.html#contract_negotiation) · [All milestones](README.md)
 
@@ -154,4 +154,7 @@ Miami records its actual first offer; the player then chooses a response.
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_1.md)
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/03_March/Week_1/Game_4.md)
+- [Closed game](../2004-05/06_Regular_Season/03_March/Week_2/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/03_March/Week_2/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

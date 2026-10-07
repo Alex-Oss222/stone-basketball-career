@@ -2,9 +2,9 @@
 
 # Contract | Jerry Stackhouse
 
-Known through: 2005-03-07. [Open interactive contract](stackje01.html#contract) · [Contract history](stackje01.html#contract-history)
+Known through: 2005-03-13. [Open interactive contract](stackje01.html#contract) · [Contract history](stackje01.html#contract-history)
 
-Jerry Stackhouse: under contract. Evidence cutoff: 2005-03-07.
+Jerry Stackhouse: under contract. Evidence cutoff: 2005-03-13.
 
 ## Current contract
 

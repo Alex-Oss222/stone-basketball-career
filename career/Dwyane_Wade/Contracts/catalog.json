@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-03-07",
+  "as_of": "2005-03-13",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -3794,7 +3794,7 @@
     {
       "player_id": "shirlpa01",
       "name": "Paul Shirley",
-      "team": "Free agent",
+      "team": "Philadelphia 76ers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
