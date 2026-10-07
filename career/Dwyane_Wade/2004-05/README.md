@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2004-05 awards through 2005-04-18](../assets/stat_reports/personal_2004-05_2005-04-18.svg)
+![Player personal information and earned 2004-05 awards through 2005-04-20](../assets/stat_reports/personal_2004-05_2005-04-20.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-04-18; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-04-20; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
@@ -46,7 +46,7 @@ Identity as of 2005-04-18; status snapshot dated 2004-10-28. User-established al
 
 ## Statistics
 
-Report cutoff: **2005-04-18**. Each row is a separate competition; do not add the rates.
+Report cutoff: **2005-04-20**. Each row is a separate competition; do not add the rates.
 
 ### Competition summary
 
@@ -58,12 +58,12 @@ Report cutoff: **2005-04-18**. Each row is a separate competition; do not add th
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [Summer League](02_Summer_League/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [Preseason](05_Preseason/README.md) | 21 | Miami Heat | NBA | SG / PG | 7 | 7 | 30.2 | 4.4 | 9.6 | .463 | 0.6 | 2.0 | .286 | 3.9 | 7.6 | .509 | .493 | 5.3 | 5.6 | .949 | 1.3 | 2.9 | 4.1 | 4.0 | 1.4 | 1.4 | 0.9 | 1.9 | 14.7 | .612 | — |
-| [NBA regular season](06_Regular_Season/README.md) | 21 | Miami Heat | NBA | SG / PG | 74 | 74 | 36.2 | 7.1 | 13.4 | .528 | 1.2 | 2.7 | .430 | 5.9 | 10.7 | .553 | .572 | 5.9 | 6.4 | .930 | 1.5 | 3.8 | 5.4 | 4.0 | 1.4 | 1.2 | 1.3 | 2.9 | 21.2 | .655 | [East POM](../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month), [East POW](../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week), [All-Star](../Stats_and_Awards/League/2004-05/All_Star.md#all-stars), [East POM](../Stats_and_Awards/League/2004-05/03_March/League_Awards.md#player-of-the-month) |
+| [NBA regular season](06_Regular_Season/README.md) | 21 | Miami Heat | NBA | SG / PG | 76 | 76 | 36.2 | 7.1 | 13.4 | .530 | 1.1 | 2.7 | .429 | 5.9 | 10.7 | .555 | .573 | 6.0 | 6.4 | .932 | 1.5 | 3.9 | 5.4 | 4.0 | 1.4 | 1.2 | 1.3 | 3.0 | 21.3 | .657 | [East POM](../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month), [East POW](../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week), [All-Star](../Stats_and_Awards/League/2004-05/All_Star.md#all-stars), [East POM](../Stats_and_Awards/League/2004-05/03_March/League_Awards.md#player-of-the-month) |
 | [NBA playoffs](08_Playoffs/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-04-18, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-20, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Regular season by month
 
@@ -78,11 +78,11 @@ Awards are confirmed through 2005-04-18, filed by the honor's period-end date; t
 | [January 2005](../Stats_and_Awards/2004-05/01_January/README.md) | 21 | Miami Heat | NBA | SG / PG | 14 | 14 | 36.5 | 7.9 | 14.3 | .555 | 1.1 | 2.3 | .469 | 6.9 | 12.0 | .571 | .593 | 5.7 | 6.2 | .920 | 1.4 | 3.8 | 5.2 | 4.2 | 1.4 | 0.8 | 0.9 | 3.0 | 22.6 | .665 | [East POW](../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week) |
 | [February 2005](../Stats_and_Awards/2004-05/02_February/README.md) | 21 | Miami Heat | NBA | SG / PG | 12 | 12 | 37.0 | 7.8 | 13.9 | .563 | 1.5 | 3.6 | .419 | 6.3 | 10.3 | .613 | .617 | 6.1 | 6.6 | .924 | 1.4 | 3.3 | 4.8 | 3.7 | 1.1 | 1.3 | 1.5 | 3.1 | 23.2 | .691 | [All-Star](../Stats_and_Awards/League/2004-05/All_Star.md#all-stars) |
 | [March 2005](../Stats_and_Awards/2004-05/03_March/README.md) | 21 | Miami Heat | NBA | SG / PG | 15 | 15 | 35.0 | 7.5 | 14.6 | .511 | 1.3 | 2.9 | .442 | 6.2 | 11.7 | .528 | .555 | 6.6 | 7.1 | .925 | 1.4 | 3.5 | 4.9 | 4.3 | 1.3 | 1.2 | 1.3 | 3.5 | 22.8 | .643 | [East POM](../Stats_and_Awards/League/2004-05/03_March/League_Awards.md#player-of-the-month) |
-| [April 2005](../Stats_and_Awards/2004-05/04_April/README.md) | 21 | Miami Heat | NBA | SG / PG | 7 | 7 | 37.9 | 5.6 | 11.7 | .476 | 0.6 | 2.4 | .235 | 5.0 | 9.3 | .538 | .500 | 6.6 | 7.4 | .885 | 2.1 | 5.1 | 7.3 | 4.4 | 2.3 | 1.4 | 1.4 | 2.0 | 18.3 | .610 | — |
+| [April 2005](../Stats_and_Awards/2004-05/04_April/README.md) | 21 | Miami Heat | NBA | SG / PG | 9 | 9 | 38.0 | 6.0 | 11.9 | .505 | 0.6 | 2.2 | .250 | 5.4 | 9.7 | .563 | .528 | 6.9 | 7.6 | .912 | 2.1 | 5.3 | 7.4 | 4.3 | 1.9 | 1.4 | 1.4 | 2.4 | 19.4 | .639 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-04-18, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-20, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Career records
 

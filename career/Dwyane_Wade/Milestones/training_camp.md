@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-04-18 · Miami Heat · planned
+Career date: 2005-04-20 · Miami Heat · planned
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -202,4 +202,6 @@ Snapshot: 2005-04-14. Draft rights and unassigned arrivals are not assigned minu
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_1.md)
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

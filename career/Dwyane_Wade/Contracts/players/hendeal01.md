@@ -2,9 +2,9 @@
 
 # Contract | Alan Henderson
 
-Known through: 2005-04-18. [Open interactive contract](hendeal01.html#contract) · [Contract history](hendeal01.html#contract-history)
+Known through: 2005-04-20. [Open interactive contract](hendeal01.html#contract) · [Contract history](hendeal01.html#contract-history)
 
-Alan Henderson: under contract. Evidence cutoff: 2005-04-18.
+Alan Henderson: under contract. Evidence cutoff: 2005-04-20.
 
 ## Current contract
 

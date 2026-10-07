@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-04-18",
+  "as_of": "2005-04-20",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -257,7 +257,7 @@
     {
       "player_id": "sesayan01",
       "name": "Ansu Sesay",
-      "team": "Phoenix Suns",
+      "team": "Free agent",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -1535,7 +1535,7 @@
     {
       "player_id": "gilled01",
       "name": "Eddie Gill",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2975,7 +2975,7 @@
     {
       "player_id": "johnsli01",
       "name": "Linton Johnson",
-      "team": "San Antonio Spurs",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3299,7 +3299,7 @@
     {
       "player_id": "carroma01",
       "name": "Matt Carroll",
-      "team": "Free agent",
+      "team": "Chicago Bulls",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3533,7 +3533,7 @@
     {
       "player_id": "wilksmi01",
       "name": "Mike Wilks",
-      "team": "Chicago Bulls",
+      "team": "Philadelphia 76ers",
       "status": "under contract",
       "current_contract_id": "wilksmi01-2003-09-08",
       "recorded_agreements": 2,
@@ -3794,7 +3794,7 @@
     {
       "player_id": "shirlpa01",
       "name": "Paul Shirley",
-      "team": "Detroit Pistons",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4145,7 +4145,7 @@
     {
       "player_id": "buforro01",
       "name": "Rodney Buford",
-      "team": "Detroit Pistons",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4631,7 +4631,7 @@
     {
       "player_id": "slayta01",
       "name": "Tamar Slay",
-      "team": "Philadelphia 76ers",
+      "team": "Phoenix Suns",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -5153,7 +5153,7 @@
     {
       "player_id": "hamilze01",
       "name": "Zendon Hamilton",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

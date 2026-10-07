@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-04-18 · Miami Heat · active
+Career date: 2005-04-20 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-87 closed game records in 2004-05 through 2005-04-18. Competitions remain separate.
+89 closed game records in 2004-05 through 2005-04-20. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
-| regular | 74 | 36.2 | 21.2 | 5.4 | 4.0 | 1.3 | Complete |
+| regular | 76 | 36.2 | 21.3 | 5.4 | 4.0 | 1.3 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
-| regular | 524 | 992 | 0.528 | 86 | 200 | 0.430 |
+| regular | 539 | 1017 | 0.530 | 87 | 203 | 0.429 |
 
 ## Closed source games
 
@@ -117,6 +117,8 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-04-14 | regular | Philadelphia 76ers | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_3.md) |
 | 2005-04-15 | regular | Boston Celtics | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_1.md) |
 | 2005-04-17 | regular | Indiana Pacers | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_2.md) |
+| 2005-04-19 | regular | Charlotte Bobcats | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_3.md) |
+| 2005-04-20 | regular | Orlando Magic | Played | [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_4.md) |
 
 ## Evidence available for decisions
 
@@ -248,4 +250,6 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_2/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_1.md)
 - [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_3/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

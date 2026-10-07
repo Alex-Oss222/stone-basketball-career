@@ -2,9 +2,9 @@
 
 # Contract | Shawn Bradley
 
-Known through: 2005-04-18. [Open interactive contract](bradlsh01.html#contract) · [Contract history](bradlsh01.html#contract-history)
+Known through: 2005-04-20. [Open interactive contract](bradlsh01.html#contract) · [Contract history](bradlsh01.html#contract-history)
 
-Shawn Bradley: under contract. Evidence cutoff: 2005-04-18.
+Shawn Bradley: under contract. Evidence cutoff: 2005-04-20.
 
 ## Current contract
 

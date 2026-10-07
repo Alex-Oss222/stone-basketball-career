@@ -2,9 +2,9 @@
 
 # Contract | Mike Wilks
 
-Known through: 2005-04-18. [Open interactive contract](wilksmi01.html#contract) · [Contract history](wilksmi01.html#contract-history)
+Known through: 2005-04-20. [Open interactive contract](wilksmi01.html#contract) · [Contract history](wilksmi01.html#contract-history)
 
-Mike Wilks: under contract. Evidence cutoff: 2005-04-18.
+Mike Wilks: under contract. Evidence cutoff: 2005-04-20.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Mike Wilks |
-| Club / rights baseline | Chicago Bulls |
+| Club / rights baseline | Philadelphia 76ers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
