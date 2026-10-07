@@ -320,9 +320,9 @@
    "home_court": "Cleveland Cavaliers",
    "wins": {
     "Cleveland Cavaliers": 3,
-    "Atlanta Hawks": 3
+    "Atlanta Hawks": 4
    },
-   "winner": null,
+   "winner": "Atlanta Hawks",
    "games": [
     {
      "game": 1,
@@ -390,9 +390,12 @@
      "home": "Cleveland Cavaliers",
      "away": "Atlanta Hawks",
      "conditional": true,
-     "event_id": "2005-05-07-atlanta-hawks-at-cleveland-cavaliers"
+     "event_id": "2005-05-07-atlanta-hawks-at-cleveland-cavaliers",
+     "result": "Atlanta Hawks 89, Cleveland Cavaliers 86",
+     "winner": "Atlanta Hawks"
     }
-   ]
+   ],
+   "clinched_on": "2005-05-07"
   },
   {
    "id": "east-2-7",
@@ -1073,6 +1076,83 @@
      "away": "Boston Celtics",
      "conditional": true,
      "event_id": "2005-05-20-boston-celtics-at-toronto-raptors"
+    }
+   ]
+  },
+  {
+   "id": "east-semi-b",
+   "round": "conference_semifinals",
+   "conference": "East",
+   "seeds": [
+    6,
+    2
+   ],
+   "clubs": [
+    "Atlanta Hawks",
+    "Miami Heat"
+   ],
+   "home_court": "Miami Heat",
+   "wins": {
+    "Atlanta Hawks": 0,
+    "Miami Heat": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-05-09",
+     "home": "Miami Heat",
+     "away": "Atlanta Hawks",
+     "conditional": false,
+     "event_id": "2005-05-09-atlanta-hawks-at-miami-heat"
+    },
+    {
+     "game": 2,
+     "date": "2005-05-11",
+     "home": "Miami Heat",
+     "away": "Atlanta Hawks",
+     "conditional": false,
+     "event_id": "2005-05-11-atlanta-hawks-at-miami-heat"
+    },
+    {
+     "game": 3,
+     "date": "2005-05-13",
+     "home": "Atlanta Hawks",
+     "away": "Miami Heat",
+     "conditional": false,
+     "event_id": "2005-05-13-miami-heat-at-atlanta-hawks"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-15",
+     "home": "Atlanta Hawks",
+     "away": "Miami Heat",
+     "conditional": false,
+     "event_id": "2005-05-15-miami-heat-at-atlanta-hawks"
+    },
+    {
+     "game": 5,
+     "date": "2005-05-17",
+     "home": "Miami Heat",
+     "away": "Atlanta Hawks",
+     "conditional": true,
+     "event_id": "2005-05-17-atlanta-hawks-at-miami-heat"
+    },
+    {
+     "game": 6,
+     "date": "2005-05-19",
+     "home": "Atlanta Hawks",
+     "away": "Miami Heat",
+     "conditional": true,
+     "event_id": "2005-05-19-miami-heat-at-atlanta-hawks"
+    },
+    {
+     "game": 7,
+     "date": "2005-05-21",
+     "home": "Miami Heat",
+     "away": "Atlanta Hawks",
+     "conditional": true,
+     "event_id": "2005-05-21-atlanta-hawks-at-miami-heat"
     }
    ]
   }

@@ -42,7 +42,7 @@ EAST
   (5) Chicago Bulls            2   -> Boston Celtics
         conference semifinal: winners meet
   (3) Cleveland Cavaliers      3
-  (6) Atlanta Hawks            3
+  (6) Atlanta Hawks            4   -> Atlanta Hawks
   (2) Miami Heat               4
   (7) Detroit Pistons          2   -> Miami Heat
         conference semifinal: winners meet
@@ -95,7 +95,7 @@ Home court: Boston Celtics. Boston Celtics wins 4-2.
 
 ### East: (3) Cleveland Cavaliers vs (6) Atlanta Hawks
 
-Home court: Cleveland Cavaliers. Series Cleveland Cavaliers 3, Atlanta Hawks 3.
+Home court: Cleveland Cavaliers. Atlanta Hawks wins 4-3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -105,7 +105,7 @@ Home court: Cleveland Cavaliers. Series Cleveland Cavaliers 3, Atlanta Hawks 3.
 | 4 | Sun May 1 | Atlanta Hawks | Cleveland Cavaliers | Cleveland Cavaliers 86, Atlanta Hawks 99 |
 | 5 | Tue May 3 | Cleveland Cavaliers | Atlanta Hawks | Atlanta Hawks 89, Cleveland Cavaliers 95 |
 | 6 | Thu May 5 | Atlanta Hawks | Cleveland Cavaliers | Cleveland Cavaliers 109, Atlanta Hawks 92 |
-| 7 | Sat May 7 | Cleveland Cavaliers | Atlanta Hawks | if needed |
+| 7 | Sat May 7 | Cleveland Cavaliers | Atlanta Hawks | Atlanta Hawks 89, Cleveland Cavaliers 86 |
 
 ### East: (2) Miami Heat vs (7) Detroit Pistons
 
@@ -220,3 +220,17 @@ Home court: Toronto Raptors. Series Toronto Raptors 0, Boston Celtics 0.
 | 5 | Mon May 16 | Toronto Raptors | Boston Celtics | if needed |
 | 6 | Wed May 18 | Boston Celtics | Toronto Raptors | if needed |
 | 7 | Fri May 20 | Toronto Raptors | Boston Celtics | if needed |
+
+### East: (6) Atlanta Hawks vs (2) Miami Heat
+
+Home court: Miami Heat. Series Atlanta Hawks 0, Miami Heat 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Mon May 9 | Miami Heat | Atlanta Hawks |  |
+| 2 | Wed May 11 | Miami Heat | Atlanta Hawks |  |
+| 3 | Fri May 13 | Atlanta Hawks | Miami Heat |  |
+| 4 | Sun May 15 | Atlanta Hawks | Miami Heat |  |
+| 5 | Tue May 17 | Miami Heat | Atlanta Hawks | if needed |
+| 6 | Thu May 19 | Atlanta Hawks | Miami Heat | if needed |
+| 7 | Sat May 21 | Miami Heat | Atlanta Hawks | if needed |
