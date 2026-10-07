@@ -2,9 +2,9 @@
 
 # Contract | Marcus Fizer
 
-Known through: 2005-03-21. [Open interactive contract](fizerma01.html#contract) · [Contract history](fizerma01.html#contract-history)
+Known through: 2005-03-27. [Open interactive contract](fizerma01.html#contract) · [Contract history](fizerma01.html#contract-history)
 
-Marcus Fizer: under rookie contract. Evidence cutoff: 2005-03-21.
+Marcus Fizer: under rookie contract. Evidence cutoff: 2005-03-27.
 
 ## Current contract
 

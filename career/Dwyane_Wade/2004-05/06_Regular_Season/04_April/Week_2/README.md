@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2004-05 awards through 2005-03-21](../../../../assets/stat_reports/personal_2004-05_2005-03-21.svg)
+![Player personal information and earned 2004-05 awards through 2005-03-27](../../../../assets/stat_reports/personal_2004-05_2005-03-27.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-03-21; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-03-27; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2004-05 awards
 
@@ -43,7 +43,7 @@ Identity as of 2005-03-21; status snapshot dated 2004-10-28. User-established al
 
 ## Statistics
 
-As of **2005-03-21**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2005-03-27**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -61,7 +61,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-03-21, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-03-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](../../../../Stats_and_Awards/2004-05/04_April/Week_2/Stat_Detail.md)
 
@@ -76,11 +76,11 @@ Awards are confirmed through 2005-03-21, filed by the honor's period-end date; t
 | This week | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [Previous week](../../../../Stats_and_Awards/2004-05/04_April/Week_1/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | Month through this week | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Season through this week | 21 | Miami Heat | NBA | SG / PG | 62 | 62 | 36.2 | 7.2 | 13.4 | .539 | 1.2 | 2.7 | .444 | 6.0 | 10.7 | .563 | .584 | 5.8 | 6.2 | .935 | 1.4 | 3.7 | 5.1 | 4.0 | 1.4 | 1.2 | 1.4 | 3.0 | 21.5 | .665 | [East POM](../../../../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month), [East POW](../../../../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week), [All-Star](../../../../Stats_and_Awards/League/2004-05/All_Star.md#all-stars) |
+| Season through this week | 21 | Miami Heat | NBA | SG / PG | 65 | 65 | 35.9 | 7.2 | 13.4 | .536 | 1.2 | 2.6 | .436 | 6.0 | 10.7 | .561 | .579 | 5.7 | 6.1 | .937 | 1.5 | 3.7 | 5.2 | 4.0 | 1.4 | 1.2 | 1.3 | 3.0 | 21.2 | .660 | [East POM](../../../../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month), [East POW](../../../../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week), [All-Star](../../../../Stats_and_Awards/League/2004-05/All_Star.md#all-stars) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-03-21, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-03-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 

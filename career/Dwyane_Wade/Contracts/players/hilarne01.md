@@ -2,9 +2,9 @@
 
 # Contract | Nene
 
-Known through: 2005-03-21. [Open interactive contract](hilarne01.html#contract) · [Contract history](hilarne01.html#contract-history)
+Known through: 2005-03-27. [Open interactive contract](hilarne01.html#contract) · [Contract history](hilarne01.html#contract-history)
 
-Nene: under rookie contract. Evidence cutoff: 2005-03-21.
+Nene: under rookie contract. Evidence cutoff: 2005-03-27.
 
 ## Current contract
 

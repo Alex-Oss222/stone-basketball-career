@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2005-03-21**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2005-03-27**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -3196,23 +3196,23 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
 
-## 2004-05 · NBA regular season · through 2005-03-21
+## 2004-05 · NBA regular season · through 2005-03-27
 
 [Open this period](player_cards.html?period=regular-2004-05-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 62 | 6 | 68 | 448 / 831 | 53.9% | 75 / 169 | 1330 | complete |
+| 65 | 6 | 71 | 466 / 869 | 53.6% | 75 / 172 | 1378 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 247 | 407 | 60.7% | 7.97 | 6.56 | 407 |
-| Outside paint, under 12 ft | 16 | 33 | 48.5% | 0.52 | 0.53 | 33 |
-| Outside paint, 12 to under 18 ft | 55 | 104 | 52.9% | 1.77 | 1.68 | 104 |
-| 18 ft to the three-point line | 55 | 118 | 46.6% | 1.77 | 1.90 | 118 |
-| Three-point range | 75 | 169 | 44.4% | 3.63 | 2.73 | 169 |
+| Paint | 259 | 430 | 60.2% | 7.97 | 6.62 | 430 |
+| Outside paint, under 12 ft | 16 | 33 | 48.5% | 0.49 | 0.51 | 33 |
+| Outside paint, 12 to under 18 ft | 60 | 113 | 53.1% | 1.85 | 1.74 | 113 |
+| 18 ft to the three-point line | 56 | 121 | 46.3% | 1.72 | 1.86 | 121 |
+| Three-point range | 75 | 172 | 43.6% | 3.46 | 2.65 | 172 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -3284,6 +3284,9 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2005-03-15 | New York Knicks | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_3/Game_1.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_3/Game_1.result.json) |
 | 2005-03-17 | Los Angeles Lakers | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_3/Game_2.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_3/Game_2.result.json) |
 | 2005-03-19 | New York Knicks | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.result.json) |
+| 2005-03-22 | Houston Rockets | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.result.json) |
+| 2005-03-25 | Phoenix Suns | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.result.json) |
+| 2005-03-26 | Charlotte Bobcats | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.result.json) |
 
 ## 2004-11 · NBA regular season
 
@@ -3827,17 +3830,17 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10 | 0 | 10 | 75 / 140 | 53.6% | 12 / 29 | 229 | complete |
+| 13 | 0 | 13 | 93 / 178 | 52.2% | 12 / 32 | 277 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 43 | 72 | 59.7% | 8.60 | 7.20 | 72 |
-| Outside paint, under 12 ft | 2 | 4 | 50.0% | 0.40 | 0.40 | 4 |
-| Outside paint, 12 to under 18 ft | 7 | 15 | 46.7% | 1.40 | 1.50 | 15 |
-| 18 ft to the three-point line | 11 | 20 | 55.0% | 2.20 | 2.00 | 20 |
-| Three-point range | 12 | 29 | 41.4% | 3.60 | 2.90 | 29 |
+| Paint | 55 | 95 | 57.9% | 8.46 | 7.31 | 95 |
+| Outside paint, under 12 ft | 2 | 4 | 50.0% | 0.31 | 0.31 | 4 |
+| Outside paint, 12 to under 18 ft | 12 | 24 | 50.0% | 1.85 | 1.85 | 24 |
+| 18 ft to the three-point line | 12 | 23 | 52.2% | 1.85 | 1.77 | 23 |
+| Three-point range | 12 | 32 | 37.5% | 2.77 | 2.46 | 32 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -3851,6 +3854,9 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2005-03-15 | New York Knicks | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_3/Game_1.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_3/Game_1.result.json) |
 | 2005-03-17 | Los Angeles Lakers | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_3/Game_2.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_3/Game_2.result.json) |
 | 2005-03-19 | New York Knicks | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.result.json) |
+| 2005-03-22 | Houston Rockets | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.result.json) |
+| 2005-03-25 | Phoenix Suns | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.result.json) |
+| 2005-03-26 | Charlotte Bobcats | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.result.json) |
 
 ## 2005-03-01 to 2005-03-07 · NBA regular season
 
@@ -3924,6 +3930,30 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2005-03-15 | New York Knicks | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_3/Game_1.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_3/Game_1.result.json) |
 | 2005-03-17 | Los Angeles Lakers | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_3/Game_2.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_3/Game_2.result.json) |
 | 2005-03-19 | New York Knicks | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.result.json) |
+
+## 2005-03-22 to 2005-03-27 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-week-2005-03-22#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 3 | 0 | 3 | 18 / 38 | 47.4% | 0 / 3 | 48 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 12 | 23 | 52.2% | 8.00 | 7.67 | 23 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 5 | 9 | 55.6% | 3.33 | 3.00 | 9 |
+| 18 ft to the three-point line | 1 | 3 | 33.3% | 0.67 | 1.00 | 3 |
+| Three-point range | 0 | 3 | 0.0% | 0.00 | 1.00 | 3 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-03-22 | Houston Rockets | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.result.json) |
+| 2005-03-25 | Phoenix Suns | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.result.json) |
+| 2005-03-26 | Charlotte Bobcats | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.result.json) |
 
 ## 2004-11-03 at New Jersey Nets · Played · NBA regular season
 
@@ -5421,7 +5451,73 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-03-19 | New York Knicks | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_3/Game_3.result.json) |
 
-## 2004-05 · NBA preseason · through 2005-03-21
+## 2005-03-22 at Houston Rockets · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-game-efae73a8b15d6eeb#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 4 / 11 | 36.4% | 0 / 1 | 8 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 3 | 6 | 50.0% | 6.00 | 6.00 | 6 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 1 | 4 | 25.0% | 2.00 | 4.00 | 4 |
+| 18 ft to the three-point line | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-03-22 | Houston Rockets | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_1.result.json) |
+
+## 2005-03-25 vs Phoenix Suns · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-game-3431445a2be0f956#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 7 / 12 | 58.3% | 0 / 0 | 17 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 3 | 7 | 42.9% | 6.00 | 7.00 | 7 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 4 | 5 | 80.0% | 8.00 | 5.00 | 5 |
+| 18 ft to the three-point line | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Three-point range | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-03-25 | Phoenix Suns | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_2.result.json) |
+
+## 2005-03-26 at Charlotte Bobcats · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2004-05-game-82ffa59adb36b6d6#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 7 / 15 | 46.7% | 0 / 2 | 23 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 6 | 10 | 60.0% | 12.00 | 10.00 | 10 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| 18 ft to the three-point line | 1 | 3 | 33.3% | 2.00 | 3.00 | 3 |
+| Three-point range | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-03-26 | Charlotte Bobcats | Played | [Game](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.md) | [Result](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.result.json) |
+
+## 2004-05 · NBA preseason · through 2005-03-27
 
 [Open this period](player_cards.html?period=preseason-2004-05-season#shooting)
 

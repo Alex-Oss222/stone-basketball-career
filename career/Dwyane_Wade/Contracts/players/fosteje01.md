@@ -2,9 +2,9 @@
 
 # Contract | Jeff Foster
 
-Known through: 2005-03-21. [Open interactive contract](fosteje01.html#contract) · [Contract history](fosteje01.html#contract-history)
+Known through: 2005-03-27. [Open interactive contract](fosteje01.html#contract) · [Contract history](fosteje01.html#contract-history)
 
-Jeff Foster: under contract unverified. Evidence cutoff: 2005-03-21.
+Jeff Foster: under contract unverified. Evidence cutoff: 2005-03-27.
 
 ## Current contract
 

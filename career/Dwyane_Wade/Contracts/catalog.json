@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-03-21",
+  "as_of": "2005-03-27",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2975,7 +2975,7 @@
     {
       "player_id": "johnsli01",
       "name": "Linton Johnson",
-      "team": "San Antonio Spurs",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4244,7 +4244,7 @@
     {
       "player_id": "bowenry01",
       "name": "Ryan Bowen",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4631,7 +4631,7 @@
     {
       "player_id": "slayta01",
       "name": "Tamar Slay",
-      "team": "Los Angeles Lakers",
+      "team": "Houston Rockets",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
