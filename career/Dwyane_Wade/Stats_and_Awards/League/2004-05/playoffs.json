@@ -1117,7 +1117,7 @@
    ],
    "home_court": "Miami Heat",
    "wins": {
-    "Atlanta Hawks": 1,
+    "Atlanta Hawks": 2,
     "Miami Heat": 2
    },
    "winner": null,
@@ -1158,7 +1158,9 @@
      "home": "Atlanta Hawks",
      "away": "Miami Heat",
      "conditional": false,
-     "event_id": "2005-05-15-miami-heat-at-atlanta-hawks"
+     "event_id": "2005-05-15-miami-heat-at-atlanta-hawks",
+     "result": "Miami Heat 91, Atlanta Hawks 100",
+     "winner": "Atlanta Hawks"
     },
     {
      "game": 5,
