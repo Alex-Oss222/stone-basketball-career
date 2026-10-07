@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 28 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** January 24, 2005 · **Statistics through:** 2005-03-19 
+**Opening assessment:** January 24, 2005 · **Statistics through:** 2005-03-20 
 
 **Contract/control:** Acquired by trade from Utah Jazz on January 24, 2005: $4,690,000 in 2004-05; contract through 2004-05. (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
