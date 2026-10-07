@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-03-27**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-03-28**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -205,7 +205,7 @@ Card date: **2005-03-27**. 573 registry players, one Markdown card and one inter
 | [Vince Carter](cartevi01.md) | Toronto Raptors | 28 | sourced | [open](cartevi01.html) |
 | [Vincent Yarbrough](yarbrvi01.md) | Free agent | 24 | silhouette | [open](yarbrvi01.html) |
 | [Voshon Lenard](lenarvo01.md) | Dallas Mavericks | 31 | silhouette | [open](lenarvo01.html) |
-| [Wesley Person](persowe01.md) | Free agent | 33 | silhouette | [open](persowe01.html) |
+| [Wesley Person](persowe01.md) | Free agent | 34 | silhouette | [open](persowe01.html) |
 | [Willie Green](greenwi01.md) | Philadelphia 76ers | 23 | sourced | [open](greenwi01.html) |
 | [Zoran Planinic](planizo01.md) | Charlotte Bobcats | 22 | sourced | [open](planizo01.html) |
 
@@ -312,7 +312,7 @@ Card date: **2005-03-27**. 573 registry players, one Markdown card and one inter
 | [Lionel Chalmers](lionelchalmers.md) | Golden State Warriors | 24 | silhouette | [open](lionelchalmers.html) |
 | [Luis Flores](luisflores.md) | Atlanta Hawks | 23 | silhouette | [open](luisflores.html) |
 | [Luke Jackson](lukejackson.md) | Portland Trail Blazers | 23 | silhouette | [open](lukejackson.html) |
-| [Luke Walton](waltolu01.md) | Los Angeles Lakers | 24 | sourced | [open](waltolu01.html) |
+| [Luke Walton](waltolu01.md) | Los Angeles Lakers | 25 | sourced | [open](waltolu01.html) |
 | [Luol Deng](luoldeng.md) | Boston Celtics | 19 | silhouette | [open](luoldeng.html) |
 | [Marcus Fizer](fizerma01.md) | New Jersey Nets | 26 | silhouette | [open](fizerma01.html) |
 | [Mark Jones](markjones.md) | Detroit Pistons | 29 | silhouette | [open](markjones.html) |
