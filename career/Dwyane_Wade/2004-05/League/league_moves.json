@@ -3638,6 +3638,46 @@
    },
    "contract": null,
    "note": "10-day contract ended (2.7 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-08-expire-breweja01",
+   "date": "2005-03-08",
+   "kind": "expire",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": "Milwaukee Bucks",
+   "to": null,
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": null,
+   "note": "10-day contract ended (8.4 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-08-ten_day-breweja01",
+   "date": "2005-03-08",
+   "kind": "ten_day",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": null,
+   "to": "Milwaukee Bucks",
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-18",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.6 x fit"
   }
  ],
  "market_days": [
@@ -3766,6 +3806,7 @@
   "2005-03-04",
   "2005-03-05",
   "2005-03-06",
-  "2005-03-07"
+  "2005-03-07",
+  "2005-03-08"
  ]
 }

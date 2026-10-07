@@ -1,6 +1,6 @@
 ---
 type: regular_season_week
-status: not_started
+status: active
 month: March
 week: 2
 days: 8-14
