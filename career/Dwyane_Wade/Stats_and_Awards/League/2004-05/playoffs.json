@@ -295,7 +295,7 @@
    ],
    "home_court": "Cleveland Cavaliers",
    "wins": {
-    "Cleveland Cavaliers": 0,
+    "Cleveland Cavaliers": 1,
     "Atlanta Hawks": 1
    },
    "winner": null,
@@ -316,7 +316,9 @@
      "home": "Cleveland Cavaliers",
      "away": "Atlanta Hawks",
      "conditional": false,
-     "event_id": "2005-04-26-atlanta-hawks-at-cleveland-cavaliers"
+     "event_id": "2005-04-26-atlanta-hawks-at-cleveland-cavaliers",
+     "result": "Atlanta Hawks 81, Cleveland Cavaliers 96",
+     "winner": "Cleveland Cavaliers"
     },
     {
      "game": 3,
@@ -374,7 +376,7 @@
    ],
    "home_court": "Miami Heat",
    "wins": {
-    "Miami Heat": 1,
+    "Miami Heat": 2,
     "Detroit Pistons": 0
    },
    "winner": null,
@@ -395,7 +397,9 @@
      "home": "Miami Heat",
      "away": "Detroit Pistons",
      "conditional": false,
-     "event_id": "2005-04-26-detroit-pistons-at-miami-heat"
+     "event_id": "2005-04-26-detroit-pistons-at-miami-heat",
+     "result": "Detroit Pistons 111, Miami Heat 129",
+     "winner": "Miami Heat"
     },
     {
      "game": 3,
@@ -533,7 +537,7 @@
    "home_court": "Dallas Mavericks",
    "wins": {
     "Dallas Mavericks": 1,
-    "Sacramento Kings": 0
+    "Sacramento Kings": 1
    },
    "winner": null,
    "games": [
@@ -553,7 +557,9 @@
      "home": "Dallas Mavericks",
      "away": "Sacramento Kings",
      "conditional": false,
-     "event_id": "2005-04-26-sacramento-kings-at-dallas-mavericks"
+     "event_id": "2005-04-26-sacramento-kings-at-dallas-mavericks",
+     "result": "Sacramento Kings 116, Dallas Mavericks 105",
+     "winner": "Sacramento Kings"
     },
     {
      "game": 3,
@@ -611,7 +617,7 @@
    ],
    "home_court": "Minnesota Timberwolves",
    "wins": {
-    "Minnesota Timberwolves": 1,
+    "Minnesota Timberwolves": 2,
     "Golden State Warriors": 0
    },
    "winner": null,
@@ -632,7 +638,9 @@
      "home": "Minnesota Timberwolves",
      "away": "Golden State Warriors",
      "conditional": false,
-     "event_id": "2005-04-26-golden-state-warriors-at-minnesota-timberwolves"
+     "event_id": "2005-04-26-golden-state-warriors-at-minnesota-timberwolves",
+     "result": "Golden State Warriors 89, Minnesota Timberwolves 106",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 3,
