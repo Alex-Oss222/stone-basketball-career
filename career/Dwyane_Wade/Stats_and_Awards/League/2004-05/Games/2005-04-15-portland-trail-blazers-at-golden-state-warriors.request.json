@@ -1,0 +1,892 @@
+{
+ "event_id": "2005-04-15-portland-trail-blazers-at-golden-state-warriors",
+ "game_date": "2005-04-15",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ },
+ "frozen": {
+  "home": {
+   "team_id": "Golden State Warriors",
+   "players": [
+    {
+     "player_id": "Jason Richardson",
+     "position": "SG",
+     "minutes": 37.83,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "richaja01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.4780289033675128,
+       "three_point_pct": 0.3422949450326574,
+       "free_throw_pct": 0.7039161242356368,
+       "three_point_attempt_rate": 0.2636011175964578,
+       "free_throw_attempt_rate": 0.23200416469004226,
+       "turnovers_per_fga": 0.12681551331677612,
+       "usage_pct": 0.26378216617994443,
+       "assist_pct": 0.18260648100939167,
+       "offensive_rebound_pct": 0.04941378046578662,
+       "defensive_rebound_pct": 0.1243002264617435,
+       "steal_pct": 0.02050712496151841,
+       "block_pct": 0.008857498459051316,
+       "fouls_per_minute": 0.06194724578904138
+      },
+      "defense": -0.36031746031746037,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.878,
+     "age": null
+    },
+    {
+     "player_id": "Tayshaun Prince",
+     "position": "SF",
+     "minutes": 37.06,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "princta01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.5039063085168766,
+       "three_point_pct": 0.34310537134655855,
+       "free_throw_pct": 0.7990573990556974,
+       "three_point_attempt_rate": 0.14717004335449135,
+       "free_throw_attempt_rate": 0.28401435416648446,
+       "turnovers_per_fga": 0.1392936927143324,
+       "usage_pct": 0.19149191907862131,
+       "assist_pct": 0.14218083997577732,
+       "offensive_rebound_pct": 0.05318246327198628,
+       "defensive_rebound_pct": 0.11842504308171525,
+       "steal_pct": 0.010924662262453913,
+       "block_pct": 0.017664210381169193,
+       "fouls_per_minute": 0.05815392584486688
+      },
+      "defense": 0.6371069182389937,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Troy Murphy",
+     "position": "PF",
+     "minutes": 33.93,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "murphtr01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.4190788674955398,
+       "three_point_pct": 0.3921637282041848,
+       "free_throw_pct": 0.739199052786636,
+       "three_point_attempt_rate": 0.14848937976732615,
+       "free_throw_attempt_rate": 0.30619245002893525,
+       "turnovers_per_fga": 0.12364249167109628,
+       "usage_pct": 0.22155685490973265,
+       "assist_pct": 0.08028091730967149,
+       "offensive_rebound_pct": 0.10770691847055826,
+       "defensive_rebound_pct": 0.23367332647438777,
+       "steal_pct": 0.011417297537165298,
+       "block_pct": 0.011113679992176644,
+       "fouls_per_minute": 0.08120528929700882
+      },
+      "defense": -1.5093457943925233,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.8537,
+     "age": null
+    },
+    {
+     "player_id": "Mike Dunleavy",
+     "position": "SF",
+     "minutes": 32.53,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "dunlemi02",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.47523699269385095,
+       "three_point_pct": 0.3697795268944226,
+       "free_throw_pct": 0.7802173151980883,
+       "three_point_attempt_rate": 0.2949872032807691,
+       "free_throw_attempt_rate": 0.2092154347850905,
+       "turnovers_per_fga": 0.14591977501397882,
+       "usage_pct": 0.19529528374779026,
+       "assist_pct": 0.13218368399002176,
+       "offensive_rebound_pct": 0.04429120655105739,
+       "defensive_rebound_pct": 0.15035345563488184,
+       "steal_pct": 0.01593847132669941,
+       "block_pct": 0.007641011095125653,
+       "fouls_per_minute": 0.07962287212284154
+      },
+      "defense": -0.08954703832752613,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.9634,
+     "age": null
+    },
+    {
+     "player_id": "Speedy Claxton",
+     "position": "PG",
+     "minutes": 30.1,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "claxtsp01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.44488417130578733,
+       "three_point_pct": 0.2094092126232046,
+       "free_throw_pct": 0.7384975427233068,
+       "three_point_attempt_rate": 0.1131933961528894,
+       "free_throw_attempt_rate": 0.40541624828533285,
+       "turnovers_per_fga": 0.19915648961981194,
+       "usage_pct": 0.1974711694130484,
+       "assist_pct": 0.30493424937586017,
+       "offensive_rebound_pct": 0.02717816698191819,
+       "defensive_rebound_pct": 0.09870920825820996,
+       "steal_pct": 0.028959053623677698,
+       "block_pct": 0.004995893572593265,
+       "fouls_per_minute": 0.09640643312060554
+      },
+      "defense": 0.8614958448753463,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.7561,
+     "age": null
+    },
+    {
+     "player_id": "Juwan Howard",
+     "position": "PF",
+     "minutes": 26.62,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "howarju01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.4407073239179866,
+       "three_point_pct": 0.05562329108926053,
+       "free_throw_pct": 0.8293648716084252,
+       "three_point_attempt_rate": 0.030778768707760012,
+       "free_throw_attempt_rate": 0.23120488772337444,
+       "turnovers_per_fga": 0.15537657252772227,
+       "usage_pct": 0.1954778356968312,
+       "assist_pct": 0.10609667481845991,
+       "offensive_rebound_pct": 0.09147624144604062,
+       "defensive_rebound_pct": 0.15342238067938369,
+       "steal_pct": 0.012115813824761993,
+       "block_pct": 0.0041692341226200426,
+       "fouls_per_minute": 0.08781547094484368
+      },
+      "defense": -0.42203742203742206,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.7439,
+     "age": null
+    },
+    {
+     "player_id": "Eric Snow",
+     "position": "SG",
+     "minutes": 22.77,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "snower01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.4044638908927882,
+       "three_point_pct": 0.29910028854337506,
+       "free_throw_pct": 0.7432989310616596,
+       "three_point_attempt_rate": 0.14875159841348962,
+       "free_throw_attempt_rate": 0.24730814399624107,
+       "turnovers_per_fga": 0.24277639664065717,
+       "usage_pct": 0.1250686358078117,
+       "assist_pct": 0.23313059364539054,
+       "offensive_rebound_pct": 0.02738560970202091,
+       "defensive_rebound_pct": 0.0882176663007843,
+       "steal_pct": 0.018863286495913366,
+       "block_pct": 0.007443164499385023,
+       "fouls_per_minute": 0.10612890152868558
+      },
+      "defense": 0.3440298507462687,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.9878,
+     "age": null
+    },
+    {
+     "player_id": "Brent Barry",
+     "position": "SG",
+     "minutes": 21.51,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "barrybr01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.5119163162496538,
+       "three_point_pct": 0.3610407394463746,
+       "free_throw_pct": 0.81807580274996,
+       "three_point_attempt_rate": 0.5398375465454016,
+       "free_throw_attempt_rate": 0.28864665535782,
+       "turnovers_per_fga": 0.14387961565660895,
+       "usage_pct": 0.16117935413621268,
+       "assist_pct": 0.16371876644366978,
+       "offensive_rebound_pct": 0.026585835368239597,
+       "defensive_rebound_pct": 0.11605149155429696,
+       "steal_pct": 0.012077644651484894,
+       "block_pct": 0.009135002449632739,
+       "fouls_per_minute": 0.0763137141200586
+      },
+      "defense": 1.1090107737512243,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.9878,
+     "age": null
+    },
+    {
+     "player_id": "Anthony Goldwire",
+     "position": "PG",
+     "minutes": 16.27,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "goldwan01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.4516641596859095,
+       "three_point_pct": 0.3810811267298516,
+       "free_throw_pct": 0.8075150967375517,
+       "three_point_attempt_rate": 0.42868383874153987,
+       "free_throw_attempt_rate": 0.25092112904206243,
+       "turnovers_per_fga": 0.13356141275045041,
+       "usage_pct": 0.16063863136673967,
+       "assist_pct": 0.20285258250158872,
+       "offensive_rebound_pct": 0.03437060120404672,
+       "defensive_rebound_pct": 0.11952068521815558,
+       "steal_pct": 0.015755205320806744,
+       "block_pct": 0.005543946789768665,
+       "fouls_per_minute": 0.07001931674129065
+      },
+      "defense": -0.06415770609318996,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.4024,
+     "age": null
+    },
+    {
+     "player_id": "Anderson Varej\u00e3o",
+     "position": "PF",
+     "minutes": 10.52,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "varejan01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.5031755891086876,
+       "three_point_pct": 0.08956569481761462,
+       "free_throw_pct": 0.5912139117391382,
+       "three_point_attempt_rate": 0.05605691799857515,
+       "free_throw_attempt_rate": 0.5664274258184179,
+       "turnovers_per_fga": 0.14591778222402593,
+       "usage_pct": 0.15803375180063375,
+       "assist_pct": 0.07580059708614567,
+       "offensive_rebound_pct": 0.12312050580624813,
+       "defensive_rebound_pct": 0.19046242773778385,
+       "steal_pct": 0.023057373282591134,
+       "block_pct": 0.028510321665336322,
+       "fouls_per_minute": 0.12781424743620193
+      },
+      "defense": 0.4452278589853826
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Calvin Booth",
+     "position": "C",
+     "minutes": 5.5,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "boothca01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.45879281152242885,
+       "three_point_pct": 0.13355686649661908,
+       "free_throw_pct": 0.7852866028428918,
+       "three_point_attempt_rate": 0.08892448959114052,
+       "free_throw_attempt_rate": 0.28126919906676695,
+       "turnovers_per_fga": 0.15583208277799093,
+       "usage_pct": 0.1652865243257452,
+       "assist_pct": 0.07879080232249205,
+       "offensive_rebound_pct": 0.0676125512968341,
+       "defensive_rebound_pct": 0.17595409908980383,
+       "steal_pct": 0.017248339196556987,
+       "block_pct": 0.03197874314465071,
+       "fouls_per_minute": 0.13837330810440715
+      },
+      "defense": 1.1410119840213049,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Lionel Chalmers",
+     "position": "PG",
+     "minutes": 5.28,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "chalmli01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.42128257385992923,
+       "three_point_pct": 0.2867745148695995,
+       "free_throw_pct": 0.6768458924899553,
+       "three_point_attempt_rate": 0.3083044890190938,
+       "free_throw_attempt_rate": 0.2373946346674979,
+       "turnovers_per_fga": 0.1863292133274614,
+       "usage_pct": 0.1816251750943206,
+       "assist_pct": 0.1724516976960265,
+       "offensive_rebound_pct": 0.029951089021373233,
+       "defensive_rebound_pct": 0.10160409748846196,
+       "steal_pct": 0.01660126211139629,
+       "block_pct": 0.006382679531768262,
+       "fouls_per_minute": 0.07728235984761639
+      },
+      "defense": -0.8270122783083219
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Vitaly Potapenko",
+     "position": "C",
+     "minutes": 4.09,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "potapvi01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.4910219015652376,
+       "three_point_pct": 0.1649216269505901,
+       "free_throw_pct": 0.812361903622802,
+       "three_point_attempt_rate": 0.09129126231935625,
+       "free_throw_attempt_rate": 0.3190584256090134,
+       "turnovers_per_fga": 0.15479033108509754,
+       "usage_pct": 0.17445953959292812,
+       "assist_pct": 0.09929389818488721,
+       "offensive_rebound_pct": 0.08631511875890337,
+       "defensive_rebound_pct": 0.1636809710046056,
+       "steal_pct": 0.013663090626542987,
+       "block_pct": 0.01134559323382682,
+       "fouls_per_minute": 0.12381536809759042
+      },
+      "defense": -0.4220472440944882,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Horace Jenkins",
+     "position": "PG",
+     "minutes": 1.27,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "jenkiho01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.4485455627254517,
+       "three_point_pct": 0.2578339184972421,
+       "free_throw_pct": 0.7957996019681616,
+       "three_point_attempt_rate": 0.19072076844305877,
+       "free_throw_attempt_rate": 0.2993037417220802,
+       "turnovers_per_fga": 0.1723294335317005,
+       "usage_pct": 0.21451795382212135,
+       "assist_pct": 0.15266607527521633,
+       "offensive_rebound_pct": 0.051304822407590545,
+       "defensive_rebound_pct": 0.12335347390852133,
+       "steal_pct": 0.019665161207063075,
+       "block_pct": 0.013382435883133998,
+       "fouls_per_minute": 0.0808118063571852
+      },
+      "defense": 0.05148514851485149
+     },
+     "availability": 1.0,
+     "age": null
+    }
+   ],
+   "pace": 0.9958,
+   "rest_days": 1,
+   "injuries": false
+  },
+  "away": {
+   "team_id": "Portland Trail Blazers",
+   "players": [
+    {
+     "player_id": "Zach Randolph",
+     "position": "PF",
+     "minutes": 34.85,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "randoza01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.45455078859383735,
+       "three_point_pct": 0.055070933187462145,
+       "free_throw_pct": 0.8063686005747341,
+       "three_point_attempt_rate": 0.0393056124295081,
+       "free_throw_attempt_rate": 0.3370838257014533,
+       "turnovers_per_fga": 0.15307470380371094,
+       "usage_pct": 0.2652359980611451,
+       "assist_pct": 0.10663288106966264,
+       "offensive_rebound_pct": 0.0985626218208306,
+       "defensive_rebound_pct": 0.1986552805721682,
+       "steal_pct": 0.01250664541333395,
+       "block_pct": 0.00890619349626787,
+       "fouls_per_minute": 0.07512240294682662
+      },
+      "defense": -1.3477666841828693,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.561,
+     "age": null
+    },
+    {
+     "player_id": "David Wesley",
+     "position": "SG",
+     "minutes": 34.67,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "wesleda01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.4168657005768263,
+       "three_point_pct": 0.36074799507079636,
+       "free_throw_pct": 0.858848923356571,
+       "three_point_attempt_rate": 0.36515280220436414,
+       "free_throw_attempt_rate": 0.22966773477615332,
+       "turnovers_per_fga": 0.14063911077079289,
+       "usage_pct": 0.17422217191912118,
+       "assist_pct": 0.16895602532074228,
+       "offensive_rebound_pct": 0.0204914480003773,
+       "defensive_rebound_pct": 0.0892123249574878,
+       "steal_pct": 0.01911887334124885,
+       "block_pct": 0.003946411411467137,
+       "fouls_per_minute": 0.08082193336096731
+      },
+      "defense": 0.5414443721535458,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.9756,
+     "age": null
+    },
+    {
+     "player_id": "Damon Stoudamire",
+     "position": "PG",
+     "minutes": 34.1,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "stoudda01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.4157089560114526,
+       "three_point_pct": 0.36772309037063,
+       "free_throw_pct": 0.8993858619380763,
+       "three_point_attempt_rate": 0.40594430169106305,
+       "free_throw_attempt_rate": 0.1896981499976693,
+       "turnovers_per_fga": 0.1439421520387365,
+       "usage_pct": 0.2324378235257965,
+       "assist_pct": 0.2866956601573318,
+       "offensive_rebound_pct": 0.0272783601940013,
+       "defensive_rebound_pct": 0.10566248391433367,
+       "steal_pct": 0.01684760843843518,
+       "block_pct": 0.002224678490394062,
+       "fouls_per_minute": 0.06138826696712425
+      },
+      "defense": -1.1726322664924886,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.9878,
+     "age": null
+    },
+    {
+     "player_id": "Rasheed Wallace",
+     "position": "PF",
+     "minutes": 34.01,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "wallara01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.47347351363877965,
+       "three_point_pct": 0.32450666940357237,
+       "free_throw_pct": 0.7036519267023821,
+       "three_point_attempt_rate": 0.21137050777446414,
+       "free_throw_attempt_rate": 0.18776076683502213,
+       "turnovers_per_fga": 0.12664892847284054,
+       "usage_pct": 0.21876152308418875,
+       "assist_pct": 0.09833548172241881,
+       "offensive_rebound_pct": 0.07532137316775893,
+       "defensive_rebound_pct": 0.19493658421692264,
+       "steal_pct": 0.012739828264313585,
+       "block_pct": 0.02996345747757715,
+       "fouls_per_minute": 0.0906640638961878
+      },
+      "defense": 1.0794777368597255,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.9634,
+     "age": null
+    },
+    {
+     "player_id": "Ruben Patterson",
+     "position": "SF",
+     "minutes": 27.96,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "patteru01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.5455576860034725,
+       "three_point_pct": 0.12114637322401646,
+       "free_throw_pct": 0.6117477341810693,
+       "three_point_attempt_rate": 0.062097182515830754,
+       "free_throw_attempt_rate": 0.4187170445010462,
+       "turnovers_per_fga": 0.22691145895528236,
+       "usage_pct": 0.20282853729546355,
+       "assist_pct": 0.13091433243319894,
+       "offensive_rebound_pct": 0.07669116094692596,
+       "defensive_rebound_pct": 0.09078068455494356,
+       "steal_pct": 0.02614049347657056,
+       "block_pct": 0.008131517896704316,
+       "fouls_per_minute": 0.08559683888089058
+      },
+      "defense": 0.26012405848471426,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.8537,
+     "age": null
+    },
+    {
+     "player_id": "Derek Anderson",
+     "position": "SG",
+     "minutes": 26.36,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "anderde01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.4032985398518669,
+       "three_point_pct": 0.38024798019346995,
+       "free_throw_pct": 0.8029079999397731,
+       "three_point_attempt_rate": 0.33435375386970456,
+       "free_throw_attempt_rate": 0.23414127951324984,
+       "turnovers_per_fga": 0.1767118039067483,
+       "usage_pct": 0.1852102941411103,
+       "assist_pct": 0.1796127309867538,
+       "offensive_rebound_pct": 0.03164516394732706,
+       "defensive_rebound_pct": 0.10306540388858323,
+       "steal_pct": 0.015791723126972967,
+       "block_pct": 0.005066212437880452,
+       "fouls_per_minute": 0.07700704349935218
+      },
+      "defense": -0.4830409356725146,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.5732,
+     "age": null
+    },
+    {
+     "player_id": "Joel Przybilla",
+     "position": "C",
+     "minutes": 24.45,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "przybjo01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.5917870245828262,
+       "three_point_pct": 0.34628311309110094,
+       "free_throw_pct": 0.541604640031502,
+       "three_point_attempt_rate": 0.026707763201290983,
+       "free_throw_attempt_rate": 0.47413134052297323,
+       "turnovers_per_fga": 0.2778461295123923,
+       "usage_pct": 0.13714444203076948,
+       "assist_pct": 0.07517847015163139,
+       "offensive_rebound_pct": 0.10626097573715329,
+       "defensive_rebound_pct": 0.23283553978873808,
+       "steal_pct": 0.008360957183670666,
+       "block_pct": 0.05384348669569748,
+       "fouls_per_minute": 0.12514215830824585
+      },
+      "defense": 1.205375347544022,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.9268,
+     "age": null
+    },
+    {
+     "player_id": "Malik Rose",
+     "position": "PF",
+     "minutes": 19.41,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "rosema01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.45616800482167635,
+       "three_point_pct": 0.13935001139554037,
+       "free_throw_pct": 0.7315291154636429,
+       "three_point_attempt_rate": 0.051648774177783977,
+       "free_throw_attempt_rate": 0.39784937733726944,
+       "turnovers_per_fga": 0.22428187579089343,
+       "usage_pct": 0.19770489188187468,
+       "assist_pct": 0.0810941324675123,
+       "offensive_rebound_pct": 0.09472221349830422,
+       "defensive_rebound_pct": 0.1643168199490688,
+       "steal_pct": 0.017415409116134293,
+       "block_pct": 0.009277092756629952,
+       "fouls_per_minute": 0.13220886787761524
+      },
+      "defense": 0.0,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.9268,
+     "age": null
+    },
+    {
+     "player_id": "Howard Eisley",
+     "position": "PG",
+     "minutes": 19.3,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "eisleho01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.44623749844194766,
+       "three_point_pct": 0.27229978479007966,
+       "free_throw_pct": 0.7815070773420484,
+       "three_point_attempt_rate": 0.2453184545950709,
+       "free_throw_attempt_rate": 0.23732493548033506,
+       "turnovers_per_fga": 0.25709876618339433,
+       "usage_pct": 0.17908097790252345,
+       "assist_pct": 0.2615260128715692,
+       "offensive_rebound_pct": 0.020171452836141194,
+       "defensive_rebound_pct": 0.08102467236475941,
+       "steal_pct": 0.01638236702720611,
+       "block_pct": 0.006940617945155119,
+       "fouls_per_minute": 0.10591875156738563
+      },
+      "defense": -1.3222222222222224,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 0.9024,
+     "age": null
+    },
+    {
+     "player_id": "Travis Outlaw",
+     "position": "SF",
+     "minutes": 9.67,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "outlatr01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.4875442630087657,
+       "three_point_pct": 0.37482175738534035,
+       "free_throw_pct": 0.6878995516669856,
+       "three_point_attempt_rate": 0.08231229895838224,
+       "free_throw_attempt_rate": 0.2712706948124272,
+       "turnovers_per_fga": 0.1516557000538684,
+       "usage_pct": 0.19467741426697582,
+       "assist_pct": 0.09726609820994421,
+       "offensive_rebound_pct": 0.058067555424676356,
+       "defensive_rebound_pct": 0.11787128254237927,
+       "steal_pct": 0.01928446956752334,
+       "block_pct": 0.030641987136508505,
+       "fouls_per_minute": 0.09808311298896363
+      },
+      "defense": 0.07255260750228729,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Theron Smith",
+     "position": "SF",
+     "minutes": 6.22,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "smithth01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.3734176746044996,
+       "three_point_pct": 0.2848755590743592,
+       "free_throw_pct": 0.8396372031777822,
+       "three_point_attempt_rate": 0.11310600708734099,
+       "free_throw_attempt_rate": 0.18729665606346782,
+       "turnovers_per_fga": 0.19736713240044257,
+       "usage_pct": 0.16563161954508732,
+       "assist_pct": 0.10583584719408988,
+       "offensive_rebound_pct": 0.07311070460251391,
+       "defensive_rebound_pct": 0.17144174185244998,
+       "steal_pct": 0.009887237203817317,
+       "block_pct": 0.009694416229681086,
+       "fouls_per_minute": 0.10258010688649984
+      },
+      "defense": -1.1333333333333333,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "\u017darko \u010cabarkapa",
+     "position": "PF",
+     "minutes": 5.79,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "cabarza01",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.497524545356973,
+       "three_point_pct": 0.3603377862278472,
+       "free_throw_pct": 0.787915218392337,
+       "three_point_attempt_rate": 0.19968987683206313,
+       "free_throw_attempt_rate": 0.3338337942663119,
+       "turnovers_per_fga": 0.17932047740155319,
+       "usage_pct": 0.2087554263725382,
+       "assist_pct": 0.11630339368571176,
+       "offensive_rebound_pct": 0.07202389286415571,
+       "defensive_rebound_pct": 0.151180460425894,
+       "steal_pct": 0.01363463577230825,
+       "block_pct": 0.01016782336409271,
+       "fouls_per_minute": 0.1106533248065713
+      },
+      "defense": -0.4290322580645161,
+      "feedback_sha256": "7b80123ded93c66a02e891f8df8075ebd700d82c0e99b58f718a3c54babc1211"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Luke Jackson",
+     "position": "SF",
+     "minutes": 0.52,
+     "ratings": {},
+     "stat_profile": {
+      "bbr_id": "jackslu02",
+      "model_version": "trajectory-hybrid.1",
+      "as_of": "2004-05",
+      "season_end_year": 2005,
+      "source_sha256": "46f7486dc61ea6a50e8aeca7c680afbd678b0fb2fcb8171773422f919c689a69",
+      "rates": {
+       "two_point_pct": 0.43779821659901874,
+       "three_point_pct": 0.38726405171881184,
+       "free_throw_pct": 0.7619136225319844,
+       "three_point_attempt_rate": 0.19185640235146154,
+       "free_throw_attempt_rate": 0.292798317104465,
+       "turnovers_per_fga": 0.16509766342336563,
+       "usage_pct": 0.21527770654267353,
+       "assist_pct": 0.15052797204427815,
+       "offensive_rebound_pct": 0.05688964505150606,
+       "defensive_rebound_pct": 0.1390169197056636,
+       "steal_pct": 0.015279082004820647,
+       "block_pct": 0.013639953634945003,
+       "fouls_per_minute": 0.08935268154024147
+      },
+      "defense": -0.4387755102040816
+     },
+     "availability": 1.0,
+     "age": null
+    }
+   ],
+   "pace": 0.9559,
+   "rest_days": 0,
+   "injuries": false
+  }
+ }
+}

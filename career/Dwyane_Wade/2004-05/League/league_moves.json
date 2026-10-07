@@ -4611,6 +4611,65 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.02 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-04-15-clear-millean01",
+   "date": "2005-04-15",
+   "kind": "clear",
+   "player": "Anthony Miller",
+   "bbr_id": "millean01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Anthony Miller",
+    "bbr_id": "millean01",
+    "position": "PF",
+    "games": 2,
+    "minutes": 9
+   },
+   "contract": null,
+   "note": "cleared waivers from Chicago Bulls: a free agent",
+   "waiver": "2004-05-market-2005-04-13-waive-millean01"
+  },
+  {
+   "id": "2004-05-market-2005-04-15-waive-handlbe01",
+   "date": "2005-04-15",
+   "kind": "waive",
+   "player": "Ben Handlogten",
+   "bbr_id": "handlbe01",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Ben Handlogten",
+    "bbr_id": "handlbe01",
+    "position": "C",
+    "games": 21,
+    "minutes": 297
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-04-17"
+  },
+  {
+   "id": "2004-05-market-2005-04-15-ten_day-gilled01",
+   "date": "2005-04-15",
+   "kind": "ten_day",
+   "player": "Eddie Gill",
+   "bbr_id": "gilled01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Eddie Gill",
+    "bbr_id": "gilled01",
+    "position": "PG",
+    "games": 73,
+    "minutes": 1021
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.95 x fit"
   }
  ],
  "market_days": [
@@ -4777,6 +4836,7 @@
   "2005-04-11",
   "2005-04-12",
   "2005-04-13",
-  "2005-04-14"
+  "2005-04-14",
+  "2005-04-15"
  ]
 }
