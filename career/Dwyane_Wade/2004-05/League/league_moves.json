@@ -4707,6 +4707,65 @@
    },
    "contract": null,
    "note": "10-day contract ended (5.2 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-04-17-clear-handlbe01",
+   "date": "2005-04-17",
+   "kind": "clear",
+   "player": "Ben Handlogten",
+   "bbr_id": "handlbe01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Ben Handlogten",
+    "bbr_id": "handlbe01",
+    "position": "C",
+    "games": 21,
+    "minutes": 297
+   },
+   "contract": null,
+   "note": "cleared waivers from Chicago Bulls: a free agent",
+   "waiver": "2004-05-market-2005-04-15-waive-handlbe01"
+  },
+  {
+   "id": "2004-05-market-2005-04-17-expire-slayta01",
+   "date": "2005-04-17",
+   "kind": "expire",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.9 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-04-17-ten_day-slayta01",
+   "date": "2005-04-17",
+   "kind": "ten_day",
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Tamar Slay",
+    "bbr_id": "slayta01",
+    "position": "SG",
+    "games": 8,
+    "minutes": 78
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.43 x fit"
   }
  ],
  "market_days": [
@@ -4875,6 +4934,7 @@
   "2005-04-13",
   "2005-04-14",
   "2005-04-15",
-  "2005-04-16"
+  "2005-04-16",
+  "2005-04-17"
  ]
 }
