@@ -269,12 +269,12 @@ Home court: Sacramento Kings. Sacramento Kings wins 4-1.
 
 ### Finals: (1) Toronto Raptors vs (5) Sacramento Kings
 
-Home court: Toronto Raptors. Series Toronto Raptors 0, Sacramento Kings 1.
+Home court: Toronto Raptors. Series Toronto Raptors 0, Sacramento Kings 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Thu Jun 9 | Toronto Raptors | Sacramento Kings | Sacramento Kings 103, Toronto Raptors 96 |
-| 2 | Sun Jun 12 | Toronto Raptors | Sacramento Kings |  |
+| 2 | Sun Jun 12 | Toronto Raptors | Sacramento Kings | Sacramento Kings 103, Toronto Raptors 100 |
 | 3 | Tue Jun 14 | Sacramento Kings | Toronto Raptors |  |
 | 4 | Thu Jun 16 | Sacramento Kings | Toronto Raptors |  |
 | 5 | Sun Jun 19 | Sacramento Kings | Toronto Raptors | if needed |
