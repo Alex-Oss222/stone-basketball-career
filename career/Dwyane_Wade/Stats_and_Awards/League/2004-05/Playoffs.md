@@ -223,12 +223,12 @@ Home court: Toronto Raptors. Series Toronto Raptors 1, Boston Celtics 1.
 
 ### East: (6) Atlanta Hawks vs (2) Miami Heat
 
-Home court: Miami Heat. Series Atlanta Hawks 0, Miami Heat 1.
+Home court: Miami Heat. Series Atlanta Hawks 1, Miami Heat 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Mon May 9 | Miami Heat | Atlanta Hawks | Atlanta Hawks 75, Miami Heat 110 |
-| 2 | Wed May 11 | Miami Heat | Atlanta Hawks |  |
+| 2 | Wed May 11 | Miami Heat | Atlanta Hawks | Atlanta Hawks 100, Miami Heat 88 |
 | 3 | Fri May 13 | Atlanta Hawks | Miami Heat |  |
 | 4 | Sun May 15 | Atlanta Hawks | Miami Heat |  |
 | 5 | Tue May 17 | Miami Heat | Atlanta Hawks | if needed |
