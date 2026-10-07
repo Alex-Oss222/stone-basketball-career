@@ -1,0 +1,12 @@
+{
+ "date": "2005-02-14",
+ "decider": "New York Knicks and Portland Trail Blazers front offices (engine draw)",
+ "event_id": "2004-05-league-trade-2005-02-14-davisda01-eisleho01-martida01-rosema01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.67301,
+  "decline": 0.32699
+ },
+ "outcome": "accept",
+ "question": "Do New York Knicks and Portland Trail Blazers trade Malik Rose and Howard Eisley for Dale Davis and Darrick Martin?"
+}

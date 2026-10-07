@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-02-13",
+  "as_of": "2005-02-14",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1058,7 +1058,7 @@
     {
       "player_id": "davisda01",
       "name": "Dale Davis",
-      "team": "Portland Trail Blazers",
+      "team": "New York Knicks",
       "status": "under contract",
       "current_contract_id": "davisda01-existing-fb00d42a644b",
       "recorded_agreements": 1,
@@ -1220,7 +1220,7 @@
     {
       "player_id": "martida01",
       "name": "Darrick Martin",
-      "team": "Portland Trail Blazers",
+      "team": "New York Knicks",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -1913,7 +1913,7 @@
     {
       "player_id": "eisleho01",
       "name": "Howard Eisley",
-      "team": "New York Knicks",
+      "team": "Portland Trail Blazers",
       "status": "under contract",
       "current_contract_id": "eisleho01-existing-3a00524ac07b",
       "recorded_agreements": 1,
@@ -3110,7 +3110,7 @@
     {
       "player_id": "rosema01",
       "name": "Malik Rose",
-      "team": "New York Knicks",
+      "team": "Portland Trail Blazers",
       "status": "under contract",
       "current_contract_id": "rosema01-existing-f6cc43891fc7",
       "recorded_agreements": 1,

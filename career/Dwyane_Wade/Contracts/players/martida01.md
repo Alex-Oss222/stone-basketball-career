@@ -2,9 +2,9 @@
 
 # Contract | Darrick Martin
 
-Known through: 2005-02-13. [Open interactive contract](martida01.html#contract) · [Contract history](martida01.html#contract-history)
+Known through: 2005-02-14. [Open interactive contract](martida01.html#contract) · [Contract history](martida01.html#contract-history)
 
-Darrick Martin: No verified contract record. Evidence cutoff: 2005-02-13.
+Darrick Martin: No verified contract record. Evidence cutoff: 2005-02-14.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Darrick Martin |
-| Club / rights baseline | Portland Trail Blazers |
+| Club / rights baseline | New York Knicks |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

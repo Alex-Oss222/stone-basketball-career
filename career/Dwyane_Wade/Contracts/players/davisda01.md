@@ -2,9 +2,9 @@
 
 # Contract | Dale Davis
 
-Known through: 2005-02-13. [Open interactive contract](davisda01.html#contract) · [Contract history](davisda01.html#contract-history)
+Known through: 2005-02-14. [Open interactive contract](davisda01.html#contract) · [Contract history](davisda01.html#contract-history)
 
-Dale Davis: under contract. Evidence cutoff: 2005-02-13.
+Dale Davis: under contract. Evidence cutoff: 2005-02-14.
 
 ## Current contract
 
@@ -119,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Dale Davis |
-| Club / rights baseline | Portland Trail Blazers |
+| Club / rights baseline | New York Knicks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

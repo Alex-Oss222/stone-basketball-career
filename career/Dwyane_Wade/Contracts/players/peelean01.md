@@ -2,9 +2,9 @@
 
 # Contract | Anthony Peeler
 
-Known through: 2005-02-13. [Open interactive contract](peelean01.html#contract) · [Contract history](peelean01.html#contract-history)
+Known through: 2005-02-14. [Open interactive contract](peelean01.html#contract) · [Contract history](peelean01.html#contract-history)
 
-Anthony Peeler: under contract. Evidence cutoff: 2005-02-13.
+Anthony Peeler: under contract. Evidence cutoff: 2005-02-14.
 
 ## Current contract
 

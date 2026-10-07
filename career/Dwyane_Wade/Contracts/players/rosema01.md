@@ -2,9 +2,9 @@
 
 # Contract | Malik Rose
 
-Known through: 2005-02-13. [Open interactive contract](rosema01.html#contract) · [Contract history](rosema01.html#contract-history)
+Known through: 2005-02-14. [Open interactive contract](rosema01.html#contract) · [Contract history](rosema01.html#contract-history)
 
-Malik Rose: under contract. Evidence cutoff: 2005-02-13.
+Malik Rose: under contract. Evidence cutoff: 2005-02-14.
 
 ## Current contract
 
@@ -122,7 +122,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Malik Rose |
-| Club / rights baseline | New York Knicks |
+| Club / rights baseline | Portland Trail Blazers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

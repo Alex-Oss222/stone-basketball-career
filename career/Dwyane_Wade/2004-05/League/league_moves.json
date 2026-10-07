@@ -3194,6 +3194,64 @@
     "salary": "pro-rated minimum"
    },
    "note": "kept: 13.5 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2004-05-market-2005-02-14-rest_of_season-augmost01",
+   "date": "2005-02-14",
+   "kind": "rest_of_season",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": "New Jersey Nets",
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 55,
+    "minutes": 663
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 14.7 minutes a game on his 10-day contracts"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-02-14-davisda01-eisleho01-martida01-rosema01",
+   "date": "2005-02-14",
+   "kind": "trade",
+   "player": "Malik Rose",
+   "bbr_id": "rosema01",
+   "from": "New York Knicks",
+   "to": "Portland Trail Blazers"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-02-14-davisda01-eisleho01-martida01-rosema01",
+   "date": "2005-02-14",
+   "kind": "trade",
+   "player": "Howard Eisley",
+   "bbr_id": "eisleho01",
+   "from": "New York Knicks",
+   "to": "Portland Trail Blazers"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-02-14-davisda01-eisleho01-martida01-rosema01",
+   "date": "2005-02-14",
+   "kind": "trade",
+   "player": "Dale Davis",
+   "bbr_id": "davisda01",
+   "from": "Portland Trail Blazers",
+   "to": "New York Knicks"
+  },
+  {
+   "deal": "2004-05-league-trade-2005-02-14-davisda01-eisleho01-martida01-rosema01",
+   "date": "2005-02-14",
+   "kind": "trade",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "from": "Portland Trail Blazers",
+   "to": "New York Knicks"
   }
  ],
  "market_days": [
@@ -3300,6 +3358,7 @@
   "2005-02-10",
   "2005-02-11",
   "2005-02-12",
-  "2005-02-13"
+  "2005-02-13",
+  "2005-02-14"
  ]
 }

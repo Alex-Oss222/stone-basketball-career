@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="t d">
-<title id="t">Malik Rose</title><desc id="d">Malik Rose, New York Knicks, Power forward, #13.</desc>
-<rect width="1280" height="180" rx="24" fill="#0072ce"/>
-<rect x="0" y="150" width="1280" height="30" fill="#fe5000" fill-opacity=".92"/>
-<rect x="0" y="150" width="1280" height="6" fill="#fe5000"/>
+<title id="t">Malik Rose</title><desc id="d">Malik Rose, Portland Trail Blazers, Power forward, #13.</desc>
+<rect width="1280" height="180" rx="24" fill="#c8102e"/>
+<rect x="0" y="150" width="1280" height="30" fill="#010101" fill-opacity=".92"/>
+<rect x="0" y="150" width="1280" height="6" fill="#010101"/>
 <text x="48" y="78" font-family="sans-serif" font-size="54" font-weight="700" fill="#ffffff">Malik Rose</text>
-<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Power forward · New York Knicks</text>
+<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Power forward · Portland Trail Blazers</text>
 <text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#13</text>
 </svg>

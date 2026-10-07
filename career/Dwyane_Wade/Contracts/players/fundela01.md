@@ -2,9 +2,9 @@
 
 # Contract | Lawrence Funderburke
 
-Known through: 2005-02-13. [Open interactive contract](fundela01.html#contract) · [Contract history](fundela01.html#contract-history)
+Known through: 2005-02-14. [Open interactive contract](fundela01.html#contract) · [Contract history](fundela01.html#contract-history)
 
-Lawrence Funderburke: under contract unverified. Evidence cutoff: 2005-02-13.
+Lawrence Funderburke: under contract unverified. Evidence cutoff: 2005-02-14.
 
 ## Current contract
 

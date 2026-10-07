@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-02-13. [Search the contract directory](index.html)
+Known through 2005-02-14. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -125,7 +125,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [D.J. Mbenga](players/djmbenga.md) | San Antonio Spurs | under contract | D.J. Mbenga · 2004-07-14 | 1 |
 | [Dahntay Jones](players/jonesda02.md) | Memphis Grizzlies | No verified contract record | No verified current agreement | 0 |
 | [Dajuan Wagner](players/wagneda02.md) | Cleveland Cavaliers | under rookie contract | Dajuan Wagner · 2002-07-16 | 1 |
-| [Dale Davis](players/davisda01.md) | Portland Trail Blazers | under contract | Dale Davis · existing contract; signing date not recorded | 1 |
+| [Dale Davis](players/davisda01.md) | New York Knicks | under contract | Dale Davis · existing contract; signing date not recorded | 1 |
 | [Dalibor Bagaric](players/bagarda01.md) | Free agent | under rookie contract | Dalibor Bagaric · existing contract; signing date not recorded | 1 |
 | [Damien Wilkins](players/damienwilkins.md) | Los Angeles Lakers | under contract | Damien Wilkins · 2004-08-19 | 1 |
 | [Damon Jones](players/jonesda01.md) | Milwaukee Bucks | under contract | Damon Jones · 2004-09-16 | 3 |
@@ -143,7 +143,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Darius Songaila](players/songada01.md) | Sacramento Kings | under contract | Darius Songaila · 2004-09-30 | 1 |
 | [Darko Milicic](players/milicda01.md) | Detroit Pistons | No verified contract record | No verified current agreement | 0 |
 | [Darrell Armstrong](players/armstda01.md) | New Orleans Hornets | under contract | Darrell Armstrong · 2003-07-29 | 2 |
-| [Darrick Martin](players/martida01.md) | Portland Trail Blazers | No verified contract record | No verified current agreement | 0 |
+| [Darrick Martin](players/martida01.md) | New York Knicks | No verified contract record | No verified current agreement | 0 |
 | [Darvin Ham](players/hamda01.md) | Free agent | under contract | Darvin Ham · 2003-09-23 | 2 |
 | [David Harrison](players/davidharrison.md) | Orlando Magic | under contract | David Harrison · 2004-07-01 | 1 |
 | [David Robinson](players/robinda01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |
@@ -220,7 +220,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Hiram Fuller](players/fullehi01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Horace Grant](players/grantho01.md) | Free agent | under contract | Horace Grant · 2003-07-29 | 1 |
 | [Horace Jenkins](players/horacejenkins.md) | Golden State Warriors | under contract | Horace Jenkins · 2004-08-26 | 1 |
-| [Howard Eisley](players/eisleho01.md) | New York Knicks | under contract | Howard Eisley · existing contract; signing date not recorded | 1 |
+| [Howard Eisley](players/eisleho01.md) | Portland Trail Blazers | under contract | Howard Eisley · existing contract; signing date not recorded | 1 |
 | [Hubert Davis](players/davishu01.md) | Free agent | under contract | Hubert Davis · existing contract; signing date not recorded | 1 |
 | [Ibo Kutluay](players/ibokutluay.md) | Minnesota Timberwolves | under contract | Ibo Kutluay · 2004-08-26 | 1 |
 | [Ime Udoka](players/udokaim01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
@@ -353,7 +353,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Maciej Lampe](players/lampema01.md) | Atlanta Hawks | No verified contract record | No verified current agreement | 0 |
 | [Malick Badiane](players/badiama01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Malik Allen](players/allenma01.md) | Free agent | unsigned free agent; Miami holds his rights | Malik Allen · 2004-07-22 | 2 |
-| [Malik Rose](players/rosema01.md) | New York Knicks | under contract | Malik Rose · existing contract; signing date not recorded | 1 |
+| [Malik Rose](players/rosema01.md) | Portland Trail Blazers | under contract | Malik Rose · existing contract; signing date not recorded | 1 |
 | [Mamadou N'diaye](players/ndiayma02.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
 | [Manu Ginobili](players/ginobma01.md) | San Antonio Spurs | under contract | Manu Ginobili · 2004-07-29 | 2 |
 | [Marc Jackson](players/jacksma02.md) | Philadelphia 76ers | under contract | Marc Jackson · existing contract; signing date not recorded | 1 |
