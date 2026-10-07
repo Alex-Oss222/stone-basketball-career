@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 31 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** December 20, 2004 · **Statistics through:** 2005-03-13 
+**Opening assessment:** December 20, 2004 · **Statistics through:** 2005-03-14 
 
 **Contract/control:** Acquired by trade from Toronto Raptors on December 20, 2004: $4,875,000 in 2004-05; contract through 2005-06. (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 
@@ -56,7 +56,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Toronto Raptors | 33 | N/A | 15.7 | 6.0 | 2.7 | 0.8 | 0.5 | 0.2 | 1.2 | 0.353 | 0.350 | 0.686 |
-| 2004-05 | MIA | 33 | 0 | 5.1 | 1.7 | 0.6 | 0.2 | 0.2 | 0.1 | 0.5 | 37.5% | 35.7% | 100.0% |
+| 2004-05 | MIA | 34 | 0 | 5.1 | 1.8 | 0.6 | 0.2 | 0.2 | 0.1 | 0.5 | 38.3% | 35.7% | 91.7% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

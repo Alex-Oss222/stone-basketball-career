@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2005-03-13** · Toronto Raptors · #4 · PF · age 20
+Career date: **2005-03-14** · Toronto Raptors · #4 · PF · age 20
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 

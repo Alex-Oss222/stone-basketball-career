@@ -2,9 +2,9 @@
 
 # Contract | Tariq Abdul-Wahad
 
-Known through: 2005-03-13. [Open interactive contract](abdulta01.html#contract) · [Contract history](abdulta01.html#contract-history)
+Known through: 2005-03-14. [Open interactive contract](abdulta01.html#contract) · [Contract history](abdulta01.html#contract-history)
 
-Tariq Abdul-Wahad: under contract. Evidence cutoff: 2005-03-13.
+Tariq Abdul-Wahad: under contract. Evidence cutoff: 2005-03-14.
 
 ## Current contract
 

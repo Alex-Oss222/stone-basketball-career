@@ -2707,6 +2707,110 @@
     }
    ],
    "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-03-07-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-03-07",
+   "period_end": "2005-03-13",
+   "announced_on": "2005-03-14",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/03_March/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Michael Redd",
+     "team": "Milwaukee Bucks",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 26.0,
+     "reb": 7.5,
+     "ast": 2.5,
+     "game_score": 17.65,
+     "score": 79.6,
+     "rank": 1
+    },
+    {
+     "player": "Chris Bosh",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 16.2,
+     "reb": 10.0,
+     "ast": 2.2,
+     "game_score": 17.08,
+     "score": 77.3,
+     "rank": 2
+    },
+    {
+     "player": "Allen Iverson",
+     "team": "Philadelphia 76ers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 22.8,
+     "reb": 4.0,
+     "ast": 6.5,
+     "game_score": 16.4,
+     "score": 71.6,
+     "rank": 3
+    }
+   ],
+   "winner": "Michael Redd"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-03-07-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-03-07",
+   "period_end": "2005-03-13",
+   "announced_on": "2005-03-14",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/03_March/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 25.0,
+     "reb": 12.5,
+     "ast": 6.5,
+     "game_score": 24.95,
+     "score": 105.8,
+     "rank": 1
+    },
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 26.5,
+     "reb": 8.5,
+     "ast": 3.8,
+     "game_score": 21.12,
+     "score": 90.5,
+     "rank": 2
+    },
+    {
+     "player": "Shaquille O'Neal",
+     "team": "Los Angeles Lakers",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 28.3,
+     "reb": 11.0,
+     "ast": 2.3,
+     "game_score": 25.43,
+     "score": 85.3,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
   }
  ]
 }

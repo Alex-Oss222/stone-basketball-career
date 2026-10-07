@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-03-13",
+  "as_of": "2005-03-14",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -3389,7 +3389,7 @@
     {
       "player_id": "bradlmi01",
       "name": "Michael Bradley",
-      "team": "Indiana Pacers",
+      "team": "Free agent",
       "status": "under rookie contract",
       "current_contract_id": "bradlmi01-2001-07-23",
       "recorded_agreements": 1,
