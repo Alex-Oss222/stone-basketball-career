@@ -4096,6 +4096,68 @@
    },
    "contract": null,
    "note": "10-day contract ended (3.4 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-03-31-ten_day-johnsli01",
+   "date": "2005-03-31",
+   "kind": "ten_day",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 15
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-10",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.5 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-03-31-waive-handlbe01",
+   "date": "2005-03-31",
+   "kind": "waive",
+   "player": "Ben Handlogten",
+   "bbr_id": "handlbe01",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Ben Handlogten",
+    "bbr_id": "handlbe01",
+    "position": "C",
+    "games": 21,
+    "minutes": 297
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-04-02"
+  },
+  {
+   "id": "2004-05-market-2005-03-31-ten_day-breweja01",
+   "date": "2005-03-31",
+   "kind": "ten_day",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-04-10",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.44 x fit"
   }
  ],
  "market_days": [
@@ -4247,6 +4309,7 @@
   "2005-03-27",
   "2005-03-28",
   "2005-03-29",
-  "2005-03-30"
+  "2005-03-30",
+  "2005-03-31"
  ]
 }

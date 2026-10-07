@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-05-rotation-2005-03-31-pg-starter",
+ "date": "2005-03-31",
+ "question": "Who starts at PG: Mike James or Rafer Alston?",
+ "decider": "Miami coaching staff (engine evaluation draw)",
+ "options": {
+  "Mike James": 0.667783,
+  "Rafer Alston": 0.332217
+ },
+ "basis": "Dated staff scores 13.234731 and 12.346508 within 10%; closed production per 30 minutes blended with 300 preseason prior minutes. No seniority, draft-slot or incumbent bonus."
+}
