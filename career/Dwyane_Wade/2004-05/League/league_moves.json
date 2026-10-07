@@ -4670,6 +4670,43 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.95 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-04-16-clear-popema01",
+   "date": "2005-04-16",
+   "kind": "clear",
+   "player": "Mark Pope",
+   "bbr_id": "popema01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Mark Pope",
+    "bbr_id": "popema01",
+    "position": "PF",
+    "games": 9,
+    "minutes": 27
+   },
+   "contract": null,
+   "note": "cleared waivers from Chicago Bulls: a free agent",
+   "waiver": "2004-05-market-2005-04-14-waive-popema01"
+  },
+  {
+   "id": "2004-05-market-2005-04-16-expire-bradlmi01",
+   "date": "2005-04-16",
+   "kind": "expire",
+   "player": "Michael Bradley",
+   "bbr_id": "bradlmi01",
+   "from": "New Orleans Hornets",
+   "to": null,
+   "role": {
+    "player_id": "Michael Bradley",
+    "bbr_id": "bradlmi01",
+    "position": "PF",
+    "games": 18,
+    "minutes": 119
+   },
+   "contract": null,
+   "note": "10-day contract ended (5.2 minutes a game)"
   }
  ],
  "market_days": [
@@ -4837,6 +4874,7 @@
   "2005-04-12",
   "2005-04-13",
   "2005-04-14",
-  "2005-04-15"
+  "2005-04-15",
+  "2005-04-16"
  ]
 }
