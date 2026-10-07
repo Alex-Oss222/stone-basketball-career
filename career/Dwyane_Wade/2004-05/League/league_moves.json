@@ -3332,6 +3332,24 @@
    },
    "contract": null,
    "note": "10-day contract ended (4.8 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-02-19-expire-johnsli01",
+   "date": "2005-02-19",
+   "kind": "expire",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": "New Jersey Nets",
+   "to": null,
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 15
+   },
+   "contract": null,
+   "note": "10-day contract ended (7.0 minutes a game)"
   }
  ],
  "market_days": [
@@ -3443,6 +3461,7 @@
   "2005-02-15",
   "2005-02-16",
   "2005-02-17",
-  "2005-02-18"
+  "2005-02-18",
+  "2005-02-19"
  ]
 }
