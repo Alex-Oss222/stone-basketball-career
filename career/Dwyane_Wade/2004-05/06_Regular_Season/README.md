@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2004-05 awards through 2005-04-02](../../assets/stat_reports/personal_2004-05_2005-04-02.svg)
+![Player personal information and earned 2004-05 awards through 2005-04-03](../../assets/stat_reports/personal_2004-05_2005-04-03.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-04-02; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-04-03; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2004-05 awards
 
@@ -44,7 +44,7 @@ Identity as of 2005-04-02; status snapshot dated 2004-10-28. User-established al
 
 ## Statistics
 
-As of **2005-04-02**: 73 closed games; 73/73 have player participation and box coverage; recorded DNPs: 6.
+As of **2005-04-03**: 74 closed games; 74/74 have player participation and box coverage; recorded DNPs: 6.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
@@ -56,11 +56,11 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This scope | 21 | Miami Heat | NBA | SG / PG | 67 | 67 | 36.0 | 7.2 | 13.6 | .533 | 1.2 | 2.7 | .448 | 6.0 | 10.9 | .554 | .578 | 5.8 | 6.2 | .935 | 1.4 | 3.7 | 5.1 | 4.0 | 1.4 | 1.2 | 1.3 | 3.0 | 21.5 | .660 | [East POM](../../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month), [East POW](../../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week), [All-Star](../../Stats_and_Awards/League/2004-05/All_Star.md#all-stars), [East POM](../../Stats_and_Awards/League/2004-05/03_March/League_Awards.md#player-of-the-month) |
+| This scope | 21 | Miami Heat | NBA | SG / PG | 68 | 68 | 36.0 | 7.2 | 13.5 | .532 | 1.2 | 2.7 | .443 | 6.0 | 10.8 | .554 | .576 | 5.9 | 6.3 | .937 | 1.4 | 3.8 | 5.2 | 4.0 | 1.3 | 1.2 | 1.3 | 3.0 | 21.5 | .659 | [East POM](../../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month), [East POW](../../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week), [All-Star](../../Stats_and_Awards/League/2004-05/All_Star.md#all-stars), [East POM](../../Stats_and_Awards/League/2004-05/03_March/League_Awards.md#player-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-04-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-03, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](../../Stats_and_Awards/2004-05/Stat_Detail.md)
 
@@ -77,35 +77,35 @@ Awards are confirmed through 2005-04-02, filed by the honor's period-end date; t
 | [January 2005](../../Stats_and_Awards/2004-05/01_January/README.md) | 21 | Miami Heat | NBA | SG / PG | 14 | 14 | 36.5 | 7.9 | 14.3 | .555 | 1.1 | 2.3 | .469 | 6.9 | 12.0 | .571 | .593 | 5.7 | 6.2 | .920 | 1.4 | 3.8 | 5.2 | 4.2 | 1.4 | 0.8 | 0.9 | 3.0 | 22.6 | .665 | [East POW](../../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week) |
 | [February 2005](../../Stats_and_Awards/2004-05/02_February/README.md) | 21 | Miami Heat | NBA | SG / PG | 12 | 12 | 37.0 | 7.8 | 13.9 | .563 | 1.5 | 3.6 | .419 | 6.3 | 10.3 | .613 | .617 | 6.1 | 6.6 | .924 | 1.4 | 3.3 | 4.8 | 3.7 | 1.1 | 1.3 | 1.5 | 3.1 | 23.2 | .691 | [All-Star](../../Stats_and_Awards/League/2004-05/All_Star.md#all-stars) |
 | [March 2005](../../Stats_and_Awards/2004-05/03_March/README.md) | 21 | Miami Heat | NBA | SG / PG | 15 | 15 | 35.0 | 7.5 | 14.6 | .511 | 1.3 | 2.9 | .442 | 6.2 | 11.7 | .528 | .555 | 6.6 | 7.1 | .925 | 1.4 | 3.5 | 4.9 | 4.3 | 1.3 | 1.2 | 1.3 | 3.5 | 22.8 | .643 | [East POM](../../Stats_and_Awards/League/2004-05/03_March/League_Awards.md#player-of-the-month) |
-| [April 2005](../../Stats_and_Awards/2004-05/04_April/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2005](../../Stats_and_Awards/2004-05/04_April/README.md) | 21 | Miami Heat | NBA | SG / PG | 1 | 1 | 37.5 | 4.0 | 10.0 | .400 | 0.0 | 2.0 | .000 | 4.0 | 8.0 | .500 | .400 | 8.0 | 8.0 | 1.000 | 1.0 | 7.0 | 8.0 | 3.0 | 0.0 | 1.0 | 0.0 | 2.0 | 16.0 | .592 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-04-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-03, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
 | Metric | Total | Per appearance | Per 36 minutes |
 | --- | --- | --- | --- |
-| MIN | 2411.2 | 36.0 | 36.0 |
-| PTS | 1443 | 21.5 | 21.5 |
-| OREB | 97 | 1.4 | 1.4 |
-| DREB | 248 | 3.7 | 3.7 |
-| REB | 345 | 5.1 | 5.2 |
-| AST | 268 | 4.0 | 4.0 |
-| STL | 91 | 1.4 | 1.4 |
-| BLK | 78 | 1.2 | 1.2 |
+| MIN | 2448.7 | 36.0 | 36.0 |
+| PTS | 1459 | 21.5 | 21.5 |
+| OREB | 98 | 1.4 | 1.4 |
+| DREB | 255 | 3.8 | 3.7 |
+| REB | 353 | 5.2 | 5.2 |
+| AST | 271 | 4.0 | 4.0 |
+| STL | 91 | 1.3 | 1.3 |
+| BLK | 79 | 1.2 | 1.2 |
 | TOV | 89 | 1.3 | 1.3 |
-| PF | 203 | 3.0 | 3.0 |
-| FGM | 485 | 7.2 | 7.2 |
-| FGA | 910 | 13.6 | 13.6 |
-| 2PM | 403 | 6.0 | 6.0 |
-| 2PA | 727 | 10.9 | 10.9 |
+| PF | 205 | 3.0 | 3.0 |
+| FGM | 489 | 7.2 | 7.2 |
+| FGA | 920 | 13.5 | 13.5 |
+| 2PM | 407 | 6.0 | 6.0 |
+| 2PA | 735 | 10.8 | 10.8 |
 | 3PM | 82 | 1.2 | 1.2 |
-| 3PA | 183 | 2.7 | 2.7 |
-| FTM | 391 | 5.8 | 5.8 |
-| FTA | 418 | 6.2 | 6.2 |
-| FT points | 391 | 5.8 | 5.8 |
+| 3PA | 185 | 2.7 | 2.7 |
+| FTM | 399 | 5.9 | 5.9 |
+| FTA | 426 | 6.3 | 6.3 |
+| FT points | 399 | 5.9 | 5.9 |
 
 Per-36 rates standardize playing time; they are not a projection of playing 36 minutes. Use the actual minutes denominator in every competition.
 
@@ -113,20 +113,20 @@ Per-36 rates standardize playing time; they are not a projection of playing 36 m
 
 | Shot type | Makes | Attempts | Percentage |
 | --- | --- | --- | --- |
-| All field goals | 485 | 910 | 53.3% |
-| Two-pointers | 403 | 727 | 55.4% |
-| Three-pointers | 82 | 183 | 44.8% |
-| Free throws | 391 | 418 | 93.5% |
+| All field goals | 489 | 920 | 53.2% |
+| Two-pointers | 407 | 735 | 55.4% |
+| Three-pointers | 82 | 185 | 44.3% |
+| Free throws | 399 | 426 | 93.7% |
 
 ### Efficiency and shot selection
 
 | Metric | Value | Calculation / unit |
 | --- | --- | --- |
-| eFG% | 57.8% | (FGM + 0.5 × 3PM) / FGA |
-| TS% (estimated) | 66.0% | PTS / [2 × (FGA + 0.44 × FTA)] |
+| eFG% | 57.6% | (FGM + 0.5 × 3PM) / FGA |
+| TS% (estimated) | 65.9% | PTS / [2 × (FGA + 0.44 × FTA)] |
 | Three-point attempt share | 20.1% | 3PA / FGA |
-| Free-throw attempt rate | 0.459 | FTA / FGA; ratio |
-| Assist / turnover ratio | 3.01 | AST / TOV; N/A at zero turnovers |
+| Free-throw attempt rate | 0.463 | FTA / FGA; ratio |
+| Assist / turnover ratio | 3.04 | AST / TOV; N/A at zero turnovers |
 | Plus/minus total | N/A | Observed on-court score differential only |
 | Double-doubles | 1 | At least 10 in any two of PTS, REB, AST, STL, BLK |
 | Triple-doubles | 0 | At least 10 in any three; also included in double-doubles |
@@ -142,15 +142,15 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Home | 21 | Miami Heat | NBA | SG / PG | 34 | 34 | 36.4 | 7.3 | 13.4 | .546 | 1.3 | 2.9 | .464 | 6.0 | 10.6 | .568 | .595 | 5.6 | 5.9 | .955 | 1.4 | 3.8 | 5.2 | 4.1 | 1.2 | 1.2 | 1.6 | 3.0 | 21.6 | .675 | — |
-| Away | 21 | Miami Heat | NBA | SG / PG | 33 | 33 | 35.6 | 7.2 | 13.8 | .520 | 1.1 | 2.6 | .430 | 6.0 | 11.2 | .541 | .561 | 6.0 | 6.6 | .917 | 1.5 | 3.6 | 5.1 | 3.9 | 1.5 | 1.1 | 1.0 | 3.1 | 21.5 | .644 | — |
+| Away | 21 | Miami Heat | NBA | SG / PG | 34 | 34 | 35.6 | 7.1 | 13.6 | .517 | 1.1 | 2.6 | .420 | 6.0 | 11.1 | .540 | .557 | 6.1 | 6.6 | .920 | 1.5 | 3.7 | 5.2 | 3.9 | 1.4 | 1.1 | 1.0 | 3.1 | 21.3 | .643 | — |
 | Neutral | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Wins | 21 | Miami Heat | NBA | SG / PG | 45 | 45 | 36.2 | 7.2 | 13.6 | .525 | 1.1 | 2.5 | .442 | 6.0 | 11.1 | .544 | .566 | 6.3 | 6.8 | .938 | 1.4 | 3.7 | 5.1 | 4.2 | 1.5 | 1.2 | 1.2 | 2.8 | 21.8 | .655 | — |
+| Wins | 21 | Miami Heat | NBA | SG / PG | 46 | 46 | 36.3 | 7.1 | 13.5 | .523 | 1.1 | 2.5 | .435 | 6.0 | 11.0 | .543 | .563 | 6.4 | 6.8 | .939 | 1.4 | 3.8 | 5.2 | 4.2 | 1.4 | 1.2 | 1.2 | 2.7 | 21.6 | .654 | — |
 | Losses | 21 | Miami Heat | NBA | SG / PG | 22 | 22 | 35.5 | 7.4 | 13.5 | .549 | 1.5 | 3.2 | .457 | 6.0 | 10.3 | .577 | .603 | 4.8 | 5.2 | .930 | 1.5 | 3.7 | 5.2 | 3.5 | 1.1 | 1.2 | 1.5 | 3.6 | 21.1 | .668 | — |
-| Team: Miami Heat | 21 | Miami Heat | NBA | SG / PG | 67 | 67 | 36.0 | 7.2 | 13.6 | .533 | 1.2 | 2.7 | .448 | 6.0 | 10.9 | .554 | .578 | 5.8 | 6.2 | .935 | 1.4 | 3.7 | 5.1 | 4.0 | 1.4 | 1.2 | 1.3 | 3.0 | 21.5 | .660 | — |
+| Team: Miami Heat | 21 | Miami Heat | NBA | SG / PG | 68 | 68 | 36.0 | 7.2 | 13.5 | .532 | 1.2 | 2.7 | .443 | 6.0 | 10.8 | .554 | .576 | 5.9 | 6.3 | .937 | 1.4 | 3.8 | 5.2 | 4.0 | 1.3 | 1.2 | 1.3 | 3.0 | 21.5 | .659 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-04-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-03, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -242,7 +242,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2005-03-26](03_March/Week_4/Game_3.md) | Charlotte Bobcats | away | W 121-86 | Played | 32.0 | 23 | 7 | 3 | 0 | 2 | 1 |
 | [2005-03-29](03_March/Week_4/Game_4.md) | Toronto Raptors | home | L 97-104 | Played | 39.3 | 32 | 4 | 5 | 0 | 0 | 2 |
 | [2005-03-31](03_March/Week_4/Game_5.md) | Indiana Pacers | away | W 106-101 | Played | 38.7 | 33 | 5 | 6 | 1 | 1 | 1 |
-| [2005-04-02](04_April/Week_1/Game_1.md) | New Orleans Hornets | away | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [2005-04-02](04_April/Week_1/Game_1.md) | New Orleans Hornets | away | W 113-88 | Played | 37.5 | 16 | 8 | 3 | 0 | 1 | 0 |
 
 ### Individual game boxes
 
@@ -321,11 +321,11 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2005-03-26](03_March/Week_4/Game_3.md) | 21 | Miami Heat | NBA | SG / PG | 1 | 1 | 32.0 | 7.0 | 15.0 | .467 | 0.0 | 2.0 | .000 | 7.0 | 13.0 | .538 | .467 | 9.0 | 9.0 | 1.000 | 2.0 | 5.0 | 7.0 | 3.0 | 0.0 | 2.0 | 1.0 | 2.0 | 23.0 | .607 | — |
 | [2005-03-29](03_March/Week_4/Game_4.md) | 21 | Miami Heat | NBA | SG / PG | 1 | 1 | 39.3 | 11.0 | 19.0 | .579 | 4.0 | 8.0 | .500 | 7.0 | 11.0 | .636 | .684 | 6.0 | 6.0 | 1.000 | 0.0 | 4.0 | 4.0 | 5.0 | 0.0 | 0.0 | 2.0 | 3.0 | 32.0 | .739 | — |
 | [2005-03-31](03_March/Week_4/Game_5.md) | 21 | Miami Heat | NBA | SG / PG | 1 | 1 | 38.7 | 8.0 | 22.0 | .364 | 3.0 | 3.0 | 1.000 | 5.0 | 19.0 | .263 | .432 | 14.0 | 16.0 | .875 | 2.0 | 3.0 | 5.0 | 6.0 | 1.0 | 1.0 | 1.0 | 4.0 | 33.0 | .568 | — |
-| [2005-04-02](04_April/Week_1/Game_1.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [2005-04-02](04_April/Week_1/Game_1.md) | 21 | Miami Heat | NBA | SG / PG | 1 | 1 | 37.5 | 4.0 | 10.0 | .400 | 0.0 | 2.0 | .000 | 4.0 | 8.0 | .500 | .400 | 8.0 | 8.0 | 1.000 | 1.0 | 7.0 | 8.0 | 3.0 | 0.0 | 1.0 | 0.0 | 2.0 | 16.0 | .592 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-04-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-04-03, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 
@@ -398,6 +398,7 @@ Awards are confirmed through 2005-04-02, filed by the honor's period-end date; t
 | [2005-03-26](03_March/Week_4/Game_3.md) | 7/15 | 7/13 | 0/2 | 9/9 | 46.7% | 60.7% | N/A | 2 |
 | [2005-03-29](03_March/Week_4/Game_4.md) | 11/19 | 7/11 | 4/8 | 6/6 | 68.4% | 73.9% | N/A | 3 |
 | [2005-03-31](03_March/Week_4/Game_5.md) | 8/22 | 5/19 | 3/3 | 14/16 | 43.2% | 56.8% | N/A | 4 |
+| [2005-04-02](04_April/Week_1/Game_1.md) | 4/10 | 4/8 | 0/2 | 8/8 | 40.0% | 59.2% | N/A | 2 |
 
 ### Additional data needed
 

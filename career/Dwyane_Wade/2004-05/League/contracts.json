@@ -1950,13 +1950,14 @@
   {
    "player": "Ben Handlogten",
    "bbr_id": "handlbe01",
-   "club": "Portland Trail Blazers",
+   "club": "Chicago Bulls",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2004-05": 620046
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "signed_club": "Portland Trail Blazers"
   },
   {
    "player": "Anfernee Hardaway",

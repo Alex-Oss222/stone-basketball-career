@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2005-04-02 · Miami Heat · active
+Career date: 2005-04-03 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,18 +14,18 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2005-04-02 |
+| Career date | 2005-04-03 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2005-03-31-miami-heat-at-indiana-pacers |
+| Last closed event | 2005-04-02-miami-heat-at-new-orleans-hornets |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-04-02 | Current checkpoint | 2005-03-31-miami-heat-at-indiana-pacers | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
+| 2005-04-03 | Current checkpoint | 2005-04-02-miami-heat-at-new-orleans-hornets | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2004-10-05 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
 | 2005-04-04 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
@@ -183,4 +183,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_4/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_4/Game_4.md)
 - [Closed game](../2004-05/06_Regular_Season/03_March/Week_4/Game_5.md)
+- [Closed game](../2004-05/06_Regular_Season/04_April/Week_1/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

@@ -4,13 +4,13 @@
 
 NBA regular season · 2004-05
 
-As of April 2, 2005: 73 closed Miami games in this period. Rows cover Miami's closed games only.
+As of April 3, 2005: 74 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
 | G | W | L | WIN% | PPG | OPP PPG | DIFF |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 73 | 49 | 24 | .671 | 102.2 | 96.6 | +5.6 |
+| 74 | 50 | 24 | .676 | 102.4 | 96.5 | +5.9 |
 
 ## Player production
 
@@ -19,26 +19,26 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Eddie Jones | SG/SF | 37 | 8.4 | 2.7 | 0.9 | 0.5 | 0.5 | 0.2 | 0.4 |
-| Brian Grant | C/PF | 72 | 31.4 | 8.8 | 6.2 | 1.6 | 0.7 | 0.5 | 1.1 |
+| Brian Grant | C/PF | 73 | 31.5 | 8.8 | 6.2 | 1.7 | 0.7 | 0.5 | 1.2 |
 | Scott Padgett | PF | 25 | 21.3 | 6.4 | 4.0 | 1.6 | 1.1 | 0.2 | 0.9 |
-| Mike James | PG | 72 | 30.0 | 13.5 | 3.5 | 4.0 | 1.0 | 0.1 | 2.0 |
-| Mehmet Okur | PF | 73 | 30.5 | 12.3 | 8.5 | 2.5 | 0.4 | 1.0 | 2.0 |
-| Dwyane Wade | SG/PG | 67 | 36.0 | 21.5 | 5.1 | 4.0 | 1.4 | 1.2 | 1.3 |
-| Caron Butler | SF | 66 | 27.0 | 12.4 | 4.2 | 1.5 | 0.9 | 0.2 | 1.5 |
+| Mike James | PG | 73 | 29.8 | 13.5 | 3.5 | 4.0 | 1.0 | 0.1 | 2.0 |
+| Mehmet Okur | PF | 74 | 30.3 | 12.3 | 8.4 | 2.5 | 0.4 | 1.0 | 1.9 |
+| Dwyane Wade | SG/PG | 68 | 36.0 | 21.5 | 5.2 | 4.0 | 1.3 | 1.2 | 1.3 |
+| Caron Butler | SF | 67 | 26.8 | 12.3 | 4.2 | 1.4 | 0.9 | 0.2 | 1.5 |
 | Kendall Gill | SG | 41 | 11.3 | 4.2 | 1.7 | 1.1 | 0.4 | 0.2 | 0.5 |
-| Dorell Wright | SF | 70 | 9.1 | 3.8 | 1.4 | 1.1 | 0.4 | 0.2 | 0.6 |
+| Dorell Wright | SF | 71 | 9.1 | 3.8 | 1.4 | 1.1 | 0.4 | 0.2 | 0.6 |
 | John Thomas | C | 4 | 7.1 | 2.0 | 1.0 | 0.5 | 0.0 | 0.2 | 0.2 |
 | Maurice Evans | SG | 14 | 5.3 | 2.0 | 1.2 | 0.4 | 0.1 | 0.1 | 0.1 |
 | Udonis Haslem | PF | 25 | 18.5 | 6.3 | 4.4 | 0.7 | 0.4 | 0.4 | 0.6 |
-| Maurice Baker | PG | 48 | 4.8 | 1.7 | 0.8 | 0.2 | 0.2 | 0.1 | 0.5 |
+| Maurice Baker | PG | 49 | 4.8 | 1.7 | 0.8 | 0.2 | 0.2 | 0.1 | 0.4 |
 | John Edwards | C | 3 | 9.8 | 3.0 | 1.0 | 1.7 | 0.3 | 0.0 | 0.0 |
 | Bernard Robinson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Christian Drejer | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Rafer Alston | PG | 72 | 19.0 | 7.9 | 1.8 | 3.4 | 0.9 | 0.1 | 1.3 |
-| Donyell Marshall | PF | 47 | 27.3 | 13.1 | 6.3 | 1.4 | 0.8 | 0.8 | 1.0 |
-| Lamond Murray | SF | 42 | 5.2 | 1.8 | 0.6 | 0.2 | 0.2 | 0.1 | 0.5 |
-| Raja Bell | SG | 28 | 9.1 | 3.9 | 1.0 | 0.3 | 0.2 | 0.1 | 0.4 |
-| Matt Harpring | SF | 26 | 34.0 | 13.3 | 6.7 | 2.9 | 0.8 | 0.3 | 1.5 |
+| Rafer Alston | PG | 73 | 19.2 | 8.1 | 1.8 | 3.5 | 0.9 | 0.1 | 1.3 |
+| Donyell Marshall | PF | 48 | 27.5 | 13.2 | 6.3 | 1.4 | 0.8 | 0.8 | 0.9 |
+| Lamond Murray | SF | 43 | 5.1 | 1.8 | 0.6 | 0.2 | 0.2 | 0.1 | 0.4 |
+| Raja Bell | SG | 29 | 9.1 | 3.9 | 1.0 | 0.3 | 0.3 | 0.2 | 0.3 |
+| Matt Harpring | SF | 27 | 33.8 | 13.3 | 6.7 | 2.8 | 0.9 | 0.3 | 1.5 |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -48,26 +48,26 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Eddie Jones | 7 | 36/97 | .371 | 9/36 | .250 | 19/30 | .633 | 5 | 29 |
-| Brian Grant | 72 | 250/534 | .468 | 7/15 | .467 | 126/183 | .689 | 174 | 276 |
+| Brian Grant | 73 | 254/542 | .469 | 7/15 | .467 | 129/186 | .694 | 177 | 278 |
 | Scott Padgett | 0 | 55/144 | .382 | 20/59 | .339 | 29/37 | .784 | 24 | 76 |
-| Mike James | 56 | 370/840 | .440 | 87/246 | .354 | 145/182 | .797 | 46 | 208 |
-| Mehmet Okur | 51 | 304/664 | .458 | 16/56 | .286 | 276/328 | .841 | 200 | 418 |
-| Dwyane Wade | 67 | 485/910 | .533 | 82/183 | .448 | 391/418 | .935 | 97 | 248 |
-| Caron Butler | 40 | 318/697 | .456 | 30/100 | .300 | 150/182 | .824 | 97 | 180 |
+| Mike James | 56 | 377/850 | .444 | 87/247 | .352 | 147/184 | .799 | 46 | 210 |
+| Mehmet Okur | 51 | 308/674 | .457 | 16/56 | .286 | 279/331 | .843 | 201 | 424 |
+| Dwyane Wade | 68 | 489/920 | .532 | 82/185 | .443 | 399/426 | .937 | 98 | 255 |
+| Caron Butler | 40 | 321/706 | .455 | 30/101 | .297 | 150/182 | .824 | 99 | 180 |
 | Kendall Gill | 5 | 68/163 | .417 | 9/18 | .500 | 26/29 | .897 | 20 | 51 |
-| Dorell Wright | 1 | 96/211 | .455 | 15/39 | .385 | 58/73 | .795 | 32 | 66 |
+| Dorell Wright | 1 | 97/213 | .455 | 15/39 | .385 | 58/73 | .795 | 32 | 67 |
 | John Thomas | 1 | 4/6 | .667 | 0/0 | N/A | 0/0 | N/A | 0 | 4 |
 | Maurice Evans | 0 | 12/20 | .600 | 1/2 | .500 | 3/4 | .750 | 8 | 9 |
 | Udonis Haslem | 0 | 64/129 | .496 | 0/4 | .000 | 29/39 | .744 | 36 | 73 |
-| Maurice Baker | 0 | 32/81 | .395 | 6/21 | .286 | 13/22 | .591 | 15 | 21 |
+| Maurice Baker | 0 | 32/81 | .395 | 6/21 | .286 | 13/22 | .591 | 16 | 22 |
 | John Edwards | 0 | 4/10 | .400 | 0/1 | .000 | 1/2 | .500 | 0 | 3 |
 | Bernard Robinson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Christian Drejer | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Rafer Alston | 17 | 197/506 | .389 | 61/200 | .305 | 116/147 | .789 | 21 | 110 |
-| Donyell Marshall | 22 | 217/470 | .462 | 96/207 | .464 | 84/106 | .792 | 60 | 237 |
-| Lamond Murray | 0 | 28/73 | .384 | 6/16 | .375 | 14/15 | .933 | 3 | 22 |
-| Raja Bell | 0 | 46/92 | .500 | 6/9 | .667 | 12/15 | .800 | 5 | 23 |
-| Matt Harpring | 26 | 132/254 | .520 | 5/23 | .217 | 78/97 | .804 | 70 | 104 |
+| Rafer Alston | 18 | 202/519 | .389 | 65/211 | .308 | 120/151 | .795 | 21 | 112 |
+| Donyell Marshall | 23 | 225/482 | .467 | 100/211 | .474 | 84/107 | .785 | 61 | 240 |
+| Lamond Murray | 0 | 28/75 | .373 | 6/16 | .375 | 14/15 | .933 | 3 | 23 |
+| Raja Bell | 0 | 47/96 | .490 | 6/10 | .600 | 12/15 | .800 | 5 | 24 |
+| Matt Harpring | 27 | 137/261 | .525 | 5/23 | .217 | 79/101 | .782 | 72 | 109 |
 
 </details>
 
@@ -80,7 +80,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | [January 2005](01_January/Team_Stats.md) | January 1-31, 2005 | 15 | Complete |
 | [February 2005](02_February/Team_Stats.md) | February 1-28, 2005 | 12 | Complete |
 | [March 2005](03_March/Team_Stats.md) | March 1-31, 2005 | 15 | Complete |
-| [April 2005](04_April/Team_Stats.md) | April 1-30, 2005 | 0 | Not started |
+| [April 2005](04_April/Team_Stats.md) | April 1-30, 2005 | 1 | Through April 3, 2005 |
 
 ## Playoffs
 
