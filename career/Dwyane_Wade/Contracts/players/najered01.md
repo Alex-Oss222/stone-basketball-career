@@ -2,9 +2,9 @@
 
 # Contract | Eduardo Najera
 
-Known through: 2005-04-03. [Open interactive contract](najered01.html#contract) · [Contract history](najered01.html#contract-history)
+Known through: 2005-04-04. [Open interactive contract](najered01.html#contract) · [Contract history](najered01.html#contract-history)
 
-Eduardo Najera: under contract. Evidence cutoff: 2005-04-03.
+Eduardo Najera: under contract. Evidence cutoff: 2005-04-04.
 
 ## Current contract
 

@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `johnske03.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-04-03 · **Club on this date:** Free agent · **Basis:** out of the league: his real career has no 2004-05 season (runtime/availability.py) · **League:** NBA  
+**Card date:** 2005-04-04 · **Club on this date:** Free agent · **Basis:** out of the league: his real career has no 2004-05 season (runtime/availability.py) · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #54 · **Born:** 1978-02-01 · **Age on card date:** 27  
 **Registry ID:** `johnske03` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/johnske03.html) · ESPN ID 1972
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `johnsk
 
 ## Simulated statistics
 
-As of **2005-04-03**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-04-04**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -117,4 +117,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2005-04-03. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2005-04-04. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

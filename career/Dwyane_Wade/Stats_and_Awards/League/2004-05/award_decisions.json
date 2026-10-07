@@ -3227,6 +3227,111 @@
     }
    ],
    "winner": "Josh Childress"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-03-28-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-03-28",
+   "period_end": "2005-04-03",
+   "announced_on": "2005-04-04",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Michael Redd",
+     "team": "Milwaukee Bucks",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 34.5,
+     "reb": 5.2,
+     "ast": 3.0,
+     "game_score": 23.5,
+     "score": 103.0,
+     "rank": 1
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 5,
+     "wins": 2,
+     "losses": 3,
+     "pts": 25.2,
+     "reb": 10.2,
+     "ast": 7.0,
+     "game_score": 19.4,
+     "score": 103.0,
+     "rank": 2
+    },
+    {
+     "player": "Jason Kidd",
+     "team": "New Jersey Nets",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 21.2,
+     "reb": 10.0,
+     "ast": 10.0,
+     "game_score": 20.8,
+     "score": 95.2,
+     "rank": 3
+    }
+   ],
+   "winner": "Michael Redd",
+   "tie_draw": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/Award_Draws/2004-05-player_of_week-2005-03-28-east.decision.result.json"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-03-28-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-03-28",
+   "period_end": "2005-04-03",
+   "announced_on": "2005-04-04",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 30.3,
+     "reb": 13.3,
+     "ast": 7.0,
+     "game_score": 28.7,
+     "score": 92.1,
+     "rank": 1
+    },
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 26.0,
+     "reb": 7.2,
+     "ast": 7.5,
+     "game_score": 20.92,
+     "score": 86.7,
+     "rank": 2
+    },
+    {
+     "player": "Amar'e Stoudemire",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 23.2,
+     "reb": 9.0,
+     "ast": 1.8,
+     "game_score": 19.27,
+     "score": 86.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
   }
  ]
 }

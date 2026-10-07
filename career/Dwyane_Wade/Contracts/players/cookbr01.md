@@ -2,9 +2,9 @@
 
 # Contract | Brian Cook
 
-Known through: 2005-04-03. [Open interactive contract](cookbr01.html#contract) · [Contract history](cookbr01.html#contract-history)
+Known through: 2005-04-04. [Open interactive contract](cookbr01.html#contract) · [Contract history](cookbr01.html#contract-history)
 
-Brian Cook: No verified contract record. Evidence cutoff: 2005-04-03.
+Brian Cook: No verified contract record. Evidence cutoff: 2005-04-04.
 
 ## Current contract
 

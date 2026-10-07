@@ -1,0 +1,12 @@
+{
+ "date": "2005-04-04",
+ "decider": "NBA league office (engine draw between equal evidence)",
+ "event_id": "2004-05-player_of_week-2005-03-28-east",
+ "kind": "decision",
+ "options": {
+  "LeBron James": 0.5,
+  "Michael Redd": 0.5
+ },
+ "outcome": "Michael Redd",
+ "question": "Who is the East Player of the Week for 2005-03-28 to 2005-04-03: LeBron James or Michael Redd?"
+}
