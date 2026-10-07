@@ -3820,6 +3820,46 @@
     "salary": "pro-rated minimum"
    },
    "note": "kept: 11.1 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2004-05-market-2005-03-16-ten_day-bowenry01",
+   "date": "2005-03-16",
+   "kind": "ten_day",
+   "player": "Ryan Bowen",
+   "bbr_id": "bowenry01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Ryan Bowen",
+    "bbr_id": "bowenry01",
+    "position": "SF",
+    "games": 66,
+    "minutes": 604
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-03-26",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.46 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-03-16-expire-johnsli01",
+   "date": "2005-03-16",
+   "kind": "expire",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": "Houston Rockets",
+   "to": null,
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 15
+   },
+   "contract": null,
+   "note": "10-day contract ended (1.9 minutes a game)"
   }
  ],
  "market_days": [
@@ -3956,6 +3996,7 @@
   "2005-03-12",
   "2005-03-13",
   "2005-03-14",
-  "2005-03-15"
+  "2005-03-15",
+  "2005-03-16"
  ]
 }
