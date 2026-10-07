@@ -1132,10 +1132,10 @@
    ],
    "home_court": "Miami Heat",
    "wins": {
-    "Atlanta Hawks": 3,
+    "Atlanta Hawks": 4,
     "Miami Heat": 2
    },
-   "winner": null,
+   "winner": "Atlanta Hawks",
    "games": [
     {
      "game": 1,
@@ -1193,7 +1193,9 @@
      "home": "Atlanta Hawks",
      "away": "Miami Heat",
      "conditional": true,
-     "event_id": "2005-05-19-miami-heat-at-atlanta-hawks"
+     "event_id": "2005-05-19-miami-heat-at-atlanta-hawks",
+     "result": "Miami Heat 100, Atlanta Hawks 101",
+     "winner": "Atlanta Hawks"
     },
     {
      "game": 7,
@@ -1201,7 +1203,86 @@
      "home": "Miami Heat",
      "away": "Atlanta Hawks",
      "conditional": true,
-     "event_id": "2005-05-21-atlanta-hawks-at-miami-heat"
+     "event_id": "2005-05-21-atlanta-hawks-at-miami-heat",
+     "not_needed": true
+    }
+   ],
+   "clinched_on": "2005-05-19"
+  },
+  {
+   "id": "east-final",
+   "round": "conference_finals",
+   "conference": "East",
+   "seeds": [
+    1,
+    6
+   ],
+   "clubs": [
+    "Toronto Raptors",
+    "Atlanta Hawks"
+   ],
+   "home_court": "Toronto Raptors",
+   "wins": {
+    "Toronto Raptors": 0,
+    "Atlanta Hawks": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-05-23",
+     "home": "Toronto Raptors",
+     "away": "Atlanta Hawks",
+     "conditional": false,
+     "event_id": "2005-05-23-atlanta-hawks-at-toronto-raptors"
+    },
+    {
+     "game": 2,
+     "date": "2005-05-25",
+     "home": "Toronto Raptors",
+     "away": "Atlanta Hawks",
+     "conditional": false,
+     "event_id": "2005-05-25-atlanta-hawks-at-toronto-raptors"
+    },
+    {
+     "game": 3,
+     "date": "2005-05-29",
+     "home": "Atlanta Hawks",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2005-05-29-toronto-raptors-at-atlanta-hawks"
+    },
+    {
+     "game": 4,
+     "date": "2005-05-31",
+     "home": "Atlanta Hawks",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2005-05-31-toronto-raptors-at-atlanta-hawks"
+    },
+    {
+     "game": 5,
+     "date": "2005-06-02",
+     "home": "Toronto Raptors",
+     "away": "Atlanta Hawks",
+     "conditional": true,
+     "event_id": "2005-06-02-atlanta-hawks-at-toronto-raptors"
+    },
+    {
+     "game": 6,
+     "date": "2005-06-04",
+     "home": "Atlanta Hawks",
+     "away": "Toronto Raptors",
+     "conditional": true,
+     "event_id": "2005-06-04-toronto-raptors-at-atlanta-hawks"
+    },
+    {
+     "game": 7,
+     "date": "2005-06-06",
+     "home": "Toronto Raptors",
+     "away": "Atlanta Hawks",
+     "conditional": true,
+     "event_id": "2005-06-06-atlanta-hawks-at-toronto-raptors"
     }
    ]
   }

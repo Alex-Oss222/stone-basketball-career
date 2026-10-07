@@ -223,7 +223,7 @@ Home court: Toronto Raptors. Toronto Raptors wins 4-1.
 
 ### East: (6) Atlanta Hawks vs (2) Miami Heat
 
-Home court: Miami Heat. Series Atlanta Hawks 3, Miami Heat 2.
+Home court: Miami Heat. Atlanta Hawks wins 4-2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -232,5 +232,21 @@ Home court: Miami Heat. Series Atlanta Hawks 3, Miami Heat 2.
 | 3 | Fri May 13 | Atlanta Hawks | Miami Heat | Miami Heat 111, Atlanta Hawks 101 |
 | 4 | Sun May 15 | Atlanta Hawks | Miami Heat | Miami Heat 91, Atlanta Hawks 100 |
 | 5 | Tue May 17 | Miami Heat | Atlanta Hawks | Atlanta Hawks 109, Miami Heat 98 |
-| 6 | Thu May 19 | Atlanta Hawks | Miami Heat | if needed |
-| 7 | Sat May 21 | Miami Heat | Atlanta Hawks | if needed |
+| 6 | Thu May 19 | Atlanta Hawks | Miami Heat | Miami Heat 100, Atlanta Hawks 101 |
+| 7 | Sat May 21 | Miami Heat | Atlanta Hawks | not needed |
+
+## Conference finals
+
+### East: (1) Toronto Raptors vs (6) Atlanta Hawks
+
+Home court: Toronto Raptors. Series Toronto Raptors 0, Atlanta Hawks 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Mon May 23 | Toronto Raptors | Atlanta Hawks |  |
+| 2 | Wed May 25 | Toronto Raptors | Atlanta Hawks |  |
+| 3 | Sun May 29 | Atlanta Hawks | Toronto Raptors |  |
+| 4 | Tue May 31 | Atlanta Hawks | Toronto Raptors |  |
+| 5 | Thu Jun 2 | Toronto Raptors | Atlanta Hawks | if needed |
+| 6 | Sat Jun 4 | Atlanta Hawks | Toronto Raptors | if needed |
+| 7 | Mon Jun 6 | Toronto Raptors | Atlanta Hawks | if needed |
