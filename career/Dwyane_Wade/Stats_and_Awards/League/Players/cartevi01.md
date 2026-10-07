@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `cartevi01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-04-17 · **Club on this date:** Toronto Raptors · **Basis:** Toronto Raptors: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-04-18 · **Club on this date:** Toronto Raptors · **Basis:** Toronto Raptors: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #15 · **Born:** 1977-01-26 · **Age on card date:** 28  
 **Registry ID:** `cartevi01` · [Basketball-Reference page](https://www.basketball-reference.com/players/c/cartevi01.html) · ESPN ID 136
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `cartev
 
 ## Simulated statistics
 
-As of **2005-04-17**: 80 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-04-18**: 80 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 80 closed regular-season games through 2005-04-17. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 80 closed regular-season games through 2005-04-18. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -123,7 +123,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-04-17, from closed award decisions (7 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-04-18, from closed award decisions (7 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -142,3 +142,4 @@ Simulated honors and shortlist placings through 2005-04-17, from closed award de
 | East Player of the Week | 2005-02-21 to 2005-02-27 | 2005-02-28 | Shortlist, No. 2 | [Decision](../2004-05/02_February/Week_4/League_Awards.md) |
 | East Player of the Month | 2005-02-01 to 2005-02-28 | 2005-03-02 | **Winner** | [Decision](../2004-05/02_February/League_Awards.md) |
 | East Player of the Month | 2005-03-01 to 2005-03-31 | 2005-04-02 | Shortlist, No. 3 | [Decision](../2004-05/03_March/League_Awards.md) |
+| East Player of the Week | 2005-04-11 to 2005-04-17 | 2005-04-18 | Shortlist, No. 2 | [Decision](../2004-05/04_April/Week_3/League_Awards.md) |

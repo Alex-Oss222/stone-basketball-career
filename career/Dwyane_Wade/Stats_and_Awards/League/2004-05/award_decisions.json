@@ -3436,6 +3436,110 @@
     }
    ],
    "winner": "Kobe Bryant"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-04-11-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-04-11",
+   "period_end": "2005-04-17",
+   "announced_on": "2005-04-18",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 28.8,
+     "reb": 7.8,
+     "ast": 7.0,
+     "game_score": 21.65,
+     "score": 92.6,
+     "rank": 1
+    },
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 23.8,
+     "reb": 3.5,
+     "ast": 6.8,
+     "game_score": 19.8,
+     "score": 91.2,
+     "rank": 2
+    },
+    {
+     "player": "Zydrunas Ilgauskas",
+     "team": "Philadelphia 76ers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 22.5,
+     "reb": 10.2,
+     "ast": 2.0,
+     "game_score": 21.05,
+     "score": 90.2,
+     "rank": 3
+    }
+   ],
+   "winner": "LeBron James"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-04-11-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-04-11",
+   "period_end": "2005-04-17",
+   "announced_on": "2005-04-18",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/04_April/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Stephon Marbury",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 24.2,
+     "reb": 2.8,
+     "ast": 9.5,
+     "game_score": 24.77,
+     "score": 108.1,
+     "rank": 1
+    },
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 25.2,
+     "reb": 8.0,
+     "ast": 3.8,
+     "game_score": 22.6,
+     "score": 96.4,
+     "rank": 2
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 20.8,
+     "reb": 10.5,
+     "ast": 1.5,
+     "game_score": 18.05,
+     "score": 81.2,
+     "rank": 3
+    }
+   ],
+   "winner": "Stephon Marbury"
   }
  ]
 }

@@ -4,7 +4,7 @@
 
 NBA regular season · April 1-30, 2005
 
-As of April 17, 2005: 7 closed Miami games in this period. Rows cover Miami's closed games only.
+As of April 18, 2005: 7 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
@@ -69,7 +69,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/Team_Stats.md) | April 1-7, 2005 | 2 | Complete |
 | [Week 2](Week_2/Team_Stats.md) | April 8-14, 2005 | 3 | Complete |
-| [Week 3](Week_3/Team_Stats.md) | April 15-21, 2005 | 2 | Through April 17, 2005 |
+| [Week 3](Week_3/Team_Stats.md) | April 15-21, 2005 | 2 | Through April 18, 2005 |
 
 Departures retain their completed Miami appearances. Arrivals enter from their first applicable period. Team wins and losses count games once, not once per player.
 

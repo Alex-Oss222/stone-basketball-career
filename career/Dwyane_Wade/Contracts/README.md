@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-04-17. [Search the contract directory](index.html)
+Known through 2005-04-18. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -374,7 +374,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Mateen Cleaves](players/cleavma01.md) | Cleveland Cavaliers | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
 | [Matt Barnes](players/barnema02.md) | Memphis Grizzlies | No verified contract record | No verified current agreement | 0 |
 | [Matt Bonner](players/bonnema01.md) | Toronto Raptors | No verified contract record | No verified current agreement | 0 |
-| [Matt Carroll](players/carroma01.md) | San Antonio Spurs | No verified contract record | No verified current agreement | 0 |
+| [Matt Carroll](players/carroma01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Matt Freije](players/mattfreije.md) | Toronto Raptors | under contract | Matt Freije · 2004-07-14 | 1 |
 | [Matt Harpring](players/harprma01.md) | Miami Heat | under contract | Matt Harpring · existing contract; signing date not recorded | 1 |
 | [Maurice Baker](players/bakerma01.md) | Miami Heat | under contract | Maurice Baker · 2004-07-15 | 1 |

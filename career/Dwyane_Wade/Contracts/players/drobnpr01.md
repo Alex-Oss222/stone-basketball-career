@@ -2,9 +2,9 @@
 
 # Contract | Predrag Drobnjak
 
-Known through: 2005-04-17. [Open interactive contract](drobnpr01.html#contract) · [Contract history](drobnpr01.html#contract-history)
+Known through: 2005-04-18. [Open interactive contract](drobnpr01.html#contract) · [Contract history](drobnpr01.html#contract-history)
 
-Predrag Drobnjak: under contract unverified. Evidence cutoff: 2005-04-17.
+Predrag Drobnjak: under contract unverified. Evidence cutoff: 2005-04-18.
 
 ## Current contract
 

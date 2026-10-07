@@ -2,9 +2,9 @@
 
 # Contract | Cherokee Parks
 
-Known through: 2005-04-17. [Open interactive contract](parksch02.html#contract) · [Contract history](parksch02.html#contract-history)
+Known through: 2005-04-18. [Open interactive contract](parksch02.html#contract) · [Contract history](parksch02.html#contract-history)
 
-Cherokee Parks: camp contract. Evidence cutoff: 2005-04-17.
+Cherokee Parks: camp contract. Evidence cutoff: 2005-04-18.
 
 ## Current contract
 

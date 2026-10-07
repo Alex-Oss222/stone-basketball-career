@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2005-04-17 · Miami Heat · active
+Career date: 2005-04-18 · Miami Heat · active
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 

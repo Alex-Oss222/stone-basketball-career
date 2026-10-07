@@ -4766,6 +4766,24 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.43 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-04-18-expire-carroma01",
+   "date": "2005-04-18",
+   "kind": "expire",
+   "player": "Matt Carroll",
+   "bbr_id": "carroma01",
+   "from": "San Antonio Spurs",
+   "to": null,
+   "role": {
+    "player_id": "Matt Carroll",
+    "bbr_id": "carroma01",
+    "position": "SG",
+    "games": 25,
+    "minutes": 430
+   },
+   "contract": null,
+   "note": "10-day contract ended (4.0 minutes a game)"
   }
  ],
  "market_days": [
@@ -4935,6 +4953,7 @@
   "2005-04-14",
   "2005-04-15",
   "2005-04-16",
-  "2005-04-17"
+  "2005-04-17",
+  "2005-04-18"
  ]
 }

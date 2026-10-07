@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-04-17**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-04-18**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -175,7 +175,7 @@ Card date: **2005-04-17**. 573 registry players, one Markdown card and one inter
 | [Lucious Harris](harrilu01.md) | New Jersey Nets | 34 | silhouette | [open](harrilu01.html) |
 | [Manu Ginobili](ginobma01.md) | San Antonio Spurs | 27 | sourced | [open](ginobma01.html) |
 | [Marquis Daniels](daniema01.md) | Dallas Mavericks | 24 | silhouette | [open](daniema01.html) |
-| [Matt Carroll](carroma01.md) | San Antonio Spurs | 24 | silhouette | [open](carroma01.html) |
+| [Matt Carroll](carroma01.md) | Free agent | 24 | silhouette | [open](carroma01.html) |
 | [Maurice Carter](cartema01.md) | Free agent | 28 | silhouette | [open](cartema01.html) |
 | [Maurice Evans](evansma01.md) | Miami Heat | 26 | silhouette | [open](evansma01.html) |
 | [Michael Redd](reddmi01.md) | Milwaukee Bucks | 25 | sourced | [open](reddmi01.html) |
@@ -454,7 +454,7 @@ Card date: **2005-04-17**. 573 registry players, one Markdown card and one inter
 | [Mark Pope](popema01.md) | Free agent | 32 | silhouette | [open](popema01.html) |
 | [Maurice Taylor](tayloma01.md) | Cleveland Cavaliers | 28 | silhouette | [open](tayloma01.html) |
 | [Mehmet Okur](okurme01.md) | Miami Heat | 25 | sourced | [open](okurme01.html) |
-| [Michael Bradley](bradlmi01.md) | Free agent | 25 | silhouette | [open](bradlmi01.html) |
+| [Michael Bradley](bradlmi01.md) | Free agent | 26 | silhouette | [open](bradlmi01.html) |
 | [Michael Ruffin](ruffimi01.md) | New Jersey Nets | 28 | silhouette | [open](ruffimi01.html) |
 | [Michael Stewart](stewami01.md) | Cleveland Cavaliers | 29 | silhouette | [open](stewami01.html) |
 | [Michael Sweetney](sweetmi01.md) | New York Knicks | 22 | silhouette | [open](sweetmi01.html) |

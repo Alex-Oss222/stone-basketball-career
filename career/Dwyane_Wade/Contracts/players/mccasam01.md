@@ -2,9 +2,9 @@
 
 # Contract | Amal McCaskill
 
-Known through: 2005-04-17. [Open interactive contract](mccasam01.html#contract) · [Contract history](mccasam01.html#contract-history)
+Known through: 2005-04-18. [Open interactive contract](mccasam01.html#contract) · [Contract history](mccasam01.html#contract-history)
 
-Amal McCaskill: under contract. Evidence cutoff: 2005-04-17.
+Amal McCaskill: under contract. Evidence cutoff: 2005-04-18.
 
 ## Current contract
 

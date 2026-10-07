@@ -2,9 +2,9 @@
 
 # Contract | Matt Carroll
 
-Known through: 2005-04-17. [Open interactive contract](carroma01.html#contract) · [Contract history](carroma01.html#contract-history)
+Known through: 2005-04-18. [Open interactive contract](carroma01.html#contract) · [Contract history](carroma01.html#contract-history)
 
-Matt Carroll: No verified contract record. Evidence cutoff: 2005-04-17.
+Matt Carroll: No verified contract record. Evidence cutoff: 2005-04-18.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Matt Carroll |
-| Club / rights baseline | San Antonio Spurs |
+| Club / rights baseline | Free agent |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
