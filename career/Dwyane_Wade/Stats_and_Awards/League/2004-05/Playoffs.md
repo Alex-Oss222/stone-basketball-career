@@ -181,42 +181,42 @@ Home court: San Antonio Spurs. San Antonio Spurs wins 4-1.
 
 ### West: (1) Phoenix Suns vs (5) Sacramento Kings
 
-Home court: Phoenix Suns. Series Phoenix Suns 2, Sacramento Kings 1.
+Home court: Phoenix Suns. Series Phoenix Suns 2, Sacramento Kings 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun May 8 | Phoenix Suns | Sacramento Kings | Sacramento Kings 110, Phoenix Suns 114 |
 | 2 | Tue May 10 | Phoenix Suns | Sacramento Kings | Sacramento Kings 111, Phoenix Suns 99 |
 | 3 | Thu May 12 | Sacramento Kings | Phoenix Suns | Phoenix Suns 102, Sacramento Kings 99 |
-| 4 | Sat May 14 | Sacramento Kings | Phoenix Suns |  |
+| 4 | Sat May 14 | Sacramento Kings | Phoenix Suns | Phoenix Suns 102, Sacramento Kings 113 |
 | 5 | Mon May 16 | Phoenix Suns | Sacramento Kings | if needed |
 | 6 | Wed May 18 | Sacramento Kings | Phoenix Suns | if needed |
 | 7 | Fri May 20 | Phoenix Suns | Sacramento Kings | if needed |
 
 ### West: (3) Minnesota Timberwolves vs (2) San Antonio Spurs
 
-Home court: San Antonio Spurs. Series Minnesota Timberwolves 3, San Antonio Spurs 0.
+Home court: San Antonio Spurs. Series Minnesota Timberwolves 3, San Antonio Spurs 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun May 8 | San Antonio Spurs | Minnesota Timberwolves | Minnesota Timberwolves 96, San Antonio Spurs 95 |
 | 2 | Tue May 10 | San Antonio Spurs | Minnesota Timberwolves | Minnesota Timberwolves 102, San Antonio Spurs 85 |
 | 3 | Thu May 12 | Minnesota Timberwolves | San Antonio Spurs | San Antonio Spurs 93, Minnesota Timberwolves 94 |
-| 4 | Sat May 14 | Minnesota Timberwolves | San Antonio Spurs |  |
+| 4 | Sat May 14 | Minnesota Timberwolves | San Antonio Spurs | San Antonio Spurs 100, Minnesota Timberwolves 86 |
 | 5 | Mon May 16 | San Antonio Spurs | Minnesota Timberwolves | if needed |
 | 6 | Wed May 18 | Minnesota Timberwolves | San Antonio Spurs | if needed |
 | 7 | Fri May 20 | San Antonio Spurs | Minnesota Timberwolves | if needed |
 
 ### East: (1) Toronto Raptors vs (4) Boston Celtics
 
-Home court: Toronto Raptors. Series Toronto Raptors 2, Boston Celtics 1.
+Home court: Toronto Raptors. Series Toronto Raptors 3, Boston Celtics 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun May 8 | Toronto Raptors | Boston Celtics | Boston Celtics 99, Toronto Raptors 98 |
 | 2 | Tue May 10 | Toronto Raptors | Boston Celtics | Boston Celtics 89, Toronto Raptors 113 |
 | 3 | Thu May 12 | Boston Celtics | Toronto Raptors | Toronto Raptors 75, Boston Celtics 73 |
-| 4 | Sat May 14 | Boston Celtics | Toronto Raptors |  |
+| 4 | Sat May 14 | Boston Celtics | Toronto Raptors | Toronto Raptors 94, Boston Celtics 83 |
 | 5 | Mon May 16 | Toronto Raptors | Boston Celtics | if needed |
 | 6 | Wed May 18 | Boston Celtics | Toronto Raptors | if needed |
 | 7 | Fri May 20 | Toronto Raptors | Boston Celtics | if needed |
