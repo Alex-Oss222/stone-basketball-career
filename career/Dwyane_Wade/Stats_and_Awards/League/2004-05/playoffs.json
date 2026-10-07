@@ -1227,7 +1227,7 @@
    "home_court": "Toronto Raptors",
    "wins": {
     "Toronto Raptors": 2,
-    "Atlanta Hawks": 0
+    "Atlanta Hawks": 1
    },
    "winner": null,
    "games": [
@@ -1257,7 +1257,9 @@
      "home": "Atlanta Hawks",
      "away": "Toronto Raptors",
      "conditional": false,
-     "event_id": "2005-05-29-toronto-raptors-at-atlanta-hawks"
+     "event_id": "2005-05-29-toronto-raptors-at-atlanta-hawks",
+     "result": "Toronto Raptors 83, Atlanta Hawks 103",
+     "winner": "Atlanta Hawks"
     },
     {
      "game": 4,

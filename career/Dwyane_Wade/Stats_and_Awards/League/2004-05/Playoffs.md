@@ -239,13 +239,13 @@ Home court: Miami Heat. Atlanta Hawks wins 4-2.
 
 ### East: (1) Toronto Raptors vs (6) Atlanta Hawks
 
-Home court: Toronto Raptors. Series Toronto Raptors 2, Atlanta Hawks 0.
+Home court: Toronto Raptors. Series Toronto Raptors 2, Atlanta Hawks 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Mon May 23 | Toronto Raptors | Atlanta Hawks | Atlanta Hawks 92, Toronto Raptors 106 |
 | 2 | Wed May 25 | Toronto Raptors | Atlanta Hawks | Atlanta Hawks 96, Toronto Raptors 110 |
-| 3 | Sun May 29 | Atlanta Hawks | Toronto Raptors |  |
+| 3 | Sun May 29 | Atlanta Hawks | Toronto Raptors | Toronto Raptors 83, Atlanta Hawks 103 |
 | 4 | Tue May 31 | Atlanta Hawks | Toronto Raptors |  |
 | 5 | Thu Jun 2 | Toronto Raptors | Atlanta Hawks | if needed |
 | 6 | Sat Jun 4 | Atlanta Hawks | Toronto Raptors | if needed |
