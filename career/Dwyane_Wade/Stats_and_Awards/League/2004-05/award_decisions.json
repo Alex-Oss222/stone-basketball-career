@@ -2187,6 +2187,110 @@
     }
    ],
    "winner": "Kobe Bryant"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-02-14-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-02-14",
+   "period_end": "2005-02-20",
+   "announced_on": "2005-02-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/02_February/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Gilbert Arenas",
+     "team": "Washington Wizards",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 33.0,
+     "reb": 3.0,
+     "ast": 5.5,
+     "game_score": 23.15,
+     "score": 52.3,
+     "rank": 1
+    },
+    {
+     "player": "Mickael Pietrus",
+     "team": "Charlotte Bobcats",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 21.5,
+     "reb": 8.5,
+     "ast": 1.5,
+     "game_score": 19.9,
+     "score": 45.8,
+     "rank": 2
+    },
+    {
+     "player": "Brevin Knight",
+     "team": "Washington Wizards",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 17.5,
+     "reb": 3.0,
+     "ast": 8.5,
+     "game_score": 19.35,
+     "score": 44.7,
+     "rank": 3
+    }
+   ],
+   "winner": "Gilbert Arenas"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-02-14-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-02-14",
+   "period_end": "2005-02-20",
+   "announced_on": "2005-02-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/02_February/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Stephon Marbury",
+     "team": "Phoenix Suns",
+     "games": 2,
+     "wins": 1,
+     "losses": 1,
+     "pts": 27.0,
+     "reb": 4.5,
+     "ast": 11.0,
+     "game_score": 25.1,
+     "score": 53.2,
+     "rank": 1
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 20.5,
+     "reb": 10.5,
+     "ast": 5.0,
+     "game_score": 21.65,
+     "score": 49.3,
+     "rank": 2
+    },
+    {
+     "player": "Grant Hill",
+     "team": "Minnesota Timberwolves",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 19.0,
+     "reb": 7.5,
+     "ast": 5.0,
+     "game_score": 21.0,
+     "score": 48.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Stephon Marbury"
   }
  ]
 }

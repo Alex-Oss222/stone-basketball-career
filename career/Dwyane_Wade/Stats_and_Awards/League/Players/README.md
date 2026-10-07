@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-02-20**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-02-21**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -97,7 +97,7 @@ Card date: **2005-02-20**. 573 registry players, one Markdown card and one inter
 | [Speedy Claxton](claxtsp01.md) | Golden State Warriors | 26 | sourced | [open](claxtsp01.html) |
 | [Stephon Marbury](marbust01.md) | Phoenix Suns | 28 | sourced | [open](marbust01.html) |
 | [Steve Blake](blakest01.md) | Charlotte Bobcats | 24 | sourced | [open](blakest01.html) |
-| [Steve Francis](francst01.md) | Houston Rockets | 27 | sourced | [open](francst01.html) |
+| [Steve Francis](francst01.md) | Houston Rockets | 28 | sourced | [open](francst01.html) |
 | [Steve Kerr](kerrst01.md) | Free agent | 39 | sourced | [open](kerrst01.html) |
 | [Steve Nash](nashst01.md) | Dallas Mavericks | 31 | sourced | [open](nashst01.html) |
 | [T.J. Ford](fordtj01.md) | Milwaukee Bucks | 21 | sourced | [open](fordtj01.html) |
@@ -221,7 +221,7 @@ Card date: **2005-02-20**. 573 registry players, one Markdown card and one inter
 | [Al Jefferson](aljefferson.md) | Toronto Raptors | 20 | silhouette | [open](aljefferson.html) |
 | [Aleksandar Radojević](aleksandarradojevi.md) | Toronto Raptors | 28 | silhouette | [open](aleksandarradojevi.html) |
 | [Anderson Varejão](andersonvarejo.md) | Golden State Warriors | 22 | silhouette | [open](andersonvarejo.html) |
-| [Andre Barrett](andrebarrett.md) | Atlanta Hawks | 22 | silhouette | [open](andrebarrett.html) |
+| [Andre Barrett](andrebarrett.md) | Atlanta Hawks | 23 | silhouette | [open](andrebarrett.html) |
 | [Andre Emmett](andreemmett.md) | Chicago Bulls | 22 | silhouette | [open](andreemmett.html) |
 | [Andre Iguodala](andreiguodala.md) | New York Knicks | 21 | silhouette | [open](andreiguodala.html) |
 | [Andrei Kirilenko](kirilan01.md) | Utah Jazz | 24 | sourced | [open](kirilan01.html) |

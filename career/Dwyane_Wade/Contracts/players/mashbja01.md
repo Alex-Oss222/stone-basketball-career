@@ -2,9 +2,9 @@
 
 # Contract | Jamal Mashburn
 
-Known through: 2005-02-20. [Open interactive contract](mashbja01.html#contract) · [Contract history](mashbja01.html#contract-history)
+Known through: 2005-02-21. [Open interactive contract](mashbja01.html#contract) · [Contract history](mashbja01.html#contract-history)
 
-Jamal Mashburn: under contract. Evidence cutoff: 2005-02-20.
+Jamal Mashburn: under contract. Evidence cutoff: 2005-02-21.
 
 ## Current contract
 
