@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-03-20**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-03-21**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -203,7 +203,7 @@ Card date: **2005-03-20**. 573 registry players, one Markdown card and one inter
 | [Travis Hansen](hansetr01.md) | Free agent | 26 | sourced | [open](hansetr01.html) |
 | [Trenton Hassell](hassetr01.md) | Cleveland Cavaliers | 26 | sourced | [open](hassetr01.html) |
 | [Vince Carter](cartevi01.md) | Toronto Raptors | 28 | sourced | [open](cartevi01.html) |
-| [Vincent Yarbrough](yarbrvi01.md) | Free agent | 23 | silhouette | [open](yarbrvi01.html) |
+| [Vincent Yarbrough](yarbrvi01.md) | Free agent | 24 | silhouette | [open](yarbrvi01.html) |
 | [Voshon Lenard](lenarvo01.md) | Dallas Mavericks | 31 | silhouette | [open](lenarvo01.html) |
 | [Wesley Person](persowe01.md) | Free agent | 33 | silhouette | [open](persowe01.html) |
 | [Willie Green](greenwi01.md) | Philadelphia 76ers | 23 | sourced | [open](greenwi01.html) |
@@ -601,7 +601,7 @@ Card date: **2005-03-20**. 573 registry players, one Markdown card and one inter
 | [Samaki Walker](walkesa01.md) | New Orleans Hornets | 29 | sourced | [open](walkesa01.html) |
 | [Samuel Dalembert](dalemsa01.md) | Philadelphia 76ers | 23 | silhouette | [open](dalemsa01.html) |
 | [Scot Pollard](pollasc01.md) | Indiana Pacers | 30 | sourced | [open](pollasc01.html) |
-| [Scott Williams](willisc01.md) | Free agent | 36 | sourced | [open](willisc01.html) |
+| [Scott Williams](willisc01.md) | Free agent | 37 | sourced | [open](willisc01.html) |
 | [Sean Rooks](rooksse01.md) | Free agent | 35 | sourced | [open](rooksse01.html) |
 | [Shaquille O'Neal](onealsh01.md) | Los Angeles Lakers | 33 | sourced | [open](onealsh01.html) |
 | [Shawn Bradley](bradlsh01.md) | Dallas Mavericks | 32 | sourced | [open](bradlsh01.html) |
@@ -613,7 +613,7 @@ Card date: **2005-03-20**. 573 registry players, one Markdown card and one inter
 | [Tony Battie](battito01.md) | Denver Nuggets | 29 | sourced | [open](battito01.html) |
 | [Tony Massenburg](masseto01.md) | Free agent | 37 | sourced | [open](masseto01.html) |
 | [Travis Knight](knightr01.md) | Free agent | 30 | silhouette | [open](knightr01.html) |
-| [Vitaly Potapenko](potapvi01.md) | Golden State Warriors | 29 | sourced | [open](potapvi01.html) |
+| [Vitaly Potapenko](potapvi01.md) | Golden State Warriors | 30 | sourced | [open](potapvi01.html) |
 | [Vlade Divac](divacvl01.md) | Toronto Raptors | 37 | sourced | [open](divacvl01.html) |
 | [Vladimir Stepania](stepavl01.md) | Free agent | 28 | silhouette | [open](stepavl01.html) |
 | [Wang Zhizhi](zhizhwa01.md) | Atlanta Hawks | 27 | sourced | [open](zhizhwa01.html) |

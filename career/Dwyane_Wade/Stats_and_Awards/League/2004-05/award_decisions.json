@@ -2811,6 +2811,110 @@
     }
    ],
    "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-03-14-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-03-14",
+   "period_end": "2005-03-20",
+   "announced_on": "2005-03-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/03_March/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Desmond Mason",
+     "team": "Milwaukee Bucks",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 23.8,
+     "reb": 3.2,
+     "ast": 3.8,
+     "game_score": 20.1,
+     "score": 89.4,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 21.2,
+     "reb": 2.2,
+     "ast": 3.2,
+     "game_score": 18.38,
+     "score": 85.5,
+     "rank": 2
+    },
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 20.2,
+     "reb": 4.8,
+     "ast": 3.5,
+     "game_score": 17.57,
+     "score": 76.3,
+     "rank": 3
+    }
+   ],
+   "winner": "Desmond Mason"
+  },
+  {
+   "id": "2004-05-player_of_week-2005-03-14-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-03-14",
+   "period_end": "2005-03-20",
+   "announced_on": "2005-03-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2004-05/03_March/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 5,
+     "wins": 3,
+     "losses": 2,
+     "pts": 27.8,
+     "reb": 4.8,
+     "ast": 5.4,
+     "game_score": 21.36,
+     "score": 115.8,
+     "rank": 1
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 25.2,
+     "reb": 14.5,
+     "ast": 5.5,
+     "game_score": 23.08,
+     "score": 104.3,
+     "rank": 2
+    },
+    {
+     "player": "Shaquille O'Neal",
+     "team": "Los Angeles Lakers",
+     "games": 5,
+     "wins": 3,
+     "losses": 2,
+     "pts": 18.8,
+     "reb": 11.2,
+     "ast": 3.8,
+     "game_score": 17.58,
+     "score": 96.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Kobe Bryant"
   }
  ]
 }
