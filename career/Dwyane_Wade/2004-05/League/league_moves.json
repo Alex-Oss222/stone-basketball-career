@@ -3154,6 +3154,46 @@
     "salary": "pro-rated minimum"
    },
    "note": "kept: 20.9 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2004-05-market-2005-02-13-expire-breweja01",
+   "date": "2005-02-13",
+   "kind": "expire",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 18,
+    "minutes": 185
+   },
+   "contract": null,
+   "note": "10-day contract ended (6.4 minutes a game)"
+  },
+  {
+   "id": "2004-05-market-2005-02-13-rest_of_season-livinra01",
+   "date": "2005-02-13",
+   "kind": "rest_of_season",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "New Jersey Nets",
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 17,
+    "minutes": 227
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2005-04-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 13.5 minutes a game on his 10-day contracts"
   }
  ],
  "market_days": [
@@ -3259,6 +3299,7 @@
   "2005-02-09",
   "2005-02-10",
   "2005-02-11",
-  "2005-02-12"
+  "2005-02-12",
+  "2005-02-13"
  ]
 }
