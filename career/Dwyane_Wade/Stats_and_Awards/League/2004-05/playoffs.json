@@ -1226,10 +1226,10 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 3,
+    "Toronto Raptors": 4,
     "Atlanta Hawks": 3
    },
-   "winner": null,
+   "winner": "Toronto Raptors",
    "games": [
     {
      "game": 1,
@@ -1297,9 +1297,12 @@
      "home": "Toronto Raptors",
      "away": "Atlanta Hawks",
      "conditional": true,
-     "event_id": "2005-06-06-atlanta-hawks-at-toronto-raptors"
+     "event_id": "2005-06-06-atlanta-hawks-at-toronto-raptors",
+     "result": "Atlanta Hawks 86, Toronto Raptors 101",
+     "winner": "Toronto Raptors"
     }
-   ]
+   ],
+   "clinched_on": "2005-06-06"
   },
   {
    "id": "west-final",
@@ -1390,6 +1393,83 @@
     }
    ],
    "clinched_on": "2005-06-01"
+  },
+  {
+   "id": "finals",
+   "round": "finals",
+   "conference": "Finals",
+   "seeds": [
+    1,
+    5
+   ],
+   "clubs": [
+    "Toronto Raptors",
+    "Sacramento Kings"
+   ],
+   "home_court": "Toronto Raptors",
+   "wins": {
+    "Toronto Raptors": 0,
+    "Sacramento Kings": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2005-06-09",
+     "home": "Toronto Raptors",
+     "away": "Sacramento Kings",
+     "conditional": false,
+     "event_id": "2005-06-09-sacramento-kings-at-toronto-raptors"
+    },
+    {
+     "game": 2,
+     "date": "2005-06-12",
+     "home": "Toronto Raptors",
+     "away": "Sacramento Kings",
+     "conditional": false,
+     "event_id": "2005-06-12-sacramento-kings-at-toronto-raptors"
+    },
+    {
+     "game": 3,
+     "date": "2005-06-14",
+     "home": "Sacramento Kings",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2005-06-14-toronto-raptors-at-sacramento-kings"
+    },
+    {
+     "game": 4,
+     "date": "2005-06-16",
+     "home": "Sacramento Kings",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2005-06-16-toronto-raptors-at-sacramento-kings"
+    },
+    {
+     "game": 5,
+     "date": "2005-06-19",
+     "home": "Sacramento Kings",
+     "away": "Toronto Raptors",
+     "conditional": true,
+     "event_id": "2005-06-19-toronto-raptors-at-sacramento-kings"
+    },
+    {
+     "game": 6,
+     "date": "2005-06-21",
+     "home": "Toronto Raptors",
+     "away": "Sacramento Kings",
+     "conditional": true,
+     "event_id": "2005-06-21-sacramento-kings-at-toronto-raptors"
+    },
+    {
+     "game": 7,
+     "date": "2005-06-23",
+     "home": "Toronto Raptors",
+     "away": "Sacramento Kings",
+     "conditional": true,
+     "event_id": "2005-06-23-sacramento-kings-at-toronto-raptors"
+    }
+   ]
   }
  ],
  "champion": null

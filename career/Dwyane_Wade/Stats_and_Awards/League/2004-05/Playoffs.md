@@ -239,7 +239,7 @@ Home court: Miami Heat. Atlanta Hawks wins 4-2.
 
 ### East: (1) Toronto Raptors vs (6) Atlanta Hawks
 
-Home court: Toronto Raptors. Series Toronto Raptors 3, Atlanta Hawks 3.
+Home court: Toronto Raptors. Toronto Raptors wins 4-3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -249,7 +249,7 @@ Home court: Toronto Raptors. Series Toronto Raptors 3, Atlanta Hawks 3.
 | 4 | Tue May 31 | Atlanta Hawks | Toronto Raptors | Toronto Raptors 91, Atlanta Hawks 96 |
 | 5 | Thu Jun 2 | Toronto Raptors | Atlanta Hawks | Atlanta Hawks 104, Toronto Raptors 98 |
 | 6 | Sat Jun 4 | Atlanta Hawks | Toronto Raptors | Toronto Raptors 114, Atlanta Hawks 111 |
-| 7 | Mon Jun 6 | Toronto Raptors | Atlanta Hawks | if needed |
+| 7 | Mon Jun 6 | Toronto Raptors | Atlanta Hawks | Atlanta Hawks 86, Toronto Raptors 101 |
 
 ### West: (5) Sacramento Kings vs (3) Minnesota Timberwolves
 
@@ -264,3 +264,19 @@ Home court: Sacramento Kings. Sacramento Kings wins 4-1.
 | 5 | Wed Jun 1 | Sacramento Kings | Minnesota Timberwolves | Minnesota Timberwolves 101, Sacramento Kings 109 |
 | 6 | Fri Jun 3 | Minnesota Timberwolves | Sacramento Kings | not needed |
 | 7 | Sun Jun 5 | Sacramento Kings | Minnesota Timberwolves | not needed |
+
+## NBA Finals
+
+### Finals: (1) Toronto Raptors vs (5) Sacramento Kings
+
+Home court: Toronto Raptors. Series Toronto Raptors 0, Sacramento Kings 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Thu Jun 9 | Toronto Raptors | Sacramento Kings |  |
+| 2 | Sun Jun 12 | Toronto Raptors | Sacramento Kings |  |
+| 3 | Tue Jun 14 | Sacramento Kings | Toronto Raptors |  |
+| 4 | Thu Jun 16 | Sacramento Kings | Toronto Raptors |  |
+| 5 | Sun Jun 19 | Sacramento Kings | Toronto Raptors | if needed |
+| 6 | Tue Jun 21 | Toronto Raptors | Sacramento Kings | if needed |
+| 7 | Thu Jun 23 | Toronto Raptors | Sacramento Kings | if needed |
