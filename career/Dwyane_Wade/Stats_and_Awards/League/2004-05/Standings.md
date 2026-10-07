@@ -1,6 +1,6 @@
 # 2004-05 standings
 
-Through 2005-04-06, from closed simulated results only (`runtime/standings.py`). Real 2004-05 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2005-04-07, from closed simulated results only (`runtime/standings.py`). Real 2004-05 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
@@ -18,8 +18,8 @@ Through 2005-04-06, from closed simulated results only (`runtime/standings.py`).
 | 10 | Philadelphia 76ers | 35 | 39 | .473 | 17 |
 | 11 | Milwaukee Bucks | 32 | 42 | .432 | 20 |
 | 12 | Washington Wizards | 31 | 43 | .419 | 21 |
-| 13 | New York Knicks | 27 | 46 | .370 | 24.5 |
-| 14 | New Jersey Nets | 27 | 48 | .360 | 25.5 |
+| 13 | New York Knicks | 28 | 46 | .378 | 24 |
+| 14 | New Jersey Nets | 27 | 49 | .355 | 26 |
 | 15 | Charlotte Bobcats | 12 | 62 | .162 | 40 |
 
 ## Western Conference
@@ -27,16 +27,16 @@ Through 2005-04-06, from closed simulated results only (`runtime/standings.py`).
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Phoenix Suns | 56 | 18 | .757 | — |
-| 2 | San Antonio Spurs | 51 | 23 | .689 | 5 |
-| 3 | Dallas Mavericks | 46 | 28 | .622 | 10 |
+| 2 | San Antonio Spurs | 51 | 24 | .680 | 5.5 |
+| 3 | Dallas Mavericks | 47 | 28 | .627 | 9.5 |
 | 4 | Sacramento Kings | 46 | 30 | .605 | 11 |
 | 5 | Minnesota Timberwolves | 41 | 34 | .547 | 15.5 |
-| 6 | Los Angeles Lakers | 40 | 34 | .541 | 16 |
+| 6 | Los Angeles Lakers | 40 | 35 | .533 | 16.5 |
 | 7 | Golden State Warriors | 39 | 36 | .520 | 17.5 |
 | 8 | Memphis Grizzlies | 36 | 38 | .486 | 20 |
 | 9 | Portland Trail Blazers | 36 | 38 | .486 | 20 |
-| 10 | Seattle SuperSonics | 33 | 41 | .446 | 23 |
-| 11 | Houston Rockets | 33 | 42 | .440 | 23.5 |
+| 10 | Houston Rockets | 34 | 42 | .447 | 23 |
+| 11 | Seattle SuperSonics | 33 | 41 | .446 | 23 |
 | 12 | Los Angeles Clippers | 33 | 43 | .434 | 24 |
 | 13 | New Orleans Hornets | 27 | 47 | .365 | 29 |
 | 14 | Denver Nuggets | 25 | 49 | .338 | 31 |
