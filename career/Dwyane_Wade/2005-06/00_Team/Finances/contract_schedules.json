@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "owner": "ai_gm",
- "as_of": "2005-10-02",
+ "as_of": "2005-10-04",
  "team": "Miami Heat",
  "horizon": [
   "2005-06",
@@ -15,7 +15,7 @@
  ],
  "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
  "known_baseline": {
-  "2005-06": 66415195,
+  "2005-06": 72358874,
   "2006-07": 44684794,
   "2007-08": 30422341,
   "2008-09": 18404282,
@@ -595,6 +595,132 @@
    "sources": [
     "2004-05/09_Draft/draft_2005.json"
    ]
+  },
+  {
+   "player": "Theo Ratliff",
+   "bbr_id": "ratlith01",
+   "status": "camp_contract",
+   "schedule": {
+    "2005-06": 1138500
+   },
+   "amount_kind": {
+    "2005-06": "contract_salary"
+   },
+   "guaranteed": {
+    "2005-06": 0
+   },
+   "guarantee_date": "2006-01-10",
+   "signed_date": "2005-10-04",
+   "route": "minimum",
+   "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $1,138,500, guaranteed if still on the roster on 2006-01-10.",
+   "sources": [
+    "04_Training_Camp/camp_roster.json"
+   ]
+  },
+  {
+   "player": "Bonzi Wells",
+   "bbr_id": "wellsbo01",
+   "status": "camp_contract",
+   "schedule": {
+    "2005-06": 965185
+   },
+   "amount_kind": {
+    "2005-06": "contract_salary"
+   },
+   "guaranteed": {
+    "2005-06": 0
+   },
+   "guarantee_date": "2006-01-10",
+   "signed_date": "2005-10-04",
+   "route": "minimum",
+   "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $965,185, guaranteed if still on the roster on 2006-01-10.",
+   "sources": [
+    "04_Training_Camp/camp_roster.json"
+   ]
+  },
+  {
+   "player": "Adonal Foyle",
+   "bbr_id": "foylead01",
+   "status": "camp_contract",
+   "schedule": {
+    "2005-06": 1029873
+   },
+   "amount_kind": {
+    "2005-06": "contract_salary"
+   },
+   "guaranteed": {
+    "2005-06": 0
+   },
+   "guarantee_date": "2006-01-10",
+   "signed_date": "2005-10-04",
+   "route": "minimum",
+   "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $1,029,873, guaranteed if still on the roster on 2006-01-10.",
+   "sources": [
+    "04_Training_Camp/camp_roster.json"
+   ]
+  },
+  {
+   "player": "Jumaine Jones",
+   "bbr_id": "jonesju01",
+   "status": "camp_contract",
+   "schedule": {
+    "2005-06": 900498
+   },
+   "amount_kind": {
+    "2005-06": "contract_salary"
+   },
+   "guaranteed": {
+    "2005-06": 0
+   },
+   "guarantee_date": "2006-01-10",
+   "signed_date": "2005-10-04",
+   "route": "minimum",
+   "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10.",
+   "sources": [
+    "04_Training_Camp/camp_roster.json"
+   ]
+  },
+  {
+   "player": "Sam Cassell",
+   "bbr_id": "cassesa01",
+   "status": "camp_contract",
+   "schedule": {
+    "2005-06": 1138500
+   },
+   "amount_kind": {
+    "2005-06": "contract_salary"
+   },
+   "guaranteed": {
+    "2005-06": 0
+   },
+   "guarantee_date": "2006-01-10",
+   "signed_date": "2005-10-04",
+   "route": "minimum",
+   "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $1,138,500, guaranteed if still on the roster on 2006-01-10.",
+   "sources": [
+    "04_Training_Camp/camp_roster.json"
+   ]
+  },
+  {
+   "player": "Kwame Brown",
+   "bbr_id": "brownkw01",
+   "status": "camp_contract",
+   "schedule": {
+    "2005-06": 771123
+   },
+   "amount_kind": {
+    "2005-06": "contract_salary"
+   },
+   "guaranteed": {
+    "2005-06": 0
+   },
+   "guarantee_date": "2006-01-10",
+   "signed_date": "2005-10-04",
+   "route": "minimum",
+   "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $771,123, guaranteed if still on the roster on 2006-01-10.",
+   "sources": [
+    "04_Training_Camp/camp_roster.json"
+   ]
   }
  ],
  "expiring_or_unresolved_without_scheduled_2003_04_salary": [
@@ -623,7 +749,7 @@
   "kind": "existing_obligations_only",
   "currency": "USD",
   "unit": "whole dollars",
-  "known_baseline_definition": "Counted 2005-06 team salary on 2005-10-02: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+  "known_baseline_definition": "Counted 2005-06 team salary on 2005-10-04: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
   "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
   "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
   "missing_definition": "Null means unresolved or not yet projected, never zero.",
@@ -668,7 +794,7 @@
   },
   {
    "season": "2005-06",
-   "scheduled_contract_salary": 66415195,
+   "scheduled_contract_salary": 72358874,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -676,8 +802,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 66415195,
-   "base_plus_priced_options": 66415195,
+   "known_base_allocations": 72358874,
+   "base_plus_priced_options": 72358874,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": 0,

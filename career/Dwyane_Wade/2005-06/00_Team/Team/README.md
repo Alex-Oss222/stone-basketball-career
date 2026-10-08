@@ -2,7 +2,7 @@
 
 <!-- team-status:start -->
 
-**Status on 2005-10-03:** 15 under contract (15 active, 0 on the injured list), Miami 0-0, 8th in the East. The [register](Roster/README.md) labels every player's control and availability; expired, released and voided contracts stay on it as history.
+**Status on 2005-10-04:** 21 under contract (21 active, 0 on the injured list), Miami 0-0, 8th in the East. The [register](Roster/README.md) labels every player's control and availability; expired, released and voided contracts stay on it as history.
 
 <!-- team-status:end -->
 

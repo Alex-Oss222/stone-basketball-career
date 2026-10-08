@@ -1841,6 +1841,192 @@
     "to_team": "Miami Heat",
     "source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json"
    }
+  },
+  {
+   "record_id": "ratlith01-2005-10-04-signed",
+   "recorded_on": "2005-10-04",
+   "player_id": "ratlith01",
+   "player": "Theo Ratliff",
+   "contract_id": "ratlith01-2005-10-04",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2005-06/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Theo Ratliff",
+    "bbr_id": "ratlith01",
+    "status": "camp_contract",
+    "schedule": {
+     "2005-06": 1138500
+    },
+    "amount_kind": {
+     "2005-06": "contract_salary"
+    },
+    "guaranteed": {
+     "2005-06": 0
+    },
+    "guarantee_date": "2006-01-10",
+    "signed_date": "2005-10-04",
+    "route": "minimum",
+    "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $1,138,500, guaranteed if still on the roster on 2006-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "wellsbo01-2005-10-04-signed",
+   "recorded_on": "2005-10-04",
+   "player_id": "wellsbo01",
+   "player": "Bonzi Wells",
+   "contract_id": "wellsbo01-2005-10-04",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2005-06/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Bonzi Wells",
+    "bbr_id": "wellsbo01",
+    "status": "camp_contract",
+    "schedule": {
+     "2005-06": 965185
+    },
+    "amount_kind": {
+     "2005-06": "contract_salary"
+    },
+    "guaranteed": {
+     "2005-06": 0
+    },
+    "guarantee_date": "2006-01-10",
+    "signed_date": "2005-10-04",
+    "route": "minimum",
+    "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $965,185, guaranteed if still on the roster on 2006-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "foylead01-2005-10-04-signed",
+   "recorded_on": "2005-10-04",
+   "player_id": "foylead01",
+   "player": "Adonal Foyle",
+   "contract_id": "foylead01-2005-10-04",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2005-06/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Adonal Foyle",
+    "bbr_id": "foylead01",
+    "status": "camp_contract",
+    "schedule": {
+     "2005-06": 1029873
+    },
+    "amount_kind": {
+     "2005-06": "contract_salary"
+    },
+    "guaranteed": {
+     "2005-06": 0
+    },
+    "guarantee_date": "2006-01-10",
+    "signed_date": "2005-10-04",
+    "route": "minimum",
+    "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $1,029,873, guaranteed if still on the roster on 2006-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "jonesju01-2005-10-04-signed",
+   "recorded_on": "2005-10-04",
+   "player_id": "jonesju01",
+   "player": "Jumaine Jones",
+   "contract_id": "jonesju01-2005-10-04",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2005-06/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Jumaine Jones",
+    "bbr_id": "jonesju01",
+    "status": "camp_contract",
+    "schedule": {
+     "2005-06": 900498
+    },
+    "amount_kind": {
+     "2005-06": "contract_salary"
+    },
+    "guaranteed": {
+     "2005-06": 0
+    },
+    "guarantee_date": "2006-01-10",
+    "signed_date": "2005-10-04",
+    "route": "minimum",
+    "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "cassesa01-2005-10-04-signed",
+   "recorded_on": "2005-10-04",
+   "player_id": "cassesa01",
+   "player": "Sam Cassell",
+   "contract_id": "cassesa01-2005-10-04",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2005-06/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Sam Cassell",
+    "bbr_id": "cassesa01",
+    "status": "camp_contract",
+    "schedule": {
+     "2005-06": 1138500
+    },
+    "amount_kind": {
+     "2005-06": "contract_salary"
+    },
+    "guaranteed": {
+     "2005-06": 0
+    },
+    "guarantee_date": "2006-01-10",
+    "signed_date": "2005-10-04",
+    "route": "minimum",
+    "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $1,138,500, guaranteed if still on the roster on 2006-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "brownkw01-2005-10-04-signed",
+   "recorded_on": "2005-10-04",
+   "player_id": "brownkw01",
+   "player": "Kwame Brown",
+   "contract_id": "brownkw01-2005-10-04",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2005-06/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Kwame Brown",
+    "bbr_id": "brownkw01",
+    "status": "camp_contract",
+    "schedule": {
+     "2005-06": 771123
+    },
+    "amount_kind": {
+     "2005-06": "contract_salary"
+    },
+    "guaranteed": {
+     "2005-06": 0
+    },
+    "guarantee_date": "2006-01-10",
+    "signed_date": "2005-10-04",
+    "route": "minimum",
+    "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $771,123, guaranteed if still on the roster on 2006-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
   }
  ]
 }

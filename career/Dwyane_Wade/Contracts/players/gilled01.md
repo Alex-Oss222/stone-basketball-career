@@ -2,9 +2,9 @@
 
 # Contract | Eddie Gill
 
-Known through: 2005-10-02. [Open interactive contract](gilled01.html#contract) · [Contract history](gilled01.html#contract-history)
+Known through: 2005-10-04. [Open interactive contract](gilled01.html#contract) · [Contract history](gilled01.html#contract-history)
 
-Eddie Gill: under contract. Evidence cutoff: 2005-10-02.
+Eddie Gill: under contract. Evidence cutoff: 2005-10-04.
 
 ## Current contract
 

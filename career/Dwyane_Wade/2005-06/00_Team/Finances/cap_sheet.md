@@ -1,6 +1,6 @@
 # Miami Heat | Cap sheet
 
-October 2, 2005 · 2005-06 through 2012-13 · USD
+October 4, 2005 · 2005-06 through 2012-13 · USD
 
 [Finance guide](README.md) · [Roster and control](../Team/Roster/roster.json) · [Contract detail](contract_schedules.json)
 
@@ -8,9 +8,9 @@ October 2, 2005 · 2005-06 through 2012-13 · USD
 
 | Cap (published) | Committed salary | Free-agent holds | Roster charge | Room |
 | ---: | ---: | ---: | ---: | ---: |
-| 49,500,000 | 66,415,195 | 0 | 0 | -16,915,195 |
+| 49,500,000 | 72,358,874 | 0 | 0 | -22,858,874 |
 
-Committed salary counts contracts, exercised options and the unsigned first-round hold on October 2, 2005. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
+Committed salary counts contracts, exercised options and the unsigned first-round hold on October 4, 2005. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
 
 ## Eight-season commitments
 
@@ -26,12 +26,18 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | [DeShawn Stevenson](../Team/Player_Cards/deshawn_stevenson.md) | 2,989,469 | 3,321,632 | 3,653,796 | 3,985,959 | — | — | — | — |
 | [Dwyane Wade](../Team/Player_Cards/dwyane_wade.md) | 2,526,600 | 3,201,202<sup>TO</sup> | — | — | — | — | — | — |
 | [Caron Butler](../Team/Player_Cards/caron_butler.md) | 2,461,617 | — | — | — | — | — | — | — |
+| [Theo Ratliff](../Team/Player_Cards/theo_ratliff.md) | 1,138,500 | — | — | — | — | — | — | — |
+| [Sam Cassell](../Team/Player_Cards/sam_cassell.md) | 1,138,500 | — | — | — | — | — | — | — |
+| [Adonal Foyle](../Team/Player_Cards/adonal_foyle.md) | 1,029,873 | — | — | — | — | — | — | — |
 | [Sebastian Telfair](../Team/Player_Cards/sebastian_telfair.md) | 1,010,040 | 1,080,480 | — | — | — | — | — | — |
+| [Bonzi Wells](../Team/Player_Cards/bonzi_wells.md) | 965,185 | — | — | — | — | — | — | — |
+| [Jumaine Jones](../Team/Player_Cards/jumaine_jones.md) | 900,498 | — | — | — | — | — | — | — |
 | [Eddie Gill](../Team/Player_Cards/eddie_gill.md) | 835,810 | — | — | — | — | — | — | — |
+| [Kwame Brown](../Team/Player_Cards/kwame_brown.md) | 771,123 | — | — | — | — | — | — | — |
 | [Mike Wilks](../Team/Player_Cards/mike_wilks.md) | 745,248 | — | — | — | — | — | — | — |
 | [Matt Carroll](../Team/Player_Cards/matt_carroll.md) | 719,373 | — | — | — | — | — | — | — |
 | [Uroš Slokar](../Team/Player_Cards/uros_slokar.md) | — | — | — | — | — | — | — | — |
-| Counted | 66,415,195 | 63,325,002 | 30,422,341 | 18,404,282 | 0 | 0 | 0 | 0 |
+| Counted | 72,358,874 | 63,325,002 | 30,422,341 | 18,404,282 | 0 | 0 | 0 | 0 |
 
 ## Free-agent holds
 

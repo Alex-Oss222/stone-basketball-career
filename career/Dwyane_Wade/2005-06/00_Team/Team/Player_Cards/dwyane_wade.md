@@ -8,9 +8,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG / PG  
 **Age at assessment:** 19 · **Height:** 6-6 in shoes · **Weight:** 220 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2005-10-03 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2005-10-04 
 
-**Contract/control:** Existing contract: 2 season(s) from 2005-06, $5,727,802 scheduled ($2,526,600 in 2005-06). (register, 2005-10-01) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing contract: 2 season(s) from 2005-06, $5,727,802 scheduled ($2,526,600 in 2005-06). (register, 2005-10-04) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/wadedw01.html#contract) · [Contract history](../../../../Contracts/players/wadedw01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

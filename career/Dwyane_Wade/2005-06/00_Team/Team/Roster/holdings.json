@@ -111,6 +111,48 @@
    "from": "2005-06-28",
    "until": null,
    "basis": "draft rights (No. 58 pick), unsigned"
+  },
+  {
+   "player": "Theo Ratliff",
+   "bbr_id": "ratlith01",
+   "from": "2005-10-04",
+   "until": null,
+   "basis": "camp contract 2005-10-04 (camp_roster.json)"
+  },
+  {
+   "player": "Bonzi Wells",
+   "bbr_id": "wellsbo01",
+   "from": "2005-10-04",
+   "until": null,
+   "basis": "camp contract 2005-10-04 (camp_roster.json)"
+  },
+  {
+   "player": "Adonal Foyle",
+   "bbr_id": "foylead01",
+   "from": "2005-10-04",
+   "until": null,
+   "basis": "camp contract 2005-10-04 (camp_roster.json)"
+  },
+  {
+   "player": "Jumaine Jones",
+   "bbr_id": "jonesju01",
+   "from": "2005-10-04",
+   "until": null,
+   "basis": "camp contract 2005-10-04 (camp_roster.json)"
+  },
+  {
+   "player": "Sam Cassell",
+   "bbr_id": "cassesa01",
+   "from": "2005-10-04",
+   "until": null,
+   "basis": "camp contract 2005-10-04 (camp_roster.json)"
+  },
+  {
+   "player": "Kwame Brown",
+   "bbr_id": "brownkw01",
+   "from": "2005-10-04",
+   "until": null,
+   "basis": "camp contract 2005-10-04 (camp_roster.json)"
   }
  ],
  "void_definition": "An entry with void: true records a camp contract voided because the player was not truly available when Miami signed him (04_Training_Camp/signing_corrections.json). Its dates stay as played games used them, but it never made him Miami's: his real moves apply as if Miami had not signed him."

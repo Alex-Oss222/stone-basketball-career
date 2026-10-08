@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-04",
+ "decider": "engine (camp injury draw)",
+ "event_id": "2005-camp-jonesed02-injury",
+ "kind": "decision",
+ "options": {
+  "healthy": 0.955,
+  "injured": 0.045
+ },
+ "outcome": "healthy",
+ "question": "Is Eddie Jones hurt in training camp?"
+}

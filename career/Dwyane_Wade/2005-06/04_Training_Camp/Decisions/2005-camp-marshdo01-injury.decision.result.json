@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-04",
+ "decider": "engine (camp injury draw)",
+ "event_id": "2005-camp-marshdo01-injury",
+ "kind": "decision",
+ "options": {
+  "healthy": 0.96,
+  "injured": 0.04
+ },
+ "outcome": "healthy",
+ "question": "Is Donyell Marshall hurt in training camp?"
+}

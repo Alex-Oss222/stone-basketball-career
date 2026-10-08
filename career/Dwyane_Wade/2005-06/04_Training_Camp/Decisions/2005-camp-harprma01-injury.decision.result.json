@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-04",
+ "decider": "engine (camp injury draw)",
+ "event_id": "2005-camp-harprma01-injury",
+ "kind": "decision",
+ "options": {
+  "healthy": 0.97,
+  "injured": 0.03
+ },
+ "outcome": "healthy",
+ "question": "Is Matt Harpring hurt in training camp?"
+}

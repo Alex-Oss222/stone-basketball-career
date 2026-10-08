@@ -8,9 +8,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 28 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** January 24, 2005 · **Statistics through:** 2005-10-03 
+**Opening assessment:** January 24, 2005 · **Statistics through:** 2005-10-04 
 
-**Contract/control:** Signed August 19, 2005 (bird): 4 season(s) from 2005-06, $36,827,534 scheduled ($7,954,111 in 2005-06). (register, 2005-10-01) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed August 19, 2005 (bird): 4 season(s) from 2005-06, $36,827,534 scheduled ($7,954,111 in 2005-06). (register, 2005-10-04) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/harprma01.html#contract) · [Contract history](../../../../Contracts/players/harprma01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

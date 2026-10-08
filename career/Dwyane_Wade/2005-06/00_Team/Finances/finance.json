@@ -1,19 +1,19 @@
 {
  "schema_version": 5,
  "owner": "ai_gm",
- "as_of": "2005-10-02",
+ "as_of": "2005-10-04",
  "season": "2005-06",
  "team": "Miami Heat",
- "cap_status": "free_agency",
+ "cap_status": "training_camp",
  "live_official_salary_cap": 49500000,
  "historical_actual_salary_cap": 43840000,
  "historical_actual_salary_cap_publication_date": "2003-07-15",
  "league_cap_history_file": "league_cap_history.json",
  "contract_schedules_file": "contract_schedules.json",
- "known_counted_salary_before_free_agent_holds": 66415195,
- "reference_difference_to_historical_actual_cap_before_free_agent_holds": -22575195,
+ "known_counted_salary_before_free_agent_holds": 72358874,
+ "reference_difference_to_historical_actual_cap_before_free_agent_holds": -28518874,
  "cap_space": null,
- "cap_room": -16915195,
+ "cap_room": -22858874,
  "cap_room_reason": [
   "Cap published July 30, 2005.",
   "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."
@@ -116,6 +116,48 @@
    "amount": 719373,
    "precision": "whole_dollars",
    "status": "under_contract"
+  },
+  {
+   "player": "Theo Ratliff",
+   "kind": "contract_salary",
+   "amount": 1138500,
+   "precision": "whole_dollars",
+   "status": "camp_contract"
+  },
+  {
+   "player": "Bonzi Wells",
+   "kind": "contract_salary",
+   "amount": 965185,
+   "precision": "whole_dollars",
+   "status": "camp_contract"
+  },
+  {
+   "player": "Adonal Foyle",
+   "kind": "contract_salary",
+   "amount": 1029873,
+   "precision": "whole_dollars",
+   "status": "camp_contract"
+  },
+  {
+   "player": "Jumaine Jones",
+   "kind": "contract_salary",
+   "amount": 900498,
+   "precision": "whole_dollars",
+   "status": "camp_contract"
+  },
+  {
+   "player": "Sam Cassell",
+   "kind": "contract_salary",
+   "amount": 1138500,
+   "precision": "whole_dollars",
+   "status": "camp_contract"
+  },
+  {
+   "player": "Kwame Brown",
+   "kind": "contract_salary",
+   "amount": 771123,
+   "precision": "whole_dollars",
+   "status": "camp_contract"
   }
  ],
  "pending_control_items": [],
@@ -146,10 +188,10 @@
   "2010-11"
  ],
  "currency": "USD",
- "known_counted_salary_definition": "Counted 2005-06 team salary on 2005-10-02: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
- "scheduled_contract_salary_subtotal": 66415195,
+ "known_counted_salary_definition": "Counted 2005-06 team salary on 2005-10-04: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+ "scheduled_contract_salary_subtotal": 72358874,
  "known_pending_option_salary": 0,
- "known_base_plus_priced_options": 66415195,
+ "known_base_plus_priced_options": 72358874,
  "live_official_tax_threshold": null,
  "tax_payroll": null,
  "luxury_tax_bill": null,
@@ -194,7 +236,7 @@
  "known_free_agent_holds_subtotal": 0,
  "unpriced_free_agent_hold_count": 0,
  "free_agent_hold_total": null,
- "free_agent_hold_timing": "Holds on 2005-10-02 are the unrenounced free agents' cap holds in free_agent_rights.json.",
+ "free_agent_hold_timing": "Holds on 2005-10-04 are the unrenounced free agents' cap holds in free_agent_rights.json.",
  "research_date": "2026-10-02",
  "guarantee_review": [
   {
@@ -233,7 +275,7 @@
  "subtotal_precision": "whole_dollars",
  "reported_rounded_salary_count": 0,
  "planning_cap": 49500000,
- "known_counted_salary": 66415195,
+ "known_counted_salary": 72358874,
  "roster_charge": 0,
- "projected_cap_room": -16915195
+ "projected_cap_room": -22858874
 }

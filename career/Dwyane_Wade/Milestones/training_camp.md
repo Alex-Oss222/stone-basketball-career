@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-10-02 · Miami Heat · inactive
+Career date: 2005-10-04 · Miami Heat · active
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -14,12 +14,12 @@ Activation: The club opens camp and records participation, evaluation or an actu
 
 | Item | Recorded position |
 | --- | --- |
-| Camp opened | Not recorded |
-| Participation | No camp participation record |
+| Camp opened | 2005-10-04 |
+| Participation | under_contract |
 | Current role | Starting SG; staff plan 34 minutes |
 | Staff rotation minutes | N/A |
 | Closed preseason games | 0 |
-| Camp availability | No camp assessment recorded |
+| Camp availability | No camp injury restriction recorded |
 
 ## Current depth chart
 
@@ -47,7 +47,8 @@ Snapshot: 2005-10-01. Draft rights and unassigned arrivals are not assigned minu
 
 | Date | Event / decision |
 | --- | --- |
-| No dated record | N/A |
+| 2005-10-04 | Camp opens with 20 players: 6 invitees on non-guaranteed minimums (Theo Ratliff, Bonzi Wells, Adonal Foyle, Jumaine Jones, Sam Cassell, Kwame Brown). Record: `camp_roster.json`. |
+| 2005-10-04 | Camp injury draws: nobody is hurt. |
 
 ## Your response to the staff
 
@@ -74,4 +75,5 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Current contract and cap-control record](../2005-06/00_Team/Finances/contract_schedules.json)
 - [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
+- [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated milestone working records and player replies](../milestones.json)

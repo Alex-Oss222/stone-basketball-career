@@ -1,0 +1,257 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "season": "2005-06",
+ "opened": "2005-10-04",
+ "status": "open",
+ "purpose": "Miami's training-camp roster: the register plus invitees on non-guaranteed minimum contracts, camp injuries, and the cut.",
+ "players": [
+  {
+   "player": "Eddie Jones",
+   "bbr_id": "jonesed02",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Brian Grant",
+   "bbr_id": "grantbr01",
+   "positions": [
+    "C",
+    "PF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Matt Harpring",
+   "bbr_id": "harprma01",
+   "positions": [
+    "SF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Donyell Marshall",
+   "bbr_id": "marshdo01",
+   "positions": [
+    "PF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Anthony Johnson",
+   "bbr_id": "johnsan02",
+   "positions": [
+    "PG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "positions": [
+    "PG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Mehmet Okur",
+   "bbr_id": "okurme01",
+   "positions": [
+    "PF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "DeShawn Stevenson",
+   "bbr_id": "stevede01",
+   "positions": [
+    "SG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Dwyane Wade",
+   "bbr_id": null,
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Caron Butler",
+   "bbr_id": "butleca01",
+   "positions": [
+    "SF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Sebastian Telfair",
+   "bbr_id": "telfase01",
+   "positions": [
+    "SF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Eddie Gill",
+   "bbr_id": "gilled01",
+   "positions": [
+    "PG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Mike Wilks",
+   "bbr_id": "wilksmi01",
+   "positions": [
+    "PG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Matt Carroll",
+   "bbr_id": "carroma01",
+   "positions": [
+    "SG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Theo Ratliff",
+   "bbr_id": "ratlith01",
+   "positions": [
+    "C"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 1138500,
+    "guaranteed": 0,
+    "guarantee_date": "2006-01-10"
+   },
+   "value": 8.2,
+   "fit": 0.682,
+   "injured_through": null
+  },
+  {
+   "player": "Bonzi Wells",
+   "bbr_id": "wellsbo01",
+   "positions": [
+    "SG"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 965185,
+    "guaranteed": 0,
+    "guarantee_date": "2006-01-10"
+   },
+   "value": 8.43,
+   "fit": 0.645,
+   "injured_through": null
+  },
+  {
+   "player": "Adonal Foyle",
+   "bbr_id": "foylead01",
+   "positions": [
+    "C"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 1029873,
+    "guaranteed": 0,
+    "guarantee_date": "2006-01-10"
+   },
+   "value": 7.77,
+   "fit": 0.682,
+   "injured_through": null
+  },
+  {
+   "player": "Jumaine Jones",
+   "bbr_id": "jonesju01",
+   "positions": [
+    "SF"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 900498,
+    "guaranteed": 0,
+    "guarantee_date": "2006-01-10"
+   },
+   "value": 9.22,
+   "fit": 0.5,
+   "injured_through": null
+  },
+  {
+   "player": "Sam Cassell",
+   "bbr_id": "cassesa01",
+   "positions": [
+    "PG"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 1138500,
+    "guaranteed": 0,
+    "guarantee_date": "2006-01-10"
+   },
+   "value": 9.21,
+   "fit": 0.5,
+   "injured_through": null
+  },
+  {
+   "player": "Kwame Brown",
+   "bbr_id": "brownkw01",
+   "positions": [
+    "C"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 771123,
+    "guaranteed": 0,
+    "guarantee_date": "2006-01-10"
+   },
+   "value": 6.71,
+   "fit": 0.682,
+   "injured_through": null
+  }
+ ],
+ "cuts": [],
+ "injuries_applied": "2005-10-04"
+}

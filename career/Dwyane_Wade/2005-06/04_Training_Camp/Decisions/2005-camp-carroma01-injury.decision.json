@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-camp-carroma01-injury",
+ "date": "2005-10-04",
+ "question": "Is Matt Carroll hurt in training camp?",
+ "decider": "engine (camp injury draw)",
+ "options": {
+  "healthy": 0.97,
+  "injured": 0.03
+ },
+ "basis": "Camp injury chance 0.03 plus 0.005 a year over 30 (age 25); an injured player misses the preseason (judgement, docs/front_office_design.md 8)."
+}

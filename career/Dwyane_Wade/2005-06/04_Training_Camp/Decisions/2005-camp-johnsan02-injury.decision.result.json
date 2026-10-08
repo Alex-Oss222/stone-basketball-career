@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-04",
+ "decider": "engine (camp injury draw)",
+ "event_id": "2005-camp-johnsan02-injury",
+ "kind": "decision",
+ "options": {
+  "healthy": 0.965,
+  "injured": 0.035
+ },
+ "outcome": "healthy",
+ "question": "Is Anthony Johnson hurt in training camp?"
+}

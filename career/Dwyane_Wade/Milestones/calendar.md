@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2005-10-02 · Miami Heat · active
+Career date: 2005-10-04 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,27 +14,27 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2005-10-02 |
+| Career date | 2005-10-04 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2005-05-19-miami-heat-at-atlanta-hawks |
+| Last closed event | 2005-10-04-camp-opens |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-10-02 | Current checkpoint | 2005-05-19-miami-heat-at-atlanta-hawks | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2005-10-04 | Current checkpoint | 2005-10-04-camp-opens | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
-| Not yet verified | Camp reporting | Club records the date | inactive | [Training camp](index.html#training_camp) |
+| 2005-10-04 | Camp reporting | Club records the date | active | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
 ## 2005-06 season tracker
 
 | Date | Milestone | Who acts | Status | Record |
 | --- | --- | --- | --- | --- |
-| 2005-10-04 | Training camp opens | League calendar | upcoming | [Season](index.html#calendar) |
+| 2005-10-04 | Training camp opens | League calendar | today | [Season](index.html#calendar) |
 | 2005-10-10 | Preseason opens | League calendar | upcoming | [Season](index.html#calendar) |
 | 2005-10-31 | Roster cut to 15 | League calendar | upcoming | [Season](index.html#calendar) |
 | 2005-11-01 | Opening night | League calendar | upcoming | [Season](index.html#calendar) |
@@ -83,4 +83,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Current contract and cap-control record](../2005-06/00_Team/Finances/contract_schedules.json)
 - [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
+- [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated milestone working records and player replies](../milestones.json)
