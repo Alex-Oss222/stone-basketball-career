@@ -1,0 +1,23 @@
+{
+ "requests": [
+  {
+   "date": "2005-10-31",
+   "subject": "extension_terms",
+   "player": "Dwyane Wade",
+   "bbr_id": "wadedw01",
+   "requested": "propose",
+   "terms": {
+    "discount_from_market": 0.2,
+    "additional_seasons": 5,
+    "guaranteed_seasons": 4,
+    "team_option_final_season": true,
+    "raise": "maximum",
+    "no_trade_clause": false
+   },
+   "if_not_offered": "play out the rookie contract",
+   "words": "I want to remain with the Miami Heat long term and help this organization build a championship-caliber roster. When I become eligible to negotiate my extension, my preferred starting point is 20% below my established fair market value. I am willing to discuss a five-season extension with four guaranteed seasons and a team option in the fifth year. I understand that the final terms must comply with the collective bargaining agreement and be agreed upon by Miami's front office. The purpose of the discount is to provide meaningful financial flexibility for the team.",
+   "note": "Wade's terms for his rookie-scale extension: five additional seasons from 2007-08 (to 2011-12), the first year 20% below his fair market value on Miami's decision day (the front office's own market benchmark for his production within his minimum and maximum, set on 2006-10-31 from the closed 2005-06 season; the user's $12 million figure was an illustration only), the first four seasons fully guaranteed, the fifth a Miami team option, raises up to 10.5% of the first-year salary (cbafaq05 Q52), no no-trade clause. Legal as filed: one option season, the last (Q51), inside the five seasons a rookie-scale extension allows (Q52). Miami decides whether to offer by its own rule on 2006-10-31 (runtime/extensions.py) and adopts each term that is legal and at least as favourable to it as its rule; the offer then waits for the user's own accept or decline. If Miami does not offer, Wade plays out his rookie contract (2006-07 option exercised 2005-10-31).",
+   "source_ref": "career/Dwyane_Wade/2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
+  }
+ ]
+}

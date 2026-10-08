@@ -6,6 +6,7 @@ status: active
 # Training Camp
 
 ## Player decisions
+- 2005-10-31: Wade files his extension terms for Miami's 2006-10-31 extension day: five additional seasons from 2007-08, the first year 20% below his fair market value, four guaranteed seasons and a Miami team option in 2011-12; if Miami does not offer, he plays out his rookie contract. Records: `Wade_Extension_Outlook_2005-10-31.md`, `wade_requests.json` (`extension_terms`).
 
 ## Events
 - 2005-10-04: Camp opens with 20 players: 6 invitees on non-guaranteed minimums (Theo Ratliff, Bonzi Wells, Adonal Foyle, Jumaine Jones, Sam Cassell, Kwame Brown). Record: `camp_roster.json`.

@@ -1,0 +1,30 @@
+{
+ "requests": [
+  {
+   "date": "2005-10-31",
+   "subject": "draft_prospect",
+   "player": "Kyle Lowry",
+   "bbr_id": "lowryky01",
+   "college": "Villanova",
+   "position": "PG",
+   "draft_year": 2006,
+   "requested": "evaluate",
+   "words": "Separately, for the 2006 offseason, I would like the scouting department to keep Kyle Lowry of Villanova and P.J. Tucker of Texas under consideration. These are recommendations for evaluation, not demands for roster transactions.",
+   "note": "Scouting recommendation: watch his perimeter defense, playmaking, competitiveness and development as a lead guard. On the date he is a Villanova sophomore; whether he enters the 2006 draft and where he ranks are decided by the simulation's draft-night evidence. Weighed only on Miami's own 2006 picks (runtime/draft.py); never a demand.",
+   "source_ref": "career/Dwyane_Wade/2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
+  },
+  {
+   "date": "2005-10-31",
+   "subject": "draft_prospect",
+   "player": "P.J. Tucker",
+   "bbr_id": "tuckepj01",
+   "college": "Texas",
+   "position": "F",
+   "draft_year": 2006,
+   "requested": "evaluate",
+   "words": "Separately, for the 2006 offseason, I would like the scouting department to keep Kyle Lowry of Villanova and P.J. Tucker of Texas under consideration. These are recommendations for evaluation, not demands for roster transactions.",
+   "note": "Scouting recommendation: watch his physical defense, rebounding, positional versatility and offensive development. On the date he is a Texas junior; whether he enters the 2006 draft and where he ranks are decided by the simulation's draft-night evidence. Weighed only on Miami's own 2006 picks (runtime/draft.py); never a demand.",
+   "source_ref": "career/Dwyane_Wade/2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
+  }
+ ]
+}

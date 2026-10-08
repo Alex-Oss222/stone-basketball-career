@@ -73,6 +73,31 @@
         "date": null,
         "trigger": "Miami schedules its designated offseason program and the staff confirm the baselines"
       }
+    },
+    {
+      "id": "2005-10-31-wade-extension-outlook",
+      "season": "2005-06",
+      "kind": "contract",
+      "title": "Wade's contract extension outlook",
+      "recorded_on": "2005-10-31",
+      "status": "planned",
+      "owner": "player",
+      "needs_response": false,
+      "starts_on": "2005-10-31",
+      "ends_on": "2006-10-31",
+      "source_ref": "career/Dwyane_Wade/2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md",
+      "prompt": "Miami's front office decides on 2006-10-31 whether to offer; Wade answers the actual offer then.",
+      "details": {
+        "Wade's terms": "Five additional seasons from 2007-08; first year 20% below his fair market value on the decision day; first four seasons guaranteed; 2011-12 a Miami team option; raises up to 10.5% of the first-year salary; no no-trade clause",
+        "Current contract": "Rookie scale signed 2003-07-21; $2,526,600 in 2005-06; 2006-07 team option ($3,201,202) exercised 2005-10-31",
+        "Rules": "Rookie-scale extension window to 2006-10-31; up to five seasons beyond 2006-07; one option season, the last (cbafaq05 Q51, Q52)",
+        "Scouting recommendations": "Kyle Lowry (Villanova, PG) and P.J. Tucker (Texas, F) for the 2006 draft, weighed only on Miami's own picks",
+        "If no offer": "Wade plays out his rookie contract; restricted free agency in July 2007 if Miami tenders a qualifying offer"
+      },
+      "next_checkpoint": {
+        "date": "2006-10-31",
+        "trigger": "Miami's extension decision on Wade (runtime/extensions.py)"
+      }
     }
   ]
 }
