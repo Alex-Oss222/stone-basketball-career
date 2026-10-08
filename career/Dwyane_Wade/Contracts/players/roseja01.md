@@ -2,9 +2,9 @@
 
 # Contract | Jalen Rose
 
-Known through: 2005-10-18. [Open interactive contract](roseja01.html#contract) · [Contract history](roseja01.html#contract-history)
+Known through: 2005-10-19. [Open interactive contract](roseja01.html#contract) · [Contract history](roseja01.html#contract-history)
 
-Jalen Rose: under contract. Evidence cutoff: 2005-10-18.
+Jalen Rose: under contract. Evidence cutoff: 2005-10-19.
 
 ## Current contract
 

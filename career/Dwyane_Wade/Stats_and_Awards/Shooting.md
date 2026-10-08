@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2005-10-18**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2005-10-19**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -6603,7 +6603,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-27 | Orlando Magic | Played | [Game](../2004-05/05_Preseason/Game_7.md) | [Result](../2004-05/05_Preseason/Game_7.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_7.result.json) |
 
-## 2005-06 · NBA regular season · through 2005-10-18
+## 2005-06 · NBA regular season · through 2005-10-19
 
 [Open this period](player_cards.html?period=regular-2005-06-season#shooting)
 
@@ -6623,29 +6623,30 @@ No closed games in this competition at the current career checkpoint. No appeara
 
 No closed source games in this period. Zero appearances do not establish a 0.0% shooting percentage.
 
-## 2005-06 · NBA preseason · through 2005-10-18
+## 2005-06 · NBA preseason · through 2005-10-19
 
 [Open this period](player_cards.html?period=preseason-2005-06-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 3 | 0 | 3 | 18 / 41 | 43.9% | 2 / 6 | 57 | complete |
+| 4 | 0 | 4 | 33 / 62 | 53.2% | 6 / 10 | 102 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 8 | 16 | 50.0% | 5.33 | 5.33 | 16 |
-| Outside paint, under 12 ft | 0 | 1 | 0.0% | 0.00 | 0.33 | 1 |
-| Outside paint, 12 to under 18 ft | 3 | 8 | 37.5% | 2.00 | 2.67 | 8 |
-| 18 ft to the three-point line | 5 | 10 | 50.0% | 3.33 | 3.33 | 10 |
-| Three-point range | 2 | 6 | 33.3% | 2.00 | 2.00 | 6 |
+| Paint | 14 | 24 | 58.3% | 7.00 | 6.00 | 24 |
+| Outside paint, under 12 ft | 1 | 3 | 33.3% | 0.50 | 0.75 | 3 |
+| Outside paint, 12 to under 18 ft | 5 | 12 | 41.7% | 2.50 | 3.00 | 12 |
+| 18 ft to the three-point line | 7 | 13 | 53.8% | 3.50 | 3.25 | 13 |
+| Three-point range | 6 | 10 | 60.0% | 4.50 | 2.50 | 10 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2005-10-10 | San Antonio Spurs | Played | [Game](../2005-06/05_Preseason/Game_1.md) | [Result](../2005-06/05_Preseason/Game_1.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_1.result.json) |
 | 2005-10-14 | Memphis Grizzlies | Played | [Game](../2005-06/05_Preseason/Game_2.md) | [Result](../2005-06/05_Preseason/Game_2.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_2.result.json) |
 | 2005-10-15 | Charlotte Bobcats | Played | [Game](../2005-06/05_Preseason/Game_3.md) | [Result](../2005-06/05_Preseason/Game_3.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_3.result.json) |
+| 2005-10-18 | Orlando Magic | Played | [Game](../2005-06/05_Preseason/Game_4.md) | [Result](../2005-06/05_Preseason/Game_4.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_4.result.json) |
 
 ## 2005-10 · NBA preseason
 
@@ -6653,23 +6654,24 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 3 | 0 | 3 | 18 / 41 | 43.9% | 2 / 6 | 57 | complete |
+| 4 | 0 | 4 | 33 / 62 | 53.2% | 6 / 10 | 102 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 8 | 16 | 50.0% | 5.33 | 5.33 | 16 |
-| Outside paint, under 12 ft | 0 | 1 | 0.0% | 0.00 | 0.33 | 1 |
-| Outside paint, 12 to under 18 ft | 3 | 8 | 37.5% | 2.00 | 2.67 | 8 |
-| 18 ft to the three-point line | 5 | 10 | 50.0% | 3.33 | 3.33 | 10 |
-| Three-point range | 2 | 6 | 33.3% | 2.00 | 2.00 | 6 |
+| Paint | 14 | 24 | 58.3% | 7.00 | 6.00 | 24 |
+| Outside paint, under 12 ft | 1 | 3 | 33.3% | 0.50 | 0.75 | 3 |
+| Outside paint, 12 to under 18 ft | 5 | 12 | 41.7% | 2.50 | 3.00 | 12 |
+| 18 ft to the three-point line | 7 | 13 | 53.8% | 3.50 | 3.25 | 13 |
+| Three-point range | 6 | 10 | 60.0% | 4.50 | 2.50 | 10 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2005-10-10 | San Antonio Spurs | Played | [Game](../2005-06/05_Preseason/Game_1.md) | [Result](../2005-06/05_Preseason/Game_1.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_1.result.json) |
 | 2005-10-14 | Memphis Grizzlies | Played | [Game](../2005-06/05_Preseason/Game_2.md) | [Result](../2005-06/05_Preseason/Game_2.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_2.result.json) |
 | 2005-10-15 | Charlotte Bobcats | Played | [Game](../2005-06/05_Preseason/Game_3.md) | [Result](../2005-06/05_Preseason/Game_3.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_3.result.json) |
+| 2005-10-18 | Orlando Magic | Played | [Game](../2005-06/05_Preseason/Game_4.md) | [Result](../2005-06/05_Preseason/Game_4.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_4.result.json) |
 
 ## 2005-10-08 to 2005-10-14 · NBA preseason
 
@@ -6694,27 +6696,28 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2005-10-10 | San Antonio Spurs | Played | [Game](../2005-06/05_Preseason/Game_1.md) | [Result](../2005-06/05_Preseason/Game_1.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_1.result.json) |
 | 2005-10-14 | Memphis Grizzlies | Played | [Game](../2005-06/05_Preseason/Game_2.md) | [Result](../2005-06/05_Preseason/Game_2.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_2.result.json) |
 
-## 2005-10-15 to 2005-10-18 · NBA preseason
+## 2005-10-15 to 2005-10-19 · NBA preseason
 
 [Open this period](player_cards.html?period=preseason-2005-06-week-2005-10-15#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 0 | 1 | 7 / 19 | 36.8% | 0 / 1 | 23 | complete |
+| 2 | 0 | 2 | 22 / 40 | 55.0% | 4 / 5 | 68 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 3 | 6 | 50.0% | 6.00 | 6.00 | 6 |
-| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| Outside paint, 12 to under 18 ft | 2 | 7 | 28.6% | 4.00 | 7.00 | 7 |
-| 18 ft to the three-point line | 2 | 5 | 40.0% | 4.00 | 5.00 | 5 |
-| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| Paint | 9 | 14 | 64.3% | 9.00 | 7.00 | 14 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 1.00 | 1.00 | 2 |
+| Outside paint, 12 to under 18 ft | 4 | 11 | 36.4% | 4.00 | 5.50 | 11 |
+| 18 ft to the three-point line | 4 | 8 | 50.0% | 4.00 | 4.00 | 8 |
+| Three-point range | 4 | 5 | 80.0% | 6.00 | 2.50 | 5 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2005-10-15 | Charlotte Bobcats | Played | [Game](../2005-06/05_Preseason/Game_3.md) | [Result](../2005-06/05_Preseason/Game_3.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_3.result.json) |
+| 2005-10-18 | Orlando Magic | Played | [Game](../2005-06/05_Preseason/Game_4.md) | [Result](../2005-06/05_Preseason/Game_4.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_4.result.json) |
 
 ## 2005-10-10 vs San Antonio Spurs · Played · NBA preseason
 
@@ -6781,3 +6784,25 @@ Simulated engine shot locations come from the original closed game results. Part
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2005-10-15 | Charlotte Bobcats | Played | [Game](../2005-06/05_Preseason/Game_3.md) | [Result](../2005-06/05_Preseason/Game_3.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_3.result.json) |
+
+## 2005-10-18 vs Orlando Magic · Played · NBA preseason
+
+[Open this period](player_cards.html?period=preseason-2005-06-game-2723fdad268f8648#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 15 / 21 | 71.4% | 4 / 4 | 45 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 6 | 8 | 75.0% | 12.00 | 8.00 | 8 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 2.00 | 2.00 | 2 |
+| Outside paint, 12 to under 18 ft | 2 | 4 | 50.0% | 4.00 | 4.00 | 4 |
+| 18 ft to the three-point line | 2 | 3 | 66.7% | 4.00 | 3.00 | 3 |
+| Three-point range | 4 | 4 | 100.0% | 12.00 | 4.00 | 4 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-10-18 | Orlando Magic | Played | [Game](../2005-06/05_Preseason/Game_4.md) | [Result](../2005-06/05_Preseason/Game_4.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_4.result.json) |

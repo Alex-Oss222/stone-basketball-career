@@ -2,9 +2,9 @@
 
 # Contract | Dan Gadzuric
 
-Known through: 2005-10-18. [Open interactive contract](gadzuda01.html#contract) · [Contract history](gadzuda01.html#contract-history)
+Known through: 2005-10-19. [Open interactive contract](gadzuda01.html#contract) · [Contract history](gadzuda01.html#contract-history)
 
-Dan Gadzuric: under contract. Evidence cutoff: 2005-10-18.
+Dan Gadzuric: under contract. Evidence cutoff: 2005-10-19.
 
 ## Current contract
 
