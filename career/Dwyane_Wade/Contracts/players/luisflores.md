@@ -2,9 +2,9 @@
 
 # Contract | Luis Flores
 
-Known through: 2005-10-21. [Open interactive contract](luisflores.html#contract) · [Contract history](luisflores.html#contract-history)
+Known through: 2005-10-22. [Open interactive contract](luisflores.html#contract) · [Contract history](luisflores.html#contract-history)
 
-Luis Flores: under contract. Evidence cutoff: 2005-10-21.
+Luis Flores: under contract. Evidence cutoff: 2005-10-22.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Tyson Chandler
 
-Known through: 2005-10-21. [Open interactive contract](chandty01.html#contract) · [Contract history](chandty01.html#contract-history)
+Known through: 2005-10-22. [Open interactive contract](chandty01.html#contract) · [Contract history](chandty01.html#contract-history)
 
-Tyson Chandler: under contract. Evidence cutoff: 2005-10-21.
+Tyson Chandler: under contract. Evidence cutoff: 2005-10-22.
 
 ## Current contract
 

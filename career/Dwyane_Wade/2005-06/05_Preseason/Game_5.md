@@ -1,13 +1,13 @@
 ---
 type: game
-status: scheduled
+status: played
 date: 2005-10-22
 opponent: Detroit Pistons
 venue: away
 competition: preseason
 cup_stage:
 player_team: Miami Heat
-result:
+result: L 89-104
 reason:
 simulation_source: Railway engine (runtime/private_service.py)
 event_id: 2005-10-22-miami-heat-at-detroit-pistons
@@ -19,10 +19,67 @@ result_file: Game_5.result.json
 Player identity and statistics are generated here by `python scripts/update_player_reports.py`.
 Decisions remain in the owning phase/week note. A scheduled game has no statistical result.
 
+<!-- game-result:start -->
+## Result
+
+**Miami Heat 89 at Detroit Pistons 104** · Miami Heat L 89-104 vs Detroit Pistons · away (Detroit Pistons) · 2005-10-22
+
+Event `2005-10-22-miami-heat-at-detroit-pistons` · Railway engine (runtime/private_service.py) · result file [`Game_5.result.json`](Game_5.result.json) (the engine's answer as served; the note is the canonical record).
+
+Preseason result: evidence for the preseason record and the camp decisions only; it does not count in regular-season statistics.
+
+### Box score
+
+```text
+Miami Heat 89 at Detroit Pistons 104
+2005-10-22  2005-06 preseason  event 2005-10-22-miami-heat-at-detroit-pistons
+Kernel 2003.11, calibrated on 2004-05 (imported_source)
+
+Period      1    2    3    4     T
+Miami He   26   20   20   23    89
+Detroit    27   28   23   26   104
+
+Miami Heat
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Mike James                30.3   11   5-9    0-0    1-1     1   1   6   0   0   3   2
+Dwyane Wade               30.8   24   7-12   0-1   10-10    2   5   5   0   0   2   1
+Matt Harpring             30.6   10   4-16   0-1    2-2     2   4   0   0   0   2   0
+Donyell Marshall          28.8   10   4-8    2-4    0-0     2   6   1   1   1   2   1
+Brian Grant               20.9    5   2-3    1-2    0-0     1   5   1   1   0   1   5
+Mehmet Okur               21.5   11   5-8    0-0    1-2     2   4   1   0   0   1   1
+Anthony Johnson           17.6    7   2-6    0-2    3-5     0   1   3   0   0   5   0
+Caron Butler              15.3    0   0-1    0-0    0-0     0   2   0   2   0   4   1
+Sebastian Telfair         15.1    4   1-2    0-1    2-2     0   0   2   1   0   0   2
+Eddie Jones               12.4    5   2-4    1-2    0-0     0   3   0   1   0   1   1
+DeShawn Stevenson         10.8    2   1-2    0-0    0-0     0   3   0   0   0   1   2
+Mike Wilks                 5.8    0   0-1    0-0    0-0     1   0   0   0   1   0   1
+TEAM                     240.0   89  33-72   4-13  19-22   11  34  19   6   2  23  17
+  Includes 1 team turnover(s) not charged to an individual.
+
+Detroit Pistons
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Chauncey Billups          40.4   20   5-9    0-2   10-11    0   0  16   0   0   0   5
+Richard Hamilton          44.9   20   9-23   1-2    1-1     0   3   3   3   0   0   2
+Ben Wallace               45.0   13   5-9    0-0    3-4     0  10   5   3   0   2   2
+P.J. Brown (DQ)           20.6   12   6-9    0-0    0-0     0   2   0   1   2   0   6
+Bobby Jackson             31.0   12   5-14   1-4    1-2     1   4   3   2   0   1   1
+Monta Ellis               23.3   15   6-8    1-1    2-2     3   2   0   0   0   2   3
+Darko Miličić             19.5    6   3-5    0-0    0-0     0   1   0   0   0   2   1
+Josh Powell                9.0    4   1-2    0-0    2-3     0   1   0   1   0   0   0
+Eddie Basden               3.1    2   1-2    0-0    0-0     0   1   0   0   0   0   0
+Stanislav Medvedenko       3.2    0   0-0    0-0    0-0     0   0   1   0   0   0   0
+TEAM                     240.0  104  41-81   3-9   19-23    4  24  28  10   2   7  20
+```
+
+### Miami injuries
+
+No Miami injury was drawn in this game.
+<!-- game-result:end -->
+
 <!-- player-report:start -->
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2005-10-21](../../assets/stat_reports/personal_2005-06_2005-10-21.svg)
+![Player personal information and earned 2005-06 awards through 2005-10-22](../../assets/stat_reports/personal_2005-06_2005-10-22.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -47,7 +104,7 @@ Decisions remain in the owning phase/week note. A scheduled game has no statisti
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-10-21; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-10-22; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -55,7 +112,7 @@ No 2005-06 awards yet.
 
 ## Statistics
 
-As of **2005-10-21**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2005-10-22**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -73,7 +130,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-10-21, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-10-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
