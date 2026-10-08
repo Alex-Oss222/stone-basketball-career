@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2005-10-11 · Miami Heat · inactive
+Career date: 2005-10-12 · Miami Heat · inactive
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 

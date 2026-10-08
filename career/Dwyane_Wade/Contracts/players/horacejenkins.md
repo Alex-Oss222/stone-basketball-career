@@ -2,9 +2,9 @@
 
 # Contract | Horace Jenkins
 
-Known through: 2005-10-11. [Open interactive contract](horacejenkins.html#contract) · [Contract history](horacejenkins.html#contract-history)
+Known through: 2005-10-12. [Open interactive contract](horacejenkins.html#contract) · [Contract history](horacejenkins.html#contract-history)
 
-Horace Jenkins: under contract. Evidence cutoff: 2005-10-11.
+Horace Jenkins: under contract. Evidence cutoff: 2005-10-12.
 
 ## Current contract
 

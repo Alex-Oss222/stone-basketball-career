@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-10-11**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-10-12**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -22,7 +22,7 @@ Card date: **2005-10-11**. 573 registry players, one Markdown card and one inter
 | [Brian Shaw](shawbr01.md) | Free agent | 39 | sourced | [open](shawbr01.html) |
 | [Bryce Drew](drewbr01.md) | Free agent | 31 | silhouette | [open](drewbr01.html) |
 | [Carlos Arroyo](arroyca01.md) | Dallas Mavericks | 26 | sourced | [open](arroyca01.html) |
-| [Charlie Ward](wardch01.md) | Free agent | 34 | sourced | [open](wardch01.html) |
+| [Charlie Ward](wardch01.md) | Free agent | 35 | sourced | [open](wardch01.html) |
 | [Chauncey Billups](billuch01.md) | Detroit Pistons | 29 | sourced | [open](billuch01.html) |
 | [Chris Whitney](whitnch01.md) | Free agent | 34 | silhouette | [open](whitnch01.html) |
 | [Chucky Atkins](atkinch01.md) | Los Angeles Lakers | 31 | sourced | [open](atkinch01.html) |
@@ -176,7 +176,7 @@ Card date: **2005-10-11**. 573 registry players, one Markdown card and one inter
 | [Manu Ginobili](ginobma01.md) | San Antonio Spurs | 28 | sourced | [open](ginobma01.html) |
 | [Marquis Daniels](daniema01.md) | Dallas Mavericks | 24 | silhouette | [open](daniema01.html) |
 | [Matt Carroll](carroma01.md) | Miami Heat | 25 | silhouette | [open](carroma01.html) |
-| [Maurice Carter](cartema01.md) | Free agent | 28 | silhouette | [open](cartema01.html) |
+| [Maurice Carter](cartema01.md) | Free agent | 29 | silhouette | [open](cartema01.html) |
 | [Maurice Evans](evansma01.md) | Golden State Warriors | 26 | silhouette | [open](evansma01.html) |
 | [Michael Redd](reddmi01.md) | Milwaukee Bucks | 26 | sourced | [open](reddmi01.html) |
 | [Mitchell Butler](butlemi02.md) | Free agent | 34 | silhouette | [open](butlemi02.html) |
@@ -316,7 +316,7 @@ Card date: **2005-10-11**. 573 registry players, one Markdown card and one inter
 | [Luol Deng](luoldeng.md) | Boston Celtics | 20 | silhouette | [open](luoldeng.html) |
 | [Marcus Fizer](fizerma01.md) | Free agent | 27 | silhouette | [open](fizerma01.html) |
 | [Mark Jones](markjones.md) | Free agent | 30 | silhouette | [open](markjones.html) |
-| [Marko Jaric](jaricma01.md) | Chicago Bulls | 26 | sourced | [open](jaricma01.html) |
+| [Marko Jaric](jaricma01.md) | Chicago Bulls | 27 | sourced | [open](jaricma01.html) |
 | [Matt Barnes](barnema02.md) | Memphis Grizzlies | 25 | silhouette | [open](barnema02.html) |
 | [Matt Freije](mattfreije.md) | Free agent | 24 | silhouette | [open](mattfreije.html) |
 | [Matt Harpring](harprma01.md) | Miami Heat | 29 | sourced | [open](harprma01.html) |
