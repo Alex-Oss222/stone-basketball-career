@@ -9,6 +9,23 @@
    "term": "multi_year",
    "words": "I want the Miami Heat front office to make bringing Udonis Haslem back a priority this offseason. I want us to pursue a multi-year agreement, not another temporary one-year arrangement. I believe his defensive toughness, rebounding, screening, physical play and familiarity with me would help us compete. I understand that Toronto controls his restricted free agency if it makes a qualifying offer. I still want our organization to explore a serious offer. The final contract has to work financially, but my preference is clear: bring Haslem back to Miami for several seasons.",
    "note": "Wade asks the front office to pursue Udonis Haslem on a multi-year contract (preferably three or four seasons if the terms work). On the date Haslem is a Toronto Raptors player (traded by Miami on 2004-12-20, 00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) whose one-season 2004-05 contract ($620,046) ends June 30, 2005; with two seasons of NBA service (library/2005/league/nba_2005_service_years.json) he is a restricted free agent only if Toronto tenders a qualifying offer, and Toronto may then match an offer sheet. Wade does not set the salary or guarantee acceptance: Miami's front office values him, chooses the mechanism (offer sheet or direct signing) and may decline or abandon the pursuit. The term preference makes a minimum offer run two seasons (the minimum exception's limit); a larger offer runs his wanted years (runtime/free_agency_2004.py requested_terms). Source: 03_Offseason/Wade_Summer_Plan_2005.md, section 1."
+  },
+  {
+   "date": "2005-06-16",
+   "subject": "free_agent_target",
+   "player": "Ray Allen",
+   "bbr_id": "allenra02",
+   "requested": "pursue",
+   "term": "multi_year",
+   "words": "One more thing: if the contract situation is the same, try to sign Ray Allen to a multi-year plan.",
+   "consultation": {
+    "kind": "free_agent",
+    "standing_answer": "approve",
+    "authorized": "2005-06-16",
+    "words": "approve",
+    "scope": "a franchise consultation on Miami signing Ray Allen as a free agent this summer; any other star is asked as usual"
+   },
+   "note": "Wade asks the front office to pursue Ray Allen on a multi-year contract. On the date Allen is a Seattle SuperSonics player whose contract ($14,625,000 in 2004-05, the league ledger career/Dwyane_Wade/2004-05/League/contracts.json) ends June 30, 2005: the same situation as Haslem's, an expiring contract, but unrestricted, with nine seasons of service (library/2005/league/nba_2005_service_years.json). Seattle holds his Bird rights. Simulated 2004-05 (closed results): 78 games, 39.5 minutes, 22.9 points, 44.3% from three on 6.3 attempts, 83.5% at the line; born 1975-07-20 (29). Miami's 2005-06 commitments are about $32.5 million against the $49.5 million cap, so a bid needs Miami to clear its cap holds. He is a star under the franchise consultation rule, so Miami must ask Wade before signing him; the user approved in advance on the same day, and that answer is recorded on the consultation when Miami asks. Wade sets no terms: Miami's general manager values him, decides whether and what to offer, and other clubs bid. Source: 03_Offseason/Wade_Summer_Plan_2005.md."
   }
  ]
 }

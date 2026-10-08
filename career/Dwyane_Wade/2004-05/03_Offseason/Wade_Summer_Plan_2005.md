@@ -126,6 +126,10 @@ Recorded in `10_Free_Agency/wade_requests.json` (subject `free_agent_target`, `p
 
 On the date Haslem is a Toronto player on a one-season $620,046 contract ending June 30, 2005, with two seasons of service: a restricted free agent if Toronto tenders a qualifying offer (Toronto may then match an offer sheet), otherwise unrestricted. Miami's general manager values him, chooses the mechanism and the terms, and may decline or abandon the pursuit; Wade sets no salary and cannot guarantee acceptance. Until a contract is executed Haslem stays off Miami's signed roster. The outcome (whether Miami pursues him, any offer actually made, his answer, Toronto's tender and match decisions, the transaction) is reported from the market's own records.
 
+## The Ray Allen request
+
+Added the same day: "One more thing: if the contract situation is the same, try to sign Ray Allen to a multi-year plan." Recorded in `10_Free_Agency/wade_requests.json` (subject `free_agent_target`, `pursue`, term `multi_year`). Allen's Seattle contract ($14,625,000 in 2004-05) ends June 30, 2005, the same expiring situation as Haslem's, but he is unrestricted after nine seasons and Seattle holds his Bird rights. Simulated 2004-05: 78 games, 39.5 minutes, 22.9 points, 44.3% from three on 6.3 attempts. Miami's 2005-06 commitments are about $32.5 million against the $49.5 million cap, so a bid needs Miami to clear its cap holds, which could also limit what is left for Haslem. Allen is a star under the franchise consultation rule: Miami must ask Wade before signing him, and the user approved in advance ("approve"); the answer is recorded on the consultation when Miami asks. Wade sets no terms and Miami may decide not to bid.
+
 ## Other decisions in the framework
 
 - Chris Bosh keeps his own development settings (`career/Chris_Bosh/Development_Profile_2004-10-01.md`); nothing in this plan is copied to him.
