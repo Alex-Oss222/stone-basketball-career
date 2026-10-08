@@ -2,9 +2,9 @@
 
 # Contract | Frank Williams
 
-Known through: 2005-07-17. [Open interactive contract](willifr02.html#contract) · [Contract history](willifr02.html#contract-history)
+Known through: 2005-07-24. [Open interactive contract](willifr02.html#contract) · [Contract history](willifr02.html#contract-history)
 
-Frank Williams: under rookie contract. Evidence cutoff: 2005-07-17.
+Frank Williams: under rookie contract. Evidence cutoff: 2005-07-24.
 
 ## Current contract
 
