@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "\u0160ar\u016bnas Jasikevi\u010dius (simulated player, engine draw)",
+ "event_id": "2005-07-01-ar-nas-jasikevi-ius-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "winning",
+ "question": "What does \u0160ar\u016bnas Jasikevi\u010dius weigh most in choosing his 2004 contract?"
+}

@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Richard Jefferson (simulated player, engine draw)",
+ "event_id": "2005-07-01-richard-jefferson-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.2,
+  "loyalty": 0.2,
+  "money": 0.3,
+  "winning": 0.3
+ },
+ "outcome": "money",
+ "question": "What does Richard Jefferson weigh most in choosing his 2004 contract?"
+}

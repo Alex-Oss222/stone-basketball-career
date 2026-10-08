@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Walter McCarty (simulated player, engine draw)",
+ "event_id": "2005-07-01-walter-mccarty-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.05,
+  "loyalty": 0.25,
+  "money": 0.3,
+  "winning": 0.4
+ },
+ "outcome": "money",
+ "question": "What does Walter McCarty weigh most in choosing his 2004 contract?"
+}

@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Daniel Ewing (simulated player, engine draw)",
+ "event_id": "2005-07-01-daniel-ewing-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "money",
+ "question": "What does Daniel Ewing weigh most in choosing his 2004 contract?"
+}

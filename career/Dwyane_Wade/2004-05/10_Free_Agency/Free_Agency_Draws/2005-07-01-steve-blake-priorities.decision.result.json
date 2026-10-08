@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Steve Blake (simulated player, engine draw)",
+ "event_id": "2005-07-01-steve-blake-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.2,
+  "loyalty": 0.2,
+  "money": 0.3,
+  "winning": 0.3
+ },
+ "outcome": "winning",
+ "question": "What does Steve Blake weigh most in choosing his 2004 contract?"
+}

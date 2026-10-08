@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Jason Kapono (simulated player, engine draw)",
+ "event_id": "2005-07-01-jason-kapono-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.2,
+  "loyalty": 0.2,
+  "money": 0.3,
+  "winning": 0.3
+ },
+ "outcome": "loyalty",
+ "question": "What does Jason Kapono weigh most in choosing his 2004 contract?"
+}

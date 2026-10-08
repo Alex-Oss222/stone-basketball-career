@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Maciej Lampe (simulated player, engine draw)",
+ "event_id": "2005-07-01-maciej-lampe-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.2,
+  "loyalty": 0.2,
+  "money": 0.3,
+  "winning": 0.3
+ },
+ "outcome": "money",
+ "question": "What does Maciej Lampe weigh most in choosing his 2004 contract?"
+}

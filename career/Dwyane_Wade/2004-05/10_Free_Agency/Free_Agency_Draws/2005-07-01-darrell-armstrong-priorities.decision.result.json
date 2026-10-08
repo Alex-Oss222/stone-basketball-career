@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Darrell Armstrong (simulated player, engine draw)",
+ "event_id": "2005-07-01-darrell-armstrong-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.05,
+  "loyalty": 0.25,
+  "money": 0.3,
+  "winning": 0.4
+ },
+ "outcome": "winning",
+ "question": "What does Darrell Armstrong weigh most in choosing his 2004 contract?"
+}

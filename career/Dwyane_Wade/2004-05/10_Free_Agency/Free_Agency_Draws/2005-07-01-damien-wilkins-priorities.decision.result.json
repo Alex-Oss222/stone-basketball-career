@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Damien Wilkins (simulated player, engine draw)",
+ "event_id": "2005-07-01-damien-wilkins-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.2,
+  "loyalty": 0.2,
+  "money": 0.3,
+  "winning": 0.3
+ },
+ "outcome": "fame",
+ "question": "What does Damien Wilkins weigh most in choosing his 2004 contract?"
+}

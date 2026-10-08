@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Jos\u00e9 Calder\u00f3n (simulated player, engine draw)",
+ "event_id": "2005-07-01-jos-calder-n-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "loyalty",
+ "question": "What does Jos\u00e9 Calder\u00f3n weigh most in choosing his 2004 contract?"
+}

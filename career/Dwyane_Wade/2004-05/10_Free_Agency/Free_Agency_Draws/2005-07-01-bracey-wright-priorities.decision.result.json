@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Bracey Wright (simulated player, engine draw)",
+ "event_id": "2005-07-01-bracey-wright-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "winning",
+ "question": "What does Bracey Wright weigh most in choosing his 2004 contract?"
+}

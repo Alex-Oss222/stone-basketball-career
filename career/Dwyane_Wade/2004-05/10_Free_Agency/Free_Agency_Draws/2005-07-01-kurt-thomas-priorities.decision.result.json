@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Kurt Thomas (simulated player, engine draw)",
+ "event_id": "2005-07-01-kurt-thomas-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.05,
+  "loyalty": 0.25,
+  "money": 0.3,
+  "winning": 0.4
+ },
+ "outcome": "loyalty",
+ "question": "What does Kurt Thomas weigh most in choosing his 2004 contract?"
+}

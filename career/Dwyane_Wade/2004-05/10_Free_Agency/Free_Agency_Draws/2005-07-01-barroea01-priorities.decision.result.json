@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "barroea01 (simulated player, engine draw)",
+ "event_id": "2005-07-01-barroea01-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "fame",
+ "question": "What does barroea01 weigh most in choosing his 2004 contract?"
+}

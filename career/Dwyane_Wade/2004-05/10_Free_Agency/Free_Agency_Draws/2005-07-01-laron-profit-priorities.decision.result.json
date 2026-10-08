@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Laron Profit (simulated player, engine draw)",
+ "event_id": "2005-07-01-laron-profit-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "fame",
+ "question": "What does Laron Profit weigh most in choosing his 2004 contract?"
+}

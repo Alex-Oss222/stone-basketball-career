@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Boniface N'Dong (simulated player, engine draw)",
+ "event_id": "2005-07-01-boniface-ndong-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "fame",
+ "question": "What does Boniface N'Dong weigh most in choosing his 2004 contract?"
+}

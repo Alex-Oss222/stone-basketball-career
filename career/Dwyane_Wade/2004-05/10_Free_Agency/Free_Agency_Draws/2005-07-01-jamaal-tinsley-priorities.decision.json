@@ -1,0 +1,13 @@
+{
+ "event_id": "2005-07-01-jamaal-tinsley-priorities",
+ "date": "2005-07-01",
+ "question": "What does Jamaal Tinsley weigh most in choosing his 2004 contract?",
+ "decider": "Jamaal Tinsley (simulated player, engine draw)",
+ "options": {
+  "money": 0.35,
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "winning": 0.25
+ },
+ "basis": "Trait odds by age (27): money, fame, loyalty, winning (runtime/market.py TRAIT_ODDS; docs/front_office_design.md 4.3). Drawn once for the 2004 market."
+}

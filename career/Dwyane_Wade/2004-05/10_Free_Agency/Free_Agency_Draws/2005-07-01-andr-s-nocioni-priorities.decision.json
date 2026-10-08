@@ -1,0 +1,13 @@
+{
+ "event_id": "2005-07-01-andr-s-nocioni-priorities",
+ "date": "2005-07-01",
+ "question": "What does Andrés Nocioni weigh most in choosing his 2004 contract?",
+ "decider": "Andrés Nocioni (simulated player, engine draw)",
+ "options": {
+  "money": 0.3,
+  "fame": 0.2,
+  "loyalty": 0.2,
+  "winning": 0.3
+ },
+ "basis": "Trait odds by age (25): money, fame, loyalty, winning (runtime/market.py TRAIT_ODDS; docs/front_office_design.md 4.3). Drawn once for the 2004 market."
+}

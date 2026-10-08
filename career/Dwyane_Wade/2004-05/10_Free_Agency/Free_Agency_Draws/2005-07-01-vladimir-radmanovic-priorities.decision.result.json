@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-01",
+ "decider": "Vladimir Radmanovic (simulated player, engine draw)",
+ "event_id": "2005-07-01-vladimir-radmanovic-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.2,
+  "loyalty": 0.2,
+  "money": 0.3,
+  "winning": 0.3
+ },
+ "outcome": "winning",
+ "question": "What does Vladimir Radmanovic weigh most in choosing his 2004 contract?"
+}
