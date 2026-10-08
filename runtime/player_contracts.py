@@ -159,8 +159,9 @@ def _normal_contract(player_id, entry, cutoff, caps):
     for season, kind in entry.get("amount_kind", {}).items():
         if kind not in ("team_option", "player_option", "early_termination_option") or any(o.get("season") == season for o in options):
             continue
+        # a rookie-scale fourth-year option names its deadline; so does an extension's option (runtime/extensions.py)
         option = {"season": season, "type": kind, "amount": _number(schedule.get(season)),
-                  "deadline": entry.get("fourth_year_option_deadline") if kind == "team_option" else None,
+                  "deadline": (entry.get("option_deadline") or entry.get("fourth_year_option_deadline")) if kind == "team_option" else None,
                   "outcome": None, "outcome_date": None}
         if entry.get("status") in (f"{kind}_exercised", f"{kind}_declined"):
             option.update(outcome=entry["status"].split("_")[-1],

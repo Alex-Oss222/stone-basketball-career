@@ -10,7 +10,7 @@ These are current career views, with activation gates and actual evidence. An in
 | --- | --- | --- |
 | [Your career calendar](calendar.md) | active | The authoritative current date and recorded event determine what is open. |
 | [Contract checkpoint](contract_checkpoint.md) | active | A dated contract, option, expiry or draft-rights change. |
-| [Contract negotiation](contract_negotiation.md) | inactive | A dated, actual offer opens the response desk; unsigned draft rights alone do not create one. |
+| [Contract negotiation](contract_negotiation.md) | planned | A dated, actual offer opens the response desk; unsigned draft rights alone do not create one. |
 | [Free agency](free_agency.md) | needs evidence | A verified player market window or actual dated Miami roster-market event. |
 | [Offseason training](offseason_training.md) | active | A dated player priority and staff-supported development block. |
 | [Trade update](trade_update.md) | inactive | An actual dated proposal, consultation or executed transaction. |

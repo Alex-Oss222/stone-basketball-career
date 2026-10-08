@@ -548,6 +548,20 @@
    "source": "cbafaq05",
    "source_ref": "Q52; Q11 for the 105% free-agent maximum",
    "note": "Numeric form of the sourced Q52 entries above, read by runtime/extensions.py. Q52: contracts under four seasons may not be extended; four- or five-season contracts (and six-season contracts signed on or after July 1, 2005) three years after signing, six- or seven-season contracts signed before July 1, 2005 four years after, an extended contract three years after the extension; a rookie-scale contract to October 31 before the last option season (option picked up), up to five seasons beyond it, the first year up to the player's maximum, raises up to 10.5% of the first extension year; any other extension to June 30, five seasons including those remaining (the current season counts as one), the first year up to 110.5% of the last salary and not above the player's free-agent maximum, raises up to 10.5% of the last salary. Q11: a free agent's first-year maximum is never less than 105% of his last salary. The October 31 weekend rule (next business day) is not modelled: the career decides on October 31, as runtime/options.py does."
+  },
+  "option_clause": {
+   "value": {
+    "max_option_seasons": 1,
+    "option_season": "last",
+    "kinds": [
+     "team_option",
+     "player_option"
+    ]
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q51",
+   "note": "Q51: \"An option clause allows a contract to be extended for one additional season after the date it is scheduled to end ... Team Options give the team the right to invoke the option. There can be only one option year (except in the case of rookie scale contracts). Player Options give the player the right to invoke the option. There can be only one option year.\" A contract may not hold two options in the same season. Read by runtime/extensions.py when Wade's own extension terms ask for an option season: one, the last season of the extension, inside the five additional seasons a rookie-scale extension allows (Q52)."
   }
  },
  "luxury_tax": {

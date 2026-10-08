@@ -3,7 +3,9 @@ termination options are decided on their real deadlines, never silently treated 
 
 Which seasons are options: the league contract ledger's `options` ({season: kind}) for each contract, from the
 contract inventory's amount kinds (team_option, player_option, early_termination_option) and the rookie scale's
-team option seasons. Miami's options are on its own cap sheet (`amount_kind`).
+team option seasons. Miami's options are on its own cap sheet (`amount_kind`). A team option inside a contract extension
+(Wade's own terms, `runtime/extensions.py`) is the same entry in both places and is never a rookie-scale option: it is
+decided on the veteran deadline, even on a row that extends a rookie-scale contract.
 
 Deadlines (1999 agreement, the calendar files): a first-round pick's rookie-scale team option is decided by October 31
 of the season before the option season; a veteran's team option, player option or early termination option at the end
@@ -64,6 +66,7 @@ def read_record(season, root=ROOT):
 
 def open_options(season, root=ROOT):
     """[(holder, bbr_id, player, option season, kind, salary, rookie)] still open in the season's contracts."""
+    from .extensions import extension_season
     from .league_contracts import read as read_ledger
     root = Path(root)
     out = []
@@ -72,7 +75,9 @@ def open_options(season, root=ROOT):
             continue
         for s, kind in (c.get("options") or {}).items():
             if kind in OPTION_KINDS and s > season and c["schedule"].get(s):
-                out.append((c["club"], b, c["player"], s, kind, int(c["schedule"][s]), bool(c.get("rookie_scale"))))
+                # an option inside an extension (runtime/extensions.py) is never a rookie-scale option
+                rookie = bool(c.get("rookie_scale")) and not extension_season(c, s)
+                out.append((c["club"], b, c["player"], s, kind, int(c["schedule"][s]), rookie))
     sheet = _read(root / PLAYER / season / "00_Team/Finances/contract_schedules.json") or {"players": []}
     roster = {p["name"]: p.get("bbr_id") for p in (_read(root / PLAYER / season / "00_Team/Team/Roster/roster.json") or {"players": []})["players"]}
     for p in sheet["players"]:
@@ -81,6 +86,9 @@ def open_options(season, root=ROOT):
         for s, kind in (p.get("amount_kind") or {}).items():
             if kind in OPTION_KINDS and s > season and p["schedule"].get(s):
                 rookie = p.get("route") == "rookie_scale" or "rookie" in (p.get("status") or "") or "rookie-scale" in (p.get("notes") or "")
+                # an option inside an extension (Wade's own terms, runtime/extensions.py) is decided on the veteran
+                # deadline: the extended rookie-scale row keeps its route, the extension's seasons are a new agreement
+                rookie = rookie and not extension_season(p, s)
                 # Wade's sheet and register carry no bbr_id (alternate history); his records' key is wadedw01.
                 bbr = p.get("bbr_id") or roster.get(p["player"]) or ("wadedw01" if p["player"] == "Dwyane Wade" else None)
                 out.append(("Miami Heat", bbr, p["player"], s, kind, int(p["schedule"][s]), rookie))
@@ -223,6 +231,10 @@ def apply(record, season, root, day):
                 if p["player"] == d["player"]:
                     _apply_schedule(p, s, keep, d)
         c = by_bbr.get(d["bbr_id"])
+        if c is None and d["club"] == "Miami Heat" and d["bbr_id"] == "wadedw01":
+            # Wade's ledger key is his career key (alternate history); only an option inside his extension reaches it
+            from .extensions import WADE_KEY, extension_season
+            c = by_bbr.get(WADE_KEY) if extension_season(by_bbr.get(WADE_KEY), s) else None
         if c:
             _apply_schedule(c, s, keep, d, ledger=True)
         d["applied"] = day

@@ -145,15 +145,14 @@ def augment_live_screens(context, screens):
             tokens.append([r["id"], r["player"], r.get("answer") if c.known(r.get("answered")) else "Awaiting your answer", version(path)])
     if tokens:
         screens["trade_update"]["sections"].append({"title": "Consultation reply versions", "columns": ["Event ID", "Player", "Status", "Version"], "rows": tokens})
-    from .extensions import offer_folder, page_name
+    from .extensions import offer_folder, page_name, terms_line
     offers = []
     for path in sorted(offer_folder(c.root, c.season.name).glob("*.json")):
         r = read(path)
         if c.known(r.get("date")):
-            o = r["offer"]
             status = r["answer"] if r.get("answer") and c.known(r.get("answered")) else "Awaiting your answer"
-            offers.append([c.link(path.parent / page_name(r), r["id"]), r["date"], r["club"],
-                           f"{o['years']} seasons from {o['first_season']}, ${o['total']:,}", status, version(path)])
+            offers.append([c.link(path.parent / page_name(r), r["id"]), r["date"], r["club"], terms_line(r["offer"]),
+                           status, version(path)])
     if offers:
         screens["contract_negotiation"]["sections"].append({"title": "Contract extension offers",
             "columns": ["Offer", "Date", "Club", "Terms", "Status", "Version"], "rows": offers})

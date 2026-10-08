@@ -47,6 +47,8 @@ Snapshot: 2005-10-31. Draft rights and unassigned arrivals are not assigned minu
 
 | Date | Event / decision |
 | --- | --- |
+| 2005-10-31 | Wade files his extension terms for Miami's 2006-10-31 extension day: five additional seasons from 2007-08, the first year 20% below his fair market value, four guaranteed seasons and a Miami team option in 2011-12; if Miami does not offer, he plays out his rookie contract. Records: `Wade_Extension_Outlook_2005-10-31.md`, `wade_requests.json` (`extension_terms`). |
+| 2005-10-31 | Wade asks the front office to go after Trevor Ariza (Los Angeles Lakers): in-season trade (tradable from 2005-12-30; Miami must send out at least his $816,748 because its payroll is above the owner's tax-line ceiling) and, failing that, the 2006 summer market. Records: `wade_requests.json` (`trade_target`), `../10_Free_Agency/wade_requests.json` (`free_agent_target`). |
 | 2005-10-04 | Camp opens with 20 players: 6 invitees on non-guaranteed minimums (Theo Ratliff, Bonzi Wells, Adonal Foyle, Jumaine Jones, Sam Cassell, Kwame Brown). Record: `camp_roster.json`. |
 | 2005-10-04 | Camp injury draws: nobody is hurt. |
 | 2005-10-26 | Staff decision from 7 preseason games: starters PG Mike James, SG Dwyane Wade, SF Caron Butler, PF Mehmet Okur, C Brian Grant; battles drawn: {'SF': 'Caron Butler'}. Wade's perimeter-defense grade 45 (No assignment-level defensive evidence; preseason steals and blocks do not change this grade.). Records: `../00_Team/Team/Depth_Chart/depth_chart.json`, `rotation.json`, `../00_Team/Team/defensive_grades.json`. |
@@ -77,10 +79,14 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
 - [Owning event](../2005-06/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2005-06/00_Team/Finances/contract_schedules.json)
+- [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
+- [Recorded request](../2005-06/09_Draft/wade_requests.json)
+- [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
 - [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/rotation.json)
+- [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
 - [Closed game](../2005-06/05_Preseason/Game_3.md)

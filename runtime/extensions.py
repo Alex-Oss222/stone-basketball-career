@@ -66,6 +66,25 @@ player decision: a record and a milestone page under `01_Free_Agency/Wade_Extens
 `wade_extension:<id>` that stops the clock, and his answer through `scripts/player_milestone.py --reply` (kind
 `extension`, accept or decline). The next run applies it.
 
+Wade's own terms (the user's request, October 2026): his `extension_terms` request (`terms_request`: the latest in any
+season folder's `*/wade_requests.json` dated on or before the day; one negotiation's terms, spent once a Wade decision day
+has passed since its date) is read for his decision only and shapes Miami's offer to him: the worth call, its close band
+and draw, still use his full worth, and no other player's decision reads his terms. The payroll test and the club's
+running total of the day's earlier offers (`spent`) count what Miami would pay, the offered first year: his discount can
+let his own offer fit under Miami's payroll ceiling where the rule's first year would not, and leaves that much more room
+for a Miami offer decided after his the same day (that decision reads the room, never his terms). When Miami offers, it
+adopts each requested term that is legal and at least as favourable to Miami as its rule's term (`shape`): the first year
+his price (the market benchmark the call already computes, inside his minimum and maximum) less the requested discount,
+held to his minimum; the seasons he names within the agreement's limit (the rule's length is the years he wants); raises
+at or under the limit; a team option on the final season (one option season, the last: cbafaq05 Q51, the rules file's
+`extensions.option_clause`); every other season fully guaranteed; no no-trade clause. A term less favourable to Miami (a
+higher salary, a player option, a no-trade clause) or outside the agreement is not adopted: the rule's term stands and
+the reason is recorded, never drawn (his own answer, a decline, is his remedy). Validation holds the record to his terms
+on file for the day and the offer to `shape` recomputed from the recorded evidence. A signed team option is an option
+season like every other: `options` on the ledger entry, `amount_kind` "team_option" on Miami's sheet, decided by
+`runtime/options.py` on the veteran deadline (June 29 before the option season); the season may leave a schedule only
+by its applied decline.
+
 Records: `<season>/League/extension_decisions.json` (days and decisions). A signed extension is written into the league
 ledger (`extension`, the schedule gains its seasons) and, for Miami, its cap sheet, the contract archive and the phase
 note; a later rebuild re-applies it (`reapply`) and the rollover carries it (`league_contracts.carried`).
@@ -77,6 +96,7 @@ from datetime import date, timedelta
 from fractions import Fraction
 import json
 from pathlib import Path
+import posixpath
 
 ROOT = Path(__file__).resolve().parents[1]
 PLAYER = Path("career/Dwyane_Wade")
@@ -99,6 +119,11 @@ INVENTORY = Path("library/2003/league/nba_2003_contracts.json")
 SIGNINGS_2003 = Path("library/2003/league/nba_2003_offseason_transactions.json")
 SHEET = "00_Team/Finances/contract_schedules.json"
 REGISTER = "00_Team/Team/Roster/roster.json"
+REQUEST_SUBJECT = "extension_terms"    # Wade's own terms in a season folder's */wade_requests.json
+REQUEST_TERMS = ("discount_from_market", "additional_seasons", "guaranteed_seasons", "team_option_final_season",
+                 "player_option_final_season", "raise", "no_trade_clause")
+OFFER_FIELDS = ("first_season", "years", "first_salary", "raise", "schedule", "total", "route", "limits")
+SHAPED_FIELDS = ("options", "guaranteed_seasons", "team_option_season", "terms_basis")   # an offer Wade's terms shaped
 
 
 class ExtensionError(ValueError):
@@ -163,8 +188,11 @@ def rules(season, root=ROOT):
     from .agreement import CBA_2005, terms
     if terms(season, root)["agreement"] == "1999":
         return None
-    t = _read(Path(root) / CBA_2005)["extensions"]["terms"]["value"]
+    source = _read(Path(root) / CBA_2005)["extensions"]
+    t = source["terms"]["value"]
     long = t["long_contract"]
+    # Q51 (an extension's option season, Wade's own terms): one option season, the last; None when not recorded
+    clause = (source.get("option_clause") or {}).get("value") or {}
     return {"rookie_new_seasons": t["rookie_scale_additional_seasons"],
             "rookie_raise_pct": t["rookie_scale_raise_pct_of_first_year"],
             "veteran_total_seasons": t["veteran_total_seasons_including_remaining"],
@@ -174,7 +202,8 @@ def rules(season, root=ROOT):
             "min_length": t["minimum_contract_seasons"], "years_after": t["years_after_signing"],
             "long_min_length": long["min_seasons"], "long_signed_before": long["signed_before"],
             "long_years_after": long["years_after_signing"], "after_extension": t["years_after_extension"],
-            "rookie_deadline": t["rookie_scale_deadline_month_day"], "veteran_deadline": t["veteran_deadline_month_day"]}
+            "rookie_deadline": t["rookie_scale_deadline_month_day"], "veteran_deadline": t["veteran_deadline_month_day"],
+            "max_option_seasons": clause.get("max_option_seasons"), "option_season": clause.get("option_season")}
 
 
 def _pct(amount, pct):
@@ -237,7 +266,7 @@ def without_extension(row):
     drop = {s for ext in extensions_of(row) for s in ext["schedule"]}
     if not drop:
         return out
-    for field in ("schedule", "amount_kind", "guaranteed", "cap_amount", "amount_precision", "conditions"):
+    for field in ("schedule", "amount_kind", "guaranteed", "cap_amount", "amount_precision", "conditions", "options"):
         if isinstance(out.get(field), dict):
             out[field] = {s: v for s, v in out[field].items() if s not in drop}
     for field in ("extension", "earlier_extensions", "extended_on"):
@@ -279,7 +308,8 @@ def with_recorded(row, root=ROOT, key=None, known=None):
         return row
     start = min(sched)
     subs = [s for s in (signed_extensions(root) if known is None else known).get(key, [])
-            if any(k in sched for k in s["schedule"]) and all(sched.get(k) == v for k, v in s["schedule"].items() if k >= start)]
+            if any(k in sched for k in s["schedule"])
+            and in_schedule(sched, s, start, option_declines(root, {key, _sub_bbr(s)}) if s.get("options") else ())]
     if not subs:
         return row
     out = deepcopy(row)
@@ -287,6 +317,49 @@ def with_recorded(row, root=ROOT, key=None, known=None):
         out["earlier_extensions"] = subs[:-1]
     out["extension"], out["extended_on"] = subs[-1], subs[-1]["signed_date"]
     return out
+
+
+def in_schedule(schedule, ext, start=None, declined=()):
+    """An extension's seasons (from `start` on) are in a contract schedule at its amounts. Its option season (Wade's own
+    terms) may be missing only once its decline is applied (`declined`: the seasons `option_declines` finds for him; a
+    declined option is cut from the schedule with every later season, `options._apply_schedule`): a season missing without
+    one is a broken record, never a signed extension intact."""
+    opts = ext.get("options") or {}
+    return all(schedule.get(k) == v or (k in opts and k not in schedule and k in declined)
+               for k, v in ext["schedule"].items() if start is None or k >= start)
+
+
+OPTION_OUTCOMES = {"exercise": "exercised", "stay": "exercised", "decline": "declined", "leave": "declined"}
+
+
+def option_decided(root, keys, cutoff=None):
+    """{(option season, kind): decision} for every option of a player (any of `keys`: his bbr_id or ledger key) that
+    `runtime/options.py` decided and applied (`League/option_decisions.json` of every season), applied by `cutoff` when
+    one is given. Matched by player, not club: the contract travels with him and the club holding him decides
+    (`options._dated_holder`)."""
+    keys = {k for k in keys if k}
+    out = {}
+    for path in sorted((Path(root) / PLAYER).glob("*/League/option_decisions.json")):
+        for x in (_read(path) or {}).get("decisions", []):
+            if x.get("bbr_id") in keys and x.get("decision") and x.get("applied") and (not cutoff or x["applied"] <= cutoff):
+                out[(x["option_season"], x["kind"])] = x
+    return out
+
+
+def option_declines(root, keys):
+    """{option season} whose decline (or opt-out) `runtime/options.py` applied for the player (`option_decided`)."""
+    return {s for (s, _), x in option_decided(root, keys).items() if OPTION_OUTCOMES.get(x["decision"]) == "declined"}
+
+
+def _sub_bbr(sub):
+    """The player's bbr_id from a sub-record's id (`<day>-extension-<bbr_id>`, held by validation)."""
+    return sub.get("id", "").rpartition("-extension-")[2] or None
+
+
+def extension_season(entry, season):
+    """True when `season` belongs to one of the contract's extensions: never a rookie-scale season, so an option there
+    (Wade's own terms) is decided on the veteran deadline, not October 31 (`runtime/options.py`)."""
+    return any(season in e.get("schedule", {}) for e in extensions_of(entry or {}))
 
 
 def _ends_with(schedule, season):
@@ -843,6 +916,169 @@ def terms_for(kind, price, last, maximum, minimum, age, first_season, rule):
     return n, first, step, schedule
 
 
+# -- Wade's own terms ------------------------------------------------------------------------------------------------------
+def terms_request(day, root=ROOT):
+    """Wade's own extension terms on a decision day: the latest `extension_terms` row of his in any season folder's
+    `*/wade_requests.json` under the career dated on or before `day` (a same-day tie goes to the later file and row), as
+    {"path", "index", "date", "subject", "requested", "terms", "if_not_offered", "words", "source_ref"}, or None. A
+    request is one negotiation's terms: once a Wade extension decision day on or after its date has passed (before `day`),
+    it is spent and None is returned until he files new terms, so a filing for his rookie-scale extension never sets a
+    later veteran extension. Read-only; only Wade's own decision reads it (`_decide_day`)."""
+    root = Path(root)
+    found = None
+    for path in sorted((root / PLAYER).glob("????-??/*/wade_requests.json")):
+        for i, row in enumerate((_read(path) or {}).get("requests", [])):
+            if row.get("subject") != REQUEST_SUBJECT or not row.get("date") or row["date"] > day:
+                continue
+            if (row.get("bbr_id") or WADE_BBR) != WADE_BBR or (row.get("player") or WADE) != WADE:
+                continue
+            key = (row["date"], path.relative_to(root).as_posix(), i)
+            if found is None or key > found[0]:
+                found = (key, row)
+    if found is None:
+        return None
+    (filed, rel, i), row = found
+    for path in sorted((root / PLAYER).glob("*/League/extension_decisions.json")):
+        if any(d.get("wade") and filed <= d["day"] < day for d in (_read(path) or {}).get("decisions", [])):
+            return None
+    return {"path": rel, "index": i, "date": filed, "subject": REQUEST_SUBJECT, "requested": row.get("requested"),
+            "terms": deepcopy(row.get("terms") or {}), "if_not_offered": row.get("if_not_offered"),
+            "words": row.get("words"), "source_ref": row.get("source_ref")}
+
+
+def discounted(benchmark, discount):
+    """floor(benchmark x (1 - discount)) in exact arithmetic: the first year Wade's discount names."""
+    return int(Fraction(int(benchmark)) * (1 - Fraction(str(discount))))
+
+
+def _share(x):
+    return isinstance(x, (int, float)) and not isinstance(x, bool)
+
+
+def shape(kind, rule_offer, app, last, first_season, rule, request):
+    """Miami's answer to Wade's own extension terms, once its call is to offer (one rule, no draw): each requested term
+    that is legal and at least as favourable to Miami as its rule's term is adopted, any other is not and the rule's term
+    stands, every one recorded with its reason. Returns (years, first-year salary, raise, schedule, options, basis).
+
+    - discount_from_market d (a share under 1): first year = the benchmark (his price: the market price the call
+      computed, inside his minimum and maximum) x (1 - d), held to his minimum; adopted when at or under the rule's first
+      year (a larger figure, a premium from a negative d or a veteran's discounted price over 110.5% of his last salary,
+      is not);
+    - additional_seasons: adopted within the agreement's limit (cbafaq05 Q52); the rule's length is the seasons he
+      wants (`free_agency_2004.YEARS_WANTED` by age), so the seasons he names himself take its place;
+    - raise: "maximum" is the rule's own raise (the agreement's limit); a share of the base year at or under the limit is
+      adopted (as favourable or more); a larger one is not legal;
+    - team_option_final_season: more favourable to Miami than the rule's guaranteed final season (Miami may decline it);
+      adopted as one option season, the last, inside the agreement's length (Q51, `extensions.option_clause`);
+    - player_option_final_season or no_trade_clause true: less favourable to Miami than the rule's term (a guaranteed
+      season, no clause): not adopted;
+    - guaranteed_seasons: every season but an option season is fully guaranteed (the rule's form); a count that does not
+      match is not adopted (a partly guaranteed season other than an option is not modelled)."""
+    n0, f0, step0, _ = rule_offer
+    t = request.get("terms") or {}
+    rookie = kind == "rookie_scale"
+    price, minimum = app["price"], app["minimum"]
+    max_new = rule["rookie_new_seasons"] if rookie else rule["veteran_total_seasons"] - 1
+    raise_pct = rule["rookie_raise_pct"] if rookie else rule["veteran_raise_pct"]
+    who = "rookie-scale" if rookie else "veteran"
+    elements = []
+
+    def element(term, offered, rule_term, adopted, reason):
+        elements.append({"term": term, "requested": t.get(term), "rule": rule_term, "offered": offered,
+                         "adopted": adopted, "reason": reason})
+
+    f1, discount = f0, None
+    d = t.get("discount_from_market")
+    if d is not None:
+        if not _share(d) or d >= 1:
+            element("discount_from_market", f0, f0, False, f"{d!r} is not a share of the benchmark under 1: the rule's "
+                                                         f"first year ${f0:,} stands")
+        else:
+            want = discounted(price, d)
+            held = max(want, minimum)
+            floor = f", held to his ${minimum:,} minimum" if held > want else ""
+            if held > f0:                    # a premium (a negative discount), or a veteran's price over his first-year limit
+                element("discount_from_market", f0, f0, False,
+                        f"${held:,} ({d:.0%} under the ${price:,} benchmark{floor}) is above the rule's first year ${f0:,}: "
+                        "less favourable to Miami, not adopted")
+            else:
+                f1, discount = held, d
+                element("discount_from_market", f1, f0, True,
+                        f"${price:,} benchmark x (1 - {d:g}) = ${want:,}{floor}: at or under the rule's ${f0:,}, adopted")
+    n = n0
+    r = t.get("additional_seasons")
+    if r is not None:
+        if not isinstance(r, int) or isinstance(r, bool) or r < 1:
+            element("additional_seasons", n0, n0, False, f"{r!r} is not a number of seasons: the rule's {n0} stand")
+        elif r > max_new:
+            element("additional_seasons", n0, n0, False, f"{r} seasons pass the agreement's {max_new} for a {who} extension "
+                                                         f"(cbafaq05 Q52): the rule's {n0} stand")
+        else:
+            n = r
+            element("additional_seasons", n, n0, True, f"within the agreement's {max_new} (cbafaq05 Q52); the rule's {n0} "
+                                                       "are the seasons he wants by age, and he names his own")
+    base = f1 if rookie else min(f1, last)
+    limit = _pct(base, raise_pct)
+    step = limit
+    q = t.get("raise")
+    if q is not None:
+        rule_raise = f"the limit, {raise_pct:g}% of the base year"
+        if q == "maximum":
+            element("raise", step, rule_raise, True, f"the rule's raise is the agreement's limit, {raise_pct:g}% of ${base:,}")
+        elif _share(q) and 0 <= q <= Fraction(str(raise_pct)) / 100:
+            step = _pct(base, Fraction(str(q)) * 100)
+            element("raise", step, rule_raise, True, f"{q:.2%} of ${base:,}, at or under the agreement's {raise_pct:g}%: "
+                                                     "as favourable to Miami or more, adopted")
+        else:
+            element("raise", limit, rule_raise, False, f"{q!r} is over the agreement's {raise_pct:g}% of ${base:,} or not a "
+                                                       "share: the rule's raise at the limit stands")
+    seasons = [_season_after(first_season, i) for i in range(n)]
+    options = {}
+    o = t.get("team_option_final_season")
+    if o is True:
+        if (rule.get("max_option_seasons") or 0) < 1 or rule.get("option_season") != "last":
+            element("team_option_final_season", False, False, False, "the agreement's option clause is not recorded "
+                                                                    "(cbafaq05 Q51): every season stays guaranteed")
+        else:
+            options = {seasons[-1]: "team_option"}
+            element("team_option_final_season", True, False, True,
+                    f"a Miami team option on {seasons[-1]}, more favourable to Miami than the rule's guaranteed final "
+                    f"season; one option season, the last (cbafaq05 Q51), inside the {max_new} seasons Q52 allows")
+    elif o is not None:
+        element("team_option_final_season", False, False, o is False,
+                "no option: the rule's form" if o is False else f"{o!r} is not true or false: no option")
+    if t.get("player_option_final_season") is not None:
+        p = t["player_option_final_season"]
+        element("player_option_final_season", False, False, p is False,
+                "no player option: the rule's form" if p is False else
+                "a player option is less favourable to Miami than the rule's guaranteed final season: not adopted")
+    if t.get("no_trade_clause") is not None:
+        c = t["no_trade_clause"]
+        element("no_trade_clause", False, False, c is False,
+                "no clause: the rule's form" if c is False else
+                "a no-trade clause is less favourable to Miami than the rule's term (none): not adopted")
+    g = t.get("guaranteed_seasons")
+    if g is not None:
+        held = n - len(options)
+        element("guaranteed_seasons", held, n0, g == held,
+                f"every season but the option season is fully guaranteed: {held}" if g == held else
+                f"{g!r} does not match the offer's {n} seasons less {len(options)} option season(s): every season but an "
+                f"option season is fully guaranteed ({held}); a partly guaranteed season is not modelled")
+    for term in sorted(set(t) - set(REQUEST_TERMS)):
+        element(term, None, None, False, "not a term the extension rule models: not adopted")
+    schedule = {s: f1 + step * i for i, s in enumerate(seasons)}
+    basis = {"benchmark": price, "discount": discount, "rule_terms": {"years": n0, "first_salary": f0, "raise": step0},
+             "elements": elements}
+    return n, f1, step, schedule, options, basis
+
+
+def terms_line(o):
+    """An offer in one line: '5 seasons from 2007-08, $X rising $Y ($Z)', naming a team option season when there is one."""
+    option = f"; {o['team_option_season']} a Miami team option" if o.get("team_option_season") else ""
+    return (f"{o['years']} seasons from {o['first_season']}, ${o['first_salary']:,} rising ${o['raise']:,} "
+            f"(${o['total']:,}{option})")
+
+
 def _normalise(options):
     probs = {k: round(v, 6) for k, v in options.items()}
     top = max(probs, key=probs.get)
@@ -885,20 +1121,26 @@ def appraise(day, cand, ev, root=ROOT):
             "maximum": maximum, "minimum": minimum, "line": ev.line(b), "mpg": ev.mpg(b)}
 
 
-def decide(day, cand, app, ev, spent, root=ROOT):
+def decide(day, cand, app, ev, spent, root=ROOT, request=None):
     """(decision, packet or None) for one eligible player from his appraisal; `spent` is {club: offers made earlier that
-    day} and is updated with this offer."""
+    day} and is updated with this offer. `request` is Wade's own terms (`terms_request`), read for his decision only: it
+    shapes the offer (`shape`); the worth call and its close-band draw are unchanged, but the payroll test and `spent` count
+    the offered first year (what Miami would pay), so his discount can let his offer fit under the ceiling and leaves that
+    much more room for a later Miami offer that day. Any other player's decision ignores the request itself."""
     from .options import HIGH, LOW, YOUNG_AGE, YOUTH_PREMIUM
     from .seasons import next_season
     season, first = cand["final_season"], next_season(cand["final_season"])
     rule = rules(season, root)
     b, club, kind, last = cand["bbr_id"], cand["club"], cand["kind"], cand["last_salary"]
+    request = request if cand["wade"] else None
     decision = {"id": f"{day}-extension-{b}", "day": day, "kind": kind, "club": club, "player": cand["player"], "bbr_id": b,
                 "ledger_key": cand["ledger_key"], "wade": cand["wade"],
                 "contract": {"final_season": season, "last_salary": last, "signed_date": cand.get("signed_date"),
                              "length": cand.get("length"), "origin": cand.get("origin"), "eligibility": cand["eligibility"]},
                 "evidence": None, "payroll": None, "club_call": None, "offer": None, "answer": None, "packet": None,
                 "outcome": None}
+    if cand["wade"]:
+        decision["request"] = deepcopy(request)         # the terms on file (None when he filed none), shaping the offer only
 
     def no_offer(blocked, how):
         decision.update(club_call={"decision": "no_offer", "how": how, "p_offer": None, "blocked": blocked}, outcome="no_offer")
@@ -912,6 +1154,9 @@ def decide(day, cand, app, ev, spent, root=ROOT):
     if offer is None:
         return no_offer("minimum", f"110.5% of his ${last:,} salary is under his ${minimum:,} minimum: no legal first year")
     n, f1, step, schedule = offer
+    options, basis = {}, None
+    if request:                    # Wade's own terms: the offer only; the worth call below still reads his full worth
+        n, f1, step, schedule, options, basis = shape(kind, offer, app, last, first, rule, request)
     band = _band(ratio)
     youth = f", x{YOUTH_PREMIUM} for a player {YOUNG_AGE} or younger" if app["young"] else ""
     reason = (f"worth ${worth:,} (price ${price:,}: market price ${app['market_price']:,} for his production, inside the "
@@ -941,6 +1186,7 @@ def decide(day, cand, app, ev, spent, root=ROOT):
     if after > top:
         return no_offer("payroll", f"{first} payroll ${committed:,} + earlier offers ${earlier:,} + ${f1:,} = ${after:,} passes "
                                    f"${top:,} ({top_rule})")
+    # the offered first year, Wade's discounted one included: a Miami offer decided after his that day has that room
     spent[club] = earlier + f1
     decision["club_call"] = {"decision": call, "how": how, "p_offer": p_offer, "blocked": None}
     decision["offer"] = {"first_season": first, "years": n, "first_salary": f1, "raise": step, "schedule": schedule,
@@ -950,8 +1196,14 @@ def decide(day, cand, app, ev, spent, root=ROOT):
                                     "first_year_limit": maximum if kind == "rookie_scale" else min(maximum, _pct(last, rule["veteran_first_year_pct"])),
                                     "raise_limit": _pct(f1 if kind == "rookie_scale" else last,
                                                         rule["rookie_raise_pct"] if kind == "rookie_scale" else rule["veteran_raise_pct"])}}
+    if basis is not None:
+        # shaped by Wade's own terms: the option season (if adopted), the guaranteed seasons and every term's reason
+        decision["offer"].update(options=dict(options), guaranteed_seasons=n - len(options),
+                                 team_option_season=next(iter(options), None), terms_basis=basis)
     kind_text = "rookie-scale extension" if kind == "rookie_scale" else "veteran extension"
-    terms_text = f"{n}-season {kind_text} from {first} (${f1:,} in {first}, raises of ${step:,} a season, ${sum(schedule.values()):,} in all)"
+    option_text = f", {next(iter(options))} a Miami team option" if options else ""
+    terms_text = (f"{n}-season {kind_text} from {first} (${f1:,} in {first}, raises of ${step:,} a season, "
+                  f"${sum(schedule.values()):,} in all{option_text})")
     if cand["wade"]:
         # his answer is his own: a clear offer opens at once, a close call is the club's draw alone (offer or no_offer)
         decision["answer"] = {"decider": "Dwyane Wade (the user)", "offer_record": None}
@@ -994,12 +1246,17 @@ def _open_offer(root, season, decision):
         basis = decision["club_call"]["how"] + (f"; the engine drew the offer ({decision['packet']})" if decision.get("packet") else "")
         record = {"schema_version": 1, "id": oid, "date": decision["day"], "season": season, "club": decision["club"],
                   "kind": decision["kind"], "decision": decision["id"],
-                  "offer": {k: o[k] for k in ("first_season", "years", "first_salary", "raise", "schedule", "total", "route", "limits")},
+                  "offer": {k: deepcopy(o[k]) for k in OFFER_FIELDS + SHAPED_FIELDS if k in o},
                   "evidence": {"line": e.get("line"), "value": e["value"], "price": e["price"], "worth": e["worth"],
                                "maximum": e["maximum"], "core_ratio": e["core_ratio"], "payroll": pay["after"],
                                "ceiling": pay["ceiling"], "basis": basis},
                   "contract": decision["contract"], "status": "offered", "answer": None, "answered": None, "note": None,
                   "source_ref": None, "reply_to_version": None}
+        if "request" in decision:
+            # the terms on file and Miami's answer to each: the benchmark, the discount, every term adopted or not
+            shaped = o.get("terms_basis") or {}
+            record["request"] = deepcopy(decision["request"])
+            record["evidence"].update(benchmark=e["price"], discount=shaped.get("discount"))
         _dump(path, record)
         (path.parent / page_name(record)).write_text(page(record, root), encoding="utf-8")
     state_path = root / PLAYER / season / "current_state.json"
@@ -1025,12 +1282,28 @@ def page(record, root=ROOT):
     snaps = [s for s in identity.get("snapshots", []) if s.get("as_of", "") <= record["date"]]
     snap = max(snaps, key=lambda s: s["as_of"]) if snaps else {}
     positions = "/".join(snap.get("positions") or []) or "SG"
-    rows = "\n".join(f"| {s} | ${v:,} |" for s, v in o["schedule"].items())
+    from .options import deadline
+    opts = o.get("options") or {}
+    due = {s: deadline(k, s, False) for s, k in opts.items()}           # an extension's option: the veteran deadline
+    status = {s: (f"{opts[s].replace('_', ' ').capitalize()}: Miami exercises or declines it by {due[s]} (runtime/options.py)"
+                  if s in opts else "Fully guaranteed") for s in o["schedule"]}
+    rows = "\n".join(f"| {s} | ${v:,} | {status[s]} |" for s, v in o["schedule"].items())
     kind = "rookie-scale" if record["kind"] == "rookie_scale" else "veteran"
-    last_season = max(o["schedule"])
+    held = [s for s in o["schedule"] if s not in opts]
+    guaranteed = sum(o["schedule"][s] for s in held)
     free_year = int(c["final_season"][:4]) + 1
     after = ("restricted free agency if Miami tenders a qualifying offer, unrestricted otherwise" if record["kind"] == "rookie_scale"
              else "unrestricted free agency")
+    runs, held_text = f"your contract runs through {max(o['schedule'])}", ""
+    if opts:
+        option_season = next(iter(opts))
+        through = f"through {max(held)} guaranteed ({len(held)} seasons, ${guaranteed:,}), and " if held else ""
+        runs = f"your contract runs {through}through {option_season} if Miami exercises its team option by {due[option_season]}"
+        held_text = ((f"Guaranteed seasons: {len(held)} ({min(held)} to {max(held)}, ${guaranteed:,}). " if held else
+                      "Guaranteed seasons: none. ")
+                     + f"Team option season: {option_season} (${o['schedule'][option_season]:,}), Miami's to exercise or "
+                     f"decline by {due[option_season]}, the veteran deadline at the end of June before the season, like every "
+                     f"team option (runtime/options.py); declined, the contract ends after {max(held) if held else c['final_season']}.\n\n")
     return f"""---
 type: milestone
 kind: contract_extension_offer
@@ -1049,13 +1322,13 @@ record: {record['id']}.json
 
 {record['club']}'s front office offers a {o['years']}-season {kind} extension from {o['first_season']}, after the {c['final_season']} season that ends your current contract (${c['last_salary']:,} in {c['final_season']}).
 
-| Season | Salary |
-| --- | --- |
+| Season | Salary | Status |
+| --- | --- | --- |
 {rows}
-| **Total** | **${o['total']:,}** |
+| **Total** | **${o['total']:,}** | ${guaranteed:,} guaranteed |
 
-First-year salary ${o['first_salary']:,}; raises of ${o['raise']:,} a season (the agreement allows ${o['limits']['raise_limit']:,}); the first year is limited to ${o['limits']['first_year_limit']:,} (cbafaq05 Q52).
-
+{held_text}First-year salary ${o['first_salary']:,}; raises of ${o['raise']:,} a season (the agreement allows ${o['limits']['raise_limit']:,}); the first year is limited to ${o['limits']['first_year_limit']:,} (cbafaq05 Q52).
+{_terms_section(record)}
 ## Evidence
 
 | Item | Value |
@@ -1071,7 +1344,7 @@ The evidence is what Miami's front office knows on {record['date']}: closed simu
 
 ## Your response
 
-- **Accept**: the extension is signed on the next run of the extension step (`scripts/extension_day.py --write <career date>`): your contract runs through {last_season} and you do not reach free agency in {free_year}.
+- **Accept**: the extension is signed on the next run of the extension step (`scripts/extension_day.py --write <career date>`): {runs}, and you do not reach free agency in {free_year}.
 - **Decline**: no contract changes. You play out {c['final_season']}; in {free_year} you go to {after}.
 
 Record the answer with `python scripts/player_milestone.py --reply reply.json --expected-version <version of {record['id']}.json>`, where `reply.json` holds `{{"kind": "extension", "season": "{record['season']}", "event_id": "{record['id']}", "action": "accept" or "decline", "date": <career date>, "text": <your words>, "source_ref": <career file with your words>}}`.
@@ -1079,6 +1352,52 @@ Record the answer with `python scripts/player_milestone.py --reply reply.json --
 ## Next checkpoint
 
 The extension step runs again on the same career date after your answer, applies it, and the season continues.
+"""
+
+
+def _cell(value):
+    """A term's value on the page: money for a salary figure, a share as a percentage, yes or no."""
+    if value is None:
+        return "N/A"
+    if isinstance(value, bool):
+        return "yes" if value else "no"
+    if isinstance(value, int) and value >= 10_000:
+        return f"${value:,}"
+    if isinstance(value, float) and abs(value) < 1:
+        return f"{value * 100:g}%"
+    return str(value)
+
+
+def _terms_section(record):
+    """The page's account of Wade's own terms (`shape`): the request on file, the benchmark and discount, each term."""
+    if "request" not in record:
+        return ""
+    request, o, e = record["request"], record["offer"], record["evidence"]
+    if not request:
+        return "\n## Your terms\n\nNo extension terms of yours were on file on the decision day: the offer is Miami's rule alone.\n"
+    basis = o.get("terms_basis") or {}
+    rule_terms = basis.get("rule_terms") or {}
+    discount = basis.get("discount")
+    folder = (PLAYER / record["season"] / "01_Free_Agency/Wade_Extension").as_posix()
+    link = posixpath.relpath(request["path"], folder)
+    lines = "\n".join(f"| {x['term'].replace('_', ' ')} | {_cell(x['requested'])} | {_cell(x['rule'])} | {_cell(x['offered'])} | "
+                      f"{'Adopted' if x['adopted'] else 'Not adopted'} | {x['reason']} |" for x in basis.get("elements", []))
+    first = (f"your discount of {discount:.0%} makes the first year ${o['first_salary']:,}" if discount is not None
+             else f"no discount was adopted: the first year is ${o['first_salary']:,}")
+    return f"""
+## Your terms
+
+On {request['date']} you filed your extension terms ([request]({link}), row {request.get('index', 0) + 1}; your words in `{request.get('source_ref') or 'not recorded'}`):
+
+> {request.get('words') or 'Not recorded'}
+
+If Miami does not offer: {request.get('if_not_offered') or 'not recorded'}.
+
+Market benchmark ${e.get('benchmark', e['price']):,}: your market price within your minimum and your maximum ${e['maximum']:,}, the figure Miami's call uses; {first}. Miami's rule alone would offer {rule_terms.get('years')} seasons from ${rule_terms.get('first_salary', 0):,} rising ${rule_terms.get('raise', 0):,}. A term you asked for is adopted when it is legal and at least as favourable to Miami as its rule's term; any other is not, and the rule's term stands (runtime/extensions.py, `shape`). The offer and its option season are as above.
+
+| Term | You asked | Miami's rule | Offer | Adopted | Reason |
+| --- | --- | --- | --- | --- | --- |
+{lines}
 """
 
 
@@ -1098,7 +1417,9 @@ def _decide_day(day, season, record, root, run_day, evidence_day=None):
         for cand, app in sorted(appraised, key=lambda x: (-(x[1].get("worth") or 0), x[0]["bbr_id"])):
             if f"{day}-extension-{cand['bbr_id']}" in done:
                 continue
-            decision, packet = decide(day, cand, app, ev, spent, root)
+            # Wade's own terms, read for his decision only (every other player's decision never sees them)
+            request = terms_request(day, root) if cand["wade"] else None
+            decision, packet = decide(day, cand, app, ev, spent, root, request=request)
             if packet:
                 folder.mkdir(parents=True, exist_ok=True)
                 path = folder / f"{packet['event_id']}.decision.json"
@@ -1124,6 +1445,13 @@ def _decision_text(d):
     if d["outcome"] == "no_offer":
         return f"{head}: no offer ({d['club_call']['how']}; runtime/extensions.py, League/extension_decisions.json)."
     terms = f"{o['years']} seasons from {o['first_season']}, ${o['first_salary']:,} rising ${o['raise']:,} a season (${o['total']:,})"
+    if o.get("terms_basis"):
+        shaped = o["terms_basis"]
+        terms += ((f", {o['team_option_season']} a Miami team option" if o.get("team_option_season") else "")
+                  + f"; shaped by Wade's terms of {d['request']['date']} ({d['request']['path']}: "
+                  + f"{sum(x['adopted'] for x in shaped['elements'])} of {len(shaped['elements'])} terms adopted"
+                  + (f", {shaped['discount']:.0%} under the ${shaped['benchmark']:,} benchmark" if shaped.get("discount") is not None else "")
+                  + ")")
     if d["wade"] and d["club_call"]["decision"] == "draw":
         return (f"{head}: a close call; Miami's offer of {terms} is an engine draw ({d['packet']}), and Wade answers an "
                 "offer himself (01_Free_Agency/Wade_Extension/).")
@@ -1236,9 +1564,25 @@ def run(day, root=ROOT, evidence_day=None):
 # -- application ---------------------------------------------------------------------------------------------------------
 def _sub_record(d, season):
     o = d["offer"]
-    return {"id": d["id"], "kind": d["kind"], "route": o["route"], "signed_date": d["day"], "club": d["club"],
-            "first_season": o["first_season"], "years": o["years"], "first_salary": o["first_salary"], "raise": o["raise"],
-            "schedule": dict(o["schedule"]), "total": o["total"], "record": record_path(season).as_posix()}
+    sub = {"id": d["id"], "kind": d["kind"], "route": o["route"], "signed_date": d["day"], "club": d["club"],
+           "first_season": o["first_season"], "years": o["years"], "first_salary": o["first_salary"], "raise": o["raise"],
+           "schedule": dict(o["schedule"]), "total": o["total"], "record": record_path(season).as_posix()}
+    if o.get("options"):                     # an option season Wade's own terms put in (`shape`); none in any other offer
+        sub.update(options=dict(o["options"]), guaranteed_seasons=o["guaranteed_seasons"],
+                   team_option_season=o["team_option_season"])
+    return sub
+
+
+def contract_form(o):
+    """An offer's seasons in the form every contract record uses: (amount kinds, guaranteed amounts, option deadlines).
+    An option season is "team_option" (the cap sheet's and contract pages' form), guaranteed 0 until exercised, and due on
+    the veteran deadline (`options.deadline`: June 29 before the season, never a rookie-scale October 31); every other
+    season is "contract_salary", fully guaranteed."""
+    from .options import deadline
+    opts = o.get("options") or {}
+    kinds = {s: opts.get(s, "contract_salary") for s in o["schedule"]}
+    guaranteed = {s: (0 if s in opts else v) for s, v in o["schedule"].items()}
+    return kinds, guaranteed, {s: deadline(k, s, False) for s, k in opts.items()}
 
 
 def _extend(entry, sub, from_season, sheet=False):
@@ -1248,19 +1592,35 @@ def _extend(entry, sub, from_season, sheet=False):
     if entry.get("extension"):
         entry.setdefault("earlier_extensions", []).append(entry.pop("extension"))
     seasons = {s: v for s, v in sub["schedule"].items() if s >= from_season}
+    opts = {s: k for s, k in (sub.get("options") or {}).items() if s in seasons}
     entry["schedule"] = dict(sorted({**(entry.get("schedule") or {}), **seasons}.items()))
     entry["extension"] = deepcopy(sub)
     entry["extended_on"] = sub["signed_date"]
+    option = "".join(f"; {s} a {k.replace('_', ' ')}" for s, k in opts.items())
     note = (f"{sub['route'].replace('_', ' ')} signed {sub['signed_date']} with {sub['club']}: {sub['years']} seasons from "
-            f"{sub['first_season']}, ${sub['total']:,} (runtime/extensions.py, {sub['record']})")
+            f"{sub['first_season']}, ${sub['total']:,}{option} (runtime/extensions.py, {sub['record']})")
     entry.setdefault("extension_history", []).append(note)
+    if opts and not sheet:                   # the ledger's form of an option season ({season: kind}, `runtime/options.py`)
+        entry["options"] = dict(sorted({**(entry.get("options") or {}), **opts}.items()))
     if sheet:
-        entry["amount_kind"] = dict(sorted({**(entry.get("amount_kind") or {}), **{s: "contract_salary" for s in seasons}}.items()))
+        # the cap sheet's form: the option season's amount kind; it is not guaranteed until exercised (left out of a
+        # `guaranteed` map, so the guarantee review never reads it as a non-guaranteed camp season)
+        entry["amount_kind"] = dict(sorted({**(entry.get("amount_kind") or {}),
+                                            **{s: opts.get(s, "contract_salary") for s in seasons}}.items()))
         if isinstance(entry.get("guaranteed"), dict):
-            entry["guaranteed"] = dict(sorted({**entry["guaranteed"], **seasons}.items()))
+            entry["guaranteed"] = dict(sorted({**entry["guaranteed"], **{s: v for s, v in seasons.items() if s not in opts}}.items()))
         entry["notes"] = ((entry.get("notes") or "") + f" Extended {sub['signed_date']}: {note}.").strip()
         entry.setdefault("sources", []).append(sub["record"])
     return True
+
+
+def _option_text(o, due):
+    """', the final season 2011-12 a team option (Miami decides by 2011-06-29), 4 seasons guaranteed' or ''."""
+    if not due:
+        return ""
+    s = o["team_option_season"]
+    return (f", the final season {s} a team option (Miami decides by {due[s]}), {o['guaranteed_seasons']} season(s) "
+            "guaranteed")
 
 
 def _later_seasons(season, root):
@@ -1299,21 +1659,26 @@ def _write_extension(d, season, root, day):
     writer = Writer(root)
     pid = _player_id(writer, {"player": d["player"]}, d["bbr_id"])
     o = d["offer"]
+    kinds, guaranteed, due = contract_form(o)
     contract = {"player": d["player"], "bbr_id": None if d["wade"] else d["bbr_id"], "status": "under_contract",
-                "schedule": dict(o["schedule"]), "amount_kind": {s: "contract_salary" for s in o["schedule"]},
-                "guaranteed": dict(o["schedule"]), "signed_date": d["day"], "route": o["route"],
+                "schedule": dict(o["schedule"]), "amount_kind": kinds,
+                "guaranteed": guaranteed, "signed_date": d["day"], "route": o["route"],
                 "original_term_seasons": o["years"], "start_season": o["first_season"], "end_season": max(o["schedule"]),
                 "full_original_schedule": True, "contract_id": f"{pid}-{d['day']}",
                 "extends": {"final_season": d["contract"]["final_season"], "signed_date": d["contract"]["signed_date"]},
                 "notes": (f"{o['route'].replace('_', ' ').capitalize()} signed {d['day']}: {o['years']} seasons from "
-                          f"{o['first_season']}, ${o['first_salary']:,} rising ${o['raise']:,} a season; it follows the agreement "
-                          f"ending with {d['contract']['final_season']}."),
+                          f"{o['first_season']}, ${o['first_salary']:,} rising ${o['raise']:,} a season{_option_text(o, due)}; "
+                          f"it follows the agreement ending with {d['contract']['final_season']}."),
                 "sources": [record_path(season).as_posix()]}
+    if due:
+        contract.update(team_option_season=o["team_option_season"], option_deadline=due[o["team_option_season"]],
+                        guaranteed_seasons=o["guaranteed_seasons"])
     archive_contract(writer, contract, day, event="signed", source=record_path(season).as_posix(), player_id=pid,
                      signing_team=MIAMI)
     writer.commit()
     _miami_note(root, season, day, f"{d['player']} signs his {o['route'].replace('_', ' ')}: {o['years']} seasons from "
-                                   f"{o['first_season']} (${o['total']:,}); runtime/extensions.py, League/extension_decisions.json.")
+                                   f"{o['first_season']} (${o['total']:,}{_option_text(o, due)}); runtime/extensions.py, "
+                                   "League/extension_decisions.json.")
     if d["wade"]:
         _wade_status(root, season, day, d)
 
@@ -1321,7 +1686,8 @@ def _write_extension(d, season, root, day):
 def _wade_status(root, season, day, d):
     """Wade's dated identity snapshot and live contract status after he signs (as `signing.player_status_snapshot`)."""
     o = d["offer"]
-    text = f"{o['route'].replace('_', ' ').capitalize()} signed {d['day']}: {o['years']} seasons from {o['first_season']} (${o['total']:,})"
+    text = (f"{o['route'].replace('_', ' ').capitalize()} signed {d['day']}: {o['years']} seasons from {o['first_season']} "
+            f"(${o['total']:,}{_option_text(o, contract_form(o)[2])})")
     path = root / PLAYER / "professional_identity.json"
     identity = _read(path)
     if identity and identity.get("snapshots"):
@@ -1417,16 +1783,37 @@ def catalog_rows(root=ROOT, cutoff=None):
             if d.get("outcome") != "signed" or not d.get("applied") or (cutoff and max(d["day"], d["applied"]) > cutoff):
                 continue
             o = d["offer"]
+            kinds, guaranteed, due = contract_form(o)
             row = {"player": d["player"], "bbr_id": None if d["wade"] else d["bbr_id"], "status": "under_contract",
                    "signed_date": d["day"], "signing_team": d["club"], "route": o["route"].replace("_", " "),
                    "original_term_seasons": o["years"], "start_season": o["first_season"], "end_season": max(o["schedule"]),
-                   "schedule": dict(o["schedule"]), "amount_kind": {s: "contract_salary" for s in o["schedule"]},
-                   "guaranteed": dict(o["schedule"]), "full_original_schedule": True,
+                   "schedule": dict(o["schedule"]), "amount_kind": kinds,
+                   "guaranteed": guaranteed, "full_original_schedule": True,
                    "notes": (f"{o['route'].replace('_', ' ').capitalize()} signed {d['day']} with {d['club']}: {o['years']} seasons, "
-                             f"${o['first_salary']:,} rising ${o['raise']:,} a season. It follows the agreement ending with "
-                             f"{d['contract']['final_season']} ({d['contract'].get('origin') or 'signing not recorded'}), "
-                             "which stays in force until then (runtime/extensions.py).")}
+                             f"${o['first_salary']:,} rising ${o['raise']:,} a season{_option_text(o, due)}. It follows the "
+                             f"agreement ending with {d['contract']['final_season']} "
+                             f"({d['contract'].get('origin') or 'signing not recorded'}), which stays in force until then "
+                             "(runtime/extensions.py).")}
+            if due:
+                # the option season on the pages: its deadline, and its outcome once runtime/options.py decided it
+                row.update(team_option_season=o["team_option_season"], option_deadline=due[o["team_option_season"]],
+                           guaranteed_seasons=o["guaranteed_seasons"], options=_option_outcomes(d, root, cutoff, due))
             out.append((row, d["club"], path, max(d["day"], d["applied"])))
+    return out
+
+
+def _option_outcomes(d, root, cutoff, due):
+    """[{season, type, amount, deadline, outcome, outcome_date}] for an extension's option seasons, the contract pages'
+    option form: the outcome is the applied decision of `runtime/options.py` (`option_decided`) known by `cutoff`, else
+    open."""
+    o = d["offer"]
+    decided = option_decided(root, {d["bbr_id"], d.get("ledger_key")}, cutoff)
+    out = []
+    for s, k in (o.get("options") or {}).items():
+        x = decided.get((s, k))
+        outcome = OPTION_OUTCOMES.get((x or {}).get("decision"))
+        out.append({"season": s, "type": k, "amount": o["schedule"][s], "deadline": due[s], "outcome": outcome,
+                    "outcome_date": x["deadline"] if x else None})
     return out
 
 
@@ -1468,6 +1855,56 @@ def _offer_errors(d, rel):
         errors.append(f"{rel}: {d['id']}: the schedule must rise by equal flat raises from the first year")
     if o["total"] != sum(o["schedule"].values()):
         errors.append(f"{rel}: {d['id']}: total does not match the schedule")
+    opts = o.get("options") or {}
+    if any(k in o for k in SHAPED_FIELDS):
+        # an offer Wade's own terms shaped (`shape`): one team option season at most, the last (cbafaq05 Q51); every
+        # other season guaranteed; the first year from his price and the adopted discount; the request named
+        if not d.get("wade") or not d.get("request"):
+            errors.append(f"{rel}: {d['id']}: only Wade's own recorded terms shape an offer")
+        if len(opts) > 1 or any(k != "team_option" for k in opts.values()) or (opts and next(iter(opts)) != seasons[-1]):
+            errors.append(f"{rel}: {d['id']}: an extension's option is one team option season, the last (cbafaq05 Q51)")
+        if o.get("guaranteed_seasons") != len(seasons) - len(opts) or o.get("team_option_season") != next(iter(opts), None):
+            errors.append(f"{rel}: {d['id']}: the guaranteed seasons and the team option season must follow the offer's option")
+        basis = o.get("terms_basis") or {}
+        if basis.get("benchmark") != (d.get("evidence") or {}).get("price"):
+            errors.append(f"{rel}: {d['id']}: the benchmark must be his price on the day (the figure the call uses)")
+        elif basis.get("discount") is not None and \
+                o["first_salary"] != max(discounted(basis["benchmark"], basis["discount"]), lim.get("minimum", 0)):
+            errors.append(f"{rel}: {d['id']}: the first year does not follow the benchmark and the adopted discount")
+    return errors
+
+
+def _terms_errors(d, rel, root):
+    """Wade's own terms on a decision of his (`terms_request`, `shape`): the decision records exactly the terms on file
+    for its day (None when he filed none), so a row edited or removed since, or one filed for the day after the decision,
+    is refused; and an offer it shaped is exactly Miami's answer to them, the rule's own offer recomputed from the
+    recorded evidence and contract (`terms_for`) and shaped by the recorded request: years, first year, raise, schedule,
+    option and `terms_basis` (each term, its reason and the benchmark) must all be equal, so the decision replays
+    unchanged. Stable for a closed day: the spent test reads only Wade's decisions before it."""
+    from .seasons import next_season
+    if "request" not in d:
+        return [f"{rel}: {d['id']}: a Wade decision records the extension terms on file for its day (None when none)"]
+    req, on_file = d["request"], terms_request(d["day"], root)
+    errors = []
+    if req != on_file:
+        where = f"{on_file['path']} row {on_file['index']} of {on_file['date']}" if on_file else "none"
+        errors.append(f"{rel}: {d['id']}: the recorded terms differ from Wade's terms on file for {d['day']} ({where}): a "
+                      "row edited or removed since the decision, or one filed for its day afterwards")
+    o = d.get("offer")
+    if not req or not o:
+        return errors
+    e, c = d.get("evidence") or {}, d["contract"]
+    first, rule = next_season(c["final_season"]), rules(c["final_season"], root)
+    try:
+        offer = terms_for(d["kind"], e["price"], c["last_salary"], e["maximum"], e["minimum"], e.get("age"), first, rule)
+        n, f1, step, schedule, options, basis = shape(d["kind"], offer, e, c["last_salary"], first, rule, req)
+    except (KeyError, TypeError, ValueError, AttributeError) as err:
+        return errors + [f"{rel}: {d['id']}: Miami's answer to Wade's terms cannot be recomputed from the record ({err!r})"]
+    want = {"years": n, "first_salary": f1, "raise": step, "schedule": schedule, "options": options, "terms_basis": basis}
+    wrong = [k for k, v in want.items() if o.get(k) != v]
+    if wrong:
+        errors.append(f"{rel}: {d['id']}: the offer is not Miami's answer to Wade's recorded terms (`shape`): "
+                      f"{', '.join(wrong)} differ")
     return errors
 
 
@@ -1475,8 +1912,10 @@ def extension_errors(root=ROOT, replay=True):
     """Every extension day the clock passed is decided, each on its own date; every record is well formed, decided by
     the rule (a clear call never drawn, a close call always drawn, Miami's on Wade included, packets matching the
     recorded chances), its offer within the agreement's limits, applied into the ledgers (and Miami's sheet and archive)
-    exactly when signed, absent from the next summer's pool, and in agreement with Wade's answer and the pending list.
-    With `replay`, each closed day's eligible set is recomputed from the start-of-day holders."""
+    exactly when signed, absent from the next summer's pool, and in agreement with Wade's answer and the pending list;
+    a Wade decision names his terms on file for its day and an offer they shaped is `shape` recomputed (`_terms_errors`);
+    an extension's option season leaves a schedule only by its applied decline (`in_schedule`). With `replay`, each closed
+    day's eligible set is recomputed from the start-of-day holders."""
     from .free_agency_2004 import record_for
     from .league_contracts import ledger_path
     from .options import HIGH, LOW
@@ -1552,6 +1991,7 @@ def extension_errors(root=ROOT, replay=True):
                     errors.append(f"{rel}: {d['id']}: the offer's payroll does not reconcile or passes the ceiling")
             packet = d.get("packet")
             if d["wade"]:
+                errors += _terms_errors(d, rel, root)
                 # Wade's answer is his own; the only packet is Miami's drawn close call (offer or no_offer)
                 club_draw = None
                 if packet:
@@ -1582,6 +2022,9 @@ def extension_errors(root=ROOT, replay=True):
                         offers.add(offer["id"])
                         if not (root / offer_rel).with_name(page_name(offer)).is_file():
                             errors.append(f"{offer_rel}: missing page {page_name(offer)}")
+                        if offer.get("request") != d.get("request") or \
+                                any(offer["offer"].get(k) != d["offer"].get(k) for k in OFFER_FIELDS + SHAPED_FIELDS):
+                            errors.append(f"{offer_rel}: the offer record and {d['id']} disagree on the offer or Wade's terms")
                         expected = {"accept": "signed", "decline": "declined", None: None}.get(offer.get("answer"), "?")
                         if d["outcome"] != expected:
                             errors.append(f"{rel}: {d['id']}: outcome {d['outcome']} disagrees with Wade's answer {offer.get('answer')!r}")
@@ -1618,12 +2061,14 @@ def extension_errors(root=ROOT, replay=True):
             if d["outcome"] is None and d.get("applied"):
                 errors.append(f"{rel}: {d['id']}: applied without an outcome")
             signed = d["outcome"] == "signed" and d.get("applied")
+            # an option season may leave the schedule only by its applied decline (`in_schedule`)
+            declined = option_declines(root, {d["bbr_id"], d["ledger_key"]}) if signed and d["offer"].get("options") else ()
             for s, ledger in ledgers.items():
                 c = ledger.get(d["ledger_key"])
                 if c is None:
                     continue
                 has = any(x["id"] == d["id"] for x in extensions_of(c))
-                if signed and (not has or any(c["schedule"].get(k) != v for k, v in d["offer"]["schedule"].items() if k >= s)):
+                if signed and (not has or not in_schedule(c["schedule"], d["offer"], s, declined)):
                     errors.append(f"{ledger_path(s).as_posix()}: {d['player']} lacks the signed extension {d['id']}")
                 if not signed and has:
                     errors.append(f"{ledger_path(s).as_posix()}: {d['player']} carries extension {d['id']}, which was not signed")

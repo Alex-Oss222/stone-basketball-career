@@ -31,6 +31,17 @@ Medical, work-ethic and basketball-IQ grades are not in any sourced record for t
    best player is in that tier and worth TRADE_UP_GAIN more to it than what it expects at its own slot offers its pick
    plus its 2005 second-rounder; the trade must hold up on the pick-value chart (`trades.TOP_PICK_VALUE`, PICK_DECAY);
    the on-clock club's answer is an engine draw (TRADE_DOWN_ACCEPT). At most MAX_TRADES a draft.
+7. Wade's scouting requests (from the 2006 draft, REQUESTS_FROM; his 2005-10-31 request). A `draft_prospect` request in
+   the draft season's `09_Draft/wade_requests.json`, dated on or before the draft date, is a recommendation for
+   evaluation, never a demand (the latest row per prospect stands, a name-only row included, so a later row of another
+   verb withdraws it): it is weighed on Miami's own picks only, never another club's, and never moves a trade.
+   A requested prospect still available and in the best available tier is always among the candidates of Miami's draw
+   (added to its top three when outside them) and his draw weight exp(utility / TEMPERATURE) is multiplied by
+   1 + Wade's standing weight on the draft date (`standing.STANDING_WEIGHT`), the scale the summer market puts on a
+   pursue request (`free_agency_2004.Market.requested`, `gm.py`: score x (1 + weight)); his odds against each other
+   candidate rise by that factor and no more. Tier dominance is unchanged: a prospect outside the best available tier,
+   already taken or not in the class changes nothing. Each Miami pick's packet basis and the record say how each
+   request was weighed or why not, and the record's scouting watch list follows each requested prospect.
 
 Drafted players' rights go to the drafting club (first-rounders sign rookie-scale contracts with the club's free
 agency); a real prospect nobody drafts is an undrafted free agent and enters the summer market.
@@ -64,6 +75,14 @@ GROUP = {"PG": "G", "SG": "G", "G": "G", "SF": "F", "PF": "F", "F": "F", "C": "C
 TARGET_MINUTES = {"G": 96, "F": 96, "C": 48}
 RESEARCH_MOCKS = {"vitale_espn_2004_06_22": 31, "hrr_2004_06_24": 31, "nbadraft_net_2004_mock": 61}
 YEAR, SEASON_END = 2004, "2004-04-14"
+# Wade's draft_prospect requests (rule 7): weighed from the 2006 draft, the first draft after his 2005-10-31 request, so the
+# 2004 and 2005 drafts replay unchanged. The lift is no new constant: his draw weight takes the summer market's
+# (1 + standing weight). Applied to the utility instead, the softmax would exponentiate it (at TEMPERATURE 0.12 a 0.8
+# franchise weight on a 1.0 utility is exp(6.67), about 790x), turning a recommendation into a near-certain pick.
+REQUESTS_FROM = 2006
+REQUESTS_FILE = "wade_requests.json"
+PROSPECT_SUBJECT = "draft_prospect"
+PROSPECT_VERBS = ("evaluate",)          # a later row for the same player with another verb withdraws the recommendation
 
 
 def _seasons_ahead(n=3):
@@ -268,6 +287,175 @@ def pick_value(slot):
     return TOP_PICK_VALUE * math.exp(-PICK_DECAY * (slot - 1))
 
 
+# -- 7: Wade's scouting requests -----------------------------------------------------------------------------
+def _folded(name):
+    """A name's match key: accents and punctuation folded away (P.J. Tucker = PJ Tucker, Uroš = Uros)."""
+    return _key(name or "").replace("_", "")
+
+
+def _same_prospect(a, b, pool=None):
+    """Whether two request rows name the same prospect: with the class (`pool`), the same class player when both
+    resolve to one (`match_prospect`); otherwise the same bbr_id when both give one, else the same folded name, so a
+    name-only row is the row that gave the bbr_id (match_prospect's own rule)."""
+    if pool:
+        ka, kb = match_prospect(a, pool), match_prospect(b, pool)
+        if ka is not None and kb is not None:
+            return ka == kb
+    if a.get("bbr_id") and b.get("bbr_id"):
+        return a["bbr_id"] == b["bbr_id"]
+    name = _folded(a.get("player"))
+    return bool(name) and name == _folded(b.get("player"))
+
+
+def wade_requests(root=ROOT, pool=None):
+    """Wade's `draft_prospect` requests for this draft, oldest first: rows of the draft season's
+    `09_Draft/wade_requests.json` (FOLDER) dated on or before the draft date whose `draft_year` is this draft (a row
+    without one belongs to its folder's draft). The latest row per prospect (date, then file order) stands, rows naming
+    the same prospect by `_same_prospect` (with `pool`, as draft night passes the class, the class player each resolves
+    to), so a later name-only row repeats or withdraws one that gave the bbr_id; only a PROSPECT_VERBS row is a
+    recommendation. [] before REQUESTS_FROM, so the 2004 and 2005 drafts replay unchanged."""
+    if YEAR < REQUESTS_FROM:
+        return []
+    path = Path(root) / FOLDER / REQUESTS_FILE
+    if not path.is_file():
+        return []
+    rows = []
+    for i, r in enumerate(_read(path).get("requests", [])):
+        if r.get("subject") != PROSPECT_SUBJECT or str(r.get("date") or "9999") > DRAFT_DATE:
+            continue
+        if r.get("draft_year") not in (None, "") and int(r["draft_year"]) != YEAR:
+            continue
+        if r.get("bbr_id") or _folded(r.get("player")):
+            rows.append(((str(r["date"]), i), r))
+    rows = [r for _, r in sorted(rows, key=lambda v: v[0])]
+    standing = [r for n, r in enumerate(rows) if not any(_same_prospect(r, later, pool) for later in rows[n + 1:])]
+    return [r for r in standing if r.get("requested") in PROSPECT_VERBS]
+
+
+def match_prospect(request, pool):
+    """The class key a request names: the prospect with its bbr_id, else the one with its folded name when that
+    prospect's own bbr_id does not name someone else; None when he is not in the draft class."""
+    b = request.get("bbr_id")
+    if b:
+        for k in sorted(pool):
+            if pool[k].get("bbr_id") == b:
+                return k
+    name = _folded(request.get("player"))
+    for k in sorted(pool):
+        if name and _folded(pool[k]["player"]) == name and not (b and pool[k].get("bbr_id") and pool[k]["bbr_id"] != b):
+            return k
+    return None
+
+
+def _standing(root):
+    """Wade's standing on the draft date (`standing.standing_on`) and its weight (`standing.STANDING_WEIGHT`)."""
+    from .standing import STANDING_WEIGHT, standing_on
+    s = standing_on(root, DRAFT_DATE)
+    return {"standing": s.get("standing"), "as_of": s.get("as_of"), "weight": STANDING_WEIGHT.get(s.get("standing"), 0.0)}
+
+
+def _consider(wanted, pool, tier, best_tier, in_tier, own, taken_at, weight):
+    """How each request stands at one of Miami's picks: `weighed` (available, in the best available tier and in the
+    draw, his draw weight x (1 + weight); `added` when outside the club's own top three), `only_candidate` (the only
+    player left in the tier: taken without a draw), `outside_tier`, `taken` or `not_in_class` (not weighed)."""
+    out = []
+    for r, k in wanted:
+        n = {"player": r.get("player"), "bbr_id": r.get("bbr_id"), "key": k}
+        if k is None:
+            n.update(status="not_in_class", reason=f"not in the {YEAR} draft class; not weighed")
+        elif k in taken_at:
+            slot, club = taken_at[k]
+            n.update(status="taken", taken={"pick": slot, "club": club}, reason=f"taken No. {slot} by {club}; not weighed")
+        elif tier[k] != best_tier:
+            n.update(status="outside_tier", tier=tier[k], best_tier=best_tier,
+                     reason=f"tier {tier[k]}, outside the best available tier {best_tier}; not weighed (no reach across tiers)")
+        elif len(in_tier) == 1:
+            n.update(status="only_candidate", tier=tier[k], best_tier=best_tier,
+                     reason=f"the only player left in tier {best_tier}; taken without a draw")
+        else:
+            added = k not in own
+            n.update(status="weighed", tier=tier[k], best_tier=best_tier, weight=weight, draw_weight_factor=round(1 + weight, 3),
+                     added_to_candidates=added,
+                     reason=f"tier {tier[k]}, in the best available tier; draw weight x{1 + weight:.2f}"
+                            + (" (added to the club's top three by utility)" if added else ""))
+        out.append(n)
+    return out
+
+
+def _request_basis(notes, standing):
+    """The sentence a Miami pick's packet basis gains: each request weighed, with its weight, or why not."""
+    return (f" Wade's scouting requests ({(FOLDER / REQUESTS_FILE).as_posix()}; standing {standing['standing']} on {DRAFT_DATE}, "
+            f"weight {standing['weight']}): " + "; ".join(f"{n['player']} {n['reason']}" for n in notes)
+            + " (runtime/draft.py rule 7; docs/front_office.md, Wade's requests).")
+
+
+def _pick_requests(slot, rnd, club, pool, choice, notes, probs, own):
+    """One Miami pick's account of Wade's requests for the record: each request's status and reason and, for a weighed
+    prospect, his probability in the packet beside the one the club's own rule gave him (its top three without the
+    lift; 0 when he was added to them)."""
+    rows = []
+    for n in notes:
+        row = {k: v for k, v in n.items() if k != "key"}
+        if n["status"] == "weighed":
+            base = _options(own) if len(own) > 1 else {k: 1.0 for k in own}
+            row.update(probability=probs[n["key"]], probability_without_request=base.get(n["key"], 0.0))
+        row["selected"] = n["key"] == choice
+        rows.append(row)
+    return {"pick": slot, "round": rnd, "club": club, "event_id": f"{YEAR}-draft-pick-{slot}" if probs is not None else None,
+            "selected": pool[choice]["player"], "requests": rows}
+
+
+def _requests_record(wanted, pool, standing, weighed):
+    """The draft record's account of Wade's scouting requests: the source, his standing and weight on the draft date,
+    each request with the class name it resolved to (None when he is not in the class) and every Miami pick's account."""
+    return {"source": (FOLDER / REQUESTS_FILE).as_posix(), "standing": standing["standing"], "standing_as_of": standing["as_of"],
+            "weight": standing["weight"], "draw_weight_factor": round(1 + standing["weight"], 3),
+            "rule": "Recommendations for evaluation, weighed on Miami's own picks only: a requested prospect available in "
+                    "the best available tier is a candidate in Miami's draw with his draw weight x (1 + standing weight); "
+                    "outside that tier, taken or not in the class he changes nothing (runtime/draft.py rule 7).",
+            "requests": [{"player": r.get("player"), "bbr_id": r.get("bbr_id"), "college": r.get("college"),
+                          "position": r.get("position"), "date": r.get("date"), "requested": r.get("requested"),
+                          "class_player": pool[k]["player"] if k else None} for r, k in wanted],
+            "picks": weighed}
+
+
+def scouting_watch_list(record):
+    """Miami's scouting watch list, read from the draft record itself, never recomputed: for each prospect Wade asked
+    the scouts to evaluate (`wade_requests.requests`), his board tier and consensus slot (`board`, by the class name
+    resolved on draft night), what happened (`picks` by bbr_id, else by folded name: drafted, by whom at which pick;
+    `undrafted`; or not in the class) and the Miami picks at which his request was weighed. [] without requests."""
+    requests = (record.get("wade_requests") or {}).get("requests") or []
+    board = {_folded(b["player"]): b for b in record.get("board", [])}
+    undrafted = {_folded(n) for n in record.get("undrafted", [])}
+    weighed = (record.get("wade_requests") or {}).get("picks") or []
+    out = []
+    for r in requests:
+        name = r.get("class_player")
+        row = board.get(_folded(name)) if name else None
+        pick = next((p for p in record.get("picks", []) if r.get("bbr_id") and p.get("bbr_id") == r["bbr_id"]), None) \
+            or next((p for p in record.get("picks", []) if name and _folded(p["player"]) == _folded(name)), None)
+        entry = {"player": r["player"], "bbr_id": r.get("bbr_id"), "college": r.get("college"), "position": r.get("position"),
+                 "requested_on": r.get("date"), "in_class": name is not None, "class_player": name,
+                 "board_tier": row["tier"] if row else None, "consensus_slot": row["consensus_slot"] if row else None}
+        if pick:
+            entry.update(outcome="drafted", pick=pick["pick"], round=pick["round"], club=pick["club"], by_miami=pick["club"] == MIAMI,
+                         summary=f"drafted No. {pick['pick']} (round {pick['round']}) by {pick['club']}")
+        elif name and _folded(name) in undrafted:
+            entry.update(outcome="undrafted", summary="undrafted: an undrafted free agent in the summer market")
+        else:
+            entry.update(outcome="not_in_class", summary=f"not in the {record.get('draft', 'draft')} class")
+        entry["weighed_at_miami_picks"] = [w["pick"] for w in weighed for n in w["requests"]
+                                           if _same_prospect(n, r) and n["status"] in ("weighed", "only_candidate")]
+        out.append(entry)
+    return out
+
+
+def watch_list(root=ROOT):
+    """The recorded scouting watch list of this draft (empty before it, or without requests)."""
+    path = Path(root) / RECORD
+    return _read(path).get("scouting_watch_list", []) if path.is_file() else []
+
+
 # -- 5-6: draft night ----------------------------------------------------------------------------------------
 def _draw(root, packet):
     path = Path(root) / DRAWS / f"{packet['event_id']}.decision.json"
@@ -280,9 +468,13 @@ def _draw(root, packet):
     return None
 
 
-def _options(scores):
+def _options(scores, lift=None):
+    """Draw probabilities proportional to exp(utility / TEMPERATURE); `lift` ({key: standing weight}, rule 7) multiplies
+    a requested prospect's draw weight by 1 + weight. Without it the computation is the 2004 and 2005 one."""
     top = max(scores.values())
     weights = {k: math.exp((v - top) / TEMPERATURE) for k, v in scores.items()}
+    if lift:
+        weights = {k: w * (1 + lift.get(k, 0.0)) for k, w in weights.items()}
     total = sum(weights.values())
     probs = {k: max(0.000001, round(w / total, 6)) for k, w in weights.items()}
     drift = round(1 - sum(probs.values()), 6)
@@ -303,9 +495,11 @@ def run(root=ROOT, clock=None):
     order = _read(order_path)["picks"]
     pool, contexts = prospects(root), club_contexts(root)
     tier = tiers(pool)
+    wanted = [(r, match_prospect(r, pool)) for r in wade_requests(root, pool)]  # rule 7: [] before REQUESTS_FROM
+    standing = _standing(root) if wanted else None
     owners = {s["pick"]: s["owner_club"] for s in order}
     rounds = {s["pick"]: s["round"] for s in order}            # the order's own rounds (29 first-rounders in 2004, 30 later)
-    taken, picks, trades = set(), [], []
+    taken, picks, trades, taken_at, weighed = set(), [], [], {}, []
     for slot in sorted(owners):
         club = owners[slot]
         available = [k for k in pool if k not in taken]
@@ -331,20 +525,30 @@ def run(root=ROOT, clock=None):
                     club, ctx = owners[slot], contexts[owners[slot]]
         scores = {k: utility(pool[k], ctx) for k in in_tier}
         top3 = dict(sorted(scores.items(), key=lambda kv: (-kv[1], kv[0]))[:3])
+        notes, lift, own, probs = [], {}, dict(top3), None
+        if club == MIAMI and wanted:                         # rule 7: Miami's own picks only, after any trade
+            notes = _consider(wanted, pool, tier, best_tier, in_tier, own, taken_at, standing["weight"])
+            lift = {n["key"]: standing["weight"] for n in notes if n["status"] == "weighed"}
+            for k in sorted(lift, key=lambda k: (-scores[k], k)):
+                top3.setdefault(k, scores[k])                # a requested tier prospect is always a candidate
         if len(top3) == 1:
             choice = next(iter(top3))
         else:
-            probs = _options(top3)
+            probs = _options(top3, lift)
             choice = _draw(root, {"event_id": f"{YEAR}-draft-pick-{slot}", "date": DRAFT_DATE,
                                   "question": f"{YEAR} draft, No. {slot}: whom does {club} select ({', '.join(pool[k]['player'] for k in top3)})?",
                                   "decider": f"{club} front office (engine draw)",
                                   "options": {pool[k]["player"]: probs[k] for k in top3},
                                   "basis": f"Tier {best_tier} of the draft-night board; {ctx['stance']} club; utilities "
-                                           + ", ".join(f"{pool[k]['player']} {v:.2f}" for k, v in top3.items()) + " (runtime/draft.py)."})
+                                           + ", ".join(f"{pool[k]['player']} {v:.2f}" for k, v in top3.items()) + " (runtime/draft.py)."
+                                           + (_request_basis(notes, standing) if notes else "")})
             if choice is None:
                 return None
             choice = next(k for k in top3 if pool[k]["player"] == choice)
         taken.add(choice)
+        taken_at[choice] = (slot, club)
+        if notes:
+            weighed.append(_pick_requests(slot, rounds[slot], club, pool, choice, notes, probs, own))
         p = pool[choice]
         picks.append({"pick": slot, "round": rounds[slot], "club": club, "player": p["player"], "bbr_id": p["bbr_id"],
                       "position": p["position"], "tier": best_tier, "consensus_slot": p["consensus"],
@@ -352,10 +556,13 @@ def run(root=ROOT, clock=None):
     record = {"schema_version": 1, "kind": "draft", "draft": f"{YEAR} NBA Draft", "date": DRAFT_DATE,
               "rule": __doc__.split("\n\n", 1)[1].strip(), "picks": picks, "trades": trades,
               "undrafted": sorted(pool[k]["player"] for k in pool if k not in taken),
+              **({"wade_requests": _requests_record(wanted, pool, standing, weighed)} if wanted else {}),
               "board": [{"player": pool[k]["player"], "tier": tier[k], "consensus_slot": pool[k]["consensus"],
                          "floor": pool[k]["floor"], "median": pool[k]["median"], "ceiling": pool[k]["ceiling"]}
                         for k in sorted(pool, key=lambda k: (tier[k], pool[k]["consensus"]))],
               "clubs": contexts}
+    if wanted:
+        record["scouting_watch_list"] = scouting_watch_list(record)
     (root / RECORD).parent.mkdir(parents=True, exist_ok=True)
     (root / RECORD).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     _miami_pick_ledger(root, trades)

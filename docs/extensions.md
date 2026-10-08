@@ -121,6 +121,58 @@ drawn `no_offer` closes the decision with no question to him. Wade answers with
 The reply never signs anything; the next `scripts/extension_day.py --write DATE` applies it (accept: signed; decline: no
 contract changes). Wade is first eligible on 2006-10-31 (his 2006-07 option was exercised on 2005-10-31).
 
+## Wade's own terms
+
+Wade may file the terms he wants (a request with `subject` `extension_terms` in any season folder's
+`*/wade_requests.json`, for example `2005-06/04_Training_Camp/wade_requests.json` of 2005-10-31: 20% under his fair
+market value, five additional seasons, the first four fully guaranteed, the fifth a Miami team option, raises at the
+limit, no no-trade clause; if Miami does not offer, he plays out his rookie contract).
+
+- **Reader** (`extensions.terms_request`): his latest `extension_terms` row dated on or before the decision day, from any
+  season folder (filed in 2005-06, read in 2006-07); a same-day tie goes to the later file and row. A filing is one
+  negotiation's terms: once a Wade decision day on or after its date has passed, it is spent, so a filing for the
+  rookie-scale extension never sets a later veteran extension. Only Wade's own decision reads it, and every recorded day
+  (2005-10-31: Wade was not eligible) is unchanged.
+- **The worth call is unchanged**: offer or no offer, and the close-band draw, read his full worth exactly as for every
+  club. His terms shape the offer Miami makes once it offers. With no offer he plays out his contract, as filed.
+- **The payroll test reads what Miami would pay**: his offered first year, which also counts toward Miami's later offers
+  that day (`spent`). So his discount can let Miami's offer to him fit under its payroll ceiling where the rule's first
+  year would not, and leaves that much more room for a Miami player decided after him the same day (candidates are
+  decided in order of worth); that player's decision reads the room, never Wade's terms.
+
+Miami's answer (`extensions.shape`, one rule, no draw): a requested term is adopted when it is legal and at least as
+favourable to Miami as its rule's term; otherwise the rule's term stands and the reason is recorded.
+
+| Term | Adopted when | The offer |
+| --- | --- | --- |
+| `discount_from_market` d | the discounted figure is at or under the rule's first year | first year = his price (the market benchmark the call computes, inside his minimum and maximum) x (1 - d), held to his minimum |
+| `additional_seasons` | within the agreement's limit (5 for a rookie-scale extension, Q52) | his seasons; the rule's length is the years he wants by age, so the seasons he names take its place |
+| `raise` | "maximum" (the rule's own raise) or a share at or under the limit | flat raises of that share of the first year (a veteran's base: the smaller of the first year and his last salary) |
+| `team_option_final_season` | an option clause is recorded (Q51: one option season, the last) | a Miami team option on the final season, inside the five seasons |
+| `guaranteed_seasons` | it equals the seasons less the option season | every season but the option season fully guaranteed |
+| `no_trade_clause` false, `player_option_final_season` false | always (the rule's form) | no clause, no player option |
+| a higher salary (a premium), a player option, a no-trade clause, seasons or raises over the limit, any other term | never: less favourable to Miami or not legal | the rule's term |
+
+A term less favourable to Miami is simply not adopted, never drawn (`front_office.request_override` is not used): the
+call already went his way, and his remedy is his own answer (decline). The payroll test counts the offered first year
+(the ceiling keeps reading his price).
+
+- **Records**: the decision names the request (`request`: path, row, date, words, terms, source); its offer adds
+  `options` ({season: "team_option"}), `guaranteed_seasons`, `team_option_season` and `terms_basis` (the benchmark, the
+  discount, the rule's own terms and each term adopted or not with its reason). Wade's offer record carries the same
+  and the benchmark and discount in its evidence; his page shows his words, the benchmark and discount, the term table
+  and the schedule with each season guaranteed or the option season and its deadline, and keeps accept and decline.
+- **The option once signed** is an option season like every other, in the same form: `options` on the league ledger
+  entry, `amount_kind` "team_option" on Miami's cap sheet (counted as a conditional amount; left out of a `guaranteed`
+  map, so the guarantee review never reads it), "team_option" with guaranteed 0 and `option_deadline` in the contract
+  archive and on the contract pages (the option's outcome once decided). `runtime/options.py` decides it on the veteran
+  deadline, June 29 before the season (2011-06-29 for 2011-12), never as a rookie-scale option, though the extended row
+  keeps its rookie-scale route; a decline cuts the season from the sheet and the ledger (Wade's ledger key too) and the
+  extension stays valid. The rollover carries the sheet entry and the ledger's `options`; continuity compares schedules.
+
+The legal limits are sourced: Q52 (the five additional seasons and the 10.5% raises, `extensions.terms`) and Q51 (one
+option season, the last, `extensions.option_clause` in `library/2005/league/nba_2005_cba_rules.json`).
+
 ## Records and application
 
 - `<season>/League/extension_decisions.json`: `days` (each decided day, its kinds and eligible count) and `decisions`
@@ -128,7 +180,8 @@ contract changes). Wade is first eligible on 2006-10-31 (his 2006-07 option was 
 - A signed extension: the league ledger entry's schedule gains its seasons and an `extension` record (every later ledger
   already written too); for Miami, its cap sheet (`extension`, schedule, amount kinds; status and signing date stay the
   agreement's in force), the schedule totals, the contract archive (`<player_id>-<day>`) and the phase note; for Wade,
-  his dated identity and contract status.
+  his dated identity and contract status. An option season his terms put in is written in each place's own option form
+  (see Wade's own terms).
 - Carry-over: `league_contracts.carried` and `build` keep the `extension` record (a rookie-scale flag ends at the first
   extension season), `extensions.reapply` re-applies a season's signed extensions on a rebuild, the rollover sets
   Miami's carried entry `under_contract` from the first extension season and refuses to run while an extension day of
@@ -149,7 +202,13 @@ contract changes). Wade is first eligible on 2006-10-31 (his 2006-07 option was 
 well-formed records; every extension day before the clock decided, each
 on its own date (`recorded_on` is the day); a clear call never drawn and a close call always drawn (Miami's on Wade
 too, as its own `offer`/`no_offer` packet); packet chances equal to the recorded call and answer; outcomes equal to the
-draws or Wade's answer; offers within the agreement's limits;
+draws or Wade's answer; offers within the agreement's limits; an offer shaped by terms only Wade's, with one team
+option season at most (the last), the guaranteed seasons following it and the first year following the benchmark and
+the adopted discount; every Wade decision recording exactly his terms on file for its day (`terms_request`, None when
+none: a row edited or removed since, or filed for the day afterwards, is refused) and a shaped offer equal to `shape`
+recomputed from the recorded evidence, contract and terms (years, first year, raise, schedule, option, `terms_basis`);
+Wade's offer record agreeing with his decision; a signed extension's option season missing from a schedule only once
+its decline is applied (`League/option_decisions.json`);
 signed extensions present (and unsigned ones absent) in every ledger, Miami's sheet and archive; no expiring-contract
 treatment in the next market; Wade's offer, page, answer and pending entry in agreement; and each day's eligible set
 replayed from its start-of-day holders.

@@ -2,7 +2,7 @@
 
 # Contract negotiation | Dwyane Wade
 
-Career date: 2005-10-31 · Miami Heat · inactive
+Career date: 2005-10-31 · Miami Heat · planned
 
 [Live milestone desk](index.html#contract_negotiation) · [All milestones](README.md)
 
@@ -59,6 +59,24 @@ Legal scale reference only: not offers, signed salary or a future option decisio
 - Signing date, registration and any verified conditions.
 - Basketball role discussions remain separate from salary and legal principal terms.
 
+## Wade's contract extension outlook
+
+| Working record | Dated information |
+| --- | --- |
+| Event ID | 2005-10-31-wade-extension-outlook |
+| Recorded | 2005-10-31 |
+| Status | Planned |
+| Owner | player |
+| Evidence | [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md) |
+| Reply registry version | b50a46e63f0f8cc2 |
+| Wade's terms | Five additional seasons from 2007-08; first year 20% below his fair market value on the decision day; first four seasons guaranteed; 2011-12 a Miami team option; raises up to 10.5% of the first-year salary; no no-trade clause |
+| Current contract | Rookie scale signed 2003-07-21; $2,526,600 in 2005-06; 2006-07 team option ($3,201,202) exercised 2005-10-31 |
+| Rules | Rookie-scale extension window to 2006-10-31; up to five seasons beyond 2006-07; one option season, the last (cbafaq05 Q51, Q52) |
+| Scouting recommendations | Kyle Lowry (Villanova, PG) and P.J. Tucker (Texas, F) for the 2006 draft, weighed only on Miami's own picks |
+| If no offer | Wade plays out his rookie contract; restricted free agency in July 2007 if Miami tenders a qualifying offer |
+| Your response | Miami's front office decides on 2006-10-31 whether to offer; Wade answers the actual offer then. |
+| Next checkpoint | 2006-10-31: Miami's extension decision on Wade (runtime/extensions.py) |
+
 ## Available response paths
 
 - [Review the rookie-contract workflow](../../../docs/front_office.md): Explains the existing club-offer and player-response process.
@@ -66,7 +84,7 @@ Legal scale reference only: not offers, signed salary or a future option decisio
 
 ## Next checkpoint
 
-Miami records its actual first offer; the player then chooses a response.
+2006-10-31: Miami's extension decision on Wade (runtime/extensions.py)
 
 ## Evidence
 
@@ -75,10 +93,14 @@ Miami records its actual first offer; the player then chooses a response.
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
 - [Owning event](../2005-06/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2005-06/00_Team/Finances/contract_schedules.json)
+- [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
+- [Recorded request](../2005-06/09_Draft/wade_requests.json)
+- [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
 - [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/rotation.json)
+- [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
 - [Closed game](../2005-06/05_Preseason/Game_3.md)

@@ -10,9 +10,11 @@
 Idempotent: a day is decided once in `<season>/League/extension_decisions.json`, on its own date (the career clock on
 it); draw packets with `python scripts/draw_decisions.py`, then run again to apply them. Wade's offer (a clear one at
 once, a close call once the engine draws Miami's offer) waits for his reply (`scripts/player_milestone.py --reply`, kind
-`extension`); run again after it. Evidence is dated on each day. A day the clock passed without deciding it, a day ahead
-of the clock, or a day behind an unresolved earlier decision is refused: the step prints "extensions refused: ..." and
-exits 1, so the driver stops with the reason on screen (a missed day needs a decision, never a late run).
+`extension`); run again after it. Wade's own extension terms (`extension_terms` in a `wade_requests.json`) shape his
+offer only (`extensions.shape`); the lines name the request and an option season. Evidence is dated on each day. A day
+the clock passed without deciding it, a day ahead of the clock, or a day behind an unresolved earlier decision is
+refused: the step prints "extensions refused: ..." and exits 1, so the driver stops with the reason on screen (a missed
+day needs a decision, never a late run).
 """
 from pathlib import Path
 import sys
@@ -31,7 +33,9 @@ def describe(d):
     head = f"{d['day']}  {d['club']}: {d['player']} {d['kind'].replace('_', ' ')} extension"
     if d["outcome"] == "no_offer" and not o:
         return f"{head} -> no offer ({d['club_call']['how']})"
-    terms = f"{o['years']} seasons from {o['first_season']}, {money(o['first_salary'])} rising {money(o['raise'])} ({money(o['total'])})"
+    terms = extensions.terms_line(o)
+    if d.get("request"):
+        terms += f"; shaped by Wade's terms of {d['request']['date']} ({d['request']['path']})"
     if d["wade"] and d["club_call"]["decision"] == "draw":
         return f"{head} -> close call: Miami's offer of {terms} is an engine draw ({d['packet']}); Wade answers an offer"
     if d["wade"]:
@@ -50,7 +54,8 @@ def applied_lines(applied):
         o = d.get("offer")
         if d["outcome"] == "signed":
             prefix = "WADE EXTENSION" if d["wade"] else "MIAMI EXTENSION" if d["club"] == extensions.MIAMI else "EXTENSION"
-            out.append(f"{prefix} {d['club']}: {d['player']} {o['years']} seasons from {o['first_season']} ({money(o['total'])})")
+            option = f"; {o['team_option_season']} a team option" if o.get("team_option_season") else ""
+            out.append(f"{prefix} {d['club']}: {d['player']} {o['years']} seasons from {o['first_season']} ({money(o['total'])}{option})")
         elif o:
             declined = d["outcome"] == "declined"
             what = "declines" if declined else "is not offered (the drawn club call)"
@@ -85,9 +90,8 @@ def main(argv):
         for path in sorted((ROOT / extensions.PLAYER).glob(f"*/01_Free_Agency/Wade_Extension/{oid}.json")):
             r = extensions._read(path)
             o = r["offer"]
-            print(f"WADE EXTENSION OFFER {r['club']}: {o['years']} seasons from {o['first_season']}, {money(o['first_salary'])} "
-                  f"rising {money(o['raise'])} ({money(o['total'])}); answer with scripts/player_milestone.py --reply "
-                  f"(kind extension, {path.relative_to(ROOT).as_posix()})")
+            print(f"WADE EXTENSION OFFER {r['club']}: {extensions.terms_line(o)}; answer with scripts/player_milestone.py "
+                  f"--reply (kind extension, {path.relative_to(ROOT).as_posix()})")
     print(f"extensions: {len(decided)} decided, {len(written)} draw packet(s) written, {len(applied)} applied, "
           f"{len(waiting)} waiting on Wade")
 
