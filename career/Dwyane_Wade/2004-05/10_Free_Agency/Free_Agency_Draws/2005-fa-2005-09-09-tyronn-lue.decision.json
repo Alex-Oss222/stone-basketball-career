@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-fa-2005-09-09-tyronn-lue",
+ "date": "2005-09-09",
+ "question": "2005 free agency, 2005-09-09: which offer does Tyronn Lue accept (Toronto Raptors $4,878,136 x 4, Utah Jazz $4,878,136 x 4), or does he wait?",
+ "decider": "Tyronn Lue (simulated player, engine draw)",
+ "options": {
+  "Toronto Raptors": 0.938219,
+  "Utah Jazz": 0.011781,
+  "wait": 0.05
+ },
+ "basis": "Ask $4,878,136; best offer 1.00 of the ask in total; accept chance 0.950; priority money; utility Toronto Raptors 77.1, Utah Jazz 59.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

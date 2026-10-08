@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-09-09-donyell-marshall",
+ "date": "2005-09-09",
+ "question": "2005 free agency, 2005-09-09: which offer does Donyell Marshall accept (Miami Heat $6,337,327 x 3), or does he wait?",
+ "decider": "Donyell Marshall (simulated player, engine draw)",
+ "options": {
+  "Miami Heat": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $6,337,327; best offer 1.00 of the ask in total; accept chance 0.950; priority winning; utility Miami Heat 84.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

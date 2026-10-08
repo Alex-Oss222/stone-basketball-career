@@ -1,0 +1,17 @@
+{
+ "event_id": "2005-fa-2005-09-09-michael-bradley",
+ "date": "2005-09-09",
+ "question": "2005 free agency, 2005-09-09: which offer does Michael Bradley accept (Atlanta Hawks $771,123 x 1, Charlotte Bobcats $771,123 x 1, Chicago Bulls $771,123 x 1, Denver Nuggets $771,123 x 1, Houston Rockets $771,123 x 1, Los Angeles Clippers $771,123 x 1, Los Angeles Lakers $771,123 x 1), or does he wait?",
+ "decider": "Michael Bradley (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.116165,
+  "Charlotte Bobcats": 0.00366,
+  "Chicago Bulls": 0.232762,
+  "Denver Nuggets": 0.013397,
+  "Houston Rockets": 0.064072,
+  "Los Angeles Clippers": 0.42412,
+  "Los Angeles Lakers": 0.095824,
+  "wait": 0.05
+ },
+ "basis": "Ask $771,123; best offer 1.00 of the ask in total; accept chance 0.950; priority loyalty; utility Atlanta Hawks 46.5, Charlotte Bobcats 32.6, Chicago Bulls 49.3, Denver Nuggets 37.8, Houston Rockets 44.1, Los Angeles Clippers 51.7, Los Angeles Lakers 45.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

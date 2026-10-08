@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-09",
+ "decider": "Milt Palacio (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-09-milt-palacio",
+ "kind": "decision",
+ "options": {
+  "New York Knicks": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "New York Knicks",
+ "question": "2005 free agency, 2005-09-09: which offer does Milt Palacio accept (New York Knicks $4,040,593 x 4), or does he wait?"
+}

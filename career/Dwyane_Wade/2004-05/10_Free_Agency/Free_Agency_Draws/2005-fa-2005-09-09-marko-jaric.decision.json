@@ -1,0 +1,20 @@
+{
+ "event_id": "2005-fa-2005-09-09-marko-jaric",
+ "date": "2005-09-09",
+ "question": "2005 free agency, 2005-09-09: which offer does Marko Jaric accept (Atlanta Hawks $5,000,000 x 5, Boston Celtics $5,000,000 x 5, Charlotte Bobcats $5,000,000 x 5, Chicago Bulls $5,000,000 x 5, Denver Nuggets $5,000,000 x 5, Detroit Pistons $5,000,000 x 5, Golden State Warriors $5,000,000 x 5, Houston Rockets $5,000,000 x 5, Orlando Magic $5,000,000 x 5, Seattle SuperSonics $5,000,000 x 5), or does he wait?",
+ "decider": "Marko Jaric (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.077716,
+  "Boston Celtics": 0.325566,
+  "Charlotte Bobcats": 0.003755,
+  "Chicago Bulls": 0.155721,
+  "Denver Nuggets": 0.008963,
+  "Detroit Pistons": 0.058152,
+  "Golden State Warriors": 0.003305,
+  "Houston Rockets": 0.065731,
+  "Orlando Magic": 0.013812,
+  "Seattle SuperSonics": 0.057286,
+  "wait": 0.229993
+ },
+ "basis": "Ask $6,385,785; best offer 0.78 of the ask in total; accept chance 0.770; priority loyalty; utility Atlanta Hawks 63.2, Boston Celtics 69.0, Charlotte Bobcats 51.1, Chicago Bulls 66.0, Denver Nuggets 54.6, Detroit Pistons 62.1, Golden State Warriors 50.6, Houston Rockets 62.6, Orlando Magic 56.3, Seattle SuperSonics 62.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

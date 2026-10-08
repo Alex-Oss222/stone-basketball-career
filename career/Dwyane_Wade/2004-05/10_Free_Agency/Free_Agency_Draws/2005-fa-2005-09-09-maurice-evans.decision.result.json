@@ -1,0 +1,18 @@
+{
+ "date": "2005-09-09",
+ "decider": "Maurice Evans (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-09-maurice-evans",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.569333,
+  "Golden State Warriors": 0.180723,
+  "Milwaukee Bucks": 0.052429,
+  "Minnesota Timberwolves": 0.060914,
+  "New Jersey Nets": 0.005809,
+  "Sacramento Kings": 0.065658,
+  "Utah Jazz": 0.015134,
+  "wait": 0.05
+ },
+ "outcome": "Golden State Warriors",
+ "question": "2005 free agency, 2005-09-09: which offer does Maurice Evans accept (Chicago Bulls $771,123 x 1, Golden State Warriors $771,123 x 1, Milwaukee Bucks $771,123 x 1, Minnesota Timberwolves $771,123 x 1, New Jersey Nets $771,123 x 1, Sacramento Kings $771,123 x 1, Utah Jazz $771,123 x 1), or does he wait?"
+}

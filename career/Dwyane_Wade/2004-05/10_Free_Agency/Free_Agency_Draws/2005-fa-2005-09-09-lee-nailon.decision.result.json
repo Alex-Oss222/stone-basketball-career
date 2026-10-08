@@ -1,0 +1,13 @@
+{
+ "date": "2005-09-09",
+ "decider": "Lee Nailon (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-09-lee-nailon",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.130199,
+  "Denver Nuggets": 0.819801,
+  "wait": 0.05
+ },
+ "outcome": "Denver Nuggets",
+ "question": "2005 free agency, 2005-09-09: which offer does Lee Nailon accept (Charlotte Bobcats $835,810 x 1, Denver Nuggets $835,810 x 1), or does he wait?"
+}

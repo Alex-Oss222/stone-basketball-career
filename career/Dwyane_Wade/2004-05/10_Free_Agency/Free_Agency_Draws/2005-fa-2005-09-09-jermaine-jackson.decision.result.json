@@ -1,0 +1,13 @@
+{
+ "date": "2005-09-09",
+ "decider": "Jermaine Jackson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-09-jermaine-jackson",
+ "kind": "decision",
+ "options": {
+  "Milwaukee Bucks": 0.74494,
+  "Minnesota Timberwolves": 0.20506,
+  "wait": 0.05
+ },
+ "outcome": "Milwaukee Bucks",
+ "question": "2005 free agency, 2005-09-09: which offer does Jermaine Jackson accept (Milwaukee Bucks $900,498 x 1, Minnesota Timberwolves $900,498 x 1), or does he wait?"
+}

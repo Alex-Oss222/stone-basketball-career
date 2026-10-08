@@ -1,0 +1,17 @@
+{
+ "date": "2005-09-09",
+ "decider": "Anthony Carter (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-09-anthony-carter",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.196696,
+  "Milwaukee Bucks": 0.020069,
+  "Minnesota Timberwolves": 0.194739,
+  "New Jersey Nets": 0.001152,
+  "Sacramento Kings": 0.536015,
+  "Utah Jazz": 0.001329,
+  "wait": 0.05
+ },
+ "outcome": "Sacramento Kings",
+ "question": "2005 free agency, 2005-09-09: which offer does Anthony Carter accept (Golden State Warriors $900,498 x 1, Milwaukee Bucks $900,498 x 1, Minnesota Timberwolves $900,498 x 1, New Jersey Nets $900,498 x 1, Sacramento Kings $900,498 x 1, Utah Jazz $900,498 x 1), or does he wait?"
+}

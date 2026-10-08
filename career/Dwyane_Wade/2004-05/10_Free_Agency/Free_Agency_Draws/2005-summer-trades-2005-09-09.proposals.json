@@ -1,0 +1,46 @@
+{
+ "schema_version": 1,
+ "date": "2005-09-09",
+ "rule": "runtime/free_agency_2004.py Market.trade_proposals",
+ "deals": [
+  {
+   "date": "2005-09-09",
+   "clubs": [
+    "Detroit Pistons",
+    "Sacramento Kings"
+   ],
+   "a": {
+    "club": "Detroit Pistons",
+    "sends": [
+     "Erick Dampier"
+    ],
+    "bbr_ids": [
+     "dampier01"
+    ],
+    "salary": 11104594
+   },
+   "b": {
+    "club": "Sacramento Kings",
+    "sends": [
+     "P.J. Brown",
+     "Bobby Jackson"
+    ],
+    "bbr_ids": [
+     "brownpj01",
+     "jacksbo01"
+    ],
+    "salary": 11875000
+   },
+   "gain": {
+    "Detroit Pistons": 0.1,
+    "Sacramento Kings": 0.155
+   },
+   "accept": {
+    "Detroit Pistons": 0.732,
+    "Sacramento Kings": 0.915
+   },
+   "both": 0.66978,
+   "id": "2005-summer-trade-2005-09-09-brownpj01-dampier01-jacksbo01"
+  }
+ ]
+}

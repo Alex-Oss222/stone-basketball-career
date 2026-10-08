@@ -1,0 +1,13 @@
+{
+ "date": "2005-09-09",
+ "decider": "Tyronn Lue (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-09-tyronn-lue",
+ "kind": "decision",
+ "options": {
+  "Toronto Raptors": 0.938219,
+  "Utah Jazz": 0.011781,
+  "wait": 0.05
+ },
+ "outcome": "Toronto Raptors",
+ "question": "2005 free agency, 2005-09-09: which offer does Tyronn Lue accept (Toronto Raptors $4,878,136 x 4, Utah Jazz $4,878,136 x 4), or does he wait?"
+}

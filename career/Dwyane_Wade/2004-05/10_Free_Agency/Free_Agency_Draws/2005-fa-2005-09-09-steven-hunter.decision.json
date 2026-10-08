@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-09-09-steven-hunter",
+ "date": "2005-09-09",
+ "question": "2005 free agency, 2005-09-09: which offer does Steven Hunter accept (New Orleans Hornets $4,254,046 x 5), or does he wait?",
+ "decider": "Steven Hunter (simulated player, engine draw)",
+ "options": {
+  "New Orleans Hornets": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $4,254,046; best offer 1.00 of the ask in total; accept chance 0.950; priority loyalty; utility New Orleans Hornets 75.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

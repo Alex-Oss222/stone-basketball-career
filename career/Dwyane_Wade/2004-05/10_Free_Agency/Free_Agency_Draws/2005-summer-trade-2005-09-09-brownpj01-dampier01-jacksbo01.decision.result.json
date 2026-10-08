@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-09",
+ "decider": "Detroit Pistons and Sacramento Kings front offices (engine draw)",
+ "event_id": "2005-summer-trade-2005-09-09-brownpj01-dampier01-jacksbo01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.66978,
+  "decline": 0.33022
+ },
+ "outcome": "accept",
+ "question": "Do Detroit Pistons and Sacramento Kings trade Erick Dampier for P.J. Brown and Bobby Jackson on 2005-09-09?"
+}

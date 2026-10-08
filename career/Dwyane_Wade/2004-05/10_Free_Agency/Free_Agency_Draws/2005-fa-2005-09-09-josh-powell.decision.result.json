@@ -1,0 +1,23 @@
+{
+ "date": "2005-09-09",
+ "decider": "Josh Powell (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-09-josh-powell",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.112057,
+  "Charlotte Bobcats": 0.00354,
+  "Chicago Bulls": 0.00778,
+  "Denver Nuggets": 0.012923,
+  "Detroit Pistons": 0.084058,
+  "Houston Rockets": 0.061961,
+  "Los Angeles Clippers": 0.06013,
+  "Los Angeles Lakers": 0.003211,
+  "New Orleans Hornets": 0.001335,
+  "Philadelphia 76ers": 0.010633,
+  "San Antonio Spurs": 0.586403,
+  "Washington Wizards": 0.005969,
+  "wait": 0.05
+ },
+ "outcome": "Detroit Pistons",
+ "question": "2005 free agency, 2005-09-09: which offer does Josh Powell accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Denver Nuggets $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, New Orleans Hornets $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?"
+}
