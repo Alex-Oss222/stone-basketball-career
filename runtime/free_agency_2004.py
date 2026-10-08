@@ -251,23 +251,27 @@ def season_evidence(root=ROOT):
 _IN_CONTEXT = []                           # year_context depth: inside a market year, identity() uses that year
 
 
-def identity(root=ROOT, year=None):
+def identity(root=ROOT, year=None, on=None):
     """{bbr_id: {"name", "birth_date", "position", "service"}} from the registry, rosters and careers.
 
     The year's identity (service through the season before its summer): `year`, else the market year in force (inside
     `year_context`), else the summer that opened the career's live season (the season-change audit: outside a context
-    this used the 2004 rules in every later season, one season of service short and without the new draftees)."""
+    this used the 2004 rules in every later season, one season of service short and without the new draftees).
+    With `on`, the registry is read as it stood that day: a row added later (`added_on`, a debut written by the season's
+    games) was unknown then, so a replay of a closed summer reads the inputs the summer itself read."""
     root = Path(root)
     if year is None and not _IN_CONTEXT:
         from .seasons import active
         year = max(2004, market_year(active(root)))     # 2003-04 had no simulated summer market: 2004 is the first
     if year is not None and int(year) != YEAR:
         with year_context(int(year), root):
-            return identity(root)
+            return identity(root, on=on)
     from .rotations import load_rosters
     out = {}
     registry = _read(root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json")
     for p in registry["players"] if isinstance(registry, dict) else registry:
+        if on is not None and (p.get("added_on") or "") > on:
+            continue
         if p.get("bbr_id"):
             out[p["bbr_id"]] = {"name": p["name"], "birth_date": p.get("birth_date"), "position": p.get("position")}
     for season in (SEASON, NEW):
@@ -623,7 +627,7 @@ class Market:
         self.root = Path(root)
         self.clock = clock or career_clock(self.root)
         self.cal = calendar(root)
-        self.ident = identity(root)
+        self.ident = identity(root, on=self.clock)          # the registry as the summer knew it on its own day
         self.book = starting_book(root)
         self.pricing = Pricing(root, ident=self.ident)
         self.prior = prior_salaries(root)

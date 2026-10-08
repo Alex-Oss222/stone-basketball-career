@@ -97,7 +97,7 @@ class Valuation:
             for p in club["players"]:
                 if p.get("bbr_id") and p.get("birth_date"):
                     self.birth[p["bbr_id"]] = p["birth_date"]
-        for p in read(REGISTRY_PATH, root)["players"]:
+        for p in self.registry():
             if p.get("bbr_id") and p.get("birth_date"):
                 self.birth.setdefault(p["bbr_id"], p["birth_date"])
         # Miami's register carries sourced birth dates for players the end-of-season baseline lacks (Eddie Jones,
@@ -119,12 +119,18 @@ class Valuation:
                     self.service[p["bbr_id"]] = p.get("nba_seasons_before_2003_04")
         else:
             from .free_agency_2004 import identity
-            self.service = {b: e.get("service") for b, e in identity(root).items()}
-            for b, e in identity(root).items():
+            known = identity(root, on=on)
+            self.service = {b: e.get("service") for b, e in known.items()}
+            for b, e in known.items():
                 if e.get("birth_date"):
                     self.birth.setdefault(b, e["birth_date"])
         self.fit = self._fit_comparables()
         self.honors = self._honors()
+
+    def registry(self):
+        """The league player registry as it stood on the valuation date: rows added later (`added_on`, a debut written
+        by later games) were unknown then, so a replay of an earlier decision reads what the decision read."""
+        return [p for p in read(REGISTRY_PATH, self.root)["players"] if (p.get("added_on") or "") <= self.on]
 
     def _honors(self):
         """{bbr_id: [honor names]} from the most recent season's awards announced on or before the date."""
@@ -134,7 +140,7 @@ class Valuation:
         if not path.is_file():
             return {}
         from .season_awards import honors
-        by_name = {p["name"]: p["bbr_id"] for p in read(REGISTRY_PATH, self.root)["players"] if p.get("bbr_id")}
+        by_name = {p["name"]: p["bbr_id"] for p in self.registry() if p.get("bbr_id")}
         out = {}
         for d in read(rel, self.root)["decisions"]:
             if d["announced_on"] > self.on:
