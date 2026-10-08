@@ -113,6 +113,39 @@ class TradedInContractTests(unittest.TestCase):
         self.assertIn("not recorded", e["notes"])
 
 
+class ReturnedDepartureTests(unittest.TestCase):
+    def test_a_player_miami_holds_again_leaves_his_other_club(self):
+        import json
+        import tempfile
+        from runtime.rollover import close_returned_departures
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "departures.json"
+            path.write_text(json.dumps({"entries": [
+                {"player": "Eddie Jones", "bbr_id": "jonesed02", "club": "Utah Jazz", "from": "2005-01-24", "until": None},
+                {"player": "Dorell Wright", "bbr_id": "wrighdo01", "club": "Utah Jazz", "from": "2005-08-05", "until": None}]}))
+            held = [{"bbr_id": "jonesed02", "from": "2005-08-05", "until": None}]
+            self.assertEqual(close_returned_departures(path, held), ["Eddie Jones"])
+            entries = json.loads(path.read_text())["entries"]
+            self.assertEqual([e["until"] for e in entries], ["2005-08-05", None])
+            self.assertEqual(close_returned_departures(path, held), [])           # once
+
+    def test_the_summer_market_ends_the_other_stints(self):
+        import json
+        import tempfile
+        from runtime.rollover import close_returned_departures
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "departures.json"
+            path.write_text(json.dumps({"entries": [
+                {"player": "Kendall Gill", "bbr_id": "gillke01", "club": "Utah Jazz", "from": "2005-01-24", "until": None},
+                {"player": "Scott Padgett", "bbr_id": "padgesc01", "club": "Toronto Raptors", "from": "2004-12-20", "until": None},
+                {"player": "Mover", "bbr_id": "mover01", "club": "Utah Jazz", "from": "2005-01-24", "until": None}]}))
+            record = {"clubs": {"Toronto Raptors": [{"bbr_id": "padgesc01"}], "Boston Celtics": [{"bbr_id": "mover01"}]},
+                      "events": [{"date": "2005-08-10", "kind": "signing", "bbr_id": "mover01", "club": "Boston Celtics"}]}
+            self.assertEqual(sorted(close_returned_departures(path, [], record, 2005)), ["Kendall Gill", "Mover"])
+            ends = {e["player"]: e["until"] for e in json.loads(path.read_text())["entries"]}
+            self.assertEqual(ends, {"Kendall Gill": "2005-07-01", "Scott Padgett": None, "Mover": "2005-08-10"})
+
+
 if __name__ == "__main__":
     unittest.main()
 

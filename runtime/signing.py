@@ -30,8 +30,14 @@ ACTIVE_STATUSES = ("under_contract", "under_contract_guarantee_amended", "team_o
 CLOSED_STATUSES = ("team_option_declined", "player_option_declined", "renounced", "released", "traded", "signed_elsewhere", "voided")
 
 
+def fold(name):
+    """The name with accents folded to plain letters (Uroš Slokar -> Uros Slokar); plain ASCII names are unchanged."""
+    import unicodedata
+    return unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode("ascii")
+
+
 def slug(name):
-    return name.lower().replace("'", "").replace(".", "").replace(" ", "_")
+    return fold(name).lower().replace("'", "").replace(".", "").replace(" ", "_")
 
 
 def long_date(day):

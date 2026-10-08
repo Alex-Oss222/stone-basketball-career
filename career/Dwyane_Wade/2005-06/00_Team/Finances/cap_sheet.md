@@ -1,6 +1,6 @@
 # Miami Heat | Cap sheet
 
-October 1, 2005 · 2005-06 through 2012-13 · USD
+October 2, 2005 · 2005-06 through 2012-13 · USD
 
 [Finance guide](README.md) · [Roster and control](../Team/Roster/roster.json) · [Contract detail](contract_schedules.json)
 
@@ -10,7 +10,7 @@ October 1, 2005 · 2005-06 through 2012-13 · USD
 | ---: | ---: | ---: | ---: | ---: |
 | 49,500,000 | 66,415,195 | 0 | 0 | -16,915,195 |
 
-Committed salary counts contracts, exercised options and the unsigned first-round hold on October 1, 2005. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
+Committed salary counts contracts, exercised options and the unsigned first-round hold on October 2, 2005. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
 
 ## Eight-season commitments
 
@@ -30,7 +30,7 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | [Eddie Gill](../Team/Player_Cards/eddie_gill.md) | 835,810 | — | — | — | — | — | — | — |
 | [Mike Wilks](../Team/Player_Cards/mike_wilks.md) | 745,248 | — | — | — | — | — | — | — |
 | [Matt Carroll](../Team/Player_Cards/matt_carroll.md) | 719,373 | — | — | — | — | — | — | — |
-| [Uroš Slokar](../Team/Player_Cards/uroš_slokar.md) | — | — | — | — | — | — | — | — |
+| [Uroš Slokar](../Team/Player_Cards/uros_slokar.md) | — | — | — | — | — | — | — | — |
 | Counted | 66,415,195 | 63,325,002 | 30,422,341 | 18,404,282 | 0 | 0 | 0 | 0 |
 
 ## Free-agent holds

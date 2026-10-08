@@ -32,22 +32,22 @@
    "bbr_id": "jonesed02",
    "club": "Utah Jazz",
    "from": "2005-01-24",
-   "until": null,
+   "until": "2005-08-05",
    "position": "SG",
    "games": 81,
    "minutes": 2998,
-   "basis": "traded 2005-01-24 (2005-01-24-64ef582bc5); previous share from 2003-04 totals"
+   "basis": "traded 2005-01-24 (2005-01-24-64ef582bc5); previous share from 2003-04 totals; back with Miami from 2005-08-05"
   },
   {
    "player": "Kendall Gill",
    "bbr_id": "gillke01",
    "club": "Utah Jazz",
    "from": "2005-01-24",
-   "until": null,
+   "until": "2005-07-01",
    "position": "SG",
    "games": 56,
    "minutes": 1411,
-   "basis": "traded 2005-01-24 (2005-01-24-64ef582bc5); previous share from 2003-04 totals"
+   "basis": "traded 2005-01-24 (2005-01-24-64ef582bc5); previous share from 2003-04 totals; contract over; unsigned when the 2005 summer market closed"
   }
  ]
 }

@@ -2,9 +2,9 @@
 
 # Contract | Juwan Howard
 
-Known through: 2005-10-01. [Open interactive contract](howarju01.html#contract) · [Contract history](howarju01.html#contract-history)
+Known through: 2005-10-02. [Open interactive contract](howarju01.html#contract) · [Contract history](howarju01.html#contract-history)
 
-Juwan Howard: under contract. Evidence cutoff: 2005-10-01.
+Juwan Howard: under contract. Evidence cutoff: 2005-10-02.
 
 ## Current contract
 

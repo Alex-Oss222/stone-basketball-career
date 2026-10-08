@@ -49,7 +49,10 @@ def _long(day):
 
 
 def slug(name):
-    return re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
+    """A file-name key for a player: accents folded to plain letters (Uroš -> uros), as `signing.slug` does, so a
+    card and every link to it agree."""
+    from .signing import fold
+    return re.sub(r"[^a-z0-9]+", "_", fold(name).lower()).strip("_")
 
 
 class Rollover:
@@ -407,6 +410,7 @@ class Rollover:
         holdings, old_holdings = self.holdings(entries)
         _dump(self.team / "Team/Roster/holdings.json", holdings)
         _dump(self.old_team / "Team/Roster/holdings.json", old_holdings)
+        close_returned_departures(self.old_team / "Team/Roster/departures.json", holdings["entries"], self.record, self.year)
         _dump(self.team / "Team/Depth_Chart/depth_chart.json", self.depth_chart(register))
         rights = {"schema_version": 1, "owner": "ai_gm", "as_of": self.day, "team": MIAMI,
                   "purpose": f"Rights and cap holds for Miami's free agents of the {self.new[:4]} summer onward (none open on the rollover date; "
@@ -542,6 +546,41 @@ Source: {old} from closed simulated results (`Stats_and_Awards/League/{old}/seas
 | --- | --- | --- |
 | — | No verified awards or honors recorded on this card. | — |
 """
+
+
+def close_returned_departures(path, entries, record=None, year=None):
+    """Close the old season's open departures the summer ended. A player Miami traded away and holds again (a summer
+    trade brought Eddie Jones back on 2005-08-05) leaves his other club the day Miami holds him. With the summer
+    market's `record`, a player the market placed with another club leaves on the event that moved him, and one with
+    no club at its close (contract over, unsigned) leaves on July 1 of the `year`, the day his contract ended. A player
+    still with the same club keeps his entry open. Returns the names closed."""
+    path = Path(path)
+    if not path.is_file():
+        return []
+    back = {h["bbr_id"]: h["from"] for h in entries if h.get("bbr_id") and h.get("until") is None}
+    placed = {r["bbr_id"]: c for c, rows in (record or {}).get("clubs", {}).items() for r in rows} if record else None
+    data = _read(path)
+    closed = []
+    for e in data.get("entries", []):
+        if e.get("until") is not None or not e.get("bbr_id"):
+            continue
+        b, end, why = e["bbr_id"], None, None
+        if back.get(b) and back[b] > e["from"]:
+            end, why = back[b], f"back with Miami from {back[b]}"
+        elif placed is not None and placed.get(b) != e["club"]:
+            moves = [x for x in record.get("events", []) if x.get("bbr_id") == b and x.get("club") == placed.get(b)
+                     and x["date"] > e["from"]]
+            if placed.get(b) and moves:
+                end, why = moves[-1]["date"], f"with {placed[b]} from {moves[-1]['date']} ({year} summer market)"
+            elif placed.get(b) is None and year:
+                end, why = f"{year}-07-01", f"contract over; unsigned when the {year} summer market closed"
+        if end:
+            e["until"] = end
+            e["basis"] = (e.get("basis", "") + f"; {why}").lstrip("; ")
+            closed.append(e["player"])
+    if closed:
+        _dump(path, data)
+    return closed
 
 
 def miami_summer(record, old_register):

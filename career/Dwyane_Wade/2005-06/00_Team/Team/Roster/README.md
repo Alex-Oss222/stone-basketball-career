@@ -20,7 +20,7 @@
 | [Eddie Gill](../Player_Cards/eddie_gill.md) | PG | under contract | Available | N/A |
 | [Mike Wilks](../Player_Cards/mike_wilks.md) | PG | under contract | Available | N/A |
 | [Matt Carroll](../Player_Cards/matt_carroll.md) | SG | under contract | Available | N/A |
-| [Uroš Slokar](../Player_Cards/uro_slokar.md) | F | unsigned draft rights | Available | N/A |
+| [Uroš Slokar](../Player_Cards/uros_slokar.md) | F | unsigned draft rights | Available | N/A |
 
 Players whose contracts ended, were released or voided remain in roster.json with their labels as history.
 

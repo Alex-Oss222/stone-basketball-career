@@ -2,9 +2,9 @@
 
 # Contract | Michael Redd
 
-Known through: 2005-10-01. [Open interactive contract](reddmi01.html#contract) · [Contract history](reddmi01.html#contract-history)
+Known through: 2005-10-02. [Open interactive contract](reddmi01.html#contract) · [Contract history](reddmi01.html#contract-history)
 
-Michael Redd: under contract. Evidence cutoff: 2005-10-01.
+Michael Redd: under contract. Evidence cutoff: 2005-10-02.
 
 ## Current contract
 

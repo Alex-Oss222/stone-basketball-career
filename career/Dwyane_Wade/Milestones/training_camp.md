@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-10-01 · Miami Heat · inactive
+Career date: 2005-10-02 · Miami Heat · inactive
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 

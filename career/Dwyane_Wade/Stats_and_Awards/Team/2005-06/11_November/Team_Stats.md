@@ -4,7 +4,7 @@
 
 NBA regular season · November 1-30, 2005
 
-As of October 1, 2005: not started. The 15-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 15-player active roster.
+As of October 2, 2005: not started. The 15-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 15-player active roster.
 
 ## Team record
 
