@@ -1303,8 +1303,129 @@
   }
  },
  "draws": {},
- "awards": null,
- "closed": false,
+ "awards": {
+  "champion": "Brazil",
+  "runner_up": "United States",
+  "third": "Dominican Republic",
+  "mvp": {
+   "player": "Marcelinho Machado",
+   "team": "Brazil",
+   "games": 10,
+   "game_score": 10.77,
+   "pts": 16.1
+  },
+  "all_tournament": [
+   {
+    "player": "Marcelinho Machado",
+    "team": "Brazil",
+    "games": 10,
+    "game_score": 10.77,
+    "pts": 16.1
+   },
+   {
+    "player": "Guilherme Giovannoni",
+    "team": "Brazil",
+    "games": 10,
+    "game_score": 10.61,
+    "pts": 13.3
+   },
+   {
+    "player": "Anderson Varejão",
+    "team": "Brazil",
+    "games": 10,
+    "game_score": 8.77,
+    "pts": 8.0
+   },
+   {
+    "player": "Alex Scales",
+    "team": "United States",
+    "games": 10,
+    "game_score": 9.05,
+    "pts": 12.3
+   },
+   {
+    "player": "Adam Chubb",
+    "team": "United States",
+    "games": 10,
+    "game_score": 8.88,
+    "pts": 12.1
+   }
+  ],
+  "shortlist": [
+   {
+    "player": "Marcelinho Machado",
+    "team": "Brazil",
+    "games": 10,
+    "game_score": 10.77,
+    "pts": 16.1
+   },
+   {
+    "player": "Guilherme Giovannoni",
+    "team": "Brazil",
+    "games": 10,
+    "game_score": 10.61,
+    "pts": 13.3
+   },
+   {
+    "player": "Anderson Varejão",
+    "team": "Brazil",
+    "games": 10,
+    "game_score": 8.77,
+    "pts": 8.0
+   },
+   {
+    "player": "Alex Scales",
+    "team": "United States",
+    "games": 10,
+    "game_score": 9.05,
+    "pts": 12.3
+   },
+   {
+    "player": "Adam Chubb",
+    "team": "United States",
+    "games": 10,
+    "game_score": 8.88,
+    "pts": 12.1
+   },
+   {
+    "player": "Ramsés Benítez",
+    "team": "Mexico",
+    "games": 8,
+    "game_score": 12.25,
+    "pts": 12.8
+   },
+   {
+    "player": "Tiago Splitter",
+    "team": "Brazil",
+    "games": 10,
+    "game_score": 6.69,
+    "pts": 10.3
+   },
+   {
+    "player": "Óscar Torres",
+    "team": "Venezuela",
+    "games": 4,
+    "game_score": 10.77,
+    "pts": 13.8
+   },
+   {
+    "player": "Alex Garcia",
+    "team": "Brazil",
+    "games": 10,
+    "game_score": 6.26,
+    "pts": 8.9
+   },
+   {
+    "player": "Marcelinho Huertas",
+    "team": "Brazil",
+    "games": 10,
+    "game_score": 5.47,
+    "pts": 6.1
+   }
+  ],
+  "rule": "Game Score per game x team finish (champion 1.0, runner-up 0.85, third 0.75, others 0.6); at least three games; closed results only"
+ },
+ "closed": true,
  "groups": {
   "A": {
    "carry_from": [],
@@ -1537,6 +1658,243 @@
     "team": "Canada",
     "position": 8,
     "tied_with": []
+   }
+  ]
+ },
+ "closed_on": "2005-09-04",
+ "ranking": [
+  "Brazil",
+  "United States",
+  "Dominican Republic",
+  "Panama",
+  "Mexico",
+  "Puerto Rico",
+  "Argentina",
+  "Canada",
+  "Uruguay",
+  "Venezuela"
+ ],
+ "medal_identities": {
+  "Brazil": [
+   {
+    "player": "Marcelinho Machado",
+    "bbr_id": null,
+    "fiba_key": "fiba:bra:marcelinho-machado:1975-04-12",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Nezinho dos Santos",
+    "bbr_id": null,
+    "fiba_key": "fiba:bra:nezinho-dos-santos:1981-01-21",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Murilo Becker",
+    "bbr_id": null,
+    "fiba_key": "fiba:bra:murilo-becker:1983-07-14",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Marcelinho Huertas",
+    "bbr_id": null,
+    "fiba_key": "fiba:bra:marcelinho-huertas:1983-05-25",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Leandro Barbosa",
+    "bbr_id": "barbole01",
+    "fiba_key": "fiba:bra:leandro-barbosa:1982-11-28",
+    "identity_basis": "locked roster (NBA player on the date)"
+   },
+   {
+    "player": "Jefferson Da Silva",
+    "bbr_id": null,
+    "fiba_key": "fiba:bra:jefferson-da-silva:1983-03-29",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Alex Garcia",
+    "bbr_id": "garcial01",
+    "fiba_key": "fiba:bra:alex-garcia:1980-03-04",
+    "identity_basis": "locked roster (NBA player on the date)"
+   },
+   {
+    "player": "Anderson Varejão",
+    "bbr_id": "varejan01",
+    "fiba_key": "fiba:bra:anderson-varejao:1982-09-28",
+    "identity_basis": "locked roster (NBA player on the date)"
+   },
+   {
+    "player": "Guilherme Giovannoni",
+    "bbr_id": null,
+    "fiba_key": "fiba:bra:guilherme-giovannoni:1980-06-02",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Rafael Hettsheimeir",
+    "bbr_id": null,
+    "fiba_key": "fiba:bra:rafael-hettsheimeir:1986-06-18",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Caio Torres",
+    "bbr_id": null,
+    "fiba_key": "fiba:bra:caio-torres:1987-06-03",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Tiago Splitter",
+    "bbr_id": null,
+    "fiba_key": "fiba:bra:tiago-splitter:1985-01-01",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   }
+  ],
+  "United States": [
+   {
+    "player": "Tyus Edney",
+    "bbr_id": null,
+    "fiba_key": "fiba:usa:tyus-edney:1973-02-14",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Marque Perry",
+    "bbr_id": null,
+    "fiba_key": "fiba:usa:marque-perry:1981-01-28",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Lynn Greer",
+    "bbr_id": null,
+    "fiba_key": "fiba:usa:lynn-greer:1979-10-23",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Charlie Bell",
+    "bbr_id": null,
+    "fiba_key": "fiba:usa:charlie-bell:1979-03-12",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Alex Scales",
+    "bbr_id": null,
+    "fiba_key": "fiba:usa:alex-scales:1978-07-03",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Tang Hamilton",
+    "bbr_id": null,
+    "fiba_key": "fiba:usa:tang-hamilton:1978-05-26",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Ron Slay",
+    "bbr_id": null,
+    "fiba_key": "fiba:usa:ron-slay:1981-06-29",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Adam Chubb",
+    "bbr_id": null,
+    "fiba_key": "fiba:usa:adam-chubb:1981-07-05",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Noel Felix",
+    "bbr_id": null,
+    "fiba_key": "fiba:usa:noel-felix:1981-10-04",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Aaron McGhee",
+    "bbr_id": null,
+    "fiba_key": "fiba:usa:aaron-mcghee:1979-06-28",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Jerome Beasley",
+    "bbr_id": "beaslje01",
+    "fiba_key": "fiba:usa:jerome-beasley:1980-05-17",
+    "identity_basis": "researched roster id, tracked by the league player registry on the close"
+   },
+   {
+    "player": "Kris Lang",
+    "bbr_id": null,
+    "fiba_key": "fiba:usa:kris-lang:1979-12-12",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   }
+  ],
+  "Dominican Republic": [
+   {
+    "player": "Otto Ramírez",
+    "bbr_id": null,
+    "fiba_key": "fiba:dom:otto-ramirez:1974-11-14",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Marlon Martínez",
+    "bbr_id": null,
+    "fiba_key": "fiba:dom:marlon-martinez:1979-01-17",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Luis Flores",
+    "bbr_id": "florelu01",
+    "fiba_key": "fiba:dom:luis-flores:1981-04-11",
+    "identity_basis": "locked roster (NBA player on the date)"
+   },
+   {
+    "player": "Andy Turner",
+    "bbr_id": null,
+    "fiba_key": "fiba:dom:andy-turner:1980-12-26",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Josh Asselin",
+    "bbr_id": null,
+    "fiba_key": "fiba:dom:josh-asselin:1978-12-24",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Amaury Filion",
+    "bbr_id": null,
+    "fiba_key": "fiba:dom:amaury-filion:1981-08-01",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Cristian Arias",
+    "bbr_id": null,
+    "fiba_key": "fiba:dom:cristian-arias:1981-11-15",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Francisco García",
+    "bbr_id": null,
+    "fiba_key": "fiba:dom:francisco-garcia:1980-12-31",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "José Vargas",
+    "bbr_id": null,
+    "fiba_key": "fiba:dom:jose-vargas:1963-06-23",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Felipe López",
+    "bbr_id": null,
+    "fiba_key": "fiba:dom:felipe-lopez:1974-12-19",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Jaime Peterson",
+    "bbr_id": null,
+    "fiba_key": "fiba:dom:jaime-peterson:1971-09-29",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
+   },
+   {
+    "player": "Jack Martinez",
+    "bbr_id": null,
+    "fiba_key": "fiba:dom:jack-martinez:1981-10-12",
+    "identity_basis": "FIBA identity (no NBA id on the date)"
    }
   ]
  }

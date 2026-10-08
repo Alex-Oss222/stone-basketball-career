@@ -4,7 +4,7 @@
 
 2005-08-24 to 2005-09-04, hosted by Dominican Republic. FIBA rules (four 10-minute quarters, five fouls). Every game is played by the engine; real results of this event are never used. Rules and sources: `runtime/national.py`, `library/2005/fiba/fiba_2005_americas_championship.json`.
 
-Status: **38 of 40 games played**.
+Status: **closed**.
 
 ## Rosters
 
@@ -118,22 +118,67 @@ Status: **38 of 40 games played**.
 
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
-| 39 | 2005-09-04 | Panama | Dominican Republic |  |  |
+| 39 | 2005-09-04 | Panama | Dominican Republic | 82-68 | [box](Games/fiba-amc05-g39.result.json) |
 
 ### Final
 
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
-| 40 | 2005-09-04 | Brazil | United States |  |  |
+| 40 | 2005-09-04 | Brazil | United States | 73-57 | [box](Games/fiba-amc05-g40.result.json) |
 
 ## Leaders (per game)
 
-**Points**: Marcelinho Machado (Brazil) 16.2; Víctor Díaz (Venezuela) 15.0; Leonardo Gutiérrez (Argentina) 14.6; Óscar Torres (Venezuela) 13.8; Denham Brown (Canada) 13.5
+**Points**: Marcelinho Machado (Brazil) 16.1; Víctor Díaz (Venezuela) 15.0; Leonardo Gutiérrez (Argentina) 14.6; Óscar Torres (Venezuela) 13.8; Denham Brown (Canada) 13.5
 
-**Rebounds**: Ramsés Benítez (Mexico) 8.0; Denham Brown (Canada) 7.5; Anderson Varejão (Brazil) 7.2; José Vargas (Dominican Republic) 6.3; Mauricio Aguiar (Uruguay) 6.2
+**Rebounds**: Ramsés Benítez (Mexico) 8.0; Denham Brown (Canada) 7.5; Anderson Varejão (Brazil) 6.9; José Vargas (Dominican Republic) 6.5; Mauricio Aguiar (Uruguay) 6.2
 
-**Assists**: Amaury Filion (Dominican Republic) 2.6; Jaime Peterson (Dominican Republic) 2.6; Otto Ramírez (Dominican Republic) 2.4; Richard Anderson (Canada) 2.4; Tiago Splitter (Brazil) 2.3
+**Assists**: Otto Ramírez (Dominican Republic) 2.6; Jaime Peterson (Dominican Republic) 2.5; Amaury Filion (Dominican Republic) 2.4; Richard Anderson (Canada) 2.4; Tiago Splitter (Brazil) 2.3
 
-**Steals**: Anderson Varejão (Brazil) 2.1; Marcelinho Machado (Brazil) 1.9; Héctor Romero (Venezuela) 1.8; Horacio Llamas (Mexico) 1.6; Guilherme Giovannoni (Brazil) 1.6
+**Steals**: Anderson Varejão (Brazil) 2.1; Marcelinho Machado (Brazil) 1.8; Héctor Romero (Venezuela) 1.8; Horacio Llamas (Mexico) 1.6; Guilherme Giovannoni (Brazil) 1.6
 
 **Blocks**: Héctor Romero (Venezuela) 1.0; Tiago Splitter (Brazil) 0.9; Antonio Latimer (Puerto Rico) 0.9; Ramsés Benítez (Mexico) 0.9; Peter John Ramos (Puerto Rico) 0.8
+
+## Final placings and honors
+
+Champion **Brazil**, runner-up United States, third Dominican Republic.
+
+Rule: Game Score per game x team finish (champion 1.0, runner-up 0.85, third 0.75, others 0.6); at least three games; closed results only.
+
+### Final ranking
+
+| Place | Team | Medal |
+| --- | --- | --- |
+| 1 | Brazil | Gold |
+| 2 | **United States** | Silver |
+| 3 | Dominican Republic | Bronze |
+| 4 | Panama | None |
+| 5 | Mexico | None |
+| 6 | Puerto Rico | None |
+| 7 | Argentina | None |
+| 8 | Canada | None |
+| 9 | Uruguay | None |
+| 10 | Venezuela | None |
+
+### Medals
+
+Every player on a medal team's locked tournament roster receives the medal, whether or not he played; a player not on that roster receives none. The MVP and the All-Tournament Team are separate performance awards. Register: `career/Dwyane_Wade/FIBA/Continental_Cups/2005/medals.json` (`runtime/national_medals.py`); awarded 2005-09-04.
+
+| Place | Medal | Team | Players | Locked roster (each receives the medal) | Decided by |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Gold | Brazil | 12 | Alex Garcia, Anderson Varejão, Caio Torres, Guilherme Giovannoni, Jefferson Da Silva, Leandro Barbosa, Marcelinho Huertas, Marcelinho Machado, Murilo Becker, Nezinho dos Santos, Rafael Hettsheimeir, Tiago Splitter | [box](Games/fiba-amc05-g40.result.json) |
+| 2 | Silver | **United States** | 12 | Aaron McGhee, Adam Chubb, Alex Scales, Charlie Bell, Jerome Beasley, Kris Lang, Lynn Greer, Marque Perry, Noel Felix, Ron Slay, Tang Hamilton, Tyus Edney | [box](Games/fiba-amc05-g40.result.json) |
+| 3 | Bronze | Dominican Republic | 12 | Amaury Filion, Andy Turner, Cristian Arias, Felipe López, Francisco García, Jack Martinez, Jaime Peterson, José Vargas, Josh Asselin, Luis Flores, Marlon Martínez, Otto Ramírez | [box](Games/fiba-amc05-g39.result.json) |
+
+### Most Valuable Player
+
+Marcelinho Machado (Brazil)
+
+### All-Tournament Team
+
+| Player | Team | G | Game Score | PTS |
+| --- | --- | --- | --- | --- |
+| Marcelinho Machado | Brazil | 10 | 10.77 | 16.1 |
+| Guilherme Giovannoni | Brazil | 10 | 10.61 | 13.3 |
+| Anderson Varejão | Brazil | 10 | 8.77 | 8.0 |
+| Alex Scales | United States | 10 | 9.05 | 12.3 |
+| Adam Chubb | United States | 10 | 8.88 | 12.1 |

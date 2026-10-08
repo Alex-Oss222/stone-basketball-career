@@ -6,5 +6,5 @@ National-team tournaments the simulation plays (USA editions and the qualifiers 
 
 | Tournament | Starts | Status |
 | --- | --- | --- |
-| [2005 FIBA Americas Championship for Men](Continental_Cups/2005/README.md) | 2005-08-24 | in progress |
+| [2005 FIBA Americas Championship for Men](Continental_Cups/2005/README.md) | 2005-08-24 | closed: Brazil |
 | FIBA World Championship 2006 | 2006-08-19 | not started |
