@@ -116,21 +116,21 @@
    "player": "Theo Ratliff",
    "bbr_id": "ratlith01",
    "from": "2005-10-04",
-   "until": null,
+   "until": "2005-10-31",
    "basis": "camp contract 2005-10-04 (camp_roster.json)"
   },
   {
    "player": "Bonzi Wells",
    "bbr_id": "wellsbo01",
    "from": "2005-10-04",
-   "until": null,
+   "until": "2005-10-31",
    "basis": "camp contract 2005-10-04 (camp_roster.json)"
   },
   {
    "player": "Adonal Foyle",
    "bbr_id": "foylead01",
    "from": "2005-10-04",
-   "until": null,
+   "until": "2005-10-31",
    "basis": "camp contract 2005-10-04 (camp_roster.json)"
   },
   {
@@ -144,14 +144,14 @@
    "player": "Sam Cassell",
    "bbr_id": "cassesa01",
    "from": "2005-10-04",
-   "until": null,
+   "until": "2005-10-31",
    "basis": "camp contract 2005-10-04 (camp_roster.json)"
   },
   {
    "player": "Kwame Brown",
    "bbr_id": "brownkw01",
    "from": "2005-10-04",
-   "until": null,
+   "until": "2005-10-31",
    "basis": "camp contract 2005-10-04 (camp_roster.json)"
   }
  ],

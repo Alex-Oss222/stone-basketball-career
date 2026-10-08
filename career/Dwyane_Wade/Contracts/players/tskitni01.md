@@ -2,9 +2,9 @@
 
 # Contract | Nikoloz Tskitishvili
 
-Known through: 2005-10-30. [Open interactive contract](tskitni01.html#contract) · [Contract history](tskitni01.html#contract-history)
+Known through: 2005-10-31. [Open interactive contract](tskitni01.html#contract) · [Contract history](tskitni01.html#contract-history)
 
-Nikoloz Tskitishvili: under contract. Evidence cutoff: 2005-10-30.
+Nikoloz Tskitishvili: under contract. Evidence cutoff: 2005-10-31.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-10-30 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-10-31 
 
-**Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $835,810 scheduled ($835,810 in 2005-06). (register, 2005-10-04) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $835,810 scheduled ($835,810 in 2005-06). (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/gilled01.html#contract) · [Contract history](../../../../Contracts/players/gilled01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

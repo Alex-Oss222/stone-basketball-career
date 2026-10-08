@@ -1,0 +1,11 @@
+{
+ "event_id": "2006-07-option-banksma01-team_option",
+ "date": "2005-10-31",
+ "question": "Does Golden State Warriors exercise its 2006-07 team option on Marcus Banks ($2,463,996)?",
+ "decider": "Golden State Warriors (drawn by rule)",
+ "options": {
+  "exercise": 0.911,
+  "decline": 0.089
+ },
+ "basis": "worth $2,869,119 (market price of his production on 2005-10-31, x1.25 for a player 24 or younger) against $2,463,996: ratio 1.164 inside the close band 0.8-1.2 (runtime/options.py)"
+}

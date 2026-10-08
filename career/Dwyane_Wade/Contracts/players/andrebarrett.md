@@ -2,9 +2,9 @@
 
 # Contract | Andre Barrett
 
-Known through: 2005-10-30. [Open interactive contract](andrebarrett.html#contract) · [Contract history](andrebarrett.html#contract-history)
+Known through: 2005-10-31. [Open interactive contract](andrebarrett.html#contract) · [Contract history](andrebarrett.html#contract-history)
 
-Andre Barrett: under contract. Evidence cutoff: 2005-10-30.
+Andre Barrett: under contract. Evidence cutoff: 2005-10-31.
 
 ## Current contract
 

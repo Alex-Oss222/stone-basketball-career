@@ -2,7 +2,7 @@
 
 # Contract checkpoint | Dwyane Wade
 
-Career date: 2005-10-30 · Miami Heat · active
+Career date: 2005-10-31 · Miami Heat · active
 
 [Live milestone desk](index.html#contract_checkpoint) · [All milestones](README.md)
 
@@ -20,7 +20,7 @@ Activation: A dated contract, option, expiry or draft-rights change.
 | Cap hold meaning | Team accounting charge; not player earnings or an accepted offer |
 | Free-agent classification | Requires dated expiry, option and rights review |
 | Actual signing date | 2003-07-21 |
-| Source snapshot | 2005-10-26 |
+| Source snapshot | 2005-10-31 |
 
 ## Existing amounts on the club's record
 
@@ -31,7 +31,7 @@ A draft hold and an unexercised option are not signed guaranteed salary.
 | 2003-04 | $2,197,000 | contract_salary |
 | 2004-05 | $2,361,800 | contract_salary |
 | 2005-06 | $2,526,600 | contract_salary |
-| 2006-07 | $3,201,202 | team_option |
+| 2006-07 | $3,201,202 | contract_salary |
 
 ## Upcoming decision ownership
 

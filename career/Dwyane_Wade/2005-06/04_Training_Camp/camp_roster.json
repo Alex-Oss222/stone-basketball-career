@@ -3,7 +3,7 @@
  "owner": "ai_gm",
  "season": "2005-06",
  "opened": "2005-10-04",
- "status": "open",
+ "status": "closed",
  "purpose": "Miami's training-camp roster: the register plus invitees on non-guaranteed minimum contracts, camp injuries, and the cut.",
  "players": [
   {
@@ -155,7 +155,7 @@
    "positions": [
     "C"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 1138500,
@@ -172,7 +172,7 @@
    "positions": [
     "SG"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 965185,
@@ -189,7 +189,7 @@
    "positions": [
     "C"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 1029873,
@@ -223,7 +223,7 @@
    "positions": [
     "PG"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 1138500,
@@ -240,7 +240,7 @@
    "positions": [
     "C"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 771123,
@@ -252,7 +252,33 @@
    "injured_through": null
   }
  ],
- "cuts": [],
+ "cuts": [
+  {
+   "player": "Kwame Brown",
+   "date": "2005-10-31",
+   "score": 6.708
+  },
+  {
+   "player": "Adonal Foyle",
+   "date": "2005-10-31",
+   "score": 7.773
+  },
+  {
+   "player": "Theo Ratliff",
+   "date": "2005-10-31",
+   "score": 8.202
+  },
+  {
+   "player": "Bonzi Wells",
+   "date": "2005-10-31",
+   "score": 8.435
+  },
+  {
+   "player": "Sam Cassell",
+   "date": "2005-10-31",
+   "score": 9.211
+  }
+ ],
  "injuries_applied": "2005-10-04",
  "staff_scores": {
   "Eddie Jones": 6.17,
@@ -276,5 +302,6 @@
   "Sam Cassell": 9.211,
   "Kwame Brown": 6.708
  },
- "evaluated": "2005-10-26"
+ "evaluated": "2005-10-26",
+ "cut_done": "2005-10-31"
 }

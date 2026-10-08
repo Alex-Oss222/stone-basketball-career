@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-31",
+ "decider": "Golden State Warriors (drawn by rule)",
+ "event_id": "2006-07-option-banksma01-team_option",
+ "kind": "decision",
+ "options": {
+  "decline": 0.089,
+  "exercise": 0.911
+ },
+ "outcome": "decline",
+ "question": "Does Golden State Warriors exercise its 2006-07 team option on Marcus Banks ($2,463,996)?"
+}

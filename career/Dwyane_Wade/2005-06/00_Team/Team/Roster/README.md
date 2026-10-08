@@ -2,9 +2,9 @@
 
 <!-- team-status:start -->
 
-[roster.json](roster.json) is the machine-readable register (team-control record dated 2005-10-04). Availability below is on 2005-10-30, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
+[roster.json](roster.json) is the machine-readable register (team-control record dated 2005-10-31). Availability below is on 2005-10-31, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
 
-| Player | Pos | Control | Availability on 2005-10-30 | Staff role |
+| Player | Pos | Control | Availability on 2005-10-31 | Staff role |
 | --- | --- | --- | --- | --- |
 | [Eddie Jones](../Player_Cards/eddie_jones.md) | SG/SF | under contract | Available | rotation at SG, staff plan 4 minutes |
 | [Brian Grant](../Player_Cards/brian_grant.md) | C/PF | under contract | Available | starter at C, staff plan 34 minutes |
@@ -21,12 +21,7 @@
 | [Mike Wilks](../Player_Cards/mike_wilks.md) | PG | under contract | Available | rotation at PG, staff plan 8 minutes |
 | [Matt Carroll](../Player_Cards/matt_carroll.md) | SG | under contract | Available | reserve outside the planned rotation |
 | [Uroš Slokar](../Player_Cards/uros_slokar.md) | F | unsigned draft rights | Available | reserve outside the planned rotation |
-| [Theo Ratliff](../Player_Cards/theo_ratliff.md) | C | camp contract | Available | reserve outside the planned rotation |
-| [Bonzi Wells](../Player_Cards/bonzi_wells.md) | SG | camp contract | Available | reserve outside the planned rotation |
-| [Adonal Foyle](../Player_Cards/adonal_foyle.md) | C | camp contract | Available | reserve outside the planned rotation |
 | [Jumaine Jones](../Player_Cards/jumaine_jones.md) | SF | camp contract | Available | reserve outside the planned rotation |
-| [Sam Cassell](../Player_Cards/sam_cassell.md) | PG | camp contract | Available | reserve outside the planned rotation |
-| [Kwame Brown](../Player_Cards/kwame_brown.md) | C | camp contract | Available | reserve outside the planned rotation |
 
 Players whose contracts ended, were released or voided remain in roster.json with their labels as history.
 

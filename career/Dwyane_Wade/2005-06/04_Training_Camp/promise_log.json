@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2005-10-31",
+ "purpose": "Promised roles (from signings) against the written rotation; a broken promise is evidence for the player's later decisions.",
+ "promises": [
+  {
+   "player": "Mike James",
+   "promised": {
+    "role": "starter",
+    "minutes_per_game": 32
+   },
+   "rotation_minutes": 34.0,
+   "kept": true,
+   "date": "2005-10-31"
+  }
+ ]
+}

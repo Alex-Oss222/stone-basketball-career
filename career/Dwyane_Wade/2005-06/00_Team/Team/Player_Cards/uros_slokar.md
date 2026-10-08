@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** F  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-10-30 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-10-31 
 
-**Contract/control:** Unsigned draft rights: No. 58 pick of the 2005 draft. (register, 2005-10-04) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Unsigned draft rights: No. 58 pick of the 2005 draft. (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/slokaur01.html#contract) · [Contract history](../../../../Contracts/players/slokaur01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

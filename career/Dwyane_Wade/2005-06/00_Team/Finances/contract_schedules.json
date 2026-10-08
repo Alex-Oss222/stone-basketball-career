@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "owner": "ai_gm",
- "as_of": "2005-10-26",
+ "as_of": "2005-10-31",
  "team": "Miami Heat",
  "horizon": [
   "2005-06",
@@ -15,8 +15,8 @@
  ],
  "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
  "known_baseline": {
-  "2005-06": 72358874,
-  "2006-07": 44684794,
+  "2005-06": 67315693,
+  "2006-07": 47885996,
   "2007-08": 30422341,
   "2008-09": 18404282,
   "2009-10": 0,
@@ -26,7 +26,7 @@
  },
  "conditional_known_amounts": {
   "2005-06": 0,
-  "2006-07": 18640208,
+  "2006-07": 15439006,
   "2007-08": 0,
   "2008-09": 0,
   "2009-10": 0,
@@ -354,7 +354,7 @@
     "2003-04": "contract_salary",
     "2004-05": "contract_salary",
     "2005-06": "contract_salary",
-    "2006-07": "team_option"
+    "2006-07": "contract_salary"
    },
    "signed_date": "2003-07-21",
    "original_term_seasons": 3,
@@ -447,7 +447,10 @@
     }
    ],
    "bonus_evaluation": "each season's incentives are evaluated against closed results at the season rollover (docs/ROADMAP.md item 18)",
-   "contract_id": "wadedw01-2003-07-21"
+   "contract_id": "wadedw01-2003-07-21",
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 10.14 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Caron Butler",
@@ -599,7 +602,7 @@
   {
    "player": "Theo Ratliff",
    "bbr_id": "ratlith01",
-   "status": "camp_contract",
+   "status": "released",
    "schedule": {
     "2005-06": 1138500
    },
@@ -620,7 +623,7 @@
   {
    "player": "Bonzi Wells",
    "bbr_id": "wellsbo01",
-   "status": "camp_contract",
+   "status": "released",
    "schedule": {
     "2005-06": 965185
    },
@@ -641,7 +644,7 @@
   {
    "player": "Adonal Foyle",
    "bbr_id": "foylead01",
-   "status": "camp_contract",
+   "status": "released",
    "schedule": {
     "2005-06": 1029873
    },
@@ -683,7 +686,7 @@
   {
    "player": "Sam Cassell",
    "bbr_id": "cassesa01",
-   "status": "camp_contract",
+   "status": "released",
    "schedule": {
     "2005-06": 1138500
    },
@@ -704,7 +707,7 @@
   {
    "player": "Kwame Brown",
    "bbr_id": "brownkw01",
-   "status": "camp_contract",
+   "status": "released",
    "schedule": {
     "2005-06": 771123
    },
@@ -749,7 +752,7 @@
   "kind": "existing_obligations_only",
   "currency": "USD",
   "unit": "whole dollars",
-  "known_baseline_definition": "Counted 2005-06 team salary on 2005-10-26: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+  "known_baseline_definition": "Counted 2005-06 team salary on 2005-10-31: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
   "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
   "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
   "missing_definition": "Null means unresolved or not yet projected, never zero.",
@@ -794,7 +797,7 @@
   },
   {
    "season": "2005-06",
-   "scheduled_contract_salary": 72358874,
+   "scheduled_contract_salary": 67315693,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -802,8 +805,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 72358874,
-   "base_plus_priced_options": 72358874,
+   "known_base_allocations": 67315693,
+   "base_plus_priced_options": 67315693,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": 0,
@@ -811,15 +814,15 @@
   },
   {
    "season": "2006-07",
-   "scheduled_contract_salary": 44684794,
+   "scheduled_contract_salary": 47885996,
    "unsigned_first_round_holds": 0,
-   "known_conditional_salary": 18640208,
+   "known_conditional_salary": 15439006,
    "unpriced_option_count": 0,
    "free_agent_holds": null,
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 44684794,
+   "known_base_allocations": 47885996,
    "base_plus_priced_options": 63325002,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",

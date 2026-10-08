@@ -151,10 +151,11 @@
     "2006-07": 4694041
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 2.14 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Rafael Araújo",
@@ -262,14 +263,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2005-06": 1724280,
-    "2006-07": 2463996
+    "2005-06": 1724280
    },
    "source": "league contract ledger 2004-05 (existing); traded 2005-08-05",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: decline (2005-10-31; engine draw; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Leandro Barbosa",
@@ -282,10 +283,11 @@
     "2006-07": 1679733
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 1.46 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Matt Barnes",
@@ -586,10 +588,11 @@
     "2006-07": 4235220
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 5.34 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Ryan Bowen",
@@ -817,14 +820,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2005-06": 1404360,
-    "2006-07": 2157097
+    "2005-06": 1404360
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: decline (2005-10-31; his real career ended before 2006-07 (runtime/availability.py); runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "José Calderón",
@@ -1030,10 +1033,11 @@
     "2006-07": 1817141
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 2.36 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Jamal Crawford",
@@ -1215,10 +1219,11 @@
     "2006-07": 1870501
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 1.99 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Dan Dickau",
@@ -1371,14 +1376,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2005-06": 964320,
-    "2006-07": 1738669
+    "2005-06": 964320
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: decline (2005-10-31; his real career ended before 2006-07 (runtime/availability.py); runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "John Edwards",
@@ -1652,14 +1657,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2005-06": 1556160,
-    "2006-07": 2385593
+    "2005-06": 1556160
    },
    "source": "league contract ledger 2004-05 (existing); traded 2005-08-26",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: decline (2005-10-31; his real career ended before 2006-07 (runtime/availability.py); runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Francisco García",
@@ -2112,10 +2117,11 @@
     "2006-07": 2564127
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 1.56 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Brendan Haywood",
@@ -2178,10 +2184,11 @@
     "2006-07": 3192628
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 3.56 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Julius Hodge",
@@ -2271,10 +2278,11 @@
     "2006-07": 1667603
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 3.65 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Juwan Howard",
@@ -2511,10 +2519,11 @@
     "2006-07": 5828090
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 6.59 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Mike James",
@@ -2680,10 +2689,11 @@
     "2006-07": 1886113
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 1.25 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Dwayne Jones",
@@ -2742,10 +2752,11 @@
     "2006-07": 3491768
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 1.21 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Jason Kapono",
@@ -3344,14 +3355,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2005-06": 4135200,
-    "2006-07": 5218622
+    "2005-06": 4135200
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: decline (2005-10-31; clear: ratio 0.47 at or below 0.8; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Andre Miller",
@@ -3776,10 +3787,11 @@
     "2006-07": 1836426
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 1.44 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Andre Owens",
@@ -3909,10 +3921,11 @@
     "2006-07": 1962206
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 1.27 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Gary Payton",
@@ -3936,10 +3949,11 @@
     "2006-07": 1689410
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 1.49 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Morris Peterson",
@@ -4013,10 +4027,11 @@
     "2006-07": 2535260
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 2.37 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Zoran Planinic",
@@ -4025,14 +4040,14 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2005-06": 1127280,
-    "2006-07": 1854376
+    "2005-06": 1127280
    },
    "source": "league contract ledger 2004-05 (existing); traded 2005-08-26",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: decline (2005-10-31; his real career ended before 2006-07 (runtime/availability.py); runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Pavel Podkolzin",
@@ -4239,10 +4254,11 @@
     "2006-07": 2425878
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 3.51 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Anthony Roberson",
@@ -4656,10 +4672,11 @@
     "2006-07": 2696956
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 1.65 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Robert Swift",
@@ -5272,10 +5289,11 @@
     "2006-07": 2051938
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "options": {
-    "2006-07": "team_option"
-   },
-   "rookie_scale": true
+   "options": {},
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 1.38 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Delonte West",

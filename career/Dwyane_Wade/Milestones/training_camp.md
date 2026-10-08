@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-10-30 · Miami Heat · active
+Career date: 2005-10-31 · Miami Heat · complete
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -23,15 +23,15 @@ Activation: The club opens camp and records participation, evaluation or an actu
 
 ## Current depth chart
 
-Snapshot: 2005-10-26. Draft rights and unassigned arrivals are not assigned minutes.
+Snapshot: 2005-10-31. Draft rights and unassigned arrivals are not assigned minutes.
 
 | Position | Staff ordering | Interpretation |
 | --- | --- | --- |
-| PG | Mike James, Anthony Johnson, Sam Cassell, Mike Wilks, Eddie Gill | Staff ordering; not a future minutes promise |
-| SG | Dwyane Wade, Bonzi Wells, Eddie Jones, Matt Carroll, DeShawn Stevenson | Staff ordering; not a future minutes promise |
+| PG | Mike James, Anthony Johnson, Mike Wilks, Eddie Gill | Staff ordering; not a future minutes promise |
+| SG | Dwyane Wade, Eddie Jones, Matt Carroll, DeShawn Stevenson | Staff ordering; not a future minutes promise |
 | SF | Caron Butler, Matt Harpring, Sebastian Telfair, Jumaine Jones | Staff ordering; not a future minutes promise |
 | PF | Mehmet Okur, Donyell Marshall | Staff ordering; not a future minutes promise |
-| C | Brian Grant, Theo Ratliff, Adonal Foyle, Kwame Brown | Staff ordering; not a future minutes promise |
+| C | Brian Grant | Staff ordering; not a future minutes promise |
 
 ## Role and promise review
 
@@ -50,6 +50,7 @@ Snapshot: 2005-10-26. Draft rights and unassigned arrivals are not assigned minu
 | 2005-10-04 | Camp opens with 20 players: 6 invitees on non-guaranteed minimums (Theo Ratliff, Bonzi Wells, Adonal Foyle, Jumaine Jones, Sam Cassell, Kwame Brown). Record: `camp_roster.json`. |
 | 2005-10-04 | Camp injury draws: nobody is hurt. |
 | 2005-10-26 | Staff decision from 7 preseason games: starters PG Mike James, SG Dwyane Wade, SF Caron Butler, PF Mehmet Okur, C Brian Grant; battles drawn: {'SF': 'Caron Butler'}. Wade's perimeter-defense grade 45 (No assignment-level defensive evidence; preseason steals and blocks do not change this grade.). Records: `../00_Team/Team/Depth_Chart/depth_chart.json`, `rotation.json`, `../00_Team/Team/defensive_grades.json`. |
+| 2005-10-31 | Cut to 15: Kwame Brown, Adonal Foyle, Theo Ratliff, Bonzi Wells, Sam Cassell. Promise check: every promised role is in the rotation. Record: `promise_log.json`. |
 
 ## Your response to the staff
 

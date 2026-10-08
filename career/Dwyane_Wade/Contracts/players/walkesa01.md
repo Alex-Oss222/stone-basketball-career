@@ -2,9 +2,9 @@
 
 # Contract | Samaki Walker
 
-Known through: 2005-10-30. [Open interactive contract](walkesa01.html#contract) · [Contract history](walkesa01.html#contract-history)
+Known through: 2005-10-31. [Open interactive contract](walkesa01.html#contract) · [Contract history](walkesa01.html#contract-history)
 
-Samaki Walker: under contract. Evidence cutoff: 2005-10-30.
+Samaki Walker: under contract. Evidence cutoff: 2005-10-31.
 
 ## Current contract
 

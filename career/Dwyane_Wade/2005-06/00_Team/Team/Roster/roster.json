@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2005-10-04",
+ "as_of": "2005-10-31",
  "season": "2005-06",
  "team": "Miami Heat",
  "roster_kind": "team_control_register",
@@ -225,9 +225,9 @@
     "C"
    ],
    "date_of_birth": "1973-04-17",
-   "status": "camp_contract",
-   "control": "Camp contract from October 4, 2005: non-guaranteed minimum $1,138,500, guaranteed if still on the roster on 2006-01-10.",
-   "working_role": "Reserve outside the planned rotation (rotation 2005-10-26)",
+   "status": "released",
+   "control": "October 31, 2005: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
+   "working_role": "Left Miami (released)",
    "player_card": "../Player_Cards/theo_ratliff.md",
    "bbr_id": "ratlith01"
   },
@@ -238,9 +238,9 @@
     "SG"
    ],
    "date_of_birth": "1976-09-28",
-   "status": "camp_contract",
-   "control": "Camp contract from October 4, 2005: non-guaranteed minimum $965,185, guaranteed if still on the roster on 2006-01-10.",
-   "working_role": "Reserve outside the planned rotation (rotation 2005-10-26)",
+   "status": "released",
+   "control": "October 31, 2005: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
+   "working_role": "Left Miami (released)",
    "player_card": "../Player_Cards/bonzi_wells.md",
    "bbr_id": "wellsbo01"
   },
@@ -251,9 +251,9 @@
     "C"
    ],
    "date_of_birth": "1975-03-09",
-   "status": "camp_contract",
-   "control": "Camp contract from October 4, 2005: non-guaranteed minimum $1,029,873, guaranteed if still on the roster on 2006-01-10.",
-   "working_role": "Reserve outside the planned rotation (rotation 2005-10-26)",
+   "status": "released",
+   "control": "October 31, 2005: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
+   "working_role": "Left Miami (released)",
    "player_card": "../Player_Cards/adonal_foyle.md",
    "bbr_id": "foylead01"
   },
@@ -277,9 +277,9 @@
     "PG"
    ],
    "date_of_birth": "1969-11-18",
-   "status": "camp_contract",
-   "control": "Camp contract from October 4, 2005: non-guaranteed minimum $1,138,500, guaranteed if still on the roster on 2006-01-10.",
-   "working_role": "Reserve outside the planned rotation (rotation 2005-10-26)",
+   "status": "released",
+   "control": "October 31, 2005: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
+   "working_role": "Left Miami (released)",
    "player_card": "../Player_Cards/sam_cassell.md",
    "bbr_id": "cassesa01"
   },
@@ -290,9 +290,9 @@
     "C"
    ],
    "date_of_birth": "1982-03-10",
-   "status": "camp_contract",
-   "control": "Camp contract from October 4, 2005: non-guaranteed minimum $771,123, guaranteed if still on the roster on 2006-01-10.",
-   "working_role": "Reserve outside the planned rotation (rotation 2005-10-26)",
+   "status": "released",
+   "control": "October 31, 2005: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
+   "working_role": "Left Miami (released)",
    "player_card": "../Player_Cards/kwame_brown.md",
    "bbr_id": "brownkw01"
   }

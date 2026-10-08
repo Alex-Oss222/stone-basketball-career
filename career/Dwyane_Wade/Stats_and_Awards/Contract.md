@@ -2,9 +2,9 @@
 
 # Contract | Dwyane Wade
 
-Known through: 2005-10-30. [Open interactive contract](player_cards.html#contract) · [Contract history](player_cards.html#contract-history)
+Known through: 2005-10-31. [Open interactive contract](player_cards.html#contract) · [Contract history](player_cards.html#contract-history)
 
-Dwyane Wade: under contract. Evidence cutoff: 2005-10-30.
+Dwyane Wade: under contract. Evidence cutoff: 2005-10-31.
 
 ## Current contract
 
@@ -45,7 +45,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2003-04 | $2,197,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2004-05 | $2,361,800 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2005-06 | $2,526,600 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2006-07 | $3,201,202 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | Not recorded | Not recorded |
+| 2006-07 | $3,201,202 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -53,7 +53,6 @@ An option amount is conditional. No exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2006-07 | team_option | $3,201,202 | 2005-10-31 | Not recorded | Not recorded |
 
 ### Additional recorded annual compensation
 
@@ -216,7 +215,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2003-04 | $2,197,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2004-05 | $2,361,800 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2005-06 | $2,526,600 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2006-07 | $3,201,202 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | Not recorded | Not recorded |
+| 2006-07 | $3,201,202 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -224,7 +223,6 @@ An option amount is conditional. No exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2006-07 | team_option | $3,201,202 | 2005-10-31 | Not recorded | Not recorded |
 
 ### Additional recorded annual compensation
 

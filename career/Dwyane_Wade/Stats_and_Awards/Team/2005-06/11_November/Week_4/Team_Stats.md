@@ -4,7 +4,7 @@
 
 NBA regular season · November 22-30, 2005
 
-As of October 30, 2005: not started. The 21-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 21-player active roster.
+As of October 31, 2005: not started. The 16-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 16-player active roster.
 
 ## Team record
 
@@ -33,12 +33,7 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Mike Wilks | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Matt Carroll | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Uroš Slokar | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Theo Ratliff | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Bonzi Wells | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Adonal Foyle | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Jumaine Jones | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Sam Cassell | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Kwame Brown | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -62,12 +57,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Mike Wilks | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Matt Carroll | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Uroš Slokar | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Theo Ratliff | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Bonzi Wells | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Adonal Foyle | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Jumaine Jones | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Sam Cassell | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Kwame Brown | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 
 </details>
 

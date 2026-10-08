@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2005-10-26",
+ "as_of": "2005-10-31",
  "team": "Miami Heat",
  "status": "camp_decision",
  "game_ready": true,
@@ -10,13 +10,11 @@
   "PG": [
    "Mike James",
    "Anthony Johnson",
-   "Sam Cassell",
    "Mike Wilks",
    "Eddie Gill"
   ],
   "SG": [
    "Dwyane Wade",
-   "Bonzi Wells",
    "Eddie Jones",
    "Matt Carroll",
    "DeShawn Stevenson"
@@ -32,10 +30,7 @@
    "Donyell Marshall"
   ],
   "C": [
-   "Brian Grant",
-   "Theo Ratliff",
-   "Adonal Foyle",
-   "Kwame Brown"
+   "Brian Grant"
   ]
  },
  "battles_drawn": {
@@ -44,5 +39,31 @@
  "unassigned_draft_rights": [],
  "unassigned_arrivals": [],
  "unavailable": [],
- "departed": []
+ "departed": [
+  {
+   "name": "Kwame Brown",
+   "date": "2005-10-31",
+   "status": "released"
+  },
+  {
+   "name": "Adonal Foyle",
+   "date": "2005-10-31",
+   "status": "released"
+  },
+  {
+   "name": "Theo Ratliff",
+   "date": "2005-10-31",
+   "status": "released"
+  },
+  {
+   "name": "Bonzi Wells",
+   "date": "2005-10-31",
+   "status": "released"
+  },
+  {
+   "name": "Sam Cassell",
+   "date": "2005-10-31",
+   "status": "released"
+  }
+ ]
 }

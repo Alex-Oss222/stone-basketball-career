@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2005-10-30 · Miami Heat · needs evidence
+Career date: 2005-10-31 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -39,6 +39,11 @@ These are Miami's roster negotiations, not offers to Wade.
 | Date | Event / player discussion |
 | --- | --- |
 | 2005-10-01 | The 2005 summer market closed on September 30, 2005; its record is `../../2004-05/10_Free_Agency/free_agency_2005.json`, carried into `../00_Team` by the rollover. |
+| 2005-10-31 | Kwame Brown released at the cut to 15 (non-guaranteed camp contract; no dead money). |
+| 2005-10-31 | Adonal Foyle released at the cut to 15 (non-guaranteed camp contract; no dead money). |
+| 2005-10-31 | Theo Ratliff released at the cut to 15 (non-guaranteed camp contract; no dead money). |
+| 2005-10-31 | Bonzi Wells released at the cut to 15 (non-guaranteed camp contract; no dead money). |
+| 2005-10-31 | Sam Cassell released at the cut to 15 (non-guaranteed camp contract; no dead money). |
 
 ## Decision authority
 

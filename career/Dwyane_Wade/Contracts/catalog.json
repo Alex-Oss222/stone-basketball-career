@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-10-30",
+  "as_of": "2005-10-31",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -32,9 +32,9 @@
     {
       "player_id": "foylead01",
       "name": "Adonal Foyle",
-      "team": "Miami Heat",
-      "status": "camp contract",
-      "current_contract_id": "foylead01-2005-10-04",
+      "team": "Free agent",
+      "status": "released",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/foylead01.html#contract"
     },
@@ -509,9 +509,9 @@
     {
       "player_id": "wellsbo01",
       "name": "Bonzi Wells",
-      "team": "Miami Heat",
-      "status": "camp contract",
-      "current_contract_id": "wellsbo01-2005-10-04",
+      "team": "Free agent",
+      "status": "released",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/wellsbo01.html#contract"
     },
@@ -2840,9 +2840,9 @@
     {
       "player_id": "brownkw01",
       "name": "Kwame Brown",
-      "team": "Miami Heat",
-      "status": "camp contract",
-      "current_contract_id": "brownkw01-2005-10-04",
+      "team": "Free agent",
+      "status": "released",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/brownkw01.html#contract"
     },
@@ -4262,9 +4262,9 @@
     {
       "player_id": "cassesa01",
       "name": "Sam Cassell",
-      "team": "Miami Heat",
-      "status": "camp contract",
-      "current_contract_id": "cassesa01-2005-10-04",
+      "team": "Free agent",
+      "status": "released",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/cassesa01.html#contract"
     },
@@ -4667,9 +4667,9 @@
     {
       "player_id": "ratlith01",
       "name": "Theo Ratliff",
-      "team": "Miami Heat",
-      "status": "camp contract",
-      "current_contract_id": "ratlith01-2005-10-04",
+      "team": "Free agent",
+      "status": "released",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/ratlith01.html#contract"
     },
