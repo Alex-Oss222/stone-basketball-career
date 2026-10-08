@@ -114,6 +114,28 @@ class Rollover:
                 out[e["bbr_id"]] = e
         return out
 
+    def original_signing(self, key):
+        """The dated signing that created a contract Miami acquired by trade: the latest signing event for the player in
+        an earlier closed summer market record (rookie scale, signing, re-signing, matched or unmatched offer sheet,
+        accepted qualifying offer), before this league year. None when no record dates it: an unknown signing date
+        stays unknown (AGENTS.md, player contract pages)."""
+        from .free_agency_2004 import record_path
+        kinds = ("signing", "re_sign", "rookie_scale_signing", "camp_signing", "qualifying_offer_accepted",
+                 "offer_sheet_matched", "offer_sheet_not_matched")
+        july = f"{self.year}-07-01"
+        found = None
+        for year in range(self.year - 1, 2003, -1):
+            path = self.root / record_path(year)
+            if not path.is_file():
+                continue
+            for e in _read(path).get("events", []):
+                if e.get("bbr_id") == key and e.get("kind") in kinds and e.get("date", "") < july:
+                    if found is None or e["date"] > found["date"]:
+                        found = e
+            if found:
+                break
+        return found
+
     # -- Miami's records -------------------------------------------------------------------------
     def miami(self):
         """[(key, row, identity, event)] for every contract the market left with Miami."""
@@ -151,11 +173,18 @@ class Rollover:
                 elif entry.get("status") not in ("under_rookie_contract",):
                     entry["status"] = "under_contract"
                 entry.pop("guarantee_date", None) if entry.get("status") == "under_contract" else None
+                if (event or {}).get("kind") == "trade" and event.get("from") != MIAMI:
+                    # back on Miami by a summer trade: the same agreement, assigned again (held from the trade date)
+                    entry.update(acquired_by="trade", acquired_date=event["date"], previous_club=event["from"],
+                                 deal=event.get("deal"))
                 if key == WADE_ID:
                     entry.pop("bbr_id", None)
                 out.append(entry)
                 continue
             sched = lg.get("schedule") or {self.new: row["salary"]}
+            if (event or {}).get("kind") == "trade" and row["route"] == "existing":
+                out.append(self.traded_in(key, name, row, event, lg, sched))
+                continue
             camp = (event or {}).get("kind") == "camp_signing"
             entry = {"player": name, "bbr_id": key,
                      "status": "under_rookie_contract" if row["route"] == "rookie_scale" else "camp_contract" if camp else "under_contract",
@@ -180,6 +209,31 @@ class Rollover:
                         "notes": f"No. {p['pick']} pick of the {self.year} draft; Miami holds his rights, unsigned when the summer market closed.",
                         "sources": [f"{self.old}/09_Draft/draft_{self.year}.json"]})
         return out
+
+    def traded_in(self, key, name, row, event, lg, sched):
+        """A contract Miami acquired in the summer by trade: an assignment of the existing agreement, never a new signing.
+        It keeps its signed schedule and its original signing date (from the summer market record that dated it, else
+        unrecorded); Miami holds the player from the trade date."""
+        from .league_contracts import read as read_ledger
+        before = (read_ledger(self.old, self.root) or {}).get(key) or {}
+        rookie = before.get("route") == "rookie_scale" or before.get("kind") == "rookie_scale"
+        origin = self.original_signing(key)
+        entry = {"player": name, "bbr_id": key, "status": "under_rookie_contract" if rookie else "under_contract",
+                 "schedule": dict(sched), "amount_kind": {s: "contract_salary" for s in sched},
+                 "guaranteed": dict(sched), "route": "existing", "acquired_by": "trade", "acquired_date": event["date"],
+                 "previous_club": event.get("from"), "deal": event.get("deal"),
+                 "original_term_seasons": len(before.get("schedule") or sched),
+                 "notes": (f"Acquired by trade from {event.get('from')} on {_long(event['date'])} ({event.get('deal')}): the "
+                           f"existing agreement, assigned; schedule from the league contract ledger. "
+                           + (f"Signed {_long(origin['date'])} ({origin['kind'].replace('_', ' ')}, {origin.get('club')})."
+                              if origin else "Original signing date not recorded.")),
+                 "sources": [self.record_path.relative_to(self.root).as_posix(), f"{self.new}/League/contracts.json"]}
+        if origin:
+            entry["signed_date"] = origin["date"]
+        option = lg.get("team_option") or before.get("team_option")
+        if option:
+            entry["team_option_season"] = option
+        return entry
 
     def control_text(self, entry):
         s = entry.get("schedule") or {}
@@ -240,6 +294,11 @@ class Rollover:
                 # Miami holds his rights from the draft: he plays for no other club (world rule 2).
                 new_entries.append({"player": e["player"], "bbr_id": e["bbr_id"], "from": self.draft_date(), "until": None,
                                     "basis": f"draft rights (No. {e.get('draft_pick')} pick), unsigned"})
+                continue
+            if e.get("acquired_by") == "trade":
+                new_entries.append({"player": e["player"], "bbr_id": e["bbr_id"], "from": e["acquired_date"], "until": None,
+                                    "basis": f"acquired by trade {e['acquired_date']} from {e.get('previous_club')} "
+                                             f"({e.get('deal')}; {self.new} summer market)"})
                 continue
             new_entries.append({"player": e["player"], "bbr_id": e["bbr_id"], "from": e.get("signed_date") or self.day,
                                 "until": None, "basis": f"{e.get('route')} signing {e.get('signed_date')} ({self.new} summer market)"})

@@ -62,6 +62,57 @@ class SummerReportTests(unittest.TestCase):
         self.assertEqual([(e["player"], e["to"]) for e in s["left"]], [("B", "Boston Celtics")])
 
 
+class TradedInContractTests(unittest.TestCase):
+    """A contract Miami acquires by summer trade is the existing agreement, assigned: it keeps its original signing date
+    and is held from the trade date (the 2005 rollover once dated Telfair's and Stevenson's contracts at the trade)."""
+
+    def setUp(self):
+        import json
+        import tempfile
+        from runtime.rollover import Rollover
+        self.tmp = tempfile.TemporaryDirectory()
+        root = Path(self.tmp.name)
+        def put(rel, data):
+            path = root / rel
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps(data), encoding="utf-8")
+        put("career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json", {"events": [
+            {"date": "2004-07-01", "kind": "rookie_scale_signing", "bbr_id": "telfase01", "club": "Detroit Pistons"},
+            {"date": "2004-09-23", "kind": "offer_sheet", "bbr_id": "stevede01", "club": "Cleveland Cavaliers"},
+            {"date": "2004-09-23", "kind": "offer_sheet_matched", "bbr_id": "stevede01", "club": "Utah Jazz"}]})
+        put("career/Dwyane_Wade/2004-05/League/contracts.json", {"contracts": [
+            {"bbr_id": "telfase01", "route": "rookie_scale", "kind": "rookie_scale", "team_option": "2007-08",
+             "schedule": {"2004-05": 939480, "2005-06": 1010040, "2006-07": 1080480}},
+            {"bbr_id": "stevede01", "route": "bird", "kind": "new", "schedule": {"2004-05": 2657306, "2005-06": 2989469}},
+            {"bbr_id": "nodate01", "route": "existing", "kind": "existing", "schedule": {"2004-05": 1, "2005-06": 2}}]})
+        r = Rollover.__new__(Rollover)
+        r.root, r.old, r.new, r.year, r.day = root, "2004-05", "2005-06", 2005, "2005-10-01"
+        r.record_path = root / "career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json"
+        self.r = r
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def entry(self, key, date="2005-08-05"):
+        event = {"date": date, "kind": "trade", "bbr_id": key, "club": "Miami Heat", "from": "Utah Jazz", "deal": "d1"}
+        row = {"bbr_id": key, "route": "existing", "salary": 1}
+        return self.r.traded_in(key, key, row, event, {}, {"2005-06": 1010040, "2006-07": 1080480})
+
+    def test_rookie_scale_contract_keeps_its_signing_and_option(self):
+        e = self.entry("telfase01")
+        self.assertEqual((e["signed_date"], e["status"], e["team_option_season"]),
+                         ("2004-07-01", "under_rookie_contract", "2007-08"))
+        self.assertEqual((e["acquired_by"], e["acquired_date"], e["route"]), ("trade", "2005-08-05", "existing"))
+
+    def test_matched_offer_sheet_dates_the_contract(self):
+        self.assertEqual(self.entry("stevede01", "2005-09-02")["signed_date"], "2004-09-23")
+
+    def test_an_unrecorded_signing_stays_unknown(self):
+        e = self.entry("nodate01")
+        self.assertNotIn("signed_date", e)
+        self.assertIn("not recorded", e["notes"])
+
+
 if __name__ == "__main__":
     unittest.main()
 
