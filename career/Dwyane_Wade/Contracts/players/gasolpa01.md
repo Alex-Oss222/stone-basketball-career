@@ -2,9 +2,9 @@
 
 # Contract | Pau Gasol
 
-Known through: 2005-10-20. [Open interactive contract](gasolpa01.html#contract) · [Contract history](gasolpa01.html#contract-history)
+Known through: 2005-10-21. [Open interactive contract](gasolpa01.html#contract) · [Contract history](gasolpa01.html#contract-history)
 
-Pau Gasol: under contract. Evidence cutoff: 2005-10-20.
+Pau Gasol: under contract. Evidence cutoff: 2005-10-21.
 
 ## Current contract
 

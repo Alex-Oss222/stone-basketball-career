@@ -8,7 +8,7 @@
 
 <!-- team-status:start -->
 
-**Status on 2005-10-20** (generated from dated records): Miami 0-0, 8th in the East ([standings](../../../../career/Dwyane_Wade/Stats_and_Awards/League/2005-06/Standings.md)). 21 players under contract, 0 on the injured list. Head coach Erik Spoelstra; the staff rotation in force and the register are in [Team](Team/README.md).
+**Status on 2005-10-21** (generated from dated records): Miami 0-0, 8th in the East ([standings](../../../../career/Dwyane_Wade/Stats_and_Awards/League/2005-06/Standings.md)). 21 players under contract, 0 on the injured list. Head coach Erik Spoelstra; the staff rotation in force and the register are in [Team](Team/README.md).
 
 <!-- team-status:end -->
 
