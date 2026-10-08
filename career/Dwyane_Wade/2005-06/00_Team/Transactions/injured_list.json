@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "kind": "injured_list",
+ "season": "2005-06",
+ "lists_from": "2003-11-12",
+ "rule": "12 active for each game, up to 3 on the injured list, at least 5 games on it once placed. Injured players are placed first; the remaining places go to the lowest healthy reserves (runtime/roster_moves.py).",
+ "entries": [
+  {
+   "player": "Jumaine Jones",
+   "placed": "2005-11-02",
+   "activated": null,
+   "first_game_missed": "2005-11-02-miami-heat-at-memphis-grizzlies",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 0
+  },
+  {
+   "player": "DeShawn Stevenson",
+   "placed": "2005-11-02",
+   "activated": null,
+   "first_game_missed": "2005-11-02-miami-heat-at-memphis-grizzlies",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 0
+  },
+  {
+   "player": "Matt Carroll",
+   "placed": "2005-11-02",
+   "activated": null,
+   "first_game_missed": "2005-11-02-miami-heat-at-memphis-grizzlies",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 0
+  }
+ ],
+ "as_of": "2005-11-02"
+}

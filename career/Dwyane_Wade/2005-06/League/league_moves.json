@@ -436,9 +436,290 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 7.01 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-waive-ndongbo01",
+   "date": "2005-11-02",
+   "kind": "waive",
+   "player": "Boniface N'Dong",
+   "bbr_id": "ndongbo01",
+   "from": "Dallas Mavericks",
+   "to": null,
+   "role": {
+    "player_id": "Boniface N'Dong",
+    "bbr_id": "ndongbo01",
+    "position": "C",
+    "games": 23,
+    "minutes": 152
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-04"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-rest_of_season-ruffimi01",
+   "date": "2005-11-02",
+   "kind": "rest_of_season",
+   "player": "Michael Ruffin",
+   "bbr_id": "ruffimi01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "role": {
+    "player_id": "Michael Ruffin",
+    "bbr_id": "ruffimi01",
+    "position": "C",
+    "games": 76,
+    "minutes": 1010
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.35 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-waive-smithch04",
+   "date": "2005-11-02",
+   "kind": "waive",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "from": "New York Knicks",
+   "to": null,
+   "role": {
+    "player_id": "Charles Smith",
+    "bbr_id": "smithch04",
+    "position": "SG",
+    "games": 22,
+    "minutes": 210
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-04"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-rest_of_season-harriot01",
+   "date": "2005-11-02",
+   "kind": "rest_of_season",
+   "player": "Othella Harrington",
+   "bbr_id": "harriot01",
+   "from": null,
+   "to": "New York Knicks",
+   "role": {
+    "player_id": "Othella Harrington",
+    "bbr_id": "harriot01",
+    "position": "C",
+    "games": 72,
+    "minutes": 824
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.31 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-waive-obertfa01",
+   "date": "2005-11-02",
+   "kind": "waive",
+   "player": "Fabricio Oberto",
+   "bbr_id": "obertfa01",
+   "from": "Orlando Magic",
+   "to": null,
+   "role": {
+    "player_id": "Fabricio Oberto",
+    "bbr_id": "obertfa01",
+    "position": "C",
+    "games": 59,
+    "minutes": 490
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-04"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-rest_of_season-outlabo01",
+   "date": "2005-11-02",
+   "kind": "rest_of_season",
+   "player": "Bo Outlaw",
+   "bbr_id": "outlabo01",
+   "from": null,
+   "to": "Orlando Magic",
+   "role": {
+    "player_id": "Bo Outlaw",
+    "bbr_id": "outlabo01",
+    "position": "PF",
+    "games": 32,
+    "minutes": 355
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.39 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-waive-armstda01",
+   "date": "2005-11-02",
+   "kind": "waive",
+   "player": "Darrell Armstrong",
+   "bbr_id": "armstda01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Darrell Armstrong",
+    "bbr_id": "armstda01",
+    "position": "PG",
+    "games": 62,
+    "minutes": 622
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-04"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-rest_of_season-eisleho01",
+   "date": "2005-11-02",
+   "kind": "rest_of_season",
+   "player": "Howard Eisley",
+   "bbr_id": "eisleho01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Howard Eisley",
+    "bbr_id": "eisleho01",
+    "position": "PG",
+    "games": 32,
+    "minutes": 394
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.2 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-waive-felixno01",
+   "date": "2005-11-02",
+   "kind": "waive",
+   "player": "Noel Felix",
+   "bbr_id": "felixno01",
+   "from": "San Antonio Spurs",
+   "to": null,
+   "role": {
+    "player_id": "Noel Felix",
+    "bbr_id": "felixno01",
+    "position": "SF",
+    "games": 12,
+    "minutes": 82
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-04"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-rest_of_season-georgde01",
+   "date": "2005-11-02",
+   "kind": "rest_of_season",
+   "player": "Devean George",
+   "bbr_id": "georgde01",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "Devean George",
+    "bbr_id": "georgde01",
+    "position": "SF",
+    "games": 71,
+    "minutes": 1542
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.14 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-waive-robinbe01",
+   "date": "2005-11-02",
+   "kind": "waive",
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "from": "Seattle SuperSonics",
+   "to": null,
+   "role": {
+    "player_id": "Bernard Robinson",
+    "bbr_id": "robinbe01",
+    "position": "SF",
+    "games": 66,
+    "minutes": 1303
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-04"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-rest_of_season-woodslo01",
+   "date": "2005-11-02",
+   "kind": "rest_of_season",
+   "player": "Loren Woods",
+   "bbr_id": "woodslo01",
+   "from": null,
+   "to": "Seattle SuperSonics",
+   "role": {
+    "player_id": "Loren Woods",
+    "bbr_id": "woodslo01",
+    "position": "C",
+    "games": 27,
+    "minutes": 324
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.24 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-waive-leeda02",
+   "date": "2005-11-02",
+   "kind": "waive",
+   "player": "David Lee",
+   "bbr_id": "leeda02",
+   "from": "Toronto Raptors",
+   "to": null,
+   "role": {
+    "player_id": "David Lee",
+    "bbr_id": "leeda02",
+    "position": "SF",
+    "games": 67,
+    "minutes": 1129
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-04"
+  },
+  {
+   "id": "2005-06-market-2005-11-02-rest_of_season-davisda01",
+   "date": "2005-11-02",
+   "kind": "rest_of_season",
+   "player": "Dale Davis",
+   "bbr_id": "davisda01",
+   "from": null,
+   "to": "Toronto Raptors",
+   "role": {
+    "player_id": "Dale Davis",
+    "bbr_id": "davisda01",
+    "position": "C",
+    "games": 28,
+    "minutes": 178
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.95 x fit"
   }
  ],
  "market_days": [
-  "2005-11-01"
+  "2005-11-01",
+  "2005-11-02"
  ]
 }
