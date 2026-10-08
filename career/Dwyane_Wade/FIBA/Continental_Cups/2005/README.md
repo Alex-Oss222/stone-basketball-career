@@ -4,7 +4,7 @@
 
 2005-08-24 to 2005-09-04, hosted by Dominican Republic. FIBA rules (four 10-minute quarters, five fouls). Every game is played by the engine; real results of this event are never used. Rules and sources: `runtime/national.py`, `library/2005/fiba/fiba_2005_americas_championship.json`.
 
-Status: **16 of 40 games played**.
+Status: **20 of 40 games played**.
 
 ## Rosters
 
@@ -26,20 +26,33 @@ Status: **16 of 40 games played**.
 | Pos | Team | W | L | PF | PA | Pts |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | **United States** | 3 | 1 | 357 | 351 | 7 |
-| 2 | Canada | 2 | 1 | 252 | 237 | 5 |
-| 3 | Venezuela | 1 | 2 | 244 | 261 | 4 |
-| 4 | Panama | 1 | 2 | 208 | 220 | 4 |
-| 5 | Brazil | 1 | 2 | 243 | 235 | 4 |
+| 2 | Canada | 2 | 2 | 337 | 327 | 6 |
+| 3 | Brazil | 2 | 2 | 333 | 320 | 6 |
+| 4 | Panama | 2 | 2 | 288 | 287 | 6 |
+| 5 | Venezuela | 1 | 3 | 311 | 341 | 5 |
 
 ### Group B
 
 | Pos | Team | W | L | PF | PA | Pts |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Dominican Republic | 3 | 0 | 220 | 204 | 6 |
-| 2 | Puerto Rico | 2 | 1 | 238 | 231 | 5 |
-| 3 | Argentina | 2 | 1 | 251 | 236 | 5 |
-| 4 | Mexico | 1 | 2 | 220 | 235 | 4 |
+| 1 | Dominican Republic | 4 | 0 | 311 | 285 | 8 |
+| 2 | Mexico | 2 | 2 | 311 | 311 | 6 |
+| 3 | Argentina | 2 | 2 | 332 | 327 | 6 |
+| 4 | Puerto Rico | 2 | 2 | 314 | 322 | 6 |
 | 5 | Uruguay | 0 | 4 | 308 | 331 | 4 |
+
+### Second round (Group R, results among teams of the same first-round group carried)
+
+| Pos | Team | W | L | PF | PA | Pts |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Dominican Republic | 3 | 0 | 239 | 215 | 6 |
+| 2 | Brazil | 2 | 1 | 256 | 239 | 5 |
+| 3 | **United States** | 2 | 1 | 259 | 262 | 5 |
+| 4 | Mexico | 1 | 2 | 238 | 240 | 4 |
+| 5 | Argentina | 1 | 2 | 239 | 249 | 4 |
+| 6 | Puerto Rico | 1 | 2 | 221 | 233 | 4 |
+| 7 | Canada | 1 | 2 | 251 | 253 | 4 |
+| 8 | Panama | 1 | 2 | 208 | 220 | 4 |
 
 ## Games
 
@@ -55,8 +68,8 @@ Status: **16 of 40 games played**.
 | 6 | 2005-08-26 | United States | Canada | 113-105 | [box](Games/fiba-amc05-g06.result.json) |
 | 7 | 2005-08-27 | Venezuela | United States | 89-98 | [box](Games/fiba-amc05-g07.result.json) |
 | 8 | 2005-08-27 | Panama | Canada | 50-61 | [box](Games/fiba-amc05-g08.result.json) |
-| 9 | 2005-08-28 | Brazil | Canada |  |  |
-| 10 | 2005-08-28 | Panama | Venezuela |  |  |
+| 9 | 2005-08-28 | Brazil | Canada | 90-85 | [box](Games/fiba-amc05-g09.result.json) |
+| 10 | 2005-08-28 | Panama | Venezuela | 80-67 | [box](Games/fiba-amc05-g10.result.json) |
 
 ### Group B
 
@@ -70,29 +83,29 @@ Status: **16 of 40 games played**.
 | 16 | 2005-08-26 | Dominican Republic | Mexico | 77-65 | [box](Games/fiba-amc05-g16.result.json) |
 | 17 | 2005-08-27 | Argentina | Uruguay | 93-78 | [box](Games/fiba-amc05-g17.result.json) |
 | 18 | 2005-08-27 | Puerto Rico | Dominican Republic | 71-69 | [box](Games/fiba-amc05-g18.result.json) |
-| 19 | 2005-08-28 | Mexico | Puerto Rico |  |  |
-| 20 | 2005-08-28 | Dominican Republic | Argentina |  |  |
+| 19 | 2005-08-28 | Mexico | Puerto Rico | 91-76 | [box](Games/fiba-amc05-g19.result.json) |
+| 20 | 2005-08-28 | Dominican Republic | Argentina | 91-81 | [box](Games/fiba-amc05-g20.result.json) |
 
 ### Group R
 
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
-| 21 | 2005-08-30 | B1 | A4 |  |  |
-| 22 | 2005-08-30 | A1 | B4 |  |  |
-| 23 | 2005-08-30 | A2 | B3 |  |  |
-| 24 | 2005-08-30 | B2 | A3 |  |  |
-| 25 | 2005-08-31 | B4 | A2 |  |  |
-| 26 | 2005-08-31 | B3 | A1 |  |  |
-| 27 | 2005-08-31 | A3 | B1 |  |  |
-| 28 | 2005-08-31 | A4 | B2 |  |  |
-| 29 | 2005-09-01 | B1 | A2 |  |  |
-| 30 | 2005-09-01 | B4 | A3 |  |  |
-| 31 | 2005-09-01 | B3 | A4 |  |  |
-| 32 | 2005-09-01 | B2 | A1 |  |  |
-| 33 | 2005-09-02 | A4 | B4 |  |  |
-| 34 | 2005-09-02 | A1 | B1 |  |  |
-| 35 | 2005-09-02 | A3 | B3 |  |  |
-| 36 | 2005-09-02 | A2 | B2 |  |  |
+| 21 | 2005-08-30 | Dominican Republic | Panama |  |  |
+| 22 | 2005-08-30 | United States | Puerto Rico |  |  |
+| 23 | 2005-08-30 | Canada | Argentina |  |  |
+| 24 | 2005-08-30 | Mexico | Brazil |  |  |
+| 25 | 2005-08-31 | Puerto Rico | Canada |  |  |
+| 26 | 2005-08-31 | Argentina | United States |  |  |
+| 27 | 2005-08-31 | Brazil | Dominican Republic |  |  |
+| 28 | 2005-08-31 | Panama | Mexico |  |  |
+| 29 | 2005-09-01 | Dominican Republic | Canada |  |  |
+| 30 | 2005-09-01 | Puerto Rico | Brazil |  |  |
+| 31 | 2005-09-01 | Argentina | Panama |  |  |
+| 32 | 2005-09-01 | Mexico | United States |  |  |
+| 33 | 2005-09-02 | Panama | Puerto Rico |  |  |
+| 34 | 2005-09-02 | United States | Dominican Republic |  |  |
+| 35 | 2005-09-02 | Brazil | Argentina |  |  |
+| 36 | 2005-09-02 | Canada | Mexico |  |  |
 
 ### Semifinals
 
@@ -115,12 +128,12 @@ Status: **16 of 40 games played**.
 
 ## Leaders (per game)
 
-**Points**: Víctor Díaz (Venezuela) 15.7; Carl English (Canada) 15.3; Óscar Torres (Venezuela) 15.3; Denham Brown (Canada) 15.0; Jerome Beasley (United States) 14.8
+**Points**: Federico Kammerichs (Argentina) 15.0; Víctor Díaz (Venezuela) 15.0; Jerome Beasley (United States) 14.8; Carl English (Canada) 14.5; Ramsés Benítez (Mexico) 14.5
 
-**Rebounds**: José Vargas (Dominican Republic) 8.7; Anderson Varejão (Brazil) 7.7; Denham Brown (Canada) 7.0; Ramsés Benítez (Mexico) 7.0; James Gillingham (Canada) 6.3
+**Rebounds**: Denham Brown (Canada) 9.2; Ramsés Benítez (Mexico) 8.0; José Vargas (Dominican Republic) 7.5; Anderson Varejão (Brazil) 7.0; Mauricio Aguiar (Uruguay) 6.2
 
-**Assists**: Amaury Filion (Dominican Republic) 3.7; Jaime Peterson (Dominican Republic) 2.7; Ramsés Benítez (Mexico) 2.7; Tiago Splitter (Brazil) 2.7; Adam Chubb (United States) 2.5
+**Assists**: Amaury Filion (Dominican Republic) 3.5; Jaime Peterson (Dominican Republic) 2.8; Adam Chubb (United States) 2.5; Marcelinho Machado (Brazil) 2.5; Víctor Ávila (Mexico) 2.5
 
-**Steals**: Peter John Ramos (Puerto Rico) 2.3; Guilherme Giovannoni (Brazil) 2.0; Elías Larry Ayuso (Puerto Rico) 1.7; Horacio Llamas (Mexico) 1.7; Tiago Splitter (Brazil) 1.7
+**Steals**: Horacio Llamas (Mexico) 2.0; Héctor Romero (Venezuela) 1.8; Peter John Ramos (Puerto Rico) 1.8; Tiago Splitter (Brazil) 1.8; Anderson Varejão (Brazil) 1.5
 
-**Blocks**: Tiago Splitter (Brazil) 1.7; Jaime Peterson (Dominican Republic) 1.3; Leonardo Gutiérrez (Argentina) 1.3; Peter John Ramos (Puerto Rico) 1.3; Ramsés Benítez (Mexico) 1.3
+**Blocks**: Peter John Ramos (Puerto Rico) 1.2; Tiago Splitter (Brazil) 1.2; Adam Chubb (United States) 1.0; Anderson Varejão (Brazil) 1.0; Héctor Romero (Venezuela) 1.0
