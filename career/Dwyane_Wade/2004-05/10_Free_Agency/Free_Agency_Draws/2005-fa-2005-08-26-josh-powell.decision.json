@@ -1,0 +1,18 @@
+{
+ "event_id": "2005-fa-2005-08-26-josh-powell",
+ "date": "2005-08-26",
+ "question": "2005 free agency, 2005-08-26: which offer does Josh Powell accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Denver Nuggets $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Lakers $398,762 x 1, New Orleans Hornets $398,762 x 1), or does he wait?",
+ "decider": "Josh Powell (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.242174,
+  "Charlotte Bobcats": 0.00765,
+  "Chicago Bulls": 0.016813,
+  "Denver Nuggets": 0.027929,
+  "Detroit Pistons": 0.292849,
+  "Houston Rockets": 0.215866,
+  "Los Angeles Lakers": 0.006939,
+  "New Orleans Hornets": 0.01978,
+  "wait": 0.17
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.830; priority loyalty; utility Atlanta Hawks 52.5, Charlotte Bobcats 38.7, Chicago Bulls 41.8, Denver Nuggets 43.9, Detroit Pistons 53.3, Houston Rockets 52.0, Los Angeles Lakers 38.3, New Orleans Hornets 42.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

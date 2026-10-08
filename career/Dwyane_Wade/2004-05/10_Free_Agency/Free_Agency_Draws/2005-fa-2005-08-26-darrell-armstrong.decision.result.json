@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-26",
+ "decider": "Darrell Armstrong (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-26-darrell-armstrong",
+ "kind": "decision",
+ "options": {
+  "Philadelphia 76ers": 0.83,
+  "wait": 0.17
+ },
+ "outcome": "Philadelphia 76ers",
+ "question": "2005 free agency, 2005-08-26: which offer does Darrell Armstrong accept (Philadelphia 76ers $1,510,936 x 1), or does he wait?"
+}

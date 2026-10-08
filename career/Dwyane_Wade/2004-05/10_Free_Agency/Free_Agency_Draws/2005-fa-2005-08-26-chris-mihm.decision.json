@@ -1,0 +1,16 @@
+{
+ "event_id": "2005-fa-2005-08-26-chris-mihm",
+ "date": "2005-08-26",
+ "question": "2005 free agency, 2005-08-26: which offer does Chris Mihm accept (Charlotte Bobcats $5,100,714 x 5, Denver Nuggets $5,000,000 x 5, New Jersey Nets $5,000,000 x 5, Orlando Magic $5,000,000 x 5, Phoenix Suns $5,100,714 x 5, Seattle SuperSonics $5,000,000 x 5), or does he wait?",
+ "decider": "Chris Mihm (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 3.3e-05,
+  "Denver Nuggets": 8.2e-05,
+  "New Jersey Nets": 0.000236,
+  "Orlando Magic": 0.003448,
+  "Phoenix Suns": 0.822753,
+  "Seattle SuperSonics": 0.003448,
+  "wait": 0.17
+ },
+ "basis": "Ask $5,100,714; best offer 1.00 of the ask in total; accept chance 0.830; priority winning; utility Charlotte Bobcats 48.6, Denver Nuggets 52.2, New Jersey Nets 56.5, Orlando Magic 67.2, Phoenix Suns 89.1, Seattle SuperSonics 67.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

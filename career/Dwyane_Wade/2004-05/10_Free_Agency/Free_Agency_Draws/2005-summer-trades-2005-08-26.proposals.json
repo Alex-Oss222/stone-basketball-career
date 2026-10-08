@@ -1,0 +1,85 @@
+{
+ "schema_version": 1,
+ "date": "2005-08-26",
+ "rule": "runtime/free_agency_2004.py Market.trade_proposals",
+ "deals": [
+  {
+   "date": "2005-08-26",
+   "clubs": [
+    "Dallas Mavericks",
+    "Milwaukee Bucks"
+   ],
+   "a": {
+    "club": "Dallas Mavericks",
+    "sends": [
+     "Danny Fortson"
+    ],
+    "bbr_ids": [
+     "fortsda01"
+    ],
+    "salary": 6207670
+   },
+   "b": {
+    "club": "Milwaukee Bucks",
+    "sends": [
+     "Carlos Arroyo",
+     "Raymond Felton"
+    ],
+    "bbr_ids": [
+     "arroyca01",
+     "feltora01"
+    ],
+    "salary": 7731882
+   },
+   "gain": {
+    "Dallas Mavericks": 0.562,
+    "Milwaukee Bucks": 0.516
+   },
+   "accept": {
+    "Dallas Mavericks": 0.95,
+    "Milwaukee Bucks": 0.95
+   },
+   "both": 0.9025,
+   "id": "2005-summer-trade-2005-08-26-arroyca01-feltora01-fortsda01"
+  },
+  {
+   "date": "2005-08-26",
+   "clubs": [
+    "Charlotte Bobcats",
+    "Orlando Magic"
+   ],
+   "a": {
+    "club": "Charlotte Bobcats",
+    "sends": [
+     "Zoran Planinic",
+     "Marvin Williams"
+    ],
+    "bbr_ids": [
+     "planizo01",
+     "willima02"
+    ],
+    "salary": 5467800
+   },
+   "b": {
+    "club": "Orlando Magic",
+    "sends": [
+     "Reece Gaines"
+    ],
+    "bbr_ids": [
+     "gainere01"
+    ],
+    "salary": 1556160
+   },
+   "gain": {
+    "Charlotte Bobcats": 0.403,
+    "Orlando Magic": 0.346
+   },
+   "accept": {
+    "Charlotte Bobcats": 0.95,
+    "Orlando Magic": 0.95
+   },
+   "both": 0.9025,
+   "id": "2005-summer-trade-2005-08-26-gainere01-planizo01-willima02"
+  }
+ ]
+}

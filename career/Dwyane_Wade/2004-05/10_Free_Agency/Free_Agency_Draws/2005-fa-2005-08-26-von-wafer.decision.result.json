@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-26",
+ "decider": "Von Wafer (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-26-von-wafer",
+ "kind": "decision",
+ "options": {
+  "Milwaukee Bucks": 0.83,
+  "wait": 0.17
+ },
+ "outcome": "Milwaukee Bucks",
+ "question": "2005 free agency, 2005-08-26: which offer does Von Wafer accept (Milwaukee Bucks $398,762 x 1), or does he wait?"
+}

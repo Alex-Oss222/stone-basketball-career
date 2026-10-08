@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-26",
+ "decider": "Desmond Mason (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-26-desmond-mason",
+ "kind": "decision",
+ "options": {
+  "Milwaukee Bucks": 0.83,
+  "wait": 0.17
+ },
+ "outcome": "Milwaukee Bucks",
+ "question": "2005 free agency, 2005-08-26: which offer does Desmond Mason accept (Milwaukee Bucks $7,549,982 x 4), or does he wait?"
+}

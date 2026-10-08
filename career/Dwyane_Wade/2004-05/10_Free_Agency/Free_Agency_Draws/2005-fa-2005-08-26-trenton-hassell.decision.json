@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-26-trenton-hassell",
+ "date": "2005-08-26",
+ "question": "2005 free agency, 2005-08-26: which offer does Trenton Hassell accept (Memphis Grizzlies $4,171,924 x 5), or does he wait?",
+ "decider": "Trenton Hassell (simulated player, engine draw)",
+ "options": {
+  "Memphis Grizzlies": 0.83,
+  "wait": 0.17
+ },
+ "basis": "Ask $4,171,924; best offer 1.00 of the ask in total; accept chance 0.830; priority fame; utility Memphis Grizzlies 70.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

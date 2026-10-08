@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-summer-trade-2005-08-26-arroyca01-feltora01-fortsda01",
+ "date": "2005-08-26",
+ "question": "Do Dallas Mavericks and Milwaukee Bucks trade Danny Fortson for Carlos Arroyo and Raymond Felton on 2005-08-26?",
+ "decider": "Dallas Mavericks and Milwaukee Bucks front offices (engine draw)",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "basis": "Gains on own objectives {'Dallas Mavericks': 0.562, 'Milwaukee Bucks': 0.516}; acceptance {'Dallas Mavericks': 0.95, 'Milwaukee Bucks': 0.95}; 1999 salary rule met (runtime/free_agency_2004.py summer trades)."
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-26",
+ "decider": "Shavlik Randolph (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-26-shavlik-randolph",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.83,
+  "wait": 0.17
+ },
+ "outcome": "Charlotte Bobcats",
+ "question": "2005 free agency, 2005-08-26: which offer does Shavlik Randolph accept (Charlotte Bobcats $398,762 x 1), or does he wait?"
+}

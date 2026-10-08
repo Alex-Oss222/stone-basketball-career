@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-26",
+ "decider": "Donyell Marshall (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-26-donyell-marshall",
+ "kind": "decision",
+ "options": {
+  "Miami Heat": 0.83,
+  "wait": 0.17
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-08-26: which offer does Donyell Marshall accept (Miami Heat $7,182,304 x 3), or does he wait?"
+}

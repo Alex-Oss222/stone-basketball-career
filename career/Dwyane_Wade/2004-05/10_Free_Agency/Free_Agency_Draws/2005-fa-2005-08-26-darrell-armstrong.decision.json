@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-26-darrell-armstrong",
+ "date": "2005-08-26",
+ "question": "2005 free agency, 2005-08-26: which offer does Darrell Armstrong accept (Philadelphia 76ers $1,510,936 x 1), or does he wait?",
+ "decider": "Darrell Armstrong (simulated player, engine draw)",
+ "options": {
+  "Philadelphia 76ers": 0.83,
+  "wait": 0.17
+ },
+ "basis": "Ask $1,510,936; best offer 1.00 of the ask in total; accept chance 0.830; priority winning; utility Philadelphia 76ers 54.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,19 @@
+{
+ "date": "2005-08-26",
+ "decider": "Donell Taylor (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-26-donell-taylor",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.021937,
+  "Memphis Grizzlies": 0.276765,
+  "Milwaukee Bucks": 0.040373,
+  "Minnesota Timberwolves": 0.046673,
+  "New Jersey Nets": 0.044619,
+  "New York Knicks": 0.062064,
+  "Sacramento Kings": 0.319154,
+  "Utah Jazz": 0.018415,
+  "wait": 0.17
+ },
+ "outcome": "Sacramento Kings",
+ "question": "2005 free agency, 2005-08-26: which offer does Donell Taylor accept (Golden State Warriors $398,762 x 1, Memphis Grizzlies $398,762 x 1, Milwaukee Bucks $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New York Knicks $398,762 x 1, Sacramento Kings $398,762 x 1, Utah Jazz $398,762 x 1), or does he wait?"
+}

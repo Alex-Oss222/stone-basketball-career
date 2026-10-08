@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-summer-trade-2005-08-26-gainere01-planizo01-willima02",
+ "date": "2005-08-26",
+ "question": "Do Charlotte Bobcats and Orlando Magic trade Zoran Planinic and Marvin Williams for Reece Gaines on 2005-08-26?",
+ "decider": "Charlotte Bobcats and Orlando Magic front offices (engine draw)",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "basis": "Gains on own objectives {'Charlotte Bobcats': 0.403, 'Orlando Magic': 0.346}; acceptance {'Charlotte Bobcats': 0.95, 'Orlando Magic': 0.95}; 1999 salary rule met (runtime/free_agency_2004.py summer trades)."
+}

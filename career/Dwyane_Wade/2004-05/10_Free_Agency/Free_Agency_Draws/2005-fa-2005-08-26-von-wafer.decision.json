@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-26-von-wafer",
+ "date": "2005-08-26",
+ "question": "2005 free agency, 2005-08-26: which offer does Von Wafer accept (Milwaukee Bucks $398,762 x 1), or does he wait?",
+ "decider": "Von Wafer (simulated player, engine draw)",
+ "options": {
+  "Milwaukee Bucks": 0.83,
+  "wait": 0.17
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.830; priority fame; utility Milwaukee Bucks 47.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

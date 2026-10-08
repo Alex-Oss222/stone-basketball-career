@@ -1355,13 +1355,33 @@
  "tables": {
   "A": [
    {
+    "w": 2,
+    "l": 1,
+    "pf": 259,
+    "pa": 262,
+    "pts": 5,
+    "team": "United States",
+    "position": 1,
+    "tied_with": []
+   },
+   {
+    "w": 1,
+    "l": 2,
+    "pf": 243,
+    "pa": 235,
+    "pts": 4,
+    "team": "Brazil",
+    "position": 2,
+    "tied_with": []
+   },
+   {
     "w": 1,
     "l": 1,
-    "pf": 161,
-    "pa": 150,
+    "pf": 191,
+    "pa": 187,
     "pts": 3,
-    "team": "Brazil",
-    "position": 1,
+    "team": "Canada",
+    "position": 3,
     "tied_with": []
    },
    {
@@ -1371,35 +1391,15 @@
     "pa": 163,
     "pts": 3,
     "team": "Venezuela",
-    "position": 2,
-    "tied_with": []
-   },
-   {
-    "w": 1,
-    "l": 1,
-    "pf": 146,
-    "pa": 157,
-    "pts": 3,
-    "team": "United States",
-    "position": 3,
-    "tied_with": []
-   },
-   {
-    "w": 1,
-    "l": 0,
-    "pf": 86,
-    "pa": 74,
-    "pts": 2,
-    "team": "Canada",
     "position": 4,
     "tied_with": []
    },
    {
-    "w": 0,
+    "w": 1,
     "l": 1,
-    "pf": 73,
-    "pa": 77,
-    "pts": 1,
+    "pf": 158,
+    "pa": 159,
+    "pts": 3,
     "team": "Panama",
     "position": 5,
     "tied_with": []
@@ -1407,52 +1407,52 @@
   ],
   "B": [
    {
+    "w": 2,
+    "l": 0,
+    "pf": 149,
+    "pa": 135,
+    "pts": 4,
+    "team": "Dominican Republic",
+    "position": 1,
+    "tied_with": []
+   },
+   {
+    "w": 1,
+    "l": 2,
+    "pf": 220,
+    "pa": 235,
+    "pts": 4,
+    "team": "Mexico",
+    "position": 2,
+    "tied_with": []
+   },
+   {
+    "w": 2,
+    "l": 0,
+    "pf": 169,
+    "pa": 160,
+    "pts": 4,
+    "team": "Puerto Rico",
+    "position": 3,
+    "tied_with": []
+   },
+   {
     "w": 1,
     "l": 1,
     "pf": 158,
     "pa": 158,
     "pts": 3,
     "team": "Argentina",
-    "position": 1,
-    "tied_with": []
-   },
-   {
-    "w": 1,
-    "l": 1,
-    "pf": 155,
-    "pa": 158,
-    "pts": 3,
-    "team": "Mexico",
-    "position": 2,
-    "tied_with": []
-   },
-   {
-    "w": 1,
-    "l": 0,
-    "pf": 72,
-    "pa": 70,
-    "pts": 2,
-    "team": "Dominican Republic",
-    "position": 3,
-    "tied_with": []
-   },
-   {
-    "w": 0,
-    "l": 2,
-    "pf": 141,
-    "pa": 145,
-    "pts": 2,
-    "team": "Uruguay",
     "position": 4,
     "tied_with": []
    },
    {
-    "w": 1,
-    "l": 0,
-    "pf": 76,
-    "pa": 71,
-    "pts": 2,
-    "team": "Puerto Rico",
+    "w": 0,
+    "l": 3,
+    "pf": 230,
+    "pa": 238,
+    "pts": 3,
+    "team": "Uruguay",
     "position": 5,
     "tied_with": []
    }

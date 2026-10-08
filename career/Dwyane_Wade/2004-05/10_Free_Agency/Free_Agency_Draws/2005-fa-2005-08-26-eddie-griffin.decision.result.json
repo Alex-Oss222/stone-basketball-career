@@ -1,0 +1,15 @@
+{
+ "date": "2005-08-26",
+ "decider": "Eddie Griffin (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-26-eddie-griffin",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.129962,
+  "Boston Celtics": 0.235625,
+  "Detroit Pistons": 0.10937,
+  "Houston Rockets": 0.355043,
+  "wait": 0.17
+ },
+ "outcome": "Atlanta Hawks",
+ "question": "2005 free agency, 2005-08-26: which offer does Eddie Griffin accept (Atlanta Hawks $5,000,000 x 5, Boston Celtics $5,000,000 x 5, Detroit Pistons $5,000,000 x 5, Houston Rockets $5,100,000 x 5), or does he wait?"
+}

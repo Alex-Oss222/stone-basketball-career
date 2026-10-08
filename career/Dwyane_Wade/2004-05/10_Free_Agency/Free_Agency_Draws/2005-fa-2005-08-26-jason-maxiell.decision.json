@@ -1,0 +1,22 @@
+{
+ "event_id": "2005-fa-2005-08-26-jason-maxiell",
+ "date": "2005-08-26",
+ "question": "2005 free agency, 2005-08-26: which offer does Jason Maxiell accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Denver Nuggets $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, New Orleans Hornets $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?",
+ "decider": "Jason Maxiell (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.051449,
+  "Charlotte Bobcats": 0.00022,
+  "Chicago Bulls": 0.004027,
+  "Denver Nuggets": 0.0017,
+  "Detroit Pistons": 0.052227,
+  "Houston Rockets": 0.025295,
+  "Los Angeles Clippers": 0.016661,
+  "Los Angeles Lakers": 0.001195,
+  "New Orleans Hornets": 0.00121,
+  "Philadelphia 76ers": 0.003899,
+  "San Antonio Spurs": 0.670548,
+  "Washington Wizards": 0.001569,
+  "wait": 0.17
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.830; priority winning; utility Atlanta Hawks 53.8, Charlotte Bobcats 32.0, Chicago Bulls 43.6, Denver Nuggets 40.2, Detroit Pistons 53.9, Houston Rockets 51.0, Los Angeles Clippers 49.3, Los Angeles Lakers 38.8, New Orleans Hornets 38.8, Philadelphia 76ers 43.5, San Antonio Spurs 64.1, Washington Wizards 39.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

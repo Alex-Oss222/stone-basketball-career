@@ -1,0 +1,14 @@
+{
+ "date": "2005-08-26",
+ "decider": "Anthony Johnson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-26-anthony-johnson",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.0868,
+  "Toronto Raptors": 0.553416,
+  "Utah Jazz": 0.000244,
+  "wait": 0.35954
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-08-26: which offer does Anthony Johnson accept (Chicago Bulls $5,000,000 x 3, Toronto Raptors $5,000,000 x 3, Utah Jazz $5,000,000 x 3), or does he wait?"
+}

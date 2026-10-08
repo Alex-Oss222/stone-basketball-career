@@ -1,0 +1,21 @@
+{
+ "date": "2005-08-26",
+ "decider": "Sergei Monia (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-26-sergei-monia",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.270472,
+  "Charlotte Bobcats": 0.001156,
+  "Chicago Bulls": 0.021172,
+  "Denver Nuggets": 0.008937,
+  "Detroit Pistons": 0.274559,
+  "Houston Rockets": 0.132976,
+  "Los Angeles Clippers": 0.08759,
+  "Los Angeles Lakers": 0.006282,
+  "New Orleans Hornets": 0.006361,
+  "Philadelphia 76ers": 0.020495,
+  "wait": 0.17
+ },
+ "outcome": "Atlanta Hawks",
+ "question": "2005 free agency, 2005-08-26: which offer does Sergei Monia accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Denver Nuggets $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, New Orleans Hornets $398,762 x 1, Philadelphia 76ers $398,762 x 1), or does he wait?"
+}

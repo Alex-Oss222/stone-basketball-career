@@ -1,0 +1,13 @@
+{
+ "date": "2005-08-26",
+ "decider": "Troy Murphy (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-26-troy-murphy",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.825816,
+  "New Orleans Hornets": 0.004184,
+  "wait": 0.17
+ },
+ "outcome": "Golden State Warriors",
+ "question": "2005 free agency, 2005-08-26: which offer does Troy Murphy accept (Golden State Warriors $10,200,000 x 5, New Orleans Hornets $7,288,944 x 5), or does he wait?"
+}
