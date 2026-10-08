@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-19",
+ "decider": "Kyle Korver (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-19-kyle-korver",
+ "kind": "decision",
+ "options": {
+  "New Orleans Hornets": 0.77,
+  "wait": 0.23
+ },
+ "outcome": "New Orleans Hornets",
+ "question": "2005 free agency, 2005-08-19: which offer does Kyle Korver accept (New Orleans Hornets $8,783,538 x 5), or does he wait?"
+}

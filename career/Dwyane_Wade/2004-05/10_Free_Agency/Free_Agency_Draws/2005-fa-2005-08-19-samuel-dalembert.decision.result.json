@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-19",
+ "decider": "Samuel Dalembert (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-19-samuel-dalembert",
+ "kind": "decision",
+ "options": {
+  "Philadelphia 76ers": 0.77,
+  "wait": 0.23
+ },
+ "outcome": "Philadelphia 76ers",
+ "question": "2005 free agency, 2005-08-19: which offer does Samuel Dalembert accept (Philadelphia 76ers $7,673,355 x 5), or does he wait?"
+}

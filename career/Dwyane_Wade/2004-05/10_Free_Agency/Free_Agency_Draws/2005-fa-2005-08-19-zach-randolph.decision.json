@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-19-zach-randolph",
+ "date": "2005-08-19",
+ "question": "2005 free agency, 2005-08-19: which offer does Zach Randolph accept (Portland Trail Blazers $10,800,000 x 5), or does he wait?",
+ "decider": "Zach Randolph (simulated player, engine draw)",
+ "options": {
+  "Portland Trail Blazers": 0.77,
+  "wait": 0.23
+ },
+ "basis": "Ask $10,800,000; best offer 1.00 of the ask in total; accept chance 0.770; priority money; utility Portland Trail Blazers 74.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

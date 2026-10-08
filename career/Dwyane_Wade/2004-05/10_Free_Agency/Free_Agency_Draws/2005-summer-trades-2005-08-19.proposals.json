@@ -1,0 +1,85 @@
+{
+ "schema_version": 1,
+ "date": "2005-08-19",
+ "rule": "runtime/free_agency_2004.py Market.trade_proposals",
+ "deals": [
+  {
+   "date": "2005-08-19",
+   "clubs": [
+    "Denver Nuggets",
+    "Golden State Warriors"
+   ],
+   "a": {
+    "club": "Denver Nuggets",
+    "sends": [
+     "Tony Battie",
+     "Andrew Bogut"
+    ],
+    "bbr_ids": [
+     "battito01",
+     "bogutan01"
+    ],
+    "salary": 9083560
+   },
+   "b": {
+    "club": "Golden State Warriors",
+    "sends": [
+     "Joey Graham"
+    ],
+    "bbr_ids": [
+     "grahajo01"
+    ],
+    "salary": 1196520
+   },
+   "gain": {
+    "Denver Nuggets": 0.648,
+    "Golden State Warriors": 0.866
+   },
+   "accept": {
+    "Denver Nuggets": 0.95,
+    "Golden State Warriors": 0.95
+   },
+   "both": 0.9025,
+   "id": "2005-summer-trade-2005-08-19-battito01-bogutan01-grahajo01"
+  },
+  {
+   "date": "2005-08-19",
+   "clubs": [
+    "Houston Rockets",
+    "New Orleans Hornets"
+   ],
+   "a": {
+    "club": "Houston Rockets",
+    "sends": [
+     "Eric Piatkowski"
+    ],
+    "bbr_ids": [
+     "piatker01"
+    ],
+    "salary": 2666667
+   },
+   "b": {
+    "club": "New Orleans Hornets",
+    "sends": [
+     "George Lynch",
+     "Doug Christie"
+    ],
+    "bbr_ids": [
+     "lynchge01",
+     "chrisdo01"
+    ],
+    "salary": 11400000
+   },
+   "gain": {
+    "Houston Rockets": 0.519,
+    "New Orleans Hornets": 0.557
+   },
+   "accept": {
+    "Houston Rockets": 0.95,
+    "New Orleans Hornets": 0.95
+   },
+   "both": 0.9025,
+   "id": "2005-summer-trade-2005-08-19-chrisdo01-lynchge01-piatker01"
+  }
+ ]
+}

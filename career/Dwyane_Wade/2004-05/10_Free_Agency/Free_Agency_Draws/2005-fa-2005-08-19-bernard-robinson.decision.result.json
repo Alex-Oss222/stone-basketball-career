@@ -1,0 +1,26 @@
+{
+ "date": "2005-08-19",
+ "decider": "Bernard Robinson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-19-bernard-robinson",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.06706,
+  "Golden State Warriors": 0.005715,
+  "Indiana Pacers": 0.033636,
+  "Memphis Grizzlies": 0.072103,
+  "Miami Heat": 0.022945,
+  "Minnesota Timberwolves": 0.012159,
+  "New Jersey Nets": 0.011624,
+  "New Orleans Hornets": 0.008336,
+  "New York Knicks": 0.016169,
+  "Orlando Magic": 0.055318,
+  "Portland Trail Blazers": 0.033636,
+  "Sacramento Kings": 0.083146,
+  "Seattle SuperSonics": 0.055318,
+  "Toronto Raptors": 0.288038,
+  "Utah Jazz": 0.004797,
+  "wait": 0.23
+ },
+ "outcome": "Seattle SuperSonics",
+ "question": "2005 free agency, 2005-08-19: which offer does Bernard Robinson accept (Cleveland Cavaliers $641,748 x 1, Golden State Warriors $641,748 x 1, Indiana Pacers $641,748 x 1, Memphis Grizzlies $641,748 x 1, Miami Heat $641,748 x 1, Minnesota Timberwolves $641,748 x 1, New Jersey Nets $641,748 x 1, New Orleans Hornets $641,748 x 1, New York Knicks $641,748 x 1, Orlando Magic $641,748 x 1, Portland Trail Blazers $641,748 x 1, Sacramento Kings $641,748 x 1, Seattle SuperSonics $641,748 x 1, Toronto Raptors $641,748 x 1, Utah Jazz $641,748 x 1), or does he wait?"
+}

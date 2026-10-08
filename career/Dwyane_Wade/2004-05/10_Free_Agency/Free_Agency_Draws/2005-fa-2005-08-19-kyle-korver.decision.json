@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-19-kyle-korver",
+ "date": "2005-08-19",
+ "question": "2005 free agency, 2005-08-19: which offer does Kyle Korver accept (New Orleans Hornets $8,783,538 x 5), or does he wait?",
+ "decider": "Kyle Korver (simulated player, engine draw)",
+ "options": {
+  "New Orleans Hornets": 0.77,
+  "wait": 0.23
+ },
+ "basis": "Ask $8,783,538; best offer 1.00 of the ask in total; accept chance 0.770; priority winning; utility New Orleans Hornets 62.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,20 @@
+{
+ "date": "2005-08-19",
+ "decider": "David Lee (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-19-david-lee",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.202122,
+  "Charlotte Bobcats": 0.006384,
+  "Chicago Bulls": 0.008903,
+  "Denver Nuggets": 0.02331,
+  "Detroit Pistons": 0.282553,
+  "Houston Rockets": 0.208277,
+  "Los Angeles Lakers": 0.003665,
+  "Milwaukee Bucks": 0.02402,
+  "Philadelphia 76ers": 0.010766,
+  "wait": 0.23
+ },
+ "outcome": "Atlanta Hawks",
+ "question": "2005 free agency, 2005-08-19: which offer does David Lee accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Denver Nuggets $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Lakers $398,762 x 1, Milwaukee Bucks $398,762 x 1, Philadelphia 76ers $398,762 x 1), or does he wait?"
+}

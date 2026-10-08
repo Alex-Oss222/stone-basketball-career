@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-summer-trade-2005-08-19-chrisdo01-lynchge01-piatker01",
+ "date": "2005-08-19",
+ "question": "Do Houston Rockets and New Orleans Hornets trade Eric Piatkowski for George Lynch and Doug Christie on 2005-08-19?",
+ "decider": "Houston Rockets and New Orleans Hornets front offices (engine draw)",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "basis": "Gains on own objectives {'Houston Rockets': 0.519, 'New Orleans Hornets': 0.557}; acceptance {'Houston Rockets': 0.95, 'New Orleans Hornets': 0.95}; 1999 salary rule met (runtime/free_agency_2004.py summer trades)."
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-19",
+ "decider": "Devin Brown (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-19-devin-brown",
+ "kind": "decision",
+ "options": {
+  "Memphis Grizzlies": 0.77,
+  "wait": 0.23
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-08-19: which offer does Devin Brown accept (Memphis Grizzlies $4,169,610 x 5), or does he wait?"
+}

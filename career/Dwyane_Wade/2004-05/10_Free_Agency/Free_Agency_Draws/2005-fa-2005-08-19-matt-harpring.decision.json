@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-19-matt-harpring",
+ "date": "2005-08-19",
+ "question": "2005 free agency, 2005-08-19: which offer does Matt Harpring accept (Miami Heat $7,954,111 x 4), or does he wait?",
+ "decider": "Matt Harpring (simulated player, engine draw)",
+ "options": {
+  "Miami Heat": 0.77,
+  "wait": 0.23
+ },
+ "basis": "Ask $7,954,111; best offer 1.00 of the ask in total; accept chance 0.770; priority loyalty; utility Miami Heat 86.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

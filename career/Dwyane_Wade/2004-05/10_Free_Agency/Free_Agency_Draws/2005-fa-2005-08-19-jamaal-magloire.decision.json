@@ -1,0 +1,17 @@
+{
+ "event_id": "2005-fa-2005-08-19-jamaal-magloire",
+ "date": "2005-08-19",
+ "question": "2005 free agency, 2005-08-19: which offer does Jamaal Magloire accept (Boston Celtics $5,000,000 x 4, Charlotte Bobcats $5,000,000 x 4, Denver Nuggets $5,000,000 x 4, Milwaukee Bucks $5,000,000 x 4, New Jersey Nets $5,000,000 x 4, New York Knicks $5,000,000 x 4, Seattle SuperSonics $5,000,000 x 4), or does he wait?",
+ "decider": "Jamaal Magloire (simulated player, engine draw)",
+ "options": {
+  "Boston Celtics": 0.118287,
+  "Charlotte Bobcats": 0.010704,
+  "Denver Nuggets": 0.004981,
+  "Milwaukee Bucks": 0.007229,
+  "New Jersey Nets": 0.03908,
+  "New York Knicks": 0.066394,
+  "Seattle SuperSonics": 0.249788,
+  "wait": 0.503537
+ },
+ "basis": "Ask $5,901,843; best offer 0.85 of the ask in total; accept chance 0.496; priority loyalty; utility Boston Celtics 61.1, Charlotte Bobcats 51.5, Denver Nuggets 48.5, Milwaukee Bucks 49.9, New Jersey Nets 56.7, New York Knicks 58.8, Seattle SuperSonics 64.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

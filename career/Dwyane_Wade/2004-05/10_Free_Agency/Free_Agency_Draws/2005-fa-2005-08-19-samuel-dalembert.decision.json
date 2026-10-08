@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-19-samuel-dalembert",
+ "date": "2005-08-19",
+ "question": "2005 free agency, 2005-08-19: which offer does Samuel Dalembert accept (Philadelphia 76ers $7,673,355 x 5), or does he wait?",
+ "decider": "Samuel Dalembert (simulated player, engine draw)",
+ "options": {
+  "Philadelphia 76ers": 0.77,
+  "wait": 0.23
+ },
+ "basis": "Ask $7,673,355; best offer 1.00 of the ask in total; accept chance 0.770; priority winning; utility Philadelphia 76ers 65.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

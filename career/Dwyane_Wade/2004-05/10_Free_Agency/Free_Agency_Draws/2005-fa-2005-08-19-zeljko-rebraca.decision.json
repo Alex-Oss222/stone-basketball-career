@@ -1,0 +1,13 @@
+{
+ "event_id": "2005-fa-2005-08-19-zeljko-rebraca",
+ "date": "2005-08-19",
+ "question": "2005 free agency, 2005-08-19: which offer does Zeljko Rebraca accept (Charlotte Bobcats $771,123 x 1, New York Knicks $771,123 x 1, Seattle SuperSonics $771,123 x 1), or does he wait?",
+ "decider": "Zeljko Rebraca (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.012672,
+  "New York Knicks": 0.218517,
+  "Seattle SuperSonics": 0.538811,
+  "wait": 0.23
+ },
+ "basis": "Ask $771,123; best offer 1.00 of the ask in total; accept chance 0.770; priority money; utility Charlotte Bobcats 32.3, New York Knicks 43.7, Seattle SuperSonics 47.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

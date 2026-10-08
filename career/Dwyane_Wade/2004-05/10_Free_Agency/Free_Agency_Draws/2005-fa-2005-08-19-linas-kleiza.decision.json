@@ -1,0 +1,21 @@
+{
+ "event_id": "2005-fa-2005-08-19-linas-kleiza",
+ "date": "2005-08-19",
+ "question": "2005 free agency, 2005-08-19: which offer does Linas Kleiza accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Denver Nuggets $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, Milwaukee Bucks $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1), or does he wait?",
+ "decider": "Linas Kleiza (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.072991,
+  "Charlotte Bobcats": 0.002645,
+  "Chicago Bulls": 0.005643,
+  "Denver Nuggets": 0.009164,
+  "Detroit Pistons": 0.087605,
+  "Houston Rockets": 0.082917,
+  "Los Angeles Clippers": 0.033543,
+  "Los Angeles Lakers": 0.002009,
+  "Milwaukee Bucks": 0.013136,
+  "Philadelphia 76ers": 0.007598,
+  "San Antonio Spurs": 0.452749,
+  "wait": 0.23
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.770; priority money; utility Atlanta Hawks 46.7, Charlotte Bobcats 33.4, Chicago Bulls 36.4, Denver Nuggets 38.4, Detroit Pistons 47.4, Houston Rockets 47.2, Los Angeles Clippers 43.6, Los Angeles Lakers 32.3, Milwaukee Bucks 39.8, Philadelphia 76ers 37.6, San Antonio Spurs 54.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

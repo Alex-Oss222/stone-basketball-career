@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-fa-2005-08-19-awvee-storey",
+ "date": "2005-08-19",
+ "question": "2005 free agency, 2005-08-19: which offer does Awvee Storey accept (New Orleans Hornets $641,748 x 1, New York Knicks $641,748 x 1), or does he wait?",
+ "decider": "Awvee Storey (simulated player, engine draw)",
+ "options": {
+  "New Orleans Hornets": 0.201829,
+  "New York Knicks": 0.568171,
+  "wait": 0.23
+ },
+ "basis": "Ask $641,748; best offer 1.00 of the ask in total; accept chance 0.770; priority winning; utility New Orleans Hornets 40.7, New York Knicks 44.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

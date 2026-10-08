@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-19",
+ "decider": "Rawle Marshall (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-19-rawle-marshall",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.77,
+  "wait": 0.23
+ },
+ "outcome": "Charlotte Bobcats",
+ "question": "2005 free agency, 2005-08-19: which offer does Rawle Marshall accept (Charlotte Bobcats $398,762 x 1), or does he wait?"
+}

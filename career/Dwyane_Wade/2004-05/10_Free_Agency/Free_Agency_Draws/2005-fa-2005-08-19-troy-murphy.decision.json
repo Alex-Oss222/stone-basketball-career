@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-fa-2005-08-19-troy-murphy",
+ "date": "2005-08-19",
+ "question": "2005 free agency, 2005-08-19: which offer does Troy Murphy accept (Golden State Warriors $10,800,000 x 5, Orlando Magic $8,606,967 x 5), or does he wait?",
+ "decider": "Troy Murphy (simulated player, engine draw)",
+ "options": {
+  "Golden State Warriors": 0.708832,
+  "Orlando Magic": 0.061168,
+  "wait": 0.23
+ },
+ "basis": "Ask $10,800,000; best offer 1.00 of the ask in total; accept chance 0.770; priority winning; utility Golden State Warriors 70.6, Orlando Magic 60.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

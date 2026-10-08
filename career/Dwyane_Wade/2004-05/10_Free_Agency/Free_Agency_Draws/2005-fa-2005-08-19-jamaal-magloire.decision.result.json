@@ -1,0 +1,18 @@
+{
+ "date": "2005-08-19",
+ "decider": "Jamaal Magloire (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-19-jamaal-magloire",
+ "kind": "decision",
+ "options": {
+  "Boston Celtics": 0.118287,
+  "Charlotte Bobcats": 0.010704,
+  "Denver Nuggets": 0.004981,
+  "Milwaukee Bucks": 0.007229,
+  "New Jersey Nets": 0.03908,
+  "New York Knicks": 0.066394,
+  "Seattle SuperSonics": 0.249788,
+  "wait": 0.503537
+ },
+ "outcome": "New York Knicks",
+ "question": "2005 free agency, 2005-08-19: which offer does Jamaal Magloire accept (Boston Celtics $5,000,000 x 4, Charlotte Bobcats $5,000,000 x 4, Denver Nuggets $5,000,000 x 4, Milwaukee Bucks $5,000,000 x 4, New Jersey Nets $5,000,000 x 4, New York Knicks $5,000,000 x 4, Seattle SuperSonics $5,000,000 x 4), or does he wait?"
+}

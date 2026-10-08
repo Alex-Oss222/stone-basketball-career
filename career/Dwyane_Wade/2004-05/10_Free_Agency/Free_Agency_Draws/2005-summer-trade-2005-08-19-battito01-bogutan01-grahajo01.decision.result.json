@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-19",
+ "decider": "Denver Nuggets and Golden State Warriors front offices (engine draw)",
+ "event_id": "2005-summer-trade-2005-08-19-battito01-bogutan01-grahajo01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Denver Nuggets and Golden State Warriors trade Tony Battie and Andrew Bogut for Joey Graham on 2005-08-19?"
+}

@@ -1,0 +1,25 @@
+{
+ "event_id": "2005-fa-2005-08-19-bernard-robinson",
+ "date": "2005-08-19",
+ "question": "2005 free agency, 2005-08-19: which offer does Bernard Robinson accept (Cleveland Cavaliers $641,748 x 1, Golden State Warriors $641,748 x 1, Indiana Pacers $641,748 x 1, Memphis Grizzlies $641,748 x 1, Miami Heat $641,748 x 1, Minnesota Timberwolves $641,748 x 1, New Jersey Nets $641,748 x 1, New Orleans Hornets $641,748 x 1, New York Knicks $641,748 x 1, Orlando Magic $641,748 x 1, Portland Trail Blazers $641,748 x 1, Sacramento Kings $641,748 x 1, Seattle SuperSonics $641,748 x 1, Toronto Raptors $641,748 x 1, Utah Jazz $641,748 x 1), or does he wait?",
+ "decider": "Bernard Robinson (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.06706,
+  "Golden State Warriors": 0.005715,
+  "Indiana Pacers": 0.033636,
+  "Memphis Grizzlies": 0.072103,
+  "Miami Heat": 0.022945,
+  "Minnesota Timberwolves": 0.012159,
+  "New Jersey Nets": 0.011624,
+  "New Orleans Hornets": 0.008336,
+  "New York Knicks": 0.016169,
+  "Orlando Magic": 0.055318,
+  "Portland Trail Blazers": 0.033636,
+  "Sacramento Kings": 0.083146,
+  "Seattle SuperSonics": 0.055318,
+  "Toronto Raptors": 0.288038,
+  "Utah Jazz": 0.004797,
+  "wait": 0.23
+ },
+ "basis": "Ask $641,748; best offer 1.00 of the ask in total; accept chance 0.770; priority money; utility Cleveland Cavaliers 47.2, Golden State Warriors 37.4, Indiana Pacers 44.5, Memphis Grizzlies 47.5, Miami Heat 42.9, Minnesota Timberwolves 40.4, New Jersey Nets 40.2, New Orleans Hornets 38.9, New York Knicks 41.5, Orlando Magic 46.5, Portland Trail Blazers 44.5, Sacramento Kings 48.1, Seattle SuperSonics 46.5, Toronto Raptors 53.0, Utah Jazz 36.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

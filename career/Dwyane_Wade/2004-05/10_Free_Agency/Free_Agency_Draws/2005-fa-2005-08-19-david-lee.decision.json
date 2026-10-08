@@ -1,0 +1,19 @@
+{
+ "event_id": "2005-fa-2005-08-19-david-lee",
+ "date": "2005-08-19",
+ "question": "2005 free agency, 2005-08-19: which offer does David Lee accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Denver Nuggets $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Lakers $398,762 x 1, Milwaukee Bucks $398,762 x 1, Philadelphia 76ers $398,762 x 1), or does he wait?",
+ "decider": "David Lee (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.202122,
+  "Charlotte Bobcats": 0.006384,
+  "Chicago Bulls": 0.008903,
+  "Denver Nuggets": 0.02331,
+  "Detroit Pistons": 0.282553,
+  "Houston Rockets": 0.208277,
+  "Los Angeles Lakers": 0.003665,
+  "Milwaukee Bucks": 0.02402,
+  "Philadelphia 76ers": 0.010766,
+  "wait": 0.23
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.770; priority fame; utility Atlanta Hawks 55.9, Charlotte Bobcats 42.1, Chicago Bulls 43.5, Denver Nuggets 47.3, Detroit Pistons 57.3, Houston Rockets 56.1, Los Angeles Lakers 39.9, Milwaukee Bucks 47.4, Philadelphia 76ers 44.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

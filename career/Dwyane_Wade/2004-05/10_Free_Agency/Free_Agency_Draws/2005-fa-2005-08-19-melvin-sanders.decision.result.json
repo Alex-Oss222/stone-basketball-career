@@ -1,0 +1,22 @@
+{
+ "date": "2005-08-19",
+ "decider": "Melvin Sanders (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-19-melvin-sanders",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.0155,
+  "Indiana Pacers": 0.081521,
+  "Memphis Grizzlies": 0.140944,
+  "Miami Heat": 0.042771,
+  "Minnesota Timberwolves": 0.028243,
+  "New Jersey Nets": 0.026933,
+  "New Orleans Hornets": 0.019075,
+  "New York Knicks": 0.045758,
+  "Sacramento Kings": 0.251732,
+  "Seattle SuperSonics": 0.10679,
+  "Utah Jazz": 0.010733,
+  "wait": 0.23
+ },
+ "outcome": "Indiana Pacers",
+ "question": "2005 free agency, 2005-08-19: which offer does Melvin Sanders accept (Golden State Warriors $398,762 x 1, Indiana Pacers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Miami Heat $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, Sacramento Kings $398,762 x 1, Seattle SuperSonics $398,762 x 1, Utah Jazz $398,762 x 1), or does he wait?"
+}
