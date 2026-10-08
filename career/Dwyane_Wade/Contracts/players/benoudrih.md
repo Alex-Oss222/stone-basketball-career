@@ -2,9 +2,9 @@
 
 # Contract | Beno Udrih
 
-Known through: 2005-10-28. [Open interactive contract](benoudrih.html#contract) · [Contract history](benoudrih.html#contract-history)
+Known through: 2005-10-29. [Open interactive contract](benoudrih.html#contract) · [Contract history](benoudrih.html#contract-history)
 
-Beno Udrih: under contract. Evidence cutoff: 2005-10-28.
+Beno Udrih: under contract. Evidence cutoff: 2005-10-29.
 
 ## Current contract
 

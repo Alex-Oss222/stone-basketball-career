@@ -2,9 +2,9 @@
 
 # Contract | Andre Iguodala
 
-Known through: 2005-10-28. [Open interactive contract](andreiguodala.html#contract) · [Contract history](andreiguodala.html#contract-history)
+Known through: 2005-10-29. [Open interactive contract](andreiguodala.html#contract) · [Contract history](andreiguodala.html#contract-history)
 
-Andre Iguodala: under contract. Evidence cutoff: 2005-10-28.
+Andre Iguodala: under contract. Evidence cutoff: 2005-10-29.
 
 ## Current contract
 
