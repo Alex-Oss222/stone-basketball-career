@@ -1,0 +1,16 @@
+{
+ "event_id": "2005-fa-2005-07-29-fitchge01",
+ "date": "2005-07-29",
+ "question": "2005 free agency, 2005-07-29: which offer does fitchge01 accept (Atlanta Hawks $398,762 x 1, Chicago Bulls $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1), or does he wait?",
+ "decider": "fitchge01 (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.069428,
+  "Chicago Bulls": 0.00482,
+  "Detroit Pistons": 0.083956,
+  "Houston Rockets": 0.061886,
+  "Philadelphia 76ers": 0.006588,
+  "San Antonio Spurs": 0.363322,
+  "wait": 0.41
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.590; priority loyalty; utility Atlanta Hawks 52.5, Chicago Bulls 41.8, Detroit Pistons 53.3, Houston Rockets 52.0, Philadelphia 76ers 43.1, San Antonio Spurs 59.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

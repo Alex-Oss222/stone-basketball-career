@@ -1,0 +1,21 @@
+{
+ "date": "2005-07-29",
+ "decider": "Pat Burke (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-pat-burke",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 4e-06,
+  "Golden State Warriors": 0.004096,
+  "Los Angeles Clippers": 0.000925,
+  "Milwaukee Bucks": 0.000142,
+  "New Orleans Hornets": 1.8e-05,
+  "New York Knicks": 0.000192,
+  "Phoenix Suns": 0.362326,
+  "Seattle SuperSonics": 0.000831,
+  "Toronto Raptors": 0.220863,
+  "Washington Wizards": 0.000602,
+  "wait": 0.410001
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-29: which offer does Pat Burke accept (Charlotte Bobcats $745,248 x 1, Golden State Warriors $745,248 x 1, Los Angeles Clippers $745,248 x 1, Milwaukee Bucks $745,248 x 1, New Orleans Hornets $745,248 x 1, New York Knicks $745,248 x 1, Phoenix Suns $745,248 x 1, Seattle SuperSonics $745,248 x 1, Toronto Raptors $745,248 x 1, Washington Wizards $745,248 x 1), or does he wait?"
+}

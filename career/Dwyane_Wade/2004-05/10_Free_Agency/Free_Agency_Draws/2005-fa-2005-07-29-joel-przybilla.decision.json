@@ -1,0 +1,19 @@
+{
+ "event_id": "2005-fa-2005-07-29-joel-przybilla",
+ "date": "2005-07-29",
+ "question": "2005 free agency, 2005-07-29: which offer does Joel Przybilla accept (Boston Celtics $5,000,000 x 5, Charlotte Bobcats $5,000,000 x 5, Golden State Warriors $5,000,000 x 5, New Orleans Hornets $5,000,000 x 5, New York Knicks $5,000,000 x 5, Portland Trail Blazers $6,746,110 x 5, Seattle SuperSonics $5,000,000 x 5, Toronto Raptors $5,000,000 x 5, Utah Jazz $5,000,000 x 5), or does he wait?",
+ "decider": "Joel Przybilla (simulated player, engine draw)",
+ "options": {
+  "Boston Celtics": 0.024651,
+  "Charlotte Bobcats": 0.00124,
+  "Golden State Warriors": 0.028783,
+  "New Orleans Hornets": 0.00227,
+  "New York Knicks": 0.013394,
+  "Portland Trail Blazers": 0.239799,
+  "Seattle SuperSonics": 0.029,
+  "Toronto Raptors": 0.249586,
+  "Utah Jazz": 0.001277,
+  "wait": 0.41
+ },
+ "basis": "Ask $6,746,110; best offer 1.00 of the ask in total; accept chance 0.590; priority fame; utility Boston Celtics 66.1, Charlotte Bobcats 54.1, Golden State Warriors 66.7, New Orleans Hornets 56.6, New York Knicks 63.7, Portland Trail Blazers 75.2, Seattle SuperSonics 66.8, Toronto Raptors 75.4, Utah Jazz 54.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

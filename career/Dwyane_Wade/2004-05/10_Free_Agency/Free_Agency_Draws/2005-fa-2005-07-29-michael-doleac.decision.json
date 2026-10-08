@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-29-michael-doleac",
+ "date": "2005-07-29",
+ "question": "2005 free agency, 2005-07-29: which offer does Michael Doleac accept (Los Angeles Clippers $2,685,176 x 4), or does he wait?",
+ "decider": "Michael Doleac (simulated player, engine draw)",
+ "options": {
+  "Los Angeles Clippers": 0.589142,
+  "wait": 0.410858
+ },
+ "basis": "Ask $2,686,366; best offer 1.00 of the ask in total; accept chance 0.589; priority loyalty; utility Los Angeles Clippers 66.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

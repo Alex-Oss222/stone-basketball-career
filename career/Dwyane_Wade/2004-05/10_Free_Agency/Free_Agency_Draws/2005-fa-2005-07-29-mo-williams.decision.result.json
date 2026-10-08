@@ -1,0 +1,13 @@
+{
+ "date": "2005-07-29",
+ "decider": "Mo Williams (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-mo-williams",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.030293,
+  "Cleveland Cavaliers": 0.105469,
+  "wait": 0.864238
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-29: which offer does Mo Williams accept (Chicago Bulls $5,000,000 x 5, Cleveland Cavaliers $5,000,000 x 5), or does he wait?"
+}

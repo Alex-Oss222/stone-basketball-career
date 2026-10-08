@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-29-raef-lafrentz",
+ "date": "2005-07-29",
+ "question": "2005 free agency, 2005-07-29: which offer does Raef LaFrentz accept (Atlanta Hawks $8,821,996 x 4), or does he wait?",
+ "decider": "Raef LaFrentz (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.475322,
+  "wait": 0.524678
+ },
+ "basis": "Ask $9,363,632; best offer 0.94 of the ask in total; accept chance 0.475; priority winning; utility Atlanta Hawks 73.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

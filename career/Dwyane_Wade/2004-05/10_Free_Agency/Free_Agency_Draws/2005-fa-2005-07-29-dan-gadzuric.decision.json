@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-fa-2005-07-29-dan-gadzuric",
+ "date": "2005-07-29",
+ "question": "2005 free agency, 2005-07-29: which offer does Dan Gadzuric accept (Milwaukee Bucks $8,677,591 x 4, Orlando Magic $6,474,903 x 4), or does he wait?",
+ "decider": "Dan Gadzuric (simulated player, engine draw)",
+ "options": {
+  "Milwaukee Bucks": 0.469258,
+  "Orlando Magic": 0.120742,
+  "wait": 0.41
+ },
+ "basis": "Ask $8,677,591; best offer 1.00 of the ask in total; accept chance 0.590; priority money; utility Milwaukee Bucks 68.6, Orlando Magic 63.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

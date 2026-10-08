@@ -1,0 +1,14 @@
+{
+ "date": "2005-07-29",
+ "decider": "\u0160ar\u016bnas Jasikevi\u010dius (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-ar-nas-jasikevi-ius",
+ "kind": "decision",
+ "options": {
+  "Memphis Grizzlies": 0.416072,
+  "Minnesota Timberwolves": 0.142004,
+  "New Jersey Nets": 0.031924,
+  "wait": 0.41
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-29: which offer does \u0160ar\u016bnas Jasikevi\u010dius accept (Memphis Grizzlies $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1), or does he wait?"
+}

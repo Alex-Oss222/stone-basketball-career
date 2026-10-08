@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-29",
+ "decider": "John Lucas III (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-john-lucas-iii",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.59,
+  "wait": 0.41
+ },
+ "outcome": "New Jersey Nets",
+ "question": "2005 free agency, 2005-07-29: which offer does John Lucas III accept (New Jersey Nets $398,762 x 1), or does he wait?"
+}

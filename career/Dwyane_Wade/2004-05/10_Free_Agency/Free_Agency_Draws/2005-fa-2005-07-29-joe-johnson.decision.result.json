@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-29",
+ "decider": "Joe Johnson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-joe-johnson",
+ "kind": "decision",
+ "options": {
+  "Phoenix Suns": 0.545419,
+  "wait": 0.454581
+ },
+ "outcome": "Phoenix Suns",
+ "question": "2005 free agency, 2005-07-29: which offer does Joe Johnson accept (Phoenix Suns $10,634,212 x 5), or does he wait?"
+}

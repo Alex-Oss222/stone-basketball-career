@@ -1,0 +1,17 @@
+{
+ "event_id": "2005-fa-2005-07-29-noel-felix",
+ "date": "2005-07-29",
+ "question": "2005 free agency, 2005-07-29: which offer does Noel Felix accept (Atlanta Hawks $398,762 x 1, Chicago Bulls $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Lakers $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1), or does he wait?",
+ "decider": "Noel Felix (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.060526,
+  "Chicago Bulls": 0.004679,
+  "Detroit Pistons": 0.072644,
+  "Houston Rockets": 0.068756,
+  "Los Angeles Lakers": 0.001666,
+  "Philadelphia 76ers": 0.0063,
+  "San Antonio Spurs": 0.375429,
+  "wait": 0.41
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.590; priority money; utility Atlanta Hawks 46.7, Chicago Bulls 36.4, Detroit Pistons 47.4, Houston Rockets 47.2, Los Angeles Lakers 32.3, Philadelphia 76ers 37.6, San Antonio Spurs 54.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-29",
+ "decider": "Brendan Haywood (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-brendan-haywood",
+ "kind": "decision",
+ "options": {
+  "Washington Wizards": 0.59,
+  "wait": 0.41
+ },
+ "outcome": "Washington Wizards",
+ "question": "2005 free agency, 2005-07-29: which offer does Brendan Haywood accept (Washington Wizards $8,508,976 x 5), or does he wait?"
+}

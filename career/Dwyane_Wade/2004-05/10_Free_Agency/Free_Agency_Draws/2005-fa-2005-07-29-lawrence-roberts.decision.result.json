@@ -1,0 +1,28 @@
+{
+ "date": "2005-07-29",
+ "decider": "Lawrence Roberts (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-lawrence-roberts",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.000874,
+  "Dallas Mavericks": 0.120044,
+  "Golden State Warriors": 0.01496,
+  "Los Angeles Clippers": 0.004417,
+  "Los Angeles Lakers": 0.006672,
+  "Milwaukee Bucks": 0.004351,
+  "Minnesota Timberwolves": 0.034222,
+  "New Jersey Nets": 0.003035,
+  "New Orleans Hornets": 0.002177,
+  "New York Knicks": 0.004222,
+  "Orlando Magic": 0.009074,
+  "Phoenix Suns": 0.220382,
+  "Portland Trail Blazers": 0.013879,
+  "Seattle SuperSonics": 0.022882,
+  "Toronto Raptors": 0.119147,
+  "Utah Jazz": 0.000498,
+  "Washington Wizards": 0.009165,
+  "wait": 0.409999
+ },
+ "outcome": "Seattle SuperSonics",
+ "question": "2005 free agency, 2005-07-29: which offer does Lawrence Roberts accept (Charlotte Bobcats $398,762 x 1, Dallas Mavericks $398,762 x 1, Golden State Warriors $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, Milwaukee Bucks $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, Orlando Magic $398,762 x 1, Phoenix Suns $398,762 x 1, Portland Trail Blazers $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Utah Jazz $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?"
+}

@@ -1,0 +1,16 @@
+{
+ "date": "2005-07-29",
+ "decider": "Udonis Haslem (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-udonis-haslem",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.002828,
+  "Detroit Pistons": 0.017067,
+  "Houston Rockets": 0.016154,
+  "Miami Heat": 0.223555,
+  "Philadelphia 76ers": 0.014837,
+  "wait": 0.725559
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-29: which offer does Udonis Haslem accept (Denver Nuggets $5,000,000 x 5, Detroit Pistons $5,000,000 x 5, Houston Rockets $5,000,000 x 5, Miami Heat $5,000,000 x 5, Philadelphia 76ers $5,000,000 x 5), or does he wait?"
+}

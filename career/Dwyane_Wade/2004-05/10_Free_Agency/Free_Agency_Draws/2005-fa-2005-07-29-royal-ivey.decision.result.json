@@ -1,0 +1,17 @@
+{
+ "date": "2005-07-29",
+ "decider": "Royal Ivey (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-royal-ivey",
+ "kind": "decision",
+ "options": {
+  "Indiana Pacers": 0.046684,
+  "Memphis Grizzlies": 0.08011,
+  "Miami Heat": 0.096631,
+  "Minnesota Timberwolves": 0.027341,
+  "New Jersey Nets": 0.006147,
+  "Sacramento Kings": 0.333087,
+  "wait": 0.41
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-29: which offer does Royal Ivey accept (Indiana Pacers $641,748 x 1, Memphis Grizzlies $641,748 x 1, Miami Heat $641,748 x 1, Minnesota Timberwolves $641,748 x 1, New Jersey Nets $641,748 x 1, Sacramento Kings $641,748 x 1), or does he wait?"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-29",
+ "decider": "Richard Jefferson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-richard-jefferson",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.481452,
+  "wait": 0.518548
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-29: which offer does Richard Jefferson accept (New Jersey Nets $9,422,834 x 5), or does he wait?"
+}

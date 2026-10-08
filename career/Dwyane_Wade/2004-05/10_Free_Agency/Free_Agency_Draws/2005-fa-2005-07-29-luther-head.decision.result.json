@@ -1,0 +1,22 @@
+{
+ "date": "2005-07-29",
+ "decider": "Luther Head (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-luther-head",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.04412,
+  "Dallas Mavericks": 0.30245,
+  "Indiana Pacers": 0.02213,
+  "Memphis Grizzlies": 0.047438,
+  "Miami Heat": 0.015096,
+  "Minnesota Timberwolves": 0.008,
+  "New Jersey Nets": 0.007648,
+  "New York Knicks": 0.028772,
+  "Orlando Magic": 0.057651,
+  "Sacramento Kings": 0.054703,
+  "Utah Jazz": 0.001993,
+  "wait": 0.409999
+ },
+ "outcome": "Dallas Mavericks",
+ "question": "2005 free agency, 2005-07-29: which offer does Luther Head accept (Cleveland Cavaliers $398,762 x 1, Dallas Mavericks $398,762 x 1, Indiana Pacers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Miami Heat $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New York Knicks $398,762 x 1, Orlando Magic $398,762 x 1, Sacramento Kings $398,762 x 1, Utah Jazz $398,762 x 1), or does he wait?"
+}

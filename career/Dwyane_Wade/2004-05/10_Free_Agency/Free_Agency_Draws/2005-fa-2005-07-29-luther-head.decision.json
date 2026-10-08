@@ -1,0 +1,21 @@
+{
+ "event_id": "2005-fa-2005-07-29-luther-head",
+ "date": "2005-07-29",
+ "question": "2005 free agency, 2005-07-29: which offer does Luther Head accept (Cleveland Cavaliers $398,762 x 1, Dallas Mavericks $398,762 x 1, Indiana Pacers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Miami Heat $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New York Knicks $398,762 x 1, Orlando Magic $398,762 x 1, Sacramento Kings $398,762 x 1, Utah Jazz $398,762 x 1), or does he wait?",
+ "decider": "Luther Head (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.04412,
+  "Dallas Mavericks": 0.30245,
+  "Indiana Pacers": 0.02213,
+  "Memphis Grizzlies": 0.047438,
+  "Miami Heat": 0.015096,
+  "Minnesota Timberwolves": 0.008,
+  "New Jersey Nets": 0.007648,
+  "New York Knicks": 0.028772,
+  "Orlando Magic": 0.057651,
+  "Sacramento Kings": 0.054703,
+  "Utah Jazz": 0.001993,
+  "wait": 0.409999
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.590; priority money; utility Cleveland Cavaliers 47.2, Dallas Mavericks 54.9, Indiana Pacers 44.5, Memphis Grizzlies 47.5, Miami Heat 42.9, Minnesota Timberwolves 40.4, New Jersey Nets 40.2, New York Knicks 45.5, Orlando Magic 48.3, Sacramento Kings 48.1, Utah Jazz 34.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

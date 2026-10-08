@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-29",
+ "decider": "Michael Doleac (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-29-michael-doleac",
+ "kind": "decision",
+ "options": {
+  "Los Angeles Clippers": 0.589142,
+  "wait": 0.410858
+ },
+ "outcome": "Los Angeles Clippers",
+ "question": "2005 free agency, 2005-07-29: which offer does Michael Doleac accept (Los Angeles Clippers $2,685,176 x 4), or does he wait?"
+}

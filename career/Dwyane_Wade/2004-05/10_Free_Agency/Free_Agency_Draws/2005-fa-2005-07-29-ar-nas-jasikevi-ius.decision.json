@@ -1,0 +1,13 @@
+{
+ "event_id": "2005-fa-2005-07-29-ar-nas-jasikevi-ius",
+ "date": "2005-07-29",
+ "question": "2005 free agency, 2005-07-29: which offer does Šarūnas Jasikevičius accept (Memphis Grizzlies $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1), or does he wait?",
+ "decider": "Šarūnas Jasikevičius (simulated player, engine draw)",
+ "options": {
+  "Memphis Grizzlies": 0.416072,
+  "Minnesota Timberwolves": 0.142004,
+  "New Jersey Nets": 0.031924,
+  "wait": 0.41
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.590; priority winning; utility Memphis Grizzlies 52.4, Minnesota Timberwolves 48.1, New Jersey Nets 42.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

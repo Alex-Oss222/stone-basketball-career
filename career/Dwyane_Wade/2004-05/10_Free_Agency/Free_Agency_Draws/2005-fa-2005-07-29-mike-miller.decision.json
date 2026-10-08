@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-29-mike-miller",
+ "date": "2005-07-29",
+ "question": "2005 free agency, 2005-07-29: which offer does Mike Miller accept (Memphis Grizzlies $11,206,817 x 5), or does he wait?",
+ "decider": "Mike Miller (simulated player, engine draw)",
+ "options": {
+  "Memphis Grizzlies": 0.458887,
+  "wait": 0.541113
+ },
+ "basis": "Ask $12,000,000; best offer 0.93 of the ask in total; accept chance 0.459; priority fame; utility Memphis Grizzlies 71.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
