@@ -2,9 +2,9 @@
 
 # Contract | Smush Parker
 
-Known through: 2005-08-21. [Open interactive contract](parkesm01.html#contract) · [Contract history](parkesm01.html#contract-history)
+Known through: 2005-08-28. [Open interactive contract](parkesm01.html#contract) · [Contract history](parkesm01.html#contract-history)
 
-Smush Parker: under contract. Evidence cutoff: 2005-08-21.
+Smush Parker: under contract. Evidence cutoff: 2005-08-28.
 
 ## Current contract
 

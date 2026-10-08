@@ -2,9 +2,9 @@
 
 # Contract | Bernard Robinson
 
-Known through: 2005-08-21. [Open interactive contract](robinbe01.html#contract) · [Contract history](robinbe01.html#contract-history)
+Known through: 2005-08-28. [Open interactive contract](robinbe01.html#contract) · [Contract history](robinbe01.html#contract-history)
 
-Bernard Robinson: rights released. Evidence cutoff: 2005-08-21.
+Bernard Robinson: rights released. Evidence cutoff: 2005-08-28.
 
 ## Current contract
 

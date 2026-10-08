@@ -93,6 +93,19 @@ class PipelineTests(unittest.TestCase):
         self.assertNotIn("wadedw01", {p.get("bbr_id") for p in usa})
         self.assertIsNone(self.rec["selection"])
 
+    def test_every_request_has_its_note_or_is_a_tournament_record(self):
+        # repository validation's rule (scripts/validate_repository.py): a request needs a game note beside it unless
+        # its result is a league or tournament record; other nations' games and the USA's without Wade have no note
+        from runtime import national
+        from runtime.game_requests import find_requests
+        from runtime.season_games import is_league_record
+        requests = [r for r in find_requests(self.root) if "FIBA" in r.parts or "National_Team" in r.parts]
+        self.assertEqual(len(requests), 40)
+        for request in requests:
+            note = request.with_name(request.name.replace(".request.json", ".md"))
+            self.assertTrue(note.is_file() or is_league_record(request) or national.is_tournament_record(request),
+                            request.relative_to(self.root))
+
     def test_pages_are_written(self):
         page = (self.root / "career/Dwyane_Wade/FIBA/Continental_Cups/2005/README.md").read_text(encoding="utf-8")
         self.assertIn("Final placings and honors", page)

@@ -481,6 +481,15 @@ def game_paths(e, rec, g, root=ROOT):
     return None, base / f"{eid}.request.json", base / f"{eid}.result.json"
 
 
+def is_tournament_record(path):
+    """A national-tournament request in an edition's Games folder (career/Dwyane_Wade/FIBA/<family>/<edition>/Games):
+    a game Wade does not play, so it has no game note of its own; its result is a tournament record, like the league
+    slate's (`season_games.is_league_record`). Wade's own games sit beside their notes under National_Team."""
+    parts = Path(path).parts
+    return ("FIBA" in parts and "Games" in parts and "National_Team" not in parts
+            and Path(path).name.endswith(".request.json"))
+
+
 def _round_folder(stage):
     return {"round_of_16": "Round_of_16", "quarterfinal": "Quarterfinals", "semifinal": "Semifinals",
             "final": "Final", "third_place": "Third_Place"}.get(stage, "Group_Phase" if stage.startswith("group")

@@ -2,9 +2,9 @@
 
 # Contract | Lamond Murray
 
-Known through: 2005-08-21. [Open interactive contract](murrala01.html#contract) · [Contract history](murrala01.html#contract-history)
+Known through: 2005-08-28. [Open interactive contract](murrala01.html#contract) · [Contract history](murrala01.html#contract-history)
 
-Lamond Murray: under contract. Evidence cutoff: 2005-08-21.
+Lamond Murray: under contract. Evidence cutoff: 2005-08-28.
 
 ## Current contract
 

@@ -726,9 +726,10 @@ def validate():
     errors.extend(review_errors(ROOT))
     errors.extend(miami_roster_errors(ROOT))
     from runtime.season_games import is_league_record
+    from runtime.national import is_tournament_record
     for request in find_requests(ROOT):
-        if is_league_record(request):
-            continue                      # league slate and playoff games have no game notes: their results are league records
+        if is_league_record(request) or is_tournament_record(request):
+            continue                      # league, playoff and other nations' tournament games have no game notes: their results are league or tournament records
         note=request.with_name(request.name.replace(".request.json",".md"))
         require(errors,note.is_file(),f"{request.relative_to(ROOT)}: no matching game note {note.name}")
 
