@@ -2,9 +2,9 @@
 
 # Contract | Devean George
 
-Known through: 2005-10-31. [Open interactive contract](georgde01.html#contract) · [Contract history](georgde01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](georgde01.html#contract) · [Contract history](georgde01.html#contract-history)
 
-Devean George: under contract. Evidence cutoff: 2005-10-31.
+Devean George: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -119,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Devean George |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | San Antonio Spurs |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

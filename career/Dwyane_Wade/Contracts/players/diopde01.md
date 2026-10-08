@@ -2,9 +2,9 @@
 
 # Contract | DeSagana Diop
 
-Known through: 2005-10-31. [Open interactive contract](diopde01.html#contract) · [Contract history](diopde01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](diopde01.html#contract) · [Contract history](diopde01.html#contract-history)
 
-DeSagana Diop: under rookie contract. Evidence cutoff: 2005-10-31.
+DeSagana Diop: under rookie contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -121,7 +121,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | DeSagana Diop |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Toronto Raptors |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

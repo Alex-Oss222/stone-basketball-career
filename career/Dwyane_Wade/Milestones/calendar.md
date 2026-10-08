@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2005-10-31 · Miami Heat · active
+Career date: 2005-11-06 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,20 +14,25 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2005-10-31 |
+| Career date | 2005-11-06 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets |
+| Last closed event | 2005-11-05-miami-heat-at-milwaukee-bucks |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-10-31 | Current checkpoint | 2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2005-11-06 | Current checkpoint | 2005-11-05-miami-heat-at-milwaukee-bucks | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2005-10-04 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
+| 2005-11-07 | Next Miami game, vs New Jersey Nets | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2005-11-07 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2005-11-09 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
+| 2006-01-07 | Keep-or-waive review of non-guaranteed contracts | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
+| 2006-01-10 | Kept contracts become guaranteed | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
 ## 2005-06 season tracker
@@ -36,9 +41,9 @@ Activation: The authoritative current date and recorded event determine what is 
 | --- | --- | --- | --- | --- |
 | 2005-10-04 | Training camp opens | League calendar | done | [Season](index.html#calendar) |
 | 2005-10-10 | Preseason opens | League calendar | done | [Season](index.html#calendar) |
-| 2005-10-31 | Roster cut to 15 | League calendar | today | [Season](index.html#calendar) |
+| 2005-10-31 | Roster cut to 15 | League calendar | done | [Season](index.html#calendar) |
 | 2005-10-31 to 2006-10-31 | Wade's contract extension outlook | player | planned | [Record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md) |
-| 2005-11-01 | Opening night | League calendar | upcoming | [Season](index.html#calendar) |
+| 2005-11-01 | Opening night | League calendar | done | [Season](index.html#calendar) |
 | 2006-01-07 | Last day to waive before guarantees | League calendar | upcoming | [Season](index.html#calendar) |
 | 2006-01-10 | Contracts guaranteed | League calendar | upcoming | [Season](index.html#calendar) |
 | 2006-02-17 | All-Star Weekend | League calendar | upcoming | [Season](index.html#calendar) |
@@ -99,6 +104,7 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/rotation.json)
+- [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
@@ -107,4 +113,7 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2005-06/05_Preseason/Game_5.md)
 - [Closed game](../2005-06/05_Preseason/Game_6.md)
 - [Closed game](../2005-06/05_Preseason/Game_7.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

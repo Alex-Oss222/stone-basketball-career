@@ -12,21 +12,21 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `delfica01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-10-31 · **Club on this date:** Dallas Mavericks · **Basis:** Dallas Mavericks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-11-06 · **Club on this date:** Dallas Mavericks · **Basis:** Dallas Mavericks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #20 · **Born:** 1982-08-29 · **Age on card date:** 23  
 **Registry ID:** `delfica01` · [Basketball-Reference page](https://www.basketball-reference.com/players/d/delfica01.html) · ESPN ID 1999
 
-**Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
+**Contract/control:** Under contract with Dallas Mavericks: on the Dallas Mavericks roster in a closed game on 2005-11-01; signing date not recorded. The world data does not record this rookie contract's terms.
 
 **Contract pages:** [current contract and history](../../../Contracts/players/delfica01.html#contract) ([text](../../../Contracts/players/delfica01.md)).
 
-**2003 draft entry:** No. 25 overall, rights held by Detroit Pistons (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
+**2003 draft entry:** No. 25 overall, rights held by Detroit Pistons (draft of June 26, 2003).
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2005; presentation only.
 
 ## Simulated statistics
 
-As of **2005-10-31**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-11-06**: 3 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -87,6 +87,10 @@ As of **2005-10-31**: 0 closed games feed this card. Per-game columns use the re
 
 Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 0 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
+### Tracked games only
+
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 3 of 3 closed games; 0 tracked appearances form the denominator below (2005-11-01 to 2005-11-05).
+
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
 | Paint | 0 | 0 | N/A | N/A | N/A |
@@ -100,7 +104,7 @@ Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regul
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2005-06 is simulated: 3 closed regular-season games through 2005-11-06. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -118,4 +122,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2005-10-31. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2005-11-06. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

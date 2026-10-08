@@ -2,9 +2,9 @@
 
 # Contract | Jarron Collins
 
-Known through: 2005-10-31. [Open interactive contract](collija03.html#contract) · [Contract history](collija03.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](collija03.html#contract) · [Contract history](collija03.html#contract-history)
 
-Jarron Collins: under contract. Evidence cutoff: 2005-10-31.
+Jarron Collins: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jarron Collins |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Charlotte Bobcats |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

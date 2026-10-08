@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2005-10-31** · Toronto Raptors · #4 · PF · age 21
+Career date: **2005-11-06** · Toronto Raptors · #4 · PF · age 21
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,21 +14,21 @@ Career date: **2005-10-31** · Toronto Raptors · #4 · PF · age 21
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 0 | — | — | — | — | — | — | — | — | — | — | no games yet |
+| 2005-06 | 21 | Toronto Raptors | 3/3 | 39.8 | 24.0 | 10.0 | 2.0 | 0.7 | 0.7 | 59.6 | 66.7 | 93.3 | 67.2 | 1-2 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 0 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 3 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | — |
-| Points | 24.5 | — |
-| Rebounds | 11.4 | — |
-| Assists | 4.2 | — |
-| FG% | 52.0 | — |
-| 3P% | 41.7 | — |
-| FT% | 91.3 | — |
+| Minutes | 36.5 | 39.8 |
+| Points | 24.5 | 24.0 |
+| Rebounds | 11.4 | 10.0 |
+| Assists | 4.2 | 2.0 |
+| FG% | 52.0 | 59.6 |
+| 3P% | 41.7 | 66.7 |
+| FT% | 91.3 | 93.3 |
 
 ## Playoffs
 
@@ -36,7 +36,15 @@ No playoff games closed.
 
 ## Season highs (regular season)
 
-No games closed.
+| Stat | High | Game |
+| --- | --- | --- |
+| Points | 31 | 2005-11-05 at Detroit Pistons |
+| Rebounds | 12 | 2005-11-02 vs Washington Wizards |
+| Assists | 3 | 2005-11-02 vs Washington Wizards (+1) |
+| Steals | 2 | 2005-11-02 vs Washington Wizards |
+| Blocks | 1 | 2005-11-02 vs Washington Wizards (+1) |
+| Threes | 1 | 2005-11-04 vs New Jersey Nets (+1) |
+| Free throws | 6 | 2005-11-05 at Detroit Pistons |
 
 ## Awards
 

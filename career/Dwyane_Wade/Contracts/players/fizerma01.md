@@ -2,9 +2,9 @@
 
 # Contract | Marcus Fizer
 
-Known through: 2005-10-31. [Open interactive contract](fizerma01.html#contract) · [Contract history](fizerma01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](fizerma01.html#contract) · [Contract history](fizerma01.html#contract-history)
 
-Marcus Fizer: under rookie contract. Evidence cutoff: 2005-10-31.
+Marcus Fizer: under rookie contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -117,7 +117,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Marcus Fizer |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Seattle SuperSonics |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

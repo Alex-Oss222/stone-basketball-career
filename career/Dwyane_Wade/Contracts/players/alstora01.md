@@ -2,9 +2,9 @@
 
 # Contract | Rafer Alston
 
-Known through: 2005-10-31. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
 
-Rafer Alston: camp contract. Evidence cutoff: 2005-10-31.
+Rafer Alston: camp contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -115,7 +115,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Rafer Alston |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Milwaukee Bucks |
 | Control status | camp_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

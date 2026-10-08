@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2005-10-31 · Miami Heat · needs evidence
+Career date: 2005-11-06 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -81,6 +81,7 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/rotation.json)
+- [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
@@ -89,4 +90,7 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Closed game](../2005-06/05_Preseason/Game_5.md)
 - [Closed game](../2005-06/05_Preseason/Game_6.md)
 - [Closed game](../2005-06/05_Preseason/Game_7.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

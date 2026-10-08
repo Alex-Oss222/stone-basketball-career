@@ -1,13 +1,13 @@
 # Miami Heat working depth chart
 
-**As of:** 2005-10-31 · **Staff decision in force:** 2005-10-26 (training-camp decision)  
+**As of:** 2005-11-06 · **Staff decision in force:** 2005-10-26 (training-camp decision)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
 | PG | Mike James | Anthony Johnson | Mike Wilks | Eddie Gill |
-| SG | Dwyane Wade | Eddie Jones | Matt Carroll | DeShawn Stevenson |
-| SF | Caron Butler | Matt Harpring | Sebastian Telfair | Jumaine Jones |
+| SG | Dwyane Wade | Eddie Jones | Matt Carroll (injured list) | DeShawn Stevenson (injured list) |
+| SF | Caron Butler | Matt Harpring | Sebastian Telfair | Jumaine Jones (injured list) |
 | PF | Mehmet Okur | Donyell Marshall |  |  |
 | C | Brian Grant |  |  |  |
 
@@ -29,9 +29,9 @@
 
 Outside the rotation (dressing as the twelfth man or on the injured list): DeShawn Stevenson, Eddie Gill, Matt Carroll, Jumaine Jones.
 
-## Injured list on 2005-10-31
+## Injured list on 2005-11-06
 
-Nobody (no list kept yet: the lists start with the game of 2003-11-12). Up to three; at least five games once placed (`runtime/roster_moves.py`).
+DeShawn Stevenson, Jumaine Jones, Matt Carroll ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 
 ## Not on the active register
 

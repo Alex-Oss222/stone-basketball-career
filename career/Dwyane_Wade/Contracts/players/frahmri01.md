@@ -2,9 +2,9 @@
 
 # Contract | Richie Frahm
 
-Known through: 2005-10-31. [Open interactive contract](frahmri01.html#contract) · [Contract history](frahmri01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](frahmri01.html#contract) · [Contract history](frahmri01.html#contract-history)
 
-Richie Frahm: under contract. Evidence cutoff: 2005-10-31.
+Richie Frahm: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -118,7 +118,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Richie Frahm |
-| Club / rights baseline | Seattle SuperSonics |
+| Club / rights baseline | Utah Jazz |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

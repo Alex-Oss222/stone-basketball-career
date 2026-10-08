@@ -2,9 +2,9 @@
 
 # Contract | Brian Scalabrine
 
-Known through: 2005-10-31. [Open interactive contract](scalabr01.html#contract) · [Contract history](scalabr01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](scalabr01.html#contract) · [Contract history](scalabr01.html#contract-history)
 
-Brian Scalabrine: under contract. Evidence cutoff: 2005-10-31.
+Brian Scalabrine: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Brian Scalabrine |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Boston Celtics |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

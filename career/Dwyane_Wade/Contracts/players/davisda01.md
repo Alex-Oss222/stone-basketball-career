@@ -2,9 +2,9 @@
 
 # Contract | Dale Davis
 
-Known through: 2005-10-31. [Open interactive contract](davisda01.html#contract) · [Contract history](davisda01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](davisda01.html#contract) · [Contract history](davisda01.html#contract-history)
 
-Dale Davis: under contract. Evidence cutoff: 2005-10-31.
+Dale Davis: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -119,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Dale Davis |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Toronto Raptors |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

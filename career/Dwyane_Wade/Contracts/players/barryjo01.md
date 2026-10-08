@@ -2,9 +2,9 @@
 
 # Contract | Jon Barry
 
-Known through: 2005-10-31. [Open interactive contract](barryjo01.html#contract) · [Contract history](barryjo01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](barryjo01.html#contract) · [Contract history](barryjo01.html#contract-history)
 
-Jon Barry: under contract. Evidence cutoff: 2005-10-31.
+Jon Barry: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jon Barry |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Philadelphia 76ers |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

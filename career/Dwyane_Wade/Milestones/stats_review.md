@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-10-31 · Miami Heat · active
+Career date: 2005-11-06 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-7 closed game records in 2005-06 through 2005-10-31. Competitions remain separate.
+10 closed game records in 2005-06 through 2005-11-06. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 0 | N/A | N/A | N/A | N/A | N/A | Complete |
+| regular | 3 | 33.6 | 25.3 | 3.7 | 3.3 | 3.3 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 0 | 0 | N/A | 0 | 0 | N/A |
+| regular | 24 | 48 | 0.500 | 7 | 12 | 0.583 |
 
 ## Closed source games
 
@@ -37,6 +37,9 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-10-22 | preseason | Detroit Pistons | Played | [Closed game](../2005-06/05_Preseason/Game_5.md) |
 | 2005-10-24 | preseason | Atlanta Hawks | Played | [Closed game](../2005-06/05_Preseason/Game_6.md) |
 | 2005-10-25 | preseason | New Orleans/Oklahoma City Hornets | Played | [Closed game](../2005-06/05_Preseason/Game_7.md) |
+| 2005-11-02 | regular | Memphis Grizzlies | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md) |
+| 2005-11-03 | regular | Indiana Pacers | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md) |
+| 2005-11-05 | regular | Milwaukee Bucks | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -77,6 +80,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/rotation.json)
+- [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
@@ -85,4 +89,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/05_Preseason/Game_5.md)
 - [Closed game](../2005-06/05_Preseason/Game_6.md)
 - [Closed game](../2005-06/05_Preseason/Game_7.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

@@ -198,13 +198,14 @@
   {
    "player": "Darrell Armstrong",
    "bbr_id": "armstda01",
-   "club": "Philadelphia 76ers",
+   "club": "Charlotte Bobcats",
    "route": "mid_level",
    "kind": "new",
    "schedule": {
     "2005-06": 1510936
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Philadelphia 76ers"
   },
   {
    "player": "Carlos Arroyo",
@@ -764,13 +765,14 @@
   {
    "player": "Jackie Butler",
    "bbr_id": "butleja01",
-   "club": "Philadelphia 76ers",
+   "club": "Washington Wizards",
    "route": "qualifying_offer",
    "kind": "new",
    "schedule": {
     "2005-06": 816748
    },
-   "source": "2005 qualifying offer accepted"
+   "source": "2005 qualifying offer accepted",
+   "signed_club": "Philadelphia 76ers"
   },
   {
    "player": "Rasual Butler",
@@ -1579,7 +1581,7 @@
   {
    "player": "Richie Frahm",
    "bbr_id": "frahmri01",
-   "club": "Seattle SuperSonics",
+   "club": "Utah Jazz",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -1587,7 +1589,8 @@
     "2006-07": 869865,
     "2007-08": 956852
    },
-   "source": "league contract ledger 2004-05 (new)"
+   "source": "league contract ledger 2004-05 (new)",
+   "signed_club": "Seattle SuperSonics"
   },
   {
    "player": "Steve Francis",
@@ -3189,13 +3192,14 @@
   {
    "player": "Kevin Martin",
    "bbr_id": "martike02",
-   "club": "New York Knicks",
+   "club": "Charlotte Bobcats",
    "route": "qualifying_offer",
    "kind": "new",
    "schedule": {
     "2005-06": 816748
    },
-   "source": "2005 qualifying offer accepted"
+   "source": "2005 qualifying offer accepted",
+   "signed_club": "New York Knicks"
   },
   {
    "player": "Desmond Mason",
@@ -3244,13 +3248,14 @@
   {
    "player": "D.J. Mbenga",
    "bbr_id": "mbengdj01",
-   "club": "San Antonio Spurs",
+   "club": "Chicago Bulls",
    "route": "qualifying_offer",
    "kind": "new",
    "schedule": {
     "2005-06": 816748
    },
-   "source": "2005 qualifying offer accepted"
+   "source": "2005 qualifying offer accepted",
+   "signed_club": "San Antonio Spurs"
   },
   {
    "player": "Rashad McCants",
@@ -4133,7 +4138,7 @@
   {
    "player": "Pavel Podkolzin",
    "bbr_id": "podkopa01",
-   "club": "Philadelphia 76ers",
+   "club": "New Orleans/Oklahoma City Hornets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -4141,7 +4146,8 @@
     "2006-07": 1703520
    },
    "source": "league contract ledger 2004-05 (rookie_scale)",
-   "rookie_scale": true
+   "rookie_scale": true,
+   "signed_club": "Philadelphia 76ers"
   },
   {
    "player": "Scot Pollard",

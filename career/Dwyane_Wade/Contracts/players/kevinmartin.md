@@ -2,9 +2,9 @@
 
 # Contract | Kevin Martin
 
-Known through: 2005-10-31. [Open interactive contract](kevinmartin.html#contract) · [Contract history](kevinmartin.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](kevinmartin.html#contract) · [Contract history](kevinmartin.html#contract-history)
 
-Kevin Martin: under contract. Evidence cutoff: 2005-10-31.
+Kevin Martin: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Kevin Martin |
-| Club / rights baseline | New York Knicks |
+| Club / rights baseline | Charlotte Bobcats |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

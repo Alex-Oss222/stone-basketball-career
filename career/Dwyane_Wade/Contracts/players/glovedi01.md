@@ -2,9 +2,9 @@
 
 # Contract | Dion Glover
 
-Known through: 2005-10-31. [Open interactive contract](glovedi01.html#contract) · [Contract history](glovedi01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](glovedi01.html#contract) · [Contract history](glovedi01.html#contract-history)
 
-Dion Glover: under contract. Evidence cutoff: 2005-10-31.
+Dion Glover: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 

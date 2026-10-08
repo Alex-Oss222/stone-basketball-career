@@ -2,9 +2,9 @@
 
 # Contract | Matt Barnes
 
-Known through: 2005-10-31. [Open interactive contract](barnema02.html#contract) · [Contract history](barnema02.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](barnema02.html#contract) · [Contract history](barnema02.html#contract-history)
 
-Matt Barnes: under contract. Evidence cutoff: 2005-10-31.
+Matt Barnes: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 

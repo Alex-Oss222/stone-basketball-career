@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-10-31",
+  "as_of": "2005-11-06",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 21,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets",
+  "current_event": "2005-11-05-miami-heat-at-milwaukee-bucks",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-10-31"
+              "2005-11-06"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets"
+              "2005-11-05-miami-heat-at-milwaukee-bucks"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2005-10-31",
+              "2005-11-06",
               "Current checkpoint",
-              "2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets",
+              "2005-11-05-miami-heat-at-milwaukee-bucks",
               "Recorded",
               {
                 "label": "Owning event",
@@ -91,6 +91,56 @@
               {
                 "label": "Training camp",
                 "href": "#training_camp"
+              }
+            ],
+            [
+              "2005-11-07",
+              "Next Miami game, vs New Jersey Nets",
+              "Coach sets the rotation; the engine plays it",
+              "Scheduled",
+              {
+                "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2005-11-07",
+              "League awards announced: Player of the Week",
+              "League (closed results only)",
+              "Scheduled",
+              {
+                "label": "Awards",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2005-11-09",
+              "Staff rotation review",
+              "Coaching staff (same rule for every player)",
+              "Scheduled; a role request may be logged before it",
+              {
+                "label": "Rule",
+                "href": "../../../docs/front_office.md"
+              }
+            ],
+            [
+              "2006-01-07",
+              "Keep-or-waive review of non-guaranteed contracts",
+              "Miami front office",
+              "Scheduled; does not involve Wade's guaranteed contract",
+              {
+                "label": "Rule",
+                "href": "../../../docs/front_office.md"
+              }
+            ],
+            [
+              "2006-01-10",
+              "Kept contracts become guaranteed",
+              "Miami front office",
+              "Scheduled; does not involve Wade's guaranteed contract",
+              {
+                "label": "Rule",
+                "href": "../../../docs/front_office.md"
               }
             ],
             [
@@ -139,7 +189,7 @@
               "2005-10-31",
               "Roster cut to 15",
               "League calendar",
-              "today",
+              "done",
               {
                 "label": "Season",
                 "href": "#calendar"
@@ -159,7 +209,7 @@
               "2005-11-01",
               "Opening night",
               "League calendar",
-              "upcoming",
+              "done",
               {
                 "label": "Season",
                 "href": "#calendar"
@@ -402,6 +452,10 @@
           "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Owning dated record",
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
@@ -434,6 +488,18 @@
           "href": "../2005-06/05_Preseason/Game_7.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -442,7 +508,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-31"
+          "value": "2005-11-06"
         },
         {
           "label": "Team",
@@ -656,6 +722,10 @@
           "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Owning dated record",
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
@@ -688,6 +758,18 @@
           "href": "../2005-06/05_Preseason/Game_7.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -696,7 +778,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-31"
+          "value": "2005-11-06"
         },
         {
           "label": "Team",
@@ -947,6 +1029,10 @@
           "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Owning dated record",
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
@@ -979,6 +1065,18 @@
           "href": "../2005-06/05_Preseason/Game_7.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -987,7 +1085,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-31"
+          "value": "2005-11-06"
         },
         {
           "label": "Team",
@@ -1241,6 +1339,10 @@
           "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Owning dated record",
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
@@ -1273,6 +1375,18 @@
           "href": "../2005-06/05_Preseason/Game_7.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1281,7 +1395,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-31"
+          "value": "2005-11-06"
         },
         {
           "label": "Team",
@@ -1470,6 +1584,10 @@
           "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Owning dated record",
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
@@ -1502,6 +1620,18 @@
           "href": "../2005-06/05_Preseason/Game_7.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1510,7 +1640,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-31"
+          "value": "2005-11-06"
         },
         {
           "label": "Team",
@@ -1690,6 +1820,10 @@
           "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Owning dated record",
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
@@ -1722,6 +1856,18 @@
           "href": "../2005-06/05_Preseason/Game_7.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1730,7 +1876,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-31"
+          "value": "2005-11-06"
         },
         {
           "label": "Team",
@@ -1919,6 +2065,10 @@
           "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Owning dated record",
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
@@ -1951,6 +2101,18 @@
           "href": "../2005-06/05_Preseason/Game_7.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1959,7 +2121,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-31"
+          "value": "2005-11-06"
         },
         {
           "label": "Team",
@@ -2196,6 +2358,10 @@
           "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Owning dated record",
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
@@ -2228,6 +2394,18 @@
           "href": "../2005-06/05_Preseason/Game_7.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2236,7 +2414,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-31"
+          "value": "2005-11-06"
         },
         {
           "label": "Team",
@@ -2253,7 +2431,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "7 closed game records in 2005-06 through 2005-10-31. Competitions remain separate.",
+      "summary": "10 closed game records in 2005-06 through 2005-11-06. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2280,12 +2458,12 @@
             ],
             [
               "regular",
-              0,
-              null,
-              null,
-              null,
-              null,
-              null,
+              3,
+              33.573327778,
+              25.333333333,
+              3.666666667,
+              3.333333333,
+              3.333333333,
               "Complete"
             ]
           ]
@@ -2313,12 +2491,12 @@
             ],
             [
               "regular",
-              0,
-              0,
-              null,
-              0,
-              0,
-              null
+              24,
+              48,
+              0.5,
+              7,
+              12,
+              0.583333333
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -2401,6 +2579,36 @@
               {
                 "label": "Closed game",
                 "href": "../2005-06/05_Preseason/Game_7.md"
+              }
+            ],
+            [
+              "2005-11-02",
+              "regular",
+              "Memphis Grizzlies",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md"
+              }
+            ],
+            [
+              "2005-11-03",
+              "regular",
+              "Indiana Pacers",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md"
+              }
+            ],
+            [
+              "2005-11-05",
+              "regular",
+              "Milwaukee Bucks",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md"
               }
             ]
           ]
@@ -2511,6 +2719,10 @@
           "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
+          "label": "Rule",
+          "href": "../../../docs/front_office.md"
+        },
+        {
           "label": "Owning dated record",
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
@@ -2543,6 +2755,18 @@
           "href": "../2005-06/05_Preseason/Game_7.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2551,7 +2775,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-31"
+          "value": "2005-11-06"
         },
         {
           "label": "Team",

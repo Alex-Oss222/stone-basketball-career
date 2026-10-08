@@ -2,9 +2,9 @@
 
 # Contract | Antoine Walker
 
-Known through: 2005-10-31. [Open interactive contract](walkean02.html#contract) · [Contract history](walkean02.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](walkean02.html#contract) · [Contract history](walkean02.html#contract-history)
 
-Antoine Walker: under contract. Evidence cutoff: 2005-10-31.
+Antoine Walker: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 

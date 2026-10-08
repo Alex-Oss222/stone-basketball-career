@@ -2,9 +2,9 @@
 
 # Contract | Jackie Butler
 
-Known through: 2005-10-31. [Open interactive contract](jackiebutler.html#contract) · [Contract history](jackiebutler.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](jackiebutler.html#contract) · [Contract history](jackiebutler.html#contract-history)
 
-Jackie Butler: under contract. Evidence cutoff: 2005-10-31.
+Jackie Butler: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jackie Butler |
-| Club / rights baseline | Philadelphia 76ers |
+| Club / rights baseline | Washington Wizards |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

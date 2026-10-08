@@ -2,9 +2,9 @@
 
 # Contract | Rasual Butler
 
-Known through: 2005-10-31. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
 
-Rasual Butler: under contract. Evidence cutoff: 2005-10-31.
+Rasual Butler: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Rasual Butler |
-| Club / rights baseline | Toronto Raptors |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

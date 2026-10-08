@@ -2,9 +2,9 @@
 
 # Contract | Ruben Boumtje-Boumtje
 
-Known through: 2005-10-31. [Open interactive contract](boumtru01.html#contract) · [Contract history](boumtru01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](boumtru01.html#contract) · [Contract history](boumtru01.html#contract-history)
 
-Ruben Boumtje-Boumtje: under contract. Evidence cutoff: 2005-10-31.
+Ruben Boumtje-Boumtje: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 

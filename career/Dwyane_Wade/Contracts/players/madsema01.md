@@ -2,9 +2,9 @@
 
 # Contract | Mark Madsen
 
-Known through: 2005-10-31. [Open interactive contract](madsema01.html#contract) · [Contract history](madsema01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](madsema01.html#contract) · [Contract history](madsema01.html#contract-history)
 
-Mark Madsen: under contract. Evidence cutoff: 2005-10-31.
+Mark Madsen: under contract. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -114,7 +114,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Mark Madsen |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Dallas Mavericks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

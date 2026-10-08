@@ -2,9 +2,9 @@
 
 # Contract | Theo Ratliff
 
-Known through: 2005-10-31. [Open interactive contract](ratlith01.html#contract) · [Contract history](ratlith01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](ratlith01.html#contract) · [Contract history](ratlith01.html#contract-history)
 
-Theo Ratliff: released. Evidence cutoff: 2005-10-31.
+Theo Ratliff: released. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Theo Ratliff |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Atlanta Hawks |
 | Control status | released |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

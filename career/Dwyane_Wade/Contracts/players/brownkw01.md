@@ -2,9 +2,9 @@
 
 # Contract | Kwame Brown
 
-Known through: 2005-10-31. [Open interactive contract](brownkw01.html#contract) · [Contract history](brownkw01.html#contract-history)
+Known through: 2005-11-06. [Open interactive contract](brownkw01.html#contract) · [Contract history](brownkw01.html#contract-history)
 
-Kwame Brown: released. Evidence cutoff: 2005-10-31.
+Kwame Brown: released. Evidence cutoff: 2005-11-06.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Kwame Brown |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | San Antonio Spurs |
 | Control status | released |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
