@@ -2,9 +2,9 @@
 
 # Contract | Pape Sow
 
-Known through: 2005-10-26. [Open interactive contract](papesow.html#contract) · [Contract history](papesow.html#contract-history)
+Known through: 2005-10-27. [Open interactive contract](papesow.html#contract) · [Contract history](papesow.html#contract-history)
 
-Pape Sow: under contract. Evidence cutoff: 2005-10-26.
+Pape Sow: under contract. Evidence cutoff: 2005-10-27.
 
 ## Current contract
 

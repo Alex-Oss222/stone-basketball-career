@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-10-26**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-10-27**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -591,7 +591,7 @@ Card date: **2005-10-26**. 573 registry players, one Markdown card and one inter
 | [Oliver Miller](milleol01.md) | Free agent | 35 | silhouette | [open](milleol01.html) |
 | [Pat Burke](burkepa01.md) | Phoenix Suns | 31 | sourced | [open](burkepa01.html) |
 | [Paul Grant](grantpa01.md) | Free agent | 31 | silhouette | [open](grantpa01.html) |
-| [Predrag Drobnjak](drobnpr01.md) | Free agent | 29 | silhouette | [open](drobnpr01.html) |
+| [Predrag Drobnjak](drobnpr01.md) | Free agent | 30 | silhouette | [open](drobnpr01.html) |
 | [Primož Brezec](brezepr01.md) | Toronto Raptors | 26 | silhouette | [open](brezepr01.html) |
 | [Raef LaFrentz](lafrera01.md) | Atlanta Hawks | 29 | sourced | [open](lafrera01.html) |
 | [Rasho Nesterovic](nestera01.md) | San Antonio Spurs | 29 | sourced | [open](nestera01.html) |

@@ -2,9 +2,9 @@
 
 # Contract | Mateen Cleaves
 
-Known through: 2005-10-26. [Open interactive contract](cleavma01.html#contract) · [Contract history](cleavma01.html#contract-history)
+Known through: 2005-10-27. [Open interactive contract](cleavma01.html#contract) · [Contract history](cleavma01.html#contract-history)
 
-Mateen Cleaves: under contract. Evidence cutoff: 2005-10-26.
+Mateen Cleaves: under contract. Evidence cutoff: 2005-10-27.
 
 ## Current contract
 
