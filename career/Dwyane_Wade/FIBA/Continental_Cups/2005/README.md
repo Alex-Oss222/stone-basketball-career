@@ -4,7 +4,7 @@
 
 2005-08-24 to 2005-09-04, hosted by Dominican Republic. FIBA rules (four 10-minute quarters, five fouls). Every game is played by the engine; real results of this event are never used. Rules and sources: `runtime/national.py`, `library/2005/fiba/fiba_2005_americas_championship.json`.
 
-Status: **36 of 40 games played**.
+Status: **38 of 40 games played**.
 
 ## Rosters
 
@@ -111,29 +111,29 @@ Status: **36 of 40 games played**.
 
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
-| 37 | 2005-09-03 | United States | Dominican Republic |  |  |
-| 38 | 2005-09-03 | Brazil | Panama |  |  |
+| 37 | 2005-09-03 | United States | Dominican Republic | 66-73 | [box](Games/fiba-amc05-g37.result.json) |
+| 38 | 2005-09-03 | Brazil | Panama | 88-77 | [box](Games/fiba-amc05-g38.result.json) |
 
 ### Third-place game
 
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
-| 39 | 2005-09-04 | L:38 | L:37 |  |  |
+| 39 | 2005-09-04 | Panama | Dominican Republic |  |  |
 
 ### Final
 
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
-| 40 | 2005-09-04 | W:38 | W:37 |  |  |
+| 40 | 2005-09-04 | Brazil | United States |  |  |
 
 ## Leaders (per game)
 
-**Points**: Marcelinho Machado (Brazil) 15.0; Víctor Díaz (Venezuela) 15.0; Leonardo Gutiérrez (Argentina) 14.6; Guilherme Giovannoni (Brazil) 14.5; Óscar Torres (Venezuela) 13.8
+**Points**: Marcelinho Machado (Brazil) 16.2; Víctor Díaz (Venezuela) 15.0; Leonardo Gutiérrez (Argentina) 14.6; Óscar Torres (Venezuela) 13.8; Denham Brown (Canada) 13.5
 
-**Rebounds**: Ramsés Benítez (Mexico) 8.0; Denham Brown (Canada) 7.5; Anderson Varejão (Brazil) 7.4; Mauricio Aguiar (Uruguay) 6.2; Federico Kammerichs (Argentina) 5.9
+**Rebounds**: Ramsés Benítez (Mexico) 8.0; Denham Brown (Canada) 7.5; Anderson Varejão (Brazil) 7.2; José Vargas (Dominican Republic) 6.3; Mauricio Aguiar (Uruguay) 6.2
 
-**Assists**: Amaury Filion (Dominican Republic) 2.9; Jaime Peterson (Dominican Republic) 2.6; Tiago Splitter (Brazil) 2.5; Otto Ramírez (Dominican Republic) 2.4; Richard Anderson (Canada) 2.4
+**Assists**: Amaury Filion (Dominican Republic) 2.6; Jaime Peterson (Dominican Republic) 2.6; Otto Ramírez (Dominican Republic) 2.4; Richard Anderson (Canada) 2.4; Tiago Splitter (Brazil) 2.3
 
-**Steals**: Anderson Varejão (Brazil) 2.0; Marcelinho Machado (Brazil) 1.9; Guilherme Giovannoni (Brazil) 1.8; Héctor Romero (Venezuela) 1.8; Horacio Llamas (Mexico) 1.6
+**Steals**: Anderson Varejão (Brazil) 2.1; Marcelinho Machado (Brazil) 1.9; Héctor Romero (Venezuela) 1.8; Horacio Llamas (Mexico) 1.6; Guilherme Giovannoni (Brazil) 1.6
 
-**Blocks**: Héctor Romero (Venezuela) 1.0; Tiago Splitter (Brazil) 1.0; Antonio Latimer (Puerto Rico) 0.9; Ramsés Benítez (Mexico) 0.9; Jaime Peterson (Dominican Republic) 0.8
+**Blocks**: Héctor Romero (Venezuela) 1.0; Tiago Splitter (Brazil) 0.9; Antonio Latimer (Puerto Rico) 0.9; Ramsés Benítez (Mexico) 0.9; Peter John Ramos (Puerto Rico) 0.8

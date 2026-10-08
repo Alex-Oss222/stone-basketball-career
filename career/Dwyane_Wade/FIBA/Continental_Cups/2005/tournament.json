@@ -1282,20 +1282,20 @@
    "venue": "Palacio de los Deportes Virgilio Travieso Soto"
   },
   "39": {
-   "away": null,
+   "away": "Dominican Republic",
    "away_slot": "L:37",
    "date": "2005-09-04",
-   "home": null,
+   "home": "Panama",
    "home_slot": "L:38",
    "number": 39,
    "stage": "third_place",
    "venue": "Palacio de los Deportes Virgilio Travieso Soto"
   },
   "40": {
-   "away": null,
+   "away": "United States",
    "away_slot": "W:37",
    "date": "2005-09-04",
-   "home": null,
+   "home": "Brazil",
    "home_slot": "W:38",
    "number": 40,
    "stage": "final",
