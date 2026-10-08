@@ -2,9 +2,9 @@
 
 # Contract | Jameer Nelson
 
-Known through: 2005-08-28. [Open interactive contract](jameernelson.html#contract) · [Contract history](jameernelson.html#contract-history)
+Known through: 2005-09-04. [Open interactive contract](jameernelson.html#contract) · [Contract history](jameernelson.html#contract-history)
 
-Jameer Nelson: under contract. Evidence cutoff: 2005-08-28.
+Jameer Nelson: under contract. Evidence cutoff: 2005-09-04.
 
 ## Current contract
 

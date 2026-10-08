@@ -2,9 +2,9 @@
 
 # Contract | Linton Johnson
 
-Known through: 2005-08-28. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
+Known through: 2005-09-04. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
 
-Linton Johnson: No verified contract record. Evidence cutoff: 2005-08-28.
+Linton Johnson: No verified contract record. Evidence cutoff: 2005-09-04.
 
 ## Current contract
 

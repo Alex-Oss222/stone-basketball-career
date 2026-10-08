@@ -2,9 +2,9 @@
 
 # Contract | John Edwards
 
-Known through: 2005-08-28. [Open interactive contract](edwarjo01.html#contract) · [Contract history](edwarjo01.html#contract-history)
+Known through: 2005-09-04. [Open interactive contract](edwarjo01.html#contract) · [Contract history](edwarjo01.html#contract-history)
 
-John Edwards: under contract. Evidence cutoff: 2005-08-28.
+John Edwards: under contract. Evidence cutoff: 2005-09-04.
 
 ## Current contract
 
