@@ -2,9 +2,9 @@
 
 # Contract | Robert Swift
 
-Known through: 2005-07-24. [Open interactive contract](robertswift.html#contract) · [Contract history](robertswift.html#contract-history)
+Known through: 2005-07-31. [Open interactive contract](robertswift.html#contract) · [Contract history](robertswift.html#contract-history)
 
-Robert Swift: under contract. Evidence cutoff: 2005-07-24.
+Robert Swift: under contract. Evidence cutoff: 2005-07-31.
 
 ## Current contract
 
@@ -43,7 +43,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | $1,407,240 | Not recorded | Not recorded | $1,407,240 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | $1,512,840 | Not recorded | Not recorded | $1,512,840 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $1,512,840 | Not recorded | Not recorded | $1,512,840 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2006-07 | $1,618,320 | Not recorded | Not recorded | $1,618,320 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
@@ -199,7 +199,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | $1,407,240 | Not recorded | Not recorded | $1,407,240 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | $1,512,840 | Not recorded | Not recorded | $1,512,840 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $1,512,840 | Not recorded | Not recorded | $1,512,840 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2006-07 | $1,618,320 | Not recorded | Not recorded | $1,618,320 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines

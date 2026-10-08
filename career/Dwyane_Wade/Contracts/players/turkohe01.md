@@ -2,9 +2,9 @@
 
 # Contract | Hedo Turkoglu
 
-Known through: 2005-07-24. [Open interactive contract](turkohe01.html#contract) · [Contract history](turkohe01.html#contract-history)
+Known through: 2005-07-31. [Open interactive contract](turkohe01.html#contract) · [Contract history](turkohe01.html#contract-history)
 
-Hedo Turkoglu: under contract. Evidence cutoff: 2005-07-24.
+Hedo Turkoglu: under contract. Evidence cutoff: 2005-07-31.
 
 ## Current contract
 
@@ -43,7 +43,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | $3,320,625 | Not recorded | Not recorded | $3,320,625 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | $3,652,688 | Not recorded | Not recorded | $3,652,688 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $3,652,688 | Not recorded | Not recorded | $3,652,688 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2006-07 | $3,984,750 | Not recorded | Not recorded | $3,984,750 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2007-08 | $4,316,812 | Not recorded | Not recorded | $4,316,812 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2008-09 | $4,648,875 | Not recorded | Not recorded | $4,648,875 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
@@ -203,7 +203,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | $3,320,625 | Not recorded | Not recorded | $3,320,625 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | $3,652,688 | Not recorded | Not recorded | $3,652,688 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $3,652,688 | Not recorded | Not recorded | $3,652,688 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2006-07 | $3,984,750 | Not recorded | Not recorded | $3,984,750 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2007-08 | $4,316,812 | Not recorded | Not recorded | $4,316,812 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2008-09 | $4,648,875 | Not recorded | Not recorded | $4,648,875 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |

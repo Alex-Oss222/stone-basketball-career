@@ -2,9 +2,9 @@
 
 # Contract | Morris Peterson
 
-Known through: 2005-07-24. [Open interactive contract](petermo01.html#contract) · [Contract history](petermo01.html#contract-history)
+Known through: 2005-07-31. [Open interactive contract](petermo01.html#contract) · [Contract history](petermo01.html#contract-history)
 
-Morris Peterson: under contract. Evidence cutoff: 2005-07-24.
+Morris Peterson: under contract. Evidence cutoff: 2005-07-31.
 
 ## Current contract
 
@@ -43,7 +43,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | $2,727,600 | Not recorded | Not recorded | $2,727,600 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | $3,068,550 | Not recorded | Not recorded | $3,068,550 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $3,068,550 | Not recorded | Not recorded | $3,068,550 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2006-07 | $3,409,500 | Not recorded | Not recorded | $3,409,500 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2007-08 | $3,750,450 | Not recorded | Not recorded | $3,750,450 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2008-09 | $4,091,400 | Not recorded | Not recorded | $4,091,400 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
@@ -203,7 +203,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | $2,727,600 | Not recorded | Not recorded | $2,727,600 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | $3,068,550 | Not recorded | Not recorded | $3,068,550 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $3,068,550 | Not recorded | Not recorded | $3,068,550 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2006-07 | $3,409,500 | Not recorded | Not recorded | $3,409,500 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2007-08 | $3,750,450 | Not recorded | Not recorded | $3,750,450 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2008-09 | $4,091,400 | Not recorded | Not recorded | $4,091,400 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |

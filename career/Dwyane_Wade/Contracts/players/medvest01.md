@@ -2,9 +2,9 @@
 
 # Contract | Slava Medvedenko
 
-Known through: 2005-07-24. [Open interactive contract](medvest01.html#contract) · [Contract history](medvest01.html#contract-history)
+Known through: 2005-07-31. [Open interactive contract](medvest01.html#contract) · [Contract history](medvest01.html#contract-history)
 
-Slava Medvedenko: under contract. Evidence cutoff: 2005-07-24.
+Slava Medvedenko: under contract. Evidence cutoff: 2005-07-31.
 
 ## Current contract
 
@@ -43,7 +43,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | $3,542,166 | Not recorded | Not recorded | $3,542,166 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | $3,896,383 | Not recorded | Not recorded | $3,896,383 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $3,896,383 | Not recorded | Not recorded | $3,896,383 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2006-07 | $4,250,599 | Not recorded | Not recorded | $4,250,599 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2007-08 | $4,604,816 | Not recorded | Not recorded | $4,604,816 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2008-09 | $4,959,032 | Not recorded | Not recorded | $4,959,032 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
@@ -203,7 +203,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | $3,542,166 | Not recorded | Not recorded | $3,542,166 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | $3,896,383 | Not recorded | Not recorded | $3,896,383 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $3,896,383 | Not recorded | Not recorded | $3,896,383 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2006-07 | $4,250,599 | Not recorded | Not recorded | $4,250,599 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2007-08 | $4,604,816 | Not recorded | Not recorded | $4,604,816 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2008-09 | $4,959,032 | Not recorded | Not recorded | $4,959,032 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |

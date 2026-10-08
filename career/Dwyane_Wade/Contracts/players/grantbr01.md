@@ -2,9 +2,9 @@
 
 # Contract | Brian Grant
 
-Known through: 2005-07-24. [Open interactive contract](grantbr01.html#contract) · [Contract history](grantbr01.html#contract-history)
+Known through: 2005-07-31. [Open interactive contract](grantbr01.html#contract) · [Contract history](grantbr01.html#contract-history)
 
-Brian Grant: under contract. Evidence cutoff: 2005-07-24.
+Brian Grant: under contract. Evidence cutoff: 2005-07-31.
 
 ## Current contract
 
@@ -45,7 +45,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $11,027,862 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $12,130,648 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $13,233,434 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $14,336,220 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | season_salary_list | Not recorded |
+| 2005-06 | $14,336,220 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2006-07 | $15,439,006 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | early_termination_option | extrapolated_constant_raise | Existing contract year subject to Brian Grant's early-termination option after 2005-06. |
 
 ### Options and decision deadlines
@@ -214,7 +214,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $11,027,862 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $12,130,648 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $13,233,434 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $14,336,220 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | season_salary_list | Not recorded |
+| 2005-06 | $14,336,220 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2006-07 | $15,439,006 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | early_termination_option | extrapolated_constant_raise | Existing contract year subject to Brian Grant's early-termination option after 2005-06. |
 
 ### Options and decision deadlines

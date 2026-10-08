@@ -2,9 +2,9 @@
 
 # Contract | Marcus Haislip
 
-Known through: 2005-07-24. [Open interactive contract](haislma01.html#contract) · [Contract history](haislma01.html#contract-history)
+Known through: 2005-07-31. [Open interactive contract](haislma01.html#contract) · [Contract history](haislma01.html#contract-history)
 
-Marcus Haislip: under rookie contract. Evidence cutoff: 2005-07-24.
+Marcus Haislip: under rookie contract. Evidence cutoff: 2005-07-31.
 
 ## Current contract
 
@@ -45,7 +45,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,439,400 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $1,547,280 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,400,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,000,600 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | extrapolated_rookie_option_formula | Team option; no decision recorded on or before 2003-06-26. |
+| 2005-06 | $2,000,600 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | extrapolated_rookie_option_formula | Team option; no decision recorded on or before 2003-06-26. |
 
 ### Options and decision deadlines
 
@@ -208,7 +208,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,439,400 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $1,547,280 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,400,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,000,600 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | extrapolated_rookie_option_formula | Team option; no decision recorded on or before 2003-06-26. |
+| 2005-06 | $2,000,600 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | extrapolated_rookie_option_formula | Team option; no decision recorded on or before 2003-06-26. |
 
 ### Options and decision deadlines
 

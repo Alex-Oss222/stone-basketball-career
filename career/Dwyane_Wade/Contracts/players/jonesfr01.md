@@ -2,9 +2,9 @@
 
 # Contract | Fred Jones
 
-Known through: 2005-07-24. [Open interactive contract](jonesfr01.html#contract) · [Contract history](jonesfr01.html#contract-history)
+Known through: 2005-07-31. [Open interactive contract](jonesfr01.html#contract) · [Contract history](jonesfr01.html#contract-history)
 
-Fred Jones: under rookie contract. Evidence cutoff: 2005-07-24.
+Fred Jones: under rookie contract. Evidence cutoff: 2005-07-31.
 
 ## Current contract
 
@@ -45,7 +45,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,367,400 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $1,506,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,572,480 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,328,843 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | season_salary_list | Team option; no decision recorded on or before 2003-06-26. |
+| 2005-06 | $2,328,843 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | season_salary_list | Team option; no decision recorded on or before 2003-06-26. |
 
 ### Options and decision deadlines
 
@@ -209,7 +209,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,367,400 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $1,506,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,572,480 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,328,843 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | season_salary_list | Team option; no decision recorded on or before 2003-06-26. |
+| 2005-06 | $2,328,843 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | season_salary_list | Team option; no decision recorded on or before 2003-06-26. |
 
 ### Options and decision deadlines
 

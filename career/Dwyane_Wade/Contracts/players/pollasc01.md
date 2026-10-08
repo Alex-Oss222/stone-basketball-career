@@ -2,9 +2,9 @@
 
 # Contract | Scot Pollard
 
-Known through: 2005-07-24. [Open interactive contract](pollasc01.html#contract) · [Contract history](pollasc01.html#contract-history)
+Known through: 2005-07-31. [Open interactive contract](pollasc01.html#contract) · [Contract history](pollasc01.html#contract-history)
 
-Scot Pollard: under contract. Evidence cutoff: 2005-07-24.
+Scot Pollard: under contract. Evidence cutoff: 2005-07-31.
 
 ## Current contract
 
@@ -45,7 +45,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $4,826,874 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $5,309,563 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $5,792,250 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $6,274,937 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | season_salary_list | Not recorded |
+| 2005-06 | $6,274,937 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 
 ### Options and decision deadlines
 
@@ -207,7 +207,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $4,826,874 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $5,309,563 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $5,792,250 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $6,274,937 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | season_salary_list | Not recorded |
+| 2005-06 | $6,274,937 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 
 ### Options and decision deadlines
 
