@@ -2,9 +2,9 @@
 
 # Contract | David Robinson
 
-Known through: 2005-09-04. [Open interactive contract](robinda01.html#contract) · [Contract history](robinda01.html#contract-history)
+Known through: 2005-09-11. [Open interactive contract](robinda01.html#contract) · [Contract history](robinda01.html#contract-history)
 
-David Robinson: expired or unresolved. Evidence cutoff: 2005-09-04.
+David Robinson: expired or unresolved. Evidence cutoff: 2005-09-11.
 
 ## Current contract
 

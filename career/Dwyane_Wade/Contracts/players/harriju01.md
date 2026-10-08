@@ -2,9 +2,9 @@
 
 # Contract | Junior Harrington
 
-Known through: 2005-09-04. [Open interactive contract](harriju01.html#contract) · [Contract history](harriju01.html#contract-history)
+Known through: 2005-09-11. [Open interactive contract](harriju01.html#contract) · [Contract history](harriju01.html#contract-history)
 
-Junior Harrington: under contract. Evidence cutoff: 2005-09-04.
+Junior Harrington: under contract. Evidence cutoff: 2005-09-11.
 
 ## Current contract
 
