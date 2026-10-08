@@ -2,9 +2,9 @@
 
 # Contract | Josh Smith
 
-Known through: 2005-10-06. [Open interactive contract](joshsmith.html#contract) · [Contract history](joshsmith.html#contract-history)
+Known through: 2005-10-07. [Open interactive contract](joshsmith.html#contract) · [Contract history](joshsmith.html#contract-history)
 
-Josh Smith: under contract. Evidence cutoff: 2005-10-06.
+Josh Smith: under contract. Evidence cutoff: 2005-10-07.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Tracy McGrady
 
-Known through: 2005-10-06. [Open interactive contract](mcgratr01.html#contract) · [Contract history](mcgratr01.html#contract-history)
+Known through: 2005-10-07. [Open interactive contract](mcgratr01.html#contract) · [Contract history](mcgratr01.html#contract-history)
 
-Tracy McGrady: under contract. Evidence cutoff: 2005-10-06.
+Tracy McGrady: under contract. Evidence cutoff: 2005-10-07.
 
 ## Current contract
 

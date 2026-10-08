@@ -2,9 +2,9 @@
 
 # Contract | Kevin Martin
 
-Known through: 2005-10-06. [Open interactive contract](kevinmartin.html#contract) · [Contract history](kevinmartin.html#contract-history)
+Known through: 2005-10-07. [Open interactive contract](kevinmartin.html#contract) · [Contract history](kevinmartin.html#contract-history)
 
-Kevin Martin: under contract. Evidence cutoff: 2005-10-06.
+Kevin Martin: under contract. Evidence cutoff: 2005-10-07.
 
 ## Current contract
 

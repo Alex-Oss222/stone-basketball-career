@@ -2,9 +2,9 @@
 
 # Contract | Glenn Robinson
 
-Known through: 2005-10-06. [Open interactive contract](robingl01.html#contract) · [Contract history](robingl01.html#contract-history)
+Known through: 2005-10-07. [Open interactive contract](robingl01.html#contract) · [Contract history](robingl01.html#contract-history)
 
-Glenn Robinson: under contract. Evidence cutoff: 2005-10-06.
+Glenn Robinson: under contract. Evidence cutoff: 2005-10-07.
 
 ## Current contract
 

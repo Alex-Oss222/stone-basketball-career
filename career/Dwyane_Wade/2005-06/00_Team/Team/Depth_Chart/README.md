@@ -1,6 +1,6 @@
 # Working depth chart
 
-No staff decision is in force on 2005-10-06: training camp sets the order and the rotation.
+No staff decision is in force on 2005-10-07: training camp sets the order and the rotation.
 
 - [Readable depth chart](depth_chart.md)
 - [Carried-over order (machine-readable)](depth_chart.json)
