@@ -2,9 +2,9 @@
 
 # Contract | Jonathan Bender
 
-Known through: 2005-10-05. [Open interactive contract](bendejo01.html#contract) · [Contract history](bendejo01.html#contract-history)
+Known through: 2005-10-06. [Open interactive contract](bendejo01.html#contract) · [Contract history](bendejo01.html#contract-history)
 
-Jonathan Bender: under contract. Evidence cutoff: 2005-10-05.
+Jonathan Bender: under contract. Evidence cutoff: 2005-10-06.
 
 ## Current contract
 
