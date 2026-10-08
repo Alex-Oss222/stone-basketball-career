@@ -2,9 +2,9 @@
 
 # Contract | Joe Smith
 
-Known through: 2005-10-15. [Open interactive contract](smithjo02.html#contract) · [Contract history](smithjo02.html#contract-history)
+Known through: 2005-10-16. [Open interactive contract](smithjo02.html#contract) · [Contract history](smithjo02.html#contract-history)
 
-Joe Smith: under contract. Evidence cutoff: 2005-10-15.
+Joe Smith: under contract. Evidence cutoff: 2005-10-16.
 
 ## Current contract
 

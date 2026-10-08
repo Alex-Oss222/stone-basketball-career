@@ -2,9 +2,9 @@
 
 # Contract | Travis Outlaw
 
-Known through: 2005-10-15. [Open interactive contract](outlatr01.html#contract) · [Contract history](outlatr01.html#contract-history)
+Known through: 2005-10-16. [Open interactive contract](outlatr01.html#contract) · [Contract history](outlatr01.html#contract-history)
 
-Travis Outlaw: No verified contract record. Evidence cutoff: 2005-10-15.
+Travis Outlaw: No verified contract record. Evidence cutoff: 2005-10-16.
 
 ## Current contract
 
