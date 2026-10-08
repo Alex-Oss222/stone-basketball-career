@@ -2,9 +2,9 @@
 
 # Contract | Anfernee Hardaway
 
-Known through: 2005-10-29. [Open interactive contract](hardaan01.html#contract) · [Contract history](hardaan01.html#contract-history)
+Known through: 2005-10-30. [Open interactive contract](hardaan01.html#contract) · [Contract history](hardaan01.html#contract-history)
 
-Anfernee Hardaway: under contract. Evidence cutoff: 2005-10-29.
+Anfernee Hardaway: under contract. Evidence cutoff: 2005-10-30.
 
 ## Current contract
 

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-10-29**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-10-30**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -60,7 +60,7 @@ Card date: **2005-10-29**. 573 registry players, one Markdown card and one inter
 | [John Stockton](stockjo01.md) | Free agent | 43 | sourced | [open](stockjo01.html) |
 | [Juan Dixon](dixonju01.md) | Washington Wizards | 27 | sourced | [open](dixonju01.html) |
 | [Junior Harrington](harriju01.md) | Free agent | 25 | silhouette | [open](harriju01.html) |
-| [Kareem Rush](rushka01.md) | Los Angeles Lakers | 24 | sourced | [open](rushka01.html) |
+| [Kareem Rush](rushka01.md) | Los Angeles Lakers | 25 | sourced | [open](rushka01.html) |
 | [Keith McLeod](mcleoke01.md) | Philadelphia 76ers | 25 | silhouette | [open](mcleoke01.html) |
 | [Kenny Anderson](anderke01.md) | Free agent | 35 | sourced | [open](anderke01.html) |
 | [Kevin Ollie](ollieke01.md) | Cleveland Cavaliers | 32 | sourced | [open](ollieke01.html) |
@@ -452,7 +452,7 @@ Card date: **2005-10-29**. 573 registry players, one Markdown card and one inter
 | [Mark Bryant](bryanma01.md) | Free agent | 40 | silhouette | [open](bryanma01.html) |
 | [Mark Madsen](madsema01.md) | Free agent | 29 | sourced | [open](madsema01.html) |
 | [Mark Pope](popema01.md) | Free agent | 33 | silhouette | [open](popema01.html) |
-| [Maurice Taylor](tayloma01.md) | Cleveland Cavaliers | 28 | silhouette | [open](tayloma01.html) |
+| [Maurice Taylor](tayloma01.md) | Cleveland Cavaliers | 29 | silhouette | [open](tayloma01.html) |
 | [Mehmet Okur](okurme01.md) | Miami Heat | 26 | sourced | [open](okurme01.html) |
 | [Michael Bradley](bradlmi01.md) | Los Angeles Clippers | 26 | silhouette | [open](bradlmi01.html) |
 | [Michael Ruffin](ruffimi01.md) | Free agent | 28 | silhouette | [open](ruffimi01.html) |

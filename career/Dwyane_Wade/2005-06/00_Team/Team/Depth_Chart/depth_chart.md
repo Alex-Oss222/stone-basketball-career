@@ -1,6 +1,6 @@
 # Miami Heat working depth chart
 
-**As of:** 2005-10-29 · **Staff decision in force:** 2005-10-26 (training-camp decision)  
+**As of:** 2005-10-30 · **Staff decision in force:** 2005-10-26 (training-camp decision)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 | 5 |
@@ -29,7 +29,7 @@
 
 Outside the rotation (dressing as the twelfth man or on the injured list): DeShawn Stevenson, Eddie Gill, Matt Carroll, Theo Ratliff, Bonzi Wells, Adonal Foyle, Jumaine Jones, Sam Cassell, Kwame Brown.
 
-## Injured list on 2005-10-29
+## Injured list on 2005-10-30
 
 Nobody (no list kept yet: the lists start with the game of 2003-11-12). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 

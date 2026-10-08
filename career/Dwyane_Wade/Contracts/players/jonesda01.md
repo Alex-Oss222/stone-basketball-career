@@ -2,9 +2,9 @@
 
 # Contract | Damon Jones
 
-Known through: 2005-10-29. [Open interactive contract](jonesda01.html#contract) · [Contract history](jonesda01.html#contract-history)
+Known through: 2005-10-30. [Open interactive contract](jonesda01.html#contract) · [Contract history](jonesda01.html#contract-history)
 
-Damon Jones: under contract. Evidence cutoff: 2005-10-29.
+Damon Jones: under contract. Evidence cutoff: 2005-10-30.
 
 ## Current contract
 

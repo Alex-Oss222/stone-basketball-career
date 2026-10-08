@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-10-29",
+  "as_of": "2005-10-30",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-10-29"
+              "2005-10-30"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2005-10-29",
+              "2005-10-30",
               "Current checkpoint",
               "2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets",
               "Recorded",
@@ -338,7 +338,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-29"
+          "value": "2005-10-30"
         },
         {
           "label": "Team",
@@ -576,7 +576,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-29"
+          "value": "2005-10-30"
         },
         {
           "label": "Team",
@@ -787,7 +787,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-29"
+          "value": "2005-10-30"
         },
         {
           "label": "Team",
@@ -989,7 +989,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-29"
+          "value": "2005-10-30"
         },
         {
           "label": "Team",
@@ -1202,7 +1202,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-29"
+          "value": "2005-10-30"
         },
         {
           "label": "Team",
@@ -1406,7 +1406,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-29"
+          "value": "2005-10-30"
         },
         {
           "label": "Team",
@@ -1619,7 +1619,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-29"
+          "value": "2005-10-30"
         },
         {
           "label": "Team",
@@ -1864,7 +1864,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-29"
+          "value": "2005-10-30"
         },
         {
           "label": "Team",
@@ -1881,7 +1881,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "7 closed game records in 2005-06 through 2005-10-29. Competitions remain separate.",
+      "summary": "7 closed game records in 2005-06 through 2005-10-30. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2163,7 +2163,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-29"
+          "value": "2005-10-30"
         },
         {
           "label": "Team",
