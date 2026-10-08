@@ -2,9 +2,9 @@
 
 # Contract | Ron Artest
 
-Known through: 2005-06-19. [Open interactive contract](artesro01.html#contract) · [Contract history](artesro01.html#contract-history)
+Known through: 2005-06-26. [Open interactive contract](artesro01.html#contract) · [Contract history](artesro01.html#contract-history)
 
-Ron Artest: under contract unverified. Evidence cutoff: 2005-06-19.
+Ron Artest: under contract unverified. Evidence cutoff: 2005-06-26.
 
 ## Current contract
 

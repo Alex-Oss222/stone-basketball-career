@@ -2,9 +2,9 @@
 
 # Contract | Brendan Haywood
 
-Known through: 2005-06-19. [Open interactive contract](haywobr01.html#contract) · [Contract history](haywobr01.html#contract-history)
+Known through: 2005-06-26. [Open interactive contract](haywobr01.html#contract) · [Contract history](haywobr01.html#contract-history)
 
-Brendan Haywood: under rookie contract. Evidence cutoff: 2005-06-19.
+Brendan Haywood: under rookie contract. Evidence cutoff: 2005-06-26.
 
 ## Current contract
 
