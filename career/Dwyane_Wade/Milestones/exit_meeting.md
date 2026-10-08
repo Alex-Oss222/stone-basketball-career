@@ -69,7 +69,6 @@ The actual season close and an agreed exit-meeting date.
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json)
-- [Rule](../../../docs/front_office.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json)

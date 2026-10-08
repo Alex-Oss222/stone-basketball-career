@@ -94,16 +94,6 @@
               }
             ],
             [
-              "2005-06-23",
-              "Staff rotation review",
-              "Coaching staff (same rule for every player)",
-              "Scheduled; a role request may be logged before it",
-              {
-                "label": "Rule",
-                "href": "../../../docs/front_office.md"
-              }
-            ],
-            [
               "By 2005-10-31",
               "Fourth-year (2006-07) team option on the rookie contract",
               "Miami decides",
@@ -372,10 +362,6 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
-        },
-        {
-          "label": "Rule",
-          "href": "../../../docs/front_office.md"
         },
         {
           "label": "Transaction record",
@@ -1016,10 +1002,6 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
         },
         {
-          "label": "Rule",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Transaction record",
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
         },
@@ -1629,10 +1611,6 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
-        },
-        {
-          "label": "Rule",
-          "href": "../../../docs/front_office.md"
         },
         {
           "label": "Transaction record",
@@ -2285,10 +2263,6 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
         },
         {
-          "label": "Rule",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Transaction record",
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
         },
@@ -2900,10 +2874,6 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
-        },
-        {
-          "label": "Rule",
-          "href": "../../../docs/front_office.md"
         },
         {
           "label": "Transaction record",
@@ -3563,10 +3533,6 @@
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
         },
         {
-          "label": "Rule",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Transaction record",
           "href": "../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json"
         },
@@ -4178,10 +4144,6 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
-        },
-        {
-          "label": "Rule",
-          "href": "../../../docs/front_office.md"
         },
         {
           "label": "Transaction record",
@@ -4935,10 +4897,6 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
-        },
-        {
-          "label": "Rule",
-          "href": "../../../docs/front_office.md"
         },
         {
           "label": "Transaction record",
@@ -6597,10 +6555,6 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
-        },
-        {
-          "label": "Rule",
-          "href": "../../../docs/front_office.md"
         },
         {
           "label": "Transaction record",

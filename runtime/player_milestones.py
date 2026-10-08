@@ -484,6 +484,9 @@ def _season_gates(c) -> list:
         from datetime import timedelta
         while day.isoformat() <= c.on:
             day += timedelta(days=REVIEW_DAYS)
+        from .seasons import dates as season_dates
+        if day.isoformat() > season_dates(c.season.name, c.root)["regular_season_end"]:
+            raise ValueError("reviews run in the regular season only")
         rows.append([day.isoformat(), "Staff rotation review", "Coaching staff (same rule for every player)",
                      "Scheduled; a role request may be logged before it", c.link(c.root / "docs/front_office.md", "Rule")])
     except (OSError, KeyError, ValueError):
