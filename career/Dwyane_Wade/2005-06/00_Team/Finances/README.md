@@ -2,7 +2,7 @@
 
 <!-- team-status:start -->
 
-2005-06 through 2012-13 · AI/GM record · live position from [finance.json](finance.json) (as of 2005-10-31), shown on 2005-11-04
+2005-06 through 2012-13 · AI/GM record · live position from [finance.json](finance.json) (as of 2005-10-31), shown on 2005-11-05
 
 Counted salary $67,315,693 against the published $49,500,000 cap: cap room -$17,815,693 (training camp). Tax threshold: not published at this date. Contract guarantee review: 2006-01-07 keep-or-waive, 2006-01-10 kept contracts guaranteed.
 

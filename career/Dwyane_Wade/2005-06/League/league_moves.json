@@ -1305,12 +1305,299 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 5.3 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-clear-owensan01",
+   "date": "2005-11-05",
+   "kind": "clear",
+   "player": "Andre Owens",
+   "bbr_id": "owensan01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Andre Owens",
+    "bbr_id": "owensan01",
+    "position": "PG",
+    "games": 23,
+    "minutes": 210
+   },
+   "contract": null,
+   "note": "cleared waivers from Dallas Mavericks: a free agent",
+   "waiver": "2005-06-market-2005-11-03-waive-owensan01"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-claim-martike02",
+   "date": "2005-11-05",
+   "kind": "claim",
+   "player": "Kevin Martin",
+   "bbr_id": "martike02",
+   "from": null,
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Kevin Martin",
+    "bbr_id": "martike02",
+    "position": "SG",
+    "games": 72,
+    "minutes": 1913
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from New York Knicks (worst record first)",
+   "waiver": "2005-06-market-2005-11-03-waive-martike02"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-claim-podkopa01",
+   "date": "2005-11-05",
+   "kind": "claim",
+   "player": "Pavel Podkolzin",
+   "bbr_id": "podkopa01",
+   "from": null,
+   "to": "New Orleans/Oklahoma City Hornets",
+   "role": {
+    "player_id": "Pavel Podkolzin",
+    "bbr_id": "podkopa01",
+    "position": "C",
+    "games": 1,
+    "minutes": 18
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Philadelphia 76ers (worst record first)",
+   "waiver": "2005-06-market-2005-11-03-waive-podkopa01"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-claim-mbengdj01",
+   "date": "2005-11-05",
+   "kind": "claim",
+   "player": "D.J. Mbenga",
+   "bbr_id": "mbengdj01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "D.J. Mbenga",
+    "bbr_id": "mbengdj01",
+    "position": "C",
+    "games": 43,
+    "minutes": 237
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from San Antonio Spurs (worst record first)",
+   "waiver": "2005-06-market-2005-11-03-waive-mbengdj01"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-claim-frahmri01",
+   "date": "2005-11-05",
+   "kind": "claim",
+   "player": "Richie Frahm",
+   "bbr_id": "frahmri01",
+   "from": null,
+   "to": "Utah Jazz",
+   "role": {
+    "player_id": "Richie Frahm",
+    "bbr_id": "frahmri01",
+    "position": "SG",
+    "games": 33,
+    "minutes": 342
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Seattle SuperSonics (worst record first)",
+   "waiver": "2005-06-market-2005-11-03-waive-frahmri01"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-clear-schenlu01",
+   "date": "2005-11-05",
+   "kind": "clear",
+   "player": "Luke Schenscher",
+   "bbr_id": "schenlu01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Luke Schenscher",
+    "bbr_id": "schenlu01",
+    "position": "C",
+    "games": 20,
+    "minutes": 149
+   },
+   "contract": null,
+   "note": "cleared waivers from Toronto Raptors: a free agent",
+   "waiver": "2005-06-market-2005-11-03-waive-schenlu01"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-waive-walshma01",
+   "date": "2005-11-05",
+   "kind": "waive",
+   "player": "walshma01",
+   "bbr_id": "walshma01",
+   "from": "Charlotte Bobcats",
+   "to": null,
+   "role": {
+    "player_id": "walshma01",
+    "bbr_id": "walshma01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-07"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-rest_of_season-collija03",
+   "date": "2005-11-05",
+   "kind": "rest_of_season",
+   "player": "Jarron Collins",
+   "bbr_id": "collija03",
+   "from": null,
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Jarron Collins",
+    "bbr_id": "collija03",
+    "position": "C",
+    "games": 79,
+    "minutes": 1730
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.73 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-waive-allenma01",
+   "date": "2005-11-05",
+   "kind": "waive",
+   "player": "Malik Allen",
+   "bbr_id": "allenma01",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Malik Allen",
+    "bbr_id": "allenma01",
+    "position": "PF",
+    "games": 54,
+    "minutes": 701
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-07"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-rest_of_season-goldwan01",
+   "date": "2005-11-05",
+   "kind": "rest_of_season",
+   "player": "Anthony Goldwire",
+   "bbr_id": "goldwan01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Anthony Goldwire",
+    "bbr_id": "goldwan01",
+    "position": "PG",
+    "games": 3,
+    "minutes": 22
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.64 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-waive-fitchge01",
+   "date": "2005-11-05",
+   "kind": "waive",
+   "player": "fitchge01",
+   "bbr_id": "fitchge01",
+   "from": "New Orleans/Oklahoma City Hornets",
+   "to": null,
+   "role": {
+    "player_id": "fitchge01",
+    "bbr_id": "fitchge01",
+    "position": "SF",
+    "games": 12,
+    "minutes": 239
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-07"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-rest_of_season-tsakaja01",
+   "date": "2005-11-05",
+   "kind": "rest_of_season",
+   "player": "Jake Tsakalidis",
+   "bbr_id": "tsakaja01",
+   "from": null,
+   "to": "New Orleans/Oklahoma City Hornets",
+   "role": {
+    "player_id": "Jake Tsakalidis",
+    "bbr_id": "tsakaja01",
+    "position": "C",
+    "games": 51,
+    "minutes": 732
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.65 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-waive-johnsam01",
+   "date": "2005-11-05",
+   "kind": "waive",
+   "player": "Amir Johnson",
+   "bbr_id": "johnsam01",
+   "from": "Utah Jazz",
+   "to": null,
+   "role": {
+    "player_id": "Amir Johnson",
+    "bbr_id": "johnsam01",
+    "position": "SF",
+    "games": 3,
+    "minutes": 39
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-07"
+  },
+  {
+   "id": "2005-06-market-2005-11-05-rest_of_season-skinnbr01",
+   "date": "2005-11-05",
+   "kind": "rest_of_season",
+   "player": "Brian Skinner",
+   "bbr_id": "skinnbr01",
+   "from": null,
+   "to": "Utah Jazz",
+   "role": {
+    "player_id": "Brian Skinner",
+    "bbr_id": "skinnbr01",
+    "position": "C",
+    "games": 65,
+    "minutes": 944
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.39 x fit"
   }
  ],
  "market_days": [
   "2005-11-01",
   "2005-11-02",
   "2005-11-03",
-  "2005-11-04"
+  "2005-11-04",
+  "2005-11-05"
  ]
 }
