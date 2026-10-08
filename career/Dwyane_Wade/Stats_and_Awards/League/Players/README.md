@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-10-22**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-10-23**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -436,7 +436,7 @@ Card date: **2005-10-22**. 573 registry players, one Markdown card and one inter
 | [Juwan Howard](howarju01.md) | Golden State Warriors | 32 | sourced | [open](howarju01.html) |
 | [Kaniel Dickens](dickeka01.md) | Free agent | 27 | silhouette | [open](dickeka01.html) |
 | [Karl Malone](malonka01.md) | Free agent | 42 | sourced | [open](malonka01.html) |
-| [Keith Van Horn](vanhoke01.md) | San Antonio Spurs | 29 | sourced | [open](vanhoke01.html) |
+| [Keith Van Horn](vanhoke01.md) | San Antonio Spurs | 30 | sourced | [open](vanhoke01.html) |
 | [Kenny Thomas](thomake01.md) | Philadelphia 76ers | 28 | sourced | [open](thomake01.html) |
 | [Kenyon Martin](martike01.md) | New Jersey Nets | 27 | sourced | [open](martike01.html) |
 | [Kevin Garnett](garneke01.md) | Minnesota Timberwolves | 29 | sourced | [open](garneke01.html) |

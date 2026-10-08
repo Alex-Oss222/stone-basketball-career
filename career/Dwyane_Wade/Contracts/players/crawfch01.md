@@ -2,9 +2,9 @@
 
 # Contract | Chris Crawford
 
-Known through: 2005-10-22. [Open interactive contract](crawfch01.html#contract) · [Contract history](crawfch01.html#contract-history)
+Known through: 2005-10-23. [Open interactive contract](crawfch01.html#contract) · [Contract history](crawfch01.html#contract-history)
 
-Chris Crawford: under contract. Evidence cutoff: 2005-10-22.
+Chris Crawford: under contract. Evidence cutoff: 2005-10-23.
 
 ## Current contract
 

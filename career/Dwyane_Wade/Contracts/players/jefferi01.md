@@ -2,9 +2,9 @@
 
 # Contract | Richard Jefferson
 
-Known through: 2005-10-22. [Open interactive contract](jefferi01.html#contract) · [Contract history](jefferi01.html#contract-history)
+Known through: 2005-10-23. [Open interactive contract](jefferi01.html#contract) · [Contract history](jefferi01.html#contract-history)
 
-Richard Jefferson: under contract. Evidence cutoff: 2005-10-22.
+Richard Jefferson: under contract. Evidence cutoff: 2005-10-23.
 
 ## Current contract
 

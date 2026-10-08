@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-10-22 · Miami Heat · active
+Career date: 2005-10-23 · Miami Heat · active
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -18,7 +18,7 @@ Activation: The club opens camp and records participation, evaluation or an actu
 | Participation | under_contract |
 | Current role | Starting SG; staff plan 34 minutes |
 | Staff rotation minutes | N/A |
-| Closed preseason games | 4 |
+| Closed preseason games | 5 |
 | Camp availability | No camp injury restriction recorded |
 
 ## Current depth chart
@@ -38,7 +38,7 @@ Snapshot: 2005-10-01. Draft rights and unassigned arrivals are not assigned minu
 | Item | Evidence needed | Current position |
 | --- | --- | --- |
 | Expected role | Attributed coach statement | Starting SG; staff plan 34 minutes |
-| Actual use | Closed preseason boxes | 4 closed games |
+| Actual use | Closed preseason boxes | 5 closed games |
 | Promised minutes | Written promise and date | Not recorded |
 | Promise review | Dated review against rotation | Not recorded |
 | Defensive evaluation | Dated staff assessment | Steals and blocks alone do not establish overall defense |
@@ -81,4 +81,5 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
 - [Closed game](../2005-06/05_Preseason/Game_3.md)
 - [Closed game](../2005-06/05_Preseason/Game_4.md)
+- [Closed game](../2005-06/05_Preseason/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)
