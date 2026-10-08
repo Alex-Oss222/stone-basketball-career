@@ -716,10 +716,384 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 5.95 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-clear-grahast01",
+   "date": "2005-11-03",
+   "kind": "clear",
+   "player": "Stephen Graham",
+   "bbr_id": "grahast01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Stephen Graham",
+    "bbr_id": "grahast01",
+    "position": "SG",
+    "games": 22,
+    "minutes": 175
+   },
+   "contract": null,
+   "note": "cleared waivers from Dallas Mavericks: a free agent",
+   "waiver": "2005-06-market-2005-11-01-waive-grahast01"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-clear-headlu01",
+   "date": "2005-11-03",
+   "kind": "clear",
+   "player": "Luther Head",
+   "bbr_id": "headlu01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Luther Head",
+    "bbr_id": "headlu01",
+    "position": "SG",
+    "games": 80,
+    "minutes": 2310
+   },
+   "contract": null,
+   "note": "cleared waivers from New York Knicks: a free agent",
+   "waiver": "2005-06-market-2005-11-01-waive-headlu01"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-clear-duhonch01",
+   "date": "2005-11-03",
+   "kind": "clear",
+   "player": "Chris Duhon",
+   "bbr_id": "duhonch01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Chris Duhon",
+    "bbr_id": "duhonch01",
+    "position": "PG",
+    "games": 74,
+    "minutes": 2155
+   },
+   "contract": null,
+   "note": "cleared waivers from Orlando Magic: a free agent",
+   "waiver": "2005-06-market-2005-11-01-waive-duhonch01"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-clear-bellch01",
+   "date": "2005-11-03",
+   "kind": "clear",
+   "player": "Charlie Bell",
+   "bbr_id": "bellch01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Charlie Bell",
+    "bbr_id": "bellch01",
+    "position": "SG",
+    "games": 59,
+    "minutes": 1283
+   },
+   "contract": null,
+   "note": "cleared waivers from Philadelphia 76ers: a free agent",
+   "waiver": "2005-06-market-2005-11-01-waive-bellch01"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-clear-barroea01",
+   "date": "2005-11-03",
+   "kind": "clear",
+   "player": "barroea01",
+   "bbr_id": "barroea01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "barroea01",
+    "bbr_id": "barroea01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 45
+   },
+   "contract": null,
+   "note": "cleared waivers from San Antonio Spurs: a free agent",
+   "waiver": "2005-06-market-2005-11-01-waive-barroea01"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-clear-rebraze01",
+   "date": "2005-11-03",
+   "kind": "clear",
+   "player": "Željko Rebrača",
+   "bbr_id": "rebraze01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Željko Rebrača",
+    "bbr_id": "rebraze01",
+    "position": "C",
+    "games": 29,
+    "minutes": 412
+   },
+   "contract": null,
+   "note": "cleared waivers from Seattle SuperSonics: a free agent",
+   "waiver": "2005-06-market-2005-11-01-waive-rebraze01"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-clear-butlera01",
+   "date": "2005-11-03",
+   "kind": "clear",
+   "player": "Rasual Butler",
+   "bbr_id": "butlera01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Rasual Butler",
+    "bbr_id": "butlera01",
+    "position": "SF",
+    "games": 79,
+    "minutes": 1875
+   },
+   "contract": null,
+   "note": "cleared waivers from Toronto Raptors: a free agent",
+   "waiver": "2005-06-market-2005-11-01-waive-butlera01"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-waive-owensan01",
+   "date": "2005-11-03",
+   "kind": "waive",
+   "player": "Andre Owens",
+   "bbr_id": "owensan01",
+   "from": "Dallas Mavericks",
+   "to": null,
+   "role": {
+    "player_id": "Andre Owens",
+    "bbr_id": "owensan01",
+    "position": "PG",
+    "games": 23,
+    "minutes": 210
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-05"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-rest_of_season-hendeal01",
+   "date": "2005-11-03",
+   "kind": "rest_of_season",
+   "player": "Alan Henderson",
+   "bbr_id": "hendeal01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "role": {
+    "player_id": "Alan Henderson",
+    "bbr_id": "hendeal01",
+    "position": "C",
+    "games": 51,
+    "minutes": 531
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.59 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-waive-martike02",
+   "date": "2005-11-03",
+   "kind": "waive",
+   "player": "Kevin Martin",
+   "bbr_id": "martike02",
+   "from": "New York Knicks",
+   "to": null,
+   "role": {
+    "player_id": "Kevin Martin",
+    "bbr_id": "martike02",
+    "position": "SG",
+    "games": 72,
+    "minutes": 1913
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-05"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-rest_of_season-kukocto01",
+   "date": "2005-11-03",
+   "kind": "rest_of_season",
+   "player": "Toni Kukoč",
+   "bbr_id": "kukocto01",
+   "from": null,
+   "to": "New York Knicks",
+   "role": {
+    "player_id": "Toni Kukoč",
+    "bbr_id": "kukocto01",
+    "position": "PF",
+    "games": 65,
+    "minutes": 1018
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.74 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-waive-podkopa01",
+   "date": "2005-11-03",
+   "kind": "waive",
+   "player": "Pavel Podkolzin",
+   "bbr_id": "podkopa01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Pavel Podkolzin",
+    "bbr_id": "podkopa01",
+    "position": "C",
+    "games": 1,
+    "minutes": 18
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-05"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-rest_of_season-bellra01",
+   "date": "2005-11-03",
+   "kind": "rest_of_season",
+   "player": "Raja Bell",
+   "bbr_id": "bellra01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Raja Bell",
+    "bbr_id": "bellra01",
+    "position": "SG",
+    "games": 79,
+    "minutes": 2959
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.74 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-waive-mbengdj01",
+   "date": "2005-11-03",
+   "kind": "waive",
+   "player": "D.J. Mbenga",
+   "bbr_id": "mbengdj01",
+   "from": "San Antonio Spurs",
+   "to": null,
+   "role": {
+    "player_id": "D.J. Mbenga",
+    "bbr_id": "mbengdj01",
+    "position": "C",
+    "games": 43,
+    "minutes": 237
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-05"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-rest_of_season-johnsde03",
+   "date": "2005-11-03",
+   "kind": "rest_of_season",
+   "player": "DerMarr Johnson",
+   "bbr_id": "johnsde03",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "DerMarr Johnson",
+    "bbr_id": "johnsde03",
+    "position": "SG",
+    "games": 58,
+    "minutes": 924
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.56 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-waive-frahmri01",
+   "date": "2005-11-03",
+   "kind": "waive",
+   "player": "Richie Frahm",
+   "bbr_id": "frahmri01",
+   "from": "Seattle SuperSonics",
+   "to": null,
+   "role": {
+    "player_id": "Richie Frahm",
+    "bbr_id": "frahmri01",
+    "position": "SG",
+    "games": 33,
+    "minutes": 342
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-05"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-rest_of_season-vaughja01",
+   "date": "2005-11-03",
+   "kind": "rest_of_season",
+   "player": "Jacque Vaughn",
+   "bbr_id": "vaughja01",
+   "from": null,
+   "to": "Seattle SuperSonics",
+   "role": {
+    "player_id": "Jacque Vaughn",
+    "bbr_id": "vaughja01",
+    "position": "SG",
+    "games": 80,
+    "minutes": 1234
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.39 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-waive-schenlu01",
+   "date": "2005-11-03",
+   "kind": "waive",
+   "player": "Luke Schenscher",
+   "bbr_id": "schenlu01",
+   "from": "Toronto Raptors",
+   "to": null,
+   "role": {
+    "player_id": "Luke Schenscher",
+    "bbr_id": "schenlu01",
+    "position": "C",
+    "games": 20,
+    "minutes": 149
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-05"
+  },
+  {
+   "id": "2005-06-market-2005-11-03-rest_of_season-diopde01",
+   "date": "2005-11-03",
+   "kind": "rest_of_season",
+   "player": "DeSagana Diop",
+   "bbr_id": "diopde01",
+   "from": null,
+   "to": "Toronto Raptors",
+   "role": {
+    "player_id": "DeSagana Diop",
+    "bbr_id": "diopde01",
+    "position": "C",
+    "games": 81,
+    "minutes": 1510
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.33 x fit"
   }
  ],
  "market_days": [
   "2005-11-01",
-  "2005-11-02"
+  "2005-11-02",
+  "2005-11-03"
  ]
 }
