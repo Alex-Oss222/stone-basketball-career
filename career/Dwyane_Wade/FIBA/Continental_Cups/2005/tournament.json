@@ -1,0 +1,463 @@
+{
+ "schema_version": 1,
+ "kind": "fiba_tournament_record",
+ "edition_id": "continental_qualifier_2005",
+ "family": "Continental_Cups",
+ "edition": "2005",
+ "name": "2005 FIBA Americas Championship for Men",
+ "game_type": "continental_qualifier",
+ "rules": "runtime/national.py; runtime/fiba_tournament.py; runtime/national_engine.py",
+ "selection": null,
+ "rosters": null,
+ "games": {
+  "1": {
+   "away": "Panama",
+   "away_slot": null,
+   "date": "2005-08-24",
+   "home": "United States",
+   "home_slot": null,
+   "number": 1,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "2": {
+   "away": "Brazil",
+   "away_slot": null,
+   "date": "2005-08-24",
+   "home": "Venezuela",
+   "home_slot": null,
+   "number": 2,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "3": {
+   "away": "United States",
+   "away_slot": null,
+   "date": "2005-08-25",
+   "home": "Brazil",
+   "home_slot": null,
+   "number": 3,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "4": {
+   "away": "Venezuela",
+   "away_slot": null,
+   "date": "2005-08-25",
+   "home": "Canada",
+   "home_slot": null,
+   "number": 4,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "5": {
+   "away": "Brazil",
+   "away_slot": null,
+   "date": "2005-08-26",
+   "home": "Panama",
+   "home_slot": null,
+   "number": 5,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "6": {
+   "away": "Canada",
+   "away_slot": null,
+   "date": "2005-08-26",
+   "home": "United States",
+   "home_slot": null,
+   "number": 6,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "7": {
+   "away": "United States",
+   "away_slot": null,
+   "date": "2005-08-27",
+   "home": "Venezuela",
+   "home_slot": null,
+   "number": 7,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "8": {
+   "away": "Canada",
+   "away_slot": null,
+   "date": "2005-08-27",
+   "home": "Panama",
+   "home_slot": null,
+   "number": 8,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "9": {
+   "away": "Canada",
+   "away_slot": null,
+   "date": "2005-08-28",
+   "home": "Brazil",
+   "home_slot": null,
+   "number": 9,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "10": {
+   "away": "Venezuela",
+   "away_slot": null,
+   "date": "2005-08-28",
+   "home": "Panama",
+   "home_slot": null,
+   "number": 10,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "11": {
+   "away": "Mexico",
+   "away_slot": null,
+   "date": "2005-08-24",
+   "home": "Argentina",
+   "home_slot": null,
+   "number": 11,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "12": {
+   "away": "Dominican Republic",
+   "away_slot": null,
+   "date": "2005-08-24",
+   "home": "Uruguay",
+   "home_slot": null,
+   "number": 12,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "13": {
+   "away": "Uruguay",
+   "away_slot": null,
+   "date": "2005-08-25",
+   "home": "Mexico",
+   "home_slot": null,
+   "number": 13,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "14": {
+   "away": "Argentina",
+   "away_slot": null,
+   "date": "2005-08-25",
+   "home": "Puerto Rico",
+   "home_slot": null,
+   "number": 14,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "15": {
+   "away": "Puerto Rico",
+   "away_slot": null,
+   "date": "2005-08-26",
+   "home": "Uruguay",
+   "home_slot": null,
+   "number": 15,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "16": {
+   "away": "Mexico",
+   "away_slot": null,
+   "date": "2005-08-26",
+   "home": "Dominican Republic",
+   "home_slot": null,
+   "number": 16,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "17": {
+   "away": "Uruguay",
+   "away_slot": null,
+   "date": "2005-08-27",
+   "home": "Argentina",
+   "home_slot": null,
+   "number": 17,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "18": {
+   "away": "Dominican Republic",
+   "away_slot": null,
+   "date": "2005-08-27",
+   "home": "Puerto Rico",
+   "home_slot": null,
+   "number": 18,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "19": {
+   "away": "Puerto Rico",
+   "away_slot": null,
+   "date": "2005-08-28",
+   "home": "Mexico",
+   "home_slot": null,
+   "number": 19,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "20": {
+   "away": "Argentina",
+   "away_slot": null,
+   "date": "2005-08-28",
+   "home": "Dominican Republic",
+   "home_slot": null,
+   "number": 20,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "21": {
+   "away": null,
+   "away_slot": "A4",
+   "date": "2005-08-30",
+   "home": null,
+   "home_slot": "B1",
+   "number": 21,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "22": {
+   "away": null,
+   "away_slot": "B4",
+   "date": "2005-08-30",
+   "home": null,
+   "home_slot": "A1",
+   "number": 22,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "23": {
+   "away": null,
+   "away_slot": "B3",
+   "date": "2005-08-30",
+   "home": null,
+   "home_slot": "A2",
+   "number": 23,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "24": {
+   "away": null,
+   "away_slot": "A3",
+   "date": "2005-08-30",
+   "home": null,
+   "home_slot": "B2",
+   "number": 24,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "25": {
+   "away": null,
+   "away_slot": "A2",
+   "date": "2005-08-31",
+   "home": null,
+   "home_slot": "B4",
+   "number": 25,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "26": {
+   "away": null,
+   "away_slot": "A1",
+   "date": "2005-08-31",
+   "home": null,
+   "home_slot": "B3",
+   "number": 26,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "27": {
+   "away": null,
+   "away_slot": "B1",
+   "date": "2005-08-31",
+   "home": null,
+   "home_slot": "A3",
+   "number": 27,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "28": {
+   "away": null,
+   "away_slot": "B2",
+   "date": "2005-08-31",
+   "home": null,
+   "home_slot": "A4",
+   "number": 28,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "29": {
+   "away": null,
+   "away_slot": "A2",
+   "date": "2005-09-01",
+   "home": null,
+   "home_slot": "B1",
+   "number": 29,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "30": {
+   "away": null,
+   "away_slot": "A3",
+   "date": "2005-09-01",
+   "home": null,
+   "home_slot": "B4",
+   "number": 30,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "31": {
+   "away": null,
+   "away_slot": "A4",
+   "date": "2005-09-01",
+   "home": null,
+   "home_slot": "B3",
+   "number": 31,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "32": {
+   "away": null,
+   "away_slot": "A1",
+   "date": "2005-09-01",
+   "home": null,
+   "home_slot": "B2",
+   "number": 32,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "33": {
+   "away": null,
+   "away_slot": "B4",
+   "date": "2005-09-02",
+   "home": null,
+   "home_slot": "A4",
+   "number": 33,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "34": {
+   "away": null,
+   "away_slot": "B1",
+   "date": "2005-09-02",
+   "home": null,
+   "home_slot": "A1",
+   "number": 34,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "35": {
+   "away": null,
+   "away_slot": "B3",
+   "date": "2005-09-02",
+   "home": null,
+   "home_slot": "A3",
+   "number": 35,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "36": {
+   "away": null,
+   "away_slot": "B2",
+   "date": "2005-09-02",
+   "home": null,
+   "home_slot": "A2",
+   "number": 36,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "37": {
+   "away": null,
+   "away_slot": "R3",
+   "date": "2005-09-03",
+   "home": null,
+   "home_slot": "R2",
+   "number": 37,
+   "stage": "semifinal",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "38": {
+   "away": null,
+   "away_slot": "R4",
+   "date": "2005-09-03",
+   "home": null,
+   "home_slot": "R1",
+   "number": 38,
+   "stage": "semifinal",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "39": {
+   "away": null,
+   "away_slot": "L:37",
+   "date": "2005-09-04",
+   "home": null,
+   "home_slot": "L:38",
+   "number": 39,
+   "stage": "third_place",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  "40": {
+   "away": null,
+   "away_slot": "W:37",
+   "date": "2005-09-04",
+   "home": null,
+   "home_slot": "W:38",
+   "number": 40,
+   "stage": "final",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  }
+ },
+ "draws": {},
+ "awards": null,
+ "closed": false,
+ "groups": {
+  "A": {
+   "carry_from": [],
+   "stage": "group_A",
+   "teams": [
+    "United States",
+    "Panama",
+    "Venezuela",
+    "Brazil",
+    "Canada"
+   ]
+  },
+  "B": {
+   "carry_from": [],
+   "stage": "group_B",
+   "teams": [
+    "Argentina",
+    "Mexico",
+    "Uruguay",
+    "Dominican Republic",
+    "Puerto Rico"
+   ]
+  },
+  "R": {
+   "carry_from": [
+    "A",
+    "B"
+   ],
+   "stage": "group_R",
+   "teams": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+   ]
+  }
+ },
+ "field": {
+  "replaced": {},
+  "rule": "runtime/national.resolve_field: simulated qualifiers take the real slots in order"
+ },
+ "roster_sources": {}
+}
