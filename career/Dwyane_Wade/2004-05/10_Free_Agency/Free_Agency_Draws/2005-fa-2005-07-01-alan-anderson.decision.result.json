@@ -1,0 +1,16 @@
+{
+ "date": "2005-07-01",
+ "decider": "Alan Anderson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-alan-anderson",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.150445,
+  "Detroit Pistons": 0.095449,
+  "Houston Rockets": 0.046229,
+  "Los Angeles Clippers": 0.048842,
+  "Los Angeles Lakers": 0.009035,
+  "wait": 0.65
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-01: which offer does Alan Anderson accept (Atlanta Hawks $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1), or does he wait?"
+}

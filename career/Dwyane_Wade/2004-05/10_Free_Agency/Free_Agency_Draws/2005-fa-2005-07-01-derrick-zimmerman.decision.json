@@ -1,0 +1,22 @@
+{
+ "event_id": "2005-fa-2005-07-01-derrick-zimmerman",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Derrick Zimmerman accept (Dallas Mavericks $398,762 x 1, Indiana Pacers $398,762 x 1, Los Angeles Lakers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Miami Heat $398,762 x 1, Minnesota Timberwolves $398,762 x 1, Philadelphia 76ers $398,762 x 1, Phoenix Suns $398,762 x 1, Sacramento Kings $398,762 x 1, San Antonio Spurs $398,762 x 1, Seattle SuperSonics $398,762 x 1, Utah Jazz $398,762 x 1), or does he wait?",
+ "decider": "Derrick Zimmerman (simulated player, engine draw)",
+ "options": {
+  "Dallas Mavericks": 0.05622,
+  "Indiana Pacers": 0.01121,
+  "Los Angeles Lakers": 0.006936,
+  "Memphis Grizzlies": 0.016765,
+  "Miami Heat": 0.084291,
+  "Minnesota Timberwolves": 0.018206,
+  "Philadelphia 76ers": 0.012174,
+  "Phoenix Suns": 0.056502,
+  "Sacramento Kings": 0.008557,
+  "San Antonio Spurs": 0.056361,
+  "Seattle SuperSonics": 0.021365,
+  "Utah Jazz": 0.001414,
+  "wait": 0.649999
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.350; priority money; utility Dallas Mavericks 52.0, Indiana Pacers 45.6, Los Angeles Lakers 43.7, Memphis Grizzlies 47.2, Miami Heat 53.6, Minnesota Timberwolves 47.5, Philadelphia 76ers 45.9, Phoenix Suns 52.0, Sacramento Kings 44.5, San Antonio Spurs 52.0, Seattle SuperSonics 48.2, Utah Jazz 37.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

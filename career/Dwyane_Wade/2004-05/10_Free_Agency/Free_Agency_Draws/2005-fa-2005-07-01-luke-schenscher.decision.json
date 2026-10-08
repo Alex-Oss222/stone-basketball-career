@@ -1,0 +1,17 @@
+{
+ "event_id": "2005-fa-2005-07-01-luke-schenscher",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Luke Schenscher accept (Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, Toronto Raptors $398,762 x 1), or does he wait?",
+ "decider": "Luke Schenscher (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 6.1e-05,
+  "Chicago Bulls": 0.030781,
+  "Milwaukee Bucks": 0.001043,
+  "New Jersey Nets": 0.000471,
+  "New Orleans Hornets": 0.000334,
+  "New York Knicks": 0.000941,
+  "Toronto Raptors": 0.316369,
+  "wait": 0.65
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.350; priority winning; utility Charlotte Bobcats 33.9, Chicago Bulls 58.8, Milwaukee Bucks 45.3, New Jersey Nets 42.1, New Orleans Hornets 40.7, New York Knicks 44.9, Toronto Raptors 68.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

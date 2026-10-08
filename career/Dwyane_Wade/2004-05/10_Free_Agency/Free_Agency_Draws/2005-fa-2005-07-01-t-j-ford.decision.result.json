@@ -1,0 +1,24 @@
+{
+ "date": "2005-07-01",
+ "decider": "T.J. Ford (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-t-j-ford",
+ "kind": "decision",
+ "options": {
+  "Dallas Mavericks": 0.052912,
+  "Indiana Pacers": 0.012854,
+  "Los Angeles Lakers": 0.013959,
+  "Memphis Grizzlies": 0.010471,
+  "Miami Heat": 0.080933,
+  "Minnesota Timberwolves": 0.021459,
+  "New Jersey Nets": 0.005034,
+  "Philadelphia 76ers": 0.013994,
+  "Phoenix Suns": 0.070713,
+  "Sacramento Kings": 0.010111,
+  "San Antonio Spurs": 0.037661,
+  "Seattle SuperSonics": 0.019032,
+  "Utah Jazz": 0.000868,
+  "wait": 0.649999
+ },
+ "outcome": "Minnesota Timberwolves",
+ "question": "2005 free agency, 2005-07-01: which offer does T.J. Ford accept (Dallas Mavericks $719,373 x 1, Indiana Pacers $719,373 x 1, Los Angeles Lakers $719,373 x 1, Memphis Grizzlies $719,373 x 1, Miami Heat $719,373 x 1, Minnesota Timberwolves $719,373 x 1, New Jersey Nets $719,373 x 1, Philadelphia 76ers $719,373 x 1, Phoenix Suns $719,373 x 1, Sacramento Kings $719,373 x 1, San Antonio Spurs $719,373 x 1, Seattle SuperSonics $719,373 x 1, Utah Jazz $719,373 x 1), or does he wait?"
+}

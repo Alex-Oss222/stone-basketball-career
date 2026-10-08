@@ -1,0 +1,23 @@
+{
+ "date": "2005-07-01",
+ "decider": "Derrick Zimmerman (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-derrick-zimmerman",
+ "kind": "decision",
+ "options": {
+  "Dallas Mavericks": 0.05622,
+  "Indiana Pacers": 0.01121,
+  "Los Angeles Lakers": 0.006936,
+  "Memphis Grizzlies": 0.016765,
+  "Miami Heat": 0.084291,
+  "Minnesota Timberwolves": 0.018206,
+  "Philadelphia 76ers": 0.012174,
+  "Phoenix Suns": 0.056502,
+  "Sacramento Kings": 0.008557,
+  "San Antonio Spurs": 0.056361,
+  "Seattle SuperSonics": 0.021365,
+  "Utah Jazz": 0.001414,
+  "wait": 0.649999
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-01: which offer does Derrick Zimmerman accept (Dallas Mavericks $398,762 x 1, Indiana Pacers $398,762 x 1, Los Angeles Lakers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Miami Heat $398,762 x 1, Minnesota Timberwolves $398,762 x 1, Philadelphia 76ers $398,762 x 1, Phoenix Suns $398,762 x 1, Sacramento Kings $398,762 x 1, San Antonio Spurs $398,762 x 1, Seattle SuperSonics $398,762 x 1, Utah Jazz $398,762 x 1), or does he wait?"
+}

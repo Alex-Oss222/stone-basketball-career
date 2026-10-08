@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-01-kevin-garnett",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Kevin Garnett accept (Minnesota Timberwolves $16,800,000 x 4), or does he wait?",
+ "decider": "Kevin Garnett (simulated player, engine draw)",
+ "options": {
+  "Minnesota Timberwolves": 0.35,
+  "wait": 0.65
+ },
+ "basis": "Ask $16,800,000; best offer 1.00 of the ask in total; accept chance 0.350; priority loyalty; utility Minnesota Timberwolves 77.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

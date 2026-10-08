@@ -1,0 +1,13 @@
+{
+ "event_id": "2005-fa-2005-07-01-jason-kapono",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Jason Kapono accept (Denver Nuggets $5,000,000 x 5, Detroit Pistons $5,000,000 x 5, Houston Rockets $5,000,000 x 5), or does he wait?",
+ "decider": "Jason Kapono (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.016913,
+  "Detroit Pistons": 0.051965,
+  "Houston Rockets": 0.054766,
+  "wait": 0.876356
+ },
+ "basis": "Ask $6,005,406; best offer 0.83 of the ask in total; accept chance 0.124; priority loyalty; utility Denver Nuggets 62.5, Detroit Pistons 67.0, Houston Rockets 67.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

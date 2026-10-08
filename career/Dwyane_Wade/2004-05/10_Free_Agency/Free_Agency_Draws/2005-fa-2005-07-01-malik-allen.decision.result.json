@@ -1,0 +1,16 @@
+{
+ "date": "2005-07-01",
+ "decider": "Malik Allen (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-malik-allen",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.120026,
+  "Detroit Pistons": 0.090036,
+  "Houston Rockets": 0.066367,
+  "Los Angeles Clippers": 0.064567,
+  "Los Angeles Lakers": 0.009004,
+  "wait": 0.65
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-01: which offer does Malik Allen accept (Atlanta Hawks $771,123 x 1, Detroit Pistons $771,123 x 1, Houston Rockets $771,123 x 1, Los Angeles Clippers $771,123 x 1, Los Angeles Lakers $771,123 x 1), or does he wait?"
+}

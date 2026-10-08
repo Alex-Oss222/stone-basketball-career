@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-01-jamaal-tinsley",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Jamaal Tinsley accept (Indiana Pacers $12,000,000 x 4), or does he wait?",
+ "decider": "Jamaal Tinsley (simulated player, engine draw)",
+ "options": {
+  "Indiana Pacers": 0.35,
+  "wait": 0.65
+ },
+ "basis": "Ask $12,000,000; best offer 1.00 of the ask in total; accept chance 0.350; priority money; utility Indiana Pacers 73.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

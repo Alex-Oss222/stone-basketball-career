@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-01-primo-brezec",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Primož Brezec accept (Orlando Magic $7,515,413 x 5), or does he wait?",
+ "decider": "Primož Brezec (simulated player, engine draw)",
+ "options": {
+  "Orlando Magic": 0.072712,
+  "wait": 0.927288
+ },
+ "basis": "Ask $9,899,648; best offer 0.76 of the ask in total; accept chance 0.073; priority fame; utility Orlando Magic 64.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

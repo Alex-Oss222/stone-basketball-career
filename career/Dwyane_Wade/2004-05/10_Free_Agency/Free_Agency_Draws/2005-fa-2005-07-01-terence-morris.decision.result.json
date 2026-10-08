@@ -1,0 +1,19 @@
+{
+ "date": "2005-07-01",
+ "decider": "Terence Morris (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-terence-morris",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.079948,
+  "Boston Celtics": 0.004694,
+  "Denver Nuggets": 0.005719,
+  "Detroit Pistons": 0.059972,
+  "Houston Rockets": 0.044207,
+  "Los Angeles Clippers": 0.0429,
+  "Los Angeles Lakers": 0.005983,
+  "Minnesota Timberwolves": 0.106578,
+  "wait": 0.649999
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-01: which offer does Terence Morris accept (Atlanta Hawks $771,123 x 1, Boston Celtics $771,123 x 1, Denver Nuggets $771,123 x 1, Detroit Pistons $771,123 x 1, Houston Rockets $771,123 x 1, Los Angeles Clippers $771,123 x 1, Los Angeles Lakers $771,123 x 1, Minnesota Timberwolves $771,123 x 1), or does he wait?"
+}

@@ -1,0 +1,16 @@
+{
+ "event_id": "2005-fa-2005-07-01-ronny-turiaf",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Ronny Turiaf accept (Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1), or does he wait?",
+ "decider": "Ronny Turiaf (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.002655,
+  "Chicago Bulls": 0.294093,
+  "Milwaukee Bucks": 0.009988,
+  "New Jersey Nets": 0.009717,
+  "New Orleans Hornets": 0.004862,
+  "New York Knicks": 0.028686,
+  "wait": 0.649999
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.350; priority fame; utility Charlotte Bobcats 44.6, Chicago Bulls 63.4, Milwaukee Bucks 49.9, New Jersey Nets 49.8, New Orleans Hornets 47.0, New York Knicks 54.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

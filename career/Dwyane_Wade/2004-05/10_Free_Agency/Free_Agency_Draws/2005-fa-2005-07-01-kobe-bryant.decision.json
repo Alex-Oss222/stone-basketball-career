@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-01-kobe-bryant",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Kobe Bryant accept (Los Angeles Lakers $14,726,098 x 5), or does he wait?",
+ "decider": "Kobe Bryant (simulated player, engine draw)",
+ "options": {
+  "Los Angeles Lakers": 0.279423,
+  "wait": 0.720577
+ },
+ "basis": "Ask $15,356,250; best offer 0.96 of the ask in total; accept chance 0.279; priority money; utility Los Angeles Lakers 69.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

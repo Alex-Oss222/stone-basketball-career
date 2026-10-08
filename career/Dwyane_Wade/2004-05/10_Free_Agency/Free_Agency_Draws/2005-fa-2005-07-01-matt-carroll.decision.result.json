@@ -1,0 +1,17 @@
+{
+ "date": "2005-07-01",
+ "decider": "Matt Carroll (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-matt-carroll",
+ "kind": "decision",
+ "options": {
+  "Memphis Grizzlies": 0.019967,
+  "Miami Heat": 0.154327,
+  "Minnesota Timberwolves": 0.040918,
+  "Philadelphia 76ers": 0.026684,
+  "San Antonio Spurs": 0.071813,
+  "Seattle SuperSonics": 0.036291,
+  "wait": 0.65
+ },
+ "outcome": "Miami Heat",
+ "question": "2005 free agency, 2005-07-01: which offer does Matt Carroll accept (Memphis Grizzlies $719,373 x 1, Miami Heat $719,373 x 1, Minnesota Timberwolves $719,373 x 1, Philadelphia 76ers $719,373 x 1, San Antonio Spurs $719,373 x 1, Seattle SuperSonics $719,373 x 1), or does he wait?"
+}

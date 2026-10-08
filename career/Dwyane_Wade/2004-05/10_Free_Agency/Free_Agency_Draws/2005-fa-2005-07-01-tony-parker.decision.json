@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-01-tony-parker",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Tony Parker accept (San Antonio Spurs $11,896,284 x 5), or does he wait?",
+ "decider": "Tony Parker (simulated player, engine draw)",
+ "options": {
+  "San Antonio Spurs": 0.334437,
+  "wait": 0.665563
+ },
+ "basis": "Ask $12,000,000; best offer 0.99 of the ask in total; accept chance 0.334; priority fame; utility San Antonio Spurs 79.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

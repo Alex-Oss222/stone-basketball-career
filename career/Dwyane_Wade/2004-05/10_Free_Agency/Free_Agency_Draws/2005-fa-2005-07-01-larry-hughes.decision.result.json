@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-01",
+ "decider": "Larry Hughes (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-larry-hughes",
+ "kind": "decision",
+ "options": {
+  "Washington Wizards": 0.340973,
+  "wait": 0.659027
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-01: which offer does Larry Hughes accept (Washington Wizards $14,328,137 x 5), or does he wait?"
+}

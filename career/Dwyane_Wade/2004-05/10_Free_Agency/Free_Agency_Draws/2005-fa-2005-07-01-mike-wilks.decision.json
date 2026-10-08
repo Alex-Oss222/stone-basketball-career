@@ -1,0 +1,18 @@
+{
+ "event_id": "2005-fa-2005-07-01-mike-wilks",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Mike Wilks accept (Indiana Pacers $745,248 x 1, Memphis Grizzlies $745,248 x 1, Miami Heat $745,248 x 1, Minnesota Timberwolves $745,248 x 1, Philadelphia 76ers $745,248 x 1, Phoenix Suns $745,248 x 1, San Antonio Spurs $745,248 x 1, Seattle SuperSonics $745,248 x 1), or does he wait?",
+ "decider": "Mike Wilks (simulated player, engine draw)",
+ "options": {
+  "Indiana Pacers": 0.006567,
+  "Memphis Grizzlies": 0.008908,
+  "Miami Heat": 0.11324,
+  "Minnesota Timberwolves": 0.015059,
+  "Philadelphia 76ers": 0.020379,
+  "Phoenix Suns": 0.104272,
+  "San Antonio Spurs": 0.070775,
+  "Seattle SuperSonics": 0.0108,
+  "wait": 0.65
+ },
+ "basis": "Ask $745,248; best offer 1.00 of the ask in total; accept chance 0.350; priority money; utility Indiana Pacers 45.9, Memphis Grizzlies 47.1, Miami Heat 57.3, Minnesota Timberwolves 49.2, Philadelphia 76ers 50.4, Phoenix Suns 56.9, San Antonio Spurs 55.4, Seattle SuperSonics 47.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

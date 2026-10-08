@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-01",
+ "decider": "Udonis Haslem (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-udonis-haslem",
+ "kind": "decision",
+ "options": {
+  "Miami Heat": 0.123986,
+  "wait": 0.876014
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-01: which offer does Udonis Haslem accept (Miami Heat $5,000,000 x 5), or does he wait?"
+}

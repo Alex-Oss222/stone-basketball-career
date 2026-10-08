@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-01-andrei-kirilenko",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Andrei Kirilenko accept (Utah Jazz $11,418,027 x 5), or does he wait?",
+ "decider": "Andrei Kirilenko (simulated player, engine draw)",
+ "options": {
+  "Utah Jazz": 0.267563,
+  "wait": 0.732437
+ },
+ "basis": "Ask $12,000,000; best offer 0.95 of the ask in total; accept chance 0.268; priority winning; utility Utah Jazz 64.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

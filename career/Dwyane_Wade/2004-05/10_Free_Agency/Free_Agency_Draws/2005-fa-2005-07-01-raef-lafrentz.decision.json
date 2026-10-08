@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-01-raef-lafrentz",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Raef LaFrentz accept (Charlotte Bobcats $6,631,659 x 4), or does he wait?",
+ "decider": "Raef LaFrentz (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.049588,
+  "wait": 0.950412
+ },
+ "basis": "Ask $9,363,632; best offer 0.71 of the ask in total; accept chance 0.050; priority winning; utility Charlotte Bobcats 42.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

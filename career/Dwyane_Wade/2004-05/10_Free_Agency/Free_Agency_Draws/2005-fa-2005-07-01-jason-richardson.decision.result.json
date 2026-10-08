@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-01",
+ "decider": "Jason Richardson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-jason-richardson",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.259117,
+  "wait": 0.740883
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-01: which offer does Jason Richardson accept (Golden State Warriors $11,352,718 x 5), or does he wait?"
+}

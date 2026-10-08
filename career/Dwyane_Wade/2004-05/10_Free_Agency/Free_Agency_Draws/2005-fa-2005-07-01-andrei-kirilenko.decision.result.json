@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-01",
+ "decider": "Andrei Kirilenko (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-andrei-kirilenko",
+ "kind": "decision",
+ "options": {
+  "Utah Jazz": 0.267563,
+  "wait": 0.732437
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-01: which offer does Andrei Kirilenko accept (Utah Jazz $11,418,027 x 5), or does he wait?"
+}

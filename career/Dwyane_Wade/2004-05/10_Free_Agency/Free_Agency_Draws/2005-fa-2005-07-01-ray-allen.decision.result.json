@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-01",
+ "decider": "Ray Allen (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-ray-allen",
+ "kind": "decision",
+ "options": {
+  "Seattle SuperSonics": 0.35,
+  "wait": 0.65
+ },
+ "outcome": "Seattle SuperSonics",
+ "question": "2005 free agency, 2005-07-01: which offer does Ray Allen accept (Seattle SuperSonics $13,700,000 x 4), or does he wait?"
+}

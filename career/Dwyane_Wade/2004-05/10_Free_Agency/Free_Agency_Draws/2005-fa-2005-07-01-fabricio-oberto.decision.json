@@ -1,0 +1,22 @@
+{
+ "event_id": "2005-fa-2005-07-01-fabricio-oberto",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Fabricio Oberto accept (Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Cleveland Cavaliers $398,762 x 1, Golden State Warriors $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, Orlando Magic $398,762 x 1, Portland Trail Blazers $398,762 x 1, Toronto Raptors $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?",
+ "decider": "Fabricio Oberto (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.00128,
+  "Chicago Bulls": 0.069012,
+  "Cleveland Cavaliers": 0.016108,
+  "Golden State Warriors": 0.021907,
+  "Milwaukee Bucks": 0.006371,
+  "New Jersey Nets": 0.004445,
+  "New Orleans Hornets": 0.003188,
+  "New York Knicks": 0.006183,
+  "Orlando Magic": 0.013287,
+  "Portland Trail Blazers": 0.020324,
+  "Toronto Raptors": 0.174476,
+  "Washington Wizards": 0.013421,
+  "wait": 0.649998
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.350; priority money; utility Charlotte Bobcats 35.2, Chicago Bulls 51.2, Cleveland Cavaliers 45.4, Golden State Warriors 46.6, Milwaukee Bucks 41.6, New Jersey Nets 40.2, New Orleans Hornets 38.9, New York Knicks 41.5, Orlando Magic 44.6, Portland Trail Blazers 46.3, Toronto Raptors 54.9, Washington Wizards 44.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,17 @@
+{
+ "date": "2005-07-01",
+ "decider": "Ha Seung-Jin (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-ha-seung-jin",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.062812,
+  "Detroit Pistons": 0.05286,
+  "Houston Rockets": 0.055709,
+  "Los Angeles Clippers": 0.04527,
+  "Los Angeles Lakers": 0.058712,
+  "Minnesota Timberwolves": 0.074637,
+  "wait": 0.65
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-01: which offer does Ha Seung-Jin accept (Atlanta Hawks $641,748 x 1, Detroit Pistons $641,748 x 1, Houston Rockets $641,748 x 1, Los Angeles Clippers $641,748 x 1, Los Angeles Lakers $641,748 x 1, Minnesota Timberwolves $641,748 x 1), or does he wait?"
+}

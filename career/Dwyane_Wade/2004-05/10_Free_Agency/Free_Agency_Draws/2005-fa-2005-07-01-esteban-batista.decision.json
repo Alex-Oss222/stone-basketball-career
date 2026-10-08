@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-01-esteban-batista",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Esteban Batista accept (Atlanta Hawks $398,762 x 1), or does he wait?",
+ "decider": "Esteban Batista (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.35,
+  "wait": 0.65
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.350; priority winning; utility Atlanta Hawks 55.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

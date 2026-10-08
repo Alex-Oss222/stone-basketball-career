@@ -1,0 +1,16 @@
+{
+ "event_id": "2005-fa-2005-07-01-matt-carroll",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Matt Carroll accept (Memphis Grizzlies $719,373 x 1, Miami Heat $719,373 x 1, Minnesota Timberwolves $719,373 x 1, Philadelphia 76ers $719,373 x 1, San Antonio Spurs $719,373 x 1, Seattle SuperSonics $719,373 x 1), or does he wait?",
+ "decider": "Matt Carroll (simulated player, engine draw)",
+ "options": {
+  "Memphis Grizzlies": 0.019967,
+  "Miami Heat": 0.154327,
+  "Minnesota Timberwolves": 0.040918,
+  "Philadelphia 76ers": 0.026684,
+  "San Antonio Spurs": 0.071813,
+  "Seattle SuperSonics": 0.036291,
+  "wait": 0.65
+ },
+ "basis": "Ask $719,373; best offer 1.00 of the ask in total; accept chance 0.350; priority fame; utility Memphis Grizzlies 56.2, Miami Heat 64.4, Minnesota Timberwolves 59.1, Philadelphia 76ers 57.4, San Antonio Spurs 61.3, Seattle SuperSonics 58.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

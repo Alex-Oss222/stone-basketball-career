@@ -1,0 +1,13 @@
+{
+ "date": "2005-07-01",
+ "decider": "Rick Brunson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-rick-brunson",
+ "kind": "decision",
+ "options": {
+  "Minnesota Timberwolves": 0.286671,
+  "Philadelphia 76ers": 0.063329,
+  "wait": 0.65
+ },
+ "outcome": "Philadelphia 76ers",
+ "question": "2005 free agency, 2005-07-01: which offer does Rick Brunson accept (Minnesota Timberwolves $1,029,873 x 1, Philadelphia 76ers $1,029,873 x 1), or does he wait?"
+}

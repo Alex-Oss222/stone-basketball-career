@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-01-larry-hughes",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Larry Hughes accept (Washington Wizards $14,328,137 x 5), or does he wait?",
+ "decider": "Larry Hughes (simulated player, engine draw)",
+ "options": {
+  "Washington Wizards": 0.340973,
+  "wait": 0.659027
+ },
+ "basis": "Ask $14,400,000; best offer 1.00 of the ask in total; accept chance 0.341; priority loyalty; utility Washington Wizards 74.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

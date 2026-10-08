@@ -1,0 +1,30 @@
+{
+ "date": "2005-07-01",
+ "decider": "John Edwards (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-john-edwards",
+ "kind": "decision",
+ "options": {
+  "Boston Celtics": 0.034181,
+  "Charlotte Bobcats": 0.00039,
+  "Chicago Bulls": 0.025641,
+  "Cleveland Cavaliers": 0.014392,
+  "Dallas Mavericks": 0.056638,
+  "Golden State Warriors": 0.008535,
+  "Los Angeles Clippers": 0.006386,
+  "Milwaukee Bucks": 0.002053,
+  "New Jersey Nets": 0.001432,
+  "New Orleans Hornets": 0.000997,
+  "New York Knicks": 0.002326,
+  "Orlando Magic": 0.010041,
+  "Portland Trail Blazers": 0.006988,
+  "Sacramento Kings": 0.020271,
+  "San Antonio Spurs": 0.070399,
+  "Seattle SuperSonics": 0.010041,
+  "Toronto Raptors": 0.074194,
+  "Utah Jazz": 0.000561,
+  "Washington Wizards": 0.004534,
+  "wait": 0.65
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-01: which offer does John Edwards accept (Boston Celtics $641,748 x 1, Charlotte Bobcats $641,748 x 1, Chicago Bulls $641,748 x 1, Cleveland Cavaliers $641,748 x 1, Dallas Mavericks $641,748 x 1, Golden State Warriors $641,748 x 1, Los Angeles Clippers $641,748 x 1, Milwaukee Bucks $641,748 x 1, New Jersey Nets $641,748 x 1, New Orleans Hornets $641,748 x 1, New York Knicks $641,748 x 1, Orlando Magic $641,748 x 1, Portland Trail Blazers $641,748 x 1, Sacramento Kings $641,748 x 1, San Antonio Spurs $641,748 x 1, Seattle SuperSonics $641,748 x 1, Toronto Raptors $641,748 x 1, Utah Jazz $641,748 x 1, Washington Wizards $641,748 x 1), or does he wait?"
+}

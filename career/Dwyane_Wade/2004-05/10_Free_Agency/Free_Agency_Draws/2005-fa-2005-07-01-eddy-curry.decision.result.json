@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-01",
+ "decider": "Eddy Curry (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-eddy-curry",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.35,
+  "wait": 0.65
+ },
+ "outcome": "Chicago Bulls",
+ "question": "2005 free agency, 2005-07-01: which offer does Eddy Curry accept (Chicago Bulls $8,530,965 x 5), or does he wait?"
+}

@@ -1,0 +1,19 @@
+{
+ "date": "2005-07-01",
+ "decider": "Eddie Gill (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-01-eddie-gill",
+ "kind": "decision",
+ "options": {
+  "Indiana Pacers": 0.001822,
+  "Memphis Grizzlies": 0.001954,
+  "Miami Heat": 0.104058,
+  "Minnesota Timberwolves": 0.007135,
+  "Philadelphia 76ers": 0.002287,
+  "Phoenix Suns": 0.171562,
+  "San Antonio Spurs": 0.058995,
+  "Seattle SuperSonics": 0.002187,
+  "wait": 0.65
+ },
+ "outcome": "Miami Heat",
+ "question": "2005 free agency, 2005-07-01: which offer does Eddie Gill accept (Indiana Pacers $835,810 x 1, Memphis Grizzlies $835,810 x 1, Miami Heat $835,810 x 1, Minnesota Timberwolves $835,810 x 1, Philadelphia 76ers $835,810 x 1, Phoenix Suns $835,810 x 1, San Antonio Spurs $835,810 x 1, Seattle SuperSonics $835,810 x 1), or does he wait?"
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-01-michael-redd",
+ "date": "2005-07-01",
+ "question": "2005 free agency, 2005-07-01: which offer does Michael Redd accept (Milwaukee Bucks $11,641,552 x 5), or does he wait?",
+ "decider": "Michael Redd (simulated player, engine draw)",
+ "options": {
+  "Milwaukee Bucks": 0.297756,
+  "wait": 0.702244
+ },
+ "basis": "Ask $12,000,000; best offer 0.97 of the ask in total; accept chance 0.298; priority money; utility Milwaukee Bucks 63.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
