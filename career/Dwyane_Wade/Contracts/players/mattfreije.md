@@ -2,9 +2,9 @@
 
 # Contract | Matt Freije
 
-Known through: 2005-10-12. [Open interactive contract](mattfreije.html#contract) · [Contract history](mattfreije.html#contract-history)
+Known through: 2005-10-13. [Open interactive contract](mattfreije.html#contract) · [Contract history](mattfreije.html#contract-history)
 
-Matt Freije: under contract. Evidence cutoff: 2005-10-12.
+Matt Freije: under contract. Evidence cutoff: 2005-10-13.
 
 ## Current contract
 

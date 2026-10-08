@@ -2,9 +2,9 @@
 
 # Contract | Matt Carroll
 
-Known through: 2005-10-12. [Open interactive contract](carroma01.html#contract) · [Contract history](carroma01.html#contract-history)
+Known through: 2005-10-13. [Open interactive contract](carroma01.html#contract) · [Contract history](carroma01.html#contract-history)
 
-Matt Carroll: under contract. Evidence cutoff: 2005-10-12.
+Matt Carroll: under contract. Evidence cutoff: 2005-10-13.
 
 ## Current contract
 

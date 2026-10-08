@@ -2,9 +2,9 @@
 
 # Contract | Melvin Ely
 
-Known through: 2005-10-12. [Open interactive contract](elyme01.html#contract) · [Contract history](elyme01.html#contract-history)
+Known through: 2005-10-13. [Open interactive contract](elyme01.html#contract) · [Contract history](elyme01.html#contract-history)
 
-Melvin Ely: under contract. Evidence cutoff: 2005-10-12.
+Melvin Ely: under contract. Evidence cutoff: 2005-10-13.
 
 ## Current contract
 
