@@ -1,13 +1,13 @@
 ---
 type: game
-status: scheduled
+status: played
 date: 2005-10-15
 opponent: Charlotte Bobcats
 venue: home
 competition: preseason
 cup_stage:
 player_team: Miami Heat
-result:
+result: W 110-85
 reason:
 simulation_source: Railway engine (runtime/private_service.py)
 event_id: 2005-10-15-charlotte-bobcats-at-miami-heat
@@ -19,10 +19,68 @@ result_file: Game_3.result.json
 Player identity and statistics are generated here by `python scripts/update_player_reports.py`.
 Decisions remain in the owning phase/week note. A scheduled game has no statistical result.
 
+<!-- game-result:start -->
+## Result
+
+**Charlotte Bobcats 85 at Miami Heat 110** · Miami Heat W 110-85 vs Charlotte Bobcats · home (Miami Heat) · 2005-10-15
+
+Event `2005-10-15-charlotte-bobcats-at-miami-heat` · Railway engine (runtime/private_service.py) · result file [`Game_3.result.json`](Game_3.result.json) (the engine's answer as served; the note is the canonical record).
+
+Preseason result: evidence for the preseason record and the camp decisions only; it does not count in regular-season statistics.
+
+### Box score
+
+```text
+Charlotte Bobcats 85 at Miami Heat 110
+2005-10-15  2005-06 preseason  event 2005-10-15-charlotte-bobcats-at-miami-heat
+Kernel 2003.11, calibrated on 2004-05 (imported_source)
+
+Period      1    2    3    4     T
+Charlott   24   14   23   24    85
+Miami He   23   24   29   34   110
+
+Charlotte Bobcats
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Luke Ridnour              40.3   16   6-11   0-0    4-5     1   3   3   0   0   4   2
+Steve Blake               34.5    3   1-5    1-2    0-0     1   4   7   0   0   1   1
+Shaun Livingston          33.7   15   6-8    1-1    2-2     0   3   5   2   2   4   3
+Mickaël Piétrus           31.4   16   7-17   1-6    1-3     2   3   2   3   1   5   2
+Jason Kapono              25.5    4   2-4    0-0    0-0     1   5   3   0   0   0   2
+Aaron Williams            20.8    8   4-6    0-2    0-0     0   3   1   1   1   0   5
+Jannero Pargo             16.6    7   3-10   1-4    0-0     0   1   0   0   0   1   1
+Moochie Norris            13.8    0   0-5    0-1    0-0     0   3   2   0   0   2   1
+Shavlik Randolph          11.9    4   1-4    0-0    2-2     1   1   0   0   0   1   2
+Andray Blatche             8.5    6   2-3    0-1    2-2     1   1   1   0   0   1   0
+Reece Gaines               1.5    4   1-2    1-1    1-2     0   0   0   0   0   0   0
+walshma01                  1.5    2   1-1    0-0    0-0     0   1   0   0   0   0   0
+TEAM                     240.0   85  34-76   5-18  12-16    7  28  24   6   4  19  19
+
+Miami Heat
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Mike James                24.8   13   4-9    3-3    2-2     2   1   3   0   0   1   5
+Dwyane Wade               28.0   23   7-19   0-1    9-10    0   4   2   1   0   3   0
+Matt Harpring             28.5   11   5-7    1-1    0-1     3   5   3   0   0   1   4
+Donyell Marshall          28.4   15   5-8    2-4    3-4     0   7   2   4   0   0   4
+Brian Grant               29.5   12   6-7    0-0    0-0     0   3   1   0   1   1   4
+Mehmet Okur               21.0   10   3-7    0-0    4-4     1   2   3   1   0   2   2
+Anthony Johnson           18.6    4   2-5    0-2    0-0     0   1   3   1   0   1   0
+Caron Butler              17.4    0   0-1    0-0    0-0     2   3   2   1   0   2   1
+Sebastian Telfair         14.1   14   6-7    2-2    0-0     0   1   4   0   0   1   1
+Eddie Jones               12.0    4   1-5    1-3    1-1     0   3   0   0   0   1   0
+DeShawn Stevenson         10.5    2   1-4    0-0    0-0     0   2   1   0   0   0   0
+Mike Wilks                 7.3    2   0-0    0-0    2-2     0   1   1   0   0   0   0
+TEAM                     240.0  110  40-79   9-16  21-24    8  33  25   8   1  13  21
+```
+
+### Miami injuries
+
+No Miami injury was drawn in this game.
+<!-- game-result:end -->
+
 <!-- player-report:start -->
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2005-10-14](../../assets/stat_reports/personal_2005-06_2005-10-14.svg)
+![Player personal information and earned 2005-06 awards through 2005-10-15](../../assets/stat_reports/personal_2005-06_2005-10-15.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -47,7 +105,7 @@ Decisions remain in the owning phase/week note. A scheduled game has no statisti
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-10-14; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-10-15; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -55,7 +113,7 @@ No 2005-06 awards yet.
 
 ## Statistics
 
-As of **2005-10-14**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2005-10-15**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -73,7 +131,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-10-14, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-10-15, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
