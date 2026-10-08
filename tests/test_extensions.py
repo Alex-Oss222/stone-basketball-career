@@ -982,3 +982,38 @@ class DriverTests(unittest.TestCase):
             with self.assertRaises(A.Stop) as stop:
                 A.rollover_day("2006-09-30")
         self.assertIn("2006-06-29 was missed", str(stop.exception))
+
+
+class MilestoneScreenTests(unittest.TestCase):
+    """Wade's extension offer is listed on the Milestones contract screen with its reply version, from its date only."""
+
+    def test_offer_listed_with_its_version_from_its_date(self):
+        from types import SimpleNamespace
+        from runtime import milestone_records as mr
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            season = root / P / "2006-07"
+            record = {"id": "2006-10-31-wadedw01-extension", "date": "2006-10-31", "season": "2006-07", "club": "Miami Heat",
+                      "offer": {"years": 5, "first_season": "2007-08", "total": 70_000_000}, "answer": None, "answered": None}
+            put(root, ext.offer_path(root, "2006-07", record["id"]).relative_to(root), record)
+
+            def screens():
+                return {k: {"sections": [], "actions": [], "status": "idle"}
+                        for k in ("calendar", "contract_negotiation", "trade_update")}
+
+            def context(on):
+                return SimpleNamespace(root=root, player=root / P, season=season, state={},
+                                       known=lambda d: bool(d) and d <= on, source=lambda *a: None, action=lambda *a: None,
+                                       link=lambda path, label: {"label": label, "href": str(path)})
+            with mock.patch.object(mr, "load_registry", return_value={"events": []}):
+                before, after = screens(), screens()
+                mr.augment_live_screens(context("2006-10-30"), before)
+                mr.augment_live_screens(context("2006-10-31"), after)
+            expected = mr.version(ext.offer_path(root, "2006-07", record["id"]))
+        self.assertEqual(before["contract_negotiation"]["sections"], [])
+        (section,) = after["contract_negotiation"]["sections"]
+        row = section["rows"][0]
+        self.assertEqual(row[0]["label"], record["id"])
+        self.assertEqual(row[4], "Awaiting your answer")
+        self.assertEqual(row[5], expected)
+        self.assertEqual(after["contract_negotiation"]["status"], "awaiting_response")
