@@ -6,6 +6,41 @@
 
 Status: **0 of 40 games played**.
 
+## Rosters
+
+- **Argentina** (coach Sergio Hernández): Federico Kammerichs, Leonardo Gutiérrez, Gabriel Fernández, Antonio Porta, Julio Mázzaro, Román González, Diego Lo Grippo, Daniel Farabello, Martín Leiva, Juan Pedro Gutiérrez, Paolo Quinteros, Hernán Jasen
+- **Brazil** (coach Lula Ferreira): Marcelinho Machado, Tiago Splitter, Guilherme Giovannoni, Anderson Varejão (NBA), Alex Garcia (NBA), Leandro Barbosa (NBA), Nezinho dos Santos, Marcelinho Huertas, Jefferson Da Silva, Rafael Hettsheimeir, Caio Torres, Murilo Becker
+- **Canada** (coach Leo Rautins): Denham Brown, Kevin Jobity, Richard Anderson, Jermaine Anderson, James Gillingham, Randall Nohr, Carl English, Levon Kendall, Nathan Doornekamp, Vidal Massiah, Juan Mendez, Jermaine Bucknor
+- **Dominican Republic** (coach Keith Smart): Amaury Filion, José Vargas, Jaime Peterson, Otto Ramírez, Luis Flores (NBA), Marlon Martínez, Andy Turner, Josh Asselin, Cristian Arias, Francisco García, Felipe López, Jack Martinez
+- **Mexico** (coach Jorge Ramírez): Omar Quintero, Ramsés Benítez, Horacio Llamas, Adam Parada, Víctor Ávila, Anthony Pedroza, Romel Beck, Enrique González, Eric Hare, Alonso Izaguirre, David Crouse, Enrique Zúñiga
+- **Panama** (coach Nolan Richardson): Joel Muñoz, Jair Peralta, Danilo Pinnock, Maximiliano Gómez, Eduardo Isaac, Chris Warren, Reyjavick De Gracia, Michael Hicks, Dionisio Gómez, Antonio García, Jaime Lloreda, Eric Cardenas
+- **Puerto Rico** (coach Julio Toro): Elías Larry Ayuso, Antonio Latimer, Sharif Fajardo, Bobby Joe Hatton, Rick Apodaca, Christian Dalmau, Peter John Ramos (NBA), David Cortez, Filiberto Rivera, Gabriel Colón, Ángel Figueroa, Manuel Narvaez
+- **United States** (coach Morris McHone): Tyus Edney, Marque Perry, Lynn Greer, Charlie Bell, Alex Scales, Tang Hamilton, Ron Slay, Adam Chubb, Noel Felix, Aaron McGhee, Jerome Beasley, Kris Lang
+- **Uruguay** (coach Alberto Espasandin): Luis Silveira, Nicolás Mazzarino, Mauricio Aguiar, Pablo Morales, Esteban Batista, Diego Castrillón, Sebastián Izaguirre, Claudio Charquero, Leandro García Morales, Martín Osimani, Nicolás Borsellino, Gastón Paez
+- **Venezuela** (coach Néstor Salazar): Óscar Torres, Víctor Díaz, Héctor Romero, Tomás Aguilera, Luis Julio, Carlos Morris, Miguel Ángel Marriaga, Ernesto Mijares, Richard Lugo, Askia Jones, Diego Guevara, Heberth Bayona
+
+## Groups
+
+### Group A
+
+| Pos | Team | W | L | PF | PA | Pts |
+| --- | --- | --- | --- | --- | --- | --- |
+| = | Brazil | 0 | 0 | 0 | 0 | 0 |
+| = | Canada | 0 | 0 | 0 | 0 | 0 |
+| = | Panama | 0 | 0 | 0 | 0 | 0 |
+| = | **United States** | 0 | 0 | 0 | 0 | 0 |
+| = | Venezuela | 0 | 0 | 0 | 0 | 0 |
+
+### Group B
+
+| Pos | Team | W | L | PF | PA | Pts |
+| --- | --- | --- | --- | --- | --- | --- |
+| = | Argentina | 0 | 0 | 0 | 0 | 0 |
+| = | Dominican Republic | 0 | 0 | 0 | 0 | 0 |
+| = | Mexico | 0 | 0 | 0 | 0 | 0 |
+| = | Puerto Rico | 0 | 0 | 0 | 0 | 0 |
+| = | Uruguay | 0 | 0 | 0 | 0 | 0 |
+
 ## Games
 
 ### Group A

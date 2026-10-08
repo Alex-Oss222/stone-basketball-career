@@ -8,7 +8,898 @@
  "game_type": "continental_qualifier",
  "rules": "runtime/national.py; runtime/fiba_tournament.py; runtime/national_engine.py",
  "selection": null,
- "rosters": null,
+ "rosters": {
+  "Argentina": {
+   "coach": "Sergio Hernández",
+   "players": [
+    {
+     "player": "Antonio Porta",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:antonio-porta:1983-10-28",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Julio Mázzaro",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:julio-mazzaro:1979-01-31",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Román González",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:roman-gonzalez:1978-01-28",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Diego Lo Grippo",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:diego-lo-grippo:1978-01-22",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Daniel Farabello",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:daniel-farabello:1973-10-18",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Gabriel Fernández",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:gabriel-fernandez:1976-10-23",
+     "position": "C",
+     "trust": 3.62
+    },
+    {
+     "player": "Leonardo Gutiérrez",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:leonardo-gutierrez:1978-05-16",
+     "position": "SF",
+     "trust": 3.9
+    },
+    {
+     "player": "Martín Leiva",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:martin-leiva:1980-04-23",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Juan Pedro Gutiérrez",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:juan-pedro-gutierrez:1983-10-10",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Paolo Quinteros",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:paolo-quinteros:1979-01-15",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Hernán Jasen",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:hernan-jasen:1978-02-04",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Federico Kammerichs",
+     "bbr_id": null,
+     "fiba_key": "fiba:arg:federico-kammerichs:1980-06-21",
+     "position": "SF",
+     "trust": 8.3
+    }
+   ]
+  },
+  "Brazil": {
+   "coach": "Lula Ferreira",
+   "players": [
+    {
+     "player": "Marcelinho Machado",
+     "bbr_id": null,
+     "fiba_key": "fiba:bra:marcelinho-machado:1975-04-12",
+     "position": "SG",
+     "trust": 16.05
+    },
+    {
+     "player": "Nezinho dos Santos",
+     "bbr_id": null,
+     "fiba_key": "fiba:bra:nezinho-dos-santos:1981-01-21",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Murilo Becker",
+     "bbr_id": null,
+     "fiba_key": "fiba:bra:murilo-becker:1983-07-14",
+     "position": "C",
+     "trust": -0.6
+    },
+    {
+     "player": "Marcelinho Huertas",
+     "bbr_id": null,
+     "fiba_key": "fiba:bra:marcelinho-huertas:1983-05-25",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Leandro Barbosa",
+     "bbr_id": "barbole01",
+     "fiba_key": null,
+     "position": "SG",
+     "trust": 2.61
+    },
+    {
+     "player": "Jefferson Da Silva",
+     "bbr_id": null,
+     "fiba_key": "fiba:bra:jefferson-da-silva:1983-03-29",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Alex Garcia",
+     "bbr_id": "garcial01",
+     "fiba_key": null,
+     "position": "SF",
+     "trust": 5.0
+    },
+    {
+     "player": "Anderson Varejão",
+     "bbr_id": "varejan01",
+     "fiba_key": null,
+     "position": "C",
+     "trust": 5.99
+    },
+    {
+     "player": "Guilherme Giovannoni",
+     "bbr_id": null,
+     "fiba_key": "fiba:bra:guilherme-giovannoni:1980-06-02",
+     "position": "SF",
+     "trust": 12.2
+    },
+    {
+     "player": "Rafael Hettsheimeir",
+     "bbr_id": null,
+     "fiba_key": "fiba:bra:rafael-hettsheimeir:1986-06-18",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Caio Torres",
+     "bbr_id": null,
+     "fiba_key": "fiba:bra:caio-torres:1987-06-03",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Tiago Splitter",
+     "bbr_id": null,
+     "fiba_key": "fiba:bra:tiago-splitter:1985-01-01",
+     "position": "SF",
+     "trust": 12.39
+    }
+   ]
+  },
+  "Canada": {
+   "coach": "Leo Rautins",
+   "players": [
+    {
+     "player": "Jermaine Anderson",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:jermaine-anderson:1983-02-08",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Denham Brown",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:denham-brown:1983-01-06",
+     "position": "SG",
+     "trust": 13.54
+    },
+    {
+     "player": "James Gillingham",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:james-gillingham:1981-08-20",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Randall Nohr",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:randall-nohr:1977-06-26",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Carl English",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:carl-english:1981-02-02",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Levon Kendall",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:levon-kendall:1984-07-04",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Nathan Doornekamp",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:nathan-doornekamp:1982-10-09",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Vidal Massiah",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:vidal-massiah:1979-02-01",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Richard Anderson",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:richard-anderson:1977-11-30",
+     "position": "SG",
+     "trust": 6.56
+    },
+    {
+     "player": "Juan Mendez",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:juan-mendez:1981-09-23",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Jermaine Bucknor",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:jermaine-bucknor:1983-11-01",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Kevin Jobity",
+     "bbr_id": null,
+     "fiba_key": "fiba:can:kevin-jobity:1974-11-21",
+     "position": "C",
+     "trust": 8.47
+    }
+   ]
+  },
+  "Dominican Republic": {
+   "coach": "Keith Smart",
+   "players": [
+    {
+     "player": "Otto Ramírez",
+     "bbr_id": null,
+     "fiba_key": "fiba:dom:otto-ramirez:1974-11-14",
+     "position": "SG",
+     "trust": 4.25
+    },
+    {
+     "player": "Marlon Martínez",
+     "bbr_id": null,
+     "fiba_key": "fiba:dom:marlon-martinez:1979-01-17",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Luis Flores",
+     "bbr_id": "florelu01",
+     "fiba_key": null,
+     "position": "SG",
+     "trust": 2.98
+    },
+    {
+     "player": "Andy Turner",
+     "bbr_id": null,
+     "fiba_key": "fiba:dom:andy-turner:1980-12-26",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Josh Asselin",
+     "bbr_id": null,
+     "fiba_key": "fiba:dom:josh-asselin:1978-12-24",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Amaury Filion",
+     "bbr_id": null,
+     "fiba_key": "fiba:dom:amaury-filion:1981-08-01",
+     "position": "C",
+     "trust": 14.69
+    },
+    {
+     "player": "Cristian Arias",
+     "bbr_id": null,
+     "fiba_key": "fiba:dom:cristian-arias:1981-11-15",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Francisco García",
+     "bbr_id": null,
+     "fiba_key": "fiba:dom:francisco-garcia:1980-12-31",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "José Vargas",
+     "bbr_id": null,
+     "fiba_key": "fiba:dom:jose-vargas:1963-06-23",
+     "position": "C",
+     "trust": 8.69
+    },
+    {
+     "player": "Felipe López",
+     "bbr_id": null,
+     "fiba_key": "fiba:dom:felipe-lopez:1974-12-19",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Jaime Peterson",
+     "bbr_id": null,
+     "fiba_key": "fiba:dom:jaime-peterson:1971-09-29",
+     "position": "C",
+     "trust": 8.29
+    },
+    {
+     "player": "Jack Martinez",
+     "bbr_id": null,
+     "fiba_key": "fiba:dom:jack-martinez:1981-10-12",
+     "position": "SF",
+     "trust": 0.0
+    }
+   ]
+  },
+  "Mexico": {
+   "coach": "Jorge Ramírez",
+   "players": [
+    {
+     "player": "Romel Beck",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:romel-beck:1982-05-29",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Víctor Ávila",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:victor-avila:1977-03-23",
+     "position": "C",
+     "trust": 3.95
+    },
+    {
+     "player": "Anthony Pedroza",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:anthony-pedroza:1979-03-07",
+     "position": "SG",
+     "trust": 2.7
+    },
+    {
+     "player": "Horacio Llamas",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:horacio-llamas:1973-07-17",
+     "position": "C",
+     "trust": 12.45
+    },
+    {
+     "player": "Enrique González",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:enrique-gonzalez:1968-09-10",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Eric Hare",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:eric-hare:1979-01-11",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Ramsés Benítez",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:ramses-benitez:1979-09-10",
+     "position": "C",
+     "trust": 16.27
+    },
+    {
+     "player": "Omar Quintero",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:omar-quintero:1981-09-26",
+     "position": "SG",
+     "trust": 19.34
+    },
+    {
+     "player": "Alonso Izaguirre",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:alonso-izaguirre:1976-12-14",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Enrique Zúñiga",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:enrique-zuniga:1976-07-07",
+     "position": "SG",
+     "trust": -1.57
+    },
+    {
+     "player": "David Crouse",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:david-crouse:1974-08-10",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Adam Parada",
+     "bbr_id": null,
+     "fiba_key": "fiba:mex:adam-parada:1981-10-21",
+     "position": "C",
+     "trust": 4.53
+    }
+   ]
+  },
+  "Panama": {
+   "coach": "Nolan Richardson",
+   "players": [
+    {
+     "player": "Joel Muñoz",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:joel-munoz:1980-06-24",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Jair Peralta",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:jair-peralta:1976-01-05",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Danilo Pinnock",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:danilo-pinnock:1983-12-11",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Maximiliano Gómez",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:maximiliano-gomez:1975-12-18",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Eduardo Isaac",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:eduardo-isaac:1980-02-11",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Chris Warren",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:chris-warren:1981-01-19",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Reyjavick De Gracia",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:reyjavick-de-gracia:1981-11-05",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Michael Hicks",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:michael-hicks:1989-06-30",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Dionisio Gómez",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:dionisio-gomez:1980-04-07",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Antonio García",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:antonio-garcia:1976-05-11",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Jaime Lloreda",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:jaime-lloreda:1980-10-11",
+     "position": "PF",
+     "trust": 0.0
+    },
+    {
+     "player": "Eric Cardenas",
+     "bbr_id": null,
+     "fiba_key": "fiba:pan:eric-cardenas:1973-11-29",
+     "position": "SF",
+     "trust": 0.0
+    }
+   ]
+  },
+  "Puerto Rico": {
+   "coach": "Julio Toro",
+   "players": [
+    {
+     "player": "Peter John Ramos",
+     "bbr_id": "ramospe01",
+     "fiba_key": null,
+     "position": "C",
+     "trust": 0.29
+    },
+    {
+     "player": "David Cortez",
+     "bbr_id": null,
+     "fiba_key": "fiba:pur:david-cortez:1981-12-23",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Bobby Joe Hatton",
+     "bbr_id": null,
+     "fiba_key": "fiba:pur:bobby-joe-hatton:1976-10-11",
+     "position": "SG",
+     "trust": 5.02
+    },
+    {
+     "player": "Filiberto Rivera",
+     "bbr_id": null,
+     "fiba_key": "fiba:pur:filiberto-rivera:1982-09-28",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Rick Apodaca",
+     "bbr_id": null,
+     "fiba_key": "fiba:pur:rick-apodaca:1980-07-01",
+     "position": "SF",
+     "trust": 2.9
+    },
+    {
+     "player": "Christian Dalmau",
+     "bbr_id": null,
+     "fiba_key": "fiba:pur:christian-dalmau:1975-08-29",
+     "position": "SG",
+     "trust": 1.63
+    },
+    {
+     "player": "Elías Larry Ayuso",
+     "bbr_id": null,
+     "fiba_key": "fiba:pur:elias-larry-ayuso:1977-03-27",
+     "position": "SG",
+     "trust": 14.37
+    },
+    {
+     "player": "Antonio Latimer",
+     "bbr_id": null,
+     "fiba_key": "fiba:pur:antonio-latimer:1978-11-26",
+     "position": "SF",
+     "trust": 6.87
+    },
+    {
+     "player": "Gabriel Colón",
+     "bbr_id": null,
+     "fiba_key": "fiba:pur:gabriel-colon:1984-12-20",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Sharif Fajardo",
+     "bbr_id": null,
+     "fiba_key": "fiba:pur:sharif-fajardo:1976-06-09",
+     "position": "SF",
+     "trust": 6.53
+    },
+    {
+     "player": "Ángel Figueroa",
+     "bbr_id": null,
+     "fiba_key": "fiba:pur:angel-figueroa:1981-10-13",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Manuel Narvaez",
+     "bbr_id": null,
+     "fiba_key": "fiba:pur:manuel-narvaez:1981-12-18",
+     "position": "C",
+     "trust": 0.0
+    }
+   ]
+  },
+  "United States": {
+   "coach": "Morris McHone",
+   "players": [
+    {
+     "player": "Tyus Edney",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:tyus-edney:1973-02-14",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Marque Perry",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:marque-perry:1981-01-28",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Lynn Greer",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:lynn-greer:1979-10-23",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Charlie Bell",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:charlie-bell:1979-03-12",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Alex Scales",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:alex-scales:1978-07-03",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Tang Hamilton",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:tang-hamilton:1978-05-26",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Ron Slay",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:ron-slay:1981-06-29",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Adam Chubb",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:adam-chubb:1981-07-05",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Noel Felix",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:noel-felix:1981-10-04",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Aaron McGhee",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:aaron-mcghee:1979-06-28",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Jerome Beasley",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:jerome-beasley:1980-05-17",
+     "position": "C",
+     "trust": 0.0
+    },
+    {
+     "player": "Kris Lang",
+     "bbr_id": null,
+     "fiba_key": "fiba:usa:kris-lang:1979-12-12",
+     "position": "C",
+     "trust": 0.0
+    }
+   ]
+  },
+  "Uruguay": {
+   "coach": "Alberto Espasandin",
+   "players": [
+    {
+     "player": "Diego Castrillón",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:diego-castrillon:1975-01-08",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Sebastián Izaguirre",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:sebastian-izaguirre:1985-12-04",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Mauricio Aguiar",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:mauricio-aguiar:1983-02-03",
+     "position": "SF",
+     "trust": 7.25
+    },
+    {
+     "player": "Pablo Morales",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:pablo-morales:1978-05-31",
+     "position": "SF",
+     "trust": 3.95
+    },
+    {
+     "player": "Nicolás Mazzarino",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:nicolas-mazzarino:1975-10-21",
+     "position": "SG",
+     "trust": 8.14
+    },
+    {
+     "player": "Claudio Charquero",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:claudio-charquero:1977-07-22",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Leandro García Morales",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:leandro-garcia-morales:1980-06-27",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Martín Osimani",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:martin-osimani:1981-05-22",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Gastón Paez",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:gaston-paez:1979-09-22",
+     "position": "C",
+     "trust": -3.6
+    },
+    {
+     "player": "Luis Silveira",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:luis-silveira:1971-01-16",
+     "position": "SF",
+     "trust": 8.73
+    },
+    {
+     "player": "Nicolás Borsellino",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:nicolas-borsellino:1986-05-08",
+     "position": "SF",
+     "trust": 0.0
+    },
+    {
+     "player": "Esteban Batista",
+     "bbr_id": null,
+     "fiba_key": "fiba:uru:esteban-batista:1983-09-02",
+     "position": "PF",
+     "trust": 0.75
+    }
+   ]
+  },
+  "Venezuela": {
+   "coach": "Néstor Salazar",
+   "players": [
+    {
+     "player": "Víctor Díaz",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:victor-diaz:1968-04-02",
+     "position": "SF",
+     "trust": 12.69
+    },
+    {
+     "player": "Luis Julio",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:luis-julio:1980-06-12",
+     "position": "SF",
+     "trust": 8.84
+    },
+    {
+     "player": "Ernesto Mijares",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:ernesto-mijares:1976-09-30",
+     "position": "SG",
+     "trust": 5.06
+    },
+    {
+     "player": "Richard Lugo",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:richard-lugo:1976-09-30",
+     "position": "C",
+     "trust": 5.06
+    },
+    {
+     "player": "Tomás Aguilera",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:tomas-aguilera:1977-09-25",
+     "position": "PF",
+     "trust": 10.74
+    },
+    {
+     "player": "Óscar Torres",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:oscar-torres:1976-12-18",
+     "position": "SG",
+     "trust": 14.49
+    },
+    {
+     "player": "Askia Jones",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:askia-jones:1971-12-19",
+     "position": "SG",
+     "trust": 0.0
+    },
+    {
+     "player": "Miguel Ángel Marriaga",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:miguel-angel-marriaga:1984-06-06",
+     "position": "C",
+     "trust": 5.51
+    },
+    {
+     "player": "Héctor Romero",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:hector-romero:1980-01-03",
+     "position": "SF",
+     "trust": 12.6
+    },
+    {
+     "player": "Diego Guevara",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:diego-guevara:1978-04-26",
+     "position": "SG",
+     "trust": -1.56
+    },
+    {
+     "player": "Heberth Bayona",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:heberth-bayona:1978-04-26",
+     "position": "C",
+     "trust": -1.56
+    },
+    {
+     "player": "Carlos Morris",
+     "bbr_id": null,
+     "fiba_key": "fiba:ven:carlos-morris:1975-11-10",
+     "position": "SF",
+     "trust": 6.66
+    }
+   ]
+  }
+ },
  "games": {
   "1": {
    "away": "Panama",
@@ -459,5 +1350,162 @@
   "replaced": {},
   "rule": "runtime/national.resolve_field: simulated qualifiers take the real slots in order"
  },
- "roster_sources": {}
+ "roster_sources": {},
+ "rosters_locked_on": "2005-08-23",
+ "tables": {
+  "A": [
+   {
+    "w": 0,
+    "l": 0,
+    "pf": 0,
+    "pa": 0,
+    "pts": 0,
+    "team": "Brazil",
+    "position": null,
+    "tied_with": [
+     "Canada",
+     "Panama",
+     "United States",
+     "Venezuela"
+    ]
+   },
+   {
+    "w": 0,
+    "l": 0,
+    "pf": 0,
+    "pa": 0,
+    "pts": 0,
+    "team": "Canada",
+    "position": null,
+    "tied_with": [
+     "Brazil",
+     "Panama",
+     "United States",
+     "Venezuela"
+    ]
+   },
+   {
+    "w": 0,
+    "l": 0,
+    "pf": 0,
+    "pa": 0,
+    "pts": 0,
+    "team": "Panama",
+    "position": null,
+    "tied_with": [
+     "Brazil",
+     "Canada",
+     "United States",
+     "Venezuela"
+    ]
+   },
+   {
+    "w": 0,
+    "l": 0,
+    "pf": 0,
+    "pa": 0,
+    "pts": 0,
+    "team": "United States",
+    "position": null,
+    "tied_with": [
+     "Brazil",
+     "Canada",
+     "Panama",
+     "Venezuela"
+    ]
+   },
+   {
+    "w": 0,
+    "l": 0,
+    "pf": 0,
+    "pa": 0,
+    "pts": 0,
+    "team": "Venezuela",
+    "position": null,
+    "tied_with": [
+     "Brazil",
+     "Canada",
+     "Panama",
+     "United States"
+    ]
+   }
+  ],
+  "B": [
+   {
+    "w": 0,
+    "l": 0,
+    "pf": 0,
+    "pa": 0,
+    "pts": 0,
+    "team": "Argentina",
+    "position": null,
+    "tied_with": [
+     "Dominican Republic",
+     "Mexico",
+     "Puerto Rico",
+     "Uruguay"
+    ]
+   },
+   {
+    "w": 0,
+    "l": 0,
+    "pf": 0,
+    "pa": 0,
+    "pts": 0,
+    "team": "Dominican Republic",
+    "position": null,
+    "tied_with": [
+     "Argentina",
+     "Mexico",
+     "Puerto Rico",
+     "Uruguay"
+    ]
+   },
+   {
+    "w": 0,
+    "l": 0,
+    "pf": 0,
+    "pa": 0,
+    "pts": 0,
+    "team": "Mexico",
+    "position": null,
+    "tied_with": [
+     "Argentina",
+     "Dominican Republic",
+     "Puerto Rico",
+     "Uruguay"
+    ]
+   },
+   {
+    "w": 0,
+    "l": 0,
+    "pf": 0,
+    "pa": 0,
+    "pts": 0,
+    "team": "Puerto Rico",
+    "position": null,
+    "tied_with": [
+     "Argentina",
+     "Dominican Republic",
+     "Mexico",
+     "Uruguay"
+    ]
+   },
+   {
+    "w": 0,
+    "l": 0,
+    "pf": 0,
+    "pa": 0,
+    "pts": 0,
+    "team": "Uruguay",
+    "position": null,
+    "tied_with": [
+     "Argentina",
+     "Dominican Republic",
+     "Mexico",
+     "Puerto Rico"
+    ]
+   }
+  ]
+ }
 }
