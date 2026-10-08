@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-08-jim-jackson",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Jim Jackson accept (Los Angeles Lakers $4,601,302 x 2), or does he wait?",
+ "decider": "Jim Jackson (simulated player, engine draw)",
+ "options": {
+  "Los Angeles Lakers": 0.364435,
+  "wait": 0.635565
+ },
+ "basis": "Ask $4,714,571; best offer 0.98 of the ask in total; accept chance 0.364; priority winning; utility Los Angeles Lakers 62.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

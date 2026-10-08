@@ -1,0 +1,18 @@
+{
+ "event_id": "2005-fa-2005-07-08-rasual-butler",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Rasual Butler accept (Indiana Pacers $745,248 x 1, Memphis Grizzlies $745,248 x 1, Miami Heat $745,248 x 1, Orlando Magic $745,248 x 1, Philadelphia 76ers $745,248 x 1, Phoenix Suns $745,248 x 1, Sacramento Kings $745,248 x 1, Utah Jazz $745,248 x 1), or does he wait?",
+ "decider": "Rasual Butler (simulated player, engine draw)",
+ "options": {
+  "Indiana Pacers": 0.002558,
+  "Memphis Grizzlies": 0.002744,
+  "Miami Heat": 0.146097,
+  "Orlando Magic": 0.00307,
+  "Philadelphia 76ers": 0.003212,
+  "Phoenix Suns": 0.240874,
+  "Sacramento Kings": 0.011408,
+  "Utah Jazz": 3.8e-05,
+  "wait": 0.589999
+ },
+ "basis": "Ask $745,248; best offer 1.00 of the ask in total; accept chance 0.410; priority winning; utility Indiana Pacers 51.8, Memphis Grizzlies 52.1, Miami Heat 68.0, Orlando Magic 52.5, Philadelphia 76ers 52.7, Phoenix Suns 70.0, Sacramento Kings 57.8, Utah Jazz 34.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

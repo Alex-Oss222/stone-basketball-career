@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Zendon Hamilton (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-zendon-hamilton",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.41,
+  "wait": 0.59
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-08: which offer does Zendon Hamilton accept (New Jersey Nets $835,810 x 1), or does he wait?"
+}

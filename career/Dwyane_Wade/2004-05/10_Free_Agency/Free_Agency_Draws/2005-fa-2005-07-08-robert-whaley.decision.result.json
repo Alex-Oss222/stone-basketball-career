@@ -1,0 +1,15 @@
+{
+ "date": "2005-07-08",
+ "decider": "Robert Whaley (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-robert-whaley",
+ "kind": "decision",
+ "options": {
+  "Milwaukee Bucks": 0.129401,
+  "New Jersey Nets": 0.09028,
+  "New Orleans Hornets": 0.064742,
+  "New York Knicks": 0.125577,
+  "wait": 0.59
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-08: which offer does Robert Whaley accept (Milwaukee Bucks $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1), or does he wait?"
+}

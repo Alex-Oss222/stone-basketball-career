@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Gerald Wallace (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-gerald-wallace",
+ "kind": "decision",
+ "options": {
+  "Sacramento Kings": 0.237948,
+  "wait": 0.762052
+ },
+ "outcome": "Sacramento Kings",
+ "question": "2005 free agency, 2005-07-08: which offer does Gerald Wallace accept (Sacramento Kings $10,121,627 x 5), or does he wait?"
+}

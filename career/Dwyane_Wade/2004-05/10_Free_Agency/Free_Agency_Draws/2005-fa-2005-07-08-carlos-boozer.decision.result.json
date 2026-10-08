@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Carlos Boozer (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-carlos-boozer",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.250237,
+  "wait": 0.749763
+ },
+ "outcome": "Cleveland Cavaliers",
+ "question": "2005 free agency, 2005-07-08: which offer does Carlos Boozer accept (Cleveland Cavaliers $10,899,929 x 5), or does he wait?"
+}

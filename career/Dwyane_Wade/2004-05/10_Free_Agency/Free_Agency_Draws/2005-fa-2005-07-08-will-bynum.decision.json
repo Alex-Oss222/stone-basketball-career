@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-fa-2005-07-08-will-bynum",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Will Bynum accept (Memphis Grizzlies $398,762 x 1, Phoenix Suns $398,762 x 1), or does he wait?",
+ "decider": "Will Bynum (simulated player, engine draw)",
+ "options": {
+  "Memphis Grizzlies": 0.032271,
+  "Phoenix Suns": 0.377729,
+  "wait": 0.59
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.410; priority money; utility Memphis Grizzlies 47.5, Phoenix Suns 57.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

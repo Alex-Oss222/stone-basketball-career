@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-08-tyson-chandler",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Tyson Chandler accept (Chicago Bulls $10,140,269 x 5), or does he wait?",
+ "decider": "Tyson Chandler (simulated player, engine draw)",
+ "options": {
+  "Chicago Bulls": 0.36699,
+  "wait": 0.63301
+ },
+ "basis": "Ask $10,375,252; best offer 0.98 of the ask in total; accept chance 0.367; priority money; utility Chicago Bulls 79.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

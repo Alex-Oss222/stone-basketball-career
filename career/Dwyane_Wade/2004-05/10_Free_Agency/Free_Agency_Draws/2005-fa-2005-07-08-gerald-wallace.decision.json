@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-08-gerald-wallace",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Gerald Wallace accept (Sacramento Kings $10,121,627 x 5), or does he wait?",
+ "decider": "Gerald Wallace (simulated player, engine draw)",
+ "options": {
+  "Sacramento Kings": 0.237948,
+  "wait": 0.762052
+ },
+ "basis": "Ask $11,246,252; best offer 0.90 of the ask in total; accept chance 0.238; priority money; utility Sacramento Kings 66.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

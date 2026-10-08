@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Michael Redd (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-michael-redd",
+ "kind": "decision",
+ "options": {
+  "Milwaukee Bucks": 0.353673,
+  "wait": 0.646327
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-08: which offer does Michael Redd accept (Milwaukee Bucks $11,641,552 x 5), or does he wait?"
+}

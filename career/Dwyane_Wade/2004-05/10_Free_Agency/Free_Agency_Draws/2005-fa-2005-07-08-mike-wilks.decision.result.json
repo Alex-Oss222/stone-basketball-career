@@ -1,0 +1,19 @@
+{
+ "date": "2005-07-08",
+ "decider": "Mike Wilks (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-mike-wilks",
+ "kind": "decision",
+ "options": {
+  "Indiana Pacers": 0.009582,
+  "Memphis Grizzlies": 0.012999,
+  "Miami Heat": 0.16523,
+  "Orlando Magic": 0.015758,
+  "Philadelphia 76ers": 0.029735,
+  "Phoenix Suns": 0.152146,
+  "Sacramento Kings": 0.023685,
+  "Utah Jazz": 0.000865,
+  "wait": 0.59
+ },
+ "outcome": "Miami Heat",
+ "question": "2005 free agency, 2005-07-08: which offer does Mike Wilks accept (Indiana Pacers $745,248 x 1, Memphis Grizzlies $745,248 x 1, Miami Heat $745,248 x 1, Orlando Magic $745,248 x 1, Philadelphia 76ers $745,248 x 1, Phoenix Suns $745,248 x 1, Sacramento Kings $745,248 x 1, Utah Jazz $745,248 x 1), or does he wait?"
+}

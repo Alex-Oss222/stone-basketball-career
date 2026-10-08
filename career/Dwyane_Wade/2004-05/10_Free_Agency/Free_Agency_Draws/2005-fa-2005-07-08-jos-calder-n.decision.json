@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-08-jos-calder-n",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does José Calderón accept (Memphis Grizzlies $398,762 x 1), or does he wait?",
+ "decider": "José Calderón (simulated player, engine draw)",
+ "options": {
+  "Memphis Grizzlies": 0.41,
+  "wait": 0.59
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.410; priority loyalty; utility Memphis Grizzlies 52.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

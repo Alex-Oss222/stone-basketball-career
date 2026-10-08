@@ -1,0 +1,17 @@
+{
+ "event_id": "2005-fa-2005-07-08-alan-anderson",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Alan Anderson accept (Atlanta Hawks $398,762 x 1, Chicago Bulls $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, Minnesota Timberwolves $398,762 x 1), or does he wait?",
+ "decider": "Alan Anderson (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.078059,
+  "Chicago Bulls": 0.105368,
+  "Detroit Pistons": 0.049524,
+  "Houston Rockets": 0.023986,
+  "Los Angeles Clippers": 0.025342,
+  "Los Angeles Lakers": 0.004688,
+  "Minnesota Timberwolves": 0.123034,
+  "wait": 0.589999
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.410; priority winning; utility Atlanta Hawks 55.7, Chicago Bulls 56.9, Detroit Pistons 53.9, Houston Rockets 51.0, Los Angeles Clippers 51.2, Los Angeles Lakers 44.5, Minnesota Timberwolves 57.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

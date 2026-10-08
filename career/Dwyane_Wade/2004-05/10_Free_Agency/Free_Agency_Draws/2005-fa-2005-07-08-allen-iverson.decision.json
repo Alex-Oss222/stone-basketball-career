@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-08-allen-iverson",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Allen Iverson accept (Philadelphia 76ers $15,054,322 x 3), or does he wait?",
+ "decider": "Allen Iverson (simulated player, engine draw)",
+ "options": {
+  "Philadelphia 76ers": 0.372558,
+  "wait": 0.627442
+ },
+ "basis": "Ask $15,356,250; best offer 0.98 of the ask in total; accept chance 0.373; priority loyalty; utility Philadelphia 76ers 74.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

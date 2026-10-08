@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Kurt Thomas (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-kurt-thomas",
+ "kind": "decision",
+ "options": {
+  "San Antonio Spurs": 0.377661,
+  "wait": 0.622339
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-08: which offer does Kurt Thomas accept (San Antonio Spurs $10,071,076 x 3), or does he wait?"
+}

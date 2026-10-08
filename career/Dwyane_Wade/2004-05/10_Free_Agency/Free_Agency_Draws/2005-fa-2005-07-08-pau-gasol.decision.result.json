@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Pau Gasol (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-pau-gasol",
+ "kind": "decision",
+ "options": {
+  "Memphis Grizzlies": 0.374799,
+  "wait": 0.625201
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-08: which offer does Pau Gasol accept (Memphis Grizzlies $11,778,425 x 5), or does he wait?"
+}

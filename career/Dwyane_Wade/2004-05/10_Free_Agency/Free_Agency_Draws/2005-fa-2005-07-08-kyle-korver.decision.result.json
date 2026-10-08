@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Kyle Korver (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-kyle-korver",
+ "kind": "decision",
+ "options": {
+  "Orlando Magic": 0.073759,
+  "wait": 0.926241
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-08: which offer does Kyle Korver accept (Orlando Magic $7,116,651 x 5), or does he wait?"
+}

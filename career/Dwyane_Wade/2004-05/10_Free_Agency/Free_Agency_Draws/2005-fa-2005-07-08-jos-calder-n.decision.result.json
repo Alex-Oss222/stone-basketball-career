@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Jos\u00e9 Calder\u00f3n (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-jos-calder-n",
+ "kind": "decision",
+ "options": {
+  "Memphis Grizzlies": 0.41,
+  "wait": 0.59
+ },
+ "outcome": "Memphis Grizzlies",
+ "question": "2005 free agency, 2005-07-08: which offer does Jos\u00e9 Calder\u00f3n accept (Memphis Grizzlies $398,762 x 1), or does he wait?"
+}

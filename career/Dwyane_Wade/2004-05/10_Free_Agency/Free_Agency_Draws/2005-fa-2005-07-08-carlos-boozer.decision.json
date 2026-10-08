@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-08-carlos-boozer",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Carlos Boozer accept (Cleveland Cavaliers $10,899,929 x 5), or does he wait?",
+ "decider": "Carlos Boozer (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.250237,
+  "wait": 0.749763
+ },
+ "basis": "Ask $12,000,000; best offer 0.91 of the ask in total; accept chance 0.250; priority fame; utility Cleveland Cavaliers 74.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

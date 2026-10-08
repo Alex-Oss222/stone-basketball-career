@@ -1,0 +1,21 @@
+{
+ "event_id": "2005-fa-2005-07-08-terence-morris",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Terence Morris accept (Atlanta Hawks $771,123 x 1, Boston Celtics $771,123 x 1, Chicago Bulls $771,123 x 1, Denver Nuggets $771,123 x 1, Detroit Pistons $771,123 x 1, Houston Rockets $771,123 x 1, Los Angeles Clippers $771,123 x 1, Los Angeles Lakers $771,123 x 1, Minnesota Timberwolves $771,123 x 1, Philadelphia 76ers $771,123 x 1, San Antonio Spurs $771,123 x 1), or does he wait?",
+ "decider": "Terence Morris (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.044269,
+  "Boston Celtics": 0.002599,
+  "Chicago Bulls": 0.055025,
+  "Denver Nuggets": 0.003167,
+  "Detroit Pistons": 0.033208,
+  "Houston Rockets": 0.024478,
+  "Los Angeles Clippers": 0.023755,
+  "Los Angeles Lakers": 0.003313,
+  "Minnesota Timberwolves": 0.059015,
+  "Philadelphia 76ers": 0.017819,
+  "San Antonio Spurs": 0.14335,
+  "wait": 0.590002
+ },
+ "basis": "Ask $771,123; best offer 1.00 of the ask in total; accept chance 0.410; priority loyalty; utility Atlanta Hawks 54.1, Boston Celtics 42.8, Chicago Bulls 55.0, Denver Nuggets 43.6, Detroit Pistons 53.0, Houston Rockets 51.8, Los Angeles Clippers 51.7, Los Angeles Lakers 43.8, Minnesota Timberwolves 55.3, Philadelphia 76ers 50.5, San Antonio Spurs 58.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

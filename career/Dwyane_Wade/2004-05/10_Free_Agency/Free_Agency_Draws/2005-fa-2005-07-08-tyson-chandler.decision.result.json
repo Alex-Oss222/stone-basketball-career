@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Tyson Chandler (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-tyson-chandler",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.36699,
+  "wait": 0.63301
+ },
+ "outcome": "Chicago Bulls",
+ "question": "2005 free agency, 2005-07-08: which offer does Tyson Chandler accept (Chicago Bulls $10,140,269 x 5), or does he wait?"
+}

@@ -1,0 +1,18 @@
+{
+ "date": "2005-07-08",
+ "decider": "barroea01 (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-barroea01",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.063031,
+  "Chicago Bulls": 0.118051,
+  "Detroit Pistons": 0.047282,
+  "Houston Rockets": 0.034852,
+  "Los Angeles Clippers": 0.058769,
+  "Los Angeles Lakers": 0.003989,
+  "Minnesota Timberwolves": 0.084025,
+  "wait": 0.590001
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-08: which offer does barroea01 accept (Atlanta Hawks $398,762 x 1, Chicago Bulls $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, Minnesota Timberwolves $398,762 x 1), or does he wait?"
+}

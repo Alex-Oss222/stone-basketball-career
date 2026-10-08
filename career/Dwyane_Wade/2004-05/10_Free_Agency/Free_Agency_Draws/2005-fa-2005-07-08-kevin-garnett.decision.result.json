@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Kevin Garnett (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-kevin-garnett",
+ "kind": "decision",
+ "options": {
+  "Minnesota Timberwolves": 0.41,
+  "wait": 0.59
+ },
+ "outcome": "Minnesota Timberwolves",
+ "question": "2005 free agency, 2005-07-08: which offer does Kevin Garnett accept (Minnesota Timberwolves $16,800,000 x 4), or does he wait?"
+}

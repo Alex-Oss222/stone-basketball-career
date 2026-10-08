@@ -1,0 +1,13 @@
+{
+ "date": "2005-07-08",
+ "decider": "Brandon Bass (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-brandon-bass",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.176989,
+  "Minnesota Timberwolves": 0.233011,
+  "wait": 0.59
+ },
+ "outcome": "Minnesota Timberwolves",
+ "question": "2005 free agency, 2005-07-08: which offer does Brandon Bass accept (Atlanta Hawks $398,762 x 1, Minnesota Timberwolves $398,762 x 1), or does he wait?"
+}

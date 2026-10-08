@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-08-stephon-marbury",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Stephon Marbury accept (Phoenix Suns $15,356,250 x 4), or does he wait?",
+ "decider": "Stephon Marbury (simulated player, engine draw)",
+ "options": {
+  "Phoenix Suns": 0.41,
+  "wait": 0.59
+ },
+ "basis": "Ask $15,356,250; best offer 1.00 of the ask in total; accept chance 0.410; priority money; utility Phoenix Suns 81.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

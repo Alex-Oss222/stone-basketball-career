@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Lamar Odom (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-lamar-odom",
+ "kind": "decision",
+ "options": {
+  "Los Angeles Clippers": 0.41,
+  "wait": 0.59
+ },
+ "outcome": "Los Angeles Clippers",
+ "question": "2005 free agency, 2005-07-08: which offer does Lamar Odom accept (Los Angeles Clippers $12,000,000 x 5), or does he wait?"
+}

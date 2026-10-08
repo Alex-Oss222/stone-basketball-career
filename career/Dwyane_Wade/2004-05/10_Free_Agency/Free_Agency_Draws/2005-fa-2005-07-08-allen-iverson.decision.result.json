@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Allen Iverson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-allen-iverson",
+ "kind": "decision",
+ "options": {
+  "Philadelphia 76ers": 0.372558,
+  "wait": 0.627442
+ },
+ "outcome": "Philadelphia 76ers",
+ "question": "2005 free agency, 2005-07-08: which offer does Allen Iverson accept (Philadelphia 76ers $15,054,322 x 3), or does he wait?"
+}

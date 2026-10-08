@@ -1,0 +1,15 @@
+{
+ "event_id": "2005-fa-2005-07-08-kevin-burleson",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Kevin Burleson accept (Indiana Pacers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Miami Heat $398,762 x 1, Philadelphia 76ers $398,762 x 1, Phoenix Suns $398,762 x 1), or does he wait?",
+ "decider": "Kevin Burleson (simulated player, engine draw)",
+ "options": {
+  "Indiana Pacers": 0.019824,
+  "Memphis Grizzlies": 0.026894,
+  "Miami Heat": 0.034103,
+  "Philadelphia 76ers": 0.014395,
+  "Phoenix Suns": 0.314784,
+  "wait": 0.59
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.410; priority money; utility Indiana Pacers 46.3, Memphis Grizzlies 47.5, Miami Heat 48.5, Philadelphia 76ers 45.0, Phoenix Suns 57.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

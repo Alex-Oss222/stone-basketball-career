@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-08",
+ "decider": "Antoine Walker (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-antoine-walker",
+ "kind": "decision",
+ "options": {
+  "Dallas Mavericks": 0.237948,
+  "wait": 0.762052
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-08: which offer does Antoine Walker accept (Dallas Mavericks $12,485,908 x 4), or does he wait?"
+}

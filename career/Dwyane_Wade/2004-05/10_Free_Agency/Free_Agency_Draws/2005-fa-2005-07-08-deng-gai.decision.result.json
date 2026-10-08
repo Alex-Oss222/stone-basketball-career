@@ -1,0 +1,24 @@
+{
+ "date": "2005-07-08",
+ "decider": "Deng Gai (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-deng-gai",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 4.7e-05,
+  "Cleveland Cavaliers": 0.005363,
+  "Dallas Mavericks": 0.081415,
+  "Golden State Warriors": 0.008122,
+  "Milwaukee Bucks": 0.000808,
+  "New Jersey Nets": 0.000365,
+  "New Orleans Hornets": 0.000259,
+  "New York Knicks": 0.000729,
+  "Portland Trail Blazers": 0.004446,
+  "San Antonio Spurs": 0.055677,
+  "Seattle SuperSonics": 0.005323,
+  "Toronto Raptors": 0.245197,
+  "Washington Wizards": 0.002247,
+  "wait": 0.590002
+ },
+ "outcome": "Portland Trail Blazers",
+ "question": "2005 free agency, 2005-07-08: which offer does Deng Gai accept (Charlotte Bobcats $398,762 x 1, Cleveland Cavaliers $398,762 x 1, Dallas Mavericks $398,762 x 1, Golden State Warriors $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, Portland Trail Blazers $398,762 x 1, San Antonio Spurs $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?"
+}

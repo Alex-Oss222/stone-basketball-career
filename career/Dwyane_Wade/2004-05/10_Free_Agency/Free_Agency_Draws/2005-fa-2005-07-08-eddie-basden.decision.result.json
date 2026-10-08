@@ -1,0 +1,15 @@
+{
+ "date": "2005-07-08",
+ "decider": "Eddie Basden (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-08-eddie-basden",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.099143,
+  "Chicago Bulls": 0.12354,
+  "Houston Rockets": 0.05482,
+  "Minnesota Timberwolves": 0.132497,
+  "wait": 0.59
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-08: which offer does Eddie Basden accept (Atlanta Hawks $398,762 x 1, Chicago Bulls $398,762 x 1, Houston Rockets $398,762 x 1, Minnesota Timberwolves $398,762 x 1), or does he wait?"
+}

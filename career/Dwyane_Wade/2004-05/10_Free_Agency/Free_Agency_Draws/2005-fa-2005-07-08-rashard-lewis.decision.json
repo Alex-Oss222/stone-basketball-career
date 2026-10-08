@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-08-rashard-lewis",
+ "date": "2005-07-08",
+ "question": "2005 free agency, 2005-07-08: which offer does Rashard Lewis accept (Seattle SuperSonics $13,843,156 x 5), or does he wait?",
+ "decider": "Rashard Lewis (simulated player, engine draw)",
+ "options": {
+  "Seattle SuperSonics": 0.41,
+  "wait": 0.59
+ },
+ "basis": "Ask $13,843,156; best offer 1.00 of the ask in total; accept chance 0.410; priority money; utility Seattle SuperSonics 73.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
