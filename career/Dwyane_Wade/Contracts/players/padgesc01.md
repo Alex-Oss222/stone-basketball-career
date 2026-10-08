@@ -2,9 +2,9 @@
 
 # Contract | Scott Padgett
 
-Known through: 2005-09-11. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
+Known through: 2005-09-18. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
 
-Scott Padgett: traded. Evidence cutoff: 2005-09-11.
+Scott Padgett: traded. Evidence cutoff: 2005-09-18.
 
 ## Current contract
 

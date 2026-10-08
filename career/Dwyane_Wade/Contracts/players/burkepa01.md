@@ -2,9 +2,9 @@
 
 # Contract | Pat Burke
 
-Known through: 2005-09-11. [Open interactive contract](burkepa01.html#contract) · [Contract history](burkepa01.html#contract-history)
+Known through: 2005-09-18. [Open interactive contract](burkepa01.html#contract) · [Contract history](burkepa01.html#contract-history)
 
-Pat Burke: unsigned free agent. Evidence cutoff: 2005-09-11.
+Pat Burke: unsigned free agent. Evidence cutoff: 2005-09-18.
 
 ## Current contract
 

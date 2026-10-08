@@ -2,9 +2,9 @@
 
 # Contract | Bob Sura
 
-Known through: 2005-09-11. [Open interactive contract](surabo01.html#contract) · [Contract history](surabo01.html#contract-history)
+Known through: 2005-09-18. [Open interactive contract](surabo01.html#contract) · [Contract history](surabo01.html#contract-history)
 
-Bob Sura: released. Evidence cutoff: 2005-09-11.
+Bob Sura: released. Evidence cutoff: 2005-09-18.
 
 ## Current contract
 

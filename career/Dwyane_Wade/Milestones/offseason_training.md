@@ -2,7 +2,7 @@
 
 # Offseason training | Dwyane Wade
 
-Career date: 2005-09-11 · Miami Heat · planned
+Career date: 2005-09-18 · Miami Heat · planned
 
 [Live milestone desk](index.html#offseason_training) · [All milestones](README.md)
 
