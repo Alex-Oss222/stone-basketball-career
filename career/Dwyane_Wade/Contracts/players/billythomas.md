@@ -2,9 +2,9 @@
 
 # Contract | Billy Thomas
 
-Known through: 2005-10-13. [Open interactive contract](billythomas.html#contract) · [Contract history](billythomas.html#contract-history)
+Known through: 2005-10-14. [Open interactive contract](billythomas.html#contract) · [Contract history](billythomas.html#contract-history)
 
-Billy Thomas: under contract. Evidence cutoff: 2005-10-13.
+Billy Thomas: under contract. Evidence cutoff: 2005-10-14.
 
 ## Current contract
 

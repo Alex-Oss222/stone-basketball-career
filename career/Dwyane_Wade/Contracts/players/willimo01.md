@@ -2,9 +2,9 @@
 
 # Contract | Monty Williams
 
-Known through: 2005-10-13. [Open interactive contract](willimo01.html#contract) · [Contract history](willimo01.html#contract-history)
+Known through: 2005-10-14. [Open interactive contract](willimo01.html#contract) · [Contract history](willimo01.html#contract-history)
 
-Monty Williams: minimum contract unverified. Evidence cutoff: 2005-10-13.
+Monty Williams: minimum contract unverified. Evidence cutoff: 2005-10-14.
 
 ## Current contract
 
