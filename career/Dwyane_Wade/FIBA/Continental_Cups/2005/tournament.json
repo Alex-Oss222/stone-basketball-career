@@ -1355,19 +1355,44 @@
  "tables": {
   "A": [
    {
-    "w": 0,
+    "w": 1,
     "l": 0,
-    "pf": 0,
-    "pa": 0,
-    "pts": 0,
+    "pf": 77,
+    "pa": 73,
+    "pts": 2,
+    "team": "United States",
+    "position": 1,
+    "tied_with": []
+   },
+   {
+    "w": 1,
+    "l": 0,
+    "pf": 81,
+    "pa": 77,
+    "pts": 2,
+    "team": "Venezuela",
+    "position": 2,
+    "tied_with": []
+   },
+   {
+    "w": 0,
+    "l": 1,
+    "pf": 77,
+    "pa": 81,
+    "pts": 1,
     "team": "Brazil",
-    "position": null,
-    "tied_with": [
-     "Canada",
-     "Panama",
-     "United States",
-     "Venezuela"
-    ]
+    "position": 3,
+    "tied_with": []
+   },
+   {
+    "w": 0,
+    "l": 1,
+    "pf": 73,
+    "pa": 77,
+    "pts": 1,
+    "team": "Panama",
+    "position": 4,
+    "tied_with": []
    },
    {
     "w": 0,
@@ -1376,105 +1401,50 @@
     "pa": 0,
     "pts": 0,
     "team": "Canada",
-    "position": null,
-    "tied_with": [
-     "Brazil",
-     "Panama",
-     "United States",
-     "Venezuela"
-    ]
-   },
-   {
-    "w": 0,
-    "l": 0,
-    "pf": 0,
-    "pa": 0,
-    "pts": 0,
-    "team": "Panama",
-    "position": null,
-    "tied_with": [
-     "Brazil",
-     "Canada",
-     "United States",
-     "Venezuela"
-    ]
-   },
-   {
-    "w": 0,
-    "l": 0,
-    "pf": 0,
-    "pa": 0,
-    "pts": 0,
-    "team": "United States",
-    "position": null,
-    "tied_with": [
-     "Brazil",
-     "Canada",
-     "Panama",
-     "Venezuela"
-    ]
-   },
-   {
-    "w": 0,
-    "l": 0,
-    "pf": 0,
-    "pa": 0,
-    "pts": 0,
-    "team": "Venezuela",
-    "position": null,
-    "tied_with": [
-     "Brazil",
-     "Canada",
-     "Panama",
-     "United States"
-    ]
+    "position": 5,
+    "tied_with": []
    }
   ],
   "B": [
    {
-    "w": 0,
+    "w": 1,
     "l": 0,
-    "pf": 0,
-    "pa": 0,
-    "pts": 0,
+    "pf": 87,
+    "pa": 82,
+    "pts": 2,
     "team": "Argentina",
-    "position": null,
-    "tied_with": [
-     "Dominican Republic",
-     "Mexico",
-     "Puerto Rico",
-     "Uruguay"
-    ]
+    "position": 1,
+    "tied_with": []
    },
    {
-    "w": 0,
+    "w": 1,
     "l": 0,
-    "pf": 0,
-    "pa": 0,
-    "pts": 0,
+    "pf": 72,
+    "pa": 70,
+    "pts": 2,
     "team": "Dominican Republic",
-    "position": null,
-    "tied_with": [
-     "Argentina",
-     "Mexico",
-     "Puerto Rico",
-     "Uruguay"
-    ]
+    "position": 2,
+    "tied_with": []
    },
    {
     "w": 0,
-    "l": 0,
-    "pf": 0,
-    "pa": 0,
-    "pts": 0,
+    "l": 1,
+    "pf": 70,
+    "pa": 72,
+    "pts": 1,
+    "team": "Uruguay",
+    "position": 3,
+    "tied_with": []
+   },
+   {
+    "w": 0,
+    "l": 1,
+    "pf": 82,
+    "pa": 87,
+    "pts": 1,
     "team": "Mexico",
-    "position": null,
-    "tied_with": [
-     "Argentina",
-     "Dominican Republic",
-     "Puerto Rico",
-     "Uruguay"
-    ]
+    "position": 4,
+    "tied_with": []
    },
    {
     "w": 0,
@@ -1483,28 +1453,8 @@
     "pa": 0,
     "pts": 0,
     "team": "Puerto Rico",
-    "position": null,
-    "tied_with": [
-     "Argentina",
-     "Dominican Republic",
-     "Mexico",
-     "Uruguay"
-    ]
-   },
-   {
-    "w": 0,
-    "l": 0,
-    "pf": 0,
-    "pa": 0,
-    "pts": 0,
-    "team": "Uruguay",
-    "position": null,
-    "tied_with": [
-     "Argentina",
-     "Dominican Republic",
-     "Mexico",
-     "Puerto Rico"
-    ]
+    "position": 5,
+    "tied_with": []
    }
   ]
  }

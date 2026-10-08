@@ -4,7 +4,7 @@
 
 2005-08-24 to 2005-09-04, hosted by Dominican Republic. FIBA rules (four 10-minute quarters, five fouls). Every game is played by the engine; real results of this event are never used. Rules and sources: `runtime/national.py`, `library/2005/fiba/fiba_2005_americas_championship.json`.
 
-Status: **0 of 40 games played**.
+Status: **4 of 40 games played**.
 
 ## Rosters
 
@@ -25,21 +25,21 @@ Status: **0 of 40 games played**.
 
 | Pos | Team | W | L | PF | PA | Pts |
 | --- | --- | --- | --- | --- | --- | --- |
-| = | Brazil | 0 | 0 | 0 | 0 | 0 |
-| = | Canada | 0 | 0 | 0 | 0 | 0 |
-| = | Panama | 0 | 0 | 0 | 0 | 0 |
-| = | **United States** | 0 | 0 | 0 | 0 | 0 |
-| = | Venezuela | 0 | 0 | 0 | 0 | 0 |
+| 1 | **United States** | 1 | 0 | 77 | 73 | 2 |
+| 2 | Venezuela | 1 | 0 | 81 | 77 | 2 |
+| 3 | Brazil | 0 | 1 | 77 | 81 | 1 |
+| 4 | Panama | 0 | 1 | 73 | 77 | 1 |
+| 5 | Canada | 0 | 0 | 0 | 0 | 0 |
 
 ### Group B
 
 | Pos | Team | W | L | PF | PA | Pts |
 | --- | --- | --- | --- | --- | --- | --- |
-| = | Argentina | 0 | 0 | 0 | 0 | 0 |
-| = | Dominican Republic | 0 | 0 | 0 | 0 | 0 |
-| = | Mexico | 0 | 0 | 0 | 0 | 0 |
-| = | Puerto Rico | 0 | 0 | 0 | 0 | 0 |
-| = | Uruguay | 0 | 0 | 0 | 0 | 0 |
+| 1 | Argentina | 1 | 0 | 87 | 82 | 2 |
+| 2 | Dominican Republic | 1 | 0 | 72 | 70 | 2 |
+| 3 | Uruguay | 0 | 1 | 70 | 72 | 1 |
+| 4 | Mexico | 0 | 1 | 82 | 87 | 1 |
+| 5 | Puerto Rico | 0 | 0 | 0 | 0 | 0 |
 
 ## Games
 
@@ -47,8 +47,8 @@ Status: **0 of 40 games played**.
 
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2005-08-24 | United States | Panama |  |  |
-| 2 | 2005-08-24 | Venezuela | Brazil |  |  |
+| 1 | 2005-08-24 | United States | Panama | 77-73 | [box](Games/fiba-amc05-g01.result.json) |
+| 2 | 2005-08-24 | Venezuela | Brazil | 81-77 | [box](Games/fiba-amc05-g02.result.json) |
 | 3 | 2005-08-25 | Brazil | United States |  |  |
 | 4 | 2005-08-25 | Canada | Venezuela |  |  |
 | 5 | 2005-08-26 | Panama | Brazil |  |  |
@@ -62,8 +62,8 @@ Status: **0 of 40 games played**.
 
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
-| 11 | 2005-08-24 | Argentina | Mexico |  |  |
-| 12 | 2005-08-24 | Uruguay | Dominican Republic |  |  |
+| 11 | 2005-08-24 | Argentina | Mexico | 87-82 | [box](Games/fiba-amc05-g11.result.json) |
+| 12 | 2005-08-24 | Uruguay | Dominican Republic | 72-70 | [box](Games/fiba-amc05-g12.result.json) |
 | 13 | 2005-08-25 | Mexico | Uruguay |  |  |
 | 14 | 2005-08-25 | Puerto Rico | Argentina |  |  |
 | 15 | 2005-08-26 | Uruguay | Puerto Rico |  |  |
@@ -112,3 +112,15 @@ Status: **0 of 40 games played**.
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
 | 40 | 2005-09-04 | W:38 | W:37 |  |  |
+
+## Leaders (per game)
+
+**Points**: Alex Scales (United States) 20.0; Óscar Torres (Venezuela) 19.0; Federico Kammerichs (Argentina) 15.0; Nicolás Mazzarino (Uruguay) 15.0; Ramsés Benítez (Mexico) 15.0
+
+**Rebounds**: Mauricio Aguiar (Uruguay) 10.0; Danilo Pinnock (Panama) 9.0; Horacio Llamas (Mexico) 9.0; José Vargas (Dominican Republic) 9.0; Hernán Jasen (Argentina) 7.0
+
+**Assists**: Gabriel Fernández (Argentina) 5.0; Ramsés Benítez (Mexico) 5.0; Esteban Batista (Uruguay) 4.0; Nicolás Mazzarino (Uruguay) 4.0; Alex Scales (United States) 3.0
+
+**Steals**: Horacio Llamas (Mexico) 3.0; Óscar Torres (Venezuela) 3.0; Alex Scales (United States) 2.0; Antonio García (Panama) 2.0; Cristian Arias (Dominican Republic) 2.0
+
+**Blocks**: Leonardo Gutiérrez (Argentina) 3.0; Anderson Varejão (Brazil) 2.0; Charlie Bell (United States) 2.0; Antonio García (Panama) 1.0; Diego Lo Grippo (Argentina) 1.0
