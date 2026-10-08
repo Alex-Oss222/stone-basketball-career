@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-08-14**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-08-21**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -38,7 +38,7 @@ Card date: **2005-08-14**. 573 registry players, one Markdown card and one inter
 | [Doug Overton](overtdo01.md) | Free agent | 36 | silhouette | [open](overtdo01.html) |
 | [Earl Boykins](boykiea01.md) | Denver Nuggets | 29 | sourced | [open](boykiea01.html) |
 | [Earl Watson](watsoea01.md) | Memphis Grizzlies | 26 | sourced | [open](watsoea01.html) |
-| [Eddie Gill](gilled01.md) | Free agent | 26 | silhouette | [open](gilled01.html) |
+| [Eddie Gill](gilled01.md) | Free agent | 27 | silhouette | [open](gilled01.html) |
 | [Eric Snow](snower01.md) | Golden State Warriors | 32 | sourced | [open](snower01.html) |
 | [Frank Williams](willifr02.md) | Charlotte Bobcats | 25 | silhouette | [open](willifr02.html) |
 | [Gary Payton](paytoga01.md) | Detroit Pistons | 37 | sourced | [open](paytoga01.html) |
@@ -251,7 +251,7 @@ Card date: **2005-08-14**. 573 registry players, one Markdown card and one inter
 | [Dan Langhi](langhda01.md) | Free agent | 27 | silhouette | [open](langhda01.html) |
 | [Danny Ferry](ferryda01.md) | Free agent | 38 | sourced | [open](ferryda01.html) |
 | [Darius Miles](milesda01.md) | Cleveland Cavaliers | 23 | sourced | [open](milesda01.html) |
-| [David Harrison](davidharrison.md) | Orlando Magic | 22 | silhouette | [open](davidharrison.html) |
+| [David Harrison](davidharrison.md) | Orlando Magic | 23 | silhouette | [open](davidharrison.html) |
 | [DerMarr Johnson](johnsde03.md) | San Antonio Spurs | 25 | silhouette | [open](johnsde03.html) |
 | [Desmond Ferguson](fergude01.md) | Free agent | 28 | silhouette | [open](fergude01.html) |
 | [Desmond Mason](masonde01.md) | Milwaukee Bucks | 27 | sourced | [open](masonde01.html) |
@@ -406,7 +406,7 @@ Card date: **2005-08-14**. 573 registry players, one Markdown card and one inter
 | [Chris Mills](millsch01.md) | Free agent | 35 | silhouette | [open](millsch01.html) |
 | [Chris Webber](webbech01.md) | Sacramento Kings | 32 | sourced | [open](webbech01.html) |
 | [Chris Wilcox](wilcoch01.md) | Los Angeles Clippers | 22 | sourced | [open](wilcoch01.html) |
-| [Christian Laettner](laettch01.md) | Washington Wizards | 35 | sourced | [open](laettch01.html) |
+| [Christian Laettner](laettch01.md) | Washington Wizards | 36 | sourced | [open](laettch01.html) |
 | [Clarence Weatherspoon](weathcl01.md) | New York Knicks | 34 | sourced | [open](weathcl01.html) |
 | [Clifford Robinson](robincl02.md) | Washington Wizards | 38 | silhouette | [open](robincl02.html) |
 | [Damone Brown](brownda02.md) | Sacramento Kings | 26 | silhouette | [open](brownda02.html) |

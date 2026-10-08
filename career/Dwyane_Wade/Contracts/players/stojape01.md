@@ -2,9 +2,9 @@
 
 # Contract | Peja Stojakovic
 
-Known through: 2005-08-14. [Open interactive contract](stojape01.html#contract) · [Contract history](stojape01.html#contract-history)
+Known through: 2005-08-21. [Open interactive contract](stojape01.html#contract) · [Contract history](stojape01.html#contract-history)
 
-Peja Stojakovic: under contract. Evidence cutoff: 2005-08-14.
+Peja Stojakovic: under contract. Evidence cutoff: 2005-08-21.
 
 ## Current contract
 

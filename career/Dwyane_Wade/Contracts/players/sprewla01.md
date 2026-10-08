@@ -2,9 +2,9 @@
 
 # Contract | Latrell Sprewell
 
-Known through: 2005-08-14. [Open interactive contract](sprewla01.html#contract) · [Contract history](sprewla01.html#contract-history)
+Known through: 2005-08-21. [Open interactive contract](sprewla01.html#contract) · [Contract history](sprewla01.html#contract-history)
 
-Latrell Sprewell: under contract. Evidence cutoff: 2005-08-14.
+Latrell Sprewell: under contract. Evidence cutoff: 2005-08-21.
 
 ## Current contract
 
