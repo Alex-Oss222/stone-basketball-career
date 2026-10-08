@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "San Antonio Spurs front office (engine draw)",
+ "event_id": "2005-draft-pick-27",
+ "kind": "decision",
+ "options": {
+  "Luther Head": 0.37322,
+  "Orien Greene": 0.403152,
+  "Salim Stoudamire": 0.223628
+ },
+ "outcome": "Orien Greene",
+ "question": "2005 draft, No. 27: whom does San Antonio Spurs select (Orien Greene, Luther Head, Salim Stoudamire)?"
+}

@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "New York Knicks front office (engine draw)",
+ "event_id": "2005-draft-pick-39",
+ "kind": "decision",
+ "options": {
+  "Nate Robinson": 0.311987,
+  "Ryan Gomes": 0.380121,
+  "Salim Stoudamire": 0.307892
+ },
+ "outcome": "Salim Stoudamire",
+ "question": "2005 draft, No. 39: whom does New York Knicks select (Ryan Gomes, Nate Robinson, Salim Stoudamire)?"
+}

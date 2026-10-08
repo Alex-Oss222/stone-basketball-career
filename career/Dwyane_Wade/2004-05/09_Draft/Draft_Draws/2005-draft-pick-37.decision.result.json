@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Milwaukee Bucks front office (engine draw)",
+ "event_id": "2005-draft-pick-37",
+ "kind": "decision",
+ "options": {
+  "Brandon Bass": 0.259138,
+  "Jason Maxiell": 0.326277,
+  "Ryan Gomes": 0.414585
+ },
+ "outcome": "Brandon Bass",
+ "question": "2005 draft, No. 37: whom does Milwaukee Bucks select (Ryan Gomes, Jason Maxiell, Brandon Bass)?"
+}

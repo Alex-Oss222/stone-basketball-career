@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-32",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 32: whom does Utah Jazz select (Ricky Sánchez, Amir Johnson, Cenk Akyol)?",
+ "decider": "Utah Jazz front office (engine draw)",
+ "options": {
+  "Ricky Sánchez": 0.397932,
+  "Amir Johnson": 0.303075,
+  "Cenk Akyol": 0.298993
+ },
+ "basis": "Tier 5 of the draft-night board; rebuilding club; utilities Ricky Sánchez 1.61, Amir Johnson 1.58, Cenk Akyol 1.58 (runtime/draft.py)."
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-pick-51",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 51: whom does Detroit Pistons select (Dijon Thompson, Ersan İlyasova)?",
+ "decider": "Detroit Pistons front office (engine draw)",
+ "options": {
+  "Dijon Thompson": 0.637734,
+  "Ersan İlyasova": 0.362266
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Dijon Thompson 0.90, Ersan İlyasova 0.83 (runtime/draft.py)."
+}

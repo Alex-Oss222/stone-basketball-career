@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Minnesota Timberwolves front office (engine draw)",
+ "event_id": "2005-draft-pick-56",
+ "kind": "decision",
+ "options": {
+  "Lawrence Roberts": 0.174821,
+  "Micka\u00ebl Gelabale": 0.209406,
+  "Travis Diener": 0.615773
+ },
+ "outcome": "Lawrence Roberts",
+ "question": "2005 draft, No. 56: whom does Minnesota Timberwolves select (Travis Diener, Micka\u00ebl Gelabale, Lawrence Roberts)?"
+}

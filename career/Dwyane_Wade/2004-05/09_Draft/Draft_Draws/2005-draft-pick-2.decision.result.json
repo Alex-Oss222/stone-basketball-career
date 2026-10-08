@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "Denver Nuggets front office (engine draw)",
+ "event_id": "2005-draft-pick-2",
+ "kind": "decision",
+ "options": {
+  "Andrew Bogut": 0.999676,
+  "Chris Paul": 0.000324
+ },
+ "outcome": "Andrew Bogut",
+ "question": "2005 draft, No. 2: whom does Denver Nuggets select (Andrew Bogut, Chris Paul)?"
+}

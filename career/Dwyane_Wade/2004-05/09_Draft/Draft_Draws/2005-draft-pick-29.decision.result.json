@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Toronto Raptors front office (engine draw)",
+ "event_id": "2005-draft-pick-29",
+ "kind": "decision",
+ "options": {
+  "Jason Maxiell": 0.288154,
+  "Ryan Gomes": 0.340217,
+  "Wayne Simien": 0.371629
+ },
+ "outcome": "Wayne Simien",
+ "question": "2005 draft, No. 29: whom does Toronto Raptors select (Wayne Simien, Ryan Gomes, Jason Maxiell)?"
+}

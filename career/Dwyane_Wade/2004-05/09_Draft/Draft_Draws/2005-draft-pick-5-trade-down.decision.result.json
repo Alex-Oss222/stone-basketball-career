@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "New Orleans/Oklahoma City Hornets front office (engine draw)",
+ "event_id": "2005-draft-pick-5-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "decline",
+ "question": "2005 draft: does New Orleans/Oklahoma City Hornets trade No. 5 to Milwaukee Bucks for No. 7 and its 2006 second-round pick?"
+}

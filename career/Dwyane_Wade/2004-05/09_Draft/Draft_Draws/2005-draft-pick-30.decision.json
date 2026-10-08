@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-30",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 30: whom does San Antonio Spurs select (Luther Head, Salim Stoudamire, Alex Acker)?",
+ "decider": "San Antonio Spurs front office (engine draw)",
+ "options": {
+  "Luther Head": 0.471078,
+  "Salim Stoudamire": 0.282264,
+  "Alex Acker": 0.246658
+ },
+ "basis": "Tier 5 of the draft-night board; contending club; utilities Luther Head 0.90, Salim Stoudamire 0.84, Alex Acker 0.82 (runtime/draft.py)."
+}

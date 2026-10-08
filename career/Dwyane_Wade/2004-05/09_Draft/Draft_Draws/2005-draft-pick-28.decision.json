@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-28",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 28: whom does Utah Jazz select (Chris Taft, Ricky Sánchez, Amir Johnson)?",
+ "decider": "Utah Jazz front office (engine draw)",
+ "options": {
+  "Chris Taft": 0.477914,
+  "Ricky Sánchez": 0.296366,
+  "Amir Johnson": 0.22572
+ },
+ "basis": "Tier 5 of the draft-night board; rebuilding club; utilities Chris Taft 1.67, Ricky Sánchez 1.61, Amir Johnson 1.58 (runtime/draft.py)."
+}

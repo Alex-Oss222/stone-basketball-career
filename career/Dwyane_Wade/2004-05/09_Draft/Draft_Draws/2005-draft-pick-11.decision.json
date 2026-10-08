@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-11",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 11: whom does Orlando Magic select (Hakim Warrick, Andrew Bynum, Sean May)?",
+ "decider": "Orlando Magic front office (engine draw)",
+ "options": {
+  "Hakim Warrick": 0.622363,
+  "Andrew Bynum": 0.320042,
+  "Sean May": 0.057595
+ },
+ "basis": "Tier 3 of the draft-night board; middle club; utilities Hakim Warrick 2.26, Andrew Bynum 2.18, Sean May 1.97 (runtime/draft.py)."
+}

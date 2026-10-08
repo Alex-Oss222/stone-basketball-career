@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-24",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 24: whom does Phoenix Suns select (Julius Hodge, Martynas Andriuškevičius, C.J. Miles)?",
+ "decider": "Phoenix Suns front office (engine draw)",
+ "options": {
+  "Julius Hodge": 0.646803,
+  "Martynas Andriuškevičius": 0.22554,
+  "C.J. Miles": 0.127657
+ },
+ "basis": "Tier 4 of the draft-night board; contending club; utilities Julius Hodge 0.99, Martynas Andriuškevičius 0.86, C.J. Miles 0.79 (runtime/draft.py)."
+}

@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-23",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 23: whom does Boston Celtics select (Ike Diogu, Martynas Andriuškevičius, Julius Hodge)?",
+ "decider": "Boston Celtics front office (engine draw)",
+ "options": {
+  "Ike Diogu": 0.659047,
+  "Martynas Andriuškevičius": 0.199554,
+  "Julius Hodge": 0.141399
+ },
+ "basis": "Tier 4 of the draft-night board; contending club; utilities Ike Diogu 1.09, Martynas Andriuškevičius 0.94, Julius Hodge 0.90 (runtime/draft.py)."
+}

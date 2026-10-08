@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-44",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 44: whom does Memphis Grizzlies select (Jason Maxiell, Axel Hervelle, Von Wafer)?",
+ "decider": "Memphis Grizzlies front office (engine draw)",
+ "options": {
+  "Jason Maxiell": 0.560449,
+  "Axel Hervelle": 0.223896,
+  "Von Wafer": 0.215655
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Jason Maxiell 1.03, Axel Hervelle 0.92, Von Wafer 0.92 (runtime/draft.py)."
+}

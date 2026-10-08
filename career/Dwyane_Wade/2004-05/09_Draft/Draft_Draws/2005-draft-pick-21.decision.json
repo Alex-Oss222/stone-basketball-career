@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-21",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 21: whom does Sacramento Kings select (Jarrett Jack, Ike Diogu, Julius Hodge)?",
+ "decider": "Sacramento Kings front office (engine draw)",
+ "options": {
+  "Jarrett Jack": 0.591792,
+  "Ike Diogu": 0.243723,
+  "Julius Hodge": 0.164485
+ },
+ "basis": "Tier 4 of the draft-night board; contending club; utilities Jarrett Jack 1.14, Ike Diogu 1.03, Julius Hodge 0.99 (runtime/draft.py)."
+}

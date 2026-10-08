@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Orlando Magic front office (engine draw)",
+ "event_id": "2005-draft-pick-11",
+ "kind": "decision",
+ "options": {
+  "Andrew Bynum": 0.320042,
+  "Hakim Warrick": 0.622363,
+  "Sean May": 0.057595
+ },
+ "outcome": "Hakim Warrick",
+ "question": "2005 draft, No. 11: whom does Orlando Magic select (Hakim Warrick, Andrew Bynum, Sean May)?"
+}

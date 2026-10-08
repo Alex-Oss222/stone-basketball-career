@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-pick-53-trade-down",
+ "date": "2005-06-28",
+ "question": "2005 draft: does Minnesota Timberwolves trade No. 53 to Dallas Mavericks for No. 56 and its 2006 second-round pick?",
+ "decider": "Minnesota Timberwolves front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "9 players left in tier 6; Dallas Mavericks values its target 1.53x its expected pick; chart value No. 53 0.22 vs No. 56 0.19 + a 2006 second-rounder (runtime/draft.py)."
+}

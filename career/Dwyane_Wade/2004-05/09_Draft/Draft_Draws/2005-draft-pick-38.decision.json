@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-38",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 38: whom does Washington Wizards select (Nate Robinson, Salim Stoudamire, Cenk Akyol)?",
+ "decider": "Washington Wizards front office (engine draw)",
+ "options": {
+  "Nate Robinson": 0.351219,
+  "Salim Stoudamire": 0.346609,
+  "Cenk Akyol": 0.302172
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Nate Robinson 0.95, Salim Stoudamire 0.95, Cenk Akyol 0.93 (runtime/draft.py)."
+}

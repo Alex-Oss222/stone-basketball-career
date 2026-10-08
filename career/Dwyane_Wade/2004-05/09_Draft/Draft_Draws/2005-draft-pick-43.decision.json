@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-43",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 43: whom does Portland Trail Blazers select (Von Wafer, Daniel Ewing, Bracey Wright)?",
+ "decider": "Portland Trail Blazers front office (engine draw)",
+ "options": {
+  "Von Wafer": 0.340315,
+  "Daniel Ewing": 0.335672,
+  "Bracey Wright": 0.324013
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Von Wafer 0.92, Daniel Ewing 0.92, Bracey Wright 0.91 (runtime/draft.py)."
+}

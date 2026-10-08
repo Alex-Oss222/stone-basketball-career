@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "Chicago Bulls front office (engine draw)",
+ "event_id": "2005-draft-pick-22-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "decline",
+ "question": "2005 draft: does Chicago Bulls trade No. 22 to Dallas Mavericks for No. 25 and its 2006 second-round pick?"
+}

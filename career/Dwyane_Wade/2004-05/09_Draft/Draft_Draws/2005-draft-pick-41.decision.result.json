@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Seattle SuperSonics front office (engine draw)",
+ "event_id": "2005-draft-pick-41",
+ "kind": "decision",
+ "options": {
+  "Jason Maxiell": 0.350149,
+  "Nate Robinson": 0.365168,
+  "Von Wafer": 0.284683
+ },
+ "outcome": "Nate Robinson",
+ "question": "2005 draft, No. 41: whom does Seattle SuperSonics select (Nate Robinson, Jason Maxiell, Von Wafer)?"
+}

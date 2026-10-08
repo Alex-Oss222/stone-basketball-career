@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-pick-23-trade-down",
+ "date": "2005-06-28",
+ "question": "2005 draft: does Minnesota Timberwolves trade No. 23 to Boston Celtics for No. 26 and its 2006 second-round pick?",
+ "decider": "Minnesota Timberwolves front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "4 players left in tier 4; Boston Celtics values its target 1.31x its expected pick; chart value No. 23 1.18 vs No. 26 1.00 + a 2006 second-rounder (runtime/draft.py)."
+}

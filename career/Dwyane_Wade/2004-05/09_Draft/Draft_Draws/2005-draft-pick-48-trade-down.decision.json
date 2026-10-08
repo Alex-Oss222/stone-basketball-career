@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-pick-48-trade-down",
+ "date": "2005-06-28",
+ "question": "2005 draft: does Detroit Pistons trade No. 48 to Cleveland Cavaliers for No. 52 and its 2006 second-round pick?",
+ "decider": "Detroit Pistons front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "5 players left in tier 5; Cleveland Cavaliers values its target 1.16x its expected pick; chart value No. 48 0.29 vs No. 52 0.24 + a 2006 second-rounder (runtime/draft.py)."
+}

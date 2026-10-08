@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Utah Jazz front office (engine draw)",
+ "event_id": "2005-draft-pick-28",
+ "kind": "decision",
+ "options": {
+  "Amir Johnson": 0.22572,
+  "Chris Taft": 0.477914,
+  "Ricky S\u00e1nchez": 0.296366
+ },
+ "outcome": "Chris Taft",
+ "question": "2005 draft, No. 28: whom does Utah Jazz select (Chris Taft, Ricky S\u00e1nchez, Amir Johnson)?"
+}

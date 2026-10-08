@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "Houston Rockets front office (engine draw)",
+ "event_id": "2005-draft-pick-8",
+ "kind": "decision",
+ "options": {
+  "Gerald Green": 0.84103,
+  "Martell Webster": 0.15897
+ },
+ "outcome": "Gerald Green",
+ "question": "2005 draft, No. 8: whom does Houston Rockets select (Gerald Green, Martell Webster)?"
+}

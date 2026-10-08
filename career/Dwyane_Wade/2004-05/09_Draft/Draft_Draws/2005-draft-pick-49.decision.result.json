@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Atlanta Hawks front office (engine draw)",
+ "event_id": "2005-draft-pick-49",
+ "kind": "decision",
+ "options": {
+  "Axel Hervelle": 0.363786,
+  "Dijon Thompson": 0.295704,
+  "Randolph Morris": 0.34051
+ },
+ "outcome": "Randolph Morris",
+ "question": "2005 draft, No. 49: whom does Atlanta Hawks select (Axel Hervelle, Randolph Morris, Dijon Thompson)?"
+}

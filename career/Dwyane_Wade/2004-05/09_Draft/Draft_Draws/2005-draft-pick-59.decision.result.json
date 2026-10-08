@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Toronto Raptors front office (engine draw)",
+ "event_id": "2005-draft-pick-59",
+ "kind": "decision",
+ "options": {
+  "David Lee": 0.335254,
+  "Marcin Gortat": 0.219972,
+  "Micka\u00ebl Gelabale": 0.444774
+ },
+ "outcome": "David Lee",
+ "question": "2005 draft, No. 59: whom does Toronto Raptors select (Micka\u00ebl Gelabale, David Lee, Marcin Gortat)?"
+}

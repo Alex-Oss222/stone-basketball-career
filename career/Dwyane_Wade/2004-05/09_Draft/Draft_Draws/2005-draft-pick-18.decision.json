@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-18",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 18: whom does Portland Trail Blazers select (Francisco García, Joey Graham, Johan Petro)?",
+ "decider": "Portland Trail Blazers front office (engine draw)",
+ "options": {
+  "Francisco García": 0.388695,
+  "Joey Graham": 0.369997,
+  "Johan Petro": 0.241308
+ },
+ "basis": "Tier 4 of the draft-night board; middle club; utilities Francisco García 1.59, Joey Graham 1.58, Johan Petro 1.53 (runtime/draft.py)."
+}

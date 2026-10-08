@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-13",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 13: whom does Indiana Pacers select (Rashad McCants, Fran Vázquez, Sean May)?",
+ "decider": "Indiana Pacers front office (engine draw)",
+ "options": {
+  "Rashad McCants": 0.992179,
+  "Fran Vázquez": 0.005964,
+  "Sean May": 0.001857
+ },
+ "basis": "Tier 3 of the draft-night board; middle club; utilities Rashad McCants 2.16, Fran Vázquez 1.55, Sean May 1.41 (runtime/draft.py)."
+}

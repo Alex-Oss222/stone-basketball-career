@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Memphis Grizzlies front office (engine draw)",
+ "event_id": "2005-draft-pick-14",
+ "kind": "decision",
+ "options": {
+  "Charlie Villanueva": 0.405092,
+  "Fran V\u00e1zquez": 0.144542,
+  "Sean May": 0.450366
+ },
+ "outcome": "Charlie Villanueva",
+ "question": "2005 draft, No. 14: whom does Memphis Grizzlies select (Sean May, Charlie Villanueva, Fran V\u00e1zquez)?"
+}

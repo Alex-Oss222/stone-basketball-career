@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-14",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 14: whom does Memphis Grizzlies select (Sean May, Charlie Villanueva, Fran Vázquez)?",
+ "decider": "Memphis Grizzlies front office (engine draw)",
+ "options": {
+  "Sean May": 0.450366,
+  "Charlie Villanueva": 0.405092,
+  "Fran Vázquez": 0.144542
+ },
+ "basis": "Tier 3 of the draft-night board; middle club; utilities Sean May 2.16, Charlie Villanueva 2.15, Fran Vázquez 2.03 (runtime/draft.py)."
+}

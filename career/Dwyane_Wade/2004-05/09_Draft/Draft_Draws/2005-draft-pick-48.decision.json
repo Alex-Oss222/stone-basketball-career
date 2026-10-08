@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-48",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 48: whom does Detroit Pistons select (Axel Hervelle, Randolph Morris, Monta Ellis)?",
+ "decider": "Detroit Pistons front office (engine draw)",
+ "options": {
+  "Axel Hervelle": 0.350505,
+  "Randolph Morris": 0.328078,
+  "Monta Ellis": 0.321417
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Axel Hervelle 0.92, Randolph Morris 0.91, Monta Ellis 0.91 (runtime/draft.py)."
+}

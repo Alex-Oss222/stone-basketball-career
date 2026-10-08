@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Charlotte Bobcats front office (engine draw)",
+ "event_id": "2005-draft-pick-31",
+ "kind": "decision",
+ "options": {
+  "Amir Johnson": 0.313474,
+  "Andray Blatche": 0.27494,
+  "Ricky S\u00e1nchez": 0.411586
+ },
+ "outcome": "Andray Blatche",
+ "question": "2005 draft, No. 31: whom does Charlotte Bobcats select (Ricky S\u00e1nchez, Amir Johnson, Andray Blatche)?"
+}

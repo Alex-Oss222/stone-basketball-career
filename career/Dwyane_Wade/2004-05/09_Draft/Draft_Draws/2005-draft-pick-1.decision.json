@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-1",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 1: whom does Charlotte Bobcats select (Andrew Bogut, Marvin Williams, Chris Paul)?",
+ "decider": "Charlotte Bobcats front office (engine draw)",
+ "options": {
+  "Andrew Bogut": 0.931627,
+  "Marvin Williams": 0.068093,
+  "Chris Paul": 0.00028
+ },
+ "basis": "Tier 1 of the draft-night board; rebuilding club; utilities Andrew Bogut 6.76, Marvin Williams 6.44, Chris Paul 5.78 (runtime/draft.py)."
+}

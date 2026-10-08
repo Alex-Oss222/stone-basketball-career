@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-40",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 40: whom does Los Angeles Clippers select (Ryan Gomes, Jason Maxiell, Erazem Lorbek)?",
+ "decider": "Los Angeles Clippers front office (engine draw)",
+ "options": {
+  "Ryan Gomes": 0.417067,
+  "Jason Maxiell": 0.32823,
+  "Erazem Lorbek": 0.254703
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Ryan Gomes 0.97, Jason Maxiell 0.94, Erazem Lorbek 0.91 (runtime/draft.py)."
+}

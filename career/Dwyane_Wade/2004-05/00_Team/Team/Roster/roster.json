@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2005-01-24",
+ "as_of": "2005-06-28",
  "season": "2004-05",
  "team": "Miami Heat",
  "roster_kind": "team_control_register",
@@ -207,11 +207,11 @@
    "positions": [
     "SG"
    ],
-   "working_role": "Unsigned draft rights (not on the roster)",
+   "working_role": "Left Miami (rights released)",
    "player_card": "../Player_Cards/bernard_robinson.md",
    "bbr_id": "robinbe01",
-   "status": "unsigned_draft_rights",
-   "control": "Unsigned draft rights: No. 51 pick of the 2004 draft."
+   "status": "rights_released",
+   "control": "June 28, 2005: Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40). He is no longer under Miami's control."
   },
   {
    "id": "christian_drejer",
@@ -219,11 +219,11 @@
    "positions": [
     "SF"
    ],
-   "working_role": "Unsigned draft rights (not on the roster)",
+   "working_role": "Left Miami (rights released)",
    "player_card": "../Player_Cards/christian_drejer.md",
    "bbr_id": "drejech01",
-   "status": "unsigned_draft_rights",
-   "control": "Unsigned draft rights: No. 54 pick of the 2004 draft."
+   "status": "rights_released",
+   "control": "June 28, 2005: Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40). He is no longer under Miami's control."
   },
   {
    "id": "stephen_jackson",

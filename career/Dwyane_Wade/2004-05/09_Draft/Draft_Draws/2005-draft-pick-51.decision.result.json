@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "Detroit Pistons front office (engine draw)",
+ "event_id": "2005-draft-pick-51",
+ "kind": "decision",
+ "options": {
+  "Dijon Thompson": 0.637734,
+  "Ersan \u0130lyasova": 0.362266
+ },
+ "outcome": "Ersan \u0130lyasova",
+ "question": "2005 draft, No. 51: whom does Detroit Pistons select (Dijon Thompson, Ersan \u0130lyasova)?"
+}

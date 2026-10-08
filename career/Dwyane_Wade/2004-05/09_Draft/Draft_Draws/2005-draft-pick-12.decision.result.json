@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Seattle SuperSonics front office (engine draw)",
+ "event_id": "2005-draft-pick-12",
+ "kind": "decision",
+ "options": {
+  "Andrew Bynum": 0.734002,
+  "Rashad McCants": 0.133907,
+  "Sean May": 0.132091
+ },
+ "outcome": "Andrew Bynum",
+ "question": "2005 draft, No. 12: whom does Seattle SuperSonics select (Andrew Bynum, Rashad McCants, Sean May)?"
+}

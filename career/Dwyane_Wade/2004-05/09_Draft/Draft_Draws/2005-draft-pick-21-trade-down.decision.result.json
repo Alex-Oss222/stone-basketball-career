@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "Phoenix Suns front office (engine draw)",
+ "event_id": "2005-draft-pick-21-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "accept",
+ "question": "2005 draft: does Phoenix Suns trade No. 21 to Sacramento Kings for No. 24 and its 2006 second-round pick?"
+}

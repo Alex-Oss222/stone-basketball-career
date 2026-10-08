@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Utah Jazz front office (engine draw)",
+ "event_id": "2005-draft-pick-46",
+ "kind": "decision",
+ "options": {
+  "Bracey Wright": 0.186136,
+  "Lou Williams": 0.490472,
+  "Monta Ellis": 0.323392
+ },
+ "outcome": "Bracey Wright",
+ "question": "2005 draft, No. 46: whom does Utah Jazz select (Lou Williams, Monta Ellis, Bracey Wright)?"
+}

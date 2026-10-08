@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-37",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 37: whom does Milwaukee Bucks select (Ryan Gomes, Jason Maxiell, Brandon Bass)?",
+ "decider": "Milwaukee Bucks front office (engine draw)",
+ "options": {
+  "Ryan Gomes": 0.414585,
+  "Jason Maxiell": 0.326277,
+  "Brandon Bass": 0.259138
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Ryan Gomes 0.97, Jason Maxiell 0.94, Brandon Bass 0.91 (runtime/draft.py)."
+}

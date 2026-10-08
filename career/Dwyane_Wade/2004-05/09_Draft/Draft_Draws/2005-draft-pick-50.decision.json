@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-50",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 50: whom does Golden State Warriors select (Dijon Thompson, Axel Hervelle, Ersan İlyasova)?",
+ "decider": "Golden State Warriors front office (engine draw)",
+ "options": {
+  "Dijon Thompson": 0.51493,
+  "Axel Hervelle": 0.324715,
+  "Ersan İlyasova": 0.160355
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Dijon Thompson 0.90, Axel Hervelle 0.84, Ersan İlyasova 0.76 (runtime/draft.py)."
+}

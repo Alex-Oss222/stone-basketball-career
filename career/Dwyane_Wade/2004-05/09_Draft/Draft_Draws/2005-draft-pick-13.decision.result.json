@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Indiana Pacers front office (engine draw)",
+ "event_id": "2005-draft-pick-13",
+ "kind": "decision",
+ "options": {
+  "Fran V\u00e1zquez": 0.005964,
+  "Rashad McCants": 0.992179,
+  "Sean May": 0.001857
+ },
+ "outcome": "Rashad McCants",
+ "question": "2005 draft, No. 13: whom does Indiana Pacers select (Rashad McCants, Fran V\u00e1zquez, Sean May)?"
+}

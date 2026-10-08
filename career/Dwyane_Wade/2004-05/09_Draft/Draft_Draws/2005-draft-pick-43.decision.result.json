@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Portland Trail Blazers front office (engine draw)",
+ "event_id": "2005-draft-pick-43",
+ "kind": "decision",
+ "options": {
+  "Bracey Wright": 0.324013,
+  "Daniel Ewing": 0.335672,
+  "Von Wafer": 0.340315
+ },
+ "outcome": "Daniel Ewing",
+ "question": "2005 draft, No. 43: whom does Portland Trail Blazers select (Von Wafer, Daniel Ewing, Bracey Wright)?"
+}

@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-41",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 41: whom does Seattle SuperSonics select (Nate Robinson, Jason Maxiell, Von Wafer)?",
+ "decider": "Seattle SuperSonics front office (engine draw)",
+ "options": {
+  "Nate Robinson": 0.365168,
+  "Jason Maxiell": 0.350149,
+  "Von Wafer": 0.284683
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Nate Robinson 0.95, Jason Maxiell 0.94, Von Wafer 0.92 (runtime/draft.py)."
+}

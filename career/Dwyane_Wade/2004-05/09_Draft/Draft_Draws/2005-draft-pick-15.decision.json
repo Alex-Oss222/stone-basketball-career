@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-15",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 15: whom does Detroit Pistons select (Sean May, Fran Vázquez, Yaroslav Korolev)?",
+ "decider": "Detroit Pistons front office (engine draw)",
+ "options": {
+  "Sean May": 0.655146,
+  "Fran Vázquez": 0.210266,
+  "Yaroslav Korolev": 0.134588
+ },
+ "basis": "Tier 3 of the draft-night board; middle club; utilities Sean May 2.16, Fran Vázquez 2.03, Yaroslav Korolev 1.97 (runtime/draft.py)."
+}

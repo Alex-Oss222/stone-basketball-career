@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-pick-19-trade-down",
+ "date": "2005-06-28",
+ "question": "2005 draft: does Golden State Warriors trade No. 19 to Atlanta Hawks for No. 20 and its 2006 second-round pick?",
+ "decider": "Golden State Warriors front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "8 players left in tier 4; Atlanta Hawks values its target 1.18x its expected pick; chart value No. 19 1.47 vs No. 20 1.39 + a 2006 second-rounder (runtime/draft.py)."
+}

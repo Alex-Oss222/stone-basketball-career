@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Boston Celtics front office (engine draw)",
+ "event_id": "2005-draft-pick-54",
+ "kind": "decision",
+ "options": {
+  "Micka\u00ebl Gelabale": 0.269979,
+  "Ronny Turiaf": 0.25272,
+  "Travis Diener": 0.477301
+ },
+ "outcome": "Ronny Turiaf",
+ "question": "2005 draft, No. 54: whom does Boston Celtics select (Travis Diener, Micka\u00ebl Gelabale, Ronny Turiaf)?"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "Phoenix Suns front office (engine draw)",
+ "event_id": "2005-draft-pick-60",
+ "kind": "decision",
+ "options": {
+  "Marcin Gortat": 0.313826,
+  "Micka\u00ebl Gelabale": 0.686174
+ },
+ "outcome": "Micka\u00ebl Gelabale",
+ "question": "2005 draft, No. 60: whom does Phoenix Suns select (Micka\u00ebl Gelabale, Marcin Gortat)?"
+}

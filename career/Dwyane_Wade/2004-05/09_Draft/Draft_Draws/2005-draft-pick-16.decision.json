@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-pick-16",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 16: whom does Denver Nuggets select (Yaroslav Korolev, Fran Vázquez)?",
+ "decider": "Denver Nuggets front office (engine draw)",
+ "options": {
+  "Yaroslav Korolev": 0.985295,
+  "Fran Vázquez": 0.014705
+ },
+ "basis": "Tier 3 of the draft-night board; rebuilding club; utilities Yaroslav Korolev 3.35, Fran Vázquez 2.85 (runtime/draft.py)."
+}

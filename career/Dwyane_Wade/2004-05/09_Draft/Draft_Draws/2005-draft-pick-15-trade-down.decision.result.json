@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "Portland Trail Blazers front office (engine draw)",
+ "event_id": "2005-draft-pick-15-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "accept",
+ "question": "2005 draft: does Portland Trail Blazers trade No. 15 to Detroit Pistons for No. 18 and its 2006 second-round pick?"
+}

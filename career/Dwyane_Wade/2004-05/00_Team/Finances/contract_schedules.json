@@ -554,7 +554,7 @@
   {
    "player": "Bernard Robinson",
    "bbr_id": "robinbe01",
-   "status": "unsigned_draft_rights",
+   "status": "rights_released",
    "schedule": {},
    "amount_kind": {},
    "draft_pick": 51,
@@ -567,7 +567,7 @@
   {
    "player": "Christian Drejer",
    "bbr_id": "drejech01",
-   "status": "unsigned_draft_rights",
+   "status": "rights_released",
    "schedule": {},
    "amount_kind": {},
    "draft_pick": 54,

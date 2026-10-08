@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-42",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 42: whom does Orlando Magic select (Jason Maxiell, Erazem Lorbek, Axel Hervelle)?",
+ "decider": "Orlando Magic front office (engine draw)",
+ "options": {
+  "Jason Maxiell": 0.452763,
+  "Erazem Lorbek": 0.351338,
+  "Axel Hervelle": 0.195899
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Jason Maxiell 0.94, Erazem Lorbek 0.91, Axel Hervelle 0.84 (runtime/draft.py)."
+}

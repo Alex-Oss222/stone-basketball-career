@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-pick-25",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 25: whom does Dallas Mavericks select (Martynas Andriuškevičius, C.J. Miles)?",
+ "decider": "Dallas Mavericks front office (engine draw)",
+ "options": {
+  "Martynas Andriuškevičius": 0.861296,
+  "C.J. Miles": 0.138704
+ },
+ "basis": "Tier 4 of the draft-night board; contending club; utilities Martynas Andriuškevičius 0.94, C.J. Miles 0.72 (runtime/draft.py)."
+}

@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-53",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 53: whom does Dallas Mavericks select (Travis Diener, Robert Whaley, Mile Ilić)?",
+ "decider": "Dallas Mavericks front office (engine draw)",
+ "options": {
+  "Travis Diener": 0.607981,
+  "Robert Whaley": 0.21083,
+  "Mile Ilić": 0.181189
+ },
+ "basis": "Tier 6 of the draft-night board; contending club; utilities Travis Diener 0.76, Robert Whaley 0.63, Mile Ilić 0.61 (runtime/draft.py)."
+}

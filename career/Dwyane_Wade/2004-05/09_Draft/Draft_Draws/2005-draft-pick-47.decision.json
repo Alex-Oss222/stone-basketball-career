@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-47",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 47: whom does Los Angeles Lakers select (Monta Ellis, Lou Williams, Dijon Thompson)?",
+ "decider": "Los Angeles Lakers front office (engine draw)",
+ "options": {
+  "Monta Ellis": 0.357266,
+  "Lou Williams": 0.329665,
+  "Dijon Thompson": 0.313069
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Monta Ellis 1.00, Lou Williams 0.99, Dijon Thompson 0.98 (runtime/draft.py)."
+}

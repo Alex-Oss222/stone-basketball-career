@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Cleveland Cavaliers front office (engine draw)",
+ "event_id": "2005-draft-pick-55",
+ "kind": "decision",
+ "options": {
+  "Marcin Gortat": 0.107362,
+  "Robert Whaley": 0.258711,
+  "Travis Diener": 0.633927
+ },
+ "outcome": "Robert Whaley",
+ "question": "2005 draft, No. 55: whom does Cleveland Cavaliers select (Travis Diener, Robert Whaley, Marcin Gortat)?"
+}

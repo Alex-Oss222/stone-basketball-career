@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Chicago Bulls front office (engine draw)",
+ "event_id": "2005-draft-pick-22",
+ "kind": "decision",
+ "options": {
+  "Ike Diogu": 0.225833,
+  "Johan Petro": 0.64252,
+  "Martynas Andriu\u0161kevi\u010dius": 0.131647
+ },
+ "outcome": "Johan Petro",
+ "question": "2005 draft, No. 22: whom does Chicago Bulls select (Johan Petro, Ike Diogu, Martynas Andriu\u0161kevi\u010dius)?"
+}

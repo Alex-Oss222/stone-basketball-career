@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "New Jersey Nets front office (engine draw)",
+ "event_id": "2005-draft-pick-35",
+ "kind": "decision",
+ "options": {
+  "Brandon Bass": 0.44683,
+  "Linas Kleiza": 0.271423,
+  "Ryan Gomes": 0.281747
+ },
+ "outcome": "Linas Kleiza",
+ "question": "2005 draft, No. 35: whom does New Jersey Nets select (Brandon Bass, Ryan Gomes, Linas Kleiza)?"
+}

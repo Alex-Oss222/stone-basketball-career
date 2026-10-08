@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "Denver Nuggets front office (engine draw)",
+ "event_id": "2005-draft-pick-16",
+ "kind": "decision",
+ "options": {
+  "Fran V\u00e1zquez": 0.014705,
+  "Yaroslav Korolev": 0.985295
+ },
+ "outcome": "Yaroslav Korolev",
+ "question": "2005 draft, No. 16: whom does Denver Nuggets select (Yaroslav Korolev, Fran V\u00e1zquez)?"
+}

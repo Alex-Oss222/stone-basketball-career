@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-46",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 46: whom does Utah Jazz select (Lou Williams, Monta Ellis, Bracey Wright)?",
+ "decider": "Utah Jazz front office (engine draw)",
+ "options": {
+  "Lou Williams": 0.490472,
+  "Monta Ellis": 0.323392,
+  "Bracey Wright": 0.186136
+ },
+ "basis": "Tier 5 of the draft-night board; rebuilding club; utilities Lou Williams 1.53, Monta Ellis 1.48, Bracey Wright 1.42 (runtime/draft.py)."
+}

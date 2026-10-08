@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-pick-21-trade-down",
+ "date": "2005-06-28",
+ "question": "2005 draft: does Phoenix Suns trade No. 21 to Sacramento Kings for No. 24 and its 2006 second-round pick?",
+ "decider": "Phoenix Suns front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "6 players left in tier 4; Sacramento Kings values its target 1.22x its expected pick; chart value No. 21 1.32 vs No. 24 1.12 + a 2006 second-rounder (runtime/draft.py)."
+}

@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Boston Celtics front office (engine draw)",
+ "event_id": "2005-draft-pick-23",
+ "kind": "decision",
+ "options": {
+  "Ike Diogu": 0.659047,
+  "Julius Hodge": 0.141399,
+  "Martynas Andriu\u0161kevi\u010dius": 0.199554
+ },
+ "outcome": "Ike Diogu",
+ "question": "2005 draft, No. 23: whom does Boston Celtics select (Ike Diogu, Martynas Andriu\u0161kevi\u010dius, Julius Hodge)?"
+}

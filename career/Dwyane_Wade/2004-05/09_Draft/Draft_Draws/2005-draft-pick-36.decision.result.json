@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "New York Knicks front office (engine draw)",
+ "event_id": "2005-draft-pick-36",
+ "kind": "decision",
+ "options": {
+  "Luther Head": 0.442385,
+  "Nate Robinson": 0.25136,
+  "Ryan Gomes": 0.306255
+ },
+ "outcome": "Luther Head",
+ "question": "2005 draft, No. 36: whom does New York Knicks select (Luther Head, Ryan Gomes, Nate Robinson)?"
+}

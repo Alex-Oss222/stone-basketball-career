@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "Detroit Pistons front office (engine draw)",
+ "event_id": "2005-draft-pick-48-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "decline",
+ "question": "2005 draft: does Detroit Pistons trade No. 48 to Cleveland Cavaliers for No. 52 and its 2006 second-round pick?"
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-pick-45-trade-down",
+ "date": "2005-06-28",
+ "question": "2005 draft: does Indiana Pacers trade No. 45 to Utah Jazz for No. 51 and its 2006 second-round pick?",
+ "decider": "Indiana Pacers front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "8 players left in tier 5; Utah Jazz values its target 1.22x its expected pick; chart value No. 45 0.35 vs No. 51 0.25 + a 2006 second-rounder (runtime/draft.py)."
+}

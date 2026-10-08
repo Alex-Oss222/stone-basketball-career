@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-31",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 31: whom does Charlotte Bobcats select (Ricky Sánchez, Amir Johnson, Andray Blatche)?",
+ "decider": "Charlotte Bobcats front office (engine draw)",
+ "options": {
+  "Ricky Sánchez": 0.411586,
+  "Amir Johnson": 0.313474,
+  "Andray Blatche": 0.27494
+ },
+ "basis": "Tier 5 of the draft-night board; rebuilding club; utilities Ricky Sánchez 1.61, Amir Johnson 1.58, Andray Blatche 1.56 (runtime/draft.py)."
+}

@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-4",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 4: whom does New Jersey Nets select (Channing Frye, Danny Granger, Gerald Green)?",
+ "decider": "New Jersey Nets front office (engine draw)",
+ "options": {
+  "Channing Frye": 0.733309,
+  "Danny Granger": 0.249761,
+  "Gerald Green": 0.01693
+ },
+ "basis": "Tier 2 of the draft-night board; rebuilding club; utilities Channing Frye 4.50, Danny Granger 4.37, Gerald Green 4.05 (runtime/draft.py)."
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "Orlando Magic front office (engine draw)",
+ "event_id": "2005-draft-pick-11-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "decline",
+ "question": "2005 draft: does Orlando Magic trade No. 11 to Indiana Pacers for No. 13 and its 2006 second-round pick?"
+}

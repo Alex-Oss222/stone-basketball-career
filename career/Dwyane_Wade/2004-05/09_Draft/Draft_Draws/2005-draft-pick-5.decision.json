@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-5",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 5: whom does New Orleans/Oklahoma City Hornets select (Gerald Green, Danny Granger, Martell Webster)?",
+ "decider": "New Orleans/Oklahoma City Hornets front office (engine draw)",
+ "options": {
+  "Gerald Green": 0.438981,
+  "Danny Granger": 0.402329,
+  "Martell Webster": 0.15869
+ },
+ "basis": "Tier 2 of the draft-night board; rebuilding club; utilities Gerald Green 4.60, Danny Granger 4.59, Martell Webster 4.48 (runtime/draft.py)."
+}

@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Golden State Warriors front office (engine draw)",
+ "event_id": "2005-draft-pick-50",
+ "kind": "decision",
+ "options": {
+  "Axel Hervelle": 0.324715,
+  "Dijon Thompson": 0.51493,
+  "Ersan \u0130lyasova": 0.160355
+ },
+ "outcome": "Axel Hervelle",
+ "question": "2005 draft, No. 50: whom does Golden State Warriors select (Dijon Thompson, Axel Hervelle, Ersan \u0130lyasova)?"
+}

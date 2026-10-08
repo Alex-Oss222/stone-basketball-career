@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Miami Heat front office (engine draw)",
+ "event_id": "2005-draft-pick-58",
+ "kind": "decision",
+ "options": {
+  "David Lee": 0.280824,
+  "Micka\u00ebl Gelabale": 0.390535,
+  "Uro\u0161 Slokar": 0.328641
+ },
+ "outcome": "Uro\u0161 Slokar",
+ "question": "2005 draft, No. 58: whom does Miami Heat select (Micka\u00ebl Gelabale, Uro\u0161 Slokar, David Lee)?"
+}

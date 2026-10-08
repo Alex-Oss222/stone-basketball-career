@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "kind": "required_tenders",
+ "season": "2004-05",
+ "rule": "Required Tenders and the end of draft rights by draft year (1999 CBA Art. X §3 and Art. I (vv); 2005 FAQ Q43 and Q102): see runtime/draft_rights.py.",
+ "tenders": [],
+ "rights_ended": [
+  {
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "draft_year": 2004,
+   "pick": 51,
+   "round": 2,
+   "date": "2005-06-28",
+   "recorded": "2005-06-28",
+   "status": "rights_released",
+   "basis": "Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40); runtime/draft_rights.end_rights"
+  },
+  {
+   "player": "Christian Drejer",
+   "bbr_id": "drejech01",
+   "draft_year": 2004,
+   "pick": 54,
+   "round": 2,
+   "date": "2005-06-28",
+   "recorded": "2005-06-28",
+   "status": "rights_released",
+   "basis": "Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40); runtime/draft_rights.end_rights"
+  }
+ ]
+}

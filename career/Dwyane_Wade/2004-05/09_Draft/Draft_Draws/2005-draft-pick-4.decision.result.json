@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "New Jersey Nets front office (engine draw)",
+ "event_id": "2005-draft-pick-4",
+ "kind": "decision",
+ "options": {
+  "Channing Frye": 0.733309,
+  "Danny Granger": 0.249761,
+  "Gerald Green": 0.01693
+ },
+ "outcome": "Channing Frye",
+ "question": "2005 draft, No. 4: whom does New Jersey Nets select (Channing Frye, Danny Granger, Gerald Green)?"
+}

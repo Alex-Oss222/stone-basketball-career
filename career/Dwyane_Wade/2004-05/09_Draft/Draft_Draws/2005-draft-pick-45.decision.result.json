@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Indiana Pacers front office (engine draw)",
+ "event_id": "2005-draft-pick-45",
+ "kind": "decision",
+ "options": {
+  "Bracey Wright": 0.327312,
+  "Monta Ellis": 0.327297,
+  "Von Wafer": 0.345391
+ },
+ "outcome": "Von Wafer",
+ "question": "2005 draft, No. 45: whom does Indiana Pacers select (Von Wafer, Bracey Wright, Monta Ellis)?"
+}

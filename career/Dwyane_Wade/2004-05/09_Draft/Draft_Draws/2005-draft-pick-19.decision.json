@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-19",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 19: whom does Golden State Warriors select (Joey Graham, Johan Petro, Roko Ukić)?",
+ "decider": "Golden State Warriors front office (engine draw)",
+ "options": {
+  "Joey Graham": 0.657875,
+  "Johan Petro": 0.221894,
+  "Roko Ukić": 0.120231
+ },
+ "basis": "Tier 4 of the draft-night board; middle club; utilities Joey Graham 1.66, Johan Petro 1.53, Roko Ukić 1.46 (runtime/draft.py)."
+}

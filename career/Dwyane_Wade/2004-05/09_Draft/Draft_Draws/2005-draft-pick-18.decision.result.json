@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Portland Trail Blazers front office (engine draw)",
+ "event_id": "2005-draft-pick-18",
+ "kind": "decision",
+ "options": {
+  "Francisco Garc\u00eda": 0.388695,
+  "Joey Graham": 0.369997,
+  "Johan Petro": 0.241308
+ },
+ "outcome": "Francisco Garc\u00eda",
+ "question": "2005 draft, No. 18: whom does Portland Trail Blazers select (Francisco Garc\u00eda, Joey Graham, Johan Petro)?"
+}

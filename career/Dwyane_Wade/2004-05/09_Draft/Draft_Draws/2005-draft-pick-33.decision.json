@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-33",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 33: whom does Denver Nuggets select (Ricky Sánchez, Ian Mahinmi, Brandon Bass)?",
+ "decider": "Denver Nuggets front office (engine draw)",
+ "options": {
+  "Ricky Sánchez": 0.602463,
+  "Ian Mahinmi": 0.29199,
+  "Brandon Bass": 0.105547
+ },
+ "basis": "Tier 5 of the draft-night board; rebuilding club; utilities Ricky Sánchez 1.77, Ian Mahinmi 1.68, Brandon Bass 1.56 (runtime/draft.py)."
+}

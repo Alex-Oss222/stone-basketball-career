@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-54",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 54: whom does Boston Celtics select (Travis Diener, Mickaël Gelabale, Ronny Turiaf)?",
+ "decider": "Boston Celtics front office (engine draw)",
+ "options": {
+  "Travis Diener": 0.477301,
+  "Mickaël Gelabale": 0.269979,
+  "Ronny Turiaf": 0.25272
+ },
+ "basis": "Tier 6 of the draft-night board; contending club; utilities Travis Diener 0.76, Mickaël Gelabale 0.69, Ronny Turiaf 0.68 (runtime/draft.py)."
+}

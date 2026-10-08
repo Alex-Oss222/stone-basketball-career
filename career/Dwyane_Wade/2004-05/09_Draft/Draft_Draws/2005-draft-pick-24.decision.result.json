@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Phoenix Suns front office (engine draw)",
+ "event_id": "2005-draft-pick-24",
+ "kind": "decision",
+ "options": {
+  "C.J. Miles": 0.127657,
+  "Julius Hodge": 0.646803,
+  "Martynas Andriu\u0161kevi\u010dius": 0.22554
+ },
+ "outcome": "Julius Hodge",
+ "question": "2005 draft, No. 24: whom does Phoenix Suns select (Julius Hodge, Martynas Andriu\u0161kevi\u010dius, C.J. Miles)?"
+}

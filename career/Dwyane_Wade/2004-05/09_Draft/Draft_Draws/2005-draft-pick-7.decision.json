@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-7",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 7: whom does Milwaukee Bucks select (Gerald Green, Raymond Felton, Martell Webster)?",
+ "decider": "Milwaukee Bucks front office (engine draw)",
+ "options": {
+  "Gerald Green": 0.664113,
+  "Raymond Felton": 0.199994,
+  "Martell Webster": 0.135893
+ },
+ "basis": "Tier 2 of the draft-night board; middle club; utilities Gerald Green 2.83, Raymond Felton 2.68, Martell Webster 2.64 (runtime/draft.py)."
+}

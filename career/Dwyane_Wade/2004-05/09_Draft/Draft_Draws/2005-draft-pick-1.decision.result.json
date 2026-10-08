@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Charlotte Bobcats front office (engine draw)",
+ "event_id": "2005-draft-pick-1",
+ "kind": "decision",
+ "options": {
+  "Andrew Bogut": 0.931627,
+  "Chris Paul": 0.00028,
+  "Marvin Williams": 0.068093
+ },
+ "outcome": "Marvin Williams",
+ "question": "2005 draft, No. 1: whom does Charlotte Bobcats select (Andrew Bogut, Marvin Williams, Chris Paul)?"
+}

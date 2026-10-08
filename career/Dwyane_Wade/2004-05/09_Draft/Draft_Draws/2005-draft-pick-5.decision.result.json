@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "New Orleans/Oklahoma City Hornets front office (engine draw)",
+ "event_id": "2005-draft-pick-5",
+ "kind": "decision",
+ "options": {
+  "Danny Granger": 0.402329,
+  "Gerald Green": 0.438981,
+  "Martell Webster": 0.15869
+ },
+ "outcome": "Danny Granger",
+ "question": "2005 draft, No. 5: whom does New Orleans/Oklahoma City Hornets select (Gerald Green, Danny Granger, Martell Webster)?"
+}

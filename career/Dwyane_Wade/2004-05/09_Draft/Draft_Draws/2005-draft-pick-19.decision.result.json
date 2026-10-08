@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Golden State Warriors front office (engine draw)",
+ "event_id": "2005-draft-pick-19",
+ "kind": "decision",
+ "options": {
+  "Joey Graham": 0.657875,
+  "Johan Petro": 0.221894,
+  "Roko Uki\u0107": 0.120231
+ },
+ "outcome": "Joey Graham",
+ "question": "2005 draft, No. 19: whom does Golden State Warriors select (Joey Graham, Johan Petro, Roko Uki\u0107)?"
+}

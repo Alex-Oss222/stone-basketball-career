@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-56",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 56: whom does Minnesota Timberwolves select (Travis Diener, Mickaël Gelabale, Lawrence Roberts)?",
+ "decider": "Minnesota Timberwolves front office (engine draw)",
+ "options": {
+  "Travis Diener": 0.615773,
+  "Mickaël Gelabale": 0.209406,
+  "Lawrence Roberts": 0.174821
+ },
+ "basis": "Tier 6 of the draft-night board; middle club; utilities Travis Diener 0.99, Mickaël Gelabale 0.86, Lawrence Roberts 0.83 (runtime/draft.py)."
+}

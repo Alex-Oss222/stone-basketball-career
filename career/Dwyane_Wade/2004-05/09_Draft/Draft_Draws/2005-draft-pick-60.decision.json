@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-pick-60",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 60: whom does Phoenix Suns select (Mickaël Gelabale, Marcin Gortat)?",
+ "decider": "Phoenix Suns front office (engine draw)",
+ "options": {
+  "Mickaël Gelabale": 0.686174,
+  "Marcin Gortat": 0.313826
+ },
+ "basis": "Tier 6 of the draft-night board; contending club; utilities Mickaël Gelabale 0.66, Marcin Gortat 0.56 (runtime/draft.py)."
+}

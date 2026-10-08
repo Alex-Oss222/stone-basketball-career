@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-35",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 35: whom does New Jersey Nets select (Brandon Bass, Ryan Gomes, Linas Kleiza)?",
+ "decider": "New Jersey Nets front office (engine draw)",
+ "options": {
+  "Brandon Bass": 0.44683,
+  "Ryan Gomes": 0.281747,
+  "Linas Kleiza": 0.271423
+ },
+ "basis": "Tier 5 of the draft-night board; rebuilding club; utilities Brandon Bass 1.35, Ryan Gomes 1.30, Linas Kleiza 1.29 (runtime/draft.py)."
+}

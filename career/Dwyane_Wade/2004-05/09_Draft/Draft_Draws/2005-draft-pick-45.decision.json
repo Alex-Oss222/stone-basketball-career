@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-45",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 45: whom does Indiana Pacers select (Von Wafer, Bracey Wright, Monta Ellis)?",
+ "decider": "Indiana Pacers front office (engine draw)",
+ "options": {
+  "Von Wafer": 0.345391,
+  "Bracey Wright": 0.327312,
+  "Monta Ellis": 0.327297
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Von Wafer 1.01, Bracey Wright 1.00, Monta Ellis 1.00 (runtime/draft.py)."
+}

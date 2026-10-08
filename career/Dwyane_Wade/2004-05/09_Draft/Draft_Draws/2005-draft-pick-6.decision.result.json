@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "New York Knicks front office (engine draw)",
+ "event_id": "2005-draft-pick-6",
+ "kind": "decision",
+ "options": {
+  "Deron Williams": 0.784647,
+  "Gerald Green": 0.167772,
+  "Raymond Felton": 0.047581
+ },
+ "outcome": "Deron Williams",
+ "question": "2005 draft, No. 6: whom does New York Knicks select (Deron Williams, Gerald Green, Raymond Felton)?"
+}

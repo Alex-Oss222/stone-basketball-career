@@ -1,0 +1,12 @@
+{
+ "date": "2005-06-28",
+ "decider": "Los Angeles Lakers front office (engine draw)",
+ "event_id": "2005-draft-pick-46-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "accept",
+ "question": "2005 draft: does Los Angeles Lakers trade No. 46 to Utah Jazz for No. 51 and its 2006 second-round pick?"
+}

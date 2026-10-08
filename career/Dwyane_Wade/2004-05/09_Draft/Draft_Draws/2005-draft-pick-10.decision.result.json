@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Los Angeles Clippers front office (engine draw)",
+ "event_id": "2005-draft-pick-10",
+ "kind": "decision",
+ "options": {
+  "Andrew Bynum": 0.215703,
+  "Antoine Wright": 0.364834,
+  "Hakim Warrick": 0.419463
+ },
+ "outcome": "Antoine Wright",
+ "question": "2005 draft, No. 10: whom does Los Angeles Clippers select (Hakim Warrick, Antoine Wright, Andrew Bynum)?"
+}

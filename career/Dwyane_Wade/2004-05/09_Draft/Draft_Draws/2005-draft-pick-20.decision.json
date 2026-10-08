@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-20",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 20: whom does Atlanta Hawks select (Ike Diogu, Roko Ukić, Johan Petro)?",
+ "decider": "Atlanta Hawks front office (engine draw)",
+ "options": {
+  "Ike Diogu": 0.551716,
+  "Roko Ukić": 0.278704,
+  "Johan Petro": 0.16958
+ },
+ "basis": "Tier 4 of the draft-night board; middle club; utilities Ike Diogu 1.54, Roko Ukić 1.46, Johan Petro 1.40 (runtime/draft.py)."
+}

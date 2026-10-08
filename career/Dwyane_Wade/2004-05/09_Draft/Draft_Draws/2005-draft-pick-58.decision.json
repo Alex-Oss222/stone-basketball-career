@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-58",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 58: whom does Miami Heat select (Mickaël Gelabale, Uroš Slokar, David Lee)?",
+ "decider": "Miami Heat front office (engine draw)",
+ "options": {
+  "Mickaël Gelabale": 0.390535,
+  "Uroš Slokar": 0.328641,
+  "David Lee": 0.280824
+ },
+ "basis": "Tier 6 of the draft-night board; contending club; utilities Mickaël Gelabale 0.69, Uroš Slokar 0.67, David Lee 0.65 (runtime/draft.py)."
+}

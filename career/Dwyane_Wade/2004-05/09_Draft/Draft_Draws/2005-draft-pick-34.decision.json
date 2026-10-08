@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-34",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 34: whom does New Orleans/Oklahoma City Hornets select (Ian Mahinmi, Cenk Akyol, Lou Williams)?",
+ "decider": "New Orleans/Oklahoma City Hornets front office (engine draw)",
+ "options": {
+  "Ian Mahinmi": 0.430675,
+  "Cenk Akyol": 0.335022,
+  "Lou Williams": 0.234303
+ },
+ "basis": "Tier 5 of the draft-night board; rebuilding club; utilities Ian Mahinmi 1.53, Cenk Akyol 1.50, Lou Williams 1.46 (runtime/draft.py)."
+}

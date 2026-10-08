@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-draft-pick-8",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 8: whom does Houston Rockets select (Gerald Green, Martell Webster)?",
+ "decider": "Houston Rockets front office (engine draw)",
+ "options": {
+  "Gerald Green": 0.84103,
+  "Martell Webster": 0.15897
+ },
+ "basis": "Tier 2 of the draft-night board; middle club; utilities Gerald Green 2.97, Martell Webster 2.77 (runtime/draft.py)."
+}

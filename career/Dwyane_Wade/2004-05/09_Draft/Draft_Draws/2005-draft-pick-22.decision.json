@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-22",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 22: whom does Chicago Bulls select (Johan Petro, Ike Diogu, Martynas Andriuškevičius)?",
+ "decider": "Chicago Bulls front office (engine draw)",
+ "options": {
+  "Johan Petro": 0.64252,
+  "Ike Diogu": 0.225833,
+  "Martynas Andriuškevičius": 0.131647
+ },
+ "basis": "Tier 4 of the draft-night board; middle club; utilities Johan Petro 1.53, Ike Diogu 1.41, Martynas Andriuškevičius 1.34 (runtime/draft.py)."
+}

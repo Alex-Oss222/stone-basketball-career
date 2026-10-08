@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-57",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 57: whom does San Antonio Spurs select (Travis Diener, Marcin Gortat, Mickaël Gelabale)?",
+ "decider": "San Antonio Spurs front office (engine draw)",
+ "options": {
+  "Travis Diener": 0.892265,
+  "Marcin Gortat": 0.054547,
+  "Mickaël Gelabale": 0.053188
+ },
+ "basis": "Tier 6 of the draft-night board; contending club; utilities Travis Diener 0.83, Marcin Gortat 0.50, Mickaël Gelabale 0.49 (runtime/draft.py)."
+}

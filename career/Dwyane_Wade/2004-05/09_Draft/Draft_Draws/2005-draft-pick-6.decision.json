@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-draft-pick-6",
+ "date": "2005-06-28",
+ "question": "2005 draft, No. 6: whom does New York Knicks select (Deron Williams, Gerald Green, Raymond Felton)?",
+ "decider": "New York Knicks front office (engine draw)",
+ "options": {
+  "Deron Williams": 0.784647,
+  "Gerald Green": 0.167772,
+  "Raymond Felton": 0.047581
+ },
+ "basis": "Tier 2 of the draft-night board; middle club; utilities Deron Williams 3.15, Gerald Green 2.97, Raymond Felton 2.82 (runtime/draft.py)."
+}

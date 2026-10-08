@@ -1,0 +1,13 @@
+{
+ "date": "2005-06-28",
+ "decider": "Atlanta Hawks front office (engine draw)",
+ "event_id": "2005-draft-pick-20",
+ "kind": "decision",
+ "options": {
+  "Ike Diogu": 0.551716,
+  "Johan Petro": 0.16958,
+  "Roko Uki\u0107": 0.278704
+ },
+ "outcome": "Roko Uki\u0107",
+ "question": "2005 draft, No. 20: whom does Atlanta Hawks select (Ike Diogu, Roko Uki\u0107, Johan Petro)?"
+}
