@@ -1,13 +1,13 @@
 ---
 type: game
-status: scheduled
+status: played
 date: 2005-10-10
 opponent: San Antonio Spurs
 venue: home
 competition: preseason
 cup_stage:
 player_team: Miami Heat
-result:
+result: W 96-80
 reason:
 simulation_source: Railway engine (runtime/private_service.py)
 event_id: 2005-10-10-san-antonio-spurs-at-miami-heat
@@ -19,10 +19,68 @@ result_file: Game_1.result.json
 Player identity and statistics are generated here by `python scripts/update_player_reports.py`.
 Decisions remain in the owning phase/week note. A scheduled game has no statistical result.
 
+<!-- game-result:start -->
+## Result
+
+**San Antonio Spurs 80 at Miami Heat 96** · Miami Heat W 96-80 vs San Antonio Spurs · home (Miami Heat) · 2005-10-10
+
+Event `2005-10-10-san-antonio-spurs-at-miami-heat` · Railway engine (runtime/private_service.py) · result file [`Game_1.result.json`](Game_1.result.json) (the engine's answer as served; the note is the canonical record).
+
+Preseason result: evidence for the preseason record and the camp decisions only; it does not count in regular-season statistics.
+
+### Box score
+
+```text
+San Antonio Spurs 80 at Miami Heat 96
+2005-10-10  2005-06 preseason  event 2005-10-10-san-antonio-spurs-at-miami-heat
+Kernel 2003.11, calibrated on 2004-05 (imported_source)
+
+Period      1    2    3    4     T
+San Anto   21   20   18   21    80
+Miami He   14   31   25   26    96
+
+San Antonio Spurs
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Tim Duncan                39.5   24   8-15   0-1    8-8     3   8   3   1   4   3   5
+Tony Parker               22.5   11   3-7    1-1    4-4     1   0   2   1   0   1   4
+Manu Ginóbili             36.5   11   3-11   1-3    4-4     2   4   4   4   1   2   2
+Andrés Nocioni            36.1    7   3-18   0-6    1-2     0   5   1   1   0   2   3
+Keith Van Horn            27.2    7   1-7    1-4    4-4     0   3   3   1   0   3   1
+Rasho Nesterović          25.9   10   5-8    0-0    0-0     3   2   0   1   1   1   2
+Orien Greene              23.1    3   1-1    0-0    1-4     1   0   2   1   1   3   3
+Linton Johnson             9.4    5   1-3    1-2    2-2     0   3   0   0   0   1   1
+Travis Diener              5.2    0   0-0    0-0    0-0     0   0   0   0   0   0   0
+D.J. Mbenga                5.4    0   0-0    0-0    0-0     0   0   0   0   0   0   1
+Dwayne Jones               5.9    2   1-3    0-0    0-0     0   3   0   0   0   0   2
+Noel Felix                 3.3    0   0-0    0-0    0-0     1   0   0   0   0   1   1
+TEAM                     240.0   80  26-73   4-17  24-28   11  28  15  10   7  17  25
+
+Miami Heat
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Mike James                29.0   10   3-8    1-2    3-3     0   3   3   0   0   6   2
+Dwyane Wade               30.0   21   7-13   2-3    5-5     0   3   3   2   0   0   3
+Matt Harpring             30.1   10   4-11   0-1    2-3     3   5   3   0   2   5   2
+Donyell Marshall          27.6    6   2-8    0-4    2-2     0   4   1   1   1   0   2
+Brian Grant               29.9   16   7-13   2-3    0-0     3   6   1   2   1   1   5
+Mehmet Okur               20.8    9   2-7    0-1    5-6     0   3   1   0   1   0   1
+Anthony Johnson           17.9    4   1-2    0-1    2-2     2   1   5   0   0   0   2
+Caron Butler              15.3    7   3-4    0-0    1-1     2   5   0   1   0   1   0
+Sebastian Telfair         12.8    3   1-2    0-0    1-2     0   1   3   1   0   0   1
+Eddie Jones               12.4    3   1-3    1-1    0-0     0   1   1   1   0   0   0
+DeShawn Stevenson          8.9    3   1-2    0-0    1-1     0   1   0   0   0   1   1
+Mike Wilks                 5.4    4   1-1    0-0    2-2     0   1   0   1   0   3   0
+TEAM                     240.0   96  33-74   6-16  24-27   10  34  21   9   5  17  19
+```
+
+### Miami injuries
+
+No Miami injury was drawn in this game.
+<!-- game-result:end -->
+
 <!-- player-report:start -->
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2005-10-09](../../assets/stat_reports/personal_2005-06_2005-10-09.svg)
+![Player personal information and earned 2005-06 awards through 2005-10-10](../../assets/stat_reports/personal_2005-06_2005-10-10.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -47,7 +105,7 @@ Decisions remain in the owning phase/week note. A scheduled game has no statisti
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-10-09; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-10-10; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -55,7 +113,7 @@ No 2005-06 awards yet.
 
 ## Statistics
 
-As of **2005-10-09**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2005-10-10**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -73,7 +131,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-10-09, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-10-10, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 

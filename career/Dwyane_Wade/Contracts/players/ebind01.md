@@ -2,9 +2,9 @@
 
 # Contract | Ndudi Ebi
 
-Known through: 2005-10-09. [Open interactive contract](ebind01.html#contract) · [Contract history](ebind01.html#contract-history)
+Known through: 2005-10-10. [Open interactive contract](ebind01.html#contract) · [Contract history](ebind01.html#contract-history)
 
-Ndudi Ebi: No verified contract record. Evidence cutoff: 2005-10-09.
+Ndudi Ebi: No verified contract record. Evidence cutoff: 2005-10-10.
 
 ## Current contract
 

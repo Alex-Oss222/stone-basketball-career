@@ -2,9 +2,9 @@
 
 # Contract | Jason Collins
 
-Known through: 2005-10-09. [Open interactive contract](collija04.html#contract) · [Contract history](collija04.html#contract-history)
+Known through: 2005-10-10. [Open interactive contract](collija04.html#contract) · [Contract history](collija04.html#contract-history)
 
-Jason Collins: under contract. Evidence cutoff: 2005-10-09.
+Jason Collins: under contract. Evidence cutoff: 2005-10-10.
 
 ## Current contract
 
