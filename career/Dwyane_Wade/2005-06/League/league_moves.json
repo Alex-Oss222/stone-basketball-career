@@ -1,0 +1,444 @@
+{
+ "schema_version": 1,
+ "kind": "league_moves",
+ "season": "2005-06",
+ "entries": [
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-ratlith01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Theo Ratliff",
+   "bbr_id": "ratlith01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Theo Ratliff",
+    "bbr_id": "ratlith01",
+    "position": "C",
+    "games": 55,
+    "minutes": 1301
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 9.29 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-scalabr01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Brian Scalabrine",
+   "bbr_id": "scalabr01",
+   "from": null,
+   "to": "Boston Celtics",
+   "role": {
+    "player_id": "Brian Scalabrine",
+    "bbr_id": "scalabr01",
+    "position": "PF",
+    "games": 71,
+    "minutes": 938
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 8.98 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-waive-grahast01",
+   "date": "2005-11-01",
+   "kind": "waive",
+   "player": "Stephen Graham",
+   "bbr_id": "grahast01",
+   "from": "Dallas Mavericks",
+   "to": null,
+   "role": {
+    "player_id": "Stephen Graham",
+    "bbr_id": "grahast01",
+    "position": "SG",
+    "games": 22,
+    "minutes": 175
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-03"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-foylead01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Adonal Foyle",
+   "bbr_id": "foylead01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "role": {
+    "player_id": "Adonal Foyle",
+    "bbr_id": "foylead01",
+    "position": "C",
+    "games": 77,
+    "minutes": 1824
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 9.38 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-hartja01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Jason Hart",
+   "bbr_id": "hartja01",
+   "from": null,
+   "to": "Denver Nuggets",
+   "role": {
+    "player_id": "Jason Hart",
+    "bbr_id": "hartja01",
+    "position": "PG",
+    "games": 66,
+    "minutes": 818
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 8.68 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-bowenbr01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Bruce Bowen",
+   "bbr_id": "bowenbr01",
+   "from": null,
+   "to": "Denver Nuggets",
+   "role": {
+    "player_id": "Bruce Bowen",
+    "bbr_id": "bowenbr01",
+    "position": "SF",
+    "games": 82,
+    "minutes": 2755
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 7.92 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-cassesa01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Sam Cassell",
+   "bbr_id": "cassesa01",
+   "from": null,
+   "to": "Detroit Pistons",
+   "role": {
+    "player_id": "Sam Cassell",
+    "bbr_id": "cassesa01",
+    "position": "PG",
+    "games": 78,
+    "minutes": 2653
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 8.83 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-wellsbo01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Bonzi Wells",
+   "bbr_id": "wellsbo01",
+   "from": null,
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Bonzi Wells",
+    "bbr_id": "wellsbo01",
+    "position": "SG",
+    "games": 52,
+    "minutes": 1684
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 8.03 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-alstora01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Rafer Alston",
+   "bbr_id": "alstora01",
+   "from": null,
+   "to": "Milwaukee Bucks",
+   "role": {
+    "player_id": "Rafer Alston",
+    "bbr_id": "alstora01",
+    "position": "PG",
+    "games": 63,
+    "minutes": 2431
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 7.91 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-waive-headlu01",
+   "date": "2005-11-01",
+   "kind": "waive",
+   "player": "Luther Head",
+   "bbr_id": "headlu01",
+   "from": "New York Knicks",
+   "to": null,
+   "role": {
+    "player_id": "Luther Head",
+    "bbr_id": "headlu01",
+    "position": "SG",
+    "games": 80,
+    "minutes": 2310
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-03"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-willier01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Eric Williams",
+   "bbr_id": "willier01",
+   "from": null,
+   "to": "New York Knicks",
+   "role": {
+    "player_id": "Eric Williams",
+    "bbr_id": "willier01",
+    "position": "SF",
+    "games": 28,
+    "minutes": 352
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 7.6 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-waive-duhonch01",
+   "date": "2005-11-01",
+   "kind": "waive",
+   "player": "Chris Duhon",
+   "bbr_id": "duhonch01",
+   "from": "Orlando Magic",
+   "to": null,
+   "role": {
+    "player_id": "Chris Duhon",
+    "bbr_id": "duhonch01",
+    "position": "PG",
+    "games": 74,
+    "minutes": 2155
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-03"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-newblir01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Ira Newble",
+   "bbr_id": "newblir01",
+   "from": null,
+   "to": "Orlando Magic",
+   "role": {
+    "player_id": "Ira Newble",
+    "bbr_id": "newblir01",
+    "position": "SG",
+    "games": 36,
+    "minutes": 353
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 7.47 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-waive-bellch01",
+   "date": "2005-11-01",
+   "kind": "waive",
+   "player": "Charlie Bell",
+   "bbr_id": "bellch01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Charlie Bell",
+    "bbr_id": "bellch01",
+    "position": "SG",
+    "games": 59,
+    "minutes": 1283
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-03"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-vanexni01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Nick Van Exel",
+   "bbr_id": "vanexni01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Nick Van Exel",
+    "bbr_id": "vanexni01",
+    "position": "PG",
+    "games": 65,
+    "minutes": 986
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.91 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-waive-barroea01",
+   "date": "2005-11-01",
+   "kind": "waive",
+   "player": "barroea01",
+   "bbr_id": "barroea01",
+   "from": "San Antonio Spurs",
+   "to": null,
+   "role": {
+    "player_id": "barroea01",
+    "bbr_id": "barroea01",
+    "position": "SF",
+    "games": 2,
+    "minutes": 45
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-03"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-brownkw01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Kwame Brown",
+   "bbr_id": "brownkw01",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "Kwame Brown",
+    "bbr_id": "brownkw01",
+    "position": "C",
+    "games": 72,
+    "minutes": 1978
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.54 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-waive-rebraze01",
+   "date": "2005-11-01",
+   "kind": "waive",
+   "player": "Željko Rebrača",
+   "bbr_id": "rebraze01",
+   "from": "Seattle SuperSonics",
+   "to": null,
+   "role": {
+    "player_id": "Željko Rebrača",
+    "bbr_id": "rebraze01",
+    "position": "C",
+    "games": 29,
+    "minutes": 412
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-03"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-fizerma01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Marcus Fizer",
+   "bbr_id": "fizerma01",
+   "from": null,
+   "to": "Seattle SuperSonics",
+   "role": {
+    "player_id": "Marcus Fizer",
+    "bbr_id": "fizerma01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 39
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 7.03 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-waive-butlera01",
+   "date": "2005-11-01",
+   "kind": "waive",
+   "player": "Rasual Butler",
+   "bbr_id": "butlera01",
+   "from": "Toronto Raptors",
+   "to": null,
+   "role": {
+    "player_id": "Rasual Butler",
+    "bbr_id": "butlera01",
+    "position": "SF",
+    "games": 79,
+    "minutes": 1875
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-03"
+  },
+  {
+   "id": "2005-06-market-2005-11-01-rest_of_season-jamesje01",
+   "date": "2005-11-01",
+   "kind": "rest_of_season",
+   "player": "Jerome James",
+   "bbr_id": "jamesje01",
+   "from": null,
+   "to": "Toronto Raptors",
+   "role": {
+    "player_id": "Jerome James",
+    "bbr_id": "jamesje01",
+    "position": "C",
+    "games": 45,
+    "minutes": 406
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 7.01 x fit"
+  }
+ ],
+ "market_days": [
+  "2005-11-01"
+ ]
+}

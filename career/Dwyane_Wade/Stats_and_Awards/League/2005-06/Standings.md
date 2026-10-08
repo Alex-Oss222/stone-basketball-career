@@ -1,44 +1,44 @@
 # 2005-06 standings
 
-Through 2005-10-31, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2005-11-01, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Atlanta Hawks | 0 | 0 | .000 | — |
-| 2 | Boston Celtics | 0 | 0 | .000 | — |
-| 3 | Charlotte Bobcats | 0 | 0 | .000 | — |
-| 4 | Chicago Bulls | 0 | 0 | .000 | — |
-| 5 | Cleveland Cavaliers | 0 | 0 | .000 | — |
-| 6 | Detroit Pistons | 0 | 0 | .000 | — |
-| 7 | Indiana Pacers | 0 | 0 | .000 | — |
-| 8 | **Miami Heat** | 0 | 0 | .000 | — |
-| 9 | Milwaukee Bucks | 0 | 0 | .000 | — |
-| 10 | New Jersey Nets | 0 | 0 | .000 | — |
-| 11 | New York Knicks | 0 | 0 | .000 | — |
-| 12 | Orlando Magic | 0 | 0 | .000 | — |
-| 13 | Philadelphia 76ers | 0 | 0 | .000 | — |
-| 14 | Toronto Raptors | 0 | 0 | .000 | — |
-| 15 | Washington Wizards | 0 | 0 | .000 | — |
+| 1 | Philadelphia 76ers | 1 | 0 | 1.000 | — |
+| 2 | Atlanta Hawks | 0 | 0 | .000 | 0.5 |
+| 3 | Boston Celtics | 0 | 0 | .000 | 0.5 |
+| 4 | Charlotte Bobcats | 0 | 0 | .000 | 0.5 |
+| 5 | Chicago Bulls | 0 | 0 | .000 | 0.5 |
+| 6 | Cleveland Cavaliers | 0 | 0 | .000 | 0.5 |
+| 7 | Detroit Pistons | 0 | 0 | .000 | 0.5 |
+| 8 | Indiana Pacers | 0 | 0 | .000 | 0.5 |
+| 9 | **Miami Heat** | 0 | 0 | .000 | 0.5 |
+| 10 | Milwaukee Bucks | 0 | 1 | .000 | 1 |
+| 11 | New Jersey Nets | 0 | 0 | .000 | 0.5 |
+| 12 | New York Knicks | 0 | 0 | .000 | 0.5 |
+| 13 | Orlando Magic | 0 | 0 | .000 | 0.5 |
+| 14 | Toronto Raptors | 0 | 0 | .000 | 0.5 |
+| 15 | Washington Wizards | 0 | 0 | .000 | 0.5 |
 
 ## Western Conference
 
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Dallas Mavericks | 0 | 0 | .000 | — |
-| 2 | Denver Nuggets | 0 | 0 | .000 | — |
-| 3 | Golden State Warriors | 0 | 0 | .000 | — |
-| 4 | Houston Rockets | 0 | 0 | .000 | — |
-| 5 | Los Angeles Clippers | 0 | 0 | .000 | — |
-| 6 | Los Angeles Lakers | 0 | 0 | .000 | — |
-| 7 | Memphis Grizzlies | 0 | 0 | .000 | — |
-| 8 | Minnesota Timberwolves | 0 | 0 | .000 | — |
-| 9 | New Orleans/Oklahoma City Hornets | 0 | 0 | .000 | — |
-| 10 | Phoenix Suns | 0 | 0 | .000 | — |
-| 11 | Portland Trail Blazers | 0 | 0 | .000 | — |
-| 12 | Sacramento Kings | 0 | 0 | .000 | — |
-| 13 | San Antonio Spurs | 0 | 0 | .000 | — |
-| 14 | Seattle SuperSonics | 0 | 0 | .000 | — |
-| 15 | Utah Jazz | 0 | 0 | .000 | — |
+| 1 | Denver Nuggets | 1 | 0 | 1.000 | — |
+| 2 | New Orleans/Oklahoma City Hornets | 1 | 0 | 1.000 | — |
+| 3 | Phoenix Suns | 1 | 0 | 1.000 | — |
+| 4 | Dallas Mavericks | 0 | 1 | .000 | 1 |
+| 5 | Golden State Warriors | 0 | 0 | .000 | 0.5 |
+| 6 | Houston Rockets | 0 | 0 | .000 | 0.5 |
+| 7 | Los Angeles Clippers | 0 | 0 | .000 | 0.5 |
+| 8 | Los Angeles Lakers | 0 | 0 | .000 | 0.5 |
+| 9 | Memphis Grizzlies | 0 | 0 | .000 | 0.5 |
+| 10 | Minnesota Timberwolves | 0 | 0 | .000 | 0.5 |
+| 11 | Portland Trail Blazers | 0 | 0 | .000 | 0.5 |
+| 12 | Sacramento Kings | 0 | 1 | .000 | 1 |
+| 13 | San Antonio Spurs | 0 | 1 | .000 | 1 |
+| 14 | Seattle SuperSonics | 0 | 0 | .000 | 0.5 |
+| 15 | Utah Jazz | 0 | 0 | .000 | 0.5 |
 
