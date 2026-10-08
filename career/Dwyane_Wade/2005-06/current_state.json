@@ -2,7 +2,7 @@
  "schema_version": 1,
  "initialized": true,
  "season": "2005-06",
- "current_date": "2005-10-24",
+ "current_date": "2005-10-25",
  "current_area": "05_Preseason",
  "current_note": "05_Preseason/note.md",
  "team": "Miami Heat",
@@ -15,7 +15,7 @@
  },
  "contract_status": "rookie_scale_contract",
  "roster_status": "under_contract",
- "last_closed_event": "2005-10-24-atlanta-hawks-at-miami-heat",
+ "last_closed_event": "2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets",
  "pending_player_decisions": [],
  "rolled_over_from": "2004-05",
  "rolled_over_on": "2005-10-01"

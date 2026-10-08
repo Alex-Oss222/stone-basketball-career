@@ -1,13 +1,13 @@
 ---
 type: game
-status: scheduled
+status: played
 date: 2005-10-25
 opponent: New Orleans/Oklahoma City Hornets
 venue: away
 competition: preseason
 cup_stage:
 player_team: Miami Heat
-result:
+result: L 92-100
 reason:
 simulation_source: Railway engine (runtime/private_service.py)
 event_id: 2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets
@@ -19,10 +19,69 @@ result_file: Game_7.result.json
 Player identity and statistics are generated here by `python scripts/update_player_reports.py`.
 Decisions remain in the owning phase/week note. A scheduled game has no statistical result.
 
+<!-- game-result:start -->
+## Result
+
+**Miami Heat 92 at New Orleans/Oklahoma City Hornets 100** · Miami Heat L 92-100 vs New Orleans/Oklahoma City Hornets · away (New Orleans/Oklahoma City Hornets) · 2005-10-25
+
+Event `2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets` · Railway engine (runtime/private_service.py) · result file [`Game_7.result.json`](Game_7.result.json) (the engine's answer as served; the note is the canonical record).
+
+Preseason result: evidence for the preseason record and the camp decisions only; it does not count in regular-season statistics.
+
+### Box score
+
+```text
+Miami Heat 92 at New Orleans/Oklahoma City Hornets 100
+2005-10-25  2005-06 preseason  event 2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets
+Kernel 2003.11, calibrated on 2004-05 (imported_source)
+
+Period      1    2    3    4     T
+Miami He   21   18   26   27    92
+New Orle   28   21   19   32   100
+
+Miami Heat
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Mike James                31.1   10   4-12   0-3    2-3     0   0   5   0   0   1   5
+Dwyane Wade               30.1   24  10-20   0-3    4-4     1   4   2   0   0   1   2
+Matt Harpring             28.5   15   4-14   1-2    6-9     4   2   0   0   0   2   3
+Donyell Marshall          30.0    8   2-6    1-4    3-4     3   3   0   0   0   3   3
+Brian Grant               29.5    7   3-4    1-1    0-0     0   6   3   0   0   1   5
+Mehmet Okur               18.9    4   0-3    0-0    4-4     0   8   2   0   0   1   1
+Anthony Johnson           17.0    5   2-7    1-2    0-0     1   1   2   1   0   1   3
+Caron Butler              15.5    4   0-1    0-0    4-4     1   5   1   1   0   0   1
+Sebastian Telfair         13.0    8   3-5    1-2    1-1     0   1   1   0   0   0   1
+Eddie Jones                9.6    0   0-1    0-0    0-0     0   0   1   1   0   0   0
+DeShawn Stevenson          8.9    0   0-2    0-0    0-0     0   1   0   0   0   0   1
+Mike Wilks                 7.9    7   3-3    1-1    0-1     0   1   0   0   0   1   2
+TEAM                     240.0   92  31-78   6-18  24-30   10  32  17   3   0  13  27
+  Includes 2 team turnover(s) not charged to an individual.
+
+New Orleans/Oklahoma City Hornets
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Baron Davis               43.2   21   7-25   1-6    6-10    4   5  10   1   0   2   3
+Shane Battier             35.7   18   6-12   1-4    5-5     3   2   2   2   2   0   1
+David West                33.1   11   5-15   0-3    1-2     1   3   3   0   3   0   5
+Kyle Korver               34.4   16   4-9    2-5    6-6     1   7   2   1   2   2   5
+Danny Granger             23.7    8   3-8    0-2    2-4     3   1   0   0   3   0   3
+Antonio McDyess           22.2    2   1-3    0-0    0-0     1   6   1   1   1   2   3
+Robert Swift              19.7   12   4-4    1-1    3-4     1   5   1   0   1   1   3
+Steven Hunter             17.9    8   4-8    0-0    0-0     1   5   0   0   4   0   4
+Eric Piatkowski            4.8    4   1-1    1-1    1-3     0   0   1   0   0   0   2
+John Thomas                2.6    0   0-0    0-0    0-0     0   0   0   0   0   0   1
+Ime Udoka                  2.6    0   0-0    0-0    0-0     0   1   0   0   0   0   0
+TEAM                     240.0  100  35-85   6-22  24-34   15  35  20   5  16   8  30
+  Includes 1 team turnover(s) not charged to an individual.
+```
+
+### Miami injuries
+
+No Miami injury was drawn in this game.
+<!-- game-result:end -->
+
 <!-- player-report:start -->
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2005-10-24](../../assets/stat_reports/personal_2005-06_2005-10-24.svg)
+![Player personal information and earned 2005-06 awards through 2005-10-25](../../assets/stat_reports/personal_2005-06_2005-10-25.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -47,7 +106,7 @@ Decisions remain in the owning phase/week note. A scheduled game has no statisti
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-10-24; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-10-25; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -55,7 +114,7 @@ No 2005-06 awards yet.
 
 ## Statistics
 
-As of **2005-10-24**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2005-10-25**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -73,7 +132,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-10-24, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-10-25, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 

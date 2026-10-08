@@ -2,9 +2,9 @@
 
 # Contract | Kwame Brown
 
-Known through: 2005-10-24. [Open interactive contract](brownkw01.html#contract) · [Contract history](brownkw01.html#contract-history)
+Known through: 2005-10-25. [Open interactive contract](brownkw01.html#contract) · [Contract history](brownkw01.html#contract-history)
 
-Kwame Brown: camp contract. Evidence cutoff: 2005-10-24.
+Kwame Brown: camp contract. Evidence cutoff: 2005-10-25.
 
 ## Current contract
 

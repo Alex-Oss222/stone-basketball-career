@@ -2,9 +2,9 @@
 
 # Contract | Anthony Mason
 
-Known through: 2005-10-24. [Open interactive contract](masonan01.html#contract) · [Contract history](masonan01.html#contract-history)
+Known through: 2005-10-25. [Open interactive contract](masonan01.html#contract) · [Contract history](masonan01.html#contract-history)
 
-Anthony Mason: under contract unverified. Evidence cutoff: 2005-10-24.
+Anthony Mason: under contract unverified. Evidence cutoff: 2005-10-25.
 
 ## Current contract
 

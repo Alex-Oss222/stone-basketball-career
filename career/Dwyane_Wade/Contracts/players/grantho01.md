@@ -2,9 +2,9 @@
 
 # Contract | Horace Grant
 
-Known through: 2005-10-24. [Open interactive contract](grantho01.html#contract) · [Contract history](grantho01.html#contract-history)
+Known through: 2005-10-25. [Open interactive contract](grantho01.html#contract) · [Contract history](grantho01.html#contract-history)
 
-Horace Grant: under contract. Evidence cutoff: 2005-10-24.
+Horace Grant: under contract. Evidence cutoff: 2005-10-25.
 
 ## Current contract
 
