@@ -10,7 +10,7 @@
     "age": 21,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2005-10-31-camp-cut",
+  "current_event": "2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets",
   "current_screen": "calendar",
   "screens": [
     {
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2005-10-31-camp-cut"
+              "2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets"
             ],
             [
               "Pending player decisions",
@@ -66,7 +66,7 @@
             [
               "2005-10-31",
               "Current checkpoint",
-              "2005-10-31-camp-cut",
+              "2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets",
               "Recorded",
               {
                 "label": "Owning event",
