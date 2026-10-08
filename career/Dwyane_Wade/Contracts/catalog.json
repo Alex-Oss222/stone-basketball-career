@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-06-26",
+  "as_of": "2005-07-03",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -43,7 +43,7 @@
       "name": "Adrian Griffin",
       "team": "Houston Rockets",
       "status": "under contract",
-      "current_contract_id": "griffad01-2003-08-07",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/griffad01.html#contract"
     },
@@ -79,7 +79,7 @@
       "name": "Aleksandar Radojević",
       "team": "Toronto Raptors",
       "status": "under contract",
-      "current_contract_id": "aleksandarradojevi-2004-07-22",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/aleksandarradojevi.html#contract"
     },
@@ -169,7 +169,7 @@
       "name": "Andre Barrett",
       "team": "Atlanta Hawks",
       "status": "under contract",
-      "current_contract_id": "andrebarrett-2004-07-22",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/andrebarrett.html#contract"
     },
@@ -178,7 +178,7 @@
       "name": "Andre Emmett",
       "team": "Chicago Bulls",
       "status": "under contract",
-      "current_contract_id": "andreemmett-2004-08-12",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/andreemmett.html#contract"
     },
@@ -223,7 +223,7 @@
       "name": "Andrew DeClercq",
       "team": "Orlando Magic",
       "status": "under contract",
-      "current_contract_id": "declean01-2003-07-16",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/declean01.html#contract"
     },
@@ -241,7 +241,7 @@
       "name": "Andrés Nocioni",
       "team": "San Antonio Spurs",
       "status": "under contract",
-      "current_contract_id": "andrsnocioni-2004-07-15",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/andrsnocioni.html#contract"
     },
@@ -286,7 +286,7 @@
       "name": "Anthony Goldwire",
       "team": "Golden State Warriors",
       "status": "under contract",
-      "current_contract_id": "goldwan01-2004-08-19",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/goldwan01.html#contract"
     },
@@ -313,7 +313,7 @@
       "name": "Anthony Miller",
       "team": "Free agent",
       "status": "under contract",
-      "current_contract_id": "anthonymiller-2004-07-29",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/anthonymiller.html#contract"
     },
@@ -322,7 +322,7 @@
       "name": "Anthony Peeler",
       "team": "Houston Rockets",
       "status": "under contract",
-      "current_contract_id": "peelean01-2004-09-02",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/peelean01.html#contract"
     },
@@ -340,7 +340,7 @@
       "name": "Antonio Burks",
       "team": "Dallas Mavericks",
       "status": "under contract",
-      "current_contract_id": "antonioburks-2004-08-12",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/antonioburks.html#contract"
     },
@@ -421,7 +421,7 @@
       "name": "Ben Handlogten",
       "team": "Free agent",
       "status": "under contract",
-      "current_contract_id": "handlbe01-2004-08-26",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/handlbe01.html#contract"
     },
@@ -447,7 +447,7 @@
       "player_id": "robinbe01",
       "name": "Bernard Robinson",
       "team": "Miami Heat",
-      "status": "unsigned draft rights",
+      "status": "rights released",
       "current_contract_id": null,
       "recorded_agreements": 0,
       "href": "players/robinbe01.html#contract"
@@ -457,7 +457,7 @@
       "name": "Billy Thomas",
       "team": "Los Angeles Lakers",
       "status": "under contract",
-      "current_contract_id": "billythomas-2004-08-05",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/billythomas.html#contract"
     },
@@ -547,7 +547,7 @@
       "name": "Brandin Knight",
       "team": "Minnesota Timberwolves",
       "status": "under contract",
-      "current_contract_id": "brandinknight-2004-08-26",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/brandinknight.html#contract"
     },
@@ -628,7 +628,7 @@
       "name": "Brian Scalabrine",
       "team": "Denver Nuggets",
       "status": "under contract",
-      "current_contract_id": "scalabr01-2003-08-21",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/scalabr01.html#contract"
     },
@@ -646,7 +646,7 @@
       "name": "Brian Skinner",
       "team": "Washington Wizards",
       "status": "under contract",
-      "current_contract_id": "skinnbr01-2004-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 3,
       "href": "players/skinnbr01.html#contract"
     },
@@ -655,7 +655,7 @@
       "name": "Britton Johnsen",
       "team": "Milwaukee Bucks",
       "status": "under contract",
-      "current_contract_id": "johnsbr01-2004-08-26",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/johnsbr01.html#contract"
     },
@@ -736,7 +736,7 @@
       "name": "Carlos Delfino",
       "team": "Dallas Mavericks",
       "status": "under contract",
-      "current_contract_id": "delfica01-2004-07-14",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/delfica01.html#contract"
     },
@@ -790,7 +790,7 @@
       "name": "Charlie Ward",
       "team": "Minnesota Timberwolves",
       "status": "under contract",
-      "current_contract_id": "wardch01-2004-09-09",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/wardch01.html#contract"
     },
@@ -915,7 +915,7 @@
       "player_id": "drejech01",
       "name": "Christian Drejer",
       "team": "Miami Heat",
-      "status": "unsigned draft rights",
+      "status": "rights released",
       "current_contract_id": null,
       "recorded_agreements": 0,
       "href": "players/drejech01.html#contract"
@@ -970,7 +970,7 @@
       "name": "Corie Blount",
       "team": "Free agent",
       "status": "under contract",
-      "current_contract_id": "blounco01-2003-07-16",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/blounco01.html#contract"
     },
@@ -988,7 +988,7 @@
       "name": "Corsley Edwards",
       "team": "Seattle SuperSonics",
       "status": "under contract",
-      "current_contract_id": "corsleyedwards-2004-07-15",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/corsleyedwards.html#contract"
     },
@@ -997,7 +997,7 @@
       "name": "Cory Alexander",
       "team": "Minnesota Timberwolves",
       "status": "under contract",
-      "current_contract_id": "coryalexander-2004-07-15",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/coryalexander.html#contract"
     },
@@ -1033,7 +1033,7 @@
       "name": "D.J. Mbenga",
       "team": "San Antonio Spurs",
       "status": "under contract",
-      "current_contract_id": "djmbenga-2004-07-14",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/djmbenga.html#contract"
     },
@@ -1078,7 +1078,7 @@
       "name": "Damien Wilkins",
       "team": "Los Angeles Lakers",
       "status": "under contract",
-      "current_contract_id": "damienwilkins-2004-08-19",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/damienwilkins.html#contract"
     },
@@ -1105,7 +1105,7 @@
       "name": "Damone Brown",
       "team": "Sacramento Kings",
       "status": "under contract",
-      "current_contract_id": "brownda02-2004-08-26",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/brownda02.html#contract"
     },
@@ -1195,7 +1195,7 @@
       "name": "Darius Songaila",
       "team": "Sacramento Kings",
       "status": "under contract",
-      "current_contract_id": "songada01-2004-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/songada01.html#contract"
     },
@@ -1213,7 +1213,7 @@
       "name": "Darrell Armstrong",
       "team": "New Orleans Hornets",
       "status": "under contract",
-      "current_contract_id": "armstda01-2003-07-29",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/armstda01.html#contract"
     },
@@ -1321,7 +1321,7 @@
       "name": "Derrick Coleman",
       "team": "Philadelphia 76ers",
       "status": "under contract",
-      "current_contract_id": "colemde01-2003-07-16",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/colemde01.html#contract"
     },
@@ -1402,7 +1402,7 @@
       "name": "Dikembe Mutombo",
       "team": "New York Knicks",
       "status": "under contract",
-      "current_contract_id": "mutomdi01-2003-10-09",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/mutomdi01.html#contract"
     },
@@ -1438,7 +1438,7 @@
       "name": "Donnell Harvey",
       "team": "San Antonio Spurs",
       "status": "under contract",
-      "current_contract_id": "harvedo01-2004-09-09",
+      "current_contract_id": null,
       "recorded_agreements": 3,
       "href": "players/harvedo01.html#contract"
     },
@@ -1609,7 +1609,7 @@
       "name": "Elden Campbell",
       "team": "Detroit Pistons",
       "status": "under contract",
-      "current_contract_id": "campbel01-2003-07-26",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/campbel01.html#contract"
     },
@@ -1654,7 +1654,7 @@
       "name": "Eric Williams",
       "team": "New Orleans Hornets",
       "status": "under contract",
-      "current_contract_id": "willier01-2004-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/willier01.html#contract"
     },
@@ -1672,7 +1672,7 @@
       "name": "Erick Strickland",
       "team": "Utah Jazz",
       "status": "under contract",
-      "current_contract_id": "stricer01-2003-07-17",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/stricer01.html#contract"
     },
@@ -1681,7 +1681,7 @@
       "name": "Erik Daniels",
       "team": "New Jersey Nets",
       "status": "under contract",
-      "current_contract_id": "erikdaniels-2004-07-14",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/erikdaniels.html#contract"
     },
@@ -1753,7 +1753,7 @@
       "name": "Gary Payton",
       "team": "Detroit Pistons",
       "status": "under contract",
-      "current_contract_id": "paytoga01-2003-07-16",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/paytoga01.html#contract"
     },
@@ -1870,7 +1870,7 @@
       "name": "Ha Seung-Jin",
       "team": "Seattle SuperSonics",
       "status": "under contract",
-      "current_contract_id": "haseungjin-2004-07-29",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/haseungjin.html#contract"
     },
@@ -1906,7 +1906,7 @@
       "name": "Horace Jenkins",
       "team": "Golden State Warriors",
       "status": "under contract",
-      "current_contract_id": "horacejenkins-2004-08-26",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/horacejenkins.html#contract"
     },
@@ -1933,7 +1933,7 @@
       "name": "Ibo Kutluay",
       "team": "Minnesota Timberwolves",
       "status": "under contract",
-      "current_contract_id": "ibokutluay-2004-08-26",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/ibokutluay.html#contract"
     },
@@ -1987,7 +1987,7 @@
       "name": "Jackie Butler",
       "team": "Philadelphia 76ers",
       "status": "under contract",
-      "current_contract_id": "jackiebutler-2004-07-22",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jackiebutler.html#contract"
     },
@@ -1996,7 +1996,7 @@
       "name": "Jackson Vroman",
       "team": "Milwaukee Bucks",
       "status": "under contract",
-      "current_contract_id": "jacksonvroman-2004-08-05",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jacksonvroman.html#contract"
     },
@@ -2005,7 +2005,7 @@
       "name": "Jacque Vaughn",
       "team": "Minnesota Timberwolves",
       "status": "under contract",
-      "current_contract_id": "vaughja01-2004-09-09",
+      "current_contract_id": null,
       "recorded_agreements": 3,
       "href": "players/vaughja01.html#contract"
     },
@@ -2023,7 +2023,7 @@
       "name": "Jake Tsakalidis",
       "team": "Memphis Grizzlies",
       "status": "under contract",
-      "current_contract_id": "tsakaja01-2004-08-19",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/tsakaja01.html#contract"
     },
@@ -2131,7 +2131,7 @@
       "name": "James Thomas",
       "team": "Denver Nuggets",
       "status": "under contract",
-      "current_contract_id": "jamesthomas-2004-08-05",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jamesthomas.html#contract"
     },
@@ -2167,7 +2167,7 @@
       "name": "Jared Reiner",
       "team": "Free agent",
       "status": "under contract",
-      "current_contract_id": "jaredreiner-2004-08-05",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jaredreiner.html#contract"
     },
@@ -2176,7 +2176,7 @@
       "name": "Jarron Collins",
       "team": "Utah Jazz",
       "status": "under contract",
-      "current_contract_id": "collija03-2004-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/collija03.html#contract"
     },
@@ -2311,7 +2311,7 @@
       "name": "Jelani McCoy",
       "team": "Indiana Pacers",
       "status": "under contract",
-      "current_contract_id": "mccoyje01-2004-07-15",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/mccoyje01.html#contract"
     },
@@ -2320,7 +2320,7 @@
       "name": "Jermaine Jackson",
       "team": "Free agent",
       "status": "under contract",
-      "current_contract_id": "jacksje01-2004-08-19",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/jacksje01.html#contract"
     },
@@ -2374,7 +2374,7 @@
       "name": "Jerry Stackhouse",
       "team": "Minnesota Timberwolves",
       "status": "under contract",
-      "current_contract_id": "stackje01-2004-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/stackje01.html#contract"
     },
@@ -2428,7 +2428,7 @@
       "name": "Joel Przybilla",
       "team": "Portland Trail Blazers",
       "status": "under contract",
-      "current_contract_id": "przybjo01-2004-09-23",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/przybjo01.html#contract"
     },
@@ -2446,7 +2446,7 @@
       "name": "John Edwards",
       "team": "Miami Heat",
       "status": "under contract",
-      "current_contract_id": "edwarjo01-2004-07-22",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/edwarjo01.html#contract"
     },
@@ -2473,7 +2473,7 @@
       "name": "John Thomas",
       "team": "Miami Heat",
       "status": "under contract",
-      "current_contract_id": "thomajo02-2004-08-19",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/thomajo02.html#contract"
     },
@@ -2491,7 +2491,7 @@
       "name": "Jon Barry",
       "team": "Indiana Pacers",
       "status": "under contract",
-      "current_contract_id": "barryjo01-2004-09-16",
+      "current_contract_id": null,
       "recorded_agreements": 3,
       "href": "players/barryjo01.html#contract"
     },
@@ -2527,7 +2527,7 @@
       "name": "Josh Davis",
       "team": "Sacramento Kings",
       "status": "under contract",
-      "current_contract_id": "davisjo02-2004-08-19",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/davisjo02.html#contract"
     },
@@ -2581,7 +2581,7 @@
       "name": "Junior Harrington",
       "team": "Free agent",
       "status": "under contract",
-      "current_contract_id": "harriju01-2004-07-14",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/harriju01.html#contract"
     },
@@ -2590,7 +2590,7 @@
       "name": "Justin Reed",
       "team": "Denver Nuggets",
       "status": "under contract",
-      "current_contract_id": "justinreed-2004-07-29",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/justinreed.html#contract"
     },
@@ -2608,7 +2608,7 @@
       "name": "Kaniel Dickens",
       "team": "Sacramento Kings",
       "status": "under contract",
-      "current_contract_id": "dickeka01-2004-08-26",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/dickeka01.html#contract"
     },
@@ -2626,7 +2626,7 @@
       "name": "Karl Malone",
       "team": "Free agent",
       "status": "under contract",
-      "current_contract_id": "malonka01-2003-07-16",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/malonka01.html#contract"
     },
@@ -2689,7 +2689,7 @@
       "name": "Kendall Gill",
       "team": "Utah Jazz",
       "status": "under contract",
-      "current_contract_id": "gillke01-2004-08-12",
+      "current_contract_id": null,
       "recorded_agreements": 3,
       "href": "players/gillke01.html#contract"
     },
@@ -2707,7 +2707,7 @@
       "name": "Kenny Anderson",
       "team": "Toronto Raptors",
       "status": "under contract",
-      "current_contract_id": "anderke01-2004-08-12",
+      "current_contract_id": null,
       "recorded_agreements": 3,
       "href": "players/anderke01.html#contract"
     },
@@ -2761,7 +2761,7 @@
       "name": "Kevin Martin",
       "team": "New York Knicks",
       "status": "under contract",
-      "current_contract_id": "kevinmartin-2004-09-02",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/kevinmartin.html#contract"
     },
@@ -2887,7 +2887,7 @@
       "name": "Laron Profit",
       "team": "Los Angeles Lakers",
       "status": "under contract",
-      "current_contract_id": "laronprofit-2004-08-12",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/laronprofit.html#contract"
     },
@@ -2986,7 +2986,7 @@
       "name": "Lionel Chalmers",
       "team": "Golden State Warriors",
       "status": "under contract",
-      "current_contract_id": "lionelchalmers-2004-07-29",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/lionelchalmers.html#contract"
     },
@@ -2995,7 +2995,7 @@
       "name": "Lonny Baxter",
       "team": "Toronto Raptors",
       "status": "under contract",
-      "current_contract_id": "baxtelo01-2004-09-09",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/baxtelo01.html#contract"
     },
@@ -3022,7 +3022,7 @@
       "name": "Lucious Harris",
       "team": "New Jersey Nets",
       "status": "under contract",
-      "current_contract_id": "harrilu01-2003-07-16",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/harrilu01.html#contract"
     },
@@ -3031,7 +3031,7 @@
       "name": "Luis Flores",
       "team": "Atlanta Hawks",
       "status": "under contract",
-      "current_contract_id": "luisflores-2004-08-26",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/luisflores.html#contract"
     },
@@ -3103,7 +3103,7 @@
       "name": "Malik Allen",
       "team": "Free agent",
       "status": "unsigned free agent; Miami holds his rights",
-      "current_contract_id": "allenma01-2004-07-22",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/allenma01.html#contract"
     },
@@ -3229,7 +3229,7 @@
       "name": "Mark Jones",
       "team": "Detroit Pistons",
       "status": "under contract",
-      "current_contract_id": "markjones-2004-07-15",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/markjones.html#contract"
     },
@@ -3247,7 +3247,7 @@
       "name": "Mark Pope",
       "team": "Free agent",
       "status": "under contract",
-      "current_contract_id": "popema01-2004-07-29",
+      "current_contract_id": null,
       "recorded_agreements": 3,
       "href": "players/popema01.html#contract"
     },
@@ -3265,7 +3265,7 @@
       "name": "Marquis Daniels",
       "team": "Dallas Mavericks",
       "status": "under contract",
-      "current_contract_id": "daniema01-2004-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/daniema01.html#contract"
     },
@@ -3310,7 +3310,7 @@
       "name": "Matt Freije",
       "team": "Toronto Raptors",
       "status": "under contract",
-      "current_contract_id": "mattfreije-2004-07-14",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/mattfreije.html#contract"
     },
@@ -3328,7 +3328,7 @@
       "name": "Maurice Baker",
       "team": "Miami Heat",
       "status": "under contract",
-      "current_contract_id": "bakerma01-2004-07-15",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/bakerma01.html#contract"
     },
@@ -3346,7 +3346,7 @@
       "name": "Maurice Evans",
       "team": "Miami Heat",
       "status": "under contract",
-      "current_contract_id": "evansma01-2004-08-05",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/evansma01.html#contract"
     },
@@ -3454,7 +3454,7 @@
       "name": "Michael Ruffin",
       "team": "New Jersey Nets",
       "status": "under contract",
-      "current_contract_id": "ruffimi01-2004-09-23",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/ruffimi01.html#contract"
     },
@@ -3634,7 +3634,7 @@
       "name": "Nenad Krstić",
       "team": "New York Knicks",
       "status": "under contract",
-      "current_contract_id": "nenadkrsti-2004-07-22",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/nenadkrsti.html#contract"
     },
@@ -3679,7 +3679,7 @@
       "name": "Obinna Ekezie",
       "team": "Toronto Raptors",
       "status": "under contract",
-      "current_contract_id": "obinnaekezie-2004-07-14",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/obinnaekezie.html#contract"
     },
@@ -3742,7 +3742,7 @@
       "name": "Pape Sow",
       "team": "Milwaukee Bucks",
       "status": "under contract",
-      "current_contract_id": "papesow-2004-07-29",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/papesow.html#contract"
     },
@@ -4129,7 +4129,7 @@
       "name": "Robert Traylor",
       "team": "Los Angeles Clippers",
       "status": "under contract",
-      "current_contract_id": "traylro01-2004-09-16",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/traylro01.html#contract"
     },
@@ -4201,7 +4201,7 @@
       "name": "Ronald Dupree",
       "team": "Chicago Bulls",
       "status": "under contract",
-      "current_contract_id": "duprero01-2004-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/duprero01.html#contract"
     },
@@ -4273,7 +4273,7 @@
       "name": "Samaki Walker",
       "team": "New Orleans Hornets",
       "status": "under contract",
-      "current_contract_id": "walkesa01-2004-09-02",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/walkesa01.html#contract"
     },
@@ -4345,7 +4345,7 @@
       "name": "Scottie Pippen",
       "team": "Free agent",
       "status": "under contract",
-      "current_contract_id": "pippesc01-2003-07-20",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/pippesc01.html#contract"
     },
@@ -4363,7 +4363,7 @@
       "name": "Sean Marks",
       "team": "San Antonio Spurs",
       "status": "under contract",
-      "current_contract_id": "seanmarks-2004-07-14",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/seanmarks.html#contract"
     },
@@ -4498,7 +4498,7 @@
       "name": "Smush Parker",
       "team": "Indiana Pacers",
       "status": "under contract",
-      "current_contract_id": "parkesm01-2004-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/parkesm01.html#contract"
     },
@@ -4597,7 +4597,7 @@
       "name": "Steven Hunter",
       "team": "New Orleans Hornets",
       "status": "under contract",
-      "current_contract_id": "huntest01-2004-09-02",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/huntest01.html#contract"
     },
@@ -4687,7 +4687,7 @@
       "name": "Tierre Brown",
       "team": "Minnesota Timberwolves",
       "status": "under contract",
-      "current_contract_id": "brownti01-2004-07-29",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/brownti01.html#contract"
     },
@@ -4750,7 +4750,7 @@
       "name": "Toni Kukoc",
       "team": "New Jersey Nets",
       "status": "under contract",
-      "current_contract_id": "kukocto01-2004-09-23",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/kukocto01.html#contract"
     },
@@ -4759,7 +4759,7 @@
       "name": "Tony Allen",
       "team": "New York Knicks",
       "status": "under contract",
-      "current_contract_id": "tonyallen-2004-07-15",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/tonyallen.html#contract"
     },
@@ -4777,7 +4777,7 @@
       "name": "Tony Bobbitt",
       "team": "Free agent",
       "status": "under contract",
-      "current_contract_id": "tonybobbitt-2004-07-22",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/tonybobbitt.html#contract"
     },
@@ -4885,7 +4885,7 @@
       "name": "Trenton Hassell",
       "team": "Cleveland Cavaliers",
       "status": "under contract",
-      "current_contract_id": "hassetr01-2004-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 3,
       "href": "players/hassetr01.html#contract"
     },
@@ -4894,7 +4894,7 @@
       "name": "Trevor Ariza",
       "team": "Los Angeles Lakers",
       "status": "under contract",
-      "current_contract_id": "trevorariza-2004-07-14",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/trevorariza.html#contract"
     },
@@ -4939,7 +4939,7 @@
       "name": "Tyronn Lue",
       "team": "Minnesota Timberwolves",
       "status": "under contract",
-      "current_contract_id": "luety01-2003-07-16",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/luety01.html#contract"
     },
@@ -4957,7 +4957,7 @@
       "name": "Udonis Haslem",
       "team": "Toronto Raptors",
       "status": "traded",
-      "current_contract_id": "hasleud01-2004-07-14",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/hasleud01.html#contract"
     },
@@ -5011,7 +5011,7 @@
       "name": "Vlade Divac",
       "team": "Toronto Raptors",
       "status": "under contract",
-      "current_contract_id": "divacvl01-2004-07-22",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/divacvl01.html#contract"
     },
@@ -5074,7 +5074,7 @@
       "name": "Wang Zhizhi",
       "team": "Atlanta Hawks",
       "status": "under contract",
-      "current_contract_id": "zhizhwa01-2004-07-14",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/zhizhwa01.html#contract"
     },
