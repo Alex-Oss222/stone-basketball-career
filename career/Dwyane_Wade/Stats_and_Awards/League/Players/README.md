@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-10-04**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-10-05**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -24,7 +24,7 @@ Card date: **2005-10-04**. 573 registry players, one Markdown card and one inter
 | [Carlos Arroyo](arroyca01.md) | Dallas Mavericks | 26 | sourced | [open](arroyca01.html) |
 | [Charlie Ward](wardch01.md) | Free agent | 34 | sourced | [open](wardch01.html) |
 | [Chauncey Billups](billuch01.md) | Detroit Pistons | 29 | sourced | [open](billuch01.html) |
-| [Chris Whitney](whitnch01.md) | Free agent | 33 | silhouette | [open](whitnch01.html) |
+| [Chris Whitney](whitnch01.md) | Free agent | 34 | silhouette | [open](whitnch01.html) |
 | [Chucky Atkins](atkinch01.md) | Los Angeles Lakers | 31 | sourced | [open](atkinch01.html) |
 | [Courtney Alexander](alexaco02.md) | Free agent | 28 | silhouette | [open](alexaco02.html) |
 | [Damon Jones](jonesda01.md) | Milwaukee Bucks | 29 | silhouette | [open](jonesda01.html) |
@@ -270,7 +270,7 @@ Card date: **2005-10-04**. 573 registry players, one Markdown card and one inter
 | [Glen Rice](ricegl01.md) | Free agent | 38 | sourced | [open](ricegl01.html) |
 | [Glenn Robinson](robingl01.md) | Free agent | 32 | sourced | [open](robingl01.html) |
 | [Gordan Giricek](giricgo01.md) | Houston Rockets | 28 | sourced | [open](giricgo01.html) |
-| [Grant Hill](hillgr01.md) | Minnesota Timberwolves | 32 | silhouette | [open](hillgr01.html) |
+| [Grant Hill](hillgr01.md) | Minnesota Timberwolves | 33 | silhouette | [open](hillgr01.html) |
 | [Ha Seung-Jin](haseungjin.md) | Chicago Bulls | 20 | silhouette | [open](haseungjin.html) |
 | [Hedo Turkoglu](turkohe01.md) | Toronto Raptors | 26 | sourced | [open](turkohe01.html) |
 | [Horace Jenkins](horacejenkins.md) | Free agent | 30 | silhouette | [open](horacejenkins.html) |

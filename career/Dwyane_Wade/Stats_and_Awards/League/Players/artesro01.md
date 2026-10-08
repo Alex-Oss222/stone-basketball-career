@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `artesro01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-10-04 · **Club on this date:** Indiana Pacers · **Basis:** Indiana Pacers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-10-05 · **Club on this date:** Indiana Pacers · **Basis:** Indiana Pacers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #15 · **Born:** 1979-11-13 · **Age on card date:** 25  
 **Registry ID:** `artesro01` · [Basketball-Reference page](https://www.basketball-reference.com/players/a/artesro01.html) · ESPN ID 25
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `artesr
 
 ## Simulated statistics
 
-As of **2005-10-04**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-10-05**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -120,7 +120,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-10-04, from closed award decisions (5 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-10-05, from closed award decisions (5 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

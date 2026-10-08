@@ -2,9 +2,9 @@
 
 # Contract | Fred Jones
 
-Known through: 2005-10-04. [Open interactive contract](jonesfr01.html#contract) · [Contract history](jonesfr01.html#contract-history)
+Known through: 2005-10-05. [Open interactive contract](jonesfr01.html#contract) · [Contract history](jonesfr01.html#contract-history)
 
-Fred Jones: under rookie contract. Evidence cutoff: 2005-10-04.
+Fred Jones: under rookie contract. Evidence cutoff: 2005-10-05.
 
 ## Current contract
 
