@@ -75,8 +75,8 @@ class LiveLedgerTests(unittest.TestCase):
             if current is None:
                 self.assertIn(row["status"], ("voided", "released"))
                 continue
-            # A later contract with another club (a summer signing) may be current; the ended Miami one never is.
-            self.assertNotEqual(row["team"], "Miami Heat", row["name"])
+            # A later contract may be current, with another club (a summer signing) or with Miami again (Jumaine Jones's
+            # 2005 camp invitation); the ended Miami one never is.
             self.assertGreater(current.rsplit("-", 3)[-3:], ended[row["name"]]["signed_date"].split("-"), row["name"])
 
 
