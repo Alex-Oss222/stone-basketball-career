@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-10-10 · Miami Heat · inactive
+Career date: 2005-10-11 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-0 closed game records in 2005-06 through 2005-10-10. Competitions remain separate.
+1 closed game records in 2005-06 through 2005-10-11. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -14,6 +14,7 @@ Activation: A declared, closed game result supplies observed participation and t
 
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| preseason | 1 | 30.0 | 21.0 | 3.0 | 3.0 | 0.0 | Complete |
 | regular | 0 | N/A | N/A | N/A | N/A | N/A | Complete |
 
 ## Pooled shooting
@@ -22,13 +23,14 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
+| preseason | 7 | 13 | 0.538 | 2 | 3 | 0.667 |
 | regular | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ## Closed source games
 
 | Date | Competition | Opponent | Participation | Source |
 | --- | --- | --- | --- | --- |
-| No dated record | N/A | N/A | N/A | N/A |
+| 2005-10-10 | preseason | San Antonio Spurs | Played | [Closed game](../2005-06/05_Preseason/Game_1.md) |
 
 ## Evidence available for decisions
 
@@ -66,4 +68,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Training-camp events and player response](../2005-06/04_Training_Camp/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
+- [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

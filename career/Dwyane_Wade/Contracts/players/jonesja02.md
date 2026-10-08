@@ -2,9 +2,9 @@
 
 # Contract | James Jones
 
-Known through: 2005-10-10. [Open interactive contract](jonesja02.html#contract) · [Contract history](jonesja02.html#contract-history)
+Known through: 2005-10-11. [Open interactive contract](jonesja02.html#contract) · [Contract history](jonesja02.html#contract-history)
 
-James Jones: under contract. Evidence cutoff: 2005-10-10.
+James Jones: under contract. Evidence cutoff: 2005-10-11.
 
 ## Current contract
 

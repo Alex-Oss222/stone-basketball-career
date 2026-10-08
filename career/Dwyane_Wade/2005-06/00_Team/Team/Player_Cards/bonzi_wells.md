@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG  
 **Age at assessment:** 29 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 4, 2005 · **Statistics through:** 2005-10-10 
+**Opening assessment:** October 4, 2005 · **Statistics through:** 2005-10-11 
 
 **Contract/control:** Camp contract from October 4, 2005: non-guaranteed minimum $965,185, guaranteed if still on the roster on 2006-01-10. (register, 2005-10-04) [Finance record](../../Finances/cap_sheet.md).
 

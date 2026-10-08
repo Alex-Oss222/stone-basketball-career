@@ -2,9 +2,9 @@
 
 # Contract | Bonzi Wells
 
-Known through: 2005-10-10. [Open interactive contract](wellsbo01.html#contract) · [Contract history](wellsbo01.html#contract-history)
+Known through: 2005-10-11. [Open interactive contract](wellsbo01.html#contract) · [Contract history](wellsbo01.html#contract-history)
 
-Bonzi Wells: camp contract. Evidence cutoff: 2005-10-10.
+Bonzi Wells: camp contract. Evidence cutoff: 2005-10-11.
 
 ## Current contract
 

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-10-10**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-10-11**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -254,7 +254,7 @@ Card date: **2005-10-10**. 573 registry players, one Markdown card and one inter
 | [David Harrison](davidharrison.md) | Denver Nuggets | 23 | silhouette | [open](davidharrison.html) |
 | [DerMarr Johnson](johnsde03.md) | Free agent | 25 | silhouette | [open](johnsde03.html) |
 | [Desmond Ferguson](fergude01.md) | Free agent | 28 | silhouette | [open](fergude01.html) |
-| [Desmond Mason](masonde01.md) | Milwaukee Bucks | 27 | sourced | [open](masonde01.html) |
+| [Desmond Mason](masonde01.md) | Milwaukee Bucks | 28 | sourced | [open](masonde01.html) |
 | [Devean George](georgde01.md) | Free agent | 28 | sourced | [open](georgde01.html) |
 | [Devin Harris](devinharris.md) | Cleveland Cavaliers | 22 | silhouette | [open](devinharris.html) |
 | [Donnell Harvey](harvedo01.md) | Free agent | 25 | silhouette | [open](harvedo01.html) |
@@ -522,7 +522,7 @@ Card date: **2005-10-10**. 573 registry players, one Markdown card and one inter
 | [Calvin Booth](boothca01.md) | Golden State Warriors | 29 | sourced | [open](boothca01.html) |
 | [Cezary Trybanski](trybace01.md) | Free agent | 26 | sourced | [open](trybace01.html) |
 | [Charles Oakley](oaklech01.md) | Free agent | 41 | sourced | [open](oaklech01.html) |
-| [Cherokee Parks](parksch02.md) | Free agent | 32 | silhouette | [open](parksch02.html) |
+| [Cherokee Parks](parksch02.md) | Free agent | 33 | silhouette | [open](parksch02.html) |
 | [Chris Andersen](anderch01.md) | Orlando Magic | 27 | sourced | [open](anderch01.html) |
 | [Chris Kaman](kamanch01.md) | Los Angeles Clippers | 23 | sourced | [open](kamanch01.html) |
 | [Chris Mihm](mihmch01.md) | Phoenix Suns | 26 | sourced | [open](mihmch01.html) |

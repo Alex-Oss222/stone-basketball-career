@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `belltr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-10-10 · **Club on this date:** Free agent · **Basis:** out of the league: his real career has no 2005-06 season (runtime/availability.py) · **League:** NBA  
+**Card date:** 2005-10-11 · **Club on this date:** Free agent · **Basis:** out of the league: his real career has no 2005-06 season (runtime/availability.py) · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #3 · **Born:** 1980-11-10 · **Age on card date:** 24  
 **Registry ID:** `belltr01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/belltr01.html) · ESPN ID 1993
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `belltr
 
 ## Simulated statistics
 
-As of **2005-10-10**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-10-11**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -117,4 +117,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2005-10-10. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2005-10-11. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

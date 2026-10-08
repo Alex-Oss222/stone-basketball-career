@@ -2,7 +2,7 @@
 
 # Season exit meeting | Dwyane Wade
 
-Career date: 2005-10-10 · Miami Heat · inactive
+Career date: 2005-10-11 · Miami Heat · inactive
 
 [Live milestone desk](index.html#exit_meeting) · [All milestones](README.md)
 
@@ -67,4 +67,5 @@ The actual season close and an agreed exit-meeting date.
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Training-camp events and player response](../2005-06/04_Training_Camp/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
+- [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

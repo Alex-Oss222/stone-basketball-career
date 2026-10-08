@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2005-10-10**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2005-10-11**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -6603,7 +6603,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-27 | Orlando Magic | Played | [Game](../2004-05/05_Preseason/Game_7.md) | [Result](../2004-05/05_Preseason/Game_7.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_7.result.json) |
 
-## 2005-06 · NBA regular season · through 2005-10-10
+## 2005-06 · NBA regular season · through 2005-10-11
 
 [Open this period](player_cards.html?period=regular-2005-06-season#shooting)
 
@@ -6622,3 +6622,91 @@ No closed games in this competition at the current career checkpoint. No appeara
 | Three-point range | 0 | 0 | N/A | N/A | N/A | 0 |
 
 No closed source games in this period. Zero appearances do not establish a 0.0% shooting percentage.
+
+## 2005-06 · NBA preseason · through 2005-10-11
+
+[Open this period](player_cards.html?period=preseason-2005-06-season#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 7 / 13 | 53.8% | 2 / 3 | 21 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 2 | 5 | 40.0% | 4.00 | 5.00 | 5 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| 18 ft to the three-point line | 3 | 5 | 60.0% | 6.00 | 5.00 | 5 |
+| Three-point range | 2 | 3 | 66.7% | 6.00 | 3.00 | 3 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-10-10 | San Antonio Spurs | Played | [Game](../2005-06/05_Preseason/Game_1.md) | [Result](../2005-06/05_Preseason/Game_1.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_1.result.json) |
+
+## 2005-10 · NBA preseason
+
+[Open this period](player_cards.html?period=preseason-2005-06-month-2005-10-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 7 / 13 | 53.8% | 2 / 3 | 21 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 2 | 5 | 40.0% | 4.00 | 5.00 | 5 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| 18 ft to the three-point line | 3 | 5 | 60.0% | 6.00 | 5.00 | 5 |
+| Three-point range | 2 | 3 | 66.7% | 6.00 | 3.00 | 3 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-10-10 | San Antonio Spurs | Played | [Game](../2005-06/05_Preseason/Game_1.md) | [Result](../2005-06/05_Preseason/Game_1.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_1.result.json) |
+
+## 2005-10-08 to 2005-10-11 · NBA preseason
+
+[Open this period](player_cards.html?period=preseason-2005-06-week-2005-10-08#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 7 / 13 | 53.8% | 2 / 3 | 21 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 2 | 5 | 40.0% | 4.00 | 5.00 | 5 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| 18 ft to the three-point line | 3 | 5 | 60.0% | 6.00 | 5.00 | 5 |
+| Three-point range | 2 | 3 | 66.7% | 6.00 | 3.00 | 3 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-10-10 | San Antonio Spurs | Played | [Game](../2005-06/05_Preseason/Game_1.md) | [Result](../2005-06/05_Preseason/Game_1.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_1.result.json) |
+
+## 2005-10-10 vs San Antonio Spurs · Played · NBA preseason
+
+[Open this period](player_cards.html?period=preseason-2005-06-game-5229510befa9ac43#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 7 / 13 | 53.8% | 2 / 3 | 21 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 2 | 5 | 40.0% | 4.00 | 5.00 | 5 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| 18 ft to the three-point line | 3 | 5 | 60.0% | 6.00 | 5.00 | 5 |
+| Three-point range | 2 | 3 | 66.7% | 6.00 | 3.00 | 3 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-10-10 | San Antonio Spurs | Played | [Game](../2005-06/05_Preseason/Game_1.md) | [Result](../2005-06/05_Preseason/Game_1.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_1.result.json) |

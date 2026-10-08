@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `battish01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-10-10 · **Club on this date:** New Orleans/Oklahoma City Hornets · **Basis:** New Orleans/Oklahoma City Hornets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-10-11 · **Club on this date:** New Orleans/Oklahoma City Hornets · **Basis:** New Orleans/Oklahoma City Hornets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #31 · **Born:** 1978-09-09 · **Age on card date:** 27  
 **Registry ID:** `battish01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/battish01.html) · ESPN ID 976
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `battis
 
 ## Simulated statistics
 
-As of **2005-10-10**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-10-11**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -120,4 +120,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2005-10-10. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2005-10-11. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

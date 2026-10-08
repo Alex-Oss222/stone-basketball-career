@@ -2,9 +2,9 @@
 
 # Contract | Bostjan Nachbar
 
-Known through: 2005-10-10. [Open interactive contract](nachbbo01.html#contract) · [Contract history](nachbbo01.html#contract-history)
+Known through: 2005-10-11. [Open interactive contract](nachbbo01.html#contract) · [Contract history](nachbbo01.html#contract-history)
 
-Bostjan Nachbar: under contract. Evidence cutoff: 2005-10-10.
+Bostjan Nachbar: under contract. Evidence cutoff: 2005-10-11.
 
 ## Current contract
 

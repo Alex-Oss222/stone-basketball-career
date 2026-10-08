@@ -2,9 +2,9 @@
 
 # Contract | Sam Cassell
 
-Known through: 2005-10-10. [Open interactive contract](cassesa01.html#contract) · [Contract history](cassesa01.html#contract-history)
+Known through: 2005-10-11. [Open interactive contract](cassesa01.html#contract) · [Contract history](cassesa01.html#contract-history)
 
-Sam Cassell: camp contract. Evidence cutoff: 2005-10-10.
+Sam Cassell: camp contract. Evidence cutoff: 2005-10-11.
 
 ## Current contract
 
