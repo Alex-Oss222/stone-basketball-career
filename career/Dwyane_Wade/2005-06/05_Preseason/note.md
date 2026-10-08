@@ -8,5 +8,6 @@ status: not_started
 ## Player decisions
 
 ## Events
+- 2005-10-08: 7 preseason game requests written from the camp rotation; the engine plays them.
 
 ## Consequences

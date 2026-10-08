@@ -2,9 +2,9 @@
  "schema_version": 1,
  "initialized": true,
  "season": "2005-06",
- "current_date": "2005-10-07",
- "current_area": "04_Training_Camp",
- "current_note": "04_Training_Camp/note.md",
+ "current_date": "2005-10-08",
+ "current_area": "05_Preseason",
+ "current_note": "05_Preseason/note.md",
  "team": "Miami Heat",
  "team_abbreviation": "MIA",
  "draft": {
@@ -15,7 +15,7 @@
  },
  "contract_status": "rookie_scale_contract",
  "roster_status": "under_contract",
- "last_closed_event": "2005-10-04-camp-opens",
+ "last_closed_event": "2005-10-08-preseason-requests",
  "pending_player_decisions": [],
  "rolled_over_from": "2004-05",
  "rolled_over_on": "2005-10-01"

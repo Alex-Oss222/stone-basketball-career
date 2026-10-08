@@ -2,9 +2,9 @@
 
 # Contract | Bonzi Wells
 
-Known through: 2005-10-07. [Open interactive contract](wellsbo01.html#contract) · [Contract history](wellsbo01.html#contract-history)
+Known through: 2005-10-08. [Open interactive contract](wellsbo01.html#contract) · [Contract history](wellsbo01.html#contract-history)
 
-Bonzi Wells: camp contract. Evidence cutoff: 2005-10-07.
+Bonzi Wells: camp contract. Evidence cutoff: 2005-10-08.
 
 ## Current contract
 
@@ -103,9 +103,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2005-06/04_Training_Camp/camp_roster.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 
 ### Current control and contract coverage
 
@@ -257,9 +257,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2005-06/04_Training_Camp/camp_roster.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 
 ### Bonzi Wells · 2002-09-30
 

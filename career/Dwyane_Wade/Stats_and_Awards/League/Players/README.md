@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-10-07**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-10-08**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -325,7 +325,7 @@ Card date: **2005-10-07**. 573 registry players, one Markdown card and one inter
 | [Michael Jordan](jordami01.md) | Free agent | 42 | sourced | [open](jordami01.html) |
 | [Mike Dunleavy](dunlemi02.md) | Golden State Warriors | 25 | sourced | [open](dunlemi02.html) |
 | [Mike Miller](millemi01.md) | Memphis Grizzlies | 25 | silhouette | [open](millemi01.html) |
-| [Monty Williams](willimo01.md) | Free agent | 33 | sourced | [open](willimo01.html) |
+| [Monty Williams](willimo01.md) | Free agent | 34 | sourced | [open](willimo01.html) |
 | [Morris Peterson](petermo01.md) | Toronto Raptors | 28 | sourced | [open](petermo01.html) |
 | [Ndudi Ebi](ebind01.md) | Free agent | 21 | sourced | [open](ebind01.html) |
 | [Nenad Krstić](nenadkrsti.md) | New York Knicks | 22 | silhouette | [open](nenadkrsti.html) |

@@ -2,9 +2,9 @@
 
 # Contract | Rasual Butler
 
-Known through: 2005-10-07. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
+Known through: 2005-10-08. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
 
-Rasual Butler: under contract. Evidence cutoff: 2005-10-07.
+Rasual Butler: under contract. Evidence cutoff: 2005-10-08.
 
 ## Current contract
 

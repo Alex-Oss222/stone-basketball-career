@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-10-07 · Miami Heat · inactive
+Career date: 2005-10-08 · Miami Heat · inactive
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-0 closed game records in 2005-06 through 2005-10-07. Competitions remain separate.
+0 closed game records in 2005-06 through 2005-10-08. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -60,9 +60,10 @@ The next declared, closed game result or a chosen completed-period review.
 - [Authoritative career checkpoint](../2005-06/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2005-06/04_Training_Camp/note.md)
+- [Owning event](../2005-06/05_Preseason/note.md)
 - [Current contract and cap-control record](../2005-06/00_Team/Finances/contract_schedules.json)
 - [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
+- [Training-camp events and player response](../2005-06/04_Training_Camp/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated milestone working records and player replies](../milestones.json)
