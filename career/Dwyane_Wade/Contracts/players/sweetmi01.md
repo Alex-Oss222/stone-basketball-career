@@ -2,9 +2,9 @@
 
 # Contract | Michael Sweetney
 
-Known through: 2005-07-03. [Open interactive contract](sweetmi01.html#contract) · [Contract history](sweetmi01.html#contract-history)
+Known through: 2005-07-10. [Open interactive contract](sweetmi01.html#contract) · [Contract history](sweetmi01.html#contract-history)
 
-Michael Sweetney: No verified contract record. Evidence cutoff: 2005-07-03.
+Michael Sweetney: No verified contract record. Evidence cutoff: 2005-07-10.
 
 ## Current contract
 

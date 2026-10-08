@@ -2,9 +2,9 @@
 
 # Contract | Troy Bell
 
-Known through: 2005-07-03. [Open interactive contract](belltr01.html#contract) · [Contract history](belltr01.html#contract-history)
+Known through: 2005-07-10. [Open interactive contract](belltr01.html#contract) · [Contract history](belltr01.html#contract-history)
 
-Troy Bell: No verified contract record. Evidence cutoff: 2005-07-03.
+Troy Bell: No verified contract record. Evidence cutoff: 2005-07-10.
 
 ## Current contract
 
