@@ -1356,32 +1356,42 @@
   "A": [
    {
     "w": 1,
-    "l": 0,
-    "pf": 77,
-    "pa": 73,
-    "pts": 2,
-    "team": "United States",
+    "l": 1,
+    "pf": 161,
+    "pa": 150,
+    "pts": 3,
+    "team": "Brazil",
     "position": 1,
     "tied_with": []
    },
    {
     "w": 1,
-    "l": 0,
-    "pf": 81,
-    "pa": 77,
-    "pts": 2,
+    "l": 1,
+    "pf": 155,
+    "pa": 163,
+    "pts": 3,
     "team": "Venezuela",
     "position": 2,
     "tied_with": []
    },
    {
-    "w": 0,
+    "w": 1,
     "l": 1,
-    "pf": 77,
-    "pa": 81,
-    "pts": 1,
-    "team": "Brazil",
+    "pf": 146,
+    "pa": 157,
+    "pts": 3,
+    "team": "United States",
     "position": 3,
+    "tied_with": []
+   },
+   {
+    "w": 1,
+    "l": 0,
+    "pf": 86,
+    "pa": 74,
+    "pts": 2,
+    "team": "Canada",
+    "position": 4,
     "tied_with": []
    },
    {
@@ -1391,16 +1401,6 @@
     "pa": 77,
     "pts": 1,
     "team": "Panama",
-    "position": 4,
-    "tied_with": []
-   },
-   {
-    "w": 0,
-    "l": 0,
-    "pf": 0,
-    "pa": 0,
-    "pts": 0,
-    "team": "Canada",
     "position": 5,
     "tied_with": []
    }
@@ -1408,12 +1408,22 @@
   "B": [
    {
     "w": 1,
-    "l": 0,
-    "pf": 87,
-    "pa": 82,
-    "pts": 2,
+    "l": 1,
+    "pf": 158,
+    "pa": 158,
+    "pts": 3,
     "team": "Argentina",
     "position": 1,
+    "tied_with": []
+   },
+   {
+    "w": 1,
+    "l": 1,
+    "pf": 155,
+    "pa": 158,
+    "pts": 3,
+    "team": "Mexico",
+    "position": 2,
     "tied_with": []
    },
    {
@@ -1423,35 +1433,25 @@
     "pa": 70,
     "pts": 2,
     "team": "Dominican Republic",
-    "position": 2,
-    "tied_with": []
-   },
-   {
-    "w": 0,
-    "l": 1,
-    "pf": 70,
-    "pa": 72,
-    "pts": 1,
-    "team": "Uruguay",
     "position": 3,
     "tied_with": []
    },
    {
     "w": 0,
-    "l": 1,
-    "pf": 82,
-    "pa": 87,
-    "pts": 1,
-    "team": "Mexico",
+    "l": 2,
+    "pf": 141,
+    "pa": 145,
+    "pts": 2,
+    "team": "Uruguay",
     "position": 4,
     "tied_with": []
    },
    {
-    "w": 0,
+    "w": 1,
     "l": 0,
-    "pf": 0,
-    "pa": 0,
-    "pts": 0,
+    "pf": 76,
+    "pa": 71,
+    "pts": 2,
     "team": "Puerto Rico",
     "position": 5,
     "tied_with": []

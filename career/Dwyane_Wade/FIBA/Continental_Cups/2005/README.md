@@ -4,7 +4,7 @@
 
 2005-08-24 to 2005-09-04, hosted by Dominican Republic. FIBA rules (four 10-minute quarters, five fouls). Every game is played by the engine; real results of this event are never used. Rules and sources: `runtime/national.py`, `library/2005/fiba/fiba_2005_americas_championship.json`.
 
-Status: **4 of 40 games played**.
+Status: **8 of 40 games played**.
 
 ## Rosters
 
@@ -25,21 +25,21 @@ Status: **4 of 40 games played**.
 
 | Pos | Team | W | L | PF | PA | Pts |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | **United States** | 1 | 0 | 77 | 73 | 2 |
-| 2 | Venezuela | 1 | 0 | 81 | 77 | 2 |
-| 3 | Brazil | 0 | 1 | 77 | 81 | 1 |
-| 4 | Panama | 0 | 1 | 73 | 77 | 1 |
-| 5 | Canada | 0 | 0 | 0 | 0 | 0 |
+| 1 | Brazil | 1 | 1 | 161 | 150 | 3 |
+| 2 | Venezuela | 1 | 1 | 155 | 163 | 3 |
+| 3 | **United States** | 1 | 1 | 146 | 157 | 3 |
+| 4 | Canada | 1 | 0 | 86 | 74 | 2 |
+| 5 | Panama | 0 | 1 | 73 | 77 | 1 |
 
 ### Group B
 
 | Pos | Team | W | L | PF | PA | Pts |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Argentina | 1 | 0 | 87 | 82 | 2 |
-| 2 | Dominican Republic | 1 | 0 | 72 | 70 | 2 |
-| 3 | Uruguay | 0 | 1 | 70 | 72 | 1 |
-| 4 | Mexico | 0 | 1 | 82 | 87 | 1 |
-| 5 | Puerto Rico | 0 | 0 | 0 | 0 | 0 |
+| 1 | Argentina | 1 | 1 | 158 | 158 | 3 |
+| 2 | Mexico | 1 | 1 | 155 | 158 | 3 |
+| 3 | Dominican Republic | 1 | 0 | 72 | 70 | 2 |
+| 4 | Uruguay | 0 | 2 | 141 | 145 | 2 |
+| 5 | Puerto Rico | 1 | 0 | 76 | 71 | 2 |
 
 ## Games
 
@@ -49,8 +49,8 @@ Status: **4 of 40 games played**.
 | --- | --- | --- | --- | --- | --- |
 | 1 | 2005-08-24 | United States | Panama | 77-73 | [box](Games/fiba-amc05-g01.result.json) |
 | 2 | 2005-08-24 | Venezuela | Brazil | 81-77 | [box](Games/fiba-amc05-g02.result.json) |
-| 3 | 2005-08-25 | Brazil | United States |  |  |
-| 4 | 2005-08-25 | Canada | Venezuela |  |  |
+| 3 | 2005-08-25 | Brazil | United States | 84-69 | [box](Games/fiba-amc05-g03.result.json) |
+| 4 | 2005-08-25 | Canada | Venezuela | 86-74 | [box](Games/fiba-amc05-g04.result.json) |
 | 5 | 2005-08-26 | Panama | Brazil |  |  |
 | 6 | 2005-08-26 | United States | Canada |  |  |
 | 7 | 2005-08-27 | Venezuela | United States |  |  |
@@ -64,8 +64,8 @@ Status: **4 of 40 games played**.
 | --- | --- | --- | --- | --- | --- |
 | 11 | 2005-08-24 | Argentina | Mexico | 87-82 | [box](Games/fiba-amc05-g11.result.json) |
 | 12 | 2005-08-24 | Uruguay | Dominican Republic | 72-70 | [box](Games/fiba-amc05-g12.result.json) |
-| 13 | 2005-08-25 | Mexico | Uruguay |  |  |
-| 14 | 2005-08-25 | Puerto Rico | Argentina |  |  |
+| 13 | 2005-08-25 | Mexico | Uruguay | 73-71 | [box](Games/fiba-amc05-g13.result.json) |
+| 14 | 2005-08-25 | Puerto Rico | Argentina | 76-71 | [box](Games/fiba-amc05-g14.result.json) |
 | 15 | 2005-08-26 | Uruguay | Puerto Rico |  |  |
 | 16 | 2005-08-26 | Dominican Republic | Mexico |  |  |
 | 17 | 2005-08-27 | Argentina | Uruguay |  |  |
@@ -115,12 +115,12 @@ Status: **4 of 40 games played**.
 
 ## Leaders (per game)
 
-**Points**: Alex Scales (United States) 20.0; Óscar Torres (Venezuela) 19.0; Federico Kammerichs (Argentina) 15.0; Nicolás Mazzarino (Uruguay) 15.0; Ramsés Benítez (Mexico) 15.0
+**Points**: Nicolás Mazzarino (Uruguay) 18.0; Óscar Torres (Venezuela) 16.0; Ramsés Benítez (Mexico) 15.5; Bobby Joe Hatton (Puerto Rico) 15.0; James Gillingham (Canada) 15.0
 
-**Rebounds**: Mauricio Aguiar (Uruguay) 10.0; Danilo Pinnock (Panama) 9.0; Horacio Llamas (Mexico) 9.0; José Vargas (Dominican Republic) 9.0; Hernán Jasen (Argentina) 7.0
+**Rebounds**: Danilo Pinnock (Panama) 9.0; José Vargas (Dominican Republic) 9.0; Mauricio Aguiar (Uruguay) 8.5; Anderson Varejão (Brazil) 7.5; Gabriel Fernández (Argentina) 7.5
 
-**Assists**: Gabriel Fernández (Argentina) 5.0; Ramsés Benítez (Mexico) 5.0; Esteban Batista (Uruguay) 4.0; Nicolás Mazzarino (Uruguay) 4.0; Alex Scales (United States) 3.0
+**Assists**: Richard Anderson (Canada) 4.0; Jaime Peterson (Dominican Republic) 3.0; Luis Silveira (Uruguay) 3.0; Nicolás Mazzarino (Uruguay) 3.0; Ramsés Benítez (Mexico) 3.0
 
-**Steals**: Horacio Llamas (Mexico) 3.0; Óscar Torres (Venezuela) 3.0; Alex Scales (United States) 2.0; Antonio García (Panama) 2.0; Cristian Arias (Dominican Republic) 2.0
+**Steals**: Guilherme Giovannoni (Brazil) 2.5; Antonio García (Panama) 2.0; Cristian Arias (Dominican Republic) 2.0; Elías Larry Ayuso (Puerto Rico) 2.0; Horacio Llamas (Mexico) 2.0
 
-**Blocks**: Leonardo Gutiérrez (Argentina) 3.0; Anderson Varejão (Brazil) 2.0; Charlie Bell (United States) 2.0; Antonio García (Panama) 1.0; Diego Lo Grippo (Argentina) 1.0
+**Blocks**: Antonio Latimer (Puerto Rico) 2.0; Charlie Bell (United States) 1.5; Leonardo Gutiérrez (Argentina) 1.5; Ramsés Benítez (Mexico) 1.5; Tiago Splitter (Brazil) 1.5
