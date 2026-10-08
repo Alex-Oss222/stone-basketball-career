@@ -2,9 +2,9 @@
 
 # Contract | Ibo Kutluay
 
-Known through: 2005-09-25. [Open interactive contract](ibokutluay.html#contract) · [Contract history](ibokutluay.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](ibokutluay.html#contract) · [Contract history](ibokutluay.html#contract-history)
 
-Ibo Kutluay: under contract. Evidence cutoff: 2005-09-25.
+Ibo Kutluay: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ibo Kutluay |
-| Club / rights baseline | Minnesota Timberwolves |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

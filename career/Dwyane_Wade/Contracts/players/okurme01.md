@@ -2,9 +2,9 @@
 
 # Contract | Mehmet Okur
 
-Known through: 2005-09-25. [Open interactive contract](okurme01.html#contract) · [Contract history](okurme01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](okurme01.html#contract) · [Contract history](okurme01.html#contract-history)
 
-Mehmet Okur: under contract. Evidence cutoff: 2005-09-25.
+Mehmet Okur: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -114,6 +114,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 
 ### Current control and contract coverage
 
@@ -276,6 +277,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 
 ## Source records
 
@@ -285,4 +287,5 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)

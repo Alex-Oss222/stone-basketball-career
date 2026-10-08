@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="t d">
-<title id="t">Primož Brezec</title><desc id="d">Primož Brezec, Indiana Pacers, Center, #7.</desc>
-<rect width="1280" height="180" rx="24" fill="#041e42"/>
-<rect x="0" y="150" width="1280" height="30" fill="#ffcd00" fill-opacity=".92"/>
-<rect x="0" y="150" width="1280" height="6" fill="#ffcd00"/>
+<title id="t">Primož Brezec</title><desc id="d">Primož Brezec, Toronto Raptors, Center, #7.</desc>
+<rect width="1280" height="180" rx="24" fill="#753bbd"/>
+<rect x="0" y="150" width="1280" height="30" fill="#ba0c2f" fill-opacity=".92"/>
+<rect x="0" y="150" width="1280" height="6" fill="#ba0c2f"/>
 <text x="48" y="78" font-family="sans-serif" font-size="54" font-weight="700" fill="#ffffff">Primož Brezec</text>
-<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Center · Indiana Pacers</text>
+<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Center · Toronto Raptors</text>
 <text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#7</text>
 </svg>

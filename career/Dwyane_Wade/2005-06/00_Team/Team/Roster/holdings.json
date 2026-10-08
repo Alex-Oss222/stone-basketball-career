@@ -1,0 +1,117 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "kind": "miami_holdings",
+ "season": "2005-06",
+ "purpose": "Dated record of the players simulated Miami holds, read by conflict rule 2 (AGENTS.md): a real club's rotation leaves out every player held on the game's date. `from` and `until` are dates; `until` is the first date he is no longer held (null while held). Entries are appended, or given an `until` on or after the career date; dates already passed never change, so played games keep their inputs.",
+ "entries": [
+  {
+   "player": "Caron Butler",
+   "bbr_id": "butleca01",
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "under contract"
+  },
+  {
+   "player": "Brian Grant",
+   "bbr_id": "grantbr01",
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "under contract"
+  },
+  {
+   "player": "Dwyane Wade",
+   "bbr_id": null,
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "draft rights"
+  },
+  {
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "from": "2003-07-17",
+   "until": null,
+   "basis": "signed 2003-07-17 (early_bird); negotiation record Negotiations/mike_james.json"
+  },
+  {
+   "player": "Mehmet Okur",
+   "bbr_id": "okurme01",
+   "from": "2004-09-23",
+   "until": null,
+   "basis": "mid_level signing 2004-09-23 (2004-05 summer market)"
+  },
+  {
+   "player": "Donyell Marshall",
+   "bbr_id": "marshdo01",
+   "from": "2004-12-20",
+   "until": null,
+   "how": "trade",
+   "basis": "acquired by trade from Toronto Raptors (2004-12-20-be4b6043a0)"
+  },
+  {
+   "player": "Matt Harpring",
+   "bbr_id": "harprma01",
+   "from": "2005-01-24",
+   "until": null,
+   "how": "trade",
+   "basis": "acquired by trade from Utah Jazz (2005-01-24-64ef582bc5)"
+  },
+  {
+   "player": "Eddie Jones",
+   "bbr_id": "jonesed02",
+   "from": "2005-08-05",
+   "until": null,
+   "basis": "acquired by trade 2005-08-05 from Utah Jazz (2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01; 2005-06 summer market)"
+  },
+  {
+   "player": "Anthony Johnson",
+   "bbr_id": "johnsan02",
+   "from": "2005-09-02",
+   "until": null,
+   "basis": "mid_level signing 2005-09-02 (2005-06 summer market)"
+  },
+  {
+   "player": "DeShawn Stevenson",
+   "bbr_id": "stevede01",
+   "from": "2005-09-02",
+   "until": null,
+   "basis": "acquired by trade 2005-09-02 from Utah Jazz (2005-summer-trade-2005-09-02-murrala01-stevede01; 2005-06 summer market)"
+  },
+  {
+   "player": "Sebastian Telfair",
+   "bbr_id": "telfase01",
+   "from": "2005-08-05",
+   "until": null,
+   "basis": "acquired by trade 2005-08-05 from Utah Jazz (2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01; 2005-06 summer market)"
+  },
+  {
+   "player": "Eddie Gill",
+   "bbr_id": "gilled01",
+   "from": "2005-08-02",
+   "until": null,
+   "basis": "minimum signing 2005-08-02 (2005-06 summer market)"
+  },
+  {
+   "player": "Mike Wilks",
+   "bbr_id": "wilksmi01",
+   "from": "2005-08-02",
+   "until": null,
+   "basis": "minimum signing 2005-08-02 (2005-06 summer market)"
+  },
+  {
+   "player": "Matt Carroll",
+   "bbr_id": "carroma01",
+   "from": "2005-08-02",
+   "until": null,
+   "basis": "minimum signing 2005-08-02 (2005-06 summer market)"
+  },
+  {
+   "player": "Uroš Slokar",
+   "bbr_id": "slokaur01",
+   "from": "2005-06-28",
+   "until": null,
+   "basis": "draft rights (No. 58 pick), unsigned"
+  }
+ ],
+ "void_definition": "An entry with void: true records a camp contract voided because the player was not truly available when Miami signed him (04_Training_Camp/signing_corrections.json). Its dates stay as played games used them, but it never made him Miami's: his real moves apply as if Miami had not signed him."
+}

@@ -2,13 +2,116 @@
 
 # Contract | Udonis Haslem
 
-Known through: 2005-09-25. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
 
-Udonis Haslem: traded. Evidence cutoff: 2005-09-25.
+Udonis Haslem: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
-No verified current signed agreement is available in the dated record. The control and evidence sections below explain the recorded status.
+### Udonis Haslem · 2005-08-12
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | 2005-08-12 |  |
+| Original term | 5 seasons |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | $30,250,000 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Toronto Raptors |
+| Signing club | Toronto Raptors |
+| Contract ID | hasleud01-2005-08-12 |
+| Signing route / evidence basis | bird |
+| Signing date | 2005-08-12 |
+| Verified first season | 2005-06 |
+| Verified final season | 2009-10 |
+| Verified expiry date | 2010-06-30 |
+| Status | under_contract |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2005-06 | $5,000,000 | Not recorded | Not recorded | $5,000,000 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $5,525,000 | Not recorded | Not recorded | $5,525,000 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2007-08 | $6,050,000 | Not recorded | Not recorded | $6,050,000 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2008-09 | $6,575,000 | Not recorded | Not recorded | $6,575,000 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2009-10 | $7,100,000 | Not recorded | Not recorded | $7,100,000 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. No exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+| 2006-07 | Not recorded | Not recorded | Not recorded |
+| 2007-08 | Not recorded | Not recorded | Not recorded |
+| 2008-09 | Not recorded | Not recorded | Not recorded |
+| 2009-10 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+
+### Evidence and coverage
+
+Simulated 2005 summer market: offer sheet matched on 2005-08-12, from Miami Heat. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+
+#### Agreement evidence
+
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -18,18 +121,17 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Udonis Haslem |
 | Club / rights baseline | Toronto Raptors |
-| Control status | traded |
-| Executed current contract | No verified current signed contract |
+| Control status | under_contract |
+| Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
-Signed July 14, 2004 in the 2004-05 summer market (re sign, route minimum); schedule from the league contract ledger (raises by route).
+Current signed salary detail appears in the contract below.
 
 | Season | Amount | Record kind |
 | --- | --- | --- |
-| 2004-05 | $620,046 | contract_salary |
 
 ### Draft-rights scale reference
 
@@ -65,6 +167,111 @@ An offer, counteroffer or acceptance is not an executed contract.
 ## Contract history
 
 The register preserves distinct agreements. An assignment by trade is part of the same agreement.
+
+### Udonis Haslem · 2005-08-12
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | 2005-08-12 |  |
+| Original term | 5 seasons |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | $30,250,000 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Toronto Raptors |
+| Signing club | Toronto Raptors |
+| Contract ID | hasleud01-2005-08-12 |
+| Signing route / evidence basis | bird |
+| Signing date | 2005-08-12 |
+| Verified first season | 2005-06 |
+| Verified final season | 2009-10 |
+| Verified expiry date | 2010-06-30 |
+| Status | under_contract |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2005-06 | $5,000,000 | Not recorded | Not recorded | $5,000,000 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $5,525,000 | Not recorded | Not recorded | $5,525,000 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2007-08 | $6,050,000 | Not recorded | Not recorded | $6,050,000 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2008-09 | $6,575,000 | Not recorded | Not recorded | $6,575,000 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2009-10 | $7,100,000 | Not recorded | Not recorded | $7,100,000 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. No exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+| 2006-07 | Not recorded | Not recorded | Not recorded |
+| 2007-08 | Not recorded | Not recorded | Not recorded |
+| 2008-09 | Not recorded | Not recorded | Not recorded |
+| 2009-10 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+
+### Evidence and coverage
+
+Simulated 2005 summer market: offer sheet matched on 2005-08-12, from Miami Heat. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+
+#### Agreement evidence
+
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Udonis Haslem · 2004-07-14
 
@@ -281,3 +488,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2004-05/League/contracts.json)
 - [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)

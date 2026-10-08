@@ -2,9 +2,9 @@
 
 # Contract | Andrew DeClercq
 
-Known through: 2005-09-25. [Open interactive contract](declean01.html#contract) · [Contract history](declean01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](declean01.html#contract) · [Contract history](declean01.html#contract-history)
 
-Andrew DeClercq: under contract. Evidence cutoff: 2005-09-25.
+Andrew DeClercq: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Andrew DeClercq |
-| Club / rights baseline | Orlando Magic |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Eddie Jones
 
-Known through: 2005-09-25. [Open interactive contract](jonesed02.html#contract) · [Contract history](jonesed02.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](jonesed02.html#contract) · [Contract history](jonesed02.html#contract-history)
 
-Eddie Jones: under contract. Evidence cutoff: 2005-09-25.
+Eddie Jones: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -102,6 +102,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-08-05 | Utah Jazz | Miami Heat | 2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 | 2005-01-24 | Miami Heat | Utah Jazz | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
 
 ### Evidence and coverage
@@ -112,18 +113,20 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Contract source document](https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/)
+- [Contract source document](https://www.espn.com/nba/dailydime?page=dailydime_070210-11)
+- [Contract source document](https://www.upi.com/Archives/2000/08/01/Jones-Mashburn-in-9-player-deal/6267965102400/)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Contract source document](https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/)
-- [Contract source document](https://www.espn.com/nba/dailydime?page=dailydime_070210-11)
-- [Contract source document](https://www.upi.com/Archives/2000/08/01/Jones-Mashburn-in-9-player-deal/6267965102400/)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Dated signed-contract archive](../contract_records.json)
-- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 
 ### Current control and contract coverage
@@ -133,7 +136,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Eddie Jones |
-| Club / rights baseline | Utah Jazz |
+| Club / rights baseline | Miami Heat |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -275,6 +278,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-08-05 | Utah Jazz | Miami Heat | 2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 | 2005-01-24 | Miami Heat | Utah Jazz | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
 
 ### Evidence and coverage
@@ -285,18 +289,20 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Contract source document](https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/)
+- [Contract source document](https://www.espn.com/nba/dailydime?page=dailydime_070210-11)
+- [Contract source document](https://www.upi.com/Archives/2000/08/01/Jones-Mashburn-in-9-player-deal/6267965102400/)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Contract source document](https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/)
-- [Contract source document](https://www.espn.com/nba/dailydime?page=dailydime_070210-11)
-- [Contract source document](https://www.upi.com/Archives/2000/08/01/Jones-Mashburn-in-9-player-deal/6267965102400/)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Dated signed-contract archive](../contract_records.json)
-- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
 
 ## Source records
@@ -311,5 +317,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.espn.com/nba/dailydime?page=dailydime_070210-11)
 - [Contract source document](https://www.upi.com/Archives/2000/08/01/Jones-Mashburn-in-9-player-deal/6267965102400/)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 - [Dated signed-contract archive](../contract_records.json)
 - [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)

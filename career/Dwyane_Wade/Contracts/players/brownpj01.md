@@ -2,9 +2,9 @@
 
 # Contract | P.J. Brown
 
-Known through: 2005-09-25. [Open interactive contract](brownpj01.html#contract) · [Contract history](brownpj01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](brownpj01.html#contract) · [Contract history](brownpj01.html#contract-history)
 
-P.J. Brown: under contract. Evidence cutoff: 2005-09-25.
+P.J. Brown: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | New Orleans Hornets |
+| Assigned club | Detroit Pistons |
 | Signing club | New Orleans Hornets |
 | Contract ID | brownpj01-2003-07-16 |
 | Signing route / evidence basis | re sign |
@@ -100,6 +100,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-09-09 | Sacramento Kings | Detroit Pistons | 2005-summer-trade-2005-09-09-brownpj01-dampier01-jacksbo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
@@ -110,6 +111,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -118,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | P.J. Brown |
-| Club / rights baseline | Sacramento Kings |
+| Club / rights baseline | Detroit Pistons |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -183,7 +185,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | New Orleans Hornets |
+| Assigned club | Detroit Pistons |
 | Signing club | New Orleans Hornets |
 | Contract ID | brownpj01-2003-07-16 |
 | Signing route / evidence basis | re sign |
@@ -258,6 +260,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-09-09 | Sacramento Kings | Detroit Pistons | 2005-summer-trade-2005-09-09-brownpj01-dampier01-jacksbo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
@@ -268,6 +271,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### P.J. Brown · existing contract; signing date not recorded
 

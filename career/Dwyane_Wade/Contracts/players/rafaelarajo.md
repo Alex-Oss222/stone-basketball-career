@@ -2,9 +2,9 @@
 
 # Contract | Rafael Araújo
 
-Known through: 2005-09-25. [Open interactive contract](rafaelarajo.html#contract) · [Contract history](rafaelarajo.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](rafaelarajo.html#contract) · [Contract history](rafaelarajo.html#contract-history)
 
-Rafael Araújo: under contract. Evidence cutoff: 2005-09-25.
+Rafael Araújo: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Denver Nuggets |
+| Assigned club | Orlando Magic |
 | Signing club | Denver Nuggets |
 | Contract ID | rafaelarajo-2004-07-01 |
 | Signing route / evidence basis | rookie scale |
@@ -98,6 +98,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-08-12 | Denver Nuggets | Orlando Magic | 2005-summer-trade-2005-08-12-araujra01-harrida01-hoibefr01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
@@ -108,6 +109,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -116,7 +118,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Rafael Araújo |
-| Club / rights baseline | Denver Nuggets |
+| Club / rights baseline | Orlando Magic |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -181,7 +183,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Denver Nuggets |
+| Assigned club | Orlando Magic |
 | Signing club | Denver Nuggets |
 | Contract ID | rafaelarajo-2004-07-01 |
 | Signing route / evidence basis | rookie scale |
@@ -254,6 +256,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-08-12 | Denver Nuggets | Orlando Magic | 2005-summer-trade-2005-08-12-araujra01-harrida01-hoibefr01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
@@ -264,6 +267,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ## Source records
 

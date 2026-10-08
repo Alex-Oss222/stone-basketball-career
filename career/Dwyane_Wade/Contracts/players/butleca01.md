@@ -2,9 +2,9 @@
 
 # Contract | Caron Butler
 
-Known through: 2005-09-25. [Open interactive contract](butleca01.html#contract) · [Contract history](butleca01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](butleca01.html#contract) · [Contract history](butleca01.html#contract-history)
 
-Caron Butler: under rookie contract. Evidence cutoff: 2005-09-25.
+Caron Butler: under rookie contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -120,6 +120,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf)
 - [Contract source document](https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 
 ### Current control and contract coverage
 
@@ -288,6 +289,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf)
 - [Contract source document](https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 
 ## Source records
 
@@ -302,3 +304,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf)
 - [Contract source document](https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)

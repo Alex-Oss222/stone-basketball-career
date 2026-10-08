@@ -2,9 +2,9 @@
 
 # Contract | Zoran Planinic
 
-Known through: 2005-09-25. [Open interactive contract](planizo01.html#contract) · [Contract history](planizo01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](planizo01.html#contract) · [Contract history](planizo01.html#contract-history)
 
-Zoran Planinic: No verified contract record. Evidence cutoff: 2005-09-25.
+Zoran Planinic: No verified contract record. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Zoran Planinic |
-| Club / rights baseline | Charlotte Bobcats |
+| Club / rights baseline | Orlando Magic |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

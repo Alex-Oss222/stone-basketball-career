@@ -2,9 +2,9 @@
 
 # Contract | Mike James
 
-Known through: 2005-09-25. [Open interactive contract](jamesmi01.html#contract) · [Contract history](jamesmi01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](jamesmi01.html#contract) · [Contract history](jamesmi01.html#contract-history)
 
-Mike James: under contract. Evidence cutoff: 2005-09-25.
+Mike James: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -114,6 +114,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Executed free-agent signing](../../2003-04/01_Free_Agency/Negotiations/mike_james.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 
 ### Current control and contract coverage
 
@@ -276,6 +277,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Executed free-agent signing](../../2003-04/01_Free_Agency/Negotiations/mike_james.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 
 ### Mike James · existing contract; signing date not recorded
 
@@ -388,4 +390,5 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Recorded free-agent rights](../../2003-04/00_Team/Finances/free_agent_rights.json)
 - [Executed free-agent signing](../../2003-04/01_Free_Agency/Negotiations/mike_james.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 - [Dated signed-contract archive](../contract_records.json)

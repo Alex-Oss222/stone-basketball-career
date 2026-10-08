@@ -2,9 +2,9 @@
 
 # Contract | Lamond Murray
 
-Known through: 2005-09-25. [Open interactive contract](murrala01.html#contract) · [Contract history](murrala01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](murrala01.html#contract) · [Contract history](murrala01.html#contract-history)
 
-Lamond Murray: under contract. Evidence cutoff: 2005-09-25.
+Lamond Murray: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -100,6 +100,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-09-02 | Miami Heat | Utah Jazz | 2005-summer-trade-2005-09-02-murrala01-stevede01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 | 2004-12-20 | Toronto Raptors | Miami Heat | 2004-12-20-be4b6043a0 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) |
 
 ### Evidence and coverage
@@ -118,6 +119,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 
 ### Current control and contract coverage
@@ -127,7 +129,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Lamond Murray |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Utah Jazz |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -267,6 +269,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-09-02 | Miami Heat | Utah Jazz | 2005-summer-trade-2005-09-02-murrala01-stevede01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 | 2004-12-20 | Toronto Raptors | Miami Heat | 2004-12-20-be4b6043a0 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) |
 
 ### Evidence and coverage
@@ -285,6 +288,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 
 ## Source records

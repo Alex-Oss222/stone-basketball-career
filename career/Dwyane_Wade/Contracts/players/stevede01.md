@@ -2,9 +2,9 @@
 
 # Contract | DeShawn Stevenson
 
-Known through: 2005-09-25. [Open interactive contract](stevede01.html#contract) · [Contract history](stevede01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](stevede01.html#contract) · [Contract history](stevede01.html#contract-history)
 
-DeShawn Stevenson: under contract. Evidence cutoff: 2005-09-25.
+DeShawn Stevenson: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -25,10 +25,10 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Utah Jazz |
+| Assigned club | Miami Heat |
 | Signing club | Utah Jazz |
 | Contract ID | stevede01-2004-09-23 |
-| Signing route / evidence basis | bird |
+| Signing route / evidence basis | existing |
 | Signing date | 2004-09-23 |
 | Verified first season | 2004-05 |
 | Verified final season | 2008-09 |
@@ -102,16 +102,20 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-09-02 | Utah Jazz | Miami Heat | 2005-summer-trade-2005-09-02-murrala01-stevede01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
-Simulated 2004 summer market: offer sheet matched on 2004-09-23, from Cleveland Cavaliers. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+Acquired by trade from Utah Jazz on September 2, 2005 (2005-summer-trade-2005-09-02-murrala01-stevede01): the existing agreement, assigned; schedule from the league contract ledger. Signed September 23, 2004 (offer sheet matched, Utah Jazz).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -120,7 +124,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | DeShawn Stevenson |
-| Club / rights baseline | Utah Jazz |
+| Club / rights baseline | Miami Heat |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -185,10 +189,10 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Utah Jazz |
+| Assigned club | Miami Heat |
 | Signing club | Utah Jazz |
 | Contract ID | stevede01-2004-09-23 |
-| Signing route / evidence basis | bird |
+| Signing route / evidence basis | existing |
 | Signing date | 2004-09-23 |
 | Verified first season | 2004-05 |
 | Verified final season | 2008-09 |
@@ -262,16 +266,20 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-09-02 | Utah Jazz | Miami Heat | 2005-summer-trade-2005-09-02-murrala01-stevede01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
-Simulated 2004 summer market: offer sheet matched on 2004-09-23, from Cleveland Cavaliers. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+Acquired by trade from Utah Jazz on September 2, 2005 (2005-summer-trade-2005-09-02-murrala01-stevede01): the existing agreement, assigned; schedule from the league contract ledger. Signed September 23, 2004 (offer sheet matched, Utah Jazz).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### DeShawn Stevenson · existing contract; signing date not recorded
 
@@ -382,4 +390,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)

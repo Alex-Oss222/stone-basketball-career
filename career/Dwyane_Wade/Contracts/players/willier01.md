@@ -2,9 +2,9 @@
 
 # Contract | Eric Williams
 
-Known through: 2005-09-25. [Open interactive contract](willier01.html#contract) · [Contract history](willier01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](willier01.html#contract) · [Contract history](willier01.html#contract-history)
 
-Eric Williams: under contract. Evidence cutoff: 2005-09-25.
+Eric Williams: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Eric Williams |
-| Club / rights baseline | New Orleans Hornets |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

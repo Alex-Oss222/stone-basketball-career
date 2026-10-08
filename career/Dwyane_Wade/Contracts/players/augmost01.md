@@ -2,9 +2,9 @@
 
 # Contract | Stacey Augmon
 
-Known through: 2005-09-25. [Open interactive contract](augmost01.html#contract) · [Contract history](augmost01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](augmost01.html#contract) · [Contract history](augmost01.html#contract-history)
 
-Stacey Augmon: under contract. Evidence cutoff: 2005-09-25.
+Stacey Augmon: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Stacey Augmon |
-| Club / rights baseline | New Jersey Nets |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

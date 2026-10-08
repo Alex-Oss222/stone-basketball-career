@@ -2,9 +2,9 @@
 
 # Contract | Hiram Fuller
 
-Known through: 2005-09-25. [Open interactive contract](fullehi01.html#contract) · [Contract history](fullehi01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](fullehi01.html#contract) · [Contract history](fullehi01.html#contract-history)
 
-Hiram Fuller: No verified contract record. Evidence cutoff: 2005-09-25.
+Hiram Fuller: No verified contract record. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 

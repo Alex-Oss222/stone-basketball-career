@@ -2,9 +2,9 @@
 
 # Contract | DerMarr Johnson
 
-Known through: 2005-09-25. [Open interactive contract](johnsde03.html#contract) · [Contract history](johnsde03.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](johnsde03.html#contract) · [Contract history](johnsde03.html#contract-history)
 
-DerMarr Johnson: under contract. Evidence cutoff: 2005-09-25.
+DerMarr Johnson: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | DerMarr Johnson |
-| Club / rights baseline | San Antonio Spurs |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

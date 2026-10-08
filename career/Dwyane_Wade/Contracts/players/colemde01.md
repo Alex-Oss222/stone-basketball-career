@@ -2,9 +2,9 @@
 
 # Contract | Derrick Coleman
 
-Known through: 2005-09-25. [Open interactive contract](colemde01.html#contract) · [Contract history](colemde01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](colemde01.html#contract) · [Contract history](colemde01.html#contract-history)
 
-Derrick Coleman: under contract. Evidence cutoff: 2005-09-25.
+Derrick Coleman: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Derrick Coleman |
-| Club / rights baseline | Philadelphia 76ers |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

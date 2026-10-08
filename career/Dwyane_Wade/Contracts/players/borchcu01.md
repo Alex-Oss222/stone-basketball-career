@@ -2,9 +2,9 @@
 
 # Contract | Curtis Borchardt
 
-Known through: 2005-09-25. [Open interactive contract](borchcu01.html#contract) · [Contract history](borchcu01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](borchcu01.html#contract) · [Contract history](borchcu01.html#contract-history)
 
-Curtis Borchardt: under rookie contract. Evidence cutoff: 2005-09-25.
+Curtis Borchardt: under rookie contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -126,7 +126,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Curtis Borchardt |
-| Club / rights baseline | Philadelphia 76ers |
+| Club / rights baseline | Free agent |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

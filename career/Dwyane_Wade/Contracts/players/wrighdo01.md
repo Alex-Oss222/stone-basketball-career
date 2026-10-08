@@ -2,9 +2,9 @@
 
 # Contract | Dorell Wright
 
-Known through: 2005-09-25. [Open interactive contract](wrighdo01.html#contract) · [Contract history](wrighdo01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](wrighdo01.html#contract) · [Contract history](wrighdo01.html#contract-history)
 
-Dorell Wright: under rookie contract. Evidence cutoff: 2005-09-25.
+Dorell Wright: under rookie contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Utah Jazz |
 | Signing club | Miami Heat |
 | Contract ID | wrighdo01-2004-07-01 |
 | Signing route / evidence basis | rookie_scale |
@@ -98,6 +98,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-08-05 | Miami Heat | Utah Jazz | 2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
@@ -110,6 +111,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -118,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Dorell Wright |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Utah Jazz |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -183,7 +185,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Utah Jazz |
 | Signing club | Miami Heat |
 | Contract ID | wrighdo01-2004-07-01 |
 | Signing route / evidence basis | rookie_scale |
@@ -256,6 +258,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-08-05 | Miami Heat | Utah Jazz | 2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
@@ -268,6 +271,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ## Source records
 

@@ -1,4 +1,4 @@
-![Bob Sura: Indiana Pacers, Shooting guard](assets/surabo01_header.svg)
+![Bob Sura: Free agent, Shooting guard](assets/surabo01_header.svg)
 
 <!-- photo -->
 <img src="assets/silhouette.svg" alt="No sourced photo of Bob Sura" width="160">
@@ -8,11 +8,11 @@
 
 # Bob Sura | NBA player card
 
-[Interactive card](surabo01.html) · [Miami card](../../../2004-05/00_Team/Team/Player_Cards/bob_sura.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
+[Interactive card](surabo01.html) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
 The interactive card is an HTML file: GitHub shows it as source, so open `surabo01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-09-25 · **Club on this date:** Indiana Pacers · **Basis:** Indiana Pacers: the 2004-05 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-10-01 · **Club on this date:** Free agent · **Basis:** out of the league: his real career has no 2005-06 season (runtime/availability.py) · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #3 · **Born:** 1973-03-25 · **Age on card date:** 32  
 **Registry ID:** `surabo01` · [Basketball-Reference page](https://www.basketball-reference.com/players/s/surabo01.html) · ESPN ID 825
 
@@ -22,17 +22,17 @@ The interactive card is an HTML file: GitHub shows it as source, so open `surabo
 
 **2002-03 (recorded, GSW):** 55 G, 0 GS, 20.5 MPG, 7.3 PPG, 3.0 RPG, 3.2 APG, 0.8 SPG, 0.0 BPG, 1.5 TOV, FG 41.2%.
 
-**Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2004; presentation only.
+**Colours:** header uses the free-agent placeholder colours (#1d1d1f / #c5c7cb) for the season starting 2005; presentation only.
 
 ## Simulated statistics
 
-As of **2005-09-25**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-10-01**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2004-05 regular season](../2004-05/League_Stats.md) | 32 | IND | NBA | SG | 57 | 40 | 32.4 | 3.7 | 8.3 | .446 | 0.8 | 2.2 | .371 | 2.9 | 6.1 | .473 | .495 | 2.5 | 3.4 | .732 | 1.2 | 4.1 | 5.2 | 4.7 | 1.2 | 0.2 | 2.0 | 2.9 | 10.7 | .546 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 ### Month
 
@@ -41,12 +41,12 @@ As of **2005-09-25**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2004](../2004-05/11_November/League_Stats.md) | 32 | IND | NBA | SG | 8 | 7 | 30.2 | 3.6 | 8.2 | .439 | 0.9 | 2.1 | .412 | 2.8 | 6.1 | .449 | .492 | 1.9 | 2.9 | .652 | 1.1 | 4.2 | 5.4 | 4.8 | 1.4 | 0.1 | 2.5 | 2.0 | 10.0 | .525 | — |
-| [December 2004](../2004-05/12_December/League_Stats.md) | 32 | IND | NBA | SG | 11 | 8 | 32.6 | 3.6 | 8.4 | .435 | 1.4 | 2.6 | .517 | 2.3 | 5.7 | .397 | .516 | 2.3 | 2.9 | .781 | 1.1 | 4.4 | 5.5 | 5.5 | 1.5 | 0.2 | 1.9 | 3.0 | 10.9 | .566 | — |
-| [January 2005](../2004-05/01_January/League_Stats.md) | 32 | IND | NBA | SG | 10 | 8 | 32.4 | 3.5 | 8.5 | .412 | 0.7 | 2.2 | .318 | 2.8 | 6.3 | .444 | .453 | 2.7 | 4.0 | .675 | 1.0 | 4.1 | 5.1 | 4.4 | 1.3 | 0.2 | 1.7 | 3.6 | 10.4 | .507 | — |
-| [February 2005](../2004-05/02_February/League_Stats.md) | 32 | IND | NBA | SG | 9 | 6 | 33.4 | 3.3 | 7.0 | .476 | 0.2 | 1.9 | .118 | 3.1 | 5.1 | .609 | .492 | 3.1 | 4.0 | .778 | 0.8 | 3.7 | 4.4 | 4.4 | 1.2 | 0.6 | 1.8 | 3.4 | 10.0 | .571 | — |
-| [March 2005](../2004-05/03_March/League_Stats.md) | 32 | IND | NBA | SG | 10 | 7 | 33.2 | 3.4 | 8.2 | .415 | 0.7 | 2.3 | .304 | 2.7 | 5.9 | .458 | .457 | 2.9 | 3.8 | .763 | 1.9 | 3.8 | 5.7 | 5.4 | 1.4 | 0.2 | 2.4 | 2.5 | 10.4 | .527 | — |
-| [April 2005](../2004-05/04_April/League_Stats.md) | 32 | IND | NBA | SG | 9 | 4 | 32.0 | 4.7 | 9.2 | .506 | 0.9 | 1.8 | .500 | 3.8 | 7.4 | .507 | .554 | 2.0 | 2.8 | .720 | 1.0 | 4.1 | 5.1 | 3.7 | 0.7 | 0.0 | 1.6 | 2.4 | 12.2 | .585 | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [December 2005](../2005-06/12_December/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [January 2006](../2005-06/01_January/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006](../2005-06/02_February/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006](../2005-06/03_March/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006](../2005-06/04_April/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 </details>
 
@@ -57,69 +57,66 @@ As of **2005-09-25**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2004 week 1 (01 to 07)](../2004-05/11_November/Week_1/League_Stats.md) | 32 | IND | NBA | SG | 1 | 1 | 28.2 | 4.0 | 5.0 | .800 | 2.0 | 2.0 | 1.000 | 2.0 | 3.0 | .667 | 1.000 | 3.0 | 6.0 | .500 | 3.0 | 4.0 | 7.0 | 6.0 | 1.0 | 1.0 | 2.0 | 1.0 | 13.0 | .851 | — |
-| [November 2004 week 2 (08 to 14)](../2004-05/11_November/Week_2/League_Stats.md) | 32 | IND | NBA | SG | 2 | 2 | 27.5 | 5.5 | 12.0 | .458 | 0.5 | 1.5 | .333 | 5.0 | 10.5 | .476 | .479 | 1.0 | 2.0 | .500 | 0.5 | 5.0 | 5.5 | 4.5 | 0.5 | 0.0 | 1.5 | 1.0 | 12.5 | .485 | — |
-| [November 2004 week 3 (15 to 21)](../2004-05/11_November/Week_3/League_Stats.md) | 32 | IND | NBA | SG | 3 | 3 | 32.6 | 2.3 | 7.3 | .318 | 1.0 | 3.3 | .300 | 1.3 | 4.0 | .333 | .386 | 2.3 | 3.0 | .778 | 1.0 | 3.7 | 4.7 | 5.0 | 2.3 | 0.0 | 3.0 | 2.7 | 8.0 | .462 | — |
-| [November 2004 week 4 (22 to 30)](../2004-05/11_November/Week_4/League_Stats.md) | 32 | IND | NBA | SG | 2 | 1 | 30.2 | 3.5 | 7.5 | .467 | 0.5 | 1.0 | .500 | 3.0 | 6.5 | .462 | .500 | 1.5 | 2.0 | .750 | 1.0 | 4.5 | 5.5 | 4.0 | 1.0 | 0.0 | 3.0 | 2.5 | 9.0 | .537 | — |
-| [December 2004 week 1 (01 to 07)](../2004-05/12_December/Week_1/League_Stats.md) | 32 | IND | NBA | SG | 3 | 3 | 34.4 | 3.7 | 8.0 | .458 | 1.7 | 2.3 | .714 | 2.0 | 5.7 | .353 | .562 | 3.7 | 5.0 | .733 | 1.7 | 4.7 | 6.3 | 5.7 | 2.7 | 0.3 | 2.0 | 4.7 | 12.7 | .621 | — |
-| [December 2004 week 2 (08 to 14)](../2004-05/12_December/Week_2/League_Stats.md) | 32 | IND | NBA | SG | 3 | 3 | 34.0 | 3.7 | 9.0 | .407 | 0.7 | 2.7 | .250 | 3.0 | 6.3 | .474 | .444 | 1.7 | 2.0 | .833 | 1.0 | 4.3 | 5.3 | 5.3 | 1.0 | 0.0 | 2.7 | 3.0 | 9.7 | .489 | — |
-| [December 2004 week 3 (15 to 21)](../2004-05/12_December/Week_3/League_Stats.md) | 32 | IND | NBA | SG | 2 | 1 | 31.0 | 2.5 | 5.5 | .455 | 1.5 | 2.5 | .600 | 1.0 | 3.0 | .333 | .591 | 0.5 | 1.0 | .500 | 1.0 | 3.0 | 4.0 | 5.0 | 0.5 | 0.5 | 2.5 | 2.0 | 7.0 | .589 | — |
-| [December 2004 week 4 (22 to 31)](../2004-05/12_December/Week_4/League_Stats.md) | 32 | IND | NBA | SG | 3 | 1 | 30.5 | 4.3 | 10.0 | .433 | 1.7 | 3.0 | .556 | 2.7 | 7.0 | .381 | .517 | 2.7 | 3.0 | .889 | 0.7 | 5.0 | 5.7 | 5.7 | 1.3 | 0.0 | 0.7 | 2.0 | 13.0 | .574 | — |
-| [January 2005 week 1 (01 to 07)](../2004-05/01_January/Week_1/League_Stats.md) | 32 | IND | NBA | SG | 2 | 1 | 36.1 | 4.0 | 9.5 | .421 | 1.0 | 2.5 | .400 | 3.0 | 7.0 | .429 | .474 | 1.0 | 3.0 | .333 | 1.5 | 5.5 | 7.0 | 2.5 | 2.0 | 0.5 | 2.5 | 3.5 | 10.0 | .462 | — |
-| [January 2005 week 2 (08 to 14)](../2004-05/01_January/Week_2/League_Stats.md) | 32 | IND | NBA | SG | 4 | 3 | 30.6 | 2.8 | 7.0 | .393 | 1.0 | 2.8 | .364 | 1.8 | 4.2 | .412 | .464 | 1.8 | 2.8 | .636 | 0.8 | 3.0 | 3.8 | 5.5 | 1.0 | 0.2 | 1.5 | 3.0 | 8.2 | .502 | — |
-| [January 2005 week 3 (15 to 21)](../2004-05/01_January/Week_3/League_Stats.md) | 32 | IND | NBA | SG | 3 | 3 | 29.4 | 4.0 | 8.7 | .462 | 0.0 | 1.0 | .000 | 4.0 | 7.7 | .522 | .462 | 3.3 | 4.3 | .769 | 1.3 | 3.3 | 4.7 | 3.0 | 1.3 | 0.0 | 1.3 | 4.7 | 11.3 | .536 | — |
-| [January 2005 week 4 (22 to 31)](../2004-05/01_January/Week_4/League_Stats.md) | 32 | IND | NBA | SG | 1 | 1 | 41.7 | 4.0 | 12.0 | .333 | 1.0 | 3.0 | .333 | 3.0 | 9.0 | .333 | .375 | 8.0 | 10.0 | .800 | 0.0 | 8.0 | 8.0 | 8.0 | 1.0 | 0.0 | 2.0 | 3.0 | 17.0 | .518 | — |
-| [February 2005 week 1 (01 to 07)](../2004-05/02_February/Week_1/League_Stats.md) | 32 | IND | NBA | SG | 2 | 2 | 33.3 | 2.5 | 5.0 | .500 | 0.5 | 2.5 | .200 | 2.0 | 2.5 | .800 | .550 | 3.5 | 4.5 | .778 | 1.0 | 3.5 | 4.5 | 1.0 | 2.0 | 1.0 | 1.5 | 4.5 | 9.0 | .645 | — |
-| [February 2005 week 2 (08 to 14)](../2004-05/02_February/Week_2/League_Stats.md) | 32 | IND | NBA | SG | 3 | 2 | 35.4 | 4.3 | 9.7 | .448 | 0.3 | 2.7 | .125 | 4.0 | 7.0 | .571 | .466 | 2.0 | 2.3 | .857 | 1.7 | 4.0 | 5.7 | 5.0 | 0.7 | 0.3 | 2.3 | 4.0 | 11.0 | .514 | — |
-| [February 2005 week 3 (15 to 21)](../2004-05/02_February/Week_3/League_Stats.md) | 32 | IND | NBA | SG | 1 | 1 | 33.0 | 5.0 | 6.0 | .833 | 0.0 | 1.0 | .000 | 5.0 | 5.0 | 1.000 | .833 | 6.0 | 8.0 | .750 | 0.0 | 1.0 | 1.0 | 5.0 | 1.0 | 0.0 | 1.0 | 3.0 | 16.0 | .840 | — |
-| [February 2005 week 4 (22 to 28)](../2004-05/02_February/Week_4/League_Stats.md) | 32 | IND | NBA | SG | 3 | 1 | 31.6 | 2.3 | 6.0 | .389 | 0.0 | 1.0 | .000 | 2.3 | 5.0 | .467 | .389 | 3.0 | 4.0 | .750 | 0.0 | 4.3 | 4.3 | 6.0 | 1.3 | 0.7 | 1.7 | 2.3 | 7.7 | .494 | — |
-| [March 2005 week 1 (01 to 07)](../2004-05/03_March/Week_1/League_Stats.md) | 32 | IND | NBA | SG | 2 | 1 | 30.3 | 1.0 | 4.0 | .250 | 0.0 | 0.5 | .000 | 1.0 | 3.5 | .286 | .250 | 1.5 | 3.5 | .429 | 2.5 | 4.0 | 6.5 | 5.5 | 1.5 | 0.0 | 1.0 | 3.0 | 3.5 | .316 | — |
-| [March 2005 week 2 (08 to 14)](../2004-05/03_March/Week_2/League_Stats.md) | 32 | IND | NBA | SG | 1 | 0 | 30.3 | 3.0 | 7.0 | .429 | 0.0 | 2.0 | .000 | 3.0 | 5.0 | .600 | .429 | 2.0 | 2.0 | 1.000 | 1.0 | 3.0 | 4.0 | 4.0 | 0.0 | 0.0 | 2.0 | 1.0 | 8.0 | .508 | — |
-| [March 2005 week 3 (15 to 21)](../2004-05/03_March/Week_3/League_Stats.md) | 32 | IND | NBA | SG | 3 | 2 | 32.5 | 5.0 | 9.3 | .536 | 1.0 | 2.3 | .429 | 4.0 | 7.0 | .571 | .589 | 3.3 | 3.3 | 1.000 | 2.7 | 4.3 | 7.0 | 4.7 | 1.3 | 0.3 | 2.7 | 2.7 | 14.3 | .664 | — |
-| [March 2005 week 4 (22 to 31)](../2004-05/03_March/Week_4/League_Stats.md) | 32 | IND | NBA | SG | 4 | 4 | 35.9 | 3.5 | 9.8 | .359 | 1.0 | 3.2 | .308 | 2.5 | 6.5 | .385 | .410 | 3.5 | 4.8 | .737 | 1.2 | 3.5 | 4.8 | 6.2 | 1.8 | 0.2 | 3.0 | 2.5 | 11.5 | .486 | — |
-| [April 2005 week 1 (01 to 07)](../2004-05/04_April/Week_1/League_Stats.md) | 32 | IND | NBA | SG | 3 | 0 | 30.4 | 3.3 | 7.0 | .476 | 1.3 | 2.0 | .667 | 2.0 | 5.0 | .400 | .571 | 0.7 | 1.3 | .500 | 1.7 | 2.3 | 4.0 | 2.7 | 0.3 | 0.0 | 0.7 | 1.3 | 8.7 | .571 | — |
-| [April 2005 week 2 (08 to 14)](../2004-05/04_April/Week_2/League_Stats.md) | 32 | IND | NBA | SG | 2 | 2 | 35.0 | 7.5 | 14.0 | .536 | 1.0 | 2.0 | .500 | 6.5 | 12.0 | .542 | .571 | 3.0 | 3.5 | .857 | 1.0 | 5.0 | 6.0 | 3.5 | 1.5 | 0.0 | 3.0 | 4.0 | 19.0 | .611 | — |
-| [April 2005 week 3 (15 to 21)](../2004-05/04_April/Week_3/League_Stats.md) | 32 | IND | NBA | SG | 4 | 2 | 31.8 | 4.2 | 8.5 | .500 | 0.5 | 1.5 | .333 | 3.8 | 7.0 | .536 | .529 | 2.5 | 3.5 | .714 | 0.5 | 5.0 | 5.5 | 4.5 | 0.5 | 0.0 | 1.5 | 2.5 | 11.5 | .573 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [January 2006 week 4 (22 to 31)](../2005-06/01_January/Week_4/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 1 (01 to 07)](../2005-06/02_February/Week_1/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 2 (08 to 14)](../2005-06/02_February/Week_2/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 3 (15 to 21)](../2005-06/02_February/Week_3/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 1 (01 to 07)](../2005-06/03_March/Week_1/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 2 (08 to 14)](../2005-06/03_March/Week_2/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006 week 2 (08 to 14)](../2005-06/04_April/Week_2/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 32 | FA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 </details>
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2004-05 regular season. Coverage: **complete**; 471 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
-
-### Tracked games only
-
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 82 of 82 closed games; 57 tracked appearances form the denominator below (2004-11-03 to 2005-04-20).
+Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 0 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 100 | 186 | 53.8% | 3.51 | 3.26 |
-| Outside paint, under 12 ft | 5 | 14 | 35.7% | 0.18 | 0.25 |
-| Outside paint, 12 to under 18 ft | 29 | 65 | 44.6% | 1.02 | 1.14 |
-| 18 ft to the three-point line | 30 | 82 | 36.6% | 1.05 | 1.44 |
-| Three-point range | 46 | 124 | 37.1% | 2.42 | 2.18 |
-| All field goals | 210 | 471 | 44.6% | 8.18 | 8.26 |
+| Paint | 0 | 0 | N/A | N/A | N/A |
+| Outside paint, under 12 ft | 0 | 0 | N/A | N/A | N/A |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | N/A | N/A |
+| 18 ft to the three-point line | 0 | 0 | N/A | N/A | N/A |
+| Three-point range | 0 | 0 | N/A | N/A | N/A |
+| All field goals | 0 | 0 | N/A | N/A | N/A |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2004-05 is simulated: 82 closed regular-season games through 2005-09-25. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated and has not started. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | GSW | 55 | 0 | 20.5 | 7.3 | 3.0 | 3.2 | 0.8 | 0.0 | 1.5 | 41.2% | 32.9% | 69.6% |
 | 2003-04 | DET | 79 | 13 | 19.6 | 6.0 | 3.7 | 2.5 | 0.8 | 0.2 | 1.3 | 39.3% | 30.4% | 75.5% |
 | 2004-05 | IND | 57 | 40 | 32.4 | 10.7 | 5.2 | 4.7 | 1.2 | 0.2 | 2.0 | 44.6% | 37.1% | 73.2% |
+| 2005-06 | FA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Playoff statistics by year
 
-**Coverage:** 2004-05 playoffs ([bracket](../2004-05/Playoffs.md)): no playoff appearance through 2005-09-25. Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs have not started. Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | IND | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2005-06 | FA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2005-09-25. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2005-10-01. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

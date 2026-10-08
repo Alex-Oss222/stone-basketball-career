@@ -2,9 +2,9 @@
 
 # Contract | Nick Van Exel
 
-Known through: 2005-09-25. [Open interactive contract](vanexni01.html#contract) · [Contract history](vanexni01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](vanexni01.html#contract) · [Contract history](vanexni01.html#contract-history)
 
-Nick Van Exel: under contract unverified. Evidence cutoff: 2005-09-25.
+Nick Van Exel: under contract unverified. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Nick Van Exel |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Free agent |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

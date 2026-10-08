@@ -2,9 +2,9 @@
 
 # Contract | Jerome Williams
 
-Known through: 2005-09-25. [Open interactive contract](willije01.html#contract) · [Contract history](willije01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](willije01.html#contract) · [Contract history](willije01.html#contract-history)
 
-Jerome Williams: under contract. Evidence cutoff: 2005-09-25.
+Jerome Williams: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -125,7 +125,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jerome Williams |
-| Club / rights baseline | Detroit Pistons |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

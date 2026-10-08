@@ -2,23 +2,23 @@
 
 # Contract | Carlos Boozer
 
-Known through: 2005-09-25. [Open interactive contract](boozeca01.html#contract) · [Contract history](boozeca01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](boozeca01.html#contract) · [Contract history](boozeca01.html#contract-history)
 
-Carlos Boozer: under contract. Evidence cutoff: 2005-09-25.
+Carlos Boozer: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
-### Carlos Boozer · 2002-08-07
+### Carlos Boozer · 2005-08-02
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2002-08-07 |  |
-| Original term | 3 seasons |  |
-| Reported original value | $425,000 | exact |
+| Signing date | 2005-08-02 |  |
+| Original term | 5 seasons |  |
+| Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $1,341,579 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | $65,944,571 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
@@ -26,15 +26,15 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Field | Recorded detail |
 | --- | --- |
 | Assigned club | Cleveland Cavaliers |
-| Signing club | Not recorded |
-| Contract ID | boozeca01-2002-08-07 |
-| Signing route / evidence basis | contract_history |
-| Signing date | 2002-08-07 |
-| Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Signing club | Cleveland Cavaliers |
+| Contract ID | boozeca01-2005-08-02 |
+| Signing route / evidence basis | bird |
+| Signing date | 2005-08-02 |
+| Verified first season | 2005-06 |
+| Verified final season | 2009-10 |
+| Verified expiry date | 2010-06-30 |
 | Status | under_contract |
-| Contract wording | Signed a guaranteed three-year contract with Cleveland Cavaliers, for $425,000 in the first season and the following two-years at the minimum salary. Included team option for 2004/05. |
+| Contract wording | Not recorded |
 
 ### Salary by season
 
@@ -42,9 +42,11 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2002-03 | $349,458 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $563,679 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | minimum_scale | Not recorded |
-| 2004-05 | $777,900 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | team_option | extrapolated_constant_raise | Team option; no decision recorded on or before 2003-06-26. |
+| 2005-06 | $10,899,929 | Not recorded | Not recorded | $10,899,929 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $12,044,422 | Not recorded | Not recorded | $12,044,422 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2007-08 | $13,188,914 | Not recorded | Not recorded | $13,188,914 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2008-09 | $14,333,407 | Not recorded | Not recorded | $14,333,407 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2009-10 | $15,477,899 | Not recorded | Not recorded | $15,477,899 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -52,7 +54,6 @@ An option amount is conditional. No exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2004-05 | team_option | $777,900 | Not recorded | Not recorded | Not recorded |
 
 ### Additional recorded annual compensation
 
@@ -60,9 +61,11 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 
 | Season | Signing bonus | Dead cap | Buyout |
 | --- | --- | --- | --- |
-| 2002-03 | Not recorded | Not recorded | Not recorded |
-| 2003-04 | Not recorded | Not recorded | Not recorded |
-| 2004-05 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+| 2006-07 | Not recorded | Not recorded | Not recorded |
+| 2007-08 | Not recorded | Not recorded | Not recorded |
+| 2008-09 | Not recorded | Not recorded | Not recorded |
+| 2009-10 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -102,15 +105,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2005 summer market: re sign on 2005-08-02. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
-- [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
-- [Contract source document](https://www.shamsports.com/players/carlos-boozer)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -166,6 +167,111 @@ An offer, counteroffer or acceptance is not an executed contract.
 ## Contract history
 
 The register preserves distinct agreements. An assignment by trade is part of the same agreement.
+
+### Carlos Boozer · 2005-08-02
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | 2005-08-02 |  |
+| Original term | 5 seasons |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | $65,944,571 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Cleveland Cavaliers |
+| Signing club | Cleveland Cavaliers |
+| Contract ID | boozeca01-2005-08-02 |
+| Signing route / evidence basis | bird |
+| Signing date | 2005-08-02 |
+| Verified first season | 2005-06 |
+| Verified final season | 2009-10 |
+| Verified expiry date | 2010-06-30 |
+| Status | under_contract |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2005-06 | $10,899,929 | Not recorded | Not recorded | $10,899,929 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $12,044,422 | Not recorded | Not recorded | $12,044,422 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2007-08 | $13,188,914 | Not recorded | Not recorded | $13,188,914 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2008-09 | $14,333,407 | Not recorded | Not recorded | $14,333,407 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2009-10 | $15,477,899 | Not recorded | Not recorded | $15,477,899 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. No exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+| 2006-07 | Not recorded | Not recorded | Not recorded |
+| 2007-08 | Not recorded | Not recorded | Not recorded |
+| 2008-09 | Not recorded | Not recorded | Not recorded |
+| 2009-10 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+
+### Evidence and coverage
+
+Simulated 2005 summer market: re sign on 2005-08-02. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+
+#### Agreement evidence
+
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Carlos Boozer · 2002-08-07
 
@@ -277,3 +383,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.shamsports.com/players/carlos-boozer)
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)

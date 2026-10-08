@@ -2,39 +2,39 @@
 
 # Contract | Rasual Butler
 
-Known through: 2005-09-25. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
 
-Rasual Butler: team option exercised. Evidence cutoff: 2005-09-25.
+Rasual Butler: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
-### Rasual Butler · 2002-08-15
+### Rasual Butler · 2005-08-02
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2002-08-15 |  |
-| Original term | 2 seasons |  |
+| Signing date | 2005-08-02 |  |
+| Original term | 1 seasons |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $563,679 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | $745,248 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
-| Signing club | Not recorded |
-| Contract ID | butlera01-2002-08-15 |
-| Signing route / evidence basis | contract_history |
-| Signing date | 2002-08-15 |
-| Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | team_option_exercised |
-| Contract wording | Signed a partially guaranteed two year minimum salary contract with Miami. Included team option for 2003/04. |
+| Assigned club | Toronto Raptors |
+| Signing club | Toronto Raptors |
+| Contract ID | butlera01-2005-08-02 |
+| Signing route / evidence basis | minimum |
+| Signing date | 2005-08-02 |
+| Verified first season | 2005-06 |
+| Verified final season | 2005-06 |
+| Verified expiry date | 2006-06-30 |
+| Status | under_contract |
+| Contract wording | Not recorded |
 
 ### Salary by season
 
@@ -42,8 +42,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2002-03 | $349,458 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $563,679 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | team_option | minimum_scale | Team option; June 30 decision pending at this checkpoint. Exercise does not establish a fully guaranteed salary. |
+| 2005-06 | $745,248 | Not recorded | Not recorded | $745,248 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -51,7 +50,6 @@ An option amount is conditional. No exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2003-04 | team_option | $563,679 | Not recorded | exercised | Not recorded |
 
 ### Additional recorded annual compensation
 
@@ -59,14 +57,13 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 
 | Season | Signing bonus | Dead cap | Buyout |
 | --- | --- | --- | --- |
-| 2002-03 | Not recorded | Not recorded | Not recorded |
-| 2003-04 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
 | Term | Recorded detail |
 | --- | --- |
-| Guarantee rider / amendment | status: partially_guaranteed_contract; protected amount 2003 04: Not recorded; note: Archive identifies a partially guaranteed contract; protection amount and trigger dates are not verified. |
+| Guarantee rider / amendment | Not recorded |
 | Guarantee triggers | Not recorded |
 | Guarantee date | Not recorded |
 | Waiver deadline | Not recorded |
@@ -100,18 +97,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Option salary derived from the historical minimum scale, not a later signing or an assumed exercise.
+Simulated 2005 summer market: signing on 2005-08-02. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
-- [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
-- [Contract source document](https://www.shamsports.com/players/rasual-butler)
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Contract source document](https://basketball.realgm.com/nba/info/salary_cap)
-- [Contract source document](https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -120,8 +112,8 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Rasual Butler |
-| Club / rights baseline | Free agent |
-| Control status | team_option_exercised |
+| Club / rights baseline | Toronto Raptors |
+| Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -167,6 +159,103 @@ An offer, counteroffer or acceptance is not an executed contract.
 ## Contract history
 
 The register preserves distinct agreements. An assignment by trade is part of the same agreement.
+
+### Rasual Butler · 2005-08-02
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | 2005-08-02 |  |
+| Original term | 1 seasons |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | $745,248 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Toronto Raptors |
+| Signing club | Toronto Raptors |
+| Contract ID | butlera01-2005-08-02 |
+| Signing route / evidence basis | minimum |
+| Signing date | 2005-08-02 |
+| Verified first season | 2005-06 |
+| Verified final season | 2005-06 |
+| Verified expiry date | 2006-06-30 |
+| Status | under_contract |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2005-06 | $745,248 | Not recorded | Not recorded | $745,248 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. No exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+
+### Evidence and coverage
+
+Simulated 2005 summer market: signing on 2005-08-02. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+
+#### Agreement evidence
+
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Rasual Butler · 2002-08-15
 
@@ -282,3 +371,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Contract source document](https://basketball.realgm.com/nba/info/salary_cap)
 - [Contract source document](https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)

@@ -2,9 +2,9 @@
 
 # Contract | Danny Fortson
 
-Known through: 2005-09-25. [Open interactive contract](fortsda01.html#contract) · [Contract history](fortsda01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](fortsda01.html#contract) · [Contract history](fortsda01.html#contract-history)
 
-Danny Fortson: under contract. Evidence cutoff: 2005-09-25.
+Danny Fortson: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Golden State Warriors |
+| Assigned club | Milwaukee Bucks |
 | Signing club | Not recorded |
 | Contract ID | fortsda01-existing-9b3348c6b7bd |
 | Signing route / evidence basis | salary_pattern |
@@ -100,6 +100,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-08-26 | Dallas Mavericks | Milwaukee Bucks | 2005-summer-trade-2005-08-26-arroyca01-feltora01-fortsda01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
@@ -114,6 +115,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -122,7 +124,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Danny Fortson |
-| Club / rights baseline | Dallas Mavericks |
+| Club / rights baseline | Milwaukee Bucks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -187,7 +189,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Golden State Warriors |
+| Assigned club | Milwaukee Bucks |
 | Signing club | Not recorded |
 | Contract ID | fortsda01-existing-9b3348c6b7bd |
 | Signing route / evidence basis | salary_pattern |
@@ -262,6 +264,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-08-26 | Dallas Mavericks | Milwaukee Bucks | 2005-summer-trade-2005-08-26-arroyca01-feltora01-fortsda01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
@@ -276,6 +279,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ## Source records
 

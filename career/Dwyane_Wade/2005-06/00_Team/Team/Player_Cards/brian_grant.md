@@ -1,0 +1,132 @@
+# Brian Grant | 2005-06 Player Profile
+
+**Team:** Miami Heat · **League:** NBA · **Position:** C / PF  
+**Age at assessment:** 31 · **Height:** 6-9 · **Weight:** 254 lb  
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2005-10-01 
+
+**Contract/control:** Existing contract: 2 season(s) from 2005-06, $29,775,226 scheduled ($14,336,220 in 2005-06). (register, 2005-10-01) [Finance record](../../Finances/cap_sheet.md).
+
+<!-- contract-navigation:start -->
+[Current contract](../../../../Contracts/players/grantbr01.html#contract) · [Contract history](../../../../Contracts/players/grantbr01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+
+Contract pages follow the current career date; this personnel assessment retains its stated date.
+<!-- contract-navigation:end -->
+
+## Scouting report
+
+**Role:** Starter at C, staff plan 34 minutes (staff rotation dated 2005-04-14, [record](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json)).
+
+**Offense:** In 2002-03: 10.3 points and 1.3 assists per game; 55.2% true shooting at 16.0% usage.
+
+**Defense:** In 2002-03: 0.8 steals and 0.6 blocks per game. Matchup defense and coverage execution are unassessed.
+
+## Player grades
+
+<!-- veteran-grades:start -->
+
+**Statistical estimates, 20–80.** 50 is the median of players with at least 500 minutes; higher is better for the named statistic. These are estimates from prior production, not staff scouting grades.
+
+**Sample:** 82 games, 2,641 minutes in 2002-03. Small samples are pulled toward the league baseline.
+
+| Statistic | Grade | Recorded 2002-03 evidence |
+| --- | ---: | --- |
+| Two-point scoring | 73 | 50.9% (344/676) |
+| Three-point shooting | Not assessed | N/A (0/0) |
+| Free throws | 53 | 77.1% (158/205) |
+| Scoring efficiency | 69 | TS 55.2% |
+| Assist production | 31 | AST 7.2% |
+| Turnover control | 45 | TOV 14.4%; lower is better |
+| Offensive rebounding | 72 | ORB 10.2% |
+| Defensive rebounding | 79 | DRB 26.8% |
+| Steal production | 35 | STL 1.3% |
+| Block production | 55 | BLK 1.4% |
+
+**Tendencies:** usage 16.0%; threes 0.0% of field-goal attempts; 0.303 free-throw attempts per field-goal attempt.
+
+**Not assessed:** overall ability, physical tools, shot creation, rim versus midrange finishing, passing decisions, off-ball play, on-ball defense, screen navigation, help defense and rim protection. Steals and blocks alone do not establish defensive ability.
+
+[Source totals and rates](../../../../../../library/2003/league/nba_2002_03_player_stats.json) · [How grades and engine estimates are calculated](../../../../../../docs/statistical_ratings.md) · BRef ID: `grantbr01`.
+
+<!-- veteran-grades:end -->
+
+## Changes and coaching notes
+
+| Date | Finding and effect on role or grade | Evidence |
+| --- | --- | --- |
+| June 26, 2003 | No material change established. Opening Miami offseason card created from the current control/depth baseline. | [Roster/control register](../Roster/roster.json) and [league baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json) |
+| June 26, 2003 | Added 2002-03 statistical estimates; no change to role or availability. | [Prior-season record](../../../../../../library/2003/league/nba_2002_03_player_stats.json) |
+| 2003-10-27 | Staff rotation of 2003-10-27: rotation at C, staff plan 34 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/rotation.json) |
+| 2003-11-07 | Staff rotation of 2003-11-07: rotation at C, staff plan 12 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json) |
+| 2003-11-21 | Staff rotation of 2003-11-21: starter at C, staff plan 34 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json) |
+| 2003-12-05 | Staff rotation of 2003-12-05: starter at C, staff plan 34 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-12-05/rotation.json) |
+| December 12, 2003 | Injured (short) in event `2003-12-12-memphis-grizzlies-at-miami-heat`: out 7 games; the game builder leaves him out of Miami's next 7 games. No grade change. | [Game 2 result](../../../../2003-04/06_Regular_Season/12_December/Week_2/Game_2.md) |
+| 2003-12-19 | Staff rotation of 2003-12-19: rotation at C, staff plan 20 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-12-19/rotation.json) |
+| 2004-01-02 | Staff rotation of 2004-01-02: starter at C, staff plan 34 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-02/rotation.json) |
+| 2004-01-16 | Staff rotation of 2004-01-16: starter at C, staff plan 34 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-16/rotation.json) |
+| 2004-01-30 | Staff rotation of 2004-01-30: starter at C, staff plan 34 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-30/rotation.json) |
+| 2004-02-13 | Staff rotation of 2004-02-13: starter at C, staff plan 34 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/rotation.json) |
+| 2004-02-27 | Staff rotation of 2004-02-27: rotation at C, staff plan 20 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json) |
+| 2004-03-12 | Staff rotation of 2004-03-12: starter at C, staff plan 34 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json) |
+| 2004-03-26 | Staff rotation of 2004-03-26: rotation at C, staff plan 20 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/rotation.json) |
+| 2004-04-09 | Staff rotation of 2004-04-09: rotation at C, staff plan 16 minutes. | [Rotation](../../../../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-04-09/rotation.json) |
+| 2004-10-28 | Staff rotation of 2004-10-28: rotation at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/rotation.json) |
+| 2004-11-11 | Staff rotation of 2004-11-11: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json) |
+| 2004-11-25 | Staff rotation of 2004-11-25: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-25/rotation.json) |
+| 2004-12-09 | Staff rotation of 2004-12-09: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-09/rotation.json) |
+| December 21, 2004 | Injured (day-to-day) in event `2004-12-21-boston-celtics-at-miami-heat`: out 1 game; the game builder leaves him out of Miami's next 1 game. No grade change. | [Game 4 result](../../../../2004-05/06_Regular_Season/12_December/Week_3/Game_4.md) |
+| 2004-12-23 | Staff rotation of 2004-12-23: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/rotation.json) |
+| 2005-01-06 | Staff rotation of 2005-01-06: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-06/rotation.json) |
+| 2005-01-20 | Staff rotation of 2005-01-20: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-20/rotation.json) |
+| 2005-02-03 | Staff rotation of 2005-02-03: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-02-03/rotation.json) |
+| 2005-02-17 | Staff rotation of 2005-02-17: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-02-17/rotation.json) |
+| 2005-03-03 | Staff rotation of 2005-03-03: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-03-03/rotation.json) |
+| 2005-03-17 | Staff rotation of 2005-03-17: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-03-17/rotation.json) |
+| 2005-03-31 | Staff rotation of 2005-03-31: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-03-31/rotation.json) |
+| 2005-04-14 | Staff rotation of 2005-04-14: starter at C, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json) |
+
+## Sources and uncertainty
+
+- **Assessment evidence:**  
+  - [Miami roster/control register](../Roster/roster.json)
+  - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
+  - https://www.basketball-reference.com/players/g/grantbr01.html
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-04-14.
+
+<!-- yearly-statistics:start -->
+
+## Regular-season statistics by year
+
+G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
+
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 74 closed Miami game(s) through 2004-09-30; 2004-05: 81 closed Miami game(s) through 2005-09-30; 2005-06: no Miami appearance through 2005-10-01.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2002-03 | MIA | 82 | 82 | 32.2 | 10.3 | 10.2 | 1.3 | 0.8 | 0.6 | 1.6 | 50.9% | N/A | 77.1% |
+| 2003-04 | MIA | 74 | 52 | 29.1 | 10.3 | 6.8 | 1.3 | 0.9 | 0.5 | 1.4 | 45.8% | 6.2% | 80.8% |
+| 2004-05 | MIA | 81 | 81 | 31.7 | 8.8 | 6.2 | 1.6 | 0.7 | 0.5 | 1.2 | 46.2% | 52.6% | 67.5% |
+| 2005-06 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+<!-- veteran-details:start -->
+### Additional statistics
+
+| Season | FGM | FGA | 3PM | 3PA | FTM | FTA | ORB | DRB | PF |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2002-03 | 4.2 | 8.2 | 0.0 | 0.0 | 1.9 | 2.5 | 2.9 | 7.3 | 3.7 |
+<!-- veteran-details:end -->
+
+Source: [2002-03 totals and advanced rates](../../../../../../library/2003/league/nba_2002_03_player_stats.json), `grantbr01`. Team codes are Basketball-Reference codes.
+
+## Playoff statistics by year
+
+**Coverage:** 2003-04 playoffs have not started. Prior playoff statistical history has not yet been imported into this card.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+<!-- yearly-statistics:end -->
+
+## Awards and honors
+
+No verified awards or honors have been imported into this card through June 26, 2003.

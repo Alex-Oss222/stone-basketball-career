@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="t d">
-<title id="t">Trenton Hassell</title><desc id="d">Trenton Hassell, Cleveland Cavaliers, Shooting guard, #23.</desc>
-<rect width="1280" height="180" rx="24" fill="#9d2235"/>
-<rect x="0" y="150" width="1280" height="30" fill="#8c714c" fill-opacity=".92"/>
-<rect x="0" y="150" width="1280" height="6" fill="#8c714c"/>
+<title id="t">Trenton Hassell</title><desc id="d">Trenton Hassell, Memphis Grizzlies, Shooting guard, #23.</desc>
+<rect width="1280" height="180" rx="24" fill="#0c2340"/>
+<rect x="0" y="150" width="1280" height="30" fill="#ffc72c" fill-opacity=".92"/>
+<rect x="0" y="150" width="1280" height="6" fill="#ffc72c"/>
 <text x="48" y="78" font-family="sans-serif" font-size="54" font-weight="700" fill="#ffffff">Trenton Hassell</text>
-<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Shooting guard · Cleveland Cavaliers</text>
+<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Shooting guard · Memphis Grizzlies</text>
 <text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#23</text>
 </svg>

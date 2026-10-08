@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="t d">
-<title id="t">Alan Henderson</title><desc id="d">Alan Henderson, Utah Jazz, Center, #50.</desc>
-<rect width="1280" height="180" rx="24" fill="#0c2340"/>
-<rect x="0" y="150" width="1280" height="30" fill="#418fde" fill-opacity=".92"/>
-<rect x="0" y="150" width="1280" height="6" fill="#418fde"/>
+<title id="t">Alan Henderson</title><desc id="d">Alan Henderson, Free agent, Center, #44.</desc>
+<rect width="1280" height="180" rx="24" fill="#1d1d1f"/>
+<rect x="0" y="150" width="1280" height="30" fill="#c5c7cb" fill-opacity=".92"/>
+<rect x="0" y="150" width="1280" height="6" fill="#c5c7cb"/>
 <text x="48" y="78" font-family="sans-serif" font-size="54" font-weight="700" fill="#ffffff">Alan Henderson</text>
-<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Center · Utah Jazz</text>
-<text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#50</text>
+<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Center · Free agent</text>
+<text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#44</text>
 </svg>

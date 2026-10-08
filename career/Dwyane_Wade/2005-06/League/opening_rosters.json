@@ -1,0 +1,4805 @@
+{
+ "schema_version": 1,
+ "season": "2005-06",
+ "kind": "opening_rosters",
+ "as_of": "2005-09-30",
+ "rule": "A later season's opening book (R5): the simulated summer market alone places every player (rules 7 and 8). Each\n    club keeps its fifteen with the most real minutes for the season; the rest, and every real player the market left\n    unsigned, start in the free-agent pool unless his real career has ended (runtime/availability.py: a retired player\n    never comes back; one who sits the season out is not in the pool).",
+ "clubs": {
+  "Atlanta Hawks": [
+   {
+    "bbr_id": "jacksst02",
+    "player_id": "Stephen Jackson",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 2910,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "diawbo01",
+    "player_id": "Boris Diaw",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 2874,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "terryja01",
+    "player_id": "Jason Terry",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2798,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "lafrera01",
+    "player_id": "Raef LaFrentz",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2033,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "abdursh01",
+    "player_id": "Shareef Abdur-Rahim",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 1961,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "mohamna01",
+    "player_id": "Nazr Mohammed",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 1389,
+    "position": "C"
+   },
+   {
+    "bbr_id": "hayesch01",
+    "player_id": "Chuck Hayes",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 40,
+    "minutes": 535,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "moniase01",
+    "player_id": "Sergei Monia",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 26,
+    "minutes": 343,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "edwarjo01",
+    "player_id": "John Edwards",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 40,
+    "minutes": 296,
+    "position": "C"
+   },
+   {
+    "bbr_id": "barrean01",
+    "player_id": "Andre Barrett",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 19,
+    "minutes": 282,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "dickada01",
+    "player_id": "Dan Dickau",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 19,
+    "minutes": 234,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "lampema01",
+    "player_id": "Maciej Lampe",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 6,
+    "minutes": 28,
+    "position": "C"
+   },
+   {
+    "bbr_id": "ukicro01",
+    "player_id": "ukicro01",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Boston Celtics": [
+   {
+    "bbr_id": "piercpa01",
+    "player_id": "Paul Pierce",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 3084,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "denglu01",
+    "player_id": "Luol Deng",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 2604,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "snower01",
+    "player_id": "Eric Snow",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2351,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "brownde02",
+    "player_id": "Devin Brown",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 1711,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "wrighlo02",
+    "player_id": "Lorenzen Wright",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 1689,
+    "position": "C"
+   },
+   {
+    "bbr_id": "perkike01",
+    "player_id": "Kendrick Perkins",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 68,
+    "minutes": 1332,
+    "position": "C"
+   },
+   {
+    "bbr_id": "barrybr01",
+    "player_id": "Brent Barry",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 74,
+    "minutes": 1259,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "dioguik01",
+    "player_id": "Ike Diogu",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 69,
+    "minutes": 1031,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "smithjr01",
+    "player_id": "J.R. Smith",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 55,
+    "minutes": 989,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "welscji01",
+    "player_id": "Jiri Welsch",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 58,
+    "minutes": 866,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "pavloal01",
+    "player_id": "Sasha Pavlovic",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 53,
+    "minutes": 813,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "turiaro01",
+    "player_id": "Ronny Turiaf",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 161,
+    "position": "C"
+   },
+   {
+    "bbr_id": "millere01",
+    "player_id": "Reggie Miller",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   },
+   {
+    "bbr_id": "ramospe01",
+    "player_id": "Peter John Ramos",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Charlotte Bobcats": [
+   {
+    "bbr_id": "ridnolu01",
+    "player_id": "Luke Ridnour",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 2625,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "blakest01",
+    "player_id": "Steve Blake",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 68,
+    "minutes": 1781,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "livinsh01",
+    "player_id": "Shaun Livingston",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 61,
+    "minutes": 1525,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "kaponja01",
+    "player_id": "Jason Kapono",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 1491,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "pietrmi01",
+    "player_id": "Mickael Pietrus",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 52,
+    "minutes": 1179,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "williaa01",
+    "player_id": "Aaron Williams",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 48,
+    "minutes": 791,
+    "position": "C"
+   },
+   {
+    "bbr_id": "pargoja01",
+    "player_id": "Jannero Pargo",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 57,
+    "minutes": 646,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "randosh01",
+    "player_id": "Shavlik Randolph",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 57,
+    "minutes": 487,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "norrimo01",
+    "player_id": "Moochie Norris",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 45,
+    "minutes": 424,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "marshra01",
+    "player_id": "Rawle Marshall",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 241,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "blatcan01",
+    "player_id": "Andray Blatche",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 29,
+    "minutes": 175,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "gainere01",
+    "player_id": "Reece Gaines",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 12,
+    "minutes": 54,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "walshma01",
+    "player_id": "walshma01",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Chicago Bulls": [
+   {
+    "bbr_id": "hinriki01",
+    "player_id": "Kirk Hinrich",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 2955,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "crawfja01",
+    "player_id": "Jamal Crawford",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 2555,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "chandty01",
+    "player_id": "Tyson Chandler",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 2121,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jaricma01",
+    "player_id": "Marko Jaric",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 75,
+    "minutes": 2102,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "curryed01",
+    "player_id": "Eddy Curry",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 1865,
+    "position": "C"
+   },
+   {
+    "bbr_id": "snydeki01",
+    "player_id": "Kirk Snyder",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 68,
+    "minutes": 1310,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "petrojo01",
+    "player_id": "Johan Petro",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 68,
+    "minutes": 1282,
+    "position": "C"
+   },
+   {
+    "bbr_id": "davisan01",
+    "player_id": "Antonio Davis",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 44,
+    "minutes": 940,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "allenma01",
+    "player_id": "Malik Allen",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 54,
+    "minutes": 701,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "cardibr01",
+    "player_id": "Brian Cardinal",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 36,
+    "minutes": 402,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "willico02",
+    "player_id": "Corliss Williamson",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 37,
+    "minutes": 362,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "duprero01",
+    "player_id": "Ronald Dupree",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 36,
+    "minutes": 265,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "seungha01",
+    "player_id": "Ha Seung-Jin",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 27,
+    "minutes": 212,
+    "position": "C"
+   },
+   {
+    "bbr_id": "willial02",
+    "player_id": "Alvin Williams",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 1,
+    "minutes": 10,
+    "position": "PG"
+   }
+  ],
+  "Cleveland Cavaliers": [
+   {
+    "bbr_id": "jamesle01",
+    "player_id": "LeBron James",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 3361,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "davisri01",
+    "player_id": "Ricky Davis",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 3207,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "buckngr01",
+    "player_id": "Greg Buckner",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 73,
+    "minutes": 1758,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "jasiksa01",
+    "player_id": "Šarūnas Jasikevičius",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 75,
+    "minutes": 1557,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "willima01",
+    "player_id": "Mo Williams",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 58,
+    "minutes": 1531,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "milesda01",
+    "player_id": "Darius Miles",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 40,
+    "minutes": 1286,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "harride01",
+    "player_id": "Devin Harris",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 56,
+    "minutes": 1275,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "tayloma01",
+    "player_id": "Maurice Taylor",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 67,
+    "minutes": 1210,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "ollieke01",
+    "player_id": "Kevin Ollie",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 70,
+    "minutes": 1069,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "boozeca01",
+    "player_id": "Carlos Boozer",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 33,
+    "minutes": 1025,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "catoke01",
+    "player_id": "Kelvin Cato",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 27,
+    "minutes": 333,
+    "position": "C"
+   },
+   {
+    "bbr_id": "whalero01",
+    "player_id": "Robert Whaley",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 212,
+    "position": "C"
+   },
+   {
+    "bbr_id": "thompdi01",
+    "player_id": "Dijon Thompson",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 10,
+    "minutes": 43,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "ebind01",
+    "player_id": "Ndudi Ebi",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Dallas Mavericks": [
+   {
+    "bbr_id": "jamisan01",
+    "player_id": "Antawn Jamison",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 3288,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "nowitdi01",
+    "player_id": "Dirk Nowitzki",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 3089,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "walkean02",
+    "player_id": "Antoine Walker",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 77,
+    "minutes": 2955,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "nashst01",
+    "player_id": "Steve Nash",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 2796,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "feltora01",
+    "player_id": "Raymond Felton",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2406,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "finlemi01",
+    "player_id": "Michael Finley",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 77,
+    "minutes": 2038,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "howarjo01",
+    "player_id": "Josh Howard",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 59,
+    "minutes": 1915,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "daniema01",
+    "player_id": "Marquis Daniels",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 62,
+    "minutes": 1766,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "najered01",
+    "player_id": "Eduardo Najera",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 64,
+    "minutes": 1449,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "arroyca01",
+    "player_id": "Carlos Arroyo",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 77,
+    "minutes": 1194,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "delfica01",
+    "player_id": "Carlos Delfino",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 68,
+    "minutes": 726,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "owensan01",
+    "player_id": "Andre Owens",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 210,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "grahast01",
+    "player_id": "Stephen Graham",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 22,
+    "minutes": 175,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "ndongbo01",
+    "player_id": "Boniface N'Dong",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 152,
+    "position": "C"
+   },
+   {
+    "bbr_id": "pricero01",
+    "player_id": "Ronnie Price",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 29,
+    "minutes": 150,
+    "position": "PG"
+   }
+  ],
+  "Denver Nuggets": [
+   {
+    "bbr_id": "anthoca01",
+    "player_id": "Carmelo Anthony",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2941,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "millean02",
+    "player_id": "Andre Miller",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2937,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "paytoga01",
+    "player_id": "Gary Payton",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 77,
+    "minutes": 2541,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "grahajo01",
+    "player_id": "Joey Graham",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 1581,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "elsonfr01",
+    "player_id": "Francisco Elson",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 1579,
+    "position": "C"
+   },
+   {
+    "bbr_id": "boykiea01",
+    "player_id": "Earl Boykins",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 60,
+    "minutes": 1542,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "harrida01",
+    "player_id": "David Harrison",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 67,
+    "minutes": 1034,
+    "position": "C"
+   },
+   {
+    "bbr_id": "nailole01",
+    "player_id": "Lee Nailon",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 22,
+    "minutes": 237,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "korolya01",
+    "player_id": "Yaroslav Korolev",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 24,
+    "minutes": 127,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "bakervi01",
+    "player_id": "Vin Baker",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 8,
+    "minutes": 85,
+    "position": "C"
+   },
+   {
+    "bbr_id": "hilarne01",
+    "player_id": "Nene",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 1,
+    "minutes": 3,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "houstal01",
+    "player_id": "Allan Houston",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   },
+   {
+    "bbr_id": "whitero02",
+    "player_id": "Rodney White",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Detroit Pistons": [
+   {
+    "bbr_id": "billuch01",
+    "player_id": "Chauncey Billups",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 2925,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "wallabe01",
+    "player_id": "Ben Wallace",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2890,
+    "position": "C"
+   },
+   {
+    "bbr_id": "hamilri01",
+    "player_id": "Richard Hamilton",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2825,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "brownpj01",
+    "player_id": "P.J. Brown",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 75,
+    "minutes": 2380,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jacksbo01",
+    "player_id": "Bobby Jackson",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 1775,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "ellismo01",
+    "player_id": "Monta Ellis",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 49,
+    "minutes": 886,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "milicda01",
+    "player_id": "Darko Milicic",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 55,
+    "minutes": 767,
+    "position": "C"
+   },
+   {
+    "bbr_id": "singlja01",
+    "player_id": "James Singleton",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 59,
+    "minutes": 753,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "poweljo01",
+    "player_id": "Josh Powell",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 37,
+    "minutes": 429,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "mayse01",
+    "player_id": "Sean May",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 398,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "basdeed01",
+    "player_id": "Eddie Basden",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 19,
+    "minutes": 141,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "medvest01",
+    "player_id": "Slava Medvedenko",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 2,
+    "minutes": 6,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "willije01",
+    "player_id": "Jerome Williams",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Golden State Warriors": [
+   {
+    "bbr_id": "princta01",
+    "player_id": "Tayshaun Prince",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2898,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "richaja01",
+    "player_id": "Jason Richardson",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 75,
+    "minutes": 2877,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "dunlemi02",
+    "player_id": "Mike Dunleavy",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 2578,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "howarju01",
+    "player_id": "Juwan Howard",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2537,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "murphtr01",
+    "player_id": "Troy Murphy",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 74,
+    "minutes": 2516,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "wesleda01",
+    "player_id": "David Wesley",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 2372,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "bogutan01",
+    "player_id": "Andrew Bogut",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2348,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "battito01",
+    "player_id": "Tony Battie",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2215,
+    "position": "C"
+   },
+   {
+    "bbr_id": "claxtsp01",
+    "player_id": "Speedy Claxton",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 2019,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "banksma01",
+    "player_id": "Marcus Banks",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 58,
+    "minutes": 1497,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "evansma01",
+    "player_id": "Maurice Evans",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 1139,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "varejan01",
+    "player_id": "Anderson Varejão",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 48,
+    "minutes": 760,
+    "position": "C"
+   },
+   {
+    "bbr_id": "boothca01",
+    "player_id": "Calvin Booth",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 33,
+    "minutes": 250,
+    "position": "C"
+   }
+  ],
+  "Houston Rockets": [
+   {
+    "bbr_id": "moblecu01",
+    "player_id": "Cuttino Mobley",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 2979,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "francst01",
+    "player_id": "Steve Francis",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 70,
+    "minutes": 2393,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "mingya01",
+    "player_id": "Yao Ming",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 57,
+    "minutes": 1949,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jonesfr01",
+    "player_id": "Fred Jones",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 68,
+    "minutes": 1837,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "griffed01",
+    "player_id": "Eddie Griffin",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 70,
+    "minutes": 1359,
+    "position": "C"
+   },
+   {
+    "bbr_id": "giricgo01",
+    "player_id": "Gordan Giricek",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 37,
+    "minutes": 956,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "batises01",
+    "player_id": "Esteban Batista",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 57,
+    "minutes": 495,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "greenge01",
+    "player_id": "Gerald Green",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 32,
+    "minutes": 374,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "chrisdo01",
+    "player_id": "Doug Christie",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 7,
+    "minutes": 185,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "tskitni01",
+    "player_id": "Nikoloz Tskitishvili",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 17,
+    "minutes": 99,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "sampsja01",
+    "player_id": "Jamal Sampson",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 12,
+    "minutes": 39,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "fordsh02",
+    "player_id": "Sharrod Ford",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 3,
+    "minutes": 13,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "lynchge01",
+    "player_id": "George Lynch",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Indiana Pacers": [
+   {
+    "bbr_id": "harrial01",
+    "player_id": "Al Harrington",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 76,
+    "minutes": 2782,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "parkesm01",
+    "player_id": "Smush Parker",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2773,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "artesro01",
+    "player_id": "Ron Artest",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 56,
+    "minutes": 2207,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "roseja01",
+    "player_id": "Jalen Rose",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 1983,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "onealje01",
+    "player_id": "Jermaine O'Neal",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 51,
+    "minutes": 1802,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "fosteje01",
+    "player_id": "Jeff Foster",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 63,
+    "minutes": 1581,
+    "position": "C"
+   },
+   {
+    "bbr_id": "mccanra01",
+    "player_id": "Rashad McCants",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 1362,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "tinslja01",
+    "player_id": "Jamaal Tinsley",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 42,
+    "minutes": 1122,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "pollasc01",
+    "player_id": "Scot Pollard",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 45,
+    "minutes": 771,
+    "position": "C"
+   },
+   {
+    "bbr_id": "sandeme01",
+    "player_id": "Melvin Sanders",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 16,
+    "minutes": 113,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "roberan02",
+    "player_id": "Anthony Roberson",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 16,
+    "minutes": 88,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "wafervo01",
+    "player_id": "Von Wafer",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 16,
+    "minutes": 73,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "zimmede01",
+    "player_id": "Derrick Zimmerman",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 2,
+    "minutes": 32,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "bendejo01",
+    "player_id": "Jonathan Bender",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 2,
+    "minutes": 21,
+    "position": "SF"
+   }
+  ],
+  "Los Angeles Clippers": [
+   {
+    "bbr_id": "odomla01",
+    "player_id": "Lamar Odom",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 3221,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "brandel01",
+    "player_id": "Elton Brand",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 3099,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "kamanch01",
+    "player_id": "Chris Kaman",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 2560,
+    "position": "C"
+   },
+   {
+    "bbr_id": "simmobo01",
+    "player_id": "Bobby Simmons",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 75,
+    "minutes": 2538,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "wilcoch01",
+    "player_id": "Chris Wilcox",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 77,
+    "minutes": 1529,
+    "position": "C"
+   },
+   {
+    "bbr_id": "richaqu01",
+    "player_id": "Quentin Richardson",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 55,
+    "minutes": 1442,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "gomesry01",
+    "player_id": "Ryan Gomes",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 61,
+    "minutes": 1376,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "elyme01",
+    "player_id": "Melvin Ely",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 57,
+    "minutes": 1348,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "doleami01",
+    "player_id": "Michael Doleac",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 1029,
+    "position": "C"
+   },
+   {
+    "bbr_id": "biedran01",
+    "player_id": "Andris Biedriņš",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 68,
+    "minutes": 1000,
+    "position": "C"
+   },
+   {
+    "bbr_id": "maggeco01",
+    "player_id": "Corey Maggette",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 32,
+    "minutes": 943,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "wrighan01",
+    "player_id": "Antoine Wright",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 39,
+    "minutes": 370,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "bradlmi01",
+    "player_id": "Michael Bradley",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 46,
+    "minutes": 367,
+    "position": "PF"
+   }
+  ],
+  "Los Angeles Lakers": [
+   {
+    "bbr_id": "bryanko01",
+    "player_id": "Kobe Bryant",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 3277,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "onealsh01",
+    "player_id": "Shaquille O'Neal",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 67,
+    "minutes": 2464,
+    "position": "C"
+   },
+   {
+    "bbr_id": "atkinch01",
+    "player_id": "Chucky Atkins",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 1713,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "cookbr01",
+    "player_id": "Brian Cook",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 1535,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "wilkida02",
+    "player_id": "Damien Wilkins",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 1525,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "khryavi01",
+    "player_id": "Viktor Khryapa",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 69,
+    "minutes": 1492,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "waltolu01",
+    "player_id": "Luke Walton",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 69,
+    "minutes": 1333,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "rushka01",
+    "player_id": "Kareem Rush",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 47,
+    "minutes": 1111,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "woodsqy01",
+    "player_id": "Qyntel Woods",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 49,
+    "minutes": 1013,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "arizatr01",
+    "player_id": "Trevor Ariza",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 57,
+    "minutes": 999,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "anderal01",
+    "player_id": "Alan Anderson",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 36,
+    "minutes": 564,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "jacksji01",
+    "player_id": "Jim Jackson",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 40,
+    "minutes": 512,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "willilo02",
+    "player_id": "Lou Williams",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 30,
+    "minutes": 145,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "thomabi01",
+    "player_id": "Billy Thomas",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 17,
+    "minutes": 131,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "vazqufr01",
+    "player_id": "vazqufr01",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Memphis Grizzlies": [
+   {
+    "bbr_id": "gasolpa01",
+    "player_id": "Pau Gasol",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 3135,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "hassetr01",
+    "player_id": "Trenton Hassell",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 77,
+    "minutes": 2514,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "villach01",
+    "player_id": "Charlie Villanueva",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 2361,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "millemi01",
+    "player_id": "Mike Miller",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 74,
+    "minutes": 2268,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "blounma01",
+    "player_id": "Mark Blount",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 2240,
+    "position": "C"
+   },
+   {
+    "bbr_id": "willija02",
+    "player_id": "Jason Williams",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 1952,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "caldejo01",
+    "player_id": "José Calderón",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 64,
+    "minutes": 1487,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "poseyja01",
+    "player_id": "James Posey",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 50,
+    "minutes": 1382,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "swiftst01",
+    "player_id": "Stromile Swift",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 66,
+    "minutes": 1344,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jonesda02",
+    "player_id": "Dahntay Jones",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 967,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "barnema02",
+    "player_id": "Matt Barnes",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 56,
+    "minutes": 631,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "maxieja01",
+    "player_id": "Jason Maxiell",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 26,
+    "minutes": 159,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "milesaa01",
+    "player_id": "Aaron Miles",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 19,
+    "minutes": 118,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "glovedi01",
+    "player_id": "Dion Glover",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Milwaukee Bucks": [
+   {
+    "bbr_id": "reddmi01",
+    "player_id": "Michael Redd",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 3130,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "masonde01",
+    "player_id": "Desmond Mason",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 70,
+    "minutes": 2102,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "jonesda01",
+    "player_id": "Damon Jones",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2089,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "smithjo02",
+    "player_id": "Joe Smith",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 44,
+    "minutes": 887,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "gadzuda01",
+    "player_id": "Dan Gadzuric",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 74,
+    "minutes": 885,
+    "position": "C"
+   },
+   {
+    "bbr_id": "thomati01",
+    "player_id": "Tim Thomas",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 29,
+    "minutes": 666,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "sowpa01",
+    "player_id": "Pape Sow",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 42,
+    "minutes": 590,
+    "position": "C"
+   },
+   {
+    "bbr_id": "vromaja01",
+    "player_id": "Jackson Vroman",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 41,
+    "minutes": 406,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "fortsda01",
+    "player_id": "Danny Fortson",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 276,
+    "position": "C"
+   },
+   {
+    "bbr_id": "bassbr01",
+    "player_id": "Brandon Bass",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 29,
+    "minutes": 268,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "kasunma01",
+    "player_id": "Mario Kasun",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 28,
+    "minutes": 213,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jacksje01",
+    "player_id": "Jermaine Jackson",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 30,
+    "minutes": 202,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "haislma01",
+    "player_id": "Marcus Haislip",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Minnesota Timberwolves": [
+   {
+    "bbr_id": "garneke01",
+    "player_id": "Kevin Garnett",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 76,
+    "minutes": 2957,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "fordtj01",
+    "player_id": "T.J. Ford",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 2557,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "cambyma01",
+    "player_id": "Marcus Camby",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 56,
+    "minutes": 1857,
+    "position": "C"
+   },
+   {
+    "bbr_id": "stackje01",
+    "player_id": "Jerry Stackhouse",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 55,
+    "minutes": 1525,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "mournal01",
+    "player_id": "Alonzo Mourning",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 37,
+    "minutes": 702,
+    "position": "C"
+   },
+   {
+    "bbr_id": "bowenry01",
+    "player_id": "Ryan Bowen",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 68,
+    "minutes": 652,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "hillgr01",
+    "player_id": "Grant Hill",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 21,
+    "minutes": 613,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "lenarvo01",
+    "player_id": "Voshon Lenard",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 26,
+    "minutes": 458,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "delkto01",
+    "player_id": "Tony Delk",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 24,
+    "minutes": 385,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "burleke01",
+    "player_id": "Kevin Burleson",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 39,
+    "minutes": 340,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "milescj01",
+    "player_id": "C.J. Miles",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 203,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "roberla01",
+    "player_id": "Lawrence Roberts",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 33,
+    "minutes": 181,
+    "position": "C"
+   },
+   {
+    "bbr_id": "thomaja02",
+    "player_id": "James Thomas",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 22,
+    "minutes": 150,
+    "position": "PF"
+   }
+  ],
+  "New Jersey Nets": [
+   {
+    "bbr_id": "jefferi01",
+    "player_id": "Richard Jefferson",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 3059,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "kiddja01",
+    "player_id": "Jason Kidd",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2975,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "szczewa02",
+    "player_id": "Wally Szczerbiak",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 2729,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "collija04",
+    "player_id": "Jason Collins",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 1895,
+    "position": "C"
+   },
+   {
+    "bbr_id": "watsoea01",
+    "player_id": "Earl Watson",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 70,
+    "minutes": 1578,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "fryech01",
+    "player_id": "Channing Frye",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 65,
+    "minutes": 1572,
+    "position": "C"
+   },
+   {
+    "bbr_id": "martike01",
+    "player_id": "Kenyon Martin",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 56,
+    "minutes": 1546,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "rossqu01",
+    "player_id": "Quinton Ross",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 67,
+    "minutes": 1515,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "mooremi01",
+    "player_id": "Mikki Moore",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 47,
+    "minutes": 583,
+    "position": "C"
+   },
+   {
+    "bbr_id": "kleizli01",
+    "player_id": "Linas Kleiza",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 61,
+    "minutes": 519,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "martida01",
+    "player_id": "Darrick Martin",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 40,
+    "minutes": 339,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "greende01",
+    "player_id": "Devin Green",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 27,
+    "minutes": 135,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "lucasjo02",
+    "player_id": "John Lucas III",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 13,
+    "minutes": 107,
+    "position": "PG"
+   }
+  ],
+  "New Orleans/Oklahoma City Hornets": [
+   {
+    "bbr_id": "battish01",
+    "player_id": "Shane Battier",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 2839,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "korveky01",
+    "player_id": "Kyle Korver",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2563,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "westda01",
+    "player_id": "David West",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 74,
+    "minutes": 2526,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "davisba01",
+    "player_id": "Baron Davis",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 54,
+    "minutes": 1971,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "grangda01",
+    "player_id": "Danny Granger",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 1765,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "mcdyean01",
+    "player_id": "Antonio McDyess",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 1733,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "huntest01",
+    "player_id": "Steven Hunter",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 69,
+    "minutes": 1312,
+    "position": "C"
+   },
+   {
+    "bbr_id": "swiftro01",
+    "player_id": "Robert Swift",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 47,
+    "minutes": 987,
+    "position": "C"
+   },
+   {
+    "bbr_id": "piatker01",
+    "player_id": "Eric Piatkowski",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 29,
+    "minutes": 228,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "thomajo02",
+    "player_id": "John Thomas",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 16,
+    "minutes": 127,
+    "position": "C"
+   },
+   {
+    "bbr_id": "udokaim01",
+    "player_id": "Ime Udoka",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 8,
+    "minutes": 114,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "holcora01",
+    "player_id": "Randy Holcomb",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 4,
+    "minutes": 11,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "fitchge01",
+    "player_id": "fitchge01",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   },
+   {
+    "bbr_id": "scaleal01",
+    "player_id": "Alex Scales",
+    "club": "New Orleans/Oklahoma City Hornets",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 1,
+    "minutes": 0,
+    "position": "SG"
+   }
+  ],
+  "New York Knicks": [
+   {
+    "bbr_id": "iguodan01",
+    "player_id": "Andre Iguodala",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 3086,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "krstine01",
+    "player_id": "Nenad Krstić",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2469,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "magloja01",
+    "player_id": "Jamaal Magloire",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2465,
+    "position": "C"
+   },
+   {
+    "bbr_id": "headlu01",
+    "player_id": "Luther Head",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2310,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "willide01",
+    "player_id": "Deron Williams",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2307,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "martike02",
+    "player_id": "Kevin Martin",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 1913,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "palacmi01",
+    "player_id": "Milt Palacio",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 1376,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "stoudsa01",
+    "player_id": "Salim Stoudamire",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 61,
+    "minutes": 1236,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "sweetmi01",
+    "player_id": "Michael Sweetney",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 66,
+    "minutes": 1222,
+    "position": "C"
+   },
+   {
+    "bbr_id": "andersh01",
+    "player_id": "Shandon Anderson",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 66,
+    "minutes": 1171,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "croshau01",
+    "player_id": "Austin Croshere",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 50,
+    "minutes": 1148,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "allento01",
+    "player_id": "Tony Allen",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 51,
+    "minutes": 978,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "smithch04",
+    "player_id": "Charles Smith",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 22,
+    "minutes": 210,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "storeaw01",
+    "player_id": "Awvee Storey",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 25,
+    "minutes": 116,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "hardaan01",
+    "player_id": "Anfernee Hardaway",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 4,
+    "minutes": 72,
+    "position": "SF"
+   }
+  ],
+  "Orlando Magic": [
+   {
+    "bbr_id": "howardw01",
+    "player_id": "Dwight Howard",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 3021,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "pachuza01",
+    "player_id": "Zaza Pachulia",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 2452,
+    "position": "C"
+   },
+   {
+    "bbr_id": "goodedr01",
+    "player_id": "Drew Gooden",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 2174,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "duhonch01",
+    "player_id": "Chris Duhon",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 74,
+    "minutes": 2155,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "willima02",
+    "player_id": "Marvin Williams",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 1952,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "boganke01",
+    "player_id": "Keith Bogans",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 1912,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "jonesja02",
+    "player_id": "James Jones",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 75,
+    "minutes": 1772,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "mcgratr01",
+    "player_id": "Tracy McGrady",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 47,
+    "minutes": 1745,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "garripa01",
+    "player_id": "Pat Garrity",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 57,
+    "minutes": 938,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "warriha01",
+    "player_id": "Hakim Warrick",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 68,
+    "minutes": 724,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "araujra01",
+    "player_id": "Rafael Araújo",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 52,
+    "minutes": 601,
+    "position": "C"
+   },
+   {
+    "bbr_id": "planizo01",
+    "player_id": "Zoran Planinic",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 56,
+    "minutes": 596,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "anderch01",
+    "player_id": "Chris Andersen",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 32,
+    "minutes": 570,
+    "position": "C"
+   },
+   {
+    "bbr_id": "obertfa01",
+    "player_id": "Fabricio Oberto",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 59,
+    "minutes": 490,
+    "position": "C"
+   },
+   {
+    "bbr_id": "mcinnje01",
+    "player_id": "Jeff McInnis",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 28,
+    "minutes": 486,
+    "position": "SG"
+   }
+  ],
+  "Philadelphia 76ers": [
+   {
+    "bbr_id": "iversal01",
+    "player_id": "Allen Iverson",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 3103,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "thomake01",
+    "player_id": "Kenny Thomas",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2293,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "ilgauzy01",
+    "player_id": "Zydrunas Ilgauskas",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 2283,
+    "position": "C"
+   },
+   {
+    "bbr_id": "salmojo01",
+    "player_id": "John Salmons",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2059,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "dalemsa01",
+    "player_id": "Samuel Dalembert",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 66,
+    "minutes": 1761,
+    "position": "C"
+   },
+   {
+    "bbr_id": "bellch01",
+    "player_id": "Charlie Bell",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 59,
+    "minutes": 1283,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "mcleoke01",
+    "player_id": "Keith McLeod",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 66,
+    "minutes": 1232,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "jacksma02",
+    "player_id": "Marc Jackson",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 64,
+    "minutes": 1027,
+    "position": "C"
+   },
+   {
+    "bbr_id": "butleja01",
+    "player_id": "Jackie Butler",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 55,
+    "minutes": 740,
+    "position": "C"
+   },
+   {
+    "bbr_id": "armstda01",
+    "player_id": "Darrell Armstrong",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 62,
+    "minutes": 622,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "brunsri01",
+    "player_id": "Rick Brunson",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 27,
+    "minutes": 246,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "morrite01",
+    "player_id": "Terence Morris",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 22,
+    "minutes": 192,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "greenwi01",
+    "player_id": "Willie Green",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 10,
+    "minutes": 153,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "mckieaa01",
+    "player_id": "Aaron McKie",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 14,
+    "minutes": 121,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "podkopa01",
+    "player_id": "Pavel Podkolzin",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 1,
+    "minutes": 18,
+    "position": "C"
+   }
+  ],
+  "Phoenix Suns": [
+   {
+    "bbr_id": "johnsjo02",
+    "player_id": "Joe Johnson",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 3340,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "mariosh01",
+    "player_id": "Shawn Marion",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 3263,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "childjo01",
+    "player_id": "Josh Childress",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 74,
+    "minutes": 2249,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "marbust01",
+    "player_id": "Stephon Marbury",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 60,
+    "minutes": 2193,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "barbole01",
+    "player_id": "Leandro Barbosa",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 57,
+    "minutes": 1592,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "mihmch01",
+    "player_id": "Chris Mihm",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 59,
+    "minutes": 1541,
+    "position": "C"
+   },
+   {
+    "bbr_id": "olowomi01",
+    "player_id": "Michael Olowokandi",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 48,
+    "minutes": 919,
+    "position": "C"
+   },
+   {
+    "bbr_id": "voskuja01",
+    "player_id": "Jake Voskuhl",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 51,
+    "minutes": 818,
+    "position": "C"
+   },
+   {
+    "bbr_id": "cheanca01",
+    "player_id": "Calbert Cheaney",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 42,
+    "minutes": 448,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "burkepa01",
+    "player_id": "Pat Burke",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 42,
+    "minutes": 346,
+    "position": "C"
+   },
+   {
+    "bbr_id": "bynumwi01",
+    "player_id": "Will Bynum",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 15,
+    "minutes": 162,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "stoudam01",
+    "player_id": "Amar'e Stoudemire",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 3,
+    "minutes": 50,
+    "position": "C"
+   },
+   {
+    "bbr_id": "hamilze01",
+    "player_id": "Zendon Hamilton",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 12,
+    "minutes": 49,
+    "position": "C"
+   },
+   {
+    "bbr_id": "hodgeju01",
+    "player_id": "Julius Hodge",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 14,
+    "minutes": 33,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "jacobca01",
+    "player_id": "Casey Jacobsen",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Portland Trail Blazers": [
+   {
+    "bbr_id": "wallara01",
+    "player_id": "Rasheed Wallace",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2780,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "randoza01",
+    "player_id": "Zach Randolph",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 74,
+    "minutes": 2545,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "patteru01",
+    "player_id": "Ruben Patterson",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 1792,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "przybjo01",
+    "player_id": "Joel Przybilla",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 56,
+    "minutes": 1395,
+    "position": "C"
+   },
+   {
+    "bbr_id": "garcifr01",
+    "player_id": "Francisco García",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 67,
+    "minutes": 1301,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "outlatr01",
+    "player_id": "Travis Outlaw",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 69,
+    "minutes": 1153,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "rosema01",
+    "player_id": "Malik Rose",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 1119,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "ewingda01",
+    "player_id": "Daniel Ewing",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 66,
+    "minutes": 971,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "stoudda01",
+    "player_id": "Damon Stoudamire",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 27,
+    "minutes": 862,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "anderde01",
+    "player_id": "Derek Anderson",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 20,
+    "minutes": 582,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "cabarza01",
+    "player_id": "Zarko Cabarkapa",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 61,
+    "minutes": 505,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "jackslu02",
+    "player_id": "Luke Jackson",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 36,
+    "minutes": 315,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "gaide01",
+    "player_id": "Deng Gai",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 2,
+    "minutes": 5,
+    "position": "C"
+   }
+  ],
+  "Sacramento Kings": [
+   {
+    "bbr_id": "bibbymi01",
+    "player_id": "Mike Bibby",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 3167,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "millebr01",
+    "player_id": "Brad Miller",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 2923,
+    "position": "C"
+   },
+   {
+    "bbr_id": "webbech01",
+    "player_id": "Chris Webber",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 75,
+    "minutes": 2893,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "stojape01",
+    "player_id": "Peja Stojakovic",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 2601,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "dampier01",
+    "player_id": "Erick Dampier",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 1934,
+    "position": "C"
+   },
+   {
+    "bbr_id": "wallage01",
+    "player_id": "Gerald Wallace",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 55,
+    "minutes": 1895,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "jackja01",
+    "player_id": "Jarrett Jack",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 1599,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "vujacsa01",
+    "player_id": "Sasha Vujačić",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 1449,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "songada01",
+    "player_id": "Darius Songaila",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 62,
+    "minutes": 1329,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "iveyro01",
+    "player_id": "Royal Ivey",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 73,
+    "minutes": 978,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "cartean01",
+    "player_id": "Anthony Carter",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 45,
+    "minutes": 589,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "udrihbe01",
+    "player_id": "Beno Udrih",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 54,
+    "minutes": 586,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "taylodo01",
+    "player_id": "Donell Taylor",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 51,
+    "minutes": 465,
+    "position": "SG"
+   }
+  ],
+  "San Antonio Spurs": [
+   {
+    "bbr_id": "duncati01",
+    "player_id": "Tim Duncan",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2784,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "parketo01",
+    "player_id": "Tony Parker",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2715,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "nocioan01",
+    "player_id": "Andrés Nocioni",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2239,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "ginobma01",
+    "player_id": "Manu Ginobili",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 65,
+    "minutes": 1813,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "nestera01",
+    "player_id": "Rasho Nesterovic",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 1515,
+    "position": "C"
+   },
+   {
+    "bbr_id": "thomaku01",
+    "player_id": "Kurt Thomas",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 53,
+    "minutes": 1411,
+    "position": "C"
+   },
+   {
+    "bbr_id": "greenor01",
+    "player_id": "Orien Greene",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 1235,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "vanhoke01",
+    "player_id": "Keith Van Horn",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 53,
+    "minutes": 1090,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "johnsli01",
+    "player_id": "Linton Johnson",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 36,
+    "minutes": 524,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "dienetr01",
+    "player_id": "Travis Diener",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 246,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "mbengdj01",
+    "player_id": "D.J. Mbenga",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 43,
+    "minutes": 237,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jonesdw02",
+    "player_id": "Dwayne Jones",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 14,
+    "minutes": 87,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "felixno01",
+    "player_id": "Noel Felix",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 12,
+    "minutes": 82,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "ackeral01",
+    "player_id": "Alex Acker",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 5,
+    "minutes": 35,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "barroea01",
+    "player_id": "barroea01",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Seattle SuperSonics": [
+   {
+    "bbr_id": "allenra02",
+    "player_id": "Ray Allen",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 3022,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "lewisra02",
+    "player_id": "Rashard Lewis",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 2876,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "westde01",
+    "player_id": "Delonte West",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 2418,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "daniean01",
+    "player_id": "Antonio Daniels",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2283,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "murraro01",
+    "player_id": "Ronald Murray",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 76,
+    "minutes": 2112,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "radmavl01",
+    "player_id": "Vladimir Radmanovic",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 77,
+    "minutes": 1974,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "nelsoja01",
+    "player_id": "Jameer Nelson",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 62,
+    "minutes": 1784,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "robinna01",
+    "player_id": "Nate Robinson",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 72,
+    "minutes": 1544,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "collini01",
+    "player_id": "Nick Collison",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 66,
+    "minutes": 1448,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "evansre01",
+    "player_id": "Reggie Evans",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 67,
+    "minutes": 1393,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "robinbe01",
+    "player_id": "Bernard Robinson",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 66,
+    "minutes": 1303,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "horryro01",
+    "player_id": "Robert Horry",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 63,
+    "minutes": 1182,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "ostergr01",
+    "player_id": "Greg Ostertag",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 60,
+    "minutes": 807,
+    "position": "C"
+   },
+   {
+    "bbr_id": "rebraze01",
+    "player_id": "Zeljko Rebraca",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 29,
+    "minutes": 412,
+    "position": "C"
+   },
+   {
+    "bbr_id": "frahmri01",
+    "player_id": "Richie Frahm",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 33,
+    "minutes": 342,
+    "position": "SG"
+   }
+  ],
+  "Toronto Raptors": [
+   {
+    "bbr_id": "petermo01",
+    "player_id": "Morris Peterson",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 3140,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "cartevi01",
+    "player_id": "Vince Carter",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 2906,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "boshch01",
+    "player_id": "Chris Bosh",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 70,
+    "minutes": 2751,
+    "position": "C"
+   },
+   {
+    "bbr_id": "turkohe01",
+    "player_id": "Hedo Turkoglu",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 2615,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "brezepr01",
+    "player_id": "Primož Brezec",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 2165,
+    "position": "C"
+   },
+   {
+    "bbr_id": "butlera01",
+    "player_id": "Rasual Butler",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 1875,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "bonnema01",
+    "player_id": "Matt Bonner",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 1710,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "luety01",
+    "player_id": "Tyronn Lue",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 51,
+    "minutes": 1234,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "leeda02",
+    "player_id": "David Lee",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 67,
+    "minutes": 1129,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "jeffeal01",
+    "player_id": "Al Jefferson",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 59,
+    "minutes": 1062,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "padgesc01",
+    "player_id": "Scott Padgett",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 62,
+    "minutes": 718,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "baxtelo01",
+    "player_id": "Lonny Baxter",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 41,
+    "minutes": 400,
+    "position": "C"
+   },
+   {
+    "bbr_id": "schenlu01",
+    "player_id": "Luke Schenscher",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 20,
+    "minutes": 149,
+    "position": "C"
+   },
+   {
+    "bbr_id": "hasleud01",
+    "player_id": "Udonis Haslem",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   },
+   {
+    "bbr_id": "simiewa01",
+    "player_id": "simiewa01",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Utah Jazz": [
+   {
+    "bbr_id": "paulch01",
+    "player_id": "Chris Paul",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 78,
+    "minutes": 2808,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "kirilan01",
+    "player_id": "Andrei Kirilenko",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 69,
+    "minutes": 2604,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "smithjo03",
+    "player_id": "Josh Smith",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2559,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "gordobe01",
+    "player_id": "Ben Gordon",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2482,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "doolike01",
+    "player_id": "Keyon Dooling",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 50,
+    "minutes": 1137,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "hudsotr01",
+    "player_id": "Troy Hudson",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 36,
+    "minutes": 800,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "humphkr01",
+    "player_id": "Kris Humphries",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 62,
+    "minutes": 619,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "murrala01",
+    "player_id": "Lamond Murray",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 57,
+    "minutes": 576,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "nachbbo01",
+    "player_id": "Bostjan Nachbar",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 36,
+    "minutes": 502,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "cleavma01",
+    "player_id": "Mateen Cleaves",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 27,
+    "minutes": 230,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "taftch01",
+    "player_id": "Chris Taft",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 17,
+    "minutes": 144,
+    "position": "C"
+   },
+   {
+    "bbr_id": "wrighbr02",
+    "player_id": "Bracey Wright",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 7,
+    "minutes": 135,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "johnsam01",
+    "player_id": "Amir Johnson",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 3,
+    "minutes": 39,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "collija02",
+    "player_id": "Jason Collier",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   },
+   {
+    "bbr_id": "wrighdo01",
+    "player_id": "Dorell Wright",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Washington Wizards": [
+   {
+    "bbr_id": "arenagi01",
+    "player_id": "Gilbert Arenas",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 3384,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "fishede01",
+    "player_id": "Derek Fisher",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2589,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "knighbr01",
+    "player_id": "Brevin Knight",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 69,
+    "minutes": 2351,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "jeffrja01",
+    "player_id": "Jared Jeffries",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 77,
+    "minutes": 1951,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "dixonju01",
+    "player_id": "Juan Dixon",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 76,
+    "minutes": 1920,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "haywobr01",
+    "player_id": "Brendan Haywood",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 1879,
+    "position": "C"
+   },
+   {
+    "bbr_id": "hughela01",
+    "player_id": "Larry Hughes",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 36,
+    "minutes": 1281,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "thomaet01",
+    "player_id": "Etan Thomas",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 1121,
+    "position": "C"
+   },
+   {
+    "bbr_id": "webstma02",
+    "player_id": "Martell Webster",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 61,
+    "minutes": 1070,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "okafoem01",
+    "player_id": "Emeka Okafor",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 26,
+    "minutes": 874,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "hayesja01",
+    "player_id": "Jarvis Hayes",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 21,
+    "minutes": 516,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "smithdo04",
+    "player_id": "Donta Smith",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 127,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "walkesa01",
+    "player_id": "Samaki Walker",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_summer_market",
+    "from_club": null,
+    "games": 7,
+    "minutes": 22,
+    "position": "PF"
+   }
+  ]
+ },
+ "pool": [
+  {
+   "bbr_id": "bellra01",
+   "player_id": "Raja Bell",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Miami Heat",
+   "games": 79,
+   "minutes": 2959,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "bowenbr01",
+   "player_id": "Bruce Bowen",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Chicago Bulls",
+   "games": 82,
+   "minutes": 2755,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "cassesa01",
+   "player_id": "Sam Cassell",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Minnesota Timberwolves",
+   "games": 78,
+   "minutes": 2653,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "alstora01",
+   "player_id": "Rafer Alston",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": null,
+   "games": 63,
+   "minutes": 2431,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "jonesju01",
+   "player_id": "Jumaine Jones",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Boston Celtics",
+   "games": 76,
+   "minutes": 2089,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "brownkw01",
+   "player_id": "Kwame Brown",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Washington Wizards",
+   "games": 72,
+   "minutes": 1978,
+   "position": "C"
+  },
+  {
+   "bbr_id": "robincl02",
+   "player_id": "Clifford Robinson",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Washington Wizards",
+   "games": 80,
+   "minutes": 1863,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "foylead01",
+   "player_id": "Adonal Foyle",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Sacramento Kings",
+   "games": 77,
+   "minutes": 1824,
+   "position": "C"
+  },
+  {
+   "bbr_id": "collija03",
+   "player_id": "Jarron Collins",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Utah Jazz",
+   "games": 79,
+   "minutes": 1730,
+   "position": "C"
+  },
+  {
+   "bbr_id": "wellsbo01",
+   "player_id": "Bonzi Wells",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Memphis Grizzlies",
+   "games": 52,
+   "minutes": 1684,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "georgde01",
+   "player_id": "Devean George",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Los Angeles Lakers",
+   "games": 71,
+   "minutes": 1542,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "diopde01",
+   "player_id": "DeSagana Diop",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Cleveland Cavaliers",
+   "games": 81,
+   "minutes": 1510,
+   "position": "C"
+  },
+  {
+   "bbr_id": "houseed01",
+   "player_id": "Eddie House",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Los Angeles Clippers",
+   "games": 81,
+   "minutes": 1421,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "ratlith01",
+   "player_id": "Theo Ratliff",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Atlanta Hawks",
+   "games": 55,
+   "minutes": 1301,
+   "position": "C"
+  },
+  {
+   "bbr_id": "griffad01",
+   "player_id": "Adrian Griffin",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Houston Rockets",
+   "games": 52,
+   "minutes": 1245,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "vaughja01",
+   "player_id": "Jacque Vaughn",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Minnesota Timberwolves",
+   "games": 80,
+   "minutes": 1234,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "kukocto01",
+   "player_id": "Toni Kukoc",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "New Jersey Nets",
+   "games": 65,
+   "minutes": 1018,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "ruffimi01",
+   "player_id": "Michael Ruffin",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "New Jersey Nets",
+   "games": 76,
+   "minutes": 1010,
+   "position": "C"
+  },
+  {
+   "bbr_id": "reedju01",
+   "player_id": "Justin Reed",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Denver Nuggets",
+   "games": 72,
+   "minutes": 997,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "vanexni01",
+   "player_id": "Nick Van Exel",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Boston Celtics",
+   "games": 65,
+   "minutes": 986,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "mutomdi01",
+   "player_id": "Dikembe Mutombo",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "New York Knicks",
+   "games": 64,
+   "minutes": 955,
+   "position": "C"
+  },
+  {
+   "bbr_id": "skinnbr01",
+   "player_id": "Brian Skinner",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Washington Wizards",
+   "games": 65,
+   "minutes": 944,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "scalabr01",
+   "player_id": "Brian Scalabrine",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Denver Nuggets",
+   "games": 71,
+   "minutes": 938,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "johnsde03",
+   "player_id": "DerMarr Johnson",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "San Antonio Spurs",
+   "games": 58,
+   "minutes": 924,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "harriot01",
+   "player_id": "Othella Harrington",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "New York Knicks",
+   "games": 72,
+   "minutes": 824,
+   "position": "C"
+  },
+  {
+   "bbr_id": "hartja01",
+   "player_id": "Jason Hart",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Detroit Pistons",
+   "games": 66,
+   "minutes": 818,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "tsakaja01",
+   "player_id": "Jake Tsakalidis",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Memphis Grizzlies",
+   "games": 51,
+   "minutes": 732,
+   "position": "C"
+  },
+  {
+   "bbr_id": "madsema01",
+   "player_id": "Mark Madsen",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Denver Nuggets",
+   "games": 62,
+   "minutes": 676,
+   "position": "C"
+  },
+  {
+   "bbr_id": "burksan01",
+   "player_id": "Antonio Burks",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Dallas Mavericks",
+   "games": 57,
+   "minutes": 570,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "hendeal01",
+   "player_id": "Alan Henderson",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Utah Jazz",
+   "games": 51,
+   "minutes": 531,
+   "position": "C"
+  },
+  {
+   "bbr_id": "jamesje01",
+   "player_id": "Jerome James",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Seattle SuperSonics",
+   "games": 45,
+   "minutes": 406,
+   "position": "C"
+  },
+  {
+   "bbr_id": "eisleho01",
+   "player_id": "Howard Eisley",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Portland Trail Blazers",
+   "games": 32,
+   "minutes": 394,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "augmost01",
+   "player_id": "Stacey Augmon",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "New Jersey Nets",
+   "games": 36,
+   "minutes": 385,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "outlabo01",
+   "player_id": "Bo Outlaw",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Charlotte Bobcats",
+   "games": 32,
+   "minutes": 355,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "newblir01",
+   "player_id": "Ira Newble",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Houston Rockets",
+   "games": 36,
+   "minutes": 353,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "mccarwa01",
+   "player_id": "Walter McCarty",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Boston Celtics",
+   "games": 36,
+   "minutes": 353,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "potapvi01",
+   "player_id": "Vitaly Potapenko",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Golden State Warriors",
+   "games": 33,
+   "minutes": 353,
+   "position": "C"
+  },
+  {
+   "bbr_id": "hunteli01",
+   "player_id": "Lindsey Hunter",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Washington Wizards",
+   "games": 30,
+   "minutes": 353,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "willier01",
+   "player_id": "Eric Williams",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "New Orleans Hornets",
+   "games": 28,
+   "minutes": 352,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "barryjo01",
+   "player_id": "Jon Barry",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Indiana Pacers",
+   "games": 20,
+   "minutes": 342,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "bynuman01",
+   "player_id": "Andrew Bynum",
+   "club": "Seattle SuperSonics",
+   "rule": "7_contract_after_the_summer_market+pool_over_fifteen",
+   "from_club": null,
+   "games": 46,
+   "minutes": 338,
+   "position": "C"
+  },
+  {
+   "bbr_id": "woodslo01",
+   "player_id": "Loren Woods",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Atlanta Hawks",
+   "games": 27,
+   "minutes": 324,
+   "position": "C"
+  },
+  {
+   "bbr_id": "profila01",
+   "player_id": "Laron Profit",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Los Angeles Lakers",
+   "games": 25,
+   "minutes": 279,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "marksse01",
+   "player_id": "Sean Marks",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Los Angeles Lakers",
+   "games": 25,
+   "minutes": 181,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "davisda01",
+   "player_id": "Dale Davis",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "New York Knicks",
+   "games": 28,
+   "minutes": 178,
+   "position": "C"
+  },
+  {
+   "bbr_id": "macijar01",
+   "player_id": "Arvydas Macijauskas",
+   "club": "Dallas Mavericks",
+   "rule": "7_contract_after_the_summer_market+pool_over_fifteen",
+   "from_club": null,
+   "games": 19,
+   "minutes": 135,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "grundan01",
+   "player_id": "Anthony Grundy",
+   "club": "Orlando Magic",
+   "rule": "7_contract_after_the_summer_market+pool_over_fifteen",
+   "from_club": null,
+   "games": 12,
+   "minutes": 108,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "johnser02",
+   "player_id": "Ervin Johnson",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Minnesota Timberwolves",
+   "games": 18,
+   "minutes": 81,
+   "position": "C"
+  },
+  {
+   "bbr_id": "fizerma01",
+   "player_id": "Marcus Fizer",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "New Jersey Nets",
+   "games": 3,
+   "minutes": 39,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "goldwan01",
+   "player_id": "Anthony Goldwire",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Golden State Warriors",
+   "games": 3,
+   "minutes": 22,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "livinra01",
+   "player_id": "Randy Livingston",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "New Jersey Nets",
+   "games": 5,
+   "minutes": 22,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "davisjo02",
+   "player_id": "Josh Davis",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": "Sacramento Kings",
+   "games": 6,
+   "minutes": 17,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "andrima01",
+   "player_id": "Martynas Andriuškevičius",
+   "club": "Dallas Mavericks",
+   "rule": "7_contract_after_the_summer_market+pool_over_fifteen",
+   "from_club": null,
+   "games": 6,
+   "minutes": 9,
+   "position": "C"
+  },
+  {
+   "bbr_id": "russebr01",
+   "player_id": "Bryon Russell",
+   "club": null,
+   "rule": "8_unsigned_after_the_summer_market+pool_unsigned",
+   "from_club": null,
+   "games": 1,
+   "minutes": 3,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "weathcl01",
+   "player_id": "Clarence Weatherspoon",
+   "club": "New York Knicks",
+   "rule": "7_contract_after_the_summer_market+pool_over_fifteen",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "hoibefr01",
+   "player_id": "Fred Hoiberg",
+   "club": "Orlando Magic",
+   "rule": "7_contract_after_the_summer_market+pool_over_fifteen",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  }
+ ],
+ "not_placed": [
+  {
+   "bbr_id": "jonesed02",
+   "player_id": "Eddie Jones",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 75,
+   "minutes": 2437,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "grantbr01",
+   "player_id": "Brian Grant",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 21,
+   "minutes": 248,
+   "position": "C"
+  },
+  {
+   "bbr_id": "harprma01",
+   "player_id": "Matt Harpring",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 71,
+   "minutes": 1944,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "marshdo01",
+   "player_id": "Donyell Marshall",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 81,
+   "minutes": 2077,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "johnsan02",
+   "player_id": "Anthony Johnson",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 75,
+   "minutes": 1981,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "jamesmi01",
+   "player_id": "Mike James",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 79,
+   "minutes": 2925,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "okurme01",
+   "player_id": "Mehmet Okur",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 82,
+   "minutes": 2945,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "stevede01",
+   "player_id": "DeShawn Stevenson",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 82,
+   "minutes": 2648,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "dwyane_wade",
+   "player_id": "dwyane_wade",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "butleca01",
+   "player_id": "Caron Butler",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 75,
+   "minutes": 2708,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "telfase01",
+   "player_id": "Sebastian Telfair",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 68,
+   "minutes": 1641,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "gilled01",
+   "player_id": "Eddie Gill",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 41,
+   "minutes": 122,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "wilksmi01",
+   "player_id": "Mike Wilks",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 47,
+   "minutes": 348,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "carroma01",
+   "player_id": "Matt Carroll",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_summer_market",
+   "from_club": null,
+   "games": 78,
+   "minutes": 1275,
+   "position": "SG"
+  }
+ ],
+ "counts": {
+  "7_contract_after_the_summer_market": 423,
+  "8_unsigned_after_the_summer_market": 50
+ }
+}

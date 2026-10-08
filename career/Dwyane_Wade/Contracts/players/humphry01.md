@@ -2,9 +2,9 @@
 
 # Contract | Ryan Humphrey
 
-Known through: 2005-09-25. [Open interactive contract](humphry01.html#contract) · [Contract history](humphry01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](humphry01.html#contract) · [Contract history](humphry01.html#contract-history)
 
-Ryan Humphrey: under rookie contract. Evidence cutoff: 2005-09-25.
+Ryan Humphrey: under rookie contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -123,7 +123,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ryan Humphrey |
-| Club / rights baseline | Memphis Grizzlies |
+| Club / rights baseline | Free agent |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

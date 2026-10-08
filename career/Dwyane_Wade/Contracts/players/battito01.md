@@ -2,9 +2,9 @@
 
 # Contract | Tony Battie
 
-Known through: 2005-09-25. [Open interactive contract](battito01.html#contract) · [Contract history](battito01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](battito01.html#contract) · [Contract history](battito01.html#contract-history)
 
-Tony Battie: under contract. Evidence cutoff: 2005-09-25.
+Tony Battie: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Boston Celtics |
+| Assigned club | Golden State Warriors |
 | Signing club | Not recorded |
 | Contract ID | battito01-1999-10-15 |
 | Signing route / evidence basis | contract_history |
@@ -101,6 +101,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-08-19 | Denver Nuggets | Golden State Warriors | 2005-summer-trade-2005-08-19-battito01-bogutan01-grahajo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
@@ -116,6 +117,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.shamsports.com/players/tony-battie)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -124,7 +126,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Tony Battie |
-| Club / rights baseline | Denver Nuggets |
+| Club / rights baseline | Golden State Warriors |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -189,7 +191,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Boston Celtics |
+| Assigned club | Golden State Warriors |
 | Signing club | Not recorded |
 | Contract ID | battito01-1999-10-15 |
 | Signing route / evidence basis | contract_history |
@@ -265,6 +267,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-08-19 | Denver Nuggets | Golden State Warriors | 2005-summer-trade-2005-08-19-battito01-bogutan01-grahajo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
@@ -280,6 +283,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.shamsports.com/players/tony-battie)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ## Source records
 

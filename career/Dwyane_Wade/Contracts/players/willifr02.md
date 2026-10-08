@@ -2,9 +2,9 @@
 
 # Contract | Frank Williams
 
-Known through: 2005-09-25. [Open interactive contract](willifr02.html#contract) · [Contract history](willifr02.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](willifr02.html#contract) · [Contract history](willifr02.html#contract-history)
 
-Frank Williams: under rookie contract. Evidence cutoff: 2005-09-25.
+Frank Williams: under rookie contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -123,7 +123,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Frank Williams |
-| Club / rights baseline | Charlotte Bobcats |
+| Club / rights baseline | Free agent |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

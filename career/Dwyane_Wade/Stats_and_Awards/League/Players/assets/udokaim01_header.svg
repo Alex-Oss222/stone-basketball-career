@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="t d">
-<title id="t">Ime Udoka</title><desc id="d">Ime Udoka, Free agent, Small forward, —.</desc>
-<rect width="1280" height="180" rx="24" fill="#1d1d1f"/>
-<rect x="0" y="150" width="1280" height="30" fill="#c5c7cb" fill-opacity=".92"/>
-<rect x="0" y="150" width="1280" height="6" fill="#c5c7cb"/>
+<title id="t">Ime Udoka</title><desc id="d">Ime Udoka, New Orleans/Oklahoma City Hornets, Small forward, #8.</desc>
+<rect width="1280" height="180" rx="24" fill="#00778b"/>
+<rect x="0" y="150" width="1280" height="30" fill="#280071" fill-opacity=".92"/>
+<rect x="0" y="150" width="1280" height="6" fill="#280071"/>
 <text x="48" y="78" font-family="sans-serif" font-size="54" font-weight="700" fill="#ffffff">Ime Udoka</text>
-<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Small forward · Free agent</text>
-<text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">—</text>
+<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Small forward · New Orleans/Oklahoma City Hornets</text>
+<text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#8</text>
 </svg>

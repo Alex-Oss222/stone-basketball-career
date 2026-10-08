@@ -2,9 +2,9 @@
 
 # Contract | Dajuan Wagner
 
-Known through: 2005-09-25. [Open interactive contract](wagneda02.html#contract) · [Contract history](wagneda02.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](wagneda02.html#contract) · [Contract history](wagneda02.html#contract-history)
 
-Dajuan Wagner: under rookie contract. Evidence cutoff: 2005-09-25.
+Dajuan Wagner: under rookie contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -123,7 +123,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Dajuan Wagner |
-| Club / rights baseline | Cleveland Cavaliers |
+| Club / rights baseline | Free agent |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

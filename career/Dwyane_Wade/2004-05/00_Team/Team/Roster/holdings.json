@@ -72,36 +72,36 @@
    "player": "Dorell Wright",
    "bbr_id": "wrighdo01",
    "from": "2004-07-01",
-   "until": null,
-   "basis": "rookie_scale signing 2004-07-01 (2004-05 summer market)"
+   "until": "2005-08-05",
+   "basis": "rookie_scale signing 2004-07-01 (2004-05 summer market); left Miami in the 2005-06 summer market"
   },
   {
    "player": "John Thomas",
    "bbr_id": "thomajo02",
    "from": "2004-08-19",
-   "until": null,
-   "basis": "minimum signing 2004-08-19 (2004-05 summer market)"
+   "until": "2005-08-02",
+   "basis": "minimum signing 2004-08-19 (2004-05 summer market); left Miami in the 2005-06 summer market"
   },
   {
    "player": "Maurice Evans",
    "bbr_id": "evansma01",
    "from": "2004-08-05",
-   "until": null,
-   "basis": "minimum signing 2004-08-05 (2004-05 summer market)"
+   "until": "2005-09-09",
+   "basis": "minimum signing 2004-08-05 (2004-05 summer market); left Miami in the 2005-06 summer market"
   },
   {
    "player": "Maurice Baker",
    "bbr_id": "bakerma01",
    "from": "2004-07-15",
-   "until": null,
-   "basis": "minimum signing 2004-07-15 (2004-05 summer market)"
+   "until": "2005-07-01",
+   "basis": "minimum signing 2004-07-15 (2004-05 summer market); left Miami in the 2005-06 summer market"
   },
   {
    "player": "John Edwards",
    "bbr_id": "edwarjo01",
    "from": "2004-07-22",
-   "until": null,
-   "basis": "minimum signing 2004-07-22 (2004-05 summer market)"
+   "until": "2005-08-02",
+   "basis": "minimum signing 2004-07-22 (2004-05 summer market); left Miami in the 2005-06 summer market"
   },
   {
    "player": "Bernard Robinson",
@@ -142,8 +142,8 @@
    "player": "Rafer Alston",
    "bbr_id": "alstora01",
    "from": "2004-10-05",
-   "until": null,
-   "basis": "camp contract 2004-10-05 (camp_roster.json)"
+   "until": "2005-07-01",
+   "basis": "camp contract 2004-10-05 (camp_roster.json); left Miami in the 2005-06 summer market"
   },
   {
    "player": "Chris Mihm",
@@ -171,17 +171,17 @@
    "player": "Lamond Murray",
    "bbr_id": "murrala01",
    "from": "2004-12-20",
-   "until": null,
+   "until": "2005-09-02",
    "how": "trade",
-   "basis": "acquired by trade from Toronto Raptors (2004-12-20-be4b6043a0)"
+   "basis": "acquired by trade from Toronto Raptors (2004-12-20-be4b6043a0); left Miami in the 2005-06 summer market"
   },
   {
    "player": "Raja Bell",
    "bbr_id": "bellra01",
    "from": "2005-01-24",
-   "until": null,
+   "until": "2005-07-01",
    "how": "trade",
-   "basis": "acquired by trade from Utah Jazz (2005-01-24-64ef582bc5)"
+   "basis": "acquired by trade from Utah Jazz (2005-01-24-64ef582bc5); left Miami in the 2005-06 summer market"
   },
   {
    "player": "Matt Harpring",

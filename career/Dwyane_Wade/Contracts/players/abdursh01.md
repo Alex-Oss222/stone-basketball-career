@@ -2,23 +2,23 @@
 
 # Contract | Shareef Abdur-Rahim
 
-Known through: 2005-09-25. [Open interactive contract](abdursh01.html#contract) · [Contract history](abdursh01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](abdursh01.html#contract) · [Contract history](abdursh01.html#contract-history)
 
-Shareef Abdur-Rahim: under contract. Evidence cutoff: 2005-09-25.
+Shareef Abdur-Rahim: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
-### Shareef Abdur-Rahim · existing contract; signing date not recorded
+### Shareef Abdur-Rahim · 2005-08-02
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | Not recorded |  |
-| Original term | Not recorded |  |
+| Signing date | 2005-08-02 |  |
+| Original term | 4 seasons |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $28,125,000 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | $71,099,437 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
@@ -26,13 +26,13 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Field | Recorded detail |
 | --- | --- |
 | Assigned club | Atlanta Hawks |
-| Signing club | Not recorded |
-| Contract ID | abdursh01-existing-02158f91187a |
-| Signing route / evidence basis | salary_pattern |
-| Signing date | Not recorded |
-| Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Signing club | Atlanta Hawks |
+| Contract ID | abdursh01-2005-08-02 |
+| Signing route / evidence basis | bird |
+| Signing date | 2005-08-02 |
+| Verified first season | 2005-06 |
+| Verified final season | 2008-09 |
+| Verified expiry date | 2009-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -42,9 +42,10 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2002-03 | $12,375,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $13,500,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2004-05 | $14,625,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
+| 2005-06 | $15,356,250 | Not recorded | Not recorded | $15,356,250 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $16,968,656 | Not recorded | Not recorded | $16,968,656 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2007-08 | $18,581,062 | Not recorded | Not recorded | $18,581,062 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2008-09 | $20,193,469 | Not recorded | Not recorded | $20,193,469 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -59,9 +60,10 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 
 | Season | Signing bonus | Dead cap | Buyout |
 | --- | --- | --- | --- |
-| 2002-03 | Not recorded | Not recorded | Not recorded |
-| 2003-04 | Not recorded | Not recorded | Not recorded |
-| 2004-05 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+| 2006-07 | Not recorded | Not recorded | Not recorded |
+| 2007-08 | Not recorded | Not recorded | Not recorded |
+| 2008-09 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -101,16 +103,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Term inferred from a constant annual raise in the season salary lists; no contract history page was available, so options and the true final season are not established.
+Simulated 2005 summer market: re sign on 2005-08-02. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
-- [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
-- [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
-- [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -166,6 +165,109 @@ An offer, counteroffer or acceptance is not an executed contract.
 ## Contract history
 
 The register preserves distinct agreements. An assignment by trade is part of the same agreement.
+
+### Shareef Abdur-Rahim · 2005-08-02
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | 2005-08-02 |  |
+| Original term | 4 seasons |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | $71,099,437 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Atlanta Hawks |
+| Signing club | Atlanta Hawks |
+| Contract ID | abdursh01-2005-08-02 |
+| Signing route / evidence basis | bird |
+| Signing date | 2005-08-02 |
+| Verified first season | 2005-06 |
+| Verified final season | 2008-09 |
+| Verified expiry date | 2009-06-30 |
+| Status | under_contract |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2005-06 | $15,356,250 | Not recorded | Not recorded | $15,356,250 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $16,968,656 | Not recorded | Not recorded | $16,968,656 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2007-08 | $18,581,062 | Not recorded | Not recorded | $18,581,062 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2008-09 | $20,193,469 | Not recorded | Not recorded | $20,193,469 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. No exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+| 2006-07 | Not recorded | Not recorded | Not recorded |
+| 2007-08 | Not recorded | Not recorded | Not recorded |
+| 2008-09 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+
+### Evidence and coverage
+
+Simulated 2005 summer market: re sign on 2005-08-02. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+
+#### Agreement evidence
+
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Shareef Abdur-Rahim · existing contract; signing date not recorded
 
@@ -277,3 +379,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)

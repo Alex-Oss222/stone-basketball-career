@@ -1,0 +1,5556 @@
+{
+ "schema_version": 1,
+ "season": "2005-06",
+ "kind": "league_contracts",
+ "rule": "The rollover writes `career/Dwyane_Wade/<season>/League/contracts.json` from the summer market's result\n(`runtime/free_agency_2004.py`, or its successor for a later year): each player's club on the opening day and his\nsalary for each season of the contract. In-season moves change a player's club in `league_moves.json`; the contract\ntravels with him (a trade assigns it). The next offseason reads the ledger to know who is already under contract:\nthat is what makes the career roll from one year to the next without real contract data.\n\nSalary by season: an existing contract keeps its recorded schedule (`runtime/contract_terms.py` for the first\noffseason). A new contract's later years rise from its first-year salary by the agreement's raise limit (1999\nagreement: 12.5% of the first year for a club re-signing its own free agent with Bird rights, 10% otherwise; a minimum\ncontract stays at the minimum scale). A first-round pick's scale contract runs three seasons at the scale's amounts\n(120% of scale, era practice) with a fourth-year team option. Option years stay options: decided on their dates.",
+ "contracts": [
+  {
+   "player": "Shareef Abdur-Rahim",
+   "bbr_id": "abdursh01",
+   "club": "Atlanta Hawks",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 15356250,
+    "2006-07": 16968656,
+    "2007-08": 18581062,
+    "2008-09": 20193469
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Alex Acker",
+   "bbr_id": "ackeral01",
+   "club": "San Antonio Spurs",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 861360,
+    "2006-07": 926040,
+    "2007-08": 990600
+   },
+   "source": "2005 rookie scale No. 30 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Malik Allen",
+   "bbr_id": "allenma01",
+   "club": "Chicago Bulls",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 771123
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Ray Allen",
+   "bbr_id": "allenra02",
+   "club": "Seattle SuperSonics",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 13700000,
+    "2006-07": 15138500,
+    "2007-08": 16577000,
+    "2008-09": 18015500
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Tony Allen",
+   "bbr_id": "allento01",
+   "club": "New York Knicks",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Alan Anderson",
+   "bbr_id": "anderal01",
+   "club": "Los Angeles Lakers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Chris Andersen",
+   "bbr_id": "anderch01",
+   "club": "Orlando Magic",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1792069,
+    "2006-07": 1954985,
+    "2007-08": 2117900,
+    "2008-09": 2280816
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Derek Anderson",
+   "bbr_id": "anderde01",
+   "club": "Portland Trail Blazers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 9093000,
+    "2006-07": 9742500
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Shandon Anderson",
+   "bbr_id": "andersh01",
+   "club": "New York Knicks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 7900000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Martynas Andriuškevičius",
+   "bbr_id": "andrima01",
+   "club": "Dallas Mavericks",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 936600,
+    "2006-07": 1006800,
+    "2007-08": 1077120
+   },
+   "source": "2005 rookie scale No. 25 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Carmelo Anthony",
+   "bbr_id": "anthoca01",
+   "club": "Denver Nuggets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3713640,
+    "2006-07": 4694041
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Rafael Araújo",
+   "bbr_id": "araujra01",
+   "club": "Orlando Magic",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1141560,
+    "2006-07": 1221240
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale); traded 2005-08-12",
+   "rookie_scale": true
+  },
+  {
+   "player": "Gilbert Arenas",
+   "bbr_id": "arenagi01",
+   "club": "Washington Wizards",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 10666667,
+    "2006-07": 10666667,
+    "2007-08": 10666667,
+    "2008-09": 10666667
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Trevor Ariza",
+   "bbr_id": "arizatr01",
+   "club": "Los Angeles Lakers",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Darrell Armstrong",
+   "bbr_id": "armstda01",
+   "club": "Philadelphia 76ers",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1510936
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Carlos Arroyo",
+   "bbr_id": "arroyca01",
+   "club": "Dallas Mavericks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5371002,
+    "2006-07": 5967780,
+    "2007-08": 6564558,
+    "2008-09": 7161336
+   },
+   "source": "league contract ledger 2004-05 (new); traded 2005-08-26"
+  },
+  {
+   "player": "Ron Artest",
+   "bbr_id": "artesro01",
+   "club": "Indiana Pacers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6842105,
+    "2006-07": 7526316
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Chucky Atkins",
+   "bbr_id": "atkinch01",
+   "club": "Los Angeles Lakers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4500000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Vin Baker",
+   "bbr_id": "bakervi01",
+   "club": "Denver Nuggets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4129288,
+    "2006-07": 4504678,
+    "2007-08": 4880067
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Marcus Banks",
+   "bbr_id": "banksma01",
+   "club": "Golden State Warriors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1724280,
+    "2006-07": 2463996
+   },
+   "source": "league contract ledger 2004-05 (existing); traded 2005-08-05",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Leandro Barbosa",
+   "bbr_id": "barbole01",
+   "club": "Phoenix Suns",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 930600,
+    "2006-07": 1679733
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Matt Barnes",
+   "bbr_id": "barnema02",
+   "club": "Memphis Grizzlies",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 894373
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Andre Barrett",
+   "bbr_id": "barrean01",
+   "club": "Atlanta Hawks",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "barroea01",
+   "bbr_id": "barroea01",
+   "club": "San Antonio Spurs",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Brent Barry",
+   "bbr_id": "barrybr01",
+   "club": "Boston Celtics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5393300,
+    "2006-07": 5883600
+   },
+   "source": "league contract ledger 2004-05 (new); traded 2005-08-05"
+  },
+  {
+   "player": "Eddie Basden",
+   "bbr_id": "basdeed01",
+   "club": "Detroit Pistons",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Brandon Bass",
+   "bbr_id": "bassbr01",
+   "club": "Milwaukee Bucks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Esteban Batista",
+   "bbr_id": "batises01",
+   "club": "Houston Rockets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Shane Battier",
+   "bbr_id": "battish01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "cap_room",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 7276965,
+    "2006-07": 7859122,
+    "2007-08": 8441279,
+    "2008-09": 9023437,
+    "2009-10": 9605594
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Tony Battie",
+   "bbr_id": "battito01",
+   "club": "Golden State Warriors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5200000
+   },
+   "source": "league contract ledger 2004-05 (existing); traded 2005-08-19"
+  },
+  {
+   "player": "Lonny Baxter",
+   "bbr_id": "baxtelo01",
+   "club": "Toronto Raptors",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 745248
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Charlie Bell",
+   "bbr_id": "bellch01",
+   "club": "Philadelphia 76ers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 771123
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jonathan Bender",
+   "bbr_id": "bendejo01",
+   "club": "Indiana Pacers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 7250000,
+    "2006-07": 7975000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Mike Bibby",
+   "bbr_id": "bibbymi01",
+   "club": "Sacramento Kings",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 11500000,
+    "2006-07": 12500000,
+    "2007-08": 13500000,
+    "2008-09": 14500000
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2007-08": "early_termination_option",
+    "2008-09": "early_termination_option"
+   }
+  },
+  {
+   "player": "Andris Biedriņš",
+   "bbr_id": "biedran01",
+   "club": "Los Angeles Clippers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2677200,
+    "2006-07": 2863920
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Chauncey Billups",
+   "bbr_id": "billuch01",
+   "club": "Detroit Pistons",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5909800,
+    "2006-07": 6364400
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Steve Blake",
+   "bbr_id": "blakest01",
+   "club": "Charlotte Bobcats",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 894373
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Andray Blatche",
+   "bbr_id": "blatcan01",
+   "club": "Charlotte Bobcats",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Mark Blount",
+   "bbr_id": "blounma01",
+   "club": "Memphis Grizzlies",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 9386664,
+    "2006-07": 10429626,
+    "2007-08": 11472589
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Keith Bogans",
+   "bbr_id": "boganke01",
+   "club": "Orlando Magic",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 894373
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Andrew Bogut",
+   "bbr_id": "bogutan01",
+   "club": "Golden State Warriors",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 3883560,
+    "2006-07": 4174800,
+    "2007-08": 4466040
+   },
+   "source": "2005 rookie scale No. 2 at 120%; traded 2005-08-19",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Matt Bonner",
+   "bbr_id": "bonnema01",
+   "club": "Toronto Raptors",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 4010894,
+    "2006-07": 4432038,
+    "2007-08": 4853182,
+    "2008-09": 5274326,
+    "2009-10": 5695469
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Calvin Booth",
+   "bbr_id": "boothca01",
+   "club": "Golden State Warriors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6354600,
+    "2006-07": 6808500
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Carlos Boozer",
+   "bbr_id": "boozeca01",
+   "club": "Cleveland Cavaliers",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 10899929,
+    "2006-07": 12044422,
+    "2007-08": 13188914,
+    "2008-09": 14333407,
+    "2009-10": 15477899
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Chris Bosh",
+   "bbr_id": "boshch01",
+   "club": "Toronto Raptors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3348000,
+    "2006-07": 4235220
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Ryan Bowen",
+   "bbr_id": "bowenry01",
+   "club": "Minnesota Timberwolves",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 900498
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Earl Boykins",
+   "bbr_id": "boykiea01",
+   "club": "Denver Nuggets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2740000,
+    "2006-07": 2740000,
+    "2007-08": 2740000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Michael Bradley",
+   "bbr_id": "bradlmi01",
+   "club": "Los Angeles Clippers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 771123
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Elton Brand",
+   "bbr_id": "brandel01",
+   "club": "Los Angeles Clippers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 13700000,
+    "2006-07": 13700000,
+    "2007-08": 13700000,
+    "2008-09": 13700000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Primož Brezec",
+   "bbr_id": "brezepr01",
+   "club": "Toronto Raptors",
+   "route": "cap_room",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 9037036,
+    "2006-07": 9759999,
+    "2007-08": 10482962,
+    "2008-09": 11205925,
+    "2009-10": 11928888
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Devin Brown",
+   "bbr_id": "brownde02",
+   "club": "Boston Celtics",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 3474675,
+    "2006-07": 3839516,
+    "2007-08": 4204357,
+    "2008-09": 4569198,
+    "2009-10": 4934038
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "P.J. Brown",
+   "bbr_id": "brownpj01",
+   "club": "Detroit Pistons",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 8500000,
+    "2006-07": 8500000
+   },
+   "source": "league contract ledger 2004-05 (existing); traded 2005-09-09"
+  },
+  {
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "club": "Philadelphia 76ers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1029873
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Kobe Bryant",
+   "bbr_id": "bryanko01",
+   "club": "Los Angeles Lakers",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 14726098,
+    "2006-07": 16272338,
+    "2007-08": 17818579,
+    "2008-09": 19364819,
+    "2009-10": 20911059
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Greg Buckner",
+   "bbr_id": "buckngr01",
+   "club": "Cleveland Cavaliers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3120000,
+    "2006-07": 3360000,
+    "2007-08": 3600000
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2007-08": "early_termination_option"
+   }
+  },
+  {
+   "player": "Pat Burke",
+   "bbr_id": "burkepa01",
+   "club": "Phoenix Suns",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 745248
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Kevin Burleson",
+   "bbr_id": "burleke01",
+   "club": "Minnesota Timberwolves",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Caron Butler",
+   "bbr_id": "butleca01",
+   "club": "Miami Heat",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2461617
+   },
+   "source": "Miami contract_schedules.json",
+   "rookie_scale": true
+  },
+  {
+   "player": "Jackie Butler",
+   "bbr_id": "butleja01",
+   "club": "Philadelphia 76ers",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Rasual Butler",
+   "bbr_id": "butlera01",
+   "club": "Toronto Raptors",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 745248
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Andrew Bynum",
+   "bbr_id": "bynuman01",
+   "club": "Seattle SuperSonics",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1704480,
+    "2006-07": 1832280,
+    "2007-08": 1960200
+   },
+   "source": "2005 rookie scale No. 12 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Will Bynum",
+   "bbr_id": "bynumwi01",
+   "club": "Phoenix Suns",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Zarko Cabarkapa",
+   "bbr_id": "cabarza01",
+   "club": "Portland Trail Blazers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1404360,
+    "2006-07": 2157097
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "José Calderón",
+   "bbr_id": "caldejo01",
+   "club": "Memphis Grizzlies",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Marcus Camby",
+   "bbr_id": "cambyma01",
+   "club": "Minnesota Timberwolves",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 12483810,
+    "2006-07": 13870900
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Brian Cardinal",
+   "bbr_id": "cardibr01",
+   "club": "Chicago Bulls",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4263516,
+    "2006-07": 4651109,
+    "2007-08": 5038701
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Matt Carroll",
+   "bbr_id": "carroma01",
+   "club": "Miami Heat",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 719373
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Anthony Carter",
+   "bbr_id": "cartean01",
+   "club": "Sacramento Kings",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 900498
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Vince Carter",
+   "bbr_id": "cartevi01",
+   "club": "Toronto Raptors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 13843156,
+    "2006-07": 15101625
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Kelvin Cato",
+   "bbr_id": "catoke01",
+   "club": "Cleveland Cavaliers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 8640000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Tyson Chandler",
+   "bbr_id": "chandty01",
+   "club": "Chicago Bulls",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 10140269,
+    "2006-07": 11204997,
+    "2007-08": 12269725,
+    "2008-09": 13334454,
+    "2009-10": 14399182
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Calbert Cheaney",
+   "bbr_id": "cheanca01",
+   "club": "Phoenix Suns",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1249379,
+    "2006-07": 1380564
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Josh Childress",
+   "bbr_id": "childjo01",
+   "club": "Phoenix Suns",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2058000,
+    "2006-07": 2201640
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Doug Christie",
+   "bbr_id": "chrisdo01",
+   "club": "Houston Rockets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 8200000
+   },
+   "source": "league contract ledger 2004-05 (existing); traded 2005-08-19"
+  },
+  {
+   "player": "Speedy Claxton",
+   "bbr_id": "claxtsp01",
+   "club": "Golden State Warriors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3333333
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Mateen Cleaves",
+   "bbr_id": "cleavma01",
+   "club": "Utah Jazz",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 835810
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jason Collier",
+   "bbr_id": "collija02",
+   "club": "Utah Jazz",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2730578,
+    "2006-07": 2978813,
+    "2007-08": 3227047
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Jason Collins",
+   "bbr_id": "collija04",
+   "club": "New Jersey Nets",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 4740474,
+    "2006-07": 5238224,
+    "2007-08": 5735974,
+    "2008-09": 6233723,
+    "2009-10": 6731473
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Nick Collison",
+   "bbr_id": "collini01",
+   "club": "Seattle SuperSonics",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 2462100
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Brian Cook",
+   "bbr_id": "cookbr01",
+   "club": "Los Angeles Lakers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1038960,
+    "2006-07": 1817141
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Jamal Crawford",
+   "bbr_id": "crawfja01",
+   "club": "Chicago Bulls",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 12147912,
+    "2006-07": 13497680,
+    "2007-08": 14847448,
+    "2008-09": 16197216
+   },
+   "source": "league contract ledger 2004-05 (new)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Austin Croshere",
+   "bbr_id": "croshau01",
+   "club": "New York Knicks",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 4800000,
+    "2006-07": 5304000,
+    "2007-08": 5808000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Eddy Curry",
+   "bbr_id": "curryed01",
+   "club": "Chicago Bulls",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 8530965,
+    "2006-07": 9426716,
+    "2007-08": 10322468,
+    "2008-09": 11218219,
+    "2009-10": 12113970
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Samuel Dalembert",
+   "bbr_id": "dalemsa01",
+   "club": "Philadelphia 76ers",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 7673355,
+    "2006-07": 8479057,
+    "2007-08": 9284760,
+    "2008-09": 10090462,
+    "2009-10": 10896164
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Erick Dampier",
+   "bbr_id": "dampier01",
+   "club": "Sacramento Kings",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 11104594,
+    "2006-07": 12338438,
+    "2007-08": 13572281
+   },
+   "source": "league contract ledger 2004-05 (new); traded 2005-09-09"
+  },
+  {
+   "player": "Antonio Daniels",
+   "bbr_id": "daniean01",
+   "club": "Seattle SuperSonics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2500000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Marquis Daniels",
+   "bbr_id": "daniema01",
+   "club": "Dallas Mavericks",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 993808
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Antonio Davis",
+   "bbr_id": "davisan01",
+   "club": "Chicago Bulls",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 3562239
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Baron Davis",
+   "bbr_id": "davisba01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 13700000,
+    "2006-07": 15070000,
+    "2007-08": 16440000,
+    "2008-09": 17810000
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2008-09": "early_termination_option"
+   }
+  },
+  {
+   "player": "Ricky Davis",
+   "bbr_id": "davisri01",
+   "club": "Cleveland Cavaliers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5909800,
+    "2006-07": 6364400,
+    "2007-08": 6819000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Carlos Delfino",
+   "bbr_id": "delfica01",
+   "club": "Dallas Mavericks",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Tony Delk",
+   "bbr_id": "delkto01",
+   "club": "Minnesota Timberwolves",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3375000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Luol Deng",
+   "bbr_id": "denglu01",
+   "club": "Boston Celtics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3610200,
+    "2006-07": 3862080
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Boris Diaw",
+   "bbr_id": "diawbo01",
+   "club": "Atlanta Hawks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1174200,
+    "2006-07": 1870501
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Dan Dickau",
+   "bbr_id": "dickada01",
+   "club": "Atlanta Hawks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1612587
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Travis Diener",
+   "bbr_id": "dienetr01",
+   "club": "San Antonio Spurs",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Ike Diogu",
+   "bbr_id": "dioguik01",
+   "club": "Boston Celtics",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1016400,
+    "2006-07": 1092600,
+    "2007-08": 1168800
+   },
+   "source": "2005 rookie scale No. 23 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Juan Dixon",
+   "bbr_id": "dixonju01",
+   "club": "Washington Wizards",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2070835
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Michael Doleac",
+   "bbr_id": "doleami01",
+   "club": "Los Angeles Clippers",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 2685176,
+    "2006-07": 2899990,
+    "2007-08": 3114804,
+    "2008-09": 3329618
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Keyon Dooling",
+   "bbr_id": "doolike01",
+   "club": "Utah Jazz",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 2763371,
+    "2006-07": 3053525,
+    "2007-08": 3343679,
+    "2008-09": 3633833,
+    "2009-10": 3923987
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Chris Duhon",
+   "bbr_id": "duhonch01",
+   "club": "Orlando Magic",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 641748
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Tim Duncan",
+   "bbr_id": "duncati01",
+   "club": "San Antonio Spurs",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 17428571,
+    "2006-07": 17428571,
+    "2007-08": 17428571,
+    "2008-09": 17428571,
+    "2009-10": 17428571
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Mike Dunleavy",
+   "bbr_id": "dunlemi02",
+   "club": "Golden State Warriors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4506261
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Ronald Dupree",
+   "bbr_id": "duprero01",
+   "club": "Chicago Bulls",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 993808
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "dwyane_wade",
+   "bbr_id": "dwyane_wade",
+   "club": "Miami Heat",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2597980,
+    "2006-07": 2834160
+   },
+   "source": "Miami contract_schedules.json"
+  },
+  {
+   "player": "Ndudi Ebi",
+   "bbr_id": "ebind01",
+   "club": "Cleveland Cavaliers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 964320,
+    "2006-07": 1738669
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "John Edwards",
+   "bbr_id": "edwarjo01",
+   "club": "Atlanta Hawks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 641748
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Monta Ellis",
+   "bbr_id": "ellismo01",
+   "club": "Detroit Pistons",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Francisco Elson",
+   "bbr_id": "elsonfr01",
+   "club": "Denver Nuggets",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 894373
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Melvin Ely",
+   "bbr_id": "elyme01",
+   "club": "Los Angeles Clippers",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 2178000
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Maurice Evans",
+   "bbr_id": "evansma01",
+   "club": "Golden State Warriors",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 771123
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Reggie Evans",
+   "bbr_id": "evansre01",
+   "club": "Seattle SuperSonics",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 3900000,
+    "2006-07": 4309500,
+    "2007-08": 4719000,
+    "2008-09": 5128500,
+    "2009-10": 5538000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Daniel Ewing",
+   "bbr_id": "ewingda01",
+   "club": "Portland Trail Blazers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Noel Felix",
+   "bbr_id": "felixno01",
+   "club": "San Antonio Spurs",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Raymond Felton",
+   "bbr_id": "feltora01",
+   "club": "Dallas Mavericks",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 2360880,
+    "2006-07": 2537880,
+    "2007-08": 2715000
+   },
+   "source": "2005 rookie scale No. 7 at 120%; traded 2005-08-26",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Michael Finley",
+   "bbr_id": "finlemi01",
+   "club": "Dallas Mavericks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 15937500,
+    "2006-07": 17265625
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Derek Fisher",
+   "bbr_id": "fishede01",
+   "club": "Washington Wizards",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1035000
+   },
+   "source": "2005 camp signing (roster minimum)"
+  },
+  {
+   "player": "fitchge01",
+   "bbr_id": "fitchge01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Sharrod Ford",
+   "bbr_id": "fordsh02",
+   "club": "Houston Rockets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "T.J. Ford",
+   "bbr_id": "fordtj01",
+   "club": "Minnesota Timberwolves",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 719373
+   },
+   "source": "2005 simulated free agency",
+   "rookie_scale": true
+  },
+  {
+   "player": "Danny Fortson",
+   "bbr_id": "fortsda01",
+   "club": "Milwaukee Bucks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6207670
+   },
+   "source": "league contract ledger 2004-05 (existing); traded 2005-08-26"
+  },
+  {
+   "player": "Jeff Foster",
+   "bbr_id": "fosteje01",
+   "club": "Indiana Pacers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5000000,
+    "2006-07": 5500000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Richie Frahm",
+   "bbr_id": "frahmri01",
+   "club": "Seattle SuperSonics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 782878,
+    "2006-07": 869865,
+    "2007-08": 956852
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Steve Francis",
+   "bbr_id": "francst01",
+   "club": "Houston Rockets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 13700000,
+    "2006-07": 15070000,
+    "2007-08": 16440000,
+    "2008-09": 17810000
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2008-09": "early_termination_option"
+   }
+  },
+  {
+   "player": "Channing Frye",
+   "bbr_id": "fryech01",
+   "club": "New Jersey Nets",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 3144240,
+    "2006-07": 3380160,
+    "2007-08": 3615960
+   },
+   "source": "2005 rookie scale No. 4 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Dan Gadzuric",
+   "bbr_id": "gadzuda01",
+   "club": "Milwaukee Bucks",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 8677591,
+    "2006-07": 9588738,
+    "2007-08": 10499885,
+    "2008-09": 11411032
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Deng Gai",
+   "bbr_id": "gaide01",
+   "club": "Portland Trail Blazers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Reece Gaines",
+   "bbr_id": "gainere01",
+   "club": "Charlotte Bobcats",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1556160,
+    "2006-07": 2385593
+   },
+   "source": "league contract ledger 2004-05 (existing); traded 2005-08-26",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Francisco García",
+   "bbr_id": "garcifr01",
+   "club": "Portland Trail Blazers",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1253040,
+    "2006-07": 1347000,
+    "2007-08": 1440960
+   },
+   "source": "2005 rookie scale No. 18 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Kevin Garnett",
+   "bbr_id": "garneke01",
+   "club": "Minnesota Timberwolves",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 16800000,
+    "2006-07": 18564000,
+    "2007-08": 20328000,
+    "2008-09": 22092000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Pat Garrity",
+   "bbr_id": "garripa01",
+   "club": "Orlando Magic",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3231250,
+    "2006-07": 3525000,
+    "2007-08": 3818750
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Pau Gasol",
+   "bbr_id": "gasolpa01",
+   "club": "Memphis Grizzlies",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 11778425,
+    "2006-07": 13015160,
+    "2007-08": 14251894,
+    "2008-09": 15488629,
+    "2009-10": 16725364
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Eddie Gill",
+   "bbr_id": "gilled01",
+   "club": "Miami Heat",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 835810
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Manu Ginobili",
+   "bbr_id": "ginobma01",
+   "club": "San Antonio Spurs",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 9779425,
+    "2006-07": 10866028,
+    "2007-08": 11952630,
+    "2008-09": 13039233
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Gordan Giricek",
+   "bbr_id": "giricgo01",
+   "club": "Houston Rockets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4748755,
+    "2006-07": 5180460,
+    "2007-08": 5612165
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Dion Glover",
+   "bbr_id": "glovedi01",
+   "club": "Memphis Grizzlies",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4425661,
+    "2006-07": 4827994,
+    "2007-08": 5230326,
+    "2008-09": 5632659
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Ryan Gomes",
+   "bbr_id": "gomesry01",
+   "club": "Los Angeles Clippers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Drew Gooden",
+   "bbr_id": "goodedr01",
+   "club": "Orlando Magic",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4065811
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Ben Gordon",
+   "bbr_id": "gordobe01",
+   "club": "Utah Jazz",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2947440,
+    "2006-07": 3153120
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Joey Graham",
+   "bbr_id": "grahajo01",
+   "club": "Denver Nuggets",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1196520,
+    "2006-07": 1286280,
+    "2007-08": 1376040
+   },
+   "source": "2005 rookie scale No. 19 at 120%; traded 2005-08-19",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Stephen Graham",
+   "bbr_id": "grahast01",
+   "club": "Dallas Mavericks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Danny Granger",
+   "bbr_id": "grangda01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 2847360,
+    "2006-07": 3060840,
+    "2007-08": 3274440
+   },
+   "source": "2005 rookie scale No. 5 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Brian Grant",
+   "bbr_id": "grantbr01",
+   "club": "Miami Heat",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 14336220,
+    "2006-07": 15439006
+   },
+   "source": "Miami contract_schedules.json",
+   "options": {
+    "2006-07": "early_termination_option"
+   }
+  },
+  {
+   "player": "Devin Green",
+   "bbr_id": "greende01",
+   "club": "New Jersey Nets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Gerald Green",
+   "bbr_id": "greenge01",
+   "club": "Houston Rockets",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 2162880,
+    "2006-07": 2325000,
+    "2007-08": 2487240
+   },
+   "source": "2005 rookie scale No. 8 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Orien Greene",
+   "bbr_id": "greenor01",
+   "club": "San Antonio Spurs",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 879360,
+    "2006-07": 945360,
+    "2007-08": 1011360
+   },
+   "source": "2005 rookie scale No. 27 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Willie Green",
+   "bbr_id": "greenwi01",
+   "club": "Philadelphia 76ers",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 894373
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Eddie Griffin",
+   "bbr_id": "griffed01",
+   "club": "Houston Rockets",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 5000000,
+    "2006-07": 5525000,
+    "2007-08": 6050000,
+    "2008-09": 6575000,
+    "2009-10": 7100000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Anthony Grundy",
+   "bbr_id": "grundan01",
+   "club": "Orlando Magic",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Marcus Haislip",
+   "bbr_id": "haislma01",
+   "club": "Milwaukee Bucks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2000600
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Richard Hamilton",
+   "bbr_id": "hamilri01",
+   "club": "Detroit Pistons",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 8857143,
+    "2006-07": 8857143,
+    "2007-08": 8857143,
+    "2008-09": 8857143,
+    "2009-10": 8857143
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Zendon Hamilton",
+   "bbr_id": "hamilze01",
+   "club": "Phoenix Suns",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 835810
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Anfernee Hardaway",
+   "bbr_id": "hardaan01",
+   "club": "New York Knicks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 15750000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Matt Harpring",
+   "bbr_id": "harprma01",
+   "club": "Miami Heat",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 7954111,
+    "2006-07": 8789293,
+    "2007-08": 9624474,
+    "2008-09": 10459656
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Al Harrington",
+   "bbr_id": "harrial01",
+   "club": "Indiana Pacers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6957500
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "David Harrison",
+   "bbr_id": "harrida01",
+   "club": "Denver Nuggets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 937440,
+    "2006-07": 1002840
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale); traded 2005-08-12",
+   "rookie_scale": true
+  },
+  {
+   "player": "Devin Harris",
+   "bbr_id": "harride01",
+   "club": "Cleveland Cavaliers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2238960,
+    "2006-07": 2395200
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Udonis Haslem",
+   "bbr_id": "hasleud01",
+   "club": "Toronto Raptors",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 5000000,
+    "2006-07": 5525000,
+    "2007-08": 6050000,
+    "2008-09": 6575000,
+    "2009-10": 7100000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Trenton Hassell",
+   "bbr_id": "hassetr01",
+   "club": "Memphis Grizzlies",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 4171924,
+    "2006-07": 4505678,
+    "2007-08": 4839432,
+    "2008-09": 5173186,
+    "2009-10": 5506940
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Chuck Hayes",
+   "bbr_id": "hayesch01",
+   "club": "Atlanta Hawks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jarvis Hayes",
+   "bbr_id": "hayesja01",
+   "club": "Washington Wizards",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2011080,
+    "2006-07": 2564127
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Brendan Haywood",
+   "bbr_id": "haywobr01",
+   "club": "Washington Wizards",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 8508976,
+    "2006-07": 9402418,
+    "2007-08": 10295861,
+    "2008-09": 11189303,
+    "2009-10": 12082746
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Luther Head",
+   "bbr_id": "headlu01",
+   "club": "New York Knicks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Nene",
+   "bbr_id": "hilarne01",
+   "club": "Denver Nuggets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2870556
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Grant Hill",
+   "bbr_id": "hillgr01",
+   "club": "Minnesota Timberwolves",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 15694250,
+    "2006-07": 16901500
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Kirk Hinrich",
+   "bbr_id": "hinriki01",
+   "club": "Chicago Bulls",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2513880,
+    "2006-07": 3192628
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Julius Hodge",
+   "bbr_id": "hodgeju01",
+   "club": "Phoenix Suns",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 975600,
+    "2006-07": 1048800,
+    "2007-08": 1122000
+   },
+   "source": "2005 rookie scale No. 24 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Fred Hoiberg",
+   "bbr_id": "hoibefr01",
+   "club": "Orlando Magic",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2895054,
+    "2006-07": 3216726
+   },
+   "source": "league contract ledger 2004-05 (new); traded 2005-08-12"
+  },
+  {
+   "player": "Randy Holcomb",
+   "bbr_id": "holcora01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Robert Horry",
+   "bbr_id": "horryro01",
+   "club": "Seattle SuperSonics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1359569
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Allan Houston",
+   "bbr_id": "houstal01",
+   "club": "Denver Nuggets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 19125000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Dwight Howard",
+   "bbr_id": "howardw01",
+   "club": "Orlando Magic",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4493160,
+    "2006-07": 4806720
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Josh Howard",
+   "bbr_id": "howarjo01",
+   "club": "Dallas Mavericks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 923880,
+    "2006-07": 1667603
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Juwan Howard",
+   "bbr_id": "howarju01",
+   "club": "Golden State Warriors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5600000,
+    "2006-07": 5600000,
+    "2007-08": 5600000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Troy Hudson",
+   "bbr_id": "hudsotr01",
+   "club": "Utah Jazz",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 4447240,
+    "2006-07": 4803019,
+    "2007-08": 5158798,
+    "2008-09": 5514578
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Larry Hughes",
+   "bbr_id": "hughela01",
+   "club": "Washington Wizards",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 14328137,
+    "2006-07": 15832591,
+    "2007-08": 17337046,
+    "2008-09": 18841500,
+    "2009-10": 20345955
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Kris Humphries",
+   "bbr_id": "humphkr01",
+   "club": "Utah Jazz",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1297080,
+    "2006-07": 1387560
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Steven Hunter",
+   "bbr_id": "huntest01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 4254046,
+    "2006-07": 4700721,
+    "2007-08": 5147396,
+    "2008-09": 5594070,
+    "2009-10": 6040745
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Andre Iguodala",
+   "bbr_id": "iguodan01",
+   "club": "New York Knicks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2443920,
+    "2006-07": 2614440
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Zydrunas Ilgauskas",
+   "bbr_id": "ilgauzy01",
+   "club": "Philadelphia 76ers",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 14862385,
+    "2006-07": 16422935,
+    "2007-08": 17983486
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Allen Iverson",
+   "bbr_id": "iversal01",
+   "club": "Philadelphia 76ers",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 15054322,
+    "2006-07": 16635026,
+    "2007-08": 18215730
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Royal Ivey",
+   "bbr_id": "iveyro01",
+   "club": "Sacramento Kings",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 641748
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jarrett Jack",
+   "bbr_id": "jackja01",
+   "club": "Sacramento Kings",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1102680,
+    "2006-07": 1185480,
+    "2007-08": 1268160
+   },
+   "source": "2005 rookie scale No. 21 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Bobby Jackson",
+   "bbr_id": "jacksbo01",
+   "club": "Detroit Pistons",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3375000
+   },
+   "source": "league contract ledger 2004-05 (existing); traded 2005-09-09"
+  },
+  {
+   "player": "Jermaine Jackson",
+   "bbr_id": "jacksje01",
+   "club": "Milwaukee Bucks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 900498
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jim Jackson",
+   "bbr_id": "jacksji01",
+   "club": "Los Angeles Lakers",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 4601302,
+    "2006-07": 4969406
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Luke Jackson",
+   "bbr_id": "jackslu02",
+   "club": "Portland Trail Blazers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1955160,
+    "2006-07": 2091480
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Marc Jackson",
+   "bbr_id": "jacksma02",
+   "club": "Philadelphia 76ers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4550000,
+    "2006-07": 4875000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Stephen Jackson",
+   "bbr_id": "jacksst02",
+   "club": "Atlanta Hawks",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 11452168,
+    "2006-07": 12654646,
+    "2007-08": 13857123,
+    "2008-09": 15059601
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Casey Jacobsen",
+   "bbr_id": "jacobca01",
+   "club": "Phoenix Suns",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1780153
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "LeBron James",
+   "bbr_id": "jamesle01",
+   "club": "Cleveland Cavaliers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4621800,
+    "2006-07": 5828090
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "club": "Miami Heat",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3812749
+   },
+   "source": "Miami contract_schedules.json"
+  },
+  {
+   "player": "Antawn Jamison",
+   "bbr_id": "jamisan01",
+   "club": "Dallas Mavericks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 13843156,
+    "2006-07": 15101625,
+    "2007-08": 16360094
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Marko Jaric",
+   "bbr_id": "jaricma01",
+   "club": "Chicago Bulls",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 5000000,
+    "2006-07": 5400000,
+    "2007-08": 5800000,
+    "2008-09": 6200000,
+    "2009-10": 6600000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Šarūnas Jasikevičius",
+   "bbr_id": "jasiksa01",
+   "club": "Cleveland Cavaliers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Al Jefferson",
+   "bbr_id": "jeffeal01",
+   "club": "Toronto Raptors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1365360,
+    "2006-07": 1460640
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Richard Jefferson",
+   "bbr_id": "jefferi01",
+   "club": "New Jersey Nets",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 9422834,
+    "2006-07": 10412232,
+    "2007-08": 11401629,
+    "2008-09": 12391027,
+    "2009-10": 13380424
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jared Jeffries",
+   "bbr_id": "jeffrja01",
+   "club": "Washington Wizards",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2433824
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Amir Johnson",
+   "bbr_id": "johnsam01",
+   "club": "Utah Jazz",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Anthony Johnson",
+   "bbr_id": "johnsan02",
+   "club": "Miami Heat",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 5000000,
+    "2006-07": 5400000,
+    "2007-08": 5800000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Joe Johnson",
+   "bbr_id": "johnsjo02",
+   "club": "Phoenix Suns",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 10634212,
+    "2006-07": 11750804,
+    "2007-08": 12867397,
+    "2008-09": 13983989,
+    "2009-10": 15100581
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "club": "San Antonio Spurs",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 719373
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Damon Jones",
+   "bbr_id": "jonesda01",
+   "club": "Milwaukee Bucks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3375405,
+    "2006-07": 3750450,
+    "2007-08": 4125495
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Dahntay Jones",
+   "bbr_id": "jonesda02",
+   "club": "Memphis Grizzlies",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1223160,
+    "2006-07": 1886113
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Dwayne Jones",
+   "bbr_id": "jonesdw02",
+   "club": "San Antonio Spurs",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Eddie Jones",
+   "bbr_id": "jonesed02",
+   "club": "Miami Heat",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 14576250,
+    "2006-07": 15697500
+   },
+   "source": "league contract ledger 2004-05 (existing); traded 2005-08-05"
+  },
+  {
+   "player": "Fred Jones",
+   "bbr_id": "jonesfr01",
+   "club": "Houston Rockets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2328843
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "James Jones",
+   "bbr_id": "jonesja02",
+   "club": "Orlando Magic",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 894373
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Chris Kaman",
+   "bbr_id": "kamanch01",
+   "club": "Los Angeles Clippers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2753760,
+    "2006-07": 3491768
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Jason Kapono",
+   "bbr_id": "kaponja01",
+   "club": "Charlotte Bobcats",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 5000000,
+    "2006-07": 5525000,
+    "2007-08": 6050000,
+    "2008-09": 6575000,
+    "2009-10": 7100000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Mario Kasun",
+   "bbr_id": "kasunma01",
+   "club": "Milwaukee Bucks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 641748
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Viktor Khryapa",
+   "bbr_id": "khryavi01",
+   "club": "Los Angeles Lakers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1189200,
+    "2006-07": 1272120
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Jason Kidd",
+   "bbr_id": "kiddja01",
+   "club": "New Jersey Nets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 17278333,
+    "2006-07": 17278333,
+    "2007-08": 17278333,
+    "2008-09": 17278333
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Andrei Kirilenko",
+   "bbr_id": "kirilan01",
+   "club": "Utah Jazz",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 11418027,
+    "2006-07": 12616920,
+    "2007-08": 13815813,
+    "2008-09": 15014706,
+    "2009-10": 16213598
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Linas Kleiza",
+   "bbr_id": "kleizli01",
+   "club": "New Jersey Nets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Brevin Knight",
+   "bbr_id": "knighbr01",
+   "club": "Washington Wizards",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 7776264,
+    "2006-07": 8592772,
+    "2007-08": 9409279,
+    "2008-09": 10225787
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Yaroslav Korolev",
+   "bbr_id": "korolya01",
+   "club": "Denver Nuggets",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1388400,
+    "2006-07": 1492440,
+    "2007-08": 1596600
+   },
+   "source": "2005 rookie scale No. 16 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Kyle Korver",
+   "bbr_id": "korveky01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 8783538,
+    "2006-07": 9705809,
+    "2007-08": 10628081,
+    "2008-09": 11550352,
+    "2009-10": 12472624
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Nenad Krstić",
+   "bbr_id": "krstine01",
+   "club": "New York Knicks",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 7155795,
+    "2006-07": 7907153,
+    "2007-08": 8658512,
+    "2008-09": 9409870,
+    "2009-10": 10161229
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Raef LaFrentz",
+   "bbr_id": "lafrera01",
+   "club": "Atlanta Hawks",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 8821996,
+    "2006-07": 9748306,
+    "2007-08": 10674615,
+    "2008-09": 11600925
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Maciej Lampe",
+   "bbr_id": "lampema01",
+   "club": "Atlanta Hawks",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1125000
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "David Lee",
+   "bbr_id": "leeda02",
+   "club": "Toronto Raptors",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Voshon Lenard",
+   "bbr_id": "lenarvo01",
+   "club": "Minnesota Timberwolves",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1138500
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Rashard Lewis",
+   "bbr_id": "lewisra02",
+   "club": "Seattle SuperSonics",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 13843156,
+    "2006-07": 15296687,
+    "2007-08": 16750219,
+    "2008-09": 18203750,
+    "2009-10": 19657282
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Shaun Livingston",
+   "bbr_id": "livinsh01",
+   "club": "Charlotte Bobcats",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3254880,
+    "2006-07": 3481920
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "John Lucas III",
+   "bbr_id": "lucasjo02",
+   "club": "New Jersey Nets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Tyronn Lue",
+   "bbr_id": "luety01",
+   "club": "Toronto Raptors",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 4878136,
+    "2006-07": 5268387,
+    "2007-08": 5658638,
+    "2008-09": 6048889
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "George Lynch",
+   "bbr_id": "lynchge01",
+   "club": "Houston Rockets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3200000
+   },
+   "source": "league contract ledger 2004-05 (existing); traded 2005-08-19"
+  },
+  {
+   "player": "Arvydas Macijauskas",
+   "bbr_id": "macijar01",
+   "club": "Dallas Mavericks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Corey Maggette",
+   "bbr_id": "maggeco01",
+   "club": "Los Angeles Clippers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 7000000,
+    "2006-07": 7000000,
+    "2007-08": 7000000,
+    "2008-09": 7000000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Jamaal Magloire",
+   "bbr_id": "magloja01",
+   "club": "New York Knicks",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 5000000,
+    "2006-07": 5400000,
+    "2007-08": 5800000,
+    "2008-09": 6200000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Stephon Marbury",
+   "bbr_id": "marbust01",
+   "club": "Phoenix Suns",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 15356250,
+    "2006-07": 16968656,
+    "2007-08": 18581062,
+    "2008-09": 20193469
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Shawn Marion",
+   "bbr_id": "mariosh01",
+   "club": "Phoenix Suns",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 13700000,
+    "2006-07": 15070000,
+    "2007-08": 16440000,
+    "2008-09": 17810000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Donyell Marshall",
+   "bbr_id": "marshdo01",
+   "club": "Miami Heat",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 6337327,
+    "2006-07": 7002746,
+    "2007-08": 7668166
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Rawle Marshall",
+   "bbr_id": "marshra01",
+   "club": "Charlotte Bobcats",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "club": "New Jersey Nets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1138500
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Kenyon Martin",
+   "bbr_id": "martike01",
+   "club": "New Jersey Nets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 10539093,
+    "2006-07": 11710104,
+    "2007-08": 12881114,
+    "2008-09": 14052124
+   },
+   "source": "league contract ledger 2004-05 (new)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Kevin Martin",
+   "bbr_id": "martike02",
+   "club": "New York Knicks",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Desmond Mason",
+   "bbr_id": "masonde01",
+   "club": "Milwaukee Bucks",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 7549982,
+    "2006-07": 8342730,
+    "2007-08": 9135478,
+    "2008-09": 9928226
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jason Maxiell",
+   "bbr_id": "maxieja01",
+   "club": "Memphis Grizzlies",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Sean May",
+   "bbr_id": "mayse01",
+   "club": "Detroit Pistons",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1461360,
+    "2006-07": 1570920,
+    "2007-08": 1680600
+   },
+   "source": "2005 rookie scale No. 15 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "D.J. Mbenga",
+   "bbr_id": "mbengdj01",
+   "club": "San Antonio Spurs",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Rashad McCants",
+   "bbr_id": "mccanra01",
+   "club": "Indiana Pacers",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1619280,
+    "2006-07": 1740720,
+    "2007-08": 1862160
+   },
+   "source": "2005 rookie scale No. 13 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Antonio McDyess",
+   "bbr_id": "mcdyean01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4007623,
+    "2006-07": 4371953,
+    "2007-08": 4736282
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Tracy McGrady",
+   "bbr_id": "mcgratr01",
+   "club": "Orlando Magic",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 15694250,
+    "2006-07": 16901500
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Jeff McInnis",
+   "bbr_id": "mcinnje01",
+   "club": "Orlando Magic",
+   "route": "cap_room",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 3904376,
+    "2006-07": 4216726,
+    "2007-08": 4529076
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Aaron McKie",
+   "bbr_id": "mckieaa01",
+   "club": "Philadelphia 76ers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6000000,
+    "2006-07": 6500000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Keith McLeod",
+   "bbr_id": "mcleoke01",
+   "club": "Philadelphia 76ers",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 894373
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Slava Medvedenko",
+   "bbr_id": "medvest01",
+   "club": "Detroit Pistons",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3896383,
+    "2006-07": 4250599,
+    "2007-08": 4604816,
+    "2008-09": 4959032
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Chris Mihm",
+   "bbr_id": "mihmch01",
+   "club": "Phoenix Suns",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 5100714,
+    "2006-07": 5636289,
+    "2007-08": 6171864,
+    "2008-09": 6707439,
+    "2009-10": 7243014
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Aaron Miles",
+   "bbr_id": "milesaa01",
+   "club": "Memphis Grizzlies",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "C.J. Miles",
+   "bbr_id": "milescj01",
+   "club": "Minnesota Timberwolves",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 905640,
+    "2006-07": 973440,
+    "2007-08": 1041360
+   },
+   "source": "2005 rookie scale No. 26 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Darius Miles",
+   "bbr_id": "milesda01",
+   "club": "Cleveland Cavaliers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5515875,
+    "2006-07": 6128750,
+    "2007-08": 6741625,
+    "2008-09": 7354500
+   },
+   "source": "league contract ledger 2004-05 (new)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Darko Milicic",
+   "bbr_id": "milicda01",
+   "club": "Detroit Pistons",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4135200,
+    "2006-07": 5218622
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Andre Miller",
+   "bbr_id": "millean02",
+   "club": "Denver Nuggets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 8528333,
+    "2006-07": 8528333,
+    "2007-08": 8528333,
+    "2008-09": 8528333
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Brad Miller",
+   "bbr_id": "millebr01",
+   "club": "Sacramento Kings",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 9714286,
+    "2006-07": 9714286,
+    "2007-08": 9714286,
+    "2008-09": 9714286,
+    "2009-10": 9714286
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Mike Miller",
+   "bbr_id": "millemi01",
+   "club": "Memphis Grizzlies",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 11206817,
+    "2006-07": 12383533,
+    "2007-08": 13560249,
+    "2008-09": 14736964,
+    "2009-10": 15913680
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Reggie Miller",
+   "bbr_id": "millere01",
+   "club": "Boston Celtics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5500000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Yao Ming",
+   "bbr_id": "mingya01",
+   "club": "Houston Rockets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5594906
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Cuttino Mobley",
+   "bbr_id": "moblecu01",
+   "club": "Houston Rockets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6374875
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Nazr Mohammed",
+   "bbr_id": "mohamna01",
+   "club": "Atlanta Hawks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5500000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Sergei Monia",
+   "bbr_id": "moniase01",
+   "club": "Atlanta Hawks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency",
+   "rookie_scale": true
+  },
+  {
+   "player": "Mikki Moore",
+   "bbr_id": "mooremi01",
+   "club": "New Jersey Nets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 965185
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Terence Morris",
+   "bbr_id": "morrite01",
+   "club": "Philadelphia 76ers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 771123
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Alonzo Mourning",
+   "bbr_id": "mournal01",
+   "club": "Minnesota Timberwolves",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 3904482
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Troy Murphy",
+   "bbr_id": "murphtr01",
+   "club": "Golden State Warriors",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 10200000,
+    "2006-07": 11271000,
+    "2007-08": 12342000,
+    "2008-09": 13413000,
+    "2009-10": 14484000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Lamond Murray",
+   "bbr_id": "murrala01",
+   "club": "Utah Jazz",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5250000
+   },
+   "source": "Miami contract_schedules.json; traded 2005-09-02"
+  },
+  {
+   "player": "Ronald Murray",
+   "bbr_id": "murraro01",
+   "club": "Seattle SuperSonics",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 920248
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Bostjan Nachbar",
+   "bbr_id": "nachbbo01",
+   "club": "Utah Jazz",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1867350
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Lee Nailon",
+   "bbr_id": "nailole01",
+   "club": "Denver Nuggets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 835810
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Eduardo Najera",
+   "bbr_id": "najered01",
+   "club": "Dallas Mavericks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4190476,
+    "2006-07": 4571428,
+    "2007-08": 4952380
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2007-08": "early_termination_option"
+   }
+  },
+  {
+   "player": "Steve Nash",
+   "bbr_id": "nashst01",
+   "club": "Dallas Mavericks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 14806125,
+    "2006-07": 16451250
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Boniface N'Dong",
+   "bbr_id": "ndongbo01",
+   "club": "Dallas Mavericks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jameer Nelson",
+   "bbr_id": "nelsoja01",
+   "club": "Seattle SuperSonics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1676280,
+    "2006-07": 1793160
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Rasho Nesterovic",
+   "bbr_id": "nestera01",
+   "club": "San Antonio Spurs",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 7000000,
+    "2006-07": 7000000,
+    "2007-08": 7000000,
+    "2008-09": 7000000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Andrés Nocioni",
+   "bbr_id": "nocioan01",
+   "club": "San Antonio Spurs",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Moochie Norris",
+   "bbr_id": "norrimo01",
+   "club": "Charlotte Bobcats",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4200000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Dirk Nowitzki",
+   "bbr_id": "nowitdi01",
+   "club": "Dallas Mavericks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 13843156,
+    "2006-07": 15101625,
+    "2007-08": 16360094
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2007-08": "early_termination_option"
+   }
+  },
+  {
+   "player": "Fabricio Oberto",
+   "bbr_id": "obertfa01",
+   "club": "Orlando Magic",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Lamar Odom",
+   "bbr_id": "odomla01",
+   "club": "Los Angeles Clippers",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 12000000,
+    "2006-07": 13260000,
+    "2007-08": 14520000,
+    "2008-09": 15780000,
+    "2009-10": 17040000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Emeka Okafor",
+   "bbr_id": "okafoem01",
+   "club": "Washington Wizards",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4020120,
+    "2006-07": 4300560
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Mehmet Okur",
+   "bbr_id": "okurme01",
+   "club": "Miami Heat",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3110381,
+    "2006-07": 3393143,
+    "2007-08": 3675905,
+    "2008-09": 3958667
+   },
+   "source": "Miami contract_schedules.json"
+  },
+  {
+   "player": "Kevin Ollie",
+   "bbr_id": "ollieke01",
+   "club": "Cleveland Cavaliers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3000000,
+    "2006-07": 3000000,
+    "2007-08": 3000000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Michael Olowokandi",
+   "bbr_id": "olowomi01",
+   "club": "Phoenix Suns",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5400000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Jermaine O'Neal",
+   "bbr_id": "onealje01",
+   "club": "Indiana Pacers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 17142857,
+    "2006-07": 17142857,
+    "2007-08": 17142857,
+    "2008-09": 17142857,
+    "2009-10": 17142857
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Shaquille O'Neal",
+   "bbr_id": "onealsh01",
+   "club": "Los Angeles Lakers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 30642861
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Greg Ostertag",
+   "bbr_id": "ostergr01",
+   "club": "Seattle SuperSonics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5393300,
+    "2006-07": 5883600
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Travis Outlaw",
+   "bbr_id": "outlatr01",
+   "club": "Portland Trail Blazers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1082160,
+    "2006-07": 1836426
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Andre Owens",
+   "bbr_id": "owensan01",
+   "club": "Dallas Mavericks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Zaza Pachulia",
+   "bbr_id": "pachuza01",
+   "club": "Orlando Magic",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 894373
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Scott Padgett",
+   "bbr_id": "padgesc01",
+   "club": "Toronto Raptors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 10920247,
+    "2006-07": 12133608,
+    "2007-08": 13346968
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "Milt Palacio",
+   "bbr_id": "palacmi01",
+   "club": "New York Knicks",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 4040593,
+    "2006-07": 4464855,
+    "2007-08": 4889118,
+    "2008-09": 5313380
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jannero Pargo",
+   "bbr_id": "pargoja01",
+   "club": "Charlotte Bobcats",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 920248
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Smush Parker",
+   "bbr_id": "parkesm01",
+   "club": "Indiana Pacers",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1087558
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Tony Parker",
+   "bbr_id": "parketo01",
+   "club": "San Antonio Spurs",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 11896284,
+    "2006-07": 13145394,
+    "2007-08": 14394504,
+    "2008-09": 15643613,
+    "2009-10": 16892723
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Ruben Patterson",
+   "bbr_id": "patteru01",
+   "club": "Portland Trail Blazers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6353200,
+    "2006-07": 6807000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Chris Paul",
+   "bbr_id": "paulch01",
+   "club": "Utah Jazz",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 3487440,
+    "2006-07": 3749040,
+    "2007-08": 4010640
+   },
+   "source": "2005 rookie scale No. 3 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Sasha Pavlovic",
+   "bbr_id": "pavloal01",
+   "club": "Boston Celtics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1274160,
+    "2006-07": 1962206
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Gary Payton",
+   "bbr_id": "paytoga01",
+   "club": "Denver Nuggets",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 3300000
+   },
+   "source": "2005 camp signing (roster minimum)"
+  },
+  {
+   "player": "Kendrick Perkins",
+   "bbr_id": "perkike01",
+   "club": "Boston Celtics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 936480,
+    "2006-07": 1689410
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Morris Peterson",
+   "bbr_id": "petermo01",
+   "club": "Toronto Raptors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3068550,
+    "2006-07": 3409500,
+    "2007-08": 3750450,
+    "2008-09": 4091400
+   },
+   "source": "league contract ledger 2004-05 (new)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Johan Petro",
+   "bbr_id": "petrojo01",
+   "club": "Chicago Bulls",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1058640,
+    "2006-07": 1137960,
+    "2007-08": 1217400
+   },
+   "source": "2005 rookie scale No. 22 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Eric Piatkowski",
+   "bbr_id": "piatker01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2666667
+   },
+   "source": "league contract ledger 2004-05 (existing); traded 2005-08-19"
+  },
+  {
+   "player": "Paul Pierce",
+   "bbr_id": "piercpa01",
+   "club": "Boston Celtics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 13843156,
+    "2006-07": 15101625,
+    "2007-08": 16360094
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2007-08": "early_termination_option"
+   }
+  },
+  {
+   "player": "Mickael Pietrus",
+   "bbr_id": "pietrmi01",
+   "club": "Charlotte Bobcats",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1910520,
+    "2006-07": 2535260
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Zoran Planinic",
+   "bbr_id": "planizo01",
+   "club": "Orlando Magic",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1127280,
+    "2006-07": 1854376
+   },
+   "source": "league contract ledger 2004-05 (existing); traded 2005-08-26",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Pavel Podkolzin",
+   "bbr_id": "podkopa01",
+   "club": "Philadelphia 76ers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1592400,
+    "2006-07": 1703520
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Scot Pollard",
+   "bbr_id": "pollasc01",
+   "club": "Indiana Pacers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6274937
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "James Posey",
+   "bbr_id": "poseyja01",
+   "club": "Memphis Grizzlies",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5750000,
+    "2006-07": 5750000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Josh Powell",
+   "bbr_id": "poweljo01",
+   "club": "Detroit Pistons",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Ronnie Price",
+   "bbr_id": "pricero01",
+   "club": "Dallas Mavericks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Tayshaun Prince",
+   "bbr_id": "princta01",
+   "club": "Golden State Warriors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1763115
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Joel Przybilla",
+   "bbr_id": "przybjo01",
+   "club": "Portland Trail Blazers",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 6408804,
+    "2006-07": 7081728,
+    "2007-08": 7754653,
+    "2008-09": 8427577,
+    "2009-10": 9100502
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Vladimir Radmanovic",
+   "bbr_id": "radmavl01",
+   "club": "Seattle SuperSonics",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 5000000,
+    "2006-07": 5525000,
+    "2007-08": 6050000,
+    "2008-09": 6575000,
+    "2009-10": 7100000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Peter John Ramos",
+   "bbr_id": "ramospe01",
+   "club": "Boston Celtics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1095960,
+    "2006-07": 1172400
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Shavlik Randolph",
+   "bbr_id": "randosh01",
+   "club": "Charlotte Bobcats",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Zach Randolph",
+   "bbr_id": "randoza01",
+   "club": "Portland Trail Blazers",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 10800000,
+    "2006-07": 11934000,
+    "2007-08": 13068000,
+    "2008-09": 14202000,
+    "2009-10": 15336000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Zeljko Rebraca",
+   "bbr_id": "rebraze01",
+   "club": "Seattle SuperSonics",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 771123
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Michael Redd",
+   "bbr_id": "reddmi01",
+   "club": "Milwaukee Bucks",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 11641552,
+    "2006-07": 12863915,
+    "2007-08": 14086278,
+    "2008-09": 15308641,
+    "2009-10": 16531004
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jason Richardson",
+   "bbr_id": "richaja01",
+   "club": "Golden State Warriors",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 11352718,
+    "2006-07": 12544753,
+    "2007-08": 13736789,
+    "2008-09": 14928824,
+    "2009-10": 16120860
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Quentin Richardson",
+   "bbr_id": "richaqu01",
+   "club": "Los Angeles Clippers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5008212,
+    "2006-07": 5564680,
+    "2007-08": 6121148
+   },
+   "source": "league contract ledger 2004-05 (new)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Luke Ridnour",
+   "bbr_id": "ridnolu01",
+   "club": "Charlotte Bobcats",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1638000,
+    "2006-07": 2425878
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Anthony Roberson",
+   "bbr_id": "roberan02",
+   "club": "Indiana Pacers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Lawrence Roberts",
+   "bbr_id": "roberla01",
+   "club": "Minnesota Timberwolves",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "club": "Seattle SuperSonics",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 641748
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Nate Robinson",
+   "bbr_id": "robinna01",
+   "club": "Seattle SuperSonics",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jalen Rose",
+   "bbr_id": "roseja01",
+   "club": "Indiana Pacers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 15694250,
+    "2006-07": 16901500
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Malik Rose",
+   "bbr_id": "rosema01",
+   "club": "Portland Trail Blazers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6008750
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Quinton Ross",
+   "bbr_id": "rossqu01",
+   "club": "New Jersey Nets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 641748
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Kareem Rush",
+   "bbr_id": "rushka01",
+   "club": "Los Angeles Lakers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1810616
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "John Salmons",
+   "bbr_id": "salmojo01",
+   "club": "Philadelphia 76ers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1669001
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Jamal Sampson",
+   "bbr_id": "sampsja01",
+   "club": "Houston Rockets",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 920248
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Melvin Sanders",
+   "bbr_id": "sandeme01",
+   "club": "Indiana Pacers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Alex Scales",
+   "bbr_id": "scaleal01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Luke Schenscher",
+   "bbr_id": "schenlu01",
+   "club": "Toronto Raptors",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Ha Seung-Jin",
+   "bbr_id": "seungha01",
+   "club": "Chicago Bulls",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 641748
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "simiewa01",
+   "bbr_id": "simiewa01",
+   "club": "Toronto Raptors",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 867720,
+    "2006-07": 932760,
+    "2007-08": 997800
+   },
+   "source": "2005 rookie scale No. 29 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Bobby Simmons",
+   "bbr_id": "simmobo01",
+   "club": "Los Angeles Clippers",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 11145893,
+    "2006-07": 12316212,
+    "2007-08": 13486531,
+    "2008-09": 14656849,
+    "2009-10": 15827168
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "James Singleton",
+   "bbr_id": "singlja01",
+   "club": "Detroit Pistons",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "club": "New York Knicks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1029873
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Donta Smith",
+   "bbr_id": "smithdo04",
+   "club": "Washington Wizards",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 904800,
+    "2006-07": 967920
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Joe Smith",
+   "bbr_id": "smithjo02",
+   "club": "Milwaukee Bucks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6353200,
+    "2006-07": 6807000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Josh Smith",
+   "bbr_id": "smithjo03",
+   "club": "Utah Jazz",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1764480,
+    "2006-07": 1887600
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "J.R. Smith",
+   "bbr_id": "smithjr01",
+   "club": "Boston Celtics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1238640,
+    "2006-07": 1325160
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Eric Snow",
+   "bbr_id": "snower01",
+   "club": "Boston Celtics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 4076057,
+    "2006-07": 4446607
+   },
+   "source": "league contract ledger 2004-05 (new); traded 2005-08-05"
+  },
+  {
+   "player": "Kirk Snyder",
+   "bbr_id": "snydeki01",
+   "club": "Chicago Bulls",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1857360,
+    "2006-07": 1986960
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Darius Songaila",
+   "bbr_id": "songada01",
+   "club": "Sacramento Kings",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 993808
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Pape Sow",
+   "bbr_id": "sowpa01",
+   "club": "Milwaukee Bucks",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Jerry Stackhouse",
+   "bbr_id": "stackje01",
+   "club": "Minnesota Timberwolves",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 7381562,
+    "2006-07": 8156626,
+    "2007-08": 8931690
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "DeShawn Stevenson",
+   "bbr_id": "stevede01",
+   "club": "Miami Heat",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2989469,
+    "2006-07": 3321632,
+    "2007-08": 3653796,
+    "2008-09": 3985959
+   },
+   "source": "league contract ledger 2004-05 (new); traded 2005-09-02",
+   "rookie_scale": true
+  },
+  {
+   "player": "Peja Stojakovic",
+   "bbr_id": "stojape01",
+   "club": "Sacramento Kings",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 7500000,
+    "2006-07": 8125000
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   }
+  },
+  {
+   "player": "Awvee Storey",
+   "bbr_id": "storeaw01",
+   "club": "New York Knicks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 641748
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Amar'e Stoudemire",
+   "bbr_id": "stoudam01",
+   "club": "Phoenix Suns",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2589023
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Damon Stoudamire",
+   "bbr_id": "stoudda01",
+   "club": "Portland Trail Blazers",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 9324133,
+    "2006-07": 10303167,
+    "2007-08": 11282201
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Salim Stoudamire",
+   "bbr_id": "stoudsa01",
+   "club": "New York Knicks",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Michael Sweetney",
+   "bbr_id": "sweetmi01",
+   "club": "New York Knicks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2116920,
+    "2006-07": 2696956
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Robert Swift",
+   "bbr_id": "swiftro01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1512840,
+    "2006-07": 1618320
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Stromile Swift",
+   "bbr_id": "swiftst01",
+   "club": "Memphis Grizzlies",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3682260,
+    "2006-07": 4091400,
+    "2007-08": 4500540,
+    "2008-09": 4909680
+   },
+   "source": "league contract ledger 2004-05 (new)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Wally Szczerbiak",
+   "bbr_id": "szczewa02",
+   "club": "New Jersey Nets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 10000000,
+    "2006-07": 11000000,
+    "2007-08": 12000000,
+    "2008-09": 13000000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Chris Taft",
+   "bbr_id": "taftch01",
+   "club": "Utah Jazz",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 874080,
+    "2006-07": 939600,
+    "2007-08": 1005120
+   },
+   "source": "2005 rookie scale No. 28 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Donell Taylor",
+   "bbr_id": "taylodo01",
+   "club": "Sacramento Kings",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Maurice Taylor",
+   "bbr_id": "tayloma01",
+   "club": "Cleveland Cavaliers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 9100000,
+    "2006-07": 9750000
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "early_termination_option"
+   }
+  },
+  {
+   "player": "Sebastian Telfair",
+   "bbr_id": "telfase01",
+   "club": "Miami Heat",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1010040,
+    "2006-07": 1080480
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale); traded 2005-08-05",
+   "rookie_scale": true
+  },
+  {
+   "player": "Jason Terry",
+   "bbr_id": "terryja01",
+   "club": "Atlanta Hawks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 7500000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Billy Thomas",
+   "bbr_id": "thomabi01",
+   "club": "Los Angeles Lakers",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Etan Thomas",
+   "bbr_id": "thomaet01",
+   "club": "Washington Wizards",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5515875,
+    "2006-07": 6128750,
+    "2007-08": 6741625
+   },
+   "source": "league contract ledger 2004-05 (new)",
+   "rookie_scale": true
+  },
+  {
+   "player": "James Thomas",
+   "bbr_id": "thomaja02",
+   "club": "Minnesota Timberwolves",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 641748
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "John Thomas",
+   "bbr_id": "thomajo02",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1029873
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Kenny Thomas",
+   "bbr_id": "thomake01",
+   "club": "Philadelphia 76ers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 5714286,
+    "2006-07": 5714286,
+    "2007-08": 5714286,
+    "2008-09": 5714286,
+    "2009-10": 5714286
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Kurt Thomas",
+   "bbr_id": "thomaku01",
+   "club": "San Antonio Spurs",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 10071076,
+    "2006-07": 11128539,
+    "2007-08": 12186002
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Tim Thomas",
+   "bbr_id": "thomati01",
+   "club": "Milwaukee Bucks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 13975000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Dijon Thompson",
+   "bbr_id": "thompdi01",
+   "club": "Cleveland Cavaliers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Jamaal Tinsley",
+   "bbr_id": "tinslja01",
+   "club": "Indiana Pacers",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 12000000,
+    "2006-07": 13260000,
+    "2007-08": 14520000,
+    "2008-09": 15780000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Nikoloz Tskitishvili",
+   "bbr_id": "tskitni01",
+   "club": "Houston Rockets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 745248
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Ronny Turiaf",
+   "bbr_id": "turiaro01",
+   "club": "Boston Celtics",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Hedo Turkoglu",
+   "bbr_id": "turkohe01",
+   "club": "Toronto Raptors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 3652688,
+    "2006-07": 3984750,
+    "2007-08": 4316812,
+    "2008-09": 4648875
+   },
+   "source": "league contract ledger 2004-05 (new)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Ime Udoka",
+   "bbr_id": "udokaim01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 719373
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Beno Udrih",
+   "bbr_id": "udrihbe01",
+   "club": "Sacramento Kings",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 898200,
+    "2006-07": 960840
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "ukicro01",
+   "bbr_id": "ukicro01",
+   "club": "Atlanta Hawks",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1148760,
+    "2006-07": 1234800,
+    "2007-08": 1320960
+   },
+   "source": "2005 rookie scale No. 20 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Keith Van Horn",
+   "bbr_id": "vanhoke01",
+   "club": "San Antonio Spurs",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 15694250,
+    "2006-07": 16901500,
+    "2007-08": 18108750
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Anderson Varejão",
+   "bbr_id": "varejan01",
+   "club": "Golden State Warriors",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 969600,
+    "2006-07": 1037280
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "vazqufr01",
+   "bbr_id": "vazqufr01",
+   "club": "Los Angeles Lakers",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1318920,
+    "2006-07": 1417800,
+    "2007-08": 1516800
+   },
+   "source": "2005 rookie scale No. 17 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Charlie Villanueva",
+   "bbr_id": "villach01",
+   "club": "Memphis Grizzlies",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1538400,
+    "2006-07": 1653720,
+    "2007-08": 1769160
+   },
+   "source": "2005 rookie scale No. 14 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Jake Voskuhl",
+   "bbr_id": "voskuja01",
+   "club": "Phoenix Suns",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1666667
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Jackson Vroman",
+   "bbr_id": "vromaja01",
+   "club": "Milwaukee Bucks",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Sasha Vujačić",
+   "bbr_id": "vujacsa01",
+   "club": "Sacramento Kings",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 910440,
+    "2006-07": 973920
+   },
+   "source": "league contract ledger 2004-05 (rookie_scale)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Von Wafer",
+   "bbr_id": "wafervo01",
+   "club": "Indiana Pacers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Antoine Walker",
+   "bbr_id": "walkean02",
+   "club": "Dallas Mavericks",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 9017600,
+    "2006-07": 9964448,
+    "2007-08": 10911296,
+    "2008-09": 11858144
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Samaki Walker",
+   "bbr_id": "walkesa01",
+   "club": "Washington Wizards",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1457430,
+    "2006-07": 1574024,
+    "2007-08": 1690619,
+    "2008-09": 1807213
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Ben Wallace",
+   "bbr_id": "wallabe01",
+   "club": "Detroit Pistons",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6700000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Gerald Wallace",
+   "bbr_id": "wallage01",
+   "club": "Sacramento Kings",
+   "route": "bird",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 10121627,
+    "2006-07": 11184398,
+    "2007-08": 12247169,
+    "2008-09": 13309940,
+    "2009-10": 14372710
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Rasheed Wallace",
+   "bbr_id": "wallara01",
+   "club": "Portland Trail Blazers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 7665527,
+    "2006-07": 8517252,
+    "2007-08": 9368978
+   },
+   "source": "league contract ledger 2004-05 (new)"
+  },
+  {
+   "player": "walshma01",
+   "bbr_id": "walshma01",
+   "club": "Charlotte Bobcats",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Luke Walton",
+   "bbr_id": "waltolu01",
+   "club": "Los Angeles Lakers",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 894373
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Hakim Warrick",
+   "bbr_id": "warriha01",
+   "club": "Orlando Magic",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1794240,
+    "2006-07": 1928760,
+    "2007-08": 2063400
+   },
+   "source": "2005 rookie scale No. 11 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Earl Watson",
+   "bbr_id": "watsoea01",
+   "club": "New Jersey Nets",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 3728347,
+    "2006-07": 4026615,
+    "2007-08": 4324883,
+    "2008-09": 4623150,
+    "2009-10": 4921418
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Clarence Weatherspoon",
+   "bbr_id": "weathcl01",
+   "club": "New York Knicks",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6353200
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Chris Webber",
+   "bbr_id": "webbech01",
+   "club": "Sacramento Kings",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 19125000,
+    "2006-07": 20718750
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Martell Webster",
+   "bbr_id": "webstma02",
+   "club": "Washington Wizards",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1988160,
+    "2006-07": 2137200,
+    "2007-08": 2286360
+   },
+   "source": "2005 rookie scale No. 9 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Jiri Welsch",
+   "bbr_id": "welscji01",
+   "club": "Boston Celtics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2177114
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "David Wesley",
+   "bbr_id": "wesleda01",
+   "club": "Golden State Warriors",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 3300000
+   },
+   "source": "2005 camp signing (roster minimum)"
+  },
+  {
+   "player": "David West",
+   "bbr_id": "westda01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1334160,
+    "2006-07": 2051938
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
+  },
+  {
+   "player": "Delonte West",
+   "bbr_id": "westde01",
+   "club": "Seattle SuperSonics",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 641748
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Robert Whaley",
+   "bbr_id": "whalero01",
+   "club": "Cleveland Cavaliers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Rodney White",
+   "bbr_id": "whitero02",
+   "club": "Denver Nuggets",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1008074,
+    "2006-07": 1120082,
+    "2007-08": 1232091,
+    "2008-09": 1344099
+   },
+   "source": "league contract ledger 2004-05 (new)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Chris Wilcox",
+   "bbr_id": "wilcoch01",
+   "club": "Los Angeles Clippers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2812239
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Damien Wilkins",
+   "bbr_id": "wilkida02",
+   "club": "Los Angeles Lakers",
+   "route": "qualifying_offer",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 816748
+   },
+   "source": "2005 qualifying offer accepted"
+  },
+  {
+   "player": "Mike Wilks",
+   "bbr_id": "wilksmi01",
+   "club": "Miami Heat",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 745248
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Aaron Williams",
+   "bbr_id": "williaa01",
+   "club": "Charlotte Bobcats",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1138500
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Alvin Williams",
+   "bbr_id": "willial02",
+   "club": "Chicago Bulls",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 1029873
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Corliss Williamson",
+   "bbr_id": "willico02",
+   "club": "Chicago Bulls",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6000000,
+    "2006-07": 6500000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Deron Williams",
+   "bbr_id": "willide01",
+   "club": "New York Knicks",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 2586120,
+    "2006-07": 2780160,
+    "2007-08": 2974080
+   },
+   "source": "2005 rookie scale No. 6 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Jason Williams",
+   "bbr_id": "willija02",
+   "club": "Memphis Grizzlies",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 7562500,
+    "2006-07": 8250000,
+    "2007-08": 8937500
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Jerome Williams",
+   "bbr_id": "willije01",
+   "club": "Detroit Pistons",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 6000000,
+    "2006-07": 6250000,
+    "2007-08": 6500000
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "options": {
+    "2007-08": "player_option"
+   }
+  },
+  {
+   "player": "Lou Williams",
+   "bbr_id": "willilo02",
+   "club": "Los Angeles Lakers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Mo Williams",
+   "bbr_id": "willima01",
+   "club": "Cleveland Cavaliers",
+   "route": "mid_level",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 5000000,
+    "2006-07": 5400000,
+    "2007-08": 5800000,
+    "2008-09": 6200000,
+    "2009-10": 6600000
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Marvin Williams",
+   "bbr_id": "willima02",
+   "club": "Orlando Magic",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 4340520,
+    "2006-07": 4665960,
+    "2007-08": 4991520
+   },
+   "source": "2005 rookie scale No. 1 at 120%; traded 2005-08-26",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Qyntel Woods",
+   "bbr_id": "woodsqy01",
+   "club": "Los Angeles Lakers",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1795757
+   },
+   "source": "league contract ledger 2004-05 (existing)",
+   "rookie_scale": true
+  },
+  {
+   "player": "Antoine Wright",
+   "bbr_id": "wrighan01",
+   "club": "Los Angeles Clippers",
+   "route": "rookie_scale",
+   "kind": "rookie_scale",
+   "schedule": {
+    "2005-06": 1888680,
+    "2006-07": 2030280,
+    "2007-08": 2172000
+   },
+   "source": "2005 rookie scale No. 10 at 120%",
+   "team_option": "2008-09",
+   "rookie_scale": true,
+   "options": {
+    "2007-08": "team_option",
+    "2008-09": "team_option"
+   }
+  },
+  {
+   "player": "Bracey Wright",
+   "bbr_id": "wrighbr02",
+   "club": "Utah Jazz",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  },
+  {
+   "player": "Dorell Wright",
+   "bbr_id": "wrighdo01",
+   "club": "Utah Jazz",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 1052040,
+    "2006-07": 1125480
+   },
+   "source": "Miami contract_schedules.json; traded 2005-08-05",
+   "rookie_scale": true
+  },
+  {
+   "player": "Lorenzen Wright",
+   "bbr_id": "wrighlo02",
+   "club": "Boston Celtics",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 7700000
+   },
+   "source": "league contract ledger 2004-05 (existing)"
+  },
+  {
+   "player": "Derrick Zimmerman",
+   "bbr_id": "zimmede01",
+   "club": "Indiana Pacers",
+   "route": "minimum",
+   "kind": "new",
+   "schedule": {
+    "2005-06": 398762
+   },
+   "source": "2005 simulated free agency"
+  }
+ ]
+}

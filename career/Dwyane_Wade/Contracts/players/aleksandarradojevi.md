@@ -2,9 +2,9 @@
 
 # Contract | Aleksandar Radojević
 
-Known through: 2005-09-25. [Open interactive contract](aleksandarradojevi.html#contract) · [Contract history](aleksandarradojevi.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](aleksandarradojevi.html#contract) · [Contract history](aleksandarradojevi.html#contract-history)
 
-Aleksandar Radojević: under contract. Evidence cutoff: 2005-09-25.
+Aleksandar Radojević: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Aleksandar Radojević |
-| Club / rights baseline | Toronto Raptors |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

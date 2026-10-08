@@ -4,11 +4,11 @@
 
 ![Chris Bosh career overview](assets/career_overview.svg)
 
-Career date: **2005-09-25** · Toronto Raptors · #4 · PF · age 21
+Career date: **2005-10-01** · Toronto Raptors · #4 · PF · age 21
 
 A real player the user follows, not one the user controls: his club decides his moves and the engine plays his games. Every number below comes from closed simulated games and the league's recorded award decisions.
 
-[Development profile (user-supplied)](Development_Profile_2004-10-01.md) · [League card](../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md) · [Career milestones](career_milestones.md) · Seasons: [2003-04](2003-04/README.md) · [2004-05](2004-05/README.md)
+[Development profile (user-supplied)](Development_Profile_2004-10-01.md) · [League card](../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md) · [Career milestones](career_milestones.md) · Seasons: [2003-04](2003-04/README.md) · [2004-05](2004-05/README.md) · [2005-06](2005-06/README.md)
 
 ## Identity
 
@@ -29,6 +29,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [2003-04](2003-04/README.md) | 19 | Toronto Raptors | 75/75 | 35.7 | 13.9 | 7.9 | 1.4 | 1.0 | 1.4 | 47.7 | 42.2 | 71.2 | 53.0 | 42-40 · lost conference semifinals |
 | [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 81/81 | 39.2 | 17.8 | 9.3 | 2.8 | 1.0 | 1.4 | 50.2 | 41.8 | 83.3 | 57.1 | 59-23 · lost finals |
+| [2005-06](2005-06/README.md) | 21 | Toronto Raptors | 0 | — | — | — | — | — | — | — | — | — | — | no games yet |
 
 ## Playoffs
 

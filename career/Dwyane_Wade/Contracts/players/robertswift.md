@@ -2,9 +2,9 @@
 
 # Contract | Robert Swift
 
-Known through: 2005-09-25. [Open interactive contract](robertswift.html#contract) · [Contract history](robertswift.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](robertswift.html#contract) · [Contract history](robertswift.html#contract-history)
 
-Robert Swift: under contract. Evidence cutoff: 2005-09-25.
+Robert Swift: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Robert Swift |
-| Club / rights baseline | New Orleans Hornets |
+| Club / rights baseline | New Orleans/Oklahoma City Hornets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

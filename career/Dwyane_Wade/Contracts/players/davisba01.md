@@ -2,9 +2,9 @@
 
 # Contract | Baron Davis
 
-Known through: 2005-09-25. [Open interactive contract](davisba01.html#contract) · [Contract history](davisba01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](davisba01.html#contract) · [Contract history](davisba01.html#contract-history)
 
-Baron Davis: under contract. Evidence cutoff: 2005-09-25.
+Baron Davis: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -132,7 +132,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Baron Davis |
-| Club / rights baseline | New Orleans Hornets |
+| Club / rights baseline | New Orleans/Oklahoma City Hornets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

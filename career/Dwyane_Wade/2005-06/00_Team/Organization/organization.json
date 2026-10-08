@@ -1,0 +1,40 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2003-06-26",
+ "team": "Miami Heat",
+ "scope": "basketball operations only",
+ "people": [
+  {
+   "name": "Micky Arison",
+   "role": "Managing General Partner",
+   "file": "Micky_Arison.md"
+  },
+  {
+   "name": "Pat Riley",
+   "role": "President",
+   "file": "Pat_Riley.md"
+  },
+  {
+   "name": "Erik Spoelstra",
+   "role": "Head Coach",
+   "file": "Erik_Spoelstra.md"
+  },
+  {
+   "name": "Randy Pfund",
+   "role": "President and General Manager, Basketball Operations",
+   "file": "Randy_Pfund.md"
+  },
+  {
+   "name": "Andy Elisburg",
+   "role": "Senior Vice President, Basketball Operations",
+   "file": "Andy_Elisburg.md"
+  },
+  {
+   "name": "Chet Kammerer",
+   "role": "Director of Player Personnel",
+   "file": "Chet_Kammerer.md"
+  }
+ ],
+ "strict_reporting_tree": false
+}

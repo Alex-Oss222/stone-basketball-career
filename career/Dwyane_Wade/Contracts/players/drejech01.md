@@ -2,9 +2,9 @@
 
 # Contract | Christian Drejer
 
-Known through: 2005-09-25. [Open interactive contract](drejech01.html#contract) · [Contract history](drejech01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](drejech01.html#contract) · [Contract history](drejech01.html#contract-history)
 
-Christian Drejer: rights released. Evidence cutoff: 2005-09-25.
+Christian Drejer: rights released. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 

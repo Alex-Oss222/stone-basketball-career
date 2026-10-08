@@ -2,9 +2,9 @@
 
 # Contract | Jason Hart
 
-Known through: 2005-09-25. [Open interactive contract](hartja01.html#contract) · [Contract history](hartja01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](hartja01.html#contract) · [Contract history](hartja01.html#contract-history)
 
-Jason Hart: No verified contract record. Evidence cutoff: 2005-09-25.
+Jason Hart: No verified contract record. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jason Hart |
-| Club / rights baseline | Detroit Pistons |
+| Club / rights baseline | Free agent |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

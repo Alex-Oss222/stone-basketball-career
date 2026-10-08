@@ -2,9 +2,9 @@
 
 # Contract | David West
 
-Known through: 2005-09-25. [Open interactive contract](westda01.html#contract) · [Contract history](westda01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](westda01.html#contract) · [Contract history](westda01.html#contract-history)
 
-David West: No verified contract record. Evidence cutoff: 2005-09-25.
+David West: No verified contract record. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | David West |
-| Club / rights baseline | New Orleans Hornets |
+| Club / rights baseline | New Orleans/Oklahoma City Hornets |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

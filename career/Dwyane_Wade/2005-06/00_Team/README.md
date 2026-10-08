@@ -1,0 +1,19 @@
+# Miami Heat team state
+
+<!-- career-desk:start -->
+
+**Current live player pages:** [Trade update](../../Milestones/trade_update.md) · [Calendar](../../Milestones/calendar.md) · [Full career desk](../../Milestones/README.md) · [Interactive view](../../Milestones/index.html)
+
+<!-- career-desk:end -->
+
+<!-- team-status:start -->
+
+**Status on 2005-10-01** (generated from dated records): Miami 0-0, 8th in the East ([standings](../../../../career/Dwyane_Wade/Stats_and_Awards/League/2005-06/Standings.md)). 15 players under contract, 0 on the injured list. Head coach Erik Spoelstra; the staff rotation in force and the register are in [Team](Team/README.md).
+
+<!-- team-status:end -->
+
+This area is AI/GM-owned.
+
+- [Organization](Organization/README.md): basketball decision makers from ownership through the head coach and personnel office.
+- [Team](Team/README.md): roster, working depth chart and player cards.
+- [Finances](Finances/README.md): contract-control facts and cap-room state known at this date.

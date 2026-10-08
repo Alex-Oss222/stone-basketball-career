@@ -2,9 +2,9 @@
 
 # Contract | Marcus Banks
 
-Known through: 2005-09-25. [Open interactive contract](banksma01.html#contract) · [Contract history](banksma01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](banksma01.html#contract) · [Contract history](banksma01.html#contract-history)
 
-Marcus Banks: No verified contract record. Evidence cutoff: 2005-09-25.
+Marcus Banks: No verified contract record. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Marcus Banks |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Golden State Warriors |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

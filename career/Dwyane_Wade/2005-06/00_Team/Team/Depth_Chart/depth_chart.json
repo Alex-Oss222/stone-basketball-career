@@ -1,0 +1,99 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2005-10-01",
+ "team": "Miami Heat",
+ "status": "carried_over",
+ "game_ready": false,
+ "basis": "2004-05 closing order (career/Dwyane_Wade/2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/depth_chart.json) for the players who stay; training camp decides the new order.",
+ "positions": {
+  "PG": [
+   "Mike James"
+  ],
+  "SG": [
+   "Dwyane Wade"
+  ],
+  "SF": [
+   "Matt Harpring",
+   "Caron Butler"
+  ],
+  "PF": [
+   "Donyell Marshall",
+   "Mehmet Okur"
+  ],
+  "C": [
+   "Brian Grant"
+  ]
+ },
+ "unassigned_draft_rights": [
+  {
+   "name": "Uroš Slokar",
+   "positions": [
+    "F"
+   ],
+   "status": "draft_rights_unsigned"
+  }
+ ],
+ "unassigned_arrivals": [
+  {
+   "name": "Eddie Jones",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "status": "under_contract",
+   "date": "2005-10-01"
+  },
+  {
+   "name": "Anthony Johnson",
+   "positions": [
+    "PG"
+   ],
+   "status": "under_contract",
+   "date": "2005-10-01"
+  },
+  {
+   "name": "DeShawn Stevenson",
+   "positions": [
+    "SG"
+   ],
+   "status": "under_contract",
+   "date": "2005-10-01"
+  },
+  {
+   "name": "Sebastian Telfair",
+   "positions": [
+    "SF"
+   ],
+   "status": "under_contract",
+   "date": "2005-10-01"
+  },
+  {
+   "name": "Eddie Gill",
+   "positions": [
+    "PG"
+   ],
+   "status": "under_contract",
+   "date": "2005-10-01"
+  },
+  {
+   "name": "Mike Wilks",
+   "positions": [
+    "PG"
+   ],
+   "status": "under_contract",
+   "date": "2005-10-01"
+  },
+  {
+   "name": "Matt Carroll",
+   "positions": [
+    "SG"
+   ],
+   "status": "under_contract",
+   "date": "2005-10-01"
+  }
+ ],
+ "unavailable": [],
+ "departed": [],
+ "corrections": []
+}

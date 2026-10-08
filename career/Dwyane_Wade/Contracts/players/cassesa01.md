@@ -2,9 +2,9 @@
 
 # Contract | Sam Cassell
 
-Known through: 2005-09-25. [Open interactive contract](cassesa01.html#contract) · [Contract history](cassesa01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](cassesa01.html#contract) · [Contract history](cassesa01.html#contract-history)
 
-Sam Cassell: under contract unverified. Evidence cutoff: 2005-09-25.
+Sam Cassell: under contract unverified. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Sam Cassell |
-| Club / rights baseline | Minnesota Timberwolves |
+| Club / rights baseline | Free agent |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

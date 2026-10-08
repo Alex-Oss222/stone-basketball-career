@@ -2,9 +2,9 @@
 
 # Contract | Allan Houston
 
-Known through: 2005-09-25. [Open interactive contract](houstal01.html#contract) · [Contract history](houstal01.html#contract-history)
+Known through: 2005-10-01. [Open interactive contract](houstal01.html#contract) · [Contract history](houstal01.html#contract-history)
 
-Allan Houston: under contract. Evidence cutoff: 2005-09-25.
+Allan Houston: under contract. Evidence cutoff: 2005-10-01.
 
 ## Current contract
 
@@ -122,7 +122,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Allan Houston |
-| Club / rights baseline | Denver Nuggets |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
