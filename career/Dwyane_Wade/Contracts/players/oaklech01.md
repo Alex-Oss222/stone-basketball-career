@@ -2,9 +2,9 @@
 
 # Contract | Charles Oakley
 
-Known through: 2005-10-23. [Open interactive contract](oaklech01.html#contract) · [Contract history](oaklech01.html#contract-history)
+Known through: 2005-10-24. [Open interactive contract](oaklech01.html#contract) · [Contract history](oaklech01.html#contract-history)
 
-Charles Oakley: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-10-23.
+Charles Oakley: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-10-24.
 
 ## Current contract
 

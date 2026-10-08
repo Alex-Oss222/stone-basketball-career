@@ -2,9 +2,9 @@
 
 # Contract | Theo Ratliff
 
-Known through: 2005-10-23. [Open interactive contract](ratlith01.html#contract) · [Contract history](ratlith01.html#contract-history)
+Known through: 2005-10-24. [Open interactive contract](ratlith01.html#contract) · [Contract history](ratlith01.html#contract-history)
 
-Theo Ratliff: camp contract. Evidence cutoff: 2005-10-23.
+Theo Ratliff: camp contract. Evidence cutoff: 2005-10-24.
 
 ## Current contract
 

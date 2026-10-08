@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 25 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-10-23 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-10-24 
 
 **Contract/control:** Existing contract: 4 season(s) from 2005-06, $14,138,096 scheduled ($3,110,381 in 2005-06). (register, 2005-10-04) [Finance record](../../Finances/cap_sheet.md).
 

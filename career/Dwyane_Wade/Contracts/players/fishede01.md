@@ -2,9 +2,9 @@
 
 # Contract | Derek Fisher
 
-Known through: 2005-10-23. [Open interactive contract](fishede01.html#contract) · [Contract history](fishede01.html#contract-history)
+Known through: 2005-10-24. [Open interactive contract](fishede01.html#contract) · [Contract history](fishede01.html#contract-history)
 
-Derek Fisher: under contract. Evidence cutoff: 2005-10-23.
+Derek Fisher: under contract. Evidence cutoff: 2005-10-24.
 
 ## Current contract
 

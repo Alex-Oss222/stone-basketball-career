@@ -2,9 +2,9 @@
 
 # Contract | Terence Morris
 
-Known through: 2005-10-23. [Open interactive contract](morrite01.html#contract) · [Contract history](morrite01.html#contract-history)
+Known through: 2005-10-24. [Open interactive contract](morrite01.html#contract) · [Contract history](morrite01.html#contract-history)
 
-Terence Morris: under contract. Evidence cutoff: 2005-10-23.
+Terence Morris: under contract. Evidence cutoff: 2005-10-24.
 
 ## Current contract
 

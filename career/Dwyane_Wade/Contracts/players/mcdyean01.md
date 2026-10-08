@@ -2,9 +2,9 @@
 
 # Contract | Antonio McDyess
 
-Known through: 2005-10-23. [Open interactive contract](mcdyean01.html#contract) · [Contract history](mcdyean01.html#contract-history)
+Known through: 2005-10-24. [Open interactive contract](mcdyean01.html#contract) · [Contract history](mcdyean01.html#contract-history)
 
-Antonio McDyess: under contract. Evidence cutoff: 2005-10-23.
+Antonio McDyess: under contract. Evidence cutoff: 2005-10-24.
 
 ## Current contract
 
