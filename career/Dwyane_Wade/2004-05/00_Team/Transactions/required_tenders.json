@@ -4,7 +4,20 @@
  "kind": "required_tenders",
  "season": "2004-05",
  "rule": "Required Tenders and the end of draft rights by draft year (1999 CBA Art. X §3 and Art. I (vv); 2005 FAQ Q43 and Q102): see runtime/draft_rights.py.",
- "tenders": [],
+ "tenders": [
+  {
+   "player": "Uroš Slokar",
+   "bbr_id": "slokaur01",
+   "pick": 58,
+   "round": 2,
+   "draft_year": 2005,
+   "date": "2005-09-05",
+   "reconstructed": true,
+   "recorded": "2005-09-30",
+   "terms": "a one-year contract offer (at the minimum salary)",
+   "basis": "Miami's routine Required Tender to each pick it still holds unsigned on his deadline (2005 CBA, FAQ Q102): no signing and no trade of his rights by 2005-09-05 in the closed 2005 summer market record (career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json); the market lists him out of the league (no real 2005-06 role), and the rollover carries every Miami pick left unsigned as Miami's draft rights; recorded 2005-09-30 by runtime/draft_rights.record_tenders"
+  }
+ ],
  "rights_ended": [
   {
    "player": "Bernard Robinson",

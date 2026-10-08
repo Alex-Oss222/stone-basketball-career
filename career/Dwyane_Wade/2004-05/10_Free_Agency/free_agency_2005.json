@@ -1,0 +1,8043 @@
+{
+ "schema_version": 1,
+ "kind": "free_agency",
+ "season": "2005-06",
+ "from": "2005-06-30",
+ "to": "2005-09-30",
+ "rule": "Real 2004 signings, options and qualifying offers are never consulted: a player's 2004-05 club comes from this market.\nExisting 2004-05 contracts (`runtime/contract_terms.py`), the expansion draft and the draft are the starting book.\nEvidence is the simulated 2003-04 season (closed results) and the honors announced on or before the date.\n\nCalendar (`library/2004/league/nba_2004_offseason_calendar.json`): options and qualifying offers on June 30; the\nmarket opens July 1; agreements made during the moratorium are signed July 14, when the $43,870,000 cap (Charlotte\n$29,250,000) becomes known; before then clubs plan on the 2003-04 cap. Rounds run weekly to September 29; on\nSeptember 30 a club still short of thirteen signs the best unsigned players (at what it can still pay, from the\nminimum up to its room or mid-level), each with the club that needs him most while it has fewer than thirteen; the rest stay in the unsigned pool, which the in-season market\ndraws on (career continuity). Players without a real 2004-05 role leave the league as history has them.\n\nClub decisions are judgement rules with no chance element; a player's answers are engine draws:\n- Value: NBA efficiency per game in the simulated 2003-04 season, shrunk toward replacement by minutes, times the age\n  factor (`runtime/valuation.py`). Price: the salary at the same rank among existing 2004-05 contracts (veterans\n  with 500 or more simulated minutes) as his value, times the honor factor, inside the minimum and maximum; a player\n  with fewer than 250 simulated minutes is priced at his minimum.\n- June 30: a club exercises a team option when the market price is at least TEAM_OPTION_SHARE of the option salary.\n  A player or early-termination option is the player's draw: P(opt out) rises with his price over the option salary.\n  A club tenders a qualifying offer (the larger of 125% of the prior salary and the minimum plus $175,000) when his\n  price is at least the offer and 1.5 times his minimum; the player is then restricted. When Wade has asked Miami to\n  keep a player the rule would let go, the tender is an engine draw at his standing weight x (1 - the rule's margin). An offer sheet is matched\n  when the holder values him at the offer (price x need) and can pay it.\n- First-round picks sign on July 1 at 120% of the 2004 rookie scale (era practice). Second-round and undrafted\n  prospects enter the pool at the minimum; their drafting club holds their rights like a restricted player.\n- Each round a club ranks the unsigned players it can pay (Bird rights for its own free agents, cap room, the\n  mid-level exception once, the minimum) by value x positional need and offers the best one a contract at the\n  smaller of his ask and its own price, for the years he wants; it adds minimum offers while it is short of\n  ROSTER_TARGET. A club stops paying above the minimum at the payroll ceiling (the tax line; contenders may go\n  CONTENDER_TAX_ROOM over it with Bird rights).\n- Every free agent's priority is drawn once on July 1 (money, fame, loyalty or winning, with the 2003 odds by age;\n  `runtime/market.py`). A player with offers answers in one engine draw: accept one club or wait. Each club's share\n  comes from the 2003 factor model (`runtime/player_utility.py`): money and security against his ask and the years\n  he wants, net income by state tax, his role (minutes by rank in his position group), contention (projected wins),\n  loyalty to the club holding his rights and market size, weighted by his career stage and tilted by his drawn\n  priority; a prime starter offered a bench role walks from that club. His willingness to accept at all rises as\n  the ask meets the best offer and as the summer passes.\n- From July 14 the clubs trade, one search a round: one or two contracted players for one, both clubs gaining on\n  their own objective (stance from the simulated record: contenders value the present, rebuilders youth and cash;\n  positional fit; salary against worth; a status-quo premium on players they hold), legal under the 1999 salary\n  rule, each deal an engine draw on both clubs' acceptance (`runtime/trades.acceptance`). Players signed this summer\n  are not tradable; a first-round pick is after 30 days. Miami's trades for a star wait for Wade's consultation. An offer sheet to a restricted player is matched when his club values him at the offer and can pay.\n- Miami is one of the thirty clubs, run by the same AI/GM rules. Wade's free-agent requests (`10_Free_Agency/\n  wade_requests.json`) move a requested player up Miami's list by his standing weight and let Miami pay up to 110% of\n  its own valuation, and a requested minimum player may take a roster spot up to the fifteenth; the front office still\n  decides and the player still answers. Once Wade's standing is `franchise`, Miami asks him before offering to a star\n  (`runtime/consultations.py`); the market waits for his answer.\nThe record is `10_Free_Agency/free_agency_2004.json`, rebuilt by replaying every round from its recorded draws.",
+ "pricing_fit": {
+  "method": "quantile match of value to salary over existing 2005-06 contracts",
+  "n": 94
+ },
+ "events": [
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Andre Barrett",
+   "bbr_id": "barrean01",
+   "club": "Atlanta Hawks",
+   "amount": 816748,
+   "price": 2578517
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Andrés Nocioni",
+   "bbr_id": "nocioan01",
+   "club": "San Antonio Spurs",
+   "amount": 816748,
+   "price": 5772820
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Billy Thomas",
+   "bbr_id": "thomabi01",
+   "club": "Los Angeles Lakers",
+   "amount": 816748,
+   "price": 2538020
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Bostjan Nachbar",
+   "bbr_id": "nachbbo01",
+   "club": "Utah Jazz",
+   "amount": 1867350,
+   "price": 3354897
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Brendan Haywood",
+   "bbr_id": "haywobr01",
+   "club": "Washington Wizards",
+   "amount": 2169131,
+   "price": 8508976
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Carlos Boozer",
+   "bbr_id": "boozeca01",
+   "club": "Cleveland Cavaliers",
+   "amount": 972375,
+   "price": 12000000
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Carlos Delfino",
+   "bbr_id": "delfica01",
+   "club": "Dallas Mavericks",
+   "amount": 816748,
+   "price": 2590281
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "D.J. Mbenga",
+   "bbr_id": "mbengdj01",
+   "club": "San Antonio Spurs",
+   "amount": 816748,
+   "price": 2589882
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Damien Wilkins",
+   "bbr_id": "wilkida02",
+   "club": "Los Angeles Lakers",
+   "amount": 816748,
+   "price": 5412520
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Dan Gadzuric",
+   "bbr_id": "gadzuda01",
+   "club": "Milwaukee Bucks",
+   "amount": 920248,
+   "price": 8677591
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Darius Songaila",
+   "bbr_id": "songada01",
+   "club": "Sacramento Kings",
+   "amount": 993808,
+   "price": 4038976
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Devin Brown",
+   "bbr_id": "brownde02",
+   "club": "Boston Celtics",
+   "amount": 920248,
+   "price": 4632900
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Eddie Griffin",
+   "bbr_id": "griffed01",
+   "club": "Houston Rockets",
+   "amount": 3671506,
+   "price": 6000000
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Eddy Curry",
+   "bbr_id": "curryed01",
+   "club": "Chicago Bulls",
+   "amount": 4870502,
+   "price": 8530965
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Francisco Elson",
+   "bbr_id": "elsonfr01",
+   "club": "Denver Nuggets",
+   "amount": 894373,
+   "price": 3400183
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Gerald Wallace",
+   "bbr_id": "wallage01",
+   "club": "Sacramento Kings",
+   "amount": 2065566,
+   "price": 11246252
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Jackie Butler",
+   "bbr_id": "butleja01",
+   "club": "Philadelphia 76ers",
+   "amount": 816748,
+   "price": 2615328
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Jackson Vroman",
+   "bbr_id": "vromaja01",
+   "club": "Milwaukee Bucks",
+   "amount": 816748,
+   "price": 5208808
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Jamaal Tinsley",
+   "bbr_id": "tinslja01",
+   "club": "Indiana Pacers",
+   "amount": 1942908,
+   "price": 12000000
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Jamal Sampson",
+   "bbr_id": "sampsja01",
+   "club": "Houston Rockets",
+   "amount": 920248,
+   "price": 2644572
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "James Jones",
+   "bbr_id": "jonesja02",
+   "club": "Orlando Magic",
+   "amount": 894373,
+   "price": 3681098
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Jannero Pargo",
+   "bbr_id": "pargoja01",
+   "club": "Charlotte Bobcats",
+   "amount": 920248,
+   "price": 5308243
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Jason Collins",
+   "bbr_id": "collija04",
+   "club": "New Jersey Nets",
+   "amount": 2359830,
+   "price": 5925592
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Jason Kapono",
+   "bbr_id": "kaponja01",
+   "club": "Charlotte Bobcats",
+   "amount": 894373,
+   "price": 6005406
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Jason Richardson",
+   "bbr_id": "richaja01",
+   "club": "Golden State Warriors",
+   "amount": 4417522,
+   "price": 12000000
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Joe Johnson",
+   "bbr_id": "johnsjo02",
+   "club": "Phoenix Suns",
+   "amount": 2948692,
+   "price": 10881478
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Keith Bogans",
+   "bbr_id": "boganke01",
+   "club": "Orlando Magic",
+   "amount": 894373,
+   "price": 6000000
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Keith McLeod",
+   "bbr_id": "mcleoke01",
+   "club": "Philadelphia 76ers",
+   "amount": 894373,
+   "price": 5717628
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Kevin Martin",
+   "bbr_id": "martike02",
+   "club": "New York Knicks",
+   "amount": 816748,
+   "price": 2620494
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Kyle Korver",
+   "bbr_id": "korveky01",
+   "club": "New Orleans Hornets",
+   "amount": 894373,
+   "price": 9759487
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Luke Walton",
+   "bbr_id": "waltolu01",
+   "club": "Los Angeles Lakers",
+   "amount": 894373,
+   "price": 4239369
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Maciej Lampe",
+   "bbr_id": "lampema01",
+   "club": "Atlanta Hawks",
+   "amount": 1125000,
+   "price": 2622898
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Marko Jaric",
+   "bbr_id": "jaricma01",
+   "club": "Los Angeles Clippers",
+   "amount": 2625000,
+   "price": 8514380
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Marquis Daniels",
+   "bbr_id": "daniema01",
+   "club": "Dallas Mavericks",
+   "amount": 993808,
+   "price": 5683049
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Matt Barnes",
+   "bbr_id": "barnema02",
+   "club": "Memphis Grizzlies",
+   "amount": 894373,
+   "price": 2659585
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Matt Bonner",
+   "bbr_id": "bonnema01",
+   "club": "Toronto Raptors",
+   "amount": 816748,
+   "price": 5729849
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Melvin Ely",
+   "bbr_id": "elyme01",
+   "club": "Los Angeles Clippers",
+   "amount": 2178000,
+   "price": 3874848
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Mo Williams",
+   "bbr_id": "willima01",
+   "club": "San Antonio Spurs",
+   "amount": 894373,
+   "price": 6914321
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Nenad Krstić",
+   "bbr_id": "krstine01",
+   "club": "New York Knicks",
+   "amount": 816748,
+   "price": 8418582
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Nick Collison",
+   "bbr_id": "collini01",
+   "club": "Seattle SuperSonics",
+   "amount": 2462100,
+   "price": 5489203
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Pape Sow",
+   "bbr_id": "sowpa01",
+   "club": "Milwaukee Bucks",
+   "amount": 816748,
+   "price": 2534983
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Pau Gasol",
+   "bbr_id": "gasolpa01",
+   "club": "Memphis Grizzlies",
+   "amount": 4137064,
+   "price": 12000000
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Primož Brezec",
+   "bbr_id": "brezepr01",
+   "club": "Indiana Pacers",
+   "amount": 1942908,
+   "price": 9899648
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Reggie Evans",
+   "bbr_id": "evansre01",
+   "club": "Seattle SuperSonics",
+   "amount": 1050000,
+   "price": 6000000
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Richard Jefferson",
+   "bbr_id": "jefferi01",
+   "club": "New Jersey Nets",
+   "amount": 2833492,
+   "price": 9968870
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Ronald Dupree",
+   "bbr_id": "duprero01",
+   "club": "Chicago Bulls",
+   "amount": 993808,
+   "price": 2656004
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Ronald Murray",
+   "bbr_id": "murraro01",
+   "club": "Seattle SuperSonics",
+   "amount": 920248,
+   "price": 3677361
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Samuel Dalembert",
+   "bbr_id": "dalemsa01",
+   "club": "Philadelphia 76ers",
+   "amount": 1999436,
+   "price": 8525950
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Shane Battier",
+   "bbr_id": "battish01",
+   "club": "Memphis Grizzlies",
+   "amount": 4015502,
+   "price": 9096206
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Smush Parker",
+   "bbr_id": "parkesm01",
+   "club": "Indiana Pacers",
+   "amount": 1087558,
+   "price": 2546551
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Steve Blake",
+   "bbr_id": "blakest01",
+   "club": "Charlotte Bobcats",
+   "amount": 894373,
+   "price": 4058173
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Steven Hunter",
+   "bbr_id": "huntest01",
+   "club": "New Orleans Hornets",
+   "amount": 946123,
+   "price": 5672062
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Tony Allen",
+   "bbr_id": "allento01",
+   "club": "New York Knicks",
+   "amount": 816748,
+   "price": 5480994
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Tony Parker",
+   "bbr_id": "parketo01",
+   "club": "San Antonio Spurs",
+   "amount": 1931801,
+   "price": 12000000
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Trevor Ariza",
+   "bbr_id": "arizatr01",
+   "club": "Los Angeles Lakers",
+   "amount": 816748,
+   "price": 5407450
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Troy Murphy",
+   "bbr_id": "murphtr01",
+   "club": "Golden State Warriors",
+   "amount": 2789760,
+   "price": 12000000
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Tyson Chandler",
+   "bbr_id": "chandty01",
+   "club": "Chicago Bulls",
+   "amount": 6001378,
+   "price": 10375252
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Udonis Haslem",
+   "bbr_id": "hasleud01",
+   "club": "Toronto Raptors",
+   "amount": 894373,
+   "price": 6002554
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Vladimir Radmanovic",
+   "bbr_id": "radmavl01",
+   "club": "Seattle SuperSonics",
+   "amount": 2876230,
+   "price": 6003544
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Willie Green",
+   "bbr_id": "greenwi01",
+   "club": "Philadelphia 76ers",
+   "amount": 894373,
+   "price": 5456778
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Zach Randolph",
+   "bbr_id": "randoza01",
+   "club": "Portland Trail Blazers",
+   "amount": 2256408,
+   "price": 12000000
+  },
+  {
+   "date": "2005-06-30",
+   "kind": "qualifying_offer",
+   "player": "Zaza Pachulia",
+   "bbr_id": "pachuza01",
+   "club": "Orlando Magic",
+   "amount": 894373,
+   "price": 5379317
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Alex Acker",
+   "bbr_id": "ackeral01",
+   "club": "San Antonio Spurs",
+   "salary": 861360,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Andrew Bogut",
+   "bbr_id": "bogutan01",
+   "club": "Denver Nuggets",
+   "salary": 3883560,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Andrew Bynum",
+   "bbr_id": "bynuman01",
+   "club": "Seattle SuperSonics",
+   "salary": 1704480,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Antoine Wright",
+   "bbr_id": "wrighan01",
+   "club": "Los Angeles Clippers",
+   "salary": 1888680,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "C.J. Miles",
+   "bbr_id": "milescj01",
+   "club": "Minnesota Timberwolves",
+   "salary": 905640,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Channing Frye",
+   "bbr_id": "fryech01",
+   "club": "New Jersey Nets",
+   "salary": 3144240,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Charlie Villanueva",
+   "bbr_id": "villach01",
+   "club": "Memphis Grizzlies",
+   "salary": 1538400,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Chris Paul",
+   "bbr_id": "paulch01",
+   "club": "Utah Jazz",
+   "salary": 3487440,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Chris Taft",
+   "bbr_id": "taftch01",
+   "club": "Utah Jazz",
+   "salary": 874080,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Danny Granger",
+   "bbr_id": "grangda01",
+   "club": "New Orleans/Oklahoma City Hornets",
+   "salary": 2847360,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Deron Williams",
+   "bbr_id": "willide01",
+   "club": "New York Knicks",
+   "salary": 2586120,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Fran Vázquez",
+   "bbr_id": "vazqufr01",
+   "club": "Los Angeles Lakers",
+   "salary": 1318920,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Francisco García",
+   "bbr_id": "garcifr01",
+   "club": "Portland Trail Blazers",
+   "salary": 1253040,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Gerald Green",
+   "bbr_id": "greenge01",
+   "club": "Houston Rockets",
+   "salary": 2162880,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Hakim Warrick",
+   "bbr_id": "warriha01",
+   "club": "Orlando Magic",
+   "salary": 1794240,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Ike Diogu",
+   "bbr_id": "dioguik01",
+   "club": "Boston Celtics",
+   "salary": 1016400,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Jarrett Jack",
+   "bbr_id": "jackja01",
+   "club": "Sacramento Kings",
+   "salary": 1102680,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Joey Graham",
+   "bbr_id": "grahajo01",
+   "club": "Golden State Warriors",
+   "salary": 1196520,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Johan Petro",
+   "bbr_id": "petrojo01",
+   "club": "Chicago Bulls",
+   "salary": 1058640,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Julius Hodge",
+   "bbr_id": "hodgeju01",
+   "club": "Phoenix Suns",
+   "salary": 975600,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Martell Webster",
+   "bbr_id": "webstma02",
+   "club": "Washington Wizards",
+   "salary": 1988160,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Martynas Andriuškevičius",
+   "bbr_id": "andrima01",
+   "club": "Dallas Mavericks",
+   "salary": 936600,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Marvin Williams",
+   "bbr_id": "willima02",
+   "club": "Charlotte Bobcats",
+   "salary": 4340520,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Orien Greene",
+   "bbr_id": "greenor01",
+   "club": "San Antonio Spurs",
+   "salary": 879360,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Rashad McCants",
+   "bbr_id": "mccanra01",
+   "club": "Indiana Pacers",
+   "salary": 1619280,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Raymond Felton",
+   "bbr_id": "feltora01",
+   "club": "Milwaukee Bucks",
+   "salary": 2360880,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Roko Ukić",
+   "bbr_id": "ukicro01",
+   "club": "Atlanta Hawks",
+   "salary": 1148760,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Sean May",
+   "bbr_id": "mayse01",
+   "club": "Detroit Pistons",
+   "salary": 1461360,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Wayne Simien",
+   "bbr_id": "simiewa01",
+   "club": "Toronto Raptors",
+   "salary": 867720,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-07-01",
+   "kind": "rookie_scale_signing",
+   "player": "Yaroslav Korolev",
+   "bbr_id": "korolya01",
+   "club": "Denver Nuggets",
+   "salary": 1388400,
+   "years": 2,
+   "team_option": "2008-09",
+   "team_options": [
+    "2007-08",
+    "2008-09"
+   ]
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet",
+   "player": "Brandon Bass",
+   "bbr_id": "bassbr01",
+   "club": "Minnesota Timberwolves",
+   "from": "Milwaukee Bucks",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet",
+   "player": "Daniel Ewing",
+   "bbr_id": "ewingda01",
+   "club": "Minnesota Timberwolves",
+   "from": "Portland Trail Blazers",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet",
+   "player": "Jason Kapono",
+   "bbr_id": "kaponja01",
+   "club": "Houston Rockets",
+   "from": "Charlotte Bobcats",
+   "salary": 5000000,
+   "years": 5
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet",
+   "player": "Lawrence Roberts",
+   "bbr_id": "roberla01",
+   "club": "Seattle SuperSonics",
+   "from": "Minnesota Timberwolves",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet",
+   "player": "Luther Head",
+   "bbr_id": "headlu01",
+   "club": "Dallas Mavericks",
+   "from": "New York Knicks",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet",
+   "player": "Monta Ellis",
+   "bbr_id": "ellismo01",
+   "club": "Sacramento Kings",
+   "from": "Detroit Pistons",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet",
+   "player": "Robert Whaley",
+   "bbr_id": "whalero01",
+   "club": "Toronto Raptors",
+   "from": "Cleveland Cavaliers",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet",
+   "player": "Ronny Turiaf",
+   "bbr_id": "turiaro01",
+   "club": "New York Knicks",
+   "from": "Boston Celtics",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet",
+   "player": "Ryan Gomes",
+   "bbr_id": "gomesry01",
+   "club": "Houston Rockets",
+   "from": "Los Angeles Clippers",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet",
+   "player": "Travis Diener",
+   "bbr_id": "dienetr01",
+   "club": "Memphis Grizzlies",
+   "from": "San Antonio Spurs",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet",
+   "player": "Vladimir Radmanovic",
+   "bbr_id": "radmavl01",
+   "club": "Houston Rockets",
+   "from": "Seattle SuperSonics",
+   "salary": 5000000,
+   "years": 5
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet_matched",
+   "player": "Brandon Bass",
+   "bbr_id": "bassbr01",
+   "club": "Milwaukee Bucks",
+   "from": "Minnesota Timberwolves",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet_matched",
+   "player": "Daniel Ewing",
+   "bbr_id": "ewingda01",
+   "club": "Portland Trail Blazers",
+   "from": "Minnesota Timberwolves",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet_matched",
+   "player": "Jason Kapono",
+   "bbr_id": "kaponja01",
+   "club": "Charlotte Bobcats",
+   "from": "Houston Rockets",
+   "salary": 5000000,
+   "years": 5,
+   "route": "bird"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet_matched",
+   "player": "Lawrence Roberts",
+   "bbr_id": "roberla01",
+   "club": "Minnesota Timberwolves",
+   "from": "Seattle SuperSonics",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet_matched",
+   "player": "Luther Head",
+   "bbr_id": "headlu01",
+   "club": "New York Knicks",
+   "from": "Dallas Mavericks",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet_matched",
+   "player": "Monta Ellis",
+   "bbr_id": "ellismo01",
+   "club": "Detroit Pistons",
+   "from": "Sacramento Kings",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet_matched",
+   "player": "Robert Whaley",
+   "bbr_id": "whalero01",
+   "club": "Cleveland Cavaliers",
+   "from": "Toronto Raptors",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet_matched",
+   "player": "Ronny Turiaf",
+   "bbr_id": "turiaro01",
+   "club": "Boston Celtics",
+   "from": "New York Knicks",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet_matched",
+   "player": "Ryan Gomes",
+   "bbr_id": "gomesry01",
+   "club": "Los Angeles Clippers",
+   "from": "Houston Rockets",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet_matched",
+   "player": "Travis Diener",
+   "bbr_id": "dienetr01",
+   "club": "San Antonio Spurs",
+   "from": "Memphis Grizzlies",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "offer_sheet_matched",
+   "player": "Vladimir Radmanovic",
+   "bbr_id": "radmavl01",
+   "club": "Seattle SuperSonics",
+   "from": "Houston Rockets",
+   "salary": 5000000,
+   "years": 5,
+   "route": "bird"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Allen Iverson",
+   "bbr_id": "iversal01",
+   "club": "Philadelphia 76ers",
+   "from": "Philadelphia 76ers",
+   "salary": 15054322,
+   "years": 3,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Andrei Kirilenko",
+   "bbr_id": "kirilan01",
+   "club": "Utah Jazz",
+   "from": "Utah Jazz",
+   "salary": 11418027,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Bobby Simmons",
+   "bbr_id": "simmobo01",
+   "club": "Los Angeles Clippers",
+   "from": "Los Angeles Clippers",
+   "salary": 11145893,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Brendan Haywood",
+   "bbr_id": "haywobr01",
+   "club": "Washington Wizards",
+   "from": "Washington Wizards",
+   "salary": 8508976,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-29"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Carlos Boozer",
+   "bbr_id": "boozeca01",
+   "club": "Cleveland Cavaliers",
+   "from": "Cleveland Cavaliers",
+   "salary": 10899929,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Damon Stoudamire",
+   "bbr_id": "stoudda01",
+   "club": "Portland Trail Blazers",
+   "from": "Portland Trail Blazers",
+   "salary": 9324133,
+   "years": 3,
+   "route": "bird",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Eddy Curry",
+   "bbr_id": "curryed01",
+   "club": "Chicago Bulls",
+   "from": "Chicago Bulls",
+   "salary": 8530965,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-01"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Gerald Wallace",
+   "bbr_id": "wallage01",
+   "club": "Sacramento Kings",
+   "from": "Sacramento Kings",
+   "salary": 10121627,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Jamaal Tinsley",
+   "bbr_id": "tinslja01",
+   "club": "Indiana Pacers",
+   "from": "Indiana Pacers",
+   "salary": 12000000,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-07-01"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Jason Richardson",
+   "bbr_id": "richaja01",
+   "club": "Golden State Warriors",
+   "from": "Golden State Warriors",
+   "salary": 11352718,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Jerry Stackhouse",
+   "bbr_id": "stackje01",
+   "club": "Minnesota Timberwolves",
+   "from": "Minnesota Timberwolves",
+   "salary": 7381562,
+   "years": 3,
+   "route": "bird",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Joe Johnson",
+   "bbr_id": "johnsjo02",
+   "club": "Phoenix Suns",
+   "from": "Phoenix Suns",
+   "salary": 10634212,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-29"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Kevin Garnett",
+   "bbr_id": "garneke01",
+   "club": "Minnesota Timberwolves",
+   "from": "Minnesota Timberwolves",
+   "salary": 16800000,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Kobe Bryant",
+   "bbr_id": "bryanko01",
+   "club": "Los Angeles Lakers",
+   "from": "Los Angeles Lakers",
+   "salary": 14726098,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-01"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Kurt Thomas",
+   "bbr_id": "thomaku01",
+   "club": "San Antonio Spurs",
+   "from": "San Antonio Spurs",
+   "salary": 10071076,
+   "years": 3,
+   "route": "bird",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Lamar Odom",
+   "bbr_id": "odomla01",
+   "club": "Los Angeles Clippers",
+   "from": "Los Angeles Clippers",
+   "salary": 12000000,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Larry Hughes",
+   "bbr_id": "hughela01",
+   "club": "Washington Wizards",
+   "from": "Washington Wizards",
+   "salary": 14328137,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Michael Redd",
+   "bbr_id": "reddmi01",
+   "club": "Milwaukee Bucks",
+   "from": "Milwaukee Bucks",
+   "salary": 11641552,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Pau Gasol",
+   "bbr_id": "gasolpa01",
+   "club": "Memphis Grizzlies",
+   "from": "Memphis Grizzlies",
+   "salary": 11778425,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Rashard Lewis",
+   "bbr_id": "lewisra02",
+   "club": "Seattle SuperSonics",
+   "from": "Seattle SuperSonics",
+   "salary": 13843156,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Ray Allen",
+   "bbr_id": "allenra02",
+   "club": "Seattle SuperSonics",
+   "from": "Seattle SuperSonics",
+   "salary": 13700000,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-07-01"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Shareef Abdur-Rahim",
+   "bbr_id": "abdursh01",
+   "club": "Atlanta Hawks",
+   "from": "Atlanta Hawks",
+   "salary": 15356250,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Stephen Jackson",
+   "bbr_id": "jacksst02",
+   "club": "Atlanta Hawks",
+   "from": "Atlanta Hawks",
+   "salary": 11452168,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Stephon Marbury",
+   "bbr_id": "marbust01",
+   "club": "Phoenix Suns",
+   "from": "Phoenix Suns",
+   "salary": 15356250,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Tony Parker",
+   "bbr_id": "parketo01",
+   "club": "San Antonio Spurs",
+   "from": "San Antonio Spurs",
+   "salary": 11896284,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-01"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Tyson Chandler",
+   "bbr_id": "chandty01",
+   "club": "Chicago Bulls",
+   "from": "Chicago Bulls",
+   "salary": 10140269,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "re_sign",
+   "player": "Zydrunas Ilgauskas",
+   "bbr_id": "ilgauzy01",
+   "club": "Philadelphia 76ers",
+   "from": "Philadelphia 76ers",
+   "salary": 14862385,
+   "years": 3,
+   "route": "bird",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Alan Anderson",
+   "bbr_id": "anderal01",
+   "club": "Los Angeles Lakers",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Alonzo Mourning",
+   "bbr_id": "mournal01",
+   "club": "Minnesota Timberwolves",
+   "from": "Seattle SuperSonics",
+   "salary": 3904482,
+   "years": 1,
+   "route": "mid_level",
+   "agreed": "2005-07-29"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Anthony Grundy",
+   "bbr_id": "grundan01",
+   "club": "Orlando Magic",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-29"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Boniface N'Dong",
+   "bbr_id": "ndongbo01",
+   "club": "Dallas Mavericks",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Charlie Bell",
+   "bbr_id": "bellch01",
+   "club": "Philadelphia 76ers",
+   "from": null,
+   "salary": 771123,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-01"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Chris Duhon",
+   "bbr_id": "duhonch01",
+   "club": "Orlando Magic",
+   "from": null,
+   "salary": 641748,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Deng Gai",
+   "bbr_id": "gaide01",
+   "club": "Portland Trail Blazers",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Derrick Zimmerman",
+   "bbr_id": "zimmede01",
+   "club": "Indiana Pacers",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Devin Green",
+   "bbr_id": "greende01",
+   "club": "New Jersey Nets",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Eddie Basden",
+   "bbr_id": "basdeed01",
+   "club": "Detroit Pistons",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Eddie Gill",
+   "bbr_id": "gilled01",
+   "club": "Miami Heat",
+   "from": null,
+   "salary": 835810,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-01"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Esteban Batista",
+   "bbr_id": "batises01",
+   "club": "Houston Rockets",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Fabricio Oberto",
+   "bbr_id": "obertfa01",
+   "club": "Orlando Magic",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-01"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Ha Seung-Jin",
+   "bbr_id": "seungha01",
+   "club": "Chicago Bulls",
+   "from": "Seattle SuperSonics",
+   "salary": 641748,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Jim Jackson",
+   "bbr_id": "jacksji01",
+   "club": "Los Angeles Lakers",
+   "from": "Houston Rockets",
+   "salary": 4601302,
+   "years": 2,
+   "route": "mid_level",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "John Edwards",
+   "bbr_id": "edwarjo01",
+   "club": "Atlanta Hawks",
+   "from": "Miami Heat",
+   "salary": 641748,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "John Lucas III",
+   "bbr_id": "lucasjo02",
+   "club": "New Jersey Nets",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-29"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "John Thomas",
+   "bbr_id": "thomajo02",
+   "club": "New Orleans Hornets",
+   "from": "Miami Heat",
+   "salary": 1029873,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "José Calderón",
+   "bbr_id": "caldejo01",
+   "club": "Memphis Grizzlies",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Kevin Burleson",
+   "bbr_id": "burleke01",
+   "club": "Minnesota Timberwolves",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Luke Schenscher",
+   "bbr_id": "schenlu01",
+   "club": "Toronto Raptors",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Malik Allen",
+   "bbr_id": "allenma01",
+   "club": "Chicago Bulls",
+   "from": null,
+   "salary": 771123,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Mario Kasun",
+   "bbr_id": "kasunma01",
+   "club": "Milwaukee Bucks",
+   "from": "Orlando Magic",
+   "salary": 641748,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-29"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Matt Carroll",
+   "bbr_id": "carroma01",
+   "club": "Miami Heat",
+   "from": "Chicago Bulls",
+   "salary": 719373,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-01"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Michael Doleac",
+   "bbr_id": "doleami01",
+   "club": "Los Angeles Clippers",
+   "from": "New York Knicks",
+   "salary": 2685176,
+   "years": 4,
+   "route": "mid_level",
+   "agreed": "2005-07-29"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Mike Wilks",
+   "bbr_id": "wilksmi01",
+   "club": "Miami Heat",
+   "from": "Philadelphia 76ers",
+   "salary": 745248,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Mikki Moore",
+   "bbr_id": "mooremi01",
+   "club": "New Jersey Nets",
+   "from": null,
+   "salary": 965185,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-15"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Rasual Butler",
+   "bbr_id": "butlera01",
+   "club": "Toronto Raptors",
+   "from": null,
+   "salary": 745248,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "club": "Philadelphia 76ers",
+   "from": "Chicago Bulls",
+   "salary": 1029873,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-01"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Stephen Graham",
+   "bbr_id": "grahast01",
+   "club": "Dallas Mavericks",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "T.J. Ford",
+   "bbr_id": "fordtj01",
+   "club": "Minnesota Timberwolves",
+   "from": null,
+   "salary": 719373,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-01"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Terence Morris",
+   "bbr_id": "morrite01",
+   "club": "Philadelphia 76ers",
+   "from": null,
+   "salary": 771123,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Will Bynum",
+   "bbr_id": "bynumwi01",
+   "club": "Phoenix Suns",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-08"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "Zendon Hamilton",
+   "bbr_id": "hamilze01",
+   "club": "Phoenix Suns",
+   "from": null,
+   "salary": 835810,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-29"
+  },
+  {
+   "date": "2005-08-02",
+   "kind": "signing",
+   "player": "barroea01",
+   "bbr_id": "barroea01",
+   "club": "San Antonio Spurs",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-07-22"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "offer_sheet",
+   "player": "Andray Blatche",
+   "bbr_id": "blatcan01",
+   "club": "Milwaukee Bucks",
+   "from": "Charlotte Bobcats",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "offer_sheet_matched",
+   "player": "Andray Blatche",
+   "bbr_id": "blatcan01",
+   "club": "Charlotte Bobcats",
+   "from": "Milwaukee Bucks",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "re_sign",
+   "player": "Brevin Knight",
+   "bbr_id": "knighbr01",
+   "club": "Washington Wizards",
+   "from": "Washington Wizards",
+   "salary": 7776264,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "re_sign",
+   "player": "Dan Gadzuric",
+   "bbr_id": "gadzuda01",
+   "club": "Milwaukee Bucks",
+   "from": "Milwaukee Bucks",
+   "salary": 8677591,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "re_sign",
+   "player": "Lonny Baxter",
+   "bbr_id": "baxtelo01",
+   "club": "Toronto Raptors",
+   "from": "Toronto Raptors",
+   "salary": 745248,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "re_sign",
+   "player": "Mike Miller",
+   "bbr_id": "millemi01",
+   "club": "Memphis Grizzlies",
+   "from": "Memphis Grizzlies",
+   "salary": 11206817,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "re_sign",
+   "player": "Raef LaFrentz",
+   "bbr_id": "lafrera01",
+   "club": "Atlanta Hawks",
+   "from": "Atlanta Hawks",
+   "salary": 8821996,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "signing",
+   "player": "Aaron Miles",
+   "bbr_id": "milesaa01",
+   "club": "Memphis Grizzlies",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "signing",
+   "player": "Arvydas Macijauskas",
+   "bbr_id": "macijar01",
+   "club": "Dallas Mavericks",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "signing",
+   "player": "Chuck Hayes",
+   "bbr_id": "hayesch01",
+   "club": "Atlanta Hawks",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "signing",
+   "player": "Noel Felix",
+   "bbr_id": "felixno01",
+   "club": "San Antonio Spurs",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "signing",
+   "player": "Pat Burke",
+   "bbr_id": "burkepa01",
+   "club": "Phoenix Suns",
+   "from": null,
+   "salary": 745248,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "signing",
+   "player": "Royal Ivey",
+   "bbr_id": "iveyro01",
+   "club": "Sacramento Kings",
+   "from": null,
+   "salary": 641748,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "signing",
+   "player": "Sharrod Ford",
+   "bbr_id": "fordsh02",
+   "club": "Houston Rockets",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "signing",
+   "player": "fitchge01",
+   "bbr_id": "fitchge01",
+   "club": "New Orleans Hornets",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "signing",
+   "player": "Šarūnas Jasikevičius",
+   "bbr_id": "jasiksa01",
+   "club": "Cleveland Cavaliers",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-05"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "trade",
+   "player": "Brent Barry",
+   "bbr_id": "barrybr01",
+   "club": "Boston Celtics",
+   "from": "Golden State Warriors",
+   "salary": 5393300,
+   "deal": "2005-summer-trade-2005-08-05-banksma01-barrybr01-snower01"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "trade",
+   "player": "Dorell Wright",
+   "bbr_id": "wrighdo01",
+   "club": "Utah Jazz",
+   "from": "Miami Heat",
+   "salary": 1052040,
+   "deal": "2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "trade",
+   "player": "Eddie Jones",
+   "bbr_id": "jonesed02",
+   "club": "Miami Heat",
+   "from": "Utah Jazz",
+   "salary": 14576250,
+   "deal": "2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "trade",
+   "player": "Eric Snow",
+   "bbr_id": "snower01",
+   "club": "Boston Celtics",
+   "from": "Golden State Warriors",
+   "salary": 4076057,
+   "deal": "2005-summer-trade-2005-08-05-banksma01-barrybr01-snower01"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "trade",
+   "player": "Marcus Banks",
+   "bbr_id": "banksma01",
+   "club": "Golden State Warriors",
+   "from": "Boston Celtics",
+   "salary": 1724280,
+   "deal": "2005-summer-trade-2005-08-05-banksma01-barrybr01-snower01"
+  },
+  {
+   "date": "2005-08-05",
+   "kind": "trade",
+   "player": "Sebastian Telfair",
+   "bbr_id": "telfase01",
+   "club": "Miami Heat",
+   "from": "Utah Jazz",
+   "salary": 1010040,
+   "deal": "2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "offer_sheet",
+   "player": "Amir Johnson",
+   "bbr_id": "johnsam01",
+   "club": "San Antonio Spurs",
+   "from": "Utah Jazz",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "offer_sheet",
+   "player": "Nate Robinson",
+   "bbr_id": "robinna01",
+   "club": "New Jersey Nets",
+   "from": "Seattle SuperSonics",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "offer_sheet",
+   "player": "Primož Brezec",
+   "bbr_id": "brezepr01",
+   "club": "Toronto Raptors",
+   "from": "Indiana Pacers",
+   "salary": 9037036,
+   "years": 5
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "offer_sheet",
+   "player": "Udonis Haslem",
+   "bbr_id": "hasleud01",
+   "club": "Miami Heat",
+   "from": "Toronto Raptors",
+   "salary": 5000000,
+   "years": 5
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "offer_sheet_matched",
+   "player": "Amir Johnson",
+   "bbr_id": "johnsam01",
+   "club": "Utah Jazz",
+   "from": "San Antonio Spurs",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "offer_sheet_matched",
+   "player": "Nate Robinson",
+   "bbr_id": "robinna01",
+   "club": "Seattle SuperSonics",
+   "from": "New Jersey Nets",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "offer_sheet_matched",
+   "player": "Udonis Haslem",
+   "bbr_id": "hasleud01",
+   "club": "Toronto Raptors",
+   "from": "Miami Heat",
+   "salary": 5000000,
+   "years": 5,
+   "route": "bird"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "offer_sheet_not_matched",
+   "player": "Primož Brezec",
+   "bbr_id": "brezepr01",
+   "club": "Indiana Pacers",
+   "to": "Toronto Raptors"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "re_sign",
+   "player": "Joel Przybilla",
+   "bbr_id": "przybjo01",
+   "club": "Portland Trail Blazers",
+   "from": "Portland Trail Blazers",
+   "salary": 6408804,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-08-12"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "re_sign",
+   "player": "Richard Jefferson",
+   "bbr_id": "jefferi01",
+   "club": "New Jersey Nets",
+   "from": "New Jersey Nets",
+   "salary": 9422834,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-08-12"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "signing",
+   "player": "Andre Owens",
+   "bbr_id": "owensan01",
+   "club": "Dallas Mavericks",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-12"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "signing",
+   "player": "Anthony Roberson",
+   "bbr_id": "roberan02",
+   "club": "Indiana Pacers",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-12"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "signing",
+   "player": "Primož Brezec",
+   "bbr_id": "brezepr01",
+   "club": "Toronto Raptors",
+   "from": "Indiana Pacers",
+   "salary": 9037036,
+   "years": 5,
+   "route": "cap_room",
+   "agreed": "2005-08-12"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "signing",
+   "player": "Quinton Ross",
+   "bbr_id": "rossqu01",
+   "club": "New Jersey Nets",
+   "from": null,
+   "salary": 641748,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-12"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "signing",
+   "player": "Randy Holcomb",
+   "bbr_id": "holcora01",
+   "club": "New Orleans Hornets",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-12"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "signing",
+   "player": "Ronnie Price",
+   "bbr_id": "pricero01",
+   "club": "Dallas Mavericks",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-12"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "signing",
+   "player": "Samaki Walker",
+   "bbr_id": "walkesa01",
+   "club": "Washington Wizards",
+   "from": "New Orleans Hornets",
+   "salary": 1457430,
+   "years": 4,
+   "route": "mid_level",
+   "agreed": "2005-08-12"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "trade",
+   "player": "David Harrison",
+   "bbr_id": "harrida01",
+   "club": "Denver Nuggets",
+   "from": "Orlando Magic",
+   "salary": 937440,
+   "deal": "2005-summer-trade-2005-08-12-araujra01-harrida01-hoibefr01"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "trade",
+   "player": "Fred Hoiberg",
+   "bbr_id": "hoibefr01",
+   "club": "Orlando Magic",
+   "from": "Denver Nuggets",
+   "salary": 2895054,
+   "deal": "2005-summer-trade-2005-08-12-araujra01-harrida01-hoibefr01"
+  },
+  {
+   "date": "2005-08-12",
+   "kind": "trade",
+   "player": "Rafael Araújo",
+   "bbr_id": "araujra01",
+   "club": "Orlando Magic",
+   "from": "Denver Nuggets",
+   "salary": 1141560,
+   "deal": "2005-summer-trade-2005-08-12-araujra01-harrida01-hoibefr01"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "offer_sheet",
+   "player": "David Lee",
+   "bbr_id": "leeda02",
+   "club": "Atlanta Hawks",
+   "from": "Toronto Raptors",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "offer_sheet",
+   "player": "Linas Kleiza",
+   "bbr_id": "kleizli01",
+   "club": "Houston Rockets",
+   "from": "New Jersey Nets",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "offer_sheet",
+   "player": "Mo Williams",
+   "bbr_id": "willima01",
+   "club": "Cleveland Cavaliers",
+   "from": "San Antonio Spurs",
+   "salary": 5000000,
+   "years": 5
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "offer_sheet_matched",
+   "player": "David Lee",
+   "bbr_id": "leeda02",
+   "club": "Toronto Raptors",
+   "from": "Atlanta Hawks",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "offer_sheet_matched",
+   "player": "Linas Kleiza",
+   "bbr_id": "kleizli01",
+   "club": "New Jersey Nets",
+   "from": "Houston Rockets",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "offer_sheet_not_matched",
+   "player": "Mo Williams",
+   "bbr_id": "willima01",
+   "club": "San Antonio Spurs",
+   "to": "Cleveland Cavaliers"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "re_sign",
+   "player": "Kyle Korver",
+   "bbr_id": "korveky01",
+   "club": "New Orleans Hornets",
+   "from": "New Orleans Hornets",
+   "salary": 8783538,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "re_sign",
+   "player": "Matt Harpring",
+   "bbr_id": "harprma01",
+   "club": "Miami Heat",
+   "from": "Miami Heat",
+   "salary": 7954111,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "re_sign",
+   "player": "Samuel Dalembert",
+   "bbr_id": "dalemsa01",
+   "club": "Philadelphia 76ers",
+   "from": "Philadelphia 76ers",
+   "salary": 7673355,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "re_sign",
+   "player": "Zach Randolph",
+   "bbr_id": "randoza01",
+   "club": "Portland Trail Blazers",
+   "from": "Portland Trail Blazers",
+   "salary": 10800000,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "signing",
+   "player": "Alex Scales",
+   "bbr_id": "scaleal01",
+   "club": "New Orleans Hornets",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "signing",
+   "player": "Awvee Storey",
+   "bbr_id": "storeaw01",
+   "club": "New York Knicks",
+   "from": null,
+   "salary": 641748,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "signing",
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "club": "Seattle SuperSonics",
+   "from": null,
+   "salary": 641748,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "signing",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "club": "New York Knicks",
+   "from": null,
+   "salary": 1029873,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "signing",
+   "player": "Dwayne Jones",
+   "bbr_id": "jonesdw02",
+   "club": "San Antonio Spurs",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "signing",
+   "player": "Jamaal Magloire",
+   "bbr_id": "magloja01",
+   "club": "New York Knicks",
+   "from": "New Orleans Hornets",
+   "salary": 5000000,
+   "years": 4,
+   "route": "mid_level",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "signing",
+   "player": "Melvin Sanders",
+   "bbr_id": "sandeme01",
+   "club": "Indiana Pacers",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "signing",
+   "player": "Mo Williams",
+   "bbr_id": "willima01",
+   "club": "Cleveland Cavaliers",
+   "from": "San Antonio Spurs",
+   "salary": 5000000,
+   "years": 5,
+   "route": "mid_level",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "signing",
+   "player": "Rawle Marshall",
+   "bbr_id": "marshra01",
+   "club": "Charlotte Bobcats",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "signing",
+   "player": "Zeljko Rebraca",
+   "bbr_id": "rebraze01",
+   "club": "Seattle SuperSonics",
+   "from": null,
+   "salary": 771123,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-19"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "trade",
+   "player": "Andrew Bogut",
+   "bbr_id": "bogutan01",
+   "club": "Golden State Warriors",
+   "from": "Denver Nuggets",
+   "salary": 3883560,
+   "deal": "2005-summer-trade-2005-08-19-battito01-bogutan01-grahajo01"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "trade",
+   "player": "Doug Christie",
+   "bbr_id": "chrisdo01",
+   "club": "Houston Rockets",
+   "from": "New Orleans Hornets",
+   "salary": 8200000,
+   "deal": "2005-summer-trade-2005-08-19-chrisdo01-lynchge01-piatker01"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "trade",
+   "player": "Eric Piatkowski",
+   "bbr_id": "piatker01",
+   "club": "New Orleans Hornets",
+   "from": "Houston Rockets",
+   "salary": 2666667,
+   "deal": "2005-summer-trade-2005-08-19-chrisdo01-lynchge01-piatker01"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "trade",
+   "player": "George Lynch",
+   "bbr_id": "lynchge01",
+   "club": "Houston Rockets",
+   "from": "New Orleans Hornets",
+   "salary": 3200000,
+   "deal": "2005-summer-trade-2005-08-19-chrisdo01-lynchge01-piatker01"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "trade",
+   "player": "Joey Graham",
+   "bbr_id": "grahajo01",
+   "club": "Denver Nuggets",
+   "from": "Golden State Warriors",
+   "salary": 1196520,
+   "deal": "2005-summer-trade-2005-08-19-battito01-bogutan01-grahajo01"
+  },
+  {
+   "date": "2005-08-19",
+   "kind": "trade",
+   "player": "Tony Battie",
+   "bbr_id": "battito01",
+   "club": "Golden State Warriors",
+   "from": "Denver Nuggets",
+   "salary": 5200000,
+   "deal": "2005-summer-trade-2005-08-19-battito01-bogutan01-grahajo01"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "offer_sheet",
+   "player": "Dijon Thompson",
+   "bbr_id": "thompdi01",
+   "club": "New Jersey Nets",
+   "from": "Cleveland Cavaliers",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "offer_sheet",
+   "player": "Eddie Griffin",
+   "bbr_id": "griffed01",
+   "club": "Atlanta Hawks",
+   "from": "Houston Rockets",
+   "salary": 5000000,
+   "years": 5
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "offer_sheet",
+   "player": "Jason Maxiell",
+   "bbr_id": "maxieja01",
+   "club": "San Antonio Spurs",
+   "from": "Memphis Grizzlies",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "offer_sheet",
+   "player": "Salim Stoudamire",
+   "bbr_id": "stoudsa01",
+   "club": "Miami Heat",
+   "from": "New York Knicks",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "offer_sheet",
+   "player": "Von Wafer",
+   "bbr_id": "wafervo01",
+   "club": "Milwaukee Bucks",
+   "from": "Indiana Pacers",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "offer_sheet_matched",
+   "player": "Dijon Thompson",
+   "bbr_id": "thompdi01",
+   "club": "Cleveland Cavaliers",
+   "from": "New Jersey Nets",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "offer_sheet_matched",
+   "player": "Eddie Griffin",
+   "bbr_id": "griffed01",
+   "club": "Houston Rockets",
+   "from": "Atlanta Hawks",
+   "salary": 5000000,
+   "years": 5,
+   "route": "bird"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "offer_sheet_matched",
+   "player": "Jason Maxiell",
+   "bbr_id": "maxieja01",
+   "club": "Memphis Grizzlies",
+   "from": "San Antonio Spurs",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "offer_sheet_matched",
+   "player": "Salim Stoudamire",
+   "bbr_id": "stoudsa01",
+   "club": "New York Knicks",
+   "from": "Miami Heat",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "offer_sheet_matched",
+   "player": "Von Wafer",
+   "bbr_id": "wafervo01",
+   "club": "Indiana Pacers",
+   "from": "Milwaukee Bucks",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "re_sign",
+   "player": "Chris Mihm",
+   "bbr_id": "mihmch01",
+   "club": "Phoenix Suns",
+   "from": "Phoenix Suns",
+   "salary": 5100714,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-08-26"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "re_sign",
+   "player": "Desmond Mason",
+   "bbr_id": "masonde01",
+   "club": "Milwaukee Bucks",
+   "from": "Milwaukee Bucks",
+   "salary": 7549982,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-08-26"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "re_sign",
+   "player": "Nenad Krstić",
+   "bbr_id": "krstine01",
+   "club": "New York Knicks",
+   "from": "New York Knicks",
+   "salary": 7155795,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-08-26"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "re_sign",
+   "player": "Troy Murphy",
+   "bbr_id": "murphtr01",
+   "club": "Golden State Warriors",
+   "from": "Golden State Warriors",
+   "salary": 10200000,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-08-26"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "signing",
+   "player": "Darrell Armstrong",
+   "bbr_id": "armstda01",
+   "club": "Philadelphia 76ers",
+   "from": "New Orleans Hornets",
+   "salary": 1510936,
+   "years": 1,
+   "route": "mid_level",
+   "agreed": "2005-08-26"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "signing",
+   "player": "Donell Taylor",
+   "bbr_id": "taylodo01",
+   "club": "Sacramento Kings",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-26"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "signing",
+   "player": "Sergei Monia",
+   "bbr_id": "moniase01",
+   "club": "Atlanta Hawks",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-26"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "signing",
+   "player": "Shavlik Randolph",
+   "bbr_id": "randosh01",
+   "club": "Charlotte Bobcats",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-08-26"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "signing",
+   "player": "Trenton Hassell",
+   "bbr_id": "hassetr01",
+   "club": "Memphis Grizzlies",
+   "from": "Cleveland Cavaliers",
+   "salary": 4171924,
+   "years": 5,
+   "route": "mid_level",
+   "agreed": "2005-08-26"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "trade",
+   "player": "Carlos Arroyo",
+   "bbr_id": "arroyca01",
+   "club": "Dallas Mavericks",
+   "from": "Milwaukee Bucks",
+   "salary": 5371002,
+   "deal": "2005-summer-trade-2005-08-26-arroyca01-feltora01-fortsda01"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "trade",
+   "player": "Danny Fortson",
+   "bbr_id": "fortsda01",
+   "club": "Milwaukee Bucks",
+   "from": "Dallas Mavericks",
+   "salary": 6207670,
+   "deal": "2005-summer-trade-2005-08-26-arroyca01-feltora01-fortsda01"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "trade",
+   "player": "Marvin Williams",
+   "bbr_id": "willima02",
+   "club": "Orlando Magic",
+   "from": "Charlotte Bobcats",
+   "salary": 4340520,
+   "deal": "2005-summer-trade-2005-08-26-gainere01-planizo01-willima02"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "trade",
+   "player": "Raymond Felton",
+   "bbr_id": "feltora01",
+   "club": "Dallas Mavericks",
+   "from": "Milwaukee Bucks",
+   "salary": 2360880,
+   "deal": "2005-summer-trade-2005-08-26-arroyca01-feltora01-fortsda01"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "trade",
+   "player": "Reece Gaines",
+   "bbr_id": "gainere01",
+   "club": "Charlotte Bobcats",
+   "from": "Orlando Magic",
+   "salary": 1556160,
+   "deal": "2005-summer-trade-2005-08-26-gainere01-planizo01-willima02"
+  },
+  {
+   "date": "2005-08-26",
+   "kind": "trade",
+   "player": "Zoran Planinic",
+   "bbr_id": "planizo01",
+   "club": "Orlando Magic",
+   "from": "Charlotte Bobcats",
+   "salary": 1127280,
+   "deal": "2005-summer-trade-2005-08-26-gainere01-planizo01-willima02"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "offer_sheet",
+   "player": "Bracey Wright",
+   "bbr_id": "wrighbr02",
+   "club": "New Jersey Nets",
+   "from": "Utah Jazz",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "offer_sheet",
+   "player": "Jason Collins",
+   "bbr_id": "collija04",
+   "club": "Seattle SuperSonics",
+   "from": "New Jersey Nets",
+   "salary": 4740474,
+   "years": 5
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "offer_sheet",
+   "player": "Lou Williams",
+   "bbr_id": "willilo02",
+   "club": "Golden State Warriors",
+   "from": "Los Angeles Lakers",
+   "salary": 398762,
+   "years": 1
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "offer_sheet",
+   "player": "Shane Battier",
+   "bbr_id": "battish01",
+   "club": "New Orleans Hornets",
+   "from": "Memphis Grizzlies",
+   "salary": 7276965,
+   "years": 5
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "offer_sheet_matched",
+   "player": "Bracey Wright",
+   "bbr_id": "wrighbr02",
+   "club": "Utah Jazz",
+   "from": "New Jersey Nets",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "offer_sheet_matched",
+   "player": "Jason Collins",
+   "bbr_id": "collija04",
+   "club": "New Jersey Nets",
+   "from": "Seattle SuperSonics",
+   "salary": 4740474,
+   "years": 5,
+   "route": "bird"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "offer_sheet_matched",
+   "player": "Lou Williams",
+   "bbr_id": "willilo02",
+   "club": "Los Angeles Lakers",
+   "from": "Golden State Warriors",
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "offer_sheet_not_matched",
+   "player": "Shane Battier",
+   "bbr_id": "battish01",
+   "club": "Memphis Grizzlies",
+   "to": "New Orleans Hornets"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "re_sign",
+   "player": "Austin Croshere",
+   "bbr_id": "croshau01",
+   "club": "New York Knicks",
+   "from": "New York Knicks",
+   "salary": 4800000,
+   "years": 3,
+   "route": "bird",
+   "agreed": "2005-09-02"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "re_sign",
+   "player": "Calbert Cheaney",
+   "bbr_id": "cheanca01",
+   "club": "Phoenix Suns",
+   "from": "Phoenix Suns",
+   "salary": 1249379,
+   "years": 2,
+   "route": "bird",
+   "agreed": "2005-09-02"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "signing",
+   "player": "Anthony Johnson",
+   "bbr_id": "johnsan02",
+   "club": "Miami Heat",
+   "from": "Indiana Pacers",
+   "salary": 5000000,
+   "years": 3,
+   "route": "mid_level",
+   "agreed": "2005-09-02"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "signing",
+   "player": "Delonte West",
+   "bbr_id": "westde01",
+   "club": "Seattle SuperSonics",
+   "from": null,
+   "salary": 641748,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-02"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "signing",
+   "player": "Ime Udoka",
+   "bbr_id": "udokaim01",
+   "club": "New Orleans Hornets",
+   "from": null,
+   "salary": 719373,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-02"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "signing",
+   "player": "James Singleton",
+   "bbr_id": "singlja01",
+   "club": "Detroit Pistons",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-02"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "signing",
+   "player": "Shane Battier",
+   "bbr_id": "battish01",
+   "club": "New Orleans Hornets",
+   "from": "Memphis Grizzlies",
+   "salary": 7276965,
+   "years": 5,
+   "route": "cap_room",
+   "agreed": "2005-09-02"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "signing",
+   "player": "walshma01",
+   "bbr_id": "walshma01",
+   "club": "Charlotte Bobcats",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-02"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "trade",
+   "player": "DeShawn Stevenson",
+   "bbr_id": "stevede01",
+   "club": "Miami Heat",
+   "from": "Utah Jazz",
+   "salary": 2989469,
+   "deal": "2005-summer-trade-2005-09-02-murrala01-stevede01"
+  },
+  {
+   "date": "2005-09-02",
+   "kind": "trade",
+   "player": "Lamond Murray",
+   "bbr_id": "murrala01",
+   "club": "Utah Jazz",
+   "from": "Miami Heat",
+   "salary": 5250000,
+   "deal": "2005-summer-trade-2005-09-02-murrala01-stevede01"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "offer_sheet",
+   "player": "Devin Brown",
+   "bbr_id": "brownde02",
+   "club": "New Jersey Nets",
+   "from": "Boston Celtics",
+   "salary": 3474675,
+   "years": 5
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "offer_sheet_matched",
+   "player": "Devin Brown",
+   "bbr_id": "brownde02",
+   "club": "Boston Celtics",
+   "from": "New Jersey Nets",
+   "salary": 3474675,
+   "years": 5,
+   "route": "bird"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "re_sign",
+   "player": "Donyell Marshall",
+   "bbr_id": "marshdo01",
+   "club": "Miami Heat",
+   "from": "Miami Heat",
+   "salary": 6337327,
+   "years": 3,
+   "route": "bird",
+   "agreed": "2005-09-09"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "re_sign",
+   "player": "Milt Palacio",
+   "bbr_id": "palacmi01",
+   "club": "New York Knicks",
+   "from": "New York Knicks",
+   "salary": 4040593,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-09-09"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "re_sign",
+   "player": "Steven Hunter",
+   "bbr_id": "huntest01",
+   "club": "New Orleans Hornets",
+   "from": "New Orleans Hornets",
+   "salary": 4254046,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-09-09"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "signing",
+   "player": "Anthony Carter",
+   "bbr_id": "cartean01",
+   "club": "Sacramento Kings",
+   "from": null,
+   "salary": 900498,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-09"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "signing",
+   "player": "Jermaine Jackson",
+   "bbr_id": "jacksje01",
+   "club": "Milwaukee Bucks",
+   "from": null,
+   "salary": 900498,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-09"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "signing",
+   "player": "Josh Powell",
+   "bbr_id": "poweljo01",
+   "club": "Detroit Pistons",
+   "from": null,
+   "salary": 398762,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-09"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "signing",
+   "player": "Lee Nailon",
+   "bbr_id": "nailole01",
+   "club": "Denver Nuggets",
+   "from": null,
+   "salary": 835810,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-09"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "signing",
+   "player": "Maurice Evans",
+   "bbr_id": "evansma01",
+   "club": "Golden State Warriors",
+   "from": "Miami Heat",
+   "salary": 771123,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-09"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "signing",
+   "player": "Michael Bradley",
+   "bbr_id": "bradlmi01",
+   "club": "Los Angeles Clippers",
+   "from": null,
+   "salary": 771123,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-09"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "signing",
+   "player": "Tyronn Lue",
+   "bbr_id": "luety01",
+   "club": "Toronto Raptors",
+   "from": "Minnesota Timberwolves",
+   "salary": 4878136,
+   "years": 4,
+   "route": "mid_level",
+   "agreed": "2005-09-09"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "trade",
+   "player": "Bobby Jackson",
+   "bbr_id": "jacksbo01",
+   "club": "Detroit Pistons",
+   "from": "Sacramento Kings",
+   "salary": 3375000,
+   "deal": "2005-summer-trade-2005-09-09-brownpj01-dampier01-jacksbo01"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "trade",
+   "player": "Erick Dampier",
+   "bbr_id": "dampier01",
+   "club": "Sacramento Kings",
+   "from": "Detroit Pistons",
+   "salary": 11104594,
+   "deal": "2005-summer-trade-2005-09-09-brownpj01-dampier01-jacksbo01"
+  },
+  {
+   "date": "2005-09-09",
+   "kind": "trade",
+   "player": "P.J. Brown",
+   "bbr_id": "brownpj01",
+   "club": "Detroit Pistons",
+   "from": "Sacramento Kings",
+   "salary": 8500000,
+   "deal": "2005-summer-trade-2005-09-09-brownpj01-dampier01-jacksbo01"
+  },
+  {
+   "date": "2005-09-16",
+   "kind": "offer_sheet",
+   "player": "Marko Jaric",
+   "bbr_id": "jaricma01",
+   "club": "Chicago Bulls",
+   "from": "Los Angeles Clippers",
+   "salary": 5000000,
+   "years": 5
+  },
+  {
+   "date": "2005-09-16",
+   "kind": "offer_sheet_not_matched",
+   "player": "Marko Jaric",
+   "bbr_id": "jaricma01",
+   "club": "Los Angeles Clippers",
+   "to": "Chicago Bulls"
+  },
+  {
+   "date": "2005-09-16",
+   "kind": "re_sign",
+   "player": "Matt Bonner",
+   "bbr_id": "bonnema01",
+   "club": "Toronto Raptors",
+   "from": "Toronto Raptors",
+   "salary": 4010894,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-09-16"
+  },
+  {
+   "date": "2005-09-16",
+   "kind": "signing",
+   "player": "Aaron Williams",
+   "bbr_id": "williaa01",
+   "club": "Charlotte Bobcats",
+   "from": "New Jersey Nets",
+   "salary": 1138500,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-16"
+  },
+  {
+   "date": "2005-09-16",
+   "kind": "signing",
+   "player": "Alvin Williams",
+   "bbr_id": "willial02",
+   "club": "Chicago Bulls",
+   "from": null,
+   "salary": 1029873,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-16"
+  },
+  {
+   "date": "2005-09-16",
+   "kind": "signing",
+   "player": "James Thomas",
+   "bbr_id": "thomaja02",
+   "club": "Minnesota Timberwolves",
+   "from": "Denver Nuggets",
+   "salary": 641748,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-16"
+  },
+  {
+   "date": "2005-09-16",
+   "kind": "signing",
+   "player": "Marko Jaric",
+   "bbr_id": "jaricma01",
+   "club": "Chicago Bulls",
+   "from": "Los Angeles Clippers",
+   "salary": 5000000,
+   "years": 5,
+   "route": "mid_level",
+   "agreed": "2005-09-16"
+  },
+  {
+   "date": "2005-09-16",
+   "kind": "signing",
+   "player": "Mateen Cleaves",
+   "bbr_id": "cleavma01",
+   "club": "Utah Jazz",
+   "from": "Cleveland Cavaliers",
+   "salary": 835810,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-16"
+  },
+  {
+   "date": "2005-09-16",
+   "kind": "signing",
+   "player": "Ryan Bowen",
+   "bbr_id": "bowenry01",
+   "club": "Minnesota Timberwolves",
+   "from": null,
+   "salary": 900498,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-16"
+  },
+  {
+   "date": "2005-09-16",
+   "kind": "signing",
+   "player": "Troy Hudson",
+   "bbr_id": "hudsotr01",
+   "club": "Utah Jazz",
+   "from": "Charlotte Bobcats",
+   "salary": 4447240,
+   "years": 4,
+   "route": "mid_level",
+   "agreed": "2005-09-16"
+  },
+  {
+   "date": "2005-09-23",
+   "kind": "offer_sheet",
+   "player": "Reggie Evans",
+   "bbr_id": "evansre01",
+   "club": "Atlanta Hawks",
+   "from": "Seattle SuperSonics",
+   "salary": 3900000,
+   "years": 5
+  },
+  {
+   "date": "2005-09-23",
+   "kind": "offer_sheet_matched",
+   "player": "Reggie Evans",
+   "bbr_id": "evansre01",
+   "club": "Seattle SuperSonics",
+   "from": "Atlanta Hawks",
+   "salary": 3900000,
+   "years": 5,
+   "route": "bird"
+  },
+  {
+   "date": "2005-09-23",
+   "kind": "re_sign",
+   "player": "Antoine Walker",
+   "bbr_id": "walkean02",
+   "club": "Dallas Mavericks",
+   "from": "Dallas Mavericks",
+   "salary": 9017600,
+   "years": 4,
+   "route": "bird",
+   "agreed": "2005-09-23"
+  },
+  {
+   "date": "2005-09-23",
+   "kind": "re_sign",
+   "player": "Antonio Davis",
+   "bbr_id": "davisan01",
+   "club": "Chicago Bulls",
+   "from": "Chicago Bulls",
+   "salary": 3562239,
+   "years": 1,
+   "route": "bird",
+   "agreed": "2005-09-23"
+  },
+  {
+   "date": "2005-09-23",
+   "kind": "re_sign",
+   "player": "Keyon Dooling",
+   "bbr_id": "doolike01",
+   "club": "Utah Jazz",
+   "from": "Utah Jazz",
+   "salary": 2763371,
+   "years": 5,
+   "route": "bird",
+   "agreed": "2005-09-23"
+  },
+  {
+   "date": "2005-09-23",
+   "kind": "signing",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "club": "New Jersey Nets",
+   "from": "New York Knicks",
+   "salary": 1138500,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-23"
+  },
+  {
+   "date": "2005-09-23",
+   "kind": "signing",
+   "player": "Earl Watson",
+   "bbr_id": "watsoea01",
+   "club": "New Jersey Nets",
+   "from": "Memphis Grizzlies",
+   "salary": 3728347,
+   "years": 5,
+   "route": "mid_level",
+   "agreed": "2005-09-23"
+  },
+  {
+   "date": "2005-09-23",
+   "kind": "signing",
+   "player": "Jeff McInnis",
+   "bbr_id": "mcinnje01",
+   "club": "Orlando Magic",
+   "from": "New Orleans Hornets",
+   "salary": 3904376,
+   "years": 3,
+   "route": "cap_room",
+   "agreed": "2005-09-23"
+  },
+  {
+   "date": "2005-09-23",
+   "kind": "signing",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "club": "San Antonio Spurs",
+   "from": null,
+   "salary": 719373,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-23"
+  },
+  {
+   "date": "2005-09-23",
+   "kind": "signing",
+   "player": "Nikoloz Tskitishvili",
+   "bbr_id": "tskitni01",
+   "club": "Houston Rockets",
+   "from": "Phoenix Suns",
+   "salary": 745248,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-23"
+  },
+  {
+   "date": "2005-09-23",
+   "kind": "signing",
+   "player": "Voshon Lenard",
+   "bbr_id": "lenarvo01",
+   "club": "Minnesota Timberwolves",
+   "from": "Dallas Mavericks",
+   "salary": 1138500,
+   "years": 1,
+   "route": "minimum",
+   "agreed": "2005-09-23"
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "camp_signing",
+   "player": "David Wesley",
+   "bbr_id": "wesleda01",
+   "club": "Golden State Warriors",
+   "from": "Portland Trail Blazers",
+   "salary": 3300000,
+   "years": 1,
+   "route": "mid_level"
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "camp_signing",
+   "player": "Derek Fisher",
+   "bbr_id": "fishede01",
+   "club": "Washington Wizards",
+   "from": "Detroit Pistons",
+   "salary": 1035000,
+   "years": 1,
+   "route": "minimum"
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "camp_signing",
+   "player": "Gary Payton",
+   "bbr_id": "paytoga01",
+   "club": "Denver Nuggets",
+   "from": "Detroit Pistons",
+   "salary": 3300000,
+   "years": 1,
+   "route": "mid_level"
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Andre Barrett",
+   "bbr_id": "barrean01",
+   "club": "Atlanta Hawks",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Andrés Nocioni",
+   "bbr_id": "nocioan01",
+   "club": "San Antonio Spurs",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Billy Thomas",
+   "bbr_id": "thomabi01",
+   "club": "Los Angeles Lakers",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Bostjan Nachbar",
+   "bbr_id": "nachbbo01",
+   "club": "Utah Jazz",
+   "salary": 1867350,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Carlos Delfino",
+   "bbr_id": "delfica01",
+   "club": "Dallas Mavericks",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "D.J. Mbenga",
+   "bbr_id": "mbengdj01",
+   "club": "San Antonio Spurs",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Damien Wilkins",
+   "bbr_id": "wilkida02",
+   "club": "Los Angeles Lakers",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Darius Songaila",
+   "bbr_id": "songada01",
+   "club": "Sacramento Kings",
+   "salary": 993808,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Francisco Elson",
+   "bbr_id": "elsonfr01",
+   "club": "Denver Nuggets",
+   "salary": 894373,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Jackie Butler",
+   "bbr_id": "butleja01",
+   "club": "Philadelphia 76ers",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Jackson Vroman",
+   "bbr_id": "vromaja01",
+   "club": "Milwaukee Bucks",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Jamal Sampson",
+   "bbr_id": "sampsja01",
+   "club": "Houston Rockets",
+   "salary": 920248,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "James Jones",
+   "bbr_id": "jonesja02",
+   "club": "Orlando Magic",
+   "salary": 894373,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Jannero Pargo",
+   "bbr_id": "pargoja01",
+   "club": "Charlotte Bobcats",
+   "salary": 920248,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Keith Bogans",
+   "bbr_id": "boganke01",
+   "club": "Orlando Magic",
+   "salary": 894373,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Keith McLeod",
+   "bbr_id": "mcleoke01",
+   "club": "Philadelphia 76ers",
+   "salary": 894373,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Kevin Martin",
+   "bbr_id": "martike02",
+   "club": "New York Knicks",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Luke Walton",
+   "bbr_id": "waltolu01",
+   "club": "Los Angeles Lakers",
+   "salary": 894373,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Maciej Lampe",
+   "bbr_id": "lampema01",
+   "club": "Atlanta Hawks",
+   "salary": 1125000,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Marquis Daniels",
+   "bbr_id": "daniema01",
+   "club": "Dallas Mavericks",
+   "salary": 993808,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Matt Barnes",
+   "bbr_id": "barnema02",
+   "club": "Memphis Grizzlies",
+   "salary": 894373,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Melvin Ely",
+   "bbr_id": "elyme01",
+   "club": "Los Angeles Clippers",
+   "salary": 2178000,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Nick Collison",
+   "bbr_id": "collini01",
+   "club": "Seattle SuperSonics",
+   "salary": 2462100,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Pape Sow",
+   "bbr_id": "sowpa01",
+   "club": "Milwaukee Bucks",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Ronald Dupree",
+   "bbr_id": "duprero01",
+   "club": "Chicago Bulls",
+   "salary": 993808,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Ronald Murray",
+   "bbr_id": "murraro01",
+   "club": "Seattle SuperSonics",
+   "salary": 920248,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Smush Parker",
+   "bbr_id": "parkesm01",
+   "club": "Indiana Pacers",
+   "salary": 1087558,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Steve Blake",
+   "bbr_id": "blakest01",
+   "club": "Charlotte Bobcats",
+   "salary": 894373,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Tony Allen",
+   "bbr_id": "allento01",
+   "club": "New York Knicks",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Trevor Ariza",
+   "bbr_id": "arizatr01",
+   "club": "Los Angeles Lakers",
+   "salary": 816748,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Willie Green",
+   "bbr_id": "greenwi01",
+   "club": "Philadelphia 76ers",
+   "salary": 894373,
+   "years": 1
+  },
+  {
+   "date": "2005-09-30",
+   "kind": "qualifying_offer_accepted",
+   "player": "Zaza Pachulia",
+   "bbr_id": "pachuza01",
+   "club": "Orlando Magic",
+   "salary": 894373,
+   "years": 1
+  }
+ ],
+ "clubs": {
+  "Atlanta Hawks": [
+   {
+    "player": "Shareef Abdur-Rahim",
+    "bbr_id": "abdursh01",
+    "salary": 15356250,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Stephen Jackson",
+    "bbr_id": "jacksst02",
+    "salary": 11452168,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Raef LaFrentz",
+    "bbr_id": "lafrera01",
+    "salary": 8821996,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Jason Terry",
+    "bbr_id": "terryja01",
+    "salary": 7500000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Nazr Mohammed",
+    "bbr_id": "mohamna01",
+    "salary": 5500000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Dan Dickau",
+    "bbr_id": "dickada01",
+    "salary": 1612587,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Boris Diaw",
+    "bbr_id": "diawbo01",
+    "salary": 1174200,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "ukicro01",
+    "bbr_id": "ukicro01",
+    "salary": 1148760,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 20 at 120%"
+   },
+   {
+    "player": "Maciej Lampe",
+    "bbr_id": "lampema01",
+    "salary": 1125000,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Andre Barrett",
+    "bbr_id": "barrean01",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "John Edwards",
+    "bbr_id": "edwarjo01",
+    "salary": 641748,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Chuck Hayes",
+    "bbr_id": "hayesch01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Sergei Monia",
+    "bbr_id": "moniase01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Boston Celtics": [
+   {
+    "player": "Paul Pierce",
+    "bbr_id": "piercpa01",
+    "salary": 13843156,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Lorenzen Wright",
+    "bbr_id": "wrighlo02",
+    "salary": 7700000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Reggie Miller",
+    "bbr_id": "millere01",
+    "salary": 5500000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Brent Barry",
+    "bbr_id": "barrybr01",
+    "salary": 5393300,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new); traded 2005-08-05"
+   },
+   {
+    "player": "Eric Snow",
+    "bbr_id": "snower01",
+    "salary": 4076057,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new); traded 2005-08-05"
+   },
+   {
+    "player": "Luol Deng",
+    "bbr_id": "denglu01",
+    "salary": 3610200,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Devin Brown",
+    "bbr_id": "brownde02",
+    "salary": 3474675,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Jiri Welsch",
+    "bbr_id": "welscji01",
+    "salary": 2177114,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Sasha Pavlovic",
+    "bbr_id": "pavloal01",
+    "salary": 1274160,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "J.R. Smith",
+    "bbr_id": "smithjr01",
+    "salary": 1238640,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Peter John Ramos",
+    "bbr_id": "ramospe01",
+    "salary": 1095960,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Ike Diogu",
+    "bbr_id": "dioguik01",
+    "salary": 1016400,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 23 at 120%"
+   },
+   {
+    "player": "Kendrick Perkins",
+    "bbr_id": "perkike01",
+    "salary": 936480,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Ronny Turiaf",
+    "bbr_id": "turiaro01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Charlotte Bobcats": [
+   {
+    "player": "Jason Kapono",
+    "bbr_id": "kaponja01",
+    "salary": 5000000,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Moochie Norris",
+    "bbr_id": "norrimo01",
+    "salary": 4200000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Shaun Livingston",
+    "bbr_id": "livinsh01",
+    "salary": 3254880,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Mickael Pietrus",
+    "bbr_id": "pietrmi01",
+    "salary": 1910520,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Luke Ridnour",
+    "bbr_id": "ridnolu01",
+    "salary": 1638000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Reece Gaines",
+    "bbr_id": "gainere01",
+    "salary": 1556160,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing); traded 2005-08-26"
+   },
+   {
+    "player": "Aaron Williams",
+    "bbr_id": "williaa01",
+    "salary": 1138500,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Jannero Pargo",
+    "bbr_id": "pargoja01",
+    "salary": 920248,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Steve Blake",
+    "bbr_id": "blakest01",
+    "salary": 894373,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Andray Blatche",
+    "bbr_id": "blatcan01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Rawle Marshall",
+    "bbr_id": "marshra01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Shavlik Randolph",
+    "bbr_id": "randosh01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "walshma01",
+    "bbr_id": "walshma01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Chicago Bulls": [
+   {
+    "player": "Jamal Crawford",
+    "bbr_id": "crawfja01",
+    "salary": 12147912,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Tyson Chandler",
+    "bbr_id": "chandty01",
+    "salary": 10140269,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Eddy Curry",
+    "bbr_id": "curryed01",
+    "salary": 8530965,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Corliss Williamson",
+    "bbr_id": "willico02",
+    "salary": 6000000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Marko Jaric",
+    "bbr_id": "jaricma01",
+    "salary": 5000000,
+    "years": 5,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Brian Cardinal",
+    "bbr_id": "cardibr01",
+    "salary": 4263516,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Antonio Davis",
+    "bbr_id": "davisan01",
+    "salary": 3562239,
+    "years": 1,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Kirk Hinrich",
+    "bbr_id": "hinriki01",
+    "salary": 2513880,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Kirk Snyder",
+    "bbr_id": "snydeki01",
+    "salary": 1857360,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Johan Petro",
+    "bbr_id": "petrojo01",
+    "salary": 1058640,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 22 at 120%"
+   },
+   {
+    "player": "Alvin Williams",
+    "bbr_id": "willial02",
+    "salary": 1029873,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Ronald Dupree",
+    "bbr_id": "duprero01",
+    "salary": 993808,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Malik Allen",
+    "bbr_id": "allenma01",
+    "salary": 771123,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Ha Seung-Jin",
+    "bbr_id": "seungha01",
+    "salary": 641748,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Cleveland Cavaliers": [
+   {
+    "player": "Carlos Boozer",
+    "bbr_id": "boozeca01",
+    "salary": 10899929,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Maurice Taylor",
+    "bbr_id": "tayloma01",
+    "salary": 9100000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Kelvin Cato",
+    "bbr_id": "catoke01",
+    "salary": 8640000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Ricky Davis",
+    "bbr_id": "davisri01",
+    "salary": 5909800,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Darius Miles",
+    "bbr_id": "milesda01",
+    "salary": 5515875,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Mo Williams",
+    "bbr_id": "willima01",
+    "salary": 5000000,
+    "years": 5,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "LeBron James",
+    "bbr_id": "jamesle01",
+    "salary": 4621800,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Greg Buckner",
+    "bbr_id": "buckngr01",
+    "salary": 3120000,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Kevin Ollie",
+    "bbr_id": "ollieke01",
+    "salary": 3000000,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Devin Harris",
+    "bbr_id": "harride01",
+    "salary": 2238960,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Ndudi Ebi",
+    "bbr_id": "ebind01",
+    "salary": 964320,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Šarūnas Jasikevičius",
+    "bbr_id": "jasiksa01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Dijon Thompson",
+    "bbr_id": "thompdi01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Robert Whaley",
+    "bbr_id": "whalero01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Dallas Mavericks": [
+   {
+    "player": "Michael Finley",
+    "bbr_id": "finlemi01",
+    "salary": 15937500,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Steve Nash",
+    "bbr_id": "nashst01",
+    "salary": 14806125,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Antawn Jamison",
+    "bbr_id": "jamisan01",
+    "salary": 13843156,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Dirk Nowitzki",
+    "bbr_id": "nowitdi01",
+    "salary": 13843156,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Antoine Walker",
+    "bbr_id": "walkean02",
+    "salary": 9017600,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Carlos Arroyo",
+    "bbr_id": "arroyca01",
+    "salary": 5371002,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new); traded 2005-08-26"
+   },
+   {
+    "player": "Eduardo Najera",
+    "bbr_id": "najered01",
+    "salary": 4190476,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Raymond Felton",
+    "bbr_id": "feltora01",
+    "salary": 2360880,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 7 at 120%; traded 2005-08-26"
+   },
+   {
+    "player": "Marquis Daniels",
+    "bbr_id": "daniema01",
+    "salary": 993808,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Martynas Andriuškevičius",
+    "bbr_id": "andrima01",
+    "salary": 936600,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 25 at 120%"
+   },
+   {
+    "player": "Josh Howard",
+    "bbr_id": "howarjo01",
+    "salary": 923880,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Carlos Delfino",
+    "bbr_id": "delfica01",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Stephen Graham",
+    "bbr_id": "grahast01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Arvydas Macijauskas",
+    "bbr_id": "macijar01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Boniface N'Dong",
+    "bbr_id": "ndongbo01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Andre Owens",
+    "bbr_id": "owensan01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Ronnie Price",
+    "bbr_id": "pricero01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Denver Nuggets": [
+   {
+    "player": "Allan Houston",
+    "bbr_id": "houstal01",
+    "salary": 19125000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Andre Miller",
+    "bbr_id": "millean02",
+    "salary": 8528333,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Vin Baker",
+    "bbr_id": "bakervi01",
+    "salary": 4129288,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Carmelo Anthony",
+    "bbr_id": "anthoca01",
+    "salary": 3713640,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Gary Payton",
+    "bbr_id": "paytoga01",
+    "salary": 3300000,
+    "years": 1,
+    "route": "mid_level",
+    "source": "2005 camp signing (roster minimum)"
+   },
+   {
+    "player": "Nene",
+    "bbr_id": "hilarne01",
+    "salary": 2870556,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Earl Boykins",
+    "bbr_id": "boykiea01",
+    "salary": 2740000,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Yaroslav Korolev",
+    "bbr_id": "korolya01",
+    "salary": 1388400,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 16 at 120%"
+   },
+   {
+    "player": "Joey Graham",
+    "bbr_id": "grahajo01",
+    "salary": 1196520,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 19 at 120%; traded 2005-08-19"
+   },
+   {
+    "player": "Rodney White",
+    "bbr_id": "whitero02",
+    "salary": 1008074,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "David Harrison",
+    "bbr_id": "harrida01",
+    "salary": 937440,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale); traded 2005-08-12"
+   },
+   {
+    "player": "Francisco Elson",
+    "bbr_id": "elsonfr01",
+    "salary": 894373,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Lee Nailon",
+    "bbr_id": "nailole01",
+    "salary": 835810,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Detroit Pistons": [
+   {
+    "player": "Richard Hamilton",
+    "bbr_id": "hamilri01",
+    "salary": 8857143,
+    "years": 5,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "P.J. Brown",
+    "bbr_id": "brownpj01",
+    "salary": 8500000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing); traded 2005-09-09"
+   },
+   {
+    "player": "Ben Wallace",
+    "bbr_id": "wallabe01",
+    "salary": 6700000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Jerome Williams",
+    "bbr_id": "willije01",
+    "salary": 6000000,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Chauncey Billups",
+    "bbr_id": "billuch01",
+    "salary": 5909800,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Darko Milicic",
+    "bbr_id": "milicda01",
+    "salary": 4135200,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Slava Medvedenko",
+    "bbr_id": "medvest01",
+    "salary": 3896383,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Bobby Jackson",
+    "bbr_id": "jacksbo01",
+    "salary": 3375000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing); traded 2005-09-09"
+   },
+   {
+    "player": "Sean May",
+    "bbr_id": "mayse01",
+    "salary": 1461360,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 15 at 120%"
+   },
+   {
+    "player": "Eddie Basden",
+    "bbr_id": "basdeed01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Monta Ellis",
+    "bbr_id": "ellismo01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Josh Powell",
+    "bbr_id": "poweljo01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "James Singleton",
+    "bbr_id": "singlja01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Golden State Warriors": [
+   {
+    "player": "Jason Richardson",
+    "bbr_id": "richaja01",
+    "salary": 11352718,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Troy Murphy",
+    "bbr_id": "murphtr01",
+    "salary": 10200000,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Calvin Booth",
+    "bbr_id": "boothca01",
+    "salary": 6354600,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Juwan Howard",
+    "bbr_id": "howarju01",
+    "salary": 5600000,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Tony Battie",
+    "bbr_id": "battito01",
+    "salary": 5200000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing); traded 2005-08-19"
+   },
+   {
+    "player": "Mike Dunleavy",
+    "bbr_id": "dunlemi02",
+    "salary": 4506261,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Andrew Bogut",
+    "bbr_id": "bogutan01",
+    "salary": 3883560,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 2 at 120%; traded 2005-08-19"
+   },
+   {
+    "player": "Speedy Claxton",
+    "bbr_id": "claxtsp01",
+    "salary": 3333333,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "David Wesley",
+    "bbr_id": "wesleda01",
+    "salary": 3300000,
+    "years": 1,
+    "route": "mid_level",
+    "source": "2005 camp signing (roster minimum)"
+   },
+   {
+    "player": "Tayshaun Prince",
+    "bbr_id": "princta01",
+    "salary": 1763115,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Marcus Banks",
+    "bbr_id": "banksma01",
+    "salary": 1724280,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing); traded 2005-08-05"
+   },
+   {
+    "player": "Anderson Varejão",
+    "bbr_id": "varejan01",
+    "salary": 969600,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Maurice Evans",
+    "bbr_id": "evansma01",
+    "salary": 771123,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Houston Rockets": [
+   {
+    "player": "Steve Francis",
+    "bbr_id": "francst01",
+    "salary": 13700000,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Doug Christie",
+    "bbr_id": "chrisdo01",
+    "salary": 8200000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing); traded 2005-08-19"
+   },
+   {
+    "player": "Cuttino Mobley",
+    "bbr_id": "moblecu01",
+    "salary": 6374875,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Yao Ming",
+    "bbr_id": "mingya01",
+    "salary": 5594906,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Eddie Griffin",
+    "bbr_id": "griffed01",
+    "salary": 5000000,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Gordan Giricek",
+    "bbr_id": "giricgo01",
+    "salary": 4748755,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "George Lynch",
+    "bbr_id": "lynchge01",
+    "salary": 3200000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing); traded 2005-08-19"
+   },
+   {
+    "player": "Fred Jones",
+    "bbr_id": "jonesfr01",
+    "salary": 2328843,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Gerald Green",
+    "bbr_id": "greenge01",
+    "salary": 2162880,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 8 at 120%"
+   },
+   {
+    "player": "Jamal Sampson",
+    "bbr_id": "sampsja01",
+    "salary": 920248,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Nikoloz Tskitishvili",
+    "bbr_id": "tskitni01",
+    "salary": 745248,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Esteban Batista",
+    "bbr_id": "batises01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Sharrod Ford",
+    "bbr_id": "fordsh02",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Indiana Pacers": [
+   {
+    "player": "Jermaine O'Neal",
+    "bbr_id": "onealje01",
+    "salary": 17142857,
+    "years": 5,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Jalen Rose",
+    "bbr_id": "roseja01",
+    "salary": 15694250,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Jamaal Tinsley",
+    "bbr_id": "tinslja01",
+    "salary": 12000000,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Jonathan Bender",
+    "bbr_id": "bendejo01",
+    "salary": 7250000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Al Harrington",
+    "bbr_id": "harrial01",
+    "salary": 6957500,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Ron Artest",
+    "bbr_id": "artesro01",
+    "salary": 6842105,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Scot Pollard",
+    "bbr_id": "pollasc01",
+    "salary": 6274937,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Jeff Foster",
+    "bbr_id": "fosteje01",
+    "salary": 5000000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Rashad McCants",
+    "bbr_id": "mccanra01",
+    "salary": 1619280,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 13 at 120%"
+   },
+   {
+    "player": "Smush Parker",
+    "bbr_id": "parkesm01",
+    "salary": 1087558,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Anthony Roberson",
+    "bbr_id": "roberan02",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Melvin Sanders",
+    "bbr_id": "sandeme01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Von Wafer",
+    "bbr_id": "wafervo01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Derrick Zimmerman",
+    "bbr_id": "zimmede01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Los Angeles Clippers": [
+   {
+    "player": "Elton Brand",
+    "bbr_id": "brandel01",
+    "salary": 13700000,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Lamar Odom",
+    "bbr_id": "odomla01",
+    "salary": 12000000,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Bobby Simmons",
+    "bbr_id": "simmobo01",
+    "salary": 11145893,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Corey Maggette",
+    "bbr_id": "maggeco01",
+    "salary": 7000000,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Quentin Richardson",
+    "bbr_id": "richaqu01",
+    "salary": 5008212,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Chris Wilcox",
+    "bbr_id": "wilcoch01",
+    "salary": 2812239,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Chris Kaman",
+    "bbr_id": "kamanch01",
+    "salary": 2753760,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Michael Doleac",
+    "bbr_id": "doleami01",
+    "salary": 2685176,
+    "years": 4,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Andris Biedriņš",
+    "bbr_id": "biedran01",
+    "salary": 2677200,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Melvin Ely",
+    "bbr_id": "elyme01",
+    "salary": 2178000,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Antoine Wright",
+    "bbr_id": "wrighan01",
+    "salary": 1888680,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 10 at 120%"
+   },
+   {
+    "player": "Michael Bradley",
+    "bbr_id": "bradlmi01",
+    "salary": 771123,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Ryan Gomes",
+    "bbr_id": "gomesry01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Los Angeles Lakers": [
+   {
+    "player": "Shaquille O'Neal",
+    "bbr_id": "onealsh01",
+    "salary": 30642861,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Kobe Bryant",
+    "bbr_id": "bryanko01",
+    "salary": 14726098,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Jim Jackson",
+    "bbr_id": "jacksji01",
+    "salary": 4601302,
+    "years": 2,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Chucky Atkins",
+    "bbr_id": "atkinch01",
+    "salary": 4500000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Kareem Rush",
+    "bbr_id": "rushka01",
+    "salary": 1810616,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Qyntel Woods",
+    "bbr_id": "woodsqy01",
+    "salary": 1795757,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "vazqufr01",
+    "bbr_id": "vazqufr01",
+    "salary": 1318920,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 17 at 120%"
+   },
+   {
+    "player": "Viktor Khryapa",
+    "bbr_id": "khryavi01",
+    "salary": 1189200,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Brian Cook",
+    "bbr_id": "cookbr01",
+    "salary": 1038960,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Luke Walton",
+    "bbr_id": "waltolu01",
+    "salary": 894373,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Trevor Ariza",
+    "bbr_id": "arizatr01",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Billy Thomas",
+    "bbr_id": "thomabi01",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Damien Wilkins",
+    "bbr_id": "wilkida02",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Alan Anderson",
+    "bbr_id": "anderal01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Lou Williams",
+    "bbr_id": "willilo02",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Memphis Grizzlies": [
+   {
+    "player": "Pau Gasol",
+    "bbr_id": "gasolpa01",
+    "salary": 11778425,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Mike Miller",
+    "bbr_id": "millemi01",
+    "salary": 11206817,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Mark Blount",
+    "bbr_id": "blounma01",
+    "salary": 9386664,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Jason Williams",
+    "bbr_id": "willija02",
+    "salary": 7562500,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "James Posey",
+    "bbr_id": "poseyja01",
+    "salary": 5750000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Dion Glover",
+    "bbr_id": "glovedi01",
+    "salary": 4425661,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Trenton Hassell",
+    "bbr_id": "hassetr01",
+    "salary": 4171924,
+    "years": 5,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Stromile Swift",
+    "bbr_id": "swiftst01",
+    "salary": 3682260,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Charlie Villanueva",
+    "bbr_id": "villach01",
+    "salary": 1538400,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 14 at 120%"
+   },
+   {
+    "player": "Dahntay Jones",
+    "bbr_id": "jonesda02",
+    "salary": 1223160,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Matt Barnes",
+    "bbr_id": "barnema02",
+    "salary": 894373,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "José Calderón",
+    "bbr_id": "caldejo01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Jason Maxiell",
+    "bbr_id": "maxieja01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Aaron Miles",
+    "bbr_id": "milesaa01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Miami Heat": [
+   {
+    "player": "Eddie Jones",
+    "bbr_id": "jonesed02",
+    "salary": 14576250,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing); traded 2005-08-05"
+   },
+   {
+    "player": "Brian Grant",
+    "bbr_id": "grantbr01",
+    "salary": 14336220,
+    "years": 2,
+    "route": "existing",
+    "source": "Miami contract_schedules.json"
+   },
+   {
+    "player": "Matt Harpring",
+    "bbr_id": "harprma01",
+    "salary": 7954111,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Donyell Marshall",
+    "bbr_id": "marshdo01",
+    "salary": 6337327,
+    "years": 3,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Anthony Johnson",
+    "bbr_id": "johnsan02",
+    "salary": 5000000,
+    "years": 3,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Mike James",
+    "bbr_id": "jamesmi01",
+    "salary": 3812749,
+    "years": 1,
+    "route": "existing",
+    "source": "Miami contract_schedules.json"
+   },
+   {
+    "player": "Mehmet Okur",
+    "bbr_id": "okurme01",
+    "salary": 3110381,
+    "years": 4,
+    "route": "existing",
+    "source": "Miami contract_schedules.json"
+   },
+   {
+    "player": "DeShawn Stevenson",
+    "bbr_id": "stevede01",
+    "salary": 2989469,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new); traded 2005-09-02"
+   },
+   {
+    "player": "dwyane_wade",
+    "bbr_id": "dwyane_wade",
+    "salary": 2526600,
+    "years": 2,
+    "route": "existing",
+    "source": "Miami contract_schedules.json"
+   },
+   {
+    "player": "Caron Butler",
+    "bbr_id": "butleca01",
+    "salary": 2461617,
+    "years": 1,
+    "route": "existing",
+    "source": "Miami contract_schedules.json"
+   },
+   {
+    "player": "Sebastian Telfair",
+    "bbr_id": "telfase01",
+    "salary": 1010040,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale); traded 2005-08-05"
+   },
+   {
+    "player": "Eddie Gill",
+    "bbr_id": "gilled01",
+    "salary": 835810,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Mike Wilks",
+    "bbr_id": "wilksmi01",
+    "salary": 745248,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Matt Carroll",
+    "bbr_id": "carroma01",
+    "salary": 719373,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Milwaukee Bucks": [
+   {
+    "player": "Tim Thomas",
+    "bbr_id": "thomati01",
+    "salary": 13975000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Michael Redd",
+    "bbr_id": "reddmi01",
+    "salary": 11641552,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Dan Gadzuric",
+    "bbr_id": "gadzuda01",
+    "salary": 8677591,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Desmond Mason",
+    "bbr_id": "masonde01",
+    "salary": 7549982,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Joe Smith",
+    "bbr_id": "smithjo02",
+    "salary": 6353200,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Danny Fortson",
+    "bbr_id": "fortsda01",
+    "salary": 6207670,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing); traded 2005-08-26"
+   },
+   {
+    "player": "Damon Jones",
+    "bbr_id": "jonesda01",
+    "salary": 3375405,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Marcus Haislip",
+    "bbr_id": "haislma01",
+    "salary": 2000600,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Jermaine Jackson",
+    "bbr_id": "jacksje01",
+    "salary": 900498,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Pape Sow",
+    "bbr_id": "sowpa01",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Jackson Vroman",
+    "bbr_id": "vromaja01",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Mario Kasun",
+    "bbr_id": "kasunma01",
+    "salary": 641748,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Brandon Bass",
+    "bbr_id": "bassbr01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Minnesota Timberwolves": [
+   {
+    "player": "Kevin Garnett",
+    "bbr_id": "garneke01",
+    "salary": 16800000,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Grant Hill",
+    "bbr_id": "hillgr01",
+    "salary": 15694250,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Marcus Camby",
+    "bbr_id": "cambyma01",
+    "salary": 12483810,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Jerry Stackhouse",
+    "bbr_id": "stackje01",
+    "salary": 7381562,
+    "years": 3,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Alonzo Mourning",
+    "bbr_id": "mournal01",
+    "salary": 3904482,
+    "years": 1,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Tony Delk",
+    "bbr_id": "delkto01",
+    "salary": 3375000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Voshon Lenard",
+    "bbr_id": "lenarvo01",
+    "salary": 1138500,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "C.J. Miles",
+    "bbr_id": "milescj01",
+    "salary": 905640,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 26 at 120%"
+   },
+   {
+    "player": "Ryan Bowen",
+    "bbr_id": "bowenry01",
+    "salary": 900498,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "T.J. Ford",
+    "bbr_id": "fordtj01",
+    "salary": 719373,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "James Thomas",
+    "bbr_id": "thomaja02",
+    "salary": 641748,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Kevin Burleson",
+    "bbr_id": "burleke01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Lawrence Roberts",
+    "bbr_id": "roberla01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "New Jersey Nets": [
+   {
+    "player": "Jason Kidd",
+    "bbr_id": "kiddja01",
+    "salary": 17278333,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Kenyon Martin",
+    "bbr_id": "martike01",
+    "salary": 10539093,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Wally Szczerbiak",
+    "bbr_id": "szczewa02",
+    "salary": 10000000,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Richard Jefferson",
+    "bbr_id": "jefferi01",
+    "salary": 9422834,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Jason Collins",
+    "bbr_id": "collija04",
+    "salary": 4740474,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Earl Watson",
+    "bbr_id": "watsoea01",
+    "salary": 3728347,
+    "years": 5,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Channing Frye",
+    "bbr_id": "fryech01",
+    "salary": 3144240,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 4 at 120%"
+   },
+   {
+    "player": "Darrick Martin",
+    "bbr_id": "martida01",
+    "salary": 1138500,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Mikki Moore",
+    "bbr_id": "mooremi01",
+    "salary": 965185,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Quinton Ross",
+    "bbr_id": "rossqu01",
+    "salary": 641748,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Devin Green",
+    "bbr_id": "greende01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Linas Kleiza",
+    "bbr_id": "kleizli01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "John Lucas III",
+    "bbr_id": "lucasjo02",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "New Orleans Hornets": [
+   {
+    "player": "Baron Davis",
+    "bbr_id": "davisba01",
+    "salary": 13700000,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Kyle Korver",
+    "bbr_id": "korveky01",
+    "salary": 8783538,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Shane Battier",
+    "bbr_id": "battish01",
+    "salary": 7276965,
+    "years": 5,
+    "route": "cap_room",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Steven Hunter",
+    "bbr_id": "huntest01",
+    "salary": 4254046,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Antonio McDyess",
+    "bbr_id": "mcdyean01",
+    "salary": 4007623,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Eric Piatkowski",
+    "bbr_id": "piatker01",
+    "salary": 2666667,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing); traded 2005-08-19"
+   },
+   {
+    "player": "Robert Swift",
+    "bbr_id": "swiftro01",
+    "salary": 1512840,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "David West",
+    "bbr_id": "westda01",
+    "salary": 1334160,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "John Thomas",
+    "bbr_id": "thomajo02",
+    "salary": 1029873,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Ime Udoka",
+    "bbr_id": "udokaim01",
+    "salary": 719373,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "fitchge01",
+    "bbr_id": "fitchge01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Randy Holcomb",
+    "bbr_id": "holcora01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Alex Scales",
+    "bbr_id": "scaleal01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "New Orleans/Oklahoma City Hornets": [
+   {
+    "player": "Danny Granger",
+    "bbr_id": "grangda01",
+    "salary": 2847360,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 5 at 120%"
+   }
+  ],
+  "New York Knicks": [
+   {
+    "player": "Anfernee Hardaway",
+    "bbr_id": "hardaan01",
+    "salary": 15750000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Shandon Anderson",
+    "bbr_id": "andersh01",
+    "salary": 7900000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Nenad Krstić",
+    "bbr_id": "krstine01",
+    "salary": 7155795,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Clarence Weatherspoon",
+    "bbr_id": "weathcl01",
+    "salary": 6353200,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Jamaal Magloire",
+    "bbr_id": "magloja01",
+    "salary": 5000000,
+    "years": 4,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Austin Croshere",
+    "bbr_id": "croshau01",
+    "salary": 4800000,
+    "years": 3,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Milt Palacio",
+    "bbr_id": "palacmi01",
+    "salary": 4040593,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Deron Williams",
+    "bbr_id": "willide01",
+    "salary": 2586120,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 6 at 120%"
+   },
+   {
+    "player": "Andre Iguodala",
+    "bbr_id": "iguodan01",
+    "salary": 2443920,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Michael Sweetney",
+    "bbr_id": "sweetmi01",
+    "salary": 2116920,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Charles Smith",
+    "bbr_id": "smithch04",
+    "salary": 1029873,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Tony Allen",
+    "bbr_id": "allento01",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Kevin Martin",
+    "bbr_id": "martike02",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Awvee Storey",
+    "bbr_id": "storeaw01",
+    "salary": 641748,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Luther Head",
+    "bbr_id": "headlu01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Salim Stoudamire",
+    "bbr_id": "stoudsa01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Orlando Magic": [
+   {
+    "player": "Tracy McGrady",
+    "bbr_id": "mcgratr01",
+    "salary": 15694250,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Dwight Howard",
+    "bbr_id": "howardw01",
+    "salary": 4493160,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Marvin Williams",
+    "bbr_id": "willima02",
+    "salary": 4340520,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 1 at 120%; traded 2005-08-26"
+   },
+   {
+    "player": "Drew Gooden",
+    "bbr_id": "goodedr01",
+    "salary": 4065811,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Jeff McInnis",
+    "bbr_id": "mcinnje01",
+    "salary": 3904376,
+    "years": 3,
+    "route": "cap_room",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Pat Garrity",
+    "bbr_id": "garripa01",
+    "salary": 3231250,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Fred Hoiberg",
+    "bbr_id": "hoibefr01",
+    "salary": 2895054,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new); traded 2005-08-12"
+   },
+   {
+    "player": "Hakim Warrick",
+    "bbr_id": "warriha01",
+    "salary": 1794240,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 11 at 120%"
+   },
+   {
+    "player": "Chris Andersen",
+    "bbr_id": "anderch01",
+    "salary": 1792069,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Rafael Araújo",
+    "bbr_id": "araujra01",
+    "salary": 1141560,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale); traded 2005-08-12"
+   },
+   {
+    "player": "Zoran Planinic",
+    "bbr_id": "planizo01",
+    "salary": 1127280,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing); traded 2005-08-26"
+   },
+   {
+    "player": "Keith Bogans",
+    "bbr_id": "boganke01",
+    "salary": 894373,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "James Jones",
+    "bbr_id": "jonesja02",
+    "salary": 894373,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Zaza Pachulia",
+    "bbr_id": "pachuza01",
+    "salary": 894373,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Chris Duhon",
+    "bbr_id": "duhonch01",
+    "salary": 641748,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Anthony Grundy",
+    "bbr_id": "grundan01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Fabricio Oberto",
+    "bbr_id": "obertfa01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Philadelphia 76ers": [
+   {
+    "player": "Allen Iverson",
+    "bbr_id": "iversal01",
+    "salary": 15054322,
+    "years": 3,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Zydrunas Ilgauskas",
+    "bbr_id": "ilgauzy01",
+    "salary": 14862385,
+    "years": 3,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Samuel Dalembert",
+    "bbr_id": "dalemsa01",
+    "salary": 7673355,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Aaron McKie",
+    "bbr_id": "mckieaa01",
+    "salary": 6000000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Kenny Thomas",
+    "bbr_id": "thomake01",
+    "salary": 5714286,
+    "years": 5,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Marc Jackson",
+    "bbr_id": "jacksma02",
+    "salary": 4550000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "John Salmons",
+    "bbr_id": "salmojo01",
+    "salary": 1669001,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Pavel Podkolzin",
+    "bbr_id": "podkopa01",
+    "salary": 1592400,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Darrell Armstrong",
+    "bbr_id": "armstda01",
+    "salary": 1510936,
+    "years": 1,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "salary": 1029873,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Willie Green",
+    "bbr_id": "greenwi01",
+    "salary": 894373,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Keith McLeod",
+    "bbr_id": "mcleoke01",
+    "salary": 894373,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Jackie Butler",
+    "bbr_id": "butleja01",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Charlie Bell",
+    "bbr_id": "bellch01",
+    "salary": 771123,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Terence Morris",
+    "bbr_id": "morrite01",
+    "salary": 771123,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Phoenix Suns": [
+   {
+    "player": "Stephon Marbury",
+    "bbr_id": "marbust01",
+    "salary": 15356250,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Shawn Marion",
+    "bbr_id": "mariosh01",
+    "salary": 13700000,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Joe Johnson",
+    "bbr_id": "johnsjo02",
+    "salary": 10634212,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Michael Olowokandi",
+    "bbr_id": "olowomi01",
+    "salary": 5400000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Chris Mihm",
+    "bbr_id": "mihmch01",
+    "salary": 5100714,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Amar'e Stoudemire",
+    "bbr_id": "stoudam01",
+    "salary": 2589023,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Josh Childress",
+    "bbr_id": "childjo01",
+    "salary": 2058000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Casey Jacobsen",
+    "bbr_id": "jacobca01",
+    "salary": 1780153,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Jake Voskuhl",
+    "bbr_id": "voskuja01",
+    "salary": 1666667,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Calbert Cheaney",
+    "bbr_id": "cheanca01",
+    "salary": 1249379,
+    "years": 2,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Julius Hodge",
+    "bbr_id": "hodgeju01",
+    "salary": 975600,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 24 at 120%"
+   },
+   {
+    "player": "Leandro Barbosa",
+    "bbr_id": "barbole01",
+    "salary": 930600,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Zendon Hamilton",
+    "bbr_id": "hamilze01",
+    "salary": 835810,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Pat Burke",
+    "bbr_id": "burkepa01",
+    "salary": 745248,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Will Bynum",
+    "bbr_id": "bynumwi01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Portland Trail Blazers": [
+   {
+    "player": "Zach Randolph",
+    "bbr_id": "randoza01",
+    "salary": 10800000,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Damon Stoudamire",
+    "bbr_id": "stoudda01",
+    "salary": 9324133,
+    "years": 3,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Derek Anderson",
+    "bbr_id": "anderde01",
+    "salary": 9093000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Rasheed Wallace",
+    "bbr_id": "wallara01",
+    "salary": 7665527,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Joel Przybilla",
+    "bbr_id": "przybjo01",
+    "salary": 6408804,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Ruben Patterson",
+    "bbr_id": "patteru01",
+    "salary": 6353200,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Malik Rose",
+    "bbr_id": "rosema01",
+    "salary": 6008750,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Luke Jackson",
+    "bbr_id": "jackslu02",
+    "salary": 1955160,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Zarko Cabarkapa",
+    "bbr_id": "cabarza01",
+    "salary": 1404360,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Francisco García",
+    "bbr_id": "garcifr01",
+    "salary": 1253040,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 18 at 120%"
+   },
+   {
+    "player": "Travis Outlaw",
+    "bbr_id": "outlatr01",
+    "salary": 1082160,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Daniel Ewing",
+    "bbr_id": "ewingda01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Deng Gai",
+    "bbr_id": "gaide01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Sacramento Kings": [
+   {
+    "player": "Chris Webber",
+    "bbr_id": "webbech01",
+    "salary": 19125000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Mike Bibby",
+    "bbr_id": "bibbymi01",
+    "salary": 11500000,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Erick Dampier",
+    "bbr_id": "dampier01",
+    "salary": 11104594,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new); traded 2005-09-09"
+   },
+   {
+    "player": "Gerald Wallace",
+    "bbr_id": "wallage01",
+    "salary": 10121627,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Brad Miller",
+    "bbr_id": "millebr01",
+    "salary": 9714286,
+    "years": 5,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Peja Stojakovic",
+    "bbr_id": "stojape01",
+    "salary": 7500000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Jarrett Jack",
+    "bbr_id": "jackja01",
+    "salary": 1102680,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 21 at 120%"
+   },
+   {
+    "player": "Darius Songaila",
+    "bbr_id": "songada01",
+    "salary": 993808,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Sasha Vujačić",
+    "bbr_id": "vujacsa01",
+    "salary": 910440,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Anthony Carter",
+    "bbr_id": "cartean01",
+    "salary": 900498,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Beno Udrih",
+    "bbr_id": "udrihbe01",
+    "salary": 898200,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Royal Ivey",
+    "bbr_id": "iveyro01",
+    "salary": 641748,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Donell Taylor",
+    "bbr_id": "taylodo01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "San Antonio Spurs": [
+   {
+    "player": "Tim Duncan",
+    "bbr_id": "duncati01",
+    "salary": 17428571,
+    "years": 5,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Keith Van Horn",
+    "bbr_id": "vanhoke01",
+    "salary": 15694250,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Tony Parker",
+    "bbr_id": "parketo01",
+    "salary": 11896284,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Kurt Thomas",
+    "bbr_id": "thomaku01",
+    "salary": 10071076,
+    "years": 3,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Manu Ginobili",
+    "bbr_id": "ginobma01",
+    "salary": 9779425,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Rasho Nesterovic",
+    "bbr_id": "nestera01",
+    "salary": 7000000,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Orien Greene",
+    "bbr_id": "greenor01",
+    "salary": 879360,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 27 at 120%"
+   },
+   {
+    "player": "Alex Acker",
+    "bbr_id": "ackeral01",
+    "salary": 861360,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 30 at 120%"
+   },
+   {
+    "player": "D.J. Mbenga",
+    "bbr_id": "mbengdj01",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Andrés Nocioni",
+    "bbr_id": "nocioan01",
+    "salary": 816748,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "salary": 719373,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "barroea01",
+    "bbr_id": "barroea01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Travis Diener",
+    "bbr_id": "dienetr01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Noel Felix",
+    "bbr_id": "felixno01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Dwayne Jones",
+    "bbr_id": "jonesdw02",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Seattle SuperSonics": [
+   {
+    "player": "Rashard Lewis",
+    "bbr_id": "lewisra02",
+    "salary": 13843156,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Ray Allen",
+    "bbr_id": "allenra02",
+    "salary": 13700000,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Greg Ostertag",
+    "bbr_id": "ostergr01",
+    "salary": 5393300,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Vladimir Radmanovic",
+    "bbr_id": "radmavl01",
+    "salary": 5000000,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Reggie Evans",
+    "bbr_id": "evansre01",
+    "salary": 3900000,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Antonio Daniels",
+    "bbr_id": "daniean01",
+    "salary": 2500000,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Nick Collison",
+    "bbr_id": "collini01",
+    "salary": 2462100,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Andrew Bynum",
+    "bbr_id": "bynuman01",
+    "salary": 1704480,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 12 at 120%"
+   },
+   {
+    "player": "Jameer Nelson",
+    "bbr_id": "nelsoja01",
+    "salary": 1676280,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Robert Horry",
+    "bbr_id": "horryro01",
+    "salary": 1359569,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Ronald Murray",
+    "bbr_id": "murraro01",
+    "salary": 920248,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Richie Frahm",
+    "bbr_id": "frahmri01",
+    "salary": 782878,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Zeljko Rebraca",
+    "bbr_id": "rebraze01",
+    "salary": 771123,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Bernard Robinson",
+    "bbr_id": "robinbe01",
+    "salary": 641748,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Delonte West",
+    "bbr_id": "westde01",
+    "salary": 641748,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Nate Robinson",
+    "bbr_id": "robinna01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Toronto Raptors": [
+   {
+    "player": "Vince Carter",
+    "bbr_id": "cartevi01",
+    "salary": 13843156,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Scott Padgett",
+    "bbr_id": "padgesc01",
+    "salary": 10920247,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Primož Brezec",
+    "bbr_id": "brezepr01",
+    "salary": 9037036,
+    "years": 5,
+    "route": "cap_room",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Udonis Haslem",
+    "bbr_id": "hasleud01",
+    "salary": 5000000,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Tyronn Lue",
+    "bbr_id": "luety01",
+    "salary": 4878136,
+    "years": 4,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Matt Bonner",
+    "bbr_id": "bonnema01",
+    "salary": 4010894,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Hedo Turkoglu",
+    "bbr_id": "turkohe01",
+    "salary": 3652688,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Chris Bosh",
+    "bbr_id": "boshch01",
+    "salary": 3348000,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Morris Peterson",
+    "bbr_id": "petermo01",
+    "salary": 3068550,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Al Jefferson",
+    "bbr_id": "jeffeal01",
+    "salary": 1365360,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "simiewa01",
+    "bbr_id": "simiewa01",
+    "salary": 867720,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 29 at 120%"
+   },
+   {
+    "player": "Lonny Baxter",
+    "bbr_id": "baxtelo01",
+    "salary": 745248,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Rasual Butler",
+    "bbr_id": "butlera01",
+    "salary": 745248,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "David Lee",
+    "bbr_id": "leeda02",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Luke Schenscher",
+    "bbr_id": "schenlu01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Utah Jazz": [
+   {
+    "player": "Andrei Kirilenko",
+    "bbr_id": "kirilan01",
+    "salary": 11418027,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Lamond Murray",
+    "bbr_id": "murrala01",
+    "salary": 5250000,
+    "years": 1,
+    "route": "existing",
+    "source": "Miami contract_schedules.json; traded 2005-09-02"
+   },
+   {
+    "player": "Troy Hudson",
+    "bbr_id": "hudsotr01",
+    "salary": 4447240,
+    "years": 4,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Chris Paul",
+    "bbr_id": "paulch01",
+    "salary": 3487440,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 3 at 120%"
+   },
+   {
+    "player": "Ben Gordon",
+    "bbr_id": "gordobe01",
+    "salary": 2947440,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Keyon Dooling",
+    "bbr_id": "doolike01",
+    "salary": 2763371,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Jason Collier",
+    "bbr_id": "collija02",
+    "salary": 2730578,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Bostjan Nachbar",
+    "bbr_id": "nachbbo01",
+    "salary": 1867350,
+    "years": 1,
+    "route": "qualifying_offer",
+    "source": "2005 qualifying offer accepted"
+   },
+   {
+    "player": "Josh Smith",
+    "bbr_id": "smithjo03",
+    "salary": 1764480,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Kris Humphries",
+    "bbr_id": "humphkr01",
+    "salary": 1297080,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Dorell Wright",
+    "bbr_id": "wrighdo01",
+    "salary": 1052040,
+    "years": 2,
+    "route": "existing",
+    "source": "Miami contract_schedules.json; traded 2005-08-05"
+   },
+   {
+    "player": "Chris Taft",
+    "bbr_id": "taftch01",
+    "salary": 874080,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 28 at 120%"
+   },
+   {
+    "player": "Mateen Cleaves",
+    "bbr_id": "cleavma01",
+    "salary": 835810,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Amir Johnson",
+    "bbr_id": "johnsam01",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Bracey Wright",
+    "bbr_id": "wrighbr02",
+    "salary": 398762,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 simulated free agency"
+   }
+  ],
+  "Washington Wizards": [
+   {
+    "player": "Larry Hughes",
+    "bbr_id": "hughela01",
+    "salary": 14328137,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Gilbert Arenas",
+    "bbr_id": "arenagi01",
+    "salary": 10666667,
+    "years": 4,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Brendan Haywood",
+    "bbr_id": "haywobr01",
+    "salary": 8508976,
+    "years": 5,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Brevin Knight",
+    "bbr_id": "knighbr01",
+    "salary": 7776264,
+    "years": 4,
+    "route": "bird",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Etan Thomas",
+    "bbr_id": "thomaet01",
+    "salary": 5515875,
+    "years": 3,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (new)"
+   },
+   {
+    "player": "Emeka Okafor",
+    "bbr_id": "okafoem01",
+    "salary": 4020120,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   },
+   {
+    "player": "Jared Jeffries",
+    "bbr_id": "jeffrja01",
+    "salary": 2433824,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Juan Dixon",
+    "bbr_id": "dixonju01",
+    "salary": 2070835,
+    "years": 1,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Jarvis Hayes",
+    "bbr_id": "hayesja01",
+    "salary": 2011080,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (existing)"
+   },
+   {
+    "player": "Martell Webster",
+    "bbr_id": "webstma02",
+    "salary": 1988160,
+    "years": 2,
+    "route": "rookie_scale",
+    "source": "2005 rookie scale No. 9 at 120%"
+   },
+   {
+    "player": "Samaki Walker",
+    "bbr_id": "walkesa01",
+    "salary": 1457430,
+    "years": 4,
+    "route": "mid_level",
+    "source": "2005 simulated free agency"
+   },
+   {
+    "player": "Derek Fisher",
+    "bbr_id": "fishede01",
+    "salary": 1035000,
+    "years": 1,
+    "route": "minimum",
+    "source": "2005 camp signing (roster minimum)"
+   },
+   {
+    "player": "Donta Smith",
+    "bbr_id": "smithdo04",
+    "salary": 904800,
+    "years": 2,
+    "route": "existing",
+    "source": "league contract ledger 2004-05 (rookie_scale)"
+   }
+  ]
+ },
+ "payroll": {
+  "Atlanta Hawks": 55946981,
+  "Boston Celtics": 51734904,
+  "Charlotte Bobcats": 22107729,
+  "Chicago Bulls": 58511333,
+  "Cleveland Cavaliers": 60206970,
+  "Dallas Mavericks": 85034741,
+  "Denver Nuggets": 50667434,
+  "Detroit Pistons": 50429934,
+  "Golden State Warriors": 58958590,
+  "Houston Rockets": 53773279,
+  "Indiana Pacers": 81463535,
+  "Los Angeles Clippers": 65019045,
+  "Los Angeles Lakers": 65765855,
+  "Memphis Grizzlies": 62816470,
+  "Miami Heat": 66415195,
+  "Milwaukee Bucks": 63355504,
+  "Minnesota Timberwolves": 64742387,
+  "New Jersey Nets": 62795040,
+  "New Orleans Hornets": 46481371,
+  "New Orleans/Oklahoma City Hornets": 2847360,
+  "New York Knicks": 62249189,
+  "Orlando Magic": 48601961,
+  "Philadelphia 76ers": 63804298,
+  "Phoenix Suns": 63420418,
+  "Portland Trail Blazers": 62145658,
+  "Sacramento Kings": 74911643,
+  "San Antonio Spurs": 77558243,
+  "Seattle SuperSonics": 55695392,
+  "Toronto Raptors": 62279807,
+  "Utah Jazz": 41532460,
+  "Washington Wizards": 62717168
+ },
+ "unsigned_pool": [
+  {
+   "player": "Jumaine Jones",
+   "bbr_id": "jonesju01",
+   "price": 5860753,
+   "rights": "Boston Celtics"
+  },
+  {
+   "player": "Sam Cassell",
+   "bbr_id": "cassesa01",
+   "price": 5849835,
+   "rights": "Minnesota Timberwolves"
+  },
+  {
+   "player": "Brian Scalabrine",
+   "bbr_id": "scalabr01",
+   "price": 5730426,
+   "rights": "Denver Nuggets"
+  },
+  {
+   "player": "Bonzi Wells",
+   "bbr_id": "wellsbo01",
+   "price": 5722257,
+   "rights": "Memphis Grizzlies"
+  },
+  {
+   "player": "Jason Hart",
+   "bbr_id": "hartja01",
+   "price": 5710321,
+   "rights": "Detroit Pistons"
+  },
+  {
+   "player": "Eric Williams",
+   "bbr_id": "willier01",
+   "price": 5638952,
+   "rights": "New Orleans Hornets"
+  },
+  {
+   "player": "Theo Ratliff",
+   "bbr_id": "ratlith01",
+   "price": 5568870,
+   "rights": "Atlanta Hawks"
+  },
+  {
+   "player": "Adonal Foyle",
+   "bbr_id": "foylead01",
+   "price": 5494040,
+   "rights": "Sacramento Kings"
+  },
+  {
+   "player": "Marcus Fizer",
+   "bbr_id": "fizerma01",
+   "price": 5469579,
+   "rights": "New Jersey Nets"
+  },
+  {
+   "player": "Ira Newble",
+   "bbr_id": "newblir01",
+   "price": 5452158,
+   "rights": "Houston Rockets"
+  },
+  {
+   "player": "Rafer Alston",
+   "bbr_id": "alstora01",
+   "price": 5436207,
+   "rights": null
+  },
+  {
+   "player": "Bruce Bowen",
+   "bbr_id": "bowenbr01",
+   "price": 5359815,
+   "rights": "Chicago Bulls"
+  },
+  {
+   "player": "Nick Van Exel",
+   "bbr_id": "vanexni01",
+   "price": 4476534,
+   "rights": "Boston Celtics"
+  },
+  {
+   "player": "Kwame Brown",
+   "bbr_id": "brownkw01",
+   "price": 4210500,
+   "rights": "Washington Wizards"
+  },
+  {
+   "player": "Toni Kukoc",
+   "bbr_id": "kukocto01",
+   "price": 4124110,
+   "rights": "New Jersey Nets"
+  },
+  {
+   "player": "Othella Harrington",
+   "bbr_id": "harriot01",
+   "price": 4116885,
+   "rights": "New York Knicks"
+  },
+  {
+   "player": "Michael Ruffin",
+   "bbr_id": "ruffimi01",
+   "price": 4065551,
+   "rights": "New Jersey Nets"
+  },
+  {
+   "player": "Loren Woods",
+   "bbr_id": "woodslo01",
+   "price": 4016611,
+   "rights": "Atlanta Hawks"
+  },
+  {
+   "player": "Devean George",
+   "bbr_id": "georgde01",
+   "price": 3799021,
+   "rights": "Los Angeles Lakers"
+  },
+  {
+   "player": "Bo Outlaw",
+   "bbr_id": "outlabo01",
+   "price": 3678530,
+   "rights": "Charlotte Bobcats"
+  },
+  {
+   "player": "Alan Henderson",
+   "bbr_id": "hendeal01",
+   "price": 3484171,
+   "rights": "Utah Jazz"
+  },
+  {
+   "player": "Raja Bell",
+   "bbr_id": "bellra01",
+   "price": 3474661,
+   "rights": "Miami Heat"
+  },
+  {
+   "player": "Dale Davis",
+   "bbr_id": "davisda01",
+   "price": 3407046,
+   "rights": "New York Knicks"
+  },
+  {
+   "player": "Howard Eisley",
+   "bbr_id": "eisleho01",
+   "price": 3395115,
+   "rights": "Portland Trail Blazers"
+  },
+  {
+   "player": "DerMarr Johnson",
+   "bbr_id": "johnsde03",
+   "price": 3375031,
+   "rights": "San Antonio Spurs"
+  },
+  {
+   "player": "Mark Madsen",
+   "bbr_id": "madsema01",
+   "price": 3349146,
+   "rights": "Denver Nuggets"
+  },
+  {
+   "player": "Jerome James",
+   "bbr_id": "jamesje01",
+   "price": 3336487,
+   "rights": "Seattle SuperSonics"
+  },
+  {
+   "player": "Jacque Vaughn",
+   "bbr_id": "vaughja01",
+   "price": 3231109,
+   "rights": "Minnesota Timberwolves"
+  },
+  {
+   "player": "Jon Barry",
+   "bbr_id": "barryjo01",
+   "price": 2876059,
+   "rights": "Indiana Pacers"
+  },
+  {
+   "player": "Jarron Collins",
+   "bbr_id": "collija03",
+   "price": 2835676,
+   "rights": "Utah Jazz"
+  },
+  {
+   "player": "DeSagana Diop",
+   "bbr_id": "diopde01",
+   "price": 2756031,
+   "rights": "Cleveland Cavaliers"
+  },
+  {
+   "player": "Anthony Goldwire",
+   "bbr_id": "goldwan01",
+   "price": 2720510,
+   "rights": "Golden State Warriors"
+  },
+  {
+   "player": "Jake Tsakalidis",
+   "bbr_id": "tsakaja01",
+   "price": 2670428,
+   "rights": "Memphis Grizzlies"
+  },
+  {
+   "player": "Sean Marks",
+   "bbr_id": "marksse01",
+   "price": 2639817,
+   "rights": "Los Angeles Lakers"
+  },
+  {
+   "player": "Justin Reed",
+   "bbr_id": "reedju01",
+   "price": 641748,
+   "rights": "Denver Nuggets"
+  },
+  {
+   "player": "Josh Davis",
+   "bbr_id": "davisjo02",
+   "price": 719373,
+   "rights": "Sacramento Kings"
+  },
+  {
+   "player": "Antonio Burks",
+   "bbr_id": "burksan01",
+   "price": 641748,
+   "rights": "Dallas Mavericks"
+  },
+  {
+   "player": "Bryon Russell",
+   "bbr_id": "russebr01",
+   "price": 1138500,
+   "rights": null
+  },
+  {
+   "player": "Walter McCarty",
+   "bbr_id": "mccarwa01",
+   "price": 2586334,
+   "rights": "Boston Celtics"
+  },
+  {
+   "player": "Brian Skinner",
+   "bbr_id": "skinnbr01",
+   "price": 2580177,
+   "rights": "Washington Wizards"
+  },
+  {
+   "player": "Eddie House",
+   "bbr_id": "houseed01",
+   "price": 2579484,
+   "rights": "Los Angeles Clippers"
+  },
+  {
+   "player": "Clifford Robinson",
+   "bbr_id": "robincl02",
+   "price": 2567703,
+   "rights": "Washington Wizards"
+  },
+  {
+   "player": "Vitaly Potapenko",
+   "bbr_id": "potapvi01",
+   "price": 2565541,
+   "rights": "Golden State Warriors"
+  },
+  {
+   "player": "Laron Profit",
+   "bbr_id": "profila01",
+   "price": 2551032,
+   "rights": "Los Angeles Lakers"
+  },
+  {
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "price": 2550610,
+   "rights": "New Jersey Nets"
+  },
+  {
+   "player": "Dikembe Mutombo",
+   "bbr_id": "mutomdi01",
+   "price": 2514618,
+   "rights": "New York Knicks"
+  },
+  {
+   "player": "Lindsey Hunter",
+   "bbr_id": "hunteli01",
+   "price": 1138500,
+   "rights": "Washington Wizards"
+  },
+  {
+   "player": "Adrian Griffin",
+   "bbr_id": "griffad01",
+   "price": 1707090,
+   "rights": "Houston Rockets"
+  },
+  {
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "price": 1390879,
+   "rights": "New Jersey Nets"
+  },
+  {
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "price": 1138500,
+   "rights": "Minnesota Timberwolves"
+  }
+ ],
+ "left_the_league": [
+  {
+   "player": "akyolce01",
+   "bbr_id": "akyolce01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Cory Alexander",
+   "bbr_id": "alexaco01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Kenny Anderson",
+   "bbr_id": "anderke01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Maurice Baker",
+   "bbr_id": "bakerma01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Curtis Borchardt",
+   "bbr_id": "borchcu01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Shawn Bradley",
+   "bbr_id": "bradlsh01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Damone Brown",
+   "bbr_id": "brownda02",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Kedrick Brown",
+   "bbr_id": "brownke01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Tierre Brown",
+   "bbr_id": "brownti01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Elden Campbell",
+   "bbr_id": "campbel01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Lionel Chalmers",
+   "bbr_id": "chalmli01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Derrick Coleman",
+   "bbr_id": "colemde01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Erik Daniels",
+   "bbr_id": "danieer01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Andrew DeClercq",
+   "bbr_id": "declean01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Vlade Divac",
+   "bbr_id": "divacvl01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Predrag Drobnjak",
+   "bbr_id": "drobnpr01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Corsley Edwards",
+   "bbr_id": "edwarco01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Obinna Ekezie",
+   "bbr_id": "ekeziob01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Andre Emmett",
+   "bbr_id": "emmetan01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Luis Flores",
+   "bbr_id": "florelu01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Matt Freije",
+   "bbr_id": "freijma01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Alex Garcia",
+   "bbr_id": "garcial01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "gelabmi01",
+   "bbr_id": "gelabmi01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Kendall Gill",
+   "bbr_id": "gillke01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Lucious Harris",
+   "bbr_id": "harrilu01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Donnell Harvey",
+   "bbr_id": "harvedo01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "herveax01",
+   "bbr_id": "herveax01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Ryan Humphrey",
+   "bbr_id": "humphry01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Brandon Hunter",
+   "bbr_id": "huntebr01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "ilicmi01",
+   "bbr_id": "ilicmi01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "ilyaser01",
+   "bbr_id": "ilyaser01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Horace Jenkins",
+   "bbr_id": "jenkiho01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Britton Johnsen",
+   "bbr_id": "johnsbr01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Mark Jones",
+   "bbr_id": "jonesma03",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Kerry Kittles",
+   "bbr_id": "kittlke01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Brandin Knight",
+   "bbr_id": "knighbr02",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Ibo Kutluay",
+   "bbr_id": "kutluib01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Christian Laettner",
+   "bbr_id": "laettch01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Raül López",
+   "bbr_id": "lopezra01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "lorbeer01",
+   "bbr_id": "lorbeer01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "mahinia01",
+   "bbr_id": "mahinia01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Jelani McCoy",
+   "bbr_id": "mccoyje01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Jerome Moiso",
+   "bbr_id": "moisoje01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "morrira01",
+   "bbr_id": "morrira01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Anthony Peeler",
+   "bbr_id": "peelean01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Aleksandar Radojević",
+   "bbr_id": "radojal01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Glenn Robinson",
+   "bbr_id": "robingl01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Rodney Rogers",
+   "bbr_id": "rogerro01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "sanchri01",
+   "bbr_id": "sanchri01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Daniel Santiago",
+   "bbr_id": "santida01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Tamar Slay",
+   "bbr_id": "slayta01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "slokaur01",
+   "bbr_id": "slokaur01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Theron Smith",
+   "bbr_id": "smithth01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Latrell Sprewell",
+   "bbr_id": "sprewla01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Michael Stewart",
+   "bbr_id": "stewami01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Erick Strickland",
+   "bbr_id": "stricer01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Bruno Šundov",
+   "bbr_id": "sundobr01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Bob Sura",
+   "bbr_id": "surabo01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Robert Traylor",
+   "bbr_id": "traylro01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Dajuan Wagner",
+   "bbr_id": "wagneda02",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Charlie Ward",
+   "bbr_id": "wardch01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Jahidi White",
+   "bbr_id": "whiteja01",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Frank Williams",
+   "bbr_id": "willifr02",
+   "basis": "no real 2005-06 role"
+  },
+  {
+   "player": "Wang Zhizhi",
+   "bbr_id": "zhizhwa01",
+   "basis": "no real 2005-06 role"
+  }
+ ]
+}
