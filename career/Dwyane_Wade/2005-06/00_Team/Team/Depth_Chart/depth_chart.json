@@ -1,99 +1,48 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2005-10-01",
+ "as_of": "2005-10-26",
  "team": "Miami Heat",
- "status": "carried_over",
- "game_ready": false,
- "basis": "2004-05 closing order (career/Dwyane_Wade/2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/depth_chart.json) for the players who stay; training camp decides the new order.",
+ "status": "camp_decision",
+ "game_ready": true,
+ "basis": "Training-camp decision on 2005-10-26: staff scores (prior value 0.6, preseason production 0.4) with one evaluation draw per close battle",
  "positions": {
   "PG": [
-   "Mike James"
+   "Mike James",
+   "Anthony Johnson",
+   "Sam Cassell",
+   "Mike Wilks",
+   "Eddie Gill"
   ],
   "SG": [
-   "Dwyane Wade"
+   "Dwyane Wade",
+   "Bonzi Wells",
+   "Eddie Jones",
+   "Matt Carroll",
+   "DeShawn Stevenson"
   ],
   "SF": [
+   "Caron Butler",
    "Matt Harpring",
-   "Caron Butler"
+   "Sebastian Telfair",
+   "Jumaine Jones"
   ],
   "PF": [
-   "Donyell Marshall",
-   "Mehmet Okur"
+   "Mehmet Okur",
+   "Donyell Marshall"
   ],
   "C": [
-   "Brian Grant"
+   "Brian Grant",
+   "Theo Ratliff",
+   "Adonal Foyle",
+   "Kwame Brown"
   ]
  },
- "unassigned_draft_rights": [
-  {
-   "name": "Uroš Slokar",
-   "positions": [
-    "F"
-   ],
-   "status": "draft_rights_unsigned"
-  }
- ],
- "unassigned_arrivals": [
-  {
-   "name": "Eddie Jones",
-   "positions": [
-    "SG",
-    "SF"
-   ],
-   "status": "under_contract",
-   "date": "2005-10-01"
-  },
-  {
-   "name": "Anthony Johnson",
-   "positions": [
-    "PG"
-   ],
-   "status": "under_contract",
-   "date": "2005-10-01"
-  },
-  {
-   "name": "DeShawn Stevenson",
-   "positions": [
-    "SG"
-   ],
-   "status": "under_contract",
-   "date": "2005-10-01"
-  },
-  {
-   "name": "Sebastian Telfair",
-   "positions": [
-    "SF"
-   ],
-   "status": "under_contract",
-   "date": "2005-10-01"
-  },
-  {
-   "name": "Eddie Gill",
-   "positions": [
-    "PG"
-   ],
-   "status": "under_contract",
-   "date": "2005-10-01"
-  },
-  {
-   "name": "Mike Wilks",
-   "positions": [
-    "PG"
-   ],
-   "status": "under_contract",
-   "date": "2005-10-01"
-  },
-  {
-   "name": "Matt Carroll",
-   "positions": [
-    "SG"
-   ],
-   "status": "under_contract",
-   "date": "2005-10-01"
-  }
- ],
+ "battles_drawn": {
+  "SF": "Caron Butler"
+ },
+ "unassigned_draft_rights": [],
+ "unassigned_arrivals": [],
  "unavailable": [],
- "departed": [],
- "corrections": []
+ "departed": []
 }

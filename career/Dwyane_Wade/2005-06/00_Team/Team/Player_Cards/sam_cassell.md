@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 35 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 4, 2005 · **Statistics through:** 2005-10-25 
+**Opening assessment:** October 4, 2005 · **Statistics through:** 2005-10-26 
 
 **Contract/control:** Camp contract from October 4, 2005: non-guaranteed minimum $1,138,500, guaranteed if still on the roster on 2006-01-10. (register, 2005-10-04) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Arrival on October 4, 2005; Miami's coaching staff has not assigned a role. The depth chart lists him as an unassigned arrival.
+**Role:** Reserve outside the planned rotation (staff rotation dated 2005-10-26, [record](../Depth_Chart/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -29,11 +29,12 @@ Unassessed.
 | Date | Finding and effect on role or grade | Evidence |
 | --- | --- | --- |
 | October 4, 2005 | Camp invitee; no role assigned. | [Record](../../../04_Training_Camp/camp_roster.json) |
+| 2005-10-26 | Staff rotation of 2005-10-26: reserve outside the planned rotation. | [Rotation](../Depth_Chart/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../04_Training_Camp/camp_roster.json), 2004-05 simulated season totals.
-- **Not yet established:** height, weight, role, staff grades.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-10-26.
 
 <!-- yearly-statistics:start -->
 

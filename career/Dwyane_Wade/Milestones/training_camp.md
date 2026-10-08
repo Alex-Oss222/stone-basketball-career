@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-10-25 · Miami Heat · active
+Career date: 2005-10-26 · Miami Heat · active
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -17,28 +17,28 @@ Activation: The club opens camp and records participation, evaluation or an actu
 | Camp opened | 2005-10-04 |
 | Participation | under_contract |
 | Current role | Starting SG; staff plan 34 minutes |
-| Staff rotation minutes | N/A |
-| Closed preseason games | 6 |
+| Staff rotation minutes | 34.0 |
+| Closed preseason games | 7 |
 | Camp availability | No camp injury restriction recorded |
 
 ## Current depth chart
 
-Snapshot: 2005-10-01. Draft rights and unassigned arrivals are not assigned minutes.
+Snapshot: 2005-10-26. Draft rights and unassigned arrivals are not assigned minutes.
 
 | Position | Staff ordering | Interpretation |
 | --- | --- | --- |
-| PG | Mike James | Staff ordering; not a future minutes promise |
-| SG | Dwyane Wade | Staff ordering; not a future minutes promise |
-| SF | Matt Harpring, Caron Butler | Staff ordering; not a future minutes promise |
-| PF | Donyell Marshall, Mehmet Okur | Staff ordering; not a future minutes promise |
-| C | Brian Grant | Staff ordering; not a future minutes promise |
+| PG | Mike James, Anthony Johnson, Sam Cassell, Mike Wilks, Eddie Gill | Staff ordering; not a future minutes promise |
+| SG | Dwyane Wade, Bonzi Wells, Eddie Jones, Matt Carroll, DeShawn Stevenson | Staff ordering; not a future minutes promise |
+| SF | Caron Butler, Matt Harpring, Sebastian Telfair, Jumaine Jones | Staff ordering; not a future minutes promise |
+| PF | Mehmet Okur, Donyell Marshall | Staff ordering; not a future minutes promise |
+| C | Brian Grant, Theo Ratliff, Adonal Foyle, Kwame Brown | Staff ordering; not a future minutes promise |
 
 ## Role and promise review
 
 | Item | Evidence needed | Current position |
 | --- | --- | --- |
 | Expected role | Attributed coach statement | Starting SG; staff plan 34 minutes |
-| Actual use | Closed preseason boxes | 6 closed games |
+| Actual use | Closed preseason boxes | 7 closed games |
 | Promised minutes | Written promise and date | Not recorded |
 | Promise review | Dated review against rotation | Not recorded |
 | Defensive evaluation | Dated staff assessment | Steals and blocks alone do not establish overall defense |
@@ -49,6 +49,7 @@ Snapshot: 2005-10-01. Draft rights and unassigned arrivals are not assigned minu
 | --- | --- |
 | 2005-10-04 | Camp opens with 20 players: 6 invitees on non-guaranteed minimums (Theo Ratliff, Bonzi Wells, Adonal Foyle, Jumaine Jones, Sam Cassell, Kwame Brown). Record: `camp_roster.json`. |
 | 2005-10-04 | Camp injury draws: nobody is hurt. |
+| 2005-10-26 | Staff decision from 7 preseason games: starters PG Mike James, SG Dwyane Wade, SF Caron Butler, PF Mehmet Okur, C Brian Grant; battles drawn: {'SF': 'Caron Butler'}. Wade's perimeter-defense grade 45 (No assignment-level defensive evidence; preseason steals and blocks do not change this grade.). Records: `../00_Team/Team/Depth_Chart/depth_chart.json`, `rotation.json`, `../00_Team/Team/defensive_grades.json`. |
 
 ## Your response to the staff
 
@@ -59,6 +60,7 @@ Snapshot: 2005-10-01. Draft rights and unassigned arrivals are not assigned minu
 
 ## Available response paths
 
+- [Answer your camp review](../2005-06/04_Training_Camp/Wade_Camp_Review.md): Respond to the actual staff review.
 - [Open camp events and discussion](../2005-06/04_Training_Camp/note.md): Inspect the dated camp record.
 - [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
@@ -71,16 +73,17 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Authoritative career checkpoint](../2005-06/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2005-06/05_Preseason/note.md)
+- [Owning event](../2005-06/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2005-06/00_Team/Finances/contract_schedules.json)
 - [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
-- [Training-camp events and player response](../2005-06/04_Training_Camp/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/rotation.json)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
 - [Closed game](../2005-06/05_Preseason/Game_3.md)
 - [Closed game](../2005-06/05_Preseason/Game_4.md)
 - [Closed game](../2005-06/05_Preseason/Game_5.md)
 - [Closed game](../2005-06/05_Preseason/Game_6.md)
+- [Closed game](../2005-06/05_Preseason/Game_7.md)
 - [Dated milestone working records and player replies](../milestones.json)

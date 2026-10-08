@@ -253,5 +253,28 @@
   }
  ],
  "cuts": [],
- "injuries_applied": "2005-10-04"
+ "injuries_applied": "2005-10-04",
+ "staff_scores": {
+  "Eddie Jones": 6.17,
+  "Brian Grant": 11.448,
+  "Matt Harpring": 12.079,
+  "Donyell Marshall": 12.103,
+  "Anthony Johnson": 10.277,
+  "Mike James": 12.206,
+  "Mehmet Okur": 14.814,
+  "DeShawn Stevenson": 4.543,
+  "Dwyane Wade": 23.571,
+  "Caron Butler": 12.486,
+  "Sebastian Telfair": 11.709,
+  "Eddie Gill": 5.0,
+  "Mike Wilks": 7.568,
+  "Matt Carroll": 4.924,
+  "Theo Ratliff": 8.202,
+  "Bonzi Wells": 8.435,
+  "Adonal Foyle": 7.773,
+  "Jumaine Jones": 9.221,
+  "Sam Cassell": 9.211,
+  "Kwame Brown": 6.708
+ },
+ "evaluated": "2005-10-26"
 }

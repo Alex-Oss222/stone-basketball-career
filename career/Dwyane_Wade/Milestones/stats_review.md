@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-10-25 · Miami Heat · active
+Career date: 2005-10-26 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-6 closed game records in 2005-06 through 2005-10-25. Competitions remain separate.
+7 closed game records in 2005-06 through 2005-10-26. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -14,7 +14,7 @@ Activation: A declared, closed game result supplies observed participation and t
 
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| preseason | 6 | 29.6 | 25.2 | 3.5 | 2.7 | 1.5 | Complete |
+| preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
 | regular | 0 | N/A | N/A | N/A | N/A | N/A | Complete |
 
 ## Pooled shooting
@@ -23,7 +23,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
-| preseason | 47 | 89 | 0.528 | 7 | 14 | 0.500 |
+| preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
 | regular | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ## Closed source games
@@ -36,6 +36,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-10-18 | preseason | Orlando Magic | Played | [Closed game](../2005-06/05_Preseason/Game_4.md) |
 | 2005-10-22 | preseason | Detroit Pistons | Played | [Closed game](../2005-06/05_Preseason/Game_5.md) |
 | 2005-10-24 | preseason | Atlanta Hawks | Played | [Closed game](../2005-06/05_Preseason/Game_6.md) |
+| 2005-10-25 | preseason | New Orleans/Oklahoma City Hornets | Played | [Closed game](../2005-06/05_Preseason/Game_7.md) |
 
 ## Evidence available for decisions
 
@@ -67,16 +68,17 @@ The next declared, closed game result or a chosen completed-period review.
 - [Authoritative career checkpoint](../2005-06/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2005-06/05_Preseason/note.md)
+- [Owning event](../2005-06/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2005-06/00_Team/Finances/contract_schedules.json)
 - [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
-- [Training-camp events and player response](../2005-06/04_Training_Camp/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/rotation.json)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
 - [Closed game](../2005-06/05_Preseason/Game_3.md)
 - [Closed game](../2005-06/05_Preseason/Game_4.md)
 - [Closed game](../2005-06/05_Preseason/Game_5.md)
 - [Closed game](../2005-06/05_Preseason/Game_6.md)
+- [Closed game](../2005-06/05_Preseason/Game_7.md)
 - [Dated milestone working records and player replies](../milestones.json)

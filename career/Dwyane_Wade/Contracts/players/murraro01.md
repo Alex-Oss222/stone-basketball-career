@@ -2,9 +2,9 @@
 
 # Contract | Ronald Murray
 
-Known through: 2005-10-25. [Open interactive contract](murraro01.html#contract) · [Contract history](murraro01.html#contract-history)
+Known through: 2005-10-26. [Open interactive contract](murraro01.html#contract) · [Contract history](murraro01.html#contract-history)
 
-Ronald Murray: under contract. Evidence cutoff: 2005-10-25.
+Ronald Murray: under contract. Evidence cutoff: 2005-10-26.
 
 ## Current contract
 

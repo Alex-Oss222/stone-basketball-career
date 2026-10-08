@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 28 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** January 24, 2005 · **Statistics through:** 2005-10-25 
+**Opening assessment:** January 24, 2005 · **Statistics through:** 2005-10-26 
 
 **Contract/control:** Signed August 19, 2005 (bird): 4 season(s) from 2005-06, $36,827,534 scheduled ($7,954,111 in 2005-06). (register, 2005-10-04) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at SF, staff plan 34 minutes (staff rotation dated 2005-04-14, [record](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json)).
+**Role:** Rotation at SF, staff plan 16 minutes (staff rotation dated 2005-10-26, [record](../Depth_Chart/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -48,11 +48,12 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 | 2005-03-17 | Staff rotation of 2005-03-17: starter at SF, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-03-17/rotation.json) |
 | 2005-03-31 | Staff rotation of 2005-03-31: starter at SF, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-03-31/rotation.json) |
 | 2005-04-14 | Staff rotation of 2005-04-14: starter at SF, staff plan 34 minutes. | [Rotation](../../../../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json) |
+| 2005-10-26 | Staff rotation of 2005-10-26: rotation at SF, staff plan 16 minutes. | [Rotation](../Depth_Chart/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [League baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json), [signing record](../../../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-04-14.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-10-26.
 
 <!-- yearly-statistics:start -->
 

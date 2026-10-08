@@ -1,0 +1,88 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2005-10-26",
+ "team": "Miami Heat",
+ "total_minutes": 240,
+ "purpose": "Miami's rotation for the game builder: minutes per game in rotation order; the engine's injury and foul logic changes a night's minutes.",
+ "players": [
+  {
+   "player_id": "Mike James",
+   "position": "PG",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "jamesmi01"
+  },
+  {
+   "player_id": "Dwyane Wade",
+   "position": "SG",
+   "minutes": 34.0,
+   "ratings": {
+    "perimeter_defense": 45
+   }
+  },
+  {
+   "player_id": "Caron Butler",
+   "position": "SF",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "butleca01"
+  },
+  {
+   "player_id": "Mehmet Okur",
+   "position": "PF",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "okurme01"
+  },
+  {
+   "player_id": "Brian Grant",
+   "position": "C",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "grantbr01"
+  },
+  {
+   "player_id": "Donyell Marshall",
+   "position": "PF",
+   "minutes": 20.0,
+   "ratings": {},
+   "bbr_id": "marshdo01"
+  },
+  {
+   "player_id": "Matt Harpring",
+   "position": "SF",
+   "minutes": 16.0,
+   "ratings": {},
+   "bbr_id": "harprma01"
+  },
+  {
+   "player_id": "Sebastian Telfair",
+   "position": "SF",
+   "minutes": 12.0,
+   "ratings": {},
+   "bbr_id": "telfase01"
+  },
+  {
+   "player_id": "Anthony Johnson",
+   "position": "PG",
+   "minutes": 10.0,
+   "ratings": {},
+   "bbr_id": "johnsan02"
+  },
+  {
+   "player_id": "Mike Wilks",
+   "position": "PG",
+   "minutes": 8.0,
+   "ratings": {},
+   "bbr_id": "wilksmi01"
+  },
+  {
+   "player_id": "Eddie Jones",
+   "position": "SG",
+   "minutes": 4.0,
+   "ratings": {},
+   "bbr_id": "jonesed02"
+  }
+ ]
+}

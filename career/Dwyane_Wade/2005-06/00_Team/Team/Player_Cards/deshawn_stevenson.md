@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG  
 **Age at assessment:** 24 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-10-25 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-10-26 
 
 **Contract/control:** Existing contract: 4 season(s) from 2005-06, $13,950,856 scheduled ($2,989,469 in 2005-06). (register, 2005-10-04) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Arrival on October 1, 2005; Miami's coaching staff has not assigned a role. The depth chart lists him as an unassigned arrival.
+**Role:** Reserve outside the planned rotation (staff rotation dated 2005-10-26, [record](../Depth_Chart/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -29,11 +29,12 @@ Unassessed.
 | Date | Finding and effect on role or grade | Evidence |
 | --- | --- | --- |
 | October 1, 2005 | Joined Miami for 2005-06. Card opened from the summer market record; no role assigned. | [Record](../../../../../../career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json) |
+| 2005-10-26 | Staff rotation of 2005-10-26: reserve outside the planned rotation. | [Rotation](../Depth_Chart/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../../../../career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json), 2004-05 simulated season totals.
-- **Not yet established:** height, weight, role, staff grades.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-10-26.
 
 <!-- yearly-statistics:start -->
 

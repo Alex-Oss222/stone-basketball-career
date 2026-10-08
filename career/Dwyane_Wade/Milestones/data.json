@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-10-25",
+  "as_of": "2005-10-26",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 21,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2005-10-24-atlanta-hawks-at-miami-heat",
+  "current_event": "2005-10-26-camp-decision",
   "current_screen": "calendar",
   "screens": [
     {
@@ -18,7 +18,7 @@
       "title": "Your career calendar",
       "status": "active",
       "trigger": "The authoritative current date and recorded event determine what is open.",
-      "summary": "Dwyane Wade is at 05 Preseason. All milestone pages remain accessible; inactive pages explain their opening event.",
+      "summary": "Dwyane Wade is at 04 Training Camp. All milestone pages remain accessible; inactive pages explain their opening event.",
       "sections": [
         {
           "title": "What is happening now",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-10-25"
+              "2005-10-26"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2005-10-24-atlanta-hawks-at-miami-heat"
+              "2005-10-26-camp-decision"
             ],
             [
               "Pending player decisions",
@@ -64,13 +64,13 @@
           ],
           "rows": [
             [
-              "2005-10-25",
+              "2005-10-26",
               "Current checkpoint",
-              "2005-10-24-atlanta-hawks-at-miami-heat",
+              "2005-10-26-camp-decision",
               "Recorded",
               {
                 "label": "Owning event",
-                "href": "../2005-06/05_Preseason/note.md"
+                "href": "../2005-06/04_Training_Camp/note.md"
               }
             ],
             [
@@ -255,7 +255,7 @@
       "actions": [
         {
           "label": "Open the current event",
-          "href": "../2005-06/05_Preseason/note.md",
+          "href": "../2005-06/04_Training_Camp/note.md",
           "description": "Read the owning career note and record the player's actual response when one is due."
         },
         {
@@ -279,7 +279,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2005-06/05_Preseason/note.md"
+          "href": "../2005-06/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -294,12 +294,12 @@
           "href": "../2005-06/03_Offseason/note.md"
         },
         {
-          "label": "Training-camp events and player response",
-          "href": "../2005-06/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2005-06/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -326,6 +326,10 @@
           "href": "../2005-06/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -334,7 +338,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-25"
+          "value": "2005-10-26"
         },
         {
           "label": "Team",
@@ -386,7 +390,7 @@
             ],
             [
               "Source snapshot",
-              "2005-10-08"
+              "2005-10-26"
             ]
           ]
         },
@@ -513,7 +517,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2005-06/05_Preseason/note.md"
+          "href": "../2005-06/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -528,12 +532,12 @@
           "href": "../2005-06/03_Offseason/note.md"
         },
         {
-          "label": "Training-camp events and player response",
-          "href": "../2005-06/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2005-06/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -560,6 +564,10 @@
           "href": "../2005-06/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -568,7 +576,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-25"
+          "value": "2005-10-26"
         },
         {
           "label": "Team",
@@ -720,7 +728,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2005-06/05_Preseason/note.md"
+          "href": "../2005-06/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -735,12 +743,12 @@
           "href": "../2005-06/03_Offseason/note.md"
         },
         {
-          "label": "Training-camp events and player response",
-          "href": "../2005-06/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2005-06/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -767,6 +775,10 @@
           "href": "../2005-06/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -775,7 +787,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-25"
+          "value": "2005-10-26"
         },
         {
           "label": "Team",
@@ -918,7 +930,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2005-06/05_Preseason/note.md"
+          "href": "../2005-06/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -933,12 +945,12 @@
           "href": "../2005-06/03_Offseason/note.md"
         },
         {
-          "label": "Training-camp events and player response",
-          "href": "../2005-06/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2005-06/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -965,6 +977,10 @@
           "href": "../2005-06/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -973,7 +989,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-25"
+          "value": "2005-10-26"
         },
         {
           "label": "Team",
@@ -1127,7 +1143,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2005-06/05_Preseason/note.md"
+          "href": "../2005-06/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1142,12 +1158,12 @@
           "href": "../2005-06/03_Offseason/note.md"
         },
         {
-          "label": "Training-camp events and player response",
-          "href": "../2005-06/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2005-06/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -1174,6 +1190,10 @@
           "href": "../2005-06/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1182,7 +1202,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-25"
+          "value": "2005-10-26"
         },
         {
           "label": "Team",
@@ -1303,7 +1323,7 @@
       "actions": [
         {
           "label": "Open the current event discussion",
-          "href": "../2005-06/05_Preseason/note.md",
+          "href": "../2005-06/04_Training_Camp/note.md",
           "description": "Record a dated reaction to an actual transaction."
         },
         {
@@ -1327,7 +1347,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2005-06/05_Preseason/note.md"
+          "href": "../2005-06/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1342,12 +1362,12 @@
           "href": "../2005-06/03_Offseason/note.md"
         },
         {
-          "label": "Training-camp events and player response",
-          "href": "../2005-06/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2005-06/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -1374,6 +1394,10 @@
           "href": "../2005-06/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1382,7 +1406,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-25"
+          "value": "2005-10-26"
         },
         {
           "label": "Team",
@@ -1536,7 +1560,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2005-06/05_Preseason/note.md"
+          "href": "../2005-06/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1551,12 +1575,12 @@
           "href": "../2005-06/03_Offseason/note.md"
         },
         {
-          "label": "Training-camp events and player response",
-          "href": "../2005-06/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2005-06/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -1583,6 +1607,10 @@
           "href": "../2005-06/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1591,7 +1619,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-25"
+          "value": "2005-10-26"
         },
         {
           "label": "Team",
@@ -1631,11 +1659,11 @@
             ],
             [
               "Staff rotation minutes",
-              null
+              34.0
             ],
             [
               "Closed preseason games",
-              6
+              7
             ],
             [
               "Camp availability",
@@ -1653,31 +1681,31 @@
           "rows": [
             [
               "PG",
-              "Mike James",
+              "Mike James, Anthony Johnson, Sam Cassell, Mike Wilks, Eddie Gill",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "SG",
-              "Dwyane Wade",
+              "Dwyane Wade, Bonzi Wells, Eddie Jones, Matt Carroll, DeShawn Stevenson",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "SF",
-              "Matt Harpring, Caron Butler",
+              "Caron Butler, Matt Harpring, Sebastian Telfair, Jumaine Jones",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "PF",
-              "Donyell Marshall, Mehmet Okur",
+              "Mehmet Okur, Donyell Marshall",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "C",
-              "Brian Grant",
+              "Brian Grant, Theo Ratliff, Adonal Foyle, Kwame Brown",
               "Staff ordering; not a future minutes promise"
             ]
           ],
-          "notice": "Snapshot: 2005-10-01. Draft rights and unassigned arrivals are not assigned minutes."
+          "notice": "Snapshot: 2005-10-26. Draft rights and unassigned arrivals are not assigned minutes."
         },
         {
           "title": "Role and promise review",
@@ -1695,7 +1723,7 @@
             [
               "Actual use",
               "Closed preseason boxes",
-              "6 closed games"
+              "7 closed games"
             ],
             [
               "Promised minutes",
@@ -1728,6 +1756,10 @@
             [
               "2005-10-04",
               "Camp injury draws: nobody is hurt."
+            ],
+            [
+              "2005-10-26",
+              "Staff decision from 7 preseason games: starters PG Mike James, SG Dwyane Wade, SF Caron Butler, PF Mehmet Okur, C Brian Grant; battles drawn: {'SF': 'Caron Butler'}. Wade's perimeter-defense grade 45 (No assignment-level defensive evidence; preseason steals and blocks do not change this grade.). Records: `../00_Team/Team/Depth_Chart/depth_chart.json`, `rotation.json`, `../00_Team/Team/defensive_grades.json`."
             ]
           ]
         },
@@ -1742,6 +1774,11 @@
         }
       ],
       "actions": [
+        {
+          "label": "Answer your camp review",
+          "href": "../2005-06/04_Training_Camp/Wade_Camp_Review.md",
+          "description": "Respond to the actual staff review."
+        },
         {
           "label": "Open camp events and discussion",
           "href": "../2005-06/04_Training_Camp/note.md",
@@ -1768,7 +1805,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2005-06/05_Preseason/note.md"
+          "href": "../2005-06/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1783,12 +1820,12 @@
           "href": "../2005-06/03_Offseason/note.md"
         },
         {
-          "label": "Training-camp events and player response",
-          "href": "../2005-06/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2005-06/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -1815,6 +1852,10 @@
           "href": "../2005-06/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1823,7 +1864,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-25"
+          "value": "2005-10-26"
         },
         {
           "label": "Team",
@@ -1840,7 +1881,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "6 closed game records in 2005-06 through 2005-10-25. Competitions remain separate.",
+      "summary": "7 closed game records in 2005-06 through 2005-10-26. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -1857,12 +1898,12 @@
           "rows": [
             [
               "preseason",
-              6,
-              29.552616667,
-              25.166666667,
-              3.5,
-              2.666666667,
-              1.5,
+              7,
+              29.636909524,
+              25.0,
+              3.714285714,
+              2.571428571,
+              1.428571429,
               "Complete"
             ],
             [
@@ -1891,12 +1932,12 @@
           "rows": [
             [
               "preseason",
-              47,
-              89,
-              0.528089888,
+              57,
+              109,
+              0.52293578,
               7,
-              14,
-              0.5
+              17,
+              0.411764706
             ],
             [
               "regular",
@@ -1979,6 +2020,16 @@
                 "label": "Closed game",
                 "href": "../2005-06/05_Preseason/Game_6.md"
               }
+            ],
+            [
+              "2005-10-25",
+              "preseason",
+              "New Orleans/Oklahoma City Hornets",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/05_Preseason/Game_7.md"
+              }
             ]
           ]
         },
@@ -2053,7 +2104,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2005-06/05_Preseason/note.md"
+          "href": "../2005-06/04_Training_Camp/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2068,12 +2119,12 @@
           "href": "../2005-06/03_Offseason/note.md"
         },
         {
-          "label": "Training-camp events and player response",
-          "href": "../2005-06/04_Training_Camp/note.md"
-        },
-        {
           "label": "Recorded camp roster",
           "href": "../2005-06/04_Training_Camp/camp_roster.json"
+        },
+        {
+          "label": "Dated staff rotation",
+          "href": "../2005-06/00_Team/Team/Depth_Chart/rotation.json"
         },
         {
           "label": "Closed game",
@@ -2100,6 +2151,10 @@
           "href": "../2005-06/05_Preseason/Game_6.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/05_Preseason/Game_7.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2108,7 +2163,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-10-25"
+          "value": "2005-10-26"
         },
         {
           "label": "Team",

@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-camp-sf-starter",
+ "date": "2005-10-26",
+ "question": "Who starts at SF: Caron Butler or Matt Harpring?",
+ "decider": "Miami coaching staff (evaluation draw)",
+ "options": {
+  "Caron Butler": 0.581,
+  "Matt Harpring": 0.419
+ },
+ "basis": "Staff scores 12.486 and 12.079 within 10%: the leader's edge over half the margin, drawn once (docs/front_office_design.md 8)."
+}

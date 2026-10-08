@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2005-10-25 · Miami Heat · needs evidence
+Career date: 2005-10-26 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -63,16 +63,17 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Authoritative career checkpoint](../2005-06/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2005-06/05_Preseason/note.md)
+- [Owning event](../2005-06/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2005-06/00_Team/Finances/contract_schedules.json)
 - [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
-- [Training-camp events and player response](../2005-06/04_Training_Camp/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/rotation.json)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
 - [Closed game](../2005-06/05_Preseason/Game_3.md)
 - [Closed game](../2005-06/05_Preseason/Game_4.md)
 - [Closed game](../2005-06/05_Preseason/Game_5.md)
 - [Closed game](../2005-06/05_Preseason/Game_6.md)
+- [Closed game](../2005-06/05_Preseason/Game_7.md)
 - [Dated milestone working records and player replies](../milestones.json)

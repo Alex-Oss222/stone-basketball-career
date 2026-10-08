@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2005-10-25](assets/stat_reports/personal_2005-10-25.svg)
+![Player personal information and earned career awards through 2005-10-26](assets/stat_reports/personal_2005-10-26.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -27,9 +27,9 @@
 | National-team eligibility | United States (USA Basketball); no selection yet |
 | Availability | No current restriction recorded in the established profile |
 | Physical measurements recorded | 2003-06-25 |
-| Professional status effective | 2004-10-28 |
+| Professional status effective | 2005-10-26 |
 
-Identity as of 2005-10-25; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-10-26; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Established full player profile](Dwyane_Wade_Player_Profile.md)
 
