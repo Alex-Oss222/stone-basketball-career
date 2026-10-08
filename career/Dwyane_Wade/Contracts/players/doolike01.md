@@ -2,9 +2,9 @@
 
 # Contract | Keyon Dooling
 
-Known through: 2005-08-07. [Open interactive contract](doolike01.html#contract) · [Contract history](doolike01.html#contract-history)
+Known through: 2005-08-14. [Open interactive contract](doolike01.html#contract) · [Contract history](doolike01.html#contract-history)
 
-Keyon Dooling: under rookie contract. Evidence cutoff: 2005-08-07.
+Keyon Dooling: under rookie contract. Evidence cutoff: 2005-08-14.
 
 ## Current contract
 
