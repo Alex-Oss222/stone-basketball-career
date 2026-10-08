@@ -2,9 +2,9 @@
 
 # Contract | Doug Overton
 
-Known through: 2005-07-10. [Open interactive contract](overtdo01.html#contract) · [Contract history](overtdo01.html#contract-history)
+Known through: 2005-07-17. [Open interactive contract](overtdo01.html#contract) · [Contract history](overtdo01.html#contract-history)
 
-Doug Overton: No verified contract record. Evidence cutoff: 2005-07-10.
+Doug Overton: No verified contract record. Evidence cutoff: 2005-07-17.
 
 ## Current contract
 
