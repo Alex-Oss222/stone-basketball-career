@@ -2,9 +2,9 @@
 
 # Contract | Mo Williams
 
-Known through: 2005-10-19. [Open interactive contract](willima01.html#contract) · [Contract history](willima01.html#contract-history)
+Known through: 2005-10-20. [Open interactive contract](willima01.html#contract) · [Contract history](willima01.html#contract-history)
 
-Mo Williams: under contract. Evidence cutoff: 2005-10-19.
+Mo Williams: under contract. Evidence cutoff: 2005-10-20.
 
 ## Current contract
 

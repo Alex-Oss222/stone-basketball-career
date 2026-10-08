@@ -2,9 +2,9 @@
 
 # Contract | Viktor Khryapa
 
-Known through: 2005-10-19. [Open interactive contract](viktorkhryapa.html#contract) · [Contract history](viktorkhryapa.html#contract-history)
+Known through: 2005-10-20. [Open interactive contract](viktorkhryapa.html#contract) · [Contract history](viktorkhryapa.html#contract-history)
 
-Viktor Khryapa: under contract. Evidence cutoff: 2005-10-19.
+Viktor Khryapa: under contract. Evidence cutoff: 2005-10-20.
 
 ## Current contract
 
