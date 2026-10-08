@@ -2,7 +2,7 @@
 
 # Chris Bosh | Career milestones
 
-Career date: 2005-10-17. Born 1984-03-24. 156 regular-season and 31 playoff games closed.
+Career date: 2005-10-18. Born 1984-03-24. 156 regular-season and 31 playoff games closed.
 
 Milestones count closed regular-season games (the NBA convention); playoff milestones are their own record and preseason never counts. Each is dated by the game that reached it, with his age on that day. [Career](README.md)
 

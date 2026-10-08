@@ -2,9 +2,9 @@
 
 # Contract | Michael Curry
 
-Known through: 2005-10-17. [Open interactive contract](currymi01.html#contract) · [Contract history](currymi01.html#contract-history)
+Known through: 2005-10-18. [Open interactive contract](currymi01.html#contract) · [Contract history](currymi01.html#contract-history)
 
-Michael Curry: under contract. Evidence cutoff: 2005-10-17.
+Michael Curry: under contract. Evidence cutoff: 2005-10-18.
 
 ## Current contract
 

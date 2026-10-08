@@ -1,13 +1,13 @@
 ---
 type: game
-status: scheduled
+status: played
 date: 2005-10-18
 opponent: Orlando Magic
 venue: home
 competition: preseason
 cup_stage:
 player_team: Miami Heat
-result:
+result: W 117-107
 reason:
 simulation_source: Railway engine (runtime/private_service.py)
 event_id: 2005-10-18-orlando-magic-at-miami-heat
@@ -19,10 +19,65 @@ result_file: Game_4.result.json
 Player identity and statistics are generated here by `python scripts/update_player_reports.py`.
 Decisions remain in the owning phase/week note. A scheduled game has no statistical result.
 
+<!-- game-result:start -->
+## Result
+
+**Orlando Magic 107 at Miami Heat 117** · Miami Heat W 117-107 vs Orlando Magic · home (Miami Heat) · 2005-10-18
+
+Event `2005-10-18-orlando-magic-at-miami-heat` · Railway engine (runtime/private_service.py) · result file [`Game_4.result.json`](Game_4.result.json) (the engine's answer as served; the note is the canonical record).
+
+Preseason result: evidence for the preseason record and the camp decisions only; it does not count in regular-season statistics.
+
+### Box score
+
+```text
+Orlando Magic 107 at Miami Heat 117
+2005-10-18  2005-06 preseason  event 2005-10-18-orlando-magic-at-miami-heat
+Kernel 2003.11, calibrated on 2004-05 (imported_source)
+
+Period      1    2    3    4     T
+Orlando    26   25   28   28   107
+Miami He   27   19   24   47   117
+
+Orlando Magic
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Tracy McGrady             39.3   28  10-21   1-4    7-9     0   6   6   1   2   5   3
+Dwight Howard             38.9   14   3-11   0-3    8-14    2   5   3   2   3   2   5
+Zaza Pachulia             32.8   12   4-6    0-0    4-4     5   5   1   1   0   3   5
+Chris Duhon               29.7    9   3-12   2-8    1-2     0   3   5   2   0   1   3
+Drew Gooden               28.7   19   5-12   0-0    9-10    6   4   1   0   1   0   4
+Keith Bogans              24.8    8   4-12   0-4    0-0     0   2   0   0   1   1   2
+Marvin Williams           22.3    7   2-7    1-1    2-2     6   1   0   1   1   1   1
+James Jones               21.0   10   4-7    2-3    0-0     1   4   0   1   1   0   1
+Chris Andersen             2.5    0   0-1    0-0    0-0     1   0   0   0   0   0   0
+TEAM                     240.0  107  35-89   6-23  31-41   21  30  16   8   9  13  24
+
+Miami Heat
+                           MIN  PTS   FG      3P     FT    OR  DR AST STL BLK  TO  PF
+Mike James                31.5   10   5-10   0-2    0-0     0   5   7   0   0   1   3
+Dwyane Wade               29.8   45  15-21   4-4   11-12    0   2   2   0   0   3   3
+Matt Harpring             30.2    9   3-6    0-0    3-3     2   2   3   1   0   3   3
+Donyell Marshall          31.0   19   7-10   2-3    3-5     0   6   3   0   0   1   2
+Brian Grant               32.2    9   4-8    1-2    0-0     3   3   3   0   0   0   4
+Mehmet Okur               18.1    4   1-5    0-0    2-2     0   2   2   2   0   0   3
+Anthony Johnson           15.3    2   1-3    0-0    0-0     0   0   2   1   1   1   0
+Caron Butler              15.2    6   2-8    0-0    2-2     2   3   1   0   1   1   1
+Sebastian Telfair         12.4   13   3-5    3-3    4-4     0   3   0   1   1   1   2
+Eddie Jones                9.6    0   0-2    0-1    0-0     0   1   0   2   0   1   2
+DeShawn Stevenson          9.1    0   0-5    0-0    0-0     0   0   2   0   0   1   1
+Mike Wilks                 5.7    0   0-0    0-0    0-0     0   0   1   0   0   0   3
+TEAM                     240.0  117  41-83  10-15  25-28    7  27  26   7   3  13  27
+```
+
+### Miami injuries
+
+No Miami injury was drawn in this game.
+<!-- game-result:end -->
+
 <!-- player-report:start -->
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2005-10-17](../../assets/stat_reports/personal_2005-06_2005-10-17.svg)
+![Player personal information and earned 2005-06 awards through 2005-10-18](../../assets/stat_reports/personal_2005-06_2005-10-18.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -47,7 +102,7 @@ Decisions remain in the owning phase/week note. A scheduled game has no statisti
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2005-10-17; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-10-18; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -55,7 +110,7 @@ No 2005-06 awards yet.
 
 ## Statistics
 
-As of **2005-10-17**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2005-10-18**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -73,7 +128,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-10-17, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-10-18, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 

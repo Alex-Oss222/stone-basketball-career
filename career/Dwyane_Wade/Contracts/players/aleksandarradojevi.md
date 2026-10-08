@@ -2,9 +2,9 @@
 
 # Contract | Aleksandar Radojević
 
-Known through: 2005-10-17. [Open interactive contract](aleksandarradojevi.html#contract) · [Contract history](aleksandarradojevi.html#contract-history)
+Known through: 2005-10-18. [Open interactive contract](aleksandarradojevi.html#contract) · [Contract history](aleksandarradojevi.html#contract-history)
 
-Aleksandar Radojević: under contract. Evidence cutoff: 2005-10-17.
+Aleksandar Radojević: under contract. Evidence cutoff: 2005-10-18.
 
 ## Current contract
 

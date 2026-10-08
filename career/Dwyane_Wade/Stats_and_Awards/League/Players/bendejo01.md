@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `bendejo01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-10-17 · **Club on this date:** Indiana Pacers · **Basis:** Indiana Pacers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-10-18 · **Club on this date:** Indiana Pacers · **Basis:** Indiana Pacers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #24 · **Born:** 1981-01-30 · **Age on card date:** 24  
 **Registry ID:** `bendejo01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/bendejo01.html) · ESPN ID 50
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bendej
 
 ## Simulated statistics
 
-As of **2005-10-17**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-10-18**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -119,4 +119,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2005-10-17. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2005-10-18. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

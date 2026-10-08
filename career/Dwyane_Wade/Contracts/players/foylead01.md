@@ -2,9 +2,9 @@
 
 # Contract | Adonal Foyle
 
-Known through: 2005-10-17. [Open interactive contract](foylead01.html#contract) · [Contract history](foylead01.html#contract-history)
+Known through: 2005-10-18. [Open interactive contract](foylead01.html#contract) · [Contract history](foylead01.html#contract-history)
 
-Adonal Foyle: camp contract. Evidence cutoff: 2005-10-17.
+Adonal Foyle: camp contract. Evidence cutoff: 2005-10-18.
 
 ## Current contract
 

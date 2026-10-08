@@ -2,9 +2,9 @@
 
 # Contract | Tony Parker
 
-Known through: 2005-10-17. [Open interactive contract](parketo01.html#contract) · [Contract history](parketo01.html#contract-history)
+Known through: 2005-10-18. [Open interactive contract](parketo01.html#contract) · [Contract history](parketo01.html#contract-history)
 
-Tony Parker: under contract. Evidence cutoff: 2005-10-17.
+Tony Parker: under contract. Evidence cutoff: 2005-10-18.
 
 ## Current contract
 
