@@ -2,9 +2,9 @@
 
 # Contract | Jabari Smith
 
-Known through: 2005-10-16. [Open interactive contract](smithja01.html#contract) · [Contract history](smithja01.html#contract-history)
+Known through: 2005-10-17. [Open interactive contract](smithja01.html#contract) · [Contract history](smithja01.html#contract-history)
 
-Jabari Smith: No verified contract record. Evidence cutoff: 2005-10-16.
+Jabari Smith: No verified contract record. Evidence cutoff: 2005-10-17.
 
 ## Current contract
 

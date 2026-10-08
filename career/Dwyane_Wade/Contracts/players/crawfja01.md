@@ -2,9 +2,9 @@
 
 # Contract | Jamal Crawford
 
-Known through: 2005-10-16. [Open interactive contract](crawfja01.html#contract) · [Contract history](crawfja01.html#contract-history)
+Known through: 2005-10-17. [Open interactive contract](crawfja01.html#contract) · [Contract history](crawfja01.html#contract-history)
 
-Jamal Crawford: under contract. Evidence cutoff: 2005-10-16.
+Jamal Crawford: under contract. Evidence cutoff: 2005-10-17.
 
 ## Current contract
 
