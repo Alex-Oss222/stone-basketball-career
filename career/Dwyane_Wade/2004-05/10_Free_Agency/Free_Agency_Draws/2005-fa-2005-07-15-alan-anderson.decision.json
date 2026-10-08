@@ -1,0 +1,14 @@
+{
+ "event_id": "2005-fa-2005-07-15-alan-anderson",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Alan Anderson accept (Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Lakers $398,762 x 1, Philadelphia 76ers $398,762 x 1), or does he wait?",
+ "decider": "Alan Anderson (simulated player, engine draw)",
+ "options": {
+  "Detroit Pistons": 0.226309,
+  "Houston Rockets": 0.109607,
+  "Los Angeles Lakers": 0.021422,
+  "Philadelphia 76ers": 0.112663,
+  "wait": 0.529999
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.470; priority winning; utility Detroit Pistons 53.9, Houston Rockets 51.0, Los Angeles Lakers 44.5, Philadelphia 76ers 51.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

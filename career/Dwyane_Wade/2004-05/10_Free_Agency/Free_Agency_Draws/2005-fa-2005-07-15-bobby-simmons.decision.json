@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-15-bobby-simmons",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Bobby Simmons accept (Los Angeles Clippers $11,145,893 x 5), or does he wait?",
+ "decider": "Bobby Simmons (simulated player, engine draw)",
+ "options": {
+  "Los Angeles Clippers": 0.334133,
+  "wait": 0.665867
+ },
+ "basis": "Ask $12,000,000; best offer 0.93 of the ask in total; accept chance 0.334; priority winning; utility Los Angeles Clippers 67.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

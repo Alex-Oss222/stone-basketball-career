@@ -1,0 +1,26 @@
+{
+ "date": "2005-07-15",
+ "decider": "Lawrence Roberts (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-15-lawrence-roberts",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.007439,
+  "Charlotte Bobcats": 0.000678,
+  "Cleveland Cavaliers": 0.008535,
+  "Dallas Mavericks": 0.093149,
+  "Golden State Warriors": 0.011608,
+  "Los Angeles Clippers": 0.003427,
+  "Milwaukee Bucks": 0.003376,
+  "New Jersey Nets": 0.002355,
+  "New Orleans Hornets": 0.001689,
+  "New York Knicks": 0.003276,
+  "Phoenix Suns": 0.171006,
+  "San Antonio Spurs": 0.046141,
+  "Seattle SuperSonics": 0.017756,
+  "Toronto Raptors": 0.092453,
+  "Washington Wizards": 0.007111,
+  "wait": 0.530001
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-15: which offer does Lawrence Roberts accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Cleveland Cavaliers $398,762 x 1, Dallas Mavericks $398,762 x 1, Golden State Warriors $398,762 x 1, Los Angeles Clippers $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, Phoenix Suns $398,762 x 1, San Antonio Spurs $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?"
+}

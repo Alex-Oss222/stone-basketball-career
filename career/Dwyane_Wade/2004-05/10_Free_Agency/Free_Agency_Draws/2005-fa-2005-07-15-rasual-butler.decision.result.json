@@ -1,0 +1,20 @@
+{
+ "date": "2005-07-15",
+ "decider": "Rasual Butler (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-15-rasual-butler",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.021997,
+  "Indiana Pacers": 0.006559,
+  "Memphis Grizzlies": 0.007035,
+  "Miami Heat": 0.374616,
+  "Minnesota Timberwolves": 0.016013,
+  "Orlando Magic": 0.007873,
+  "Portland Trail Blazers": 0.006559,
+  "Sacramento Kings": 0.029251,
+  "Utah Jazz": 9.6e-05,
+  "wait": 0.530001
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-15: which offer does Rasual Butler accept (Chicago Bulls $745,248 x 1, Indiana Pacers $745,248 x 1, Memphis Grizzlies $745,248 x 1, Miami Heat $745,248 x 1, Minnesota Timberwolves $745,248 x 1, Orlando Magic $745,248 x 1, Portland Trail Blazers $745,248 x 1, Sacramento Kings $745,248 x 1, Utah Jazz $745,248 x 1), or does he wait?"
+}

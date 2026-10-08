@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-15-kurt-thomas",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Kurt Thomas accept (San Antonio Spurs $10,071,076 x 3), or does he wait?",
+ "decider": "Kurt Thomas (simulated player, engine draw)",
+ "options": {
+  "San Antonio Spurs": 0.436429,
+  "wait": 0.563571
+ },
+ "basis": "Ask $10,244,625; best offer 0.98 of the ask in total; accept chance 0.436; priority loyalty; utility San Antonio Spurs 84.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

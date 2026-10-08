@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-15-esteban-batista",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Esteban Batista accept (Houston Rockets $398,762 x 1), or does he wait?",
+ "decider": "Esteban Batista (simulated player, engine draw)",
+ "options": {
+  "Houston Rockets": 0.47,
+  "wait": 0.53
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.470; priority winning; utility Houston Rockets 51.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

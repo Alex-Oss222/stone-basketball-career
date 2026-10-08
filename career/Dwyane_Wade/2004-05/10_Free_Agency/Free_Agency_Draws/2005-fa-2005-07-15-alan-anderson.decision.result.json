@@ -1,0 +1,15 @@
+{
+ "date": "2005-07-15",
+ "decider": "Alan Anderson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-15-alan-anderson",
+ "kind": "decision",
+ "options": {
+  "Detroit Pistons": 0.226309,
+  "Houston Rockets": 0.109607,
+  "Los Angeles Lakers": 0.021422,
+  "Philadelphia 76ers": 0.112663,
+  "wait": 0.529999
+ },
+ "outcome": "Los Angeles Lakers",
+ "question": "2005 free agency, 2005-07-15: which offer does Alan Anderson accept (Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Lakers $398,762 x 1, Philadelphia 76ers $398,762 x 1), or does he wait?"
+}

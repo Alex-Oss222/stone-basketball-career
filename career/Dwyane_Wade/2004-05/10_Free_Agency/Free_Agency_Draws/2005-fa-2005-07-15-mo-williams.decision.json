@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-15-mo-williams",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Mo Williams accept (Chicago Bulls $5,000,000 x 5), or does he wait?",
+ "decider": "Mo Williams (simulated player, engine draw)",
+ "options": {
+  "Chicago Bulls": 0.088261,
+  "wait": 0.911739
+ },
+ "basis": "Ask $6,914,321; best offer 0.72 of the ask in total; accept chance 0.088; priority fame; utility Chicago Bulls 64.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

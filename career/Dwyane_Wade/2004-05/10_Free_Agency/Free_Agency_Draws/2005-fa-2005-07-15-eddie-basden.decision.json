@@ -1,0 +1,13 @@
+{
+ "event_id": "2005-fa-2005-07-15-eddie-basden",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Eddie Basden accept (Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Lakers $398,762 x 1), or does he wait?",
+ "decider": "Eddie Basden (simulated player, engine draw)",
+ "options": {
+  "Detroit Pistons": 0.255834,
+  "Houston Rockets": 0.188581,
+  "Los Angeles Lakers": 0.025586,
+  "wait": 0.529999
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.470; priority loyalty; utility Detroit Pistons 53.3, Houston Rockets 52.0, Los Angeles Lakers 44.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

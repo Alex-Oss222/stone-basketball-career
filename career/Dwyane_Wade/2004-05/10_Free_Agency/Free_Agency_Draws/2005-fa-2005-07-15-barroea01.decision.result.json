@@ -1,0 +1,15 @@
+{
+ "date": "2005-07-15",
+ "decider": "barroea01 (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-15-barroea01",
+ "kind": "decision",
+ "options": {
+  "Detroit Pistons": 0.205629,
+  "Houston Rockets": 0.151574,
+  "Los Angeles Lakers": 0.01735,
+  "Philadelphia 76ers": 0.095447,
+  "wait": 0.53
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-15: which offer does barroea01 accept (Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Lakers $398,762 x 1, Philadelphia 76ers $398,762 x 1), or does he wait?"
+}

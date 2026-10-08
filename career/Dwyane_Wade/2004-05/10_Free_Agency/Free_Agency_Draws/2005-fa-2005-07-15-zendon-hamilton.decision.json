@@ -1,0 +1,13 @@
+{
+ "event_id": "2005-fa-2005-07-15-zendon-hamilton",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Zendon Hamilton accept (New Jersey Nets $835,810 x 1, New Orleans Hornets $835,810 x 1, New York Knicks $835,810 x 1), or does he wait?",
+ "decider": "Zendon Hamilton (simulated player, engine draw)",
+ "options": {
+  "New Jersey Nets": 0.057823,
+  "New Orleans Hornets": 0.057968,
+  "New York Knicks": 0.354209,
+  "wait": 0.53
+ },
+ "basis": "Ask $835,810; best offer 1.00 of the ask in total; accept chance 0.470; priority winning; utility New Jersey Nets 36.0, New Orleans Hornets 36.0, New York Knicks 43.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

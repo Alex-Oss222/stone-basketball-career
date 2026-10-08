@@ -1,0 +1,26 @@
+{
+ "event_id": "2005-fa-2005-07-15-boniface-ndong",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Boniface N'Dong accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Cleveland Cavaliers $398,762 x 1, Dallas Mavericks $398,762 x 1, Golden State Warriors $398,762 x 1, Los Angeles Clippers $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, Phoenix Suns $398,762 x 1, Portland Trail Blazers $398,762 x 1, San Antonio Spurs $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?",
+ "decider": "Boniface N'Dong (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.005282,
+  "Charlotte Bobcats": 0.000581,
+  "Cleveland Cavaliers": 0.006091,
+  "Dallas Mavericks": 0.076466,
+  "Golden State Warriors": 0.013489,
+  "Los Angeles Clippers": 0.004925,
+  "Milwaukee Bucks": 0.002186,
+  "New Jersey Nets": 0.002126,
+  "New Orleans Hornets": 0.001064,
+  "New York Knicks": 0.006277,
+  "Phoenix Suns": 0.184353,
+  "Portland Trail Blazers": 0.010349,
+  "San Antonio Spurs": 0.019528,
+  "Seattle SuperSonics": 0.01359,
+  "Toronto Raptors": 0.116962,
+  "Washington Wizards": 0.006732,
+  "wait": 0.529999
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.470; priority fame; utility Atlanta Hawks 53.4, Charlotte Bobcats 44.6, Cleveland Cavaliers 54.0, Dallas Mavericks 64.1, Golden State Warriors 57.2, Los Angeles Clippers 53.1, Milwaukee Bucks 49.9, New Jersey Nets 49.8, New Orleans Hornets 47.0, New York Knicks 54.1, Phoenix Suns 67.6, Portland Trail Blazers 56.1, San Antonio Spurs 58.7, Seattle SuperSonics 57.2, Toronto Raptors 65.8, Washington Wizards 54.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,21 @@
+{
+ "date": "2005-07-15",
+ "decider": "Ronny Turiaf (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-15-ronny-turiaf",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.01439,
+  "Charlotte Bobcats": 0.001583,
+  "Los Angeles Clippers": 0.013418,
+  "Milwaukee Bucks": 0.005954,
+  "New Jersey Nets": 0.005793,
+  "New Orleans Hornets": 0.002898,
+  "New York Knicks": 0.0171,
+  "San Antonio Spurs": 0.0532,
+  "Seattle SuperSonics": 0.037024,
+  "Toronto Raptors": 0.318641,
+  "wait": 0.529999
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-15: which offer does Ronny Turiaf accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Los Angeles Clippers $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, San Antonio Spurs $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1), or does he wait?"
+}

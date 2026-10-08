@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-15",
+ "decider": "Monta Ellis (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-15-monta-ellis",
+ "kind": "decision",
+ "options": {
+  "Minnesota Timberwolves": 0.47,
+  "wait": 0.53
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-15: which offer does Monta Ellis accept (Minnesota Timberwolves $398,762 x 1), or does he wait?"
+}

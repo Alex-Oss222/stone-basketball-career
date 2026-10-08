@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-15-antoine-walker",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Antoine Walker accept (Dallas Mavericks $12,485,908 x 4), or does he wait?",
+ "decider": "Antoine Walker (simulated player, engine draw)",
+ "options": {
+  "Dallas Mavericks": 0.284929,
+  "wait": 0.715071
+ },
+ "basis": "Ask $13,873,231; best offer 0.90 of the ask in total; accept chance 0.285; priority winning; utility Dallas Mavericks 76.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

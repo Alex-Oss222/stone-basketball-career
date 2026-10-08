@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-15",
+ "decider": "Damon Stoudamire (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-15-damon-stoudamire",
+ "kind": "decision",
+ "options": {
+  "Portland Trail Blazers": 0.47,
+  "wait": 0.53
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-15: which offer does Damon Stoudamire accept (Portland Trail Blazers $9,324,133 x 3), or does he wait?"
+}

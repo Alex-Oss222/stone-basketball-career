@@ -1,0 +1,17 @@
+{
+ "event_id": "2005-fa-2005-07-15-robert-whaley",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Robert Whaley accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, Toronto Raptors $398,762 x 1), or does he wait?",
+ "decider": "Robert Whaley (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.031422,
+  "Charlotte Bobcats": 0.002865,
+  "Milwaukee Bucks": 0.014261,
+  "New Jersey Nets": 0.009949,
+  "New Orleans Hornets": 0.007135,
+  "New York Knicks": 0.013839,
+  "Toronto Raptors": 0.390529,
+  "wait": 0.53
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.470; priority money; utility Atlanta Hawks 44.8, Charlotte Bobcats 35.2, Milwaukee Bucks 41.6, New Jersey Nets 40.2, New Orleans Hornets 38.9, New York Knicks 41.5, Toronto Raptors 54.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

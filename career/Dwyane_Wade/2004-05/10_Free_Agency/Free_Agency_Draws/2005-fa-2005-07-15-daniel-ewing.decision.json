@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-15-daniel-ewing",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Daniel Ewing accept (Minnesota Timberwolves $398,762 x 1), or does he wait?",
+ "decider": "Daniel Ewing (simulated player, engine draw)",
+ "options": {
+  "Minnesota Timberwolves": 0.47,
+  "wait": 0.53
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.470; priority money; utility Minnesota Timberwolves 47.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

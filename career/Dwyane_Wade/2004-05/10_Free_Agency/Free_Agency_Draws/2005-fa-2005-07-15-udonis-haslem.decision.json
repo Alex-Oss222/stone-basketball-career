@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-15-udonis-haslem",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Udonis Haslem accept (Miami Heat $5,000,000 x 5), or does he wait?",
+ "decider": "Udonis Haslem (simulated player, engine draw)",
+ "options": {
+  "Miami Heat": 0.189032,
+  "wait": 0.810968
+ },
+ "basis": "Ask $6,002,554; best offer 0.83 of the ask in total; accept chance 0.189; priority money; utility Miami Heat 75.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

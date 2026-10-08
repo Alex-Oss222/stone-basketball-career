@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-15-kyle-korver",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Kyle Korver accept (Orlando Magic $7,116,651 x 5), or does he wait?",
+ "decider": "Kyle Korver (simulated player, engine draw)",
+ "options": {
+  "Orlando Magic": 0.092246,
+  "wait": 0.907754
+ },
+ "basis": "Ask $9,759,487; best offer 0.73 of the ask in total; accept chance 0.092; priority winning; utility Orlando Magic 60.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

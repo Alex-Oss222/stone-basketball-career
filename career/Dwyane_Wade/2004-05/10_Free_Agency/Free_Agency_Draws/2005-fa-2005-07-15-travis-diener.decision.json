@@ -1,0 +1,13 @@
+{
+ "event_id": "2005-fa-2005-07-15-travis-diener",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Travis Diener accept (Indiana Pacers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Minnesota Timberwolves $398,762 x 1), or does he wait?",
+ "decider": "Travis Diener (simulated player, engine draw)",
+ "options": {
+  "Indiana Pacers": 0.132689,
+  "Memphis Grizzlies": 0.14231,
+  "Minnesota Timberwolves": 0.195001,
+  "wait": 0.53
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.470; priority loyalty; utility Indiana Pacers 52.1, Memphis Grizzlies 52.4, Minnesota Timberwolves 53.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

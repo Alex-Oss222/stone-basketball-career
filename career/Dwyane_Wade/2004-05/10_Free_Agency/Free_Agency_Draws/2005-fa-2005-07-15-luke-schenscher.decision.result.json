@@ -1,0 +1,23 @@
+{
+ "date": "2005-07-15",
+ "decider": "Luke Schenscher (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-15-luke-schenscher",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.005048,
+  "Charlotte Bobcats": 5.6e-05,
+  "Dallas Mavericks": 0.09621,
+  "Los Angeles Clippers": 0.001639,
+  "Milwaukee Bucks": 0.000955,
+  "New Jersey Nets": 0.000431,
+  "New Orleans Hornets": 0.000306,
+  "New York Knicks": 0.000862,
+  "San Antonio Spurs": 0.065794,
+  "Seattle SuperSonics": 0.00629,
+  "Toronto Raptors": 0.289753,
+  "Washington Wizards": 0.002655,
+  "wait": 0.530001
+ },
+ "outcome": "Toronto Raptors",
+ "question": "2005 free agency, 2005-07-15: which offer does Luke Schenscher accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Dallas Mavericks $398,762 x 1, Los Angeles Clippers $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, San Antonio Spurs $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-15",
+ "decider": "Esteban Batista (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-15-esteban-batista",
+ "kind": "decision",
+ "options": {
+  "Houston Rockets": 0.47,
+  "wait": 0.53
+ },
+ "outcome": "Houston Rockets",
+ "question": "2005 free agency, 2005-07-15: which offer does Esteban Batista accept (Houston Rockets $398,762 x 1), or does he wait?"
+}

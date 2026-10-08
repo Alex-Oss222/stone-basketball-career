@@ -1,0 +1,14 @@
+{
+ "event_id": "2005-fa-2005-07-15-ha-seung-jin",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Ha Seung-Jin accept (Detroit Pistons $641,748 x 1, Houston Rockets $641,748 x 1, Los Angeles Lakers $641,748 x 1, Philadelphia 76ers $641,748 x 1), or does he wait?",
+ "decider": "Ha Seung-Jin (simulated player, engine draw)",
+ "options": {
+  "Detroit Pistons": 0.115108,
+  "Houston Rockets": 0.121313,
+  "Los Angeles Lakers": 0.127852,
+  "Philadelphia 76ers": 0.105728,
+  "wait": 0.529999
+ },
+ "basis": "Ask $641,748; best offer 1.00 of the ask in total; accept chance 0.470; priority loyalty; utility Detroit Pistons 53.1, Houston Rockets 53.3, Los Angeles Lakers 53.5, Philadelphia 76ers 52.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

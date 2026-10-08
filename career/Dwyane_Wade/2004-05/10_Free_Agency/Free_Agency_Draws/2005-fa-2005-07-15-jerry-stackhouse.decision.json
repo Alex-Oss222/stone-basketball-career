@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-15-jerry-stackhouse",
+ "date": "2005-07-15",
+ "question": "2005 free agency, 2005-07-15: which offer does Jerry Stackhouse accept (Minnesota Timberwolves $7,381,562 x 3), or does he wait?",
+ "decider": "Jerry Stackhouse (simulated player, engine draw)",
+ "options": {
+  "Minnesota Timberwolves": 0.47,
+  "wait": 0.53
+ },
+ "basis": "Ask $7,381,562; best offer 1.00 of the ask in total; accept chance 0.470; priority loyalty; utility Minnesota Timberwolves 80.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
