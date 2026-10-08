@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-16",
+ "decider": "Jannero Pargo (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-16-jannero-pargo",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-09-16: which offer does Jannero Pargo accept (New Jersey Nets $3,715,770 x 5), or does he wait?"
+}

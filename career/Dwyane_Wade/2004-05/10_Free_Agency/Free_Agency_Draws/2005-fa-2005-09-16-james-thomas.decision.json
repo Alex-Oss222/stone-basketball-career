@@ -1,0 +1,17 @@
+{
+ "event_id": "2005-fa-2005-09-16-james-thomas",
+ "date": "2005-09-16",
+ "question": "2005 free agency, 2005-09-16: which offer does James Thomas accept (Atlanta Hawks $641,748 x 1, Charlotte Bobcats $641,748 x 1, Chicago Bulls $641,748 x 1, Denver Nuggets $641,748 x 1, Houston Rockets $641,748 x 1, Los Angeles Lakers $641,748 x 1, Minnesota Timberwolves $641,748 x 1), or does he wait?",
+ "decider": "James Thomas (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.048483,
+  "Charlotte Bobcats": 0.001524,
+  "Chicago Bulls": 0.099855,
+  "Denver Nuggets": 0.016424,
+  "Houston Rockets": 0.02926,
+  "Los Angeles Lakers": 0.038425,
+  "Minnesota Timberwolves": 0.716029,
+  "wait": 0.05
+ },
+ "basis": "Ask $641,748; best offer 1.00 of the ask in total; accept chance 0.950; priority winning; utility Atlanta Hawks 45.2, Charlotte Bobcats 31.4, Chicago Bulls 48.1, Denver Nuggets 40.9, Houston Rockets 43.2, Los Angeles Lakers 44.3, Minnesota Timberwolves 56.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

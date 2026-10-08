@@ -1,0 +1,18 @@
+{
+ "date": "2005-09-16",
+ "decider": "Alvin Williams (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-16-alvin-williams",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.899546,
+  "Golden State Warriors": 0.007166,
+  "Milwaukee Bucks": 0.005139,
+  "Minnesota Timberwolves": 0.013123,
+  "New Jersey Nets": 0.00044,
+  "Sacramento Kings": 0.023734,
+  "Utah Jazz": 0.000852,
+  "wait": 0.05
+ },
+ "outcome": "Chicago Bulls",
+ "question": "2005 free agency, 2005-09-16: which offer does Alvin Williams accept (Chicago Bulls $1,029,873 x 1, Golden State Warriors $1,029,873 x 1, Milwaukee Bucks $1,029,873 x 1, Minnesota Timberwolves $1,029,873 x 1, New Jersey Nets $1,029,873 x 1, Sacramento Kings $1,029,873 x 1, Utah Jazz $1,029,873 x 1), or does he wait?"
+}

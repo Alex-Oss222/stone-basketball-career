@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-16",
+ "decider": "Troy Hudson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-16-troy-hudson",
+ "kind": "decision",
+ "options": {
+  "Utah Jazz": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "Utah Jazz",
+ "question": "2005 free agency, 2005-09-16: which offer does Troy Hudson accept (Utah Jazz $4,447,240 x 4), or does he wait?"
+}

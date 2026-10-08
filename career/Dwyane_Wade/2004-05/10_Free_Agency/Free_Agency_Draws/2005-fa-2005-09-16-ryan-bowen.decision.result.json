@@ -1,0 +1,23 @@
+{
+ "date": "2005-09-16",
+ "decider": "Ryan Bowen (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-16-ryan-bowen",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.039003,
+  "Charlotte Bobcats": 0.001232,
+  "Chicago Bulls": 0.078346,
+  "Denver Nuggets": 0.004498,
+  "Houston Rockets": 0.021566,
+  "Los Angeles Clippers": 0.020929,
+  "Los Angeles Lakers": 0.032254,
+  "Milwaukee Bucks": 0.006545,
+  "Minnesota Timberwolves": 0.354652,
+  "Philadelphia 76ers": 0.172628,
+  "San Antonio Spurs": 0.204106,
+  "Washington Wizards": 0.014241,
+  "wait": 0.05
+ },
+ "outcome": "Minnesota Timberwolves",
+ "question": "2005 free agency, 2005-09-16: which offer does Ryan Bowen accept (Atlanta Hawks $900,498 x 1, Charlotte Bobcats $900,498 x 1, Chicago Bulls $900,498 x 1, Denver Nuggets $900,498 x 1, Houston Rockets $900,498 x 1, Los Angeles Clippers $900,498 x 1, Los Angeles Lakers $900,498 x 1, Milwaukee Bucks $900,498 x 1, Minnesota Timberwolves $900,498 x 1, Philadelphia 76ers $900,498 x 1, San Antonio Spurs $900,498 x 1, Washington Wizards $900,498 x 1), or does he wait?"
+}

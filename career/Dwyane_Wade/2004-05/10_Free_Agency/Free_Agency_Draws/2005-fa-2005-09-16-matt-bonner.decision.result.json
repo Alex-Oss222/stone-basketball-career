@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-16",
+ "decider": "Matt Bonner (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-16-matt-bonner",
+ "kind": "decision",
+ "options": {
+  "Toronto Raptors": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "Toronto Raptors",
+ "question": "2005 free agency, 2005-09-16: which offer does Matt Bonner accept (Toronto Raptors $4,010,894 x 5), or does he wait?"
+}

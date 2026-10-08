@@ -1,0 +1,13 @@
+{
+ "date": "2005-09-16",
+ "decider": "Mateen Cleaves (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-16-mateen-cleaves",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.26351,
+  "Utah Jazz": 0.68649,
+  "wait": 0.05
+ },
+ "outcome": "Utah Jazz",
+ "question": "2005 free agency, 2005-09-16: which offer does Mateen Cleaves accept (New Jersey Nets $835,810 x 1, Utah Jazz $835,810 x 1), or does he wait?"
+}

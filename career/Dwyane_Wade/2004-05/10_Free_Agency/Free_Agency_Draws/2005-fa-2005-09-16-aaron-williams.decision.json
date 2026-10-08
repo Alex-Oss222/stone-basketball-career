@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-09-16-aaron-williams",
+ "date": "2005-09-16",
+ "question": "2005 free agency, 2005-09-16: which offer does Aaron Williams accept (Charlotte Bobcats $1,138,500 x 1), or does he wait?",
+ "decider": "Aaron Williams (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $1,138,500; best offer 1.00 of the ask in total; accept chance 0.950; priority money; utility Charlotte Bobcats 32.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

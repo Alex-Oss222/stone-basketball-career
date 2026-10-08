@@ -1,0 +1,22 @@
+{
+ "event_id": "2005-fa-2005-09-16-ryan-bowen",
+ "date": "2005-09-16",
+ "question": "2005 free agency, 2005-09-16: which offer does Ryan Bowen accept (Atlanta Hawks $900,498 x 1, Charlotte Bobcats $900,498 x 1, Chicago Bulls $900,498 x 1, Denver Nuggets $900,498 x 1, Houston Rockets $900,498 x 1, Los Angeles Clippers $900,498 x 1, Los Angeles Lakers $900,498 x 1, Milwaukee Bucks $900,498 x 1, Minnesota Timberwolves $900,498 x 1, Philadelphia 76ers $900,498 x 1, San Antonio Spurs $900,498 x 1, Washington Wizards $900,498 x 1), or does he wait?",
+ "decider": "Ryan Bowen (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.039003,
+  "Charlotte Bobcats": 0.001232,
+  "Chicago Bulls": 0.078346,
+  "Denver Nuggets": 0.004498,
+  "Houston Rockets": 0.021566,
+  "Los Angeles Clippers": 0.020929,
+  "Los Angeles Lakers": 0.032254,
+  "Milwaukee Bucks": 0.006545,
+  "Minnesota Timberwolves": 0.354652,
+  "Philadelphia 76ers": 0.172628,
+  "San Antonio Spurs": 0.204106,
+  "Washington Wizards": 0.014241,
+  "wait": 0.05
+ },
+ "basis": "Ask $900,498; best offer 1.00 of the ask in total; accept chance 0.950; priority loyalty; utility Atlanta Hawks 46.8, Charlotte Bobcats 32.9, Chicago Bulls 49.5, Denver Nuggets 38.1, Houston Rockets 44.4, Los Angeles Clippers 44.3, Los Angeles Lakers 46.0, Milwaukee Bucks 39.6, Minnesota Timberwolves 55.6, Philadelphia 76ers 52.7, San Antonio Spurs 53.4, Washington Wizards 42.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

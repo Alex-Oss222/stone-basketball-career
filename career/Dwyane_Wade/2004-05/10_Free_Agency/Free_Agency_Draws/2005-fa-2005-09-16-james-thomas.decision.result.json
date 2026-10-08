@@ -1,0 +1,18 @@
+{
+ "date": "2005-09-16",
+ "decider": "James Thomas (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-16-james-thomas",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.048483,
+  "Charlotte Bobcats": 0.001524,
+  "Chicago Bulls": 0.099855,
+  "Denver Nuggets": 0.016424,
+  "Houston Rockets": 0.02926,
+  "Los Angeles Lakers": 0.038425,
+  "Minnesota Timberwolves": 0.716029,
+  "wait": 0.05
+ },
+ "outcome": "Minnesota Timberwolves",
+ "question": "2005 free agency, 2005-09-16: which offer does James Thomas accept (Atlanta Hawks $641,748 x 1, Charlotte Bobcats $641,748 x 1, Chicago Bulls $641,748 x 1, Denver Nuggets $641,748 x 1, Houston Rockets $641,748 x 1, Los Angeles Lakers $641,748 x 1, Minnesota Timberwolves $641,748 x 1), or does he wait?"
+}

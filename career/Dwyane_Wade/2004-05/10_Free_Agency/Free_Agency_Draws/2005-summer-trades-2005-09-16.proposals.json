@@ -1,0 +1,6 @@
+{
+ "schema_version": 1,
+ "date": "2005-09-16",
+ "rule": "runtime/free_agency_2004.py Market.trade_proposals",
+ "deals": []
+}

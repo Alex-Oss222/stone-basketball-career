@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-16",
+ "decider": "Aaron Williams (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-16-aaron-williams",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "Charlotte Bobcats",
+ "question": "2005 free agency, 2005-09-16: which offer does Aaron Williams accept (Charlotte Bobcats $1,138,500 x 1), or does he wait?"
+}

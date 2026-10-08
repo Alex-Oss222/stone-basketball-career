@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-09-16-matt-bonner",
+ "date": "2005-09-16",
+ "question": "2005 free agency, 2005-09-16: which offer does Matt Bonner accept (Toronto Raptors $4,010,894 x 5), or does he wait?",
+ "decider": "Matt Bonner (simulated player, engine draw)",
+ "options": {
+  "Toronto Raptors": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $4,010,894; best offer 1.00 of the ask in total; accept chance 0.950; priority fame; utility Toronto Raptors 65.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,22 @@
+{
+ "date": "2005-09-16",
+ "decider": "Marko Jaric (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-16-marko-jaric",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.08458,
+  "Boston Celtics": 0.354317,
+  "Charlotte Bobcats": 0.004087,
+  "Chicago Bulls": 0.169473,
+  "Denver Nuggets": 0.009754,
+  "Detroit Pistons": 0.063288,
+  "Golden State Warriors": 0.003597,
+  "Houston Rockets": 0.071535,
+  "New Orleans Hornets": 0.001661,
+  "Orlando Magic": 0.015032,
+  "Seattle SuperSonics": 0.062346,
+  "wait": 0.16033
+ },
+ "outcome": "Chicago Bulls",
+ "question": "2005 free agency, 2005-09-16: which offer does Marko Jaric accept (Atlanta Hawks $5,000,000 x 5, Boston Celtics $5,000,000 x 5, Charlotte Bobcats $5,000,000 x 5, Chicago Bulls $5,000,000 x 5, Denver Nuggets $5,000,000 x 5, Detroit Pistons $5,000,000 x 5, Golden State Warriors $5,000,000 x 5, Houston Rockets $5,000,000 x 5, New Orleans Hornets $5,000,000 x 5, Orlando Magic $5,000,000 x 5, Seattle SuperSonics $5,000,000 x 5), or does he wait?"
+}
