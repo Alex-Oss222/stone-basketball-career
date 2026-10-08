@@ -358,10 +358,11 @@
     "2005-06": 5200000
    },
    "source": "library/2003/league/nba_2003_contracts.json",
-   "options": {
-    "2005-06": "early_termination_option"
-   },
-   "signed_club": "Boston Celtics"
+   "options": {},
+   "signed_club": "Boston Celtics",
+   "option_history": [
+    "2005-06 early termination option: stay (2005-06-29; clear: ratio 1.57 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Lonny Baxter",
@@ -1031,13 +1032,13 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 3250000,
-    "2005-06": 3500000
+    "2004-05": 3250000
    },
    "source": "library/2003/league/nba_2003_contracts.json",
-   "options": {
-    "2005-06": "team_option"
-   }
+   "options": {},
+   "option_history": [
+    "2005-06 team option: decline (2005-06-29; his real career ended before 2005-06 (runtime/availability.py); runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Jamal Crawford",
@@ -3381,9 +3382,10 @@
     "2005-06": 6374875
    },
    "source": "library/2003/league/nba_2003_contracts.json",
-   "options": {
-    "2005-06": "early_termination_option"
-   }
+   "options": {},
+   "option_history": [
+    "2005-06 early termination option: stay (2005-06-29; clear: ratio 1.31 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Nazr Mohammed",
@@ -3694,9 +3696,10 @@
     "2005-06": 30642861
    },
    "source": "library/2003/league/nba_2003_contracts.json",
-   "options": {
-    "2005-06": "early_termination_option"
-   }
+   "options": {},
+   "option_history": [
+    "2005-06 early termination option: stay (2005-06-29; clear: ratio 2.92 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Greg Ostertag",
@@ -4147,13 +4150,13 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 3000000,
-    "2005-06": 3000000
+    "2004-05": 3000000
    },
    "source": "library/2003/league/nba_2003_contracts.json",
-   "options": {
-    "2005-06": "player_option"
-   }
+   "options": {},
+   "option_history": [
+    "2005-06 player option: leave (2005-06-29; clear: ratio 0.37 at or below 0.8; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Justin Reed",
@@ -5170,13 +5173,13 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2004-05": 7700000,
-    "2005-06": 8400000
+    "2004-05": 7700000
    },
    "source": "library/2003/league/nba_2003_contracts.json",
-   "options": {
-    "2005-06": "team_option"
-   }
+   "options": {},
+   "option_history": [
+    "2005-06 team option: decline (2005-06-29; clear: ratio 0.44 at or below 0.8; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Jiri Welsch",
