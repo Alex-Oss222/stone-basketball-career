@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-10-27**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-10-28**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -505,7 +505,7 @@ Card date: **2005-10-27**. 573 registry players, one Markdown card and one inter
 | [Adonal Foyle](foylead01.md) | Miami Heat | 30 | sourced | [open](foylead01.html) |
 | [Alan Henderson](hendeal01.md) | Free agent | 32 | silhouette | [open](hendeal01.html) |
 | [Alonzo Mourning](mournal01.md) | Minnesota Timberwolves | 35 | silhouette | [open](mournal01.html) |
-| [Amal McCaskill](mccasam01.md) | Free agent | 31 | silhouette | [open](mccasam01.html) |
+| [Amal McCaskill](mccasam01.md) | Free agent | 32 | silhouette | [open](mccasam01.html) |
 | [Andreas Glyniadakis](glynian01.md) | Free agent | 24 | sourced | [open](glynian01.html) |
 | [Andrew DeClercq](declean01.md) | Free agent | 32 | silhouette | [open](declean01.html) |
 | [Anthony Mason](masonan01.md) | Free agent | 38 | silhouette | [open](masonan01.html) |
