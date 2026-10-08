@@ -35,8 +35,23 @@ def _season_after(season, n):
 def schedule_for(first_salary, years, start_season, route):
     """{season: salary} for a new contract from its first-year salary and the route it was signed by."""
     from .agreement import raise_share as agreement_raise                 # 12.5/10% (1999); 10.5/8% from the 2005 agreement
+    if route == "minimum" and years > 1:
+        steps = minimum_steps(first_salary, years, start_season)
+        if steps:
+            return steps
     raise_share = agreement_raise(route, start_season)
     return {_season_after(start_season, i): int(round(first_salary * (1 + raise_share * i))) for i in range(max(1, years))}
+
+
+def minimum_steps(first_salary, years, start_season):
+    """A multi-season minimum contract pays each season's minimum for the player's service that season (one more year
+    each season), so a later season never falls under the league minimum. The first-year salary names his service on
+    the scale; None when it is not a scale amount (then the flat schedule stands)."""
+    from .cba import minimum_salary
+    service = next((n for n in range(11) if minimum_salary(n, start_season) == first_salary), None)
+    if service is None:
+        return None
+    return {_season_after(start_season, i): minimum_salary(service + i, _season_after(start_season, i)) for i in range(years)}
 
 
 def rookie_schedule(pick, start_season, scale):

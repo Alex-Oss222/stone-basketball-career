@@ -2,7 +2,7 @@
 
 # Offseason training | Dwyane Wade
 
-Career date: 2005-06-16 · Miami Heat · active
+Career date: 2005-06-16 · Miami Heat · planned
 
 [Live milestone desk](index.html#offseason_training) · [All milestones](README.md)
 
@@ -42,6 +42,9 @@ Activation: A dated player priority and staff-supported development block.
 
 | Date | Event / player decision |
 | --- | --- |
+| 2005-06-16 | Wade adopts his 2005 summer plan for the rest of the offseason (`03_Offseason/Wade_Summer_Plan_2005.md`): man-to-man defense 35%, shot selection 30%, passing 25% and skill maintenance 10%, with Miami's coaching, medical, video and strength staff as the primary structure, and he commits to Miami's designated offseason program (at most two weeks). The plan changes no rating; the staff own the schedule, workload and evaluation. |
+| 2005-06-16 | Wade asks the front office to pursue Udonis Haslem on a multi-year contract (`10_Free_Agency/wade_requests.json`, term `multi_year`). Haslem is a Toronto player whose contract ends June 30; Toronto controls his restricted free agency if it tenders a qualifying offer. The front office weighs the request by Wade's standing and decides; Wade sets no terms. |
+| 2005-06-16 | Wade makes no request about the June 28 draft; Miami's No. 58 pick follows its own process. |
 | 2004-10-01 | Wade's 2004 summer is recorded in `../../2003-04/03_Offseason/`. |
 
 ## Your legitimate response
@@ -51,6 +54,23 @@ Activation: A dated player priority and staff-supported development block.
 - Return with recorded drill/game evidence at the agreed review.
 - A preference does not assign staff, prescribe an unsourced workload or change engine ability.
 
+## Wade's 2005 summer plan
+
+| Working record | Dated information |
+| --- | --- |
+| Event ID | 2005-06-16-wade-summer-plan |
+| Recorded | 2005-06-16 |
+| Status | Planned |
+| Owner | staff |
+| Evidence | [Owning dated record](../2004-05/03_Offseason/Wade_Summer_Plan_2005.md) |
+| Reply registry version | b8eb9028f99c4b20 |
+| Player focus | Man-to-man defense 35%, shot selection 30%, passing 25%, skill maintenance 10%; less time on new isolation moves, mechanics rebuilds, long-range volume, nonessential dribble combinations and weight gain |
+| Staff plan and availability | Spoelstra's staff with Miami's medical, video and strength staff as the primary structure; Miami's designated program (at most two weeks) attended for the $252,660 included incentive; preseason conditioning test for another $252,660 |
+| Baseline and protocol | Simulated 2004-05: 76 G, 36.2 MPG, 21.3 PTS, 4.0 AST, 1.3 TOV, 65.7% TS; coaches to set defensive, shot-selection and passing baselines from practice possessions and film; skills review about every two weeks |
+| Planned / completed sessions | None completed yet; private specialists not contacted for 2005; Haslem invited privately (does not depend on his signing); professional guards and wings to be invited for live work |
+| Your response | Miami's staff confirm the medical assessment, the designated program dates and the baselines for Wade's defense, shot-selection and passing work. |
+| Next checkpoint | Date not set: Miami schedules its designated offseason program and the staff confirm the baselines |
+
 ## Available response paths
 
 - [Open your recorded development work](../2004-05/03_Offseason/note.md): Record a real dated priority or review in the owning offseason record.
@@ -58,7 +78,7 @@ Activation: A dated player priority and staff-supported development block.
 
 ## Next checkpoint
 
-The player and staff agree a dated first block and review criteria.
+Date not set: Miami schedules its designated offseason program and the staff confirm the baselines
 
 ## Evidence
 
@@ -68,11 +88,13 @@ The player and staff agree a dated first block and review criteria.
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
+- [Recorded request](../2004-05/10_Free_Agency/wade_requests.json)
 - [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json)
+- [Owning dated record](../2004-05/03_Offseason/Wade_Summer_Plan_2005.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json)

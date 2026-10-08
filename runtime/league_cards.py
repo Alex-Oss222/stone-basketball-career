@@ -572,6 +572,11 @@ class CardContext:
                     who = v.get("player")
                     if who and who not in d["winners"]:
                         self.honors.setdefault(_key(who), []).append(dict(base, name=d["name"], rank=i + 1))
+        # FIBA team medals (runtime/national_medals.py): every player on a medal team's locked tournament roster, from
+        # the day the tournament closed, matched to the registry by NBA id only.
+        from .national_medals import register_medals
+        for key, rows in medal_honors(self.registry["players"], register_medals(self.root, self.on)).items():
+            self.honors.setdefault(key, []).extend(rows)
         # Closed playoff results (runtime/playoff_stats.py): each player's playoff records, by dated record name.
         self.playoff_lines = {}
         try:
@@ -591,6 +596,20 @@ class CardContext:
     def club(self, player, signed=None):
         return club_on(player, self.on, holdings=self.holdings, departures=self.departures,
                        transactions=self.transactions, root=self.root, signed=signed)
+
+
+def medal_honors(players, medals):
+    """{name key: [honor rows]} for registry players' FIBA medals (`national_medals.register_medals`), by NBA id: a
+    medal without an NBA id, or for an id the registry does not track, stays on the tournament page only."""
+    names = {p["bbr_id"]: p["name"] for p in players if p.get("bbr_id")}
+    out = {}
+    for m in medals:
+        if m.get("bbr_id") in names:
+            out.setdefault(_key(names[m["bbr_id"]]), []).append(dict(
+                conference="", name=f"{m['tournament']} {m['name']}", period_start=m["period_start"],
+                period_end=m["period_end"], announced_on=m["awarded_on"], award=f"fiba_{m['medal']}",
+                filed_on=m["page"], anchor="medals", rank=1, medal=m))
+    return out
 
 
 def card_data(ctx, player, records=(), shots=()):
@@ -794,23 +813,40 @@ def markdown_card(ctx, data):
         prow = [ctx.season, team, "0", *["N/A"] * (len(hist) - 3)]
     earlier = [ctx.history[x].get(data["id"], {}).get("playoff") for x in sorted(ctx.history)]
     lines.append(markdown_table(hist, [r for r in earlier if r] + [prow]).rstrip() + "\n")
-    lines.append("## Awards and honors\n")
+    lines += awards_lines(ctx, p)
+    return "\n".join(lines)
+
+
+def awards_lines(ctx, p):
+    """The card's final section: closed league award decisions and FIBA team medals (`medal_honors`), by date."""
+    lines = ["## Awards and honors\n"]
     honors = ctx.honors.get(_key(p["name"]), [])
     if not honors:
         lines.append(f"No simulated honor has been recorded for this player through {ctx.on}. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.\n")
     else:
-        won = sum(1 for h in honors if h["rank"] == 1)
-        lines.append(f"Simulated honors and shortlist placings through {ctx.on}, from closed award decisions "
-                     f"({won} won). Historical awards are not imported.\n")
+        won = sum(1 for h in honors if h["rank"] == 1 and not h.get("medal"))
+        medals = sum(1 for h in honors if h.get("medal"))
+        if medals:
+            lines.append(f"Simulated honors and shortlist placings through {ctx.on}, from closed award decisions "
+                         f"({won} won), and {medals} FIBA team medal{'s' if medals > 1 else ''} from closed tournaments' "
+                         "medal registers (every player on a medal team's locked roster). Historical awards are not imported.\n")
+        else:
+            lines.append(f"Simulated honors and shortlist placings through {ctx.on}, from closed award decisions "
+                         f"({won} won). Historical awards are not imported.\n")
         rows = []
         for h in sorted(honors, key=lambda h: (h["announced_on"], h["award"])):
-            page = _rel(ctx.root / CARDS_DIR, ctx.root / h["filed_on"])
+            page = _rel(ctx.root / CARDS_DIR, ctx.root / h["filed_on"]) + (f"#{h['anchor']}" if h.get("anchor") else "")
+            if h.get("medal"):
+                m = h["medal"]
+                rows.append([h["name"], f"{h['period_start']} to {h['period_end']}", h["announced_on"],
+                             f"**{m['name'].capitalize()}** ({m['country']}, place {m['place']})", f"[Tournament]({page})"])
+                continue
             result = ("**Selected**" if h.get("annual") and "Team" in h["name"] else "**Winner**") if h["rank"] == 1 else \
                 (f"No. {h['rank']} in the vote" if h.get("annual") else f"Shortlist, No. {h['rank']}")
             rows.append([f"{h['conference']} {h['name']}".strip(), f"{h['period_start']} to {h['period_end']}", h["announced_on"], result,
                          f"[Decision]({page})"])
         lines.append(markdown_table(["Award", "Period", "Announced", "Result", "Record"], rows).rstrip() + "\n")
-    return "\n".join(lines)
+    return lines
 
 
 def _empty_period(period, stat):
@@ -829,11 +865,13 @@ def award_notice(ctx, p):
     honors = ctx.honors.get(_key(p["name"]), [])
     annual = [h["name"] for h in honors if h.get("annual") and h["rank"] == 1]
     periodic = [f"{h['conference']} {h['name']} ({h['period_start']} to {h['period_end']})"
-                for h in honors if h["rank"] == 1 and not h.get("annual")]
+                for h in honors if h["rank"] == 1 and not h.get("annual") and not h.get("medal")]
+    medals = [f"{h['name']} ({h['medal']['country']})" for h in honors if h.get("medal")]
     first = ("Season honors: " + "; ".join(annual) + ". ") if annual else \
         f"No annual award has been recorded for this player through {ctx.on}. "
     return first + ("Weekly and monthly honors won: " + "; ".join(periodic) + "." if periodic
-                    else "Weekly and monthly honors stay in the league award records.")
+                    else "Weekly and monthly honors stay in the league award records.") + \
+        (" FIBA team medals: " + "; ".join(medals) + "." if medals else "")
 
 
 def html_payload(ctx, data):

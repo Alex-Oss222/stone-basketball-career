@@ -81,6 +81,73 @@
   "raise_percent_note": "The scale fixes years two and three at 107.5% and 115% of year one (see the pick table in nba_2003_04_cap_rules.json); the 10% figure is not a negotiable raise.",
   "fourth_year_option_deadline": "October 31 after the player's second season (Q38): for a 2003 draftee, October 31, 2005."
  },
+ "required_tenders": {
+  "purpose": "Required Tenders and how long a club keeps a pick's exclusive rights, for the 1999 through 2004 drafts (picks whose contracts belong to the 2003-04 and 2004-05 league years, runtime/agreement.terms). Read by runtime/draft_rights.py.",
+  "sources": [
+   "1999 NBA/NBPA Collective Bargaining Agreement, Article X, Section 3 and Article I (vv) (https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf; listed in the 2003-04 register's sources)",
+   "Larry Coon, NBA Salary Cap FAQ, 1999 CBA (final version, 11/16/05), http://www.cbafaq.com/salarycap99.htm: Q40 (how long the team keeps a pick's rights), Q89 (a tender may be accepted during the July Moratorium)"
+  ],
+  "first_round": {
+   "tender_by": {
+    "value": "07-15",
+    "status": "sourced",
+    "source_ref": "Art. X §3(a)",
+    "note": "Month-day after the draft: July 15. Constant of runtime/draft_rights.py since its introduction (career date November 11, 2003), taken from the agreement text; the PDF was not re-read on 2026-10-08."
+   },
+   "rookie_free_agent_from": {
+    "value": "07-16",
+    "status": "derived",
+    "source_ref": "Art. X §3(a)",
+    "note": "The day after the tender deadline."
+   },
+   "terms": {
+    "value": "a Rookie Scale Contract of three seasons plus a team option for a fourth, at 80% or more of the pick's scale",
+    "status": "sourced",
+    "source_ref": "Art. X §3(a); 1999 FAQ Q38 (scale structure)"
+   }
+  },
+  "second_round": {
+   "window_from": {
+    "value": "08-22",
+    "status": "sourced",
+    "source_ref": "Art. X §3(b)",
+    "note": "The tender is made in the two weeks before September 5: August 22 through September 5. Constant of runtime/draft_rights.py since November 11, 2003 (agreement text, not re-read on 2026-10-08)."
+   },
+   "tender_by": {
+    "value": "09-05",
+    "status": "sourced",
+    "source_ref": "Art. X §3(b)"
+   },
+   "rookie_free_agent_from": {
+    "value": "09-06",
+    "status": "derived",
+    "source_ref": "Art. X §3(b)",
+    "note": "The day after the tender deadline."
+   },
+   "terms": {
+    "value": "one season at the Minimum Annual Salary",
+    "status": "sourced",
+    "source_ref": "Art. I (vv); 1999 FAQ Q89",
+    "note": "Q89: second-round picks sign during the moratorium 'for one season at the minimum salary, or one season plus an option year at the minimum salary'."
+   }
+  },
+  "rights_until": {
+   "value": "the date of the next draft, unless the pick signs",
+   "status": "sourced",
+   "source_ref": "Art. X §3(a); 1999 FAQ Q40",
+   "note": "Q40: 'For all other players, the team retains the player's draft rights until the date of the next draft.' A tendered pick who has not signed by then may be drafted again."
+  },
+  "retained_beyond_next_draft": {
+   "value": {
+    "non_nba_contract": "a pick already under contract with, or signing with, a non-NBA team: the team keeps his rights until one year after that obligation ends",
+    "college": "a pick still eligible for college when drafted: the team keeps his rights until the draft he would have entered had he not left college early"
+   },
+   "status": "sourced",
+   "source_ref": "1999 FAQ Q40; Art. X §4 (not re-read)",
+   "modelled": false,
+   "note": "Not modelled: no pipeline decides that a pick is abroad or at college. A register entry that records one of these bases (draft_rights_retained) is checked against its own dated record instead of the tender and the next draft (runtime/draft_rights.py). Whether such a pick also needed the tender is not settled by the FAQ; the record carries its own source."
+  }
+ },
  "unverified": [
   "A separate cap-hold rule for players coming off minimum-salary contracts (not found in the FAQ; the standard percentages are applied and flagged).",
   "Any rule tying a cap hold to a pending qualifying offer or offer sheet (not found in the FAQ)."

@@ -10,7 +10,8 @@ The user's premises (December 31, 2004 on the career clock; `career/Dwyane_Wade/
 
 Nothing reads the event's own real results. A tournament's pipeline record (`FIBA/<family>/<edition>/tournament.json`)
 holds the dated selections, the locked rosters, each game's resolved teams and event id, and the engine draws that
-settled ties; results come only from the engine's closed games. Days run in order through `day(date)`
+settled ties; results come only from the engine's closed games. At the close the medal register gives the team's medal
+to every player on a medal team's locked roster (`runtime/national_medals.py`). Days run in order through `day(date)`
 (`scripts/national_day.py`, called by `scripts/advance.py`): selection on the committee's date, rosters locked the day
 before the first game, then each game day's requests once both teams are known.
 """
@@ -685,7 +686,9 @@ def day(today, root=ROOT, write=True):
 
 def after_games(today, root=ROOT):
     """After the day's games are played: Wade's notes get their results, standings refresh, the bracket advances,
-    and the tournament closes after its last game (awards). Returns summary lines."""
+    and the tournament closes after its last game (awards, the final ranking, the medal teams' identities frozen on the
+    close and the medal register of every locked medal-team player, `runtime/national_medals.py`). Returns summary
+    lines."""
     e = edition_for(today, root)
     if e is None:
         return []
@@ -707,13 +710,23 @@ def after_games(today, root=ROOT):
                                       if line else ""))
     closed = results(e, rec, root)
     resolve(e, rec, closed)
-    if today >= e["last_game"] and len(closed) == len(rec["games"]) and not rec.get("closed"):
+    closing = today >= e["last_game"] and len(closed) == len(rec["games"]) and not rec.get("closed")
+    if closing:
         rec["awards"] = decide_awards(e, rec, root)
         rec["closed"] = True
+        rec["closed_on"] = today
         rec["ranking"] = final_ranking(e, rec, root)
         lines.append(f"{e['name']} closed: champion {rec['awards']['champion']}")
         for name in record_wade_honors(e, rec, root):
             lines.append(f"WADE HONOR: {name}")
+    if rec.get("closed"):
+        from .national_medals import freeze, write as write_medals
+        if "medal_identities" not in rec:                          # resolved once, on the close: never re-resolved
+            rec["medal_identities"] = freeze(e, rec, root)
+        register = write_medals(e, rec, root)                       # rebuilt unchanged on any later run
+        if closing and register:
+            lines.append(f"{e['name']} medals: " + "; ".join(
+                f"{t['medal']} {t['country']} ({t['players']} players)" for t in register["teams"]))
     _write(Path(root) / record_path(e), rec)
     from .national_pages import write as write_page
     write_page(e, rec, root)
@@ -813,7 +826,8 @@ def record_wade_honors(e, rec, root=ROOT):
 # -- validation -----------------------------------------------------------------------------------------------------
 def national_errors(root=ROOT):
     """Built editions match a fresh build; nothing hindsight in the researched editions; every tournament game dated
-    on or before the clock with both teams known has its request; Wade's selection and honors are recorded."""
+    on or before the clock with both teams known has its request; Wade's selection and honors are recorded; every
+    closed edition has its complete medal register and no medal exists before a close (`national_medals.medal_errors`)."""
     from .seasons import state
     root = Path(root)
     errors = []
@@ -845,4 +859,6 @@ def national_errors(root=ROOT):
             a = rec["awards"]
             if (a.get("mvp") or {}).get("player") == WADE and f"{e['edition_id']}-mvp" not in have:
                 errors.append(f"{e['edition_id']}: Wade's MVP is not in awards.json")
+    from .national_medals import medal_errors
+    errors += medal_errors(root, clock)
     return errors

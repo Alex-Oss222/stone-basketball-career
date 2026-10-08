@@ -46,12 +46,14 @@ Activation: The authoritative current date and recorded event determine what is 
 | 2005-02-24 | Trade deadline | League calendar | done | [Season](index.html#calendar) |
 | 2005-04-20 | Regular season ends | League calendar | done | [Season](index.html#calendar) |
 | 2005-04-23 | Playoffs begin | League calendar | done | [Season](index.html#calendar) |
+| 2005-06-16 to 2005-10-03 | Wade's 2005 summer plan | staff | planned | [Record](../2004-05/03_Offseason/Wade_Summer_Plan_2005.md) |
 
 ## Your recorded requests
 
 | Date | Subject | Player / target | Request | Explanation | Source |
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-01 | trade_package | Luke Ridnour | pursue | Wade asks the front office to trade Brian Grant to Charlotte for Luke Ridnour and Cezary Trybanski: a young point guard next to him and room in later seasons (Grant is owed $14.3M in 2005-06 and $15.4M in 2006-07; Ridnour and Trybanski are on one-season contracts). The front office weighs it by Wade's standing and decides. | [Recorded request](../2004-05/04_Training_Camp/wade_requests.json) |
+| 2005-06-16 | free_agent_target | Udonis Haslem | pursue | Wade asks the front office to pursue Udonis Haslem on a multi-year contract (preferably three or four seasons if the terms work). On the date Haslem is a Toronto Raptors player (traded by Miami on 2004-12-20, 00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) whose one-season 2004-05 contract ($620,046) ends June 30, 2005; with two seasons of NBA service (library/2005/league/nba_2005_service_years.json) he is a restricted free agent only if Toronto tenders a qualifying offer, and Toronto may then match an offer sheet. Wade does not set the salary or guarantee acceptance: Miami's front office values him, chooses the mechanism (offer sheet or direct signing) and may decline or abandon the pursuit. The term preference makes a minimum offer run two seasons (the minimum exception's limit); a larger offer runs his wanted years (runtime/free_agency_2004.py requested_terms). Source: 03_Offseason/Wade_Summer_Plan_2005.md, section 1. | [Recorded request](../2004-05/10_Free_Agency/wade_requests.json) |
 
 ## Franchise consultations
 
@@ -72,6 +74,7 @@ Activation: The authoritative current date and recorded event determine what is 
 | Event | Dates | Status | Next checkpoint | Open |
 | --- | --- | --- | --- | --- |
 | Wade's 2004 camp teamwork focus | 2004-10-05 to 2004-11-01 | Planned | 2004-10-05: Training camp opens and the focus moves from planned to actual camp work | [Working record](index.html#training_camp) |
+| Wade's 2005 summer plan | 2005-06-16 to 2005-10-03 | Planned | Date not set: Miami schedules its designated offseason program and the staff confirm the baselines | [Working record](index.html#offseason_training) |
 
 ## Available response paths
 
@@ -90,11 +93,13 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
+- [Recorded request](../2004-05/10_Free_Agency/wade_requests.json)
 - [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json)
+- [Owning dated record](../2004-05/03_Offseason/Wade_Summer_Plan_2005.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json)

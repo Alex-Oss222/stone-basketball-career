@@ -25,6 +25,16 @@
      "three_pct": 0.412,
      "ft_pct": 0.908,
      "ts_pct": 0.64
+    },
+    "2005-06": {
+     "source": "Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting",
+     "mpg": 36.5,
+     "pts": 24.5,
+     "reb": 11.4,
+     "ast": 4.2,
+     "fg_pct": 0.52,
+     "three_pct": 0.417,
+     "ft_pct": 0.913
     }
    },
    "height": "6 ft 11 in",

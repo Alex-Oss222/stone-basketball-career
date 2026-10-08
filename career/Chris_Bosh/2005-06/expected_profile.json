@@ -3,7 +3,7 @@
  "model_version": "protagonist-2004.1",
  "as_of": "2005-06-16",
  "season": "2005-06",
- "source_sha256": "16c9f19e3dd10ad23cfca6c944e8e4431cea4e1ccbeaab251ccf99f9bb8e4330",
+ "source_sha256": "d04cc2dbeac37283c29cae9ab7a82a2367e00b0906717f4b5ca42cd40b7f8ce8",
  "players": {
   "boshch01": {
    "player_name": "Chris Bosh",
@@ -14,13 +14,13 @@
     "minutes": 3174.0
    },
    "estimated": {
-    "two_point_pct": 0.5093759445950756,
-    "three_point_pct": 0.4132533273539674,
-    "free_throw_pct": 0.8447151287802174,
-    "usage_pct": 0.2365466454124947,
-    "assist_pct": 0.12778478581617314,
-    "offensive_rebound_pct": 0.09258073964932009,
-    "defensive_rebound_pct": 0.19659891178516203,
+    "two_point_pct": 0.517408364498714,
+    "three_point_pct": 0.4151266636769837,
+    "free_throw_pct": 0.8788575643901086,
+    "usage_pct": 0.26827446716457726,
+    "assist_pct": 0.16387536275630948,
+    "offensive_rebound_pct": 0.10311246340599824,
+    "defensive_rebound_pct": 0.22029638788537326,
     "steal_pct": 0.014788496889617229,
     "block_pct": 0.02909234935023333,
     "three_point_attempt_rate": 0.05017286099817475,
@@ -28,7 +28,15 @@
     "turnovers_per_fga": 0.12544046133951767,
     "fouls_per_minute": 0.07150283228827788
    },
-   "target_rates": {},
+   "target_rates": {
+    "free_throw_pct": 0.913,
+    "three_point_pct": 0.417,
+    "two_point_pct": 0.5254407844023523,
+    "assist_pct": 0.1999659396964458,
+    "offensive_rebound_pct": 0.11364418716267638,
+    "defensive_rebound_pct": 0.24399386398558445,
+    "usage_pct": 0.30000228891665975
+   },
    "profile_weight": 1.0,
    "basis": "runtime/protagonist.py build_alternate_profile: previous expectation + closed simulated season + age step + the user's development profile target line at PROFILE_WEIGHT",
    "role_growth": {

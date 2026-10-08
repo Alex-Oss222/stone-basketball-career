@@ -2,7 +2,11 @@
 """National-team tournaments (`runtime/national.py`): the day's selection, roster lock, ties and game requests.
 
     python scripts/national_day.py --write 2006-08-19     before the day's games
-    python scripts/national_day.py --after 2006-08-19     after them: Wade's notes, bracket, awards at the close
+    python scripts/national_day.py --after 2006-08-19     after them: Wade's notes, bracket, awards and medals at the close
+    python scripts/national_day.py --medals               rebuild every closed tournament's medal register (unchanged
+                                                          unless its sources changed; a closed record without frozen
+                                                          medal identities gets them, resolved on its close day;
+                                                          runtime/national_medals.py)
 
 Draw any packet it writes with `python scripts/draw_decisions.py`, then run it again for the same day.
 """
@@ -21,8 +25,13 @@ def main():
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--write", metavar="DATE")
     group.add_argument("--after", metavar="DATE")
+    group.add_argument("--medals", action="store_true")
     args = parser.parse_args()
-    if args.write:
+    if args.medals:
+        from runtime.national_medals import write_all
+        for path in write_all(ROOT):
+            print(f"medal register: {path.relative_to(ROOT)}")
+    elif args.write:
         lines, pending = national.day(args.write, ROOT)
         for line in lines:
             print(line)

@@ -2,6 +2,9 @@
 """Run the dated offseason events due on a day: the draft lottery (runtime/lottery.py), the 2004 expansion draft
 (runtime/expansion.py), the draft (runtime/draft.py) and the summer market from June 30 (runtime/free_agency_2004.py)
 for every club. The year is the date's: each module runs in its year context (R5); expansion happened only in 2004.
+Miami's draft-rights records follow (runtime/draft_rights.py): from the draft, the rights of an earlier pick still
+unsigned end on the live register (`end_rights`); once the market record is closed, the year's routine Required
+Tenders are entered on their deadlines (`record_tenders`).
 
     python scripts/offseason_day.py --write DATE
 
@@ -16,7 +19,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from runtime import draft, expansion, free_agency_2004, lottery                                      # noqa: E402
+from runtime import draft, draft_rights, expansion, free_agency_2004, lottery                        # noqa: E402
 
 
 def main():
@@ -47,11 +50,15 @@ def main():
             if p["club"] == draft.MIAMI:
                 print(f"Miami selects {p['player']} ({p['position']}) at No. {p['pick']}")
         print(f"{year} draft complete: {len(made['picks'])} picks, {len(made['trades'])} draft-night trade(s)")
+    for e in draft_rights.end_rights(ROOT, args.write):
+        print(f"{e['player']}: Miami's rights to the No. {e['pick']} pick of the {e['draft_year']} draft ended {e['date']}")
     market = free_agency_2004.run(ROOT, args.write, year=year)
     if market:
         miami = market["clubs"].get(draft.MIAMI, [])
         print(f"{year} free agency complete: {sum(len(v) for v in market['clubs'].values())} contracts; Miami {len(miami)} players, "
               f"payroll ${market['payroll'].get(draft.MIAMI, 0):,}")
+    for t in draft_rights.record_tenders(ROOT, year, args.write):
+        print(f"Required Tender to {t['player']} (No. {t['pick']}, round {t['round']}) entered on {t['date']}")
     print("offseason events checked for", args.write)
     return 0
 

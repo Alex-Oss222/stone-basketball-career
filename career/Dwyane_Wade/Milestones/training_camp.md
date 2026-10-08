@@ -79,7 +79,7 @@ Snapshot: 2005-04-14. Draft rights and unassigned arrivals are not assigned minu
 | Status | Planned |
 | Owner | player |
 | Evidence | [Owning dated record](../2004-05/04_Training_Camp/note.md) |
-| Reply registry version | 799f5531b3127d06 |
+| Reply registry version | b8eb9028f99c4b20 |
 | Player focus | Work within the team structure and improve group chemistry rather than chase an individual camp role. |
 | Priority teammates | Udonis Haslem, Dorell Wright, Caron Butler |
 | Shared work | Team concepts, timing, communication, and learning how the group fits together. |
@@ -105,11 +105,13 @@ Snapshot: 2005-04-14. Draft rights and unassigned arrivals are not assigned minu
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
+- [Recorded request](../2004-05/10_Free_Agency/wade_requests.json)
 - [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json)
+- [Owning dated record](../2004-05/03_Offseason/Wade_Summer_Plan_2005.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json)

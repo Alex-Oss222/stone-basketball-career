@@ -97,7 +97,96 @@ class PipelineTests(unittest.TestCase):
         page = (self.root / "career/Dwyane_Wade/FIBA/Continental_Cups/2005/README.md").read_text(encoding="utf-8")
         self.assertIn("Final placings and honors", page)
         self.assertIn("Second round", page)
+        self.assertIn("### Final ranking", page)
+        self.assertIn("### Medals", page)
         self.assertTrue((self.root / "career/Dwyane_Wade/FIBA/README.md").is_file())
+
+    def test_medals_go_to_every_locked_roster_player_of_the_top_three(self):
+        from runtime import national, national_medals
+        reg = national_medals.read(self.e, self.root)
+        ranking, a = self.rec["ranking"], self.rec["awards"]
+        self.assertEqual([(t["place"], t["medal"], t["country"]) for t in reg["teams"]],
+                         [(1, "gold", ranking[0]), (2, "silver", ranking[1]), (3, "bronze", ranking[2])])
+        self.assertEqual(ranking[:3], [a["champion"], a["runner_up"], a["third"]])
+        for place, team in enumerate(ranking, start=1):
+            got = sorted(m["player"] for m in reg["medals"] if m["country"] == team)
+            locked = sorted(p["player"] for p in self.rec["rosters"][team]["players"])
+            self.assertEqual(got, locked if place <= 3 else [], team)          # 4th and below: none
+        self.assertEqual(len(reg["medals"]), sum(len(self.rec["rosters"][t]["players"]) for t in ranking[:3]))
+        self.assertEqual(len({m["id"] for m in reg["medals"]}), len(reg["medals"]))
+        self.assertTrue(all(m["awarded_on"] == self.rec["closed_on"] == self.e["last_game"] for m in reg["medals"]))
+        final = next(g for g in self.rec["games"].values() if g["stage"] == "final")
+        third = next(g for g in self.rec["games"].values() if g["stage"] == "third_place")
+        for m in reg["medals"]:
+            game = final if m["place"] < 3 else third
+            self.assertTrue(m["source_result"].endswith(national.event_id(self.e, game["number"]) + ".result.json"))
+
+    def test_a_rebuild_does_not_duplicate_medals(self):
+        from runtime import national, national_medals
+        path = self.root / national_medals.register_path(self.e)
+        before = path.read_text(encoding="utf-8")
+        national.after_games(self.e["last_game"], self.root)               # a later run on the closed edition
+        self.assertEqual(national_medals.write_all(self.root), [path])
+        self.assertEqual(path.read_text(encoding="utf-8"), before)
+
+    def test_medal_identities_are_frozen_on_the_close(self):
+        """A medal player's later NBA debut (a registry row dated after the close) never renames his medal."""
+        from unittest import mock
+        from runtime import national_medals
+        frozen, medal_teams = self.rec["medal_identities"], self.rec["ranking"][:3]
+        self.assertEqual(sorted(frozen), sorted(medal_teams))
+        for team in medal_teams:
+            self.assertEqual([x["player"] for x in frozen[team]], [p["player"] for p in self.rec["rosters"][team]["players"]])
+        register = national_medals.read(self.e, self.root)
+        ident = national_medals.Identity(self.e, self.rec, self.root)
+        fiba_only = [(t, p) for t in medal_teams for p in self.rec["rosters"][t]["players"] if not p.get("bbr_id")]
+        later = []
+        for n, (team, p) in enumerate(fiba_only):
+            entry = ident.researched(team, p)
+            later.append({"name": p["player"], "bbr_id": entry.get("bbr_id") or f"later{n:02d}",
+                          "birth_date": entry.get("birth_date"), "added_on": "2005-11-02"})
+        rows = json.loads((self.root / national_medals.REGISTRY).read_text(encoding="utf-8"))["players"] + later
+        scratch = Path("scratch_player_registry.json")
+        (self.root / scratch).write_text(json.dumps({"players": rows}), encoding="utf-8")
+        try:
+            with mock.patch.object(national_medals, "REGISTRY", scratch):
+                debut = national_medals.Identity(self.e, self.rec, self.root, on="2005-12-01")
+                self.assertTrue(any(debut(t, p)[0] for t, p in fiba_only))    # read on a later date, they would rename
+                self.assertEqual(national_medals.build(self.e, self.rec, self.root), register)
+                self.assertEqual(national_medals.freeze(self.e, self.rec, self.root), frozen)
+                self.assertEqual(national_medals.medal_errors(self.root, "2005-12-01"), [])
+        finally:
+            (self.root / scratch).unlink()
+
+    def test_medals_are_read_only_from_the_close(self):
+        from runtime import national_medals
+        m = national_medals.read(self.e, self.root)["medals"][0]
+        ask = {"bbr_id": m["bbr_id"]} if m["bbr_id"] else {"name": m["player"]}
+        day_before = (date.fromisoformat(self.e["last_game"]) - timedelta(days=1)).isoformat()
+        self.assertIn(m, national_medals.medals_for(**ask, on=self.e["last_game"], root=self.root))
+        self.assertEqual(national_medals.medals_for(**ask, on=day_before, root=self.root), [])
+
+    def test_validation_catches_a_missing_or_extra_medal(self):
+        from runtime import national_medals
+        clock = self.e["last_game"]
+        self.assertEqual(national_medals.medal_errors(self.root, clock), [])
+        path = self.root / national_medals.register_path(self.e)
+        original = path.read_text(encoding="utf-8")
+        try:
+            data = json.loads(original)
+            dropped = data["medals"].pop()
+            path.write_text(json.dumps(data), encoding="utf-8")
+            self.assertTrue(any(f"lacks {dropped['id']}" in e for e in national_medals.medal_errors(self.root, clock)))
+            data = json.loads(original)
+            fourth = self.rec["ranking"][3]
+            player = self.rec["rosters"][fourth]["players"][0]["player"]
+            data["medals"].append(dict(data["medals"][-1], id=f"x-{fourth}-bronze", player=player, country=fourth))
+            path.write_text(json.dumps(data), encoding="utf-8")
+            self.assertTrue(any(f"is not the medal {fourth}'s final place earns" in e
+                                for e in national_medals.medal_errors(self.root, clock)))
+            self.assertTrue(any("after the career date" in e for e in national_medals.medal_errors(self.root, "2005-09-03")))
+        finally:
+            path.write_text(original, encoding="utf-8")
 
 
 if __name__ == "__main__":

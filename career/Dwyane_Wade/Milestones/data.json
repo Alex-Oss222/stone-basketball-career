@@ -234,6 +234,16 @@
                 "label": "Season",
                 "href": "#calendar"
               }
+            ],
+            [
+              "2005-06-16 to 2005-10-03",
+              "Wade's 2005 summer plan",
+              "staff",
+              "planned",
+              {
+                "label": "Record",
+                "href": "../2004-05/03_Offseason/Wade_Summer_Plan_2005.md"
+              }
             ]
           ]
         },
@@ -257,6 +267,17 @@
               {
                 "label": "Recorded request",
                 "href": "../2004-05/04_Training_Camp/wade_requests.json"
+              }
+            ],
+            [
+              "2005-06-16",
+              "free_agent_target",
+              "Udonis Haslem",
+              "pursue",
+              "Wade asks the front office to pursue Udonis Haslem on a multi-year contract (preferably three or four seasons if the terms work). On the date Haslem is a Toronto Raptors player (traded by Miami on 2004-12-20, 00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) whose one-season 2004-05 contract ($620,046) ends June 30, 2005; with two seasons of NBA service (library/2005/league/nba_2005_service_years.json) he is a restricted free agent only if Toronto tenders a qualifying offer, and Toronto may then match an offer sheet. Wade does not set the salary or guarantee acceptance: Miami's front office values him, chooses the mechanism (offer sheet or direct signing) and may decline or abandon the pursuit. The term preference makes a minimum offer run two seasons (the minimum exception's limit); a larger offer runs his wanted years (runtime/free_agency_2004.py requested_terms). Source: 03_Offseason/Wade_Summer_Plan_2005.md, section 1.",
+              {
+                "label": "Recorded request",
+                "href": "../2004-05/10_Free_Agency/wade_requests.json"
               }
             ]
           ]
@@ -302,6 +323,16 @@
                 "label": "Working record",
                 "href": "#training_camp"
               }
+            ],
+            [
+              "Wade's 2005 summer plan",
+              "2005-06-16 to 2005-10-03",
+              "Planned",
+              "Date not set: Miami schedules its designated offseason program and the staff confirm the baselines",
+              {
+                "label": "Working record",
+                "href": "#offseason_training"
+              }
             ]
           ]
         }
@@ -344,6 +375,10 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/10_Free_Agency/wade_requests.json"
+        },
+        {
           "label": "Dated staff rotation review",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json"
         },
@@ -362,6 +397,10 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
+        },
+        {
+          "label": "Owning dated record",
+          "href": "../2004-05/03_Offseason/Wade_Summer_Plan_2005.md"
         },
         {
           "label": "Transaction record",
@@ -982,6 +1021,10 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/10_Free_Agency/wade_requests.json"
+        },
+        {
           "label": "Dated staff rotation review",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json"
         },
@@ -1000,6 +1043,10 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
+        },
+        {
+          "label": "Owning dated record",
+          "href": "../2004-05/03_Offseason/Wade_Summer_Plan_2005.md"
         },
         {
           "label": "Transaction record",
@@ -1593,6 +1640,10 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/10_Free_Agency/wade_requests.json"
+        },
+        {
           "label": "Dated staff rotation review",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json"
         },
@@ -1611,6 +1662,10 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
+        },
+        {
+          "label": "Owning dated record",
+          "href": "../2004-05/03_Offseason/Wade_Summer_Plan_2005.md"
         },
         {
           "label": "Transaction record",
@@ -2110,6 +2165,17 @@
                 "label": "Recorded request",
                 "href": "../2004-05/04_Training_Camp/wade_requests.json"
               }
+            ],
+            [
+              "2005-06-16",
+              "free_agent_target",
+              "Udonis Haslem",
+              "pursue",
+              "Wade asks the front office to pursue Udonis Haslem on a multi-year contract (preferably three or four seasons if the terms work). On the date Haslem is a Toronto Raptors player (traded by Miami on 2004-12-20, 00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) whose one-season 2004-05 contract ($620,046) ends June 30, 2005; with two seasons of NBA service (library/2005/league/nba_2005_service_years.json) he is a restricted free agent only if Toronto tenders a qualifying offer, and Toronto may then match an offer sheet. Wade does not set the salary or guarantee acceptance: Miami's front office values him, chooses the mechanism (offer sheet or direct signing) and may decline or abandon the pursuit. The term preference makes a minimum offer run two seasons (the minimum exception's limit); a larger offer runs his wanted years (runtime/free_agency_2004.py requested_terms). Source: 03_Offseason/Wade_Summer_Plan_2005.md, section 1.",
+              {
+                "label": "Recorded request",
+                "href": "../2004-05/10_Free_Agency/wade_requests.json"
+              }
             ]
           ]
         },
@@ -2243,6 +2309,10 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/10_Free_Agency/wade_requests.json"
+        },
+        {
           "label": "Dated staff rotation review",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json"
         },
@@ -2261,6 +2331,10 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
+        },
+        {
+          "label": "Owning dated record",
+          "href": "../2004-05/03_Offseason/Wade_Summer_Plan_2005.md"
         },
         {
           "label": "Transaction record",
@@ -2706,7 +2780,7 @@
     {
       "id": "offseason_training",
       "title": "Offseason training",
-      "status": "active",
+      "status": "planned",
       "trigger": "A dated player priority and staff-supported development block.",
       "summary": "Recorded goals, assigned work and measured results remain separate. No ability gain is awarded by a planning page.",
       "sections": [
@@ -2803,6 +2877,18 @@
           ],
           "rows": [
             [
+              "2005-06-16",
+              "Wade adopts his 2005 summer plan for the rest of the offseason (`03_Offseason/Wade_Summer_Plan_2005.md`): man-to-man defense 35%, shot selection 30%, passing 25% and skill maintenance 10%, with Miami's coaching, medical, video and strength staff as the primary structure, and he commits to Miami's designated offseason program (at most two weeks). The plan changes no rating; the staff own the schedule, workload and evaluation."
+            ],
+            [
+              "2005-06-16",
+              "Wade asks the front office to pursue Udonis Haslem on a multi-year contract (`10_Free_Agency/wade_requests.json`, term `multi_year`). Haslem is a Toronto player whose contract ends June 30; Toronto controls his restricted free agency if it tenders a qualifying offer. The front office weighs the request by Wade's standing and decides; Wade sets no terms."
+            ],
+            [
+              "2005-06-16",
+              "Wade makes no request about the June 28 draft; Miami's No. 58 pick follows its own process."
+            ],
+            [
               "2004-10-01",
               "Wade's 2004 summer is recorded in `../../2003-04/03_Offseason/`."
             ]
@@ -2815,6 +2901,66 @@
             "Report availability and request a staff-supported plan.",
             "Return with recorded drill/game evidence at the agreed review.",
             "A preference does not assign staff, prescribe an unsourced workload or change engine ability."
+          ]
+        },
+        {
+          "title": "Wade's 2005 summer plan",
+          "columns": [
+            "Working record",
+            "Dated information"
+          ],
+          "rows": [
+            [
+              "Event ID",
+              "2005-06-16-wade-summer-plan"
+            ],
+            [
+              "Recorded",
+              "2005-06-16"
+            ],
+            [
+              "Status",
+              "Planned"
+            ],
+            [
+              "Owner",
+              "staff"
+            ],
+            [
+              "Evidence",
+              {
+                "label": "Owning dated record",
+                "href": "../2004-05/03_Offseason/Wade_Summer_Plan_2005.md"
+              }
+            ],
+            [
+              "Reply registry version",
+              "b8eb9028f99c4b20"
+            ],
+            [
+              "Player focus",
+              "Man-to-man defense 35%, shot selection 30%, passing 25%, skill maintenance 10%; less time on new isolation moves, mechanics rebuilds, long-range volume, nonessential dribble combinations and weight gain"
+            ],
+            [
+              "Staff plan and availability",
+              "Spoelstra's staff with Miami's medical, video and strength staff as the primary structure; Miami's designated program (at most two weeks) attended for the $252,660 included incentive; preseason conditioning test for another $252,660"
+            ],
+            [
+              "Baseline and protocol",
+              "Simulated 2004-05: 76 G, 36.2 MPG, 21.3 PTS, 4.0 AST, 1.3 TOV, 65.7% TS; coaches to set defensive, shot-selection and passing baselines from practice possessions and film; skills review about every two weeks"
+            ],
+            [
+              "Planned / completed sessions",
+              "None completed yet; private specialists not contacted for 2005; Haslem invited privately (does not depend on his signing); professional guards and wings to be invited for live work"
+            ],
+            [
+              "Your response",
+              "Miami's staff confirm the medical assessment, the designated program dates and the baselines for Wade's defense, shot-selection and passing work."
+            ],
+            [
+              "Next checkpoint",
+              "Date not set: Miami schedules its designated offseason program and the staff confirm the baselines"
+            ]
           ]
         }
       ],
@@ -2856,6 +3002,10 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/10_Free_Agency/wade_requests.json"
+        },
+        {
           "label": "Dated staff rotation review",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json"
         },
@@ -2874,6 +3024,10 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
+        },
+        {
+          "label": "Owning dated record",
+          "href": "../2004-05/03_Offseason/Wade_Summer_Plan_2005.md"
         },
         {
           "label": "Transaction record",
@@ -3300,7 +3454,7 @@
           "href": "../milestones.json"
         }
       ],
-      "next_checkpoint": "The player and staff agree a dated first block and review criteria.",
+      "next_checkpoint": "Date not set: Miami schedules its designated offseason program and the staff confirm the baselines",
       "metrics": [
         {
           "label": "Career date",
@@ -3513,6 +3667,10 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/10_Free_Agency/wade_requests.json"
+        },
+        {
           "label": "Dated staff rotation review",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json"
         },
@@ -3531,6 +3689,10 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
+        },
+        {
+          "label": "Owning dated record",
+          "href": "../2004-05/03_Offseason/Wade_Summer_Plan_2005.md"
         },
         {
           "label": "Transaction record",
@@ -4126,6 +4288,10 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/10_Free_Agency/wade_requests.json"
+        },
+        {
           "label": "Dated staff rotation review",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json"
         },
@@ -4144,6 +4310,10 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
+        },
+        {
+          "label": "Owning dated record",
+          "href": "../2004-05/03_Offseason/Wade_Summer_Plan_2005.md"
         },
         {
           "label": "Transaction record",
@@ -4807,7 +4977,7 @@
             ],
             [
               "Reply registry version",
-              "799f5531b3127d06"
+              "b8eb9028f99c4b20"
             ],
             [
               "Player focus",
@@ -4879,6 +5049,10 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/10_Free_Agency/wade_requests.json"
+        },
+        {
           "label": "Dated staff rotation review",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json"
         },
@@ -4897,6 +5071,10 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
+        },
+        {
+          "label": "Owning dated record",
+          "href": "../2004-05/03_Offseason/Wade_Summer_Plan_2005.md"
         },
         {
           "label": "Transaction record",
@@ -6537,6 +6715,10 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Recorded request",
+          "href": "../2004-05/10_Free_Agency/wade_requests.json"
+        },
+        {
           "label": "Dated staff rotation review",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json"
         },
@@ -6555,6 +6737,10 @@
         {
           "label": "Dated staff rotation",
           "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json"
+        },
+        {
+          "label": "Owning dated record",
+          "href": "../2004-05/03_Offseason/Wade_Summer_Plan_2005.md"
         },
         {
           "label": "Transaction record",

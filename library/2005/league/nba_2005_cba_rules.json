@@ -395,6 +395,85 @@
    "source_ref": "Q83, Appendix"
   }
  },
+ "required_tenders": {
+  "purpose": "Required Tenders and how long a club keeps a pick's exclusive rights, for the 2005 draft on (picks whose contracts belong to the 2005-06 league year and later, runtime/agreement.terms). Read by runtime/draft_rights.py.",
+  "applies_to": {
+   "value": "the 2005 draft (June 28, 2005) and later drafts",
+   "status": "derived",
+   "source": "cbafaq05",
+   "source_ref": "Q43",
+   "note": "Agreement terms are keyed by the league year a contract belongs to (runtime/agreement.py); a 2005 pick signs for 2005-06, and Q43 keeps the 1999 scale rules only for players drafted before 2005. The 2005 draft and its tender deadlines (July 15, September 5) straddle ratification (July 30, 2005; dates.ratified_and_signed), but the deadlines are the same under both agreements (first_round, second_round below), so the choice moves no date."
+  },
+  "first_round": {
+   "tender_by": {
+    "value": "07-15",
+    "status": "sourced",
+    "source": "cbafaq05",
+    "source_ref": "Q102",
+    "note": "Q102 (dates referenced in the CBA): 'July 16: First round draft picks become free agents if not given a required tender', so the tender is due by July 15 after the draft, as under the 1999 agreement. Q102's pointer '(see question number 41)' is stale in the final update: Q41 is about compensation and Q42 (first-round picks) does not discuss the tender."
+   },
+   "rookie_free_agent_from": {
+    "value": "07-16",
+    "status": "sourced",
+    "source": "cbafaq05",
+    "source_ref": "Q102"
+   },
+   "terms": {
+    "value": "a rookie scale contract (two seasons plus team options for the third and fourth, Q42) at 80% or more of the pick's scale",
+    "status": "unverified",
+    "source": "cbafaq05",
+    "source_ref": "Q42",
+    "note": "The FAQ does not state the first-round tender's terms. The structure is the 2005 scale contract (Q42); the 80% floor is the 1999 rule (Art. X §3(a)), kept as a documented assumption. The check reads dates only."
+   }
+  },
+  "second_round": {
+   "window_from": {
+    "value": "08-22",
+    "status": "unverified",
+    "source": "cbafaq05",
+    "source_ref": "Q102",
+    "note": "The FAQ gives only the end of the window (September 5). The 1999 agreement's start (the two weeks before September 5, Art. X §3(b): August 22) is kept as a documented assumption."
+   },
+   "tender_by": {
+    "value": "09-05",
+    "status": "sourced",
+    "source": "cbafaq05",
+    "source_ref": "Q102",
+    "note": "Q102: 'September 6: Second round draft picks become free agents if not given a required tender'."
+   },
+   "rookie_free_agent_from": {
+    "value": "09-06",
+    "status": "sourced",
+    "source": "cbafaq05",
+    "source_ref": "Q102"
+   },
+   "terms": {
+    "value": "a one-year contract offer (at the minimum salary)",
+    "status": "unverified",
+    "source": "cbafaq05",
+    "source_ref": "Q93",
+    "note": "Q93: 'A second round draft pick can accept a required tender, which is a one-year contract offer teams must submit to retain their rights to the player.' One year is sourced; the minimum salary is the 1999 rule (Art. I (vv)), kept as a documented assumption."
+   }
+  },
+  "rights_until": {
+   "value": "the date of the next draft, unless the pick signs",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q43",
+   "note": "Q43: 'For all other players, the team retains the player's draft rights until the date of the next draft.' Unchanged from the 1999 agreement (1999 FAQ Q40)."
+  },
+  "retained_beyond_next_draft": {
+   "value": {
+    "non_nba_contract": "a pick already under contract with, or signing with, a non-NBA team: the team keeps his rights until one year after that obligation ends",
+    "college": "a pick who goes on to play college ball: until one year after the draft he would have entered had he not declared early; one eligible for college who does not play: until that draft"
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q43",
+   "modelled": false,
+   "note": "Not modelled (as under the 1999 agreement): a register entry that records one of these bases (draft_rights_retained) is checked against its own dated record (runtime/draft_rights.py)."
+  }
+ },
  "extensions": {
   "rookie_scale_window": {
    "value": "From the day after the July moratorium to October 31 preceding the player's last option season (provided the team picked up that option).",

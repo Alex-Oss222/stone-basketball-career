@@ -364,6 +364,11 @@ class Pricing:
         return int(round(min(top, max(minimum(service, cal), raw))))
 
 
+# The minimum player exception signs a contract of at most two seasons (1999 FAQ Q19; cbafaq05 Q19, recorded in
+# library/2005/league/nba_2005_cba_rules.json exceptions.minimum.max_years).
+MINIMUM_EXCEPTION_YEARS = 2
+
+
 def years_wanted(a):
     """Years a player of age `a` asks for, within the agreement's longest non-Bird contract (5 from the 2005 agreement)."""
     from .agreement import max_years
@@ -788,6 +793,16 @@ class Market:
         return {r["bbr_id"]: weight for r in _read(path)["requests"]
                 if r.get("subject") in subjects and r.get("requested") in ("pursue", "keep") and r["date"] <= day and r.get("bbr_id")}
 
+    def requested_terms(self, day):
+        """{bbr_id: term} for Wade's pursue requests that state a contract-length preference (`"term": "multi_year"`),
+        dated on or before the day. The preference never sets salary: it makes a minimum offer to that player run the
+        minimum exception's longest term (MINIMUM_EXCEPTION_YEARS); a larger offer already runs his wanted years."""
+        path = self.root / REQUESTS
+        if not path.is_file():
+            return {}
+        return {r["bbr_id"]: r["term"] for r in _read(path)["requests"]
+                if r.get("term") and r.get("requested") in ("pursue", "keep") and r["date"] <= day and r.get("bbr_id")}
+
     def request_draw(self, b, bar, weight):
         """Wade asks Miami to keep a player its June 30 rule would let go (no qualifying offer): an engine draw with
         P(tender) = standing weight x (1 - margin), the margin being how clear-cut the rule's call was
@@ -814,6 +829,7 @@ class Market:
         if self.roster(club) >= ROSTER_MAX:
             return out
         wanted = self.requested(day) if club == MIAMI else {}
+        terms_wanted = self.requested_terms(day) if club == MIAMI else {}
         ranked = sorted(open_players, key=lambda b: (-self.pricing.value(b) * (NEED_FLOOR + (1 - NEED_FLOOR) * self.need(club, self.group(b)))
                                                      * (1 + wanted.get(b, 0.0)), b))
         made_big = False
@@ -842,7 +858,10 @@ class Market:
                 if self.pending:
                     return out
                 continue
-            out.append({"club": club, "bbr_id": b, "salary": amount, "years": 1 if minimum_deal else years_wanted(self.pricing.age(b)),
+            years = years_wanted(self.pricing.age(b))
+            if minimum_deal:                               # a minimum offer runs one season unless Wade asked for more
+                years = MINIMUM_EXCEPTION_YEARS if terms_wanted.get(b) == "multi_year" else 1
+            out.append({"club": club, "bbr_id": b, "salary": amount, "years": years,
                         "route": route, "ask": ask})
             if minimum_deal:
                 short -= 1

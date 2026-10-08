@@ -15,7 +15,8 @@ The user's premises, December 31, 2004 on the career clock (`career/Dwyane_Wade/
 | Editions | `runtime/fiba_editions.py`, `scripts/build_fiba_engine.py` | Researched files normalized into one form, plus the engine layers, written to `library/fiba/engine/<edition id>.json`. |
 | Engine | `runtime/era.py`, `runtime/kernel.py`, `runtime/game_runner.py`, `runtime/national_engine.py`, `runtime/shot_chart.py` | FIBA rules by date, the FIBA court, the FIBA environment and every player's FIBA profile. NBA games are unchanged and replay identically. |
 | Tournament | `runtime/fiba_tournament.py`, `runtime/national.py` | Field, USA selection, roster lock, coach's rotation, game requests, FIBA standings and tiebreaks, carry-over groups, bracket, final ranking, honors. |
-| Pages | `runtime/national_pages.py` | `career/Dwyane_Wade/FIBA/README.md` and one page per tournament. Wade's own national statistics go on his `National_Team` pages through `scripts/update_player_reports.py`. |
+| Medals | `runtime/national_medals.py` | The medal register of a closed tournament: the team's medal for every player on a medal team's locked roster, its readers and its validation. |
+| Pages | `runtime/national_pages.py` | `career/Dwyane_Wade/FIBA/README.md` and one page per tournament, with the final ranking and each medal team's roster. Wade's own national statistics go on his `National_Team` pages through `scripts/update_player_reports.py`. |
 | Driver | `scripts/national_day.py`, `scripts/advance.py` | Runs every day in the summer, in training camp and in the season. |
 
 ## How a tournament runs
@@ -45,11 +46,48 @@ The user's premises, December 31, 2004 on the career clock (`career/Dwyane_Wade/
    - Any tie still level is settled by one engine draw.
    - Second rounds that carry over earlier results (the Americas championships) are supported.
    - Knockout slots fill from the tables and from game winners and losers.
-6. **Close.** After the last game:
+6. **Close.** After the last game (`closed`, `closed_on`, `ranking` and `medal_identities` in the tournament record):
    - **Final ranking:** medal and classification games first, then second-round and group places.
    - **MVP and All-Tournament Team:** Game Score per game times the team's finish (1.0, 0.85, 0.75 for the medallists, 0.6 for the rest), with at least three games.
+   - **Medals:** the medal register (below) for every player on the top three teams' locked rosters.
    - **Wade's honors and medal** go to `awards.json`.
    - **Selection snapshot:** a selected Wade gets a dated snapshot in `professional_identity.json`.
+
+## Medals
+
+The user's rule (2005 offseason framework, section 6), in `runtime/national_medals.py` for every simulated edition, with no user step:
+
+- **Places.** Once the tournament is closed and its final ranking is canonical, 1st place wins gold, 2nd silver and 3rd bronze. 4th place and below win no medal.
+- **Who receives one.** Every player on that team's locked roster for the tournament (locked the day before the first game) receives the medal, including a roster member who played no minutes. A player who was never selected, withdrew before the lock or is not on that roster receives none.
+- **Separate awards.** A medal never implies the MVP or the All-Tournament Team, which stay the tournament's performance awards.
+- **The register.** `FIBA/<family>/<edition>/medals.json`, beside the tournament record, written at the close by `national.after_games`. It is derived from the closed record and its frozen identities: a rebuild (`python scripts/national_day.py --medals`) writes the same file, so a medal is never duplicated. That command also freezes the identities of a closed record that lacks them, resolved on its close day. Each medal has:
+  - a stable id, `<edition_id>-<country slug>-<bbr_id or FIBA identity>-<medal>`;
+  - the player's name, NBA id where he has one, FIBA identity and country;
+  - the tournament, edition and the team's final place;
+  - the award date, the day the tournament closed;
+  - the source result: the final for gold and silver, the third-place game for bronze, or the record's ranking when no single game decided the place;
+  - the games he played in the tournament, as evidence only.
+- **Identity.** The order is:
+  1. the locked roster's NBA id (an NBA player with a season behind him on the date);
+  2. the researched roster's id, when the league player registry already tracks him;
+  3. the registry's one player with the same name and birth date;
+  4. otherwise no NBA id.
+
+  The registry is read as the league knew it on the close: its original rows and the rows added on or before that day (`added_on`).
+  The identities are resolved once, at the close, and frozen into the tournament record (`medal_identities`). Every rebuild reads them from there, so a registry row added or repaired later (a medallist's later NBA debut, `write_back.extend_registry` and `repair_registry`) never renames a medal or changes its id.
+  The NBA nationality file never names a player here: it lists NBA careers through 2007-08, later than the clock.
+- **Where medals show.**
+  - The tournament page: the final ranking and each medal team's locked roster, with any player who did not play marked.
+  - The league player card's awards section, for a registry player matched by NBA id.
+  - A followed player's career honors (`runtime/followed_players.py`).
+  - Wade's medal stays in `awards.json` exactly as before (`national.record_wade_honors`, id `<edition_id>-<medal>`).
+- **Readers.** `national_medals.medals_for(bbr_id or name, on=date)` and `register_medals(on=date)` return medals awarded on or before the date. None appears before its tournament closed.
+- **Validation** (`national_errors`):
+  - A closed edition needs a complete register equal to a fresh build.
+  - A medal for a player not on the team's locked roster is an error, and so is a medal for a team placed 4th or lower.
+  - A register before the close, or a medal dated before the close or after the clock, is an error.
+  - A closed record needs its frozen identities: exactly the medal teams, one per locked player in locked order, each keeping the locked roster's NBA id and FIBA key. Identities frozen before the close are an error.
+  - Wade's register medal must also be in `awards.json`, and a Wade medal in `awards.json` (`<edition_id>-gold`, `-silver` or `-bronze`) must be his medal in the register.
 
 ## Ability in a FIBA game
 
@@ -80,6 +118,7 @@ The user's premises, December 31, 2004 on the career clock (`career/Dwyane_Wade/
 - **Opponent totals:** the tournament's average team stands in for each player's opponents in his rate formulas.
 - **Injuries:** national games draw no injuries, as with every club but Miami. The injury pause also applies.
 - **Fouled-out teams:** a team that runs out of eligible players keeps its last five, the NBA engine's rule.
+- **USA's 2006 place (the user's decision, 2005-06-16):** the 2006 World Championship's Americas places, the USA's included, come only from the simulated 2005 FIBA Americas, where the USA plays its real non-NBA roster, and the existing slot and wildcard rules. No place, spot or medal is assigned in advance and no real result overrides the simulation.
 
 ## Editions
 

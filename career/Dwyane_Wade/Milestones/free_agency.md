@@ -25,6 +25,7 @@ Activation: A verified player market window or actual dated Miami roster-market 
 | Date | Subject | Target | Request | Explanation | Source |
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-01 | trade_package | Luke Ridnour | pursue | Wade asks the front office to trade Brian Grant to Charlotte for Luke Ridnour and Cezary Trybanski: a young point guard next to him and room in later seasons (Grant is owed $14.3M in 2005-06 and $15.4M in 2006-07; Ridnour and Trybanski are on one-season contracts). The front office weighs it by Wade's standing and decides. | [Recorded request](../2004-05/04_Training_Camp/wade_requests.json) |
+| 2005-06-16 | free_agent_target | Udonis Haslem | pursue | Wade asks the front office to pursue Udonis Haslem on a multi-year contract (preferably three or four seasons if the terms work). On the date Haslem is a Toronto Raptors player (traded by Miami on 2004-12-20, 00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) whose one-season 2004-05 contract ($620,046) ends June 30, 2005; with two seasons of NBA service (library/2005/league/nba_2005_service_years.json) he is a restricted free agent only if Toronto tenders a qualifying offer, and Toronto may then match an offer sheet. Wade does not set the salary or guarantee acceptance: Miami's front office values him, chooses the mechanism (offer sheet or direct signing) and may decline or abandon the pursuit. The term preference makes a minimum offer run two seasons (the minimum exception's limit); a larger offer runs his wanted years (runtime/free_agency_2004.py requested_terms). Source: 03_Offseason/Wade_Summer_Plan_2005.md, section 1. | [Recorded request](../2004-05/10_Free_Agency/wade_requests.json) |
 
 ## Miami's actual negotiation records
 
@@ -75,11 +76,13 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
+- [Recorded request](../2004-05/10_Free_Agency/wade_requests.json)
 - [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/review.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-04-14/rotation.json)
+- [Owning dated record](../2004-05/03_Offseason/Wade_Summer_Plan_2005.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-14d65ed9c8.json)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2005-01-17-adc5909b8d.json)

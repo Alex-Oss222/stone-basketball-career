@@ -23,6 +23,30 @@
    "reconstructed": true,
    "terms": "one season at the 2003-04 rookie minimum, $366,931",
    "outcome": "rights renounced 2003-11-11: no roster place (fifteen signed); a rookie free agent"
+  },
+  {
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "pick": 51,
+   "round": 2,
+   "draft_year": 2004,
+   "date": "2004-09-05",
+   "reconstructed": true,
+   "recorded": "2005-06-16",
+   "terms": "one season at the Minimum Annual Salary",
+   "basis": "Miami's routine Required Tender to each pick it still holds unsigned on his deadline (1999 CBA Art. X §3): no signing and no trade of his rights by 2004-09-05 in the closed 2004 summer market record (career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json); the market kept him in its unsigned pool under Miami's rights; recorded 2005-06-16 by runtime/draft_rights.record_tenders"
+  },
+  {
+   "player": "Christian Drejer",
+   "bbr_id": "drejech01",
+   "pick": 54,
+   "round": 2,
+   "draft_year": 2004,
+   "date": "2004-09-05",
+   "reconstructed": true,
+   "recorded": "2005-06-16",
+   "terms": "one season at the Minimum Annual Salary",
+   "basis": "Miami's routine Required Tender to each pick it still holds unsigned on his deadline (1999 CBA Art. X §3): no signing and no trade of his rights by 2004-09-05 in the closed 2004 summer market record (career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json); the market lists him out of the league (no real 2004-05 role), and the rollover carries every Miami pick left unsigned as Miami's draft rights; recorded 2005-06-16 by runtime/draft_rights.record_tenders"
   }
  ]
 }
