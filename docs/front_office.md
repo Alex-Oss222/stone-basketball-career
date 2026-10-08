@@ -32,6 +32,10 @@ Before a decision date, Wade's wishes go in the phase folder's `wade_requests.js
 
 In the summer market (`runtime/free_agency_2004.py`), `free_agent_target` with `pursue` (another club's free agent) and `re_sign` with `keep` (Miami's own) raise Miami's interest by the standing weight and its price ceiling up to 110% of its valuation; they never set terms. A pursue request may add `"term": "multi_year"` (Wade's contract-length preference for that player, from the 2005 summer): a minimum offer to him then runs two seasons, the minimum exception's limit, each season at that season's minimum for his service (`league_contracts.minimum_steps`); a larger offer already runs the years he wants.
 
+From the 2006 summer (`RENOUNCE_FOR_REQUEST_FROM`, the user's request, October 2026) a `pursue` request also lets Miami make room for that player. When its offer (the smaller of his ask and the price it is willing to pay) cannot be paid because of its cap holds, but could without some of them, Miami plans to renounce its own unsigned free agents valued below him: lowest value first until their holds cover the gap, then any earlier pick the later ones already cover is kept (checked from the most valuable down), so it gives up only the holds the offer needs. It never renounces a player Wade asked it to keep, or one it already offered a contract that round, and it offers no contract that round to a player in the plan. The plan is carried out only when he accepts the offer, on that day and before any signing, so a renounced restricted player's offer sheet elsewhere is not matched; if he waits or takes another club's offer, Miami keeps every hold and its rights. Each renunciation is a dated `renounce` event in the market record (the hold, the player's value, the target and the offer). It ends Miami's Bird rights and withdraws any qualifying offer, so the player becomes unrestricted and can return only through room or an exception, like any free agent. When even every eligible hold would not make enough room, nothing is renounced and Miami falls back to the mid-level as before. Without a request Miami never renounces for a player. The rule is deterministic, and the target's answer is still his engine draw.
+
+From the same summer (`REQUEST_ANSWERS_CONSULTATION_FROM`) a star Wade himself asked Miami to pursue needs no franchise consultation, because the request is his answer. On the day Miami would ask, it writes the consultation record answered `approve` from the request, with its page; `answered_by_request` names the request file, date and words. The clock does not stop. A `free_agent_target` `pursue` request answers for a free-agent signing and a `trade_target` request for a summer trade. An objection already on record still stands, a question already open still waits for Wade's own answer, and any star he did not request is asked as before. The 2004 and 2005 markets replay unchanged (`tests/test_free_agency_requests.py`).
+
 A request that agrees with the rule changes nothing. One that opposes it becomes an engine-drawn decision. The chance it wins is Wade's standing weight times how close the rule's call was (0 = right on the line, 1 = clear-cut). Standing weights (`STANDING_WEIGHT`, one table in `runtime/standing.py`): unsigned rookie 0.15, rookie 0.2, starter 0.35, All-Star 0.6, franchise player 0.8. A clear-cut decision cannot be moved.
 
 ## Wade's standing (`runtime/standing.py`)
@@ -55,7 +59,7 @@ Statistics alone never reach `all_star`; honors alone never promote (an honor wh
 
 ## Franchise consultation (the user's premise)
 
-Once Wade's standing is `franchise`, Miami must ask him before it signs or trades for another star player; the move cannot proceed without his answer, and his objection stops it. Below `franchise` there is no gate and his requests keep their weight. This is a simulation rule chosen by the user, not a CBA right.
+Once Wade's standing is `franchise`, Miami must ask him before it signs or trades for another star player; the move cannot proceed without his answer, and his objection stops it. Below `franchise` there is no gate and his requests keep their weight. This is a simulation rule chosen by the user, not a CBA right. From the 2006 summer a star Wade himself asked Miami to pursue is not asked again: his request is recorded as the approval (see Wade's requests above).
 
 | Piece | Rule (`runtime/consultations.py`) |
 |---|---|
@@ -121,6 +125,10 @@ Proposals to Miami from real clubs and injuries in the value are not built; the 
 Wade can ask for a specific package (`subject: trade_package` with `package: {partner, miami_out, miami_in}` in a phase folder's `wade_requests.json`). The front office answers it once on its date (`run_trade.py --season-day`, also during camp): it proposes the package only if its own rules would, with his request weighed by his standing (a wanted arrival raises a gain and softens a loss), and records the answer and its numbers in `00_Team/Transactions/wade_trade_requests.json` and the phase note; a proposed package's answer from the other club is an engine draw.
 
 Wade's `trade_target` and `trade_opposed` requests from every phase folder of the season weigh on the ranking; at `franchise` standing the consultation gate covers every star arriving in a package.
+
+### Miami news from the summer market and draft night (October 2026)
+
+A trade Miami makes in the summer market or on draft night prints the same `MIAMI TRADE` line as an in-season trade (`scripts/offseason_day.py`, read from the market's dated events and the year's draft record, never recomputed), so the driver stops on it the day it happens, checkpointed and pushed, or reports it and goes on with `--through-trades`. The summer's other Miami events of the day are reported without a stop: `MIAMI DRAFT` (each pick), `MIAMI SIGNING` (signings, re-signings, scale signings, camp signings, accepted qualifying offers), `MIAMI OFFER SHEET` (a sheet Miami made and its answer, or a sheet to Miami's restricted player that Miami matched) and `MIAMI LOSES` (a renounced hold, a player whose rights Miami held signing elsewhere, a sheet Miami did not match). A stop records its lines in `current_state.reported_stop`, so resuming on that day reports them again without stopping twice. Any step that fails prints the last 40 lines of its own output, and an exception inside the driver its traceback, before the `STOPPED` line.
 
 ## Training camp and preseason (roadmap items 9, 10 in part, 12; phase D of `front_office_design.md`)
 
@@ -232,6 +240,10 @@ leaves), and in between the engine draws it (`League/Option_Draws/`). A player h
 is declined. Decisions are recorded in `League/option_decisions.json`, applied to the league ledger and Miami's cap sheet,
 and reapplied when a ledger is rebuilt. The 2004-05 ledger also restores the 2003 first-round picks' third scale season
 and fourth-year option (their 2004-05 salary is exactly 120% of their pick's scale).
+
+## Contract extensions for every club (October 2026)
+
+`runtime/extensions.py`, run every career day by `scripts/advance.py` before the option step (`scripts/extension_day.py --write <date>`), from 2005-10-31: rookie-scale extensions on October 31 before the last option season, veteran extensions on October 31 and June 29, on the 2005 agreement's rules (cbafaq05 Q52). Each club, Miami's AI/GM included, decides by the same rule: the player's worth on the day against the mid-level (clear offer at 1.2 or more, clear no at 0.8 or less, an engine draw between), terms within the agreement's limits, and the club's payroll ceiling; the player's answer is an engine draw against free agency next summer. Wade's own extension offer opens a pending decision that stops the clock until the user answers it. A day is decided only on its own date; a missed day stops the driver. Full rules: `docs/extensions.md`.
 
 ## Retirement and availability (October 2026)
 

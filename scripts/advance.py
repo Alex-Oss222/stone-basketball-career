@@ -27,7 +27,17 @@ every other Sunday and at the target date the full test suite runs too and the w
 when the engine refuses a game because its deployed code or library differs.
 
 Stops: a pending player decision or consultation for Wade (`current_state.pending_player_decisions`), any step
-that fails, failed validation or tests, or a game the engine still refuses after a push.
+that fails, failed validation or tests, or a game the engine still refuses after a push. A failing step prints the
+last FAIL_TAIL lines of its own output (a step judged by its output too: the games, draws, frozen inputs, validation,
+the journal audit, the suite, the push), and an exception raised inside the driver its whole traceback, before the
+stop. A games step that did not finish (a traceback, not an engine refusal) stops at once, with no push and no wait.
+
+Miami news: an in-season trade (`scripts/run_trade.py --season-day`) and a trade in the summer market or on draft night
+(`scripts/offseason_day.py`, read from the market's dated events and the draft record) both print a line starting
+"MIAMI TRADE" and stop the run the day they happen, checkpointed and pushed (`--through-trades` reports them and goes
+on); the summer's Miami picks, signings, offer sheets and losses are reported the same day. A stop on news records
+its lines in `current_state` (`reported_stop`), so resuming on that day reports them again without stopping a second
+time.
 
 Environment: ENGINE_API_TOKEN (never printed), and optionally ADVANCE_COMMIT_TRAILER appended to each commit.
 """
@@ -36,9 +46,11 @@ from datetime import date, timedelta
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import sys
 import time
+import traceback
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -67,17 +79,29 @@ class Stop(Exception):
     pass
 
 
+FAIL_TAIL = 40                                   # lines of a failing step's own output printed before the stop
+
+
 def say(msg):
     print(msg, flush=True)
 
 
+def tail(text, lines=FAIL_TAIL):
+    """The last `lines` lines of a step's output, indented like the driver's other output."""
+    return "\n".join("    " + line for line in text.splitlines()[-lines:])
+
+
 def run(*args, ok=(0,), show=True):
+    """Run a step. Its combined output's last 12 lines are shown with `show`; a step that exits outside `ok` always
+    prints its last FAIL_TAIL lines (shown or not), so the error that stopped it is on screen, then stops the run."""
     p = subprocess.run([sys.executable, *args], cwd=ROOT, capture_output=True, text=True)
     out = (p.stdout + p.stderr).strip()
-    if show and out:
-        say("\n".join("    " + line for line in out.splitlines()[-12:]))
     if p.returncode not in ok:
+        if out:
+            say(tail(out))
         raise Stop(f"{' '.join(args)} exited {p.returncode}")
+    if show and out:
+        say(tail(out, 12))
     return out
 
 
@@ -116,8 +140,13 @@ def checkpoint(day, push=True):
     """The full write-back and page rebuild, validation; with `push`, the full suite and the push."""
     # Every derived record rebuilt from its sources, then validation (scripts/reconcile.py): a stale total or page is
     # fixed here, so only a real conflict between source records stops the run.
-    if "passed" not in run("scripts/reconcile.py", ok=(0, 1)):
+    # A step judged by its output rather than its exit code prints its tail (FAIL_TAIL lines) before the stop too.
+    rebuilt = run("scripts/reconcile.py", ok=(0, 1), show=False)
+    if "passed" not in rebuilt:
+        say(tail(rebuilt))
         raise Stop("validation failed after rebuilding every derived record (a source conflict; see above)")
+    if rebuilt:
+        say(tail(rebuilt, 12))
     commit(f"Advance {day}: checkpoint")
     if not push:
         return
@@ -127,16 +156,19 @@ def checkpoint(day, push=True):
             break
         time.sleep(30)                                                     # the engine is restarting (a deploy); wait
     if "no problems" not in audit:
-        raise Stop("the engine journal audit failed: " + audit.splitlines()[-1][:200])
+        say(tail(audit))
+        raise Stop("the engine journal audit failed: " + (audit.splitlines() or [""])[-1][:200])
     tests = run("scripts/run_tests.py", ok=(0, 1), show=False)
-    say("    " + tests.splitlines()[-1])
-    if not tests.splitlines()[-1].endswith("OK"):
+    last = (tests.splitlines() or [""])[-1]
+    if not last.endswith("OK"):
+        say(tail(tests))
         raise Stop("test suite failed")
+    say("    " + last)
     for attempt in range(5):
-        code, out = git("push", "-q", "origin", "HEAD:milestone-1")
+        code, push_out = git("push", "-q", "origin", "HEAD:milestone-1")    # kept apart from the merge's output below
         if code == 0:
             return
-        if "rejected" in out or "fetch first" in out:
+        if "rejected" in push_out or "fetch first" in push_out:
             # The results collector may have committed engine results meanwhile: keep ours, then validate the merge.
             git("fetch", "-q", "origin", "milestone-1")
             code, out = git("merge", "-q", "-X", "ours", "--no-edit", "origin/milestone-1")
@@ -145,10 +177,13 @@ def checkpoint(day, push=True):
             else:                                 # generated views kept our copy (`merge=binary`): rebuild from merged records
                 run("scripts/reconcile.py", ok=(0, 1), show=False)
                 commit("Regenerate views after merging origin")
-            if "passed" not in run("scripts/validate_repository.py", ok=(0, 1), show=False):
+            validation = run("scripts/validate_repository.py", ok=(0, 1), show=False)
+            if "passed" not in validation:
+                say(tail(validation))
                 raise Stop("validation failed after merging origin")
             continue
         time.sleep(2 ** (attempt + 1))
+    say(tail(push_out))                                  # the last push's own refusal, never a quiet merge's empty output
     raise Stop("push failed")
 
 
@@ -177,27 +212,45 @@ def draws_pending():
 
 
 def draw():
-    """Draw every pending decision packet; while the engine restarts (a deploy), wait and try again."""
+    """Draw every pending decision packet; while the engine restarts (a deploy), wait and try again. Each round shows its
+    last 12 lines; a failed draw, judged by the packets still pending, prints its tail (FAIL_TAIL lines) before the stop."""
     for _ in range(40):
         if not draws_pending():
             return
-        out = run("scripts/draw_decisions.py", ok=(0, 1))
+        out = run("scripts/draw_decisions.py", ok=(0, 1), show=False)
         if not draws_pending():
+            if out:
+                say(tail(out, 12))
             return
         if not any(code in out for code in ("error 502", "error 503", "unreachable", "timed out")):
-            raise Stop("a decision draw failed: " + out.splitlines()[-1][:200])
+            say(tail(out))
+            raise Stop("a decision draw failed: " + (out.splitlines() or ["no output"])[-1][:200])
+        if out:
+            say(tail(out, 12))
         time.sleep(30)
+    say(tail(out))
     raise Stop("decision draws still failing after waiting for the engine")
 
 
+PLAYED = re.compile(r"^\d+ of \d+ game\(s\) written$", re.M)   # scripts/play_games.py's closing line
+
+
 def play(day):
-    """Every pending game through `day`; if the engine refuses (its code or library differs), push and wait."""
+    """Every pending game through `day`; if the engine refuses (its code or library differs), push and wait.
+    `scripts/play_games.py` exits 1 both when the engine refuses a game and when the script itself fails, so the two are
+    told apart by its closing "N of M game(s) written" line (PLAYED): a run without it did not finish (a traceback, a
+    missing token), is no engine refusal, and stops at once with its output's tail (FAIL_TAIL lines), no push and no wait.
+    A finished run's refusals are its status lines, the output before the closing line (stderr follows it)."""
     pushed = False
     for _ in range(40):
         out = run("scripts/play_games.py", day, ok=(0, 1), show=False)
-        refused = [l for l in out.splitlines() if l and not l.startswith(("played", "already_played")) and "written" not in l]
+        closing = PLAYED.search(out)
+        if not closing:
+            say(tail(out))
+            raise Stop(f"scripts/play_games.py {day} did not finish: " + (out.splitlines() or ["no output"])[-1][:200])
+        refused = [l for l in out[:closing.start()].splitlines() if l and not l.startswith(("played", "already_played"))]
         if not refused:
-            say("    " + out.splitlines()[-1])
+            say("    " + closing.group(0))
             return
         if all(("refused 502" in l or "refused 503" in l or "unreachable" in l) for l in refused):
             time.sleep(30)                                   # the engine is restarting (a deploy); wait, do not push
@@ -208,7 +261,18 @@ def play(day):
             checkpoint(day)
             pushed = True
         time.sleep(30)
+    say(tail(out))
     raise Stop("games still refused after the push: " + refused[0][:200])
+
+
+def frozen_check():
+    """The frozen engine inputs of every built request recomputed from the committed records
+    (`runtime.game_requests.frozen_errors`); a step judged by its output, so any difference prints its tail (FAIL_TAIL
+    lines) before the stop, which names the first three."""
+    problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
+    if problems:
+        say(tail(problems))
+        raise Stop("frozen inputs differ from the records: " + "; ".join(problems.splitlines()[:3]))
 
 
 def summary(day):
@@ -250,7 +314,8 @@ def seed_playoffs(day):
         if "tiebreak drawing needed" in out and draws_pending():
             draw()
             continue
-        raise Stop("the playoffs cannot be seeded: " + out.splitlines()[-1][:200])
+        say(tail(out))
+        raise Stop("the playoffs cannot be seeded: " + (out.splitlines() or [""])[-1][:200])
     raise Stop("the playoffs cannot be seeded after the tiebreak drawings")
 
 
@@ -260,6 +325,7 @@ def playoff_day(day):
     data = state()
     data["current_area"] = "08_Playoffs"
     write_state(data)
+    extension_day(day)                                  # veteran extensions on June 29 (runtime/extensions.py)
     option_day(day)                                     # veteran options at the end of June, before the summer market
     run("scripts/decide_awards.py", "--write", ok=(0, 1))
     draw()
@@ -271,21 +337,25 @@ def playoff_day(day):
         if not draws_pending():
             break
         draw()
-    say("    " + run("scripts/offseason_day.py", "--write", day, show=False).splitlines()[0])
+    out = run("scripts/offseason_day.py", "--write", day, show=False)
+    say("    " + next((line for line in out.splitlines() if not line.startswith(MARKET_NEWS)), ""))
+    market_news(out)
     run("scripts/playoff_day.py", "--build", day, show=False)
     national_day(day)                                    # FIBA tournaments in the summer (runtime/national.py)
-    problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
-    if problems:
-        raise Stop("frozen inputs differ from the records: " + "; ".join(problems.splitlines()[:3]))
+    frozen_check()
     wade_waits()
     play(day)
 
 
 def rollover_day(day):
     """The day the summer market's record exists and the rollover is dated: the next season becomes live."""
+    from runtime.extensions import ExtensionError
     from runtime.rollover import Rollover
-    if Rollover(ROOT).blockers(day):
-        return False
+    try:
+        if Rollover(ROOT).blockers(day):
+            return False
+    except ExtensionError as e:                          # a missed or unresolved extension day blocks the rollover
+        raise Stop(str(e))
     say("    " + run("scripts/rollover.py", "--write", show=False).splitlines()[-1][:200])
     return True
 
@@ -295,6 +365,7 @@ def camp_day(day):
     data = state()
     data["current_area"] = data.get("current_area") if data.get("current_area") in ("04_Training_Camp", "05_Preseason") else "04_Training_Camp"
     write_state(data)
+    extension_day(day)                                      # the October 31 extension deadline falls in the preseason
     option_day(day)
     miami_trade_day(day)                                    # Wade's trade requests answered; no scan before opening night
     out = run("scripts/run_camp.py", "--write", day, show=False)
@@ -303,17 +374,27 @@ def camp_day(day):
         out = run("scripts/run_camp.py", "--write", day, show=False)
     say("    " + out.splitlines()[0][:200])
     national_day(day)                                    # a tournament running into training camp
-    problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
-    if problems:
-        raise Stop("frozen inputs differ from the records: " + "; ".join(problems.splitlines()[:3]))
+    frozen_check()
     wade_waits()
     play(day)
 
 
-TRADES_TODAY = []
+TRADES_TODAY = []                                # the day's Miami trades, in season or in the summer market
 WADE_NEWS = []                                   # Wade injuries and absences this run, repeated at the end
 WADE_LONG = []                                   # a long Wade injury stops the run like a Miami trade
 LONG_INJURY_GAMES = 10
+MARKET_NEWS = ("MIAMI TRADE", "MIAMI SIGNING", "MIAMI OFFER SHEET", "MIAMI LOSES", "MIAMI DRAFT")   # scripts/offseason_day.py
+
+
+def market_news(out):
+    """The summer's Miami lines of the day (`scripts/offseason_day.py`, read from the market's dated events and, on draft
+    night, the draft record): each is reported; a trade starts "MIAMI TRADE" in the in-season format and stops the run
+    like one."""
+    for line in out.splitlines():
+        if line.startswith(MARKET_NEWS):
+            say("    " + line)
+            if line.startswith("MIAMI TRADE") and line not in TRADES_TODAY:
+                TRADES_TODAY.append(line)
 
 
 def national_day(day):
@@ -338,6 +419,26 @@ def national_after(day):
             say("    " + line)
             if "Wade" in line or line.startswith("USA"):
                 WADE_NEWS.append(f"{day}  {line}")
+
+
+def extension_day(day):
+    """Contract extensions on their own date (scripts/extension_day.py, runtime/extensions.py): every club's decision
+    packets drawn by the engine, then applied; Wade's offer stops the run through wade_waits(). A refused day (missed,
+    ahead of the clock, or behind an unresolved decision) exits 1, so run() prints its reason and stops."""
+    out = run("scripts/extension_day.py", "--write", day, show=False)
+    for _ in range(3):
+        if not draws_pending():
+            break
+        draw()
+        out = run("scripts/extension_day.py", "--write", day, show=False)
+    for line in out.splitlines():
+        if line.startswith(("EXTENSION", "MIAMI EXTENSION", "WADE EXTENSION")):
+            say("    " + line)
+            if line.startswith("WADE"):
+                WADE_NEWS.append(f"{day}  {line}")
+    last = (out.splitlines() or [""])[-1]
+    if last and not last.startswith("extensions: 0 decided, 0 draw packet(s) written, 0 applied"):
+        say("    " + last)
 
 
 def option_day(day):
@@ -382,6 +483,7 @@ def advance_day(day):
             camp_day(day)
         return close_day(day)
     moves = roster_moves.ctx(ROOT, day)
+    extension_day(day)                                   # an October 31 deadline after opening night
     if day in (moves.waive_by, moves.guarantee):
         run("scripts/guarantee_review.py", "--write", day)
     if run("scripts/review_rotation.py", "--check", day, ok=(0, 1), show=False).startswith("staff review due"):
@@ -398,9 +500,7 @@ def advance_day(day):
     run("scripts/build_season_games.py", "--write", day)
     run("scripts/build_league_slate.py", "--write", day, show=False)
     national_day(day)                                    # a qualifying window in the season (none before 2017)
-    problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
-    if problems:
-        raise Stop("frozen inputs differ from the records: " + "; ".join(problems.splitlines()[:3]))
+    frozen_check()
     run("scripts/decide_awards.py", "--write", ok=(0, 1))
     draw()
     run("scripts/decide_awards.py", "--write", show=False)
@@ -449,6 +549,41 @@ def miami_series_decided(day):
     return None
 
 
+def reported(day):
+    """Lines a stop on `day` already reported (`current_state.reported_stop`): a resumed day reports them again but does
+    not stop on them a second time."""
+    record = state().get("reported_stop") or {}
+    return set(record.get("lines") or []) if record.get("date") == day else set()
+
+
+def stop_on_news(day, lines):
+    """Stop the run on the day's news (a Miami trade, a long Wade injury): record the lines (`reported_stop`), then the
+    checkpoint and push, then tell the user."""
+    data = state()
+    record = data.get("reported_stop") or {}
+    kept = list(record.get("lines") or []) if record.get("date") == day else []
+    data["reported_stop"] = {"date": day, "lines": kept + [line for line in lines if line not in kept]}
+    write_state(data)
+    checkpoint(day)
+    say("DONE: " + "; ".join(lines))
+
+
+def news_before_stop():
+    """A stop for another reason (a failing step, Wade's pending decision) repeats the day's Miami news first, so a trade
+    reported earlier in the day is not lost above the failure."""
+    news = TRADES_TODAY + WADE_LONG
+    if news:
+        say("Miami news of the day before the stop: " + "; ".join(news))
+
+
+def clock_or(default):
+    """The career clock's day for a stop message, or `default` when the state cannot be read."""
+    try:
+        return state()["current_date"]
+    except Exception:                                   # the state itself is unreadable: name the run's own day
+        return default
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--to", required=True, help="the last day to play")
@@ -464,14 +599,17 @@ def main():
     end = date.fromisoformat(args.to)
     try:
         while day <= end:
+            TRADES_TODAY.clear()
+            WADE_LONG.clear()
             advance_day(day.isoformat())
-            if TRADES_TODAY and not args.through_trades:
-                checkpoint(day.isoformat())
-                say("DONE: " + "; ".join(TRADES_TODAY))     # the user is told of every Miami trade the day it happens
+            done = reported(day.isoformat())
+            trades = [line for line in TRADES_TODAY if line not in done]
+            if trades and not args.through_trades:
+                stop_on_news(day.isoformat(), trades)       # the user is told of every Miami trade the day it happens
                 return 0
-            if WADE_LONG and not args.through_injuries:
-                checkpoint(day.isoformat())
-                say("DONE: " + "; ".join(WADE_LONG))       # the user is told of a long Wade injury the day it happens
+            injuries = [line for line in WADE_LONG if line not in done]
+            if injuries and not args.through_injuries:
+                stop_on_news(day.isoformat(), injuries)     # the user is told of a long Wade injury the day it happens
                 return 0
             if args.series_end and miami_series_decided(day.isoformat()):
                 checkpoint(day.isoformat())
@@ -483,7 +621,14 @@ def main():
                 checkpoint(day.isoformat(), push=False)      # the Sundays between: pages and validation
             day += timedelta(days=1)
     except Stop as stop:
-        say(f"STOPPED on {state()['current_date']}: {stop}")
+        news_before_stop()
+        say(f"STOPPED on {clock_or(day.isoformat())}: {stop}")
+        return 1
+    except Exception as exc:                               # a step raised inside the driver: its traceback, then the stop
+        # The whole traceback, chained causes included (their root is at the top), as Python itself would print it.
+        say("\n".join("    " + line for line in traceback.format_exc().rstrip().splitlines()))
+        news_before_stop()
+        say(f"STOPPED on {clock_or(day.isoformat())}: {type(exc).__name__}: {exc}")
         return 1
     if WADE_NEWS:
         say("Wade injuries and absences this run: " + "; ".join(WADE_NEWS))

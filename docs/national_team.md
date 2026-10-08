@@ -76,18 +76,25 @@ The user's rule (2005 offseason framework, section 6), in `runtime/national_meda
   The registry is read as the league knew it on the close: its original rows and the rows added on or before that day (`added_on`).
   The identities are resolved once, at the close, and frozen into the tournament record (`medal_identities`). Every rebuild reads them from there, so a registry row added or repaired later (a medallist's later NBA debut, `write_back.extend_registry` and `repair_registry`) never renames a medal or changes its id.
   The NBA nationality file never names a player here: it lists NBA careers through 2007-08, later than the clock.
+- **A medallist who reaches the NBA later** (the user's request, October 2026: Francisco García, bronze with the Dominican Republic at the 2005 FIBA Americas, drafted in 2005). His medal keeps its frozen FIBA identity and id; it gains a dated link to his league registry row (`national_medals.links`), never a rewrite of the register:
+  - The link goes to the one registry row the close's own rules would have named had the row existed then: the row with the NBA id the tournament research gives him, or the row with his folded name and the birth date his FIBA identity carries. A name without an equal birth date never links.
+  - It holds from the later of the medal's award date and the row's `added_on`, never before he is in the league registry. The registry is read as it stood on the reading date.
+  - Two candidate rows never link, and neither does a row that would hold two medals of one tournament (two linked medals, or a linked one beside the medal the row already holds by NBA id). `links` returns these as ambiguous.
+  - The research id matters because a source conflict can split the birth dates. For García, the squad page gives 1980-12-31 and basketball-reference 1981-12-31 (the research conflicts in `library/2005/fiba/fiba_2005_americas_championship.json`). The row his first closed appearance writes carries the second date, so the research id links him.
+  - A medal that already has an NBA id keeps its link by that id.
 - **Where medals show.**
   - The tournament page: the final ranking and each medal team's locked roster, with any player who did not play marked.
-  - The league player card's awards section, for a registry player matched by NBA id.
-  - A followed player's career honors (`runtime/followed_players.py`).
+  - The league player card's awards section, for a registry player matched by NBA id or by a dated link. A linked medal is marked as won under his FIBA identity, with the date it reached the card.
+  - A followed player's career honors (`runtime/followed_players.py`), on the same terms.
   - Wade's medal stays in `awards.json` exactly as before (`national.record_wade_honors`, id `<edition_id>-<medal>`).
-- **Readers.** `national_medals.medals_for(bbr_id or name, on=date)` and `register_medals(on=date)` return medals awarded on or before the date. None appears before its tournament closed.
+- **Readers.** `national_medals.medals_for(bbr_id or name, on=date)` and `register_medals(on=date)` return medals awarded on or before the date. None appears before its tournament closed. Asked by NBA id, `medals_for` also returns a linked medal from its link date. `links(on=date)` returns the dated links and the ambiguous candidates.
 - **Validation** (`national_errors`):
   - A closed edition needs a complete register equal to a fresh build.
   - A medal for a player not on the team's locked roster is an error, and so is a medal for a team placed 4th or lower.
   - A register before the close, or a medal dated before the close or after the clock, is an error.
   - A closed record needs its frozen identities: exactly the medal teams, one per locked player in locked order, each keeping the locked roster's NBA id and FIBA key. Identities frozen before the close are an error.
   - Wade's register medal must also be in `awards.json`, and a Wade medal in `awards.json` (`<edition_id>-gold`, `-silver` or `-bronze`) must be his medal in the register.
+  - A linked medal must be unique per registry row (`link_errors`). It must be held by exactly one row, never by a row that holds another medal of the same tournament, and dated no earlier than its award and the row's `added_on` and not after the clock. An ambiguous medal is not an error: it stays unlinked.
 
 ## Ability in a FIBA game
 

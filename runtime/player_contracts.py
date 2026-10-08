@@ -208,6 +208,7 @@ def _market_contracts(root, player, cutoff, add, profiles, match, protagonist):
 
 
 def _market_year_contracts(root, player, cutoff, add, profiles, match, protagonist, path, NEW):
+    from .extensions import base_schedule
     from .league_contracts import read as read_ledger, schedule_for
     from .seasons import dates
     record = _read(path)
@@ -223,7 +224,8 @@ def _market_year_contracts(root, player, cutoff, add, profiles, match, protagoni
             route = e.get("route") or ("rookie_scale" if e["kind"] == "rookie_scale_signing" else
                                        "qualifying_offer" if e["kind"] == "qualifying_offer_accepted" else "signing")
             lg = ledger.get(e["bbr_id"]) or {}
-            schedule = dict(lg["schedule"]) if lg.get("schedule") and lg.get("club") else schedule_for(salary, years, NEW, route)
+            # a later extension's seasons are its own agreement (runtime/extensions.py), never this signing's
+            schedule = base_schedule(lg) if lg.get("schedule") and lg.get("club") else schedule_for(salary, years, NEW, route)
             seasons = sorted(schedule)
             camp = e["kind"] == "camp_signing"
             entry = {"player": e["player"], "bbr_id": e["bbr_id"], "status": "under_contract", "signed_date": e["date"],
@@ -370,8 +372,13 @@ def build_contract_catalog(root, player, clock=None):
         path = season / "00_Team/Finances/contract_schedules.json"
         data = _read(path)
         if _snapshot(data, cutoff):
+            from .extensions import signed_extensions, with_recorded, without_extension
+            known = signed_extensions(root)
             for row in data.get("players", []):
-                add(row, data.get("team"), _source(path, root, "Authoritative club contract schedule"), data["as_of"], season, True)
+                # an extension's seasons are its own agreement (added below); the row keeps the term it extends, a row an
+                # in-season trade copied without its extension record included (`extensions.with_recorded`)
+                add(without_extension(with_recorded(row, root, known=known)), data.get("team"),
+                    _source(path, root, "Authoritative club contract schedule"), data["as_of"], season, True)
         rights_path = season / "00_Team/Finances/free_agent_rights.json"
         rights = _read(rights_path)
         if _snapshot(rights, cutoff):
@@ -454,6 +461,14 @@ def build_contract_catalog(root, player, clock=None):
     # with the schedule the league contract ledger gives it (raises by route, rookie scale); a summer trade assigns the
     # contract to its new club. These are simulated contracts, labelled so; Miami's own sheet stays authoritative.
     _market_contracts(root, player, cutoff, add, profiles, match, protagonist)
+    # Every signed contract extension (runtime/extensions.py) is its own agreement from its signing date; the agreement
+    # it extends stays current until July 1 of the extension's first season (see "current" below).
+    from .extensions import catalog_rows
+    for row, club, record_path, as_of in catalog_rows(root, cutoff):
+        key = match(row)
+        if key:
+            row["contract_id"] = f"{key}-{row['signed_date']}"
+            add(row, club, _source(record_path, root, "Signed contract extension"), as_of, record_path.parent, False)
     trades = [(path, _read(path)) for path in player.glob("????-??/00_Team/Transactions/Trades/*.json")]
     for path, rec in sorted(trades, key=lambda pair: (str(pair[1].get("applied") or ""), pair[0].name)):
         applied = rec.get("applied")

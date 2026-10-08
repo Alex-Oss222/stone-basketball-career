@@ -130,6 +130,32 @@ def reply(root, response, token):
         page = path.parent / consultations.page_name(record)
         with page.open("a", encoding="utf-8") as f:
             f.write(f"\n## Recorded player answer\n\n{response['date']}: **{action}** — {response['text']}\n")
+    elif kind == "extension":
+        # Wade's answer to a contract extension offer (runtime/extensions.py). It never signs anything: the next run of
+        # scripts/extension_day.py applies the answer (accept: the extension is signed; decline: no contract changes).
+        from runtime import extensions
+        oid = response.get("event_id")
+        if not isinstance(oid, str) or not oid:
+            raise ValueError("extension offer ID not found")
+        path = extensions.offer_path(root, response["season"], oid)
+        expect(path, token)
+        record = read(path)
+        if not record or record.get("id") != oid:
+            raise ValueError("extension offer ID not found")
+        if record.get("status") != "offered" or record.get("answer") is not None or record["date"] > response["date"]:
+            raise ValueError("extension offer is not awaiting an answer")
+        if extensions.PENDING_PREFIX + oid not in state.get("pending_player_decisions", []):
+            raise ValueError("extension offer is not in the live pending list")
+        if action not in {"accept", "decline"}:
+            raise ValueError("extension reply must accept or decline")
+        record.update(answer=action, answered=response["date"], status="closed", note=response["text"], source_ref=response["source_ref"], reply_to_version=token)
+        extensions.close(state, oid)
+        dump(path, record)
+        dump(state_path, state)
+        page = path.parent / extensions.page_name(record)
+        with page.open("a", encoding="utf-8") as f:
+            f.write(f"\n## Recorded player answer\n\n{response['date']}: **{action}**: {response['text']}\n\n"
+                    f"The extension step applies it on its next run (`scripts/extension_day.py --write {response['date']}`).\n")
     elif kind == "working_record":
         path = player / "milestones.json"
         expect(path, token)

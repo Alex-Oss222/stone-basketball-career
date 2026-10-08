@@ -7,7 +7,8 @@ Read-only projections of canonical records, rebuilt with the player reports. Eac
 - regular-season and playoff lines from closed game results only (`write_back.closed_results`,
   `playoff_stats.closed_playoff_results`), with his club's record and playoff exit;
 - honors from the league's recorded award decisions, only once announced on or before the career date, and his FIBA
-  team medals from the closed tournaments' medal registers (`national_medals.medals_for`, by NBA id, from the close);
+  team medals from the closed tournaments' medal registers (`national_medals.medals_for`, by NBA id, from the close,
+  or by a medal's dated link to his registry row from the link date);
 - season highs and milestones with his age on the day (`runtime/stat_milestones.py`);
 - the user's target line for a season (`targets` in his `player.json`) against the closed games;
 - which ability model the engine used for him that season: his real career, or (an alternate-history player,
@@ -76,8 +77,9 @@ def honors(root, name, season, as_of):
 
 
 def medal_honor_rows(root, bbr, as_of, page_dir):
-    """[[edition, awarded, honor]] for the player's FIBA team medals awarded on or before the career date, each linked
-    to the tournament page's medal table (`runtime/national_medals.py`)."""
+    """[[edition, awarded, honor]] for the player's FIBA team medals awarded on or before the career date (a medal won
+    under his FIBA identity once its dated link holds, `national_medals.links`), each linked to the tournament page's
+    medal table (`runtime/national_medals.py`)."""
     from .national_medals import honor_text, link, medals_for
     return [[f"{m['edition']} FIBA", m["awarded_on"], f"[{honor_text(m)}]({link(m, page_dir, root)})"]
             for m in medals_for(bbr_id=bbr, on=as_of, root=root)]

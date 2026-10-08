@@ -524,6 +524,30 @@
    "status": "sourced",
    "source": "cbafaq05",
    "source_ref": "Q52"
+  },
+  "terms": {
+   "value": {
+    "rookie_scale_additional_seasons": 5,
+    "rookie_scale_raise_pct_of_first_year": 10.5,
+    "rookie_scale_deadline_month_day": "10-31",
+    "veteran_total_seasons_including_remaining": 5,
+    "veteran_first_year_pct_of_last_salary": 110.5,
+    "veteran_raise_pct_of_last_salary": 10.5,
+    "veteran_deadline_month_day": "06-30",
+    "free_agent_maximum_pct_of_last_salary": 105,
+    "minimum_contract_seasons": 4,
+    "years_after_signing": 3,
+    "long_contract": {
+     "min_seasons": 6,
+     "signed_before": "2005-07-01",
+     "years_after_signing": 4
+    },
+    "years_after_extension": 3
+   },
+   "status": "derived",
+   "source": "cbafaq05",
+   "source_ref": "Q52; Q11 for the 105% free-agent maximum",
+   "note": "Numeric form of the sourced Q52 entries above, read by runtime/extensions.py. Q52: contracts under four seasons may not be extended; four- or five-season contracts (and six-season contracts signed on or after July 1, 2005) three years after signing, six- or seven-season contracts signed before July 1, 2005 four years after, an extended contract three years after the extension; a rookie-scale contract to October 31 before the last option season (option picked up), up to five seasons beyond it, the first year up to the player's maximum, raises up to 10.5% of the first extension year; any other extension to June 30, five seasons including those remaining (the current season counts as one), the first year up to 110.5% of the last salary and not above the player's free-agent maximum, raises up to 10.5% of the last salary. Q11: a free agent's first-year maximum is never less than 105% of his last salary. The October 31 weekend rule (next business day) is not modelled: the career decides on October 31, as runtime/options.py does."
   }
  },
  "luxury_tax": {

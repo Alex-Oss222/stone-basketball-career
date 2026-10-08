@@ -336,5 +336,192 @@ class ReaderTests(unittest.TestCase):
         self.assertEqual(medal_honor_rows(self.root, "boshch01", "2005-09-03", self.root / "career/Chris_Bosh"), [])
 
 
+class LinkTests(unittest.TestCase):
+    """A medal won under a FIBA identity links to the player's league registry row once he is in the registry
+    (`national_medals.links`): by the tournament research's NBA id or by the same folded name and birth date, from the
+    later of the award and the row's added_on; a birth-date mismatch or two candidates never link. The frozen register
+    is never rewritten."""
+
+    def setUp(self):
+        from runtime import national
+        from runtime.national_medals import REGISTRY, assemble, register_path
+        self.root = Path(tempfile.mkdtemp(prefix="medals-"))
+        self.registry = self.root / REGISTRY
+        self.rec = record(frozen=True)
+        self.reg = assemble(EDITION, self.rec, sources(), played(self.rec))
+        self.path = self.root / register_path(EDITION)
+        national._write(self.path, self.reg)
+        self.greek = next(m for m in self.reg["medals"] if m["player"] == "Greece Alpha")     # fiba:...:1980-01-01
+
+    def tearDown(self):
+        shutil.rmtree(self.root, ignore_errors=True)
+
+    def rows(self, *rows):
+        self.registry.parent.mkdir(parents=True, exist_ok=True)
+        self.registry.write_text(json.dumps({"players": list(rows)}), encoding="utf-8")
+
+    def research(self, bbr_id):
+        """The edition on file with the research giving Greece Alpha an NBA id (as `fiba_editions` derives one)."""
+        from runtime.national import _write
+        e = dict(EDITION, rosters={"Greece": {"coach": None, "players": [
+            {"name": "Greece Alpha", "bbr_id": bbr_id, "birth_date": "1980-01-01", "fiba_key": self.greek["fiba_key"]}]}})
+        _write(self.root / "library/fiba/engine/test_cup_2005.json", e)
+
+    def test_the_link_holds_only_from_the_rows_added_on(self):
+        from runtime.league_cards import awards_lines, medal_honors
+        from runtime.national_medals import LINK_NAME_BIRTH, links, medals_for, register_medals
+        before = self.path.read_bytes()
+        self.rows(registry_row("Greece Alpha", "alphagr01", "1980-01-01", "2005-11-02"))
+        self.assertEqual(links(self.root, "2005-11-01"), {"linked": {}, "ambiguous": []})
+        self.assertEqual(medals_for(bbr_id="alphagr01", on="2005-11-01", root=self.root), [])
+        link = links(self.root, "2005-11-02")["linked"][self.greek["id"]]
+        self.assertEqual((link["bbr_id"], link["linked_on"], link["basis"]), ("alphagr01", "2005-11-02", LINK_NAME_BIRTH))
+        got = medals_for(bbr_id="alphagr01", on="2005-11-02", root=self.root)
+        self.assertEqual([(m["id"], m["link"]["linked_on"]) for m in got], [(self.greek["id"], "2005-11-02")])
+        self.assertEqual(self.path.read_bytes(), before)                         # the frozen register is untouched
+        players = [{"name": "Greece Alpha", "bbr_id": "alphagr01", "registry_id": "alphagr01"}]
+        early = medal_honors(players, register_medals(self.root, "2005-11-01"), links(self.root, "2005-11-01")["linked"])
+        self.assertEqual(early, {})
+        honors = medal_honors(players, register_medals(self.root, "2005-11-02"), links(self.root, "2005-11-02")["linked"])
+        self.assertEqual(list(honors), ["greecealpha"])
+        text = "\n".join(awards_lines(SimpleNamespace(honors=honors, on="2005-11-02", root=self.root), {"name": "Greece Alpha"}))
+        self.assertIn("**Bronze medal** (Greece, place 3); won as Greece Alpha (FIBA identity), on this card from 2005-11-02", text)
+        self.rows(registry_row("Greece Alpha", "alphagr01", "1980-01-01"))     # an original row: from the award date
+        self.assertEqual(links(self.root, "2005-09-04")["linked"][self.greek["id"]]["linked_on"], "2005-09-04")
+        self.assertEqual(links(self.root, "2005-09-03")["linked"], {})          # never before the close
+
+    def test_a_birth_date_mismatch_never_links(self):
+        from runtime.national_medals import link_errors, links, medals_for
+        self.rows(registry_row("Greece Alpha", "alphagr01", "1980-01-02", "2005-11-02"),
+                  registry_row("Greece Beta", "betagr01", None, "2005-11-02"))           # no birth date on file
+        self.assertEqual(links(self.root, "2005-12-01"), {"linked": {}, "ambiguous": []})
+        self.assertEqual(medals_for(bbr_id="alphagr01", on="2005-12-01", root=self.root), [])
+        self.assertEqual(link_errors(self.root, "2005-12-01"), [])
+        self.rows(registry_row("Gréece Álpha", "alphagr01", "1980-01-01", "2005-11-02"))    # accents fold: same name
+        self.assertIn(self.greek["id"], links(self.root, "2005-12-01")["linked"])
+
+    def test_ambiguous_candidates_never_link(self):
+        from runtime.national_medals import assemble, links, medals_for, register_path
+        self.rows(registry_row("Greece Alpha", "alphagr01", "1980-01-01", "2005-11-02"),
+                  registry_row("Greece Alpha", "alphagr02", "1980-01-01", "2005-11-03"))
+        self.assertIn(self.greek["id"], links(self.root, "2005-11-02")["linked"])       # one candidate on that day
+        found = links(self.root, "2005-11-03")
+        self.assertEqual(found["linked"], {})
+        self.assertEqual([(x["medal"], x["candidates"]) for x in found["ambiguous"]],
+                         [(self.greek["id"], ["alphagr01", "alphagr02"])])
+        self.assertEqual(medals_for(bbr_id="alphagr01", on="2005-11-03", root=self.root), [])
+        # One row, two medals of one tournament: Spain's and Greece's "Greece Alpha" share a name and birth date.
+        rec = record(frozen=True)
+        rec["rosters"]["Spain"]["players"][0].update(player="Greece Alpha", fiba_key="fiba:esp:greece-alpha:1980-01-01")
+        rec["medal_identities"]["Spain"][0].update(player="Greece Alpha", fiba_key="fiba:esp:greece-alpha:1980-01-01")
+        from runtime.national import _write
+        _write(self.root / register_path(EDITION), assemble(EDITION, rec, sources(), played(rec)))
+        self.rows(registry_row("Greece Alpha", "alphagr01", "1980-01-01", "2005-11-02"))
+        found = links(self.root, "2005-11-02")
+        self.assertEqual(found["linked"], {})
+        self.assertEqual(len(found["ambiguous"]), 2)
+        self.assertTrue(all("two medals of one tournament" in x["reason"] for x in found["ambiguous"]))
+        # A row that already holds a medal of the tournament by NBA id takes no linked one beside it.
+        self.rows(registry_row("Dwyane Wade", "wadedw01", "1982-01-17"),
+                  dict(registry_row("Greece Alpha", "wadedw01", "1980-01-01", "2005-11-02"), registry_id="wadedw01-x"))
+        _write(self.root / register_path(EDITION), self.reg)
+        found = links(self.root, "2005-11-02")
+        self.assertEqual(found["linked"], {})
+        self.assertIn("test_cup_2005-united-states-wadedw01-gold", found["ambiguous"][0]["reason"])
+
+    def test_the_tournament_research_id_links_when_the_birth_dates_differ(self):
+        from runtime.national_medals import LINK_RESEARCH, links
+        self.research("alphagr01")
+        self.rows(registry_row("Greece Alpha", "alphagr01", "1981-01-01", "2005-11-02"))   # a split source birth date
+        link = links(self.root, "2005-11-02")["linked"][self.greek["id"]]
+        self.assertEqual((link["bbr_id"], link["basis"]), ("alphagr01", LINK_RESEARCH))
+        self.rows(registry_row("Greece Alpha", "alphagr01", "1980-01-01", "2005-11-02"))   # both rules, one row
+        self.assertIn(LINK_RESEARCH, links(self.root, "2005-11-02")["linked"][self.greek["id"]]["basis"])
+        self.rows(registry_row("Greece Alpha", "otheral01", "1980-01-01", "2005-11-02"),
+                  registry_row("Alpha Greece", "alphagr01", "1980-01-01", "2005-11-02"))   # the two rules disagree
+        found = links(self.root, "2005-11-02")
+        self.assertEqual((found["linked"], found["ambiguous"][0]["candidates"]), ({}, ["alphagr01", "otheral01"]))
+
+    def test_validation_a_linked_medal_is_unique_per_registry_row(self):
+        from runtime.national_medals import link_errors
+        self.rows(registry_row("Greece Alpha", "alphagr01", "1980-01-01", "2005-11-02"))
+        self.assertEqual(link_errors(self.root, "2005-12-01"), [])
+        self.rows(dict(registry_row("Greece Alpha", "alphagr01", "1980-01-01", "2005-11-02"), registry_id="alphagr01"),
+                  dict(registry_row("Someone Else", None, None, "2005-11-05"), registry_id="alphagr01"))
+        self.assertIn(f"test_cup_2005: linked medal {self.greek['id']} is held by 2 league registry rows with the id "
+                      "alphagr01, not one", link_errors(self.root, "2005-12-01"))
+        self.assertEqual(link_errors(self.root, "2005-11-04"), [])                     # the second row came later
+
+
+class LiveGarciaLinkTests(unittest.TestCase):
+    """The live 2005 FIBA Americas bronze of Francisco Garcia (Dominican Republic, FIBA identity only on the close) links
+    to his league card once a registry row for him exists. The registry is a scratch copy; the live register, records
+    and research are read only."""
+
+    MEDAL = "continental_qualifier_2005-dominican-republic-francisco-garcia-1980-12-31-bronze"
+
+    def setUp(self):
+        from runtime.national_medals import REGISTRY
+        self.tmp = Path(tempfile.mkdtemp(prefix="medals-"))
+        self.scratch = self.tmp / "player_registry.json"
+        from runtime.write_back import _key
+        self.live = json.loads((ROOT / REGISTRY).read_text(encoding="utf-8"))
+        # His own live row (written by his first closed 2005-06 appearance) is dropped, so the scratch registry is the
+        # live one without him on any clock and only the test's rows can link or crowd his medal.
+        his = {"garcifr01", "franciscogarcia"}
+        self.live["players"] = [r for r in self.live["players"] if r.get("bbr_id") not in his
+                                and r.get("registry_id") not in his and _key(r.get("name", "")) != _key("Francisco Garcia")]
+        self.register = ROOT / "career/Dwyane_Wade/FIBA/Continental_Cups/2005/medals.json"
+        self.before = self.register.read_bytes()
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+    def registry(self, *rows):
+        """Patch the registry to the scratch copy: the live rows (without his own) plus `rows`."""
+        from unittest import mock
+        from runtime import national_medals
+        self.scratch.write_text(json.dumps(dict(self.live, players=self.live["players"] + list(rows)), ensure_ascii=False),
+                                encoding="utf-8")
+        return mock.patch.object(national_medals, "REGISTRY", self.scratch)
+
+    def row(self, birth, bbr_id="garcifr01", added_on="2005-11-02"):
+        """His row as `write_back.registry_additions` writes it on a first closed appearance."""
+        return {"name": "Francisco García", "position": "SF", "team_name": "Sacramento Kings", "team_code": "SAC",
+                "conference": "West", "cohort": "2003_04_appearance", "bbr_id": bbr_id, "espn_id": None, "birth_date": birth,
+                "registry_id": bbr_id or "franciscogarcia", "added_on": added_on,
+                "added_basis": "first closed 2005-06 appearance (test row)"}
+
+    def test_the_bronze_links_once_his_registry_row_exists(self):
+        from runtime.followed_players import medal_honor_rows
+        from runtime.league_cards import medal_honors
+        from runtime.national_medals import LINK_NAME_BIRTH, LINK_RESEARCH, link_errors, links, medals_for, register_medals
+        medal = next(m for m in json.loads(self.before)["medals"] if m["id"] == self.MEDAL)
+        self.assertEqual((medal["bbr_id"], medal["medal"], medal["awarded_on"]), (None, "bronze", "2005-09-04"))
+        with self.registry():                                                      # no row yet: no link
+            self.assertNotIn(self.MEDAL, links(ROOT, "2005-11-02")["linked"])
+        for birth, basis in (("1980-12-31", f"{LINK_RESEARCH}; {LINK_NAME_BIRTH}"),     # his FIBA identity's date
+                             ("1981-12-31", LINK_RESEARCH)):                             # the registry's sourced date
+            row = self.row(birth)
+            with self.registry(row):
+                self.assertNotIn(self.MEDAL, links(ROOT, "2005-11-01")["linked"])
+                self.assertEqual(medals_for(bbr_id="garcifr01", on="2005-11-01", root=ROOT), [])
+                link = links(ROOT, "2005-11-02")["linked"][self.MEDAL]
+                self.assertEqual((link["registry_id"], link["linked_on"], link["basis"]), ("garcifr01", "2005-11-02", basis))
+                self.assertEqual([m["id"] for m in medals_for(bbr_id="garcifr01", on="2005-11-02", root=ROOT)], [self.MEDAL])
+                players = self.live["players"] + [row]
+                honors = medal_honors(players, register_medals(ROOT, "2005-11-02"), links(ROOT, "2005-11-02")["linked"])
+                self.assertEqual([h["medal"]["id"] for h in honors["franciscogarcia"]], [self.MEDAL])
+                rows = medal_honor_rows(ROOT, "garcifr01", "2005-11-02", ROOT / "career/Francisco_Garcia")
+                self.assertEqual([r[:2] for r in rows], [["2005 FIBA", "2005-09-04"]])
+                self.assertEqual(link_errors(ROOT, "2005-11-02"), [])                # medals awarded by then only
+        with self.registry(self.row("1980-12-31", bbr_id=None)):                     # name and birth date alone
+            link = links(ROOT, "2005-11-02")["linked"][self.MEDAL]
+            self.assertEqual((link["registry_id"], link["basis"]), ("franciscogarcia", LINK_NAME_BIRTH))
+        with self.registry(self.row("1981-12-31", bbr_id="garcifr99")):              # the name without his birth date
+            self.assertNotIn(self.MEDAL, links(ROOT, "2005-12-01")["linked"])
+        self.assertEqual(self.register.read_bytes(), self.before)                    # the frozen register is unchanged
+
+
 if __name__ == "__main__":
     unittest.main()

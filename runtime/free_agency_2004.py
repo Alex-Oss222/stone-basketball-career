@@ -46,6 +46,14 @@ Club decisions are judgement rules with no chance element; a player's answers ar
   its own valuation, and a requested minimum player may take a roster spot up to the fifteenth; the front office still
   decides and the player still answers. Once Wade's standing is `franchise`, Miami asks him before offering to a star
   (`runtime/consultations.py`); the market waits for his answer.
+- From the 2006 summer (RENOUNCE_FOR_REQUEST_FROM): when Miami's offer to a free agent Wade asked it to pursue cannot
+  be paid because of its cap holds, but would be without some of them, Miami plans to renounce its own unsigned free
+  agents valued below him, lowest value first, only as many as the offer needs (never one Wade asked it to keep, and it
+  offers none of them a contract that round). The plan is carried out only when he accepts that offer, before any
+  signing that day; if he waits or goes elsewhere Miami keeps every hold. Each renouncement is a dated `renounce` event
+  and ends Miami's Bird rights (and any qualifying offer) for that player. From the same summer
+  (REQUEST_ANSWERS_CONSULTATION_FROM) Wade's own pursue request answers the franchise consultation for that player:
+  the record is written answered `approve` from the request on the asking day and the market does not stop.
 The record is `10_Free_Agency/free_agency_2004.json`, rebuilt by replaying every round from its recorded draws.
 """
 from __future__ import annotations
@@ -104,6 +112,8 @@ STATUS_QUO = 1.15
 ROOKIE_TRADE_DAYS = 30                  # a first-round pick can be traded 30 days after he signs
 NEW_SIGNING_TRADABLE = "2004-12-15"     # a free agent signed this summer cannot be traded before December 15
 REQUEST_PRICE_CEILING = 1.10           # Miami pays a player Wade asked for up to this share of its own valuation (docs/front_office.md)
+RENOUNCE_FOR_REQUEST_FROM = 2006        # from this summer Miami renounces lesser holds to reach a free agent Wade asked it to pursue
+REQUEST_ANSWERS_CONSULTATION_FROM = 2006  # from this summer Wade's own pursue request answers the franchise consultation for that player
 REQUESTS = FOLDER / "wade_requests.json"
 UNTOUCHABLE = {"dwyane_wade"}           # Miami's AI/GM keeps its franchise cornerstone off the market (judgement)
 HOLD_SHARE = 1.5                        # cap hold: 150% of the prior salary
@@ -554,6 +564,56 @@ def _sigmoid(x):
     return 1 / (1 + math.exp(-x))
 
 
+def _request_answer_page(record, evidence):
+    """The milestone page of a franchise consultation answered by Wade's own request (`Market.answered_by_request`):
+    the consultation page's identity line, proposed move and evidence (`runtime/consultations.page`), with the answer,
+    its date and the request's words in place of the open question."""
+    from .consultations import RULE, STAR_PRODUCTION_VALUE
+    kind_text = {"free_agent": "sign as a free agent", "trade": "acquire by trade", "sign_and_trade": "acquire by sign-and-trade"}[record["kind"]]
+    asked = record["answered_by_request"]
+    rows = [("Proposed move", f"Miami wants to {kind_text} **{record['player']}** ({record['club']})"),
+            ("Simulated line", evidence.get("line") or "no line recorded"),
+            ("Production value", f"{evidence.get('value')} (star line {STAR_PRODUCTION_VALUE}; {RULE})"),
+            ("Salary or ask", evidence.get("salary", "Not recorded")),
+            ("Miami's cap position", evidence.get("cap_position", "Not recorded")),
+            ("Fit", evidence.get("fit", "Not recorded")),
+            ("Front office's reason", evidence.get("reason", "Not recorded")),
+            ("Trade record", record["trade_id"] or "none")]
+    table = "\n".join(f"| {k} | {v} |" for k, v in rows)
+    return f"""---
+type: milestone
+kind: franchise_consultation
+status: closed
+date: {record['date']}
+record: {record['id']}.json
+---
+
+# Consultation: {record['player']} ({record['date']})
+
+**Dwyane Wade** · Miami Heat · standing **{record['standing']['standing']}** (as of {record['standing']['as_of'] or 'default'}) · career date {record['date']}
+
+**State: Answered by your request.** You asked Miami to pursue {record['player']} on {asked['date']}, so the front office did not stop to ask: your request is recorded as your approval of this move.
+
+## The proposed move
+
+| Item | Value |
+| --- | --- |
+{table}
+
+## Your answer
+
+- **Answer**: approve, recorded {record['answered']}
+- **Source**: your request of {asked['date']} (`{asked['source']}`, subject `{asked['subject']}`)
+- **Your words**: "{asked['words']}"
+
+The approval covers this kind of move for {record['player']} this season. An objection still needs a new dated consultation record; closed records are never edited.
+
+## Next checkpoint
+
+The summer market goes on the same day: Miami makes the move it planned, and the other side still answers by its own engine draw.
+"""
+
+
 class Market:
     """The whole summer, replayed from its recorded draws. `run()` returns the record, or None while a draw or
     Wade's answer is pending."""
@@ -571,6 +631,7 @@ class Market:
         self.rookie_scale = rookie_scale_players(root)
         self.clubs = sorted({c["club"] for c in self.book["contracts"].values()} | set(self.book["rights"].values()) | {CHARLOTTE})
         self.events, self.pending = [], False
+        self.renounced = {}                             # {bbr_id: club} rights a club renounced this summer (from 2006)
         self.store = True                               # stored trade proposals (False only in tests)
         self.standings = self._standings()
 
@@ -628,15 +689,18 @@ class Market:
     def payroll(self, club):
         return sum(c["salary"] for c in self.contracts.values() if c["club"] == club)
 
+    def held(self, club):
+        """The club's own unsigned free agents that carry a cap hold: those it prices at twice the minimum or more."""
+        return [b for b in self.pool if b not in self.contracts and self.rights.get(b) == club
+                and self.price[b] >= 2 * minimum(self.service(b), self.cal)]
+
+    def hold(self, b):
+        """One player's cap hold: HOLD_SHARE x his prior salary (his price when none is recorded)."""
+        return int(round((self.prior.get(b) or self.price[b]) * HOLD_SHARE))
+
     def holds(self, club, on):
         """Cap holds the club keeps: its own unsigned free agents it values above twice the minimum."""
-        total = 0
-        for b in self.pool:
-            if b in self.contracts or self.rights.get(b) != club:
-                continue
-            if self.price[b] >= 2 * minimum(self.service(b), self.cal):
-                total += int(round((self.prior.get(b) or self.price[b]) * HOLD_SHARE))
-        return total
+        return sum(self.hold(b) for b in self.held(club))
 
     def ask(self, b, week):
         floor = ASK_FLOOR_SHARE - LATE_DECAY * max(0, week - LATE_WEEK + 1)
@@ -803,6 +867,76 @@ class Market:
         return {r["bbr_id"]: r["term"] for r in _read(path)["requests"]
                 if r.get("term") and r.get("requested") in ("pursue", "keep") and r["date"] <= day and r.get("bbr_id")}
 
+    def pursuit_request(self, kind, b, day):
+        """Wade's own latest request, dated on or before the day, that Miami pursue player b by this route, or None: a
+        `free_agent_target` request that says `pursue` for a free-agent signing, a `trade_target` request for a trade
+        (as `runtime/trades.py` reads it). Matched by bbr_id, else by name when the request names no bbr_id."""
+        path = self.root / REQUESTS
+        if not path.is_file():
+            return None
+        subject = {"free_agent": "free_agent_target", "trade": "trade_target"}[kind]
+        rows = [r for r in _read(path)["requests"]
+                if r.get("subject") == subject and r.get("date", "9999") <= day
+                and (r["bbr_id"] == b if r.get("bbr_id") else r.get("player") == self.name(b))
+                and (kind != "free_agent" or r.get("requested") == "pursue")]
+        return max(rows, key=lambda r: r["date"]) if rows else None
+
+    def renunciation(self, club, b, day, amount, offered=()):
+        """The holds Miami would renounce so its cap room pays `amount` (the offer its rule would make) to b, a free agent
+        Wade asked it to pursue, from the 2006 summer (RENOUNCE_FOR_REQUEST_FROM): its own unsigned free agents valued
+        below b, taken lowest value first until their holds cover the gap, then any earlier pick the later ones already
+        cover is kept (checked from the most valuable down), so no hold goes that the offer does not need; never a
+        player Wade asked it to keep, nor one it has already offered a contract this round. [] when the room already
+        pays him, when renouncing every eligible hold would still fall short, or when Wade did not ask for him. Ordered
+        lowest value first. A plan only: `round` carries it out when he accepts. A rule, never a draw
+        (docs/front_office.md, Wade's requests)."""
+        if YEAR < RENOUNCE_FOR_REQUEST_FROM or club != MIAMI or self.rights.get(b) == club:
+            return []
+        if self.pursuit_request("free_agent", b, day) is None:
+            return []
+        short = amount - (self.cap(club, day) - self.payroll(club) - self.holds(club, day))
+        if short <= 0:
+            return []
+        kept = self.requested(day, ("re_sign",))
+        value = self.pricing.value(b)
+        lesser = sorted((x for x in self.held(club) if x not in offered and x not in kept and self.pricing.value(x) < value),
+                        key=lambda x: (self.pricing.value(x), x))
+        out, freed = [], 0
+        for x in lesser:
+            out.append(x)
+            freed += self.hold(x)
+            if freed >= short:
+                break
+        else:
+            return []
+        for x in reversed(out[:-1]):                   # the last pick is always needed; drop earlier ones the rest cover
+            if freed - self.hold(x) >= short:
+                out.remove(x)
+                freed -= self.hold(x)
+        return out
+
+    def renounce(self, club, players, day, target, amount):
+        """Renounce each player's hold, on the day the target accepts the offer it pays for (`round`): a dated `renounce`
+        event; the club's Bird rights and any qualifying offer it tendered him end, so he is an unrestricted free agent
+        whom the club can sign again only with room or an exception, like any other club."""
+        for x in players:
+            hold = self.hold(x)
+            q = self.qualifying.get(x)
+            withdrawn = q if q and q["club"] == club else None
+            self.rights.pop(x, None)
+            self.renounced[x] = club
+            if withdrawn:
+                self.qualifying.pop(x)
+            event = {"date": day, "kind": "renounce", "player": self.name(x), "bbr_id": x, "club": club, "hold": hold,
+                     "value": round(self.pricing.value(x), 2), "for": self.name(target), "for_bbr_id": target, "offer": amount,
+                     "basis": f"{club} renounces {self.name(x)}'s ${hold:,} cap hold so its room pays the ${amount:,} offer accepted by "
+                              f"{self.name(target)}, whom Wade asked it to pursue ({REQUESTS.as_posix()}): its own free agents "
+                              "valued below him, lowest value first, only as many as needed (runtime/free_agency_2004.py "
+                              "Market.renunciation)."}
+            if withdrawn:
+                event["qualifying_offer_withdrawn"] = withdrawn["amount"]
+            self.events.append(event)
+
     def request_draw(self, b, bar, weight):
         """Wade asks Miami to keep a player its June 30 rule would let go (no qualifying offer): an engine draw with
         P(tender) = standing weight x (1 - margin), the margin being how clear-cut the rule's call was
@@ -832,8 +966,10 @@ class Market:
         terms_wanted = self.requested_terms(day) if club == MIAMI else {}
         ranked = sorted(open_players, key=lambda b: (-self.pricing.value(b) * (NEED_FLOOR + (1 - NEED_FLOOR) * self.need(club, self.group(b)))
                                                      * (1 + wanted.get(b, 0.0)), b))
-        made_big = False
+        made_big, planned = False, set()
         for b in ranked:
+            if b in planned:
+                continue                                   # a hold Miami plans to renounce this round gets no offer
             ask = self.ask(b, week)
             need = self.need(club, self.group(b))
             willing = int(round(self.price[b] * (0.9 + 0.2 * need)))
@@ -848,6 +984,11 @@ class Market:
             if minimum_deal and short <= 0 and b not in wanted:
                 continue                                   # a requested player may take a spot up to the fifteenth
             route = self.means(club, b, day, amount)
+            renounce = []
+            if route is None and not minimum_deal:         # from 2006: lesser holds give way to a star Wade asked for
+                renounce = self.renunciation(club, b, day, amount, {o["bbr_id"] for o in out})
+                if renounce:
+                    route = "cap_room"
             if route is None and not minimum_deal:
                 amount, route = self.most_affordable(club, b, day)
                 if route is None or amount < INSULT_SHARE * ask or amount <= minimum(self.service(b), self.cal):
@@ -863,6 +1004,9 @@ class Market:
                 years = MINIMUM_EXCEPTION_YEARS if terms_wanted.get(b) == "multi_year" else 1
             out.append({"club": club, "bbr_id": b, "salary": amount, "years": years,
                         "route": route, "ask": ask})
+            if renounce:                                   # a plan: `round` renounces only if he accepts this offer
+                out[-1]["renounce"] = renounce
+                planned |= set(renounce)
             if minimum_deal:
                 short -= 1
             else:
@@ -886,15 +1030,54 @@ class Market:
             return False
         if C.approved(self.root, SEASON, "free_agent", name, day):
             return True
+        basis = f"Miami's market plan on {day}: offer ${amount:,} (runtime/free_agency_2004.py)"
+        evidence = {"value": round(value, 2), "line": self.line(b), "salary": f"${amount:,} offer", "cap_position": f"payroll ${self.payroll(MIAMI):,}",
+                    "fit": f"{self.group(b)} need {self.need(MIAMI, self.group(b)):.2f}", "reason": f"{YEAR} free agency"}
+        if self.answered_by_request("free_agent", b, club, day, basis, evidence, standing):
+            return True
         state_path = self.root / f"career/Dwyane_Wade/{SEASON}/current_state.json"
         state = _read(state_path)
-        C.ask(self.root, state, day, "free_agent", name, b, club, basis=f"Miami's market plan on {day}: offer ${amount:,} (runtime/free_agency_2004.py)",
-              evidence={"value": round(value, 2), "line": self.line(b), "salary": f"${amount:,} offer", "cap_position": f"payroll ${self.payroll(MIAMI):,}",
-                        "fit": f"{self.group(b)} need {self.need(MIAMI, self.group(b)):.2f}", "reason": f"{YEAR} free agency"},
-              season=SEASON, standing=standing)
+        C.ask(self.root, state, day, "free_agent", name, b, club, basis=basis, evidence=evidence, season=SEASON, standing=standing)
         _write(state_path, state)
         self.pending = True
         return False
+
+    def answered_by_request(self, kind, b, club, day, basis, evidence, standing, trade_id=None):
+        """From the 2006 summer (REQUEST_ANSWERS_CONSULTATION_FROM) a star Wade himself asked Miami to pursue needs no
+        question: his request is the answer. Miami writes the consultation record the ask would write, dated the day it
+        would ask, answered `approve` on that day from the request (its file, date and words), with its page, and the
+        market goes on. Only his request for that player and route counts (`pursuit_request`: a free-agent `pursue` for
+        a signing, a `trade_target` for a trade); the caller checks an objection first and it stands; a question already
+        open waits for his own answer; a request whose `consultation` entry gives another answer is not an approval.
+        Returns True when the request answered."""
+        if YEAR < REQUEST_ANSWERS_CONSULTATION_FROM:
+            return False
+        from . import consultations as C
+        name = self.name(b)
+        request = self.pursuit_request(kind, b, day)
+        if request is None or (request.get("consultation") or {}).get("standing_answer", "approve") != "approve":
+            return False
+        if C.open_record(self.root, SEASON, name, kind) is not None:
+            return False
+        source = REQUESTS.as_posix()
+        words = request.get("words") or request.get("note") or ""
+        cid = C.consultation_id(day, kind, name)
+        record = {"schema_version": 1, "id": cid, "date": day, "kind": kind, "player": name, "bbr_id": b, "club": club,
+                  "terms": None, "trade_id": trade_id,
+                  "standing": {"standing": standing["standing"], "as_of": standing.get("as_of")},
+                  "star_basis": {"value": evidence.get("value"), "rule": C.RULE}, "basis": basis, "status": "closed",
+                  "answer": "approve", "answered": day,
+                  "note": f"Answered by Wade's own request of {request['date']} that Miami pursue {name} ({source}): \"{words}\"",
+                  "answered_by_request": {"source": source, "date": request["date"], "subject": request["subject"],
+                                          "requested": request.get("requested"), "words": words}}
+        if request.get("consultation"):
+            record["answered_by_request"]["consultation"] = request["consultation"]
+        folder = C.folder(self.root, SEASON)
+        path = folder / f"{cid}.json"
+        if not path.exists():
+            _write(path, record)
+            (folder / C.page_name(record)).write_text(_request_answer_page(record, evidence), encoding="utf-8")
+        return True
 
     def line(self, b):
         e = self.pricing.evidence.get(b)
@@ -930,7 +1113,7 @@ class Market:
         e = self.pricing.evidence.get(b)
         return {"ask": self.ask(b, week), "years_wanted": years_wanted(self.pricing.age(b)), "age": self.pricing.age(b),
                 "prior_minutes": round(e["mpg"], 1) if e else None, "start_share": e["starts"] / e["games"] if e else 0.0,
-                "prior_club": self.rights.get(b)}
+                "prior_club": self.rights.get(b) or self.renounced.get(b)}     # renouncing ends rights, not his ties
 
     def assess(self, b, offer, week):
         """(utility points, dealbreaker or None) of an offer, by the 2003 factor model with his drawn priority."""
@@ -1113,12 +1296,14 @@ class Market:
                 return "objected"
             if C.approved(self.root, SEASON, "trade", name, day):
                 continue
+            basis = f"Miami's summer trade search on {day}: {' and '.join(row['a']['sends'])} for {' and '.join(row['b']['sends'])}"
+            evidence = {"value": round(value, 2), "line": self.line(b), "salary": f"${self.contracts[b]['salary']:,}",
+                        "cap_position": f"payroll ${self.payroll(MIAMI):,}", "fit": self.group(b), "reason": f"{YEAR} summer trade"}
+            if self.answered_by_request("trade", b, row[side]["club"], day, basis, evidence, standing, trade_id=row.get("id")):
+                continue
             state_path = self.root / f"career/Dwyane_Wade/{SEASON}/current_state.json"
             state = _read(state_path)
-            C.ask(self.root, state, day, "trade", name, b, row[side]["club"], basis=f"Miami's summer trade search on {day}: "
-                  f"{' and '.join(row['a']['sends'])} for {' and '.join(row['b']['sends'])}",
-                  evidence={"value": round(value, 2), "line": self.line(b), "salary": f"${self.contracts[b]['salary']:,}",
-                            "cap_position": f"payroll ${self.payroll(MIAMI):,}", "fit": self.group(b), "reason": f"{YEAR} summer trade"},
+            C.ask(self.root, state, day, "trade", name, b, row[side]["club"], basis=basis, evidence=evidence,
                   season=SEASON, standing=standing)
             _write(state_path, state)
             self.pending = True
@@ -1163,6 +1348,10 @@ class Market:
             accepted.append(dict(next(o for o in options if o["club"] == answer), trait=self.trait.get(b)))
         if self.pending:
             return False
+        for o in accepted:                                 # from 2006: the holds go only once the target has said yes,
+            plan = o.pop("renounce", None)                 # before any signing, so no renounced player's sheet is matched
+            if plan:
+                self.renounce(o["club"], [x for x in plan if x not in self.contracts], day, o["bbr_id"], o["salary"])
         for o in accepted:
             self.sign(o, day)
         return True
@@ -1193,7 +1382,7 @@ class Market:
         if matched:
             return
         kind = "re_sign" if self.rights.get(b) == club else "signing"
-        self.events.append({"date": when, "kind": kind, "player": self.name(b), "bbr_id": b, "club": club, "from": self.rights.get(b),
+        self.events.append({"date": when, "kind": kind, "player": self.name(b), "bbr_id": b, "club": club, "from": self.rights.get(b) or self.renounced.get(b),
                             "salary": o["salary"], "years": o["years"], "route": o["route"], "agreed": day})
 
     def place(self):
@@ -1221,7 +1410,7 @@ class Market:
             self.contracts[b] = {"club": club, "salary": salary, "years": 1, "date": PLACEMENT, "route": route,
                                  "source": f"{YEAR} camp signing (roster minimum)"}
             self.events.append({"date": PLACEMENT, "kind": "camp_signing", "player": self.name(b), "bbr_id": b, "club": club,
-                                "from": self.rights.get(b), "salary": salary, "years": 1, "route": route})
+                                "from": self.rights.get(b) or self.renounced.get(b), "salary": salary, "years": 1, "route": route})
         self.unsigned = [b for b in left if b not in self.contracts]
 
     def record(self):

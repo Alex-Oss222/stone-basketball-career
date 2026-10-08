@@ -6,7 +6,9 @@ carries over intact, for every pair of consecutive live seasons and for the live
 Contracts
 - A Miami contract that continues into the new season (the previous cap sheet schedules it there and the player is
   still Miami's) keeps every remaining season and amount of its signed schedule; a new contract (re-signing,
-  extension, option decision) must name a signing date in the new league year or a route other than `existing`.
+  extension, option decision) must name a signing date in the new league year or a route other than `existing`. The
+  seasons of an extension signed in the new league year (`runtime/extensions.py`, its `extension` record dated on or
+  after July 1) are its own agreement and are left out of the comparison; any other added season is refused.
 - An `existing` (carried) contract is never dated as signed in the new league year.
 - The league contract ledger lists each player once, and each Miami entry in it agrees with Miami's cap sheet.
 - No player under contract to Miami on the previous sheet disappears without a record: he is on the new sheet,
@@ -83,15 +85,25 @@ def contract_errors(root, prev, new):
         if not carried:
             continue
         renewed = signed >= july and route not in (None, "existing")
-        if not renewed and _later(p.get("schedule"), new) != carried:
+        current = _later(p.get("schedule"), new)
+        extended = _extension_seasons(p, july)
+        if extended:
+            current = {s: v for s, v in current.items() if s not in extended}
+        if not renewed and current != carried:
             errors.append(f"{new}: {p['player']}'s carried contract lost or changed seasons: {prev} sheet {carried}, {new} sheet "
-                          f"{_later(p.get('schedule'), new)}")
+                          f"{current}")
     for k, o in old.items():
         if k in seen or any(w in (o.get("status") or "") for w in GONE) or not _later(o.get("schedule"), new):
             continue
         if k not in placed_elsewhere:
             errors.append(f"{new}: {o['player']} was under contract to Miami for {new} on the {prev} sheet and is on no record now")
     return errors
+
+
+def _extension_seasons(entry, since):
+    """Seasons added by the entry's extensions signed on or after `since` (`runtime/extensions.py`)."""
+    from .extensions import extensions_of
+    return {s for ext in extensions_of(entry) if ext.get("signed_date", "") >= since for s in ext.get("schedule", {})}
 
 
 def ledger_errors(root, season):

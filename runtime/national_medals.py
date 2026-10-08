@@ -29,9 +29,23 @@ The identities are resolved once, at the close, and frozen into the tournament r
 (hindsight). The NBA nationality file is not used to name a player: it lists NBA careers through 2007-08, later than
 the clock (hindsight).
 
+A medallist who reaches the NBA after the close (the user's request, October 2026: Francisco Garcia, bronze with the
+Dominican Republic at the 2005 FIBA Americas, drafted in 2005) gets a dated link, never a rewrite of the frozen register
+(`links`): a medal with no NBA id links to the one league registry row that the close's own rules would have named had
+the row existed then, either the row with the NBA id the tournament research gives him (`researched_entry`; the same
+id the second identity tier trusts) or the row with his folded name and the birth date his FIBA identity carries
+(`fiba_birth`). A name without an equal birth date never links. The link holds from the later of the medal's
+`awarded_on` and the row's `added_on` (never before he is in the league registry), and the registry is read as it stood
+on the reading date. Two candidate rows, or a row that would hold two medals of one tournament (two linked medals, or a
+linked one beside the medal it already holds by NBA id), never link: they are returned as `ambiguous`. The research id
+matters because a source conflict can split the birth dates: the squad page gives Garcia 1980-12-31 and
+basketball-reference 1981-12-31 (`library/2005/fiba/fiba_2005_americas_championship.json`, research conflicts), and the
+registry row his first appearance writes carries the second.
+
 Wade's own medal stays where it always was, in `career/Dwyane_Wade/awards.json` (`national.record_wade_honors`, id
 `<edition_id>-<medal>`); the register sits beside it and validation requires the two to agree both ways. Readers:
-`medals_for` (one player's medals on or before a date) and `register_medals` (every medal on or before a date).
+`medals_for` (one player's medals on or before a date, a linked medal from its link date), `register_medals` (every
+medal on or before a date) and `links` (the dated links and the ambiguous candidates on a date).
 """
 import json
 import os
@@ -46,6 +60,9 @@ LOCKED = "locked roster (NBA player on the date)"
 FIBA_ONLY = "FIBA identity (no NBA id on the date)"
 RULE = ("1st gold, 2nd silver, 3rd bronze, 4th or below none; every player on the team's locked tournament roster, "
         "minutes played or not; awarded on the day the tournament closed (runtime/national_medals.py)")
+LINK_RESEARCH = "the NBA id the tournament research gives him"
+LINK_NAME_BIRTH = "same name and birth date as his FIBA identity"
+ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def _read(path):
@@ -86,6 +103,24 @@ def medal_id(edition_id, country, bbr_id, fiba_key, name, medal):
     return f"{edition_id}-{_slug(country)}-{player_slug(bbr_id, fiba_key, name)}-{medal}"
 
 
+def fiba_birth(fiba_key):
+    """The birth date a FIBA identity carries (`fiba_editions.fiba_key`: 'fiba:<country>:<name>:<birth or unknown>'),
+    or None when it carries none."""
+    tail = str(fiba_key or "").rsplit(":", 1)[-1]
+    return tail if ISO_DATE.match(tail) else None
+
+
+def registry_rows(root=ROOT):
+    """The league player registry's rows (`REGISTRY`), every row on file; [] without a registry."""
+    path = Path(root) / REGISTRY
+    data = _read(path) if path.is_file() else {"players": []}
+    return data["players"] if isinstance(data, dict) else data
+
+
+def _row_id(row):
+    return row.get("registry_id") or row.get("bbr_id")
+
+
 # -- sources ----------------------------------------------------------------------------------------------------------
 def deciding_results(rec, closed):
     """{place: result path} for the places a single game decided: the final's for first and second, the third-place
@@ -113,6 +148,21 @@ def appearances(closed, root=ROOT):
     return out
 
 
+def researched_entry(e, rec, team, p, every=None):
+    """The player's entry in the real roster the team plays (this edition's, or, under the record's `roster_sources`,
+    an earlier one's from `every`, the editions by id): by FIBA key, else NBA id, else his one same-name entry; {}."""
+    source = (rec.get("roster_sources") or {}).get(team)
+    rosters = every[source]["rosters"] if source else e["rosters"]
+    players = (rosters.get(team) or {}).get("players") or []
+    for field, value in (("fiba_key", p.get("fiba_key")), ("bbr_id", p.get("bbr_id"))):
+        if value:
+            hit = next((x for x in players if x.get(field) == value), None)
+            if hit:
+                return hit
+    named = [x for x in players if _key(x.get("name", "")) == _key(p["player"])]
+    return named[0] if len(named) == 1 else {}
+
+
 class Identity:
     """A locked-roster player's NBA id, FIBA identity and the basis for them (see the module rule), as the league knew
     him on `on` (default: the close): the registry's original rows (no `added_on`) and the rows added on or before that
@@ -123,10 +173,7 @@ class Identity:
         self.e, self.rec, self.root = e, rec, Path(root)
         self.on = on or rec.get("closed_on") or e["last_game"]
         self._editions = None if not rec.get("roster_sources") else editions(root)
-        path = self.root / REGISTRY
-        data = _read(path) if path.is_file() else {"players": []}
-        rows = data["players"] if isinstance(data, dict) else data
-        rows = [r for r in rows if (r.get("added_on") or "") <= self.on]
+        rows = [r for r in registry_rows(self.root) if (r.get("added_on") or "") <= self.on]
         self.tracked = {r["bbr_id"] for r in rows if r.get("bbr_id")}
         self.by_name_birth = {}
         for r in rows:
@@ -134,17 +181,8 @@ class Identity:
                 self.by_name_birth.setdefault((_key(r["name"]), r["birth_date"]), set()).add(r["bbr_id"])
 
     def researched(self, team, p):
-        """The player's entry in the real roster the team plays (this edition's, or an earlier one's)."""
-        source = (self.rec.get("roster_sources") or {}).get(team)
-        rosters = self._editions[source]["rosters"] if source else self.e["rosters"]
-        players = (rosters.get(team) or {}).get("players") or []
-        for field, value in (("fiba_key", p.get("fiba_key")), ("bbr_id", p.get("bbr_id"))):
-            if value:
-                hit = next((x for x in players if x.get(field) == value), None)
-                if hit:
-                    return hit
-        named = [x for x in players if _key(x.get("name", "")) == _key(p["player"])]
-        return named[0] if len(named) == 1 else {}
+        """The player's entry in the real roster the team plays (`researched_entry`)."""
+        return researched_entry(self.e, self.rec, team, p, self._editions)
 
     def __call__(self, team, p):
         entry = self.researched(team, p)
@@ -267,14 +305,101 @@ def register_medals(root=ROOT, on=None):
     return sorted(out, key=lambda m: (m["awarded_on"], m["edition_id"], m["place"], m["id"]))
 
 
+def researched_ids(medals, root=ROOT):
+    """{medal id: NBA id} the tournament research gives each medallist whose medal has none (`researched_entry` on the
+    edition the register names and its record's roster sources); a medal whose edition is not on file gives none."""
+    loose = [m for m in medals if not m.get("bbr_id")]
+    if not loose:
+        return {}
+    from .national import editions, read_record
+    every, records, out = editions(root), {}, {}
+    for m in loose:
+        e = every.get(m["edition_id"])
+        if e is None:
+            continue
+        if m["edition_id"] not in records:
+            records[m["edition_id"]] = read_record(e, root) or {}
+        entry = researched_entry(e, records[m["edition_id"]], m["country"],
+                                 {"player": m["player"], "fiba_key": m.get("fiba_key")}, every)
+        if entry.get("bbr_id"):
+            out[m["id"]] = entry["bbr_id"]
+    return out
+
+
+def links(root=ROOT, on=None, medals=None, rows=None):
+    """The dated links from medals without an NBA id to league registry rows, read on `on` (None: everything on file).
+    See the module rule: a medal links to the one row (`rows`, default the registry; only rows added on or before `on`)
+    that carries the NBA id the tournament research gives him (`researched_ids`) or his folded name and the birth date
+    of his FIBA identity (`fiba_birth`), from the later of `awarded_on` and the row's `added_on`. A medal that already
+    has an NBA id keeps it and is not linked here. Returns {"linked": {medal id: {medal, registry_id, bbr_id, name,
+    linked_on, basis}}, "ambiguous": [{medal, player, edition_id, country, candidates, reason}]}; an ambiguous medal
+    never links."""
+    root = Path(root)
+    medals = register_medals(root, on) if medals is None else [m for m in medals if on is None or m["awarded_on"] <= on]
+    rows = registry_rows(root) if rows is None else rows
+    rows = [r for r in rows if on is None or (r.get("added_on") or "") <= on]
+    loose = [m for m in medals if not m.get("bbr_id")]
+    research = researched_ids(loose, root)
+    by_bbr, by_name_birth = {}, {}
+    for i, r in enumerate(rows):
+        if r.get("bbr_id"):
+            by_bbr.setdefault(r["bbr_id"], []).append(i)
+        if r.get("birth_date"):
+            by_name_birth.setdefault((_key(r["name"]), r["birth_date"]), []).append(i)
+    held = {}                                         # (NBA id, edition): the medals a player holds by NBA id
+    for m in medals:
+        if m.get("bbr_id"):
+            held.setdefault((m["bbr_id"], m["edition_id"]), []).append(m["id"])
+    ambiguous, tentative = [], {}
+
+    def doubt(m, candidates, reason):
+        ambiguous.append({"medal": m["id"], "player": m["player"], "edition_id": m["edition_id"], "country": m["country"],
+                          "candidates": sorted(str(_row_id(rows[i])) for i in candidates), "reason": reason})
+
+    for m in loose:
+        candidates = {}
+        for i in by_bbr.get(research.get(m["id"]), []):
+            candidates.setdefault(i, []).append(LINK_RESEARCH)
+        birth = fiba_birth(m.get("fiba_key"))
+        for i in by_name_birth.get((_key(m["player"]), birth), []) if birth else []:
+            candidates.setdefault(i, []).append(LINK_NAME_BIRTH)
+        if len(candidates) > 1:
+            doubt(m, candidates, "two or more league registry rows match")
+        elif candidates:
+            (i, basis), = candidates.items()
+            tentative[m["id"]] = (m, i, basis)
+    per_row = {}
+    for mid, (m, i, _) in tentative.items():
+        per_row.setdefault((i, m["edition_id"]), []).append(mid)
+    linked = {}
+    for (i, eid), mids in per_row.items():
+        r = rows[i]
+        also = held.get((r["bbr_id"], eid), []) if r.get("bbr_id") else []
+        if len(mids) > 1 or also:
+            for mid in mids:
+                doubt(tentative[mid][0], [i], "the row would hold two medals of one tournament ("
+                      + ", ".join(sorted(set(mids + also) - {mid})) + ")")
+            continue
+        m, _, basis = tentative[mids[0]]
+        linked[m["id"]] = {"medal": m["id"], "registry_id": _row_id(r), "bbr_id": r.get("bbr_id"), "name": r["name"],
+                           "linked_on": max(m["awarded_on"], r.get("added_on") or ""), "basis": "; ".join(basis)}
+    return {"linked": dict(sorted(linked.items())), "ambiguous": sorted(ambiguous, key=lambda x: (x["medal"], x["reason"]))}
+
+
 def medals_for(bbr_id=None, name=None, on=None, root=ROOT):
-    """One player's medals awarded on or before `on`: by NBA id where the medal has one, else by name (accents and
-    punctuation folded). A medal never appears before its tournament closed."""
+    """One player's medals awarded on or before `on`: by NBA id where the medal has one, or, asked by NBA id, where its
+    dated link (`links`, read on `on`) names the registry row with that id (returned with its `link`); else by name
+    (accents and punctuation folded). A medal never appears before its tournament closed, nor a linked one before its
+    link date."""
+    medals = register_medals(root, on)
+    linked = links(root, on, medals)["linked"] if bbr_id else {}
     out = []
-    for m in register_medals(root, on):
-        if bbr_id and m.get("bbr_id"):
-            if m["bbr_id"] == bbr_id:
-                out.append(m)
+    for m in medals:
+        link = linked.get(m["id"])
+        holder = m.get("bbr_id") or (link or {}).get("bbr_id")
+        if bbr_id and holder:
+            if holder == bbr_id:
+                out.append(dict(m, link=link) if link else m)
         elif name and _key(m["player"]) == _key(name):
             out.append(m)
     return out
@@ -390,4 +515,36 @@ def medal_errors(root=ROOT, clock=None):
     for path in sorted((root / WORLD).glob("*/*/medals.json")):
         if path.relative_to(root).as_posix() not in known:
             errors.append(f"{path.relative_to(root)}: medal register for no known edition")
+    return errors + link_errors(root, clock)
+
+
+def link_errors(root=ROOT, clock=None):
+    """A linked medal (`links`, read on the clock) is unique per registry row: held by exactly one row of the registry
+    (two rows sharing its registry id are an error), never by a row that also holds another medal of the same tournament,
+    and dated no earlier than its award and the row's `added_on` and not after the clock. An ambiguous medal is not an
+    error: it stays unlinked and `links` returns it."""
+    root = Path(root)
+    rows = [r for r in registry_rows(root) if clock is None or (r.get("added_on") or "") <= clock]
+    medals = register_medals(root, clock)
+    found = links(root, clock, medals, rows)["linked"]
+    by_medal = {m["id"]: m for m in medals}
+    holders, errors, per_row = {}, [], {}
+    for r in rows:
+        holders.setdefault(_row_id(r), []).append(r)
+    for mid, x in found.items():
+        m, held = by_medal[mid], holders.get(x["registry_id"], [])
+        if len(held) != 1:
+            errors.append(f"{m['edition_id']}: linked medal {mid} is held by {len(held)} league registry rows "
+                          f"with the id {x['registry_id']}, not one")
+        added = max((r.get("added_on") or "" for r in held), default="")
+        if x["linked_on"] < max(m["awarded_on"], added) or (clock and x["linked_on"] > clock):
+            errors.append(f"{m['edition_id']}: linked medal {mid} dated {x['linked_on']}, not the later of its award "
+                          f"{m['awarded_on']} and the row's addition {added or 'original'} on or before {clock}")
+        per_row.setdefault((x["registry_id"], m["edition_id"]), []).append(mid)
+    for (rid, eid), mids in sorted(per_row.items()):
+        bbrs = {r.get("bbr_id") for r in holders.get(rid, []) if r.get("bbr_id")}
+        also = [m["id"] for m in medals if m["edition_id"] == eid and m.get("bbr_id") in bbrs]
+        if len(mids) + len(also) > 1:
+            errors.append(f"{eid}: league registry row {rid} holds {', '.join(sorted(mids + also))}; "
+                          "a linked medal must be the row's only medal of the tournament")
     return errors

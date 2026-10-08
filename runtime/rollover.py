@@ -90,7 +90,16 @@ class Rollover:
             out.append(f"the rollover is dated {self.day}; the clock is {clock}")
         from .seasons import supported
         out += [f"{self.new} data missing: {m}" for m in supported(self.new, self.root)]
-        return out
+        # The new ledger is built from this one, so every extension of the closing league year must be in it first
+        # (`extensions.rollover_blockers`). A missed or unresolved extension never clears by waiting: once nothing else
+        # holds the rollover back it is raised, so the driver and `scripts/rollover.py` stop with it on screen instead of
+        # waiting silently in the summer.
+        from .extensions import ExtensionError, rollover_blockers
+        extensions = rollover_blockers(self.old, clock, self.root)
+        if extensions and not out:
+            raise ExtensionError(f"the {self.old} to {self.new} rollover is due on {self.day} but its extensions are not "
+                                 "settled: " + "; ".join(extensions))
+        return out + extensions
 
     # -- identities ------------------------------------------------------------------------------
     def identities(self):
@@ -160,6 +169,7 @@ class Rollover:
         ids_by_name = {p["name"]: p.get("bbr_id") for p in _read(self.old_team / "Team/Roster/roster.json")["players"]}
         old = {p.get("bbr_id") or ids_by_name.get(p["player"]) or (WADE_ID if p["player"] == "Dwyane Wade" else None): p
                for p in _read(self.old_team / "Finances/contract_schedules.json")["players"]}
+        from .extensions import with_recorded
         from .seasons import dates
         guarantee = dates(self.new, self.root)["guarantee"]
         out = []
@@ -167,7 +177,8 @@ class Rollover:
             name = ident.get("name") or row["player"]
             lg = ledger.get(key) or {}
             if row["route"] in ("existing", "option") and key in old:
-                entry = deepcopy(old[key])
+                # a row an in-season trade copied without its extension record gains it (`extensions.with_recorded`)
+                entry = deepcopy(with_recorded(old[key], self.root, None if key == WADE_ID else key))
                 entry["player"] = name
                 entry["bbr_id"] = None if key == WADE_ID else key
                 if row["route"] == "option":
@@ -175,6 +186,8 @@ class Rollover:
                     entry["status"] = f"{kind}_exercised" if kind in ("team_option", "player_option") else "under_contract"
                 elif entry.get("status") not in ("under_rookie_contract",):
                     entry["status"] = "under_contract"
+                if entry.get("extension") and self.new >= entry["extension"]["first_season"]:
+                    entry["status"] = "under_contract"   # the extension (runtime/extensions.py) is the agreement in force
                 entry.pop("guarantee_date", None) if entry.get("status") == "under_contract" else None
                 if (event or {}).get("kind") == "trade" and event.get("from") != MIAMI:
                     # back on Miami by a summer trade: the same agreement, assigned again (held from the trade date)
@@ -217,15 +230,19 @@ class Rollover:
         """A contract Miami acquired in the summer by trade: an assignment of the existing agreement, never a new signing.
         It keeps its signed schedule and its original signing date (from the summer market record that dated it, else
         unrecorded); Miami holds the player from the trade date."""
+        from .extensions import base_schedule, carry_fields
         from .league_contracts import read as read_ledger
         before = (read_ledger(self.old, self.root) or {}).get(key) or {}
         rookie = before.get("route") == "rookie_scale" or before.get("kind") == "rookie_scale"
+        if (lg.get("extension") or before.get("extension")) and self.new >= (lg.get("extension") or before["extension"])["first_season"]:
+            rookie = False                                # an extended contract is a veteran's from its first new season
         origin = self.original_signing(key)
         entry = {"player": name, "bbr_id": key, "status": "under_rookie_contract" if rookie else "under_contract",
                  "schedule": dict(sched), "amount_kind": {s: "contract_salary" for s in sched},
                  "guaranteed": dict(sched), "route": "existing", "acquired_by": "trade", "acquired_date": event["date"],
                  "previous_club": event.get("from"), "deal": event.get("deal"),
-                 "original_term_seasons": len(before.get("schedule") or sched),
+                 # the term it was signed for: an extension's seasons are their own agreement (runtime/extensions.py)
+                 "original_term_seasons": len(base_schedule(before) or before.get("schedule") or sched),
                  "notes": (f"Acquired by trade from {event.get('from')} on {_long(event['date'])} ({event.get('deal')}): the "
                            f"existing agreement, assigned; schedule from the league contract ledger. "
                            + (f"Signed {_long(origin['date'])} ({origin['kind'].replace('_', ' ')}, {origin.get('club')})."
@@ -236,6 +253,7 @@ class Rollover:
         option = lg.get("team_option") or before.get("team_option")
         if option:
             entry["team_option_season"] = option
+        carry_fields(entry, lg if lg.get("extension") else before)   # the trade assigns the extended agreement whole
         return entry
 
     def control_text(self, entry):

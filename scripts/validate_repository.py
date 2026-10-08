@@ -659,6 +659,8 @@ def validate():
     errors.extend(season_close_errors(ROOT))
     from runtime.consultations import consultation_errors
     errors.extend(consultation_errors(ROOT))
+    from runtime.extensions import extension_errors                    # contract extensions decided on their own dates
+    errors.extend(extension_errors(ROOT))
 
     from runtime.contracts import contract_errors
     errors.extend(contract_errors(ROOT))

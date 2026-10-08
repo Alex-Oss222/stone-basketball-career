@@ -11,6 +11,9 @@ offseason). A new contract's later years rise from its first-year salary by the 
 agreement: 12.5% of the first year for a club re-signing its own free agent with Bird rights, 10% otherwise; a minimum
 contract stays at the minimum scale). A first-round pick's scale contract runs three seasons at the scale's amounts
 (120% of scale, era practice) with a fourth-year team option. Option years stay options: decided on their dates.
+A contract extension (`runtime/extensions.py`, from October 31, 2005) adds its seasons to the contract it extends and
+travels with it: `extension` names it, the rollover carries it, a rebuild re-applies it; a contract without one reads as
+before.
 """
 from __future__ import annotations
 
@@ -122,10 +125,23 @@ def build(season, root=ROOT, market=None):
                 out[b]["options"] = dict(carried_options)
             if (terms.get(b) or {}).get("rookie_scale"):
                 out[b]["rookie_scale"] = True
+            if kind == "existing" and (terms.get(b) or {}).get("extension"):
+                _carry_extension(out[b], terms[b])
     from .options import annotate_ledger, reapply
     annotate_ledger(out, season, root)              # option seasons and the 2003 first-round picks' scale years
     reapply(out, season, root)                      # option decisions already recorded for the season
+    from .extensions import reapply as reapply_extensions
+    reapply_extensions(out, season, root)           # extensions already signed in the season
     return out
+
+
+def _carry_extension(entry, carried_terms):
+    """An extended contract carried into a new season keeps its extension record (`runtime/extensions.py`)."""
+    from copy import deepcopy
+    for field in ("extension", "earlier_extensions", "extended_on", "extension_history"):
+        if carried_terms.get(field) is not None:
+            entry[field] = deepcopy(carried_terms[field])
+    entry["source"] = f"{entry.get('source') or ''}; extended {carried_terms.get('extended_on')}".lstrip("; ")
 
 
 def write(season, root=ROOT, market=None):
@@ -157,12 +173,18 @@ def carried(season, root=ROOT):
     for b, c in ledger.items():
         if c["schedule"].get(season):
             option = c.get("team_option") == season
+            extension = c.get("extension")
             out[b] = {"club": c["club"], "salary": c["schedule"][season], "kind": "option" if option else "contract",
                       "option_kind": "team_option" if option else None,
                       "schedule": {s: v for s, v in c["schedule"].items() if s >= season},
                       "options": {s: k for s, k in (c.get("options") or {}).items() if s >= season},
-                      "rookie_scale": bool(c.get("rookie_scale")),
+                      # an extended rookie-scale contract is a veteran contract from its first extension season
+                      "rookie_scale": bool(c.get("rookie_scale")) and not (extension and season >= extension["first_season"]),
                       "source": f"{ledger_path(prev).as_posix()} ({c['kind']})"}
+            if extension:
+                for field in ("extension", "earlier_extensions", "extended_on", "extension_history"):
+                    if c.get(field) is not None:
+                        out[b][field] = c[field]
     return out
 
 
