@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-09-23-antonio-davis",
+ "date": "2005-09-23",
+ "question": "2005 free agency, 2005-09-23: which offer does Antonio Davis accept (Chicago Bulls $3,562,239 x 1), or does he wait?",
+ "decider": "Antonio Davis (simulated player, engine draw)",
+ "options": {
+  "Chicago Bulls": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $3,562,239; best offer 1.00 of the ask in total; accept chance 0.950; priority winning; utility Chicago Bulls 72.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

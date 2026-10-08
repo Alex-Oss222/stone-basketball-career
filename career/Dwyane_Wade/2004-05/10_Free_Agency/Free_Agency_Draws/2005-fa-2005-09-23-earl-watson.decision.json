@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-09-23-earl-watson",
+ "date": "2005-09-23",
+ "question": "2005 free agency, 2005-09-23: which offer does Earl Watson accept (New Jersey Nets $3,728,347 x 5), or does he wait?",
+ "decider": "Earl Watson (simulated player, engine draw)",
+ "options": {
+  "New Jersey Nets": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $3,728,347; best offer 1.00 of the ask in total; accept chance 0.950; priority loyalty; utility New Jersey Nets 60.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

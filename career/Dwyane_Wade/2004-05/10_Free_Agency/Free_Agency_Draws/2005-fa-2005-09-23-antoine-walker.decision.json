@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-fa-2005-09-23-antoine-walker",
+ "date": "2005-09-23",
+ "question": "2005 free agency, 2005-09-23: which offer does Antoine Walker accept (Charlotte Bobcats $9,017,600 x 4, Dallas Mavericks $9,017,600 x 4), or does he wait?",
+ "decider": "Antoine Walker (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.000367,
+  "Dallas Mavericks": 0.949633,
+  "wait": 0.05
+ },
+ "basis": "Ask $9,017,600; best offer 1.00 of the ask in total; accept chance 0.950; priority winning; utility Charlotte Bobcats 47.0, Dallas Mavericks 78.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

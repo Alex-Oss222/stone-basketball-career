@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-23",
+ "decider": "Darrick Martin (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-23-darrick-martin",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "New Jersey Nets",
+ "question": "2005 free agency, 2005-09-23: which offer does Darrick Martin accept (New Jersey Nets $1,138,500 x 1), or does he wait?"
+}

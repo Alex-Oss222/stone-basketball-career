@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-23",
+ "decider": "Keyon Dooling (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-23-keyon-dooling",
+ "kind": "decision",
+ "options": {
+  "Utah Jazz": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "Utah Jazz",
+ "question": "2005 free agency, 2005-09-23: which offer does Keyon Dooling accept (Utah Jazz $2,763,371 x 5), or does he wait?"
+}

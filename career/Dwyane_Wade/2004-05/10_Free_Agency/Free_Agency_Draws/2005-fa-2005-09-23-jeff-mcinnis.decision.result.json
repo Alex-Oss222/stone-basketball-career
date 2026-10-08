@@ -1,0 +1,15 @@
+{
+ "date": "2005-09-23",
+ "decider": "Jeff McInnis (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-23-jeff-mcinnis",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.466134,
+  "New Orleans Hornets": 0.017984,
+  "Orlando Magic": 0.303983,
+  "Seattle SuperSonics": 0.161899,
+  "wait": 0.05
+ },
+ "outcome": "Orlando Magic",
+ "question": "2005 free agency, 2005-09-23: which offer does Jeff McInnis accept (Golden State Warriors $3,904,376 x 3, New Orleans Hornets $3,904,376 x 3, Orlando Magic $3,904,376 x 3, Seattle SuperSonics $3,904,376 x 3), or does he wait?"
+}

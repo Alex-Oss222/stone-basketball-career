@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-23",
+ "decider": "Antonio Davis (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-23-antonio-davis",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "Chicago Bulls",
+ "question": "2005 free agency, 2005-09-23: which offer does Antonio Davis accept (Chicago Bulls $3,562,239 x 1), or does he wait?"
+}

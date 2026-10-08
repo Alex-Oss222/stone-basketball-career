@@ -1,0 +1,16 @@
+{
+ "date": "2005-09-23",
+ "decider": "Reggie Evans (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-23-reggie-evans",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.183966,
+  "Boston Celtics": 0.505096,
+  "Denver Nuggets": 0.021216,
+  "Detroit Pistons": 0.137999,
+  "Houston Rockets": 0.101723,
+  "wait": 0.05
+ },
+ "outcome": "Atlanta Hawks",
+ "question": "2005 free agency, 2005-09-23: which offer does Reggie Evans accept (Atlanta Hawks $3,900,000 x 5, Boston Celtics $3,900,000 x 5, Denver Nuggets $3,900,000 x 5, Detroit Pistons $3,900,000 x 5, Houston Rockets $3,900,000 x 5), or does he wait?"
+}

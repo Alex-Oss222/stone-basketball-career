@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-09-23-keyon-dooling",
+ "date": "2005-09-23",
+ "question": "2005 free agency, 2005-09-23: which offer does Keyon Dooling accept (Utah Jazz $2,763,371 x 5), or does he wait?",
+ "decider": "Keyon Dooling (simulated player, engine draw)",
+ "options": {
+  "Utah Jazz": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $2,763,371; best offer 1.00 of the ask in total; accept chance 0.950; priority winning; utility Utah Jazz 55.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

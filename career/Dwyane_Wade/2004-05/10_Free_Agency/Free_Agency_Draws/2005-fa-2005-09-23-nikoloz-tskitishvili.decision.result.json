@@ -1,0 +1,16 @@
+{
+ "date": "2005-09-23",
+ "decider": "Nikoloz Tskitishvili (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-23-nikoloz-tskitishvili",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.280977,
+  "Charlotte Bobcats": 0.040479,
+  "Denver Nuggets": 0.083787,
+  "Houston Rockets": 0.329728,
+  "Los Angeles Lakers": 0.215029,
+  "wait": 0.05
+ },
+ "outcome": "Houston Rockets",
+ "question": "2005 free agency, 2005-09-23: which offer does Nikoloz Tskitishvili accept (Atlanta Hawks $745,248 x 1, Charlotte Bobcats $745,248 x 1, Denver Nuggets $745,248 x 1, Houston Rockets $745,248 x 1, Los Angeles Lakers $745,248 x 1), or does he wait?"
+}

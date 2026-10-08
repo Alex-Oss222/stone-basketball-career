@@ -1,0 +1,15 @@
+{
+ "event_id": "2005-fa-2005-09-23-voshon-lenard",
+ "date": "2005-09-23",
+ "question": "2005 free agency, 2005-09-23: which offer does Voshon Lenard accept (Golden State Warriors $1,138,500 x 1, Milwaukee Bucks $1,138,500 x 1, Minnesota Timberwolves $1,138,500 x 1, New Jersey Nets $1,138,500 x 1, Sacramento Kings $1,138,500 x 1), or does he wait?",
+ "decider": "Voshon Lenard (simulated player, engine draw)",
+ "options": {
+  "Golden State Warriors": 0.152096,
+  "Milwaukee Bucks": 0.054708,
+  "Minnesota Timberwolves": 0.266937,
+  "New Jersey Nets": 0.011269,
+  "Sacramento Kings": 0.46499,
+  "wait": 0.05
+ },
+ "basis": "Ask $1,138,500; best offer 1.00 of the ask in total; accept chance 0.950; priority loyalty; utility Golden State Warriors 48.9, Milwaukee Bucks 44.8, Minnesota Timberwolves 51.1, New Jersey Nets 38.5, Sacramento Kings 53.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
