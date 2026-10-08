@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-08-30 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-08-31 
 
 **Contract/control:** Signed July 1, 2004 (rookie_scale): 3 season(s) from 2004-05, $3,156,240 scheduled ($978,720 in 2004-05). (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
 

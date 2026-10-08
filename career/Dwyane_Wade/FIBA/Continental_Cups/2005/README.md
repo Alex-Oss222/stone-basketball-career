@@ -4,7 +4,7 @@
 
 2005-08-24 to 2005-09-04, hosted by Dominican Republic. FIBA rules (four 10-minute quarters, five fouls). Every game is played by the engine; real results of this event are never used. Rules and sources: `runtime/national.py`, `library/2005/fiba/fiba_2005_americas_championship.json`.
 
-Status: **24 of 40 games played**.
+Status: **28 of 40 games played**.
 
 ## Rosters
 
@@ -45,14 +45,14 @@ Status: **24 of 40 games played**.
 
 | Pos | Team | W | L | PF | PA | Pts |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Dominican Republic | 4 | 0 | 312 | 284 | 8 |
-| 2 | Brazil | 3 | 1 | 324 | 302 | 7 |
-| 3 | **United States** | 3 | 1 | 339 | 337 | 7 |
-| 4 | Argentina | 2 | 2 | 335 | 337 | 6 |
-| 5 | Mexico | 1 | 3 | 301 | 308 | 5 |
-| 6 | Canada | 1 | 3 | 339 | 349 | 5 |
-| 7 | Puerto Rico | 1 | 3 | 296 | 313 | 5 |
-| 8 | Panama | 1 | 3 | 277 | 293 | 5 |
+| 1 | Brazil | 4 | 1 | 427 | 389 | 9 |
+| 2 | Dominican Republic | 4 | 1 | 399 | 387 | 9 |
+| 3 | **United States** | 4 | 1 | 432 | 423 | 9 |
+| 4 | Puerto Rico | 2 | 3 | 387 | 395 | 7 |
+| 5 | Argentina | 2 | 3 | 421 | 430 | 7 |
+| 6 | Panama | 2 | 3 | 365 | 379 | 7 |
+| 7 | Mexico | 1 | 4 | 387 | 396 | 6 |
+| 8 | Canada | 1 | 4 | 421 | 440 | 6 |
 
 ## Games
 
@@ -94,10 +94,10 @@ Status: **24 of 40 games played**.
 | 22 | 2005-08-30 | United States | Puerto Rico | 80-75 | [box](Games/fiba-amc05-g22.result.json) |
 | 23 | 2005-08-30 | Canada | Argentina | 88-96 | [box](Games/fiba-amc05-g23.result.json) |
 | 24 | 2005-08-30 | Mexico | Brazil | 63-68 | [box](Games/fiba-amc05-g24.result.json) |
-| 25 | 2005-08-31 | Puerto Rico | Canada |  |  |
-| 26 | 2005-08-31 | Argentina | United States |  |  |
-| 27 | 2005-08-31 | Brazil | Dominican Republic |  |  |
-| 28 | 2005-08-31 | Panama | Mexico |  |  |
+| 25 | 2005-08-31 | Puerto Rico | Canada | 91-82 | [box](Games/fiba-amc05-g25.result.json) |
+| 26 | 2005-08-31 | Argentina | United States | 86-93 | [box](Games/fiba-amc05-g26.result.json) |
+| 27 | 2005-08-31 | Brazil | Dominican Republic | 87-103 | [box](Games/fiba-amc05-g27.result.json) |
+| 28 | 2005-08-31 | Panama | Mexico | 88-86 | [box](Games/fiba-amc05-g28.result.json) |
 | 29 | 2005-09-01 | Dominican Republic | Canada |  |  |
 | 30 | 2005-09-01 | Puerto Rico | Brazil |  |  |
 | 31 | 2005-09-01 | Argentina | Panama |  |  |
@@ -128,12 +128,12 @@ Status: **24 of 40 games played**.
 
 ## Leaders (per game)
 
-**Points**: Víctor Díaz (Venezuela) 15.0; Federico Kammerichs (Argentina) 14.2; Denham Brown (Canada) 13.8; Leonardo Gutiérrez (Argentina) 13.8; Óscar Torres (Venezuela) 13.8
+**Points**: Víctor Díaz (Venezuela) 15.0; Alex Scales (United States) 14.5; Guilherme Giovannoni (Brazil) 14.0; Óscar Torres (Venezuela) 13.8; Kevin Jobity (Canada) 13.7
 
-**Rebounds**: Denham Brown (Canada) 8.4; Ramsés Benítez (Mexico) 8.2; José Vargas (Dominican Republic) 7.2; Anderson Varejão (Brazil) 7.0; Federico Kammerichs (Argentina) 6.6
+**Rebounds**: Denham Brown (Canada) 8.7; Anderson Varejão (Brazil) 8.2; Ramsés Benítez (Mexico) 7.8; José Vargas (Dominican Republic) 6.3; Mauricio Aguiar (Uruguay) 6.2
 
-**Assists**: Amaury Filion (Dominican Republic) 3.4; Jaime Peterson (Dominican Republic) 2.8; Alex Scales (United States) 2.6; Adam Chubb (United States) 2.4; Denham Brown (Canada) 2.4
+**Assists**: Amaury Filion (Dominican Republic) 3.2; Otto Ramírez (Dominican Republic) 2.7; Jaime Peterson (Dominican Republic) 2.5; Guilherme Giovannoni (Brazil) 2.3; Luis Silveira (Uruguay) 2.2
 
-**Steals**: Anderson Varejão (Brazil) 1.8; Horacio Llamas (Mexico) 1.8; Peter John Ramos (Puerto Rico) 1.8; Héctor Romero (Venezuela) 1.8; Tiago Splitter (Brazil) 1.6
+**Steals**: Anderson Varejão (Brazil) 2.2; Marcelinho Machado (Brazil) 2.2; Danilo Pinnock (Panama) 1.8; Héctor Romero (Venezuela) 1.8; Horacio Llamas (Mexico) 1.7
 
-**Blocks**: Tiago Splitter (Brazil) 1.2; Héctor Romero (Venezuela) 1.0; Jaime Peterson (Dominican Republic) 1.0; Peter John Ramos (Puerto Rico) 1.0; Ramsés Benítez (Mexico) 1.0
+**Blocks**: Héctor Romero (Venezuela) 1.0; Peter John Ramos (Puerto Rico) 1.0; Tiago Splitter (Brazil) 1.0; Aaron McGhee (United States) 0.8; Jaime Peterson (Dominican Republic) 0.8
