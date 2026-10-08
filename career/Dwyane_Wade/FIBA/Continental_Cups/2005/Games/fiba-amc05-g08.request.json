@@ -1,0 +1,776 @@
+{
+ "event_id": "fiba-amc05-g08",
+ "game_date": "2005-08-27",
+ "game_type": "continental_qualifier",
+ "venue": "neutral",
+ "home": {
+  "team": "Panama",
+  "national": "continental_qualifier_2005"
+ },
+ "away": {
+  "team": "Canada",
+  "national": "continental_qualifier_2005"
+ },
+ "frozen": {
+  "home": {
+   "team_id": "Panama",
+   "players": [
+    {
+     "player_id": "Antonio García",
+     "position": "SF",
+     "minutes": 32.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:antonio-garcia:1976-05-11",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Chris Warren",
+     "position": "SF",
+     "minutes": 30.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:chris-warren:1981-01-19",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Danilo Pinnock",
+     "position": "SF",
+     "minutes": 28.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:danilo-pinnock:1983-12-11",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Dionisio Gómez",
+     "position": "SF",
+     "minutes": 26.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:dionisio-gomez:1980-04-07",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Eduardo Isaac",
+     "position": "SG",
+     "minutes": 24.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:eduardo-isaac:1980-02-11",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Eric Cardenas",
+     "position": "SF",
+     "minutes": 20.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:eric-cardenas:1973-11-29",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Jaime Lloreda",
+     "position": "PF",
+     "minutes": 16.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:jaime-lloreda:1980-10-11",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Jair Peralta",
+     "position": "SG",
+     "minutes": 10.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:jair-peralta:1976-01-05",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Joel Muñoz",
+     "position": "SG",
+     "minutes": 6.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:joel-munoz:1980-06-24",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Maximiliano Gómez",
+     "position": "SG",
+     "minutes": 4.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:maximiliano-gomez:1975-12-18",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Michael Hicks",
+     "position": "SF",
+     "minutes": 2.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:michael-hicks:1989-06-30",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Reyjavick De Gracia",
+     "position": "SF",
+     "minutes": 2.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:pan:reyjavick-de-gracia:1981-11-05",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    }
+   ],
+   "pace": 1.0,
+   "rest_days": 0,
+   "injuries": false
+  },
+  "away": {
+   "team_id": "Canada",
+   "players": [
+    {
+     "player_id": "Denham Brown",
+     "position": "SG",
+     "minutes": 32.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": -0.1794,
+      "fiba_key": "fiba:can:denham-brown:1983-01-06",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.100655,
+       "block_pct": 0.006312,
+       "defensive_rebound_pct": 0.131514,
+       "fouls_per_minute": 0.094182,
+       "free_throw_attempt_rate": 0.212068,
+       "free_throw_pct": 0.666176,
+       "offensive_rebound_pct": 0.086171,
+       "steal_pct": 0.016272,
+       "three_point_attempt_rate": 0.29877,
+       "three_point_pct": 0.381304,
+       "turnovers_per_fga": 0.166687,
+       "two_point_pct": 0.446232,
+       "usage_pct": 0.249076
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Kevin Jobity",
+     "position": "C",
+     "minutes": 30.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.1583,
+      "fiba_key": "fiba:can:kevin-jobity:1974-11-21",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.07259,
+       "block_pct": 0.016356,
+       "defensive_rebound_pct": 0.14943,
+       "fouls_per_minute": 0.129289,
+       "free_throw_attempt_rate": 0.475467,
+       "free_throw_pct": 0.678046,
+       "offensive_rebound_pct": 0.068868,
+       "steal_pct": 0.01196,
+       "three_point_attempt_rate": 0.127366,
+       "three_point_pct": 0.347932,
+       "turnovers_per_fga": 0.314372,
+       "two_point_pct": 0.508834,
+       "usage_pct": 0.193964
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Richard Anderson",
+     "position": "SG",
+     "minutes": 28.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.1583,
+      "fiba_key": "fiba:can:richard-anderson:1977-11-30",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.097897,
+       "block_pct": 0.023015,
+       "defensive_rebound_pct": 0.150333,
+       "fouls_per_minute": 0.136031,
+       "free_throw_attempt_rate": 0.529419,
+       "free_throw_pct": 0.666121,
+       "offensive_rebound_pct": 0.065499,
+       "steal_pct": 0.020331,
+       "three_point_attempt_rate": 0.117302,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.311101,
+       "two_point_pct": 0.477579,
+       "usage_pct": 0.188492
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Carl English",
+     "position": "SG",
+     "minutes": 26.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:can:carl-english:1981-02-02",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "James Gillingham",
+     "position": "SG",
+     "minutes": 24.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:can:james-gillingham:1981-08-20",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Jermaine Anderson",
+     "position": "SG",
+     "minutes": 20.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:can:jermaine-anderson:1983-02-08",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Jermaine Bucknor",
+     "position": "SF",
+     "minutes": 16.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:can:jermaine-bucknor:1983-11-01",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Juan Mendez",
+     "position": "SF",
+     "minutes": 10.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:can:juan-mendez:1981-09-23",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Levon Kendall",
+     "position": "SF",
+     "minutes": 6.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:can:levon-kendall:1984-07-04",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Nathan Doornekamp",
+     "position": "C",
+     "minutes": 4.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:can:nathan-doornekamp:1982-10-09",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Randall Nohr",
+     "position": "SG",
+     "minutes": 2.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:can:randall-nohr:1977-06-26",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    },
+    {
+     "player_id": "Vidal Massiah",
+     "position": "SF",
+     "minutes": 2.0,
+     "ratings": {},
+     "stat_profile": {
+      "as_of": "2005-08-24",
+      "defense": 0.0,
+      "fiba_key": "fiba:can:vidal-massiah:1979-02-01",
+      "model_version": "fiba-2006.1",
+      "rates": {
+       "assist_pct": 0.095234,
+       "block_pct": 0.011545,
+       "defensive_rebound_pct": 0.134016,
+       "fouls_per_minute": 0.113942,
+       "free_throw_attempt_rate": 0.376131,
+       "free_throw_pct": 0.674264,
+       "offensive_rebound_pct": 0.055877,
+       "steal_pct": 0.017092,
+       "three_point_attempt_rate": 0.3695,
+       "three_point_pct": 0.353731,
+       "turnovers_per_fga": 0.240875,
+       "two_point_pct": 0.498469,
+       "usage_pct": 0.18981
+      },
+      "season_end_year": 2005,
+      "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+     },
+     "availability": 1.0,
+     "age": null
+    }
+   ],
+   "pace": 1.0,
+   "rest_days": 0,
+   "injuries": false
+  }
+ }
+}
