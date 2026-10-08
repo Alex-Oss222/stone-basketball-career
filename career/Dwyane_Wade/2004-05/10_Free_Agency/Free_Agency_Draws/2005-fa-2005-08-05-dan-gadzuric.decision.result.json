@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-05",
+ "decider": "Dan Gadzuric (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-05-dan-gadzuric",
+ "kind": "decision",
+ "options": {
+  "Milwaukee Bucks": 0.65,
+  "wait": 0.35
+ },
+ "outcome": "Milwaukee Bucks",
+ "question": "2005 free agency, 2005-08-05: which offer does Dan Gadzuric accept (Milwaukee Bucks $8,677,591 x 4), or does he wait?"
+}

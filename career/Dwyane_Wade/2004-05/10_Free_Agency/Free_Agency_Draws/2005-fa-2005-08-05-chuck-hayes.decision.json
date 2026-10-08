@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-fa-2005-08-05-chuck-hayes",
+ "date": "2005-08-05",
+ "question": "2005 free agency, 2005-08-05: which offer does Chuck Hayes accept (Atlanta Hawks $398,762 x 1, Houston Rockets $398,762 x 1), or does he wait?",
+ "decider": "Chuck Hayes (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.343667,
+  "Houston Rockets": 0.306333,
+  "wait": 0.35
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.650; priority loyalty; utility Atlanta Hawks 52.5, Houston Rockets 52.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

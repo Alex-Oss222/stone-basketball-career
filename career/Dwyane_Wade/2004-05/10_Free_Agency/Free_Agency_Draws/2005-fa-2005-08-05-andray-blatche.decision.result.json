@@ -1,0 +1,23 @@
+{
+ "date": "2005-08-05",
+ "decider": "Andray Blatche (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-05-andray-blatche",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.040166,
+  "Charlotte Bobcats": 0.000477,
+  "Chicago Bulls": 0.003144,
+  "Denver Nuggets": 0.001327,
+  "Detroit Pistons": 0.040773,
+  "Houston Rockets": 0.019748,
+  "Los Angeles Clippers": 0.013008,
+  "Los Angeles Lakers": 0.000933,
+  "Milwaukee Bucks": 0.002939,
+  "New Orleans Hornets": 0.000945,
+  "Philadelphia 76ers": 0.003044,
+  "San Antonio Spurs": 0.523496,
+  "wait": 0.35
+ },
+ "outcome": "Milwaukee Bucks",
+ "question": "2005 free agency, 2005-08-05: which offer does Andray Blatche accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Denver Nuggets $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Orleans Hornets $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1), or does he wait?"
+}

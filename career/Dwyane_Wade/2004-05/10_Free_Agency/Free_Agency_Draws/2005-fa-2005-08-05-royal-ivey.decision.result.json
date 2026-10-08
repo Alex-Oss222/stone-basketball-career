@@ -1,0 +1,26 @@
+{
+ "date": "2005-08-05",
+ "decider": "Royal Ivey (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-05-royal-ivey",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.019438,
+  "Dallas Mavericks": 0.1835,
+  "Golden State Warriors": 0.001711,
+  "Indiana Pacers": 0.006248,
+  "Memphis Grizzlies": 0.010721,
+  "Miami Heat": 0.012932,
+  "Minnesota Timberwolves": 0.003659,
+  "New Jersey Nets": 0.000823,
+  "New York Knicks": 0.001644,
+  "Orlando Magic": 0.011998,
+  "Sacramento Kings": 0.044577,
+  "Seattle SuperSonics": 0.007499,
+  "Toronto Raptors": 0.344542,
+  "Utah Jazz": 0.000236,
+  "Washington Wizards": 0.000473,
+  "wait": 0.349999
+ },
+ "outcome": "Sacramento Kings",
+ "question": "2005 free agency, 2005-08-05: which offer does Royal Ivey accept (Cleveland Cavaliers $641,748 x 1, Dallas Mavericks $641,748 x 1, Golden State Warriors $641,748 x 1, Indiana Pacers $641,748 x 1, Memphis Grizzlies $641,748 x 1, Miami Heat $641,748 x 1, Minnesota Timberwolves $641,748 x 1, New Jersey Nets $641,748 x 1, New York Knicks $641,748 x 1, Orlando Magic $641,748 x 1, Sacramento Kings $641,748 x 1, Seattle SuperSonics $641,748 x 1, Toronto Raptors $641,748 x 1, Utah Jazz $641,748 x 1, Washington Wizards $641,748 x 1), or does he wait?"
+}

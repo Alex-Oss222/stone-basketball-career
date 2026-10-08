@@ -1,0 +1,20 @@
+{
+ "date": "2005-08-05",
+ "decider": "Lonny Baxter (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-05-lonny-baxter",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.000234,
+  "Golden State Warriors": 0.005441,
+  "Milwaukee Bucks": 0.001248,
+  "New Jersey Nets": 0.000858,
+  "New Orleans Hornets": 0.000607,
+  "New York Knicks": 0.001457,
+  "Portland Trail Blazers": 0.004175,
+  "Seattle SuperSonics": 0.005482,
+  "Toronto Raptors": 0.630498,
+  "wait": 0.35
+ },
+ "outcome": "Toronto Raptors",
+ "question": "2005 free agency, 2005-08-05: which offer does Lonny Baxter accept (Charlotte Bobcats $745,248 x 1, Golden State Warriors $745,248 x 1, Milwaukee Bucks $745,248 x 1, New Jersey Nets $745,248 x 1, New Orleans Hornets $745,248 x 1, New York Knicks $745,248 x 1, Portland Trail Blazers $745,248 x 1, Seattle SuperSonics $745,248 x 1, Toronto Raptors $745,248 x 1), or does he wait?"
+}

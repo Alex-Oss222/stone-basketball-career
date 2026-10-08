@@ -1,0 +1,85 @@
+{
+ "schema_version": 1,
+ "date": "2005-08-05",
+ "rule": "runtime/free_agency_2004.py Market.trade_proposals",
+ "deals": [
+  {
+   "date": "2005-08-05",
+   "clubs": [
+    "Miami Heat",
+    "Utah Jazz"
+   ],
+   "a": {
+    "club": "Miami Heat",
+    "sends": [
+     "Dorell Wright"
+    ],
+    "bbr_ids": [
+     "wrighdo01"
+    ],
+    "salary": 1052040
+   },
+   "b": {
+    "club": "Utah Jazz",
+    "sends": [
+     "Sebastian Telfair",
+     "Eddie Jones"
+    ],
+    "bbr_ids": [
+     "telfase01",
+     "jonesed02"
+    ],
+    "salary": 15586290
+   },
+   "gain": {
+    "Miami Heat": 1.079,
+    "Utah Jazz": 0.896
+   },
+   "accept": {
+    "Miami Heat": 0.95,
+    "Utah Jazz": 0.95
+   },
+   "both": 0.9025,
+   "id": "2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01"
+  },
+  {
+   "date": "2005-08-05",
+   "clubs": [
+    "Boston Celtics",
+    "Golden State Warriors"
+   ],
+   "a": {
+    "club": "Boston Celtics",
+    "sends": [
+     "Marcus Banks"
+    ],
+    "bbr_ids": [
+     "banksma01"
+    ],
+    "salary": 1724280
+   },
+   "b": {
+    "club": "Golden State Warriors",
+    "sends": [
+     "Brent Barry",
+     "Eric Snow"
+    ],
+    "bbr_ids": [
+     "barrybr01",
+     "snower01"
+    ],
+    "salary": 9469357
+   },
+   "gain": {
+    "Boston Celtics": 0.894,
+    "Golden State Warriors": 0.741
+   },
+   "accept": {
+    "Boston Celtics": 0.95,
+    "Golden State Warriors": 0.95
+   },
+   "both": 0.9025,
+   "id": "2005-summer-trade-2005-08-05-banksma01-barrybr01-snower01"
+  }
+ ]
+}

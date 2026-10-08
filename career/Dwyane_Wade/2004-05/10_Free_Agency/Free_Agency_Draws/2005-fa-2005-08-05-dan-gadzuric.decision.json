@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-05-dan-gadzuric",
+ "date": "2005-08-05",
+ "question": "2005 free agency, 2005-08-05: which offer does Dan Gadzuric accept (Milwaukee Bucks $8,677,591 x 4), or does he wait?",
+ "decider": "Dan Gadzuric (simulated player, engine draw)",
+ "options": {
+  "Milwaukee Bucks": 0.65,
+  "wait": 0.35
+ },
+ "basis": "Ask $8,677,591; best offer 1.00 of the ask in total; accept chance 0.650; priority money; utility Milwaukee Bucks 68.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

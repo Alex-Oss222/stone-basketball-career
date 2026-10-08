@@ -1,0 +1,20 @@
+{
+ "date": "2005-08-05",
+ "decider": "Arvydas Macijauskas (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-05-arvydas-macijauskas",
+ "kind": "decision",
+ "options": {
+  "Dallas Mavericks": 0.428805,
+  "Indiana Pacers": 0.031375,
+  "Memphis Grizzlies": 0.067256,
+  "Minnesota Timberwolves": 0.011342,
+  "New Jersey Nets": 0.010843,
+  "New York Knicks": 0.015082,
+  "Sacramento Kings": 0.077556,
+  "Utah Jazz": 0.004475,
+  "Washington Wizards": 0.003266,
+  "wait": 0.35
+ },
+ "outcome": "Dallas Mavericks",
+ "question": "2005 free agency, 2005-08-05: which offer does Arvydas Macijauskas accept (Dallas Mavericks $398,762 x 1, Indiana Pacers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New York Knicks $398,762 x 1, Sacramento Kings $398,762 x 1, Utah Jazz $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?"
+}

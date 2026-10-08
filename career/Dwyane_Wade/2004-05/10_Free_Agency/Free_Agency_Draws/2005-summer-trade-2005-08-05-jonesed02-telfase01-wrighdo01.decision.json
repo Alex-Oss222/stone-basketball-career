@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01",
+ "date": "2005-08-05",
+ "question": "Do Miami Heat and Utah Jazz trade Dorell Wright for Sebastian Telfair and Eddie Jones on 2005-08-05?",
+ "decider": "Miami Heat and Utah Jazz front offices (engine draw)",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "basis": "Gains on own objectives {'Miami Heat': 1.079, 'Utah Jazz': 0.896}; acceptance {'Miami Heat': 0.95, 'Utah Jazz': 0.95}; 1999 salary rule met (runtime/free_agency_2004.py summer trades)."
+}

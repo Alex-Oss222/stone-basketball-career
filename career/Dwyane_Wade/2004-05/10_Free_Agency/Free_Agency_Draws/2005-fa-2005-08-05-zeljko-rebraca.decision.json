@@ -1,0 +1,15 @@
+{
+ "event_id": "2005-fa-2005-08-05-zeljko-rebraca",
+ "date": "2005-08-05",
+ "question": "2005 free agency, 2005-08-05: which offer does Zeljko Rebraca accept (Charlotte Bobcats $771,123 x 1, Golden State Warriors $771,123 x 1, Milwaukee Bucks $771,123 x 1, New Orleans Hornets $771,123 x 1, New York Knicks $771,123 x 1), or does he wait?",
+ "decider": "Zeljko Rebraca (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.00532,
+  "Golden State Warriors": 0.513633,
+  "Milwaukee Bucks": 0.028905,
+  "New Orleans Hornets": 0.010397,
+  "New York Knicks": 0.091745,
+  "wait": 0.35
+ },
+ "basis": "Ask $771,123; best offer 1.00 of the ask in total; accept chance 0.650; priority money; utility Charlotte Bobcats 32.3, Golden State Warriors 50.6, Milwaukee Bucks 39.1, New Orleans Hornets 35.0, New York Knicks 43.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

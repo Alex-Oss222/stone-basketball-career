@@ -1,0 +1,25 @@
+{
+ "date": "2005-08-05",
+ "decider": "\u0160ar\u016bnas Jasikevi\u010dius (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-05-ar-nas-jasikevi-ius",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.019489,
+  "Dallas Mavericks": 0.183985,
+  "Indiana Pacers": 0.006264,
+  "Memphis Grizzlies": 0.010749,
+  "Miami Heat": 0.012966,
+  "Minnesota Timberwolves": 0.003669,
+  "New Jersey Nets": 0.000825,
+  "New York Knicks": 0.001648,
+  "Orlando Magic": 0.012029,
+  "Sacramento Kings": 0.044695,
+  "Seattle SuperSonics": 0.007518,
+  "Toronto Raptors": 0.345451,
+  "Utah Jazz": 0.000236,
+  "Washington Wizards": 0.000475,
+  "wait": 0.350001
+ },
+ "outcome": "Cleveland Cavaliers",
+ "question": "2005 free agency, 2005-08-05: which offer does \u0160ar\u016bnas Jasikevi\u010dius accept (Cleveland Cavaliers $398,762 x 1, Dallas Mavericks $398,762 x 1, Indiana Pacers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Miami Heat $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New York Knicks $398,762 x 1, Orlando Magic $398,762 x 1, Sacramento Kings $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Utah Jazz $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?"
+}

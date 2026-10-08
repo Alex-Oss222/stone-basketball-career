@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-05",
+ "decider": "Brevin Knight (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-05-brevin-knight",
+ "kind": "decision",
+ "options": {
+  "Washington Wizards": 0.493693,
+  "wait": 0.506307
+ },
+ "outcome": "Washington Wizards",
+ "question": "2005 free agency, 2005-08-05: which offer does Brevin Knight accept (Washington Wizards $7,776,264 x 4), or does he wait?"
+}

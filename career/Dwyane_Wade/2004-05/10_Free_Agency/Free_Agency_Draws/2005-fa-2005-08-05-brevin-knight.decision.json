@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-05-brevin-knight",
+ "date": "2005-08-05",
+ "question": "2005 free agency, 2005-08-05: which offer does Brevin Knight accept (Washington Wizards $7,776,264 x 4), or does he wait?",
+ "decider": "Brevin Knight (simulated player, engine draw)",
+ "options": {
+  "Washington Wizards": 0.493693,
+  "wait": 0.506307
+ },
+ "basis": "Ask $8,457,365; best offer 0.92 of the ask in total; accept chance 0.494; priority fame; utility Washington Wizards 64.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

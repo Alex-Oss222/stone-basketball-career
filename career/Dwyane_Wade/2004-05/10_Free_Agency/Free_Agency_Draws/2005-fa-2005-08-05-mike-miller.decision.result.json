@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-05",
+ "decider": "Mike Miller (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-05-mike-miller",
+ "kind": "decision",
+ "options": {
+  "Memphis Grizzlies": 0.522547,
+  "wait": 0.477453
+ },
+ "outcome": "Memphis Grizzlies",
+ "question": "2005 free agency, 2005-08-05: which offer does Mike Miller accept (Memphis Grizzlies $11,206,817 x 5), or does he wait?"
+}

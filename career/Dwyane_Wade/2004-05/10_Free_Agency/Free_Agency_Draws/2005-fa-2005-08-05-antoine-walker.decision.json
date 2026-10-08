@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-05-antoine-walker",
+ "date": "2005-08-05",
+ "question": "2005 free agency, 2005-08-05: which offer does Antoine Walker accept (Orlando Magic $11,706,141 x 4), or does he wait?",
+ "decider": "Antoine Walker (simulated player, engine draw)",
+ "options": {
+  "Orlando Magic": 0.347371,
+  "wait": 0.652629
+ },
+ "basis": "Ask $13,873,231; best offer 0.84 of the ask in total; accept chance 0.347; priority winning; utility Orlando Magic 60.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

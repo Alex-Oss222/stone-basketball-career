@@ -1,0 +1,20 @@
+{
+ "date": "2005-08-05",
+ "decider": "fitchge01 (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-05-fitchge01",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.075232,
+  "Charlotte Bobcats": 0.002376,
+  "Chicago Bulls": 0.005223,
+  "Detroit Pistons": 0.090974,
+  "Houston Rockets": 0.067059,
+  "Los Angeles Lakers": 0.002156,
+  "New Orleans Hornets": 0.006145,
+  "Philadelphia 76ers": 0.007139,
+  "San Antonio Spurs": 0.393696,
+  "wait": 0.35
+ },
+ "outcome": "New Orleans Hornets",
+ "question": "2005 free agency, 2005-08-05: which offer does fitchge01 accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Lakers $398,762 x 1, New Orleans Hornets $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1), or does he wait?"
+}

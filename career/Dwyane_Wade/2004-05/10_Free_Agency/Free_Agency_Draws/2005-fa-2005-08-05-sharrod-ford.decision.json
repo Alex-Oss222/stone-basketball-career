@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-fa-2005-08-05-sharrod-ford",
+ "date": "2005-08-05",
+ "question": "2005 free agency, 2005-08-05: which offer does Sharrod Ford accept (Atlanta Hawks $398,762 x 1, Houston Rockets $398,762 x 1), or does he wait?",
+ "decider": "Sharrod Ford (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.304309,
+  "Houston Rockets": 0.345691,
+  "wait": 0.35
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.650; priority money; utility Atlanta Hawks 46.7, Houston Rockets 47.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

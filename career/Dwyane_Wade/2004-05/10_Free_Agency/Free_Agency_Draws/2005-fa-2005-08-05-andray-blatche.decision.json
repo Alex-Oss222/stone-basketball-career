@@ -1,0 +1,22 @@
+{
+ "event_id": "2005-fa-2005-08-05-andray-blatche",
+ "date": "2005-08-05",
+ "question": "2005 free agency, 2005-08-05: which offer does Andray Blatche accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Denver Nuggets $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Orleans Hornets $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1), or does he wait?",
+ "decider": "Andray Blatche (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.040166,
+  "Charlotte Bobcats": 0.000477,
+  "Chicago Bulls": 0.003144,
+  "Denver Nuggets": 0.001327,
+  "Detroit Pistons": 0.040773,
+  "Houston Rockets": 0.019748,
+  "Los Angeles Clippers": 0.013008,
+  "Los Angeles Lakers": 0.000933,
+  "Milwaukee Bucks": 0.002939,
+  "New Orleans Hornets": 0.000945,
+  "Philadelphia 76ers": 0.003044,
+  "San Antonio Spurs": 0.523496,
+  "wait": 0.35
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.650; priority winning; utility Atlanta Hawks 53.8, Charlotte Bobcats 36.1, Chicago Bulls 43.6, Denver Nuggets 40.2, Detroit Pistons 53.9, Houston Rockets 51.0, Los Angeles Clippers 49.3, Los Angeles Lakers 38.8, Milwaukee Bucks 43.4, New Orleans Hornets 38.8, Philadelphia 76ers 43.5, San Antonio Spurs 64.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

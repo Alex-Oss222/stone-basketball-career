@@ -1,0 +1,24 @@
+{
+ "event_id": "2005-fa-2005-08-05-ar-nas-jasikevi-ius",
+ "date": "2005-08-05",
+ "question": "2005 free agency, 2005-08-05: which offer does Šarūnas Jasikevičius accept (Cleveland Cavaliers $398,762 x 1, Dallas Mavericks $398,762 x 1, Indiana Pacers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Miami Heat $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New York Knicks $398,762 x 1, Orlando Magic $398,762 x 1, Sacramento Kings $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Utah Jazz $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?",
+ "decider": "Šarūnas Jasikevičius (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.019489,
+  "Dallas Mavericks": 0.183985,
+  "Indiana Pacers": 0.006264,
+  "Memphis Grizzlies": 0.010749,
+  "Miami Heat": 0.012966,
+  "Minnesota Timberwolves": 0.003669,
+  "New Jersey Nets": 0.000825,
+  "New York Knicks": 0.001648,
+  "Orlando Magic": 0.012029,
+  "Sacramento Kings": 0.044695,
+  "Seattle SuperSonics": 0.007518,
+  "Toronto Raptors": 0.345451,
+  "Utah Jazz": 0.000236,
+  "Washington Wizards": 0.000475,
+  "wait": 0.350001
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.650; priority winning; utility Cleveland Cavaliers 54.7, Dallas Mavericks 63.7, Indiana Pacers 50.2, Memphis Grizzlies 52.4, Miami Heat 53.1, Minnesota Timberwolves 48.1, New Jersey Nets 42.1, New York Knicks 44.9, Orlando Magic 52.8, Sacramento Kings 58.1, Seattle SuperSonics 50.9, Toronto Raptors 66.2, Utah Jazz 37.1, Washington Wizards 39.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

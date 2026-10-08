@@ -1,0 +1,21 @@
+{
+ "date": "2005-08-05",
+ "decider": "Noel Felix (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-05-noel-felix",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.062899,
+  "Charlotte Bobcats": 0.00228,
+  "Chicago Bulls": 0.004862,
+  "Detroit Pistons": 0.075493,
+  "Houston Rockets": 0.071453,
+  "Los Angeles Clippers": 0.028906,
+  "Los Angeles Lakers": 0.001732,
+  "New Orleans Hornets": 0.005678,
+  "Philadelphia 76ers": 0.006547,
+  "San Antonio Spurs": 0.39015,
+  "wait": 0.35
+ },
+ "outcome": "San Antonio Spurs",
+ "question": "2005 free agency, 2005-08-05: which offer does Noel Felix accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, New Orleans Hornets $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1), or does he wait?"
+}

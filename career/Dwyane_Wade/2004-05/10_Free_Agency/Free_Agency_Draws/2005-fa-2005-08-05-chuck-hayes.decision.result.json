@@ -1,0 +1,13 @@
+{
+ "date": "2005-08-05",
+ "decider": "Chuck Hayes (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-05-chuck-hayes",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.343667,
+  "Houston Rockets": 0.306333,
+  "wait": 0.35
+ },
+ "outcome": "Atlanta Hawks",
+ "question": "2005 free agency, 2005-08-05: which offer does Chuck Hayes accept (Atlanta Hawks $398,762 x 1, Houston Rockets $398,762 x 1), or does he wait?"
+}
