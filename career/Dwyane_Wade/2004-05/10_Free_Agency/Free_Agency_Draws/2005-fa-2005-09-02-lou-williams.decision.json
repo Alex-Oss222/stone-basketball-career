@@ -1,0 +1,15 @@
+{
+ "event_id": "2005-fa-2005-09-02-lou-williams",
+ "date": "2005-09-02",
+ "question": "2005 free agency, 2005-09-02: which offer does Lou Williams accept (Golden State Warriors $398,762 x 1, Milwaukee Bucks $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, Utah Jazz $398,762 x 1), or does he wait?",
+ "decider": "Lou Williams (simulated player, engine draw)",
+ "options": {
+  "Golden State Warriors": 0.113499,
+  "Milwaukee Bucks": 0.208887,
+  "Minnesota Timberwolves": 0.241481,
+  "New Jersey Nets": 0.230856,
+  "Utah Jazz": 0.095277,
+  "wait": 0.11
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.890; priority money; utility Golden State Warriors 37.4, Milwaukee Bucks 39.8, Minnesota Timberwolves 40.4, New Jersey Nets 40.2, Utah Jazz 36.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

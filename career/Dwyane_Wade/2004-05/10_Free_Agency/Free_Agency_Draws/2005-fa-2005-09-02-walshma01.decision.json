@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-09-02-walshma01",
+ "date": "2005-09-02",
+ "question": "2005 free agency, 2005-09-02: which offer does walshma01 accept (Charlotte Bobcats $398,762 x 1), or does he wait?",
+ "decider": "walshma01 (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.89,
+  "wait": 0.11
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.890; priority money; utility Charlotte Bobcats 33.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

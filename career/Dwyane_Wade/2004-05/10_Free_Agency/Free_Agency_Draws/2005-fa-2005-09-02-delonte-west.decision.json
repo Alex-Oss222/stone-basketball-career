@@ -1,0 +1,19 @@
+{
+ "event_id": "2005-fa-2005-09-02-delonte-west",
+ "date": "2005-09-02",
+ "question": "2005 free agency, 2005-09-02: which offer does Delonte West accept (Golden State Warriors $641,748 x 1, Miami Heat $641,748 x 1, Milwaukee Bucks $641,748 x 1, Minnesota Timberwolves $641,748 x 1, New Jersey Nets $641,748 x 1, New York Knicks $641,748 x 1, Sacramento Kings $641,748 x 1, Seattle SuperSonics $641,748 x 1, Utah Jazz $641,748 x 1), or does he wait?",
+ "decider": "Delonte West (simulated player, engine draw)",
+ "options": {
+  "Golden State Warriors": 0.024957,
+  "Miami Heat": 0.068865,
+  "Milwaukee Bucks": 0.03914,
+  "Minnesota Timberwolves": 0.045474,
+  "New Jersey Nets": 0.043365,
+  "New York Knicks": 0.073673,
+  "Sacramento Kings": 0.405305,
+  "Seattle SuperSonics": 0.171939,
+  "Utah Jazz": 0.017282,
+  "wait": 0.11
+ },
+ "basis": "Ask $641,748; best offer 1.00 of the ask in total; accept chance 0.890; priority loyalty; utility Golden State Warriors 43.6, Miami Heat 47.6, Milwaukee Bucks 45.4, Minnesota Timberwolves 46.0, New Jersey Nets 45.8, New York Knicks 47.9, Sacramento Kings 54.7, Seattle SuperSonics 51.3, Utah Jazz 42.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

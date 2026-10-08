@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-02",
+ "decider": "walshma01 (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-02-walshma01",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.89,
+  "wait": 0.11
+ },
+ "outcome": "Charlotte Bobcats",
+ "question": "2005 free agency, 2005-09-02: which offer does walshma01 accept (Charlotte Bobcats $398,762 x 1), or does he wait?"
+}

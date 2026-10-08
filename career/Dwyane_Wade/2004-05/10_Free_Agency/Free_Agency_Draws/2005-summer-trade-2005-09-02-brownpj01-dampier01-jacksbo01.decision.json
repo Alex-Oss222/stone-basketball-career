@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-summer-trade-2005-09-02-brownpj01-dampier01-jacksbo01",
+ "date": "2005-09-02",
+ "question": "Do Detroit Pistons and Sacramento Kings trade Erick Dampier for P.J. Brown and Bobby Jackson on 2005-09-02?",
+ "decider": "Detroit Pistons and Sacramento Kings front offices (engine draw)",
+ "options": {
+  "accept": 0.66978,
+  "decline": 0.33022
+ },
+ "basis": "Gains on own objectives {'Detroit Pistons': 0.1, 'Sacramento Kings': 0.155}; acceptance {'Detroit Pistons': 0.732, 'Sacramento Kings': 0.915}; 1999 salary rule met (runtime/free_agency_2004.py summer trades)."
+}

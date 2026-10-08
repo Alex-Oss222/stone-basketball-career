@@ -1,0 +1,15 @@
+{
+ "date": "2005-09-02",
+ "decider": "Bracey Wright (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-02-bracey-wright",
+ "kind": "decision",
+ "options": {
+  "Milwaukee Bucks": 0.161136,
+  "Minnesota Timberwolves": 0.51918,
+  "New Jersey Nets": 0.116717,
+  "Utah Jazz": 0.092967,
+  "wait": 0.11
+ },
+ "outcome": "New Jersey Nets",
+ "question": "2005 free agency, 2005-09-02: which offer does Bracey Wright accept (Milwaukee Bucks $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, Utah Jazz $398,762 x 1), or does he wait?"
+}

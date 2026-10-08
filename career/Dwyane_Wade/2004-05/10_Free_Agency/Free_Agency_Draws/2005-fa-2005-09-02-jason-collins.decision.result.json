@@ -1,0 +1,13 @@
+{
+ "date": "2005-09-02",
+ "decider": "Jason Collins (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-02-jason-collins",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.007826,
+  "Seattle SuperSonics": 0.882174,
+  "wait": 0.11
+ },
+ "outcome": "Seattle SuperSonics",
+ "question": "2005 free agency, 2005-09-02: which offer does Jason Collins accept (Charlotte Bobcats $4,740,474 x 5, Seattle SuperSonics $4,740,474 x 5), or does he wait?"
+}

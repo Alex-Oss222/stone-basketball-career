@@ -1,0 +1,15 @@
+{
+ "date": "2005-09-02",
+ "decider": "Anthony Johnson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-02-anthony-johnson",
+ "kind": "decision",
+ "options": {
+  "Miami Heat": 0.38493,
+  "New Jersey Nets": 0.001331,
+  "Toronto Raptors": 0.434007,
+  "Utah Jazz": 0.000191,
+  "wait": 0.179541
+ },
+ "outcome": "Miami Heat",
+ "question": "2005 free agency, 2005-09-02: which offer does Anthony Johnson accept (Miami Heat $5,000,000 x 3, New Jersey Nets $5,000,000 x 3, Toronto Raptors $5,000,000 x 3, Utah Jazz $5,000,000 x 3), or does he wait?"
+}

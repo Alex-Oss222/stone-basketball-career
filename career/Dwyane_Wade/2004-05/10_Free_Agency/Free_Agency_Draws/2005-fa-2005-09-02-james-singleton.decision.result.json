@@ -1,0 +1,20 @@
+{
+ "date": "2005-09-02",
+ "decider": "James Singleton (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-02-james-singleton",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.238249,
+  "Charlotte Bobcats": 0.008635,
+  "Chicago Bulls": 0.018418,
+  "Denver Nuggets": 0.029914,
+  "Detroit Pistons": 0.285948,
+  "Houston Rockets": 0.171283,
+  "Los Angeles Clippers": 0.109488,
+  "Los Angeles Lakers": 0.006559,
+  "New Orleans Hornets": 0.021506,
+  "wait": 0.11
+ },
+ "outcome": "Detroit Pistons",
+ "question": "2005 free agency, 2005-09-02: which offer does James Singleton accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Denver Nuggets $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, New Orleans Hornets $398,762 x 1), or does he wait?"
+}

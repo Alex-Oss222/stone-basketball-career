@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-fa-2005-09-02-jason-collins",
+ "date": "2005-09-02",
+ "question": "2005 free agency, 2005-09-02: which offer does Jason Collins accept (Charlotte Bobcats $4,740,474 x 5, Seattle SuperSonics $4,740,474 x 5), or does he wait?",
+ "decider": "Jason Collins (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.007826,
+  "Seattle SuperSonics": 0.882174,
+  "wait": 0.11
+ },
+ "basis": "Ask $4,740,474; best offer 1.00 of the ask in total; accept chance 0.890; priority winning; utility Charlotte Bobcats 48.4, Seattle SuperSonics 67.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

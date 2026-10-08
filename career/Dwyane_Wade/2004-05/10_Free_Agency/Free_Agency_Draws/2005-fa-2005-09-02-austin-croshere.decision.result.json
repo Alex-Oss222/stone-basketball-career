@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-02",
+ "decider": "Austin Croshere (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-09-02-austin-croshere",
+ "kind": "decision",
+ "options": {
+  "New York Knicks": 0.89,
+  "wait": 0.11
+ },
+ "outcome": "New York Knicks",
+ "question": "2005 free agency, 2005-09-02: which offer does Austin Croshere accept (New York Knicks $4,800,000 x 3), or does he wait?"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-09-02",
+ "decider": "Miami Heat and Utah Jazz front offices (engine draw)",
+ "event_id": "2005-summer-trade-2005-09-02-murrala01-stevede01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.8531,
+  "decline": 0.1469
+ },
+ "outcome": "accept",
+ "question": "Do Miami Heat and Utah Jazz trade Lamond Murray for DeShawn Stevenson on 2005-09-02?"
+}

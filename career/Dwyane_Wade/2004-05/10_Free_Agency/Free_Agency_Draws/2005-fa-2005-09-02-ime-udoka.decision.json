@@ -1,0 +1,16 @@
+{
+ "event_id": "2005-fa-2005-09-02-ime-udoka",
+ "date": "2005-09-02",
+ "question": "2005 free agency, 2005-09-02: which offer does Ime Udoka accept (Charlotte Bobcats $719,373 x 1, Chicago Bulls $719,373 x 1, Denver Nuggets $719,373 x 1, Detroit Pistons $719,373 x 1, Los Angeles Lakers $719,373 x 1, New Orleans Hornets $719,373 x 1), or does he wait?",
+ "decider": "Ime Udoka (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.020716,
+  "Chicago Bulls": 0.044185,
+  "Denver Nuggets": 0.071764,
+  "Detroit Pistons": 0.686007,
+  "Los Angeles Lakers": 0.015735,
+  "New Orleans Hornets": 0.051593,
+  "wait": 0.11
+ },
+ "basis": "Ask $719,373; best offer 1.00 of the ask in total; accept chance 0.890; priority money; utility Charlotte Bobcats 33.4, Chicago Bulls 36.4, Denver Nuggets 38.4, Detroit Pistons 47.4, Los Angeles Lakers 32.3, New Orleans Hornets 37.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

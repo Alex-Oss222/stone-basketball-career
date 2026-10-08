@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-summer-trade-2005-09-02-murrala01-stevede01",
+ "date": "2005-09-02",
+ "question": "Do Miami Heat and Utah Jazz trade Lamond Murray for DeShawn Stevenson on 2005-09-02?",
+ "decider": "Miami Heat and Utah Jazz front offices (engine draw)",
+ "options": {
+  "accept": 0.8531,
+  "decline": 0.1469
+ },
+ "basis": "Gains on own objectives {'Miami Heat': 0.147, 'Utah Jazz': 0.269}; acceptance {'Miami Heat': 0.898, 'Utah Jazz': 0.95}; 1999 salary rule met (runtime/free_agency_2004.py summer trades)."
+}
