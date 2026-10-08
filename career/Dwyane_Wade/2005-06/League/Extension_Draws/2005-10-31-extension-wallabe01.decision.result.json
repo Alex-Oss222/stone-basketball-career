@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-31",
+ "decider": "Ben Wallace (simulated player, engine draw)",
+ "event_id": "2005-10-31-extension-wallabe01",
+ "kind": "decision",
+ "options": {
+  "declined": 0.272,
+  "signed": 0.728
+ },
+ "outcome": "declined",
+ "question": "Does Ben Wallace sign Detroit Pistons's 3-season veteran extension from 2006-07 ($7,403,500 in 2006-07, raises of $703,500 a season, $24,321,000 in all)?"
+}

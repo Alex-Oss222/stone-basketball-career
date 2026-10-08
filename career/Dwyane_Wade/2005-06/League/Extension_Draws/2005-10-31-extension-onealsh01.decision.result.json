@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-31",
+ "decider": "Shaquille O'Neal (simulated player, engine draw)",
+ "event_id": "2005-10-31-extension-onealsh01",
+ "kind": "decision",
+ "options": {
+  "declined": 0.138,
+  "signed": 0.862
+ },
+ "outcome": "signed",
+ "question": "Does Shaquille O'Neal sign Los Angeles Lakers's 2-season veteran extension from 2006-07 ($13,835,054 in 2006-07, raises of $1,452,680 a season, $29,122,788 in all)?"
+}

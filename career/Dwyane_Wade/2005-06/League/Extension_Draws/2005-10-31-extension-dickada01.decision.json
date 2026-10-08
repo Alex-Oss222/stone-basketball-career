@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-10-31-extension-dickada01",
+ "date": "2005-10-31",
+ "question": "Does Dan Dickau sign Atlanta Hawks's 4-season rookie-scale extension from 2006-07 ($6,870,549 in 2006-07, raises of $721,407 a season, $31,810,638 in all)?",
+ "decider": "Dan Dickau (simulated player, engine draw)",
+ "options": {
+  "signed": 0.7,
+  "declined": 0.3
+ },
+ "basis": "Club: clear: worth $6,870,549 (price $6,870,549: market price $6,870,549 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 1.3741, at or above 1.2; 2006-07 payroll $49,347,458 with this offer, within $61,700,000 (the tax line). Player: utility gap +7.38 (this extension at Atlanta Hawks against free agency next summer at his price with a league-average club, runtime/player_utility.py, no drawn priority) gives P(sign) 0.7. Eligibility: rookie scale: the 2005-06 team option exercised on 2004-10-31 by Atlanta Hawks (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52) (runtime/extensions.py)."
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-31",
+ "decider": "Amar'e Stoudemire (simulated player, engine draw)",
+ "event_id": "2005-10-31-extension-stoudam01",
+ "kind": "decision",
+ "options": {
+  "declined": 0.09,
+  "signed": 0.91
+ },
+ "outcome": "signed",
+ "question": "Does Amar'e Stoudemire sign Phoenix Suns's 5-season rookie-scale extension from 2006-07 ($11,945,223 in 2006-07, raises of $1,254,248 a season, $72,268,595 in all)?"
+}

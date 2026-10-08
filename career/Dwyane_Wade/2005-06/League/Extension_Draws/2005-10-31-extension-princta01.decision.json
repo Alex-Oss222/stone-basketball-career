@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-10-31-extension-princta01",
+ "date": "2005-10-31",
+ "question": "Does Tayshaun Prince sign Golden State Warriors's 5-season rookie-scale extension from 2006-07 ($8,344,730 in 2006-07, raises of $876,196 a season, $50,485,610 in all)?",
+ "decider": "Tayshaun Prince (simulated player, engine draw)",
+ "options": {
+  "signed": 0.631,
+  "declined": 0.369
+ },
+ "basis": "Club: clear: worth $8,344,730 (price $8,344,730: market price $8,344,730 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 1.6689, at or above 1.2; 2006-07 payroll $49,781,063 with this offer, within $61,700,000 (the tax line). Player: utility gap +6.15 (this extension at Golden State Warriors against free agency next summer at his price with a league-average club, runtime/player_utility.py, no drawn priority) gives P(sign) 0.631. Eligibility: rookie scale: the 2005-06 team option exercised on 2004-10-31 by Golden State Warriors (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52) (runtime/extensions.py)."
+}

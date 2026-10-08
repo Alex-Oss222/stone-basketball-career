@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-31",
+ "decider": "Yao Ming (simulated player, engine draw)",
+ "event_id": "2005-10-31-extension-mingya01",
+ "kind": "decision",
+ "options": {
+  "declined": 0.446,
+  "signed": 0.554
+ },
+ "outcome": "declined",
+ "question": "Does Yao Ming sign Houston Rockets's 5-season rookie-scale extension from 2006-07 ($10,162,254 in 2006-07, raises of $1,067,036 a season, $61,481,630 in all)?"
+}

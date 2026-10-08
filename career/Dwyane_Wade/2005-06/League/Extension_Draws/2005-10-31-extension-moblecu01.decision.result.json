@@ -1,0 +1,13 @@
+{
+ "date": "2005-10-31",
+ "decider": "Houston Rockets (drawn by rule) and Cuttino Mobley (simulated player)",
+ "event_id": "2005-10-31-extension-moblecu01",
+ "kind": "decision",
+ "options": {
+  "declined": 0.195,
+  "no_offer": 0.5,
+  "signed": 0.305
+ },
+ "outcome": "no_offer",
+ "question": "Does Houston Rockets offer Cuttino Mobley a 3-season veteran extension from 2006-07 ($4,999,811 in 2006-07, raises of $524,980 a season, $16,574,373 in all), and does he sign it?"
+}

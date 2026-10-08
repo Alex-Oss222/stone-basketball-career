@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-31",
+ "decider": "Tayshaun Prince (simulated player, engine draw)",
+ "event_id": "2005-10-31-extension-princta01",
+ "kind": "decision",
+ "options": {
+  "declined": 0.369,
+  "signed": 0.631
+ },
+ "outcome": "signed",
+ "question": "Does Tayshaun Prince sign Golden State Warriors's 5-season rookie-scale extension from 2006-07 ($8,344,730 in 2006-07, raises of $876,196 a season, $50,485,610 in all)?"
+}

@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-10-31-extension-dunlemi02",
+ "date": "2005-10-31",
+ "question": "Does Golden State Warriors offer Mike Dunleavy a 5-season rookie-scale extension from 2006-07 ($5,377,375 in 2006-07, raises of $564,624 a season, $32,533,115 in all), and does he sign it?",
+ "decider": "Golden State Warriors (drawn by rule) and Mike Dunleavy (simulated player)",
+ "options": {
+  "signed": 0.434759,
+  "declined": 0.254241,
+  "no_offer": 0.311
+ },
+ "basis": "Club: close call drawn by the engine: worth $5,377,375 (price $5,377,375: market price $5,377,375 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 1.0755, inside 0.8-1.2, P(offer) 0.689; 2006-07 payroll $55,158,438 with this offer, within $61,700,000 (the tax line). Player: utility gap +6.15 (this extension at Golden State Warriors against free agency next summer at his price with a league-average club, runtime/player_utility.py, no drawn priority) gives P(sign) 0.631. Eligibility: rookie scale: the 2005-06 team option exercised on 2004-10-31 by Golden State Warriors (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52) (runtime/extensions.py)."
+}

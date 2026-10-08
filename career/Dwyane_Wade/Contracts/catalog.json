@@ -150,9 +150,9 @@
       "player_id": "stoudam01",
       "name": "Amar'e Stoudemire",
       "team": "Phoenix Suns",
-      "status": "under rookie contract",
+      "status": "under contract",
       "current_contract_id": "stoudam01-2002-07-05",
-      "recorded_agreements": 1,
+      "recorded_agreements": 2,
       "href": "players/stoudam01.html#contract"
     },
     {
@@ -1491,9 +1491,9 @@
       "player_id": "goodedr01",
       "name": "Drew Gooden",
       "team": "Orlando Magic",
-      "status": "under rookie contract",
+      "status": "under contract",
       "current_contract_id": "goodedr01-2002-07-02",
-      "recorded_agreements": 1,
+      "recorded_agreements": 2,
       "href": "players/goodedr01.html#contract"
     },
     {
@@ -3642,9 +3642,9 @@
       "player_id": "hilarne01",
       "name": "Nene",
       "team": "Denver Nuggets",
-      "status": "under rookie contract",
+      "status": "under contract",
       "current_contract_id": "hilarne01-2002-07-23",
-      "recorded_agreements": 1,
+      "recorded_agreements": 2,
       "href": "players/hilarne01.html#contract"
     },
     {
@@ -4427,7 +4427,7 @@
       "team": "Los Angeles Lakers",
       "status": "under contract",
       "current_contract_id": "onealsh01-2000-10-13",
-      "recorded_agreements": 1,
+      "recorded_agreements": 2,
       "href": "players/onealsh01.html#contract"
     },
     {
@@ -4650,9 +4650,9 @@
       "player_id": "princta01",
       "name": "Tayshaun Prince",
       "team": "Golden State Warriors",
-      "status": "under rookie contract",
+      "status": "under contract",
       "current_contract_id": "princta01-2002-07-02",
-      "recorded_agreements": 1,
+      "recorded_agreements": 2,
       "href": "players/princta01.html#contract"
     },
     {

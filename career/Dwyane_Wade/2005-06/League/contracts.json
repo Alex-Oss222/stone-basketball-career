@@ -1797,10 +1797,39 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2005-06": 4065811
+    "2005-06": 4065811,
+    "2006-07": 8213079,
+    "2007-08": 9075452,
+    "2008-09": 9937825,
+    "2009-10": 10800198,
+    "2010-11": 11662571
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "rookie_scale": true
+   "rookie_scale": true,
+   "extension": {
+    "id": "2005-10-31-extension-goodedr01",
+    "kind": "rookie_scale",
+    "route": "rookie_scale_extension",
+    "signed_date": "2005-10-31",
+    "club": "Orlando Magic",
+    "first_season": "2006-07",
+    "years": 5,
+    "first_salary": 8213079,
+    "raise": 862373,
+    "schedule": {
+     "2006-07": 8213079,
+     "2007-08": 9075452,
+     "2008-09": 9937825,
+     "2009-10": 10800198,
+     "2010-11": 11662571
+    },
+    "total": 49689125,
+    "record": "career/Dwyane_Wade/2005-06/League/extension_decisions.json"
+   },
+   "extended_on": "2005-10-31",
+   "extension_history": [
+    "rookie scale extension signed 2005-10-31 with Orlando Magic: 5 seasons from 2006-07, $49,689,125 (runtime/extensions.py, career/Dwyane_Wade/2005-06/League/extension_decisions.json)"
+   ]
   },
   {
    "player": "Ben Gordon",
@@ -2156,10 +2185,39 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2005-06": 2870556
+    "2005-06": 2870556,
+    "2006-07": 5355118,
+    "2007-08": 5917405,
+    "2008-09": 6479692,
+    "2009-10": 7041979,
+    "2010-11": 7604266
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "rookie_scale": true
+   "rookie_scale": true,
+   "extension": {
+    "id": "2005-10-31-extension-hilarne01",
+    "kind": "rookie_scale",
+    "route": "rookie_scale_extension",
+    "signed_date": "2005-10-31",
+    "club": "Denver Nuggets",
+    "first_season": "2006-07",
+    "years": 5,
+    "first_salary": 5355118,
+    "raise": 562287,
+    "schedule": {
+     "2006-07": 5355118,
+     "2007-08": 5917405,
+     "2008-09": 6479692,
+     "2009-10": 7041979,
+     "2010-11": 7604266
+    },
+    "total": 32398460,
+    "record": "career/Dwyane_Wade/2005-06/League/extension_decisions.json"
+   },
+   "extended_on": "2005-10-31",
+   "extension_history": [
+    "rookie scale extension signed 2005-10-31 with Denver Nuggets: 5 seasons from 2006-07, $32,398,460 (runtime/extensions.py, career/Dwyane_Wade/2005-06/League/extension_decisions.json)"
+   ]
   },
   {
    "player": "Grant Hill",
@@ -3760,9 +3818,32 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2005-06": 30642861
+    "2005-06": 30642861,
+    "2006-07": 13835054,
+    "2007-08": 15287734
    },
-   "source": "league contract ledger 2004-05 (existing)"
+   "source": "league contract ledger 2004-05 (existing)",
+   "extension": {
+    "id": "2005-10-31-extension-onealsh01",
+    "kind": "veteran",
+    "route": "veteran_extension",
+    "signed_date": "2005-10-31",
+    "club": "Los Angeles Lakers",
+    "first_season": "2006-07",
+    "years": 2,
+    "first_salary": 13835054,
+    "raise": 1452680,
+    "schedule": {
+     "2006-07": 13835054,
+     "2007-08": 15287734
+    },
+    "total": 29122788,
+    "record": "career/Dwyane_Wade/2005-06/League/extension_decisions.json"
+   },
+   "extended_on": "2005-10-31",
+   "extension_history": [
+    "veteran extension signed 2005-10-31 with Los Angeles Lakers: 2 seasons from 2006-07, $29,122,788 (runtime/extensions.py, career/Dwyane_Wade/2005-06/League/extension_decisions.json)"
+   ]
   },
   {
    "player": "Greg Ostertag",
@@ -4114,10 +4195,39 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2005-06": 1763115
+    "2005-06": 1763115,
+    "2006-07": 8344730,
+    "2007-08": 9220926,
+    "2008-09": 10097122,
+    "2009-10": 10973318,
+    "2010-11": 11849514
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "rookie_scale": true
+   "rookie_scale": true,
+   "extension": {
+    "id": "2005-10-31-extension-princta01",
+    "kind": "rookie_scale",
+    "route": "rookie_scale_extension",
+    "signed_date": "2005-10-31",
+    "club": "Golden State Warriors",
+    "first_season": "2006-07",
+    "years": 5,
+    "first_salary": 8344730,
+    "raise": 876196,
+    "schedule": {
+     "2006-07": 8344730,
+     "2007-08": 9220926,
+     "2008-09": 10097122,
+     "2009-10": 10973318,
+     "2010-11": 11849514
+    },
+    "total": 50485610,
+    "record": "career/Dwyane_Wade/2005-06/League/extension_decisions.json"
+   },
+   "extended_on": "2005-10-31",
+   "extension_history": [
+    "rookie scale extension signed 2005-10-31 with Golden State Warriors: 5 seasons from 2006-07, $50,485,610 (runtime/extensions.py, career/Dwyane_Wade/2005-06/League/extension_decisions.json)"
+   ]
   },
   {
    "player": "Joel Przybilla",
@@ -4632,10 +4742,39 @@
    "route": "existing",
    "kind": "existing",
    "schedule": {
-    "2005-06": 2589023
+    "2005-06": 2589023,
+    "2006-07": 11945223,
+    "2007-08": 13199471,
+    "2008-09": 14453719,
+    "2009-10": 15707967,
+    "2010-11": 16962215
    },
    "source": "league contract ledger 2004-05 (existing)",
-   "rookie_scale": true
+   "rookie_scale": true,
+   "extension": {
+    "id": "2005-10-31-extension-stoudam01",
+    "kind": "rookie_scale",
+    "route": "rookie_scale_extension",
+    "signed_date": "2005-10-31",
+    "club": "Phoenix Suns",
+    "first_season": "2006-07",
+    "years": 5,
+    "first_salary": 11945223,
+    "raise": 1254248,
+    "schedule": {
+     "2006-07": 11945223,
+     "2007-08": 13199471,
+     "2008-09": 14453719,
+     "2009-10": 15707967,
+     "2010-11": 16962215
+    },
+    "total": 72268595,
+    "record": "career/Dwyane_Wade/2005-06/League/extension_decisions.json"
+   },
+   "extended_on": "2005-10-31",
+   "extension_history": [
+    "rookie scale extension signed 2005-10-31 with Phoenix Suns: 5 seasons from 2006-07, $72,268,595 (runtime/extensions.py, career/Dwyane_Wade/2005-06/League/extension_decisions.json)"
+   ]
   },
   {
    "player": "Damon Stoudamire",

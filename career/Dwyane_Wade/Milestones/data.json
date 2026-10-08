@@ -1784,6 +1784,10 @@
             [
               "2005-10-31",
               "Cut to 15: Kwame Brown, Adonal Foyle, Theo Ratliff, Bonzi Wells, Sam Cassell. Promise check: every promised role is in the rotation. Record: `promise_log.json`."
+            ],
+            [
+              "2005-10-31",
+              "Miami Heat's rookie-scale extension decision on Caron Butler: no offer (clear: worth $3,797,198 (price $3,797,198: market price $3,797,198 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 0.7594, at or below 0.8; runtime/extensions.py, League/extension_decisions.json)."
             ]
           ]
         },

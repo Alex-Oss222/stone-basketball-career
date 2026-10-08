@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-10-31-extension-moblecu01",
+ "date": "2005-10-31",
+ "question": "Does Houston Rockets offer Cuttino Mobley a 3-season veteran extension from 2006-07 ($4,999,811 in 2006-07, raises of $524,980 a season, $16,574,373 in all), and does he sign it?",
+ "decider": "Houston Rockets (drawn by rule) and Cuttino Mobley (simulated player)",
+ "options": {
+  "signed": 0.305,
+  "declined": 0.195,
+  "no_offer": 0.5
+ },
+ "basis": "Club: close call drawn by the engine: worth $4,999,811 (price $4,999,811: market price $4,999,811 for his production, inside the minimum $1,029,873 and his maximum $14,400,000 with 8 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 1.0, inside 0.8-1.2, P(offer) 0.5; 2006-07 payroll $43,262,525 with this offer, within $61,700,000 (the tax line). Player: utility gap +5.79 (this extension at Houston Rockets against free agency next summer at his price with a league-average club, runtime/player_utility.py, no drawn priority) gives P(sign) 0.61. Eligibility: veteran: a 6-season contract (contract signed 2000-08-02 (June 2003 contract inventory)); 5 full years since 2000-08-02 by 2005-10-31, 4 required (cbafaq05 Q52) (runtime/extensions.py)."
+}

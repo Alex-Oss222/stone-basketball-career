@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-10-31-extension-wallabe01",
+ "date": "2005-10-31",
+ "question": "Does Ben Wallace sign Detroit Pistons's 3-season veteran extension from 2006-07 ($7,403,500 in 2006-07, raises of $703,500 a season, $24,321,000 in all)?",
+ "decider": "Ben Wallace (simulated player, engine draw)",
+ "options": {
+  "signed": 0.728,
+  "declined": 0.272
+ },
+ "basis": "Club: clear: worth $8,004,556 (price $8,004,556: market price $8,004,556 for his production, inside the minimum $1,138,500 and his maximum $16,800,000 with 10 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 1.6009, at or above 1.2; 2006-07 payroll $43,196,562 with this offer, within $61,700,000 (the tax line). Player: utility gap +7.94 (this extension at Detroit Pistons against free agency next summer at his price with a league-average club, runtime/player_utility.py, no drawn priority) gives P(sign) 0.728. Eligibility: veteran: a 6-season contract (contract signed 2000-08-03 (June 2003 contract inventory)); 5 full years since 2000-08-03 by 2005-10-31, 4 required (cbafaq05 Q52) (runtime/extensions.py)."
+}

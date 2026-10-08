@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-10-31-extension-mingya01",
+ "date": "2005-10-31",
+ "question": "Does Yao Ming sign Houston Rockets's 5-season rookie-scale extension from 2006-07 ($10,162,254 in 2006-07, raises of $1,067,036 a season, $61,481,630 in all)?",
+ "decider": "Yao Ming (simulated player, engine draw)",
+ "options": {
+  "signed": 0.554,
+  "declined": 0.446
+ },
+ "basis": "Club: clear: worth $10,162,254 (price $10,162,254: market price $10,162,254 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 2.0325, at or above 1.2; 2006-07 payroll $38,262,714 with this offer, within $83,295,000 (a player priced at 2 mid-levels or more: 35% over the tax line or 17.5% over the committed payroll). Player: utility gap +4.86 (this extension at Houston Rockets against free agency next summer at his price with a league-average club, runtime/player_utility.py, no drawn priority) gives P(sign) 0.554. Eligibility: rookie scale: the 2005-06 team option exercised on 2004-10-31 by Houston Rockets (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52) (runtime/extensions.py)."
+}

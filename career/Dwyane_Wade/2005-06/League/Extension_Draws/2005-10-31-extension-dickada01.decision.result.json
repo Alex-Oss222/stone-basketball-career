@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-31",
+ "decider": "Dan Dickau (simulated player, engine draw)",
+ "event_id": "2005-10-31-extension-dickada01",
+ "kind": "decision",
+ "options": {
+  "declined": 0.3,
+  "signed": 0.7
+ },
+ "outcome": "declined",
+ "question": "Does Dan Dickau sign Atlanta Hawks's 4-season rookie-scale extension from 2006-07 ($6,870,549 in 2006-07, raises of $721,407 a season, $31,810,638 in all)?"
+}

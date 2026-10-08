@@ -1,0 +1,1451 @@
+{
+ "schema_version": 1,
+ "kind": "extension_decisions",
+ "season": "2005-06",
+ "rule": "Gate. Extension days start on FIRST_DAY (2005-10-31, the 2002 draft class's rookie-scale deadline). The days that had\nalready passed (2003-10-31, 2004-06-29, 2004-10-31, 2005-06-29) belong to markets, options and trades that are recorded\nand replay unchanged: they are never decided. A contract without an `extension` key reads exactly as before.\n\nRules: the agreement in force for the decision day's league year (`agreement.terms`; the 2005 agreement's extension\nterms in `library/2005/league/nba_2005_cba_rules.json` \"extensions\", cbafaq05 Q52, the 105% free-agent maximum Q11):\n- rookie scale: a first-round pick whose club picked up the option on his last scale season may be extended to October\n  31 before that season, up to five more seasons, the first at any amount up to his maximum, raises up to 10.5% of the\n  first extension year;\n- veteran: a contract of four or more seasons, three years after it was signed (four for a six- or seven-season contract\n  signed before July 1, 2005; three after an earlier extension), to June 30 before free agency, five seasons at most\n  including the season remaining (four new), the first at most 110.5% of the last salary and at most his free-agent\n  maximum (the tier maximum or 105% of the last salary, the greater), raises up to 10.5% of the last salary.\n\nEligibility (repository records only; an unknown signing date or length is never eligible, never guessed). On a decision\nday D in league year S (F = the season after it), a player is considered when his contract in force ends with S (no\nlater season, no option for F) and a club holds him at the start of D (the end of the day before: a trade dated D never\nprecedes the decision, so a replay finds the same holder). A contract his club waived is not the one in force: a waiver\n(`League/league_moves.json`) after its signing that no claim took up ends it, and the contract he plays on with a later\nclub is a new one (cbafaq05 Q52 extends the contract a club holds). Rookie scale (October 31 only): the team option for\nS, the last scale season, was exercised on the October 31 a year earlier (`League/option_decisions.json`) and the\ncontract in force is still that rookie-scale contract. Veteran: no option decision for F cut the contract short, it is\nnot a rookie-scale contract, and its signing date and length are recorded: the latest extension, else the summer market\nrecord that signed it (a `new` or `rookie_scale` ledger entry, traced back season by season), else the June 2003\ninventory or the real 2003 summer signing a 2004-05 ledger entry was built from; Miami's own sheet for a contract Miami\nsigned. A 2004-05 contract rebuilt from the salary list has no recorded length.\n\nDays: October 31 every year from 2005 (rookie scale on its deadline, veterans in a pre-season review) and June 29 from\n2006 (veterans: the last day before free agency, the same day as `options.VETERAN_DEADLINE`; from June 1 the valuation\nreads the season just closed, the only other date with new evidence). Each day is decided once, on its own date (the\ncareer clock on it), with evidence and holders dated on it, and before the day's other club steps (the market day, the\ntrade scan and the option step): the driver's extension step (`extension_day` in `scripts/advance.py`) must run\n`scripts/extension_day.py --write DATE` every day for this. A day is never decided late or ahead of the clock (`run`\nrefuses, `ExtensionError`): later systems have used the contracts by then, so a missed day is reported by validation\nand the rollover and needs a decision, never a catch-up. A day is decided only once every earlier decision is applied.\n\nClub decision (one rule for every club, Miami's AI/GM included; judgement constants named below):\n- price: the market price of his closed-season production (`Valuation.market_price`, the honor factor included) inside\n  the minimum and his free-agent maximum for his service in F, under the cap rules published by D (the planning season:\n  never a cap figure before its publication date); worth: the price, x YOUTH_PREMIUM at 24 or younger (`options`);\n- core ratio r = worth / (CORE_MLES x the mid-level): a player worth the mid-level or more costs that much to replace over\n  the cap. r >= HIGH: the club offers; r <= LOW: it does not; in between the engine draws the call, P(offer) =\n  (r - LOW) / (HIGH - LOW) (the option rule's band, `options.LOW` and `options.HIGH`);\n- no offer, before any call, when his real career has no season F (`availability`), there is no valuation, no legal first\n  salary exists, or F's committed payroll plus the club's earlier offers that day plus this one passes the summer\n  market's ceiling (the tax line; 10% over it for a contender; for a player priced at two mid-levels the greater of 35%\n  over it and 17.5% over the committed payroll). Candidates are taken by worth, highest first.\n- terms: the years he wants by age (`free_agency_2004.YEARS_WANTED`) within the agreement's limit; first year: the price\n  (rookie scale) or the price held to 110.5% of the last salary (veteran); flat raises at the agreement's limit (10.5% of\n  the first year, rookie scale; 10.5% of the smaller of the first year and the last salary, veteran).\n\nPlayer's answer (an engine draw for every player but Wade): the 2003 factor model (`runtime/player_utility.py`, no drawn\npriority: it is drawn only when he reaches free agency) scores the extension at his club against free agency next summer\nat his price with a league-average club (loyalty, contention, tax and market, money and security against the years he\nwants); P(sign) = the model's accept odds on the utility gap, the counter share folded into a decline (take it or leave\nit). A clear offer is one packet (signed or declined); a close call is one packet with the club's call and his answer\ntogether (signed, declined, no_offer), so the step never waits twice. Packets are `League/Extension_Draws/<id>`, written\nonce and never re-rolled.\n\nWade: Miami's AI/GM calls by the same rule as every club, a close call included: inside the band the engine draws the\nclub's call alone (`offer` or `no_offer`, P(offer) as above), since his answer is his own. An offer, clear or drawn, is a\nplayer decision: a record and a milestone page under `01_Free_Agency/Wade_Extension/`, a pending entry\n`wade_extension:<id>` that stops the clock, and his answer through `scripts/player_milestone.py --reply` (kind\n`extension`, accept or decline). The next run applies it.\n\nRecords: `<season>/League/extension_decisions.json` (days and decisions). A signed extension is written into the league\nledger (`extension`, the schedule gains its seasons) and, for Miami, its cap sheet, the contract archive and the phase\nnote; a later rebuild re-applies it (`reapply`) and the rollover carries it (`league_contracts.carried`).",
+ "days": [
+  {
+   "day": "2005-10-31",
+   "kinds": [
+    "rookie_scale",
+    "veteran"
+   ],
+   "eligible": 24,
+   "recorded_on": "2005-10-31"
+  }
+ ],
+ "decisions": [
+  {
+   "id": "2005-10-31-extension-stoudam01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Phoenix Suns",
+   "player": "Amar'e Stoudemire",
+   "bbr_id": "stoudam01",
+   "ledger_key": "stoudam01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 2589023,
+    "signed_date": "2002-07-05",
+    "length": 4,
+    "origin": "contract signed 2002-07-05 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Phoenix Suns (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 18.486,
+    "market_price": 11945223,
+    "price": 11945223,
+    "worth": 14931529,
+    "age": 22,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 2.9863,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "80 games, 33.5 minutes, 19.2 points, efficiency 19.4 a game (simulated 2004-05)",
+    "mpg": 33.5
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 55736486,
+    "earlier_offers": 0,
+    "offer": 11945223,
+    "after": 67681709,
+    "ceiling": 83295000,
+    "tax_line": 61700000,
+    "rule": "a player priced at 2 mid-levels or more: 35% over the tax line or 17.5% over the committed payroll"
+   },
+   "club_call": {
+    "decision": "offer",
+    "how": "clear: worth $14,931,529 (price $11,945,223: market price $11,945,223 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules, x1.25 for a player 24 or younger) against 1 x the $5,000,000 mid-level: ratio 2.9863, at or above 1.2",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": {
+    "first_season": "2006-07",
+    "years": 5,
+    "first_salary": 11945223,
+    "raise": 1254248,
+    "schedule": {
+     "2006-07": 11945223,
+     "2007-08": 13199471,
+     "2008-09": 14453719,
+     "2009-10": 15707967,
+     "2010-11": 16962215
+    },
+    "total": 72268595,
+    "route": "rookie_scale_extension",
+    "limits": {
+     "max_new_seasons": 5,
+     "maximum": 12000000,
+     "minimum": 771123,
+     "first_year_limit": 12000000,
+     "raise_limit": 1254248
+    }
+   },
+   "answer": {
+    "decider": "Amar'e Stoudemire (simulated player, engine draw)",
+    "p_accept": 0.91,
+    "gap": 13.25,
+    "years_wanted": 5,
+    "wins": 60.0
+   },
+   "packet": "career/Dwyane_Wade/2005-06/League/Extension_Draws/2005-10-31-extension-stoudam01.decision.json",
+   "outcome": "signed",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-onealsh01",
+   "day": "2005-10-31",
+   "kind": "veteran",
+   "club": "Los Angeles Lakers",
+   "player": "Shaquille O'Neal",
+   "bbr_id": "onealsh01",
+   "ledger_key": "onealsh01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 30642861,
+    "signed_date": "2000-10-13",
+    "length": 3,
+    "origin": "extension signed 2000-10-13 (June 2003 contract inventory)",
+    "eligibility": "veteran: an extended contract (extension signed 2000-10-13 (June 2003 contract inventory)); 5 full years since 2000-10-13 by 2005-10-31, 3 required (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 18.664,
+    "market_price": 13835054,
+    "price": 13835054,
+    "worth": 13835054,
+    "age": 33,
+    "service_first": 14,
+    "mid_level": 5000000,
+    "core_ratio": 2.767,
+    "planning_season": "2005-06",
+    "maximum": 32175004,
+    "minimum": 1138500,
+    "line": "67 games, 37.3 minutes, 22.8 points, efficiency 26.3 a game (simulated 2004-05)",
+    "mpg": 37.3
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 25748805,
+    "earlier_offers": 0,
+    "offer": 13835054,
+    "after": 39583859,
+    "ceiling": 83295000,
+    "tax_line": 61700000,
+    "rule": "a player priced at 2 mid-levels or more: 35% over the tax line or 17.5% over the committed payroll"
+   },
+   "club_call": {
+    "decision": "offer",
+    "how": "clear: worth $13,835,054 (price $13,835,054: market price $13,835,054 for his production, inside the minimum $1,138,500 and his maximum $32,175,004 with 14 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 2.767, at or above 1.2",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": {
+    "first_season": "2006-07",
+    "years": 2,
+    "first_salary": 13835054,
+    "raise": 1452680,
+    "schedule": {
+     "2006-07": 13835054,
+     "2007-08": 15287734
+    },
+    "total": 29122788,
+    "route": "veteran_extension",
+    "limits": {
+     "max_new_seasons": 4,
+     "maximum": 32175004,
+     "minimum": 1138500,
+     "first_year_limit": 32175004,
+     "raise_limit": 3217500
+    }
+   },
+   "answer": {
+    "decider": "Shaquille O'Neal (simulated player, engine draw)",
+    "p_accept": 0.862,
+    "gap": 11.32,
+    "years_wanted": 2,
+    "wins": 41.0
+   },
+   "packet": "career/Dwyane_Wade/2005-06/League/Extension_Draws/2005-10-31-extension-onealsh01.decision.json",
+   "outcome": "signed",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-goodedr01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Orlando Magic",
+   "player": "Drew Gooden",
+   "bbr_id": "goodedr01",
+   "ledger_key": "goodedr01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 4065811,
+    "signed_date": "2002-07-02",
+    "length": 4,
+    "origin": "contract signed 2002-07-02 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Orlando Magic (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 16.289,
+    "market_price": 8213079,
+    "price": 8213079,
+    "worth": 10266349,
+    "age": 24,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 2.0533,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "82 games, 30.3 minutes, 15.2 points, efficiency 17.1 a game (simulated 2004-05)",
+    "mpg": 30.3
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 42437617,
+    "earlier_offers": 0,
+    "offer": 8213079,
+    "after": 50650696,
+    "ceiling": 61700000,
+    "tax_line": 61700000,
+    "rule": "the tax line"
+   },
+   "club_call": {
+    "decision": "offer",
+    "how": "clear: worth $10,266,349 (price $8,213,079: market price $8,213,079 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules, x1.25 for a player 24 or younger) against 1 x the $5,000,000 mid-level: ratio 2.0533, at or above 1.2",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": {
+    "first_season": "2006-07",
+    "years": 5,
+    "first_salary": 8213079,
+    "raise": 862373,
+    "schedule": {
+     "2006-07": 8213079,
+     "2007-08": 9075452,
+     "2008-09": 9937825,
+     "2009-10": 10800198,
+     "2010-11": 11662571
+    },
+    "total": 49689125,
+    "route": "rookie_scale_extension",
+    "limits": {
+     "max_new_seasons": 5,
+     "maximum": 12000000,
+     "minimum": 771123,
+     "first_year_limit": 12000000,
+     "raise_limit": 862373
+    }
+   },
+   "answer": {
+    "decider": "Drew Gooden (simulated player, engine draw)",
+    "p_accept": 0.688,
+    "gap": 7.17,
+    "years_wanted": 5,
+    "wins": 39.0
+   },
+   "packet": "career/Dwyane_Wade/2005-06/League/Extension_Draws/2005-10-31-extension-goodedr01.decision.json",
+   "outcome": "signed",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-mingya01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Houston Rockets",
+   "player": "Yao Ming",
+   "bbr_id": "mingya01",
+   "ledger_key": "mingya01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 5594906,
+    "signed_date": "2002-10-18",
+    "length": 4,
+    "origin": "contract signed 2002-10-18 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Houston Rockets (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 18.08,
+    "market_price": 10162254,
+    "price": 10162254,
+    "worth": 10162254,
+    "age": 25,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 2.0325,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "80 games, 32.4 minutes, 16.3 points, efficiency 19.8 a game (simulated 2004-05)",
+    "mpg": 32.4
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 28100460,
+    "earlier_offers": 0,
+    "offer": 10162254,
+    "after": 38262714,
+    "ceiling": 83295000,
+    "tax_line": 61700000,
+    "rule": "a player priced at 2 mid-levels or more: 35% over the tax line or 17.5% over the committed payroll"
+   },
+   "club_call": {
+    "decision": "offer",
+    "how": "clear: worth $10,162,254 (price $10,162,254: market price $10,162,254 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 2.0325, at or above 1.2",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": {
+    "first_season": "2006-07",
+    "years": 5,
+    "first_salary": 10162254,
+    "raise": 1067036,
+    "schedule": {
+     "2006-07": 10162254,
+     "2007-08": 11229290,
+     "2008-09": 12296326,
+     "2009-10": 13363362,
+     "2010-11": 14430398
+    },
+    "total": 61481630,
+    "route": "rookie_scale_extension",
+    "limits": {
+     "max_new_seasons": 5,
+     "maximum": 12000000,
+     "minimum": 771123,
+     "first_year_limit": 12000000,
+     "raise_limit": 1067036
+    }
+   },
+   "answer": {
+    "decider": "Yao Ming (simulated player, engine draw)",
+    "p_accept": 0.554,
+    "gap": 4.86,
+    "years_wanted": 5,
+    "wins": 37.0
+   },
+   "packet": "career/Dwyane_Wade/2005-06/League/Extension_Draws/2005-10-31-extension-mingya01.decision.json",
+   "outcome": "declined",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-princta01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Golden State Warriors",
+   "player": "Tayshaun Prince",
+   "bbr_id": "princta01",
+   "ledger_key": "princta01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 1763115,
+    "signed_date": "2002-07-02",
+    "length": 4,
+    "origin": "contract signed 2002-07-02 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Golden State Warriors (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 16.423,
+    "market_price": 8344730,
+    "price": 8344730,
+    "worth": 8344730,
+    "age": 25,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 1.6689,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "82 games, 37.7 minutes, 16.7 points, efficiency 17.5 a game (simulated 2004-05)",
+    "mpg": 37.7
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 41436333,
+    "earlier_offers": 0,
+    "offer": 8344730,
+    "after": 49781063,
+    "ceiling": 61700000,
+    "tax_line": 61700000,
+    "rule": "the tax line"
+   },
+   "club_call": {
+    "decision": "offer",
+    "how": "clear: worth $8,344,730 (price $8,344,730: market price $8,344,730 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 1.6689, at or above 1.2",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": {
+    "first_season": "2006-07",
+    "years": 5,
+    "first_salary": 8344730,
+    "raise": 876196,
+    "schedule": {
+     "2006-07": 8344730,
+     "2007-08": 9220926,
+     "2008-09": 10097122,
+     "2009-10": 10973318,
+     "2010-11": 11849514
+    },
+    "total": 50485610,
+    "route": "rookie_scale_extension",
+    "limits": {
+     "max_new_seasons": 5,
+     "maximum": 12000000,
+     "minimum": 771123,
+     "first_year_limit": 12000000,
+     "raise_limit": 876196
+    }
+   },
+   "answer": {
+    "decider": "Tayshaun Prince (simulated player, engine draw)",
+    "p_accept": 0.631,
+    "gap": 6.15,
+    "years_wanted": 5,
+    "wins": 44.0
+   },
+   "packet": "career/Dwyane_Wade/2005-06/League/Extension_Draws/2005-10-31-extension-princta01.decision.json",
+   "outcome": "signed",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-wallabe01",
+   "day": "2005-10-31",
+   "kind": "veteran",
+   "club": "Detroit Pistons",
+   "player": "Ben Wallace",
+   "bbr_id": "wallabe01",
+   "ledger_key": "wallabe01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 6700000,
+    "signed_date": "2000-08-03",
+    "length": 6,
+    "origin": "contract signed 2000-08-03 (June 2003 contract inventory)",
+    "eligibility": "veteran: a 6-season contract (contract signed 2000-08-03 (June 2003 contract inventory)); 5 full years since 2000-08-03 by 2005-10-31, 4 required (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 15.368,
+    "market_price": 8004556,
+    "price": 8004556,
+    "worth": 8004556,
+    "age": 31,
+    "service_first": 10,
+    "mid_level": 5000000,
+    "core_ratio": 1.6009,
+    "planning_season": "2005-06",
+    "maximum": 16800000,
+    "minimum": 1138500,
+    "line": "74 games, 36.9 minutes, 10.3 points, efficiency 19.3 a game (simulated 2004-05)",
+    "mpg": 36.9
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 35793062,
+    "earlier_offers": 0,
+    "offer": 7403500,
+    "after": 43196562,
+    "ceiling": 61700000,
+    "tax_line": 61700000,
+    "rule": "the tax line"
+   },
+   "club_call": {
+    "decision": "offer",
+    "how": "clear: worth $8,004,556 (price $8,004,556: market price $8,004,556 for his production, inside the minimum $1,138,500 and his maximum $16,800,000 with 10 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 1.6009, at or above 1.2",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": {
+    "first_season": "2006-07",
+    "years": 3,
+    "first_salary": 7403500,
+    "raise": 703500,
+    "schedule": {
+     "2006-07": 7403500,
+     "2007-08": 8107000,
+     "2008-09": 8810500
+    },
+    "total": 24321000,
+    "route": "veteran_extension",
+    "limits": {
+     "max_new_seasons": 4,
+     "maximum": 16800000,
+     "minimum": 1138500,
+     "first_year_limit": 7403500,
+     "raise_limit": 703500
+    }
+   },
+   "answer": {
+    "decider": "Ben Wallace (simulated player, engine draw)",
+    "p_accept": 0.728,
+    "gap": 7.94,
+    "years_wanted": 3,
+    "wins": 42.0
+   },
+   "packet": "career/Dwyane_Wade/2005-06/League/Extension_Draws/2005-10-31-extension-wallabe01.decision.json",
+   "outcome": "declined",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-dickada01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Atlanta Hawks",
+   "player": "Dan Dickau",
+   "bbr_id": "dickada01",
+   "ledger_key": "dickada01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 1612587,
+    "signed_date": "2002-07-09",
+    "length": 4,
+    "origin": "contract signed 2002-07-09 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Atlanta Hawks (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 14.378,
+    "market_price": 6870549,
+    "price": 6870549,
+    "worth": 6870549,
+    "age": 27,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 1.3741,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "69 games, 34.0 minutes, 15.1 points, efficiency 16.4 a game (simulated 2004-05)",
+    "mpg": 34.0
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 42476909,
+    "earlier_offers": 0,
+    "offer": 6870549,
+    "after": 49347458,
+    "ceiling": 61700000,
+    "tax_line": 61700000,
+    "rule": "the tax line"
+   },
+   "club_call": {
+    "decision": "offer",
+    "how": "clear: worth $6,870,549 (price $6,870,549: market price $6,870,549 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 1.3741, at or above 1.2",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": {
+    "first_season": "2006-07",
+    "years": 4,
+    "first_salary": 6870549,
+    "raise": 721407,
+    "schedule": {
+     "2006-07": 6870549,
+     "2007-08": 7591956,
+     "2008-09": 8313363,
+     "2009-10": 9034770
+    },
+    "total": 31810638,
+    "route": "rookie_scale_extension",
+    "limits": {
+     "max_new_seasons": 5,
+     "maximum": 12000000,
+     "minimum": 771123,
+     "first_year_limit": 12000000,
+     "raise_limit": 721407
+    }
+   },
+   "answer": {
+    "decider": "Dan Dickau (simulated player, engine draw)",
+    "p_accept": 0.7,
+    "gap": 7.38,
+    "years_wanted": 4,
+    "wins": 44.0
+   },
+   "packet": "career/Dwyane_Wade/2005-06/League/Extension_Draws/2005-10-31-extension-dickada01.decision.json",
+   "outcome": "declined",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-hilarne01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Denver Nuggets",
+   "player": "Nene",
+   "bbr_id": "hilarne01",
+   "ledger_key": "hilarne01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 2870556,
+    "signed_date": "2002-07-23",
+    "length": 4,
+    "origin": "contract signed 2002-07-23 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Denver Nuggets (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 12.693,
+    "market_price": 5355118,
+    "price": 5355118,
+    "worth": 6693898,
+    "age": 23,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 1.3388,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "55 games, 28.2 minutes, 10.4 points, efficiency 13.9 a game (simulated 2004-05)",
+    "mpg": 28.2
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 25368694,
+    "earlier_offers": 0,
+    "offer": 5355118,
+    "after": 30723812,
+    "ceiling": 61700000,
+    "tax_line": 61700000,
+    "rule": "the tax line"
+   },
+   "club_call": {
+    "decision": "offer",
+    "how": "clear: worth $6,693,898 (price $5,355,118: market price $5,355,118 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules, x1.25 for a player 24 or younger) against 1 x the $5,000,000 mid-level: ratio 1.3388, at or above 1.2",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": {
+    "first_season": "2006-07",
+    "years": 5,
+    "first_salary": 5355118,
+    "raise": 562287,
+    "schedule": {
+     "2006-07": 5355118,
+     "2007-08": 5917405,
+     "2008-09": 6479692,
+     "2009-10": 7041979,
+     "2010-11": 7604266
+    },
+    "total": 32398460,
+    "route": "rookie_scale_extension",
+    "limits": {
+     "max_new_seasons": 5,
+     "maximum": 12000000,
+     "minimum": 771123,
+     "first_year_limit": 12000000,
+     "raise_limit": 562287
+    }
+   },
+   "answer": {
+    "decider": "Nene (simulated player, engine draw)",
+    "p_accept": 0.321,
+    "gap": 1.01,
+    "years_wanted": 5,
+    "wins": 29.0
+   },
+   "packet": "career/Dwyane_Wade/2005-06/League/Extension_Draws/2005-10-31-extension-hilarne01.decision.json",
+   "outcome": "signed",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-harrial01",
+   "day": "2005-10-31",
+   "kind": "veteran",
+   "club": "Indiana Pacers",
+   "player": "Al Harrington",
+   "bbr_id": "harrial01",
+   "ledger_key": "harrial01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 6957500,
+    "signed_date": "2001-11-01",
+    "length": 4,
+    "origin": "extension signed 2001-11-01 (June 2003 contract inventory)",
+    "eligibility": "veteran: an extended contract (extension signed 2001-11-01 (June 2003 contract inventory)); 3 full years since 2001-11-01 by 2005-10-31, 3 required (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 13.823,
+    "market_price": 6125293,
+    "price": 6125293,
+    "worth": 6125293,
+    "age": 25,
+    "service_first": 8,
+    "mid_level": 5000000,
+    "core_ratio": 1.2251,
+    "planning_season": "2005-06",
+    "maximum": 14400000,
+    "minimum": 1029873,
+    "line": "70 games, 36.8 minutes, 14.4 points, efficiency 14.9 a game (simulated 2004-05)",
+    "mpg": 36.8
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 70046393,
+    "earlier_offers": 0,
+    "offer": 6125293,
+    "after": 76171686,
+    "ceiling": 61700000,
+    "tax_line": 61700000,
+    "rule": "the tax line"
+   },
+   "club_call": {
+    "decision": "no_offer",
+    "how": "2006-07 payroll $70,046,393 + earlier offers $0 + $6,125,293 = $76,171,686 passes $61,700,000 (the tax line)",
+    "p_offer": null,
+    "blocked": "payroll"
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-dunlemi02",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Golden State Warriors",
+   "player": "Mike Dunleavy",
+   "bbr_id": "dunlemi02",
+   "ledger_key": "dunlemi02",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 4506261,
+    "signed_date": "2002-07-07",
+    "length": 4,
+    "origin": "contract signed 2002-07-07 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Golden State Warriors (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 12.728,
+    "market_price": 5377375,
+    "price": 5377375,
+    "worth": 5377375,
+    "age": 25,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 1.0755,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "79 games, 32.3 minutes, 12.3 points, efficiency 13.7 a game (simulated 2004-05)",
+    "mpg": 32.3
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 41436333,
+    "earlier_offers": 8344730,
+    "offer": 5377375,
+    "after": 55158438,
+    "ceiling": 61700000,
+    "tax_line": 61700000,
+    "rule": "the tax line"
+   },
+   "club_call": {
+    "decision": "draw",
+    "how": "close call drawn by the engine: worth $5,377,375 (price $5,377,375: market price $5,377,375 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 1.0755, inside 0.8-1.2, P(offer) 0.689",
+    "p_offer": 0.689,
+    "blocked": null
+   },
+   "offer": {
+    "first_season": "2006-07",
+    "years": 5,
+    "first_salary": 5377375,
+    "raise": 564624,
+    "schedule": {
+     "2006-07": 5377375,
+     "2007-08": 5941999,
+     "2008-09": 6506623,
+     "2009-10": 7071247,
+     "2010-11": 7635871
+    },
+    "total": 32533115,
+    "route": "rookie_scale_extension",
+    "limits": {
+     "max_new_seasons": 5,
+     "maximum": 12000000,
+     "minimum": 771123,
+     "first_year_limit": 12000000,
+     "raise_limit": 564624
+    }
+   },
+   "answer": {
+    "decider": "Mike Dunleavy (simulated player, engine draw)",
+    "p_accept": 0.631,
+    "gap": 6.15,
+    "years_wanted": 5,
+    "wins": 44.0
+   },
+   "packet": "career/Dwyane_Wade/2005-06/League/Extension_Draws/2005-10-31-extension-dunlemi02.decision.json",
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-moblecu01",
+   "day": "2005-10-31",
+   "kind": "veteran",
+   "club": "Houston Rockets",
+   "player": "Cuttino Mobley",
+   "bbr_id": "moblecu01",
+   "ledger_key": "moblecu01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 6374875,
+    "signed_date": "2000-08-02",
+    "length": 6,
+    "origin": "contract signed 2000-08-02 (June 2003 contract inventory)",
+    "eligibility": "veteran: a 6-season contract (contract signed 2000-08-02 (June 2003 contract inventory)); 5 full years since 2000-08-02 by 2005-10-31, 4 required (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 12.116,
+    "market_price": 4999811,
+    "price": 4999811,
+    "worth": 4999811,
+    "age": 30,
+    "service_first": 8,
+    "mid_level": 5000000,
+    "core_ratio": 1.0,
+    "planning_season": "2005-06",
+    "maximum": 14400000,
+    "minimum": 1029873,
+    "line": "66 games, 37.7 minutes, 16.2 points, efficiency 14.2 a game (simulated 2004-05)",
+    "mpg": 37.7
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 28100460,
+    "earlier_offers": 10162254,
+    "offer": 4999811,
+    "after": 43262525,
+    "ceiling": 61700000,
+    "tax_line": 61700000,
+    "rule": "the tax line"
+   },
+   "club_call": {
+    "decision": "draw",
+    "how": "close call drawn by the engine: worth $4,999,811 (price $4,999,811: market price $4,999,811 for his production, inside the minimum $1,029,873 and his maximum $14,400,000 with 8 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 1.0, inside 0.8-1.2, P(offer) 0.5",
+    "p_offer": 0.5,
+    "blocked": null
+   },
+   "offer": {
+    "first_season": "2006-07",
+    "years": 3,
+    "first_salary": 4999811,
+    "raise": 524980,
+    "schedule": {
+     "2006-07": 4999811,
+     "2007-08": 5524791,
+     "2008-09": 6049771
+    },
+    "total": 16574373,
+    "route": "veteran_extension",
+    "limits": {
+     "max_new_seasons": 4,
+     "maximum": 14400000,
+     "minimum": 1029873,
+     "first_year_limit": 7044236,
+     "raise_limit": 669361
+    }
+   },
+   "answer": {
+    "decider": "Cuttino Mobley (simulated player, engine draw)",
+    "p_accept": 0.61,
+    "gap": 5.79,
+    "years_wanted": 3,
+    "wins": 37.0
+   },
+   "packet": "career/Dwyane_Wade/2005-06/League/Extension_Draws/2005-10-31-extension-moblecu01.decision.json",
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-jeffrja01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Washington Wizards",
+   "player": "Jared Jeffries",
+   "bbr_id": "jeffrja01",
+   "ledger_key": "jeffrja01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 2433824,
+    "signed_date": "2002-07-10",
+    "length": 4,
+    "origin": "contract signed 2002-07-10 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Washington Wizards (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 9.314,
+    "market_price": 3582776,
+    "price": 3582776,
+    "worth": 4478470,
+    "age": 23,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 0.8957,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "77 games, 26.7 minutes, 6.8 points, efficiency 9.5 a game (simulated 2004-05)",
+    "mpg": 26.7
+   },
+   "payroll": {
+    "first_season": "2006-07",
+    "committed": 62167029,
+    "earlier_offers": 0,
+    "offer": 3582776,
+    "after": 65749805,
+    "ceiling": 61700000,
+    "tax_line": 61700000,
+    "rule": "the tax line"
+   },
+   "club_call": {
+    "decision": "no_offer",
+    "how": "2006-07 payroll $62,167,029 + earlier offers $0 + $3,582,776 = $65,749,805 passes $61,700,000 (the tax line)",
+    "p_offer": null,
+    "blocked": "payroll"
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-jonesfr01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Houston Rockets",
+   "player": "Fred Jones",
+   "bbr_id": "jonesfr01",
+   "ledger_key": "jonesfr01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 2328843,
+    "signed_date": "2002-07-05",
+    "length": 4,
+    "origin": "contract signed 2002-07-05 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Indiana Pacers (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 9.822,
+    "market_price": 3805824,
+    "price": 3805824,
+    "worth": 3805824,
+    "age": 26,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 0.7612,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "79 games, 30.5 minutes, 11.6 points, efficiency 10.4 a game (simulated 2004-05)",
+    "mpg": 30.5
+   },
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "clear: worth $3,805,824 (price $3,805,824: market price $3,805,824 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 0.7612, at or below 0.8",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-butleca01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Miami Heat",
+   "player": "Caron Butler",
+   "bbr_id": "butleca01",
+   "ledger_key": "butleca01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 2461617,
+    "signed_date": "2002-07-02",
+    "length": 4,
+    "origin": "contract signed 2002-07-02 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Miami Heat (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 9.803,
+    "market_price": 3797198,
+    "price": 3797198,
+    "worth": 3797198,
+    "age": 25,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 0.7594,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "75 games, 25.1 minutes, 11.6 points, efficiency 10.6 a game (simulated 2004-05)",
+    "mpg": 25.1
+   },
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "clear: worth $3,797,198 (price $3,797,198: market price $3,797,198 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 0.7594, at or below 0.8",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-jacobca01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Phoenix Suns",
+   "player": "Casey Jacobsen",
+   "bbr_id": "jacobca01",
+   "ledger_key": "jacobca01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 1780153,
+    "signed_date": "2002-07-05",
+    "length": 4,
+    "origin": "contract signed 2002-07-05 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Phoenix Suns (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 6.777,
+    "market_price": 2649510,
+    "price": 2649510,
+    "worth": 3311888,
+    "age": 24,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 0.6624,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "82 games, 21.7 minutes, 7.0 points, efficiency 6.6 a game (simulated 2004-05)",
+    "mpg": 21.7
+   },
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "clear: worth $3,311,888 (price $2,649,510: market price $2,649,510 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules, x1.25 for a player 24 or younger) against 1 x the $5,000,000 mid-level: ratio 0.6624, at or below 0.8",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-rushka01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Los Angeles Lakers",
+   "player": "Kareem Rush",
+   "bbr_id": "rushka01",
+   "ledger_key": "rushka01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 1810616,
+    "signed_date": "2002-07-03",
+    "length": 4,
+    "origin": "contract signed 2002-07-03 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Los Angeles Lakers (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 8.607,
+    "market_price": 3293808,
+    "price": 3293808,
+    "worth": 3293808,
+    "age": 25,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 0.6588,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "51 games, 27.3 minutes, 10.6 points, efficiency 9.5 a game (simulated 2004-05)",
+    "mpg": 27.3
+   },
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "clear: worth $3,293,808 (price $3,293,808: market price $3,293,808 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 0.6588, at or below 0.8",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-battito01",
+   "day": "2005-10-31",
+   "kind": "veteran",
+   "club": "Golden State Warriors",
+   "player": "Tony Battie",
+   "bbr_id": "battito01",
+   "ledger_key": "battito01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 5200000,
+    "signed_date": "1999-10-15",
+    "length": 6,
+    "origin": "extension signed 1999-10-15 (June 2003 contract inventory)",
+    "eligibility": "veteran: an extended contract (extension signed 1999-10-15 (June 2003 contract inventory)); 6 full years since 1999-10-15 by 2005-10-31, 3 required (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 7.413,
+    "market_price": 2857590,
+    "price": 2857590,
+    "worth": 2857590,
+    "age": 29,
+    "service_first": 9,
+    "mid_level": 5000000,
+    "core_ratio": 0.5715,
+    "planning_season": "2005-06",
+    "maximum": 14400000,
+    "minimum": 1035000,
+    "line": "80 games, 25.1 minutes, 5.4 points, efficiency 8.4 a game (simulated 2004-05)",
+    "mpg": 25.1
+   },
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "clear: worth $2,857,590 (price $2,857,590: market price $2,857,590 for his production, inside the minimum $1,035,000 and his maximum $14,400,000 with 9 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 0.5715, at or below 0.8",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-salmojo01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Philadelphia 76ers",
+   "player": "John Salmons",
+   "bbr_id": "salmojo01",
+   "ledger_key": "salmojo01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 1669001,
+    "signed_date": "2002-07-12",
+    "length": 4,
+    "origin": "contract signed 2002-07-12 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Philadelphia 76ers (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 6.924,
+    "market_price": 2696059,
+    "price": 2696059,
+    "worth": 2696059,
+    "age": 25,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 0.5392,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "58 games, 23.1 minutes, 5.1 points, efficiency 7.3 a game (simulated 2004-05)",
+    "mpg": 23.1
+   },
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "clear: worth $2,696,059 (price $2,696,059: market price $2,696,059 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 0.5392, at or below 0.8",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-wilcoch01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Los Angeles Clippers",
+   "player": "Chris Wilcox",
+   "bbr_id": "wilcoch01",
+   "ledger_key": "wilcoch01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 2812239,
+    "signed_date": "2002-07-31",
+    "length": 4,
+    "origin": "contract signed 2002-07-31 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Los Angeles Clippers (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 4.527,
+    "market_price": 2027457,
+    "price": 2027457,
+    "worth": 2534321,
+    "age": 23,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 0.5069,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "50 games, 6.9 minutes, 2.9 points, efficiency 3.0 a game (simulated 2004-05)",
+    "mpg": 6.9
+   },
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "clear: worth $2,534,321 (price $2,027,457: market price $2,027,457 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules, x1.25 for a player 24 or younger) against 1 x the $5,000,000 mid-level: ratio 0.5069, at or below 0.8",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-haislma01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Milwaukee Bucks",
+   "player": "Marcus Haislip",
+   "bbr_id": "haislma01",
+   "ledger_key": "haislma01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 2000600,
+    "signed_date": "2002-07-19",
+    "length": 4,
+    "origin": "contract signed 2002-07-19 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Milwaukee Bucks (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 4.055,
+    "market_price": 1916809,
+    "price": 1916809,
+    "worth": 2396011,
+    "age": 24,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 0.4792,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "82 games, 5.5 minutes, 2.0 points, efficiency 2.4 a game (simulated 2004-05)",
+    "mpg": 5.5
+   },
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "clear: worth $2,396,011 (price $1,916,809: market price $1,916,809 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules, x1.25 for a player 24 or younger) against 1 x the $5,000,000 mid-level: ratio 0.4792, at or below 0.8",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-dixonju01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Washington Wizards",
+   "player": "Juan Dixon",
+   "bbr_id": "dixonju01",
+   "ledger_key": "dixonju01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 2070835,
+    "signed_date": "2002-07-11",
+    "length": 4,
+    "origin": "contract signed 2002-07-11 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Washington Wizards (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": {
+    "value": 4.808,
+    "market_price": 2096424,
+    "price": 2096424,
+    "worth": 2096424,
+    "age": 27,
+    "service_first": 4,
+    "mid_level": 5000000,
+    "core_ratio": 0.4193,
+    "planning_season": "2005-06",
+    "maximum": 12000000,
+    "minimum": 771123,
+    "line": "73 games, 10.6 minutes, 4.6 points, efficiency 4.7 a game (simulated 2004-05)",
+    "mpg": 10.6
+   },
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "clear: worth $2,096,424 (price $2,096,424: market price $2,096,424 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 0.4193, at or below 0.8",
+    "p_offer": null,
+    "blocked": null
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-delkto01",
+   "day": "2005-10-31",
+   "kind": "veteran",
+   "club": "Minnesota Timberwolves",
+   "player": "Tony Delk",
+   "bbr_id": "delkto01",
+   "ledger_key": "delkto01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 3375000,
+    "signed_date": "2000-08-01",
+    "length": 6,
+    "origin": "contract signed 2000-08-01 (June 2003 contract inventory)",
+    "eligibility": "veteran: a 6-season contract (contract signed 2000-08-01 (June 2003 contract inventory)); 5 full years since 2000-08-01 by 2005-10-31, 4 required (cbafaq05 Q52)"
+   },
+   "evidence": null,
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "his real career has no 2006-07 season (runtime/availability.py)",
+    "p_offer": null,
+    "blocked": "retired"
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-welscji01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Boston Celtics",
+   "player": "Jiri Welsch",
+   "bbr_id": "welscji01",
+   "ledger_key": "welscji01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 2177114,
+    "signed_date": null,
+    "length": null,
+    "origin": "rookie-scale contract",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Boston Celtics (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": null,
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "his real career has no 2006-07 season (runtime/availability.py)",
+    "p_offer": null,
+    "blocked": "retired"
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  },
+  {
+   "id": "2005-10-31-extension-woodsqy01",
+   "day": "2005-10-31",
+   "kind": "rookie_scale",
+   "club": "Los Angeles Lakers",
+   "player": "Qyntel Woods",
+   "bbr_id": "woodsqy01",
+   "ledger_key": "woodsqy01",
+   "wade": false,
+   "contract": {
+    "final_season": "2005-06",
+    "last_salary": 1795757,
+    "signed_date": "2002-07-12",
+    "length": 4,
+    "origin": "contract signed 2002-07-12 (June 2003 contract inventory)",
+    "eligibility": "rookie scale: the 2005-06 team option exercised on 2004-10-31 by Charlotte Bobcats (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52)"
+   },
+   "evidence": null,
+   "payroll": null,
+   "club_call": {
+    "decision": "no_offer",
+    "how": "his real career has no 2006-07 season (runtime/availability.py)",
+    "p_offer": null,
+    "blocked": "retired"
+   },
+   "offer": null,
+   "answer": null,
+   "packet": null,
+   "outcome": "no_offer",
+   "recorded_on": "2005-10-31",
+   "applied": "2005-10-31"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-31",
+ "decider": "Nene (simulated player, engine draw)",
+ "event_id": "2005-10-31-extension-hilarne01",
+ "kind": "decision",
+ "options": {
+  "declined": 0.679,
+  "signed": 0.321
+ },
+ "outcome": "signed",
+ "question": "Does Nene sign Denver Nuggets's 5-season rookie-scale extension from 2006-07 ($5,355,118 in 2006-07, raises of $562,287 a season, $32,398,460 in all)?"
+}

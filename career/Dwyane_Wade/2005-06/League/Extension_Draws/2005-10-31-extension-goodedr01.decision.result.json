@@ -1,0 +1,12 @@
+{
+ "date": "2005-10-31",
+ "decider": "Drew Gooden (simulated player, engine draw)",
+ "event_id": "2005-10-31-extension-goodedr01",
+ "kind": "decision",
+ "options": {
+  "declined": 0.312,
+  "signed": 0.688
+ },
+ "outcome": "signed",
+ "question": "Does Drew Gooden sign Orlando Magic's 5-season rookie-scale extension from 2006-07 ($8,213,079 in 2006-07, raises of $862,373 a season, $49,689,125 in all)?"
+}

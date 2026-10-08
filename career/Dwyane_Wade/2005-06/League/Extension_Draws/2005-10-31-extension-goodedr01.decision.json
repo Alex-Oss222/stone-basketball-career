@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-10-31-extension-goodedr01",
+ "date": "2005-10-31",
+ "question": "Does Drew Gooden sign Orlando Magic's 5-season rookie-scale extension from 2006-07 ($8,213,079 in 2006-07, raises of $862,373 a season, $49,689,125 in all)?",
+ "decider": "Drew Gooden (simulated player, engine draw)",
+ "options": {
+  "signed": 0.688,
+  "declined": 0.312
+ },
+ "basis": "Club: clear: worth $10,266,349 (price $8,213,079: market price $8,213,079 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules, x1.25 for a player 24 or younger) against 1 x the $5,000,000 mid-level: ratio 2.0533, at or above 1.2; 2006-07 payroll $50,650,696 with this offer, within $61,700,000 (the tax line). Player: utility gap +7.17 (this extension at Orlando Magic against free agency next summer at his price with a league-average club, runtime/player_utility.py, no drawn priority) gives P(sign) 0.688. Eligibility: rookie scale: the 2005-06 team option exercised on 2004-10-31 by Orlando Magic (runtime/options.py); the window runs to 2005-10-31 (cbafaq05 Q52) (runtime/extensions.py)."
+}

@@ -1,0 +1,13 @@
+{
+ "date": "2005-10-31",
+ "decider": "Golden State Warriors (drawn by rule) and Mike Dunleavy (simulated player)",
+ "event_id": "2005-10-31-extension-dunlemi02",
+ "kind": "decision",
+ "options": {
+  "declined": 0.254241,
+  "no_offer": 0.311,
+  "signed": 0.434759
+ },
+ "outcome": "no_offer",
+ "question": "Does Golden State Warriors offer Mike Dunleavy a 5-season rookie-scale extension from 2006-07 ($5,377,375 in 2006-07, raises of $564,624 a season, $32,533,115 in all), and does he sign it?"
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-10-31-extension-onealsh01",
+ "date": "2005-10-31",
+ "question": "Does Shaquille O'Neal sign Los Angeles Lakers's 2-season veteran extension from 2006-07 ($13,835,054 in 2006-07, raises of $1,452,680 a season, $29,122,788 in all)?",
+ "decider": "Shaquille O'Neal (simulated player, engine draw)",
+ "options": {
+  "signed": 0.862,
+  "declined": 0.138
+ },
+ "basis": "Club: clear: worth $13,835,054 (price $13,835,054: market price $13,835,054 for his production, inside the minimum $1,138,500 and his maximum $32,175,004 with 14 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 2.767, at or above 1.2; 2006-07 payroll $39,583,859 with this offer, within $83,295,000 (a player priced at 2 mid-levels or more: 35% over the tax line or 17.5% over the committed payroll). Player: utility gap +11.32 (this extension at Los Angeles Lakers against free agency next summer at his price with a league-average club, runtime/player_utility.py, no drawn priority) gives P(sign) 0.862. Eligibility: veteran: an extended contract (extension signed 2000-10-13 (June 2003 contract inventory)); 5 full years since 2000-10-13 by 2005-10-31, 3 required (cbafaq05 Q52) (runtime/extensions.py)."
+}

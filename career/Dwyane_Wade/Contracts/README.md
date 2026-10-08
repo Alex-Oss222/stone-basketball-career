@@ -24,7 +24,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Alton Ford](players/fordal02.md) | Free agent | under contract | Alton Ford · 2003-09-29 | 2 |
 | [Alvin Williams](players/willial02.md) | Chicago Bulls | under contract | Alvin Williams · 2005-09-16 | 1 |
 | [Amal McCaskill](players/mccasam01.md) | Free agent | under contract | Amal McCaskill · 2003-07-16 | 1 |
-| [Amar'e Stoudemire](players/stoudam01.md) | Phoenix Suns | under rookie contract | Amar'e Stoudemire · 2002-07-05 | 1 |
+| [Amar'e Stoudemire](players/stoudam01.md) | Phoenix Suns | under contract | Amar'e Stoudemire · 2002-07-05 | 2 |
 | [Anderson Varejão](players/andersonvarejo.md) | Golden State Warriors | under contract | Anderson Varejão · 2004-07-01 | 1 |
 | [Andre Barrett](players/andrebarrett.md) | Atlanta Hawks | under contract | Andre Barrett · 2005-09-30 | 2 |
 | [Andre Emmett](players/andreemmett.md) | Free agent | under contract | No verified current agreement | 1 |
@@ -173,7 +173,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Dorell Wright](players/wrighdo01.md) | Utah Jazz | under rookie contract | Dorell Wright · 2004-07-01 | 1 |
 | [Doug Christie](players/chrisdo01.md) | Houston Rockets | under contract | Doug Christie · existing contract; signing date not recorded | 1 |
 | [Doug Overton](players/overtdo01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
-| [Drew Gooden](players/goodedr01.md) | Orlando Magic | under rookie contract | Drew Gooden · 2002-07-02 | 1 |
+| [Drew Gooden](players/goodedr01.md) | Orlando Magic | under contract | Drew Gooden · 2002-07-02 | 2 |
 | [Dwight Howard](players/howardw01.md) | Orlando Magic | under contract | Dwight Howard · 2004-07-01 | 1 |
 | [Dwyane Wade](players/wadedw01.md) | Miami Heat | under contract | Dwyane Wade · 2003-07-21 | 1 |
 | [Earl Boykins](players/boykiea01.md) | Denver Nuggets | under contract | Earl Boykins · 2003-08-18 | 2 |
@@ -412,7 +412,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Ndudi Ebi](players/ebind01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Nedzad Sinanovic](players/sinanne01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Nenad Krstić](players/nenadkrsti.md) | New York Knicks | under contract | Nenad Krstić · 2005-08-26 | 2 |
-| [Nene](players/hilarne01.md) | Denver Nuggets | under rookie contract | Nene · 2002-07-23 | 1 |
+| [Nene](players/hilarne01.md) | Denver Nuggets | under contract | Nene · 2002-07-23 | 2 |
 | [Nick Collison](players/collini01.md) | Seattle SuperSonics | under contract | Nick Collison · 2005-09-30 | 1 |
 | [Nick Van Exel](players/vanexni01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
 | [Nikoloz Tskitishvili](players/tskitni01.md) | Houston Rockets | under contract | Nikoloz Tskitishvili · 2005-09-23 | 2 |
@@ -499,7 +499,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Shandon Anderson](players/andersh01.md) | New York Knicks | under contract | Shandon Anderson · existing contract; signing date not recorded | 1 |
 | [Shane Battier](players/battish01.md) | New Orleans/Oklahoma City Hornets | under contract | Shane Battier · 2005-09-02 | 2 |
 | [Shane Heal](players/healsh01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
-| [Shaquille O'Neal](players/onealsh01.md) | Los Angeles Lakers | under contract | Shaquille O'Neal · 2000-10-13 | 1 |
+| [Shaquille O'Neal](players/onealsh01.md) | Los Angeles Lakers | under contract | Shaquille O'Neal · 2000-10-13 | 2 |
 | [Shareef Abdur-Rahim](players/abdursh01.md) | Atlanta Hawks | under contract | Shareef Abdur-Rahim · 2005-08-02 | 2 |
 | [Shaun Livingston](players/shaunlivingston.md) | Charlotte Bobcats | under contract | Shaun Livingston · 2004-07-01 | 1 |
 | [Shawn Bradley](players/bradlsh01.md) | Free agent | under contract | Shawn Bradley · existing contract; signing date not recorded | 1 |
@@ -524,7 +524,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [T.J. Ford](players/fordtj01.md) | Minnesota Timberwolves | under contract | T.J. Ford · 2005-08-02 | 1 |
 | [Tamar Slay](players/slayta01.md) | Free agent | minimum contract unverified | No verified current agreement | 0 |
 | [Tariq Abdul-Wahad](players/abdulta01.md) | Free agent | under contract | Tariq Abdul-Wahad · 2000-08-01 | 1 |
-| [Tayshaun Prince](players/princta01.md) | Golden State Warriors | under rookie contract | Tayshaun Prince · 2002-07-02 | 1 |
+| [Tayshaun Prince](players/princta01.md) | Golden State Warriors | under contract | Tayshaun Prince · 2002-07-02 | 2 |
 | [Terence Morris](players/morrite01.md) | Philadelphia 76ers | under contract | Terence Morris · 2005-08-02 | 1 |
 | [Theo Ratliff](players/ratlith01.md) | Free agent | released | No verified current agreement | 2 |
 | [Theron Smith](players/smithth01.md) | Free agent | under contract | Theron Smith · 2003-07-16 | 1 |
