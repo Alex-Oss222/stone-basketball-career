@@ -1,0 +1,14 @@
+{
+ "requests": [
+  {
+   "date": "2005-10-31",
+   "subject": "free_agent_target",
+   "player": "Trevor Ariza",
+   "bbr_id": "arizatr01",
+   "requested": "pursue",
+   "words": "Ask to go after him.",
+   "note": "The same request for the 2006 summer market, read by runtime/free_agency_2004.py for 2006 (this folder is the 2006 market's): if Ariza is still unsigned after 2005-06 (an unrestricted free agent, having played the season on his qualifying offer), Miami's front office moves him up its list by Wade's standing weight and may pay up to 110% of its valuation; it sets the terms, other clubs bid and Ariza answers by engine draw. Miami's 2006-07 commitments are $63,325,002 on the date, so without room the route is an exception (the mid-level of the 2006-07 rules once published). No term preference stated.",
+   "source_ref": "career/Dwyane_Wade/2005-06/04_Training_Camp/note.md"
+  }
+ ]
+}

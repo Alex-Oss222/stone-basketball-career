@@ -7,6 +7,7 @@ status: active
 
 ## Player decisions
 - 2005-10-31: Wade files his extension terms for Miami's 2006-10-31 extension day: five additional seasons from 2007-08, the first year 20% below his fair market value, four guaranteed seasons and a Miami team option in 2011-12; if Miami does not offer, he plays out his rookie contract. Records: `Wade_Extension_Outlook_2005-10-31.md`, `wade_requests.json` (`extension_terms`).
+- 2005-10-31: Wade asks the front office to go after Trevor Ariza (Los Angeles Lakers): in-season trade (tradable from 2005-12-30; Miami must send out at least his $816,748 because its payroll is above the owner's tax-line ceiling) and, failing that, the 2006 summer market. Records: `wade_requests.json` (`trade_target`), `../10_Free_Agency/wade_requests.json` (`free_agent_target`).
 
 ## Events
 - 2005-10-04: Camp opens with 20 players: 6 invitees on non-guaranteed minimums (Theo Ratliff, Bonzi Wells, Adonal Foyle, Jumaine Jones, Sam Cassell, Kwame Brown). Record: `camp_roster.json`.

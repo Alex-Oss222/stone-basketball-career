@@ -18,6 +18,16 @@
    "words": "I want to remain with the Miami Heat long term and help this organization build a championship-caliber roster. When I become eligible to negotiate my extension, my preferred starting point is 20% below my established fair market value. I am willing to discuss a five-season extension with four guaranteed seasons and a team option in the fifth year. I understand that the final terms must comply with the collective bargaining agreement and be agreed upon by Miami's front office. The purpose of the discount is to provide meaningful financial flexibility for the team.",
    "note": "Wade's terms for his rookie-scale extension: five additional seasons from 2007-08 (to 2011-12), the first year 20% below his fair market value on Miami's decision day (the front office's own market benchmark for his production within his minimum and maximum, set on 2006-10-31 from the closed 2005-06 season; the user's $12 million figure was an illustration only), the first four seasons fully guaranteed, the fifth a Miami team option, raises up to 10.5% of the first-year salary (cbafaq05 Q52), no no-trade clause. Legal as filed: one option season, the last (Q51), inside the five seasons a rookie-scale extension allows (Q52). Miami decides whether to offer by its own rule on 2006-10-31 (runtime/extensions.py) and adopts each term that is legal and at least as favourable to it as its rule; the offer then waits for the user's own accept or decline. If Miami does not offer, Wade plays out his rookie contract (2006-07 option exercised 2005-10-31).",
    "source_ref": "career/Dwyane_Wade/2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
+  },
+  {
+   "date": "2005-10-31",
+   "subject": "trade_target",
+   "player": "Trevor Ariza",
+   "bbr_id": "arizatr01",
+   "requested": "pursue",
+   "words": "Ask to go after him.",
+   "note": "Wade asks the front office to go after Trevor Ariza (Los Angeles Lakers, SF). On the date Ariza plays 2005-06 on the one-season $816,748 qualifying offer he accepted from the Lakers on 2005-09-30 (career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json); he was undrafted in the simulated 2004 draft, signed by Detroit on 2004-07-14 and traded to the Lakers on 2005-01-03. As a newly signed contract he cannot be traded before 2005-12-30 (three months after signing, or December 15 if later; cbafaq05 Q83). Miami's 2005-06 payroll ($67,315,693) is above the $61,700,000 luxury-tax line that is the owner's ceiling, so a trade may not raise it: Miami must send out at least his salary. The request weighs on Miami's in-season trade ranking by Wade's standing (runtime/trades.py); the Lakers decide their answer by engine draw; Miami may decline to pursue him. Not a star under the consultation rule.",
+   "source_ref": "career/Dwyane_Wade/2005-06/04_Training_Camp/note.md"
   }
  ]
 }
