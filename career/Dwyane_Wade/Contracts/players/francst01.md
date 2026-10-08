@@ -2,9 +2,9 @@
 
 # Contract | Steve Francis
 
-Known through: 2005-07-31. [Open interactive contract](francst01.html#contract) · [Contract history](francst01.html#contract-history)
+Known through: 2005-08-07. [Open interactive contract](francst01.html#contract) · [Contract history](francst01.html#contract-history)
 
-Steve Francis: under contract. Evidence cutoff: 2005-07-31.
+Steve Francis: under contract. Evidence cutoff: 2005-08-07.
 
 ## Current contract
 

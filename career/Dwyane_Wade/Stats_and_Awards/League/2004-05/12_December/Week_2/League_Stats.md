@@ -4,7 +4,7 @@
 
 NBA regular season · December 8-14, 2004
 
-407 tracked players · 53 closed games in this record · Through July 31, 2005.
+407 tracked players · 53 closed games in this record · Through August 7, 2005.
 
 ## Leaders
 

@@ -2,9 +2,9 @@
 
 # Contract | Fred Hoiberg
 
-Known through: 2005-07-31. [Open interactive contract](hoibefr01.html#contract) · [Contract history](hoibefr01.html#contract-history)
+Known through: 2005-08-07. [Open interactive contract](hoibefr01.html#contract) · [Contract history](hoibefr01.html#contract-history)
 
-Fred Hoiberg: under contract. Evidence cutoff: 2005-07-31.
+Fred Hoiberg: under contract. Evidence cutoff: 2005-08-07.
 
 ## Current contract
 
