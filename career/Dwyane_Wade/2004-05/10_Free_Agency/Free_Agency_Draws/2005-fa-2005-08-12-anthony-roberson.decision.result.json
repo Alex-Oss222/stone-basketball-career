@@ -1,0 +1,19 @@
+{
+ "date": "2005-08-12",
+ "decider": "Anthony Roberson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-12-anthony-roberson",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.009493,
+  "Indiana Pacers": 0.055869,
+  "Minnesota Timberwolves": 0.020196,
+  "New Jersey Nets": 0.019308,
+  "New York Knicks": 0.026856,
+  "Seattle SuperSonics": 0.091882,
+  "Toronto Raptors": 0.478427,
+  "Utah Jazz": 0.007969,
+  "wait": 0.29
+ },
+ "outcome": "Indiana Pacers",
+ "question": "2005 free agency, 2005-08-12: which offer does Anthony Roberson accept (Golden State Warriors $398,762 x 1, Indiana Pacers $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New York Knicks $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Utah Jazz $398,762 x 1), or does he wait?"
+}

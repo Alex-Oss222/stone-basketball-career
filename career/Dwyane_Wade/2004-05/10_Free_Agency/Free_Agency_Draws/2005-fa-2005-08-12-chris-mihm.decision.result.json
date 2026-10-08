@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-12",
+ "decider": "Chris Mihm (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-12-chris-mihm",
+ "kind": "decision",
+ "options": {
+  "Phoenix Suns": 0.71,
+  "wait": 0.29
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-08-12: which offer does Chris Mihm accept (Phoenix Suns $5,700,798 x 5), or does he wait?"
+}

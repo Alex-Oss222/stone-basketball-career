@@ -1,0 +1,14 @@
+{
+ "date": "2005-08-12",
+ "decider": "Linas Kleiza (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-12-linas-kleiza",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.020382,
+  "Houston Rockets": 0.638855,
+  "New Orleans Hornets": 0.050763,
+  "wait": 0.29
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-08-12: which offer does Linas Kleiza accept (Charlotte Bobcats $398,762 x 1, Houston Rockets $398,762 x 1, New Orleans Hornets $398,762 x 1), or does he wait?"
+}

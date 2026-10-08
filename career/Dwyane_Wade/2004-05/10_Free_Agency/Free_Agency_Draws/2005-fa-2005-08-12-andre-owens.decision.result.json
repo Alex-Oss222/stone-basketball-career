@@ -1,0 +1,26 @@
+{
+ "date": "2005-08-12",
+ "decider": "Andre Owens (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-12-andre-owens",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.039648,
+  "Dallas Mavericks": 0.229879,
+  "Golden State Warriors": 0.003669,
+  "Indiana Pacers": 0.019299,
+  "Memphis Grizzlies": 0.033367,
+  "Miami Heat": 0.010125,
+  "Minnesota Timberwolves": 0.006686,
+  "New Jersey Nets": 0.006376,
+  "New York Knicks": 0.010833,
+  "Orlando Magic": 0.025281,
+  "Portland Trail Blazers": 0.019299,
+  "Sacramento Kings": 0.059594,
+  "Seattle SuperSonics": 0.025281,
+  "Toronto Raptors": 0.218122,
+  "Utah Jazz": 0.002541,
+  "wait": 0.29
+ },
+ "outcome": "Dallas Mavericks",
+ "question": "2005 free agency, 2005-08-12: which offer does Andre Owens accept (Cleveland Cavaliers $398,762 x 1, Dallas Mavericks $398,762 x 1, Golden State Warriors $398,762 x 1, Indiana Pacers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Miami Heat $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New York Knicks $398,762 x 1, Orlando Magic $398,762 x 1, Portland Trail Blazers $398,762 x 1, Sacramento Kings $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Utah Jazz $398,762 x 1), or does he wait?"
+}

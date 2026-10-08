@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-12-chris-mihm",
+ "date": "2005-08-12",
+ "question": "2005 free agency, 2005-08-12: which offer does Chris Mihm accept (Phoenix Suns $5,700,798 x 5), or does he wait?",
+ "decider": "Chris Mihm (simulated player, engine draw)",
+ "options": {
+  "Phoenix Suns": 0.71,
+  "wait": 0.29
+ },
+ "basis": "Ask $5,700,798; best offer 1.00 of the ask in total; accept chance 0.710; priority winning; utility Phoenix Suns 89.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,20 @@
+{
+ "date": "2005-08-12",
+ "decider": "Dwayne Jones (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-12-dwayne-jones",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.254938,
+  "Charlotte Bobcats": 0.00109,
+  "Chicago Bulls": 0.019956,
+  "Detroit Pistons": 0.258791,
+  "Houston Rockets": 0.125339,
+  "Los Angeles Lakers": 0.005921,
+  "Milwaukee Bucks": 0.018653,
+  "New Orleans Hornets": 0.005996,
+  "Philadelphia 76ers": 0.019318,
+  "wait": 0.289998
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-08-12: which offer does Dwayne Jones accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Lakers $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Orleans Hornets $398,762 x 1, Philadelphia 76ers $398,762 x 1), or does he wait?"
+}

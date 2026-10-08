@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-12",
+ "decider": "Primo\u017e Brezec (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-12-primo-brezec",
+ "kind": "decision",
+ "options": {
+  "Toronto Raptors": 0.64168,
+  "wait": 0.35832
+ },
+ "outcome": "Toronto Raptors",
+ "question": "2005 free agency, 2005-08-12: which offer does Primo\u017e Brezec accept (Toronto Raptors $9,037,036 x 5), or does he wait?"
+}

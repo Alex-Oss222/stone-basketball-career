@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-summer-trade-2005-08-12-araujra01-harrida01-hoibefr01",
+ "date": "2005-08-12",
+ "question": "Do Denver Nuggets and Orlando Magic trade Fred Hoiberg and Rafael Araújo for David Harrison on 2005-08-12?",
+ "decider": "Denver Nuggets and Orlando Magic front offices (engine draw)",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "basis": "Gains on own objectives {'Denver Nuggets': 1.023, 'Orlando Magic': 0.648}; acceptance {'Denver Nuggets': 0.95, 'Orlando Magic': 0.95}; 1999 salary rule met (runtime/free_agency_2004.py summer trades)."
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-12",
+ "decider": "Denver Nuggets and Orlando Magic front offices (engine draw)",
+ "event_id": "2005-summer-trade-2005-08-12-araujra01-harrida01-hoibefr01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Denver Nuggets and Orlando Magic trade Fred Hoiberg and Rafael Ara\u00fajo for David Harrison on 2005-08-12?"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-12",
+ "decider": "Quinton Ross (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-12-quinton-ross",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.71,
+  "wait": 0.29
+ },
+ "outcome": "New Jersey Nets",
+ "question": "2005 free agency, 2005-08-12: which offer does Quinton Ross accept (New Jersey Nets $641,748 x 1), or does he wait?"
+}

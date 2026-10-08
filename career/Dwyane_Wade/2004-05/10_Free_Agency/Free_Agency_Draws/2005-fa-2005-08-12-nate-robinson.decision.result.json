@@ -1,0 +1,13 @@
+{
+ "date": "2005-08-12",
+ "decider": "Nate Robinson (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-12-nate-robinson",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.296951,
+  "New York Knicks": 0.413049,
+  "wait": 0.29
+ },
+ "outcome": "New Jersey Nets",
+ "question": "2005 free agency, 2005-08-12: which offer does Nate Robinson accept (New Jersey Nets $398,762 x 1, New York Knicks $398,762 x 1), or does he wait?"
+}

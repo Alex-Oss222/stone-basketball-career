@@ -1,0 +1,12 @@
+{
+ "date": "2005-08-12",
+ "decider": "Samaki Walker (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-12-samaki-walker",
+ "kind": "decision",
+ "options": {
+  "Washington Wizards": 0.683514,
+  "wait": 0.316486
+ },
+ "outcome": "Washington Wizards",
+ "question": "2005 free agency, 2005-08-12: which offer does Samaki Walker accept (Washington Wizards $1,457,430 x 4), or does he wait?"
+}

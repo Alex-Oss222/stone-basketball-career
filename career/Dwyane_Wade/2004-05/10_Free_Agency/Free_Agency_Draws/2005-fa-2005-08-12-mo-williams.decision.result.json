@@ -1,0 +1,14 @@
+{
+ "date": "2005-08-12",
+ "decider": "Mo Williams (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-08-12-mo-williams",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.055289,
+  "Cleveland Cavaliers": 0.192978,
+  "Utah Jazz": 0.017727,
+  "wait": 0.734006
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-08-12: which offer does Mo Williams accept (Chicago Bulls $5,000,000 x 5, Cleveland Cavaliers $5,000,000 x 5, Utah Jazz $5,000,000 x 5), or does he wait?"
+}

@@ -1,0 +1,14 @@
+{
+ "event_id": "2005-fa-2005-08-12-bernard-robinson",
+ "date": "2005-08-12",
+ "question": "2005 free agency, 2005-08-12: which offer does Bernard Robinson accept (New Jersey Nets $641,748 x 1, New York Knicks $641,748 x 1, Seattle SuperSonics $641,748 x 1, Utah Jazz $641,748 x 1), or does he wait?",
+ "decider": "Bernard Robinson (simulated player, engine draw)",
+ "options": {
+  "New Jersey Nets": 0.093884,
+  "New York Knicks": 0.13059,
+  "Seattle SuperSonics": 0.446779,
+  "Utah Jazz": 0.038747,
+  "wait": 0.29
+ },
+ "basis": "Ask $641,748; best offer 1.00 of the ask in total; accept chance 0.710; priority money; utility New Jersey Nets 40.2, New York Knicks 41.5, Seattle SuperSonics 46.5, Utah Jazz 36.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

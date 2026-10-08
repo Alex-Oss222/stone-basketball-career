@@ -1,0 +1,13 @@
+{
+ "event_id": "2005-fa-2005-08-12-mo-williams",
+ "date": "2005-08-12",
+ "question": "2005 free agency, 2005-08-12: which offer does Mo Williams accept (Chicago Bulls $5,000,000 x 5, Cleveland Cavaliers $5,000,000 x 5, Utah Jazz $5,000,000 x 5), or does he wait?",
+ "decider": "Mo Williams (simulated player, engine draw)",
+ "options": {
+  "Chicago Bulls": 0.055289,
+  "Cleveland Cavaliers": 0.192978,
+  "Utah Jazz": 0.017727,
+  "wait": 0.734006
+ },
+ "basis": "Ask $6,568,605; best offer 0.76 of the ask in total; accept chance 0.266; priority fame; utility Chicago Bulls 65.6, Cleveland Cavaliers 70.6, Utah Jazz 61.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

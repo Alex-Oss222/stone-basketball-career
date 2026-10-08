@@ -1,0 +1,23 @@
+{
+ "event_id": "2005-fa-2005-08-12-randy-holcomb",
+ "date": "2005-08-12",
+ "question": "2005 free agency, 2005-08-12: which offer does Randy Holcomb accept (Atlanta Hawks $398,762 x 1, Charlotte Bobcats $398,762 x 1, Chicago Bulls $398,762 x 1, Denver Nuggets $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, Milwaukee Bucks $398,762 x 1, New Orleans Hornets $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?",
+ "decider": "Randy Holcomb (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.043812,
+  "Charlotte Bobcats": 0.000187,
+  "Chicago Bulls": 0.003429,
+  "Denver Nuggets": 0.001448,
+  "Detroit Pistons": 0.044474,
+  "Houston Rockets": 0.02154,
+  "Los Angeles Clippers": 0.014188,
+  "Los Angeles Lakers": 0.001018,
+  "Milwaukee Bucks": 0.003206,
+  "New Orleans Hornets": 0.00103,
+  "Philadelphia 76ers": 0.00332,
+  "San Antonio Spurs": 0.571012,
+  "Washington Wizards": 0.001336,
+  "wait": 0.29
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.710; priority winning; utility Atlanta Hawks 53.8, Charlotte Bobcats 32.0, Chicago Bulls 43.6, Denver Nuggets 40.2, Detroit Pistons 53.9, Houston Rockets 51.0, Los Angeles Clippers 49.3, Los Angeles Lakers 38.8, Milwaukee Bucks 43.4, New Orleans Hornets 38.8, Philadelphia 76ers 43.5, San Antonio Spurs 64.1, Washington Wizards 39.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

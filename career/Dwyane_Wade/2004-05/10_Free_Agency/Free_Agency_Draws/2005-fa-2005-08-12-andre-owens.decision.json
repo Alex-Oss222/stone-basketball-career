@@ -1,0 +1,25 @@
+{
+ "event_id": "2005-fa-2005-08-12-andre-owens",
+ "date": "2005-08-12",
+ "question": "2005 free agency, 2005-08-12: which offer does Andre Owens accept (Cleveland Cavaliers $398,762 x 1, Dallas Mavericks $398,762 x 1, Golden State Warriors $398,762 x 1, Indiana Pacers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Miami Heat $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New York Knicks $398,762 x 1, Orlando Magic $398,762 x 1, Portland Trail Blazers $398,762 x 1, Sacramento Kings $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Utah Jazz $398,762 x 1), or does he wait?",
+ "decider": "Andre Owens (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.039648,
+  "Dallas Mavericks": 0.229879,
+  "Golden State Warriors": 0.003669,
+  "Indiana Pacers": 0.019299,
+  "Memphis Grizzlies": 0.033367,
+  "Miami Heat": 0.010125,
+  "Minnesota Timberwolves": 0.006686,
+  "New Jersey Nets": 0.006376,
+  "New York Knicks": 0.010833,
+  "Orlando Magic": 0.025281,
+  "Portland Trail Blazers": 0.019299,
+  "Sacramento Kings": 0.059594,
+  "Seattle SuperSonics": 0.025281,
+  "Toronto Raptors": 0.218122,
+  "Utah Jazz": 0.002541,
+  "wait": 0.29
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.710; priority loyalty; utility Cleveland Cavaliers 53.1, Dallas Mavericks 60.1, Golden State Warriors 43.6, Indiana Pacers 50.2, Memphis Grizzlies 52.4, Miami Heat 47.6, Minnesota Timberwolves 46.0, New Jersey Nets 45.8, New York Knicks 47.9, Orlando Magic 51.3, Portland Trail Blazers 50.2, Sacramento Kings 54.7, Seattle SuperSonics 51.3, Toronto Raptors 59.9, Utah Jazz 42.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

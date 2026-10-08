@@ -1,0 +1,85 @@
+{
+ "schema_version": 1,
+ "date": "2005-08-12",
+ "rule": "runtime/free_agency_2004.py Market.trade_proposals",
+ "deals": [
+  {
+   "date": "2005-08-12",
+   "clubs": [
+    "New Orleans Hornets",
+    "Toronto Raptors"
+   ],
+   "a": {
+    "club": "New Orleans Hornets",
+    "sends": [
+     "George Lynch",
+     "Doug Christie"
+    ],
+    "bbr_ids": [
+     "lynchge01",
+     "chrisdo01"
+    ],
+    "salary": 11400000
+   },
+   "b": {
+    "club": "Toronto Raptors",
+    "sends": [
+     "simiewa01"
+    ],
+    "bbr_ids": [
+     "simiewa01"
+    ],
+    "salary": 867720
+   },
+   "gain": {
+    "New Orleans Hornets": 0.712,
+    "Toronto Raptors": 1.083
+   },
+   "accept": {
+    "New Orleans Hornets": 0.95,
+    "Toronto Raptors": 0.95
+   },
+   "both": 0.9025,
+   "id": "2005-summer-trade-2005-08-12-chrisdo01-lynchge01-simiewa01"
+  },
+  {
+   "date": "2005-08-12",
+   "clubs": [
+    "Denver Nuggets",
+    "Orlando Magic"
+   ],
+   "a": {
+    "club": "Denver Nuggets",
+    "sends": [
+     "Fred Hoiberg",
+     "Rafael Araújo"
+    ],
+    "bbr_ids": [
+     "hoibefr01",
+     "araujra01"
+    ],
+    "salary": 4036614
+   },
+   "b": {
+    "club": "Orlando Magic",
+    "sends": [
+     "David Harrison"
+    ],
+    "bbr_ids": [
+     "harrida01"
+    ],
+    "salary": 937440
+   },
+   "gain": {
+    "Denver Nuggets": 1.023,
+    "Orlando Magic": 0.648
+   },
+   "accept": {
+    "Denver Nuggets": 0.95,
+    "Orlando Magic": 0.95
+   },
+   "both": 0.9025,
+   "id": "2005-summer-trade-2005-08-12-araujra01-harrida01-hoibefr01"
+  }
+ ]
+}

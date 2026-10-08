@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-12-troy-murphy",
+ "date": "2005-08-12",
+ "question": "2005 free agency, 2005-08-12: which offer does Troy Murphy accept (Orlando Magic $8,606,967 x 5), or does he wait?",
+ "decider": "Troy Murphy (simulated player, engine draw)",
+ "options": {
+  "Orlando Magic": 0.256424,
+  "wait": 0.743576
+ },
+ "basis": "Ask $11,400,000; best offer 0.75 of the ask in total; accept chance 0.256; priority winning; utility Orlando Magic 59.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

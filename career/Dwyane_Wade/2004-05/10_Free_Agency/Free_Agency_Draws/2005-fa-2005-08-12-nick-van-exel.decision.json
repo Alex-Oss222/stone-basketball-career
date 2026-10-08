@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-12-nick-van-exel",
+ "date": "2005-08-12",
+ "question": "2005 free agency, 2005-08-12: which offer does Nick Van Exel accept (Memphis Grizzlies $4,252,707 x 2), or does he wait?",
+ "decider": "Nick Van Exel (simulated player, engine draw)",
+ "options": {
+  "Memphis Grizzlies": 0.71,
+  "wait": 0.29
+ },
+ "basis": "Ask $4,252,707; best offer 1.00 of the ask in total; accept chance 0.710; priority money; utility Memphis Grizzlies 62.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

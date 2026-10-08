@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-12-samaki-walker",
+ "date": "2005-08-12",
+ "question": "2005 free agency, 2005-08-12: which offer does Samaki Walker accept (Washington Wizards $1,457,430 x 4), or does he wait?",
+ "decider": "Samaki Walker (simulated player, engine draw)",
+ "options": {
+  "Washington Wizards": 0.683514,
+  "wait": 0.316486
+ },
+ "basis": "Ask $1,480,642; best offer 0.98 of the ask in total; accept chance 0.684; priority winning; utility Washington Wizards 63.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

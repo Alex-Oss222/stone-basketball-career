@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-12-primo-brezec",
+ "date": "2005-08-12",
+ "question": "2005 free agency, 2005-08-12: which offer does Primož Brezec accept (Toronto Raptors $9,037,036 x 5), or does he wait?",
+ "decider": "Primož Brezec (simulated player, engine draw)",
+ "options": {
+  "Toronto Raptors": 0.64168,
+  "wait": 0.35832
+ },
+ "basis": "Ask $9,404,666; best offer 0.96 of the ask in total; accept chance 0.642; priority fame; utility Toronto Raptors 77.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

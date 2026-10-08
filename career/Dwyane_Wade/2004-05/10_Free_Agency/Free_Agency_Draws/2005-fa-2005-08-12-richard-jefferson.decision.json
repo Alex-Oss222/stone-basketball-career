@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-08-12-richard-jefferson",
+ "date": "2005-08-12",
+ "question": "2005 free agency, 2005-08-12: which offer does Richard Jefferson accept (New Jersey Nets $9,422,834 x 5), or does he wait?",
+ "decider": "Richard Jefferson (simulated player, engine draw)",
+ "options": {
+  "New Jersey Nets": 0.701653,
+  "wait": 0.298347
+ },
+ "basis": "Ask $9,470,426; best offer 0.99 of the ask in total; accept chance 0.702; priority money; utility New Jersey Nets 57.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
