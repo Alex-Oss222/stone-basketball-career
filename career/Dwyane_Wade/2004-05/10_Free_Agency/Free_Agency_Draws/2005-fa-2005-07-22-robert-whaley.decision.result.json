@@ -1,0 +1,25 @@
+{
+ "date": "2005-07-22",
+ "decider": "Robert Whaley (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-22-robert-whaley",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.001003,
+  "Cleveland Cavaliers": 0.034138,
+  "Golden State Warriors": 0.017166,
+  "Los Angeles Clippers": 0.005068,
+  "Milwaukee Bucks": 0.004992,
+  "Minnesota Timberwolves": 0.014518,
+  "New Jersey Nets": 0.003483,
+  "New Orleans Hornets": 0.002498,
+  "New York Knicks": 0.004845,
+  "Phoenix Suns": 0.252877,
+  "Portland Trail Blazers": 0.015925,
+  "Seattle SuperSonics": 0.026256,
+  "Toronto Raptors": 0.136716,
+  "Washington Wizards": 0.010516,
+  "wait": 0.469999
+ },
+ "outcome": "Toronto Raptors",
+ "question": "2005 free agency, 2005-07-22: which offer does Robert Whaley accept (Charlotte Bobcats $398,762 x 1, Cleveland Cavaliers $398,762 x 1, Golden State Warriors $398,762 x 1, Los Angeles Clippers $398,762 x 1, Milwaukee Bucks $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, Phoenix Suns $398,762 x 1, Portland Trail Blazers $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?"
+}

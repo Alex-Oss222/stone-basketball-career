@@ -1,0 +1,20 @@
+{
+ "date": "2005-07-22",
+ "decider": "Chris Duhon (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-22-chris-duhon",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.036815,
+  "Dallas Mavericks": 0.289574,
+  "Indiana Pacers": 0.021187,
+  "Memphis Grizzlies": 0.045418,
+  "Miami Heat": 0.014453,
+  "Minnesota Timberwolves": 0.007659,
+  "New Jersey Nets": 0.007322,
+  "Orlando Magic": 0.055197,
+  "Sacramento Kings": 0.052374,
+  "wait": 0.470001
+ },
+ "outcome": "Orlando Magic",
+ "question": "2005 free agency, 2005-07-22: which offer does Chris Duhon accept (Atlanta Hawks $641,748 x 1, Dallas Mavericks $641,748 x 1, Indiana Pacers $641,748 x 1, Memphis Grizzlies $641,748 x 1, Miami Heat $641,748 x 1, Minnesota Timberwolves $641,748 x 1, New Jersey Nets $641,748 x 1, Orlando Magic $641,748 x 1, Sacramento Kings $641,748 x 1), or does he wait?"
+}

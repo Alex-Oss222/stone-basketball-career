@@ -1,0 +1,17 @@
+{
+ "event_id": "2005-fa-2005-07-22-ha-seung-jin",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Ha Seung-Jin accept (Atlanta Hawks $641,748 x 1, Boston Celtics $641,748 x 1, Chicago Bulls $641,748 x 1, Detroit Pistons $641,748 x 1, Houston Rockets $641,748 x 1, Philadelphia 76ers $641,748 x 1, San Antonio Spurs $641,748 x 1), or does he wait?",
+ "decider": "Ha Seung-Jin (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.061946,
+  "Boston Celtics": 0.011373,
+  "Chicago Bulls": 0.11748,
+  "Detroit Pistons": 0.052131,
+  "Houston Rockets": 0.054941,
+  "Philadelphia 76ers": 0.047883,
+  "San Antonio Spurs": 0.184245,
+  "wait": 0.470001
+ },
+ "basis": "Ask $641,748; best offer 1.00 of the ask in total; accept chance 0.530; priority loyalty; utility Atlanta Hawks 53.8, Boston Celtics 47.0, Chicago Bulls 56.4, Detroit Pistons 53.1, Houston Rockets 53.3, Philadelphia 76ers 52.8, San Antonio Spurs 58.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

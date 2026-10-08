@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-22",
+ "decider": "Lonny Baxter (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-22-lonny-baxter",
+ "kind": "decision",
+ "options": {
+  "New Orleans Hornets": 0.53,
+  "wait": 0.47
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-22: which offer does Lonny Baxter accept (New Orleans Hornets $745,248 x 1), or does he wait?"
+}

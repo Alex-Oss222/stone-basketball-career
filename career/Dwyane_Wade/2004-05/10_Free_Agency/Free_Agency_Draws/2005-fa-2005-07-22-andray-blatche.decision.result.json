@@ -1,0 +1,15 @@
+{
+ "date": "2005-07-22",
+ "decider": "Andray Blatche (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-22-andray-blatche",
+ "kind": "decision",
+ "options": {
+  "Detroit Pistons": 0.035759,
+  "Houston Rockets": 0.017319,
+  "Philadelphia 76ers": 0.017802,
+  "San Antonio Spurs": 0.45912,
+  "wait": 0.47
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-22: which offer does Andray Blatche accept (Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1), or does he wait?"
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-22-joe-johnson",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Joe Johnson accept (Phoenix Suns $10,634,212 x 5), or does he wait?",
+ "decider": "Joe Johnson (simulated player, engine draw)",
+ "options": {
+  "Phoenix Suns": 0.484594,
+  "wait": 0.515406
+ },
+ "basis": "Ask $10,881,478; best offer 0.98 of the ask in total; accept chance 0.485; priority winning; utility Phoenix Suns 80.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

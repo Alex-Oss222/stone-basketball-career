@@ -1,0 +1,26 @@
+{
+ "event_id": "2005-fa-2005-07-22-ronny-turiaf",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Ronny Turiaf accept (Charlotte Bobcats $398,762 x 1, Cleveland Cavaliers $398,762 x 1, Golden State Warriors $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, Milwaukee Bucks $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, Phoenix Suns $398,762 x 1, Portland Trail Blazers $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Utah Jazz $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?",
+ "decider": "Ronny Turiaf (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.000803,
+  "Cleveland Cavaliers": 0.008418,
+  "Golden State Warriors": 0.01864,
+  "Los Angeles Clippers": 0.006806,
+  "Los Angeles Lakers": 0.010489,
+  "Milwaukee Bucks": 0.00302,
+  "Minnesota Timberwolves": 0.009731,
+  "New Jersey Nets": 0.002938,
+  "New Orleans Hornets": 0.00147,
+  "New York Knicks": 0.008674,
+  "Phoenix Suns": 0.254759,
+  "Portland Trail Blazers": 0.014301,
+  "Seattle SuperSonics": 0.01878,
+  "Toronto Raptors": 0.161631,
+  "Utah Jazz": 0.000237,
+  "Washington Wizards": 0.009303,
+  "wait": 0.47
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.530; priority fame; utility Charlotte Bobcats 44.6, Cleveland Cavaliers 54.0, Golden State Warriors 57.2, Los Angeles Clippers 53.1, Los Angeles Lakers 54.9, Milwaukee Bucks 49.9, Minnesota Timberwolves 54.6, New Jersey Nets 49.8, New Orleans Hornets 47.0, New York Knicks 54.1, Phoenix Suns 67.6, Portland Trail Blazers 56.1, Seattle SuperSonics 57.2, Toronto Raptors 65.8, Utah Jazz 39.7, Washington Wizards 54.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

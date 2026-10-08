@@ -1,0 +1,14 @@
+{
+ "event_id": "2005-fa-2005-07-22-andray-blatche",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Andray Blatche accept (Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1), or does he wait?",
+ "decider": "Andray Blatche (simulated player, engine draw)",
+ "options": {
+  "Detroit Pistons": 0.035759,
+  "Houston Rockets": 0.017319,
+  "Philadelphia 76ers": 0.017802,
+  "San Antonio Spurs": 0.45912,
+  "wait": 0.47
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.530; priority winning; utility Detroit Pistons 53.9, Houston Rockets 51.0, Philadelphia 76ers 51.1, San Antonio Spurs 64.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

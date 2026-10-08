@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-22",
+ "decider": "Alonzo Mourning (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-22-alonzo-mourning",
+ "kind": "decision",
+ "options": {
+  "Minnesota Timberwolves": 0.451293,
+  "wait": 0.548707
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-22: which offer does Alonzo Mourning accept (Minnesota Timberwolves $3,904,482 x 1), or does he wait?"
+}

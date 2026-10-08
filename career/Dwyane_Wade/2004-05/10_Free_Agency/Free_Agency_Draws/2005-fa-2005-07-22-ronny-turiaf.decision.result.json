@@ -1,0 +1,27 @@
+{
+ "date": "2005-07-22",
+ "decider": "Ronny Turiaf (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-22-ronny-turiaf",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.000803,
+  "Cleveland Cavaliers": 0.008418,
+  "Golden State Warriors": 0.01864,
+  "Los Angeles Clippers": 0.006806,
+  "Los Angeles Lakers": 0.010489,
+  "Milwaukee Bucks": 0.00302,
+  "Minnesota Timberwolves": 0.009731,
+  "New Jersey Nets": 0.002938,
+  "New Orleans Hornets": 0.00147,
+  "New York Knicks": 0.008674,
+  "Phoenix Suns": 0.254759,
+  "Portland Trail Blazers": 0.014301,
+  "Seattle SuperSonics": 0.01878,
+  "Toronto Raptors": 0.161631,
+  "Utah Jazz": 0.000237,
+  "Washington Wizards": 0.009303,
+  "wait": 0.47
+ },
+ "outcome": "New York Knicks",
+ "question": "2005 free agency, 2005-07-22: which offer does Ronny Turiaf accept (Charlotte Bobcats $398,762 x 1, Cleveland Cavaliers $398,762 x 1, Golden State Warriors $398,762 x 1, Los Angeles Clippers $398,762 x 1, Los Angeles Lakers $398,762 x 1, Milwaukee Bucks $398,762 x 1, Minnesota Timberwolves $398,762 x 1, New Jersey Nets $398,762 x 1, New Orleans Hornets $398,762 x 1, New York Knicks $398,762 x 1, Phoenix Suns $398,762 x 1, Portland Trail Blazers $398,762 x 1, Seattle SuperSonics $398,762 x 1, Toronto Raptors $398,762 x 1, Utah Jazz $398,762 x 1, Washington Wizards $398,762 x 1), or does he wait?"
+}

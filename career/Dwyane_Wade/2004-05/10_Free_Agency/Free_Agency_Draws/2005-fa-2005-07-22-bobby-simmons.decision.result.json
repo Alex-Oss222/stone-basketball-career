@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-22",
+ "decider": "Bobby Simmons (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-22-bobby-simmons",
+ "kind": "decision",
+ "options": {
+  "Los Angeles Clippers": 0.389537,
+  "wait": 0.610463
+ },
+ "outcome": "Los Angeles Clippers",
+ "question": "2005 free agency, 2005-07-22: which offer does Bobby Simmons accept (Los Angeles Clippers $11,145,893 x 5), or does he wait?"
+}

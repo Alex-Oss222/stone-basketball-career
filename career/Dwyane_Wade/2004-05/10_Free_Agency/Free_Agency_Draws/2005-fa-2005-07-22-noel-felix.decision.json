@@ -1,0 +1,12 @@
+{
+ "event_id": "2005-fa-2005-07-22-noel-felix",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Noel Felix accept (Houston Rockets $398,762 x 1, Philadelphia 76ers $398,762 x 1), or does he wait?",
+ "decider": "Noel Felix (simulated player, engine draw)",
+ "options": {
+  "Houston Rockets": 0.335169,
+  "Philadelphia 76ers": 0.194831,
+  "wait": 0.47
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.530; priority money; utility Houston Rockets 47.2, Philadelphia 76ers 45.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

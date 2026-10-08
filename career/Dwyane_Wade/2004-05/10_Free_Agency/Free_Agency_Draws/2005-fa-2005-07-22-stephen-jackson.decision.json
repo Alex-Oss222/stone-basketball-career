@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-22-stephen-jackson",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Stephen Jackson accept (Atlanta Hawks $11,452,168 x 4), or does he wait?",
+ "decider": "Stephen Jackson (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.439036,
+  "wait": 0.560964
+ },
+ "basis": "Ask $12,000,000; best offer 0.95 of the ask in total; accept chance 0.439; priority money; utility Atlanta Hawks 72.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

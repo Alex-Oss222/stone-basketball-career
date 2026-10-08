@@ -1,0 +1,16 @@
+{
+ "event_id": "2005-fa-2005-07-22-john-thomas",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does John Thomas accept (Charlotte Bobcats $1,029,873 x 1, Los Angeles Clippers $1,029,873 x 1, Milwaukee Bucks $1,029,873 x 1, New Orleans Hornets $1,029,873 x 1, New York Knicks $1,029,873 x 1, Seattle SuperSonics $1,029,873 x 1), or does he wait?",
+ "decider": "John Thomas (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.009555,
+  "Los Angeles Clippers": 0.162729,
+  "Milwaukee Bucks": 0.050759,
+  "New Orleans Hornets": 0.024707,
+  "New York Knicks": 0.059269,
+  "Seattle SuperSonics": 0.222981,
+  "wait": 0.47
+ },
+ "basis": "Ask $1,029,873; best offer 1.00 of the ask in total; accept chance 0.530; priority loyalty; utility Charlotte Bobcats 40.6, Los Angeles Clippers 51.9, Milwaukee Bucks 47.3, New Orleans Hornets 44.4, New York Knicks 47.9, Seattle SuperSonics 53.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

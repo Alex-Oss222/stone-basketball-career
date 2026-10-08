@@ -1,0 +1,17 @@
+{
+ "date": "2005-07-22",
+ "decider": "John Thomas (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-22-john-thomas",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.009555,
+  "Los Angeles Clippers": 0.162729,
+  "Milwaukee Bucks": 0.050759,
+  "New Orleans Hornets": 0.024707,
+  "New York Knicks": 0.059269,
+  "Seattle SuperSonics": 0.222981,
+  "wait": 0.47
+ },
+ "outcome": "New Orleans Hornets",
+ "question": "2005 free agency, 2005-07-22: which offer does John Thomas accept (Charlotte Bobcats $1,029,873 x 1, Los Angeles Clippers $1,029,873 x 1, Milwaukee Bucks $1,029,873 x 1, New Orleans Hornets $1,029,873 x 1, New York Knicks $1,029,873 x 1, Seattle SuperSonics $1,029,873 x 1), or does he wait?"
+}

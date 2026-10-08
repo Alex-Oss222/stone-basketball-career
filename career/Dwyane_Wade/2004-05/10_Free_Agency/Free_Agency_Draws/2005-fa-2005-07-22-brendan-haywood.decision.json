@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-22-brendan-haywood",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Brendan Haywood accept (Washington Wizards $8,508,976 x 5), or does he wait?",
+ "decider": "Brendan Haywood (simulated player, engine draw)",
+ "options": {
+  "Washington Wizards": 0.53,
+  "wait": 0.47
+ },
+ "basis": "Ask $8,508,976; best offer 1.00 of the ask in total; accept chance 0.530; priority money; utility Washington Wizards 71.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

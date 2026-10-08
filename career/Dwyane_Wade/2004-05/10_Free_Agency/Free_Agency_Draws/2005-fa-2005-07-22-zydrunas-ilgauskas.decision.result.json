@@ -1,0 +1,12 @@
+{
+ "date": "2005-07-22",
+ "decider": "Zydrunas Ilgauskas (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-22-zydrunas-ilgauskas",
+ "kind": "decision",
+ "options": {
+  "Philadelphia 76ers": 0.465769,
+  "wait": 0.534231
+ },
+ "outcome": "Philadelphia 76ers",
+ "question": "2005 free agency, 2005-07-22: which offer does Zydrunas Ilgauskas accept (Philadelphia 76ers $14,862,385 x 3), or does he wait?"
+}

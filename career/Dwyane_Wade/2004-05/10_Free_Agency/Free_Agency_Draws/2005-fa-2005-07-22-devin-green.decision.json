@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-fa-2005-07-22-devin-green",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Devin Green accept (New Jersey Nets $398,762 x 1), or does he wait?",
+ "decider": "Devin Green (simulated player, engine draw)",
+ "options": {
+  "New Jersey Nets": 0.53,
+  "wait": 0.47
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.530; priority winning; utility New Jersey Nets 42.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

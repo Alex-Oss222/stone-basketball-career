@@ -1,0 +1,23 @@
+{
+ "event_id": "2005-fa-2005-07-22-rasual-butler",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Rasual Butler accept (Atlanta Hawks $745,248 x 1, Chicago Bulls $745,248 x 1, Dallas Mavericks $745,248 x 1, Indiana Pacers $745,248 x 1, Memphis Grizzlies $745,248 x 1, Miami Heat $745,248 x 1, Minnesota Timberwolves $745,248 x 1, New Jersey Nets $745,248 x 1, New York Knicks $745,248 x 1, Orlando Magic $745,248 x 1, Sacramento Kings $745,248 x 1, Toronto Raptors $745,248 x 1, Utah Jazz $745,248 x 1), or does he wait?",
+ "decider": "Rasual Butler (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.005715,
+  "Chicago Bulls": 0.012374,
+  "Dallas Mavericks": 0.067733,
+  "Indiana Pacers": 0.002306,
+  "Memphis Grizzlies": 0.003957,
+  "Miami Heat": 0.210728,
+  "Minnesota Timberwolves": 0.001351,
+  "New Jersey Nets": 0.000304,
+  "New York Knicks": 0.000607,
+  "Orlando Magic": 0.004429,
+  "Sacramento Kings": 0.016454,
+  "Toronto Raptors": 0.203989,
+  "Utah Jazz": 5.4e-05,
+  "wait": 0.469999
+ },
+ "basis": "Ask $745,248; best offer 1.00 of the ask in total; accept chance 0.530; priority winning; utility Atlanta Hawks 53.6, Chicago Bulls 56.6, Dallas Mavericks 63.5, Indiana Pacers 49.9, Memphis Grizzlies 52.1, Miami Heat 68.0, Minnesota Timberwolves 47.8, New Jersey Nets 41.8, New York Knicks 44.6, Orlando Magic 52.5, Sacramento Kings 57.8, Toronto Raptors 67.9, Utah Jazz 34.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,15 @@
+{
+ "event_id": "2005-fa-2005-07-22-stephen-graham",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Stephen Graham accept (Atlanta Hawks $398,762 x 1, Dallas Mavericks $398,762 x 1, Memphis Grizzlies $398,762 x 1, New Jersey Nets $398,762 x 1, Orlando Magic $398,762 x 1), or does he wait?",
+ "decider": "Stephen Graham (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.052738,
+  "Dallas Mavericks": 0.353483,
+  "Memphis Grizzlies": 0.051307,
+  "New Jersey Nets": 0.009804,
+  "Orlando Magic": 0.062667,
+  "wait": 0.470001
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.530; priority loyalty; utility Atlanta Hawks 52.5, Dallas Mavericks 60.1, Memphis Grizzlies 52.4, New Jersey Nets 45.8, Orlando Magic 53.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

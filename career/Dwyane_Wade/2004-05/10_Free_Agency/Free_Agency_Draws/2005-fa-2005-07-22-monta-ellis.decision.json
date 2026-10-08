@@ -1,0 +1,18 @@
+{
+ "event_id": "2005-fa-2005-07-22-monta-ellis",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Monta Ellis accept (Atlanta Hawks $398,762 x 1, Dallas Mavericks $398,762 x 1, Indiana Pacers $398,762 x 1, Memphis Grizzlies $398,762 x 1, Miami Heat $398,762 x 1, New Jersey Nets $398,762 x 1, Orlando Magic $398,762 x 1, Sacramento Kings $398,762 x 1), or does he wait?",
+ "decider": "Monta Ellis (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.028731,
+  "Dallas Mavericks": 0.339673,
+  "Indiana Pacers": 0.011565,
+  "Memphis Grizzlies": 0.019846,
+  "Miami Heat": 0.023938,
+  "New Jersey Nets": 0.001523,
+  "Orlando Magic": 0.022209,
+  "Sacramento Kings": 0.082515,
+  "wait": 0.47
+ },
+ "basis": "Ask $398,762; best offer 1.00 of the ask in total; accept chance 0.530; priority winning; utility Atlanta Hawks 53.8, Dallas Mavericks 63.7, Indiana Pacers 50.2, Memphis Grizzlies 52.4, Miami Heat 53.1, New Jersey Nets 42.1, Orlando Magic 52.8, Sacramento Kings 58.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

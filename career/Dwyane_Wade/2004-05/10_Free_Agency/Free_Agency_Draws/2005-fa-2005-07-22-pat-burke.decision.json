@@ -1,0 +1,14 @@
+{
+ "event_id": "2005-fa-2005-07-22-pat-burke",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Pat Burke accept (Charlotte Bobcats $745,248 x 1, Milwaukee Bucks $745,248 x 1, New Orleans Hornets $745,248 x 1, New York Knicks $745,248 x 1), or does he wait?",
+ "decider": "Pat Burke (simulated player, engine draw)",
+ "options": {
+  "Charlotte Bobcats": 0.005116,
+  "Milwaukee Bucks": 0.203862,
+  "New Orleans Hornets": 0.045148,
+  "New York Knicks": 0.275874,
+  "wait": 0.47
+ },
+ "basis": "Ask $745,248; best offer 1.00 of the ask in total; accept chance 0.530; priority winning; utility Charlotte Bobcats 27.3, Milwaukee Bucks 42.0, New Orleans Hornets 36.0, New York Knicks 43.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

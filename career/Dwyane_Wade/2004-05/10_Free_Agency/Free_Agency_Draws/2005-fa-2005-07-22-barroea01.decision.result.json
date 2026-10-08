@@ -1,0 +1,16 @@
+{
+ "date": "2005-07-22",
+ "decider": "barroea01 (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-22-barroea01",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.021506,
+  "Detroit Pistons": 0.104934,
+  "Houston Rockets": 0.077349,
+  "Philadelphia 76ers": 0.048707,
+  "San Antonio Spurs": 0.277503,
+  "wait": 0.470001
+ },
+ "outcome": "San Antonio Spurs",
+ "question": "2005 free agency, 2005-07-22: which offer does barroea01 accept (Chicago Bulls $398,762 x 1, Detroit Pistons $398,762 x 1, Houston Rockets $398,762 x 1, Philadelphia 76ers $398,762 x 1, San Antonio Spurs $398,762 x 1), or does he wait?"
+}

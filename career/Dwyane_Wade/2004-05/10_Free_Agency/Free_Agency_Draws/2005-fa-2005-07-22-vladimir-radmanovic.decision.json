@@ -1,0 +1,13 @@
+{
+ "event_id": "2005-fa-2005-07-22-vladimir-radmanovic",
+ "date": "2005-07-22",
+ "question": "2005 free agency, 2005-07-22: which offer does Vladimir Radmanovic accept (Denver Nuggets $5,000,000 x 5, Detroit Pistons $5,000,000 x 5, Houston Rockets $5,000,000 x 5), or does he wait?",
+ "decider": "Vladimir Radmanovic (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.016755,
+  "Detroit Pistons": 0.117179,
+  "Houston Rockets": 0.094509,
+  "wait": 0.771557
+ },
+ "basis": "Ask $6,003,544; best offer 0.83 of the ask in total; accept chance 0.228; priority winning; utility Denver Nuggets 60.4, Detroit Pistons 68.2, Houston Rockets 67.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

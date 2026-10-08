@@ -1,0 +1,13 @@
+{
+ "date": "2005-07-22",
+ "decider": "Noel Felix (simulated player, engine draw)",
+ "event_id": "2005-fa-2005-07-22-noel-felix",
+ "kind": "decision",
+ "options": {
+  "Houston Rockets": 0.335169,
+  "Philadelphia 76ers": 0.194831,
+  "wait": 0.47
+ },
+ "outcome": "wait",
+ "question": "2005 free agency, 2005-07-22: which offer does Noel Felix accept (Houston Rockets $398,762 x 1, Philadelphia 76ers $398,762 x 1), or does he wait?"
+}
