@@ -2,9 +2,9 @@
 
 # Contract | Chris Mihm
 
-Known through: 2005-06-16. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
+Known through: 2005-06-19. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
 
-Chris Mihm: released. Evidence cutoff: 2005-06-16.
+Chris Mihm: released. Evidence cutoff: 2005-06-19.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Donnell Harvey
 
-Known through: 2005-06-16. [Open interactive contract](harvedo01.html#contract) · [Contract history](harvedo01.html#contract-history)
+Known through: 2005-06-19. [Open interactive contract](harvedo01.html#contract) · [Contract history](harvedo01.html#contract-history)
 
-Donnell Harvey: under contract. Evidence cutoff: 2005-06-16.
+Donnell Harvey: under contract. Evidence cutoff: 2005-06-19.
 
 ## Current contract
 

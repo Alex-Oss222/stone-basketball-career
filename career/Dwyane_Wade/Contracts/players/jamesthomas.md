@@ -2,9 +2,9 @@
 
 # Contract | James Thomas
 
-Known through: 2005-06-16. [Open interactive contract](jamesthomas.html#contract) · [Contract history](jamesthomas.html#contract-history)
+Known through: 2005-06-19. [Open interactive contract](jamesthomas.html#contract) · [Contract history](jamesthomas.html#contract-history)
 
-James Thomas: under contract. Evidence cutoff: 2005-06-16.
+James Thomas: under contract. Evidence cutoff: 2005-06-19.
 
 ## Current contract
 

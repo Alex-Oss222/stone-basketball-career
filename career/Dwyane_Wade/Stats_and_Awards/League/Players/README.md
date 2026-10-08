@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-06-16**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-06-19**. 573 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -327,7 +327,7 @@ Card date: **2005-06-16**. 573 registry players, one Markdown card and one inter
 | [Mike Miller](millemi01.md) | Memphis Grizzlies | 25 | silhouette | [open](millemi01.html) |
 | [Monty Williams](willimo01.md) | Free agent | 33 | sourced | [open](willimo01.html) |
 | [Morris Peterson](petermo01.md) | Toronto Raptors | 27 | sourced | [open](petermo01.html) |
-| [Ndudi Ebi](ebind01.md) | Cleveland Cavaliers | 20 | sourced | [open](ebind01.html) |
+| [Ndudi Ebi](ebind01.md) | Cleveland Cavaliers | 21 | sourced | [open](ebind01.html) |
 | [Nenad Krstić](nenadkrsti.md) | New York Knicks | 21 | silhouette | [open](nenadkrsti.html) |
 | [Nikoloz Tskitishvili](tskitni01.md) | Phoenix Suns | 22 | sourced | [open](tskitni01.html) |
 | [Obinna Ekezie](obinnaekezie.md) | Toronto Raptors | 29 | silhouette | [open](obinnaekezie.html) |
@@ -416,7 +416,7 @@ Card date: **2005-06-16**. 573 registry players, one Markdown card and one inter
 | [David West](westda01.md) | New Orleans Hornets | 24 | sourced | [open](westda01.html) |
 | [DeSagana Diop](diopde01.md) | Cleveland Cavaliers | 23 | sourced | [open](diopde01.html) |
 | [Desmond Penigar](penigde01.md) | Free agent | 23 | silhouette | [open](penigde01.html) |
-| [Dirk Nowitzki](nowitdi01.md) | Dallas Mavericks | 26 | sourced | [open](nowitdi01.html) |
+| [Dirk Nowitzki](nowitdi01.md) | Dallas Mavericks | 27 | sourced | [open](nowitdi01.html) |
 | [Don Reid](reiddo01.md) | Free agent | 31 | silhouette | [open](reiddo01.html) |
 | [Donyell Marshall](marshdo01.md) | Miami Heat | 32 | silhouette | [open](marshdo01.html) |
 | [Drew Gooden](goodedr01.md) | Orlando Magic | 23 | sourced | [open](goodedr01.html) |
@@ -465,7 +465,7 @@ Card date: **2005-06-16**. 573 registry players, one Markdown card and one inter
 | [Pat Garrity](garripa01.md) | Orlando Magic | 28 | sourced | [open](garripa01.html) |
 | [Pau Gasol](gasolpa01.md) | Memphis Grizzlies | 24 | sourced | [open](gasolpa01.html) |
 | [Paul Shirley](shirlpa01.md) | Free agent | 27 | silhouette | [open](shirlpa01.html) |
-| [Popeye Jones](jonespo01.md) | Free agent | 34 | silhouette | [open](jonespo01.html) |
+| [Popeye Jones](jonespo01.md) | Free agent | 35 | silhouette | [open](jonespo01.html) |
 | [Qyntel Woods](woodsqy01.md) | Los Angeles Lakers | 24 | sourced | [open](woodsqy01.html) |
 | [Rasheed Wallace](wallara01.md) | Portland Trail Blazers | 30 | sourced | [open](wallara01.html) |
 | [Reggie Evans](evansre01.md) | Seattle SuperSonics | 25 | sourced | [open](evansre01.html) |

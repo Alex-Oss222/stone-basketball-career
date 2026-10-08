@@ -2,9 +2,9 @@
 
 # Contract | Don Reid
 
-Known through: 2005-06-16. [Open interactive contract](reiddo01.html#contract) · [Contract history](reiddo01.html#contract-history)
+Known through: 2005-06-19. [Open interactive contract](reiddo01.html#contract) · [Contract history](reiddo01.html#contract-history)
 
-Don Reid: unsigned free agent. Evidence cutoff: 2005-06-16.
+Don Reid: unsigned free agent. Evidence cutoff: 2005-06-19.
 
 ## Current contract
 
