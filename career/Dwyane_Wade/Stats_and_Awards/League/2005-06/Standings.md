@@ -1,44 +1,44 @@
 # 2005-06 standings
 
-Through 2005-11-24, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2005-11-25, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
-| 1 | **Miami Heat** | 8 | 3 | .727 | — |
-| 2 | Atlanta Hawks | 7 | 3 | .700 | 0.5 |
-| 3 | Toronto Raptors | 8 | 4 | .667 | 0.5 |
-| 4 | Detroit Pistons | 6 | 4 | .600 | 1.5 |
-| 5 | Cleveland Cavaliers | 7 | 5 | .583 | 1.5 |
-| 6 | Chicago Bulls | 5 | 4 | .556 | 2 |
-| 7 | Boston Celtics | 6 | 5 | .545 | 2 |
-| 8 | Washington Wizards | 6 | 5 | .545 | 2 |
-| 9 | Indiana Pacers | 5 | 5 | .500 | 2.5 |
-| 10 | Orlando Magic | 5 | 5 | .500 | 2.5 |
-| 11 | New Jersey Nets | 5 | 6 | .455 | 3 |
-| 12 | New York Knicks | 5 | 6 | .455 | 3 |
-| 13 | Philadelphia 76ers | 5 | 8 | .385 | 4 |
-| 14 | Charlotte Bobcats | 4 | 8 | .333 | 4.5 |
-| 15 | Milwaukee Bucks | 3 | 7 | .300 | 4.5 |
+| 1 | **Miami Heat** | 9 | 3 | .750 | — |
+| 2 | Atlanta Hawks | 8 | 3 | .727 | 0.5 |
+| 3 | Detroit Pistons | 7 | 4 | .636 | 1.5 |
+| 4 | Toronto Raptors | 8 | 5 | .615 | 1.5 |
+| 5 | Boston Celtics | 7 | 5 | .583 | 2 |
+| 6 | Cleveland Cavaliers | 7 | 5 | .583 | 2 |
+| 7 | Orlando Magic | 6 | 5 | .545 | 2.5 |
+| 8 | Washington Wizards | 6 | 6 | .500 | 3 |
+| 9 | Chicago Bulls | 5 | 5 | .500 | 3 |
+| 10 | Indiana Pacers | 5 | 6 | .455 | 3.5 |
+| 11 | New York Knicks | 5 | 6 | .455 | 3.5 |
+| 12 | New Jersey Nets | 5 | 7 | .417 | 4 |
+| 13 | Philadelphia 76ers | 5 | 8 | .385 | 4.5 |
+| 14 | Charlotte Bobcats | 4 | 9 | .308 | 5.5 |
+| 15 | Milwaukee Bucks | 3 | 8 | .273 | 5.5 |
 
 ## Western Conference
 
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Dallas Mavericks | 8 | 2 | .800 | — |
-| 2 | Sacramento Kings | 9 | 3 | .750 | — |
-| 3 | Phoenix Suns | 8 | 3 | .727 | 0.5 |
-| 4 | San Antonio Spurs | 8 | 4 | .667 | 1 |
-| 5 | Los Angeles Lakers | 7 | 4 | .636 | 1.5 |
-| 6 | Minnesota Timberwolves | 6 | 4 | .600 | 2 |
-| 7 | Denver Nuggets | 6 | 7 | .462 | 3.5 |
-| 8 | Memphis Grizzlies | 5 | 7 | .417 | 4 |
-| 9 | Seattle SuperSonics | 5 | 7 | .417 | 4 |
-| 10 | Utah Jazz | 5 | 8 | .385 | 4.5 |
-| 11 | Los Angeles Clippers | 4 | 7 | .364 | 4.5 |
-| 12 | New Orleans/Oklahoma City Hornets | 4 | 7 | .364 | 4.5 |
-| 13 | Houston Rockets | 4 | 8 | .333 | 5 |
-| 14 | Golden State Warriors | 3 | 10 | .231 | 6.5 |
-| 15 | Portland Trail Blazers | 1 | 9 | .100 | 7 |
+| 1 | Sacramento Kings | 10 | 3 | .769 | — |
+| 2 | Phoenix Suns | 9 | 3 | .750 | 0.5 |
+| 3 | Dallas Mavericks | 8 | 3 | .727 | 1 |
+| 4 | San Antonio Spurs | 9 | 4 | .692 | 1 |
+| 5 | Los Angeles Lakers | 7 | 4 | .636 | 2 |
+| 6 | Minnesota Timberwolves | 7 | 4 | .636 | 2 |
+| 7 | Memphis Grizzlies | 6 | 7 | .462 | 4 |
+| 8 | Denver Nuggets | 6 | 8 | .429 | 4.5 |
+| 9 | Los Angeles Clippers | 5 | 7 | .417 | 4.5 |
+| 10 | Seattle SuperSonics | 5 | 7 | .417 | 4.5 |
+| 11 | New Orleans/Oklahoma City Hornets | 4 | 7 | .364 | 5 |
+| 12 | Utah Jazz | 5 | 9 | .357 | 5.5 |
+| 13 | Houston Rockets | 4 | 9 | .308 | 6 |
+| 14 | Golden State Warriors | 4 | 10 | .286 | 6.5 |
+| 15 | Portland Trail Blazers | 1 | 10 | .091 | 8 |
 

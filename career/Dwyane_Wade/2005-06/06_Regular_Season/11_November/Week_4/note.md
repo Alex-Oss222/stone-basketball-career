@@ -15,5 +15,6 @@ days: 22-end
 ## Games and events
 
 - 2005-11-23: Portland Trail Blazers 102 at Miami Heat 120 — Miami Heat W 120-102 ([Game 1](Game_1.md), event `2005-11-23-portland-trail-blazers-at-miami-heat`)
+- 2005-11-25: Dallas Mavericks 91 at Miami Heat 103 — Miami Heat W 103-91 ([Game 2](Game_2.md), event `2005-11-25-dallas-mavericks-at-miami-heat`)
 
 ## Consequences

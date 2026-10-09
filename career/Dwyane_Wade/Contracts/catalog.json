@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-11-21",
+  "as_of": "2005-11-25",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1400,7 +1400,7 @@
     {
       "player_id": "armstda01",
       "name": "Darrell Armstrong",
-      "team": "Charlotte Bobcats",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "armstda01-2005-08-26",
       "recorded_agreements": 3,
@@ -5648,7 +5648,7 @@
     {
       "player_id": "potapvi01",
       "name": "Vitaly Potapenko",
-      "team": "Free agent",
+      "team": "Charlotte Bobcats",
       "status": "under contract",
       "current_contract_id": "potapvi01-existing-2ac1c74d65f2",
       "recorded_agreements": 1,

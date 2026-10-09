@@ -2,9 +2,9 @@
 
 # Contract | Shane Battier
 
-Known through: 2005-11-21. [Open interactive contract](battish01.html#contract) · [Contract history](battish01.html#contract-history)
+Known through: 2005-11-25. [Open interactive contract](battish01.html#contract) · [Contract history](battish01.html#contract-history)
 
-Shane Battier: under contract. Evidence cutoff: 2005-11-21.
+Shane Battier: under contract. Evidence cutoff: 2005-11-25.
 
 ## Current contract
 

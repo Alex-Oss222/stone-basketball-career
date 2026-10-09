@@ -2,9 +2,9 @@
 
 # Contract | Darrell Armstrong
 
-Known through: 2005-11-21. [Open interactive contract](armstda01.html#contract) · [Contract history](armstda01.html#contract-history)
+Known through: 2005-11-25. [Open interactive contract](armstda01.html#contract) · [Contract history](armstda01.html#contract-history)
 
-Darrell Armstrong: under contract. Evidence cutoff: 2005-11-21.
+Darrell Armstrong: under contract. Evidence cutoff: 2005-11-25.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Darrell Armstrong |
-| Club / rights baseline | Charlotte Bobcats |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

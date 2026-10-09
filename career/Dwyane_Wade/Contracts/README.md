@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-11-21. [Search the contract directory](index.html)
+Known through 2005-11-25. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -163,7 +163,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Darius Miles](players/milesda01.md) | Cleveland Cavaliers | under contract | Darius Miles · 2004-07-15 | 2 |
 | [Darius Songaila](players/songada01.md) | Sacramento Kings | under contract | Darius Songaila · 2005-09-30 | 2 |
 | [Darko Milicic](players/milicda01.md) | Detroit Pistons | No verified contract record | No verified current agreement | 0 |
-| [Darrell Armstrong](players/armstda01.md) | Charlotte Bobcats | under contract | Darrell Armstrong · 2005-08-26 | 3 |
+| [Darrell Armstrong](players/armstda01.md) | Free agent | under contract | Darrell Armstrong · 2005-08-26 | 3 |
 | [Darrick Martin](players/martida01.md) | New Jersey Nets | under contract | Darrick Martin · 2005-09-23 | 1 |
 | [Darvin Ham](players/hamda01.md) | Free agent | under contract | Darvin Ham · 2003-09-23 | 2 |
 | [David Harrison](players/davidharrison.md) | Denver Nuggets | under contract | David Harrison · 2004-07-01 | 1 |
@@ -637,7 +637,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Vin Baker](players/bakervi01.md) | Denver Nuggets | under contract | Vin Baker · 2004-09-02 | 2 |
 | [Vince Carter](players/cartevi01.md) | Toronto Raptors | under contract | Vince Carter · existing contract; signing date not recorded | 1 |
 | [Vincent Yarbrough](players/yarbrvi01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |
-| [Vitaly Potapenko](players/potapvi01.md) | Free agent | under contract | Vitaly Potapenko · existing contract; signing date not recorded | 1 |
+| [Vitaly Potapenko](players/potapvi01.md) | Charlotte Bobcats | under contract | Vitaly Potapenko · existing contract; signing date not recorded | 1 |
 | [Vlade Divac](players/divacvl01.md) | Free agent | under contract | No verified current agreement | 2 |
 | [Vladimir Radmanovic](players/radmavl01.md) | Seattle SuperSonics | under contract | Vladimir Radmanovic · 2005-08-02 | 2 |
 | [Vladimir Stepania](players/stepavl01.md) | Portland Trail Blazers | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
