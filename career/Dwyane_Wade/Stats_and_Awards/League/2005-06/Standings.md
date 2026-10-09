@@ -1,6 +1,6 @@
 # 2005-06 standings
 
-Through 2005-11-30, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2005-12-01, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
@@ -26,19 +26,19 @@ Through 2005-11-30, from closed simulated results only (`runtime/standings.py`).
 
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Dallas Mavericks | 11 | 3 | .786 | — |
-| 2 | Phoenix Suns | 10 | 3 | .769 | 0.5 |
-| 3 | Sacramento Kings | 11 | 4 | .733 | 0.5 |
-| 4 | San Antonio Spurs | 10 | 4 | .714 | 1 |
-| 5 | Los Angeles Lakers | 8 | 5 | .615 | 2.5 |
-| 6 | Minnesota Timberwolves | 7 | 6 | .538 | 3.5 |
-| 7 | Denver Nuggets | 8 | 8 | .500 | 4 |
-| 8 | Los Angeles Clippers | 7 | 8 | .467 | 4.5 |
-| 9 | New Orleans/Oklahoma City Hornets | 6 | 8 | .429 | 5 |
-| 10 | Seattle SuperSonics | 6 | 8 | .429 | 5 |
-| 11 | Memphis Grizzlies | 6 | 9 | .400 | 5.5 |
-| 12 | Houston Rockets | 5 | 10 | .333 | 6.5 |
-| 13 | Utah Jazz | 5 | 10 | .333 | 6.5 |
-| 14 | Golden State Warriors | 5 | 12 | .294 | 7.5 |
-| 15 | Portland Trail Blazers | 2 | 12 | .143 | 9 |
+| 1 | Phoenix Suns | 10 | 3 | .769 | — |
+| 2 | Dallas Mavericks | 11 | 4 | .733 | — |
+| 3 | Sacramento Kings | 11 | 4 | .733 | — |
+| 4 | San Antonio Spurs | 11 | 4 | .733 | — |
+| 5 | Los Angeles Lakers | 8 | 6 | .571 | 2.5 |
+| 6 | Minnesota Timberwolves | 7 | 6 | .538 | 3 |
+| 7 | Denver Nuggets | 8 | 8 | .500 | 3.5 |
+| 8 | Los Angeles Clippers | 7 | 8 | .467 | 4 |
+| 9 | New Orleans/Oklahoma City Hornets | 6 | 8 | .429 | 4.5 |
+| 10 | Seattle SuperSonics | 6 | 8 | .429 | 4.5 |
+| 11 | Memphis Grizzlies | 6 | 9 | .400 | 5 |
+| 12 | Utah Jazz | 6 | 10 | .375 | 5.5 |
+| 13 | Houston Rockets | 5 | 10 | .333 | 6 |
+| 14 | Golden State Warriors | 5 | 12 | .294 | 7 |
+| 15 | Portland Trail Blazers | 2 | 12 | .143 | 8.5 |
 

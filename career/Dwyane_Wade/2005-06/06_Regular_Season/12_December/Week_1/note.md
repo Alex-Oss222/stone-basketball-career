@@ -1,6 +1,6 @@
 ---
 type: regular_season_week
-status: not_started
+status: active
 month: December
 week: 1
 days: 1-7
