@@ -2176,6 +2176,46 @@
    "bbr_id": "vujacsa01",
    "from": "Sacramento Kings",
    "to": "Denver Nuggets"
+  },
+  {
+   "id": "2005-06-market-2005-11-22-waive-armstda01",
+   "date": "2005-11-22",
+   "kind": "waive",
+   "player": "Darrell Armstrong",
+   "bbr_id": "armstda01",
+   "from": "Charlotte Bobcats",
+   "to": null,
+   "role": {
+    "player_id": "Darrell Armstrong",
+    "bbr_id": "armstda01",
+    "position": "PG",
+    "games": 62,
+    "minutes": 622
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-24"
+  },
+  {
+   "id": "2005-06-market-2005-11-22-rest_of_season-potapvi01",
+   "date": "2005-11-22",
+   "kind": "rest_of_season",
+   "player": "Vitaly Potapenko",
+   "bbr_id": "potapvi01",
+   "from": null,
+   "to": "Charlotte Bobcats",
+   "role": {
+    "player_id": "Vitaly Potapenko",
+    "bbr_id": "potapvi01",
+    "position": "C",
+    "games": 33,
+    "minutes": 353
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.14 x fit"
   }
  ],
  "market_days": [
@@ -2199,6 +2239,7 @@
   "2005-11-18",
   "2005-11-19",
   "2005-11-20",
-  "2005-11-21"
+  "2005-11-21",
+  "2005-11-22"
  ]
 }
