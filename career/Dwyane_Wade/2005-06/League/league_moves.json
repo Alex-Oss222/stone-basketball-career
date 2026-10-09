@@ -2216,6 +2216,25 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.14 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-24-clear-armstda01",
+   "date": "2005-11-24",
+   "kind": "clear",
+   "player": "Darrell Armstrong",
+   "bbr_id": "armstda01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Darrell Armstrong",
+    "bbr_id": "armstda01",
+    "position": "PG",
+    "games": 62,
+    "minutes": 622
+   },
+   "contract": null,
+   "note": "cleared waivers from Charlotte Bobcats: a free agent",
+   "waiver": "2005-06-market-2005-11-22-waive-armstda01"
   }
  ],
  "market_days": [
@@ -2241,6 +2260,7 @@
   "2005-11-20",
   "2005-11-21",
   "2005-11-22",
-  "2005-11-23"
+  "2005-11-23",
+  "2005-11-24"
  ]
 }
