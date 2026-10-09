@@ -10,7 +10,8 @@ Contracts
   seasons of an extension signed in the new league year (`runtime/extensions.py`, its `extension` record dated on or
   after July 1) are its own agreement and are left out of the comparison; any other added season is refused.
 - An `existing` (carried) contract is never dated as signed in the new league year.
-- The league contract ledger lists each player once, and each Miami entry in it agrees with Miami's cap sheet.
+- The league contract ledger lists each player once, and each Miami entry in it carries the full schedule, from the
+  season on, of one of his rows on Miami's cap sheet (`league_contracts.miami_sheet_errors`; Wade by his NBA id).
 - No player under contract to Miami on the previous sheet disappears without a record: he is on the new sheet,
   or the summer market placed him with another club, or he left with a recorded status.
 Clubs
@@ -107,23 +108,20 @@ def _extension_seasons(entry, since):
 
 
 def ledger_errors(root, season):
+    """The ledger lists each player once (Wade's NBA id and register key are one player, `league_contracts.ledger_key`)
+    and each Miami row agrees with Miami's cap sheet (`league_contracts.miami_sheet_errors`, Wade by his NBA id)."""
+    from .league_contracts import ledger_key, miami_sheet_errors
     path = Path(root) / PLAYER / season / "League/contracts.json"
     data = _read(path)
     if not data:
         return []
     errors, seen = [], set()
     for c in data["contracts"]:
-        if c["bbr_id"] in seen:
+        key = ledger_key(c["bbr_id"], c.get("player"))
+        if key in seen:
             errors.append(f"{season}: {c['player']} appears twice in the league contract ledger")
-        seen.add(c["bbr_id"])
-    sheet = _sheet(root, season) or []
-    ids = _ids(_register(root, season))
-    miami = {p.get("bbr_id") or ids.get(p["player"]): p for p in sheet}
-    for c in data["contracts"]:
-        p = miami.get(c["bbr_id"])
-        if c["club"] == MIAMI and p and c.get("kind") == "existing" and _later(c["schedule"], season) != _later(p.get("schedule"), season):
-            errors.append(f"{season}: the league ledger and Miami's cap sheet disagree on {c['player']}'s carried contract")
-    return errors
+        seen.add(key)
+    return errors + miami_sheet_errors(season, root)
 
 
 def club_errors(root, season, day):

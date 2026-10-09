@@ -680,7 +680,9 @@ def eligibility(day, root=ROOT, held=None):
                                      f"{need} required (cbafaq05 Q52)"))
             eligible.append(cand)
 
+    from .league_contracts import WADE_KEYS, wade_key
     ids = _register_ids(season, root)
+    ledger = _ledger(season, root)
     taken = set()
     for p in _miami_sheet(season, root):
         key = _sheet_key(p, ids)
@@ -691,8 +693,10 @@ def eligibility(day, root=ROOT, held=None):
         if not _ends_with(sched, season):
             continue
         wade = key == WADE_BBR
-        lkey = WADE_KEY if wade else key
-        taken |= {key, lkey}
+        # Wade's ledger row is keyed by his NBA id (`league_contracts.ledger_key`); a ledger written before the 2005-10-31
+        # repair keys him by his register key, so his decision names the key his row carries there
+        lkey = wade_key(ledger) if wade else key
+        taken |= {key, lkey} | (set(WADE_KEYS) if wade else set())
         cand = {"bbr_id": key, "ledger_key": lkey, "player": p["player"], "club": MIAMI, "wade": wade,
                 "final_season": season, "last_salary": int(sched[season])}
         o = miami_origin(p, None if wade else key, season, root, day)
@@ -700,8 +704,8 @@ def eligibility(day, root=ROOT, held=None):
         rookie = o["rookie_scale"] if o else (p.get("status") == "under_rookie_contract" or p.get("route") == "rookie_scale")
         consider(cand, o, rookie, None)
     ledgers = {}
-    for b, c in sorted(_ledger(season, root).items()):
-        if b in taken or b in miami or b == WADE_KEY:
+    for b, c in sorted(ledger.items()):
+        if b in taken or b in miami or b in WADE_KEYS:      # Wade is Miami's: his sheet row above decides him
             continue
         sched = base_schedule(c, day)
         if not _ends_with(sched, season):
@@ -833,6 +837,7 @@ def payrolls(day, root=ROOT, held=None):
     contract signed by the day when a player has two rows). A contract no club holds stays with the club that owes it,
     and a waived contract (`waiver`) with the club that waived him, whoever he plays for since."""
     from .contracts import counted_amount
+    from .league_contracts import WADE_KEYS
     from .player_stats import alias
     from .seasons import next_season, season_of_date
     root = Path(root)
@@ -841,7 +846,7 @@ def payrolls(day, root=ROOT, held=None):
     rosters, miami = held if held is not None else holders(day, root)
     out, ledgers = {}, {}
     for b, c in _ledger(season, root).items():
-        if b in miami or b == WADE_KEY or c.get("club") == MIAMI and b not in rosters:
+        if b in miami or b in WADE_KEYS or c.get("club") == MIAMI and b not in rosters:   # Wade: Miami's sheet below
             continue
         amount = base_schedule(c, day).get(first)
         if amount:
