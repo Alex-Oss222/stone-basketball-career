@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 25 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-11-29 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2005-11-30 
 
 **Contract/control:** Existing contract: 4 season(s) from 2005-06, $14,138,096 scheduled ($3,110,381 in 2005-06). (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
 
@@ -63,7 +63,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2003-04 | Detroit Pistons | 70 | 40 | 24.4 | 9.7 | 5.5 | 1.2 | 0.5 | 0.8 | 1.3 | 0.453 | 0.467 | 0.757 |
 | 2004-05 | MIA | 82 | 51 | 29.1 | 11.7 | 8.0 | 2.3 | 0.4 | 0.9 | 1.9 | 45.4% | 26.7% | 83.5% |
-| 2005-06 | MIA | 14 | 14 | 35.0 | 15.1 | 8.2 | 2.4 | 0.3 | 1.0 | 2.5 | 44.9% | 35.7% | 76.7% |
+| 2005-06 | MIA | 15 | 15 | 35.7 | 15.0 | 8.5 | 2.5 | 0.3 | 1.0 | 2.5 | 44.7% | 35.7% | 78.7% |
 
 Source: 2003-04 from closed simulated results (`Stats_and_Awards/League/2003-04/season_totals.json`); 2004-05 from closed Miami game results.
 

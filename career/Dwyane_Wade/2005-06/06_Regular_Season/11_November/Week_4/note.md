@@ -18,5 +18,6 @@ days: 22-end
 - 2005-11-25: Dallas Mavericks 91 at Miami Heat 103 — Miami Heat W 103-91 ([Game 2](Game_2.md), event `2005-11-25-dallas-mavericks-at-miami-heat`)
 - 2005-11-26: Miami Heat 110 at Orlando Magic 115 — Miami Heat L 110-115 ([Game 3](Game_3.md), event `2005-11-26-miami-heat-at-orlando-magic`)
 - 2005-11-28: New York Knicks 96 at Miami Heat 107 — Miami Heat W 107-96 ([Game 4](Game_4.md), event `2005-11-28-new-york-knicks-at-miami-heat`)
+- 2005-11-30: Miami Heat 129 at Atlanta Hawks 126 (2OT) — Miami Heat W 129-126 ([Game 5](Game_5.md), event `2005-11-30-miami-heat-at-atlanta-hawks`)
 
 ## Consequences
