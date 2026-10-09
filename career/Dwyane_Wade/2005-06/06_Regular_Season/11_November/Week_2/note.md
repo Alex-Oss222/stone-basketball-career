@@ -15,5 +15,6 @@ days: 8-14
 ## Games and events
 
 - 2005-11-09: Miami Heat 103 at Indiana Pacers 104 — Miami Heat L 103-104 ([Game 1](Game_1.md), event `2005-11-09-miami-heat-at-indiana-pacers`)
+- 2005-11-10: Houston Rockets 83 at Miami Heat 103 — Miami Heat W 103-83 ([Game 2](Game_2.md), event `2005-11-10-houston-rockets-at-miami-heat`)
 
 ## Consequences
