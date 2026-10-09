@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-11-13. [Search the contract directory](index.html)
+Known through 2005-11-14. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -157,7 +157,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Daniel Ewing](players/ewingda01.md) | Portland Trail Blazers | under contract | Daniel Ewing · 2005-08-02 | 1 |
 | [Daniel Santiago](players/santida01.md) | Free agent | under contract | Daniel Santiago · 2003-07-17 | 1 |
 | [Danny Ferry](players/ferryda01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |
-| [Danny Fortson](players/fortsda01.md) | Milwaukee Bucks | under contract | Danny Fortson · existing contract; signing date not recorded | 1 |
+| [Danny Fortson](players/fortsda01.md) | New Jersey Nets | under contract | Danny Fortson · existing contract; signing date not recorded | 1 |
 | [Danny Granger](players/grangda01.md) | New Orleans/Oklahoma City Hornets | under contract | Danny Granger · 2005-07-01 | 1 |
 | [Danny Manning](players/mannida01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Darius Miles](players/milesda01.md) | Cleveland Cavaliers | under contract | Darius Miles · 2004-07-15 | 2 |
@@ -219,7 +219,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Elton Brand](players/brandel01.md) | Los Angeles Clippers | under contract | Elton Brand · 2003-07-19 | 2 |
 | [Emeka Okafor](players/emekaokafor.md) | Washington Wizards | under contract | Emeka Okafor · 2004-07-01 | 1 |
 | [Eric Piatkowski](players/piatker01.md) | New Orleans/Oklahoma City Hornets | under contract | Eric Piatkowski · 2003-07-26 | 2 |
-| [Eric Snow](players/snower01.md) | Washington Wizards | under contract | Eric Snow · 2004-09-09 | 2 |
+| [Eric Snow](players/snower01.md) | Indiana Pacers | under contract | Eric Snow · 2004-09-09 | 2 |
 | [Eric Williams](players/willier01.md) | New York Knicks | under contract | No verified current agreement | 1 |
 | [Erick Dampier](players/dampier01.md) | Sacramento Kings | under contract | Erick Dampier · 2004-07-14 | 1 |
 | [Erick Strickland](players/stricer01.md) | Free agent | under contract | No verified current agreement | 2 |
@@ -269,7 +269,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jahidi White](players/whiteja01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
 | [Jake Tsakalidis](players/tsakaja01.md) | New Orleans/Oklahoma City Hornets | under contract | No verified current agreement | 2 |
 | [Jake Voskuhl](players/voskuja01.md) | Phoenix Suns | under contract | Jake Voskuhl · 2003-07-16 | 2 |
-| [Jalen Rose](players/roseja01.md) | Indiana Pacers | under contract | Jalen Rose · existing contract; signing date not recorded | 1 |
+| [Jalen Rose](players/roseja01.md) | Washington Wizards | under contract | Jalen Rose · existing contract; signing date not recorded | 1 |
 | [Jamaal Magloire](players/magloja01.md) | New York Knicks | under contract | Jamaal Magloire · 2005-08-19 | 2 |
 | [Jamaal Tinsley](players/tinslja01.md) | Indiana Pacers | under contract | Jamaal Tinsley · 2005-08-02 | 2 |
 | [Jamal Crawford](players/crawfja01.md) | Chicago Bulls | under contract | Jamal Crawford · 2004-07-14 | 2 |
@@ -293,7 +293,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jason Collins](players/collija04.md) | New Jersey Nets | under contract | Jason Collins · 2005-09-02 | 2 |
 | [Jason Hart](players/hartja01.md) | Denver Nuggets | No verified contract record | No verified current agreement | 0 |
 | [Jason Kapono](players/kaponja01.md) | Charlotte Bobcats | under contract | Jason Kapono · 2005-08-02 | 1 |
-| [Jason Kidd](players/kiddja01.md) | New Jersey Nets | under contract | Jason Kidd · 2003-07-16 | 2 |
+| [Jason Kidd](players/kiddja01.md) | Milwaukee Bucks | under contract | Jason Kidd · 2003-07-16 | 2 |
 | [Jason Maxiell](players/maxieja01.md) | Memphis Grizzlies | under contract | Jason Maxiell · 2005-08-26 | 1 |
 | [Jason Richardson](players/richaja01.md) | Golden State Warriors | under contract | Jason Richardson · 2005-08-02 | 2 |
 | [Jason Terry](players/terryja01.md) | Atlanta Hawks | under contract | Jason Terry · 2003-09-25 | 2 |
@@ -374,7 +374,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Lamond Murray](players/murrala01.md) | Utah Jazz | under contract | Lamond Murray · existing contract; signing date not recorded | 1 |
 | [LaPhonso Ellis](players/ellisla01.md) | Free agent | under contract guarantee amended | LaPhonso Ellis · 2001-07-28 | 1 |
 | [Laron Profit](players/laronprofit.md) | Free agent | under contract | No verified current agreement | 1 |
-| [Larry Hughes](players/hughela01.md) | Washington Wizards | under contract | Larry Hughes · 2005-08-02 | 2 |
+| [Larry Hughes](players/hughela01.md) | Indiana Pacers | under contract | Larry Hughes · 2005-08-02 | 2 |
 | [Latrell Sprewell](players/sprewla01.md) | Free agent | under contract | Latrell Sprewell · existing contract; signing date not recorded | 1 |
 | [Lavor Postell](players/postela01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Lawrence Funderburke](players/fundela01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
@@ -453,7 +453,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Mike James](players/jamesmi01.md) | Miami Heat | under contract | Mike James · 2003-07-17 | 2 |
 | [Mike Miller](players/millemi01.md) | Memphis Grizzlies | under contract | Mike Miller · 2005-08-05 | 2 |
 | [Mike Wilks](players/wilksmi01.md) | Miami Heat | under contract | Mike Wilks · 2005-08-02 | 3 |
-| [Mikki Moore](players/mooremi01.md) | New Jersey Nets | under contract | Mikki Moore · 2005-08-02 | 2 |
+| [Mikki Moore](players/mooremi01.md) | Milwaukee Bucks | under contract | Mikki Moore · 2005-08-02 | 2 |
 | [Milt Palacio](players/palacmi01.md) | New York Knicks | under contract | Milt Palacio · 2005-09-09 | 3 |
 | [Mitchell Butler](players/butlemi02.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Mo Williams](players/willima01.md) | Cleveland Cavaliers | under contract | Mo Williams · 2005-08-19 | 1 |
@@ -503,7 +503,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Randy Brown](players/brownra02.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Randy Holcomb](players/holcora01.md) | Free agent | under contract | Randy Holcomb · 2005-08-12 | 1 |
 | [Randy Livingston](players/livinra01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
-| [Rashad McCants](players/mccanra01.md) | Indiana Pacers | under contract | Rashad McCants · 2005-07-01 | 1 |
+| [Rashad McCants](players/mccanra01.md) | Washington Wizards | under contract | Rashad McCants · 2005-07-01 | 1 |
 | [Rashard Lewis](players/lewisra02.md) | Seattle SuperSonics | under contract | Rashard Lewis · 2005-08-02 | 2 |
 | [Rasheed Wallace](players/wallara01.md) | Portland Trail Blazers | under contract | Rasheed Wallace · 2004-08-12 | 2 |
 | [Rasho Nesterovic](players/nestera01.md) | San Antonio Spurs | under contract | Rasho Nesterovic · 2003-07-16 | 2 |
@@ -603,7 +603,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Tierre Brown](players/brownti01.md) | Free agent | under contract | No verified current agreement | 2 |
 | [Tim Duncan](players/duncati01.md) | San Antonio Spurs | under contract | Tim Duncan · 2003-07-16 | 2 |
 | [Tim Hardaway](players/hardati01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
-| [Tim Thomas](players/thomati01.md) | Milwaukee Bucks | under contract | Tim Thomas · existing contract; signing date not recorded | 1 |
+| [Tim Thomas](players/thomati01.md) | New Jersey Nets | under contract | Tim Thomas · existing contract; signing date not recorded | 1 |
 | [Tito Maddox](players/maddoti01.md) | Free agent | team option pending | Tito Maddox · 2002-09-12 | 1 |
 | [Tom Gugliotta](players/guglito01.md) | Free agent | under contract | Tom Gugliotta · existing contract; signing date not recorded | 1 |
 | [Tommy Smith](players/smithto03.md) | Free agent | No verified contract record | No verified current agreement | 0 |

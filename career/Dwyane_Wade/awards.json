@@ -267,6 +267,18 @@
       "period_end": "2005-04-20",
       "awarded_on": "2005-05-18",
       "source": "Stats_and_Awards/League/2004-05/Season_Awards.md#all-nba-teams"
+    },
+    {
+      "id": "2005-06-player_of_week-2005-11-07-east",
+      "name": "Eastern Conference Player of the Week",
+      "short_name": "East POW",
+      "status": "earned",
+      "competition": "regular",
+      "season": "2005-06",
+      "period_start": "2005-11-07",
+      "period_end": "2005-11-13",
+      "awarded_on": "2005-11-14",
+      "source": "Stats_and_Awards/League/2005-06/11_November/Week_2/League_Awards.md#player-of-the-week"
     }
   ]
 }

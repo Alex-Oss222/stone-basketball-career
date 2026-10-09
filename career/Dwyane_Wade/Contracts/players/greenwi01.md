@@ -2,9 +2,9 @@
 
 # Contract | Willie Green
 
-Known through: 2005-11-13. [Open interactive contract](greenwi01.html#contract) · [Contract history](greenwi01.html#contract-history)
+Known through: 2005-11-14. [Open interactive contract](greenwi01.html#contract) · [Contract history](greenwi01.html#contract-history)
 
-Willie Green: under contract. Evidence cutoff: 2005-11-13.
+Willie Green: under contract. Evidence cutoff: 2005-11-14.
 
 ## Current contract
 

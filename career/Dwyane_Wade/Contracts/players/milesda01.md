@@ -2,9 +2,9 @@
 
 # Contract | Darius Miles
 
-Known through: 2005-11-13. [Open interactive contract](milesda01.html#contract) · [Contract history](milesda01.html#contract-history)
+Known through: 2005-11-14. [Open interactive contract](milesda01.html#contract) · [Contract history](milesda01.html#contract-history)
 
-Darius Miles: under contract. Evidence cutoff: 2005-11-13.
+Darius Miles: under contract. Evidence cutoff: 2005-11-14.
 
 ## Current contract
 

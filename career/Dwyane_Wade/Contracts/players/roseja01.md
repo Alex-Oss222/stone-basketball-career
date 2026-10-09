@@ -2,9 +2,9 @@
 
 # Contract | Jalen Rose
 
-Known through: 2005-11-13. [Open interactive contract](roseja01.html#contract) · [Contract history](roseja01.html#contract-history)
+Known through: 2005-11-14. [Open interactive contract](roseja01.html#contract) · [Contract history](roseja01.html#contract-history)
 
-Jalen Rose: under contract. Evidence cutoff: 2005-11-13.
+Jalen Rose: under contract. Evidence cutoff: 2005-11-14.
 
 ## Current contract
 
@@ -124,7 +124,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jalen Rose |
-| Club / rights baseline | Indiana Pacers |
+| Club / rights baseline | Washington Wizards |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

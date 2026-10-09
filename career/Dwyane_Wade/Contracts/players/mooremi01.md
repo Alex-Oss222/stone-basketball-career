@@ -2,9 +2,9 @@
 
 # Contract | Mikki Moore
 
-Known through: 2005-11-13. [Open interactive contract](mooremi01.html#contract) · [Contract history](mooremi01.html#contract-history)
+Known through: 2005-11-14. [Open interactive contract](mooremi01.html#contract) · [Contract history](mooremi01.html#contract-history)
 
-Mikki Moore: under contract. Evidence cutoff: 2005-11-13.
+Mikki Moore: under contract. Evidence cutoff: 2005-11-14.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Mikki Moore |
-| Club / rights baseline | New Jersey Nets |
+| Club / rights baseline | Milwaukee Bucks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

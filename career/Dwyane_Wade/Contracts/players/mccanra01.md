@@ -2,9 +2,9 @@
 
 # Contract | Rashad McCants
 
-Known through: 2005-11-13. [Open interactive contract](mccanra01.html#contract) · [Contract history](mccanra01.html#contract-history)
+Known through: 2005-11-14. [Open interactive contract](mccanra01.html#contract) · [Contract history](mccanra01.html#contract-history)
 
-Rashad McCants: under contract. Evidence cutoff: 2005-11-13.
+Rashad McCants: under contract. Evidence cutoff: 2005-11-14.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Rashad McCants |
-| Club / rights baseline | Indiana Pacers |
+| Club / rights baseline | Washington Wizards |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

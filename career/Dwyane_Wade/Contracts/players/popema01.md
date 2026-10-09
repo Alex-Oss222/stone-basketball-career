@@ -2,9 +2,9 @@
 
 # Contract | Mark Pope
 
-Known through: 2005-11-13. [Open interactive contract](popema01.html#contract) · [Contract history](popema01.html#contract-history)
+Known through: 2005-11-14. [Open interactive contract](popema01.html#contract) · [Contract history](popema01.html#contract-history)
 
-Mark Pope: under contract. Evidence cutoff: 2005-11-13.
+Mark Pope: under contract. Evidence cutoff: 2005-11-14.
 
 ## Current contract
 

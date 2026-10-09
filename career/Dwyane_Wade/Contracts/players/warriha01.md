@@ -2,9 +2,9 @@
 
 # Contract | Hakim Warrick
 
-Known through: 2005-11-13. [Open interactive contract](warriha01.html#contract) · [Contract history](warriha01.html#contract-history)
+Known through: 2005-11-14. [Open interactive contract](warriha01.html#contract) · [Contract history](warriha01.html#contract-history)
 
-Hakim Warrick: under contract. Evidence cutoff: 2005-11-13.
+Hakim Warrick: under contract. Evidence cutoff: 2005-11-14.
 
 ## Current contract
 

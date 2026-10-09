@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-06-league-trade-2005-11-14-hughela01-mccanra01-roseja01-snower01",
+ "date": "2005-11-14",
+ "question": "Do Indiana Pacers and Washington Wizards trade Jalen Rose and Rashad McCants for Larry Hughes and Eric Snow?",
+ "decider": "Indiana Pacers and Washington Wizards front offices (engine draw)",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "basis": "gains on own objectives {'Indiana Pacers': 0.294, 'Washington Wizards': 0.354}; acceptance {'Indiana Pacers': 0.95, 'Washington Wizards': 0.95}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

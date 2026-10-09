@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-11-13",
+  "as_of": "2005-11-14",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1346,7 +1346,7 @@
     {
       "player_id": "fortsda01",
       "name": "Danny Fortson",
-      "team": "Milwaukee Bucks",
+      "team": "New Jersey Nets",
       "status": "under contract",
       "current_contract_id": "fortsda01-existing-9b3348c6b7bd",
       "recorded_agreements": 1,
@@ -1904,7 +1904,7 @@
     {
       "player_id": "snower01",
       "name": "Eric Snow",
-      "team": "Washington Wizards",
+      "team": "Indiana Pacers",
       "status": "under contract",
       "current_contract_id": "snower01-2004-09-09",
       "recorded_agreements": 2,
@@ -2345,7 +2345,7 @@
     {
       "player_id": "roseja01",
       "name": "Jalen Rose",
-      "team": "Indiana Pacers",
+      "team": "Washington Wizards",
       "status": "under contract",
       "current_contract_id": "roseja01-existing-6434280dd7b3",
       "recorded_agreements": 1,
@@ -2561,7 +2561,7 @@
     {
       "player_id": "kiddja01",
       "name": "Jason Kidd",
-      "team": "New Jersey Nets",
+      "team": "Milwaukee Bucks",
       "status": "under contract",
       "current_contract_id": "kiddja01-2003-07-16",
       "recorded_agreements": 2,
@@ -3290,7 +3290,7 @@
     {
       "player_id": "hughela01",
       "name": "Larry Hughes",
-      "team": "Washington Wizards",
+      "team": "Indiana Pacers",
       "status": "under contract",
       "current_contract_id": "hughela01-2005-08-02",
       "recorded_agreements": 2,
@@ -4001,7 +4001,7 @@
     {
       "player_id": "mooremi01",
       "name": "Mikki Moore",
-      "team": "New Jersey Nets",
+      "team": "Milwaukee Bucks",
       "status": "under contract",
       "current_contract_id": "mooremi01-2005-08-02",
       "recorded_agreements": 2,
@@ -4451,7 +4451,7 @@
     {
       "player_id": "mccanra01",
       "name": "Rashad McCants",
-      "team": "Indiana Pacers",
+      "team": "Washington Wizards",
       "status": "under contract",
       "current_contract_id": "mccanra01-2005-07-01",
       "recorded_agreements": 1,
@@ -5342,7 +5342,7 @@
     {
       "player_id": "thomati01",
       "name": "Tim Thomas",
-      "team": "Milwaukee Bucks",
+      "team": "New Jersey Nets",
       "status": "under contract",
       "current_contract_id": "thomati01-existing-5df247bcd69a",
       "recorded_agreements": 1,

@@ -2032,6 +2032,78 @@
    "contract": null,
    "note": "cleared waivers from New Orleans/Oklahoma City Hornets: a free agent",
    "waiver": "2005-06-market-2005-11-07-waive-scaleal01"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-14-fortsda01-kiddja01-mooremi01-thomati01",
+   "date": "2005-11-14",
+   "kind": "trade",
+   "player": "Tim Thomas",
+   "bbr_id": "thomati01",
+   "from": "Milwaukee Bucks",
+   "to": "New Jersey Nets"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-14-fortsda01-kiddja01-mooremi01-thomati01",
+   "date": "2005-11-14",
+   "kind": "trade",
+   "player": "Danny Fortson",
+   "bbr_id": "fortsda01",
+   "from": "Milwaukee Bucks",
+   "to": "New Jersey Nets"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-14-fortsda01-kiddja01-mooremi01-thomati01",
+   "date": "2005-11-14",
+   "kind": "trade",
+   "player": "Jason Kidd",
+   "bbr_id": "kiddja01",
+   "from": "New Jersey Nets",
+   "to": "Milwaukee Bucks"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-14-fortsda01-kiddja01-mooremi01-thomati01",
+   "date": "2005-11-14",
+   "kind": "trade",
+   "player": "Mikki Moore",
+   "bbr_id": "mooremi01",
+   "from": "New Jersey Nets",
+   "to": "Milwaukee Bucks"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-14-hughela01-mccanra01-roseja01-snower01",
+   "date": "2005-11-14",
+   "kind": "trade",
+   "player": "Jalen Rose",
+   "bbr_id": "roseja01",
+   "from": "Indiana Pacers",
+   "to": "Washington Wizards"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-14-hughela01-mccanra01-roseja01-snower01",
+   "date": "2005-11-14",
+   "kind": "trade",
+   "player": "Rashad McCants",
+   "bbr_id": "mccanra01",
+   "from": "Indiana Pacers",
+   "to": "Washington Wizards"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-14-hughela01-mccanra01-roseja01-snower01",
+   "date": "2005-11-14",
+   "kind": "trade",
+   "player": "Larry Hughes",
+   "bbr_id": "hughela01",
+   "from": "Washington Wizards",
+   "to": "Indiana Pacers"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-14-hughela01-mccanra01-roseja01-snower01",
+   "date": "2005-11-14",
+   "kind": "trade",
+   "player": "Eric Snow",
+   "bbr_id": "snower01",
+   "from": "Washington Wizards",
+   "to": "Indiana Pacers"
   }
  ],
  "market_days": [
@@ -2047,6 +2119,7 @@
   "2005-11-10",
   "2005-11-11",
   "2005-11-12",
-  "2005-11-13"
+  "2005-11-13",
+  "2005-11-14"
  ]
 }

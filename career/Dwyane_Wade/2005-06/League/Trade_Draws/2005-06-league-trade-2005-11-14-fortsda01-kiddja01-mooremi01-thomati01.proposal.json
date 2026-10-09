@@ -1,0 +1,41 @@
+{
+ "id": "2005-06-league-trade-2005-11-14-fortsda01-kiddja01-mooremi01-thomati01",
+ "date": "2005-11-14",
+ "clubs": [
+  "Milwaukee Bucks",
+  "New Jersey Nets"
+ ],
+ "a": {
+  "club": "Milwaukee Bucks",
+  "sends": [
+   "Tim Thomas",
+   "Danny Fortson"
+  ],
+  "bbr_ids": [
+   "thomati01",
+   "fortsda01"
+  ],
+  "salary": 20182670
+ },
+ "b": {
+  "club": "New Jersey Nets",
+  "sends": [
+   "Jason Kidd",
+   "Mikki Moore"
+  ],
+  "bbr_ids": [
+   "kiddja01",
+   "mooremi01"
+  ],
+  "salary": 18243518
+ },
+ "gain": {
+  "Milwaukee Bucks": 0.586,
+  "New Jersey Nets": 0.535
+ },
+ "accept": {
+  "Milwaukee Bucks": 0.95,
+  "New Jersey Nets": 0.95
+ },
+ "both": 0.9025
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2005-11-14",
+ "decider": "Milwaukee Bucks and New Jersey Nets front offices (engine draw)",
+ "event_id": "2005-06-league-trade-2005-11-14-fortsda01-kiddja01-mooremi01-thomati01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Milwaukee Bucks and New Jersey Nets trade Tim Thomas and Danny Fortson for Jason Kidd and Mikki Moore?"
+}

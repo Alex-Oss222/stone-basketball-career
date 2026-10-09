@@ -1,0 +1,41 @@
+{
+ "id": "2005-06-league-trade-2005-11-14-hughela01-mccanra01-roseja01-snower01",
+ "date": "2005-11-14",
+ "clubs": [
+  "Indiana Pacers",
+  "Washington Wizards"
+ ],
+ "a": {
+  "club": "Indiana Pacers",
+  "sends": [
+   "Jalen Rose",
+   "Rashad McCants"
+  ],
+  "bbr_ids": [
+   "roseja01",
+   "mccanra01"
+  ],
+  "salary": 17313530
+ },
+ "b": {
+  "club": "Washington Wizards",
+  "sends": [
+   "Larry Hughes",
+   "Eric Snow"
+  ],
+  "bbr_ids": [
+   "hughela01",
+   "snower01"
+  ],
+  "salary": 18404194
+ },
+ "gain": {
+  "Indiana Pacers": 0.294,
+  "Washington Wizards": 0.354
+ },
+ "accept": {
+  "Indiana Pacers": 0.95,
+  "Washington Wizards": 0.95
+ },
+ "both": 0.9025
+}

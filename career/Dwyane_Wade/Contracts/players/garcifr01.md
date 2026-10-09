@@ -2,9 +2,9 @@
 
 # Contract | Francisco García
 
-Known through: 2005-11-13. [Open interactive contract](garcifr01.html#contract) · [Contract history](garcifr01.html#contract-history)
+Known through: 2005-11-14. [Open interactive contract](garcifr01.html#contract) · [Contract history](garcifr01.html#contract-history)
 
-Francisco García: under contract. Evidence cutoff: 2005-11-13.
+Francisco García: under contract. Evidence cutoff: 2005-11-14.
 
 ## Current contract
 
