@@ -17,6 +17,7 @@ import json
 import os
 from pathlib import Path
 import sys
+from http.client import HTTPException
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
@@ -63,7 +64,7 @@ def play_pending(root=ROOT, token=None, send=None, until=None):
         except HTTPError as exc:
             report.append((data["event_id"], f"refused {exc.code}: {exc.read().decode('utf-8', 'replace')[:300]}"))
             continue
-        except (URLError, TimeoutError) as exc:
+        except (URLError, TimeoutError, ConnectionError, HTTPException) as exc:   # a dropped or cut-off connection is transient
             report.append((data["event_id"], f"unreachable: {exc}"))
             continue
         status = served.pop("status", None)

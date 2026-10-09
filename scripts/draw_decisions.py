@@ -18,6 +18,7 @@ import json
 import os
 from pathlib import Path
 import sys
+from http.client import HTTPException
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
@@ -53,7 +54,7 @@ def draw_pending(root=ROOT, token=None, send=None):
         except HTTPError as exc:
             report.append((data["event_id"], f"error {exc.code}: {exc.read().decode('utf-8', 'replace')[:200]}"))
             continue
-        except (URLError, TimeoutError) as exc:
+        except (URLError, TimeoutError, ConnectionError, HTTPException) as exc:   # a dropped or cut-off connection is transient
             report.append((data["event_id"], f"unreachable: {exc}"))
             continue
         status = served.pop("status", None)
