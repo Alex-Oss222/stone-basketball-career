@@ -2,7 +2,7 @@
 
 # Contract negotiation | Dwyane Wade
 
-Career date: 2005-11-14 · Miami Heat · planned
+Career date: 2005-11-20 · Miami Heat · planned
 
 [Live milestone desk](index.html#contract_negotiation) · [All milestones](README.md)
 
@@ -117,4 +117,7 @@ Legal scale reference only: not offers, signed salary or a future option decisio
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

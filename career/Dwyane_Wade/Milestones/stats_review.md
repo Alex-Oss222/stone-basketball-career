@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-11-14 · Miami Heat · active
+Career date: 2005-11-20 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-14 closed game records in 2005-06 through 2005-11-14. Competitions remain separate.
+17 closed game records in 2005-06 through 2005-11-20. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 7 | 33.8 | 24.3 | 5.9 | 2.6 | 2.3 | Complete |
+| regular | 10 | 35.6 | 25.8 | 7.0 | 3.8 | 2.0 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 58 | 103 | 0.563 | 11 | 21 | 0.524 |
+| regular | 89 | 145 | 0.614 | 16 | 28 | 0.571 |
 
 ## Closed source games
 
@@ -44,6 +44,9 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-11-09 | regular | Indiana Pacers | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.md) |
 | 2005-11-10 | regular | Houston Rockets | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.md) |
 | 2005-11-12 | regular | Charlotte Bobcats | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.md) |
+| 2005-11-15 | regular | New Orleans/Oklahoma City Hornets | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.md) |
+| 2005-11-18 | regular | Philadelphia 76ers | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.md) |
+| 2005-11-20 | regular | Toronto Raptors | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -101,4 +104,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

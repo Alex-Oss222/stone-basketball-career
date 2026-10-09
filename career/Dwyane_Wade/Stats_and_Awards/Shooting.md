@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2005-11-14**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2005-11-20**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -6603,23 +6603,23 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-27 | Orlando Magic | Played | [Game](../2004-05/05_Preseason/Game_7.md) | [Result](../2004-05/05_Preseason/Game_7.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_7.result.json) |
 
-## 2005-06 · NBA regular season · through 2005-11-14
+## 2005-06 · NBA regular season · through 2005-11-20
 
 [Open this period](player_cards.html?period=regular-2005-06-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 7 | 0 | 7 | 58 / 103 | 56.3% | 11 / 21 | 170 | complete |
+| 10 | 0 | 10 | 89 / 145 | 61.4% | 16 / 28 | 258 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 32 | 48 | 66.7% | 9.14 | 6.86 | 48 |
-| Outside paint, under 12 ft | 1 | 3 | 33.3% | 0.29 | 0.43 | 3 |
-| Outside paint, 12 to under 18 ft | 4 | 12 | 33.3% | 1.14 | 1.71 | 12 |
-| 18 ft to the three-point line | 10 | 19 | 52.6% | 2.86 | 2.71 | 19 |
-| Three-point range | 11 | 21 | 52.4% | 4.71 | 3.00 | 21 |
+| Paint | 51 | 74 | 68.9% | 10.20 | 7.40 | 74 |
+| Outside paint, under 12 ft | 2 | 5 | 40.0% | 0.40 | 0.50 | 5 |
+| Outside paint, 12 to under 18 ft | 5 | 13 | 38.5% | 1.00 | 1.30 | 13 |
+| 18 ft to the three-point line | 15 | 25 | 60.0% | 3.00 | 2.50 | 25 |
+| Three-point range | 16 | 28 | 57.1% | 4.80 | 2.80 | 28 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -6630,6 +6630,9 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2005-11-09 | Indiana Pacers | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.result.json) |
 | 2005-11-10 | Houston Rockets | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.result.json) |
 | 2005-11-12 | Charlotte Bobcats | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.result.json) |
+| 2005-11-15 | New Orleans/Oklahoma City Hornets | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.result.json) |
+| 2005-11-18 | Philadelphia 76ers | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.result.json) |
+| 2005-11-20 | Toronto Raptors | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.result.json) |
 
 ## 2005-11 · NBA regular season
 
@@ -6637,17 +6640,17 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 7 | 0 | 7 | 58 / 103 | 56.3% | 11 / 21 | 170 | complete |
+| 10 | 0 | 10 | 89 / 145 | 61.4% | 16 / 28 | 258 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 32 | 48 | 66.7% | 9.14 | 6.86 | 48 |
-| Outside paint, under 12 ft | 1 | 3 | 33.3% | 0.29 | 0.43 | 3 |
-| Outside paint, 12 to under 18 ft | 4 | 12 | 33.3% | 1.14 | 1.71 | 12 |
-| 18 ft to the three-point line | 10 | 19 | 52.6% | 2.86 | 2.71 | 19 |
-| Three-point range | 11 | 21 | 52.4% | 4.71 | 3.00 | 21 |
+| Paint | 51 | 74 | 68.9% | 10.20 | 7.40 | 74 |
+| Outside paint, under 12 ft | 2 | 5 | 40.0% | 0.40 | 0.50 | 5 |
+| Outside paint, 12 to under 18 ft | 5 | 13 | 38.5% | 1.00 | 1.30 | 13 |
+| 18 ft to the three-point line | 15 | 25 | 60.0% | 3.00 | 2.50 | 25 |
+| Three-point range | 16 | 28 | 57.1% | 4.80 | 2.80 | 28 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -6658,6 +6661,9 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2005-11-09 | Indiana Pacers | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.result.json) |
 | 2005-11-10 | Houston Rockets | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.result.json) |
 | 2005-11-12 | Charlotte Bobcats | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.result.json) |
+| 2005-11-15 | New Orleans/Oklahoma City Hornets | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.result.json) |
+| 2005-11-18 | Philadelphia 76ers | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.result.json) |
+| 2005-11-20 | Toronto Raptors | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.result.json) |
 
 ## 2005-11-01 to 2005-11-07 · NBA regular season
 
@@ -6707,6 +6713,30 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2005-11-09 | Indiana Pacers | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.result.json) |
 | 2005-11-10 | Houston Rockets | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.result.json) |
 | 2005-11-12 | Charlotte Bobcats | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.result.json) |
+
+## 2005-11-15 to 2005-11-20 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-week-2005-11-15#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 3 | 0 | 3 | 31 / 42 | 73.8% | 5 / 7 | 88 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 19 | 26 | 73.1% | 12.67 | 8.67 | 26 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 0.67 | 0.67 | 2 |
+| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 0.67 | 0.33 | 1 |
+| 18 ft to the three-point line | 5 | 6 | 83.3% | 3.33 | 2.00 | 6 |
+| Three-point range | 5 | 7 | 71.4% | 5.00 | 2.33 | 7 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-11-15 | New Orleans/Oklahoma City Hornets | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.result.json) |
+| 2005-11-18 | Philadelphia 76ers | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.result.json) |
+| 2005-11-20 | Toronto Raptors | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.result.json) |
 
 ## 2005-11-02 at Memphis Grizzlies · Played · NBA regular season
 
@@ -6862,7 +6892,73 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-11-12 | Charlotte Bobcats | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.result.json) |
 
-## 2005-06 · NBA preseason · through 2005-11-14
+## 2005-11-15 vs New Orleans/Oklahoma City Hornets · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-game-c0c0017007d118a4#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 11 / 17 | 64.7% | 3 / 4 | 30 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 7 | 11 | 63.6% | 14.00 | 11.00 | 11 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| 18 ft to the three-point line | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| Three-point range | 3 | 4 | 75.0% | 9.00 | 4.00 | 4 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-11-15 | New Orleans/Oklahoma City Hornets | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_1.result.json) |
+
+## 2005-11-18 vs Philadelphia 76ers · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-game-4cbd77019e1a5ea3#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 7 / 10 | 70.0% | 0 / 1 | 18 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 6 | 8 | 75.0% | 12.00 | 8.00 | 8 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| 18 ft to the three-point line | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-11-18 | Philadelphia 76ers | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_2.result.json) |
+
+## 2005-11-20 at Toronto Raptors · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-game-bd68300500c52649#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 13 / 15 | 86.7% | 2 / 2 | 40 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 6 | 7 | 85.7% | 12.00 | 7.00 | 7 |
+| Outside paint, under 12 ft | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 4 | 4 | 100.0% | 8.00 | 4.00 | 4 |
+| Three-point range | 2 | 2 | 100.0% | 6.00 | 2.00 | 2 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-11-20 | Toronto Raptors | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.result.json) |
+
+## 2005-06 · NBA preseason · through 2005-11-20
 
 [Open this period](player_cards.html?period=preseason-2005-06-season#shooting)
 

@@ -2,9 +2,9 @@
 
 # Contract | Šarūnas Jasikevičius
 
-Known through: 2005-11-14. [Open interactive contract](jasiksa01.html#contract) · [Contract history](jasiksa01.html#contract-history)
+Known through: 2005-11-20. [Open interactive contract](jasiksa01.html#contract) · [Contract history](jasiksa01.html#contract-history)
 
-Šarūnas Jasikevičius: under contract. Evidence cutoff: 2005-11-14.
+Šarūnas Jasikevičius: under contract. Evidence cutoff: 2005-11-20.
 
 ## Current contract
 

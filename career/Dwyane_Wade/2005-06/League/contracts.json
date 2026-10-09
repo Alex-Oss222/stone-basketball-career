@@ -1561,13 +1561,14 @@
   {
    "player": "Danny Fortson",
    "bbr_id": "fortsda01",
-   "club": "Milwaukee Bucks",
+   "club": "New Jersey Nets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 6207670
    },
-   "source": "league contract ledger 2004-05 (existing); traded 2005-08-26"
+   "source": "league contract ledger 2004-05 (existing); traded 2005-08-26",
+   "signed_club": "Milwaukee Bucks"
   },
   {
    "player": "Jeff Foster",
@@ -2380,7 +2381,7 @@
   {
    "player": "Larry Hughes",
    "bbr_id": "hughela01",
-   "club": "Washington Wizards",
+   "club": "Indiana Pacers",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -2390,7 +2391,8 @@
     "2008-09": 18841500,
     "2009-10": 20345955
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Washington Wizards"
   },
   {
    "player": "Kris Humphries",
@@ -2866,7 +2868,7 @@
   {
    "player": "Jason Kidd",
    "bbr_id": "kiddja01",
-   "club": "New Jersey Nets",
+   "club": "Milwaukee Bucks",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -2875,7 +2877,8 @@
     "2007-08": 17278333,
     "2008-09": 17278333
    },
-   "source": "league contract ledger 2004-05 (existing)"
+   "source": "league contract ledger 2004-05 (existing)",
+   "signed_club": "New Jersey Nets"
   },
   {
    "player": "Andrei Kirilenko",
@@ -3265,7 +3268,7 @@
   {
    "player": "Rashad McCants",
    "bbr_id": "mccanra01",
-   "club": "Indiana Pacers",
+   "club": "Washington Wizards",
    "route": "rookie_scale",
    "kind": "rookie_scale",
    "schedule": {
@@ -3279,7 +3282,8 @@
    "options": {
     "2007-08": "team_option",
     "2008-09": "team_option"
-   }
+   },
+   "signed_club": "Indiana Pacers"
   },
   {
    "player": "Antonio McDyess",
@@ -3536,13 +3540,14 @@
   {
    "player": "Mikki Moore",
    "bbr_id": "mooremi01",
-   "club": "New Jersey Nets",
+   "club": "Milwaukee Bucks",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2005-06": 965185
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "New Jersey Nets"
   },
   {
    "player": "Terence Morris",
@@ -4429,14 +4434,15 @@
   {
    "player": "Jalen Rose",
    "bbr_id": "roseja01",
-   "club": "Indiana Pacers",
+   "club": "Washington Wizards",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 15694250,
     "2006-07": 16901500
    },
-   "source": "league contract ledger 2004-05 (existing)"
+   "source": "league contract ledger 2004-05 (existing)",
+   "signed_club": "Indiana Pacers"
   },
   {
    "player": "Malik Rose",
@@ -4650,7 +4656,7 @@
   {
    "player": "Eric Snow",
    "bbr_id": "snower01",
-   "club": "Washington Wizards",
+   "club": "Indiana Pacers",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -5020,13 +5026,14 @@
   {
    "player": "Tim Thomas",
    "bbr_id": "thomati01",
-   "club": "Milwaukee Bucks",
+   "club": "New Jersey Nets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 13975000
    },
-   "source": "league contract ledger 2004-05 (existing)"
+   "source": "league contract ledger 2004-05 (existing)",
+   "signed_club": "Milwaukee Bucks"
   },
   {
    "player": "Dijon Thompson",

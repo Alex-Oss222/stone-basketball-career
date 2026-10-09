@@ -2,9 +2,9 @@
 
 # Contract | Rawle Marshall
 
-Known through: 2005-11-14. [Open interactive contract](marshra01.html#contract) · [Contract history](marshra01.html#contract-history)
+Known through: 2005-11-20. [Open interactive contract](marshra01.html#contract) · [Contract history](marshra01.html#contract-history)
 
-Rawle Marshall: under contract. Evidence cutoff: 2005-11-14.
+Rawle Marshall: under contract. Evidence cutoff: 2005-11-20.
 
 ## Current contract
 

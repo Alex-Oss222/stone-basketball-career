@@ -2,9 +2,9 @@
 
 # Contract | Alonzo Mourning
 
-Known through: 2005-11-14. [Open interactive contract](mournal01.html#contract) · [Contract history](mournal01.html#contract-history)
+Known through: 2005-11-20. [Open interactive contract](mournal01.html#contract) · [Contract history](mournal01.html#contract-history)
 
-Alonzo Mourning: under contract. Evidence cutoff: 2005-11-14.
+Alonzo Mourning: under contract. Evidence cutoff: 2005-11-20.
 
 ## Current contract
 

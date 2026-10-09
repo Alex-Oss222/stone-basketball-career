@@ -2,9 +2,9 @@
 
 # Contract | Yaroslav Korolev
 
-Known through: 2005-11-14. [Open interactive contract](korolya01.html#contract) · [Contract history](korolya01.html#contract-history)
+Known through: 2005-11-20. [Open interactive contract](korolya01.html#contract) · [Contract history](korolya01.html#contract-history)
 
-Yaroslav Korolev: under contract. Evidence cutoff: 2005-11-14.
+Yaroslav Korolev: under contract. Evidence cutoff: 2005-11-20.
 
 ## Current contract
 
