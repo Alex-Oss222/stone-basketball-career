@@ -1712,6 +1712,203 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.32 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-07-clear-walshma01",
+   "date": "2005-11-07",
+   "kind": "clear",
+   "player": "walshma01",
+   "bbr_id": "walshma01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "walshma01",
+    "bbr_id": "walshma01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": null,
+   "note": "cleared waivers from Charlotte Bobcats: a free agent",
+   "waiver": "2005-06-market-2005-11-05-waive-walshma01"
+  },
+  {
+   "id": "2005-06-market-2005-11-07-clear-allenma01",
+   "date": "2005-11-07",
+   "kind": "clear",
+   "player": "Malik Allen",
+   "bbr_id": "allenma01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Malik Allen",
+    "bbr_id": "allenma01",
+    "position": "PF",
+    "games": 54,
+    "minutes": 701
+   },
+   "contract": null,
+   "note": "cleared waivers from Chicago Bulls: a free agent",
+   "waiver": "2005-06-market-2005-11-05-waive-allenma01"
+  },
+  {
+   "id": "2005-06-market-2005-11-07-clear-fitchge01",
+   "date": "2005-11-07",
+   "kind": "clear",
+   "player": "fitchge01",
+   "bbr_id": "fitchge01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "fitchge01",
+    "bbr_id": "fitchge01",
+    "position": "SF",
+    "games": 12,
+    "minutes": 239
+   },
+   "contract": null,
+   "note": "cleared waivers from New Orleans/Oklahoma City Hornets: a free agent",
+   "waiver": "2005-06-market-2005-11-05-waive-fitchge01"
+  },
+  {
+   "id": "2005-06-market-2005-11-07-clear-johnsam01",
+   "date": "2005-11-07",
+   "kind": "clear",
+   "player": "Amir Johnson",
+   "bbr_id": "johnsam01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Amir Johnson",
+    "bbr_id": "johnsam01",
+    "position": "SF",
+    "games": 3,
+    "minutes": 39
+   },
+   "contract": null,
+   "note": "cleared waivers from Utah Jazz: a free agent",
+   "waiver": "2005-06-market-2005-11-05-waive-johnsam01"
+  },
+  {
+   "id": "2005-06-market-2005-11-07-waive-scaleal01",
+   "date": "2005-11-07",
+   "kind": "waive",
+   "player": "Alex Scales",
+   "bbr_id": "scaleal01",
+   "from": "New Orleans/Oklahoma City Hornets",
+   "to": null,
+   "role": {
+    "player_id": "Alex Scales",
+    "bbr_id": "scaleal01",
+    "position": "SG",
+    "games": 1,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2005-11-09"
+  },
+  {
+   "id": "2005-06-market-2005-11-07-rest_of_season-reedju01",
+   "date": "2005-11-07",
+   "kind": "rest_of_season",
+   "player": "Justin Reed",
+   "bbr_id": "reedju01",
+   "from": null,
+   "to": "New Orleans/Oklahoma City Hornets",
+   "role": {
+    "player_id": "Justin Reed",
+    "bbr_id": "reedju01",
+    "position": "SF",
+    "games": 72,
+    "minutes": 997
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.17 x fit"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-07-bogutan01-howarju01-odomla01-wesleda01",
+   "date": "2005-11-07",
+   "kind": "trade",
+   "player": "David Wesley",
+   "bbr_id": "wesleda01",
+   "from": "Golden State Warriors",
+   "to": "Los Angeles Clippers"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-07-bogutan01-howarju01-odomla01-wesleda01",
+   "date": "2005-11-07",
+   "kind": "trade",
+   "player": "Juwan Howard",
+   "bbr_id": "howarju01",
+   "from": "Golden State Warriors",
+   "to": "Los Angeles Clippers"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-07-bogutan01-howarju01-odomla01-wesleda01",
+   "date": "2005-11-07",
+   "kind": "trade",
+   "player": "Andrew Bogut",
+   "bbr_id": "bogutan01",
+   "from": "Golden State Warriors",
+   "to": "Los Angeles Clippers"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-07-bogutan01-howarju01-odomla01-wesleda01",
+   "date": "2005-11-07",
+   "kind": "trade",
+   "player": "Lamar Odom",
+   "bbr_id": "odomla01",
+   "from": "Los Angeles Clippers",
+   "to": "Golden State Warriors"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-07-brownde02-fishede01-haywobr01-smithjr01-snower01",
+   "date": "2005-11-07",
+   "kind": "trade",
+   "player": "Eric Snow",
+   "bbr_id": "snower01",
+   "from": "Boston Celtics",
+   "to": "Washington Wizards"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-07-brownde02-fishede01-haywobr01-smithjr01-snower01",
+   "date": "2005-11-07",
+   "kind": "trade",
+   "player": "Devin Brown",
+   "bbr_id": "brownde02",
+   "from": "Boston Celtics",
+   "to": "Washington Wizards"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-07-brownde02-fishede01-haywobr01-smithjr01-snower01",
+   "date": "2005-11-07",
+   "kind": "trade",
+   "player": "J.R. Smith",
+   "bbr_id": "smithjr01",
+   "from": "Boston Celtics",
+   "to": "Washington Wizards"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-07-brownde02-fishede01-haywobr01-smithjr01-snower01",
+   "date": "2005-11-07",
+   "kind": "trade",
+   "player": "Derek Fisher",
+   "bbr_id": "fishede01",
+   "from": "Washington Wizards",
+   "to": "Boston Celtics"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-07-brownde02-fishede01-haywobr01-smithjr01-snower01",
+   "date": "2005-11-07",
+   "kind": "trade",
+   "player": "Brendan Haywood",
+   "bbr_id": "haywobr01",
+   "from": "Washington Wizards",
+   "to": "Boston Celtics"
   }
  ],
  "market_days": [
@@ -1720,6 +1917,7 @@
   "2005-11-03",
   "2005-11-04",
   "2005-11-05",
-  "2005-11-06"
+  "2005-11-06",
+  "2005-11-07"
  ]
 }

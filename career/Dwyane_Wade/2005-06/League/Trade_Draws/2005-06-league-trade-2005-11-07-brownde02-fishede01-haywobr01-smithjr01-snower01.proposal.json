@@ -1,0 +1,43 @@
+{
+ "id": "2005-06-league-trade-2005-11-07-brownde02-fishede01-haywobr01-smithjr01-snower01",
+ "date": "2005-11-07",
+ "clubs": [
+  "Boston Celtics",
+  "Washington Wizards"
+ ],
+ "a": {
+  "club": "Boston Celtics",
+  "sends": [
+   "Eric Snow",
+   "Devin Brown",
+   "J.R. Smith"
+  ],
+  "bbr_ids": [
+   "snower01",
+   "brownde02",
+   "smithjr01"
+  ],
+  "salary": 8789372
+ },
+ "b": {
+  "club": "Washington Wizards",
+  "sends": [
+   "Derek Fisher",
+   "Brendan Haywood"
+  ],
+  "bbr_ids": [
+   "fishede01",
+   "haywobr01"
+  ],
+  "salary": 9543976
+ },
+ "gain": {
+  "Boston Celtics": 0.329,
+  "Washington Wizards": 0.292
+ },
+ "accept": {
+  "Boston Celtics": 0.95,
+  "Washington Wizards": 0.95
+ },
+ "both": 0.9025
+}

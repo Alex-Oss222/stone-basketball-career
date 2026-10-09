@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2005-11-06 · Miami Heat · active
+Career date: 2005-11-07 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,7 +14,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2005-11-06 |
+| Career date | 2005-11-07 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
@@ -25,12 +25,12 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-11-06 | Current checkpoint | 2005-11-05-miami-heat-at-milwaukee-bucks | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2005-11-07 | Current checkpoint | 2005-11-05-miami-heat-at-milwaukee-bucks | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2005-10-04 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2005-11-07 | Next Miami game, vs New Jersey Nets | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
-| 2005-11-07 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2005-11-09 | Next Miami game, at Indiana Pacers | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
 | 2005-11-09 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
+| 2005-11-14 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2006-01-07 | Keep-or-waive review of non-guaranteed contracts | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
 | 2006-01-10 | Kept contracts become guaranteed | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |

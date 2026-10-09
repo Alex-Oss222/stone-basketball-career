@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-06-league-trade-2005-11-07-bogutan01-howarju01-odomla01-wesleda01",
+ "date": "2005-11-07",
+ "question": "Do Golden State Warriors and Los Angeles Clippers trade David Wesley and Juwan Howard and Andrew Bogut for Lamar Odom?",
+ "decider": "Golden State Warriors and Los Angeles Clippers front offices (engine draw)",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "basis": "gains on own objectives {'Golden State Warriors': 0.347, 'Los Angeles Clippers': 0.4}; acceptance {'Golden State Warriors': 0.95, 'Los Angeles Clippers': 0.95}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

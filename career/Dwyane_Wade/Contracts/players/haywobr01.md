@@ -2,9 +2,9 @@
 
 # Contract | Brendan Haywood
 
-Known through: 2005-11-06. [Open interactive contract](haywobr01.html#contract) · [Contract history](haywobr01.html#contract-history)
+Known through: 2005-11-07. [Open interactive contract](haywobr01.html#contract) · [Contract history](haywobr01.html#contract-history)
 
-Brendan Haywood: under contract. Evidence cutoff: 2005-11-06.
+Brendan Haywood: under contract. Evidence cutoff: 2005-11-07.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Brendan Haywood |
-| Club / rights baseline | Washington Wizards |
+| Club / rights baseline | Boston Celtics |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

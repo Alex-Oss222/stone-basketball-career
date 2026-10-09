@@ -2,9 +2,9 @@
 
 # Contract | Justin Reed
 
-Known through: 2005-11-06. [Open interactive contract](justinreed.html#contract) · [Contract history](justinreed.html#contract-history)
+Known through: 2005-11-07. [Open interactive contract](justinreed.html#contract) · [Contract history](justinreed.html#contract-history)
 
-Justin Reed: under contract. Evidence cutoff: 2005-11-06.
+Justin Reed: under contract. Evidence cutoff: 2005-11-07.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Justin Reed |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | New Orleans/Oklahoma City Hornets |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

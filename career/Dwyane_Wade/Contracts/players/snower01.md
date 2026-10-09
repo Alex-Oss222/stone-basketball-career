@@ -2,9 +2,9 @@
 
 # Contract | Eric Snow
 
-Known through: 2005-11-06. [Open interactive contract](snower01.html#contract) · [Contract history](snower01.html#contract-history)
+Known through: 2005-11-07. [Open interactive contract](snower01.html#contract) · [Contract history](snower01.html#contract-history)
 
-Eric Snow: under contract. Evidence cutoff: 2005-11-06.
+Eric Snow: under contract. Evidence cutoff: 2005-11-07.
 
 ## Current contract
 
@@ -118,7 +118,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Eric Snow |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Washington Wizards |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

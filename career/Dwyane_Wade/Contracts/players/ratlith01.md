@@ -2,9 +2,9 @@
 
 # Contract | Theo Ratliff
 
-Known through: 2005-11-06. [Open interactive contract](ratlith01.html#contract) · [Contract history](ratlith01.html#contract-history)
+Known through: 2005-11-07. [Open interactive contract](ratlith01.html#contract) · [Contract history](ratlith01.html#contract-history)
 
-Theo Ratliff: released. Evidence cutoff: 2005-11-06.
+Theo Ratliff: released. Evidence cutoff: 2005-11-07.
 
 ## Current contract
 

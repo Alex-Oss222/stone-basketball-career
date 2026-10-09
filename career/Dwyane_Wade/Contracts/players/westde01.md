@@ -2,9 +2,9 @@
 
 # Contract | Delonte West
 
-Known through: 2005-11-06. [Open interactive contract](westde01.html#contract) · [Contract history](westde01.html#contract-history)
+Known through: 2005-11-07. [Open interactive contract](westde01.html#contract) · [Contract history](westde01.html#contract-history)
 
-Delonte West: under contract. Evidence cutoff: 2005-11-06.
+Delonte West: under contract. Evidence cutoff: 2005-11-07.
 
 ## Current contract
 

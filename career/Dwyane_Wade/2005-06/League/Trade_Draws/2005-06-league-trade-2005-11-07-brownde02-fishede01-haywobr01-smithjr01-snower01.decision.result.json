@@ -1,0 +1,12 @@
+{
+ "date": "2005-11-07",
+ "decider": "Boston Celtics and Washington Wizards front offices (engine draw)",
+ "event_id": "2005-06-league-trade-2005-11-07-brownde02-fishede01-haywobr01-smithjr01-snower01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Boston Celtics and Washington Wizards trade Eric Snow and Devin Brown and J.R. Smith for Derek Fisher and Brendan Haywood?"
+}

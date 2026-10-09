@@ -2,9 +2,9 @@
 
 # Contract | Steve Smith
 
-Known through: 2005-11-06. [Open interactive contract](smithst01.html#contract) · [Contract history](smithst01.html#contract-history)
+Known through: 2005-11-07. [Open interactive contract](smithst01.html#contract) · [Contract history](smithst01.html#contract-history)
 
-Steve Smith: under contract. Evidence cutoff: 2005-11-06.
+Steve Smith: under contract. Evidence cutoff: 2005-11-07.
 
 ## Current contract
 

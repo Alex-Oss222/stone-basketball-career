@@ -4,7 +4,7 @@
 
 NBA regular season · November 1-30, 2005
 
-As of November 6, 2005: 3 closed Miami games in this period. Rows cover Miami's closed games only.
+As of November 7, 2005: 3 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
@@ -65,7 +65,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Period | Calendar dates | Closed games | Status |
 | --- | --- | ---: | --- |
-| [Week 1](Week_1/Team_Stats.md) | November 1-7, 2005 | 3 | Through November 6, 2005 |
+| [Week 1](Week_1/Team_Stats.md) | November 1-7, 2005 | 3 | Through November 7, 2005 |
 | [Week 2](Week_2/Team_Stats.md) | November 8-14, 2005 | 0 | Not started |
 | [Week 3](Week_3/Team_Stats.md) | November 15-21, 2005 | 0 | Not started |
 | [Week 4](Week_4/Team_Stats.md) | November 22-30, 2005 | 0 | Not started |

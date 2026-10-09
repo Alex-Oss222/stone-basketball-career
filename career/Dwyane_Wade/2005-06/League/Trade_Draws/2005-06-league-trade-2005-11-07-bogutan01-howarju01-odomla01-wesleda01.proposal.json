@@ -1,0 +1,41 @@
+{
+ "id": "2005-06-league-trade-2005-11-07-bogutan01-howarju01-odomla01-wesleda01",
+ "date": "2005-11-07",
+ "clubs": [
+  "Golden State Warriors",
+  "Los Angeles Clippers"
+ ],
+ "a": {
+  "club": "Golden State Warriors",
+  "sends": [
+   "David Wesley",
+   "Juwan Howard",
+   "Andrew Bogut"
+  ],
+  "bbr_ids": [
+   "wesleda01",
+   "howarju01",
+   "bogutan01"
+  ],
+  "salary": 12783560
+ },
+ "b": {
+  "club": "Los Angeles Clippers",
+  "sends": [
+   "Lamar Odom"
+  ],
+  "bbr_ids": [
+   "odomla01"
+  ],
+  "salary": 12000000
+ },
+ "gain": {
+  "Golden State Warriors": 0.347,
+  "Los Angeles Clippers": 0.4
+ },
+ "accept": {
+  "Golden State Warriors": 0.95,
+  "Los Angeles Clippers": 0.95
+ },
+ "both": 0.9025
+}

@@ -1,0 +1,112 @@
+{
+ "schema_version": 1,
+ "season": "2005-06",
+ "kind": "award_decisions",
+ "rule": "Each award is split East and West (from 2001-02, `nba_awards_catalog.json`). An award closes on its\nannouncement date and only from closed regular-season results dated inside its period\n(`write_back.closed_results`), so no later game, real winner or historical vote enters it.\n\nPeriods (judgement, from the NBA's calendar of the era):\n- Player of the Week: Monday to Sunday (the opening week runs from opening night, October 28), announced\n  the Monday after; the final week ends on the last regular-season day.\n- Player and Rookie of the Month: calendar months, October folded into November because the season opened\n  October 28; announced two days after the month ends. The exact announcement day is an assumption.\n\nSelection: the league office named the winners without a published ballot, so the branch ranks the\nevidence. Each game is scored with Hollinger's Game Score (PTS + 0.4 FGM - 0.7 FGA - 0.4 missed FT\n+ 0.7 ORB + 0.3 DRB + STL + 0.7 AST + 0.7 BLK - 0.4 PF - TOV), and winning counts:\n- Player of the Week: at least two games; total Game Score + 3 per club win in his games.\n- Player of the Month: at least 60% of his club's games in the period; Game Score per game + 12 x his club's\n  win share in his games.\n- Rookie of the Month: first-season players (the registry's 2003 draft class and sourced identities with no earlier\n  NBA season); at least\n  half his club's games; Game Score per game + 4 x win share.\nThe highest score wins; the next two are the published shortlist. Decisions are appended once to\n`award_decisions.json` and never recomputed. A Wade win is added to his `awards.json` with the page as its\nsource. Rules apply to every player alike: no seniority, reputation or market bonus.",
+ "decisions": [
+  {
+   "id": "2005-06-player_of_week-2005-11-01-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-11-01",
+   "period_end": "2005-11-06",
+   "announced_on": "2005-11-07",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/11_November/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 36.7,
+     "reb": 8.3,
+     "ast": 5.0,
+     "game_score": 29.1,
+     "score": 93.3,
+     "rank": 1
+    },
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 23.0,
+     "reb": 4.3,
+     "ast": 5.3,
+     "game_score": 20.73,
+     "score": 68.2,
+     "rank": 2
+    },
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 3,
+     "wins": 1,
+     "losses": 2,
+     "pts": 25.0,
+     "reb": 6.0,
+     "ast": 8.3,
+     "game_score": 20.8,
+     "score": 65.4,
+     "rank": 3
+    }
+   ],
+   "winner": "Paul Pierce"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-11-01-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-11-01",
+   "period_end": "2005-11-06",
+   "announced_on": "2005-11-07",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/11_November/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Joe Johnson",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 27.5,
+     "reb": 2.8,
+     "ast": 6.5,
+     "game_score": 22.4,
+     "score": 98.6,
+     "rank": 1
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 24.5,
+     "reb": 11.5,
+     "ast": 1.2,
+     "game_score": 21.77,
+     "score": 96.1,
+     "rank": 2
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 26.3,
+     "reb": 11.0,
+     "ast": 3.3,
+     "game_score": 25.0,
+     "score": 81.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Joe Johnson"
+  }
+ ]
+}

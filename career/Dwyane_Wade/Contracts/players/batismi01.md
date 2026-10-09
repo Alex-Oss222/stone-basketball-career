@@ -2,9 +2,9 @@
 
 # Contract | Mike Batiste
 
-Known through: 2005-11-06. [Open interactive contract](batismi01.html#contract) · [Contract history](batismi01.html#contract-history)
+Known through: 2005-11-07. [Open interactive contract](batismi01.html#contract) · [Contract history](batismi01.html#contract-history)
 
-Mike Batiste: voided. Evidence cutoff: 2005-11-06.
+Mike Batiste: voided. Evidence cutoff: 2005-11-07.
 
 ## Current contract
 

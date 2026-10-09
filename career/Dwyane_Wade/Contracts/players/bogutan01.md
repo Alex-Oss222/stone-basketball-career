@@ -2,9 +2,9 @@
 
 # Contract | Andrew Bogut
 
-Known through: 2005-11-06. [Open interactive contract](bogutan01.html#contract) · [Contract history](bogutan01.html#contract-history)
+Known through: 2005-11-07. [Open interactive contract](bogutan01.html#contract) · [Contract history](bogutan01.html#contract-history)
 
-Andrew Bogut: under contract. Evidence cutoff: 2005-11-06.
+Andrew Bogut: under contract. Evidence cutoff: 2005-11-07.
 
 ## Current contract
 
@@ -117,7 +117,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Andrew Bogut |
-| Club / rights baseline | Golden State Warriors |
+| Club / rights baseline | Los Angeles Clippers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

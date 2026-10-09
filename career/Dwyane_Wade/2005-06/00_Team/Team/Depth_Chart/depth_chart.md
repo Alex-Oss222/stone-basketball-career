@@ -1,6 +1,6 @@
 # Miami Heat working depth chart
 
-**As of:** 2005-11-06 · **Staff decision in force:** 2005-10-26 (training-camp decision)  
+**As of:** 2005-11-07 · **Staff decision in force:** 2005-10-26 (training-camp decision)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
@@ -29,7 +29,7 @@
 
 Outside the rotation (dressing as the twelfth man or on the injured list): DeShawn Stevenson, Eddie Gill, Matt Carroll, Jumaine Jones.
 
-## Injured list on 2005-11-06
+## Injured list on 2005-11-07
 
 DeShawn Stevenson, Jumaine Jones, Matt Carroll ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 

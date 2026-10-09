@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-11-06 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-11-07 
 
 **Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $835,810 scheduled ($835,810 in 2005-06). (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
 
@@ -47,7 +47,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2004-05 | Chicago Bulls | 3 | 0 | 6.3 | 5.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.667 | 0.500 | 1.000 |
-| 2005-06 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2005-06 | MIA | 1 | 0 | 2.6 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0% | 0.0% | N/A |
 
 Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
 

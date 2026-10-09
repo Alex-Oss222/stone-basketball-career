@@ -1,0 +1,12 @@
+{
+ "date": "2005-11-07",
+ "decider": "Golden State Warriors and Los Angeles Clippers front offices (engine draw)",
+ "event_id": "2005-06-league-trade-2005-11-07-bogutan01-howarju01-odomla01-wesleda01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Golden State Warriors and Los Angeles Clippers trade David Wesley and Juwan Howard and Andrew Bogut for Lamar Odom?"
+}
