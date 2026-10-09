@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 26 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 4, 2005 · **Statistics through:** 2005-11-11 
+**Opening assessment:** October 4, 2005 · **Statistics through:** 2005-11-12 
 
 **Contract/control:** Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10. (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
 
@@ -48,7 +48,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2004-05 | Boston Celtics | 74 | 15 | 24.2 | 7.7 | 5.2 | 1.2 | 0.5 | 0.4 | 0.5 | 0.419 | 0.336 | 0.719 |
-| 2005-06 | MIA | 2 | 0 | 8.1 | 6.5 | 0.0 | 1.0 | 0.5 | 0.0 | 1.5 | 83.3% | 66.7% | 50.0% |
+| 2005-06 | MIA | 3 | 0 | 7.7 | 5.3 | 0.0 | 1.3 | 0.3 | 0.0 | 1.0 | 85.7% | 75.0% | 50.0% |
 
 Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
 
