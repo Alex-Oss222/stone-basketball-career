@@ -447,7 +447,8 @@ def main(argv):
     else:
         applied, pending = write(day)
         for trade_id, status in applied:
-            consent = consent_report(json.loads((ROOT / TRADES / f"{trade_id}.json").read_text(encoding="utf-8")))
+            path = ROOT / TRADES / f"{trade_id}.json"
+            consent = consent_report(json.loads(path.read_text(encoding="utf-8"))) if path.is_file() else ""
             print(f"{trade_id}: {status}" + (f"; {consent}" if consent else ""))
         if pending:
             print("pending draws: " + ", ".join(pending))
