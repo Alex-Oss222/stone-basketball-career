@@ -2,9 +2,9 @@
 
 # Contract | Bobby Jackson
 
-Known through: 2005-11-25. [Open interactive contract](jacksbo01.html#contract) · [Contract history](jacksbo01.html#contract-history)
+Known through: 2005-11-27. [Open interactive contract](jacksbo01.html#contract) · [Contract history](jacksbo01.html#contract-history)
 
-Bobby Jackson: under contract. Evidence cutoff: 2005-11-25.
+Bobby Jackson: under contract. Evidence cutoff: 2005-11-27.
 
 ## Current contract
 

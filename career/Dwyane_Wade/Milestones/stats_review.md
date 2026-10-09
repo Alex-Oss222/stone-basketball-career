@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-11-25 · Miami Heat · active
+Career date: 2005-11-27 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-19 closed game records in 2005-06 through 2005-11-25. Competitions remain separate.
+20 closed game records in 2005-06 through 2005-11-27. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 12 | 36.4 | 25.6 | 6.7 | 4.3 | 1.9 | Complete |
+| regular | 13 | 35.7 | 24.2 | 6.5 | 4.5 | 1.9 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 105 | 176 | 0.597 | 19 | 33 | 0.576 |
+| regular | 107 | 181 | 0.591 | 19 | 33 | 0.576 |
 
 ## Closed source games
 
@@ -49,6 +49,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-11-20 | regular | Toronto Raptors | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.md) |
 | 2005-11-23 | regular | Portland Trail Blazers | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_1.md) |
 | 2005-11-25 | regular | Dallas Mavericks | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_2.md) |
+| 2005-11-26 | regular | Orlando Magic | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -111,4 +112,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_3/Game_3.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

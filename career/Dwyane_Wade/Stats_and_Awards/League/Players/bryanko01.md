@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `bryanko01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-11-25 · **Club on this date:** Los Angeles Lakers · **Basis:** Los Angeles Lakers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-11-27 · **Club on this date:** Los Angeles Lakers · **Basis:** Los Angeles Lakers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #8 · **Born:** 1978-08-23 · **Age on card date:** 27  
 **Registry ID:** `bryanko01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/bryanko01.html) · ESPN ID 110
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bryank
 
 ## Simulated statistics
 
-As of **2005-11-25**: 11 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-11-27**: 12 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 27 | LAL | NBA | SG | 9 | 9 | 41.7 | 10.4 | 24.7 | .423 | 1.7 | 5.2 | .319 | 8.8 | 19.4 | .451 | .457 | 8.2 | 9.1 | .902 | 1.0 | 4.9 | 5.9 | 6.4 | 1.4 | 0.2 | 2.4 | 2.7 | 30.8 | .537 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 27 | LAL | NBA | SG | 10 | 10 | 40.6 | 10.2 | 23.6 | .432 | 1.5 | 4.9 | .306 | 8.7 | 18.7 | .465 | .464 | 8.0 | 8.8 | .909 | 0.9 | 4.8 | 5.7 | 6.5 | 1.5 | 0.2 | 2.4 | 3.0 | 29.9 | .544 | — |
 
 ### Month
 
@@ -41,7 +41,7 @@ As of **2005-11-25**: 11 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 27 | LAL | NBA | SG | 9 | 9 | 41.7 | 10.4 | 24.7 | .423 | 1.7 | 5.2 | .319 | 8.8 | 19.4 | .451 | .457 | 8.2 | 9.1 | .902 | 1.0 | 4.9 | 5.9 | 6.4 | 1.4 | 0.2 | 2.4 | 2.7 | 30.8 | .537 | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 27 | LAL | NBA | SG | 10 | 10 | 40.6 | 10.2 | 23.6 | .432 | 1.5 | 4.9 | .306 | 8.7 | 18.7 | .465 | .464 | 8.0 | 8.8 | .909 | 0.9 | 4.8 | 5.7 | 6.5 | 1.5 | 0.2 | 2.4 | 3.0 | 29.9 | .544 | — |
 | [December 2005](../2005-06/12_December/League_Stats.md) | 27 | LAL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 27 | LAL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 27 | LAL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -60,7 +60,7 @@ As of **2005-11-25**: 11 closed games feed this card. Per-game columns use the r
 | [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 27 | LAL | NBA | SG | 3 | 3 | 45.8 | 9.7 | 27.7 | .349 | 1.3 | 6.3 | .211 | 8.3 | 21.3 | .391 | .373 | 11.0 | 12.0 | .917 | 0.7 | 5.0 | 5.7 | 8.3 | 1.0 | 0.3 | 2.3 | 3.3 | 31.7 | .481 | — |
 | [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 27 | LAL | NBA | SG | 2 | 2 | 41.5 | 6.0 | 20.0 | .300 | 1.5 | 5.5 | .273 | 4.5 | 14.5 | .310 | .338 | 10.5 | 12.0 | .875 | 1.5 | 5.0 | 6.5 | 7.5 | 1.5 | 0.5 | 3.0 | 1.5 | 24.0 | .475 | — |
 | [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 27 | LAL | NBA | SG | 3 | 3 | 37.8 | 11.7 | 23.7 | .493 | 1.3 | 3.7 | .364 | 10.3 | 20.0 | .517 | .521 | 4.3 | 5.0 | .867 | 1.0 | 4.3 | 5.3 | 4.7 | 1.7 | 0.0 | 2.7 | 3.7 | 29.0 | .561 | — |
-| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 27 | LAL | NBA | SG | 1 | 1 | 41.7 | 18.0 | 28.0 | .643 | 4.0 | 6.0 | .667 | 14.0 | 22.0 | .636 | .714 | 7.0 | 7.0 | 1.000 | 1.0 | 6.0 | 7.0 | 4.0 | 2.0 | 0.0 | 1.0 | 0.0 | 47.0 | .756 | — |
+| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 27 | LAL | NBA | SG | 2 | 2 | 36.2 | 13.0 | 21.0 | .619 | 2.0 | 4.0 | .500 | 11.0 | 17.0 | .647 | .667 | 6.5 | 6.5 | 1.000 | 0.5 | 5.0 | 5.5 | 5.5 | 2.0 | 0.0 | 1.5 | 3.0 | 34.5 | .723 | — |
 | [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 27 | LAL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 27 | LAL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 27 | LAL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -85,33 +85,33 @@ As of **2005-11-25**: 11 closed games feed this card. Per-game columns use the r
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 222 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 236 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 11 of 11 closed games; 9 tracked appearances form the denominator below (2005-11-02 to 2005-11-24).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 12 of 12 closed games; 10 tracked appearances form the denominator below (2005-11-02 to 2005-11-27).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 40 | 84 | 47.6% | 8.89 | 9.33 |
-| Outside paint, under 12 ft | 3 | 9 | 33.3% | 0.67 | 1.00 |
-| Outside paint, 12 to under 18 ft | 11 | 33 | 33.3% | 2.44 | 3.67 |
-| 18 ft to the three-point line | 25 | 49 | 51.0% | 5.56 | 5.44 |
-| Three-point range | 15 | 47 | 31.9% | 5.00 | 5.22 |
-| All field goals | 94 | 222 | 42.3% | 22.56 | 24.67 |
+| Paint | 45 | 93 | 48.4% | 9.00 | 9.30 |
+| Outside paint, under 12 ft | 3 | 9 | 33.3% | 0.60 | 0.90 |
+| Outside paint, 12 to under 18 ft | 12 | 34 | 35.3% | 2.40 | 3.40 |
+| 18 ft to the three-point line | 27 | 51 | 52.9% | 5.40 | 5.10 |
+| Three-point range | 15 | 49 | 30.6% | 4.50 | 4.90 |
+| All field goals | 102 | 236 | 43.2% | 21.90 | 23.60 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 11 closed regular-season games through 2005-11-25. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 12 closed regular-season games through 2005-11-27. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | LAL | 82 | 82 | 41.5 | 30.0 | 6.9 | 5.9 | 2.2 | 0.8 | 3.5 | 45.1% | 38.3% | 84.3% |
 | 2003-04 | LAL | 63 | 63 | 36.5 | 22.3 | 6.2 | 4.8 | 1.7 | 0.4 | 2.8 | 43.9% | 37.9% | 82.5% |
 | 2004-05 | LAL | 66 | 66 | 40.9 | 25.6 | 6.2 | 6.3 | 0.9 | 0.8 | 3.6 | 44.9% | 40.3% | 80.5% |
-| 2005-06 | LAL | 9 | 9 | 41.7 | 30.8 | 5.9 | 6.4 | 1.4 | 0.2 | 2.4 | 42.3% | 31.9% | 90.2% |
+| 2005-06 | LAL | 10 | 10 | 40.6 | 29.9 | 5.7 | 6.5 | 1.5 | 0.2 | 2.4 | 43.2% | 30.6% | 90.9% |
 
 ## Playoff statistics by year
 
@@ -125,7 +125,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-11-25, from closed award decisions (8 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-11-27, from closed award decisions (8 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

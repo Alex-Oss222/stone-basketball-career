@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `richaja01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-11-25 · **Club on this date:** Golden State Warriors · **Basis:** Golden State Warriors: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-11-27 · **Club on this date:** Golden State Warriors · **Basis:** Golden State Warriors: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #23 · **Born:** 1981-01-20 · **Age on card date:** 24  
 **Registry ID:** `richaja01` · [Basketball-Reference page](https://www.basketball-reference.com/players/r/richaja01.html) · ESPN ID 1018
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `richaj
 
 ## Simulated statistics
 
-As of **2005-11-25**: 14 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-11-27**: 15 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 24 | GS | NBA | SG | 12 | 12 | 35.9 | 6.8 | 16.3 | .413 | 1.9 | 5.0 | .383 | 4.8 | 11.3 | .426 | .472 | 3.4 | 4.7 | .732 | 1.3 | 4.6 | 5.9 | 3.5 | 1.7 | 0.5 | 2.2 | 4.0 | 18.8 | .512 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 24 | GS | NBA | SG | 13 | 13 | 36.3 | 6.9 | 16.7 | .415 | 1.8 | 5.1 | .364 | 5.1 | 11.6 | .437 | .470 | 3.5 | 4.8 | .730 | 1.5 | 4.7 | 6.2 | 3.3 | 1.7 | 0.5 | 2.2 | 3.9 | 19.2 | .511 | — |
 
 ### Month
 
@@ -41,7 +41,7 @@ As of **2005-11-25**: 14 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 24 | GS | NBA | SG | 12 | 12 | 35.9 | 6.8 | 16.3 | .413 | 1.9 | 5.0 | .383 | 4.8 | 11.3 | .426 | .472 | 3.4 | 4.7 | .732 | 1.3 | 4.6 | 5.9 | 3.5 | 1.7 | 0.5 | 2.2 | 4.0 | 18.8 | .512 | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 24 | GS | NBA | SG | 13 | 13 | 36.3 | 6.9 | 16.7 | .415 | 1.8 | 5.1 | .364 | 5.1 | 11.6 | .437 | .470 | 3.5 | 4.8 | .730 | 1.5 | 4.7 | 6.2 | 3.3 | 1.7 | 0.5 | 2.2 | 3.9 | 19.2 | .511 | — |
 | [December 2005](../2005-06/12_December/League_Stats.md) | 24 | GS | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 24 | GS | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 24 | GS | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -60,7 +60,7 @@ As of **2005-11-25**: 14 closed games feed this card. Per-game columns use the r
 | [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 24 | GS | NBA | SG | 3 | 3 | 36.3 | 8.7 | 16.3 | .531 | 3.0 | 5.0 | .600 | 5.7 | 11.3 | .500 | .622 | 0.7 | 1.7 | .400 | 1.7 | 5.0 | 6.7 | 4.7 | 1.7 | 1.0 | 1.7 | 4.7 | 21.0 | .615 | — |
 | [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 24 | GS | NBA | SG | 3 | 3 | 33.3 | 6.3 | 18.3 | .345 | 0.7 | 5.0 | .133 | 5.7 | 13.3 | .425 | .364 | 4.3 | 5.3 | .812 | 1.3 | 4.7 | 6.0 | 2.3 | 1.7 | 0.0 | 2.3 | 4.3 | 17.7 | .427 | — |
 | [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 24 | GS | NBA | SG | 4 | 4 | 35.3 | 6.2 | 15.0 | .417 | 1.5 | 4.0 | .375 | 4.8 | 11.0 | .432 | .467 | 4.2 | 6.2 | .680 | 1.2 | 3.5 | 4.8 | 3.2 | 1.5 | 0.8 | 1.8 | 3.2 | 18.2 | .514 | — |
-| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 24 | GS | NBA | SG | 2 | 2 | 40.6 | 5.5 | 16.0 | .344 | 3.0 | 7.0 | .429 | 2.5 | 9.0 | .278 | .438 | 4.5 | 5.0 | .900 | 1.0 | 6.0 | 7.0 | 4.0 | 2.0 | 0.0 | 3.5 | 4.0 | 18.5 | .508 | — |
+| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 24 | GS | NBA | SG | 3 | 3 | 40.6 | 6.7 | 17.7 | .377 | 2.3 | 6.7 | .350 | 4.3 | 11.0 | .394 | .443 | 4.7 | 5.7 | .824 | 1.7 | 6.0 | 7.7 | 3.0 | 2.0 | 0.3 | 3.0 | 3.7 | 20.3 | .504 | — |
 | [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 24 | GS | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 24 | GS | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 24 | GS | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -85,33 +85,33 @@ As of **2005-11-25**: 14 closed games feed this card. Per-game columns use the r
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 196 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 217 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 14 of 14 closed games; 12 tracked appearances form the denominator below (2005-11-02 to 2005-11-25).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 15 of 15 closed games; 13 tracked appearances form the denominator below (2005-11-02 to 2005-11-26).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 37 | 79 | 46.8% | 6.17 | 6.58 |
-| Outside paint, under 12 ft | 1 | 3 | 33.3% | 0.17 | 0.25 |
-| Outside paint, 12 to under 18 ft | 5 | 13 | 38.5% | 0.83 | 1.08 |
-| 18 ft to the three-point line | 15 | 41 | 36.6% | 2.50 | 3.42 |
-| Three-point range | 23 | 60 | 38.3% | 5.75 | 5.00 |
-| All field goals | 81 | 196 | 41.3% | 15.42 | 16.33 |
+| Paint | 41 | 85 | 48.2% | 6.31 | 6.54 |
+| Outside paint, under 12 ft | 2 | 6 | 33.3% | 0.31 | 0.46 |
+| Outside paint, 12 to under 18 ft | 6 | 14 | 42.9% | 0.92 | 1.08 |
+| 18 ft to the three-point line | 17 | 46 | 37.0% | 2.62 | 3.54 |
+| Three-point range | 24 | 66 | 36.4% | 5.54 | 5.08 |
+| All field goals | 90 | 217 | 41.5% | 15.69 | 16.69 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 14 closed regular-season games through 2005-11-25. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 15 closed regular-season games through 2005-11-27. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | GSW | 82 | 82 | 32.9 | 15.6 | 4.6 | 3.0 | 1.1 | 0.3 | 2.2 | 41.0% | 36.8% | 76.4% |
 | 2003-04 | GS | 78 | 78 | 37.5 | 18.4 | 6.2 | 2.7 | 1.5 | 0.6 | 2.4 | 41.9% | 32.0% | 71.8% |
 | 2004-05 | GS | 72 | 72 | 36.5 | 20.9 | 6.0 | 3.4 | 1.2 | 0.4 | 2.5 | 44.7% | 34.5% | 73.0% |
-| 2005-06 | GS | 12 | 12 | 35.9 | 18.8 | 5.9 | 3.5 | 1.7 | 0.5 | 2.2 | 41.3% | 38.3% | 73.2% |
+| 2005-06 | GS | 13 | 13 | 36.3 | 19.2 | 6.2 | 3.3 | 1.7 | 0.5 | 2.2 | 41.5% | 36.4% | 73.0% |
 
 ## Playoff statistics by year
 
@@ -125,7 +125,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-11-25, from closed award decisions (0 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-11-27, from closed award decisions (0 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
