@@ -1,0 +1,338 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "season": "2005-06",
+ "as_of": "2005-11-09",
+ "assessment_date": "2005-10-26",
+ "prior_minutes": 300.0,
+ "score_minutes": 30.0,
+ "prior_scores": {
+  "Eddie Jones": 6.17,
+  "Brian Grant": 11.448,
+  "Matt Harpring": 12.079,
+  "Donyell Marshall": 12.103,
+  "Anthony Johnson": 10.277,
+  "Mike James": 12.206,
+  "Mehmet Okur": 14.814,
+  "DeShawn Stevenson": 4.543,
+  "Dwyane Wade": 23.571,
+  "Caron Butler": 12.486,
+  "Sebastian Telfair": 11.709,
+  "Eddie Gill": 5.0,
+  "Mike Wilks": 7.568,
+  "Matt Carroll": 4.924,
+  "Theo Ratliff": 8.202,
+  "Bonzi Wells": 8.435,
+  "Adonal Foyle": 7.773,
+  "Jumaine Jones": 9.221,
+  "Sam Cassell": 9.211,
+  "Kwame Brown": 6.708
+ },
+ "evidence_cutoff": "game_date strictly before review date",
+ "sources": [
+  {
+   "event_id": "2005-11-02-miami-heat-at-memphis-grizzlies",
+   "date": "2005-11-02",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_1/Game_1.result.json",
+   "sha256": "de9d4497772bb88571e971f44e74d498c8b6d95744b8cbdb0468c81430967c0e"
+  },
+  {
+   "event_id": "2005-11-03-indiana-pacers-at-miami-heat",
+   "date": "2005-11-03",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_1/Game_2.result.json",
+   "sha256": "a671e3cfa203687c976630f9214d5c559e609534f48462c3cae5c1feb85aa9a7"
+  },
+  {
+   "event_id": "2005-11-05-miami-heat-at-milwaukee-bucks",
+   "date": "2005-11-05",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_1/Game_3.result.json",
+   "sha256": "3708a12d0f9fb341a7d19d11912c0919a6507830020ea637dde70d26cd2f0083"
+  },
+  {
+   "event_id": "2005-11-07-new-jersey-nets-at-miami-heat",
+   "date": "2005-11-07",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_1/Game_4.result.json",
+   "sha256": "b39b28c343aec012e988fba87c872dc09fb21f72b9f95bc5cb86c420c2469c10"
+  }
+ ],
+ "players": [
+  {
+   "player": "Anthony Johnson",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "johnsan02",
+   "status": "roster"
+  },
+  {
+   "player": "Brian Grant",
+   "positions": [
+    "C",
+    "PF"
+   ],
+   "bbr_id": "grantbr01",
+   "status": "roster"
+  },
+  {
+   "player": "Caron Butler",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "butleca01",
+   "status": "roster"
+  },
+  {
+   "player": "DeShawn Stevenson",
+   "positions": [
+    "SG"
+   ],
+   "bbr_id": "stevede01",
+   "status": "roster"
+  },
+  {
+   "player": "Donyell Marshall",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "marshdo01",
+   "status": "roster"
+  },
+  {
+   "player": "Dwyane Wade",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "bbr_id": null,
+   "status": "roster"
+  },
+  {
+   "player": "Eddie Gill",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "gilled01",
+   "status": "roster"
+  },
+  {
+   "player": "Eddie Jones",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "bbr_id": "jonesed02",
+   "status": "roster"
+  },
+  {
+   "player": "Jumaine Jones",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "jonesju01",
+   "status": "roster"
+  },
+  {
+   "player": "Matt Carroll",
+   "positions": [
+    "SG"
+   ],
+   "bbr_id": "carroma01",
+   "status": "roster"
+  },
+  {
+   "player": "Matt Harpring",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "harprma01",
+   "status": "roster"
+  },
+  {
+   "player": "Mehmet Okur",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "okurme01",
+   "status": "roster"
+  },
+  {
+   "player": "Mike James",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "jamesmi01",
+   "status": "roster"
+  },
+  {
+   "player": "Mike Wilks",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "wilksmi01",
+   "status": "roster"
+  },
+  {
+   "player": "Sebastian Telfair",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "telfase01",
+   "status": "roster"
+  }
+ ],
+ "scores": {
+  "Anthony Johnson": 10.3993,
+  "Brian Grant": 11.437652,
+  "Caron Butler": 14.439877,
+  "DeShawn Stevenson": 4.543,
+  "Donyell Marshall": 12.385588,
+  "Dwyane Wade": 22.989399,
+  "Eddie Gill": 4.758189,
+  "Eddie Jones": 6.892588,
+  "Jumaine Jones": 9.221,
+  "Matt Carroll": 4.924,
+  "Matt Harpring": 12.725812,
+  "Mehmet Okur": 14.525497,
+  "Mike James": 13.172214,
+  "Mike Wilks": 7.848153,
+  "Sebastian Telfair": 11.282621
+ },
+ "evidence": {
+  "Anthony Johnson": {
+   "games": 4,
+   "minutes": 39.74401666666667,
+   "efficiency": 15.0,
+   "preseason_estimate": 10.277,
+   "observed_per_30": 11.322459,
+   "observed_weight": 0.116982,
+   "score": 10.3993
+  },
+  "Brian Grant": {
+   "games": 4,
+   "minutes": 136.66306666666665,
+   "efficiency": 52.0,
+   "preseason_estimate": 11.448,
+   "observed_per_30": 11.414935,
+   "observed_weight": 0.312971,
+   "score": 11.437652
+  },
+  "Caron Butler": {
+   "games": 4,
+   "minutes": 142.23368333333332,
+   "efficiency": 88.0,
+   "preseason_estimate": 12.486,
+   "observed_per_30": 18.561004,
+   "observed_weight": 0.321626,
+   "score": 14.439877
+  },
+  "DeShawn Stevenson": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 4.543,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 4.543
+  },
+  "Donyell Marshall": {
+   "games": 4,
+   "minutes": 73.08685000000001,
+   "efficiency": 33.0,
+   "preseason_estimate": 12.103,
+   "observed_per_30": 13.545528,
+   "observed_weight": 0.195898,
+   "score": 12.385588
+  },
+  "Dwyane Wade": {
+   "games": 4,
+   "minutes": 122.42513333333332,
+   "efficiency": 88.0,
+   "preseason_estimate": 23.571,
+   "observed_per_30": 21.5642,
+   "observed_weight": 0.289815,
+   "score": 22.989399
+  },
+  "Eddie Gill": {
+   "games": 1,
+   "minutes": 2.63615,
+   "efficiency": -2.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": -22.760465,
+   "observed_weight": 0.008711,
+   "score": 4.758189
+  },
+  "Eddie Jones": {
+   "games": 4,
+   "minutes": 20.779383333333335,
+   "efficiency": 12.0,
+   "preseason_estimate": 6.17,
+   "observed_per_30": 17.324864,
+   "observed_weight": 0.064778,
+   "score": 6.892588
+  },
+  "Jumaine Jones": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 9.221,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 9.221
+  },
+  "Matt Carroll": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 4.924,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 4.924
+  },
+  "Matt Harpring": {
+   "games": 4,
+   "minutes": 64.90403333333333,
+   "efficiency": 34.0,
+   "preseason_estimate": 12.079,
+   "observed_per_30": 15.71551,
+   "observed_weight": 0.177866,
+   "score": 12.725812
+  },
+  "Mehmet Okur": {
+   "games": 4,
+   "minutes": 140.20524999999998,
+   "efficiency": 65.0,
+   "preseason_estimate": 14.814,
+   "observed_per_30": 13.908181,
+   "observed_weight": 0.3185,
+   "score": 14.525497
+  },
+  "Mike James": {
+   "games": 4,
+   "minutes": 137.42076666666668,
+   "efficiency": 70.0,
+   "preseason_estimate": 12.206,
+   "observed_per_30": 15.281533,
+   "observed_weight": 0.314162,
+   "score": 13.172214
+  },
+  "Mike Wilks": {
+   "games": 4,
+   "minutes": 31.339100000000002,
+   "efficiency": 11.0,
+   "preseason_estimate": 7.568,
+   "observed_per_30": 10.529977,
+   "observed_weight": 0.094583,
+   "score": 7.848153
+  },
+  "Sebastian Telfair": {
+   "games": 4,
+   "minutes": 48.56261666666667,
+   "efficiency": 14.0,
+   "preseason_estimate": 11.709,
+   "observed_per_30": 8.648628,
+   "observed_weight": 0.139323,
+   "score": 11.282621
+  }
+ },
+ "battles": []
+}

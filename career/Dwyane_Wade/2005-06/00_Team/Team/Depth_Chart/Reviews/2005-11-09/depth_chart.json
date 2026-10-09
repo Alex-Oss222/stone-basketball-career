@@ -1,0 +1,41 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2005-11-09",
+ "team": "Miami Heat",
+ "status": "staff_review",
+ "game_ready": true,
+ "basis": "Fortnightly staff review 2005-11-09; fixed preseason estimate plus closed production per minute",
+ "positions": {
+  "PG": [
+   "Mike James",
+   "Anthony Johnson",
+   "Mike Wilks",
+   "Eddie Gill"
+  ],
+  "SG": [
+   "Dwyane Wade",
+   "Eddie Jones",
+   "Matt Carroll",
+   "DeShawn Stevenson"
+  ],
+  "SF": [
+   "Caron Butler",
+   "Matt Harpring",
+   "Sebastian Telfair",
+   "Jumaine Jones"
+  ],
+  "PF": [
+   "Mehmet Okur",
+   "Donyell Marshall"
+  ],
+  "C": [
+   "Brian Grant"
+  ]
+ },
+ "battles_drawn": {},
+ "unassigned_draft_rights": [],
+ "unassigned_arrivals": [],
+ "unavailable": [],
+ "departed": []
+}

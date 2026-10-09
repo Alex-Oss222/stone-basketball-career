@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-11-08 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-11-09 
 
 **Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $835,810 scheduled ($835,810 in 2005-06). (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Reserve outside the planned rotation (staff rotation dated 2005-10-26, [record](../Depth_Chart/rotation.json)).
+**Role:** Reserve outside the planned rotation (staff rotation dated 2005-11-09, [record](../Depth_Chart/Reviews/2005-11-09/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -30,11 +30,12 @@ Unassessed.
 | --- | --- | --- |
 | October 1, 2005 | Joined Miami for 2005-06. Card opened from the summer market record; no role assigned. | [Record](../../../../../../career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json) |
 | 2005-10-26 | Staff rotation of 2005-10-26: reserve outside the planned rotation. | [Rotation](../Depth_Chart/rotation.json) |
+| 2005-11-09 | Staff rotation of 2005-11-09: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2005-11-09/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../../../../career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json), 2004-05 simulated season totals.
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-10-26.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-11-09.
 
 <!-- yearly-statistics:start -->
 
@@ -47,7 +48,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2004-05 | Chicago Bulls | 3 | 0 | 6.3 | 5.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.667 | 0.500 | 1.000 |
-| 2005-06 | MIA | 1 | 0 | 2.6 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0% | 0.0% | N/A |
+| 2005-06 | MIA | 2 | 0 | 2.7 | 1.5 | 1.5 | 0.0 | 0.0 | 0.0 | 0.5 | 16.7% | 0.0% | 50.0% |
 
 Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
 

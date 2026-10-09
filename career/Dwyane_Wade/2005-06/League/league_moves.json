@@ -2013,6 +2013,25 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.11 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-09-clear-scaleal01",
+   "date": "2005-11-09",
+   "kind": "clear",
+   "player": "Alex Scales",
+   "bbr_id": "scaleal01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Alex Scales",
+    "bbr_id": "scaleal01",
+    "position": "SG",
+    "games": 1,
+    "minutes": 0
+   },
+   "contract": null,
+   "note": "cleared waivers from New Orleans/Oklahoma City Hornets: a free agent",
+   "waiver": "2005-06-market-2005-11-07-waive-scaleal01"
   }
  ],
  "market_days": [
@@ -2023,6 +2042,7 @@
   "2005-11-05",
   "2005-11-06",
   "2005-11-07",
-  "2005-11-08"
+  "2005-11-08",
+  "2005-11-09"
  ]
 }

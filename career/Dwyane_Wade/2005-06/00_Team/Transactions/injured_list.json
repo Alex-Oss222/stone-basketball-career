@@ -9,7 +9,7 @@
   {
    "player": "Jumaine Jones",
    "placed": "2005-11-02",
-   "activated": null,
+   "activated": "2005-11-09",
    "first_game_missed": "2005-11-02-miami-heat-at-memphis-grizzlies",
    "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
    "minimum_games": 0
@@ -29,7 +29,15 @@
    "first_game_missed": "2005-11-02-miami-heat-at-memphis-grizzlies",
    "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
    "minimum_games": 0
+  },
+  {
+   "player": "Eddie Jones",
+   "placed": "2005-11-09",
+   "activated": null,
+   "first_game_missed": "2005-11-09-miami-heat-at-indiana-pacers",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 0
   }
  ],
- "as_of": "2005-11-07"
+ "as_of": "2005-11-09"
 }
