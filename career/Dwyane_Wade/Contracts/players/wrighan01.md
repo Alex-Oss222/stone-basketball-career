@@ -2,9 +2,9 @@
 
 # Contract | Antoine Wright
 
-Known through: 2005-11-20. [Open interactive contract](wrighan01.html#contract) · [Contract history](wrighan01.html#contract-history)
+Known through: 2005-11-21. [Open interactive contract](wrighan01.html#contract) · [Contract history](wrighan01.html#contract-history)
 
-Antoine Wright: under contract. Evidence cutoff: 2005-11-20.
+Antoine Wright: under contract. Evidence cutoff: 2005-11-21.
 
 ## Current contract
 

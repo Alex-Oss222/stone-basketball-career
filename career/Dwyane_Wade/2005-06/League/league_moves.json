@@ -2104,6 +2104,78 @@
    "bbr_id": "snower01",
    "from": "Washington Wizards",
    "to": "Indiana Pacers"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-21-barrybr01-dioguik01-kaponja01-mutomdi01",
+   "date": "2005-11-21",
+   "kind": "trade",
+   "player": "Brent Barry",
+   "bbr_id": "barrybr01",
+   "from": "Boston Celtics",
+   "to": "Charlotte Bobcats"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-21-barrybr01-dioguik01-kaponja01-mutomdi01",
+   "date": "2005-11-21",
+   "kind": "trade",
+   "player": "Ike Diogu",
+   "bbr_id": "dioguik01",
+   "from": "Boston Celtics",
+   "to": "Charlotte Bobcats"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-21-barrybr01-dioguik01-kaponja01-mutomdi01",
+   "date": "2005-11-21",
+   "kind": "trade",
+   "player": "Jason Kapono",
+   "bbr_id": "kaponja01",
+   "from": "Charlotte Bobcats",
+   "to": "Boston Celtics"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-21-barrybr01-dioguik01-kaponja01-mutomdi01",
+   "date": "2005-11-21",
+   "kind": "trade",
+   "player": "Dikembe Mutombo",
+   "bbr_id": "mutomdi01",
+   "from": "Charlotte Bobcats",
+   "to": "Boston Celtics"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-21-bowenbr01-elsonfr01-jackja01-vujacsa01",
+   "date": "2005-11-21",
+   "kind": "trade",
+   "player": "Bruce Bowen",
+   "bbr_id": "bowenbr01",
+   "from": "Denver Nuggets",
+   "to": "Sacramento Kings"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-21-bowenbr01-elsonfr01-jackja01-vujacsa01",
+   "date": "2005-11-21",
+   "kind": "trade",
+   "player": "Francisco Elson",
+   "bbr_id": "elsonfr01",
+   "from": "Denver Nuggets",
+   "to": "Sacramento Kings"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-21-bowenbr01-elsonfr01-jackja01-vujacsa01",
+   "date": "2005-11-21",
+   "kind": "trade",
+   "player": "Jarrett Jack",
+   "bbr_id": "jackja01",
+   "from": "Sacramento Kings",
+   "to": "Denver Nuggets"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-21-bowenbr01-elsonfr01-jackja01-vujacsa01",
+   "date": "2005-11-21",
+   "kind": "trade",
+   "player": "Sasha Vujačić",
+   "bbr_id": "vujacsa01",
+   "from": "Sacramento Kings",
+   "to": "Denver Nuggets"
   }
  ],
  "market_days": [
@@ -2126,6 +2198,7 @@
   "2005-11-17",
   "2005-11-18",
   "2005-11-19",
-  "2005-11-20"
+  "2005-11-20",
+  "2005-11-21"
  ]
 }

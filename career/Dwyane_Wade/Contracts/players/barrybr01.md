@@ -2,9 +2,9 @@
 
 # Contract | Brent Barry
 
-Known through: 2005-11-20. [Open interactive contract](barrybr01.html#contract) · [Contract history](barrybr01.html#contract-history)
+Known through: 2005-11-21. [Open interactive contract](barrybr01.html#contract) · [Contract history](barrybr01.html#contract-history)
 
-Brent Barry: under contract. Evidence cutoff: 2005-11-20.
+Brent Barry: under contract. Evidence cutoff: 2005-11-21.
 
 ## Current contract
 
@@ -118,7 +118,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Brent Barry |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Charlotte Bobcats |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

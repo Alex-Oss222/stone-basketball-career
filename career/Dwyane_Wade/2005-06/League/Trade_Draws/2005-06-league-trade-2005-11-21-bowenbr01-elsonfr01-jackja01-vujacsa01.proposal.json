@@ -1,0 +1,41 @@
+{
+ "id": "2005-06-league-trade-2005-11-21-bowenbr01-elsonfr01-jackja01-vujacsa01",
+ "date": "2005-11-21",
+ "clubs": [
+  "Denver Nuggets",
+  "Sacramento Kings"
+ ],
+ "a": {
+  "club": "Denver Nuggets",
+  "sends": [
+   "Bruce Bowen",
+   "Francisco Elson"
+  ],
+  "bbr_ids": [
+   "bowenbr01",
+   "elsonfr01"
+  ],
+  "salary": 1929373
+ },
+ "b": {
+  "club": "Sacramento Kings",
+  "sends": [
+   "Jarrett Jack",
+   "Sasha Vujačić"
+  ],
+  "bbr_ids": [
+   "jackja01",
+   "vujacsa01"
+  ],
+  "salary": 2013120
+ },
+ "gain": {
+  "Denver Nuggets": 0.226,
+  "Sacramento Kings": 0.264
+ },
+ "accept": {
+  "Denver Nuggets": 0.95,
+  "Sacramento Kings": 0.95
+ },
+ "both": 0.9025
+}

@@ -2,9 +2,9 @@
 
 # Contract | Kevin Burleson
 
-Known through: 2005-11-20. [Open interactive contract](burleke01.html#contract) · [Contract history](burleke01.html#contract-history)
+Known through: 2005-11-21. [Open interactive contract](burleke01.html#contract) · [Contract history](burleke01.html#contract-history)
 
-Kevin Burleson: under contract. Evidence cutoff: 2005-11-20.
+Kevin Burleson: under contract. Evidence cutoff: 2005-11-21.
 
 ## Current contract
 

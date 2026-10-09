@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-11-20",
+  "as_of": "2005-11-21",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -698,7 +698,7 @@
     {
       "player_id": "barrybr01",
       "name": "Brent Barry",
-      "team": "Boston Celtics",
+      "team": "Charlotte Bobcats",
       "status": "under contract",
       "current_contract_id": "barrybr01-2004-08-05",
       "recorded_agreements": 2,
@@ -779,7 +779,7 @@
     {
       "player_id": "bowenbr01",
       "name": "Bruce Bowen",
-      "team": "Denver Nuggets",
+      "team": "Sacramento Kings",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -1634,7 +1634,7 @@
     {
       "player_id": "mutomdi01",
       "name": "Dikembe Mutombo",
-      "team": "Charlotte Bobcats",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": null,
       "recorded_agreements": 1,
@@ -1985,7 +1985,7 @@
     {
       "player_id": "elsonfr01",
       "name": "Francisco Elson",
-      "team": "Denver Nuggets",
+      "team": "Sacramento Kings",
       "status": "under contract",
       "current_contract_id": "elsonfr01-2005-09-30",
       "recorded_agreements": 1,
@@ -2237,7 +2237,7 @@
     {
       "player_id": "dioguik01",
       "name": "Ike Diogu",
-      "team": "Boston Celtics",
+      "team": "Charlotte Bobcats",
       "status": "under contract",
       "current_contract_id": "dioguik01-2005-07-01",
       "recorded_agreements": 1,
@@ -2489,7 +2489,7 @@
     {
       "player_id": "jackja01",
       "name": "Jarrett Jack",
-      "team": "Sacramento Kings",
+      "team": "Denver Nuggets",
       "status": "under contract",
       "current_contract_id": "jackja01-2005-07-01",
       "recorded_agreements": 1,
@@ -2552,7 +2552,7 @@
     {
       "player_id": "kaponja01",
       "name": "Jason Kapono",
-      "team": "Charlotte Bobcats",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "kaponja01-2005-08-02",
       "recorded_agreements": 1,
@@ -4901,7 +4901,7 @@
     {
       "player_id": "sashavujai",
       "name": "Sasha Vujačić",
-      "team": "Sacramento Kings",
+      "team": "Denver Nuggets",
       "status": "under contract",
       "current_contract_id": "sashavujai-2004-07-01",
       "recorded_agreements": 1,

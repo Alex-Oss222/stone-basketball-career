@@ -2,9 +2,9 @@
 
 # Contract | Channing Frye
 
-Known through: 2005-11-20. [Open interactive contract](fryech01.html#contract) · [Contract history](fryech01.html#contract-history)
+Known through: 2005-11-21. [Open interactive contract](fryech01.html#contract) · [Contract history](fryech01.html#contract-history)
 
-Channing Frye: under contract. Evidence cutoff: 2005-11-20.
+Channing Frye: under contract. Evidence cutoff: 2005-11-21.
 
 ## Current contract
 

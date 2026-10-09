@@ -2,9 +2,9 @@
 
 # Contract | Ike Diogu
 
-Known through: 2005-11-20. [Open interactive contract](dioguik01.html#contract) · [Contract history](dioguik01.html#contract-history)
+Known through: 2005-11-21. [Open interactive contract](dioguik01.html#contract) · [Contract history](dioguik01.html#contract-history)
 
-Ike Diogu: under contract. Evidence cutoff: 2005-11-20.
+Ike Diogu: under contract. Evidence cutoff: 2005-11-21.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ike Diogu |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Charlotte Bobcats |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

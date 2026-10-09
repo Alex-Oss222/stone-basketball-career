@@ -1,0 +1,12 @@
+{
+ "date": "2005-11-21",
+ "decider": "Boston Celtics and Charlotte Bobcats front offices (engine draw)",
+ "event_id": "2005-06-league-trade-2005-11-21-barrybr01-dioguik01-kaponja01-mutomdi01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Boston Celtics and Charlotte Bobcats trade Brent Barry and Ike Diogu for Jason Kapono and Dikembe Mutombo?"
+}

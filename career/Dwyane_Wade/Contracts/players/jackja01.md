@@ -2,9 +2,9 @@
 
 # Contract | Jarrett Jack
 
-Known through: 2005-11-20. [Open interactive contract](jackja01.html#contract) · [Contract history](jackja01.html#contract-history)
+Known through: 2005-11-21. [Open interactive contract](jackja01.html#contract) · [Contract history](jackja01.html#contract-history)
 
-Jarrett Jack: under contract. Evidence cutoff: 2005-11-20.
+Jarrett Jack: under contract. Evidence cutoff: 2005-11-21.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jarrett Jack |
-| Club / rights baseline | Sacramento Kings |
+| Club / rights baseline | Denver Nuggets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

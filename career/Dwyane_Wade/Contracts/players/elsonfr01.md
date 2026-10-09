@@ -2,9 +2,9 @@
 
 # Contract | Francisco Elson
 
-Known through: 2005-11-20. [Open interactive contract](elsonfr01.html#contract) · [Contract history](elsonfr01.html#contract-history)
+Known through: 2005-11-21. [Open interactive contract](elsonfr01.html#contract) · [Contract history](elsonfr01.html#contract-history)
 
-Francisco Elson: under contract. Evidence cutoff: 2005-11-20.
+Francisco Elson: under contract. Evidence cutoff: 2005-11-21.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Francisco Elson |
-| Club / rights baseline | Denver Nuggets |
+| Club / rights baseline | Sacramento Kings |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

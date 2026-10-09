@@ -1,0 +1,41 @@
+{
+ "id": "2005-06-league-trade-2005-11-21-barrybr01-dioguik01-kaponja01-mutomdi01",
+ "date": "2005-11-21",
+ "clubs": [
+  "Boston Celtics",
+  "Charlotte Bobcats"
+ ],
+ "a": {
+  "club": "Boston Celtics",
+  "sends": [
+   "Brent Barry",
+   "Ike Diogu"
+  ],
+  "bbr_ids": [
+   "barrybr01",
+   "dioguik01"
+  ],
+  "salary": 6409700
+ },
+ "b": {
+  "club": "Charlotte Bobcats",
+  "sends": [
+   "Jason Kapono",
+   "Dikembe Mutombo"
+  ],
+  "bbr_ids": [
+   "kaponja01",
+   "mutomdi01"
+  ],
+  "salary": 6138500
+ },
+ "gain": {
+  "Boston Celtics": 0.276,
+  "Charlotte Bobcats": 0.217
+ },
+ "accept": {
+  "Boston Celtics": 0.95,
+  "Charlotte Bobcats": 0.95
+ },
+ "both": 0.9025
+}

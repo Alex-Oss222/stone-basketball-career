@@ -2,9 +2,9 @@
 
 # Contract | Bracey Wright
 
-Known through: 2005-11-20. [Open interactive contract](wrighbr02.html#contract) · [Contract history](wrighbr02.html#contract-history)
+Known through: 2005-11-21. [Open interactive contract](wrighbr02.html#contract) · [Contract history](wrighbr02.html#contract-history)
 
-Bracey Wright: under contract. Evidence cutoff: 2005-11-20.
+Bracey Wright: under contract. Evidence cutoff: 2005-11-21.
 
 ## Current contract
 

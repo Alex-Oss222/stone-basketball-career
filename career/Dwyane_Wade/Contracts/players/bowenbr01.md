@@ -2,9 +2,9 @@
 
 # Contract | Bruce Bowen
 
-Known through: 2005-11-20. [Open interactive contract](bowenbr01.html#contract) · [Contract history](bowenbr01.html#contract-history)
+Known through: 2005-11-21. [Open interactive contract](bowenbr01.html#contract) · [Contract history](bowenbr01.html#contract-history)
 
-Bruce Bowen: under contract unverified. Evidence cutoff: 2005-11-20.
+Bruce Bowen: under contract unverified. Evidence cutoff: 2005-11-21.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Bruce Bowen |
-| Club / rights baseline | Denver Nuggets |
+| Club / rights baseline | Sacramento Kings |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

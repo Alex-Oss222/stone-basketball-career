@@ -211,6 +211,110 @@
     }
    ],
    "winner": "Dirk Nowitzki"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-11-14-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-11-14",
+   "period_end": "2005-11-20",
+   "announced_on": "2005-11-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/11_November/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 29.3,
+     "reb": 9.7,
+     "ast": 6.7,
+     "game_score": 33.23,
+     "score": 108.7,
+     "rank": 1
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 30.3,
+     "reb": 9.0,
+     "ast": 6.3,
+     "game_score": 26.63,
+     "score": 88.9,
+     "rank": 2
+    },
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 3,
+     "wins": 1,
+     "losses": 2,
+     "pts": 28.7,
+     "reb": 9.0,
+     "ast": 4.7,
+     "game_score": 25.77,
+     "score": 80.3,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwyane Wade"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-11-14-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-11-14",
+   "period_end": "2005-11-20",
+   "announced_on": "2005-11-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/11_November/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 28.7,
+     "reb": 9.0,
+     "ast": 4.0,
+     "game_score": 25.87,
+     "score": 86.6,
+     "rank": 1
+    },
+    {
+     "player": "Chris Paul",
+     "team": "Utah Jazz",
+     "games": 4,
+     "wins": 0,
+     "losses": 4,
+     "pts": 21.2,
+     "reb": 4.5,
+     "ast": 8.8,
+     "game_score": 19.75,
+     "score": 79.0,
+     "rank": 2
+    },
+    {
+     "player": "Yao Ming",
+     "team": "Houston Rockets",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 21.5,
+     "reb": 7.2,
+     "ast": 2.2,
+     "game_score": 17.32,
+     "score": 72.3,
+     "rank": 3
+    }
+   ],
+   "winner": "Dirk Nowitzki"
   }
  ]
 }
