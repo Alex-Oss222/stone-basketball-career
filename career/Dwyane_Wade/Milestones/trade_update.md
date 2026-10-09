@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2005-11-07 · Miami Heat · inactive
+Career date: 2005-11-13 · Miami Heat · inactive
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 
@@ -68,10 +68,11 @@ An actual transaction update with its source and applicable player rights.
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
-- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/depth_chart.json)
+- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-09/review.json)
+- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-09/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/rotation.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-09/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
@@ -84,4 +85,8 @@ An actual transaction update with its source and applicable player rights.
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_4.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

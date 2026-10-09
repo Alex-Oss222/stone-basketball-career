@@ -2,7 +2,7 @@
 
 # Season exit meeting | Dwyane Wade
 
-Career date: 2005-11-07 · Miami Heat · inactive
+Career date: 2005-11-13 · Miami Heat · inactive
 
 [Live milestone desk](index.html#exit_meeting) · [All milestones](README.md)
 
@@ -26,7 +26,7 @@ Activation: The player's season closes and a dated exit meeting is recorded.
 | Discussion | Current evidence | Needed before a conclusion |
 | --- | --- | --- |
 | Strength and limiting possession | Not recorded | Specific game or film references |
-| Communicated role and actual use | Starting SG; staff plan 34 minutes | Dated statements and closed minutes |
+| Communicated role and actual use | Starting SG; staff plan 40 minutes | Dated statements and closed minutes |
 | Availability and recovery | No current restriction recorded in the established profile | Current qualified assessment |
 | Contract outlook | rookie_scale_contract | Actual terms, options and next verified gate |
 | Summer priorities | Not recorded | Player selection and staff-supported plan |
@@ -66,10 +66,11 @@ The actual season close and an agreed exit-meeting date.
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
-- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/depth_chart.json)
+- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-09/review.json)
+- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-09/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/rotation.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-09/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
@@ -82,4 +83,8 @@ The actual season close and an agreed exit-meeting date.
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_2.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_1/Game_4.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/11_November/Week_2/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2005-11-07](../../../../assets/stat_reports/personal_2005-06_2005-11-07.svg)
+![Player personal information and earned 2005-06 awards through 2005-11-13](../../../../assets/stat_reports/personal_2005-06_2005-11-13.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2005-11-07; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-11-13; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -39,7 +39,7 @@ No 2005-06 awards yet.
 
 ## Statistics
 
-As of **2005-11-07**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2005-11-13**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -57,7 +57,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-11-07, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-11-13, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](../../../../Stats_and_Awards/2005-06/01_January/Week_3/Stat_Detail.md)
 
@@ -72,11 +72,11 @@ Awards are confirmed through 2005-11-07, filed by the honor's period-end date; t
 | This week | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [Previous week](../../../../Stats_and_Awards/2005-06/01_January/Week_2/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | Month through this week | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Season through this week | 21 | Miami Heat | NBA | SG / PG | 3 | 3 | 33.6 | 8.0 | 16.0 | .500 | 2.3 | 4.0 | .583 | 5.7 | 12.0 | .472 | .573 | 7.0 | 7.7 | .913 | 2.0 | 1.7 | 3.7 | 3.3 | 1.3 | 1.0 | 3.3 | 2.3 | 25.3 | .654 | — |
+| Season through this week | 21 | Miami Heat | NBA | SG / PG | 7 | 7 | 33.8 | 8.3 | 14.7 | .563 | 1.6 | 3.0 | .524 | 6.7 | 11.7 | .573 | .617 | 6.1 | 7.0 | .878 | 1.6 | 4.3 | 5.9 | 2.6 | 1.7 | 1.0 | 2.3 | 3.3 | 24.3 | .682 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-11-07, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-11-13, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 

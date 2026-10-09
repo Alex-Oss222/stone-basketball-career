@@ -520,7 +520,7 @@
   {
    "player": "Andrew Bogut",
    "bbr_id": "bogutan01",
-   "club": "Golden State Warriors",
+   "club": "Los Angeles Clippers",
    "route": "rookie_scale",
    "kind": "rookie_scale",
    "schedule": {
@@ -534,7 +534,8 @@
    "options": {
     "2007-08": "team_option",
     "2008-09": "team_option"
-   }
+   },
+   "signed_club": "Golden State Warriors"
   },
   {
    "player": "Matt Bonner",
@@ -662,7 +663,7 @@
   {
    "player": "Devin Brown",
    "bbr_id": "brownde02",
-   "club": "Boston Celtics",
+   "club": "Washington Wizards",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -672,7 +673,8 @@
     "2008-09": 4569198,
     "2009-10": 4934038
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Boston Celtics"
   },
   {
    "player": "P.J. Brown",
@@ -1513,13 +1515,14 @@
   {
    "player": "Derek Fisher",
    "bbr_id": "fishede01",
-   "club": "Washington Wizards",
+   "club": "Boston Celtics",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2005-06": 1035000
    },
-   "source": "2005 camp signing (roster minimum)"
+   "source": "2005 camp signing (roster minimum)",
+   "signed_club": "Washington Wizards"
   },
   {
    "player": "fitchge01",
@@ -2158,7 +2161,7 @@
   {
    "player": "Brendan Haywood",
    "bbr_id": "haywobr01",
-   "club": "Washington Wizards",
+   "club": "Boston Celtics",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -2168,7 +2171,8 @@
     "2008-09": 11189303,
     "2009-10": 12082746
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Washington Wizards"
   },
   {
    "player": "Luther Head",
@@ -2348,7 +2352,7 @@
   {
    "player": "Juwan Howard",
    "bbr_id": "howarju01",
-   "club": "Golden State Warriors",
+   "club": "Los Angeles Clippers",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -2356,7 +2360,8 @@
     "2006-07": 5600000,
     "2007-08": 5600000
    },
-   "source": "league contract ledger 2004-05 (existing)"
+   "source": "league contract ledger 2004-05 (existing)",
+   "signed_club": "Golden State Warriors"
   },
   {
    "player": "Troy Hudson",
@@ -3738,7 +3743,7 @@
   {
    "player": "Lamar Odom",
    "bbr_id": "odomla01",
-   "club": "Los Angeles Clippers",
+   "club": "Golden State Warriors",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -3748,7 +3753,8 @@
     "2008-09": 15780000,
     "2009-10": 17040000
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Los Angeles Clippers"
   },
   {
    "player": "Emeka Okafor",
@@ -4630,7 +4636,7 @@
   {
    "player": "J.R. Smith",
    "bbr_id": "smithjr01",
-   "club": "Boston Celtics",
+   "club": "Washington Wizards",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -4638,19 +4644,21 @@
     "2006-07": 1325160
    },
    "source": "league contract ledger 2004-05 (rookie_scale)",
-   "rookie_scale": true
+   "rookie_scale": true,
+   "signed_club": "Boston Celtics"
   },
   {
    "player": "Eric Snow",
    "bbr_id": "snower01",
-   "club": "Boston Celtics",
+   "club": "Washington Wizards",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 4076057,
     "2006-07": 4446607
    },
-   "source": "league contract ledger 2004-05 (new); traded 2005-08-05"
+   "source": "league contract ledger 2004-05 (new); traded 2005-08-05",
+   "signed_club": "Boston Celtics"
   },
   {
    "player": "Kirk Snyder",
@@ -5415,13 +5423,14 @@
   {
    "player": "David Wesley",
    "bbr_id": "wesleda01",
-   "club": "Golden State Warriors",
+   "club": "Los Angeles Clippers",
    "route": "mid_level",
    "kind": "new",
    "schedule": {
     "2005-06": 3300000
    },
-   "source": "2005 camp signing (roster minimum)"
+   "source": "2005 camp signing (roster minimum)",
+   "signed_club": "Golden State Warriors"
   },
   {
    "player": "David West",

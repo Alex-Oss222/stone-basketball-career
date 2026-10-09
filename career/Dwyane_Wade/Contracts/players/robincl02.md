@@ -2,9 +2,9 @@
 
 # Contract | Clifford Robinson
 
-Known through: 2005-11-07. [Open interactive contract](robincl02.html#contract) · [Contract history](robincl02.html#contract-history)
+Known through: 2005-11-13. [Open interactive contract](robincl02.html#contract) · [Contract history](robincl02.html#contract-history)
 
-Clifford Robinson: under contract unverified. Evidence cutoff: 2005-11-07.
+Clifford Robinson: under contract unverified. Evidence cutoff: 2005-11-13.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Clifford Robinson |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Golden State Warriors |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

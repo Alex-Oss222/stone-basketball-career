@@ -2,9 +2,9 @@
 
 # Contract | Antonio Burks
 
-Known through: 2005-11-07. [Open interactive contract](antonioburks.html#contract) · [Contract history](antonioburks.html#contract-history)
+Known through: 2005-11-13. [Open interactive contract](antonioburks.html#contract) · [Contract history](antonioburks.html#contract-history)
 
-Antonio Burks: under contract. Evidence cutoff: 2005-11-07.
+Antonio Burks: under contract. Evidence cutoff: 2005-11-13.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Antonio Burks |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Golden State Warriors |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

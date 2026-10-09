@@ -2,9 +2,9 @@
 
 # Contract | Walter McCarty
 
-Known through: 2005-11-07. [Open interactive contract](mccarwa01.html#contract) · [Contract history](mccarwa01.html#contract-history)
+Known through: 2005-11-13. [Open interactive contract](mccarwa01.html#contract) · [Contract history](mccarwa01.html#contract-history)
 
-Walter McCarty: under contract. Evidence cutoff: 2005-11-07.
+Walter McCarty: under contract. Evidence cutoff: 2005-11-13.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Walter McCarty |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Boston Celtics |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

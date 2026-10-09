@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-11-07",
+  "as_of": "2005-11-13",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -419,7 +419,7 @@
     {
       "player_id": "antonioburks",
       "name": "Antonio Burks",
-      "team": "Free agent",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": null,
       "recorded_agreements": 1,
@@ -1121,7 +1121,7 @@
     {
       "player_id": "robincl02",
       "name": "Clifford Robinson",
-      "team": "Free agent",
+      "team": "Golden State Warriors",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -5720,7 +5720,7 @@
     {
       "player_id": "mccarwa01",
       "name": "Walter McCarty",
-      "team": "Free agent",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "mccarwa01-2003-07-16",
       "recorded_agreements": 2,

@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-11-07. [Search the contract directory](index.html)
+Known through 2005-11-13. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -54,7 +54,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Anthony Roberson](players/roberan02.md) | Indiana Pacers | under contract | Anthony Roberson · 2005-08-12 | 1 |
 | [Antoine Walker](players/walkean02.md) | Dallas Mavericks | under contract | Antoine Walker · 2005-09-23 | 2 |
 | [Antoine Wright](players/wrighan01.md) | Los Angeles Clippers | under contract | Antoine Wright · 2005-07-01 | 1 |
-| [Antonio Burks](players/antonioburks.md) | Free agent | under contract | No verified current agreement | 1 |
+| [Antonio Burks](players/antonioburks.md) | Golden State Warriors | under contract | No verified current agreement | 1 |
 | [Antonio Daniels](players/daniean01.md) | Seattle SuperSonics | under contract | Antonio Daniels · 2003-07-19 | 2 |
 | [Antonio Davis](players/davisan01.md) | Chicago Bulls | under contract | Antonio Davis · 2005-09-23 | 1 |
 | [Antonio McDyess](players/mcdyean01.md) | New Orleans/Oklahoma City Hornets | under contract | Antonio McDyess · 2004-07-14 | 2 |
@@ -132,7 +132,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Chuck Hayes](players/hayesch01.md) | Atlanta Hawks | under contract | Chuck Hayes · 2005-08-05 | 1 |
 | [Chucky Atkins](players/atkinch01.md) | Los Angeles Lakers | under contract | Chucky Atkins · existing contract; signing date not recorded | 1 |
 | [Clarence Weatherspoon](players/weathcl01.md) | Free agent | under contract | Clarence Weatherspoon · existing contract; signing date not recorded | 1 |
-| [Clifford Robinson](players/robincl02.md) | Free agent | under contract unverified | No verified current agreement | 0 |
+| [Clifford Robinson](players/robincl02.md) | Golden State Warriors | under contract unverified | No verified current agreement | 0 |
 | [Corey Maggette](players/maggeco01.md) | Los Angeles Clippers | under contract | Corey Maggette · 2003-07-31 | 2 |
 | [Corie Blount](players/blounco01.md) | Free agent | under contract | No verified current agreement | 2 |
 | [Corliss Williamson](players/willico02.md) | Chicago Bulls | under contract | Corliss Williamson · existing contract; signing date not recorded | 1 |
@@ -646,7 +646,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Wally Szczerbiak](players/szczewa02.md) | New Jersey Nets | under contract | Wally Szczerbiak · 2002-10-30 | 1 |
 | [walshma01](players/walshma01.md) | Free agent | under contract | walshma01 · 2005-09-02 | 1 |
 | [Walt Williams](players/williwa02.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
-| [Walter McCarty](players/mccarwa01.md) | Free agent | under contract | Walter McCarty · 2003-07-16 | 2 |
+| [Walter McCarty](players/mccarwa01.md) | Boston Celtics | under contract | Walter McCarty · 2003-07-16 | 2 |
 | [Wang Zhizhi](players/zhizhwa01.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Wesley Person](players/persowe01.md) | Free agent | under contract | Wesley Person · existing contract; signing date not recorded | 1 |
 | [Will Bynum](players/bynumwi01.md) | Phoenix Suns | under contract | Will Bynum · 2005-08-02 | 1 |
