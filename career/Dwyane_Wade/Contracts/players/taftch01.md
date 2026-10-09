@@ -2,9 +2,9 @@
 
 # Contract | Chris Taft
 
-Known through: 2005-11-28. [Open interactive contract](taftch01.html#contract) · [Contract history](taftch01.html#contract-history)
+Known through: 2005-11-30. [Open interactive contract](taftch01.html#contract) · [Contract history](taftch01.html#contract-history)
 
-Chris Taft: under contract. Evidence cutoff: 2005-11-28.
+Chris Taft: under contract. Evidence cutoff: 2005-11-30.
 
 ## Current contract
 

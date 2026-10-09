@@ -2,9 +2,9 @@
 
 # Contract | Joe Johnson
 
-Known through: 2005-11-28. [Open interactive contract](johnsjo02.html#contract) · [Contract history](johnsjo02.html#contract-history)
+Known through: 2005-11-30. [Open interactive contract](johnsjo02.html#contract) · [Contract history](johnsjo02.html#contract-history)
 
-Joe Johnson: under contract. Evidence cutoff: 2005-11-28.
+Joe Johnson: under contract. Evidence cutoff: 2005-11-30.
 
 ## Current contract
 

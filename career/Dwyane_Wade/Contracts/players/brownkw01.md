@@ -2,9 +2,9 @@
 
 # Contract | Kwame Brown
 
-Known through: 2005-11-28. [Open interactive contract](brownkw01.html#contract) · [Contract history](brownkw01.html#contract-history)
+Known through: 2005-11-30. [Open interactive contract](brownkw01.html#contract) · [Contract history](brownkw01.html#contract-history)
 
-Kwame Brown: released. Evidence cutoff: 2005-11-28.
+Kwame Brown: released. Evidence cutoff: 2005-11-30.
 
 ## Current contract
 

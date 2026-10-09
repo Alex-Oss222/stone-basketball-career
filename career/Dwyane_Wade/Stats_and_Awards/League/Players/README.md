@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-11-28**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-11-30**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 118 players</summary>
@@ -262,7 +262,7 @@ Card date: **2005-11-28**. 651 registry players, one Markdown card and one inter
 | [Andre Iguodala](andreiguodala.md) | New York Knicks | 21 | silhouette | [open](andreiguodala.html) |
 | [Andrei Kirilenko](kirilan01.md) | Utah Jazz | 24 | sourced | [open](kirilan01.html) |
 | [Andris Biedriņš](andrisbiedri.md) | Los Angeles Clippers | 19 | silhouette | [open](andrisbiedri.html) |
-| [Andrés Nocioni](andrsnocioni.md) | San Antonio Spurs | 25 | silhouette | [open](andrsnocioni.html) |
+| [Andrés Nocioni](andrsnocioni.md) | San Antonio Spurs | 26 | silhouette | [open](andrsnocioni.html) |
 | [Ansu Sesay](sesayan01.md) | Free agent | 29 | silhouette | [open](sesayan01.html) |
 | [Antawn Jamison](jamisan01.md) | Dallas Mavericks | 29 | sourced | [open](jamisan01.html) |
 | [Anthony Miller](anthonymiller.md) | Free agent | 34 | silhouette | [open](anthonymiller.html) |
@@ -321,7 +321,7 @@ Card date: **2005-11-28**. 651 registry players, one Markdown card and one inter
 | [Jackie Butler](jackiebutler.md) | Washington Wizards | 20 | silhouette | [open](jackiebutler.html) |
 | [Jackson Vroman](jacksonvroman.md) | Milwaukee Bucks | 24 | silhouette | [open](jacksonvroman.html) |
 | [Jalen Rose](roseja01.md) | Washington Wizards | 32 | sourced | [open](roseja01.html) |
-| [Jamal Mashburn](mashbja01.md) | Free agent | 32 | silhouette | [open](mashbja01.html) |
+| [Jamal Mashburn](mashbja01.md) | Free agent | 33 | silhouette | [open](mashbja01.html) |
 | [Jameer Nelson](jameernelson.md) | Seattle SuperSonics | 23 | silhouette | [open](jameernelson.html) |
 | [James Jones](jonesja02.md) | Orlando Magic | 25 | sourced | [open](jonesja02.html) |
 | [James Posey](poseyja01.md) | Memphis Grizzlies | 28 | sourced | [open](poseyja01.html) |
@@ -654,7 +654,7 @@ Card date: **2005-11-28**. 651 registry players, one Markdown card and one inter
 | [Marc Jackson](jacksma02.md) | Philadelphia 76ers | 30 | sourced | [open](jacksma02.html) |
 | [Marcus Camby](cambyma01.md) | Minnesota Timberwolves | 31 | sourced | [open](cambyma01.html) |
 | [Mario Kasun](kasunma01.md) | Milwaukee Bucks | 25 | silhouette | [open](kasunma01.html) |
-| [Mark Blount](blounma01.md) | Memphis Grizzlies | 29 | sourced | [open](blounma01.html) |
+| [Mark Blount](blounma01.md) | Memphis Grizzlies | 30 | sourced | [open](blounma01.html) |
 | [Melvin Ely](elyme01.md) | Los Angeles Clippers | 27 | silhouette | [open](elyme01.html) |
 | [Mengke Bateer](bateeme01.md) | Free agent | 30 | silhouette | [open](bateeme01.html) |
 | [Michael Doleac](doleami01.md) | Los Angeles Clippers | 28 | sourced | [open](doleami01.html) |
