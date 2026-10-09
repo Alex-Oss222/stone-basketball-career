@@ -67,7 +67,7 @@ def read_record(season, root=ROOT):
 def open_options(season, root=ROOT):
     """[(holder, bbr_id, player, option season, kind, salary, rookie)] still open in the season's contracts."""
     from .extensions import extension_season
-    from .league_contracts import read as read_ledger
+    from .league_contracts import read as read_ledger, sheet_key
     root = Path(root)
     out = []
     for b, c in (read_ledger(season, root) or {}).items():
@@ -90,7 +90,7 @@ def open_options(season, root=ROOT):
                 # deadline: the extended rookie-scale row keeps its route, the extension's seasons are a new agreement
                 rookie = rookie and not extension_season(p, s)
                 # Wade's sheet and register carry no bbr_id (alternate history); his records' key is wadedw01.
-                bbr = p.get("bbr_id") or roster.get(p["player"]) or ("wadedw01" if p["player"] == "Dwyane Wade" else None)
+                bbr = sheet_key(p, roster)
                 out.append(("Miami Heat", bbr, p["player"], s, kind, int(p["schedule"][s]), rookie))
     return out
 
@@ -208,7 +208,7 @@ def run(day, root=ROOT, evidence_day=None):
 def apply(record, season, root, day):
     """Write every decided option into the contracts: an exercised or kept option becomes a contract season; a
     declined option or an opt-out removes it (and every later season of that contract). Returns the applied ids."""
-    from .league_contracts import ledger_path
+    from .league_contracts import WADE_BBR, WADE_REGISTER, ledger_path
     root = Path(root)
     ledger_file = root / ledger_path(season)
     ledger = json.loads(ledger_file.read_text(encoding="utf-8"))
@@ -230,11 +230,12 @@ def apply(record, season, root, day):
             for p in sheet["players"]:
                 if p["player"] == d["player"]:
                     _apply_schedule(p, s, keep, d)
-        c = by_bbr.get(d["bbr_id"])
-        if c is None and d["club"] == "Miami Heat" and d["bbr_id"] == "wadedw01":
-            # Wade's ledger key is his career key (alternate history); only an option inside his extension reaches it
-            from .extensions import WADE_KEY, extension_season
-            c = by_bbr.get(WADE_KEY) if extension_season(by_bbr.get(WADE_KEY), s) else None
+        c = by_bbr.get(d["bbr_id"])                   # Wade too: the ledger keys him by his NBA id (league_contracts)
+        if c is None and d["club"] == "Miami Heat" and d["bbr_id"] == WADE_BBR:
+            # a ledger written before the 2005-10-31 repair keys him by his register key, its later seasons not his
+            # sheet's (`league_contracts` module note): only an option inside his extension reaches that row
+            from .extensions import extension_season
+            c = by_bbr.get(WADE_REGISTER) if extension_season(by_bbr.get(WADE_REGISTER), s) else None
         if c:
             _apply_schedule(c, s, keep, d, ledger=True)
         d["applied"] = day
@@ -250,9 +251,14 @@ def apply(record, season, root, day):
 
 
 
-def _apply_schedule(entry, s, keep, d, ledger=False):
-    note = (f"{d['option_season']} {d['kind'].replace('_', ' ')}: {d['decision']} ({d['deadline']}; {d['how']}; "
+def history_note(d):
+    """The `option_history` line an applied decision leaves on a contract (ledger entry or Miami's sheet row)."""
+    return (f"{d['option_season']} {d['kind'].replace('_', ' ')}: {d['decision']} ({d['deadline']}; {d['how']}; "
             f"runtime/options.py, League/option_decisions.json)")
+
+
+def _apply_schedule(entry, s, keep, d, ledger=False):
+    note = history_note(d)
     if keep:
         if ledger:
             entry.setdefault("options", {}).pop(s, None)

@@ -54,6 +54,12 @@ Club decisions are judgement rules with no chance element; a player's answers ar
   and ends Miami's Bird rights (and any qualifying offer) for that player. From the same summer
   (REQUEST_ANSWERS_CONSULTATION_FROM) Wade's own pursue request answers the franchise consultation for that player:
   the record is written answered `approve` from the request on the asking day and the market does not stop.
+- From the 2006 summer (LOST_BIRD_FROM): a player who consented to a trade during the closed season under the one-year
+  contract consent rule (cbafaq05 Q83; `runtime/trades.py lost_bird_rights`, read from the trade records) lost his Larry
+  Bird or Early Bird rights: the club holding his rights pays him as a Non-Bird free agent (`non_bird` route, up to the
+  greatest of 120% of his prior salary, 120% of his minimum or his qualifying offer, inside its payroll ceiling without
+  the Bird allowance) and above that only from cap room or the mid-level, as any other club (his own cap hold, which
+  his salary replaces, is left out of the room it pays him from).
 The record is `10_Free_Agency/free_agency_2004.json`, rebuilt by replaying every round from its recorded draws.
 """
 from __future__ import annotations
@@ -114,6 +120,7 @@ NEW_SIGNING_TRADABLE = "2004-12-15"     # a free agent signed this summer cannot
 REQUEST_PRICE_CEILING = 1.10           # Miami pays a player Wade asked for up to this share of its own valuation (docs/front_office.md)
 RENOUNCE_FOR_REQUEST_FROM = 2006        # from this summer Miami renounces lesser holds to reach a free agent Wade asked it to pursue
 REQUEST_ANSWERS_CONSULTATION_FROM = 2006  # from this summer Wade's own pursue request answers the franchise consultation for that player
+LOST_BIRD_FROM = 2006                   # the first summer after a consent trade could happen (trades.CONSENT_FROM, 2005-12-01)
 REQUESTS = FOLDER / "wade_requests.json"
 UNTOUCHABLE = {"dwyane_wade"}           # Miami's AI/GM keeps its franchise cornerstone off the market (judgement)
 HOLD_SHARE = 1.5                        # cap hold: 150% of the prior salary
@@ -636,6 +643,10 @@ class Market:
         self.clubs = sorted({c["club"] for c in self.book["contracts"].values()} | set(self.book["rights"].values()) | {CHARLOTTE})
         self.events, self.pending = [], False
         self.renounced = {}                             # {bbr_id: club} rights a club renounced this summer (from 2006)
+        self.lost_bird = {}                             # {bbr_id: record} Bird rights lost by consenting to a trade (from 2006)
+        if YEAR >= LOST_BIRD_FROM:
+            from .trades import lost_bird_rights
+            self.lost_bird = lost_bird_rights(SEASON, self.root)
         self.store = True                               # stored trade proposals (False only in tests)
         self.standings = self._standings()
 
@@ -702,9 +713,11 @@ class Market:
         """One player's cap hold: HOLD_SHARE x his prior salary (his price when none is recorded)."""
         return int(round((self.prior.get(b) or self.price[b]) * HOLD_SHARE))
 
-    def holds(self, club, on):
-        """Cap holds the club keeps: its own unsigned free agents it values above twice the minimum."""
-        return sum(self.hold(b) for b in self.held(club))
+    def holds(self, club, on, own=None):
+        """Cap holds the club keeps: its own unsigned free agents it values above twice the minimum. `own` names the
+        player the club is signing, whose hold his salary replaces, so his own hold is left out of the room it pays him
+        from (used only for a player who lost his Bird rights by consenting to a trade, from LOST_BIRD_FROM)."""
+        return sum(self.hold(b) for b in self.held(club) if b != own)
 
     def ask(self, b, week):
         floor = ASK_FLOOR_SHARE - LATE_DECAY * max(0, week - LATE_WEEK + 1)
@@ -833,17 +846,27 @@ class Market:
         if amount <= minimum(self.service(b), self.cal) and self.roster(club) < ROSTER_MAX:
             return "minimum"
         if self.rights.get(b) == club:
-            return "bird" if payroll + amount <= self.ceiling(club, bird=True, b=b) else None
-        room = self.cap(club, on) - payroll - self.holds(club, on)
+            if b not in getattr(self, "lost_bird", {}):
+                return "bird" if payroll + amount <= self.ceiling(club, bird=True, b=b) else None
+            if amount <= self.non_bird_limit(b) and payroll + amount <= self.ceiling(club):
+                return "non_bird"                       # consented to a trade: Non-Bird rights only (cbafaq05 Q83)
+        room = self.cap(club, on) - payroll - self.holds(club, on, own=b if b in getattr(self, "lost_bird", {}) else None)
         if amount <= room:
             return "cap_room"
         if club not in self.mle_used and amount <= self.cal["mle"] and payroll + amount <= self.ceiling(club):
             return "mid_level"
         return None
 
-    def most_affordable(self, club, b, on):
-        """The largest first-year salary the club can pay a player who is not its own: cap room, else the mid-level."""
-        room = self.cap(club, on) - self.payroll(club) - self.holds(club, on)
+    def non_bird_limit(self, b):
+        """The most a club holding only Non-Bird rights may pay its own free agent: the greatest of 120% of his prior
+        salary, 120% of his minimum and his qualifying offer (cbafaq05 Q19; the 2005 rules file's `exceptions.non_bird`)."""
+        q = (getattr(self, "qualifying", {}).get(b) or {}).get("amount") or 0
+        return int(max(1.2 * (self.prior.get(b) or 0), 1.2 * minimum(self.service(b), self.cal), q))
+
+    def most_affordable(self, club, b, on, own=False):
+        """The largest first-year salary the club can pay a player who is not its own: cap room, else the mid-level.
+        `own`: he is the club's own free agent without Bird rights (`lost_bird`), whose hold his salary replaces."""
+        room = self.cap(club, on) - self.payroll(club) - self.holds(club, on, own=b if own else None)
         if room > self.cal["mle"]:
             return int(room), "cap_room"
         if club not in self.mle_used and self.payroll(club) + self.cal["mle"] <= self.ceiling(club):
@@ -994,7 +1017,7 @@ class Market:
                 if renounce:
                     route = "cap_room"
             if route is None and not minimum_deal:
-                amount, route = self.most_affordable(club, b, day)
+                amount, route = self.most_affordable(club, b, day, own=self.rights.get(b) == club and b in getattr(self, "lost_bird", {}))
                 if route is None or amount < INSULT_SHARE * ask or amount <= minimum(self.service(b), self.cal):
                     continue
             if route is None:
@@ -1406,7 +1429,13 @@ class Market:
                 break
             club = min(short, key=lambda c: (-self.need(c, self.group(b)), self.roster(c), c))
             salary, route = minimum(self.service(b), self.cal), "minimum"
-            top, how = self.most_affordable(club, b, PLACEMENT) if self.rights.get(b) != club else (self.price[b], "bird")
+            if self.rights.get(b) != club:
+                top, how = self.most_affordable(club, b, PLACEMENT)
+            elif b in getattr(self, "lost_bird", {}):  # Non-Bird rights only: the larger of the Non-Bird limit and room or the mid-level
+                top, how = max(self.most_affordable(club, b, PLACEMENT, own=True), (min(self.price[b], self.non_bird_limit(b)), "non_bird"),
+                               key=lambda t: t[0])
+            else:
+                top, how = self.price[b], "bird"
             if how and top > salary:
                 salary, route = max(salary, min(top, int(round(self.price[b] * ASK_FLOOR_SHARE)))), how
                 if route == "mid_level":

@@ -667,6 +667,8 @@ def validate():
 
     from runtime.continuity import errors as continuity_errors          # contracts, clubs, players, numbers across seasons
     errors.extend(continuity_errors(ROOT))
+    from runtime.league_contracts import sheet_errors as ledger_sheet_errors   # every season's Miami rows = Miami's sheet
+    errors.extend([e for e in ledger_sheet_errors(ROOT) if e not in errors])   # the live season's are continuity's too
     from runtime.seasons import active as live_season, supported
     errors.extend(f"{live_season(ROOT)} season data missing: {m}" for m in supported(live_season(ROOT), ROOT))
     from runtime.injury_types import errors as injury_type_errors        # every Miami injury and absence is named

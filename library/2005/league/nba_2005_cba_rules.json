@@ -782,6 +782,35 @@
   "source": "cbafaq05",
   "source_ref": "Appendix, Q83"
  },
+ "trade_consent_one_year_contract": {
+  "value": {
+   "rule": "A player playing under a one-year contract (excluding any option year) who will have Larry Bird or Early Bird rights at the end of it cannot be traded without his consent.",
+   "covers": "Includes a first-round pick who, after his fourth (option) season, accepts his club's qualifying offer for his fifth season.",
+   "option_year": "When an option year is involved the club can get around the rule by invoking the option before the trade (the contract is then no longer a one-year contract).",
+   "consent_effect": "If he consents and is traded he loses his Larry Bird or Early Bird rights and enters free agency as a Non-Bird free agent: the club loses its Larry Bird or Early Bird rights.",
+   "timing_example": "Seattle signed Vladimir Radmanovic to a one-year qualifying offer on September 21, 2005: he could not be traded at all until December 21, 2005 (the newly signed restriction, three months or December 15, whichever later), and after that only with his consent.",
+   "bird_clock": {
+    "larry_bird_seasons": 3,
+    "early_bird_seasons": 2,
+    "counts": "seasons with the same club without being waived or changing teams as a free agent: a single contract or any series of contracts; a partial season counts as a full season",
+    "trade": "a traded player's new club inherits his Bird rights (a trade does not reset the clock)",
+    "resets": "changing teams by signing as a free agent; being claimed off waivers before clearing them; being selected in an expansion draft",
+    "waived": "the player must complete his contract immediately before free agency (he cannot have been waived)",
+    "ten_day_contracts": "do not count toward Bird rights",
+    "renounced": "a club that renounces a player cannot use the Bird exception to re-sign him for one year; if he re-signs with his prior club (with cap room or the minimum) the renouncement ends with that contract and he is a Larry Bird free agent again at its end (Q34), so his return to that club does not reset the clock",
+    "re_signing": "the clock resets only when he changes teams by signing as a free agent: a re-signing with the club holding his rights, in the summer or during the season, continues it; a player traded away, waived by his new club and re-signed by his old one changed teams as a free agent, so his clock resets (the FAQ's later example, not named here: it postdates the career clock)"
+   },
+   "exception_limits": {
+    "early_bird": "the greater of 175% of his previous salary or the average salary ($5 million defined for 2005-06)",
+    "non_bird": "the greatest of 120% of his previous salary, 120% of the minimum salary, or the qualifying-offer amount"
+   },
+   "agreement_1999": "Under the 1999 agreement such a player could not be traded at all (no consent route)."
+  },
+  "status": "sourced",
+  "source": "cbafaq05",
+  "source_ref": "Q83 (one-year contract with Bird or Early Bird rights at its end, consent, Non-Bird free agency, the Radmanovic timing), Q88 (excluding any option year; the fifth-season qualifying offer; invoking the option before the trade; the newly signed restriction), Q26 (the Bird clock), Q34 (a renounced player re-signed by his prior club), Q19 (Early Bird and Non-Bird limits), Q37 and Q40 (the qualifying offer; restricted again with three or fewer seasons), Appendix (the 1999 difference)",
+  "note": "Read by runtime/trades.py (ConsentBook, consent_chance) for trades decided on or after CONSENT_FROM, 2005-12-01; every earlier trade replays unchanged. The rule existed in a stricter form under the 1999 agreement; it is not applied to the 2003-04 and 2004-05 trades already recorded."
+ },
  "over_36_rule": {
   "value": "Contracts for players reaching age 36 may be classified Over-36: late seasons become 'zero years' whose salary is treated as deferred and charged against earlier cap years. Applies to contracts signed on or after November 1, 2005; contracts signed before that used the 1999 CBA rule.",
   "status": "sourced",

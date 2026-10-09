@@ -1419,17 +1419,21 @@
    "source": "2004 qualifying offer accepted"
   },
   {
-   "player": "dwyane_wade",
+   "player": "Dwyane Wade",
    "bbr_id": "dwyane_wade",
    "club": "Miami Heat",
    "route": "existing",
-   "kind": "new",
+   "kind": "existing",
    "schedule": {
     "2004-05": 2361800,
-    "2005-06": 2597980,
-    "2006-07": 2834160
+    "2005-06": 2526600,
+    "2006-07": 3201202
    },
-   "source": "Miami contract_schedules.json"
+   "source": "Miami contract_schedules.json",
+   "options": {
+    "2006-07": "team_option"
+   },
+   "rookie_scale": true
   },
   {
    "player": "Ndudi Ebi",

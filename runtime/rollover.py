@@ -170,12 +170,13 @@ class Rollover:
         old = {p.get("bbr_id") or ids_by_name.get(p["player"]) or (WADE_ID if p["player"] == "Dwyane Wade" else None): p
                for p in _read(self.old_team / "Finances/contract_schedules.json")["players"]}
         from .extensions import with_recorded
+        from .league_contracts import find
         from .seasons import dates
         guarantee = dates(self.new, self.root)["guarantee"]
         out = []
         for key, row, ident, event in self.miami():
             name = ident.get("name") or row["player"]
-            lg = ledger.get(key) or {}
+            lg = find(ledger, key) or {}          # the ledger keys Wade (WADE_ID here) by his NBA id
             if row["route"] in ("existing", "option") and key in old:
                 # a row an in-season trade copied without its extension record gains it (`extensions.with_recorded`)
                 entry = deepcopy(with_recorded(old[key], self.root, None if key == WADE_ID else key))
@@ -231,8 +232,8 @@ class Rollover:
         It keeps its signed schedule and its original signing date (from the summer market record that dated it, else
         unrecorded); Miami holds the player from the trade date."""
         from .extensions import base_schedule, carry_fields
-        from .league_contracts import read as read_ledger
-        before = (read_ledger(self.old, self.root) or {}).get(key) or {}
+        from .league_contracts import find, read as read_ledger
+        before = find(read_ledger(self.old, self.root) or {}, key) or {}
         rookie = before.get("route") == "rookie_scale" or before.get("kind") == "rookie_scale"
         if (lg.get("extension") or before.get("extension")) and self.new >= (lg.get("extension") or before["extension"])["first_season"]:
             rookie = False                                # an extended contract is a veteran's from its first new season

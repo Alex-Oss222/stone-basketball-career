@@ -31,7 +31,7 @@ from runtime import consultations, signing              # noqa: E402
 from runtime.gm import FrontOffice                      # noqa: E402
 from runtime.season_market import for_date as Market    # noqa: E402  the season's own market (2003 Market in 2003-04)
 from runtime.standing import standing_on                # noqa: E402
-from runtime.trades import TradeDesk                    # noqa: E402
+from runtime.trades import TradeDesk, consent_report    # noqa: E402
 from runtime.valuation import read                      # noqa: E402
 from scripts.refresh_career_views import refresh_career_views # noqa: E402
 
@@ -204,7 +204,10 @@ def write(day, root=ROOT):
         else:
             record["status"] = "declined"
             state = writer.load(signing.STATE)
-            signing.note_event(writer, signing.phase_note_for(state), day, f"{record['trade']['partner']} declines Miami's proposal ({record['trade_id']}).")
+            consent = consent_report(record)             # a holder's refusal after the clubs agreed (trade consent, cbafaq05 Q83)
+            signing.note_event(writer, signing.phase_note_for(state), day,
+                               f"{record['trade']['partner']} agrees, but {consent} ({record['trade_id']})." if consent else
+                               f"{record['trade']['partner']} declines Miami's proposal ({record['trade_id']}).")
         path.write_text(json.dumps(record, indent=1) + "\n", encoding="utf-8")
         writer.commit()
         applied.append((record["trade_id"], record["status"]))
@@ -386,7 +389,9 @@ def season_day(day, root=ROOT):
         outs = ", ".join(t.get("miami_out", []) + [f"{x['year']} round {x['round']} pick" for x in t.get("picks_out", [])]) or "nothing"
         ins = ", ".join(t.get("miami_in", []) + [f"{x['year']} round {x['round']} pick" for x in t.get("picks_in", [])]) or "nothing"
         head = "MIAMI TRADE" if status == "completed" else f"Miami trade {status}"
-        lines.append(f"{head}: {t['partner']} {'accepts' if status == 'completed' else 'answers'}: Miami sends {outs} for {ins} ({trade_id})")
+        consent = consent_report(record)
+        lines.append(f"{head}: {t['partner']} {'accepts' if status == 'completed' else 'answers'}: Miami sends {outs} for {ins} ({trade_id})"
+                     + (f"; {consent}" if consent else ""))
     if pending:
         return lines + ["awaiting the draw: " + ", ".join(pending)]
     due = scan_due(day, root)
@@ -442,7 +447,8 @@ def main(argv):
     else:
         applied, pending = write(day)
         for trade_id, status in applied:
-            print(f"{trade_id}: {status}")
+            consent = consent_report(json.loads((ROOT / TRADES / f"{trade_id}.json").read_text(encoding="utf-8")))
+            print(f"{trade_id}: {status}" + (f"; {consent}" if consent else ""))
         if pending:
             print("pending draws: " + ", ".join(pending))
     if argv[1] != "--search":

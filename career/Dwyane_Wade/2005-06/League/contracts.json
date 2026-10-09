@@ -326,14 +326,15 @@
   {
    "player": "Brent Barry",
    "bbr_id": "barrybr01",
-   "club": "Boston Celtics",
+   "club": "Charlotte Bobcats",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 5393300,
     "2006-07": 5883600
    },
-   "source": "league contract ledger 2004-05 (new); traded 2005-08-05"
+   "source": "league contract ledger 2004-05 (new); traded 2005-08-05",
+   "signed_club": "Boston Celtics"
   },
   {
    "player": "Eddie Basden",
@@ -1255,7 +1256,7 @@
   {
    "player": "Ike Diogu",
    "bbr_id": "dioguik01",
-   "club": "Boston Celtics",
+   "club": "Charlotte Bobcats",
    "route": "rookie_scale",
    "kind": "rookie_scale",
    "schedule": {
@@ -1269,7 +1270,8 @@
    "options": {
     "2007-08": "team_option",
     "2008-09": "team_option"
-   }
+   },
+   "signed_club": "Boston Celtics"
   },
   {
    "player": "Juan Dixon",
@@ -1362,18 +1364,6 @@
    "source": "2005 qualifying offer accepted"
   },
   {
-   "player": "dwyane_wade",
-   "bbr_id": "dwyane_wade",
-   "club": "Miami Heat",
-   "route": "existing",
-   "kind": "existing",
-   "schedule": {
-    "2005-06": 2597980,
-    "2006-07": 2834160
-   },
-   "source": "Miami contract_schedules.json"
-  },
-  {
    "player": "Ndudi Ebi",
    "bbr_id": "ebind01",
    "club": "Cleveland Cavaliers",
@@ -1414,13 +1404,14 @@
   {
    "player": "Francisco Elson",
    "bbr_id": "elsonfr01",
-   "club": "Denver Nuggets",
+   "club": "Sacramento Kings",
    "route": "qualifying_offer",
    "kind": "new",
    "schedule": {
     "2005-06": 894373
    },
-   "source": "2005 qualifying offer accepted"
+   "source": "2005 qualifying offer accepted",
+   "signed_club": "Denver Nuggets"
   },
   {
    "player": "Melvin Ely",
@@ -2475,7 +2466,7 @@
   {
    "player": "Jarrett Jack",
    "bbr_id": "jackja01",
-   "club": "Sacramento Kings",
+   "club": "Denver Nuggets",
    "route": "rookie_scale",
    "kind": "rookie_scale",
    "schedule": {
@@ -2489,7 +2480,8 @@
    "options": {
     "2007-08": "team_option",
     "2008-09": "team_option"
-   }
+   },
+   "signed_club": "Sacramento Kings"
   },
   {
    "player": "Bobby Jackson",
@@ -2829,7 +2821,7 @@
   {
    "player": "Jason Kapono",
    "bbr_id": "kaponja01",
-   "club": "Charlotte Bobcats",
+   "club": "Boston Celtics",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -2839,7 +2831,8 @@
     "2008-09": 6575000,
     "2009-10": 7100000
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Charlotte Bobcats"
   },
   {
    "player": "Mario Kasun",
@@ -5229,7 +5222,7 @@
   {
    "player": "Sasha Vujačić",
    "bbr_id": "vujacsa01",
-   "club": "Sacramento Kings",
+   "club": "Denver Nuggets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -5237,7 +5230,24 @@
     "2006-07": 973920
    },
    "source": "league contract ledger 2004-05 (rookie_scale)",
-   "rookie_scale": true
+   "rookie_scale": true,
+   "signed_club": "Sacramento Kings"
+  },
+  {
+   "player": "Dwyane Wade",
+   "bbr_id": "wadedw01",
+   "club": "Miami Heat",
+   "route": "existing",
+   "kind": "existing",
+   "schedule": {
+    "2005-06": 2526600,
+    "2006-07": 3201202
+   },
+   "source": "Miami contract_schedules.json",
+   "rookie_scale": true,
+   "option_history": [
+    "2006-07 team option: exercise (2005-10-31; clear: ratio 10.14 at or above 1.2; runtime/options.py, League/option_decisions.json)"
+   ]
   },
   {
    "player": "Von Wafer",

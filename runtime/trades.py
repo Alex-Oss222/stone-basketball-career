@@ -18,6 +18,19 @@ the trade executes, so the newly-signed restriction (which starts at a signing) 
 arises for it, while a player Miami has already re-signed is an ordinary signed player
 whom that restriction binds, whatever label the proposal carries. The player appears in
 `miami_in` or `miami_out` like any other and `resolve` gives him a synthetic contract entry.
+
+Trade consent (2005 agreement, trades decided from CONSENT_FROM, 2005-12-01; cbafaq05 Q83, Q88, Q26; the rules file's
+`trade_consent_one_year_contract`): a player under a one-year contract (any option year excluded) whose club will hold
+his Larry Bird or Early Bird rights at its end cannot be traded without his consent. `ConsentBook` says who holds it on
+a date from the records (his seasons with the club and its predecessors by trade; an unknown history gives no right),
+`consent_chance` gives his answer's odds, and the trade's own packet carries it (`consent_options`): asked only once
+the clubs agree, a refusal voids the trade; consenting, he loses those rights (`lost_bird_rights`, which the next
+summer market reads: a Non-Bird free agent of his new club). The league's trades (`runtime/league_trades.py`) apply the
+same rule; an offer to Miami, completed the day it is made with no draw, never moves a holder. A re-signing by the club
+holding his rights continues his clock for every club alike, in the summer or by a rest-of-season contract, and so does
+a renounced player's return (cbafaq05 Q26, Q34). From IN_SEASON_SIGNED_FROM (the same date) both desks treat a
+rest-of-season signing as newly signed (`signing_block`, cbafaq05 Q88), so consent is never asked of a player who may
+not be traded at all yet.
 """
 from datetime import date, timedelta
 import hashlib
@@ -44,6 +57,7 @@ PICKS_PATH = TEAM / "Finances/draft_picks.json"
 MORATORIUM = ("2003-07-01", "2003-07-15")
 SIGNING_OPENS = "2003-07-16"
 PROTAGONIST = "Dwyane Wade"
+WADE_BBR = "wadedw01"                     # his NBA id in the registry and the evidence (his register row carries none)
 UNDER_CONTRACT = ("under_contract", "under_rookie_contract", "under_contract_unverified", "minimum_contract_unverified")
 NOT_TRADEABLE_WORDS = ("free_agent", "declined", "pending", "renounced", "traded", "signed_elsewhere", "unsigned", "draft")
 
@@ -112,6 +126,24 @@ SIGN_AND_TRADE_RIGHTS_SHARE = 0.25       # judgement: the incumbent values the p
 PARTNER_LOCATION = 0.5                   # judgement: a partner club's location appeal in the player's consent draw
 OWN_OUT_ACCEPT_MARGIN = 0.1              # judgement: an own sign-and-trade-out goes to the first partner whose acceptance clears the floor by this
 BIRD_RAISE = 0.125                       # the 1999 agreement's Bird raise; a live schedule asks agreement.raise_share
+# One-year-contract trade consent (2005 agreement; cbafaq05 Q83, Q88, Q26; `trade_consent_one_year_contract` in the 2005
+# rules file). Forward-only: trades decided on or after CONSENT_FROM, so every trade recorded before it replays unchanged.
+CONSENT_FROM = "2005-12-01"
+IN_SEASON_SIGNED_FROM = CONSENT_FROM     # from this date a rest-of-season signing is newly signed for both trade desks (cbafaq05 Q88;
+                                         # forward-only: every trade decided before it replays unchanged)
+CBA_2005_PATH = Path("library/2005/league/nba_2005_cba_rules.json")
+CONSENT_RULE = "trade_consent_one_year_contract"
+CONSENT_CENTER = 0.0                     # judgement: a move worth exactly his staying (the rights he gives up counted) is an even chance
+CONSENT_LIMITS = (0.05, 0.95)            # judgement: the bounds of the own sign-and-trade consent draw (scripts/run_free_agency.py consent_packet)
+BIRD_RIGHTS_SHARE = 0.25                 # judgement: the share of the narrowed re-signing ceiling he expects to lose. In the 2005 summer
+                                         # market 68 of the 143 free agents with rights who signed re-signed with their own club above the
+                                         # Non-Bird limit, 28 of them above the mid-level that a club holding only Non-Bird rights may still use
+NON_BIRD_SHARE, EARLY_BIRD_SHARE = 1.20, 1.75   # cbafaq05 Q19 (rules file `exceptions`): 120% / 175% of the previous salary
+REFUSED = "refused_by_"                  # a combined trade packet's option for a holder's refusal: REFUSED + his bbr_id
+CONTINUING_EVENTS = ("re_sign", "qualifying_offer_accepted", "offer_sheet_matched")   # a re-signing by the club holding his rights
+SUMMER_CONTRACT_EVENTS = CONTINUING_EVENTS + ("signing", "camp_signing", "rookie_scale_signing")
+IN_SEASON_MOVES = {"claim": "starts", "rest_of_season": "starts", "ten_day": "none",           # a join that starts a club's clock;
+                   "waive": "none", "clear": "none", "expire": "none", "retire": "none"}       # a ten-day counts for nothing
 
 
 def read_json(path, root=ROOT):
@@ -539,6 +571,60 @@ def is_sign_and_trade(trade):
     return bool(st_in(trade) or st_out(trade)) or trade.get("kind") == "sign_and_trade"
 
 
+def market_signings(season, on, root=ROOT, exclude=None):
+    """{bbr_id: row} for the new contracts clubs signed in the season's summer market on or before `on` (its record's
+    club rows, dated by the latest contract-making event), for the newly-signed trade restriction; `exclude` leaves one
+    club's rows out (Miami's desk reads its own sheet). Existing contracts and exercised options carry no restriction."""
+    from .free_agency_2004 import record_for
+    root = Path(root)
+    path = root / record_for(season)
+    if not path.is_file():
+        return {}
+    record = read_json(record_for(season), root)
+    # The club rows carry the contract; the events carry the dates (the latest contract-making event for the player).
+    signed_on = {}
+    for e in record.get("events", []):
+        if e.get("bbr_id") and e.get("date") and e.get("kind") in NEW_CONTRACT_EVENTS:
+            signed_on[e["bbr_id"]] = max(signed_on.get(e["bbr_id"], ""), e["date"])
+    out = {}
+    for club, rows in record["clubs"].items():
+        for r in rows:
+            day = r.get("date") or signed_on.get(r.get("bbr_id"))
+            if club != exclude and r.get("bbr_id") and day and r.get("route") not in ("existing", "option") and day <= on:
+                out[r["bbr_id"]] = dict(r, date=day, kind="rookie_signing" if r.get("route") == "rookie_scale" else "signing", to=club)
+    return out
+
+
+def in_season_signings(season, on, root=ROOT, exclude=None):
+    """{bbr_id: row} for the free agents clubs signed to rest-of-season contracts during the season, on or before `on`
+    (`league_moves.json`): contracts signed as a free agent, so the newly-signed restriction binds them as it binds a
+    summer signing (cbafaq05 Q88). Read from IN_SEASON_SIGNED_FROM only; the latest signing counts."""
+    from .league_moves import read as read_moves
+    out = {}
+    for m in sorted(read_moves(season, root)["entries"], key=lambda m: m["date"]):
+        if m.get("kind") == "rest_of_season" and m.get("bbr_id") and m["date"] <= on and m.get("to") != exclude:
+            out[m["bbr_id"]] = {"player": m.get("player"), "bbr_id": m["bbr_id"], "date": m["date"], "kind": "signing",
+                                "to": m.get("to"), "route": "rest_of_season"}
+    return out
+
+
+def signing_block(row, on, season, cba):
+    """Why a player a club signed in the league year cannot be traded on `on`, or None (cbafaq05 Q88; the rules file's
+    `trades`): a signed first-round pick for the restriction's days after signing; a free agent for three months or
+    until December 15, whichever is later. `row` is his signing ({date, kind}); an undated summer signing counts from
+    the undated-exit day. Miami's desk (`TradeDesk.partner_blocked`) and the league's (`league_trades`) share it."""
+    signed = row and (row.get("date") or UNDATED_EXIT)
+    if signed and signed >= f"{season[:4]}-07-01":
+        if row.get("kind") == "rookie_signing":
+            days = cba["trades"]["signed_first_round_pick_restriction_days"]["days"]
+            until = (date.fromisoformat(signed) + timedelta(days=days)).isoformat()
+            return f"signed first-round pick on {signed}: not tradable until {until}" if on < until else None
+        until = max(months_after(signed, 3), f"{season[:4]}-12-15")
+        if on < until:
+            return f"newly signed on {signed}: not tradable until {until}"
+    return None
+
+
 class TradeDesk:
     """Legality and acceptance of a proposal between Miami and one real club on a date."""
 
@@ -556,30 +642,15 @@ class TradeDesk:
                              and r["to"] != MIAMI and (r["date"] or UNDATED_EXIT) <= on}
         else:
             self.signings = self._market_signings(on)
+            if on >= IN_SEASON_SIGNED_FROM:
+                self.signings.update(in_season_signings(self.season, on, self.root, MIAMI))
         picks = self.assets.team / "Finances/draft_picks.json"
         self.picks = read_json(picks, root) if (self.root / picks).exists() else {"picks": []}
         self.needing_consultation = []
 
     def _market_signings(self, on):
-        """New contracts other clubs signed in the season's summer market (its record's dated rows), for the
-        newly-signed trade restriction. Existing contracts and exercised options carry no restriction."""
-        from .free_agency_2004 import record_for
-        path = self.root / record_for(self.season)
-        if not path.is_file():
-            return {}
-        record = read_json(record_for(self.season), self.root)
-        # The club rows carry the contract; the events carry the dates (the latest contract-making event for the player).
-        signed_on = {}
-        for e in record.get("events", []):
-            if e.get("bbr_id") and e.get("date") and e.get("kind") in NEW_CONTRACT_EVENTS:
-                signed_on[e["bbr_id"]] = max(signed_on.get(e["bbr_id"], ""), e["date"])
-        out = {}
-        for club, rows in record["clubs"].items():
-            for r in rows:
-                day = r.get("date") or signed_on.get(r.get("bbr_id"))
-                if club != MIAMI and r.get("bbr_id") and day and r.get("route") not in ("existing", "option") and day <= on:
-                    out[r["bbr_id"]] = dict(r, date=day, kind="rookie_signing" if r.get("route") == "rookie_scale" else "signing", to=club)
-        return out
+        """New contracts other clubs signed in the season's summer market (`market_signings`)."""
+        return market_signings(self.season, on, self.root, exclude=MIAMI)
 
     def _moratorium(self):
         """(first, last) day of the season's July moratorium and the first signing day."""
@@ -664,17 +735,7 @@ class TradeDesk:
         return None
 
     def partner_blocked(self, club, player):
-        row = self.signings.get(player.get("bbr_id"))
-        signed = row and (row.get("date") or UNDATED_EXIT)      # an undated summer signing counts from the undated-exit day
-        if signed and signed >= f"{self.season[:4]}-07-01":
-            if row.get("kind") == "rookie_signing":
-                days = self.cba["trades"]["signed_first_round_pick_restriction_days"]["days"]
-                until = (date.fromisoformat(signed) + timedelta(days=days)).isoformat()
-                return f"signed first-round pick on {signed}: not tradable until {until}" if self.on < until else None
-            until = max(months_after(signed, 3), self._december_15())
-            if self.on < until:
-                return f"newly signed on {signed}: not tradable until {until}"
-        return None
+        return signing_block(self.signings.get(player.get("bbr_id")), self.on, self.season, self.cba)
 
     def matching_salary(self, player, outgoing_from_miami):
         """Salary for matching. Base-year compensation is read from the flag the signing attached
@@ -1034,9 +1095,72 @@ class TradeDesk:
                       f"(SIGN_AND_TRADE_RIGHTS_SHARE; it would otherwise lose him for nothing).")
         if st_out(trade):
             basis += " The partner receives Miami's re-signed player at his full value; his consent is a separate draw."
-        return {"event_id": f"trade-{self.trade_id(trade)}", "date": self.on, "question": question,
-                "decider": f"{trade['partner']} (real club, drawn by rule)", "options": {"accept": p, "decline": round(1 - p, 3)},
-                "basis": basis}, v
+        packet = {"event_id": f"trade-{self.trade_id(trade)}", "date": self.on, "question": question,
+                  "decider": f"{trade['partner']} (real club, drawn by rule)", "options": {"accept": p, "decline": round(1 - p, 3)},
+                  "basis": basis}
+        rows = self.consent_rows(trade)
+        if rows:
+            # Miami's trade flow draws one packet a proposal, so each holder's consent is folded into it: asked only
+            # once the clubs agree (`consent_options`), and a refusal voids the trade.
+            packet.update(options=consent_options(p, rows), question=question + consent_question(rows),
+                          decider=f"{trade['partner']} (real club, drawn by rule); {', '.join(r['player'] for r in rows)} (consent, simulated player)",
+                          basis=basis + consent_basis(rows))
+            v = dict(v, club_accept=p, consent=rows)
+        return packet, v
+
+    # -- trade consent (from CONSENT_FROM) ------------------------------------------------------
+    def consent_book(self):
+        """The date's ConsentBook, or None before CONSENT_FROM (every earlier trade replays unchanged)."""
+        if not hasattr(self, "_consent_book"):
+            self._consent_book = ConsentBook(self.on, self.root) if self.on >= CONSENT_FROM else None
+        return self._consent_book
+
+    def _rosters_after(self, trade):
+        """(Miami's playable register, the partner's contracts) as bbr_id lists before and after the trade."""
+        from .camp import playable
+        club = trade["partner"]
+        miami = [b for r in self.fo.roster["players"] if playable(r["status"])
+                 for b in [r.get("bbr_id") or (WADE_BBR if r["name"] == PROTAGONIST else None)] if b]
+        partner = [p["bbr_id"] for p in self.assets.contracts.get(club, {}).get("players", []) if p.get("bbr_id")]
+        out_ids = {(self.resolve(n, trade) or {}).get("bbr_id") for n in trade.get("miami_out", [])} - {None}
+        in_ids = {(self.resolve(n, trade) or {}).get("bbr_id") for n in trade.get("miami_in", [])} - {None}
+        return {MIAMI: (miami, [b for b in miami if b not in out_ids] + sorted(in_ids)),
+                club: (partner, [b for b in partner if b not in in_ids] + sorted(out_ids))}
+
+    def consent_rows(self, trade):
+        """The players this proposal moves whose consent it needs (`ConsentBook`), each with his chance
+        (`consent_chance`). A sign-and-trade player signs a new contract of three or more seasons inside the trade, so
+        never holds it; Wade is never traded. Empty before CONSENT_FROM."""
+        book = self.consent_book()
+        if book is None:
+            return []
+        club = trade["partner"]
+        skip = {st["player"] for st in (st_in(trade), st_out(trade)) if st}
+        moving = [(n, MIAMI, club) for n in trade.get("miami_out", []) if n not in skip] + \
+                 [(n, club, MIAMI) for n in trade.get("miami_in", []) if n not in skip]
+        rows, rosters = [], None
+        for name, held_by, to in moving:
+            entry = self.resolve(name, trade) or {}
+            status = book.status(entry.get("bbr_id"), held_by, name)
+            if not status["holds"]:
+                continue
+            rosters = rosters or self._rosters_after(trade)
+            p, detail = consent_chance(self.assets, status, dict(entry, player=name), held_by, to,
+                                       rosters[held_by][0], rosters[to][1], self.root)
+            rows.append(dict(detail, player=name, bbr_id=entry.get("bbr_id"), held_by=held_by, to=to,
+                             rights=status["rights"], seasons=status["seasons"], status_basis=status["basis"], p=p))
+        return rows
+
+    def needs_consent(self, trade):
+        """Whether the proposal moves a player whose consent it needs (no chance computed)."""
+        book = self.consent_book()
+        if book is None:
+            return False
+        club = trade["partner"]
+        skip = {st["player"] for st in (st_in(trade), st_out(trade)) if st}
+        return any(book.status((self.resolve(n, trade) or {}).get("bbr_id"), held, n)["holds"]
+                   for names, held in ((trade.get("miami_out", []), MIAMI), (trade.get("miami_in", []), club))
+                   for n in names if n not in skip)
 
     # -- Miami's search ----------------------------------------------------------------------
     def _combos(self, most=2):
@@ -1129,8 +1253,13 @@ class TradeDesk:
         numbers["scored_gain"] = round(self.scored_gain(v, outs, ins, club, wanted=set(ins), standing=standing), 3)
         if not self.within_budget(outs, ins, club):
             return False, "it would take a later season over the owner's payroll ceiling", numbers
-        if packet["options"]["accept"] < SEARCH_MIN_ACCEPT:
-            return False, f"{club} would accept only {packet['options']['accept']:.0%} of the time (the front office asks at {SEARCH_MIN_ACCEPT:.0%})", numbers
+        if v.get("club_accept", packet["options"]["accept"]) < SEARCH_MIN_ACCEPT:
+            return False, (f"{club} would accept only {v.get('club_accept', packet['options']['accept']):.0%} of the time "
+                           f"(the front office asks at {SEARCH_MIN_ACCEPT:.0%})"), numbers
+        if not plausible(packet, v):
+            r = min(v["consent"], key=lambda r: r["p"])
+            return False, (f"{r['player']} would consent only {r['p']:.0%} of the time (one-year contract with "
+                           f"{r['rights'].replace('_', ' ')} rights at its end, cbafaq05 Q83; the front office asks at {SEARCH_MIN_ACCEPT:.0%})"), numbers
         if numbers["scored_gain"] < min_gain:
             return False, (f"Miami's gain on its own objective is {v['miami_gain']:+.3f}, {numbers['flexibility_caps']:+.2f} caps of later room, "
                            f"{numbers['scored_gain']:+.3f} with Wade's request weighed: below {min_gain:+.2f}"), numbers
@@ -1215,8 +1344,8 @@ class TradeDesk:
                         if package_key(trade) in exclude:
                             break
                         packet, v = self.acceptance_packet(trade)
-                        if packet is None or packet["options"]["accept"] < SEARCH_MIN_ACCEPT:
-                            continue           # only deals the partner would plausibly take; the next try adds the pick
+                        if packet is None or not plausible(packet, v):
+                            continue           # only deals the partner (and a consent holder) would plausibly take; the next try adds the pick
                         gain = self.scored_gain(v, outs, ins, club, wanted, opposed, standing)
                         if gain >= min_gain:
                             row = {"trade": trade, "miami_gain": round(gain, 3), "partner_gain": v["objective_gain"],
@@ -1245,7 +1374,10 @@ class TradeDesk:
         the other side might take). Miami's front office accepts an offer only when it would make the
         deal itself: inside the payroll ceiling, Wade's requests weighed by his standing, a scored gain of `min_gain`;
         a star the franchise consultation covers is never taken without Wade (the offer is declined). Both answers are
-        rules, not chance. Returns [{"trade", "partner_gain", "miami_gain", "accepted", "reason"}], best for Miami first."""
+        rules, not chance. An offer is completed the day it is made, with no draw, so from CONSENT_FROM no offered package
+        moves a player whose consent the trade needs (`needs_consent`): such a package reaches Miami only as Miami's own
+        proposal, whose packet draws his answer with the club's. Returns [{"trade", "partner_gain", "miami_gain",
+        "accepted", "reason"}], best for Miami first."""
         from itertools import combinations
         from .camp import playable
         from .consultations import consultation_required
@@ -1275,6 +1407,8 @@ class TradeDesk:
                     trade = {"partner": club, "miami_out": outs, "miami_in": ins, "picks_out": [], "picks_in": []}
                     if package_key(trade) in exclude or not self._prefilter(club, outs, ins, sal_out, sal_in, room, active):
                         continue
+                    if self.needs_consent(trade):
+                        continue                       # completed the day it is made, with no draw: no consent holder (CONSENT_FROM)
                     v = self.valuation(trade)
                     if v["untouchable"] or v["objective_gain"] < OFFER_MIN_GAIN or v["miami_gain"] < 0:
                         continue                       # a club offers what Miami might take: not a loss on Miami's own view
@@ -1419,3 +1553,499 @@ class TradeDesk:
             if best is None or len(errors) < len(best):
                 best = errors
         return False, (best[0] if best else "no outgoing package")
+
+
+# -- trade consent (2005 agreement) ------------------------------------------------------------
+# cbafaq05 Q83 and Q88: a player playing under a one-year contract (excluding any option year) who will have Larry Bird
+# or Early Bird rights at its end cannot be traded without his consent; if he consents and is traded he loses those
+# rights and enters free agency as a Non-Bird free agent. Q26: Bird rights take three seasons with the club, Early Bird
+# two, without being waived or changing teams as a free agent; a trade passes the clock to the new club; signing with
+# another club, a waiver claim and an expansion draft reset it; a partial season counts in full; ten-day contracts do not
+# count. The rule reads from `trade_consent_one_year_contract` in the 2005 rules file and applies to trades decided on or
+# after CONSENT_FROM only.
+def _read_records(path):
+    return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else None
+
+
+def season_end(season):
+    """The last day of a league year (June 30): a season's records are read to its end."""
+    return f"{int(season[:4]) + 1}-06-30"
+
+
+class ConsentBook:
+    """Who holds the one-year-contract trade consent on a date, read only from the repository's records: the season's
+    contract (Miami's cap sheet for a Miami player, else the league contract ledger), the summer market's events that
+    made each contract, the league's dated in-season moves and Miami's holdings. An unknown history gives no consent
+    right; it is never guessed."""
+
+    def __init__(self, on, root=ROOT):
+        from .seasons import season_of_date
+        self.on, self.root = on, Path(root)
+        self.season = season_of_date(on)
+        clock = read_json(CBA_2005_PATH, root)[CONSENT_RULE]["value"]["bird_clock"]
+        self.bird_seasons, self.early_bird_seasons = clock["larry_bird_seasons"], clock["early_bird_seasons"]
+        self._cache, self._ledgers, self._markets, self._moves, self._sheets = {}, {}, {}, {}, {}
+        self._lost = None
+
+    # ---- the records, read once
+    def ledger(self, season):
+        if season not in self._ledgers:
+            from .league_contracts import read as read_ledger
+            self._ledgers[season] = read_ledger(season, self.root)
+        return self._ledgers[season]
+
+    def market(self, season):
+        """({bbr_id: [events, oldest first]}, {bbr_id: rights club in the unsigned pool}, recorded) for the summer market
+        that opened the season."""
+        if season not in self._markets:
+            from .free_agency_2004 import record_for
+            data = _read_records(self.root / record_for(season))
+            events, pool = {}, {}
+            for e in (data or {}).get("events", []):
+                if e.get("bbr_id"):
+                    events.setdefault(e["bbr_id"], []).append(e)
+            for u in (data or {}).get("unsigned_pool", []):
+                if u.get("bbr_id"):
+                    pool[u["bbr_id"]] = u.get("rights")
+            self._markets[season] = (events, pool, data is not None)
+        return self._markets[season]
+
+    def moves(self, season, b, until):
+        """The league's dated in-season moves of the player in the season, on or before `until`, oldest first."""
+        if season not in self._moves:
+            from .league_moves import read as read_moves
+            by = {}
+            for e in read_moves(season, self.root)["entries"]:
+                if e.get("bbr_id"):
+                    by.setdefault(e["bbr_id"], []).append(e)
+            self._moves[season] = by
+        return sorted((e for e in self._moves[season].get(b, []) if e["date"] <= until), key=lambda e: e["date"])
+
+    def sheet(self, season):
+        """{bbr_id: Miami cap-sheet row} for the season (the register's id where the row has none)."""
+        if season not in self._sheets:
+            team = self.root / f"career/Dwyane_Wade/{season}/00_Team"
+            sheet = _read_records(team / "Finances/contract_schedules.json") or {"players": []}
+            roster = _read_records(team / "Team/Roster/roster.json") or {"players": []}
+            ids = {p["name"]: p.get("bbr_id") for p in roster["players"]}
+            self._sheets[season] = {b: p for p in sheet["players"] for b in [p.get("bbr_id") or ids.get(p["player"])] if b}
+        return self._sheets[season]
+
+    def drafted(self, season):
+        """{bbr_id: club} drafted in the summer that opened the season: the year's draft record
+        (`draft.year_context` RECORD, `<closed season>/09_Draft/draft_<year>.json`), empty when none was held."""
+        if not hasattr(self, "_drafted"):
+            self._drafted = {}
+        if season not in self._drafted:
+            from .seasons import previous_season
+            record = _read_records(self.root / f"career/Dwyane_Wade/{previous_season(season)}/09_Draft/draft_{season[:4]}.json")
+            self._drafted[season] = {p["bbr_id"]: p["club"] for p in (record or {}).get("picks", []) if p.get("bbr_id")}
+        return self._drafted[season]
+
+    def miami_holds(self, season, day):
+        from .rotations import miami_holds
+        return miami_holds(season, day, self.root)
+
+    def rights_club(self, season, bbr):
+        """The club his free-agent rights stayed with after the season's summer market, for a player the market left
+        unsigned (its unsigned pool), or None: the pool's rights club, else the club that renounced him that summer
+        (cbafaq05 Q34: a renounced player who re-signs with his prior club is a Bird free agent again at that contract's
+        end, so the renouncement does not end his tenure). A player who signed anywhere that summer has none here: he
+        changed teams, or re-signed, by that signing (`summer_link`)."""
+        events, pool, _ = self.market(season)
+        if bbr not in pool:
+            return None
+        if pool[bbr]:
+            return pool[bbr]
+        renounced = [e for e in events.get(bbr, []) if e["kind"] == "renounce" and e.get("club")]
+        return renounced[-1]["club"] if renounced else None
+
+    def in_season_link(self, bbr, season, moves):
+        """(link, basis) from his last in-season join of the season (`moves`: his IN_SEASON_MOVES, oldest first). A
+        rest-of-season signing by the club that kept his rights after the summer market (`rights_club`), with no join
+        with another club before it in the season, is a re-signing: his tenure continues (cbafaq05 Q26: the clock resets
+        only when he changes teams by signing as a free agent; Q34), the same reading a Miami camp signing from rights
+        Miami kept gets (`summer_link`). Any other rest-of-season signing or a waiver claim starts a clock; a ten-day
+        contract, a waiver, a release or an expiry leaves a season that does not count."""
+        m = moves[-1]
+        how = f"{m['kind'].replace('_', ' ')} on {m['date']}" + (f" with {m['to']}" if m.get("to") else "")
+        if m["kind"] == "rest_of_season":
+            prior = self.rights_club(season, bbr)
+            if prior and m.get("to") == prior and all(x.get("to") in (None, prior) for x in moves):
+                return "continues", (f"{how}: re-signed by the club that kept his rights after the {season[:4]} market, "
+                                     "so his tenure continues (cbafaq05 Q26, Q34)")
+        return IN_SEASON_MOVES[m["kind"]], how
+
+    # ---- the answer
+    def status(self, bbr, club, name=None):
+        """{"holds", "rights", "seasons", "contract", "basis", "rule"} for the player on the book's date, held by `club`."""
+        key = (bbr, club)
+        if key not in self._cache:
+            self._cache[key] = self._status(bbr, club, name)
+        return self._cache[key]
+
+    def _status(self, bbr, club, name):
+        def no(why, **kw):
+            return dict({"holds": False, "rights": None, "seasons": None, "contract": None, "basis": why, "rule": CONSENT_RULE}, **kw)
+        if name == PROTAGONIST or bbr in (WADE_BBR, "dwyane_wade"):
+            return no("Wade is never traded (his trade would change the simulated club)")
+        if not bbr:
+            return no("no player id: no contract record to read")
+        contract, why = self.contract(bbr, club)
+        if contract is None:
+            return no(why)
+        later = [s for s, v in sorted(contract["schedule"].items()) if v and s >= self.season and s not in contract["options"]]
+        if not contract["this_year"] or later != [self.season]:
+            seasons = ", ".join(later) or "none"
+            return no(f"not a one-year contract ({contract['source']}; signed {contract['signed'] or 'before ' + self.season}; "
+                      f"non-option seasons from {self.season}: {seasons})", contract=contract["source"])
+        lost = self.lost().get(bbr)
+        if lost:
+            return no(f"consented to his {lost['date']} trade to {lost['club']}: a Non-Bird free agent already (cbafaq05 Q83)",
+                      contract=contract["source"])
+        count, known, notes = 1, True, []
+        link, how = self.link(bbr, self.season, self.on, club)
+        notes.append(f"{self.season}: {how}")
+        if link == "unknown":
+            return no(f"one-year contract, but his history with {club} is unknown ({how}): no consent right, never guessed",
+                      contract=contract["source"])
+        x = self.season
+        while link == "continues" and count < self.bird_seasons:
+            from .seasons import previous_season
+            x = previous_season(x)
+            link, how = self.link(bbr, x, season_end(x))
+            notes.append(f"{x}: {how}")
+            if link == "none":
+                break                           # he ended that season on a ten-day contract or off a roster: it does not count
+            count += 1
+            if link == "unknown":
+                known = False
+                break
+        rights = "larry_bird" if count >= self.bird_seasons else "early_bird" if count >= self.early_bird_seasons else None
+        if rights is None:
+            return no(f"one-year contract, one season with {club} at its end: no Bird or Early Bird rights ({'; '.join(notes)})",
+                      seasons=count, contract=contract["source"])
+        caveat = "" if known or rights == "larry_bird" else "; an earlier season could not be read from the records: Early Bird at least"
+        return {"holds": True, "rights": rights, "seasons": count, "contract": contract["source"], "rule": CONSENT_RULE,
+                "basis": (f"one-year contract ({contract['source']}) and {count} seasons with {club} and its predecessors by trade at its end: "
+                          f"{rights.replace('_', ' ')} rights, so he cannot be traded without his consent (cbafaq05 Q83, Q88, Q26); "
+                          + "; ".join(notes) + caveat)}
+
+    def lost(self):
+        if self._lost is None:
+            self._lost = lost_bird_rights(self.season, self.root, before=self.on)
+        return self._lost
+
+    def contract(self, bbr, club):
+        """({"schedule", "options", "this_year", "signed", "source"}, None) for the player's contract in the book's season,
+        or (None, why). Miami's sheet for a Miami player; otherwise the league ledger, unless an in-season move put him
+        on another contract (a waiver claim or a signing during the season), which is then a one-year contract."""
+        start = f"{self.season[:4]}-07-01"
+        if club == MIAMI:
+            p = self.sheet(self.season).get(bbr)
+            if p is None or not (p.get("schedule") or {}).get(self.season) or p.get("status") in (
+                    "released", "traded", "renounced", "voided", "waived", "signed_elsewhere", "rights_released", "unsigned_draft_rights"):
+                return None, f"no Miami contract for {self.season} on the cap sheet"
+            options = {s for s, k in (p.get("amount_kind") or {}).items() if k in ("team_option", "player_option", "early_termination_option")}
+            signed = p.get("signed_date")
+            if not signed:
+                return None, "Miami's cap sheet records no signing date: no consent right, never guessed"
+            if signed > self.on:
+                return None, f"Miami's contract is dated {signed}, after {self.on}"
+            this_year = signed >= start and p.get("route") not in CARRIED_ROUTES
+            return {"schedule": p["schedule"], "options": options, "this_year": this_year, "signed": signed,
+                    "source": f"Miami contract signed {signed}, route {p.get('route')}"}, None
+        joins = [m for m in self.moves(self.season, bbr, self.on) if m["kind"] in IN_SEASON_MOVES]
+        if joins and IN_SEASON_MOVES[joins[-1]["kind"]] == "starts":
+            m = joins[-1]
+            return {"schedule": {self.season: 1}, "options": set(), "this_year": True, "signed": m["date"],
+                    "source": f"{m['kind'].replace('_', ' ')} with {m.get('to')} on {m['date']}"}, None
+        if joins:
+            return None, f"{joins[-1]['kind'].replace('_', ' ')} on {joins[-1]['date']}: not on a season contract"
+        c = (self.ledger(self.season) or {}).get(bbr)
+        if c is None:
+            return None, f"no {self.season} contract on the league ledger"
+        options = set((c.get("options") or {}).keys())
+        if c.get("team_option"):
+            options.add(c["team_option"])
+        return {"schedule": c["schedule"], "options": options, "this_year": c.get("kind") == "new", "signed": None,
+                "source": f"league ledger {self.season}: {c.get('kind')}, route {c.get('route')}"}, None
+
+    def link(self, bbr, season, until, club=None):
+        """How his tenure with the club holding him at `until` stands in `season`: "continues" (it began before the
+        season, so the season before counts too: a re-signing by the club holding his rights, in the summer or during
+        the season), "starts" (it began in the season: a signing with a new club, a waiver claim, an expansion-draft
+        selection or his first scale contract), "none" (the season does not count: a ten-day contract or no club) or
+        "unknown" (the records do not say). Returns (link, basis)."""
+        moves = [m for m in self.moves(season, bbr, until) if m["kind"] in IN_SEASON_MOVES]
+        if moves:
+            return self.in_season_link(bbr, season, moves)
+        miami = (club == MIAMI) if club else bbr in self.miami_holds(season, until)
+        if miami:
+            p = self.sheet(season).get(bbr)
+            if p is None or not p.get("signed_date"):
+                return "unknown", f"no dated Miami contract for {season}"
+            if p["signed_date"] < f"{season[:4]}-07-01" or p.get("route") in CARRIED_ROUTES:
+                return "continues", f"Miami contract signed {p['signed_date']}, carried into {season}"
+            return self.summer_link(bbr, season, MIAMI, f"Miami contract signed {p['signed_date']}")
+        c = (self.ledger(season) or {}).get(bbr)
+        if c is None:
+            return "unknown", f"no {season} league ledger entry"
+        if c.get("kind") == "existing" or c.get("route") in CARRIED_ROUTES:
+            if "expansion draft" in (c.get("source") or ""):
+                return "starts", f"selected in the expansion draft ({c.get('source')}): the clock resets"
+            return "continues", f"a contract carried into {season} ({c.get('source')})"
+        if c.get("kind") == "rookie_scale":
+            return "starts", f"his first scale contract in {season}"
+        return self.summer_link(bbr, season, c.get("club"), f"league ledger {season}: new, route {c.get('route')}")
+
+    def summer_link(self, bbr, season, club, label):
+        """The summer market event that made a contract new in the season: a re-signing by the club holding his
+        rights continues his tenure; a signing with another club starts it. A signing or camp signing by the club he
+        came from (`from`: the club holding his rights, or the one that renounced him) is a re-signing too: cbafaq05 Q26
+        resets the clock only when he changes teams by signing as a free agent, and Q34 makes a renounced player who
+        re-signs with his prior club a Bird free agent again at that contract's end. A Miami camp signing after the
+        market continues it when the market left his rights with Miami or Miami renounced him (`rights_club`)."""
+        events, pool, recorded = self.market(season)
+        made = [e for e in events.get(bbr, []) if e["kind"] in SUMMER_CONTRACT_EVENTS]
+        if not made:
+            if club == MIAMI and recorded:
+                if self.rights_club(season, bbr) == MIAMI:
+                    how = "the rights Miami kept" if pool.get(bbr) == MIAMI else "Miami's renouncement (cbafaq05 Q34)"
+                    return "continues", f"{label}: re-signed after the {season[:4]} market from {how}"
+                return "starts", f"{label}: signed as a free agent after the {season[:4]} market"
+            return "unknown", f"{label}: no contract event in the {season[:4]} market record"
+        e = made[-1]
+        drafted = self.drafted(season).get(bbr)
+        if drafted:                                     # a pick's first contract (scale, matched sheet or re-signing): it starts
+            return "starts", f"{e['kind'].replace('_', ' ')} with {e['club']} on {e['date']} (his first NBA contract: drafted in {season[:4]} by {drafted})"
+        renounced = any(x["kind"] == "renounce" and x.get("club") == e.get("from") for x in events.get(bbr, []))
+        if e["kind"] in CONTINUING_EVENTS or (e["kind"] in ("signing", "camp_signing") and e.get("from") and e.get("from") == e.get("club")):
+            return "continues", (f"{e['kind'].replace('_', ' ')} with {e['club']} on {e['date']}"
+                                 + (" (his prior club re-signs him after renouncing him: cbafaq05 Q34)" if renounced else ""))
+        why = "his first scale contract" if e["kind"] == "rookie_scale_signing" else f"from {e.get('from') or 'no club'}"
+        return "starts", f"{e['kind'].replace('_', ' ')} with {e['club']} on {e['date']} ({why})"
+
+
+def lost_bird_rights(season, root=ROOT, before=None):
+    """{bbr_id: {"club", "date", "rights", "trade", "source"}}: the players who consented to a trade in the season and so
+    lost their Larry Bird or Early Bird rights (cbafaq05 Q83), read from the trade records: Miami's completed trade records
+    (`valuation.consent` lists every holder; a completed trade is one each consented to) and the league's trade moves
+    (`consent` on the holder's move). `before` keeps trades dated before that day. The next summer market reads it
+    (`free_agency_2004.Market.lost_bird`): he is a Non-Bird free agent of the club holding him at the season's end."""
+    root = Path(root)
+    out = {}
+    folder = root / f"career/Dwyane_Wade/{season}/00_Team/Transactions/Trades"
+    for path in sorted(folder.glob("*.json")) if folder.is_dir() else []:
+        if path.name.endswith((".decision.json", ".result.json")):
+            continue
+        r = json.loads(path.read_text(encoding="utf-8"))
+        day = r.get("applied") or r.get("date")
+        if r.get("status") != "completed" or (before and day >= before):
+            continue
+        for c in (r.get("valuation") or {}).get("consent") or []:
+            out[c["bbr_id"]] = {"club": c["to"], "date": day, "rights": c["rights"], "trade": r["trade_id"],
+                                "source": path.relative_to(root).as_posix()}
+    from .league_moves import ledger_path as moves_path, read as read_moves
+    for e in read_moves(season, root)["entries"]:
+        c = e.get("consent")
+        if e.get("kind") == "trade" and c and c.get("answer") == "consented" and (before is None or e["date"] < before):
+            out[e["bbr_id"]] = {"club": e["to"], "date": e["date"], "rights": c["rights_lost"], "trade": e.get("deal"),
+                                "source": moves_path(season).as_posix()}
+    return out
+
+
+# ---- the player's answer
+_REGISTRY = {}
+
+
+def _registry_positions(root):
+    key = str(Path(root).resolve())
+    if key not in _REGISTRY:
+        data = _read_records(Path(root) / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json") or {"players": []}
+        _REGISTRY[key] = {p["bbr_id"]: p.get("position") for p in data["players"] if p.get("bbr_id")}
+    return _REGISTRY[key]
+
+
+def _group(assets, bbr, root):
+    """His position group (G, F, C) as the summer market reads it: the registry's listed position, else the dated roster's."""
+    from .free_agency_2004 import GROUP
+    pos = _registry_positions(root).get(bbr) or assets.positions.get(bbr, (None, None, 9))[1] or "F"
+    return GROUP.get(pos, GROUP.get(pos.split("-")[0], "F"))
+
+
+def role_minutes(assets, bbr, roster, root=ROOT):
+    """Minutes a player can expect at a club: his rank by production value on the date (`Assets.form_value`) among the
+    roster's players in his position group, on the summer market's ladder (`free_agency_2004.ROLE_LADDER`)."""
+    from .free_agency_2004 import ROLE_LADDER
+    g = _group(assets, bbr, root)
+    mine = assets.form_value(bbr) or 0.0
+    rank = sum(1 for x in roster if x != bbr and _group(assets, x, root) == g and (assets.form_value(x) or 0.0) > mine)
+    ladder = ROLE_LADDER[g]
+    return ladder[min(rank, len(ladder) - 1)]
+
+
+def club_wins(assets, club):
+    """A club's strength on the date in 82-game wins: last season's winning share counted as FORM_PRIOR_GAMES games,
+    blended with this season's closed games (as `Assets.form_value` blends production); a club without a record is .500."""
+    if not hasattr(assets, "_consent_tables"):
+        from .seasons import club_aliases
+        from .standings import standings_on
+        aliases = club_aliases(assets.season)
+        prior = {aliases.get(c, c): r for c, r in (assets.standings or {}).items() if isinstance(r, dict)}
+        assets._consent_tables = (prior, standings_on(assets.on, assets.root, assets.season))
+    prior, current = assets._consent_tables
+    row = prior.get(club) or {}
+    games = (row.get("wins") or 0) + (row.get("losses") or 0)
+    share = row.get("pct") if row.get("pct") is not None else ((row.get("wins") or 0) / games if games else 0.5)
+    now = current.get(club) or {}
+    played = now.get("wins", 0) + now.get("losses", 0)
+    return round(82 * (share * FORM_PRIOR_GAMES + now.get("wins", 0)) / (FORM_PRIOR_GAMES + played), 1)
+
+
+def minutes_per_game(assets, bbr):
+    """His minutes a game: this season's closed games, else last season's evidence, else None (the model's default)."""
+    assets.form_value(bbr)                               # builds this season's closed totals from FORM_FROM
+    t = (getattr(assets, "_season_totals", None) or {}).get(bbr)
+    if t and t.get("games"):
+        return round(t["minutes"] / t["games"], 1)
+    record = assets.valuation.stats.get(bbr)
+    if record and record["totals"].get("games"):
+        return round(record["totals"]["minutes"] / record["totals"]["games"], 1)
+    return None
+
+
+def non_bird_reach(assets, bbr, salary):
+    """(amount, basis): the most his club may pay him next summer holding only Non-Bird rights, the greatest of 120% of
+    his salary, 120% of his minimum and, when he will be a restricted free agent, the amount needed to tender his
+    qualifying offer (cbafaq05 Q19; the rules file's `exception_limits.non_bird`), as the summer market's
+    `Market.non_bird_limit` pays it. His service then is his recorded service plus this season (the market's identity
+    counts the closed season); restricted status and the offer follow the market's own rules (`free_agency_2004.rfa_eligible`,
+    `qualifying_amount`: 125% of his salary or his minimum plus $175,000), on this season's minimum scale, the latest
+    known on the date."""
+    from . import free_agency_2004 as fa
+    v = assets.valuation
+    service = (v.service.get(bbr) or 0) + 1
+    floor = v.minimum(service)
+    parts = {"120% of his salary": NON_BIRD_SHARE * salary, "120% of his minimum": NON_BIRD_SHARE * floor}
+    if fa.rfa_eligible(bbr, {bbr: {"service": service}}, ()):
+        cal = {"minimum": {n: v.minimum(n) for n in range(11)}}
+        parts["his qualifying offer (a restricted free agent)"] = fa.qualifying_amount(salary, service, cal)
+    name = max(parts, key=parts.get)
+    return parts[name], name
+
+
+def bird_rights_cost(assets, bbr, salary, rights, weights):
+    """(utility points, basis): what consenting costs him. His next contract is priced at the comparables price
+    (`Valuation.price`); with his rights his club may pay up to the Larry Bird ceiling (his maximum) or the Early Bird one
+    (the greater of 175% of his salary and the average salary, which the 2005 agreement sets as the mid-level), without
+    them only up to the Non-Bird one (`non_bird_reach`; cbafaq05 Q19). The money factor's own scale
+    (`player_utility.MONEY_SPAN` points per unit of log salary) at his money weight, times BIRD_RIGHTS_SHARE."""
+    from .player_utility import MONEY_SPAN
+    v = assets.valuation
+    service = v.service.get(bbr)
+    floor = v.minimum(service)
+    price = v.price(bbr, service, salary or None) or floor
+    without, limit = non_bird_reach(assets, bbr, salary)
+    keep = v.maximum(service, salary or None) if rights == "larry_bird" else max(EARLY_BIRD_SHARE * salary, v.mid_level)
+    reach_with, reach_without = min(price, keep), min(price, without)
+    loss = math.log(reach_with / reach_without) if reach_with > reach_without > 0 else 0.0
+    cost = weights["money"] * MONEY_SPAN * loss * BIRD_RIGHTS_SHARE
+    return round(cost, 2), (f"next contract priced ${int(price):,}: with {rights.replace('_', ' ')} rights his club may pay ${int(reach_with):,}, "
+                            f"as a Non-Bird free agent ${int(reach_without):,} ({limit}); {weights['money']:.3f} x {MONEY_SPAN} x {loss:.3f} x "
+                            f"BIRD_RIGHTS_SHARE {BIRD_RIGHTS_SHARE} = {cost:.2f} points")
+
+
+def consent_chance(assets, status, player, stay, new, stay_roster, new_roster, root=ROOT):
+    """(P(consent), detail) for a holder asked to accept a trade from `stay` to `new`.
+
+    The free agents' factor model (`runtime/player_utility.py`) on the rest of this season: the same contract either way
+    (money and security cancel), his role (`role_minutes` on each roster, the new one after the trade), the club's
+    strength (`club_wins`), net income and market by club, and loyalty to the club he plays for; stage weights by his age
+    with no drawn trait (none is drawn for a contracted player). The utility gap, less the Bird rights he gives up
+    (`bird_rights_cost`), goes through the model's logistic scale (`player_utility.SCALE`) around CONSENT_CENTER, inside
+    CONSENT_LIMITS."""
+    from . import player_utility as pu
+    bbr = player["bbr_id"]
+    salary = int((player.get("schedule") or {}).get(assets.season) or 0)
+    age = assets.valuation.age(bbr)
+    weights = pu.weights(age, None)
+    profile = {"ask": max(salary, 1), "years_wanted": 1, "prior_minutes": minutes_per_game(assets, bbr), "prior_club": stay}
+    terms = {"guaranteed": max(salary, 1), "years": 1}
+    situations = {club: {"club": club, "role_minutes": role_minutes(assets, bbr, roster, root), "strength": club_wins(assets, club)}
+                  for club, roster in ((stay, stay_roster), (new, new_roster))}
+    stay_u = pu.utility(pu.scores(terms, situations[stay], profile), weights)
+    new_u = pu.utility(pu.scores(terms, situations[new], profile), weights)
+    cost, cost_basis = bird_rights_cost(assets, bbr, salary, status["rights"], weights)
+    gap = round(new_u - stay_u - cost, 2)
+    p = 1 / (1 + math.exp(-(gap - CONSENT_CENTER) / pu.SCALE))
+    p = round(min(CONSENT_LIMITS[1], max(CONSENT_LIMITS[0], p)), 3)
+    detail = {"stay": dict(situations[stay], utility=stay_u), "move": dict(situations[new], utility=new_u),
+              "rights_cost": cost, "gap": gap, "age": age,
+              "basis": (f"{player.get('player', bbr)}: {status['basis']}. At {new} about {situations[new]['role_minutes']} minutes and "
+                        f"{situations[new]['strength']} wins (utility {new_u}) against {stay} about {situations[stay]['role_minutes']} "
+                        f"minutes and {situations[stay]['strength']} wins (utility {stay_u}); consenting costs him his "
+                        f"{status['rights'].replace('_', ' ')} rights ({cost_basis}); gap {gap:+.2f}, P(consent) = logistic((gap - "
+                        f"{CONSENT_CENTER}) / {pu.SCALE}) inside {CONSENT_LIMITS} = {p} (runtime/trades.py consent_chance; "
+                        f"{pu.MODEL} factors, stage weights)")}
+    return p, detail
+
+
+def consent_options(club_p, rows):
+    """A trade packet's options with each holder's consent folded in: `accept` (the clubs agree and every holder consents),
+    `decline` (a club declines: no holder is asked) and, for each holder in turn, REFUSED + his id (the clubs agreed and the
+    earlier holders consented). Computed in millionths so the options sum to one exactly."""
+    units = 1_000_000
+    agree = int(round(club_p * units))
+    remaining, out = agree, {}
+    for r in rows:
+        refuse = int(round(remaining * (1 - r["p"])))
+        out[REFUSED + r["bbr_id"]] = refuse
+        remaining -= refuse
+    out = dict({"accept": remaining, "decline": units - agree}, **out)
+    return {k: n / units for k, n in out.items()}
+
+
+def consent_question(rows):
+    return " " + " ".join(f"{r['player']} must consent: a one-year contract with {r['rights'].replace('_', ' ')} rights at its end (cbafaq05 Q83)."
+                          for r in rows)
+
+
+def consent_basis(rows):
+    return (" Trade consent (2005 agreement; nba_2005_cba_rules.json trade_consent_one_year_contract; cbafaq05 Q83, Q88, Q26): "
+            "each holder is asked only once the clubs agree, and a refusal voids the trade; consenting, he loses those rights and "
+            "is a Non-Bird free agent of his new club. " + " ".join(f"{r['basis']}." for r in rows))
+
+
+def refused_by(outcome):
+    """The bbr_id of the holder whose refusal a drawn outcome names, else None."""
+    return outcome[len(REFUSED):] if isinstance(outcome, str) and outcome.startswith(REFUSED) else None
+
+
+def plausible(packet, v):
+    """Whether every side that answers a proposal would plausibly say yes: the partner club's own chance and each consent
+    holder's at SEARCH_MIN_ACCEPT (before CONSENT_FROM the packet's acceptance alone, as always)."""
+    return (v.get("club_accept", packet["options"]["accept"]) >= SEARCH_MIN_ACCEPT
+            and all(r["p"] >= SEARCH_MIN_ACCEPT for r in v.get("consent", ())))
+
+
+def consent_report(record):
+    """One line on a Miami trade record's consent answer for the driver's output, or None when no consent was asked. A
+    holder loses his rights only by a completed trade (`lost_bird_rights` reads completed records only): an accepted
+    trade the day's legality check voids reports that no rights were lost."""
+    rows = (record.get("valuation") or {}).get("consent") or []
+    if not rows:
+        return None
+    outcome = (record.get("answer") or {}).get("outcome")
+    who = refused_by(outcome)
+    if who:
+        r = next((r for r in rows if r["bbr_id"] == who), {"player": who, "rights": "bird"})
+        return (f"{r['player']} refuses his consent (one-year contract with {r['rights'].replace('_', ' ')} rights at its end; "
+                f"cbafaq05 Q83): the trade does not go through")
+    if outcome == "accept" and record.get("status") != "completed":
+        return (f"{', '.join(r['player'] for r in rows)} consented, but the trade was not completed "
+                f"({record.get('status')}): no rights were lost")
+    if outcome == "accept":
+        return "; ".join(f"{r['player']} consents and loses his {r['rights'].replace('_', ' ')} rights (a Non-Bird free agent of {r['to']}; cbafaq05 Q83)"
+                         for r in rows)
+    return None

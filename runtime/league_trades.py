@@ -11,6 +11,18 @@ searched for deals of up to three rotation players for up to two (MAX_PLAYERS) t
 At most MAX_PER_WEEK deals a week are put to the engine, one decision packet per deal (accept with the
 product of the two chances); a drawn acceptance is written to `league_moves.json`. Same evidence for every
 club, no hindsight: values read only 2002-03 production and dated contracts.
+
+Trade consent (2005 agreement, deals decided from `trades.CONSENT_FROM`, 2005-12-01; cbafaq05 Q83): a player under a
+one-year contract whose club will hold his Larry Bird or Early Bird rights at its end (`trades.ConsentBook`) cannot be
+traded without his consent. The rule is Miami's: a deal is proposed only when each holder would plausibly consent
+(`trades.consent_chance` at SEARCH_MIN_ACCEPT, as each club's own chance), and his answer is folded into the deal's one
+packet (`trades.consent_options`: asked only once both clubs agree; a refusal, REFUSED + his id, voids the deal and
+nothing moves). The proposal carries the holders (`consent`); an executed deal marks each holder's move with his
+consent and the rights he lost (`consent.rights_lost`), which the next summer market reads (`trades.lost_bird_rights`).
+From the same date (NEWLY_SIGNED_FROM) a deal never moves a player signed in the league year before he may be traded
+(cbafaq05 Q88: three months or December 15, whichever is later, after signing as a free agent in the summer market or
+to a rest-of-season contract; 30 days for a signed first-round pick), the rule Miami's desk applies to a partner's
+player (`trades.signing_block`).
 """
 from datetime import date, timedelta
 import json
@@ -18,8 +30,9 @@ from pathlib import Path
 
 from .league_book import LeagueBook, active
 from .league_moves import effective_roster, ledger_path, read as read_moves
-from .trades import (ACCEPT_FLOOR, MIAMI, SEARCH_MIN_ACCEPT, STANCE_WEIGHTS, UNDER_CONTRACT, UNTOUCHABLE_MARGIN,
-                     Assets, acceptance)
+from .trades import (ACCEPT_FLOOR, CBA_PATH, CONSENT_FROM, MIAMI, SEARCH_MIN_ACCEPT, STANCE_WEIGHTS, UNDER_CONTRACT,
+                     UNTOUCHABLE_MARGIN, Assets, ConsentBook, acceptance, consent_basis, consent_chance, consent_options,
+                     consent_question, in_season_signings, market_signings, read_json, signing_block)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -39,6 +52,8 @@ MAX_PLAYERS = 5                     # up to three for two (the user's request, O
 MATCH_PERCENT, MATCH_PLUS = 1.15, 100000
 MIN_MUTUAL_GAIN = 0.06              # a club changes its roster only for a clear gain on its own objective (calibrated)
 STATUS_QUO = 1.15                   # judgement: a club values the player it has this much more than an equal arrival
+NEWLY_SIGNED_FROM = CONSENT_FROM    # from this date a deal never moves a player signed in the league year before he is tradable
+                                    # (cbafaq05 Q88, `trades.signing_block`); forward-only: every deal before it replays unchanged
 
 
 def scan_days(start, until=None):
@@ -68,6 +83,17 @@ class LeagueTradeDesk:
                         for c in self.assets.contracts if c != MIAMI}
         self.payroll = {c: self.book.club(c)["payroll"] for c in self.rosters}
         self._needs_cache, self._value_cache = {}, {}
+        self.consent = ConsentBook(on, root) if on >= CONSENT_FROM else None      # forward-only: earlier deals replay unchanged
+        self.signings = {}                                  # the newly signed restriction, from NEWLY_SIGNED_FROM (Miami's desk's rule)
+        if on >= NEWLY_SIGNED_FROM:
+            self.cba = read_json(CBA_PATH, root)
+            self.signings = dict(market_signings(self.season, on, root, exclude=MIAMI), **in_season_signings(self.season, on, root, MIAMI))
+
+    def blocked(self, bbr):
+        """Why the player cannot be traded on the date (newly signed or a signed first-round pick: `trades.signing_block`,
+        as Miami's desk reads a partner's player), or None; always None before NEWLY_SIGNED_FROM."""
+        row = self.signings.get(bbr)
+        return signing_block(row, self.on, self.season, self.cba) if row else None
 
     def _needs(self, club, without=None, adding=None):
         key = (club, without)
@@ -116,7 +142,7 @@ class LeagueTradeDesk:
         from itertools import combinations
         ids = [p["bbr_id"] for p in self.rosters[club][:ROTATION_CANDIDATES]]
         pay = {x: int((self.contracts.get(x) or {}).get("schedule", {}).get(self.season) or 0) for x in ids}
-        ids = [x for x in ids if pay[x]]                    # a player without a salary this season is not tradable here
+        ids = [x for x in ids if pay[x] and not self.blocked(x)]   # a player without a salary this season, or newly signed, is not tradable here
         groups = [list(c) for n in (1, 2) for c in combinations(ids, n)]
         groups += [list(c) for c in combinations(ids[:TRIPLE_CANDIDATES], 3)]
         return [(g, sum(pay[x] for x in g)) for g in groups]
@@ -146,7 +172,7 @@ class LeagueTradeDesk:
     def evaluate(self, a, a_out, b, b_out):
         a_out, b_out = list(a_out) if isinstance(a_out, (list, tuple)) else [a_out], list(b_out) if isinstance(b_out, (list, tuple)) else [b_out]
         ca, cb = [self.contracts.get(x) for x in a_out], [self.contracts.get(x) for x in b_out]
-        if not all(ca) or not all(cb):
+        if not all(ca) or not all(cb) or any(self.blocked(x) for x in a_out + b_out):
             return None
         sa = sum(int(c["schedule"].get(self.season) or 0) for c in ca)
         sb = sum(int(c["schedule"].get(self.season) or 0) for c in cb)
@@ -173,19 +199,50 @@ class LeagueTradeDesk:
             if p is None or p < SEARCH_MIN_ACCEPT:
                 return None
             chances[club] = p
+        consent = self.consent_rows(a, a_out, b, b_out)
+        if any(r["p"] < SEARCH_MIN_ACCEPT for r in consent):
+            return None                                    # a club does not propose what a holder would plausibly refuse
         tag = "-".join(sorted(a_out + b_out))
-        return {"id": f"{self.season}-league-trade-{self.on}-{tag}", "date": self.on, "clubs": [a, b],
-                "a": {"club": a, "sends": [c["player"] for c in ca], "bbr_ids": a_out, "salary": sa},
-                "b": {"club": b, "sends": [c["player"] for c in cb], "bbr_ids": b_out, "salary": sb},
-                "gain": gain, "accept": chances, "both": round(chances[a] * chances[b], 6)}
+        row = {"id": f"{self.season}-league-trade-{self.on}-{tag}", "date": self.on, "clubs": [a, b],
+               "a": {"club": a, "sends": [c["player"] for c in ca], "bbr_ids": a_out, "salary": sa},
+               "b": {"club": b, "sends": [c["player"] for c in cb], "bbr_ids": b_out, "salary": sb},
+               "gain": gain, "accept": chances, "both": round(chances[a] * chances[b], 6)}
+        if consent:
+            row["consent"] = consent
+        return row
+
+    def consent_rows(self, a, a_out, b, b_out):
+        """The players the deal moves whose consent it needs, each with his chance (`trades.consent_chance` on the two
+        clubs' rosters before and after the deal); empty before CONSENT_FROM."""
+        if self.consent is None:
+            return []
+        rows = []
+        for club, out, other, inc in ((a, a_out, b, b_out), (b, b_out, a, a_out)):
+            for x in out:
+                entry = self.contracts.get(x) or {}
+                status = self.consent.status(x, club, entry.get("player"))
+                if not status["holds"]:
+                    continue
+                stay = [p["bbr_id"] for p in self.rosters[club]]
+                new = [p["bbr_id"] for p in self.rosters[other] if p["bbr_id"] not in inc] + list(out)
+                p, detail = consent_chance(self.assets, status, dict(entry, bbr_id=x), club, other, stay, new, self.root)
+                rows.append(dict(detail, player=entry.get("player"), bbr_id=x, held_by=club, to=other,
+                                 rights=status["rights"], seasons=status["seasons"], status_basis=status["basis"], p=p))
+        return rows
 
     def packet(self, row):
-        return {"event_id": row["id"], "date": row["date"],
-                "question": f"Do {row['a']['club']} and {row['b']['club']} trade {' and '.join(row['a']['sends'])} for {' and '.join(row['b']['sends'])}?",
-                "decider": f"{row['a']['club']} and {row['b']['club']} front offices (engine draw)",
-                "options": {"accept": row["both"], "decline": round(1 - row["both"], 6)},
-                "basis": (f"gains on own objectives {row['gain']}; acceptance {row['accept']}; 1999 salary rule met; "
-                          "symmetric league phase 3 (runtime/league_trades.py)")}
+        packet = {"event_id": row["id"], "date": row["date"],
+                  "question": f"Do {row['a']['club']} and {row['b']['club']} trade {' and '.join(row['a']['sends'])} for {' and '.join(row['b']['sends'])}?",
+                  "decider": f"{row['a']['club']} and {row['b']['club']} front offices (engine draw)",
+                  "options": {"accept": row["both"], "decline": round(1 - row["both"], 6)},
+                  "basis": (f"gains on own objectives {row['gain']}; acceptance {row['accept']}; 1999 salary rule met; "
+                            "symmetric league phase 3 (runtime/league_trades.py)")}
+        rows = row.get("consent") or []
+        if rows:
+            packet.update(options=consent_options(row["both"], rows), question=packet["question"] + consent_question(rows),
+                          decider=packet["decider"] + f"; {', '.join(r['player'] for r in rows)} (consent, simulated player)",
+                          basis=packet["basis"] + "." + consent_basis(rows))
+        return packet
 
 
 def weekly(root=ROOT, day=None, market=None):
@@ -221,10 +278,16 @@ def weekly(root=ROOT, day=None, market=None):
         if deal in done or json.loads(result.read_text(encoding="utf-8"))["outcome"] != "accept":
             continue
         row = json.loads((draws / f"{deal}.proposal.json").read_text(encoding="utf-8"))
+        consented = {r["bbr_id"]: r for r in row.get("consent") or []}      # an accepted deal: every holder consented
         for side, other in (("a", "b"), ("b", "a")):
             for name, bbr in zip(row[side]["sends"], row[side]["bbr_ids"]):
-                moves["entries"].append({"deal": deal, "date": row["date"], "kind": "trade", "player": name, "bbr_id": bbr,
-                                         "from": row[side]["club"], "to": row[other]["club"]})
+                entry = {"deal": deal, "date": row["date"], "kind": "trade", "player": name, "bbr_id": bbr,
+                         "from": row[side]["club"], "to": row[other]["club"]}
+                if bbr in consented:
+                    entry["consent"] = {"answer": "consented", "rights_lost": consented[bbr]["rights"], "seasons": consented[bbr]["seasons"],
+                                        "p": consented[bbr]["p"], "rule": "trade_consent_one_year_contract (cbafaq05 Q83): "
+                                        "a Non-Bird free agent of his new club"}
+                moves["entries"].append(entry)
         executed.append(deal)
     if executed:
         path = root / ledger_path(SEASON)

@@ -44,14 +44,16 @@ def rosters_on(on, root=ROOT):
 
 
 def holder(bbr_id, name, on, root=ROOT):
-    """(club or None, basis) for the player on the date."""
+    """(club or None, basis) for the player on the date. Wade's holding carries no bbr_id (alternate history): Miami's
+    holdings name him by his register key, so his NBA id (the ledger's key, `league_contracts.ledger_key`) is read as it."""
     from .availability import status
+    from .league_contracts import WADE_BBR, WADE_REGISTER
     from .league_moves import club_of
     from .player_stats import alias
     from .rotations import miami_holds
     season = _season(on, root)
     miami = miami_holds(season, on, root)
-    if (bbr_id and bbr_id in miami) or (name and alias(name) in miami):
+    if (bbr_id and bbr_id in miami) or (name and alias(name) in miami) or (bbr_id == WADE_BBR and WADE_REGISTER in miami):
         return MIAMI, f"on Miami's {season} register"
     club = rosters_on(on, root).get(bbr_id) if bbr_id else None
     if club:
