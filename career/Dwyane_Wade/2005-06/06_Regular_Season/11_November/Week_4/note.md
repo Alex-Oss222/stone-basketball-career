@@ -14,4 +14,6 @@ days: 22-end
 
 ## Games and events
 
+- 2005-11-23: Portland Trail Blazers 102 at Miami Heat 120 — Miami Heat W 120-102 ([Game 1](Game_1.md), event `2005-11-23-portland-trail-blazers-at-miami-heat`)
+
 ## Consequences
