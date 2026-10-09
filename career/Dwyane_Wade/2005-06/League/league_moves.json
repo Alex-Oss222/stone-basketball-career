@@ -2235,6 +2235,60 @@
    "contract": null,
    "note": "cleared waivers from Charlotte Bobcats: a free agent",
    "waiver": "2005-06-market-2005-11-22-waive-armstda01"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-28-anderde01-brownde02-knighbr01-outlatr01",
+   "date": "2005-11-28",
+   "kind": "trade",
+   "player": "Derek Anderson",
+   "bbr_id": "anderde01",
+   "from": "Portland Trail Blazers",
+   "to": "Washington Wizards"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-28-anderde01-brownde02-knighbr01-outlatr01",
+   "date": "2005-11-28",
+   "kind": "trade",
+   "player": "Travis Outlaw",
+   "bbr_id": "outlatr01",
+   "from": "Portland Trail Blazers",
+   "to": "Washington Wizards"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-28-anderde01-brownde02-knighbr01-outlatr01",
+   "date": "2005-11-28",
+   "kind": "trade",
+   "player": "Brevin Knight",
+   "bbr_id": "knighbr01",
+   "from": "Washington Wizards",
+   "to": "Portland Trail Blazers"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-28-anderde01-brownde02-knighbr01-outlatr01",
+   "date": "2005-11-28",
+   "kind": "trade",
+   "player": "Devin Brown",
+   "bbr_id": "brownde02",
+   "from": "Washington Wizards",
+   "to": "Portland Trail Blazers"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-28-battito01-collija04",
+   "date": "2005-11-28",
+   "kind": "trade",
+   "player": "Tony Battie",
+   "bbr_id": "battito01",
+   "from": "Golden State Warriors",
+   "to": "New Jersey Nets"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-11-28-battito01-collija04",
+   "date": "2005-11-28",
+   "kind": "trade",
+   "player": "Jason Collins",
+   "bbr_id": "collija04",
+   "from": "New Jersey Nets",
+   "to": "Golden State Warriors"
   }
  ],
  "market_days": [
@@ -2264,6 +2318,7 @@
   "2005-11-24",
   "2005-11-25",
   "2005-11-26",
-  "2005-11-27"
+  "2005-11-27",
+  "2005-11-28"
  ]
 }

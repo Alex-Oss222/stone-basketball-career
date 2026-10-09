@@ -1,0 +1,12 @@
+{
+ "date": "2005-11-28",
+ "decider": "Portland Trail Blazers and Washington Wizards front offices (engine draw)",
+ "event_id": "2005-06-league-trade-2005-11-28-anderde01-brownde02-knighbr01-outlatr01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Portland Trail Blazers and Washington Wizards trade Derek Anderson and Travis Outlaw for Brevin Knight and Devin Brown?"
+}

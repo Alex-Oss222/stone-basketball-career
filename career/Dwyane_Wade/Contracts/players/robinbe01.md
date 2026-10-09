@@ -2,9 +2,9 @@
 
 # Contract | Bernard Robinson
 
-Known through: 2005-11-27. [Open interactive contract](robinbe01.html#contract) · [Contract history](robinbe01.html#contract-history)
+Known through: 2005-11-28. [Open interactive contract](robinbe01.html#contract) · [Contract history](robinbe01.html#contract-history)
 
-Bernard Robinson: under contract. Evidence cutoff: 2005-11-27.
+Bernard Robinson: under contract. Evidence cutoff: 2005-11-28.
 
 ## Current contract
 

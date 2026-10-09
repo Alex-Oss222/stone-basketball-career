@@ -1,0 +1,37 @@
+{
+ "id": "2005-06-league-trade-2005-11-28-battito01-collija04",
+ "date": "2005-11-28",
+ "clubs": [
+  "Golden State Warriors",
+  "New Jersey Nets"
+ ],
+ "a": {
+  "club": "Golden State Warriors",
+  "sends": [
+   "Tony Battie"
+  ],
+  "bbr_ids": [
+   "battito01"
+  ],
+  "salary": 5200000
+ },
+ "b": {
+  "club": "New Jersey Nets",
+  "sends": [
+   "Jason Collins"
+  ],
+  "bbr_ids": [
+   "collija04"
+  ],
+  "salary": 4740474
+ },
+ "gain": {
+  "Golden State Warriors": 0.214,
+  "New Jersey Nets": 0.222
+ },
+ "accept": {
+  "Golden State Warriors": 0.95,
+  "New Jersey Nets": 0.95
+ },
+ "both": 0.9025
+}

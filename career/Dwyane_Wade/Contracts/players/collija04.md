@@ -2,9 +2,9 @@
 
 # Contract | Jason Collins
 
-Known through: 2005-11-27. [Open interactive contract](collija04.html#contract) · [Contract history](collija04.html#contract-history)
+Known through: 2005-11-28. [Open interactive contract](collija04.html#contract) · [Contract history](collija04.html#contract-history)
 
-Jason Collins: under contract. Evidence cutoff: 2005-11-27.
+Jason Collins: under contract. Evidence cutoff: 2005-11-28.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jason Collins |
-| Club / rights baseline | New Jersey Nets |
+| Club / rights baseline | Golden State Warriors |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

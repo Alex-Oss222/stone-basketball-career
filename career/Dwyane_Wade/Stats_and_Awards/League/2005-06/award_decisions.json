@@ -315,6 +315,110 @@
     }
    ],
    "winner": "Dirk Nowitzki"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-11-21-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-11-21",
+   "period_end": "2005-11-27",
+   "announced_on": "2005-11-28",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/11_November/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 21.2,
+     "reb": 6.0,
+     "ast": 6.5,
+     "game_score": 16.45,
+     "score": 71.8,
+     "rank": 1
+    },
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 22.0,
+     "reb": 4.3,
+     "ast": 11.0,
+     "game_score": 20.4,
+     "score": 70.2,
+     "rank": 2
+    },
+    {
+     "player": "Jason Kidd",
+     "team": "Milwaukee Bucks",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 13.5,
+     "reb": 8.8,
+     "ast": 8.5,
+     "game_score": 16.02,
+     "score": 67.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Vince Carter"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-11-21-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-11-21",
+   "period_end": "2005-11-27",
+   "announced_on": "2005-11-28",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/11_November/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Elton Brand",
+     "team": "Los Angeles Clippers",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 26.0,
+     "reb": 8.3,
+     "ast": 2.7,
+     "game_score": 22.03,
+     "score": 75.1,
+     "rank": 1
+    },
+    {
+     "player": "Baron Davis",
+     "team": "New Orleans/Oklahoma City Hornets",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 26.0,
+     "reb": 5.0,
+     "ast": 9.3,
+     "game_score": 21.27,
+     "score": 72.8,
+     "rank": 2
+    },
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 34.5,
+     "reb": 5.5,
+     "ast": 5.5,
+     "game_score": 30.0,
+     "score": 66.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Elton Brand"
   }
  ]
 }

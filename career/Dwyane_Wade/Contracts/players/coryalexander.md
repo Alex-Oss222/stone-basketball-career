@@ -2,9 +2,9 @@
 
 # Contract | Cory Alexander
 
-Known through: 2005-11-27. [Open interactive contract](coryalexander.html#contract) · [Contract history](coryalexander.html#contract-history)
+Known through: 2005-11-28. [Open interactive contract](coryalexander.html#contract) · [Contract history](coryalexander.html#contract-history)
 
-Cory Alexander: under contract. Evidence cutoff: 2005-11-27.
+Cory Alexander: under contract. Evidence cutoff: 2005-11-28.
 
 ## Current contract
 

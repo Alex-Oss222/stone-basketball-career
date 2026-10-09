@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-11-27",
+  "as_of": "2005-11-28",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -707,7 +707,7 @@
     {
       "player_id": "knighbr01",
       "name": "Brevin Knight",
-      "team": "Washington Wizards",
+      "team": "Portland Trail Blazers",
       "status": "under contract",
       "current_contract_id": "knighbr01-2005-08-05",
       "recorded_agreements": 2,
@@ -1508,7 +1508,7 @@
     {
       "player_id": "anderde01",
       "name": "Derek Anderson",
-      "team": "Portland Trail Blazers",
+      "team": "Washington Wizards",
       "status": "under contract",
       "current_contract_id": "anderde01-existing-794c819738b1",
       "recorded_agreements": 1,
@@ -1598,7 +1598,7 @@
     {
       "player_id": "brownde02",
       "name": "Devin Brown",
-      "team": "Washington Wizards",
+      "team": "Portland Trail Blazers",
       "status": "under contract",
       "current_contract_id": "brownde02-2005-09-09",
       "recorded_agreements": 2,
@@ -2534,7 +2534,7 @@
     {
       "player_id": "collija04",
       "name": "Jason Collins",
-      "team": "New Jersey Nets",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": "collija04-2005-09-02",
       "recorded_agreements": 2,
@@ -5396,7 +5396,7 @@
     {
       "player_id": "battito01",
       "name": "Tony Battie",
-      "team": "Golden State Warriors",
+      "team": "New Jersey Nets",
       "status": "under contract",
       "current_contract_id": "battito01-1999-10-15",
       "recorded_agreements": 1,
@@ -5504,7 +5504,7 @@
     {
       "player_id": "outlatr01",
       "name": "Travis Outlaw",
-      "team": "Portland Trail Blazers",
+      "team": "Washington Wizards",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

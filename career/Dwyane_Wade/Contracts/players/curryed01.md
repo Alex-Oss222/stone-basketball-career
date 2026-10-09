@@ -2,9 +2,9 @@
 
 # Contract | Eddy Curry
 
-Known through: 2005-11-27. [Open interactive contract](curryed01.html#contract) · [Contract history](curryed01.html#contract-history)
+Known through: 2005-11-28. [Open interactive contract](curryed01.html#contract) · [Contract history](curryed01.html#contract-history)
 
-Eddy Curry: under contract. Evidence cutoff: 2005-11-27.
+Eddy Curry: under contract. Evidence cutoff: 2005-11-28.
 
 ## Current contract
 

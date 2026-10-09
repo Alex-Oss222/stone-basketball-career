@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-11-27. [Search the contract directory](index.html)
+Known through 2005-11-28. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -86,7 +86,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Brandon Hunter](players/huntebr01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Brendan Haywood](players/haywobr01.md) | Boston Celtics | under contract | Brendan Haywood · 2005-08-02 | 2 |
 | [Brent Barry](players/barrybr01.md) | Charlotte Bobcats | under contract | Brent Barry · 2004-08-05 | 2 |
-| [Brevin Knight](players/knighbr01.md) | Washington Wizards | under contract | Brevin Knight · 2005-08-05 | 2 |
+| [Brevin Knight](players/knighbr01.md) | Portland Trail Blazers | under contract | Brevin Knight · 2005-08-05 | 2 |
 | [Brian Cardinal](players/cardibr01.md) | Chicago Bulls | under contract | Brian Cardinal · 2004-07-15 | 1 |
 | [Brian Cook](players/cookbr01.md) | Los Angeles Lakers | No verified contract record | No verified current agreement | 0 |
 | [Brian Grant](players/grantbr01.md) | Miami Heat | under contract | Brian Grant · 2000-08-30 | 1 |
@@ -172,7 +172,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [David West](players/westda01.md) | New Orleans/Oklahoma City Hornets | No verified contract record | No verified current agreement | 0 |
 | [Delonte West](players/westde01.md) | Seattle SuperSonics | under contract | Delonte West · 2005-09-02 | 1 |
 | [Deng Gai](players/gaide01.md) | Portland Trail Blazers | under contract | Deng Gai · 2005-08-02 | 1 |
-| [Derek Anderson](players/anderde01.md) | Portland Trail Blazers | under contract | Derek Anderson · existing contract; signing date not recorded | 1 |
+| [Derek Anderson](players/anderde01.md) | Washington Wizards | under contract | Derek Anderson · existing contract; signing date not recorded | 1 |
 | [Derek Fisher](players/fishede01.md) | Boston Celtics | under contract | Derek Fisher · 2005-09-30 | 3 |
 | [DerMarr Johnson](players/johnsde03.md) | San Antonio Spurs | under contract | DerMarr Johnson · 2003-10-01 | 2 |
 | [Deron Williams](players/willide01.md) | New York Knicks | under contract | Deron Williams · 2005-07-01 | 1 |
@@ -185,7 +185,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Desmond Mason](players/masonde01.md) | Milwaukee Bucks | under contract | Desmond Mason · 2005-08-26 | 2 |
 | [Desmond Penigar](players/penigde01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Devean George](players/georgde01.md) | San Antonio Spurs | under contract | Devean George · existing contract; signing date not recorded | 1 |
-| [Devin Brown](players/brownde02.md) | Washington Wizards | under contract | Devin Brown · 2005-09-09 | 2 |
+| [Devin Brown](players/brownde02.md) | Portland Trail Blazers | under contract | Devin Brown · 2005-09-09 | 2 |
 | [Devin Green](players/greende01.md) | New Jersey Nets | under contract | Devin Green · 2005-08-02 | 1 |
 | [Devin Harris](players/devinharris.md) | Cleveland Cavaliers | under contract | Devin Harris · 2004-07-01 | 1 |
 | [Dijon Thompson](players/thompdi01.md) | Cleveland Cavaliers | under contract | Dijon Thompson · 2005-08-26 | 1 |
@@ -290,7 +290,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jarvis Hayes](players/hayesja01.md) | Washington Wizards | No verified contract record | No verified current agreement | 0 |
 | [Jason Caffey](players/caffeja01.md) | Free agent | under contract | Jason Caffey · existing contract; signing date not recorded | 1 |
 | [Jason Collier](players/collija02.md) | Free agent | under contract | Jason Collier · 2004-09-16 | 2 |
-| [Jason Collins](players/collija04.md) | New Jersey Nets | under contract | Jason Collins · 2005-09-02 | 2 |
+| [Jason Collins](players/collija04.md) | Golden State Warriors | under contract | Jason Collins · 2005-09-02 | 2 |
 | [Jason Hart](players/hartja01.md) | Denver Nuggets | No verified contract record | No verified current agreement | 0 |
 | [Jason Kapono](players/kaponja01.md) | Boston Celtics | under contract | Jason Kapono · 2005-08-02 | 1 |
 | [Jason Kidd](players/kiddja01.md) | Milwaukee Bucks | under contract | Jason Kidd · 2003-07-16 | 2 |
@@ -609,7 +609,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Tommy Smith](players/smithto03.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Toni Kukoc](players/kukocto01.md) | New York Knicks | under contract | No verified current agreement | 1 |
 | [Tony Allen](players/tonyallen.md) | New York Knicks | under contract | Tony Allen · 2005-09-30 | 2 |
-| [Tony Battie](players/battito01.md) | Golden State Warriors | under contract | Tony Battie · 1999-10-15 | 1 |
+| [Tony Battie](players/battito01.md) | New Jersey Nets | under contract | Tony Battie · 1999-10-15 | 1 |
 | [Tony Bobbitt](players/tonybobbitt.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Tony Delk](players/delkto01.md) | Minnesota Timberwolves | under contract | Tony Delk · 2000-08-01 | 1 |
 | [Tony Massenburg](players/masseto01.md) | Free agent | under contract | Tony Massenburg · 2003-08-22 | 2 |
@@ -621,7 +621,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Travis Diener](players/dienetr01.md) | San Antonio Spurs | under contract | Travis Diener · 2005-08-02 | 1 |
 | [Travis Hansen](players/hansetr01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Travis Knight](players/knightr01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
-| [Travis Outlaw](players/outlatr01.md) | Portland Trail Blazers | No verified contract record | No verified current agreement | 0 |
+| [Travis Outlaw](players/outlatr01.md) | Washington Wizards | No verified contract record | No verified current agreement | 0 |
 | [Tremaine Fowlkes](players/fowlktr01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
 | [Trenton Hassell](players/hassetr01.md) | Memphis Grizzlies | under contract | Trenton Hassell · 2005-08-26 | 4 |
 | [Trevor Ariza](players/trevorariza.md) | Los Angeles Lakers | under contract | Trevor Ariza · 2005-09-30 | 2 |

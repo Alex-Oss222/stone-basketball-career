@@ -1,0 +1,41 @@
+{
+ "id": "2005-06-league-trade-2005-11-28-anderde01-brownde02-knighbr01-outlatr01",
+ "date": "2005-11-28",
+ "clubs": [
+  "Portland Trail Blazers",
+  "Washington Wizards"
+ ],
+ "a": {
+  "club": "Portland Trail Blazers",
+  "sends": [
+   "Derek Anderson",
+   "Travis Outlaw"
+  ],
+  "bbr_ids": [
+   "anderde01",
+   "outlatr01"
+  ],
+  "salary": 10175160
+ },
+ "b": {
+  "club": "Washington Wizards",
+  "sends": [
+   "Brevin Knight",
+   "Devin Brown"
+  ],
+  "bbr_ids": [
+   "knighbr01",
+   "brownde02"
+  ],
+  "salary": 11250939
+ },
+ "gain": {
+  "Portland Trail Blazers": 0.421,
+  "Washington Wizards": 0.305
+ },
+ "accept": {
+  "Portland Trail Blazers": 0.95,
+  "Washington Wizards": 0.95
+ },
+ "both": 0.9025
+}

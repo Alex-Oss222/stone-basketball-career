@@ -2,9 +2,9 @@
 
 # Contract | Devin Brown
 
-Known through: 2005-11-27. [Open interactive contract](brownde02.html#contract) · [Contract history](brownde02.html#contract-history)
+Known through: 2005-11-28. [Open interactive contract](brownde02.html#contract) · [Contract history](brownde02.html#contract-history)
 
-Devin Brown: under contract. Evidence cutoff: 2005-11-27.
+Devin Brown: under contract. Evidence cutoff: 2005-11-28.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Devin Brown |
-| Club / rights baseline | Washington Wizards |
+| Club / rights baseline | Portland Trail Blazers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

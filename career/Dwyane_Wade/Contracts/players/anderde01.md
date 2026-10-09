@@ -2,9 +2,9 @@
 
 # Contract | Derek Anderson
 
-Known through: 2005-11-27. [Open interactive contract](anderde01.html#contract) · [Contract history](anderde01.html#contract-history)
+Known through: 2005-11-28. [Open interactive contract](anderde01.html#contract) · [Contract history](anderde01.html#contract-history)
 
-Derek Anderson: under contract. Evidence cutoff: 2005-11-27.
+Derek Anderson: under contract. Evidence cutoff: 2005-11-28.
 
 ## Current contract
 
@@ -125,7 +125,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Derek Anderson |
-| Club / rights baseline | Portland Trail Blazers |
+| Club / rights baseline | Washington Wizards |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
