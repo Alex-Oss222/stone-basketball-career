@@ -1909,6 +1909,110 @@
    "bbr_id": "haywobr01",
    "from": "Washington Wizards",
    "to": "Boston Celtics"
+  },
+  {
+   "id": "2005-06-market-2005-11-08-clear-williaa01",
+   "date": "2005-11-08",
+   "kind": "clear",
+   "player": "Aaron Williams",
+   "bbr_id": "williaa01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Aaron Williams",
+    "bbr_id": "williaa01",
+    "position": "C",
+    "games": 48,
+    "minutes": 791
+   },
+   "contract": null,
+   "note": "cleared waivers from Charlotte Bobcats: a free agent",
+   "waiver": "2005-06-market-2005-11-06-waive-williaa01"
+  },
+  {
+   "id": "2005-06-market-2005-11-08-clear-holcora01",
+   "date": "2005-11-08",
+   "kind": "clear",
+   "player": "Randy Holcomb",
+   "bbr_id": "holcora01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Randy Holcomb",
+    "bbr_id": "holcora01",
+    "position": "SF",
+    "games": 4,
+    "minutes": 11
+   },
+   "contract": null,
+   "note": "cleared waivers from New Orleans/Oklahoma City Hornets: a free agent",
+   "waiver": "2005-06-market-2005-11-06-waive-holcora01"
+  },
+  {
+   "id": "2005-06-market-2005-11-08-rest_of_season-mccarwa01",
+   "date": "2005-11-08",
+   "kind": "rest_of_season",
+   "player": "Walter McCarty",
+   "bbr_id": "mccarwa01",
+   "from": null,
+   "to": "Boston Celtics",
+   "role": {
+    "player_id": "Walter McCarty",
+    "bbr_id": "mccarwa01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 353
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.12 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-08-rest_of_season-robincl02",
+   "date": "2005-11-08",
+   "kind": "rest_of_season",
+   "player": "Clifford Robinson",
+   "bbr_id": "robincl02",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Clifford Robinson",
+    "bbr_id": "robincl02",
+    "position": "PF",
+    "games": 80,
+    "minutes": 1863
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.12 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-11-08-rest_of_season-burksan01",
+   "date": "2005-11-08",
+   "kind": "rest_of_season",
+   "player": "Antonio Burks",
+   "bbr_id": "burksan01",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Antonio Burks",
+    "bbr_id": "burksan01",
+    "position": "PG",
+    "games": 57,
+    "minutes": 570
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.11 x fit"
   }
  ],
  "market_days": [
@@ -1918,6 +2022,7 @@
   "2005-11-04",
   "2005-11-05",
   "2005-11-06",
-  "2005-11-07"
+  "2005-11-07",
+  "2005-11-08"
  ]
 }
