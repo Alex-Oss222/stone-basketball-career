@@ -129,5 +129,5 @@ Simulated honors and shortlist placings through 2006-01-15, from closed award de
 | --- | --- | --- | --- | --- |
 | West Rookie of the Month | 2004-02-01 to 2004-02-29 | 2004-03-02 | Shortlist, No. 3 | [Decision](../2003-04/02_February/League_Awards.md) |
 | West Rookie of the Month | 2004-03-01 to 2004-03-31 | 2004-04-02 | Shortlist, No. 3 | [Decision](../2003-04/03_March/League_Awards.md) |
-| West Rookie of the Month | 2004-04-01 to 2004-04-14 | 2004-04-16 | Shortlist, No. 2 | [Decision](../2003-04/04_April/League_Awards.md) |
+| West Rookie of the Month | 2004-04-01 to 2004-04-14 | 2004-04-16 | Shortlist, No. 3 (No. 2 before the correction of 2006-01-15) | [Decision](../2003-04/04_April/League_Awards.md) |
 | 2005 FIBA Americas Championship for Men gold medal | 2005-08-24 to 2005-09-04 | 2005-09-04 | **Gold medal** (Brazil, place 1) | [Tournament](../../../FIBA/Continental_Cups/2005/README.md#medals) |

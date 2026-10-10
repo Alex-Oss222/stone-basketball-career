@@ -33,15 +33,15 @@ The rows below are an internal shortlist, not published NBA vote totals. A calen
 | East | 2 | Chris Bosh | Toronto Raptors | 7 G, 5-2 in his games, 12.9 PTS, 9.3 REB, 1.1 AST, Game Score 10.26 a game; score 13.114 | Shortlist |
 | East | 3 | Boris Diaw | Atlanta Hawks | 7 G, 5-2 in his games, 9.0 PTS, 4.1 REB, 2.6 AST, Game Score 7.36 a game; score 10.214 | Shortlist |
 | West | 1 | Carmelo Anthony | Denver Nuggets | 6 G, 4-2 in his games, 22.3 PTS, 7.8 REB, 2.8 AST, Game Score 14.88 a game; score 17.55 | **WINNER** |
-| West | 2 | Leandro Barbosa | Phoenix Suns | 5 G, 2-3 in his games, 9.8 PTS, 1.8 REB, 2.2 AST, Game Score 7.1 a game; score 8.7 | Shortlist |
-| West | 3 | Chris Kaman | Los Angeles Clippers | 6 G, 4-2 in his games, 5.8 PTS, 3.5 REB, 1.5 AST, Game Score 4.07 a game; score 6.733 | Shortlist |
+| West | 2 | Raül López | Utah Jazz | 7 G, 1-6 in his games, 10.6 PTS, 2.4 REB, 4.0 AST, Game Score 8.59 a game; score 9.157 | Shortlist |
+| West | 3 | Leandro Barbosa | Phoenix Suns | 5 G, 2-3 in his games, 9.8 PTS, 1.8 REB, 2.2 AST, Game Score 7.1 a game; score 8.7 | Shortlist |
 
 ## Decision record
 
 - East Player of the Month, April 1, 2004 to April 14, 2004, announced April 16, 2004: **Vince Carter**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
 - West Player of the Month, April 1, 2004 to April 14, 2004, announced April 16, 2004: **Kevin Garnett**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
 - East Rookie of the Month, April 1, 2004 to April 14, 2004, announced April 16, 2004: **Dwyane Wade**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
-- West Rookie of the Month, April 1, 2004 to April 14, 2004, announced April 16, 2004: **Carmelo Anthony**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
+- West Rookie of the Month, April 1, 2004 to April 14, 2004, announced April 16, 2004: **Carmelo Anthony**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`). Corrected on January 15, 2006 (award audit, approved by the user): shortlist Carmelo Anthony, Raül López, Leandro Barbosa (was Carmelo Anthony, Leandro Barbosa, Chris Kaman); the winner is unchanged. The superseded values are kept in the record (`correction`).
 
 
 ## By week

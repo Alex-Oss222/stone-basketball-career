@@ -1,6 +1,6 @@
 # 2003-04 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2004-04-14 (`runtime/season_awards.py`); no real 2004 vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2004-06-20.
+Decided on each award's real announcement date from closed simulated results through 2004-04-14 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2004-06-20.
 
 ## Calendar
 
@@ -160,10 +160,12 @@ Announced 2004-04-27; 29 head coaches, not for their own players, ballot 2-1.
 | Josh Howard | F | Dallas Mavericks | 67 | 23.6 | 9.7 | 5.7 | 1.2 | 0.9 | 0.8 | 7.93 | 33 | 5 |
 | Boris Diaw | F | Atlanta Hawks | 76 | 29.8 | 7.2 | 4.8 | 2.2 | 1.0 | 0.6 | 5.09 | 28 | 0 |
 | Jarvis Hayes | F | Washington Wizards | 72 | 30.7 | 8.7 | 4.5 | 1.4 | 0.9 | 0.3 | 5.24 | 28 | 0 |
-| T.J. Ford | G | Milwaukee Bucks | 54 | 27.2 | 7.1 | 3.8 | 6.2 | 1.2 | 0.1 | 6.35 | 27 | 0 |
-| Keith Bogans | G | Orlando Magic | 73 | 25.2 | 7.5 | 4.3 | 1.4 | 0.5 | 0.3 | 5.92 | 23 | 0 |
+| Marquis Daniels | G | Dallas Mavericks | 60 | 17.8 | 6.8 | 2.9 | 1.9 | 0.6 | 0.3 | 5.89 | 23 | 0 |
+| Raül López | G | Utah Jazz | 82 | 20.2 | 8.2 | 2.3 | 3.7 | 0.7 | 0.1 | 5.25 | 21 | 0 |
 
-Also receiving votes: Leandro Barbosa (Phoenix Suns) 13, Mickael Pietrus (Golden State Warriors) 3.
+Also receiving votes: Keith Bogans (Orlando Magic) 11, T.J. Ford (Milwaukee Bucks) 11.
+
+Corrected on 2006-01-15 (award audit, approved by the user): Second Team: Marquis Daniels and Raül López replace T.J. Ford and Keith Bogans. The superseded values are kept in the record (`correction`).
 
 ## Most Valuable Player
 

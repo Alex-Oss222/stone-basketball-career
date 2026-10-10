@@ -126,4 +126,4 @@ Simulated honors and shortlist placings through 2006-01-15, from closed award de
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
-| West Rookie of the Month | 2004-04-01 to 2004-04-14 | 2004-04-16 | Shortlist, No. 3 | [Decision](../2003-04/04_April/League_Awards.md) |
+| West Rookie of the Month | 2004-04-01 to 2004-04-14 | 2004-04-16 | Superseded by the correction of 2006-01-15 (Raül López in the corrected record) | [Decision](../2003-04/04_April/League_Awards.md) |

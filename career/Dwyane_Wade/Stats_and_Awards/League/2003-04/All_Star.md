@@ -70,8 +70,8 @@ All-Star Game: February 15, 2004, Staples Center, Los Angeles. Rookie Challenge:
 | Chris Kaman | C | Los Angeles Clippers | 47 | 7.0 | 4.7 | 0.9 | 4.22 | 9 |
 | Chris Bosh | F | Toronto Raptors | 42 | 13.7 | 7.8 | 1.6 | 11.04 | 11 |
 | Josh Howard | F | Dallas Mavericks | 46 | 10.3 | 5.7 | 1.3 | 8.6 | 11 |
-| Marquis Daniels | G | Dallas Mavericks | 35 | 7.5 | 3.4 | 2.3 | 6.77 | 7 |
-| T.J. Ford | G | Milwaukee Bucks | 32 | 8.3 | 3.8 | 5.9 | 7.47 | 6 |
+| Marquis Daniels | G | Dallas Mavericks | 35 | 7.5 | 3.4 | 2.3 | 6.77 | 6 |
+| Jarvis Hayes | F | Washington Wizards | 39 | 9.4 | 5.2 | 1.4 | 6.32 | 6 |
 
 ### Sophomores
 
@@ -86,6 +86,8 @@ All-Star Game: February 15, 2004, Staples Center, Los Angeles. Rookie Challenge:
 | Nene | C | Denver Nuggets | 50 | 11.8 | 6.7 | 2.4 | 9.7 | 11 |
 | Mike Dunleavy | F | Golden State Warriors | 43 | 12.7 | 6.4 | 3.0 | 9.23 | 11 |
 | Jiri Welsch | F | Boston Celtics | 50 | 10.8 | 4.9 | 2.8 | 7.65 | 5 |
+
+Corrected on January 15, 2006 (award audit, approved by the user): Rookies: Jarvis Hayes replaces T.J. Ford. The superseded values are kept in the record (`correction`).
 
 ## Injury replacements (the Commissioner, February 13, 2004)
 

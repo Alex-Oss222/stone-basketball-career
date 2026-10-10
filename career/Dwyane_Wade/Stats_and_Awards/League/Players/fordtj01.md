@@ -122,8 +122,8 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-01-15, from closed award decisions (1 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-01-15, from closed award decisions (0 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
-| All-Rookie Second Team | 2003-10-28 to 2004-04-14 | 2004-04-27 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
+| All-Rookie Second Team | 2003-10-28 to 2004-04-14 | 2004-04-27 | Superseded by the correction of 2006-01-15 (Marquis Daniels, Raül López in the corrected record) | [Decision](../2003-04/Season_Awards.md) |

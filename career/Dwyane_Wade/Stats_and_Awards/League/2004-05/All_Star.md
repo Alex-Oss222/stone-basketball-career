@@ -63,15 +63,15 @@ All-Star Game: February 20, 2005, Pepsi Center, Denver. Rookie Challenge: Februa
 
 | Player | Pos | Team | G | PTS | REB | AST | GmSc | Ballots |
 |---|---|---|---|---|---|---|---|---|
-| Josh Childress | F | Phoenix Suns | 43 | 11.1 | 6.2 | 2.0 | 9.06 | 11 |
+| Josh Childress | G | Phoenix Suns | 43 | 11.1 | 6.2 | 2.0 | 9.06 | 11 |
 | Dwight Howard | F | Orlando Magic | 41 | 10.4 | 8.3 | 0.9 | 10.16 | 11 |
-| Maurice Baker | G | Miami Heat | 31 | 1.9 | 0.9 | 0.3 | 0.9 | 11 |
-| Carlos Delfino | G | Dallas Mavericks | 30 | 1.1 | 0.8 | 0.5 | 1.09 | 11 |
-| Mario Kasun | C | Orlando Magic | 22 | 1.9 | 1.0 | 0.2 | 1.3 | 11 |
 | Nenad Krstić | F | New York Knicks | 38 | 13.3 | 5.4 | 1.2 | 8.73 | 11 |
+| Andre Iguodala | G | New York Knicks | 41 | 9.6 | 6.0 | 2.9 | 8.56 | 11 |
+| David Harrison | C | Orlando Magic | 27 | 5.2 | 2.4 | 0.5 | 3.18 | 8 |
 | Emeka Okafor | F | Washington Wizards | 31 | 14.3 | 8.5 | 0.5 | 10.96 | 11 |
-| Andre Iguodala | F | New York Knicks | 41 | 9.6 | 6.0 | 2.9 | 8.56 | 10 |
-| Ben Gordon | F | Utah Jazz | 43 | 11.7 | 2.8 | 1.8 | 6.61 | 7 |
+| Andrés Nocioni | F | San Antonio Spurs | 44 | 9.6 | 5.0 | 2.2 | 6.0 | 11 |
+| Ben Gordon | G | Utah Jazz | 43 | 11.7 | 2.8 | 1.8 | 6.61 | 8 |
+| Josh Smith | F | Utah Jazz | 42 | 9.4 | 6.0 | 1.7 | 8.68 | 8 |
 
 ### Sophomores
 
@@ -86,6 +86,8 @@ All-Star Game: February 20, 2005, Pepsi Center, Denver. Rookie Challenge: Februa
 | Mickael Pietrus | G | Charlotte Bobcats | 37 | 14.6 | 4.2 | 2.1 | 9.45 | 11 |
 | Luke Ridnour | G | Charlotte Bobcats | 38 | 11.7 | 4.5 | 6.4 | 9.79 | 8 |
 | Josh Howard | F | Dallas Mavericks | 35 | 11.7 | 6.1 | 1.6 | 9.25 | 6 |
+
+Corrected on January 15, 2006 (award audit, approved by the user): Rookies: David Harrison, Andrés Nocioni and Josh Smith replace Maurice Baker, Carlos Delfino and Mario Kasun. The superseded values are kept in the record (`correction`).
 
 ## Injury replacements (the Commissioner, February 18, 2005)
 

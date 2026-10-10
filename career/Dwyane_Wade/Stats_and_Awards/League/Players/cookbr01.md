@@ -127,4 +127,4 @@ Simulated honors and shortlist placings through 2006-01-15, from closed award de
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
-| West Rookie of the Month | 2003-10-28 to 2003-11-30 | 2003-12-02 | Shortlist, No. 3 | [Decision](../2003-04/11_November/League_Awards.md) |
+| West Rookie of the Month | 2003-10-28 to 2003-11-30 | 2003-12-02 | Superseded by the correction of 2006-01-15 (Marquis Daniels in the corrected record) | [Decision](../2003-04/11_November/League_Awards.md) |

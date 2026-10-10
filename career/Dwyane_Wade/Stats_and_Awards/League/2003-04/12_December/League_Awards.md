@@ -34,14 +34,14 @@ The rows below are an internal shortlist, not published NBA vote totals. A calen
 | East | 3 | Kirk Hinrich | Chicago Bulls | 14 G, 6-8 in his games, 13.8 PTS, 3.7 REB, 6.6 AST, Game Score 11.42 a game; score 13.136 | Shortlist |
 | West | 1 | Carmelo Anthony | Denver Nuggets | 16 G, 13-3 in his games, 16.8 PTS, 5.9 REB, 2.8 AST, Game Score 10.42 a game; score 13.669 | **WINNER** |
 | West | 2 | Josh Howard | Dallas Mavericks | 13 G, 9-4 in his games, 10.9 PTS, 6.1 REB, 1.5 AST, Game Score 9.0 a game; score 11.769 | Shortlist |
-| West | 3 | Mickael Pietrus | Golden State Warriors | 12 G, 7-5 in his games, 4.5 PTS, 1.3 REB, 1.0 AST, Game Score 3.32 a game; score 5.65 | Shortlist |
+| West | 3 | Marquis Daniels | Dallas Mavericks | 8 G, 6-2 in his games, 7.0 PTS, 2.5 REB, 2.1 AST, Game Score 4.75 a game; score 7.75 | Shortlist |
 
 ## Decision record
 
 - East Player of the Month, December 1, 2003 to December 31, 2003, announced January 2, 2004: **Dwyane Wade**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
 - West Player of the Month, December 1, 2003 to December 31, 2003, announced January 2, 2004: **Kevin Garnett**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
 - East Rookie of the Month, December 1, 2003 to December 31, 2003, announced January 2, 2004: **Dwyane Wade**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
-- West Rookie of the Month, December 1, 2003 to December 31, 2003, announced January 2, 2004: **Carmelo Anthony**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
+- West Rookie of the Month, December 1, 2003 to December 31, 2003, announced January 2, 2004: **Carmelo Anthony**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`). Corrected on January 15, 2006 (award audit, approved by the user): shortlist Carmelo Anthony, Josh Howard, Marquis Daniels (was Carmelo Anthony, Josh Howard, Mickael Pietrus); the winner is unchanged. The superseded values are kept in the record (`correction`).
 
 
 ## By week

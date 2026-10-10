@@ -91,12 +91,12 @@ Announced April 26, 2004 · 29 head coaches, not for their own players · ballot
 
 ## All-Rookie teams
 
-Announced April 27, 2004 · 29 head coaches, not for their own players · ballot 2-1 · [tally](Season_Awards.md#all-rookie-teams).
+Announced April 27, 2004 · 29 head coaches, not for their own players · ballot 2-1 · [tally](Season_Awards.md#all-rookie-teams). Corrected on January 15, 2006 (award audit, approved by the user): Second Team: Marquis Daniels and Raül López replace T.J. Ford and Keith Bogans. The superseded values are kept in the record (`correction`).
 
 | Team | Player 1 | Player 2 | Player 3 | Player 4 | Player 5 |
 | --- | --- | --- | --- | --- | --- |
 | First | Carmelo Anthony (Denver Nuggets) | Chris Bosh (Toronto Raptors) | Dwyane Wade (Miami Heat) | Kirk Hinrich (Chicago Bulls) | LeBron James (Cleveland Cavaliers) |
-| Second | Josh Howard (Dallas Mavericks) | Boris Diaw (Atlanta Hawks) | Jarvis Hayes (Washington Wizards) | T.J. Ford (Milwaukee Bucks) | Keith Bogans (Orlando Magic) |
+| Second | Josh Howard (Dallas Mavericks) | Boris Diaw (Atlanta Hawks) | Jarvis Hayes (Washington Wizards) | Marquis Daniels (Dallas Mavericks) | Raül López (Utah Jazz) |
 
 <details>
 <summary>Voting procedure and eligibility</summary>

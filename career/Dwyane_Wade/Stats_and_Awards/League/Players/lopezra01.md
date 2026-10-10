@@ -118,4 +118,9 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2006-01-15. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+Simulated honors and shortlist placings through 2006-01-15, from closed award decisions (1 won). Historical awards are not imported.
+
+| Award | Period | Announced | Result | Record |
+| --- | --- | --- | --- | --- |
+| West Rookie of the Month | 2004-04-01 to 2004-04-14 | 2004-04-16 | Shortlist, No. 2 (corrected on 2006-01-15, superseding Chris Kaman) | [Decision](../2003-04/04_April/League_Awards.md) |
+| All-Rookie Second Team | 2003-10-28 to 2004-04-14 | 2004-04-27 | **Selected** (corrected on 2006-01-15, superseding T.J. Ford, Keith Bogans) | [Decision](../2003-04/Season_Awards.md) |
