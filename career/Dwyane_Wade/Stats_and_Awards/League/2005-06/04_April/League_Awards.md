@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: April 1-30, 2006
 
-As of April 6, 2006: no month award decision closed (Player and Rookie of the Month announced April 21, 2006); 2 Player of the Week decision(s) closed on this month's week pages, announced April 3, 2006.
+As of April 7, 2006: no month award decision closed (Player and Rookie of the Month announced April 21, 2006); 2 Player of the Week decision(s) closed on this month's week pages, announced April 3, 2006.
 
 Official award window: not recorded. Announcement date: not recorded.
 
