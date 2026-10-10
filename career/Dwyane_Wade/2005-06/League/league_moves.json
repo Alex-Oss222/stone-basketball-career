@@ -4531,6 +4531,104 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.98 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-03-04-expire-smithch04",
+   "date": "2006-03-04",
+   "kind": "expire",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "from": "Golden State Warriors",
+   "to": null,
+   "role": {
+    "player_id": "Charles Smith",
+    "bbr_id": "smithch04",
+    "position": "SG",
+    "games": 22,
+    "minutes": 210
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-03-04-ten_day-smithch04",
+   "date": "2006-03-04",
+   "kind": "ten_day",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Charles Smith",
+    "bbr_id": "smithch04",
+    "position": "SG",
+    "games": 22,
+    "minutes": 210
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-03-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.73 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-03-04-expire-pricero01",
+   "date": "2006-03-04",
+   "kind": "expire",
+   "player": "Ronnie Price",
+   "bbr_id": "pricero01",
+   "from": "Memphis Grizzlies",
+   "to": null,
+   "role": {
+    "player_id": "Ronnie Price",
+    "bbr_id": "pricero01",
+    "position": "PG",
+    "games": 29,
+    "minutes": 150
+   },
+   "contract": null,
+   "note": "10-day contract ended (3.1 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-03-04-waive-kukocto01",
+   "date": "2006-03-04",
+   "kind": "waive",
+   "player": "Toni Kukoč",
+   "bbr_id": "kukocto01",
+   "from": "New York Knicks",
+   "to": null,
+   "role": {
+    "player_id": "Toni Kukoč",
+    "bbr_id": "kukocto01",
+    "position": "PF",
+    "games": 65,
+    "minutes": 1018
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-03-06"
+  },
+  {
+   "id": "2005-06-market-2006-03-04-ten_day-pricero01",
+   "date": "2006-03-04",
+   "kind": "ten_day",
+   "player": "Ronnie Price",
+   "bbr_id": "pricero01",
+   "from": null,
+   "to": "New York Knicks",
+   "role": {
+    "player_id": "Ronnie Price",
+    "bbr_id": "pricero01",
+    "position": "PG",
+    "games": 29,
+    "minutes": 150
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-03-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.29 x fit"
   }
  ],
  "market_days": [
@@ -4656,6 +4754,7 @@
   "2006-02-28",
   "2006-03-01",
   "2006-03-02",
-  "2006-03-03"
+  "2006-03-03",
+  "2006-03-04"
  ]
 }
