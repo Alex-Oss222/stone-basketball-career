@@ -290,6 +290,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Tony Bobbitt](../../../Players/tonybobbitt.md) | 26 | ATL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Andre Emmett](../../../Players/andreemmett.md) | 23 | CHI | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Kirk Snyder](../../../Players/kirksnyder.md) | 22 | CHI | NBA | SG | 4 | 0 | 21.2 | 4.0 | 7.5 | .533 | 1.5 | 2.0 | .750 | 2.5 | 5.5 | .455 | .633 | 1.5 | 3.0 | .500 | 1.2 | 1.8 | 3.0 | 2.2 | 0.5 | 0.2 | 2.2 | 2.5 | 11.0 | .624 |
+| [Charles Smith](../../../Players/smithch04.md) | 30 | SAC | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 
