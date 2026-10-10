@@ -4,7 +4,7 @@
 
 NBA regular season · 2005-06
 
-As of January 29, 2006: 45 closed Miami games in this period. Rows cover Miami's closed games only.
+As of January 30, 2006: 45 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
@@ -73,7 +73,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | --- | --- | ---: | --- |
 | [November 2005](11_November/Team_Stats.md) | November 1-30, 2005 | 15 | Complete |
 | [December 2005](12_December/Team_Stats.md) | December 1-31, 2005 | 16 | Complete |
-| [January 2006](01_January/Team_Stats.md) | January 1-31, 2006 | 14 | Through January 29, 2006 |
+| [January 2006](01_January/Team_Stats.md) | January 1-31, 2006 | 14 | Through January 30, 2006 |
 | [February 2006](02_February/Team_Stats.md) | February 1-28, 2006 | 0 | Not started |
 | [March 2006](03_March/Team_Stats.md) | March 1-31, 2006 | 0 | Not started |
 | [April 2006](04_April/Team_Stats.md) | April 1-30, 2006 | 0 | Not started |

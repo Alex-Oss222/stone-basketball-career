@@ -2,9 +2,9 @@
 
 # Contract | Quincy Lewis
 
-Known through: 2006-01-29. [Open interactive contract](lewisqu01.html#contract) · [Contract history](lewisqu01.html#contract-history)
+Known through: 2006-01-30. [Open interactive contract](lewisqu01.html#contract) · [Contract history](lewisqu01.html#contract-history)
 
-Quincy Lewis: No verified contract record. Evidence cutoff: 2006-01-29.
+Quincy Lewis: No verified contract record. Evidence cutoff: 2006-01-30.
 
 ## Current contract
 

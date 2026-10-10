@@ -1667,6 +1667,110 @@
     }
    ],
    "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-01-23-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2006-01-23",
+   "period_end": "2006-01-29",
+   "announced_on": "2006-01-30",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/01_January/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Chris Bosh",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 29.5,
+     "reb": 9.8,
+     "ast": 4.2,
+     "game_score": 25.8,
+     "score": 109.2,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 27.5,
+     "reb": 7.0,
+     "ast": 3.8,
+     "game_score": 23.4,
+     "score": 105.6,
+     "rank": 2
+    },
+    {
+     "player": "Jason Terry",
+     "team": "Atlanta Hawks",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 23.5,
+     "reb": 4.0,
+     "ast": 6.5,
+     "game_score": 21.7,
+     "score": 92.8,
+     "rank": 3
+    }
+   ],
+   "winner": "Chris Bosh"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-01-23-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2006-01-23",
+   "period_end": "2006-01-29",
+   "announced_on": "2006-01-30",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/01_January/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 28.5,
+     "reb": 10.2,
+     "ast": 2.8,
+     "game_score": 22.98,
+     "score": 97.9,
+     "rank": 1
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 25.0,
+     "reb": 14.8,
+     "ast": 2.0,
+     "game_score": 20.93,
+     "score": 89.7,
+     "rank": 2
+    },
+    {
+     "player": "Mike Bibby",
+     "team": "Sacramento Kings",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 26.8,
+     "reb": 4.0,
+     "ast": 6.8,
+     "game_score": 20.05,
+     "score": 89.2,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
   }
  ]
 }

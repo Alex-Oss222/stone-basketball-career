@@ -3512,6 +3512,46 @@
    },
    "contract": null,
    "note": "10-day contract ended (0.8 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-01-30-waive-rebraze01",
+   "date": "2006-01-30",
+   "kind": "waive",
+   "player": "Željko Rebrača",
+   "bbr_id": "rebraze01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Željko Rebrača",
+    "bbr_id": "rebraze01",
+    "position": "C",
+    "games": 29,
+    "minutes": 412
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-02-01"
+  },
+  {
+   "id": "2005-06-market-2006-01-30-ten_day-hunteli01",
+   "date": "2006-01-30",
+   "kind": "ten_day",
+   "player": "Lindsey Hunter",
+   "bbr_id": "hunteli01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Lindsey Hunter",
+    "bbr_id": "hunteli01",
+    "position": "PG",
+    "games": 30,
+    "minutes": 353
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-09",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.03 x fit"
   }
  ],
  "market_days": [
@@ -3604,6 +3644,7 @@
   "2006-01-26",
   "2006-01-27",
   "2006-01-28",
-  "2006-01-29"
+  "2006-01-29",
+  "2006-01-30"
  ]
 }

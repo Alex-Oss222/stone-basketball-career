@@ -2,9 +2,9 @@
 
 # Contract | Jackson Vroman
 
-Known through: 2006-01-29. [Open interactive contract](jacksonvroman.html#contract) · [Contract history](jacksonvroman.html#contract-history)
+Known through: 2006-01-30. [Open interactive contract](jacksonvroman.html#contract) · [Contract history](jacksonvroman.html#contract-history)
 
-Jackson Vroman: under contract. Evidence cutoff: 2006-01-29.
+Jackson Vroman: under contract. Evidence cutoff: 2006-01-30.
 
 ## Current contract
 

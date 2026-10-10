@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2006-01-29** · Toronto Raptors · #4 · PF · age 21
+Career date: **2006-01-30** · Toronto Raptors · #4 · PF · age 21
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -51,6 +51,7 @@ No playoff games closed.
 | Announced | Award |
 | --- | --- |
 | 2006-01-02 | East Player of the Month (2005-12-01 to 2005-12-31) |
+| 2006-01-30 | East Player of the Week (2006-01-23 to 2006-01-29) |
 
 ## Milestones this season
 

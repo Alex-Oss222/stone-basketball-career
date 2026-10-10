@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2006-01-29",
+  "as_of": "2006-01-30",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2006-01-29"
+              "2006-01-30"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2006-01-29",
+              "2006-01-30",
               "Current checkpoint",
               "2006-01-29-miami-heat-at-houston-rockets",
               "Recorded",
@@ -94,8 +94,18 @@
               }
             ],
             [
-              "2006-01-30",
-              "Next Miami game, vs Los Angeles Clippers",
+              "2006-02-01",
+              "Staff rotation review",
+              "Coaching staff (same rule for every player)",
+              "Scheduled; a role request may be logged before it",
+              {
+                "label": "Rule",
+                "href": "../../../docs/front_office.md"
+              }
+            ],
+            [
+              "2006-02-02",
+              "Next Miami game, vs Cleveland Cavaliers",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
@@ -104,23 +114,13 @@
               }
             ],
             [
-              "2006-01-30",
-              "League awards announced: Player of the Week",
+              "2006-02-02",
+              "League awards announced: Player of the Month, Rookie of the Month",
               "League (closed results only)",
               "Scheduled",
               {
                 "label": "Awards",
                 "href": "#calendar"
-              }
-            ],
-            [
-              "2006-02-01",
-              "Staff rotation review",
-              "Coaching staff (same rule for every player)",
-              "Scheduled; a role request may be logged before it",
-              {
-                "label": "Rule",
-                "href": "../../../docs/front_office.md"
               }
             ],
             [
@@ -668,7 +668,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-29"
+          "value": "2006-01-30"
         },
         {
           "label": "Team",
@@ -1118,7 +1118,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-29"
+          "value": "2006-01-30"
         },
         {
           "label": "Team",
@@ -1605,7 +1605,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-29"
+          "value": "2006-01-30"
         },
         {
           "label": "Team",
@@ -2103,7 +2103,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-29"
+          "value": "2006-01-30"
         },
         {
           "label": "Team",
@@ -2528,7 +2528,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-29"
+          "value": "2006-01-30"
         },
         {
           "label": "Team",
@@ -2971,7 +2971,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-29"
+          "value": "2006-01-30"
         },
         {
           "label": "Team",
@@ -3396,7 +3396,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-29"
+          "value": "2006-01-30"
         },
         {
           "label": "Team",
@@ -3893,7 +3893,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-29"
+          "value": "2006-01-30"
         },
         {
           "label": "Team",
@@ -3910,7 +3910,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "52 closed game records in 2005-06 through 2006-01-29. Competitions remain separate.",
+      "summary": "52 closed game records in 2005-06 through 2006-01-30. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -4854,7 +4854,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-29"
+          "value": "2006-01-30"
         },
         {
           "label": "Team",

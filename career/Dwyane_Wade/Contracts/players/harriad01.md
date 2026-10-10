@@ -2,9 +2,9 @@
 
 # Contract | Adam Harrington
 
-Known through: 2006-01-29. [Open interactive contract](harriad01.html#contract) · [Contract history](harriad01.html#contract-history)
+Known through: 2006-01-30. [Open interactive contract](harriad01.html#contract) · [Contract history](harriad01.html#contract-history)
 
-Adam Harrington: unsigned free agent. Evidence cutoff: 2006-01-29.
+Adam Harrington: unsigned free agent. Evidence cutoff: 2006-01-30.
 
 ## Current contract
 

@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-01-29. [Search the contract directory](index.html)
+Known through 2006-01-30. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -385,7 +385,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Lee Nailon](players/nailole01.md) | Denver Nuggets | under contract | Lee Nailon · 2005-09-09 | 3 |
 | [Leon Smith](players/smithle01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Linas Kleiza](players/kleizli01.md) | New Jersey Nets | under contract | Linas Kleiza · 2005-08-19 | 1 |
-| [Lindsey Hunter](players/hunteli01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
+| [Lindsey Hunter](players/hunteli01.md) | Atlanta Hawks | under contract unverified | No verified current agreement | 0 |
 | [Linton Johnson](players/johnsli01.md) | San Antonio Spurs | under contract | Linton Johnson · 2005-09-23 | 1 |
 | [Lionel Chalmers](players/lionelchalmers.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Lonny Baxter](players/baxtelo01.md) | Toronto Raptors | under contract | Lonny Baxter · 2005-08-05 | 2 |
@@ -658,7 +658,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Zach Randolph](players/randoza01.md) | Portland Trail Blazers | under contract | Zach Randolph · 2005-08-19 | 2 |
 | [Zarko Cabarkapa](players/cabarza01.md) | Portland Trail Blazers | No verified contract record | No verified current agreement | 0 |
 | [Zaza Pachulia](players/pachuza01.md) | Orlando Magic | under contract | Zaza Pachulia · 2005-09-30 | 1 |
-| [Zeljko Rebraca](players/rebraze01.md) | Atlanta Hawks | under contract | Zeljko Rebraca · 2005-08-19 | 2 |
+| [Zeljko Rebraca](players/rebraze01.md) | Free agent | under contract | Zeljko Rebraca · 2005-08-19 | 2 |
 | [Zendon Hamilton](players/hamilze01.md) | Phoenix Suns | under contract | Zendon Hamilton · 2005-08-02 | 1 |
 | [Zoran Planinic](players/planizo01.md) | Orlando Magic | No verified contract record | No verified current agreement | 0 |
 | [Zydrunas Ilgauskas](players/ilgauzy01.md) | Philadelphia 76ers | under contract | Zydrunas Ilgauskas · 2005-08-02 | 2 |
