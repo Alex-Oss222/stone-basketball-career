@@ -3552,6 +3552,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.03 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-31-ten_day-robinbe01",
+   "date": "2006-01-31",
+   "kind": "ten_day",
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "from": null,
+   "to": "Milwaukee Bucks",
+   "role": {
+    "player_id": "Bernard Robinson",
+    "bbr_id": "robinbe01",
+    "position": "SF",
+    "games": 66,
+    "minutes": 1303
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-10",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 0.0 x fit"
   }
  ],
  "market_days": [
@@ -3645,6 +3667,7 @@
   "2006-01-27",
   "2006-01-28",
   "2006-01-29",
-  "2006-01-30"
+  "2006-01-30",
+  "2006-01-31"
  ]
 }
