@@ -3450,6 +3450,50 @@
    "contract": null,
    "note": "cleared waivers from Portland Trail Blazers: a free agent",
    "waiver": "2005-06-market-2006-01-25-waive-robinbe01"
+  },
+  {
+   "id": "2005-06-market-2006-01-28-claim-johnser02",
+   "date": "2006-01-28",
+   "kind": "claim",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Portland Trail Blazers (worst record first)",
+   "waiver": "2005-06-market-2006-01-26-waive-johnser02"
+  },
+  {
+   "id": "2005-06-market-2006-01-28-ten_day-walshma01",
+   "date": "2006-01-28",
+   "kind": "ten_day",
+   "player": "walshma01",
+   "bbr_id": "walshma01",
+   "from": null,
+   "to": "Cleveland Cavaliers",
+   "role": {
+    "player_id": "walshma01",
+    "bbr_id": "walshma01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-07",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 0.0 x fit"
   }
  ],
  "market_days": [
@@ -3540,6 +3584,7 @@
   "2006-01-24",
   "2006-01-25",
   "2006-01-26",
-  "2006-01-27"
+  "2006-01-27",
+  "2006-01-28"
  ]
 }
