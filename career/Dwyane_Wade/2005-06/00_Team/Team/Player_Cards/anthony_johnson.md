@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 30 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-12-15 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-12-16 
 
 **Contract/control:** Signed September 2, 2005 (mid_level): 3 season(s) from 2005-06, $16,200,000 scheduled ($5,000,000 in 2005-06). (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
 
@@ -50,7 +50,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2004-05 | Utah Jazz, Indiana Pacers | 66 | 32 | 29.1 | 10.6 | 3.5 | 4.9 | 1.0 | 0.2 | 2.1 | 0.467 | 0.488 | 0.817 |
-| 2005-06 | MIA | 23 | 0 | 11.2 | 4.3 | 1.0 | 2.1 | 0.4 | 0.1 | 0.9 | 45.5% | 35.0% | 79.3% |
+| 2005-06 | MIA | 24 | 0 | 11.3 | 4.2 | 1.0 | 2.0 | 0.5 | 0.1 | 0.9 | 45.6% | 35.0% | 79.3% |
 
 Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
 

@@ -14,4 +14,6 @@ days: 15-21
 
 ## Games and events
 
+- 2005-12-16: Miami Heat 110 at Philadelphia 76ers 90 — Miami Heat W 110-90 ([Game 1](Game_1.md), event `2005-12-16-miami-heat-at-philadelphia-76ers`)
+
 ## Consequences
