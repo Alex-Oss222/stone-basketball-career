@@ -4272,6 +4272,24 @@
    "bbr_id": "pollasc01",
    "from": "Indiana Pacers",
    "to": "Boston Celtics"
+  },
+  {
+   "id": "2005-06-market-2006-02-21-expire-rebraze01",
+   "date": "2006-02-21",
+   "kind": "expire",
+   "player": "Željko Rebrača",
+   "bbr_id": "rebraze01",
+   "from": "Sacramento Kings",
+   "to": null,
+   "role": {
+    "player_id": "Željko Rebrača",
+    "bbr_id": "rebraze01",
+    "position": "C",
+    "games": 29,
+    "minutes": 412
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.0 minutes a game)"
   }
  ],
  "market_days": [
@@ -4386,6 +4404,7 @@
   "2006-02-17",
   "2006-02-18",
   "2006-02-19",
-  "2006-02-20"
+  "2006-02-20",
+  "2006-02-21"
  ]
 }
