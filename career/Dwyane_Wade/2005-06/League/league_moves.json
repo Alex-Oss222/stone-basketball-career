@@ -3914,6 +3914,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 0.0 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-02-10-rest_of_season-robinbe01",
+   "date": "2006-02-10",
+   "kind": "rest_of_season",
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "from": "Milwaukee Bucks",
+   "to": "Milwaukee Bucks",
+   "role": {
+    "player_id": "Bernard Robinson",
+    "bbr_id": "robinbe01",
+    "position": "SF",
+    "games": 66,
+    "minutes": 1303
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 16.5 minutes a game on his 10-day contracts"
   }
  ],
  "market_days": [
@@ -4017,6 +4039,7 @@
   "2006-02-06",
   "2006-02-07",
   "2006-02-08",
-  "2006-02-09"
+  "2006-02-09",
+  "2006-02-10"
  ]
 }
