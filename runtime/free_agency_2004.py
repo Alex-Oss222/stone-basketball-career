@@ -274,13 +274,14 @@ def identity(root=ROOT, year=None, on=None):
         with year_context(int(year), root):
             return identity(root, on=on)
     from .rotations import load_rosters
+    from .write_back import position_on              # a corrected position reads as it stood on the day (dated replay)
     out = {}
     registry = _read(root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json")
     for p in registry["players"] if isinstance(registry, dict) else registry:
         if on is not None and (p.get("added_on") or "") > on:
             continue
         if p.get("bbr_id"):
-            out[p["bbr_id"]] = {"name": p["name"], "birth_date": p.get("birth_date"), "position": p.get("position")}
+            out[p["bbr_id"]] = {"name": p["name"], "birth_date": p.get("birth_date"), "position": position_on(p, on)}
     for season in (SEASON, NEW):
         for club in load_rosters(season, root).values():
             for p in club["players"]:

@@ -41,5 +41,28 @@ class DatedRegistryTests(unittest.TestCase):
         self.assertIn("debut01", undated)                  # no date: every row on file, as before
 
 
+
+class DatedPositionTests(unittest.TestCase):
+    """A corrected registry position reads as it stood before its correction date (runtime/write_back.position_on), so a
+    closed summer or a recorded trade replays with the position it read."""
+
+    def test_position_reads_by_date(self):
+        from runtime.write_back import position_on
+        row = {"position": "SG", "position_before": "SF", "position_corrected_on": "2005-12-31"}
+        self.assertEqual(position_on(row, "2005-07-01"), "SF")
+        self.assertEqual(position_on(row, "2005-12-31"), "SG")
+        self.assertEqual(position_on(row), "SG")
+        self.assertEqual(position_on({"position": "PF"}, "2004-01-01"), "PF")
+
+    def test_live_registry_corrections_are_dated(self):
+        import json
+        rows = json.loads((ROOT / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json").read_text())["players"]
+        corrected = [r for r in rows if r.get("position_corrected_on")]
+        self.assertTrue(corrected)
+        for r in corrected:
+            self.assertIn("position_before", r)
+            self.assertLessEqual(r["position_corrected_on"], json.loads((ROOT / "career/Dwyane_Wade/2005-06/current_state.json").read_text())["current_date"])
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -579,6 +579,16 @@ def registry_position(sources, bbr=None, name=None, club=None):
     return None, None
 
 
+def position_on(entry, on=None):
+    """A registry row's position as it stood on `on`: a row whose placeholder `repair_positions` corrected keeps the
+    earlier value (`position_before`) for any date before `position_corrected_on`, so a reader replaying an earlier
+    decision (a closed summer market, a recorded trade) reads what that decision read; on or after the correction, and
+    with no date, the row's current position."""
+    if on and entry.get("position_corrected_on") and on < entry["position_corrected_on"]:
+        return entry.get("position_before")
+    return entry.get("position")
+
+
 def known_position(entry):
     """A registry row's position for any reader that selects by position: None for a row whose position no source records
     (UNKNOWN_BASIS), where `position` holds only the page slot."""
@@ -627,14 +637,28 @@ def _fill_positions(root, reg):
         pos, src = registry_position(sources[season], p.get("bbr_id"), p["name"], p.get("team_name"))
         if pos is None:
             if basis != UNKNOWN_BASIS:
+                _date_correction(root, p)
                 p["position_basis"] = UNKNOWN_BASIS
                 changed.append((p["registry_id"], p["name"], p["position"], p["position"], UNKNOWN_BASIS))
             continue
         if pos == p["position"] and basis is None:
             continue                                            # a sourced SF: the row was right
+        _date_correction(root, p)
         changed.append((p["registry_id"], p["name"], p["position"], pos, src))
         p["position"], p["position_basis"] = pos, src
     return changed
+
+
+def _date_correction(root, p):
+    """Keep the value a correction replaces, dated by the career clock (`position_on`): earlier decisions read it."""
+    if "position_corrected_on" in p:
+        return
+    try:
+        day = clock(root)
+    except ValueError:                                  # a root with no career state (a fixture): nothing to date against
+        return
+    p["position_before"], p["position_basis_before"] = p.get("position"), p.get("position_basis")
+    p["position_corrected_on"] = day
 
 
 def move_registry_rows(root, moves):

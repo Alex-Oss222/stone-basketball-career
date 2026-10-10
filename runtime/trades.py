@@ -1863,14 +1863,16 @@ def _registry_positions(root):
     key = str(Path(root).resolve())
     if key not in _REGISTRY:
         data = _read_records(Path(root) / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json") or {"players": []}
-        _REGISTRY[key] = {p["bbr_id"]: p.get("position") for p in data["players"] if p.get("bbr_id")}
+        _REGISTRY[key] = {p["bbr_id"]: p for p in data["players"] if p.get("bbr_id")}
     return _REGISTRY[key]
 
 
 def _group(assets, bbr, root):
     """His position group (G, F, C) as the summer market reads it: the registry's listed position, else the dated roster's."""
     from .free_agency_2004 import GROUP
-    pos = _registry_positions(root).get(bbr) or assets.positions.get(bbr, (None, None, 9))[1] or "F"
+    from .write_back import position_on              # a corrected registry position reads as it stood on the desk's date
+    row = _registry_positions(root).get(bbr)
+    pos = (position_on(row, assets.on) if row else None) or assets.positions.get(bbr, (None, None, 9))[1] or "F"
     return GROUP.get(pos, GROUP.get(pos.split("-")[0], "F"))
 
 
