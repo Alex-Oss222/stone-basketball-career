@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-12-26 · Miami Heat · active
+Career date: 2005-12-31 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-35 closed game records in 2005-06 through 2005-12-26. Competitions remain separate.
+38 closed game records in 2005-06 through 2005-12-31. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 28 | 37.1 | 25.8 | 6.6 | 4.2 | 1.7 | Complete |
+| regular | 31 | 36.7 | 25.1 | 6.4 | 4.2 | 1.8 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 244 | 438 | 0.557 | 39 | 86 | 0.453 |
+| regular | 265 | 478 | 0.554 | 42 | 91 | 0.462 |
 
 ## Closed source games
 
@@ -65,6 +65,9 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-12-20 | regular | Atlanta Hawks | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_3.md) |
 | 2005-12-23 | regular | New Jersey Nets | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_1.md) |
 | 2005-12-25 | regular | Los Angeles Lakers | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_2.md) |
+| 2005-12-27 | regular | Milwaukee Bucks | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_3.md) |
+| 2005-12-29 | regular | Detroit Pistons | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_4.md) |
+| 2005-12-30 | regular | Washington Wizards | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md) |
 
 ## Evidence available for decisions
 
@@ -144,4 +147,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_3.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_4.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

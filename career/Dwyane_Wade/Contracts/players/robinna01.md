@@ -2,9 +2,9 @@
 
 # Contract | Nate Robinson
 
-Known through: 2005-12-26. [Open interactive contract](robinna01.html#contract) · [Contract history](robinna01.html#contract-history)
+Known through: 2005-12-31. [Open interactive contract](robinna01.html#contract) · [Contract history](robinna01.html#contract-history)
 
-Nate Robinson: under contract. Evidence cutoff: 2005-12-26.
+Nate Robinson: under contract. Evidence cutoff: 2005-12-31.
 
 ## Current contract
 

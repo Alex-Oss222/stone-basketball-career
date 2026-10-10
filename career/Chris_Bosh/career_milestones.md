@@ -2,7 +2,7 @@
 
 # Chris Bosh | Career milestones
 
-Career date: 2005-12-26. Born 1984-03-24. 173 regular-season and 31 playoff games closed.
+Career date: 2005-12-31. Born 1984-03-24. 176 regular-season and 31 playoff games closed.
 
 Milestones count closed regular-season games (the NBA convention); playoff milestones are their own record and preseason never counts. Each is dated by the game that reached it, with his age on that day. [Career](README.md)
 
@@ -33,19 +33,20 @@ Milestones count closed regular-season games (the NBA convention); playoff miles
 | 2,000 career points | 2005-02-22 | 20 years, 335 days | 2004-05 | 128 | New Jersey Nets | 2,003 |
 | 500 career free throws made | 2005-04-11 | 21 years, 18 days | 2004-05 | 151 | Indiana Pacers | 504 |
 | 1,500 career rebounds | 2005-12-19 | 21 years, 270 days | 2005-06 | 171 | Orlando Magic | 1,506 |
+| 250 career blocks | 2005-12-27 | 21 years, 278 days | 2005-06 | 174 | Detroit Pistons | 250 |
 
 ## Next regular-season milestones
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 3,000 career points | 2,882 | 118 |
-| 2,000 career rebounds | 1,525 | 475 |
-| 500 career assists | 384 | 116 |
-| 250 career steals | 168 | 82 |
-| 250 career blocks | 248 | 2 |
-| 100 career three-pointers made | 46 | 54 |
-| 1,000 career free throws made | 614 | 386 |
-| 200 career games played | 173 | 27 |
+| 3,000 career points | 2,954 | 46 |
+| 2,000 career rebounds | 1,556 | 444 |
+| 500 career assists | 395 | 105 |
+| 250 career steals | 172 | 78 |
+| 500 career blocks | 252 | 248 |
+| 100 career three-pointers made | 47 | 53 |
+| 1,000 career free throws made | 633 | 367 |
+| 200 career games played | 176 | 24 |
 
 ## Playoff milestones reached
 

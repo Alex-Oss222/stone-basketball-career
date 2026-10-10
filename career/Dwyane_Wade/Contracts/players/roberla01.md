@@ -2,9 +2,9 @@
 
 # Contract | Lawrence Roberts
 
-Known through: 2005-12-26. [Open interactive contract](roberla01.html#contract) · [Contract history](roberla01.html#contract-history)
+Known through: 2005-12-31. [Open interactive contract](roberla01.html#contract) · [Contract history](roberla01.html#contract-history)
 
-Lawrence Roberts: under contract. Evidence cutoff: 2005-12-26.
+Lawrence Roberts: under contract. Evidence cutoff: 2005-12-31.
 
 ## Current contract
 
