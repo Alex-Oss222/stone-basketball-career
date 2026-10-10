@@ -2,9 +2,9 @@
 
 # Contract | Maciej Lampe
 
-Known through: 2006-03-05. [Open interactive contract](lampema01.html#contract) · [Contract history](lampema01.html#contract-history)
+Known through: 2006-03-06. [Open interactive contract](lampema01.html#contract) · [Contract history](lampema01.html#contract-history)
 
-Maciej Lampe: under contract. Evidence cutoff: 2006-03-05.
+Maciej Lampe: under contract. Evidence cutoff: 2006-03-06.
 
 ## Current contract
 

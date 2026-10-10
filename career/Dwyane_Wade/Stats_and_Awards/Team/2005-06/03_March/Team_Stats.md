@@ -4,7 +4,7 @@
 
 NBA regular season · March 1-31, 2006
 
-As of March 5, 2006: 2 closed Miami games in this period. Rows cover Miami's closed games only.
+As of March 6, 2006: 2 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
@@ -65,7 +65,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Period | Calendar dates | Closed games | Status |
 | --- | --- | ---: | --- |
-| [Week 1](Week_1/Team_Stats.md) | March 1-7, 2006 | 2 | Through March 5, 2006 |
+| [Week 1](Week_1/Team_Stats.md) | March 1-7, 2006 | 2 | Through March 6, 2006 |
 | [Week 2](Week_2/Team_Stats.md) | March 8-14, 2006 | 0 | Not started |
 | [Week 3](Week_3/Team_Stats.md) | March 15-21, 2006 | 0 | Not started |
 | [Week 4](Week_4/Team_Stats.md) | March 22-31, 2006 | 0 | Not started |

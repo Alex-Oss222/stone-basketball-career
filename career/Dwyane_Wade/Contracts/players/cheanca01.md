@@ -2,9 +2,9 @@
 
 # Contract | Calbert Cheaney
 
-Known through: 2006-03-05. [Open interactive contract](cheanca01.html#contract) · [Contract history](cheanca01.html#contract-history)
+Known through: 2006-03-06. [Open interactive contract](cheanca01.html#contract) · [Contract history](cheanca01.html#contract-history)
 
-Calbert Cheaney: under contract. Evidence cutoff: 2006-03-05.
+Calbert Cheaney: under contract. Evidence cutoff: 2006-03-06.
 
 ## Current contract
 

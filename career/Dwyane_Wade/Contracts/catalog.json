@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-03-05",
+  "as_of": "2006-03-06",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -5162,7 +5162,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Sacramento Kings",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,
@@ -5387,7 +5387,7 @@
     {
       "player_id": "kukocto01",
       "name": "Toni Kukoc",
-      "team": "Free agent",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": null,
       "recorded_agreements": 1,

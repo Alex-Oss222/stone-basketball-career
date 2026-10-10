@@ -2,9 +2,9 @@
 
 # Contract | Grant Long
 
-Known through: 2006-03-05. [Open interactive contract](longgr01.html#contract) · [Contract history](longgr01.html#contract-history)
+Known through: 2006-03-06. [Open interactive contract](longgr01.html#contract) · [Contract history](longgr01.html#contract-history)
 
-Grant Long: unsigned free agent. Evidence cutoff: 2006-03-05.
+Grant Long: unsigned free agent. Evidence cutoff: 2006-03-06.
 
 ## Current contract
 

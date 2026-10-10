@@ -2,9 +2,9 @@
 
 # Contract | Mamadou N'diaye
 
-Known through: 2006-03-05. [Open interactive contract](ndiayma02.html#contract) · [Contract history](ndiayma02.html#contract-history)
+Known through: 2006-03-06. [Open interactive contract](ndiayma02.html#contract) · [Contract history](ndiayma02.html#contract-history)
 
-Mamadou N'diaye: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2006-03-05.
+Mamadou N'diaye: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2006-03-06.
 
 ## Current contract
 

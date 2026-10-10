@@ -4629,6 +4629,68 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 5.29 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-03-06-claim-kukocto01",
+   "date": "2006-03-06",
+   "kind": "claim",
+   "player": "Toni Kukoč",
+   "bbr_id": "kukocto01",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Toni Kukoč",
+    "bbr_id": "kukocto01",
+    "position": "PF",
+    "games": 65,
+    "minutes": 1018
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from New York Knicks (worst record first)",
+   "waiver": "2005-06-market-2006-03-04-waive-kukocto01"
+  },
+  {
+   "id": "2005-06-market-2006-03-06-rest_of_season-rebraze01",
+   "date": "2006-03-06",
+   "kind": "rest_of_season",
+   "player": "Željko Rebrača",
+   "bbr_id": "rebraze01",
+   "from": "Cleveland Cavaliers",
+   "to": "Cleveland Cavaliers",
+   "role": {
+    "player_id": "Željko Rebrača",
+    "bbr_id": "rebraze01",
+    "position": "C",
+    "games": 29,
+    "minutes": 412
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 10.1 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2005-06-market-2006-03-06-expire-augmost01",
+   "date": "2006-03-06",
+   "kind": "expire",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": "Sacramento Kings",
+   "to": null,
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 385
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
   }
  ],
  "market_days": [
@@ -4756,6 +4818,7 @@
   "2006-03-02",
   "2006-03-03",
   "2006-03-04",
-  "2006-03-05"
+  "2006-03-05",
+  "2006-03-06"
  ]
 }

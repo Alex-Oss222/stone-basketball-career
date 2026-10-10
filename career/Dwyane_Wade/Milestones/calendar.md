@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2006-03-05 · Miami Heat · active
+Career date: 2006-03-06 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,7 +14,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2006-03-05 |
+| Career date | 2006-03-06 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
@@ -25,11 +25,11 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2006-03-05 | Current checkpoint | 2006-03-04-atlanta-hawks-at-miami-heat | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2006-03-06 | Current checkpoint | 2006-03-04-atlanta-hawks-at-miami-heat | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2005-10-04 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2006-03-06 | Next Miami game, at Charlotte Bobcats | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
-| 2006-03-06 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2006-03-08 | Next Miami game, vs Washington Wizards | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2006-03-13 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2006-03-15 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
