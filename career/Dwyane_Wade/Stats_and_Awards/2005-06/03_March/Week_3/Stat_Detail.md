@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2006-03-19](../../../../assets/stat_reports/personal_2005-06_2006-03-19.svg)
+![Player personal information and earned 2005-06 awards through 2006-03-20](../../../../assets/stat_reports/personal_2005-06_2006-03-20.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2006-03-19; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2006-03-20; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -46,10 +46,11 @@ Identity as of 2006-03-19; status snapshot dated 2005-10-26. User-established al
 | All-Star | 2005-11-01 to 2006-02-02 | 2006-02-02 | [All-Star](../../../League/2005-06/All_Star.md#all-stars) |
 | Eastern Conference Player of the Month | 2006-01-01 to 2006-01-31 | 2006-02-02 | [East POM](../../../League/2005-06/01_January/League_Awards.md#player-of-the-month) |
 | Eastern Conference Player of the Month | 2006-02-01 to 2006-02-28 | 2006-03-02 | [East POM](../../../League/2005-06/02_February/League_Awards.md#player-of-the-month) |
+| Eastern Conference Player of the Week | 2006-03-13 to 2006-03-19 | 2006-03-20 | [East POW](../../../League/2005-06/03_March/Week_3/League_Awards.md#player-of-the-week) |
 
 ## Statistics
 
-As of **2006-03-19**: 3 closed games; 3/3 have player participation and box coverage; recorded DNPs: 0.
+As of **2006-03-20**: 3 closed games; 3/3 have player participation and box coverage; recorded DNPs: 0.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
@@ -61,11 +62,11 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This scope | 22 | Miami Heat | NBA | SG / PG | 3 | 3 | 39.9 | 11.3 | 17.7 | .642 | 1.3 | 3.0 | .444 | 10.0 | 14.7 | .682 | .679 | 8.7 | 9.7 | .897 | 2.0 | 2.7 | 4.7 | 5.3 | 1.7 | 1.0 | 4.3 | 4.7 | 32.7 | .745 | — |
+| This scope | 22 | Miami Heat | NBA | SG / PG | 3 | 3 | 39.9 | 11.3 | 17.7 | .642 | 1.3 | 3.0 | .444 | 10.0 | 14.7 | .682 | .679 | 8.7 | 9.7 | .897 | 2.0 | 2.7 | 4.7 | 5.3 | 1.7 | 1.0 | 4.3 | 4.7 | 32.7 | .745 | [East POW](../../../League/2005-06/03_March/Week_3/League_Awards.md#player-of-the-week) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-03-19, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-03-20, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -134,7 +135,7 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-03-19, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-03-20, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -167,7 +168,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-03-19, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-03-20, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 

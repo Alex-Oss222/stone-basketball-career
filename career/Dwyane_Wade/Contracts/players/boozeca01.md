@@ -2,9 +2,9 @@
 
 # Contract | Carlos Boozer
 
-Known through: 2006-03-19. [Open interactive contract](boozeca01.html#contract) · [Contract history](boozeca01.html#contract-history)
+Known through: 2006-03-20. [Open interactive contract](boozeca01.html#contract) · [Contract history](boozeca01.html#contract-history)
 
-Carlos Boozer: under contract. Evidence cutoff: 2006-03-19.
+Carlos Boozer: under contract. Evidence cutoff: 2006-03-20.
 
 ## Current contract
 

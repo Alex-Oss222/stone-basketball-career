@@ -2,9 +2,9 @@
 
 # Contract | Jelani McCoy
 
-Known through: 2006-03-19. [Open interactive contract](mccoyje01.html#contract) · [Contract history](mccoyje01.html#contract-history)
+Known through: 2006-03-20. [Open interactive contract](mccoyje01.html#contract) · [Contract history](mccoyje01.html#contract-history)
 
-Jelani McCoy: under contract. Evidence cutoff: 2006-03-19.
+Jelani McCoy: under contract. Evidence cutoff: 2006-03-20.
 
 ## Current contract
 

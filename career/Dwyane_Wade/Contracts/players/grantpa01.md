@@ -2,9 +2,9 @@
 
 # Contract | Paul Grant
 
-Known through: 2006-03-19. [Open interactive contract](grantpa01.html#contract) · [Contract history](grantpa01.html#contract-history)
+Known through: 2006-03-20. [Open interactive contract](grantpa01.html#contract) · [Contract history](grantpa01.html#contract-history)
 
-Paul Grant: No verified contract record. Evidence cutoff: 2006-03-19.
+Paul Grant: No verified contract record. Evidence cutoff: 2006-03-20.
 
 ## Current contract
 

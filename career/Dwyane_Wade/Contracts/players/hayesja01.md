@@ -2,9 +2,9 @@
 
 # Contract | Jarvis Hayes
 
-Known through: 2006-03-19. [Open interactive contract](hayesja01.html#contract) · [Contract history](hayesja01.html#contract-history)
+Known through: 2006-03-20. [Open interactive contract](hayesja01.html#contract) · [Contract history](hayesja01.html#contract-history)
 
-Jarvis Hayes: No verified contract record. Evidence cutoff: 2006-03-19.
+Jarvis Hayes: No verified contract record. Evidence cutoff: 2006-03-20.
 
 ## Current contract
 

@@ -2811,6 +2811,110 @@
     }
    ],
    "winner": "Dirk Nowitzki"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-03-13-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2006-03-13",
+   "period_end": "2006-03-19",
+   "announced_on": "2006-03-20",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/03_March/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 33.0,
+     "reb": 4.8,
+     "ast": 6.2,
+     "game_score": 29.27,
+     "score": 123.1,
+     "rank": 1
+    },
+    {
+     "player": "Nenad Krstić",
+     "team": "New York Knicks",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 24.0,
+     "reb": 6.2,
+     "ast": 1.5,
+     "game_score": 20.35,
+     "score": 87.4,
+     "rank": 2
+    },
+    {
+     "player": "Jason Terry",
+     "team": "Atlanta Hawks",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 21.5,
+     "reb": 2.8,
+     "ast": 6.2,
+     "game_score": 19.25,
+     "score": 86.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwyane Wade"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-03-13-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2006-03-13",
+   "period_end": "2006-03-19",
+   "announced_on": "2006-03-20",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/03_March/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 34.5,
+     "reb": 4.5,
+     "ast": 6.0,
+     "game_score": 25.82,
+     "score": 112.3,
+     "rank": 1
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 26.2,
+     "reb": 10.5,
+     "ast": 3.8,
+     "game_score": 20.62,
+     "score": 85.5,
+     "rank": 2
+    },
+    {
+     "player": "Chris Paul",
+     "team": "Utah Jazz",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 18.2,
+     "reb": 7.0,
+     "ast": 8.2,
+     "game_score": 18.82,
+     "score": 78.3,
+     "rank": 3
+    }
+   ],
+   "winner": "Kobe Bryant"
   }
  ]
 }

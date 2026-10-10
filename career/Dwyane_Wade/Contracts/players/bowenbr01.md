@@ -2,9 +2,9 @@
 
 # Contract | Bruce Bowen
 
-Known through: 2006-03-19. [Open interactive contract](bowenbr01.html#contract) · [Contract history](bowenbr01.html#contract-history)
+Known through: 2006-03-20. [Open interactive contract](bowenbr01.html#contract) · [Contract history](bowenbr01.html#contract-history)
 
-Bruce Bowen: under contract unverified. Evidence cutoff: 2006-03-19.
+Bruce Bowen: under contract unverified. Evidence cutoff: 2006-03-20.
 
 ## Current contract
 
