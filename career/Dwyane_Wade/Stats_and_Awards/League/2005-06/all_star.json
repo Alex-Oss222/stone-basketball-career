@@ -274,6 +274,287 @@
      }
     ]
    }
+  },
+  {
+   "step": "starters",
+   "announced_on": "2006-02-02",
+   "evidence_through": "2006-01-22",
+   "electorate": "fans (ballot plurality)",
+   "panel": 101,
+   "lens": [
+    0.3,
+    0.7
+   ],
+   "conferences": {
+    "East": {
+     "starters": [
+      {
+       "player": "LeBron James",
+       "bbr_id": "jamesle01",
+       "team": "Cleveland Cavaliers",
+       "position": "F",
+       "games": 35,
+       "club_games": 38,
+       "pts": 27.4,
+       "reb": 6.7,
+       "ast": 5.5,
+       "game_score": 21.25,
+       "club_pct": 0.474,
+       "ballots": 101,
+       "past_all_star_weight": 1.0,
+       "prior_game_score": 19.95
+      },
+      {
+       "player": "Jermaine O'Neal",
+       "bbr_id": "onealje01",
+       "team": "Indiana Pacers",
+       "position": "F",
+       "games": 20,
+       "club_games": 39,
+       "pts": 19.6,
+       "reb": 8.0,
+       "ast": 2.2,
+       "game_score": 12.92,
+       "club_pct": 0.436,
+       "ballots": 78,
+       "past_all_star_weight": 2.95,
+       "prior_game_score": 16.28
+      },
+      {
+       "player": "Zydrunas Ilgauskas",
+       "bbr_id": "ilgauzy01",
+       "team": "Philadelphia 76ers",
+       "position": "C",
+       "games": 37,
+       "club_games": 40,
+       "pts": 17.1,
+       "reb": 7.5,
+       "ast": 1.5,
+       "game_score": 13.49,
+       "club_pct": 0.475,
+       "ballots": 71,
+       "past_all_star_weight": 1.64,
+       "prior_game_score": 13.26
+      },
+      {
+       "player": "Dwyane Wade",
+       "bbr_id": "wadedw01",
+       "team": "Miami Heat",
+       "position": "G",
+       "games": 41,
+       "club_games": 41,
+       "pts": 26.4,
+       "reb": 6.1,
+       "ast": 4.1,
+       "game_score": 23.72,
+       "club_pct": 0.634,
+       "ballots": 59,
+       "past_all_star_weight": 1.8,
+       "prior_game_score": 19.38
+      },
+      {
+       "player": "Allen Iverson",
+       "bbr_id": "iversal01",
+       "team": "Philadelphia 76ers",
+       "position": "G",
+       "games": 38,
+       "club_games": 40,
+       "pts": 28.4,
+       "reb": 3.7,
+       "ast": 5.6,
+       "game_score": 17.12,
+       "club_pct": 0.475,
+       "ballots": 58,
+       "past_all_star_weight": 2.89,
+       "prior_game_score": 17.11
+      }
+     ],
+     "leading_vote_getters": [
+      {
+       "player": "LeBron James",
+       "position": "F",
+       "team": "Cleveland Cavaliers",
+       "ballots": 101
+      },
+      {
+       "player": "Jermaine O'Neal",
+       "position": "F",
+       "team": "Indiana Pacers",
+       "ballots": 78
+      },
+      {
+       "player": "Zydrunas Ilgauskas",
+       "position": "C",
+       "team": "Philadelphia 76ers",
+       "ballots": 71
+      },
+      {
+       "player": "Dwyane Wade",
+       "position": "G",
+       "team": "Miami Heat",
+       "ballots": 59
+      },
+      {
+       "player": "Allen Iverson",
+       "position": "G",
+       "team": "Philadelphia 76ers",
+       "ballots": 58
+      },
+      {
+       "player": "Paul Pierce",
+       "position": "G",
+       "team": "Boston Celtics",
+       "ballots": 43
+      },
+      {
+       "player": "Jason Kidd",
+       "position": "G",
+       "team": "Milwaukee Bucks",
+       "ballots": 42
+      },
+      {
+       "player": "Ben Wallace",
+       "position": "C",
+       "team": "Detroit Pistons",
+       "ballots": 30
+      },
+      {
+       "player": "Chris Bosh",
+       "position": "F",
+       "team": "Toronto Raptors",
+       "ballots": 23
+      }
+     ]
+    },
+    "West": {
+     "starters": [
+      {
+       "player": "Kevin Garnett",
+       "bbr_id": "garneke01",
+       "team": "Minnesota Timberwolves",
+       "position": "F",
+       "games": 33,
+       "club_games": 38,
+       "pts": 27.3,
+       "reb": 11.9,
+       "ast": 3.8,
+       "game_score": 24.06,
+       "club_pct": 0.684,
+       "ballots": 101,
+       "past_all_star_weight": 4.07,
+       "prior_game_score": 22.74
+      },
+      {
+       "player": "Kobe Bryant",
+       "bbr_id": "bryanko01",
+       "team": "Los Angeles Lakers",
+       "position": "G",
+       "games": 39,
+       "club_games": 41,
+       "pts": 29.1,
+       "reb": 5.5,
+       "ast": 6.1,
+       "game_score": 21.39,
+       "club_pct": 0.561,
+       "ballots": 101,
+       "past_all_star_weight": 3.9,
+       "prior_game_score": 19.4
+      },
+      {
+       "player": "Shaquille O'Neal",
+       "bbr_id": "onealsh01",
+       "team": "Los Angeles Lakers",
+       "position": "C",
+       "games": 41,
+       "club_games": 41,
+       "pts": 21.1,
+       "reb": 9.5,
+       "ast": 3.0,
+       "game_score": 15.61,
+       "club_pct": 0.561,
+       "ballots": 101,
+       "past_all_star_weight": 4.46,
+       "prior_game_score": 19.01
+      },
+      {
+       "player": "Dirk Nowitzki",
+       "bbr_id": "nowitdi01",
+       "team": "Dallas Mavericks",
+       "position": "F",
+       "games": 41,
+       "club_games": 41,
+       "pts": 25.1,
+       "reb": 8.4,
+       "ast": 3.3,
+       "game_score": 20.0,
+       "club_pct": 0.634,
+       "ballots": 95,
+       "past_all_star_weight": 2.95,
+       "prior_game_score": 17.57
+      },
+      {
+       "player": "Ray Allen",
+       "bbr_id": "allenra02",
+       "team": "Seattle SuperSonics",
+       "position": "G",
+       "games": 40,
+       "club_games": 40,
+       "pts": 23.6,
+       "reb": 4.5,
+       "ast": 3.5,
+       "game_score": 16.7,
+       "club_pct": 0.425,
+       "ballots": 78,
+       "past_all_star_weight": 1.25,
+       "prior_game_score": 14.53
+      }
+     ],
+     "leading_vote_getters": [
+      {
+       "player": "Kevin Garnett",
+       "position": "F",
+       "team": "Minnesota Timberwolves",
+       "ballots": 101
+      },
+      {
+       "player": "Kobe Bryant",
+       "position": "G",
+       "team": "Los Angeles Lakers",
+       "ballots": 101
+      },
+      {
+       "player": "Shaquille O'Neal",
+       "position": "C",
+       "team": "Los Angeles Lakers",
+       "ballots": 101
+      },
+      {
+       "player": "Dirk Nowitzki",
+       "position": "F",
+       "team": "Dallas Mavericks",
+       "ballots": 95
+      },
+      {
+       "player": "Ray Allen",
+       "position": "G",
+       "team": "Seattle SuperSonics",
+       "ballots": 78
+      },
+      {
+       "player": "Stephon Marbury",
+       "position": "G",
+       "team": "Phoenix Suns",
+       "ballots": 23
+      },
+      {
+       "player": "Tim Duncan",
+       "position": "F",
+       "team": "San Antonio Spurs",
+       "ballots": 6
+      }
+     ]
+    }
+   }
   }
  ],
  "all_stars": []

@@ -3611,6 +3611,104 @@
    },
    "contract": null,
    "note": "10-day contract ended (4.7 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-02-02-waive-johnser02",
+   "date": "2006-02-02",
+   "kind": "waive",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-02-04"
+  },
+  {
+   "id": "2005-06-market-2006-02-02-ten_day-smithch04",
+   "date": "2006-02-02",
+   "kind": "ten_day",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Charles Smith",
+    "bbr_id": "smithch04",
+    "position": "SG",
+    "games": 22,
+    "minutes": 210
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-12",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.8 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-02-02-expire-schenlu01",
+   "date": "2006-02-02",
+   "kind": "expire",
+   "player": "Luke Schenscher",
+   "bbr_id": "schenlu01",
+   "from": "Golden State Warriors",
+   "to": null,
+   "role": {
+    "player_id": "Luke Schenscher",
+    "bbr_id": "schenlu01",
+    "position": "C",
+    "games": 20,
+    "minutes": 149
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.5 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-02-02-waive-russebr01",
+   "date": "2006-02-02",
+   "kind": "waive",
+   "player": "Bryon Russell",
+   "bbr_id": "russebr01",
+   "from": "Indiana Pacers",
+   "to": null,
+   "role": {
+    "player_id": "Bryon Russell",
+    "bbr_id": "russebr01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-02-04"
+  },
+  {
+   "id": "2005-06-market-2006-02-02-ten_day-schenlu01",
+   "date": "2006-02-02",
+   "kind": "ten_day",
+   "player": "Luke Schenscher",
+   "bbr_id": "schenlu01",
+   "from": null,
+   "to": "Indiana Pacers",
+   "role": {
+    "player_id": "Luke Schenscher",
+    "bbr_id": "schenlu01",
+    "position": "C",
+    "games": 20,
+    "minutes": 149
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-12",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.28 x fit"
   }
  ],
  "market_days": [
@@ -3706,6 +3804,7 @@
   "2006-01-29",
   "2006-01-30",
   "2006-01-31",
-  "2006-02-01"
+  "2006-02-01",
+  "2006-02-02"
  ]
 }

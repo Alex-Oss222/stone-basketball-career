@@ -14,4 +14,6 @@ days: 1-7
 
 ## Games and events
 
+- 2006-02-02: Cleveland Cavaliers 88 at Miami Heat 114 — Miami Heat W 114-88 ([Game 1](Game_1.md), event `2006-02-02-cleveland-cavaliers-at-miami-heat`)
+
 ## Consequences

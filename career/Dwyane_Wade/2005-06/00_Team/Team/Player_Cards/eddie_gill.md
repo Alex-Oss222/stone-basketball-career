@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-02-01 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-02-02 
 
 **Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $835,810 scheduled ($835,810 in 2005-06). (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Reserve outside the planned rotation (staff rotation dated 2006-02-01, [record](../Depth_Chart/Reviews/2006-02-01/rotation.json)).
+**Role:** Reserve outside the planned rotation (staff rotation dated 2006-02-01, [record](../Depth_Chart/Reviews/2006-02-01/rotation.json)). On the injured list since 2006-02-02 (reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 

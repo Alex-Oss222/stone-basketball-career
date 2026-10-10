@@ -2,9 +2,9 @@
 
 # Contract | Anthony Miller
 
-Known through: 2006-02-01. [Open interactive contract](anthonymiller.html#contract) · [Contract history](anthonymiller.html#contract-history)
+Known through: 2006-02-02. [Open interactive contract](anthonymiller.html#contract) · [Contract history](anthonymiller.html#contract-history)
 
-Anthony Miller: under contract. Evidence cutoff: 2006-02-01.
+Anthony Miller: under contract. Evidence cutoff: 2006-02-02.
 
 ## Current contract
 

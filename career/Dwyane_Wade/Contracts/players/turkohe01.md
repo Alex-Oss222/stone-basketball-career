@@ -2,9 +2,9 @@
 
 # Contract | Hedo Turkoglu
 
-Known through: 2006-02-01. [Open interactive contract](turkohe01.html#contract) · [Contract history](turkohe01.html#contract-history)
+Known through: 2006-02-02. [Open interactive contract](turkohe01.html#contract) · [Contract history](turkohe01.html#contract-history)
 
-Hedo Turkoglu: under contract. Evidence cutoff: 2006-02-01.
+Hedo Turkoglu: under contract. Evidence cutoff: 2006-02-02.
 
 ## Current contract
 

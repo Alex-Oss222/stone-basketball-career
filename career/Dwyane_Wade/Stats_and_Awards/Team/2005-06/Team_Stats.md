@@ -4,7 +4,7 @@
 
 NBA regular season · 2005-06
 
-As of February 1, 2006: 46 closed Miami games in this period. Rows cover Miami's closed games only.
+As of February 2, 2006: 46 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 

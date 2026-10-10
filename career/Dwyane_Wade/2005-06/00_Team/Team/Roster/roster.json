@@ -20,7 +20,7 @@
    "college": "Temple",
    "status": "under_contract",
    "control": "Existing contract: 2 season(s) from 2005-06, $30,273,750 scheduled ($14,576,250 in 2005-06).",
-   "working_role": "Injured list (rotation at SG, staff plan 4 minutes when healthy; rotation 2006-02-01)",
+   "working_role": "Rotation at SG, staff plan 4 minutes (rotation 2006-02-01)",
    "player_card": "../Player_Cards/eddie_jones.md",
    "bbr_id": "jonesed02"
   },
@@ -174,7 +174,7 @@
     "PG"
    ],
    "date_of_birth": "1978-08-16",
-   "working_role": "Reserve outside the planned rotation (rotation 2006-02-01)",
+   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2006-02-01)",
    "player_card": "../Player_Cards/eddie_gill.md",
    "bbr_id": "gilled01",
    "status": "under_contract",

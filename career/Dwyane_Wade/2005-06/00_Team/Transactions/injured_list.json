@@ -49,11 +49,19 @@
   {
    "player": "Eddie Jones",
    "placed": "2006-01-20",
-   "activated": null,
+   "activated": "2006-02-02",
    "first_game_missed": "2006-01-20-san-antonio-spurs-at-miami-heat",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 0
+  },
+  {
+   "player": "Eddie Gill",
+   "placed": "2006-02-02",
+   "activated": null,
+   "first_game_missed": "2006-02-02-cleveland-cavaliers-at-miami-heat",
    "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
    "minimum_games": 0
   }
  ],
- "as_of": "2006-01-30"
+ "as_of": "2006-02-02"
 }

@@ -1,6 +1,28 @@
 # 2005-06 NBA All-Star selections
 
-All-Star Game: February 19, 2006, Toyota Center, Houston. Rookie Challenge: February 17, 2006. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: February 1, 2006.
+All-Star Game: February 19, 2006, Toyota Center, Houston. Rookie Challenge: February 17, 2006. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: February 2, 2006.
+
+## Starters (fan ballot, announced February 2, 2006; results through January 22, 2006)
+
+### East
+
+| Player | Pos | Team | G | PTS | REB | AST | GmSc | Ballots |
+|---|---|---|---|---|---|---|---|---|
+| LeBron James | F | Cleveland Cavaliers | 35 | 27.4 | 6.7 | 5.5 | 21.25 | 101 |
+| Jermaine O'Neal | F | Indiana Pacers | 20 | 19.6 | 8.0 | 2.2 | 12.92 | 78 |
+| Zydrunas Ilgauskas | C | Philadelphia 76ers | 37 | 17.1 | 7.5 | 1.5 | 13.49 | 71 |
+| Dwyane Wade | G | Miami Heat | 41 | 26.4 | 6.1 | 4.1 | 23.72 | 59 |
+| Allen Iverson | G | Philadelphia 76ers | 38 | 28.4 | 3.7 | 5.6 | 17.12 | 58 |
+
+### West
+
+| Player | Pos | Team | G | PTS | REB | AST | GmSc | Ballots |
+|---|---|---|---|---|---|---|---|---|
+| Kevin Garnett | F | Minnesota Timberwolves | 33 | 27.3 | 11.9 | 3.8 | 24.06 | 101 |
+| Kobe Bryant | G | Los Angeles Lakers | 39 | 29.1 | 5.5 | 6.1 | 21.39 | 101 |
+| Shaquille O'Neal | C | Los Angeles Lakers | 41 | 21.1 | 9.5 | 3.0 | 15.61 | 101 |
+| Dirk Nowitzki | F | Dallas Mavericks | 41 | 25.1 | 8.4 | 3.3 | 20.0 | 95 |
+| Ray Allen | G | Seattle SuperSonics | 40 | 23.6 | 4.5 | 3.5 | 16.7 | 78 |
 
 ## Rookie Challenge rosters (broadcaster panel, announced February 1, 2006)
 

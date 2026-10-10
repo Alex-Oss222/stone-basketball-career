@@ -2,9 +2,9 @@
 
 # Contract | Bernard Robinson
 
-Known through: 2006-02-01. [Open interactive contract](robinbe01.html#contract) · [Contract history](robinbe01.html#contract-history)
+Known through: 2006-02-02. [Open interactive contract](robinbe01.html#contract) · [Contract history](robinbe01.html#contract-history)
 
-Bernard Robinson: under contract. Evidence cutoff: 2006-02-01.
+Bernard Robinson: under contract. Evidence cutoff: 2006-02-02.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Bernard Robinson |
-| Club / rights baseline | Seattle SuperSonics |
+| Club / rights baseline | Milwaukee Bucks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

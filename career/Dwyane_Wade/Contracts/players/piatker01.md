@@ -2,9 +2,9 @@
 
 # Contract | Eric Piatkowski
 
-Known through: 2006-02-01. [Open interactive contract](piatker01.html#contract) · [Contract history](piatker01.html#contract-history)
+Known through: 2006-02-02. [Open interactive contract](piatker01.html#contract) · [Contract history](piatker01.html#contract-history)
 
-Eric Piatkowski: under contract. Evidence cutoff: 2006-02-01.
+Eric Piatkowski: under contract. Evidence cutoff: 2006-02-02.
 
 ## Current contract
 
