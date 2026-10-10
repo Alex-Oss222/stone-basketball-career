@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: February 1-28, 2006
 
-As of March 22, 2006: 4 award decision(s) closed, announced March 2, 2006; 8 Player of the Week decision(s) closed on this month's week pages.
+As of March 23, 2006: 4 award decision(s) closed, announced March 2, 2006; 8 Player of the Week decision(s) closed on this month's week pages.
 
 Official award window and announcement date: listed with each decision below.
 
