@@ -2,9 +2,9 @@
 
 # Contract | Dorell Wright
 
-Known through: 2006-01-08. [Open interactive contract](wrighdo01.html#contract) · [Contract history](wrighdo01.html#contract-history)
+Known through: 2006-01-09. [Open interactive contract](wrighdo01.html#contract) · [Contract history](wrighdo01.html#contract-history)
 
-Dorell Wright: under rookie contract. Evidence cutoff: 2006-01-08.
+Dorell Wright: under rookie contract. Evidence cutoff: 2006-01-09.
 
 ## Current contract
 

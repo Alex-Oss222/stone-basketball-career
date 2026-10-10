@@ -2,9 +2,9 @@
 
 # Contract | Corey Maggette
 
-Known through: 2006-01-08. [Open interactive contract](maggeco01.html#contract) · [Contract history](maggeco01.html#contract-history)
+Known through: 2006-01-09. [Open interactive contract](maggeco01.html#contract) · [Contract history](maggeco01.html#contract-history)
 
-Corey Maggette: under contract. Evidence cutoff: 2006-01-08.
+Corey Maggette: under contract. Evidence cutoff: 2006-01-09.
 
 ## Current contract
 

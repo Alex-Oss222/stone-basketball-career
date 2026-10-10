@@ -2,9 +2,9 @@
 
 # Contract | Daniel Ewing
 
-Known through: 2006-01-08. [Open interactive contract](ewingda01.html#contract) · [Contract history](ewingda01.html#contract-history)
+Known through: 2006-01-09. [Open interactive contract](ewingda01.html#contract) · [Contract history](ewingda01.html#contract-history)
 
-Daniel Ewing: under contract. Evidence cutoff: 2006-01-08.
+Daniel Ewing: under contract. Evidence cutoff: 2006-01-09.
 
 ## Current contract
 

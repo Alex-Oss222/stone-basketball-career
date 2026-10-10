@@ -2,9 +2,9 @@
 
 # Contract | Matt Bonner
 
-Known through: 2006-01-08. [Open interactive contract](bonnema01.html#contract) · [Contract history](bonnema01.html#contract-history)
+Known through: 2006-01-09. [Open interactive contract](bonnema01.html#contract) · [Contract history](bonnema01.html#contract-history)
 
-Matt Bonner: under contract. Evidence cutoff: 2006-01-08.
+Matt Bonner: under contract. Evidence cutoff: 2006-01-09.
 
 ## Current contract
 

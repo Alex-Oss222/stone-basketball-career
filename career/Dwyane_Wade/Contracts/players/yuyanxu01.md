@@ -2,9 +2,9 @@
 
 # Contract | Xue Yuyang
 
-Known through: 2006-01-08. [Open interactive contract](yuyanxu01.html#contract) · [Contract history](yuyanxu01.html#contract-history)
+Known through: 2006-01-09. [Open interactive contract](yuyanxu01.html#contract) · [Contract history](yuyanxu01.html#contract-history)
 
-Xue Yuyang: No verified contract record. Evidence cutoff: 2006-01-08.
+Xue Yuyang: No verified contract record. Evidence cutoff: 2006-01-09.
 
 ## Current contract
 

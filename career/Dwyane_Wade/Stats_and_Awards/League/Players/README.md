@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-01-08**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-01-09**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -248,7 +248,7 @@ Card date: **2006-01-08**. 651 registry players, one Markdown card and one inter
 | [Salim Stoudamire](stoudsa01.md) | New York Knicks | 23 | silhouette | [open](stoudsa01.html) |
 | [Sani Becirovic](becirsa01.md) | Free agent | 24 | sourced | [open](becirsa01.html) |
 | [Sasha Vujačić](sashavujai.md) | Denver Nuggets | 21 | silhouette | [open](sashavujai.html) |
-| [Stacey Augmon](augmost01.md) | Free agent | 37 | sourced | [open](augmost01.html) |
+| [Stacey Augmon](augmost01.md) | Houston Rockets | 37 | sourced | [open](augmost01.html) |
 | [Stephen Jackson](jacksst02.md) | Atlanta Hawks | 27 | sourced | [open](jacksst02.html) |
 | [Steve Smith](smithst01.md) | Free agent | 36 | sourced | [open](smithst01.html) |
 | [Tamar Slay](slayta01.md) | Free agent | 25 | sourced | [open](slayta01.html) |
@@ -529,7 +529,7 @@ Card date: **2006-01-08**. 651 registry players, one Markdown card and one inter
 | [Sean Marks](seanmarks.md) | New Orleans/Oklahoma City Hornets | 30 | silhouette | [open](seanmarks.html) |
 | [Sean May](mayse01.md) | Detroit Pistons | 21 | silhouette | [open](mayse01.html) |
 | [Shareef Abdur-Rahim](abdursh01.md) | Atlanta Hawks | 29 | sourced | [open](abdursh01.html) |
-| [Sharrod Ford](fordsh02.md) | Houston Rockets | 23 | silhouette | [open](fordsh02.html) |
+| [Sharrod Ford](fordsh02.md) | Houston Rockets | 24 | silhouette | [open](fordsh02.html) |
 | [Shavlik Randolph](randosh01.md) | Charlotte Bobcats | 22 | silhouette | [open](randosh01.html) |
 | [Slava Medvedenko](medvest01.md) | Detroit Pistons | 26 | sourced | [open](medvest01.html) |
 | [Stromile Swift](swiftst01.md) | Memphis Grizzlies | 26 | sourced | [open](swiftst01.html) |
