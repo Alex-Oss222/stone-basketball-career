@@ -5468,6 +5468,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.68 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-04-05-claim-johnsli01",
+   "date": "2006-04-05",
+   "kind": "claim",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": null,
+   "to": "Boston Celtics",
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 524
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from San Antonio Spurs (worst record first)",
+   "waiver": "2005-06-market-2006-04-03-waive-johnsli01"
   }
  ],
  "market_days": [
@@ -5625,6 +5647,7 @@
   "2006-04-01",
   "2006-04-02",
   "2006-04-03",
-  "2006-04-04"
+  "2006-04-04",
+  "2006-04-05"
  ]
 }
