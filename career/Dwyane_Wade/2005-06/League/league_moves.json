@@ -3771,6 +3771,68 @@
    },
    "contract": null,
    "note": "10-day contract ended (2.4 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-02-05-waive-hunteli01",
+   "date": "2006-02-05",
+   "kind": "waive",
+   "player": "Lindsey Hunter",
+   "bbr_id": "hunteli01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Lindsey Hunter",
+    "bbr_id": "hunteli01",
+    "position": "PG",
+    "games": 30,
+    "minutes": 353
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-02-07"
+  },
+  {
+   "id": "2005-06-market-2006-02-05-ten_day-livinra01",
+   "date": "2006-02-05",
+   "kind": "ten_day",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.01 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-02-05-rest_of_season-williaa01",
+   "date": "2006-02-05",
+   "kind": "rest_of_season",
+   "player": "Aaron Williams",
+   "bbr_id": "williaa01",
+   "from": "Portland Trail Blazers",
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Aaron Williams",
+    "bbr_id": "williaa01",
+    "position": "C",
+    "games": 48,
+    "minutes": 791
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 10.6 minutes a game on his 10-day contracts"
   }
  ],
  "market_days": [
@@ -3869,6 +3931,7 @@
   "2006-02-01",
   "2006-02-02",
   "2006-02-03",
-  "2006-02-04"
+  "2006-02-04",
+  "2006-02-05"
  ]
 }
