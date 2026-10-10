@@ -4749,6 +4749,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.97 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-03-09-ten_day-augmost01",
+   "date": "2006-03-09",
+   "kind": "ten_day",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": null,
+   "to": "Los Angeles Lakers",
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 385
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-03-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 2.95 x fit"
   }
  ],
  "market_days": [
@@ -4879,6 +4901,7 @@
   "2006-03-05",
   "2006-03-06",
   "2006-03-07",
-  "2006-03-08"
+  "2006-03-08",
+  "2006-03-09"
  ]
 }
