@@ -4,7 +4,7 @@
 
 NBA regular season · January 22-31, 2006
 
-As of February 12, 2006: 6 closed Miami games in this period. Rows cover Miami's closed games only.
+As of February 13, 2006: 6 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 

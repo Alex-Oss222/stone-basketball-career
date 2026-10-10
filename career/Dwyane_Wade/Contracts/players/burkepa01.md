@@ -2,9 +2,9 @@
 
 # Contract | Pat Burke
 
-Known through: 2006-02-12. [Open interactive contract](burkepa01.html#contract) · [Contract history](burkepa01.html#contract-history)
+Known through: 2006-02-13. [Open interactive contract](burkepa01.html#contract) · [Contract history](burkepa01.html#contract-history)
 
-Pat Burke: under contract. Evidence cutoff: 2006-02-12.
+Pat Burke: under contract. Evidence cutoff: 2006-02-13.
 
 ## Current contract
 

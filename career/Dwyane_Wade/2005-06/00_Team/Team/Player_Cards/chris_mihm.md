@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C  
 **Age at assessment:** 26 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** January 16, 2006 · **Statistics through:** 2006-02-12 
+**Opening assessment:** January 16, 2006 · **Statistics through:** 2006-02-13 
 
 **Contract/control:** Acquired by trade from New Orleans/Oklahoma City Hornets on January 16, 2006: $5,100,714 in 2005-06; contract through 2009-10. (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 

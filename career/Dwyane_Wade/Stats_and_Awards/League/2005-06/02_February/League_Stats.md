@@ -4,7 +4,7 @@
 
 NBA regular season · February 1-28, 2006
 
-407 tracked players · 91 closed games in this record · Through February 12, 2006.
+407 tracked players · 91 closed games in this record · Through February 13, 2006.
 
 ## Leaders
 
@@ -79,7 +79,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Kirk Hinrich](../../Players/hinriki01.md) | 25 | CHI | NBA | PG | 6 | 6 | 40.3 | 5.0 | 13.5 | .370 | 1.2 | 4.5 | .259 | 3.8 | 9.0 | .426 | .414 | 2.3 | 4.3 | .538 | 1.5 | 4.3 | 5.8 | 7.8 | 0.5 | 0.7 | 2.2 | 3.7 | 13.5 | .438 |
 | [Larry Hughes](../../Players/hughela01.md) | 27 | WSH | NBA | PG | 3 | 3 | 30.6 | 2.7 | 10.3 | .258 | 0.0 | 0.7 | .000 | 2.7 | 9.7 | .276 | .258 | 3.3 | 5.7 | .588 | 0.3 | 6.3 | 6.7 | 3.7 | 1.0 | 0.0 | 2.3 | 4.0 | 8.7 | .338 |
 | [Lindsey Hunter](../../Players/hunteli01.md) | 35 | TOR | NBA | PG | 3 | 0 | 6.0 | 0.7 | 0.7 | 1.000 | 0.0 | 0.0 | N/A | 0.7 | 0.7 | 1.000 | 1.000 | 0.3 | 0.7 | .500 | 0.7 | 0.0 | 0.7 | 0.3 | 1.0 | 0.0 | 0.0 | 0.3 | 1.7 | .868 |
-| [Luke Ridnour](../../Players/ridnolu01.md) | 24 | SEA | NBA | PG | 6 | 6 | 41.7 | 7.3 | 16.5 | .444 | 1.2 | 3.3 | .350 | 6.2 | 13.2 | .468 | .480 | 2.0 | 2.8 | .706 | 1.2 | 2.2 | 3.3 | 7.8 | 2.0 | 0.8 | 3.7 | 2.2 | 17.8 | .502 |
+| [Luke Ridnour](../../Players/ridnolu01.md) | 25 | SEA | NBA | PG | 6 | 6 | 41.7 | 7.3 | 16.5 | .444 | 1.2 | 3.3 | .350 | 6.2 | 13.2 | .468 | .480 | 2.0 | 2.8 | .706 | 1.2 | 2.2 | 3.3 | 7.8 | 2.0 | 0.8 | 3.7 | 2.2 | 17.8 | .502 |
 | [Marcus Banks](../../Players/banksma01.md) | 24 | BOS | NBA | PG | 3 | 0 | 12.2 | 1.3 | 2.7 | .500 | 0.0 | 0.0 | N/A | 1.3 | 2.7 | .500 | .500 | 2.3 | 2.7 | .875 | 0.7 | 1.0 | 1.7 | 1.3 | 0.0 | 0.0 | 1.3 | 2.0 | 5.0 | .651 |
 | [Mark Jackson](../../Players/jacksma01.md) | 40 | UTAH | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Mickael Pietrus](../../Players/pietrmi01.md) | 24 | GS | NBA | PG | 2 | 0 | 23.7 | 2.5 | 5.5 | .455 | 1.5 | 3.5 | .429 | 1.0 | 2.0 | .500 | .591 | 1.0 | 1.0 | 1.000 | 2.0 | 1.0 | 3.0 | 3.5 | 1.0 | 0.0 | 3.0 | 2.0 | 7.5 | .631 |
@@ -204,7 +204,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Jeff Trepagnier](../../Players/trepaje01.md) | 26 | DEN | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Jermaine Jackson](../../Players/jacksje01.md) | 29 | ATL | NBA | SG | 2 | 0 | 2.6 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 0.5 | 1.0 | .500 | 0.0 | 0.5 | 0.5 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.5 | .568 |
 | [Jerry Stackhouse](../../Players/stackje01.md) | 31 | WSH | NBA | SG | 5 | 5 | 32.7 | 5.8 | 13.0 | .446 | 0.8 | 2.6 | .308 | 5.0 | 10.4 | .481 | .477 | 6.0 | 6.2 | .968 | 1.8 | 1.8 | 3.6 | 2.4 | 0.8 | 0.2 | 2.4 | 1.6 | 18.4 | .585 |
-| [Jeryl Sasser](../../Players/sasseje01.md) | 26 | ORL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [Jeryl Sasser](../../Players/sasseje01.md) | 27 | ORL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Joe Johnson](../../Players/johnsjo02.md) | 24 | PHX | NBA | SG | 5 | 5 | 41.1 | 10.2 | 18.6 | .548 | 2.0 | 4.8 | .417 | 8.2 | 13.8 | .594 | .602 | 3.8 | 5.2 | .731 | 0.4 | 3.2 | 3.6 | 5.6 | 1.4 | 0.2 | 3.0 | 3.0 | 26.2 | .627 |
 | [Jon Barry](../../Players/barryjo01.md) | 36 | DET | NBA | SG | 1 | 0 | 17.2 | 1.0 | 2.0 | .500 | 0.0 | 1.0 | .000 | 1.0 | 1.0 | 1.000 | .500 | 0.0 | 0.0 | N/A | 0.0 | 5.0 | 5.0 | 0.0 | 0.0 | 0.0 | 1.0 | 4.0 | 2.0 | .500 |
 | [Joseph Forte](../../Players/fortejo01.md) | 24 | SEA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -311,7 +311,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Carmelo Anthony](../../Players/anthoca01.md) | 21 | DEN | NBA | SF | 6 | 6 | 35.2 | 8.8 | 19.8 | .445 | 0.8 | 2.5 | .333 | 8.0 | 17.3 | .462 | .466 | 7.2 | 9.3 | .768 | 1.2 | 2.8 | 4.0 | 2.3 | 1.0 | 0.8 | 2.5 | 3.0 | 25.7 | .536 |
 | [Caron Butler](../../Players/butleca01.md) | 25 | MIA | NBA | SF | 5 | 5 | 34.3 | 4.6 | 9.8 | .469 | 0.4 | 0.8 | .500 | 4.2 | 9.0 | .467 | .490 | 2.2 | 2.2 | 1.000 | 1.4 | 4.8 | 6.2 | 1.8 | 1.0 | 0.2 | 2.2 | 3.2 | 11.8 | .548 |
 | [Casey Jacobsen](../../Players/jacobca01.md) | 24 | PHX | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Chris Jefferies](../../Players/jeffech01.md) | 25 | TOR | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [Chris Jefferies](../../Players/jeffech01.md) | 26 | TOR | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Chris Owens](../../Players/owensch01.md) | 26 | MEM | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Corliss Williamson](../../Players/willico02.md) | 32 | DET | NBA | SF | 6 | 0 | 7.5 | 0.7 | 2.0 | .333 | 0.0 | 0.2 | .000 | 0.7 | 1.8 | .364 | .333 | 0.5 | 0.7 | .750 | 0.3 | 1.0 | 1.3 | 0.3 | 0.0 | 0.0 | 0.2 | 1.3 | 1.8 | .400 |
 | [Danny Ferry](../../Players/ferryda01.md) | 39 | SA | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -742,7 +742,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | Period | Calendar dates | Closed games | Status |
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/League_Stats.md) | February 1-7, 2006 | 50 | Complete |
-| [Week 2](Week_2/League_Stats.md) | February 8-14, 2006 | 41 | Through February 12, 2006 |
+| [Week 2](Week_2/League_Stats.md) | February 8-14, 2006 | 41 | Through February 13, 2006 |
 | [Week 3](Week_3/League_Stats.md) | February 15-21, 2006 | 0 | Not started |
 | [Week 4](Week_4/League_Stats.md) | February 22-28, 2006 | 0 | Not started |
 

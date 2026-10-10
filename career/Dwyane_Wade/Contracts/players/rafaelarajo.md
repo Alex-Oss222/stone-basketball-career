@@ -2,9 +2,9 @@
 
 # Contract | Rafael Araújo
 
-Known through: 2006-02-12. [Open interactive contract](rafaelarajo.html#contract) · [Contract history](rafaelarajo.html#contract-history)
+Known through: 2006-02-13. [Open interactive contract](rafaelarajo.html#contract) · [Contract history](rafaelarajo.html#contract-history)
 
-Rafael Araújo: under contract. Evidence cutoff: 2006-02-12.
+Rafael Araújo: under contract. Evidence cutoff: 2006-02-13.
 
 ## Current contract
 

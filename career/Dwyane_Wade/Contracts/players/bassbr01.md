@@ -2,9 +2,9 @@
 
 # Contract | Brandon Bass
 
-Known through: 2006-02-12. [Open interactive contract](bassbr01.html#contract) · [Contract history](bassbr01.html#contract-history)
+Known through: 2006-02-13. [Open interactive contract](bassbr01.html#contract) · [Contract history](bassbr01.html#contract-history)
 
-Brandon Bass: under contract. Evidence cutoff: 2006-02-12.
+Brandon Bass: under contract. Evidence cutoff: 2006-02-13.
 
 ## Current contract
 

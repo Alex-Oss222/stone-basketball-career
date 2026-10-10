@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-02-12**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-02-13**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -87,7 +87,7 @@ Card date: **2006-02-12**. 653 registry players, one Markdown card and one inter
 | [Lionel Chalmers](lionelchalmers.md) | Free agent | 25 | silhouette | [open](lionelchalmers.html) |
 | [Lou Williams](willilo02.md) | Los Angeles Lakers | 19 | silhouette | [open](willilo02.html) |
 | [Luis Flores](luisflores.md) | Free agent | 24 | silhouette | [open](luisflores.html) |
-| [Luke Ridnour](ridnolu01.md) | Charlotte Bobcats | 24 | sourced | [open](ridnolu01.html) |
+| [Luke Ridnour](ridnolu01.md) | Charlotte Bobcats | 25 | sourced | [open](ridnolu01.html) |
 | [Marcus Banks](banksma01.md) | Golden State Warriors | 24 | sourced | [open](banksma01.html) |
 | [Mark Jackson](jacksma01.md) | Free agent | 40 | sourced | [open](jacksma01.html) |
 | [Mateen Cleaves](cleavma01.md) | Utah Jazz | 28 | silhouette | [open](cleavma01.html) |
@@ -206,7 +206,7 @@ Card date: **2006-02-12**. 653 registry players, one Markdown card and one inter
 | [Jeff Trepagnier](trepaje01.md) | Free agent | 26 | silhouette | [open](trepaje01.html) |
 | [Jermaine Jackson](jacksje01.md) | Milwaukee Bucks | 29 | sourced | [open](jacksje01.html) |
 | [Jerry Stackhouse](stackje01.md) | Minnesota Timberwolves | 31 | sourced | [open](stackje01.html) |
-| [Jeryl Sasser](sasseje01.md) | Free agent | 26 | silhouette | [open](sasseje01.html) |
+| [Jeryl Sasser](sasseje01.md) | Free agent | 27 | silhouette | [open](sasseje01.html) |
 | [Joe Johnson](johnsjo02.md) | Phoenix Suns | 24 | sourced | [open](johnsjo02.html) |
 | [Jon Barry](barryjo01.md) | Philadelphia 76ers | 36 | sourced | [open](barryjo01.html) |
 | [Joseph Forte](fortejo01.md) | Free agent | 24 | silhouette | [open](fortejo01.html) |
@@ -292,7 +292,7 @@ Card date: **2006-02-12**. 653 registry players, one Markdown card and one inter
 | [Carmelo Anthony](anthoca01.md) | Denver Nuggets | 21 | sourced | [open](anthoca01.html) |
 | [Caron Butler](butleca01.md) | Miami Heat | 25 | sourced | [open](butleca01.html) |
 | [Casey Jacobsen](jacobca01.md) | Phoenix Suns | 24 | silhouette | [open](jacobca01.html) |
-| [Chris Jefferies](jeffech01.md) | Free agent | 25 | silhouette | [open](jeffech01.html) |
+| [Chris Jefferies](jeffech01.md) | Free agent | 26 | silhouette | [open](jeffech01.html) |
 | [Chris Owens](owensch01.md) | Free agent | 26 | sourced | [open](owensch01.html) |
 | [Corliss Williamson](willico02.md) | Chicago Bulls | 32 | sourced | [open](willico02.html) |
 | [Damien Wilkins](damienwilkins.md) | Los Angeles Lakers | 26 | silhouette | [open](damienwilkins.html) |
