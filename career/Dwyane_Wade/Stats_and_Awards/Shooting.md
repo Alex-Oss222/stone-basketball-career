@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2005-12-05**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2005-12-11**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -6603,23 +6603,23 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-27 | Orlando Magic | Played | [Game](../2004-05/05_Preseason/Game_7.md) | [Result](../2004-05/05_Preseason/Game_7.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_7.result.json) |
 
-## 2005-06 · NBA regular season · through 2005-12-05
+## 2005-06 · NBA regular season · through 2005-12-11
 
 [Open this period](player_cards.html?period=regular-2005-06-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 17 | 0 | 17 | 156 / 271 | 57.6% | 27 / 53 | 457 | complete |
+| 21 | 0 | 21 | 184 / 323 | 57.0% | 30 / 61 | 545 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 92 | 148 | 62.2% | 10.82 | 8.71 | 148 |
-| Outside paint, under 12 ft | 4 | 9 | 44.4% | 0.47 | 0.53 | 9 |
-| Outside paint, 12 to under 18 ft | 12 | 25 | 48.0% | 1.41 | 1.47 | 25 |
-| 18 ft to the three-point line | 21 | 36 | 58.3% | 2.47 | 2.12 | 36 |
-| Three-point range | 27 | 53 | 50.9% | 4.76 | 3.12 | 53 |
+| Paint | 104 | 165 | 63.0% | 9.90 | 7.86 | 165 |
+| Outside paint, under 12 ft | 4 | 12 | 33.3% | 0.38 | 0.57 | 12 |
+| Outside paint, 12 to under 18 ft | 17 | 34 | 50.0% | 1.62 | 1.62 | 34 |
+| 18 ft to the three-point line | 29 | 51 | 56.9% | 2.76 | 2.43 | 51 |
+| Three-point range | 30 | 61 | 49.2% | 4.29 | 2.90 | 61 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -6640,6 +6640,10 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2005-11-30 | Atlanta Hawks | Played | [Game](../2005-06/06_Regular_Season/11_November/Week_4/Game_5.md) | [Result](../2005-06/06_Regular_Season/11_November/Week_4/Game_5.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/11_November/Week_4/Game_5.result.json) |
 | 2005-12-02 | Sacramento Kings | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
 | 2005-12-03 | Denver Nuggets | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
+| 2005-12-05 | Los Angeles Clippers | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.result.json) |
+| 2005-12-07 | San Antonio Spurs | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.result.json) |
+| 2005-12-09 | Denver Nuggets | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.result.json) |
+| 2005-12-11 | Washington Wizards | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.result.json) |
 
 ## 2005-11 · NBA regular season
 
@@ -6782,45 +6786,74 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 22 / 45 | 48.9% | 5 / 13 | 66 | complete |
+| 6 | 0 | 6 | 50 / 97 | 51.5% | 8 / 21 | 154 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 14 | 26 | 53.8% | 14.00 | 13.00 | 26 |
-| Outside paint, under 12 ft | 1 | 1 | 100.0% | 1.00 | 0.50 | 1 |
-| Outside paint, 12 to under 18 ft | 1 | 2 | 50.0% | 1.00 | 1.00 | 2 |
-| 18 ft to the three-point line | 1 | 3 | 33.3% | 1.00 | 1.50 | 3 |
-| Three-point range | 5 | 13 | 38.5% | 7.50 | 6.50 | 13 |
+| Paint | 26 | 43 | 60.5% | 8.67 | 7.17 | 43 |
+| Outside paint, under 12 ft | 1 | 4 | 25.0% | 0.33 | 0.67 | 4 |
+| Outside paint, 12 to under 18 ft | 6 | 11 | 54.5% | 2.00 | 1.83 | 11 |
+| 18 ft to the three-point line | 9 | 18 | 50.0% | 3.00 | 3.00 | 18 |
+| Three-point range | 8 | 21 | 38.1% | 4.00 | 3.50 | 21 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2005-12-02 | Sacramento Kings | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
 | 2005-12-03 | Denver Nuggets | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
+| 2005-12-05 | Los Angeles Clippers | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.result.json) |
+| 2005-12-07 | San Antonio Spurs | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.result.json) |
+| 2005-12-09 | Denver Nuggets | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.result.json) |
+| 2005-12-11 | Washington Wizards | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.result.json) |
 
-## 2005-12-01 to 2005-12-05 · NBA regular season
+## 2005-12-01 to 2005-12-07 · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2005-06-week-2005-12-01#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 22 / 45 | 48.9% | 5 / 13 | 66 | complete |
+| 4 | 0 | 4 | 33 / 68 | 48.5% | 5 / 15 | 102 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 14 | 26 | 53.8% | 14.00 | 13.00 | 26 |
-| Outside paint, under 12 ft | 1 | 1 | 100.0% | 1.00 | 0.50 | 1 |
-| Outside paint, 12 to under 18 ft | 1 | 2 | 50.0% | 1.00 | 1.00 | 2 |
-| 18 ft to the three-point line | 1 | 3 | 33.3% | 1.00 | 1.50 | 3 |
-| Three-point range | 5 | 13 | 38.5% | 7.50 | 6.50 | 13 |
+| Paint | 18 | 34 | 52.9% | 9.00 | 8.50 | 34 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 0.50 | 0.25 | 1 |
+| Outside paint, 12 to under 18 ft | 3 | 6 | 50.0% | 1.50 | 1.50 | 6 |
+| 18 ft to the three-point line | 6 | 12 | 50.0% | 3.00 | 3.00 | 12 |
+| Three-point range | 5 | 15 | 33.3% | 3.75 | 3.75 | 15 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2005-12-02 | Sacramento Kings | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
 | 2005-12-03 | Denver Nuggets | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
+| 2005-12-05 | Los Angeles Clippers | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.result.json) |
+| 2005-12-07 | San Antonio Spurs | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.result.json) |
+
+## 2005-12-08 to 2005-12-11 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-week-2005-12-08#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2 | 0 | 2 | 17 / 29 | 58.6% | 3 / 6 | 52 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 8 | 9 | 88.9% | 8.00 | 4.50 | 9 |
+| Outside paint, under 12 ft | 0 | 3 | 0.0% | 0.00 | 1.50 | 3 |
+| Outside paint, 12 to under 18 ft | 3 | 5 | 60.0% | 3.00 | 2.50 | 5 |
+| 18 ft to the three-point line | 3 | 6 | 50.0% | 3.00 | 3.00 | 6 |
+| Three-point range | 3 | 6 | 50.0% | 4.50 | 3.00 | 6 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-12-09 | Denver Nuggets | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.result.json) |
+| 2005-12-11 | Washington Wizards | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.result.json) |
 
 ## 2005-11-02 at Memphis Grizzlies · Played · NBA regular season
 
@@ -7196,7 +7229,95 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-12-03 | Denver Nuggets | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
 
-## 2005-06 · NBA preseason · through 2005-12-05
+## 2005-12-05 at Los Angeles Clippers · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-game-40919e7a1f8687f4#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 18 | 44.4% | 0 / 1 | 28 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 3 | 7 | 42.9% | 6.00 | 7.00 | 7 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 2 | 3 | 66.7% | 4.00 | 3.00 | 3 |
+| 18 ft to the three-point line | 3 | 7 | 42.9% | 6.00 | 7.00 | 7 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-12-05 | Los Angeles Clippers | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.result.json) |
+
+## 2005-12-07 at San Antonio Spurs · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-game-112961907299d241#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 3 / 5 | 60.0% | 0 / 1 | 8 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 2 | 2 | 100.0% | 4.00 | 2.00 | 2 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-12-07 | San Antonio Spurs | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.result.json) |
+
+## 2005-12-09 vs Denver Nuggets · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-game-5cb5d658ae17db7e#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 9 / 13 | 69.2% | 1 / 1 | 32 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 6 | 7 | 85.7% | 12.00 | 7.00 | 7 |
+| Outside paint, under 12 ft | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
+| Outside paint, 12 to under 18 ft | 1 | 2 | 50.0% | 2.00 | 2.00 | 2 |
+| 18 ft to the three-point line | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Three-point range | 1 | 1 | 100.0% | 3.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-12-09 | Denver Nuggets | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.result.json) |
+
+## 2005-12-11 vs Washington Wizards · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-game-c294e4dfe81d57b0#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 16 | 50.0% | 2 / 5 | 20 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 2 | 2 | 100.0% | 4.00 | 2.00 | 2 |
+| Outside paint, under 12 ft | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 2 | 3 | 66.7% | 4.00 | 3.00 | 3 |
+| 18 ft to the three-point line | 2 | 5 | 40.0% | 4.00 | 5.00 | 5 |
+| Three-point range | 2 | 5 | 40.0% | 6.00 | 5.00 | 5 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-12-11 | Washington Wizards | Played | [Game](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.md) | [Result](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.result.json) |
+
+## 2005-06 · NBA preseason · through 2005-12-11
 
 [Open this period](player_cards.html?period=preseason-2005-06-season#shooting)
 

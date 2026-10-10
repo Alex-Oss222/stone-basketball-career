@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-12-05 · Miami Heat · complete
+Career date: 2005-12-11 · Miami Heat · complete
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -23,7 +23,7 @@ Activation: The club opens camp and records participation, evaluation or an actu
 
 ## Current depth chart
 
-Snapshot: 2005-11-23. Draft rights and unassigned arrivals are not assigned minutes.
+Snapshot: 2005-12-07. Draft rights and unassigned arrivals are not assigned minutes.
 
 | Position | Staff ordering | Interpretation |
 | --- | --- | --- |
@@ -82,11 +82,11 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-23/review.json)
-- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-23/depth_chart.json)
+- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/review.json)
+- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-23/rotation.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
@@ -113,4 +113,8 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_5.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

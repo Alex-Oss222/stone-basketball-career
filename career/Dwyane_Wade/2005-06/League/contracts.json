@@ -277,7 +277,7 @@
   {
    "player": "Leandro Barbosa",
    "bbr_id": "barbole01",
-   "club": "Phoenix Suns",
+   "club": "Detroit Pistons",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -289,7 +289,8 @@
    "rookie_scale": true,
    "option_history": [
     "2006-07 team option: exercise (2005-10-31; clear: ratio 1.46 at or above 1.2; runtime/options.py, League/option_decisions.json)"
-   ]
+   ],
+   "signed_club": "Phoenix Suns"
   },
   {
    "player": "Matt Barnes",
@@ -682,14 +683,15 @@
   {
    "player": "P.J. Brown",
    "bbr_id": "brownpj01",
-   "club": "Detroit Pistons",
+   "club": "Phoenix Suns",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 8500000,
     "2006-07": 8500000
    },
-   "source": "league contract ledger 2004-05 (existing); traded 2005-09-09"
+   "source": "league contract ledger 2004-05 (existing); traded 2005-09-09",
+   "signed_club": "Detroit Pistons"
   },
   {
    "player": "Rick Brunson",
@@ -3801,13 +3803,14 @@
   {
    "player": "Michael Olowokandi",
    "bbr_id": "olowomi01",
-   "club": "Phoenix Suns",
+   "club": "Detroit Pistons",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 5400000
    },
-   "source": "league contract ledger 2004-05 (existing)"
+   "source": "league contract ledger 2004-05 (existing)",
+   "signed_club": "Phoenix Suns"
   },
   {
    "player": "Jermaine O'Neal",
@@ -5205,13 +5208,14 @@
   {
    "player": "Jake Voskuhl",
    "bbr_id": "voskuja01",
-   "club": "Phoenix Suns",
+   "club": "Detroit Pistons",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 1666667
    },
-   "source": "league contract ledger 2004-05 (existing)"
+   "source": "league contract ledger 2004-05 (existing)",
+   "signed_club": "Phoenix Suns"
   },
   {
    "player": "Jackson Vroman",

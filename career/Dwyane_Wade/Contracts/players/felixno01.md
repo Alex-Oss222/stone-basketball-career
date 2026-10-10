@@ -2,9 +2,9 @@
 
 # Contract | Noel Felix
 
-Known through: 2005-12-05. [Open interactive contract](felixno01.html#contract) · [Contract history](felixno01.html#contract-history)
+Known through: 2005-12-11. [Open interactive contract](felixno01.html#contract) · [Contract history](felixno01.html#contract-history)
 
-Noel Felix: under contract. Evidence cutoff: 2005-12-05.
+Noel Felix: under contract. Evidence cutoff: 2005-12-11.
 
 ## Current contract
 

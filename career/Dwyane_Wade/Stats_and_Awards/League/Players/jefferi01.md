@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `jefferi01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2005-12-05 · **Club on this date:** New Jersey Nets · **Basis:** New Jersey Nets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2005-12-11 · **Club on this date:** New Jersey Nets · **Basis:** New Jersey Nets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #24 · **Born:** 1980-06-21 · **Age on card date:** 25  
 **Registry ID:** `jefferi01` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jefferi01.html) · ESPN ID 1006
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jeffer
 
 ## Simulated statistics
 
-As of **2005-12-05**: 16 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-12-11**: 19 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 25 | NJ | NBA | SF | 16 | 16 | 41.6 | 6.4 | 13.8 | .466 | 0.6 | 2.9 | .196 | 5.9 | 10.9 | .537 | .486 | 5.5 | 7.1 | .779 | 1.7 | 5.9 | 7.6 | 3.9 | 1.0 | 0.2 | 2.9 | 3.4 | 18.9 | .560 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 25 | NJ | NBA | SF | 19 | 19 | 40.7 | 6.3 | 13.6 | .465 | 0.6 | 2.7 | .231 | 5.7 | 10.8 | .524 | .488 | 5.6 | 7.3 | .763 | 1.5 | 6.2 | 7.7 | 3.8 | 0.9 | 0.2 | 2.8 | 3.4 | 18.8 | .561 | — |
 
 ### Month
 
@@ -42,7 +42,7 @@ As of **2005-12-05**: 16 closed games feed this card. Per-game columns use the r
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [November 2005](../2005-06/11_November/League_Stats.md) | 25 | NJ | NBA | SF | 15 | 15 | 41.2 | 6.3 | 13.5 | .463 | 0.6 | 3.1 | .196 | 5.7 | 10.5 | .541 | .485 | 5.4 | 6.8 | .794 | 1.8 | 5.5 | 7.3 | 3.9 | 1.0 | 0.2 | 2.6 | 3.3 | 18.5 | .561 | — |
-| [December 2005](../2005-06/12_December/League_Stats.md) | 25 | NJ | NBA | SF | 1 | 1 | 48.0 | 9.0 | 18.0 | .500 | 0.0 | 0.0 | N/A | 9.0 | 18.0 | .500 | .500 | 7.0 | 11.0 | .636 | 0.0 | 12.0 | 12.0 | 4.0 | 1.0 | 1.0 | 7.0 | 4.0 | 25.0 | .547 | — |
+| [December 2005](../2005-06/12_December/League_Stats.md) | 25 | NJ | NBA | SF | 4 | 4 | 39.0 | 6.5 | 13.8 | .473 | 0.8 | 1.5 | .500 | 5.8 | 12.2 | .469 | .500 | 6.2 | 9.2 | .676 | 0.5 | 8.8 | 9.2 | 3.5 | 0.8 | 0.2 | 3.5 | 3.8 | 20.0 | .561 | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 25 | NJ | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 25 | NJ | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [March 2006](../2005-06/03_March/League_Stats.md) | 25 | NJ | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -61,8 +61,8 @@ As of **2005-12-05**: 16 closed games feed this card. Per-game columns use the r
 | [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 25 | NJ | NBA | SF | 3 | 3 | 44.5 | 6.7 | 14.3 | .465 | 0.7 | 3.7 | .182 | 6.0 | 10.7 | .562 | .488 | 8.0 | 10.7 | .750 | 2.0 | 7.7 | 9.7 | 4.7 | 1.7 | 0.0 | 2.3 | 3.7 | 22.0 | .578 | — |
 | [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 25 | NJ | NBA | SF | 3 | 3 | 37.6 | 7.0 | 12.0 | .583 | 1.0 | 1.7 | .600 | 6.0 | 10.3 | .581 | .625 | 2.7 | 3.0 | .889 | 2.3 | 6.0 | 8.3 | 2.3 | 0.3 | 0.0 | 2.0 | 3.7 | 17.7 | .663 | — |
 | [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 25 | NJ | NBA | SF | 5 | 5 | 40.2 | 4.2 | 11.4 | .368 | 0.6 | 3.8 | .158 | 3.6 | 7.6 | .474 | .395 | 4.0 | 4.8 | .833 | 1.8 | 4.2 | 6.0 | 4.8 | 0.6 | 0.4 | 3.0 | 3.0 | 13.0 | .481 | — |
-| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 25 | NJ | NBA | SF | 1 | 1 | 48.0 | 9.0 | 18.0 | .500 | 0.0 | 0.0 | N/A | 9.0 | 18.0 | .500 | .500 | 7.0 | 11.0 | .636 | 0.0 | 12.0 | 12.0 | 4.0 | 1.0 | 1.0 | 7.0 | 4.0 | 25.0 | .547 | — |
-| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 25 | NJ | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 25 | NJ | NBA | SF | 2 | 2 | 42.9 | 6.5 | 15.0 | .433 | 0.5 | 1.0 | .500 | 6.0 | 14.0 | .429 | .450 | 6.5 | 10.0 | .650 | 0.0 | 11.5 | 11.5 | 3.0 | 1.0 | 0.5 | 5.5 | 4.0 | 20.0 | .515 | — |
+| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 25 | NJ | NBA | SF | 2 | 2 | 35.1 | 6.5 | 12.5 | .520 | 1.0 | 2.0 | .500 | 5.5 | 10.5 | .524 | .560 | 6.0 | 8.5 | .706 | 1.0 | 6.0 | 7.0 | 4.0 | 0.5 | 0.0 | 1.5 | 3.5 | 20.0 | .616 | — |
 | [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 25 | NJ | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 25 | NJ | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 25 | NJ | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -85,33 +85,33 @@ As of **2005-12-05**: 16 closed games feed this card. Per-game columns use the r
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 221 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 258 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 16 of 16 closed games; 16 tracked appearances form the denominator below (2005-11-02 to 2005-12-03).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 19 of 19 closed games; 19 tracked appearances form the denominator below (2005-11-02 to 2005-12-10).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 64 | 111 | 57.7% | 8.00 | 6.94 |
-| Outside paint, under 12 ft | 3 | 9 | 33.3% | 0.38 | 0.56 |
-| Outside paint, 12 to under 18 ft | 10 | 15 | 66.7% | 1.25 | 0.94 |
-| 18 ft to the three-point line | 17 | 40 | 42.5% | 2.12 | 2.50 |
-| Three-point range | 9 | 46 | 19.6% | 1.69 | 2.88 |
-| All field goals | 103 | 221 | 46.6% | 13.44 | 13.81 |
+| Paint | 72 | 126 | 57.1% | 7.58 | 6.63 |
+| Outside paint, under 12 ft | 4 | 11 | 36.4% | 0.42 | 0.58 |
+| Outside paint, 12 to under 18 ft | 11 | 18 | 61.1% | 1.16 | 0.95 |
+| 18 ft to the three-point line | 21 | 51 | 41.2% | 2.21 | 2.68 |
+| Three-point range | 12 | 52 | 23.1% | 1.89 | 2.74 |
+| All field goals | 120 | 258 | 46.5% | 13.26 | 13.58 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 16 closed regular-season games through 2005-12-05. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 19 closed regular-season games through 2005-12-11. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | NJN | 80 | 80 | 36.0 | 15.5 | 6.4 | 2.5 | 1.0 | 0.6 | 1.9 | 50.1% | 25.0% | 74.3% |
 | 2003-04 | NJ | 82 | 82 | 37.3 | 18.5 | 5.6 | 4.0 | 1.1 | 0.3 | 2.4 | 51.5% | 44.0% | 74.6% |
 | 2004-05 | NJ | 33 | 33 | 39.9 | 19.0 | 7.7 | 4.4 | 0.6 | 0.6 | 4.0 | 38.4% | 27.6% | 80.4% |
-| 2005-06 | NJ | 16 | 16 | 41.6 | 18.9 | 7.6 | 3.9 | 1.0 | 0.2 | 2.9 | 46.6% | 19.6% | 77.9% |
+| 2005-06 | NJ | 19 | 19 | 40.7 | 18.8 | 7.7 | 3.8 | 0.9 | 0.2 | 2.8 | 46.5% | 23.1% | 76.3% |
 
 ## Playoff statistics by year
 
@@ -124,7 +124,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-12-05, from closed award decisions (3 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-12-11, from closed award decisions (3 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

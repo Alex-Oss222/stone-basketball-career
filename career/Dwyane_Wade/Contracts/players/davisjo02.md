@@ -2,9 +2,9 @@
 
 # Contract | Josh Davis
 
-Known through: 2005-12-05. [Open interactive contract](davisjo02.html#contract) · [Contract history](davisjo02.html#contract-history)
+Known through: 2005-12-11. [Open interactive contract](davisjo02.html#contract) · [Contract history](davisjo02.html#contract-history)
 
-Josh Davis: under contract. Evidence cutoff: 2005-12-05.
+Josh Davis: under contract. Evidence cutoff: 2005-12-11.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Josh Davis |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Phoenix Suns |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

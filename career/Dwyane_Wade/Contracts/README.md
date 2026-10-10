@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-12-05. [Search the contract directory](index.html)
+Known through 2005-12-11. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -329,7 +329,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jonathan Bender](players/bendejo01.md) | Indiana Pacers | under contract | Jonathan Bender · 2002-10-31 | 1 |
 | [Joseph Forte](players/fortejo01.md) | Free agent | under rookie contract | Joseph Forte · existing contract; signing date not recorded | 1 |
 | [Josh Childress](players/joshchildress.md) | Phoenix Suns | under contract | Josh Childress · 2004-07-01 | 1 |
-| [Josh Davis](players/davisjo02.md) | Free agent | under contract | No verified current agreement | 1 |
+| [Josh Davis](players/davisjo02.md) | Phoenix Suns | under contract | No verified current agreement | 1 |
 | [Josh Howard](players/howarjo01.md) | Dallas Mavericks | No verified contract record | No verified current agreement | 0 |
 | [Josh Powell](players/poweljo01.md) | Detroit Pistons | under contract | Josh Powell · 2005-09-09 | 1 |
 | [Josh Smith](players/joshsmith.md) | Utah Jazz | under contract | Josh Smith · 2004-07-01 | 1 |

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-12-05",
+  "as_of": "2005-12-11",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2885,7 +2885,7 @@
     {
       "player_id": "davisjo02",
       "name": "Josh Davis",
-      "team": "Free agent",
+      "team": "Phoenix Suns",
       "status": "under contract",
       "current_contract_id": null,
       "recorded_agreements": 1,

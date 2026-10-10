@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-12-05 · Miami Heat · active
+Career date: 2005-12-11 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-24 closed game records in 2005-06 through 2005-12-05. Competitions remain separate.
+28 closed game records in 2005-06 through 2005-12-11. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 17 | 37.1 | 26.9 | 7.0 | 4.4 | 2.1 | Complete |
+| regular | 21 | 36.9 | 26.0 | 6.9 | 4.3 | 2.0 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 156 | 271 | 0.576 | 27 | 53 | 0.509 |
+| regular | 184 | 323 | 0.570 | 30 | 61 | 0.492 |
 
 ## Closed source games
 
@@ -54,6 +54,10 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-11-30 | regular | Atlanta Hawks | Played | [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_5.md) |
 | 2005-12-02 | regular | Sacramento Kings | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.md) |
 | 2005-12-03 | regular | Denver Nuggets | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.md) |
+| 2005-12-05 | regular | Los Angeles Clippers | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.md) |
+| 2005-12-07 | regular | San Antonio Spurs | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.md) |
+| 2005-12-09 | regular | Denver Nuggets | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.md) |
+| 2005-12-11 | regular | Washington Wizards | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -90,11 +94,11 @@ The next declared, closed game result or a chosen completed-period review.
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-23/review.json)
-- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-23/depth_chart.json)
+- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/review.json)
+- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-11-23/rotation.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
@@ -121,4 +125,8 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_5.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

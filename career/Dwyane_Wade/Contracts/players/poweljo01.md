@@ -2,9 +2,9 @@
 
 # Contract | Josh Powell
 
-Known through: 2005-12-05. [Open interactive contract](poweljo01.html#contract) · [Contract history](poweljo01.html#contract-history)
+Known through: 2005-12-11. [Open interactive contract](poweljo01.html#contract) · [Contract history](poweljo01.html#contract-history)
 
-Josh Powell: under contract. Evidence cutoff: 2005-12-05.
+Josh Powell: under contract. Evidence cutoff: 2005-12-11.
 
 ## Current contract
 
