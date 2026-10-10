@@ -4,7 +4,7 @@
 
 NBA regular season · February 22-28, 2006
 
-As of December 4, 2005: not started. The 16-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 16-player active roster.
+As of December 5, 2005: not started. The 16-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 16-player active roster.
 
 ## Team record
 

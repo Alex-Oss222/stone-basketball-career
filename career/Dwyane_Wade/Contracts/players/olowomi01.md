@@ -2,9 +2,9 @@
 
 # Contract | Michael Olowokandi
 
-Known through: 2005-12-04. [Open interactive contract](olowomi01.html#contract) · [Contract history](olowomi01.html#contract-history)
+Known through: 2005-12-05. [Open interactive contract](olowomi01.html#contract) · [Contract history](olowomi01.html#contract-history)
 
-Michael Olowokandi: under contract. Evidence cutoff: 2005-12-04.
+Michael Olowokandi: under contract. Evidence cutoff: 2005-12-05.
 
 ## Current contract
 
@@ -118,7 +118,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Michael Olowokandi |
-| Club / rights baseline | Phoenix Suns |
+| Club / rights baseline | Detroit Pistons |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

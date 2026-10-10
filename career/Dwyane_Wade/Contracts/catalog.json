@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-12-04",
+  "as_of": "2005-12-05",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2336,7 +2336,7 @@
     {
       "player_id": "voskuja01",
       "name": "Jake Voskuhl",
-      "team": "Phoenix Suns",
+      "team": "Detroit Pistons",
       "status": "under contract",
       "current_contract_id": "voskuja01-2003-07-16",
       "recorded_agreements": 2,
@@ -3344,7 +3344,7 @@
     {
       "player_id": "barbole01",
       "name": "Leandro Barbosa",
-      "team": "Phoenix Suns",
+      "team": "Detroit Pistons",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3893,7 +3893,7 @@
     {
       "player_id": "olowomi01",
       "name": "Michael Olowokandi",
-      "team": "Phoenix Suns",
+      "team": "Detroit Pistons",
       "status": "under contract",
       "current_contract_id": "olowomi01-2003-07-16",
       "recorded_agreements": 2,
@@ -4217,7 +4217,7 @@
     {
       "player_id": "brownpj01",
       "name": "P.J. Brown",
-      "team": "Detroit Pistons",
+      "team": "Phoenix Suns",
       "status": "under contract",
       "current_contract_id": "brownpj01-2003-07-16",
       "recorded_agreements": 2,

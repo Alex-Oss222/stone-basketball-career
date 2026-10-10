@@ -2,9 +2,9 @@
 
 # Contract | Mengke Bateer
 
-Known through: 2005-12-04. [Open interactive contract](bateeme01.html#contract) · [Contract history](bateeme01.html#contract-history)
+Known through: 2005-12-05. [Open interactive contract](bateeme01.html#contract) · [Contract history](bateeme01.html#contract-history)
 
-Mengke Bateer: under contract. Evidence cutoff: 2005-12-04.
+Mengke Bateer: under contract. Evidence cutoff: 2005-12-05.
 
 ## Current contract
 

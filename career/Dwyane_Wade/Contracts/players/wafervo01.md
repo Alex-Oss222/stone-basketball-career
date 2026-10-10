@@ -2,9 +2,9 @@
 
 # Contract | Von Wafer
 
-Known through: 2005-12-04. [Open interactive contract](wafervo01.html#contract) · [Contract history](wafervo01.html#contract-history)
+Known through: 2005-12-05. [Open interactive contract](wafervo01.html#contract) · [Contract history](wafervo01.html#contract-history)
 
-Von Wafer: under contract. Evidence cutoff: 2005-12-04.
+Von Wafer: under contract. Evidence cutoff: 2005-12-05.
 
 ## Current contract
 

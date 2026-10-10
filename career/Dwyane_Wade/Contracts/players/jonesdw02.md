@@ -2,9 +2,9 @@
 
 # Contract | Dwayne Jones
 
-Known through: 2005-12-04. [Open interactive contract](jonesdw02.html#contract) · [Contract history](jonesdw02.html#contract-history)
+Known through: 2005-12-05. [Open interactive contract](jonesdw02.html#contract) · [Contract history](jonesdw02.html#contract-history)
 
-Dwayne Jones: under contract. Evidence cutoff: 2005-12-04.
+Dwayne Jones: under contract. Evidence cutoff: 2005-12-05.
 
 ## Current contract
 

@@ -627,6 +627,110 @@
     }
    ],
    "winner": "Chris Paul"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-11-28-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-11-28",
+   "period_end": "2005-12-04",
+   "announced_on": "2005-12-05",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 35.8,
+     "reb": 8.8,
+     "ast": 4.0,
+     "game_score": 31.5,
+     "score": 135.0,
+     "rank": 1
+    },
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 26.0,
+     "reb": 4.0,
+     "ast": 5.2,
+     "game_score": 19.03,
+     "score": 85.1,
+     "rank": 2
+    },
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 23.5,
+     "reb": 6.0,
+     "ast": 4.8,
+     "game_score": 17.95,
+     "score": 80.8,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwyane Wade"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-11-28-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-11-28",
+   "period_end": "2005-12-04",
+   "announced_on": "2005-12-05",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 25.5,
+     "reb": 8.2,
+     "ast": 4.2,
+     "game_score": 19.77,
+     "score": 88.1,
+     "rank": 1
+    },
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 28.2,
+     "reb": 4.5,
+     "ast": 5.2,
+     "game_score": 20.83,
+     "score": 86.3,
+     "rank": 2
+    },
+    {
+     "player": "Ray Allen",
+     "team": "Seattle SuperSonics",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 30.3,
+     "reb": 4.0,
+     "ast": 5.0,
+     "game_score": 25.33,
+     "score": 85.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Dirk Nowitzki"
   }
  ]
 }

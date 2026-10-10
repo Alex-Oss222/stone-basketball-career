@@ -2,9 +2,9 @@
 
 # Contract | Jake Voskuhl
 
-Known through: 2005-12-04. [Open interactive contract](voskuja01.html#contract) · [Contract history](voskuja01.html#contract-history)
+Known through: 2005-12-05. [Open interactive contract](voskuja01.html#contract) · [Contract history](voskuja01.html#contract-history)
 
-Jake Voskuhl: under contract. Evidence cutoff: 2005-12-04.
+Jake Voskuhl: under contract. Evidence cutoff: 2005-12-05.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jake Voskuhl |
-| Club / rights baseline | Phoenix Suns |
+| Club / rights baseline | Detroit Pistons |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

@@ -2289,6 +2289,42 @@
    "bbr_id": "collija04",
    "from": "New Jersey Nets",
    "to": "Golden State Warriors"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-05-barbole01-brownpj01-olowomi01-voskuja01",
+   "date": "2005-12-05",
+   "kind": "trade",
+   "player": "P.J. Brown",
+   "bbr_id": "brownpj01",
+   "from": "Detroit Pistons",
+   "to": "Phoenix Suns"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-05-barbole01-brownpj01-olowomi01-voskuja01",
+   "date": "2005-12-05",
+   "kind": "trade",
+   "player": "Leandro Barbosa",
+   "bbr_id": "barbole01",
+   "from": "Phoenix Suns",
+   "to": "Detroit Pistons"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-05-barbole01-brownpj01-olowomi01-voskuja01",
+   "date": "2005-12-05",
+   "kind": "trade",
+   "player": "Michael Olowokandi",
+   "bbr_id": "olowomi01",
+   "from": "Phoenix Suns",
+   "to": "Detroit Pistons"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-05-barbole01-brownpj01-olowomi01-voskuja01",
+   "date": "2005-12-05",
+   "kind": "trade",
+   "player": "Jake Voskuhl",
+   "bbr_id": "voskuja01",
+   "from": "Phoenix Suns",
+   "to": "Detroit Pistons"
   }
  ],
  "market_days": [
@@ -2325,6 +2361,7 @@
   "2005-12-01",
   "2005-12-02",
   "2005-12-03",
-  "2005-12-04"
+  "2005-12-04",
+  "2005-12-05"
  ]
 }

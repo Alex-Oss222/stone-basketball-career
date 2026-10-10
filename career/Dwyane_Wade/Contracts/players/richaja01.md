@@ -2,9 +2,9 @@
 
 # Contract | Jason Richardson
 
-Known through: 2005-12-04. [Open interactive contract](richaja01.html#contract) · [Contract history](richaja01.html#contract-history)
+Known through: 2005-12-05. [Open interactive contract](richaja01.html#contract) · [Contract history](richaja01.html#contract-history)
 
-Jason Richardson: under contract. Evidence cutoff: 2005-12-04.
+Jason Richardson: under contract. Evidence cutoff: 2005-12-05.
 
 ## Current contract
 

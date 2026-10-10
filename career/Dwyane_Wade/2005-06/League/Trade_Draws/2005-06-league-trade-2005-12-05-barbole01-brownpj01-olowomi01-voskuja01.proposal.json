@@ -1,0 +1,41 @@
+{
+ "id": "2005-06-league-trade-2005-12-05-barbole01-brownpj01-olowomi01-voskuja01",
+ "date": "2005-12-05",
+ "clubs": [
+  "Detroit Pistons",
+  "Phoenix Suns"
+ ],
+ "a": {
+  "club": "Detroit Pistons",
+  "sends": [
+   "P.J. Brown"
+  ],
+  "bbr_ids": [
+   "brownpj01"
+  ],
+  "salary": 8500000
+ },
+ "b": {
+  "club": "Phoenix Suns",
+  "sends": [
+   "Leandro Barbosa",
+   "Michael Olowokandi",
+   "Jake Voskuhl"
+  ],
+  "bbr_ids": [
+   "barbole01",
+   "olowomi01",
+   "voskuja01"
+  ],
+  "salary": 7997267
+ },
+ "gain": {
+  "Detroit Pistons": 0.256,
+  "Phoenix Suns": 0.326
+ },
+ "accept": {
+  "Detroit Pistons": 0.95,
+  "Phoenix Suns": 0.95
+ },
+ "both": 0.9025
+}

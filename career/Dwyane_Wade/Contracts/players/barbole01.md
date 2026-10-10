@@ -2,9 +2,9 @@
 
 # Contract | Leandro Barbosa
 
-Known through: 2005-12-04. [Open interactive contract](barbole01.html#contract) · [Contract history](barbole01.html#contract-history)
+Known through: 2005-12-05. [Open interactive contract](barbole01.html#contract) · [Contract history](barbole01.html#contract-history)
 
-Leandro Barbosa: No verified contract record. Evidence cutoff: 2005-12-04.
+Leandro Barbosa: No verified contract record. Evidence cutoff: 2005-12-05.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Leandro Barbosa |
-| Club / rights baseline | Phoenix Suns |
+| Club / rights baseline | Detroit Pistons |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

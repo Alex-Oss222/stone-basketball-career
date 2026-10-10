@@ -2,9 +2,9 @@
 
 # Contract | Courtney Alexander
 
-Known through: 2005-12-04. [Open interactive contract](alexaco02.html#contract) · [Contract history](alexaco02.html#contract-history)
+Known through: 2005-12-05. [Open interactive contract](alexaco02.html#contract) · [Contract history](alexaco02.html#contract-history)
 
-Courtney Alexander: under rookie contract. Evidence cutoff: 2005-12-04.
+Courtney Alexander: under rookie contract. Evidence cutoff: 2005-12-05.
 
 ## Current contract
 

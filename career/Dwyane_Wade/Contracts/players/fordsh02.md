@@ -2,9 +2,9 @@
 
 # Contract | Sharrod Ford
 
-Known through: 2005-12-04. [Open interactive contract](fordsh02.html#contract) · [Contract history](fordsh02.html#contract-history)
+Known through: 2005-12-05. [Open interactive contract](fordsh02.html#contract) · [Contract history](fordsh02.html#contract-history)
 
-Sharrod Ford: under contract. Evidence cutoff: 2005-12-04.
+Sharrod Ford: under contract. Evidence cutoff: 2005-12-05.
 
 ## Current contract
 

@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG / PG  
 **Age at assessment:** 19 · **Height:** 6-6 in shoes · **Weight:** 220 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2005-12-04 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2005-12-05 
 
 **Contract/control:** Existing contract: 2 season(s) from 2005-06, $5,727,802 scheduled ($2,526,600 in 2005-06). (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
 
@@ -128,7 +128,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2003-04 | MIA | 75 | 70 | 35.0 | 17.9 | 4.8 | 4.5 | 1.6 | 1.0 | 1.1 | 52.0% | 39.7% | 90.9% |
 | 2004-05 | MIA | 76 | 76 | 36.2 | 21.3 | 5.4 | 4.0 | 1.4 | 1.2 | 1.3 | 53.0% | 42.9% | 93.2% |
-| 2005-06 | MIA | 17 | 17 | 37.1 | 26.9 | 7.0 | 4.4 | 2.1 | 0.9 | 2.1 | 57.6% | 50.9% | 91.5% |
+| 2005-06 | MIA | 18 | 18 | 37.5 | 26.9 | 7.1 | 4.4 | 1.9 | 0.8 | 2.1 | 56.7% | 50.0% | 92.2% |
 
 Source: [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json) for roster status; detailed historical statistical lines have not yet been imported.
 

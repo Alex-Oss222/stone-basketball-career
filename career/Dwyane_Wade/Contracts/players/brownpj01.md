@@ -2,9 +2,9 @@
 
 # Contract | P.J. Brown
 
-Known through: 2005-12-04. [Open interactive contract](brownpj01.html#contract) · [Contract history](brownpj01.html#contract-history)
+Known through: 2005-12-05. [Open interactive contract](brownpj01.html#contract) · [Contract history](brownpj01.html#contract-history)
 
-P.J. Brown: under contract. Evidence cutoff: 2005-12-04.
+P.J. Brown: under contract. Evidence cutoff: 2005-12-05.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | P.J. Brown |
-| Club / rights baseline | Detroit Pistons |
+| Club / rights baseline | Phoenix Suns |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

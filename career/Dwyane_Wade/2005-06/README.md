@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2005-12-04](../assets/stat_reports/personal_2005-06_2005-12-04.svg)
+![Player personal information and earned 2005-06 awards through 2005-12-05](../assets/stat_reports/personal_2005-06_2005-12-05.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2005-12-04; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2005-12-05; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
@@ -42,10 +42,11 @@ Identity as of 2005-12-04; status snapshot dated 2005-10-26. User-established al
 | Eastern Conference Player of the Week | 2005-11-07 to 2005-11-13 | 2005-11-14 | [East POW](../Stats_and_Awards/League/2005-06/11_November/Week_2/League_Awards.md#player-of-the-week) |
 | Eastern Conference Player of the Week | 2005-11-14 to 2005-11-20 | 2005-11-21 | [East POW](../Stats_and_Awards/League/2005-06/11_November/Week_3/League_Awards.md#player-of-the-week) |
 | Eastern Conference Player of the Month | 2005-11-01 to 2005-11-30 | 2005-12-02 | [East POM](../Stats_and_Awards/League/2005-06/11_November/League_Awards.md#player-of-the-month) |
+| Eastern Conference Player of the Week | 2005-11-28 to 2005-12-04 | 2005-12-05 | [East POW](../Stats_and_Awards/League/2005-06/12_December/Week_1/League_Awards.md#player-of-the-week) |
 
 ## Statistics
 
-Report cutoff: **2005-12-04**. Each row is a separate competition; do not add the rates.
+Report cutoff: **2005-12-05**. Each row is a separate competition; do not add the rates.
 
 ### Competition summary
 
@@ -57,12 +58,12 @@ Report cutoff: **2005-12-04**. Each row is a separate competition; do not add th
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [Summer League](02_Summer_League/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [Preseason](05_Preseason/README.md) | 21 | Miami Heat | NBA | SG / PG | 7 | 7 | 29.6 | 8.1 | 15.6 | .523 | 1.0 | 2.4 | .412 | 7.1 | 13.1 | .543 | .555 | 7.7 | 8.1 | .947 | 0.7 | 3.0 | 3.7 | 2.6 | 0.7 | 0.0 | 1.4 | 2.1 | 25.0 | .653 | — |
-| [NBA regular season](06_Regular_Season/README.md) | 21 | Miami Heat | NBA | SG / PG | 17 | 17 | 37.1 | 9.2 | 15.9 | .576 | 1.6 | 3.1 | .509 | 7.6 | 12.8 | .592 | .625 | 6.9 | 7.6 | .915 | 2.1 | 4.9 | 7.0 | 4.4 | 2.1 | 0.9 | 2.1 | 3.1 | 26.9 | .697 | [East POW](../Stats_and_Awards/League/2005-06/11_November/Week_2/League_Awards.md#player-of-the-week), [East POW](../Stats_and_Awards/League/2005-06/11_November/Week_3/League_Awards.md#player-of-the-week), [East POM](../Stats_and_Awards/League/2005-06/11_November/League_Awards.md#player-of-the-month) |
+| [NBA regular season](06_Regular_Season/README.md) | 21 | Miami Heat | NBA | SG / PG | 17 | 17 | 37.1 | 9.2 | 15.9 | .576 | 1.6 | 3.1 | .509 | 7.6 | 12.8 | .592 | .625 | 6.9 | 7.6 | .915 | 2.1 | 4.9 | 7.0 | 4.4 | 2.1 | 0.9 | 2.1 | 3.1 | 26.9 | .697 | [East POW](../Stats_and_Awards/League/2005-06/11_November/Week_2/League_Awards.md#player-of-the-week), [East POW](../Stats_and_Awards/League/2005-06/11_November/Week_3/League_Awards.md#player-of-the-week), [East POM](../Stats_and_Awards/League/2005-06/11_November/League_Awards.md#player-of-the-month), [East POW](../Stats_and_Awards/League/2005-06/12_December/Week_1/League_Awards.md#player-of-the-week) |
 | [NBA playoffs](08_Playoffs/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-12-04, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-12-05, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Regular season by month
 
@@ -73,7 +74,7 @@ Awards are confirmed through 2005-12-04, filed by the honor's period-end date; t
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [November 2005](../Stats_and_Awards/2005-06/11_November/README.md) | 21 | Miami Heat | NBA | SG / PG | 15 | 15 | 37.0 | 8.9 | 15.1 | .593 | 1.5 | 2.7 | .550 | 7.5 | 12.4 | .602 | .642 | 6.7 | 7.4 | .910 | 1.9 | 5.0 | 6.9 | 4.3 | 1.9 | 0.9 | 2.0 | 3.0 | 26.1 | .711 | [East POW](../Stats_and_Awards/League/2005-06/11_November/Week_2/League_Awards.md#player-of-the-week), [East POW](../Stats_and_Awards/League/2005-06/11_November/Week_3/League_Awards.md#player-of-the-week), [East POM](../Stats_and_Awards/League/2005-06/11_November/League_Awards.md#player-of-the-month) |
-| [December 2005](../Stats_and_Awards/2005-06/12_December/README.md) | 21 | Miami Heat | NBA | SG / PG | 2 | 2 | 38.1 | 11.0 | 22.5 | .489 | 2.5 | 6.5 | .385 | 8.5 | 16.0 | .531 | .544 | 8.5 | 9.0 | .944 | 3.5 | 4.5 | 8.0 | 4.5 | 3.5 | 1.0 | 2.5 | 3.5 | 33.0 | .624 | — |
+| [December 2005](../Stats_and_Awards/2005-06/12_December/README.md) | 21 | Miami Heat | NBA | SG / PG | 2 | 2 | 38.1 | 11.0 | 22.5 | .489 | 2.5 | 6.5 | .385 | 8.5 | 16.0 | .531 | .544 | 8.5 | 9.0 | .944 | 3.5 | 4.5 | 8.0 | 4.5 | 3.5 | 1.0 | 2.5 | 3.5 | 33.0 | .624 | [East POW](../Stats_and_Awards/League/2005-06/12_December/Week_1/League_Awards.md#player-of-the-week) |
 | [January 2006](../Stats_and_Awards/2005-06/01_January/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2006](../Stats_and_Awards/2005-06/02_February/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [March 2006](../Stats_and_Awards/2005-06/03_March/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -81,7 +82,7 @@ Awards are confirmed through 2005-12-04, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2005-12-04, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2005-12-05, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Career records
 

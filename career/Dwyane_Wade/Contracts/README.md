@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-12-04. [Search the contract directory](index.html)
+Known through 2005-12-05. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -268,7 +268,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jacque Vaughn](players/vaughja01.md) | Seattle SuperSonics | under contract | No verified current agreement | 3 |
 | [Jahidi White](players/whiteja01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
 | [Jake Tsakalidis](players/tsakaja01.md) | New Orleans/Oklahoma City Hornets | under contract | No verified current agreement | 2 |
-| [Jake Voskuhl](players/voskuja01.md) | Phoenix Suns | under contract | Jake Voskuhl · 2003-07-16 | 2 |
+| [Jake Voskuhl](players/voskuja01.md) | Detroit Pistons | under contract | Jake Voskuhl · 2003-07-16 | 2 |
 | [Jalen Rose](players/roseja01.md) | Washington Wizards | under contract | Jalen Rose · existing contract; signing date not recorded | 1 |
 | [Jamaal Magloire](players/magloja01.md) | New York Knicks | under contract | Jamaal Magloire · 2005-08-19 | 2 |
 | [Jamaal Tinsley](players/tinslja01.md) | Indiana Pacers | under contract | Jamaal Tinsley · 2005-08-02 | 2 |
@@ -379,7 +379,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Lavor Postell](players/postela01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Lawrence Funderburke](players/fundela01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
 | [Lawrence Roberts](players/roberla01.md) | Minnesota Timberwolves | under contract | Lawrence Roberts · 2005-08-02 | 1 |
-| [Leandro Barbosa](players/barbole01.md) | Phoenix Suns | No verified contract record | No verified current agreement | 0 |
+| [Leandro Barbosa](players/barbole01.md) | Detroit Pistons | No verified contract record | No verified current agreement | 0 |
 | [LeBron James](players/jamesle01.md) | Cleveland Cavaliers | No verified contract record | No verified current agreement | 0 |
 | [Lee Nailon](players/nailole01.md) | Denver Nuggets | under contract | Lee Nailon · 2005-09-09 | 3 |
 | [Leon Smith](players/smithle01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
@@ -441,7 +441,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Michael Doleac](players/doleami01.md) | Los Angeles Clippers | under contract | Michael Doleac · 2005-08-02 | 2 |
 | [Michael Finley](players/finlemi01.md) | Dallas Mavericks | under contract | Michael Finley · existing contract; signing date not recorded | 1 |
 | [Michael Jordan](players/jordami01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |
-| [Michael Olowokandi](players/olowomi01.md) | Phoenix Suns | under contract | Michael Olowokandi · 2003-07-16 | 2 |
+| [Michael Olowokandi](players/olowomi01.md) | Detroit Pistons | under contract | Michael Olowokandi · 2003-07-16 | 2 |
 | [Michael Redd](players/reddmi01.md) | Milwaukee Bucks | under contract | Michael Redd · 2005-08-02 | 2 |
 | [Michael Ruffin](players/ruffimi01.md) | Dallas Mavericks | under contract | No verified current agreement | 2 |
 | [Michael Stewart](players/stewami01.md) | Free agent | under contract | Michael Stewart · 1999-08-12 | 1 |
@@ -477,7 +477,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Omar Cook](players/cookom01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Orien Greene](players/greenor01.md) | San Antonio Spurs | under contract | Orien Greene · 2005-07-01 | 1 |
 | [Othella Harrington](players/harriot01.md) | New York Knicks | under contract | Othella Harrington · existing contract; signing date not recorded | 1 |
-| [P.J. Brown](players/brownpj01.md) | Detroit Pistons | under contract | P.J. Brown · 2003-07-16 | 2 |
+| [P.J. Brown](players/brownpj01.md) | Phoenix Suns | under contract | P.J. Brown · 2003-07-16 | 2 |
 | [Paccelis Morlende](players/morlepa01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Pape Sow](players/papesow.md) | Milwaukee Bucks | under contract | Pape Sow · 2005-09-30 | 2 |
 | [Pat Burke](players/burkepa01.md) | Phoenix Suns | under contract | Pat Burke · 2005-08-05 | 2 |
