@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 30 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-01-03 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-01-04 
 
 **Contract/control:** Signed September 2, 2005 (mid_level): 3 season(s) from 2005-06, $16,200,000 scheduled ($5,000,000 in 2005-06). (register, 2005-12-19) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at PG, staff plan 11 minutes (staff rotation dated 2005-12-21, [record](../Depth_Chart/Reviews/2005-12-21/rotation.json)).
+**Role:** Rotation at PG, staff plan 11 minutes (staff rotation dated 2006-01-04, [record](../Depth_Chart/Reviews/2006-01-04/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -34,11 +34,12 @@ Unassessed.
 | 2005-11-23 | Staff rotation of 2005-11-23: rotation at PG, staff plan 11 minutes. | [Rotation](../Depth_Chart/Reviews/2005-11-23/rotation.json) |
 | 2005-12-07 | Staff rotation of 2005-12-07: rotation at PG, staff plan 11 minutes. | [Rotation](../Depth_Chart/Reviews/2005-12-07/rotation.json) |
 | 2005-12-21 | Staff rotation of 2005-12-21: rotation at PG, staff plan 11 minutes. | [Rotation](../Depth_Chart/Reviews/2005-12-21/rotation.json) |
+| 2006-01-04 | Staff rotation of 2006-01-04: rotation at PG, staff plan 11 minutes. | [Rotation](../Depth_Chart/Reviews/2006-01-04/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../../../../career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json), 2004-05 simulated season totals.
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-12-21.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-01-04.
 
 <!-- yearly-statistics:start -->
 
@@ -51,7 +52,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2004-05 | Utah Jazz, Indiana Pacers | 66 | 32 | 29.1 | 10.6 | 3.5 | 4.9 | 1.0 | 0.2 | 2.1 | 0.467 | 0.488 | 0.817 |
-| 2005-06 | MIA | 32 | 0 | 11.3 | 4.2 | 0.9 | 2.0 | 0.4 | 0.1 | 0.7 | 44.2% | 27.6% | 80.5% |
+| 2005-06 | MIA | 33 | 0 | 11.3 | 4.2 | 0.9 | 2.0 | 0.4 | 0.1 | 0.7 | 44.9% | 27.6% | 81.4% |
 
 Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
 

@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-06-rotation-2006-01-04-sf-starter",
+ "date": "2006-01-04",
+ "question": "Who starts at SF: Joe Smith or Caron Butler?",
+ "decider": "Miami coaching staff (engine evaluation draw)",
+ "options": {
+  "Joe Smith": 0.648639,
+  "Caron Butler": 0.351361
+ },
+ "basis": "Dated staff scores 14.936946 and 14.048859 within 10%; closed production per 30 minutes blended with 300 preseason prior minutes. No seniority, draft-slot or incumbent bonus."
+}
