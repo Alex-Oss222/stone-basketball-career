@@ -5812,6 +5812,24 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.16 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-04-18-expire-livinra01",
+   "date": "2006-04-18",
+   "kind": "expire",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "Sacramento Kings",
+   "to": null,
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
   }
  ],
  "market_days": [
@@ -5982,6 +6000,7 @@
   "2006-04-14",
   "2006-04-15",
   "2006-04-16",
-  "2006-04-17"
+  "2006-04-17",
+  "2006-04-18"
  ]
 }
