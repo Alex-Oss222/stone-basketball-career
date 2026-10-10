@@ -2,9 +2,9 @@
 
 # Contract | Nick Collison
 
-Known through: 2006-01-10. [Open interactive contract](collini01.html#contract) · [Contract history](collini01.html#contract-history)
+Known through: 2006-01-15. [Open interactive contract](collini01.html#contract) · [Contract history](collini01.html#contract-history)
 
-Nick Collison: under contract. Evidence cutoff: 2006-01-10.
+Nick Collison: under contract. Evidence cutoff: 2006-01-15.
 
 ## Current contract
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-01-10",
+  "as_of": "2006-01-15",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -806,7 +806,7 @@
     {
       "player_id": "russebr01",
       "name": "Bryon Russell",
-      "team": "Free agent",
+      "team": "Indiana Pacers",
       "status": "under contract",
       "current_contract_id": "russebr01-2003-10-01",
       "recorded_agreements": 2,
@@ -919,6 +919,15 @@
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/oaklech01.html#contract"
+    },
+    {
+      "player_id": "smithch04",
+      "name": "Charles Smith",
+      "team": "Sacramento Kings",
+      "status": "under contract",
+      "current_contract_id": "smithch04-2005-08-19",
+      "recorded_agreements": 2,
+      "href": "players/smithch04.html#contract"
     },
     {
       "player_id": "villach01",
@@ -1949,7 +1958,7 @@
     {
       "player_id": "johnser02",
       "name": "Ervin Johnson",
-      "team": "Free agent",
+      "team": "Denver Nuggets",
       "status": "under contract",
       "current_contract_id": "johnser02-existing-d23ec1018463",
       "recorded_agreements": 1,
@@ -3479,7 +3488,7 @@
     {
       "player_id": "schenlu01",
       "name": "Luke Schenscher",
-      "team": "Free agent",
+      "team": "Cleveland Cavaliers",
       "status": "under contract",
       "current_contract_id": "schenlu01-2005-08-02",
       "recorded_agreements": 1,
@@ -4442,7 +4451,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "Memphis Grizzlies",
+      "team": "New Jersey Nets",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -5873,7 +5882,7 @@
     {
       "player_id": "walshma01",
       "name": "walshma01",
-      "team": "Free agent",
+      "team": "Milwaukee Bucks",
       "status": "under contract",
       "current_contract_id": "walshma01-2005-09-02",
       "recorded_agreements": 1,

@@ -2,9 +2,9 @@
 
 # Contract | Elton Brand
 
-Known through: 2006-01-10. [Open interactive contract](brandel01.html#contract) · [Contract history](brandel01.html#contract-history)
+Known through: 2006-01-15. [Open interactive contract](brandel01.html#contract) · [Contract history](brandel01.html#contract-history)
 
-Elton Brand: under contract. Evidence cutoff: 2006-01-10.
+Elton Brand: under contract. Evidence cutoff: 2006-01-15.
 
 ## Current contract
 

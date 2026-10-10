@@ -4533,13 +4533,14 @@
   {
    "player": "Luke Schenscher",
    "bbr_id": "schenlu01",
-   "club": "Toronto Raptors",
+   "club": "Cleveland Cavaliers",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2005-06": 398762
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Toronto Raptors"
   },
   {
    "player": "Ha Seung-Jin",
@@ -4600,13 +4601,14 @@
   {
    "player": "Charles Smith",
    "bbr_id": "smithch04",
-   "club": "New York Knicks",
+   "club": "Sacramento Kings",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2005-06": 1029873
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "New York Knicks"
   },
   {
    "player": "Donta Smith",
@@ -5346,13 +5348,14 @@
   {
    "player": "walshma01",
    "bbr_id": "walshma01",
-   "club": "Charlotte Bobcats",
+   "club": "Milwaukee Bucks",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2005-06": 398762
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Charlotte Bobcats"
   },
   {
    "player": "Luke Walton",

@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2006-01-10** · Toronto Raptors · #4 · PF · age 21
+Career date: **2006-01-15** · Toronto Raptors · #4 · PF · age 21
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,21 +14,21 @@ Career date: **2006-01-10** · Toronto Raptors · #4 · PF · age 21
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 23/23 | 37.7 | 22.7 | 10.5 | 3.3 | 0.8 | 1.4 | 52.7 | 28.6 | 89.5 | 60.0 | 26-9 |
+| 2005-06 | 21 | Toronto Raptors | 25/25 | 37.0 | 22.6 | 10.4 | 3.4 | 0.7 | 1.4 | 53.5 | 27.3 | 89.6 | 60.7 | 28-9 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 23 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 25 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 37.7 |
-| Points | 24.5 | 22.7 |
-| Rebounds | 11.4 | 10.5 |
-| Assists | 4.2 | 3.3 |
-| FG% | 52.0 | 52.7 |
-| 3P% | 41.7 | 28.6 |
-| FT% | 91.3 | 89.5 |
+| Minutes | 36.5 | 37.0 |
+| Points | 24.5 | 22.6 |
+| Rebounds | 11.4 | 10.4 |
+| Assists | 4.2 | 3.4 |
+| FG% | 52.0 | 53.5 |
+| 3P% | 41.7 | 27.3 |
+| FT% | 91.3 | 89.6 |
 
 ## Playoffs
 

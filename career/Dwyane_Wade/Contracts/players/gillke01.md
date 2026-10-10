@@ -2,9 +2,9 @@
 
 # Contract | Kendall Gill
 
-Known through: 2006-01-10. [Open interactive contract](gillke01.html#contract) · [Contract history](gillke01.html#contract-history)
+Known through: 2006-01-15. [Open interactive contract](gillke01.html#contract) · [Contract history](gillke01.html#contract-history)
 
-Kendall Gill: under contract. Evidence cutoff: 2006-01-10.
+Kendall Gill: under contract. Evidence cutoff: 2006-01-15.
 
 ## Current contract
 

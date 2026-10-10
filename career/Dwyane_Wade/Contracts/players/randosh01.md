@@ -2,9 +2,9 @@
 
 # Contract | Shavlik Randolph
 
-Known through: 2006-01-10. [Open interactive contract](randosh01.html#contract) · [Contract history](randosh01.html#contract-history)
+Known through: 2006-01-15. [Open interactive contract](randosh01.html#contract) · [Contract history](randosh01.html#contract-history)
 
-Shavlik Randolph: under contract. Evidence cutoff: 2006-01-10.
+Shavlik Randolph: under contract. Evidence cutoff: 2006-01-15.
 
 ## Current contract
 

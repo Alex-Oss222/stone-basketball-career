@@ -2,9 +2,9 @@
 
 # Contract | Anthony Roberson
 
-Known through: 2006-01-10. [Open interactive contract](roberan02.html#contract) · [Contract history](roberan02.html#contract-history)
+Known through: 2006-01-15. [Open interactive contract](roberan02.html#contract) · [Contract history](roberan02.html#contract-history)
 
-Anthony Roberson: under contract. Evidence cutoff: 2006-01-10.
+Anthony Roberson: under contract. Evidence cutoff: 2006-01-15.
 
 ## Current contract
 

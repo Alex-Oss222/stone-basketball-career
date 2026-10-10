@@ -2,9 +2,9 @@
 
 # Contract | Reggie Evans
 
-Known through: 2006-01-10. [Open interactive contract](evansre01.html#contract) · [Contract history](evansre01.html#contract-history)
+Known through: 2006-01-15. [Open interactive contract](evansre01.html#contract) · [Contract history](evansre01.html#contract-history)
 
-Reggie Evans: under contract. Evidence cutoff: 2006-01-10.
+Reggie Evans: under contract. Evidence cutoff: 2006-01-15.
 
 ## Current contract
 

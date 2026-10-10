@@ -2,9 +2,9 @@
 
 # Contract | Luke Walton
 
-Known through: 2006-01-10. [Open interactive contract](waltolu01.html#contract) · [Contract history](waltolu01.html#contract-history)
+Known through: 2006-01-15. [Open interactive contract](waltolu01.html#contract) · [Contract history](waltolu01.html#contract-history)
 
-Luke Walton: under contract. Evidence cutoff: 2006-01-10.
+Luke Walton: under contract. Evidence cutoff: 2006-01-15.
 
 ## Current contract
 

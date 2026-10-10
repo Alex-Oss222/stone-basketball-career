@@ -2,9 +2,9 @@
 
 # Contract | Rashad McCants
 
-Known through: 2006-01-10. [Open interactive contract](mccanra01.html#contract) · [Contract history](mccanra01.html#contract-history)
+Known through: 2006-01-15. [Open interactive contract](mccanra01.html#contract) · [Contract history](mccanra01.html#contract-history)
 
-Rashad McCants: under contract. Evidence cutoff: 2006-01-10.
+Rashad McCants: under contract. Evidence cutoff: 2006-01-15.
 
 ## Current contract
 
