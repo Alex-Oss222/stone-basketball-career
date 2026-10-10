@@ -2,9 +2,9 @@
 
 # Contract | Jason Maxiell
 
-Known through: 2006-02-17. [Open interactive contract](maxieja01.html#contract) · [Contract history](maxieja01.html#contract-history)
+Known through: 2006-02-19. [Open interactive contract](maxieja01.html#contract) · [Contract history](maxieja01.html#contract-history)
 
-Jason Maxiell: under contract. Evidence cutoff: 2006-02-17.
+Jason Maxiell: under contract. Evidence cutoff: 2006-02-19.
 
 ## Current contract
 

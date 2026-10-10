@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-02-17**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-02-19**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -279,7 +279,7 @@ Card date: **2006-02-17**. 653 registry players, one Markdown card and one inter
 | [Al Harrington](harrial01.md) | Indiana Pacers | 26 | sourced | [open](harrial01.html) |
 | [Alan Anderson](anderal01.md) | Los Angeles Lakers | 23 | silhouette | [open](anderal01.html) |
 | [Amir Johnson](johnsam01.md) | Free agent | 18 | silhouette | [open](johnsam01.html) |
-| [Andrei Kirilenko](kirilan01.md) | Utah Jazz | 24 | sourced | [open](kirilan01.html) |
+| [Andrei Kirilenko](kirilan01.md) | Utah Jazz | 25 | sourced | [open](kirilan01.html) |
 | [Andrés Nocioni](andrsnocioni.md) | San Antonio Spurs | 26 | silhouette | [open](andrsnocioni.html) |
 | [Ansu Sesay](sesayan01.md) | Free agent | 29 | silhouette | [open](sesayan01.html) |
 | [Antawn Jamison](jamisan01.md) | Dallas Mavericks | 29 | sourced | [open](jamisan01.html) |
@@ -358,7 +358,7 @@ Card date: **2006-02-17**. 653 registry players, one Markdown card and one inter
 | [Michael Finley](finlemi01.md) | Dallas Mavericks | 32 | sourced | [open](finlemi01.html) |
 | [Michael Jordan](jordami01.md) | Free agent | 43 | sourced | [open](jordami01.html) |
 | [Mike Dunleavy](dunlemi02.md) | Golden State Warriors | 25 | sourced | [open](dunlemi02.html) |
-| [Mike Miller](millemi01.md) | Memphis Grizzlies | 25 | silhouette | [open](millemi01.html) |
+| [Mike Miller](millemi01.md) | Memphis Grizzlies | 26 | silhouette | [open](millemi01.html) |
 | [Monty Williams](willimo01.md) | Free agent | 34 | sourced | [open](willimo01.html) |
 | [Morris Peterson](petermo01.md) | Toronto Raptors | 28 | sourced | [open](petermo01.html) |
 | [Ndudi Ebi](ebind01.md) | Free agent | 21 | sourced | [open](ebind01.html) |
@@ -472,7 +472,7 @@ Card date: **2006-02-17**. 653 registry players, one Markdown card and one inter
 | [James Thomas](jamesthomas.md) | Minnesota Timberwolves | 25 | silhouette | [open](jamesthomas.html) |
 | [Jared Jeffries](jeffrja01.md) | Washington Wizards | 24 | silhouette | [open](jeffrja01.html) |
 | [Jason Caffey](caffeja01.md) | Free agent | 32 | silhouette | [open](caffeja01.html) |
-| [Jason Maxiell](maxieja01.md) | Memphis Grizzlies | 22 | silhouette | [open](maxieja01.html) |
+| [Jason Maxiell](maxieja01.md) | Memphis Grizzlies | 23 | silhouette | [open](maxieja01.html) |
 | [Jermaine O'Neal](onealje01.md) | Indiana Pacers | 27 | sourced | [open](onealje01.html) |
 | [Jerome Beasley](beaslje01.md) | Free agent | 25 | sourced | [open](beaslje01.html) |
 | [Jerome Williams](willije01.md) | Free agent | 32 | sourced | [open](willije01.html) |
@@ -614,7 +614,7 @@ Card date: **2006-02-17**. 653 registry players, one Markdown card and one inter
 | [Jabari Smith](smithja01.md) | Free agent | 29 | silhouette | [open](smithja01.html) |
 | [Jackie Butler](jackiebutler.md) | Washington Wizards | 20 | silhouette | [open](jackiebutler.html) |
 | [Jackson Vroman](jacksonvroman.md) | Milwaukee Bucks | 24 | silhouette | [open](jacksonvroman.html) |
-| [Jahidi White](whiteja01.md) | Free agent | 29 | silhouette | [open](whiteja01.html) |
+| [Jahidi White](whiteja01.md) | Free agent | 30 | silhouette | [open](whiteja01.html) |
 | [Jake Tsakalidis](tsakaja01.md) | New Orleans/Oklahoma City Hornets | 26 | sourced | [open](tsakaja01.html) |
 | [Jake Voskuhl](voskuja01.md) | Detroit Pistons | 28 | sourced | [open](voskuja01.html) |
 | [Jamaal Magloire](magloja01.md) | New York Knicks | 27 | sourced | [open](magloja01.html) |

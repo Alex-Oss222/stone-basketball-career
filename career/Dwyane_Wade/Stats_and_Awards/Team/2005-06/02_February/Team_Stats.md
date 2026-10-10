@@ -4,7 +4,7 @@
 
 NBA regular season · February 1-28, 2006
 
-As of February 17, 2006: 7 closed Miami games in this period. Rows cover Miami's closed games only.
+As of February 19, 2006: 7 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
@@ -67,7 +67,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/Team_Stats.md) | February 1-7, 2006 | 3 | Complete |
 | [Week 2](Week_2/Team_Stats.md) | February 8-14, 2006 | 3 | Complete |
-| [Week 3](Week_3/Team_Stats.md) | February 15-21, 2006 | 1 | Through February 17, 2006 |
+| [Week 3](Week_3/Team_Stats.md) | February 15-21, 2006 | 1 | Through February 19, 2006 |
 | [Week 4](Week_4/Team_Stats.md) | February 22-28, 2006 | 0 | Not started |
 
 Departures retain their completed Miami appearances. Arrivals enter from their first applicable period. Team wins and losses count games once, not once per player.

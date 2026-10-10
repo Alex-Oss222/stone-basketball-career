@@ -1360,13 +1360,14 @@
   {
    "player": "Ronald Dupree",
    "bbr_id": "duprero01",
-   "club": "Chicago Bulls",
+   "club": "Memphis Grizzlies",
    "route": "qualifying_offer",
    "kind": "new",
    "schedule": {
     "2005-06": 993808
    },
-   "source": "2005 qualifying offer accepted"
+   "source": "2005 qualifying offer accepted",
+   "signed_club": "Chicago Bulls"
   },
   {
    "player": "Ndudi Ebi",
