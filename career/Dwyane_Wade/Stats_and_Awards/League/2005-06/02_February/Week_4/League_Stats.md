@@ -4,7 +4,7 @@
 
 NBA regular season · February 22-28, 2006
 
-407 tracked players · 37 closed games in this record · Through February 26, 2006.
+407 tracked players · 37 closed games in this record · Through February 27, 2006.
 
 ## Leaders
 
@@ -154,7 +154,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Sebastian Telfair](../../../Players/sebastiantelfair.md) | 20 | DET | NBA | PG | 2 | 0 | 3.8 | 1.0 | 2.0 | .500 | 0.0 | 0.0 | N/A | 1.0 | 2.0 | .500 | .500 | 1.0 | 1.5 | .667 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.5 | 3.0 | .564 |
 | [Andre Barrett](../../../Players/andrebarrett.md) | 24 | ATL | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Brandin Knight](../../../Players/brandinknight.md) | 24 | MIN | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Devin Harris](../../../Players/devinharris.md) | 22 | CLE | NBA | PG | 1 | 1 | 31.1 | 4.0 | 12.0 | .333 | 0.0 | 1.0 | .000 | 4.0 | 11.0 | .364 | .333 | 4.0 | 6.0 | .667 | 0.0 | 3.0 | 3.0 | 2.0 | 3.0 | 0.0 | 0.0 | 3.0 | 12.0 | .410 |
+| [Devin Harris](../../../Players/devinharris.md) | 23 | CLE | NBA | PG | 1 | 1 | 31.1 | 4.0 | 12.0 | .333 | 0.0 | 1.0 | .000 | 4.0 | 11.0 | .364 | .333 | 4.0 | 6.0 | .667 | 0.0 | 3.0 | 3.0 | 2.0 | 3.0 | 0.0 | 0.0 | 3.0 | 12.0 | .410 |
 | [Horace Jenkins](../../../Players/horacejenkins.md) | 31 | GS | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Jameer Nelson](../../../Players/jameernelson.md) | 24 | SEA | NBA | PG | 2 | 2 | 21.2 | 4.0 | 6.0 | .667 | 1.0 | 1.0 | 1.000 | 3.0 | 5.0 | .600 | .750 | 2.0 | 3.0 | .667 | 1.0 | 2.0 | 3.0 | 2.5 | 0.0 | 0.0 | 0.5 | 4.0 | 11.0 | .751 |
 | [Kevin Martin](../../../Players/kevinmartin.md) | 23 | NY | NBA | PG | 1 | 1 | 27.8 | 2.0 | 5.0 | .400 | 0.0 | 1.0 | .000 | 2.0 | 4.0 | .500 | .400 | 3.0 | 4.0 | .750 | 0.0 | 1.0 | 1.0 | 3.0 | 2.0 | 0.0 | 2.0 | 4.0 | 7.0 | .518 |

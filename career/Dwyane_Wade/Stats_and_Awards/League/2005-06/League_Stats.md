@@ -4,7 +4,7 @@
 
 NBA regular season · 2005-06
 
-407 tracked players · 828 closed games in this record · Through February 26, 2006.
+407 tracked players · 828 closed games in this record · Through February 27, 2006.
 
 ## Leaders
 
@@ -154,7 +154,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Sebastian Telfair](../Players/sebastiantelfair.md) | 20 | DET | NBA | PG | 55 | 0 | 9.5 | 0.9 | 3.0 | .285 | 0.2 | 0.7 | .263 | 0.7 | 2.3 | .291 | .315 | 0.4 | 0.6 | .676 | 0.1 | 0.7 | 0.9 | 1.8 | 0.2 | 0.1 | 0.6 | 0.9 | 2.3 | .353 |
 | [Andre Barrett](../Players/andrebarrett.md) | 24 | ATL | NBA | PG | 16 | 0 | 16.8 | 2.6 | 6.8 | .385 | 0.2 | 1.1 | .176 | 2.4 | 5.8 | .424 | .399 | 1.1 | 1.3 | .810 | 0.5 | 1.5 | 2.0 | 1.9 | 0.3 | 0.2 | 1.1 | 1.7 | 6.5 | .440 |
 | [Brandin Knight](../Players/brandinknight.md) | 24 | MIN | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Devin Harris](../Players/devinharris.md) | 22 | CLE | NBA | PG | 39 | 8 | 23.8 | 3.6 | 7.6 | .476 | 0.2 | 0.7 | .269 | 3.4 | 6.9 | .496 | .488 | 2.5 | 3.5 | .711 | 0.7 | 2.4 | 3.1 | 2.9 | 1.2 | 0.3 | 1.1 | 2.4 | 9.9 | .542 |
+| [Devin Harris](../Players/devinharris.md) | 23 | CLE | NBA | PG | 39 | 8 | 23.8 | 3.6 | 7.6 | .476 | 0.2 | 0.7 | .269 | 3.4 | 6.9 | .496 | .488 | 2.5 | 3.5 | .711 | 0.7 | 2.4 | 3.1 | 2.9 | 1.2 | 0.3 | 1.1 | 2.4 | 9.9 | .542 |
 | [Horace Jenkins](../Players/horacejenkins.md) | 31 | GS | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Jameer Nelson](../Players/jameernelson.md) | 24 | SEA | NBA | PG | 43 | 43 | 27.8 | 4.3 | 8.8 | .491 | 1.0 | 1.9 | .512 | 3.3 | 6.9 | .485 | .545 | 2.4 | 3.1 | .763 | 1.1 | 3.1 | 4.2 | 5.0 | 0.7 | 0.2 | 2.1 | 3.5 | 12.0 | .589 |
 | [Kevin Martin](../Players/kevinmartin.md) | 23 | NY | NBA | PG | 49 | 49 | 32.9 | 4.9 | 10.4 | .475 | 1.1 | 3.0 | .361 | 3.9 | 7.4 | .521 | .526 | 4.1 | 4.7 | .886 | 1.1 | 3.8 | 4.9 | 1.5 | 1.1 | 0.2 | 2.0 | 2.6 | 15.1 | .605 |
@@ -744,7 +744,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [November 2005](11_November/League_Stats.md) | November 1-30, 2005 | 216 | Complete |
 | [December 2005](12_December/League_Stats.md) | December 1-31, 2005 | 218 | Complete |
 | [January 2006](01_January/League_Stats.md) | January 1-31, 2006 | 227 | Complete |
-| [February 2006](02_February/League_Stats.md) | February 1-28, 2006 | 167 | Through February 26, 2006 |
+| [February 2006](02_February/League_Stats.md) | February 1-28, 2006 | 167 | Through February 27, 2006 |
 | [March 2006](03_March/League_Stats.md) | March 1-31, 2006 | 0 | Not started |
 | [April 2006](04_April/League_Stats.md) | April 1-30, 2006 | 0 | Not started |
 

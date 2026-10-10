@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2006-02-26](../../../assets/stat_reports/personal_2005-06_2006-02-26.svg)
+![Player personal information and earned 2005-06 awards through 2006-02-27](../../../assets/stat_reports/personal_2005-06_2006-02-27.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2006-02-26; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2006-02-27; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -48,7 +48,7 @@ Identity as of 2006-02-26; status snapshot dated 2005-10-26. User-established al
 
 ## Statistics
 
-As of **2006-02-26**: 9 closed games; 9/9 have player participation and box coverage; recorded DNPs: 0.
+As of **2006-02-27**: 9 closed games; 9/9 have player participation and box coverage; recorded DNPs: 0.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
@@ -64,7 +64,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-02-26, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-02-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](../../../Stats_and_Awards/2005-06/02_February/Stat_Detail.md)
 
@@ -83,7 +83,7 @@ Awards are confirmed through 2006-02-26, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-02-26, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-02-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Period comparison
 
@@ -99,7 +99,7 @@ Awards are confirmed through 2006-02-26, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-02-26, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-02-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -168,7 +168,7 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-02-26, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-02-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -196,6 +196,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2006-02-15](Week_3/Game_1.md) | Orlando Magic | away | L 94-101 | Played | 32.8 | 21 | 7 | 5 | 2 | 1 | 0 |
 | [2006-02-22](Week_4/Game_1.md) | New York Knicks | away | W 111-101 | Played | 41.9 | 30 | 6 | 4 | 2 | 2 | 4 |
 | [2006-02-25](Week_4/Game_2.md) | Seattle SuperSonics | home | W 113-111 | Played | 39.7 | 26 | 7 | 6 | 0 | 1 | 1 |
+| [2006-02-27](Week_4/Game_3.md) | Toronto Raptors | home | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### Individual game boxes
 
@@ -210,10 +211,11 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2006-02-15](Week_3/Game_1.md) | 22 | Miami Heat | NBA | SG / PG | 1 | 1 | 32.8 | 9.0 | 21.0 | .429 | 0.0 | 4.0 | .000 | 9.0 | 17.0 | .529 | .429 | 3.0 | 3.0 | 1.000 | 2.0 | 5.0 | 7.0 | 5.0 | 2.0 | 1.0 | 0.0 | 5.0 | 21.0 | .470 | — |
 | [2006-02-22](Week_4/Game_1.md) | 22 | Miami Heat | NBA | SG / PG | 1 | 1 | 41.9 | 8.0 | 15.0 | .533 | 1.0 | 1.0 | 1.000 | 7.0 | 14.0 | .500 | .567 | 13.0 | 13.0 | 1.000 | 2.0 | 4.0 | 6.0 | 4.0 | 2.0 | 2.0 | 4.0 | 5.0 | 30.0 | .724 | — |
 | [2006-02-25](Week_4/Game_2.md) | 22 | Miami Heat | NBA | SG / PG | 1 | 1 | 39.7 | 10.0 | 19.0 | .526 | 2.0 | 3.0 | .667 | 8.0 | 16.0 | .500 | .579 | 4.0 | 4.0 | 1.000 | 0.0 | 7.0 | 7.0 | 6.0 | 0.0 | 1.0 | 1.0 | 4.0 | 26.0 | .626 | — |
+| [2006-02-27](Week_4/Game_3.md) | 22 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-02-26, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-02-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 
