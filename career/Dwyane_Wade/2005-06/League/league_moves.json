@@ -2851,6 +2851,46 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.37 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-17-rest_of_season-jonesju01",
+   "date": "2006-01-17",
+   "kind": "rest_of_season",
+   "player": "Jumaine Jones",
+   "bbr_id": "jonesju01",
+   "from": "Boston Celtics",
+   "to": "Boston Celtics",
+   "role": {
+    "player_id": "Jumaine Jones",
+    "bbr_id": "jonesju01",
+    "position": "PF",
+    "games": 76,
+    "minutes": 2089
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 13.6 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2005-06-market-2006-01-17-expire-hunteli01",
+   "date": "2006-01-17",
+   "kind": "expire",
+   "player": "Lindsey Hunter",
+   "bbr_id": "hunteli01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "Lindsey Hunter",
+    "bbr_id": "hunteli01",
+    "position": "PG",
+    "games": 30,
+    "minutes": 353
+   },
+   "contract": null,
+   "note": "10-day contract ended (7.8 minutes a game)"
   }
  ],
  "market_days": [
@@ -2930,6 +2970,7 @@
   "2006-01-13",
   "2006-01-14",
   "2006-01-15",
-  "2006-01-16"
+  "2006-01-16",
+  "2006-01-17"
  ]
 }
