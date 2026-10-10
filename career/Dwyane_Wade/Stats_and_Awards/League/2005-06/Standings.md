@@ -1,13 +1,13 @@
 # 2005-06 standings
 
-Through 2006-01-18, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2006-01-19, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Toronto Raptors | 29 | 10 | .744 | — |
-| 2 | Detroit Pistons | 26 | 10 | .722 | 1.5 |
+| 2 | Detroit Pistons | 27 | 10 | .730 | 1 |
 | 3 | Atlanta Hawks | 25 | 12 | .676 | 3 |
 | 4 | Boston Celtics | 25 | 13 | .658 | 3.5 |
 | 5 | **Miami Heat** | 25 | 14 | .641 | 4 |
@@ -18,7 +18,7 @@ Through 2006-01-18, from closed simulated results only (`runtime/standings.py`).
 | 10 | Indiana Pacers | 16 | 21 | .432 | 12 |
 | 11 | Chicago Bulls | 16 | 22 | .421 | 12.5 |
 | 12 | Milwaukee Bucks | 14 | 23 | .378 | 14 |
-| 13 | New York Knicks | 13 | 24 | .351 | 15 |
+| 13 | New York Knicks | 13 | 25 | .342 | 15.5 |
 | 14 | Washington Wizards | 10 | 27 | .270 | 18 |
 | 15 | Charlotte Bobcats | 10 | 29 | .256 | 19 |
 
@@ -30,8 +30,8 @@ Through 2006-01-18, from closed simulated results only (`runtime/standings.py`).
 | 2 | Dallas Mavericks | 25 | 14 | .641 | 0.5 |
 | 3 | San Antonio Spurs | 25 | 14 | .641 | 0.5 |
 | 4 | Phoenix Suns | 24 | 14 | .632 | 1 |
-| 5 | Sacramento Kings | 23 | 14 | .622 | 1.5 |
-| 6 | Los Angeles Lakers | 23 | 15 | .605 | 2 |
+| 5 | Sacramento Kings | 24 | 14 | .632 | 1 |
+| 6 | Los Angeles Lakers | 23 | 16 | .590 | 2.5 |
 | 7 | Los Angeles Clippers | 20 | 15 | .571 | 3.5 |
 | 8 | New Orleans/Oklahoma City Hornets | 18 | 20 | .474 | 7 |
 | 9 | Utah Jazz | 18 | 21 | .462 | 7.5 |
