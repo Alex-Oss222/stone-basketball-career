@@ -4771,6 +4771,25 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 2.95 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-03-10-clear-robincl02",
+   "date": "2006-03-10",
+   "kind": "clear",
+   "player": "Clifford Robinson",
+   "bbr_id": "robincl02",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Clifford Robinson",
+    "bbr_id": "robincl02",
+    "position": "PF",
+    "games": 80,
+    "minutes": 1863
+   },
+   "contract": null,
+   "note": "cleared waivers from Golden State Warriors: a free agent",
+   "waiver": "2005-06-market-2006-03-08-waive-robincl02"
   }
  ],
  "market_days": [
@@ -4902,6 +4921,7 @@
   "2006-03-06",
   "2006-03-07",
   "2006-03-08",
-  "2006-03-09"
+  "2006-03-09",
+  "2006-03-10"
  ]
 }
