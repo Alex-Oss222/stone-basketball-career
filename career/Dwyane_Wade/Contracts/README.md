@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-01-07. [Search the contract directory](index.html)
+Known through 2006-01-08. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -337,7 +337,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Juan Dixon](players/dixonju01.md) | Washington Wizards | under rookie contract | Juan Dixon · 2002-07-11 | 1 |
 | [Juaquin Hawkins](players/hawkiju01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Julius Hodge](players/hodgeju01.md) | Phoenix Suns | under contract | Julius Hodge · 2005-07-01 | 1 |
-| [Jumaine Jones](players/jonesju01.md) | Free agent | waived | No verified current agreement | 3 |
+| [Jumaine Jones](players/jonesju01.md) | Boston Celtics | waived | No verified current agreement | 3 |
 | [Junior Harrington](players/harriju01.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Justin Reed](players/justinreed.md) | New Orleans/Oklahoma City Hornets | under contract | No verified current agreement | 1 |
 | [Juwan Howard](players/howarju01.md) | Los Angeles Clippers | under contract | Juwan Howard · 2003-07-16 | 2 |
@@ -384,7 +384,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Lee Nailon](players/nailole01.md) | Denver Nuggets | under contract | Lee Nailon · 2005-09-09 | 3 |
 | [Leon Smith](players/smithle01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Linas Kleiza](players/kleizli01.md) | New Jersey Nets | under contract | Linas Kleiza · 2005-08-19 | 1 |
-| [Lindsey Hunter](players/hunteli01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
+| [Lindsey Hunter](players/hunteli01.md) | Phoenix Suns | under contract unverified | No verified current agreement | 0 |
 | [Linton Johnson](players/johnsli01.md) | San Antonio Spurs | under contract | Linton Johnson · 2005-09-23 | 1 |
 | [Lionel Chalmers](players/lionelchalmers.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Lonny Baxter](players/baxtelo01.md) | Toronto Raptors | under contract | Lonny Baxter · 2005-08-05 | 2 |

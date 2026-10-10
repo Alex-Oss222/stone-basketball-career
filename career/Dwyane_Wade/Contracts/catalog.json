@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-01-07",
+  "as_of": "2006-01-08",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2957,7 +2957,7 @@
     {
       "player_id": "jonesju01",
       "name": "Jumaine Jones",
-      "team": "Free agent",
+      "team": "Boston Celtics",
       "status": "waived",
       "current_contract_id": null,
       "recorded_agreements": 3,
@@ -3380,7 +3380,7 @@
     {
       "player_id": "hunteli01",
       "name": "Lindsey Hunter",
-      "team": "Free agent",
+      "team": "Phoenix Suns",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,

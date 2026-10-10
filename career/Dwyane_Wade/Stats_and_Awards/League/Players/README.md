@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-01-07**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-01-08**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -83,7 +83,7 @@ Card date: **2006-01-07**. 651 registry players, one Markdown card and one inter
 | [Kevin Ollie](ollieke01.md) | Cleveland Cavaliers | 33 | sourced | [open](ollieke01.html) |
 | [Kirk Hinrich](hinriki01.md) | Chicago Bulls | 25 | sourced | [open](hinriki01.html) |
 | [Larry Hughes](hughela01.md) | Indiana Pacers | 26 | sourced | [open](hughela01.html) |
-| [Lindsey Hunter](hunteli01.md) | Free agent | 35 | sourced | [open](hunteli01.html) |
+| [Lindsey Hunter](hunteli01.md) | Phoenix Suns | 35 | sourced | [open](hunteli01.html) |
 | [Lionel Chalmers](lionelchalmers.md) | Free agent | 25 | silhouette | [open](lionelchalmers.html) |
 | [Lou Williams](willilo02.md) | Los Angeles Lakers | 19 | silhouette | [open](willilo02.html) |
 | [Luis Flores](luisflores.md) | Free agent | 24 | silhouette | [open](luisflores.html) |
@@ -333,7 +333,7 @@ Card date: **2006-01-07**. 651 registry players, one Markdown card and one inter
 | [Jonathan Bender](bendejo01.md) | Indiana Pacers | 24 | silhouette | [open](bendejo01.html) |
 | [Josh Howard](howarjo01.md) | Dallas Mavericks | 25 | sourced | [open](howarjo01.html) |
 | [Josh Smith](joshsmith.md) | Utah Jazz | 20 | silhouette | [open](joshsmith.html) |
-| [Jumaine Jones](jonesju01.md) | Free agent | 26 | sourced | [open](jonesju01.html) |
+| [Jumaine Jones](jonesju01.md) | Boston Celtics | 26 | sourced | [open](jonesju01.html) |
 | [Justin Reed](justinreed.md) | New Orleans/Oklahoma City Hornets | 23 | silhouette | [open](justinreed.html) |
 | [Kedrick Brown](brownke01.md) | Free agent | 24 | sourced | [open](brownke01.html) |
 | [Lamar Odom](odomla01.md) | Golden State Warriors | 26 | sourced | [open](odomla01.html) |

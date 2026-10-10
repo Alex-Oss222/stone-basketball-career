@@ -2,9 +2,9 @@
 
 # Contract | Michael Bradley
 
-Known through: 2006-01-07. [Open interactive contract](bradlmi01.html#contract) · [Contract history](bradlmi01.html#contract-history)
+Known through: 2006-01-08. [Open interactive contract](bradlmi01.html#contract) · [Contract history](bradlmi01.html#contract-history)
 
-Michael Bradley: under contract. Evidence cutoff: 2006-01-07.
+Michael Bradley: under contract. Evidence cutoff: 2006-01-08.
 
 ## Current contract
 

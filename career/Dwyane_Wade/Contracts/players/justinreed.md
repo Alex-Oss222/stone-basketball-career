@@ -2,9 +2,9 @@
 
 # Contract | Justin Reed
 
-Known through: 2006-01-07. [Open interactive contract](justinreed.html#contract) · [Contract history](justinreed.html#contract-history)
+Known through: 2006-01-08. [Open interactive contract](justinreed.html#contract) · [Contract history](justinreed.html#contract-history)
 
-Justin Reed: under contract. Evidence cutoff: 2006-01-07.
+Justin Reed: under contract. Evidence cutoff: 2006-01-08.
 
 ## Current contract
 

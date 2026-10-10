@@ -1,12 +1,12 @@
 # Miami Heat working depth chart
 
-**As of:** 2006-01-07 · **Staff decision in force:** 2006-01-04 (fortnightly review)  
+**As of:** 2006-01-08 · **Staff decision in force:** 2006-01-04 (fortnightly review)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
 | PG | Mike James (starter) | Anthony Johnson | Mike Wilks | Eddie Gill |
-| SG | Dwyane Wade (starter) | Eddie Jones (injured list) | Matt Carroll (injured list) | DeShawn Stevenson (injured list) |
+| SG | Dwyane Wade (starter) | Eddie Jones | Matt Carroll (injured list) | DeShawn Stevenson (injured list) |
 | SF | Caron Butler (starter) | Joe Smith | Jumaine Jones | Sebastian Telfair |
 | PF | Mehmet Okur (starter) | Donyell Marshall |  |  |
 | C | Brian Grant (starter) |  |  |  |
@@ -29,9 +29,9 @@
 
 Outside the rotation (dressing as the twelfth man or on the injured list): Eddie Jones, DeShawn Stevenson, Eddie Gill, Matt Carroll.
 
-## Injured list on 2006-01-07
+## Injured list on 2006-01-08
 
-DeShawn Stevenson, Eddie Jones, Matt Carroll ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
+DeShawn Stevenson, Matt Carroll ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 
 ## Not on the active register
 

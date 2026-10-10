@@ -2,9 +2,9 @@
 
 # Contract | Jumaine Jones
 
-Known through: 2006-01-07. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
+Known through: 2006-01-08. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
 
-Jumaine Jones: waived. Evidence cutoff: 2006-01-07.
+Jumaine Jones: waived. Evidence cutoff: 2006-01-08.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jumaine Jones |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Boston Celtics |
 | Control status | waived |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

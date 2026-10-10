@@ -2,9 +2,9 @@
 
 # Contract | Luke Schenscher
 
-Known through: 2006-01-07. [Open interactive contract](schenlu01.html#contract) · [Contract history](schenlu01.html#contract-history)
+Known through: 2006-01-08. [Open interactive contract](schenlu01.html#contract) · [Contract history](schenlu01.html#contract-history)
 
-Luke Schenscher: under contract. Evidence cutoff: 2006-01-07.
+Luke Schenscher: under contract. Evidence cutoff: 2006-01-08.
 
 ## Current contract
 

@@ -199,7 +199,7 @@
   {
    "player": "Darrell Armstrong",
    "bbr_id": "armstda01",
-   "club": "Charlotte Bobcats",
+   "club": "Phoenix Suns",
    "route": "mid_level",
    "kind": "new",
    "schedule": {
@@ -5556,13 +5556,14 @@
   {
    "player": "Aaron Williams",
    "bbr_id": "williaa01",
-   "club": "Charlotte Bobcats",
+   "club": "Golden State Warriors",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2005-06": 1138500
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Charlotte Bobcats"
   },
   {
    "player": "Alvin Williams",

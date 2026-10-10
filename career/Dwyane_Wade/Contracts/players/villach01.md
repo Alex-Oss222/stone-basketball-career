@@ -2,9 +2,9 @@
 
 # Contract | Charlie Villanueva
 
-Known through: 2006-01-07. [Open interactive contract](villach01.html#contract) · [Contract history](villach01.html#contract-history)
+Known through: 2006-01-08. [Open interactive contract](villach01.html#contract) · [Contract history](villach01.html#contract-history)
 
-Charlie Villanueva: under contract. Evidence cutoff: 2006-01-07.
+Charlie Villanueva: under contract. Evidence cutoff: 2006-01-08.
 
 ## Current contract
 
