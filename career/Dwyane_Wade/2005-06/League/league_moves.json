@@ -3332,6 +3332,86 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 2.38 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-26-ten_day-rebraze01",
+   "date": "2006-01-26",
+   "kind": "ten_day",
+   "player": "Željko Rebrača",
+   "bbr_id": "rebraze01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Željko Rebrača",
+    "bbr_id": "rebraze01",
+    "position": "C",
+    "games": 29,
+    "minutes": 412
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-05",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 0.0 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-26-expire-williaa01",
+   "date": "2006-01-26",
+   "kind": "expire",
+   "player": "Aaron Williams",
+   "bbr_id": "williaa01",
+   "from": "Golden State Warriors",
+   "to": null,
+   "role": {
+    "player_id": "Aaron Williams",
+    "bbr_id": "williaa01",
+    "position": "C",
+    "games": 48,
+    "minutes": 791
+   },
+   "contract": null,
+   "note": "10-day contract ended (1.1 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-01-26-waive-johnser02",
+   "date": "2006-01-26",
+   "kind": "waive",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-01-28"
+  },
+  {
+   "id": "2005-06-market-2006-01-26-ten_day-williaa01",
+   "date": "2006-01-26",
+   "kind": "ten_day",
+   "player": "Aaron Williams",
+   "bbr_id": "williaa01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Aaron Williams",
+    "bbr_id": "williaa01",
+    "position": "C",
+    "games": 48,
+    "minutes": 791
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-05",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.23 x fit"
   }
  ],
  "market_days": [
@@ -3420,6 +3500,7 @@
   "2006-01-22",
   "2006-01-23",
   "2006-01-24",
-  "2006-01-25"
+  "2006-01-25",
+  "2006-01-26"
  ]
 }
