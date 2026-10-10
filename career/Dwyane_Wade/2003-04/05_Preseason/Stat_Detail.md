@@ -21,7 +21,7 @@
 | Weight | 220 lb |
 | Wingspan / standing reach | 6 ft 11.5 in / 8 ft 7.5 in |
 | Shooting hand | Right |
-| Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option (2004-05: $2,361,800) |
+| Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option |
 | Role | Carried-over starter at SG; training camp sets the 2004-05 rotation |
 | NBA debut | October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
 | Nationality | United States (born in the Chicago area; Robbins, Illinois home community, per the player profile) |

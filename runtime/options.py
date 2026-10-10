@@ -83,15 +83,24 @@ def open_options(season, root=ROOT):
     for p in sheet["players"]:
         if any(w in (p.get("status") or "") for w in ("released", "traded", "waived", "voided", "renounced", "signed_elsewhere")):
             continue
-        for s, kind in (p.get("amount_kind") or {}).items():
-            if kind in OPTION_KINDS and s > season and p["schedule"].get(s):
-                rookie = p.get("route") == "rookie_scale" or "rookie" in (p.get("status") or "") or "rookie-scale" in (p.get("notes") or "")
-                # an option inside an extension (Wade's own terms, runtime/extensions.py) is decided on the veteran
-                # deadline: the extended rookie-scale row keeps its route, the extension's seasons are a new agreement
-                rookie = rookie and not extension_season(p, s)
-                # Wade's sheet and register carry no bbr_id (alternate history); his records' key is wadedw01.
-                bbr = sheet_key(p, roster)
-                out.append(("Miami Heat", bbr, p["player"], s, kind, int(p["schedule"][s]), rookie))
+        for s, kind, salary, rookie in sheet_options(p, season):
+            # Wade's sheet and register carry no bbr_id (alternate history); his records' key is wadedw01.
+            bbr = sheet_key(p, roster)
+            out.append(("Miami Heat", bbr, p["player"], s, kind, salary, rookie))
+    return out
+
+
+def sheet_options(p, season):
+    """[(option season, kind, salary, rookie)] still open on one row of Miami's cap sheet after `season`."""
+    from .extensions import extension_season
+    out = []
+    for s, kind in (p.get("amount_kind") or {}).items():
+        if kind in OPTION_KINDS and s > season and p["schedule"].get(s):
+            rookie = p.get("route") == "rookie_scale" or "rookie" in (p.get("status") or "") or "rookie-scale" in (p.get("notes") or "")
+            # an option inside an extension (Wade's own terms, runtime/extensions.py) is decided on the veteran
+            # deadline: the extended rookie-scale row keeps its route, the extension's seasons are a new agreement
+            rookie = rookie and not extension_season(p, s)
+            out.append((s, kind, int(p["schedule"][s]), rookie))
     return out
 
 

@@ -41,7 +41,7 @@ def metadata(path: Path) -> dict:
                 for k, v in [line.split(":", 1)])
 
 
-def identity_at(identity: dict, as_of: str) -> dict:
+def identity_at(identity: dict, as_of: str, season: str | None = None) -> dict:
     cutoff = date.fromisoformat(as_of)
     snapshots = [s for s in identity["snapshots"] if date.fromisoformat(s["as_of"]) <= cutoff]
     if not snapshots:
@@ -49,7 +49,12 @@ def identity_at(identity: dict, as_of: str) -> dict:
     snapshot = max(snapshots, key=lambda s: s["as_of"])
     birth = date.fromisoformat(identity["date_of_birth"])
     age = cutoff.year - birth.year - ((cutoff.month, cutoff.day) < (birth.month, birth.day))
-    return {**identity, **snapshot, "age": age, "report_as_of": as_of}
+    out = {**identity, **snapshot, "age": age, "report_as_of": as_of}
+    if "contract_terms" in identity:
+        # the season's salary and option status from its contract record (runtime/identity_contract.py)
+        from .identity_contract import line
+        out["contract"] = line(identity["contract_terms"], snapshot.get("contract"), as_of, season)
+    return out
 
 
 def normalize_line(row: dict, *, weighted_free_throws=False) -> dict:
