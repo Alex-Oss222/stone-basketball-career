@@ -5669,6 +5669,64 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 5.11 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-04-14-expire-smithch04",
+   "date": "2006-04-14",
+   "kind": "expire",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "from": "Cleveland Cavaliers",
+   "to": null,
+   "role": {
+    "player_id": "Charles Smith",
+    "bbr_id": "smithch04",
+    "position": "SG",
+    "games": 22,
+    "minutes": 210
+   },
+   "contract": null,
+   "note": "10-day contract ended (3.0 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-04-14-waive-martida01",
+   "date": "2006-04-14",
+   "kind": "waive",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "from": "Houston Rockets",
+   "to": null,
+   "role": {
+    "player_id": "Darrick Martin",
+    "bbr_id": "martida01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 339
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-04-16"
+  },
+  {
+   "id": "2005-06-market-2006-04-14-ten_day-smithch04",
+   "date": "2006-04-14",
+   "kind": "ten_day",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "from": null,
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Charles Smith",
+    "bbr_id": "smithch04",
+    "position": "SG",
+    "games": 22,
+    "minutes": 210
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.27 x fit"
   }
  ],
  "market_days": [
@@ -5835,6 +5893,7 @@
   "2006-04-10",
   "2006-04-11",
   "2006-04-12",
-  "2006-04-13"
+  "2006-04-13",
+  "2006-04-14"
  ]
 }
