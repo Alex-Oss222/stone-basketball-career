@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 20 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-03-28 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-03-29 
 
 **Contract/control:** Existing contract: 2 season(s) from 2005-06, $2,090,520 scheduled ($1,010,040 in 2005-06). (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at SF, staff plan 4 minutes (staff rotation dated 2006-03-15, [record](../Depth_Chart/Reviews/2006-03-15/rotation.json)).
+**Role:** Rotation at SF, staff plan 4 minutes (staff rotation dated 2006-03-29, [record](../Depth_Chart/Reviews/2006-03-29/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -40,11 +40,12 @@ Unassessed.
 | 2006-02-15 | Staff rotation of 2006-02-15: rotation at SF, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2006-02-15/rotation.json) |
 | 2006-03-01 | Staff rotation of 2006-03-01: rotation at SF, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2006-03-01/rotation.json) |
 | 2006-03-15 | Staff rotation of 2006-03-15: rotation at SF, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2006-03-15/rotation.json) |
+| 2006-03-29 | Staff rotation of 2006-03-29: rotation at SF, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2006-03-29/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../../../../career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json), 2004-05 simulated season totals.
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-03-15.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-03-29.
 
 <!-- yearly-statistics:start -->
 
@@ -57,7 +58,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2004-05 | Detroit Pistons, Utah Jazz | 68 | 6 | 19.5 | 7.3 | 2.1 | 3.1 | 0.5 | 0.1 | 1.7 | 0.381 | 0.207 | 0.767 |
-| 2005-06 | MIA | 70 | 0 | 8.6 | 2.2 | 0.8 | 1.6 | 0.2 | 0.0 | 0.6 | 30.3% | 25.6% | 65.1% |
+| 2005-06 | MIA | 71 | 0 | 8.5 | 2.2 | 0.7 | 1.6 | 0.2 | 0.0 | 0.6 | 30.5% | 27.3% | 66.7% |
 
 Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
 

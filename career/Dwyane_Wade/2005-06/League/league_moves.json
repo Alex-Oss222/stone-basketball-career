@@ -5213,6 +5213,64 @@
     "salary": "pro-rated minimum"
    },
    "note": "kept: 23.8 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2005-06-market-2006-03-29-expire-livinra01",
+   "date": "2006-03-29",
+   "kind": "expire",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "Houston Rockets",
+   "to": null,
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.8 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-03-29-waive-martida01",
+   "date": "2006-03-29",
+   "kind": "waive",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "from": "New Jersey Nets",
+   "to": null,
+   "role": {
+    "player_id": "Darrick Martin",
+    "bbr_id": "martida01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 339
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-03-31"
+  },
+  {
+   "id": "2005-06-market-2006-03-29-ten_day-livinra01",
+   "date": "2006-03-29",
+   "kind": "ten_day",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": null,
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-04-08",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.08 x fit"
   }
  ],
  "market_days": [
@@ -5363,6 +5421,7 @@
   "2006-03-25",
   "2006-03-26",
   "2006-03-27",
-  "2006-03-28"
+  "2006-03-28",
+  "2006-03-29"
  ]
 }
