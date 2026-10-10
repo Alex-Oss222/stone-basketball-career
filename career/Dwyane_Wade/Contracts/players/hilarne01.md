@@ -2,9 +2,9 @@
 
 # Contract | Nene
 
-Known through: 2006-04-10. [Open interactive contract](hilarne01.html#contract) · [Contract history](hilarne01.html#contract-history)
+Known through: 2006-04-16. [Open interactive contract](hilarne01.html#contract) · [Contract history](hilarne01.html#contract-history)
 
-Nene: under contract. Evidence cutoff: 2006-04-10.
+Nene: under contract. Evidence cutoff: 2006-04-16.
 
 ## Current contract
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-04-10",
+  "as_of": "2006-04-16",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -923,7 +923,7 @@
     {
       "player_id": "smithch04",
       "name": "Charles Smith",
-      "team": "Cleveland Cavaliers",
+      "team": "Houston Rockets",
       "status": "under contract",
       "current_contract_id": "smithch04-2005-08-19",
       "recorded_agreements": 2,
@@ -1418,7 +1418,7 @@
     {
       "player_id": "martida01",
       "name": "Darrick Martin",
-      "team": "Houston Rockets",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": "martida01-2005-09-23",
       "recorded_agreements": 1,
@@ -4649,7 +4649,7 @@
     {
       "player_id": "horryro01",
       "name": "Robert Horry",
-      "team": "Seattle SuperSonics",
+      "team": "Atlanta Hawks",
       "status": "under contract",
       "current_contract_id": "horryro01-2004-07-22",
       "recorded_agreements": 2,
@@ -4775,7 +4775,7 @@
     {
       "player_id": "pricero01",
       "name": "Ronnie Price",
-      "team": "San Antonio Spurs",
+      "team": "Seattle SuperSonics",
       "status": "under contract",
       "current_contract_id": "pricero01-2005-08-12",
       "recorded_agreements": 1,
@@ -5162,7 +5162,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Free agent",
+      "team": "Portland Trail Blazers",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,

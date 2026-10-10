@@ -2,9 +2,9 @@
 
 # Contract | Eddie Basden
 
-Known through: 2006-04-10. [Open interactive contract](basdeed01.html#contract) · [Contract history](basdeed01.html#contract-history)
+Known through: 2006-04-16. [Open interactive contract](basdeed01.html#contract) · [Contract history](basdeed01.html#contract-history)
 
-Eddie Basden: under contract. Evidence cutoff: 2006-04-10.
+Eddie Basden: under contract. Evidence cutoff: 2006-04-16.
 
 ## Current contract
 

@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2006-04-10 · Miami Heat · complete
+Career date: 2006-04-16 · Miami Heat · complete
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -23,13 +23,13 @@ Activation: The club opens camp and records participation, evaluation or an actu
 
 ## Current depth chart
 
-Snapshot: 2006-03-29. Draft rights and unassigned arrivals are not assigned minutes.
+Snapshot: 2006-04-12. Draft rights and unassigned arrivals are not assigned minutes.
 
 | Position | Staff ordering | Interpretation |
 | --- | --- | --- |
 | PG | Mike James, Anthony Johnson, Mike Wilks, Eddie Gill | Staff ordering; not a future minutes promise |
 | SG | Dwyane Wade, Eddie Jones, Matt Carroll, DeShawn Stevenson | Staff ordering; not a future minutes promise |
-| SF | Caron Butler, Joe Smith, Sebastian Telfair | Staff ordering; not a future minutes promise |
+| SF | Joe Smith, Caron Butler, Sebastian Telfair | Staff ordering; not a future minutes promise |
 | PF | Mehmet Okur, P.J. Brown, Donyell Marshall | Staff ordering; not a future minutes promise |
 | C | Chris Mihm | Staff ordering; not a future minutes promise |
 
@@ -88,12 +88,11 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-29/review.json)
-- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-29/depth_chart.json)
+- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-04-12/review.json)
+- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-04-12/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-29/rotation.json)
-- [Rule](../../../docs/front_office.md)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-04-12/rotation.json)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 - [Transaction record](../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
@@ -181,4 +180,7 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Closed game](../2005-06/06_Regular_Season/04_April/Week_1/Game_4.md)
 - [Closed game](../2005-06/06_Regular_Season/04_April/Week_2/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/04_April/Week_2/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/04_April/Week_2/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/04_April/Week_2/Game_4.md)
+- [Closed game](../2005-06/06_Regular_Season/04_April/Week_3/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

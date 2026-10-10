@@ -2,9 +2,9 @@
 
 # Contract | Jamison Brewer
 
-Known through: 2006-04-10. [Open interactive contract](breweja01.html#contract) · [Contract history](breweja01.html#contract-history)
+Known through: 2006-04-16. [Open interactive contract](breweja01.html#contract) · [Contract history](breweja01.html#contract-history)
 
-Jamison Brewer: minimum contract unverified. Evidence cutoff: 2006-04-10.
+Jamison Brewer: minimum contract unverified. Evidence cutoff: 2006-04-16.
 
 ## Current contract
 

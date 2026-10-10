@@ -2302,13 +2302,14 @@
   {
    "player": "Robert Horry",
    "bbr_id": "horryro01",
-   "club": "Seattle SuperSonics",
+   "club": "Atlanta Hawks",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 1359569
    },
-   "source": "league contract ledger 2004-05 (new)"
+   "source": "league contract ledger 2004-05 (new)",
+   "signed_club": "Seattle SuperSonics"
   },
   {
    "player": "Allan Houston",
@@ -3181,7 +3182,7 @@
   {
    "player": "Darrick Martin",
    "bbr_id": "martida01",
-   "club": "Houston Rockets",
+   "club": "Golden State Warriors",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -4210,7 +4211,7 @@
   {
    "player": "Ronnie Price",
    "bbr_id": "pricero01",
-   "club": "San Antonio Spurs",
+   "club": "Seattle SuperSonics",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -4610,7 +4611,7 @@
   {
    "player": "Charles Smith",
    "bbr_id": "smithch04",
-   "club": "Cleveland Cavaliers",
+   "club": "Houston Rockets",
    "route": "minimum",
    "kind": "new",
    "schedule": {
