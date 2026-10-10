@@ -2,9 +2,9 @@
 
 # Contract | Charles Smith
 
-Known through: 2006-03-20. [Open interactive contract](smithch04.html#contract) · [Contract history](smithch04.html#contract-history)
+Known through: 2006-03-26. [Open interactive contract](smithch04.html#contract) · [Contract history](smithch04.html#contract-history)
 
-Charles Smith: under contract. Evidence cutoff: 2006-03-20.
+Charles Smith: under contract. Evidence cutoff: 2006-03-26.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Charles Smith |
-| Club / rights baseline | Los Angeles Lakers |
+| Club / rights baseline | Portland Trail Blazers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

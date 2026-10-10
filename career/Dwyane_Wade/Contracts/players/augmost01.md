@@ -2,9 +2,9 @@
 
 # Contract | Stacey Augmon
 
-Known through: 2006-03-20. [Open interactive contract](augmost01.html#contract) · [Contract history](augmost01.html#contract-history)
+Known through: 2006-03-26. [Open interactive contract](augmost01.html#contract) · [Contract history](augmost01.html#contract-history)
 
-Stacey Augmon: under contract. Evidence cutoff: 2006-03-20.
+Stacey Augmon: under contract. Evidence cutoff: 2006-03-26.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Stacey Augmon |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Golden State Warriors |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

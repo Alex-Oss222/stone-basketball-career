@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2006-03-20** · Toronto Raptors · #4 · PF · age 21
+Career date: **2006-03-26** · Toronto Raptors · #4 · PF · age 22
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,21 +14,21 @@ Career date: **2006-03-20** · Toronto Raptors · #4 · PF · age 21
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 54/54 | 37.7 | 22.6 | 10.2 | 3.4 | 0.9 | 1.3 | 52.9 | 39.0 | 89.2 | 59.9 | 48-18 |
+| 2005-06 | 21 | Toronto Raptors | 58/58 | 37.6 | 22.4 | 10.2 | 3.4 | 0.9 | 1.3 | 52.7 | 37.2 | 89.9 | 59.8 | 50-20 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 54 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 58 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 37.7 |
-| Points | 24.5 | 22.6 |
+| Minutes | 36.5 | 37.6 |
+| Points | 24.5 | 22.4 |
 | Rebounds | 11.4 | 10.2 |
 | Assists | 4.2 | 3.4 |
-| FG% | 52.0 | 52.9 |
-| 3P% | 41.7 | 39.0 |
-| FT% | 91.3 | 89.2 |
+| FG% | 52.0 | 52.7 |
+| 3P% | 41.7 | 37.2 |
+| FT% | 91.3 | 89.9 |
 
 ## Playoffs
 

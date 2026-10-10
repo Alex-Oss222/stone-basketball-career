@@ -2,9 +2,9 @@
 
 # Contract | Howard Eisley
 
-Known through: 2006-03-20. [Open interactive contract](eisleho01.html#contract) · [Contract history](eisleho01.html#contract-history)
+Known through: 2006-03-26. [Open interactive contract](eisleho01.html#contract) · [Contract history](eisleho01.html#contract-history)
 
-Howard Eisley: under contract. Evidence cutoff: 2006-03-20.
+Howard Eisley: under contract. Evidence cutoff: 2006-03-26.
 
 ## Current contract
 
@@ -118,7 +118,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Howard Eisley |
-| Club / rights baseline | Philadelphia 76ers |
+| Club / rights baseline | Golden State Warriors |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

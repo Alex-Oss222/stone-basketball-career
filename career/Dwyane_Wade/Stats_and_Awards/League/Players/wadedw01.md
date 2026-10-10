@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `wadedw01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-03-20 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2005-06 register · **League:** NBA  
+**Card date:** 2006-03-26 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2005-06 register · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #3 · **Born:** 1984-01-17 · **Age on card date:** 22  
 **Registry ID:** `wadedw01` · [Basketball-Reference page](https://www.basketball-reference.com/players/w/wadedw01.html) · ESPN ID 1987
 
@@ -28,13 +28,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wadedw
 
 ## Simulated statistics
 
-As of **2006-03-20**: 66 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-03-26**: 69 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 22 | MIA | NBA | SG | 66 | 66 | 37.1 | 9.3 | 16.5 | .567 | 1.4 | 3.1 | .470 | 7.9 | 13.4 | .589 | .610 | 6.8 | 7.2 | .937 | 1.7 | 4.3 | 6.0 | 4.1 | 1.9 | 1.3 | 1.8 | 3.2 | 26.9 | .684 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 22 | MIA | NBA | SG | 69 | 69 | 37.1 | 9.4 | 16.6 | .568 | 1.5 | 3.1 | .477 | 7.9 | 13.4 | .589 | .613 | 6.8 | 7.3 | .937 | 1.7 | 4.2 | 5.9 | 4.1 | 1.9 | 1.3 | 1.8 | 3.2 | 27.1 | .686 | — |
 
 ### Month
 
@@ -47,7 +47,7 @@ As of **2006-03-20**: 66 closed games feed this card. Per-game columns use the r
 | [December 2005](../2005-06/12_December/League_Stats.md) | 22 | MIA | NBA | SG | 16 | 16 | 36.5 | 8.2 | 15.8 | .520 | 1.2 | 3.2 | .392 | 6.9 | 12.6 | .552 | .560 | 6.5 | 6.8 | .963 | 1.9 | 4.0 | 5.9 | 4.1 | 1.4 | 1.5 | 1.6 | 3.4 | 24.1 | .644 | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 22 | MIA | NBA | SG | 15 | 15 | 39.0 | 10.5 | 18.3 | .575 | 1.9 | 3.9 | .475 | 8.7 | 14.4 | .602 | .625 | 6.5 | 7.1 | .915 | 1.3 | 4.7 | 6.0 | 3.8 | 2.5 | 1.3 | 1.8 | 2.7 | 29.4 | .686 | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 22 | MIA | NBA | SG | 10 | 10 | 35.6 | 9.8 | 17.6 | .557 | 1.1 | 2.5 | .440 | 8.7 | 15.1 | .576 | .588 | 7.5 | 7.8 | .962 | 1.8 | 4.0 | 5.8 | 3.9 | 1.5 | 1.2 | 1.4 | 3.3 | 28.2 | .670 | — |
-| [March 2006](../2005-06/03_March/League_Stats.md) | 22 | MIA | NBA | SG | 10 | 10 | 36.8 | 9.5 | 15.8 | .601 | 1.4 | 2.7 | .519 | 8.1 | 13.1 | .618 | .646 | 7.1 | 7.5 | .947 | 1.4 | 3.5 | 4.9 | 4.5 | 1.9 | 1.6 | 2.2 | 4.0 | 27.5 | .720 | — |
+| [March 2006](../2005-06/03_March/League_Stats.md) | 22 | MIA | NBA | SG | 13 | 13 | 37.1 | 9.8 | 16.5 | .598 | 1.7 | 3.2 | .537 | 8.2 | 13.3 | .613 | .650 | 7.3 | 7.8 | .941 | 1.8 | 3.1 | 4.8 | 4.3 | 2.1 | 1.6 | 2.3 | 3.8 | 28.7 | .722 | — |
 | [April 2006](../2005-06/04_April/League_Stats.md) | 22 | MIA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 </details>
@@ -77,8 +77,8 @@ As of **2006-03-20**: 66 closed games feed this card. Per-game columns use the r
 | [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 22 | MIA | NBA | SG | 3 | 3 | 39.7 | 10.3 | 19.0 | .544 | 1.7 | 2.7 | .625 | 8.7 | 16.3 | .531 | .588 | 7.0 | 7.3 | .955 | 1.7 | 5.3 | 7.0 | 5.0 | 0.7 | 1.3 | 2.3 | 4.3 | 29.3 | .660 | — |
 | [March 2006 week 1 (01 to 07)](../2005-06/03_March/Week_1/League_Stats.md) | 22 | MIA | NBA | SG | 3 | 3 | 36.9 | 9.0 | 15.3 | .587 | 2.0 | 2.7 | .750 | 7.0 | 12.7 | .553 | .652 | 6.0 | 6.3 | .947 | 1.3 | 2.7 | 4.0 | 3.7 | 2.3 | 0.7 | 1.3 | 4.3 | 26.0 | .717 | — |
 | [March 2006 week 2 (08 to 14)](../2005-06/03_March/Week_2/League_Stats.md) | 22 | MIA | NBA | SG | 4 | 4 | 34.4 | 8.5 | 14.8 | .576 | 1.0 | 2.5 | .400 | 7.5 | 12.2 | .612 | .610 | 6.8 | 6.8 | 1.000 | 1.0 | 4.8 | 5.8 | 4.5 | 1.8 | 2.8 | 1.2 | 3.2 | 24.8 | .698 | — |
-| [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 22 | MIA | NBA | SG | 3 | 3 | 39.9 | 11.3 | 17.7 | .642 | 1.3 | 3.0 | .444 | 10.0 | 14.7 | .682 | .679 | 8.7 | 9.7 | .897 | 2.0 | 2.7 | 4.7 | 5.3 | 1.7 | 1.0 | 4.3 | 4.7 | 32.7 | .745 | — |
-| [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 22 | MIA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 22 | MIA | NBA | SG | 4 | 4 | 39.8 | 12.2 | 18.5 | .662 | 1.8 | 3.5 | .500 | 10.5 | 15.0 | .700 | .709 | 8.0 | 8.8 | .914 | 2.5 | 2.2 | 4.8 | 4.8 | 2.2 | 1.2 | 4.2 | 4.2 | 34.2 | .766 | — |
+| [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 22 | MIA | NBA | SG | 2 | 2 | 37.1 | 9.0 | 17.5 | .514 | 2.5 | 4.5 | .556 | 6.5 | 13.0 | .500 | .586 | 9.0 | 10.0 | .900 | 2.5 | 2.0 | 4.5 | 4.0 | 2.0 | 1.5 | 2.0 | 3.5 | 29.5 | .674 | — |
 | [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 22 | MIA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [April 2006 week 2 (08 to 14)](../2005-06/04_April/Week_2/League_Stats.md) | 22 | MIA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 22 | MIA | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -87,32 +87,32 @@ As of **2006-03-20**: 66 closed games feed this card. Per-game columns use the r
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 1087 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 1143 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 66 of 66 closed games; 66 tracked appearances form the denominator below (2005-11-02 to 2006-03-19).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 69 of 69 closed games; 69 tracked appearances form the denominator below (2005-11-02 to 2006-03-24).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 348 | 544 | 64.0% | 10.55 | 8.24 |
-| Outside paint, under 12 ft | 20 | 41 | 48.8% | 0.61 | 0.62 |
-| Outside paint, 12 to under 18 ft | 75 | 142 | 52.8% | 2.27 | 2.15 |
-| 18 ft to the three-point line | 78 | 158 | 49.4% | 2.36 | 2.39 |
-| Three-point range | 95 | 202 | 47.0% | 4.32 | 3.06 |
-| All field goals | 616 | 1087 | 56.7% | 20.11 | 16.47 |
+| Paint | 363 | 570 | 63.7% | 10.52 | 8.26 |
+| Outside paint, under 12 ft | 21 | 44 | 47.7% | 0.61 | 0.64 |
+| Outside paint, 12 to under 18 ft | 80 | 148 | 54.1% | 2.32 | 2.14 |
+| 18 ft to the three-point line | 82 | 165 | 49.7% | 2.38 | 2.39 |
+| Three-point range | 103 | 216 | 47.7% | 4.48 | 3.13 |
+| All field goals | 649 | 1143 | 56.8% | 20.30 | 16.57 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04. The historical Wade's statistics are never imported. 2005-06 is simulated: 66 closed regular-season games through 2006-03-20. Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04. The historical Wade's statistics are never imported. 2005-06 is simulated: 69 closed regular-season games through 2006-03-26. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | MIA | 75 | 70 | 35.0 | 17.9 | 4.8 | 4.5 | 1.6 | 1.0 | 1.1 | 52.0% | 39.7% | 90.9% |
 | 2004-05 | MIA | 76 | 76 | 36.2 | 21.3 | 5.4 | 4.0 | 1.4 | 1.2 | 1.3 | 53.0% | 42.9% | 93.2% |
-| 2005-06 | MIA | 66 | 66 | 37.1 | 26.9 | 6.0 | 4.1 | 1.9 | 1.3 | 1.8 | 56.7% | 47.0% | 93.7% |
+| 2005-06 | MIA | 69 | 69 | 37.1 | 27.1 | 5.9 | 4.1 | 1.9 | 1.3 | 1.8 | 56.8% | 47.7% | 93.7% |
 
 ## Playoff statistics by year
 
@@ -126,7 +126,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-03-20, from closed award decisions (32 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-03-26, from closed award decisions (32 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

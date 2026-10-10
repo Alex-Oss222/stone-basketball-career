@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-03-20",
+  "as_of": "2006-03-26",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -23,7 +23,7 @@
     {
       "player_id": "williaa01",
       "name": "Aaron Williams",
-      "team": "Portland Trail Blazers",
+      "team": "New Jersey Nets",
       "status": "under contract",
       "current_contract_id": "williaa01-2005-09-16",
       "recorded_agreements": 2,
@@ -923,7 +923,7 @@
     {
       "player_id": "smithch04",
       "name": "Charles Smith",
-      "team": "Los Angeles Lakers",
+      "team": "Portland Trail Blazers",
       "status": "under contract",
       "current_contract_id": "smithch04-2005-08-19",
       "recorded_agreements": 2,
@@ -2219,7 +2219,7 @@
     {
       "player_id": "eisleho01",
       "name": "Howard Eisley",
-      "team": "Philadelphia 76ers",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": "eisleho01-existing-3a00524ac07b",
       "recorded_agreements": 1,
@@ -4775,7 +4775,7 @@
     {
       "player_id": "pricero01",
       "name": "Ronnie Price",
-      "team": "Orlando Magic",
+      "team": "Philadelphia 76ers",
       "status": "under contract",
       "current_contract_id": "pricero01-2005-08-12",
       "recorded_agreements": 1,
@@ -5162,7 +5162,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Free agent",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,

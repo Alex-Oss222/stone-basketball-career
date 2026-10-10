@@ -4208,7 +4208,7 @@
   {
    "player": "Ronnie Price",
    "bbr_id": "pricero01",
-   "club": "Orlando Magic",
+   "club": "Philadelphia 76ers",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -4608,7 +4608,7 @@
   {
    "player": "Charles Smith",
    "bbr_id": "smithch04",
-   "club": "Los Angeles Lakers",
+   "club": "Portland Trail Blazers",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -5567,7 +5567,7 @@
   {
    "player": "Aaron Williams",
    "bbr_id": "williaa01",
-   "club": "Portland Trail Blazers",
+   "club": "New Jersey Nets",
    "route": "minimum",
    "kind": "new",
    "schedule": {
