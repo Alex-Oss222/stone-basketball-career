@@ -2529,6 +2529,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.38 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-06-ten_day-williaa01",
+   "date": "2006-01-06",
+   "kind": "ten_day",
+   "player": "Aaron Williams",
+   "bbr_id": "williaa01",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Aaron Williams",
+    "bbr_id": "williaa01",
+    "position": "C",
+    "games": 48,
+    "minutes": 791
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-01-16",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.3 x fit"
   }
  ],
  "market_days": [
@@ -2597,6 +2619,7 @@
   "2006-01-02",
   "2006-01-03",
   "2006-01-04",
-  "2006-01-05"
+  "2006-01-05",
+  "2006-01-06"
  ]
 }

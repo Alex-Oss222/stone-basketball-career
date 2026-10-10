@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** F  
 **Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-01-05 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-01-06 
 
 **Contract/control:** Unsigned draft rights: No. 58 pick of the 2005 draft. (register, 2005-12-19) [Finance record](../../Finances/cap_sheet.md).
 
