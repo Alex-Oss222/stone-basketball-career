@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-03-02. [Search the contract directory](index.html)
+Known through 2006-03-05. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -539,7 +539,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Ron Mercer](players/mercero01.md) | Free agent | under contract | Ron Mercer · 2000-08-02 | 1 |
 | [Ronald Dupree](players/duprero01.md) | Memphis Grizzlies | under contract | Ronald Dupree · 2005-09-30 | 2 |
 | [Ronald Murray](players/murraro01.md) | Seattle SuperSonics | under contract | Ronald Murray · 2005-09-30 | 1 |
-| [Ronnie Price](players/pricero01.md) | Memphis Grizzlies | under contract | Ronnie Price · 2005-08-12 | 1 |
+| [Ronnie Price](players/pricero01.md) | New York Knicks | under contract | Ronnie Price · 2005-08-12 | 1 |
 | [Ronny Turiaf](players/turiaro01.md) | Boston Celtics | under contract | Ronny Turiaf · 2005-08-02 | 1 |
 | [Royal Ivey](players/iveyro01.md) | Sacramento Kings | under contract | Royal Ivey · 2005-08-05 | 2 |
 | [Ruben Boumtje-Boumtje](players/boumtru01.md) | Free agent | under contract | Ruben Boumtje-Boumtje · 2002-09-30 | 1 |
@@ -608,7 +608,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Tito Maddox](players/maddoti01.md) | Free agent | team option pending | Tito Maddox · 2002-09-12 | 1 |
 | [Tom Gugliotta](players/guglito01.md) | Free agent | under contract | Tom Gugliotta · existing contract; signing date not recorded | 1 |
 | [Tommy Smith](players/smithto03.md) | Free agent | No verified contract record | No verified current agreement | 0 |
-| [Toni Kukoc](players/kukocto01.md) | New York Knicks | under contract | No verified current agreement | 1 |
+| [Toni Kukoc](players/kukocto01.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Tony Allen](players/tonyallen.md) | New York Knicks | under contract | Tony Allen · 2005-09-30 | 2 |
 | [Tony Battie](players/battito01.md) | New Jersey Nets | under contract | Tony Battie · 1999-10-15 | 1 |
 | [Tony Bobbitt](players/tonybobbitt.md) | Free agent | under contract | No verified current agreement | 1 |

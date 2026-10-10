@@ -2,9 +2,9 @@
 
 # Contract | Walter McCarty
 
-Known through: 2006-03-02. [Open interactive contract](mccarwa01.html#contract) · [Contract history](mccarwa01.html#contract-history)
+Known through: 2006-03-05. [Open interactive contract](mccarwa01.html#contract) · [Contract history](mccarwa01.html#contract-history)
 
-Walter McCarty: under contract. Evidence cutoff: 2006-03-02.
+Walter McCarty: under contract. Evidence cutoff: 2006-03-05.
 
 ## Current contract
 

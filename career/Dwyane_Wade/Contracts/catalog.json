@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-03-02",
+  "as_of": "2006-03-05",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -4775,7 +4775,7 @@
     {
       "player_id": "pricero01",
       "name": "Ronnie Price",
-      "team": "Memphis Grizzlies",
+      "team": "New York Knicks",
       "status": "under contract",
       "current_contract_id": "pricero01-2005-08-12",
       "recorded_agreements": 1,
@@ -5387,7 +5387,7 @@
     {
       "player_id": "kukocto01",
       "name": "Toni Kukoc",
-      "team": "New York Knicks",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": null,
       "recorded_agreements": 1,

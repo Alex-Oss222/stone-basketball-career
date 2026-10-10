@@ -2,9 +2,9 @@
 
 # Contract | Toni Kukoc
 
-Known through: 2006-03-02. [Open interactive contract](kukocto01.html#contract) · [Contract history](kukocto01.html#contract-history)
+Known through: 2006-03-05. [Open interactive contract](kukocto01.html#contract) · [Contract history](kukocto01.html#contract-history)
 
-Toni Kukoc: under contract. Evidence cutoff: 2006-03-02.
+Toni Kukoc: under contract. Evidence cutoff: 2006-03-05.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Toni Kukoc |
-| Club / rights baseline | New York Knicks |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

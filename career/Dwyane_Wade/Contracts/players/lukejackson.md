@@ -2,9 +2,9 @@
 
 # Contract | Luke Jackson
 
-Known through: 2006-03-02. [Open interactive contract](lukejackson.html#contract) · [Contract history](lukejackson.html#contract-history)
+Known through: 2006-03-05. [Open interactive contract](lukejackson.html#contract) · [Contract history](lukejackson.html#contract-history)
 
-Luke Jackson: under contract. Evidence cutoff: 2006-03-02.
+Luke Jackson: under contract. Evidence cutoff: 2006-03-05.
 
 ## Current contract
 

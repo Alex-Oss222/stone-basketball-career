@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2006-03-02** · Toronto Raptors · #4 · PF · age 21
+Career date: **2006-03-05** · Toronto Raptors · #4 · PF · age 21
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,21 +14,21 @@ Career date: **2006-03-02** · Toronto Raptors · #4 · PF · age 21
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 45/45 | 38.1 | 22.5 | 10.5 | 3.7 | 1.0 | 1.4 | 52.4 | 37.1 | 89.6 | 59.5 | 41-16 |
+| 2005-06 | 21 | Toronto Raptors | 47/47 | 38.1 | 22.7 | 10.4 | 3.6 | 1.0 | 1.3 | 52.5 | 39.5 | 90.0 | 60.0 | 43-16 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 45 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 47 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
 | Minutes | 36.5 | 38.1 |
-| Points | 24.5 | 22.5 |
-| Rebounds | 11.4 | 10.5 |
-| Assists | 4.2 | 3.7 |
-| FG% | 52.0 | 52.4 |
-| 3P% | 41.7 | 37.1 |
-| FT% | 91.3 | 89.6 |
+| Points | 24.5 | 22.7 |
+| Rebounds | 11.4 | 10.4 |
+| Assists | 4.2 | 3.6 |
+| FG% | 52.0 | 52.5 |
+| 3P% | 41.7 | 39.5 |
+| FT% | 91.3 | 90.0 |
 
 ## Playoffs
 
@@ -44,7 +44,7 @@ No playoff games closed.
 | Steals | 4 | 2006-01-23 at Denver Nuggets |
 | Blocks | 5 | 2006-02-25 at Dallas Mavericks |
 | Threes | 2 | 2006-02-25 at Dallas Mavericks |
-| Free throws | 12 | 2006-01-29 vs Sacramento Kings |
+| Free throws | 12 | 2006-01-29 vs Sacramento Kings (+1) |
 
 ## Awards
 
