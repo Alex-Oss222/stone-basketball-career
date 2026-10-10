@@ -2,9 +2,9 @@
 
 # Contract | Josh Davis
 
-Known through: 2006-04-17. [Open interactive contract](davisjo02.html#contract) · [Contract history](davisjo02.html#contract-history)
+Known through: 2006-04-19. [Open interactive contract](davisjo02.html#contract) · [Contract history](davisjo02.html#contract-history)
 
-Josh Davis: under contract. Evidence cutoff: 2006-04-17.
+Josh Davis: under contract. Evidence cutoff: 2006-04-19.
 
 ## Current contract
 

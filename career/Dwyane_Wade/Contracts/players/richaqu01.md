@@ -2,9 +2,9 @@
 
 # Contract | Quentin Richardson
 
-Known through: 2006-04-17. [Open interactive contract](richaqu01.html#contract) · [Contract history](richaqu01.html#contract-history)
+Known through: 2006-04-19. [Open interactive contract](richaqu01.html#contract) · [Contract history](richaqu01.html#contract-history)
 
-Quentin Richardson: under contract. Evidence cutoff: 2006-04-17.
+Quentin Richardson: under contract. Evidence cutoff: 2006-04-19.
 
 ## Current contract
 

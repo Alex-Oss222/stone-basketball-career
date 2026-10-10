@@ -2,9 +2,9 @@
 
 # Contract | C.J. Miles
 
-Known through: 2006-04-17. [Open interactive contract](milescj01.html#contract) · [Contract history](milescj01.html#contract-history)
+Known through: 2006-04-19. [Open interactive contract](milescj01.html#contract) · [Contract history](milescj01.html#contract-history)
 
-C.J. Miles: under contract. Evidence cutoff: 2006-04-17.
+C.J. Miles: under contract. Evidence cutoff: 2006-04-19.
 
 ## Current contract
 

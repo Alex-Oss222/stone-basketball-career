@@ -2,9 +2,9 @@
 
 # Contract | Ronnie Price
 
-Known through: 2006-04-17. [Open interactive contract](pricero01.html#contract) · [Contract history](pricero01.html#contract-history)
+Known through: 2006-04-19. [Open interactive contract](pricero01.html#contract) · [Contract history](pricero01.html#contract-history)
 
-Ronnie Price: under contract. Evidence cutoff: 2006-04-17.
+Ronnie Price: under contract. Evidence cutoff: 2006-04-19.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ronnie Price |
-| Club / rights baseline | Seattle SuperSonics |
+| Club / rights baseline | Toronto Raptors |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

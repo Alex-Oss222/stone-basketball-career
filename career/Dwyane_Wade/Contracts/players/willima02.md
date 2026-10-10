@@ -2,9 +2,9 @@
 
 # Contract | Marvin Williams
 
-Known through: 2006-04-17. [Open interactive contract](willima02.html#contract) · [Contract history](willima02.html#contract-history)
+Known through: 2006-04-19. [Open interactive contract](willima02.html#contract) · [Contract history](willima02.html#contract-history)
 
-Marvin Williams: under contract. Evidence cutoff: 2006-04-17.
+Marvin Williams: under contract. Evidence cutoff: 2006-04-19.
 
 ## Current contract
 

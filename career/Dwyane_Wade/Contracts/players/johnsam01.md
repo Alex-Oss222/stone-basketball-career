@@ -2,9 +2,9 @@
 
 # Contract | Amir Johnson
 
-Known through: 2006-04-17. [Open interactive contract](johnsam01.html#contract) · [Contract history](johnsam01.html#contract-history)
+Known through: 2006-04-19. [Open interactive contract](johnsam01.html#contract) · [Contract history](johnsam01.html#contract-history)
 
-Amir Johnson: under contract. Evidence cutoff: 2006-04-17.
+Amir Johnson: under contract. Evidence cutoff: 2006-04-19.
 
 ## Current contract
 

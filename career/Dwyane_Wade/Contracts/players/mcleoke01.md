@@ -2,9 +2,9 @@
 
 # Contract | Keith McLeod
 
-Known through: 2006-04-17. [Open interactive contract](mcleoke01.html#contract) · [Contract history](mcleoke01.html#contract-history)
+Known through: 2006-04-19. [Open interactive contract](mcleoke01.html#contract) · [Contract history](mcleoke01.html#contract-history)
 
-Keith McLeod: under contract. Evidence cutoff: 2006-04-17.
+Keith McLeod: under contract. Evidence cutoff: 2006-04-19.
 
 ## Current contract
 

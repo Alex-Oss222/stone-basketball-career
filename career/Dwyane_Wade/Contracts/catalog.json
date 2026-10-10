@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-04-17",
+  "as_of": "2006-04-19",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1238,7 +1238,7 @@
     {
       "player_id": "davisda01",
       "name": "Dale Davis",
-      "team": "Toronto Raptors",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "davisda01-existing-fb00d42a644b",
       "recorded_agreements": 1,
@@ -1418,7 +1418,7 @@
     {
       "player_id": "martida01",
       "name": "Darrick Martin",
-      "team": "Golden State Warriors",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "martida01-2005-09-23",
       "recorded_agreements": 1,
@@ -4451,7 +4451,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "Sacramento Kings",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4775,7 +4775,7 @@
     {
       "player_id": "pricero01",
       "name": "Ronnie Price",
-      "team": "Seattle SuperSonics",
+      "team": "Toronto Raptors",
       "status": "under contract",
       "current_contract_id": "pricero01-2005-08-12",
       "recorded_agreements": 1,
@@ -5162,7 +5162,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Portland Trail Blazers",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,

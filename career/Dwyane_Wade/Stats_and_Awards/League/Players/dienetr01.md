@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `dienetr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-04-17 · **Club on this date:** San Antonio Spurs · **Basis:** San Antonio Spurs: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-04-19 · **Club on this date:** San Antonio Spurs · **Basis:** San Antonio Spurs: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #34 · **Born:** 1982-03-01 · **Age on card date:** 24  
 **Registry ID:** `dienetr01`
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `dienet
 
 ## Simulated statistics
 
-As of **2006-04-17**: 80 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-04-19**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 24 | SA | NBA | PG | 43 | 0 | 3.5 | 0.6 | 1.2 | .471 | 0.3 | 0.6 | .519 | 0.2 | 0.6 | .417 | .608 | 0.2 | 0.3 | .818 | 0.1 | 0.4 | 0.5 | 0.1 | 0.1 | 0.0 | 0.1 | 0.2 | 1.7 | .636 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 24 | SA | NBA | PG | 44 | 0 | 3.5 | 0.5 | 1.2 | .462 | 0.3 | 0.6 | .519 | 0.2 | 0.6 | .400 | .596 | 0.3 | 0.3 | .867 | 0.1 | 0.4 | 0.5 | 0.1 | 0.1 | 0.0 | 0.2 | 0.2 | 1.7 | .640 | — |
 
 ### Month
 
@@ -46,7 +46,7 @@ As of **2006-04-17**: 80 closed games feed this card. Per-game columns use the r
 | [January 2006](../2005-06/01_January/League_Stats.md) | 24 | SA | NBA | PG | 4 | 0 | 3.9 | 1.2 | 1.2 | 1.000 | 1.0 | 1.0 | 1.000 | 0.2 | 0.2 | 1.000 | 1.400 | 0.0 | 0.0 | N/A | 0.0 | 0.5 | 0.5 | 0.2 | 0.2 | 0.0 | 0.0 | 0.5 | 3.5 | 1.400 | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 24 | SA | NBA | PG | 6 | 0 | 3.2 | 0.2 | 1.0 | .167 | 0.0 | 0.3 | .000 | 0.2 | 0.7 | .250 | .167 | 0.0 | 0.0 | N/A | 0.3 | 0.2 | 0.5 | 0.0 | 0.2 | 0.0 | 0.0 | 0.2 | 0.3 | .167 | — |
 | [March 2006](../2005-06/03_March/League_Stats.md) | 24 | SA | NBA | PG | 9 | 0 | 3.4 | 0.6 | 0.8 | .714 | 0.1 | 0.2 | .500 | 0.4 | 0.6 | .800 | .786 | 0.1 | 0.1 | 1.000 | 0.0 | 0.2 | 0.2 | 0.1 | 0.2 | 0.0 | 0.1 | 0.2 | 1.3 | .806 | — |
-| [April 2006](../2005-06/04_April/League_Stats.md) | 24 | SA | NBA | PG | 6 | 0 | 2.1 | 0.2 | 1.2 | .143 | 0.2 | 0.5 | .333 | 0.0 | 0.7 | .000 | .214 | 0.5 | 0.7 | .750 | 0.0 | 0.2 | 0.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.3 | 1.0 | .342 | — |
+| [April 2006](../2005-06/04_April/League_Stats.md) | 24 | SA | NBA | PG | 7 | 0 | 2.3 | 0.1 | 1.1 | .125 | 0.1 | 0.4 | .333 | 0.0 | 0.7 | .000 | .188 | 1.0 | 1.1 | .875 | 0.0 | 0.3 | 0.3 | 0.0 | 0.0 | 0.0 | 0.1 | 0.3 | 1.4 | .434 | — |
 
 </details>
 
@@ -79,36 +79,36 @@ As of **2006-04-17**: 80 closed games feed this card. Per-game columns use the r
 | [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 24 | SA | NBA | PG | 3 | 0 | 5.4 | 1.0 | 1.0 | 1.000 | 0.3 | 0.3 | 1.000 | 0.7 | 0.7 | 1.000 | 1.167 | 0.0 | 0.0 | N/A | 0.0 | 0.3 | 0.3 | 0.3 | 0.7 | 0.0 | 0.3 | 0.3 | 2.3 | 1.167 | — |
 | [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 24 | SA | NBA | PG | 3 | 0 | 2.3 | 0.0 | 1.0 | .000 | 0.0 | 0.3 | .000 | 0.0 | 0.7 | .000 | .000 | 0.7 | 0.7 | 1.000 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.3 | 0.7 | .258 | — |
 | [April 2006 week 2 (08 to 14)](../2005-06/04_April/Week_2/League_Stats.md) | 24 | SA | NBA | PG | 2 | 0 | 2.6 | 0.5 | 2.0 | .250 | 0.5 | 1.0 | .500 | 0.0 | 1.0 | .000 | .375 | 0.5 | 1.0 | .500 | 0.0 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.5 | 2.0 | .410 | — |
-| [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 24 | SA | NBA | PG | 1 | 0 | 0.6 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | N/A | — |
+| [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 24 | SA | NBA | PG | 2 | 0 | 1.9 | 0.0 | 0.5 | .000 | 0.0 | 0.0 | N/A | 0.0 | 0.5 | .000 | .000 | 2.0 | 2.0 | 1.000 | 0.0 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 | 0.5 | 0.0 | 2.0 | .725 | — |
 
 </details>
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 51 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 52 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 80 of 80 closed games; 43 tracked appearances form the denominator below (2005-11-01 to 2006-04-16).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 82 of 82 closed games; 44 tracked appearances form the denominator below (2005-11-01 to 2006-04-19).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
 | Paint | 5 | 10 | 50.0% | 0.23 | 0.23 |
 | Outside paint, under 12 ft | 0 | 2 | 0.0% | 0.00 | 0.05 |
 | Outside paint, 12 to under 18 ft | 3 | 7 | 42.9% | 0.14 | 0.16 |
-| 18 ft to the three-point line | 2 | 5 | 40.0% | 0.09 | 0.12 |
-| Three-point range | 14 | 27 | 51.9% | 0.98 | 0.63 |
-| All field goals | 24 | 51 | 47.1% | 1.44 | 1.19 |
+| 18 ft to the three-point line | 2 | 6 | 33.3% | 0.09 | 0.14 |
+| Three-point range | 14 | 27 | 51.9% | 0.95 | 0.61 |
+| All field goals | 24 | 52 | 46.2% | 1.41 | 1.18 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No 2002-03 record in the supplied statistics file. 2005-06 is simulated: 80 closed regular-season games through 2006-04-17. Earlier simulated seasons from their closed results.
+**Coverage:** No 2002-03 record in the supplied statistics file. 2005-06 is simulated: 82 closed regular-season games through 2006-04-19. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | SA | 43 | 0 | 3.5 | 1.7 | 0.5 | 0.1 | 0.1 | 0.0 | 0.1 | 47.1% | 51.9% | 81.8% |
+| 2005-06 | SA | 44 | 0 | 3.5 | 1.7 | 0.5 | 0.1 | 0.1 | 0.0 | 0.2 | 46.2% | 51.9% | 86.7% |
 
 ## Playoff statistics by year
 
@@ -120,4 +120,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2006-04-17. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2006-04-19. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

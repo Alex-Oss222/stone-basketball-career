@@ -2,9 +2,9 @@
 
 # Contract | fitchge01
 
-Known through: 2006-04-17. [Open interactive contract](fitchge01.html#contract) · [Contract history](fitchge01.html#contract-history)
+Known through: 2006-04-19. [Open interactive contract](fitchge01.html#contract) · [Contract history](fitchge01.html#contract-history)
 
-fitchge01: under contract. Evidence cutoff: 2006-04-17.
+fitchge01: under contract. Evidence cutoff: 2006-04-19.
 
 ## Current contract
 

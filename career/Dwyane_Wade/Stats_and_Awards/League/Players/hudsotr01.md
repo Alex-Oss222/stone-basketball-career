@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `hudsotr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-04-17 · **Club on this date:** Utah Jazz · **Basis:** Utah Jazz: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-04-19 · **Club on this date:** Utah Jazz · **Basis:** Utah Jazz: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #16 · **Born:** 1976-03-13 · **Age on card date:** 30  
 **Registry ID:** `hudsotr01` · [Basketball-Reference page](https://www.basketball-reference.com/players/h/hudsotr01.html) · ESPN ID 353
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hudsot
 
 ## Simulated statistics
 
-As of **2006-04-17**: 80 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-04-19**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 30 | UTAH | NBA | PG | 39 | 2 | 23.3 | 2.8 | 8.4 | .337 | 1.1 | 2.6 | .412 | 1.7 | 5.7 | .304 | .402 | 1.2 | 1.3 | .941 | 0.4 | 1.5 | 1.9 | 3.0 | 0.5 | 0.2 | 1.4 | 1.9 | 7.9 | .445 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 30 | UTAH | NBA | PG | 40 | 2 | 23.4 | 2.8 | 8.4 | .332 | 1.1 | 2.7 | .389 | 1.8 | 5.7 | .306 | .395 | 1.2 | 1.3 | .941 | 0.4 | 1.5 | 1.9 | 3.0 | 0.5 | 0.2 | 1.4 | 1.8 | 7.8 | .437 | — |
 
 ### Month
 
@@ -46,7 +46,7 @@ As of **2006-04-17**: 80 closed games feed this card. Per-game columns use the r
 | [January 2006](../2005-06/01_January/League_Stats.md) | 30 | UTAH | NBA | PG | 4 | 0 | 22.0 | 1.8 | 7.2 | .241 | 0.8 | 1.5 | .500 | 1.0 | 5.8 | .174 | .293 | 1.8 | 1.8 | 1.000 | 0.8 | 1.2 | 2.0 | 3.0 | 0.2 | 0.0 | 1.2 | 3.0 | 6.0 | .374 | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 30 | UTAH | NBA | PG | 5 | 0 | 23.6 | 3.0 | 8.8 | .341 | 0.8 | 2.6 | .308 | 2.2 | 6.2 | .355 | .386 | 1.6 | 2.0 | .800 | 1.2 | 1.2 | 2.4 | 3.6 | 0.6 | 0.0 | 2.0 | 2.2 | 8.4 | .434 | — |
 | [March 2006](../2005-06/03_March/League_Stats.md) | 30 | UTAH | NBA | PG | 9 | 1 | 25.6 | 2.8 | 8.3 | .333 | 1.0 | 2.4 | .409 | 1.8 | 5.9 | .302 | .393 | 1.3 | 1.3 | 1.000 | 0.0 | 1.4 | 1.4 | 3.6 | 0.8 | 0.3 | 1.3 | 1.7 | 7.9 | .442 | — |
-| [April 2006](../2005-06/04_April/League_Stats.md) | 30 | UTAH | NBA | PG | 4 | 1 | 25.0 | 3.2 | 7.8 | .419 | 1.2 | 2.2 | .556 | 2.0 | 5.5 | .364 | .500 | 1.0 | 1.0 | 1.000 | 0.0 | 1.5 | 1.5 | 2.0 | 0.2 | 0.2 | 0.8 | 1.8 | 8.8 | .534 | — |
+| [April 2006](../2005-06/04_April/League_Stats.md) | 30 | UTAH | NBA | PG | 5 | 1 | 24.9 | 3.0 | 8.4 | .357 | 1.0 | 3.0 | .333 | 2.0 | 5.4 | .370 | .417 | 0.8 | 0.8 | 1.000 | 0.2 | 1.2 | 1.4 | 2.2 | 0.2 | 0.2 | 1.0 | 1.4 | 7.8 | .446 | — |
 
 </details>
 
@@ -79,39 +79,39 @@ As of **2006-04-17**: 80 closed games feed this card. Per-game columns use the r
 | [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 30 | UTAH | NBA | PG | 4 | 0 | 24.5 | 2.2 | 8.2 | .273 | 0.8 | 2.2 | .333 | 1.5 | 6.0 | .250 | .318 | 1.8 | 1.8 | 1.000 | 0.0 | 1.0 | 1.0 | 3.8 | 0.5 | 0.0 | 1.2 | 1.2 | 7.0 | .388 | — |
 | [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 30 | UTAH | NBA | PG | 1 | 0 | 20.2 | 2.0 | 9.0 | .222 | 2.0 | 4.0 | .500 | 0.0 | 5.0 | .000 | .333 | 2.0 | 2.0 | 1.000 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 2.0 | 8.0 | .405 | — |
 | [April 2006 week 2 (08 to 14)](../2005-06/04_April/Week_2/League_Stats.md) | 30 | UTAH | NBA | PG | 2 | 0 | 24.7 | 4.0 | 8.5 | .471 | 1.5 | 2.0 | .750 | 2.5 | 6.5 | .385 | .559 | 1.0 | 1.0 | 1.000 | 0.0 | 1.5 | 1.5 | 3.5 | 0.0 | 0.5 | 0.5 | 2.0 | 10.5 | .587 | — |
-| [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 30 | UTAH | NBA | PG | 1 | 1 | 30.2 | 3.0 | 5.0 | .600 | 0.0 | 1.0 | .000 | 3.0 | 4.0 | .750 | .600 | 0.0 | 0.0 | N/A | 0.0 | 3.0 | 3.0 | 1.0 | 1.0 | 0.0 | 2.0 | 1.0 | 6.0 | .600 | — |
+| [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 30 | UTAH | NBA | PG | 2 | 1 | 27.4 | 2.5 | 8.0 | .312 | 0.0 | 3.5 | .000 | 2.5 | 4.5 | .556 | .312 | 0.0 | 0.0 | N/A | 0.5 | 1.5 | 2.0 | 2.0 | 0.5 | 0.0 | 2.0 | 0.5 | 5.0 | .312 | — |
 
 </details>
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 326 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 337 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 80 of 80 closed games; 39 tracked appearances form the denominator below (2005-11-02 to 2006-04-16).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 82 of 82 closed games; 40 tracked appearances form the denominator below (2005-11-02 to 2006-04-19).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 45 | 133 | 33.8% | 2.31 | 3.41 |
-| Outside paint, under 12 ft | 3 | 8 | 37.5% | 0.15 | 0.21 |
-| Outside paint, 12 to under 18 ft | 12 | 40 | 30.0% | 0.62 | 1.03 |
-| 18 ft to the three-point line | 8 | 43 | 18.6% | 0.41 | 1.10 |
-| Three-point range | 42 | 102 | 41.2% | 3.23 | 2.62 |
-| All field goals | 110 | 326 | 33.7% | 6.72 | 8.36 |
+| Paint | 47 | 138 | 34.1% | 2.35 | 3.45 |
+| Outside paint, under 12 ft | 3 | 8 | 37.5% | 0.15 | 0.20 |
+| Outside paint, 12 to under 18 ft | 12 | 40 | 30.0% | 0.60 | 1.00 |
+| 18 ft to the three-point line | 8 | 43 | 18.6% | 0.40 | 1.07 |
+| Three-point range | 42 | 108 | 38.9% | 3.15 | 2.70 |
+| All field goals | 112 | 337 | 33.2% | 6.65 | 8.43 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 80 closed regular-season games through 2006-04-17. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 82 closed regular-season games through 2006-04-19. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | MIN | 79 | 74 | 32.9 | 14.2 | 2.3 | 5.7 | 0.8 | 0.1 | 2.3 | 42.8% | 36.5% | 90.0% |
 | 2003-04 | MIN | 24 | 2 | 17.4 | 6.8 | 2.2 | 1.7 | 0.8 | 0.2 | 1.2 | 38.1% | 34.8% | 83.3% |
 | 2004-05 | Charlotte Bobcats | 80 | 80 | 35.4 | 14.0 | 3.0 | 4.8 | 0.7 | 0.2 | 2.3 | 40.9% | 35.3% | 83.2% |
-| 2005-06 | UTAH | 39 | 2 | 23.3 | 7.9 | 1.9 | 3.0 | 0.5 | 0.2 | 1.4 | 33.7% | 41.2% | 94.1% |
+| 2005-06 | UTAH | 40 | 2 | 23.4 | 7.8 | 1.9 | 3.0 | 0.5 | 0.2 | 1.4 | 33.2% | 38.9% | 94.1% |
 
 ## Playoff statistics by year
 
@@ -124,4 +124,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2006-04-17. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2006-04-19. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
