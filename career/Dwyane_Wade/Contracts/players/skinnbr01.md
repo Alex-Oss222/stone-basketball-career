@@ -2,9 +2,9 @@
 
 # Contract | Brian Skinner
 
-Known through: 2006-02-13. [Open interactive contract](skinnbr01.html#contract) · [Contract history](skinnbr01.html#contract-history)
+Known through: 2006-02-17. [Open interactive contract](skinnbr01.html#contract) · [Contract history](skinnbr01.html#contract-history)
 
-Brian Skinner: under contract. Evidence cutoff: 2006-02-13.
+Brian Skinner: under contract. Evidence cutoff: 2006-02-17.
 
 ## Current contract
 

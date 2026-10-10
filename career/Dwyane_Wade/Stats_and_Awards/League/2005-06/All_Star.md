@@ -1,6 +1,6 @@
 # 2005-06 NBA All-Star selections
 
-All-Star Game: February 19, 2006, Toyota Center, Houston. Rookie Challenge: February 17, 2006. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: February 9, 2006.
+All-Star Game: February 19, 2006, Toyota Center, Houston. Rookie Challenge: February 17, 2006. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: February 17, 2006.
 
 ## Starters (fan ballot, announced February 2, 2006; results through January 22, 2006)
 
@@ -87,6 +87,12 @@ All-Star Game: February 19, 2006, Toyota Center, Houston. Rookie Challenge: Febr
 | Andrés Nocioni | F | San Antonio Spurs | 45 | 11.2 | 5.2 | 1.7 | 7.29 | 8 |
 | Josh Smith | F | Utah Jazz | 43 | 10.4 | 7.3 | 2.5 | 9.32 | 8 |
 
+## Injury replacements (the Commissioner, February 17, 2006)
+
+| Conference | Out | Reason | Replacement | Team |
+|---|---|---|---|---|
+| West | Shaquille O'Neal | played in none of Los Angeles Lakers's last two games (2006-02-13, 2006-02-15) | Yao Ming | Houston Rockets |
+
 ## All-Stars
 
 | Player | Team | Conference | Role | Selected |
@@ -115,5 +121,6 @@ All-Star Game: February 19, 2006, Toyota Center, Houston. Rookie Challenge: Febr
 | Brad Miller | Sacramento Kings | West | reserve | 2006-02-09 |
 | Chris Paul | Utah Jazz | West | reserve | 2006-02-09 |
 | Tony Parker | San Antonio Spurs | West | reserve | 2006-02-09 |
+| Yao Ming | Houston Rockets | West | injury replacement | 2006-02-17 |
 
 Rules: library/2005/league/nba_2005_06_all_star.json; method in `runtime/all_star.py`.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-02-13",
+  "as_of": "2006-02-17",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -3389,7 +3389,7 @@
     {
       "player_id": "hunteli01",
       "name": "Lindsey Hunter",
-      "team": "Golden State Warriors",
+      "team": "Memphis Grizzlies",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4451,7 +4451,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "Atlanta Hawks",
+      "team": "Houston Rockets",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4757,7 +4757,7 @@
     {
       "player_id": "duprero01",
       "name": "Ronald Dupree",
-      "team": "Free agent",
+      "team": "Memphis Grizzlies",
       "status": "under contract",
       "current_contract_id": "duprero01-2005-09-30",
       "recorded_agreements": 2,
@@ -5162,7 +5162,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Houston Rockets",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,
@@ -5882,7 +5882,7 @@
     {
       "player_id": "walshma01",
       "name": "walshma01",
-      "team": "Memphis Grizzlies",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "walshma01-2005-09-02",
       "recorded_agreements": 1,

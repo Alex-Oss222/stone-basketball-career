@@ -2,9 +2,9 @@
 
 # Contract | Kirk Snyder
 
-Known through: 2006-02-13. [Open interactive contract](kirksnyder.html#contract) · [Contract history](kirksnyder.html#contract-history)
+Known through: 2006-02-17. [Open interactive contract](kirksnyder.html#contract) · [Contract history](kirksnyder.html#contract-history)
 
-Kirk Snyder: under contract. Evidence cutoff: 2006-02-13.
+Kirk Snyder: under contract. Evidence cutoff: 2006-02-17.
 
 ## Current contract
 

@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of February 16, 2006: 42 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
+As of February 17, 2006: 42 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
 
 ## Individual awards
 
@@ -126,7 +126,7 @@ These are separate decisions, not consequences of the regular-season award vote.
 
 ### All-Star selections
 
-24 All-Stars: starters announced February 2, 2006 (fan ballot), reserves announced February 9, 2006 (head coaches). [All-Star selections](All_Star.md#all-stars)
+25 All-Stars: starters announced February 2, 2006 (fan ballot), reserves announced February 9, 2006 (head coaches), 1 injury replacement named February 17, 2006 (the Commissioner). [All-Star selections](All_Star.md#all-stars)
 
 | Conference | Role | Player | Team | Selected |
 | --- | --- | --- | --- | --- |
@@ -154,6 +154,7 @@ These are separate decisions, not consequences of the regular-season award vote.
 | West | Reserve | Brad Miller | Sacramento Kings | February 9, 2006 |
 | West | Reserve | Chris Paul | Utah Jazz | February 9, 2006 |
 | West | Reserve | Tony Parker | San Antonio Spurs | February 9, 2006 |
+| West | Injury replacement for Shaquille O'Neal | Yao Ming | Houston Rockets | February 17, 2006 |
 
 ### NBA champion
 

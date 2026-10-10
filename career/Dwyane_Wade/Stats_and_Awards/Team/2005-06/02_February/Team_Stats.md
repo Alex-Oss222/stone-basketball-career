@@ -4,13 +4,13 @@
 
 NBA regular season · February 1-28, 2006
 
-As of February 13, 2006: 5 closed Miami games in this period. Rows cover Miami's closed games only.
+As of February 17, 2006: 7 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
 | G | W | L | WIN% | PPG | OPP PPG | DIFF |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 5 | 5 | 0 | 1.000 | 107.2 | 92.6 | +14.6 |
+| 7 | 6 | 1 | .857 | 108.7 | 94.0 | +14.7 |
 
 ## Player production
 
@@ -18,22 +18,22 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | SG/SF | 5 | 4.7 | 0.8 | 1.8 | 0.2 | 1.0 | 0.0 | 0.8 |
-| Donyell Marshall | PF | 5 | 16.0 | 5.8 | 1.8 | 0.4 | 0.4 | 0.8 | 2.2 |
-| Anthony Johnson | PG | 5 | 11.5 | 3.8 | 1.4 | 1.2 | 0.4 | 0.8 | 0.6 |
-| Mike James | PG | 5 | 30.4 | 14.6 | 3.4 | 6.6 | 1.0 | 0.0 | 0.8 |
-| Mehmet Okur | PF | 5 | 34.1 | 16.2 | 7.8 | 4.4 | 0.0 | 0.8 | 1.6 |
+| Eddie Jones | SG/SF | 7 | 6.7 | 2.9 | 2.0 | 0.4 | 1.0 | 0.0 | 0.7 |
+| Donyell Marshall | PF | 7 | 16.6 | 7.0 | 2.6 | 0.4 | 0.4 | 0.6 | 1.7 |
+| Anthony Johnson | PG | 7 | 12.7 | 3.3 | 1.4 | 1.6 | 0.4 | 0.9 | 1.0 |
+| Mike James | PG | 7 | 29.4 | 14.1 | 2.6 | 6.0 | 1.0 | 0.0 | 1.7 |
+| Mehmet Okur | PF | 7 | 33.7 | 16.4 | 7.4 | 3.4 | 0.1 | 0.9 | 1.6 |
 | DeShawn Stevenson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Dwyane Wade | SG/PG | 5 | 36.7 | 30.4 | 5.4 | 3.4 | 1.8 | 1.2 | 1.4 |
-| Caron Butler | SF | 5 | 34.3 | 11.8 | 6.2 | 1.8 | 1.0 | 0.2 | 2.2 |
-| Sebastian Telfair | SF | 5 | 8.4 | 1.4 | 0.4 | 1.6 | 0.0 | 0.2 | 0.4 |
+| Dwyane Wade | SG/PG | 7 | 33.9 | 27.7 | 5.3 | 3.4 | 1.9 | 1.1 | 1.0 |
+| Caron Butler | SF | 7 | 31.7 | 12.1 | 5.1 | 2.6 | 1.1 | 0.1 | 1.7 |
+| Sebastian Telfair | SF | 7 | 9.8 | 1.9 | 0.9 | 2.9 | 0.1 | 0.1 | 0.4 |
 | Eddie Gill | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Mike Wilks | PG | 2 | 5.2 | 2.5 | 0.5 | 0.0 | 0.0 | 0.0 | 0.5 |
+| Mike Wilks | PG | 4 | 5.5 | 1.8 | 1.2 | 0.0 | 0.0 | 0.0 | 0.2 |
 | Matt Carroll | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Uroš Slokar | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Joe Smith | SF | 5 | 19.0 | 8.0 | 6.8 | 1.8 | 1.4 | 1.0 | 0.4 |
-| P.J. Brown | PF | 5 | 12.4 | 3.0 | 4.0 | 0.0 | 0.4 | 0.8 | 1.0 |
-| Chris Mihm | C | 5 | 30.4 | 10.4 | 6.0 | 0.6 | 0.4 | 1.6 | 1.2 |
+| Joe Smith | SF | 7 | 22.6 | 9.6 | 6.1 | 1.6 | 1.3 | 0.7 | 0.4 |
+| P.J. Brown | PF | 7 | 14.1 | 3.9 | 4.0 | 0.0 | 0.3 | 0.7 | 0.9 |
+| Chris Mihm | C | 7 | 25.7 | 8.9 | 5.0 | 0.9 | 0.3 | 1.4 | 1.0 |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -42,22 +42,22 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | 0 | 2/3 | .667 | 0/0 | N/A | 0/0 | N/A | 1 | 8 |
-| Donyell Marshall | 0 | 11/25 | .440 | 3/11 | .273 | 4/7 | .571 | 3 | 6 |
-| Anthony Johnson | 0 | 6/16 | .375 | 2/7 | .286 | 5/8 | .625 | 2 | 5 |
-| Mike James | 5 | 26/67 | .388 | 7/18 | .389 | 14/14 | 1.000 | 1 | 16 |
-| Mehmet Okur | 5 | 30/56 | .536 | 5/9 | .556 | 16/19 | .842 | 10 | 29 |
+| Eddie Jones | 0 | 8/11 | .727 | 3/3 | 1.000 | 1/1 | 1.000 | 1 | 13 |
+| Donyell Marshall | 0 | 20/42 | .476 | 5/19 | .263 | 4/7 | .571 | 5 | 13 |
+| Anthony Johnson | 0 | 8/23 | .348 | 2/8 | .250 | 5/9 | .556 | 2 | 8 |
+| Mike James | 7 | 36/88 | .409 | 10/22 | .455 | 17/17 | 1.000 | 2 | 16 |
+| Mehmet Okur | 7 | 44/81 | .543 | 7/12 | .583 | 20/25 | .800 | 12 | 40 |
 | DeShawn Stevenson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Dwyane Wade | 5 | 48/86 | .558 | 6/13 | .462 | 50/52 | .962 | 10 | 17 |
-| Caron Butler | 5 | 23/49 | .469 | 2/4 | .500 | 11/11 | 1.000 | 7 | 24 |
-| Sebastian Telfair | 0 | 2/7 | .286 | 0/2 | .000 | 3/5 | .600 | 0 | 2 |
+| Dwyane Wade | 7 | 67/119 | .563 | 6/17 | .353 | 54/56 | .964 | 13 | 24 |
+| Caron Butler | 6 | 33/69 | .478 | 2/6 | .333 | 17/17 | 1.000 | 10 | 26 |
+| Sebastian Telfair | 0 | 4/16 | .250 | 0/2 | .000 | 5/7 | .714 | 0 | 6 |
 | Eddie Gill | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Mike Wilks | 0 | 2/3 | .667 | 1/2 | .500 | 0/0 | N/A | 1 | 0 |
+| Mike Wilks | 0 | 3/5 | .600 | 1/3 | .333 | 0/0 | N/A | 2 | 3 |
 | Matt Carroll | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Uroš Slokar | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Joe Smith | 0 | 18/37 | .486 | 0/3 | .000 | 4/6 | .667 | 13 | 21 |
-| P.J. Brown | 0 | 3/8 | .375 | 0/0 | N/A | 9/10 | .900 | 2 | 18 |
-| Chris Mihm | 5 | 19/38 | .500 | 0/0 | N/A | 14/19 | .737 | 9 | 21 |
+| Joe Smith | 1 | 24/51 | .471 | 0/3 | .000 | 19/24 | .792 | 15 | 28 |
+| P.J. Brown | 0 | 8/17 | .471 | 0/0 | N/A | 11/15 | .733 | 6 | 22 |
+| Chris Mihm | 7 | 23/43 | .535 | 0/0 | N/A | 16/21 | .762 | 11 | 24 |
 
 </details>
 
@@ -66,8 +66,8 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Period | Calendar dates | Closed games | Status |
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/Team_Stats.md) | February 1-7, 2006 | 3 | Complete |
-| [Week 2](Week_2/Team_Stats.md) | February 8-14, 2006 | 2 | Through February 13, 2006 |
-| [Week 3](Week_3/Team_Stats.md) | February 15-21, 2006 | 0 | Not started |
+| [Week 2](Week_2/Team_Stats.md) | February 8-14, 2006 | 3 | Complete |
+| [Week 3](Week_3/Team_Stats.md) | February 15-21, 2006 | 1 | Through February 17, 2006 |
 | [Week 4](Week_4/Team_Stats.md) | February 22-28, 2006 | 0 | Not started |
 
 Departures retain their completed Miami appearances. Arrivals enter from their first applicable period. Team wins and losses count games once, not once per player.

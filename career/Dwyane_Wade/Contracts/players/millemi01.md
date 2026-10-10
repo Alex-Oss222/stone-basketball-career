@@ -2,9 +2,9 @@
 
 # Contract | Mike Miller
 
-Known through: 2006-02-13. [Open interactive contract](millemi01.html#contract) · [Contract history](millemi01.html#contract-history)
+Known through: 2006-02-17. [Open interactive contract](millemi01.html#contract) · [Contract history](millemi01.html#contract-history)
 
-Mike Miller: under contract. Evidence cutoff: 2006-02-13.
+Mike Miller: under contract. Evidence cutoff: 2006-02-17.
 
 ## Current contract
 

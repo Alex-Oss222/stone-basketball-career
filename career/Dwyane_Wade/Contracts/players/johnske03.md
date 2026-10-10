@@ -2,9 +2,9 @@
 
 # Contract | Ken Johnson
 
-Known through: 2006-02-13. [Open interactive contract](johnske03.html#contract) · [Contract history](johnske03.html#contract-history)
+Known through: 2006-02-17. [Open interactive contract](johnske03.html#contract) · [Contract history](johnske03.html#contract-history)
 
-Ken Johnson: team option declined. Evidence cutoff: 2006-02-13.
+Ken Johnson: team option declined. Evidence cutoff: 2006-02-17.
 
 ## Current contract
 

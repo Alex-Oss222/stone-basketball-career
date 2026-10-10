@@ -2,9 +2,9 @@
 
 # Contract | Rodney White
 
-Known through: 2006-02-13. [Open interactive contract](whitero02.html#contract) · [Contract history](whitero02.html#contract-history)
+Known through: 2006-02-17. [Open interactive contract](whitero02.html#contract) · [Contract history](whitero02.html#contract-history)
 
-Rodney White: under contract. Evidence cutoff: 2006-02-13.
+Rodney White: under contract. Evidence cutoff: 2006-02-17.
 
 ## Current contract
 

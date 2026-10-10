@@ -2,9 +2,9 @@
 
 # Contract | Ronald Dupree
 
-Known through: 2006-02-13. [Open interactive contract](duprero01.html#contract) · [Contract history](duprero01.html#contract-history)
+Known through: 2006-02-17. [Open interactive contract](duprero01.html#contract) · [Contract history](duprero01.html#contract-history)
 
-Ronald Dupree: under contract. Evidence cutoff: 2006-02-13.
+Ronald Dupree: under contract. Evidence cutoff: 2006-02-17.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ronald Dupree |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Memphis Grizzlies |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

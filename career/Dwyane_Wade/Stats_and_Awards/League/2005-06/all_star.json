@@ -1160,6 +1160,26 @@
      ]
     }
    }
+  },
+  {
+   "step": "replacements",
+   "announced_on": "2006-02-17",
+   "evidence_through": "2006-02-16",
+   "electorate": "the Commissioner",
+   "conferences": {
+    "East": [],
+    "West": [
+     {
+      "out": "Shaquille O'Neal",
+      "out_team": "Los Angeles Lakers",
+      "role": "starter",
+      "reason": "played in none of Los Angeles Lakers's last two games (2006-02-13, 2006-02-15)",
+      "replacement": "Yao Ming",
+      "replacement_team": "Houston Rockets",
+      "position": "C"
+     }
+    ]
+   }
   }
  ],
  "all_stars": [
@@ -1354,6 +1374,57 @@
    "conference": "West",
    "role": "reserve",
    "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Yao Ming",
+   "bbr_id": "mingya01",
+   "team": "Houston Rockets",
+   "conference": "West",
+   "role": "injury replacement",
+   "selected_on": "2006-02-17",
+   "replacing": "Shaquille O'Neal"
   }
- ]
+ ],
+ "game_rosters": {
+  "East": {
+   "starters": [
+    "LeBron James",
+    "Jermaine O'Neal",
+    "Zydrunas Ilgauskas",
+    "Dwyane Wade",
+    "Allen Iverson"
+   ],
+   "reserves": [
+    "Paul Pierce",
+    "Chauncey Billups",
+    "Chris Bosh",
+    "Boris Diaw",
+    "Primož Brezec",
+    "Jason Terry",
+    "Vince Carter"
+   ],
+   "out": []
+  },
+  "West": {
+   "starters": [
+    "Kevin Garnett",
+    "Kobe Bryant",
+    "Dirk Nowitzki",
+    "Ray Allen",
+    "Brad Miller"
+   ],
+   "reserves": [
+    "Shawn Marion",
+    "Joe Johnson",
+    "Mike Bibby",
+    "Elton Brand",
+    "Chris Paul",
+    "Tony Parker",
+    "Yao Ming"
+   ],
+   "out": [
+    "Shaquille O'Neal"
+   ]
+  }
+ }
 }

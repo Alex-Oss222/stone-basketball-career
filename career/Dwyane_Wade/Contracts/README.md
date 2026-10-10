@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-02-13. [Search the contract directory](index.html)
+Known through 2006-02-17. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -385,7 +385,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Lee Nailon](players/nailole01.md) | Denver Nuggets | under contract | Lee Nailon · 2005-09-09 | 3 |
 | [Leon Smith](players/smithle01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Linas Kleiza](players/kleizli01.md) | New Jersey Nets | under contract | Linas Kleiza · 2005-08-19 | 1 |
-| [Lindsey Hunter](players/hunteli01.md) | Golden State Warriors | under contract unverified | No verified current agreement | 0 |
+| [Lindsey Hunter](players/hunteli01.md) | Memphis Grizzlies | under contract unverified | No verified current agreement | 0 |
 | [Linton Johnson](players/johnsli01.md) | San Antonio Spurs | under contract | Linton Johnson · 2005-09-23 | 1 |
 | [Lionel Chalmers](players/lionelchalmers.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Lonny Baxter](players/baxtelo01.md) | Toronto Raptors | under contract | Lonny Baxter · 2005-08-05 | 2 |
@@ -503,7 +503,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Raja Bell](players/bellra01.md) | Philadelphia 76ers | under contract | Raja Bell · 2003-09-26 | 3 |
 | [Randy Brown](players/brownra02.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Randy Holcomb](players/holcora01.md) | Free agent | under contract | Randy Holcomb · 2005-08-12 | 1 |
-| [Randy Livingston](players/livinra01.md) | Atlanta Hawks | No verified contract record | No verified current agreement | 0 |
+| [Randy Livingston](players/livinra01.md) | Houston Rockets | No verified contract record | No verified current agreement | 0 |
 | [Rashad McCants](players/mccanra01.md) | Washington Wizards | under contract | Rashad McCants · 2005-07-01 | 1 |
 | [Rashard Lewis](players/lewisra02.md) | Seattle SuperSonics | under contract | Rashard Lewis · 2005-08-02 | 2 |
 | [Rasheed Wallace](players/wallara01.md) | Portland Trail Blazers | under contract | Rasheed Wallace · 2004-08-12 | 2 |
@@ -537,7 +537,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Roger Mason Jr.](players/masonro01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Ron Artest](players/artesro01.md) | Indiana Pacers | under contract unverified | No verified current agreement | 0 |
 | [Ron Mercer](players/mercero01.md) | Free agent | under contract | Ron Mercer · 2000-08-02 | 1 |
-| [Ronald Dupree](players/duprero01.md) | Free agent | under contract | Ronald Dupree · 2005-09-30 | 2 |
+| [Ronald Dupree](players/duprero01.md) | Memphis Grizzlies | under contract | Ronald Dupree · 2005-09-30 | 2 |
 | [Ronald Murray](players/murraro01.md) | Seattle SuperSonics | under contract | Ronald Murray · 2005-09-30 | 1 |
 | [Ronnie Price](players/pricero01.md) | Los Angeles Lakers | under contract | Ronnie Price · 2005-08-12 | 1 |
 | [Ronny Turiaf](players/turiaro01.md) | Boston Celtics | under contract | Ronny Turiaf · 2005-08-02 | 1 |
@@ -583,7 +583,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Smush Parker](players/parkesm01.md) | Indiana Pacers | under contract | Smush Parker · 2005-09-30 | 3 |
 | [Sofoklis Schortsanitis](players/schorso01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Speedy Claxton](players/claxtsp01.md) | Golden State Warriors | under contract | Speedy Claxton · 2003-07-23 | 2 |
-| [Stacey Augmon](players/augmost01.md) | Houston Rockets | under contract | Stacey Augmon · existing contract; signing date not recorded | 1 |
+| [Stacey Augmon](players/augmost01.md) | Free agent | under contract | Stacey Augmon · existing contract; signing date not recorded | 1 |
 | [Stephen Jackson](players/jacksst02.md) | Atlanta Hawks | under contract | Stephen Jackson · 2005-08-02 | 5 |
 | [Stephon Marbury](players/marbust01.md) | Phoenix Suns | under contract | Stephon Marbury · 2005-08-02 | 2 |
 | [Steve Blake](players/blakest01.md) | Charlotte Bobcats | under contract | Steve Blake · 2005-09-30 | 1 |
@@ -645,7 +645,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Von Wafer](players/wafervo01.md) | Indiana Pacers | under contract | Von Wafer · 2005-08-26 | 1 |
 | [Voshon Lenard](players/lenarvo01.md) | Minnesota Timberwolves | under contract | Voshon Lenard · 2005-09-23 | 3 |
 | [Wally Szczerbiak](players/szczewa02.md) | New Jersey Nets | under contract | Wally Szczerbiak · 2002-10-30 | 1 |
-| [walshma01](players/walshma01.md) | Memphis Grizzlies | under contract | walshma01 · 2005-09-02 | 1 |
+| [walshma01](players/walshma01.md) | Free agent | under contract | walshma01 · 2005-09-02 | 1 |
 | [Walt Williams](players/williwa02.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Walter McCarty](players/mccarwa01.md) | Boston Celtics | under contract | Walter McCarty · 2003-07-16 | 2 |
 | [Wang Zhizhi](players/zhizhwa01.md) | Free agent | under contract | No verified current agreement | 1 |

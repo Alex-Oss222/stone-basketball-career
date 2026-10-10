@@ -2,9 +2,9 @@
 
 # Contract | Deng Gai
 
-Known through: 2006-02-13. [Open interactive contract](gaide01.html#contract) · [Contract history](gaide01.html#contract-history)
+Known through: 2006-02-17. [Open interactive contract](gaide01.html#contract) · [Contract history](gaide01.html#contract-history)
 
-Deng Gai: under contract. Evidence cutoff: 2006-02-13.
+Deng Gai: under contract. Evidence cutoff: 2006-02-17.
 
 ## Current contract
 

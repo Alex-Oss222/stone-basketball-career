@@ -2,9 +2,9 @@
 
 # Contract | Udonis Haslem
 
-Known through: 2006-02-13. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
+Known through: 2006-02-17. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
 
-Udonis Haslem: under contract. Evidence cutoff: 2006-02-13.
+Udonis Haslem: under contract. Evidence cutoff: 2006-02-17.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Steve Blake
 
-Known through: 2006-02-13. [Open interactive contract](blakest01.html#contract) · [Contract history](blakest01.html#contract-history)
+Known through: 2006-02-17. [Open interactive contract](blakest01.html#contract) · [Contract history](blakest01.html#contract-history)
 
-Steve Blake: under contract. Evidence cutoff: 2006-02-13.
+Steve Blake: under contract. Evidence cutoff: 2006-02-17.
 
 ## Current contract
 
