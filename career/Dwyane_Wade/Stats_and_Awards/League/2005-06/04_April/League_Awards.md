@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: April 1-30, 2006
 
-As of January 26, 2006: no award decisions closed.
+As of January 27, 2006: no award decisions closed.
 
 Official award window: not recorded. Announcement date: not recorded.
 

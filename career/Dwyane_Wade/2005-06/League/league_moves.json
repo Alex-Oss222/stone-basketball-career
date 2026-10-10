@@ -3412,6 +3412,44 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.23 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-27-clear-walshma01",
+   "date": "2006-01-27",
+   "kind": "clear",
+   "player": "walshma01",
+   "bbr_id": "walshma01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "walshma01",
+    "bbr_id": "walshma01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": null,
+   "note": "cleared waivers from Phoenix Suns: a free agent",
+   "waiver": "2005-06-market-2006-01-25-waive-walshma01"
+  },
+  {
+   "id": "2005-06-market-2006-01-27-clear-robinbe01",
+   "date": "2006-01-27",
+   "kind": "clear",
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Bernard Robinson",
+    "bbr_id": "robinbe01",
+    "position": "SF",
+    "games": 66,
+    "minutes": 1303
+   },
+   "contract": null,
+   "note": "cleared waivers from Portland Trail Blazers: a free agent",
+   "waiver": "2005-06-market-2006-01-25-waive-robinbe01"
   }
  ],
  "market_days": [
@@ -3501,6 +3539,7 @@
   "2006-01-23",
   "2006-01-24",
   "2006-01-25",
-  "2006-01-26"
+  "2006-01-26",
+  "2006-01-27"
  ]
 }
