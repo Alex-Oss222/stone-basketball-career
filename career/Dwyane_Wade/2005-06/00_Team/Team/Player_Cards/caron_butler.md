@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 23 · **Height:** 6-7 · **Weight:** 228 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2006-02-15 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2006-02-16 
 
 **Contract/control:** Existing contract: 1 season(s) from 2005-06, $2,461,617 scheduled ($2,461,617 in 2005-06). (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
@@ -115,7 +115,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 67 closed Miami game(s) through 2004-09-30; 2004-05: 75 closed Miami game(s) through 2005-09-30; 2005-06: 53 closed Miami game(s) through 2006-02-15.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 67 closed Miami game(s) through 2004-09-30; 2004-05: 75 closed Miami game(s) through 2005-09-30; 2005-06: 53 closed Miami game(s) through 2006-02-16.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
