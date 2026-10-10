@@ -5,7 +5,8 @@ Sources, all read and never written here: the weekly and monthly decisions (`awa
 `runtime/award_decisions.py`), the season awards (`season_awards.json`, `runtime/season_awards.py`) with the season's
 researched award calendar (`library/<year>/league/nba_<season>_season_awards.json`), the All-Star selections
 (`all_star.json`, `runtime/all_star.py`) with their calendar, and the playoff record (`playoffs.json`,
-`runtime/playoffs.py`) for the champion. The Finals MVP is a season-award decision.
+`runtime/playoffs.py`) for the champion. The Finals MVP is a season-award decision. A corrected decision or step reads
+as it stood on the clock (`award_corrections.as_of`) and its vote line carries the correction's note.
 
 The season page carries its own season in the title and coverage line and is dated by the career clock; a closed
 season's page is dated at the end of its league year (`season_close_window_end`, June 30), after which none of its
@@ -91,13 +92,14 @@ def _month_folder(rel):
 # -- the records ---------------------------------------------------------------------------------------------------
 def model(season, root=ROOT, clock=None):
     """Everything a season's award pages show, from the source records closed on or before the clock."""
+    from .award_corrections import as_of as known_on        # a corrected item reads as recorded before its correction
     from .award_decisions import conference_names, filed_page, periods, read_decisions
     from .playoffs import read as read_playoffs
     from .seasons import dates, exists, month_weeks, read
     root = Path(root)
     clock = clock or _clock(root)
     league = root / LEAGUE / season
-    weekly = [d for d in read_decisions(root, season)["decisions"] if d["announced_on"] <= clock]
+    weekly = [known_on(d, clock) for d in read_decisions(root, season)["decisions"] if d["announced_on"] <= clock]
     filed = Counter(_month_folder(d["filed_on"]) for d in weekly)
     expected, month_awards = Counter(), {}
     confs = conference_names(season, root)
@@ -114,9 +116,9 @@ def model(season, root=ROOT, clock=None):
                                       count=n, status=status))
     calendar = {a["id"]: a for a in read(season, "season_awards", root)["awards"]} if exists(season, "season_awards", root) else {}
     record = _read(league / "season_awards.json") or {"decisions": []}
-    decided = {d["award"]: d for d in record["decisions"] if d["announced_on"] <= clock}
+    decided = {d["award"]: known_on(d, clock) for d in record["decisions"] if d["announced_on"] <= clock}
     star = _read(league / "all_star.json") or {"steps": [], "all_stars": []}
-    steps = {s["step"]: s for s in star.get("steps", []) if s["announced_on"] <= clock}
+    steps = {s["step"]: known_on(s, clock) for s in star.get("steps", []) if s["announced_on"] <= clock}
     stars = [a for a in star.get("all_stars", []) if a["selected_on"] <= clock]
     if not stars and "starters" in steps:              # starters announced, the reserves not yet: the list is the starters
         stars = [{"player": p["player"], "team": p["team"], "conference": conf, "role": "starter",
@@ -156,7 +158,9 @@ def _vote_line(m, award, open_word="Vote closes"):
         tally = f" · [tally](Season_Awards.md#{_anchor(d['name'])})" if m.links["Season_Awards.md"] else ""
         draw = (f" Equal votes at the top; the winner was drawn by the engine (`{Path(d['tie_draw']).name}`)."
                 if d.get("tie_draw") else "")
-        return f"Announced {_long(d['announced_on'])}{voters}{tally}.{draw}"
+        from .award_corrections import note                 # a corrected vote: its date and superseded names
+        fixed = f" {note(d)}" if d.get("correction") else ""
+        return f"Announced {_long(d['announced_on'])}{voters}{tally}.{draw}{fixed}"
     return f"{open_word} {_close(m, award)}{voters}."
 
 

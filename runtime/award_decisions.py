@@ -249,9 +249,11 @@ def rookies(root=ROOT, season=None):
     identity record (no bbr_id in any source) is not recognised: identity is never inferred from a result.
     The dated record name also admits a rookie whose real-roster spelling differs (diacritics: Mickael Pietrus, Darko
     Milicic, Sasha Pavlovic, Zarko Cabarkapa, Zoran Planinic and Michael Sweetney in 2003-04), so the All-Star rookie
-    pool, which compares record names, is wider than the one the 2003-04 Rookie Challenge was selected from; replayed
-    read-only it would name Jarvis Hayes for T.J. Ford. The recorded selection stands (`all_star.json` is a source
-    record)."""
+    pool, which compares record names, is wider than the one the 2003-04 Rookie Challenge was selected from: Jarvis Hayes
+    for T.J. Ford. That roster, the 2003-04 All-Rookie teams and the West Rookie of the Month shortlists decided on the
+    narrower pool are corrected as dated corrections with the user's approval (`award_corrections`); a reader dated
+    before the correction reads them as recorded (`award_corrections.as_of`). The 2003-04 Rookie of the Year vote, also
+    decided on it, stands as recorded (outside the approval)."""
     season = season or _season(root)
     names = season_names(root, season)
     return {name for bbr in first_season_ids(root, season) for name in names.get(bbr, ())}
@@ -565,11 +567,13 @@ def render_pages(root, record, clock):
         confs = conference_names(record["season"], root)
         sections = [_section(AWARDS[a], [d for d in decisions if d["award"] == a], clock, confs) for a in names]
         record_lines = ["## Decision record", ""]
+        from .award_corrections import note                     # a corrected shortlist: its date and superseded names
         for d in decisions:
             record_lines.append(f"- {d['conference']} {d['name']}, {_long(d['period_start'])} to {_long(d['period_end'])}, "
                                 f"announced {_long(d['announced_on'])}: **{d['winner'] or 'no award'}**. Ranked from closed "
                                 f"branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`)"
-                                + (f"; equal scores at the top, winner drawn by the engine (`{Path(d['tie_draw']).name}`)." if d.get("tie_draw") else "."))
+                                + (f"; equal scores at the top, winner drawn by the engine (`{Path(d['tie_draw']).name}`)." if d.get("tie_draw") else ".")
+                                + (f" {note(d)}" if d.get("correction") else ""))
         record_lines.append("")
         closed = sorted({d["announced_on"] for d in decisions})
         status = f"As of {_long(clock)}: {len(decisions)} award decision(s) closed, announced {', '.join(_long(c) for c in closed)}."

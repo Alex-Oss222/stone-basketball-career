@@ -549,13 +549,15 @@ class CardContext:
         from .seasons import dates
         for season in self.seasons:
             # Closed weekly and monthly award decisions (runtime/award_decisions.py): winners and shortlist placings.
+            # A corrected decision reads as it stood on the card date (`corrected_rows`, `award_corrections.as_of`).
             decisions = self.root / LEAGUE_DIR / season / "award_decisions.json"
             if decisions.is_file():
                 for d in json.loads(decisions.read_text(encoding="utf-8"))["decisions"]:
                     if d["announced_on"] > self.on:
                         continue
-                    for x in d["shortlist"]:
-                        self.honors.setdefault(_key(x["player"]), []).append(dict(d, rank=x["rank"], line=x))
+                    for player, row in corrected_rows(d, self.on, lambda d: [(x["player"], dict(d, rank=x["rank"], line=x))
+                                                                             for x in d["shortlist"]]):
+                        self.honors.setdefault(_key(player), []).append(row)
             # Closed All-Star selections (runtime/all_star.py): starters, reserves and injury replacements, from the
             # selection date (`all_star_honors`).
             selections = self.root / LEAGUE_DIR / season / "all_star.json"
@@ -575,12 +577,13 @@ class CardContext:
                             period_end=d["evidence_through"],
                             announced_on=d["announced_on"], award=d["award"], filed_on=(LEAGUE_DIR / season / "Season_Awards.md").as_posix(),
                             annual=True)
-                for player, name, _ in season_honors(d):
-                    self.honors.setdefault(_key(player), []).append(dict(base, name=name, rank=1))
-                for i, v in enumerate(d.get("tally", [])[:3]):
-                    who = v.get("player")
-                    if who and who not in d["winners"]:
-                        self.honors.setdefault(_key(who), []).append(dict(base, name=d["name"], rank=i + 1))
+
+                def season_rows(d, base=base):
+                    out = [(player, dict(base, name=name, rank=1)) for player, name, _ in season_honors(d)]
+                    return out + [(v["player"], dict(base, name=d["name"], rank=i + 1)) for i, v in enumerate(d.get("tally", [])[:3])
+                                  if v.get("player") and v["player"] not in d["winners"]]
+                for player, row in corrected_rows(d, self.on, season_rows):
+                    self.honors.setdefault(_key(player), []).append(row)
         # FIBA team medals (runtime/national_medals.py): every player on a medal team's locked tournament roster, from
         # the day the tournament closed, matched to the registry by NBA id; a medal without one by its dated link to
         # the one registry row of the same player (`national_medals.links`), from the later of the award and the row's
@@ -610,6 +613,36 @@ class CardContext:
     def club(self, player, signed=None):
         return club_on(player, self.on, holdings=self.holdings, departures=self.departures,
                        transactions=self.transactions, root=self.root, signed=signed)
+
+
+def corrected_rows(item, on, rows_of):
+    """[(player, honor row)] an award decision gives on the card date `on`: `rows_of` over the decision as it stood
+    then (`award_corrections.as_of`). Once a correction has been made, a row it changed carries a short note naming the
+    correction date and the superseded names (`corrected`), and a place it removed stays as a row of its own
+    (`superseded`, rank None: never counted as won)."""
+    from .award_corrections import as_of, superseded
+    now = rows_of(as_of(item, on))
+    c = item.get("correction")
+    if not c or on < c["corrected_on"]:
+        return now
+    then, day = rows_of(superseded(item)), c["corrected_on"]
+    rank = lambda rows: {(_key(p), r["name"]): r["rank"] for p, r in rows}
+    was, is_ = rank(then), rank(now)
+    out = []
+    for p, r in now:
+        old = was.get((_key(p), r["name"]))
+        if old == r["rank"]:
+            out.append((p, r))
+            continue
+        gone = [q for q, x in then if x["name"] == r["name"] and (_key(q), x["name"]) not in is_]
+        out.append((p, dict(r, corrected=f"No. {old} before the correction of {day}" if old is not None else
+                             f"corrected on {day}" + (f", superseding {', '.join(gone)}" if gone else ""))))
+    for p, r in then:
+        if (_key(p), r["name"]) not in is_:
+            new = [q for q, x in now if x["name"] == r["name"] and (_key(q), x["name"]) not in was]
+            out.append((p, dict(r, rank=None, superseded=f"Superseded by the correction of {day}"
+                                                         + (f" ({', '.join(new)} in the corrected record)" if new else ""))))
+    return out
 
 
 def all_star_honors(players, record, on, opening):
@@ -888,10 +921,16 @@ def awards_lines(ctx, p):
                 rows.append([h["name"], f"{h['period_start']} to {h['period_end']}", h["announced_on"], result,
                              f"[Tournament]({page})"])
                 continue
+            if h.get("superseded"):                    # a place a dated correction removed (`corrected_rows`)
+                rows.append([f"{h['conference']} {h['name']}".strip(), f"{h['period_start']} to {h['period_end']}",
+                             h["announced_on"], h["superseded"], f"[Decision]({page})"])
+                continue
             result = ("**Selected**" if h.get("selected") or (h.get("annual") and "Team" in h["name"]) else "**Winner**") \
                 if h["rank"] == 1 else (f"No. {h['rank']} in the vote" if h.get("annual") else f"Shortlist, No. {h['rank']}")
             if h.get("replacing"):
                 result += f", replacing {h['replacing']}"
+            if h.get("corrected"):
+                result += f" ({h['corrected']})"
             rows.append([f"{h['conference']} {h['name']}".strip(), f"{h['period_start']} to {h['period_end']}", h["announced_on"], result,
                          f"[Decision]({page})"])
         lines.append(markdown_table(["Award", "Period", "Announced", "Result", "Record"], rows).rstrip() + "\n")
