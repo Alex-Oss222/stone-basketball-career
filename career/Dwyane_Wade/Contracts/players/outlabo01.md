@@ -2,9 +2,9 @@
 
 # Contract | Bo Outlaw
 
-Known through: 2006-03-27. [Open interactive contract](outlabo01.html#contract) · [Contract history](outlabo01.html#contract-history)
+Known through: 2006-04-02. [Open interactive contract](outlabo01.html#contract) · [Contract history](outlabo01.html#contract-history)
 
-Bo Outlaw: under contract unverified. Evidence cutoff: 2006-03-27.
+Bo Outlaw: under contract unverified. Evidence cutoff: 2006-04-02.
 
 ## Current contract
 

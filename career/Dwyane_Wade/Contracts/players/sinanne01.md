@@ -2,9 +2,9 @@
 
 # Contract | Nedzad Sinanovic
 
-Known through: 2006-03-27. [Open interactive contract](sinanne01.html#contract) · [Contract history](sinanne01.html#contract-history)
+Known through: 2006-04-02. [Open interactive contract](sinanne01.html#contract) · [Contract history](sinanne01.html#contract-history)
 
-Nedzad Sinanovic: No verified contract record. Evidence cutoff: 2006-03-27.
+Nedzad Sinanovic: No verified contract record. Evidence cutoff: 2006-04-02.
 
 ## Current contract
 

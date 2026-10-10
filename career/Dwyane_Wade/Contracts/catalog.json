@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-03-27",
+  "as_of": "2006-04-02",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1418,7 +1418,7 @@
     {
       "player_id": "martida01",
       "name": "Darrick Martin",
-      "team": "New Jersey Nets",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "martida01-2005-09-23",
       "recorded_agreements": 1,
@@ -1958,7 +1958,7 @@
     {
       "player_id": "johnser02",
       "name": "Ervin Johnson",
-      "team": "Free agent",
+      "team": "Sacramento Kings",
       "status": "under contract",
       "current_contract_id": "johnser02-existing-d23ec1018463",
       "recorded_agreements": 1,
@@ -4451,7 +4451,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "Houston Rockets",
+      "team": "New Jersey Nets",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

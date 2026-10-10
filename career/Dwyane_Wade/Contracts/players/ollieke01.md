@@ -2,9 +2,9 @@
 
 # Contract | Kevin Ollie
 
-Known through: 2006-03-27. [Open interactive contract](ollieke01.html#contract) · [Contract history](ollieke01.html#contract-history)
+Known through: 2006-04-02. [Open interactive contract](ollieke01.html#contract) · [Contract history](ollieke01.html#contract-history)
 
-Kevin Ollie: under contract. Evidence cutoff: 2006-03-27.
+Kevin Ollie: under contract. Evidence cutoff: 2006-04-02.
 
 ## Current contract
 

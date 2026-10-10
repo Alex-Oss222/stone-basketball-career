@@ -2,9 +2,9 @@
 
 # Contract | Kirk Hinrich
 
-Known through: 2006-03-27. [Open interactive contract](hinriki01.html#contract) · [Contract history](hinriki01.html#contract-history)
+Known through: 2006-04-02. [Open interactive contract](hinriki01.html#contract) · [Contract history](hinriki01.html#contract-history)
 
-Kirk Hinrich: No verified contract record. Evidence cutoff: 2006-03-27.
+Kirk Hinrich: No verified contract record. Evidence cutoff: 2006-04-02.
 
 ## Current contract
 

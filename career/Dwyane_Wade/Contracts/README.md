@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-03-27. [Search the contract directory](index.html)
+Known through 2006-04-02. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -165,7 +165,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Darius Songaila](players/songada01.md) | Sacramento Kings | under contract | Darius Songaila · 2005-09-30 | 2 |
 | [Darko Milicic](players/milicda01.md) | Detroit Pistons | No verified contract record | No verified current agreement | 0 |
 | [Darrell Armstrong](players/armstda01.md) | Phoenix Suns | under contract | Darrell Armstrong · 2005-08-26 | 3 |
-| [Darrick Martin](players/martida01.md) | New Jersey Nets | under contract | Darrick Martin · 2005-09-23 | 1 |
+| [Darrick Martin](players/martida01.md) | Free agent | under contract | Darrick Martin · 2005-09-23 | 1 |
 | [Darvin Ham](players/hamda01.md) | Free agent | under contract | Darvin Ham · 2003-09-23 | 2 |
 | [David Harrison](players/davidharrison.md) | Denver Nuggets | under contract | David Harrison · 2004-07-01 | 1 |
 | [David Robinson](players/robinda01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |
@@ -225,7 +225,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Erick Dampier](players/dampier01.md) | Sacramento Kings | under contract | Erick Dampier · 2004-07-14 | 1 |
 | [Erick Strickland](players/stricer01.md) | Free agent | under contract | No verified current agreement | 2 |
 | [Erik Daniels](players/erikdaniels.md) | Free agent | under contract | No verified current agreement | 1 |
-| [Ervin Johnson](players/johnser02.md) | Free agent | under contract | Ervin Johnson · existing contract; signing date not recorded | 1 |
+| [Ervin Johnson](players/johnser02.md) | Sacramento Kings | under contract | Ervin Johnson · existing contract; signing date not recorded | 1 |
 | [Esteban Batista](players/batises01.md) | Houston Rockets | under contract | Esteban Batista · 2005-08-02 | 1 |
 | [Etan Thomas](players/thomaet01.md) | Washington Wizards | under contract | Etan Thomas · 2004-07-14 | 2 |
 | [Evan Eschmeyer](players/eschmev01.md) | Free agent | under contract | Evan Eschmeyer · 2001-08-08 | 1 |
@@ -503,7 +503,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Raja Bell](players/bellra01.md) | Philadelphia 76ers | under contract | Raja Bell · 2003-09-26 | 3 |
 | [Randy Brown](players/brownra02.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Randy Holcomb](players/holcora01.md) | Free agent | under contract | Randy Holcomb · 2005-08-12 | 1 |
-| [Randy Livingston](players/livinra01.md) | Houston Rockets | No verified contract record | No verified current agreement | 0 |
+| [Randy Livingston](players/livinra01.md) | New Jersey Nets | No verified contract record | No verified current agreement | 0 |
 | [Rashad McCants](players/mccanra01.md) | Washington Wizards | under contract | Rashad McCants · 2005-07-01 | 1 |
 | [Rashard Lewis](players/lewisra02.md) | Seattle SuperSonics | under contract | Rashard Lewis · 2005-08-02 | 2 |
 | [Rasheed Wallace](players/wallara01.md) | Portland Trail Blazers | under contract | Rasheed Wallace · 2004-08-12 | 2 |

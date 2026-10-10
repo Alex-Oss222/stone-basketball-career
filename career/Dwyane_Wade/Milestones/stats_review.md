@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2006-03-27 · Miami Heat · active
+Career date: 2006-04-02 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-76 closed game records in 2005-06 through 2006-03-27. Competitions remain separate.
+79 closed game records in 2005-06 through 2006-04-02. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 69 | 37.1 | 27.1 | 5.9 | 4.1 | 1.8 | Complete |
+| regular | 72 | 37.2 | 27.3 | 5.9 | 4.1 | 1.8 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 649 | 1143 | 0.568 | 103 | 216 | 0.477 |
+| regular | 682 | 1201 | 0.568 | 108 | 225 | 0.480 |
 
 ## Closed source games
 
@@ -106,6 +106,9 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2006-03-21 | regular | Minnesota Timberwolves | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_3/Game_4.md) |
 | 2006-03-22 | regular | Detroit Pistons | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_1.md) |
 | 2006-03-24 | regular | Charlotte Bobcats | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_2.md) |
+| 2006-03-27 | regular | Indiana Pacers | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_3.md) |
+| 2006-03-29 | regular | Toronto Raptors | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_4.md) |
+| 2006-04-01 | regular | Cleveland Cavaliers | Played | [Closed game](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.md) |
 
 ## Evidence available for decisions
 
@@ -142,11 +145,11 @@ The next declared, closed game result or a chosen completed-period review.
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-15/review.json)
-- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-15/depth_chart.json)
+- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-29/review.json)
+- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-29/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-15/rotation.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-29/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
@@ -227,4 +230,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/03_March/Week_3/Game_4.md)
 - [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_4.md)
+- [Closed game](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

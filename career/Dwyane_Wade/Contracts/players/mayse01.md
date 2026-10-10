@@ -2,9 +2,9 @@
 
 # Contract | Sean May
 
-Known through: 2006-03-27. [Open interactive contract](mayse01.html#contract) · [Contract history](mayse01.html#contract-history)
+Known through: 2006-04-02. [Open interactive contract](mayse01.html#contract) · [Contract history](mayse01.html#contract-history)
 
-Sean May: under contract. Evidence cutoff: 2006-03-27.
+Sean May: under contract. Evidence cutoff: 2006-04-02.
 
 ## Current contract
 
