@@ -94,8 +94,10 @@ class LiveCardHonorTests(unittest.TestCase):
             with self.subTest(award=a["id"]):
                 self.assertIn(f"| East All-Star ({a['role']}) | {a['period_start']} to {a['period_end']} | {a['awarded_on']} | "
                               f"**Selected** | [Decision](../{a['season']}/All_Star.md#all-stars) |", md)
-        nba = [a for a in awards if a.get("competition") in ("regular", "playoff") and a["awarded_on"] <= self.ctx.on]
-        self.assertIn(f"from closed award decisions ({len(nba)} won)", md)
+        # Every individual decision the card lists counts as won: NBA honors and All-Star weekend MVPs (exhibitions).
+        won = [a for a in awards if a.get("competition") in ("regular", "playoff", "all_star", "rookie_challenge")
+               and a["awarded_on"] <= self.ctx.on]
+        self.assertIn(f"from closed award decisions ({len(won)} won)", md)
         self.assertEqual(md.count("All-Star ("), len(stars))
         self.assertIn("Season honors: East All-Star (", html)
 

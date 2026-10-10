@@ -43,6 +43,11 @@ def scratch_root():
     _farm(ROOT, tmp, {".git": None, "career": {"Dwyane_Wade": {
         **season_dirs, "awards.json": "copy", "Stats_and_Awards": {"League": league}}},
         "library": {"all_star": {"engine": {ENGINE_COPY: "copy"}}}})
+    # The copied awards file as it stood before any weekend game was played: the pipeline writes its exhibition honors.
+    awards = tmp / "career/Dwyane_Wade/awards.json"
+    data = json.loads(awards.read_text(encoding="utf-8"))
+    data["awards"] = [a for a in data["awards"] if a.get("competition") not in ("all_star", "rookie_challenge")]
+    awards.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return tmp
 
 
