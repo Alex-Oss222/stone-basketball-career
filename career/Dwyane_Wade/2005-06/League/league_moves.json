@@ -2419,6 +2419,50 @@
    "bbr_id": "hillgr01",
    "from": "Minnesota Timberwolves",
    "to": "Boston Celtics"
+  },
+  {
+   "id": "2005-06-market-2005-12-20-rest_of_season-profila01",
+   "date": "2005-12-20",
+   "kind": "rest_of_season",
+   "player": "Laron Profit",
+   "bbr_id": "profila01",
+   "from": null,
+   "to": "Boston Celtics",
+   "role": {
+    "player_id": "Laron Profit",
+    "bbr_id": "profila01",
+    "position": "SG",
+    "games": 25,
+    "minutes": 279
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.93 x fit"
+  },
+  {
+   "id": "2005-06-market-2005-12-20-rest_of_season-houseed01",
+   "date": "2005-12-20",
+   "kind": "rest_of_season",
+   "player": "Eddie House",
+   "bbr_id": "houseed01",
+   "from": null,
+   "to": "Boston Celtics",
+   "role": {
+    "player_id": "Eddie House",
+    "bbr_id": "houseed01",
+    "position": "PG",
+    "games": 81,
+    "minutes": 1421
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.92 x fit"
   }
  ],
  "market_days": [
@@ -2470,6 +2514,7 @@
   "2005-12-16",
   "2005-12-17",
   "2005-12-18",
-  "2005-12-19"
+  "2005-12-19",
+  "2005-12-20"
  ]
 }
