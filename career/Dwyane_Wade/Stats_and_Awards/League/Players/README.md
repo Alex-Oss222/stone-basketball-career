@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2005-12-11**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2005-12-12**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 118 players</summary>
@@ -64,7 +64,7 @@ Card date: **2005-12-11**. 651 registry players, one Markdown card and one inter
 | [Jay Williams](willija03.md) | Free agent | 24 | sourced | [open](willija03.html) |
 | [Jeff McInnis](mcinnje01.md) | Orlando Magic | 31 | sourced | [open](mcinnje01.html) |
 | [John Lucas III](lucasjo02.md) | New Jersey Nets | 23 | silhouette | [open](lucasjo02.html) |
-| [John Salmons](salmojo01.md) | Philadelphia 76ers | 25 | sourced | [open](salmojo01.html) |
+| [John Salmons](salmojo01.md) | Philadelphia 76ers | 26 | sourced | [open](salmojo01.html) |
 | [John Stockton](stockjo01.md) | Free agent | 43 | sourced | [open](stockjo01.html) |
 | [Juan Dixon](dixonju01.md) | Washington Wizards | 27 | sourced | [open](dixonju01.html) |
 | [Junior Harrington](harriju01.md) | Free agent | 25 | silhouette | [open](harriju01.html) |

@@ -2,9 +2,9 @@
 
 # Contract | Donell Taylor
 
-Known through: 2005-12-11. [Open interactive contract](taylodo01.html#contract) · [Contract history](taylodo01.html#contract-history)
+Known through: 2005-12-12. [Open interactive contract](taylodo01.html#contract) · [Contract history](taylodo01.html#contract-history)
 
-Donell Taylor: under contract. Evidence cutoff: 2005-12-11.
+Donell Taylor: under contract. Evidence cutoff: 2005-12-12.
 
 ## Current contract
 

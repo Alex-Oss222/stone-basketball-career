@@ -1,0 +1,39 @@
+{
+ "id": "2005-06-league-trade-2005-12-12-garcifr01-millean02-patteru01",
+ "date": "2005-12-12",
+ "clubs": [
+  "Denver Nuggets",
+  "Portland Trail Blazers"
+ ],
+ "a": {
+  "club": "Denver Nuggets",
+  "sends": [
+   "Andre Miller"
+  ],
+  "bbr_ids": [
+   "millean02"
+  ],
+  "salary": 8528333
+ },
+ "b": {
+  "club": "Portland Trail Blazers",
+  "sends": [
+   "Ruben Patterson",
+   "Francisco García"
+  ],
+  "bbr_ids": [
+   "patteru01",
+   "garcifr01"
+  ],
+  "salary": 7606240
+ },
+ "gain": {
+  "Denver Nuggets": 0.143,
+  "Portland Trail Blazers": 0.123
+ },
+ "accept": {
+  "Denver Nuggets": 0.888,
+  "Portland Trail Blazers": 0.828
+ },
+ "both": 0.735264
+}

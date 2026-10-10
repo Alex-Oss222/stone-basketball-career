@@ -2,9 +2,9 @@
 
 # Contract | Sam Cassell
 
-Known through: 2005-12-11. [Open interactive contract](cassesa01.html#contract) · [Contract history](cassesa01.html#contract-history)
+Known through: 2005-12-12. [Open interactive contract](cassesa01.html#contract) · [Contract history](cassesa01.html#contract-history)
 
-Sam Cassell: released. Evidence cutoff: 2005-12-11.
+Sam Cassell: released. Evidence cutoff: 2005-12-12.
 
 ## Current contract
 

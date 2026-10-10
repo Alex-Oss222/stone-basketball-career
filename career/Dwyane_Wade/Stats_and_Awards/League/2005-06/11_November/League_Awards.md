@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: November 1-30, 2005
 
-As of December 5, 2005: 4 award decision(s) closed, announced December 2, 2005.
+As of December 12, 2005: 4 award decision(s) closed, announced December 2, 2005.
 
 Official award window and announcement date: listed with each decision below.
 

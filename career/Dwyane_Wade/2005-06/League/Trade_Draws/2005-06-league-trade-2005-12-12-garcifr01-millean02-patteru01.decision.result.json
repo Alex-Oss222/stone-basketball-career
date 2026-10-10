@@ -1,0 +1,12 @@
+{
+ "date": "2005-12-12",
+ "decider": "Denver Nuggets and Portland Trail Blazers front offices (engine draw)",
+ "event_id": "2005-06-league-trade-2005-12-12-garcifr01-millean02-patteru01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.735264,
+  "decline": 0.264736
+ },
+ "outcome": "decline",
+ "question": "Do Denver Nuggets and Portland Trail Blazers trade Andre Miller for Ruben Patterson and Francisco Garc\u00eda?"
+}

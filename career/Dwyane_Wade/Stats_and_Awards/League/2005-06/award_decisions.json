@@ -731,6 +731,110 @@
     }
    ],
    "winner": "Dirk Nowitzki"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-12-05-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-12-05",
+   "period_end": "2005-12-11",
+   "announced_on": "2005-12-12",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 22.0,
+     "reb": 6.2,
+     "ast": 4.2,
+     "game_score": 20.25,
+     "score": 90.0,
+     "rank": 1
+    },
+    {
+     "player": "Zydrunas Ilgauskas",
+     "team": "Philadelphia 76ers",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 25.0,
+     "reb": 8.7,
+     "ast": 0.3,
+     "game_score": 22.47,
+     "score": 73.4,
+     "rank": 2
+    },
+    {
+     "player": "Kirk Hinrich",
+     "team": "Chicago Bulls",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 19.8,
+     "reb": 3.5,
+     "ast": 9.0,
+     "game_score": 16.62,
+     "score": 69.5,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwyane Wade"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-12-05-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-12-05",
+   "period_end": "2005-12-11",
+   "announced_on": "2005-12-12",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 26.5,
+     "reb": 10.5,
+     "ast": 2.8,
+     "game_score": 21.88,
+     "score": 93.5,
+     "rank": 1
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 29.0,
+     "reb": 17.3,
+     "ast": 3.0,
+     "game_score": 27.07,
+     "score": 87.2,
+     "rank": 2
+    },
+    {
+     "player": "Stephon Marbury",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 23.0,
+     "reb": 4.0,
+     "ast": 7.5,
+     "game_score": 18.93,
+     "score": 81.7,
+     "rank": 3
+    }
+   ],
+   "winner": "Dirk Nowitzki"
   }
  ]
 }

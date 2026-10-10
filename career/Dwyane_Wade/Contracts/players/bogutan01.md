@@ -2,9 +2,9 @@
 
 # Contract | Andrew Bogut
 
-Known through: 2005-12-11. [Open interactive contract](bogutan01.html#contract) · [Contract history](bogutan01.html#contract-history)
+Known through: 2005-12-12. [Open interactive contract](bogutan01.html#contract) · [Contract history](bogutan01.html#contract-history)
 
-Andrew Bogut: under contract. Evidence cutoff: 2005-12-11.
+Andrew Bogut: under contract. Evidence cutoff: 2005-12-12.
 
 ## Current contract
 

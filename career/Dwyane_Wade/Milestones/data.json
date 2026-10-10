@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-12-11",
+  "as_of": "2005-12-12",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-12-11"
+              "2005-12-12"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2005-12-11",
+              "2005-12-12",
               "Current checkpoint",
               "2005-12-11-washington-wizards-at-miami-heat",
               "Recorded",
@@ -94,22 +94,22 @@
               }
             ],
             [
-              "2005-12-12",
-              "League awards announced: Player of the Week",
-              "League (closed results only)",
-              "Scheduled",
-              {
-                "label": "Awards",
-                "href": "#calendar"
-              }
-            ],
-            [
               "2005-12-13",
               "Next Miami game, at Chicago Bulls",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
                 "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2005-12-19",
+              "League awards announced: Player of the Week",
+              "League (closed results only)",
+              "Scheduled",
+              {
+                "label": "Awards",
                 "href": "#calendar"
               }
             ],
@@ -584,7 +584,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-11"
+          "value": "2005-12-12"
         },
         {
           "label": "Team",
@@ -930,7 +930,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-11"
+          "value": "2005-12-12"
         },
         {
           "label": "Team",
@@ -1313,7 +1313,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-11"
+          "value": "2005-12-12"
         },
         {
           "label": "Team",
@@ -1699,7 +1699,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-11"
+          "value": "2005-12-12"
         },
         {
           "label": "Team",
@@ -2020,7 +2020,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-11"
+          "value": "2005-12-12"
         },
         {
           "label": "Team",
@@ -2332,7 +2332,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-11"
+          "value": "2005-12-12"
         },
         {
           "label": "Team",
@@ -2653,7 +2653,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-11"
+          "value": "2005-12-12"
         },
         {
           "label": "Team",
@@ -3022,7 +3022,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-11"
+          "value": "2005-12-12"
         },
         {
           "label": "Team",
@@ -3039,7 +3039,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "28 closed game records in 2005-06 through 2005-12-11. Competitions remain separate.",
+      "summary": "28 closed game records in 2005-06 through 2005-12-12. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3639,7 +3639,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-11"
+          "value": "2005-12-12"
         },
         {
           "label": "Team",
