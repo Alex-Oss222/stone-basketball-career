@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-02-06. [Search the contract directory](index.html)
+Known through 2006-02-09. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -385,7 +385,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Lee Nailon](players/nailole01.md) | Denver Nuggets | under contract | Lee Nailon · 2005-09-09 | 3 |
 | [Leon Smith](players/smithle01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Linas Kleiza](players/kleizli01.md) | New Jersey Nets | under contract | Linas Kleiza · 2005-08-19 | 1 |
-| [Lindsey Hunter](players/hunteli01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
+| [Lindsey Hunter](players/hunteli01.md) | Golden State Warriors | under contract unverified | No verified current agreement | 0 |
 | [Linton Johnson](players/johnsli01.md) | San Antonio Spurs | under contract | Linton Johnson · 2005-09-23 | 1 |
 | [Lionel Chalmers](players/lionelchalmers.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Lonny Baxter](players/baxtelo01.md) | Toronto Raptors | under contract | Lonny Baxter · 2005-08-05 | 2 |
@@ -645,7 +645,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Von Wafer](players/wafervo01.md) | Indiana Pacers | under contract | Von Wafer · 2005-08-26 | 1 |
 | [Voshon Lenard](players/lenarvo01.md) | Minnesota Timberwolves | under contract | Voshon Lenard · 2005-09-23 | 3 |
 | [Wally Szczerbiak](players/szczewa02.md) | New Jersey Nets | under contract | Wally Szczerbiak · 2002-10-30 | 1 |
-| [walshma01](players/walshma01.md) | Cleveland Cavaliers | under contract | walshma01 · 2005-09-02 | 1 |
+| [walshma01](players/walshma01.md) | Memphis Grizzlies | under contract | walshma01 · 2005-09-02 | 1 |
 | [Walt Williams](players/williwa02.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Walter McCarty](players/mccarwa01.md) | Boston Celtics | under contract | Walter McCarty · 2003-07-16 | 2 |
 | [Wang Zhizhi](players/zhizhwa01.md) | Free agent | under contract | No verified current agreement | 1 |

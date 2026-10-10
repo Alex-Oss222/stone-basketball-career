@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `butlera01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-02-06 · **Club on this date:** Free agent · **Basis:** unsigned on 2006-02-06 in the 2005-06 league · **League:** NBA  
+**Card date:** 2006-02-09 · **Club on this date:** Free agent · **Basis:** unsigned on 2006-02-09 in the 2005-06 league · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #45 · **Born:** 1979-05-23 · **Age on card date:** 26  
 **Registry ID:** `butlera01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/butlera01.html) · ESPN ID 1767
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `butler
 
 ## Simulated statistics
 
-As of **2006-02-06**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-02-09**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -119,4 +119,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2006-02-06. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2006-02-09. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

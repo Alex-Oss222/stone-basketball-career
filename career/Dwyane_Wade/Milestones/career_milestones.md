@@ -2,7 +2,7 @@
 
 # Dwyane Wade | Career milestones
 
-Career date: 2006-02-06. Born 1984-01-17. 199 regular-season and 14 playoff games closed.
+Career date: 2006-02-09. Born 1984-01-17. 200 regular-season and 14 playoff games closed.
 
 Milestones count closed regular-season games (the NBA convention); playoff milestones are their own record and preseason never counts. Each is dated by the game that reached it, with his age on that day. [Season tracker](calendar.md) · [All milestones](README.md)
 
@@ -38,19 +38,20 @@ Milestones count closed regular-season games (the NBA convention); playoff miles
 | 1,000 career free throws made | 2005-12-25 | 21 years, 342 days | 2005-06 | 179 | [Los Angeles Lakers](../2005-06/06_Regular_Season/12_December/Week_4/Game_2.md) | 1,009 |
 | 1,000 career rebounds | 2006-01-11 | 21 years, 359 days | 2005-06 | 187 | [Golden State Warriors](../2005-06/06_Regular_Season/01_January/Week_2/Game_2.md) | 1,002 |
 | 4,000 career points | 2006-01-20 | 22 years, 3 days | 2005-06 | 191 | [San Antonio Spurs](../2005-06/06_Regular_Season/01_January/Week_3/Game_2.md) | 4,019 |
+| 200 career games played | 2006-02-06 | 22 years, 20 days | 2005-06 | 200 | [Boston Celtics](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md) | 200 |
 
 ## Next regular-season milestones
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 5,000 career points | 4,249 | 751 |
-| 1,500 career rebounds | 1,074 | 426 |
-| 1,000 career assists | 838 | 162 |
-| 500 career steals | 320 | 180 |
-| 250 career blocks | 223 | 27 |
-| 250 career three-pointers made | 231 | 19 |
-| 2,000 career free throws made | 1,136 | 864 |
-| 200 career games played | 199 | 1 |
+| 5,000 career points | 4,266 | 734 |
+| 1,500 career rebounds | 1,079 | 421 |
+| 1,000 career assists | 840 | 160 |
+| 500 career steals | 321 | 179 |
+| 250 career blocks | 224 | 26 |
+| 250 career three-pointers made | 232 | 18 |
+| 2,000 career free throws made | 1,140 | 860 |
+| 300 career games played | 200 | 100 |
 
 ## Playoff milestones reached
 

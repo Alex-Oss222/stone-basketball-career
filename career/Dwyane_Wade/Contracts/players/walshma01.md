@@ -2,9 +2,9 @@
 
 # Contract | walshma01
 
-Known through: 2006-02-06. [Open interactive contract](walshma01.html#contract) · [Contract history](walshma01.html#contract-history)
+Known through: 2006-02-09. [Open interactive contract](walshma01.html#contract) · [Contract history](walshma01.html#contract-history)
 
-walshma01: under contract. Evidence cutoff: 2006-02-06.
+walshma01: under contract. Evidence cutoff: 2006-02-09.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | walshma01 |
-| Club / rights baseline | Cleveland Cavaliers |
+| Club / rights baseline | Memphis Grizzlies |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

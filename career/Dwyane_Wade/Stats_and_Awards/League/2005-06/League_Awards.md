@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of February 8, 2006: 40 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
+As of February 9, 2006: 40 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
 
 ## Individual awards
 
@@ -126,7 +126,7 @@ These are separate decisions, not consequences of the regular-season award vote.
 
 ### All-Star selections
 
-10 All-Stars: starters announced February 2, 2006 (fan ballot). [All-Star selections](All_Star.md#all-stars)
+24 All-Stars: starters announced February 2, 2006 (fan ballot), reserves announced February 9, 2006 (head coaches). [All-Star selections](All_Star.md#all-stars)
 
 | Conference | Role | Player | Team | Selected |
 | --- | --- | --- | --- | --- |
@@ -135,11 +135,25 @@ These are separate decisions, not consequences of the regular-season award vote.
 | East | Starter | Zydrunas Ilgauskas | Philadelphia 76ers | February 2, 2006 |
 | East | Starter | Dwyane Wade | Miami Heat | February 2, 2006 |
 | East | Starter | Allen Iverson | Philadelphia 76ers | February 2, 2006 |
+| East | Reserve | Paul Pierce | Boston Celtics | February 9, 2006 |
+| East | Reserve | Chauncey Billups | Detroit Pistons | February 9, 2006 |
+| East | Reserve | Chris Bosh | Toronto Raptors | February 9, 2006 |
+| East | Reserve | Boris Diaw | Atlanta Hawks | February 9, 2006 |
+| East | Reserve | Primož Brezec | Toronto Raptors | February 9, 2006 |
+| East | Reserve | Jason Terry | Atlanta Hawks | February 9, 2006 |
+| East | Reserve | Vince Carter | Toronto Raptors | February 9, 2006 |
 | West | Starter | Kevin Garnett | Minnesota Timberwolves | February 2, 2006 |
 | West | Starter | Kobe Bryant | Los Angeles Lakers | February 2, 2006 |
 | West | Starter | Shaquille O'Neal | Los Angeles Lakers | February 2, 2006 |
 | West | Starter | Dirk Nowitzki | Dallas Mavericks | February 2, 2006 |
 | West | Starter | Ray Allen | Seattle SuperSonics | February 2, 2006 |
+| West | Reserve | Shawn Marion | Phoenix Suns | February 9, 2006 |
+| West | Reserve | Joe Johnson | Phoenix Suns | February 9, 2006 |
+| West | Reserve | Mike Bibby | Sacramento Kings | February 9, 2006 |
+| West | Reserve | Elton Brand | Los Angeles Clippers | February 9, 2006 |
+| West | Reserve | Brad Miller | Sacramento Kings | February 9, 2006 |
+| West | Reserve | Chris Paul | Utah Jazz | February 9, 2006 |
+| West | Reserve | Tony Parker | San Antonio Spurs | February 9, 2006 |
 
 ### NBA champion
 

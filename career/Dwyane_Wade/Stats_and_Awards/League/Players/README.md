@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-02-06**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-02-09**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -61,7 +61,7 @@ Card date: **2006-02-06**. 653 registry players, one Markdown card and one inter
 | [Jacque Vaughn](vaughja01.md) | Seattle SuperSonics | 30 | sourced | [open](vaughja01.html) |
 | [Jamaal Tinsley](tinslja01.md) | Indiana Pacers | 27 | sourced | [open](tinslja01.html) |
 | [Jamal Crawford](crawfja01.md) | Chicago Bulls | 25 | sourced | [open](crawfja01.html) |
-| [Jameer Nelson](jameernelson.md) | Seattle SuperSonics | 23 | silhouette | [open](jameernelson.html) |
+| [Jameer Nelson](jameernelson.md) | Seattle SuperSonics | 24 | silhouette | [open](jameernelson.html) |
 | [Jamison Brewer](breweja01.md) | Free agent | 25 | silhouette | [open](breweja01.html) |
 | [Jannero Pargo](pargoja01.md) | Charlotte Bobcats | 26 | sourced | [open](pargoja01.html) |
 | [Jason Hart](hartja01.md) | Denver Nuggets | 27 | silhouette | [open](hartja01.html) |
@@ -83,7 +83,7 @@ Card date: **2006-02-06**. 653 registry players, one Markdown card and one inter
 | [Kevin Ollie](ollieke01.md) | Cleveland Cavaliers | 33 | sourced | [open](ollieke01.html) |
 | [Kirk Hinrich](hinriki01.md) | Chicago Bulls | 25 | sourced | [open](hinriki01.html) |
 | [Larry Hughes](hughela01.md) | Indiana Pacers | 27 | sourced | [open](hughela01.html) |
-| [Lindsey Hunter](hunteli01.md) | Free agent | 35 | sourced | [open](hunteli01.html) |
+| [Lindsey Hunter](hunteli01.md) | Golden State Warriors | 35 | sourced | [open](hunteli01.html) |
 | [Lionel Chalmers](lionelchalmers.md) | Free agent | 25 | silhouette | [open](lionelchalmers.html) |
 | [Lou Williams](willilo02.md) | Los Angeles Lakers | 19 | silhouette | [open](willilo02.html) |
 | [Luis Flores](luisflores.md) | Free agent | 24 | silhouette | [open](luisflores.html) |
@@ -92,11 +92,11 @@ Card date: **2006-02-06**. 653 registry players, one Markdown card and one inter
 | [Mark Jackson](jacksma01.md) | Free agent | 40 | sourced | [open](jacksma01.html) |
 | [Mateen Cleaves](cleavma01.md) | Utah Jazz | 28 | silhouette | [open](cleavma01.html) |
 | [Maurice Baker](bakerma01.md) | Free agent | 26 | silhouette | [open](bakerma01.html) |
-| [Mickael Pietrus](pietrmi01.md) | Charlotte Bobcats | 23 | sourced | [open](pietrmi01.html) |
+| [Mickael Pietrus](pietrmi01.md) | Charlotte Bobcats | 24 | sourced | [open](pietrmi01.html) |
 | [Mike Bibby](bibbymi01.md) | Sacramento Kings | 27 | sourced | [open](bibbymi01.html) |
 | [Mike James](jamesmi01.md) | Miami Heat | 30 | sourced | [open](jamesmi01.html) |
 | [Mike Wilks](wilksmi01.md) | Miami Heat | 26 | sourced | [open](wilksmi01.html) |
-| [Milt Palacio](palacmi01.md) | New York Knicks | 27 | sourced | [open](palacmi01.html) |
+| [Milt Palacio](palacmi01.md) | New York Knicks | 28 | sourced | [open](palacmi01.html) |
 | [Mo Williams](willima01.md) | Cleveland Cavaliers | 23 | sourced | [open](willima01.html) |
 | [Moochie Norris](norrimo01.md) | Charlotte Bobcats | 32 | sourced | [open](norrimo01.html) |
 | [Nate Robinson](robinna01.md) | Seattle SuperSonics | 21 | silhouette | [open](robinna01.html) |
@@ -126,7 +126,7 @@ Card date: **2006-02-06**. 653 registry players, one Markdown card and one inter
 | [Steve Blake](blakest01.md) | Charlotte Bobcats | 25 | sourced | [open](blakest01.html) |
 | [Steve Francis](francst01.md) | Houston Rockets | 28 | sourced | [open](francst01.html) |
 | [Steve Kerr](kerrst01.md) | Free agent | 40 | sourced | [open](kerrst01.html) |
-| [Steve Nash](nashst01.md) | Dallas Mavericks | 31 | sourced | [open](nashst01.html) |
+| [Steve Nash](nashst01.md) | Dallas Mavericks | 32 | sourced | [open](nashst01.html) |
 | [T.J. Ford](fordtj01.md) | Minnesota Timberwolves | 22 | sourced | [open](fordtj01.html) |
 | [Tierre Brown](brownti01.md) | Free agent | 26 | silhouette | [open](brownti01.html) |
 | [Tim Hardaway](hardati01.md) | Free agent | 39 | sourced | [open](hardati01.html) |
@@ -400,7 +400,7 @@ Card date: **2006-02-06**. 653 registry players, one Markdown card and one inter
 | [Yaroslav Korolev](korolya01.md) | Denver Nuggets | 18 | silhouette | [open](korolya01.html) |
 | [Zarko Cabarkapa](cabarza01.md) | Portland Trail Blazers | 24 | sourced | [open](cabarza01.html) |
 | [fitchge01](fitchge01.md) | Free agent | 23 | silhouette | [open](fitchge01.html) |
-| [walshma01](walshma01.md) | Cleveland Cavaliers | 23 | silhouette | [open](walshma01.html) |
+| [walshma01](walshma01.md) | Memphis Grizzlies | 23 | silhouette | [open](walshma01.html) |
 
 </details>
 
@@ -476,10 +476,10 @@ Card date: **2006-02-06**. 653 registry players, one Markdown card and one inter
 | [Jermaine O'Neal](onealje01.md) | Indiana Pacers | 27 | sourced | [open](onealje01.html) |
 | [Jerome Beasley](beaslje01.md) | Free agent | 25 | sourced | [open](beaslje01.html) |
 | [Jerome Williams](willije01.md) | Free agent | 32 | sourced | [open](willije01.html) |
-| [John Wallace](wallajo01.md) | Free agent | 31 | silhouette | [open](wallajo01.html) |
+| [John Wallace](wallajo01.md) | Free agent | 32 | silhouette | [open](wallajo01.html) |
 | [Josh Davis](davisjo02.md) | Phoenix Suns | 25 | silhouette | [open](davisjo02.html) |
 | [Josh Powell](poweljo01.md) | Detroit Pistons | 23 | silhouette | [open](poweljo01.html) |
-| [Juwan Howard](howarju01.md) | Los Angeles Clippers | 32 | sourced | [open](howarju01.html) |
+| [Juwan Howard](howarju01.md) | Los Angeles Clippers | 33 | sourced | [open](howarju01.html) |
 | [Kaniel Dickens](dickeka01.md) | Free agent | 27 | silhouette | [open](dickeka01.html) |
 | [Karl Malone](malonka01.md) | Free agent | 42 | sourced | [open](malonka01.html) |
 | [Keith Van Horn](vanhoke01.md) | San Antonio Spurs | 30 | sourced | [open](vanhoke01.html) |
@@ -561,7 +561,7 @@ Card date: **2006-02-06**. 653 registry players, one Markdown card and one inter
 | [Adonal Foyle](foylead01.md) | Dallas Mavericks | 30 | sourced | [open](foylead01.html) |
 | [Alan Henderson](hendeal01.md) | Dallas Mavericks | 33 | silhouette | [open](hendeal01.html) |
 | [Aleksandar Radojević](aleksandarradojevi.md) | Free agent | 29 | silhouette | [open](aleksandarradojevi.html) |
-| [Alonzo Mourning](mournal01.md) | Minnesota Timberwolves | 35 | silhouette | [open](mournal01.html) |
+| [Alonzo Mourning](mournal01.md) | Minnesota Timberwolves | 36 | silhouette | [open](mournal01.html) |
 | [Amal McCaskill](mccasam01.md) | Free agent | 32 | silhouette | [open](mccasam01.html) |
 | [Andreas Glyniadakis](glynian01.md) | Free agent | 24 | sourced | [open](glynian01.html) |
 | [Andrew DeClercq](declean01.md) | Free agent | 33 | silhouette | [open](declean01.html) |
@@ -592,7 +592,7 @@ Card date: **2006-02-06**. 653 registry players, one Markdown card and one inter
 | [Curtis Borchardt](borchcu01.md) | Free agent | 25 | silhouette | [open](borchcu01.html) |
 | [D.J. Mbenga](djmbenga.md) | Chicago Bulls | 25 | silhouette | [open](djmbenga.html) |
 | [Dale Davis](davisda01.md) | Toronto Raptors | 36 | silhouette | [open](davisda01.html) |
-| [Dalibor Bagaric](bagarda01.md) | Free agent | 25 | sourced | [open](bagarda01.html) |
+| [Dalibor Bagaric](bagarda01.md) | Free agent | 26 | sourced | [open](bagarda01.html) |
 | [Dan Gadzuric](gadzuda01.md) | Milwaukee Bucks | 28 | sourced | [open](gadzuda01.html) |
 | [Daniel Santiago](santida01.md) | Free agent | 29 | silhouette | [open](santida01.html) |
 | [Darko Milicic](milicda01.md) | Detroit Pistons | 20 | sourced | [open](milicda01.html) |

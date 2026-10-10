@@ -660,7 +660,700 @@
      ]
     }
    }
+  },
+  {
+   "step": "reserves",
+   "announced_on": "2006-02-09",
+   "evidence_through": "2006-02-08",
+   "electorate": "the conference's head coaches, never their own players",
+   "lens": [
+    0.2,
+    0.5
+   ],
+   "conferences": {
+    "East": {
+     "reserves": [
+      {
+       "player": "Paul Pierce",
+       "bbr_id": "piercpa01",
+       "team": "Boston Celtics",
+       "position": "G",
+       "games": 48,
+       "club_games": 49,
+       "pts": 28.5,
+       "reb": 7.1,
+       "ast": 5.4,
+       "game_score": 22.31,
+       "club_pct": 0.592,
+       "ballots": 14
+      },
+      {
+       "player": "Chauncey Billups",
+       "bbr_id": "billuch01",
+       "team": "Detroit Pistons",
+       "position": "G",
+       "games": 48,
+       "club_games": 48,
+       "pts": 20.5,
+       "reb": 3.6,
+       "ast": 6.9,
+       "game_score": 18.49,
+       "club_pct": 0.729,
+       "ballots": 14
+      },
+      {
+       "player": "Chris Bosh",
+       "bbr_id": "boshch01",
+       "team": "Toronto Raptors",
+       "position": "F",
+       "games": 37,
+       "club_games": 49,
+       "pts": 23.2,
+       "reb": 10.4,
+       "ast": 3.6,
+       "game_score": 20.38,
+       "club_pct": 0.755,
+       "ballots": 14
+      },
+      {
+       "player": "Boris Diaw",
+       "bbr_id": "diawbo01",
+       "team": "Atlanta Hawks",
+       "position": "F",
+       "games": 46,
+       "club_games": 47,
+       "pts": 16.5,
+       "reb": 6.2,
+       "ast": 5.4,
+       "game_score": 14.86,
+       "club_pct": 0.702,
+       "ballots": 14
+      },
+      {
+       "player": "Primož Brezec",
+       "bbr_id": "brezepr01",
+       "team": "Toronto Raptors",
+       "position": "C",
+       "games": 48,
+       "club_games": 49,
+       "pts": 11.9,
+       "reb": 5.1,
+       "ast": 0.8,
+       "game_score": 8.0,
+       "club_pct": 0.755,
+       "ballots": 11
+      },
+      {
+       "player": "Jason Terry",
+       "bbr_id": "terryja01",
+       "team": "Atlanta Hawks",
+       "position": "G",
+       "games": 46,
+       "club_games": 47,
+       "pts": 23.5,
+       "reb": 3.2,
+       "ast": 4.9,
+       "game_score": 17.27,
+       "club_pct": 0.702,
+       "ballots": 14
+      },
+      {
+       "player": "Vince Carter",
+       "bbr_id": "cartevi01",
+       "team": "Toronto Raptors",
+       "position": "G",
+       "games": 44,
+       "club_games": 49,
+       "pts": 20.8,
+       "reb": 5.6,
+       "ast": 5.5,
+       "game_score": 15.93,
+       "club_pct": 0.755,
+       "ballots": 14
+      }
+     ],
+     "coach_order": [
+      {
+       "player": "Paul Pierce",
+       "position": "G",
+       "team": "Boston Celtics",
+       "ballots": 14
+      },
+      {
+       "player": "Chauncey Billups",
+       "position": "G",
+       "team": "Detroit Pistons",
+       "ballots": 14
+      },
+      {
+       "player": "Jason Terry",
+       "position": "G",
+       "team": "Atlanta Hawks",
+       "ballots": 14
+      },
+      {
+       "player": "Chris Bosh",
+       "position": "F",
+       "team": "Toronto Raptors",
+       "ballots": 14
+      },
+      {
+       "player": "Vince Carter",
+       "position": "G",
+       "team": "Toronto Raptors",
+       "ballots": 14
+      },
+      {
+       "player": "Boris Diaw",
+       "position": "F",
+       "team": "Atlanta Hawks",
+       "ballots": 14
+      },
+      {
+       "player": "Primož Brezec",
+       "position": "C",
+       "team": "Toronto Raptors",
+       "ballots": 11
+      },
+      {
+       "player": "Ben Wallace",
+       "position": "C",
+       "team": "Detroit Pistons",
+       "ballots": 4
+      },
+      {
+       "player": "Sam Cassell",
+       "position": "G",
+       "team": "Detroit Pistons",
+       "ballots": 2
+      },
+      {
+       "player": "Stephen Jackson",
+       "position": "G",
+       "team": "Atlanta Hawks",
+       "ballots": 1
+      },
+      {
+       "player": "Michael Redd",
+       "position": "G",
+       "team": "Milwaukee Bucks",
+       "ballots": 1
+      },
+      {
+       "player": "Hedo Turkoglu",
+       "position": "F",
+       "team": "Toronto Raptors",
+       "ballots": 1
+      },
+      {
+       "player": "Mehmet Okur",
+       "position": "F",
+       "team": "Miami Heat",
+       "ballots": 1
+      }
+     ],
+     "voters": [
+      {
+       "coach": "Bernie Bickerstaff",
+       "team": "Charlotte Bobcats"
+      },
+      {
+       "coach": "Brian Hill",
+       "team": "Orlando Magic"
+      },
+      {
+       "coach": "Doc Rivers",
+       "team": "Boston Celtics"
+      },
+      {
+       "coach": "Eddie Jordan",
+       "team": "Washington Wizards"
+      },
+      {
+       "coach": "Erik Spoelstra",
+       "team": "Miami Heat"
+      },
+      {
+       "coach": "Flip Saunders",
+       "team": "Detroit Pistons"
+      },
+      {
+       "coach": "Larry Brown",
+       "team": "New York Knicks"
+      },
+      {
+       "coach": "Lawrence Frank",
+       "team": "New Jersey Nets"
+      },
+      {
+       "coach": "Maurice Cheeks",
+       "team": "Philadelphia 76ers"
+      },
+      {
+       "coach": "Mike Brown",
+       "team": "Cleveland Cavaliers"
+      },
+      {
+       "coach": "Mike Woodson",
+       "team": "Atlanta Hawks"
+      },
+      {
+       "coach": "Rick Carlisle",
+       "team": "Indiana Pacers"
+      },
+      {
+       "coach": "Sam Mitchell",
+       "team": "Toronto Raptors"
+      },
+      {
+       "coach": "Scott Skiles",
+       "team": "Chicago Bulls"
+      },
+      {
+       "coach": "Terry Stotts",
+       "team": "Milwaukee Bucks"
+      }
+     ]
+    },
+    "West": {
+     "reserves": [
+      {
+       "player": "Shawn Marion",
+       "bbr_id": "mariosh01",
+       "team": "Phoenix Suns",
+       "position": "F",
+       "games": 48,
+       "club_games": 49,
+       "pts": 21.6,
+       "reb": 12.0,
+       "ast": 1.8,
+       "game_score": 20.13,
+       "club_pct": 0.653,
+       "ballots": 14
+      },
+      {
+       "player": "Joe Johnson",
+       "bbr_id": "johnsjo02",
+       "team": "Phoenix Suns",
+       "position": "G",
+       "games": 49,
+       "club_games": 49,
+       "pts": 22.7,
+       "reb": 4.0,
+       "ast": 7.0,
+       "game_score": 15.93,
+       "club_pct": 0.653,
+       "ballots": 14
+      },
+      {
+       "player": "Mike Bibby",
+       "bbr_id": "bibbymi01",
+       "team": "Sacramento Kings",
+       "position": "G",
+       "games": 48,
+       "club_games": 48,
+       "pts": 21.3,
+       "reb": 2.8,
+       "ast": 6.0,
+       "game_score": 14.67,
+       "club_pct": 0.625,
+       "ballots": 14
+      },
+      {
+       "player": "Elton Brand",
+       "bbr_id": "brandel01",
+       "team": "Los Angeles Clippers",
+       "position": "F",
+       "games": 45,
+       "club_games": 47,
+       "pts": 21.6,
+       "reb": 7.9,
+       "ast": 2.3,
+       "game_score": 17.54,
+       "club_pct": 0.489,
+       "ballots": 9
+      },
+      {
+       "player": "Brad Miller",
+       "bbr_id": "millebr01",
+       "team": "Sacramento Kings",
+       "position": "C",
+       "games": 45,
+       "club_games": 48,
+       "pts": 15.7,
+       "reb": 6.7,
+       "ast": 4.6,
+       "game_score": 12.59,
+       "club_pct": 0.625,
+       "ballots": 8
+      },
+      {
+       "player": "Chris Paul",
+       "bbr_id": "paulch01",
+       "team": "Utah Jazz",
+       "position": "G",
+       "games": 47,
+       "club_games": 49,
+       "pts": 21.3,
+       "reb": 5.4,
+       "ast": 7.2,
+       "game_score": 18.58,
+       "club_pct": 0.51,
+       "ballots": 14
+      },
+      {
+       "player": "Tony Parker",
+       "bbr_id": "parketo01",
+       "team": "San Antonio Spurs",
+       "position": "G",
+       "games": 46,
+       "club_games": 48,
+       "pts": 18.3,
+       "reb": 3.3,
+       "ast": 6.5,
+       "game_score": 14.44,
+       "club_pct": 0.646,
+       "ballots": 12
+      }
+     ],
+     "coach_order": [
+      {
+       "player": "Shawn Marion",
+       "position": "F",
+       "team": "Phoenix Suns",
+       "ballots": 14
+      },
+      {
+       "player": "Joe Johnson",
+       "position": "G",
+       "team": "Phoenix Suns",
+       "ballots": 14
+      },
+      {
+       "player": "Mike Bibby",
+       "position": "G",
+       "team": "Sacramento Kings",
+       "ballots": 14
+      },
+      {
+       "player": "Chris Paul",
+       "position": "G",
+       "team": "Utah Jazz",
+       "ballots": 14
+      },
+      {
+       "player": "Tony Parker",
+       "position": "G",
+       "team": "San Antonio Spurs",
+       "ballots": 12
+      },
+      {
+       "player": "Elton Brand",
+       "position": "F",
+       "team": "Los Angeles Clippers",
+       "ballots": 9
+      },
+      {
+       "player": "Tim Duncan",
+       "position": "F",
+       "team": "San Antonio Spurs",
+       "ballots": 8
+      },
+      {
+       "player": "Brad Miller",
+       "position": "C",
+       "team": "Sacramento Kings",
+       "ballots": 8
+      },
+      {
+       "player": "Yao Ming",
+       "position": "C",
+       "team": "Houston Rockets",
+       "ballots": 6
+      },
+      {
+       "player": "Carmelo Anthony",
+       "position": "F",
+       "team": "Denver Nuggets",
+       "ballots": 3
+      },
+      {
+       "player": "Steve Nash",
+       "position": "G",
+       "team": "Dallas Mavericks",
+       "ballots": 1
+      },
+      {
+       "player": "Manu Ginobili",
+       "position": "G",
+       "team": "San Antonio Spurs",
+       "ballots": 1
+      },
+      {
+       "player": "Marcus Camby",
+       "position": "C",
+       "team": "Minnesota Timberwolves",
+       "ballots": 1
+      }
+     ],
+     "voters": [
+      {
+       "coach": "Avery Johnson",
+       "team": "Dallas Mavericks"
+      },
+      {
+       "coach": "Bob Hill",
+       "team": "Seattle SuperSonics"
+      },
+      {
+       "coach": "Byron Scott",
+       "team": "New Orleans/Oklahoma City Hornets"
+      },
+      {
+       "coach": "Dwane Casey",
+       "team": "Minnesota Timberwolves"
+      },
+      {
+       "coach": "George Karl",
+       "team": "Denver Nuggets"
+      },
+      {
+       "coach": "Gregg Popovich",
+       "team": "San Antonio Spurs"
+      },
+      {
+       "coach": "Jeff Van Gundy",
+       "team": "Houston Rockets"
+      },
+      {
+       "coach": "Jerry Sloan",
+       "team": "Utah Jazz"
+      },
+      {
+       "coach": "Mike D'Antoni",
+       "team": "Phoenix Suns"
+      },
+      {
+       "coach": "Mike Dunleavy",
+       "team": "Los Angeles Clippers"
+      },
+      {
+       "coach": "Mike Fratello",
+       "team": "Memphis Grizzlies"
+      },
+      {
+       "coach": "Mike Montgomery",
+       "team": "Golden State Warriors"
+      },
+      {
+       "coach": "Nate McMillan",
+       "team": "Portland Trail Blazers"
+      },
+      {
+       "coach": "Phil Jackson",
+       "team": "Los Angeles Lakers"
+      },
+      {
+       "coach": "Rick Adelman",
+       "team": "Sacramento Kings"
+      }
+     ]
+    }
+   }
   }
  ],
- "all_stars": []
+ "all_stars": [
+  {
+   "player": "LeBron James",
+   "bbr_id": "jamesle01",
+   "team": "Cleveland Cavaliers",
+   "conference": "East",
+   "role": "starter",
+   "selected_on": "2006-02-02"
+  },
+  {
+   "player": "Jermaine O'Neal",
+   "bbr_id": "onealje01",
+   "team": "Indiana Pacers",
+   "conference": "East",
+   "role": "starter",
+   "selected_on": "2006-02-02"
+  },
+  {
+   "player": "Zydrunas Ilgauskas",
+   "bbr_id": "ilgauzy01",
+   "team": "Philadelphia 76ers",
+   "conference": "East",
+   "role": "starter",
+   "selected_on": "2006-02-02"
+  },
+  {
+   "player": "Dwyane Wade",
+   "bbr_id": "wadedw01",
+   "team": "Miami Heat",
+   "conference": "East",
+   "role": "starter",
+   "selected_on": "2006-02-02"
+  },
+  {
+   "player": "Allen Iverson",
+   "bbr_id": "iversal01",
+   "team": "Philadelphia 76ers",
+   "conference": "East",
+   "role": "starter",
+   "selected_on": "2006-02-02"
+  },
+  {
+   "player": "Paul Pierce",
+   "bbr_id": "piercpa01",
+   "team": "Boston Celtics",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Chauncey Billups",
+   "bbr_id": "billuch01",
+   "team": "Detroit Pistons",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Chris Bosh",
+   "bbr_id": "boshch01",
+   "team": "Toronto Raptors",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Boris Diaw",
+   "bbr_id": "diawbo01",
+   "team": "Atlanta Hawks",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Primož Brezec",
+   "bbr_id": "brezepr01",
+   "team": "Toronto Raptors",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Jason Terry",
+   "bbr_id": "terryja01",
+   "team": "Atlanta Hawks",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Vince Carter",
+   "bbr_id": "cartevi01",
+   "team": "Toronto Raptors",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Kevin Garnett",
+   "bbr_id": "garneke01",
+   "team": "Minnesota Timberwolves",
+   "conference": "West",
+   "role": "starter",
+   "selected_on": "2006-02-02"
+  },
+  {
+   "player": "Kobe Bryant",
+   "bbr_id": "bryanko01",
+   "team": "Los Angeles Lakers",
+   "conference": "West",
+   "role": "starter",
+   "selected_on": "2006-02-02"
+  },
+  {
+   "player": "Shaquille O'Neal",
+   "bbr_id": "onealsh01",
+   "team": "Los Angeles Lakers",
+   "conference": "West",
+   "role": "starter",
+   "selected_on": "2006-02-02"
+  },
+  {
+   "player": "Dirk Nowitzki",
+   "bbr_id": "nowitdi01",
+   "team": "Dallas Mavericks",
+   "conference": "West",
+   "role": "starter",
+   "selected_on": "2006-02-02"
+  },
+  {
+   "player": "Ray Allen",
+   "bbr_id": "allenra02",
+   "team": "Seattle SuperSonics",
+   "conference": "West",
+   "role": "starter",
+   "selected_on": "2006-02-02"
+  },
+  {
+   "player": "Shawn Marion",
+   "bbr_id": "mariosh01",
+   "team": "Phoenix Suns",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Joe Johnson",
+   "bbr_id": "johnsjo02",
+   "team": "Phoenix Suns",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Mike Bibby",
+   "bbr_id": "bibbymi01",
+   "team": "Sacramento Kings",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Elton Brand",
+   "bbr_id": "brandel01",
+   "team": "Los Angeles Clippers",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Brad Miller",
+   "bbr_id": "millebr01",
+   "team": "Sacramento Kings",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Chris Paul",
+   "bbr_id": "paulch01",
+   "team": "Utah Jazz",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  },
+  {
+   "player": "Tony Parker",
+   "bbr_id": "parketo01",
+   "team": "San Antonio Spurs",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2006-02-09"
+  }
+ ]
 }

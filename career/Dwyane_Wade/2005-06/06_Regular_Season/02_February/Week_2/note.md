@@ -14,4 +14,6 @@ days: 8-14
 
 ## Games and events
 
+- 2006-02-09: Miami Heat 114 at Dallas Mavericks 103 — Miami Heat W 114-103 ([Game 1](Game_1.md), event `2006-02-09-miami-heat-at-dallas-mavericks`)
+
 ## Consequences

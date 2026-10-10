@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-02-06",
+  "as_of": "2006-02-09",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -3389,7 +3389,7 @@
     {
       "player_id": "hunteli01",
       "name": "Lindsey Hunter",
-      "team": "Free agent",
+      "team": "Golden State Warriors",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -5882,7 +5882,7 @@
     {
       "player_id": "walshma01",
       "name": "walshma01",
-      "team": "Cleveland Cavaliers",
+      "team": "Memphis Grizzlies",
       "status": "under contract",
       "current_contract_id": "walshma01-2005-09-02",
       "recorded_agreements": 1,

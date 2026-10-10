@@ -2,9 +2,9 @@
 
 # Contract | John Wallace
 
-Known through: 2006-02-06. [Open interactive contract](wallajo01.html#contract) · [Contract history](wallajo01.html#contract-history)
+Known through: 2006-02-09. [Open interactive contract](wallajo01.html#contract) · [Contract history](wallajo01.html#contract-history)
 
-John Wallace: camp contract. Evidence cutoff: 2006-02-06.
+John Wallace: camp contract. Evidence cutoff: 2006-02-09.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Richard Hamilton
 
-Known through: 2006-02-06. [Open interactive contract](hamilri01.html#contract) · [Contract history](hamilri01.html#contract-history)
+Known through: 2006-02-09. [Open interactive contract](hamilri01.html#contract) · [Contract history](hamilri01.html#contract-history)
 
-Richard Hamilton: under contract. Evidence cutoff: 2006-02-06.
+Richard Hamilton: under contract. Evidence cutoff: 2006-02-09.
 
 ## Current contract
 

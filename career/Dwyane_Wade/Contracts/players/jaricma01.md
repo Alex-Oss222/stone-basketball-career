@@ -2,9 +2,9 @@
 
 # Contract | Marko Jaric
 
-Known through: 2006-02-06. [Open interactive contract](jaricma01.html#contract) · [Contract history](jaricma01.html#contract-history)
+Known through: 2006-02-09. [Open interactive contract](jaricma01.html#contract) · [Contract history](jaricma01.html#contract-history)
 
-Marko Jaric: under contract. Evidence cutoff: 2006-02-06.
+Marko Jaric: under contract. Evidence cutoff: 2006-02-09.
 
 ## Current contract
 
