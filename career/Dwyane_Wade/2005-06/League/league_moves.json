@@ -4969,6 +4969,24 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 2.89 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-03-18-expire-livinra01",
+   "date": "2006-03-18",
+   "kind": "expire",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "Golden State Warriors",
+   "to": null,
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
   }
  ],
  "market_days": [
@@ -5108,6 +5126,7 @@
   "2006-03-14",
   "2006-03-15",
   "2006-03-16",
-  "2006-03-17"
+  "2006-03-17",
+  "2006-03-18"
  ]
 }
