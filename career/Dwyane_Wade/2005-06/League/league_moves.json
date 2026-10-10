@@ -5293,6 +5293,25 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 2.62 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-03-31-clear-martida01",
+   "date": "2006-03-31",
+   "kind": "clear",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Darrick Martin",
+    "bbr_id": "martida01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 339
+   },
+   "contract": null,
+   "note": "cleared waivers from New Jersey Nets: a free agent",
+   "waiver": "2005-06-market-2006-03-29-waive-martida01"
   }
  ],
  "market_days": [
@@ -5445,6 +5464,7 @@
   "2006-03-27",
   "2006-03-28",
   "2006-03-29",
-  "2006-03-30"
+  "2006-03-30",
+  "2006-03-31"
  ]
 }
