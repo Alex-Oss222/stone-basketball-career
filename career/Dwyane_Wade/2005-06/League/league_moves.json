@@ -4691,6 +4691,64 @@
    },
    "contract": null,
    "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-03-08-expire-livinra01",
+   "date": "2006-03-08",
+   "kind": "expire",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.2 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-03-08-waive-robincl02",
+   "date": "2006-03-08",
+   "kind": "waive",
+   "player": "Clifford Robinson",
+   "bbr_id": "robincl02",
+   "from": "Golden State Warriors",
+   "to": null,
+   "role": {
+    "player_id": "Clifford Robinson",
+    "bbr_id": "robincl02",
+    "position": "PF",
+    "games": 80,
+    "minutes": 1863
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-03-10"
+  },
+  {
+   "id": "2005-06-market-2006-03-08-ten_day-livinra01",
+   "date": "2006-03-08",
+   "kind": "ten_day",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-03-18",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.97 x fit"
   }
  ],
  "market_days": [
@@ -4820,6 +4878,7 @@
   "2006-03-04",
   "2006-03-05",
   "2006-03-06",
-  "2006-03-07"
+  "2006-03-07",
+  "2006-03-08"
  ]
 }
