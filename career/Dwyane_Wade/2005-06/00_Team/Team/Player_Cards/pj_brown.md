@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 36 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** January 16, 2006 · **Statistics through:** 2006-02-14 
+**Opening assessment:** January 16, 2006 · **Statistics through:** 2006-02-15 
 
 **Contract/control:** Acquired by trade from New Orleans/Oklahoma City Hornets on January 16, 2006: $8,500,000 in 2005-06; contract through 2006-07. (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at PF, staff plan 11 minutes (staff rotation dated 2006-02-01, [record](../Depth_Chart/Reviews/2006-02-01/rotation.json)).
+**Role:** Rotation at PF, staff plan 15 minutes (staff rotation dated 2006-02-15, [record](../Depth_Chart/Reviews/2006-02-15/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -43,11 +43,12 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 | 2006-01-04 | Staff rotation of 2006-01-04: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2006-01-04/rotation.json) |
 | 2006-01-18 | Staff rotation of 2006-01-18: rotation at PF, staff plan 15 minutes. | [Rotation](../Depth_Chart/Reviews/2006-01-18/rotation.json) |
 | 2006-02-01 | Staff rotation of 2006-02-01: rotation at PF, staff plan 11 minutes. | [Rotation](../Depth_Chart/Reviews/2006-02-01/rotation.json) |
+| 2006-02-15 | Staff rotation of 2006-02-15: rotation at PF, staff plan 15 minutes. | [Rotation](../Depth_Chart/Reviews/2006-02-15/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [League baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json), [signing record](../../../00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-02-01.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-02-15.
 
 <!-- yearly-statistics:start -->
 
@@ -60,7 +61,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | New Orleans Hornets | 82 | N/A | 34.4 | 10.8 | 9.0 | 2.2 | 0.9 | 0.6 | 1.2 | 0.446 | N/A | 0.864 |
-| 2005-06 | MIA | 14 | 0 | 12.9 | 3.8 | 3.2 | 0.5 | 0.4 | 0.4 | 0.9 | 52.8% | N/A | 78.9% |
+| 2005-06 | MIA | 15 | 0 | 13.1 | 3.6 | 3.3 | 0.5 | 0.3 | 0.3 | 0.8 | 50.0% | N/A | 76.2% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

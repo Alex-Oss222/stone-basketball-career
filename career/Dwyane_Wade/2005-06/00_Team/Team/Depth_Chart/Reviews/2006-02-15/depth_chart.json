@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2006-02-15",
+ "team": "Miami Heat",
+ "status": "staff_review",
+ "game_ready": true,
+ "basis": "Fortnightly staff review 2006-02-15; fixed preseason estimate plus closed production per minute",
+ "positions": {
+  "PG": [
+   "Mike James",
+   "Anthony Johnson",
+   "Mike Wilks",
+   "Eddie Gill"
+  ],
+  "SG": [
+   "Dwyane Wade",
+   "Eddie Jones",
+   "Matt Carroll",
+   "DeShawn Stevenson"
+  ],
+  "SF": [
+   "Joe Smith",
+   "Caron Butler",
+   "Sebastian Telfair"
+  ],
+  "PF": [
+   "Mehmet Okur",
+   "P.J. Brown",
+   "Donyell Marshall"
+  ],
+  "C": [
+   "Chris Mihm"
+  ]
+ },
+ "battles_drawn": {
+  "SF": "Joe Smith"
+ },
+ "unassigned_draft_rights": [],
+ "unassigned_arrivals": [],
+ "unavailable": [],
+ "departed": []
+}

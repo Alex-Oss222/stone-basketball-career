@@ -4082,6 +4082,64 @@
    },
    "note": "claimed off waivers from Chicago Bulls (worst record first)",
    "waiver": "2005-06-market-2006-02-12-waive-duprero01"
+  },
+  {
+   "id": "2005-06-market-2006-02-15-expire-livinra01",
+   "date": "2006-02-15",
+   "kind": "expire",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-02-15-waive-augmost01",
+   "date": "2006-02-15",
+   "kind": "waive",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": "Houston Rockets",
+   "to": null,
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 385
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-02-17"
+  },
+  {
+   "id": "2005-06-market-2006-02-15-ten_day-livinra01",
+   "date": "2006-02-15",
+   "kind": "ten_day",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": null,
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-25",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.08 x fit"
   }
  ],
  "market_days": [
@@ -4190,6 +4248,7 @@
   "2006-02-11",
   "2006-02-12",
   "2006-02-13",
-  "2006-02-14"
+  "2006-02-14",
+  "2006-02-15"
  ]
 }
