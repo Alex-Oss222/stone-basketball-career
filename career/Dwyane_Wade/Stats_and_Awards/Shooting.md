@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2006-01-15**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2006-01-16**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -6603,7 +6603,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-27 | Orlando Magic | Played | [Game](../2004-05/05_Preseason/Game_7.md) | [Result](../2004-05/05_Preseason/Game_7.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_7.result.json) |
 
-## 2005-06 · NBA regular season · through 2006-01-15
+## 2005-06 · NBA regular season · through 2006-01-16
 
 [Open this period](player_cards.html?period=regular-2005-06-season#shooting)
 
@@ -7847,7 +7847,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2006-01-14 | Utah Jazz | Played | [Game](../2005-06/06_Regular_Season/01_January/Week_2/Game_4.md) | [Result](../2005-06/06_Regular_Season/01_January/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/01_January/Week_2/Game_4.result.json) |
 
-## 2005-06 · NBA preseason · through 2006-01-15
+## 2005-06 · NBA preseason · through 2006-01-16
 
 [Open this period](player_cards.html?period=preseason-2005-06-season#shooting)
 

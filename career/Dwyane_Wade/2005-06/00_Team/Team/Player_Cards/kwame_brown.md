@@ -4,7 +4,7 @@
 **Age at assessment:** 23 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** October 4, 2005 · **Statistics through:** 2005-10-30 
 
-**Contract/control:** October 31, 2005: released at the cut to 15 (non-guaranteed camp contract; no dead money). (register, 2006-01-10) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** October 31, 2005: released at the cut to 15 (non-guaranteed camp contract; no dead money). (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/brownkw01.html#contract) · [Contract history](../../../../Contracts/players/brownkw01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

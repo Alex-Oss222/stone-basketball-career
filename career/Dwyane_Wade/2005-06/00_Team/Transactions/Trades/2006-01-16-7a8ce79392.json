@@ -1,0 +1,214 @@
+{
+ "trade_id": "2006-01-16-7a8ce79392",
+ "date": "2006-01-16",
+ "status": "completed",
+ "kind": "trade",
+ "trade": {
+  "partner": "New Orleans/Oklahoma City Hornets",
+  "miami_out": [
+   "Brian Grant"
+  ],
+  "miami_in": [
+   "P.J. Brown",
+   "Chris Mihm"
+  ],
+  "picks_out": [
+   {
+    "year": 2006,
+    "round": 1
+   }
+  ],
+  "picks_in": []
+ },
+ "valuation": {
+  "partner": "New Orleans/Oklahoma City Hornets",
+  "posture": "rebuilding",
+  "miami_out": [
+   {
+    "player": "Brian Grant",
+    "bbr_id": "grantbr01",
+    "value": -0.007,
+    "production": 0.949,
+    "contract_term": -1.096,
+    "relief": 0.0,
+    "salary": 14336220,
+    "years": 1,
+    "age": 33,
+    "basis": "production value 8.8 (2002-03 blended with closed 2003-04 games)",
+    "now": 0.949,
+    "future": -1.096,
+    "walk_year": true
+   }
+  ],
+  "miami_in": [
+   {
+    "player": "P.J. Brown",
+    "bbr_id": "brownpj01",
+    "value": 0.276,
+    "production": 1.21,
+    "contract_term": -0.935,
+    "relief": 0.0,
+    "salary": 8500000,
+    "years": 2,
+    "age": 36,
+    "basis": "production value 9.8 (2002-03 blended with closed 2003-04 games)",
+    "now": 1.21,
+    "future": -0.602,
+    "walk_year": false
+   },
+   {
+    "player": "Chris Mihm",
+    "bbr_id": "mihmch01",
+    "value": 0.903,
+    "production": 1.259,
+    "contract_term": -0.355,
+    "relief": 0.0,
+    "salary": 5100714,
+    "years": 3,
+    "age": 26,
+    "basis": "production value 10.0 (2002-03 blended with closed 2003-04 games)",
+    "now": 1.259,
+    "future": 1.533,
+    "walk_year": false
+   }
+  ],
+  "picks_out": [
+   {
+    "value": 1.027,
+    "slot": 25.5,
+    "basis": "Miami Heat 56 wins in 2002-03; 2006 first regressed 1 year(s)",
+    "pick": {
+     "year": 2006,
+     "round": 1
+    }
+   }
+  ],
+  "picks_in": [],
+  "partner_gain": -0.272,
+  "miami_gain": 0.562,
+  "miami_out_view": 1.014,
+  "dump": true,
+  "shed": 17965922,
+  "objective_gain": 0.183,
+  "untouchable": []
+ },
+ "ranking": {
+  "trade": {
+   "partner": "New Orleans/Oklahoma City Hornets",
+   "miami_out": [
+    "Brian Grant"
+   ],
+   "miami_in": [
+    "P.J. Brown",
+    "Chris Mihm"
+   ],
+   "picks_out": [
+    {
+     "year": 2006,
+     "round": 1
+    }
+   ],
+   "picks_in": []
+  },
+  "miami_gain": 0.492,
+  "partner_gain": 0.183,
+  "accept": 0.95,
+  "score": 0.492,
+  "wade_request": false,
+  "consultation": null,
+  "consultation_player": null
+ },
+ "decision_event": "trade-2006-01-16-7a8ce79392",
+ "negotiation": null,
+ "standing": {
+  "as_of": "2005-06-16",
+  "standing": "franchise",
+  "trigger": "season_close",
+  "basis": {
+   "closed_seasons": [
+    "2004-05",
+    "2003-04"
+   ],
+   "window": [
+    "2004-05",
+    "2003-04"
+   ],
+   "starter_lines": {
+    "2004-05": {
+     "season": "2004-05",
+     "gp": 76,
+     "gs": 76,
+     "scheduled": 82,
+     "minutes_per_game": 36.22,
+     "complete": true,
+     "met": true
+    },
+    "2003-04": {
+     "season": "2003-04",
+     "gp": 75,
+     "gs": 70,
+     "scheduled": 82,
+     "minutes_per_game": 35.0,
+     "complete": true,
+     "met": true
+    }
+   },
+   "honors": [
+    "2003-04-all-star",
+    "2003-04-all_nba-first",
+    "2004-05-all-star",
+    "2004-05-all_nba-first"
+   ],
+   "conflicts": [],
+   "ignored_honors": [
+    "2003-04-rookie_of_month-2003-10-28-east",
+    "2003-04-player_of_week-2003-12-15-east",
+    "2003-04-player_of_month-2003-12-01-east",
+    "2003-04-rookie_of_month-2003-12-01-east",
+    "2003-04-player_of_week-2003-12-29-east",
+    "2003-04-player_of_month-2004-01-01-east",
+    "2003-04-rookie_of_month-2004-01-01-east",
+    "2003-04-rookie_of_month-2004-02-01-east",
+    "2003-04-player_of_week-2004-03-08-east",
+    "2003-04-player_of_month-2004-03-01-east",
+    "2003-04-rookie_of_month-2004-03-01-east",
+    "2003-04-rookie_of_month-2004-04-01-east",
+    "2003-04-roy",
+    "2003-04-all_rookie-first",
+    "2004-05-player_of_month-2004-12-01-east",
+    "2004-05-player_of_week-2005-01-24-east",
+    "2004-05-player_of_month-2005-03-01-east",
+    "2004-05-player_of_month-2005-04-01-east"
+   ],
+   "rule": "All-NBA First or Second Team in the most recent closed season",
+   "signed_date": "2003-07-21",
+   "season_folder": "2004-05",
+   "statistics": {
+    "2004-05": {
+     "season": "2004-05",
+     "gp": 76,
+     "gs": 76,
+     "scheduled": 82,
+     "minutes_per_game": 36.22,
+     "complete": true
+    },
+    "2003-04": {
+     "season": "2003-04",
+     "gp": 75,
+     "gs": 70,
+     "scheduled": 82,
+     "minutes_per_game": 35.0,
+     "complete": true
+    }
+   }
+  },
+  "source": "2004-05/season_close.json"
+ },
+ "consultation": null,
+ "answer": {
+  "outcome": "accept",
+  "date": "2006-01-16"
+ },
+ "applied": "2006-01-16",
+ "basis": "Chosen by Miami's front office as the top-ranked legal proposal on the date (runtime/trades.py search)."
+}

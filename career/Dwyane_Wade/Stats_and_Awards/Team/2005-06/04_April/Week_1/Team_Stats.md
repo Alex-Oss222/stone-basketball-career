@@ -4,7 +4,7 @@
 
 NBA regular season · April 1-7, 2006
 
-As of January 15, 2006: not started. The 15-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 15-player active roster.
+As of January 16, 2006: not started. The 16-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 16-player active roster.
 
 ## Team record
 
@@ -19,7 +19,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Eddie Jones | SG/SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Brian Grant | C/PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Donyell Marshall | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Anthony Johnson | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Mike James | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -33,6 +32,8 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Matt Carroll | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Uroš Slokar | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Joe Smith | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| P.J. Brown | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Chris Mihm | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -42,7 +43,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Eddie Jones | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Brian Grant | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Donyell Marshall | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Anthony Johnson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Mike James | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
@@ -56,6 +56,8 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Matt Carroll | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Uroš Slokar | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Joe Smith | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| P.J. Brown | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| Chris Mihm | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 
 </details>
 

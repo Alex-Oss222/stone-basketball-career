@@ -1,4 +1,4 @@
-![Chris Mihm: New Orleans/Oklahoma City Hornets, Center](assets/mihmch01_header.svg)
+![Chris Mihm: Miami Heat, Center](assets/mihmch01_header.svg)
 
 <!-- photo -->
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Mihm_in_2005.jpg?width=500" alt="Chris Mihm" width="160">
@@ -8,12 +8,12 @@
 
 # Chris Mihm | NBA player card
 
-[Interactive card](mihmch01.html) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
+[Interactive card](mihmch01.html) · [Miami card](../../../2005-06/00_Team/Team/Player_Cards/chris_mihm.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
 The interactive card is an HTML file: GitHub shows it as source, so open `mihmch01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-01-15 · **Club on this date:** New Orleans/Oklahoma City Hornets · **Basis:** New Orleans/Oklahoma City Hornets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #31 · **Born:** 1979-07-16 · **Age on card date:** 26  
+**Card date:** 2006-01-16 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2005-06 register · **League:** NBA  
+**Position:** C (Center) · **Jersey:** #5 · **Born:** 1979-07-16 · **Age on card date:** 26  
 **Registry ID:** `mihmch01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/mihmch01.html) · ESPN ID 549
 
 **Contract/control:** 2003-04 team option pending; through 2003-04 (2003-04 scheduled $2,809,494) (league contract inventory status `team_option_pending`, as of June 26, 2003).
@@ -22,17 +22,17 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mihmch
 
 **2002-03 (recorded, CLE):** 52 G, 0 GS, 15.6 MPG, 5.9 PPG, 4.4 RPG, 0.5 APG, 0.3 SPG, 0.7 BPG, 0.9 TOV, FG 40.4%.
 
-**Colours:** header uses New Orleans/Oklahoma City Hornets colours (#00778b / #280071) for the season starting 2005; presentation only.
+**Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2005; presentation only.
 
 ## Simulated statistics
 
-As of **2006-01-15**: 35 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-01-16**: 35 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 26 | 18 | 25.9 | 3.7 | 7.8 | .475 | 0.1 | 0.3 | .375 | 3.6 | 7.5 | .480 | .483 | 2.9 | 4.0 | .714 | 2.0 | 3.8 | 5.8 | 2.0 | 0.4 | 1.0 | 1.7 | 4.1 | 10.5 | .544 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 26 | MIA | NBA | C | 26 | 18 | 25.9 | 3.7 | 7.8 | .475 | 0.1 | 0.3 | .375 | 3.6 | 7.5 | .480 | .483 | 2.9 | 4.0 | .714 | 2.0 | 3.8 | 5.8 | 2.0 | 0.4 | 1.0 | 1.7 | 4.1 | 10.5 | .544 | — |
 
 ### Month
 
@@ -41,12 +41,12 @@ As of **2006-01-15**: 35 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 10 | 7 | 24.8 | 3.4 | 7.2 | .472 | 0.1 | 0.2 | .500 | 3.3 | 7.0 | .471 | .479 | 1.6 | 2.4 | .667 | 1.8 | 3.4 | 5.2 | 2.2 | 0.2 | 0.4 | 1.7 | 4.6 | 8.5 | .515 | — |
-| [December 2005](../2005-06/12_December/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 11 | 6 | 26.8 | 3.9 | 8.4 | .467 | 0.2 | 0.5 | .333 | 3.7 | 7.8 | .477 | .478 | 3.2 | 4.4 | .729 | 1.9 | 4.5 | 6.5 | 1.7 | 0.5 | 1.5 | 1.8 | 3.7 | 11.2 | .544 | — |
-| [January 2006](../2005-06/01_January/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 5 | 5 | 26.1 | 4.0 | 8.0 | .500 | 0.0 | 0.0 | N/A | 4.0 | 8.0 | .500 | .500 | 4.8 | 6.6 | .727 | 2.6 | 2.8 | 5.4 | 2.0 | 0.4 | 0.8 | 1.4 | 3.8 | 12.8 | .587 | — |
-| [February 2006](../2005-06/02_February/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2006](../2005-06/03_March/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2006](../2005-06/04_April/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 26 | MIA | NBA | C | 10 | 7 | 24.8 | 3.4 | 7.2 | .472 | 0.1 | 0.2 | .500 | 3.3 | 7.0 | .471 | .479 | 1.6 | 2.4 | .667 | 1.8 | 3.4 | 5.2 | 2.2 | 0.2 | 0.4 | 1.7 | 4.6 | 8.5 | .515 | — |
+| [December 2005](../2005-06/12_December/League_Stats.md) | 26 | MIA | NBA | C | 11 | 6 | 26.8 | 3.9 | 8.4 | .467 | 0.2 | 0.5 | .333 | 3.7 | 7.8 | .477 | .478 | 3.2 | 4.4 | .729 | 1.9 | 4.5 | 6.5 | 1.7 | 0.5 | 1.5 | 1.8 | 3.7 | 11.2 | .544 | — |
+| [January 2006](../2005-06/01_January/League_Stats.md) | 26 | MIA | NBA | C | 5 | 5 | 26.1 | 4.0 | 8.0 | .500 | 0.0 | 0.0 | N/A | 4.0 | 8.0 | .500 | .500 | 4.8 | 6.6 | .727 | 2.6 | 2.8 | 5.4 | 2.0 | 0.4 | 0.8 | 1.4 | 3.8 | 12.8 | .587 | — |
+| [February 2006](../2005-06/02_February/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006](../2005-06/03_March/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006](../2005-06/04_April/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 </details>
 
@@ -57,29 +57,29 @@ As of **2006-01-15**: 35 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 2 | 2 | 23.2 | 2.0 | 6.0 | .333 | 0.5 | 1.0 | .500 | 1.5 | 5.0 | .300 | .375 | 2.0 | 3.5 | .571 | 3.5 | 3.0 | 6.5 | 2.0 | 0.5 | 0.0 | 3.0 | 5.0 | 6.5 | .431 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 2 | 2 | 24.9 | 4.0 | 8.5 | .471 | 0.0 | 0.0 | N/A | 4.0 | 8.5 | .471 | .471 | 3.5 | 4.0 | .875 | 0.5 | 3.5 | 4.0 | 1.5 | 0.0 | 0.5 | 2.0 | 4.5 | 11.5 | .560 | — |
-| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 3 | 2 | 23.8 | 3.7 | 7.7 | .478 | 0.0 | 0.0 | N/A | 3.7 | 7.7 | .478 | .478 | 1.0 | 1.7 | .600 | 1.0 | 2.7 | 3.7 | 2.3 | 0.3 | 0.3 | 0.7 | 4.7 | 8.3 | .496 | — |
-| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 3 | 1 | 26.8 | 3.7 | 6.7 | .550 | 0.0 | 0.0 | N/A | 3.7 | 6.7 | .550 | .550 | 0.7 | 1.3 | .500 | 2.3 | 4.3 | 6.7 | 2.7 | 0.0 | 0.7 | 1.7 | 4.3 | 8.0 | .551 | — |
-| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 4 | 2 | 27.4 | 3.5 | 6.5 | .538 | 0.2 | 0.5 | .500 | 3.2 | 6.0 | .542 | .558 | 1.8 | 3.0 | .583 | 2.0 | 3.5 | 5.5 | 2.2 | 0.8 | 1.8 | 1.5 | 4.5 | 9.0 | .575 | — |
-| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 3 | 0 | 27.1 | 3.7 | 8.3 | .440 | 0.3 | 0.7 | .500 | 3.3 | 7.7 | .435 | .460 | 5.7 | 6.3 | .895 | 3.3 | 5.7 | 9.0 | 0.7 | 0.3 | 2.0 | 2.7 | 2.3 | 13.3 | .600 | — |
-| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 1 | 1 | 26.6 | 5.0 | 11.0 | .455 | 0.0 | 1.0 | .000 | 5.0 | 10.0 | .500 | .455 | 1.0 | 2.0 | .500 | 2.0 | 5.0 | 7.0 | 4.0 | 1.0 | 1.0 | 1.0 | 2.0 | 11.0 | .463 | — |
-| [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 3 | 3 | 25.7 | 4.3 | 10.0 | .433 | 0.0 | 0.3 | .000 | 4.3 | 9.7 | .448 | .433 | 3.3 | 5.0 | .667 | 0.3 | 4.7 | 5.0 | 1.3 | 0.3 | 1.0 | 1.7 | 4.7 | 12.0 | .492 | — |
-| [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 3 | 3 | 26.8 | 4.0 | 7.7 | .522 | 0.0 | 0.0 | N/A | 4.0 | 7.7 | .522 | .522 | 6.0 | 9.0 | .667 | 2.3 | 3.3 | 5.7 | 2.3 | 0.0 | 0.7 | 1.7 | 4.0 | 14.0 | .602 | — |
-| [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 2 | 2 | 25.2 | 4.0 | 8.5 | .471 | 0.0 | 0.0 | N/A | 4.0 | 8.5 | .471 | .471 | 3.0 | 3.0 | 1.000 | 3.0 | 2.0 | 5.0 | 1.5 | 1.0 | 1.0 | 1.0 | 3.5 | 11.0 | .560 | — |
-| [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [January 2006 week 4 (22 to 31)](../2005-06/01_January/Week_4/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006 week 1 (01 to 07)](../2005-06/02_February/Week_1/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006 week 2 (08 to 14)](../2005-06/02_February/Week_2/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006 week 3 (15 to 21)](../2005-06/02_February/Week_3/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2006 week 1 (01 to 07)](../2005-06/03_March/Week_1/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2006 week 2 (08 to 14)](../2005-06/03_March/Week_2/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2006 week 2 (08 to 14)](../2005-06/04_April/Week_2/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 26 | MIA | NBA | C | 2 | 2 | 23.2 | 2.0 | 6.0 | .333 | 0.5 | 1.0 | .500 | 1.5 | 5.0 | .300 | .375 | 2.0 | 3.5 | .571 | 3.5 | 3.0 | 6.5 | 2.0 | 0.5 | 0.0 | 3.0 | 5.0 | 6.5 | .431 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 26 | MIA | NBA | C | 2 | 2 | 24.9 | 4.0 | 8.5 | .471 | 0.0 | 0.0 | N/A | 4.0 | 8.5 | .471 | .471 | 3.5 | 4.0 | .875 | 0.5 | 3.5 | 4.0 | 1.5 | 0.0 | 0.5 | 2.0 | 4.5 | 11.5 | .560 | — |
+| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 26 | MIA | NBA | C | 3 | 2 | 23.8 | 3.7 | 7.7 | .478 | 0.0 | 0.0 | N/A | 3.7 | 7.7 | .478 | .478 | 1.0 | 1.7 | .600 | 1.0 | 2.7 | 3.7 | 2.3 | 0.3 | 0.3 | 0.7 | 4.7 | 8.3 | .496 | — |
+| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 26 | MIA | NBA | C | 3 | 1 | 26.8 | 3.7 | 6.7 | .550 | 0.0 | 0.0 | N/A | 3.7 | 6.7 | .550 | .550 | 0.7 | 1.3 | .500 | 2.3 | 4.3 | 6.7 | 2.7 | 0.0 | 0.7 | 1.7 | 4.3 | 8.0 | .551 | — |
+| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 26 | MIA | NBA | C | 4 | 2 | 27.4 | 3.5 | 6.5 | .538 | 0.2 | 0.5 | .500 | 3.2 | 6.0 | .542 | .558 | 1.8 | 3.0 | .583 | 2.0 | 3.5 | 5.5 | 2.2 | 0.8 | 1.8 | 1.5 | 4.5 | 9.0 | .575 | — |
+| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 26 | MIA | NBA | C | 3 | 0 | 27.1 | 3.7 | 8.3 | .440 | 0.3 | 0.7 | .500 | 3.3 | 7.7 | .435 | .460 | 5.7 | 6.3 | .895 | 3.3 | 5.7 | 9.0 | 0.7 | 0.3 | 2.0 | 2.7 | 2.3 | 13.3 | .600 | — |
+| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 26 | MIA | NBA | C | 1 | 1 | 26.6 | 5.0 | 11.0 | .455 | 0.0 | 1.0 | .000 | 5.0 | 10.0 | .500 | .455 | 1.0 | 2.0 | .500 | 2.0 | 5.0 | 7.0 | 4.0 | 1.0 | 1.0 | 1.0 | 2.0 | 11.0 | .463 | — |
+| [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 26 | MIA | NBA | C | 3 | 3 | 25.7 | 4.3 | 10.0 | .433 | 0.0 | 0.3 | .000 | 4.3 | 9.7 | .448 | .433 | 3.3 | 5.0 | .667 | 0.3 | 4.7 | 5.0 | 1.3 | 0.3 | 1.0 | 1.7 | 4.7 | 12.0 | .492 | — |
+| [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 26 | MIA | NBA | C | 3 | 3 | 26.8 | 4.0 | 7.7 | .522 | 0.0 | 0.0 | N/A | 4.0 | 7.7 | .522 | .522 | 6.0 | 9.0 | .667 | 2.3 | 3.3 | 5.7 | 2.3 | 0.0 | 0.7 | 1.7 | 4.0 | 14.0 | .602 | — |
+| [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 26 | MIA | NBA | C | 2 | 2 | 25.2 | 4.0 | 8.5 | .471 | 0.0 | 0.0 | N/A | 4.0 | 8.5 | .471 | .471 | 3.0 | 3.0 | 1.000 | 3.0 | 2.0 | 5.0 | 1.5 | 1.0 | 1.0 | 1.0 | 3.5 | 11.0 | .560 | — |
+| [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [January 2006 week 4 (22 to 31)](../2005-06/01_January/Week_4/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 1 (01 to 07)](../2005-06/02_February/Week_1/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 2 (08 to 14)](../2005-06/02_February/Week_2/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 3 (15 to 21)](../2005-06/02_February/Week_3/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 1 (01 to 07)](../2005-06/03_March/Week_1/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 2 (08 to 14)](../2005-06/03_March/Week_2/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006 week 2 (08 to 14)](../2005-06/04_April/Week_2/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 26 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 </details>
 
@@ -104,14 +104,14 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 35 closed regular-season games through 2006-01-15. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 35 closed regular-season games through 2006-01-16. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | CLE | 52 | 0 | 15.6 | 5.9 | 4.4 | 0.5 | 0.3 | 0.7 | 0.9 | 40.4% | 0.0% | 72.4% |
 | 2003-04 | CLE | 75 | 1 | 17.6 | 6.3 | 4.7 | 0.4 | 0.4 | 0.7 | 0.9 | 46.6% | 40.0% | 69.5% |
 | 2004-05 | PHX | 68 | 2 | 24.6 | 10.4 | 5.6 | 1.0 | 0.3 | 1.1 | 1.7 | 51.1% | 5.6% | 64.9% |
-| 2005-06 | New Orleans/Oklahoma City Hornets | 26 | 18 | 25.9 | 10.5 | 5.8 | 2.0 | 0.4 | 1.0 | 1.7 | 47.5% | 37.5% | 71.4% |
+| 2005-06 | MIA | 26 | 18 | 25.9 | 10.5 | 5.8 | 2.0 | 0.4 | 1.0 | 1.7 | 47.5% | 37.5% | 71.4% |
 
 ## Playoff statistics by year
 
@@ -120,11 +120,11 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | Phoenix Suns | 12 | 0 | 22.7 | 8.7 | 4.9 | 0.5 | 0.2 | 0.8 | 1.7 | 49.4% | 0.0% | 68.6% |
-| 2005-06 | New Orleans/Oklahoma City Hornets | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2005-06 | MIA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-01-15, from closed award decisions (0 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-01-16, from closed award decisions (0 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

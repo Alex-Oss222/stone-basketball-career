@@ -2,9 +2,9 @@
 
 # Contract | Brian Grant
 
-Known through: 2006-01-15. [Open interactive contract](grantbr01.html#contract) · [Contract history](grantbr01.html#contract-history)
+Known through: 2006-01-16. [Open interactive contract](grantbr01.html#contract) · [Contract history](grantbr01.html#contract-history)
 
-Brian Grant: under contract. Evidence cutoff: 2006-01-15.
+Brian Grant: under contract. Evidence cutoff: 2006-01-16.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | New Orleans/Oklahoma City Hornets |
 | Signing club | Not recorded |
 | Contract ID | grantbr01-2000-08-30 |
 | Signing route / evidence basis | contract_history |
@@ -103,6 +103,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2006-01-16 | Miami Heat | New Orleans/Oklahoma City Hornets | 2006-01-16-7a8ce79392 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json) |
 
 ### Evidence and coverage
 
@@ -122,6 +123,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
+- [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
 
 ### Current control and contract coverage
 
@@ -130,7 +134,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Brian Grant |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | New Orleans/Oklahoma City Hornets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -195,7 +199,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | New Orleans/Oklahoma City Hornets |
 | Signing club | Not recorded |
 | Contract ID | grantbr01-2000-08-30 |
 | Signing route / evidence basis | contract_history |
@@ -273,6 +277,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2006-01-16 | Miami Heat | New Orleans/Oklahoma City Hornets | 2006-01-16-7a8ce79392 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json) |
 
 ### Evidence and coverage
 
@@ -292,6 +297,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
+- [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
 
 ## Source records
 
@@ -305,3 +313,5 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)

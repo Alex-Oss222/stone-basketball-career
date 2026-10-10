@@ -2148,6 +2148,138 @@
     "contract_id": "jonesju01-2003-09-30",
     "ended_on": "2006-01-07"
    }
+  },
+  {
+   "record_id": "grantbr01-2000-08-30-assigned-2006-01-16-b03d4e24428b",
+   "recorded_on": "2006-01-16",
+   "player_id": "grantbr01",
+   "player": "Brian Grant",
+   "contract_id": "grantbr01-2000-08-30",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json",
+   "contract": {
+    "player": "Brian Grant",
+    "status": "under_contract",
+    "schedule": {
+     "2003-04": 12130648,
+     "2004-05": 13233434,
+     "2005-06": 14336220,
+     "2006-07": 15439006
+    },
+    "conditions": {
+     "2006-07": "Existing contract year subject to Brian Grant's early-termination option after 2005-06."
+    },
+    "sources": [
+     "https://www.shamsports.com/players/brian-grant",
+     "https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html",
+     "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+     "Carried over unchanged from career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json (rollover repair: the October 1, 2004 rollover rebuilt it from the market's first-year salary)"
+    ],
+    "amount_kind": {
+     "2003-04": "contract_salary",
+     "2004-05": "contract_salary",
+     "2005-06": "contract_salary",
+     "2006-07": "early_termination_option"
+    },
+    "signed_date": "2000-08-30",
+    "original_term_seasons": 7,
+    "salary_reconstruction": {
+     "anchor_season": "2002-03",
+     "anchor_salary": 11027862,
+     "annual_dollar_raise_in_remaining_schedule": 1102786,
+     "method": "Remaining salary progression from the contemporary 2002-03 amount to the independently published 2005-06 and 2006-07 amounts. The original seven-year total is not used to infer unverified earlier annual salaries."
+    },
+    "prior_season_salary": {
+     "season": "2002-03",
+     "amount": 11027862,
+     "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
+    },
+    "bbr_id": "grantbr01"
+   },
+   "assignment": {
+    "date": "2006-01-16",
+    "from_team": "Miami Heat",
+    "to_team": "New Orleans/Oklahoma City Hornets",
+    "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+   }
+  },
+  {
+   "record_id": "brownpj01-baseline-2003-06-26-assigned-2006-01-16-b03d4e24428b",
+   "recorded_on": "2006-01-16",
+   "player_id": "brownpj01",
+   "player": "P.J. Brown",
+   "contract_id": "brownpj01-baseline-2003-06-26",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json",
+   "contract": {
+    "player": "P.J. Brown",
+    "bbr_id": "brownpj01",
+    "status": "under_contract",
+    "schedule": {
+     "2005-06": 8500000,
+     "2006-07": 8500000
+    },
+    "amount_kind": {
+     "2005-06": "contract_salary",
+     "2006-07": "contract_salary"
+    },
+    "held_on": "2006-01-16",
+    "terms_source": "career/Dwyane_Wade/2005-06/League/contracts.json",
+    "acquired": {
+     "how": "trade",
+     "date": "2006-01-16",
+     "from": "New Orleans/Oklahoma City Hornets",
+     "record": "00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+    }
+   },
+   "assignment": {
+    "date": "2006-01-16",
+    "from_team": "New Orleans/Oklahoma City Hornets",
+    "to_team": "Miami Heat",
+    "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+   }
+  },
+  {
+   "record_id": "mihmch01-baseline-2003-06-26-assigned-2006-01-16-b03d4e24428b",
+   "recorded_on": "2006-01-16",
+   "player_id": "mihmch01",
+   "player": "Chris Mihm",
+   "contract_id": "mihmch01-baseline-2003-06-26",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json",
+   "contract": {
+    "player": "Chris Mihm",
+    "bbr_id": "mihmch01",
+    "status": "under_contract",
+    "schedule": {
+     "2005-06": 5100714,
+     "2006-07": 5636289,
+     "2007-08": 6171864,
+     "2008-09": 6707439,
+     "2009-10": 7243014
+    },
+    "amount_kind": {
+     "2005-06": "contract_salary",
+     "2006-07": "contract_salary",
+     "2007-08": "contract_salary",
+     "2008-09": "contract_salary",
+     "2009-10": "contract_salary"
+    },
+    "held_on": "2006-01-16",
+    "terms_source": "career/Dwyane_Wade/2005-06/League/contracts.json",
+    "acquired": {
+     "how": "trade",
+     "date": "2006-01-16",
+     "from": "New Orleans/Oklahoma City Hornets",
+     "record": "00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+    }
+   },
+   "assignment": {
+    "date": "2006-01-16",
+    "from_team": "New Orleans/Oklahoma City Hornets",
+    "to_team": "Miami Heat",
+    "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+   }
   }
  ]
 }

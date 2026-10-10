@@ -1,6 +1,6 @@
 # Miami Heat working depth chart
 
-**As of:** 2006-01-15 · **Staff decision in force:** 2006-01-04 (fortnightly review)  
+**As of:** 2006-01-16 · **Staff decision in force:** 2006-01-04 (fortnightly review)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
@@ -27,11 +27,11 @@
 | Sebastian Telfair | SF | 7.31 |  |
 | Mike Wilks | PG | 3.66 |  |
 
-Outside the rotation (dressing as the twelfth man or on the injured list): Eddie Jones, DeShawn Stevenson, Eddie Gill, Matt Carroll.
+Outside the rotation (dressing as the twelfth man or on the injured list): Eddie Jones, DeShawn Stevenson, Eddie Gill, Matt Carroll, P.J. Brown, Chris Mihm.
 
-## Injured list on 2006-01-15
+## Injured list on 2006-01-16
 
-DeShawn Stevenson, Matt Carroll ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
+Chris Mihm, DeShawn Stevenson, Matt Carroll ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 
 ## Not on the active register
 

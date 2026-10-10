@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2006-01-07",
+ "as_of": "2006-01-16",
  "team": "Miami Heat",
  "status": "camp_decision",
  "game_ready": true,
@@ -27,9 +27,7 @@
    "Mehmet Okur",
    "Donyell Marshall"
   ],
-  "C": [
-   "Brian Grant"
-  ]
+  "C": []
  },
  "battles_drawn": {
   "SF": "Caron Butler"
@@ -43,6 +41,22 @@
    ],
    "status": "under_contract",
    "date": "2005-12-19"
+  },
+  {
+   "name": "P.J. Brown",
+   "positions": [
+    "PF"
+   ],
+   "status": "under_contract",
+   "date": "2006-01-16"
+  },
+  {
+   "name": "Chris Mihm",
+   "positions": [
+    "C"
+   ],
+   "status": "under_contract",
+   "date": "2006-01-16"
   }
  ],
  "unavailable": [],
@@ -81,6 +95,11 @@
    "name": "Jumaine Jones",
    "date": "2006-01-07",
    "status": "waived"
+  },
+  {
+   "name": "Brian Grant",
+   "date": "2006-01-16",
+   "status": "traded"
   }
  ]
 }

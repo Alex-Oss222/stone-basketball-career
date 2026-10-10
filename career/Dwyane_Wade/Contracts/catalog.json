@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-01-15",
+  "as_of": "2006-01-16",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -734,7 +734,7 @@
     {
       "player_id": "grantbr01",
       "name": "Brian Grant",
-      "team": "Miami Heat",
+      "team": "New Orleans/Oklahoma City Hornets",
       "status": "under contract",
       "current_contract_id": "grantbr01-2000-08-30",
       "recorded_agreements": 1,
@@ -1013,9 +1013,9 @@
     {
       "player_id": "mihmch01",
       "name": "Chris Mihm",
-      "team": "New Orleans/Oklahoma City Hornets",
+      "team": "Miami Heat",
       "status": "under contract",
-      "current_contract_id": "mihmch01-2005-08-26",
+      "current_contract_id": "mihmch01-baseline-2003-06-26",
       "recorded_agreements": 3,
       "href": "players/mihmch01.html#contract"
     },
@@ -4226,10 +4226,10 @@
     {
       "player_id": "brownpj01",
       "name": "P.J. Brown",
-      "team": "New Orleans/Oklahoma City Hornets",
+      "team": "Miami Heat",
       "status": "under contract",
       "current_contract_id": "brownpj01-2003-07-16",
-      "recorded_agreements": 2,
+      "recorded_agreements": 3,
       "href": "players/brownpj01.html#contract"
     },
     {

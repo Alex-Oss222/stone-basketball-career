@@ -1,7 +1,7 @@
 {
  "schema_version": 5,
  "owner": "ai_gm",
- "as_of": "2006-01-10",
+ "as_of": "2006-01-16",
  "season": "2005-06",
  "team": "Miami Heat",
  "cap_status": "regular_season",
@@ -10,10 +10,10 @@
  "historical_actual_salary_cap_publication_date": "2003-07-15",
  "league_cap_history_file": "league_cap_history.json",
  "contract_schedules_file": "contract_schedules.json",
- "known_counted_salary_before_free_agent_holds": 65169186,
- "reference_difference_to_historical_actual_cap_before_free_agent_holds": -21329186,
+ "known_counted_salary_before_free_agent_holds": 64433680,
+ "reference_difference_to_historical_actual_cap_before_free_agent_holds": -20593680,
  "cap_space": null,
- "cap_room": -15669186,
+ "cap_room": -14933680,
  "cap_room_reason": [
   "Cap published July 30, 2005.",
   "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."
@@ -23,13 +23,6 @@
    "player": "Eddie Jones",
    "kind": "contract_salary",
    "amount": 14576250,
-   "precision": "whole_dollars",
-   "status": "under_contract"
-  },
-  {
-   "player": "Brian Grant",
-   "kind": "contract_salary",
-   "amount": 14336220,
    "precision": "whole_dollars",
    "status": "under_contract"
   },
@@ -123,6 +116,20 @@
    "amount": 6353200,
    "precision": "whole_dollars",
    "status": "under_contract"
+  },
+  {
+   "player": "P.J. Brown",
+   "kind": "contract_salary",
+   "amount": 8500000,
+   "precision": "whole_dollars",
+   "status": "under_contract"
+  },
+  {
+   "player": "Chris Mihm",
+   "kind": "contract_salary",
+   "amount": 5100714,
+   "precision": "whole_dollars",
+   "status": "under_contract"
   }
  ],
  "pending_control_items": [],
@@ -153,10 +160,10 @@
   "2010-11"
  ],
  "currency": "USD",
- "known_counted_salary_definition": "Counted 2005-06 team salary on 2006-01-10: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
- "scheduled_contract_salary_subtotal": 65169186,
+ "known_counted_salary_definition": "Counted 2005-06 team salary on 2006-01-16: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+ "scheduled_contract_salary_subtotal": 64433680,
  "known_pending_option_salary": 0,
- "known_base_plus_priced_options": 65169186,
+ "known_base_plus_priced_options": 64433680,
  "live_official_tax_threshold": null,
  "tax_payroll": null,
  "luxury_tax_bill": null,
@@ -201,7 +208,7 @@
  "known_free_agent_holds_subtotal": 0,
  "unpriced_free_agent_hold_count": 0,
  "free_agent_hold_total": null,
- "free_agent_hold_timing": "Holds on 2006-01-10 are the unrenounced free agents' cap holds in free_agent_rights.json.",
+ "free_agent_hold_timing": "Holds on 2006-01-16 are the unrenounced free agents' cap holds in free_agent_rights.json.",
  "research_date": "2026-10-02",
  "guarantee_review": [
   {
@@ -240,7 +247,7 @@
  "subtotal_precision": "whole_dollars",
  "reported_rounded_salary_count": 0,
  "planning_cap": 49500000,
- "known_counted_salary": 65169186,
+ "known_counted_salary": 64433680,
  "roster_charge": 0,
- "projected_cap_room": -15669186
+ "projected_cap_room": -14933680
 }

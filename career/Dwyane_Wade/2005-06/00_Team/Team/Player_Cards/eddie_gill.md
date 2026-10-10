@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-01-15 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-01-16 
 
-**Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $835,810 scheduled ($835,810 in 2005-06). (register, 2006-01-10) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $835,810 scheduled ($835,810 in 2005-06). (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/gilled01.html#contract) · [Contract history](../../../../Contracts/players/gilled01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
@@ -52,7 +52,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2004-05 | Chicago Bulls | 3 | 0 | 6.3 | 5.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.667 | 0.500 | 1.000 |
-| 2005-06 | MIA | 20 | 0 | 3.9 | 2.1 | 0.7 | 0.5 | 0.1 | 0.1 | 0.2 | 43.3% | 28.6% | 68.2% |
+| 2005-06 | MIA | 21 | 0 | 4.0 | 2.1 | 0.7 | 0.5 | 0.1 | 0.0 | 0.2 | 43.8% | 28.6% | 68.2% |
 
 Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
 

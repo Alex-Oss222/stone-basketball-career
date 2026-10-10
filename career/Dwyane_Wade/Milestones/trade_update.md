@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2006-01-15 · Miami Heat · active
+Career date: 2006-01-16 · Miami Heat · active
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 
@@ -15,6 +15,7 @@ Activation: An actual dated proposal, consultation or executed transaction.
 | Proposed | Known status | Partner | Miami sends | Miami receives | Applied | Outcome / reason | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2005-12-19 | Completed | Milwaukee Bucks | Matt Harpring | Joe Smith | 2005-12-19 | accept | [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json) |
+| 2006-01-16 | Completed | New Orleans/Oklahoma City Hornets | Brian Grant | P.J. Brown; Chris Mihm | 2006-01-16 | accept | [Transaction record](../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json) |
 
 ## What this changes for you
 
@@ -76,6 +77,7 @@ An actual transaction update with its source and applicable player rights.
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
+- [Transaction record](../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
 - [Closed game](../2005-06/05_Preseason/Game_3.md)

@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2006-01-15 · Miami Heat · complete
+Career date: 2006-01-16 · Miami Heat · complete
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -58,6 +58,8 @@ Snapshot: 2006-01-04. Draft rights and unassigned arrivals are not assigned minu
 | 2005-12-19 | Milwaukee Bucks offers Joe Smith for Matt Harpring; Miami's front office accepts. Record: `00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json`. |
 | 2006-01-07 | Miami waived Jumaine Jones (payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first); $354,902 remains on the 2005-06 books. |
 | 2006-01-10 | Guarantee date: no contract guaranteed for 2005-06. |
+| 2006-01-16 | Miami proposes to New Orleans/Oklahoma City Hornets: Brian Grant for P.J. Brown, Chris Mihm (acceptance drawn by the engine, trade-2006-01-16-7a8ce79392). Record: `00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json`. |
+| 2006-01-16 | Trade with New Orleans/Oklahoma City Hornets: Miami sends Brian Grant, 2006 round 1 pick for P.J. Brown, Chris Mihm (accepted by engine draw trade-2006-01-16-7a8ce79392). Record: `00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json`. |
 
 ## Your response to the staff
 
@@ -94,6 +96,7 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
+- [Transaction record](../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
 - [Closed game](../2005-06/05_Preseason/Game_3.md)

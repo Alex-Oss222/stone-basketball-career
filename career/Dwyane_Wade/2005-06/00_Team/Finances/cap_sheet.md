@@ -1,6 +1,6 @@
 # Miami Heat | Cap sheet
 
-January 10, 2006 · 2005-06 through 2012-13 · USD
+January 16, 2006 · 2005-06 through 2012-13 · USD
 
 [Finance guide](README.md) · [Roster and control](../Team/Roster/roster.json) · [Contract detail](contract_schedules.json)
 
@@ -8,18 +8,19 @@ January 10, 2006 · 2005-06 through 2012-13 · USD
 
 | Cap (published) | Committed salary | Free-agent holds | Roster charge | Room |
 | ---: | ---: | ---: | ---: | ---: |
-| 49,500,000 | 65,169,186 | 0 | 0 | -15,669,186 |
+| 49,500,000 | 64,433,680 | 0 | 0 | -14,933,680 |
 
-Committed salary counts contracts, exercised options and the unsigned first-round hold on January 10, 2006. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
+Committed salary counts contracts, exercised options and the unsigned first-round hold on January 16, 2006. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
 
 ## Eight-season commitments
 
 | Player | 2005-06 | 2006-07 | 2007-08 | 2008-09 | 2009-10 | 2010-11 | 2011-12 | 2012-13 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | [Eddie Jones](../Team/Player_Cards/eddie_jones.md) | 14,576,250 | 15,697,500 | — | — | — | — | — | — |
-| [Brian Grant](../Team/Player_Cards/brian_grant.md) | 14,336,220 | 15,439,006<sup>ETO</sup> | — | — | — | — | — | — |
+| [P.J. Brown](../Team/Player_Cards/pj_brown.md) | 8,500,000 | 8,500,000 | — | — | — | — | — | — |
 | [Joe Smith](../Team/Player_Cards/joe_smith.md) | 6,353,200 | 6,807,000 | — | — | — | — | — | — |
 | [Donyell Marshall](../Team/Player_Cards/donyell_marshall.md) | 6,337,327 | 7,002,746 | 7,668,166 | — | — | — | — | — |
+| [Chris Mihm](../Team/Player_Cards/chris_mihm.md) | 5,100,714 | 5,636,289 | 6,171,864 | 6,707,439 | 7,243,014 | — | — | — |
 | [Anthony Johnson](../Team/Player_Cards/anthony_johnson.md) | 5,000,000 | 5,400,000 | 5,800,000 | — | — | — | — | — |
 | [Mike James](../Team/Player_Cards/mike_james.md) | 3,812,749 | — | — | — | — | — | — | — |
 | [Mehmet Okur](../Team/Player_Cards/mehmet_okur.md) | 3,110,381 | 3,393,143 | 3,675,905 | 3,958,667 | — | — | — | — |
@@ -32,7 +33,7 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | [Mike Wilks](../Team/Player_Cards/mike_wilks.md) | 745,248 | — | — | — | — | — | — | — |
 | [Matt Carroll](../Team/Player_Cards/matt_carroll.md) | 719,373 | — | — | — | — | — | — | — |
 | [Uroš Slokar](../Team/Player_Cards/uros_slokar.md) | — | — | — | — | — | — | — | — |
-| Counted | 65,169,186 | 61,342,709 | 20,797,867 | 7,944,626 | 0 | 0 | 0 | 0 |
+| Counted | 64,433,680 | 60,039,992 | 26,969,731 | 14,652,065 | 7,243,014 | 0 | 0 | 0 |
 
 ## Free-agent holds
 

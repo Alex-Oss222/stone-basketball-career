@@ -1,0 +1,11 @@
+{
+ "event_id": "trade-2006-01-16-7a8ce79392",
+ "date": "2006-01-16",
+ "question": "Does New Orleans/Oklahoma City Hornets accept Miami's proposal: Brian Grant, 2006 round 1 for P.J. Brown, Chris Mihm?",
+ "decider": "New Orleans/Oklahoma City Hornets (real club, drawn by rule)",
+ "options": {
+  "accept": 0.95,
+  "decline": 0.05
+ },
+ "basis": "New Orleans/Oklahoma City Hornets stance rebuilding (2002-03 record and the age of its core); its change on its own objective +0.183 (weights {'now': 0.35, 'future': 1.0, 'picks': 1.4, 'cash': 1.0}, star premium 7, pick chart, contract terms; a salary dump shedding $17,965,922 with a pick or prospect back). Floor -3%; above it, 50% at +6% (steepness 25.0) inside (0.02, 0.95). Miami's own gain +0.562."
+}

@@ -16,7 +16,7 @@
    "player": "Brian Grant",
    "bbr_id": "grantbr01",
    "from": "2003-06-26",
-   "until": null,
+   "until": "2006-01-16",
    "basis": "under contract"
   },
   {
@@ -161,6 +161,22 @@
    "until": null,
    "how": "trade",
    "basis": "acquired by trade from Milwaukee Bucks (2005-12-19-aaa5cfaab5)"
+  },
+  {
+   "player": "P.J. Brown",
+   "bbr_id": "brownpj01",
+   "from": "2006-01-16",
+   "until": null,
+   "how": "trade",
+   "basis": "acquired by trade from New Orleans/Oklahoma City Hornets (2006-01-16-7a8ce79392)"
+  },
+  {
+   "player": "Chris Mihm",
+   "bbr_id": "mihmch01",
+   "from": "2006-01-16",
+   "until": null,
+   "how": "trade",
+   "basis": "acquired by trade from New Orleans/Oklahoma City Hornets (2006-01-16-7a8ce79392)"
   }
  ],
  "void_definition": "An entry with void: true records a camp contract voided because the player was not truly available when Miami signed him (04_Training_Camp/signing_corrections.json). Its dates stay as played games used them, but it never made him Miami's: his real moves apply as if Miami had not signed him."

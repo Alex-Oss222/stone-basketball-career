@@ -4,7 +4,7 @@
 **Age at assessment:** 31 · **Height:** 6-9 · **Weight:** 254 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** 2006-01-15 
 
-**Contract/control:** Existing contract: 2 season(s) from 2005-06, $29,775,226 scheduled ($14,336,220 in 2005-06). (register, 2006-01-10) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** January 16, 2006: traded to New Orleans/Oklahoma City Hornets (2006-01-16-7a8ce79392). (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/grantbr01.html#contract) · [Contract history](../../../../Contracts/players/grantbr01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

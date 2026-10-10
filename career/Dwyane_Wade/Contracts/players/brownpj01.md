@@ -2,9 +2,9 @@
 
 # Contract | P.J. Brown
 
-Known through: 2006-01-15. [Open interactive contract](brownpj01.html#contract) · [Contract history](brownpj01.html#contract-history)
+Known through: 2006-01-16. [Open interactive contract](brownpj01.html#contract) · [Contract history](brownpj01.html#contract-history)
 
-P.J. Brown: under contract. Evidence cutoff: 2006-01-15.
+P.J. Brown: under contract. Evidence cutoff: 2006-01-16.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Detroit Pistons |
+| Assigned club | Miami Heat |
 | Signing club | New Orleans Hornets |
 | Contract ID | brownpj01-2003-07-16 |
 | Signing route / evidence basis | re sign |
@@ -101,6 +101,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
 | 2005-09-09 | Sacramento Kings | Detroit Pistons | 2005-summer-trade-2005-09-09-brownpj01-dampier01-jacksbo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
+| 2006-01-16 | New Orleans/Oklahoma City Hornets | Miami Heat | 2006-01-16-7a8ce79392 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json) |
 
 ### Evidence and coverage
 
@@ -112,6 +113,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
 
 ### Current control and contract coverage
 
@@ -120,7 +122,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | P.J. Brown |
-| Club / rights baseline | New Orleans/Oklahoma City Hornets |
+| Club / rights baseline | Miami Heat |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -185,7 +187,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Detroit Pistons |
+| Assigned club | Miami Heat |
 | Signing club | New Orleans Hornets |
 | Contract ID | brownpj01-2003-07-16 |
 | Signing route / evidence basis | re sign |
@@ -261,6 +263,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
 | 2005-09-09 | Sacramento Kings | Detroit Pistons | 2005-summer-trade-2005-09-09-brownpj01-dampier01-jacksbo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
+| 2006-01-16 | New Orleans/Oklahoma City Hornets | Miami Heat | 2006-01-16-7a8ce79392 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json) |
 
 ### Evidence and coverage
 
@@ -272,6 +275,109 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
+
+### P.J. Brown · existing contract; signing date not recorded
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | Not recorded |  |
+| Original term | Not recorded |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | $17,000,000 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Miami Heat |
+| Signing club | Not recorded |
+| Contract ID | brownpj01-baseline-2003-06-26 |
+| Signing route / evidence basis | Existing contract record |
+| Signing date | Not recorded |
+| Verified first season | Not recorded |
+| Verified final season | Not recorded |
+| Verified expiry date | Not recorded |
+| Status | under_contract |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2005-06 | $8,500,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $8,500,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. No exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+| 2006-07 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+| 2006-01-16 | New Orleans/Oklahoma City Hornets | Miami Heat | Not recorded | [Archived contract assignment](../contract_records.json) |
+
+### Evidence and coverage
+
+Acquired from New Orleans/Oklahoma City Hornets on January 16, 2006 by trade (2006-01-16-7a8ce79392); contract carried as the inventory records it (under_contract).
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+
+#### Agreement evidence
+
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
+- [Dated signed-contract archive](../contract_records.json)
 
 ### P.J. Brown · existing contract; signing date not recorded
 
@@ -377,3 +483,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/)
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 - [Dated league rights evidence](../../../../library/2003/league/nba_2003_free_agent_rights.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
+- [Dated signed-contract archive](../contract_records.json)

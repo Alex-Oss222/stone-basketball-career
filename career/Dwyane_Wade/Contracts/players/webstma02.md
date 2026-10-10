@@ -2,9 +2,9 @@
 
 # Contract | Martell Webster
 
-Known through: 2006-01-15. [Open interactive contract](webstma02.html#contract) · [Contract history](webstma02.html#contract-history)
+Known through: 2006-01-16. [Open interactive contract](webstma02.html#contract) · [Contract history](webstma02.html#contract-history)
 
-Martell Webster: under contract. Evidence cutoff: 2006-01-15.
+Martell Webster: under contract. Evidence cutoff: 2006-01-16.
 
 ## Current contract
 

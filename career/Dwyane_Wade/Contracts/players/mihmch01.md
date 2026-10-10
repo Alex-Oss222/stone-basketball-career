@@ -2,9 +2,9 @@
 
 # Contract | Chris Mihm
 
-Known through: 2006-01-15. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
+Known through: 2006-01-16. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
 
-Chris Mihm: under contract. Evidence cutoff: 2006-01-15.
+Chris Mihm: under contract. Evidence cutoff: 2006-01-16.
 
 ## Current contract
 
@@ -25,9 +25,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Phoenix Suns |
+| Assigned club | Miami Heat |
 | Signing club | Phoenix Suns |
-| Contract ID | mihmch01-2005-08-26 |
+| Contract ID | mihmch01-baseline-2003-06-26 |
 | Signing route / evidence basis | bird |
 | Signing date | 2005-08-26 |
 | Verified first season | 2005-06 |
@@ -102,16 +102,21 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2006-01-16 | New Orleans/Oklahoma City Hornets | Miami Heat | 2006-01-16-7a8ce79392 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json) |
 
 ### Evidence and coverage
 
-Simulated 2005 summer market: re sign on 2005-08-26. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+Acquired from New Orleans/Oklahoma City Hornets on January 16, 2006 by trade (2006-01-16-7a8ce79392); contract carried as the inventory records it (under_contract).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
 
 ### Current control and contract coverage
 
@@ -120,7 +125,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Chris Mihm |
-| Club / rights baseline | New Orleans/Oklahoma City Hornets |
+| Club / rights baseline | Miami Heat |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -185,9 +190,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Phoenix Suns |
+| Assigned club | Miami Heat |
 | Signing club | Phoenix Suns |
-| Contract ID | mihmch01-2005-08-26 |
+| Contract ID | mihmch01-baseline-2003-06-26 |
 | Signing route / evidence basis | bird |
 | Signing date | 2005-08-26 |
 | Verified first season | 2005-06 |
@@ -262,16 +267,21 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2006-01-16 | New Orleans/Oklahoma City Hornets | Miami Heat | 2006-01-16-7a8ce79392 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json) |
 
 ### Evidence and coverage
 
-Simulated 2005 summer market: re sign on 2005-08-26. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+Acquired from New Orleans/Oklahoma City Hornets on January 16, 2006 by trade (2006-01-16-7a8ce79392); contract carried as the inventory records it (under_contract).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
 
 ### Chris Mihm · 2004-10-05
 
@@ -484,5 +494,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2004-05/04_Training_Camp/camp_roster.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json)
 - [Dated signed-contract archive](../contract_records.json)
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)

@@ -37,7 +37,15 @@
    "first_game_missed": "2005-11-09-miami-heat-at-indiana-pacers",
    "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
    "minimum_games": 0
+  },
+  {
+   "player": "Chris Mihm",
+   "placed": "2006-01-16",
+   "activated": null,
+   "first_game_missed": "2006-01-16-miami-heat-at-los-angeles-lakers",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 0
   }
  ],
- "as_of": "2006-01-14"
+ "as_of": "2006-01-16"
 }

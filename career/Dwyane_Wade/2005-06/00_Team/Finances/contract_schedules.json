@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "owner": "ai_gm",
- "as_of": "2006-01-10",
+ "as_of": "2006-01-16",
  "team": "Miami Heat",
  "horizon": [
   "2005-06",
@@ -15,18 +15,18 @@
  ],
  "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
  "known_baseline": {
-  "2005-06": 65169186,
-  "2006-07": 45903703,
-  "2007-08": 20797867,
-  "2008-09": 7944626,
-  "2009-10": 0,
+  "2005-06": 64433680,
+  "2006-07": 60039992,
+  "2007-08": 26969731,
+  "2008-09": 14652065,
+  "2009-10": 7243014,
   "2010-11": 0,
   "2011-12": 0,
   "2012-13": 0
  },
  "conditional_known_amounts": {
   "2005-06": 0,
-  "2006-07": 15439006,
+  "2006-07": 0,
   "2007-08": 0,
   "2008-09": 0,
   "2009-10": 0,
@@ -88,7 +88,7 @@
   },
   {
    "player": "Brian Grant",
-   "status": "under_contract",
+   "status": "traded",
    "schedule": {
     "2003-04": 12130648,
     "2004-05": 13233434,
@@ -755,6 +755,60 @@
     "00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
    ],
    "contract_id": "smithjo02-baseline-2003-06-26"
+  },
+  {
+   "player": "P.J. Brown",
+   "bbr_id": "brownpj01",
+   "status": "under_contract",
+   "schedule": {
+    "2005-06": 8500000,
+    "2006-07": 8500000
+   },
+   "amount_kind": {
+    "2005-06": "contract_salary",
+    "2006-07": "contract_salary"
+   },
+   "acquired": {
+    "how": "trade",
+    "date": "2006-01-16",
+    "from": "New Orleans/Oklahoma City Hornets",
+    "record": "00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+   },
+   "notes": "Acquired from New Orleans/Oklahoma City Hornets on January 16, 2006 by trade (2006-01-16-7a8ce79392); contract carried as the inventory records it (under_contract).",
+   "sources": [
+    "00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+   ],
+   "contract_id": "brownpj01-baseline-2003-06-26"
+  },
+  {
+   "player": "Chris Mihm",
+   "bbr_id": "mihmch01",
+   "status": "under_contract",
+   "schedule": {
+    "2005-06": 5100714,
+    "2006-07": 5636289,
+    "2007-08": 6171864,
+    "2008-09": 6707439,
+    "2009-10": 7243014
+   },
+   "amount_kind": {
+    "2005-06": "contract_salary",
+    "2006-07": "contract_salary",
+    "2007-08": "contract_salary",
+    "2008-09": "contract_salary",
+    "2009-10": "contract_salary"
+   },
+   "acquired": {
+    "how": "trade",
+    "date": "2006-01-16",
+    "from": "New Orleans/Oklahoma City Hornets",
+    "record": "00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+   },
+   "notes": "Acquired from New Orleans/Oklahoma City Hornets on January 16, 2006 by trade (2006-01-16-7a8ce79392); contract carried as the inventory records it (under_contract).",
+   "sources": [
+    "00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+   ],
+   "contract_id": "mihmch01-baseline-2003-06-26"
   }
  ],
  "expiring_or_unresolved_without_scheduled_2003_04_salary": [
@@ -783,7 +837,7 @@
   "kind": "existing_obligations_only",
   "currency": "USD",
   "unit": "whole dollars",
-  "known_baseline_definition": "Counted 2005-06 team salary on 2006-01-10: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+  "known_baseline_definition": "Counted 2005-06 team salary on 2006-01-16: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
   "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
   "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
   "missing_definition": "Null means unresolved or not yet projected, never zero.",
@@ -828,7 +882,7 @@
   },
   {
    "season": "2005-06",
-   "scheduled_contract_salary": 65169186,
+   "scheduled_contract_salary": 64433680,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -836,8 +890,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 65169186,
-   "base_plus_priced_options": 65169186,
+   "known_base_allocations": 64433680,
+   "base_plus_priced_options": 64433680,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": 0,
@@ -845,16 +899,16 @@
   },
   {
    "season": "2006-07",
-   "scheduled_contract_salary": 45903703,
+   "scheduled_contract_salary": 60039992,
    "unsigned_first_round_holds": 0,
-   "known_conditional_salary": 15439006,
+   "known_conditional_salary": 0,
    "unpriced_option_count": 0,
    "free_agent_holds": null,
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 45903703,
-   "base_plus_priced_options": 61342709,
+   "known_base_allocations": 60039992,
+   "base_plus_priced_options": 60039992,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": null,
@@ -862,7 +916,7 @@
   },
   {
    "season": "2007-08",
-   "scheduled_contract_salary": 20797867,
+   "scheduled_contract_salary": 26969731,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -870,8 +924,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 20797867,
-   "base_plus_priced_options": 20797867,
+   "known_base_allocations": 26969731,
+   "base_plus_priced_options": 26969731,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": null,
@@ -879,7 +933,7 @@
   },
   {
    "season": "2008-09",
-   "scheduled_contract_salary": 7944626,
+   "scheduled_contract_salary": 14652065,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -887,8 +941,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 7944626,
-   "base_plus_priced_options": 7944626,
+   "known_base_allocations": 14652065,
+   "base_plus_priced_options": 14652065,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": null,
@@ -896,7 +950,7 @@
   },
   {
    "season": "2009-10",
-   "scheduled_contract_salary": 0,
+   "scheduled_contract_salary": 7243014,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -904,8 +958,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 0,
-   "base_plus_priced_options": 0,
+   "known_base_allocations": 7243014,
+   "base_plus_priced_options": 7243014,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": null,

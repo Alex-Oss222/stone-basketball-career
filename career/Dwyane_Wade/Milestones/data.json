@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2006-01-15",
+  "as_of": "2006-01-16",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 21,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2006-01-14-miami-heat-at-utah-jazz",
+  "current_event": "2006-01-16-trade-2006-01-16-7a8ce79392",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2006-01-15"
+              "2006-01-16"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2006-01-14-miami-heat-at-utah-jazz"
+              "2006-01-16-trade-2006-01-16-7a8ce79392"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2006-01-15",
+              "2006-01-16",
               "Current checkpoint",
-              "2006-01-14-miami-heat-at-utah-jazz",
+              "2006-01-16-trade-2006-01-16-7a8ce79392",
               "Recorded",
               {
                 "label": "Owning event",
@@ -94,8 +94,18 @@
               }
             ],
             [
-              "2006-01-16",
-              "Next Miami game, at Los Angeles Lakers",
+              "2006-01-18",
+              "Staff rotation review",
+              "Coaching staff (same rule for every player)",
+              "Scheduled; a role request may be logged before it",
+              {
+                "label": "Rule",
+                "href": "../../../docs/front_office.md"
+              }
+            ],
+            [
+              "2006-01-20",
+              "Next Miami game, vs San Antonio Spurs",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
@@ -104,23 +114,13 @@
               }
             ],
             [
-              "2006-01-16",
+              "2006-01-23",
               "League awards announced: Player of the Week",
               "League (closed results only)",
               "Scheduled",
               {
                 "label": "Awards",
                 "href": "#calendar"
-              }
-            ],
-            [
-              "2006-01-18",
-              "Staff rotation review",
-              "Coaching staff (same rule for every player)",
-              "Scheduled; a role request may be logged before it",
-              {
-                "label": "Rule",
-                "href": "../../../docs/front_office.md"
               }
             ],
             [
@@ -448,6 +448,10 @@
           "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -636,7 +640,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-15"
+          "value": "2006-01-16"
         },
         {
           "label": "Team",
@@ -688,7 +692,7 @@
             ],
             [
               "Source snapshot",
-              "2006-01-10"
+              "2006-01-16"
             ]
           ]
         },
@@ -864,6 +868,10 @@
         {
           "label": "Transaction record",
           "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
         },
         {
           "label": "Closed game",
@@ -1054,7 +1062,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-15"
+          "value": "2006-01-16"
         },
         {
           "label": "Team",
@@ -1321,6 +1329,10 @@
           "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -1509,7 +1521,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-15"
+          "value": "2006-01-16"
         },
         {
           "label": "Team",
@@ -1671,6 +1683,10 @@
             [
               "2005-12-19",
               "Matt Harpring traded to Milwaukee Bucks (2005-12-19-aaa5cfaab5)."
+            ],
+            [
+              "2006-01-16",
+              "Brian Grant traded to New Orleans/Oklahoma City Hornets (2006-01-16-7a8ce79392)."
             ]
           ]
         },
@@ -1781,6 +1797,10 @@
         {
           "label": "Transaction record",
           "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
         },
         {
           "label": "Closed game",
@@ -1971,7 +1991,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-15"
+          "value": "2006-01-16"
         },
         {
           "label": "Team",
@@ -2176,6 +2196,10 @@
           "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -2364,7 +2388,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-15"
+          "value": "2006-01-16"
         },
         {
           "label": "Team",
@@ -2407,6 +2431,19 @@
               {
                 "label": "Transaction record",
                 "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+              }
+            ],
+            [
+              "2006-01-16",
+              "Completed",
+              "New Orleans/Oklahoma City Hornets",
+              "Brian Grant",
+              "P.J. Brown; Chris Mihm",
+              "2006-01-16",
+              "accept",
+              {
+                "label": "Transaction record",
+                "href": "../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
               }
             ]
           ]
@@ -2572,6 +2609,10 @@
         {
           "label": "Transaction record",
           "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
         },
         {
           "label": "Closed game",
@@ -2762,7 +2803,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-15"
+          "value": "2006-01-16"
         },
         {
           "label": "Team",
@@ -2967,6 +3008,10 @@
           "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -3155,7 +3200,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-15"
+          "value": "2006-01-16"
         },
         {
           "label": "Team",
@@ -3328,6 +3373,14 @@
             [
               "2006-01-10",
               "Guarantee date: no contract guaranteed for 2005-06."
+            ],
+            [
+              "2006-01-16",
+              "Miami proposes to New Orleans/Oklahoma City Hornets: Brian Grant for P.J. Brown, Chris Mihm (acceptance drawn by the engine, trade-2006-01-16-7a8ce79392). Record: `00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json`."
+            ],
+            [
+              "2006-01-16",
+              "Trade with New Orleans/Oklahoma City Hornets: Miami sends Brian Grant, 2006 round 1 pick for P.J. Brown, Chris Mihm (accepted by engine draw trade-2006-01-16-7a8ce79392). Record: `00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json`."
             ]
           ]
         },
@@ -3422,6 +3475,10 @@
         {
           "label": "Transaction record",
           "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
         },
         {
           "label": "Closed game",
@@ -3612,7 +3669,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-15"
+          "value": "2006-01-16"
         },
         {
           "label": "Team",
@@ -3629,7 +3686,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "45 closed game records in 2005-06 through 2006-01-15. Competitions remain separate.",
+      "summary": "45 closed game records in 2005-06 through 2006-01-16. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -4283,6 +4340,10 @@
           "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -4471,7 +4532,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-15"
+          "value": "2006-01-16"
         },
         {
           "label": "Team",

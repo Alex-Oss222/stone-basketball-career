@@ -1,0 +1,12 @@
+{
+ "date": "2006-01-16",
+ "decider": "New Orleans/Oklahoma City Hornets (real club, drawn by rule)",
+ "event_id": "trade-2006-01-16-7a8ce79392",
+ "kind": "decision",
+ "options": {
+  "accept": 0.95,
+  "decline": 0.05
+ },
+ "outcome": "accept",
+ "question": "Does New Orleans/Oklahoma City Hornets accept Miami's proposal: Brian Grant, 2006 round 1 for P.J. Brown, Chris Mihm?"
+}

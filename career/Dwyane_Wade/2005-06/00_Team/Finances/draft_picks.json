@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2005-12-19",
+ "as_of": "2006-01-16",
  "team": "Miami Heat",
  "purpose": "Miami's own future draft picks as known on the career date. A pick is tradable only when owned here; ownership changes are appended by the trade write-back with the trade id.",
  "basis": "Assumption at the June 26, 2003 checkpoint: Miami owns its own 2004 to 2007 first- and second-round picks; no pre-checkpoint trade of these picks is recorded in the repository's sources. Verify against a transactions record before relying on a specific pick.",
@@ -9,9 +9,15 @@
   {
    "year": 2006,
    "round": 1,
-   "owned": true,
+   "owned": false,
    "original_club": "Miami Heat",
-   "history": []
+   "history": [
+    {
+     "date": "2006-01-16",
+     "to": "New Orleans/Oklahoma City Hornets",
+     "trade": "2006-01-16-7a8ce79392"
+    }
+   ]
   },
   {
    "year": 2006,

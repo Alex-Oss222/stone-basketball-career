@@ -2811,6 +2811,46 @@
     "salary": "pro-rated minimum"
    },
    "note": "kept: 11.8 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2005-06-market-2006-01-16-expire-williaa01",
+   "date": "2006-01-16",
+   "kind": "expire",
+   "player": "Aaron Williams",
+   "bbr_id": "williaa01",
+   "from": "Golden State Warriors",
+   "to": null,
+   "role": {
+    "player_id": "Aaron Williams",
+    "bbr_id": "williaa01",
+    "position": "C",
+    "games": 48,
+    "minutes": 791
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.7 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-01-16-ten_day-williaa01",
+   "date": "2006-01-16",
+   "kind": "ten_day",
+   "player": "Aaron Williams",
+   "bbr_id": "williaa01",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Aaron Williams",
+    "bbr_id": "williaa01",
+    "position": "C",
+    "games": 48,
+    "minutes": 791
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-01-26",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.37 x fit"
   }
  ],
  "market_days": [
@@ -2889,6 +2929,7 @@
   "2006-01-12",
   "2006-01-13",
   "2006-01-14",
-  "2006-01-15"
+  "2006-01-15",
+  "2006-01-16"
  ]
 }

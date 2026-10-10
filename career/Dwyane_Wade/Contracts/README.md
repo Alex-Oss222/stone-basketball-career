@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-01-15. [Search the contract directory](index.html)
+Known through 2006-01-16. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -89,7 +89,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Brevin Knight](players/knighbr01.md) | Portland Trail Blazers | under contract | Brevin Knight · 2005-08-05 | 2 |
 | [Brian Cardinal](players/cardibr01.md) | Chicago Bulls | under contract | Brian Cardinal · 2004-07-15 | 1 |
 | [Brian Cook](players/cookbr01.md) | Los Angeles Lakers | No verified contract record | No verified current agreement | 0 |
-| [Brian Grant](players/grantbr01.md) | Miami Heat | under contract | Brian Grant · 2000-08-30 | 1 |
+| [Brian Grant](players/grantbr01.md) | New Orleans/Oklahoma City Hornets | under contract | Brian Grant · 2000-08-30 | 1 |
 | [Brian Scalabrine](players/scalabr01.md) | Boston Celtics | under contract | No verified current agreement | 2 |
 | [Brian Shaw](players/shawbr01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Brian Skinner](players/skinnbr01.md) | Utah Jazz | under contract | No verified current agreement | 3 |
@@ -120,7 +120,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Chris Crawford](players/crawfch01.md) | Free agent | under contract | Chris Crawford · 1999-08-24 | 1 |
 | [Chris Jefferies](players/jeffech01.md) | Free agent | under rookie contract | Chris Jefferies · 2002-09-30 | 1 |
 | [Chris Kaman](players/kamanch01.md) | Los Angeles Clippers | No verified contract record | No verified current agreement | 0 |
-| [Chris Mihm](players/mihmch01.md) | New Orleans/Oklahoma City Hornets | under contract | Chris Mihm · 2005-08-26 | 3 |
+| [Chris Mihm](players/mihmch01.md) | Miami Heat | under contract | Chris Mihm · 2005-08-26 | 3 |
 | [Chris Mills](players/millsch01.md) | Free agent | under contract | Chris Mills · existing contract; signing date not recorded | 1 |
 | [Chris Owens](players/owensch01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |
 | [Chris Paul](players/paulch01.md) | Utah Jazz | under contract | Chris Paul · 2005-07-01 | 1 |
@@ -478,7 +478,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Omar Cook](players/cookom01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Orien Greene](players/greenor01.md) | San Antonio Spurs | under contract | Orien Greene · 2005-07-01 | 1 |
 | [Othella Harrington](players/harriot01.md) | New York Knicks | under contract | Othella Harrington · existing contract; signing date not recorded | 1 |
-| [P.J. Brown](players/brownpj01.md) | New Orleans/Oklahoma City Hornets | under contract | P.J. Brown · 2003-07-16 | 2 |
+| [P.J. Brown](players/brownpj01.md) | Miami Heat | under contract | P.J. Brown · 2003-07-16 | 3 |
 | [Paccelis Morlende](players/morlepa01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Pape Sow](players/papesow.md) | Milwaukee Bucks | under contract | Pape Sow · 2005-09-30 | 2 |
 | [Pat Burke](players/burkepa01.md) | Phoenix Suns | under contract | Pat Burke · 2005-08-05 | 2 |

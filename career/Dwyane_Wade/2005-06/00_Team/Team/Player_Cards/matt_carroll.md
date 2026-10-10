@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG  
 **Age at assessment:** 25 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-01-15 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-01-16 
 
-**Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $719,373 scheduled ($719,373 in 2005-06). (register, 2006-01-10) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $719,373 scheduled ($719,373 in 2005-06). (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/carroma01.html#contract) · [Contract history](../../../../Contracts/players/carroma01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

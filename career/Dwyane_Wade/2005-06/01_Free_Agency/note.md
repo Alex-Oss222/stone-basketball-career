@@ -15,5 +15,6 @@ status: complete
 - 2005-10-31: Bonzi Wells released at the cut to 15 (non-guaranteed camp contract; no dead money).
 - 2005-10-31: Sam Cassell released at the cut to 15 (non-guaranteed camp contract; no dead money).
 - 2005-12-19: Matt Harpring traded to Milwaukee Bucks (2005-12-19-aaa5cfaab5).
+- 2006-01-16: Brian Grant traded to New Orleans/Oklahoma City Hornets (2006-01-16-7a8ce79392).
 
 ## Consequences
