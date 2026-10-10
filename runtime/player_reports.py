@@ -11,6 +11,7 @@ from pathlib import Path
 
 from .career_stats import NATIONAL_PATHS, aggregate, collect_games, identity_at, select
 from .career_dashboard import career_overview
+from . import identity_contract
 from .award_records import load_awards, honors_in_scope
 from .stat_layout import ReportStyle
 from .player_cards import build_player_cards
@@ -52,12 +53,13 @@ def link(page, target, label):
     return f"[{label}]({Path(os.path.relpath(target, page.parent)).as_posix()})"
 
 
-def identity_block(identity, as_of, profile_link=None, full=False, *, style=None, page=None):
+def identity_block(identity, as_of, profile_link=None, full=False, *, style=None, page=None, season=None):
+    # A page inside a season's folders shows that season's honors and contract terms; career pages show every season's
+    # honors and the terms of the season open on their cutoff.
+    season = season or next((part for part in (page.parts if page is not None else ()) if re.fullmatch(r"\d{4}-\d{2}", part)), None)
     if style is not None:
         full = full or style.detailed
-        plain = identity_block(identity, as_of, profile_link, full)
-        # A page inside a season's folders shows that season's honors; career pages show every season's.
-        season = next((part for part in (page.parts if page is not None else ()) if re.fullmatch(r"\d{4}-\d{2}", part)), None)
+        plain = identity_block(identity, as_of, profile_link, full, season=season)
         honors = honors_in_scope(style.awards, known_on=as_of, season=season)
         plain += f"### Earned {season} honors\n\n" if season else "### Earned career honors\n\n"
         if honors:
@@ -70,7 +72,7 @@ def identity_block(identity, as_of, profile_link=None, full=False, *, style=None
         if full:
             return visual + plain.split("## Professional identity\n\n", 1)[1]
         return visual + "<details>\n<summary>Personal information and earned honors: text version</summary>\n\n" + plain.split("## Professional identity\n\n", 1)[1] + "</details>\n\n"
-    p = identity_at(identity, as_of)
+    p = identity_at(identity, as_of, season)
     text = "## Professional identity\n\n"
     text += table(["Player", "Age on report date", "Team / league", "Position", "Number", "Status"], [[
         p["full_name"], p["age"], f'{p["team"]} / {p["league"]}', " / ".join(p["positions"]),
@@ -248,6 +250,7 @@ def month_window(season, month):
 def build_reports(root: Path, player: Path) -> dict[Path, str]:
     config = json.loads((root / "foundation/season_structure.json").read_text(encoding="utf-8"))
     identity = json.loads((player / "professional_identity.json").read_text(encoding="utf-8"))
+    identity = identity_contract.attach(identity, root, player)       # each season's contract terms from its record
     # A season is live once it has a current state; the next season's folder can exist earlier (the season close
     # writes its expectations there) and is not a season to report yet.
     seasons = sorted(p for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)

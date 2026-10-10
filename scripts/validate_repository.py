@@ -675,6 +675,8 @@ def validate():
     errors.extend(injury_type_errors(ROOT))
     from runtime.write_back import identity_errors                      # one identity per player; card club = actual club
     errors.extend(identity_errors(ROOT))
+    from runtime.identity_contract import errors as identity_contract_errors   # each season's contract terms derived
+    errors.extend(identity_contract_errors(ROOT))
 
     from runtime.trajectories import trajectory_errors
     errors.extend(trajectory_errors(ROOT))
