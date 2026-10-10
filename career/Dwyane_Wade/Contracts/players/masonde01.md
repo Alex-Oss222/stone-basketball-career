@@ -2,9 +2,9 @@
 
 # Contract | Desmond Mason
 
-Known through: 2006-02-02. [Open interactive contract](masonde01.html#contract) · [Contract history](masonde01.html#contract-history)
+Known through: 2006-02-05. [Open interactive contract](masonde01.html#contract) · [Contract history](masonde01.html#contract-history)
 
-Desmond Mason: under contract. Evidence cutoff: 2006-02-02.
+Desmond Mason: under contract. Evidence cutoff: 2006-02-05.
 
 ## Current contract
 

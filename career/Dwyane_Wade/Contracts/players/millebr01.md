@@ -2,9 +2,9 @@
 
 # Contract | Brad Miller
 
-Known through: 2006-02-02. [Open interactive contract](millebr01.html#contract) · [Contract history](millebr01.html#contract-history)
+Known through: 2006-02-05. [Open interactive contract](millebr01.html#contract) · [Contract history](millebr01.html#contract-history)
 
-Brad Miller: under contract. Evidence cutoff: 2006-02-02.
+Brad Miller: under contract. Evidence cutoff: 2006-02-05.
 
 ## Current contract
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-02-02",
+  "as_of": "2006-02-05",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -806,7 +806,7 @@
     {
       "player_id": "russebr01",
       "name": "Bryon Russell",
-      "team": "Free agent",
+      "team": "Houston Rockets",
       "status": "under contract",
       "current_contract_id": "russebr01-2003-10-01",
       "recorded_agreements": 2,
@@ -1958,7 +1958,7 @@
     {
       "player_id": "johnser02",
       "name": "Ervin Johnson",
-      "team": "Free agent",
+      "team": "Cleveland Cavaliers",
       "status": "under contract",
       "current_contract_id": "johnser02-existing-d23ec1018463",
       "recorded_agreements": 1,
@@ -3389,7 +3389,7 @@
     {
       "player_id": "hunteli01",
       "name": "Lindsey Hunter",
-      "team": "Atlanta Hawks",
+      "team": "Free agent",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4451,7 +4451,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "Phoenix Suns",
+      "team": "Atlanta Hawks",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

@@ -2,9 +2,9 @@
 
 # Contract | Travis Diener
 
-Known through: 2006-02-02. [Open interactive contract](dienetr01.html#contract) · [Contract history](dienetr01.html#contract-history)
+Known through: 2006-02-05. [Open interactive contract](dienetr01.html#contract) · [Contract history](dienetr01.html#contract-history)
 
-Travis Diener: under contract. Evidence cutoff: 2006-02-02.
+Travis Diener: under contract. Evidence cutoff: 2006-02-05.
 
 ## Current contract
 

@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2006-02-02 · Miami Heat · active
+Career date: 2006-02-05 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-53 closed game records in 2005-06 through 2006-02-02. Competitions remain separate.
+55 closed game records in 2005-06 through 2006-02-05. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 46 | 37.5 | 26.5 | 6.3 | 4.1 | 1.8 | Complete |
+| regular | 48 | 37.5 | 26.8 | 6.3 | 4.0 | 1.8 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 423 | 753 | 0.562 | 70 | 150 | 0.467 |
+| regular | 445 | 797 | 0.558 | 73 | 158 | 0.462 |
 
 ## Closed source games
 
@@ -83,6 +83,8 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2006-01-27 | regular | Charlotte Bobcats | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_4.md) |
 | 2006-01-29 | regular | Houston Rockets | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md) |
 | 2006-01-30 | regular | Los Angeles Clippers | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md) |
+| 2006-02-02 | regular | Cleveland Cavaliers | Played | [Closed game](../2005-06/06_Regular_Season/02_February/Week_1/Game_1.md) |
+| 2006-02-04 | regular | New Jersey Nets | Played | [Closed game](../2005-06/06_Regular_Season/02_February/Week_1/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -181,4 +183,6 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_4.md)
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md)
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md)
+- [Closed game](../2005-06/06_Regular_Season/02_February/Week_1/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/02_February/Week_1/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

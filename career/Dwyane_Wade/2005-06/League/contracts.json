@@ -4421,13 +4421,14 @@
   {
    "player": "Bernard Robinson",
    "bbr_id": "robinbe01",
-   "club": "Seattle SuperSonics",
+   "club": "Milwaukee Bucks",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2005-06": 641748
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Seattle SuperSonics"
   },
   {
    "player": "Nate Robinson",
@@ -4535,7 +4536,7 @@
   {
    "player": "Luke Schenscher",
    "bbr_id": "schenlu01",
-   "club": "Golden State Warriors",
+   "club": "Indiana Pacers",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -4603,7 +4604,7 @@
   {
    "player": "Charles Smith",
    "bbr_id": "smithch04",
-   "club": "Washington Wizards",
+   "club": "Atlanta Hawks",
    "route": "minimum",
    "kind": "new",
    "schedule": {

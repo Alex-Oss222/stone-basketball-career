@@ -2,9 +2,9 @@
 
 # Contract | Rafer Alston
 
-Known through: 2006-02-02. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
+Known through: 2006-02-05. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
 
-Rafer Alston: camp contract. Evidence cutoff: 2006-02-02.
+Rafer Alston: camp contract. Evidence cutoff: 2006-02-05.
 
 ## Current contract
 
