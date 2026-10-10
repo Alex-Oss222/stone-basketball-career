@@ -2,9 +2,9 @@
 
 # Contract | John Thomas
 
-Known through: 2006-01-16. [Open interactive contract](thomajo02.html#contract) · [Contract history](thomajo02.html#contract-history)
+Known through: 2006-01-22. [Open interactive contract](thomajo02.html#contract) · [Contract history](thomajo02.html#contract-history)
 
-John Thomas: under contract. Evidence cutoff: 2006-01-16.
+John Thomas: under contract. Evidence cutoff: 2006-01-22.
 
 ## Current contract
 

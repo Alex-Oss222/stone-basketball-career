@@ -2,9 +2,9 @@
 
 # Contract | Anderson Varejão
 
-Known through: 2006-01-16. [Open interactive contract](andersonvarejo.html#contract) · [Contract history](andersonvarejo.html#contract-history)
+Known through: 2006-01-22. [Open interactive contract](andersonvarejo.html#contract) · [Contract history](andersonvarejo.html#contract-history)
 
-Anderson Varejão: under contract. Evidence cutoff: 2006-01-16.
+Anderson Varejão: under contract. Evidence cutoff: 2006-01-22.
 
 ## Current contract
 

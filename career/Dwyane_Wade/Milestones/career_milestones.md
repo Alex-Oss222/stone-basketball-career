@@ -2,7 +2,7 @@
 
 # Dwyane Wade | Career milestones
 
-Career date: 2006-01-16. Born 1984-01-17. 189 regular-season and 14 playoff games closed.
+Career date: 2006-01-22. Born 1984-01-17. 192 regular-season and 14 playoff games closed.
 
 Milestones count closed regular-season games (the NBA convention); playoff milestones are their own record and preseason never counts. Each is dated by the game that reached it, with his age on that day. [Season tracker](calendar.md) · [All milestones](README.md)
 
@@ -37,19 +37,20 @@ Milestones count closed regular-season games (the NBA convention); playoff miles
 | 250 career steals | 2005-11-28 | 21 years, 315 days | 2005-06 | 165 | [New York Knicks](../2005-06/06_Regular_Season/11_November/Week_4/Game_4.md) | 252 |
 | 1,000 career free throws made | 2005-12-25 | 21 years, 342 days | 2005-06 | 179 | [Los Angeles Lakers](../2005-06/06_Regular_Season/12_December/Week_4/Game_2.md) | 1,009 |
 | 1,000 career rebounds | 2006-01-11 | 21 years, 359 days | 2005-06 | 187 | [Golden State Warriors](../2005-06/06_Regular_Season/01_January/Week_2/Game_2.md) | 1,002 |
+| 4,000 career points | 2006-01-20 | 22 years, 3 days | 2005-06 | 191 | [San Antonio Spurs](../2005-06/06_Regular_Season/01_January/Week_3/Game_2.md) | 4,019 |
 
 ## Next regular-season milestones
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 4,000 career points | 3,945 | 55 |
-| 1,500 career rebounds | 1,007 | 493 |
-| 1,000 career assists | 797 | 203 |
-| 500 career steals | 303 | 197 |
-| 250 career blocks | 210 | 40 |
-| 250 career three-pointers made | 214 | 36 |
-| 2,000 career free throws made | 1,061 | 939 |
-| 200 career games played | 189 | 11 |
+| 5,000 career points | 4,044 | 956 |
+| 1,500 career rebounds | 1,022 | 478 |
+| 1,000 career assists | 812 | 188 |
+| 500 career steals | 309 | 191 |
+| 250 career blocks | 212 | 38 |
+| 250 career three-pointers made | 220 | 30 |
+| 2,000 career free throws made | 1,084 | 916 |
+| 200 career games played | 192 | 8 |
 
 ## Playoff milestones reached
 

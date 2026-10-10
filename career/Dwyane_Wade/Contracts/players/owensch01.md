@@ -2,9 +2,9 @@
 
 # Contract | Chris Owens
 
-Known through: 2006-01-16. [Open interactive contract](owensch01.html#contract) · [Contract history](owensch01.html#contract-history)
+Known through: 2006-01-22. [Open interactive contract](owensch01.html#contract) · [Contract history](owensch01.html#contract-history)
 
-Chris Owens: expired or unresolved. Evidence cutoff: 2006-01-16.
+Chris Owens: expired or unresolved. Evidence cutoff: 2006-01-22.
 
 ## Current contract
 

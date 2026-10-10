@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `kiddja01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-01-16 · **Club on this date:** Milwaukee Bucks · **Basis:** Milwaukee Bucks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-01-22 · **Club on this date:** Milwaukee Bucks · **Basis:** Milwaukee Bucks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #5 · **Born:** 1973-03-23 · **Age on card date:** 32  
 **Registry ID:** `kiddja01` · [Basketball-Reference page](https://www.basketball-reference.com/players/k/kiddja01.html) · ESPN ID 429
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `kiddja
 
 ## Simulated statistics
 
-As of **2006-01-16**: 37 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-01-22**: 41 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 32 | MIL | NBA | PG | 36 | 36 | 38.7 | 4.4 | 10.9 | .408 | 1.7 | 4.7 | .355 | 2.8 | 6.2 | .448 | .485 | 3.1 | 4.1 | .757 | 1.0 | 6.2 | 7.2 | 9.0 | 2.2 | 0.4 | 2.4 | 2.7 | 13.7 | .538 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 32 | MIL | NBA | PG | 40 | 40 | 39.1 | 4.5 | 10.9 | .411 | 1.7 | 4.7 | .360 | 2.8 | 6.2 | .450 | .489 | 3.2 | 4.2 | .766 | 1.0 | 6.0 | 7.1 | 9.1 | 2.2 | 0.5 | 2.4 | 2.6 | 13.9 | .544 | — |
 
 ### Month
 
@@ -43,7 +43,7 @@ As of **2006-01-16**: 37 closed games feed this card. Per-game columns use the r
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [November 2005](../2005-06/11_November/League_Stats.md) | 32 | MIL | NBA | PG | 15 | 15 | 39.3 | 3.8 | 11.8 | .322 | 1.6 | 5.3 | .304 | 2.2 | 6.5 | .337 | .390 | 3.3 | 4.2 | .794 | 0.9 | 6.1 | 7.1 | 9.1 | 2.4 | 0.6 | 2.1 | 2.8 | 12.5 | .459 | — |
 | [December 2005](../2005-06/12_December/League_Stats.md) | 32 | MIL | NBA | PG | 14 | 14 | 38.0 | 4.5 | 10.5 | .429 | 1.6 | 4.6 | .354 | 2.9 | 5.9 | .488 | .507 | 2.5 | 3.2 | .778 | 1.2 | 6.4 | 7.6 | 9.0 | 2.0 | 0.4 | 2.7 | 2.6 | 13.1 | .552 | — |
-| [January 2006](../2005-06/01_January/League_Stats.md) | 32 | MIL | NBA | PG | 7 | 7 | 39.0 | 5.7 | 9.7 | .588 | 1.9 | 3.6 | .520 | 3.9 | 6.1 | .628 | .684 | 3.9 | 5.7 | .675 | 0.9 | 5.9 | 6.7 | 8.6 | 2.0 | 0.3 | 2.6 | 2.9 | 17.1 | .701 | — |
+| [January 2006](../2005-06/01_January/League_Stats.md) | 32 | MIL | NBA | PG | 11 | 11 | 40.2 | 5.5 | 10.4 | .526 | 1.9 | 4.1 | .467 | 3.5 | 6.3 | .565 | .618 | 3.9 | 5.4 | .729 | 0.9 | 5.5 | 6.5 | 9.0 | 2.1 | 0.5 | 2.5 | 2.3 | 16.7 | .657 | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 32 | MIL | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [March 2006](../2005-06/03_March/League_Stats.md) | 32 | MIL | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [April 2006](../2005-06/04_April/League_Stats.md) | 32 | MIL | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -67,7 +67,7 @@ As of **2006-01-16**: 37 closed games feed this card. Per-game columns use the r
 | [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 32 | MIL | NBA | PG | 4 | 4 | 35.7 | 5.8 | 11.5 | .500 | 2.5 | 6.2 | .400 | 3.2 | 5.2 | .619 | .609 | 3.0 | 4.2 | .706 | 1.2 | 2.5 | 3.8 | 8.8 | 1.2 | 0.2 | 2.2 | 3.0 | 17.0 | .636 | — |
 | [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 32 | MIL | NBA | PG | 4 | 4 | 37.9 | 5.5 | 10.2 | .537 | 2.0 | 3.5 | .571 | 3.5 | 6.8 | .519 | .634 | 2.0 | 3.2 | .615 | 1.0 | 5.8 | 6.8 | 9.0 | 1.5 | 0.2 | 3.0 | 3.2 | 15.0 | .642 | — |
 | [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 32 | MIL | NBA | PG | 3 | 3 | 40.5 | 6.0 | 9.0 | .667 | 1.7 | 3.7 | .455 | 4.3 | 5.3 | .812 | .759 | 6.3 | 9.0 | .704 | 0.7 | 6.0 | 6.7 | 8.0 | 2.7 | 0.3 | 2.0 | 2.3 | 20.0 | .772 | — |
-| [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 32 | MIL | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 32 | MIL | NBA | PG | 4 | 4 | 42.2 | 5.0 | 11.5 | .435 | 2.0 | 5.0 | .400 | 3.0 | 6.5 | .462 | .522 | 4.0 | 4.8 | .842 | 1.0 | 5.0 | 6.0 | 9.8 | 2.2 | 0.8 | 2.2 | 1.2 | 16.0 | .589 | — |
 | [January 2006 week 4 (22 to 31)](../2005-06/01_January/Week_4/League_Stats.md) | 32 | MIL | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2006 week 1 (01 to 07)](../2005-06/02_February/Week_1/League_Stats.md) | 32 | MIL | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2006 week 2 (08 to 14)](../2005-06/02_February/Week_2/League_Stats.md) | 32 | MIL | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -85,33 +85,33 @@ As of **2006-01-16**: 37 closed games feed this card. Per-game columns use the r
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 392 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 438 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 37 of 37 closed games; 36 tracked appearances form the denominator below (2005-11-02 to 2006-01-14).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 41 of 41 closed games; 40 tracked appearances form the denominator below (2005-11-02 to 2006-01-21).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 50 | 108 | 46.3% | 2.78 | 3.00 |
-| Outside paint, under 12 ft | 9 | 13 | 69.2% | 0.50 | 0.36 |
-| Outside paint, 12 to under 18 ft | 15 | 42 | 35.7% | 0.83 | 1.17 |
-| 18 ft to the three-point line | 26 | 60 | 43.3% | 1.44 | 1.67 |
-| Three-point range | 60 | 169 | 35.5% | 5.00 | 4.69 |
-| All field goals | 160 | 392 | 40.8% | 10.56 | 10.89 |
+| Paint | 56 | 120 | 46.7% | 2.80 | 3.00 |
+| Outside paint, under 12 ft | 10 | 15 | 66.7% | 0.50 | 0.38 |
+| Outside paint, 12 to under 18 ft | 18 | 49 | 36.7% | 0.90 | 1.23 |
+| 18 ft to the three-point line | 28 | 65 | 43.1% | 1.40 | 1.62 |
+| Three-point range | 68 | 189 | 36.0% | 5.10 | 4.72 |
+| All field goals | 180 | 438 | 41.1% | 10.70 | 10.95 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 37 closed regular-season games through 2006-01-16. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 41 closed regular-season games through 2006-01-22. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | NJN | 80 | 80 | 37.4 | 18.7 | 6.3 | 8.9 | 2.2 | 0.3 | 3.7 | 41.4% | 34.1% | 84.1% |
 | 2003-04 | NJ | 71 | 71 | 37.6 | 16.8 | 7.7 | 9.0 | 1.6 | 0.2 | 3.2 | 38.9% | 35.2% | 77.0% |
 | 2004-05 | NJ | 66 | 66 | 42.9 | 17.5 | 9.1 | 8.3 | 1.9 | 0.2 | 3.0 | 41.7% | 39.6% | 70.9% |
-| 2005-06 | MIL | 36 | 36 | 38.7 | 13.7 | 7.2 | 9.0 | 2.2 | 0.4 | 2.4 | 40.8% | 35.5% | 75.7% |
+| 2005-06 | MIL | 40 | 40 | 39.1 | 13.9 | 7.1 | 9.1 | 2.2 | 0.5 | 2.4 | 41.1% | 36.0% | 76.6% |
 
 ## Playoff statistics by year
 
@@ -124,7 +124,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-01-16, from closed award decisions (6 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-01-22, from closed award decisions (6 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

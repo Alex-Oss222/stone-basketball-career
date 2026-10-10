@@ -4,11 +4,11 @@
 
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2006-01-16](../../assets/stat_reports/personal_2005-06_2006-01-16.svg)
+![Player personal information and earned 2005-06 awards through 2006-01-22](../../assets/stat_reports/personal_2005-06_2006-01-22.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
-| Dwyane Tyrone Wade Jr. | 21 | Miami Heat / NBA | SG / PG | 3 | Under contract |
+| Dwyane Tyrone Wade Jr. | 22 | Miami Heat / NBA | SG / PG | 3 | Under contract |
 
 | Identity field | Recorded value |
 | --- | --- |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2006-01-16; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2006-01-22; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 

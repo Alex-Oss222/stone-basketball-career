@@ -2,9 +2,9 @@
 
 # Contract | walshma01
 
-Known through: 2006-01-16. [Open interactive contract](walshma01.html#contract) · [Contract history](walshma01.html#contract-history)
+Known through: 2006-01-22. [Open interactive contract](walshma01.html#contract) · [Contract history](walshma01.html#contract-history)
 
-walshma01: under contract. Evidence cutoff: 2006-01-16.
+walshma01: under contract. Evidence cutoff: 2006-01-22.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | walshma01 |
-| Club / rights baseline | Milwaukee Bucks |
+| Club / rights baseline | Phoenix Suns |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

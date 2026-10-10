@@ -2,9 +2,9 @@
 
 # Contract | Charles Smith
 
-Known through: 2006-01-16. [Open interactive contract](smithch04.html#contract) · [Contract history](smithch04.html#contract-history)
+Known through: 2006-01-22. [Open interactive contract](smithch04.html#contract) · [Contract history](smithch04.html#contract-history)
 
-Charles Smith: under contract. Evidence cutoff: 2006-01-16.
+Charles Smith: under contract. Evidence cutoff: 2006-01-22.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Charles Smith |
-| Club / rights baseline | Sacramento Kings |
+| Club / rights baseline | Washington Wizards |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

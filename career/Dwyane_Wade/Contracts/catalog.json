@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-01-16",
+  "as_of": "2006-01-22",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -923,7 +923,7 @@
     {
       "player_id": "smithch04",
       "name": "Charles Smith",
-      "team": "Sacramento Kings",
+      "team": "Washington Wizards",
       "status": "under contract",
       "current_contract_id": "smithch04-2005-08-19",
       "recorded_agreements": 2,
@@ -1958,7 +1958,7 @@
     {
       "player_id": "johnser02",
       "name": "Ervin Johnson",
-      "team": "Denver Nuggets",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": "johnser02-existing-d23ec1018463",
       "recorded_agreements": 1,
@@ -3389,7 +3389,7 @@
     {
       "player_id": "hunteli01",
       "name": "Lindsey Hunter",
-      "team": "Phoenix Suns",
+      "team": "Memphis Grizzlies",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4874,7 +4874,7 @@
     {
       "player_id": "walkesa01",
       "name": "Samaki Walker",
-      "team": "Washington Wizards",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "walkesa01-2005-08-12",
       "recorded_agreements": 3,
@@ -5882,7 +5882,7 @@
     {
       "player_id": "walshma01",
       "name": "walshma01",
-      "team": "Milwaukee Bucks",
+      "team": "Phoenix Suns",
       "status": "under contract",
       "current_contract_id": "walshma01-2005-09-02",
       "recorded_agreements": 1,

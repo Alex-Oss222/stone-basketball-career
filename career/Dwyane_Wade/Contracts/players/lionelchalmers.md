@@ -2,9 +2,9 @@
 
 # Contract | Lionel Chalmers
 
-Known through: 2006-01-16. [Open interactive contract](lionelchalmers.html#contract) · [Contract history](lionelchalmers.html#contract-history)
+Known through: 2006-01-22. [Open interactive contract](lionelchalmers.html#contract) · [Contract history](lionelchalmers.html#contract-history)
 
-Lionel Chalmers: under contract. Evidence cutoff: 2006-01-16.
+Lionel Chalmers: under contract. Evidence cutoff: 2006-01-22.
 
 ## Current contract
 

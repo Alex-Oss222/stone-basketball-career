@@ -2,9 +2,9 @@
 
 # Contract | Lindsey Hunter
 
-Known through: 2006-01-16. [Open interactive contract](hunteli01.html#contract) · [Contract history](hunteli01.html#contract-history)
+Known through: 2006-01-22. [Open interactive contract](hunteli01.html#contract) · [Contract history](hunteli01.html#contract-history)
 
-Lindsey Hunter: under contract unverified. Evidence cutoff: 2006-01-16.
+Lindsey Hunter: under contract unverified. Evidence cutoff: 2006-01-22.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Lindsey Hunter |
-| Club / rights baseline | Phoenix Suns |
+| Club / rights baseline | Memphis Grizzlies |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

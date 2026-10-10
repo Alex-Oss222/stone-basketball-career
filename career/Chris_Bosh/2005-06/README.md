@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2006-01-16** · Toronto Raptors · #4 · PF · age 21
+Career date: **2006-01-22** · Toronto Raptors · #4 · PF · age 21
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,21 +14,21 @@ Career date: **2006-01-16** · Toronto Raptors · #4 · PF · age 21
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 25/25 | 37.0 | 22.6 | 10.4 | 3.4 | 0.7 | 1.4 | 53.5 | 27.3 | 89.6 | 60.7 | 28-9 |
+| 2005-06 | 21 | Toronto Raptors | 29/29 | 37.4 | 22.0 | 10.3 | 3.4 | 0.8 | 1.3 | 52.6 | 30.4 | 89.9 | 59.7 | 31-10 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 25 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 29 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 37.0 |
-| Points | 24.5 | 22.6 |
-| Rebounds | 11.4 | 10.4 |
+| Minutes | 36.5 | 37.4 |
+| Points | 24.5 | 22.0 |
+| Rebounds | 11.4 | 10.3 |
 | Assists | 4.2 | 3.4 |
-| FG% | 52.0 | 53.5 |
-| 3P% | 41.7 | 27.3 |
-| FT% | 91.3 | 89.6 |
+| FG% | 52.0 | 52.6 |
+| 3P% | 41.7 | 30.4 |
+| FT% | 91.3 | 89.9 |
 
 ## Playoffs
 
@@ -39,11 +39,11 @@ No playoff games closed.
 | Stat | High | Game |
 | --- | --- | --- |
 | Points | 42 | 2005-12-16 vs Golden State Warriors |
-| Rebounds | 15 | 2005-11-11 vs Utah Jazz (+1) |
+| Rebounds | 15 | 2005-11-11 vs Utah Jazz (+2) |
 | Assists | 7 | 2005-11-11 vs Utah Jazz (+1) |
-| Steals | 2 | 2005-11-02 vs Washington Wizards (+3) |
+| Steals | 3 | 2006-01-22 at Los Angeles Lakers |
 | Blocks | 3 | 2005-12-02 at Atlanta Hawks (+2) |
-| Threes | 1 | 2005-11-04 vs New Jersey Nets (+5) |
+| Threes | 1 | 2005-11-04 vs New Jersey Nets (+6) |
 | Free throws | 10 | 2005-12-23 at San Antonio Spurs |
 
 ## Awards

@@ -2,9 +2,9 @@
 
 # Contract | Ryan Humphrey
 
-Known through: 2006-01-16. [Open interactive contract](humphry01.html#contract) · [Contract history](humphry01.html#contract-history)
+Known through: 2006-01-22. [Open interactive contract](humphry01.html#contract) · [Contract history](humphry01.html#contract-history)
 
-Ryan Humphrey: under rookie contract. Evidence cutoff: 2006-01-16.
+Ryan Humphrey: under rookie contract. Evidence cutoff: 2006-01-22.
 
 ## Current contract
 
