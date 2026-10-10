@@ -81,7 +81,7 @@ On the game's date, from results closed through the day before (`all_star_games.
 
 - No closed-results reader (standings, weekly, monthly and season awards, rotation reviews, the protagonist and trajectory updates, standing, valuation) reads `11_All_Star` or `All_Star/Games`; those readers take the regular-season and playoff folders only. `is_league_slate` leaves `All_Star` out, as it does `Playoffs`.
 - The MVP names are not in `standing.HONOR_NAMES` and their competitions are not `regular` or `playoff`, so standing ignores them; valuation reads `all_star.json` selections and season awards only; `incentives.earned_honors` leaves out exhibition competitions (its substring match on "All-Star" would count the MVP); the national-team committee reads neither.
-- The MVPs appear under Other honors on the season's award hub, on league cards and on followed-player pages, from the later of the game date and `recorded_on`. Wade's statistics are his own pages per season (`<season>/11_All_Star/`) and career rows, never added to NBA totals; their engine shots stay out of the NBA shot record.
+- The MVPs appear under Other honors on the season's award hub, on league cards and on followed-player pages, from the later of the game date and `recorded_on`. Wade's statistics are his own pages per season (`<season>/11_All_Star/`) and career rows, never added to NBA totals; their engine shots are each game's own shot record on the NBA court, never in the NBA one.
 
 ## Dates and the retroactive weekends
 

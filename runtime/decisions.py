@@ -79,6 +79,18 @@ def decision_errors(data):
     return errors
 
 
+def equal_shares(names):
+    """Equal chances for a drawing between level options, in millionths like every tie packet, summing to exactly 1:
+    each option takes the whole millionths of 1/n and the last ones one more each for the remainder, so no share is
+    more than a millionth from 1/n (a three-way 1/3 is 0.333333, 0.333333, 0.333334; plain rounding gives 0.333333
+    three times, which `decision_errors` and the engine refuse). Every tie size whose plain rounded shares already
+    summed to 1 (two, four, five, eight, ten...) keeps them exactly, so every recorded tie packet rebuilds byte for
+    byte."""
+    names = list(names)
+    whole, extra = divmod(10 ** 6, len(names))
+    return {name: round((whole + (i >= len(names) - extra)) / 10 ** 6, 6) for i, name in enumerate(names)}
+
+
 def packet(data):
     return {"procedure": PROCEDURE, **{k: data[k] for k in sorted(FIELDS)}}
 

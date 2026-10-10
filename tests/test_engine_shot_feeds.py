@@ -2,9 +2,11 @@
 from copy import deepcopy
 import json
 import math
+import shutil
 import unittest
 
 from runtime.player_cards import load_recorded_shots
+from runtime.shot_chart import NBA_GEOMETRY, aggregate_shots
 from runtime.shot_events import build_tracking_cohort, engine_result_shots, spatial_result_errors
 from tests.test_live_player_cards import LiveCardFixtures, box
 
@@ -165,6 +167,158 @@ class EngineShotFeedTests(LiveCardFixtures):
         for changes in ({"kernel": None}, {"terminated": False}, {"game_date": "2003-99-99"}):
             with self.subTest(changes=changes), self.assertRaises(ValueError):
                 engine_result_shots({**valid, **changes}, source_ref="Game_1.result.json")
+
+
+def engine_result(event_id, day, season, game_type, home, away, court, lines):
+    """A closed engine result shaped like the kernel's: {(side, player_id): box} with one shot event per attempt, made
+    twos at the rim, missed twos at ten feet and threes at the top of the key, zoned on the result's own court. A FIBA
+    three is taken from 22 feet before October 2010 (beyond the 6.25 m arc, inside the NBA's 23.75 ft one) and from 23
+    feet after it (beyond the 6.75 m arc)."""
+    from runtime.shot_chart import GEOMETRIES
+    from runtime.spatial_shots import classify_spatial_zone
+    result = dict(event_id=event_id, game_date=day, season=season, game_type=game_type, terminated=True, home=home,
+                  away=away, venue="neutral", game_seconds=2400 if court.startswith("fiba") else 2880,
+                  final_score={"home": 100, "away": 90}, kernel="2003.11", periods=4,
+                  period_scores={"home": [25] * 4, "away": [20, 20, 25, 25]}, inactive={"home": [], "away": []},
+                  player_stats={"home": [], "away": []}, team_stats={}, shots=[],
+                  shot_tracking=dict(schema_version=1, model_version="spatial-2003.1", coordinate_system=court,
+                                     source_type="engine_generated", prior_sha256="a" * 64, coverage="complete"))
+    for (side, pid), line in lines.items():
+        result["player_stats"][side].append({"player_id": pid, **line})
+        specs = [(2, True, 1.125, 2.25)] * (line["fgm"] - line["tpm"])
+        specs += [(2, False, 10.0, 2.0)] * (line["fga"] - line["tpa"] - line["fgm"] + line["tpm"])
+        deep = {"fiba_2006_feet_from_basket": 22.0, "fiba_2010_feet_from_basket": 23.0}.get(court, 25.0)
+        specs += [(3, True, 0.0, deep)] * line["tpm"] + [(3, False, 0.0, deep)] * (line["tpa"] - line["tpm"])
+        for value, made, x, y in specs:
+            index = len(result["shots"]) + 1
+            result["shots"].append(dict(shot_id=f"{event_id}:shot:{index:06d}", player_id=pid, side=side, period=1,
+                                        clock_seconds=600 - index * 10, x=x, y=y, value=value, made=made, transition=False,
+                                        zone=classify_spatial_zone(x, y, GEOMETRIES[court])))
+    for side in ("home", "away"):
+        result["team_stats"][side] = {k: sum(r[k] for r in result["player_stats"][side]) for k in ("fgm", "fga", "tpm", "tpa")}
+    return result
+
+
+class SeparateCourtShotTests(LiveCardFixtures):
+    """National and All-Star weekend engine shots load into their own competition's record, never an NBA view."""
+    EDITION_ID = "world_cup_finals_2006"
+    tracked_game = EngineShotFeedTests.tracked_game                    # an NBA regular-season game beside them
+
+    def national_game(self, *, edition_id=EDITION_ID, day="2006-08-19", court="fiba_2006_feet_from_basket"):
+        from runtime import national
+        eid = "fiba-wc06-g01"
+        wade = box(fgm=2, fga=3, tpm=1, tpa=1, ftm=2, fta=2, pts=7)
+        # The engine labels a national game with its ability season, never with the edition.
+        result = engine_result(eid, day, "2005-06", "world_cup_finals", "United States", "Opponent",
+                               court, {("home", "Dwyane Wade"): wade, ("away", "Rival"): box()})
+        folder = self.player / "National_Team/World_Cup/2006/Final_Tournament/Group_Phase"
+        folder.mkdir(parents=True)
+        request = folder / "Game_1.request.json"
+        request.write_text(json.dumps({"event_id": eid, "game_date": day, "game_type": "world_cup_finals",
+                                       "venue": "neutral", "home": {"team": "United States", "national": edition_id},
+                                       "away": {"team": "Opponent", "national": edition_id}}))
+        (folder / "Game_1.result.json").write_text(json.dumps(result))
+        e = {"name": "FIBA World Championship 2006", "game_type": "world_cup_finals", "edition": "2006", "host": "Japan"}
+        g = {"date": day, "stage": "group_a", "number": 1}
+        national.write_note(e, g, folder / "Game_1.md", request, "United States", "Opponent", result=result)
+        return folder / "Game_1.md", result
+
+    def all_star_game(self, game_type="all_star"):
+        day, folder, home, away = {"all_star": ("2004-02-15", "All_Star_Game", "East", "West"),
+                                   "rookie_challenge": ("2004-02-13", "Rookie_Challenge", "Rookies", "Sophomores")}[game_type]
+        eid = f"{day}-{game_type.replace('_', '-')}"
+        result = engine_result(eid, day, "2003-04", game_type, home, away, "nba_feet_from_basket",
+                               {("home", "dwyane_wade"): box(fgm=2, fga=3, tpm=1, tpa=1, ftm=2, fta=2, pts=7),
+                                ("away", "Rival"): box()})
+        if game_type == "rookie_challenge":                               # two 20-minute halves
+            result.update(periods=2, period_scores={"home": [50, 50], "away": [45, 45]})
+        folder = self.player / "2003-04/11_All_Star" / folder
+        folder.mkdir(parents=True)
+        (folder / "Game_1.result.json").write_text(json.dumps(result))
+        (folder / "Game_1.md").write_text(
+            f"---\ntype: game\nstatus: played\ndate: {day}\nopponent: {away}\nvenue: neutral\ncompetition: {game_type}\n"
+            f"player_team: {home}\nevent_id: {eid}\nresult: W 100-90\nresult_file: Game_1.result.json\n---\n\n# Exhibition\n")
+        return result
+
+    def test_fiba_engine_shots_load_into_the_national_record_on_the_fiba_court(self):
+        _, _, regular = self.tracked_game()
+        _, result = self.national_game()
+        self.assertEqual(spatial_result_errors(result), [])
+        data = self.data("2006-08-19")
+        fiba = self.season(data, "world_cup_finals", "2006")
+        self.assertEqual(len(fiba["shots"]), 3)
+        self.assertEqual({s["game_id"] for s in fiba["shots"]}, {result["event_id"]})
+        self.assertEqual({s["coordinate_system"] for s in fiba["shots"]}, {"fiba_2006_feet_from_basket"})
+        self.assertEqual(fiba["shooting"]["coverage"]["status"], "complete")
+        self.assertEqual(fiba["shooting"]["geometry"]["court"], "FIBA 2006-2010 (6.25 m)")
+        three = next(z for z in fiba["shooting"]["zones"] if z["id"] == "three")
+        self.assertEqual((three["fgm"], three["fga"]), (1, 1))         # 22 ft is a three on the FIBA court only
+        self.assertFalse(fiba["geometry_supported"])                     # never drawn on the card's NBA court
+        self.assertIn("FIBA court", fiba["source_note"])
+        self.assertIn("listed only in this competition's Shooting.md tables", fiba["source_note"])
+        self.assertEqual(fiba["source_games"][0]["shot_source_type"], "engine_generated")
+        self.assertEqual(fiba["tracked"]["shooting"]["coverage"]["status"], "complete")
+        for period in data["periods"]:
+            if period["competition"] != "world_cup_finals":
+                self.assertFalse({s["game_id"] for s in period["shots"]} & {result["event_id"]}, period["id"])
+        nba = self.season(data, "regular", "2003-04")
+        self.assertEqual({s["game_id"] for s in nba["shots"]}, {regular["event_id"]})
+        self.assertNotIn("coordinate_system", nba["shots"][0])
+        self.assertEqual(nba["shooting"]["geometry"], NBA_GEOMETRY)
+        records = [r for r in self.records("2006-08-19") if r["competition"] == "world_cup_finals"]
+        with self.assertRaisesRegex(ValueError, "coordinate zone"):      # the same events on the NBA court disagree
+            aggregate_shots(records, [{k: v for k, v in s.items() if k != "coordinate_system"} for s in fiba["shots"]])
+
+    def test_national_engine_shots_must_be_on_the_fiba_court_of_the_game_date(self):
+        for court in ("fiba_2010_feet_from_basket", "nba_feet_from_basket"):   # the 2006 game is on the 6.25 m court
+            with self.subTest(court=court):
+                _, result = self.national_game(court=court)
+                self.assertEqual(spatial_result_errors(result), [])            # a valid feed on its own court
+                with self.assertRaisesRegex(ValueError, "FIBA court of the game's date"):
+                    self.data("2006-08-19")
+                shutil.rmtree(self.player / "National_Team")
+
+    def test_a_national_result_binds_its_edition_through_the_committed_request(self):
+        note, _ = self.national_game(edition_id="world_cup_finals_2010")
+        with self.assertRaisesRegex(ValueError, "edition disagrees"):
+            self.records("2006-08-19")
+        request = json.loads(note.with_name("Game_1.request.json").read_text())
+        request["home"]["national"] = request["away"]["national"] = self.EDITION_ID
+        for changes in ({"event_id": "fiba-wc06-g02"}, {"game_date": "2006-08-20"}):
+            with self.subTest(changes=changes):
+                note.with_name("Game_1.request.json").write_text(json.dumps({**request, **changes}))
+                with self.assertRaisesRegex(ValueError, "edition disagrees"):
+                    self.records("2006-08-19")
+        note.with_name("Game_1.request.json").write_text(json.dumps(request))
+        self.assertEqual([(r["season"], r["competition"]) for r in self.records("2006-08-19")], [("2006", "world_cup_finals")])
+
+    def test_all_star_weekend_engine_shots_are_their_own_records_on_the_nba_court(self):
+        _, _, regular = self.tracked_game()
+        results = {g: self.all_star_game(g) for g in ("rookie_challenge", "all_star")}
+        data = self.data("2004-02-15")
+        for game_type, result in results.items():
+            with self.subTest(game_type=game_type):
+                self.assertEqual(spatial_result_errors(result), [])
+                game = self.season(data, game_type, "2003-04")
+                self.assertEqual({s["game_id"] for s in game["shots"]}, {result["event_id"]})
+                self.assertEqual(len(game["shots"]), 3)
+                self.assertTrue(game["geometry_supported"])
+                self.assertEqual(game["shooting"]["coverage"]["status"], "complete")
+                self.assertIn("Simulated engine shot locations", game["source_note"])
+        nba = self.season(data, "regular", "2003-04")
+        self.assertEqual({s["game_id"] for s in nba["shots"]}, {regular["event_id"]})
+        self.assertEqual(nba["games"], 1)
+
+    def test_an_engine_court_must_suit_its_competition(self):
+        line = box(fgm=2, fga=3, tpm=1, tpa=1, ftm=2, fta=2, pts=7)
+        _, path, raw = self.game("Game_1", "2003-11-12", line=line)
+        fiba = engine_result(raw["event_id"], raw["game_date"], raw["season"], "regular", raw["home"], raw["away"],
+                             "fiba_2006_feet_from_basket", {("home", "dwyane_wade"): line})
+        raw.update({k: fiba[k] for k in ("kernel", "periods", "period_scores", "shot_tracking", "shots", "team_stats")})
+        self.assertEqual(spatial_result_errors(raw), [])                 # a valid FIBA-court feed, in an NBA game
+        path.write_text(json.dumps(raw))
+        with self.assertRaisesRegex(ValueError, "on the NBA court"):
+            load_recorded_shots(self.player, self.identity, self.records(), "2003-11-30")
 
 
 if __name__ == "__main__":

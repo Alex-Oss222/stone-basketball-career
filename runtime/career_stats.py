@@ -107,6 +107,27 @@ def normalize_line(row: dict, *, weighted_free_throws=False) -> dict:
     return line
 
 
+def national_result_edition(note, meta, raw):
+    """The edition a closed national result belongs to: its own `edition`, or, for an engine result (the engine labels a
+    national game only with its ability season, `era.national_rules`), the edition of the committed request it answers.
+    That is the note's adjacent `request_file` with the result's event, date, game type and teams, both teams entered
+    under one `<competition>_<edition>` id (`runtime/national.py`, `library/fiba/engine/`). None when nothing binds it."""
+    if "edition" in raw:
+        return raw["edition"]
+    folder = Path(note).parent.resolve()
+    path = (folder / (meta.get("request_file") or "")).resolve()
+    if path.parent != folder or path.suffix != ".json" or not path.is_file():
+        return None
+    request = json.loads(path.read_text(encoding="utf-8"))
+    sides = [request.get(side) if isinstance(request.get(side), dict) else {} for side in ("home", "away")]
+    if (any(request.get(k) != raw.get(k) for k in ("event_id", "game_date", "game_type"))
+            or [s.get("team") for s in sides] != [raw.get("home"), raw.get("away")]):
+        return None
+    ids, prefix = {s.get("national") for s in sides}, f"{raw.get('game_type')}_"
+    edition_id = ids.pop() if len(ids) == 1 else None
+    return edition_id[len(prefix):] if isinstance(edition_id, str) and edition_id.startswith(prefix) else None
+
+
 def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
     """Return canonical game records, including explicit missing-box coverage."""
     aliases = set(identity["aliases"]) | {identity["player_id"]}
@@ -197,7 +218,7 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
             raise ValueError(f"{note}: result is unfinished or disagrees with note date/competition")
         if not national and raw.get("season") != season:
             raise ValueError(f"{note}: result season disagrees with owning season")
-        if national and raw.get("edition") != season:
+        if national and national_result_edition(note, meta, raw) != season:
             raise ValueError(f"{note}: result edition disagrees with owning event")
         event_id = raw.get("event_id")
         if not isinstance(event_id, str) or not event_id or event_id in seen_ids:

@@ -172,7 +172,7 @@ class Ranker:
 
     def drawing(self, tied):
         """A drawing: an engine decision packet; until it is drawn the order is pending."""
-        from .decisions import load_decision
+        from .decisions import equal_shares, load_decision
         key = "-".join(sorted(c.lower().replace(" ", "-") for c in tied))
         season = getattr(self.t, "season", None) or _active_season(self.root)
         event = f"{season}-playoff-tiebreak-{key}"
@@ -183,12 +183,9 @@ class Ranker:
             return [first] + self.drawing([c for c in tied if c != first]) if len(tied) > 2 else [first, next(c for c in tied if c != first)]
         if not path.is_file():
             path.parent.mkdir(parents=True, exist_ok=True)
-            share = round(1 / len(tied), 6)
-            options = {c: share for c in sorted(tied)}
-            options[sorted(tied)[-1]] = round(1 - share * (len(tied) - 1), 6)
             path.write_text(json.dumps({"event_id": event, "date": rules(self.root, season)["calendar"]["regular_season_last_day"],
                                         "question": f"Tiebreak drawing: who ranks first among {', '.join(sorted(tied))}?",
-                                        "decider": "NBA drawing (engine draw)", "options": options,
+                                        "decider": "NBA drawing (engine draw)", "options": equal_shares(sorted(tied)),
                                         "basis": "every tiebreak step in the 2003-04 procedure left them level (runtime/playoffs.py)"},
                                        indent=1) + "\n", encoding="utf-8")
             load_decision(path)

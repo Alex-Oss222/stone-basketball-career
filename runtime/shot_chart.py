@@ -160,6 +160,10 @@ def aggregate_shots(records, shots, *, start=None, end=None, bin_size=3.0):
     DNPs are excluded from G; every recorded appearance is included, even one
     with zero FGA. Unknown player boxes make full-period G unknown.
 
+    A shot classifies on its own court: the NBA's unless it names another
+    ``coordinate_system`` (an engine national game's FIBA court). A period's
+    shots share one court, which the result reports as its geometry.
+
     Partial tracking exposes observed raw counts, but zone totals, zone rates
     and bin per-game rates remain unavailable. Dot area_weight is FGA/G only
     when the selected period has full box and location coverage. It uses the
@@ -211,7 +215,7 @@ def aggregate_shots(records, shots, *, start=None, end=None, bin_size=3.0):
     if len(season_values) > 1:
         raise ValueError("different seasons must have separate shot charts")
     by_game = {key: [] for key in selected}
-    seen = set()
+    seen, courts = set(), set()
     for shot in shots:
         if not isinstance(shot, dict):
             raise ValueError("shots must be objects")
@@ -229,11 +233,17 @@ def aggregate_shots(records, shots, *, start=None, end=None, bin_size=3.0):
             raise ValueError("shot needs a boolean made outcome and a 2- or 3-point value")
         if not isinstance(shot.get("source_ref"), str) or not shot["source_ref"].strip():
             raise ValueError("shot needs a recorded source reference")
-        zone = classify_zone(shot.get("x"), shot.get("y"))
+        court = shot.get("coordinate_system", "nba_feet_from_basket")
+        if court not in GEOMETRIES:
+            raise ValueError("shot coordinate system is not supported")
+        zone = classify_zone(shot.get("x"), shot.get("y"), GEOMETRIES[court])
         if zone is not None and (3 if zone == "three" else 2) != shot["value"]:
             raise ValueError("recorded shot value disagrees with its coordinate zone; review the source")
         if game_id not in selected:
             continue
+        courts.add(court)
+        if len(courts) > 1:
+            raise ValueError("different courts must have separate shot charts")
         if game_id in dnp:
             raise ValueError("DNP cannot have field-goal attempts")
         if game_id in missing_boxes:
@@ -288,7 +298,8 @@ def aggregate_shots(records, shots, *, start=None, end=None, bin_size=3.0):
     observed_counts = _shot_counts(observed_shots)
     box_metrics = _metrics(totals, games) if not missing_boxes else {key: None for key in (*totals, "fg_pct", "fg_ppg", "fga_per_game")}
     return {"schema_version": 1, "scope": {"start": start, "end": end},
-            "geometry": dict(NBA_GEOMETRY), "games": games, "recorded_appearances": len(appearances),
+            "geometry": dict(GEOMETRIES[next(iter(courts), "nba_feet_from_basket")]), "games": games,
+            "recorded_appearances": len(appearances),
             "dnp": len(dnp), "closed_games": len(selected), "totals": box_metrics,
             "observed": observed_counts, "zones": zones, "bins": bins,
             "coverage": {"status": coverage_status, "located_attempts": len(located),
