@@ -83,6 +83,7 @@ def game_score(p):
 # -- evidence ------------------------------------------------------------------------------------------------
 def identities(root, season=None):
     """{name as results key him: (dated record name, bbr_id, position group)}."""
+    from .write_back import known_position          # a registry row with no sourced position is no group (UNKNOWN_BASIS)
     from .award_decisions import registry_names
     from .rotations import load_rosters
     root = Path(root)
@@ -99,9 +100,9 @@ def identities(root, season=None):
         pairs += [(p["name"], p.get("bbr_id")) for p in _read(roster_path)["players"]]
     for name, bbr in pairs:
         entry = by_bbr.get(bbr) or by_name.get(names.get(name, name)) or {}
-        out[name] = (names.get(name, name), bbr or entry.get("bbr_id"), GROUP.get(entry.get("position") or "", None))
+        out[name] = (names.get(name, name), bbr or entry.get("bbr_id"), GROUP.get(known_position(entry) or "", None))
     for name, entry in by_name.items():
-        out.setdefault(name, (name, entry.get("bbr_id"), GROUP.get(entry.get("position") or "", None)))
+        out.setdefault(name, (name, entry.get("bbr_id"), GROUP.get(known_position(entry) or "", None)))
     return out
 
 

@@ -1,27 +1,17 @@
-"""Weekly and monthly NBA awards for 2003-04: Player of the Week, Player of the Month, Rookie of the Month.
+"""Weekly and monthly NBA awards: Player of the Week, Player of the Month, Rookie of the Month.
 
-Each award is split East and West (from 2001-02, `nba_awards_catalog.json`). An award closes on its
-announcement date and only from closed regular-season results dated inside its period
-(`write_back.closed_results`), so no later game, real winner or historical vote enters it.
+The rule is `RULE`. Each season's `award_decisions.json` states it with that season's own calendar (`rule_text`: opening
+night, the opening week and the first and last months, from `periods`) and the identity sources its rookie pool reads
+(`first_season_sources`), so a later season's record never carries the 2003-04 dates; `repair_rules` rewrites only that
+field, and only of a record whose stated opening night is not its own (`states_own_calendar`: the 2003-04 record keeps
+the rule its decisions were made under). Metadata: no period, shortlist or winner changes.
 
-Periods (judgement, from the NBA's calendar of the era):
-- Player of the Week: Monday to Sunday (the opening week runs from opening night, October 28), announced
-  the Monday after; the final week ends on the last regular-season day.
-- Player and Rookie of the Month: calendar months, October folded into November because the season opened
-  October 28; announced two days after the month ends. The exact announcement day is an assumption.
-
-Selection: the league office named the winners without a published ballot, so the branch ranks the
-evidence. Each game is scored with Hollinger's Game Score (PTS + 0.4 FGM - 0.7 FGA - 0.4 missed FT
-+ 0.7 ORB + 0.3 DRB + STL + 0.7 AST + 0.7 BLK - 0.4 PF - TOV), and winning counts:
-- Player of the Week: at least two games; total Game Score + 3 per club win in his games.
-- Player of the Month: at least 60% of his club's games in the period; Game Score per game + 12 x his club's
-  win share in his games.
-- Rookie of the Month: first-season players (the registry's 2003 draft class and sourced identities with no earlier
-  NBA season); at least
-  half his club's games; Game Score per game + 4 x win share.
-The highest score wins; the next two are the published shortlist. Decisions are appended once to
-`award_decisions.json` and never recomputed. A Wade win is added to his `awards.json` with the page as its
-source. Rules apply to every player alike: no seniority, reputation or market bonus.
+Rookies (`rookies`): the season's first-season players by bbr_id from sourced identity records (`first_season_ids`),
+each under every name the season's records give him wherever the simulated league placed him (`season_names`: the
+real rosters, the opening book and its season roles, the dated league moves, the disturbed-club replacements, Miami's
+register, holdings and departures, the registry, and the committed requests' own inputs). A rookie a real Miami move
+sent elsewhere under rule 1 (Wayne Simien, simiewa01, at Toronto in 2005-06; his game rows key him by his id) is
+therefore ranked like any other first-season player. The same rule for every player.
 """
 from __future__ import annotations
 
@@ -29,6 +19,8 @@ from collections import defaultdict
 from datetime import date, timedelta
 import json
 from pathlib import Path
+import re
+import textwrap
 
 ROOT = Path(__file__).resolve().parents[1]
 PLAYER = Path("career/Dwyane_Wade")
@@ -42,6 +34,30 @@ SHORT = {"player_of_week": "POW", "player_of_month": "POM", "rookie_of_month": "
 WEEK_WIN_BONUS, MONTH_WIN_WEIGHT, ROOKIE_WIN_WEIGHT = 3.0, 12.0, 4.0
 WEEK_MIN_GAMES, MONTH_SHARE, ROOKIE_SHARE = 2, 0.6, 0.5
 MONTH_ANNOUNCE_DAYS = 2
+WADE_BBR = "wadedw01"            # his records' key; Miami's register carries no bbr_id for him (alternate history)
+
+RULE = """Each award is split East and West (from 2001-02, `nba_awards_catalog.json`). An award closes on its
+announcement date and only from closed regular-season results dated inside its period
+(`write_back.closed_results`), so no later game, real winner or historical vote enters it.
+
+Periods (judgement, from the NBA's calendar of the era):
+- Player of the Week: Monday to Sunday, announced the Monday after. The opening week runs from opening night,
+  {opening}, through Sunday, {first_week_end}; the final week ends on the last regular-season
+  day, {last_day}.
+- Player and Rookie of the Month: calendar months, announced two days after the month ends (the exact
+  announcement day is an assumption). {fold}
+  The first month runs {first_month}; the last runs {last_month}.
+
+Selection: the league office named the winners without a published ballot, so the branch ranks the
+evidence. Each game is scored with Hollinger's Game Score (PTS + 0.4 FGM - 0.7 FGA - 0.4 missed FT
++ 0.7 ORB + 0.3 DRB + STL + 0.7 AST + 0.7 BLK - 0.4 PF - TOV), and winning counts:
+- Player of the Week: at least two games; total Game Score + 3 per club win in his games.
+- Player of the Month: at least 60% of his club's games in the period; Game Score per game + 12 x his club's
+  win share in his games.
+{rookie_rule}
+The highest score wins; the next two are the published shortlist. Decisions are appended once to
+`award_decisions.json` and never recomputed. A Wade win is added to his `awards.json` with the page as its
+source. Rules apply to every player alike: no seniority, reputation or market bonus."""
 
 
 def game_score(p):
@@ -110,39 +126,135 @@ def conferences(root=ROOT, season=None):
     return {team: conf for conf, teams in alignment(season, root).items() for team in teams}
 
 
-def rookies(root=ROOT, season=None):
-    """First-season players by name, from sourced identity records only: the registry's 2003 draft-rights
-    cohort, unattached identities with no NBA season before 2003-04 (Haslem), and Wade. An undrafted rookie
-    on a real club without such a record is not yet recognised (a known gap, not a judgement)."""
+def first_season_sources(root=ROOT, season=None):
+    """[(source, bbr_ids)]: the sourced identity records that name the season's first-season players, in the order they
+    are read, each with the players it names (identity only, never a result):
+    - the registry's draft-rights cohort of the season's draft (only the 2003 cohort exists; no registry, no cohort);
+    - the season's unattached identities with no NBA season before it (Haslem, `nba_2003_unattached_identities.json`);
+    - the players whose first season the 2004 service file gives as this one (it tracks debuts through 2004-05);
+    - from 2005-06, every player in the real careers table whose first season is this one and whom the season's own
+      service file (everyone with an earlier NBA season) does not list.
+    `first_season_ids` is their union; `rule_text` names the sources that name at least one player, so a season's
+    record states where its rookies came from."""
     season = season or _season(root)
     root = Path(root)
     year = int(season[:4])
-    registry = json.loads((root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json").read_text(encoding="utf-8"))
+    path = root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json"
+    registry = json.loads(path.read_text(encoding="utf-8")) if path.is_file() else []
     registry = registry["players"] if isinstance(registry, dict) else registry
-    bbrs = {p["bbr_id"] for p in registry if p.get("cohort") == f"{year}_draft_rights" and p.get("bbr_id")}
+    out = [(f"the registry's {year} draft-rights cohort",
+            {p["bbr_id"] for p in registry if p.get("cohort") == f"{year}_draft_rights" and p.get("bbr_id")})]
     unattached = root / f"library/{year}/league/nba_{year}_unattached_identities.json"
     if unattached.is_file():
-        bbrs |= {p["bbr_id"] for p in json.loads(unattached.read_text(encoding="utf-8"))["players"]
-                 if p.get("service_basis", "").startswith("No NBA season before")}
+        out.append((f"the unattached identities with no NBA season before {season} (`{unattached.name}`)",
+                    {p["bbr_id"] for p in json.loads(unattached.read_text(encoding="utf-8"))["players"]
+                     if p.get("service_basis", "").startswith("No NBA season before")}))
     service = root / "library/2004/league/nba_2004_service_years.json"
     if service.is_file():                                            # a first NBA season in this season (identity data)
-        bbrs |= {b for b, e in json.loads(service.read_text(encoding="utf-8"))["players"].items() if e.get("first_season") == season}
+        out.append((f"the players whose first NBA season the 2004 service file gives as {season} (`{service.name}`)",
+                    {b for b, e in json.loads(service.read_text(encoding="utf-8"))["players"].items()
+                     if e.get("first_season") == season}))
     if year >= 2005:
         # A later season (the season-change audit): its service file lists everyone who played an NBA season before it, so
         # a player in the real careers table whose first season is this one and who is not listed is a rookie (identity).
         listed = root / f"library/{year}/league/nba_{year}_service_years.json"
         before = set(json.loads(listed.read_text(encoding="utf-8"))["players"]) if listed.is_file() else set()
         careers = json.loads((root / "library/careers/nba_player_careers.json").read_text(encoding="utf-8"))["players"]
-        bbrs |= {b for b, e in careers.items() if b not in before and min(e.get("seasons") or {"9999": 0}) == season}
-    names = {WADE} if season == "2003-04" else set()
-    from .rotations import load_rosters
-    for club in load_rosters(season, root).values():
-        names |= {p["player_id"] for p in club["players"] if p.get("bbr_id") in bbrs}
-    roster_path = root / f"career/Dwyane_Wade/{season}/00_Team/Team/Roster/roster.json"
-    if roster_path.is_file():
-        roster = json.loads(roster_path.read_text(encoding="utf-8"))
-        names |= {p["name"] for p in roster["players"] if p.get("bbr_id") in bbrs}
-    return names
+        out.append((f"the players of the real careers table whose first season is {season} and whom the {year} service "
+                    f"file, which lists everyone with an earlier NBA season, does not list (`nba_player_careers.json`, "
+                    f"`{listed.name}`)",
+                    {b for b, e in careers.items() if b not in before and min(e.get("seasons") or {"9999": 0}) == season}))
+    return out
+
+
+def first_season_ids(root=ROOT, season=None):
+    """bbr_ids of the season's first-season players: the union of `first_season_sources` (the registry's draft-rights
+    cohort of the season's draft, unattached identities with no NBA season before it, the 2004 service file's first
+    seasons and, from 2005-06, the real careers table against the season's own service file). Identity only, never a
+    result."""
+    return set().union(*(ids for _, ids in first_season_sources(root, season)))
+
+
+def season_names(root=ROOT, season=None):
+    """{bbr_id: every name the season's records give him}: the keys his game rows can carry wherever the simulated
+    league placed him, read from the records the game inputs are built from (`game_requests._club`) and from the
+    committed inputs themselves:
+    - the season's real rosters (`rotations.load_rosters`), its opening book (clubs, pool and players not placed) and
+      the season roles the simulated clubs read (`league_moves.season_roles`);
+    - the dated league moves (`league_moves.json`: the player and a signed free agent's role) and the disturbed-club
+      replacements (`club_replacements.json`);
+    - Miami's register, holdings and departures (Wade by his records' key, `WADE_BBR`);
+    - the registry's dated record name;
+    - every committed request of the season, Miami's and the league slate's: its listed players with their bbr_id and,
+      from 2004-01-22, the frozen inputs' players by their stat profile's bbr_id (exactly the ids the rows carry).
+    A player real Miami signed is in no real club roster (rule 1); the opening book and the requests still name him.
+    Identity only: no result, minutes or club is read here."""
+    from .club_replacements import read as replacements
+    from .league_moves import opening_book, read as moves, season_roles
+    from .season_games import slate_dir
+    from .write_back import miami_notes
+    season = season or _season(root)
+    root = Path(root)
+    out = defaultdict(set)
+
+    def add(bbr, name):
+        if bbr and name:
+            out[bbr].add(name)
+
+    for bbr, role in season_roles(season, root).items():           # the real rosters, and the book's players
+        add(bbr, role.get("player_id"))
+    book = opening_book(season, root) or {}
+    for rows in list((book.get("clubs") or {}).values()) + [book.get("pool") or [], book.get("not_placed") or []]:
+        for p in rows:
+            add(p.get("bbr_id"), p.get("player_id"))
+    for e in moves(season, root)["entries"]:
+        add(e.get("bbr_id"), e.get("player"))
+        role = e.get("role") or {}
+        add(role.get("bbr_id") or e.get("bbr_id"), role.get("player_id"))
+    for e in replacements(season, root)["entries"]:
+        add(e.get("bbr_id"), e.get("player"))
+    base = root / f"career/Dwyane_Wade/{season}/00_Team/Team/Roster"
+    if (base / "roster.json").is_file():
+        for p in json.loads((base / "roster.json").read_text(encoding="utf-8"))["players"]:
+            add(p.get("bbr_id") or (WADE_BBR if p.get("name") == WADE else None), p.get("name"))
+    for name in ("holdings.json", "departures.json"):
+        if (base / name).is_file():
+            for e in json.loads((base / name).read_text(encoding="utf-8"))["entries"]:
+                add(e.get("bbr_id") or (WADE_BBR if e.get("player") == WADE else None), e.get("player"))
+    registry = root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json"
+    if registry.is_file():
+        data = json.loads(registry.read_text(encoding="utf-8"))
+        for p in data["players"] if isinstance(data, dict) else data:
+            add(p.get("bbr_id"), p.get("name"))
+    requests = [info["request_path"] for info in miami_notes(root, season) if info["request_path"].is_file()]
+    folder = root / slate_dir(season)
+    requests += sorted(folder.glob("*.request.json")) if folder.is_dir() else []
+    for path in requests:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for side in ("home", "away"):
+            spec = data.get(side) if isinstance(data.get(side), dict) else {}
+            for p in spec.get("players") or []:
+                add(p.get("bbr_id") or (WADE_BBR if p.get("player_id") == WADE else None), p.get("player_id"))
+            for p in ((data.get("frozen") or {}).get(side) or {}).get("players") or []:
+                add((p.get("stat_profile") or {}).get("bbr_id"), p.get("player_id"))
+    return dict(out)
+
+
+def rookies(root=ROOT, season=None):
+    """First-season players by every name the season's records give them: each of `first_season_ids` under each name in
+    `season_names`, so the set holds the player_id his game rows carry (what `rank` and the season awards compare)
+    and his dated record name (what the All-Star rookie pool compares), wherever the simulated league placed him: a
+    real club, Miami, or a club a real Miami move sent him to under rule 1. The same rule for every player, Wade
+    included (his 2003 draft rights make him a 2003-04 rookie under his records' key). A first-season player with no
+    identity record (no bbr_id in any source) is not recognised: identity is never inferred from a result.
+    The dated record name also admits a rookie whose real-roster spelling differs (diacritics: Mickael Pietrus, Darko
+    Milicic, Sasha Pavlovic, Zarko Cabarkapa, Zoran Planinic and Michael Sweetney in 2003-04), so the All-Star rookie
+    pool, which compares record names, is wider than the one the 2003-04 Rookie Challenge was selected from; replayed
+    read-only it would name Jarvis Hayes for T.J. Ford. The recorded selection stands (`all_star.json` is a source
+    record)."""
+    season = season or _season(root)
+    names = season_names(root, season)
+    return {name for bbr in first_season_ids(root, season) for name in names.get(bbr, ())}
 
 
 def _lines(rows, start, end):
@@ -221,13 +333,93 @@ def filed_page(award, end, season):
     return league_dir(season) / month / f"Week_{week}" / "League_Awards.md"
 
 
+def _day(d):
+    x = _d(d)
+    return f"{x.strftime('%B')} {x.day}, {x.year}"
+
+
+def _opening(season, root=ROOT):
+    return min(p[1] for p in periods(season, root) if p[0] == "player_of_week")
+
+
+def rookie_rule(season, root=ROOT):
+    """The Rookie of the Month line of `RULE` for the season: the identity sources that name its first-season players
+    (`first_season_sources`, only those naming at least one), so a record never cites a source that supplied none
+    (there is no registry draft-rights cohort after 2003)."""
+    named = [label for label, ids in first_season_sources(root, season) if ids]
+    sources = (", ".join(named[:-1]) + " and " + named[-1] if len(named) > 1 else named[0] if named
+               else f"none yet: no sourced identity record names a first season in {season}")
+    line = (f"- Rookie of the Month: first-season players, under every name their game rows carry wherever the "
+            f"simulated league placed them; at least half his club's games; Game Score per game + 4 x win share. "
+            f"First-season players are those the sourced identity records name: {sources}.")
+    return textwrap.fill(line, width=116, subsequent_indent="  ", break_long_words=False, break_on_hyphens=False)
+
+
+def rule_text(season, root=ROOT):
+    """`RULE` with the season's own calendar, from the same periods the decisions use (`periods`): opening night, the
+    opening week, the last regular-season day and the first and last award months (an October opening folds into
+    November), and the season's rookie sources (`rookie_rule`). Written into the season's record when it starts, so
+    each record states the dates and sources it was decided on."""
+    def span(start, end):
+        a, b = _d(start), _d(end)
+        return f"{a.strftime('%B')} {a.day} to {_day(end)}" if a.year == b.year else f"{_day(start)} to {_day(end)}"
+
+    spans = periods(season, root)
+    weeks = [p for p in spans if p[0] == "player_of_week"]
+    months = sorted({(p[1], p[2]) for p in spans if p[0] == "rookie_of_month"})
+    opening = weeks[0][1]
+    fold = (f"October is folded into November because the season opened {_day(opening)}." if _d(opening).month == 10
+            else f"The season opened {_day(opening)}, so no October is folded in.")
+    return RULE.format(opening=_day(opening), first_week_end=_day(weeks[0][2]), last_day=_day(weeks[-1][2]), fold=fold,
+                       first_month=span(*months[0]), last_month=span(*months[-1]), rookie_rule=rookie_rule(season, root))
+
+
+def states_own_calendar(rule, season, root=ROOT):
+    """Whether a stored rule names the season's own opening night: the month and day after 'opening night,' (and the
+    year where it gives one) are the season's first Player of the Week day (`periods`). Every version of the rule
+    names it there, and the October fold follows from it. The 2003-04 record ('opening night, October 28') states its
+    own calendar; a later record the earlier code started with that same text does not. A rule naming no opening night
+    does not state it."""
+    named = re.search(r"opening night, ([A-Z][a-z]+) (\d{1,2})(?:, (\d{4}))?", " ".join((rule or "").split()))
+    if not named:
+        return False
+    opening = _d(_opening(season, root))
+    month, day, year = named.groups()
+    return (month, int(day)) == (opening.strftime("%B"), opening.day) and (year is None or int(year) == opening.year)
+
+
 def read_decisions(root=ROOT, season=None):
     season = season or _season(root)
     path = Path(root) / decisions_path(season)
     if path.is_file():
         return json.loads(path.read_text(encoding="utf-8"))
     return {"schema_version": 1, "season": season, "kind": "award_decisions",
-            "rule": __doc__.split("\n\n", 1)[1].strip(), "decisions": []}
+            "rule": rule_text(season, root), "decisions": []}
+
+
+def repair_rules(root=ROOT, seasons=None):
+    """Rewrite the stated rule of an existing season record whose calendar is not its own (`states_own_calendar`) with
+    the season's own (`rule_text`). A record started by the earlier code carried the 2003-04 dates (opening night
+    October 28, October folded into November) whatever its season; that is the defect repaired. A record that already
+    names its own opening night is kept as written, whatever its wording, because its rule is the one its decisions
+    were made under (the 2003-04 record, decided under the rookie pool of its dates). Metadata only: the 'rule' field
+    is the one value written, every decision, period, shortlist and winner is kept byte for byte, and no page or award
+    register is touched. Returns the records rewritten."""
+    root = Path(root)
+    found = sorted(path.parent.name for path in (root / PLAYER / "Stats_and_Awards/League").glob("*/award_decisions.json"))
+    changed = []
+    for season in (seasons or found):
+        path = root / decisions_path(season)
+        if not path.is_file():
+            continue
+        record = json.loads(path.read_text(encoding="utf-8"))
+        rule = rule_text(season, root)
+        if record.get("rule") == rule or states_own_calendar(record.get("rule"), season, root):
+            continue
+        record["rule"] = rule                                      # the key keeps its place in the record
+        path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        changed.append(decisions_path(season).as_posix())
+    return changed
 
 
 def due(clock, season=None, root=ROOT):
