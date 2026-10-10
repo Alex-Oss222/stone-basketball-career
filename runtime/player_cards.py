@@ -16,7 +16,8 @@ from pathlib import Path
 import re
 
 from .stable_json import stable
-from .career_stats import aggregate, identity_at, metadata, select
+from .career_stats import NATIONAL_TYPES, aggregate, identity_at, metadata, national_result_edition, select
+from .era import national_rules
 from .season_rules import month_week
 from .shot_chart import NBA_GEOMETRY, ZONES, aggregate_shots
 from .shot_events import ENGINE_SHOT_LABEL, build_tracking_cohort, engine_result_shots, shot_source_type
@@ -29,8 +30,13 @@ COMPETITIONS = {"regular": "NBA regular season", "preseason": "NBA preseason", "
     "olympic_qualifier": "Olympic qualifiers", "olympic_finals": "Olympic tournament",
     "continental_qualifier": "Continental qualifiers", "continental_finals": "Continental tournament",
     "national_friendly": "National-team friendlies", "rookie_challenge": "Rookie Challenge", "all_star": "NBA All-Star Game"}
-# All-Star weekend exhibitions (`runtime/all_star_games.py`): their engine shots stay out of the NBA shot record.
+# All-Star weekend exhibitions (`runtime/all_star_games.py`): played on the NBA court, their engine shots are each
+# game's own shot record, never the NBA one.
 EXHIBITION_COMPETITIONS = {"rookie_challenge", "all_star"}
+NBA_COURT = "nba_feet_from_basket"
+# National games (`runtime/national.py`): the engine draws their shots on the FIBA court of the date
+# (`era.national_rules`); they stay in the national competition's own record, zoned on that court, and are never drawn
+# on the card's NBA court.
 
 
 def relative(page, target):
@@ -127,8 +133,11 @@ def load_recorded_shots(player, identity, records, clock):
                     or not path.is_relative_to(player.resolve()) or meta.get("status") != "played"):
                 raise ValueError("engine shot source must be the adjacent result declared by its closed game note")
             raw = json.loads(path.read_text(encoding="utf-8"))
+            # A national record's season is its edition; the engine labels the game with its ability season.
+            owner = (national_result_edition(note, meta, raw) if r.get("competition") in NATIONAL_TYPES
+                     else raw.get("season"))
             if (raw.get("event_id") != r["event_id"] or raw.get("game_date") != r["date"]
-                    or meta.get("date") != r["date"] or raw.get("season") != r["season"]
+                    or meta.get("date") != r["date"] or owner != r["season"]
                     or (meta.get("competition") and raw.get("game_type") != meta["competition"])
                     or (meta.get("event_id") and raw.get("event_id") != meta["event_id"])):
                 raise ValueError("engine shot source disagrees with its closed game")
@@ -138,9 +147,14 @@ def load_recorded_shots(player, identity, records, clock):
             if "shot_tracking" in raw:
                 if declaration:
                     raise ValueError("a game cannot combine engine locations and a declared external shot feed")
-                if r.get("competition") in EXHIBITION_COMPETITIONS:
-                    continue
-                if r.get("competition") not in NBA_SHOT_COMPETITIONS:
+                court = raw["shot_tracking"]["coordinate_system"]
+                if r.get("competition") in NATIONAL_TYPES:
+                    if court != national_rules(r["date"])["coordinate_system"]:
+                        raise ValueError("national engine shots must be on the FIBA court of the game's date")
+                elif r.get("competition") in NBA_SHOT_COMPETITIONS | EXHIBITION_COMPETITIONS:
+                    if court != NBA_COURT:
+                        raise ValueError("NBA and All-Star engine shots must be on the NBA court")
+                else:
                     raise ValueError("this competition requires a separately verified shot geometry adapter")
                 matches = [(side, row["player_id"]) for side in ("home", "away")
                            for row in raw["player_stats"][side] if row["player_id"] in aliases]
@@ -148,7 +162,8 @@ def load_recorded_shots(player, identity, records, clock):
                     raise ValueError("engine shot source has ambiguous or missing player identity")
                 if matches and r.get("team") and raw[matches[0][0]] != r["team"]:
                     raise ValueError("engine shot source player side disagrees with the closed game team")
-                game_shots = [s for s in events if (s["side"], s["player_id"]) in matches]
+                game_shots = [s if court == NBA_COURT else dict(s, coordinate_system=court)
+                              for s in events if (s["side"], s["player_id"]) in matches]
                 aggregate_shots([r], game_shots)
                 shots.extend(game_shots)
                 sources[r["event_id"]] = dict(path=path, label=ENGINE_SHOT_LABEL,
@@ -183,7 +198,8 @@ def load_recorded_shots(player, identity, records, clock):
                 raise ValueError("recorded shots must be objects")
             if shot.get("example_only") or shot.get("synthetic") or str(shot.get("source_ref", "")).startswith("example:"):
                 raise ValueError("illustrative or synthetic shot records cannot enter a live feed")
-            if any(key in shot and shot[key] != value for key, value in (("game_id", r["event_id"]), ("date", r["date"]))):
+            if any(key in shot and shot[key] != value for key, value in (("game_id", r["event_id"]), ("date", r["date"]),
+                                                                       ("coordinate_system", raw["coordinate_system"]))):
                 raise ValueError("shot record date or event disagrees with its envelope")
             game_shots.append({**shot, "game_id": r["event_id"], "date": r["date"],
                                "source_ref": path.relative_to(player.resolve()).as_posix(),
@@ -222,9 +238,16 @@ def player_cards_data(player, identity, records, awards, clock):
                            for event, source in shot_sources.items() if event in ids]
         shooting = aggregate_shots(rows, current_shots)
         competition_label = COMPETITIONS.get(competition, competition)
+        # The card draws the NBA court: NBA games and the All-Star weekend exhibitions played on it.
+        drawn = competition in NBA_SHOT_COMPETITIONS or competition in EXHIBITION_COMPETITIONS
         if not rows:
             source_note = "No closed games in this competition at the current career checkpoint. No appearance or shot sample is implied."
-        elif competition not in NBA_SHOT_COMPETITIONS:
+        elif competition in NATIONAL_TYPES and current_sources:
+            source_note = (ENGINE_SHOT_LABEL + " on the FIBA court of the date come from the original closed game results. "
+                           "Their zones, measured on that court, are listed only in this competition's Shooting.md tables; "
+                           "the interactive card draws only the NBA court, so it maps no location and shows no zone rates "
+                           "for this competition.")
+        elif not drawn:
             source_note = "Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred."
         elif not current_sources:
             source_note = "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
@@ -249,7 +272,7 @@ def player_cards_data(player, identity, records, awards, clock):
             competition_label=competition_label, start=start, end=end, cutoff=end, games=summary["closed"],
             appearances=summary["gp"], dnp=summary["dnp"], box=summary["totals"], rates=summary["rates"],
             pg=summary["pg"], per36=summary["per36"], source_games=source_games, shots=current_shots, shooting=shooting,
-            identity=identity_payload(identity, end), geometry_supported=competition in NBA_SHOT_COMPETITIONS,
+            identity=identity_payload(identity, end), geometry_supported=drawn,
             source_note=source_note, shot_source_type=shot_source_type(current_shots, source_games),
             **build_tracking_cohort(rows, current_shots, tracked_game_ids=set(shot_sources), source_games=source_games)))
 

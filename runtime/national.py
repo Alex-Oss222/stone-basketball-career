@@ -20,6 +20,7 @@ from datetime import date, timedelta
 import json
 from pathlib import Path
 
+from .decisions import equal_shares
 from .fiba_tournament import apply_draws, group_table, resolve_slot
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -580,9 +581,10 @@ def settle_ties(e, rec, closed, day, root=ROOT):
             orders = ["|".join(o) for o in permutations(block)]
             packet, outcome = _draw(root, e, f"fiba-{e['slug']}-tie-{group.lower()}-" + "-".join(_short(t) for t in block),
                                     day, f"Group {group}: order of {', '.join(block)} (level after every FIBA criterion)",
-                                    {o: round(1 / len(orders), 6) for o in orders})
+                                    equal_shares(orders))
             if outcome is None:
-                pending.append(packet)
+                if packet not in pending:                      # the block's packet, named once per tied row
+                    pending.append(packet)
             else:
                 rec["draws"][key] = outcome.split("|")
     return pending

@@ -462,6 +462,17 @@ def due(root, clock):
     return out
 
 
+def finals_tie_packet(event_id, announced, top):
+    """The engine draw between Finals MVP candidates level on votes (the award has never been shared); the shares sum
+    to exactly 1 for any number of them (`decisions.equal_shares`)."""
+    from .decisions import equal_shares
+    return {"event_id": event_id, "date": announced,
+            "question": "Who is the Finals MVP: " + " or ".join(top) + "?",
+            "decider": "Finals MVP media panel (engine draw between equal ballots)",
+            "options": equal_shares(top),
+            "basis": "Equal votes under runtime/season_awards.py; the award has never been shared."}
+
+
 def finals_mvp(award, root):
     """The Finals MVP from the Finals games only: (decision or None while a tie waits for its engine draw)."""
     from .playoffs import read
@@ -496,11 +507,7 @@ def finals_mvp(award, root):
         result = packet.with_name(packet.name.replace(".decision.json", ".decision.result.json"))
         if not packet.is_file():
             packet.parent.mkdir(parents=True, exist_ok=True)
-            packet.write_text(json.dumps({"event_id": base["id"], "date": award["announced"],
-                                          "question": "Who is the Finals MVP: " + " or ".join(top) + "?",
-                                          "decider": "Finals MVP media panel (engine draw between equal ballots)",
-                                          "options": {t: round(1 / len(top), 6) for t in top},
-                                          "basis": "Equal votes under runtime/season_awards.py; the award has never been shared."},
+            packet.write_text(json.dumps(finals_tie_packet(base["id"], award["announced"], top),
                                          indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         if not result.is_file():
             return None

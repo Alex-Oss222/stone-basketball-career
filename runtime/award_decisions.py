@@ -429,10 +429,13 @@ def due(clock, season=None, root=ROOT):
 
 
 def tie_packet(award_id, award, conference, start, end, announced, tied):
+    """The engine draw between players level at the top; the shares sum to exactly 1 for any number of them
+    (`decisions.equal_shares`)."""
+    from .decisions import equal_shares
     return {"event_id": award_id, "date": announced,
             "question": f"Who is the {conference} {AWARDS[award]} for {start} to {end}: " + " or ".join(tied) + "?",
             "decider": "NBA league office (engine draw between equal evidence)",
-            "options": {name: round(1 / len(tied), 6) for name in tied},
+            "options": equal_shares(tied),
             "basis": "Equal award scores at two decimals under runtime/award_decisions.py; no name, reputation or market tiebreak."}
 
 

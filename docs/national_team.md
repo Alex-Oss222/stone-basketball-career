@@ -43,7 +43,7 @@ The user's premises, December 31, 2004 on the career clock (`career/Dwyane_Wade/
 5. **Standings and bracket.** Group tables follow the edition's rule book (`fiba_2004` until 2010):
    - 2 points for a win and 1 for a loss.
    - Ties are broken among the tied teams first, by points and then goal average.
-   - Any tie still level is settled by one engine draw.
+   - Any tie still level is settled by one engine draw, every order equally likely to the millionth (`decisions.equal_shares`: each share is the whole millionths of 1/n and the last orders take one more each for the remainder, so the shares sum to exactly 1).
    - Second rounds that carry over earlier results (the Americas championships) are supported.
    - Knockout slots fill from the tables and from game winners and losers.
 6. **Close.** After the last game (`closed`, `closed_on`, `ranking` and `medal_identities` in the tournament record):
@@ -101,7 +101,7 @@ The user's rule (2005 offseason framework, section 6), in `runtime/national_meda
 - **Rules.** The kernel takes game length, fouls and the three-point line from `era.national_rules(date)`:
   - four 10-minute quarters, five-minute overtimes, a 24-second clock and five fouls;
   - 6.25 m until September 30, 2010, then 6.75 m.
-  - Minute caps scale with game length. Shots are drawn on the FIBA court of the date.
+  - Minute caps scale with game length. Shots are drawn on the FIBA court of the date; Wade's are his national competition's own shot record, zoned on that court (a result on any other court is refused) and never in an NBA view (`runtime/player_cards.py`). The interactive card draws only the NBA court, so their zone tables are in the card's `Shooting.md`.
 - **Calibration.** Each edition uses the real per-game averages of the last senior FIBA tournament published before it (the repository's environment policy). The FIBA statistics service supplies the team totals. Player-rate baselines come from that tournament's players.
 - **NBA players.** The NBA expectation for the ability season is the season just closed for a summer event. It gets the player's journaled development swing, then a translation fitted on anchors: players with an NBA season and the FIBA tournament after it, all before the edition.
   - **Two- and three-point percentages:** a logit shift.

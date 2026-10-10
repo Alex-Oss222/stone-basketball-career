@@ -508,6 +508,7 @@ def mvp_tally(result):
 
 def decide_mvp(root, season, game, day):
     """The game's MVP decision, or (None, packet) while a Rookie Challenge tie waits for its engine draw."""
+    from .decisions import equal_shares                 # the shares sum to exactly 1 (three or more)
     from .season_awards import LENS
     root = Path(root)
     result = result_of(game, root)
@@ -525,12 +526,9 @@ def decide_mvp(root, season, game, day):
         packet = root / LEAGUE / season / "Award_Draws" / f"{eid}.decision.json"
         drawn = packet.with_name(packet.name.replace(".decision.json", ".decision.result.json"))
         if not packet.is_file():
-            share = round(1 / len(top), 6)
-            options = {t: share for t in top}
-            options[top[-1]] = round(1 - share * (len(top) - 1), 6)        # the shares sum to exactly 1 (three or more)
             _write(packet, {"event_id": eid, "date": day, "question": f"Who is the {season} Rookie Challenge MVP: "
                             + " or ".join(top) + "?", "decider": "Rookie Challenge MVP media panel (engine draw between equal ballots)",
-                            "options": options,
+                            "options": equal_shares(top),
                             "basis": "Equal ballots under runtime/all_star_games.py; the award was never shared 2000-2005."})
         if not drawn.is_file():
             return None, packet

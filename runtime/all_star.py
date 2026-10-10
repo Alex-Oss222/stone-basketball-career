@@ -309,6 +309,7 @@ def previous_coaches(c, root=ROOT):
 
 def game_coaches(root, c, day, rows):
     """(decision, pending packet or None)."""
+    from .decisions import equal_shares
     from .seasons import conference_of
     through = dates(c)["coach_record_through"]
     games, _ = _last_games(rows, through)
@@ -332,7 +333,7 @@ def game_coaches(root, c, day, rows):
         if len(best) > 1:
             packet, outcome = _draw(root, c, f"{c.season}-all-star-coach-{conf.lower()}", day,
                                     f"Who coaches the {conf}: " + " or ".join(r["coach"] for r in best) + "?",
-                                    {r["coach"]: round(1 / len(best), 6) for r in best})
+                                    equal_shares(r["coach"] for r in best))
             if outcome is None:
                 pending = packet
                 continue
