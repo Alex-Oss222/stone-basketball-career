@@ -4,7 +4,7 @@
 
 NBA regular season · 2005-06
 
-407 tracked players · 1042 closed games in this record · Through March 26, 2006.
+407 tracked players · 1042 closed games in this record · Through March 27, 2006.
 
 ## Leaders
 
@@ -465,7 +465,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Christian Laettner](../Players/laettch01.md) | 36 | WSH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Clarence Weatherspoon](../Players/weathcl01.md) | 35 | NY | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Clifford Robinson](../Players/robincl02.md) | 39 | DET | NBA | PF | 57 | 0 | 11.1 | 1.4 | 3.5 | .397 | 0.5 | 1.3 | .378 | 0.9 | 2.2 | .408 | .467 | 0.6 | 0.8 | .702 | 0.4 | 1.2 | 1.6 | 0.7 | 0.3 | 0.3 | 0.6 | 1.2 | 3.8 | .498 |
-| [Danny Fortson](../Players/fortsda01.md) | 29 | GS | NBA | PF | 14 | 1 | 13.6 | 1.8 | 3.4 | .532 | 0.0 | 0.2 | .000 | 1.8 | 3.1 | .568 | .532 | 1.3 | 1.6 | .818 | 0.9 | 2.1 | 3.1 | 0.6 | 0.3 | 0.3 | 1.3 | 1.9 | 4.9 | .600 |
+| [Danny Fortson](../Players/fortsda01.md) | 30 | GS | NBA | PF | 14 | 1 | 13.6 | 1.8 | 3.4 | .532 | 0.0 | 0.2 | .000 | 1.8 | 3.1 | .568 | .532 | 1.3 | 1.6 | .818 | 0.9 | 2.1 | 3.1 | 0.6 | 0.3 | 0.3 | 1.3 | 1.9 | 4.9 | .600 |
 | [Danny Manning](../Players/mannida01.md) | 39 | DET | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [David West](../Players/westda01.md) | 25 | NO | NBA | PF | 68 | 68 | 35.4 | 7.3 | 15.7 | .466 | 0.2 | 0.7 | .348 | 7.1 | 15.1 | .472 | .474 | 2.7 | 3.0 | .910 | 2.2 | 5.4 | 7.6 | 1.6 | 0.9 | 0.9 | 1.7 | 2.9 | 17.6 | .517 |
 | [DeSagana Diop](../Players/diopde01.md) | 24 | CLE | NBA | PF | 61 | 0 | 10.2 | 0.6 | 1.2 | .487 | 0.0 | 0.1 | .750 | 0.6 | 1.2 | .472 | .507 | 0.4 | 0.8 | .542 | 1.2 | 1.5 | 2.7 | 0.2 | 0.3 | 0.8 | 0.3 | 1.2 | 1.7 | .530 |
@@ -745,7 +745,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [December 2005](12_December/League_Stats.md) | December 1-31, 2005 | 218 | Complete |
 | [January 2006](01_January/League_Stats.md) | January 1-31, 2006 | 227 | Complete |
 | [February 2006](02_February/League_Stats.md) | February 1-28, 2006 | 181 | Complete |
-| [March 2006](03_March/League_Stats.md) | March 1-31, 2006 | 200 | Through March 26, 2006 |
+| [March 2006](03_March/League_Stats.md) | March 1-31, 2006 | 200 | Through March 27, 2006 |
 | [April 2006](04_April/League_Stats.md) | April 1-30, 2006 | 0 | Not started |
 
 ## Coverage

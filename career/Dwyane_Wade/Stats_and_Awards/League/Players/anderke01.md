@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `anderke01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-03-26 · **Club on this date:** Free agent · **Basis:** out of the league: his real career has no 2005-06 season (runtime/availability.py) · **League:** NBA  
+**Card date:** 2006-03-27 · **Club on this date:** Free agent · **Basis:** out of the league: his real career has no 2005-06 season (runtime/availability.py) · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #12 · **Born:** 1970-10-09 · **Age on card date:** 35  
 **Registry ID:** `anderke01` · [Basketball-Reference page](https://www.basketball-reference.com/players/a/anderke01.html) · ESPN ID 15
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `anderk
 
 ## Simulated statistics
 
-As of **2006-03-26**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-03-27**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -121,4 +121,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2006-03-26. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2006-03-27. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

@@ -4,7 +4,7 @@
 
 NBA regular season · March 22-31, 2006
 
-407 tracked players · 41 closed games in this record · Through March 26, 2006.
+407 tracked players · 41 closed games in this record · Through March 27, 2006.
 
 ## Leaders
 
@@ -465,7 +465,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Christian Laettner](../../../Players/laettch01.md) | 36 | WSH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Clarence Weatherspoon](../../../Players/weathcl01.md) | 35 | NY | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Clifford Robinson](../../../Players/robincl02.md) | 39 | DET | NBA | PF | 3 | 0 | 23.1 | 2.7 | 5.7 | .471 | 0.0 | 1.0 | .000 | 2.7 | 4.7 | .571 | .471 | 1.0 | 2.0 | .500 | 1.0 | 2.7 | 3.7 | 1.7 | 0.3 | 0.3 | 0.3 | 2.0 | 6.3 | .484 |
-| [Danny Fortson](../../../Players/fortsda01.md) | 29 | GS | NBA | PF | 2 | 0 | 8.0 | 0.0 | 0.5 | .000 | 0.0 | 0.0 | N/A | 0.0 | 0.5 | .000 | .000 | 0.0 | 0.0 | N/A | 0.5 | 0.5 | 1.0 | 0.0 | 0.0 | 0.0 | 1.5 | 1.0 | 0.0 | .000 |
+| [Danny Fortson](../../../Players/fortsda01.md) | 30 | GS | NBA | PF | 2 | 0 | 8.0 | 0.0 | 0.5 | .000 | 0.0 | 0.0 | N/A | 0.0 | 0.5 | .000 | .000 | 0.0 | 0.0 | N/A | 0.5 | 0.5 | 1.0 | 0.0 | 0.0 | 0.0 | 1.5 | 1.0 | 0.0 | .000 |
 | [Danny Manning](../../../Players/mannida01.md) | 39 | DET | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [David West](../../../Players/westda01.md) | 25 | NO | NBA | PF | 3 | 3 | 41.4 | 8.0 | 18.0 | .444 | 0.7 | 2.0 | .333 | 7.3 | 16.0 | .458 | .463 | 3.3 | 3.3 | 1.000 | 2.7 | 7.0 | 9.7 | 1.3 | 1.7 | 0.7 | 3.0 | 3.3 | 20.0 | .514 |
 | [DeSagana Diop](../../../Players/diopde01.md) | 24 | CLE | NBA | PF | 2 | 0 | 9.2 | 0.0 | 0.5 | .000 | 0.0 | 0.0 | N/A | 0.0 | 0.5 | .000 | .000 | 0.0 | 0.0 | N/A | 1.5 | 2.5 | 4.0 | 0.0 | 0.0 | 0.5 | 1.0 | 2.0 | 0.0 | .000 |

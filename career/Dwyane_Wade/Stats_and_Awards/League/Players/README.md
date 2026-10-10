@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-03-26**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-03-27**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -448,7 +448,7 @@ Card date: **2006-03-26**. 653 registry players, one Markdown card and one inter
 | [Clarence Weatherspoon](weathcl01.md) | Free agent | 35 | sourced | [open](weathcl01.html) |
 | [Clifford Robinson](robincl02.md) | Atlanta Hawks | 39 | silhouette | [open](robincl02.html) |
 | [Damone Brown](brownda02.md) | Free agent | 26 | silhouette | [open](brownda02.html) |
-| [Danny Fortson](fortsda01.md) | New Jersey Nets | 29 | sourced | [open](fortsda01.html) |
+| [Danny Fortson](fortsda01.md) | New Jersey Nets | 30 | sourced | [open](fortsda01.html) |
 | [Danny Manning](mannida01.md) | Free agent | 39 | sourced | [open](mannida01.html) |
 | [Darius Songaila](songada01.md) | Sacramento Kings | 28 | silhouette | [open](songada01.html) |
 | [David West](westda01.md) | New Orleans/Oklahoma City Hornets | 25 | sourced | [open](westda01.html) |

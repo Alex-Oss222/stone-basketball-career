@@ -2,9 +2,9 @@
 
 # Contract | J.R. Smith
 
-Known through: 2006-03-26. [Open interactive contract](jrsmith.html#contract) · [Contract history](jrsmith.html#contract-history)
+Known through: 2006-03-27. [Open interactive contract](jrsmith.html#contract) · [Contract history](jrsmith.html#contract-history)
 
-J.R. Smith: under contract. Evidence cutoff: 2006-03-26.
+J.R. Smith: under contract. Evidence cutoff: 2006-03-27.
 
 ## Current contract
 

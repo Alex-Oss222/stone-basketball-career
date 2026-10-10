@@ -2,9 +2,9 @@
 
 # Contract | Chuck Hayes
 
-Known through: 2006-03-26. [Open interactive contract](hayesch01.html#contract) · [Contract history](hayesch01.html#contract-history)
+Known through: 2006-03-27. [Open interactive contract](hayesch01.html#contract) · [Contract history](hayesch01.html#contract-history)
 
-Chuck Hayes: under contract. Evidence cutoff: 2006-03-26.
+Chuck Hayes: under contract. Evidence cutoff: 2006-03-27.
 
 ## Current contract
 

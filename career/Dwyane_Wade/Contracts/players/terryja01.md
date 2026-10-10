@@ -2,9 +2,9 @@
 
 # Contract | Jason Terry
 
-Known through: 2006-03-26. [Open interactive contract](terryja01.html#contract) · [Contract history](terryja01.html#contract-history)
+Known through: 2006-03-27. [Open interactive contract](terryja01.html#contract) · [Contract history](terryja01.html#contract-history)
 
-Jason Terry: under contract. Evidence cutoff: 2006-03-26.
+Jason Terry: under contract. Evidence cutoff: 2006-03-27.
 
 ## Current contract
 

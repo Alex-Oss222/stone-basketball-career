@@ -2,9 +2,9 @@
 
 # Contract | Jake Tsakalidis
 
-Known through: 2006-03-26. [Open interactive contract](tsakaja01.html#contract) · [Contract history](tsakaja01.html#contract-history)
+Known through: 2006-03-27. [Open interactive contract](tsakaja01.html#contract) · [Contract history](tsakaja01.html#contract-history)
 
-Jake Tsakalidis: under contract. Evidence cutoff: 2006-03-26.
+Jake Tsakalidis: under contract. Evidence cutoff: 2006-03-27.
 
 ## Current contract
 

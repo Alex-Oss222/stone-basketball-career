@@ -2915,6 +2915,110 @@
     }
    ],
    "winner": "Kobe Bryant"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-03-20-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2006-03-20",
+   "period_end": "2006-03-26",
+   "announced_on": "2006-03-27",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/03_March/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 33.2,
+     "reb": 7.0,
+     "ast": 3.5,
+     "game_score": 22.62,
+     "score": 102.5,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 32.7,
+     "reb": 4.7,
+     "ast": 3.7,
+     "game_score": 28.73,
+     "score": 92.2,
+     "rank": 2
+    },
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 21.5,
+     "reb": 5.2,
+     "ast": 8.8,
+     "game_score": 20.5,
+     "score": 91.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Paul Pierce"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-03-20-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2006-03-20",
+   "period_end": "2006-03-26",
+   "announced_on": "2006-03-27",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/03_March/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Elton Brand",
+     "team": "Los Angeles Clippers",
+     "games": 5,
+     "wins": 1,
+     "losses": 4,
+     "pts": 20.2,
+     "reb": 9.4,
+     "ast": 4.0,
+     "game_score": 17.66,
+     "score": 91.3,
+     "rank": 1
+    },
+    {
+     "player": "Shaquille O'Neal",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 27.0,
+     "reb": 9.8,
+     "ast": 2.8,
+     "game_score": 19.75,
+     "score": 88.0,
+     "rank": 2
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 22.2,
+     "reb": 11.8,
+     "ast": 3.5,
+     "game_score": 19.28,
+     "score": 83.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Elton Brand"
   }
  ]
 }
