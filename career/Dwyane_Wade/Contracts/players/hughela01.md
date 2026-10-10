@@ -2,9 +2,9 @@
 
 # Contract | Larry Hughes
 
-Known through: 2006-02-19. [Open interactive contract](hughela01.html#contract) · [Contract history](hughela01.html#contract-history)
+Known through: 2006-02-20. [Open interactive contract](hughela01.html#contract) · [Contract history](hughela01.html#contract-history)
 
-Larry Hughes: under contract. Evidence cutoff: 2006-02-19.
+Larry Hughes: under contract. Evidence cutoff: 2006-02-20.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Larry Hughes |
-| Club / rights baseline | Indiana Pacers |
+| Club / rights baseline | Boston Celtics |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

@@ -4236,6 +4236,42 @@
    "contract": null,
    "note": "cleared waivers from Memphis Grizzlies: a free agent",
    "waiver": "2005-06-market-2006-02-17-waive-walshma01"
+  },
+  {
+   "deal": "2005-06-league-trade-2006-02-20-fishede01-hillgr01-hughela01-pollasc01",
+   "date": "2006-02-20",
+   "kind": "trade",
+   "player": "Derek Fisher",
+   "bbr_id": "fishede01",
+   "from": "Boston Celtics",
+   "to": "Indiana Pacers"
+  },
+  {
+   "deal": "2005-06-league-trade-2006-02-20-fishede01-hillgr01-hughela01-pollasc01",
+   "date": "2006-02-20",
+   "kind": "trade",
+   "player": "Grant Hill",
+   "bbr_id": "hillgr01",
+   "from": "Boston Celtics",
+   "to": "Indiana Pacers"
+  },
+  {
+   "deal": "2005-06-league-trade-2006-02-20-fishede01-hillgr01-hughela01-pollasc01",
+   "date": "2006-02-20",
+   "kind": "trade",
+   "player": "Larry Hughes",
+   "bbr_id": "hughela01",
+   "from": "Indiana Pacers",
+   "to": "Boston Celtics"
+  },
+  {
+   "deal": "2005-06-league-trade-2006-02-20-fishede01-hillgr01-hughela01-pollasc01",
+   "date": "2006-02-20",
+   "kind": "trade",
+   "player": "Scot Pollard",
+   "bbr_id": "pollasc01",
+   "from": "Indiana Pacers",
+   "to": "Boston Celtics"
   }
  ],
  "market_days": [
@@ -4349,6 +4385,7 @@
   "2006-02-16",
   "2006-02-17",
   "2006-02-18",
-  "2006-02-19"
+  "2006-02-19",
+  "2006-02-20"
  ]
 }

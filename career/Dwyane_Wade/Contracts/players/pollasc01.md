@@ -2,9 +2,9 @@
 
 # Contract | Scot Pollard
 
-Known through: 2006-02-19. [Open interactive contract](pollasc01.html#contract) · [Contract history](pollasc01.html#contract-history)
+Known through: 2006-02-20. [Open interactive contract](pollasc01.html#contract) · [Contract history](pollasc01.html#contract-history)
 
-Scot Pollard: under contract. Evidence cutoff: 2006-02-19.
+Scot Pollard: under contract. Evidence cutoff: 2006-02-20.
 
 ## Current contract
 
@@ -122,7 +122,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Scot Pollard |
-| Club / rights baseline | Indiana Pacers |
+| Club / rights baseline | Boston Celtics |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

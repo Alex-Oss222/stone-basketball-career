@@ -2,9 +2,9 @@
 
 # Contract | simiewa01
 
-Known through: 2006-02-19. [Open interactive contract](simiewa01.html#contract) · [Contract history](simiewa01.html#contract-history)
+Known through: 2006-02-20. [Open interactive contract](simiewa01.html#contract) · [Contract history](simiewa01.html#contract-history)
 
-simiewa01: under contract. Evidence cutoff: 2006-02-19.
+simiewa01: under contract. Evidence cutoff: 2006-02-20.
 
 ## Current contract
 

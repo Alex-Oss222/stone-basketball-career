@@ -2,9 +2,9 @@
 
 # Contract | Vincent Yarbrough
 
-Known through: 2006-02-19. [Open interactive contract](yarbrvi01.html#contract) · [Contract history](yarbrvi01.html#contract-history)
+Known through: 2006-02-20. [Open interactive contract](yarbrvi01.html#contract) · [Contract history](yarbrvi01.html#contract-history)
 
-Vincent Yarbrough: expired or unresolved. Evidence cutoff: 2006-02-19.
+Vincent Yarbrough: expired or unresolved. Evidence cutoff: 2006-02-20.
 
 ## Current contract
 

@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-02-19. [Search the contract directory](index.html)
+Known through 2006-02-20. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -174,7 +174,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Delonte West](players/westde01.md) | Seattle SuperSonics | under contract | Delonte West · 2005-09-02 | 1 |
 | [Deng Gai](players/gaide01.md) | Portland Trail Blazers | under contract | Deng Gai · 2005-08-02 | 1 |
 | [Derek Anderson](players/anderde01.md) | Washington Wizards | under contract | Derek Anderson · existing contract; signing date not recorded | 1 |
-| [Derek Fisher](players/fishede01.md) | Boston Celtics | under contract | Derek Fisher · 2005-09-30 | 3 |
+| [Derek Fisher](players/fishede01.md) | Indiana Pacers | under contract | Derek Fisher · 2005-09-30 | 3 |
 | [DerMarr Johnson](players/johnsde03.md) | San Antonio Spurs | under contract | DerMarr Johnson · 2003-10-01 | 2 |
 | [Deron Williams](players/willide01.md) | New York Knicks | under contract | Deron Williams · 2005-07-01 | 1 |
 | [Derrick Coleman](players/colemde01.md) | Free agent | under contract | No verified current agreement | 2 |
@@ -245,7 +245,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Glen Rice](players/ricegl01.md) | Free agent | under contract | Glen Rice · 2003-10-10 | 1 |
 | [Glenn Robinson](players/robingl01.md) | Free agent | under contract | Glenn Robinson · existing contract; signing date not recorded | 1 |
 | [Gordan Giricek](players/giricgo01.md) | Houston Rockets | under contract | Gordan Giricek · 2004-07-29 | 1 |
-| [Grant Hill](players/hillgr01.md) | Boston Celtics | under contract | Grant Hill · existing contract; signing date not recorded | 1 |
+| [Grant Hill](players/hillgr01.md) | Indiana Pacers | under contract | Grant Hill · existing contract; signing date not recorded | 1 |
 | [Grant Long](players/longgr01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Greg Buckner](players/buckngr01.md) | Cleveland Cavaliers | under contract | Greg Buckner · 2002-07-25 | 1 |
 | [Greg Ostertag](players/ostergr01.md) | Seattle SuperSonics | under contract | Greg Ostertag · 2004-07-15 | 2 |
@@ -375,7 +375,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Lamond Murray](players/murrala01.md) | Utah Jazz | under contract | Lamond Murray · existing contract; signing date not recorded | 1 |
 | [LaPhonso Ellis](players/ellisla01.md) | Free agent | under contract guarantee amended | LaPhonso Ellis · 2001-07-28 | 1 |
 | [Laron Profit](players/laronprofit.md) | Boston Celtics | under contract | No verified current agreement | 1 |
-| [Larry Hughes](players/hughela01.md) | Indiana Pacers | under contract | Larry Hughes · 2005-08-02 | 2 |
+| [Larry Hughes](players/hughela01.md) | Boston Celtics | under contract | Larry Hughes · 2005-08-02 | 2 |
 | [Latrell Sprewell](players/sprewla01.md) | Free agent | under contract | Latrell Sprewell · existing contract; signing date not recorded | 1 |
 | [Lavor Postell](players/postela01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Lawrence Funderburke](players/fundela01.md) | Free agent | under contract unverified | No verified current agreement | 0 |
@@ -555,7 +555,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Sani Becirovic](players/becirsa01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Sasha Pavlovic](players/pavloal01.md) | Boston Celtics | No verified contract record | No verified current agreement | 0 |
 | [Sasha Vujačić](players/sashavujai.md) | Denver Nuggets | under contract | Sasha Vujačić · 2004-07-01 | 1 |
-| [Scot Pollard](players/pollasc01.md) | Indiana Pacers | under contract | Scot Pollard · existing contract; signing date not recorded | 1 |
+| [Scot Pollard](players/pollasc01.md) | Boston Celtics | under contract | Scot Pollard · existing contract; signing date not recorded | 1 |
 | [Scott Padgett](players/padgesc01.md) | Toronto Raptors | traded | Scott Padgett · 2004-07-14 | 4 |
 | [Scott Williams](players/willisc01.md) | Free agent | under contract | No verified current agreement | 2 |
 | [Scottie Pippen](players/pippesc01.md) | Free agent | under contract | No verified current agreement | 2 |

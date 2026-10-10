@@ -4,7 +4,7 @@
 
 NBA regular season · February 1-28, 2006
 
-407 tracked players · 118 closed games in this record · Through February 19, 2006.
+407 tracked players · 118 closed games in this record · Through February 20, 2006.
 
 ## Leaders
 
@@ -100,7 +100,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Shammond Williams](../../Players/willish01.md) | 30 | DEN | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Smush Parker](../../Players/parkesm01.md) | 24 | CLE | NBA | PG | 6 | 6 | 32.7 | 4.5 | 10.3 | .435 | 1.0 | 3.5 | .286 | 3.5 | 6.8 | .512 | .484 | 1.2 | 1.5 | .778 | 0.3 | 3.8 | 4.2 | 3.0 | 1.2 | 0.0 | 3.2 | 3.0 | 11.2 | .508 |
 | [Speedy Claxton](../../Players/claxtsp01.md) | 27 | SA | NBA | PG | 8 | 0 | 27.9 | 3.8 | 9.2 | .405 | 0.8 | 1.5 | .500 | 3.0 | 7.8 | .387 | .446 | 3.4 | 4.1 | .818 | 0.4 | 3.2 | 3.6 | 3.2 | 2.1 | 0.2 | 1.9 | 2.2 | 11.6 | .525 |
-| [Stephon Marbury](../../Players/marbust01.md) | 28 | PHX | NBA | PG | 7 | 7 | 40.3 | 6.6 | 16.4 | .400 | 0.7 | 1.9 | .385 | 5.9 | 14.6 | .402 | .422 | 4.4 | 6.1 | .721 | 0.9 | 3.0 | 3.9 | 5.7 | 1.9 | 0.0 | 3.6 | 3.3 | 18.3 | .478 |
+| [Stephon Marbury](../../Players/marbust01.md) | 29 | PHX | NBA | PG | 7 | 7 | 40.3 | 6.6 | 16.4 | .400 | 0.7 | 1.9 | .385 | 5.9 | 14.6 | .402 | .422 | 4.4 | 6.1 | .721 | 0.9 | 3.0 | 3.9 | 5.7 | 1.9 | 0.0 | 3.6 | 3.3 | 18.3 | .478 |
 | [Steve Blake](../../Players/blakest01.md) | 25 | WSH | NBA | PG | 7 | 7 | 36.1 | 5.1 | 10.9 | .474 | 2.4 | 5.4 | .447 | 2.7 | 5.4 | .500 | .586 | 2.1 | 2.7 | .789 | 0.7 | 4.0 | 4.7 | 5.7 | 0.9 | 0.0 | 1.7 | 3.4 | 14.9 | .616 |
 | [Steve Francis](../../Players/francst01.md) | 28 | HOU | NBA | PG | 6 | 6 | 41.2 | 3.8 | 10.7 | .359 | 0.2 | 1.0 | .167 | 3.7 | 9.7 | .379 | .367 | 2.5 | 3.8 | .652 | 1.3 | 4.0 | 5.3 | 7.3 | 1.5 | 0.3 | 3.3 | 4.7 | 10.3 | .418 |
 | [Steve Kerr](../../Players/kerrst01.md) | 40 | SA | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -423,7 +423,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [James Singleton](../../Players/singlja01.md) | 24 | DET | NBA | SF | 7 | 0 | 11.2 | 2.4 | 3.4 | .708 | 0.6 | 0.9 | .667 | 1.9 | 2.6 | .722 | .792 | 0.9 | 1.0 | .857 | 1.1 | 1.3 | 2.4 | 1.0 | 0.1 | 0.4 | 0.1 | 1.4 | 6.3 | .812 |
 | [Martell Webster](../../Players/webstma02.md) | 19 | WSH | NBA | SF | 7 | 1 | 20.9 | 3.3 | 6.4 | .511 | 1.3 | 3.3 | .391 | 2.0 | 3.1 | .636 | .611 | 2.0 | 2.3 | .875 | 0.6 | 1.6 | 2.1 | 1.0 | 0.1 | 0.3 | 1.1 | 1.7 | 9.9 | .663 |
 | [Quinton Ross](../../Players/rossqu01.md) | 24 | NJ | NBA | SF | 7 | 0 | 22.5 | 2.7 | 5.4 | .500 | 0.0 | 0.4 | .000 | 2.7 | 5.0 | .543 | .500 | 1.1 | 2.0 | .571 | 1.3 | 2.3 | 3.6 | 1.3 | 0.7 | 0.1 | 0.4 | 2.6 | 6.6 | .521 |
-| [Rawle Marshall](../../Players/marshra01.md) | 23 | Charlotte Bobcats | NBA | SF | 7 | 0 | 5.2 | 0.6 | 1.3 | .444 | 0.1 | 0.4 | .333 | 0.4 | 0.9 | .500 | .500 | 0.1 | 0.6 | .250 | 0.1 | 1.1 | 1.3 | 0.4 | 0.0 | 0.3 | 1.3 | 0.1 | 1.4 | .465 |
+| [Rawle Marshall](../../Players/marshra01.md) | 24 | Charlotte Bobcats | NBA | SF | 7 | 0 | 5.2 | 0.6 | 1.3 | .444 | 0.1 | 0.4 | .333 | 0.4 | 0.9 | .500 | .500 | 0.1 | 0.6 | .250 | 0.1 | 1.1 | 1.3 | 0.4 | 0.0 | 0.3 | 1.3 | 0.1 | 1.4 | .465 |
 | [Sergei Monia](../../Players/moniase01.md) | 22 | ATL | NBA | SF | 7 | 0 | 4.5 | 0.4 | 0.7 | .600 | 0.1 | 0.1 | 1.000 | 0.3 | 0.6 | .500 | .700 | 0.3 | 0.3 | 1.000 | 0.1 | 0.7 | 0.9 | 0.3 | 0.0 | 0.0 | 0.0 | 0.3 | 1.3 | .765 |
 | [walshma01](../../Players/walshma01.md) | 23 | Charlotte Bobcats | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Bernard Robinson](../../Players/robinbe01.md) | 25 | MIL | NBA | SF | 6 | 0 | 16.8 | 1.5 | 4.0 | .375 | 0.2 | 0.7 | .250 | 1.3 | 3.3 | .400 | .396 | 1.7 | 2.0 | .833 | 0.3 | 2.3 | 2.7 | 0.5 | 0.8 | 0.2 | 0.8 | 1.7 | 4.8 | .495 |
@@ -743,7 +743,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/League_Stats.md) | February 1-7, 2006 | 50 | Complete |
 | [Week 2](Week_2/League_Stats.md) | February 8-14, 2006 | 53 | Complete |
-| [Week 3](Week_3/League_Stats.md) | February 15-21, 2006 | 15 | Through February 19, 2006 |
+| [Week 3](Week_3/League_Stats.md) | February 15-21, 2006 | 15 | Through February 20, 2006 |
 | [Week 4](Week_4/League_Stats.md) | February 22-28, 2006 | 0 | Not started |
 
 ## Coverage

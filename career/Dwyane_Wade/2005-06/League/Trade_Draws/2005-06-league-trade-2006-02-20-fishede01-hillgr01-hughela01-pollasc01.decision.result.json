@@ -1,0 +1,12 @@
+{
+ "date": "2006-02-20",
+ "decider": "Boston Celtics and Indiana Pacers front offices (engine draw)",
+ "event_id": "2005-06-league-trade-2006-02-20-fishede01-hillgr01-hughela01-pollasc01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.8341,
+  "decline": 0.1659
+ },
+ "outcome": "accept",
+ "question": "Do Boston Celtics and Indiana Pacers trade Derek Fisher and Grant Hill for Larry Hughes and Scot Pollard?"
+}

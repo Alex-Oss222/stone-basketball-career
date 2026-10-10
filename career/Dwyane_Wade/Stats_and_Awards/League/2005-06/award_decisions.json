@@ -2187,6 +2187,110 @@
     }
    ],
    "winner": "Kobe Bryant"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-02-13-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2006-02-13",
+   "period_end": "2006-02-19",
+   "announced_on": "2006-02-20",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/02_February/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Martin",
+     "team": "Charlotte Bobcats",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 23.5,
+     "reb": 7.0,
+     "ast": 1.0,
+     "game_score": 19.35,
+     "score": 44.7,
+     "rank": 1
+    },
+    {
+     "player": "Luke Ridnour",
+     "team": "Charlotte Bobcats",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 19.5,
+     "reb": 4.0,
+     "ast": 6.0,
+     "game_score": 18.4,
+     "score": 42.8,
+     "rank": 2
+    },
+    {
+     "player": "Dwight Howard",
+     "team": "Orlando Magic",
+     "games": 2,
+     "wins": 1,
+     "losses": 1,
+     "pts": 18.5,
+     "reb": 11.0,
+     "ast": 3.5,
+     "game_score": 19.45,
+     "score": 41.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Martin"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-02-13-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2006-02-13",
+   "period_end": "2006-02-19",
+   "announced_on": "2006-02-20",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/02_February/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 32.0,
+     "reb": 14.5,
+     "ast": 2.0,
+     "game_score": 25.45,
+     "score": 56.9,
+     "rank": 1
+    },
+    {
+     "player": "Steve Nash",
+     "team": "Dallas Mavericks",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 21.5,
+     "reb": 8.0,
+     "ast": 7.5,
+     "game_score": 22.6,
+     "score": 51.2,
+     "rank": 2
+    },
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 23.5,
+     "reb": 7.5,
+     "ast": 3.5,
+     "game_score": 22.5,
+     "score": 51.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
   }
  ]
 }

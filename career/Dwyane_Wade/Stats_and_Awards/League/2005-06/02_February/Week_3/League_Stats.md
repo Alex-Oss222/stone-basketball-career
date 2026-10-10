@@ -4,7 +4,7 @@
 
 NBA regular season · February 15-21, 2006
 
-407 tracked players · 15 closed games in this record · Through February 19, 2006.
+407 tracked players · 15 closed games in this record · Through February 20, 2006.
 
 ## Leaders
 
@@ -100,7 +100,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Shammond Williams](../../../Players/willish01.md) | 30 | DEN | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Smush Parker](../../../Players/parkesm01.md) | 24 | CLE | NBA | PG | 1 | 1 | 20.2 | 4.0 | 7.0 | .571 | 1.0 | 2.0 | .500 | 3.0 | 5.0 | .600 | .643 | 1.0 | 1.0 | 1.000 | 0.0 | 3.0 | 3.0 | 6.0 | 0.0 | 0.0 | 2.0 | 5.0 | 10.0 | .672 |
 | [Speedy Claxton](../../../Players/claxtsp01.md) | 27 | SA | NBA | PG | 1 | 0 | 26.7 | 2.0 | 5.0 | .400 | 0.0 | 0.0 | N/A | 2.0 | 5.0 | .400 | .400 | 4.0 | 4.0 | 1.000 | 0.0 | 3.0 | 3.0 | 2.0 | 0.0 | 0.0 | 3.0 | 3.0 | 8.0 | .592 |
-| [Stephon Marbury](../../../Players/marbust01.md) | 28 | PHX | NBA | PG | 2 | 2 | 40.7 | 9.0 | 20.0 | .450 | 1.5 | 3.0 | .500 | 7.5 | 17.0 | .441 | .487 | 4.0 | 5.5 | .727 | 1.0 | 1.5 | 2.5 | 4.5 | 1.5 | 0.0 | 3.0 | 2.5 | 23.5 | .524 |
+| [Stephon Marbury](../../../Players/marbust01.md) | 29 | PHX | NBA | PG | 2 | 2 | 40.7 | 9.0 | 20.0 | .450 | 1.5 | 3.0 | .500 | 7.5 | 17.0 | .441 | .487 | 4.0 | 5.5 | .727 | 1.0 | 1.5 | 2.5 | 4.5 | 1.5 | 0.0 | 3.0 | 2.5 | 23.5 | .524 |
 | [Steve Blake](../../../Players/blakest01.md) | 25 | WSH | NBA | PG | 1 | 1 | 35.4 | 5.0 | 10.0 | .500 | 1.0 | 4.0 | .250 | 4.0 | 6.0 | .667 | .550 | 5.0 | 8.0 | .625 | 0.0 | 1.0 | 1.0 | 12.0 | 1.0 | 0.0 | 0.0 | 2.0 | 16.0 | .592 |
 | [Steve Francis](../../../Players/francst01.md) | 28 | HOU | NBA | PG | 1 | 1 | 31.0 | 6.0 | 12.0 | .500 | 1.0 | 1.0 | 1.000 | 5.0 | 11.0 | .455 | .542 | 1.0 | 2.0 | .500 | 1.0 | 2.0 | 3.0 | 6.0 | 0.0 | 0.0 | 1.0 | 5.0 | 14.0 | .543 |
 | [Steve Kerr](../../../Players/kerrst01.md) | 40 | SA | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -423,7 +423,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [James Singleton](../../../Players/singlja01.md) | 24 | DET | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Martell Webster](../../../Players/webstma02.md) | 19 | WSH | NBA | SF | 1 | 1 | 23.5 | 4.0 | 6.0 | .667 | 3.0 | 4.0 | .750 | 1.0 | 2.0 | .500 | .917 | 4.0 | 4.0 | 1.000 | 1.0 | 2.0 | 3.0 | 1.0 | 0.0 | 0.0 | 2.0 | 4.0 | 15.0 | .966 |
 | [Quinton Ross](../../../Players/rossqu01.md) | 24 | NJ | NBA | SF | 1 | 0 | 30.0 | 3.0 | 7.0 | .429 | 0.0 | 0.0 | N/A | 3.0 | 7.0 | .429 | .429 | 2.0 | 3.0 | .667 | 4.0 | 3.0 | 7.0 | 1.0 | 1.0 | 0.0 | 1.0 | 4.0 | 8.0 | .481 |
-| [Rawle Marshall](../../../Players/marshra01.md) | 23 | Charlotte Bobcats | NBA | SF | 1 | 0 | 4.7 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 0.0 | 0.0 | N/A | 0.0 | 3.0 | 3.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | N/A |
+| [Rawle Marshall](../../../Players/marshra01.md) | 24 | Charlotte Bobcats | NBA | SF | 1 | 0 | 4.7 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 0.0 | 0.0 | N/A | 0.0 | 3.0 | 3.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | N/A |
 | [Sergei Monia](../../../Players/moniase01.md) | 22 | ATL | NBA | SF | 1 | 0 | 5.5 | 1.0 | 1.0 | 1.000 | 0.0 | 0.0 | N/A | 1.0 | 1.0 | 1.000 | 1.000 | 0.0 | 0.0 | N/A | 0.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 2.0 | 2.0 | 1.000 |
 | [walshma01](../../../Players/walshma01.md) | 23 | Charlotte Bobcats | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Bernard Robinson](../../../Players/robinbe01.md) | 25 | MIL | NBA | SF | 1 | 0 | 15.8 | 0.0 | 2.0 | .000 | 0.0 | 0.0 | N/A | 0.0 | 2.0 | .000 | .000 | 2.0 | 2.0 | 1.000 | 1.0 | 3.0 | 4.0 | 0.0 | 3.0 | 0.0 | 2.0 | 2.0 | 2.0 | .347 |

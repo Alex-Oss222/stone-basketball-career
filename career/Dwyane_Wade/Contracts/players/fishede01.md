@@ -2,9 +2,9 @@
 
 # Contract | Derek Fisher
 
-Known through: 2006-02-19. [Open interactive contract](fishede01.html#contract) · [Contract history](fishede01.html#contract-history)
+Known through: 2006-02-20. [Open interactive contract](fishede01.html#contract) · [Contract history](fishede01.html#contract-history)
 
-Derek Fisher: under contract. Evidence cutoff: 2006-02-19.
+Derek Fisher: under contract. Evidence cutoff: 2006-02-20.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Derek Fisher |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Indiana Pacers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

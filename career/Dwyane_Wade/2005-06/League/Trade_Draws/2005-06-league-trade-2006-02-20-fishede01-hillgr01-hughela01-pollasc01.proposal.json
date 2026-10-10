@@ -1,0 +1,41 @@
+{
+ "id": "2005-06-league-trade-2006-02-20-fishede01-hillgr01-hughela01-pollasc01",
+ "date": "2006-02-20",
+ "clubs": [
+  "Boston Celtics",
+  "Indiana Pacers"
+ ],
+ "a": {
+  "club": "Boston Celtics",
+  "sends": [
+   "Derek Fisher",
+   "Grant Hill"
+  ],
+  "bbr_ids": [
+   "fishede01",
+   "hillgr01"
+  ],
+  "salary": 16729250
+ },
+ "b": {
+  "club": "Indiana Pacers",
+  "sends": [
+   "Larry Hughes",
+   "Scot Pollard"
+  ],
+  "bbr_ids": [
+   "hughela01",
+   "pollasc01"
+  ],
+  "salary": 20603074
+ },
+ "gain": {
+  "Boston Celtics": 0.139,
+  "Indiana Pacers": 0.341
+ },
+ "accept": {
+  "Boston Celtics": 0.878,
+  "Indiana Pacers": 0.95
+ },
+ "both": 0.8341
+}

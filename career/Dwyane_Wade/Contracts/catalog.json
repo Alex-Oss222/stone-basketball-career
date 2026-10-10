@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-02-19",
+  "as_of": "2006-02-20",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1526,7 +1526,7 @@
     {
       "player_id": "fishede01",
       "name": "Derek Fisher",
-      "team": "Boston Celtics",
+      "team": "Indiana Pacers",
       "status": "under contract",
       "current_contract_id": "fishede01-2005-09-30",
       "recorded_agreements": 3,
@@ -2129,7 +2129,7 @@
     {
       "player_id": "hillgr01",
       "name": "Grant Hill",
-      "team": "Boston Celtics",
+      "team": "Indiana Pacers",
       "status": "under contract",
       "current_contract_id": "hillgr01-existing-6434280dd7b3",
       "recorded_agreements": 1,
@@ -3299,7 +3299,7 @@
     {
       "player_id": "hughela01",
       "name": "Larry Hughes",
-      "team": "Indiana Pacers",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "hughela01-2005-08-02",
       "recorded_agreements": 2,
@@ -4919,7 +4919,7 @@
     {
       "player_id": "pollasc01",
       "name": "Scot Pollard",
-      "team": "Indiana Pacers",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "pollasc01-existing-5c3dd39cfcac",
       "recorded_agreements": 1,
