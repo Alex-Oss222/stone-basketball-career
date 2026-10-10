@@ -1,6 +1,6 @@
 ---
 type: regular_season_week
-status: not_started
+status: active
 month: March
 week: 1
 days: 1-7
@@ -13,5 +13,7 @@ days: 1-7
 ## Player decisions
 
 ## Games and events
+
+- 2006-03-01: Miami Heat 119 at Boston Celtics 105 — Miami Heat W 119-105 ([Game 1](Game_1.md), event `2006-03-01-miami-heat-at-boston-celtics`)
 
 ## Consequences
