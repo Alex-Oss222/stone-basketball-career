@@ -2,9 +2,9 @@
 
 # Contract | Eddie Griffin
 
-Known through: 2005-12-31. [Open interactive contract](griffed01.html#contract) · [Contract history](griffed01.html#contract-history)
+Known through: 2006-01-01. [Open interactive contract](griffed01.html#contract) · [Contract history](griffed01.html#contract-history)
 
-Eddie Griffin: under contract. Evidence cutoff: 2005-12-31.
+Eddie Griffin: under contract. Evidence cutoff: 2006-01-01.
 
 ## Current contract
 

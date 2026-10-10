@@ -2,9 +2,9 @@
 
 # Contract | James Singleton
 
-Known through: 2005-12-31. [Open interactive contract](singlja01.html#contract) · [Contract history](singlja01.html#contract-history)
+Known through: 2006-01-01. [Open interactive contract](singlja01.html#contract) · [Contract history](singlja01.html#contract-history)
 
-James Singleton: under contract. Evidence cutoff: 2005-12-31.
+James Singleton: under contract. Evidence cutoff: 2006-01-01.
 
 ## Current contract
 

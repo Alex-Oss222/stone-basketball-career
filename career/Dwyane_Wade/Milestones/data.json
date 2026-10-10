@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-12-31",
+  "as_of": "2006-01-01",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 21,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2005-12-30-miami-heat-at-washington-wizards",
+  "current_event": "2006-01-01-minnesota-timberwolves-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-12-31"
+              "2006-01-01"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2005-12-30-miami-heat-at-washington-wizards"
+              "2006-01-01-minnesota-timberwolves-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2005-12-31",
+              "2006-01-01",
               "Current checkpoint",
-              "2005-12-30-miami-heat-at-washington-wizards",
+              "2006-01-01-minnesota-timberwolves-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -94,22 +94,22 @@
               }
             ],
             [
-              "2006-01-01",
-              "Next Miami game, vs Minnesota Timberwolves",
-              "Coach sets the rotation; the engine plays it",
-              "Scheduled",
-              {
-                "label": "Season",
-                "href": "#calendar"
-              }
-            ],
-            [
               "2006-01-02",
               "League awards announced: Player of the Month, Player of the Week, Rookie of the Month",
               "League (closed results only)",
               "Scheduled",
               {
                 "label": "Awards",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2006-01-04",
+              "Next Miami game, at New Orleans/Oklahoma City Hornets",
+              "Coach sets the rotation; the engine plays it",
+              "Scheduled",
+              {
+                "label": "Season",
                 "href": "#calendar"
               }
             ],
@@ -620,6 +620,10 @@
           "href": "../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -628,7 +632,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-31"
+          "value": "2006-01-01"
         },
         {
           "label": "Team",
@@ -1010,6 +1014,10 @@
           "href": "../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1018,7 +1026,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-31"
+          "value": "2006-01-01"
         },
         {
           "label": "Team",
@@ -1437,6 +1445,10 @@
           "href": "../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1445,7 +1457,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-31"
+          "value": "2006-01-01"
         },
         {
           "label": "Team",
@@ -1871,6 +1883,10 @@
           "href": "../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1879,7 +1895,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-31"
+          "value": "2006-01-01"
         },
         {
           "label": "Team",
@@ -2236,6 +2252,10 @@
           "href": "../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2244,7 +2264,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-31"
+          "value": "2006-01-01"
         },
         {
           "label": "Team",
@@ -2606,6 +2626,10 @@
           "href": "../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2614,7 +2638,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-31"
+          "value": "2006-01-01"
         },
         {
           "label": "Team",
@@ -2971,6 +2995,10 @@
           "href": "../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2979,7 +3007,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-31"
+          "value": "2006-01-01"
         },
         {
           "label": "Team",
@@ -3392,6 +3420,10 @@
           "href": "../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3400,7 +3432,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-31"
+          "value": "2006-01-01"
         },
         {
           "label": "Team",
@@ -3417,7 +3449,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "38 closed game records in 2005-06 through 2005-12-31. Competitions remain separate.",
+      "summary": "39 closed game records in 2005-06 through 2006-01-01. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3444,12 +3476,12 @@
             ],
             [
               "regular",
-              31,
-              36.730228495,
-              25.064516129,
-              6.387096774,
-              4.193548387,
-              1.774193548,
+              32,
+              37.061209375,
+              25.65625,
+              6.53125,
+              4.09375,
+              1.71875,
               "Complete"
             ]
           ]
@@ -3477,12 +3509,12 @@
             ],
             [
               "regular",
-              265,
-              478,
-              0.554393305,
-              42,
-              91,
-              0.461538462
+              282,
+              502,
+              0.561752988,
+              46,
+              100,
+              0.46
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -3876,6 +3908,16 @@
                 "label": "Closed game",
                 "href": "../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md"
               }
+            ],
+            [
+              "2006-01-01",
+              "regular",
+              "Minnesota Timberwolves",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md"
+              }
             ]
           ]
         },
@@ -4153,6 +4195,10 @@
           "href": "../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4161,7 +4207,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-31"
+          "value": "2006-01-01"
         },
         {
           "label": "Team",
