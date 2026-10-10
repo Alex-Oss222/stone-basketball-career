@@ -4472,6 +4472,24 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 2.86 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-02-25-expire-livinra01",
+   "date": "2006-02-25",
+   "kind": "expire",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "Houston Rockets",
+   "to": null,
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": null,
+   "note": "10-day contract ended (8.1 minutes a game)"
   }
  ],
  "market_days": [
@@ -4590,6 +4608,7 @@
   "2006-02-21",
   "2006-02-22",
   "2006-02-23",
-  "2006-02-24"
+  "2006-02-24",
+  "2006-02-25"
  ]
 }
