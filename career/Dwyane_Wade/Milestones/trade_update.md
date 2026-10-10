@@ -2,11 +2,11 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2005-12-18 · Miami Heat · inactive
+Career date: 2005-12-19 · Miami Heat · active
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 
-No trade update is recorded at this checkpoint.
+Proposals and completed transactions are distinguished below.
 
 Activation: An actual dated proposal, consultation or executed transaction.
 
@@ -14,7 +14,7 @@ Activation: An actual dated proposal, consultation or executed transaction.
 
 | Proposed | Known status | Partner | Miami sends | Miami receives | Applied | Outcome / reason | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| No dated record | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2005-12-19 | Completed | Milwaukee Bucks | Matt Harpring | Joe Smith | 2005-12-19 | accept | [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json) |
 
 ## What this changes for you
 
@@ -75,6 +75,7 @@ An actual transaction update with its source and applicable player rights.
 - [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
+- [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
 - [Closed game](../2005-06/05_Preseason/Game_3.md)

@@ -2,9 +2,9 @@
 
 # Contract | Jason Kapono
 
-Known through: 2005-12-18. [Open interactive contract](kaponja01.html#contract) · [Contract history](kaponja01.html#contract-history)
+Known through: 2005-12-19. [Open interactive contract](kaponja01.html#contract) · [Contract history](kaponja01.html#contract-history)
 
-Jason Kapono: under contract. Evidence cutoff: 2005-12-18.
+Jason Kapono: under contract. Evidence cutoff: 2005-12-19.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jason Kapono |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Minnesota Timberwolves |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

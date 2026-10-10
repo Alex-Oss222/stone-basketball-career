@@ -1,0 +1,41 @@
+{
+ "id": "2005-06-league-trade-2005-12-19-brownpj01-huntest01-korveky01-mihmch01",
+ "date": "2005-12-19",
+ "clubs": [
+  "New Orleans/Oklahoma City Hornets",
+  "Phoenix Suns"
+ ],
+ "a": {
+  "club": "New Orleans/Oklahoma City Hornets",
+  "sends": [
+   "Kyle Korver",
+   "Steven Hunter"
+  ],
+  "bbr_ids": [
+   "korveky01",
+   "huntest01"
+  ],
+  "salary": 13037584
+ },
+ "b": {
+  "club": "Phoenix Suns",
+  "sends": [
+   "P.J. Brown",
+   "Chris Mihm"
+  ],
+  "bbr_ids": [
+   "brownpj01",
+   "mihmch01"
+  ],
+  "salary": 13600714
+ },
+ "gain": {
+  "New Orleans/Oklahoma City Hornets": 0.187,
+  "Phoenix Suns": 0.088
+ },
+ "accept": {
+  "New Orleans/Oklahoma City Hornets": 0.95,
+  "Phoenix Suns": 0.668
+ },
+ "both": 0.6346
+}

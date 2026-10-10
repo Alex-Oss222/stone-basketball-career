@@ -2,9 +2,9 @@
 
 # Contract | Joe Smith
 
-Known through: 2005-12-18. [Open interactive contract](smithjo02.html#contract) · [Contract history](smithjo02.html#contract-history)
+Known through: 2005-12-19. [Open interactive contract](smithjo02.html#contract) · [Contract history](smithjo02.html#contract-history)
 
-Joe Smith: under contract. Evidence cutoff: 2005-12-18.
+Joe Smith: under contract. Evidence cutoff: 2005-12-19.
 
 ## Current contract
 
@@ -25,9 +25,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Minnesota Timberwolves |
+| Assigned club | Miami Heat |
 | Signing club | Not recorded |
-| Contract ID | smithjo02-existing-aa502761a5b3 |
+| Contract ID | smithjo02-baseline-2003-06-26 |
 | Signing route / evidence basis | salary_pattern |
 | Signing date | Not recorded |
 | Verified first season | Not recorded |
@@ -102,10 +102,11 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-12-19 | Milwaukee Bucks | Miami Heat | 2005-12-19-aaa5cfaab5 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json) |
 
 ### Evidence and coverage
 
-Term inferred from a constant annual raise in the season salary lists; no contract history page was available, so options and the true final season are not established.
+Acquired from Milwaukee Bucks on December 19, 2005 by trade (2005-12-19-aaa5cfaab5); contract carried as the inventory records it (under_contract).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -117,6 +118,10 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries07.txt)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 
 ### Current control and contract coverage
 
@@ -125,7 +130,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Joe Smith |
-| Club / rights baseline | Milwaukee Bucks |
+| Club / rights baseline | Miami Heat |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -190,9 +195,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Minnesota Timberwolves |
+| Assigned club | Miami Heat |
 | Signing club | Not recorded |
-| Contract ID | smithjo02-existing-aa502761a5b3 |
+| Contract ID | smithjo02-baseline-2003-06-26 |
 | Signing route / evidence basis | salary_pattern |
 | Signing date | Not recorded |
 | Verified first season | Not recorded |
@@ -267,10 +272,11 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-12-19 | Milwaukee Bucks | Miami Heat | 2005-12-19-aaa5cfaab5 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json) |
 
 ### Evidence and coverage
 
-Term inferred from a constant annual raise in the season salary lists; no contract history page was available, so options and the true final season are not established.
+Acquired from Milwaukee Bucks on December 19, 2005 by trade (2005-12-19-aaa5cfaab5); contract carried as the inventory records it (under_contract).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -282,6 +288,10 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries07.txt)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 
 ## Source records
 
@@ -291,3 +301,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries07.txt)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
+- [Dated signed-contract archive](../contract_records.json)

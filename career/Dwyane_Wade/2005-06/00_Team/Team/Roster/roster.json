@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2005-10-31",
+ "as_of": "2005-12-19",
  "season": "2005-06",
  "team": "Miami Heat",
  "roster_kind": "team_control_register",
@@ -48,9 +48,9 @@
     "SF"
    ],
    "date_of_birth": "1976-05-31",
-   "status": "under_contract",
-   "control": "Signed August 19, 2005 (bird): 4 season(s) from 2005-06, $36,827,534 scheduled ($7,954,111 in 2005-06).",
-   "working_role": "Starter at SF, staff plan 34 minutes (rotation 2005-12-07)",
+   "status": "traded",
+   "control": "December 19, 2005: traded to Milwaukee Bucks (2005-12-19-aaa5cfaab5).",
+   "working_role": "Left Miami (traded)",
    "player_card": "../Player_Cards/matt_harpring.md",
    "bbr_id": "harprma01"
   },
@@ -295,6 +295,19 @@
    "working_role": "Left Miami (released)",
    "player_card": "../Player_Cards/kwame_brown.md",
    "bbr_id": "brownkw01"
+  },
+  {
+   "id": "joe_smith",
+   "name": "Joe Smith",
+   "positions": [
+    "SF"
+   ],
+   "date_of_birth": "1975-07-26",
+   "status": "under_contract",
+   "control": "Acquired by trade from Milwaukee Bucks on December 19, 2005: $6,353,200 in 2005-06; contract through 2006-07.",
+   "working_role": "Reserve outside the planned rotation (rotation 2005-12-07)",
+   "player_card": "../Player_Cards/joe_smith.md",
+   "bbr_id": "smithjo02"
   }
  ],
  "sources": [

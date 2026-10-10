@@ -2347,6 +2347,78 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.98 x fit"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-19-brownpj01-huntest01-korveky01-mihmch01",
+   "date": "2005-12-19",
+   "kind": "trade",
+   "player": "Kyle Korver",
+   "bbr_id": "korveky01",
+   "from": "New Orleans/Oklahoma City Hornets",
+   "to": "Phoenix Suns"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-19-brownpj01-huntest01-korveky01-mihmch01",
+   "date": "2005-12-19",
+   "kind": "trade",
+   "player": "Steven Hunter",
+   "bbr_id": "huntest01",
+   "from": "New Orleans/Oklahoma City Hornets",
+   "to": "Phoenix Suns"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-19-brownpj01-huntest01-korveky01-mihmch01",
+   "date": "2005-12-19",
+   "kind": "trade",
+   "player": "P.J. Brown",
+   "bbr_id": "brownpj01",
+   "from": "Phoenix Suns",
+   "to": "New Orleans/Oklahoma City Hornets"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-19-brownpj01-huntest01-korveky01-mihmch01",
+   "date": "2005-12-19",
+   "kind": "trade",
+   "player": "Chris Mihm",
+   "bbr_id": "mihmch01",
+   "from": "Phoenix Suns",
+   "to": "New Orleans/Oklahoma City Hornets"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-19-hillgr01-kaponja01-perkike01-wrighlo02",
+   "date": "2005-12-19",
+   "kind": "trade",
+   "player": "Lorenzen Wright",
+   "bbr_id": "wrighlo02",
+   "from": "Boston Celtics",
+   "to": "Minnesota Timberwolves"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-19-hillgr01-kaponja01-perkike01-wrighlo02",
+   "date": "2005-12-19",
+   "kind": "trade",
+   "player": "Kendrick Perkins",
+   "bbr_id": "perkike01",
+   "from": "Boston Celtics",
+   "to": "Minnesota Timberwolves"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-19-hillgr01-kaponja01-perkike01-wrighlo02",
+   "date": "2005-12-19",
+   "kind": "trade",
+   "player": "Jason Kapono",
+   "bbr_id": "kaponja01",
+   "from": "Boston Celtics",
+   "to": "Minnesota Timberwolves"
+  },
+  {
+   "deal": "2005-06-league-trade-2005-12-19-hillgr01-kaponja01-perkike01-wrighlo02",
+   "date": "2005-12-19",
+   "kind": "trade",
+   "player": "Grant Hill",
+   "bbr_id": "hillgr01",
+   "from": "Minnesota Timberwolves",
+   "to": "Boston Celtics"
   }
  ],
  "market_days": [
@@ -2397,6 +2469,7 @@
   "2005-12-15",
   "2005-12-16",
   "2005-12-17",
-  "2005-12-18"
+  "2005-12-18",
+  "2005-12-19"
  ]
 }

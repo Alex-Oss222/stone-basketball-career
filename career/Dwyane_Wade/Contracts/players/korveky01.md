@@ -2,9 +2,9 @@
 
 # Contract | Kyle Korver
 
-Known through: 2005-12-18. [Open interactive contract](korveky01.html#contract) · [Contract history](korveky01.html#contract-history)
+Known through: 2005-12-19. [Open interactive contract](korveky01.html#contract) · [Contract history](korveky01.html#contract-history)
 
-Kyle Korver: under contract. Evidence cutoff: 2005-12-18.
+Kyle Korver: under contract. Evidence cutoff: 2005-12-19.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Kyle Korver |
-| Club / rights baseline | New Orleans/Oklahoma City Hornets |
+| Club / rights baseline | Phoenix Suns |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

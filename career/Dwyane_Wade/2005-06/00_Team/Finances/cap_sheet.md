@@ -1,6 +1,6 @@
 # Miami Heat | Cap sheet
 
-October 31, 2005 · 2005-06 through 2012-13 · USD
+December 19, 2005 · 2005-06 through 2012-13 · USD
 
 [Finance guide](README.md) · [Roster and control](../Team/Roster/roster.json) · [Contract detail](contract_schedules.json)
 
@@ -8,9 +8,9 @@ October 31, 2005 · 2005-06 through 2012-13 · USD
 
 | Cap (published) | Committed salary | Free-agent holds | Roster charge | Room |
 | ---: | ---: | ---: | ---: | ---: |
-| 49,500,000 | 67,315,693 | 0 | 0 | -17,815,693 |
+| 49,500,000 | 65,714,782 | 0 | 0 | -16,214,782 |
 
-Committed salary counts contracts, exercised options and the unsigned first-round hold on October 31, 2005. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
+Committed salary counts contracts, exercised options and the unsigned first-round hold on December 19, 2005. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
 
 ## Eight-season commitments
 
@@ -18,7 +18,7 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | [Eddie Jones](../Team/Player_Cards/eddie_jones.md) | 14,576,250 | 15,697,500 | — | — | — | — | — | — |
 | [Brian Grant](../Team/Player_Cards/brian_grant.md) | 14,336,220 | 15,439,006<sup>ETO</sup> | — | — | — | — | — | — |
-| [Matt Harpring](../Team/Player_Cards/matt_harpring.md) | 7,954,111 | 8,789,293 | 9,624,474 | 10,459,656 | — | — | — | — |
+| [Joe Smith](../Team/Player_Cards/joe_smith.md) | 6,353,200 | 6,807,000 | — | — | — | — | — | — |
 | [Donyell Marshall](../Team/Player_Cards/donyell_marshall.md) | 6,337,327 | 7,002,746 | 7,668,166 | — | — | — | — | — |
 | [Anthony Johnson](../Team/Player_Cards/anthony_johnson.md) | 5,000,000 | 5,400,000 | 5,800,000 | — | — | — | — | — |
 | [Mike James](../Team/Player_Cards/mike_james.md) | 3,812,749 | — | — | — | — | — | — | — |
@@ -32,7 +32,7 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | [Mike Wilks](../Team/Player_Cards/mike_wilks.md) | 745,248 | — | — | — | — | — | — | — |
 | [Matt Carroll](../Team/Player_Cards/matt_carroll.md) | 719,373 | — | — | — | — | — | — | — |
 | [Uroš Slokar](../Team/Player_Cards/uros_slokar.md) | — | — | — | — | — | — | — | — |
-| Counted | 67,315,693 | 63,325,002 | 30,422,341 | 18,404,282 | 0 | 0 | 0 | 0 |
+| Counted | 65,714,782 | 61,342,709 | 20,797,867 | 7,944,626 | 0 | 0 | 0 | 0 |
 
 ## Free-agent holds
 

@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2005-12-18 · Miami Heat · needs evidence
+Career date: 2005-12-19 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -48,6 +48,7 @@ These are Miami's roster negotiations, not offers to Wade.
 | 2005-10-31 | Theo Ratliff released at the cut to 15 (non-guaranteed camp contract; no dead money). |
 | 2005-10-31 | Bonzi Wells released at the cut to 15 (non-guaranteed camp contract; no dead money). |
 | 2005-10-31 | Sam Cassell released at the cut to 15 (non-guaranteed camp contract; no dead money). |
+| 2005-12-19 | Matt Harpring traded to Milwaukee Bucks (2005-12-19-aaa5cfaab5). |
 
 ## Decision authority
 
@@ -84,6 +85,7 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
+- [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
 - [Closed game](../2005-06/05_Preseason/Game_3.md)

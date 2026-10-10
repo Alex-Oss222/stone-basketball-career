@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-12-18",
+  "as_of": "2005-12-19",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 21,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2005-12-17-miami-heat-at-cleveland-cavaliers",
+  "current_event": "2005-12-19-trade-2005-12-19-aaa5cfaab5",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-12-18"
+              "2005-12-19"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2005-12-17-miami-heat-at-cleveland-cavaliers"
+              "2005-12-19-trade-2005-12-19-aaa5cfaab5"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2005-12-18",
+              "2005-12-19",
               "Current checkpoint",
-              "2005-12-17-miami-heat-at-cleveland-cavaliers",
+              "2005-12-19-trade-2005-12-19-aaa5cfaab5",
               "Recorded",
               {
                 "label": "Owning event",
@@ -94,16 +94,6 @@
               }
             ],
             [
-              "2005-12-19",
-              "League awards announced: Player of the Week",
-              "League (closed results only)",
-              "Scheduled",
-              {
-                "label": "Awards",
-                "href": "#calendar"
-              }
-            ],
-            [
               "2005-12-20",
               "Next Miami game, vs Atlanta Hawks",
               "Coach sets the rotation; the engine plays it",
@@ -121,6 +111,16 @@
               {
                 "label": "Rule",
                 "href": "../../../docs/front_office.md"
+              }
+            ],
+            [
+              "2005-12-26",
+              "League awards announced: Player of the Week",
+              "League (closed results only)",
+              "Scheduled",
+              {
+                "label": "Awards",
+                "href": "#calendar"
               }
             ],
             [
@@ -464,6 +464,10 @@
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -600,7 +604,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-18"
+          "value": "2005-12-19"
         },
         {
           "label": "Team",
@@ -652,7 +656,7 @@
             ],
             [
               "Source snapshot",
-              "2005-10-31"
+              "2005-12-19"
             ]
           ]
         },
@@ -826,6 +830,10 @@
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -962,7 +970,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-18"
+          "value": "2005-12-19"
         },
         {
           "label": "Team",
@@ -1225,6 +1233,10 @@
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -1361,7 +1373,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-18"
+          "value": "2005-12-19"
         },
         {
           "label": "Team",
@@ -1519,6 +1531,10 @@
             [
               "2005-10-31",
               "Sam Cassell released at the cut to 15 (non-guaranteed camp contract; no dead money)."
+            ],
+            [
+              "2005-12-19",
+              "Matt Harpring traded to Milwaukee Bucks (2005-12-19-aaa5cfaab5)."
             ]
           ]
         },
@@ -1625,6 +1641,10 @@
         {
           "label": "Owning dated record",
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
         },
         {
           "label": "Closed game",
@@ -1763,7 +1783,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-18"
+          "value": "2005-12-19"
         },
         {
           "label": "Team",
@@ -1964,6 +1984,10 @@
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -2100,7 +2124,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-18"
+          "value": "2005-12-19"
         },
         {
           "label": "Team",
@@ -2115,9 +2139,9 @@
     {
       "id": "trade_update",
       "title": "Trade update",
-      "status": "inactive",
+      "status": "active",
       "trigger": "An actual dated proposal, consultation or executed transaction.",
-      "summary": "No trade update is recorded at this checkpoint.",
+      "summary": "Proposals and completed transactions are distinguished below.",
       "sections": [
         {
           "title": "Actual transaction register",
@@ -2131,7 +2155,21 @@
             "Outcome / reason",
             "Source"
           ],
-          "rows": []
+          "rows": [
+            [
+              "2005-12-19",
+              "Completed",
+              "Milwaukee Bucks",
+              "Matt Harpring",
+              "Joe Smith",
+              "2005-12-19",
+              "accept",
+              {
+                "label": "Transaction record",
+                "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+              }
+            ]
+          ]
         },
         {
           "title": "What this changes for you",
@@ -2292,6 +2330,10 @@
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -2428,7 +2470,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-18"
+          "value": "2005-12-19"
         },
         {
           "label": "Team",
@@ -2629,6 +2671,10 @@
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -2765,7 +2811,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-18"
+          "value": "2005-12-19"
         },
         {
           "label": "Team",
@@ -2922,6 +2968,14 @@
             [
               "2005-10-31",
               "Miami Heat's rookie-scale extension decision on Caron Butler: no offer (clear: worth $3,797,198 (price $3,797,198: market price $3,797,198 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 0.7594, at or below 0.8; runtime/extensions.py, League/extension_decisions.json)."
+            ],
+            [
+              "2005-12-19",
+              "Trade with Milwaukee Bucks: Miami sends Matt Harpring for Joe Smith (accepted by engine draw None). Record: `00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json`."
+            ],
+            [
+              "2005-12-19",
+              "Milwaukee Bucks offers Joe Smith for Matt Harpring; Miami's front office accepts. Record: `00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json`."
             ]
           ]
         },
@@ -3012,6 +3066,10 @@
         {
           "label": "Owning dated record",
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
+        },
+        {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
         },
         {
           "label": "Closed game",
@@ -3150,7 +3208,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-18"
+          "value": "2005-12-19"
         },
         {
           "label": "Team",
@@ -3167,7 +3225,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "32 closed game records in 2005-06 through 2005-12-18. Competitions remain separate.",
+      "summary": "32 closed game records in 2005-06 through 2005-12-19. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3687,6 +3745,10 @@
           "href": "../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
         },
         {
+          "label": "Transaction record",
+          "href": "../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+        },
+        {
           "label": "Closed game",
           "href": "../2005-06/05_Preseason/Game_1.md"
         },
@@ -3823,7 +3885,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-12-18"
+          "value": "2005-12-19"
         },
         {
           "label": "Team",

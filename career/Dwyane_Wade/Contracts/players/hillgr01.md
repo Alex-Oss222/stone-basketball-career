@@ -2,9 +2,9 @@
 
 # Contract | Grant Hill
 
-Known through: 2005-12-18. [Open interactive contract](hillgr01.html#contract) · [Contract history](hillgr01.html#contract-history)
+Known through: 2005-12-19. [Open interactive contract](hillgr01.html#contract) · [Contract history](hillgr01.html#contract-history)
 
-Grant Hill: under contract. Evidence cutoff: 2005-12-18.
+Grant Hill: under contract. Evidence cutoff: 2005-12-19.
 
 ## Current contract
 
@@ -125,7 +125,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Grant Hill |
-| Club / rights baseline | Minnesota Timberwolves |
+| Club / rights baseline | Boston Celtics |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

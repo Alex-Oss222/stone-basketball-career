@@ -1,0 +1,41 @@
+{
+ "id": "2005-06-league-trade-2005-12-19-hillgr01-kaponja01-perkike01-wrighlo02",
+ "date": "2005-12-19",
+ "clubs": [
+  "Boston Celtics",
+  "Minnesota Timberwolves"
+ ],
+ "a": {
+  "club": "Boston Celtics",
+  "sends": [
+   "Lorenzen Wright",
+   "Kendrick Perkins",
+   "Jason Kapono"
+  ],
+  "bbr_ids": [
+   "wrighlo02",
+   "perkike01",
+   "kaponja01"
+  ],
+  "salary": 13636480
+ },
+ "b": {
+  "club": "Minnesota Timberwolves",
+  "sends": [
+   "Grant Hill"
+  ],
+  "bbr_ids": [
+   "hillgr01"
+  ],
+  "salary": 15694250
+ },
+ "gain": {
+  "Boston Celtics": 0.191,
+  "Minnesota Timberwolves": 0.743
+ },
+ "accept": {
+  "Boston Celtics": 0.95,
+  "Minnesota Timberwolves": 0.95
+ },
+ "both": 0.9025
+}

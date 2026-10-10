@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "owner": "ai_gm",
- "as_of": "2005-10-31",
+ "as_of": "2005-12-19",
  "team": "Miami Heat",
  "horizon": [
   "2005-06",
@@ -15,10 +15,10 @@
  ],
  "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
  "known_baseline": {
-  "2005-06": 67315693,
-  "2006-07": 47885996,
-  "2007-08": 30422341,
-  "2008-09": 18404282,
+  "2005-06": 65714782,
+  "2006-07": 45903703,
+  "2007-08": 20797867,
+  "2008-09": 7944626,
   "2009-10": 0,
   "2010-11": 0,
   "2011-12": 0,
@@ -128,7 +128,7 @@
   {
    "player": "Matt Harpring",
    "bbr_id": "harprma01",
-   "status": "under_contract",
+   "status": "traded",
    "schedule": {
     "2005-06": 7954111,
     "2006-07": 8789293,
@@ -724,6 +724,30 @@
    "sources": [
     "04_Training_Camp/camp_roster.json"
    ]
+  },
+  {
+   "player": "Joe Smith",
+   "bbr_id": "smithjo02",
+   "status": "under_contract",
+   "schedule": {
+    "2005-06": 6353200,
+    "2006-07": 6807000
+   },
+   "amount_kind": {
+    "2005-06": "contract_salary",
+    "2006-07": "contract_salary"
+   },
+   "acquired": {
+    "how": "trade",
+    "date": "2005-12-19",
+    "from": "Milwaukee Bucks",
+    "record": "00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+   },
+   "notes": "Acquired from Milwaukee Bucks on December 19, 2005 by trade (2005-12-19-aaa5cfaab5); contract carried as the inventory records it (under_contract).",
+   "sources": [
+    "00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+   ],
+   "contract_id": "smithjo02-baseline-2003-06-26"
   }
  ],
  "expiring_or_unresolved_without_scheduled_2003_04_salary": [
@@ -752,7 +776,7 @@
   "kind": "existing_obligations_only",
   "currency": "USD",
   "unit": "whole dollars",
-  "known_baseline_definition": "Counted 2005-06 team salary on 2005-10-31: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+  "known_baseline_definition": "Counted 2005-06 team salary on 2005-12-19: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
   "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
   "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
   "missing_definition": "Null means unresolved or not yet projected, never zero.",
@@ -797,7 +821,7 @@
   },
   {
    "season": "2005-06",
-   "scheduled_contract_salary": 67315693,
+   "scheduled_contract_salary": 65714782,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -805,8 +829,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 67315693,
-   "base_plus_priced_options": 67315693,
+   "known_base_allocations": 65714782,
+   "base_plus_priced_options": 65714782,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": 0,
@@ -814,7 +838,7 @@
   },
   {
    "season": "2006-07",
-   "scheduled_contract_salary": 47885996,
+   "scheduled_contract_salary": 45903703,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 15439006,
    "unpriced_option_count": 0,
@@ -822,8 +846,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 47885996,
-   "base_plus_priced_options": 63325002,
+   "known_base_allocations": 45903703,
+   "base_plus_priced_options": 61342709,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": null,
@@ -831,7 +855,7 @@
   },
   {
    "season": "2007-08",
-   "scheduled_contract_salary": 30422341,
+   "scheduled_contract_salary": 20797867,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -839,8 +863,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 30422341,
-   "base_plus_priced_options": 30422341,
+   "known_base_allocations": 20797867,
+   "base_plus_priced_options": 20797867,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": null,
@@ -848,7 +872,7 @@
   },
   {
    "season": "2008-09",
-   "scheduled_contract_salary": 18404282,
+   "scheduled_contract_salary": 7944626,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -856,8 +880,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 18404282,
-   "base_plus_priced_options": 18404282,
+   "known_base_allocations": 7944626,
+   "base_plus_priced_options": 7944626,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": null,

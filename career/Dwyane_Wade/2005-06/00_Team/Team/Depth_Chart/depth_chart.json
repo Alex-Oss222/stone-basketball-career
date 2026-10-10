@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2005-10-31",
+ "as_of": "2005-12-19",
  "team": "Miami Heat",
  "status": "camp_decision",
  "game_ready": true,
@@ -21,7 +21,6 @@
   ],
   "SF": [
    "Caron Butler",
-   "Matt Harpring",
    "Sebastian Telfair",
    "Jumaine Jones"
   ],
@@ -37,7 +36,16 @@
   "SF": "Caron Butler"
  },
  "unassigned_draft_rights": [],
- "unassigned_arrivals": [],
+ "unassigned_arrivals": [
+  {
+   "name": "Joe Smith",
+   "positions": [
+    "SF"
+   ],
+   "status": "under_contract",
+   "date": "2005-12-19"
+  }
+ ],
  "unavailable": [],
  "departed": [
   {
@@ -64,6 +72,11 @@
    "name": "Sam Cassell",
    "date": "2005-10-31",
    "status": "released"
+  },
+  {
+   "name": "Matt Harpring",
+   "date": "2005-12-19",
+   "status": "traded"
   }
  ]
 }

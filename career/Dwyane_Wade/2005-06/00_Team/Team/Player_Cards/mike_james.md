@@ -8,9 +8,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 28 · **Height:** 6-2 · **Weight:** 188 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2005-12-18 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2005-12-19 
 
-**Contract/control:** Existing contract: 1 season(s) from 2005-06, $3,812,749 scheduled ($3,812,749 in 2005-06). (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing contract: 1 season(s) from 2005-06, $3,812,749 scheduled ($3,812,749 in 2005-06). (register, 2005-12-19) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/jamesmi01.html#contract) · [Contract history](../../../../Contracts/players/jamesmi01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
@@ -106,7 +106,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 79 closed Miami game(s) through 2004-09-30; 2004-05: 81 closed Miami game(s) through 2005-09-30; 2005-06: 25 closed Miami game(s) through 2005-12-18.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 79 closed Miami game(s) through 2004-09-30; 2004-05: 81 closed Miami game(s) through 2005-09-30; 2005-06: 25 closed Miami game(s) through 2005-12-19.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |

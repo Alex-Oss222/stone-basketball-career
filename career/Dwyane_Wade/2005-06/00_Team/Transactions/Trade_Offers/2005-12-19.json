@@ -1,0 +1,45 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "kind": "trade_offers_to_miami",
+ "date": "2005-12-19",
+ "rule": "Offers other clubs make to Miami on a scan day (`TradeDesk.offers`), recorded once in     `00_Team/Transactions/Trade_Offers/<day>.json`; the best one Miami's rules accept is completed at once (the club     proposed it, Miami's answer is its rule). Returns the completed trade record or None.",
+ "offers": [
+  {
+   "trade": {
+    "partner": "Milwaukee Bucks",
+    "miami_out": [
+     "Matt Harpring"
+    ],
+    "miami_in": [
+     "Joe Smith"
+    ],
+    "picks_out": [],
+    "picks_in": []
+   },
+   "partner_gain": 0.151,
+   "miami_gain": 0.135,
+   "accepted": true,
+   "reason": "Miami's scored gain +0.135 clears +0.10"
+  },
+  {
+   "trade": {
+    "partner": "Boston Celtics",
+    "miami_out": [
+     "Matt Harpring",
+     "Caron Butler"
+    ],
+    "miami_in": [
+     "Brendan Haywood"
+    ],
+    "picks_out": [],
+    "picks_in": []
+   },
+   "partner_gain": 0.128,
+   "miami_gain": 0.001,
+   "accepted": false,
+   "reason": "it would take a later season over the owner's payroll ceiling"
+  }
+ ],
+ "completed": "2005-12-19-aaa5cfaab5"
+}

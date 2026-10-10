@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2005-12-18 · Miami Heat · complete
+Career date: 2005-12-19 · Miami Heat · complete
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -54,6 +54,8 @@ Snapshot: 2005-12-07. Draft rights and unassigned arrivals are not assigned minu
 | 2005-10-26 | Staff decision from 7 preseason games: starters PG Mike James, SG Dwyane Wade, SF Caron Butler, PF Mehmet Okur, C Brian Grant; battles drawn: {'SF': 'Caron Butler'}. Wade's perimeter-defense grade 45 (No assignment-level defensive evidence; preseason steals and blocks do not change this grade.). Records: `../00_Team/Team/Depth_Chart/depth_chart.json`, `rotation.json`, `../00_Team/Team/defensive_grades.json`. |
 | 2005-10-31 | Cut to 15: Kwame Brown, Adonal Foyle, Theo Ratliff, Bonzi Wells, Sam Cassell. Promise check: every promised role is in the rotation. Record: `promise_log.json`. |
 | 2005-10-31 | Miami Heat's rookie-scale extension decision on Caron Butler: no offer (clear: worth $3,797,198 (price $3,797,198: market price $3,797,198 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 0.7594, at or below 0.8; runtime/extensions.py, League/extension_decisions.json). |
+| 2005-12-19 | Trade with Milwaukee Bucks: Miami sends Matt Harpring for Joe Smith (accepted by engine draw None). Record: `00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json`. |
+| 2005-12-19 | Milwaukee Bucks offers Joe Smith for Matt Harpring; Miami's front office accepts. Record: `00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json`. |
 
 ## Your response to the staff
 
@@ -89,6 +91,7 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
+- [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 - [Closed game](../2005-06/05_Preseason/Game_1.md)
 - [Closed game](../2005-06/05_Preseason/Game_2.md)
 - [Closed game](../2005-06/05_Preseason/Game_3.md)

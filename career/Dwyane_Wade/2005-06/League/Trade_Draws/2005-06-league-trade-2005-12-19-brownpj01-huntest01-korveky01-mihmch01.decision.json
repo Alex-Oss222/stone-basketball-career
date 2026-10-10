@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-06-league-trade-2005-12-19-brownpj01-huntest01-korveky01-mihmch01",
+ "date": "2005-12-19",
+ "question": "Do New Orleans/Oklahoma City Hornets and Phoenix Suns trade Kyle Korver and Steven Hunter for P.J. Brown and Chris Mihm?",
+ "decider": "New Orleans/Oklahoma City Hornets and Phoenix Suns front offices (engine draw)",
+ "options": {
+  "accept": 0.6346,
+  "decline": 0.3654
+ },
+ "basis": "gains on own objectives {'New Orleans/Oklahoma City Hornets': 0.187, 'Phoenix Suns': 0.088}; acceptance {'New Orleans/Oklahoma City Hornets': 0.95, 'Phoenix Suns': 0.668}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

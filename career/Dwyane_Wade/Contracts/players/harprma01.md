@@ -2,9 +2,9 @@
 
 # Contract | Matt Harpring
 
-Known through: 2005-12-18. [Open interactive contract](harprma01.html#contract) · [Contract history](harprma01.html#contract-history)
+Known through: 2005-12-19. [Open interactive contract](harprma01.html#contract) · [Contract history](harprma01.html#contract-history)
 
-Matt Harpring: under contract. Evidence cutoff: 2005-12-18.
+Matt Harpring: under contract. Evidence cutoff: 2005-12-19.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Milwaukee Bucks |
 | Signing club | Miami Heat |
 | Contract ID | harprma01-2005-08-19 |
 | Signing route / evidence basis | bird |
@@ -100,6 +100,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-12-19 | Miami Heat | Milwaukee Bucks | 2005-12-19-aaa5cfaab5 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json) |
 
 ### Evidence and coverage
 
@@ -112,6 +113,10 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2005-06/League/contracts.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
+- [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 
 ### Current control and contract coverage
 
@@ -120,7 +125,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Matt Harpring |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Milwaukee Bucks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -185,7 +190,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Milwaukee Bucks |
 | Signing club | Miami Heat |
 | Contract ID | harprma01-2005-08-19 |
 | Signing route / evidence basis | bird |
@@ -260,6 +265,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-12-19 | Miami Heat | Milwaukee Bucks | 2005-12-19-aaa5cfaab5 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json) |
 
 ### Evidence and coverage
 
@@ -272,6 +278,10 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2005-06/League/contracts.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
+- [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 
 ### Matt Harpring · existing contract; signing date not recorded
 
@@ -384,4 +394,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2005-06/League/contracts.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)

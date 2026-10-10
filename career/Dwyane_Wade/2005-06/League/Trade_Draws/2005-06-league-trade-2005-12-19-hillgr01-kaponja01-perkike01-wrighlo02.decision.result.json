@@ -1,0 +1,12 @@
+{
+ "date": "2005-12-19",
+ "decider": "Boston Celtics and Minnesota Timberwolves front offices (engine draw)",
+ "event_id": "2005-06-league-trade-2005-12-19-hillgr01-kaponja01-perkike01-wrighlo02",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do Boston Celtics and Minnesota Timberwolves trade Lorenzen Wright and Kendrick Perkins and Jason Kapono for Grant Hill?"
+}

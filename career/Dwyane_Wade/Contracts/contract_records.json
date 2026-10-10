@@ -2027,6 +2027,88 @@
     ],
     "signing_team": "Miami Heat"
    }
+  },
+  {
+   "record_id": "harprma01-2005-08-19-assigned-2005-12-19-108adc0bf5e3",
+   "recorded_on": "2005-12-19",
+   "player_id": "harprma01",
+   "player": "Matt Harpring",
+   "contract_id": "harprma01-2005-08-19",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json",
+   "contract": {
+    "player": "Matt Harpring",
+    "bbr_id": "harprma01",
+    "status": "under_contract",
+    "schedule": {
+     "2005-06": 7954111,
+     "2006-07": 8789293,
+     "2007-08": 9624474,
+     "2008-09": 10459656
+    },
+    "amount_kind": {
+     "2005-06": "contract_salary",
+     "2006-07": "contract_salary",
+     "2007-08": "contract_salary",
+     "2008-09": "contract_salary"
+    },
+    "guaranteed": {
+     "2005-06": 7954111,
+     "2006-07": 8789293,
+     "2007-08": 9624474,
+     "2008-09": 10459656
+    },
+    "signed_date": "2005-08-19",
+    "route": "bird",
+    "original_term_seasons": 4,
+    "notes": "Signed August 19, 2005 in the 2005-06 summer market (re sign, route bird); schedule from the league contract ledger (raises by route).",
+    "sources": [
+     "career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json",
+     "2005-06/League/contracts.json"
+    ]
+   },
+   "assignment": {
+    "date": "2005-12-19",
+    "from_team": "Miami Heat",
+    "to_team": "Milwaukee Bucks",
+    "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+   }
+  },
+  {
+   "record_id": "smithjo02-baseline-2003-06-26-assigned-2005-12-19-108adc0bf5e3",
+   "recorded_on": "2005-12-19",
+   "player_id": "smithjo02",
+   "player": "Joe Smith",
+   "contract_id": "smithjo02-baseline-2003-06-26",
+   "event": "assigned",
+   "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json",
+   "contract": {
+    "player": "Joe Smith",
+    "bbr_id": "smithjo02",
+    "status": "under_contract",
+    "schedule": {
+     "2005-06": 6353200,
+     "2006-07": 6807000
+    },
+    "amount_kind": {
+     "2005-06": "contract_salary",
+     "2006-07": "contract_salary"
+    },
+    "held_on": "2005-12-19",
+    "terms_source": "career/Dwyane_Wade/2005-06/League/contracts.json",
+    "acquired": {
+     "how": "trade",
+     "date": "2005-12-19",
+     "from": "Milwaukee Bucks",
+     "record": "00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+    }
+   },
+   "assignment": {
+    "date": "2005-12-19",
+    "from_team": "Milwaukee Bucks",
+    "to_team": "Miami Heat",
+    "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
+   }
   }
  ]
 }

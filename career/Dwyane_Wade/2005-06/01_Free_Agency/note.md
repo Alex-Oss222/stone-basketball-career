@@ -14,5 +14,6 @@ status: complete
 - 2005-10-31: Theo Ratliff released at the cut to 15 (non-guaranteed camp contract; no dead money).
 - 2005-10-31: Bonzi Wells released at the cut to 15 (non-guaranteed camp contract; no dead money).
 - 2005-10-31: Sam Cassell released at the cut to 15 (non-guaranteed camp contract; no dead money).
+- 2005-12-19: Matt Harpring traded to Milwaukee Bucks (2005-12-19-aaa5cfaab5).
 
 ## Consequences

@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 26 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 4, 2005 · **Statistics through:** 2005-12-18 
+**Opening assessment:** October 4, 2005 · **Statistics through:** 2005-12-19 
 
-**Contract/control:** Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10. (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10. (register, 2005-12-19) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/jonesju01.html#contract) · [Contract history](../../../../Contracts/players/jonesju01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

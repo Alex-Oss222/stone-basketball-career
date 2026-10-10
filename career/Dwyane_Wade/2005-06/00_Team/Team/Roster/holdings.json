@@ -52,7 +52,7 @@
    "player": "Matt Harpring",
    "bbr_id": "harprma01",
    "from": "2005-01-24",
-   "until": null,
+   "until": "2005-12-19",
    "how": "trade",
    "basis": "acquired by trade from Utah Jazz (2005-01-24-64ef582bc5)"
   },
@@ -153,6 +153,14 @@
    "from": "2005-10-04",
    "until": "2005-10-31",
    "basis": "camp contract 2005-10-04 (camp_roster.json)"
+  },
+  {
+   "player": "Joe Smith",
+   "bbr_id": "smithjo02",
+   "from": "2005-12-19",
+   "until": null,
+   "how": "trade",
+   "basis": "acquired by trade from Milwaukee Bucks (2005-12-19-aaa5cfaab5)"
   }
  ],
  "void_definition": "An entry with void: true records a camp contract voided because the player was not truly available when Miami signed him (04_Training_Camp/signing_corrections.json). Its dates stay as played games used them, but it never made him Miami's: his real moves apply as if Miami had not signed him."

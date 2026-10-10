@@ -2,9 +2,9 @@
 
 # Contract | Lorenzen Wright
 
-Known through: 2005-12-18. [Open interactive contract](wrighlo02.html#contract) · [Contract history](wrighlo02.html#contract-history)
+Known through: 2005-12-19. [Open interactive contract](wrighlo02.html#contract) · [Contract history](wrighlo02.html#contract-history)
 
-Lorenzen Wright: under contract. Evidence cutoff: 2005-12-18.
+Lorenzen Wright: under contract. Evidence cutoff: 2005-12-19.
 
 ## Current contract
 
@@ -122,7 +122,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Lorenzen Wright |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Minnesota Timberwolves |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

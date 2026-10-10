@@ -2,9 +2,9 @@
 
 # Contract | walshma01
 
-Known through: 2005-12-18. [Open interactive contract](walshma01.html#contract) · [Contract history](walshma01.html#contract-history)
+Known through: 2005-12-19. [Open interactive contract](walshma01.html#contract) · [Contract history](walshma01.html#contract-history)
 
-walshma01: under contract. Evidence cutoff: 2005-12-18.
+walshma01: under contract. Evidence cutoff: 2005-12-19.
 
 ## Current contract
 

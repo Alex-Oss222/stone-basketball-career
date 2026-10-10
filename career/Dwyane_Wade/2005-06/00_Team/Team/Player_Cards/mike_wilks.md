@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 26 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-12-18 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-12-19 
 
-**Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $745,248 scheduled ($745,248 in 2005-06). (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $745,248 scheduled ($745,248 in 2005-06). (register, 2005-12-19) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/wilksmi01.html#contract) · [Contract history](../../../../Contracts/players/wilksmi01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

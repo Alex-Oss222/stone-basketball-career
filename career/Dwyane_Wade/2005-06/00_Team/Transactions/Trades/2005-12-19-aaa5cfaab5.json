@@ -1,0 +1,177 @@
+{
+ "trade_id": "2005-12-19-aaa5cfaab5",
+ "date": "2005-12-19",
+ "status": "completed",
+ "kind": "trade",
+ "origin": "offer_from_club",
+ "trade": {
+  "partner": "Milwaukee Bucks",
+  "miami_out": [
+   "Matt Harpring"
+  ],
+  "miami_in": [
+   "Joe Smith"
+  ],
+  "picks_out": [],
+  "picks_in": []
+ },
+ "valuation": {
+  "partner": "Milwaukee Bucks",
+  "posture": "middle",
+  "miami_out": [
+   {
+    "player": "Matt Harpring",
+    "bbr_id": "harprma01",
+    "value": 0.375,
+    "production": 1.466,
+    "contract_term": -1.091,
+    "relief": 0.0,
+    "salary": 7954111,
+    "years": 3,
+    "age": 29,
+    "basis": "production value 10.9 (2002-03 blended with closed 2003-04 games)",
+    "now": 1.466,
+    "future": 0.888,
+    "walk_year": false
+   }
+  ],
+  "miami_in": [
+   {
+    "player": "Joe Smith",
+    "bbr_id": "smithjo02",
+    "value": 1.271,
+    "production": 1.615,
+    "contract_term": -0.344,
+    "relief": 0.0,
+    "salary": 6353200,
+    "years": 2,
+    "age": 30,
+    "basis": "production value 11.5 (2002-03 blended with closed 2003-04 games)",
+    "now": 1.615,
+    "future": 0.383,
+    "walk_year": false
+   }
+  ],
+  "picks_out": [],
+  "picks_in": [],
+  "partner_gain": 0.151,
+  "miami_gain": 0.001,
+  "miami_out_view": 1.891,
+  "dump": false,
+  "shed": -11155933,
+  "objective_gain": 0.151,
+  "untouchable": []
+ },
+ "ranking": {
+  "trade": {
+   "partner": "Milwaukee Bucks",
+   "miami_out": [
+    "Matt Harpring"
+   ],
+   "miami_in": [
+    "Joe Smith"
+   ],
+   "picks_out": [],
+   "picks_in": []
+  },
+  "miami_gain": 0.135,
+  "partner_gain": 0.151,
+  "accept": 1.0,
+  "score": 0.135,
+  "wade_request": false
+ },
+ "decision_event": null,
+ "negotiation": null,
+ "standing": {
+  "as_of": "2005-06-16",
+  "standing": "franchise",
+  "trigger": "season_close",
+  "basis": {
+   "closed_seasons": [
+    "2004-05",
+    "2003-04"
+   ],
+   "window": [
+    "2004-05",
+    "2003-04"
+   ],
+   "starter_lines": {
+    "2004-05": {
+     "season": "2004-05",
+     "gp": 76,
+     "gs": 76,
+     "scheduled": 82,
+     "minutes_per_game": 36.22,
+     "complete": true,
+     "met": true
+    },
+    "2003-04": {
+     "season": "2003-04",
+     "gp": 75,
+     "gs": 70,
+     "scheduled": 82,
+     "minutes_per_game": 35.0,
+     "complete": true,
+     "met": true
+    }
+   },
+   "honors": [
+    "2003-04-all-star",
+    "2003-04-all_nba-first",
+    "2004-05-all-star",
+    "2004-05-all_nba-first"
+   ],
+   "conflicts": [],
+   "ignored_honors": [
+    "2003-04-rookie_of_month-2003-10-28-east",
+    "2003-04-player_of_week-2003-12-15-east",
+    "2003-04-player_of_month-2003-12-01-east",
+    "2003-04-rookie_of_month-2003-12-01-east",
+    "2003-04-player_of_week-2003-12-29-east",
+    "2003-04-player_of_month-2004-01-01-east",
+    "2003-04-rookie_of_month-2004-01-01-east",
+    "2003-04-rookie_of_month-2004-02-01-east",
+    "2003-04-player_of_week-2004-03-08-east",
+    "2003-04-player_of_month-2004-03-01-east",
+    "2003-04-rookie_of_month-2004-03-01-east",
+    "2003-04-rookie_of_month-2004-04-01-east",
+    "2003-04-roy",
+    "2003-04-all_rookie-first",
+    "2004-05-player_of_month-2004-12-01-east",
+    "2004-05-player_of_week-2005-01-24-east",
+    "2004-05-player_of_month-2005-03-01-east",
+    "2004-05-player_of_month-2005-04-01-east"
+   ],
+   "rule": "All-NBA First or Second Team in the most recent closed season",
+   "signed_date": "2003-07-21",
+   "season_folder": "2004-05",
+   "statistics": {
+    "2004-05": {
+     "season": "2004-05",
+     "gp": 76,
+     "gs": 76,
+     "scheduled": 82,
+     "minutes_per_game": 36.22,
+     "complete": true
+    },
+    "2003-04": {
+     "season": "2003-04",
+     "gp": 75,
+     "gs": 70,
+     "scheduled": 82,
+     "minutes_per_game": 35.0,
+     "complete": true
+    }
+   }
+  },
+  "source": "2004-05/season_close.json"
+ },
+ "consultation": null,
+ "answer": {
+  "outcome": "accept",
+  "date": "2005-12-19",
+  "by": "Miami Heat front office (rule)"
+ },
+ "applied": "2005-12-19",
+ "basis": "Milwaukee Bucks offered it (its gain +0.151); Miami's scored gain +0.135 clears +0.10 (runtime/trades.py offers)."
+}

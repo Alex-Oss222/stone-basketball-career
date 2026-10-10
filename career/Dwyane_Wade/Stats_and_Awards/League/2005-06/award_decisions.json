@@ -835,6 +835,110 @@
     }
    ],
    "winner": "Dirk Nowitzki"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-12-12-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-12-12",
+   "period_end": "2005-12-18",
+   "announced_on": "2005-12-19",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 23.8,
+     "reb": 3.8,
+     "ast": 7.2,
+     "game_score": 22.78,
+     "score": 100.1,
+     "rank": 1
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 3,
+     "wins": 1,
+     "losses": 2,
+     "pts": 40.0,
+     "reb": 4.0,
+     "ast": 4.7,
+     "game_score": 32.17,
+     "score": 99.5,
+     "rank": 2
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 23.2,
+     "reb": 5.5,
+     "ast": 3.2,
+     "game_score": 20.72,
+     "score": 88.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Chauncey Billups"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-12-12-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-12-12",
+   "period_end": "2005-12-18",
+   "announced_on": "2005-12-19",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 29.8,
+     "reb": 10.5,
+     "ast": 3.2,
+     "game_score": 25.62,
+     "score": 111.5,
+     "rank": 1
+    },
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 28.5,
+     "reb": 4.0,
+     "ast": 6.2,
+     "game_score": 22.02,
+     "score": 97.1,
+     "rank": 2
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 21.8,
+     "reb": 14.5,
+     "ast": 3.2,
+     "game_score": 23.47,
+     "score": 96.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
   }
  ]
 }

@@ -2,9 +2,9 @@
 
 # Contract | Chris Mihm
 
-Known through: 2005-12-18. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
+Known through: 2005-12-19. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
 
-Chris Mihm: under contract. Evidence cutoff: 2005-12-18.
+Chris Mihm: under contract. Evidence cutoff: 2005-12-19.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Chris Mihm |
-| Club / rights baseline | Phoenix Suns |
+| Club / rights baseline | New Orleans/Oklahoma City Hornets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

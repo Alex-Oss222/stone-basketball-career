@@ -2,9 +2,9 @@
 
 # Contract | Kendrick Perkins
 
-Known through: 2005-12-18. [Open interactive contract](perkike01.html#contract) · [Contract history](perkike01.html#contract-history)
+Known through: 2005-12-19. [Open interactive contract](perkike01.html#contract) · [Contract history](perkike01.html#contract-history)
 
-Kendrick Perkins: No verified contract record. Evidence cutoff: 2005-12-18.
+Kendrick Perkins: No verified contract record. Evidence cutoff: 2005-12-19.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Kendrick Perkins |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Minnesota Timberwolves |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

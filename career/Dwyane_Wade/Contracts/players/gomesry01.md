@@ -2,9 +2,9 @@
 
 # Contract | Ryan Gomes
 
-Known through: 2005-12-18. [Open interactive contract](gomesry01.html#contract) · [Contract history](gomesry01.html#contract-history)
+Known through: 2005-12-19. [Open interactive contract](gomesry01.html#contract) · [Contract history](gomesry01.html#contract-history)
 
-Ryan Gomes: under contract. Evidence cutoff: 2005-12-18.
+Ryan Gomes: under contract. Evidence cutoff: 2005-12-19.
 
 ## Current contract
 

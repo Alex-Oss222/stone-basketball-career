@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-12-18",
+  "as_of": "2005-12-19",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1004,7 +1004,7 @@
     {
       "player_id": "mihmch01",
       "name": "Chris Mihm",
-      "team": "Phoenix Suns",
+      "team": "New Orleans/Oklahoma City Hornets",
       "status": "under contract",
       "current_contract_id": "mihmch01-2005-08-26",
       "recorded_agreements": 3,
@@ -2120,7 +2120,7 @@
     {
       "player_id": "hillgr01",
       "name": "Grant Hill",
-      "team": "Minnesota Timberwolves",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "hillgr01-existing-6434280dd7b3",
       "recorded_agreements": 1,
@@ -2552,7 +2552,7 @@
     {
       "player_id": "kaponja01",
       "name": "Jason Kapono",
-      "team": "Boston Celtics",
+      "team": "Minnesota Timberwolves",
       "status": "under contract",
       "current_contract_id": "kaponja01-2005-08-02",
       "recorded_agreements": 1,
@@ -2750,9 +2750,9 @@
     {
       "player_id": "smithjo02",
       "name": "Joe Smith",
-      "team": "Milwaukee Bucks",
+      "team": "Miami Heat",
       "status": "under contract",
-      "current_contract_id": "smithjo02-existing-aa502761a5b3",
+      "current_contract_id": "smithjo02-baseline-2003-06-26",
       "recorded_agreements": 1,
       "href": "players/smithjo02.html#contract"
     },
@@ -3083,7 +3083,7 @@
     {
       "player_id": "perkike01",
       "name": "Kendrick Perkins",
-      "team": "Boston Celtics",
+      "team": "Minnesota Timberwolves",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3245,7 +3245,7 @@
     {
       "player_id": "korveky01",
       "name": "Kyle Korver",
-      "team": "New Orleans/Oklahoma City Hornets",
+      "team": "Phoenix Suns",
       "status": "under contract",
       "current_contract_id": "korveky01-2005-08-19",
       "recorded_agreements": 1,
@@ -3425,7 +3425,7 @@
     {
       "player_id": "wrighlo02",
       "name": "Lorenzen Wright",
-      "team": "Boston Celtics",
+      "team": "Minnesota Timberwolves",
       "status": "under contract",
       "current_contract_id": "wrighlo02-existing-46006c169e52",
       "recorded_agreements": 1,
@@ -3767,7 +3767,7 @@
     {
       "player_id": "harprma01",
       "name": "Matt Harpring",
-      "team": "Miami Heat",
+      "team": "Milwaukee Bucks",
       "status": "under contract",
       "current_contract_id": "harprma01-2005-08-19",
       "recorded_agreements": 2,
@@ -4217,7 +4217,7 @@
     {
       "player_id": "brownpj01",
       "name": "P.J. Brown",
-      "team": "Phoenix Suns",
+      "team": "New Orleans/Oklahoma City Hornets",
       "status": "under contract",
       "current_contract_id": "brownpj01-2003-07-16",
       "recorded_agreements": 2,
@@ -5225,7 +5225,7 @@
     {
       "player_id": "huntest01",
       "name": "Steven Hunter",
-      "team": "New Orleans/Oklahoma City Hornets",
+      "team": "Phoenix Suns",
       "status": "under contract",
       "current_contract_id": "huntest01-2005-09-09",
       "recorded_agreements": 3,
