@@ -17,5 +17,6 @@ days: 22-end
 - 2005-12-23: New Jersey Nets 109 at Miami Heat 107 — Miami Heat L 107-109 ([Game 1](Game_1.md), event `2005-12-23-new-jersey-nets-at-miami-heat`)
 - 2005-12-25: Los Angeles Lakers 102 at Miami Heat 107 — Miami Heat W 107-102 ([Game 2](Game_2.md), event `2005-12-25-los-angeles-lakers-at-miami-heat`)
 - 2005-12-27: Milwaukee Bucks 101 at Miami Heat 107 — Miami Heat W 107-101 ([Game 3](Game_3.md), event `2005-12-27-milwaukee-bucks-at-miami-heat`)
+- 2005-12-29: Miami Heat 97 at Detroit Pistons 80 — Miami Heat W 97-80 ([Game 4](Game_4.md), event `2005-12-29-miami-heat-at-detroit-pistons`)
 
 ## Consequences
