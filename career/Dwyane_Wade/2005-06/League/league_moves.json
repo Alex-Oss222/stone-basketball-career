@@ -2705,6 +2705,112 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 0.0 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-15-rest_of_season-griffad01",
+   "date": "2006-01-15",
+   "kind": "rest_of_season",
+   "player": "Adrian Griffin",
+   "bbr_id": "griffad01",
+   "from": "Denver Nuggets",
+   "to": "Denver Nuggets",
+   "role": {
+    "player_id": "Adrian Griffin",
+    "bbr_id": "griffad01",
+    "position": "SG",
+    "games": 52,
+    "minutes": 1245
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 15.6 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2005-06-market-2006-01-15-ten_day-russebr01",
+   "date": "2006-01-15",
+   "kind": "ten_day",
+   "player": "Bryon Russell",
+   "bbr_id": "russebr01",
+   "from": null,
+   "to": "Indiana Pacers",
+   "role": {
+    "player_id": "Bryon Russell",
+    "bbr_id": "russebr01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-01-25",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 0.0 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-15-expire-livinra01",
+   "date": "2006-01-15",
+   "kind": "expire",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "Memphis Grizzlies",
+   "to": null,
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.0 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-01-15-ten_day-livinra01",
+   "date": "2006-01-15",
+   "kind": "ten_day",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": null,
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-01-25",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.01 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-15-rest_of_season-armstda01",
+   "date": "2006-01-15",
+   "kind": "rest_of_season",
+   "player": "Darrell Armstrong",
+   "bbr_id": "armstda01",
+   "from": "Phoenix Suns",
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Darrell Armstrong",
+    "bbr_id": "armstda01",
+    "position": "PG",
+    "games": 62,
+    "minutes": 622
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 11.8 minutes a game on his 10-day contracts"
   }
  ],
  "market_days": [
@@ -2782,6 +2888,7 @@
   "2006-01-11",
   "2006-01-12",
   "2006-01-13",
-  "2006-01-14"
+  "2006-01-14",
+  "2006-01-15"
  ]
 }
