@@ -5271,6 +5271,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.08 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-03-30-ten_day-johnser02",
+   "date": "2006-03-30",
+   "kind": "ten_day",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-04-09",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 2.62 x fit"
   }
  ],
  "market_days": [
@@ -5422,6 +5444,7 @@
   "2006-03-26",
   "2006-03-27",
   "2006-03-28",
-  "2006-03-29"
+  "2006-03-29",
+  "2006-03-30"
  ]
 }
