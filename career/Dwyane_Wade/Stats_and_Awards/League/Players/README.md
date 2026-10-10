@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-01-09**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-01-10**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -313,7 +313,7 @@ Card date: **2006-01-09**. 651 registry players, one Markdown card and one inter
 | [Gary Trent](trentga01.md) | Free agent | 31 | silhouette | [open](trentga01.html) |
 | [Gerald Wallace](wallage01.md) | Sacramento Kings | 23 | sourced | [open](wallage01.html) |
 | [Glen Rice](ricegl01.md) | Free agent | 38 | sourced | [open](ricegl01.html) |
-| [Glenn Robinson](robingl01.md) | Free agent | 32 | sourced | [open](robingl01.html) |
+| [Glenn Robinson](robingl01.md) | Free agent | 33 | sourced | [open](robingl01.html) |
 | [Gordan Giricek](giricgo01.md) | Houston Rockets | 28 | sourced | [open](giricgo01.html) |
 | [Grant Hill](hillgr01.md) | Boston Celtics | 33 | silhouette | [open](hillgr01.html) |
 | [Hedo Turkoglu](turkohe01.md) | Toronto Raptors | 26 | sourced | [open](turkohe01.html) |

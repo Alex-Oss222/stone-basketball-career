@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2006-01-09 · Miami Heat · complete
+Career date: 2006-01-10 · Miami Heat · complete
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -57,6 +57,7 @@ Snapshot: 2006-01-04. Draft rights and unassigned arrivals are not assigned minu
 | 2005-12-19 | Trade with Milwaukee Bucks: Miami sends Matt Harpring for Joe Smith (accepted by engine draw None). Record: `00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json`. |
 | 2005-12-19 | Milwaukee Bucks offers Joe Smith for Matt Harpring; Miami's front office accepts. Record: `00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json`. |
 | 2006-01-07 | Miami waived Jumaine Jones (payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first); $354,902 remains on the 2005-06 books. |
+| 2006-01-10 | Guarantee date: no contract guaranteed for 2005-06. |
 
 ## Your response to the staff
 

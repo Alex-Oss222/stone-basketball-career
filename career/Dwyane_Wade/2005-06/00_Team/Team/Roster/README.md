@@ -2,9 +2,9 @@
 
 <!-- team-status:start -->
 
-[roster.json](roster.json) is the machine-readable register (team-control record dated 2006-01-07). Availability below is on 2006-01-09, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
+[roster.json](roster.json) is the machine-readable register (team-control record dated 2006-01-10). Availability below is on 2006-01-10, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
 
-| Player | Pos | Control | Availability on 2006-01-09 | Staff role |
+| Player | Pos | Control | Availability on 2006-01-10 | Staff role |
 | --- | --- | --- | --- | --- |
 | [Eddie Jones](../Player_Cards/eddie_jones.md) | SG/SF | under contract | Available | reserve outside the planned rotation |
 | [Brian Grant](../Player_Cards/brian_grant.md) | C/PF | under contract | Available | starter at C, staff plan 34 minutes |

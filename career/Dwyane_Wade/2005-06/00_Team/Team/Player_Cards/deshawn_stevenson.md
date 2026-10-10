@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG  
 **Age at assessment:** 24 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-01-09 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-01-10 
 
-**Contract/control:** Existing contract: 4 season(s) from 2005-06, $13,950,856 scheduled ($2,989,469 in 2005-06). (register, 2006-01-07) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing contract: 4 season(s) from 2005-06, $13,950,856 scheduled ($2,989,469 in 2005-06). (register, 2006-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/stevede01.html#contract) · [Contract history](../../../../Contracts/players/stevede01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

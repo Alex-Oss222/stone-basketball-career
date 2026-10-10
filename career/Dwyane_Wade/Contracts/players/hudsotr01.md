@@ -2,9 +2,9 @@
 
 # Contract | Troy Hudson
 
-Known through: 2006-01-09. [Open interactive contract](hudsotr01.html#contract) · [Contract history](hudsotr01.html#contract-history)
+Known through: 2006-01-10. [Open interactive contract](hudsotr01.html#contract) · [Contract history](hudsotr01.html#contract-history)
 
-Troy Hudson: under contract. Evidence cutoff: 2006-01-09.
+Troy Hudson: under contract. Evidence cutoff: 2006-01-10.
 
 ## Current contract
 

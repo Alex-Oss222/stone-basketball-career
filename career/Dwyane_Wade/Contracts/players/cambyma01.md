@@ -2,9 +2,9 @@
 
 # Contract | Marcus Camby
 
-Known through: 2006-01-09. [Open interactive contract](cambyma01.html#contract) · [Contract history](cambyma01.html#contract-history)
+Known through: 2006-01-10. [Open interactive contract](cambyma01.html#contract) · [Contract history](cambyma01.html#contract-history)
 
-Marcus Camby: under contract. Evidence cutoff: 2006-01-09.
+Marcus Camby: under contract. Evidence cutoff: 2006-01-10.
 
 ## Current contract
 

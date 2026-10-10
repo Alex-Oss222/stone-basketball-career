@@ -8,9 +8,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 30 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** December 19, 2005 · **Statistics through:** 2006-01-09 
+**Opening assessment:** December 19, 2005 · **Statistics through:** 2006-01-10 
 
-**Contract/control:** Acquired by trade from Milwaukee Bucks on December 19, 2005: $6,353,200 in 2005-06; contract through 2006-07. (register, 2006-01-07) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Acquired by trade from Milwaukee Bucks on December 19, 2005: $6,353,200 in 2005-06; contract through 2006-07. (register, 2006-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/smithjo02.html#contract) · [Contract history](../../../../Contracts/players/smithjo02.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

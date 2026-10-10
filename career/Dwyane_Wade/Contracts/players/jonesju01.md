@@ -2,9 +2,9 @@
 
 # Contract | Jumaine Jones
 
-Known through: 2006-01-09. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
+Known through: 2006-01-10. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
 
-Jumaine Jones: waived. Evidence cutoff: 2006-01-09.
+Jumaine Jones: waived. Evidence cutoff: 2006-01-10.
 
 ## Current contract
 
@@ -29,7 +29,6 @@ Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed 
 
 | Season | Amount | Record kind |
 | --- | --- | --- |
-| 2003-04 | $638,679 | contract_salary |
 | 2005-06 | $900,498 | contract_salary |
 
 ### Draft-rights scale reference

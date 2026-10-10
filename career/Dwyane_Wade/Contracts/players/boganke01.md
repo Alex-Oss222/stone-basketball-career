@@ -2,9 +2,9 @@
 
 # Contract | Keith Bogans
 
-Known through: 2006-01-09. [Open interactive contract](boganke01.html#contract) · [Contract history](boganke01.html#contract-history)
+Known through: 2006-01-10. [Open interactive contract](boganke01.html#contract) · [Contract history](boganke01.html#contract-history)
 
-Keith Bogans: under contract. Evidence cutoff: 2006-01-09.
+Keith Bogans: under contract. Evidence cutoff: 2006-01-10.
 
 ## Current contract
 
