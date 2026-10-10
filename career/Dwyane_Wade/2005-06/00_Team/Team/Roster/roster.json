@@ -20,7 +20,7 @@
    "college": "Temple",
    "status": "under_contract",
    "control": "Existing contract: 2 season(s) from 2005-06, $30,273,750 scheduled ($14,576,250 in 2005-06).",
-   "working_role": "Rotation at SG, staff plan 7 minutes (rotation 2006-03-01)",
+   "working_role": "Rotation at SG, staff plan 7 minutes (rotation 2006-03-15)",
    "player_card": "../Player_Cards/eddie_jones.md",
    "bbr_id": "jonesed02"
   },
@@ -63,7 +63,7 @@
    "date_of_birth": "1973-05-18",
    "status": "under_contract",
    "control": "Signed September 9, 2005 (bird): 3 season(s) from 2005-06, $21,008,239 scheduled ($6,337,327 in 2005-06).",
-   "working_role": "Rotation at PF, staff plan 11 minutes (rotation 2006-03-01)",
+   "working_role": "Rotation at PF, staff plan 11 minutes (rotation 2006-03-15)",
    "player_card": "../Player_Cards/donyell_marshall.md",
    "bbr_id": "marshdo01"
   },
@@ -74,7 +74,7 @@
     "PG"
    ],
    "date_of_birth": "1974-10-02",
-   "working_role": "Rotation at PG, staff plan 9 minutes (rotation 2006-03-01)",
+   "working_role": "Rotation at PG, staff plan 9 minutes (rotation 2006-03-15)",
    "player_card": "../Player_Cards/anthony_johnson.md",
    "bbr_id": "johnsan02",
    "status": "under_contract",
@@ -92,7 +92,7 @@
    "college": "Duquesne",
    "status": "under_contract",
    "control": "Existing contract: 1 season(s) from 2005-06, $3,812,749 scheduled ($3,812,749 in 2005-06).",
-   "working_role": "Starter at PG, staff plan 34 minutes (rotation 2006-03-01)",
+   "working_role": "Starter at PG, staff plan 34 minutes (rotation 2006-03-15)",
    "player_card": "../Player_Cards/mike_james.md",
    "bbr_id": "jamesmi01"
   },
@@ -103,7 +103,7 @@
     "PF"
    ],
    "date_of_birth": "1979-05-26",
-   "working_role": "Starter at PF, staff plan 34 minutes (rotation 2006-03-01)",
+   "working_role": "Starter at PF, staff plan 34 minutes (rotation 2006-03-15)",
    "player_card": "../Player_Cards/mehmet_okur.md",
    "bbr_id": "okurme01",
    "status": "under_contract",
@@ -116,7 +116,7 @@
     "SG"
    ],
    "date_of_birth": "1981-04-03",
-   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2006-03-01)",
+   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2006-03-15)",
    "player_card": "../Player_Cards/deshawn_stevenson.md",
    "bbr_id": "stevede01",
    "status": "under_contract",
@@ -135,7 +135,7 @@
    "college": "UConn (simulation canon)",
    "status": "under_contract",
    "control": "Existing contract: 2 season(s) from 2005-06, $5,727,802 scheduled ($2,526,600 in 2005-06).",
-   "working_role": "Starter at SG, staff plan 40 minutes (rotation 2006-03-01)",
+   "working_role": "Starter at SG, staff plan 40 minutes (rotation 2006-03-15)",
    "player_card": "../Player_Cards/dwyane_wade.md"
   },
   {
@@ -150,7 +150,7 @@
    "college": "UConn",
    "status": "under_contract",
    "control": "Existing contract: 1 season(s) from 2005-06, $2,461,617 scheduled ($2,461,617 in 2005-06).",
-   "working_role": "Rotation at SF, staff plan 18 minutes (rotation 2006-03-01)",
+   "working_role": "Starter at SF, staff plan 34 minutes (rotation 2006-03-15)",
    "player_card": "../Player_Cards/caron_butler.md",
    "bbr_id": "butleca01"
   },
@@ -161,7 +161,7 @@
     "SF"
    ],
    "date_of_birth": "1985-06-09",
-   "working_role": "Rotation at SF, staff plan 4 minutes (rotation 2006-03-01)",
+   "working_role": "Rotation at SF, staff plan 4 minutes (rotation 2006-03-15)",
    "player_card": "../Player_Cards/sebastian_telfair.md",
    "bbr_id": "telfase01",
    "status": "under_contract",
@@ -174,7 +174,7 @@
     "PG"
    ],
    "date_of_birth": "1978-08-16",
-   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2006-03-01)",
+   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2006-03-15)",
    "player_card": "../Player_Cards/eddie_gill.md",
    "bbr_id": "gilled01",
    "status": "under_contract",
@@ -187,7 +187,7 @@
     "PG"
    ],
    "date_of_birth": "1979-05-07",
-   "working_role": "Reserve outside the planned rotation (rotation 2006-03-01)",
+   "working_role": "Reserve outside the planned rotation (rotation 2006-03-15)",
    "player_card": "../Player_Cards/mike_wilks.md",
    "bbr_id": "wilksmi01",
    "status": "under_contract",
@@ -200,7 +200,7 @@
     "SG"
    ],
    "date_of_birth": "1980-08-28",
-   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2006-03-01)",
+   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2006-03-15)",
    "player_card": "../Player_Cards/matt_carroll.md",
    "bbr_id": "carroma01",
    "status": "under_contract",
@@ -305,7 +305,7 @@
    "date_of_birth": "1975-07-26",
    "status": "under_contract",
    "control": "Acquired by trade from Milwaukee Bucks on December 19, 2005: $6,353,200 in 2005-06; contract through 2006-07.",
-   "working_role": "Starter at SF, staff plan 34 minutes (rotation 2006-03-01)",
+   "working_role": "Rotation at SF, staff plan 18 minutes (rotation 2006-03-15)",
    "player_card": "../Player_Cards/joe_smith.md",
    "bbr_id": "smithjo02"
   },
@@ -318,7 +318,7 @@
    "date_of_birth": "1969-10-14",
    "status": "under_contract",
    "control": "Acquired by trade from New Orleans/Oklahoma City Hornets on January 16, 2006: $8,500,000 in 2005-06; contract through 2006-07.",
-   "working_role": "Rotation at PF, staff plan 15 minutes (rotation 2006-03-01)",
+   "working_role": "Rotation at PF, staff plan 15 minutes (rotation 2006-03-15)",
    "player_card": "../Player_Cards/pj_brown.md",
    "bbr_id": "brownpj01"
   },
@@ -331,7 +331,7 @@
    "date_of_birth": "1979-07-16",
    "status": "under_contract",
    "control": "Acquired by trade from New Orleans/Oklahoma City Hornets on January 16, 2006: $5,100,714 in 2005-06; contract through 2009-10.",
-   "working_role": "Starter at C, staff plan 34 minutes (rotation 2006-03-01)",
+   "working_role": "Starter at C, staff plan 34 minutes (rotation 2006-03-15)",
    "player_card": "../Player_Cards/chris_mihm.md",
    "bbr_id": "mihmch01"
   }

@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 26 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-03-14 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2006-03-15 
 
 **Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $745,248 scheduled ($745,248 in 2005-06). (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Reserve outside the planned rotation (staff rotation dated 2006-03-01, [record](../Depth_Chart/Reviews/2006-03-01/rotation.json)).
+**Role:** Reserve outside the planned rotation (staff rotation dated 2006-03-15, [record](../Depth_Chart/Reviews/2006-03-15/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -39,11 +39,12 @@ Unassessed.
 | 2006-02-01 | Staff rotation of 2006-02-01: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2006-02-01/rotation.json) |
 | 2006-02-15 | Staff rotation of 2006-02-15: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2006-02-15/rotation.json) |
 | 2006-03-01 | Staff rotation of 2006-03-01: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2006-03-01/rotation.json) |
+| 2006-03-15 | Staff rotation of 2006-03-15: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2006-03-15/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../../../../career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json), 2004-05 simulated season totals.
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-03-01.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-03-15.
 
 <!-- yearly-statistics:start -->
 

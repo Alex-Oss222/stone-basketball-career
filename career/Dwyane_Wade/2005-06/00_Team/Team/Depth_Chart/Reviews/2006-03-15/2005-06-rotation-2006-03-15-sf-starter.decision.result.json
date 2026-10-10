@@ -1,0 +1,12 @@
+{
+ "date": "2006-03-15",
+ "decider": "Miami coaching staff (engine evaluation draw)",
+ "event_id": "2005-06-rotation-2006-03-15-sf-starter",
+ "kind": "decision",
+ "options": {
+  "Caron Butler": 0.396947,
+  "Joe Smith": 0.603053
+ },
+ "outcome": "Caron Butler",
+ "question": "Who starts at SF: Joe Smith or Caron Butler?"
+}

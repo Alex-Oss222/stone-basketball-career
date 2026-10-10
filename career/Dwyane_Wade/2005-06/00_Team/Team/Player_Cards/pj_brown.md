@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 36 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** January 16, 2006 · **Statistics through:** 2006-03-14 
+**Opening assessment:** January 16, 2006 · **Statistics through:** 2006-03-15 
 
 **Contract/control:** Acquired by trade from New Orleans/Oklahoma City Hornets on January 16, 2006: $8,500,000 in 2005-06; contract through 2006-07. (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at PF, staff plan 15 minutes (staff rotation dated 2006-03-01, [record](../Depth_Chart/Reviews/2006-03-01/rotation.json)).
+**Role:** Rotation at PF, staff plan 15 minutes (staff rotation dated 2006-03-15, [record](../Depth_Chart/Reviews/2006-03-15/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -45,11 +45,12 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 | 2006-02-01 | Staff rotation of 2006-02-01: rotation at PF, staff plan 11 minutes. | [Rotation](../Depth_Chart/Reviews/2006-02-01/rotation.json) |
 | 2006-02-15 | Staff rotation of 2006-02-15: rotation at PF, staff plan 15 minutes. | [Rotation](../Depth_Chart/Reviews/2006-02-15/rotation.json) |
 | 2006-03-01 | Staff rotation of 2006-03-01: rotation at PF, staff plan 15 minutes. | [Rotation](../Depth_Chart/Reviews/2006-03-01/rotation.json) |
+| 2006-03-15 | Staff rotation of 2006-03-15: rotation at PF, staff plan 15 minutes. | [Rotation](../Depth_Chart/Reviews/2006-03-15/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [League baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json), [signing record](../../../00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-03-01.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-03-15.
 
 <!-- yearly-statistics:start -->
 
