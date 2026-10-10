@@ -18,14 +18,14 @@ Activation: The authoritative current date and recorded event determine what is 
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2006-04-01-miami-heat-at-cleveland-cavaliers |
+| Last closed event | 2006-04-02-miami-heat-at-new-jersey-nets |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2006-04-02 | Current checkpoint | 2006-04-01-miami-heat-at-cleveland-cavaliers | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2006-04-02 | Current checkpoint | 2006-04-02-miami-heat-at-new-jersey-nets | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2005-10-04 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
 | 2006-04-03 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
@@ -186,4 +186,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_3.md)
 - [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_4.md)
 - [Closed game](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

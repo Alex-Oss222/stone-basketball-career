@@ -53,11 +53,11 @@
 <text x="674" y="460" font-family="sans-serif" fill="#d0d1d4" font-size="16" font-weight="400" text-anchor="start">Player box coverage: 17/17 closed games</text>
 <rect x="20" y="500" width="610" height="270" rx="24" fill="#a71930"/>
 <text x="44" y="538" font-family="sans-serif" fill="#ffffff" font-size="24" font-weight="700" text-anchor="start">Career regular season</text>
-<text x="604" y="538" font-family="sans-serif" fill="#d0d1d4" font-size="19" font-weight="700" text-anchor="end">223 G</text>
+<text x="604" y="538" font-family="sans-serif" fill="#d0d1d4" font-size="19" font-weight="700" text-anchor="end">224 G</text>
 <line x1="44" y1="557" x2="606" y2="557" stroke="#ffffff" stroke-opacity="0.18"/>
 <text x="90.0" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">22.1</text>
 <text x="90.0" y="630" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">PPG</text>
-<text x="207.5" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">5.4</text>
+<text x="207.5" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">5.3</text>
 <text x="207.5" y="630" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">RPG</text>
 <text x="325.0" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">4.2</text>
 <text x="325.0" y="630" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">APG</text>
@@ -75,7 +75,7 @@
 <text x="442.5" y="718" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">FT%</text>
 <text x="560.0" y="691" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">66.3</text>
 <text x="560.0" y="718" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">TS% (est.)</text>
-<text x="44" y="750" font-family="sans-serif" fill="#d0d1d4" font-size="16" font-weight="400" text-anchor="start">Player box coverage: 236/236 closed games</text>
+<text x="44" y="750" font-family="sans-serif" fill="#d0d1d4" font-size="16" font-weight="400" text-anchor="start">Player box coverage: 237/237 closed games</text>
 <rect x="650" y="500" width="610" height="270" rx="24" fill="#222326"/>
 <text x="674" y="538" font-family="sans-serif" fill="#ffffff" font-size="24" font-weight="700" text-anchor="start">Professional status</text>
 <line x1="674" y1="557" x2="1236" y2="557" stroke="#ffffff" stroke-opacity="0.18"/>

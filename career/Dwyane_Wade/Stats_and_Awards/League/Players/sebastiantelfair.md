@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `sebast
 
 ## Simulated statistics
 
-As of **2006-04-02**: 72 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-04-02**: 73 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 20 | MIA | NBA | PG | 72 | 0 | 8.5 | 0.8 | 2.7 | .304 | 0.2 | 0.6 | .273 | 0.7 | 2.1 | .313 | .335 | 0.4 | 0.6 | .674 | 0.1 | 0.6 | 0.7 | 1.6 | 0.2 | 0.0 | 0.6 | 0.8 | 2.2 | .376 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 20 | MIA | NBA | PG | 73 | 0 | 8.4 | 0.8 | 2.7 | .304 | 0.2 | 0.6 | .273 | 0.6 | 2.1 | .313 | .335 | 0.5 | 0.7 | .688 | 0.1 | 0.6 | 0.7 | 1.6 | 0.2 | 0.0 | 0.6 | 0.8 | 2.2 | .379 | — |
 
 ### Month
 
@@ -46,7 +46,7 @@ As of **2006-04-02**: 72 closed games feed this card. Per-game columns use the r
 | [January 2006](../2005-06/01_January/League_Stats.md) | 20 | MIA | NBA | PG | 15 | 0 | 8.3 | 0.7 | 2.5 | .289 | 0.2 | 0.8 | .250 | 0.5 | 1.7 | .308 | .329 | 0.3 | 0.3 | .800 | 0.0 | 0.7 | 0.7 | 1.8 | 0.3 | 0.1 | 0.5 | 0.9 | 1.9 | .361 | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 20 | MIA | NBA | PG | 10 | 0 | 8.2 | 0.8 | 2.3 | .348 | 0.0 | 0.2 | .000 | 0.8 | 2.1 | .381 | .348 | 0.7 | 1.0 | .700 | 0.0 | 0.6 | 0.6 | 2.0 | 0.1 | 0.1 | 0.3 | 0.5 | 2.3 | .420 | — |
 | [March 2006](../2005-06/03_March/League_Stats.md) | 20 | MIA | NBA | PG | 15 | 0 | 5.3 | 0.6 | 1.5 | .409 | 0.1 | 0.4 | .333 | 0.5 | 1.1 | .438 | .455 | 0.5 | 0.7 | .636 | 0.1 | 0.3 | 0.4 | 1.1 | 0.1 | 0.0 | 0.7 | 0.5 | 1.8 | .503 | — |
-| [April 2006](../2005-06/04_April/League_Stats.md) | 20 | MIA | NBA | PG | 1 | 0 | 3.8 | 1.0 | 4.0 | .250 | 0.0 | 0.0 | N/A | 1.0 | 4.0 | .250 | .250 | 1.0 | 1.0 | 1.000 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 1.0 | 3.0 | .338 | — |
+| [April 2006](../2005-06/04_April/League_Stats.md) | 20 | MIA | NBA | PG | 2 | 0 | 4.7 | 0.5 | 2.0 | .250 | 0.0 | 0.0 | N/A | 0.5 | 2.0 | .250 | .250 | 1.5 | 1.5 | 1.000 | 0.0 | 0.5 | 0.5 | 0.0 | 0.5 | 0.0 | 0.0 | 0.5 | 2.5 | .470 | — |
 
 </details>
 
@@ -77,7 +77,7 @@ As of **2006-04-02**: 72 closed games feed this card. Per-game columns use the r
 | [March 2006 week 2 (08 to 14)](../2005-06/03_March/Week_2/League_Stats.md) | 20 | MIA | NBA | PG | 4 | 0 | 6.1 | 0.8 | 1.8 | .429 | 0.2 | 0.5 | .500 | 0.5 | 1.2 | .400 | .500 | 0.0 | 0.5 | .000 | 0.0 | 0.8 | 0.8 | 1.0 | 0.2 | 0.0 | 0.5 | 0.2 | 1.8 | .444 | — |
 | [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 20 | MIA | NBA | PG | 4 | 0 | 5.8 | 0.5 | 1.5 | .333 | 0.0 | 0.2 | .000 | 0.5 | 1.2 | .400 | .333 | 0.5 | 0.8 | .667 | 0.0 | 0.5 | 0.5 | 1.2 | 0.2 | 0.0 | 1.0 | 0.5 | 1.5 | .410 | — |
 | [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 20 | MIA | NBA | PG | 4 | 0 | 3.7 | 0.5 | 1.2 | .400 | 0.2 | 0.2 | 1.000 | 0.2 | 1.0 | .250 | .500 | 0.5 | 0.5 | 1.000 | 0.2 | 0.0 | 0.2 | 1.5 | 0.0 | 0.0 | 0.5 | 0.0 | 1.8 | .595 | — |
-| [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 20 | MIA | NBA | PG | 1 | 0 | 3.8 | 1.0 | 4.0 | .250 | 0.0 | 0.0 | N/A | 1.0 | 4.0 | .250 | .250 | 1.0 | 1.0 | 1.000 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 1.0 | 3.0 | .338 | — |
+| [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 20 | MIA | NBA | PG | 2 | 0 | 4.7 | 0.5 | 2.0 | .250 | 0.0 | 0.0 | N/A | 0.5 | 2.0 | .250 | .250 | 1.5 | 1.5 | 1.000 | 0.0 | 0.5 | 0.5 | 0.0 | 0.5 | 0.0 | 0.0 | 0.5 | 2.5 | .470 | — |
 | [April 2006 week 2 (08 to 14)](../2005-06/04_April/Week_2/League_Stats.md) | 20 | MIA | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 20 | MIA | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
@@ -89,27 +89,27 @@ Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regul
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 72 of 72 closed games; 72 tracked appearances form the denominator below (2005-11-02 to 2006-04-01).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 73 of 73 closed games; 73 tracked appearances form the denominator below (2005-11-02 to 2006-04-02).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 28 | 88 | 31.8% | 0.78 | 1.22 |
+| Paint | 28 | 88 | 31.8% | 0.77 | 1.21 |
 | Outside paint, under 12 ft | 0 | 2 | 0.0% | 0.00 | 0.03 |
-| Outside paint, 12 to under 18 ft | 6 | 19 | 31.6% | 0.17 | 0.26 |
-| 18 ft to the three-point line | 13 | 41 | 31.7% | 0.36 | 0.57 |
-| Three-point range | 12 | 44 | 27.3% | 0.50 | 0.61 |
-| All field goals | 59 | 194 | 30.4% | 1.81 | 2.69 |
+| Outside paint, 12 to under 18 ft | 6 | 19 | 31.6% | 0.16 | 0.26 |
+| 18 ft to the three-point line | 13 | 41 | 31.7% | 0.36 | 0.56 |
+| Three-point range | 12 | 44 | 27.3% | 0.49 | 0.60 |
+| All field goals | 59 | 194 | 30.4% | 1.78 | 2.66 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No 2002-03 record in the supplied statistics file. 2005-06 is simulated: 72 closed regular-season games through 2006-04-02. Earlier simulated seasons from their closed results.
+**Coverage:** No 2002-03 record in the supplied statistics file. 2005-06 is simulated: 73 closed regular-season games through 2006-04-02. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | UTAH | 68 | 6 | 19.5 | 7.3 | 2.1 | 3.1 | 0.5 | 0.1 | 1.7 | 38.1% | 20.7% | 76.7% |
-| 2005-06 | MIA | 72 | 0 | 8.5 | 2.2 | 0.7 | 1.6 | 0.2 | 0.0 | 0.6 | 30.4% | 27.3% | 67.4% |
+| 2005-06 | MIA | 73 | 0 | 8.4 | 2.2 | 0.7 | 1.6 | 0.2 | 0.0 | 0.6 | 30.4% | 27.3% | 68.8% |
 
 ## Playoff statistics by year
 

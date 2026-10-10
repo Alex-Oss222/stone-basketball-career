@@ -14,21 +14,21 @@ Career date: **2006-04-02** · Toronto Raptors · #4 · PF · age 22
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 60/60 | 37.7 | 22.5 | 10.2 | 3.3 | 0.9 | 1.3 | 53.0 | 36.4 | 90.2 | 60.0 | 52-20 |
+| 2005-06 | 21 | Toronto Raptors | 61/61 | 37.6 | 22.3 | 10.2 | 3.3 | 0.9 | 1.3 | 53.0 | 37.0 | 90.3 | 60.1 | 53-20 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 60 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 61 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 37.7 |
-| Points | 24.5 | 22.5 |
+| Minutes | 36.5 | 37.6 |
+| Points | 24.5 | 22.3 |
 | Rebounds | 11.4 | 10.2 |
 | Assists | 4.2 | 3.3 |
 | FG% | 52.0 | 53.0 |
-| 3P% | 41.7 | 36.4 |
-| FT% | 91.3 | 90.2 |
+| 3P% | 41.7 | 37.0 |
+| FT% | 91.3 | 90.3 |
 
 ## Playoffs
 

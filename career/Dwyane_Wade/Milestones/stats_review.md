@@ -6,7 +6,7 @@ Career date: 2006-04-02 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-79 closed game records in 2005-06 through 2006-04-02. Competitions remain separate.
+80 closed game records in 2005-06 through 2006-04-02. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 72 | 37.2 | 27.3 | 5.9 | 4.1 | 1.8 | Complete |
+| regular | 73 | 37.2 | 27.3 | 5.8 | 4.1 | 1.8 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 682 | 1201 | 0.568 | 108 | 225 | 0.480 |
+| regular | 691 | 1217 | 0.568 | 110 | 230 | 0.478 |
 
 ## Closed source games
 
@@ -109,6 +109,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2006-03-27 | regular | Indiana Pacers | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_3.md) |
 | 2006-03-29 | regular | Toronto Raptors | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_4.md) |
 | 2006-04-01 | regular | Cleveland Cavaliers | Played | [Closed game](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.md) |
+| 2006-04-02 | regular | New Jersey Nets | Played | [Closed game](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -233,4 +234,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_3.md)
 - [Closed game](../2005-06/06_Regular_Season/03_March/Week_4/Game_4.md)
 - [Closed game](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

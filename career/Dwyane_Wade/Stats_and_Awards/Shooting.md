@@ -6609,17 +6609,17 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 72 | 0 | 72 | 682 / 1201 | 56.8% | 108 / 225 | 1966 | complete |
+| 73 | 0 | 73 | 691 / 1217 | 56.8% | 110 / 230 | 1990 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 381 | 598 | 63.7% | 10.58 | 8.31 | 598 |
-| Outside paint, under 12 ft | 21 | 46 | 45.7% | 0.58 | 0.64 | 46 |
-| Outside paint, 12 to under 18 ft | 82 | 153 | 53.6% | 2.28 | 2.12 | 153 |
-| 18 ft to the three-point line | 90 | 179 | 50.3% | 2.50 | 2.49 | 179 |
-| Three-point range | 108 | 225 | 48.0% | 4.50 | 3.12 | 225 |
+| Paint | 386 | 604 | 63.9% | 10.58 | 8.27 | 604 |
+| Outside paint, under 12 ft | 21 | 46 | 45.7% | 0.58 | 0.63 | 46 |
+| Outside paint, 12 to under 18 ft | 83 | 154 | 53.9% | 2.27 | 2.11 | 154 |
+| 18 ft to the three-point line | 91 | 183 | 49.7% | 2.49 | 2.51 | 183 |
+| Three-point range | 110 | 230 | 47.8% | 4.52 | 3.15 | 230 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -6695,6 +6695,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2006-03-27 | Indiana Pacers | Played | [Game](../2005-06/06_Regular_Season/03_March/Week_4/Game_3.md) | [Result](../2005-06/06_Regular_Season/03_March/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/03_March/Week_4/Game_3.result.json) |
 | 2006-03-29 | Toronto Raptors | Played | [Game](../2005-06/06_Regular_Season/03_March/Week_4/Game_4.md) | [Result](../2005-06/06_Regular_Season/03_March/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/03_March/Week_4/Game_4.result.json) |
 | 2006-04-01 | Cleveland Cavaliers | Played | [Game](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.md) | [Result](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.result.json) |
+| 2006-04-02 | New Jersey Nets | Played | [Game](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.md) | [Result](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.result.json) |
 
 ## 2005-11 · NBA regular season
 
@@ -7369,21 +7370,22 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 0 | 1 | 13 / 19 | 68.4% | 2 / 3 | 40 | complete |
+| 2 | 0 | 2 | 22 / 35 | 62.9% | 4 / 8 | 64 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 8 | 11 | 72.7% | 16.00 | 11.00 | 11 |
+| Paint | 13 | 17 | 76.5% | 13.00 | 8.50 | 17 |
 | Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
-| 18 ft to the three-point line | 2 | 4 | 50.0% | 4.00 | 4.00 | 4 |
-| Three-point range | 2 | 3 | 66.7% | 6.00 | 3.00 | 3 |
+| Outside paint, 12 to under 18 ft | 2 | 2 | 100.0% | 2.00 | 1.00 | 2 |
+| 18 ft to the three-point line | 3 | 8 | 37.5% | 3.00 | 4.00 | 8 |
+| Three-point range | 4 | 8 | 50.0% | 6.00 | 4.00 | 8 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2006-04-01 | Cleveland Cavaliers | Played | [Game](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.md) | [Result](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.result.json) |
+| 2006-04-02 | New Jersey Nets | Played | [Game](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.md) | [Result](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.result.json) |
 
 ## 2006-04-01 to 2006-04-02 · NBA regular season
 
@@ -7391,21 +7393,22 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 0 | 1 | 13 / 19 | 68.4% | 2 / 3 | 40 | complete |
+| 2 | 0 | 2 | 22 / 35 | 62.9% | 4 / 8 | 64 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 8 | 11 | 72.7% | 16.00 | 11.00 | 11 |
+| Paint | 13 | 17 | 76.5% | 13.00 | 8.50 | 17 |
 | Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
-| 18 ft to the three-point line | 2 | 4 | 50.0% | 4.00 | 4.00 | 4 |
-| Three-point range | 2 | 3 | 66.7% | 6.00 | 3.00 | 3 |
+| Outside paint, 12 to under 18 ft | 2 | 2 | 100.0% | 2.00 | 1.00 | 2 |
+| 18 ft to the three-point line | 3 | 8 | 37.5% | 3.00 | 4.00 | 8 |
+| Three-point range | 4 | 8 | 50.0% | 6.00 | 4.00 | 8 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2006-04-01 | Cleveland Cavaliers | Played | [Game](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.md) | [Result](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.result.json) |
+| 2006-04-02 | New Jersey Nets | Played | [Game](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.md) | [Result](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.result.json) |
 
 ## 2005-11-02 at Memphis Grizzlies · Played · NBA regular season
 
@@ -8990,6 +8993,28 @@ Simulated engine shot locations come from the original closed game results. Part
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2006-04-01 | Cleveland Cavaliers | Played | [Game](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.md) | [Result](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/04_April/Week_1/Game_1.result.json) |
+
+## 2006-04-02 at New Jersey Nets · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-game-27b24ae82b6b2fe4#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 9 / 16 | 56.2% | 2 / 5 | 24 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 5 | 6 | 83.3% | 10.00 | 6.00 | 6 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 1 | 4 | 25.0% | 2.00 | 4.00 | 4 |
+| Three-point range | 2 | 5 | 40.0% | 6.00 | 5.00 | 5 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2006-04-02 | New Jersey Nets | Played | [Game](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.md) | [Result](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/04_April/Week_1/Game_2.result.json) |
 
 ## 2005-06 · NBA preseason · through 2006-04-02
 
