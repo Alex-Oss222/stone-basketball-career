@@ -1512,7 +1512,7 @@
   {
    "player": "Derek Fisher",
    "bbr_id": "fishede01",
-   "club": "Boston Celtics",
+   "club": "Indiana Pacers",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -2229,7 +2229,7 @@
   {
    "player": "Grant Hill",
    "bbr_id": "hillgr01",
-   "club": "Boston Celtics",
+   "club": "Indiana Pacers",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -2381,7 +2381,7 @@
   {
    "player": "Larry Hughes",
    "bbr_id": "hughela01",
-   "club": "Indiana Pacers",
+   "club": "Boston Celtics",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -4172,13 +4172,14 @@
   {
    "player": "Scot Pollard",
    "bbr_id": "pollasc01",
-   "club": "Indiana Pacers",
+   "club": "Boston Celtics",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 6274937
    },
-   "source": "league contract ledger 2004-05 (existing)"
+   "source": "league contract ledger 2004-05 (existing)",
+   "signed_club": "Indiana Pacers"
   },
   {
    "player": "James Posey",
@@ -4206,7 +4207,7 @@
   {
    "player": "Ronnie Price",
    "bbr_id": "pricero01",
-   "club": "Los Angeles Lakers",
+   "club": "Memphis Grizzlies",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -4328,7 +4329,7 @@
   {
    "player": "Zeljko Rebraca",
    "bbr_id": "rebraze01",
-   "club": "Sacramento Kings",
+   "club": "Cleveland Cavaliers",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -4606,7 +4607,7 @@
   {
    "player": "Charles Smith",
    "bbr_id": "smithch04",
-   "club": "Chicago Bulls",
+   "club": "Golden State Warriors",
    "route": "minimum",
    "kind": "new",
    "schedule": {

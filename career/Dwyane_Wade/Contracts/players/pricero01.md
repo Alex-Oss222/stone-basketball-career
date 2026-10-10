@@ -2,9 +2,9 @@
 
 # Contract | Ronnie Price
 
-Known through: 2006-02-20. [Open interactive contract](pricero01.html#contract) · [Contract history](pricero01.html#contract-history)
+Known through: 2006-02-26. [Open interactive contract](pricero01.html#contract) · [Contract history](pricero01.html#contract-history)
 
-Ronnie Price: under contract. Evidence cutoff: 2006-02-20.
+Ronnie Price: under contract. Evidence cutoff: 2006-02-26.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ronnie Price |
-| Club / rights baseline | Los Angeles Lakers |
+| Club / rights baseline | Memphis Grizzlies |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

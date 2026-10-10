@@ -2,9 +2,9 @@
 
 # Contract | Stephen Jackson
 
-Known through: 2006-02-20. [Open interactive contract](jacksst02.html#contract) · [Contract history](jacksst02.html#contract-history)
+Known through: 2006-02-26. [Open interactive contract](jacksst02.html#contract) · [Contract history](jacksst02.html#contract-history)
 
-Stephen Jackson: under contract. Evidence cutoff: 2006-02-20.
+Stephen Jackson: under contract. Evidence cutoff: 2006-02-26.
 
 ## Current contract
 

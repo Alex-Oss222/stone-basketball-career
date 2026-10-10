@@ -2,9 +2,9 @@
 
 # Contract | Donta Smith
 
-Known through: 2006-02-20. [Open interactive contract](dontasmith.html#contract) · [Contract history](dontasmith.html#contract-history)
+Known through: 2006-02-26. [Open interactive contract](dontasmith.html#contract) · [Contract history](dontasmith.html#contract-history)
 
-Donta Smith: under contract. Evidence cutoff: 2006-02-20.
+Donta Smith: under contract. Evidence cutoff: 2006-02-26.
 
 ## Current contract
 

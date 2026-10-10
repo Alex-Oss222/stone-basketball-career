@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-02-20",
+  "as_of": "2006-02-26",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -923,7 +923,7 @@
     {
       "player_id": "smithch04",
       "name": "Charles Smith",
-      "team": "Chicago Bulls",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": "smithch04-2005-08-19",
       "recorded_agreements": 2,
@@ -1958,7 +1958,7 @@
     {
       "player_id": "johnser02",
       "name": "Ervin Johnson",
-      "team": "Cleveland Cavaliers",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "johnser02-existing-d23ec1018463",
       "recorded_agreements": 1,
@@ -3389,7 +3389,7 @@
     {
       "player_id": "hunteli01",
       "name": "Lindsey Hunter",
-      "team": "Memphis Grizzlies",
+      "team": "Cleveland Cavaliers",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4451,7 +4451,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "Houston Rockets",
+      "team": "Atlanta Hawks",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4775,7 +4775,7 @@
     {
       "player_id": "pricero01",
       "name": "Ronnie Price",
-      "team": "Los Angeles Lakers",
+      "team": "Memphis Grizzlies",
       "status": "under contract",
       "current_contract_id": "pricero01-2005-08-12",
       "recorded_agreements": 1,
@@ -5162,7 +5162,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Free agent",
+      "team": "Sacramento Kings",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,
@@ -5828,7 +5828,7 @@
     {
       "player_id": "rebraze01",
       "name": "Zeljko Rebraca",
-      "team": "Sacramento Kings",
+      "team": "Cleveland Cavaliers",
       "status": "under contract",
       "current_contract_id": "rebraze01-2005-08-19",
       "recorded_agreements": 2,

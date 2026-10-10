@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2006-02-20 · Miami Heat · needs evidence
+Career date: 2006-02-26 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -148,4 +148,6 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Closed game](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md)
 - [Closed game](../2005-06/06_Regular_Season/02_February/Week_2/Game_3.md)
 - [Closed game](../2005-06/06_Regular_Season/02_February/Week_3/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/02_February/Week_4/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/02_February/Week_4/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

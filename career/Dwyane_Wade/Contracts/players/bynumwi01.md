@@ -2,9 +2,9 @@
 
 # Contract | Will Bynum
 
-Known through: 2006-02-20. [Open interactive contract](bynumwi01.html#contract) · [Contract history](bynumwi01.html#contract-history)
+Known through: 2006-02-26. [Open interactive contract](bynumwi01.html#contract) · [Contract history](bynumwi01.html#contract-history)
 
-Will Bynum: under contract. Evidence cutoff: 2006-02-20.
+Will Bynum: under contract. Evidence cutoff: 2006-02-26.
 
 ## Current contract
 

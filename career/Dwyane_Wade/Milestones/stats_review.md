@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2006-02-20 · Miami Heat · active
+Career date: 2006-02-26 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-60 closed game records in 2005-06 through 2006-02-20. Competitions remain separate.
+62 closed game records in 2005-06 through 2006-02-26. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 53 | 37.0 | 26.6 | 6.1 | 4.0 | 1.7 | Complete |
+| regular | 55 | 37.1 | 26.7 | 6.1 | 4.0 | 1.7 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 490 | 872 | 0.562 | 76 | 167 | 0.455 |
+| regular | 508 | 906 | 0.561 | 79 | 171 | 0.462 |
 
 ## Closed source games
 
@@ -90,6 +90,8 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2006-02-12 | regular | Detroit Pistons | Played | [Closed game](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md) |
 | 2006-02-14 | regular | Orlando Magic | Played | [Closed game](../2005-06/06_Regular_Season/02_February/Week_2/Game_3.md) |
 | 2006-02-15 | regular | Orlando Magic | Played | [Closed game](../2005-06/06_Regular_Season/02_February/Week_3/Game_1.md) |
+| 2006-02-22 | regular | New York Knicks | Played | [Closed game](../2005-06/06_Regular_Season/02_February/Week_4/Game_1.md) |
+| 2006-02-25 | regular | Seattle SuperSonics | Played | [Closed game](../2005-06/06_Regular_Season/02_February/Week_4/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -195,4 +197,6 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md)
 - [Closed game](../2005-06/06_Regular_Season/02_February/Week_2/Game_3.md)
 - [Closed game](../2005-06/06_Regular_Season/02_February/Week_3/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/02_February/Week_4/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/02_February/Week_4/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

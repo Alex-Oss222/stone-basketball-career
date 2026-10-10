@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `davisba01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-02-20 · **Club on this date:** New Orleans/Oklahoma City Hornets · **Basis:** New Orleans/Oklahoma City Hornets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-02-26 · **Club on this date:** New Orleans/Oklahoma City Hornets · **Basis:** New Orleans/Oklahoma City Hornets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #5 · **Born:** 1979-04-13 · **Age on card date:** 26  
 **Registry ID:** `davisba01` · [Basketball-Reference page](https://www.basketball-reference.com/players/d/davisba01.html) · ESPN ID 194
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `davisb
 
 ## Simulated statistics
 
-As of **2006-02-20**: 52 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-02-26**: 56 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 30 | 30 | 39.9 | 7.4 | 18.7 | .396 | 1.8 | 5.4 | .327 | 5.6 | 13.3 | .425 | .444 | 3.9 | 5.8 | .667 | 0.9 | 4.0 | 4.8 | 8.1 | 1.7 | 0.2 | 3.1 | 3.3 | 20.4 | .481 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 33 | 33 | 39.4 | 7.4 | 18.5 | .400 | 1.7 | 5.2 | .322 | 5.7 | 13.3 | .431 | .445 | 3.7 | 5.8 | .639 | 0.8 | 3.8 | 4.6 | 7.9 | 1.7 | 0.2 | 3.1 | 3.2 | 20.2 | .479 | — |
 
 ### Month
 
@@ -44,7 +44,7 @@ As of **2006-02-20**: 52 closed games feed this card. Per-game columns use the r
 | [November 2005](../2005-06/11_November/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 9 | 9 | 38.8 | 7.8 | 18.8 | .414 | 1.6 | 4.8 | .326 | 6.2 | 14.0 | .444 | .456 | 3.3 | 5.2 | .638 | 0.9 | 3.9 | 4.8 | 8.2 | 2.0 | 0.0 | 3.6 | 3.0 | 20.4 | .485 | — |
 | [December 2005](../2005-06/12_December/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 9 | 9 | 39.6 | 6.8 | 16.1 | .421 | 2.0 | 4.7 | .429 | 4.8 | 11.4 | .417 | .483 | 3.9 | 5.7 | .686 | 0.4 | 3.7 | 4.1 | 7.3 | 1.2 | 0.3 | 3.3 | 3.0 | 19.4 | .523 | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 7 | 7 | 41.4 | 6.7 | 19.7 | .341 | 1.3 | 6.1 | .209 | 5.4 | 13.6 | .400 | .373 | 3.6 | 5.4 | .658 | 0.7 | 4.1 | 4.9 | 9.7 | 1.7 | 0.6 | 1.9 | 3.4 | 18.3 | .414 | — |
-| [February 2006](../2005-06/02_February/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 5 | 5 | 40.2 | 8.8 | 21.6 | .407 | 2.4 | 6.8 | .353 | 6.4 | 14.8 | .432 | .463 | 5.2 | 7.6 | .684 | 1.8 | 4.4 | 6.2 | 6.8 | 2.0 | 0.0 | 3.8 | 4.0 | 25.2 | .505 | — |
+| [February 2006](../2005-06/02_February/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 8 | 8 | 38.0 | 8.2 | 19.8 | .418 | 1.8 | 5.4 | .326 | 6.5 | 14.4 | .452 | .462 | 4.0 | 6.9 | .582 | 1.2 | 3.6 | 4.9 | 6.5 | 1.8 | 0.0 | 3.4 | 3.5 | 22.2 | .488 | — |
 | [March 2006](../2005-06/03_March/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [April 2006](../2005-06/04_April/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
@@ -71,8 +71,8 @@ As of **2006-02-20**: 52 closed games feed this card. Per-game columns use the r
 | [January 2006 week 4 (22 to 31)](../2005-06/01_January/Week_4/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 1 | 1 | 36.7 | 8.0 | 17.0 | .471 | 3.0 | 8.0 | .375 | 5.0 | 9.0 | .556 | .559 | 0.0 | 0.0 | N/A | 1.0 | 7.0 | 8.0 | 10.0 | 1.0 | 1.0 | 1.0 | 2.0 | 19.0 | .559 | — |
 | [February 2006 week 1 (01 to 07)](../2005-06/02_February/Week_1/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 3 | 3 | 38.2 | 6.3 | 20.3 | .311 | 1.3 | 6.0 | .222 | 5.0 | 14.3 | .349 | .344 | 4.7 | 7.0 | .667 | 2.3 | 5.7 | 8.0 | 5.0 | 2.0 | 0.0 | 3.7 | 5.0 | 18.7 | .399 | — |
 | [February 2006 week 2 (08 to 14)](../2005-06/02_February/Week_2/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 2 | 2 | 43.3 | 12.5 | 23.5 | .532 | 4.0 | 8.0 | .500 | 8.5 | 15.5 | .548 | .617 | 6.0 | 8.5 | .706 | 1.0 | 2.5 | 3.5 | 9.5 | 2.0 | 0.0 | 4.0 | 2.5 | 35.0 | .642 | — |
-| [February 2006 week 3 (15 to 21)](../2005-06/02_February/Week_3/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 3 (15 to 21)](../2005-06/02_February/Week_3/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 1 | 1 | 36.6 | 5.0 | 15.0 | .333 | 0.0 | 2.0 | .000 | 5.0 | 13.0 | .385 | .333 | 0.0 | 2.0 | .000 | 0.0 | 2.0 | 2.0 | 5.0 | 0.0 | 0.0 | 3.0 | 0.0 | 10.0 | .315 | — |
+| [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 2 | 2 | 33.2 | 8.5 | 17.5 | .486 | 1.0 | 3.5 | .286 | 7.5 | 14.0 | .536 | .514 | 3.0 | 7.5 | .400 | 0.5 | 2.5 | 3.0 | 6.5 | 2.0 | 0.0 | 2.5 | 4.0 | 21.0 | .505 | — |
 | [March 2006 week 1 (01 to 07)](../2005-06/03_March/Week_1/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [March 2006 week 2 (08 to 14)](../2005-06/03_March/Week_2/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 26 | New Orleans/Oklahoma City Hornets | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -85,33 +85,33 @@ As of **2006-02-20**: 52 closed games feed this card. Per-game columns use the r
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 560 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 610 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 52 of 52 closed games; 30 tracked appearances form the denominator below (2005-11-01 to 2006-02-15).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 56 of 56 closed games; 33 tracked appearances form the denominator below (2005-11-01 to 2006-02-26).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 108 | 217 | 49.8% | 7.20 | 7.23 |
-| Outside paint, under 12 ft | 9 | 21 | 42.9% | 0.60 | 0.70 |
-| Outside paint, 12 to under 18 ft | 20 | 59 | 33.9% | 1.33 | 1.97 |
-| 18 ft to the three-point line | 32 | 101 | 31.7% | 2.13 | 3.37 |
-| Three-point range | 53 | 162 | 32.7% | 5.30 | 5.40 |
-| All field goals | 222 | 560 | 39.6% | 16.57 | 18.67 |
+| Paint | 120 | 234 | 51.3% | 7.27 | 7.09 |
+| Outside paint, under 12 ft | 11 | 26 | 42.3% | 0.67 | 0.79 |
+| Outside paint, 12 to under 18 ft | 22 | 67 | 32.8% | 1.33 | 2.03 |
+| 18 ft to the three-point line | 36 | 112 | 32.1% | 2.18 | 3.39 |
+| Three-point range | 55 | 171 | 32.2% | 5.00 | 5.18 |
+| All field goals | 244 | 610 | 40.0% | 16.45 | 18.48 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 52 closed regular-season games through 2006-02-20. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 56 closed regular-season games through 2006-02-26. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | NOH | 50 | 47 | 37.8 | 17.1 | 3.7 | 6.4 | 1.8 | 0.4 | 2.8 | 41.6% | 35.0% | 71.0% |
 | 2003-04 | NO | 66 | 66 | 39.0 | 21.2 | 4.6 | 7.2 | 2.5 | 0.4 | 2.9 | 41.5% | 35.5% | 67.1% |
 | 2004-05 | NO | 47 | 47 | 38.8 | 22.9 | 4.8 | 7.2 | 2.1 | 0.5 | 3.6 | 39.1% | 34.9% | 72.7% |
-| 2005-06 | New Orleans/Oklahoma City Hornets | 30 | 30 | 39.9 | 20.4 | 4.8 | 8.1 | 1.7 | 0.2 | 3.1 | 39.6% | 32.7% | 66.7% |
+| 2005-06 | New Orleans/Oklahoma City Hornets | 33 | 33 | 39.4 | 20.2 | 4.6 | 7.9 | 1.7 | 0.2 | 3.1 | 40.0% | 32.2% | 63.9% |
 
 ## Playoff statistics by year
 
@@ -124,7 +124,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-02-20, from closed award decisions (2 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-02-26, from closed award decisions (2 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

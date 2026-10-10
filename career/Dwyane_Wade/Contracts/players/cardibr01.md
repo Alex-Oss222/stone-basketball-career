@@ -2,9 +2,9 @@
 
 # Contract | Brian Cardinal
 
-Known through: 2006-02-20. [Open interactive contract](cardibr01.html#contract) · [Contract history](cardibr01.html#contract-history)
+Known through: 2006-02-26. [Open interactive contract](cardibr01.html#contract) · [Contract history](cardibr01.html#contract-history)
 
-Brian Cardinal: under contract. Evidence cutoff: 2006-02-20.
+Brian Cardinal: under contract. Evidence cutoff: 2006-02-26.
 
 ## Current contract
 
