@@ -5490,6 +5490,28 @@
    },
    "note": "claimed off waivers from San Antonio Spurs (worst record first)",
    "waiver": "2005-06-market-2006-04-03-waive-johnsli01"
+  },
+  {
+   "id": "2005-06-market-2006-04-06-claim-hunteli01",
+   "date": "2006-04-06",
+   "kind": "claim",
+   "player": "Lindsey Hunter",
+   "bbr_id": "hunteli01",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Lindsey Hunter",
+    "bbr_id": "hunteli01",
+    "position": "PG",
+    "games": 30,
+    "minutes": 353
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Cleveland Cavaliers (worst record first)",
+   "waiver": "2005-06-market-2006-04-04-waive-hunteli01"
   }
  ],
  "market_days": [
@@ -5648,6 +5670,7 @@
   "2006-04-02",
   "2006-04-03",
   "2006-04-04",
-  "2006-04-05"
+  "2006-04-05",
+  "2006-04-06"
  ]
 }
