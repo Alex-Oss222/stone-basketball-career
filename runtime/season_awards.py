@@ -603,6 +603,7 @@ def page(record, clock, root=ROOT):
                       p["blk"], p["game_score"], p["points"], p["first_team_votes"]] for p in t["players"]]) + [""]
             if d.get("others"):
                 lines += ["Also receiving votes: " + ", ".join(f"{o['player']} ({o['team']}) {o['points']}" for o in d["others"]) + ".", ""]
+            lines += _correction_lines(d)
             continue
         label = "WINNER" if len(d["winners"]) == 1 else "CO-WINNER"
         if d["award"] == "coy":
@@ -614,8 +615,15 @@ def page(record, clock, root=ROOT):
                             [[label if v["player"] in d["winners"] else i + 1, v["player"], v["team"], v["games"], v["mpg"],
                               v["pts"], v["reb"], v["ast"], v["stl"], v["blk"], v["game_score"], v["points"], v["first_place"]]
                              for i, v in enumerate(d["tally"][:3])])
-        lines += ["", f"Complete tally: `season_awards.json` ({len(d['tally'])} receiving votes).", ""]
+        lines += ["", f"Complete tally: `season_awards.json` ({len(d['tally'])} receiving votes).", ""] + _correction_lines(d)
     return "\n".join(lines).rstrip() + "\n"
+
+
+def _correction_lines(d):
+    """A corrected decision's note (`award_corrections.note`): the correction date and the superseded names."""
+    from .award_corrections import note
+    text = note(d, fmt=str)
+    return [text, ""] if text else []
 
 
 def season_award_errors(root=ROOT):

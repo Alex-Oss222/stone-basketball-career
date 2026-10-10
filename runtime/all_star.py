@@ -357,7 +357,8 @@ def _draw(root, c, event_id, day, question, options):
 
 BBR_ROOKIES_FROM = "2005-06"     # from this season the Rookies pool also matches by bbr_id, so a first-season player whose
                                  # roster name carries diacritics the dated record name lacks is never missed (award audit,
-                                 # October 2026); the 2003-04 and 2004-05 records were decided by name and stand as recorded
+                                 # October 2026); the 2003-04 and 2004-05 records were decided by name, and their Rookies
+                                 # are corrected under this rule as dated corrections (`runtime/award_corrections.py`)
 
 
 def rookie_challenge(root, c, day, rows):
@@ -377,7 +378,8 @@ def rookie_challenge(root, c, day, rows):
     from .award_decisions import first_season_ids
     first_bbr = first_season_ids(root, c.season) if c.season >= BBR_ROOKIES_FROM else set()
     rookie = ((lambda n, e: e.get("bbr_id") in first_bbr or n in first) if c.season >= BBR_ROOKIES_FROM
-              else (lambda n, e: n in first))           # recorded seasons keep the name rule they were decided under
+              else (lambda n, e: n in first))           # the rule the 2003-04 and 2004-05 rosters were decided under;
+                                                        # their dated corrections lift the gate (`award_corrections`)
     for side, keep in (("Rookies", rookie), ("Sophomores", lambda n, e: e["bbr_id"] in second_bbr)):
         names = sorted(n for n, e in players.items() if keep(n, e) and e["eligible"])
         e = players
@@ -686,6 +688,8 @@ def page(record, clock, c):
         lines += [f"## Rookie Challenge rosters (broadcaster panel, announced {_long(s['announced_on'])})", ""]
         for side, ps in s["teams"].items():
             lines += [f"### {side}", ""] + _table(head, rows(ps)) + [""]
+        from .award_corrections import note                      # a corrected roster: its date and superseded names
+        lines += [note(s), ""] if s.get("correction") else []
     if "replacements" in steps:
         s = steps["replacements"]
         lines += [f"## Injury replacements (the Commissioner, {_long(s['announced_on'])})", ""]

@@ -117,7 +117,8 @@ class PoolTests(unittest.TestCase):
 
     def test_a_rookie_is_named_by_his_dated_record_name_and_his_roster_spelling(self):
         # The registry spelling (what the All-Star rookie pool compares) and the real-roster spelling (what the rows
-        # carry) both enter: the wider 2003-04 All-Star pool is reported, the recorded Rookie Challenge stands.
+        # carry) both enter: the wider 2003-04 All-Star pool is reported, and the recorded Rookie Challenge is corrected
+        # under it as a dated correction (runtime/award_corrections).
         pool = A.rookies(A.ROOT, "2003-04")
         self.assertLessEqual({"Mickael Pietrus", "Darko Milicic"}, pool)
         self.assertIn("pietrmi01", A.first_season_ids(A.ROOT, "2003-04"))

@@ -57,11 +57,14 @@ def games(root, name, season, as_of):
 
 
 def honors(root, name, season, as_of):
-    """[(announced, honor)] the league's records give the player for the season, announced by the career date."""
+    """[(announced, honor)] the league's records give the player for the season, announced by the career date, each
+    decision as it stood on that date (`award_corrections.as_of`: a later correction is not read before its date)."""
+    from .award_corrections import as_of as known_on
     out, base = [], Path(root) / LEAGUE / season
     for d in (_read(base / "season_awards.json") or {}).get("decisions", []):
         if d.get("announced_on", "9999") > as_of:
             continue
+        d = known_on(d, as_of)
         if name in (d.get("winners") or []):
             out.append((d["announced_on"], d["name"]))
         for team in d.get("teams") or []:
@@ -71,6 +74,7 @@ def honors(root, name, season, as_of):
         if a.get("player") == name and a.get("selected_on", "9999") <= as_of:
             out.append((a["selected_on"], f"All-Star ({a.get('conference')}, {a.get('role')})"))
     for d in (_read(base / "award_decisions.json") or {}).get("decisions", []):
+        d = known_on(d, as_of)
         if d.get("winner") == name and d.get("announced_on", "9999") <= as_of:
             out.append((d["announced_on"], f"{d.get('conference', '')} {d['name']} ({d['period_start']} to {d['period_end']})".strip()))
     return sorted(out)

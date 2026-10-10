@@ -133,19 +133,22 @@ class Valuation:
         return [p for p in read(REGISTRY_PATH, self.root)["players"] if (p.get("added_on") or "") <= self.on]
 
     def _honors(self):
-        """{bbr_id: [honor names]} from the most recent season's awards announced on or before the date."""
+        """{bbr_id: [honor names]} from the most recent season's awards announced on or before the date, each decision as
+        it stood on the date (`award_corrections.as_of`: a decision corrected later reads as recorded, so a replay of an
+        earlier market prices what it priced)."""
         from .seasons import previous_season
         rel = SEASON_AWARDS_PATH if self.first else Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{previous_season(self.season)}/season_awards.json")
         path = self.root / rel
         if not path.is_file():
             return {}
+        from .award_corrections import as_of
         from .season_awards import honors
         by_name = {p["name"]: p["bbr_id"] for p in self.registry() if p.get("bbr_id")}
         out = {}
         for d in read(rel, self.root)["decisions"]:
             if d["announced_on"] > self.on:
                 continue
-            for player, name, _ in honors(d):
+            for player, name, _ in honors(as_of(d, self.on)):
                 if by_name.get(player):
                     out.setdefault(by_name[player], []).append(name)
         stars = path.with_name("all_star.json")                         # All-Star selections (runtime/all_star.py)
