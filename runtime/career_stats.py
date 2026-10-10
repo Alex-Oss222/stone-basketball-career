@@ -19,6 +19,10 @@ PHASES = {
     "06_Regular_Season": "regular", "07_Play_In_Tournament": "play_in",
     "08_Playoffs": "playoff", "10_NBA_Cup": "nba_cup_championship",
 }
+# All-Star weekend exhibitions (`runtime/all_star_games.py`): `<season>/11_All_Star/<game>/Game_1.md`, each game its own
+# competition, never added to NBA totals.
+ALL_STAR_FOLDER = "11_All_Star"
+ALL_STAR_PATHS = {"Rookie_Challenge": "rookie_challenge", "All_Star_Game": "all_star"}
 NATIONAL_TYPES = {"world_cup_qualifier", "world_cup_finals", "olympic_qualifier",
                   "olympic_finals", "continental_qualifier", "continental_finals", "national_friendly"}
 NATIONAL_PATHS = {
@@ -146,6 +150,8 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
             season = relative.parts[0]
             season_start(season)
             kind = PHASES.get(relative.parts[1])
+            if relative.parts[1] == ALL_STAR_FOLDER:
+                kind = ALL_STAR_PATHS.get(relative.parts[2]) if len(relative.parts) == 4 else None
             if kind is None:
                 raise ValueError(f"{note}: game is outside a statistical phase")
             if meta.get("competition") and meta["competition"] != kind:

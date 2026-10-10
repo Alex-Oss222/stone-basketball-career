@@ -69,6 +69,10 @@ def computed_inputs(data, root=ROOT):
     if is_national(data.get("game_type")):
         from .national import team_inputs                  # national teams: their dated selections (FIBA rules)
         return team_inputs(data, root)
+    from .all_star_engine import is_exhibition
+    if is_exhibition(data.get("game_type")):
+        from .all_star_games import team_inputs            # All-Star weekend: the locked rosters (runtime/all_star_games.py)
+        return team_inputs(data, root)
     season = season_for_date(data["game_date"])
     actives = rules_for(season)["game_day_actives"]
     index = load_rating_index(data["game_date"], season, root)
@@ -193,8 +197,12 @@ def input_fingerprint(path, root=ROOT):
     from .spatial_shots import load_spatial_environment
     home, away, kwargs = load_request(path, root)
     from .national_engine import is_national, national_environment, national_spatial
+    from .all_star_engine import exhibition_environment, exhibition_spatial, is_exhibition
     if is_national(kwargs["game_type"]):
         environment, spatial = national_environment(kwargs["game_date"], root), national_spatial(kwargs["game_date"], root)
+    elif is_exhibition(kwargs["game_type"]):
+        environment = exhibition_environment(kwargs["game_type"], kwargs["game_date"], root)
+        spatial = exhibition_spatial(kwargs["game_date"], root)
     else:
         season = season_for_date(kwargs["game_date"])
         environment = environment_for(season, kwargs["game_date"], root)

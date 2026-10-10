@@ -565,6 +565,12 @@ class CardContext:
                 for key, rows in all_star_honors(self.registry["players"], json.loads(selections.read_text(encoding="utf-8")),
                                                  self.on, dates(season, root)["opening_night"]).items():
                     self.honors.setdefault(key, []).extend(rows)
+            # All-Star weekend MVPs (runtime/all_star_games.py), from the career date each was recorded.
+            weekend = self.root / LEAGUE_DIR / season / "all_star_games.json"
+            if weekend.is_file():
+                for key, rows in weekend_mvp_honors(self.registry["players"], json.loads(weekend.read_text(encoding="utf-8")),
+                                                    self.on).items():
+                    self.honors.setdefault(key, []).extend(rows)
             # Closed season awards (runtime/season_awards.py): winners, team selections and the next vote-getters, over
             # the decision's own period (the Finals MVP's starts with the Finals), else from opening night.
             record = self.root / LEAGUE_DIR / season / "season_awards.json"
@@ -665,6 +671,30 @@ def all_star_honors(players, record, on, opening):
             conference=a["conference"], name=f"All-Star ({a['role']})", period_start=opening, period_end=a["selected_on"],
             announced_on=a["selected_on"], award="all_star", filed_on=page, anchor="all-stars", rank=1, annual=True,
             selected=True, **({"replacing": a["replacing"]} if a.get("replacing") else {})))
+    return out
+
+
+def weekend_mvp_honors(players, record, on):
+    """{name key: [honor rows]} for one season's All-Star weekend MVPs (`League/<season>/all_star_games.json`,
+    `runtime/all_star_games.py`): each winner known on the card date `on` (from the later of the game date and its
+    `recorded_on`), matched to the registry by NBA id, linked to the games page's MVP table. An exhibition honor
+    (`event`): never a season honor or a weekly or monthly one."""
+    names = {p["bbr_id"]: p["name"] for p in players if p.get("bbr_id")}
+    page = (LEAGUE_DIR / record["season"] / "All_Star_Games.md").as_posix()
+    out = {}
+    for game in record.get("games", {}).values():
+        mvp = game.get("mvp")
+        if not mvp or max(game["date"], mvp.get("recorded_on") or "") > on:
+            continue
+        ids = {p["player"]: p["bbr_id"] for t in game["teams"].values() for p in t["players"]}
+        for winner in mvp["winners"]:
+            name = names.get(ids.get(winner))
+            if name is None:
+                continue
+            out.setdefault(_key(name), []).append(dict(
+                conference="", name=mvp["name"], period_start=game["date"], period_end=game["date"],
+                announced_on=game["date"], award=mvp["award"], filed_on=page,
+                anchor=f"{game['name'].lower().replace(' ', '-')}-mvp", rank=1, event=True))
     return out
 
 
@@ -953,13 +983,15 @@ def award_notice(ctx, p):
     honors = ctx.honors.get(_key(p["name"]), [])
     annual = [f"{h['conference']} {h['name']}".strip() for h in honors if h.get("annual") and h["rank"] == 1]
     periodic = [f"{h['conference']} {h['name']} ({h['period_start']} to {h['period_end']})"
-                for h in honors if h["rank"] == 1 and not h.get("annual") and not h.get("medal")]
+                for h in honors if h["rank"] == 1 and not h.get("annual") and not h.get("medal") and not h.get("event")]
     medals = [f"{h['name']} ({h['medal']['country']})" for h in honors if h.get("medal")]
+    events = [f"{h['name']} ({h['period_end']})" for h in honors if h.get("event")]
     first = ("Season honors: " + "; ".join(annual) + ". ") if annual else \
         f"No annual award has been recorded for this player through {ctx.on}. "
     return first + ("Weekly and monthly honors won: " + "; ".join(periodic) + "." if periodic
                     else "Weekly and monthly honors stay in the league award records.") + \
-        (" FIBA team medals: " + "; ".join(medals) + "." if medals else "")
+        (" FIBA team medals: " + "; ".join(medals) + "." if medals else "") + \
+        (" All-Star weekend: " + "; ".join(events) + "." if events else "")
 
 
 def html_payload(ctx, data):

@@ -265,6 +265,47 @@
     "https://en.wikipedia.org/wiki/2006_NBA_All-Star_Game"
    ],
    "note": "Participant selection (league invitation) and announcement dates not researched; event order unverified."
+  },
+  "engine_rules": {
+   "value": "the rules the engine plays the weekend's games under (runtime/era.py EXHIBITION_RULE_PERIODS)",
+   "status": "derived",
+   "sources": [],
+   "all_star_game": {
+    "value": {
+     "quarters": 4,
+     "quarter_minutes": 12,
+     "overtime_minutes": 5,
+     "foul_out_limit": 6,
+     "game_day_actives": 12
+    },
+    "status": "derived",
+    "sources": [
+     "https://www.basketball-reference.com/allstar/NBA_2001.html",
+     "https://www.basketball-reference.com/allstar/NBA_2002.html",
+     "https://www.basketball-reference.com/allstar/NBA_2003.html",
+     "https://www.basketball-reference.com/allstar/NBA_2004.html",
+     "https://www.basketball-reference.com/allstar/NBA_2005.html"
+    ],
+    "note": "Standard NBA rules (runtime/era.py EXHIBITION_RULE_PERIODS). Every All-Star Game box from 1997 totals 240 team minutes, the 2003 game's two overtimes 290 (five-minute overtimes); no source before the 2006 game states a deviation. Twelve a side as selected."
+   },
+   "rookie_challenge": {
+    "value": {
+     "quarters": 2,
+     "quarter_minutes": 20,
+     "overtime_minutes": 2,
+     "foul_out_limit": null,
+     "game_day_actives": 9
+    },
+    "status": {
+     "halves_and_overtime": "sourced",
+     "no_foul_outs": "unverified",
+     "roster": "unverified"
+    },
+    "sources": [
+     "http://www.insidehoops.com/rookie-challenge.shtml"
+    ],
+    "note": "Halves, overtime and the clock rule from the 2006 release (research.rookie_challenge game_rules); no foul-outs is sourced for 2004 only (the 2005 box fits it: Al Jefferson, 6 fouls in 21 minutes); nine a side as research.rookie_challenge (unverified for this season). Not modelled: the team-foul penalty, the 20-second timeouts and the clock stopping after made baskets."
+   }
   }
  }
 }

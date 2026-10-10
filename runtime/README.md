@@ -50,6 +50,10 @@ Rotations: a club is an explicit `players` list (Miami's AI/GM states its rotati
 
 `runtime/league.py` builds the older baseline rotation for background clubs from the end-of-2002-03 depth order. It is a default, not a coaching decision; Miami's rotation belongs to the AI/GM records.
 
+## All-Star weekend (roadmap 15b)
+
+The Rookie Challenge and the All-Star Game are exhibition requests (`game_type` `rookie_challenge` or `all_star`, `venue` neutral, each side `{"team", "all_star": <season>}` with frozen inputs) built from the season's recorded selections by `python scripts/all_star_day.py --write DATE` (`runtime/all_star_games.py`) and played like any request; `--after DATE` writes Wade's notes, decides the MVPs and rebuilds `Stats_and_Awards/League/<season>/All_Star_Games.md`. Rules: `era.exhibition_rules` (fails closed outside its dated rows). Engine inputs: `runtime/all_star_engine.py` and the files `scripts/build_all_star_engine.py` builds into `library/all_star/engine/`. The design, the calibration and the retroactive 2004-2006 weekends: [docs/all_star_games.md](../docs/all_star_games.md).
+
 ## Game builders (roadmap items 10 and 11)
 
 Nothing is written by hand. Both builders read the season schedule (`library/2003/league/nba_2003_04_schedule.json`), write a game only on or before its date in a run, never write a blank placeholder, never rewrite a request that exists, and are idempotent; `--check <date>` reports what is due and unwritten and checks what is written, without writing. Logic: `runtime/season_games.py`.

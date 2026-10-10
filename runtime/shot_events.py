@@ -60,8 +60,13 @@ additionally requires that envelope in ``engine_result_shots``.
     event_id = result.get("event_id")
     if not isinstance(event_id, str) or not event_id.strip():
         errors.append("shot result requires an event ID")
+    # Four periods of at most 12 minutes and 5-minute overtimes, unless an All-Star weekend game's own rules say
+    # otherwise (`era.exhibition_layout`: the Rookie Challenge's two 20-minute halves and 2-minute overtimes).
+    from .era import exhibition_layout
+    regulation, period_seconds, overtime_seconds = (exhibition_layout(result.get("game_type"), result.get("season"))
+                                                    or (4, 720, 300))
     periods = result.get("periods")
-    if type(periods) is not int or periods < 4:
+    if type(periods) is not int or periods < regulation:
         errors.append("shot result requires a completed regulation game")
         periods = 0
     scores = result.get("period_scores", {})
@@ -112,7 +117,8 @@ additionally requires that envelope in ``engine_result_shots``.
         elif not _number(rows[side, pid].get("seconds")) or rows[side, pid]["seconds"] <= 0:
             errors.append(f"{prefix}: a shot requires positive recorded player court time")
         p, clock = shot["period"], shot["clock_seconds"]
-        if type(p) is not int or not 1 <= p <= periods or not _number(clock) or not 0 <= clock <= (720 if p <= 4 else 300):
+        if (type(p) is not int or not 1 <= p <= periods or not _number(clock)
+                or not 0 <= clock <= (period_seconds if p <= regulation else overtime_seconds)):
             errors.append(f"{prefix}: invalid period or game clock")
         else:
             order = (p, -clock)

@@ -1,6 +1,6 @@
 # NBA awards | 2003-04
 
-[Stats hub](../../README.md) · [Wade](../../2003-04/README.md) · [Miami](../../Team/2003-04/Team_Stats.md) · [NBA players](League_Stats.md) · [Season awards](Season_Awards.md) · [All-Star](All_Star.md) · [Playoffs](Playoffs.md)
+[Stats hub](../../README.md) · [Wade](../../2003-04/README.md) · [Miami](../../Team/2003-04/Team_Stats.md) · [NBA players](League_Stats.md) · [Season awards](Season_Awards.md) · [All-Star](All_Star.md) · [All-Star games](All_Star_Games.md) · [Playoffs](Playoffs.md)
 
 2003-04 · Calendar coverage: 2003-04
 
@@ -154,6 +154,15 @@ These are separate decisions, not consequences of the regular-season award vote.
 | West | Reserve | Vlade Divac | Sacramento Kings | February 3, 2004 |
 | West | Reserve | Dirk Nowitzki | Dallas Mavericks | February 3, 2004 |
 | West | Reserve | Steve Nash | Dallas Mavericks | February 3, 2004 |
+
+### All-Star weekend games
+
+Exhibitions played by the engine; their MVPs are exhibition honors. [All-Star weekend games](All_Star_Games.md)
+
+| Game | Date | Result | MVP |
+| --- | --- | --- | --- |
+| Rookie Challenge | February 13, 2004 | Not played yet | Not decided yet |
+| All-Star Game | February 15, 2004 | Not played yet | Not decided yet |
 
 ### NBA champion
 

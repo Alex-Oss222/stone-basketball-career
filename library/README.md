@@ -33,3 +33,9 @@ Hindsight caution: a schedule as played reflects in-season events. The 2012-13 f
 
 Both come from Basketball-Reference totals and advanced tables via `scripts/import_careers.py`, which removes the historical Dwyane Wade and the Awards column. Neither file is read by Miami's front office or shown on cards before its season is played.
 
+
+## All-Star weekend (roadmap 15b)
+
+- `all_star/games/<year>-<game_type>.json`: the real All-Star Games (1998, 2000-2005) and Rookies-versus-Sophomores games (2000-2005; 2000 excluded as incomplete) from their Basketball-Reference box pages: date, final, overtimes, MVP, team totals as published and every player's line. The real Dwyane Wade's lines are kept and flagged `protagonist_real_history`; no fit reads them.
+- `all_star/anchor_seasons.json`: the regular-season totals and rates of those games' players for the season of each game (the pinned sumitrodatta copy of the Basketball-Reference bulk tables), without the real Wade.
+- `all_star/engine/<season>-<game_type>.json`: built by `scripts/build_all_star_engine.py` (environment, translation, minutes template; `--check` reports a stale file). Each reads only editions published before its game. A locked game's file is fixed: its lock records the file's sha256 and the builder never rewrites it. See `docs/all_star_games.md`.

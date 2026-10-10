@@ -6,7 +6,7 @@ from datetime import date
 import json
 from pathlib import Path
 
-from .career_stats import NATIONAL_TYPES, PHASES
+from .career_stats import ALL_STAR_PATHS, NATIONAL_TYPES, PHASES
 from .season_rules import statistics_bucket
 
 
@@ -24,7 +24,7 @@ def load_awards(player: Path, as_of: str) -> list[dict]:
                 raise ValueError(f"award requires {key}")
         if award.get("status") != "earned":
             raise ValueError("only earned honors belong in the player award register; nominations stay in voting records")
-        if award["competition"] not in set(PHASES.values()) | NATIONAL_TYPES | {"career"}:
+        if award["competition"] not in set(PHASES.values()) | set(ALL_STAR_PATHS.values()) | NATIONAL_TYPES | {"career"}:
             raise ValueError("award has an unsupported competition")
         start, end, announced = (date.fromisoformat(award[k]) for k in ("period_start", "period_end", "awarded_on"))
         if start > end or end > announced or announced > date.fromisoformat(as_of):

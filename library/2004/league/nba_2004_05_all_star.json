@@ -258,6 +258,46 @@
     "https://en.wikipedia.org/wiki/2004%E2%80%9305_NBA_season"
    ],
    "note": "Participant selection (league invitation) and announcement dates not researched; event order unverified."
+  },
+  "engine_rules": {
+   "value": "the rules the engine plays the weekend's games under (runtime/era.py EXHIBITION_RULE_PERIODS)",
+   "status": "derived",
+   "sources": [],
+   "all_star_game": {
+    "value": {
+     "quarters": 4,
+     "quarter_minutes": 12,
+     "overtime_minutes": 5,
+     "foul_out_limit": 6,
+     "game_day_actives": 12
+    },
+    "status": "derived",
+    "sources": [
+     "https://www.basketball-reference.com/allstar/NBA_2000.html",
+     "https://www.basketball-reference.com/allstar/NBA_2001.html",
+     "https://www.basketball-reference.com/allstar/NBA_2002.html",
+     "https://www.basketball-reference.com/allstar/NBA_2003.html",
+     "https://www.basketball-reference.com/allstar/NBA_2004.html"
+    ],
+    "note": "Standard NBA rules (runtime/era.py EXHIBITION_RULE_PERIODS). Every All-Star Game box from 1997 totals 240 team minutes, the 2003 game's two overtimes 290 (five-minute overtimes); no source before the 2005 game states a deviation. Twelve a side as selected."
+   },
+   "rookie_challenge": {
+    "value": {
+     "quarters": 2,
+     "quarter_minutes": 20,
+     "overtime_minutes": 2,
+     "foul_out_limit": null,
+     "game_day_actives": 9
+    },
+    "status": "unverified",
+    "sources": [
+     "https://www.basketball-reference.com/allstar/NBA_2001_rookie.html",
+     "https://www.basketball-reference.com/allstar/NBA_2002_rookie.html",
+     "https://www.basketball-reference.com/allstar/NBA_2003_rookie.html",
+     "https://www.basketball-reference.com/allstar/NBA_2004_rookie.html"
+    ],
+    "note": "The 2005 release's game rules were not loaded. The format is the 2004 release's (two 20-minute halves, a 2-minute overtime, no foul-outs) and the 2006 release's (halves and overtime); every Rookies-versus-Sophomores box from 2001 totals 200 team minutes. No foul-outs is sourced for 2004 only."
+   }
   }
  }
 }

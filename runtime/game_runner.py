@@ -22,6 +22,10 @@ def build_game_packet(home, away, *, event_id, game_date, game_type="regular", v
     if is_national(game_type):
         return _national_packet(home, away, event_id=event_id, game_date=game_date, game_type=game_type, venue=venue,
                                 root=root, kernel_version=kernel_version, validation_only=validation_only)
+    from .all_star_engine import is_exhibition
+    if is_exhibition(game_type):
+        return _exhibition_packet(home, away, event_id=event_id, game_date=game_date, game_type=game_type, venue=venue,
+                                  root=root, kernel_version=kernel_version, validation_only=validation_only)
     season = season_for_date(game_date)
     rules = rules_for(season)
     if game_type not in allowed_game_types(season):
@@ -120,6 +124,54 @@ def _national_packet(home, away, *, event_id, game_date, game_type, venue, root,
     return packet, rules, environment
 
 
+def _exhibition_packet(home, away, *, event_id, game_date, game_type, venue, root, kernel_version, validation_only):
+    """An All-Star weekend game (`runtime/all_star_engine.py`): its rules and environment for the date, a neutral court,
+    and every statistical profile checked against the player's dated exhibition profile (his NBA profile on the date,
+    translated, with the season's journaled swing)."""
+    from .all_star_engine import exhibition_environment, exhibition_spatial, expected_profile
+    from .era import exhibition_rules
+    from .trajectories import develop_profile, development_seasons
+    rules = exhibition_rules(game_type, game_date)
+    season = rules["season"]
+    if venue != "neutral":
+        raise ValueError("an All-Star weekend game is played on a neutral court")
+    if home.team_id == away.team_id:
+        raise ValueError("teams must differ")
+    for team in (home, away):
+        errors = team_errors(team, rules)
+        if errors:
+            raise ValueError(f"{team.team_id}: " + "; ".join(errors))
+    environment = exhibition_environment(game_type, game_date, root)
+    ids = [p.stat_profile.get("bbr_id") for t in (home, away) for p in t.players]
+    if len(ids) != len(set(ids)):
+        raise ValueError("duplicate player identities in game inputs")
+    for team in (home, away):
+        for p in team.players:
+            if not p.stat_profile:
+                raise ValueError(f"{p.player_id}: an All-Star weekend game needs every player's profile")
+            profile = dict(p.stat_profile)
+            expected = expected_profile(profile, game_type, game_date, root)
+            if "development" in profile:
+                refs = profile["development"]
+                if sorted(refs) != development_seasons(profile["bbr_id"], season):
+                    raise ValueError("profile lacks its journaled development draws")
+                expected = develop_profile(expected, refs)
+            if profile != expected:
+                raise ValueError(f"{p.player_id}: exhibition profile differs from the dated, generated source")
+    if validation_only:
+        return None, rules, environment
+    procedure = kernel_version or KERNEL_VERSION
+    packet = {
+        "procedure": procedure, "event_id": event_id, "competition": rules["competition"],
+        "season": season, "game_date": game_date, "game_type": game_type, "venue": venue,
+        "baseline_season": environment["season"],
+        "environment": environment,
+        "home": team_packet(home), "away": team_packet(away),
+        "spatial_environment": exhibition_spatial(game_date, root),
+    }
+    return packet, rules, environment
+
+
 def spatial_kernel(version):
     """Only new kernels journal spatial inputs; legacy packets retain their shape."""
     try:
@@ -173,16 +225,19 @@ def freeze_inputs(home, away, journal, **kwargs):
     Shared by run_game and the service's replay check, so a redeploy recomputes
     the same packet digest for a game that is already played.
     """
+    from .all_star_engine import is_exhibition
     from .era import ability_season
     from .national_engine import is_national
     national = is_national(kwargs.get("game_type", "regular"))
+    exhibition = is_exhibition(kwargs.get("game_type", "regular"))
     # A national game reads the ability season (the one just closed for a summer tournament).
     season = ability_season(kwargs["game_date"]) if national else season_for_date(kwargs["game_date"])
-    # Real-career players (option C) and Wade get this season's journaled swing before inputs freeze.
+    # Real-career players (option C) and Wade get this season's journaled swing before inputs freeze (an All-Star
+    # weekend game reuses the season's existing event: `development_refs` journals idempotently).
     home, away = (_developed(team, season, journal) for team in (home, away))
     # Real clubs' absences as journaled spells from November 12, 2003 (`absence_spells`); earlier games unchanged.
     from .absence_spells import apply_spells
-    if not national:                                     # national teams have no club absence spells
+    if not national and not exhibition:                  # national and All-Star teams have no club absence spells
         home, away = (apply_spells(team, season, kwargs["game_date"], journal, kwargs.get("root", ROOT)) for team in (home, away))
     packet, rules, environment = build_game_packet(home, away, **kwargs)
     return home, away, packet, rules, environment

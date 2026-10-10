@@ -1,6 +1,6 @@
 # NBA awards | 2004-05
 
-[Stats hub](../../README.md) · [Wade](../../2004-05/README.md) · [Miami](../../Team/2004-05/Team_Stats.md) · [NBA players](League_Stats.md) · [Season awards](Season_Awards.md) · [All-Star](All_Star.md) · [Playoffs](Playoffs.md)
+[Stats hub](../../README.md) · [Wade](../../2004-05/README.md) · [Miami](../../Team/2004-05/Team_Stats.md) · [NBA players](League_Stats.md) · [Season awards](Season_Awards.md) · [All-Star](All_Star.md) · [All-Star games](All_Star_Games.md) · [Playoffs](Playoffs.md)
 
 2004-05 · Calendar coverage: 2004-05
 
@@ -155,6 +155,15 @@ These are separate decisions, not consequences of the regular-season award vote.
 | West | Reserve | Dirk Nowitzki | Dallas Mavericks | February 8, 2005 |
 | West | Reserve | Peja Stojakovic | Sacramento Kings | February 8, 2005 |
 | East | Injury replacement for Jason Kidd | Jamal Crawford | Chicago Bulls | February 18, 2005 |
+
+### All-Star weekend games
+
+Exhibitions played by the engine; their MVPs are exhibition honors. [All-Star weekend games](All_Star_Games.md)
+
+| Game | Date | Result | MVP |
+| --- | --- | --- | --- |
+| Rookie Challenge | February 18, 2005 | Not played yet | Not decided yet |
+| All-Star Game | February 20, 2005 | Not played yet | Not decided yet |
 
 ### NBA champion
 

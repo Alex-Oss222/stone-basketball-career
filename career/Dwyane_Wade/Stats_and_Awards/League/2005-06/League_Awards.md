@@ -1,6 +1,6 @@
 # NBA awards | 2005-06
 
-[Stats hub](../../README.md) · [Wade](../../2005-06/README.md) · [Miami](../../Team/2005-06/Team_Stats.md) · [NBA players](League_Stats.md) · [All-Star](All_Star.md)
+[Stats hub](../../README.md) · [Wade](../../2005-06/README.md) · [Miami](../../Team/2005-06/Team_Stats.md) · [NBA players](League_Stats.md) · [All-Star](All_Star.md) · [All-Star games](All_Star_Games.md)
 
 2005-06 · Calendar coverage: 2005-06
 
@@ -155,6 +155,15 @@ These are separate decisions, not consequences of the regular-season award vote.
 | West | Reserve | Chris Paul | Utah Jazz | February 9, 2006 |
 | West | Reserve | Tony Parker | San Antonio Spurs | February 9, 2006 |
 | West | Injury replacement for Shaquille O'Neal | Yao Ming | Houston Rockets | February 17, 2006 |
+
+### All-Star weekend games
+
+Exhibitions played by the engine; their MVPs are exhibition honors. [All-Star weekend games](All_Star_Games.md)
+
+| Game | Date | Result | MVP |
+| --- | --- | --- | --- |
+| Rookie Challenge | February 17, 2006 | Not played yet | Not decided yet |
+| All-Star Game | February 19, 2006 | Not played yet | Not decided yet |
 
 ### NBA champion
 

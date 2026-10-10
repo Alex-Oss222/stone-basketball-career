@@ -1,0 +1,567 @@
+{
+ "schema_version": 1,
+ "season": "2005-06",
+ "kind": "all_star_games",
+ "rule": "runtime/all_star_games.py; runtime/all_star_engine.py",
+ "games": {
+  "rookie_challenge": {
+   "game_type": "rookie_challenge",
+   "name": "Rookie Challenge",
+   "date": "2006-02-17",
+   "event_id": "2006-02-17-rookie-challenge",
+   "home": "Rookies",
+   "away": "Sophomores",
+   "venue": "neutral",
+   "engine": "library/all_star/engine/2005-06-rookie_challenge.json",
+   "locked_on": "2006-04-19",
+   "evidence_through": "2006-02-16",
+   "teams": {
+    "Rookies": {
+     "players": [
+      {
+       "player": "Chris Paul",
+       "bbr_id": "paulch01",
+       "club": "Utah Jazz",
+       "position": "PG",
+       "starter": true,
+       "minutes": 29,
+       "games": 50,
+       "game_score": 18.52,
+       "pts": 21.3,
+       "selection": 1
+      },
+      {
+       "player": "Charlie Villanueva",
+       "bbr_id": "villach01",
+       "club": "Memphis Grizzlies",
+       "position": "PF",
+       "starter": true,
+       "minutes": 27,
+       "games": 51,
+       "game_score": 9.94,
+       "pts": 13.0,
+       "selection": 2
+      },
+      {
+       "player": "Raymond Felton",
+       "bbr_id": "feltora01",
+       "club": "Dallas Mavericks",
+       "position": "PG",
+       "starter": true,
+       "minutes": 25,
+       "games": 51,
+       "game_score": 9.1,
+       "pts": 10.3,
+       "selection": 3
+      },
+      {
+       "player": "Channing Frye",
+       "bbr_id": "fryech01",
+       "club": "New Jersey Nets",
+       "position": "C",
+       "starter": true,
+       "minutes": 24,
+       "games": 36,
+       "game_score": 8.42,
+       "pts": 12.3,
+       "selection": 5
+      },
+      {
+       "player": "Deron Williams",
+       "bbr_id": "willide01",
+       "club": "New York Knicks",
+       "position": "PG",
+       "starter": true,
+       "minutes": 23,
+       "games": 52,
+       "game_score": 8.29,
+       "pts": 12.6,
+       "selection": 6
+      },
+      {
+       "player": "Andrew Bogut",
+       "bbr_id": "bogutan01",
+       "club": "Los Angeles Clippers",
+       "position": "PF",
+       "starter": false,
+       "minutes": 21,
+       "games": 51,
+       "game_score": 7.51,
+       "pts": 9.8,
+       "selection": 4
+      },
+      {
+       "player": "Jarrett Jack",
+       "bbr_id": "jackja01",
+       "club": "Denver Nuggets",
+       "position": "SG",
+       "starter": false,
+       "minutes": 19,
+       "games": 53,
+       "game_score": 6.64,
+       "pts": 8.1,
+       "selection": 8
+      },
+      {
+       "player": "Rashad McCants",
+       "bbr_id": "mccanra01",
+       "club": "Washington Wizards",
+       "position": "SG",
+       "starter": false,
+       "minutes": 17,
+       "games": 51,
+       "game_score": 6.48,
+       "pts": 10.0,
+       "selection": 7
+      },
+      {
+       "player": "Marvin Williams",
+       "bbr_id": "willima02",
+       "club": "Orlando Magic",
+       "position": "PF",
+       "starter": false,
+       "minutes": 15,
+       "games": 51,
+       "game_score": 5.76,
+       "pts": 8.4,
+       "selection": 9
+      }
+     ]
+    },
+    "Sophomores": {
+     "players": [
+      {
+       "player": "Josh Childress",
+       "bbr_id": "childjo01",
+       "club": "Phoenix Suns",
+       "position": "SF",
+       "starter": true,
+       "minutes": 29,
+       "games": 48,
+       "game_score": 12.21,
+       "pts": 13.6,
+       "selection": 4
+      },
+      {
+       "player": "Andre Iguodala",
+       "bbr_id": "iguodan01",
+       "club": "New York Knicks",
+       "position": "SF",
+       "starter": true,
+       "minutes": 27,
+       "games": 52,
+       "game_score": 12.1,
+       "pts": 13.7,
+       "selection": 6
+      },
+      {
+       "player": "Luol Deng",
+       "bbr_id": "denglu01",
+       "club": "Boston Celtics",
+       "position": "SF",
+       "starter": true,
+       "minutes": 25,
+       "games": 49,
+       "game_score": 11.73,
+       "pts": 15.7,
+       "selection": 1
+      },
+      {
+       "player": "Nenad Krstić",
+       "bbr_id": "krstine01",
+       "club": "New York Knicks",
+       "position": "PF",
+       "starter": true,
+       "minutes": 24,
+       "games": 51,
+       "game_score": 11.46,
+       "pts": 15.5,
+       "selection": 7
+      },
+      {
+       "player": "Dwight Howard",
+       "bbr_id": "howardw01",
+       "club": "Orlando Magic",
+       "position": "PF",
+       "starter": true,
+       "minutes": 23,
+       "games": 51,
+       "game_score": 11.43,
+       "pts": 14.9,
+       "selection": 3
+      },
+      {
+       "player": "Ben Gordon",
+       "bbr_id": "gordobe01",
+       "club": "Utah Jazz",
+       "position": "SG",
+       "starter": false,
+       "minutes": 21,
+       "games": 52,
+       "game_score": 11.16,
+       "pts": 16.4,
+       "selection": 2
+      },
+      {
+       "player": "Josh Smith",
+       "bbr_id": "smithjo03",
+       "club": "Utah Jazz",
+       "position": "SF",
+       "starter": false,
+       "minutes": 19,
+       "games": 50,
+       "game_score": 9.13,
+       "pts": 10.2,
+       "selection": 9
+      },
+      {
+       "player": "Andrés Nocioni",
+       "bbr_id": "nocioan01",
+       "club": "San Antonio Spurs",
+       "position": "PF",
+       "starter": false,
+       "minutes": 17,
+       "games": 52,
+       "game_score": 7.63,
+       "pts": 11.2,
+       "selection": 8
+      },
+      {
+       "player": "David Harrison",
+       "bbr_id": "harrida01",
+       "club": "Denver Nuggets",
+       "position": "C",
+       "starter": false,
+       "minutes": 15,
+       "games": 46,
+       "game_score": 7.31,
+       "pts": 8.8,
+       "selection": 5
+      }
+     ]
+    }
+   },
+   "availability": [],
+   "recorded_on": "2006-04-19",
+   "request": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/All_Star/Games/2006-02-17-rookie-challenge.request.json",
+   "result": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/All_Star/Games/2006-02-17-rookie-challenge.result.json",
+   "note": null,
+   "engine_sha256": "cb62a2d02e260a65a08c2c2f9fe4513c8fff678212a7a0e1e8e8b54f8c00e8a9"
+  },
+  "all_star": {
+   "game_type": "all_star",
+   "name": "All-Star Game",
+   "date": "2006-02-19",
+   "event_id": "2006-02-19-all-star-game",
+   "home": "East",
+   "away": "West",
+   "venue": "neutral",
+   "engine": "library/all_star/engine/2005-06-all_star.json",
+   "locked_on": "2006-04-19",
+   "evidence_through": "2006-02-18",
+   "teams": {
+    "East": {
+     "players": [
+      {
+       "player": "Dwyane Wade",
+       "bbr_id": "wadedw01",
+       "club": "Miami Heat",
+       "position": "SG",
+       "starter": true,
+       "minutes": 30,
+       "games": 53,
+       "game_score": 23.84,
+       "pts": 26.6,
+       "selection": 4
+      },
+      {
+       "player": "LeBron James",
+       "bbr_id": "jamesle01",
+       "club": "Cleveland Cavaliers",
+       "position": "SF",
+       "starter": true,
+       "minutes": 28,
+       "games": 49,
+       "game_score": 20.18,
+       "pts": 26.4,
+       "selection": 1
+      },
+      {
+       "player": "Allen Iverson",
+       "bbr_id": "iversal01",
+       "club": "Philadelphia 76ers",
+       "position": "PG",
+       "starter": true,
+       "minutes": 25,
+       "games": 50,
+       "game_score": 17.78,
+       "pts": 28.7,
+       "selection": 5
+      },
+      {
+       "player": "Zydrunas Ilgauskas",
+       "bbr_id": "ilgauzy01",
+       "club": "Philadelphia 76ers",
+       "position": "C",
+       "starter": true,
+       "minutes": 22,
+       "games": 48,
+       "game_score": 12.68,
+       "pts": 16.4,
+       "selection": 3
+      },
+      {
+       "player": "Jermaine O'Neal",
+       "bbr_id": "onealje01",
+       "club": "Indiana Pacers",
+       "position": "PF",
+       "starter": true,
+       "minutes": 18,
+       "games": 27,
+       "game_score": 12.09,
+       "pts": 18.6,
+       "selection": 2
+      },
+      {
+       "player": "Paul Pierce",
+       "bbr_id": "piercpa01",
+       "club": "Boston Celtics",
+       "position": "SF",
+       "starter": false,
+       "minutes": 24,
+       "games": 51,
+       "game_score": 22.52,
+       "pts": 28.9,
+       "selection": 6
+      },
+      {
+       "player": "Chris Bosh",
+       "bbr_id": "boshch01",
+       "club": "Toronto Raptors",
+       "position": "C",
+       "starter": false,
+       "minutes": 21,
+       "games": 41,
+       "game_score": 19.74,
+       "pts": 22.7,
+       "selection": 8
+      },
+      {
+       "player": "Chauncey Billups",
+       "bbr_id": "billuch01",
+       "club": "Detroit Pistons",
+       "position": "PG",
+       "starter": false,
+       "minutes": 18,
+       "games": 51,
+       "game_score": 18.25,
+       "pts": 20.3,
+       "selection": 7
+      },
+      {
+       "player": "Jason Terry",
+       "bbr_id": "terryja01",
+       "club": "Atlanta Hawks",
+       "position": "PG",
+       "starter": false,
+       "minutes": 17,
+       "games": 49,
+       "game_score": 17.74,
+       "pts": 24.0,
+       "selection": 11
+      },
+      {
+       "player": "Vince Carter",
+       "bbr_id": "cartevi01",
+       "club": "Toronto Raptors",
+       "position": "SG",
+       "starter": false,
+       "minutes": 14,
+       "games": 48,
+       "game_score": 16.07,
+       "pts": 21.0,
+       "selection": 12
+      },
+      {
+       "player": "Boris Diaw",
+       "bbr_id": "diawbo01",
+       "club": "Atlanta Hawks",
+       "position": "PF",
+       "starter": false,
+       "minutes": 13,
+       "games": 49,
+       "game_score": 14.83,
+       "pts": 16.5,
+       "selection": 9
+      },
+      {
+       "player": "Primož Brezec",
+       "bbr_id": "brezepr01",
+       "club": "Toronto Raptors",
+       "position": "C",
+       "starter": false,
+       "minutes": 10,
+       "games": 52,
+       "game_score": 8.0,
+       "pts": 11.8,
+       "selection": 10
+      }
+     ]
+    },
+    "West": {
+     "players": [
+      {
+       "player": "Kevin Garnett",
+       "bbr_id": "garneke01",
+       "club": "Minnesota Timberwolves",
+       "position": "PF",
+       "starter": true,
+       "minutes": 30,
+       "games": 47,
+       "game_score": 23.38,
+       "pts": 26.9,
+       "selection": 1
+      },
+      {
+       "player": "Kobe Bryant",
+       "bbr_id": "bryanko01",
+       "club": "Los Angeles Lakers",
+       "position": "SG",
+       "starter": true,
+       "minutes": 28,
+       "games": 50,
+       "game_score": 22.16,
+       "pts": 30.1,
+       "selection": 2
+      },
+      {
+       "player": "Dirk Nowitzki",
+       "bbr_id": "nowitdi01",
+       "club": "Dallas Mavericks",
+       "position": "PF",
+       "starter": true,
+       "minutes": 25,
+       "games": 52,
+       "game_score": 19.25,
+       "pts": 24.5,
+       "selection": 3
+      },
+      {
+       "player": "Ray Allen",
+       "bbr_id": "allenra02",
+       "club": "Seattle SuperSonics",
+       "position": "SG",
+       "starter": true,
+       "minutes": 22,
+       "games": 51,
+       "game_score": 16.56,
+       "pts": 23.5,
+       "selection": 4
+      },
+      {
+       "player": "Brad Miller",
+       "bbr_id": "millebr01",
+       "club": "Sacramento Kings",
+       "position": "C",
+       "starter": true,
+       "minutes": 18,
+       "games": 50,
+       "game_score": 12.49,
+       "pts": 15.6,
+       "selection": 5
+      },
+      {
+       "player": "Shawn Marion",
+       "bbr_id": "mariosh01",
+       "club": "Phoenix Suns",
+       "position": "PF",
+       "starter": false,
+       "minutes": 24,
+       "games": 51,
+       "game_score": 19.86,
+       "pts": 21.1,
+       "selection": 6
+      },
+      {
+       "player": "Chris Paul",
+       "bbr_id": "paulch01",
+       "club": "Utah Jazz",
+       "position": "PG",
+       "starter": false,
+       "minutes": 21,
+       "games": 50,
+       "game_score": 18.52,
+       "pts": 21.3,
+       "selection": 10
+      },
+      {
+       "player": "Elton Brand",
+       "bbr_id": "brandel01",
+       "club": "Los Angeles Clippers",
+       "position": "PF",
+       "starter": false,
+       "minutes": 18,
+       "games": 48,
+       "game_score": 17.4,
+       "pts": 21.4,
+       "selection": 9
+      },
+      {
+       "player": "Yao Ming",
+       "bbr_id": "mingya01",
+       "club": "Houston Rockets",
+       "position": "C",
+       "starter": false,
+       "minutes": 17,
+       "games": 50,
+       "game_score": 17.16,
+       "pts": 24.1,
+       "selection": 12
+      },
+      {
+       "player": "Joe Johnson",
+       "bbr_id": "johnsjo02",
+       "club": "Phoenix Suns",
+       "position": "SG",
+       "starter": false,
+       "minutes": 14,
+       "games": 52,
+       "game_score": 16.06,
+       "pts": 22.7,
+       "selection": 7
+      },
+      {
+       "player": "Tony Parker",
+       "bbr_id": "parketo01",
+       "club": "San Antonio Spurs",
+       "position": "PG",
+       "starter": false,
+       "minutes": 13,
+       "games": 50,
+       "game_score": 14.76,
+       "pts": 18.6,
+       "selection": 11
+      },
+      {
+       "player": "Mike Bibby",
+       "bbr_id": "bibbymi01",
+       "club": "Sacramento Kings",
+       "position": "PG",
+       "starter": false,
+       "minutes": 10,
+       "games": 53,
+       "game_score": 14.62,
+       "pts": 21.2,
+       "selection": 8
+      }
+     ]
+    }
+   },
+   "recorded_on": "2006-04-19",
+   "request": "career/Dwyane_Wade/2005-06/11_All_Star/All_Star_Game/Game_1.request.json",
+   "result": "career/Dwyane_Wade/2005-06/11_All_Star/All_Star_Game/Game_1.result.json",
+   "note": "career/Dwyane_Wade/2005-06/11_All_Star/All_Star_Game/Game_1.md",
+   "engine_sha256": "d4883e6e2ed2db9d0d8bb8ae8d478406839c733ef1b3cf09ed63b582dc4a9d39"
+  }
+ }
+}
