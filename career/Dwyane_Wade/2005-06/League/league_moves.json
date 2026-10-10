@@ -5570,6 +5570,25 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.8 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-04-10-clear-johnser02",
+   "date": "2006-04-10",
+   "kind": "clear",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": null,
+   "note": "cleared waivers from Sacramento Kings: a free agent",
+   "waiver": "2005-06-market-2006-04-08-waive-johnser02"
   }
  ],
  "market_days": [
@@ -5732,6 +5751,7 @@
   "2006-04-06",
   "2006-04-07",
   "2006-04-08",
-  "2006-04-09"
+  "2006-04-09",
+  "2006-04-10"
  ]
 }

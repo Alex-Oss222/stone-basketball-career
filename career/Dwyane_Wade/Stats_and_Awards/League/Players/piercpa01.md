@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `piercpa01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-04-09 · **Club on this date:** Boston Celtics · **Basis:** Boston Celtics: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-04-10 · **Club on this date:** Boston Celtics · **Basis:** Boston Celtics: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #34 · **Born:** 1977-10-13 · **Age on card date:** 28  
 **Registry ID:** `piercpa01` · [Basketball-Reference page](https://www.basketball-reference.com/players/p/piercpa01.html) · ESPN ID 662
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `piercp
 
 ## Simulated statistics
 
-As of **2006-04-09**: 77 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-04-10**: 77 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 77 closed regular-season games through 2006-04-09. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 77 closed regular-season games through 2006-04-10. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -124,7 +124,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-04-09, from closed award decisions (14 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-04-10, from closed award decisions (15 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -158,3 +158,4 @@ Simulated honors and shortlist placings through 2006-04-09, from closed award de
 | East All-Star (reserve) | 2005-11-01 to 2006-02-09 | 2006-02-09 | **Selected** | [Decision](../2005-06/All_Star.md#all-stars) |
 | East Player of the Week | 2006-02-06 to 2006-02-12 | 2006-02-13 | **Winner** | [Decision](../2005-06/02_February/Week_2/League_Awards.md) |
 | East Player of the Week | 2006-03-20 to 2006-03-26 | 2006-03-27 | **Winner** | [Decision](../2005-06/03_March/Week_4/League_Awards.md) |
+| East Player of the Week | 2006-04-03 to 2006-04-09 | 2006-04-10 | **Winner** | [Decision](../2005-06/04_April/Week_2/League_Awards.md) |

@@ -3331,6 +3331,110 @@
     }
    ],
    "winner": "Shawn Marion"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-04-03-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2006-04-03",
+   "period_end": "2006-04-09",
+   "announced_on": "2006-04-10",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/04_April/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 33.2,
+     "reb": 10.8,
+     "ast": 6.0,
+     "game_score": 24.85,
+     "score": 108.4,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 27.0,
+     "reb": 5.0,
+     "ast": 5.0,
+     "game_score": 23.1,
+     "score": 101.4,
+     "rank": 2
+    },
+    {
+     "player": "Michael Redd",
+     "team": "Milwaukee Bucks",
+     "games": 4,
+     "wins": 0,
+     "losses": 4,
+     "pts": 27.0,
+     "reb": 5.0,
+     "ast": 2.5,
+     "game_score": 19.23,
+     "score": 76.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Paul Pierce"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-04-03-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2006-04-03",
+   "period_end": "2006-04-09",
+   "announced_on": "2006-04-10",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/04_April/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Bobby Simmons",
+     "team": "Los Angeles Clippers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 25.5,
+     "reb": 6.2,
+     "ast": 3.0,
+     "game_score": 21.62,
+     "score": 92.5,
+     "rank": 1
+    },
+    {
+     "player": "Danny Granger",
+     "team": "New Orleans/Oklahoma City Hornets",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 15.0,
+     "reb": 8.5,
+     "ast": 2.8,
+     "game_score": 16.5,
+     "score": 75.0,
+     "rank": 2
+    },
+    {
+     "player": "Rashard Lewis",
+     "team": "Seattle SuperSonics",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 23.0,
+     "reb": 6.7,
+     "ast": 3.0,
+     "game_score": 21.8,
+     "score": 74.4,
+     "rank": 3
+    }
+   ],
+   "winner": "Bobby Simmons"
   }
  ]
 }

@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2006-04-09](../assets/stat_reports/personal_2005-06_2006-04-09.svg)
+![Player personal information and earned 2005-06 awards through 2006-04-10](../assets/stat_reports/personal_2005-06_2006-04-10.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2006-04-09; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2006-04-10; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
@@ -53,7 +53,7 @@ Identity as of 2006-04-09; status snapshot dated 2005-10-26. User-established al
 
 ## Statistics
 
-Report cutoff: **2006-04-09**. Each row is a separate competition; do not add the rates.
+Report cutoff: **2006-04-10**. Each row is a separate competition; do not add the rates.
 
 ### Competition summary
 
@@ -70,7 +70,7 @@ Report cutoff: **2006-04-09**. Each row is a separate competition; do not add th
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-04-09, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-04-10, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Regular season by month
 
@@ -89,7 +89,7 @@ Awards are confirmed through 2006-04-09, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-04-09, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-04-10, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Career records
 

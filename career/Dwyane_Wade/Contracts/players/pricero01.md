@@ -2,9 +2,9 @@
 
 # Contract | Ronnie Price
 
-Known through: 2006-04-09. [Open interactive contract](pricero01.html#contract) · [Contract history](pricero01.html#contract-history)
+Known through: 2006-04-10. [Open interactive contract](pricero01.html#contract) · [Contract history](pricero01.html#contract-history)
 
-Ronnie Price: under contract. Evidence cutoff: 2006-04-09.
+Ronnie Price: under contract. Evidence cutoff: 2006-04-10.
 
 ## Current contract
 

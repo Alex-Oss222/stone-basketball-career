@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2006-04-09](../../../assets/stat_reports/personal_2005-06_2006-04-09.svg)
+![Player personal information and earned 2005-06 awards through 2006-04-10](../../../assets/stat_reports/personal_2005-06_2006-04-10.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2006-04-09; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2006-04-10; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -51,7 +51,7 @@ Identity as of 2006-04-09; status snapshot dated 2005-10-26. User-established al
 
 ## Statistics
 
-As of **2006-04-09**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2006-04-10**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -69,7 +69,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-04-09, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-04-10, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 

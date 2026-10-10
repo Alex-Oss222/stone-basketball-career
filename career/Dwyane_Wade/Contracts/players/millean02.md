@@ -2,9 +2,9 @@
 
 # Contract | Andre Miller
 
-Known through: 2006-04-09. [Open interactive contract](millean02.html#contract) · [Contract history](millean02.html#contract-history)
+Known through: 2006-04-10. [Open interactive contract](millean02.html#contract) · [Contract history](millean02.html#contract-history)
 
-Andre Miller: under contract. Evidence cutoff: 2006-04-09.
+Andre Miller: under contract. Evidence cutoff: 2006-04-10.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Anthony Carter
 
-Known through: 2006-04-09. [Open interactive contract](cartean01.html#contract) · [Contract history](cartean01.html#contract-history)
+Known through: 2006-04-10. [Open interactive contract](cartean01.html#contract) · [Contract history](cartean01.html#contract-history)
 
-Anthony Carter: under contract. Evidence cutoff: 2006-04-09.
+Anthony Carter: under contract. Evidence cutoff: 2006-04-10.
 
 ## Current contract
 

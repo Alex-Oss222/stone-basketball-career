@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: April 1-30, 2006
 
-As of April 9, 2006: no month award decision closed (Player and Rookie of the Month announced April 21, 2006); 2 Player of the Week decision(s) closed on this month's week pages, announced April 3, 2006.
+As of April 10, 2006: no month award decision closed (Player and Rookie of the Month announced April 21, 2006); 4 Player of the Week decision(s) closed on this month's week pages, announced April 3, 2006, April 10, 2006.
 
 Official award window: not recorded. Announcement date: not recorded.
 
@@ -41,7 +41,7 @@ No award decision is filed in this calendar bucket yet.
 | Period | Calendar dates | Closed decisions | Status |
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/League_Awards.md) | April 1-7, 2006 | 2 | Decided |
-| [Week 2](Week_2/League_Awards.md) | April 8-14, 2006 | 0 | No award filed |
+| [Week 2](Week_2/League_Awards.md) | April 8-14, 2006 | 2 | Decided |
 | [Week 3](Week_3/League_Awards.md) | April 15-21, 2006 | 0 | No award filed |
 
 [Awards procedure and research](../../README.md) · [Player evidence for this calendar period](League_Stats.md)
