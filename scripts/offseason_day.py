@@ -29,11 +29,12 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from runtime import draft, draft_rights, expansion, free_agency_2004, lottery                        # noqa: E402
+from runtime import draft, draft_rights, expansion, free_agency_2004, keep_picks, lottery            # noqa: E402
 
 
 MIAMI = "Miami Heat"
-NEWS = ("MIAMI TRADE", "MIAMI SIGNING", "MIAMI OFFER SHEET", "MIAMI LOSES", "MIAMI DRAFT")    # the driver reads these prefixes
+NEWS = ("MIAMI TRADE", "MIAMI SIGNING", "MIAMI OFFER SHEET", "MIAMI LOSES", "MIAMI DRAFT",
+        "WADE TRADE REQUEST")                                                                 # the driver reads these prefixes
 SIGNINGS = ("signing", "re_sign", "rookie_scale_signing", "camp_signing", "qualifying_offer_accepted")
 
 
@@ -55,7 +56,9 @@ def draft_news(record, year):
       (`<year>-draft-pick-<slot>-trade-down`): Miami moving up, the on-clock club's drawn answer,
       "MIAMI TRADE: <club> accepts: Miami sends No. <later>, <Miami's second-rounder> for No. <slot>"; Miami trading
       down, its own drawn answer to the offer, "MIAMI TRADE: <club> offered and Miami accepts: Miami sends No. <slot>
-      for No. <later>, <the club's second-rounder>" (the incoming-offer line of `scripts/run_trade.season_day`)."""
+      for No. <later>, <the club's second-rounder>" (the incoming-offer line of `scripts/run_trade.season_day`);
+    - Wade's trade request written because a Miami pick was traded while his keep_picks request stood
+      (`runtime/keep_picks.py`), "WADE TRADE REQUEST: ...", while it waits for his answer."""
     if not record:
         return []
     rows = []
@@ -70,6 +73,11 @@ def draft_news(record, year):
     for p in record.get("picks", []):
         if p["club"] == MIAMI:
             rows.append((p["pick"], 1, f"MIAMI DRAFT: Miami selects {p['player']} ({p['position']}) at No. {p['pick']}"))
+    season = f"{year - 1}-{str(year)[-2:]}"
+    for rid in record.get("wade_trade_requests", []):       # runtime/keep_picks.py: shown while it waits for his answer
+        found = keep_picks.find(ROOT, season, rid)
+        if found and found[2]["answer"] is None:
+            rows.append((10 ** 6, 2, keep_picks.report_line(found[2])))
     return [line for _, _, line in sorted(rows)]
 
 

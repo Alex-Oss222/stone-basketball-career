@@ -120,6 +120,7 @@ NEW_SIGNING_TRADABLE = "2004-12-15"     # a free agent signed this summer cannot
 REQUEST_PRICE_CEILING = 1.10           # Miami pays a player Wade asked for up to this share of its own valuation (docs/front_office.md)
 RENOUNCE_FOR_REQUEST_FROM = 2006        # from this summer Miami renounces lesser holds to reach a free agent Wade asked it to pursue
 REQUEST_ANSWERS_CONSULTATION_FROM = 2006  # from this summer Wade's own pursue request answers the franchise consultation for that player
+LINE_LABELS_FROM = 2006                 # from this summer a consultation's line names the season priced (before: "2003-04" every summer)
 LOST_BIRD_FROM = 2006                   # the first summer after a consent trade could happen (trades.CONSENT_FROM, 2005-12-01)
 REQUESTS = FOLDER / "wade_requests.json"
 UNTOUCHABLE = {"dwyane_wade"}           # Miami's AI/GM keeps its franchise cornerstone off the market (judgement)
@@ -580,12 +581,12 @@ def _request_answer_page(record, evidence):
     """The milestone page of a franchise consultation answered by Wade's own request (`Market.answered_by_request`):
     the consultation page's identity line, proposed move and evidence (`runtime/consultations.page`), with the answer,
     its date and the request's words in place of the open question."""
-    from .consultations import RULE, STAR_PRODUCTION_VALUE
+    from .consultations import STAR_PRODUCTION_VALUE
     kind_text = {"free_agent": "sign as a free agent", "trade": "acquire by trade", "sign_and_trade": "acquire by sign-and-trade"}[record["kind"]]
     asked = record["answered_by_request"]
     rows = [("Proposed move", f"Miami wants to {kind_text} **{record['player']}** ({record['club']})"),
             ("Simulated line", evidence.get("line") or "no line recorded"),
-            ("Production value", f"{evidence.get('value')} (star line {STAR_PRODUCTION_VALUE}; {RULE})"),
+            ("Production value", f"{evidence.get('value')} (star line {STAR_PRODUCTION_VALUE}; {record['star_basis']['rule']})"),
             ("Salary or ask", evidence.get("salary", "Not recorded")),
             ("Miami's cap position", evidence.get("cap_position", "Not recorded")),
             ("Fit", evidence.get("fit", "Not recorded")),
@@ -1093,7 +1094,7 @@ class Market:
         record = {"schema_version": 1, "id": cid, "date": day, "kind": kind, "player": name, "bbr_id": b, "club": club,
                   "terms": None, "trade_id": trade_id,
                   "standing": {"standing": standing["standing"], "as_of": standing.get("as_of")},
-                  "star_basis": {"value": evidence.get("value"), "rule": C.RULE}, "basis": basis, "status": "closed",
+                  "star_basis": {"value": evidence.get("value"), "rule": C.rule(day, self.root)}, "basis": basis, "status": "closed",
                   "answer": "approve", "answered": day,
                   "note": f"Answered by Wade's own request of {request['date']} that Miami pursue {name} ({source}): \"{words}\"",
                   "answered_by_request": {"source": source, "date": request["date"], "subject": request["subject"],
@@ -1108,10 +1109,13 @@ class Market:
         return True
 
     def line(self, b):
+        """A player's line in a summer trade consultation: the closed season the market prices from (SEASON in the
+        year's context; before the 2006 summer the words named 2003-04 in every summer, a dated fix)."""
+        season = SEASON if YEAR >= LINE_LABELS_FROM else "2003-04"
         e = self.pricing.evidence.get(b)
         if not e:
-            return "no simulated 2003-04 line"
-        return f"{e['games']} games, {e['mpg']:.1f} minutes, efficiency {e['eff'] / e['games']:.1f} a game (simulated 2003-04)"
+            return f"no simulated {season} line"
+        return f"{e['games']} games, {e['mpg']:.1f} minutes, efficiency {e['eff'] / e['games']:.1f} a game (simulated {season})"
 
     def draw_priorities(self):
         """Each free agent's priority, drawn once on July 1 with the 2003 odds by age (runtime/market.py)."""

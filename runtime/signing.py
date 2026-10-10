@@ -845,6 +845,20 @@ def phase_note_for(state):
     return Path(f"career/Dwyane_Wade/{SEASON}") / state.get("current_note", "01_Free_Agency/note.md")
 
 
+def arrival_card_for_trade(root, name, identity, day, control, record_rel, bbr, club):
+    """A trade arrival's card from SEASON_LABELS_FROM after the first season: the later-season card the rollover and camp
+    write (`rollover.arrival_card`), with the previous season's simulated line the front office valued him by, under
+    that season's name. Before the date, or in 2003-04, None: the first season's card (`player_card`), whose 2002-03
+    row and source named the first season in every season (a dated fix; cards already written are unchanged)."""
+    from .trades import SEASON_LABELS_FROM
+    if SEASON == "2003-04" or day < SEASON_LABELS_FROM:
+        return None
+    from .rollover import arrival_card
+    from .season_evidence import prior_records
+    return arrival_card(name, identity, day, control, f"../../../{record_rel}", prior_records(SEASON, root).get(bbr), SEASON,
+                        f"Acquired by trade from {club}")
+
+
 def apply_trade(writer, record, day, desk=None):
     """Write an accepted trade: Miami's side into every record, the partner's side into the departures ledger.
 
@@ -920,7 +934,8 @@ def apply_trade(writer, record, day, desk=None):
         roster["players"].append({"id": slug(name), "name": name, "positions": [x for x in (identity.get("position") or "SF").replace("/", "-").split("-")],
                                  "date_of_birth": identity.get("birth_date"), "status": "under_contract", "control": control,
                                  "working_role": "Unassigned arrival", "player_card": f"../Player_Cards/{slug(name)}.md", "bbr_id": bbr})
-        writer.text(TEAM / f"Team/Player_Cards/{slug(name)}.md", player_card(name, identity, day, control, f"../../../{record_rel}", stats.get(bbr)))
+        writer.text(TEAM / f"Team/Player_Cards/{slug(name)}.md", arrival_card_for_trade(writer.root, name, identity, day, control, record_rel, bbr, club)
+                    or player_card(name, identity, day, control, f"../../../{record_rel}", stats.get(bbr)))
         depth.setdefault("unassigned_arrivals", []).append({"name": name, "positions": roster["players"][-1]["positions"], "status": "under_contract", "date": day})
         holdings["entries"].append({"player": name, "bbr_id": bbr, "from": day, "until": None, "how": "trade",
                                     "basis": f"acquired by trade from {club} ({record['trade_id']})"})
@@ -948,9 +963,42 @@ def apply_trade(writer, record, day, desk=None):
         text = f"Trade with {club}: Miami sends {outs} for {ins} (accepted by engine draw {record['decision_event']}). Record: `{record_rel}`."
         event = f"{day}-trade-{record['trade_id']}"
     note_event(writer, phase_note_for(state), day, text)
+    file_trade_request(writer, record, day, state)
     set_state(writer, day, area=state.get("current_area", "01_Free_Agency"), note=state.get("current_note", "01_Free_Agency/note.md"),
               last_event=event)
     return record_rel
+
+
+def file_trade_request(writer, record, day, state):
+    """Wade's keep_picks consequence (runtime/keep_picks.py): a completed trade that sends one of Miami's picks while his
+    request stands, and was not his own newer package request naming it, writes his trade request the same day in the
+    current phase folder's `wade_requests.json` with its page and pending entry, marks the trade record
+    (`wade_trade_request`) and logs the phase note. Returns the row or None (no pick sent, no request standing)."""
+    from .keep_picks import REQUESTS_FILE, add_pending, page_name, picks_text, standing_request, trade_request
+    from .standing import standing_on
+    picks = record["trade"].get("picks_out") or []
+    if not picks or (record.get("ranking") or {}).get("keep_picks_exempt"):
+        return None
+    keep = standing_request(day, writer.root)
+    if keep is None:
+        return None
+    folder = phase_note_for(state).parent
+    rel = folder / REQUESTS_FILE
+    if rel not in writer.files and not (writer.root / rel).is_file():
+        writer.files[rel] = {"requests": []}
+    data = writer.load(rel)
+    row, text = trade_request(keep, day, record["trade_id"], (TRADES / f"{record['trade_id']}.json").as_posix(),
+                              [dict(p) for p in picks], record["trade"]["partner"], record.get("standing") or standing_on(writer.root, day))
+    if not any(r.get("id") == row["id"] for r in data["requests"]):
+        data["requests"].append(row)
+        writer.text(folder / page_name(row), text)
+    add_pending(state, row["id"])
+    record["wade_trade_request"] = row["id"]
+    note_event(writer, phase_note_for(state), day,
+               f"Wade asks Miami to trade him: the front office sent {picks_text(picks)} while his keep_picks request of "
+               f"{keep['date']} stood. Records: `{REQUESTS_FILE}` ({row['id']}), `{page_name(row)}`; it waits for his "
+               "confirmation or withdrawal.")
+    return row
 
 
 def write_proposal(root, desk, trade, ranking, day, *, kind="trade", negotiation=None, standing=None, consultation=None):

@@ -2,8 +2,9 @@
 
 Once Wade's computed standing is `franchise` (runtime/standing.py), Miami must ask him before it
 signs or trades for another star player: the move cannot proceed without his answer and his
-objection stops it. A star is a player whose 2002-03 production value (`Valuation.value`) reaches
-STAR_PRODUCTION_VALUE; a player without 2002-03 evidence is never a star under this rule. The gate
+objection stops it. A star is a player whose production value (`Valuation.value`: 2002-03 in the first season, then
+the previous simulated season) reaches STAR_PRODUCTION_VALUE; a player without that evidence is never a star under this
+rule, and the record and page name the season read (`evidence_season`, from trades.SEASON_LABELS_FROM). The gate
 covers acquisitions only (a free-agent target, the player Miami trades for, the player of a
 sign-and-trade acquisition and every player arriving in an own sign-and-trade-out); re-signing
 Miami's own player is keeping, not adding, and players Miami sends out are never gated.
@@ -32,7 +33,25 @@ ANSWERS = (None, "approve", "object")
 FOLDER = "Wade_Consultations"                          # career/Dwyane_Wade/<season>/Wade_Consultations/ (player-owned, season-wide)
 PENDING_PREFIX = "star_consultation:"
 STATUSES = ("asked", "closed")
-RULE = f"2002-03 production value >= {STAR_PRODUCTION_VALUE} (runtime/consultations.py)"
+RULE = f"2002-03 production value >= {STAR_PRODUCTION_VALUE} (runtime/consultations.py)"   # as recorded before the labels fix
+
+
+def evidence_season(on, root=ROOT):
+    """The production season a consultation names (a dated fix): before trades.SEASON_LABELS_FROM "2002-03" in every
+    season, as recorded; from it the season the valuation reads (`Valuation.stats`, the season before the one the date
+    prices for, `season_evidence.market_season`), "<season> simulated season" once the career has closed it."""
+    from .trades import SEASON_LABELS_FROM
+    if on < SEASON_LABELS_FROM:
+        return "2002-03"
+    from .season_evidence import market_season, simulated
+    from .seasons import previous_season
+    prior = previous_season(market_season(on))
+    return f"{prior} simulated season" if simulated(prior, root) else prior
+
+
+def rule(on, root=ROOT):
+    """The star rule's text on a date: RULE before the labels fix, the season read after it."""
+    return f"{evidence_season(on, root)} production value >= {STAR_PRODUCTION_VALUE} (runtime/consultations.py)"
 
 
 def slug(name):
@@ -120,10 +139,10 @@ def ask(root, state, day, kind, player, bbr_id, club, *, terms=None, trade_id=No
         standing = standing or {"standing": CONSULTATION_STANDING, "as_of": None}
         record = {"schema_version": 1, "id": cid, "date": day, "kind": kind, "player": player, "bbr_id": bbr_id, "club": club,
                   "terms": terms, "trade_id": trade_id, "standing": {"standing": standing["standing"], "as_of": standing.get("as_of")},
-                  "star_basis": {"value": evidence.get("value"), "rule": RULE}, "basis": basis, "status": "asked",
+                  "star_basis": {"value": evidence.get("value"), "rule": rule(day, root)}, "basis": basis, "status": "asked",
                   "answer": None, "answered": None, "note": None}
         path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-        (f / page_name(record)).write_text(page(record, evidence), encoding="utf-8")
+        (f / page_name(record)).write_text(page(record, evidence, root), encoding="utf-8")
     pending = state.setdefault("pending_player_decisions", [])
     if PENDING_PREFIX + cid not in pending:
         pending.append(PENDING_PREFIX + cid)
@@ -155,14 +174,18 @@ def page_name(record):
     return f"Milestone_{record['date']}_consultation_{slug(record['player'])}.md"
 
 
-def page(record, evidence):
+def page(record, evidence, root=ROOT):
     """The player-facing page (docs/templates/player_milestones/workflow.md): the identity line, the actual
-    proposed move, the decision-relevant evidence, the available responses and the next checkpoint."""
+    proposed move, the decision-relevant evidence, the available responses and the next checkpoint. The season it
+    names is the one the evidence was read from (`evidence_season`; 2002-03 before the labels fix)."""
     kind_text = {"free_agent": "sign as a free agent", "trade": "acquire by trade", "sign_and_trade": "acquire by sign-and-trade"}[record["kind"]]
-    line = evidence.get("line") or "no 2002-03 line recorded"
+    season = evidence_season(record["date"], root)
+    line = evidence.get("line") or f"no {season} line recorded"
+    known = ("2002-03 statistics and the June 26, 2003 contract inventory" if season == "2002-03"
+             else f"{season} statistics and the league's contracts on the date")
     rows = [("Proposed move", f"Miami wants to {kind_text} **{record['player']}** ({record['club']})"),
-            ("2002-03 line", line),
-            ("Production value", f"{evidence.get('value')} (star line {STAR_PRODUCTION_VALUE}; {RULE})"),
+            (f"{season[:1].upper() + season[1:]} line", line),
+            ("Production value", f"{evidence.get('value')} (star line {STAR_PRODUCTION_VALUE}; {rule(record['date'], root)})"),
             ("Salary or ask", evidence.get("salary", "Not recorded")),
             ("Miami's cap position", evidence.get("cap_position", "Not recorded")),
             ("Fit", evidence.get("fit", "Not recorded")),
@@ -189,7 +212,7 @@ record: {record['id']}.json
 | --- | --- |
 {table}
 
-Evidence is what Miami's front office knows on {record['date']}: 2002-03 statistics and the June 26, 2003 contract inventory. This page is a consultation under the career's premise (once your standing is franchise, Miami must ask before it adds another star); it is not a contract right.
+Evidence is what Miami's front office knows on {record['date']}: {known}. This page is a consultation under the career's premise (once your standing is franchise, Miami must ask before it adds another star); it is not a contract right.
 
 ## Your response
 

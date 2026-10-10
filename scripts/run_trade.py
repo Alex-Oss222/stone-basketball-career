@@ -20,6 +20,9 @@ a time, never asked twice; a re-run of the same date finds the same ids). `--sho
 player: the front office picks which agreed own free agent, if any, it signs and trades in one
 transaction (runtime/gm.py RESIGN_AND_TRADE_FIT) and writes at most one proposal; a player Miami
 has already re-signed is a signed player under the newly-signed restriction and is not shopped.
+Wade's keep_picks request (runtime/keep_picks.py), read from every season folder, weighs any
+package with a Miami pick; a completed trade that sends one while it stands writes his trade
+request and prints a "WADE TRADE REQUEST" line, on which scripts/advance.py stops.
 """
 import json
 from pathlib import Path
@@ -127,6 +130,13 @@ def awaiting(day, root=ROOT):
     return waiting
 
 
+def salary_season(desk, day):
+    """The season a consultation's salary evidence names: from SEASON_LABELS_FROM the season `Assets.salary` read (the
+    date's season, the coming one in the summer before the rollover); before it the live season, as recorded."""
+    from runtime.trades import SEASON_LABELS_FROM
+    return desk.assets.season if day >= SEASON_LABELS_FROM else SEASON
+
+
 def propose(day, root=ROOT):
     """Write the front office's top-ranked proposal and its acceptance packet; returns the record, or None
     when nothing is worth proposing, a consultation is still unanswered, or the top choice waits for Wade's
@@ -150,7 +160,7 @@ def propose(day, root=ROOT):
         fo = desk.fo
         room = fo.cap_room()
         pos = desk.assets.positions.get(p.get("bbr_id"), (None, "SF", 9))[1].split("-")[0]
-        evidence = {"value": top.get("star_value"), "line": None, "salary": f"${desk.assets.salary(p):,} in {SEASON}",
+        evidence = {"value": top.get("star_value"), "line": None, "salary": f"${desk.assets.salary(p):,} in {salary_season(desk, day)}",
                     "cap_position": f"room ${room['room']:,} on the {'published' if room['cap_known'] else 'planning'} cap ${room['cap']:,}",
                     "fit": f"{pos}: fit {fo.fit(pos, fo.needs())}",
                     "reason": f"top-ranked proposal on {day}: {', '.join(trade['miami_out'])} for {name} (score {top['score']}, acceptance {top['accept']})"}
@@ -282,7 +292,10 @@ def answer_requests(day, root=ROOT):
     """The front office's answer to each package Wade asked for (`subject: trade_package` in a phase folder's
     `wade_requests.json`, dated on or before the day), once: it proposes the package when its own rules, with his
     request weighed by his standing, would make it (`TradeDesk.evaluate_package`), else records why not. A proposed
-    package's answer from the other club is an engine draw like any proposal. Returns the lines to report."""
+    package's answer from the other club is an engine draw like any proposal. A pick in the package is weighed against
+    his standing keep_picks request, unless the package request is dated on or after it: then it is his newer wish for
+    that pick (`keep_picks.exempt`), weighed like his other requests and marked `keep_picks_exempt` on the ranking, so
+    trading it writes no trade request. Returns the lines to report."""
     root = Path(root)
     path = root / REQUEST_ANSWERS
     record = json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {
@@ -303,8 +316,11 @@ def answer_requests(day, root=ROOT):
             break
         desk = TradeDesk(day, FrontOffice(day, Market(day, root), root), root)
         snap = standing(root)
+        from runtime.keep_picks import exempt
         from runtime.trades import IN_SEASON_MIN_GAIN, SEARCH_MIN_GAIN
-        proposes, why, numbers = desk.evaluate_package(trade, snap["standing"], IN_SEASON_MIN_GAIN if in_season(day, root) else SEARCH_MIN_GAIN)
+        own_picks = bool(trade["picks_out"]) and exempt(desk.keep_picks(), r["date"])   # his newer wish for the picks he names
+        proposes, why, numbers = desk.evaluate_package(trade, snap["standing"], IN_SEASON_MIN_GAIN if in_season(day, root) else SEARCH_MIN_GAIN,
+                                                       keep_exempt=own_picks)
         answer = {"request_key": key, "requested_on": r["date"], "answered_on": day, "package": trade, "standing": snap["standing"],
                   "proposes": proposes, "reason": why, "numbers": numbers, "trade_id": None}
         writer = signing.Writer(root)
@@ -313,6 +329,8 @@ def answer_requests(day, root=ROOT):
         if proposes:
             ranking = {"trade": trade, "miami_gain": numbers["miami_gain"], "partner_gain": numbers["partner_gain"], "accept": numbers["accept"],
                        "score": numbers["scored_gain"], "wade_request": True}
+            if own_picks:
+                ranking["keep_picks_exempt"] = key        # Wade named the pick himself after his keep_picks request
             proposal = signing.write_proposal(root, desk, trade, ranking, day, kind="trade", standing=snap)
             answer["trade_id"] = proposal["trade_id"]
             lines.append(f"Wade's request: the front office proposes to {trade['partner']}: {outs} for {ins} "
@@ -378,6 +396,15 @@ def incoming(day, root=ROOT):
     return record
 
 
+def trade_request_lines(record, root=ROOT):
+    """The "WADE TRADE REQUEST" line of a completed trade that wrote Wade's trade request (runtime/keep_picks.py), while
+    it waits for his answer; scripts/advance.py stops on it."""
+    from runtime.keep_picks import find, report_line
+    rid = record.get("wade_trade_request")
+    found = find(root, SEASON, rid) if rid else None
+    return [report_line(found[2])] if found and found[2]["answer"] is None else []
+
+
 def season_day(day, root=ROOT):
     """The driver's in-season step (scripts/advance.py): apply answers drawn for earlier proposals, then, when a scan
     is due, the front office's proposal. Returns the lines to report; a completed trade starts with "MIAMI TRADE"."""
@@ -392,6 +419,7 @@ def season_day(day, root=ROOT):
         consent = consent_report(record)
         lines.append(f"{head}: {t['partner']} {'accepts' if status == 'completed' else 'answers'}: Miami sends {outs} for {ins} ({trade_id})"
                      + (f"; {consent}" if consent else ""))
+        lines += trade_request_lines(record, root)
     if pending:
         return lines + ["awaiting the draw: " + ", ".join(pending)]
     due = scan_due(day, root)
@@ -400,7 +428,7 @@ def season_day(day, root=ROOT):
         if taken:
             t = taken["trade"]
             return lines + [f"MIAMI TRADE: {t['partner']} offered and Miami accepts: Miami sends {', '.join(t['miami_out'])} "
-                            f"for {', '.join(t['miami_in'])} ({taken['trade_id']})"]
+                            f"for {', '.join(t['miami_in'])} ({taken['trade_id']})"] + trade_request_lines(taken, root)
         offered = json.loads((Path(root) / OFFERS / f"{day}.json").read_text(encoding="utf-8"))["offers"] if (Path(root) / OFFERS / f"{day}.json").is_file() else []
         if offered:
             lines.append(f"trade offers to Miami: {len(offered)} received, none accepted")

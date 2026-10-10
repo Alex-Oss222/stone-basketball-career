@@ -25,6 +25,19 @@
    "words": "Separately, for the 2006 offseason, I would like the scouting department to keep Kyle Lowry of Villanova and P.J. Tucker of Texas under consideration. These are recommendations for evaluation, not demands for roster transactions.",
    "note": "Scouting recommendation: watch his physical defense, rebounding, positional versatility and offensive development. On the date he is a Texas junior; whether he enters the 2006 draft and where he ranks are decided by the simulation's draft-night evidence. Weighed only on Miami's own 2006 picks (runtime/draft.py); never a demand.",
    "source_ref": "career/Dwyane_Wade/2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md"
+  },
+  {
+   "date": "2006-04-19",
+   "subject": "draft_prospect",
+   "player": "P.J. Tucker",
+   "bbr_id": "tuckepj01",
+   "college": "Texas",
+   "position": "F",
+   "draft_year": 2006,
+   "requested": "draft",
+   "words": "also tell them they better draft pj tucker",
+   "note": "Wade asks Miami to draft P.J. Tucker in the 2006 draft, more than the evaluation he asked for on 2005-10-31; this row replaces that one (the latest row per prospect stands; Kyle Lowry's evaluate request is unchanged). Weighed on Miami's own 2006 picks only (on the date it holds only its 2006 second-round pick), never another club's and never in a trade (runtime/draft.py rule 7): available in the best available tier at Miami's pick, he is always a candidate with the evaluate lift and an engine draw first takes him at Wade's request with chance standing weight x closeness (his draw weight against the club favourite's); outside that tier the request opposes tier dominance and is an engine-drawn decision at standing weight x closeness (one less his distance below the tier's line in tier widths; a whole tier below is a clear-cut call that cannot be moved). Never a certainty. Whether he enters the 2006 draft and where he ranks are decided by the simulation's draft-night evidence.",
+   "source_ref": "career/Dwyane_Wade/2005-06/09_Draft/note.md"
   }
  ]
 }

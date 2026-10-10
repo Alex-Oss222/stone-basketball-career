@@ -145,6 +145,15 @@ def augment_live_screens(context, screens):
             tokens.append([r["id"], r["player"], r.get("answer") if c.known(r.get("answered")) else "Awaiting your answer", version(path)])
     if tokens:
         screens["trade_update"]["sections"].append({"title": "Consultation reply versions", "columns": ["Event ID", "Player", "Status", "Version"], "rows": tokens})
+    from .keep_picks import trade_requests
+    asks = []
+    for rel, r in trade_requests(c.root, c.season.name):
+        if c.known(r.get("date")):
+            status = r["answer"] if r.get("answer") and c.known(r.get("answered")) else "Awaiting your answer"
+            asks.append([r["id"], (r.get("cites") or {}).get("trade_id"), status, version(c.root / rel)])
+    if asks:
+        screens["trade_update"]["sections"].append({"title": "Trade request reply versions (kind trade_request: confirm or withdraw)",
+            "columns": ["Event ID", "Trade", "Status", "Version"], "rows": asks})
     from .extensions import offer_folder, page_name, terms_line
     offers = []
     for path in sorted(offer_folder(c.root, c.season.name).glob("*.json")):

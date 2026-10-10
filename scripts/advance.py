@@ -37,7 +37,13 @@ Miami news: an in-season trade (`scripts/run_trade.py --season-day`) and a trade
 "MIAMI TRADE" and stop the run the day they happen, checkpointed and pushed (`--through-trades` reports them and goes
 on); the summer's Miami picks, signings, offer sheets and losses are reported the same day. A stop on news records
 its lines in `current_state` (`reported_stop`), so resuming on that day reports them again without stopping a second
-time.
+time. A trade that sends one of Miami's picks while Wade's keep_picks request stands writes his trade request
+(runtime/keep_picks.py): its "WADE TRADE REQUEST" line stops the run at once, even with `--through-trades`, and its
+pending entry keeps every later run stopped until the user confirms or withdraws it. That stop is a pending decision's,
+not a news stop: it comes mid-day, so there is no checkpoint or push then (the day's awards and games are not decided
+yet), but the day's Miami trade lines and the request's are recorded in `reported_stop` with it, so the resumed day
+neither loses them nor stops on them again; the day's work is committed when it closes. A confirmed trade request keeps
+every run stopped (`wade_waits`), since Miami's answer to it is not built yet (docs/ROADMAP.md F1).
 
 Environment: ENGINE_API_TOKEN (never printed), and optionally ADVANCE_COMMIT_TRAILER appended to each commit.
 """
@@ -126,6 +132,11 @@ def wade_waits():
     pending = state().get("pending_player_decisions") or []
     if pending:
         raise Stop("Wade has a decision to make: " + "; ".join(map(str, pending)))
+    from runtime.keep_picks import confirmed
+    asked = confirmed(ROOT)                              # Miami's answer to a confirmed trade request is not built (F1)
+    if asked:
+        raise Stop("Wade's confirmed trade request waits for Miami's answer, which is not built yet (docs/ROADMAP.md F1): "
+                   + "; ".join(row["id"] for _, row in asked))
 
 
 def commit(message):
@@ -339,7 +350,7 @@ def playoff_day(day):
         draw()
     out = run("scripts/offseason_day.py", "--write", day, show=False)
     say("    " + next((line for line in out.splitlines() if not line.startswith(MARKET_NEWS)), ""))
-    market_news(out)
+    market_news(out, day)
     run("scripts/playoff_day.py", "--build", day, show=False)
     national_day(day)                                    # FIBA tournaments in the summer (runtime/national.py)
     frozen_check()
@@ -383,10 +394,12 @@ TRADES_TODAY = []                                # the day's Miami trades, in se
 WADE_NEWS = []                                   # Wade injuries and absences this run, repeated at the end
 WADE_LONG = []                                   # a long Wade injury stops the run like a Miami trade
 LONG_INJURY_GAMES = 10
-MARKET_NEWS = ("MIAMI TRADE", "MIAMI SIGNING", "MIAMI OFFER SHEET", "MIAMI LOSES", "MIAMI DRAFT")   # scripts/offseason_day.py
+MARKET_NEWS = ("MIAMI TRADE", "MIAMI SIGNING", "MIAMI OFFER SHEET", "MIAMI LOSES", "MIAMI DRAFT",
+               "WADE TRADE REQUEST")                                                                   # scripts/offseason_day.py
+TRADE_REQUEST = "WADE TRADE REQUEST"             # runtime/keep_picks.py: Wade asks for a trade; the run always stops
 
 
-def market_news(out):
+def market_news(out, day=None):
     """The summer's Miami lines of the day (`scripts/offseason_day.py`, read from the market's dated events and, on draft
     night, the draft record): each is reported; a trade starts "MIAMI TRADE" in the in-season format and stops the run
     like one."""
@@ -395,6 +408,20 @@ def market_news(out):
             say("    " + line)
             if line.startswith("MIAMI TRADE") and line not in TRADES_TODAY:
                 TRADES_TODAY.append(line)
+    trade_request_stop(out, day)
+
+
+def trade_request_stop(out, day=None):
+    """Wade's trade request (runtime/keep_picks.py: a Miami pick traded while his keep_picks request stood) stops the run
+    at once, even with --through-trades: the user hears of it the day it is written and confirms or withdraws it
+    (`scripts/player_milestone.py --reply`, kind trade_request); until then its pending entry stops every run
+    (`wade_waits`). The day's Miami trade lines and the request's are recorded first (`remember_stop`), so the resumed
+    day reports them without stopping on them again (on draft night the draft's MIAMI TRADE line is printed on every run
+    of the date). Mid-day, there is no checkpoint: like any pending decision, the day is committed when it closes."""
+    lines = [line for line in out.splitlines() if line.startswith(TRADE_REQUEST)]
+    if lines:
+        remember_stop(day or state()["current_date"], TRADES_TODAY + lines)
+        raise Stop("; ".join(lines))
 
 
 def national_day(day):
@@ -459,10 +486,11 @@ def miami_trade_day(day):
         draw()
         out += "\n" + run("scripts/run_trade.py", "--season-day", day, show=False)
     for line in out.splitlines():
-        if line.startswith(("MIAMI TRADE", "Miami trade", "Miami proposes", "Wade's request", "trade offers")):
+        if line.startswith(("MIAMI TRADE", "Miami trade", "Miami proposes", "Wade's request", "trade offers", TRADE_REQUEST)):
             say("    " + line)
         if line.startswith("MIAMI TRADE"):
             TRADES_TODAY.append(line)
+    trade_request_stop(out, day)
 
 
 def advance_day(day):
@@ -556,14 +584,19 @@ def reported(day):
     return set(record.get("lines") or []) if record.get("date") == day else set()
 
 
-def stop_on_news(day, lines):
-    """Stop the run on the day's news (a Miami trade, a long Wade injury): record the lines (`reported_stop`), then the
-    checkpoint and push, then tell the user."""
+def remember_stop(day, lines):
+    """Record the lines a stop on `day` reports (`current_state.reported_stop`), after those already recorded that day."""
     data = state()
     record = data.get("reported_stop") or {}
     kept = list(record.get("lines") or []) if record.get("date") == day else []
     data["reported_stop"] = {"date": day, "lines": kept + [line for line in lines if line not in kept]}
     write_state(data)
+
+
+def stop_on_news(day, lines):
+    """Stop the run on the day's news (a Miami trade, a long Wade injury): record the lines (`reported_stop`), then the
+    checkpoint and push, then tell the user."""
+    remember_stop(day, lines)
     checkpoint(day)
     say("DONE: " + "; ".join(lines))
 

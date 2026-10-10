@@ -98,6 +98,7 @@ python scripts/player_milestone.py --reply /path/to/reply.json --expected-versio
 | --- | --- | --- | --- |
 | `rookie_contract` | `accept`, `counter`, `decline`, `request` | Contract desk token | Appends Wade's entry to the rookie log. Counter needs numeric `percent_of_scale` within 80–120; accept uses exactly the latest club terms |
 | `consultation` | `approve`, `object` | Token beside the exact consultation ID | Records the answer, clears that pending consultation and lets the existing franchise rule consume it |
+| `trade_request` | `confirm`, `withdraw` | Token beside the exact trade request ID (the version of its `wade_requests.json`) | Records Wade's answer to the trade request his keep_picks request wrote (`runtime/keep_picks.py`) and clears its pending entry; confirming keeps it on record and the driver stopped (Miami's answer is not modelled yet), withdrawing withdraws it while the keep_picks request still stands |
 | `working_record` | `record` | Registry `--version` | Saves the preference and shows the next staff/club follow-up |
 
 Replies refuse an old version, wrong clock date, missing career evidence, closed record or repeated answer. A new review needs its own event. Demo state and browser-local choices are never evidence.
