@@ -2,9 +2,9 @@
 
 # Contract | Adrian Griffin
 
-Known through: 2006-01-02. [Open interactive contract](griffad01.html#contract) · [Contract history](griffad01.html#contract-history)
+Known through: 2006-01-07. [Open interactive contract](griffad01.html#contract) · [Contract history](griffad01.html#contract-history)
 
-Adrian Griffin: under contract. Evidence cutoff: 2006-01-02.
+Adrian Griffin: under contract. Evidence cutoff: 2006-01-07.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Adrian Griffin |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Denver Nuggets |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

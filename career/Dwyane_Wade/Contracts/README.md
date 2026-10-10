@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-01-02. [Search the contract directory](index.html)
+Known through 2006-01-07. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -10,10 +10,10 @@ Every tracked player has a current-contract view and complete available agreemen
 | --- | --- | --- | --- | --- |
 | [Aaron McKie](players/mckieaa01.md) | Philadelphia 76ers | under contract | Aaron McKie · existing contract; signing date not recorded | 1 |
 | [Aaron Miles](players/milesaa01.md) | Memphis Grizzlies | under contract | Aaron Miles · 2005-08-05 | 1 |
-| [Aaron Williams](players/williaa01.md) | Free agent | under contract | Aaron Williams · 2005-09-16 | 2 |
+| [Aaron Williams](players/williaa01.md) | Golden State Warriors | under contract | Aaron Williams · 2005-09-16 | 2 |
 | [Adam Harrington](players/harriad01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Adonal Foyle](players/foylead01.md) | Dallas Mavericks | released | No verified current agreement | 2 |
-| [Adrian Griffin](players/griffad01.md) | Free agent | under contract | No verified current agreement | 2 |
+| [Adrian Griffin](players/griffad01.md) | Denver Nuggets | under contract | No verified current agreement | 2 |
 | [Al Harrington](players/harrial01.md) | Indiana Pacers | under contract | Al Harrington · 2001-11-01 | 1 |
 | [Al Jefferson](players/aljefferson.md) | Toronto Raptors | under contract | Al Jefferson · 2004-07-01 | 1 |
 | [Alan Anderson](players/anderal01.md) | Los Angeles Lakers | under contract | Alan Anderson · 2005-08-02 | 1 |
@@ -163,7 +163,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Darius Miles](players/milesda01.md) | Cleveland Cavaliers | under contract | Darius Miles · 2004-07-15 | 2 |
 | [Darius Songaila](players/songada01.md) | Sacramento Kings | under contract | Darius Songaila · 2005-09-30 | 2 |
 | [Darko Milicic](players/milicda01.md) | Detroit Pistons | No verified contract record | No verified current agreement | 0 |
-| [Darrell Armstrong](players/armstda01.md) | Free agent | under contract | Darrell Armstrong · 2005-08-26 | 3 |
+| [Darrell Armstrong](players/armstda01.md) | Phoenix Suns | under contract | Darrell Armstrong · 2005-08-26 | 3 |
 | [Darrick Martin](players/martida01.md) | New Jersey Nets | under contract | Darrick Martin · 2005-09-23 | 1 |
 | [Darvin Ham](players/hamda01.md) | Free agent | under contract | Darvin Ham · 2003-09-23 | 2 |
 | [David Harrison](players/davidharrison.md) | Denver Nuggets | under contract | David Harrison · 2004-07-01 | 1 |
@@ -337,7 +337,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Juan Dixon](players/dixonju01.md) | Washington Wizards | under rookie contract | Juan Dixon · 2002-07-11 | 1 |
 | [Juaquin Hawkins](players/hawkiju01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Julius Hodge](players/hodgeju01.md) | Phoenix Suns | under contract | Julius Hodge · 2005-07-01 | 1 |
-| [Jumaine Jones](players/jonesju01.md) | Miami Heat | camp contract | Jumaine Jones · 2005-10-04 | 3 |
+| [Jumaine Jones](players/jonesju01.md) | Free agent | waived | No verified current agreement | 3 |
 | [Junior Harrington](players/harriju01.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Justin Reed](players/justinreed.md) | New Orleans/Oklahoma City Hornets | under contract | No verified current agreement | 1 |
 | [Juwan Howard](players/howarju01.md) | Los Angeles Clippers | under contract | Juwan Howard · 2003-07-16 | 2 |
@@ -427,7 +427,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Matt Bonner](players/bonnema01.md) | Toronto Raptors | under contract | Matt Bonner · 2005-09-16 | 1 |
 | [Matt Carroll](players/carroma01.md) | Miami Heat | under contract | Matt Carroll · 2005-08-02 | 1 |
 | [Matt Freije](players/mattfreije.md) | Free agent | under contract | No verified current agreement | 1 |
-| [Matt Harpring](players/harprma01.md) | Milwaukee Bucks | under contract | Matt Harpring · 2005-08-19 | 2 |
+| [Matt Harpring](players/harprma01.md) | Milwaukee Bucks | traded | Matt Harpring · 2005-08-19 | 2 |
 | [Maurice Baker](players/bakerma01.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Maurice Carter](players/cartema01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Maurice Evans](players/evansma01.md) | Golden State Warriors | under contract | Maurice Evans · 2005-09-09 | 2 |
@@ -502,7 +502,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Raja Bell](players/bellra01.md) | Philadelphia 76ers | under contract | Raja Bell · 2003-09-26 | 3 |
 | [Randy Brown](players/brownra02.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Randy Holcomb](players/holcora01.md) | Free agent | under contract | Randy Holcomb · 2005-08-12 | 1 |
-| [Randy Livingston](players/livinra01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
+| [Randy Livingston](players/livinra01.md) | Memphis Grizzlies | No verified contract record | No verified current agreement | 0 |
 | [Rashad McCants](players/mccanra01.md) | Washington Wizards | under contract | Rashad McCants · 2005-07-01 | 1 |
 | [Rashard Lewis](players/lewisra02.md) | Seattle SuperSonics | under contract | Rashard Lewis · 2005-08-02 | 2 |
 | [Rasheed Wallace](players/wallara01.md) | Portland Trail Blazers | under contract | Rasheed Wallace · 2004-08-12 | 2 |

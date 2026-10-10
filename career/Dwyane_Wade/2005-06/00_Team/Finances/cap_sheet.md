@@ -1,6 +1,6 @@
 # Miami Heat | Cap sheet
 
-December 19, 2005 · 2005-06 through 2012-13 · USD
+January 7, 2006 · 2005-06 through 2012-13 · USD
 
 [Finance guide](README.md) · [Roster and control](../Team/Roster/roster.json) · [Contract detail](contract_schedules.json)
 
@@ -8,9 +8,9 @@ December 19, 2005 · 2005-06 through 2012-13 · USD
 
 | Cap (published) | Committed salary | Free-agent holds | Roster charge | Room |
 | ---: | ---: | ---: | ---: | ---: |
-| 49,500,000 | 65,714,782 | 0 | 0 | -16,214,782 |
+| 49,500,000 | 65,169,186 | 0 | 0 | -15,669,186 |
 
-Committed salary counts contracts, exercised options and the unsigned first-round hold on December 19, 2005. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
+Committed salary counts contracts, exercised options and the unsigned first-round hold on January 7, 2006. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
 
 ## Eight-season commitments
 
@@ -27,12 +27,12 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | [Dwyane Wade](../Team/Player_Cards/dwyane_wade.md) | 2,526,600 | 3,201,202 | — | — | — | — | — | — |
 | [Caron Butler](../Team/Player_Cards/caron_butler.md) | 2,461,617 | — | — | — | — | — | — | — |
 | [Sebastian Telfair](../Team/Player_Cards/sebastian_telfair.md) | 1,010,040 | 1,080,480 | — | — | — | — | — | — |
-| [Jumaine Jones](../Team/Player_Cards/jumaine_jones.md) | 900,498 | — | — | — | — | — | — | — |
+| [Jumaine Jones](../Team/Player_Cards/jumaine_jones.md) | 900,498 (counts 354,902) | — | — | — | — | — | — | — |
 | [Eddie Gill](../Team/Player_Cards/eddie_gill.md) | 835,810 | — | — | — | — | — | — | — |
 | [Mike Wilks](../Team/Player_Cards/mike_wilks.md) | 745,248 | — | — | — | — | — | — | — |
 | [Matt Carroll](../Team/Player_Cards/matt_carroll.md) | 719,373 | — | — | — | — | — | — | — |
 | [Uroš Slokar](../Team/Player_Cards/uros_slokar.md) | — | — | — | — | — | — | — | — |
-| Counted | 65,714,782 | 61,342,709 | 20,797,867 | 7,944,626 | 0 | 0 | 0 | 0 |
+| Counted | 65,169,186 | 61,342,709 | 20,797,867 | 7,944,626 | 0 | 0 | 0 | 0 |
 
 ## Free-agent holds
 

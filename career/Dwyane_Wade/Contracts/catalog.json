@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-01-02",
+  "as_of": "2006-01-07",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -23,7 +23,7 @@
     {
       "player_id": "williaa01",
       "name": "Aaron Williams",
-      "team": "Free agent",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": "williaa01-2005-09-16",
       "recorded_agreements": 2,
@@ -50,7 +50,7 @@
     {
       "player_id": "griffad01",
       "name": "Adrian Griffin",
-      "team": "Free agent",
+      "team": "Denver Nuggets",
       "status": "under contract",
       "current_contract_id": null,
       "recorded_agreements": 2,
@@ -1400,7 +1400,7 @@
     {
       "player_id": "armstda01",
       "name": "Darrell Armstrong",
-      "team": "Free agent",
+      "team": "Phoenix Suns",
       "status": "under contract",
       "current_contract_id": "armstda01-2005-08-26",
       "recorded_agreements": 3,
@@ -2957,9 +2957,9 @@
     {
       "player_id": "jonesju01",
       "name": "Jumaine Jones",
-      "team": "Miami Heat",
-      "status": "camp contract",
-      "current_contract_id": "jonesju01-2005-10-04",
+      "team": "Free agent",
+      "status": "waived",
+      "current_contract_id": null,
       "recorded_agreements": 3,
       "href": "players/jonesju01.html#contract"
     },
@@ -3768,7 +3768,7 @@
       "player_id": "harprma01",
       "name": "Matt Harpring",
       "team": "Milwaukee Bucks",
-      "status": "under contract",
+      "status": "traded",
       "current_contract_id": "harprma01-2005-08-19",
       "recorded_agreements": 2,
       "href": "players/harprma01.html#contract"
@@ -4442,7 +4442,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "Free agent",
+      "team": "Memphis Grizzlies",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

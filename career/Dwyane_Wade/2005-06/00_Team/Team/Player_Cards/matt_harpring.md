@@ -10,7 +10,7 @@
 **Age at assessment:** 28 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** January 24, 2005 · **Statistics through:** 2005-12-18 
 
-**Contract/control:** December 19, 2005: traded to Milwaukee Bucks (2005-12-19-aaa5cfaab5). (register, 2005-12-19) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** December 19, 2005: traded to Milwaukee Bucks (2005-12-19-aaa5cfaab5). (register, 2006-01-07) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/harprma01.html#contract) · [Contract history](../../../../Contracts/players/harprma01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

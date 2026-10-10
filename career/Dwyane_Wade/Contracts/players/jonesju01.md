@@ -2,110 +2,13 @@
 
 # Contract | Jumaine Jones
 
-Known through: 2006-01-02. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
+Known through: 2006-01-07. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
 
-Jumaine Jones: camp contract. Evidence cutoff: 2006-01-02.
+Jumaine Jones: waived. Evidence cutoff: 2006-01-07.
 
 ## Current contract
 
-### Jumaine Jones · 2005-10-04
-
-Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
-
-| Contract term | Recorded value | Basis |
-| --- | --- | --- |
-| Signing date | 2005-10-04 |  |
-| Original term | Not recorded |  |
-| Reported original value | Not recorded | Not recorded |
-| Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $900,498 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 0 |  |
-
-### Contract identity and execution
-
-| Field | Recorded detail |
-| --- | --- |
-| Assigned club | Miami Heat |
-| Signing club | Miami Heat |
-| Contract ID | jonesju01-2005-10-04 |
-| Signing route / evidence basis | minimum |
-| Signing date | 2005-10-04 |
-| Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | camp_contract |
-| Contract wording | Not recorded |
-
-### Salary by season
-
-Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
-
-| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | $900,498 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-
-### Options and decision deadlines
-
-An option amount is conditional. No exercise or decline is assumed.
-
-| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
-| --- | --- | --- | --- | --- | --- |
-
-### Additional recorded annual compensation
-
-Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
-
-| Season | Signing bonus | Dead cap | Buyout |
-| --- | --- | --- | --- |
-| 2005-06 | Not recorded | Not recorded | Not recorded |
-
-### Guarantees, incentives and payment terms
-
-| Term | Recorded detail |
-| --- | --- |
-| Guarantee rider / amendment | Not recorded |
-| Guarantee triggers | Not recorded |
-| Guarantee date | 2006-01-10 |
-| Waiver deadline | Not recorded |
-| Bonus terms | Not recorded |
-| Payment schedule | Not recorded |
-| Buyout terms | Not recorded |
-| Promise | Not recorded |
-| Percent of scale | Not recorded |
-
-### Free agency, Bird rights and trade terms
-
-No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
-
-| Term | Recorded detail |
-| --- | --- |
-| Free agency | Not recorded |
-| Bird rights | Not recorded |
-| No trade clause | Not recorded |
-| Trade consent | Not recorded |
-| Trade restrictions | Not recorded |
-| Trade kicker | Not recorded |
-| Trade clauses | Not recorded |
-| Base year compensation | Not recorded |
-
-### Assignment history
-
-A trade assigns this contract; it does not create a duplicate signing.
-
-| Date | From | To | Transaction | Source |
-| --- | --- | --- | --- | --- |
-
-### Evidence and coverage
-
-Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10.
-
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
-
-#### Agreement evidence
-
-- [Dated signed-contract archive](../contract_records.json)
-- [Signing / contract source](../../2005-06/04_Training_Camp/camp_roster.json)
-- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+No verified current signed agreement is available in the dated record. The control and evidence sections below explain the recorded status.
 
 ### Current control and contract coverage
 
@@ -114,18 +17,20 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jumaine Jones |
-| Club / rights baseline | Miami Heat |
-| Control status | camp_contract |
-| Executed current contract | Recorded |
+| Club / rights baseline | Free agent |
+| Control status | waived |
+| Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
-Current signed salary detail appears in the contract below.
+Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10. Waived 2006-01-07: $354,902 stays on the 2005-06 books (payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first).
 
 | Season | Amount | Record kind |
 | --- | --- | --- |
+| 2003-04 | $638,679 | contract_salary |
+| 2005-06 | $900,498 | contract_salary |
 
 ### Draft-rights scale reference
 
@@ -187,7 +92,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
-| Status | camp_contract |
+| Status | waived |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -251,7 +156,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10.
+Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10. Waived 2006-01-07: $354,902 stays on the 2005-06 books (payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -261,17 +166,17 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2005-06/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 
-### Jumaine Jones · 2003-09-30
+### Jumaine Jones · 2005-10-04
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2003-09-30 |  |
+| Signing date | 2005-10-04 |  |
 | Original term | Not recorded |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $638,679 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | $1,539,177 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
@@ -282,11 +187,11 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing club | Miami Heat |
 | Contract ID | jonesju01-2003-09-30 |
 | Signing route / evidence basis | minimum |
-| Signing date | 2003-09-30 |
+| Signing date | 2005-10-04 |
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
-| Status | voided |
+| Status | waived |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -296,6 +201,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | $638,679 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $900,498 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -311,6 +217,7 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 | Season | Signing bonus | Dead cap | Buyout |
 | --- | --- | --- | --- |
 | 2003-04 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -318,7 +225,7 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 | --- | --- |
 | Guarantee rider / amendment | Not recorded |
 | Guarantee triggers | Not recorded |
-| Guarantee date | 2004-01-10 |
+| Guarantee date | 2006-01-10 |
 | Waiver deadline | Not recorded |
 | Bonus terms | Not recorded |
 | Payment schedule | Not recorded |
@@ -350,7 +257,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.
+Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10. Waived 2006-01-07: $354,902 stays on the 2005-06 books (payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -360,6 +267,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/guarantee_review.json)
 
 ### Jumaine Jones · existing contract; signing date not recorded
 
@@ -472,3 +380,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/guarantee_review.json)

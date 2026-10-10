@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2005-12-19",
+ "as_of": "2006-01-07",
  "season": "2005-06",
  "team": "Miami Heat",
  "roster_kind": "team_control_register",
@@ -264,9 +264,9 @@
     "SF"
    ],
    "date_of_birth": "1979-02-10",
-   "status": "camp_contract",
-   "control": "Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10.",
-   "working_role": "Rotation at SF, staff plan 9 minutes (rotation 2006-01-04)",
+   "status": "waived",
+   "control": "January 7, 2006: waived (payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first); $354,902 remains on the 2005-06 books.",
+   "working_role": "Left Miami (waived)",
    "player_card": "../Player_Cards/jumaine_jones.md",
    "bbr_id": "jonesju01"
   },

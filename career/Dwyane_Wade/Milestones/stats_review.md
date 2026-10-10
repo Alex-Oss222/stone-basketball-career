@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2006-01-02 · Miami Heat · active
+Career date: 2006-01-07 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-39 closed game records in 2005-06 through 2006-01-02. Competitions remain separate.
+41 closed game records in 2005-06 through 2006-01-07. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 32 | 37.1 | 25.7 | 6.5 | 4.1 | 1.7 | Complete |
+| regular | 34 | 37.3 | 26.0 | 6.4 | 4.1 | 1.9 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 282 | 502 | 0.562 | 46 | 100 | 0.460 |
+| regular | 306 | 548 | 0.558 | 50 | 109 | 0.459 |
 
 ## Closed source games
 
@@ -69,6 +69,8 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-12-29 | regular | Detroit Pistons | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_4.md) |
 | 2005-12-30 | regular | Washington Wizards | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md) |
 | 2006-01-01 | regular | Minnesota Timberwolves | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md) |
+| 2006-01-04 | regular | New Orleans/Oklahoma City Hornets | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_1/Game_2.md) |
+| 2006-01-06 | regular | Phoenix Suns | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_1/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -105,11 +107,11 @@ The next declared, closed game result or a chosen completed-period review.
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/review.json)
-- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/depth_chart.json)
+- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-04/review.json)
+- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-04/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/rotation.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-04/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
@@ -152,4 +154,6 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_4.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md)
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_1/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_1/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

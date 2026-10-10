@@ -2109,6 +2109,45 @@
     "to_team": "Miami Heat",
     "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json"
    }
+  },
+  {
+   "record_id": "jonesju01-2003-09-30-released-2006-01-07",
+   "recorded_on": "2006-01-07",
+   "player_id": "jonesju01",
+   "player": "Jumaine Jones",
+   "contract_id": "jonesju01-2003-09-30",
+   "event": "released",
+   "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/guarantee_review.json",
+   "contract": {
+    "player": "Jumaine Jones",
+    "bbr_id": "jonesju01",
+    "status": "waived",
+    "schedule": {
+     "2005-06": 900498
+    },
+    "amount_kind": {
+     "2005-06": "contract_salary"
+    },
+    "guaranteed": {
+     "2005-06": 0
+    },
+    "guarantee_date": "2006-01-10",
+    "signed_date": "2005-10-04",
+    "route": "minimum",
+    "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10. Waived 2006-01-07: $354,902 stays on the 2005-06 books (payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first).",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "waived_date": "2006-01-07",
+    "dead_money": {
+     "2005-06": 354902
+    },
+    "cap_amount": {
+     "2005-06": 354902
+    },
+    "contract_id": "jonesju01-2003-09-30",
+    "ended_on": "2006-01-07"
+   }
   }
  ]
 }

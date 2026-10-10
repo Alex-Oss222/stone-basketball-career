@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2006-01-02 · Miami Heat · complete
+Career date: 2006-01-07 · Miami Heat · complete
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -23,7 +23,7 @@ Activation: The club opens camp and records participation, evaluation or an actu
 
 ## Current depth chart
 
-Snapshot: 2005-12-21. Draft rights and unassigned arrivals are not assigned minutes.
+Snapshot: 2006-01-04. Draft rights and unassigned arrivals are not assigned minutes.
 
 | Position | Staff ordering | Interpretation |
 | --- | --- | --- |
@@ -56,6 +56,7 @@ Snapshot: 2005-12-21. Draft rights and unassigned arrivals are not assigned minu
 | 2005-10-31 | Miami Heat's rookie-scale extension decision on Caron Butler: no offer (clear: worth $3,797,198 (price $3,797,198: market price $3,797,198 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 0.7594, at or below 0.8; runtime/extensions.py, League/extension_decisions.json). |
 | 2005-12-19 | Trade with Milwaukee Bucks: Miami sends Matt Harpring for Joe Smith (accepted by engine draw None). Record: `00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json`. |
 | 2005-12-19 | Milwaukee Bucks offers Joe Smith for Matt Harpring; Miami's front office accepts. Record: `00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json`. |
+| 2006-01-07 | Miami waived Jumaine Jones (payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first); $354,902 remains on the 2005-06 books. |
 
 ## Your response to the staff
 
@@ -84,11 +85,11 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/review.json)
-- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/depth_chart.json)
+- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-04/review.json)
+- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-04/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/rotation.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-04/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
@@ -131,4 +132,6 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_4.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_5.md)
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_1/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_1/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_1/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

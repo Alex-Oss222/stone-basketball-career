@@ -2,9 +2,9 @@
 
 # Contract | Matt Harpring
 
-Known through: 2006-01-02. [Open interactive contract](harprma01.html#contract) · [Contract history](harprma01.html#contract-history)
+Known through: 2006-01-07. [Open interactive contract](harprma01.html#contract) · [Contract history](harprma01.html#contract-history)
 
-Matt Harpring: under contract. Evidence cutoff: 2006-01-02.
+Matt Harpring: traded. Evidence cutoff: 2006-01-07.
 
 ## Current contract
 
@@ -33,7 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2005-06 |
 | Verified final season | 2008-09 |
 | Verified expiry date | 2009-06-30 |
-| Status | under_contract |
+| Status | traded |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -111,11 +111,11 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
-- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Signing / contract source](../../2005-06/League/contracts.json)
 - [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 - [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 
 ### Current control and contract coverage
@@ -126,7 +126,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Matt Harpring |
 | Club / rights baseline | Milwaukee Bucks |
-| Control status | under_contract |
+| Control status | traded |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -198,7 +198,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2005-06 |
 | Verified final season | 2008-09 |
 | Verified expiry date | 2009-06-30 |
-| Status | under_contract |
+| Status | traded |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -276,11 +276,11 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
-- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Signing / contract source](../../2005-06/League/contracts.json)
 - [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
+- [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 - [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 
 ### Matt Harpring · existing contract; signing date not recorded

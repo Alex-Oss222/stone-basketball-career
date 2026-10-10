@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2005-12-19",
+ "as_of": "2006-01-07",
  "team": "Miami Heat",
  "status": "camp_decision",
  "game_ready": true,
@@ -21,8 +21,7 @@
   ],
   "SF": [
    "Caron Butler",
-   "Sebastian Telfair",
-   "Jumaine Jones"
+   "Sebastian Telfair"
   ],
   "PF": [
    "Mehmet Okur",
@@ -77,6 +76,11 @@
    "name": "Matt Harpring",
    "date": "2005-12-19",
    "status": "traded"
+  },
+  {
+   "name": "Jumaine Jones",
+   "date": "2006-01-07",
+   "status": "waived"
   }
  ]
 }

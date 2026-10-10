@@ -2,9 +2,9 @@
 
 # Contract | Joe Smith
 
-Known through: 2006-01-02. [Open interactive contract](smithjo02.html#contract) · [Contract history](smithjo02.html#contract-history)
+Known through: 2006-01-07. [Open interactive contract](smithjo02.html#contract) · [Contract history](smithjo02.html#contract-history)
 
-Joe Smith: under contract. Evidence cutoff: 2006-01-02.
+Joe Smith: under contract. Evidence cutoff: 2006-01-07.
 
 ## Current contract
 
@@ -112,6 +112,8 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
@@ -119,8 +121,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries07.txt)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
-- [Dated signed-contract archive](../contract_records.json)
 - [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 
 ### Current control and contract coverage
@@ -282,6 +282,8 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
@@ -289,8 +291,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries07.txt)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
-- [Dated signed-contract archive](../contract_records.json)
 - [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 
 ## Source records

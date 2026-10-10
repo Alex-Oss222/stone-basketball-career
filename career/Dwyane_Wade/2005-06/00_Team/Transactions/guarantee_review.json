@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "kind": "guarantee_review",
+ "season": "2005-06",
+ "guarantee_date": "2006-01-10",
+ "waive_by": "2006-01-07",
+ "rule": "(`guarantee_review`): non-guaranteed contracts still on the roster on\nJanuary 10, 2004 become guaranteed. The last day to waive one without that happening is January 7\n(waivers take 48 hours). The front office keeps a non-guaranteed player unless guaranteeing him\nwould take the payroll over the owner's ceiling; then the lowest-valued are waived first.",
+ "decided_on": "2006-01-07",
+ "decisions": [
+  {
+   "player": "Jumaine Jones",
+   "decision": "waive",
+   "basis": "payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first",
+   "charge": 354902
+  }
+ ]
+}

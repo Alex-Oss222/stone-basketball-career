@@ -4,7 +4,7 @@
 **Age at assessment:** 26 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** October 4, 2005 · **Statistics through:** 2006-01-06 
 
-**Contract/control:** Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10. (register, 2005-12-19) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** January 7, 2006: waived (payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first); $354,902 remains on the 2005-06 books. (register, 2006-01-07) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/jonesju01.html#contract) · [Contract history](../../../../Contracts/players/jonesju01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

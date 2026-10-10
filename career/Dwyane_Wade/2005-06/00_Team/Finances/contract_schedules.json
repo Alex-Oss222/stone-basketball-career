@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "owner": "ai_gm",
- "as_of": "2005-12-19",
+ "as_of": "2006-01-07",
  "team": "Miami Heat",
  "horizon": [
   "2005-06",
@@ -15,7 +15,7 @@
  ],
  "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
  "known_baseline": {
-  "2005-06": 65714782,
+  "2005-06": 65169186,
   "2006-07": 45903703,
   "2007-08": 20797867,
   "2008-09": 7944626,
@@ -665,7 +665,7 @@
   {
    "player": "Jumaine Jones",
    "bbr_id": "jonesju01",
-   "status": "camp_contract",
+   "status": "waived",
    "schedule": {
     "2005-06": 900498
    },
@@ -678,10 +678,17 @@
    "guarantee_date": "2006-01-10",
    "signed_date": "2005-10-04",
    "route": "minimum",
-   "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10.",
+   "notes": "Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10. Waived 2006-01-07: $354,902 stays on the 2005-06 books (payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first).",
    "sources": [
     "04_Training_Camp/camp_roster.json"
-   ]
+   ],
+   "waived_date": "2006-01-07",
+   "dead_money": {
+    "2005-06": 354902
+   },
+   "cap_amount": {
+    "2005-06": 354902
+   }
   },
   {
    "player": "Sam Cassell",
@@ -776,7 +783,7 @@
   "kind": "existing_obligations_only",
   "currency": "USD",
   "unit": "whole dollars",
-  "known_baseline_definition": "Counted 2005-06 team salary on 2005-12-19: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+  "known_baseline_definition": "Counted 2005-06 team salary on 2006-01-07: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
   "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
   "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
   "missing_definition": "Null means unresolved or not yet projected, never zero.",
@@ -821,7 +828,7 @@
   },
   {
    "season": "2005-06",
-   "scheduled_contract_salary": 65714782,
+   "scheduled_contract_salary": 65169186,
    "unsigned_first_round_holds": 0,
    "known_conditional_salary": 0,
    "unpriced_option_count": 0,
@@ -829,8 +836,8 @@
    "other_cap_charges": null,
    "total_team_salary": null,
    "cap_space": null,
-   "known_base_allocations": 65714782,
-   "base_plus_priced_options": 65714782,
+   "known_base_allocations": 65169186,
+   "base_plus_priced_options": 65169186,
    "reported_rounded_salary_count": 0,
    "subtotal_precision": "whole_dollars",
    "known_free_agent_holds": 0,

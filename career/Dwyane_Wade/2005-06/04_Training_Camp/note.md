@@ -17,5 +17,6 @@ status: active
 - 2005-10-31: Miami Heat's rookie-scale extension decision on Caron Butler: no offer (clear: worth $3,797,198 (price $3,797,198: market price $3,797,198 for his production, inside the minimum $771,123 and his maximum $12,000,000 with 4 years of service in 2006-07 under the 2005-06 cap rules) against 1 x the $5,000,000 mid-level: ratio 0.7594, at or below 0.8; runtime/extensions.py, League/extension_decisions.json).
 - 2005-12-19: Trade with Milwaukee Bucks: Miami sends Matt Harpring for Joe Smith (accepted by engine draw None). Record: `00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json`.
 - 2005-12-19: Milwaukee Bucks offers Joe Smith for Matt Harpring; Miami's front office accepts. Record: `00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json`.
+- 2006-01-07: Miami waived Jumaine Jones (payroll $65,714,782 is over the owner's ceiling $61,700,000; lowest value waived first); $354,902 remains on the 2005-06 books.
 
 ## Consequences

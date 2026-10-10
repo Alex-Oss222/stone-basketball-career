@@ -2,9 +2,9 @@
 
 # Contract | Antonio Burks
 
-Known through: 2006-01-02. [Open interactive contract](antonioburks.html#contract) · [Contract history](antonioburks.html#contract-history)
+Known through: 2006-01-07. [Open interactive contract](antonioburks.html#contract) · [Contract history](antonioburks.html#contract-history)
 
-Antonio Burks: under contract. Evidence cutoff: 2006-01-02.
+Antonio Burks: under contract. Evidence cutoff: 2006-01-07.
 
 ## Current contract
 

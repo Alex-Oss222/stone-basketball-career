@@ -8,9 +8,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 23 · **Height:** 6-7 · **Weight:** 228 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2006-01-06 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2006-01-07 
 
-**Contract/control:** Existing contract: 1 season(s) from 2005-06, $2,461,617 scheduled ($2,461,617 in 2005-06). (register, 2005-12-19) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing contract: 1 season(s) from 2005-06, $2,461,617 scheduled ($2,461,617 in 2005-06). (register, 2006-01-07) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/butleca01.html#contract) · [Contract history](../../../../Contracts/players/butleca01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
@@ -112,7 +112,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 67 closed Miami game(s) through 2004-09-30; 2004-05: 75 closed Miami game(s) through 2005-09-30; 2005-06: 34 closed Miami game(s) through 2006-01-06.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 67 closed Miami game(s) through 2004-09-30; 2004-05: 75 closed Miami game(s) through 2005-09-30; 2005-06: 34 closed Miami game(s) through 2006-01-07.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
