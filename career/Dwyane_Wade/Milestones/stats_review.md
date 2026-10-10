@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2006-03-06 · Miami Heat · active
+Career date: 2006-03-12 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-65 closed game records in 2005-06 through 2006-03-06. Competitions remain separate.
+69 closed game records in 2005-06 through 2006-03-12. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 58 | 37.3 | 26.8 | 6.2 | 4.1 | 1.7 | Complete |
+| regular | 62 | 36.9 | 26.5 | 6.1 | 4.0 | 1.7 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 539 | 964 | 0.559 | 84 | 179 | 0.469 |
+| regular | 571 | 1019 | 0.560 | 90 | 191 | 0.471 |
 
 ## Closed source games
 
@@ -95,6 +95,10 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2006-02-27 | regular | Toronto Raptors | Played | [Closed game](../2005-06/06_Regular_Season/02_February/Week_4/Game_3.md) |
 | 2006-03-01 | regular | Boston Celtics | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_1/Game_1.md) |
 | 2006-03-04 | regular | Atlanta Hawks | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_1/Game_2.md) |
+| 2006-03-06 | regular | Charlotte Bobcats | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_1/Game_3.md) |
+| 2006-03-08 | regular | Washington Wizards | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_2/Game_1.md) |
+| 2006-03-10 | regular | Golden State Warriors | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_2/Game_2.md) |
+| 2006-03-12 | regular | Cleveland Cavaliers | Played | [Closed game](../2005-06/06_Regular_Season/03_March/Week_2/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -205,4 +209,8 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/02_February/Week_4/Game_3.md)
 - [Closed game](../2005-06/06_Regular_Season/03_March/Week_1/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/03_March/Week_1/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/03_March/Week_1/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/03_March/Week_2/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/03_March/Week_2/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/03_March/Week_2/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

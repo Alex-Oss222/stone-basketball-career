@@ -2,9 +2,9 @@
 
 # Contract | Jason Hart
 
-Known through: 2006-03-06. [Open interactive contract](hartja01.html#contract) · [Contract history](hartja01.html#contract-history)
+Known through: 2006-03-12. [Open interactive contract](hartja01.html#contract) · [Contract history](hartja01.html#contract-history)
 
-Jason Hart: No verified contract record. Evidence cutoff: 2006-03-06.
+Jason Hart: No verified contract record. Evidence cutoff: 2006-03-12.
 
 ## Current contract
 

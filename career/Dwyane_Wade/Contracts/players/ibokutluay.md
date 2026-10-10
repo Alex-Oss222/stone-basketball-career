@@ -2,9 +2,9 @@
 
 # Contract | Ibo Kutluay
 
-Known through: 2006-03-06. [Open interactive contract](ibokutluay.html#contract) · [Contract history](ibokutluay.html#contract-history)
+Known through: 2006-03-12. [Open interactive contract](ibokutluay.html#contract) · [Contract history](ibokutluay.html#contract-history)
 
-Ibo Kutluay: under contract. Evidence cutoff: 2006-03-06.
+Ibo Kutluay: under contract. Evidence cutoff: 2006-03-12.
 
 ## Current contract
 

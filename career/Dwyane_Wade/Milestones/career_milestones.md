@@ -2,7 +2,7 @@
 
 # Dwyane Wade | Career milestones
 
-Career date: 2006-03-06. Born 1984-01-17. 209 regular-season and 14 playoff games closed.
+Career date: 2006-03-12. Born 1984-01-17. 213 regular-season and 14 playoff games closed.
 
 Milestones count closed regular-season games (the NBA convention); playoff milestones are their own record and preseason never counts. Each is dated by the game that reached it, with his age on that day. [Season tracker](calendar.md) · [All milestones](README.md)
 
@@ -17,6 +17,7 @@ Milestones count closed regular-season games (the NBA convention); playoff miles
 | First 10-assist game | 2003-12-21 | 19 years, 338 days | 2003-04 | [Golden State Warriors](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.md) | 25 pts, 4 reb, 11 ast |
 | First 30-point game | 2004-01-07 | 19 years, 355 days | 2003-04 | [Chicago Bulls](../2003-04/06_Regular_Season/01_January/Week_1/Game_3.md) | 32 pts, 6 reb, 6 ast |
 | First 40-point game | 2005-02-03 | 21 years, 17 days | 2004-05 | [Cleveland Cavaliers](../2004-05/06_Regular_Season/02_February/Week_1/Game_2.md) | 42 pts, 3 reb, 4 ast |
+| First 5-block game | 2006-03-12 | 22 years, 54 days | 2005-06 | [Cleveland Cavaliers](../2005-06/06_Regular_Season/03_March/Week_2/Game_3.md) | 24 pts, 6 reb, 3 ast |
 
 ## Regular-season milestones reached
 
@@ -44,14 +45,14 @@ Milestones count closed regular-season games (the NBA convention); playoff miles
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 5,000 career points | 4,520 | 480 |
-| 1,500 career rebounds | 1,129 | 371 |
-| 1,000 career assists | 882 | 118 |
-| 500 career steals | 335 | 165 |
-| 250 career blocks | 236 | 14 |
-| 250 career three-pointers made | 242 | 8 |
-| 2,000 career free throws made | 1,208 | 792 |
-| 300 career games played | 209 | 91 |
+| 5,000 career points | 4,606 | 394 |
+| 1,500 career rebounds | 1,147 | 353 |
+| 1,000 career assists | 891 | 109 |
+| 500 career steals | 346 | 154 |
+| 250 career blocks | 245 | 5 |
+| 250 career three-pointers made | 248 | 2 |
+| 2,000 career free throws made | 1,224 | 776 |
+| 300 career games played | 213 | 87 |
 
 ## Playoff milestones reached
 

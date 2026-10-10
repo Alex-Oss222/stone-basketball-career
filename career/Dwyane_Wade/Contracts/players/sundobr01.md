@@ -2,9 +2,9 @@
 
 # Contract | Bruno Šundov
 
-Known through: 2006-03-06. [Open interactive contract](sundobr01.html#contract) · [Contract history](sundobr01.html#contract-history)
+Known through: 2006-03-12. [Open interactive contract](sundobr01.html#contract) · [Contract history](sundobr01.html#contract-history)
 
-Bruno Šundov: minimum contract unverified. Evidence cutoff: 2006-03-06.
+Bruno Šundov: minimum contract unverified. Evidence cutoff: 2006-03-12.
 
 ## Current contract
 

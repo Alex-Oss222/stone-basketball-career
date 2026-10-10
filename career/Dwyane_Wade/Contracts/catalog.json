@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-03-06",
+  "as_of": "2006-03-12",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1130,7 +1130,7 @@
     {
       "player_id": "robincl02",
       "name": "Clifford Robinson",
-      "team": "Golden State Warriors",
+      "team": "Free agent",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4451,7 +4451,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "Atlanta Hawks",
+      "team": "Golden State Warriors",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -5162,7 +5162,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Free agent",
+      "team": "Los Angeles Lakers",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,

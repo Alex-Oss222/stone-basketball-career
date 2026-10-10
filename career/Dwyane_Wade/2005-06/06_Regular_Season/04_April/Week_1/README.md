@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2006-03-06](../../../../assets/stat_reports/personal_2005-06_2006-03-06.svg)
+![Player personal information and earned 2005-06 awards through 2006-03-12](../../../../assets/stat_reports/personal_2005-06_2006-03-12.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2006-03-06; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2006-03-12; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -49,7 +49,7 @@ Identity as of 2006-03-06; status snapshot dated 2005-10-26. User-established al
 
 ## Statistics
 
-As of **2006-03-06**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2006-03-12**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -67,7 +67,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-03-06, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-03-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](../../../../Stats_and_Awards/2005-06/04_April/Week_1/Stat_Detail.md)
 
@@ -82,11 +82,11 @@ Awards are confirmed through 2006-03-06, filed by the honor's period-end date; t
 | This week | 22 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [Previous week](../../../../Stats_and_Awards/2005-06/03_March/Week_4/README.md) | 22 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | Month through this week | 22 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Season through this week | 22 | Miami Heat | NBA | SG / PG | 58 | 58 | 37.3 | 9.3 | 16.6 | .559 | 1.4 | 3.1 | .469 | 7.8 | 13.5 | .580 | .603 | 6.8 | 7.3 | .936 | 1.7 | 4.4 | 6.2 | 4.1 | 1.8 | 1.2 | 1.7 | 3.1 | 26.8 | .677 | [East POW](../../../../Stats_and_Awards/League/2005-06/11_November/Week_2/League_Awards.md#player-of-the-week), [East POW](../../../../Stats_and_Awards/League/2005-06/11_November/Week_3/League_Awards.md#player-of-the-week), [East POM](../../../../Stats_and_Awards/League/2005-06/11_November/League_Awards.md#player-of-the-month), [East POW](../../../../Stats_and_Awards/League/2005-06/12_December/Week_1/League_Awards.md#player-of-the-week), [East POW](../../../../Stats_and_Awards/League/2005-06/12_December/Week_2/League_Awards.md#player-of-the-week), [East POW](../../../../Stats_and_Awards/League/2005-06/01_January/Week_1/League_Awards.md#player-of-the-week), [All-Star](../../../../Stats_and_Awards/League/2005-06/All_Star.md#all-stars), [East POM](../../../../Stats_and_Awards/League/2005-06/01_January/League_Awards.md#player-of-the-month), [East POM](../../../../Stats_and_Awards/League/2005-06/02_February/League_Awards.md#player-of-the-month) |
+| Season through this week | 22 | Miami Heat | NBA | SG / PG | 62 | 62 | 36.9 | 9.2 | 16.4 | .560 | 1.5 | 3.1 | .471 | 7.8 | 13.4 | .581 | .605 | 6.6 | 7.1 | .938 | 1.7 | 4.4 | 6.1 | 4.0 | 1.9 | 1.3 | 1.7 | 3.2 | 26.5 | .678 | [East POW](../../../../Stats_and_Awards/League/2005-06/11_November/Week_2/League_Awards.md#player-of-the-week), [East POW](../../../../Stats_and_Awards/League/2005-06/11_November/Week_3/League_Awards.md#player-of-the-week), [East POM](../../../../Stats_and_Awards/League/2005-06/11_November/League_Awards.md#player-of-the-month), [East POW](../../../../Stats_and_Awards/League/2005-06/12_December/Week_1/League_Awards.md#player-of-the-week), [East POW](../../../../Stats_and_Awards/League/2005-06/12_December/Week_2/League_Awards.md#player-of-the-week), [East POW](../../../../Stats_and_Awards/League/2005-06/01_January/Week_1/League_Awards.md#player-of-the-week), [All-Star](../../../../Stats_and_Awards/League/2005-06/All_Star.md#all-stars), [East POM](../../../../Stats_and_Awards/League/2005-06/01_January/League_Awards.md#player-of-the-month), [East POM](../../../../Stats_and_Awards/League/2005-06/02_February/League_Awards.md#player-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-03-06, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-03-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
