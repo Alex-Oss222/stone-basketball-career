@@ -18,14 +18,14 @@ Activation: The authoritative current date and recorded event determine what is 
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2005-12-19-trade-2005-12-19-aaa5cfaab5 |
+| Last closed event | 2005-12-17-miami-heat-at-cleveland-cavaliers |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-12-19 | Current checkpoint | 2005-12-19-trade-2005-12-19-aaa5cfaab5 | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2005-12-19 | Current checkpoint | 2005-12-17-miami-heat-at-cleveland-cavaliers | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2005-10-04 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
 | 2005-12-20 | Next Miami game, vs Atlanta Hawks | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |

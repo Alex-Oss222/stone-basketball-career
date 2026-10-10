@@ -18,5 +18,11 @@
  "last_closed_event": "2005-12-17-miami-heat-at-cleveland-cavaliers",
  "pending_player_decisions": [],
  "rolled_over_from": "2004-05",
- "rolled_over_on": "2005-10-01"
+ "rolled_over_on": "2005-10-01",
+ "reported_stop": {
+  "date": "2005-12-19",
+  "lines": [
+   "MIAMI TRADE: Milwaukee Bucks offered and Miami accepts: Miami sends Matt Harpring for Joe Smith (2005-12-19-aaa5cfaab5)"
+  ]
+ }
 }

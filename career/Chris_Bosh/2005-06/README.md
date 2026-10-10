@@ -14,19 +14,19 @@ Career date: **2005-12-19** · Toronto Raptors · #4 · PF · age 21
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 14/14 | 37.9 | 23.9 | 10.5 | 3.4 | 0.6 | 1.6 | 56.3 | 40.0 | 92.3 | 63.4 | 17-7 |
+| 2005-06 | 21 | Toronto Raptors | 15/15 | 37.5 | 23.1 | 10.4 | 3.4 | 0.6 | 1.5 | 56.5 | 40.0 | 92.3 | 63.3 | 17-8 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 14 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 15 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 37.9 |
-| Points | 24.5 | 23.9 |
-| Rebounds | 11.4 | 10.5 |
+| Minutes | 36.5 | 37.5 |
+| Points | 24.5 | 23.1 |
+| Rebounds | 11.4 | 10.4 |
 | Assists | 4.2 | 3.4 |
-| FG% | 52.0 | 56.3 |
+| FG% | 52.0 | 56.5 |
 | 3P% | 41.7 | 40.0 |
 | FT% | 91.3 | 92.3 |
 
@@ -55,3 +55,4 @@ No recorded awards this season.
 | Milestone | Date | Age | Opponent |
 | --- | --- | --- | --- |
 | First 40-point game | 2005-12-16 | 21 years, 267 days | Golden State Warriors |
+| 1,500 career rebounds | 2005-12-19 | 21 years, 270 days | Orlando Magic |

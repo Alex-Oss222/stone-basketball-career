@@ -683,7 +683,7 @@
   {
    "player": "P.J. Brown",
    "bbr_id": "brownpj01",
-   "club": "Phoenix Suns",
+   "club": "New Orleans/Oklahoma City Hornets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -2049,7 +2049,7 @@
   {
    "player": "Matt Harpring",
    "bbr_id": "harprma01",
-   "club": "Miami Heat",
+   "club": "Milwaukee Bucks",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -2058,7 +2058,8 @@
     "2007-08": 9624474,
     "2008-09": 10459656
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Miami Heat"
   },
   {
    "player": "Al Harrington",
@@ -2226,14 +2227,15 @@
   {
    "player": "Grant Hill",
    "bbr_id": "hillgr01",
-   "club": "Minnesota Timberwolves",
+   "club": "Boston Celtics",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 15694250,
     "2006-07": 16901500
    },
-   "source": "league contract ledger 2004-05 (existing)"
+   "source": "league contract ledger 2004-05 (existing)",
+   "signed_club": "Minnesota Timberwolves"
   },
   {
    "player": "Kirk Hinrich",
@@ -2406,7 +2408,7 @@
   {
    "player": "Steven Hunter",
    "bbr_id": "huntest01",
-   "club": "New Orleans/Oklahoma City Hornets",
+   "club": "Phoenix Suns",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -2416,7 +2418,8 @@
     "2008-09": 5594070,
     "2009-10": 6040745
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "New Orleans/Oklahoma City Hornets"
   },
   {
    "player": "Andre Iguodala",
@@ -2826,7 +2829,7 @@
   {
    "player": "Jason Kapono",
    "bbr_id": "kaponja01",
-   "club": "Boston Celtics",
+   "club": "Minnesota Timberwolves",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -2941,7 +2944,7 @@
   {
    "player": "Kyle Korver",
    "bbr_id": "korveky01",
-   "club": "New Orleans/Oklahoma City Hornets",
+   "club": "Phoenix Suns",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -2951,7 +2954,8 @@
     "2008-09": 11550352,
     "2009-10": 12472624
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "New Orleans/Oklahoma City Hornets"
   },
   {
    "player": "Nenad Krstić",
@@ -3362,7 +3366,7 @@
   {
    "player": "Chris Mihm",
    "bbr_id": "mihmch01",
-   "club": "Phoenix Suns",
+   "club": "New Orleans/Oklahoma City Hornets",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -3372,7 +3376,8 @@
     "2008-09": 6707439,
     "2009-10": 7243014
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Phoenix Suns"
   },
   {
    "player": "Aaron Miles",
@@ -4039,7 +4044,7 @@
   {
    "player": "Kendrick Perkins",
    "bbr_id": "perkike01",
-   "club": "Boston Celtics",
+   "club": "Minnesota Timberwolves",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -4051,7 +4056,8 @@
    "rookie_scale": true,
    "option_history": [
     "2006-07 team option: exercise (2005-10-31; clear: ratio 1.49 at or above 1.2; runtime/options.py, League/option_decisions.json)"
-   ]
+   ],
+   "signed_club": "Boston Celtics"
   },
   {
    "player": "Morris Peterson",
@@ -4618,14 +4624,15 @@
   {
    "player": "Joe Smith",
    "bbr_id": "smithjo02",
-   "club": "Milwaukee Bucks",
+   "club": "Miami Heat",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 6353200,
     "2006-07": 6807000
    },
-   "source": "league contract ledger 2004-05 (existing)"
+   "source": "league contract ledger 2004-05 (existing)",
+   "signed_club": "Milwaukee Bucks"
   },
   {
    "player": "Josh Smith",
@@ -5731,13 +5738,14 @@
   {
    "player": "Lorenzen Wright",
    "bbr_id": "wrighlo02",
-   "club": "Boston Celtics",
+   "club": "Minnesota Timberwolves",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2005-06": 7700000
    },
-   "source": "league contract ledger 2004-05 (existing)"
+   "source": "league contract ledger 2004-05 (existing)",
+   "signed_club": "Boston Celtics"
   },
   {
    "player": "Derrick Zimmerman",

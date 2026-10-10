@@ -29,7 +29,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [2003-04](2003-04/README.md) | 19 | Toronto Raptors | 75/75 | 35.7 | 13.9 | 7.9 | 1.4 | 1.0 | 1.4 | 47.7 | 42.2 | 71.2 | 53.0 | 42-40 · lost conference semifinals |
 | [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 81/81 | 39.2 | 17.8 | 9.3 | 2.8 | 1.0 | 1.4 | 50.2 | 41.8 | 83.3 | 57.1 | 59-23 · lost finals |
-| [2005-06](2005-06/README.md) | 21 | Toronto Raptors | 14/14 | 37.9 | 23.9 | 10.5 | 3.4 | 0.6 | 1.6 | 56.3 | 40.0 | 92.3 | 63.4 | 17-7 |
+| [2005-06](2005-06/README.md) | 21 | Toronto Raptors | 15/15 | 37.5 | 23.1 | 10.4 | 3.4 | 0.6 | 1.5 | 56.5 | 40.0 | 92.3 | 63.3 | 17-8 |
 
 ## Playoffs
 
@@ -72,6 +72,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | 250 career assists | 2005-02-13 | 20 years, 326 days | 2004-05 | 126 | Los Angeles Clippers |
 | 2,000 career points | 2005-02-22 | 20 years, 335 days | 2004-05 | 128 | New Jersey Nets |
 | 500 career free throws made | 2005-04-11 | 21 years, 18 days | 2004-05 | 151 | Indiana Pacers |
+| 1,500 career rebounds | 2005-12-19 | 21 years, 270 days | 2005-06 | 171 | Orlando Magic |
 | 100 career playoff points | 2004-05-05 | 20 years, 42 days | 2003-04 | 7 | New Jersey Nets |
 | 10 career playoff games | 2005-04-24 | 21 years, 31 days | 2004-05 | 10 | Philadelphia 76ers |
 | 100 career playoff rebounds | 2005-05-02 | 21 years, 39 days | 2004-05 | 13 | Philadelphia 76ers |
@@ -83,11 +84,11 @@ A real player the user follows, not one the user controls: his club decides his 
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 3,000 career points | 2,824 | 176 |
-| 1,500 career rebounds | 1,497 | 3 |
-| 500 career assists | 376 | 124 |
+| 3,000 career points | 2,836 | 164 |
+| 2,000 career rebounds | 1,506 | 494 |
+| 500 career assists | 379 | 121 |
 | 250 career steals | 165 | 85 |
 | 250 career blocks | 246 | 4 |
 | 100 career three-pointers made | 46 | 54 |
 | 1,000 career free throws made | 600 | 400 |
-| 200 career games played | 170 | 30 |
+| 200 career games played | 171 | 29 |

@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `pietrm
 
 ## Simulated statistics
 
-As of **2005-12-19**: 24 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2005-12-19**: 25 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 18 | 9 | 26.0 | 4.3 | 10.3 | .416 | 1.2 | 3.6 | .338 | 3.1 | 6.7 | .458 | .476 | 2.5 | 3.6 | .703 | 0.9 | 3.0 | 3.9 | 0.8 | 0.9 | 0.2 | 1.8 | 3.3 | 12.3 | .518 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 19 | 10 | 26.2 | 4.4 | 10.7 | .409 | 1.4 | 3.8 | .356 | 3.0 | 6.8 | .438 | .473 | 2.6 | 3.7 | .700 | 0.9 | 3.0 | 3.9 | 0.9 | 0.9 | 0.2 | 1.8 | 3.2 | 12.7 | .515 | — |
 
 ### Month
 
@@ -42,7 +42,7 @@ As of **2005-12-19**: 24 closed games feed this card. Per-game columns use the r
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [November 2005](../2005-06/11_November/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 13 | 7 | 26.1 | 3.9 | 9.4 | .418 | 1.4 | 3.0 | .462 | 2.5 | 6.4 | .398 | .492 | 2.9 | 4.1 | .717 | 0.9 | 2.9 | 3.8 | 0.7 | 0.8 | 0.2 | 1.5 | 3.1 | 12.2 | .544 | — |
-| [December 2005](../2005-06/12_December/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 5 | 2 | 25.7 | 5.2 | 12.6 | .413 | 0.8 | 5.2 | .154 | 4.4 | 7.4 | .595 | .444 | 1.4 | 2.2 | .636 | 1.0 | 3.2 | 4.2 | 1.2 | 1.2 | 0.0 | 2.6 | 3.8 | 12.6 | .464 | — |
+| [December 2005](../2005-06/12_December/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 6 | 3 | 26.4 | 5.3 | 13.5 | .395 | 1.3 | 5.7 | .235 | 4.0 | 7.8 | .511 | .444 | 1.8 | 2.8 | .647 | 0.8 | 3.2 | 4.0 | 1.3 | 1.2 | 0.2 | 2.5 | 3.3 | 13.8 | .469 | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [March 2006](../2005-06/03_March/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -63,7 +63,7 @@ As of **2005-12-19**: 24 closed games feed this card. Per-game columns use the r
 | [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 4 | 1 | 26.4 | 4.8 | 11.0 | .432 | 1.2 | 3.2 | .385 | 3.5 | 7.8 | .452 | .489 | 3.0 | 4.5 | .667 | 1.5 | 2.2 | 3.8 | 0.5 | 0.8 | 0.2 | 1.5 | 2.8 | 13.8 | .530 | — |
 | [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 4 | 2 | 25.7 | 4.8 | 12.0 | .396 | 1.0 | 5.2 | .190 | 3.8 | 6.8 | .556 | .438 | 1.8 | 2.8 | .636 | 0.5 | 3.2 | 3.8 | 1.5 | 1.0 | 0.0 | 2.5 | 4.0 | 12.2 | .464 | — |
-| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 1 | 0 | 25.6 | 7.0 | 15.0 | .467 | 0.0 | 5.0 | .000 | 7.0 | 10.0 | .700 | .467 | 0.0 | 0.0 | N/A | 3.0 | 3.0 | 6.0 | 0.0 | 2.0 | 0.0 | 3.0 | 3.0 | 14.0 | .467 | — |
+| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 2 | 1 | 27.6 | 6.5 | 16.5 | .394 | 2.0 | 6.5 | .308 | 4.5 | 10.0 | .450 | .455 | 2.0 | 3.0 | .667 | 1.5 | 3.0 | 4.5 | 1.0 | 1.5 | 0.5 | 2.5 | 2.0 | 17.0 | .477 | — |
 | [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 23 | Charlotte Bobcats | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -85,32 +85,32 @@ As of **2005-12-19**: 24 closed games feed this card. Per-game columns use the r
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 185 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2005-06 regular season. Coverage: **complete**; 203 located attempts, 0 unlocated, 0 outside the view, 0 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 24 of 24 closed games; 18 tracked appearances form the denominator below (2005-11-02 to 2005-12-17).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 25 of 25 closed games; 19 tracked appearances form the denominator below (2005-11-02 to 2005-12-19).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 35 | 69 | 50.7% | 3.89 | 3.83 |
-| Outside paint, under 12 ft | 3 | 4 | 75.0% | 0.33 | 0.22 |
-| Outside paint, 12 to under 18 ft | 8 | 16 | 50.0% | 0.89 | 0.89 |
-| 18 ft to the three-point line | 9 | 31 | 29.0% | 1.00 | 1.72 |
-| Three-point range | 22 | 65 | 33.8% | 3.67 | 3.61 |
-| All field goals | 77 | 185 | 41.6% | 9.78 | 10.28 |
+| Paint | 37 | 77 | 48.1% | 3.89 | 4.05 |
+| Outside paint, under 12 ft | 3 | 4 | 75.0% | 0.32 | 0.21 |
+| Outside paint, 12 to under 18 ft | 8 | 16 | 50.0% | 0.84 | 0.84 |
+| 18 ft to the three-point line | 9 | 33 | 27.3% | 0.95 | 1.74 |
+| Three-point range | 26 | 73 | 35.6% | 4.11 | 3.84 |
+| All field goals | 83 | 203 | 40.9% | 10.11 | 10.68 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2005-06 is simulated: 24 closed regular-season games through 2005-12-19. Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2005-06 is simulated: 25 closed regular-season games through 2005-12-19. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | GS | 68 | 0 | 8.0 | 3.6 | 1.5 | 0.6 | 0.2 | 0.1 | 0.3 | 46.3% | 33.3% | 74.0% |
 | 2004-05 | Charlotte Bobcats | 69 | 56 | 29.6 | 13.7 | 4.7 | 1.9 | 1.0 | 0.4 | 1.9 | 42.7% | 33.0% | 73.0% |
-| 2005-06 | Charlotte Bobcats | 18 | 9 | 26.0 | 12.3 | 3.9 | 0.8 | 0.9 | 0.2 | 1.8 | 41.6% | 33.8% | 70.3% |
+| 2005-06 | Charlotte Bobcats | 19 | 10 | 26.2 | 12.7 | 3.9 | 0.9 | 0.9 | 0.2 | 1.8 | 40.9% | 35.6% | 70.0% |
 
 ## Playoff statistics by year
 

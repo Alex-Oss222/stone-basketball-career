@@ -10,7 +10,7 @@
     "age": 21,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2005-12-19-trade-2005-12-19-aaa5cfaab5",
+  "current_event": "2005-12-17-miami-heat-at-cleveland-cavaliers",
   "current_screen": "calendar",
   "screens": [
     {
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2005-12-19-trade-2005-12-19-aaa5cfaab5"
+              "2005-12-17-miami-heat-at-cleveland-cavaliers"
             ],
             [
               "Pending player decisions",
@@ -66,7 +66,7 @@
             [
               "2005-12-19",
               "Current checkpoint",
-              "2005-12-19-trade-2005-12-19-aaa5cfaab5",
+              "2005-12-17-miami-heat-at-cleveland-cavaliers",
               "Recorded",
               {
                 "label": "Owning event",
