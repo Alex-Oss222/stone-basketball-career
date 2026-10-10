@@ -1,6 +1,6 @@
 ---
 type: regular_season_week
-status: active
+status: complete
 month: April
 week: 1
 days: 1-7

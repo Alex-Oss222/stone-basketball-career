@@ -5512,6 +5512,64 @@
    },
    "note": "claimed off waivers from Cleveland Cavaliers (worst record first)",
    "waiver": "2005-06-market-2006-04-04-waive-hunteli01"
+  },
+  {
+   "id": "2005-06-market-2006-04-08-expire-livinra01",
+   "date": "2006-04-08",
+   "kind": "expire",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "New Jersey Nets",
+   "to": null,
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": null,
+   "note": "10-day contract ended (1.0 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-04-08-waive-johnser02",
+   "date": "2006-04-08",
+   "kind": "waive",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": "Sacramento Kings",
+   "to": null,
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-04-10"
+  },
+  {
+   "id": "2005-06-market-2006-04-08-ten_day-livinra01",
+   "date": "2006-04-08",
+   "kind": "ten_day",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-04-18",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.8 x fit"
   }
  ],
  "market_days": [
@@ -5672,6 +5730,7 @@
   "2006-04-04",
   "2006-04-05",
   "2006-04-06",
-  "2006-04-07"
+  "2006-04-07",
+  "2006-04-08"
  ]
 }
