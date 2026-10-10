@@ -2,9 +2,9 @@
 
 # Contract | Jamal Sampson
 
-Known through: 2006-02-27. [Open interactive contract](sampsja01.html#contract) · [Contract history](sampsja01.html#contract-history)
+Known through: 2006-03-02. [Open interactive contract](sampsja01.html#contract) · [Contract history](sampsja01.html#contract-history)
 
-Jamal Sampson: under contract. Evidence cutoff: 2006-02-27.
+Jamal Sampson: under contract. Evidence cutoff: 2006-03-02.
 
 ## Current contract
 

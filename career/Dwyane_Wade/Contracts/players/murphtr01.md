@@ -2,9 +2,9 @@
 
 # Contract | Troy Murphy
 
-Known through: 2006-02-27. [Open interactive contract](murphtr01.html#contract) · [Contract history](murphtr01.html#contract-history)
+Known through: 2006-03-02. [Open interactive contract](murphtr01.html#contract) · [Contract history](murphtr01.html#contract-history)
 
-Troy Murphy: under contract. Evidence cutoff: 2006-02-27.
+Troy Murphy: under contract. Evidence cutoff: 2006-03-02.
 
 ## Current contract
 

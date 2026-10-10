@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2006-02-27 · Miami Heat · active
+Career date: 2006-03-02 · Miami Heat · active
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 
@@ -69,11 +69,11 @@ An actual transaction update with its source and applicable player rights.
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-15/review.json)
-- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-15/depth_chart.json)
+- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-01/review.json)
+- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-01/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-15/rotation.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-03-01/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
@@ -140,4 +140,6 @@ An actual transaction update with its source and applicable player rights.
 - [Closed game](../2005-06/06_Regular_Season/02_February/Week_3/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/02_February/Week_4/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/02_February/Week_4/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/02_February/Week_4/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/03_March/Week_1/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

@@ -1,6 +1,6 @@
 # 2005-06 standings
 
-Through 2006-03-01, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2006-03-02, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
@@ -14,10 +14,10 @@ Through 2006-03-01, from closed simulated results only (`runtime/standings.py`).
 | 6 | Orlando Magic | 31 | 26 | .544 | 10 |
 | 7 | Indiana Pacers | 26 | 28 | .481 | 13.5 |
 | 8 | Philadelphia 76ers | 26 | 31 | .456 | 15 |
-| 9 | Cleveland Cavaliers | 26 | 32 | .448 | 15.5 |
+| 9 | Cleveland Cavaliers | 26 | 33 | .441 | 16 |
 | 10 | New Jersey Nets | 25 | 32 | .439 | 16 |
-| 11 | Milwaukee Bucks | 23 | 35 | .397 | 18.5 |
-| 12 | Chicago Bulls | 22 | 34 | .393 | 18.5 |
+| 11 | Chicago Bulls | 23 | 34 | .404 | 18 |
+| 12 | Milwaukee Bucks | 23 | 35 | .397 | 18.5 |
 | 13 | Washington Wizards | 17 | 39 | .304 | 23.5 |
 | 14 | New York Knicks | 17 | 40 | .298 | 24 |
 | 15 | Charlotte Bobcats | 16 | 43 | .271 | 26 |
@@ -28,9 +28,9 @@ Through 2006-03-01, from closed simulated results only (`runtime/standings.py`).
 | --- | --- | --- | --- | --- | --- |
 | 1 | Minnesota Timberwolves | 40 | 17 | .702 | — |
 | 2 | Phoenix Suns | 38 | 18 | .679 | 1.5 |
-| 3 | San Antonio Spurs | 37 | 19 | .661 | 2.5 |
-| 4 | Sacramento Kings | 37 | 20 | .649 | 3 |
-| 5 | Dallas Mavericks | 33 | 23 | .589 | 6.5 |
+| 3 | Sacramento Kings | 37 | 20 | .649 | 3 |
+| 4 | San Antonio Spurs | 37 | 20 | .649 | 3 |
+| 5 | Dallas Mavericks | 34 | 23 | .596 | 6 |
 | 6 | Los Angeles Clippers | 30 | 26 | .536 | 9.5 |
 | 7 | Utah Jazz | 29 | 28 | .509 | 11 |
 | 8 | Los Angeles Lakers | 29 | 29 | .500 | 11.5 |

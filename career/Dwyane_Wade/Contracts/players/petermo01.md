@@ -2,9 +2,9 @@
 
 # Contract | Morris Peterson
 
-Known through: 2006-02-27. [Open interactive contract](petermo01.html#contract) · [Contract history](petermo01.html#contract-history)
+Known through: 2006-03-02. [Open interactive contract](petermo01.html#contract) · [Contract history](petermo01.html#contract-history)
 
-Morris Peterson: under contract. Evidence cutoff: 2006-02-27.
+Morris Peterson: under contract. Evidence cutoff: 2006-03-02.
 
 ## Current contract
 

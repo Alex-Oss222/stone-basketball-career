@@ -2,9 +2,9 @@
 
 # Contract | Jarrett Jack
 
-Known through: 2006-02-27. [Open interactive contract](jackja01.html#contract) · [Contract history](jackja01.html#contract-history)
+Known through: 2006-03-02. [Open interactive contract](jackja01.html#contract) · [Contract history](jackja01.html#contract-history)
 
-Jarrett Jack: under contract. Evidence cutoff: 2006-02-27.
+Jarrett Jack: under contract. Evidence cutoff: 2006-03-02.
 
 ## Current contract
 

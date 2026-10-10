@@ -2,9 +2,9 @@
 
 # Contract | Aaron Miles
 
-Known through: 2006-02-27. [Open interactive contract](milesaa01.html#contract) · [Contract history](milesaa01.html#contract-history)
+Known through: 2006-03-02. [Open interactive contract](milesaa01.html#contract) · [Contract history](milesaa01.html#contract-history)
 
-Aaron Miles: under contract. Evidence cutoff: 2006-02-27.
+Aaron Miles: under contract. Evidence cutoff: 2006-03-02.
 
 ## Current contract
 

@@ -4,7 +4,7 @@
 
 ![Chris Bosh career overview](assets/career_overview.svg)
 
-Career date: **2006-02-27** · Toronto Raptors · #4 · PF · age 21
+Career date: **2006-03-02** · Toronto Raptors · #4 · PF · age 21
 
 A real player the user follows, not one the user controls: his club decides his moves and the engine plays his games. Every number below comes from closed simulated games and the league's recorded award decisions.
 
@@ -29,7 +29,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [2003-04](2003-04/README.md) | 19 | Toronto Raptors | 75/75 | 35.7 | 13.9 | 7.9 | 1.4 | 1.0 | 1.4 | 47.7 | 42.2 | 71.2 | 53.0 | 42-40 · lost conference semifinals |
 | [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 81/81 | 39.2 | 17.8 | 9.3 | 2.8 | 1.0 | 1.4 | 50.2 | 41.8 | 83.3 | 57.1 | 59-23 · lost finals |
-| [2005-06](2005-06/README.md) | 21 | Toronto Raptors | 43/43 | 38.1 | 22.4 | 10.3 | 3.6 | 0.9 | 1.4 | 52.2 | 36.4 | 89.8 | 59.5 | 40-15 |
+| [2005-06](2005-06/README.md) | 21 | Toronto Raptors | 45/45 | 38.1 | 22.5 | 10.5 | 3.7 | 1.0 | 1.4 | 52.4 | 37.1 | 89.6 | 59.5 | 41-16 |
 
 ## Playoffs
 
@@ -78,6 +78,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | 1,500 career rebounds | 2005-12-19 | 21 years, 270 days | 2005-06 | 171 | Orlando Magic |
 | 250 career blocks | 2005-12-27 | 21 years, 278 days | 2005-06 | 174 | Detroit Pistons |
 | 3,000 career points | 2006-01-09 | 21 years, 291 days | 2005-06 | 179 | Chicago Bulls |
+| 200 career games played | 2006-02-27 | 21 years, 340 days | 2005-06 | 200 | Miami Heat |
 | 100 career playoff points | 2004-05-05 | 20 years, 42 days | 2003-04 | 7 | New Jersey Nets |
 | 10 career playoff games | 2005-04-24 | 21 years, 31 days | 2004-05 | 10 | Philadelphia 76ers |
 | 100 career playoff rebounds | 2005-05-02 | 21 years, 39 days | 2004-05 | 13 | Philadelphia 76ers |
@@ -89,11 +90,11 @@ A real player the user follows, not one the user controls: his club decides his 
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 4,000 career points | 3,455 | 545 |
-| 2,000 career rebounds | 1,793 | 207 |
-| 500 career assists | 482 | 18 |
-| 250 career steals | 194 | 56 |
-| 500 career blocks | 283 | 217 |
-| 100 career three-pointers made | 54 | 46 |
-| 1,000 career free throws made | 747 | 253 |
-| 200 career games played | 199 | 1 |
+| 4,000 career points | 3,501 | 499 |
+| 2,000 career rebounds | 1,821 | 179 |
+| 500 career assists | 493 | 7 |
+| 250 career steals | 199 | 51 |
+| 500 career blocks | 285 | 215 |
+| 100 career three-pointers made | 55 | 45 |
+| 1,000 career free throws made | 752 | 248 |
+| 300 career games played | 201 | 99 |

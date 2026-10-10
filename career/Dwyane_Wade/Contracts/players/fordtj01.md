@@ -2,9 +2,9 @@
 
 # Contract | T.J. Ford
 
-Known through: 2006-02-27. [Open interactive contract](fordtj01.html#contract) · [Contract history](fordtj01.html#contract-history)
+Known through: 2006-03-02. [Open interactive contract](fordtj01.html#contract) · [Contract history](fordtj01.html#contract-history)
 
-T.J. Ford: under contract. Evidence cutoff: 2006-02-27.
+T.J. Ford: under contract. Evidence cutoff: 2006-03-02.
 
 ## Current contract
 
