@@ -5830,6 +5830,122 @@
    },
    "contract": null,
    "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-04-19-expire-martida01",
+   "date": "2006-04-19",
+   "kind": "expire",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "from": "Golden State Warriors",
+   "to": null,
+   "role": {
+    "player_id": "Darrick Martin",
+    "bbr_id": "martida01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 339
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-04-19-rest_of_season-smithch04",
+   "date": "2006-04-19",
+   "kind": "rest_of_season",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "from": "Houston Rockets",
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Charles Smith",
+    "bbr_id": "smithch04",
+    "position": "SG",
+    "games": 22,
+    "minutes": 210
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 11.8 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2005-06-market-2006-04-19-expire-augmost01",
+   "date": "2006-04-19",
+   "kind": "expire",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 385
+   },
+   "contract": null,
+   "note": "10-day contract ended (6.1 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-04-19-expire-pricero01",
+   "date": "2006-04-19",
+   "kind": "expire",
+   "player": "Ronnie Price",
+   "bbr_id": "pricero01",
+   "from": "Seattle SuperSonics",
+   "to": null,
+   "role": {
+    "player_id": "Ronnie Price",
+    "bbr_id": "pricero01",
+    "position": "PG",
+    "games": 29,
+    "minutes": 150
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-04-19-waive-davisda01",
+   "date": "2006-04-19",
+   "kind": "waive",
+   "player": "Dale Davis",
+   "bbr_id": "davisda01",
+   "from": "Toronto Raptors",
+   "to": null,
+   "role": {
+    "player_id": "Dale Davis",
+    "bbr_id": "davisda01",
+    "position": "C",
+    "games": 28,
+    "minutes": 178
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-04-21"
+  },
+  {
+   "id": "2005-06-market-2006-04-19-ten_day-pricero01",
+   "date": "2006-04-19",
+   "kind": "ten_day",
+   "player": "Ronnie Price",
+   "bbr_id": "pricero01",
+   "from": null,
+   "to": "Toronto Raptors",
+   "role": {
+    "player_id": "Ronnie Price",
+    "bbr_id": "pricero01",
+    "position": "PG",
+    "games": 29,
+    "minutes": 150
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.11 x fit"
   }
  ],
  "market_days": [
@@ -6001,6 +6117,7 @@
   "2006-04-15",
   "2006-04-16",
   "2006-04-17",
-  "2006-04-18"
+  "2006-04-18",
+  "2006-04-19"
  ]
 }
