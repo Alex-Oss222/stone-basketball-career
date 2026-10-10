@@ -5428,6 +5428,46 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 5.19 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-04-04-waive-hunteli01",
+   "date": "2006-04-04",
+   "kind": "waive",
+   "player": "Lindsey Hunter",
+   "bbr_id": "hunteli01",
+   "from": "Cleveland Cavaliers",
+   "to": null,
+   "role": {
+    "player_id": "Lindsey Hunter",
+    "bbr_id": "hunteli01",
+    "position": "PG",
+    "games": 30,
+    "minutes": 353
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-04-06"
+  },
+  {
+   "id": "2005-06-market-2006-04-04-ten_day-smithch04",
+   "date": "2006-04-04",
+   "kind": "ten_day",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "from": null,
+   "to": "Cleveland Cavaliers",
+   "role": {
+    "player_id": "Charles Smith",
+    "bbr_id": "smithch04",
+    "position": "SG",
+    "games": 22,
+    "minutes": 210
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.68 x fit"
   }
  ],
  "market_days": [
@@ -5584,6 +5624,7 @@
   "2006-03-31",
   "2006-04-01",
   "2006-04-02",
-  "2006-04-03"
+  "2006-04-03",
+  "2006-04-04"
  ]
 }
