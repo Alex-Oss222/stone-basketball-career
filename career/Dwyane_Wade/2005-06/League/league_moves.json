@@ -5771,6 +5771,47 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 2.79 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-04-16-clear-martida01",
+   "date": "2006-04-16",
+   "kind": "clear",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Darrick Martin",
+    "bbr_id": "martida01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 339
+   },
+   "contract": null,
+   "note": "cleared waivers from Houston Rockets: a free agent",
+   "waiver": "2005-06-market-2006-04-14-waive-martida01"
+  },
+  {
+   "id": "2005-06-market-2006-04-16-ten_day-martida01",
+   "date": "2006-04-16",
+   "kind": "ten_day",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Darrick Martin",
+    "bbr_id": "martida01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 339
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.16 x fit"
   }
  ],
  "market_days": [
@@ -5939,6 +5980,7 @@
   "2006-04-12",
   "2006-04-13",
   "2006-04-14",
-  "2006-04-15"
+  "2006-04-15",
+  "2006-04-16"
  ]
 }

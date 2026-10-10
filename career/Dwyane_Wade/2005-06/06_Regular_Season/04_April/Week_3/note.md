@@ -14,4 +14,6 @@ days: 15-21
 
 ## Games and events
 
+- 2006-04-16: Chicago Bulls 98 at Miami Heat 99 — Miami Heat W 99-98 ([Game 1](Game_1.md), event `2006-04-16-chicago-bulls-at-miami-heat`)
+
 ## Consequences
