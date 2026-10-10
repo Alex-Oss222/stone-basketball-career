@@ -4060,6 +4060,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 0.0 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-02-14-claim-duprero01",
+   "date": "2006-02-14",
+   "kind": "claim",
+   "player": "Ronald Dupree",
+   "bbr_id": "duprero01",
+   "from": null,
+   "to": "Memphis Grizzlies",
+   "role": {
+    "player_id": "Ronald Dupree",
+    "bbr_id": "duprero01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 265
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Chicago Bulls (worst record first)",
+   "waiver": "2005-06-market-2006-02-12-waive-duprero01"
   }
  ],
  "market_days": [
@@ -4167,6 +4189,7 @@
   "2006-02-10",
   "2006-02-11",
   "2006-02-12",
-  "2006-02-13"
+  "2006-02-13",
+  "2006-02-14"
  ]
 }
