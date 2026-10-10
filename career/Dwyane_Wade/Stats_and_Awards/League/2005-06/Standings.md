@@ -1,6 +1,6 @@
 # 2005-06 standings
 
-Through 2006-01-04, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2006-01-05, from closed simulated results only (`runtime/standings.py`). Real 2005-06 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
@@ -14,8 +14,8 @@ Through 2006-01-04, from closed simulated results only (`runtime/standings.py`).
 | 6 | Orlando Magic | 15 | 14 | .517 | 6 |
 | 7 | Philadelphia 76ers | 16 | 16 | .500 | 6.5 |
 | 8 | New Jersey Nets | 14 | 15 | .483 | 7 |
-| 9 | Cleveland Cavaliers | 13 | 16 | .448 | 8 |
-| 10 | Indiana Pacers | 13 | 16 | .448 | 8 |
+| 9 | Cleveland Cavaliers | 14 | 16 | .467 | 7.5 |
+| 10 | Indiana Pacers | 13 | 17 | .433 | 8.5 |
 | 11 | Milwaukee Bucks | 12 | 17 | .414 | 9 |
 | 12 | Chicago Bulls | 12 | 19 | .387 | 10 |
 | 13 | New York Knicks | 10 | 19 | .345 | 11 |
@@ -38,7 +38,7 @@ Through 2006-01-04, from closed simulated results only (`runtime/standings.py`).
 | 10 | Seattle SuperSonics | 14 | 17 | .452 | 7 |
 | 11 | Memphis Grizzlies | 13 | 17 | .433 | 7.5 |
 | 12 | Utah Jazz | 13 | 19 | .406 | 8.5 |
-| 13 | Houston Rockets | 10 | 19 | .345 | 10 |
-| 14 | Golden State Warriors | 10 | 22 | .312 | 11.5 |
+| 13 | Golden State Warriors | 11 | 22 | .333 | 11 |
+| 14 | Houston Rockets | 10 | 20 | .333 | 10.5 |
 | 15 | Portland Trail Blazers | 6 | 26 | .188 | 15.5 |
 
