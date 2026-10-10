@@ -2,9 +2,9 @@
 
 # Contract | Ronny Turiaf
 
-Known through: 2006-04-03. [Open interactive contract](turiaro01.html#contract) · [Contract history](turiaro01.html#contract-history)
+Known through: 2006-04-09. [Open interactive contract](turiaro01.html#contract) · [Contract history](turiaro01.html#contract-history)
 
-Ronny Turiaf: under contract. Evidence cutoff: 2006-04-03.
+Ronny Turiaf: under contract. Evidence cutoff: 2006-04-09.
 
 ## Current contract
 

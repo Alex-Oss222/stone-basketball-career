@@ -2,9 +2,9 @@
 
 # Contract | Linton Johnson
 
-Known through: 2006-04-03. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
+Known through: 2006-04-09. [Open interactive contract](johnsli01.html#contract) · [Contract history](johnsli01.html#contract-history)
 
-Linton Johnson: under contract. Evidence cutoff: 2006-04-03.
+Linton Johnson: under contract. Evidence cutoff: 2006-04-09.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Linton Johnson |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Boston Celtics |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

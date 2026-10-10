@@ -2728,13 +2728,14 @@
   {
    "player": "Linton Johnson",
    "bbr_id": "johnsli01",
-   "club": "San Antonio Spurs",
+   "club": "Boston Celtics",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2005-06": 719373
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "San Antonio Spurs"
   },
   {
    "player": "Damon Jones",
@@ -3180,13 +3181,14 @@
   {
    "player": "Darrick Martin",
    "bbr_id": "martida01",
-   "club": "New Jersey Nets",
+   "club": "Houston Rockets",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2005-06": 1138500
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "New Jersey Nets"
   },
   {
    "player": "Kenyon Martin",
@@ -4208,7 +4210,7 @@
   {
    "player": "Ronnie Price",
    "bbr_id": "pricero01",
-   "club": "Philadelphia 76ers",
+   "club": "San Antonio Spurs",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -4608,7 +4610,7 @@
   {
    "player": "Charles Smith",
    "bbr_id": "smithch04",
-   "club": "Portland Trail Blazers",
+   "club": "Cleveland Cavaliers",
    "route": "minimum",
    "kind": "new",
    "schedule": {

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-04-03",
+  "as_of": "2006-04-09",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -923,7 +923,7 @@
     {
       "player_id": "smithch04",
       "name": "Charles Smith",
-      "team": "Free agent",
+      "team": "Cleveland Cavaliers",
       "status": "under contract",
       "current_contract_id": "smithch04-2005-08-19",
       "recorded_agreements": 2,
@@ -1958,7 +1958,7 @@
     {
       "player_id": "johnser02",
       "name": "Ervin Johnson",
-      "team": "Sacramento Kings",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "johnser02-existing-d23ec1018463",
       "recorded_agreements": 1,
@@ -3389,7 +3389,7 @@
     {
       "player_id": "hunteli01",
       "name": "Lindsey Hunter",
-      "team": "Cleveland Cavaliers",
+      "team": "Sacramento Kings",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3398,7 +3398,7 @@
     {
       "player_id": "johnsli01",
       "name": "Linton Johnson",
-      "team": "Free agent",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": "johnsli01-2005-09-23",
       "recorded_agreements": 1,
@@ -4451,7 +4451,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "New Jersey Nets",
+      "team": "Sacramento Kings",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

@@ -2,9 +2,9 @@
 
 # Contract | Ben Handlogten
 
-Known through: 2006-04-03. [Open interactive contract](handlbe01.html#contract) · [Contract history](handlbe01.html#contract-history)
+Known through: 2006-04-09. [Open interactive contract](handlbe01.html#contract) · [Contract history](handlbe01.html#contract-history)
 
-Ben Handlogten: under contract. Evidence cutoff: 2006-04-03.
+Ben Handlogten: under contract. Evidence cutoff: 2006-04-09.
 
 ## Current contract
 

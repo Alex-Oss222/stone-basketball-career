@@ -2,9 +2,9 @@
 
 # Contract | Samuel Dalembert
 
-Known through: 2006-04-03. [Open interactive contract](dalemsa01.html#contract) · [Contract history](dalemsa01.html#contract-history)
+Known through: 2006-04-09. [Open interactive contract](dalemsa01.html#contract) · [Contract history](dalemsa01.html#contract-history)
 
-Samuel Dalembert: under contract. Evidence cutoff: 2006-04-03.
+Samuel Dalembert: under contract. Evidence cutoff: 2006-04-09.
 
 ## Current contract
 

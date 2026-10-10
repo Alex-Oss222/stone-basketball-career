@@ -2,9 +2,9 @@
 
 # Contract | Rusty LaRue
 
-Known through: 2006-04-03. [Open interactive contract](larueru01.html#contract) · [Contract history](larueru01.html#contract-history)
+Known through: 2006-04-09. [Open interactive contract](larueru01.html#contract) · [Contract history](larueru01.html#contract-history)
 
-Rusty LaRue: No verified contract record. Evidence cutoff: 2006-04-03.
+Rusty LaRue: No verified contract record. Evidence cutoff: 2006-04-09.
 
 ## Current contract
 

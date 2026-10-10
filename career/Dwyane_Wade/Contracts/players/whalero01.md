@@ -2,9 +2,9 @@
 
 # Contract | Robert Whaley
 
-Known through: 2006-04-03. [Open interactive contract](whalero01.html#contract) · [Contract history](whalero01.html#contract-history)
+Known through: 2006-04-09. [Open interactive contract](whalero01.html#contract) · [Contract history](whalero01.html#contract-history)
 
-Robert Whaley: under contract. Evidence cutoff: 2006-04-03.
+Robert Whaley: under contract. Evidence cutoff: 2006-04-09.
 
 ## Current contract
 

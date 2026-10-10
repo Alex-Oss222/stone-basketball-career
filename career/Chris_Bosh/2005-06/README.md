@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2006-04-03** · Toronto Raptors · #4 · PF · age 22
+Career date: **2006-04-09** · Toronto Raptors · #4 · PF · age 22
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,21 +14,21 @@ Career date: **2006-04-03** · Toronto Raptors · #4 · PF · age 22
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 61/61 | 37.6 | 22.3 | 10.2 | 3.3 | 0.9 | 1.3 | 53.0 | 37.0 | 90.3 | 60.1 | 53-20 |
+| 2005-06 | 21 | Toronto Raptors | 65/65 | 37.6 | 21.9 | 10.3 | 3.3 | 0.9 | 1.3 | 52.1 | 32.7 | 89.5 | 59.2 | 56-21 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 61 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-06 row (Year 3, primary star), retained by the user's 2005 offseason framework on 2005-06-16; minutes from the profile's Minutes target (36 to 37 MPG, midpoint), since the arc row states none; the row gives no steals, blocks or true shooting; actual from 65 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
 | Minutes | 36.5 | 37.6 |
-| Points | 24.5 | 22.3 |
-| Rebounds | 11.4 | 10.2 |
+| Points | 24.5 | 21.9 |
+| Rebounds | 11.4 | 10.3 |
 | Assists | 4.2 | 3.3 |
-| FG% | 52.0 | 53.0 |
-| 3P% | 41.7 | 37.0 |
-| FT% | 91.3 | 90.3 |
+| FG% | 52.0 | 52.1 |
+| 3P% | 41.7 | 32.7 |
+| FT% | 91.3 | 89.5 |
 
 ## Playoffs
 
@@ -65,3 +65,4 @@ No playoff games closed.
 | 3,000 career points | 2006-01-09 | 21 years, 291 days | Chicago Bulls |
 | 200 career games played | 2006-02-27 | 21 years, 340 days | Miami Heat |
 | 500 career assists | 2006-03-07 | 21 years, 348 days | Cleveland Cavaliers |
+| 2,000 career rebounds | 2006-04-07 | 22 years, 14 days | New Orleans/Oklahoma City Hornets |

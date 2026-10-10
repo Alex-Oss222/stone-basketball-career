@@ -2,9 +2,9 @@
 
 # Contract | Charles Smith
 
-Known through: 2006-04-03. [Open interactive contract](smithch04.html#contract) · [Contract history](smithch04.html#contract-history)
+Known through: 2006-04-09. [Open interactive contract](smithch04.html#contract) · [Contract history](smithch04.html#contract-history)
 
-Charles Smith: under contract. Evidence cutoff: 2006-04-03.
+Charles Smith: under contract. Evidence cutoff: 2006-04-09.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Charles Smith |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Cleveland Cavaliers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

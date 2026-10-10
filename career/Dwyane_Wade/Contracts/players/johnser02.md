@@ -2,9 +2,9 @@
 
 # Contract | Ervin Johnson
 
-Known through: 2006-04-03. [Open interactive contract](johnser02.html#contract) · [Contract history](johnser02.html#contract-history)
+Known through: 2006-04-09. [Open interactive contract](johnser02.html#contract) · [Contract history](johnser02.html#contract-history)
 
-Ervin Johnson: under contract. Evidence cutoff: 2006-04-03.
+Ervin Johnson: under contract. Evidence cutoff: 2006-04-09.
 
 ## Current contract
 
@@ -119,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ervin Johnson |
-| Club / rights baseline | Sacramento Kings |
+| Club / rights baseline | Free agent |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
