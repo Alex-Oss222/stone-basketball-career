@@ -4490,6 +4490,47 @@
    },
    "contract": null,
    "note": "10-day contract ended (8.1 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-02-26-clear-johnser02",
+   "date": "2006-02-26",
+   "kind": "clear",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": null,
+   "note": "cleared waivers from Cleveland Cavaliers: a free agent",
+   "waiver": "2005-06-market-2006-02-24-waive-johnser02"
+  },
+  {
+   "id": "2005-06-market-2006-02-26-ten_day-livinra01",
+   "date": "2006-02-26",
+   "kind": "ten_day",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-03-08",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.98 x fit"
   }
  ],
  "market_days": [
@@ -4609,6 +4650,7 @@
   "2006-02-22",
   "2006-02-23",
   "2006-02-24",
-  "2006-02-25"
+  "2006-02-25",
+  "2006-02-26"
  ]
 }
