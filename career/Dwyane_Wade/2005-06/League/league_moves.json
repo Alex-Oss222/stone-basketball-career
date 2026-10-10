@@ -5147,6 +5147,72 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.65 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-03-26-claim-eisleho01",
+   "date": "2006-03-26",
+   "kind": "claim",
+   "player": "Howard Eisley",
+   "bbr_id": "eisleho01",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Howard Eisley",
+    "bbr_id": "eisleho01",
+    "position": "PG",
+    "games": 32,
+    "minutes": 394
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Philadelphia 76ers (worst record first)",
+   "waiver": "2005-06-market-2006-03-24-waive-eisleho01"
+  },
+  {
+   "id": "2005-06-market-2006-03-26-claim-williaa01",
+   "date": "2006-03-26",
+   "kind": "claim",
+   "player": "Aaron Williams",
+   "bbr_id": "williaa01",
+   "from": null,
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Aaron Williams",
+    "bbr_id": "williaa01",
+    "position": "C",
+    "games": 48,
+    "minutes": 791
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Portland Trail Blazers (worst record first)",
+   "waiver": "2005-06-market-2006-03-24-waive-williaa01"
+  },
+  {
+   "id": "2005-06-market-2006-03-26-rest_of_season-robincl02",
+   "date": "2006-03-26",
+   "kind": "rest_of_season",
+   "player": "Clifford Robinson",
+   "bbr_id": "robincl02",
+   "from": "Atlanta Hawks",
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Clifford Robinson",
+    "bbr_id": "robincl02",
+    "position": "PF",
+    "games": 80,
+    "minutes": 1863
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "kept: 23.8 minutes a game on his 10-day contracts"
   }
  ],
  "market_days": [
@@ -5294,6 +5360,7 @@
   "2006-03-22",
   "2006-03-23",
   "2006-03-24",
-  "2006-03-25"
+  "2006-03-25",
+  "2006-03-26"
  ]
 }
