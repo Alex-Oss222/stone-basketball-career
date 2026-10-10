@@ -73,7 +73,9 @@ class LiveLedgerTests(unittest.TestCase):
         for row in rows:
             current = row["current_contract_id"]
             if current is None:
-                self.assertIn(row["status"], ("voided", "released"))
+                # His latest contract ended too: voided, released, or waived at a guarantee review (Jumaine Jones,
+                # January 7, 2006).
+                self.assertIn(row["status"], ("voided", "released", "waived"))
                 continue
             # A later contract may be current, with another club (a summer signing) or with Miami again (Jumaine Jones's
             # 2005 camp invitation); the ended Miami one never is.
