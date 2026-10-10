@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 26 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 4, 2005 · **Statistics through:** 2005-12-20 
+**Opening assessment:** October 4, 2005 · **Statistics through:** 2005-12-21 
 
 **Contract/control:** Camp contract from October 4, 2005: non-guaranteed minimum $900,498, guaranteed if still on the roster on 2006-01-10. (register, 2005-12-19) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at SF, staff plan 7 minutes (staff rotation dated 2005-12-07, [record](../Depth_Chart/Reviews/2005-12-07/rotation.json)).
+**Role:** Rotation at SF, staff plan 9 minutes (staff rotation dated 2005-12-21, [record](../Depth_Chart/Reviews/2005-12-21/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -33,11 +33,12 @@ Unassessed.
 | 2005-11-09 | Staff rotation of 2005-11-09: rotation at SF, staff plan 7 minutes. | [Rotation](../Depth_Chart/Reviews/2005-11-09/rotation.json) |
 | 2005-11-23 | Staff rotation of 2005-11-23: rotation at SF, staff plan 7 minutes. | [Rotation](../Depth_Chart/Reviews/2005-11-23/rotation.json) |
 | 2005-12-07 | Staff rotation of 2005-12-07: rotation at SF, staff plan 7 minutes. | [Rotation](../Depth_Chart/Reviews/2005-12-07/rotation.json) |
+| 2005-12-21 | Staff rotation of 2005-12-21: rotation at SF, staff plan 9 minutes. | [Rotation](../Depth_Chart/Reviews/2005-12-21/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../04_Training_Camp/camp_roster.json), 2004-05 simulated season totals.
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-12-07.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-12-21.
 
 <!-- yearly-statistics:start -->
 
