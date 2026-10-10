@@ -5312,6 +5312,122 @@
    "contract": null,
    "note": "cleared waivers from New Jersey Nets: a free agent",
    "waiver": "2005-06-market-2006-03-29-waive-martida01"
+  },
+  {
+   "id": "2005-06-market-2006-04-03-expire-augmost01",
+   "date": "2006-04-03",
+   "kind": "expire",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": "Golden State Warriors",
+   "to": null,
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 385
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-04-03-ten_day-martida01",
+   "date": "2006-04-03",
+   "kind": "ten_day",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "from": null,
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Darrick Martin",
+    "bbr_id": "martida01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 339
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-04-13",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.1 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-04-03-expire-pricero01",
+   "date": "2006-04-03",
+   "kind": "expire",
+   "player": "Ronnie Price",
+   "bbr_id": "pricero01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Ronnie Price",
+    "bbr_id": "pricero01",
+    "position": "PG",
+    "games": 29,
+    "minutes": 150
+   },
+   "contract": null,
+   "note": "10-day contract ended (1.2 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-04-03-expire-smithch04",
+   "date": "2006-04-03",
+   "kind": "expire",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Charles Smith",
+    "bbr_id": "smithch04",
+    "position": "SG",
+    "games": 22,
+    "minutes": 210
+   },
+   "contract": null,
+   "note": "10-day contract ended (4.7 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-04-03-waive-johnsli01",
+   "date": "2006-04-03",
+   "kind": "waive",
+   "player": "Linton Johnson",
+   "bbr_id": "johnsli01",
+   "from": "San Antonio Spurs",
+   "to": null,
+   "role": {
+    "player_id": "Linton Johnson",
+    "bbr_id": "johnsli01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 524
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-04-05"
+  },
+  {
+   "id": "2005-06-market-2006-04-03-ten_day-pricero01",
+   "date": "2006-04-03",
+   "kind": "ten_day",
+   "player": "Ronnie Price",
+   "bbr_id": "pricero01",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "Ronnie Price",
+    "bbr_id": "pricero01",
+    "position": "PG",
+    "games": 29,
+    "minutes": 150
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-04-13",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.19 x fit"
   }
  ],
  "market_days": [
@@ -5467,6 +5583,7 @@
   "2006-03-30",
   "2006-03-31",
   "2006-04-01",
-  "2006-04-02"
+  "2006-04-02",
+  "2006-04-03"
  ]
 }

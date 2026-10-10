@@ -2,9 +2,9 @@
 
 # Contract | Darrick Martin
 
-Known through: 2006-04-02. [Open interactive contract](martida01.html#contract) · [Contract history](martida01.html#contract-history)
+Known through: 2006-04-03. [Open interactive contract](martida01.html#contract) · [Contract history](martida01.html#contract-history)
 
-Darrick Martin: under contract. Evidence cutoff: 2006-04-02.
+Darrick Martin: under contract. Evidence cutoff: 2006-04-03.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Darrick Martin |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Houston Rockets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

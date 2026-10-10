@@ -4,7 +4,7 @@
 
 NBA regular season · 2005-06
 
-407 tracked players · 1094 closed games in this record · Through April 2, 2006.
+407 tracked players · 1094 closed games in this record · Through April 3, 2006.
 
 ## Leaders
 
@@ -190,7 +190,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Dajuan Wagner](../Players/wagneda02.md) | 23 | CLE | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Darvin Ham](../Players/hamda01.md) | 32 | ATL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [David Wesley](../Players/wesleda01.md) | 35 | NO | NBA | SG | 60 | 60 | 40.2 | 4.5 | 10.8 | .422 | 2.2 | 5.5 | .401 | 2.4 | 5.3 | .444 | .523 | 3.0 | 3.8 | .809 | 0.5 | 3.2 | 3.7 | 3.4 | 1.6 | 0.2 | 2.1 | 3.5 | 14.3 | .576 |
-| [DeShawn Stevenson](../Players/stevede01.md) | 24 | UTAH | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [DeShawn Stevenson](../Players/stevede01.md) | 25 | UTAH | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Dion Glover](../Players/glovedi01.md) | 27 | ATL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Doug Christie](../Players/chrisdo01.md) | 35 | SAC | NBA | SG | 4 | 2 | 31.5 | 2.8 | 5.2 | .524 | 0.0 | 0.2 | .000 | 2.8 | 5.0 | .550 | .524 | 2.8 | 4.5 | .611 | 0.8 | 3.8 | 4.5 | 1.5 | 1.2 | 0.0 | 2.0 | 4.2 | 8.2 | .571 |
 | [Dwyane Wade](../Players/wadedw01.md) | 22 | MIA | NBA | SG | 73 | 73 | 37.2 | 9.5 | 16.7 | .568 | 1.5 | 3.2 | .478 | 8.0 | 13.5 | .589 | .613 | 6.8 | 7.3 | .940 | 1.7 | 4.1 | 5.8 | 4.1 | 1.9 | 1.3 | 1.8 | 3.3 | 27.3 | .686 |
@@ -699,7 +699,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Leon Smith](../Players/smithle01.md) | 25 | SEA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Lorenzen Wright](../Players/wrighlo02.md) | 30 | MEM | NBA | C | 72 | 72 | 26.4 | 3.2 | 7.4 | .430 | 0.0 | 0.2 | .062 | 3.2 | 7.2 | .441 | .431 | 1.6 | 2.8 | .578 | 2.1 | 3.2 | 5.3 | 1.2 | 0.8 | 0.8 | 1.7 | 2.9 | 8.0 | .462 |
 | [Mengke Bateer](../Players/bateeme01.md) | 30 | TOR | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Michael Olowokandi](../Players/olowomi01.md) | 30 | MIN | NBA | C | 32 | 8 | 20.4 | 2.7 | 5.6 | .483 | 0.1 | 0.3 | .300 | 2.6 | 5.2 | .494 | .492 | 0.7 | 1.1 | .600 | 0.8 | 3.6 | 4.4 | 0.7 | 0.6 | 0.7 | 1.2 | 2.9 | 6.1 | .507 |
+| [Michael Olowokandi](../Players/olowomi01.md) | 31 | MIN | NBA | C | 32 | 8 | 20.4 | 2.7 | 5.6 | .483 | 0.1 | 0.3 | .300 | 2.6 | 5.2 | .494 | .492 | 0.7 | 1.1 | .600 | 0.8 | 3.6 | 4.4 | 0.7 | 0.6 | 0.7 | 1.2 | 2.9 | 6.1 | .507 |
 | [Olden Polynice](../Players/polynol01.md) | 41 | LAC | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Oliver Miller](../Players/milleol01.md) | 35 | MIN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Paul Grant](../Players/grantpa01.md) | 32 | UTAH | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -746,7 +746,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [January 2006](01_January/League_Stats.md) | January 1-31, 2006 | 227 | Complete |
 | [February 2006](02_February/League_Stats.md) | February 1-28, 2006 | 181 | Complete |
 | [March 2006](03_March/League_Stats.md) | March 1-31, 2006 | 236 | Complete |
-| [April 2006](04_April/League_Stats.md) | April 1-30, 2006 | 16 | Through April 2, 2006 |
+| [April 2006](04_April/League_Stats.md) | April 1-30, 2006 | 16 | Through April 3, 2006 |
 
 ## Coverage
 

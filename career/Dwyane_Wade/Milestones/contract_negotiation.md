@@ -2,7 +2,7 @@
 
 # Contract negotiation | Dwyane Wade
 
-Career date: 2006-04-02 · Miami Heat · planned
+Career date: 2006-04-03 · Miami Heat · planned
 
 [Live milestone desk](index.html#contract_negotiation) · [All milestones](README.md)
 

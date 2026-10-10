@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-04-02. [Search the contract directory](index.html)
+Known through 2006-04-03. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -110,7 +110,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Cezary Trybanski](players/trybace01.md) | Free agent | under contract | Cezary Trybanski · existing contract; signing date not recorded | 1 |
 | [Channing Frye](players/fryech01.md) | New Jersey Nets | under contract | Channing Frye · 2005-07-01 | 1 |
 | [Charles Oakley](players/oaklech01.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
-| [Charles Smith](players/smithch04.md) | Portland Trail Blazers | under contract | Charles Smith · 2005-08-19 | 2 |
+| [Charles Smith](players/smithch04.md) | Free agent | under contract | Charles Smith · 2005-08-19 | 2 |
 | [Charlie Villanueva](players/villach01.md) | Memphis Grizzlies | under contract | Charlie Villanueva · 2005-07-01 | 1 |
 | [Charlie Ward](players/wardch01.md) | Free agent | under contract | No verified current agreement | 2 |
 | [Chauncey Billups](players/billuch01.md) | Detroit Pistons | under contract | Chauncey Billups · existing contract; signing date not recorded | 1 |
@@ -165,7 +165,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Darius Songaila](players/songada01.md) | Sacramento Kings | under contract | Darius Songaila · 2005-09-30 | 2 |
 | [Darko Milicic](players/milicda01.md) | Detroit Pistons | No verified contract record | No verified current agreement | 0 |
 | [Darrell Armstrong](players/armstda01.md) | Phoenix Suns | under contract | Darrell Armstrong · 2005-08-26 | 3 |
-| [Darrick Martin](players/martida01.md) | Free agent | under contract | Darrick Martin · 2005-09-23 | 1 |
+| [Darrick Martin](players/martida01.md) | Houston Rockets | under contract | Darrick Martin · 2005-09-23 | 1 |
 | [Darvin Ham](players/hamda01.md) | Free agent | under contract | Darvin Ham · 2003-09-23 | 2 |
 | [David Harrison](players/davidharrison.md) | Denver Nuggets | under contract | David Harrison · 2004-07-01 | 1 |
 | [David Robinson](players/robinda01.md) | Free agent | expired or unresolved | No verified current agreement | 0 |
@@ -386,7 +386,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Leon Smith](players/smithle01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Linas Kleiza](players/kleizli01.md) | New Jersey Nets | under contract | Linas Kleiza · 2005-08-19 | 1 |
 | [Lindsey Hunter](players/hunteli01.md) | Cleveland Cavaliers | under contract unverified | No verified current agreement | 0 |
-| [Linton Johnson](players/johnsli01.md) | San Antonio Spurs | under contract | Linton Johnson · 2005-09-23 | 1 |
+| [Linton Johnson](players/johnsli01.md) | Free agent | under contract | Linton Johnson · 2005-09-23 | 1 |
 | [Lionel Chalmers](players/lionelchalmers.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Lonny Baxter](players/baxtelo01.md) | Toronto Raptors | under contract | Lonny Baxter · 2005-08-05 | 2 |
 | [Loren Woods](players/woodslo01.md) | Seattle SuperSonics | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
@@ -539,7 +539,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Ron Mercer](players/mercero01.md) | Free agent | under contract | Ron Mercer · 2000-08-02 | 1 |
 | [Ronald Dupree](players/duprero01.md) | Memphis Grizzlies | under contract | Ronald Dupree · 2005-09-30 | 2 |
 | [Ronald Murray](players/murraro01.md) | Seattle SuperSonics | under contract | Ronald Murray · 2005-09-30 | 1 |
-| [Ronnie Price](players/pricero01.md) | Philadelphia 76ers | under contract | Ronnie Price · 2005-08-12 | 1 |
+| [Ronnie Price](players/pricero01.md) | San Antonio Spurs | under contract | Ronnie Price · 2005-08-12 | 1 |
 | [Ronny Turiaf](players/turiaro01.md) | Boston Celtics | under contract | Ronny Turiaf · 2005-08-02 | 1 |
 | [Royal Ivey](players/iveyro01.md) | Sacramento Kings | under contract | Royal Ivey · 2005-08-05 | 2 |
 | [Ruben Boumtje-Boumtje](players/boumtru01.md) | Free agent | under contract | Ruben Boumtje-Boumtje · 2002-09-30 | 1 |
@@ -583,7 +583,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Smush Parker](players/parkesm01.md) | Indiana Pacers | under contract | Smush Parker · 2005-09-30 | 3 |
 | [Sofoklis Schortsanitis](players/schorso01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Speedy Claxton](players/claxtsp01.md) | Golden State Warriors | under contract | Speedy Claxton · 2003-07-23 | 2 |
-| [Stacey Augmon](players/augmost01.md) | Golden State Warriors | under contract | Stacey Augmon · existing contract; signing date not recorded | 1 |
+| [Stacey Augmon](players/augmost01.md) | Free agent | under contract | Stacey Augmon · existing contract; signing date not recorded | 1 |
 | [Stephen Jackson](players/jacksst02.md) | Atlanta Hawks | under contract | Stephen Jackson · 2005-08-02 | 5 |
 | [Stephon Marbury](players/marbust01.md) | Phoenix Suns | under contract | Stephon Marbury · 2005-08-02 | 2 |
 | [Steve Blake](players/blakest01.md) | Charlotte Bobcats | under contract | Steve Blake · 2005-09-30 | 1 |

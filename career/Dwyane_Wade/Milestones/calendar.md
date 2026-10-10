@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2006-04-02 · Miami Heat · active
+Career date: 2006-04-03 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,7 +14,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2006-04-02 |
+| Career date | 2006-04-03 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
@@ -25,11 +25,11 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2006-04-02 | Current checkpoint | 2006-04-02-miami-heat-at-new-jersey-nets | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2006-04-03 | Current checkpoint | 2006-04-02-miami-heat-at-new-jersey-nets | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2005-10-04 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2006-04-03 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2006-04-04 | Next Miami game, vs Milwaukee Bucks | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2006-04-10 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2006-04-12 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 

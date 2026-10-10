@@ -2,9 +2,9 @@
 
 # Contract | Ronnie Price
 
-Known through: 2006-04-02. [Open interactive contract](pricero01.html#contract) · [Contract history](pricero01.html#contract-history)
+Known through: 2006-04-03. [Open interactive contract](pricero01.html#contract) · [Contract history](pricero01.html#contract-history)
 
-Ronnie Price: under contract. Evidence cutoff: 2006-04-02.
+Ronnie Price: under contract. Evidence cutoff: 2006-04-03.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ronnie Price |
-| Club / rights baseline | Philadelphia 76ers |
+| Club / rights baseline | San Antonio Spurs |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
