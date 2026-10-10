@@ -1,0 +1,784 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "season": "2005-06",
+ "as_of": "2006-04-12",
+ "assessment_date": "2005-10-26",
+ "prior_minutes": 300.0,
+ "score_minutes": 30.0,
+ "prior_scores": {
+  "Eddie Jones": 6.17,
+  "Brian Grant": 11.448,
+  "Matt Harpring": 12.079,
+  "Donyell Marshall": 12.103,
+  "Anthony Johnson": 10.277,
+  "Mike James": 12.206,
+  "Mehmet Okur": 14.814,
+  "DeShawn Stevenson": 4.543,
+  "Dwyane Wade": 23.571,
+  "Caron Butler": 12.486,
+  "Sebastian Telfair": 11.709,
+  "Eddie Gill": 5.0,
+  "Mike Wilks": 7.568,
+  "Matt Carroll": 4.924,
+  "Theo Ratliff": 8.202,
+  "Bonzi Wells": 8.435,
+  "Adonal Foyle": 7.773,
+  "Jumaine Jones": 9.221,
+  "Sam Cassell": 9.211,
+  "Kwame Brown": 6.708,
+  "Joe Smith": 13.771298,
+  "P.J. Brown": 12.888297,
+  "Chris Mihm": 14.560724
+ },
+ "evidence_cutoff": "game_date strictly before review date",
+ "sources": [
+  {
+   "event_id": "2005-11-02-miami-heat-at-memphis-grizzlies",
+   "date": "2005-11-02",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_1/Game_1.result.json",
+   "sha256": "de9d4497772bb88571e971f44e74d498c8b6d95744b8cbdb0468c81430967c0e"
+  },
+  {
+   "event_id": "2005-11-03-indiana-pacers-at-miami-heat",
+   "date": "2005-11-03",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_1/Game_2.result.json",
+   "sha256": "a671e3cfa203687c976630f9214d5c559e609534f48462c3cae5c1feb85aa9a7"
+  },
+  {
+   "event_id": "2005-11-05-miami-heat-at-milwaukee-bucks",
+   "date": "2005-11-05",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_1/Game_3.result.json",
+   "sha256": "3708a12d0f9fb341a7d19d11912c0919a6507830020ea637dde70d26cd2f0083"
+  },
+  {
+   "event_id": "2005-11-07-new-jersey-nets-at-miami-heat",
+   "date": "2005-11-07",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_1/Game_4.result.json",
+   "sha256": "b39b28c343aec012e988fba87c872dc09fb21f72b9f95bc5cb86c420c2469c10"
+  },
+  {
+   "event_id": "2005-11-09-miami-heat-at-indiana-pacers",
+   "date": "2005-11-09",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_2/Game_1.result.json",
+   "sha256": "a75ef836e58656c1c1d34cf42a31f8c5276670f0bf3643cb905d579d613189fe"
+  },
+  {
+   "event_id": "2005-11-10-houston-rockets-at-miami-heat",
+   "date": "2005-11-10",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_2/Game_2.result.json",
+   "sha256": "e61af7772482003526a1c8f77155c99c3cb5fe752e930835ac14284bdfbf40a2"
+  },
+  {
+   "event_id": "2005-11-12-charlotte-bobcats-at-miami-heat",
+   "date": "2005-11-12",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_2/Game_3.result.json",
+   "sha256": "b96ed4f15448b01a299b1060958a60570eac07c0729dddd59eba0d9e883cfa8e"
+  },
+  {
+   "event_id": "2005-11-15-new-orleans-oklahoma-city-hornets-at-miami-heat",
+   "date": "2005-11-15",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_3/Game_1.result.json",
+   "sha256": "a1db16313e4672b36f22a6cb093d64107f4331aaf45e4a6414389a46d6109527"
+  },
+  {
+   "event_id": "2005-11-18-philadelphia-76ers-at-miami-heat",
+   "date": "2005-11-18",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_3/Game_2.result.json",
+   "sha256": "61949e2c1259bade716c8464e42d8378e9b9453f96f610439786cac69f6b808b"
+  },
+  {
+   "event_id": "2005-11-20-miami-heat-at-toronto-raptors",
+   "date": "2005-11-20",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_3/Game_3.result.json",
+   "sha256": "8ed272bad7fe78ae915bd53e6f78f182c2a1880a224533f3e5a39b4a87e95fd3"
+  },
+  {
+   "event_id": "2005-11-23-portland-trail-blazers-at-miami-heat",
+   "date": "2005-11-23",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_4/Game_1.result.json",
+   "sha256": "716c09280a7ad136a7a9776046499b32ae8f2f5148d3c674b9a8a764e52d8563"
+  },
+  {
+   "event_id": "2005-11-25-dallas-mavericks-at-miami-heat",
+   "date": "2005-11-25",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_4/Game_2.result.json",
+   "sha256": "65a4580db04d60f1452b598b419502da9f329b37f1648d3e1f6d3db680abb736"
+  },
+  {
+   "event_id": "2005-11-26-miami-heat-at-orlando-magic",
+   "date": "2005-11-26",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_4/Game_3.result.json",
+   "sha256": "16c636779d95bf7abe03951c3b8dc522ea6e26efd41bbc1480936b4cbb654c96"
+  },
+  {
+   "event_id": "2005-11-28-new-york-knicks-at-miami-heat",
+   "date": "2005-11-28",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_4/Game_4.result.json",
+   "sha256": "6bb1d04d21879148e6472f4900d96205da10a1d877174deb9ddfc90d73532d0a"
+  },
+  {
+   "event_id": "2005-11-30-miami-heat-at-atlanta-hawks",
+   "date": "2005-11-30",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/11_November/Week_4/Game_5.result.json",
+   "sha256": "aabd290adf0f0f7b1d1b5fe679dea73b10fd165243909d86f545f02ecca2dac6"
+  },
+  {
+   "event_id": "2005-12-02-miami-heat-at-sacramento-kings",
+   "date": "2005-12-02",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_1/Game_1.result.json",
+   "sha256": "02ed2c930fe36d8a8e3d89b91a4098e4d09d621236c033364478a34a0e6b75a4"
+  },
+  {
+   "event_id": "2005-12-03-miami-heat-at-denver-nuggets",
+   "date": "2005-12-03",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_1/Game_2.result.json",
+   "sha256": "68e8a0827c191e29b83b364c9cfa82414e633ed3a0ba40d196649173711510fe"
+  },
+  {
+   "event_id": "2005-12-05-miami-heat-at-los-angeles-clippers",
+   "date": "2005-12-05",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_1/Game_3.result.json",
+   "sha256": "392daa117537a8f2ad284dc38f5ce54215f52a1c8ed076737487b1be8fbde8b6"
+  },
+  {
+   "event_id": "2005-12-07-miami-heat-at-san-antonio-spurs",
+   "date": "2005-12-07",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_1/Game_4.result.json",
+   "sha256": "b445df055e9e03cb84fc7f1be5026952a8e904818cf82f621f2f7b8a18df9b46"
+  },
+  {
+   "event_id": "2005-12-09-denver-nuggets-at-miami-heat",
+   "date": "2005-12-09",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_2/Game_1.result.json",
+   "sha256": "274813ac725420e75851501c4b5f76adb1633d6b48b5ce9ccfbf4da2926c92c8"
+  },
+  {
+   "event_id": "2005-12-11-washington-wizards-at-miami-heat",
+   "date": "2005-12-11",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_2/Game_2.result.json",
+   "sha256": "c449a5bfca11c872d0d326f34af65ed52b16747fec2e449fd8d71af0ea031eb0"
+  },
+  {
+   "event_id": "2005-12-13-miami-heat-at-chicago-bulls",
+   "date": "2005-12-13",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_2/Game_3.result.json",
+   "sha256": "2de5dffb5271ed8293546ef3d4299b3296c16af30caf1f87837e99d1d0181510"
+  },
+  {
+   "event_id": "2005-12-14-miami-heat-at-milwaukee-bucks",
+   "date": "2005-12-14",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_2/Game_4.result.json",
+   "sha256": "398e552f80a39ab7b35d614edf065b66479fb9af773055856f2351892342ab2a"
+  },
+  {
+   "event_id": "2005-12-16-miami-heat-at-philadelphia-76ers",
+   "date": "2005-12-16",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_3/Game_1.result.json",
+   "sha256": "4a092dd598b2ea2976bf0ea186c664dfa22a0e4059503836d23fdbf88168e79f"
+  },
+  {
+   "event_id": "2005-12-17-miami-heat-at-cleveland-cavaliers",
+   "date": "2005-12-17",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_3/Game_2.result.json",
+   "sha256": "c0369014194402ebf9b33aee2ed8a8b610a8a568515df3c2f15eda410eaeb3df"
+  },
+  {
+   "event_id": "2005-12-20-atlanta-hawks-at-miami-heat",
+   "date": "2005-12-20",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_3/Game_3.result.json",
+   "sha256": "eabba498762fa51f82bb31d8215966f0ec38e2b0583d8a2819870f46f5055a5b"
+  },
+  {
+   "event_id": "2005-12-23-new-jersey-nets-at-miami-heat",
+   "date": "2005-12-23",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_4/Game_1.result.json",
+   "sha256": "68bd2c334fb035760400e8a5c684f45ee85ddcecdf9c155cf315ce3f4f926360"
+  },
+  {
+   "event_id": "2005-12-25-los-angeles-lakers-at-miami-heat",
+   "date": "2005-12-25",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_4/Game_2.result.json",
+   "sha256": "85b69290c04ce19d6ade87acc69802faf9d74f43e7698331bb0de3de3e8c7255"
+  },
+  {
+   "event_id": "2005-12-27-milwaukee-bucks-at-miami-heat",
+   "date": "2005-12-27",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_4/Game_3.result.json",
+   "sha256": "b984130ece8b3f473382f1aec0a33682843ff28e78f28d499abce857b663afef"
+  },
+  {
+   "event_id": "2005-12-29-miami-heat-at-detroit-pistons",
+   "date": "2005-12-29",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_4/Game_4.result.json",
+   "sha256": "cfa1b6258bb2cb36f2722d44dd4bc4a9740ca8b680912b52e23dcd397d404de0"
+  },
+  {
+   "event_id": "2005-12-30-miami-heat-at-washington-wizards",
+   "date": "2005-12-30",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/12_December/Week_4/Game_5.result.json",
+   "sha256": "9e9027884cf275cd86d6d1d10fc0073866bd3a5f6f86296d62aa32d130161f8e"
+  },
+  {
+   "event_id": "2006-01-01-minnesota-timberwolves-at-miami-heat",
+   "date": "2006-01-01",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_1/Game_1.result.json",
+   "sha256": "e16e18c117bb05e3f36f1c92a20220fb1493894e1cda0db73be65c2b63a1aadc"
+  },
+  {
+   "event_id": "2006-01-04-miami-heat-at-new-orleans-oklahoma-city-hornets",
+   "date": "2006-01-04",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_1/Game_2.result.json",
+   "sha256": "e012654822d5c8d4dd1bb58f8029df74e12bb1a2b3c994fc0b18958417faccd0"
+  },
+  {
+   "event_id": "2006-01-06-miami-heat-at-phoenix-suns",
+   "date": "2006-01-06",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_1/Game_3.result.json",
+   "sha256": "3e6efb171a1920cb9958a22e85f4a032920c98b4e2c534f4d70f4421ef4a8030"
+  },
+  {
+   "event_id": "2006-01-08-miami-heat-at-portland-trail-blazers",
+   "date": "2006-01-08",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_2/Game_1.result.json",
+   "sha256": "cb31ab3885ab9e306127bf461a805c230ebefda14a3a1aea348ed1e6641a9462"
+  },
+  {
+   "event_id": "2006-01-11-miami-heat-at-golden-state-warriors",
+   "date": "2006-01-11",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_2/Game_2.result.json",
+   "sha256": "4b12066c251a0dd94c006a2cbc0784d2f54ca0859c87556dc1a5b432dba4f182"
+  },
+  {
+   "event_id": "2006-01-13-miami-heat-at-seattle-supersonics",
+   "date": "2006-01-13",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_2/Game_3.result.json",
+   "sha256": "c1f58154ed949d7aab0c4453159f7f09b7706fe773ff737f8f2183c4821c54da"
+  },
+  {
+   "event_id": "2006-01-14-miami-heat-at-utah-jazz",
+   "date": "2006-01-14",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_2/Game_4.result.json",
+   "sha256": "577d596c32c758fe2449700cb51763cab1f21dd7fd3098dbe8d7092a7a574067"
+  },
+  {
+   "event_id": "2006-01-16-miami-heat-at-los-angeles-lakers",
+   "date": "2006-01-16",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_3/Game_1.result.json",
+   "sha256": "e2040e6fad6b05a9ae95b1970f8704cea57fa5f0c8040da2d38c28cb6605c0af"
+  },
+  {
+   "event_id": "2006-01-20-san-antonio-spurs-at-miami-heat",
+   "date": "2006-01-20",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_3/Game_2.result.json",
+   "sha256": "fd35670b8978776ff322fbd829e19cd18f7d635c0faffb59fffba8fbe9fa205a"
+  },
+  {
+   "event_id": "2006-01-22-sacramento-kings-at-miami-heat",
+   "date": "2006-01-22",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_4/Game_1.result.json",
+   "sha256": "d4d674a43c5dcf498c3c2c86f9c8585a90fabccefa45d9987e75e271f5394a81"
+  },
+  {
+   "event_id": "2006-01-24-memphis-grizzlies-at-miami-heat",
+   "date": "2006-01-24",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_4/Game_2.result.json",
+   "sha256": "e9da8bff891a1aa21ee8d078bb96bb1b0b25b41d1d097fbeb4fa30f21fa448df"
+  },
+  {
+   "event_id": "2006-01-26-phoenix-suns-at-miami-heat",
+   "date": "2006-01-26",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_4/Game_3.result.json",
+   "sha256": "810ff0faa7089e218e23fc83cb2b8b4ae0730b1b02d4f1fce4045ad2d43bc070"
+  },
+  {
+   "event_id": "2006-01-27-miami-heat-at-charlotte-bobcats",
+   "date": "2006-01-27",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_4/Game_4.result.json",
+   "sha256": "113f360479dd77deaf71c09b305309a3e807ebcc5a30369d71534b4185199534"
+  },
+  {
+   "event_id": "2006-01-29-miami-heat-at-houston-rockets",
+   "date": "2006-01-29",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_4/Game_5.result.json",
+   "sha256": "8b59b24aacec45f7fc028cb9f190ba06a61deaec5ea8eff3290e8a092ddbd0be"
+  },
+  {
+   "event_id": "2006-01-30-los-angeles-clippers-at-miami-heat",
+   "date": "2006-01-30",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/01_January/Week_4/Game_6.result.json",
+   "sha256": "2472958087c4b2970067b717a97e16b5cd357f8aa0a1f5f3c2ff8e297c9ef299"
+  },
+  {
+   "event_id": "2006-02-02-cleveland-cavaliers-at-miami-heat",
+   "date": "2006-02-02",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/02_February/Week_1/Game_1.result.json",
+   "sha256": "29e3ab1fbd6167276f667f29777d3b5caa8cb5ffbdf4722c7759904603d3ba59"
+  },
+  {
+   "event_id": "2006-02-04-miami-heat-at-new-jersey-nets",
+   "date": "2006-02-04",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/02_February/Week_1/Game_2.result.json",
+   "sha256": "eb29606acfd2f5256c56f70255a54c7009470bfcf8b669f098edd55c610367e7"
+  },
+  {
+   "event_id": "2006-02-06-boston-celtics-at-miami-heat",
+   "date": "2006-02-06",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/02_February/Week_1/Game_3.result.json",
+   "sha256": "44fa291b75a6adf64c697e20e93b92d6e4ed68d516e7017d5ccc1ecc57cdd253"
+  },
+  {
+   "event_id": "2006-02-09-miami-heat-at-dallas-mavericks",
+   "date": "2006-02-09",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/02_February/Week_2/Game_1.result.json",
+   "sha256": "55ed658783336c924003ee3942a21c492160d9b22734e93bea86874a7bf5427a"
+  },
+  {
+   "event_id": "2006-02-12-detroit-pistons-at-miami-heat",
+   "date": "2006-02-12",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/02_February/Week_2/Game_2.result.json",
+   "sha256": "da162dee9ea576fd72b8f90d4539723e2d9c1db86e5c742e8c200a5cd38713cc"
+  },
+  {
+   "event_id": "2006-02-14-orlando-magic-at-miami-heat",
+   "date": "2006-02-14",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/02_February/Week_2/Game_3.result.json",
+   "sha256": "e3dad3fd1f03e69f4bcc2b76dd3d25d45ad2de0dcafd7b20473f4a3ac164c972"
+  },
+  {
+   "event_id": "2006-02-15-miami-heat-at-orlando-magic",
+   "date": "2006-02-15",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/02_February/Week_3/Game_1.result.json",
+   "sha256": "f97aced788e4eaa81eec535b09675daf46782d2f3e369af0846cdda8eb31e73e"
+  },
+  {
+   "event_id": "2006-02-22-miami-heat-at-new-york-knicks",
+   "date": "2006-02-22",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/02_February/Week_4/Game_1.result.json",
+   "sha256": "e35103fd1579d9bce485194568bfe9f39d9e08ec71770fe5dc5e27941582a470"
+  },
+  {
+   "event_id": "2006-02-25-seattle-supersonics-at-miami-heat",
+   "date": "2006-02-25",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/02_February/Week_4/Game_2.result.json",
+   "sha256": "4fa0094904b4421692bfe73f7048f3546fd81cf02ebe2ca3840be4ba4419a8e2"
+  },
+  {
+   "event_id": "2006-02-27-toronto-raptors-at-miami-heat",
+   "date": "2006-02-27",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/02_February/Week_4/Game_3.result.json",
+   "sha256": "bd697327eb8f6a79bfc6c93f044776383032222c79111607c7ca9026ab67552c"
+  },
+  {
+   "event_id": "2006-03-01-miami-heat-at-boston-celtics",
+   "date": "2006-03-01",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_1/Game_1.result.json",
+   "sha256": "2b5c72b271153abdeeacdf3cd525d7ffb6dbcbb9e43a42eb85ffee05f2516557"
+  },
+  {
+   "event_id": "2006-03-04-atlanta-hawks-at-miami-heat",
+   "date": "2006-03-04",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_1/Game_2.result.json",
+   "sha256": "4e918e5fc045e2750e13bfbe67a8fcf82eec9b923c08942b3480837eb2c94074"
+  },
+  {
+   "event_id": "2006-03-06-miami-heat-at-charlotte-bobcats",
+   "date": "2006-03-06",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_1/Game_3.result.json",
+   "sha256": "1d208c7d9d9a3eed2291f3847dfe31f625826e76f02e2e9ab9587173d2847734"
+  },
+  {
+   "event_id": "2006-03-08-washington-wizards-at-miami-heat",
+   "date": "2006-03-08",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_2/Game_1.result.json",
+   "sha256": "a579394d89703ac734332ff2079816f104ac26c8d6190990dc5b0e49f4ef4996"
+  },
+  {
+   "event_id": "2006-03-10-golden-state-warriors-at-miami-heat",
+   "date": "2006-03-10",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_2/Game_2.result.json",
+   "sha256": "873dd15985847eb712a58d78fc4032c3d6944c7e3bfd805d4f079470d764d6fc"
+  },
+  {
+   "event_id": "2006-03-12-cleveland-cavaliers-at-miami-heat",
+   "date": "2006-03-12",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_2/Game_3.result.json",
+   "sha256": "27a572b9cfb5962a6ff680cb72d676eebb49021f1b563c72c285400eda746e82"
+  },
+  {
+   "event_id": "2006-03-14-utah-jazz-at-miami-heat",
+   "date": "2006-03-14",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_2/Game_4.result.json",
+   "sha256": "01891d041256ef1bafb30bb32c4eaea6ca6e609065ed03526c540a615f7b869d"
+  },
+  {
+   "event_id": "2006-03-16-boston-celtics-at-miami-heat",
+   "date": "2006-03-16",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_3/Game_1.result.json",
+   "sha256": "7632c55cf462f726bac7c2f05f556e6d0bc3bff93683c218bfa27d3eb4c192b6"
+  },
+  {
+   "event_id": "2006-03-18-miami-heat-at-chicago-bulls",
+   "date": "2006-03-18",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_3/Game_2.result.json",
+   "sha256": "878801d04fd544198a40ee5dad37a227161af7ec0f1269fdfb56f8fd28e44cc7"
+  },
+  {
+   "event_id": "2006-03-19-miami-heat-at-new-york-knicks",
+   "date": "2006-03-19",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_3/Game_3.result.json",
+   "sha256": "c1cfeaf19779b99ec9d7342b6c10cdcbaedffec9a508b7af1582fda9dca2fbcc"
+  },
+  {
+   "event_id": "2006-03-21-miami-heat-at-minnesota-timberwolves",
+   "date": "2006-03-21",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_3/Game_4.result.json",
+   "sha256": "ae0416dcb0f4a33ef055dd56359ec0bcfd2a12176101f9cf3f02a5420b22747e"
+  },
+  {
+   "event_id": "2006-03-22-miami-heat-at-detroit-pistons",
+   "date": "2006-03-22",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_4/Game_1.result.json",
+   "sha256": "29533b10e0afb68c3033daad80d5d633b27387cc31712486f6fbaa6e39c755d0"
+  },
+  {
+   "event_id": "2006-03-24-charlotte-bobcats-at-miami-heat",
+   "date": "2006-03-24",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_4/Game_2.result.json",
+   "sha256": "4c72e4c3cff84b3d1c0965539474100182ea21ed23e1aca9ef0fc84b97c34b2c"
+  },
+  {
+   "event_id": "2006-03-27-indiana-pacers-at-miami-heat",
+   "date": "2006-03-27",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_4/Game_3.result.json",
+   "sha256": "81a9b01465d8f63049df36637a3c892f8cbd14e9a3654e98585826c3e358ef4f"
+  },
+  {
+   "event_id": "2006-03-29-miami-heat-at-toronto-raptors",
+   "date": "2006-03-29",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/03_March/Week_4/Game_4.result.json",
+   "sha256": "85ad0deaa22d2ad81eb92e30194d584b92e586e35d51bffea9da61fed24faf39"
+  },
+  {
+   "event_id": "2006-04-01-miami-heat-at-cleveland-cavaliers",
+   "date": "2006-04-01",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/04_April/Week_1/Game_1.result.json",
+   "sha256": "a24eee9a27511dc71b3335df955040e6b2b32eb54356a3e5c94e22f4136bb8a4"
+  },
+  {
+   "event_id": "2006-04-02-miami-heat-at-new-jersey-nets",
+   "date": "2006-04-02",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/04_April/Week_1/Game_2.result.json",
+   "sha256": "7f8af0d22c53468de4d8ca8b2374b80dc2e0dfe2d3a5a75b5f0034eeef6b5449"
+  },
+  {
+   "event_id": "2006-04-04-milwaukee-bucks-at-miami-heat",
+   "date": "2006-04-04",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/04_April/Week_1/Game_3.result.json",
+   "sha256": "aa17e3f979d4674abffcc4ddeb5728b7047a51afe036ab7aa2a6ae3870596db1"
+  },
+  {
+   "event_id": "2006-04-06-detroit-pistons-at-miami-heat",
+   "date": "2006-04-06",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/04_April/Week_1/Game_4.result.json",
+   "sha256": "80e6d5f99540d736e4015484e3dd6a75f23f286e813c47f8b6c49af29101d4fd"
+  },
+  {
+   "event_id": "2006-04-08-miami-heat-at-washington-wizards",
+   "date": "2006-04-08",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/04_April/Week_2/Game_1.result.json",
+   "sha256": "cb9edf734c049726c2bcd0caa3f8fd8a5c40e76c21b8e6cd59ffb340dded6627"
+  },
+  {
+   "event_id": "2006-04-09-orlando-magic-at-miami-heat",
+   "date": "2006-04-09",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/04_April/Week_2/Game_2.result.json",
+   "sha256": "872bde307ddcda263cc1ca1f3406d19287e8995d96d74032dd85f5dd9c36d5d5"
+  },
+  {
+   "event_id": "2006-04-11-toronto-raptors-at-miami-heat",
+   "date": "2006-04-11",
+   "result_file": "career/Dwyane_Wade/2005-06/06_Regular_Season/04_April/Week_2/Game_3.result.json",
+   "sha256": "b1d3e3e73836ba6c021ed264c39fae52afac5c16664768ff0ab1466ed531668a"
+  }
+ ],
+ "players": [
+  {
+   "player": "Anthony Johnson",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "johnsan02",
+   "status": "roster"
+  },
+  {
+   "player": "Caron Butler",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "butleca01",
+   "status": "roster"
+  },
+  {
+   "player": "Chris Mihm",
+   "positions": [
+    "C"
+   ],
+   "bbr_id": "mihmch01",
+   "status": "roster"
+  },
+  {
+   "player": "DeShawn Stevenson",
+   "positions": [
+    "SG"
+   ],
+   "bbr_id": "stevede01",
+   "status": "roster"
+  },
+  {
+   "player": "Donyell Marshall",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "marshdo01",
+   "status": "roster"
+  },
+  {
+   "player": "Dwyane Wade",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "bbr_id": null,
+   "status": "roster"
+  },
+  {
+   "player": "Eddie Gill",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "gilled01",
+   "status": "roster"
+  },
+  {
+   "player": "Eddie Jones",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "bbr_id": "jonesed02",
+   "status": "roster"
+  },
+  {
+   "player": "Joe Smith",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "smithjo02",
+   "status": "roster"
+  },
+  {
+   "player": "Matt Carroll",
+   "positions": [
+    "SG"
+   ],
+   "bbr_id": "carroma01",
+   "status": "roster"
+  },
+  {
+   "player": "Mehmet Okur",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "okurme01",
+   "status": "roster"
+  },
+  {
+   "player": "Mike James",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "jamesmi01",
+   "status": "roster"
+  },
+  {
+   "player": "Mike Wilks",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "wilksmi01",
+   "status": "roster"
+  },
+  {
+   "player": "P.J. Brown",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "brownpj01",
+   "status": "roster"
+  },
+  {
+   "player": "Sebastian Telfair",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "telfase01",
+   "status": "roster"
+  }
+ ],
+ "scores": {
+  "Anthony Johnson": 11.333697,
+  "Caron Butler": 13.445382,
+  "Chris Mihm": 14.024081,
+  "DeShawn Stevenson": 4.543,
+  "Donyell Marshall": 12.344006,
+  "Dwyane Wade": 24.771817,
+  "Eddie Gill": 7.361141,
+  "Eddie Jones": 11.965085,
+  "Joe Smith": 15.074559,
+  "Matt Carroll": 4.924,
+  "Mehmet Okur": 15.813363,
+  "Mike James": 15.437864,
+  "Mike Wilks": 7.629237,
+  "P.J. Brown": 12.38678,
+  "Sebastian Telfair": 9.146798
+ },
+ "evidence": {
+  "Anthony Johnson": {
+   "games": 78,
+   "minutes": 837.5899333333334,
+   "efficiency": 327.0,
+   "preseason_estimate": 10.277,
+   "observed_per_30": 11.712175,
+   "observed_weight": 0.736285,
+   "score": 11.333697
+  },
+  "Caron Butler": {
+   "games": 78,
+   "minutes": 2167.4493499999994,
+   "efficiency": 981.0,
+   "preseason_estimate": 12.486,
+   "observed_per_30": 13.578172,
+   "observed_weight": 0.878417,
+   "score": 13.445382
+  },
+  "Chris Mihm": {
+   "games": 39,
+   "minutes": 1170.9140499999999,
+   "efficiency": 542.0,
+   "preseason_estimate": 14.560724,
+   "observed_per_30": 13.886587,
+   "observed_weight": 0.796045,
+   "score": 14.024081
+  },
+  "DeShawn Stevenson": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 4.543,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 4.543
+  },
+  "Donyell Marshall": {
+   "games": 78,
+   "minutes": 1116.9548666666667,
+   "efficiency": 462.0,
+   "preseason_estimate": 12.103,
+   "observed_per_30": 12.408738,
+   "observed_weight": 0.788278,
+   "score": 12.344006
+  },
+  "Dwyane Wade": {
+   "games": 78,
+   "minutes": 2914.9962499999992,
+   "efficiency": 2419.0,
+   "preseason_estimate": 23.571,
+   "observed_per_30": 24.895401,
+   "observed_weight": 0.906687,
+   "score": 24.771817
+  },
+  "Eddie Gill": {
+   "games": 24,
+   "minutes": 91.24370000000002,
+   "efficiency": 46.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": 15.124332,
+   "observed_weight": 0.233214,
+   "score": 7.361141
+  },
+  "Eddie Jones": {
+   "games": 40,
+   "minutes": 313.53515,
+   "efficiency": 183.0,
+   "preseason_estimate": 6.17,
+   "observed_per_30": 17.509998,
+   "observed_weight": 0.51103,
+   "score": 11.965085
+  },
+  "Joe Smith": {
+   "games": 53,
+   "minutes": 1235.7921999999999,
+   "efficiency": 634.0,
+   "preseason_estimate": 13.771298,
+   "observed_per_30": 15.390937,
+   "observed_weight": 0.804661,
+   "score": 15.074559
+  },
+  "Matt Carroll": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 4.924,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 4.924
+  },
+  "Mehmet Okur": {
+   "games": 78,
+   "minutes": 2652.1993333333335,
+   "efficiency": 1408.0,
+   "preseason_estimate": 14.814,
+   "observed_per_30": 15.926405,
+   "observed_weight": 0.898381,
+   "score": 15.813363
+  },
+  "Mike James": {
+   "games": 78,
+   "minutes": 2698.588499999999,
+   "efficiency": 1421.0,
+   "preseason_estimate": 12.206,
+   "observed_per_30": 15.797147,
+   "observed_weight": 0.899953,
+   "score": 15.437864
+  },
+  "Mike Wilks": {
+   "games": 64,
+   "minutes": 284.64564999999993,
+   "efficiency": 73.0,
+   "preseason_estimate": 7.568,
+   "observed_per_30": 7.693776,
+   "observed_weight": 0.486869,
+   "score": 7.629237
+  },
+  "P.J. Brown": {
+   "games": 40,
+   "minutes": 578.8796500000001,
+   "efficiency": 234.0,
+   "preseason_estimate": 12.888297,
+   "observed_per_30": 12.126873,
+   "observed_weight": 0.658656,
+   "score": 12.38678
+  },
+  "Sebastian Telfair": {
+   "games": 78,
+   "minutes": 641.6081666666668,
+   "efficiency": 170.0,
+   "preseason_estimate": 11.709,
+   "observed_per_30": 7.948777,
+   "observed_weight": 0.681396,
+   "score": 9.146798
+  }
+ },
+ "battles": []
+}

@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG / SF  
 **Age at assessment:** 31 · **Height:** 6-6 · **Weight:** 190 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2006-04-11 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2006-04-12 
 
 **Contract/control:** Existing contract: 2 season(s) from 2005-06, $30,273,750 scheduled ($14,576,250 in 2005-06). (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at SG, staff plan 9 minutes (staff rotation dated 2006-03-29, [record](../Depth_Chart/Reviews/2006-03-29/rotation.json)).
+**Role:** Rotation at SG, staff plan 9 minutes (staff rotation dated 2006-04-12, [record](../Depth_Chart/Reviews/2006-04-12/rotation.json)).
 
 **Offense:** In 2002-03: 18.5 points and 3.7 assists per game; 55.1% true shooting at 23.0% usage.
 
@@ -88,13 +88,14 @@ Contract pages follow the current career date; this personnel assessment retains
 | 2006-03-01 | Staff rotation of 2006-03-01: rotation at SG, staff plan 7 minutes. | [Rotation](../Depth_Chart/Reviews/2006-03-01/rotation.json) |
 | 2006-03-15 | Staff rotation of 2006-03-15: rotation at SG, staff plan 7 minutes. | [Rotation](../Depth_Chart/Reviews/2006-03-15/rotation.json) |
 | 2006-03-29 | Staff rotation of 2006-03-29: rotation at SG, staff plan 9 minutes. | [Rotation](../Depth_Chart/Reviews/2006-03-29/rotation.json) |
+| 2006-04-12 | Staff rotation of 2006-04-12: rotation at SG, staff plan 9 minutes. | [Rotation](../Depth_Chart/Reviews/2006-04-12/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:**  
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-03-29.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-04-12.
 
 <!-- yearly-statistics:start -->
 
@@ -102,7 +103,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 81 closed Miami game(s) through 2004-09-30; 2004-05: 37 closed Miami game(s) through 2005-01-23; 2005-06: 40 closed Miami game(s) through 2006-04-11.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 81 closed Miami game(s) through 2004-09-30; 2004-05: 37 closed Miami game(s) through 2005-01-23; 2005-06: 40 closed Miami game(s) through 2006-04-12.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
