@@ -2,9 +2,9 @@
 
 # Contract | Maurice Evans
 
-Known through: 2005-11-30. [Open interactive contract](evansma01.html#contract) · [Contract history](evansma01.html#contract-history)
+Known through: 2005-12-02. [Open interactive contract](evansma01.html#contract) · [Contract history](evansma01.html#contract-history)
 
-Maurice Evans: under contract. Evidence cutoff: 2005-11-30.
+Maurice Evans: under contract. Evidence cutoff: 2005-12-02.
 
 ## Current contract
 
