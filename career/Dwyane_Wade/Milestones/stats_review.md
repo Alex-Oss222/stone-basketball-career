@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-12-19 · Miami Heat · active
+Career date: 2005-12-25 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-32 closed game records in 2005-06 through 2005-12-19. Competitions remain separate.
+35 closed game records in 2005-06 through 2005-12-25. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 25 | 36.8 | 25.5 | 6.6 | 4.2 | 1.8 | Complete |
+| regular | 28 | 37.1 | 25.8 | 6.6 | 4.2 | 1.7 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 218 | 389 | 0.560 | 36 | 75 | 0.480 |
+| regular | 244 | 438 | 0.557 | 39 | 86 | 0.453 |
 
 ## Closed source games
 
@@ -62,6 +62,9 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-12-14 | regular | Milwaukee Bucks | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_4.md) |
 | 2005-12-16 | regular | Philadelphia 76ers | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_1.md) |
 | 2005-12-17 | regular | Cleveland Cavaliers | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_2.md) |
+| 2005-12-20 | regular | Atlanta Hawks | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_3.md) |
+| 2005-12-23 | regular | New Jersey Nets | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_1.md) |
+| 2005-12-25 | regular | Los Angeles Lakers | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -98,11 +101,11 @@ The next declared, closed game result or a chosen completed-period review.
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/review.json)
-- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/depth_chart.json)
+- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/review.json)
+- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/rotation.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
@@ -138,4 +141,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_4.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

@@ -2,7 +2,7 @@
 
 # Offseason training | Dwyane Wade
 
-Career date: 2005-12-19 · Miami Heat · active
+Career date: 2005-12-25 · Miami Heat · active
 
 [Live milestone desk](index.html#offseason_training) · [All milestones](README.md)
 
@@ -70,11 +70,11 @@ The player and staff agree a dated first block and review criteria.
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/review.json)
-- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/depth_chart.json)
+- [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/review.json)
+- [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/depth_chart.json)
 - [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-07/rotation.json)
+- [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2005-12-21/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)
 - [Transaction record](../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
@@ -110,4 +110,7 @@ The player and staff agree a dated first block and review criteria.
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_4.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_4/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

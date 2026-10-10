@@ -2,9 +2,9 @@
 
 # Contract | Ike Diogu
 
-Known through: 2005-12-19. [Open interactive contract](dioguik01.html#contract) · [Contract history](dioguik01.html#contract-history)
+Known through: 2005-12-25. [Open interactive contract](dioguik01.html#contract) · [Contract history](dioguik01.html#contract-history)
 
-Ike Diogu: under contract. Evidence cutoff: 2005-12-19.
+Ike Diogu: under contract. Evidence cutoff: 2005-12-25.
 
 ## Current contract
 

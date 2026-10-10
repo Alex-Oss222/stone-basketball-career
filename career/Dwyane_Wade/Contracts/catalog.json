@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-12-19",
+  "as_of": "2005-12-25",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -3281,7 +3281,7 @@
     {
       "player_id": "laronprofit",
       "name": "Laron Profit",
-      "team": "Free agent",
+      "team": "Boston Celtics",
       "status": "under contract",
       "current_contract_id": null,
       "recorded_agreements": 1,

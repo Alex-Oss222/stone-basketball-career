@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2005-12-19. [Search the contract directory](index.html)
+Known through 2005-12-25. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -373,7 +373,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Lamar Odom](players/odomla01.md) | Golden State Warriors | under contract | Lamar Odom · 2005-08-02 | 2 |
 | [Lamond Murray](players/murrala01.md) | Utah Jazz | under contract | Lamond Murray · existing contract; signing date not recorded | 1 |
 | [LaPhonso Ellis](players/ellisla01.md) | Free agent | under contract guarantee amended | LaPhonso Ellis · 2001-07-28 | 1 |
-| [Laron Profit](players/laronprofit.md) | Free agent | under contract | No verified current agreement | 1 |
+| [Laron Profit](players/laronprofit.md) | Boston Celtics | under contract | No verified current agreement | 1 |
 | [Larry Hughes](players/hughela01.md) | Indiana Pacers | under contract | Larry Hughes · 2005-08-02 | 2 |
 | [Latrell Sprewell](players/sprewla01.md) | Free agent | under contract | Latrell Sprewell · existing contract; signing date not recorded | 1 |
 | [Lavor Postell](players/postela01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |

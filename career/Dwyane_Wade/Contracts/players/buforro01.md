@@ -2,9 +2,9 @@
 
 # Contract | Rodney Buford
 
-Known through: 2005-12-19. [Open interactive contract](buforro01.html#contract) · [Contract history](buforro01.html#contract-history)
+Known through: 2005-12-25. [Open interactive contract](buforro01.html#contract) · [Contract history](buforro01.html#contract-history)
 
-Rodney Buford: No verified contract record. Evidence cutoff: 2005-12-19.
+Rodney Buford: No verified contract record. Evidence cutoff: 2005-12-25.
 
 ## Current contract
 

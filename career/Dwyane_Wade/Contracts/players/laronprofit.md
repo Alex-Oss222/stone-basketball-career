@@ -2,9 +2,9 @@
 
 # Contract | Laron Profit
 
-Known through: 2005-12-19. [Open interactive contract](laronprofit.html#contract) · [Contract history](laronprofit.html#contract-history)
+Known through: 2005-12-25. [Open interactive contract](laronprofit.html#contract) · [Contract history](laronprofit.html#contract-history)
 
-Laron Profit: under contract. Evidence cutoff: 2005-12-19.
+Laron Profit: under contract. Evidence cutoff: 2005-12-25.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Laron Profit |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Boston Celtics |
 | Control status | under_contract |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
