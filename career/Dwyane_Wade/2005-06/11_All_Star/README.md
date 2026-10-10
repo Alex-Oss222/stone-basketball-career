@@ -53,13 +53,13 @@ The Rookie Challenge and the All-Star Game are exhibitions played by the engine;
 
 ### All-Star weekend games
 
-[![Shooting](../../Stats_and_Awards/assets/shooting_link.svg)](../../Stats_and_Awards/player_cards.html?period=regular-2005-06-season#shooting) [![Contract](../../Stats_and_Awards/assets/contract_link.svg)](../../Stats_and_Awards/player_cards.html#contract) [![Awards](../../Stats_and_Awards/assets/awards_link.svg)](../../Stats_and_Awards/player_cards.html#awards)
+[![Shooting](../../Stats_and_Awards/assets/shooting_link.svg)](../../Stats_and_Awards/player_cards.html?period=all_star-2005-06-season#shooting) [![Contract](../../Stats_and_Awards/assets/contract_link.svg)](../../Stats_and_Awards/player_cards.html#contract) [![Awards](../../Stats_and_Awards/assets/awards_link.svg)](../../Stats_and_Awards/player_cards.html#awards)
 
 [Shooting detail](../../Stats_and_Awards/Shooting.md) · [Current contract](../../Stats_and_Awards/Contract.md#current-contract) · [Contract history](../../Stats_and_Awards/Contract.md#contract-history) · [Annual award record](../../Stats_and_Awards/Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [NBA All-Star Game](All_Star_Game/README.md) | 22 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [NBA All-Star Game](All_Star_Game/README.md) | 22 | East | NBA | SG / PG | 1 | 1 | 31.7 | 11.0 | 16.0 | .688 | 0.0 | 2.0 | .000 | 11.0 | 14.0 | .786 | .688 | 4.0 | 5.0 | .800 | 1.0 | 6.0 | 7.0 | 4.0 | 3.0 | 0.0 | 2.0 | 2.0 | 26.0 | .714 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
@@ -69,4 +69,10 @@ Awards are confirmed through 2006-04-19, filed by the honor's period-end date; t
 
 | Date / source | Opponent | Venue | Result | Participation | MIN | PTS | REB | AST | STL | BLK | TOV |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2006-02-19](All_Star_Game/Game_1.md) | West | neutral | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [2006-02-19](All_Star_Game/Game_1.md) | West | neutral | L 128-134 | Played | 31.7 | 26 | 7 | 4 | 3 | 0 | 2 |
+
+### Game shooting detail
+
+| Date / source | FG | 2P | 3P | FT | eFG% | TS% (est.) | +/- | PF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [2006-02-19](All_Star_Game/Game_1.md) | 11/16 | 11/14 | 0/2 | 4/5 | 68.8% | 71.4% | N/A | 2 |

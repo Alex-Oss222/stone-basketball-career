@@ -8,7 +8,37 @@ Played by the engine as exhibitions (`runtime/all_star_games.py`, `runtime/all_s
 
 February 17, 2006 · event `2006-02-17-rookie-challenge` · evidence through February 16, 2006; locked and requested April 19, 2006, after the weekend.
 
-Not played yet: the request is `career/Dwyane_Wade/Stats_and_Awards/League/2005-06/All_Star/Games/2006-02-17-rookie-challenge.request.json`.
+**Rookies 125, Sophomores 143**.
+
+### Rookies box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Chris Paul | Yes | 29.3 | 21 | 3 | 11 | 4 | 0 | 0 | 2 | 9-16 | 1-2 | 2-3 | 25.2 |
+| Charlie Villanueva | Yes | 27.7 | 34 | 6 | 2 | 1 | 0 | 1 | 2 | 15-17 | 4-5 | 0-0 | 31.7 |
+| Raymond Felton | Yes | 24.9 | 8 | 2 | 10 | 2 | 0 | 4 | 2 | 3-5 | 2-2 | 0-0 | 10.9 |
+| Channing Frye | Yes | 23.1 | 14 | 4 | 2 | 0 | 0 | 3 | 1 | 7-15 | 0-2 | 0-0 | 7.1 |
+| Deron Williams | Yes | 23.1 | 13 | 4 | 9 | 2 | 0 | 1 | 1 | 6-14 | 1-5 | 0-0 | 13.7 |
+| Andrew Bogut |  | 21.3 | 11 | 4 | 1 | 0 | 3 | 2 | 0 | 5-6 | 0-0 | 1-4 | 9.6 |
+| Jarrett Jack |  | 18.7 | 8 | 2 | 5 | 2 | 0 | 2 | 0 | 4-7 | 0-1 | 0-0 | 9.6 |
+| Rashad McCants |  | 16.9 | 11 | 2 | 0 | 1 | 0 | 1 | 2 | 4-8 | 1-3 | 2-2 | 6.8 |
+| Marvin Williams |  | 15.1 | 5 | 6 | 1 | 0 | 0 | 5 | 1 | 2-4 | 0-2 | 1-2 | 0.9 |
+| Team |  | 200 | 125 | 33 | 41 | 12 | 3 | 19 | 11 | 55-92 | 9-22 | 6-11 |  |
+
+### Sophomores box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Josh Childress | Yes | 27.6 | 10 | 1 | 3 | 1 | 0 | 3 | 1 | 4-6 | 2-2 | 0-2 | 6.6 |
+| Andre Iguodala | Yes | 24.9 | 8 | 0 | 2 | 1 | 0 | 2 | 2 | 3-4 | 0-1 | 2-2 | 6.0 |
+| Luol Deng | Yes | 23.1 | 10 | 8 | 3 | 1 | 0 | 2 | 1 | 5-6 | 0-0 | 0-0 | 11.7 |
+| Nenad Krstić | Yes | 21.9 | 22 | 5 | 1 | 0 | 1 | 1 | 2 | 10-12 | 0-0 | 2-2 | 19.1 |
+| Dwight Howard | Yes | 21.3 | 17 | 8 | 0 | 0 | 0 | 1 | 2 | 8-15 | 0-1 | 1-2 | 10.7 |
+| Ben Gordon |  | 36.9 | 42 | 3 | 7 | 3 | 0 | 4 | 0 | 16-25 | 7-12 | 3-3 | 36.5 |
+| Josh Smith |  | 16.9 | 6 | 3 | 2 | 2 | 0 | 1 | 1 | 3-5 | 0-1 | 0-0 | 7.4 |
+| Andrés Nocioni |  | 15.1 | 18 | 0 | 1 | 0 | 1 | 0 | 1 | 7-10 | 2-3 | 2-2 | 14.8 |
+| David Harrison |  | 12.3 | 10 | 3 | 1 | 1 | 0 | 0 | 0 | 5-9 | 0-1 | 0-0 | 8.7 |
+| Team |  | 200 | 143 | 31 | 20 | 9 | 2 | 14 | 10 | 61-92 | 11-21 | 10-13 |  |
 
 ### Rookie Challenge rotation lock
 
@@ -54,13 +84,53 @@ Real editions: 2001-rookie_challenge, 2002-rookie_challenge, 2003-rookie_challen
 
 ### Rookie Challenge MVP
 
-Not decided yet.
+**Ben Gordon** (media panel of 9 (the Finals MVP panel's size; the award's own is unverified), lens 0.30 to 0.60; decided April 19, 2006, recorded April 19, 2006).
+
+| Player | Team | MIN | PTS | REB | AST | GmSc | Won | Votes |
+|---|---|---|---|---|---|---|---|---|
+| Ben Gordon | Sophomores | 36.9 | 42 | 3 | 7 | 36.5 | Yes | 9 |
 
 ## All-Star Game
 
 February 19, 2006 · event `2006-02-19-all-star-game` · evidence through February 18, 2006; locked and requested April 19, 2006, after the weekend.
 
-Not played yet: the request is `career/Dwyane_Wade/2005-06/11_All_Star/All_Star_Game/Game_1.request.json`.
+**East 128, West 134**.
+
+### East box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dwyane Wade | Yes | 31.7 | 26 | 7 | 4 | 3 | 0 | 2 | 2 | 11-16 | 0-2 | 4-5 | 24.3 |
+| LeBron James | Yes | 30.0 | 14 | 7 | 6 | 1 | 0 | 3 | 2 | 5-13 | 1-5 | 3-3 | 11.6 |
+| Allen Iverson | Yes | 27.5 | 11 | 2 | 7 | 1 | 0 | 4 | 1 | 4-9 | 2-2 | 1-2 | 8.4 |
+| Zydrunas Ilgauskas | Yes | 25.4 | 14 | 3 | 3 | 2 | 2 | 4 | 2 | 6-14 | 0-1 | 2-2 | 8.2 |
+| Jermaine O'Neal | Yes | 16.4 | 14 | 5 | 0 | 0 | 1 | 3 | 2 | 7-7 | 0-0 | 0-0 | 10.3 |
+| Paul Pierce |  | 26.0 | 8 | 3 | 3 | 2 | 0 | 2 | 2 | 3-6 | 1-2 | 1-4 | 6.4 |
+| Chris Bosh |  | 19.2 | 11 | 3 | 0 | 1 | 1 | 3 | 2 | 5-7 | 1-1 | 0-0 | 6.9 |
+| Chauncey Billups |  | 16.3 | 5 | 1 | 3 | 2 | 0 | 1 | 0 | 1-4 | 1-2 | 2-2 | 6.0 |
+| Jason Terry |  | 15.1 | 5 | 1 | 2 | 2 | 0 | 0 | 2 | 2-4 | 1-1 | 0-0 | 5.9 |
+| Vince Carter |  | 11.7 | 8 | 1 | 1 | 0 | 1 | 1 | 0 | 4-8 | 0-2 | 0-2 | 4.3 |
+| Boris Diaw |  | 12.4 | 12 | 3 | 3 | 0 | 2 | 1 | 0 | 6-7 | 0-0 | 0-0 | 13.3 |
+| Primož Brezec |  | 8.4 | 0 | 3 | 0 | 0 | 0 | 1 | 0 | 0-0 | 0-0 | 0-0 | 0.7 |
+| Team |  | 240 | 128 | 39 | 32 | 14 | 7 | 25 | 15 | 54-95 | 7-18 | 13-20 |  |
+
+### West box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Kevin Garnett | Yes | 31.5 | 18 | 7 | 4 | 0 | 0 | 5 | 4 | 9-11 | 0-0 | 0-0 | 13.4 |
+| Kobe Bryant | Yes | 30.4 | 19 | 4 | 5 | 3 | 0 | 5 | 1 | 9-18 | 1-3 | 0-0 | 12.3 |
+| Dirk Nowitzki | Yes | 27.6 | 22 | 5 | 4 | 2 | 0 | 1 | 1 | 8-16 | 2-4 | 4-4 | 19.3 |
+| Ray Allen | Yes | 25.1 | 13 | 3 | 1 | 3 | 0 | 0 | 0 | 5-7 | 1-3 | 2-2 | 15.1 |
+| Brad Miller | Yes | 15.7 | 4 | 6 | 2 | 2 | 0 | 3 | 1 | 2-3 | 0-1 | 0-0 | 5.7 |
+| Shawn Marion |  | 27.6 | 12 | 6 | 2 | 2 | 1 | 4 | 3 | 5-9 | 1-2 | 1-2 | 9.2 |
+| Chris Paul |  | 19.1 | 3 | 2 | 9 | 2 | 0 | 1 | 4 | 1-4 | 0-1 | 1-2 | 6.9 |
+| Elton Brand |  | 16.1 | 5 | 2 | 0 | 2 | 1 | 2 | 0 | 2-6 | 0-0 | 1-2 | 2.9 |
+| Yao Ming |  | 15.2 | 13 | 2 | 0 | 1 | 0 | 2 | 2 | 6-10 | 0-0 | 1-1 | 7.6 |
+| Joe Johnson |  | 11.5 | 10 | 1 | 3 | 1 | 0 | 0 | 0 | 5-8 | 0-2 | 0-0 | 9.8 |
+| Tony Parker |  | 11.5 | 10 | 4 | 2 | 2 | 0 | 0 | 1 | 5-9 | 0-0 | 0-0 | 9.9 |
+| Mike Bibby |  | 8.8 | 5 | 3 | 2 | 0 | 0 | 1 | 0 | 1-2 | 0-1 | 3-4 | 5.3 |
+| Team |  | 240 | 134 | 45 | 34 | 20 | 2 | 24 | 17 | 58-103 | 5-17 | 13-17 |  |
 
 ### All-Star Game rotation lock
 
@@ -106,6 +176,10 @@ Real editions: 2001-all_star, 2002-all_star, 2003-all_star, 2004-all_star, 2005-
 
 ### All-Star Game MVP
 
-Not decided yet.
+**Dirk Nowitzki** (media panel of 9 (the Finals MVP panel's size; the award's own is unverified), lens 0.30 to 0.60; decided April 19, 2006, recorded April 19, 2006).
+
+| Player | Team | MIN | PTS | REB | AST | GmSc | Won | Votes |
+|---|---|---|---|---|---|---|---|---|
+| Dirk Nowitzki | West | 27.6 | 22 | 5 | 4 | 19.3 | Yes | 9 |
 
 Rules and method: `runtime/all_star_games.py`; engine inputs `runtime/all_star_engine.py`; research `library/all_star/`.

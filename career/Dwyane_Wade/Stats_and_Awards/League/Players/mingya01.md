@@ -123,10 +123,11 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-04-19, from closed award decisions (1 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-04-19, from closed award decisions (2 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
+| Rookie Challenge / Rising Stars MVP | 2004-02-13 to 2004-02-13 | 2004-02-13 | **Winner** | [Decision](../2003-04/All_Star_Games.md#rookie-challenge-mvp) |
 | West Player of the Week | 2005-01-31 to 2005-02-06 | 2005-02-07 | Shortlist, No. 2 | [Decision](../2004-05/02_February/Week_1/League_Awards.md) |
 | West Player of the Week | 2005-11-14 to 2005-11-20 | 2005-11-21 | Shortlist, No. 3 | [Decision](../2005-06/11_November/Week_3/League_Awards.md) |
 | West Player of the Week | 2006-01-30 to 2006-02-05 | 2006-02-06 | Shortlist, No. 2 | [Decision](../2005-06/02_February/Week_1/League_Awards.md) |

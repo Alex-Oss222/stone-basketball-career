@@ -161,8 +161,8 @@ Exhibitions played by the engine; their MVPs are exhibition honors. [All-Star we
 
 | Game | Date | Result | MVP |
 | --- | --- | --- | --- |
-| Rookie Challenge | February 13, 2004 | Not played yet | Not decided yet |
-| All-Star Game | February 15, 2004 | Not played yet | Not decided yet |
+| Rookie Challenge | February 13, 2004 | Rookies 120, Sophomores 122 (1 OT) | **Yao Ming** |
+| All-Star Game | February 15, 2004 | East 133, West 135 | **Peja Stojakovic** |
 
 ### NBA champion
 

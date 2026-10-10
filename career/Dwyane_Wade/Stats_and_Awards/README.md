@@ -56,6 +56,7 @@ Identity as of 2006-04-19; status snapshot dated 2005-10-26. User-established al
 | Eastern Conference Player of the Month | 2004-12-01 to 2004-12-31 | 2005-01-02 | [East POM](League/2004-05/12_December/League_Awards.md#player-of-the-month) |
 | Eastern Conference Player of the Week | 2005-01-24 to 2005-01-30 | 2005-01-31 | [East POW](League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week) |
 | All-Star | 2004-11-02 to 2005-02-08 | 2005-02-08 | [All-Star](League/2004-05/All_Star.md#all-stars) |
+| Rookie Challenge / Rising Stars MVP | 2005-02-18 to 2005-02-18 | 2005-02-18 | [Rising Stars MVP](League/2004-05/All_Star_Games.md#rookie-challenge-mvp) |
 | Eastern Conference Player of the Month | 2005-03-01 to 2005-03-31 | 2005-04-02 | [East POM](League/2004-05/03_March/League_Awards.md#player-of-the-month) |
 | Eastern Conference Player of the Month | 2005-04-01 to 2005-04-20 | 2005-04-22 | [East POM](League/2004-05/04_April/League_Awards.md#player-of-the-month) |
 | All-NBA First Team | 2004-11-02 to 2005-04-20 | 2005-05-18 | [All-NBA 1st](League/2004-05/Season_Awards.md#all-nba-teams) |
@@ -117,9 +118,9 @@ Awards are confirmed through 2006-04-19, filed by the honor's period-end date; t
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04](../2003-04/11_All_Star/Rookie_Challenge/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [2004-05](../2004-05/11_All_Star/Rookie_Challenge/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Career total | 22 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [2003-04](../2003-04/11_All_Star/Rookie_Challenge/README.md) | 20 | Rookies | NBA | SG / PG | 1 | 1 | 32.6 | 8.0 | 17.0 | .471 | 3.0 | 4.0 | .750 | 5.0 | 13.0 | .385 | .559 | 1.0 | 2.0 | .500 | 3.0 | 2.0 | 5.0 | 2.0 | 3.0 | 0.0 | 0.0 | 0.0 | 20.0 | .559 | — |
+| [2004-05](../2004-05/11_All_Star/Rookie_Challenge/README.md) | 21 | Sophomores | NBA | SG / PG | 1 | 1 | 27.2 | 8.0 | 11.0 | .727 | 2.0 | 2.0 | 1.000 | 6.0 | 9.0 | .667 | .818 | 2.0 | 2.0 | 1.000 | 1.0 | 3.0 | 4.0 | 4.0 | 4.0 | 2.0 | 4.0 | 3.0 | 20.0 | .842 | [Rising Stars MVP](League/2004-05/All_Star_Games.md#rookie-challenge-mvp) |
+| Career total | 22 | Rookies / Sophomores | NBA | SG / PG | 2 | 2 | 29.9 | 8.0 | 14.0 | .571 | 2.5 | 3.0 | .833 | 5.5 | 11.0 | .500 | .661 | 1.5 | 2.0 | .750 | 2.0 | 2.5 | 4.5 | 3.0 | 3.5 | 1.0 | 2.0 | 1.5 | 20.0 | .672 | [Rising Stars MVP](League/2004-05/All_Star_Games.md#rookie-challenge-mvp) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
@@ -133,10 +134,10 @@ Awards are confirmed through 2006-04-19, filed by the honor's period-end date; t
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04](../2003-04/11_All_Star/All_Star_Game/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [2004-05](../2004-05/11_All_Star/All_Star_Game/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [2005-06](../2005-06/11_All_Star/All_Star_Game/README.md) | 22 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Career total | 22 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [2003-04](../2003-04/11_All_Star/All_Star_Game/README.md) | 20 | East | NBA | SG / PG | 1 | 0 | 25.7 | 4.0 | 7.0 | .571 | 0.0 | 1.0 | .000 | 4.0 | 6.0 | .667 | .571 | 0.0 | 0.0 | N/A | 1.0 | 1.0 | 2.0 | 2.0 | 0.0 | 0.0 | 0.0 | 3.0 | 8.0 | .571 | — |
+| [2004-05](../2004-05/11_All_Star/All_Star_Game/README.md) | 21 | East | NBA | SG / PG | 1 | 0 | 26.2 | 8.0 | 12.0 | .667 | 0.0 | 2.0 | .000 | 8.0 | 10.0 | .800 | .667 | 3.0 | 3.0 | 1.000 | 2.0 | 4.0 | 6.0 | 3.0 | 2.0 | 1.0 | 1.0 | 1.0 | 19.0 | .713 | — |
+| [2005-06](../2005-06/11_All_Star/All_Star_Game/README.md) | 22 | East | NBA | SG / PG | 1 | 1 | 31.7 | 11.0 | 16.0 | .688 | 0.0 | 2.0 | .000 | 11.0 | 14.0 | .786 | .688 | 4.0 | 5.0 | .800 | 1.0 | 6.0 | 7.0 | 4.0 | 3.0 | 0.0 | 2.0 | 2.0 | 26.0 | .714 | — |
+| Career total | 22 | East | NBA | SG / PG | 3 | 1 | 27.9 | 7.7 | 11.7 | .657 | 0.0 | 1.7 | .000 | 7.7 | 10.0 | .767 | .657 | 2.3 | 2.7 | .875 | 1.3 | 3.7 | 5.0 | 3.0 | 1.7 | 0.3 | 1.0 | 2.0 | 17.7 | .688 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

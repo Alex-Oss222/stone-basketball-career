@@ -54,6 +54,7 @@ Identity as of 2006-04-19; status snapshot dated 2005-10-26. User-established al
 | Eastern Conference Player of the Month | 2004-12-01 to 2004-12-31 | 2005-01-02 | [East POM](../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month) |
 | Eastern Conference Player of the Week | 2005-01-24 to 2005-01-30 | 2005-01-31 | [East POW](../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week) |
 | All-Star | 2004-11-02 to 2005-02-08 | 2005-02-08 | [All-Star](../Stats_and_Awards/League/2004-05/All_Star.md#all-stars) |
+| Rookie Challenge / Rising Stars MVP | 2005-02-18 to 2005-02-18 | 2005-02-18 | [Rising Stars MVP](../Stats_and_Awards/League/2004-05/All_Star_Games.md#rookie-challenge-mvp) |
 | Eastern Conference Player of the Month | 2005-03-01 to 2005-03-31 | 2005-04-02 | [East POM](../Stats_and_Awards/League/2004-05/03_March/League_Awards.md#player-of-the-month) |
 | Eastern Conference Player of the Month | 2005-04-01 to 2005-04-20 | 2005-04-22 | [East POM](../Stats_and_Awards/League/2004-05/04_April/League_Awards.md#player-of-the-month) |
 | All-NBA First Team | 2004-11-02 to 2005-04-20 | 2005-05-18 | [All-NBA 1st](../Stats_and_Awards/League/2004-05/Season_Awards.md#all-nba-teams) |

@@ -162,8 +162,8 @@ Exhibitions played by the engine; their MVPs are exhibition honors. [All-Star we
 
 | Game | Date | Result | MVP |
 | --- | --- | --- | --- |
-| Rookie Challenge | February 17, 2006 | Not played yet | Not decided yet |
-| All-Star Game | February 19, 2006 | Not played yet | Not decided yet |
+| Rookie Challenge | February 17, 2006 | Rookies 125, Sophomores 143 | **Ben Gordon** |
+| All-Star Game | February 19, 2006 | East 128, West 134 | **Dirk Nowitzki** |
 
 ### NBA champion
 

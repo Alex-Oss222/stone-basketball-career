@@ -691,6 +691,10 @@
         },
         {
           "label": "Closed game",
+          "href": "../2005-06/11_All_Star/All_Star_Game/Game_1.md"
+        },
+        {
+          "label": "Closed game",
           "href": "../2005-06/06_Regular_Season/02_February/Week_4/Game_1.md"
         },
         {
@@ -1282,6 +1286,10 @@
         {
           "label": "Closed game",
           "href": "../2005-06/06_Regular_Season/02_February/Week_3/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/11_All_Star/All_Star_Game/Game_1.md"
         },
         {
           "label": "Closed game",
@@ -1913,6 +1921,10 @@
         {
           "label": "Closed game",
           "href": "../2005-06/06_Regular_Season/02_February/Week_3/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/11_All_Star/All_Star_Game/Game_1.md"
         },
         {
           "label": "Closed game",
@@ -2580,6 +2592,10 @@
         },
         {
           "label": "Closed game",
+          "href": "../2005-06/11_All_Star/All_Star_Game/Game_1.md"
+        },
+        {
+          "label": "Closed game",
           "href": "../2005-06/06_Regular_Season/02_February/Week_4/Game_1.md"
         },
         {
@@ -3146,6 +3162,10 @@
         {
           "label": "Closed game",
           "href": "../2005-06/06_Regular_Season/02_February/Week_3/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/11_All_Star/All_Star_Game/Game_1.md"
         },
         {
           "label": "Closed game",
@@ -3761,6 +3781,10 @@
         },
         {
           "label": "Closed game",
+          "href": "../2005-06/11_All_Star/All_Star_Game/Game_1.md"
+        },
+        {
+          "label": "Closed game",
           "href": "../2005-06/06_Regular_Season/02_February/Week_4/Game_1.md"
         },
         {
@@ -4327,6 +4351,10 @@
         {
           "label": "Closed game",
           "href": "../2005-06/06_Regular_Season/02_February/Week_3/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/11_All_Star/All_Star_Game/Game_1.md"
         },
         {
           "label": "Closed game",
@@ -4975,6 +5003,10 @@
         },
         {
           "label": "Closed game",
+          "href": "../2005-06/11_All_Star/All_Star_Game/Game_1.md"
+        },
+        {
+          "label": "Closed game",
           "href": "../2005-06/06_Regular_Season/02_February/Week_4/Game_1.md"
         },
         {
@@ -5115,7 +5147,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "89 closed game records in 2005-06 through 2006-04-19. Competitions remain separate.",
+      "summary": "90 closed game records in 2005-06 through 2006-04-19. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -5130,6 +5162,16 @@
             "Coverage"
           ],
           "rows": [
+            [
+              "all star",
+              1,
+              31.67135,
+              26.0,
+              7.0,
+              4.0,
+              2.0,
+              "Complete"
+            ],
             [
               "preseason",
               7,
@@ -5164,6 +5206,15 @@
             "3P ratio"
           ],
           "rows": [
+            [
+              "all star",
+              11,
+              16,
+              0.6875,
+              0,
+              2,
+              0.0
+            ],
             [
               "preseason",
               57,
@@ -5793,6 +5844,16 @@
               {
                 "label": "Closed game",
                 "href": "../2005-06/06_Regular_Season/02_February/Week_3/Game_1.md"
+              }
+            ],
+            [
+              "2006-02-19",
+              "all_star",
+              "West",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/11_All_Star/All_Star_Game/Game_1.md"
               }
             ],
             [
@@ -6447,6 +6508,10 @@
         {
           "label": "Closed game",
           "href": "../2005-06/06_Regular_Season/02_February/Week_3/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/11_All_Star/All_Star_Game/Game_1.md"
         },
         {
           "label": "Closed game",

@@ -162,8 +162,8 @@ Exhibitions played by the engine; their MVPs are exhibition honors. [All-Star we
 
 | Game | Date | Result | MVP |
 | --- | --- | --- | --- |
-| Rookie Challenge | February 18, 2005 | Not played yet | Not decided yet |
-| All-Star Game | February 20, 2005 | Not played yet | Not decided yet |
+| Rookie Challenge | February 18, 2005 | Rookies 97, Sophomores 120 | **Dwyane Wade** |
+| All-Star Game | February 20, 2005 | East 134, West 135 | **Kevin Garnett** |
 
 ### NBA champion
 

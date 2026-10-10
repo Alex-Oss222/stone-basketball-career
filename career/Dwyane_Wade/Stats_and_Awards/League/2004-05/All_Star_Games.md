@@ -8,7 +8,37 @@ Played by the engine as exhibitions (`runtime/all_star_games.py`, `runtime/all_s
 
 February 18, 2005 · event `2005-02-18-rookie-challenge` · evidence through February 17, 2005; locked and requested April 19, 2006, after the weekend.
 
-Not played yet: the request is `career/Dwyane_Wade/2004-05/11_All_Star/Rookie_Challenge/Game_1.request.json`.
+**Rookies 97, Sophomores 120**.
+
+### Rookies box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Emeka Okafor | Yes | 29.5 | 25 | 12 | 0 | 0 | 1 | 2 | 0 | 11-21 | 0-1 | 3-6 | 18.2 |
+| Dwight Howard | Yes | 27.3 | 13 | 7 | 1 | 2 | 2 | 1 | 2 | 6-8 | 0-0 | 1-4 | 15.0 |
+| Josh Childress | Yes | 25.0 | 8 | 8 | 3 | 2 | 1 | 0 | 1 | 4-17 | 0-4 | 0-0 | 6.9 |
+| Nenad Krstić | Yes | 23.1 | 7 | 3 | 0 | 1 | 1 | 2 | 1 | 2-7 | 0-0 | 3-3 | 3.5 |
+| Josh Smith | Yes | 23.0 | 17 | 8 | 0 | 2 | 0 | 3 | 0 | 8-14 | 0-1 | 1-2 | 12.2 |
+| Andre Iguodala |  | 21.2 | 6 | 5 | 2 | 0 | 0 | 2 | 1 | 3-5 | 0-0 | 0-0 | 4.2 |
+| Ben Gordon |  | 18.9 | 8 | 1 | 1 | 1 | 0 | 3 | 1 | 4-15 | 0-6 | 0-0 | -1.9 |
+| Andrés Nocioni |  | 17.0 | 9 | 3 | 0 | 1 | 0 | 3 | 0 | 4-6 | 1-1 | 0-0 | 5.7 |
+| Rafael Araújo |  | 15.0 | 4 | 2 | 0 | 2 | 0 | 1 | 2 | 2-6 | 0-2 | 0-0 | 1.4 |
+| Team |  | 200 | 97 | 49 | 7 | 11 | 5 | 17 | 8 | 44-99 | 1-15 | 8-15 |  |
+
+### Sophomores box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| LeBron James | Yes | 29.4 | 23 | 2 | 5 | 0 | 0 | 5 | 1 | 11-18 | 0-3 | 1-1 | 13.5 |
+| Dwyane Wade | Yes | 27.2 | 20 | 4 | 4 | 4 | 2 | 4 | 3 | 8-11 | 2-2 | 2-2 | 20.1 |
+| Chris Bosh | Yes | 25.0 | 10 | 18 | 1 | 2 | 2 | 1 | 1 | 4-12 | 0-2 | 2-2 | 14.5 |
+| Carmelo Anthony | Yes | 23.1 | 14 | 8 | 3 | 3 | 0 | 1 | 0 | 7-13 | 0-0 | 0-1 | 15.4 |
+| Luke Ridnour | Yes | 23.2 | 8 | 1 | 6 | 2 | 0 | 3 | 1 | 4-9 | 0-0 | 0-0 | 6.4 |
+| Mickael Pietrus |  | 21.4 | 11 | 5 | 2 | 0 | 0 | 0 | 0 | 4-11 | 1-4 | 2-2 | 7.8 |
+| Josh Howard |  | 18.9 | 18 | 3 | 2 | 2 | 0 | 0 | 1 | 9-11 | 0-0 | 0-0 | 17.8 |
+| Kyle Korver |  | 16.8 | 6 | 1 | 2 | 1 | 0 | 0 | 1 | 2-4 | 2-3 | 0-0 | 6.3 |
+| Chris Kaman |  | 15.0 | 10 | 5 | 2 | 1 | 0 | 2 | 2 | 4-7 | 0-1 | 2-2 | 8.6 |
+| Team |  | 200 | 120 | 47 | 27 | 15 | 4 | 16 | 10 | 53-96 | 5-15 | 9-10 |  |
 
 ### Rookie Challenge rotation lock
 
@@ -57,13 +87,53 @@ Real editions: 2001-rookie_challenge, 2002-rookie_challenge, 2003-rookie_challen
 
 ### Rookie Challenge MVP
 
-Not decided yet.
+**Dwyane Wade** (media panel of 9 (the Finals MVP panel's size; the award's own is unverified), lens 0.30 to 0.60; decided April 19, 2006, recorded April 19, 2006).
+
+| Player | Team | MIN | PTS | REB | AST | GmSc | Won | Votes |
+|---|---|---|---|---|---|---|---|---|
+| Dwyane Wade | Sophomores | 27.2 | 20 | 4 | 4 | 20.1 | Yes | 9 |
 
 ## All-Star Game
 
 February 20, 2005 · event `2005-02-20-all-star-game` · evidence through February 19, 2005; locked and requested April 19, 2006, after the weekend.
 
-Not played yet: the request is `career/Dwyane_Wade/2004-05/11_All_Star/All_Star_Game/Game_1.request.json`.
+**East 134, West 135**.
+
+### East box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| LeBron James | Yes | 32.5 | 26 | 8 | 6 | 1 | 0 | 2 | 1 | 11-19 | 3-7 | 1-2 | 23.1 |
+| Jermaine O'Neal | Yes | 30.1 | 12 | 6 | 2 | 2 | 1 | 4 | 3 | 6-13 | 0-0 | 0-0 | 6.8 |
+| Vince Carter | Yes | 27.7 | 19 | 3 | 4 | 1 | 0 | 3 | 2 | 9-17 | 0-5 | 1-1 | 12.4 |
+| Tracy McGrady | Yes | 25.5 | 21 | 5 | 8 | 1 | 0 | 3 | 0 | 8-14 | 5-7 | 0-1 | 19.5 |
+| Ben Wallace | Yes | 17.4 | 4 | 7 | 1 | 3 | 0 | 1 | 1 | 1-4 | 0-0 | 2-2 | 8.4 |
+| Dwyane Wade |  | 26.2 | 19 | 6 | 3 | 2 | 1 | 1 | 1 | 8-12 | 0-2 | 3-3 | 19.8 |
+| Allen Iverson |  | 17.7 | 10 | 1 | 4 | 0 | 0 | 4 | 0 | 2-8 | 1-1 | 5-8 | 3.1 |
+| Paul Pierce |  | 15.5 | 7 | 5 | 1 | 2 | 1 | 2 | 1 | 3-6 | 1-3 | 0-0 | 6.9 |
+| Chris Bosh |  | 15.2 | 12 | 5 | 0 | 3 | 0 | 0 | 0 | 5-7 | 1-1 | 1-1 | 14.4 |
+| Jamal Crawford |  | 12.6 | 1 | 5 | 2 | 0 | 0 | 0 | 2 | 0-5 | 0-3 | 1-2 | 0.4 |
+| Zydrunas Ilgauskas |  | 10.2 | 3 | 5 | 1 | 0 | 1 | 0 | 0 | 1-3 | 0-0 | 1-2 | 5.4 |
+| Morris Peterson |  | 9.5 | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0-3 | 0-2 | 0-0 | 0.6 |
+| Team |  | 240 | 134 | 56 | 33 | 17 | 4 | 20 | 11 | 54-111 | 11-31 | 15-22 |  |
+
+### West box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Kevin Garnett | Yes | 32.8 | 23 | 10 | 5 | 5 | 1 | 1 | 1 | 10-15 | 1-2 | 2-2 | 28.5 |
+| Kobe Bryant | Yes | 30.3 | 23 | 7 | 7 | 2 | 0 | 5 | 1 | 9-22 | 3-6 | 2-2 | 16.0 |
+| Shaquille O'Neal | Yes | 27.4 | 18 | 13 | 3 | 0 | 2 | 2 | 0 | 9-16 | 0-1 | 0-0 | 18.2 |
+| Stephon Marbury | Yes | 25.7 | 9 | 1 | 6 | 2 | 1 | 3 | 2 | 4-10 | 0-2 | 1-1 | 7.4 |
+| Tim Duncan | Yes | 17.2 | 13 | 2 | 3 | 2 | 1 | 1 | 1 | 6-14 | 1-2 | 0-0 | 10.4 |
+| Dirk Nowitzki |  | 26.5 | 17 | 6 | 2 | 1 | 1 | 2 | 1 | 7-13 | 1-2 | 2-2 | 14.8 |
+| Shawn Marion |  | 20.1 | 11 | 2 | 1 | 2 | 0 | 2 | 3 | 4-6 | 3-3 | 0-0 | 9.3 |
+| Peja Stojakovic |  | 15.1 | 5 | 4 | 1 | 0 | 0 | 1 | 1 | 1-4 | 1-3 | 2-2 | 3.5 |
+| Amar'e Stoudemire |  | 15.2 | 8 | 4 | 2 | 1 | 0 | 0 | 2 | 2-4 | 0-0 | 4-4 | 9.6 |
+| Manu Ginobili |  | 12.6 | 6 | 3 | 0 | 0 | 1 | 2 | 2 | 2-6 | 1-3 | 1-1 | 1.4 |
+| Joe Johnson |  | 9.7 | 2 | 1 | 0 | 0 | 0 | 0 | 1 | 1-2 | 0-0 | 0-0 | 1.3 |
+| Kurt Thomas |  | 7.3 | 0 | 1 | 0 | 0 | 0 | 2 | 2 | 0-1 | 0-0 | 0-0 | -2.8 |
+| Team |  | 240 | 135 | 54 | 30 | 15 | 7 | 21 | 17 | 55-113 | 11-24 | 14-14 |  |
 
 ### All-Star Game rotation lock
 
@@ -109,6 +179,10 @@ Real editions: 2000-all_star, 2001-all_star, 2002-all_star, 2003-all_star, 2004-
 
 ### All-Star Game MVP
 
-Not decided yet.
+**Kevin Garnett** (media panel of 9 (the Finals MVP panel's size; the award's own is unverified), lens 0.30 to 0.60; decided April 19, 2006, recorded April 19, 2006).
+
+| Player | Team | MIN | PTS | REB | AST | GmSc | Won | Votes |
+|---|---|---|---|---|---|---|---|---|
+| Kevin Garnett | West | 32.8 | 23 | 10 | 5 | 28.5 | Yes | 9 |
 
 Rules and method: `runtime/all_star_games.py`; engine inputs `runtime/all_star_engine.py`; research `library/all_star/`.

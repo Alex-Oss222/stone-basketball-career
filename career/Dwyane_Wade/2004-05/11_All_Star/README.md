@@ -48,14 +48,14 @@ The Rookie Challenge and the All-Star Game are exhibitions played by the engine;
 
 ### All-Star weekend games
 
-[![Shooting](../../Stats_and_Awards/assets/shooting_link.svg)](../../Stats_and_Awards/player_cards.html?period=regular-2005-06-season#shooting) [![Contract](../../Stats_and_Awards/assets/contract_link.svg)](../../Stats_and_Awards/player_cards.html#contract) [![Awards](../../Stats_and_Awards/assets/awards_link.svg)](../../Stats_and_Awards/player_cards.html#awards)
+[![Shooting](../../Stats_and_Awards/assets/shooting_link.svg)](../../Stats_and_Awards/player_cards.html?period=rookie_challenge-2004-05-season#shooting) [![Contract](../../Stats_and_Awards/assets/contract_link.svg)](../../Stats_and_Awards/player_cards.html#contract) [![Awards](../../Stats_and_Awards/assets/awards_link.svg)](../../Stats_and_Awards/player_cards.html#awards)
 
 [Shooting detail](../../Stats_and_Awards/Shooting.md) · [Current contract](../../Stats_and_Awards/Contract.md#current-contract) · [Contract history](../../Stats_and_Awards/Contract.md#contract-history) · [Annual award record](../../Stats_and_Awards/Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Rookie Challenge](Rookie_Challenge/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [NBA All-Star Game](All_Star_Game/README.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [Rookie Challenge](Rookie_Challenge/README.md) | 21 | Sophomores | NBA | SG / PG | 1 | 1 | 27.2 | 8.0 | 11.0 | .727 | 2.0 | 2.0 | 1.000 | 6.0 | 9.0 | .667 | .818 | 2.0 | 2.0 | 1.000 | 1.0 | 3.0 | 4.0 | 4.0 | 4.0 | 2.0 | 4.0 | 3.0 | 20.0 | .842 | [Rising Stars MVP](../../Stats_and_Awards/League/2004-05/All_Star_Games.md#rookie-challenge-mvp) |
+| [NBA All-Star Game](All_Star_Game/README.md) | 21 | East | NBA | SG / PG | 1 | 0 | 26.2 | 8.0 | 12.0 | .667 | 0.0 | 2.0 | .000 | 8.0 | 10.0 | .800 | .667 | 3.0 | 3.0 | 1.000 | 2.0 | 4.0 | 6.0 | 3.0 | 2.0 | 1.0 | 1.0 | 1.0 | 19.0 | .713 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
@@ -65,16 +65,23 @@ Awards are confirmed through 2006-04-19, filed by the honor's period-end date; t
 
 | Date / source | Opponent | Venue | Result | Participation | MIN | PTS | REB | AST | STL | BLK | TOV |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-02-18](Rookie_Challenge/Game_1.md) | Rookies | neutral | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [2005-02-20](All_Star_Game/Game_1.md) | West | neutral | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [2005-02-18](Rookie_Challenge/Game_1.md) | Rookies | neutral | W 120-97 | Played | 27.2 | 20 | 4 | 4 | 4 | 2 | 4 |
+| [2005-02-20](All_Star_Game/Game_1.md) | West | neutral | L 134-135 | Played | 26.2 | 19 | 6 | 3 | 2 | 1 | 1 |
 
 ### Individual game boxes
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-02-18](Rookie_Challenge/Game_1.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [2005-02-20](All_Star_Game/Game_1.md) | 21 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [2005-02-18](Rookie_Challenge/Game_1.md) | 21 | Sophomores | NBA | SG / PG | 1 | 1 | 27.2 | 8.0 | 11.0 | .727 | 2.0 | 2.0 | 1.000 | 6.0 | 9.0 | .667 | .818 | 2.0 | 2.0 | 1.000 | 1.0 | 3.0 | 4.0 | 4.0 | 4.0 | 2.0 | 4.0 | 3.0 | 20.0 | .842 | — |
+| [2005-02-20](All_Star_Game/Game_1.md) | 21 | East | NBA | SG / PG | 1 | 0 | 26.2 | 8.0 | 12.0 | .667 | 0.0 | 2.0 | .000 | 8.0 | 10.0 | .800 | .667 | 3.0 | 3.0 | 1.000 | 2.0 | 4.0 | 6.0 | 3.0 | 2.0 | 1.0 | 1.0 | 1.0 | 19.0 | .713 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
 Awards are confirmed through 2006-04-19, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+
+### Game shooting detail
+
+| Date / source | FG | 2P | 3P | FT | eFG% | TS% (est.) | +/- | PF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [2005-02-18](Rookie_Challenge/Game_1.md) | 8/11 | 6/9 | 2/2 | 2/2 | 81.8% | 84.2% | N/A | 3 |
+| [2005-02-20](All_Star_Game/Game_1.md) | 8/12 | 8/10 | 0/2 | 3/3 | 66.7% | 71.3% | N/A | 1 |

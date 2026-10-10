@@ -8,7 +8,37 @@ Played by the engine as exhibitions (`runtime/all_star_games.py`, `runtime/all_s
 
 February 13, 2004 · event `2004-02-13-rookie-challenge` · evidence through February 12, 2004; locked and requested April 19, 2006, after the weekend.
 
-Not played yet: the request is `career/Dwyane_Wade/2003-04/11_All_Star/Rookie_Challenge/Game_1.request.json`.
+**Rookies 120, Sophomores 122** (1 OT).
+
+### Rookies box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dwyane Wade | Yes | 32.6 | 20 | 5 | 2 | 3 | 0 | 0 | 0 | 8-17 | 3-4 | 1-2 | 18.0 |
+| LeBron James | Yes | 29.6 | 24 | 4 | 8 | 4 | 0 | 3 | 1 | 9-21 | 4-6 | 2-2 | 21.1 |
+| Carmelo Anthony | Yes | 28.4 | 10 | 3 | 2 | 2 | 0 | 3 | 2 | 4-11 | 0-2 | 2-2 | 5.2 |
+| Chris Bosh | Yes | 26.8 | 23 | 10 | 1 | 1 | 1 | 2 | 2 | 11-15 | 0-0 | 1-2 | 19.5 |
+| Kirk Hinrich | Yes | 26.8 | 13 | 0 | 10 | 4 | 0 | 2 | 2 | 5-12 | 3-8 | 0-0 | 14.8 |
+| Josh Howard |  | 19.6 | 14 | 8 | 0 | 1 | 0 | 1 | 2 | 6-15 | 2-3 | 0-4 | 8.3 |
+| T.J. Ford |  | 15.8 | 4 | 1 | 8 | 3 | 0 | 1 | 1 | 2-7 | 0-0 | 0-0 | 7.8 |
+| Jarvis Hayes |  | 15.2 | 8 | 4 | 3 | 2 | 0 | 3 | 0 | 4-6 | 0-1 | 0-0 | 8.9 |
+| Chris Kaman |  | 15.2 | 4 | 7 | 0 | 0 | 0 | 0 | 1 | 2-3 | 0-0 | 0-0 | 5.2 |
+| Team |  | 210 | 120 | 42 | 34 | 20 | 1 | 15 | 11 | 51-107 | 12-24 | 6-12 |  |
+
+### Sophomores box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Carlos Boozer | Yes | 32.6 | 19 | 9 | 5 | 2 | 0 | 2 | 0 | 9-17 | 0-1 | 1-2 | 17.3 |
+| Yao Ming | Yes | 29.6 | 28 | 13 | 4 | 1 | 2 | 6 | 1 | 14-18 | 0-0 | 0-1 | 24.5 |
+| Nene | Yes | 28.4 | 10 | 8 | 4 | 3 | 0 | 5 | 3 | 5-8 | 0-0 | 0-2 | 8.4 |
+| Tayshaun Prince | Yes | 26.8 | 11 | 6 | 2 | 1 | 1 | 1 | 2 | 5-8 | 1-2 | 0-0 | 11.7 |
+| Jiri Welsch | Yes | 26.8 | 12 | 3 | 3 | 2 | 0 | 7 | 0 | 5-9 | 1-2 | 1-1 | 6.1 |
+| Drew Gooden |  | 19.6 | 18 | 4 | 1 | 0 | 0 | 1 | 1 | 9-11 | 0-0 | 0-0 | 14.4 |
+| Ronald Murray |  | 15.8 | 14 | 3 | 3 | 2 | 0 | 1 | 1 | 6-12 | 1-4 | 1-2 | 11.2 |
+| Juan Dixon |  | 15.2 | 4 | 2 | 1 | 0 | 0 | 2 | 0 | 2-5 | 0-3 | 0-0 | 1.4 |
+| Gordan Giricek |  | 15.2 | 6 | 2 | 3 | 1 | 2 | 1 | 1 | 2-5 | 0-0 | 2-2 | 7.4 |
+| Team |  | 210 | 122 | 50 | 26 | 12 | 5 | 26 | 9 | 57-93 | 3-12 | 5-10 |  |
 
 ### Rookie Challenge rotation lock
 
@@ -59,13 +89,53 @@ Real editions: 2001-rookie_challenge, 2002-rookie_challenge, 2003-rookie_challen
 
 ### Rookie Challenge MVP
 
-Not decided yet.
+**Yao Ming** (media panel of 9 (the Finals MVP panel's size; the award's own is unverified), lens 0.30 to 0.60; decided April 19, 2006, recorded April 19, 2006).
+
+| Player | Team | MIN | PTS | REB | AST | GmSc | Won | Votes |
+|---|---|---|---|---|---|---|---|---|
+| Yao Ming | Sophomores | 29.6 | 28 | 13 | 4 | 24.5 | Yes | 9 |
 
 ## All-Star Game
 
 February 15, 2004 · event `2004-02-15-all-star-game` · evidence through February 14, 2004; locked and requested April 19, 2006, after the weekend.
 
-Not played yet: the request is `career/Dwyane_Wade/2003-04/11_All_Star/All_Star_Game/Game_1.request.json`.
+**East 133, West 135**.
+
+### East box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Tracy McGrady | Yes | 32.4 | 30 | 6 | 3 | 2 | 1 | 1 | 1 | 12-32 | 4-11 | 2-3 | 17.6 |
+| Jason Kidd | Yes | 29.9 | 10 | 10 | 10 | 2 | 0 | 5 | 3 | 4-10 | 0-2 | 2-2 | 12.0 |
+| Jermaine O'Neal | Yes | 28.3 | 17 | 9 | 0 | 3 | 1 | 2 | 3 | 8-13 | 1-1 | 0-0 | 15.5 |
+| Shareef Abdur-Rahim | Yes | 25.9 | 8 | 6 | 1 | 1 | 0 | 3 | 0 | 2-8 | 0-0 | 4-4 | 4.5 |
+| Ben Wallace | Yes | 17.3 | 16 | 5 | 0 | 2 | 1 | 1 | 2 | 8-9 | 0-0 | 0-0 | 16.9 |
+| Dwyane Wade |  | 25.7 | 8 | 2 | 2 | 0 | 0 | 0 | 3 | 4-7 | 0-1 | 0-0 | 5.9 |
+| Richard Jefferson |  | 17.9 | 8 | 4 | 8 | 1 | 0 | 0 | 0 | 3-7 | 0-0 | 2-3 | 12.9 |
+| Ron Artest |  | 16.3 | 12 | 1 | 4 | 3 | 0 | 0 | 1 | 5-8 | 1-3 | 1-2 | 13.7 |
+| Michael Redd |  | 15.8 | 11 | 3 | 1 | 2 | 0 | 4 | 3 | 5-10 | 1-5 | 0-0 | 4.8 |
+| Chauncey Billups |  | 11.5 | 7 | 3 | 1 | 0 | 0 | 0 | 1 | 2-3 | 1-1 | 2-2 | 6.9 |
+| Kerry Kittles |  | 10.8 | 4 | 1 | 2 | 0 | 0 | 0 | 0 | 2-8 | 0-3 | 0-0 | 0.9 |
+| Jamaal Magloire |  | 8.2 | 2 | 2 | 0 | 1 | 0 | 1 | 0 | 1-1 | 0-0 | 0-0 | 2.7 |
+| Team |  | 240 | 133 | 52 | 32 | 17 | 3 | 17 | 17 | 56-116 | 8-27 | 13-16 |  |
+
+### West box score
+
+| Player | Start | MIN | PTS | REB | AST | STL | BLK | TOV | PF | FG | 3P | FT | GmSc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Kevin Garnett | Yes | 32.5 | 13 | 15 | 3 | 2 | 0 | 3 | 0 | 5-10 | 0-1 | 3-4 | 14.8 |
+| Kobe Bryant | Yes | 29.7 | 4 | 3 | 7 | 3 | 0 | 2 | 2 | 2-7 | 0-3 | 0-0 | 6.3 |
+| Tim Duncan | Yes | 27.6 | 10 | 7 | 4 | 2 | 1 | 0 | 1 | 4-18 | 0-0 | 2-4 | 5.8 |
+| Shaquille O'Neal | Yes | 25.5 | 20 | 7 | 3 | 0 | 1 | 4 | 4 | 10-13 | 0-0 | 0-1 | 15.0 |
+| Gary Payton | Yes | 17.6 | 16 | 4 | 1 | 1 | 0 | 2 | 1 | 7-11 | 1-1 | 1-2 | 11.2 |
+| Peja Stojakovic |  | 25.3 | 29 | 2 | 0 | 0 | 0 | 1 | 0 | 10-13 | 6-7 | 3-4 | 23.5 |
+| Sam Cassell |  | 18.3 | 15 | 3 | 6 | 0 | 0 | 0 | 1 | 6-12 | 1-1 | 2-2 | 14.1 |
+| Steve Nash |  | 16.0 | 11 | 1 | 5 | 1 | 0 | 5 | 0 | 5-7 | 1-2 | 0-0 | 7.9 |
+| Mike Bibby |  | 15.3 | 10 | 1 | 3 | 0 | 1 | 1 | 1 | 3-6 | 2-4 | 2-3 | 8.7 |
+| Dirk Nowitzki |  | 13.0 | 5 | 7 | 0 | 0 | 0 | 1 | 0 | 1-5 | 0-1 | 3-3 | 5.0 |
+| Latrell Sprewell |  | 12.2 | 2 | 3 | 0 | 0 | 0 | 1 | 2 | 1-3 | 0-0 | 0-0 | -0.2 |
+| Vlade Divac |  | 6.9 | 0 | 1 | 3 | 1 | 0 | 1 | 1 | 0-1 | 0-0 | 0-0 | 1.3 |
+| Team |  | 240 | 135 | 54 | 35 | 10 | 3 | 21 | 13 | 54-106 | 11-20 | 16-23 |  |
 
 ### All-Star Game rotation lock
 
@@ -111,6 +181,10 @@ Real editions: 1998-all_star, 2000-all_star, 2001-all_star, 2002-all_star, 2003-
 
 ### All-Star Game MVP
 
-Not decided yet.
+**Peja Stojakovic** (media panel of 9 (the Finals MVP panel's size; the award's own is unverified), lens 0.30 to 0.60; decided April 19, 2006, recorded April 19, 2006).
+
+| Player | Team | MIN | PTS | REB | AST | GmSc | Won | Votes |
+|---|---|---|---|---|---|---|---|---|
+| Peja Stojakovic | West | 25.3 | 29 | 2 | 0 | 23.5 | Yes | 9 |
 
 Rules and method: `runtime/all_star_games.py`; engine inputs `runtime/all_star_engine.py`; research `library/all_star/`.

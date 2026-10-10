@@ -246,7 +246,39 @@
    "request": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/All_Star/Games/2006-02-17-rookie-challenge.request.json",
    "result": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/All_Star/Games/2006-02-17-rookie-challenge.result.json",
    "note": null,
-   "engine_sha256": "cb62a2d02e260a65a08c2c2f9fe4513c8fff678212a7a0e1e8e8b54f8c00e8a9"
+   "engine_sha256": "cb62a2d02e260a65a08c2c2f9fe4513c8fff678212a7a0e1e8e8b54f8c00e8a9",
+   "mvp": {
+    "award": "rookie_challenge_mvp",
+    "name": "Rookie Challenge / Rising Stars MVP",
+    "short_name": "Rising Stars MVP",
+    "decided_on": "2006-04-19",
+    "electorate": "media panel of 9 (the Finals MVP panel's size; the award's own is unverified)",
+    "lens": [
+     0.3,
+     0.6
+    ],
+    "ballot": [
+     1
+    ],
+    "rule": "production (mean z of Game Score and points among everyone who played) against the winning side; equal ballots: co-MVPs in the All-Star Game, an engine draw in the Rookie Challenge",
+    "recorded_on": "2006-04-19",
+    "winners": [
+     "Ben Gordon"
+    ],
+    "tally": [
+     {
+      "player": "Ben Gordon",
+      "team": "Sophomores",
+      "minutes": 36.9,
+      "pts": 42,
+      "reb": 3,
+      "ast": 7,
+      "game_score": 36.5,
+      "won": true,
+      "points": 9
+     }
+    ]
+   }
   },
   "all_star": {
    "game_type": "all_star",
@@ -561,7 +593,39 @@
    "request": "career/Dwyane_Wade/2005-06/11_All_Star/All_Star_Game/Game_1.request.json",
    "result": "career/Dwyane_Wade/2005-06/11_All_Star/All_Star_Game/Game_1.result.json",
    "note": "career/Dwyane_Wade/2005-06/11_All_Star/All_Star_Game/Game_1.md",
-   "engine_sha256": "d4883e6e2ed2db9d0d8bb8ae8d478406839c733ef1b3cf09ed63b582dc4a9d39"
+   "engine_sha256": "d4883e6e2ed2db9d0d8bb8ae8d478406839c733ef1b3cf09ed63b582dc4a9d39",
+   "mvp": {
+    "award": "all_star_mvp",
+    "name": "All-Star Game MVP",
+    "short_name": "ASG MVP",
+    "decided_on": "2006-04-19",
+    "electorate": "media panel of 9 (the Finals MVP panel's size; the award's own is unverified)",
+    "lens": [
+     0.3,
+     0.6
+    ],
+    "ballot": [
+     1
+    ],
+    "rule": "production (mean z of Game Score and points among everyone who played) against the winning side; equal ballots: co-MVPs in the All-Star Game, an engine draw in the Rookie Challenge",
+    "recorded_on": "2006-04-19",
+    "winners": [
+     "Dirk Nowitzki"
+    ],
+    "tally": [
+     {
+      "player": "Dirk Nowitzki",
+      "team": "West",
+      "minutes": 27.6,
+      "pts": 22,
+      "reb": 5,
+      "ast": 4,
+      "game_score": 19.3,
+      "won": true,
+      "points": 9
+     }
+    ]
+   }
   }
  }
 }

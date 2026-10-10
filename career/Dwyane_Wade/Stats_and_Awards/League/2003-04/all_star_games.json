@@ -291,7 +291,39 @@
    "request": "career/Dwyane_Wade/2003-04/11_All_Star/Rookie_Challenge/Game_1.request.json",
    "result": "career/Dwyane_Wade/2003-04/11_All_Star/Rookie_Challenge/Game_1.result.json",
    "note": "career/Dwyane_Wade/2003-04/11_All_Star/Rookie_Challenge/Game_1.md",
-   "engine_sha256": "7376363d211186a65fccca37f805dfc6b066b347d8ab776ab89316a1bf65521b"
+   "engine_sha256": "7376363d211186a65fccca37f805dfc6b066b347d8ab776ab89316a1bf65521b",
+   "mvp": {
+    "award": "rookie_challenge_mvp",
+    "name": "Rookie Challenge / Rising Stars MVP",
+    "short_name": "Rising Stars MVP",
+    "decided_on": "2006-04-19",
+    "electorate": "media panel of 9 (the Finals MVP panel's size; the award's own is unverified)",
+    "lens": [
+     0.3,
+     0.6
+    ],
+    "ballot": [
+     1
+    ],
+    "rule": "production (mean z of Game Score and points among everyone who played) against the winning side; equal ballots: co-MVPs in the All-Star Game, an engine draw in the Rookie Challenge",
+    "recorded_on": "2006-04-19",
+    "winners": [
+     "Yao Ming"
+    ],
+    "tally": [
+     {
+      "player": "Yao Ming",
+      "team": "Sophomores",
+      "minutes": 29.6,
+      "pts": 28,
+      "reb": 13,
+      "ast": 4,
+      "game_score": 24.5,
+      "won": true,
+      "points": 9
+     }
+    ]
+   }
   },
   "all_star": {
    "game_type": "all_star",
@@ -606,7 +638,39 @@
    "request": "career/Dwyane_Wade/2003-04/11_All_Star/All_Star_Game/Game_1.request.json",
    "result": "career/Dwyane_Wade/2003-04/11_All_Star/All_Star_Game/Game_1.result.json",
    "note": "career/Dwyane_Wade/2003-04/11_All_Star/All_Star_Game/Game_1.md",
-   "engine_sha256": "8c618f9624e114b60bdd56f2f3be26ce160e306fad7d82a75c04c0ae5119bad5"
+   "engine_sha256": "8c618f9624e114b60bdd56f2f3be26ce160e306fad7d82a75c04c0ae5119bad5",
+   "mvp": {
+    "award": "all_star_mvp",
+    "name": "All-Star Game MVP",
+    "short_name": "ASG MVP",
+    "decided_on": "2006-04-19",
+    "electorate": "media panel of 9 (the Finals MVP panel's size; the award's own is unverified)",
+    "lens": [
+     0.3,
+     0.6
+    ],
+    "ballot": [
+     1
+    ],
+    "rule": "production (mean z of Game Score and points among everyone who played) against the winning side; equal ballots: co-MVPs in the All-Star Game, an engine draw in the Rookie Challenge",
+    "recorded_on": "2006-04-19",
+    "winners": [
+     "Peja Stojakovic"
+    ],
+    "tally": [
+     {
+      "player": "Peja Stojakovic",
+      "team": "West",
+      "minutes": 25.3,
+      "pts": 29,
+      "reb": 2,
+      "ast": 0,
+      "game_score": 23.5,
+      "won": true,
+      "points": 9
+     }
+    ]
+   }
   }
  }
 }

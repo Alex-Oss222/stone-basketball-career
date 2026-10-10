@@ -2707,6 +2707,94 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-04-14 | New Jersey Nets | DNP: injured list since 2004-04-12 | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) |
 
+## 2003-04 · NBA All-Star Game · through 2004-06-30
+
+[Open this period](player_cards.html?period=all_star-2003-04-season#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 4 / 7 | 57.1% | 0 / 1 | 8 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-02-15 | West | Played | [Game](../2003-04/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2003-04/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
+
+## 2004-02 · NBA All-Star Game
+
+[Open this period](player_cards.html?period=all_star-2003-04-month-2004-02-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 4 / 7 | 57.1% | 0 / 1 | 8 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-02-15 | West | Played | [Game](../2003-04/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2003-04/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
+
+## 2004-02-15 to 2004-02-21 · NBA All-Star Game
+
+[Open this period](player_cards.html?period=all_star-2003-04-week-2004-02-15#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 4 / 7 | 57.1% | 0 / 1 | 8 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-02-15 | West | Played | [Game](../2003-04/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2003-04/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
+
+## 2004-02-15 vs West · Played · NBA All-Star Game
+
+[Open this period](player_cards.html?period=all_star-2003-04-game-d1eda1f90e48268b#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 4 / 7 | 57.1% | 0 / 1 | 8 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-02-15 | West | Played | [Game](../2003-04/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2003-04/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
+
 ## 2003-04 · NBA playoffs · through 2004-06-30
 
 [Open this period](player_cards.html?period=playoff-2003-04-season#shooting)
@@ -3195,6 +3283,94 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
+
+## 2003-04 · Rookie Challenge · through 2004-06-30
+
+[Open this period](player_cards.html?period=rookie_challenge-2003-04-season#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 17 | 47.1% | 3 / 4 | 20 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-02-13 | Sophomores | Played | [Game](../2003-04/11_All_Star/Rookie_Challenge/Game_1.md) | [Result](../2003-04/11_All_Star/Rookie_Challenge/Game_1.result.json) | Not recorded |
+
+## 2004-02 · Rookie Challenge
+
+[Open this period](player_cards.html?period=rookie_challenge-2003-04-month-2004-02-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 17 | 47.1% | 3 / 4 | 20 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-02-13 | Sophomores | Played | [Game](../2003-04/11_All_Star/Rookie_Challenge/Game_1.md) | [Result](../2003-04/11_All_Star/Rookie_Challenge/Game_1.result.json) | Not recorded |
+
+## 2004-02-08 to 2004-02-14 · Rookie Challenge
+
+[Open this period](player_cards.html?period=rookie_challenge-2003-04-week-2004-02-08#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 17 | 47.1% | 3 / 4 | 20 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-02-13 | Sophomores | Played | [Game](../2003-04/11_All_Star/Rookie_Challenge/Game_1.md) | [Result](../2003-04/11_All_Star/Rookie_Challenge/Game_1.result.json) | Not recorded |
+
+## 2004-02-13 vs Sophomores · Played · Rookie Challenge
+
+[Open this period](player_cards.html?period=rookie_challenge-2003-04-game-773541b9e6d3be8d#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 17 | 47.1% | 3 / 4 | 20 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-02-13 | Sophomores | Played | [Game](../2003-04/11_All_Star/Rookie_Challenge/Game_1.md) | [Result](../2003-04/11_All_Star/Rookie_Challenge/Game_1.result.json) | Not recorded |
 
 ## 2004-05 · NBA regular season · through 2005-06-30
 
@@ -5876,6 +6052,94 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-04-20 | Orlando Magic | Played | [Game](../2004-05/06_Regular_Season/04_April/Week_3/Game_4.md) | [Result](../2004-05/06_Regular_Season/04_April/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/04_April/Week_3/Game_4.result.json) |
 
+## 2004-05 · NBA All-Star Game · through 2005-06-30
+
+[Open this period](player_cards.html?period=all_star-2004-05-season#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 12 | 66.7% | 0 / 2 | 19 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-02-20 | West | Played | [Game](../2004-05/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2004-05/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
+
+## 2005-02 · NBA All-Star Game
+
+[Open this period](player_cards.html?period=all_star-2004-05-month-2005-02-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 12 | 66.7% | 0 / 2 | 19 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-02-20 | West | Played | [Game](../2004-05/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2004-05/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
+
+## 2005-02-15 to 2005-02-21 · NBA All-Star Game
+
+[Open this period](player_cards.html?period=all_star-2004-05-week-2005-02-15#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 12 | 66.7% | 0 / 2 | 19 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-02-20 | West | Played | [Game](../2004-05/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2004-05/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
+
+## 2005-02-20 vs West · Played · NBA All-Star Game
+
+[Open this period](player_cards.html?period=all_star-2004-05-game-fdd998108d31e2ed#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 12 | 66.7% | 0 / 2 | 19 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-02-20 | West | Played | [Game](../2004-05/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2004-05/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
+
 ## 2004-05 · NBA playoffs · through 2005-06-30
 
 [Open this period](player_cards.html?period=playoff-2004-05-season#shooting)
@@ -6602,6 +6866,94 @@ Simulated engine shot locations come from the original closed game results. Part
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-27 | Orlando Magic | Played | [Game](../2004-05/05_Preseason/Game_7.md) | [Result](../2004-05/05_Preseason/Game_7.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_7.result.json) |
+
+## 2004-05 · Rookie Challenge · through 2005-06-30
+
+[Open this period](player_cards.html?period=rookie_challenge-2004-05-season#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 11 | 72.7% | 2 / 2 | 20 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-02-18 | Rookies | Played | [Game](../2004-05/11_All_Star/Rookie_Challenge/Game_1.md) | [Result](../2004-05/11_All_Star/Rookie_Challenge/Game_1.result.json) | Not recorded |
+
+## 2005-02 · Rookie Challenge
+
+[Open this period](player_cards.html?period=rookie_challenge-2004-05-month-2005-02-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 11 | 72.7% | 2 / 2 | 20 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-02-18 | Rookies | Played | [Game](../2004-05/11_All_Star/Rookie_Challenge/Game_1.md) | [Result](../2004-05/11_All_Star/Rookie_Challenge/Game_1.result.json) | Not recorded |
+
+## 2005-02-15 to 2005-02-21 · Rookie Challenge
+
+[Open this period](player_cards.html?period=rookie_challenge-2004-05-week-2005-02-15#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 11 | 72.7% | 2 / 2 | 20 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-02-18 | Rookies | Played | [Game](../2004-05/11_All_Star/Rookie_Challenge/Game_1.md) | [Result](../2004-05/11_All_Star/Rookie_Challenge/Game_1.result.json) | Not recorded |
+
+## 2005-02-18 vs Rookies · Played · Rookie Challenge
+
+[Open this period](player_cards.html?period=rookie_challenge-2004-05-game-04b22fad8c36228b#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 11 | 72.7% | 2 / 2 | 20 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2005-02-18 | Rookies | Played | [Game](../2004-05/11_All_Star/Rookie_Challenge/Game_1.md) | [Result](../2004-05/11_All_Star/Rookie_Challenge/Game_1.result.json) | Not recorded |
 
 ## 2005-06 · NBA regular season · through 2006-04-19
 
@@ -9282,6 +9634,94 @@ Simulated engine shot locations come from the original closed game results. Part
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2006-04-19 | Boston Celtics | Played | [Game](../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md) | [Result](../2005-06/06_Regular_Season/04_April/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/04_April/Week_3/Game_3.result.json) |
+
+## 2005-06 · NBA All-Star Game · through 2006-04-19
+
+[Open this period](player_cards.html?period=all_star-2005-06-season#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 11 / 16 | 68.8% | 0 / 2 | 26 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2006-02-19 | West | Played | [Game](../2005-06/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2005-06/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
+
+## 2006-02 · NBA All-Star Game
+
+[Open this period](player_cards.html?period=all_star-2005-06-month-2006-02-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 11 / 16 | 68.8% | 0 / 2 | 26 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2006-02-19 | West | Played | [Game](../2005-06/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2005-06/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
+
+## 2006-02-15 to 2006-02-21 · NBA All-Star Game
+
+[Open this period](player_cards.html?period=all_star-2005-06-week-2006-02-15#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 11 / 16 | 68.8% | 0 / 2 | 26 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2006-02-19 | West | Played | [Game](../2005-06/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2005-06/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
+
+## 2006-02-19 vs West · Played · NBA All-Star Game
+
+[Open this period](player_cards.html?period=all_star-2005-06-game-bfe634e30e0e9675#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 11 / 16 | 68.8% | 0 / 2 | 26 | unavailable |
+
+Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2006-02-19 | West | Played | [Game](../2005-06/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2005-06/11_All_Star/All_Star_Game/Game_1.result.json) | Not recorded |
 
 ## 2005-06 · NBA preseason · through 2006-04-19
 

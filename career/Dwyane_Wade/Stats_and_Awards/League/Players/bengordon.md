@@ -121,10 +121,11 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-04-19, from closed award decisions (1 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-04-19, from closed award decisions (2 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
 | West Rookie of the Month | 2004-11-02 to 2004-11-30 | 2004-12-02 | Shortlist, No. 3 | [Decision](../2004-05/11_November/League_Awards.md) |
 | West Rookie of the Month | 2005-03-01 to 2005-03-31 | 2005-04-02 | Shortlist, No. 3 | [Decision](../2004-05/03_March/League_Awards.md) |
 | All-Rookie Second Team | 2004-11-02 to 2005-04-20 | 2005-05-05 | **Selected** | [Decision](../2004-05/Season_Awards.md) |
+| Rookie Challenge / Rising Stars MVP | 2006-02-17 to 2006-02-17 | 2006-02-17 | **Winner** | [Decision](../2005-06/All_Star_Games.md#rookie-challenge-mvp) |

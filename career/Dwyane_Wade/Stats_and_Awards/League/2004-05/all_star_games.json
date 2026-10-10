@@ -269,7 +269,39 @@
    "request": "career/Dwyane_Wade/2004-05/11_All_Star/Rookie_Challenge/Game_1.request.json",
    "result": "career/Dwyane_Wade/2004-05/11_All_Star/Rookie_Challenge/Game_1.result.json",
    "note": "career/Dwyane_Wade/2004-05/11_All_Star/Rookie_Challenge/Game_1.md",
-   "engine_sha256": "05c2ab12d3002ba7aa6878cc77b8db6e42575efc63592876a9929a1d5fe574ea"
+   "engine_sha256": "05c2ab12d3002ba7aa6878cc77b8db6e42575efc63592876a9929a1d5fe574ea",
+   "mvp": {
+    "award": "rookie_challenge_mvp",
+    "name": "Rookie Challenge / Rising Stars MVP",
+    "short_name": "Rising Stars MVP",
+    "decided_on": "2006-04-19",
+    "electorate": "media panel of 9 (the Finals MVP panel's size; the award's own is unverified)",
+    "lens": [
+     0.3,
+     0.6
+    ],
+    "ballot": [
+     1
+    ],
+    "rule": "production (mean z of Game Score and points among everyone who played) against the winning side; equal ballots: co-MVPs in the All-Star Game, an engine draw in the Rookie Challenge",
+    "recorded_on": "2006-04-19",
+    "winners": [
+     "Dwyane Wade"
+    ],
+    "tally": [
+     {
+      "player": "Dwyane Wade",
+      "team": "Sophomores",
+      "minutes": 27.2,
+      "pts": 20,
+      "reb": 4,
+      "ast": 4,
+      "game_score": 20.1,
+      "won": true,
+      "points": 9
+     }
+    ]
+   }
   },
   "all_star": {
    "game_type": "all_star",
@@ -584,7 +616,39 @@
    "request": "career/Dwyane_Wade/2004-05/11_All_Star/All_Star_Game/Game_1.request.json",
    "result": "career/Dwyane_Wade/2004-05/11_All_Star/All_Star_Game/Game_1.result.json",
    "note": "career/Dwyane_Wade/2004-05/11_All_Star/All_Star_Game/Game_1.md",
-   "engine_sha256": "5ee2f2949a961d90a485052ecc188458465022f17ba682e732203a7040877c68"
+   "engine_sha256": "5ee2f2949a961d90a485052ecc188458465022f17ba682e732203a7040877c68",
+   "mvp": {
+    "award": "all_star_mvp",
+    "name": "All-Star Game MVP",
+    "short_name": "ASG MVP",
+    "decided_on": "2006-04-19",
+    "electorate": "media panel of 9 (the Finals MVP panel's size; the award's own is unverified)",
+    "lens": [
+     0.3,
+     0.6
+    ],
+    "ballot": [
+     1
+    ],
+    "rule": "production (mean z of Game Score and points among everyone who played) against the winning side; equal ballots: co-MVPs in the All-Star Game, an engine draw in the Rookie Challenge",
+    "recorded_on": "2006-04-19",
+    "winners": [
+     "Kevin Garnett"
+    ],
+    "tally": [
+     {
+      "player": "Kevin Garnett",
+      "team": "West",
+      "minutes": 32.8,
+      "pts": 23,
+      "reb": 10,
+      "ast": 5,
+      "game_score": 28.5,
+      "won": true,
+      "points": 9
+     }
+    ]
+   }
   }
  }
 }

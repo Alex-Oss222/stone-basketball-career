@@ -25,6 +25,10 @@
 <text x="935.5" y="223.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">All-Star</text>
 <text x="935.5" y="243.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">2004</text>
 <rect x="1043.0" y="196" width="195.0" height="62" rx="9" fill="#efbf58"/>
-<text x="1140.5" y="223.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">All-NBA First Team</text>
-<text x="1140.5" y="243.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">2004</text>
+<text x="1140.5" y="214.33333333333334" font-family="sans-serif" font-size="16.0" fill="#221709" font-weight="700" text-anchor="middle">Rookie Challenge /</text>
+<text x="1140.5" y="232.33333333333334" font-family="sans-serif" font-size="16.0" fill="#221709" font-weight="700" text-anchor="middle">Rising Stars MVP</text>
+<text x="1140.5" y="250.33333333333334" font-family="sans-serif" font-size="16.0" fill="#221709" font-weight="700" text-anchor="middle">2004</text>
+<rect x="838.0" y="268" width="195.0" height="62" rx="9" fill="#efbf58"/>
+<text x="935.5" y="295.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">All-NBA First Team</text>
+<text x="935.5" y="315.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">2004</text>
 </svg>
