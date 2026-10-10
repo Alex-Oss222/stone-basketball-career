@@ -1,6 +1,6 @@
 # 2005-06 NBA All-Star selections
 
-All-Star Game: February 19, 2006, Toyota Center, Houston. Rookie Challenge: February 17, 2006. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: February 2, 2006.
+All-Star Game: February 19, 2006, Toyota Center, Houston. Rookie Challenge: February 17, 2006. Decided from closed simulated results on each step's date (`runtime/all_star.py`); no real selection is read. Career clock: February 6, 2006.
 
 ## Starters (fan ballot, announced February 2, 2006; results through January 22, 2006)
 
@@ -23,6 +23,13 @@ All-Star Game: February 19, 2006, Toyota Center, Houston. Rookie Challenge: Febr
 | Shaquille O'Neal | C | Los Angeles Lakers | 41 | 21.1 | 9.5 | 3.0 | 15.61 | 101 |
 | Dirk Nowitzki | F | Dallas Mavericks | 41 | 25.1 | 8.4 | 3.3 | 20.0 | 95 |
 | Ray Allen | G | Seattle SuperSonics | 40 | 23.6 | 4.5 | 3.5 | 16.7 | 78 |
+
+## Coaches (best record through February 5, 2006; Riley Rule barred Mike D'Antoni, Sam Mitchell)
+
+| Conference | Coach | Team | Record |
+|---|---|---|---|
+| East | Flip Saunders | Detroit Pistons | 35-11 |
+| West | Dwane Casey | Minnesota Timberwolves | 31-15 |
 
 ## Rookie Challenge rosters (broadcaster panel, announced February 1, 2006)
 

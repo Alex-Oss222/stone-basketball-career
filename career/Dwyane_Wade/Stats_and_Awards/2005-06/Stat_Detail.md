@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2006-02-05](../../assets/stat_reports/personal_2005-06_2006-02-05.svg)
+![Player personal information and earned 2005-06 awards through 2006-02-06](../../assets/stat_reports/personal_2005-06_2006-02-06.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2006-02-05; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2006-02-06; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -47,7 +47,7 @@ Identity as of 2006-02-05; status snapshot dated 2005-10-26. User-established al
 
 ## Statistics
 
-As of **2006-02-05**: 48 closed games; 48/48 have player participation and box coverage; recorded DNPs: 0.
+As of **2006-02-06**: 48 closed games; 48/48 have player participation and box coverage; recorded DNPs: 0.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
@@ -63,7 +63,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-02-05, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-02-06, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -132,7 +132,7 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-02-05, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-02-06, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -199,6 +199,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2006-01-30](../../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md) | Los Angeles Clippers | home | L 106-111 | Played | 41.4 | 27 | 9 | 5 | 3 | 1 | 4 |
 | [2006-02-02](../../2005-06/06_Regular_Season/02_February/Week_1/Game_1.md) | Cleveland Cavaliers | home | W 114-88 | Played | 37.0 | 32 | 4 | 3 | 1 | 0 | 2 |
 | [2006-02-04](../../2005-06/06_Regular_Season/02_February/Week_1/Game_2.md) | New Jersey Nets | away | W 100-86 | Played | 39.5 | 36 | 11 | 3 | 2 | 1 | 0 |
+| [2006-02-06](../../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md) | Boston Celtics | home | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### Individual game boxes
 
@@ -252,10 +253,11 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2006-01-30](../../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md) | 22 | Miami Heat | NBA | SG / PG | 1 | 1 | 41.4 | 9.0 | 17.0 | .529 | 2.0 | 3.0 | .667 | 7.0 | 14.0 | .500 | .588 | 7.0 | 9.0 | .778 | 1.0 | 8.0 | 9.0 | 5.0 | 3.0 | 1.0 | 4.0 | 1.0 | 27.0 | .644 | — |
 | [2006-02-02](../../2005-06/06_Regular_Season/02_February/Week_1/Game_1.md) | 22 | Miami Heat | NBA | SG / PG | 1 | 1 | 37.0 | 11.0 | 18.0 | .611 | 1.0 | 3.0 | .333 | 10.0 | 15.0 | .667 | .639 | 9.0 | 10.0 | .900 | 3.0 | 1.0 | 4.0 | 3.0 | 1.0 | 0.0 | 2.0 | 2.0 | 32.0 | .714 | — |
 | [2006-02-04](../../2005-06/06_Regular_Season/02_February/Week_1/Game_2.md) | 22 | Miami Heat | NBA | SG / PG | 1 | 1 | 39.5 | 11.0 | 26.0 | .423 | 2.0 | 5.0 | .400 | 9.0 | 21.0 | .429 | .462 | 12.0 | 13.0 | .923 | 5.0 | 6.0 | 11.0 | 3.0 | 2.0 | 1.0 | 0.0 | 0.0 | 36.0 | .567 | — |
+| [2006-02-06](../../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md) | 22 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-02-05, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-02-06, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 

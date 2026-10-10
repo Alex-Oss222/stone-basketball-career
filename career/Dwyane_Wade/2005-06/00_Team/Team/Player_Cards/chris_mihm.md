@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C  
 **Age at assessment:** 26 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** January 16, 2006 · **Statistics through:** 2006-02-05 
+**Opening assessment:** January 16, 2006 · **Statistics through:** 2006-02-06 
 
 **Contract/control:** Acquired by trade from New Orleans/Oklahoma City Hornets on January 16, 2006: $5,100,714 in 2005-06; contract through 2009-10. (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
@@ -60,7 +60,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Cleveland Cavaliers | 75 | N/A | 24.9 | 9.8 | 6.7 | 0.7 | 0.2 | 1.4 | 1.5 | 0.507 | 0.000 | 0.678 |
-| 2005-06 | MIA | 9 | 9 | 30.8 | 11.9 | 6.3 | 1.7 | 0.1 | 1.0 | 0.9 | 51.3% | 0.0% | 69.0% |
+| 2005-06 | MIA | 10 | 10 | 31.1 | 12.4 | 6.6 | 1.6 | 0.1 | 1.0 | 1.0 | 51.8% | 0.0% | 72.0% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

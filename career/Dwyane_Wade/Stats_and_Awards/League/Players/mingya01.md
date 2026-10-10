@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `mingya01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-02-05 · **Club on this date:** Houston Rockets · **Basis:** Houston Rockets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-02-06 · **Club on this date:** Houston Rockets · **Basis:** Houston Rockets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #11 · **Born:** 1980-09-12 · **Age on card date:** 25  
 **Registry ID:** `mingya01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/mingya01.html) · ESPN ID 1722
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mingya
 
 ## Simulated statistics
 
-As of **2006-02-05**: 47 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-02-06**: 47 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 47 closed regular-season games through 2006-02-05. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 47 closed regular-season games through 2006-02-06. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -123,9 +123,10 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-02-05, from closed award decisions (0 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-02-06, from closed award decisions (0 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
 | West Player of the Week | 2005-01-31 to 2005-02-06 | 2005-02-07 | Shortlist, No. 2 | [Decision](../2004-05/02_February/Week_1/League_Awards.md) |
 | West Player of the Week | 2005-11-14 to 2005-11-20 | 2005-11-21 | Shortlist, No. 3 | [Decision](../2005-06/11_November/Week_3/League_Awards.md) |
+| West Player of the Week | 2006-01-30 to 2006-02-05 | 2006-02-06 | Shortlist, No. 2 | [Decision](../2005-06/02_February/Week_1/League_Awards.md) |

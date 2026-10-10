@@ -2,9 +2,9 @@
 
 # Contract | Daniel Santiago
 
-Known through: 2006-02-05. [Open interactive contract](santida01.html#contract) · [Contract history](santida01.html#contract-history)
+Known through: 2006-02-06. [Open interactive contract](santida01.html#contract) · [Contract history](santida01.html#contract-history)
 
-Daniel Santiago: under contract. Evidence cutoff: 2006-02-05.
+Daniel Santiago: under contract. Evidence cutoff: 2006-02-06.
 
 ## Current contract
 

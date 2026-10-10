@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-02-05**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-02-06**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -157,7 +157,7 @@ Card date: **2006-02-05**. 653 registry players, one Markdown card and one inter
 | [Andre Iguodala](andreiguodala.md) | New York Knicks | 22 | silhouette | [open](andreiguodala.html) |
 | [Anfernee Hardaway](hardaan01.md) | New York Knicks | 34 | sourced | [open](hardaan01.html) |
 | [Anthony Peeler](peelean01.md) | Free agent | 36 | silhouette | [open](peelean01.html) |
-| [Antoine Wright](wrighan01.md) | Los Angeles Clippers | 21 | silhouette | [open](wrighan01.html) |
+| [Antoine Wright](wrighan01.md) | Los Angeles Clippers | 22 | silhouette | [open](wrighan01.html) |
 | [Antonio Daniels](daniean01.md) | Seattle SuperSonics | 30 | sourced | [open](daniean01.html) |
 | [Ben Gordon](bengordon.md) | Utah Jazz | 22 | silhouette | [open](bengordon.html) |
 | [Bob Sura](surabo01.md) | Free agent | 32 | silhouette | [open](surabo01.html) |
@@ -486,7 +486,7 @@ Card date: **2006-02-05**. 653 registry players, one Markdown card and one inter
 | [Kenny Thomas](thomake01.md) | Philadelphia 76ers | 28 | sourced | [open](thomake01.html) |
 | [Kenyon Martin](martike01.md) | New Jersey Nets | 28 | sourced | [open](martike01.html) |
 | [Kevin Garnett](garneke01.md) | Minnesota Timberwolves | 29 | sourced | [open](garneke01.html) |
-| [Kris Humphries](krishumphries.md) | Utah Jazz | 20 | silhouette | [open](krishumphries.html) |
+| [Kris Humphries](krishumphries.md) | Utah Jazz | 21 | silhouette | [open](krishumphries.html) |
 | [LaPhonso Ellis](ellisla01.md) | Free agent | 35 | sourced | [open](ellisla01.html) |
 | [Lawrence Funderburke](fundela01.md) | Free agent | 35 | silhouette | [open](fundela01.html) |
 | [Linas Kleiza](kleizli01.md) | New Jersey Nets | 21 | silhouette | [open](kleizli01.html) |

@@ -555,6 +555,111 @@
      ]
     }
    }
+  },
+  {
+   "step": "coaches",
+   "announced_on": "2006-02-06",
+   "evidence_through": "2006-02-05",
+   "riley_rule_barred": [
+    "Mike D'Antoni",
+    "Sam Mitchell"
+   ],
+   "conferences": {
+    "East": {
+     "coach": "Flip Saunders",
+     "team": "Detroit Pistons",
+     "record": "35-11",
+     "standings": [
+      {
+       "team": "Detroit Pistons",
+       "coach": "Flip Saunders",
+       "wins": 35,
+       "losses": 11,
+       "pct": 0.761,
+       "barred": false
+      },
+      {
+       "team": "Toronto Raptors",
+       "coach": "Sam Mitchell",
+       "wins": 36,
+       "losses": 12,
+       "pct": 0.75,
+       "barred": true
+      },
+      {
+       "team": "Atlanta Hawks",
+       "coach": "Mike Woodson",
+       "wins": 32,
+       "losses": 14,
+       "pct": 0.696,
+       "barred": false
+      },
+      {
+       "team": "Miami Heat",
+       "coach": "Erik Spoelstra",
+       "wins": 32,
+       "losses": 16,
+       "pct": 0.667,
+       "barred": false
+      },
+      {
+       "team": "Boston Celtics",
+       "coach": "Doc Rivers",
+       "wins": 29,
+       "losses": 19,
+       "pct": 0.604,
+       "barred": false
+      }
+     ]
+    },
+    "West": {
+     "coach": "Dwane Casey",
+     "team": "Minnesota Timberwolves",
+     "record": "31-15",
+     "standings": [
+      {
+       "team": "Minnesota Timberwolves",
+       "coach": "Dwane Casey",
+       "wins": 31,
+       "losses": 15,
+       "pct": 0.674,
+       "barred": false
+      },
+      {
+       "team": "San Antonio Spurs",
+       "coach": "Gregg Popovich",
+       "wins": 31,
+       "losses": 16,
+       "pct": 0.66,
+       "barred": false
+      },
+      {
+       "team": "Phoenix Suns",
+       "coach": "Mike D'Antoni",
+       "wins": 31,
+       "losses": 16,
+       "pct": 0.66,
+       "barred": true
+      },
+      {
+       "team": "Sacramento Kings",
+       "coach": "Rick Adelman",
+       "wins": 30,
+       "losses": 17,
+       "pct": 0.638,
+       "barred": false
+      },
+      {
+       "team": "Dallas Mavericks",
+       "coach": "Avery Johnson",
+       "wins": 28,
+       "losses": 19,
+       "pct": 0.596,
+       "barred": false
+      }
+     ]
+    }
+   }
   }
  ],
  "all_stars": []

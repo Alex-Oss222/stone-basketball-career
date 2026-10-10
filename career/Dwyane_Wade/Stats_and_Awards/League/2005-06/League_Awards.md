@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of February 5, 2006: 38 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
+As of February 6, 2006: 40 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
 
 ## Individual awards
 
@@ -164,7 +164,7 @@ Weekly and monthly award decisions, each counted on the page it is filed on (the
 | [November 2005](11_November/League_Awards.md) | November 1-30, 2005 | 12 | Decided |
 | [December 2005](12_December/League_Awards.md) | December 1-31, 2005 | 12 | Decided |
 | [January 2006](01_January/League_Awards.md) | January 1-31, 2006 | 14 | Decided |
-| [February 2006](02_February/League_Awards.md) | February 1-28, 2006 | 0 | No award filed |
+| [February 2006](02_February/League_Awards.md) | February 1-28, 2006 | 2 | In progress |
 | [March 2006](03_March/League_Awards.md) | March 1-31, 2006 | 0 | No award filed |
 | [April 2006](04_April/League_Awards.md) | April 1-30, 2006 | 0 | No award filed |
 
