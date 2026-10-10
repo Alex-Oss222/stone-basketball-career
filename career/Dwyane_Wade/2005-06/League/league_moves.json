@@ -3709,6 +3709,68 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 5.28 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-02-04-claim-johnser02",
+   "date": "2006-02-04",
+   "kind": "claim",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": null,
+   "to": "Cleveland Cavaliers",
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Atlanta Hawks (worst record first)",
+   "waiver": "2005-06-market-2006-02-02-waive-johnser02"
+  },
+  {
+   "id": "2005-06-market-2006-02-04-claim-russebr01",
+   "date": "2006-02-04",
+   "kind": "claim",
+   "player": "Bryon Russell",
+   "bbr_id": "russebr01",
+   "from": null,
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Bryon Russell",
+    "bbr_id": "russebr01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Indiana Pacers (worst record first)",
+   "waiver": "2005-06-market-2006-02-02-waive-russebr01"
+  },
+  {
+   "id": "2005-06-market-2006-02-04-expire-livinra01",
+   "date": "2006-02-04",
+   "kind": "expire",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.4 minutes a game)"
   }
  ],
  "market_days": [
@@ -3806,6 +3868,7 @@
   "2006-01-31",
   "2006-02-01",
   "2006-02-02",
-  "2006-02-03"
+  "2006-02-03",
+  "2006-02-04"
  ]
 }
