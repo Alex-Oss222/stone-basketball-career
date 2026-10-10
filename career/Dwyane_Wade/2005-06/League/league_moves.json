@@ -5727,6 +5727,50 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.27 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-04-15-claim-horryro01",
+   "date": "2006-04-15",
+   "kind": "claim",
+   "player": "Robert Horry",
+   "bbr_id": "horryro01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Robert Horry",
+    "bbr_id": "horryro01",
+    "position": "PF",
+    "games": 63,
+    "minutes": 1182
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Seattle SuperSonics (worst record first)",
+   "waiver": "2005-06-market-2006-04-13-waive-horryro01"
+  },
+  {
+   "id": "2005-06-market-2006-04-15-ten_day-augmost01",
+   "date": "2006-04-15",
+   "kind": "ten_day",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 385
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 2.79 x fit"
   }
  ],
  "market_days": [
@@ -5894,6 +5938,7 @@
   "2006-04-11",
   "2006-04-12",
   "2006-04-13",
-  "2006-04-14"
+  "2006-04-14",
+  "2006-04-15"
  ]
 }
