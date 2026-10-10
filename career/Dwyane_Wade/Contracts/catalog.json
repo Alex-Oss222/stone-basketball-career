@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-03-13",
+  "as_of": "2006-03-19",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -923,7 +923,7 @@
     {
       "player_id": "smithch04",
       "name": "Charles Smith",
-      "team": "Golden State Warriors",
+      "team": "Los Angeles Lakers",
       "status": "under contract",
       "current_contract_id": "smithch04-2005-08-19",
       "recorded_agreements": 2,
@@ -1130,7 +1130,7 @@
     {
       "player_id": "robincl02",
       "name": "Clifford Robinson",
-      "team": "Free agent",
+      "team": "Atlanta Hawks",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4406,7 +4406,7 @@
     {
       "player_id": "rafaelarajo",
       "name": "Rafael Araújo",
-      "team": "Orlando Magic",
+      "team": "New Jersey Nets",
       "status": "under contract",
       "current_contract_id": "rafaelarajo-2004-07-01",
       "recorded_agreements": 1,
@@ -4451,7 +4451,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "Golden State Warriors",
+      "team": "Houston Rockets",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4775,7 +4775,7 @@
     {
       "player_id": "pricero01",
       "name": "Ronnie Price",
-      "team": "New York Knicks",
+      "team": "Orlando Magic",
       "status": "under contract",
       "current_contract_id": "pricero01-2005-08-12",
       "recorded_agreements": 1,
@@ -5162,7 +5162,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Los Angeles Lakers",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,

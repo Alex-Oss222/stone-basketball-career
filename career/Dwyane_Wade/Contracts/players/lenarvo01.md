@@ -2,9 +2,9 @@
 
 # Contract | Voshon Lenard
 
-Known through: 2006-03-13. [Open interactive contract](lenarvo01.html#contract) · [Contract history](lenarvo01.html#contract-history)
+Known through: 2006-03-19. [Open interactive contract](lenarvo01.html#contract) · [Contract history](lenarvo01.html#contract-history)
 
-Voshon Lenard: under contract. Evidence cutoff: 2006-03-13.
+Voshon Lenard: under contract. Evidence cutoff: 2006-03-19.
 
 ## Current contract
 

@@ -161,7 +161,7 @@
   {
    "player": "Rafael Araújo",
    "bbr_id": "araujra01",
-   "club": "Orlando Magic",
+   "club": "New Jersey Nets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -169,7 +169,8 @@
     "2006-07": 1221240
    },
    "source": "league contract ledger 2004-05 (rookie_scale); traded 2005-08-12",
-   "rookie_scale": true
+   "rookie_scale": true,
+   "signed_club": "Orlando Magic"
   },
   {
    "player": "Gilbert Arenas",
@@ -4207,7 +4208,7 @@
   {
    "player": "Ronnie Price",
    "bbr_id": "pricero01",
-   "club": "New York Knicks",
+   "club": "Orlando Magic",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -4607,7 +4608,7 @@
   {
    "player": "Charles Smith",
    "bbr_id": "smithch04",
-   "club": "Golden State Warriors",
+   "club": "Los Angeles Lakers",
    "route": "minimum",
    "kind": "new",
    "schedule": {

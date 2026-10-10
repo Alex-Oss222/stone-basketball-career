@@ -2,9 +2,9 @@
 
 # Contract | Randy Livingston
 
-Known through: 2006-03-13. [Open interactive contract](livinra01.html#contract) · [Contract history](livinra01.html#contract-history)
+Known through: 2006-03-19. [Open interactive contract](livinra01.html#contract) · [Contract history](livinra01.html#contract-history)
 
-Randy Livingston: No verified contract record. Evidence cutoff: 2006-03-13.
+Randy Livingston: No verified contract record. Evidence cutoff: 2006-03-19.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Randy Livingston |
-| Club / rights baseline | Golden State Warriors |
+| Club / rights baseline | Houston Rockets |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Tayshaun Prince
 
-Known through: 2006-03-13. [Open interactive contract](princta01.html#contract) · [Contract history](princta01.html#contract-history)
+Known through: 2006-03-19. [Open interactive contract](princta01.html#contract) · [Contract history](princta01.html#contract-history)
 
-Tayshaun Prince: under contract. Evidence cutoff: 2006-03-13.
+Tayshaun Prince: under contract. Evidence cutoff: 2006-03-19.
 
 ## Current contract
 

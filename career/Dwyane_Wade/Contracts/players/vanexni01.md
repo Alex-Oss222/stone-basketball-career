@@ -2,9 +2,9 @@
 
 # Contract | Nick Van Exel
 
-Known through: 2006-03-13. [Open interactive contract](vanexni01.html#contract) · [Contract history](vanexni01.html#contract-history)
+Known through: 2006-03-19. [Open interactive contract](vanexni01.html#contract) · [Contract history](vanexni01.html#contract-history)
 
-Nick Van Exel: under contract unverified. Evidence cutoff: 2006-03-13.
+Nick Van Exel: under contract unverified. Evidence cutoff: 2006-03-19.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Rick Fox
 
-Known through: 2006-03-13. [Open interactive contract](foxri01.html#contract) · [Contract history](foxri01.html#contract-history)
+Known through: 2006-03-19. [Open interactive contract](foxri01.html#contract) · [Contract history](foxri01.html#contract-history)
 
-Rick Fox: under contract unverified. Evidence cutoff: 2006-03-13.
+Rick Fox: under contract unverified. Evidence cutoff: 2006-03-19.
 
 ## Current contract
 

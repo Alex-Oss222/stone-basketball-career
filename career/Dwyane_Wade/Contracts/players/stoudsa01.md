@@ -2,9 +2,9 @@
 
 # Contract | Salim Stoudamire
 
-Known through: 2006-03-13. [Open interactive contract](stoudsa01.html#contract) · [Contract history](stoudsa01.html#contract-history)
+Known through: 2006-03-19. [Open interactive contract](stoudsa01.html#contract) · [Contract history](stoudsa01.html#contract-history)
 
-Salim Stoudamire: under contract. Evidence cutoff: 2006-03-13.
+Salim Stoudamire: under contract. Evidence cutoff: 2006-03-19.
 
 ## Current contract
 

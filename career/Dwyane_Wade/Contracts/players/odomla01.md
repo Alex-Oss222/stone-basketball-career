@@ -2,9 +2,9 @@
 
 # Contract | Lamar Odom
 
-Known through: 2006-03-13. [Open interactive contract](odomla01.html#contract) · [Contract history](odomla01.html#contract-history)
+Known through: 2006-03-19. [Open interactive contract](odomla01.html#contract) · [Contract history](odomla01.html#contract-history)
 
-Lamar Odom: under contract. Evidence cutoff: 2006-03-13.
+Lamar Odom: under contract. Evidence cutoff: 2006-03-19.
 
 ## Current contract
 
