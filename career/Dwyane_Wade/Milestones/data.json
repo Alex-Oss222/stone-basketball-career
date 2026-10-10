@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2006-01-30",
+  "as_of": "2006-02-01",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 22,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2006-01-29-miami-heat-at-houston-rockets",
+  "current_event": "2006-01-30-los-angeles-clippers-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2006-01-30"
+              "2006-02-01"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2006-01-29-miami-heat-at-houston-rockets"
+              "2006-01-30-los-angeles-clippers-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2006-01-30",
+              "2006-02-01",
               "Current checkpoint",
-              "2006-01-29-miami-heat-at-houston-rockets",
+              "2006-01-30-los-angeles-clippers-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -94,16 +94,6 @@
               }
             ],
             [
-              "2006-02-01",
-              "Staff rotation review",
-              "Coaching staff (same rule for every player)",
-              "Scheduled; a role request may be logged before it",
-              {
-                "label": "Rule",
-                "href": "../../../docs/front_office.md"
-              }
-            ],
-            [
               "2006-02-02",
               "Next Miami game, vs Cleveland Cavaliers",
               "Coach sets the rotation; the engine plays it",
@@ -121,6 +111,16 @@
               {
                 "label": "Awards",
                 "href": "#calendar"
+              }
+            ],
+            [
+              "2006-02-15",
+              "Staff rotation review",
+              "Coaching staff (same rule for every player)",
+              "Scheduled; a role request may be logged before it",
+              {
+                "label": "Rule",
+                "href": "../../../docs/front_office.md"
               }
             ],
             [
@@ -417,11 +417,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/review.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/depth_chart.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -433,7 +433,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/rotation.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/rotation.json"
         },
         {
           "label": "Rule",
@@ -660,6 +660,10 @@
           "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -668,7 +672,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-30"
+          "value": "2006-02-01"
         },
         {
           "label": "Team",
@@ -867,11 +871,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/review.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/depth_chart.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -883,7 +887,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/rotation.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/rotation.json"
         },
         {
           "label": "Rule",
@@ -1110,6 +1114,10 @@
           "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1118,7 +1126,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-30"
+          "value": "2006-02-01"
         },
         {
           "label": "Team",
@@ -1354,11 +1362,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/review.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/depth_chart.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1370,7 +1378,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/rotation.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/rotation.json"
         },
         {
           "label": "Rule",
@@ -1597,6 +1605,10 @@
           "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1605,7 +1617,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-30"
+          "value": "2006-02-01"
         },
         {
           "label": "Team",
@@ -1852,11 +1864,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/review.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/depth_chart.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1868,7 +1880,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/rotation.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/rotation.json"
         },
         {
           "label": "Rule",
@@ -2095,6 +2107,10 @@
           "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2103,7 +2119,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-30"
+          "value": "2006-02-01"
         },
         {
           "label": "Team",
@@ -2277,11 +2293,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/review.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/depth_chart.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2293,7 +2309,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/rotation.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/rotation.json"
         },
         {
           "label": "Rule",
@@ -2520,6 +2536,10 @@
           "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2528,7 +2548,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-30"
+          "value": "2006-02-01"
         },
         {
           "label": "Team",
@@ -2720,11 +2740,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/review.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/depth_chart.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2736,7 +2756,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/rotation.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/rotation.json"
         },
         {
           "label": "Rule",
@@ -2963,6 +2983,10 @@
           "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2971,7 +2995,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-30"
+          "value": "2006-02-01"
         },
         {
           "label": "Team",
@@ -3145,11 +3169,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/review.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/depth_chart.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -3161,7 +3185,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/rotation.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/rotation.json"
         },
         {
           "label": "Rule",
@@ -3388,6 +3412,10 @@
           "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3396,7 +3424,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-30"
+          "value": "2006-02-01"
         },
         {
           "label": "Team",
@@ -3468,12 +3496,12 @@
             ],
             [
               "SF",
-              "Joe Smith, Caron Butler, Sebastian Telfair",
+              "Caron Butler, Joe Smith, Sebastian Telfair",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "PF",
-              "Mehmet Okur, P.J. Brown, Donyell Marshall",
+              "Mehmet Okur, Donyell Marshall, P.J. Brown",
               "Staff ordering; not a future minutes promise"
             ],
             [
@@ -3482,7 +3510,7 @@
               "Staff ordering; not a future minutes promise"
             ]
           ],
-          "notice": "Snapshot: 2006-01-18. Draft rights and unassigned arrivals are not assigned minutes."
+          "notice": "Snapshot: 2006-02-01. Draft rights and unassigned arrivals are not assigned minutes."
         },
         {
           "title": "Role and promise review",
@@ -3642,11 +3670,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/review.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/depth_chart.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -3658,7 +3686,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/rotation.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/rotation.json"
         },
         {
           "label": "Rule",
@@ -3885,6 +3913,10 @@
           "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3893,7 +3925,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-30"
+          "value": "2006-02-01"
         },
         {
           "label": "Team",
@@ -3910,7 +3942,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "52 closed game records in 2005-06 through 2006-01-30. Competitions remain separate.",
+      "summary": "53 closed game records in 2005-06 through 2006-02-01. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3937,12 +3969,12 @@
             ],
             [
               "regular",
-              45,
-              37.383544815,
-              26.466666667,
-              6.2,
-              4.044444444,
-              1.733333333,
+              46,
+              37.471764855,
+              26.47826087,
+              6.260869565,
+              4.065217391,
+              1.782608696,
               "Complete"
             ]
           ]
@@ -3970,12 +4002,12 @@
             ],
             [
               "regular",
-              414,
-              736,
-              0.5625,
-              68,
-              147,
-              0.462585034
+              423,
+              753,
+              0.561752988,
+              70,
+              150,
+              0.466666667
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -4509,6 +4541,16 @@
                 "label": "Closed game",
                 "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md"
               }
+            ],
+            [
+              "2006-01-30",
+              "regular",
+              "Los Angeles Clippers",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md"
+              }
             ]
           ]
         },
@@ -4603,11 +4645,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/review.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/depth_chart.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -4619,7 +4661,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-01-18/rotation.json"
+          "href": "../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-02-01/rotation.json"
         },
         {
           "label": "Rule",
@@ -4846,6 +4888,10 @@
           "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/01_January/Week_4/Game_6.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4854,7 +4900,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-01-30"
+          "value": "2006-02-01"
         },
         {
           "label": "Team",

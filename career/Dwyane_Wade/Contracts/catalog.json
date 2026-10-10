@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-01-30",
+  "as_of": "2006-02-01",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -923,7 +923,7 @@
     {
       "player_id": "smithch04",
       "name": "Charles Smith",
-      "team": "Washington Wizards",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "smithch04-2005-08-19",
       "recorded_agreements": 2,

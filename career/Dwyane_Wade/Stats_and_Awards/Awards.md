@@ -2,11 +2,11 @@
 
 # Annual awards | Dwyane Wade
 
-Career cutoff: **2006-01-30**. [Open interactive Awards](player_cards.html#awards) · [All earned awards](../Awards.md) · [Full statistics](README.md)
+Career cutoff: **2006-02-01**. [Open interactive Awards](player_cards.html#awards) · [All earned awards](../Awards.md) · [Full statistics](README.md)
 
 ## 2003-04
 
-Only earned annual awards announced on or before 2006-01-30 appear. Weekly, monthly and unclassified recognition remains in the full award register.
+Only earned annual awards announced on or before 2006-02-01 appear. Weekly, monthly and unclassified recognition remains in the full award register.
 
 | Earned award | Season | Announced | Decision record |
 | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ Only earned annual awards announced on or before 2006-01-30 appear. Weekly, mont
 
 ## 2004-05
 
-Only earned annual awards announced on or before 2006-01-30 appear. Weekly, monthly and unclassified recognition remains in the full award register.
+Only earned annual awards announced on or before 2006-02-01 appear. Weekly, monthly and unclassified recognition remains in the full award register.
 
 | Earned award | Season | Announced | Decision record |
 | --- | --- | --- | --- |
@@ -38,6 +38,6 @@ Only earned annual awards announced on or before 2006-01-30 appear. Weekly, mont
 
 ## 2005-06
 
-Only earned annual awards announced on or before 2006-01-30 appear. Weekly, monthly and unclassified recognition remains in the full award register.
+Only earned annual awards announced on or before 2006-02-01 appear. Weekly, monthly and unclassified recognition remains in the full award register.
 
 No earned annual awards are recorded by this season's displayed cutoff. Nominations, pending decisions and historical Wade awards are not earned career awards.

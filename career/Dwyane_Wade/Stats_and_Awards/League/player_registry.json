@@ -3,7 +3,7 @@
   "league": "NBA",
   "season": "2003-04",
   "as_of": "2003-06-26",
-  "player_count": 652,
+  "player_count": 653,
   "purpose": "League-wide player tracking pool for simulated statistics and awards.",
   "source_policy": "End-of-2002-03 club is a baseline roster location; 2003 draft entries identify post-draft rights. Neither source alone is a finalized 2003-04 opening-night roster.",
   "positions": [
@@ -8533,6 +8533,21 @@
       "registry_id": "smithch04",
       "added_on": "2006-01-13",
       "added_basis": "first closed 2005-06 appearance, Sacramento Kings, 2006-01-13-sacramento-kings-at-new-orleans-oklahoma-city-hornets"
+    },
+    {
+      "name": "Bernard Robinson",
+      "position": "SF",
+      "position_basis": "library/2005/league/nba_2005_06_team_rosters.json",
+      "team_name": "Milwaukee Bucks",
+      "team_code": "MIL",
+      "conference": "East",
+      "cohort": "2003_04_appearance",
+      "bbr_id": "robinbe01",
+      "espn_id": null,
+      "birth_date": "1980-12-26",
+      "registry_id": "robinbe01",
+      "added_on": "2006-02-01",
+      "added_basis": "first closed 2005-06 appearance, Milwaukee Bucks, 2006-02-01-milwaukee-bucks-at-houston-rockets"
     }
   ],
   "coverage": {
@@ -8540,7 +8555,7 @@
     "source_counts": {
       "end_2002_03_roster": 349,
       "2003_draft_rights": 58,
-      "2003_04_appearance": 245
+      "2003_04_appearance": 246
     },
     "population_policy": "Retain all 407 original registry entries; add every player who appears in a closed result, dated by his first appearance (write_back.extend_registry).",
     "changes_policy": "Use dated branch transactions; preserve completed-period team stints."

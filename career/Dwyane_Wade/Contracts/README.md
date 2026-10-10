@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-01-30. [Search the contract directory](index.html)
+Known through 2006-02-01. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -110,7 +110,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Cezary Trybanski](players/trybace01.md) | Free agent | under contract | Cezary Trybanski · existing contract; signing date not recorded | 1 |
 | [Channing Frye](players/fryech01.md) | New Jersey Nets | under contract | Channing Frye · 2005-07-01 | 1 |
 | [Charles Oakley](players/oaklech01.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
-| [Charles Smith](players/smithch04.md) | Washington Wizards | under contract | Charles Smith · 2005-08-19 | 2 |
+| [Charles Smith](players/smithch04.md) | Free agent | under contract | Charles Smith · 2005-08-19 | 2 |
 | [Charlie Villanueva](players/villach01.md) | Memphis Grizzlies | under contract | Charlie Villanueva · 2005-07-01 | 1 |
 | [Charlie Ward](players/wardch01.md) | Free agent | under contract | No verified current agreement | 2 |
 | [Chauncey Billups](players/billuch01.md) | Detroit Pistons | under contract | Chauncey Billups · existing contract; signing date not recorded | 1 |

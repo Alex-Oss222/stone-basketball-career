@@ -1,10 +1,10 @@
 # NBA awards | 2005-06
 
-[Stats hub](../../README.md) · [Wade](../../2005-06/README.md) · [Miami](../../Team/2005-06/Team_Stats.md) · [NBA players](League_Stats.md)
+[Stats hub](../../README.md) · [Wade](../../2005-06/README.md) · [Miami](../../Team/2005-06/Team_Stats.md) · [NBA players](League_Stats.md) · [All-Star](All_Star.md)
 
 2005-06 · Calendar coverage: 2005-06
 
-As of January 31, 2006: 34 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
+As of February 1, 2006: 34 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
 
 ## Individual awards
 
@@ -126,7 +126,7 @@ These are separate decisions, not consequences of the regular-season award vote.
 
 ### All-Star selections
 
-No All-Star selection announced yet: starters February 2, 2006 (fan ballot), reserves February 9, 2006 (head coaches).
+No All-Star selection announced yet: starters February 2, 2006 (fan ballot), reserves February 9, 2006 (head coaches). [All-Star selections](All_Star.md#all-stars)
 
 ### NBA champion
 

@@ -4,7 +4,7 @@
 
 NBA regular season · November 1-7, 2005
 
-407 tracked players · 50 closed games in this record · Through January 30, 2006.
+407 tracked players · 50 closed games in this record · Through February 1, 2006.
 
 ## Leaders
 
@@ -426,6 +426,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Rawle Marshall](../../../Players/marshra01.md) | 23 | Charlotte Bobcats | NBA | SF | 3 | 0 | 8.9 | 1.0 | 2.0 | .500 | 0.3 | 0.7 | .500 | 0.7 | 1.3 | .500 | .583 | 0.7 | 1.0 | .667 | 0.7 | 0.7 | 1.3 | 0.7 | 0.7 | 0.0 | 0.0 | 1.0 | 3.0 | .615 |
 | [Sergei Monia](../../../Players/moniase01.md) | 22 | ATL | NBA | SF | 3 | 0 | 6.1 | 1.0 | 2.0 | .500 | 0.3 | 0.3 | 1.000 | 0.7 | 1.7 | .400 | .583 | 0.0 | 0.0 | N/A | 0.0 | 1.7 | 1.7 | 0.0 | 0.3 | 0.3 | 0.3 | 1.0 | 2.3 | .583 |
 | [walshma01](../../../Players/walshma01.md) | 22 | Charlotte Bobcats | NBA | SF | 1 | 0 | 4.7 | 1.0 | 3.0 | .333 | 0.0 | 1.0 | .000 | 1.0 | 2.0 | .500 | .333 | 0.0 | 0.0 | N/A | 0.0 | 1.0 | 1.0 | 1.0 | 0.0 | 0.0 | 1.0 | 0.0 | 2.0 | .333 |
+| [Bernard Robinson](../../../Players/robinbe01.md) | 24 | MIL | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 

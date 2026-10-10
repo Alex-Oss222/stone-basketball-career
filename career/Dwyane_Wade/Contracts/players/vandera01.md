@@ -2,9 +2,9 @@
 
 # Contract | Remon van de Hare
 
-Known through: 2006-01-30. [Open interactive contract](vandera01.html#contract) · [Contract history](vandera01.html#contract-history)
+Known through: 2006-02-01. [Open interactive contract](vandera01.html#contract) · [Contract history](vandera01.html#contract-history)
 
-Remon van de Hare: No verified contract record. Evidence cutoff: 2006-01-30.
+Remon van de Hare: No verified contract record. Evidence cutoff: 2006-02-01.
 
 ## Current contract
 

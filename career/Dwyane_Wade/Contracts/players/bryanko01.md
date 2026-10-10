@@ -2,9 +2,9 @@
 
 # Contract | Kobe Bryant
 
-Known through: 2006-01-30. [Open interactive contract](bryanko01.html#contract) · [Contract history](bryanko01.html#contract-history)
+Known through: 2006-02-01. [Open interactive contract](bryanko01.html#contract) · [Contract history](bryanko01.html#contract-history)
 
-Kobe Bryant: under contract. Evidence cutoff: 2006-01-30.
+Kobe Bryant: under contract. Evidence cutoff: 2006-02-01.
 
 ## Current contract
 

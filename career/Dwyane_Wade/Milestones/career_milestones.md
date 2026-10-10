@@ -2,7 +2,7 @@
 
 # Dwyane Wade | Career milestones
 
-Career date: 2006-01-30. Born 1984-01-17. 196 regular-season and 14 playoff games closed.
+Career date: 2006-02-01. Born 1984-01-17. 197 regular-season and 14 playoff games closed.
 
 Milestones count closed regular-season games (the NBA convention); playoff milestones are their own record and preseason never counts. Each is dated by the game that reached it, with his age on that day. [Season tracker](calendar.md) · [All milestones](README.md)
 
@@ -43,14 +43,14 @@ Milestones count closed regular-season games (the NBA convention); playoff miles
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 5,000 career points | 4,154 | 846 |
-| 1,500 career rebounds | 1,050 | 450 |
-| 1,000 career assists | 827 | 173 |
-| 500 career steals | 314 | 186 |
-| 250 career blocks | 221 | 29 |
-| 250 career three-pointers made | 226 | 24 |
-| 2,000 career free throws made | 1,108 | 892 |
-| 200 career games played | 196 | 4 |
+| 5,000 career points | 4,181 | 819 |
+| 1,500 career rebounds | 1,059 | 441 |
+| 1,000 career assists | 832 | 168 |
+| 500 career steals | 317 | 183 |
+| 250 career blocks | 222 | 28 |
+| 250 career three-pointers made | 228 | 22 |
+| 2,000 career free throws made | 1,115 | 885 |
+| 200 career games played | 197 | 3 |
 
 ## Playoff milestones reached
 

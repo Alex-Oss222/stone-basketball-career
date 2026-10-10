@@ -3574,6 +3574,43 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 0.0 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-02-01-clear-rebraze01",
+   "date": "2006-02-01",
+   "kind": "clear",
+   "player": "Željko Rebrača",
+   "bbr_id": "rebraze01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Željko Rebrača",
+    "bbr_id": "rebraze01",
+    "position": "C",
+    "games": 29,
+    "minutes": 412
+   },
+   "contract": null,
+   "note": "cleared waivers from Atlanta Hawks: a free agent",
+   "waiver": "2005-06-market-2006-01-30-waive-rebraze01"
+  },
+  {
+   "id": "2005-06-market-2006-02-01-expire-smithch04",
+   "date": "2006-02-01",
+   "kind": "expire",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "from": "Washington Wizards",
+   "to": null,
+   "role": {
+    "player_id": "Charles Smith",
+    "bbr_id": "smithch04",
+    "position": "SG",
+    "games": 22,
+    "minutes": 210
+   },
+   "contract": null,
+   "note": "10-day contract ended (4.7 minutes a game)"
   }
  ],
  "market_days": [
@@ -3668,6 +3705,7 @@
   "2006-01-28",
   "2006-01-29",
   "2006-01-30",
-  "2006-01-31"
+  "2006-01-31",
+  "2006-02-01"
  ]
 }

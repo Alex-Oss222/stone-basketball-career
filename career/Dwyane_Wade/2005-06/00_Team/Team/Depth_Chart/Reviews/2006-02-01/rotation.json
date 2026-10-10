@@ -1,0 +1,111 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2006-02-01",
+ "team": "Miami Heat",
+ "total_minutes": 240,
+ "purpose": "Miami's rotation for the game builder: minutes per game in rotation order; the engine's injury and foul logic changes a night's minutes.",
+ "players": [
+  {
+   "player_id": "Mike James",
+   "position": "PG",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "jamesmi01",
+   "starter": true
+  },
+  {
+   "player_id": "Dwyane Wade",
+   "position": "SG",
+   "minutes": 40.0,
+   "ratings": {},
+   "starter": true
+  },
+  {
+   "player_id": "Caron Butler",
+   "position": "SF",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "butleca01",
+   "starter": true
+  },
+  {
+   "player_id": "Mehmet Okur",
+   "position": "PF",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "okurme01",
+   "starter": true
+  },
+  {
+   "player_id": "Chris Mihm",
+   "position": "C",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "mihmch01",
+   "starter": true
+  },
+  {
+   "player_id": "Joe Smith",
+   "position": "SF",
+   "minutes": 18.29,
+   "ratings": {},
+   "bbr_id": "smithjo02",
+   "starter": false
+  },
+  {
+   "player_id": "Donyell Marshall",
+   "position": "PF",
+   "minutes": 14.63,
+   "ratings": {},
+   "bbr_id": "marshdo01",
+   "starter": false
+  },
+  {
+   "player_id": "P.J. Brown",
+   "position": "PF",
+   "minutes": 10.97,
+   "ratings": {},
+   "bbr_id": "brownpj01",
+   "starter": false
+  },
+  {
+   "player_id": "Anthony Johnson",
+   "position": "PG",
+   "minutes": 9.14,
+   "ratings": {},
+   "bbr_id": "johnsan02",
+   "starter": false
+  },
+  {
+   "player_id": "Sebastian Telfair",
+   "position": "SF",
+   "minutes": 7.31,
+   "ratings": {},
+   "bbr_id": "telfase01",
+   "starter": false
+  },
+  {
+   "player_id": "Eddie Jones",
+   "position": "SG",
+   "minutes": 3.66,
+   "ratings": {},
+   "bbr_id": "jonesed02",
+   "starter": false
+  }
+ ],
+ "starters": {
+  "PG": "Mike James",
+  "SG": "Dwyane Wade",
+  "SF": "Caron Butler",
+  "PF": "Mehmet Okur",
+  "C": "Chris Mihm"
+ },
+ "review": "review.json",
+ "minutes_by_gap": {
+  "player": "Dwyane Wade",
+  "lead": 0.5856,
+  "extra_minutes": 6.0,
+  "rule": "lead over the next starter beyond 5% x 25 minutes, at most 6; taken from the reserves in proportion"
+ }
+}
