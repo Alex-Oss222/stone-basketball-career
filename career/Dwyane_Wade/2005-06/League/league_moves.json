@@ -2325,6 +2325,28 @@
    "bbr_id": "voskuja01",
    "from": "Phoenix Suns",
    "to": "Detroit Pistons"
+  },
+  {
+   "id": "2005-06-market-2005-12-06-rest_of_season-davisjo02",
+   "date": "2005-12-06",
+   "kind": "rest_of_season",
+   "player": "Josh Davis",
+   "bbr_id": "davisjo02",
+   "from": null,
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Josh Davis",
+    "bbr_id": "davisjo02",
+    "position": "PF",
+    "games": 6,
+    "minutes": 17
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2006-04-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.98 x fit"
   }
  ],
  "market_days": [
@@ -2362,6 +2384,7 @@
   "2005-12-02",
   "2005-12-03",
   "2005-12-04",
-  "2005-12-05"
+  "2005-12-05",
+  "2005-12-06"
  ]
 }
