@@ -1,6 +1,6 @@
 ---
 type: regular_season_week
-status: not_started
+status: active
 month: January
 week: 1
 days: 1-7
@@ -13,5 +13,7 @@ days: 1-7
 ## Player decisions
 
 ## Games and events
+
+- 2006-01-01: Minnesota Timberwolves 126 at Miami Heat 133 (1OT) — Miami Heat W 133-126 ([Game 1](Game_1.md), event `2006-01-01-minnesota-timberwolves-at-miami-heat`)
 
 ## Consequences
