@@ -40,6 +40,12 @@ best four at any position. Eligible: games in at least a third of his club's gam
 
 The record is written once to `Stats_and_Awards/League/<season>/all_star.json` and never recomputed. An All-Star
 selection for Wade is added to `awards.json` as "All-Star", the exact name `runtime/standing.py` reads.
+
+Recording dates. A step closed after its announcement date (a season decided after the fact) carries `recorded_on`, the
+career date that closed it; a step closed on its own date carries none, as in `awards.json` (`runtime/award_records.py`:
+set only when an honor was decided after its date). An entry of `all_stars` takes its own step's date and keeps the
+fields it was recorded with when a later step rebuilds the list; only a new entry is written (`decide`,
+`repair_recorded_on` for records written before this rule).
 """
 from __future__ import annotations
 
@@ -57,6 +63,7 @@ RECENCY = 0.8
 MIN_SHARE = 1 / 3
 HISTORY = Path("library/2003/league/nba_all_star_history_1985_2003.json")
 STEPS = ("starters", "coaches", "reserves", "rookie_challenge", "replacements")
+UNKNOWN = "N/A"          # no researched position: a shape's G, F and C slots never take him, its any-position slots may
 
 
 def _read(path):
@@ -97,20 +104,29 @@ def lenses(lo_hi, n):
 
 # -- evidence ---------------------------------------------------------------------------------------------------
 def pool(root, season, through, rows=None):
-    """{record name: evidence} for every player with a closed game through the date."""
-    from .season_awards import identities, season_lines
+    """{record name: evidence} for every player with a closed game through the date. The position group is the
+    registry's (`season_awards.identities`, else his registry row by id or record name, as for a result that keys him
+    by his id); a row whose position no source records (`write_back.known_position` is None) or a player with no row
+    is UNKNOWN and fills only the any-position slots, never a guard, forward or center slot on a placeholder."""
+    from .season_awards import GROUP, identities, season_lines
     from .seasons import conference_of
-    from .write_back import closed_results
+    from .write_back import closed_results, known_position, registry
     rows = closed_results(root, season, through) if rows is None else rows
     players, clubs = season_lines(rows, through)
     ids = identities(root, season)
+    entries = {}
+    for p in registry(root)["players"]:
+        entries.update({k: p for k in (p.get("bbr_id"), p["name"]) if k and k not in entries})
     out = {}
     for name, t in players.items():
         record_name, bbr, group = ids.get(name, (name, None, None))
+        entry = entries.get(bbr) or entries.get(record_name)
+        if entry is not None and (group is None or known_position(entry) is None):
+            group = GROUP.get(known_position(entry) or "")
         club = clubs[t["_club"]]
         g, cg = t["games"], club["games"]
         avail = min(1.0, g / cg)
-        out[record_name] = {"player": record_name, "bbr_id": bbr, "position": group or "F", "team": t["_club"],
+        out[record_name] = {"player": record_name, "bbr_id": bbr, "position": group or UNKNOWN, "team": t["_club"],
                             "conference": conference_of(season, t["_club"], root), "games": int(g), "club_games": int(cg),
                             "pts": round(t["pts"] / g, 1), "reb": round((t["orb"] + t["drb"]) / g, 1),
                             "ast": round(t["ast"] / g, 1), "game_score": round(t["gmsc"] / g, 2),
@@ -339,6 +355,11 @@ def _draw(root, c, event_id, day, question, options):
     return packet, _read(result)["outcome"]
 
 
+BBR_ROOKIES_FROM = "2005-06"     # from this season the Rookies pool also matches by bbr_id, so a first-season player whose
+                                 # roster name carries diacritics the dated record name lacks is never missed (award audit,
+                                 # October 2026); the 2003-04 and 2004-05 records were decided by name and stand as recorded
+
+
 def rookie_challenge(root, c, day, rows):
     from .award_decisions import rookies
     through = _plus(day, -1)
@@ -353,7 +374,11 @@ def rookie_challenge(root, c, day, rows):
     second_bbr = {b for b, s in service.items() if s.get("first_season") == previous_season(c.season)}
     shape = {"G": 2, "F": 2, "C": 1, "any": c.data["shape"]["rookie_challenge_roster"] - 5}
     out = {}
-    for side, keep in (("Rookies", lambda n, e: n in first), ("Sophomores", lambda n, e: e["bbr_id"] in second_bbr)):
+    from .award_decisions import first_season_ids
+    first_bbr = first_season_ids(root, c.season) if c.season >= BBR_ROOKIES_FROM else set()
+    rookie = ((lambda n, e: e.get("bbr_id") in first_bbr or n in first) if c.season >= BBR_ROOKIES_FROM
+              else (lambda n, e: n in first))           # recorded seasons keep the name rule they were decided under
+    for side, keep in (("Rookies", rookie), ("Sophomores", lambda n, e: e["bbr_id"] in second_bbr)):
         names = sorted(n for n, e in players.items() if keep(n, e) and e["eligible"])
         e = players
         scored = _scores(names, [[e[n]["avail_gmsc"] for n in names], [e[n]["avail_pts"] for n in names]], [e[n]["club_pct"] for n in names])
@@ -437,6 +462,94 @@ def read_record(root=ROOT, season=None):
             "calendar": c.calendar.as_posix(), "steps": [], "all_stars": []}
 
 
+ROLE_STEP = {"starter": "starters", "reserve": "reserves", "injury replacement": "replacements"}
+
+
+def _entry_key(a):
+    return a["conference"], a["role"], a["player"]
+
+
+def keep_recorded(old, built, steps):
+    """The rebuilt `all_stars` list. An entry already in the record keeps every field it was recorded with; a new entry
+    takes its own step's `recorded_on` when that step closed after the entry's selection date, else none. A later step
+    (the replacements) therefore never re-dates the starters and reserves (the 2005-02-18 overwrite of 2004-05)."""
+    have = {_entry_key(a): a for a in old}
+    out = []
+    for a in built:
+        if _entry_key(a) in have:
+            out.append(have[_entry_key(a)])
+            continue
+        day = steps[ROLE_STEP[a["role"]]].get("recorded_on")
+        out.append(dict(a, recorded_on=day) if day and day > a["selected_on"] else a)
+    return out
+
+
+def decision_dates(record, decided=None):
+    """{step: the career date that closed it}: `decided` where given, else the step's own `recorded_on`, else its
+    announcement date, except in a record closed late in one run. A record written before steps carried the date shows
+    that run only through its entries: the earlier code stamped every entry selected before the clock of the last
+    rebuild with that clock, so one date X on the entries later than every step's announcement means the whole record
+    was closed late at X (2003-04: every step closed on 2004-06-24, when the career first decided All-Star selections),
+    and an X that is itself a step's date is that step's rebuild re-dating the earlier entries (2004-05: 2005-02-18,
+    the replacements). The driver otherwise closes each step on its own date: validation refuses a step dated on or
+    before the clock and not decided (`all_star_errors`). The inference reads only a record written before this rule,
+    one whose steps carry no `recorded_on`: under the rule an entry takes a date only from its own step's
+    `recorded_on` (`keep_recorded`), so a late step's date on its own entries never re-dates a step closed on time."""
+    decided = decided or {}
+    steps = record.get("steps", [])
+    last = max((s["announced_on"] for s in steps), default="")
+    marks = {a["recorded_on"] for a in record.get("all_stars", []) if a.get("recorded_on")}
+    legacy = not any(s.get("recorded_on") for s in steps)
+    late = next(iter(marks)) if legacy and len(marks) == 1 and next(iter(marks)) > last else None
+    return {s["step"]: decided.get(s["step"]) or s.get("recorded_on") or (late if late and late > s["announced_on"] else s["announced_on"])
+            for s in steps}
+
+
+def _wanted(a, closed):
+    """An entry's `recorded_on`: its step's closing date when later than its selection, else None."""
+    day = closed.get(ROLE_STEP.get(a["role"]))
+    return day if day and day > a["selected_on"] else None
+
+
+def recorded_on_errors(record, label="all_star.json"):
+    """Entries whose `recorded_on` is not their own step's closing date (`decision_dates`)."""
+    closed = decision_dates(record)
+    return [f"{label}: {a['player']} ({a['conference']} {a['role']}, selected {a['selected_on']}) carries recorded_on "
+            f"{a.get('recorded_on')}; its step closed on {closed.get(ROLE_STEP.get(a['role']))} "
+            "(python -c 'from runtime.all_star import repair_recorded_on; print(repair_recorded_on())')"
+            for a in record.get("all_stars", []) if a.get("recorded_on") != _wanted(a, closed)]
+
+
+def repair_recorded_on(root=ROOT, seasons=None, decided=None, write=True):
+    """Restore the recording dates of every All-Star record on file (`seasons` narrows it), metadata only: no selection,
+    role, team or selection date changes, and the steps are untouched. Each entry carries its own step's closing date
+    (`decision_dates`) when that is later than its selection, else no `recorded_on`, as Wade's entry in `awards.json`
+    already does. `decided` ({season: {step: date}}) replaces the inference with dated evidence. Returns
+    [(season, player, role, recorded_on before, after)] for every entry changed; `write=False` changes nothing."""
+    root = Path(root)
+    changed = []
+    for path in sorted((root / PLAYER / "Stats_and_Awards/League").glob("*/all_star.json")):
+        season = path.parent.name
+        if seasons and season not in seasons:
+            continue
+        record = _read(path)
+        closed = decision_dates(record, (decided or {}).get(season))
+        touched = False
+        for a in record.get("all_stars", []):
+            want = _wanted(a, closed)
+            if a.get("recorded_on") == want:
+                continue
+            changed.append((season, a["player"], a["role"], a.get("recorded_on"), want))
+            if want:
+                a["recorded_on"] = want
+            else:
+                a.pop("recorded_on")
+            touched = True
+        if touched and write:
+            path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return changed
+
+
 def due(c, clock):
     d = dates(c)
     when = {"starters": d["starters_announced"], "coaches": _plus(d["coach_record_through"], 1), "reserves": d["reserves_announced"],
@@ -473,6 +586,8 @@ def decide(root=ROOT, clock=None):
             out = rookie_challenge(root, c, day, rows)
         else:
             out = replacements(root, c, day, rows, record)
+        if clock > out["announced_on"]:                  # closed after its date: known to the career from the clock
+            out["recorded_on"] = clock
         record["steps"].append(out)
         new.append(out)
     if not new:
@@ -480,24 +595,22 @@ def decide(root=ROOT, clock=None):
     record["steps"].sort(key=lambda s: (s["announced_on"], STEPS.index(s["step"])))
     if {"starters", "reserves"} <= {s["step"] for s in record["steps"]}:
         steps = {s["step"]: s for s in record["steps"]}
-        record["all_stars"] = [{"player": p["player"], "bbr_id": p["bbr_id"], "team": p["team"], "conference": conf, "role": role,
-                                "selected_on": steps[step]["announced_on"]}
-                               for conf in ("East", "West")
-                               for step, key, role in (("starters", "starters", "starter"), ("reserves", "reserves", "reserve"))
-                               for p in steps[step]["conferences"][conf][key]]
+        built = [{"player": p["player"], "bbr_id": p["bbr_id"], "team": p["team"], "conference": conf, "role": role,
+                  "selected_on": steps[step]["announced_on"]}
+                 for conf in ("East", "West")
+                 for step, key, role in (("starters", "starters", "starter"), ("reserves", "reserves", "reserve"))
+                 for p in steps[step]["conferences"][conf][key]]
         if "replacements" in steps:
             for conf, changes in steps["replacements"]["conferences"].items():
                 for ch in changes:
                     rep = next(o for o in steps["reserves"]["conferences"][conf]["coach_order"] if o["player"] == ch["replacement"])
                     bbr = next((p.get("bbr_id") for p in pool(root, c.season, steps["replacements"]["evidence_through"], rows).values()
                                 if p["player"] == ch["replacement"]), None)
-                    record["all_stars"].append({"player": ch["replacement"], "bbr_id": bbr, "team": rep["team"], "conference": conf,
-                                                "role": "injury replacement", "selected_on": steps["replacements"]["announced_on"],
-                                                "replacing": ch["out"]})
+                    built.append({"player": ch["replacement"], "bbr_id": bbr, "team": rep["team"], "conference": conf,
+                                  "role": "injury replacement", "selected_on": steps["replacements"]["announced_on"],
+                                  "replacing": ch["out"]})
             record["game_rosters"] = rosters(record)
-    for a in record.get("all_stars", []):
-        if clock > a["selected_on"]:                     # decided after its date: known to the career from the clock
-            a.setdefault("recorded_on", clock)
+        record["all_stars"] = keep_recorded(record.get("all_stars", []), built, steps)
     path = root / c.record
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -522,7 +635,7 @@ def _record_wade(root, record, c, clock=None):
         data["awards"].append({"id": award_id, "name": "All-Star", "short_name": "All-Star", "status": "earned",
                                "competition": "regular", "season": c.season, "period_start": opening,
                                "period_end": a["selected_on"], "awarded_on": a["selected_on"], "role": a["role"],
-                               **({"recorded_on": clock} if clock and clock > a["selected_on"] else {}),
+                               **({"recorded_on": a["recorded_on"]} if a.get("recorded_on") else {}),   # his step's own date
                                "source": c.page.relative_to(PLAYER).as_posix() + "#all-stars"})
         added += 1
     if added:
@@ -586,7 +699,8 @@ def page(record, clock, c):
 
 
 def all_star_errors(root=ROOT):
-    """A step dated on or before the clock and not decided; a Wade selection missing from awards.json."""
+    """A step dated on or before the clock and not decided; an entry not dated by its own step (`recorded_on_errors`);
+    a Wade selection missing from awards.json."""
     from .write_back import clock as career_clock
     root = Path(root)
     c = ctx(root)
@@ -596,6 +710,7 @@ def all_star_errors(root=ROOT):
     done = {s["step"] for s in record["steps"]}
     errors = [f"{c.record.as_posix()}: All-Star {s} dated {d} is not decided (python scripts/decide_awards.py --write)"
               for s, d in due(c, career_clock(root)) if s not in done]
+    errors += recorded_on_errors(record, c.record.as_posix())
     path = root / PLAYER / "awards.json"
     have = {a["id"] for a in _read(path)["awards"]} if path.is_file() else set()
     if any(a["player"] == WADE for a in record.get("all_stars", [])) and f"{c.season}-all-star" not in have:

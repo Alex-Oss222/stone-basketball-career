@@ -209,15 +209,12 @@ def detail_body(page, records, *, style=None, as_of=None):
     return text
 
 
-def honors_tail(page):
-    if not page.is_file():
-        return ""
-    text = page.read_text(encoding="utf-8")
-    found = re.search(r"^#{2,3} Awards(?: and honors)?\n", text, flags=re.M)
-    return "### Awards\n" + text[found.end():] if found else ""
-
-
-def report(page, title, identity, as_of, records, *, navigation=(), groups=(), comparison=(), detail=None, full=False, extra="", honors="", style=None, scope=None):
+def report(page, title, identity, as_of, records, *, navigation=(), groups=(), comparison=(), detail=None, full=False, extra="", style=None, scope=None):
+    """One generated report page, wholly rebuilt from source records. Honors come only from `awards.json`: the identity
+    block's earned-honors table for the page's season and the Awards column of each per-game row, filed by the honor's
+    period end. No earlier text of the page is kept: a hand-written awards section preserved from an old template (the
+    2003-04 pages' "No NBA awards recorded for this period" and their all-"Not awarded" season honor register)
+    contradicted both."""
     text = GENERATED + f"\n# {title}\n\n"
     if navigation:
         text += " · ".join(link(page, target, label) for label, target in navigation) + "\n\n"
@@ -239,7 +236,7 @@ def report(page, title, identity, as_of, records, *, navigation=(), groups=(), c
             [pct(a["rates"][k]) for k in ("fg_pct", "two_pct", "three_pct", "ft_pct", "efg_pct", "ts_pct")]])
         if not groups:
             text += game_log(page, records, style=style, as_of=as_of)
-    return (text + honors).rstrip() + "\n"
+    return text.rstrip() + "\n"
 
 
 def month_window(season, month):
@@ -327,8 +324,7 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
             for dest in (month_dir, regular_dir / spec["folder"]):
                 page = dest / "README.md"
                 outputs[page] = render_report(page, f"{label} | NBA regular season", identity, min(cutoff, end), scope,
-                    navigation=period_nav, groups=weeks, comparison=comparison, detail=month_dir / "Stat_Detail.md",
-                    honors=honors_tail(page) if dest == month_dir else "")
+                    navigation=period_nav, groups=weeks, comparison=comparison, detail=month_dir / "Stat_Detail.md")
             detail = month_dir / "Stat_Detail.md"
             outputs[detail] = render_report(detail, f"{label} | Detailed statistics", identity, min(cutoff, end), scope,
                                       navigation=[("Month summary", month_dir / "README.md"), *nav], full=True)
@@ -352,7 +348,7 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
             for dest in (week_dir, source_dir):
                 page = dest / "README.md"
                 outputs[page] = render_report(page, title, identity, period_cutoff, scope, navigation=week_nav,
-                    comparison=comparison, detail=week_dir / "Stat_Detail.md", honors=honors_tail(page) if dest == week_dir else "")
+                    comparison=comparison, detail=week_dir / "Stat_Detail.md")
             detail = week_dir / "Stat_Detail.md"
             outputs[detail] = render_report(detail, f"{title} | Detailed statistics", identity, period_cutoff, scope,
                                       navigation=[("Week summary", week_dir / "README.md"), *nav], full=True)
@@ -364,7 +360,7 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
         for dest in (stats_year, regular_dir):
             page = dest / "README.md"
             outputs[page] = render_report(page, f"{year} | NBA regular season", identity, cutoff, regular,
-                navigation=year_nav, groups=months, detail=stats_year / "Stat_Detail.md", honors=honors_tail(page) if dest == stats_year else "")
+                navigation=year_nav, groups=months, detail=stats_year / "Stat_Detail.md")
         detail = stats_year / "Stat_Detail.md"
         outputs[detail] = render_report(detail, f"{year} | Regular-season detail", identity, cutoff, regular,
                                   navigation=year_nav, full=True)

@@ -556,14 +556,23 @@ class CardContext:
                         continue
                     for x in d["shortlist"]:
                         self.honors.setdefault(_key(x["player"]), []).append(dict(d, rank=x["rank"], line=x))
-            # Closed season awards (runtime/season_awards.py): winners, team selections and the next vote-getters.
+            # Closed All-Star selections (runtime/all_star.py): starters, reserves and injury replacements, from the
+            # selection date (`all_star_honors`).
+            selections = self.root / LEAGUE_DIR / season / "all_star.json"
+            if selections.is_file():
+                for key, rows in all_star_honors(self.registry["players"], json.loads(selections.read_text(encoding="utf-8")),
+                                                 self.on, dates(season, root)["opening_night"]).items():
+                    self.honors.setdefault(key, []).extend(rows)
+            # Closed season awards (runtime/season_awards.py): winners, team selections and the next vote-getters, over
+            # the decision's own period (the Finals MVP's starts with the Finals), else from opening night.
             record = self.root / LEAGUE_DIR / season / "season_awards.json"
             if not record.is_file():
                 continue
             for d in json.loads(record.read_text(encoding="utf-8"))["decisions"]:
                 if d["announced_on"] > self.on:
                     continue
-                base = dict(conference="", period_start=dates(season, root)["opening_night"], period_end=d["evidence_through"],
+                base = dict(conference="", period_start=d.get("period_start") or dates(season, root)["opening_night"],
+                            period_end=d["evidence_through"],
                             announced_on=d["announced_on"], award=d["award"], filed_on=(LEAGUE_DIR / season / "Season_Awards.md").as_posix(),
                             annual=True)
                 for player, name, _ in season_honors(d):
@@ -601,6 +610,29 @@ class CardContext:
     def club(self, player, signed=None):
         return club_on(player, self.on, holdings=self.holdings, departures=self.departures,
                        transactions=self.transactions, root=self.root, signed=signed)
+
+
+def all_star_honors(players, record, on, opening):
+    """{name key: [honor rows]} for one season's All-Star selections (`all_stars` in `League/<season>/all_star.json`,
+    `runtime/all_star.py`): each starter, reserve and injury replacement selected on or before the card date `on`, with
+    his conference and role, dated on the selection and linked to the season page's All-Stars table. Matched to the
+    registry `players` by NBA id; an entry without one by name (the award records' key). An id the registry does not
+    track stays on the All-Star page only. The period runs from opening night to the selection date, as Wade's own
+    record does (`all_star._record_wade`)."""
+    names = {p["bbr_id"]: p["name"] for p in players if p.get("bbr_id")}
+    page = (LEAGUE_DIR / record["season"] / "All_Star.md").as_posix()
+    out = {}
+    for a in record.get("all_stars", []):
+        if a["selected_on"] > on:
+            continue
+        name = names.get(a["bbr_id"]) if a.get("bbr_id") else a["player"]
+        if name is None:
+            continue
+        out.setdefault(_key(name), []).append(dict(
+            conference=a["conference"], name=f"All-Star ({a['role']})", period_start=opening, period_end=a["selected_on"],
+            announced_on=a["selected_on"], award="all_star", filed_on=page, anchor="all-stars", rank=1, annual=True,
+            selected=True, **({"replacing": a["replacing"]} if a.get("replacing") else {})))
+    return out
 
 
 def medal_honors(players, medals, linked=None):
@@ -829,7 +861,8 @@ def markdown_card(ctx, data):
 
 
 def awards_lines(ctx, p):
-    """The card's final section: closed league award decisions and FIBA team medals (`medal_honors`), by date."""
+    """The card's final section: closed league award decisions, All-Star selections (`all_star_honors`) and FIBA team
+    medals (`medal_honors`), by date."""
     lines = ["## Awards and honors\n"]
     honors = ctx.honors.get(_key(p["name"]), [])
     if not honors:
@@ -855,8 +888,10 @@ def awards_lines(ctx, p):
                 rows.append([h["name"], f"{h['period_start']} to {h['period_end']}", h["announced_on"], result,
                              f"[Tournament]({page})"])
                 continue
-            result = ("**Selected**" if h.get("annual") and "Team" in h["name"] else "**Winner**") if h["rank"] == 1 else \
-                (f"No. {h['rank']} in the vote" if h.get("annual") else f"Shortlist, No. {h['rank']}")
+            result = ("**Selected**" if h.get("selected") or (h.get("annual") and "Team" in h["name"]) else "**Winner**") \
+                if h["rank"] == 1 else (f"No. {h['rank']} in the vote" if h.get("annual") else f"Shortlist, No. {h['rank']}")
+            if h.get("replacing"):
+                result += f", replacing {h['replacing']}"
             rows.append([f"{h['conference']} {h['name']}".strip(), f"{h['period_start']} to {h['period_end']}", h["announced_on"], result,
                          f"[Decision]({page})"])
         lines.append(markdown_table(["Award", "Period", "Announced", "Result", "Record"], rows).rstrip() + "\n")
@@ -877,7 +912,7 @@ def _empty_period(period, stat):
 
 def award_notice(ctx, p):
     honors = ctx.honors.get(_key(p["name"]), [])
-    annual = [h["name"] for h in honors if h.get("annual") and h["rank"] == 1]
+    annual = [f"{h['conference']} {h['name']}".strip() for h in honors if h.get("annual") and h["rank"] == 1]
     periodic = [f"{h['conference']} {h['name']} ({h['period_start']} to {h['period_end']})"
                 for h in honors if h["rank"] == 1 and not h.get("annual") and not h.get("medal")]
     medals = [f"{h['name']} ({h['medal']['country']})" for h in honors if h.get("medal")]

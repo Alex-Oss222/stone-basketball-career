@@ -463,10 +463,227 @@ def _researched_births(root):
     return {b: e["birth_date"] for b, e in read_json(path)["players"].items() if e.get("birth_date")} if path.is_file() else {}
 
 
+# -- registry positions ---------------------------------------------------------------------------
+# A registry row's `position` is also its group on every league statistics page and card index, so it is always one of
+# REGISTRY_POSITIONS (validation refuses any other). Its `position_basis` names the source file that recorded it. A row
+# no source records is listed under UNKNOWN_SLOT with `position_basis` UNKNOWN_BASIS: the slot is a page group only, never
+# a position, and a reader that selects by position reads `known_position` (None for him). The All-Star pool does
+# (`all_star.pool`); the season awards' and USA Basketball's groups (`season_awards.identities`) and the trade market's
+# (`trades._group`) still read the slot, a forward, until they move to `known_position`. Before this rule an
+# addition without a known bbr_id took "SF" with no basis (most of the 2004-05 rookies, such as Ben Gordon SG and
+# David Harrison C); `repair_positions` fills those from the same sources.
+REGISTRY_POSITIONS = ("PG", "SG", "SF", "F", "PF", "C")
+UNKNOWN_SLOT = "SF"
+UNKNOWN_BASIS = "unknown"
+
+
+def _slot(label):
+    """A source's position label as a registry position: its first listed position ('SG-SF' is SG, 'C/PF' is C), or None
+    when that names no registry group ('G', 'G/F', empty)."""
+    first = re.split(r"[-/]", str(label or "").strip())[0].strip().upper()
+    return first if first in REGISTRY_POSITIONS else None
+
+
+def _season_distance(season, other):
+    return abs(int(str(other)[:4]) - int(str(season)[:4]))
+
+
+def position_sources(root=ROOT, season=None, through=None):
+    """The sources that record a player's position, best first: [(basis path, {(bbr_id, club): slot}, {bbr_id: slot},
+    {(club, name key): slot}, {name key: slot for a name only one slot answers})]. First the season's own: its real
+    rosters, the career's opening book and Miami's register; then the draft classes and the unattached identities; then
+    every other season's real rosters, opening books, Miami registers, end-of-season rosters and expiring-contract lists,
+    nearest season first, none after `through` (the live season: a later season's roster is not yet known to the
+    career). Dated moves are not read: the market and the disturbed-club replacements write "SF" for a player no roster
+    records, a placeholder; the expiring list the market reads for a real position is read here directly."""
+    root = Path(root)
+    season = season or _active_season(root)
+    upto = int(str(through or _active_season(root))[:4])
+    found = []                                                  # (rank, season distance, kind, basis, rows)
+
+    def add(kind, other, path, rows):
+        """`kind` orders a season's files (real rosters 0, opening book 0.1, Miami's register 0.2, end of season 0.3,
+        expiring contracts 0.4) and the undated ones (draft classes 1, identities 2); rows are (bbr_id, club, name,
+        label, minutes), and a traded player's longest stint answers for his id."""
+        year = int(str(other)[:4]) if other else int(path.parts[-3])            # a library file's folder year
+        if year > max(upto, int(season[:4])):
+            return
+        rank = 0 if other == season else 3 if other else kind  # the season's own, draft classes, identities, the others
+        rows = [(b, club, _key(n) if n else None, _slot(pos)) for b, club, n, pos, _ in sorted(rows, key=lambda r: -(r[4] or 0))]
+        found.append((rank, _season_distance(season, other) if other else 0, kind, path.relative_to(root).as_posix(), rows))
+
+    for path in sorted(root.glob("library/*/league/nba_*_team_rosters.json")):
+        data = read_json(path)
+        rows = [(p.get("bbr_id"), club, p.get("player_id"), p.get("position"), p.get("minutes"))
+                for club, c in (data.get("clubs") or {}).items() for p in c.get("players", [])]
+        add(0, data.get("season"), path, rows)
+    for path in sorted(root.glob(f"{PLAYER_DIR.as_posix()}/*/League/opening_rosters.json")):
+        book = read_json(path)
+        rows = [(p.get("bbr_id"), p.get("club"), p.get("player_id"), p.get("position"), p.get("minutes"))
+                for group in list((book.get("clubs") or {}).values()) + [book.get("pool") or [], book.get("not_placed") or []] for p in group]
+        add(0.1, path.parts[-3], path, rows)
+    for path in sorted(root.glob(f"{PLAYER_DIR.as_posix()}/*/00_Team/Team/Roster/roster.json")):
+        rows = [(p.get("bbr_id"), MIAMI, p.get("name"), (p.get("positions") or [None])[0], 0) for p in read_json(path)["players"]]
+        add(0.2, path.parts[-5], path, rows)
+    for path in sorted(root.glob("library/*/league/nba_*_draft_class.json")):
+        data = read_json(path)
+        rows = [(p.get("bbr_id"), None, p.get("player"), p.get("position"), 0) for p in data.get("picks") or []]
+        rows += [(p.get("bbr_id"), None, p.get("player_id") or p.get("name"), p.get("position"), 0)
+                 for c in (data.get("clubs") or {}).values() for p in c.get("players", [])]
+        add(1, None, path, rows)
+    for path in sorted(root.glob("library/*/league/nba_*_unattached_identities.json")):
+        rows = [(p.get("bbr_id"), None, p.get("player_id") or p.get("name"), p.get("position"), 0) for p in read_json(path)["players"]]
+        add(2, None, path, rows)
+    def closing(data, path):
+        label = str(data.get("season") or path.parts[-3])
+        return label if "-" in label else f"{int(label) - 1}-{label[-2:]}"       # the 2003 files close 2002-03
+
+    for path in sorted(root.glob("library/*/league/nba_*_end_of_season.json")):
+        data = read_json(path)
+        rows = [(p.get("bbr_id"), club, p.get("player_id") or p.get("name"), p.get("position"), 0)
+                for club, c in (data.get("clubs") or {}).items() for p in c.get("players", [])]
+        add(0.3, closing(data, path), path, rows)
+    # The free agents whose contracts ended with that season (the list the symmetric market reads for an unsigned
+    # player's position, `league_market._role_from_stats`): dated by the season they closed, behind its end-of-season
+    # rosters, so a later season's roster answers first. Its club is the former one, not a stint, so it answers by id.
+    for path in sorted(root.glob("library/*/league/nba_*_expiring_contracts.json")):
+        data = read_json(path)
+        rows = [(p.get("bbr_id"), None, p.get("player_id") or p.get("name"), p.get("position"), 0) for p in data.get("players") or []]
+        add(0.4, closing(data, path), path, rows)
+    out = []
+    for _, _, _, basis, rows in sorted(found, key=lambda f: f[:4]):
+        stint, by_bbr, by_club, names = {}, {}, {}, {}
+        for b, club, k, slot in rows:
+            if not slot:
+                continue
+            if b:
+                stint.setdefault((b, club), slot)
+                by_bbr.setdefault(b, slot)
+            if k:
+                by_club.setdefault((club, k), slot)
+                names.setdefault(k, set()).add(slot)
+        out.append((basis, stint, by_bbr, by_club, {k: next(iter(v)) for k, v in names.items() if len(v) == 1}))
+    return out
+
+
+def registry_position(sources, bbr=None, name=None, club=None):
+    """(position, basis) for a registry row from `position_sources`: the first source that records him, by bbr_id and
+    the club of his first appearance (a traded player's stints can list different positions), by club and name, by
+    bbr_id, then by a name that source gives one position; (None, None) when none does."""
+    k = _key(name) if name else None
+    for basis, stint, by_bbr, by_club, names in sources:
+        slot = (stint.get((bbr, club)) if bbr else None) or (by_club.get((club, k)) if k else None) \
+            or (by_bbr.get(bbr) if bbr else None) or (names.get(k) if k else None)
+        if slot:
+            return slot, basis
+    return None, None
+
+
+def known_position(entry):
+    """A registry row's position for any reader that selects by position: None for a row whose position no source records
+    (UNKNOWN_BASIS), where `position` holds only the page slot."""
+    return None if entry.get("position_basis") == UNKNOWN_BASIS else entry.get("position")
+
+
+def _added_season(entry):
+    m = re.search(r"first closed (\d{4}-\d{2}) appearance", entry.get("added_basis") or "")
+    return m.group(1) if m else None
+
+
+def repair_positions(root=ROOT, write=True):
+    """Fill the position of a dated registry addition from `position_sources` (the season of his first appearance first)
+    where the row holds a placeholder: "SF" with no `position_basis` (the earlier default for an addition without a known
+    bbr_id) or UNKNOWN_BASIS. A sourced different position replaces it, with its basis; no source marks the row
+    UNKNOWN_BASIS and keeps its page slot; a source that confirms "SF" leaves the row as it is. A row with any other
+    position was sourced when added and is never changed, nor are the original 407. With `write`, each changed row's line
+    moves to its new position group on every league statistics page (`move_registry_rows`), values unchanged.
+    Returns [(registry_id, name, position before, after, basis)] for every row changed or marked."""
+    root = Path(root)
+    path = root / PLAYER_DIR / "Stats_and_Awards/League/player_registry.json"
+    reg = read_json(path)
+    changed = _fill_positions(root, reg)
+    if changed and write:
+        _write_positions(root, path, reg, changed)
+    return changed
+
+
+def _write_positions(root, path, reg, changed):
+    move_registry_rows(root, {rid: (before, after) for rid, _, before, after, _ in changed if before != after})
+    path.write_text(json.dumps(reg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def _fill_positions(root, reg):
+    """`repair_positions` on a registry already read: changes the rows in place and returns the changes."""
+    sources, changed = {}, []
+    for p in reg["players"]:
+        if p.get("cohort") != APPEARANCE_COHORT:
+            continue
+        basis = p.get("position_basis")
+        if not ((basis is None and p.get("position") == UNKNOWN_SLOT) or basis == UNKNOWN_BASIS):
+            continue
+        season = _added_season(p) or _active_season(root)
+        if season not in sources:
+            sources[season] = position_sources(root, season)
+        pos, src = registry_position(sources[season], p.get("bbr_id"), p["name"], p.get("team_name"))
+        if pos is None:
+            if basis != UNKNOWN_BASIS:
+                p["position_basis"] = UNKNOWN_BASIS
+                changed.append((p["registry_id"], p["name"], p["position"], p["position"], UNKNOWN_BASIS))
+            continue
+        if pos == p["position"] and basis is None:
+            continue                                            # a sourced SF: the row was right
+        changed.append((p["registry_id"], p["name"], p["position"], pos, src))
+        p["position"], p["position_basis"] = pos, src
+    return changed
+
+
+def move_registry_rows(root, moves):
+    """Move each registry id's row between position groups on every league statistics page: {registry_id: (from, to)}.
+    The row keeps every value but its Pos cell, which takes the new position; it joins the end of the new group's table,
+    where `scripts/format_league_reports.py` places a new row. Returns the pages rewritten."""
+    if not moves:
+        return []
+    group_re = re.compile(r"(<details>\n<summary>(PG|SG|SF|F|PF|C) ·[^\n]*</summary>\n)(.*?)(</details>)", re.S)
+    link = re.compile(r"\((?:\.\./)*Players/([^)/]+)\.md\)")
+    written = []
+    for page in sorted((Path(root) / PLAYER_DIR / "Stats_and_Awards/League").rglob("League_Stats.md")):
+        text = page.read_text(encoding="utf-8")
+        bodies = {m.group(2): m.group(3) for m in group_re.finditer(text)}
+        arriving = {pos: [] for pos in bodies}
+        for pos, body in list(bodies.items()):
+            lines = body.split("\n")
+            header = next((ln for ln in lines if ln.startswith("| Player |")), None)
+            if header is None:
+                continue
+            col = [c.strip() for c in header.split("|")].index("Pos")
+            kept = []
+            for ln in lines:
+                m = link.search(ln) if ln.startswith("| [") else None
+                if m and m.group(1) in moves and moves[m.group(1)][0] == pos and moves[m.group(1)][1] in bodies:
+                    cells = ln.split("|")
+                    cells[col] = f" {moves[m.group(1)][1]} "
+                    arriving[moves[m.group(1)][1]].append("|".join(cells))
+                    continue
+                kept.append(ln)
+            bodies[pos] = "\n".join(kept)
+        if not any(arriving.values()):
+            continue
+        for pos, rows in arriving.items():
+            if rows:
+                lines = bodies[pos].split("\n")
+                last = max(i for i, ln in enumerate(lines) if ln.startswith("|"))
+                bodies[pos] = "\n".join(lines[:last + 1] + rows + lines[last + 1:])
+        text = group_re.sub(lambda m: m.group(1) + bodies[m.group(2)] + m.group(4), text)
+        page.write_text(text, encoding="utf-8")
+        written.append(page)
+    return written
+
+
 def repair_registry(root=ROOT, write=True):
     """Fill a dated registry addition's missing bbr_id and birth date from the identity sources (never changing a
-    recorded value, never touching the original 407). Derived identity, so `scripts/reconcile.py` keeps it current.
-    Returns the registry ids repaired."""
+    recorded value, never touching the original 407), then a placeholder position from the position sources
+    (`repair_positions`). Derived identity, so `scripts/reconcile.py` keeps it current. Returns the registry ids
+    repaired."""
     path = Path(root) / PLAYER_DIR / "Stats_and_Awards/League/player_registry.json"
     reg = read_json(path)
     names, births = identity_sources(root)
@@ -503,7 +720,11 @@ def repair_registry(root=ROOT, write=True):
                         page = Path(root) / PLAYER_DIR / folder / f"{p['registry_id']}{ext}"
                         if page.is_file():
                             page.unlink()
-    if repaired and write:
+    positions = _fill_positions(root, reg)
+    repaired += [rid for rid, *_ in positions if rid not in repaired]
+    if positions and write:
+        _write_positions(root, path, reg, positions)
+    elif repaired and write:
         path.write_text(json.dumps(reg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return repaired
 
@@ -521,9 +742,10 @@ def drop_registry_rows(root, registry_ids):
 def registry_additions(root=ROOT, season=None, now=None):
     """Players in closed results who are not in the registry, as dated registry entries (cohort APPEARANCE_COHORT):
     identity from the season's rosters, Miami's register and the dated identity records; club and date of his first
-    closed appearance. The 407 original entries are never changed."""
+    closed appearance; position and its basis from `position_sources` (by bbr_id, else by club and name), never a
+    placeholder: a player no source records takes UNKNOWN_SLOT marked UNKNOWN_BASIS. The 407 original entries are never
+    changed."""
     season = season or _active_season(root)
-    from .rotations import primary_position
     reg = registry(root)
     by_bbr = {p["bbr_id"] for p in reg["players"] if p.get("bbr_id")}
     by_name = {_key(p["name"]) for p in reg["players"]}
@@ -533,9 +755,9 @@ def registry_additions(root=ROOT, season=None, now=None):
     conf_path = Path(root) / season_path(season, "conferences")
     conference = {t: c for c, ts in read_json(conf_path)["conferences"].items() for t in ts} if conf_path.is_file() else {}
     lookup = bbr_lookup(root, season)
-    positions, births = {}, {}
+    births = {}
     # Players a club signed in the symmetric market or as a disturbed-club replacement are on no real roster:
-    # their identity is the dated move that put them there.
+    # their identity is the dated move that put them there (their position is not: see `position_sources`).
     for rel, kind in (("League/league_moves.json", "moves"), ("League/club_replacements.json", "replacements")):
         path = Path(root) / season_base(season) / rel
         if path.is_file():
@@ -543,18 +765,10 @@ def registry_additions(root=ROOT, season=None, now=None):
                 club = e.get("to") or e.get("club")
                 if club and e.get("bbr_id"):
                     lookup.setdefault((club, _key(e["player"])), e["bbr_id"])
-                    positions.setdefault(e["bbr_id"], (e.get("role") or {}).get("position") or e.get("position"))
-    try:
-        for club, data in load_rosters(season, root).items():
-            for p in data["players"]:
-                positions.setdefault(p["bbr_id"], p.get("position"))
-    except OSError:
-        pass
     roster = Path(root) / season_base(season) / "00_Team/Team/Roster/roster.json"
     if roster.is_file():
         for p in read_json(roster)["players"]:
             if p.get("bbr_id"):
-                positions.setdefault(p["bbr_id"], (p.get("positions") or [None])[0])
                 births[p["bbr_id"]] = p.get("date_of_birth")
     for path in sorted(Path(root).glob("library/*/league/nba_*_end_of_season.json")) + sorted(Path(root).glob("library/*/league/nba_*_draft_class.json")):
         for club in (read_json(path).get("clubs") or {}).values():
@@ -564,10 +778,10 @@ def registry_additions(root=ROOT, season=None, now=None):
     for unattached in sorted(Path(root).glob("library/*/league/nba_*_unattached_identities.json")):
         for p in read_json(unattached)["players"]:
             births.setdefault(p["bbr_id"], p.get("birth_date"))
-            positions.setdefault(p["bbr_id"], p.get("position"))
     unique_names, more_births = identity_sources(root)
     for b, d in more_births.items():
         births.setdefault(b, d)
+    sources = None                                       # read once, and only when a player is added
     added = {}
     for row in closed_results(root, season, now):
         for side, pid, bbr, record in game_records(row, root, season):
@@ -578,8 +792,10 @@ def registry_additions(root=ROOT, season=None, now=None):
             key = bbr or _key(pid)
             if key in added:
                 continue
-            pos = primary_position(positions.get(bbr) or "SF") if positions.get(bbr) else "SF"
-            added[key] = {"name": pid, "position": pos, "team_name": club, "team_code": codes.get(club),
+            sources = position_sources(root, season) if sources is None else sources
+            pos, basis = registry_position(sources, bbr, pid, club)
+            added[key] = {"name": pid, "position": pos or UNKNOWN_SLOT, "position_basis": basis or UNKNOWN_BASIS,
+                          "team_name": club, "team_code": codes.get(club),
                           "conference": conference.get(club), "cohort": APPEARANCE_COHORT, "bbr_id": bbr, "espn_id": None,
                           "birth_date": births.get(bbr), "registry_id": bbr or _key(pid).replace(" ", "_"),
                           "added_on": row["result"]["game_date"],
@@ -973,11 +1189,16 @@ def run(root=ROOT, season=None, write=False, pages=True):
         report["miami_cards"] = refresh_miami_cards(root)
         from .team_status import refresh as refresh_team_status
         report["team_status"] = refresh_team_status(root)
+        # The season award hubs and month status lines, every season on file, in light runs too: the day's
+        # `decide_awards.py` rewrites the week pages and the month pages' week rows, so the day's commit restates the
+        # month lines and the hub's counts with them (`runtime/award_pages.py`; records only read, a few files).
+        from .award_pages import write_pages as write_award_pages
+        report["pages"] += len(write_award_pages(root))
     _, report["unmatched"] = closed_lines(root, season)
     if write and pages:                     # light runs (scripts/advance.py, daily) leave the page rebuild to the checkpoint
         from .season_games import refresh_reports
         report["reports"] = refresh_reports(root)
-        report["pages"] = write_statistics_pages(root, season)
+        report["pages"] += write_statistics_pages(root, season)
         from .playoff_stats import write_pages as write_playoff_pages
         report["pages"] += write_playoff_pages(root, season)
         from .seasons import live_seasons
@@ -991,9 +1212,9 @@ def run(root=ROOT, season=None, write=False, pages=True):
 
 def write_back_errors(root=ROOT, season=None, cards=False):
     """Validation: no unwritten result, every played note reflects its result, injuries and events logged,
-    statistics pages fresh; with `cards`, the league cards too (the script's --check; the cards also move
-    with the clock, so repository validation leaves them to `build_league_cards.py --check`). The
-    reporter's own freshness check is separate."""
+    statistics pages fresh; with `cards`, the league cards and the award pages too (the script's --check; both also
+    move with the clock, so repository validation leaves the cards to `build_league_cards.py --check` and checks the
+    award pages' facts with `award_pages.page_errors`). The reporter's own freshness check is separate."""
     season = season or _active_season(root)
     root = Path(root)
     errors = []
@@ -1049,6 +1270,14 @@ def write_back_errors(root=ROOT, season=None, cards=False):
         stale, errors = [], errors + [f"write-back: cannot build the league cards: {exc}"]
     if stale:
         errors.append(f"{len(stale)} league card file(s) differ from the closed results, for example {stale[0].relative_to(root)}; run scripts/build_league_cards.py --write")
+    # The award hubs and month status lines this write-back owns, compared whole (their 'As of' date too); repository
+    # validation checks what they show against the records instead (`award_pages.page_errors`).
+    from .award_pages import write_pages as write_award_pages
+    try:
+        errors += [f"{page.relative_to(root)}: stale award page; run scripts/write_back_results.py --write"
+                   for page in write_award_pages(root, write=False)]
+    except (OSError, ValueError, KeyError) as exc:
+        errors.append(f"write-back: cannot build the award pages: {exc}")
     return errors
 
 
