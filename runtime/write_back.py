@@ -1036,10 +1036,14 @@ def club_cell(cell, name, records, on, signed):
     return cell
 
 
-def league_page(text, page, lines, now, results, signed=None):
-    """One League_Stats.md page rebuilt from the closed results: header, leaders, position tables, period table."""
+def league_page(text, page, lines, now, results, signed=None, births=None):
+    """One League_Stats.md page rebuilt from the closed results: header, leaders, position tables, period table. The Age
+    cell is each player's age on the page's cutoff (the period's end, or the career date while it runs) from his registry
+    birth date (`births`: name -> date); without a birth date the cell keeps what it carried."""
+    from .league_cards import age_on
     scope = scope_for(page, [], now)
     label_on = min(scope["end"], now)
+    births = births or {}
     def games_in(sc):
         return sum(1 for r in results if sc["start"] <= r["game_date"] <= sc["end"])
     summaries = {}
@@ -1062,7 +1066,8 @@ def league_page(text, page, lines, now, results, signed=None):
             for row in rows:
                 name = _cell_name(row[0])
                 club = club_cell(row[2], name, lines.get(name, ()), label_on, signed)
-                out.append([*row[:2], club, *row[3:5], *stat_cells(summaries.get(name, empty))])
+                age = age_on(births.get(name), label_on)
+                out.append([row[0], str(age) if age is not None else row[1], club, *row[3:5], *stat_cells(summaries.get(name, empty))])
             return _table(headers, out)
         return head + _replace_tables(body, replacer) + tail
     text = re.sub(r"(<details>\n<summary>(?:PG|SG|SF|F|PF|C) ·[^\n]*</summary>\n)(.*?)(</details>)", position, text, flags=re.S)
@@ -1157,8 +1162,9 @@ def statistics_pages(root=ROOT, season=None):
     league = root / PLAYER_DIR / "Stats_and_Awards/League" / season
     from .league_cards import signings
     signed = signings(root)
+    births = {p["name"]: p.get("birth_date") for p in reg["players"]}
     for page in sorted(league.rglob("League_Stats.md")):
-        outputs[page] = league_page(page.read_text(encoding="utf-8"), page, by_name, now, results, signed)
+        outputs[page] = league_page(page.read_text(encoding="utf-8"), page, by_name, now, results, signed, births)
     team_lines, games = miami_lines(root, season, now)
     roster = root / season_base(season) / "00_Team/Team/Roster/roster.json"
     players = read_json(roster)["players"] if roster.is_file() else []
