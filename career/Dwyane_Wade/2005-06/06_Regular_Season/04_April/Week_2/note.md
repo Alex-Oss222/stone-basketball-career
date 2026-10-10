@@ -15,5 +15,6 @@ days: 8-14
 ## Games and events
 
 - 2006-04-08: Miami Heat 110 at Washington Wizards 92 — Miami Heat W 110-92 ([Game 1](Game_1.md), event `2006-04-08-miami-heat-at-washington-wizards`)
+- 2006-04-09: Orlando Magic 100 at Miami Heat 96 — Miami Heat L 96-100 ([Game 2](Game_2.md), event `2006-04-09-orlando-magic-at-miami-heat`)
 
 ## Consequences

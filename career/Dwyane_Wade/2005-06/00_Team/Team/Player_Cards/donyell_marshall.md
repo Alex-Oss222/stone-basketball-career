@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 31 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** December 20, 2004 · **Statistics through:** 2006-04-08 
+**Opening assessment:** December 20, 2004 · **Statistics through:** 2006-04-09 
 
 **Contract/control:** Signed September 9, 2005 (bird): 3 season(s) from 2005-06, $21,008,239 scheduled ($6,337,327 in 2005-06). (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
@@ -72,7 +72,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Chicago Bulls | 82 | N/A | 36.4 | 14.7 | 9.9 | 1.5 | 1.1 | 1.5 | 1.4 | 0.461 | 0.403 | 0.736 |
 | 2004-05 | MIA | 56 | 31 | 28.5 | 13.3 | 6.5 | 1.5 | 0.9 | 0.8 | 1.0 | 45.2% | 44.9% | 76.9% |
-| 2005-06 | MIA | 76 | 0 | 14.5 | 5.6 | 2.8 | 0.4 | 0.4 | 0.3 | 0.7 | 43.7% | 30.3% | 84.5% |
+| 2005-06 | MIA | 77 | 0 | 14.4 | 5.5 | 2.8 | 0.4 | 0.4 | 0.3 | 0.6 | 43.5% | 30.1% | 84.5% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 
