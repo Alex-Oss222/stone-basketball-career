@@ -112,9 +112,10 @@ FILLERS_PER_CANDIDATE = 6                # a second incoming player (salary or d
 INJURY_DISCOUNT = 0.75
 INJURY_GAMES = 3
 INJURY_FROM = "2003-12-01" 
-# Current form and control (from FORM_FROM; judgement): a club values a player on his closed 2003-04 production
-# as well as 2002-03, the new season counting as its games against FORM_PRIOR_GAMES of last season's; and a young
-# player's future runs past his contract through restricted free agency or Bird rights (CONTROL_AFTER_CONTRACT).
+# Current form and control (from FORM_FROM; judgement): a club values a player on his closed production this season
+# as well as last season's (2002-03 in the first season, then the previous simulated season), the new season counting
+# as its games against FORM_PRIOR_GAMES of last season's; and a young player's future runs past his contract through
+# restricted free agency or Bird rights (CONTROL_AFTER_CONTRACT).
 FORM_FROM = "2003-12-01"
 FORM_PRIOR_GAMES = 20
 CONTROL_AFTER_CONTRACT = ((25, 2), (29, 1), (99, 0))   # by age: extra seasons a club expects to keep him               # earlier trade decisions keep the values they were drawn with
@@ -131,6 +132,15 @@ BIRD_RAISE = 0.125                       # the 1999 agreement's Bird raise; a li
 CONSENT_FROM = "2005-12-01"
 IN_SEASON_SIGNED_FROM = CONSENT_FROM     # from this date a rest-of-season signing is newly signed for both trade desks (cbafaq05 Q88;
                                          # forward-only: every trade decided before it replays unchanged)
+# Season labels and the pick horizon (a dated fix). From the second season the production prior is the previous
+# simulated season (`Valuation.stats`) and the club records are its final simulated standings, but the basis text kept
+# naming 2002-03 and 2003-04; a pick counted its years out from 2004 at the earliest, so from 2004-05 the season's own
+# June first was regressed a year as if it were next season's; and a renamed club was looked up under its new name in
+# standings keyed by its old one, so it counted as a club without a previous season (the New Orleans/Oklahoma City
+# Hornets in 2005-06: building, its pick placed at 41 wins). From SEASON_LABELS_FROM the text names the seasons actually
+# read, a renamed club keeps its record (`seasons.club_aliases`, as `club_wins` reads it) and the season's own pick is
+# unregressed. Forward-only: every trade, offer and packet valued before it replays unchanged.
+SEASON_LABELS_FROM = "2006-02-13"
 CBA_2005_PATH = Path("library/2005/league/nba_2005_cba_rules.json")
 CONSENT_RULE = "trade_consent_one_year_contract"
 CONSENT_CENTER = 0.0                     # judgement: a move worth exactly his staying (the rights he gives up counted) is an even chance
@@ -315,7 +325,7 @@ class Assets:
             from .seasons import dates, path as season_path, previous_season
             from .standings import standings_on
             prev = previous_season(self.season)
-            self.standings = standings_on(dates(prev, root)["regular_season_end"], root, prev)
+            self.standings = self.under_season_names(standings_on(dates(prev, root)["regular_season_end"], root, prev))
             self.cap_rules = read_json(season_path(self.season, "cap_rules"), root)
             year = int(self.season[:4])
             calendar = read_json(f"library/{year}/league/nba_{year}_offseason_calendar.json", root)
@@ -330,8 +340,8 @@ class Assets:
                     self.positions[p["bbr_id"]] = (club, p.get("position") or "SF", 9)
 
     def posture(self, club):
-        """The club's stance on the date: its 2002-03 record, and a middle club whose core is young is building
-        (the top eight of its dated roster by production; judgement STANCE_YOUNG_AGE)."""
+        """The club's stance on the date: its last record (`record_season`), and a middle club whose core is young is
+        building (the top eight of its dated roster by production; judgement STANCE_YOUNG_AGE)."""
         if club not in self._stance:
             row = self.standings.get(club)
             if row is None and self.season != SEASON:
@@ -351,7 +361,7 @@ class Assets:
         return self._stance[club]
 
     def payroll(self, club):
-        """The club's 2003-04 salary on the date, from its dated inventory (`dated_inventory`), not the June list."""
+        """The club's salary this season on the date, from its dated inventory (`dated_inventory`), not the June list."""
         if club == MIAMI:
             return None   # Miami's ledger is the front office's
         if club not in self._payroll:
@@ -379,7 +389,7 @@ class Assets:
         return total if total >= 0 else total * NEGATIVE_SHARE
 
     def salary(self, player):
-        """2003-04 salary of a player entry (Miami sheet or inventory shape)."""
+        """This season's salary of a player entry (Miami sheet or inventory shape)."""
         return int(player["schedule"].get(self.season) or 0)
 
     def years_left(self, player):
@@ -389,13 +399,8 @@ class Assets:
         """Value points of a player under contract: production above replacement plus his contract term."""
         bbr = player.get("bbr_id")
         value = self.form_value(bbr) if bbr else None
-        if value is None:
-            production = 0.0
-            basis = "no 2002-03 evidence: production counted at replacement"
-        else:
-            production = max(0.0, value - REPLACEMENT_VALUE) * POINTS_PER_EFFICIENCY
-            basis = (f"production value {value:.1f} (2002-03 blended with closed 2003-04 games)" if self.on >= FORM_FROM
-                     else f"2002-03 production value {value:.1f}")
+        production = 0.0 if value is None else max(0.0, value - REPLACEMENT_VALUE) * POINTS_PER_EFFICIENCY
+        basis = self.form_basis(bbr, value)
         salary, years = self.salary(player), min(CONTRACT_YEARS_COUNTED, max(1, self.years_left(player)))
         worth = self.valuation.market_price(value, bbr) if value is not None else self.valuation.minimum(0)
         term = (worth - salary) * years / self.valuation.mid_level * 0.5 if salary else 0.0
@@ -458,8 +463,73 @@ class Assets:
                 out.add((club, name))
         return out
 
+    # -- the seasons read, named (from SEASON_LABELS_FROM) ---------------------------------------
+    def evidence_season(self):
+        """(season, simulated): the production prior `form_value` reads (`Valuation.stats`), the season before the
+        valuation's own: the library's real 2002-03 totals for the first season, a closed simulated season after it."""
+        if not hasattr(self, "_evidence_season"):
+            from .season_evidence import simulated
+            from .seasons import previous_season
+            prev = previous_season(self.valuation.season)
+            self._evidence_season = (prev, simulated(prev, self.root))
+        return self._evidence_season
+
+    def record_season(self):
+        """(season, simulated): the standings club records are read from (`posture`, `pick_value`): the library's
+        2002-03 table for the first season, else the previous season's final simulated standings."""
+        from .seasons import previous_season
+        return previous_season(self.season), self.season != SEASON
+
+    def under_season_names(self, table):
+        """Last season's standings rows under this season's club names from SEASON_LABELS_FROM, so a renamed club keeps
+        its record; before it the rows as that season keyed them, as recorded (a renamed club found no row)."""
+        if self.on < SEASON_LABELS_FROM:
+            return table
+        from .seasons import club_aliases
+        aliases = club_aliases(self.season)
+        return {aliases.get(club, club): row for club, row in table.items()}
+
+    def form_basis(self, bbr, value):
+        """A player's production basis text: before SEASON_LABELS_FROM the words recorded in every season (2002-03,
+        2003-04); from it the seasons `form_value` actually read for him (call it first: it holds the closed totals)."""
+        if self.on < SEASON_LABELS_FROM:
+            if value is None:
+                return "no 2002-03 evidence: production counted at replacement"
+            return (f"production value {value:.1f} (2002-03 blended with closed 2003-04 games)" if self.on >= FORM_FROM
+                    else f"2002-03 production value {value:.1f}")
+        season, sim = self.evidence_season()
+        prior = f"{season} simulated season" if sim else season
+        if value is None:
+            return f"no {prior} or closed {self.season} evidence: production counted at replacement"
+        games = ((getattr(self, "_season_totals", None) or {}).get(bbr) or {}).get("games") if self.on >= FORM_FROM else 0
+        if not games:
+            return f"{prior} production value {value:.1f}"
+        if self.valuation.value(bbr) is None:
+            return f"production value {value:.1f} (closed {self.season} games; no {prior} evidence)"
+        return f"production value {value:.1f} ({prior} blended with closed {self.season} games)"
+
+    def record_basis(self, club, wins):
+        """A club record's basis text for a pick: before SEASON_LABELS_FROM the words recorded in every season
+        ("wins in 2002-03"); from it the standings `record_season` read, or that the club had no row there."""
+        if self.on < SEASON_LABELS_FROM:
+            return f"{club} {wins} wins in 2002-03"
+        season, sim = self.record_season()
+        if club not in self.standings:
+            return f"{club} no {season} record (placed at {wins} wins)"
+        return f"{club} {wins} wins in {season}" + (" (simulated)" if sim else "")
+
+    def stance_basis(self, club):
+        """The words a trade packet gives for the club's stance from SEASON_LABELS_FROM (before it the desk keeps the
+        recorded "2002-03 record" words without reading Assets): the standings season `posture` read, or the building
+        stance of a club with no row there."""
+        season, sim = self.record_season()
+        if club not in self.standings and self.season != SEASON:
+            return f"no {season} record: a club without a previous season builds"
+        return f"{season} {'simulated ' if sim else ''}record and the age of its core"
+
     def form_value(self, bbr):
-        """Production value on the date: 2002-03, blended with closed 2003-04 games from FORM_FROM."""
+        """Production value on the date: the valuation's prior season (`evidence_season`: 2002-03 for the first season,
+        else the previous simulated season), blended with this season's closed games from FORM_FROM."""
         prior = self.valuation.value(bbr)
         if self.on < FORM_FROM or bbr is None:
             return prior
@@ -510,13 +580,17 @@ class Assets:
         wins = self.standings.get(owner_record_club, {}).get("wins", 41)
         order = sorted(self.standings.values(), key=lambda r: r["wins"])
         slot = 1 + sum(1 for r in order if r["wins"] < wins)      # worst record picks first (lottery ignored)
-        years_out = max(0, pick["year"] - max(2004, int(self.season[:4])))   # 2003-04 and 2004-05 as recorded
+        if self.on >= SEASON_LABELS_FROM:
+            years_out = max(0, pick["year"] - (int(self.season[:4]) + 1))   # the season's own draft is next June: unregressed
+        else:
+            years_out = max(0, pick["year"] - max(2004, int(self.season[:4])))   # as recorded (a year early from 2004-05)
         slot = 15 + (slot - 15) * FUTURE_PICK_REGRESSION ** years_out
         if miami_own:
             slot += MIAMI_PICK_PESSIMISM
         slot = max(1, min(29, slot))
         value = TOP_PICK_VALUE * math.exp(-PICK_DECAY * (slot - 1))
-        return {"value": round(value, 3), "slot": round(slot, 1), "basis": f"{owner_record_club} {wins} wins in 2002-03; {pick['year']} first regressed {years_out} year(s)"}
+        return {"value": round(value, 3), "slot": round(slot, 1),
+                "basis": f"{self.record_basis(owner_record_club, wins)}; {pick['year']} first regressed {years_out} year(s)"}
 
     @staticmethod
     def premium(values):
@@ -1085,7 +1159,9 @@ class TradeDesk:
             who = "it signs and trades" if st_in(trade) else "Miami re-signed and trades"
             contract = (f" {st['player']} on the contract {who} ({len(st['schedule'])} seasons, ${total:,}; sign-and-trade)")
         question = f"Does {trade['partner']} accept Miami's proposal: {outs} for {ins}?" + (f" The sign-and-trade covers{contract}." if contract else "")
-        basis = (f"{trade['partner']} stance {v['posture']} (2002-03 record and the age of its core); its change on its own objective "
+        stance = ("2002-03 record and the age of its core" if self.on < SEASON_LABELS_FROM   # as recorded in every season
+                  else self.assets.stance_basis(trade["partner"]))
+        basis = (f"{trade['partner']} stance {v['posture']} ({stance}); its change on its own objective "
                  f"{v['objective_gain']:+.3f} (weights {STANCE_WEIGHTS[v['posture']]}, star premium {STAR_EXPONENT}, pick chart, contract terms"
                  + (f"; a salary dump shedding ${v['shed']:,} with a pick or prospect back" if v["dump"] else "") +
                  f"). Floor {ACCEPT_FLOOR:+.0%}; above it, 50% at {ACCEPT_HURDLE:+.0%} (steepness {ACCEPT_STEEPNESS}) inside {ACCEPT_BOUNDS}. "

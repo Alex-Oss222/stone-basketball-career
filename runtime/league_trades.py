@@ -4,13 +4,16 @@ Only while `league_book.active(date)`. Once a week (Mondays) up to the deadline,
 searched for deals of up to three rotation players for up to two (MAX_PLAYERS) that both clubs gain from on their own objectives:
 - values: `trades.Assets.player_value` split into this season and the future, weighted by each club's stance
   (`STANCE_WEIGHTS`), times its skill fit for the arriving player (`skill_fit.py`, the club's own needs);
-- legality: the 1999 salary rule (incoming at most 115% of outgoing plus $100,000, unless the club is under
-  the cap after the trade); untouchables stay unless the club gains UNTOUCHABLE_MARGIN; the deadline;
+- legality: the season's agreement's salary rule (`agreement.terms`: incoming at most 115% of outgoing plus $100,000
+  under the 1999 agreement, 125% under the 2005 agreement from 2005-06; deals before AGREEMENT_MATCH_FROM used 115% in
+  every season), unless the club is under the cap after the trade; untouchables stay unless the club gains
+  UNTOUCHABLE_MARGIN; the deadline;
 - acceptance: each club's chance is `trades.acceptance` of its own gain; a deal is proposed only when both
   clear SEARCH_MIN_ACCEPT, and the best mutual gain league-wide is offered first.
 At most MAX_PER_WEEK deals a week are put to the engine, one decision packet per deal (accept with the
 product of the two chances); a drawn acceptance is written to `league_moves.json`. Same evidence for every
-club, no hindsight: values read only 2002-03 production and dated contracts.
+club, no hindsight: values read only last season's production (2002-03 in the first season, then the previous simulated
+season), this season's closed games and dated contracts.
 
 Trade consent (2005 agreement, deals decided from `trades.CONSENT_FROM`, 2005-12-01; cbafaq05 Q83): a player under a
 one-year contract whose club will hold his Larry Bird or Early Bird rights at its end (`trades.ConsentBook`) cannot be
@@ -30,8 +33,8 @@ from pathlib import Path
 
 from .league_book import LeagueBook, active
 from .league_moves import effective_roster, ledger_path, read as read_moves
-from .trades import (ACCEPT_FLOOR, CBA_PATH, CONSENT_FROM, MIAMI, SEARCH_MIN_ACCEPT, STANCE_WEIGHTS, UNDER_CONTRACT,
-                     UNTOUCHABLE_MARGIN, Assets, ConsentBook, acceptance, consent_basis, consent_chance, consent_options,
+from .trades import (ACCEPT_FLOOR, CBA_PATH, CONSENT_FROM, MIAMI, SEARCH_MIN_ACCEPT, SEASON_LABELS_FROM, STANCE_WEIGHTS,
+                     UNDER_CONTRACT, UNTOUCHABLE_MARGIN, Assets, ConsentBook, acceptance, consent_basis, consent_chance, consent_options,
                      consent_question, in_season_signings, market_signings, read_json, signing_block)
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -49,11 +52,23 @@ MAX_PER_WEEK = 2                     # calibrated against 16 real trades from De
 ROTATION_CANDIDATES = 9
 TRIPLE_CANDIDATES = 7               # judgement: a three-player package comes from a club's top seven by minutes
 MAX_PLAYERS = 5                     # up to three for two (the user's request, October 2026; was two for one)
-MATCH_PERCENT, MATCH_PLUS = 1.15, 100000
+MATCH_PERCENT, MATCH_PLUS = 1.15, 100000           # the 1999 rule every deal before AGREEMENT_MATCH_FROM used
+AGREEMENT_MATCH_FROM = SEASON_LABELS_FROM          # from this date the season's agreement's rule (`agreement.terms`, 125% from
+                                                   # 2005-06, as Miami's desk and the summer market read it); forward-only
 MIN_MUTUAL_GAIN = 0.06              # a club changes its roster only for a clear gain on its own objective (calibrated)
 STATUS_QUO = 1.15                   # judgement: a club values the player it has this much more than an equal arrival
 NEWLY_SIGNED_FROM = CONSENT_FROM    # from this date a deal never moves a player signed in the league year before he is tradable
                                     # (cbafaq05 Q88, `trades.signing_block`); forward-only: every deal before it replays unchanged
+
+
+def salary_rule(on, season, root=ROOT):
+    """(agreement, percent, plus) of the salary rule a deal on the date is searched under: the 1999 rule before
+    AGREEMENT_MATCH_FROM, then the season's agreement's (`agreement.terms`)."""
+    if on < AGREEMENT_MATCH_FROM:
+        return "1999", MATCH_PERCENT, MATCH_PLUS
+    from .agreement import terms
+    t = terms(season, root)
+    return t["agreement"], t["trade_match"], t["trade_plus"]
 
 
 def scan_days(start, until=None):
@@ -135,7 +150,8 @@ class LeagueTradeDesk:
             self._caps = {c: club_cap(c, self.book.season, self.book.cap, self.book.root) for c in self.rosters}
         if self.payroll[club] - out_salary + in_salary <= self._caps[club]:
             return True
-        return in_salary <= out_salary * MATCH_PERCENT + MATCH_PLUS
+        _, percent, plus = salary_rule(self.on, self.season, self.root)
+        return in_salary <= out_salary * percent + plus
 
     def _packages(self, club):
         """(players, salary) a club can offer: one or two of its rotation, and three from its top TRIPLE_CANDIDATES."""
@@ -231,11 +247,12 @@ class LeagueTradeDesk:
         return rows
 
     def packet(self, row):
+        from .seasons import season_of_date
         packet = {"event_id": row["id"], "date": row["date"],
                   "question": f"Do {row['a']['club']} and {row['b']['club']} trade {' and '.join(row['a']['sends'])} for {' and '.join(row['b']['sends'])}?",
                   "decider": f"{row['a']['club']} and {row['b']['club']} front offices (engine draw)",
                   "options": {"accept": row["both"], "decline": round(1 - row["both"], 6)},
-                  "basis": (f"gains on own objectives {row['gain']}; acceptance {row['accept']}; 1999 salary rule met; "
+                  "basis": (f"gains on own objectives {row['gain']}; acceptance {row['accept']}; {salary_rule(row['date'], season_of_date(row['date']))[0]} salary rule met; "
                             "symmetric league phase 3 (runtime/league_trades.py)")}
         rows = row.get("consent") or []
         if rows:

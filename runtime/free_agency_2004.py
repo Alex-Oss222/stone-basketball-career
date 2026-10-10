@@ -1277,6 +1277,10 @@ class Market:
 
     def trade_round(self, day):
         """The round's proposals (searched once and stored), each an engine draw; accepted deals move the contracts."""
+        from .agreement import terms
+        # The agreement whose rule `legal_trade` applied; the 2004 and 2005 summers' packets keep the 1999 wording they
+        # were drawn with (the 2005 search already applied the 2005 agreement's 125%).
+        rule = "1999" if YEAR <= 2005 else terms(NEW)["agreement"]
         path = self.root / DRAWS / f"{YEAR}-summer-trades-{day}.proposals.json"
         if self.store and path.is_file():
             chosen = _read(path)["deals"]
@@ -1298,7 +1302,7 @@ class Market:
                                             f"for {' and '.join(row['b']['sends'])} on {day}?",
                                 "decider": f"{row['a']['club']} and {row['b']['club']} front offices (engine draw)",
                                 "options": {"accept": row["both"], "decline": round(1 - row["both"], 6)},
-                                "basis": f"Gains on own objectives {row['gain']}; acceptance {row['accept']}; 1999 salary rule met "
+                                "basis": f"Gains on own objectives {row['gain']}; acceptance {row['accept']}; {rule} salary rule met "
                                          "(runtime/free_agency_2004.py summer trades)."})
             if answer != "accept":
                 continue

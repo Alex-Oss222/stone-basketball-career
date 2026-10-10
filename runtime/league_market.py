@@ -18,7 +18,8 @@ Each market day, in this order, for each real club (alphabetical, so the order i
    he beats its own weakest by CLAIM_MARGIN and the claim is legal), or clears into the pool.
 The pool: researched unsigned players fit to sign on the date (December 1 and monthly snapshots), the players left
 off rosters at activation, and players who cleared waivers or whose 10-day ran out, minus Miami's and anyone signed.
-Choices are by value (2002-03 production blended with closed 2003-04 games) times skill fit for the club's needs.
+Choices are by value (`trades.Assets.form_value`: last season's production, 2002-03 in the first season and then the
+previous simulated season, blended with this season's closed games) times skill fit for the club's needs.
 Every move is written to `league_moves.json` with its contract. Nothing here is a chance draw: these are routine
 front-office decisions, like Miami's own roster moves, on evidence known on the date.
 """
