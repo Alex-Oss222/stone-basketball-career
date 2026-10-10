@@ -2,9 +2,9 @@
 
 # Contract | Vladimir Radmanovic
 
-Known through: 2005-12-12. [Open interactive contract](radmavl01.html#contract) · [Contract history](radmavl01.html#contract-history)
+Known through: 2005-12-18. [Open interactive contract](radmavl01.html#contract) · [Contract history](radmavl01.html#contract-history)
 
-Vladimir Radmanovic: under contract. Evidence cutoff: 2005-12-12.
+Vladimir Radmanovic: under contract. Evidence cutoff: 2005-12-18.
 
 ## Current contract
 

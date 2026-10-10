@@ -2,9 +2,9 @@
 
 # Contract | Omar Cook
 
-Known through: 2005-12-12. [Open interactive contract](cookom01.html#contract) · [Contract history](cookom01.html#contract-history)
+Known through: 2005-12-18. [Open interactive contract](cookom01.html#contract) · [Contract history](cookom01.html#contract-history)
 
-Omar Cook: No verified contract record. Evidence cutoff: 2005-12-12.
+Omar Cook: No verified contract record. Evidence cutoff: 2005-12-18.
 
 ## Current contract
 

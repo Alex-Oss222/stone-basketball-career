@@ -2,9 +2,9 @@
 
 # Contract | Gerald Green
 
-Known through: 2005-12-12. [Open interactive contract](greenge01.html#contract) · [Contract history](greenge01.html#contract-history)
+Known through: 2005-12-18. [Open interactive contract](greenge01.html#contract) · [Contract history](greenge01.html#contract-history)
 
-Gerald Green: under contract. Evidence cutoff: 2005-12-12.
+Gerald Green: under contract. Evidence cutoff: 2005-12-18.
 
 ## Current contract
 

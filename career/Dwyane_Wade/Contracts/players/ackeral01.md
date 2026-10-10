@@ -2,9 +2,9 @@
 
 # Contract | Alex Acker
 
-Known through: 2005-12-12. [Open interactive contract](ackeral01.html#contract) · [Contract history](ackeral01.html#contract-history)
+Known through: 2005-12-18. [Open interactive contract](ackeral01.html#contract) · [Contract history](ackeral01.html#contract-history)
 
-Alex Acker: under contract. Evidence cutoff: 2005-12-12.
+Alex Acker: under contract. Evidence cutoff: 2005-12-18.
 
 ## Current contract
 

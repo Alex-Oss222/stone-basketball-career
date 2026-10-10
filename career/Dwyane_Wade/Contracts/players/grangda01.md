@@ -2,9 +2,9 @@
 
 # Contract | Danny Granger
 
-Known through: 2005-12-12. [Open interactive contract](grangda01.html#contract) · [Contract history](grangda01.html#contract-history)
+Known through: 2005-12-18. [Open interactive contract](grangda01.html#contract) · [Contract history](grangda01.html#contract-history)
 
-Danny Granger: under contract. Evidence cutoff: 2005-12-12.
+Danny Granger: under contract. Evidence cutoff: 2005-12-18.
 
 ## Current contract
 

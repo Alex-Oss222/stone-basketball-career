@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-12-12 · Miami Heat · active
+Career date: 2005-12-18 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-28 closed game records in 2005-06 through 2005-12-12. Competitions remain separate.
+32 closed game records in 2005-06 through 2005-12-18. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 21 | 36.9 | 26.0 | 6.9 | 4.3 | 2.0 | Complete |
+| regular | 25 | 36.8 | 25.5 | 6.6 | 4.2 | 1.8 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 184 | 323 | 0.570 | 30 | 61 | 0.492 |
+| regular | 218 | 389 | 0.560 | 36 | 75 | 0.480 |
 
 ## Closed source games
 
@@ -58,6 +58,10 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2005-12-07 | regular | San Antonio Spurs | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.md) |
 | 2005-12-09 | regular | Denver Nuggets | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.md) |
 | 2005-12-11 | regular | Washington Wizards | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.md) |
+| 2005-12-13 | regular | Chicago Bulls | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_3.md) |
+| 2005-12-14 | regular | Milwaukee Bucks | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_4.md) |
+| 2005-12-16 | regular | Philadelphia 76ers | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_1.md) |
+| 2005-12-17 | regular | Cleveland Cavaliers | Played | [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -129,4 +133,8 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_4.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_2/Game_4.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_3/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)
