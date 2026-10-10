@@ -1,4 +1,4 @@
-![Kris Humphries: Utah Jazz, Small forward](assets/krishumphries_header.svg)
+![Kris Humphries: Utah Jazz, Power forward](assets/krishumphries_header.svg)
 
 <!-- photo -->
 <img src="assets/silhouette.svg" alt="No sourced photo of Kris Humphries" width="160">
@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `krishumphries.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2005-12-31 · **Club on this date:** Utah Jazz · **Basis:** Utah Jazz: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** Unassigned · **Born:** 1985-02-06 · **Age on card date:** 20  
+**Position:** PF (Power forward) · **Jersey:** Unassigned · **Born:** 1985-02-06 · **Age on card date:** 20  
 **Registry ID:** `krishumphries`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
@@ -32,7 +32,7 @@ As of **2005-12-31**: 30 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 20 | UTAH | NBA | SF | 30 | 7 | 19.6 | 2.2 | 5.5 | .392 | 0.1 | 0.5 | .133 | 2.1 | 5.0 | .417 | .398 | 1.2 | 1.7 | .686 | 1.7 | 3.3 | 5.0 | 1.0 | 1.0 | 0.5 | 1.0 | 2.5 | 5.6 | .443 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 20 | UTAH | NBA | PF | 30 | 7 | 19.6 | 2.2 | 5.5 | .392 | 0.1 | 0.5 | .133 | 2.1 | 5.0 | .417 | .398 | 1.2 | 1.7 | .686 | 1.7 | 3.3 | 5.0 | 1.0 | 1.0 | 0.5 | 1.0 | 2.5 | 5.6 | .443 | — |
 
 ### Month
 
@@ -41,12 +41,12 @@ As of **2005-12-31**: 30 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 20 | UTAH | NBA | SF | 15 | 4 | 19.3 | 1.9 | 5.4 | .358 | 0.0 | 0.4 | .000 | 1.9 | 5.0 | .387 | .358 | 0.8 | 1.1 | .706 | 1.5 | 3.6 | 5.1 | 0.7 | 1.0 | 0.6 | 1.0 | 2.6 | 4.7 | .396 | — |
-| [December 2005](../2005-06/12_December/League_Stats.md) | 20 | UTAH | NBA | SF | 15 | 3 | 19.8 | 2.4 | 5.7 | .424 | 0.1 | 0.6 | .222 | 2.3 | 5.1 | .447 | .435 | 1.5 | 2.3 | .676 | 2.0 | 3.0 | 5.0 | 1.4 | 0.9 | 0.4 | 1.1 | 2.3 | 6.5 | .485 | — |
-| [January 2006](../2005-06/01_January/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006](../2005-06/02_February/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2006](../2005-06/03_March/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2006](../2005-06/04_April/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 20 | UTAH | NBA | PF | 15 | 4 | 19.3 | 1.9 | 5.4 | .358 | 0.0 | 0.4 | .000 | 1.9 | 5.0 | .387 | .358 | 0.8 | 1.1 | .706 | 1.5 | 3.6 | 5.1 | 0.7 | 1.0 | 0.6 | 1.0 | 2.6 | 4.7 | .396 | — |
+| [December 2005](../2005-06/12_December/League_Stats.md) | 20 | UTAH | NBA | PF | 15 | 3 | 19.8 | 2.4 | 5.7 | .424 | 0.1 | 0.6 | .222 | 2.3 | 5.1 | .447 | .435 | 1.5 | 2.3 | .676 | 2.0 | 3.0 | 5.0 | 1.4 | 0.9 | 0.4 | 1.1 | 2.3 | 6.5 | .485 | — |
+| [January 2006](../2005-06/01_January/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006](../2005-06/02_February/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006](../2005-06/03_March/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006](../2005-06/04_April/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 </details>
 
@@ -57,29 +57,29 @@ As of **2005-12-31**: 30 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 20 | UTAH | NBA | SF | 4 | 2 | 22.2 | 2.0 | 5.8 | .348 | 0.0 | 0.0 | N/A | 2.0 | 5.8 | .348 | .348 | 1.8 | 2.8 | .636 | 2.8 | 4.5 | 7.2 | 1.0 | 1.5 | 0.2 | 1.0 | 3.2 | 5.8 | .413 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 20 | UTAH | NBA | SF | 4 | 0 | 16.8 | 1.5 | 4.2 | .353 | 0.0 | 0.2 | .000 | 1.5 | 4.0 | .375 | .353 | 0.2 | 0.2 | 1.000 | 1.2 | 3.5 | 4.8 | 0.5 | 0.2 | 0.2 | 0.8 | 1.2 | 3.2 | .373 | — |
-| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 20 | UTAH | NBA | SF | 4 | 1 | 21.5 | 3.0 | 7.2 | .414 | 0.0 | 1.2 | .000 | 3.0 | 6.0 | .500 | .414 | 1.0 | 1.0 | 1.000 | 0.8 | 3.5 | 4.2 | 0.5 | 1.5 | 1.2 | 1.5 | 2.0 | 7.0 | .455 | — |
-| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 20 | UTAH | NBA | SF | 3 | 1 | 15.9 | 1.0 | 4.0 | .250 | 0.0 | 0.0 | N/A | 1.0 | 4.0 | .250 | .250 | 0.0 | 0.3 | .000 | 1.0 | 2.7 | 3.7 | 0.7 | 0.7 | 0.7 | 0.7 | 4.3 | 2.0 | .241 | — |
-| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 20 | UTAH | NBA | SF | 4 | 0 | 16.3 | 2.0 | 7.2 | .276 | 0.0 | 0.5 | .000 | 2.0 | 6.8 | .296 | .276 | 0.8 | 1.0 | .750 | 2.0 | 1.2 | 3.2 | 0.5 | 1.0 | 0.5 | 0.5 | 2.8 | 4.8 | .309 | — |
-| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 20 | UTAH | NBA | SF | 3 | 0 | 17.6 | 2.0 | 4.3 | .462 | 0.7 | 1.3 | .500 | 1.3 | 3.0 | .444 | .538 | 1.3 | 1.7 | .800 | 3.3 | 2.7 | 6.0 | 1.0 | 0.7 | 0.0 | 2.3 | 1.0 | 6.0 | .592 | — |
-| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 20 | UTAH | NBA | SF | 4 | 2 | 22.7 | 3.5 | 5.8 | .609 | 0.0 | 0.2 | .000 | 3.5 | 5.5 | .636 | .609 | 2.5 | 3.8 | .667 | 1.5 | 3.8 | 5.2 | 1.5 | 0.5 | 0.2 | 1.2 | 3.0 | 9.5 | .642 | — |
-| [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 20 | UTAH | NBA | SF | 4 | 1 | 22.1 | 2.0 | 5.0 | .400 | 0.0 | 0.5 | .000 | 2.0 | 4.5 | .444 | .400 | 1.5 | 2.5 | .600 | 1.5 | 4.2 | 5.8 | 2.5 | 1.5 | 0.8 | 0.5 | 2.2 | 5.5 | .451 | — |
-| [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [January 2006 week 4 (22 to 31)](../2005-06/01_January/Week_4/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006 week 1 (01 to 07)](../2005-06/02_February/Week_1/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006 week 2 (08 to 14)](../2005-06/02_February/Week_2/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006 week 3 (15 to 21)](../2005-06/02_February/Week_3/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2006 week 1 (01 to 07)](../2005-06/03_March/Week_1/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2006 week 2 (08 to 14)](../2005-06/03_March/Week_2/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2006 week 2 (08 to 14)](../2005-06/04_April/Week_2/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 20 | UTAH | NBA | PF | 4 | 2 | 22.2 | 2.0 | 5.8 | .348 | 0.0 | 0.0 | N/A | 2.0 | 5.8 | .348 | .348 | 1.8 | 2.8 | .636 | 2.8 | 4.5 | 7.2 | 1.0 | 1.5 | 0.2 | 1.0 | 3.2 | 5.8 | .413 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 20 | UTAH | NBA | PF | 4 | 0 | 16.8 | 1.5 | 4.2 | .353 | 0.0 | 0.2 | .000 | 1.5 | 4.0 | .375 | .353 | 0.2 | 0.2 | 1.000 | 1.2 | 3.5 | 4.8 | 0.5 | 0.2 | 0.2 | 0.8 | 1.2 | 3.2 | .373 | — |
+| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 20 | UTAH | NBA | PF | 4 | 1 | 21.5 | 3.0 | 7.2 | .414 | 0.0 | 1.2 | .000 | 3.0 | 6.0 | .500 | .414 | 1.0 | 1.0 | 1.000 | 0.8 | 3.5 | 4.2 | 0.5 | 1.5 | 1.2 | 1.5 | 2.0 | 7.0 | .455 | — |
+| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 20 | UTAH | NBA | PF | 3 | 1 | 15.9 | 1.0 | 4.0 | .250 | 0.0 | 0.0 | N/A | 1.0 | 4.0 | .250 | .250 | 0.0 | 0.3 | .000 | 1.0 | 2.7 | 3.7 | 0.7 | 0.7 | 0.7 | 0.7 | 4.3 | 2.0 | .241 | — |
+| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 20 | UTAH | NBA | PF | 4 | 0 | 16.3 | 2.0 | 7.2 | .276 | 0.0 | 0.5 | .000 | 2.0 | 6.8 | .296 | .276 | 0.8 | 1.0 | .750 | 2.0 | 1.2 | 3.2 | 0.5 | 1.0 | 0.5 | 0.5 | 2.8 | 4.8 | .309 | — |
+| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 20 | UTAH | NBA | PF | 3 | 0 | 17.6 | 2.0 | 4.3 | .462 | 0.7 | 1.3 | .500 | 1.3 | 3.0 | .444 | .538 | 1.3 | 1.7 | .800 | 3.3 | 2.7 | 6.0 | 1.0 | 0.7 | 0.0 | 2.3 | 1.0 | 6.0 | .592 | — |
+| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 20 | UTAH | NBA | PF | 4 | 2 | 22.7 | 3.5 | 5.8 | .609 | 0.0 | 0.2 | .000 | 3.5 | 5.5 | .636 | .609 | 2.5 | 3.8 | .667 | 1.5 | 3.8 | 5.2 | 1.5 | 0.5 | 0.2 | 1.2 | 3.0 | 9.5 | .642 | — |
+| [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 20 | UTAH | NBA | PF | 4 | 1 | 22.1 | 2.0 | 5.0 | .400 | 0.0 | 0.5 | .000 | 2.0 | 4.5 | .444 | .400 | 1.5 | 2.5 | .600 | 1.5 | 4.2 | 5.8 | 2.5 | 1.5 | 0.8 | 0.5 | 2.2 | 5.5 | .451 | — |
+| [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [January 2006 week 4 (22 to 31)](../2005-06/01_January/Week_4/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 1 (01 to 07)](../2005-06/02_February/Week_1/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 2 (08 to 14)](../2005-06/02_February/Week_2/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 3 (15 to 21)](../2005-06/02_February/Week_3/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 1 (01 to 07)](../2005-06/03_March/Week_1/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 2 (08 to 14)](../2005-06/03_March/Week_2/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006 week 2 (08 to 14)](../2005-06/04_April/Week_2/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 20 | UTAH | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 </details>
 

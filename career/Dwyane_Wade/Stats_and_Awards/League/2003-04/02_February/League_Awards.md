@@ -4,7 +4,7 @@
 
 2003-04 · Calendar coverage: February 1-29, 2004
 
-As of April 16, 2004: 4 award decision(s) closed, announced March 2, 2004.
+As of June 30, 2004: 4 award decision(s) closed, announced March 2, 2004; 10 Player of the Week decision(s) closed on this month's week pages.
 
 Official award window and announcement date: listed with each decision below.
 

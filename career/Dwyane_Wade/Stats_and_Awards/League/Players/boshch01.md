@@ -124,7 +124,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (2 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (3 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -136,4 +136,5 @@ Simulated honors and shortlist placings through 2005-12-31, from closed award de
 | East Player of the Week | 2004-12-20 to 2004-12-26 | 2004-12-27 | Shortlist, No. 2 | [Decision](../2004-05/12_December/Week_4/League_Awards.md) |
 | East Player of the Week | 2005-01-03 to 2005-01-09 | 2005-01-10 | **Winner** | [Decision](../2004-05/01_January/Week_2/League_Awards.md) |
 | East Player of the Month | 2005-01-01 to 2005-01-31 | 2005-02-02 | Shortlist, No. 3 | [Decision](../2004-05/01_January/League_Awards.md) |
+| East All-Star (reserve) | 2004-11-02 to 2005-02-08 | 2005-02-08 | **Selected** | [Decision](../2004-05/All_Star.md#all-stars) |
 | East Player of the Week | 2005-03-07 to 2005-03-13 | 2005-03-14 | Shortlist, No. 2 | [Decision](../2004-05/03_March/Week_2/League_Awards.md) |

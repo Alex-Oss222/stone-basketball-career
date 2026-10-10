@@ -124,15 +124,17 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (4 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (6 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
 | East Player of the Week | 2003-12-08 to 2003-12-14 | 2003-12-15 | **Winner** | [Decision](../2003-04/12_December/Week_2/League_Awards.md) |
 | East Player of the Month | 2003-12-01 to 2003-12-31 | 2004-01-02 | Shortlist, No. 2 | [Decision](../2003-04/12_December/League_Awards.md) |
+| East All-Star (starter) | 2003-10-28 to 2004-01-29 | 2004-01-29 | **Selected** | [Decision](../2003-04/All_Star.md#all-stars) |
 | East Player of the Week | 2004-03-15 to 2004-03-21 | 2004-03-22 | **Winner** | [Decision](../2003-04/03_March/Week_3/League_Awards.md) |
 | East Player of the Week | 2004-04-05 to 2004-04-11 | 2004-04-12 | Shortlist, No. 2 | [Decision](../2003-04/04_April/Week_2/League_Awards.md) |
 | All-NBA Second Team | 2003-10-28 to 2004-04-14 | 2004-04-25 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
 | East Player of the Week | 2004-12-27 to 2005-01-02 | 2005-01-03 | **Winner** | [Decision](../2004-05/01_January/Week_1/League_Awards.md) |
+| East All-Star (starter) | 2004-11-02 to 2005-02-03 | 2005-02-03 | **Selected** | [Decision](../2004-05/All_Star.md#all-stars) |
 | East Player of the Week | 2005-03-28 to 2005-04-03 | 2005-04-04 | Shortlist, No. 3 | [Decision](../2004-05/04_April/Week_1/League_Awards.md) |
 | East Player of the Week | 2005-11-21 to 2005-11-27 | 2005-11-28 | Shortlist, No. 3 | [Decision](../2005-06/11_November/Week_4/League_Awards.md) |

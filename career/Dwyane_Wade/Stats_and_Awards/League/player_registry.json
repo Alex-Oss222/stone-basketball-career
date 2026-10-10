@@ -6259,7 +6259,7 @@
     },
     {
       "name": "Antonio Burks",
-      "position": "SF",
+      "position": "PG",
       "team_name": "Dallas Mavericks",
       "team_code": "DAL",
       "conference": "West",
@@ -6269,11 +6269,12 @@
       "birth_date": "1980-02-25",
       "registry_id": "antonioburks",
       "added_on": "2004-11-02",
-      "added_basis": "first closed 2004-05 appearance, Dallas Mavericks, 2004-11-02-sacramento-kings-at-dallas-mavericks"
+      "added_basis": "first closed 2004-05 appearance, Dallas Mavericks, 2004-11-02-sacramento-kings-at-dallas-mavericks",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Beno Udrih",
-      "position": "SF",
+      "position": "PG",
       "team_name": "Sacramento Kings",
       "team_code": "SAC",
       "conference": "West",
@@ -6283,7 +6284,8 @@
       "birth_date": "1982-07-05",
       "registry_id": "benoudrih",
       "added_on": "2004-11-02",
-      "added_basis": "first closed 2004-05 appearance, Sacramento Kings, 2004-11-02-sacramento-kings-at-dallas-mavericks"
+      "added_basis": "first closed 2004-05 appearance, Sacramento Kings, 2004-11-02-sacramento-kings-at-dallas-mavericks",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Billy Thomas",
@@ -6315,7 +6317,7 @@
     },
     {
       "name": "James Thomas",
-      "position": "SF",
+      "position": "PF",
       "team_name": "Denver Nuggets",
       "team_code": "DEN",
       "conference": "West",
@@ -6325,11 +6327,12 @@
       "birth_date": "1980-11-22",
       "registry_id": "jamesthomas",
       "added_on": "2004-11-02",
-      "added_basis": "first closed 2004-05 appearance, Denver Nuggets, 2004-11-02-denver-nuggets-at-los-angeles-lakers"
+      "added_basis": "first closed 2004-05 appearance, Denver Nuggets, 2004-11-02-denver-nuggets-at-los-angeles-lakers",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Jared Reiner",
-      "position": "SF",
+      "position": "C",
       "team_name": "Sacramento Kings",
       "team_code": "SAC",
       "conference": "West",
@@ -6339,7 +6342,8 @@
       "birth_date": "1982-04-08",
       "registry_id": "jaredreiner",
       "added_on": "2004-11-02",
-      "added_basis": "first closed 2004-05 appearance, Sacramento Kings, 2004-11-02-sacramento-kings-at-dallas-mavericks"
+      "added_basis": "first closed 2004-05 appearance, Sacramento Kings, 2004-11-02-sacramento-kings-at-dallas-mavericks",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Justin Reed",
@@ -6357,7 +6361,7 @@
     },
     {
       "name": "Kris Humphries",
-      "position": "SF",
+      "position": "PF",
       "team_name": "Detroit Pistons",
       "team_code": "DET",
       "conference": "East",
@@ -6367,7 +6371,8 @@
       "birth_date": "1985-02-06",
       "registry_id": "krishumphries",
       "added_on": "2004-11-02",
-      "added_basis": "first closed 2004-05 appearance, Detroit Pistons, 2004-11-02-houston-rockets-at-detroit-pistons"
+      "added_basis": "first closed 2004-05 appearance, Detroit Pistons, 2004-11-02-houston-rockets-at-detroit-pistons",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Laron Profit",
@@ -6399,7 +6404,7 @@
     },
     {
       "name": "Rafael Araújo",
-      "position": "SF",
+      "position": "C",
       "team_name": "Denver Nuggets",
       "team_code": "DEN",
       "conference": "West",
@@ -6409,11 +6414,12 @@
       "birth_date": "1980-08-12",
       "registry_id": "rafaelarajo",
       "added_on": "2004-11-02",
-      "added_basis": "first closed 2004-05 appearance, Denver Nuggets, 2004-11-02-denver-nuggets-at-los-angeles-lakers"
+      "added_basis": "first closed 2004-05 appearance, Denver Nuggets, 2004-11-02-denver-nuggets-at-los-angeles-lakers",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Sasha Vujačić",
-      "position": "SF",
+      "position": "SG",
       "team_name": "Sacramento Kings",
       "team_code": "SAC",
       "conference": "West",
@@ -6423,11 +6429,12 @@
       "birth_date": "1984-03-08",
       "registry_id": "sashavujai",
       "added_on": "2004-11-02",
-      "added_basis": "first closed 2004-05 appearance, Sacramento Kings, 2004-11-02-sacramento-kings-at-dallas-mavericks"
+      "added_basis": "first closed 2004-05 appearance, Sacramento Kings, 2004-11-02-sacramento-kings-at-dallas-mavericks",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Sean Marks",
-      "position": "SF",
+      "position": "PF",
       "team_name": "Los Angeles Lakers",
       "team_code": "LAL",
       "conference": "West",
@@ -6437,11 +6444,12 @@
       "birth_date": "1975-08-23",
       "registry_id": "seanmarks",
       "added_on": "2004-11-02",
-      "added_basis": "first closed 2004-05 appearance, Los Angeles Lakers, 2004-11-02-denver-nuggets-at-los-angeles-lakers"
+      "added_basis": "first closed 2004-05 appearance, Los Angeles Lakers, 2004-11-02-denver-nuggets-at-los-angeles-lakers",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Sebastian Telfair",
-      "position": "SF",
+      "position": "PG",
       "team_name": "Detroit Pistons",
       "team_code": "DET",
       "conference": "East",
@@ -6451,7 +6459,8 @@
       "birth_date": "1985-06-09",
       "registry_id": "sebastiantelfair",
       "added_on": "2004-11-02",
-      "added_basis": "first closed 2004-05 appearance, Detroit Pistons, 2004-11-02-houston-rockets-at-detroit-pistons"
+      "added_basis": "first closed 2004-05 appearance, Detroit Pistons, 2004-11-02-houston-rockets-at-detroit-pistons",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Trevor Ariza",
@@ -6483,7 +6492,7 @@
     },
     {
       "name": "Al Jefferson",
-      "position": "SF",
+      "position": "PF",
       "team_name": "Toronto Raptors",
       "team_code": "TOR",
       "conference": "East",
@@ -6493,11 +6502,12 @@
       "birth_date": "1985-01-04",
       "registry_id": "aljefferson",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Toronto Raptors, 2004-11-03-houston-rockets-at-toronto-raptors"
+      "added_basis": "first closed 2004-05 appearance, Toronto Raptors, 2004-11-03-houston-rockets-at-toronto-raptors",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Aleksandar Radojević",
-      "position": "SF",
+      "position": "C",
       "team_name": "Toronto Raptors",
       "team_code": "TOR",
       "conference": "East",
@@ -6507,11 +6517,12 @@
       "birth_date": "1976-08-08",
       "registry_id": "aleksandarradojevi",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Toronto Raptors, 2004-11-03-houston-rockets-at-toronto-raptors"
+      "added_basis": "first closed 2004-05 appearance, Toronto Raptors, 2004-11-03-houston-rockets-at-toronto-raptors",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Anderson Varejão",
-      "position": "SF",
+      "position": "PF",
       "team_name": "Golden State Warriors",
       "team_code": "GS",
       "conference": "West",
@@ -6521,11 +6532,12 @@
       "birth_date": "1982-09-28",
       "registry_id": "andersonvarejo",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Golden State Warriors, 2004-11-03-portland-trail-blazers-at-golden-state-warriors"
+      "added_basis": "first closed 2004-05 appearance, Golden State Warriors, 2004-11-03-portland-trail-blazers-at-golden-state-warriors",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Andre Barrett",
-      "position": "SF",
+      "position": "PG",
       "team_name": "Atlanta Hawks",
       "team_code": "ATL",
       "conference": "East",
@@ -6535,11 +6547,12 @@
       "birth_date": "1982-02-21",
       "registry_id": "andrebarrett",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Atlanta Hawks, 2004-11-03-atlanta-hawks-at-phoenix-suns"
+      "added_basis": "first closed 2004-05 appearance, Atlanta Hawks, 2004-11-03-atlanta-hawks-at-phoenix-suns",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Andre Iguodala",
-      "position": "SF",
+      "position": "SG",
       "team_name": "New York Knicks",
       "team_code": "NY",
       "conference": "East",
@@ -6549,11 +6562,12 @@
       "birth_date": "1984-01-28",
       "registry_id": "andreiguodala",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, New York Knicks, 2004-11-03-new-york-knicks-at-minnesota-timberwolves"
+      "added_basis": "first closed 2004-05 appearance, New York Knicks, 2004-11-03-new-york-knicks-at-minnesota-timberwolves",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Andris Biedriņš",
-      "position": "SF",
+      "position": "C",
       "team_name": "Los Angeles Clippers",
       "team_code": "LAC",
       "conference": "West",
@@ -6563,7 +6577,8 @@
       "birth_date": "1986-04-02",
       "registry_id": "andrisbiedri",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Los Angeles Clippers, 2004-11-03-seattle-supersonics-at-los-angeles-clippers"
+      "added_basis": "first closed 2004-05 appearance, Los Angeles Clippers, 2004-11-03-seattle-supersonics-at-los-angeles-clippers",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Andrés Nocioni",
@@ -6581,7 +6596,7 @@
     },
     {
       "name": "Anthony Miller",
-      "position": "SF",
+      "position": "PF",
       "team_name": "San Antonio Spurs",
       "team_code": "SA",
       "conference": "West",
@@ -6591,11 +6606,12 @@
       "birth_date": "1971-10-22",
       "registry_id": "anthonymiller",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, San Antonio Spurs, 2004-11-03-sacramento-kings-at-san-antonio-spurs"
+      "added_basis": "first closed 2004-05 appearance, San Antonio Spurs, 2004-11-03-sacramento-kings-at-san-antonio-spurs",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Ben Gordon",
-      "position": "SF",
+      "position": "SG",
       "team_name": "Utah Jazz",
       "team_code": "UTAH",
       "conference": "West",
@@ -6605,11 +6621,12 @@
       "birth_date": "1983-04-04",
       "registry_id": "bengordon",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Utah Jazz, 2004-11-03-los-angeles-lakers-at-utah-jazz"
+      "added_basis": "first closed 2004-05 appearance, Utah Jazz, 2004-11-03-los-angeles-lakers-at-utah-jazz",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Brandin Knight",
-      "position": "SF",
+      "position": "PG",
       "team_name": "Minnesota Timberwolves",
       "team_code": "MIN",
       "conference": "West",
@@ -6619,11 +6636,12 @@
       "birth_date": "1981-12-16",
       "registry_id": "brandinknight",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Minnesota Timberwolves, 2004-11-03-new-york-knicks-at-minnesota-timberwolves"
+      "added_basis": "first closed 2004-05 appearance, Minnesota Timberwolves, 2004-11-03-new-york-knicks-at-minnesota-timberwolves",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Corsley Edwards",
-      "position": "SF",
+      "position": "C",
       "team_name": "Seattle SuperSonics",
       "team_code": "SEA",
       "conference": "West",
@@ -6633,11 +6651,12 @@
       "birth_date": "1979-03-05",
       "registry_id": "corsleyedwards",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Seattle SuperSonics, 2004-11-03-seattle-supersonics-at-los-angeles-clippers"
+      "added_basis": "first closed 2004-05 appearance, Seattle SuperSonics, 2004-11-03-seattle-supersonics-at-los-angeles-clippers",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Cory Alexander",
-      "position": "SF",
+      "position": "SG",
       "team_name": "Minnesota Timberwolves",
       "team_code": "MIN",
       "conference": "West",
@@ -6647,11 +6666,12 @@
       "birth_date": "1973-06-22",
       "registry_id": "coryalexander",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Minnesota Timberwolves, 2004-11-03-new-york-knicks-at-minnesota-timberwolves"
+      "added_basis": "first closed 2004-05 appearance, Minnesota Timberwolves, 2004-11-03-new-york-knicks-at-minnesota-timberwolves",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "D.J. Mbenga",
-      "position": "SF",
+      "position": "C",
       "team_name": "San Antonio Spurs",
       "team_code": "SA",
       "conference": "West",
@@ -6661,11 +6681,12 @@
       "birth_date": "1980-12-30",
       "registry_id": "djmbenga",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, San Antonio Spurs, 2004-11-03-sacramento-kings-at-san-antonio-spurs"
+      "added_basis": "first closed 2004-05 appearance, San Antonio Spurs, 2004-11-03-sacramento-kings-at-san-antonio-spurs",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "David Harrison",
-      "position": "SF",
+      "position": "C",
       "team_name": "Orlando Magic",
       "team_code": "ORL",
       "conference": "East",
@@ -6675,11 +6696,12 @@
       "birth_date": "1982-08-15",
       "registry_id": "davidharrison",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Orlando Magic, 2004-11-03-milwaukee-bucks-at-orlando-magic"
+      "added_basis": "first closed 2004-05 appearance, Orlando Magic, 2004-11-03-milwaukee-bucks-at-orlando-magic",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Devin Harris",
-      "position": "SF",
+      "position": "PG",
       "team_name": "Cleveland Cavaliers",
       "team_code": "CLE",
       "conference": "East",
@@ -6689,11 +6711,12 @@
       "birth_date": "1983-02-27",
       "registry_id": "devinharris",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Cleveland Cavaliers, 2004-11-03-indiana-pacers-at-cleveland-cavaliers"
+      "added_basis": "first closed 2004-05 appearance, Cleveland Cavaliers, 2004-11-03-indiana-pacers-at-cleveland-cavaliers",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Donta Smith",
-      "position": "SF",
+      "position": "SG",
       "team_name": "Washington Wizards",
       "team_code": "WSH",
       "conference": "East",
@@ -6703,7 +6726,8 @@
       "birth_date": "1983-11-27",
       "registry_id": "dontasmith",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Washington Wizards, 2004-11-03-washington-wizards-at-memphis-grizzlies"
+      "added_basis": "first closed 2004-05 appearance, Washington Wizards, 2004-11-03-washington-wizards-at-memphis-grizzlies",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Dorell Wright",
@@ -6735,7 +6759,7 @@
     },
     {
       "name": "Emeka Okafor",
-      "position": "SF",
+      "position": "PF",
       "team_name": "Washington Wizards",
       "team_code": "WSH",
       "conference": "East",
@@ -6745,7 +6769,8 @@
       "birth_date": "1982-09-28",
       "registry_id": "emekaokafor",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Washington Wizards, 2004-11-03-washington-wizards-at-memphis-grizzlies"
+      "added_basis": "first closed 2004-05 appearance, Washington Wizards, 2004-11-03-washington-wizards-at-memphis-grizzlies",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Erik Daniels",
@@ -6791,7 +6816,7 @@
     },
     {
       "name": "Ha Seung-Jin",
-      "position": "SF",
+      "position": "C",
       "team_name": "Seattle SuperSonics",
       "team_code": "SEA",
       "conference": "West",
@@ -6801,11 +6826,12 @@
       "birth_date": "1985-08-04",
       "registry_id": "haseungjin",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Seattle SuperSonics, 2004-11-03-seattle-supersonics-at-los-angeles-clippers"
+      "added_basis": "first closed 2004-05 appearance, Seattle SuperSonics, 2004-11-03-seattle-supersonics-at-los-angeles-clippers",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Horace Jenkins",
-      "position": "SF",
+      "position": "PG",
       "team_name": "Golden State Warriors",
       "team_code": "GS",
       "conference": "West",
@@ -6815,11 +6841,12 @@
       "birth_date": "1974-10-14",
       "registry_id": "horacejenkins",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Golden State Warriors, 2004-11-03-portland-trail-blazers-at-golden-state-warriors"
+      "added_basis": "first closed 2004-05 appearance, Golden State Warriors, 2004-11-03-portland-trail-blazers-at-golden-state-warriors",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Ibo Kutluay",
-      "position": "SF",
+      "position": "SG",
       "team_name": "Minnesota Timberwolves",
       "team_code": "MIN",
       "conference": "West",
@@ -6829,11 +6856,12 @@
       "birth_date": "1974-07-01",
       "registry_id": "ibokutluay",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Minnesota Timberwolves, 2004-11-03-new-york-knicks-at-minnesota-timberwolves"
+      "added_basis": "first closed 2004-05 appearance, Minnesota Timberwolves, 2004-11-03-new-york-knicks-at-minnesota-timberwolves",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "J.R. Smith",
-      "position": "SF",
+      "position": "SG",
       "team_name": "Memphis Grizzlies",
       "team_code": "MEM",
       "conference": "West",
@@ -6843,11 +6871,12 @@
       "birth_date": "1985-09-09",
       "registry_id": "jrsmith",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Memphis Grizzlies, 2004-11-03-washington-wizards-at-memphis-grizzlies"
+      "added_basis": "first closed 2004-05 appearance, Memphis Grizzlies, 2004-11-03-washington-wizards-at-memphis-grizzlies",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Jackie Butler",
-      "position": "SF",
+      "position": "C",
       "team_name": "Philadelphia 76ers",
       "team_code": "PHI",
       "conference": "East",
@@ -6857,11 +6886,12 @@
       "birth_date": "1985-03-10",
       "registry_id": "jackiebutler",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Philadelphia 76ers, 2004-11-03-philadelphia-76ers-at-boston-celtics"
+      "added_basis": "first closed 2004-05 appearance, Philadelphia 76ers, 2004-11-03-philadelphia-76ers-at-boston-celtics",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Jackson Vroman",
-      "position": "SF",
+      "position": "C",
       "team_name": "Milwaukee Bucks",
       "team_code": "MIL",
       "conference": "East",
@@ -6871,11 +6901,12 @@
       "birth_date": "1981-06-06",
       "registry_id": "jacksonvroman",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Milwaukee Bucks, 2004-11-03-milwaukee-bucks-at-orlando-magic"
+      "added_basis": "first closed 2004-05 appearance, Milwaukee Bucks, 2004-11-03-milwaukee-bucks-at-orlando-magic",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Jameer Nelson",
-      "position": "SF",
+      "position": "PG",
       "team_name": "Seattle SuperSonics",
       "team_code": "SEA",
       "conference": "West",
@@ -6885,11 +6916,12 @@
       "birth_date": "1982-02-09",
       "registry_id": "jameernelson",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Seattle SuperSonics, 2004-11-03-seattle-supersonics-at-los-angeles-clippers"
+      "added_basis": "first closed 2004-05 appearance, Seattle SuperSonics, 2004-11-03-seattle-supersonics-at-los-angeles-clippers",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Josh Childress",
-      "position": "SF",
+      "position": "SG",
       "team_name": "Phoenix Suns",
       "team_code": "PHX",
       "conference": "West",
@@ -6899,7 +6931,8 @@
       "birth_date": "1983-06-20",
       "registry_id": "joshchildress",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Phoenix Suns, 2004-11-03-atlanta-hawks-at-phoenix-suns"
+      "added_basis": "first closed 2004-05 appearance, Phoenix Suns, 2004-11-03-atlanta-hawks-at-phoenix-suns",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Josh Smith",
@@ -6917,7 +6950,7 @@
     },
     {
       "name": "Kevin Martin",
-      "position": "SF",
+      "position": "PG",
       "team_name": "New York Knicks",
       "team_code": "NY",
       "conference": "East",
@@ -6927,11 +6960,12 @@
       "birth_date": "1983-02-01",
       "registry_id": "kevinmartin",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, New York Knicks, 2004-11-03-new-york-knicks-at-minnesota-timberwolves"
+      "added_basis": "first closed 2004-05 appearance, New York Knicks, 2004-11-03-new-york-knicks-at-minnesota-timberwolves",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Lionel Chalmers",
-      "position": "SF",
+      "position": "PG",
       "team_name": "Golden State Warriors",
       "team_code": "GS",
       "conference": "West",
@@ -6941,11 +6975,12 @@
       "birth_date": "1980-11-10",
       "registry_id": "lionelchalmers",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Golden State Warriors, 2004-11-03-portland-trail-blazers-at-golden-state-warriors"
+      "added_basis": "first closed 2004-05 appearance, Golden State Warriors, 2004-11-03-portland-trail-blazers-at-golden-state-warriors",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Luis Flores",
-      "position": "SF",
+      "position": "PG",
       "team_name": "Atlanta Hawks",
       "team_code": "ATL",
       "conference": "East",
@@ -6955,7 +6990,8 @@
       "birth_date": "1981-04-11",
       "registry_id": "luisflores",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Atlanta Hawks, 2004-11-03-atlanta-hawks-at-phoenix-suns"
+      "added_basis": "first closed 2004-05 appearance, Atlanta Hawks, 2004-11-03-atlanta-hawks-at-phoenix-suns",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Luke Jackson",
@@ -7001,7 +7037,7 @@
     },
     {
       "name": "Matt Freije",
-      "position": "SF",
+      "position": "PF",
       "team_name": "Toronto Raptors",
       "team_code": "TOR",
       "conference": "East",
@@ -7011,7 +7047,8 @@
       "birth_date": "1981-10-02",
       "registry_id": "mattfreije",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Toronto Raptors, 2004-11-03-houston-rockets-at-toronto-raptors"
+      "added_basis": "first closed 2004-05 appearance, Toronto Raptors, 2004-11-03-houston-rockets-at-toronto-raptors",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Maurice Baker",
@@ -7029,7 +7066,7 @@
     },
     {
       "name": "Nenad Krstić",
-      "position": "SF",
+      "position": "PF",
       "team_name": "New York Knicks",
       "team_code": "NY",
       "conference": "East",
@@ -7039,11 +7076,12 @@
       "birth_date": "1983-07-25",
       "registry_id": "nenadkrsti",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, New York Knicks, 2004-11-03-new-york-knicks-at-minnesota-timberwolves"
+      "added_basis": "first closed 2004-05 appearance, New York Knicks, 2004-11-03-new-york-knicks-at-minnesota-timberwolves",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Obinna Ekezie",
-      "position": "SF",
+      "position": "C",
       "team_name": "Toronto Raptors",
       "team_code": "TOR",
       "conference": "East",
@@ -7053,11 +7091,12 @@
       "birth_date": "1975-08-22",
       "registry_id": "obinnaekezie",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Toronto Raptors, 2004-11-03-houston-rockets-at-toronto-raptors"
+      "added_basis": "first closed 2004-05 appearance, Toronto Raptors, 2004-11-03-houston-rockets-at-toronto-raptors",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Pape Sow",
-      "position": "SF",
+      "position": "C",
       "team_name": "Milwaukee Bucks",
       "team_code": "MIL",
       "conference": "East",
@@ -7067,11 +7106,12 @@
       "birth_date": "1981-11-22",
       "registry_id": "papesow",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Milwaukee Bucks, 2004-11-03-milwaukee-bucks-at-orlando-magic"
+      "added_basis": "first closed 2004-05 appearance, Milwaukee Bucks, 2004-11-03-milwaukee-bucks-at-orlando-magic",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Pavel Podkolzin",
-      "position": "SF",
+      "position": "C",
       "team_name": "Philadelphia 76ers",
       "team_code": "PHI",
       "conference": "East",
@@ -7081,11 +7121,12 @@
       "birth_date": "1985-01-15",
       "registry_id": "pavelpodkolzin",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Philadelphia 76ers, 2004-11-03-philadelphia-76ers-at-boston-celtics"
+      "added_basis": "first closed 2004-05 appearance, Philadelphia 76ers, 2004-11-03-philadelphia-76ers-at-boston-celtics",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Peter John Ramos",
-      "position": "SF",
+      "position": "C",
       "team_name": "Boston Celtics",
       "team_code": "BOS",
       "conference": "East",
@@ -7095,11 +7136,12 @@
       "birth_date": "1985-05-13",
       "registry_id": "peterjohnramos",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Boston Celtics, 2004-11-03-philadelphia-76ers-at-boston-celtics"
+      "added_basis": "first closed 2004-05 appearance, Boston Celtics, 2004-11-03-philadelphia-76ers-at-boston-celtics",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Robert Swift",
-      "position": "SF",
+      "position": "C",
       "team_name": "New Orleans Hornets",
       "team_code": "NO",
       "conference": "West",
@@ -7109,11 +7151,12 @@
       "birth_date": "1985-12-03",
       "registry_id": "robertswift",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, New Orleans Hornets, 2004-11-03-dallas-mavericks-at-new-orleans-hornets"
+      "added_basis": "first closed 2004-05 appearance, New Orleans Hornets, 2004-11-03-dallas-mavericks-at-new-orleans-hornets",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Tony Allen",
-      "position": "SF",
+      "position": "SG",
       "team_name": "San Antonio Spurs",
       "team_code": "SA",
       "conference": "West",
@@ -7123,11 +7166,12 @@
       "birth_date": "1982-01-11",
       "registry_id": "tonyallen",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, San Antonio Spurs, 2004-11-03-sacramento-kings-at-san-antonio-spurs"
+      "added_basis": "first closed 2004-05 appearance, San Antonio Spurs, 2004-11-03-sacramento-kings-at-san-antonio-spurs",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Tony Bobbitt",
-      "position": "SF",
+      "position": "SG",
       "team_name": "Atlanta Hawks",
       "team_code": "ATL",
       "conference": "East",
@@ -7137,11 +7181,12 @@
       "birth_date": "1979-10-22",
       "registry_id": "tonybobbitt",
       "added_on": "2004-11-03",
-      "added_basis": "first closed 2004-05 appearance, Atlanta Hawks, 2004-11-03-atlanta-hawks-at-phoenix-suns"
+      "added_basis": "first closed 2004-05 appearance, Atlanta Hawks, 2004-11-03-atlanta-hawks-at-phoenix-suns",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Shaun Livingston",
-      "position": "SF",
+      "position": "PG",
       "team_name": "Charlotte Bobcats",
       "team_code": null,
       "conference": "East",
@@ -7151,11 +7196,12 @@
       "birth_date": "1985-09-11",
       "registry_id": "shaunlivingston",
       "added_on": "2004-11-04",
-      "added_basis": "first closed 2004-05 appearance, Charlotte Bobcats, 2004-11-04-washington-wizards-at-charlotte-bobcats"
+      "added_basis": "first closed 2004-05 appearance, Charlotte Bobcats, 2004-11-04-washington-wizards-at-charlotte-bobcats",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Andre Emmett",
-      "position": "SF",
+      "position": "SG",
       "team_name": "Chicago Bulls",
       "team_code": "CHI",
       "conference": "East",
@@ -7165,11 +7211,12 @@
       "birth_date": "1982-08-27",
       "registry_id": "andreemmett",
       "added_on": "2004-11-05",
-      "added_basis": "first closed 2004-05 appearance, Chicago Bulls, 2004-11-05-new-jersey-nets-at-chicago-bulls"
+      "added_basis": "first closed 2004-05 appearance, Chicago Bulls, 2004-11-05-new-jersey-nets-at-chicago-bulls",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Kirk Snyder",
-      "position": "SF",
+      "position": "SG",
       "team_name": "Chicago Bulls",
       "team_code": "CHI",
       "conference": "East",
@@ -7179,7 +7226,8 @@
       "birth_date": "1983-06-05",
       "registry_id": "kirksnyder",
       "added_on": "2004-11-05",
-      "added_basis": "first closed 2004-05 appearance, Chicago Bulls, 2004-11-05-new-jersey-nets-at-chicago-bulls"
+      "added_basis": "first closed 2004-05 appearance, Chicago Bulls, 2004-11-05-new-jersey-nets-at-chicago-bulls",
+      "position_basis": "library/2004/league/nba_2004_05_team_rosters.json"
     },
     {
       "name": "Maurice Evans",
@@ -7501,7 +7549,8 @@
       "birth_date": "1982-08-12",
       "registry_id": "fitchge01",
       "added_on": "2005-11-01",
-      "added_basis": "first closed 2005-06 appearance, New Orleans/Oklahoma City Hornets, 2005-11-01-sacramento-kings-at-new-orleans-oklahoma-city-hornets"
+      "added_basis": "first closed 2005-06 appearance, New Orleans/Oklahoma City Hornets, 2005-11-01-sacramento-kings-at-new-orleans-oklahoma-city-hornets",
+      "position_basis": "unknown"
     },
     {
       "name": "Aaron Miles",
@@ -8275,7 +8324,7 @@
     },
     {
       "name": "simiewa01",
-      "position": "SF",
+      "position": "F",
       "team_name": "Toronto Raptors",
       "team_code": "TOR",
       "conference": "East",
@@ -8285,7 +8334,8 @@
       "birth_date": "1983-03-09",
       "registry_id": "simiewa01",
       "added_on": "2005-11-02",
-      "added_basis": "first closed 2005-06 appearance, Toronto Raptors, 2005-11-02-washington-wizards-at-toronto-raptors"
+      "added_basis": "first closed 2005-06 appearance, Toronto Raptors, 2005-11-02-washington-wizards-at-toronto-raptors",
+      "position_basis": "library/2005/league/nba_2005_draft_class.json"
     },
     {
       "name": "walshma01",
@@ -8299,7 +8349,8 @@
       "birth_date": "1982-12-02",
       "registry_id": "walshma01",
       "added_on": "2005-11-02",
-      "added_basis": "first closed 2005-06 appearance, Charlotte Bobcats, 2005-11-02-charlotte-bobcats-at-chicago-bulls"
+      "added_basis": "first closed 2005-06 appearance, Charlotte Bobcats, 2005-11-02-charlotte-bobcats-at-chicago-bulls",
+      "position_basis": "unknown"
     },
     {
       "name": "Šarūnas Jasikevičius",

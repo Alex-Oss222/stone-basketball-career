@@ -154,7 +154,3 @@ No game records in this scope.
 | Clutch, on/off, lineup combinations, assisted baskets | Unavailable in current box feed | Timed events, score state, substitutions and possession attribution |
 | Deflections, charges, contested shots, box outs | Unavailable in current box feed | Observed hustle/defensive events |
 | League rank, percentile, relative TS%; impact models | Not derived by this report | Same-period simulated league baseline, eligibility rules and documented model |
-
-### Awards
-
-No NBA awards recorded for this period. [Conference and league award record](../../../League/2003-04/10_October/Week_3/League_Awards.md).

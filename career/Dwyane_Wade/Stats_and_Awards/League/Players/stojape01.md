@@ -125,7 +125,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (3 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (5 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -134,6 +134,7 @@ Simulated honors and shortlist placings through 2005-12-31, from closed award de
 | West Player of the Week | 2004-01-05 to 2004-01-11 | 2004-01-12 | **Winner** | [Decision](../2003-04/01_January/Week_2/League_Awards.md) |
 | West Player of the Week | 2004-01-19 to 2004-01-25 | 2004-01-26 | **Winner** | [Decision](../2003-04/01_January/Week_4/League_Awards.md) |
 | West Player of the Month | 2004-01-01 to 2004-01-31 | 2004-02-02 | Shortlist, No. 2 | [Decision](../2003-04/01_January/League_Awards.md) |
+| West All-Star (reserve) | 2003-10-28 to 2004-02-03 | 2004-02-03 | **Selected** | [Decision](../2003-04/All_Star.md#all-stars) |
 | West Player of the Week | 2004-02-23 to 2004-02-29 | 2004-03-01 | Shortlist, No. 2 | [Decision](../2003-04/02_February/Week_4/League_Awards.md) |
 | West Player of the Week | 2004-03-01 to 2004-03-07 | 2004-03-08 | Shortlist, No. 2 | [Decision](../2003-04/03_March/Week_1/League_Awards.md) |
 | West Player of the Week | 2004-03-08 to 2004-03-14 | 2004-03-15 | Shortlist, No. 3 | [Decision](../2003-04/03_March/Week_2/League_Awards.md) |
@@ -142,3 +143,4 @@ Simulated honors and shortlist placings through 2005-12-31, from closed award de
 | West Player of the Month | 2004-04-01 to 2004-04-14 | 2004-04-16 | Shortlist, No. 3 | [Decision](../2003-04/04_April/League_Awards.md) |
 | All-NBA First Team | 2003-10-28 to 2004-04-14 | 2004-04-25 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
 | Most Valuable Player | 2003-10-28 to 2004-04-14 | 2004-05-03 | No. 3 in the vote | [Decision](../2003-04/Season_Awards.md) |
+| West All-Star (reserve) | 2004-11-02 to 2005-02-08 | 2005-02-08 | **Selected** | [Decision](../2004-05/All_Star.md#all-stars) |

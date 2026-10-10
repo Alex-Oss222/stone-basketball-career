@@ -124,12 +124,13 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (6 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (8 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
 | East Player of the Week | 2003-11-03 to 2003-11-09 | 2003-11-10 | Shortlist, No. 2 | [Decision](../2003-04/11_November/Week_2/League_Awards.md) |
 | East Player of the Week | 2004-01-19 to 2004-01-25 | 2004-01-26 | **Winner** | [Decision](../2003-04/01_January/Week_4/League_Awards.md) |
+| East All-Star (starter) | 2003-10-28 to 2004-01-29 | 2004-01-29 | **Selected** | [Decision](../2003-04/All_Star.md#all-stars) |
 | East Player of the Month | 2004-02-01 to 2004-02-29 | 2004-03-02 | Shortlist, No. 2 | [Decision](../2003-04/02_February/League_Awards.md) |
 | East Player of the Week | 2004-03-22 to 2004-03-28 | 2004-03-29 | Shortlist, No. 2 | [Decision](../2003-04/03_March/Week_4/League_Awards.md) |
 | East Player of the Week | 2004-03-29 to 2004-04-04 | 2004-04-05 | Shortlist, No. 2 | [Decision](../2003-04/04_April/Week_1/League_Awards.md) |
@@ -137,6 +138,7 @@ Simulated honors and shortlist placings through 2005-12-31, from closed award de
 | All-Defensive Second Team | 2003-10-28 to 2004-04-14 | 2004-04-26 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
 | East Player of the Week | 2004-11-02 to 2004-11-07 | 2004-11-08 | **Winner** | [Decision](../2004-05/11_November/Week_1/League_Awards.md) |
 | East Player of the Week | 2004-12-27 to 2005-01-02 | 2005-01-03 | Shortlist, No. 3 | [Decision](../2004-05/01_January/Week_1/League_Awards.md) |
+| East All-Star (starter) | 2004-11-02 to 2005-02-03 | 2005-02-03 | **Selected** | [Decision](../2004-05/All_Star.md#all-stars) |
 | East Player of the Week | 2005-02-07 to 2005-02-13 | 2005-02-14 | **Winner** | [Decision](../2004-05/02_February/Week_2/League_Awards.md) |
 | East Player of the Week | 2005-02-28 to 2005-03-06 | 2005-03-07 | Shortlist, No. 3 | [Decision](../2004-05/03_March/Week_1/League_Awards.md) |
 | East Player of the Week | 2005-04-18 to 2005-04-20 | 2005-04-21 | **Winner** | [Decision](../2004-05/04_April/Week_3/League_Awards.md) |

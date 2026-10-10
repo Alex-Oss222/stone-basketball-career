@@ -4,7 +4,7 @@
 
 2003-04 · Calendar coverage: October 1-31, 2003
 
-As of June 26, 2003: no award decisions closed.
+As of June 30, 2004: no award decisions closed.
 
 Official award window: not recorded. Announcement date: not recorded.
 

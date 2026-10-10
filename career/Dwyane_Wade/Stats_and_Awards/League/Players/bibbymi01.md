@@ -125,12 +125,13 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (3 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (4 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
 | West Player of the Week | 2003-11-10 to 2003-11-16 | 2003-11-17 | Shortlist, No. 3 | [Decision](../2003-04/11_November/Week_3/League_Awards.md) |
+| West All-Star (reserve) | 2003-10-28 to 2004-02-03 | 2004-02-03 | **Selected** | [Decision](../2003-04/All_Star.md#all-stars) |
 | West Player of the Week | 2004-04-05 to 2004-04-11 | 2004-04-12 | **Winner** | [Decision](../2003-04/04_April/Week_2/League_Awards.md) |
 | All-NBA Third Team | 2003-10-28 to 2004-04-14 | 2004-04-25 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
-| Finals MVP | 2004-11-02 to 2005-06-16 | 2005-06-16 | **Winner** | [Decision](../2004-05/Season_Awards.md) |
+| Finals MVP | 2005-06-09 to 2005-06-16 | 2005-06-16 | **Winner** | [Decision](../2004-05/Season_Awards.md) |
 | West Player of the Week | 2005-11-07 to 2005-11-13 | 2005-11-14 | Shortlist, No. 3 | [Decision](../2005-06/11_November/Week_2/League_Awards.md) |

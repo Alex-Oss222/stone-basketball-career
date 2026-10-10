@@ -125,7 +125,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (26 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (28 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -140,6 +140,7 @@ Simulated honors and shortlist placings through 2005-12-31, from closed award de
 | West Player of the Week | 2003-12-29 to 2004-01-04 | 2004-01-05 | Shortlist, No. 2 | [Decision](../2003-04/01_January/Week_1/League_Awards.md) |
 | West Player of the Week | 2004-01-05 to 2004-01-11 | 2004-01-12 | Shortlist, No. 2 | [Decision](../2003-04/01_January/Week_2/League_Awards.md) |
 | West Player of the Week | 2004-01-19 to 2004-01-25 | 2004-01-26 | Shortlist, No. 3 | [Decision](../2003-04/01_January/Week_4/League_Awards.md) |
+| West All-Star (starter) | 2003-10-28 to 2004-01-29 | 2004-01-29 | **Selected** | [Decision](../2003-04/All_Star.md#all-stars) |
 | West Player of the Month | 2004-01-01 to 2004-01-31 | 2004-02-02 | **Winner** | [Decision](../2003-04/01_January/League_Awards.md) |
 | West Player of the Week | 2004-01-26 to 2004-02-01 | 2004-02-02 | Shortlist, No. 3 | [Decision](../2003-04/02_February/Week_1/League_Awards.md) |
 | West Player of the Week | 2004-02-09 to 2004-02-15 | 2004-02-16 | **Winner** | [Decision](../2003-04/02_February/Week_3/League_Awards.md) |
@@ -154,7 +155,7 @@ Simulated honors and shortlist placings through 2005-12-31, from closed award de
 | All-NBA First Team | 2003-10-28 to 2004-04-14 | 2004-04-25 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
 | All-Defensive First Team | 2003-10-28 to 2004-04-14 | 2004-04-26 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
 | Most Valuable Player | 2003-10-28 to 2004-04-14 | 2004-05-03 | **Winner** | [Decision](../2003-04/Season_Awards.md) |
-| Finals MVP | 2003-10-28 to 2004-06-20 | 2004-06-20 | **Winner** | [Decision](../2003-04/Season_Awards.md) |
+| Finals MVP | 2004-06-06 to 2004-06-20 | 2004-06-20 | **Winner** | [Decision](../2003-04/Season_Awards.md) |
 | West Player of the Week | 2004-11-22 to 2004-11-28 | 2004-11-29 | **Winner** | [Decision](../2004-05/11_November/Week_4/League_Awards.md) |
 | West Player of the Week | 2004-12-06 to 2004-12-12 | 2004-12-13 | **Winner** | [Decision](../2004-05/12_December/Week_2/League_Awards.md) |
 | West Player of the Week | 2005-01-03 to 2005-01-09 | 2005-01-10 | Shortlist, No. 2 | [Decision](../2004-05/01_January/Week_2/League_Awards.md) |
@@ -162,6 +163,7 @@ Simulated honors and shortlist placings through 2005-12-31, from closed award de
 | West Player of the Week | 2005-01-17 to 2005-01-23 | 2005-01-24 | **Winner** | [Decision](../2004-05/01_January/Week_4/League_Awards.md) |
 | West Player of the Week | 2005-01-24 to 2005-01-30 | 2005-01-31 | **Winner** | [Decision](../2004-05/01_January/Week_4/League_Awards.md) |
 | West Player of the Month | 2005-01-01 to 2005-01-31 | 2005-02-02 | **Winner** | [Decision](../2004-05/01_January/League_Awards.md) |
+| West All-Star (starter) | 2004-11-02 to 2005-02-03 | 2005-02-03 | **Selected** | [Decision](../2004-05/All_Star.md#all-stars) |
 | West Player of the Week | 2005-01-31 to 2005-02-06 | 2005-02-07 | **Winner** | [Decision](../2004-05/02_February/Week_1/League_Awards.md) |
 | West Player of the Week | 2005-02-07 to 2005-02-13 | 2005-02-14 | Shortlist, No. 3 | [Decision](../2004-05/02_February/Week_2/League_Awards.md) |
 | West Player of the Week | 2005-02-14 to 2005-02-20 | 2005-02-21 | Shortlist, No. 2 | [Decision](../2004-05/02_February/Week_3/League_Awards.md) |

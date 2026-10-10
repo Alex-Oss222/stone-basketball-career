@@ -125,12 +125,13 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (3 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (4 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
 | All-Defensive First Team | 2003-10-28 to 2004-04-14 | 2004-04-26 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
 | West Player of the Week | 2004-12-06 to 2004-12-12 | 2004-12-13 | Shortlist, No. 2 | [Decision](../2004-05/12_December/Week_2/League_Awards.md) |
 | West Player of the Week | 2004-12-27 to 2005-01-02 | 2005-01-03 | **Winner** | [Decision](../2004-05/01_January/Week_1/League_Awards.md) |
+| West All-Star (reserve) | 2004-11-02 to 2005-02-08 | 2005-02-08 | **Selected** | [Decision](../2004-05/All_Star.md#all-stars) |
 | West Player of the Month | 2005-03-01 to 2005-03-31 | 2005-04-02 | Shortlist, No. 3 | [Decision](../2004-05/03_March/League_Awards.md) |
 | All-Defensive First Team | 2004-11-02 to 2005-04-20 | 2005-05-12 | **Selected** | [Decision](../2004-05/Season_Awards.md) |

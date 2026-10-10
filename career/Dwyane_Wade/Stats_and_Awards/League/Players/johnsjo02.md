@@ -124,10 +124,11 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (1 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (2 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
 | West Player of the Week | 2003-12-08 to 2003-12-14 | 2003-12-15 | Shortlist, No. 3 | [Decision](../2003-04/12_December/Week_2/League_Awards.md) |
+| West All-Star (reserve) | 2004-11-02 to 2005-02-08 | 2005-02-08 | **Selected** | [Decision](../2004-05/All_Star.md#all-stars) |
 | West Player of the Week | 2005-11-01 to 2005-11-06 | 2005-11-07 | **Winner** | [Decision](../2005-06/11_November/Week_1/League_Awards.md) |
 | West Player of the Month | 2005-11-01 to 2005-11-30 | 2005-12-02 | Shortlist, No. 3 | [Decision](../2005-06/11_November/League_Awards.md) |

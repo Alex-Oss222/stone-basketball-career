@@ -210,7 +210,3 @@ Awards are confirmed through 2005-12-31, filed by the honor's period-end date; t
 | Clutch, on/off, lineup combinations, assisted baskets | Unavailable in current box feed | Timed events, score state, substitutions and possession attribution |
 | Deflections, charges, contested shots, box outs | Unavailable in current box feed | Observed hustle/defensive events |
 | League rank, percentile, relative TS%; impact models | Not derived by this report | Same-period simulated league baseline, eligibility rules and documented model |
-
-### Awards
-
-No NBA awards recorded for this period. [Conference and league award record](../../../League/2003-04/03_March/Week_2/League_Awards.md).

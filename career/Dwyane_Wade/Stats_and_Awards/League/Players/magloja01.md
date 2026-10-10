@@ -124,4 +124,8 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2005-12-31. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (1 won). Historical awards are not imported.
+
+| Award | Period | Announced | Result | Record |
+| --- | --- | --- | --- | --- |
+| East All-Star (reserve) | 2003-10-28 to 2004-02-03 | 2004-02-03 | **Selected** | [Decision](../2003-04/All_Star.md#all-stars) |

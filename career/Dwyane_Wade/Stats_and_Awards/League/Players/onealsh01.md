@@ -125,7 +125,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (5 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2005-12-31, from closed award decisions (7 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -133,9 +133,11 @@ Simulated honors and shortlist placings through 2005-12-31, from closed award de
 | West Player of the Week | 2003-11-17 to 2003-11-23 | 2003-11-24 | Shortlist, No. 2 | [Decision](../2003-04/11_November/Week_4/League_Awards.md) |
 | West Player of the Week | 2003-12-01 to 2003-12-07 | 2003-12-08 | Shortlist, No. 2 | [Decision](../2003-04/12_December/Week_1/League_Awards.md) |
 | West Player of the Month | 2003-12-01 to 2003-12-31 | 2004-01-02 | Shortlist, No. 3 | [Decision](../2003-04/12_December/League_Awards.md) |
+| West All-Star (starter) | 2003-10-28 to 2004-01-29 | 2004-01-29 | **Selected** | [Decision](../2003-04/All_Star.md#all-stars) |
 | West Player of the Week | 2004-03-15 to 2004-03-21 | 2004-03-22 | **Winner** | [Decision](../2003-04/03_March/Week_3/League_Awards.md) |
 | All-NBA First Team | 2003-10-28 to 2004-04-14 | 2004-04-25 | **Selected** | [Decision](../2003-04/Season_Awards.md) |
 | West Player of the Week | 2004-11-02 to 2004-11-07 | 2004-11-08 | Shortlist, No. 2 | [Decision](../2004-05/11_November/Week_1/League_Awards.md) |
+| West All-Star (starter) | 2004-11-02 to 2005-02-03 | 2005-02-03 | **Selected** | [Decision](../2004-05/All_Star.md#all-stars) |
 | West Player of the Week | 2005-02-07 to 2005-02-13 | 2005-02-14 | Shortlist, No. 2 | [Decision](../2004-05/02_February/Week_2/League_Awards.md) |
 | West Player of the Week | 2005-02-21 to 2005-02-27 | 2005-02-28 | **Winner** | [Decision](../2004-05/02_February/Week_4/League_Awards.md) |
 | West Player of the Month | 2005-02-01 to 2005-02-28 | 2005-03-02 | Shortlist, No. 3 | [Decision](../2004-05/02_February/League_Awards.md) |
