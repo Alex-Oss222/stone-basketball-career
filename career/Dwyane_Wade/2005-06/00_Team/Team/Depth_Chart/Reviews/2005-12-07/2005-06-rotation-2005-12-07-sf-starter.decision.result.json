@@ -1,0 +1,12 @@
+{
+ "date": "2005-12-07",
+ "decider": "Miami coaching staff (engine evaluation draw)",
+ "event_id": "2005-06-rotation-2005-12-07-sf-starter",
+ "kind": "decision",
+ "options": {
+  "Caron Butler": 0.397708,
+  "Matt Harpring": 0.602292
+ },
+ "outcome": "Matt Harpring",
+ "question": "Who starts at SF: Matt Harpring or Caron Butler?"
+}

@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 26 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-12-06 
+**Opening assessment:** October 1, 2005 · **Statistics through:** 2005-12-07 
 
 **Contract/control:** Signed August 2, 2005 (minimum): 1 season(s) from 2005-06, $745,248 scheduled ($745,248 in 2005-06). (register, 2005-10-31) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at PG, staff plan 4 minutes (staff rotation dated 2005-11-23, [record](../Depth_Chart/Reviews/2005-11-23/rotation.json)).
+**Role:** Rotation at PG, staff plan 4 minutes (staff rotation dated 2005-12-07, [record](../Depth_Chart/Reviews/2005-12-07/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -32,11 +32,12 @@ Unassessed.
 | 2005-10-26 | Staff rotation of 2005-10-26: rotation at PG, staff plan 8 minutes. | [Rotation](../Depth_Chart/rotation.json) |
 | 2005-11-09 | Staff rotation of 2005-11-09: rotation at PG, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2005-11-09/rotation.json) |
 | 2005-11-23 | Staff rotation of 2005-11-23: rotation at PG, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2005-11-23/rotation.json) |
+| 2005-12-07 | Staff rotation of 2005-12-07: rotation at PG, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2005-12-07/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../../../../career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json), 2004-05 simulated season totals.
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-11-23.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2005-12-07.
 
 <!-- yearly-statistics:start -->
 
@@ -49,7 +50,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2004-05 | Chicago Bulls | 1 | 0 | 0.6 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | N/A | N/A | N/A |
-| 2005-06 | MIA | 18 | 0 | 5.0 | 1.3 | 0.6 | 0.6 | 0.4 | 0.1 | 0.6 | 50.0% | 33.3% | 80.0% |
+| 2005-06 | MIA | 19 | 0 | 5.4 | 1.2 | 0.6 | 0.7 | 0.5 | 0.1 | 0.6 | 42.9% | 25.0% | 80.0% |
 
 Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
 
