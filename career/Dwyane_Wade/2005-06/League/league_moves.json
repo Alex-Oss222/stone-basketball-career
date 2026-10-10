@@ -4906,6 +4906,69 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 5.27 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-03-16-clear-augmost01",
+   "date": "2006-03-16",
+   "kind": "clear",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 385
+   },
+   "contract": null,
+   "note": "cleared waivers from Los Angeles Lakers: a free agent",
+   "waiver": "2005-06-market-2006-03-14-waive-augmost01"
+  },
+  {
+   "id": "2005-06-market-2006-03-16-claim-araujra01",
+   "date": "2006-03-16",
+   "kind": "claim",
+   "player": "Rafael Araújo",
+   "bbr_id": "araujra01",
+   "from": null,
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Rafael Araújo",
+    "bbr_id": "araujra01",
+    "position": "C",
+    "games": 52,
+    "minutes": 601
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Orlando Magic (worst record first)",
+   "waiver": "2005-06-market-2006-03-14-waive-araujra01"
+  },
+  {
+   "id": "2005-06-market-2006-03-16-ten_day-robincl02",
+   "date": "2006-03-16",
+   "kind": "ten_day",
+   "player": "Clifford Robinson",
+   "bbr_id": "robincl02",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Clifford Robinson",
+    "bbr_id": "robincl02",
+    "position": "PF",
+    "games": 80,
+    "minutes": 1863
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-03-26",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 2.89 x fit"
   }
  ],
  "market_days": [
@@ -5043,6 +5106,7 @@
   "2006-03-12",
   "2006-03-13",
   "2006-03-14",
-  "2006-03-15"
+  "2006-03-15",
+  "2006-03-16"
  ]
 }

@@ -14,4 +14,6 @@ days: 15-21
 
 ## Games and events
 
+- 2006-03-16: Boston Celtics 112 at Miami Heat 90 — Miami Heat L 90-112 ([Game 1](Game_1.md), event `2006-03-16-boston-celtics-at-miami-heat`)
+
 ## Consequences
