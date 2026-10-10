@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C  
 **Age at assessment:** 26 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** January 16, 2006 · **Statistics through:** 2006-01-19 
+**Opening assessment:** January 16, 2006 · **Statistics through:** 2006-01-20 
 
 **Contract/control:** Acquired by trade from New Orleans/Oklahoma City Hornets on January 16, 2006: $5,100,714 in 2005-06; contract through 2009-10. (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at C, staff plan 34 minutes (staff rotation dated 2006-01-18, [record](../Depth_Chart/Reviews/2006-01-18/rotation.json)). On the injured list since 2006-01-16 (reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)).
+**Role:** Starter at C, staff plan 34 minutes (staff rotation dated 2006-01-18, [record](../Depth_Chart/Reviews/2006-01-18/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -59,7 +59,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Cleveland Cavaliers | 75 | N/A | 24.9 | 9.8 | 6.7 | 0.7 | 0.2 | 1.4 | 1.5 | 0.507 | 0.000 | 0.678 |
-| 2005-06 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2005-06 | MIA | 1 | 1 | 30.8 | 16.0 | 4.0 | 2.0 | 1.0 | 0.0 | 1.0 | 54.5% | N/A | 66.7% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

@@ -41,11 +41,19 @@
   {
    "player": "Chris Mihm",
    "placed": "2006-01-16",
-   "activated": null,
+   "activated": "2006-01-20",
    "first_game_missed": "2006-01-16-miami-heat-at-los-angeles-lakers",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 0
+  },
+  {
+   "player": "Eddie Jones",
+   "placed": "2006-01-20",
+   "activated": null,
+   "first_game_missed": "2006-01-20-san-antonio-spurs-at-miami-heat",
    "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
    "minimum_games": 0
   }
  ],
- "as_of": "2006-01-16"
+ "as_of": "2006-01-20"
 }

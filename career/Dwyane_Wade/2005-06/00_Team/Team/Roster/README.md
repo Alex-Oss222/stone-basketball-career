@@ -2,11 +2,11 @@
 
 <!-- team-status:start -->
 
-[roster.json](roster.json) is the machine-readable register (team-control record dated 2006-01-16). Availability below is on 2006-01-19, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
+[roster.json](roster.json) is the machine-readable register (team-control record dated 2006-01-16). Availability below is on 2006-01-20, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
 
-| Player | Pos | Control | Availability on 2006-01-19 | Staff role |
+| Player | Pos | Control | Availability on 2006-01-20 | Staff role |
 | --- | --- | --- | --- | --- |
-| [Eddie Jones](../Player_Cards/eddie_jones.md) | SG/SF | under contract | Available | reserve outside the planned rotation |
+| [Eddie Jones](../Player_Cards/eddie_jones.md) | SG/SF | under contract | Injured list since 2006-01-20, inactive reserve | reserve outside the planned rotation |
 | [Donyell Marshall](../Player_Cards/donyell_marshall.md) | PF | under contract | Available | rotation at PF, staff plan 11 minutes |
 | [Anthony Johnson](../Player_Cards/anthony_johnson.md) | PG | under contract | Available | rotation at PG, staff plan 9 minutes |
 | [Mike James](../Player_Cards/mike_james.md) | PG | under contract | Available | starter at PG, staff plan 34 minutes |
@@ -21,7 +21,7 @@
 | [Uroš Slokar](../Player_Cards/uros_slokar.md) | F | unsigned draft rights | Available | reserve outside the planned rotation |
 | [Joe Smith](../Player_Cards/joe_smith.md) | SF | under contract | Available | starter at SF, staff plan 34 minutes |
 | [P.J. Brown](../Player_Cards/pj_brown.md) | PF | under contract | Available | rotation at PF, staff plan 15 minutes |
-| [Chris Mihm](../Player_Cards/chris_mihm.md) | C | under contract | Injured list since 2006-01-16, inactive reserve | starter at C, staff plan 34 minutes |
+| [Chris Mihm](../Player_Cards/chris_mihm.md) | C | under contract | Available | starter at C, staff plan 34 minutes |
 
 Players whose contracts ended, were released or voided remain in roster.json with their labels as history.
 

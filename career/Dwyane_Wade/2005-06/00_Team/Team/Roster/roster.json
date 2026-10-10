@@ -20,7 +20,7 @@
    "college": "Temple",
    "status": "under_contract",
    "control": "Existing contract: 2 season(s) from 2005-06, $30,273,750 scheduled ($14,576,250 in 2005-06).",
-   "working_role": "Reserve outside the planned rotation (rotation 2006-01-18)",
+   "working_role": "Injured list (reserve outside the planned rotation when healthy; rotation 2006-01-18)",
    "player_card": "../Player_Cards/eddie_jones.md",
    "bbr_id": "jonesed02"
   },
@@ -331,7 +331,7 @@
    "date_of_birth": "1979-07-16",
    "status": "under_contract",
    "control": "Acquired by trade from New Orleans/Oklahoma City Hornets on January 16, 2006: $5,100,714 in 2005-06; contract through 2009-10.",
-   "working_role": "Injured list (starter at C, staff plan 34 minutes when healthy; rotation 2006-01-18)",
+   "working_role": "Starter at C, staff plan 34 minutes (rotation 2006-01-18)",
    "player_card": "../Player_Cards/chris_mihm.md",
    "bbr_id": "mihmch01"
   }
