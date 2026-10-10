@@ -4388,6 +4388,90 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 5.41 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-02-24-claim-hunteli01",
+   "date": "2006-02-24",
+   "kind": "claim",
+   "player": "Lindsey Hunter",
+   "bbr_id": "hunteli01",
+   "from": null,
+   "to": "Cleveland Cavaliers",
+   "role": {
+    "player_id": "Lindsey Hunter",
+    "bbr_id": "hunteli01",
+    "position": "PG",
+    "games": 30,
+    "minutes": 353
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Memphis Grizzlies (worst record first)",
+   "waiver": "2005-06-market-2006-02-22-waive-hunteli01"
+  },
+  {
+   "id": "2005-06-market-2006-02-24-waive-johnser02",
+   "date": "2006-02-24",
+   "kind": "waive",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": "Cleveland Cavaliers",
+   "to": null,
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-02-26"
+  },
+  {
+   "id": "2005-06-market-2006-02-24-ten_day-rebraze01",
+   "date": "2006-02-24",
+   "kind": "ten_day",
+   "player": "Željko Rebrača",
+   "bbr_id": "rebraze01",
+   "from": null,
+   "to": "Cleveland Cavaliers",
+   "role": {
+    "player_id": "Željko Rebrača",
+    "bbr_id": "rebraze01",
+    "position": "C",
+    "games": 29,
+    "minutes": 412
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-03-06",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.85 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-02-24-ten_day-augmost01",
+   "date": "2006-02-24",
+   "kind": "ten_day",
+   "player": "Stacey Augmon",
+   "bbr_id": "augmost01",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Stacey Augmon",
+    "bbr_id": "augmost01",
+    "position": "SF",
+    "games": 36,
+    "minutes": 385
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-03-06",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 2.86 x fit"
   }
  ],
  "market_days": [
@@ -4505,6 +4589,7 @@
   "2006-02-20",
   "2006-02-21",
   "2006-02-22",
-  "2006-02-23"
+  "2006-02-23",
+  "2006-02-24"
  ]
 }
