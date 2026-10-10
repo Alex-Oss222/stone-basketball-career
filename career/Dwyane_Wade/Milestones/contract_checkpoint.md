@@ -2,7 +2,7 @@
 
 # Contract checkpoint | Dwyane Wade
 
-Career date: 2006-01-23 · Miami Heat · active
+Career date: 2006-01-29 · Miami Heat · active
 
 [Live milestone desk](index.html#contract_checkpoint) · [All milestones](README.md)
 
@@ -129,4 +129,8 @@ A real club offer, contract event or verified option/expiry deadline.
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_3/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_3/Game_2.md)
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_4.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

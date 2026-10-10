@@ -2,9 +2,9 @@
 
 # Contract | Ervin Johnson
 
-Known through: 2006-01-23. [Open interactive contract](johnser02.html#contract) · [Contract history](johnser02.html#contract-history)
+Known through: 2006-01-29. [Open interactive contract](johnser02.html#contract) · [Contract history](johnser02.html#contract-history)
 
-Ervin Johnson: under contract. Evidence cutoff: 2006-01-23.
+Ervin Johnson: under contract. Evidence cutoff: 2006-01-29.
 
 ## Current contract
 
@@ -119,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ervin Johnson |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Atlanta Hawks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

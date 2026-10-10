@@ -2,9 +2,9 @@
 
 # Contract | Desmond Ferguson
 
-Known through: 2006-01-23. [Open interactive contract](fergude01.html#contract) · [Contract history](fergude01.html#contract-history)
+Known through: 2006-01-29. [Open interactive contract](fergude01.html#contract) · [Contract history](fergude01.html#contract-history)
 
-Desmond Ferguson: No verified contract record. Evidence cutoff: 2006-01-23.
+Desmond Ferguson: No verified contract record. Evidence cutoff: 2006-01-29.
 
 ## Current contract
 

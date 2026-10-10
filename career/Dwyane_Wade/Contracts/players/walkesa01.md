@@ -2,9 +2,9 @@
 
 # Contract | Samaki Walker
 
-Known through: 2006-01-23. [Open interactive contract](walkesa01.html#contract) · [Contract history](walkesa01.html#contract-history)
+Known through: 2006-01-29. [Open interactive contract](walkesa01.html#contract) · [Contract history](walkesa01.html#contract-history)
 
-Samaki Walker: under contract. Evidence cutoff: 2006-01-23.
+Samaki Walker: under contract. Evidence cutoff: 2006-01-29.
 
 ## Current contract
 
@@ -118,7 +118,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Samaki Walker |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Portland Trail Blazers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

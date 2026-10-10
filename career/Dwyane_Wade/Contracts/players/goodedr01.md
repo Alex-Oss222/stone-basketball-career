@@ -2,9 +2,9 @@
 
 # Contract | Drew Gooden
 
-Known through: 2006-01-23. [Open interactive contract](goodedr01.html#contract) · [Contract history](goodedr01.html#contract-history)
+Known through: 2006-01-29. [Open interactive contract](goodedr01.html#contract) · [Contract history](goodedr01.html#contract-history)
 
-Drew Gooden: under contract. Evidence cutoff: 2006-01-23.
+Drew Gooden: under contract. Evidence cutoff: 2006-01-29.
 
 ## Current contract
 

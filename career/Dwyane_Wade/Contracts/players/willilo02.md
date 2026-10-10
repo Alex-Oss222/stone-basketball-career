@@ -2,9 +2,9 @@
 
 # Contract | Lou Williams
 
-Known through: 2006-01-23. [Open interactive contract](willilo02.html#contract) · [Contract history](willilo02.html#contract-history)
+Known through: 2006-01-29. [Open interactive contract](willilo02.html#contract) · [Contract history](willilo02.html#contract-history)
 
-Lou Williams: under contract. Evidence cutoff: 2006-01-23.
+Lou Williams: under contract. Evidence cutoff: 2006-01-29.
 
 ## Current contract
 

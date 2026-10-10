@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2006-01-23 · Miami Heat · active
+Career date: 2006-01-29 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,21 +14,21 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2006-01-23 |
+| Career date | 2006-01-29 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2006-01-22-sacramento-kings-at-miami-heat |
+| Last closed event | 2006-01-29-miami-heat-at-houston-rockets |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2006-01-23 | Current checkpoint | 2006-01-22-sacramento-kings-at-miami-heat | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2006-01-29 | Current checkpoint | 2006-01-29-miami-heat-at-houston-rockets | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2005-10-04 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2006-01-24 | Next Miami game, vs Memphis Grizzlies | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2006-01-30 | Next Miami game, vs Los Angeles Clippers | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
 | 2006-01-30 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2006-02-01 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
@@ -155,4 +155,8 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_3/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_3/Game_2.md)
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_4.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

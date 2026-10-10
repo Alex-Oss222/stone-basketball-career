@@ -4326,13 +4326,14 @@
   {
    "player": "Zeljko Rebraca",
    "bbr_id": "rebraze01",
-   "club": "Seattle SuperSonics",
+   "club": "Atlanta Hawks",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2005-06": 771123
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Seattle SuperSonics"
   },
   {
    "player": "Michael Redd",
@@ -4534,7 +4535,7 @@
   {
    "player": "Luke Schenscher",
    "bbr_id": "schenlu01",
-   "club": "Cleveland Cavaliers",
+   "club": "Golden State Warriors",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -5296,7 +5297,7 @@
   {
    "player": "Samaki Walker",
    "bbr_id": "walkesa01",
-   "club": "Washington Wizards",
+   "club": "Portland Trail Blazers",
    "route": "mid_level",
    "kind": "new",
    "schedule": {
@@ -5305,7 +5306,8 @@
     "2007-08": 1690619,
     "2008-09": 1807213
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Washington Wizards"
   },
   {
    "player": "Ben Wallace",
@@ -5349,7 +5351,7 @@
   {
    "player": "walshma01",
    "bbr_id": "walshma01",
-   "club": "Phoenix Suns",
+   "club": "Cleveland Cavaliers",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -5560,7 +5562,7 @@
   {
    "player": "Aaron Williams",
    "bbr_id": "williaa01",
-   "club": "Golden State Warriors",
+   "club": "Portland Trail Blazers",
    "route": "minimum",
    "kind": "new",
    "schedule": {

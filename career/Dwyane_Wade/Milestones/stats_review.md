@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2006-01-23 · Miami Heat · active
+Career date: 2006-01-29 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-48 closed game records in 2005-06 through 2006-01-23. Competitions remain separate.
+52 closed game records in 2005-06 through 2006-01-29. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
-| regular | 41 | 37.3 | 26.4 | 6.1 | 4.1 | 1.8 | Complete |
+| regular | 45 | 37.4 | 26.5 | 6.2 | 4.0 | 1.7 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
-| regular | 374 | 658 | 0.568 | 62 | 131 | 0.473 |
+| regular | 414 | 736 | 0.562 | 68 | 147 | 0.463 |
 
 ## Closed source games
 
@@ -78,6 +78,10 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2006-01-16 | regular | Los Angeles Lakers | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_3/Game_1.md) |
 | 2006-01-20 | regular | San Antonio Spurs | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_3/Game_2.md) |
 | 2006-01-22 | regular | Sacramento Kings | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_1.md) |
+| 2006-01-24 | regular | Memphis Grizzlies | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_2.md) |
+| 2006-01-26 | regular | Phoenix Suns | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_3.md) |
+| 2006-01-27 | regular | Charlotte Bobcats | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_4.md) |
+| 2006-01-29 | regular | Houston Rockets | Played | [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md) |
 
 ## Evidence available for decisions
 
@@ -171,4 +175,8 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_3/Game_1.md)
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_3/Game_2.md)
 - [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_2.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_3.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_4.md)
+- [Closed game](../2005-06/06_Regular_Season/01_January/Week_4/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

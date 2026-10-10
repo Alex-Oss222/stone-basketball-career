@@ -2,9 +2,9 @@
 
 # Contract | Mike Bibby
 
-Known through: 2006-01-23. [Open interactive contract](bibbymi01.html#contract) · [Contract history](bibbymi01.html#contract-history)
+Known through: 2006-01-29. [Open interactive contract](bibbymi01.html#contract) · [Contract history](bibbymi01.html#contract-history)
 
-Mike Bibby: under contract. Evidence cutoff: 2006-01-23.
+Mike Bibby: under contract. Evidence cutoff: 2006-01-29.
 
 ## Current contract
 

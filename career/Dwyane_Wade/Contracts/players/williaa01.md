@@ -2,9 +2,9 @@
 
 # Contract | Aaron Williams
 
-Known through: 2006-01-23. [Open interactive contract](williaa01.html#contract) · [Contract history](williaa01.html#contract-history)
+Known through: 2006-01-29. [Open interactive contract](williaa01.html#contract) · [Contract history](williaa01.html#contract-history)
 
-Aaron Williams: under contract. Evidence cutoff: 2006-01-23.
+Aaron Williams: under contract. Evidence cutoff: 2006-01-29.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Aaron Williams |
-| Club / rights baseline | Golden State Warriors |
+| Club / rights baseline | Portland Trail Blazers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

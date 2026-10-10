@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-01-23",
+  "as_of": "2006-01-29",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -23,7 +23,7 @@
     {
       "player_id": "williaa01",
       "name": "Aaron Williams",
-      "team": "Golden State Warriors",
+      "team": "Portland Trail Blazers",
       "status": "under contract",
       "current_contract_id": "williaa01-2005-09-16",
       "recorded_agreements": 2,
@@ -1958,7 +1958,7 @@
     {
       "player_id": "johnser02",
       "name": "Ervin Johnson",
-      "team": "Free agent",
+      "team": "Atlanta Hawks",
       "status": "under contract",
       "current_contract_id": "johnser02-existing-d23ec1018463",
       "recorded_agreements": 1,
@@ -3389,7 +3389,7 @@
     {
       "player_id": "hunteli01",
       "name": "Lindsey Hunter",
-      "team": "Memphis Grizzlies",
+      "team": "Free agent",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4451,7 +4451,7 @@
     {
       "player_id": "livinra01",
       "name": "Randy Livingston",
-      "team": "New Jersey Nets",
+      "team": "Phoenix Suns",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4874,7 +4874,7 @@
     {
       "player_id": "walkesa01",
       "name": "Samaki Walker",
-      "team": "Free agent",
+      "team": "Portland Trail Blazers",
       "status": "under contract",
       "current_contract_id": "walkesa01-2005-08-12",
       "recorded_agreements": 3,
@@ -5828,7 +5828,7 @@
     {
       "player_id": "rebraze01",
       "name": "Zeljko Rebraca",
-      "team": "Free agent",
+      "team": "Atlanta Hawks",
       "status": "under contract",
       "current_contract_id": "rebraze01-2005-08-19",
       "recorded_agreements": 2,
@@ -5882,7 +5882,7 @@
     {
       "player_id": "walshma01",
       "name": "walshma01",
-      "team": "Phoenix Suns",
+      "team": "Cleveland Cavaliers",
       "status": "under contract",
       "current_contract_id": "walshma01-2005-09-02",
       "recorded_agreements": 1,
