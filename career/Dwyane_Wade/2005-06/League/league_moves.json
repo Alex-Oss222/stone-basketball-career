@@ -3175,6 +3175,163 @@
    },
    "note": "claimed off waivers from Washington Wizards (worst record first)",
    "waiver": "2005-06-market-2006-01-22-waive-walkesa01"
+  },
+  {
+   "id": "2005-06-market-2006-01-25-clear-johnser02",
+   "date": "2006-01-25",
+   "kind": "clear",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": null,
+   "note": "cleared waivers from Golden State Warriors: a free agent",
+   "waiver": "2005-06-market-2006-01-23-waive-johnser02"
+  },
+  {
+   "id": "2005-06-market-2006-01-25-expire-russebr01",
+   "date": "2006-01-25",
+   "kind": "expire",
+   "player": "Bryon Russell",
+   "bbr_id": "russebr01",
+   "from": "Indiana Pacers",
+   "to": null,
+   "role": {
+    "player_id": "Bryon Russell",
+    "bbr_id": "russebr01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": null,
+   "note": "10-day contract ended (1.1 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-01-25-ten_day-russebr01",
+   "date": "2006-01-25",
+   "kind": "ten_day",
+   "player": "Bryon Russell",
+   "bbr_id": "russebr01",
+   "from": null,
+   "to": "Indiana Pacers",
+   "role": {
+    "player_id": "Bryon Russell",
+    "bbr_id": "russebr01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-04",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.73 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-25-expire-livinra01",
+   "date": "2006-01-25",
+   "kind": "expire",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "New Jersey Nets",
+   "to": null,
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": null,
+   "note": "10-day contract ended (5.0 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-01-25-waive-walshma01",
+   "date": "2006-01-25",
+   "kind": "waive",
+   "player": "walshma01",
+   "bbr_id": "walshma01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "walshma01",
+    "bbr_id": "walshma01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-01-27"
+  },
+  {
+   "id": "2005-06-market-2006-01-25-ten_day-livinra01",
+   "date": "2006-01-25",
+   "kind": "ten_day",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": null,
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 5,
+    "minutes": 22
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-04",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.04 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-25-waive-robinbe01",
+   "date": "2006-01-25",
+   "kind": "waive",
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Bernard Robinson",
+    "bbr_id": "robinbe01",
+    "position": "SF",
+    "games": 66,
+    "minutes": 1303
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-01-27"
+  },
+  {
+   "id": "2005-06-market-2006-01-25-ten_day-johnser02",
+   "date": "2006-01-25",
+   "kind": "ten_day",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-04",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 2.38 x fit"
   }
  ],
  "market_days": [
@@ -3262,6 +3419,7 @@
   "2006-01-21",
   "2006-01-22",
   "2006-01-23",
-  "2006-01-24"
+  "2006-01-24",
+  "2006-01-25"
  ]
 }
