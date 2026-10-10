@@ -343,5 +343,99 @@ class LeagueMatchTests(unittest.TestCase):
         self.assertGreater(n, 0)
 
 
+class FrontOfficeLabelTests(unittest.TestCase):
+    """The remaining trade-related texts that named 2002-03 (or 2003-04) in later seasons, fixed from the same gate or, in
+    the summer market, from the 2006 summer. Before it every text is the recorded one. When they were fixed (career date
+    2006-04-19) nothing they write had been recorded on or after the gate: no consultation or club replacement at all,
+    and Miami's last trade was 2006-01-16; `test_recorded_texts_follow_the_gate` checks the records as they grow."""
+
+    def consultation(self, day):
+        return {"id": f"{day}-x-trade", "date": day, "kind": "trade", "player": "X", "club": ATLANTA, "trade_id": None,
+                "standing": {"standing": "franchise", "as_of": "2005-06-16"}}
+
+    def test_the_star_rule_names_the_season_read(self):
+        from runtime import consultations as C
+        self.assertEqual(C.rule(BEFORE, ROOT), C.RULE)
+        self.assertEqual(C.evidence_season("2004-12-20", ROOT), "2002-03")       # every recorded season kept the words
+        self.assertEqual(C.rule(GATE, ROOT), "2004-05 simulated season production value >= 20.0 (runtime/consultations.py)")
+
+    def test_the_consultation_page_names_the_season_read(self):
+        from runtime import consultations as C
+        before = C.page(self.consultation(BEFORE), {"value": 21.0})
+        for words in ("| 2002-03 line | no 2002-03 line recorded |", C.RULE, "2002-03 statistics and the June 26, 2003 contract inventory"):
+            self.assertIn(words, before)
+        after = C.page(self.consultation(GATE), {"value": 21.0}, ROOT)
+        self.assertIn("| 2004-05 simulated season line | no 2004-05 simulated season line recorded |", after)
+        self.assertIn("2004-05 simulated season statistics and the league's contracts on the date", after)
+        self.assertNotIn("2002-03", after)
+
+    def test_a_replacement_basis_names_the_season_read(self):
+        from runtime.club_replacements import production_season
+        self.assertEqual(production_season(BEFORE, ROOT), "2002-03")
+        self.assertEqual(production_season(GATE, ROOT), "2004-05 simulated season")
+
+    def test_the_consultation_salary_names_the_season_paid(self):
+        from types import SimpleNamespace
+        from scripts import run_trade
+        desk = SimpleNamespace(assets=SimpleNamespace(season="2006-07"))
+        self.assertEqual(run_trade.salary_season(desk, BEFORE), run_trade.SEASON)
+        self.assertEqual(run_trade.salary_season(desk, GATE), "2006-07")
+
+    def test_a_summer_consultation_line_names_the_season_priced(self):
+        from types import SimpleNamespace
+        from unittest import mock
+        from runtime import free_agency_2004 as F
+        m = F.Market.__new__(F.Market)
+        m.pricing = SimpleNamespace(evidence={"a01": {"games": 70, "mpg": 30.0, "eff": 1050.0}})
+        with mock.patch.multiple(F, YEAR=2005, SEASON="2004-05"):
+            self.assertIn("(simulated 2003-04)", m.line("a01"))           # as the 2005 summer wrote it
+        with mock.patch.multiple(F, YEAR=2006, SEASON="2005-06"):
+            self.assertIn("(simulated 2005-06)", m.line("a01"))
+            self.assertEqual(m.line("b01"), "no simulated 2005-06 line")
+
+    def test_recorded_texts_follow_the_gate(self):
+        """Read-only: a consultation or club replacement recorded before the gate names 2002-03, as written; one recorded
+        from it after the first season names the season it read; and every Miami trade recorded on or after the gate
+        was made with the fix in place (none was recorded in the window between the gate and the fix's date)."""
+        for path in sorted(ROOT.glob("career/Dwyane_Wade/*/Wade_Consultations/*.json")):
+            if path.name.endswith((".decision.json", ".result.json")):
+                continue
+            record, season = json.loads(path.read_text(encoding="utf-8")), path.parts[-3]
+            rule = record["star_basis"]["rule"]
+            if record["date"] < GATE:
+                self.assertTrue(rule.startswith("2002-03"), path.name)
+            elif season != "2003-04":
+                self.assertNotIn("2002-03", rule, path.name)
+        for path in sorted(ROOT.glob("career/Dwyane_Wade/*/League/club_replacements.json")):
+            season = path.parts[-3]
+            for e in json.loads(path.read_text(encoding="utf-8"))["entries"]:
+                if e["from"] < GATE:
+                    self.assertIn("by 2002-03 production", e["basis"], path)
+                elif season != "2003-04":
+                    self.assertNotIn("2002-03", e["basis"], path)
+        fixed_on = "2006-04-19"                                     # the career date of the labels fix
+        for path in sorted(ROOT.glob("career/Dwyane_Wade/*/00_Team/Transactions/Trades/*.json")):
+            if not path.name.endswith((".decision.json", ".result.json")):
+                day = json.loads(path.read_text(encoding="utf-8"))["date"]
+                self.assertFalse(GATE <= day < fixed_on, path.name)
+
+    def test_a_trade_arrival_card_names_the_season_read(self):
+        from unittest import mock
+        from runtime import signing
+        args = ("Joe Smith", {"position": "PF", "birth_date": "1975-07-26"}, "2006-12-18", "control", "00_Team/x.json", "smithjo02", ATLANTA)
+        self.assertIsNone(signing.arrival_card_for_trade(ROOT, *args))       # the pinned first season keeps its card
+        prior = {"team_codes": ["MIL"], "totals": {"games": 74, "minutes": 2265, "points": 814, "offensive_rebounds": 150,
+                                                    "defensive_rebounds": 390, "assists": 67, "steals": 44, "blocks": 37,
+                                                    "turnovers": 81, "field_goals_made": 310, "field_goals_attempted": 603,
+                                                    "free_throws_made": 194, "free_throws_attempted": 253}}
+        with mock.patch.object(signing, "SEASON", "2005-06"), \
+                mock.patch("runtime.season_evidence.prior_records", lambda season, root=None: {"smithjo02": prior}):
+            self.assertIsNone(signing.arrival_card_for_trade(ROOT, *args[:2], BEFORE, *args[3:]))
+            card = signing.arrival_card_for_trade(ROOT, *args)
+        self.assertIn("| 2004-05 | MIL | 74 |", card)
+        self.assertIn("Acquired by trade from Atlanta Hawks", card)
+        self.assertNotIn("2002-03", card)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -28,6 +28,17 @@
    "words": "Ask to go after him.",
    "note": "Wade asks the front office to go after Trevor Ariza (Los Angeles Lakers, SF). On the date Ariza plays 2005-06 on the one-season $816,748 qualifying offer he accepted from the Lakers on 2005-09-30 (career/Dwyane_Wade/2004-05/10_Free_Agency/free_agency_2005.json); he was undrafted in the simulated 2004 draft, signed by Detroit on 2004-07-14 and traded to the Lakers on 2005-01-03. As a newly signed contract he cannot be traded before 2005-12-30 (three months after signing, or December 15 if later; cbafaq05 Q83). Miami's 2005-06 payroll ($67,315,693) is above the $61,700,000 luxury-tax line that is the owner's ceiling, so a trade may not raise it: Miami must send out at least his salary. The request weighs on Miami's in-season trade ranking by Wade's standing (runtime/trades.py); the Lakers decide their answer by engine draw; Miami may decline to pursue him. Not a star under the consultation rule.",
    "source_ref": "career/Dwyane_Wade/2005-06/04_Training_Camp/note.md"
+  },
+  {
+   "date": "2006-04-19",
+   "subject": "keep_picks",
+   "player": "Dwyane Wade",
+   "bbr_id": "wadedw01",
+   "requested": "keep",
+   "if_ignored": "trade_request",
+   "words": "if they trade one more pick i am asking for a trade keep the fucking picks mfers",
+   "note": "Standing request: Miami keeps its draft picks, and if it trades one more, Wade asks for a trade. On the date Miami owns its 2006 second-round pick and its 2007 first- and second-round picks; its 2006 first went to the New Orleans/Oklahoma City Hornets on 2006-01-16 (trade 2006-01-16-7a8ce79392; 00_Team/Finances/draft_picks.json). The request stands from this date, in this and every later season, until Wade withdraws it with a later keep_picks row (runtime/keep_picks.py reads every season folder, so the rollover carries nothing). Miami's front office weighs it wherever it could send a pick away: its in-season packages, Wade's own package requests (one he files later naming a pick is his newer wish for that pick) and draft-night trades; offers from other clubs and the summer market's trades carry no Miami pick, and the sign-and-trade pick fallback runs only in the 2003 summer. A package with a pick is scored as an opposed departure at his standing weight (on draft night, Miami's even-chance answer to a trade-down offer loses that share of its acceptance): at franchise standing (weight 0.8 on the date) a pick package needs five times the front office's threshold, so only a large gain still sends a pick. A request never forces a decision, and the trade request he states is his own decision, not a cost the front office prices in. If Miami trades a pick while it stands, his trade request is written the same day and the career clock stops until the user confirms or withdraws it; what follows a confirmed request is not modelled (docs/ROADMAP.md F1), so a confirmed request keeps the clock stopped until it is.",
+   "source_ref": "career/Dwyane_Wade/2005-06/04_Training_Camp/note.md"
   }
  ]
 }

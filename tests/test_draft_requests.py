@@ -309,6 +309,110 @@ class MiamiPickTests(unittest.TestCase):
                                           {"player": "John Smith", "bbr_id": "smithjo02"}))
 
 
+class DraftVerbTests(unittest.TestCase):
+    """`requested: draft` (rule 7): an engine-drawn decision before the pick's own draw, at standing weight x closeness."""
+    TIER_ONE = MiamiPickTests.TIER_ONE
+
+    def tucker(self, **extra):
+        return request(*TUCKER, date="2006-04-19", requested="draft", **extra)
+
+    def test_in_the_best_tier_the_request_is_drawn_first_at_weight_times_closeness(self):
+        pool = pool_of(*self.TIER_ONE[:2], ("P.J. Tucker", "tuckepj01", "F", 1.8))
+        record, packets, watched, _ = Draft(self).order("Miami Heat").requests(self.tucker()).run(pool)
+        scores = {k: D.utility(pool[k], context()) for k in pool}
+        close = math.exp((scores[D._key("P.J. Tucker")] - max(scores.values())) / D.TEMPERATURE)
+        chance = round(0.8 * close, 3)
+        ask = packets["2006-draft-pick-1-wade-request"]
+        self.assertEqual(ask["options"], {"P.J. Tucker": chance, "rule": round(1 - chance, 6)})
+        self.assertIn("Wade asks Miami to draft P.J. Tucker", ask["basis"])
+        self.assertEqual(ask["decider"], "Miami Heat front office (engine draw on Wade's request)")
+        # The stand-in answered the likelier "rule": the pick's own draw follows, with the evaluate lift.
+        base = D._options(scores)
+        lifted = packets["2006-draft-pick-1"]["options"]["P.J. Tucker"]
+        self.assertAlmostEqual(odds(lifted) / odds(base[D._key("P.J. Tucker")]), 1.8, places=3)
+        total = chance + (1 - chance) * lifted
+        self.assertGreater(total, lifted)                        # at least the evaluate lift
+        self.assertLess(total, 1.0)                              # never a certainty
+        row = record["wade_requests"]["picks"][0]["requests"][0]
+        self.assertEqual((row["status"], row["requested"]), ("weighed", "draft"))
+        self.assertEqual((row["request_draw"]["chance"], row["request_draw"]["outcome"]), (chance, "rule"))
+        self.assertAlmostEqual(row["request_draw"]["closeness"], round(close, 4))
+        self.assertIn("left the pick to the rule's own draw", packets["2006-draft-pick-1"]["basis"])
+        self.assertEqual(watched[0]["weighed_at_miami_picks"], [1])
+        self.assertIn("A request to draft him also opposes the rule's call", record["wade_requests"]["rule"])
+
+    def test_the_request_draw_can_take_him(self):
+        pool = pool_of(*self.TIER_ONE[:2], ("P.J. Tucker", "tuckepj01", "F", 1.8))
+        engine = Engine({"2006-draft-pick-1-wade-request": "P.J. Tucker"})
+        record, packets, watched, _ = Draft(self).order("Miami Heat").requests(self.tucker()).run(pool, engine)
+        self.assertNotIn("2006-draft-pick-1", packets)            # no draw of the club's own
+        self.assertEqual(record["picks"][0]["player"], "P.J. Tucker")
+        note = record["wade_requests"]["picks"][0]
+        self.assertEqual((note["event_id"], note["request_event_id"], note["request_outcome"]),
+                         (None, "2006-draft-pick-1-wade-request", "P.J. Tucker"))
+        self.assertIsNone(note["requests"][0]["probability"])
+        self.assertEqual((watched[0]["outcome"], watched[0]["by_miami"]), ("drafted", True))
+
+    def test_outside_the_tier_the_chance_is_weight_times_closeness_to_the_line(self):
+        pool = pool_of(*self.TIER_ONE, ("P.J. Tucker", "tuckepj01", "F", 9))
+        tiers = D.tiers(pool)
+        k = D._key("P.J. Tucker")
+        self.assertEqual(tiers[k], 2)
+        head = max(D.board_score(p) for key, p in pool.items() if tiers[key] == 1)
+        close = 1 - ((1 - D.TIER_BREAK) * head - D.board_score(pool[k])) / (D.TIER_BREAK * head)
+        engine = Engine({"2006-draft-pick-1-wade-request": "rule"})
+        record, packets, _, _ = Draft(self).order("Miami Heat").requests(self.tucker()).run(pool, engine)
+        chance = round(0.8 * close, 3)
+        self.assertTrue(0 < close < 1)
+        self.assertEqual(packets["2006-draft-pick-1-wade-request"]["options"], {"P.J. Tucker": chance, "rule": round(1 - chance, 6)})
+        plain = Draft(self).order("Miami Heat").run(pool)[1]
+        self.assertEqual(packets["2006-draft-pick-1"]["options"], plain["2006-draft-pick-1"]["options"])   # no reach in the rule's draw
+        row = record["wade_requests"]["picks"][0]["requests"][0]
+        self.assertEqual(row["status"], "outside_tier")
+        self.assertIn("the rule does not reach across tiers", row["reason"])
+
+    def test_a_request_drawn_from_a_lower_tier_records_his_own_tier(self):
+        pool = pool_of(*self.TIER_ONE, ("P.J. Tucker", "tuckepj01", "F", 9))
+        engine = Engine({"2006-draft-pick-1-wade-request": "P.J. Tucker"})
+        record, _, watched, _ = Draft(self).order("Miami Heat").requests(self.tucker()).run(pool, engine)
+        pick = record["picks"][0]
+        self.assertEqual((pick["player"], pick["tier"]), ("P.J. Tucker", 2))
+        self.assertEqual(pick["tier"], next(b["tier"] for b in record["board"] if b["player"] == "P.J. Tucker"))
+        self.assertEqual((watched[0]["outcome"], watched[0]["board_tier"]), ("drafted", 2))
+
+    def test_a_whole_tier_below_the_line_is_clear_cut(self):
+        pool = pool_of(*self.TIER_ONE, ("P.J. Tucker", "tuckepj01", "F", 40))
+        record, packets, _, _ = Draft(self).order("Miami Heat").requests(self.tucker()).run(pool)
+        self.assertNotIn("2006-draft-pick-1-wade-request", packets)
+        self.assertIn("a clear-cut call (closeness 0), not drawn", record["wade_requests"]["picks"][0]["requests"][0]["reason"])
+
+    def test_another_clubs_pick_and_an_evaluation_request_draw_nothing_more(self):
+        pool = pool_of(*self.TIER_ONE, ("P.J. Tucker", "tuckepj01", "F", 1.2))
+        _, plain, _, _ = Draft(self).order("Alpha", "Miami Heat").run(pool)
+        _, packets, _, _ = Draft(self).order("Alpha", "Miami Heat").requests(self.tucker()).run(pool)
+        self.assertEqual(packets["2006-draft-pick-1"], plain["2006-draft-pick-1"])
+        self.assertEqual([e for e in packets if e.endswith("wade-request")], ["2006-draft-pick-2-wade-request"])
+        _, evaluated, _, _ = Draft(self).order("Miami Heat").requests(request(*TUCKER)).run(pool)
+        self.assertFalse([e for e in evaluated if e.endswith("wade-request")])
+
+    def test_two_draft_requests_share_one_packet_in_request_order(self):
+        pool = pool_of(*self.TIER_ONE[:2], ("Kyle Lowry", "lowryky01", "G", 1.6), ("P.J. Tucker", "tuckepj01", "F", 1.8))
+        draft = Draft(self).order("Miami Heat").requests(request(*LOWRY, date="2006-04-01", requested="draft"), self.tucker())
+        _, packets, _, _ = draft.run(pool)
+        options = packets["2006-draft-pick-1-wade-request"]["options"]
+        self.assertEqual(list(options), ["Kyle Lowry", "P.J. Tucker", "rule"])
+        self.assertAlmostEqual(sum(options.values()), 1.0, places=9)
+        self.assertTrue(all(0 < v < 1 for v in options.values()))
+
+    def test_the_live_tucker_request_asks_to_draft_him(self):
+        with mock.patch.multiple(D, YEAR=2006, SEASON="2005-06", DRAFT_DATE="2006-06-28",
+                                 FOLDER=Path("career/Dwyane_Wade/2005-06/09_Draft")):
+            rows = {r["bbr_id"]: r for r in D.wade_requests(ROOT)}
+        self.assertEqual((rows["tuckepj01"]["requested"], rows["tuckepj01"]["date"]), ("draft", "2006-04-19"))
+        self.assertEqual(rows["tuckepj01"]["words"], "also tell them they better draft pj tucker")
+        self.assertEqual(rows["lowryky01"]["requested"], "evaluate")
+
+
 class MatchingTests(unittest.TestCase):
     def test_match_by_bbr_id_else_folded_name(self):
         pool = pool_of(("P.J. Tucker", "tuckepj01", "F", 20), ("Kyle Lowry", None, "G", 15), ("Other Player", "other01", "F", 10))

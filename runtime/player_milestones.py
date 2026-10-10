@@ -148,6 +148,31 @@ def _request_rows(c):
     return rows
 
 
+def _trade_requests(c):
+    """Wade's standing keep_picks request (read from every season folder: it stands until he withdraws it) and his trade
+    requests of the season (runtime/keep_picks.py), known on the career date: (rows, actions, awaiting)."""
+    from .keep_picks import SUBJECT, TRADE_REQUEST, page_name, rows as request_rows, standing_request
+    rows, actions, awaiting = [], [], False
+    keep = standing_request(c.on, c.root)
+    if keep:
+        rows.append([keep["date"], "keep_picks", "Keep every draft pick; if one is traded he asks for a trade",
+                     "Standing until withdrawn", _text(keep["words"]), c.link(c.root / keep["path"], "Recorded request")])
+    for rel, _, row in request_rows(c.root):
+        if row.get("subject") != TRADE_REQUEST or rel.split("/")[2] != c.season.name or not c.known(row.get("date")):
+            continue
+        answered = c.known(row.get("answered"))
+        status = {"confirm": "Confirmed", "withdraw": "Withdrawn"}.get(row.get("answer")) if answered else "Awaiting your confirmation"
+        cites = row.get("cites") or {}
+        rows.append([row["date"], "trade_request", f"Trade request after {cites.get('trade_id')} ({cites.get('partner')})",
+                     status, _text(row.get("words")), c.link(c.root / rel, "Recorded request")])
+        if not answered:
+            awaiting = True
+            page = (c.root / rel).parent / page_name(row)
+            actions.append(c.action(page, "Confirm or withdraw your trade request",
+                                    "Miami traded a pick while your keep_picks request stood; your stated trade request waits for you."))
+    return rows, actions, awaiting
+
+
 def _consultations(c):
     rows, actions = [], []
     for path, row in c.files(c.season / "Wade_Consultations"):
@@ -622,7 +647,8 @@ def build_milestone_payload(player: Path, identity: dict, records: list, *, root
                        _text(trade.get("miami_in"), "None listed"), row.get("applied") if completed else "Not recorded",
                        _text(row.get("void_reason") or (row.get("answer") or {}).get("outcome")) if answered else "No dated answer recorded",
                        c.link(path, "Transaction record")])
-    trade_view = c.view("trade_update", "Trade update", "active" if trades else "inactive",
+    request_rows, request_actions, request_awaiting = _trade_requests(c)
+    trade_view = c.view("trade_update", "Trade update", "awaiting_response" if request_awaiting else "active" if trades or request_rows else "inactive",
         "An actual dated proposal, consultation or executed transaction.",
         "No trade update is recorded at this checkpoint." if not trades else "Proposals and completed transactions are distinguished below.", [
             _table("Actual transaction register", ["Proposed", "Known status", "Partner", "Miami sends", "Miami receives", "Applied", "Outcome / reason", "Source"], trades),
@@ -638,12 +664,14 @@ def build_milestone_payload(player: Path, identity: dict, records: list, *, root
                 ["Franchise star-acquisition consultation", "Career premise", "Only an actual recorded question"],
                 ["Player reaction or preference", "Player", "Request an explanation or role discussion"]]),
             _table("Recorded franchise consultations", ["Asked", "Move", "Target", "Response", "Basis", "Source"], consultation_rows),
+            _table("Your trade requests", ["Date", "Request", "What it asks", "Status", "Your words", "Source"], request_rows,
+                   notice="A request never forces a decision; the front office weighs it by your standing (runtime/keep_picks.py)."),
             {"title": "Your response when an update arrives", "items": [
                 "Ask what changed, which obligations carry over and whom to contact.",
                 "State your view of the move or request a basketball discussion.",
                 "Exercise only an independently verified applicable consent right.",
                 "An ordinary trade is not paused for a fictional approve/reject button."]}],
-        consultation_actions + [c.action(phase_path, "Open the current event discussion", "Record a dated reaction to an actual transaction.")],
+        consultation_actions + request_actions + [c.action(phase_path, "Open the current event discussion", "Record a dated reaction to an actual transaction.")],
         "An actual transaction update with its source and applicable player rights.")
     stats_rows, shooting_rows, game_rows = [], [], []
     competitions = sorted({r.get("competition") for r in c.records if r.get("competition")} | {"regular"})

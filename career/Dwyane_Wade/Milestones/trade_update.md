@@ -43,6 +43,14 @@ Activation: An actual dated proposal, consultation or executed transaction.
 | --- | --- | --- | --- | --- | --- |
 | No dated record | N/A | N/A | N/A | N/A | N/A |
 
+## Your trade requests
+
+A request never forces a decision; the front office weighs it by your standing (runtime/keep_picks.py).
+
+| Date | Request | What it asks | Status | Your words | Source |
+| --- | --- | --- | --- | --- | --- |
+| 2006-04-19 | keep_picks | Keep every draft pick; if one is traded he asks for a trade | Standing until withdrawn | if they trade one more pick i am asking for a trade keep the fucking picks mfers | [Recorded request](../2005-06/04_Training_Camp/wade_requests.json) |
+
 ## Your response when an update arrives
 
 - Ask what changed, which obligations carry over and whom to contact.

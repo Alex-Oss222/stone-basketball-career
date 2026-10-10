@@ -287,6 +287,17 @@
               }
             ],
             [
+              "2006-04-19",
+              "keep_picks",
+              "Dwyane Wade",
+              "keep",
+              "Standing request: Miami keeps its draft picks, and if it trades one more, Wade asks for a trade. On the date Miami owns its 2006 second-round pick and its 2007 first- and second-round picks; its 2006 first went to the New Orleans/Oklahoma City Hornets on 2006-01-16 (trade 2006-01-16-7a8ce79392; 00_Team/Finances/draft_picks.json). The request stands from this date, in this and every later season, until Wade withdraws it with a later keep_picks row (runtime/keep_picks.py reads every season folder, so the rollover carries nothing). Miami's front office weighs it wherever it could send a pick away: its in-season packages, Wade's own package requests (one he files later naming a pick is his newer wish for that pick) and draft-night trades; offers from other clubs and the summer market's trades carry no Miami pick, and the sign-and-trade pick fallback runs only in the 2003 summer. A package with a pick is scored as an opposed departure at his standing weight (on draft night, Miami's even-chance answer to a trade-down offer loses that share of its acceptance): at franchise standing (weight 0.8 on the date) a pick package needs five times the front office's threshold, so only a large gain still sends a pick. A request never forces a decision, and the trade request he states is his own decision, not a cost the front office prices in. If Miami trades a pick while it stands, his trade request is written the same day and the career clock stops until the user confirms or withdraws it; what follows a confirmed request is not modelled (docs/ROADMAP.md F1), so a confirmed request keeps the clock stopped until it is.",
+              {
+                "label": "Recorded request",
+                "href": "../2005-06/04_Training_Camp/wade_requests.json"
+              }
+            ],
+            [
               "2005-10-31",
               "draft_prospect",
               "Kyle Lowry",
@@ -303,6 +314,17 @@
               "P.J. Tucker",
               "evaluate",
               "Scouting recommendation: watch his physical defense, rebounding, positional versatility and offensive development. On the date he is a Texas junior; whether he enters the 2006 draft and where he ranks are decided by the simulation's draft-night evidence. Weighed only on Miami's own 2006 picks (runtime/draft.py); never a demand.",
+              {
+                "label": "Recorded request",
+                "href": "../2005-06/09_Draft/wade_requests.json"
+              }
+            ],
+            [
+              "2006-04-19",
+              "draft_prospect",
+              "P.J. Tucker",
+              "draft",
+              "Wade asks Miami to draft P.J. Tucker in the 2006 draft, more than the evaluation he asked for on 2005-10-31; this row replaces that one (the latest row per prospect stands; Kyle Lowry's evaluate request is unchanged). Weighed on Miami's own 2006 picks only (on the date it holds only its 2006 second-round pick), never another club's and never in a trade (runtime/draft.py rule 7): available in the best available tier at Miami's pick, he is always a candidate with the evaluate lift and an engine draw first takes him at Wade's request with chance standing weight x closeness (his draw weight against the club favourite's); outside that tier the request opposes tier dominance and is an engine-drawn decision at standing weight x closeness (one less his distance below the tier's line in tier widths; a whole tier below is a clear-cut call that cannot be moved). Never a certainty. Whether he enters the 2006 draft and where he ranks are decided by the simulation's draft-night evidence.",
               {
                 "label": "Recorded request",
                 "href": "../2005-06/09_Draft/wade_requests.json"
@@ -2115,6 +2137,17 @@
               }
             ],
             [
+              "2006-04-19",
+              "keep_picks",
+              "Dwyane Wade",
+              "keep",
+              "Standing request: Miami keeps its draft picks, and if it trades one more, Wade asks for a trade. On the date Miami owns its 2006 second-round pick and its 2007 first- and second-round picks; its 2006 first went to the New Orleans/Oklahoma City Hornets on 2006-01-16 (trade 2006-01-16-7a8ce79392; 00_Team/Finances/draft_picks.json). The request stands from this date, in this and every later season, until Wade withdraws it with a later keep_picks row (runtime/keep_picks.py reads every season folder, so the rollover carries nothing). Miami's front office weighs it wherever it could send a pick away: its in-season packages, Wade's own package requests (one he files later naming a pick is his newer wish for that pick) and draft-night trades; offers from other clubs and the summer market's trades carry no Miami pick, and the sign-and-trade pick fallback runs only in the 2003 summer. A package with a pick is scored as an opposed departure at his standing weight (on draft night, Miami's even-chance answer to a trade-down offer loses that share of its acceptance): at franchise standing (weight 0.8 on the date) a pick package needs five times the front office's threshold, so only a large gain still sends a pick. A request never forces a decision, and the trade request he states is his own decision, not a cost the front office prices in. If Miami trades a pick while it stands, his trade request is written the same day and the career clock stops until the user confirms or withdraws it; what follows a confirmed request is not modelled (docs/ROADMAP.md F1), so a confirmed request keeps the clock stopped until it is.",
+              {
+                "label": "Recorded request",
+                "href": "../2005-06/04_Training_Camp/wade_requests.json"
+              }
+            ],
+            [
               "2005-10-31",
               "draft_prospect",
               "Kyle Lowry",
@@ -2131,6 +2164,17 @@
               "P.J. Tucker",
               "evaluate",
               "Scouting recommendation: watch his physical defense, rebounding, positional versatility and offensive development. On the date he is a Texas junior; whether he enters the 2006 draft and where he ranks are decided by the simulation's draft-night evidence. Weighed only on Miami's own 2006 picks (runtime/draft.py); never a demand.",
+              {
+                "label": "Recorded request",
+                "href": "../2005-06/09_Draft/wade_requests.json"
+              }
+            ],
+            [
+              "2006-04-19",
+              "draft_prospect",
+              "P.J. Tucker",
+              "draft",
+              "Wade asks Miami to draft P.J. Tucker in the 2006 draft, more than the evaluation he asked for on 2005-10-31; this row replaces that one (the latest row per prospect stands; Kyle Lowry's evaluate request is unchanged). Weighed on Miami's own 2006 picks only (on the date it holds only its 2006 second-round pick), never another club's and never in a trade (runtime/draft.py rule 7): available in the best available tier at Miami's pick, he is always a candidate with the evaluate lift and an engine draw first takes him at Wade's request with chance standing weight x closeness (his draw weight against the club favourite's); outside that tier the request opposes tier dominance and is an engine-drawn decision at standing weight x closeness (one less his distance below the tier's line in tier widths; a whole tier below is a clear-cut call that cannot be moved). Never a certainty. Whether he enters the 2006 draft and where he ranks are decided by the simulation's draft-night evidence.",
               {
                 "label": "Recorded request",
                 "href": "../2005-06/09_Draft/wade_requests.json"
@@ -3380,6 +3424,31 @@
           "rows": []
         },
         {
+          "title": "Your trade requests",
+          "columns": [
+            "Date",
+            "Request",
+            "What it asks",
+            "Status",
+            "Your words",
+            "Source"
+          ],
+          "rows": [
+            [
+              "2006-04-19",
+              "keep_picks",
+              "Keep every draft pick; if one is traded he asks for a trade",
+              "Standing until withdrawn",
+              "if they trade one more pick i am asking for a trade keep the fucking picks mfers",
+              {
+                "label": "Recorded request",
+                "href": "../2005-06/04_Training_Camp/wade_requests.json"
+              }
+            ]
+          ],
+          "notice": "A request never forces a decision; the front office weighs it by your standing (runtime/keep_picks.py)."
+        },
+        {
           "title": "Your response when an update arrives",
           "items": [
             "Ask what changed, which obligations carry over and whom to contact.",
@@ -4537,6 +4606,10 @@
             [
               "2005-10-31",
               "Wade asks the front office to go after Trevor Ariza (Los Angeles Lakers): in-season trade (tradable from 2005-12-30; Miami must send out at least his $816,748 because its payroll is above the owner's tax-line ceiling) and, failing that, the 2006 summer market. Records: `wade_requests.json` (`trade_target`), `../10_Free_Agency/wade_requests.json` (`free_agent_target`)."
+            ],
+            [
+              "2006-04-19",
+              "Wade tells the front office to keep its draft picks and states the consequence: \"if they trade one more pick i am asking for a trade keep the fucking picks mfers\". A standing request (`keep_picks`) from this date in every later season until he withdraws it: Miami weighs it on every package that would send one of its picks (on the date its 2006 second-rounder and its 2007 first and second), by his standing; if Miami trades a pick anyway, his trade request is written the same day and the career clock stops until he confirms or withdraws it (a confirmed request keeps it stopped: Miami's answer is not modelled yet). Records: `wade_requests.json` (`keep_picks`), runtime/keep_picks.py."
             ],
             [
               "2005-10-04",

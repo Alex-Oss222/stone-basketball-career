@@ -160,8 +160,16 @@ def choose(club, departing, day, season=None, root=ROOT):
             "replaces": departing["player_id"], "replaces_bbr": departing["bbr_id"],
             "terms": {"route": route, "salary_2003_04": salary, "years": 1},
             "games": p["games"], "minutes": p["minutes"], "former_club": p["club"],
-            "basis": (f"best of {len(candidates)} unsigned players by 2002-03 production x skill fit "
+            "basis": (f"best of {len(candidates)} unsigned players by {production_season(day, root)} production x skill fit "
                       f"(score {round(score(bbr, p), 3)}); payroll {payroll:,} against a {cap:,} cap")}
+
+
+def production_season(day, root=ROOT):
+    """The season the replacement's production value was read from, as the basis names it (a dated fix): before
+    trades.SEASON_LABELS_FROM "2002-03" in every season, as recorded; from it the valuation's own prior season
+    (`consultations.evidence_season`: 2002-03 in the first season, then the previous simulated season)."""
+    from .consultations import evidence_season
+    return evidence_season(day, root)
 
 
 def replace(root=ROOT, season=None, write=True):

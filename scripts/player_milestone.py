@@ -156,6 +156,33 @@ def reply(root, response, token):
         with page.open("a", encoding="utf-8") as f:
             f.write(f"\n## Recorded player answer\n\n{response['date']}: **{action}**: {response['text']}\n\n"
                     f"The extension step applies it on its next run (`scripts/extension_day.py --write {response['date']}`).\n")
+    elif kind == "trade_request":
+        # Wade's trade request, written when Miami traded a pick while his keep_picks request stood (runtime/keep_picks.py).
+        # Confirm keeps it on record; withdraw withdraws it. Neither trades anyone: what follows a confirmed request is not
+        # modelled (docs/ROADMAP.md F1). The keep_picks request itself stands until Wade files a new dated row.
+        from runtime import keep_picks
+        rid = response.get("event_id")
+        found = keep_picks.find(root, response["season"], rid) if isinstance(rid, str) and rid else None
+        if not found:
+            raise ValueError("trade request ID not found")
+        path, index, _ = found
+        expect(path, token)
+        data = read(path)
+        row = data["requests"][index]
+        if row.get("status") != keep_picks.AWAITING or row.get("answer") is not None or row["date"] > response["date"]:
+            raise ValueError("trade request is not awaiting an answer")
+        if keep_picks.PENDING_PREFIX + rid not in state.get("pending_player_decisions", []):
+            raise ValueError("trade request is not in the live pending list")
+        if action not in keep_picks.ANSWERS:
+            raise ValueError("trade request reply must confirm or withdraw")
+        row.update(answer=action, answered=response["date"], status=keep_picks.ANSWERS[action],
+                   reply={"text": response["text"], "source_ref": response["source_ref"], "reply_to_version": token})
+        keep_picks.close(state, rid)
+        path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")   # the requests file's own layout
+        dump(state_path, state)
+        page = path.parent / keep_picks.page_name(row)
+        with page.open("a", encoding="utf-8") as f:
+            f.write(f"\n## Recorded player answer\n\n{response['date']}: **{action}**: {response['text']}\n")
     elif kind == "working_record":
         path = player / "milestones.json"
         expect(path, token)
