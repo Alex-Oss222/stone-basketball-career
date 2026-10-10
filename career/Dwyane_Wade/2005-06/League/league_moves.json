@@ -4217,6 +4217,25 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.11 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-02-19-clear-walshma01",
+   "date": "2006-02-19",
+   "kind": "clear",
+   "player": "walshma01",
+   "bbr_id": "walshma01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "walshma01",
+    "bbr_id": "walshma01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": null,
+   "note": "cleared waivers from Memphis Grizzlies: a free agent",
+   "waiver": "2005-06-market-2006-02-17-waive-walshma01"
   }
  ],
  "market_days": [
@@ -4329,6 +4348,7 @@
   "2006-02-15",
   "2006-02-16",
   "2006-02-17",
-  "2006-02-18"
+  "2006-02-18",
+  "2006-02-19"
  ]
 }
