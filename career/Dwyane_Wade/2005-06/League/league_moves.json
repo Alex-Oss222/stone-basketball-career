@@ -3153,6 +3153,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 0.0 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-24-claim-walkesa01",
+   "date": "2006-01-24",
+   "kind": "claim",
+   "player": "Samaki Walker",
+   "bbr_id": "walkesa01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Samaki Walker",
+    "bbr_id": "walkesa01",
+    "position": "PF",
+    "games": 7,
+    "minutes": 22
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2006-04-19"
+   },
+   "note": "claimed off waivers from Washington Wizards (worst record first)",
+   "waiver": "2005-06-market-2006-01-22-waive-walkesa01"
   }
  ],
  "market_days": [
@@ -3239,6 +3261,7 @@
   "2006-01-20",
   "2006-01-21",
   "2006-01-22",
-  "2006-01-23"
+  "2006-01-23",
+  "2006-01-24"
  ]
 }
