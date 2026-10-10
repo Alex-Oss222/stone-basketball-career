@@ -2,9 +2,9 @@
 
 # Contract | José Calderón
 
-Known through: 2006-01-22. [Open interactive contract](caldejo01.html#contract) · [Contract history](caldejo01.html#contract-history)
+Known through: 2006-01-23. [Open interactive contract](caldejo01.html#contract) · [Contract history](caldejo01.html#contract-history)
 
-José Calderón: under contract. Evidence cutoff: 2006-01-22.
+José Calderón: under contract. Evidence cutoff: 2006-01-23.
 
 ## Current contract
 

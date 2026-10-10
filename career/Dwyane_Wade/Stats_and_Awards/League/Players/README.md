@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-01-22**. 652 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-01-23**. 652 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -82,7 +82,7 @@ Card date: **2006-01-22**. 652 registry players, one Markdown card and one inter
 | [Kevin Martin](kevinmartin.md) | Charlotte Bobcats | 22 | silhouette | [open](kevinmartin.html) |
 | [Kevin Ollie](ollieke01.md) | Cleveland Cavaliers | 33 | sourced | [open](ollieke01.html) |
 | [Kirk Hinrich](hinriki01.md) | Chicago Bulls | 25 | sourced | [open](hinriki01.html) |
-| [Larry Hughes](hughela01.md) | Indiana Pacers | 26 | sourced | [open](hughela01.html) |
+| [Larry Hughes](hughela01.md) | Indiana Pacers | 27 | sourced | [open](hughela01.html) |
 | [Lindsey Hunter](hunteli01.md) | Memphis Grizzlies | 35 | sourced | [open](hunteli01.html) |
 | [Lionel Chalmers](lionelchalmers.md) | Free agent | 25 | silhouette | [open](lionelchalmers.html) |
 | [Lou Williams](willilo02.md) | Los Angeles Lakers | 19 | silhouette | [open](willilo02.html) |
@@ -604,7 +604,7 @@ Card date: **2006-01-22**. 652 registry players, one Markdown card and one inter
 | [Efthimios Rentzias](rentzef01.md) | Free agent | 30 | sourced | [open](rentzef01.html) |
 | [Elden Campbell](campbel01.md) | Free agent | 37 | silhouette | [open](campbel01.html) |
 | [Erick Dampier](dampier01.md) | Sacramento Kings | 30 | sourced | [open](dampier01.html) |
-| [Ervin Johnson](johnser02.md) | Golden State Warriors | 38 | sourced | [open](johnser02.html) |
+| [Ervin Johnson](johnser02.md) | Free agent | 38 | sourced | [open](johnser02.html) |
 | [Etan Thomas](thomaet01.md) | Washington Wizards | 27 | silhouette | [open](thomaet01.html) |
 | [Evan Eschmeyer](eschmev01.md) | Free agent | 30 | silhouette | [open](eschmev01.html) |
 | [Francisco Elson](elsonfr01.md) | Sacramento Kings | 29 | silhouette | [open](elsonfr01.html) |
@@ -644,7 +644,7 @@ Card date: **2006-01-22**. 652 registry players, one Markdown card and one inter
 | [Lonny Baxter](baxtelo01.md) | Toronto Raptors | 26 | sourced | [open](baxtelo01.html) |
 | [Loren Woods](woodslo01.md) | Seattle SuperSonics | 27 | sourced | [open](woodslo01.html) |
 | [Lorenzen Wright](wrighlo02.md) | Minnesota Timberwolves | 30 | silhouette | [open](wrighlo02.html) |
-| [Luke Schenscher](schenlu01.md) | Cleveland Cavaliers | 23 | silhouette | [open](schenlu01.html) |
+| [Luke Schenscher](schenlu01.md) | Golden State Warriors | 23 | silhouette | [open](schenlu01.html) |
 | [Mamadou N'diaye](ndiayma02.md) | Free agent | 30 | silhouette | [open](ndiayma02.html) |
 | [Marc Jackson](jacksma02.md) | Philadelphia 76ers | 31 | sourced | [open](jacksma02.html) |
 | [Marcus Camby](cambyma01.md) | Minnesota Timberwolves | 31 | sourced | [open](cambyma01.html) |

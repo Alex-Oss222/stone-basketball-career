@@ -4,7 +4,7 @@
 
 NBA regular season · 2005-06
 
-407 tracked players · 593 closed games in this record · Through January 22, 2006.
+407 tracked players · 593 closed games in this record · Through January 23, 2006.
 
 ## Leaders
 
@@ -77,7 +77,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Kenny Anderson](../Players/anderke01.md) | 35 | NO | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Kevin Ollie](../Players/ollieke01.md) | 33 | SEA | NBA | PG | 37 | 0 | 13.6 | 1.1 | 2.3 | .453 | 0.1 | 0.1 | .600 | 1.0 | 2.2 | .444 | .471 | 0.3 | 0.5 | .647 | 0.4 | 1.2 | 1.6 | 1.7 | 0.6 | 0.0 | 0.5 | 1.2 | 2.5 | .492 |
 | [Kirk Hinrich](../Players/hinriki01.md) | 25 | CHI | NBA | PG | 39 | 39 | 40.2 | 6.5 | 15.6 | .414 | 1.8 | 4.7 | .388 | 4.6 | 10.9 | .425 | .472 | 3.4 | 4.3 | .792 | 0.6 | 3.6 | 4.2 | 6.5 | 1.3 | 0.4 | 2.7 | 2.9 | 18.2 | .518 |
-| [Larry Hughes](../Players/hughela01.md) | 26 | WSH | NBA | PG | 16 | 16 | 34.0 | 5.4 | 11.7 | .465 | 0.5 | 1.9 | .267 | 4.9 | 9.8 | .503 | .487 | 2.1 | 3.6 | .579 | 0.9 | 4.2 | 5.1 | 3.4 | 1.1 | 0.3 | 1.8 | 3.6 | 13.4 | .507 |
+| [Larry Hughes](../Players/hughela01.md) | 27 | WSH | NBA | PG | 16 | 16 | 34.0 | 5.4 | 11.7 | .465 | 0.5 | 1.9 | .267 | 4.9 | 9.8 | .503 | .487 | 2.1 | 3.6 | .579 | 0.9 | 4.2 | 5.1 | 3.4 | 1.1 | 0.3 | 1.8 | 3.6 | 13.4 | .507 |
 | [Lindsey Hunter](../Players/hunteli01.md) | 35 | TOR | NBA | PG | 3 | 0 | 10.4 | 1.0 | 2.7 | .375 | 0.0 | 1.0 | .000 | 1.0 | 1.7 | .600 | .375 | 0.0 | 0.7 | .000 | 1.0 | 0.7 | 1.7 | 1.0 | 0.0 | 0.0 | 0.3 | 1.0 | 2.0 | .338 |
 | [Luke Ridnour](../Players/ridnolu01.md) | 24 | SEA | NBA | PG | 40 | 40 | 37.8 | 5.7 | 12.9 | .438 | 0.7 | 2.4 | .281 | 5.0 | 10.6 | .474 | .464 | 3.4 | 4.0 | .839 | 0.7 | 3.6 | 4.3 | 6.2 | 1.5 | 0.4 | 2.9 | 2.9 | 15.4 | .523 |
 | [Marcus Banks](../Players/banksma01.md) | 24 | BOS | NBA | PG | 27 | 0 | 12.7 | 2.1 | 4.3 | .483 | 0.3 | 0.7 | .350 | 1.8 | 3.6 | .510 | .513 | 1.1 | 1.4 | .795 | 0.4 | 1.3 | 1.7 | 2.0 | 0.3 | 0.0 | 0.9 | 1.2 | 5.6 | .563 |
@@ -742,7 +742,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | --- | --- | ---: | --- |
 | [November 2005](11_November/League_Stats.md) | November 1-30, 2005 | 216 | Complete |
 | [December 2005](12_December/League_Stats.md) | December 1-31, 2005 | 218 | Complete |
-| [January 2006](01_January/League_Stats.md) | January 1-31, 2006 | 159 | Through January 22, 2006 |
+| [January 2006](01_January/League_Stats.md) | January 1-31, 2006 | 159 | Through January 23, 2006 |
 | [February 2006](02_February/League_Stats.md) | February 1-28, 2006 | 0 | Not started |
 | [March 2006](03_March/League_Stats.md) | March 1-31, 2006 | 0 | Not started |
 | [April 2006](04_April/League_Stats.md) | April 1-30, 2006 | 0 | Not started |

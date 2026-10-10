@@ -2,9 +2,9 @@
 
 # Contract | Charles Smith
 
-Known through: 2006-01-22. [Open interactive contract](smithch04.html#contract) · [Contract history](smithch04.html#contract-history)
+Known through: 2006-01-23. [Open interactive contract](smithch04.html#contract) · [Contract history](smithch04.html#contract-history)
 
-Charles Smith: under contract. Evidence cutoff: 2006-01-22.
+Charles Smith: under contract. Evidence cutoff: 2006-01-23.
 
 ## Current contract
 

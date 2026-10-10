@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-01-22",
+  "as_of": "2006-01-23",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1958,7 +1958,7 @@
     {
       "player_id": "johnser02",
       "name": "Ervin Johnson",
-      "team": "Golden State Warriors",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "johnser02-existing-d23ec1018463",
       "recorded_agreements": 1,
@@ -3488,7 +3488,7 @@
     {
       "player_id": "schenlu01",
       "name": "Luke Schenscher",
-      "team": "Cleveland Cavaliers",
+      "team": "Golden State Warriors",
       "status": "under contract",
       "current_contract_id": "schenlu01-2005-08-02",
       "recorded_agreements": 1,

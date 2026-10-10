@@ -2,9 +2,9 @@
 
 # Contract | Luke Schenscher
 
-Known through: 2006-01-22. [Open interactive contract](schenlu01.html#contract) · [Contract history](schenlu01.html#contract-history)
+Known through: 2006-01-23. [Open interactive contract](schenlu01.html#contract) · [Contract history](schenlu01.html#contract-history)
 
-Luke Schenscher: under contract. Evidence cutoff: 2006-01-22.
+Luke Schenscher: under contract. Evidence cutoff: 2006-01-23.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Luke Schenscher |
-| Club / rights baseline | Cleveland Cavaliers |
+| Club / rights baseline | Golden State Warriors |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

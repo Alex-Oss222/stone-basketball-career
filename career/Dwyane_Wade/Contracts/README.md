@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-01-22. [Search the contract directory](index.html)
+Known through 2006-01-23. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -225,7 +225,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Erick Dampier](players/dampier01.md) | Sacramento Kings | under contract | Erick Dampier · 2004-07-14 | 1 |
 | [Erick Strickland](players/stricer01.md) | Free agent | under contract | No verified current agreement | 2 |
 | [Erik Daniels](players/erikdaniels.md) | Free agent | under contract | No verified current agreement | 1 |
-| [Ervin Johnson](players/johnser02.md) | Golden State Warriors | under contract | Ervin Johnson · existing contract; signing date not recorded | 1 |
+| [Ervin Johnson](players/johnser02.md) | Free agent | under contract | Ervin Johnson · existing contract; signing date not recorded | 1 |
 | [Esteban Batista](players/batises01.md) | Houston Rockets | under contract | Esteban Batista · 2005-08-02 | 1 |
 | [Etan Thomas](players/thomaet01.md) | Washington Wizards | under contract | Etan Thomas · 2004-07-14 | 2 |
 | [Evan Eschmeyer](players/eschmev01.md) | Free agent | under contract | Evan Eschmeyer · 2001-08-08 | 1 |
@@ -396,7 +396,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Luis Flores](players/luisflores.md) | Free agent | under contract | No verified current agreement | 1 |
 | [Luke Jackson](players/lukejackson.md) | Portland Trail Blazers | under contract | Luke Jackson · 2004-07-01 | 1 |
 | [Luke Ridnour](players/ridnolu01.md) | Charlotte Bobcats | No verified contract record | No verified current agreement | 0 |
-| [Luke Schenscher](players/schenlu01.md) | Cleveland Cavaliers | under contract | Luke Schenscher · 2005-08-02 | 1 |
+| [Luke Schenscher](players/schenlu01.md) | Golden State Warriors | under contract | Luke Schenscher · 2005-08-02 | 1 |
 | [Luke Walton](players/waltolu01.md) | Los Angeles Lakers | under contract | Luke Walton · 2005-09-30 | 1 |
 | [Luol Deng](players/luoldeng.md) | Boston Celtics | under contract | Luol Deng · 2004-07-01 | 1 |
 | [Maceo Baston](players/bastoma01.md) | Free agent | No verified contract record | No verified current agreement | 0 |

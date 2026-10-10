@@ -2,9 +2,9 @@
 
 # Contract | Matt Harpring
 
-Known through: 2006-01-22. [Open interactive contract](harprma01.html#contract) · [Contract history](harprma01.html#contract-history)
+Known through: 2006-01-23. [Open interactive contract](harprma01.html#contract) · [Contract history](harprma01.html#contract-history)
 
-Matt Harpring: traded. Evidence cutoff: 2006-01-22.
+Matt Harpring: traded. Evidence cutoff: 2006-01-23.
 
 ## Current contract
 

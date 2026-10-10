@@ -1563,6 +1563,110 @@
     }
    ],
    "winner": "Kobe Bryant"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-01-16-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2006-01-16",
+   "period_end": "2006-01-22",
+   "announced_on": "2006-01-23",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/01_January/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 30.0,
+     "reb": 7.2,
+     "ast": 4.5,
+     "game_score": 22.27,
+     "score": 95.1,
+     "rank": 1
+    },
+    {
+     "player": "Sam Cassell",
+     "team": "Detroit Pistons",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 25.2,
+     "reb": 5.0,
+     "ast": 6.0,
+     "game_score": 20.18,
+     "score": 89.7,
+     "rank": 2
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 33.0,
+     "reb": 5.0,
+     "ast": 5.0,
+     "game_score": 27.33,
+     "score": 88.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Paul Pierce"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-01-16-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2006-01-16",
+   "period_end": "2006-01-22",
+   "announced_on": "2006-01-23",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/01_January/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 3,
+     "wins": 1,
+     "losses": 2,
+     "pts": 31.3,
+     "reb": 9.3,
+     "ast": 2.7,
+     "game_score": 30.0,
+     "score": 93.0,
+     "rank": 1
+    },
+    {
+     "player": "Elton Brand",
+     "team": "Los Angeles Clippers",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 23.5,
+     "reb": 7.0,
+     "ast": 2.2,
+     "game_score": 21.3,
+     "score": 88.2,
+     "rank": 2
+    },
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 0,
+     "losses": 4,
+     "pts": 30.0,
+     "reb": 4.5,
+     "ast": 8.2,
+     "game_score": 21.7,
+     "score": 86.8,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
   }
  ]
 }

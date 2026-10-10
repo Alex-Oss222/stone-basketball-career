@@ -2,9 +2,9 @@
 
 # Contract | Derrick Zimmerman
 
-Known through: 2006-01-22. [Open interactive contract](zimmede01.html#contract) · [Contract history](zimmede01.html#contract-history)
+Known through: 2006-01-23. [Open interactive contract](zimmede01.html#contract) · [Contract history](zimmede01.html#contract-history)
 
-Derrick Zimmerman: under contract. Evidence cutoff: 2006-01-22.
+Derrick Zimmerman: under contract. Evidence cutoff: 2006-01-23.
 
 ## Current contract
 

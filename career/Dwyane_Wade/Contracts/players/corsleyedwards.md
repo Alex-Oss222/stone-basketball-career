@@ -2,9 +2,9 @@
 
 # Contract | Corsley Edwards
 
-Known through: 2006-01-22. [Open interactive contract](corsleyedwards.html#contract) · [Contract history](corsleyedwards.html#contract-history)
+Known through: 2006-01-23. [Open interactive contract](corsleyedwards.html#contract) · [Contract history](corsleyedwards.html#contract-history)
 
-Corsley Edwards: under contract. Evidence cutoff: 2006-01-22.
+Corsley Edwards: under contract. Evidence cutoff: 2006-01-23.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Randy Holcomb
 
-Known through: 2006-01-22. [Open interactive contract](holcora01.html#contract) · [Contract history](holcora01.html#contract-history)
+Known through: 2006-01-23. [Open interactive contract](holcora01.html#contract) · [Contract history](holcora01.html#contract-history)
 
-Randy Holcomb: under contract. Evidence cutoff: 2006-01-22.
+Randy Holcomb: under contract. Evidence cutoff: 2006-01-23.
 
 ## Current contract
 

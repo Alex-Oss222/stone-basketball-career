@@ -3073,6 +3073,86 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 5.37 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-23-expire-schenlu01",
+   "date": "2006-01-23",
+   "kind": "expire",
+   "player": "Luke Schenscher",
+   "bbr_id": "schenlu01",
+   "from": "Cleveland Cavaliers",
+   "to": null,
+   "role": {
+    "player_id": "Luke Schenscher",
+    "bbr_id": "schenlu01",
+    "position": "C",
+    "games": 20,
+    "minutes": 149
+   },
+   "contract": null,
+   "note": "10-day contract ended (5.3 minutes a game)"
+  },
+  {
+   "id": "2005-06-market-2006-01-23-waive-johnser02",
+   "date": "2006-01-23",
+   "kind": "waive",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": "Golden State Warriors",
+   "to": null,
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2006-01-25"
+  },
+  {
+   "id": "2005-06-market-2006-01-23-ten_day-schenlu01",
+   "date": "2006-01-23",
+   "kind": "ten_day",
+   "player": "Luke Schenscher",
+   "bbr_id": "schenlu01",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Luke Schenscher",
+    "bbr_id": "schenlu01",
+    "position": "C",
+    "games": 20,
+    "minutes": 149
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-02",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.3 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-23-ten_day-robinbe01",
+   "date": "2006-01-23",
+   "kind": "ten_day",
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Bernard Robinson",
+    "bbr_id": "robinbe01",
+    "position": "SF",
+    "games": 66,
+    "minutes": 1303
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-02",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 0.0 x fit"
   }
  ],
  "market_days": [
@@ -3158,6 +3238,7 @@
   "2006-01-19",
   "2006-01-20",
   "2006-01-21",
-  "2006-01-22"
+  "2006-01-22",
+  "2006-01-23"
  ]
 }

@@ -2,9 +2,9 @@
 
 # Contract | Joseph Forte
 
-Known through: 2006-01-22. [Open interactive contract](fortejo01.html#contract) · [Contract history](fortejo01.html#contract-history)
+Known through: 2006-01-23. [Open interactive contract](fortejo01.html#contract) · [Contract history](fortejo01.html#contract-history)
 
-Joseph Forte: under rookie contract. Evidence cutoff: 2006-01-22.
+Joseph Forte: under rookie contract. Evidence cutoff: 2006-01-23.
 
 ## Current contract
 

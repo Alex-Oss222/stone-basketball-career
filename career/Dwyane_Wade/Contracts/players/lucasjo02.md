@@ -2,9 +2,9 @@
 
 # Contract | John Lucas III
 
-Known through: 2006-01-22. [Open interactive contract](lucasjo02.html#contract) · [Contract history](lucasjo02.html#contract-history)
+Known through: 2006-01-23. [Open interactive contract](lucasjo02.html#contract) · [Contract history](lucasjo02.html#contract-history)
 
-John Lucas III: under contract. Evidence cutoff: 2006-01-22.
+John Lucas III: under contract. Evidence cutoff: 2006-01-23.
 
 ## Current contract
 
