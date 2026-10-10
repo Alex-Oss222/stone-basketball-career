@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG / PG  
 **Age at assessment:** 19 · **Height:** 6-6 in shoes · **Weight:** 220 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2006-01-17 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2006-01-18 
 
 **Contract/control:** Existing contract: 2 season(s) from 2005-06, $5,727,802 scheduled ($2,526,600 in 2005-06). (register, 2006-01-16) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at SG, staff plan 40 minutes (staff rotation dated 2006-01-04, [record](../Depth_Chart/Reviews/2006-01-04/rotation.json)).
+**Role:** Starter at SG, staff plan 40 minutes (staff rotation dated 2006-01-18, [record](../Depth_Chart/Reviews/2006-01-18/rotation.json)).
 
 **Offense:** Attacks closeouts and ball screens, gets to the paint, finishes through guard contact and can create passes when help commits.
 
@@ -110,6 +110,7 @@ Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.105. Pressure concerns affect t
 | 2005-12-07 | Staff rotation of 2005-12-07: starter at SG, staff plan 40 minutes. | [Rotation](../Depth_Chart/Reviews/2005-12-07/rotation.json) |
 | 2005-12-21 | Staff rotation of 2005-12-21: starter at SG, staff plan 40 minutes. | [Rotation](../Depth_Chart/Reviews/2005-12-21/rotation.json) |
 | 2006-01-04 | Staff rotation of 2006-01-04: starter at SG, staff plan 40 minutes. | [Rotation](../Depth_Chart/Reviews/2006-01-04/rotation.json) |
+| 2006-01-18 | Staff rotation of 2006-01-18: starter at SG, staff plan 40 minutes. | [Rotation](../Depth_Chart/Reviews/2006-01-18/rotation.json) |
 
 ## Sources and uncertainty
 
@@ -117,7 +118,7 @@ Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.105. Pressure concerns affect t
   - [Dwyane Wade career profile](../../../../Dwyane_Wade_Player_Profile.md)
   - [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json)
   - https://www.basketball-reference.com/players/w/wadedw01.html
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-01-04.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2006-01-18.
 
 <!-- yearly-statistics:start -->
 
