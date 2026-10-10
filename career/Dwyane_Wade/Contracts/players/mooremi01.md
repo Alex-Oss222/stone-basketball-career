@@ -2,9 +2,9 @@
 
 # Contract | Mikki Moore
 
-Known through: 2006-03-12. [Open interactive contract](mooremi01.html#contract) · [Contract history](mooremi01.html#contract-history)
+Known through: 2006-03-13. [Open interactive contract](mooremi01.html#contract) · [Contract history](mooremi01.html#contract-history)
 
-Mikki Moore: under contract. Evidence cutoff: 2006-03-12.
+Mikki Moore: under contract. Evidence cutoff: 2006-03-13.
 
 ## Current contract
 

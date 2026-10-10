@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-03-12**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-03-13**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -23,7 +23,7 @@ Card date: **2006-03-12**. 653 registry players, one Markdown card and one inter
 | [Baron Davis](davisba01.md) | New Orleans/Oklahoma City Hornets | 26 | sourced | [open](davisba01.html) |
 | [Beno Udrih](benoudrih.md) | Sacramento Kings | 23 | silhouette | [open](benoudrih.html) |
 | [Bimbo Coles](colesbi01.md) | Free agent | 37 | sourced | [open](colesbi01.html) |
-| [Bobby Jackson](jacksbo01.md) | Detroit Pistons | 32 | sourced | [open](jacksbo01.html) |
+| [Bobby Jackson](jacksbo01.md) | Detroit Pistons | 33 | sourced | [open](jacksbo01.html) |
 | [Brandin Knight](brandinknight.md) | Free agent | 24 | silhouette | [open](brandinknight.html) |
 | [Brevin Knight](knighbr01.md) | Portland Trail Blazers | 30 | sourced | [open](knighbr01.html) |
 | [Brian Shaw](shawbr01.md) | Free agent | 39 | sourced | [open](shawbr01.html) |
@@ -135,7 +135,7 @@ Card date: **2006-03-12**. 653 registry players, one Markdown card and one inter
 | [Travis Best](besttr01.md) | Free agent | 33 | sourced | [open](besttr01.html) |
 | [Travis Diener](dienetr01.md) | San Antonio Spurs | 24 | silhouette | [open](dienetr01.html) |
 | [Troy Bell](belltr01.md) | Free agent | 25 | silhouette | [open](belltr01.html) |
-| [Troy Hudson](hudsotr01.md) | Utah Jazz | 29 | sourced | [open](hudsotr01.html) |
+| [Troy Hudson](hudsotr01.md) | Utah Jazz | 30 | sourced | [open](hudsotr01.html) |
 | [Tyronn Lue](luety01.md) | Toronto Raptors | 28 | sourced | [open](luety01.html) |
 | [Will Bynum](bynumwi01.md) | Phoenix Suns | 23 | silhouette | [open](bynumwi01.html) |
 | [Šarūnas Jasikevičius](jasiksa01.md) | Cleveland Cavaliers | 30 | silhouette | [open](jasiksa01.html) |
@@ -290,7 +290,7 @@ Card date: **2006-03-12**. 653 registry players, one Markdown card and one inter
 | [Bruce Bowen](bowenbr01.md) | Sacramento Kings | 34 | sourced | [open](bowenbr01.html) |
 | [Bryon Russell](russebr01.md) | Houston Rockets | 35 | silhouette | [open](russebr01.html) |
 | [Carmelo Anthony](anthoca01.md) | Denver Nuggets | 21 | sourced | [open](anthoca01.html) |
-| [Caron Butler](butleca01.md) | Miami Heat | 25 | sourced | [open](butleca01.html) |
+| [Caron Butler](butleca01.md) | Miami Heat | 26 | sourced | [open](butleca01.html) |
 | [Casey Jacobsen](jacobca01.md) | Phoenix Suns | 24 | silhouette | [open](jacobca01.html) |
 | [Chris Jefferies](jeffech01.md) | Free agent | 26 | silhouette | [open](jeffech01.html) |
 | [Chris Owens](owensch01.md) | Free agent | 27 | sourced | [open](owensch01.html) |

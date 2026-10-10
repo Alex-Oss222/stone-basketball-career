@@ -2,9 +2,9 @@
 
 # Contract | Darrick Martin
 
-Known through: 2006-03-12. [Open interactive contract](martida01.html#contract) · [Contract history](martida01.html#contract-history)
+Known through: 2006-03-13. [Open interactive contract](martida01.html#contract) · [Contract history](martida01.html#contract-history)
 
-Darrick Martin: under contract. Evidence cutoff: 2006-03-12.
+Darrick Martin: under contract. Evidence cutoff: 2006-03-13.
 
 ## Current contract
 

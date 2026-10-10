@@ -2,9 +2,9 @@
 
 # Contract | Britton Johnsen
 
-Known through: 2006-03-12. [Open interactive contract](johnsbr01.html#contract) · [Contract history](johnsbr01.html#contract-history)
+Known through: 2006-03-13. [Open interactive contract](johnsbr01.html#contract) · [Contract history](johnsbr01.html#contract-history)
 
-Britton Johnsen: under contract. Evidence cutoff: 2006-03-12.
+Britton Johnsen: under contract. Evidence cutoff: 2006-03-13.
 
 ## Current contract
 

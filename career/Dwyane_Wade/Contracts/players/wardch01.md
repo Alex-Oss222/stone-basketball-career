@@ -2,9 +2,9 @@
 
 # Contract | Charlie Ward
 
-Known through: 2006-03-12. [Open interactive contract](wardch01.html#contract) · [Contract history](wardch01.html#contract-history)
+Known through: 2006-03-13. [Open interactive contract](wardch01.html#contract) · [Contract history](wardch01.html#contract-history)
 
-Charlie Ward: under contract. Evidence cutoff: 2006-03-12.
+Charlie Ward: under contract. Evidence cutoff: 2006-03-13.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Baron Davis
 
-Known through: 2006-03-12. [Open interactive contract](davisba01.html#contract) · [Contract history](davisba01.html#contract-history)
+Known through: 2006-03-13. [Open interactive contract](davisba01.html#contract) · [Contract history](davisba01.html#contract-history)
 
-Baron Davis: under contract. Evidence cutoff: 2006-03-12.
+Baron Davis: under contract. Evidence cutoff: 2006-03-13.
 
 ## Current contract
 

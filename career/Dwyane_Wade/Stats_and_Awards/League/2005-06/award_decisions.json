@@ -2707,6 +2707,110 @@
     }
    ],
    "winner": "Dirk Nowitzki"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-03-06-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2006-03-06",
+   "period_end": "2006-03-12",
+   "announced_on": "2006-03-13",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/03_March/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Mike James",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 24.0,
+     "reb": 3.2,
+     "ast": 4.8,
+     "game_score": 20.1,
+     "score": 92.4,
+     "rank": 1
+    },
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 24.5,
+     "reb": 5.8,
+     "ast": 5.8,
+     "game_score": 20.05,
+     "score": 92.2,
+     "rank": 2
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 21.5,
+     "reb": 4.5,
+     "ast": 2.2,
+     "game_score": 19.32,
+     "score": 89.3,
+     "rank": 3
+    }
+   ],
+   "winner": "Mike James"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-03-06-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2006-03-06",
+   "period_end": "2006-03-12",
+   "announced_on": "2006-03-13",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/03_March/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 31.8,
+     "reb": 9.8,
+     "ast": 1.8,
+     "game_score": 24.82,
+     "score": 108.3,
+     "rank": 1
+    },
+    {
+     "player": "Mike Bibby",
+     "team": "Sacramento Kings",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 25.2,
+     "reb": 1.2,
+     "ast": 5.8,
+     "game_score": 19.78,
+     "score": 88.1,
+     "rank": 2
+    },
+    {
+     "player": "Pau Gasol",
+     "team": "Memphis Grizzlies",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 23.8,
+     "reb": 8.0,
+     "ast": 6.0,
+     "game_score": 19.75,
+     "score": 85.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Dirk Nowitzki"
   }
  ]
 }
