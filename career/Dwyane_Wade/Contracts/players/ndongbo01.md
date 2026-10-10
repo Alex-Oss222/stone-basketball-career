@@ -2,9 +2,9 @@
 
 # Contract | Boniface N'Dong
 
-Known through: 2006-01-01. [Open interactive contract](ndongbo01.html#contract) · [Contract history](ndongbo01.html#contract-history)
+Known through: 2006-01-02. [Open interactive contract](ndongbo01.html#contract) · [Contract history](ndongbo01.html#contract-history)
 
-Boniface N'Dong: under contract. Evidence cutoff: 2006-01-01.
+Boniface N'Dong: under contract. Evidence cutoff: 2006-01-02.
 
 ## Current contract
 

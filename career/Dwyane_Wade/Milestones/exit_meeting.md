@@ -2,7 +2,7 @@
 
 # Season exit meeting | Dwyane Wade
 
-Career date: 2006-01-01 · Miami Heat · inactive
+Career date: 2006-01-02 · Miami Heat · inactive
 
 [Live milestone desk](index.html#exit_meeting) · [All milestones](README.md)
 

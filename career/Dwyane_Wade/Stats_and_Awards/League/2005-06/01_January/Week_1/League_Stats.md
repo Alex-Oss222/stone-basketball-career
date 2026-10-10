@@ -4,7 +4,7 @@
 
 NBA regular season · January 1-7, 2006
 
-407 tracked players · 3 closed games in this record · Through January 1, 2006.
+407 tracked players · 3 closed games in this record · Through January 2, 2006.
 
 ## Leaders
 
@@ -76,7 +76,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Kareem Rush](../../../Players/rushka01.md) | 25 | LAL | NBA | PG | 1 | 1 | 22.5 | 3.0 | 9.0 | .333 | 1.0 | 5.0 | .200 | 2.0 | 4.0 | .500 | .389 | 0.0 | 0.0 | N/A | 0.0 | 3.0 | 3.0 | 1.0 | 0.0 | 0.0 | 2.0 | 4.0 | 7.0 | .389 |
 | [Kenny Anderson](../../../Players/anderke01.md) | 35 | NO | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Kevin Ollie](../../../Players/ollieke01.md) | 33 | SEA | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Kirk Hinrich](../../../Players/hinriki01.md) | 24 | CHI | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [Kirk Hinrich](../../../Players/hinriki01.md) | 25 | CHI | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Larry Hughes](../../../Players/hughela01.md) | 26 | WSH | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Lindsey Hunter](../../../Players/hunteli01.md) | 35 | TOR | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Luke Ridnour](../../../Players/ridnolu01.md) | 24 | SEA | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |

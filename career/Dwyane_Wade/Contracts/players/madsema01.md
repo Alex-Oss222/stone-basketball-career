@@ -2,9 +2,9 @@
 
 # Contract | Mark Madsen
 
-Known through: 2006-01-01. [Open interactive contract](madsema01.html#contract) · [Contract history](madsema01.html#contract-history)
+Known through: 2006-01-02. [Open interactive contract](madsema01.html#contract) · [Contract history](madsema01.html#contract-history)
 
-Mark Madsen: under contract. Evidence cutoff: 2006-01-01.
+Mark Madsen: under contract. Evidence cutoff: 2006-01-02.
 
 ## Current contract
 

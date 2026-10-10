@@ -2,9 +2,9 @@
 
 # Contract | Devin Green
 
-Known through: 2006-01-01. [Open interactive contract](greende01.html#contract) · [Contract history](greende01.html#contract-history)
+Known through: 2006-01-02. [Open interactive contract](greende01.html#contract) · [Contract history](greende01.html#contract-history)
 
-Devin Green: under contract. Evidence cutoff: 2006-01-01.
+Devin Green: under contract. Evidence cutoff: 2006-01-02.
 
 ## Current contract
 

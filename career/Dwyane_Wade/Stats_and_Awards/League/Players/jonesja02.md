@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `jonesja02.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-01-01 · **Club on this date:** Orlando Magic · **Basis:** Orlando Magic: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-01-02 · **Club on this date:** Orlando Magic · **Basis:** Orlando Magic: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #22 · **Born:** 1980-10-04 · **Age on card date:** 25  
 **Registry ID:** `jonesja02` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jonesja02.html) · ESPN ID 2009
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jonesj
 
 ## Simulated statistics
 
-As of **2006-01-01**: 27 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-01-02**: 27 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2005-06 is simulated: 27 closed regular-season games through 2006-01-01. Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2005-06 is simulated: 27 closed regular-season games through 2006-01-02. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -122,4 +122,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2006-01-01. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2006-01-02. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

@@ -2,9 +2,9 @@
 
 # Contract | Damien Wilkins
 
-Known through: 2006-01-01. [Open interactive contract](damienwilkins.html#contract) · [Contract history](damienwilkins.html#contract-history)
+Known through: 2006-01-02. [Open interactive contract](damienwilkins.html#contract) · [Contract history](damienwilkins.html#contract-history)
 
-Damien Wilkins: under contract. Evidence cutoff: 2006-01-01.
+Damien Wilkins: under contract. Evidence cutoff: 2006-01-02.
 
 ## Current contract
 

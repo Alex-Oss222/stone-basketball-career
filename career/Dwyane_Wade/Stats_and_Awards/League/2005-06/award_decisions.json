@@ -1043,6 +1043,318 @@
     }
    ],
    "winner": "Kobe Bryant"
+  },
+  {
+   "id": "2005-06-player_of_month-2005-12-01-east",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "East",
+   "period_start": "2005-12-01",
+   "period_end": "2005-12-31",
+   "announced_on": "2006-01-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Chris Bosh",
+     "team": "Toronto Raptors",
+     "games": 13,
+     "wins": 11,
+     "losses": 2,
+     "pts": 23.5,
+     "reb": 9.7,
+     "ast": 3.5,
+     "game_score": 20.17,
+     "score": 30.323,
+     "rank": 1
+    },
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 14,
+     "wins": 10,
+     "losses": 4,
+     "pts": 28.7,
+     "reb": 6.0,
+     "ast": 5.4,
+     "game_score": 21.55,
+     "score": 30.121,
+     "rank": 2
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 16,
+     "wins": 10,
+     "losses": 6,
+     "pts": 24.1,
+     "reb": 5.9,
+     "ast": 4.1,
+     "game_score": 21.23,
+     "score": 28.725,
+     "rank": 3
+    }
+   ],
+   "winner": "Chris Bosh"
+  },
+  {
+   "id": "2005-06-player_of_month-2005-12-01-west",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "West",
+   "period_start": "2005-12-01",
+   "period_end": "2005-12-31",
+   "announced_on": "2006-01-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 14,
+     "wins": 12,
+     "losses": 2,
+     "pts": 26.6,
+     "reb": 12.4,
+     "ast": 3.6,
+     "game_score": 23.21,
+     "score": 33.493,
+     "rank": 1
+    },
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 16,
+     "wins": 9,
+     "losses": 7,
+     "pts": 26.5,
+     "reb": 9.2,
+     "ast": 3.2,
+     "game_score": 20.97,
+     "score": 27.719,
+     "rank": 2
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 16,
+     "wins": 8,
+     "losses": 8,
+     "pts": 21.1,
+     "reb": 12.3,
+     "ast": 1.9,
+     "game_score": 20.76,
+     "score": 26.762,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-12-26-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-12-26",
+   "period_end": "2006-01-01",
+   "announced_on": "2006-01-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/01_January/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 24.5,
+     "reb": 6.0,
+     "ast": 3.5,
+     "game_score": 21.48,
+     "score": 97.9,
+     "rank": 1
+    },
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 26.0,
+     "reb": 5.5,
+     "ast": 5.5,
+     "game_score": 19.47,
+     "score": 86.9,
+     "rank": 2
+    },
+    {
+     "player": "Mike James",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 21.0,
+     "reb": 3.8,
+     "ast": 8.0,
+     "game_score": 18.48,
+     "score": 85.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwyane Wade"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-12-26-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-12-26",
+   "period_end": "2006-01-01",
+   "announced_on": "2006-01-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/01_January/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 24.5,
+     "reb": 12.0,
+     "ast": 4.2,
+     "game_score": 20.7,
+     "score": 91.8,
+     "rank": 1
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 23.8,
+     "reb": 13.0,
+     "ast": 1.0,
+     "game_score": 20.18,
+     "score": 86.7,
+     "rank": 2
+    },
+    {
+     "player": "Joe Johnson",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 24.0,
+     "reb": 4.0,
+     "ast": 7.2,
+     "game_score": 17.25,
+     "score": 75.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2005-06-rookie_of_month-2005-12-01-east",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "East",
+   "period_start": "2005-12-01",
+   "period_end": "2005-12-31",
+   "announced_on": "2006-01-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Chuck Hayes",
+     "team": "Atlanta Hawks",
+     "games": 7,
+     "wins": 5,
+     "losses": 2,
+     "pts": 6.6,
+     "reb": 6.7,
+     "ast": 1.0,
+     "game_score": 7.96,
+     "score": 10.814,
+     "rank": 1
+    },
+    {
+     "player": "Channing Frye",
+     "team": "New Jersey Nets",
+     "games": 9,
+     "wins": 6,
+     "losses": 3,
+     "pts": 10.0,
+     "reb": 5.8,
+     "ast": 1.2,
+     "game_score": 6.56,
+     "score": 9.222,
+     "rank": 2
+    },
+    {
+     "player": "Ike Diogu",
+     "team": "Charlotte Bobcats",
+     "games": 10,
+     "wins": 3,
+     "losses": 7,
+     "pts": 10.8,
+     "reb": 4.9,
+     "ast": 0.7,
+     "game_score": 7.94,
+     "score": 9.14,
+     "rank": 3
+    }
+   ],
+   "winner": "Chuck Hayes"
+  },
+  {
+   "id": "2005-06-rookie_of_month-2005-12-01-west",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "West",
+   "period_start": "2005-12-01",
+   "period_end": "2005-12-31",
+   "announced_on": "2006-01-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Chris Paul",
+     "team": "Utah Jazz",
+     "games": 15,
+     "wins": 8,
+     "losses": 7,
+     "pts": 20.9,
+     "reb": 4.8,
+     "ast": 6.2,
+     "game_score": 17.98,
+     "score": 20.113,
+     "rank": 1
+    },
+    {
+     "player": "Charlie Villanueva",
+     "team": "Memphis Grizzlies",
+     "games": 14,
+     "wins": 6,
+     "losses": 8,
+     "pts": 14.3,
+     "reb": 6.7,
+     "ast": 1.4,
+     "game_score": 10.64,
+     "score": 12.35,
+     "rank": 2
+    },
+    {
+     "player": "Raymond Felton",
+     "team": "Dallas Mavericks",
+     "games": 16,
+     "wins": 9,
+     "losses": 7,
+     "pts": 11.4,
+     "reb": 3.6,
+     "ast": 4.9,
+     "game_score": 10.01,
+     "score": 12.256,
+     "rank": 3
+    }
+   ],
+   "winner": "Chris Paul"
   }
  ]
 }

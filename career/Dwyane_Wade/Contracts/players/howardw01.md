@@ -2,9 +2,9 @@
 
 # Contract | Dwight Howard
 
-Known through: 2006-01-01. [Open interactive contract](howardw01.html#contract) · [Contract history](howardw01.html#contract-history)
+Known through: 2006-01-02. [Open interactive contract](howardw01.html#contract) · [Contract history](howardw01.html#contract-history)
 
-Dwight Howard: under contract. Evidence cutoff: 2006-01-01.
+Dwight Howard: under contract. Evidence cutoff: 2006-01-02.
 
 ## Current contract
 

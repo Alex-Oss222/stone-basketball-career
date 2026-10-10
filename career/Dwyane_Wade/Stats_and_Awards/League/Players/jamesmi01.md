@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `jamesmi01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-01-01 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2005-06 register · **League:** NBA  
+**Card date:** 2006-01-02 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2005-06 register · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #13 · **Born:** 1975-06-23 · **Age on card date:** 30  
 **Registry ID:** `jamesmi01` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jamesmi01.html) · ESPN ID 1051
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jamesm
 
 ## Simulated statistics
 
-As of **2006-01-01**: 32 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-01-02**: 32 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 32 closed regular-season games through 2006-01-01. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 32 closed regular-season games through 2006-01-02. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -125,8 +125,9 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-01-01, from closed award decisions (1 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-01-02, from closed award decisions (1 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
 | East Player of the Week | 2004-04-12 to 2004-04-14 | 2004-04-15 | **Winner** | [Decision](../2003-04/04_April/Week_2/League_Awards.md) |
+| East Player of the Week | 2005-12-26 to 2006-01-01 | 2006-01-02 | Shortlist, No. 3 | [Decision](../2005-06/01_January/Week_1/League_Awards.md) |

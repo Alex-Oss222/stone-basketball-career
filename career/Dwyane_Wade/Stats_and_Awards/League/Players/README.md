@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-01-01**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-01-02**. 651 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -81,7 +81,7 @@ Card date: **2006-01-01**. 651 registry players, one Markdown card and one inter
 | [Kevin Burleson](burleke01.md) | Minnesota Timberwolves | 26 | silhouette | [open](burleke01.html) |
 | [Kevin Martin](kevinmartin.md) | Charlotte Bobcats | 22 | silhouette | [open](kevinmartin.html) |
 | [Kevin Ollie](ollieke01.md) | Cleveland Cavaliers | 33 | sourced | [open](ollieke01.html) |
-| [Kirk Hinrich](hinriki01.md) | Chicago Bulls | 24 | sourced | [open](hinriki01.html) |
+| [Kirk Hinrich](hinriki01.md) | Chicago Bulls | 25 | sourced | [open](hinriki01.html) |
 | [Larry Hughes](hughela01.md) | Indiana Pacers | 26 | sourced | [open](hughela01.html) |
 | [Lindsey Hunter](hunteli01.md) | Free agent | 35 | sourced | [open](hunteli01.html) |
 | [Lionel Chalmers](lionelchalmers.md) | Free agent | 25 | silhouette | [open](lionelchalmers.html) |
