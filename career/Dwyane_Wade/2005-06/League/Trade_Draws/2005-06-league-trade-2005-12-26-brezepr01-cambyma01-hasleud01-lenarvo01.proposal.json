@@ -1,0 +1,41 @@
+{
+ "id": "2005-06-league-trade-2005-12-26-brezepr01-cambyma01-hasleud01-lenarvo01",
+ "date": "2005-12-26",
+ "clubs": [
+  "Minnesota Timberwolves",
+  "Toronto Raptors"
+ ],
+ "a": {
+  "club": "Minnesota Timberwolves",
+  "sends": [
+   "Marcus Camby",
+   "Voshon Lenard"
+  ],
+  "bbr_ids": [
+   "cambyma01",
+   "lenarvo01"
+  ],
+  "salary": 13622310
+ },
+ "b": {
+  "club": "Toronto Raptors",
+  "sends": [
+   "Primož Brezec",
+   "Udonis Haslem"
+  ],
+  "bbr_ids": [
+   "brezepr01",
+   "hasleud01"
+  ],
+  "salary": 14037036
+ },
+ "gain": {
+  "Minnesota Timberwolves": 0.1,
+  "Toronto Raptors": 0.067
+ },
+ "accept": {
+  "Minnesota Timberwolves": 0.731,
+  "Toronto Raptors": 0.544
+ },
+ "both": 0.397664
+}

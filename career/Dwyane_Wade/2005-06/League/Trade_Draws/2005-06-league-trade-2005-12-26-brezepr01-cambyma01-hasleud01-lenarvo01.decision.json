@@ -1,0 +1,11 @@
+{
+ "event_id": "2005-06-league-trade-2005-12-26-brezepr01-cambyma01-hasleud01-lenarvo01",
+ "date": "2005-12-26",
+ "question": "Do Minnesota Timberwolves and Toronto Raptors trade Marcus Camby and Voshon Lenard for Primož Brezec and Udonis Haslem?",
+ "decider": "Minnesota Timberwolves and Toronto Raptors front offices (engine draw)",
+ "options": {
+  "accept": 0.397664,
+  "decline": 0.602336
+ },
+ "basis": "gains on own objectives {'Minnesota Timberwolves': 0.1, 'Toronto Raptors': 0.067}; acceptance {'Minnesota Timberwolves': 0.731, 'Toronto Raptors': 0.544}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

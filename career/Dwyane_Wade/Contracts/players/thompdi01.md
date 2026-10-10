@@ -2,9 +2,9 @@
 
 # Contract | Dijon Thompson
 
-Known through: 2005-12-25. [Open interactive contract](thompdi01.html#contract) · [Contract history](thompdi01.html#contract-history)
+Known through: 2005-12-26. [Open interactive contract](thompdi01.html#contract) · [Contract history](thompdi01.html#contract-history)
 
-Dijon Thompson: under contract. Evidence cutoff: 2005-12-25.
+Dijon Thompson: under contract. Evidence cutoff: 2005-12-26.
 
 ## Current contract
 

@@ -1,0 +1,12 @@
+{
+ "date": "2005-12-26",
+ "decider": "Minnesota Timberwolves and Toronto Raptors front offices (engine draw)",
+ "event_id": "2005-06-league-trade-2005-12-26-brezepr01-cambyma01-hasleud01-lenarvo01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.397664,
+  "decline": 0.602336
+ },
+ "outcome": "decline",
+ "question": "Do Minnesota Timberwolves and Toronto Raptors trade Marcus Camby and Voshon Lenard for Primo\u017e Brezec and Udonis Haslem?"
+}

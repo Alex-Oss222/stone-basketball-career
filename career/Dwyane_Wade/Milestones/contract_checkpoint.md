@@ -2,7 +2,7 @@
 
 # Contract checkpoint | Dwyane Wade
 
-Career date: 2005-12-25 · Miami Heat · active
+Career date: 2005-12-26 · Miami Heat · active
 
 [Live milestone desk](index.html#contract_checkpoint) · [All milestones](README.md)
 

@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 30 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** December 19, 2005 · **Statistics through:** 2005-12-25 
+**Opening assessment:** December 19, 2005 · **Statistics through:** 2005-12-26 
 
 **Contract/control:** Acquired by trade from Milwaukee Bucks on December 19, 2005: $6,353,200 in 2005-06; contract through 2006-07. (register, 2005-12-19) [Finance record](../../Finances/cap_sheet.md).
 

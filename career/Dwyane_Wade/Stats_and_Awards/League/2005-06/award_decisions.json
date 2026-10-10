@@ -939,6 +939,110 @@
     }
    ],
    "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-12-19-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2005-12-19",
+   "period_end": "2005-12-25",
+   "announced_on": "2005-12-26",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 21.8,
+     "reb": 4.5,
+     "ast": 5.8,
+     "game_score": 19.35,
+     "score": 86.4,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 3,
+     "wins": 1,
+     "losses": 2,
+     "pts": 28.3,
+     "reb": 6.3,
+     "ast": 4.3,
+     "game_score": 24.6,
+     "score": 76.8,
+     "rank": 2
+    },
+    {
+     "player": "Sam Cassell",
+     "team": "Detroit Pistons",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 21.0,
+     "reb": 5.2,
+     "ast": 7.2,
+     "game_score": 14.27,
+     "score": 66.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Chauncey Billups"
+  },
+  {
+   "id": "2005-06-player_of_week-2005-12-19-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2005-12-19",
+   "period_end": "2005-12-25",
+   "announced_on": "2005-12-26",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/12_December/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 3,
+     "wins": 1,
+     "losses": 2,
+     "pts": 31.0,
+     "reb": 9.0,
+     "ast": 5.7,
+     "game_score": 26.87,
+     "score": 83.6,
+     "rank": 1
+    },
+    {
+     "player": "Tim Duncan",
+     "team": "San Antonio Spurs",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 21.5,
+     "reb": 8.5,
+     "ast": 2.0,
+     "game_score": 17.7,
+     "score": 76.8,
+     "rank": 2
+    },
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 27.0,
+     "reb": 10.0,
+     "ast": 6.7,
+     "game_score": 22.7,
+     "score": 74.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Kobe Bryant"
   }
  ]
 }
