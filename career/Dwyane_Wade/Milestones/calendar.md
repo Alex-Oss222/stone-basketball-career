@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2005-12-02 · Miami Heat · active
+Career date: 2005-12-04 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,21 +14,21 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2005-12-02 |
+| Career date | 2005-12-04 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2005-11-30-miami-heat-at-atlanta-hawks |
+| Last closed event | 2005-12-03-miami-heat-at-denver-nuggets |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-12-02 | Current checkpoint | 2005-11-30-miami-heat-at-atlanta-hawks | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2005-12-04 | Current checkpoint | 2005-12-03-miami-heat-at-denver-nuggets | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2005-10-04 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2005-12-03 | Next Miami game, at Denver Nuggets | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2005-12-05 | Next Miami game, at Los Angeles Clippers | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
 | 2005-12-05 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2005-12-07 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | 2006-01-07 | Keep-or-waive review of non-guaranteed contracts | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
@@ -129,4 +129,6 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_3.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_4.md)
 - [Closed game](../2005-06/06_Regular_Season/11_November/Week_4/Game_5.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_1.md)
+- [Closed game](../2005-06/06_Regular_Season/12_December/Week_1/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

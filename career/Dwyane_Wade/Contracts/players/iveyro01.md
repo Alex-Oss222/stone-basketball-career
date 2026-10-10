@@ -2,9 +2,9 @@
 
 # Contract | Royal Ivey
 
-Known through: 2005-12-02. [Open interactive contract](iveyro01.html#contract) · [Contract history](iveyro01.html#contract-history)
+Known through: 2005-12-04. [Open interactive contract](iveyro01.html#contract) · [Contract history](iveyro01.html#contract-history)
 
-Royal Ivey: under contract. Evidence cutoff: 2005-12-02.
+Royal Ivey: under contract. Evidence cutoff: 2005-12-04.
 
 ## Current contract
 

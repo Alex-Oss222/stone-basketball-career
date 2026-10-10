@@ -2,9 +2,9 @@
 
 # Contract | Orien Greene
 
-Known through: 2005-12-02. [Open interactive contract](greenor01.html#contract) · [Contract history](greenor01.html#contract-history)
+Known through: 2005-12-04. [Open interactive contract](greenor01.html#contract) · [Contract history](greenor01.html#contract-history)
 
-Orien Greene: under contract. Evidence cutoff: 2005-12-02.
+Orien Greene: under contract. Evidence cutoff: 2005-12-04.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Randy Brown
 
-Known through: 2005-12-02. [Open interactive contract](brownra02.html#contract) · [Contract history](brownra02.html#contract-history)
+Known through: 2005-12-04. [Open interactive contract](brownra02.html#contract) · [Contract history](brownra02.html#contract-history)
 
-Randy Brown: unsigned free agent. Evidence cutoff: 2005-12-02.
+Randy Brown: unsigned free agent. Evidence cutoff: 2005-12-04.
 
 ## Current contract
 

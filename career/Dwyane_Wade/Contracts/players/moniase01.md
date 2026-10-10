@@ -2,9 +2,9 @@
 
 # Contract | Sergei Monia
 
-Known through: 2005-12-02. [Open interactive contract](moniase01.html#contract) · [Contract history](moniase01.html#contract-history)
+Known through: 2005-12-04. [Open interactive contract](moniase01.html#contract) · [Contract history](moniase01.html#contract-history)
 
-Sergei Monia: under contract. Evidence cutoff: 2005-12-02.
+Sergei Monia: under contract. Evidence cutoff: 2005-12-04.
 
 ## Current contract
 
