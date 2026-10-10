@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2006-02-09. [Search the contract directory](index.html)
+Known through 2006-02-12. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -110,7 +110,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Cezary Trybanski](players/trybace01.md) | Free agent | under contract | Cezary Trybanski · existing contract; signing date not recorded | 1 |
 | [Channing Frye](players/fryech01.md) | New Jersey Nets | under contract | Channing Frye · 2005-07-01 | 1 |
 | [Charles Oakley](players/oaklech01.md) | Free agent | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
-| [Charles Smith](players/smithch04.md) | Atlanta Hawks | under contract | Charles Smith · 2005-08-19 | 2 |
+| [Charles Smith](players/smithch04.md) | Chicago Bulls | under contract | Charles Smith · 2005-08-19 | 2 |
 | [Charlie Villanueva](players/villach01.md) | Memphis Grizzlies | under contract | Charlie Villanueva · 2005-07-01 | 1 |
 | [Charlie Ward](players/wardch01.md) | Free agent | under contract | No verified current agreement | 2 |
 | [Chauncey Billups](players/billuch01.md) | Detroit Pistons | under contract | Chauncey Billups · existing contract; signing date not recorded | 1 |
@@ -537,9 +537,9 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Roger Mason Jr.](players/masonro01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Ron Artest](players/artesro01.md) | Indiana Pacers | under contract unverified | No verified current agreement | 0 |
 | [Ron Mercer](players/mercero01.md) | Free agent | under contract | Ron Mercer · 2000-08-02 | 1 |
-| [Ronald Dupree](players/duprero01.md) | Chicago Bulls | under contract | Ronald Dupree · 2005-09-30 | 2 |
+| [Ronald Dupree](players/duprero01.md) | Free agent | under contract | Ronald Dupree · 2005-09-30 | 2 |
 | [Ronald Murray](players/murraro01.md) | Seattle SuperSonics | under contract | Ronald Murray · 2005-09-30 | 1 |
-| [Ronnie Price](players/pricero01.md) | Free agent | under contract | Ronnie Price · 2005-08-12 | 1 |
+| [Ronnie Price](players/pricero01.md) | Los Angeles Lakers | under contract | Ronnie Price · 2005-08-12 | 1 |
 | [Ronny Turiaf](players/turiaro01.md) | Boston Celtics | under contract | Ronny Turiaf · 2005-08-02 | 1 |
 | [Royal Ivey](players/iveyro01.md) | Sacramento Kings | under contract | Royal Ivey · 2005-08-05 | 2 |
 | [Ruben Boumtje-Boumtje](players/boumtru01.md) | Free agent | under contract | Ruben Boumtje-Boumtje · 2002-09-30 | 1 |
@@ -658,7 +658,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Zach Randolph](players/randoza01.md) | Portland Trail Blazers | under contract | Zach Randolph · 2005-08-19 | 2 |
 | [Zarko Cabarkapa](players/cabarza01.md) | Portland Trail Blazers | No verified contract record | No verified current agreement | 0 |
 | [Zaza Pachulia](players/pachuza01.md) | Orlando Magic | under contract | Zaza Pachulia · 2005-09-30 | 1 |
-| [Zeljko Rebraca](players/rebraze01.md) | Free agent | under contract | Zeljko Rebraca · 2005-08-19 | 2 |
+| [Zeljko Rebraca](players/rebraze01.md) | Sacramento Kings | under contract | Zeljko Rebraca · 2005-08-19 | 2 |
 | [Zendon Hamilton](players/hamilze01.md) | Phoenix Suns | under contract | Zendon Hamilton · 2005-08-02 | 1 |
 | [Zoran Planinic](players/planizo01.md) | Orlando Magic | No verified contract record | No verified current agreement | 0 |
 | [Zydrunas Ilgauskas](players/ilgauzy01.md) | Philadelphia 76ers | under contract | Zydrunas Ilgauskas · 2005-08-02 | 2 |

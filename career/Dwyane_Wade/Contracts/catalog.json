@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2006-02-09",
+  "as_of": "2006-02-12",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -923,7 +923,7 @@
     {
       "player_id": "smithch04",
       "name": "Charles Smith",
-      "team": "Atlanta Hawks",
+      "team": "Chicago Bulls",
       "status": "under contract",
       "current_contract_id": "smithch04-2005-08-19",
       "recorded_agreements": 2,
@@ -4757,7 +4757,7 @@
     {
       "player_id": "duprero01",
       "name": "Ronald Dupree",
-      "team": "Chicago Bulls",
+      "team": "Free agent",
       "status": "under contract",
       "current_contract_id": "duprero01-2005-09-30",
       "recorded_agreements": 2,
@@ -4775,7 +4775,7 @@
     {
       "player_id": "pricero01",
       "name": "Ronnie Price",
-      "team": "Free agent",
+      "team": "Los Angeles Lakers",
       "status": "under contract",
       "current_contract_id": "pricero01-2005-08-12",
       "recorded_agreements": 1,
@@ -5828,7 +5828,7 @@
     {
       "player_id": "rebraze01",
       "name": "Zeljko Rebraca",
-      "team": "Free agent",
+      "team": "Sacramento Kings",
       "status": "under contract",
       "current_contract_id": "rebraze01-2005-08-19",
       "recorded_agreements": 2,

@@ -4205,13 +4205,14 @@
   {
    "player": "Ronnie Price",
    "bbr_id": "pricero01",
-   "club": "Dallas Mavericks",
+   "club": "Los Angeles Lakers",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2005-06": 398762
    },
-   "source": "2005 simulated free agency"
+   "source": "2005 simulated free agency",
+   "signed_club": "Dallas Mavericks"
   },
   {
    "player": "Tayshaun Prince",
@@ -4326,7 +4327,7 @@
   {
    "player": "Zeljko Rebraca",
    "bbr_id": "rebraze01",
-   "club": "Atlanta Hawks",
+   "club": "Sacramento Kings",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -4604,7 +4605,7 @@
   {
    "player": "Charles Smith",
    "bbr_id": "smithch04",
-   "club": "Atlanta Hawks",
+   "club": "Chicago Bulls",
    "route": "minimum",
    "kind": "new",
    "schedule": {
@@ -5352,7 +5353,7 @@
   {
    "player": "walshma01",
    "bbr_id": "walshma01",
-   "club": "Cleveland Cavaliers",
+   "club": "Memphis Grizzlies",
    "route": "minimum",
    "kind": "new",
    "schedule": {

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2006-02-09",
+  "as_of": "2006-02-12",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 22,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2006-02-06-boston-celtics-at-miami-heat",
+  "current_event": "2006-02-12-detroit-pistons-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2006-02-09"
+              "2006-02-12"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2006-02-06-boston-celtics-at-miami-heat"
+              "2006-02-12-detroit-pistons-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2006-02-09",
+              "2006-02-12",
               "Current checkpoint",
-              "2006-02-06-boston-celtics-at-miami-heat",
+              "2006-02-12-detroit-pistons-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -94,22 +94,22 @@
               }
             ],
             [
-              "2006-02-12",
-              "Next Miami game, vs Detroit Pistons",
-              "Coach sets the rotation; the engine plays it",
-              "Scheduled",
-              {
-                "label": "Season",
-                "href": "#calendar"
-              }
-            ],
-            [
               "2006-02-13",
               "League awards announced: Player of the Week",
               "League (closed results only)",
               "Scheduled",
               {
                 "label": "Awards",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2006-02-14",
+              "Next Miami game, vs Orlando Magic",
+              "Coach sets the rotation; the engine plays it",
+              "Scheduled",
+              {
+                "label": "Season",
                 "href": "#calendar"
               }
             ],
@@ -676,6 +676,14 @@
           "href": "../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -684,7 +692,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-02-09"
+          "value": "2006-02-12"
         },
         {
           "label": "Team",
@@ -1142,6 +1150,14 @@
           "href": "../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1150,7 +1166,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-02-09"
+          "value": "2006-02-12"
         },
         {
           "label": "Team",
@@ -1645,6 +1661,14 @@
           "href": "../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1653,7 +1677,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-02-09"
+          "value": "2006-02-12"
         },
         {
           "label": "Team",
@@ -2159,6 +2183,14 @@
           "href": "../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2167,7 +2199,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-02-09"
+          "value": "2006-02-12"
         },
         {
           "label": "Team",
@@ -2600,6 +2632,14 @@
           "href": "../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2608,7 +2648,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-02-09"
+          "value": "2006-02-12"
         },
         {
           "label": "Team",
@@ -3059,6 +3099,14 @@
           "href": "../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3067,7 +3115,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-02-09"
+          "value": "2006-02-12"
         },
         {
           "label": "Team",
@@ -3500,6 +3548,14 @@
           "href": "../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3508,7 +3564,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-02-09"
+          "value": "2006-02-12"
         },
         {
           "label": "Team",
@@ -4013,6 +4069,14 @@
           "href": "../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4021,7 +4085,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-02-09"
+          "value": "2006-02-12"
         },
         {
           "label": "Team",
@@ -4038,7 +4102,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "56 closed game records in 2005-06 through 2006-02-09. Competitions remain separate.",
+      "summary": "58 closed game records in 2005-06 through 2006-02-12. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -4065,12 +4129,12 @@
             ],
             [
               "regular",
-              49,
-              37.291295238,
-              26.591836735,
-              6.285714286,
-              3.979591837,
-              1.755102041,
+              51,
+              37.391536275,
+              26.862745098,
+              6.176470588,
+              4.0,
+              1.745098039,
               "Complete"
             ]
           ]
@@ -4098,12 +4162,12 @@
             ],
             [
               "regular",
-              451,
-              810,
-              0.556790123,
-              74,
-              159,
-              0.465408805
+              471,
+              839,
+              0.561382598,
+              76,
+              163,
+              0.466257669
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -4677,6 +4741,26 @@
                 "label": "Closed game",
                 "href": "../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md"
               }
+            ],
+            [
+              "2006-02-09",
+              "regular",
+              "Dallas Mavericks",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md"
+              }
+            ],
+            [
+              "2006-02-12",
+              "regular",
+              "Detroit Pistons",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md"
+              }
             ]
           ]
         },
@@ -5030,6 +5114,14 @@
           "href": "../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -5038,7 +5130,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-02-09"
+          "value": "2006-02-12"
         },
         {
           "label": "Team",

@@ -2,9 +2,9 @@
 
 # Contract | Ime Udoka
 
-Known through: 2006-02-09. [Open interactive contract](udokaim01.html#contract) · [Contract history](udokaim01.html#contract-history)
+Known through: 2006-02-12. [Open interactive contract](udokaim01.html#contract) · [Contract history](udokaim01.html#contract-history)
 
-Ime Udoka: under contract. Evidence cutoff: 2006-02-09.
+Ime Udoka: under contract. Evidence cutoff: 2006-02-12.
 
 ## Current contract
 

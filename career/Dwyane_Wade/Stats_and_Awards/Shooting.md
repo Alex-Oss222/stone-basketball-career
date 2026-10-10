@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2006-02-09**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2006-02-12**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -6603,23 +6603,23 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-10-27 | Orlando Magic | Played | [Game](../2004-05/05_Preseason/Game_7.md) | [Result](../2004-05/05_Preseason/Game_7.result.json) | [Simulated engine shot locations](../2004-05/05_Preseason/Game_7.result.json) |
 
-## 2005-06 · NBA regular season · through 2006-02-09
+## 2005-06 · NBA regular season · through 2006-02-12
 
 [Open this period](player_cards.html?period=regular-2005-06-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 49 | 0 | 49 | 451 / 810 | 55.7% | 74 / 159 | 1303 | complete |
+| 51 | 0 | 51 | 471 / 839 | 56.1% | 76 / 163 | 1370 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 253 | 406 | 62.3% | 10.33 | 8.29 | 406 |
-| Outside paint, under 12 ft | 13 | 30 | 43.3% | 0.53 | 0.61 | 30 |
-| Outside paint, 12 to under 18 ft | 53 | 101 | 52.5% | 2.16 | 2.06 | 101 |
-| 18 ft to the three-point line | 58 | 114 | 50.9% | 2.37 | 2.33 | 114 |
-| Three-point range | 74 | 159 | 46.5% | 4.53 | 3.24 | 159 |
+| Paint | 266 | 424 | 62.7% | 10.43 | 8.31 | 424 |
+| Outside paint, under 12 ft | 13 | 30 | 43.3% | 0.51 | 0.59 | 30 |
+| Outside paint, 12 to under 18 ft | 55 | 104 | 52.9% | 2.16 | 2.04 | 104 |
+| 18 ft to the three-point line | 61 | 118 | 51.7% | 2.39 | 2.31 | 118 |
+| Three-point range | 76 | 163 | 46.6% | 4.47 | 3.20 | 163 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -6672,6 +6672,8 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2006-02-02 | Cleveland Cavaliers | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_1/Game_1.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_1/Game_1.result.json) |
 | 2006-02-04 | New Jersey Nets | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_1/Game_2.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_1/Game_2.result.json) |
 | 2006-02-06 | Boston Celtics | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.result.json) |
+| 2006-02-09 | Dallas Mavericks | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.result.json) |
+| 2006-02-12 | Detroit Pistons | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.result.json) |
 
 ## 2005-11 · NBA regular season
 
@@ -7086,23 +7088,25 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 3 | 0 | 3 | 28 / 57 | 49.1% | 4 / 9 | 85 | complete |
+| 5 | 0 | 5 | 48 / 86 | 55.8% | 6 / 13 | 152 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 14 | 26 | 53.8% | 9.33 | 8.67 | 26 |
-| Outside paint, under 12 ft | 1 | 3 | 33.3% | 0.67 | 1.00 | 3 |
-| Outside paint, 12 to under 18 ft | 5 | 12 | 41.7% | 3.33 | 4.00 | 12 |
-| 18 ft to the three-point line | 4 | 7 | 57.1% | 2.67 | 2.33 | 7 |
-| Three-point range | 4 | 9 | 44.4% | 4.00 | 3.00 | 9 |
+| Paint | 27 | 44 | 61.4% | 10.80 | 8.80 | 44 |
+| Outside paint, under 12 ft | 1 | 3 | 33.3% | 0.40 | 0.60 | 3 |
+| Outside paint, 12 to under 18 ft | 7 | 15 | 46.7% | 2.80 | 3.00 | 15 |
+| 18 ft to the three-point line | 7 | 11 | 63.6% | 2.80 | 2.20 | 11 |
+| Three-point range | 6 | 13 | 46.2% | 3.60 | 2.60 | 13 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2006-02-02 | Cleveland Cavaliers | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_1/Game_1.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_1/Game_1.result.json) |
 | 2006-02-04 | New Jersey Nets | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_1/Game_2.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_1/Game_2.result.json) |
 | 2006-02-06 | Boston Celtics | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.result.json) |
+| 2006-02-09 | Dallas Mavericks | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.result.json) |
+| 2006-02-12 | Detroit Pistons | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.result.json) |
 
 ## 2006-02-01 to 2006-02-07 · NBA regular season
 
@@ -7127,6 +7131,29 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2006-02-02 | Cleveland Cavaliers | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_1/Game_1.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_1/Game_1.result.json) |
 | 2006-02-04 | New Jersey Nets | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_1/Game_2.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_1/Game_2.result.json) |
 | 2006-02-06 | Boston Celtics | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.result.json) |
+
+## 2006-02-08 to 2006-02-12 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-week-2006-02-08#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2 | 0 | 2 | 20 / 29 | 69.0% | 2 / 4 | 67 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 13 | 18 | 72.2% | 13.00 | 9.00 | 18 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 2 | 3 | 66.7% | 2.00 | 1.50 | 3 |
+| 18 ft to the three-point line | 3 | 4 | 75.0% | 3.00 | 2.00 | 4 |
+| Three-point range | 2 | 4 | 50.0% | 3.00 | 2.00 | 4 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2006-02-09 | Dallas Mavericks | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.result.json) |
+| 2006-02-12 | Detroit Pistons | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.result.json) |
 
 ## 2005-11-02 at Memphis Grizzlies · Played · NBA regular season
 
@@ -8206,7 +8233,51 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2006-02-06 | Boston Celtics | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_1/Game_3.result.json) |
 
-## 2005-06 · NBA preseason · through 2006-02-09
+## 2006-02-09 at Dallas Mavericks · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-game-d4ed48fd8194132e#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 11 / 16 | 68.8% | 2 / 3 | 31 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 5 | 8 | 62.5% | 10.00 | 8.00 | 8 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 2 | 2 | 100.0% | 4.00 | 2.00 | 2 |
+| 18 ft to the three-point line | 2 | 3 | 66.7% | 4.00 | 3.00 | 3 |
+| Three-point range | 2 | 3 | 66.7% | 6.00 | 3.00 | 3 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2006-02-09 | Dallas Mavericks | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_2/Game_1.result.json) |
+
+## 2006-02-12 vs Detroit Pistons · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2005-06-game-d1d7ea9998e40b4e#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 9 / 13 | 69.2% | 0 / 1 | 36 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 8 | 10 | 80.0% | 16.00 | 10.00 | 10 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2006-02-12 | Detroit Pistons | Played | [Game](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.md) | [Result](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/02_February/Week_2/Game_2.result.json) |
+
+## 2005-06 · NBA preseason · through 2006-02-12
 
 [Open this period](player_cards.html?period=preseason-2005-06-season#shooting)
 
