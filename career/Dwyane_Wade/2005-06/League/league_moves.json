@@ -3936,6 +3936,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "kept: 16.5 minutes a game on his 10-day contracts"
+  },
+  {
+   "id": "2005-06-market-2006-02-11-ten_day-rebraze01",
+   "date": "2006-02-11",
+   "kind": "ten_day",
+   "player": "Željko Rebrača",
+   "bbr_id": "rebraze01",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Željko Rebrača",
+    "bbr_id": "rebraze01",
+    "position": "C",
+    "games": 29,
+    "minutes": 412
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-21",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 0.0 x fit"
   }
  ],
  "market_days": [
@@ -4040,6 +4062,7 @@
   "2006-02-07",
   "2006-02-08",
   "2006-02-09",
-  "2006-02-10"
+  "2006-02-10",
+  "2006-02-11"
  ]
 }
