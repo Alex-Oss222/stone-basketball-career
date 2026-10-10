@@ -2,9 +2,9 @@
 
 # Contract | Jamaal Tinsley
 
-Known through: 2006-04-16. [Open interactive contract](tinslja01.html#contract) · [Contract history](tinslja01.html#contract-history)
+Known through: 2006-04-17. [Open interactive contract](tinslja01.html#contract) · [Contract history](tinslja01.html#contract-history)
 
-Jamaal Tinsley: under contract. Evidence cutoff: 2006-04-16.
+Jamaal Tinsley: under contract. Evidence cutoff: 2006-04-17.
 
 ## Current contract
 

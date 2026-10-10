@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-04-16**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-04-17**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -689,7 +689,7 @@ Card date: **2006-04-16**. 653 registry players, one Markdown card and one inter
 | [Slavko Vranes](vranesl01.md) | Free agent | 23 | sourced | [open](vranesl01.html) |
 | [Sofoklis Schortsanitis](schorso01.md) | Free agent | 20 | sourced | [open](schorso01.html) |
 | [Steven Hunter](huntest01.md) | Phoenix Suns | 24 | sourced | [open](huntest01.html) |
-| [Theo Ratliff](ratlith01.md) | Atlanta Hawks | 32 | sourced | [open](ratlith01.html) |
+| [Theo Ratliff](ratlith01.md) | Atlanta Hawks | 33 | sourced | [open](ratlith01.html) |
 | [Tony Battie](battito01.md) | New Jersey Nets | 30 | sourced | [open](battito01.html) |
 | [Tony Massenburg](masseto01.md) | Free agent | 38 | sourced | [open](masseto01.html) |
 | [Travis Knight](knightr01.md) | Free agent | 31 | silhouette | [open](knightr01.html) |

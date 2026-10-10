@@ -4,7 +4,7 @@
 
 NBA regular season · April 15-21, 2006
 
-407 tracked players · 15 closed games in this record · Through April 16, 2006.
+407 tracked players · 15 closed games in this record · Through April 17, 2006.
 
 ## Leaders
 
@@ -669,7 +669,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Slavko Vranes](../../../Players/vranesl01.md) | 23 | NY | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Sofoklis Schortsanitis](../../../Players/schorso01.md) | 20 | LAC rights | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Steven Hunter](../../../Players/huntest01.md) | 24 | ORL | NBA | C | 1 | 1 | 30.4 | 4.0 | 5.0 | .800 | 0.0 | 0.0 | N/A | 4.0 | 5.0 | .800 | .800 | 1.0 | 3.0 | .333 | 2.0 | 3.0 | 5.0 | 2.0 | 1.0 | 2.0 | 4.0 | 4.0 | 9.0 | .712 |
-| [Theo Ratliff](../../../Players/ratlith01.md) | 32 | ATL | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [Theo Ratliff](../../../Players/ratlith01.md) | 33 | ATL | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Tony Battie](../../../Players/battito01.md) | 30 | BOS | NBA | C | 1 | 1 | 27.4 | 3.0 | 5.0 | .600 | 1.0 | 1.0 | 1.000 | 2.0 | 4.0 | .500 | .700 | 8.0 | 9.0 | .889 | 2.0 | 4.0 | 6.0 | 2.0 | 1.0 | 2.0 | 2.0 | 2.0 | 15.0 | .837 |
 | [Tony Massenburg](../../../Players/masseto01.md) | 38 | UTAH | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Travis Knight](../../../Players/knightr01.md) | 31 | NY | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |

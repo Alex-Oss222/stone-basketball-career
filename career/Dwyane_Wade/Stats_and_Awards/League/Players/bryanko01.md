@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `bryanko01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-04-16 · **Club on this date:** Los Angeles Lakers · **Basis:** Los Angeles Lakers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-04-17 · **Club on this date:** Los Angeles Lakers · **Basis:** Los Angeles Lakers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #8 · **Born:** 1978-08-23 · **Age on card date:** 27  
 **Registry ID:** `bryanko01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/bryanko01.html) · ESPN ID 110
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bryank
 
 ## Simulated statistics
 
-As of **2006-04-16**: 81 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-04-17**: 81 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 81 closed regular-season games through 2006-04-16. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 81 closed regular-season games through 2006-04-17. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -125,7 +125,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-04-16, from closed award decisions (15 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-04-17, from closed award decisions (15 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -158,3 +158,4 @@ Simulated honors and shortlist placings through 2006-04-16, from closed award de
 | West Player of the Week | 2006-03-13 to 2006-03-19 | 2006-03-20 | **Winner** | [Decision](../2005-06/03_March/Week_3/League_Awards.md) |
 | West Player of the Month | 2006-03-01 to 2006-03-31 | 2006-04-02 | Shortlist, No. 3 | [Decision](../2005-06/03_March/League_Awards.md) |
 | West Player of the Week | 2006-03-27 to 2006-04-02 | 2006-04-03 | Shortlist, No. 3 | [Decision](../2005-06/04_April/Week_1/League_Awards.md) |
+| West Player of the Week | 2006-04-10 to 2006-04-16 | 2006-04-17 | Shortlist, No. 3 | [Decision](../2005-06/04_April/Week_3/League_Awards.md) |

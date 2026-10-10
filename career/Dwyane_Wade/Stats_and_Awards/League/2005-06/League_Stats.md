@@ -4,7 +4,7 @@
 
 NBA regular season · 2005-06
 
-407 tracked players · 1202 closed games in this record · Through April 16, 2006.
+407 tracked players · 1202 closed games in this record · Through April 17, 2006.
 
 ## Leaders
 
@@ -669,7 +669,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Slavko Vranes](../Players/vranesl01.md) | 23 | NY | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Sofoklis Schortsanitis](../Players/schorso01.md) | 20 | LAC rights | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Steven Hunter](../Players/huntest01.md) | 24 | ORL | NBA | C | 70 | 14 | 22.5 | 3.3 | 6.1 | .541 | 0.1 | 0.3 | .333 | 3.2 | 5.8 | .552 | .549 | 1.6 | 2.7 | .576 | 1.7 | 3.0 | 4.7 | 0.7 | 0.4 | 1.0 | 1.2 | 1.9 | 8.2 | .567 |
-| [Theo Ratliff](../Players/ratlith01.md) | 32 | ATL | NBA | C | 54 | 7 | 25.3 | 2.6 | 4.6 | .573 | 0.1 | 0.3 | .400 | 2.5 | 4.3 | .584 | .585 | 0.8 | 1.3 | .583 | 1.7 | 3.6 | 5.3 | 0.9 | 0.6 | 1.8 | 1.0 | 2.8 | 6.1 | .594 |
+| [Theo Ratliff](../Players/ratlith01.md) | 33 | ATL | NBA | C | 54 | 7 | 25.3 | 2.6 | 4.6 | .573 | 0.1 | 0.3 | .400 | 2.5 | 4.3 | .584 | .585 | 0.8 | 1.3 | .583 | 1.7 | 3.6 | 5.3 | 0.9 | 0.6 | 1.8 | 1.0 | 2.8 | 6.1 | .594 |
 | [Tony Battie](../Players/battito01.md) | 30 | BOS | NBA | C | 81 | 68 | 28.9 | 4.0 | 8.2 | .492 | 0.0 | 0.4 | .032 | 4.0 | 7.9 | .514 | .493 | 1.6 | 2.2 | .696 | 2.1 | 3.7 | 5.8 | 0.8 | 0.7 | 0.7 | 1.1 | 3.4 | 9.7 | .524 |
 | [Tony Massenburg](../Players/masseto01.md) | 38 | UTAH | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Travis Knight](../Players/knightr01.md) | 31 | NY | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -746,7 +746,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [January 2006](01_January/League_Stats.md) | January 1-31, 2006 | 227 | Complete |
 | [February 2006](02_February/League_Stats.md) | February 1-28, 2006 | 181 | Complete |
 | [March 2006](03_March/League_Stats.md) | March 1-31, 2006 | 236 | Complete |
-| [April 2006](04_April/League_Stats.md) | April 1-30, 2006 | 124 | Through April 16, 2006 |
+| [April 2006](04_April/League_Stats.md) | April 1-30, 2006 | 124 | Through April 17, 2006 |
 
 ## Coverage
 
