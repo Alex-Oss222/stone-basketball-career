@@ -2661,6 +2661,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 0.0 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-12-ten_day-smithch04",
+   "date": "2006-01-12",
+   "kind": "ten_day",
+   "player": "Charles Smith",
+   "bbr_id": "smithch04",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Charles Smith",
+    "bbr_id": "smithch04",
+    "position": "SG",
+    "games": 22,
+    "minutes": 210
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-01-22",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 0.0 x fit"
   }
  ],
  "market_days": [
@@ -2735,6 +2757,7 @@
   "2006-01-08",
   "2006-01-09",
   "2006-01-10",
-  "2006-01-11"
+  "2006-01-11",
+  "2006-01-12"
  ]
 }
