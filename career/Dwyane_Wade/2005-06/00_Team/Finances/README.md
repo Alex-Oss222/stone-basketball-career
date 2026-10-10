@@ -2,7 +2,7 @@
 
 <!-- team-status:start -->
 
-2005-06 through 2012-13 · AI/GM record · live position from [finance.json](finance.json) (as of 2006-01-10), shown on 2006-01-13
+2005-06 through 2012-13 · AI/GM record · live position from [finance.json](finance.json) (as of 2006-01-10), shown on 2006-01-14
 
 Counted salary $65,169,186 against the published $49,500,000 cap: cap room -$15,669,186 (regular season). Tax threshold: not published at this date. Contract guarantee review: 2006-01-07 keep-or-waive, 2006-01-10 kept contracts guaranteed.
 
