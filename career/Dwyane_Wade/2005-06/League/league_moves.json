@@ -2617,6 +2617,50 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 2.67 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-11-ten_day-johnser02",
+   "date": "2006-01-11",
+   "kind": "ten_day",
+   "player": "Ervin Johnson",
+   "bbr_id": "johnser02",
+   "from": null,
+   "to": "Denver Nuggets",
+   "role": {
+    "player_id": "Ervin Johnson",
+    "bbr_id": "johnser02",
+    "position": "C",
+    "games": 18,
+    "minutes": 81
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-01-21",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 2.7 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-01-11-ten_day-walshma01",
+   "date": "2006-01-11",
+   "kind": "ten_day",
+   "player": "walshma01",
+   "bbr_id": "walshma01",
+   "from": null,
+   "to": "Milwaukee Bucks",
+   "role": {
+    "player_id": "walshma01",
+    "bbr_id": "walshma01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-01-21",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 0.0 x fit"
   }
  ],
  "market_days": [
@@ -2690,6 +2734,7 @@
   "2006-01-07",
   "2006-01-08",
   "2006-01-09",
-  "2006-01-10"
+  "2006-01-10",
+  "2006-01-11"
  ]
 }
