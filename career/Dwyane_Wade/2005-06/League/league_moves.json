@@ -3892,6 +3892,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.16 x fit"
+  },
+  {
+   "id": "2005-06-market-2006-02-08-ten_day-walshma01",
+   "date": "2006-02-08",
+   "kind": "ten_day",
+   "player": "walshma01",
+   "bbr_id": "walshma01",
+   "from": null,
+   "to": "Memphis Grizzlies",
+   "role": {
+    "player_id": "walshma01",
+    "bbr_id": "walshma01",
+    "position": "SF",
+    "games": 1,
+    "minutes": 3
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2006-02-18",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 0.0 x fit"
   }
  ],
  "market_days": [
@@ -3993,6 +4015,7 @@
   "2006-02-04",
   "2006-02-05",
   "2006-02-06",
-  "2006-02-07"
+  "2006-02-07",
+  "2006-02-08"
  ]
 }
