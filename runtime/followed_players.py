@@ -73,6 +73,10 @@ def honors(root, name, season, as_of):
     for a in (_read(base / "all_star.json") or {}).get("all_stars", []):
         if a.get("player") == name and a.get("selected_on", "9999") <= as_of:
             out.append((a["selected_on"], f"All-Star ({a.get('conference')}, {a.get('role')})"))
+    for game in ((_read(base / "all_star_games.json") or {}).get("games") or {}).values():   # runtime/all_star_games.py
+        mvp = game.get("mvp")
+        if mvp and name in mvp["winners"] and max(game["date"], mvp.get("recorded_on") or "") <= as_of:
+            out.append((game["date"], mvp["name"]))
     for d in (_read(base / "award_decisions.json") or {}).get("decisions", []):
         d = known_on(d, as_of)
         if d.get("winner") == name and d.get("announced_on", "9999") <= as_of:

@@ -37,8 +37,12 @@ def regular_minutes(season, on, root=ROOT):
 
 
 def earned_honors(season, on, root=ROOT):
+    """The season's earned honors announced by the date. An All-Star weekend game's MVP is an exhibition honor
+    (`runtime/all_star_games.py`): no clause reads it, though its name contains "All-Star"."""
+    from .era import EXHIBITION_GAME_TYPES
     data = _read(Path(root) / PLAYER / "awards.json")
-    return [a for a in data["awards"] if a["season"] == season and a["status"] == "earned" and a["awarded_on"] <= on]
+    return [a for a in data["awards"] if a["season"] == season and a["status"] == "earned" and a["awarded_on"] <= on
+            and a["competition"] not in EXHIBITION_GAME_TYPES]
 
 
 def evaluate_clause(clause, season, on, root=ROOT):

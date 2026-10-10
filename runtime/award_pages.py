@@ -4,8 +4,9 @@ month pages, rebuilt from the source records only (AGENTS.md, Stats and awards; 
 Sources, all read and never written here: the weekly and monthly decisions (`award_decisions.json`,
 `runtime/award_decisions.py`), the season awards (`season_awards.json`, `runtime/season_awards.py`) with the season's
 researched award calendar (`library/<year>/league/nba_<season>_season_awards.json`), the All-Star selections
-(`all_star.json`, `runtime/all_star.py`) with their calendar, and the playoff record (`playoffs.json`,
-`runtime/playoffs.py`) for the champion. The Finals MVP is a season-award decision. A corrected decision or step reads
+(`all_star.json`, `runtime/all_star.py`) with their calendar, the All-Star weekend games and their MVPs
+(`all_star_games.json`, `runtime/all_star_games.py`), and the playoff record (`playoffs.json`, `runtime/playoffs.py`) for
+the champion. The Finals MVP is a season-award decision. A corrected decision or step reads
 as it stood on the clock (`award_corrections.as_of`) and its vote line carries the correction's note.
 
 The season page carries its own season in the title and coverage line and is dated by the career clock; a closed
@@ -126,14 +127,17 @@ def model(season, root=ROOT, clock=None):
                  for conf, sides in steps["starters"]["conferences"].items() for p in sides["starters"]]
     from .all_star import ctx
     star_calendar = {k: v["value"] for k, v in (ctx(root, season).data or {}).get("dates", {}).items()}
+    from .all_star_games import known as weekend_games      # results and MVPs from the career date they were recorded
+    weekend = weekend_games(root, season, clock)
     playoffs = read_playoffs(root, season) or {}
     finals = next((s for s in playoffs.get("series", []) if s["round"] == "finals"), None)
     champion = finals if finals and finals.get("winner") and (finals.get("clinched_on") or clock) <= clock else None
     return SimpleNamespace(season=season, clock=clock, as_of=as_of(season, clock, root), weekly=weekly, months=months,
                            month_awards=month_awards, calendar=calendar, decided=decided, all_stars=stars, steps=steps,
                            star_calendar=star_calendar, champion=champion, playoffs_start=dates(season, root).get("playoffs_start"),
-                           calendar_path=_calendar_path(season), links={name: (league / name).is_file()
-                                                                         for name in ("Season_Awards.md", "All_Star.md", "Playoffs.md")})
+                           weekend=weekend, calendar_path=_calendar_path(season),
+                           links={name: (league / name).is_file()
+                                  for name in ("Season_Awards.md", "All_Star.md", "All_Star_Games.md", "Playoffs.md")})
 
 
 def _calendar_path(season):
@@ -252,6 +256,21 @@ def _all_star_lines(m):
         ["Conference", "Role", "Player", "Team", "Selected"], rows) + [""]
 
 
+def _weekend_lines(m):
+    """The All-Star weekend games: each result and MVP once recorded (`all_star_games.known`)."""
+    link = " [All-Star weekend games](All_Star_Games.md)" if m.links["All_Star_Games.md"] else ""
+    if not m.weekend:
+        return [f"No All-Star weekend game played yet.{link}", ""]
+    rows = []
+    for g in m.weekend:
+        r = g["result"]
+        score = (f"{r[0]} {r[1]}, {r[2]} {r[3]}" + (f" ({r[4]} OT)" if r[4] else "")) if r else "Not played yet"
+        mvp = " and ".join(f"**{n}**" for n in g["mvp"]) if g["mvp"] else "Not decided yet"
+        rows.append([g["name"], _long(g["date"]), score, mvp])
+    return [f"Exhibitions played by the engine; their MVPs are exhibition honors.{link}", ""] + _table(
+        ["Game", "Date", "Result", "MVP"], rows) + [""]
+
+
 def _champion_lines(m):
     link = " [Playoffs](Playoffs.md)" if m.links["Playoffs.md"] else ""
     f = m.champion
@@ -272,7 +291,8 @@ def season_page(season, root=ROOT, clock=None, m=None):
     nav = [f"[Stats hub](../../README.md)", f"[Wade](../../{s}/README.md)", f"[Miami](../../Team/{s}/Team_Stats.md)",
            "[NBA players](League_Stats.md)"]
     nav += [f"[{label}]({name})" for name, label in (("Season_Awards.md", "Season awards"), ("All_Star.md", "All-Star"),
-                                                     ("Playoffs.md", "Playoffs")) if m.links[name]]
+                                                     ("All_Star_Games.md", "All-Star games"), ("Playoffs.md", "Playoffs"))
+            if m.links[name]]
     tally = "[Season awards](Season_Awards.md) (`season_awards.json`)" if m.links["Season_Awards.md"] else "`season_awards.json`, once the first vote closes"
     lines = [f"# NBA awards | {s}", "", " · ".join(nav), "", f"{s} · Calendar coverage: {s}", "", _status(m), "",
              "## Individual awards", "",
@@ -305,6 +325,7 @@ def season_page(season, root=ROOT, clock=None, m=None):
               "## Other honors", "",
               "These are separate decisions, not consequences of the regular-season award vote.", "",
               "### All-Star selections", ""] + _all_star_lines(m)
+    lines += ["### All-Star weekend games", ""] + _weekend_lines(m)
     lines += ["### NBA champion", ""] + _champion_lines(m)
     lines += ["### Finals MVP", "", _vote_line(m, "finals_mvp"), ""] + _table(
         ["Rank slot", "Player", "Team", "1st votes", "Points", "Status"], _rank_rows(m, "finals_mvp"), right=(0, 3, 4)) + [""]
@@ -385,6 +406,7 @@ def facts(m):
         d = m.decided.get(award)
         out[heading] = {t["team"].split()[0]: sorted(p["player"] for p in t["players"]) for t in d["teams"]} if d else {}
     out["All-Star selections"] = sorted((a["conference"], a["player"]) for a in m.all_stars)
+    out["All-Star weekend MVPs"] = sorted((g["name"], n) for g in m.weekend for n in g["mvp"] or [])
     out["champion"] = m.champion["winner"] if m.champion else None
     return out
 
@@ -417,7 +439,7 @@ def page_facts(text):
             h3 = line[4:].strip()
         elif line.startswith("|"):
             cells = [c.strip() for c in line.strip().strip("|").split("|")]
-            if not all(re.fullmatch(r":?-+:?", c) for c in cells) and cells[0] not in ("Rank slot", "Team", "Period", "Conference", "Award"):
+            if not all(re.fullmatch(r":?-+:?", c) for c in cells) and cells[0] not in ("Rank slot", "Team", "Period", "Conference", "Award", "Game"):
                 rows[(h2, h3)].append(cells)
         else:
             prose[(h2, h3)].append(line)
@@ -430,6 +452,8 @@ def page_facts(text):
         out[heading] = {r[0]: sorted(_player(n) for c in r[1:] if c != "Not selected" for n in c.split(" / "))
                         for r in rows[(heading, None)] if any(c != "Not selected" for c in r[1:])}
     out["All-Star selections"] = sorted((r[0], r[2]) for r in rows[("Other honors", "All-Star selections")] if len(r) > 2)
+    out["All-Star weekend MVPs"] = sorted((r[0], n) for r in rows[("Other honors", "All-Star weekend games")] if len(r) > 3
+                                          for n in re.findall(r"\*\*(.+?)\*\*", r[3]))
     champion = re.search(r"\*\*(.+?)\*\*", "\n".join(prose[("Other honors", "NBA champion")]))
     out["champion"] = champion.group(1) if champion else None
     return out

@@ -1,0 +1,176 @@
+{
+ "environment": {
+  "averages": {
+   "ast": 25.667,
+   "blk": 3.667,
+   "drb": 27.833,
+   "fg_pct": 0.52669,
+   "fga": 93.667,
+   "ft_pct": 0.60274,
+   "fta": 12.167,
+   "orb": 16.5,
+   "pace": 104.353,
+   "pf": 11.167,
+   "points": 113.0,
+   "stl": 15.833,
+   "three_pa": 19.0,
+   "three_pct": 0.36842,
+   "tov": 21.833
+  },
+  "baseline": [
+   "2001-rookie_challenge",
+   "2002-rookie_challenge",
+   "2003-rookie_challenge"
+  ],
+  "engine_assumptions": {
+   "and_one_share_of_fta": 0.12,
+   "clock_note": "The half-court possession is shortened: holding for a period's last shot, the four-second floor and the late-game clock were balanced at NBA possession lengths and cost about 2% of possessions at exhibition pace.",
+   "defense_intensity": 0.0,
+   "defense_note": "Individual defensive values are off: the translation is fitted on real exhibition games and already contains the defense played in them.",
+   "home_edge_points_per_game": 0.0,
+   "possession_seconds_factor": 0.97,
+   "status": "structural assumptions, as the NBA environments, for a neutral exhibition"
+  },
+  "kind": "league_environment",
+  "league": "NBA All-Star Weekend",
+  "player_rate_baselines": {
+   "assist_pct": 0.129582,
+   "block_pct": 0.009789,
+   "defensive_rebound_pct": 0.127628,
+   "fouls_per_minute": 0.055694,
+   "free_throw_attempt_rate": 0.129893,
+   "free_throw_pct": 0.60274,
+   "offensive_rebound_pct": 0.072449,
+   "steal_pct": 0.030161,
+   "three_point_attempt_rate": 0.202847,
+   "three_point_pct": 0.368421,
+   "turnovers_per_fga": 0.233096,
+   "two_point_pct": 0.566964,
+   "usage_pct": 0.2
+  },
+  "player_rating_model": "all-star-2006.1",
+  "published_after": "2003-02-09",
+  "purpose": "Calibration for the Rookie Challenge: the real averages of the editions published before it (the repository's environment policy), each team-game scaled to regulation (`regulation_share`).",
+  "schema_version": 1,
+  "season": "rookie_challenge_2001_2003",
+  "source": "library/all_star/games",
+  "team_turnover_note": "The published team totals equal the players' sums; every turnover is a player's.",
+  "team_turnovers_per_game": 0.0,
+  "unit": "per team per 40-minute game",
+  "verification": {
+   "method": "per team-game means of the editions' published team totals (Basketball-Reference)",
+   "status": "derived_from_sourced_totals"
+  }
+ },
+ "event_id": "2004-02-13-rookie-challenge",
+ "game_date": "2004-02-13",
+ "game_type": "rookie_challenge",
+ "kind": "all_star_engine_game",
+ "method": "scripts/build_all_star_engine.py; runtime/all_star_engine.py",
+ "minutes": {
+  "basis": "the baseline editions' minutes averaged by rank, each team-game scaled to regulation",
+  "reserves": [
+   22,
+   19,
+   17,
+   17
+  ],
+  "starters": [
+   28,
+   26,
+   25,
+   23,
+   23
+  ],
+  "team_minutes": 200
+ },
+ "model_version": "all-star-2006.1",
+ "name": "Rookie Challenge",
+ "rules": {
+  "competition": "NBA All-Star Weekend",
+  "defensive_three_seconds": true,
+  "foul_out_limit": null,
+  "game_day_actives": 9,
+  "overtime_minutes": 2,
+  "players_on_floor": 5,
+  "quarter_minutes": 20,
+  "quarters": 2,
+  "roster_maximum": 9,
+  "shot_clock_seconds": 24,
+  "zone_defense_legal": true
+ },
+ "schema_version": 1,
+ "season": "2003-04",
+ "sources": {
+  "library/all_star/anchor_seasons.json": "d9500242f76dfbc5f4b8bfe00e62ef76574fd12d529d49e507edd9ad79600ca1",
+  "library/all_star/games/2001-rookie_challenge.json": "167ebcf003f582c59fe3777333ff6de2110ef42e8fe08bc8174fe70694fdf044",
+  "library/all_star/games/2002-rookie_challenge.json": "00d284b9fb8f94bf8afd29cebf92159db45d0f8a48ed4c2e76d2aeac02b01483",
+  "library/all_star/games/2003-rookie_challenge.json": "01027480f13d4f7825716862906809a271b0ba9b7e71be680d415cdbb3552c5f"
+ },
+ "translation": {
+  "anchor_games": [
+   "2001-rookie_challenge",
+   "2002-rookie_challenge",
+   "2003-rookie_challenge"
+  ],
+  "anchors": 54,
+  "method": "scripts/build_all_star_engine.translation",
+  "model_version": "all-star-2006.1",
+  "published_after": "2003-06-30",
+  "ratio": {
+   "assist_pct": 0.83723,
+   "block_pct": 0.56424,
+   "defensive_rebound_pct": 0.90782,
+   "fouls_per_minute": 0.62049,
+   "free_throw_attempt_rate": 0.41035,
+   "offensive_rebound_pct": 1.19447,
+   "steal_pct": 1.7044,
+   "three_point_attempt_rate": 1.19603,
+   "turnovers_per_fga": 1.25158,
+   "usage_pct": 0.95524
+  },
+  "raw": {
+   "assist_pct": 0.83723,
+   "block_pct": 0.56424,
+   "defensive_rebound_pct": 0.90782,
+   "fouls_per_minute": 0.62049,
+   "free_throw_attempt_rate": 0.41035,
+   "free_throw_pct": -0.52316,
+   "offensive_rebound_pct": 1.19447,
+   "steal_pct": 1.7044,
+   "three_point_attempt_rate": 1.19603,
+   "three_point_pct": 0.1345,
+   "turnovers_per_fga": 1.25158,
+   "two_point_pct": 0.39051,
+   "usage_pct": 0.95524
+  },
+  "sample": {
+   "assist_pct": 1203.0,
+   "block_pct": 1203.0,
+   "defensive_rebound_pct": 1203.0,
+   "fouls_per_minute": 1203.0,
+   "free_throw_attempt_rate": 562,
+   "free_throw_pct": 73,
+   "offensive_rebound_pct": 1203.0,
+   "steal_pct": 1203.0,
+   "three_point_attempt_rate": 562,
+   "three_point_pct": 114,
+   "turnovers_per_fga": 562,
+   "two_point_pct": 448,
+   "usage_pct": 1203.0
+  },
+  "shift": {
+   "free_throw_pct": -0.22075,
+   "three_point_pct": 0.07165,
+   "two_point_pct": 0.39051
+  },
+  "shrinkage": {
+   "prior_attempts": 100,
+   "shrunk": [
+    "three_point_pct",
+    "free_throw_pct"
+   ],
+   "unshrunk": "the two-point shift and every ratio (module docstring)"
+  }
+ }
+}

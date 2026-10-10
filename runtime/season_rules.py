@@ -5,6 +5,8 @@ still requires an independently verified row in runtime.era.SEASON_RULES.
 """
 import re
 
+from .era import EXHIBITION_GAME_TYPES
+
 
 def season_start(season: str) -> int:
     if not isinstance(season, str) or not re.fullmatch(r"\d{4}-\d{2}", season):
@@ -58,7 +60,7 @@ def statistics_bucket(game_type: str, season: str, cup_stage: str | None = None)
             raise ValueError("non-championship Cup games must be regular-season games")
     if game_type == "play_in" and play_in_format(season) is None:
         raise ValueError(f"Play-In does not exist in {season}")
-    if game_type not in {"summer_league", "preseason", "regular", "play_in", "playoff"}:
+    if game_type not in {"summer_league", "preseason", "regular", "play_in", "playoff", *EXHIBITION_GAME_TYPES}:
         raise ValueError(f"unsupported NBA report game type: {game_type}")
     return game_type
 

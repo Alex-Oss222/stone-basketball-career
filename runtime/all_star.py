@@ -361,7 +361,9 @@ BBR_ROOKIES_FROM = "2005-06"     # from this season the Rookies pool also matche
                                  # are corrected under this rule as dated corrections (`runtime/award_corrections.py`)
 
 
-def rookie_challenge(root, c, day, rows):
+def rookie_panel(root, c, day, rows):
+    """The Rookie Challenge panel's ballots for each side: {side: (eligible names, evidence, positions, ballots, summed
+    panel score)}, shared by the selection (`rookie_challenge`) and the panel's full order (`rookie_challenge_order`)."""
     from .award_decisions import rookies
     through = _plus(day, -1)
     players = pool(root, c.season, through, rows)
@@ -373,7 +375,6 @@ def rookie_challenge(root, c, day, rows):
         service_path = Path(root) / "library/2004/league/nba_2004_service_years.json"
     service = _read(service_path)["players"]
     second_bbr = {b for b, s in service.items() if s.get("first_season") == previous_season(c.season)}
-    shape = {"G": 2, "F": 2, "C": 1, "any": c.data["shape"]["rookie_challenge_roster"] - 5}
     out = {}
     from .award_decisions import first_season_ids
     first_bbr = first_season_ids(root, c.season) if c.season >= BBR_ROOKIES_FROM else set()
@@ -386,12 +387,37 @@ def rookie_challenge(root, c, day, rows):
         scored = _scores(names, [[e[n]["avail_gmsc"] for n in names], [e[n]["avail_pts"] for n in names]], [e[n]["club_pct"] for n in names])
         positions = {n: e[n]["position"] for n in names}
         voters = [(f"panelist-{i}", t) for i, t in enumerate(lenses(PANEL_LENS, PANEL_SIZE))]
-        votes, total = tally(scored, voters, shape, positions)
+        votes, total = tally(scored, voters, rookie_shape(c), positions)
+        out[side] = (names, e, positions, votes, total)
+    return out
+
+
+def rookie_shape(c):
+    return {"G": 2, "F": 2, "C": 1, "any": c.data["shape"]["rookie_challenge_roster"] - 5}
+
+
+def rookie_challenge(root, c, day, rows):
+    shape = rookie_shape(c)
+    out = {}
+    for side, (names, e, positions, votes, total) in rookie_panel(root, c, day, rows).items():
         chosen = elect(votes, total, shape, positions)
         out[side] = [_row(e[n], ballots=votes[n]) for n in chosen]
-    return {"step": "rookie_challenge", "announced_on": day, "evidence_through": through,
+    return {"step": "rookie_challenge", "announced_on": day, "evidence_through": _plus(day, -1),
             "electorate": c.data["electorates"]["rookie_challenge"], "panel": PANEL_SIZE, "lens": list(PANEL_LENS),
             "game_date": dates(c)["rookie_challenge"], "teams": out}
+
+
+def rookie_challenge_order(root, c, day, rows):
+    """The panel's whole order on its own date, for the Rookie Challenge's injury replacements
+    (`runtime/all_star_games.py`): {side: (the nine it elects, [every eligible player, most ballots first, summed panel
+    score breaking ties, then name])}. Reads the step exactly as `rookie_challenge` decides it; writes nothing."""
+    shape = rookie_shape(c)
+    out = {}
+    for side, (names, e, positions, votes, total) in rookie_panel(root, c, day, rows).items():
+        order = sorted(names, key=lambda n: (-votes.get(n, 0), -total[n], n))
+        out[side] = (elect(votes, total, shape, positions),
+                     [_row(e[n], ballots=votes.get(n, 0), panel_score=round(total[n], 6)) for n in order])
+    return out
 
 
 def replacements(root, c, day, rows, record):

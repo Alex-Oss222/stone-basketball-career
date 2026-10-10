@@ -109,6 +109,33 @@ FIBA_BASE_RULES = {
 }
 
 
+# All-Star weekend exhibitions (`runtime/all_star_engine.py`, `runtime/all_star_games.py`): the Rookie Challenge and the
+# All-Star Game, played by the same kernel under their own rules, dated like the FIBA rows. Researched in each season's
+# All-Star calendar (library/<year>/league/nba_<season>_all_star.json, `research`):
+# * All-Star Game: standard NBA rules, four 12-minute quarters, 5-minute overtimes, six fouls, twelve dressed (every
+#   1997-2005 box totals 240 team minutes, 2003's two overtimes 290; no 2004-2006 source states a deviation).
+# * Rookie Challenge: two 20-minute halves (the kernel's `quarters` are its periods), 2-minute overtimes, nine a side,
+#   fouls counted but nobody fouls out (`foul_out_limit` None: no disqualification and no foul-trouble sitting; sourced
+#   for 2004, unverified for 2005 and 2006, where the 2005 box fits it). Not modelled: the team-foul penalty after ten,
+#   the 20-second timeouts and the clock stopping after made baskets.
+EXHIBITION_GAME_TYPES = ("rookie_challenge", "all_star")
+EXHIBITION_COMPETITION = "NBA All-Star Weekend"
+EXHIBITION_BASE_RULES = {
+    "shot_clock_seconds": 24,
+    "players_on_floor": 5,
+    "zone_defense_legal": True,
+    "defensive_three_seconds": True,
+    "competition": EXHIBITION_COMPETITION,
+}
+EXHIBITION_RULE_PERIODS = {
+    "all_star": (("2004-02-15", "2006-02-19", {"quarters": 4, "quarter_minutes": 12, "overtime_minutes": 5,
+                                                "foul_out_limit": 6, "game_day_actives": 12, "roster_maximum": 12}),),
+    "rookie_challenge": (("2004-02-13", "2006-02-17", {"quarters": 2, "quarter_minutes": 20, "overtime_minutes": 2,
+                                                        "foul_out_limit": None, "game_day_actives": 9,
+                                                        "roster_maximum": 9}),),
+}
+
+
 def season_of(year_start):
     return f"{year_start}-{str(year_start + 1)[-2:]}"
 
@@ -170,3 +197,21 @@ def national_rules(game_date):
         if first <= game_date <= last:
             return {**FIBA_BASE_RULES, **row, "season": ability_season(game_date)}
     raise ValueError(f"no FIBA rules encoded for {game_date}; add a FIBA_RULE_PERIODS row before simulating it")
+
+
+def exhibition_layout(game_type, season):
+    """(regulation periods, period seconds, overtime seconds) of an All-Star weekend game in the season, or None for any
+    other game type; read by the result checks (`shot_events.spatial_result_errors`), which carry no date."""
+    for first, last, row in EXHIBITION_RULE_PERIODS.get(game_type, ()):
+        if season_for_date(first) <= (season or "") <= season_for_date(last):
+            return row["quarters"], row["quarter_minutes"] * 60, row["overtime_minutes"] * 60
+    return None
+
+
+def exhibition_rules(game_type, game_date):
+    """An All-Star weekend game's rules on its date, labelled with the NBA season it belongs to (the kernel checks
+    profiles against it). A date outside an encoded row fails closed: add the row before the weekend is played."""
+    for first, last, row in EXHIBITION_RULE_PERIODS.get(game_type, ()):
+        if first <= game_date <= last:
+            return {**EXHIBITION_BASE_RULES, **row, "season": season_for_date(game_date)}
+    raise ValueError(f"no {game_type} rules encoded for {game_date}; add an EXHIBITION_RULE_PERIODS row before simulating it")

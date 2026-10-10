@@ -72,12 +72,13 @@ def slate_dir(season=None):
 def is_league_slate(path):
     """A request under the league slate folder (no game note of its own)."""
     parts = Path(path).parts
-    return ("Stats_and_Awards" in parts and "Games" in parts and "Playoffs" not in parts
-            and Path(path).name.endswith(".request.json"))           # playoff games are checked as full requests
+    return ("Stats_and_Awards" in parts and "Games" in parts and "Playoffs" not in parts and "All_Star" not in parts
+            and Path(path).name.endswith(".request.json"))           # playoff and All-Star games are checked as full requests
 
 
 def is_league_record(path):
-    """A league request (regular slate or playoff game) that has no game note of its own: its result is a league record."""
+    """A league request (regular slate, playoff or All-Star weekend game) that has no game note of its own: its result is
+    a league record."""
     parts = Path(path).parts
     return "Stats_and_Awards" in parts and "Games" in parts and Path(path).name.endswith(".request.json")
 

@@ -2524,7 +2524,7 @@
       "short_name": "ASG MVP",
       "scope": "all-star",
       "category": "performance",
-      "competition": "regular",
+      "competition": "all_star",
       "honor_names": [
         "All-Star Game MVP"
       ],
@@ -2578,7 +2578,7 @@
       "short_name": "Rising Stars MVP",
       "scope": "all-star",
       "category": "performance",
-      "competition": "regular",
+      "competition": "rookie_challenge",
       "honor_names": [
         "Rookie Challenge / Rising Stars MVP"
       ],

@@ -421,6 +421,30 @@ def national_after(day):
                 WADE_NEWS.append(f"{day}  {line}")
 
 
+def all_star_day(day):
+    """All-Star weekend games on their dates (scripts/all_star_day.py, runtime/all_star_games.py): the day's locks and
+    frozen requests, played with the day's other games. A game that passed without a lock, or one without its rules row
+    or engine file (`era.EXHIBITION_RULE_PERIODS`, scripts/build_all_star_engine.py), exits 1, so run() prints the
+    reason and stops."""
+    for line in run("scripts/all_star_day.py", "--write", day, show=False).splitlines():
+        if line and not line.startswith("all-star games:"):
+            say("    " + line)
+
+
+def all_star_after(day):
+    """After the day's games: Wade's All-Star weekend notes, each played game's MVP (a Rookie Challenge tie is one engine
+    draw), Wade's award and the games pages (scripts/all_star_day.py --after)."""
+    out = run("scripts/all_star_day.py", "--after", day, show=False)
+    if "draw(s) pending" in out:
+        draw()
+        out = run("scripts/all_star_day.py", "--after", day, show=False)
+    for line in out.splitlines():
+        if line and not line.startswith("all-star games:"):
+            say("    " + line)
+            if line.startswith("WADE"):
+                WADE_NEWS.append(f"{day}  {line}")
+
+
 def extension_day(day):
     """Contract extensions on their own date (scripts/extension_day.py, runtime/extensions.py): every club's decision
     packets drawn by the engine, then applied; Wade's offer stops the run through wade_waits(). A refused day (missed,
@@ -504,6 +528,7 @@ def advance_day(day):
     run("scripts/decide_awards.py", "--write", ok=(0, 1))
     draw()
     run("scripts/decide_awards.py", "--write", show=False)
+    all_star_day(day)                                    # All-Star weekend: the day's locks and requests
     wade_waits()
     play(day)
     close_day(day)
@@ -517,6 +542,7 @@ def close_day(day, playoffs=False):
         write_state(data)
     run("scripts/write_back_results.py", "--write", "--light", show=False)
     national_after(day)                                  # national results: Wade's notes, bracket, tournament close
+    all_star_after(day)                                  # All-Star weekend results: Wade's notes, MVPs, pages
     # Name each new Miami injury or absence (runtime/injury_types.py): one engine draw each, then record it.
     run("scripts/injury_types.py", "--write", show=False)
     if draws_pending():

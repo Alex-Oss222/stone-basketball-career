@@ -272,6 +272,43 @@
    "status": "unverified",
    "sources": [],
    "note": "No 2004 source found stating deviations; special formats (target score, quarter-by-quarter) came much later (2020+). 12-player rosters per conference (sourced above)."
+  },
+  "engine_rules": {
+   "value": "the rules the engine plays the weekend's games under (runtime/era.py EXHIBITION_RULE_PERIODS)",
+   "status": "derived",
+   "sources": [],
+   "all_star_game": {
+    "value": {
+     "quarters": 4,
+     "quarter_minutes": 12,
+     "overtime_minutes": 5,
+     "foul_out_limit": 6,
+     "game_day_actives": 12
+    },
+    "status": "derived",
+    "sources": [
+     "https://www.basketball-reference.com/allstar/NBA_1998.html",
+     "https://www.basketball-reference.com/allstar/NBA_2000.html",
+     "https://www.basketball-reference.com/allstar/NBA_2001.html",
+     "https://www.basketball-reference.com/allstar/NBA_2002.html",
+     "https://www.basketball-reference.com/allstar/NBA_2003.html"
+    ],
+    "note": "Standard NBA rules (runtime/era.py EXHIBITION_RULE_PERIODS). Every All-Star Game box from 1997 totals 240 team minutes, the 2003 game's two overtimes 290 (five-minute overtimes); no source before the 2004 game states a deviation. Twelve a side as selected."
+   },
+   "rookie_challenge": {
+    "value": {
+     "quarters": 2,
+     "quarter_minutes": 20,
+     "overtime_minutes": 2,
+     "foul_out_limit": null,
+     "game_day_actives": 9
+    },
+    "status": "sourced",
+    "sources": [
+     "https://www.oursportscentral.com/services/releases/los-angeles-sparks-michael-cooper-to-coach-2004-got-milk-rookie-challenge/n-2999985"
+    ],
+    "note": "The 2004 release (research.rookie_challenge game_rules): two 20-minute halves, a 2-minute overtime, fouls counted but no foul-outs. Not modelled by the engine: the team-foul penalty after ten, the 20-second timeouts."
+   }
   }
  }
 }

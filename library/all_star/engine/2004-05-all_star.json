@@ -1,0 +1,185 @@
+{
+ "environment": {
+  "averages": {
+   "ast": 33.476,
+   "blk": 4.51,
+   "drb": 34.472,
+   "fg_pct": 0.48901,
+   "fga": 109.159,
+   "ft_pct": 0.69803,
+   "fta": 16.421,
+   "orb": 18.428,
+   "pace": 117.46,
+   "pf": 13.362,
+   "points": 125.528,
+   "stl": 13.845,
+   "three_pa": 21.655,
+   "three_pct": 0.33742,
+   "tov": 19.503
+  },
+  "baseline": [
+   "2000-all_star",
+   "2001-all_star",
+   "2002-all_star",
+   "2003-all_star",
+   "2004-all_star"
+  ],
+  "engine_assumptions": {
+   "and_one_share_of_fta": 0.12,
+   "clock_note": "The half-court possession is shortened: holding for a period's last shot, the four-second floor and the late-game clock were balanced at NBA possession lengths and cost about 2% of possessions at exhibition pace.",
+   "defense_intensity": 0.0,
+   "defense_note": "Individual defensive values are off: the translation is fitted on real exhibition games and already contains the defense played in them.",
+   "home_edge_points_per_game": 0.0,
+   "possession_seconds_factor": 0.97,
+   "status": "structural assumptions, as the NBA environments, for a neutral exhibition"
+  },
+  "kind": "league_environment",
+  "league": "NBA All-Star Weekend",
+  "player_rate_baselines": {
+   "assist_pct": 0.156914,
+   "block_pct": 0.010335,
+   "defensive_rebound_pct": 0.130554,
+   "fouls_per_minute": 0.056,
+   "free_throw_attempt_rate": 0.152557,
+   "free_throw_pct": 0.699422,
+   "offensive_rebound_pct": 0.069446,
+   "steal_pct": 0.023691,
+   "three_point_attempt_rate": 0.198413,
+   "three_point_pct": 0.337778,
+   "turnovers_per_fga": 0.179894,
+   "two_point_pct": 0.526953,
+   "usage_pct": 0.2
+  },
+  "player_rating_model": "all-star-2006.1",
+  "published_after": "2004-02-16",
+  "purpose": "Calibration for the All-Star Game: the real averages of the editions published before it (the repository's environment policy), each team-game scaled to regulation (`regulation_share`).",
+  "schema_version": 1,
+  "season": "all_star_game_2000_2004",
+  "source": "library/all_star/games",
+  "team_turnover_note": "The published team totals equal the players' sums; every turnover is a player's.",
+  "team_turnovers_per_game": 0.0,
+  "unit": "per team per 48-minute game",
+  "verification": {
+   "method": "per team-game means of the editions' published team totals (Basketball-Reference)",
+   "status": "derived_from_sourced_totals"
+  }
+ },
+ "event_id": "2005-02-20-all-star-game",
+ "game_date": "2005-02-20",
+ "game_type": "all_star",
+ "kind": "all_star_engine_game",
+ "method": "scripts/build_all_star_engine.py; runtime/all_star_engine.py",
+ "minutes": {
+  "basis": "the baseline editions' minutes averaged by rank, each team-game scaled to regulation",
+  "reserves": [
+   24,
+   21,
+   17,
+   16,
+   14,
+   12,
+   9
+  ],
+  "starters": [
+   31,
+   28,
+   26,
+   23,
+   19
+  ],
+  "team_minutes": 240
+ },
+ "model_version": "all-star-2006.1",
+ "name": "All-Star Game",
+ "rules": {
+  "competition": "NBA All-Star Weekend",
+  "defensive_three_seconds": true,
+  "foul_out_limit": 6,
+  "game_day_actives": 12,
+  "overtime_minutes": 5,
+  "players_on_floor": 5,
+  "quarter_minutes": 12,
+  "quarters": 4,
+  "roster_maximum": 12,
+  "shot_clock_seconds": 24,
+  "zone_defense_legal": true
+ },
+ "schema_version": 1,
+ "season": "2004-05",
+ "sources": {
+  "library/all_star/anchor_seasons.json": "d9500242f76dfbc5f4b8bfe00e62ef76574fd12d529d49e507edd9ad79600ca1",
+  "library/all_star/games/2000-all_star.json": "05060907f0909aa38be9076fdbcf428692811c49caf67d2beb36efacda846ab0",
+  "library/all_star/games/2001-all_star.json": "d2dd83f9490edb400eb2bb18210a738b46c63d4c29e7348d4a62befb1a823b3a",
+  "library/all_star/games/2002-all_star.json": "8266d9bbb5345d154ac6c541190cec0fcc888d8ae3f76ac1a80e0e6bb2ebbd3f",
+  "library/all_star/games/2003-all_star.json": "3c186fc8e74e787ffcb9f4afcfe5a5a3480174c6ef108d13f3f640b3b6d8d4bd",
+  "library/all_star/games/2004-all_star.json": "e0fa986311d084a30be8e94a112871773bc907e366e4d0b1fb959a073f367fc5"
+ },
+ "translation": {
+  "anchor_games": [
+   "2000-all_star",
+   "2001-all_star",
+   "2002-all_star",
+   "2003-all_star",
+   "2004-all_star"
+  ],
+  "anchors": 119,
+  "method": "scripts/build_all_star_engine.translation",
+  "model_version": "all-star-2006.1",
+  "published_after": "2004-06-30",
+  "ratio": {
+   "assist_pct": 0.74058,
+   "block_pct": 0.47629,
+   "defensive_rebound_pct": 0.75343,
+   "fouls_per_minute": 0.81392,
+   "free_throw_attempt_rate": 0.4233,
+   "offensive_rebound_pct": 1.16968,
+   "steal_pct": 1.28229,
+   "three_point_attempt_rate": 1.36592,
+   "turnovers_per_fga": 1.15107,
+   "usage_pct": 0.74613
+  },
+  "raw": {
+   "assist_pct": 0.74058,
+   "block_pct": 0.47629,
+   "defensive_rebound_pct": 0.75343,
+   "fouls_per_minute": 0.81392,
+   "free_throw_attempt_rate": 0.4233,
+   "free_throw_pct": -0.29675,
+   "offensive_rebound_pct": 1.16968,
+   "steal_pct": 1.28229,
+   "three_point_attempt_rate": 1.36592,
+   "three_point_pct": -0.08668,
+   "turnovers_per_fga": 1.15107,
+   "two_point_pct": 0.17045,
+   "usage_pct": 0.74613
+  },
+  "sample": {
+   "assist_pct": 2500.0,
+   "block_pct": 2500.0,
+   "defensive_rebound_pct": 2500.0,
+   "fouls_per_minute": 2500.0,
+   "free_throw_attempt_rate": 1134,
+   "free_throw_pct": 173,
+   "offensive_rebound_pct": 2500.0,
+   "steal_pct": 2500.0,
+   "three_point_attempt_rate": 1134,
+   "three_point_pct": 225,
+   "turnovers_per_fga": 1134,
+   "two_point_pct": 909,
+   "usage_pct": 2500.0
+  },
+  "shift": {
+   "free_throw_pct": -0.18805,
+   "three_point_pct": -0.06001,
+   "two_point_pct": 0.17045
+  },
+  "shrinkage": {
+   "prior_attempts": 100,
+   "shrunk": [
+    "three_point_pct",
+    "free_throw_pct"
+   ],
+   "unshrunk": "the two-point shift and every ratio (module docstring)"
+  }
+ }
+}

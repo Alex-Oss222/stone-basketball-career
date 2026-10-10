@@ -38,6 +38,7 @@ import hashlib
 import math
 import random
 
+from .era import EXHIBITION_COMPETITION
 from .packets import canonical
 from .player_stats import MODEL_VERSION, RATE_KEYS
 from .prospects import (ARCHIVED_ROOKIE_MODEL_VERSION, LEGACY_ROOKIE_MODEL_VERSION, PROTAGONIST_MODEL_VERSION, ROOKIE_MODEL_VERSION,
@@ -107,6 +108,7 @@ REINJURY_FACTOR, REINJURY_GAMES = 1.5, 10   # first ten games back from an 8+ ga
 INJURY_LENGTHS = ((0.55, 1, 2, "day-to-day"), (0.25, 3, 7, "short"), (0.13, 8, 20, "medium"),
                   (0.06, 21, 50, "long"), (0.01, 51, 82, "season"))
 CAREFUL = 0.25                  # foul weight of a player one foul from disqualification
+NOMINAL_FOUL_LIMIT = 6          # the foul weights' count where nobody fouls out (`era.exhibition_rules`)
 # Shot creation: structural assumptions, not fits to any player's career.
 USAGE_MAKE_SLOPE, USAGE_MAKE_LIMIT = 0.30, 0.06
 # Roadmap 18a, from the 2004-05 season only (`_new_era`); 2003-04 games keep the 2003 procedure exactly.
@@ -226,6 +228,7 @@ def team_errors(team, rules):
                     errors.append(f"{p.player_id}: scouting requires a complete current rookie profile")
                 errors.extend(f"{p.player_id}: {e}" for e in style_errors(profile.get("style")))
             national = rules.get("competition") == "FIBA"
+            exhibition = rules.get("competition") == EXHIBITION_COMPETITION   # All-Star weekend (runtime/all_star_engine.py)
             if national and profile.get("model_version") == FIBA_MODEL_VERSION:
                 # A non-NBA player's FIBA profile (`runtime/national_engine.py`): keyed by his FIBA identity.
                 if (set(profile) - {"defense"} != {"fiba_key", "model_version", "as_of", "season_end_year",
@@ -233,7 +236,7 @@ def team_errors(team, rules):
                         or profile.get("season_end_year") != int(rules["season"][:4]) + 1):
                     errors.append(f"{p.player_id}: invalid FIBA profile metadata")
             elif (set(profile) - {"development", "defense", "feedback_sha256"} - scouting_keys
-                    - ({"fiba_model"} if national else set()) != base_keys
+                    - ({"fiba_model"} if national else set()) - ({"exhibition_model"} if exhibition else set()) != base_keys
                     or ("development" in profile and not needs_development(profile))
                     or profile.get("model_version") not in (MODEL_VERSION, LEGACY_ROOKIE_MODEL_VERSION,
                                                              ARCHIVED_ROOKIE_MODEL_VERSION, ROOKIE_MODEL_VERSION,
@@ -304,12 +307,19 @@ def calibrate(environment, game_seconds=2880):
     continuation_value = a["orb"] / misses * per_possession
     and_one_value = and_one_fta / fgm * a["ft_pct"]
     two_value, three_value = 2 + and_one_value - continuation_value, 3 + and_one_value - continuation_value
+    # An environment fitted on games whose own defense its averages already contain (All-Star weekend) scales the
+    # individual defensive effect; no NBA or FIBA environment carries the key, so their games are unchanged.
+    intensity = assumptions.get("defense_intensity", 1.0)
+    # An All-Star weekend environment also shortens the half-court possession: holding for a period's last shot, the
+    # four-second floor and the late-game clock were balanced at NBA possession lengths and take about 2% of an
+    # exhibition's possessions (docs/engine_model.md). No NBA or FIBA environment carries this key either.
+    clock = assumptions.get("possession_seconds_factor", 1.0)
     return {
         # The clock is calibrated so the box-score totals (FGA, TOV, FTA, ORB)
         # land on the era averages. Possessions counted from those totals run a
         # little above the published pace, whose estimator differs; the box
         # totals are what a game record shows, so they take priority.
-        "possession_seconds": (mean_seconds - transition_share * TRANSITION_SECONDS) / (1 - transition_share),
+        "possession_seconds": (mean_seconds - transition_share * TRANSITION_SECONDS) / (1 - transition_share) * clock,
         "transition_share": transition_share,
         # Offensive rebounds create additional half-court plays, diluting transition shots.
         "transition_play_share": transition_share * box_possessions / plays,
@@ -340,8 +350,8 @@ def calibrate(environment, game_seconds=2880):
         "box_possessions": box_possessions,
         "and_one_share_of_fta": assumptions["and_one_share_of_fta"],
         "rate_baselines": environment.get("player_rate_baselines", {}),
-        "make_per_defense": DEFENSE_SHOT_SHARE / 100 / shot_value,
-        "tov_per_defense": (1 - DEFENSE_SHOT_SHARE) / 100 / turnover_value,
+        "make_per_defense": DEFENSE_SHOT_SHARE / 100 / shot_value * intensity,
+        "tov_per_defense": (1 - DEFENSE_SHOT_SHARE) / 100 / turnover_value * intensity,
     }
 
 
@@ -722,6 +732,11 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
     def other(side):
         return "away" if side == "home" else "home"
 
+    # Fouls to disqualification. None (the Rookie Challenge, `era.exhibition_rules`): fouls are counted but nobody fouls
+    # out or sits in foul trouble; the intentional-foul and careful-defender weights keep the nominal six.
+    foul_out = rules["foul_out_limit"]
+    nominal_fouls = NOMINAL_FOUL_LIMIT if foul_out is None else foul_out
+
     def credit_seconds(seconds):
         for club in clubs.values():
             for pid in club.on_floor:
@@ -730,10 +745,12 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
     def trouble_limit():
         """Fouls at which a player sits for now (E5)."""
         number, quarters = state["period"], rules["quarters"]
+        if foul_out is None:
+            return math.inf
         if number > quarters or (number == quarters and state["clock"] <= CLOSING_SECONDS):
-            return rules["foul_out_limit"]
+            return foul_out
         # With six to foul out: 2 in the 1st quarter, 3 in the 2nd, 4 in the 3rd, 5 in the 4th.
-        return rules["foul_out_limit"] - (quarters - number) - 1
+        return foul_out - (quarters - number) - 1
 
     def sitting(club):
         limit = trouble_limit()
@@ -743,16 +760,16 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         club = clubs[defense]
         if kind == "intentional":
             # The trailing team fouls with someone who can afford it.
-            weights = [max(0.1, rules["foul_out_limit"] - 1 - club.lines[pid]["pf"]) for pid in club.on_floor]
+            weights = [max(0.1, nominal_fouls - 1 - club.lines[pid]["pf"]) for pid in club.on_floor]
         else:
             # A player one foul from disqualification defends carefully.
             weights = [rate_weight(club.players[pid], "fouls_per_minute", 6) *
                        (1.25 if not club.players[pid].stat_profile and kind == "shooting" and club.players[pid].position in ("PF", "C") else 1) *
-                       (CAREFUL if club.lines[pid]["pf"] == rules["foul_out_limit"] - 1 else 1)
+                       (CAREFUL if club.lines[pid]["pf"] == nominal_fouls - 1 else 1)
                        for pid in club.on_floor]
         pid = _weighted(rng, club.on_floor, weights)
         club.lines[pid]["pf"] += 1
-        if club.lines[pid]["pf"] >= rules["foul_out_limit"]:
+        if foul_out is not None and club.lines[pid]["pf"] >= foul_out:
             club.fouled_out.add(pid)
             club.on_floor[club.on_floor.index(pid)] = _replacement(club, pid, sitting(club))
         elif club.lines[pid]["pf"] >= trouble_limit():

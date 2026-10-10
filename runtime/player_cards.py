@@ -28,7 +28,9 @@ COMPETITIONS = {"regular": "NBA regular season", "preseason": "NBA preseason", "
     "world_cup_qualifier": "World Cup qualifiers", "world_cup_finals": "World Cup final tournament",
     "olympic_qualifier": "Olympic qualifiers", "olympic_finals": "Olympic tournament",
     "continental_qualifier": "Continental qualifiers", "continental_finals": "Continental tournament",
-    "national_friendly": "National-team friendlies"}
+    "national_friendly": "National-team friendlies", "rookie_challenge": "Rookie Challenge", "all_star": "NBA All-Star Game"}
+# All-Star weekend exhibitions (`runtime/all_star_games.py`): their engine shots stay out of the NBA shot record.
+EXHIBITION_COMPETITIONS = {"rookie_challenge", "all_star"}
 
 
 def relative(page, target):
@@ -136,6 +138,8 @@ def load_recorded_shots(player, identity, records, clock):
             if "shot_tracking" in raw:
                 if declaration:
                     raise ValueError("a game cannot combine engine locations and a declared external shot feed")
+                if r.get("competition") in EXHIBITION_COMPETITIONS:
+                    continue
                 if r.get("competition") not in NBA_SHOT_COMPETITIONS:
                     raise ValueError("this competition requires a separately verified shot geometry adapter")
                 matches = [(side, row["player_id"]) for side in ("home", "away")

@@ -9,7 +9,7 @@ from datetime import date
 from functools import partial
 from pathlib import Path
 
-from .career_stats import NATIONAL_PATHS, aggregate, collect_games, identity_at, select
+from .career_stats import ALL_STAR_FOLDER, ALL_STAR_PATHS, NATIONAL_PATHS, aggregate, collect_games, identity_at, select
 from .career_dashboard import career_overview
 from .award_records import load_awards, honors_in_scope
 from .stat_layout import ReportStyle
@@ -22,7 +22,7 @@ LABELS = {
     "world_cup_qualifier": "World Cup qualifiers", "world_cup_finals": "World Cup final tournament",
     "olympic_qualifier": "Olympic qualifiers", "olympic_finals": "Olympic tournament",
     "continental_qualifier": "Continental qualifiers", "continental_finals": "Continental final tournament",
-    "national_friendly": "National-team friendlies",
+    "national_friendly": "National-team friendlies", "rookie_challenge": "Rookie Challenge", "all_star": "NBA All-Star Game",
 }
 METRICS = [("PTS", "pts"), ("OREB", "orb"), ("DREB", "drb"), ("REB", "reb"),
            ("AST", "ast"), ("STL", "stl"), ("BLK", "blk"), ("TOV", "tov"), ("PF", "pf"),
@@ -399,6 +399,32 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
                 navigation=[("Competition summary", page), *nav], full=True)
             phase_groups.append((LABELS[kind], subset, page))
         phase_groups.insert(2, (LABELS["regular"], regular, regular_dir / "README.md"))
+        weekend_records = [r for r in year_records if r["competition"] in ALL_STAR_PATHS.values()]
+        if weekend_records:
+            # All-Star weekend (runtime/all_star_games.py): each game its own record, never in NBA totals; pages only
+            # for a season in which he played one.
+            weekend = season / ALL_STAR_FOLDER
+            weekend_groups = []
+            for folder, kind in ALL_STAR_PATHS.items():
+                subset = select(year_records, competition=kind)
+                if not subset:
+                    continue
+                game_dir = weekend / folder
+                page = game_dir / "README.md"
+                outputs[page] = render_report(page, f"{year} | {LABELS[kind]}", identity, cutoff, subset,
+                    navigation=[("All-Star weekend", weekend / "README.md"), *nav], detail=game_dir / "Stat_Detail.md",
+                    extra="An All-Star weekend exhibition, its own statistical record: never added to NBA regular-season or playoff totals.\n\n")
+                detail = game_dir / "Stat_Detail.md"
+                outputs[detail] = render_report(detail, f"{year} | {LABELS[kind]} detail", identity, cutoff, subset,
+                    navigation=[("Game summary", page), *nav], full=True)
+                weekend_groups.append((LABELS[kind], subset, page, {"competition": kind}))
+                phase_groups.append((LABELS[kind], subset, page))
+            page = weekend / "README.md"
+            outputs[page] = GENERATED + f"\n# {year} | All-Star weekend\n\n" + identity_block(identity, cutoff, style=style, page=page) + "## Statistics\n\n"
+            outputs[page] += ("The Rookie Challenge and the All-Star Game are exhibitions played by the engine; each is its own "
+                              "record, never added to NBA regular-season or playoff totals.\n\n")
+            outputs[page] += period_rollup(page, weekend_groups, "All-Star weekend games", as_of=cutoff)
+            outputs[page] += game_log(page, weekend_records, detailed=True, style=style, as_of=cutoff)
         if nba_cup_available(year):
             cup = season / "10_NBA_Cup"
             cup_games = [r for r in year_records if r["cup_stage"]]
@@ -477,6 +503,14 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
                        stats / s.name / "README.md" if kind == "regular" else s / "08_Playoffs/README.md") for s in seasons]
             groups.append(("Career total", select(records, competition=kind), None))
             outputs[page] += period_rollup(page, groups, LABELS[kind])
+        for folder, kind in ALL_STAR_PATHS.items():
+            weekend = select(records, competition=kind)
+            if not weekend:
+                continue                                         # an exhibition record only once he has played one
+            groups = [(s.name, select(weekend, season=s.name), s / ALL_STAR_FOLDER / folder / "README.md")
+                      for s in seasons if select(weekend, season=s.name)]
+            groups.append(("Career total", weekend, None))
+            outputs[page] += period_rollup(page, groups, LABELS[kind] + " (exhibition, separate from NBA totals)")
         outputs[page] += "### Browse\n\n" + " · ".join(link(page, s / "README.md", s.name + " all competitions") for s in seasons) + "\n\n"
         outputs[page] += " · ".join(link(page, p, label) for label, p in [("Earned honors", award_page), ("National team / FIBA", np),
             ("Stats definitions", manual), ("Filled example", root / "docs/examples/player_stats_preview.md"),
