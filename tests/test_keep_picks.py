@@ -1,8 +1,10 @@
 """Wade's keep_picks request and the trade request it promises (runtime/keep_picks.py; the user's words, 2006-04-19).
 
-The rule's tests run on stand-in desks, synthetic draft nights (the harness of `tests/test_draft_requests.py`) and
+A hard rule (the user's premise, October 2026): while the request stands Miami trades no pick, with no weighing and no
+draw. The rule's tests run on stand-in desks, synthetic draft nights (the harness of `tests/test_draft_requests.py`) and
 temporary roots. The replay tests read the live records (read-only): every recorded trade, offer and draft is dated
-before the request and nothing reads it there; the desk's hook adds nothing to the one recorded pick trade's score.
+before the request and nothing reads it there; the one recorded pick trade scores as it was ranked and is not barred on
+its date.
 """
 import copy
 import json
@@ -10,6 +12,8 @@ from pathlib import Path
 import tempfile
 import unittest
 from unittest import mock
+
+from types import SimpleNamespace
 
 from runtime import draft as D, keep_picks as K, signing, trades
 from tests.test_draft_requests import Draft, Engine, pool_of
@@ -80,21 +84,19 @@ class StandingRequestTests(unittest.TestCase):
         self.assertEqual(K.request_errors(ROOT), [])
 
 
-class ScoreTests(unittest.TestCase):
-    def test_at_franchise_standing_a_pick_needs_five_times_the_threshold(self):
-        self.assertAlmostEqual(K.scored(0.5, 0.8), trades.IN_SEASON_MIN_GAIN)
-        self.assertLess(K.scored(0.49, 0.8), trades.IN_SEASON_MIN_GAIN)
-        self.assertGreater(K.scored(0.8, 0.8), trades.IN_SEASON_MIN_GAIN)        # weighed, never a veto
-        self.assertAlmostEqual(K.scored(-0.2, 0.8), -0.2 * 1.8)
+class BarTests(unittest.TestCase):
+    def test_a_pick_is_barred_while_the_request_stands(self):
+        keep = K.standing_request(REQUEST_DATE, ROOT)
+        picks = [{"year": 2007, "round": 1}]
+        self.assertTrue(K.barred(keep, picks))
+        self.assertFalse(K.barred(keep, []))                                      # players only
+        self.assertFalse(K.barred(keep, picks, exempt=True))                      # his own newer package
+        self.assertFalse(K.barred(None, picks))                                   # before the request or after a withdrawal
+        self.assertIn("keep_picks request of 2006-04-19", K.basis(keep))
+        self.assertIn(LIVE, K.basis(keep))
 
-    def test_at_a_low_standing_a_smaller_gain_still_clears(self):
-        self.assertAlmostEqual(K.scored(0.125, 0.2), trades.IN_SEASON_MIN_GAIN)
-        self.assertLess(K.scored(0.12, 0.2), trades.IN_SEASON_MIN_GAIN)
-
-    def test_no_standing_makes_it_a_veto(self):
-        from runtime.standing import STANDING_WEIGHT
-        for standing, w in STANDING_WEIGHT.items():
-            self.assertGreaterEqual(K.scored(trades.IN_SEASON_MIN_GAIN / (1 - w) + 1e-9, w), trades.IN_SEASON_MIN_GAIN, standing)
+    def test_no_weighing_is_left(self):
+        self.assertFalse(hasattr(K, "scored"))                                    # a bar, not a score
 
     def test_his_own_later_package_is_exempt(self):
         keep = {"date": REQUEST_DATE}
@@ -104,8 +106,15 @@ class ScoreTests(unittest.TestCase):
         self.assertFalse(K.exempt(None, "2006-11-01"))
 
 
+PICK = [{"year": 2007, "round": 1}]
+
+
+def package(picks=PICK):
+    return {"partner": "Utah Jazz", "miami_out": ["X"], "miami_in": ["Y"], "picks_out": list(picks), "picks_in": []}
+
+
 class DeskTests(unittest.TestCase):
-    """`TradeDesk.scored_gain` on a stand-in desk."""
+    """`TradeDesk.keep_picks_bar`, `scored_gain` and `evaluate_package` on a stand-in desk."""
 
     def desk(self, on, root=ROOT, flex=0.0):
         d = trades.TradeDesk.__new__(trades.TradeDesk)
@@ -116,33 +125,139 @@ class DeskTests(unittest.TestCase):
     def v(self, gain, picks=True):
         return {"miami_gain": gain, "picks_out": [{"pick": {"year": 2007, "round": 1}, "value": 1.0}] if picks else []}
 
-    def test_before_the_request_a_pick_package_scores_as_before(self):
+    def test_before_the_request_nothing_is_barred(self):
         d = self.desk("2006-04-18")
+        self.assertIsNone(d.keep_picks_bar(package()))
         self.assertAlmostEqual(d.scored_gain(self.v(0.4), ["A"], ["B"], "P", standing="franchise"), 0.4)
-        self.assertIsNone(d.last_keep_picks)
 
-    def test_while_it_stands_a_pick_package_is_weighed(self):
+    def test_while_it_stands_a_pick_package_is_barred_at_every_standing(self):
         d = self.desk("2006-12-18")
-        got = d.scored_gain(self.v(0.4), ["A"], ["B"], "P", standing="franchise")
-        self.assertAlmostEqual(got, 0.4 * 0.2)
-        self.assertEqual((d.last_keep_picks["request"], d.last_keep_picks["weight"], d.last_keep_picks["before"]), (LIVE, 0.8, 0.4))
-        self.assertIn("keep_picks request of 2006-04-19", d.last_keep_picks["basis"])
-        self.assertGreaterEqual(d.scored_gain(self.v(0.6), ["A"], ["B"], "P", standing="franchise"), trades.IN_SEASON_MIN_GAIN)
-        low = d.scored_gain(self.v(0.5), ["A"], ["B"], "P", standing="rookie")
-        self.assertAlmostEqual(low, 0.5 * 0.8)
+        bar = d.keep_picks_bar(package())
+        self.assertIn("keep_picks request of 2006-04-19", bar)
+        self.assertIn("hard rule", bar)
+        self.assertIsNone(d.keep_picks_bar(package(picks=())))                   # players only
+        self.assertIsNone(d.keep_picks_bar(package(), keep_exempt=True))         # his own newer package
+        for standing in ("rookie", "franchise"):                                 # no standing weight is read
+            self.assertAlmostEqual(d.scored_gain(self.v(0.4), ["A"], ["B"], "P", standing=standing), 0.4)
 
-    def test_the_pick_weighs_like_an_opposed_departure(self):
-        d = self.desk("2006-12-18")
-        opposed = d.scored_gain(self.v(0.4, picks=False), ["A"], ["B"], "P", opposed={"A"}, standing="all_star")
-        self.assertAlmostEqual(d.scored_gain(self.v(0.4), ["A"], ["B"], "P", standing="all_star"), opposed)
-        both = d.scored_gain(self.v(-0.1), ["A"], ["B"], "P", opposed={"A"}, standing="all_star")
-        self.assertAlmostEqual(both, -0.1 * 1.6 * 1.6)                  # an opposed player and a pick: each weighed
+    def ready(self, d):
+        """A desk on which a package passes every other rule: legal, inside the budget, accepted at 0.6, gain 0.3."""
+        packet = {"options": {"accept": 0.6, "decline": 0.4}}
+        d.acceptance_packet = mock.Mock(return_value=(packet, {"miami_gain": 0.3, "objective_gain": 0.05}))
+        d.within_budget = lambda outs, ins, club: True
+        return d
 
-    def test_players_only_and_his_own_package_are_unchanged(self):
+    def test_an_earlier_package_request_naming_a_pick_is_declined_without_a_packet(self):
+        d = self.ready(self.desk("2006-12-18"))
+        proposes, why, numbers = d.evaluate_package(package(), "franchise", trades.IN_SEASON_MIN_GAIN)
+        self.assertFalse(proposes)
+        self.assertIn("keep_picks request of 2006-04-19", why)
+        self.assertEqual((numbers["keep_picks"]["request"], numbers["keep_picks"]["rule"]), (LIVE, "hard"))
+        d.acceptance_packet.assert_not_called()                                  # no valuation, no packet, no draw
+
+    def test_his_own_later_package_naming_a_pick_still_works(self):
+        d = self.ready(self.desk("2006-12-18"))
+        proposes, why, numbers = d.evaluate_package(package(), "franchise", trades.IN_SEASON_MIN_GAIN, keep_exempt=True)
+        self.assertEqual((proposes, why), (True, "the front office proposes it"))
+        self.assertNotIn("keep_picks", numbers)
+        self.assertAlmostEqual(numbers["scored_gain"], 0.3 * 1.8)                # weighed like his other requests (wanted)
+        proposes, _, _ = self.ready(self.desk("2006-04-18")).evaluate_package(package(), "franchise", trades.IN_SEASON_MIN_GAIN)
+        self.assertTrue(proposes)                                                # before the request: as it always was
+
+    def test_the_declined_answer_reads_the_bar_once_in_the_phase_note(self):
+        """`run_trade.answer_requests` on stand-ins: the bar's own sentence ends the note line with one period."""
+        import scripts.run_trade as R
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        desk = self.ready(self.desk("2006-12-18"))
+        row = {"date": "2006-01-02", "subject": "trade_package", "package": package()}
+        notes = []
+        writer = SimpleNamespace(load=lambda path: {}, commit=lambda: None)
+        with mock.patch.multiple(R, requests=lambda root: [row], awaiting=lambda day, root: False, TradeDesk=lambda *a: desk,
+                                 FrontOffice=lambda *a: None, Market=lambda *a: None, in_season=lambda day, root: True,
+                                 standing=lambda root: {"standing": "franchise"}), \
+                mock.patch.multiple(R.signing, Writer=lambda root: writer, phase_note_for=lambda state: "note.md",
+                                    note_event=lambda w, note, day, text: notes.append(text)):
+            lines = R.answer_requests("2006-12-18", tmp.name)
+        self.assertEqual(len(lines), 1)
+        self.assertEqual(len(notes), 1)
+        self.assertTrue(notes[0].endswith("(a hard rule, the user's premise; runtime/keep_picks.py)."), notes[0])
+        self.assertNotIn("..", notes[0])
+        desk.acceptance_packet.assert_not_called()
+
+
+class SearchTests(unittest.TestCase):
+    """`TradeDesk.search` on a stand-in desk: Utah takes X for Y only with Miami's 2007 first added."""
+
+    def desk(self, on):
+        d = trades.TradeDesk.__new__(trades.TradeDesk)
+        d.on, d.root, d.season = on, ROOT, "2006-07"
+        d.fo = SimpleNamespace(needs=lambda: {"SF": {"minutes_short": 10, "quality_gap": 0.0}}, skill_fit=lambda b: 0.0,
+                               cap_room=lambda: 0, roster={"players": [{"status": "under_contract"}]})
+        d.picks = {"picks": [{"year": 2007, "round": 1, "owned": True}, {"year": 2007, "round": 2, "owned": True}]}
+        y = {"player": "Y", "bbr_id": "yy01", "status": "under_contract", "schedule": {"2006-07": 5000000}}
+        d.assets = SimpleNamespace(contracts={"Utah Jazz": {"players": [y]}}, salary=lambda p: 5000000, positions={"yy01": (None, "SF", 9)},
+                                   player_value=lambda p, for_club=None: {"production": 1.0}, valuation=SimpleNamespace(value=lambda b: 0.1))
+        d._combos = lambda most=2: [("X",)]
+        d.miami_player = lambda n: ({"player": n, "schedule": {"2006-07": 5000000}}, None)
+        d.matching_salary = lambda p, out: (5000000, None)
+        d.partner_blocked = lambda club, p: None
+        d._prefilter = lambda *args: True
+        d.within_budget = lambda outs, ins, club: True
+        d.flexibility = lambda outs, ins, club: 0.0
+        d.asked = []
+
+        def acceptance_packet(trade):
+            d.asked.append(trade["picks_out"])
+            accept = 0.6 if trade["picks_out"] else 0.2                          # the partner takes it only with the pick
+            return {"options": {"accept": accept, "decline": round(1 - accept, 6)}}, {"miami_gain": 0.3, "objective_gain": 0.05}
+        d.acceptance_packet = acceptance_packet
+        return d
+
+    def test_before_the_request_the_pick_is_added(self):
+        d = self.desk("2006-04-18")
+        found = d.search(standing="franchise", min_gain=trades.IN_SEASON_MIN_GAIN)
+        self.assertEqual([f["trade"]["picks_out"] for f in found], [[{"year": 2007, "round": 1}]])
+        self.assertNotIn("keep_picks", found[0])
+
+    def test_while_it_stands_a_pick_package_is_never_proposed(self):
         d = self.desk("2006-12-18")
-        self.assertAlmostEqual(d.scored_gain(self.v(0.4, picks=False), ["A"], ["B"], "P", standing="franchise"), 0.4)
-        self.assertAlmostEqual(d.scored_gain(self.v(0.4), ["A"], ["B"], "P", standing="franchise", keep_exempt=True), 0.4)
-        self.assertIsNone(d.last_keep_picks)
+        self.assertEqual(d.search(standing="franchise", min_gain=trades.IN_SEASON_MIN_GAIN), [])
+        self.assertEqual(d.asked, [[]])                                          # the pick was never even tried
+
+    def test_the_sign_and_trade_pick_fallback_is_closed(self):
+        for on, with_pick in (("2006-04-18", True), ("2006-12-18", False)):
+            d = self.desk(on)
+            packages = d._packages(with_pick=True)
+            self.assertEqual(any(picks for _, picks in packages), with_pick, on)
+
+
+class OfferTests(unittest.TestCase):
+    """`TradeDesk.offers` on a stand-in desk: Utah offers Y for X, a players-only package Miami's rules accept."""
+
+    def desk(self, on):
+        d = SearchTests.desk(self, on)
+        d.assets.posture = lambda club: "contending"
+        d.assets.player_value = lambda p, for_club=None: {"now": 1.0, "future": 0.5, "relief": 0.0, "production": 1.0}
+        d.miami_tradeable = lambda: [{"player": "X", "schedule": {"2006-07": 5000000}}]
+        d.needs_consent = lambda trade: False
+        d.valuation = lambda trade: {"untouchable": False, "objective_gain": 0.1, "miami_gain": 0.3}
+        d.errors = lambda trade: []
+        d.fits_partner = lambda trade: True
+        return d
+
+    def test_an_offer_carries_no_miami_pick_and_players_only_still_go_through(self):
+        offers = self.desk("2006-12-18").offers(standing="franchise", min_gain=trades.IN_SEASON_MIN_GAIN)
+        self.assertEqual([(o["trade"]["picks_out"], o["accepted"]) for o in offers], [([], True)])
+
+    def test_an_offer_that_took_a_pick_would_be_declined_by_the_bar(self):
+        d = self.desk("2006-12-18")
+        real = d.keep_picks_bar
+        d.keep_picks_bar = lambda trade, keep_exempt=False: real(dict(trade, picks_out=PICK), keep_exempt)
+        offers = d.offers(standing="franchise", min_gain=trades.IN_SEASON_MIN_GAIN)
+        self.assertEqual(len(offers), 1)
+        self.assertFalse(offers[0]["accepted"])
+        self.assertIn("keep_picks request of 2006-04-19", offers[0]["reason"])
 
 
 def recorded(pattern):
@@ -167,12 +282,11 @@ class ReplayTests(unittest.TestCase):
                 n += 1
         self.assertGreater(n, 10)
 
-    def test_the_hook_adds_nothing_to_the_recorded_pick_trade(self):
+    def test_the_recorded_pick_trade_scores_as_ranked_and_was_not_barred_on_its_date(self):
         """Brian Grant and Miami's 2006 first for P.J. Brown and Chris Mihm (2006-01-16), proposed at franchise standing.
         Not a rebuild: the cap-room term is the one it was ranked with, taken from the recorded score (today's sheet
-        already holds the trade, so the 2006-01-16 room cannot be recomputed from it). With the hook in place a desk
-        dated before the request returns the recorded score exactly, so the hook adds nothing there; had the request
-        stood, the pick would have scored below the in-season threshold."""
+        already holds the trade, so the 2006-01-16 room cannot be recomputed from it). A desk dated on the trade's day
+        returns the recorded score exactly and bars nothing; dated on the request's day, the same package is barred."""
         path = ROOT / "career/Dwyane_Wade/2005-06/00_Team/Transactions/Trades/2006-01-16-7a8ce79392.json"
         record = json.loads(path.read_text(encoding="utf-8"))
         v, ranking, t = record["valuation"], record["ranking"], record["trade"]
@@ -181,11 +295,8 @@ class ReplayTests(unittest.TestCase):
         d = DeskTests().desk(record["date"], flex=flex)
         got = d.scored_gain(v, t["miami_out"], t["miami_in"], t["partner"], standing=record["standing"]["standing"])
         self.assertAlmostEqual(got, ranking["score"], places=6)
-        self.assertIsNone(d.last_keep_picks)
-        d._keep_picks = K.standing_request(REQUEST_DATE, ROOT)
-        weighed = d.scored_gain(v, t["miami_out"], t["miami_in"], t["partner"], standing="franchise")
-        self.assertAlmostEqual(weighed, ranking["score"] * 0.2, places=6)
-        self.assertLess(weighed, trades.IN_SEASON_MIN_GAIN)
+        self.assertIsNone(d.keep_picks_bar(t))
+        self.assertIsNotNone(DeskTests().desk(REQUEST_DATE).keep_picks_bar(t))
 
     def test_recorded_offers_carry_no_miami_pick(self):
         for path, log in recorded("*/00_Team/Transactions/Trade_Offers/*.json"):
@@ -398,7 +509,7 @@ class DriverTests(unittest.TestCase):
 
 
 KEEP_FRANCHISE = {"path": LIVE, "index": 2, "date": REQUEST_DATE, "requested": "keep", "if_ignored": "trade_request", "words": WORDS,
-                  "source_ref": "test", "standing": "franchise", "standing_as_of": "2005-06-16", "weight": 0.8}
+                  "source_ref": "test", "standing": "franchise", "standing_as_of": "2005-06-16"}
 SPREAD = (("Alpha One", "a1", "G", 1), ("Beta Two", "b2", "F", 5), ("Gamma Three", "g3", "C", 5.5), ("Delta Four", "d4", "F", 6))
 
 
@@ -417,33 +528,34 @@ class DraftNightTests(unittest.TestCase):
         pool = pool_of(*SPREAD)
         self.assertEqual(set(D.tiers(pool).values()), {1})
 
-    def test_on_the_clock_miami_answers_a_trade_down_at_a_reduced_chance(self):
+    def test_on_the_clock_miami_declines_a_trade_down_without_a_draw(self):
         _, plain, packets0 = self.night("Miami Heat", "Alpha")
         self.assertEqual(packets0["2006-draft-pick-1-trade-down"]["options"], {"accept": 0.5, "decline": 0.5})
         self.assertNotIn("keep_picks", plain)
-        _, record, packets = self.night("Miami Heat", "Alpha", keep=KEEP_FRANCHISE)
-        packet = packets["2006-draft-pick-1-trade-down"]
-        self.assertEqual(packet["options"], {"accept": 0.1, "decline": 0.9})          # 0.5 x (1 - 0.8): weighed, still drawn
-        self.assertIn("keep_picks request of 2006-04-19", packet["basis"])
+        draft, record, packets = self.night("Miami Heat", "Alpha", keep=KEEP_FRANCHISE,
+                                            answers={"2006-draft-pick-1-trade-down": "accept"})
+        self.assertNotIn("2006-draft-pick-1-trade-down", packets)                # no packet: nothing for the engine to draw
+        self.assertFalse(any(p.name.endswith("trade-down.decision.json") for p in draft.root.rglob("*.decision.json")))
         call = record["keep_picks"]["calls"][0]
-        self.assertEqual((call["side"], call["slot"], call["for_slot"], call["accept"]), ("down", 1, 2, 0.1))
-        self.assertEqual(record["trades"], [])                                          # the stand-in declined
+        self.assertEqual((call["side"], call["slot"], call["for_slot"], call["declined"], call["drawn"]), ("down", 1, 2, True, False))
+        self.assertIn("keep_picks request of 2006-04-19", call["basis"])
+        self.assertEqual(record["trades"], [])
+        self.assertEqual(record["picks"][0]["club"], "Miami Heat")                # Miami keeps No. 1 and uses it
+        self.assertNotIn("wade_trade_requests", record)
 
-    def test_a_trade_down_taken_anyway_writes_his_trade_request(self):
-        draft, record, _ = self.night("Miami Heat", "Alpha", keep=KEEP_FRANCHISE, answers={"2006-draft-pick-1-trade-down": "accept"})
-        self.assertEqual(record["trades"][0]["from"], "Miami Heat")
-        rid = "2006-06-28-2006-draft-pick-1-trade-down"
-        self.assertEqual(record["wade_trade_requests"], [rid])
-        rows = json.loads((draft.root / draft.folder / "wade_requests.json").read_text())["requests"]
-        row = next(r for r in rows if r.get("id") == rid)
-        self.assertEqual([p["label"] for p in row["cites"]["picks"]], ["No. 1 in the 2006 draft"])
-
-    def test_miami_does_not_move_up_at_franchise_standing(self):
+    def test_miami_never_moves_up(self):
         _, plain, packets0 = self.night("Alpha", "Miami Heat")
         self.assertIn("Miami Heat", packets0["2006-draft-pick-1-trade-down"]["question"])
         _, record, packets = self.night("Alpha", "Miami Heat", keep=KEEP_FRANCHISE)
         self.assertNotIn("2006-draft-pick-1-trade-down", packets)
         self.assertEqual([(c["side"], c["declined"]) for c in record["keep_picks"]["calls"]], [("up", True)])
+
+    def test_at_any_standing(self):
+        low = dict(KEEP_FRANCHISE, standing="unsigned_rookie")
+        for clubs in (("Miami Heat", "Alpha"), ("Alpha", "Miami Heat")):
+            _, record, packets = self.night(*clubs, keep=low, answers={"2006-draft-pick-1-trade-down": "accept"})
+            self.assertNotIn("2006-draft-pick-1-trade-down", packets, clubs)
+            self.assertEqual(record["trades"], [], clubs)
 
     def test_another_clubs_trade_is_unaffected(self):
         _, _, packets0 = self.night("Alpha", "Beta", "Miami Heat")
@@ -451,20 +563,21 @@ class DraftNightTests(unittest.TestCase):
         self.assertEqual(packets["2006-draft-pick-1-trade-down"], packets0["2006-draft-pick-1-trade-down"])
         self.assertEqual(record["keep_picks"]["calls"], [])
 
-    def test_a_low_standing_can_move_up_and_the_pick_traded_writes_his_trade_request(self):
-        low = dict(KEEP_FRANCHISE, standing="unsigned_rookie", weight=0.15)
-        draft, record, packets = self.night("Alpha", "Miami Heat", keep=low, answers={"2006-draft-pick-1-trade-down": "accept"})
-        self.assertEqual([(c["side"], c["declined"]) for c in record["keep_picks"]["calls"]], [("up", False)])
-        self.assertEqual(record["trades"][0]["to"], "Miami Heat")
-        rid = "2006-06-28-2006-draft-pick-1-trade-down"
-        self.assertEqual(record["wade_trade_requests"], [rid])
+    def test_a_miami_pick_traded_anyway_still_writes_his_trade_request(self):
+        """The safety net (`_file_trade_requests`), fed a draft-night trade the rule no longer makes."""
+        draft = Draft(self).order("Miami Heat", "Alpha")
+        (draft.root / f"career/Dwyane_Wade/{draft.globals['SEASON']}/current_state.json").write_text(
+            json.dumps({"current_date": draft.date, "pending_player_decisions": []}))
+        moves = [{"slot": 1, "from": "Miami Heat", "to": "Alpha", "for_slot": 2}, {"slot": 3, "from": "Beta", "to": "Miami Heat", "for_slot": 5}]
+        with mock.patch.multiple(D, **draft.globals):
+            ids = D._file_trade_requests(draft.root, KEEP_FRANCHISE, moves, {1: 1, 2: 1, 3: 1, 5: 1})
+        self.assertEqual(ids, ["2006-06-28-2006-draft-pick-1-trade-down", "2006-06-28-2006-draft-pick-3-trade-down"])
         rows = json.loads((draft.root / draft.folder / "wade_requests.json").read_text())["requests"]
-        row = next(r for r in rows if r.get("id") == rid)
-        self.assertEqual([p["label"] for p in row["cites"]["picks"]], ["No. 2 in the 2006 draft", "its 2007 second-round pick"])
-        self.assertEqual(row["cites"]["partner"], "Alpha")
+        self.assertEqual([p["label"] for p in rows[0]["cites"]["picks"]], ["No. 1 in the 2006 draft"])
+        self.assertEqual([p["label"] for p in rows[1]["cites"]["picks"]], ["No. 5 in the 2006 draft", "its 2007 second-round pick"])
         state = json.loads((draft.root / f"career/Dwyane_Wade/{draft.globals['SEASON']}/current_state.json").read_text())
-        self.assertIn(K.PENDING_PREFIX + rid, state["pending_player_decisions"])
-        self.assertTrue((draft.root / draft.folder / K.page_name(row)).is_file())
+        self.assertEqual(state["pending_player_decisions"], [K.PENDING_PREFIX + i for i in ids])
+        self.assertTrue(all((draft.root / draft.folder / K.page_name(r)).is_file() for r in rows))
 
     def test_the_recorded_drafts_had_no_request(self):
         for year in (2004, 2005):
@@ -476,10 +589,9 @@ class DraftNightTests(unittest.TestCase):
         with mock.patch.multiple(D, YEAR=2006, SEASON="2005-06", DRAFT_DATE="2006-06-28",
                                  FOLDER=Path("career/Dwyane_Wade/2005-06/09_Draft")):
             keep = D._keep(ROOT)
-        self.assertEqual((keep["path"], keep["index"], keep["date"], keep["standing"], keep["weight"]),
-                         (LIVE, 2, REQUEST_DATE, "franchise", 0.8))
-        self.assertEqual(D.keep_down(28, 31, keep)["accept"], 0.1)
-        self.assertTrue(D.keep_up(28, 31, 1.22, keep)["declined"])
+            down, up = D.keep_down(28, 31, keep), D.keep_up(28, 31, 1.22, keep)
+        self.assertEqual((keep["path"], keep["index"], keep["date"], keep["standing"]), (LIVE, 2, REQUEST_DATE, "franchise"))
+        self.assertEqual((down["declined"], down["drawn"], up["declined"]), (True, False, True))
 
     def test_a_club_moves_up_once_from_the_2006_draft(self):
         """Its next-year second goes with its first move up; before 2006 the rule could send it twice."""

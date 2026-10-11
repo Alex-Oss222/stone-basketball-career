@@ -45,11 +45,11 @@ Activation: An actual dated proposal, consultation or executed transaction.
 
 ## Your trade requests
 
-A request never forces a decision; the front office weighs it by your standing (runtime/keep_picks.py).
+While your keep_picks request stands Miami's front office trades no draft pick, a hard rule under the career's premise (runtime/keep_picks.py); your other requests are weighed by your standing and never force a decision.
 
 | Date | Request | What it asks | Status | Your words | Source |
 | --- | --- | --- | --- | --- | --- |
-| 2006-04-19 | keep_picks | Keep every draft pick; if one is traded he asks for a trade | Standing until withdrawn | if they trade one more pick i am asking for a trade keep the fucking picks mfers | [Recorded request](../2005-06/04_Training_Camp/wade_requests.json) |
+| 2006-04-19 | keep_picks | Keep every draft pick; if one is traded he asks for a trade | Standing until withdrawn: Miami trades no pick (hard rule) | if they trade one more pick i am asking for a trade keep the fucking picks mfers | [Recorded request](../2005-06/04_Training_Camp/wade_requests.json) |
 
 ## Your response when an update arrives
 

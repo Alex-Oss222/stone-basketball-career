@@ -220,6 +220,19 @@ class MiamiPickTests(unittest.TestCase):
         self.assertEqual(packets["2006-draft-pick-3"], plain["2006-draft-pick-3"])     # so Beta's pick is the same
         self.assertNotIn("Wade", packets["2006-draft-pick-3"]["basis"])
 
+    def test_a_trade_down_offer_earlier_in_the_night_keeps_the_account(self):
+        """Beta's offer to move up to No. 1 (declined) comes before Miami's pick. The draft-night loop once reused the
+        name of the record's list of Miami picks for a trade-down's basis text, so a Miami pick with a request after any
+        trade-down offer could not be recorded."""
+        pool = pool_of(("Alpha One", "a1", "G", 1), ("Beta Two", "b2", "F", 5), ("Gamma Three", "g3", "C", 5.5),
+                       ("Delta Four", "d4", "F", 6))
+        draft = Draft(self).order("Alpha", "Beta", "Miami Heat").requests(request("Delta Four", "d4"))
+        draft.globals.update(MAX_TRADES=6)
+        record, packets, watched, _ = draft.run(pool)
+        self.assertIn("2006-draft-pick-1-trade-down", packets)
+        self.assertEqual([n["pick"] for n in record["wade_requests"]["picks"]], [3])
+        self.assertEqual([w["player"] for w in watched], ["Delta Four"])
+
     def test_a_prospect_taken_earlier_is_not_weighed(self):
         pool = pool_of(*self.TIER_ONE, ("Kyle Lowry", "lowryky01", "G", 1.2))
         engine = Engine({"2006-draft-pick-1": "Kyle Lowry"})

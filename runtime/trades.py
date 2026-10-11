@@ -32,10 +32,11 @@ a renounced player's return (cbafaq05 Q26, Q34). From IN_SEASON_SIGNED_FROM (the
 rest-of-season signing as newly signed (`signing_block`, cbafaq05 Q88), so consent is never asked of a player who may
 not be traded at all yet.
 
-Wade's keep_picks request (runtime/keep_picks.py, from its date, 2006-04-19): every Miami package that sends one of its
-picks is scored with the request weighed (`scored_gain`: the pick is an opposed departure), in the search and Wade's own
-package requests; offers from other clubs carry no Miami pick, and a sign-and-trade acquisition's pick fallback runs only
-in the 2003 summer (scripts/run_free_agency.py). Before the request's date nothing changes.
+Wade's keep_picks request (runtime/keep_picks.py, from its date, 2006-04-19; a hard rule, the user's premise): while it
+stands Miami sends no pick (`keep_picks_bar`). The search adds no pick to a package, a package Wade asked for before the
+request that names one is declined, an offer that would take one is declined (offers carry none) and the sign-and-trade
+pick fallback is closed (`_packages`); his own package request dated on or after it is his newer wish for the pick it
+names (`keep_exempt`). Before the request's date nothing changes.
 """
 from datetime import date, timedelta
 import hashlib
@@ -1309,12 +1310,11 @@ class TradeDesk:
         return sum(before - after for s_, (before, after) in self.payroll_after(outs, ins, club).items()
                    if s_ > self.season) / self.cap
 
-    def scored_gain(self, v, outs, ins, club, wanted=(), opposed=(), standing="unsigned_rookie", keep_exempt=False):
+    def scored_gain(self, v, outs, ins, club, wanted=(), opposed=(), standing="unsigned_rookie"):
         """Miami's gain for ranking: its objective, its later-season room (CAP_FLEXIBILITY_WEIGHT) and Wade's requests
         by his standing weight (a wanted arrival raises a gain and softens a loss; an opposed departure the reverse).
-        A package sending one of Miami's picks while Wade's keep_picks request stands is weighed by runtime/keep_picks.py
-        (the pick is an opposed departure), unless it is his own newer package request (`keep_exempt`); `last_keep_picks`
-        holds the weighing, None when nothing was weighed."""
+        A package that sends one of Miami's picks while Wade's keep_picks request stands never reaches it
+        (`keep_picks_bar`)."""
         from .standing import STANDING_WEIGHT
         gain = v["miami_gain"] + CAP_FLEXIBILITY_WEIGHT * self.flexibility(outs, ins, club)
         w = STANDING_WEIGHT[standing]
@@ -1322,13 +1322,6 @@ class TradeDesk:
             gain *= (1 + w) if gain > 0 else (1 - w)
         if any(o in opposed for o in outs):
             gain *= (1 - w) if gain > 0 else (1 + w)
-        self.last_keep_picks = None
-        if v.get("picks_out") and not keep_exempt and self.keep_picks():
-            from .keep_picks import basis, scored
-            before, gain = gain, scored(gain, w)
-            self.last_keep_picks = {"request": self.keep_picks()["path"], "requested_on": self.keep_picks()["date"],
-                                    "standing": standing, "weight": w, "before": round(before, 3), "after": round(gain, 3),
-                                    "basis": basis(self.keep_picks(), w, standing, before, gain)}
         return gain
 
     def keep_picks(self):
@@ -1338,21 +1331,31 @@ class TradeDesk:
             self._keep_picks = standing_request(self.on, self.root)
         return self._keep_picks
 
+    def keep_picks_bar(self, trade, keep_exempt=False):
+        """Why the front office will not make `trade`: it sends one of Miami's picks while Wade's keep_picks request
+        stands and is not his own newer package request (`keep_exempt`), a hard rule (the user's premise;
+        runtime/keep_picks.py). None when the trade sends no pick, before the request's date, or for his own package."""
+        from .keep_picks import barred, basis
+        keep = self.keep_picks()
+        return basis(keep) if barred(keep, trade.get("picks_out"), keep_exempt) else None
+
     def evaluate_package(self, trade, standing="unsigned_rookie", min_gain=SEARCH_MIN_GAIN, keep_exempt=False):
         """The front office's answer to a package Wade asked for: (proposes, why, numbers). It proposes only what it
         would make on its own rules, with his request weighed: legal, inside the payroll ceiling, the partner plausibly
-        accepting, and a scored gain at the threshold. A pick in the package is weighed against his standing keep_picks
-        request unless the package request is his newer wish for it (`keep_exempt`, runtime/keep_picks.exempt)."""
+        accepting, and a scored gain at the threshold. A package naming a Miami pick is declined outright while his
+        keep_picks request stands (`keep_picks_bar`), unless the package request is his newer wish for that pick
+        (`keep_exempt`, runtime/keep_picks.exempt)."""
         outs, ins, club = trade.get("miami_out", []), trade.get("miami_in", []), trade["partner"]
+        bar = self.keep_picks_bar(trade, keep_exempt)
+        if bar:
+            return False, bar, {"keep_picks": {"request": self.keep_picks()["path"], "requested_on": self.keep_picks()["date"],
+                                               "rule": "hard", "basis": bar}}
         packet, v = self.acceptance_packet(trade)
         if packet is None:
             return False, "; ".join(v), {}
         numbers = {"miami_gain": v["miami_gain"], "flexibility_caps": round(self.flexibility(outs, ins, club), 3),
                    "partner_gain": v["objective_gain"], "accept": packet["options"]["accept"]}
-        numbers["scored_gain"] = round(self.scored_gain(v, outs, ins, club, wanted=set(ins), standing=standing,
-                                                        keep_exempt=keep_exempt), 3)
-        if self.last_keep_picks:
-            numbers["keep_picks"] = self.last_keep_picks
+        numbers["scored_gain"] = round(self.scored_gain(v, outs, ins, club, wanted=set(ins), standing=standing), 3)
         if not self.within_budget(outs, ins, club):
             return False, "it would take a later season over the owner's payroll ceiling", numbers
         if v.get("club_accept", packet["options"]["accept"]) < SEARCH_MIN_ACCEPT:
@@ -1364,9 +1367,7 @@ class TradeDesk:
                            f"{r['rights'].replace('_', ' ')} rights at its end, cbafaq05 Q83; the front office asks at {SEARCH_MIN_ACCEPT:.0%})"), numbers
         if numbers["scored_gain"] < min_gain:
             return False, (f"Miami's gain on its own objective is {v['miami_gain']:+.3f}, {numbers['flexibility_caps']:+.2f} caps of later room, "
-                           f"{numbers['scored_gain']:+.3f} with Wade's request weighed"
-                           + (" and the pick weighed against his keep_picks request" if numbers.get("keep_picks") else "")
-                           + f": below {min_gain:+.2f}"), numbers
+                           f"{numbers['scored_gain']:+.3f} with Wade's request weighed: below {min_gain:+.2f}"), numbers
         return True, "the front office proposes it", numbers
 
     def within_budget(self, outs, ins, club):
@@ -1380,9 +1381,9 @@ class TradeDesk:
 
         Packages: one to MAX_OUT of Miami's tradeable players for one or two of the partner's (a target Miami
         needs, alone or with a second contract for salary or depth), and, when the partner would not take the
-        players alone, the same with Miami's next owned first-round pick added (weighed against Wade's keep_picks
-        request while it stands, `scored_gain`). `exclude` holds trade keys (`package_key`) already declined this
-        season, never asked twice.
+        players alone, the same with Miami's next owned first-round pick added, never while Wade's keep_picks request
+        stands (a hard rule, the user's premise; runtime/keep_picks.py). `exclude` holds trade keys (`package_key`)
+        already declined this season, never asked twice.
 
         `consultations(kind, player)` answers "approve", "object" or None for a star the franchise
         consultation gate covers; an objected star is skipped, an unanswered one is evaluated but kept
@@ -1404,7 +1405,7 @@ class TradeDesk:
         room = self.fo.cap_room()
         active = sum(1 for r in self.fo.roster["players"] if playable(r["status"]))
         owned = [{"year": p["year"], "round": p["round"]} for p in self.picks.get("picks", []) if p.get("owned") and p["round"] == 1]
-        sweetener = sorted(owned, key=lambda x: x["year"])[:1]
+        sweetener = [] if self.keep_picks() else sorted(owned, key=lambda x: x["year"])[:1]   # no pick while Wade's keep_picks request stands
         found = []
         self.needing_consultation = []
         for club, entry in self.assets.contracts.items():
@@ -1456,8 +1457,6 @@ class TradeDesk:
                             row = {"trade": trade, "miami_gain": round(gain, 3), "partner_gain": v["objective_gain"],
                                    "accept": packet["options"]["accept"], "score": round(gain, 3),
                                    "wade_request": any(n in wanted for n in ins) or any(o in opposed for o in outs)}
-                            if self.last_keep_picks:
-                                row["keep_picks"] = self.last_keep_picks     # only while the request stands (forward-only)
                             pending = [n for n in stars if answers[n] != "approve"]
                             if pending:
                                 self.needing_consultation.append(dict(row, consultation="required", consultation_player=pending[0],
@@ -1528,7 +1527,10 @@ class TradeDesk:
             outs, ins = trade["miami_out"], trade["miami_in"]
             gain = self.scored_gain(v, outs, ins, club, wanted, opposed, standing)   # an offer carries no Miami pick today
             stars = [n for n in ins if consultation_required(standing, self.assets.valuation.value((self.partner_player(club, n) or {}).get("bbr_id")))]
-            if stars:
+            bar = self.keep_picks_bar(trade)                                        # None while offers carry no Miami pick
+            if bar:
+                accepted, reason = False, bar
+            elif stars:
                 accepted, reason = False, f"{stars[0]} is a star the franchise consultation covers; the front office does not take him unasked"
             elif not self.within_budget(outs, ins, club):
                 accepted, reason = False, "it would take a later season over the owner's payroll ceiling"
@@ -1563,10 +1565,11 @@ class TradeDesk:
                 "agreement_date": agreement_date or self.on}
 
     def _packages(self, with_pick=True):
-        """Outgoing packages Miami can offer: singles and pairs of tradeable players, then one owned first."""
+        """Outgoing packages Miami can offer: singles and pairs of tradeable players, then one owned first (never while
+        Wade's keep_picks request stands: a hard rule, runtime/keep_picks.py)."""
         combos = self._combos()
         packages = [(outs, []) for outs in combos]
-        if with_pick:
+        if with_pick and not self.keep_picks():
             owned = [{"year": p["year"], "round": p["round"]} for p in self.picks.get("picks", []) if p.get("owned") and p["round"] == 1]
             if owned:
                 packages += [(outs, [owned[0]]) for outs in combos] + [([], [owned[0]])]
