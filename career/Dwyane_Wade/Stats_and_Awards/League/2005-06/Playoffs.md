@@ -253,7 +253,7 @@ Home court: Toronto Raptors. Toronto Raptors wins 4-3.
 
 ### West: (4) San Antonio Spurs vs (2) Dallas Mavericks
 
-Home court: Dallas Mavericks. Series San Antonio Spurs 3, Dallas Mavericks 3.
+Home court: Dallas Mavericks. San Antonio Spurs wins 4-3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -263,4 +263,20 @@ Home court: Dallas Mavericks. Series San Antonio Spurs 3, Dallas Mavericks 3.
 | 4 | Tue May 30 | San Antonio Spurs | Dallas Mavericks | Dallas Mavericks 122, San Antonio Spurs 120 (1OT) |
 | 5 | Thu Jun 1 | Dallas Mavericks | San Antonio Spurs | San Antonio Spurs 108, Dallas Mavericks 112 |
 | 6 | Sat Jun 3 | San Antonio Spurs | Dallas Mavericks | Dallas Mavericks 84, San Antonio Spurs 87 |
-| 7 | Mon Jun 5 | Dallas Mavericks | San Antonio Spurs | if needed |
+| 7 | Mon Jun 5 | Dallas Mavericks | San Antonio Spurs | San Antonio Spurs 102, Dallas Mavericks 91 |
+
+## NBA Finals
+
+### Finals: (1) Toronto Raptors vs (4) San Antonio Spurs
+
+Home court: Toronto Raptors. Series Toronto Raptors 0, San Antonio Spurs 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Thu Jun 8 | Toronto Raptors | San Antonio Spurs |  |
+| 2 | Sun Jun 11 | Toronto Raptors | San Antonio Spurs |  |
+| 3 | Tue Jun 13 | San Antonio Spurs | Toronto Raptors |  |
+| 4 | Thu Jun 15 | San Antonio Spurs | Toronto Raptors |  |
+| 5 | Sun Jun 18 | San Antonio Spurs | Toronto Raptors | if needed |
+| 6 | Tue Jun 20 | Toronto Raptors | San Antonio Spurs | if needed |
+| 7 | Thu Jun 22 | Toronto Raptors | San Antonio Spurs | if needed |

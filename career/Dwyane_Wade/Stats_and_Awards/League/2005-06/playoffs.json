@@ -1315,10 +1315,10 @@
    ],
    "home_court": "Dallas Mavericks",
    "wins": {
-    "San Antonio Spurs": 3,
+    "San Antonio Spurs": 4,
     "Dallas Mavericks": 3
    },
-   "winner": null,
+   "winner": "San Antonio Spurs",
    "games": [
     {
      "game": 1,
@@ -1386,7 +1386,87 @@
      "home": "Dallas Mavericks",
      "away": "San Antonio Spurs",
      "conditional": true,
-     "event_id": "2006-06-05-san-antonio-spurs-at-dallas-mavericks"
+     "event_id": "2006-06-05-san-antonio-spurs-at-dallas-mavericks",
+     "result": "San Antonio Spurs 102, Dallas Mavericks 91",
+     "winner": "San Antonio Spurs"
+    }
+   ],
+   "clinched_on": "2006-06-05"
+  },
+  {
+   "id": "finals",
+   "round": "finals",
+   "conference": "Finals",
+   "seeds": [
+    1,
+    4
+   ],
+   "clubs": [
+    "Toronto Raptors",
+    "San Antonio Spurs"
+   ],
+   "home_court": "Toronto Raptors",
+   "wins": {
+    "Toronto Raptors": 0,
+    "San Antonio Spurs": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2006-06-08",
+     "home": "Toronto Raptors",
+     "away": "San Antonio Spurs",
+     "conditional": false,
+     "event_id": "2006-06-08-san-antonio-spurs-at-toronto-raptors"
+    },
+    {
+     "game": 2,
+     "date": "2006-06-11",
+     "home": "Toronto Raptors",
+     "away": "San Antonio Spurs",
+     "conditional": false,
+     "event_id": "2006-06-11-san-antonio-spurs-at-toronto-raptors"
+    },
+    {
+     "game": 3,
+     "date": "2006-06-13",
+     "home": "San Antonio Spurs",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2006-06-13-toronto-raptors-at-san-antonio-spurs"
+    },
+    {
+     "game": 4,
+     "date": "2006-06-15",
+     "home": "San Antonio Spurs",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2006-06-15-toronto-raptors-at-san-antonio-spurs"
+    },
+    {
+     "game": 5,
+     "date": "2006-06-18",
+     "home": "San Antonio Spurs",
+     "away": "Toronto Raptors",
+     "conditional": true,
+     "event_id": "2006-06-18-toronto-raptors-at-san-antonio-spurs"
+    },
+    {
+     "game": 6,
+     "date": "2006-06-20",
+     "home": "Toronto Raptors",
+     "away": "San Antonio Spurs",
+     "conditional": true,
+     "event_id": "2006-06-20-san-antonio-spurs-at-toronto-raptors"
+    },
+    {
+     "game": 7,
+     "date": "2006-06-22",
+     "home": "Toronto Raptors",
+     "away": "San Antonio Spurs",
+     "conditional": true,
+     "event_id": "2006-06-22-san-antonio-spurs-at-toronto-raptors"
     }
    ]
   }
