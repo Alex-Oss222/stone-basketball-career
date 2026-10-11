@@ -2,9 +2,9 @@
 
 # Contract | Francisco Elson
 
-Known through: 2006-04-28. [Open interactive contract](elsonfr01.html#contract) · [Contract history](elsonfr01.html#contract-history)
+Known through: 2006-04-30. [Open interactive contract](elsonfr01.html#contract) · [Contract history](elsonfr01.html#contract-history)
 
-Francisco Elson: under contract. Evidence cutoff: 2006-04-28.
+Francisco Elson: under contract. Evidence cutoff: 2006-04-30.
 
 ## Current contract
 

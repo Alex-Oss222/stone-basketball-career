@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-04-28**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-04-30**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -64,7 +64,7 @@ Card date: **2006-04-28**. 653 registry players, one Markdown card and one inter
 | [Jameer Nelson](jameernelson.md) | Seattle SuperSonics | 24 | silhouette | [open](jameernelson.html) |
 | [Jamison Brewer](breweja01.md) | Free agent | 25 | silhouette | [open](breweja01.html) |
 | [Jannero Pargo](pargoja01.md) | Charlotte Bobcats | 26 | sourced | [open](pargoja01.html) |
-| [Jason Hart](hartja01.md) | Denver Nuggets | 27 | silhouette | [open](hartja01.html) |
+| [Jason Hart](hartja01.md) | Denver Nuggets | 28 | silhouette | [open](hartja01.html) |
 | [Jason Kidd](kiddja01.md) | Milwaukee Bucks | 33 | sourced | [open](kiddja01.html) |
 | [Jason Terry](terryja01.md) | Atlanta Hawks | 28 | sourced | [open](terryja01.html) |
 | [Jason Williams](willija02.md) | Memphis Grizzlies | 30 | sourced | [open](willija02.html) |
@@ -366,7 +366,7 @@ Card date: **2006-04-28**. 653 registry players, one Markdown card and one inter
 | [Noel Felix](felixno01.md) | Free agent | 24 | silhouette | [open](felixno01.html) |
 | [Peja Stojakovic](stojape01.md) | Sacramento Kings | 28 | sourced | [open](stojape01.html) |
 | [Quincy Lewis](lewisqu01.md) | Free agent | 28 | silhouette | [open](lewisqu01.html) |
-| [Quinton Ross](rossqu01.md) | New Jersey Nets | 24 | silhouette | [open](rossqu01.html) |
+| [Quinton Ross](rossqu01.md) | New Jersey Nets | 25 | silhouette | [open](rossqu01.html) |
 | [Randy Holcomb](holcora01.md) | Free agent | 26 | silhouette | [open](holcora01.html) |
 | [Rashard Lewis](lewisra02.md) | Seattle SuperSonics | 26 | sourced | [open](lewisra02.html) |
 | [Rawle Marshall](marshra01.md) | Charlotte Bobcats | 24 | silhouette | [open](marshra01.html) |
@@ -430,7 +430,7 @@ Card date: **2006-04-28**. 653 registry players, one Markdown card and one inter
 | [Antonio McDyess](mcdyean01.md) | New Orleans/Oklahoma City Hornets | 31 | silhouette | [open](mcdyean01.html) |
 | [Austin Croshere](croshau01.md) | New York Knicks | 30 | sourced | [open](croshau01.html) |
 | [Boris Diaw](diawbo01.md) | Atlanta Hawks | 24 | sourced | [open](diawbo01.html) |
-| [Brandon Bass](bassbr01.md) | Milwaukee Bucks | 20 | silhouette | [open](bassbr01.html) |
+| [Brandon Bass](bassbr01.md) | Milwaukee Bucks | 21 | silhouette | [open](bassbr01.html) |
 | [Brandon Hunter](huntebr01.md) | Free agent | 25 | sourced | [open](huntebr01.html) |
 | [Brian Cardinal](cardibr01.md) | Chicago Bulls | 28 | silhouette | [open](cardibr01.html) |
 | [Brian Cook](cookbr01.md) | Los Angeles Lakers | 25 | sourced | [open](cookbr01.html) |

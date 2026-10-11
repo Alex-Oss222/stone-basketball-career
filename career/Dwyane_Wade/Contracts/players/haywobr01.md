@@ -2,9 +2,9 @@
 
 # Contract | Brendan Haywood
 
-Known through: 2006-04-28. [Open interactive contract](haywobr01.html#contract) · [Contract history](haywobr01.html#contract-history)
+Known through: 2006-04-30. [Open interactive contract](haywobr01.html#contract) · [Contract history](haywobr01.html#contract-history)
 
-Brendan Haywood: under contract. Evidence cutoff: 2006-04-28.
+Brendan Haywood: under contract. Evidence cutoff: 2006-04-30.
 
 ## Current contract
 

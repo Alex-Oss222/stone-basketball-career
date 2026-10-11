@@ -2,9 +2,9 @@
 
 # Contract | Awvee Storey
 
-Known through: 2006-04-28. [Open interactive contract](storeaw01.html#contract) · [Contract history](storeaw01.html#contract-history)
+Known through: 2006-04-30. [Open interactive contract](storeaw01.html#contract) · [Contract history](storeaw01.html#contract-history)
 
-Awvee Storey: under contract. Evidence cutoff: 2006-04-28.
+Awvee Storey: under contract. Evidence cutoff: 2006-04-30.
 
 ## Current contract
 

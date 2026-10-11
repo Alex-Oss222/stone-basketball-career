@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2006-04-28** · Toronto Raptors · #4 · PF · age 22
+Career date: **2006-04-30** · Toronto Raptors · #4 · PF · age 22
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -34,7 +34,7 @@ Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 2/2 | 34.8 | 26.0 | 12.5 | 2.5 | 1.5 | 1.5 | 58.1 | 50.0 | 78.9 | 66.1 | 61-21 |
+| 2005-06 | 21 | Toronto Raptors | 3/3 | 36.3 | 23.3 | 11.0 | 2.7 | 2.0 | 2.0 | 55.3 | 50.0 | 73.9 | 61.3 | 61-21 |
 
 ## Season highs (regular season)
 
