@@ -15,5 +15,6 @@ round: conference_finals
 - 2006-05-25: Miami Heat 88 at Toronto Raptors 111 — Miami Heat L 88-111 ([Game 2](Game_2.md), event `2006-05-25-miami-heat-at-toronto-raptors`)
 - 2006-05-27: Toronto Raptors 102 at Miami Heat 110 — Miami Heat W 110-102 ([Game 3](Game_3.md), event `2006-05-27-toronto-raptors-at-miami-heat`)
 - 2006-05-29: Toronto Raptors 94 at Miami Heat 108 — Miami Heat W 108-94 ([Game 4](Game_4.md), event `2006-05-29-toronto-raptors-at-miami-heat`)
+- 2006-05-31: Miami Heat 99 at Toronto Raptors 98 — Miami Heat W 99-98 ([Game 5](Game_5.md), event `2006-05-31-miami-heat-at-toronto-raptors`)
 
 ## Consequences
