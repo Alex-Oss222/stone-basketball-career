@@ -1407,7 +1407,7 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 0,
+    "Toronto Raptors": 1,
     "San Antonio Spurs": 0
    },
    "winner": null,
@@ -1418,7 +1418,9 @@
      "home": "Toronto Raptors",
      "away": "San Antonio Spurs",
      "conditional": false,
-     "event_id": "2006-06-08-san-antonio-spurs-at-toronto-raptors"
+     "event_id": "2006-06-08-san-antonio-spurs-at-toronto-raptors",
+     "result": "San Antonio Spurs 80, Toronto Raptors 90",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 2,
