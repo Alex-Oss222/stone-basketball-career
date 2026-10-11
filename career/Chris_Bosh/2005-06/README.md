@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2006-04-21** · Toronto Raptors · #4 · PF · age 22
+Career date: **2006-04-23** · Toronto Raptors · #4 · PF · age 22
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -32,7 +32,9 @@ Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-
 
 ## Playoffs
 
-No playoff games closed.
+| Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2005-06 | 21 | Toronto Raptors | 1/1 | 35.0 | 30.0 | 12.0 | 1.0 | 1.0 | 2.0 | 61.1 | 50.0 | 63.6 | 65.7 | 61-21 |
 
 ## Season highs (regular season)
 
@@ -67,3 +69,4 @@ No playoff games closed.
 | 500 career assists | 2006-03-07 | 21 years, 348 days | Cleveland Cavaliers |
 | 2,000 career rebounds | 2006-04-07 | 22 years, 14 days | New Orleans/Oklahoma City Hornets |
 | 4,000 career points | 2006-04-19 | 22 years, 26 days | Chicago Bulls |
+| 500 career playoff points | 2006-04-23 | 22 years, 30 days | Cleveland Cavaliers |

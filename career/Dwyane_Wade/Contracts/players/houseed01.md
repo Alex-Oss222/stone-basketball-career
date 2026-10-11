@@ -2,9 +2,9 @@
 
 # Contract | Eddie House
 
-Known through: 2006-04-21. [Open interactive contract](houseed01.html#contract) · [Contract history](houseed01.html#contract-history)
+Known through: 2006-04-23. [Open interactive contract](houseed01.html#contract) · [Contract history](houseed01.html#contract-history)
 
-Eddie House: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2006-04-21.
+Eddie House: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2006-04-23.
 
 ## Current contract
 

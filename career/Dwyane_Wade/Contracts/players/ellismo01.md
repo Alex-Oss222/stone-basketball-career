@@ -2,9 +2,9 @@
 
 # Contract | Monta Ellis
 
-Known through: 2006-04-21. [Open interactive contract](ellismo01.html#contract) · [Contract history](ellismo01.html#contract-history)
+Known through: 2006-04-23. [Open interactive contract](ellismo01.html#contract) · [Contract history](ellismo01.html#contract-history)
 
-Monta Ellis: under contract. Evidence cutoff: 2006-04-21.
+Monta Ellis: under contract. Evidence cutoff: 2006-04-23.
 
 ## Current contract
 

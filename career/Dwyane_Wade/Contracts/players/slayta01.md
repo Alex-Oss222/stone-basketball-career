@@ -2,9 +2,9 @@
 
 # Contract | Tamar Slay
 
-Known through: 2006-04-21. [Open interactive contract](slayta01.html#contract) · [Contract history](slayta01.html#contract-history)
+Known through: 2006-04-23. [Open interactive contract](slayta01.html#contract) · [Contract history](slayta01.html#contract-history)
 
-Tamar Slay: minimum contract unverified. Evidence cutoff: 2006-04-21.
+Tamar Slay: minimum contract unverified. Evidence cutoff: 2006-04-23.
 
 ## Current contract
 

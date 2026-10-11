@@ -2,9 +2,9 @@
 
 # Contract | Randy Livingston
 
-Known through: 2006-04-21. [Open interactive contract](livinra01.html#contract) · [Contract history](livinra01.html#contract-history)
+Known through: 2006-04-23. [Open interactive contract](livinra01.html#contract) · [Contract history](livinra01.html#contract-history)
 
-Randy Livingston: No verified contract record. Evidence cutoff: 2006-04-21.
+Randy Livingston: No verified contract record. Evidence cutoff: 2006-04-23.
 
 ## Current contract
 

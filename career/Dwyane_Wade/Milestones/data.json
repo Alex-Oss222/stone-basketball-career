@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2006-04-21",
+  "as_of": "2006-04-23",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 22,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2006-04-19-miami-heat-at-boston-celtics",
+  "current_event": "2006-04-23-orlando-magic-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2006-04-21"
+              "2006-04-23"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2006-04-19-miami-heat-at-boston-celtics"
+              "2006-04-23-orlando-magic-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2006-04-21",
+              "2006-04-23",
               "Current checkpoint",
-              "2006-04-19-miami-heat-at-boston-celtics",
+              "2006-04-23-orlando-magic-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -219,7 +219,7 @@
               "2006-04-22",
               "Playoffs begin",
               "League calendar",
-              "upcoming",
+              "done",
               {
                 "label": "Season",
                 "href": "#calendar"
@@ -800,6 +800,10 @@
           "href": "../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -808,7 +812,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-21"
+          "value": "2006-04-23"
         },
         {
           "label": "Team",
@@ -1398,6 +1402,10 @@
           "href": "../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1406,7 +1414,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-21"
+          "value": "2006-04-23"
         },
         {
           "label": "Team",
@@ -2033,6 +2041,10 @@
           "href": "../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2041,7 +2053,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-21"
+          "value": "2006-04-23"
         },
         {
           "label": "Team",
@@ -2701,6 +2713,10 @@
           "href": "../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2709,7 +2725,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-21"
+          "value": "2006-04-23"
         },
         {
           "label": "Team",
@@ -3274,6 +3290,10 @@
           "href": "../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3282,7 +3302,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-21"
+          "value": "2006-04-23"
         },
         {
           "label": "Team",
@@ -3890,6 +3910,10 @@
           "href": "../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3898,7 +3922,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-21"
+          "value": "2006-04-23"
         },
         {
           "label": "Team",
@@ -4463,6 +4487,10 @@
           "href": "../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4471,7 +4499,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-21"
+          "value": "2006-04-23"
         },
         {
           "label": "Team",
@@ -5112,6 +5140,10 @@
           "href": "../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -5120,7 +5152,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-21"
+          "value": "2006-04-23"
         },
         {
           "label": "Team",
@@ -5137,7 +5169,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "90 closed game records in 2005-06 through 2006-04-21. Competitions remain separate.",
+      "summary": "91 closed game records in 2005-06 through 2006-04-23. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -5160,6 +5192,16 @@
               7.0,
               4.0,
               2.0,
+              "Complete"
+            ],
+            [
+              "playoff",
+              1,
+              23.993733333,
+              16.0,
+              4.0,
+              1.0,
+              1.0,
               "Complete"
             ],
             [
@@ -5204,6 +5246,15 @@
               0,
               2,
               0.0
+            ],
+            [
+              "playoff",
+              5,
+              8,
+              0.625,
+              1,
+              1,
+              1.0
             ],
             [
               "preseason",
@@ -6135,6 +6186,16 @@
                 "label": "Closed game",
                 "href": "../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md"
               }
+            ],
+            [
+              "2006-04-23",
+              "playoff",
+              "Orlando Magic",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/08_Playoffs/First_Round/Game_1.md"
+              }
             ]
           ]
         },
@@ -6620,6 +6681,10 @@
           "href": "../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -6628,7 +6693,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-21"
+          "value": "2006-04-23"
         },
         {
           "label": "Team",

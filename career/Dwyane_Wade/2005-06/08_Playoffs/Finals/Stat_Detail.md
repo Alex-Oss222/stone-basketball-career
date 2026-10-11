@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2005-06 awards through 2006-04-21](../../../assets/stat_reports/personal_2005-06_2006-04-21.svg)
+![Player personal information and earned 2005-06 awards through 2006-04-23](../../../assets/stat_reports/personal_2005-06_2006-04-23.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2006-04-21; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2006-04-23; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2005-06 awards
 
@@ -51,7 +51,7 @@ Identity as of 2006-04-21; status snapshot dated 2005-10-26. User-established al
 
 ## Statistics
 
-As of **2006-04-21**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2006-04-23**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -59,7 +59,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 ### Per game
 
-[![Shooting](../../../Stats_and_Awards/assets/shooting_link.svg)](../../../Stats_and_Awards/player_cards.html?period=regular-2005-06-season#shooting) [![Contract](../../../Stats_and_Awards/assets/contract_link.svg)](../../../Stats_and_Awards/player_cards.html#contract) [![Awards](../../../Stats_and_Awards/assets/awards_link.svg)](../../../Stats_and_Awards/player_cards.html#awards)
+[![Shooting](../../../Stats_and_Awards/assets/shooting_link.svg)](../../../Stats_and_Awards/player_cards.html?period=playoff-2005-06-season#shooting) [![Contract](../../../Stats_and_Awards/assets/contract_link.svg)](../../../Stats_and_Awards/player_cards.html#contract) [![Awards](../../../Stats_and_Awards/assets/awards_link.svg)](../../../Stats_and_Awards/player_cards.html#awards)
 
 [Shooting detail](../../../Stats_and_Awards/Shooting.md) · [Current contract](../../../Stats_and_Awards/Contract.md#current-contract) · [Contract history](../../../Stats_and_Awards/Contract.md#contract-history) · [Annual award record](../../../Stats_and_Awards/Awards.md)
 
@@ -69,7 +69,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-04-21, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-04-23, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 

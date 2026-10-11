@@ -2,9 +2,9 @@
 
 # Contract | Avery Johnson
 
-Known through: 2006-04-21. [Open interactive contract](johnsav01.html#contract) · [Contract history](johnsav01.html#contract-history)
+Known through: 2006-04-23. [Open interactive contract](johnsav01.html#contract) · [Contract history](johnsav01.html#contract-history)
 
-Avery Johnson: under contract. Evidence cutoff: 2006-04-21.
+Avery Johnson: under contract. Evidence cutoff: 2006-04-23.
 
 ## Current contract
 
