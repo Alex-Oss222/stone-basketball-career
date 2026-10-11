@@ -121,7 +121,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Los Angeles Lakers | 17 | 17 | 25.7 | 7.4 | 4.1 | 1.2 | 1.1 | 0.4 | 0.7 | 37.4% | 35.6% | 81.8% |
 | 2004-05 | Los Angeles Lakers | 5 | 5 | 22.6 | 5.2 | 2.8 | 1.6 | 0.2 | 0.2 | 1.0 | 24.4% | 31.6% | N/A |
-| 2005-06 | San Antonio Spurs | 6 | 0 | 19.9 | 5.2 | 3.3 | 0.8 | 1.2 | 0.2 | 1.2 | 41.2% | 30.0% | N/A |
+| 2005-06 | San Antonio Spurs | 7 | 0 | 19.5 | 5.9 | 3.9 | 0.7 | 1.0 | 0.1 | 1.1 | 40.9% | 20.0% | 100.0% |
 
 ## Awards and honors
 

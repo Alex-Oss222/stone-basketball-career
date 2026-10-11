@@ -118,7 +118,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | Boston Celtics | 11 | 11 | 27.1 | 9.4 | 5.8 | 1.8 | 0.5 | 0.2 | 1.9 | 38.7% | 17.4% | 65.0% |
-| 2005-06 | Boston Celtics | 5 | 5 | 35.3 | 14.2 | 7.6 | 0.8 | 0.8 | 0.6 | 1.2 | 39.7% | 0.0% | 91.3% |
+| 2005-06 | Boston Celtics | 6 | 6 | 35.3 | 15.2 | 8.0 | 0.7 | 0.7 | 0.5 | 1.3 | 45.2% | 0.0% | 86.2% |
 
 ## Awards and honors
 

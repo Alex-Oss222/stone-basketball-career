@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Toronto Raptors | 9 | 0 | 20.6 | 6.0 | 5.1 | 0.4 | 0.7 | 0.6 | 1.2 | 46.8% | 33.3% | 64.3% |
-| 2005-06 | New Orleans/Oklahoma City Hornets | 6 | 6 | 25.7 | 11.2 | 4.8 | 1.5 | 0.3 | 1.0 | 1.3 | 43.9% | 0.0% | 81.8% |
+| 2005-06 | New Orleans/Oklahoma City Hornets | 7 | 7 | 24.9 | 10.1 | 4.6 | 1.4 | 0.4 | 1.0 | 1.4 | 44.9% | 0.0% | 81.8% |
 
 ## Awards and honors
 

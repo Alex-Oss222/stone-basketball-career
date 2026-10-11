@@ -121,7 +121,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Miami Heat | 5 | 0 | 18.5 | 7.6 | 5.2 | 0.2 | 0.4 | 0.0 | 0.6 | 60.7% | N/A | 66.7% |
 | 2004-05 | Miami Heat | 12 | 12 | 27.1 | 9.0 | 4.4 | 2.2 | 1.2 | 0.3 | 0.7 | 50.6% | 60.0% | 75.8% |
-| 2005-06 | New Orleans/Oklahoma City Hornets | 1 | 0 | 1.9 | 0.0 | 1.0 | 2.0 | 0.0 | 0.0 | 0.0 | N/A | N/A | N/A |
+| 2005-06 | New Orleans/Oklahoma City Hornets | 2 | 0 | 3.8 | 2.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.0 | 66.7% | N/A | N/A |
 
 ## Awards and honors
 

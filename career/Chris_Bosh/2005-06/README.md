@@ -34,7 +34,7 @@ Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 6/6 | 38.3 | 22.3 | 10.2 | 3.0 | 1.3 | 1.7 | 52.5 | 40.0 | 75.7 | 58.1 | 61-21 · won first round |
+| 2005-06 | 21 | Toronto Raptors | 7/7 | 38.4 | 22.4 | 10.6 | 3.3 | 1.1 | 1.4 | 50.8 | 40.0 | 79.5 | 57.1 | 61-21 · won first round |
 
 ## Season highs (regular season)
 

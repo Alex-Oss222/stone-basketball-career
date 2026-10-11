@@ -116,7 +116,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | Dallas Mavericks | 6 | 0 | 29.7 | 14.2 | 4.7 | 3.8 | 1.3 | 0.5 | 1.3 | 45.1% | 35.0% | 77.8% |
+| 2005-06 | Dallas Mavericks | 7 | 0 | 30.1 | 13.1 | 5.1 | 3.7 | 1.4 | 0.4 | 1.6 | 44.3% | 34.8% | 73.7% |
 
 ## Awards and honors
 

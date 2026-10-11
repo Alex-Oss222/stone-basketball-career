@@ -117,7 +117,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | New Orleans/Oklahoma City Hornets | 1 | 0 | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | N/A | N/A | N/A |
+| 2005-06 | New Orleans/Oklahoma City Hornets | 2 | 0 | 3.0 | 0.0 | 0.5 | 0.0 | 0.5 | 0.0 | 0.5 | 0.0% | N/A | N/A |
 
 ## Awards and honors
 

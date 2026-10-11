@@ -120,7 +120,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | Sacramento Kings | 21 | 0 | 21.0 | 4.8 | 4.8 | 0.8 | 0.3 | 1.4 | 0.8 | 43.9% | 0.0% | 46.7% |
-| 2005-06 | Dallas Mavericks | 4 | 0 | 2.9 | 0.0 | 0.8 | 0.5 | 0.0 | 0.8 | 0.0 | N/A | N/A | N/A |
+| 2005-06 | Dallas Mavericks | 5 | 0 | 3.4 | 0.0 | 0.8 | 0.4 | 0.0 | 0.8 | 0.0 | 0.0% | N/A | N/A |
 
 ## Awards and honors
 

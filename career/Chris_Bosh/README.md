@@ -37,7 +37,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | 19 | Toronto Raptors | 9/9 | 33.9 | 14.0 | 6.2 | 1.1 | 1.1 | 1.4 | 49.5 | 60.0 | 62.5 | 54.0 | 42-40 · lost conference semifinals |
 | 2004-05 | 20 | Toronto Raptors | 22/22 | 36.0 | 17.0 | 9.7 | 1.9 | 1.0 | 1.6 | 48.3 | 40.0 | 73.5 | 54.3 | 59-23 · lost finals |
-| 2005-06 | 21 | Toronto Raptors | 6/6 | 38.3 | 22.3 | 10.2 | 3.0 | 1.3 | 1.7 | 52.5 | 40.0 | 75.7 | 58.1 | 61-21 · won first round |
+| 2005-06 | 21 | Toronto Raptors | 7/7 | 38.4 | 22.4 | 10.6 | 3.3 | 1.1 | 1.4 | 50.8 | 40.0 | 79.5 | 57.1 | 61-21 · won first round |
 
 ## Awards
 

@@ -120,7 +120,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Memphis Grizzlies | 4 | 0 | 24.8 | 5.0 | 4.2 | 2.0 | 0.8 | 1.0 | 0.5 | 36.4% | 0.0% | 80.0% |
-| 2005-06 | New Orleans/Oklahoma City Hornets | 6 | 6 | 36.9 | 13.7 | 6.2 | 1.3 | 1.5 | 1.5 | 1.2 | 39.7% | 47.4% | 65.7% |
+| 2005-06 | New Orleans/Oklahoma City Hornets | 7 | 7 | 36.2 | 13.0 | 6.0 | 1.1 | 1.6 | 1.6 | 1.0 | 39.7% | 50.0% | 63.9% |
 
 ## Awards and honors
 

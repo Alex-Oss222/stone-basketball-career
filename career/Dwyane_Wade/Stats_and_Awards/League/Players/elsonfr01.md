@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Denver Nuggets | 5 | 0 | 13.6 | 2.2 | 3.4 | 0.8 | 0.2 | 0.4 | 0.6 | 25.0% | 100.0% | 66.7% |
-| 2005-06 | Sacramento Kings | 5 | 0 | 5.0 | 1.4 | 0.8 | 0.2 | 0.0 | 0.0 | 0.2 | 40.0% | 0.0% | 75.0% |
+| 2005-06 | Sacramento Kings | 6 | 0 | 4.7 | 1.2 | 0.7 | 0.2 | 0.0 | 0.2 | 0.2 | 33.3% | 0.0% | 75.0% |
 
 ## Awards and honors
 

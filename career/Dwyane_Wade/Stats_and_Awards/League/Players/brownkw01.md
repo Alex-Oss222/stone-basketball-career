@@ -119,7 +119,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | San Antonio Spurs | 6 | 6 | 29.4 | 6.5 | 4.2 | 1.3 | 0.3 | 0.8 | 0.8 | 46.4% | 0.0% | 68.4% |
+| 2005-06 | San Antonio Spurs | 7 | 7 | 29.1 | 6.3 | 4.7 | 1.4 | 0.3 | 0.9 | 0.7 | 48.4% | 0.0% | 60.9% |
 
 ## Awards and honors
 

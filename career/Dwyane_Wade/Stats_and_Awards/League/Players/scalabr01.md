@@ -120,7 +120,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | New Jersey Nets | 16 | 0 | 2.9 | 0.8 | 0.6 | 0.2 | 0.1 | 0.0 | 0.1 | 28.6% | 0.0% | 100.0% |
-| 2005-06 | Boston Celtics | 5 | 0 | 3.9 | 1.2 | 0.6 | 0.6 | 0.0 | 0.2 | 0.0 | 50.0% | 0.0% | N/A |
+| 2005-06 | Boston Celtics | 6 | 0 | 4.3 | 1.0 | 0.7 | 0.5 | 0.0 | 0.2 | 0.2 | 42.9% | 0.0% | N/A |
 
 ## Awards and honors
 

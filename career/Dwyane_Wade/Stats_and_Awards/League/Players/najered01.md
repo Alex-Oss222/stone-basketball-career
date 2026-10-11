@@ -121,7 +121,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Dallas Mavericks | 6 | 0 | 2.2 | 0.3 | 0.3 | 0.0 | 0.0 | 0.2 | 0.0 | 50.0% | N/A | N/A |
 | 2004-05 | Dallas Mavericks | 5 | 0 | 4.1 | 2.2 | 0.8 | 0.4 | 0.0 | 0.0 | 0.2 | 57.1% | 0.0% | 75.0% |
-| 2005-06 | Dallas Mavericks | 3 | 0 | 4.1 | 1.3 | 1.7 | 0.3 | 0.3 | 0.0 | 0.3 | 100.0% | N/A | N/A |
+| 2005-06 | Dallas Mavericks | 4 | 0 | 3.9 | 1.5 | 1.8 | 0.2 | 0.2 | 0.0 | 0.2 | 60.0% | N/A | N/A |
 
 ## Awards and honors
 
