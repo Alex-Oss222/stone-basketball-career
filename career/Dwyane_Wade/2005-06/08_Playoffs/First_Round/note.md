@@ -13,5 +13,6 @@ round: first_round
 
 - 2006-04-23: Orlando Magic 99 at Miami Heat 108 — Miami Heat W 108-99 ([Game 1](Game_1.md), event `2006-04-23-orlando-magic-at-miami-heat`)
 - 2006-04-26: Orlando Magic 106 at Miami Heat 115 — Miami Heat W 115-106 ([Game 2](Game_2.md), event `2006-04-26-orlando-magic-at-miami-heat`)
+- 2006-04-29: Miami Heat 124 at Orlando Magic 116 — Miami Heat W 124-116 ([Game 3](Game_3.md), event `2006-04-29-miami-heat-at-orlando-magic`)
 
 ## Consequences
