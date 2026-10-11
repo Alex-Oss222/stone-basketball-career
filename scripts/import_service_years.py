@@ -3,6 +3,7 @@
 
     python scripts/import_service_years.py --write                 # the 2004 file
     python scripts/import_service_years.py --year 2005 --write     # the 2005 file
+    python scripts/import_service_years.py --year 2006 --write     # the 2006 file
 
 Writes `library/<year>/league/nba_<year>_service_years.json`: for every tracked player, his first season (`year_min`
 on the index) and the seasons from it to the season before the offseason (2003-04 for 2004, 2004-05 for 2005), which
@@ -13,7 +14,8 @@ missed whole seasons; a sourced count always wins (`runtime/free_agency_2004.ide
 2004 tracks the registry and the 2003-04 and 2004-05 real rosters. 2005 tracks every player in
 `library/careers/nba_player_careers.json`, the registry and the 2004-05 and 2005-06 real rosters, and keeps only
 players who debuted by 2004-05 (anyone who could be a 2005 free agent with NBA service; a later debut would be
-hindsight and is counted, not listed).
+hindsight and is counted, not listed). Each later year does the same with its own seasons (2006: the 2005-06 and
+2006-07 rosters, players who debuted by 2005-06).
 """
 import argparse
 import json
@@ -28,7 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 INDEX = "https://www.basketball-reference.com/players/{}/"
 ROW = re.compile(r'data-append-csv="([a-z0-9]+)"[^>]*>.*?data-stat="year_min" >(\d{4})<', re.S)
-YEARS = {2004: ("2003-04", "2004-05"), 2005: ("2004-05", "2005-06")}
+YEARS = {2004: ("2003-04", "2004-05"), 2005: ("2004-05", "2005-06"), 2006: ("2005-06", "2006-07")}
 
 
 def out_path(year):

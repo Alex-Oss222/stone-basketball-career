@@ -1,0 +1,202 @@
+{
+ "schema_version": 1,
+ "kind": "research_sources",
+ "draft": "2006",
+ "researched_on": "2026-10-11",
+ "covers": [
+  "library/2006/league/nba_2006_draft_class.json",
+  "library/2006/league/nba_2006_prospect_evidence.json",
+  "library/2006/league/nba_2006_predraft_boards.json"
+ ],
+ "rule": "Every source read for the 2006 draft-class research, with its pre-draft date where it is pre-draft evidence. Archived pages are Wayback Machine captures whose timestamp (UTC) bounds the publication date; world-data sources (the real draft) are read only for identity and the post-draft world record.",
+ "pre_draft_evidence": [
+  {
+   "id": "cbs_sportsline_mejia_2006_05_24",
+   "title": "NBA Basketball Mock Draft (CBS SportsLine): Tony Mejia's first round",
+   "author": "Tony Mejia (CBS SportsLine)",
+   "published": "2006-05-24",
+   "date_status": "sourced (page label 'Updated May 24, 2006', the day after the May 23 lottery; Wayback capture 2006-06-15 03:53 UTC)",
+   "url": "http://cbs.sportsline.com/nba/draft/mock",
+   "archived_url": "https://web.archive.org/web/20060615035315/http://cbs.sportsline.com:80/nba/draft/mock",
+   "retrieved": "2026-10-11",
+   "supplies": "pre-draft slots"
+  },
+  {
+   "id": "cbs_sportsline_doyel_2006_05_24",
+   "title": "NBA Basketball Mock Draft (CBS SportsLine): Gregg Doyel's first round",
+   "author": "Gregg Doyel (CBS SportsLine)",
+   "published": "2006-05-24",
+   "date_status": "sourced (page label 'Updated May 24, 2006'; same page and capture as Mejia's mock)",
+   "url": "http://cbs.sportsline.com/nba/draft/mock",
+   "archived_url": "https://web.archive.org/web/20060615035315/http://cbs.sportsline.com:80/nba/draft/mock",
+   "retrieved": "2026-10-11",
+   "supplies": "pre-draft slots"
+  },
+  {
+   "id": "nbadraft_net_2006_06_10",
+   "title": "2006 Mock Draft - NBADraft.net",
+   "author": "NBADraft.net (no byline on the page)",
+   "published": "2006-06-10",
+   "date_status": "sourced (page label 'Updated: 6.10.06'; Wayback capture 2006-06-14 23:27 UTC, before the June 18 withdrawal deadline)",
+   "url": "http://nbadraft.net/index.asp?content=mock2006",
+   "archived_url": "https://web.archive.org/web/20060614232722/http://nbadraft.net:80/index.asp?content=mock2006",
+   "retrieved": "2026-10-11",
+   "supplies": "pre-draft slots"
+  },
+  {
+   "id": "si_com_2006_06_14",
+   "title": "SI.com's second 2006 mock NBA Draft ('Sorting things out: pre-draft camp clarifies picture for second mock draft')",
+   "author": "SI.com (no byline on the archived pages)",
+   "published": "2006-06-14",
+   "date_status": "sourced (page: 'Posted: Wednesday June 14, 2006 12:01PM; Updated: Friday June 16, 2006 10:23AM'; the text says it is the last SI mock before the June 18 withdrawal deadline and leaves out players it expected to withdraw, among them Kyle Lowry and Daniel Gibson)",
+   "url": "http://sportsillustrated.cnn.com/2006/basketball/nba/06/14/second.mock.draft/index.html",
+   "archived_url": "https://web.archive.org/web/20060616151207/http://sportsillustrated.cnn.com:80/2006/basketball/nba/06/14/second.mock.draft/index.html",
+   "retrieved": "2026-10-11",
+   "supplies": "pre-draft slots, and its stated omissions of early entrants it expected to withdraw (omissions_not_judgements)"
+  },
+  {
+   "id": "insidehoops_2006_06_14",
+   "title": "2006 NBA Mock Draft (InsideHoops.com)",
+   "author": "Jeff Lenchiner (InsideHoops.com)",
+   "published": "2006-06-14",
+   "date_status": "sourced (page byline 'Updated June 14, 2006'; Wayback capture 2006-06-15 01:43 UTC)",
+   "url": "http://www.insidehoops.com/nba-mock-draft.shtml",
+   "archived_url": "https://web.archive.org/web/20060615014344/http://www.insidehoops.com:80/nba-mock-draft.shtml",
+   "retrieved": "2026-10-11",
+   "supplies": "pre-draft slots, and the unordered second-round groups that place a named player in the class"
+  },
+  {
+   "id": "espn_ford_top45_2006_06_15",
+   "title": "Chad Ford's Top 45 Draft Prospects (ESPN.com NBA Mock Draft Machine)",
+   "author": "Chad Ford (ESPN.com)",
+   "published": "2006-06-15",
+   "date_status": "derived: the page carries no date; the list is as captured by the Wayback Machine on 2006-06-15 08:14 UTC, so it was published on or before that day",
+   "url": "http://sports.espn.go.com/nba/draft2006/features/draftmachine",
+   "archived_url": "https://web.archive.org/web/20060615081424/http://sports.espn.go.com:80/nba/draft2006/features/draftmachine",
+   "retrieved": "2026-10-11",
+   "supplies": "pre-draft slots"
+  },
+  {
+   "id": "draftexpress_2006_06_27",
+   "title": "2006 NBA Mock Draft (DraftExpress)",
+   "author": "DraftExpress (no byline on the page)",
+   "published": "2006-06-27",
+   "date_status": "sourced (page: 'Last Updated: 06/27/2006 11:21:22 PM ET'; Wayback capture 2006-06-28 05:58 UTC, before the evening draft)",
+   "url": "http://www.draftexpress.com/mock.php?y=2006",
+   "archived_url": "https://web.archive.org/web/20060628055809/http://www.draftexpress.com:80/mock.php?y=2006",
+   "retrieved": "2026-10-11",
+   "supplies": "pre-draft slots"
+  },
+  {
+   "id": "chicago_tribune_smith_2006_06_28",
+   "title": "Mock draft: Bargnani should go first overall",
+   "author": "Sam Smith (Chicago Tribune)",
+   "published": "2006-06-28",
+   "date_status": "sourced (byline 'Sam Smith - Chicago Tribune, Jun 28, 2006', the morning of the draft; reprinted by the Lawrence Journal-World's KUsports.com the same day)",
+   "url": "https://www2.kusports.com/news/2006/jun/28/mock_draft_bargnani_should_go_first_overall/",
+   "archived_url": null,
+   "retrieved": "2026-10-11",
+   "supplies": "pre-draft slots"
+  },
+  {
+   "id": "nba_early_entry_2006_06_19",
+   "title": "2006 Early-Entry Draft Candidates (NBA.com release)",
+   "published": "2006-06-19",
+   "date_status": "sourced (dateline 'DALLAS, June 19')",
+   "url": "http://www.nba.com/draft2006/draft_list_060619.html",
+   "archived_url": "https://web.archive.org/web/20060702214227/http://www.nba.com:80/draft2006/draft_list_060619.html",
+   "retrieved": "2026-10-11",
+   "supplies": "early-entry candidates remaining and withdrawn as of the June 18 deadline (class identity)"
+  },
+  {
+   "id": "nbadraft_net_camp_measurements_2006",
+   "title": "2006 Official NBA Draft Measurements (NBADraft.net)",
+   "published": "2006-06-22",
+   "date_status": "sourced (site label 'Updated: 6.22.06'; Wayback capture 2006-06-25)",
+   "url": "http://nbadraft.net/2006campmeasurements001.asp",
+   "archived_url": "https://web.archive.org/web/20060625102834/http://nbadraft.net:80/2006campmeasurements001.asp",
+   "retrieved": "2026-10-11",
+   "supplies": "Orlando pre-draft camp measurements"
+  },
+  {
+   "id": "sports_reference_cbb_2005_06",
+   "title": "Sports-Reference college basketball player pages (2005-06 totals)",
+   "url": "https://www.sports-reference.com/cbb/players/<slug>.html",
+   "retrieved": "2026-10-11",
+   "supplies": "last pre-draft college season (the 2005-06 row only; season complete before the draft)"
+  },
+  {
+   "id": "euroleague_api_2005_06",
+   "title": "Euroleague and ULEB Cup 2005-06 accumulated player statistics",
+   "url": "https://api-live.euroleague.net/v3/competitions/{E,U}/statistics/players/traditional?seasonMode=Single&seasonCode={E2005,U2005}&statisticMode=accumulated&limit=500",
+   "retrieved": "2026-10-11",
+   "supplies": "last pre-draft season for international prospects in European club competition"
+  }
+ ],
+ "identity_and_world_data": [
+  {
+   "url": "https://www.basketball-reference.com/draft/NBA_2006.html",
+   "retrieved": "2026-10-11",
+   "supplies": "the real picks (world data, from the draft date) and bbr_ids"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2006_NBA_draft",
+   "retrieved": "2026-10-11",
+   "supplies": "positions, schools, pick provenance, draft-day trades, the early-entry and notable-undrafted tables (positions only)"
+  },
+  {
+   "url": "https://www.basketball-reference.com/players/<letter>/<bbr_id>.html",
+   "retrieved": "2026-10-11",
+   "supplies": "birth date and country, full name, high school, RSCI rank, career position text (identity only)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Kostas_Vasileiadis",
+   "retrieved": "2026-10-11",
+   "supplies": "birth date (automatic eligibility)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/<player>",
+   "retrieved": "2026-10-11",
+   "supplies": "birth dates of the undrafted seniors with no Basketball-Reference page (identity only; each page checked for the player's college): Brad Buckman, Brandon Bowman, Curtis Stinson, Dwayne Mitchell, Eric Hicks, Eric Williams, Gerry McNamara, Kevin Pittsnogle, Marco Killingsworth, Matt Haryasz, Mike Gansey, Nik Caner-Medley, Taj Gray, Taquan Dean"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Valentin_Pastal",
+   "retrieved": "2026-10-11",
+   "supplies": "birth date (automatic eligibility)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/<player>",
+   "retrieved": "2026-10-11",
+   "supplies": "birth dates and high schools of the three undrafted seniors named only in InsideHoops' second-round group (identity only): Daniel_Horton_(basketball), Kenny_Adeleke, Dan_Grunfeld"
+  },
+  {
+   "url": "https://www.fiba.basketball/en/players/192783-leonardo-di-pacce-dos-santos",
+   "retrieved": "2026-10-11",
+   "supplies": "Leonardo Di Pacce Dos Santos's birth date (automatic eligibility)"
+  },
+  {
+   "url": "https://www.basketball-reference.com/gleague/players/d/dossamo01d.html",
+   "retrieved": "2026-10-11",
+   "supplies": "Leonardo Di Pacce Dos Santos's birth date and position text (identity only)"
+  },
+  {
+   "url": "https://www.oursportscentral.com/services/releases/tulsa-66ers-add-varem-santos-to-roster/n-3443811",
+   "retrieved": "2026-10-11",
+   "supplies": "Leonardo Di Pacce Dos Santos's Brazilian club (a March 30, 2007 release; identity only, unverified for 2005-06)"
+  }
+ ],
+ "not_used": [
+  {
+   "url": "https://www.hoopville.com/2006/06/06/nba-draft-preview/",
+   "reason": "blocked (HTTP 406) from this environment"
+  },
+  {
+   "url": "https://web.archive.org/web/20060702203111/http://www.nba.com:80/draft2006/consensus.html",
+   "reason": "archived only after the draft; publication date unverifiable"
+  },
+  {
+   "url": "https://www.nbadraft.net/mock/2006-mock-draft/",
+   "reason": "present-day repost without a verifiable pre-draft date; the June 2006 archive is used"
+  }
+ ]
+}

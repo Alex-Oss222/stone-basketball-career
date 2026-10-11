@@ -1,0 +1,179 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "pick_ownership",
+ "draft": "2006",
+ "rule": "A 2006 pick belongs to the club that held it on the symmetric league's activation date (2003-12-03): every real trade link dated before that day and not involving real Miami during the career applies (links before the career apply); links on or after it are real moves the simulated clubs did not make (docs/symmetric_league_design.md). Ownership is by the original club's pick, whatever slot the simulated lottery and records give it. A protected pick whose simulated slot falls inside its 2006 protection stays with the original club. A multi-year obligation outstanding at activation carries into 2006 only when the simulated 2005 draft did not convey it (career/Dwyane_Wade/2004-05/09_Draft/draft_order_2005.json); one the simulated 2005 draft conveyed is spent. Simulated trades are not recorded here: Miami's own picks that simulated Miami traded are read from its pick ledger (runtime/lottery.miami_pick_trades), and the 2006 second-round picks clubs gave on the simulated 2005 draft night from that draft's record (runtime/lottery.draft_night_seconds).",
+ "status": "derived from Basketball-Reference team transaction pages 1997-98 to 2005-06 (every trade naming a 2006 first- or second-round pick), the Wikipedia 2006 draft footnotes, NBADraft.net's 2005 and 2006 traded-picks lists (protections) and the simulated 2005 draft order (multi-year protections)",
+ "as_of": "2003-12-03",
+ "forfeited": {
+  "round_1": [],
+  "note": "No 2006 pick was forfeited: the 2006 draft had 60 selections in two rounds (Wikipedia/BBR 2006 draft)."
+ },
+ "expansion": {
+  "club": "CHA",
+  "round_1_slot": null,
+  "round_2_slot": null,
+  "note": "Charlotte has no fixed slot in 2006: it enters the lottery as an ordinary non-playoff club, eligible for No. 1, and picks in round 2 by record (nba_2006_lottery_rules.json, charlotte_expansion). The keys are kept with null slots so a reader of the 2004 shape sees that no slot is reserved."
+ },
+ "round_1": {
+  "LAC": {
+   "owner": "DEN",
+   "protection": {
+    "2005": "lottery-protected: the Clippers keep the pick if they are a lottery club (picks 1-14)",
+    "2006": "unprotected",
+    "status": "sourced (secondary: NBADraft.net 2006 traded picks, 'a 2006 (unprotected) LA Clippers first-round pick'; the Nets' July 15, 2004 release, read through a search-engine extract, describes it as a 2005 pick protected 1-14, else 2006 unprotected); the terms of the earlier years (a lottery-protected future first from June 2000) are not needed",
+    "note": "The obligation was outstanding at activation and was not conveyed in the simulated 2005 draft (the Clippers' pick was No. 10, inside the 2005 lottery protection; nba_2005_pick_ownership.json did not list it, which gave the same result), so it is due in 2006 without protection."
+   },
+   "chain": "LAC -> ORL (June 28, 2000, Corey Maggette / Keyon Dooling trade); ORL -> DEN (Aug 1, 2002, Don Reid trade). DEN -> NJN (July 15, 2004, Kenyon Martin trade) is after activation."
+  },
+  "WAS": {
+   "owner": "ORL",
+   "protection": {
+    "2006": "protected 1-3",
+    "2007": "unprotected",
+    "status": "sourced (NBADraft.net 2005 traded picks: '2005 top 13 protected, 2006 top 3 protected, 2007 no protection')",
+    "note": "Real history conveyed this pick in 2005; in the simulated 2005 draft Washington's pick was No. 9, inside the 2005 protection (1-13), so it stayed with Washington (career/Dwyane_Wade/2004-05/09_Draft/draft_order_2005.json) and the obligation carries into 2006 on its 2006 terms."
+   },
+   "chain": "WAS -> ORL (Aug 1, 2001, Brendan Haywood trade). ORL -> DEN (June 24, 2004, Jameer Nelson) is after activation."
+  },
+  "PHI": {
+   "owner": "PHI",
+   "chain": "The Philadelphia first owed to Denver (Dec 18, 2002; protected 1-8 in 2005, 1-5 in 2006, unprotected in 2007) was conveyed in the simulated 2005 draft (No. 16, career/Dwyane_Wade/2004-05/09_Draft/draft_order_2005.json), so Philadelphia keeps its 2006 first. The later real holders (New Jersey, Toronto) are after activation."
+  },
+  "CLE": {
+   "owner": "CLE",
+   "chain": "The Cleveland first owed to Phoenix (Oct 1, 1997; lottery-protected) was conveyed in the simulated 2005 draft (No. 21, career/Dwyane_Wade/2004-05/09_Draft/draft_order_2005.json); nothing is owed in 2006."
+  },
+  "PHO": {
+   "owner": "PHO",
+   "chain": "The Phoenix first owed to San Antonio (June 26, 2003; protected 1-20 through 2008) was conveyed in the simulated 2005 draft (No. 30, career/Dwyane_Wade/2004-05/09_Draft/draft_order_2005.json); nothing is owed in 2006. The real San Antonio 2006 first sent to New York (Feb 25, 2005) was San Antonio's own pick and is after activation."
+  },
+  "MIA": {
+   "owner": "MIA",
+   "chain": "MIA -> LAL (July 14, 2004, Shaquille O'Neal trade) is a real Miami move after activation; never applied. Simulated Miami sent this pick to the New Orleans/Oklahoma City Hornets on 2006-01-16 (trade 2006-01-16-7a8ce79392): that move is in Miami's pick ledger (career/Dwyane_Wade/2005-06/00_Team/Finances/draft_picks.json) and runtime/lottery.miami_pick_trades gives the pick to NOK; it is not a real link and is not recorded here."
+  },
+  "DEN": {
+   "owner": "DEN",
+   "chain": "DEN -> NJN (July 15, 2004, Kenyon Martin), NJN -> TOR (Dec 17, 2004) and TOR -> NYK (Feb 3, 2006) are after activation."
+  },
+  "LAL": {
+   "owner": "LAL",
+   "chain": "LAL -> BOS (Aug 6, 2004, Gary Payton / Rick Fox), BOS -> ATL (Feb 24, 2005) and ATL -> PHO (Aug 19, 2005) are after activation."
+  },
+  "SAS": {
+   "owner": "SAS",
+   "chain": "SAS -> NYK (Feb 24, 2005, Nazr Mohammed; NBADraft.net: top-10 protected) is after activation."
+  },
+  "DET": {
+   "owner": "DET",
+   "chain": "DET -> UTA (Jan 21, 2005, Carlos Arroyo) and UTA -> POR (June 28, 2005, draft day) are after activation."
+  },
+  "NYK": {
+   "owner": "NYK",
+   "chain": "NYK -> CHI (Oct 4, 2005, Eddy Curry) is after activation."
+  },
+  "MIL": {
+   "owner": "MIL",
+   "chain": "MIL -> NOK (Oct 26, 2005, Jamaal Magloire) is after activation."
+  },
+  "CHI": {
+   "owner": "CHI",
+   "chain": "Chicago's first-round pick sent to Phoenix on June 24, 2004 (protected 1-3 in 2005, No. 1 in 2006, unconditional in 2007, NBADraft.net) is after activation."
+  }
+ },
+ "round_2": {
+  "CHI": {
+   "owner": "UTA",
+   "chain": "CHI -> HOU (Sept 28, 2000, Bryce Drew); HOU -> UTA (Sept 30, 2003, John Amaechi / Glen Rice trade)."
+  },
+  "PHI": {
+   "owner": "PHI",
+   "chain": "PHI -> ATL (June 26, 2002, Efthimis Rentzias); ATL -> PHI (July 23, 2003, Glenn Robinson four-team trade). Back with Philadelphia before activation. PHI -> CLE (Feb 23, 2006, Lee Nailon) is after activation."
+  },
+  "NYK": {
+   "owner": "NYK",
+   "chain": "NYK -> HOU (Feb 24, 2005, Maurice Taylor) is after activation."
+  },
+  "HOU": {
+   "owner": "HOU",
+   "chain": "HOU -> MIL (Feb 24, 2005, Mike James) is after activation."
+  },
+  "CHA": {
+   "owner": "CHA",
+   "chain": "CHA -> LAC (July 14, 2004, Melvin Ely / Eddie House) is after activation."
+  },
+  "BOS": {
+   "owner": "BOS",
+   "chain": "BOS -> MIN (Jan 26, 2006, Ricky Davis / Wally Szczerbiak) is after activation."
+  },
+  "MIL": {
+   "owner": "MIL",
+   "chain": "MIL -> CLE (June 28, 2005, Jiri Welsch) is after activation."
+  },
+  "CLE": {
+   "owner": "CLE",
+   "chain": "CLE -> ORL (June 28, 2005, Martynas Andriuskevicius) and Cleveland's conditional second to Philadelphia (Feb 23, 2006, not conveyed) are after activation."
+  },
+  "SAC": {
+   "owner": "SAC",
+   "chain": "SAC -> CHA (Aug 2, 2005, Jason Hart) is after activation. The second of Sacramento's two future seconds sent to Utah on Aug 5, 2003 (Keon Clark) was its 2007 pick, not 2006 (BBR)."
+  },
+  "MEM": {
+   "owner": "MEM",
+   "chain": "MEM -> SEA (June 28, 2005, Lawrence Roberts) is after activation."
+  },
+  "PHO": {
+   "owner": "PHO",
+   "chain": "PHO -> MIN (Jan 26, 2006, Nikoloz Tskitishvili) is after activation."
+  },
+  "NJN": {
+   "owner": "NJN",
+   "chain": "New Jersey's conditional second to Philadelphia (Aug 9, 2005, Marc Jackson; not conveyed) is after activation."
+  },
+  "MIA": {
+   "owner": "MIA",
+   "chain": "MIA -> BOS (Aug 2, 2005, five-team Antoine Walker trade) is a real Miami move after activation; never applied (BOS -> NOK and NOK -> TOR follow it). Miami's ledger records no simulated trade of this pick on the as-of date of this file."
+  }
+ },
+ "notes": {
+  "LAC_round_1": "The Clippers' first belongs to Denver (June 2000 to Orlando, August 2002 to Denver), unprotected in 2006; the simulated 2005 draft kept it with the Clippers inside its 2005 lottery protection.",
+  "WAS_round_1": "Washington's first belongs to Orlando (August 2001), protected 1-3 in 2006 and unprotected in 2007, because the simulated 2005 draft kept it with Washington at No. 9.",
+  "CHI_round_2": "Chicago's second belongs to Utah via Houston (Sept 2000, Sept 2003).",
+  "PHI_round_2": "Philadelphia's second went to Atlanta in June 2002 and came back in July 2003: Philadelphia's at activation.",
+  "spent_in_2005": "Philadelphia (to Denver), Cleveland (to Phoenix) and Phoenix (to San Antonio) owed multi-year protected firsts at activation; the simulated 2005 draft conveyed all three, so each club holds its own 2006 first.",
+  "miami": "No real Miami trade involving a 2006 pick falls between the career's start (2003-06-26) and activation. Simulated Miami traded its own 2006 first to the New Orleans/Oklahoma City Hornets on 2006-01-16 (pick ledger; runtime/lottery.miami_pick_trades) and holds its own 2006 second.",
+  "simulated_draft_night_seconds": "Not recorded here (they are simulated trades): in the simulated 2005 draft six clubs moved up and gave their 2006 second-rounders (Detroit to Portland, Sacramento to Phoenix, Boston to Minnesota, Utah to the Lakers, the Lakers to Detroit, Dallas to Minnesota; career/Dwyane_Wade/2004-05/09_Draft/draft_2005.json `trades`). runtime/lottery.py conveys them from the 2006 draft (SIMULATED_SECONDS_FROM), after this file and before Miami's ledger; each of the six clubs held its own 2006 second at activation (none is listed above with another owner). The 2005 order did not convey the 2005 seconds given on the simulated 2004 draft night and stands as recorded."
+ },
+ "researched_on": "2026-10-11",
+ "sources": [
+  {
+   "url": "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html",
+   "use": "every transaction naming a 2006 first- or second-round pick, all franchises (with CHH, VAN, NOH, NOK and CHA codes by season), 1997-98 through 2005-06 (retrieved 2026-10-11)"
+  },
+  {
+   "url": "https://www.nbadraft.net/2006-traded-picks/",
+   "use": "outstanding 2006 traded picks with protections (pre-draft compilation; undated): the Clippers' 2006 first unprotected"
+  },
+  {
+   "url": "https://www.nbadraft.net/2005-traded-picks/",
+   "use": "multi-year protections of the Washington, Philadelphia, Cleveland and Phoenix firsts"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2006_NBA_draft",
+   "use": "pick provenance footnotes for picks actually traded (retrieved 2026-10-11)"
+  },
+  {
+   "url": "https://www.nba.com/nets/news/kenyon_040715.html",
+   "use": "Nets release, July 15, 2004: the Clippers pick as a 2005 pick protected 1-14, else 2006 unprotected (read through a search-engine extract; the page body did not load)"
+  },
+  {
+   "url": "career/Dwyane_Wade/2004-05/09_Draft/draft_order_2005.json",
+   "use": "the simulated 2005 draft order: which multi-year obligations were conveyed in 2005"
+  },
+  {
+   "url": "library/2005/league/nba_2005_pick_ownership.json",
+   "use": "the 2005 treatment of real links, protections and Miami's simulated trades, followed here"
+  }
+ ]
+}

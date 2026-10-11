@@ -15,6 +15,13 @@ nba_<year>_lottery_rules.json` and `nba_<year>_pick_ownership.json`), its season
 into `career/Dwyane_Wade/<season>/09_Draft/draft_order_<year>.json`: every non-playoff club enters the lottery unless
 the ownership file fixes an expansion slot, a club the rules file makes ineligible for a pick (`ineligible`:
 {code: [picks]}) is left out of that pick's draw, and forfeited picks are skipped.
+
+From the 2006 draft (SIMULATED_SECONDS_FROM) the order also conveys the second-round picks clubs gave on the previous
+simulated draft night (`draft_<year - 1>.json` `trades`: a club moving up adds its next-year second-rounder for the club
+moving down), after the ownership file (a pick an earlier real trade had already sent elsewhere stays there) and before
+Miami's pick ledger; the record lists them under `draft_night_seconds`. An order written before this rule gains them on
+the next offseason day before its draft. The 2005 order, which left the 2005 seconds given on the 2004 draft night with
+their clubs, stands as recorded.
 """
 from __future__ import annotations
 
@@ -55,6 +62,7 @@ RECORD = FOLDER / "draft_order_2004.json"
 DRAWS = FOLDER / "Lottery_Draws"
 LOTTERY_DATE = "2004-05-26"
 SEASON_END = "2004-04-14"
+SIMULATED_SECONDS_FROM = 2006      # from this draft the order conveys the seconds given on the previous draft night
 
 
 def _read(path):
@@ -161,6 +169,36 @@ def miami_pick_trades(root, season, year, code):
     return out
 
 
+def draft_night_seconds(root, year, code):
+    """{(2, original code): (receiving code, source)} for this draft's second-round picks given on the previous simulated
+    draft night: each trade's `plus` names the moving-up club's pick, which goes to the club moving down (`from`).
+    Empty before SIMULATED_SECONDS_FROM."""
+    year = int(year)
+    if year < SIMULATED_SECONDS_FROM:
+        return {}
+    rel = Path(f"career/Dwyane_Wade/{year - 2}-{str(year - 1)[-2:]}/09_Draft/draft_{year - 1}.json")
+    if not (Path(root) / rel).is_file():
+        return {}
+    suffix, out = f" {year} second-round pick", {}
+    for t in _read(Path(root) / rel).get("trades", []):
+        plus = t.get("plus") or ""
+        if plus.endswith(suffix):
+            out[(2, code[plus[:-len(suffix)]])] = (code[t["from"]], rel.as_posix())
+    return out
+
+
+def convey_draft_night_seconds(slots, root, year, code, names):
+    """Give each draft-night second its receiving club in `slots` (in place) while its own club still holds it; returns
+    the conveyed picks for the record's `draft_night_seconds`."""
+    seconds, out = draft_night_seconds(root, year, code), []
+    for s in slots:
+        given = seconds.get((s["round"], s["original"]))
+        if given and s["owner"] == s["original"]:
+            s["owner"], s["owner_club"] = given[0], names.get(given[0], given[0])
+            out.append({"pick": s["pick"], "original": s["original"], "owner": s["owner"], "source": given[1]})
+    return out
+
+
 def build(root=ROOT, year=2004):
     """The draft order record, or None while an engine draw is pending."""
     root = Path(root)
@@ -223,10 +261,34 @@ def build(root=ROOT, year=2004):
             owner = miami_traded.get((rnd, original), owner)    # a simulated Miami trade of the pick wins
             slots.append({"pick": len(slots) + 1, "round": rnd, "original": original, "owner": owner,
                           "owner_club": names.get(owner, owner)})
+    seconds = convey_draft_night_seconds(slots, root, year, code, names)      # a pick Miami's ledger moved stays moved
     return {"schema_version": 1, "kind": "draft_order", "draft": f"{year} NBA Draft", "lottery_date": date,
             "rule": __doc__.split("\n\n", 1)[1].strip(), "lottery_seeds": [{"seed": i + 1, "club": c, "record":
             f"{table[c]['wins']}-{table[c]['losses']}", "combinations": chances[c]} for i, c in enumerate(seeds)],
-            "lottery_winners": winners, "picks": slots}
+            "lottery_winners": winners, "picks": slots, **({"draft_night_seconds": seconds} if seconds else {})}
+
+
+def _names(root, y):
+    """{code: club} as the club is now called (`build`'s naming of owners)."""
+    from .seasons import club_aliases
+    renamed = set(club_aliases(y.next_season))
+    return {v: k for k, v in codes(root, y).items() if k not in renamed}
+
+
+def _convey_written(root, y):
+    """An order written before SIMULATED_SECONDS_FROM's rule reached it gains the draft-night seconds, until its draft asks
+    its first draw (a packet may name a pick's club). Returns the conveyed picks (empty when there is nothing to give)."""
+    path, folder = Path(root) / y.record, Path(root) / y.folder
+    if (y.year < SIMULATED_SECONDS_FROM or (folder / f"draft_{y.year}.json").is_file()
+            or any((folder / "Draft_Draws").glob(f"{y.year}-draft-*"))):
+        return []
+    record = _read(path)
+    seconds = convey_draft_night_seconds(record["picks"], root, y.year, codes(root, y), _names(root, y))
+    if seconds:
+        record["rule"] = __doc__.split("\n\n", 1)[1].strip()
+        record["draft_night_seconds"] = record.get("draft_night_seconds", []) + seconds
+        path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return seconds
 
 
 def run(root=ROOT, clock=None, year=2004):
@@ -235,7 +297,11 @@ def run(root=ROOT, clock=None, year=2004):
     root = Path(root)
     y = None if int(year) == 2004 else Year(year, root)
     date, record_path = (y.lottery_date, y.record) if y else (LOTTERY_DATE, RECORD)
-    if not date or (clock or career_clock(root)) < date or (root / record_path).is_file():
+    if not date or (clock or career_clock(root)) < date:
+        return None
+    if (root / record_path).is_file():
+        if y is not None:
+            _convey_written(root, y)
         return None
     record = build(root, year)
     if record:
