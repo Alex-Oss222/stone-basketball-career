@@ -2,9 +2,9 @@
 
 # Contract | Gerald Wallace
 
-Known through: 2006-04-25. [Open interactive contract](wallage01.html#contract) · [Contract history](wallage01.html#contract-history)
+Known through: 2006-04-28. [Open interactive contract](wallage01.html#contract) · [Contract history](wallage01.html#contract-history)
 
-Gerald Wallace: under contract. Evidence cutoff: 2006-04-25.
+Gerald Wallace: under contract. Evidence cutoff: 2006-04-28.
 
 ## Current contract
 

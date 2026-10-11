@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-04-25**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-04-28**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -35,7 +35,7 @@ Card date: **2006-04-25**. 653 registry players, one Markdown card and one inter
 | [Chris Paul](paulch01.md) | Utah Jazz | 20 | silhouette | [open](paulch01.html) |
 | [Chris Whitney](whitnch01.md) | Free agent | 34 | silhouette | [open](whitnch01.html) |
 | [Chucky Atkins](atkinch01.md) | Los Angeles Lakers | 31 | sourced | [open](atkinch01.html) |
-| [Courtney Alexander](alexaco02.md) | Free agent | 28 | silhouette | [open](alexaco02.html) |
+| [Courtney Alexander](alexaco02.md) | Free agent | 29 | silhouette | [open](alexaco02.html) |
 | [Damon Jones](jonesda01.md) | Milwaukee Bucks | 29 | silhouette | [open](jonesda01.html) |
 | [Damon Stoudamire](stoudda01.md) | Portland Trail Blazers | 32 | sourced | [open](stoudda01.html) |
 | [Dan Dickau](dickada01.md) | Atlanta Hawks | 27 | silhouette | [open](dickada01.html) |
@@ -333,7 +333,7 @@ Card date: **2006-04-25**. 653 registry players, one Markdown card and one inter
 | [Joe Smith](smithjo02.md) | Miami Heat | 30 | sourced | [open](smithjo02.html) |
 | [Joey Graham](grahajo01.md) | Denver Nuggets | 23 | silhouette | [open](grahajo01.html) |
 | [Jonathan Bender](bendejo01.md) | Indiana Pacers | 25 | silhouette | [open](bendejo01.html) |
-| [Josh Howard](howarjo01.md) | Dallas Mavericks | 25 | sourced | [open](howarjo01.html) |
+| [Josh Howard](howarjo01.md) | Dallas Mavericks | 26 | sourced | [open](howarjo01.html) |
 | [Josh Smith](joshsmith.md) | Utah Jazz | 20 | silhouette | [open](joshsmith.html) |
 | [Jumaine Jones](jonesju01.md) | Boston Celtics | 27 | sourced | [open](jonesju01.html) |
 | [Justin Reed](justinreed.md) | New Orleans/Oklahoma City Hornets | 24 | silhouette | [open](justinreed.html) |
@@ -584,7 +584,7 @@ Card date: **2006-04-25**. 653 registry players, one Markdown card and one inter
 | [Charles Oakley](oaklech01.md) | Free agent | 42 | sourced | [open](oaklech01.html) |
 | [Cherokee Parks](parksch02.md) | Free agent | 33 | silhouette | [open](parksch02.html) |
 | [Chris Andersen](anderch01.md) | Orlando Magic | 27 | sourced | [open](anderch01.html) |
-| [Chris Kaman](kamanch01.md) | Los Angeles Clippers | 23 | sourced | [open](kamanch01.html) |
+| [Chris Kaman](kamanch01.md) | Los Angeles Clippers | 24 | sourced | [open](kamanch01.html) |
 | [Chris Mihm](mihmch01.md) | Miami Heat | 26 | sourced | [open](mihmch01.html) |
 | [Chris Taft](taftch01.md) | Utah Jazz | 21 | silhouette | [open](taftch01.html) |
 | [Corie Blount](blounco01.md) | Free agent | 37 | silhouette | [open](blounco01.html) |
@@ -700,7 +700,7 @@ Card date: **2006-04-25**. 653 registry players, one Markdown card and one inter
 | [Xue Yuyang](yuyanxu01.md) | Free agent | 23 | silhouette | [open](yuyanxu01.html) |
 | [Yao Ming](mingya01.md) | Houston Rockets | 25 | sourced | [open](mingya01.html) |
 | [Zeljko Rebraca](rebraze01.md) | Cleveland Cavaliers | 34 | sourced | [open](rebraze01.html) |
-| [Zendon Hamilton](hamilze01.md) | Phoenix Suns | 30 | silhouette | [open](hamilze01.html) |
+| [Zendon Hamilton](hamilze01.md) | Phoenix Suns | 31 | silhouette | [open](hamilze01.html) |
 | [Zydrunas Ilgauskas](ilgauzy01.md) | Philadelphia 76ers | 30 | sourced | [open](ilgauzy01.html) |
 
 </details>

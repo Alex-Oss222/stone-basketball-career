@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `feltora01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-04-25 · **Club on this date:** Dallas Mavericks · **Basis:** Dallas Mavericks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-04-28 · **Club on this date:** Dallas Mavericks · **Basis:** Dallas Mavericks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #20 · **Born:** 1984-06-26 · **Age on card date:** 21  
 **Registry ID:** `feltora01`
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `feltor
 
 ## Simulated statistics
 
-As of **2006-04-25**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-04-28**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No 2002-03 record in the supplied statistics file. 2005-06 is simulated: 82 closed regular-season games through 2006-04-25. Earlier simulated seasons from their closed results.
+**Coverage:** No 2002-03 record in the supplied statistics file. 2005-06 is simulated: 82 closed regular-season games through 2006-04-28. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -112,15 +112,15 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-04-25 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-04-28 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | Dallas Mavericks | 1 | 0 | 31.1 | 28.0 | 3.0 | 4.0 | 3.0 | 2.0 | 0.0 | 47.4% | 50.0% | 100.0% |
+| 2005-06 | Dallas Mavericks | 2 | 0 | 30.2 | 17.0 | 3.0 | 4.0 | 1.5 | 1.0 | 0.5 | 37.0% | 37.5% | 100.0% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-04-25, from closed award decisions (0 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-04-28, from closed award decisions (0 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -128,3 +128,4 @@ Simulated honors and shortlist placings through 2006-04-25, from closed award de
 | West Rookie of the Month | 2005-12-01 to 2005-12-31 | 2006-01-02 | Shortlist, No. 3 | [Decision](../2005-06/12_December/League_Awards.md) |
 | West Rookie of the Month | 2006-01-01 to 2006-01-31 | 2006-02-02 | Shortlist, No. 3 | [Decision](../2005-06/01_January/League_Awards.md) |
 | West Rookie of the Month | 2006-03-01 to 2006-03-31 | 2006-04-02 | Shortlist, No. 2 | [Decision](../2005-06/03_March/League_Awards.md) |
+| Sixth Man of the Year | 2005-11-01 to 2006-04-19 | 2006-04-28 | No. 2 in the vote | [Decision](../2005-06/Season_Awards.md) |

@@ -219,7 +219,7 @@
    "home_court": "Boston Celtics",
    "wins": {
     "Boston Celtics": 2,
-    "Atlanta Hawks": 0
+    "Atlanta Hawks": 1
    },
    "winner": null,
    "games": [
@@ -249,7 +249,9 @@
      "home": "Atlanta Hawks",
      "away": "Boston Celtics",
      "conditional": false,
-     "event_id": "2006-04-28-boston-celtics-at-atlanta-hawks"
+     "event_id": "2006-04-28-boston-celtics-at-atlanta-hawks",
+     "result": "Boston Celtics 82, Atlanta Hawks 99",
+     "winner": "Atlanta Hawks"
     },
     {
      "game": 4,
@@ -380,7 +382,7 @@
    ],
    "home_court": "Detroit Pistons",
    "wins": {
-    "Detroit Pistons": 0,
+    "Detroit Pistons": 1,
     "New Jersey Nets": 2
    },
    "winner": null,
@@ -411,7 +413,9 @@
      "home": "New Jersey Nets",
      "away": "Detroit Pistons",
      "conditional": false,
-     "event_id": "2006-04-28-detroit-pistons-at-new-jersey-nets"
+     "event_id": "2006-04-28-detroit-pistons-at-new-jersey-nets",
+     "result": "Detroit Pistons 95, New Jersey Nets 77",
+     "winner": "Detroit Pistons"
     },
     {
      "game": 4,
@@ -461,7 +465,7 @@
    ],
    "home_court": "Phoenix Suns",
    "wins": {
-    "Phoenix Suns": 1,
+    "Phoenix Suns": 2,
     "Utah Jazz": 1
    },
    "winner": null,
@@ -492,7 +496,9 @@
      "home": "Utah Jazz",
      "away": "Phoenix Suns",
      "conditional": false,
-     "event_id": "2006-04-28-phoenix-suns-at-utah-jazz"
+     "event_id": "2006-04-28-phoenix-suns-at-utah-jazz",
+     "result": "Phoenix Suns 107, Utah Jazz 96",
+     "winner": "Phoenix Suns"
     },
     {
      "game": 4,
@@ -623,7 +629,7 @@
    ],
    "home_court": "Minnesota Timberwolves",
    "wins": {
-    "Minnesota Timberwolves": 2,
+    "Minnesota Timberwolves": 3,
     "Los Angeles Lakers": 0
    },
    "winner": null,
@@ -654,7 +660,9 @@
      "home": "Los Angeles Lakers",
      "away": "Minnesota Timberwolves",
      "conditional": false,
-     "event_id": "2006-04-28-minnesota-timberwolves-at-los-angeles-lakers"
+     "event_id": "2006-04-28-minnesota-timberwolves-at-los-angeles-lakers",
+     "result": "Minnesota Timberwolves 91, Los Angeles Lakers 88",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 4,

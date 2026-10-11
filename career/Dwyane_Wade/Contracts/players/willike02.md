@@ -2,9 +2,9 @@
 
 # Contract | Kevin Willis
 
-Known through: 2006-04-25. [Open interactive contract](willike02.html#contract) · [Contract history](willike02.html#contract-history)
+Known through: 2006-04-28. [Open interactive contract](willike02.html#contract) · [Contract history](willike02.html#contract-history)
 
-Kevin Willis: under contract. Evidence cutoff: 2006-04-25.
+Kevin Willis: under contract. Evidence cutoff: 2006-04-28.
 
 ## Current contract
 

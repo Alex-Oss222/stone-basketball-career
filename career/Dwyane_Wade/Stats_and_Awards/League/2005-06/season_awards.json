@@ -95,6 +95,109 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2005-06-smoy",
+   "award": "smoy",
+   "name": "Sixth Man of the Year",
+   "announced_on": "2006-04-28",
+   "electorate": 123,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.1,
+    0.3
+   ],
+   "evidence_through": "2006-04-19",
+   "winners": [
+    "Jason Williams"
+   ],
+   "tally": [
+    {
+     "player": "Jason Williams",
+     "team": "Memphis Grizzlies",
+     "games": 71,
+     "mpg": 27.4,
+     "pts": 12.3,
+     "reb": 2.1,
+     "ast": 3.8,
+     "stl": 0.7,
+     "blk": 0.1,
+     "game_score": 9.09,
+     "starts": 9,
+     "points": 441,
+     "first_place": 76,
+     "votes_by_place": [
+      76,
+      7,
+      40
+     ]
+    },
+    {
+     "player": "Raymond Felton",
+     "team": "Dallas Mavericks",
+     "games": 81,
+     "mpg": 29.2,
+     "pts": 10.0,
+     "reb": 3.8,
+     "ast": 5.2,
+     "stl": 1.2,
+     "blk": 0.1,
+     "game_score": 8.89,
+     "starts": 27,
+     "points": 391,
+     "first_place": 23,
+     "votes_by_place": [
+      23,
+      88,
+      12
+     ]
+    },
+    {
+     "player": "Tyronn Lue",
+     "team": "Toronto Raptors",
+     "games": 60,
+     "mpg": 24.1,
+     "pts": 10.8,
+     "reb": 1.9,
+     "ast": 3.1,
+     "stl": 0.6,
+     "blk": 0.1,
+     "game_score": 7.23,
+     "starts": 12,
+     "points": 201,
+     "first_place": 24,
+     "votes_by_place": [
+      24,
+      16,
+      33
+     ]
+    },
+    {
+     "player": "Channing Frye",
+     "team": "New Jersey Nets",
+     "games": 64,
+     "mpg": 25.2,
+     "pts": 11.8,
+     "reb": 6.2,
+     "ast": 1.1,
+     "stl": 0.4,
+     "blk": 0.6,
+     "game_score": 8.14,
+     "starts": 27,
+     "points": 74,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      12,
+      38
+     ]
+    }
+   ]
   }
  ]
 }

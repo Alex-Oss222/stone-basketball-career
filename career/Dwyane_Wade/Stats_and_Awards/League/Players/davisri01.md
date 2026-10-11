@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `davisri01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-04-25 · **Club on this date:** Cleveland Cavaliers · **Basis:** Cleveland Cavaliers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-04-28 · **Club on this date:** Cleveland Cavaliers · **Basis:** Cleveland Cavaliers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #12 · **Born:** 1979-09-23 · **Age on card date:** 26  
 **Registry ID:** `davisri01` · [Basketball-Reference page](https://www.basketball-reference.com/players/d/davisri01.html) · ESPN ID 193
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `davisr
 
 ## Simulated statistics
 
-As of **2006-04-25**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-04-28**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 82 closed regular-season games through 2006-04-25. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 82 closed regular-season games through 2006-04-28. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,13 +115,13 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-04-25 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-04-28 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | Cleveland Cavaliers | 7 | 7 | 34.1 | 14.9 | 3.4 | 3.3 | 1.1 | 0.3 | 3.0 | 44.7% | 20.8% | 88.5% |
-| 2005-06 | Cleveland Cavaliers | 1 | 1 | 37.0 | 12.0 | 4.0 | 4.0 | 3.0 | 0.0 | 2.0 | 45.5% | 50.0% | 50.0% |
+| 2005-06 | Cleveland Cavaliers | 2 | 2 | 38.3 | 13.0 | 5.0 | 3.5 | 1.5 | 0.0 | 1.0 | 45.8% | 33.3% | 75.0% |
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2006-04-25. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2006-04-28. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

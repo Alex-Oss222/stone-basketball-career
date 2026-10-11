@@ -2,9 +2,9 @@
 
 # Contract | Zach Randolph
 
-Known through: 2006-04-25. [Open interactive contract](randoza01.html#contract) · [Contract history](randoza01.html#contract-history)
+Known through: 2006-04-28. [Open interactive contract](randoza01.html#contract) · [Contract history](randoza01.html#contract-history)
 
-Zach Randolph: under contract. Evidence cutoff: 2006-04-25.
+Zach Randolph: under contract. Evidence cutoff: 2006-04-28.
 
 ## Current contract
 

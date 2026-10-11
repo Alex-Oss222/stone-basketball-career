@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of April 27, 2006: 74 weekly and monthly award decision(s) closed; 1 of 10 season awards decided.
+As of April 28, 2006: 74 weekly and monthly award decision(s) closed; 2 of 10 season awards decided.
 
 ## Individual awards
 
@@ -42,13 +42,13 @@ Vote closes May 8, 2006 · 124 media · ballot 5-3-1.
 
 ### Sixth Man of the Year
 
-Vote closes April 28, 2006 · 123 media · ballot 5-3-1.
+Announced April 28, 2006 · 123 media · ballot 5-3-1 · [tally](Season_Awards.md#sixth-man-of-the-year).
 
 | Rank slot | Player | Team | 1st votes | Points | Status |
 | ---: | --- | --- | ---: | ---: | --- |
-| 1 | Pending | N/A | N/A | N/A | Awaiting vote (closes April 28, 2006) |
-| 2 | Pending | N/A | N/A | N/A | Awaiting vote (closes April 28, 2006) |
-| 3 | Pending | N/A | N/A | N/A | Awaiting vote (closes April 28, 2006) |
+| 1 | Jason Williams | Memphis Grizzlies | 76 | 441 | **WINNER** |
+| 2 | Raymond Felton | Dallas Mavericks | 23 | 391 | Runner-up |
+| 3 | Tyronn Lue | Toronto Raptors | 24 | 201 | Third |
 
 ### Most Improved Player
 

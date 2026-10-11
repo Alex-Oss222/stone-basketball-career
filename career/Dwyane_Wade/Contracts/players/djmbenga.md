@@ -2,9 +2,9 @@
 
 # Contract | D.J. Mbenga
 
-Known through: 2006-04-25. [Open interactive contract](djmbenga.html#contract) · [Contract history](djmbenga.html#contract-history)
+Known through: 2006-04-28. [Open interactive contract](djmbenga.html#contract) · [Contract history](djmbenga.html#contract-history)
 
-D.J. Mbenga: under contract. Evidence cutoff: 2006-04-25.
+D.J. Mbenga: under contract. Evidence cutoff: 2006-04-28.
 
 ## Current contract
 
