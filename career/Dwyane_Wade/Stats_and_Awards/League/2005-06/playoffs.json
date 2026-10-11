@@ -1223,10 +1223,10 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 3,
+    "Toronto Raptors": 4,
     "Miami Heat": 3
    },
-   "winner": null,
+   "winner": "Toronto Raptors",
    "games": [
     {
      "game": 1,
@@ -1294,9 +1294,12 @@
      "home": "Toronto Raptors",
      "away": "Miami Heat",
      "conditional": true,
-     "event_id": "2006-06-04-miami-heat-at-toronto-raptors"
+     "event_id": "2006-06-04-miami-heat-at-toronto-raptors",
+     "result": "Miami Heat 110, Toronto Raptors 118",
+     "winner": "Toronto Raptors"
     }
-   ]
+   ],
+   "clinched_on": "2006-06-04"
   },
   {
    "id": "west-final",
