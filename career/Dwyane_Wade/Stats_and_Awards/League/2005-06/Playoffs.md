@@ -269,12 +269,12 @@ Home court: Dallas Mavericks. San Antonio Spurs wins 4-3.
 
 ### Finals: (1) Toronto Raptors vs (4) San Antonio Spurs
 
-Home court: Toronto Raptors. Series Toronto Raptors 1, San Antonio Spurs 0.
+Home court: Toronto Raptors. Series Toronto Raptors 2, San Antonio Spurs 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Thu Jun 8 | Toronto Raptors | San Antonio Spurs | San Antonio Spurs 80, Toronto Raptors 90 |
-| 2 | Sun Jun 11 | Toronto Raptors | San Antonio Spurs |  |
+| 2 | Sun Jun 11 | Toronto Raptors | San Antonio Spurs | San Antonio Spurs 102, Toronto Raptors 110 |
 | 3 | Tue Jun 13 | San Antonio Spurs | Toronto Raptors |  |
 | 4 | Thu Jun 15 | San Antonio Spurs | Toronto Raptors |  |
 | 5 | Sun Jun 18 | San Antonio Spurs | Toronto Raptors | if needed |
