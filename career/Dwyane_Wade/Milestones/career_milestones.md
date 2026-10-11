@@ -2,7 +2,7 @@
 
 # Dwyane Wade | Career milestones
 
-Career date: 2006-05-11. Born 1984-01-17. 233 regular-season and 21 playoff games closed.
+Career date: 2006-05-14. Born 1984-01-17. 233 regular-season and 23 playoff games closed.
 
 Milestones count closed regular-season games (the NBA convention); playoff milestones are their own record and preseason never counts. Each is dated by the game that reached it, with his age on that day. [Season tracker](calendar.md) · [All milestones](README.md)
 
@@ -65,12 +65,13 @@ Milestones count closed regular-season games (the NBA convention); playoff miles
 | 10 career playoff games | 2005-05-11 | 21 years, 114 days | 2004-05 | 10 | [Atlanta Hawks](../2004-05/08_Playoffs/Conference_Semifinals/Game_2.md) | 10 |
 | 250 career playoff points | 2005-05-19 | 21 years, 122 days | 2004-05 | 14 | [Atlanta Hawks](../2004-05/08_Playoffs/Conference_Semifinals/Game_6.md) | 267 |
 | 100 career playoff rebounds | 2006-05-10 | 22 years, 113 days | 2005-06 | 21 | [New Jersey Nets](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md) | 106 |
+| 100 career playoff assists | 2006-05-14 | 22 years, 117 days | 2005-06 | 23 | [New Jersey Nets](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.md) | 101 |
 
 ## Next playoff milestones
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 500 career playoff points | 424 | 76 |
-| 250 career playoff rebounds | 106 | 144 |
-| 100 career playoff assists | 97 | 3 |
-| 25 career playoff games | 21 | 4 |
+| 500 career playoff points | 472 | 28 |
+| 250 career playoff rebounds | 115 | 135 |
+| 250 career playoff assists | 101 | 149 |
+| 25 career playoff games | 23 | 2 |

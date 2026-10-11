@@ -2,9 +2,9 @@
 
 # Contract | Andre Emmett
 
-Known through: 2006-05-11. [Open interactive contract](andreemmett.html#contract) · [Contract history](andreemmett.html#contract-history)
+Known through: 2006-05-14. [Open interactive contract](andreemmett.html#contract) · [Contract history](andreemmett.html#contract-history)
 
-Andre Emmett: under contract. Evidence cutoff: 2006-05-11.
+Andre Emmett: under contract. Evidence cutoff: 2006-05-14.
 
 ## Current contract
 

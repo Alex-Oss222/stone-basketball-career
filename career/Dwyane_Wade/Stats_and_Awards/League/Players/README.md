@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-05-11**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-05-14**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -93,7 +93,7 @@ Card date: **2006-05-11**. 653 registry players, one Markdown card and one inter
 | [Mateen Cleaves](cleavma01.md) | Utah Jazz | 28 | silhouette | [open](cleavma01.html) |
 | [Maurice Baker](bakerma01.md) | Free agent | 26 | silhouette | [open](bakerma01.html) |
 | [Mickael Pietrus](pietrmi01.md) | Charlotte Bobcats | 24 | sourced | [open](pietrmi01.html) |
-| [Mike Bibby](bibbymi01.md) | Sacramento Kings | 27 | sourced | [open](bibbymi01.html) |
+| [Mike Bibby](bibbymi01.md) | Sacramento Kings | 28 | sourced | [open](bibbymi01.html) |
 | [Mike James](jamesmi01.md) | Miami Heat | 30 | sourced | [open](jamesmi01.html) |
 | [Mike Wilks](wilksmi01.md) | Miami Heat | 27 | sourced | [open](wilksmi01.html) |
 | [Milt Palacio](palacmi01.md) | New York Knicks | 28 | sourced | [open](palacmi01.html) |
@@ -188,7 +188,7 @@ Card date: **2006-05-11**. 653 registry players, one Markdown card and one inter
 | [Donta Smith](dontasmith.md) | Washington Wizards | 22 | silhouette | [open](dontasmith.html) |
 | [Doug Christie](chrisdo01.md) | Houston Rockets | 36 | sourced | [open](chrisdo01.html) |
 | [Dwyane Wade](wadedw01.md) | Miami Heat | 22 | sourced | [open](wadedw01.html) |
-| [Eddie House](houseed01.md) | Boston Celtics | 27 | sourced | [open](houseed01.html) |
+| [Eddie House](houseed01.md) | Boston Celtics | 28 | sourced | [open](houseed01.html) |
 | [Eddie Jones](jonesed02.md) | Miami Heat | 34 | silhouette | [open](jonesed02.html) |
 | [Eric Piatkowski](piatker01.md) | New Orleans/Oklahoma City Hornets | 35 | sourced | [open](piatker01.html) |
 | [Erick Strickland](stricer01.md) | Free agent | 32 | silhouette | [open](stricer01.html) |
@@ -214,7 +214,7 @@ Card date: **2006-05-11**. 653 registry players, one Markdown card and one inter
 | [José Calderón](caldejo01.md) | Memphis Grizzlies | 24 | silhouette | [open](caldejo01.html) |
 | [Juaquin Hawkins](hawkiju01.md) | Free agent | 32 | silhouette | [open](hawkiju01.html) |
 | [Julius Hodge](hodgeju01.md) | Phoenix Suns | 22 | silhouette | [open](hodgeju01.html) |
-| [Keith Bogans](boganke01.md) | Orlando Magic | 25 | sourced | [open](boganke01.html) |
+| [Keith Bogans](boganke01.md) | Orlando Magic | 26 | sourced | [open](boganke01.html) |
 | [Kendall Gill](gillke01.md) | Free agent | 37 | sourced | [open](gillke01.html) |
 | [Kerry Kittles](kittlke01.md) | Free agent | 31 | silhouette | [open](kittlke01.html) |
 | [Keyon Dooling](doolike01.md) | Utah Jazz | 26 | sourced | [open](doolike01.html) |
@@ -263,7 +263,7 @@ Card date: **2006-05-11**. 653 registry players, one Markdown card and one inter
 | [Vince Carter](cartevi01.md) | Toronto Raptors | 29 | sourced | [open](cartevi01.html) |
 | [Vincent Yarbrough](yarbrvi01.md) | Free agent | 25 | silhouette | [open](yarbrvi01.html) |
 | [Von Wafer](wafervo01.md) | Indiana Pacers | 20 | silhouette | [open](wafervo01.html) |
-| [Voshon Lenard](lenarvo01.md) | Minnesota Timberwolves | 32 | silhouette | [open](lenarvo01.html) |
+| [Voshon Lenard](lenarvo01.md) | Minnesota Timberwolves | 33 | silhouette | [open](lenarvo01.html) |
 | [Wesley Person](persowe01.md) | Free agent | 35 | silhouette | [open](persowe01.html) |
 | [Willie Green](greenwi01.md) | Philadelphia 76ers | 24 | sourced | [open](greenwi01.html) |
 | [Zoran Planinic](planizo01.md) | Orlando Magic | 23 | sourced | [open](planizo01.html) |
@@ -439,7 +439,7 @@ Card date: **2006-05-11**. 653 registry players, one Markdown card and one inter
 | [Carlos Boozer](boozeca01.md) | Cleveland Cavaliers | 24 | sourced | [open](boozeca01.html) |
 | [Charlie Villanueva](villach01.md) | Memphis Grizzlies | 21 | silhouette | [open](villach01.html) |
 | [Chris Bosh](boshch01.md) | Toronto Raptors | 22 | sourced | [open](boshch01.html) |
-| [Chris Crawford](crawfch01.md) | Free agent | 30 | silhouette | [open](crawfch01.html) |
+| [Chris Crawford](crawfch01.md) | Free agent | 31 | silhouette | [open](crawfch01.html) |
 | [Chris Mills](millsch01.md) | Free agent | 36 | silhouette | [open](millsch01.html) |
 | [Chris Webber](webbech01.md) | Sacramento Kings | 33 | sourced | [open](webbech01.html) |
 | [Chris Wilcox](wilcoch01.md) | Los Angeles Clippers | 23 | sourced | [open](wilcoch01.html) |
@@ -666,7 +666,7 @@ Card date: **2006-05-11**. 653 registry players, one Markdown card and one inter
 | [Pat Burke](burkepa01.md) | Phoenix Suns | 32 | sourced | [open](burkepa01.html) |
 | [Paul Grant](grantpa01.md) | Free agent | 32 | silhouette | [open](grantpa01.html) |
 | [Pavel Podkolzin](pavelpodkolzin.md) | New Orleans/Oklahoma City Hornets | 21 | silhouette | [open](pavelpodkolzin.html) |
-| [Peter John Ramos](peterjohnramos.md) | Free agent | 20 | silhouette | [open](peterjohnramos.html) |
+| [Peter John Ramos](peterjohnramos.md) | Free agent | 21 | silhouette | [open](peterjohnramos.html) |
 | [Predrag Drobnjak](drobnpr01.md) | Free agent | 30 | silhouette | [open](drobnpr01.html) |
 | [Primož Brezec](brezepr01.md) | Toronto Raptors | 26 | silhouette | [open](brezepr01.html) |
 | [Raef LaFrentz](lafrera01.md) | Atlanta Hawks | 29 | sourced | [open](lafrera01.html) |

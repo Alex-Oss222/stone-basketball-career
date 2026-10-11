@@ -2,9 +2,9 @@
 
 # Contract | Julius Hodge
 
-Known through: 2006-05-11. [Open interactive contract](hodgeju01.html#contract) · [Contract history](hodgeju01.html#contract-history)
+Known through: 2006-05-14. [Open interactive contract](hodgeju01.html#contract) · [Contract history](hodgeju01.html#contract-history)
 
-Julius Hodge: under contract. Evidence cutoff: 2006-05-11.
+Julius Hodge: under contract. Evidence cutoff: 2006-05-14.
 
 ## Current contract
 

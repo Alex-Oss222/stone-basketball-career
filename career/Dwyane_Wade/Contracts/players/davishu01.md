@@ -2,9 +2,9 @@
 
 # Contract | Hubert Davis
 
-Known through: 2006-05-11. [Open interactive contract](davishu01.html#contract) · [Contract history](davishu01.html#contract-history)
+Known through: 2006-05-14. [Open interactive contract](davishu01.html#contract) · [Contract history](davishu01.html#contract-history)
 
-Hubert Davis: under contract. Evidence cutoff: 2006-05-11.
+Hubert Davis: under contract. Evidence cutoff: 2006-05-14.
 
 ## Current contract
 

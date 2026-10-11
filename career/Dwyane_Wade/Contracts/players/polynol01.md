@@ -2,9 +2,9 @@
 
 # Contract | Olden Polynice
 
-Known through: 2006-05-11. [Open interactive contract](polynol01.html#contract) · [Contract history](polynol01.html#contract-history)
+Known through: 2006-05-14. [Open interactive contract](polynol01.html#contract) · [Contract history](polynol01.html#contract-history)
 
-Olden Polynice: under contract. Evidence cutoff: 2006-05-11.
+Olden Polynice: under contract. Evidence cutoff: 2006-05-14.
 
 ## Current contract
 

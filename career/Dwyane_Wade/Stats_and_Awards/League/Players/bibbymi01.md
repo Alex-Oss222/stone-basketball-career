@@ -12,8 +12,8 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `bibbymi01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-05-11 · **Club on this date:** Sacramento Kings · **Basis:** Sacramento Kings: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #10 · **Born:** 1978-05-13 · **Age on card date:** 27  
+**Card date:** 2006-05-14 · **Club on this date:** Sacramento Kings · **Basis:** Sacramento Kings: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Position:** PG (Point guard) · **Jersey:** #10 · **Born:** 1978-05-13 · **Age on card date:** 28  
 **Registry ID:** `bibbymi01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/bibbymi01.html) · ESPN ID 61
 
 **Contract/control:** Under contract; through 2008-09 (2003-04 scheduled $9,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bibbym
 
 ## Simulated statistics
 
-As of **2006-05-11**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-05-14**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 27 | SAC | NBA | PG | 82 | 82 | 40.1 | 7.4 | 17.0 | .434 | 2.2 | 5.7 | .384 | 5.2 | 11.3 | .459 | .499 | 4.2 | 4.9 | .858 | 0.4 | 2.5 | 2.9 | 5.8 | 1.1 | 0.1 | 2.4 | 2.8 | 21.2 | .552 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 28 | SAC | NBA | PG | 82 | 82 | 40.1 | 7.4 | 17.0 | .434 | 2.2 | 5.7 | .384 | 5.2 | 11.3 | .459 | .499 | 4.2 | 4.9 | .858 | 0.4 | 2.5 | 2.9 | 5.8 | 1.1 | 0.1 | 2.4 | 2.8 | 21.2 | .552 | — |
 
 ### Month
 
@@ -41,12 +41,12 @@ As of **2006-05-11**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 27 | SAC | NBA | PG | 15 | 15 | 39.7 | 6.5 | 15.3 | .426 | 2.6 | 5.8 | .448 | 3.9 | 9.5 | .413 | .511 | 5.5 | 6.3 | .883 | 0.3 | 2.1 | 2.4 | 5.7 | 1.2 | 0.1 | 2.4 | 2.3 | 21.2 | .586 | — |
-| [December 2005](../2005-06/12_December/League_Stats.md) | 27 | SAC | NBA | PG | 14 | 14 | 39.4 | 6.5 | 15.9 | .408 | 1.5 | 4.3 | .350 | 5.0 | 11.6 | .429 | .455 | 4.4 | 5.1 | .859 | 0.2 | 2.3 | 2.5 | 5.1 | 0.5 | 0.1 | 2.4 | 3.5 | 18.9 | .519 | — |
-| [January 2006](../2005-06/01_January/League_Stats.md) | 27 | SAC | NBA | PG | 16 | 16 | 41.2 | 8.8 | 19.4 | .455 | 2.6 | 6.8 | .385 | 6.2 | 12.6 | .493 | .523 | 3.9 | 4.5 | .875 | 0.5 | 2.8 | 3.2 | 6.9 | 1.5 | 0.0 | 2.4 | 3.4 | 24.2 | .566 | — |
-| [February 2006](../2005-06/02_February/League_Stats.md) | 27 | SAC | NBA | PG | 11 | 11 | 40.1 | 7.5 | 16.8 | .443 | 1.7 | 5.6 | .306 | 5.7 | 11.2 | .512 | .495 | 3.2 | 4.3 | .745 | 0.5 | 3.1 | 3.6 | 5.8 | 1.0 | 0.0 | 2.5 | 2.1 | 19.8 | .530 | — |
-| [March 2006](../2005-06/03_March/League_Stats.md) | 27 | SAC | NBA | PG | 17 | 17 | 39.8 | 7.2 | 16.8 | .430 | 2.1 | 5.3 | .400 | 5.1 | 11.5 | .444 | .493 | 3.9 | 4.5 | .870 | 0.6 | 2.1 | 2.7 | 5.4 | 1.3 | 0.1 | 2.4 | 2.6 | 20.5 | .546 | — |
-| [April 2006](../2005-06/04_April/League_Stats.md) | 27 | SAC | NBA | PG | 9 | 9 | 40.5 | 7.9 | 18.0 | .438 | 2.7 | 7.0 | .381 | 5.2 | 11.0 | .475 | .512 | 3.8 | 4.3 | .872 | 0.6 | 2.6 | 3.1 | 5.7 | 1.3 | 0.1 | 2.6 | 2.8 | 22.2 | .558 | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 28 | SAC | NBA | PG | 15 | 15 | 39.7 | 6.5 | 15.3 | .426 | 2.6 | 5.8 | .448 | 3.9 | 9.5 | .413 | .511 | 5.5 | 6.3 | .883 | 0.3 | 2.1 | 2.4 | 5.7 | 1.2 | 0.1 | 2.4 | 2.3 | 21.2 | .586 | — |
+| [December 2005](../2005-06/12_December/League_Stats.md) | 28 | SAC | NBA | PG | 14 | 14 | 39.4 | 6.5 | 15.9 | .408 | 1.5 | 4.3 | .350 | 5.0 | 11.6 | .429 | .455 | 4.4 | 5.1 | .859 | 0.2 | 2.3 | 2.5 | 5.1 | 0.5 | 0.1 | 2.4 | 3.5 | 18.9 | .519 | — |
+| [January 2006](../2005-06/01_January/League_Stats.md) | 28 | SAC | NBA | PG | 16 | 16 | 41.2 | 8.8 | 19.4 | .455 | 2.6 | 6.8 | .385 | 6.2 | 12.6 | .493 | .523 | 3.9 | 4.5 | .875 | 0.5 | 2.8 | 3.2 | 6.9 | 1.5 | 0.0 | 2.4 | 3.4 | 24.2 | .566 | — |
+| [February 2006](../2005-06/02_February/League_Stats.md) | 28 | SAC | NBA | PG | 11 | 11 | 40.1 | 7.5 | 16.8 | .443 | 1.7 | 5.6 | .306 | 5.7 | 11.2 | .512 | .495 | 3.2 | 4.3 | .745 | 0.5 | 3.1 | 3.6 | 5.8 | 1.0 | 0.0 | 2.5 | 2.1 | 19.8 | .530 | — |
+| [March 2006](../2005-06/03_March/League_Stats.md) | 28 | SAC | NBA | PG | 17 | 17 | 39.8 | 7.2 | 16.8 | .430 | 2.1 | 5.3 | .400 | 5.1 | 11.5 | .444 | .493 | 3.9 | 4.5 | .870 | 0.6 | 2.1 | 2.7 | 5.4 | 1.3 | 0.1 | 2.4 | 2.6 | 20.5 | .546 | — |
+| [April 2006](../2005-06/04_April/League_Stats.md) | 28 | SAC | NBA | PG | 9 | 9 | 40.5 | 7.9 | 18.0 | .438 | 2.7 | 7.0 | .381 | 5.2 | 11.0 | .475 | .512 | 3.8 | 4.3 | .872 | 0.6 | 2.6 | 3.1 | 5.7 | 1.3 | 0.1 | 2.6 | 2.8 | 22.2 | .558 | — |
 
 </details>
 
@@ -57,29 +57,29 @@ As of **2006-05-11**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 27 | SAC | NBA | PG | 3 | 3 | 40.0 | 5.3 | 13.3 | .400 | 2.7 | 4.3 | .615 | 2.7 | 9.0 | .296 | .500 | 7.0 | 7.0 | 1.000 | 0.3 | 2.0 | 2.3 | 5.3 | 1.3 | 0.0 | 2.3 | 2.3 | 20.3 | .619 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 27 | SAC | NBA | PG | 4 | 4 | 39.2 | 8.2 | 18.2 | .452 | 2.8 | 7.5 | .367 | 5.5 | 10.8 | .512 | .527 | 4.5 | 5.0 | .900 | 0.5 | 2.2 | 2.8 | 5.0 | 1.0 | 0.0 | 2.0 | 1.8 | 23.8 | .581 | — |
-| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 27 | SAC | NBA | PG | 4 | 4 | 39.5 | 6.5 | 15.0 | .433 | 3.5 | 7.2 | .483 | 3.0 | 7.8 | .387 | .550 | 4.5 | 5.8 | .783 | 0.0 | 2.5 | 2.5 | 5.5 | 1.0 | 0.0 | 3.0 | 3.2 | 21.0 | .599 | — |
-| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 27 | SAC | NBA | PG | 4 | 4 | 40.2 | 5.8 | 14.2 | .404 | 1.5 | 3.8 | .400 | 4.2 | 10.5 | .405 | .456 | 6.5 | 7.5 | .867 | 0.2 | 1.8 | 2.0 | 7.0 | 1.5 | 0.2 | 2.2 | 1.8 | 19.5 | .556 | — |
-| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 27 | SAC | NBA | PG | 3 | 3 | 40.8 | 5.7 | 17.0 | .333 | 1.7 | 3.7 | .455 | 4.0 | 13.3 | .300 | .382 | 6.0 | 7.0 | .857 | 0.3 | 3.0 | 3.3 | 5.7 | 0.3 | 0.3 | 1.3 | 2.3 | 19.0 | .473 | — |
-| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 27 | SAC | NBA | PG | 5 | 5 | 40.8 | 7.8 | 17.8 | .438 | 1.8 | 5.8 | .310 | 6.0 | 12.0 | .500 | .489 | 3.4 | 3.4 | 1.000 | 0.2 | 1.4 | 1.6 | 4.6 | 0.6 | 0.0 | 2.6 | 3.8 | 20.8 | .539 | — |
-| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 27 | SAC | NBA | PG | 2 | 2 | 38.9 | 5.5 | 16.0 | .344 | 1.5 | 5.5 | .273 | 4.0 | 10.5 | .381 | .391 | 3.5 | 5.5 | .636 | 0.0 | 4.0 | 4.0 | 5.5 | 1.0 | 0.5 | 3.0 | 4.5 | 16.0 | .434 | — |
-| [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 27 | SAC | NBA | PG | 4 | 4 | 36.6 | 6.0 | 12.8 | .471 | 1.0 | 2.2 | .444 | 5.0 | 10.5 | .476 | .510 | 4.8 | 5.5 | .864 | 0.2 | 2.0 | 2.2 | 5.2 | 0.2 | 0.0 | 2.5 | 3.5 | 17.8 | .585 | — |
-| [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 27 | SAC | NBA | PG | 2 | 2 | 38.7 | 10.0 | 20.5 | .488 | 5.0 | 9.0 | .556 | 5.0 | 11.5 | .435 | .610 | 2.5 | 3.5 | .714 | 0.5 | 4.0 | 4.5 | 6.5 | 1.5 | 0.0 | 3.0 | 3.0 | 27.5 | .624 | — |
-| [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 27 | SAC | NBA | PG | 4 | 4 | 46.0 | 8.8 | 21.5 | .407 | 2.8 | 8.8 | .314 | 6.0 | 12.8 | .471 | .471 | 4.2 | 4.5 | .944 | 0.8 | 3.0 | 3.8 | 7.5 | 2.2 | 0.0 | 2.5 | 3.0 | 24.5 | .522 | — |
-| [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 27 | SAC | NBA | PG | 4 | 4 | 38.3 | 8.2 | 18.0 | .458 | 2.8 | 5.2 | .524 | 5.5 | 12.8 | .431 | .535 | 4.2 | 5.0 | .850 | 0.5 | 2.0 | 2.5 | 6.8 | 1.0 | 0.0 | 3.0 | 3.8 | 23.5 | .582 | — |
-| [January 2006 week 4 (22 to 31)](../2005-06/01_January/Week_4/League_Stats.md) | 27 | SAC | NBA | PG | 6 | 6 | 40.7 | 8.8 | 18.5 | .477 | 1.7 | 5.8 | .286 | 7.2 | 12.7 | .566 | .523 | 4.0 | 4.5 | .889 | 0.3 | 2.7 | 3.0 | 6.8 | 1.3 | 0.0 | 1.8 | 3.7 | 23.3 | .570 | — |
-| [February 2006 week 1 (01 to 07)](../2005-06/02_February/Week_1/League_Stats.md) | 27 | SAC | NBA | PG | 3 | 3 | 40.0 | 7.7 | 18.0 | .426 | 0.7 | 5.0 | .133 | 7.0 | 13.0 | .538 | .444 | 1.3 | 2.7 | .500 | 1.0 | 3.3 | 4.3 | 6.3 | 1.0 | 0.0 | 3.0 | 3.3 | 17.3 | .452 | — |
-| [February 2006 week 2 (08 to 14)](../2005-06/02_February/Week_2/League_Stats.md) | 27 | SAC | NBA | PG | 4 | 4 | 39.1 | 7.0 | 15.8 | .444 | 2.0 | 6.0 | .333 | 5.0 | 9.8 | .513 | .508 | 4.5 | 5.0 | .900 | 0.0 | 4.0 | 4.0 | 6.5 | 0.5 | 0.0 | 2.5 | 1.5 | 20.5 | .571 | — |
-| [February 2006 week 3 (15 to 21)](../2005-06/02_February/Week_3/League_Stats.md) | 27 | SAC | NBA | PG | 2 | 2 | 41.4 | 8.5 | 18.0 | .472 | 3.0 | 5.5 | .545 | 5.5 | 12.5 | .440 | .556 | 2.0 | 4.5 | .444 | 0.5 | 2.0 | 2.5 | 2.5 | 1.0 | 0.0 | 2.5 | 2.5 | 22.0 | .551 | — |
-| [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 27 | SAC | NBA | PG | 2 | 2 | 41.0 | 7.0 | 16.0 | .438 | 1.5 | 6.0 | .250 | 5.5 | 10.0 | .550 | .484 | 4.5 | 5.0 | .900 | 1.0 | 2.0 | 3.0 | 7.0 | 2.0 | 0.0 | 2.0 | 1.0 | 20.0 | .549 | — |
-| [March 2006 week 1 (01 to 07)](../2005-06/03_March/Week_1/League_Stats.md) | 27 | SAC | NBA | PG | 4 | 4 | 41.5 | 7.8 | 17.5 | .443 | 2.0 | 6.8 | .296 | 5.8 | 10.8 | .535 | .500 | 5.0 | 5.8 | .870 | 0.5 | 2.2 | 2.8 | 6.8 | 1.8 | 0.5 | 3.2 | 3.2 | 22.5 | .562 | — |
-| [March 2006 week 2 (08 to 14)](../2005-06/03_March/Week_2/League_Stats.md) | 27 | SAC | NBA | PG | 4 | 4 | 41.3 | 8.8 | 19.0 | .461 | 3.5 | 6.5 | .538 | 5.2 | 12.5 | .420 | .553 | 4.2 | 4.8 | .895 | 0.5 | 1.5 | 2.0 | 5.8 | 0.8 | 0.0 | 1.2 | 2.5 | 25.2 | .599 | — |
-| [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 27 | SAC | NBA | PG | 3 | 3 | 36.4 | 5.0 | 12.7 | .395 | 1.0 | 2.7 | .375 | 4.0 | 10.0 | .400 | .434 | 3.0 | 3.0 | 1.000 | 0.3 | 3.0 | 3.3 | 4.3 | 1.3 | 0.0 | 2.3 | 3.3 | 14.0 | .500 | — |
-| [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 27 | SAC | NBA | PG | 6 | 6 | 39.3 | 7.0 | 17.0 | .412 | 1.8 | 4.8 | .379 | 5.2 | 12.2 | .425 | .466 | 3.5 | 4.3 | .808 | 0.8 | 2.0 | 2.8 | 4.7 | 1.3 | 0.0 | 2.5 | 2.0 | 19.3 | .511 | — |
-| [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 27 | SAC | NBA | PG | 4 | 4 | 40.5 | 7.8 | 18.2 | .425 | 3.0 | 7.5 | .400 | 4.8 | 10.8 | .442 | .507 | 3.2 | 4.0 | .812 | 0.2 | 1.2 | 1.5 | 5.8 | 1.8 | 0.2 | 2.2 | 3.5 | 21.8 | .543 | — |
-| [April 2006 week 2 (08 to 14)](../2005-06/04_April/Week_2/League_Stats.md) | 27 | SAC | NBA | PG | 2 | 2 | 42.7 | 8.0 | 20.0 | .400 | 3.5 | 8.5 | .412 | 4.5 | 11.5 | .391 | .487 | 3.0 | 3.0 | 1.000 | 1.0 | 4.5 | 5.5 | 4.5 | 2.0 | 0.0 | 3.0 | 2.0 | 22.5 | .528 | — |
-| [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 27 | SAC | NBA | PG | 3 | 3 | 39.1 | 8.0 | 16.3 | .490 | 1.7 | 5.3 | .312 | 6.3 | 11.0 | .576 | .541 | 5.0 | 5.7 | .882 | 0.7 | 3.0 | 3.7 | 6.3 | 0.3 | 0.0 | 2.7 | 2.3 | 22.7 | .602 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 28 | SAC | NBA | PG | 3 | 3 | 40.0 | 5.3 | 13.3 | .400 | 2.7 | 4.3 | .615 | 2.7 | 9.0 | .296 | .500 | 7.0 | 7.0 | 1.000 | 0.3 | 2.0 | 2.3 | 5.3 | 1.3 | 0.0 | 2.3 | 2.3 | 20.3 | .619 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 28 | SAC | NBA | PG | 4 | 4 | 39.2 | 8.2 | 18.2 | .452 | 2.8 | 7.5 | .367 | 5.5 | 10.8 | .512 | .527 | 4.5 | 5.0 | .900 | 0.5 | 2.2 | 2.8 | 5.0 | 1.0 | 0.0 | 2.0 | 1.8 | 23.8 | .581 | — |
+| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 28 | SAC | NBA | PG | 4 | 4 | 39.5 | 6.5 | 15.0 | .433 | 3.5 | 7.2 | .483 | 3.0 | 7.8 | .387 | .550 | 4.5 | 5.8 | .783 | 0.0 | 2.5 | 2.5 | 5.5 | 1.0 | 0.0 | 3.0 | 3.2 | 21.0 | .599 | — |
+| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 28 | SAC | NBA | PG | 4 | 4 | 40.2 | 5.8 | 14.2 | .404 | 1.5 | 3.8 | .400 | 4.2 | 10.5 | .405 | .456 | 6.5 | 7.5 | .867 | 0.2 | 1.8 | 2.0 | 7.0 | 1.5 | 0.2 | 2.2 | 1.8 | 19.5 | .556 | — |
+| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 28 | SAC | NBA | PG | 3 | 3 | 40.8 | 5.7 | 17.0 | .333 | 1.7 | 3.7 | .455 | 4.0 | 13.3 | .300 | .382 | 6.0 | 7.0 | .857 | 0.3 | 3.0 | 3.3 | 5.7 | 0.3 | 0.3 | 1.3 | 2.3 | 19.0 | .473 | — |
+| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 28 | SAC | NBA | PG | 5 | 5 | 40.8 | 7.8 | 17.8 | .438 | 1.8 | 5.8 | .310 | 6.0 | 12.0 | .500 | .489 | 3.4 | 3.4 | 1.000 | 0.2 | 1.4 | 1.6 | 4.6 | 0.6 | 0.0 | 2.6 | 3.8 | 20.8 | .539 | — |
+| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 28 | SAC | NBA | PG | 2 | 2 | 38.9 | 5.5 | 16.0 | .344 | 1.5 | 5.5 | .273 | 4.0 | 10.5 | .381 | .391 | 3.5 | 5.5 | .636 | 0.0 | 4.0 | 4.0 | 5.5 | 1.0 | 0.5 | 3.0 | 4.5 | 16.0 | .434 | — |
+| [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 28 | SAC | NBA | PG | 4 | 4 | 36.6 | 6.0 | 12.8 | .471 | 1.0 | 2.2 | .444 | 5.0 | 10.5 | .476 | .510 | 4.8 | 5.5 | .864 | 0.2 | 2.0 | 2.2 | 5.2 | 0.2 | 0.0 | 2.5 | 3.5 | 17.8 | .585 | — |
+| [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 28 | SAC | NBA | PG | 2 | 2 | 38.7 | 10.0 | 20.5 | .488 | 5.0 | 9.0 | .556 | 5.0 | 11.5 | .435 | .610 | 2.5 | 3.5 | .714 | 0.5 | 4.0 | 4.5 | 6.5 | 1.5 | 0.0 | 3.0 | 3.0 | 27.5 | .624 | — |
+| [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 28 | SAC | NBA | PG | 4 | 4 | 46.0 | 8.8 | 21.5 | .407 | 2.8 | 8.8 | .314 | 6.0 | 12.8 | .471 | .471 | 4.2 | 4.5 | .944 | 0.8 | 3.0 | 3.8 | 7.5 | 2.2 | 0.0 | 2.5 | 3.0 | 24.5 | .522 | — |
+| [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 28 | SAC | NBA | PG | 4 | 4 | 38.3 | 8.2 | 18.0 | .458 | 2.8 | 5.2 | .524 | 5.5 | 12.8 | .431 | .535 | 4.2 | 5.0 | .850 | 0.5 | 2.0 | 2.5 | 6.8 | 1.0 | 0.0 | 3.0 | 3.8 | 23.5 | .582 | — |
+| [January 2006 week 4 (22 to 31)](../2005-06/01_January/Week_4/League_Stats.md) | 28 | SAC | NBA | PG | 6 | 6 | 40.7 | 8.8 | 18.5 | .477 | 1.7 | 5.8 | .286 | 7.2 | 12.7 | .566 | .523 | 4.0 | 4.5 | .889 | 0.3 | 2.7 | 3.0 | 6.8 | 1.3 | 0.0 | 1.8 | 3.7 | 23.3 | .570 | — |
+| [February 2006 week 1 (01 to 07)](../2005-06/02_February/Week_1/League_Stats.md) | 28 | SAC | NBA | PG | 3 | 3 | 40.0 | 7.7 | 18.0 | .426 | 0.7 | 5.0 | .133 | 7.0 | 13.0 | .538 | .444 | 1.3 | 2.7 | .500 | 1.0 | 3.3 | 4.3 | 6.3 | 1.0 | 0.0 | 3.0 | 3.3 | 17.3 | .452 | — |
+| [February 2006 week 2 (08 to 14)](../2005-06/02_February/Week_2/League_Stats.md) | 28 | SAC | NBA | PG | 4 | 4 | 39.1 | 7.0 | 15.8 | .444 | 2.0 | 6.0 | .333 | 5.0 | 9.8 | .513 | .508 | 4.5 | 5.0 | .900 | 0.0 | 4.0 | 4.0 | 6.5 | 0.5 | 0.0 | 2.5 | 1.5 | 20.5 | .571 | — |
+| [February 2006 week 3 (15 to 21)](../2005-06/02_February/Week_3/League_Stats.md) | 28 | SAC | NBA | PG | 2 | 2 | 41.4 | 8.5 | 18.0 | .472 | 3.0 | 5.5 | .545 | 5.5 | 12.5 | .440 | .556 | 2.0 | 4.5 | .444 | 0.5 | 2.0 | 2.5 | 2.5 | 1.0 | 0.0 | 2.5 | 2.5 | 22.0 | .551 | — |
+| [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 28 | SAC | NBA | PG | 2 | 2 | 41.0 | 7.0 | 16.0 | .438 | 1.5 | 6.0 | .250 | 5.5 | 10.0 | .550 | .484 | 4.5 | 5.0 | .900 | 1.0 | 2.0 | 3.0 | 7.0 | 2.0 | 0.0 | 2.0 | 1.0 | 20.0 | .549 | — |
+| [March 2006 week 1 (01 to 07)](../2005-06/03_March/Week_1/League_Stats.md) | 28 | SAC | NBA | PG | 4 | 4 | 41.5 | 7.8 | 17.5 | .443 | 2.0 | 6.8 | .296 | 5.8 | 10.8 | .535 | .500 | 5.0 | 5.8 | .870 | 0.5 | 2.2 | 2.8 | 6.8 | 1.8 | 0.5 | 3.2 | 3.2 | 22.5 | .562 | — |
+| [March 2006 week 2 (08 to 14)](../2005-06/03_March/Week_2/League_Stats.md) | 28 | SAC | NBA | PG | 4 | 4 | 41.3 | 8.8 | 19.0 | .461 | 3.5 | 6.5 | .538 | 5.2 | 12.5 | .420 | .553 | 4.2 | 4.8 | .895 | 0.5 | 1.5 | 2.0 | 5.8 | 0.8 | 0.0 | 1.2 | 2.5 | 25.2 | .599 | — |
+| [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 28 | SAC | NBA | PG | 3 | 3 | 36.4 | 5.0 | 12.7 | .395 | 1.0 | 2.7 | .375 | 4.0 | 10.0 | .400 | .434 | 3.0 | 3.0 | 1.000 | 0.3 | 3.0 | 3.3 | 4.3 | 1.3 | 0.0 | 2.3 | 3.3 | 14.0 | .500 | — |
+| [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 28 | SAC | NBA | PG | 6 | 6 | 39.3 | 7.0 | 17.0 | .412 | 1.8 | 4.8 | .379 | 5.2 | 12.2 | .425 | .466 | 3.5 | 4.3 | .808 | 0.8 | 2.0 | 2.8 | 4.7 | 1.3 | 0.0 | 2.5 | 2.0 | 19.3 | .511 | — |
+| [April 2006 week 1 (01 to 07)](../2005-06/04_April/Week_1/League_Stats.md) | 28 | SAC | NBA | PG | 4 | 4 | 40.5 | 7.8 | 18.2 | .425 | 3.0 | 7.5 | .400 | 4.8 | 10.8 | .442 | .507 | 3.2 | 4.0 | .812 | 0.2 | 1.2 | 1.5 | 5.8 | 1.8 | 0.2 | 2.2 | 3.5 | 21.8 | .543 | — |
+| [April 2006 week 2 (08 to 14)](../2005-06/04_April/Week_2/League_Stats.md) | 28 | SAC | NBA | PG | 2 | 2 | 42.7 | 8.0 | 20.0 | .400 | 3.5 | 8.5 | .412 | 4.5 | 11.5 | .391 | .487 | 3.0 | 3.0 | 1.000 | 1.0 | 4.5 | 5.5 | 4.5 | 2.0 | 0.0 | 3.0 | 2.0 | 22.5 | .528 | — |
+| [April 2006 week 3 (15 to 21)](../2005-06/04_April/Week_3/League_Stats.md) | 28 | SAC | NBA | PG | 3 | 3 | 39.1 | 8.0 | 16.3 | .490 | 1.7 | 5.3 | .312 | 6.3 | 11.0 | .576 | .541 | 5.0 | 5.7 | .882 | 0.7 | 3.0 | 3.7 | 6.3 | 0.3 | 0.0 | 2.7 | 2.3 | 22.7 | .602 | — |
 
 </details>
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 82 closed regular-season games through 2006-05-11. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 82 closed regular-season games through 2006-05-14. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,7 +115,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-11 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-14 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -125,7 +125,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-05-11, from closed award decisions (5 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-05-14, from closed award decisions (5 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

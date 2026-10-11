@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2006-05-11**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2006-05-14**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -6955,7 +6955,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-02-18 | Rookies | Played | [Game](../2004-05/11_All_Star/Rookie_Challenge/Game_1.md) | [Result](../2004-05/11_All_Star/Rookie_Challenge/Game_1.result.json) | [Simulated engine shot locations](../2004-05/11_All_Star/Rookie_Challenge/Game_1.result.json) |
 
-## 2005-06 · NBA regular season · through 2006-05-11
+## 2005-06 · NBA regular season · through 2006-05-14
 
 [Open this period](player_cards.html?period=regular-2005-06-season#shooting)
 
@@ -9635,7 +9635,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2006-04-19 | Boston Celtics | Played | [Game](../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md) | [Result](../2005-06/06_Regular_Season/04_April/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/04_April/Week_3/Game_3.result.json) |
 
-## 2005-06 · NBA All-Star Game · through 2006-05-11
+## 2005-06 · NBA All-Star Game · through 2006-05-14
 
 [Open this period](player_cards.html?period=all_star-2005-06-season#shooting)
 
@@ -9723,23 +9723,23 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2006-02-19 | West | Played | [Game](../2005-06/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2005-06/11_All_Star/All_Star_Game/Game_1.result.json) | [Simulated engine shot locations](../2005-06/11_All_Star/All_Star_Game/Game_1.result.json) |
 
-## 2005-06 · NBA playoffs · through 2006-05-11
+## 2005-06 · NBA playoffs · through 2006-05-14
 
 [Open this period](player_cards.html?period=playoff-2005-06-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 7 | 0 | 7 | 58 / 93 | 62.4% | 5 / 12 | 157 | complete |
+| 9 | 0 | 9 | 74 / 128 | 57.8% | 5 / 15 | 205 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 35 | 42 | 83.3% | 10.00 | 6.00 | 42 |
-| Outside paint, under 12 ft | 2 | 5 | 40.0% | 0.57 | 0.71 | 5 |
-| Outside paint, 12 to under 18 ft | 2 | 11 | 18.2% | 0.57 | 1.57 | 11 |
-| 18 ft to the three-point line | 14 | 23 | 60.9% | 4.00 | 3.29 | 23 |
-| Three-point range | 5 | 12 | 41.7% | 2.14 | 1.71 | 12 |
+| Paint | 46 | 64 | 71.9% | 10.22 | 7.11 | 64 |
+| Outside paint, under 12 ft | 3 | 6 | 50.0% | 0.67 | 0.67 | 6 |
+| Outside paint, 12 to under 18 ft | 2 | 14 | 14.3% | 0.44 | 1.56 | 14 |
+| 18 ft to the three-point line | 18 | 29 | 62.1% | 4.00 | 3.22 | 29 |
+| Three-point range | 5 | 15 | 33.3% | 1.67 | 1.67 | 15 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -9750,6 +9750,8 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2006-05-03 | Orlando Magic | Played | [Game](../2005-06/08_Playoffs/First_Round/Game_5.md) | [Result](../2005-06/08_Playoffs/First_Round/Game_5.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/First_Round/Game_5.result.json) |
 | 2006-05-08 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_1.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_1.result.json) |
 | 2006-05-10 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.result.json) |
+| 2006-05-12 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.result.json) |
+| 2006-05-14 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.result.json) |
 
 ## 2006-04 · NBA playoffs
 
@@ -9805,17 +9807,17 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 4 | 0 | 4 | 37 / 60 | 61.7% | 2 / 8 | 101 | complete |
+| 6 | 0 | 6 | 53 / 95 | 55.8% | 2 / 11 | 149 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 25 | 31 | 80.6% | 12.50 | 7.75 | 31 |
-| Outside paint, under 12 ft | 0 | 2 | 0.0% | 0.00 | 0.50 | 2 |
-| Outside paint, 12 to under 18 ft | 1 | 4 | 25.0% | 0.50 | 1.00 | 4 |
-| 18 ft to the three-point line | 9 | 15 | 60.0% | 4.50 | 3.75 | 15 |
-| Three-point range | 2 | 8 | 25.0% | 1.50 | 2.00 | 8 |
+| Paint | 36 | 53 | 67.9% | 12.00 | 8.83 | 53 |
+| Outside paint, under 12 ft | 1 | 3 | 33.3% | 0.33 | 0.50 | 3 |
+| Outside paint, 12 to under 18 ft | 1 | 7 | 14.3% | 0.33 | 1.17 | 7 |
+| 18 ft to the three-point line | 13 | 21 | 61.9% | 4.33 | 3.50 | 21 |
+| Three-point range | 2 | 11 | 18.2% | 1.00 | 1.83 | 11 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -9823,6 +9825,8 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2006-05-03 | Orlando Magic | Played | [Game](../2005-06/08_Playoffs/First_Round/Game_5.md) | [Result](../2005-06/08_Playoffs/First_Round/Game_5.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/First_Round/Game_5.result.json) |
 | 2006-05-08 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_1.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_1.result.json) |
 | 2006-05-10 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.result.json) |
+| 2006-05-12 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.result.json) |
+| 2006-05-14 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.result.json) |
 
 ## 2006-05-01 to 2006-05-07 · NBA playoffs
 
@@ -9847,28 +9851,30 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2006-05-01 | Orlando Magic | Played | [Game](../2005-06/08_Playoffs/First_Round/Game_4.md) | [Result](../2005-06/08_Playoffs/First_Round/Game_4.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/First_Round/Game_4.result.json) |
 | 2006-05-03 | Orlando Magic | Played | [Game](../2005-06/08_Playoffs/First_Round/Game_5.md) | [Result](../2005-06/08_Playoffs/First_Round/Game_5.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/First_Round/Game_5.result.json) |
 
-## 2006-05-08 to 2006-05-11 · NBA playoffs
+## 2006-05-08 to 2006-05-14 · NBA playoffs
 
 [Open this period](player_cards.html?period=playoff-2005-06-week-2006-05-08#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 18 / 27 | 66.7% | 0 / 4 | 54 | complete |
+| 4 | 0 | 4 | 34 / 62 | 54.8% | 0 / 7 | 102 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 11 | 14 | 78.6% | 11.00 | 7.00 | 14 |
-| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 1.00 | 0.50 | 1 |
-| 18 ft to the three-point line | 6 | 8 | 75.0% | 6.00 | 4.00 | 8 |
-| Three-point range | 0 | 4 | 0.0% | 0.00 | 2.00 | 4 |
+| Paint | 22 | 36 | 61.1% | 11.00 | 9.00 | 36 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 0.50 | 0.25 | 1 |
+| Outside paint, 12 to under 18 ft | 1 | 4 | 25.0% | 0.50 | 1.00 | 4 |
+| 18 ft to the three-point line | 10 | 14 | 71.4% | 5.00 | 3.50 | 14 |
+| Three-point range | 0 | 7 | 0.0% | 0.00 | 1.75 | 7 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2006-05-08 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_1.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_1.result.json) |
 | 2006-05-10 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.result.json) |
+| 2006-05-12 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.result.json) |
+| 2006-05-14 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.result.json) |
 
 ## 2006-04-23 vs Orlando Magic · Played · NBA playoffs
 
@@ -10024,7 +10030,51 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2006-05-10 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.result.json) |
 
-## 2005-06 · NBA preseason · through 2006-05-11
+## 2006-05-12 at New Jersey Nets · Played · NBA playoffs
+
+[Open this period](player_cards.html?period=playoff-2005-06-game-f26f13758f1795fa#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 4 / 13 | 30.8% | 0 / 3 | 17 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 3 | 7 | 42.9% | 6.00 | 7.00 | 7 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| Three-point range | 0 | 3 | 0.0% | 0.00 | 3.00 | 3 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2006-05-12 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.result.json) |
+
+## 2006-05-14 at New Jersey Nets · Played · NBA playoffs
+
+[Open this period](player_cards.html?period=playoff-2005-06-game-252a532251bcfee7#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 12 / 22 | 54.5% | 0 / 0 | 31 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 8 | 15 | 53.3% | 16.00 | 15.00 | 15 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
+| 18 ft to the three-point line | 4 | 5 | 80.0% | 8.00 | 5.00 | 5 |
+| Three-point range | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2006-05-14 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.result.json) |
+
+## 2005-06 · NBA preseason · through 2006-05-14
 
 [Open this period](player_cards.html?period=preseason-2005-06-season#shooting)
 

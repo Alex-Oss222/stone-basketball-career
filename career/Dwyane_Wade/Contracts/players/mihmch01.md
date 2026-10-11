@@ -2,9 +2,9 @@
 
 # Contract | Chris Mihm
 
-Known through: 2006-05-11. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
+Known through: 2006-05-14. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
 
-Chris Mihm: under contract. Evidence cutoff: 2006-05-11.
+Chris Mihm: under contract. Evidence cutoff: 2006-05-14.
 
 ## Current contract
 

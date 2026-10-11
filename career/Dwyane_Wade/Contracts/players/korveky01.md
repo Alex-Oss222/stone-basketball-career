@@ -2,9 +2,9 @@
 
 # Contract | Kyle Korver
 
-Known through: 2006-05-11. [Open interactive contract](korveky01.html#contract) · [Contract history](korveky01.html#contract-history)
+Known through: 2006-05-14. [Open interactive contract](korveky01.html#contract) · [Contract history](korveky01.html#contract-history)
 
-Kyle Korver: under contract. Evidence cutoff: 2006-05-11.
+Kyle Korver: under contract. Evidence cutoff: 2006-05-14.
 
 ## Current contract
 

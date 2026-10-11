@@ -2,9 +2,9 @@
 
 # Contract | Quinton Ross
 
-Known through: 2006-05-11. [Open interactive contract](rossqu01.html#contract) · [Contract history](rossqu01.html#contract-history)
+Known through: 2006-05-14. [Open interactive contract](rossqu01.html#contract) · [Contract history](rossqu01.html#contract-history)
 
-Quinton Ross: under contract. Evidence cutoff: 2006-05-11.
+Quinton Ross: under contract. Evidence cutoff: 2006-05-14.
 
 ## Current contract
 
