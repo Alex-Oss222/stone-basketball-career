@@ -1408,7 +1408,7 @@
    "home_court": "Toronto Raptors",
    "wins": {
     "Toronto Raptors": 2,
-    "San Antonio Spurs": 0
+    "San Antonio Spurs": 1
    },
    "winner": null,
    "games": [
@@ -1438,7 +1438,9 @@
      "home": "San Antonio Spurs",
      "away": "Toronto Raptors",
      "conditional": false,
-     "event_id": "2006-06-13-toronto-raptors-at-san-antonio-spurs"
+     "event_id": "2006-06-13-toronto-raptors-at-san-antonio-spurs",
+     "result": "Toronto Raptors 111, San Antonio Spurs 118",
+     "winner": "San Antonio Spurs"
     },
     {
      "game": 4,
