@@ -1,6 +1,6 @@
 # 2005-06 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-05-07.
+Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-05-08.
 
 ## Calendar
 
@@ -11,7 +11,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2006-05-01 | Most Improved Player | 124 media | 5-3-1 | decided |
 | 2006-05-04 | All-Rookie Teams | 30 head coaches, not for their own players | 2-1 | decided |
 | 2006-05-07 | Most Valuable Player | 125 media | 10-7-5-3-1 | decided |
-| 2006-05-08 | Defensive Player of the Year | 124 media | 5-3-1 | pending |
+| 2006-05-08 | Defensive Player of the Year | 124 media | 5-3-1 | decided |
 | 2006-05-10 | Rookie of the Year | 125 media | 5-3-1 | pending |
 | 2006-05-11 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | pending |
 | 2006-05-17 | All-NBA Teams | 126 media | 5-3-1 | pending |
@@ -90,3 +90,15 @@ Announced 2006-05-07; 125 media, ballot 10-7-5-3-1.
 | 3 | Kevin Garnett | Minnesota Timberwolves | 76 | 41.4 | 26.4 | 11.5 | 3.6 | 1.8 | 1.2 | 22.54 | 457 | 0 |
 
 Complete tally: `season_awards.json` (7 receiving votes).
+
+## Defensive Player of the Year
+
+Announced 2006-05-08; 124 media, ballot 5-3-1.
+
+| # | Player | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WINNER | Marcus Camby | Minnesota Timberwolves | 60 | 36.9 | 12.7 | 9.8 | 2.6 | 1.8 | 3.1 | 12.96 | 620 | 124 |
+| 2 | Ben Wallace | Detroit Pistons | 82 | 36.2 | 7.2 | 12.0 | 2.2 | 2.0 | 2.2 | 11.11 | 372 | 0 |
+| 3 | Andrei Kirilenko | Utah Jazz | 69 | 39.1 | 15.1 | 8.1 | 4.5 | 2.1 | 3.2 | 15.08 | 116 | 0 |
+
+Complete tally: `season_awards.json` (4 receiving votes).

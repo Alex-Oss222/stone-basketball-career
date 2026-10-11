@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of May 7, 2006: 74 weekly and monthly award decision(s) closed; 5 of 10 season awards decided.
+As of May 8, 2006: 74 weekly and monthly award decision(s) closed; 6 of 10 season awards decided.
 
 ## Individual awards
 
@@ -32,13 +32,13 @@ Vote closes May 10, 2006 · 125 media · ballot 5-3-1.
 
 ### Defensive Player of the Year
 
-Vote closes May 8, 2006 · 124 media · ballot 5-3-1.
+Announced May 8, 2006 · 124 media · ballot 5-3-1 · [tally](Season_Awards.md#defensive-player-of-the-year).
 
 | Rank slot | Player | Team | 1st votes | Points | Status |
 | ---: | --- | --- | ---: | ---: | --- |
-| 1 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 8, 2006) |
-| 2 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 8, 2006) |
-| 3 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 8, 2006) |
+| 1 | Marcus Camby | Minnesota Timberwolves | 124 | 620 | **WINNER** |
+| 2 | Ben Wallace | Detroit Pistons | 0 | 372 | Runner-up |
+| 3 | Andrei Kirilenko | Utah Jazz | 0 | 116 | Third |
 
 ### Sixth Man of the Year
 

@@ -2,9 +2,9 @@
 
 # Contract | Amar'e Stoudemire
 
-Known through: 2006-05-07. [Open interactive contract](stoudam01.html#contract) · [Contract history](stoudam01.html#contract-history)
+Known through: 2006-05-08. [Open interactive contract](stoudam01.html#contract) · [Contract history](stoudam01.html#contract-history)
 
-Amar'e Stoudemire: under contract. Evidence cutoff: 2006-05-07.
+Amar'e Stoudemire: under contract. Evidence cutoff: 2006-05-08.
 
 ## Current contract
 

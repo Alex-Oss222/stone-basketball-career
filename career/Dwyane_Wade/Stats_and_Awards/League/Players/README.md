@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-05-07**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-05-08**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -121,7 +121,7 @@ Card date: **2006-05-07**. 653 registry players, one Markdown card and one inter
 | [Shane Heal](healsh01.md) | Free agent | 35 | silhouette | [open](healsh01.html) |
 | [Shaun Livingston](shaunlivingston.md) | Charlotte Bobcats | 20 | silhouette | [open](shaunlivingston.html) |
 | [Smush Parker](parkesm01.md) | Indiana Pacers | 24 | sourced | [open](parkesm01.html) |
-| [Speedy Claxton](claxtsp01.md) | Golden State Warriors | 27 | sourced | [open](claxtsp01.html) |
+| [Speedy Claxton](claxtsp01.md) | Golden State Warriors | 28 | sourced | [open](claxtsp01.html) |
 | [Stephon Marbury](marbust01.md) | Phoenix Suns | 29 | sourced | [open](marbust01.html) |
 | [Steve Blake](blakest01.md) | Charlotte Bobcats | 26 | sourced | [open](blakest01.html) |
 | [Steve Francis](francst01.md) | Houston Rockets | 29 | sourced | [open](francst01.html) |
@@ -217,7 +217,7 @@ Card date: **2006-05-07**. 653 registry players, one Markdown card and one inter
 | [Keith Bogans](boganke01.md) | Orlando Magic | 25 | sourced | [open](boganke01.html) |
 | [Kendall Gill](gillke01.md) | Free agent | 37 | sourced | [open](gillke01.html) |
 | [Kerry Kittles](kittlke01.md) | Free agent | 31 | silhouette | [open](kittlke01.html) |
-| [Keyon Dooling](doolike01.md) | Utah Jazz | 25 | sourced | [open](doolike01.html) |
+| [Keyon Dooling](doolike01.md) | Utah Jazz | 26 | sourced | [open](doolike01.html) |
 | [Kirk Snyder](kirksnyder.md) | Chicago Bulls | 22 | silhouette | [open](kirksnyder.html) |
 | [Kobe Bryant](bryanko01.md) | Los Angeles Lakers | 27 | sourced | [open](bryanko01.html) |
 | [Kyle Korver](korveky01.md) | Phoenix Suns | 25 | sourced | [open](korveky01.html) |
@@ -695,7 +695,7 @@ Card date: **2006-05-07**. 653 registry players, one Markdown card and one inter
 | [Travis Knight](knightr01.md) | Free agent | 31 | silhouette | [open](knightr01.html) |
 | [Vitaly Potapenko](potapvi01.md) | Charlotte Bobcats | 31 | sourced | [open](potapvi01.html) |
 | [Vlade Divac](divacvl01.md) | Free agent | 38 | sourced | [open](divacvl01.html) |
-| [Vladimir Stepania](stepavl01.md) | Free agent | 29 | silhouette | [open](stepavl01.html) |
+| [Vladimir Stepania](stepavl01.md) | Free agent | 30 | silhouette | [open](stepavl01.html) |
 | [Wang Zhizhi](zhizhwa01.md) | Free agent | 28 | sourced | [open](zhizhwa01.html) |
 | [Xue Yuyang](yuyanxu01.md) | Free agent | 23 | silhouette | [open](yuyanxu01.html) |
 | [Yao Ming](mingya01.md) | Houston Rockets | 25 | sourced | [open](mingya01.html) |

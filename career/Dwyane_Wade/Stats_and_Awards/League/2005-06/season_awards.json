@@ -666,6 +666,109 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2005-06-dpoy",
+   "award": "dpoy",
+   "name": "Defensive Player of the Year",
+   "announced_on": "2006-05-08",
+   "electorate": 124,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.3,
+    0.6
+   ],
+   "evidence_through": "2006-04-19",
+   "winners": [
+    "Marcus Camby"
+   ],
+   "tally": [
+    {
+     "player": "Marcus Camby",
+     "team": "Minnesota Timberwolves",
+     "games": 60,
+     "mpg": 36.9,
+     "pts": 12.7,
+     "reb": 9.8,
+     "ast": 2.6,
+     "stl": 1.8,
+     "blk": 3.1,
+     "game_score": 12.96,
+     "club_drtg": 97.6,
+     "points": 620,
+     "first_place": 124,
+     "votes_by_place": [
+      124,
+      0,
+      0
+     ]
+    },
+    {
+     "player": "Ben Wallace",
+     "team": "Detroit Pistons",
+     "games": 82,
+     "mpg": 36.2,
+     "pts": 7.2,
+     "reb": 12.0,
+     "ast": 2.2,
+     "stl": 2.0,
+     "blk": 2.2,
+     "game_score": 11.11,
+     "club_drtg": 99.5,
+     "points": 372,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      124,
+      0
+     ]
+    },
+    {
+     "player": "Andrei Kirilenko",
+     "team": "Utah Jazz",
+     "games": 69,
+     "mpg": 39.1,
+     "pts": 15.1,
+     "reb": 8.1,
+     "ast": 4.5,
+     "stl": 2.1,
+     "blk": 3.2,
+     "game_score": 15.08,
+     "club_drtg": 100.9,
+     "points": 116,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      116
+     ]
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 76,
+     "mpg": 41.4,
+     "pts": 26.4,
+     "reb": 11.5,
+     "ast": 3.6,
+     "stl": 1.8,
+     "blk": 1.2,
+     "game_score": 22.54,
+     "club_drtg": 97.6,
+     "points": 8,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      8
+     ]
+    }
+   ]
   }
  ]
 }
