@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of April 21, 2006: 74 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
+As of April 22, 2006: 74 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
 
 ## Individual awards
 
@@ -167,7 +167,7 @@ Exhibitions played by the engine; their MVPs are exhibition honors. [All-Star we
 
 ### NBA champion
 
-Not decided yet. The playoffs open April 22, 2006. [Playoffs](Playoffs.md)
+Not decided yet. [Playoffs](Playoffs.md)
 
 ### Finals MVP
 
