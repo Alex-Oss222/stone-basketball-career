@@ -2,9 +2,9 @@
 
 # Contract | Devin Harris
 
-Known through: 2006-04-23. [Open interactive contract](devinharris.html#contract) · [Contract history](devinharris.html#contract-history)
+Known through: 2006-04-25. [Open interactive contract](devinharris.html#contract) · [Contract history](devinharris.html#contract-history)
 
-Devin Harris: under contract. Evidence cutoff: 2006-04-23.
+Devin Harris: under contract. Evidence cutoff: 2006-04-25.
 
 ## Current contract
 

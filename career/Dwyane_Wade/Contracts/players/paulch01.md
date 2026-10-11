@@ -2,9 +2,9 @@
 
 # Contract | Chris Paul
 
-Known through: 2006-04-23. [Open interactive contract](paulch01.html#contract) · [Contract history](paulch01.html#contract-history)
+Known through: 2006-04-25. [Open interactive contract](paulch01.html#contract) · [Contract history](paulch01.html#contract-history)
 
-Chris Paul: under contract. Evidence cutoff: 2006-04-23.
+Chris Paul: under contract. Evidence cutoff: 2006-04-25.
 
 ## Current contract
 

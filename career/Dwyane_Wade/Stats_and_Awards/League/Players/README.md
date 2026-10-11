@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-04-23**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-04-25**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -51,7 +51,7 @@ Card date: **2006-04-23**. 653 registry players, one Markdown card and one inter
 | [Earl Boykins](boykiea01.md) | Denver Nuggets | 29 | sourced | [open](boykiea01.html) |
 | [Earl Watson](watsoea01.md) | New Jersey Nets | 26 | sourced | [open](watsoea01.html) |
 | [Eddie Gill](gilled01.md) | Miami Heat | 27 | silhouette | [open](gilled01.html) |
-| [Eric Snow](snower01.md) | Indiana Pacers | 32 | sourced | [open](snower01.html) |
+| [Eric Snow](snower01.md) | Indiana Pacers | 33 | sourced | [open](snower01.html) |
 | [Frank Williams](willifr02.md) | Free agent | 26 | silhouette | [open](willifr02.html) |
 | [Gary Payton](paytoga01.md) | Denver Nuggets | 37 | sourced | [open](paytoga01.html) |
 | [Gilbert Arenas](arenagi01.md) | Washington Wizards | 24 | sourced | [open](arenagi01.html) |
@@ -497,7 +497,7 @@ Card date: **2006-04-23**. 653 registry players, one Markdown card and one inter
 | [Malik Rose](rosema01.md) | Portland Trail Blazers | 31 | sourced | [open](rosema01.html) |
 | [Marcus Haislip](haislma01.md) | Milwaukee Bucks | 25 | sourced | [open](haislma01.html) |
 | [Mario Austin](austima01.md) | Free agent | 24 | silhouette | [open](austima01.html) |
-| [Mark Bryant](bryanma01.md) | Free agent | 40 | silhouette | [open](bryanma01.html) |
+| [Mark Bryant](bryanma01.md) | Free agent | 41 | silhouette | [open](bryanma01.html) |
 | [Mark Madsen](madsema01.md) | Dallas Mavericks | 30 | sourced | [open](madsema01.html) |
 | [Mark Pope](popema01.md) | Free agent | 33 | silhouette | [open](popema01.html) |
 | [Marvin Williams](willima02.md) | Orlando Magic | 19 | silhouette | [open](willima02.html) |
@@ -506,7 +506,7 @@ Card date: **2006-04-23**. 653 registry players, one Markdown card and one inter
 | [Mehmet Okur](okurme01.md) | Miami Heat | 26 | sourced | [open](okurme01.html) |
 | [Michael Bradley](bradlmi01.md) | Los Angeles Clippers | 27 | silhouette | [open](bradlmi01.html) |
 | [Michael Ruffin](ruffimi01.md) | Dallas Mavericks | 29 | silhouette | [open](ruffimi01.html) |
-| [Michael Stewart](stewami01.md) | Free agent | 30 | silhouette | [open](stewami01.html) |
+| [Michael Stewart](stewami01.md) | Free agent | 31 | silhouette | [open](stewami01.html) |
 | [Michael Sweetney](sweetmi01.md) | New York Knicks | 23 | silhouette | [open](sweetmi01.html) |
 | [Mike Batiste](batismi01.md) | Free agent | 28 | sourced | [open](batismi01.html) |
 | [Nenad Krstić](nenadkrsti.md) | New York Knicks | 22 | silhouette | [open](nenadkrsti.html) |
@@ -536,7 +536,7 @@ Card date: **2006-04-23**. 653 registry players, one Markdown card and one inter
 | [Slava Medvedenko](medvest01.md) | Detroit Pistons | 27 | sourced | [open](medvest01.html) |
 | [Stromile Swift](swiftst01.md) | Memphis Grizzlies | 26 | sourced | [open](swiftst01.html) |
 | [Szymon Szewczyk](szewcsz01.md) | Free agent | 23 | sourced | [open](szewcsz01.html) |
-| [Tim Duncan](duncati01.md) | San Antonio Spurs | 29 | sourced | [open](duncati01.html) |
+| [Tim Duncan](duncati01.md) | San Antonio Spurs | 30 | sourced | [open](duncati01.html) |
 | [Tom Gugliotta](guglito01.md) | Free agent | 36 | sourced | [open](guglito01.html) |
 | [Tommy Smith](smithto03.md) | Free agent | 25 | silhouette | [open](smithto03.html) |
 | [Toni Kukoc](kukocto01.md) | Golden State Warriors | 37 | sourced | [open](kukocto01.html) |

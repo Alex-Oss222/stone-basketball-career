@@ -38,23 +38,23 @@ Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · [Miam
 EAST
   (1) Toronto Raptors          1
   (8) Cleveland Cavaliers      0
-  (4) Boston Celtics           1
+  (4) Boston Celtics           2
   (5) Atlanta Hawks            0
         conference semifinal: winners meet
   (3) Miami Heat               1
   (6) Orlando Magic            0
   (2) Detroit Pistons          0
-  (7) New Jersey Nets          1
+  (7) New Jersey Nets          2
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
 WEST
-  (1) Phoenix Suns             0
+  (1) Phoenix Suns             1
   (8) Utah Jazz                1
   (4) San Antonio Spurs        1
   (5) Sacramento Kings         0
         conference semifinal: winners meet
-  (3) Minnesota Timberwolves   1
+  (3) Minnesota Timberwolves   2
   (6) Los Angeles Lakers       0
   (2) Dallas Mavericks         1
   (7) New Orleans/Oklahoma City Hornets 0
@@ -81,12 +81,12 @@ Home court: Toronto Raptors. Series Toronto Raptors 1, Cleveland Cavaliers 0.
 
 ### East: (4) Boston Celtics vs (5) Atlanta Hawks
 
-Home court: Boston Celtics. Series Boston Celtics 1, Atlanta Hawks 0.
+Home court: Boston Celtics. Series Boston Celtics 2, Atlanta Hawks 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 22 | Boston Celtics | Atlanta Hawks | Atlanta Hawks 88, Boston Celtics 92 |
-| 2 | Tue Apr 25 | Boston Celtics | Atlanta Hawks |  |
+| 2 | Tue Apr 25 | Boston Celtics | Atlanta Hawks | Atlanta Hawks 87, Boston Celtics 91 |
 | 3 | Fri Apr 28 | Atlanta Hawks | Boston Celtics |  |
 | 4 | Sun Apr 30 | Atlanta Hawks | Boston Celtics |  |
 | 5 | Tue May 2 | Boston Celtics | Atlanta Hawks | if needed |
@@ -109,12 +109,12 @@ Home court: Miami Heat. Series Miami Heat 1, Orlando Magic 0.
 
 ### East: (2) Detroit Pistons vs (7) New Jersey Nets
 
-Home court: Detroit Pistons. Series Detroit Pistons 0, New Jersey Nets 1.
+Home court: Detroit Pistons. Series Detroit Pistons 0, New Jersey Nets 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 22 | Detroit Pistons | New Jersey Nets | New Jersey Nets 108, Detroit Pistons 102 |
-| 2 | Tue Apr 25 | Detroit Pistons | New Jersey Nets |  |
+| 2 | Tue Apr 25 | Detroit Pistons | New Jersey Nets | New Jersey Nets 106, Detroit Pistons 102 |
 | 3 | Fri Apr 28 | New Jersey Nets | Detroit Pistons |  |
 | 4 | Sun Apr 30 | New Jersey Nets | Detroit Pistons |  |
 | 5 | Tue May 2 | Detroit Pistons | New Jersey Nets | if needed |
@@ -123,12 +123,12 @@ Home court: Detroit Pistons. Series Detroit Pistons 0, New Jersey Nets 1.
 
 ### West: (1) Phoenix Suns vs (8) Utah Jazz
 
-Home court: Phoenix Suns. Series Phoenix Suns 0, Utah Jazz 1.
+Home court: Phoenix Suns. Series Phoenix Suns 1, Utah Jazz 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 22 | Phoenix Suns | Utah Jazz | Utah Jazz 113, Phoenix Suns 89 |
-| 2 | Tue Apr 25 | Phoenix Suns | Utah Jazz |  |
+| 2 | Tue Apr 25 | Phoenix Suns | Utah Jazz | Utah Jazz 87, Phoenix Suns 90 |
 | 3 | Fri Apr 28 | Utah Jazz | Phoenix Suns |  |
 | 4 | Sun Apr 30 | Utah Jazz | Phoenix Suns |  |
 | 5 | Tue May 2 | Phoenix Suns | Utah Jazz | if needed |
@@ -151,12 +151,12 @@ Home court: San Antonio Spurs. Series San Antonio Spurs 1, Sacramento Kings 0.
 
 ### West: (3) Minnesota Timberwolves vs (6) Los Angeles Lakers
 
-Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 1, Los Angeles Lakers 0.
+Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 2, Los Angeles Lakers 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 22 | Minnesota Timberwolves | Los Angeles Lakers | Los Angeles Lakers 91, Minnesota Timberwolves 100 |
-| 2 | Tue Apr 25 | Minnesota Timberwolves | Los Angeles Lakers |  |
+| 2 | Tue Apr 25 | Minnesota Timberwolves | Los Angeles Lakers | Los Angeles Lakers 88, Minnesota Timberwolves 89 |
 | 3 | Fri Apr 28 | Los Angeles Lakers | Minnesota Timberwolves |  |
 | 4 | Sun Apr 30 | Los Angeles Lakers | Minnesota Timberwolves |  |
 | 5 | Tue May 2 | Minnesota Timberwolves | Los Angeles Lakers | if needed |

@@ -2,9 +2,9 @@
 
 # Contract | Raef LaFrentz
 
-Known through: 2006-04-23. [Open interactive contract](lafrera01.html#contract) · [Contract history](lafrera01.html#contract-history)
+Known through: 2006-04-25. [Open interactive contract](lafrera01.html#contract) · [Contract history](lafrera01.html#contract-history)
 
-Raef LaFrentz: under contract. Evidence cutoff: 2006-04-23.
+Raef LaFrentz: under contract. Evidence cutoff: 2006-04-25.
 
 ## Current contract
 

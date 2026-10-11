@@ -1,14 +1,14 @@
 # NBA awards | 2005-06
 
-[Stats hub](../../README.md) · [Wade](../../2005-06/README.md) · [Miami](../../Team/2005-06/Team_Stats.md) · [NBA players](League_Stats.md) · [All-Star](All_Star.md) · [All-Star games](All_Star_Games.md) · [Playoffs](Playoffs.md)
+[Stats hub](../../README.md) · [Wade](../../2005-06/README.md) · [Miami](../../Team/2005-06/Team_Stats.md) · [NBA players](League_Stats.md) · [Season awards](Season_Awards.md) · [All-Star](All_Star.md) · [All-Star games](All_Star_Games.md) · [Playoffs](Playoffs.md)
 
 2005-06 · Calendar coverage: 2005-06
 
-As of April 24, 2006: 74 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
+As of April 25, 2006: 74 weekly and monthly award decision(s) closed; 1 of 10 season awards decided.
 
 ## Individual awards
 
-Each award shows its top three once its vote has closed on the real announcement date, the first-place result labelled **WINNER**; an award still open keeps empty rank slots with its close date. Ballots and complete tallies: `season_awards.json`, once the first vote closes.
+Each award shows its top three once its vote has closed on the real announcement date, the first-place result labelled **WINNER**; an award still open keeps empty rank slots with its close date. Ballots and complete tallies: [Season awards](Season_Awards.md) (`season_awards.json`).
 
 ### Most Valuable Player
 
@@ -62,13 +62,13 @@ Vote closes May 1, 2006 · 124 media · ballot 5-3-1.
 
 ### Coach of the Year
 
-Vote closes April 25, 2006 · 124 media · ballot 5-3-1.
+Announced April 25, 2006 · 124 media · ballot 5-3-1 · [tally](Season_Awards.md#coach-of-the-year).
 
 | Rank slot | Coach | Team | 1st votes | Points | Status |
 | ---: | --- | --- | ---: | ---: | --- |
-| 1 | Pending | N/A | N/A | N/A | Awaiting vote (closes April 25, 2006) |
-| 2 | Pending | N/A | N/A | N/A | Awaiting vote (closes April 25, 2006) |
-| 3 | Pending | N/A | N/A | N/A | Awaiting vote (closes April 25, 2006) |
+| 1 | Flip Saunders | Detroit Pistons | 124 | 620 | **WINNER** |
+| 2 | Sam Mitchell | Toronto Raptors | 0 | 372 | Runner-up |
+| 3 | Mike Woodson | Atlanta Hawks | 0 | 75 | Third |
 
 ## All-NBA teams
 
