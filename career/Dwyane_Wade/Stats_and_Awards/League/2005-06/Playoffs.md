@@ -36,12 +36,12 @@ Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · [Miam
 
 ```
 EAST
-  (1) Toronto Raptors          0
+  (1) Toronto Raptors          1
   (8) Cleveland Cavaliers      0
   (4) Boston Celtics           1
   (5) Atlanta Hawks            0
         conference semifinal: winners meet
-  (3) Miami Heat               0
+  (3) Miami Heat               1
   (6) Orlando Magic            0
   (2) Detroit Pistons          0
   (7) New Jersey Nets          1
@@ -51,12 +51,12 @@ EAST
 WEST
   (1) Phoenix Suns             0
   (8) Utah Jazz                1
-  (4) San Antonio Spurs        0
+  (4) San Antonio Spurs        1
   (5) Sacramento Kings         0
         conference semifinal: winners meet
   (3) Minnesota Timberwolves   1
   (6) Los Angeles Lakers       0
-  (2) Dallas Mavericks         0
+  (2) Dallas Mavericks         1
   (7) New Orleans/Oklahoma City Hornets 0
         conference semifinal: winners meet
     conference final, then the NBA Finals
@@ -67,11 +67,11 @@ WEST
 
 ### East: (1) Toronto Raptors vs (8) Cleveland Cavaliers
 
-Home court: Toronto Raptors. Series Toronto Raptors 0, Cleveland Cavaliers 0.
+Home court: Toronto Raptors. Series Toronto Raptors 1, Cleveland Cavaliers 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sun Apr 23 | Toronto Raptors | Cleveland Cavaliers |  |
+| 1 | Sun Apr 23 | Toronto Raptors | Cleveland Cavaliers | Cleveland Cavaliers 82, Toronto Raptors 102 |
 | 2 | Wed Apr 26 | Toronto Raptors | Cleveland Cavaliers |  |
 | 3 | Sat Apr 29 | Cleveland Cavaliers | Toronto Raptors |  |
 | 4 | Mon May 1 | Cleveland Cavaliers | Toronto Raptors |  |
@@ -95,11 +95,11 @@ Home court: Boston Celtics. Series Boston Celtics 1, Atlanta Hawks 0.
 
 ### East: (3) Miami Heat vs (6) Orlando Magic
 
-Home court: Miami Heat. Series Miami Heat 0, Orlando Magic 0.
+Home court: Miami Heat. Series Miami Heat 1, Orlando Magic 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sun Apr 23 | Miami Heat | Orlando Magic |  |
+| 1 | Sun Apr 23 | Miami Heat | Orlando Magic | Orlando Magic 99, Miami Heat 108 |
 | 2 | Wed Apr 26 | Miami Heat | Orlando Magic |  |
 | 3 | Sat Apr 29 | Orlando Magic | Miami Heat |  |
 | 4 | Mon May 1 | Orlando Magic | Miami Heat |  |
@@ -137,11 +137,11 @@ Home court: Phoenix Suns. Series Phoenix Suns 0, Utah Jazz 1.
 
 ### West: (4) San Antonio Spurs vs (5) Sacramento Kings
 
-Home court: San Antonio Spurs. Series San Antonio Spurs 0, Sacramento Kings 0.
+Home court: San Antonio Spurs. Series San Antonio Spurs 1, Sacramento Kings 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sun Apr 23 | San Antonio Spurs | Sacramento Kings |  |
+| 1 | Sun Apr 23 | San Antonio Spurs | Sacramento Kings | Sacramento Kings 106, San Antonio Spurs 109 |
 | 2 | Wed Apr 26 | San Antonio Spurs | Sacramento Kings |  |
 | 3 | Sat Apr 29 | Sacramento Kings | San Antonio Spurs |  |
 | 4 | Mon May 1 | Sacramento Kings | San Antonio Spurs |  |
@@ -165,11 +165,11 @@ Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 1, Los Angeles
 
 ### West: (2) Dallas Mavericks vs (7) New Orleans/Oklahoma City Hornets
 
-Home court: Dallas Mavericks. Series Dallas Mavericks 0, New Orleans/Oklahoma City Hornets 0.
+Home court: Dallas Mavericks. Series Dallas Mavericks 1, New Orleans/Oklahoma City Hornets 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sun Apr 23 | Dallas Mavericks | New Orleans/Oklahoma City Hornets |  |
+| 1 | Sun Apr 23 | Dallas Mavericks | New Orleans/Oklahoma City Hornets | New Orleans/Oklahoma City Hornets 103, Dallas Mavericks 114 |
 | 2 | Wed Apr 26 | Dallas Mavericks | New Orleans/Oklahoma City Hornets |  |
 | 3 | Sat Apr 29 | New Orleans/Oklahoma City Hornets | Dallas Mavericks |  |
 | 4 | Mon May 1 | New Orleans/Oklahoma City Hornets | Dallas Mavericks |  |
