@@ -20,9 +20,10 @@ a time, never asked twice; a re-run of the same date finds the same ids). `--sho
 player: the front office picks which agreed own free agent, if any, it signs and trades in one
 transaction (runtime/gm.py RESIGN_AND_TRADE_FIT) and writes at most one proposal; a player Miami
 has already re-signed is a signed player under the newly-signed restriction and is not shopped.
-Wade's keep_picks request (runtime/keep_picks.py), read from every season folder, weighs any
-package with a Miami pick; a completed trade that sends one while it stands writes his trade
-request and prints a "WADE TRADE REQUEST" line, on which scripts/advance.py stops.
+Wade's keep_picks request (runtime/keep_picks.py), read from every season folder, bars any
+package with a Miami pick while it stands (a hard rule, the user's premise); a completed trade
+that sent one anyway would write his trade request and print a "WADE TRADE REQUEST" line, on
+which scripts/advance.py stops.
 """
 import json
 from pathlib import Path
@@ -292,10 +293,10 @@ def answer_requests(day, root=ROOT):
     """The front office's answer to each package Wade asked for (`subject: trade_package` in a phase folder's
     `wade_requests.json`, dated on or before the day), once: it proposes the package when its own rules, with his
     request weighed by his standing, would make it (`TradeDesk.evaluate_package`), else records why not. A proposed
-    package's answer from the other club is an engine draw like any proposal. A pick in the package is weighed against
-    his standing keep_picks request, unless the package request is dated on or after it: then it is his newer wish for
-    that pick (`keep_picks.exempt`), weighed like his other requests and marked `keep_picks_exempt` on the ranking, so
-    trading it writes no trade request. Returns the lines to report."""
+    package's answer from the other club is an engine draw like any proposal. A package naming a Miami pick is declined
+    outright while his keep_picks request stands (a hard rule, the user's premise), unless the package request is dated
+    on or after it: then it is his newer wish for that pick (`keep_picks.exempt`), weighed like his other requests and
+    marked `keep_picks_exempt` on the ranking, so trading it writes no trade request. Returns the lines to report."""
     root = Path(root)
     path = root / REQUEST_ANSWERS
     record = json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {
@@ -337,7 +338,7 @@ def answer_requests(day, root=ROOT):
                          f"(acceptance {numbers['accept']:.2f}, engine draw)")
         else:
             signing.note_event(writer, signing.phase_note_for(state), day,
-                               f"Wade asked the front office to trade {outs} to {trade['partner']} for {ins}. The front office declines to propose it: {why}.")
+                               f"Wade asked the front office to trade {outs} to {trade['partner']} for {ins}. The front office declines to propose it: {why.rstrip('.')}.")
             writer.commit()
             lines.append(f"Wade's request: the front office declines to propose {outs} for {ins}: {why}")
         record["answers"].append(answer)

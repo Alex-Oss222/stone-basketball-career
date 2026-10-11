@@ -970,10 +970,11 @@ def apply_trade(writer, record, day, desk=None):
 
 
 def file_trade_request(writer, record, day, state):
-    """Wade's keep_picks consequence (runtime/keep_picks.py): a completed trade that sends one of Miami's picks while his
-    request stands, and was not his own newer package request naming it, writes his trade request the same day in the
-    current phase folder's `wade_requests.json` with its page and pending entry, marks the trade record
-    (`wade_trade_request`) and logs the phase note. Returns the row or None (no pick sent, no request standing)."""
+    """Wade's keep_picks consequence (runtime/keep_picks.py), a safety net: the front office's own paths send no pick
+    while his request stands (a hard rule), but a completed trade that sends one of Miami's picks while it stands, and
+    was not his own newer package request naming it, writes his trade request the same day in the current phase
+    folder's `wade_requests.json` with its page and pending entry, marks the trade record (`wade_trade_request`) and
+    logs the phase note. Returns the row or None (no pick sent, no request standing)."""
     from .keep_picks import REQUESTS_FILE, add_pending, page_name, picks_text, standing_request, trade_request
     from .standing import standing_on
     picks = record["trade"].get("picks_out") or []

@@ -156,7 +156,8 @@ def _trade_requests(c):
     keep = standing_request(c.on, c.root)
     if keep:
         rows.append([keep["date"], "keep_picks", "Keep every draft pick; if one is traded he asks for a trade",
-                     "Standing until withdrawn", _text(keep["words"]), c.link(c.root / keep["path"], "Recorded request")])
+                     "Standing until withdrawn: Miami trades no pick (hard rule)", _text(keep["words"]),
+                     c.link(c.root / keep["path"], "Recorded request")])
     for rel, _, row in request_rows(c.root):
         if row.get("subject") != TRADE_REQUEST or rel.split("/")[2] != c.season.name or not c.known(row.get("date")):
             continue
@@ -665,7 +666,9 @@ def build_milestone_payload(player: Path, identity: dict, records: list, *, root
                 ["Player reaction or preference", "Player", "Request an explanation or role discussion"]]),
             _table("Recorded franchise consultations", ["Asked", "Move", "Target", "Response", "Basis", "Source"], consultation_rows),
             _table("Your trade requests", ["Date", "Request", "What it asks", "Status", "Your words", "Source"], request_rows,
-                   notice="A request never forces a decision; the front office weighs it by your standing (runtime/keep_picks.py)."),
+                   notice=("While your keep_picks request stands Miami's front office trades no draft pick, a hard rule under the "
+                           "career's premise (runtime/keep_picks.py); your other requests are weighed by your standing and never "
+                           "force a decision.")),
             {"title": "Your response when an update arrives", "items": [
                 "Ask what changed, which obligations carry over and whom to contact.",
                 "State your view of the move or request a basketball discussion.",

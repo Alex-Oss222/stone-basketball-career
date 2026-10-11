@@ -33,13 +33,10 @@ Medical, work-ethic and basketball-IQ grades are not in any sourced record for t
    the on-clock club's answer is an engine draw (TRADE_DOWN_ACCEPT). At most MAX_TRADES a draft. From the 2006 draft
    (SECOND_ONCE_FROM) a club that has moved up once has given its next-year second-rounder and does not move up again
    (no club moved up twice in 2004 or 2005). While Wade's keep_picks request stands on the draft date
-   (runtime/keep_picks.py, from its date, 2006-04-19), a draft-night trade that would send one of Miami's picks is
-   weighed by the request the way the rule makes that call. Miami on the clock answers by the even-chance draw, a call
-   right on the line, so the request takes the standing weight w of its acceptance away: the draw's accept is
-   TRADE_DOWN_ACCEPT x (1 - w) (`keep_down`; `front_office.request_override` at margin 0). Miami moving up decides by its
-   utility gain, 1 - expected / target, which is scored as an opposed departure (x (1 - w)) and must still clear the
-   rule's 1 - 1 / TRADE_UP_GAIN, else the next club is asked (`keep_up`). The record's `keep_picks` lists each call. A
-   Miami pick traded while the request stands writes Wade's trade request (`wade_trade_requests`).
+   (runtime/keep_picks.py, from its date, 2006-04-19), Miami trades no pick on draft night, a hard rule (the user's
+   premise), with no weighing and no draw: Miami on the clock declines a trade-down offer without a draw (`keep_down`),
+   and Miami never moves up, so the next club is asked (`keep_up`). The record's `keep_picks` lists each declined call.
+   A Miami pick traded while the request stands would still write Wade's trade request (`wade_trade_requests`).
 7. Wade's scouting requests (from the 2006 draft, REQUESTS_FROM; his 2005-10-31 request). A `draft_prospect` request in
    the draft season's `09_Draft/wade_requests.json`, dated on or before the draft date, is a recommendation for
    evaluation, never a demand (the latest row per prospect stands, a name-only row included, so a later row of another
@@ -506,37 +503,32 @@ def _demand_packet(slot, club, demands, pool, standing):
 
 
 def _keep(root):
-    """Wade's keep_picks request standing on the draft date (rule 6; runtime/keep_picks.py) with his standing and weight
-    on the date, or None (always None before the request's date)."""
+    """Wade's keep_picks request standing on the draft date (rule 6; runtime/keep_picks.py) with his standing on the date
+    (a trade request cites it), or None (always None before the request's date)."""
     from .keep_picks import standing_request
     keep = standing_request(DRAFT_DATE, root)
     if keep is None:
         return None
     s = _standing(root)
-    return dict(keep, standing=s["standing"], standing_as_of=s["as_of"], weight=s["weight"])
+    return dict(keep, standing=s["standing"], standing_as_of=s["as_of"])
 
 
 def keep_down(slot, later, keep):
-    """Miami on the clock, offered No. `later` and a second-rounder for its pick (rule 6): its answer is the even-chance
-    draw, a call right on the line, so the keep_picks request takes the standing weight of its acceptance away
-    (`front_office.request_override` at margin 0): accept TRADE_DOWN_ACCEPT x (1 - w)."""
-    w = keep["weight"]
-    accept = round(TRADE_DOWN_ACCEPT * (1 - w), 6)
-    return {"slot": slot, "for_slot": later, "side": "down", "accept_without_request": TRADE_DOWN_ACCEPT, "accept": accept,
-            "basis": (f"Wade's keep_picks request of {keep['date']} ({keep['path']}) stands: standing {keep['standing']}, "
-                      f"weight {w}; Miami's answer is an even-chance call, right on the line, so the request takes {w} of its "
-                      f"acceptance away: accept {TRADE_DOWN_ACCEPT} -> {accept} (runtime/keep_picks.py).")}
+    """Miami on the clock, offered No. `later` and a second-rounder for its pick (rule 6), while Wade's keep_picks request
+    stands: declined without a draw (a hard rule, the user's premise; runtime/keep_picks.py)."""
+    from .keep_picks import basis
+    return {"slot": slot, "for_slot": later, "side": "down", "declined": True, "drawn": False,
+            "basis": f"Miami declines the offer of No. {later} and a {YEAR + 1} second-round pick for No. {slot}, without a "
+                     "draw. " + basis(keep)}
 
 
 def keep_up(slot, later, gain, keep):
-    """Miami at No. `later` wanting to move up to No. `slot` (rule 6, utility ratio `gain`): its gain 1 - 1 / ratio,
-    scored with the keep_picks request (an opposed departure), must still clear the rule's own line, 1 - 1 / TRADE_UP_GAIN."""
-    from .keep_picks import basis, scored
-    before, threshold = 1 - 1 / gain, 1 - 1 / TRADE_UP_GAIN
-    after = scored(before, keep["weight"])
-    return {"slot": slot, "for_slot": later, "side": "up", "gain": round(before, 4), "scored": round(after, 4),
-            "threshold": round(threshold, 4), "declined": after < threshold,
-            "basis": basis(keep, keep["weight"], keep["standing"], before, after)}
+    """Miami at No. `later`, gaining the utility ratio `gain` by moving up to No. `slot` (rule 6) at the price of that
+    pick and its next-year second-rounder, while Wade's keep_picks request stands: declined (a hard rule, the user's
+    premise; runtime/keep_picks.py), so the next club is asked."""
+    from .keep_picks import basis
+    return {"slot": slot, "for_slot": later, "side": "up", "gain": round(1 - 1 / gain, 4), "declined": True,
+            "basis": f"Miami does not move up from No. {later} to No. {slot}. " + basis(keep)}
 
 
 def _file_trade_requests(root, keep, trades, rounds):
@@ -671,19 +663,16 @@ def run(root=ROOT, clock=None):
         if len(in_tier) >= 3 and len(trades) < MAX_TRADES:
             moved = {t["to"] for t in trades} if YEAR >= SECOND_ONCE_FROM else set()      # their next-year seconds are gone
             partner = _trade_partner(slot, owners, contexts, pool, tier, available, best_tier, keep, keep_calls, moved)
-            if partner:
+            if partner and club == MIAMI and keep:              # Miami on the clock: its pick stays (no draw)
+                keep_calls.append(keep_down(slot, partner[0], keep))
+            elif partner:
                 later, gain = partner
-                accept, weighed = TRADE_DOWN_ACCEPT, ""
-                if club == MIAMI and keep:                      # Miami on the clock, offered a trade down
-                    keep_calls.append(keep_down(slot, later, keep))
-                    accept, weighed = keep_calls[-1]["accept"], " " + keep_calls[-1]["basis"]
                 answer = _draw(root, {"event_id": f"{YEAR}-draft-pick-{slot}-trade-down", "date": DRAFT_DATE,
                                       "question": f"{YEAR} draft: does {club} trade No. {slot} to {owners[later]} for No. {later} and its {YEAR + 1} second-round pick?",
                                       "decider": f"{club} front office (engine draw)",
-                                      "options": {"accept": accept, "decline": round(1 - accept, 6)},
+                                      "options": {"accept": TRADE_DOWN_ACCEPT, "decline": round(1 - TRADE_DOWN_ACCEPT, 6)},
                                       "basis": f"{len(in_tier)} players left in tier {best_tier}; {owners[later]} values its target {gain:.2f}x its "
-                                               f"expected pick; chart value No. {slot} {pick_value(slot):.2f} vs No. {later} {pick_value(later):.2f} + a {YEAR + 1} second-rounder (runtime/draft.py)."
-                                               + weighed})
+                                               f"expected pick; chart value No. {slot} {pick_value(slot):.2f} vs No. {later} {pick_value(later):.2f} + a {YEAR + 1} second-rounder (runtime/draft.py)."})
                 if answer is None:
                     return None
                 if answer == "accept":
@@ -744,9 +733,9 @@ def run(root=ROOT, clock=None):
               "rule": __doc__.split("\n\n", 1)[1].strip(), "picks": picks, "trades": trades,
               "undrafted": sorted(pool[k]["player"] for k in pool if k not in taken),
               **({"wade_requests": _requests_record(wanted, pool, standing, weighed)} if wanted else {}),
-              **({"keep_picks": {"request": keep["path"], "requested_on": keep["date"], "standing": keep["standing"],
-                                 "weight": keep["weight"], "calls": keep_calls,
-                                 "rule": "runtime/draft.py rule 6 with runtime/keep_picks.py"}} if keep else {}),
+              **({"keep_picks": {"request": keep["path"], "requested_on": keep["date"], "calls": keep_calls,
+                                 "rule": "runtime/draft.py rule 6 with runtime/keep_picks.py: a hard rule (the user's premise), "
+                                         "Miami trades no pick while the request stands"}} if keep else {}),
               "board": [{"player": pool[k]["player"], "tier": tier[k], "consensus_slot": pool[k]["consensus"],
                          "floor": pool[k]["floor"], "median": pool[k]["median"], "ceiling": pool[k]["ceiling"]}
                         for k in sorted(pool, key=lambda k: (tier[k], pool[k]["consensus"]))],
@@ -782,8 +771,7 @@ def _miami_pick_ledger(root, trades):
 def _trade_partner(slot, owners, contexts, pool, tier, available, best_tier, keep=None, keep_calls=None, moved=()):
     """The first later club (within TRADE_WINDOW) that gains TRADE_UP_GAIN by moving up for a tier player; a club in
     `moved` has already given its next-year second-rounder and is skipped. Miami, while Wade's keep_picks request stands
-    (`keep`), moves up only when its gain still clears the rule with the request weighed (`keep_up`, each call appended
-    to `keep_calls`); otherwise the next club is asked."""
+    (`keep`), never moves up (`keep_up`, each declined call appended to `keep_calls`): the next club is asked."""
     from .trades import SECOND_ROUND_VALUE
     on_clock = owners[slot]
     for later in range(slot + 1, slot + TRADE_WINDOW + 1):
@@ -798,12 +786,10 @@ def _trade_partner(slot, owners, contexts, pool, tier, available, best_tier, kee
             continue
         gain = utility(pool[target], ctx) / max(0.01, utility(pool[expected], ctx))
         if gain >= TRADE_UP_GAIN and pick_value(later) + SECOND_ROUND_VALUE >= 0.9 * pick_value(slot):
-            if club == MIAMI and keep:
-                call = keep_up(slot, later, gain, keep)
+            if club == MIAMI and keep:                     # it would send its pick and next-year second: never
                 if keep_calls is not None:
-                    keep_calls.append(call)
-                if call["declined"]:
-                    continue
+                    keep_calls.append(keep_up(slot, later, gain, keep))
+                continue
             return later, gain
     return None
 

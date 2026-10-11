@@ -8,27 +8,28 @@ the filing order). It is read across every season folder of the career, so the r
 market and every later season find it where it was filed; nothing copies it. Before its date nothing reads it, so every
 recorded trade, offer, packet and draft replays unchanged.
 
-The front office's rule (one judgement wherever Miami could send a pick away; docs/front_office.md, Wade's requests). A
-request never forces a decision. While the request stands, a package that sends one of Miami's picks is scored as an
-opposed departure, the scale every request of his has (`scored`, `TradeDesk.scored_gain`): the gain x (1 - w) when it
-is positive, x (1 + w) when it is negative, w being Wade's standing weight on the date (`standing.STANDING_WEIGHT`). At
-franchise standing (w 0.8) a pick package needs five times the threshold before the request is weighed (0.50 for the
-in-season 0.10): the recorded 2006-01-16 trade of Miami's 2006 first (0.492) would have fallen just short. On
-draft night the on-clock answer is an even-chance draw, a call right on the line, so the request takes w of Miami's
-acceptance away (`draft.keep_down`, `front_office.request_override` at margin 0). The trade request he stated is his own
-decision, which the user confirms or withdraws when it is written; the front office does not price it in, which would
-turn the request into a veto at a high standing. Wade's own package request dated on or after the keep_picks request
-that names a pick is his newer wish for that pick: neither the score nor the consequence applies to it
-(`run_trade.answer_requests`, the ranking's `keep_picks_exempt`).
+The front office's rule (the user's premise, October 2026: "make it a hard rule"; docs/front_office.md, Wade's
+requests). While the request stands, Miami's front office never trades away a draft pick: every path that could send
+one excludes such a deal outright, with no weighing and no engine draw (`barred`). The in-season search never adds
+Miami's pick to a package (`TradeDesk.search`); a package Wade asked for before the request that names a Miami pick is
+declined (`TradeDesk.evaluate_package`); an offer to Miami that would take a pick is declined (`TradeDesk.offers`,
+whose packages carry none); the sign-and-trade pick fallback is closed (`TradeDesk._packages`); on draft night Miami
+on the clock declines a trade-down offer without a draw and never moves up (`runtime/draft.py` rule 6, `keep_down`,
+`keep_up`). The summer market's trades are player for player and carry no pick. Wade's own package request dated on or
+after the keep_picks request that names a pick is his newer wish for that pick: neither the bar nor the consequence
+applies to it (`exempt`; `run_trade.answer_requests`, the ranking's `keep_picks_exempt`). The rule holds from the
+request's own date, 2006-04-19: no recorded decision on or after that date weighed a Miami pick (the season's trade
+deadline had passed and the playoffs make no trade), so the request's earlier weighing by his standing, never applied
+to any decision, is replaced from its first day and every recorded trade, offer, packet and draft replays unchanged.
 
-The consequence. If Miami completes a trade that sends one of its picks while the request stands, Wade's trade request
-is written the same day (`trade_request`): a `trade_request` row in the phase folder's `wade_requests.json` citing the
-keep_picks row (path and index) and the trade, with his stated words, its milestone page beside it and
-`wade_trade_request:<id>` in `current_state.pending_player_decisions`, so the driver stops ("WADE TRADE REQUEST",
-`scripts/advance.py`) until the user confirms or withdraws it (`scripts/player_milestone.py --reply`, kind
-`trade_request`). What follows a confirmed request (Miami answering it, trading Wade, another club becoming the
-simulated club) is not modelled (docs/ROADMAP.md F1), so a confirmed request keeps the driver stopped (`confirmed`)
-until it is; a withdrawn one lets the career go on.
+The consequence, kept as a safety net (the front office's own paths never send a pick while the request stands). If
+Miami completes a trade that sends one of its picks while the request stands, Wade's trade request is written the same
+day (`trade_request`): a `trade_request` row in the phase folder's `wade_requests.json` citing the keep_picks row (path
+and index) and the trade, with his stated words, its milestone page beside it and `wade_trade_request:<id>` in
+`current_state.pending_player_decisions`, so the driver stops ("WADE TRADE REQUEST", `scripts/advance.py`) until the
+user confirms or withdraws it (`scripts/player_milestone.py --reply`, kind `trade_request`). What follows a confirmed
+request (Miami answering it, trading Wade, another club becoming the simulated club) is not modelled (docs/ROADMAP.md
+F1), so a confirmed request keeps the driver stopped (`confirmed`) until it is; a withdrawn one lets the career go on.
 """
 import json
 from pathlib import Path
@@ -89,15 +90,16 @@ def exempt(keep, requested_on):
     return bool(keep) and bool(requested_on) and requested_on >= keep["date"]
 
 
-def scored(gain, weight):
-    """A gain with the keep_picks request weighed: an opposed departure at the standing weight."""
-    return gain * (1 - weight) if gain > 0 else gain * (1 + weight)
+def barred(keep, picks, exempt=False):
+    """Whether a deal that sends `picks` of Miami's is excluded: the request stands (`keep`), the deal sends a pick and
+    it is not Wade's own newer package request (`exempt`). No weighing and no draw: the user's premise makes it a bar."""
+    return bool(keep) and bool(picks) and not exempt
 
 
-def basis(keep, weight, standing, before, after):
-    """The sentence a ranking or record gives for the weighing."""
-    return (f"Wade's keep_picks request of {keep['date']} ({keep['path']}) stands: standing {standing}, weight {weight}; "
-            f"the pick is an opposed departure: gain {before:+.3f} -> {after:+.3f} (runtime/keep_picks.py).")
+def basis(keep):
+    """The sentence a ranking, answer or record gives for the bar."""
+    return (f"Wade's keep_picks request of {keep['date']} ({keep['path']}) stands: Miami's front office trades no draft "
+            "pick while it does (a hard rule, the user's premise; runtime/keep_picks.py).")
 
 
 def picks_text(picks):
@@ -164,7 +166,7 @@ record: {REQUESTS_FILE} ({row['id']})
 | --- | --- |
 {table}
 
-The front office weighed your request by your standing (runtime/keep_picks.py; docs/front_office.md, Wade's requests). A request never forces its decision, and this one did not stop the trade.
+Under the career's premise Miami's front office trades no draft pick while your keep_picks request stands (a hard rule; runtime/keep_picks.py; docs/front_office.md, Wade's requests), yet this trade sent one, so the consequence you named is recorded.
 
 ## Your response
 

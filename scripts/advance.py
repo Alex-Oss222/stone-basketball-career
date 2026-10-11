@@ -2,6 +2,7 @@
 """Advance the career day by day until a target date, stopping whenever Wade has a decision to make.
 
     python scripts/advance.py --to 2004-04-14
+    python scripts/advance.py --until-champion          the playoffs to the end: stop the day the NBA Finals are decided
 
 Each day runs the dated systems in order, each idempotent, so a stopped day can simply be run again:
   1. the clock moves to the day; the January 7 and 10 guarantee steps run on their dates;
@@ -44,6 +45,15 @@ not a news stop: it comes mid-day, so there is no checkpoint or push then (the d
 yet), but the day's Miami trade lines and the request's are recorded in `reported_stop` with it, so the resumed day
 neither loses them nor stops on them again; the day's work is committed when it closes. A confirmed trade request keeps
 every run stopped (`wade_waits`), since Miami's answer to it is not built yet (docs/ROADMAP.md F1).
+
+Playoff stops: `--series-end` stops, checkpointed and pushed, the day a Miami series is decided. `--until-champion` runs
+the playoffs to the end instead: it stops, checkpointed and pushed, only on the day the NBA Finals series is decided,
+whoever plays in it, printing "DONE: <champion> won the <season> NBA championship <wins>-<losses> over <runner-up>" (read
+from the live season's bracket, `runtime/playoffs.read`, its series of round `finals`), and never earlier for a Miami
+series (the two flags exclude each other). `--to` is then optional and bounds the run; every other stop (a pending
+decision, a failing step, a Miami trade or a long Wade injury) still comes first. A run started after the live season's
+Finals were decided stops at once rather than running into the next season, and one whose live season changes (the
+rollover) before its Finals are decided stops there.
 
 Environment: ENGINE_API_TOKEN (never printed), and optionally ADVANCE_COMMIT_TRAILER appended to each commit.
 """
@@ -603,6 +613,39 @@ def miami_series_decided(day):
     return None
 
 
+def finals_series():
+    """The live season's NBA Finals series (`runtime/playoffs.read`, round `finals`) and the playoff record, or (None,
+    record) before the Finals exist."""
+    from runtime import playoffs
+    record = playoffs.read(ROOT)
+    return next((s for s in (record or {}).get("series", []) if s.get("round") == "finals"), None), record
+
+
+def champion_text(series, record):
+    """The line for a decided Finals series: "<champion> won the <season> NBA championship <wins>-<losses> over
+    <runner-up>"."""
+    winner = series["winner"]
+    loser = next(c for c in series["clubs"] if c != winner)
+    return (f"{winner} won the {record['season']} NBA championship {series['wins'][winner]}-{series['wins'][loser]} "
+            f"over {loser}")
+
+
+def champion_decided(day):
+    """The champion line when the NBA Finals series was decided on `day`, else None (whether or not Miami played)."""
+    series, record = finals_series()
+    if series and series.get("winner") and series.get("clinched_on") == day:
+        return champion_text(series, record)
+    return None
+
+
+def champion_before(day):
+    """(clinched_on, champion line) when the live season's Finals were decided before `day`, else None."""
+    series, record = finals_series()
+    if series and series.get("winner") and series.get("clinched_on") and series["clinched_on"] < day:
+        return series["clinched_on"], champion_text(series, record)
+    return None
+
+
 def reported(day):
     """Lines a stop on `day` already reported (`current_state.reported_stop`): a resumed day reports them again but does
     not stop on them a second time."""
@@ -645,19 +688,31 @@ def clock_or(default):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    parser.add_argument("--to", required=True, help="the last day to play")
+    parser.add_argument("--to", help="the last day to play (optional with --until-champion)")
     parser.add_argument("--from", dest="start", help="first day (default: the career clock's day, rerun safely)")
-    parser.add_argument("--series-end", action="store_true",
-                        help="also stop (with the checkpoint and push) on the day a Miami playoff series is decided")
+    playoff_stop = parser.add_mutually_exclusive_group()
+    playoff_stop.add_argument("--series-end", action="store_true",
+                              help="also stop (with the checkpoint and push) on the day a Miami playoff series is decided")
+    playoff_stop.add_argument("--until-champion", action="store_true",
+                              help="run the playoffs to the end: stop (with the checkpoint and push) only on the day the NBA "
+                                   "Finals are decided, whoever plays in them")
     parser.add_argument("--through-injuries", action="store_true",
                         help=f"keep going after a Wade injury of {LONG_INJURY_GAMES}+ games (by default the run stops, checkpointed and pushed)")
     parser.add_argument("--through-trades", action="store_true",
                         help="keep going after a Miami trade (by default the run stops, checkpointed and pushed, the day one executes)")
     args = parser.parse_args()
+    if not args.to and not args.until_champion:
+        parser.error("--to is required unless --until-champion is given")
     day = date.fromisoformat(args.start or state()["current_date"])
-    end = date.fromisoformat(args.to)
+    end = date.fromisoformat(args.to) if args.to else None          # None: until the Finals are decided
     try:
-        while day <= end:
+        season = live() if args.until_champion else None             # the season whose Finals end the run
+        if args.until_champion:
+            decided = champion_before(day.isoformat())
+            if decided:
+                say(f"STOPPED on {day.isoformat()}: the Finals were already decided on {decided[0]}: {decided[1]}")
+                return 1
+        while end is None or day <= end:
             TRADES_TODAY.clear()
             WADE_LONG.clear()
             advance_day(day.isoformat())
@@ -674,6 +729,13 @@ def main():
                 checkpoint(day.isoformat())
                 say(f"DONE: {miami_series_decided(day.isoformat())}")
                 return 0
+            champion = champion_decided(day.isoformat()) if args.until_champion else None
+            if champion:
+                checkpoint(day.isoformat())                  # the champion is known: pages, validation, suite, push
+                say(f"DONE: {champion}")
+                return 0
+            if season and live() != season:                 # never run into the next season unbounded
+                raise Stop(f"the live season changed from {season} to {live()} before its NBA Finals were decided")
             if day == end or (day.weekday() == 6 and day.isocalendar()[1] % 2 == 0):
                 checkpoint(day.isoformat())                  # every other Sunday: pages, validation, suite, push
             elif day.weekday() == 6:
