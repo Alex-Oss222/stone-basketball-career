@@ -36,8 +36,8 @@ Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · [Miam
 
 ```
 EAST
-  (1) Toronto Raptors          3
-  (8) Cleveland Cavaliers      2
+  (1) Toronto Raptors          4
+  (8) Cleveland Cavaliers      2   -> Toronto Raptors
   (4) Boston Celtics           4
   (5) Atlanta Hawks            1   -> Boston Celtics
         conference semifinal: winners meet
@@ -52,12 +52,12 @@ WEST
   (1) Phoenix Suns             4
   (8) Utah Jazz                1   -> Phoenix Suns
   (4) San Antonio Spurs        3
-  (5) Sacramento Kings         2
+  (5) Sacramento Kings         3
         conference semifinal: winners meet
   (3) Minnesota Timberwolves   4
   (6) Los Angeles Lakers       0   -> Minnesota Timberwolves
   (2) Dallas Mavericks         3
-  (7) New Orleans/Oklahoma City Hornets 2
+  (7) New Orleans/Oklahoma City Hornets 3
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
@@ -67,7 +67,7 @@ WEST
 
 ### East: (1) Toronto Raptors vs (8) Cleveland Cavaliers
 
-Home court: Toronto Raptors. Series Toronto Raptors 3, Cleveland Cavaliers 2.
+Home court: Toronto Raptors. Toronto Raptors wins 4-2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -76,8 +76,8 @@ Home court: Toronto Raptors. Series Toronto Raptors 3, Cleveland Cavaliers 2.
 | 3 | Sat Apr 29 | Cleveland Cavaliers | Toronto Raptors | Toronto Raptors 106, Cleveland Cavaliers 95 |
 | 4 | Mon May 1 | Cleveland Cavaliers | Toronto Raptors | Toronto Raptors 106, Cleveland Cavaliers 96 |
 | 5 | Wed May 3 | Toronto Raptors | Cleveland Cavaliers | Cleveland Cavaliers 99, Toronto Raptors 96 |
-| 6 | Fri May 5 | Cleveland Cavaliers | Toronto Raptors | if needed |
-| 7 | Sun May 7 | Toronto Raptors | Cleveland Cavaliers | if needed |
+| 6 | Fri May 5 | Cleveland Cavaliers | Toronto Raptors | Toronto Raptors 102, Cleveland Cavaliers 86 |
+| 7 | Sun May 7 | Toronto Raptors | Cleveland Cavaliers | not needed |
 
 ### East: (4) Boston Celtics vs (5) Atlanta Hawks
 
@@ -137,7 +137,7 @@ Home court: Phoenix Suns. Phoenix Suns wins 4-1.
 
 ### West: (4) San Antonio Spurs vs (5) Sacramento Kings
 
-Home court: San Antonio Spurs. Series San Antonio Spurs 3, Sacramento Kings 2.
+Home court: San Antonio Spurs. Series San Antonio Spurs 3, Sacramento Kings 3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -146,7 +146,7 @@ Home court: San Antonio Spurs. Series San Antonio Spurs 3, Sacramento Kings 2.
 | 3 | Sat Apr 29 | Sacramento Kings | San Antonio Spurs | San Antonio Spurs 81, Sacramento Kings 94 |
 | 4 | Mon May 1 | Sacramento Kings | San Antonio Spurs | San Antonio Spurs 106, Sacramento Kings 97 |
 | 5 | Wed May 3 | San Antonio Spurs | Sacramento Kings | Sacramento Kings 97, San Antonio Spurs 108 |
-| 6 | Fri May 5 | Sacramento Kings | San Antonio Spurs | if needed |
+| 6 | Fri May 5 | Sacramento Kings | San Antonio Spurs | San Antonio Spurs 99, Sacramento Kings 107 |
 | 7 | Sun May 7 | San Antonio Spurs | Sacramento Kings | if needed |
 
 ### West: (3) Minnesota Timberwolves vs (6) Los Angeles Lakers
@@ -165,7 +165,7 @@ Home court: Minnesota Timberwolves. Minnesota Timberwolves wins 4-0.
 
 ### West: (2) Dallas Mavericks vs (7) New Orleans/Oklahoma City Hornets
 
-Home court: Dallas Mavericks. Series Dallas Mavericks 3, New Orleans/Oklahoma City Hornets 2.
+Home court: Dallas Mavericks. Series Dallas Mavericks 3, New Orleans/Oklahoma City Hornets 3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -174,5 +174,21 @@ Home court: Dallas Mavericks. Series Dallas Mavericks 3, New Orleans/Oklahoma Ci
 | 3 | Sat Apr 29 | New Orleans/Oklahoma City Hornets | Dallas Mavericks | Dallas Mavericks 83, New Orleans/Oklahoma City Hornets 105 |
 | 4 | Mon May 1 | New Orleans/Oklahoma City Hornets | Dallas Mavericks | Dallas Mavericks 103, New Orleans/Oklahoma City Hornets 92 |
 | 5 | Wed May 3 | Dallas Mavericks | New Orleans/Oklahoma City Hornets | New Orleans/Oklahoma City Hornets 98, Dallas Mavericks 107 |
-| 6 | Fri May 5 | New Orleans/Oklahoma City Hornets | Dallas Mavericks | if needed |
+| 6 | Fri May 5 | New Orleans/Oklahoma City Hornets | Dallas Mavericks | Dallas Mavericks 84, New Orleans/Oklahoma City Hornets 85 |
 | 7 | Sun May 7 | Dallas Mavericks | New Orleans/Oklahoma City Hornets | if needed |
+
+## Conference semifinals
+
+### East: (1) Toronto Raptors vs (4) Boston Celtics
+
+Home court: Toronto Raptors. Series Toronto Raptors 0, Boston Celtics 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun May 7 | Toronto Raptors | Boston Celtics |  |
+| 2 | Tue May 9 | Toronto Raptors | Boston Celtics |  |
+| 3 | Thu May 11 | Boston Celtics | Toronto Raptors |  |
+| 4 | Sat May 13 | Boston Celtics | Toronto Raptors |  |
+| 5 | Mon May 15 | Toronto Raptors | Boston Celtics | if needed |
+| 6 | Wed May 17 | Boston Celtics | Toronto Raptors | if needed |
+| 7 | Fri May 19 | Toronto Raptors | Boston Celtics | if needed |
