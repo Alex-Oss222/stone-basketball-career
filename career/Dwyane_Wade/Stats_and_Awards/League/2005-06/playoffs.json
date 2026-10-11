@@ -863,7 +863,7 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 2,
+    "Toronto Raptors": 3,
     "Boston Celtics": 1
    },
    "winner": null,
@@ -904,7 +904,9 @@
      "home": "Boston Celtics",
      "away": "Toronto Raptors",
      "conditional": false,
-     "event_id": "2006-05-13-toronto-raptors-at-boston-celtics"
+     "event_id": "2006-05-13-toronto-raptors-at-boston-celtics",
+     "result": "Toronto Raptors 121, Boston Celtics 109",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 5,
@@ -1030,7 +1032,7 @@
    "home_court": "Phoenix Suns",
    "wins": {
     "Phoenix Suns": 1,
-    "San Antonio Spurs": 1
+    "San Antonio Spurs": 2
    },
    "winner": null,
    "games": [
@@ -1060,7 +1062,9 @@
      "home": "San Antonio Spurs",
      "away": "Phoenix Suns",
      "conditional": false,
-     "event_id": "2006-05-13-phoenix-suns-at-san-antonio-spurs"
+     "event_id": "2006-05-13-phoenix-suns-at-san-antonio-spurs",
+     "result": "Phoenix Suns 81, San Antonio Spurs 96",
+     "winner": "San Antonio Spurs"
     },
     {
      "game": 4,
@@ -1111,7 +1115,7 @@
    "home_court": "Dallas Mavericks",
    "wins": {
     "Minnesota Timberwolves": 1,
-    "Dallas Mavericks": 1
+    "Dallas Mavericks": 2
    },
    "winner": null,
    "games": [
@@ -1141,7 +1145,9 @@
      "home": "Minnesota Timberwolves",
      "away": "Dallas Mavericks",
      "conditional": false,
-     "event_id": "2006-05-13-dallas-mavericks-at-minnesota-timberwolves"
+     "event_id": "2006-05-13-dallas-mavericks-at-minnesota-timberwolves",
+     "result": "Dallas Mavericks 98, Minnesota Timberwolves 95",
+     "winner": "Dallas Mavericks"
     },
     {
      "game": 4,
