@@ -1,0 +1,11 @@
+{
+ "event_id": "2006-draft-lottery-seeding-tie-gsw-mem",
+ "date": "2006-05-23",
+ "question": "2006 draft order (lottery-seeding): which of Golden State Warriors, Memphis Grizzlies (tied at 0.427) goes first?",
+ "decider": "NBA draft lottery (engine draw)",
+ "options": {
+  "Golden State Warriors": 0.5,
+  "Memphis Grizzlies": 0.5
+ },
+ "basis": "Equal simulated records; ordered by a drawing (runtime/lottery.py)."
+}

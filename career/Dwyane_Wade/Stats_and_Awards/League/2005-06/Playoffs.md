@@ -239,11 +239,11 @@ Home court: Dallas Mavericks. Dallas Mavericks wins 4-1.
 
 ### East: (1) Toronto Raptors vs (3) Miami Heat
 
-Home court: Toronto Raptors. Series Toronto Raptors 0, Miami Heat 0.
+Home court: Toronto Raptors. Series Toronto Raptors 1, Miami Heat 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Tue May 23 | Toronto Raptors | Miami Heat |  |
+| 1 | Tue May 23 | Toronto Raptors | Miami Heat | Miami Heat 99, Toronto Raptors 127 |
 | 2 | Thu May 25 | Toronto Raptors | Miami Heat |  |
 | 3 | Sat May 27 | Miami Heat | Toronto Raptors |  |
 | 4 | Mon May 29 | Miami Heat | Toronto Raptors |  |

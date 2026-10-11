@@ -1,0 +1,12 @@
+{
+ "date": "2006-05-23",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2006-draft-playoff-clubs-tie-atl-sac",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.5,
+  "Sacramento Kings": 0.5
+ },
+ "outcome": "Atlanta Hawks",
+ "question": "2006 draft order (playoff-clubs): which of Atlanta Hawks, Sacramento Kings (tied at 0.622) goes first?"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2006-05-23",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2006-draft-playoff-clubs-tie-bos-sas",
+ "kind": "decision",
+ "options": {
+  "Boston Celtics": 0.5,
+  "San Antonio Spurs": 0.5
+ },
+ "outcome": "Boston Celtics",
+ "question": "2006 draft order (playoff-clubs): which of Boston Celtics, San Antonio Spurs (tied at 0.634) goes first?"
+}

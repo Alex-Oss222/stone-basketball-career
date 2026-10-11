@@ -1,0 +1,23 @@
+{
+ "event_id": "2006-draft-lottery-pick-1",
+ "date": "2006-05-23",
+ "question": "2006 NBA draft lottery: which club wins pick No. 1?",
+ "decider": "NBA draft lottery (engine draw)",
+ "options": {
+  "Washington Wizards": 0.25,
+  "Charlotte Bobcats": 0.178,
+  "Portland Trail Blazers": 0.177,
+  "New York Knicks": 0.119,
+  "Denver Nuggets": 0.088,
+  "Houston Rockets": 0.063,
+  "Milwaukee Bucks": 0.043,
+  "Chicago Bulls": 0.028,
+  "Golden State Warriors": 0.014,
+  "Memphis Grizzlies": 0.014,
+  "Seattle SuperSonics": 0.008,
+  "Indiana Pacers": 0.007,
+  "Philadelphia 76ers": 0.006,
+  "Los Angeles Clippers": 0.005
+ },
+ "basis": "Lottery combinations by simulated record (library/2006/league/nba_2006_lottery_rules.json); clubs already drawn or ineligible for this pick removed."
+}

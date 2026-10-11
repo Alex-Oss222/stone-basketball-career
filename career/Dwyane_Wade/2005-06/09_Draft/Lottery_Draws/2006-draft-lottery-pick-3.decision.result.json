@@ -1,0 +1,22 @@
+{
+ "date": "2006-05-23",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2006-draft-lottery-pick-3",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.048951,
+  "Denver Nuggets": 0.153846,
+  "Golden State Warriors": 0.024476,
+  "Houston Rockets": 0.11014,
+  "Indiana Pacers": 0.012238,
+  "Los Angeles Clippers": 0.008741,
+  "Memphis Grizzlies": 0.024476,
+  "Milwaukee Bucks": 0.075175,
+  "New York Knicks": 0.208042,
+  "Philadelphia 76ers": 0.01049,
+  "Portland Trail Blazers": 0.309439,
+  "Seattle SuperSonics": 0.013986
+ },
+ "outcome": "Chicago Bulls",
+ "question": "2006 NBA draft lottery: which club wins pick No. 3?"
+}

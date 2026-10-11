@@ -1,0 +1,11 @@
+{
+ "event_id": "2006-draft-playoff-clubs-tie-dal-pho",
+ "date": "2006-05-23",
+ "question": "2006 draft order (playoff-clubs): which of Dallas Mavericks, Phoenix Suns (tied at 0.646) goes first?",
+ "decider": "NBA draft lottery (engine draw)",
+ "options": {
+  "Dallas Mavericks": 0.5,
+  "Phoenix Suns": 0.5
+ },
+ "basis": "Equal simulated records; ordered by a drawing (runtime/lottery.py)."
+}

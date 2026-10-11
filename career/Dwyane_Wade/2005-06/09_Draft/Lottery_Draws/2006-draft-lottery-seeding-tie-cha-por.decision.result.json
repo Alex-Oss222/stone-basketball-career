@@ -1,0 +1,12 @@
+{
+ "date": "2006-05-23",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2006-draft-lottery-seeding-tie-cha-por",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.5,
+  "Portland Trail Blazers": 0.5
+ },
+ "outcome": "Charlotte Bobcats",
+ "question": "2006 draft order (lottery-seeding): which of Charlotte Bobcats, Portland Trail Blazers (tied at 0.293) goes first?"
+}

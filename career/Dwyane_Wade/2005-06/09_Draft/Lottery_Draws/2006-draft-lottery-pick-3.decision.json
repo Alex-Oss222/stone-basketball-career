@@ -1,0 +1,21 @@
+{
+ "event_id": "2006-draft-lottery-pick-3",
+ "date": "2006-05-23",
+ "question": "2006 NBA draft lottery: which club wins pick No. 3?",
+ "decider": "NBA draft lottery (engine draw)",
+ "options": {
+  "Portland Trail Blazers": 0.309439,
+  "New York Knicks": 0.208042,
+  "Denver Nuggets": 0.153846,
+  "Houston Rockets": 0.11014,
+  "Milwaukee Bucks": 0.075175,
+  "Chicago Bulls": 0.048951,
+  "Golden State Warriors": 0.024476,
+  "Memphis Grizzlies": 0.024476,
+  "Seattle SuperSonics": 0.013986,
+  "Indiana Pacers": 0.012238,
+  "Philadelphia 76ers": 0.01049,
+  "Los Angeles Clippers": 0.008741
+ },
+ "basis": "Lottery combinations by simulated record (library/2006/league/nba_2006_lottery_rules.json); clubs already drawn or ineligible for this pick removed."
+}

@@ -1,0 +1,23 @@
+{
+ "date": "2006-05-23",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2006-draft-lottery-pick-2",
+ "kind": "decision",
+ "options": {
+  "Charlotte Bobcats": 0.237333,
+  "Chicago Bulls": 0.037333,
+  "Denver Nuggets": 0.117333,
+  "Golden State Warriors": 0.018667,
+  "Houston Rockets": 0.084,
+  "Indiana Pacers": 0.009333,
+  "Los Angeles Clippers": 0.006667,
+  "Memphis Grizzlies": 0.018667,
+  "Milwaukee Bucks": 0.057333,
+  "New York Knicks": 0.158667,
+  "Philadelphia 76ers": 0.008,
+  "Portland Trail Blazers": 0.236,
+  "Seattle SuperSonics": 0.010667
+ },
+ "outcome": "Charlotte Bobcats",
+ "question": "2006 NBA draft lottery: which club wins pick No. 2?"
+}

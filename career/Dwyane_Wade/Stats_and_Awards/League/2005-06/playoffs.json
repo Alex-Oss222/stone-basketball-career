@@ -1223,7 +1223,7 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 0,
+    "Toronto Raptors": 1,
     "Miami Heat": 0
    },
    "winner": null,
@@ -1234,7 +1234,9 @@
      "home": "Toronto Raptors",
      "away": "Miami Heat",
      "conditional": false,
-     "event_id": "2006-05-23-miami-heat-at-toronto-raptors"
+     "event_id": "2006-05-23-miami-heat-at-toronto-raptors",
+     "result": "Miami Heat 99, Toronto Raptors 127",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 2,

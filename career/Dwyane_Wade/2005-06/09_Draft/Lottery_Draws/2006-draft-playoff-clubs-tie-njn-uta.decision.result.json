@@ -1,0 +1,12 @@
+{
+ "date": "2006-05-23",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2006-draft-playoff-clubs-tie-njn-uta",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.5,
+  "Utah Jazz": 0.5
+ },
+ "outcome": "New Jersey Nets",
+ "question": "2006 draft order (playoff-clubs): which of New Jersey Nets, Utah Jazz (tied at 0.500) goes first?"
+}
