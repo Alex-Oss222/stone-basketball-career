@@ -2111,13 +2111,14 @@
    }
   },
   {
-   "record_id": "jonesju01-2003-09-30-released-2006-01-07",
+   "record_id": "jonesju01-2005-10-04-released-2006-01-07",
    "recorded_on": "2006-01-07",
    "player_id": "jonesju01",
    "player": "Jumaine Jones",
-   "contract_id": "jonesju01-2003-09-30",
+   "contract_id": "jonesju01-2005-10-04",
    "event": "released",
    "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/guarantee_review.json",
+   "correction": "Filed on 2006-01-07 under his voided 2003-09-30 camp contract (roster_moves.waive took his oldest signing); the release closes the 2005-10-04 camp contract, so its record and contract ids name that agreement (audit, career date 2006-06-20).",
    "contract": {
     "player": "Jumaine Jones",
     "bbr_id": "jonesju01",
@@ -2145,7 +2146,7 @@
     "cap_amount": {
      "2005-06": 354902
     },
-    "contract_id": "jonesju01-2003-09-30",
+    "contract_id": "jonesju01-2005-10-04",
     "ended_on": "2006-01-07"
    }
   },

@@ -27,7 +27,7 @@ import json
 from pathlib import Path
 
 from .camp import playable
-from .contract_archive import archive_contract
+from .contract_archive import archive_contract, signed_record
 from .contracts import counted_amount
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -225,8 +225,9 @@ def waive(writer, name, day, reason, note_rel):
             names.remove(name)
     depth.setdefault("departed", []).append({"name": name, "date": day, "status": "waived"})
     depth["as_of"] = roster["as_of"] = day
-    base = next((r for r in (writer.load("career/Dwyane_Wade/Contracts/contract_records.json")["records"])
-                 if r["player"] == name and r["event"] == "signed"), None)
+    # the release closes the agreement this sheet entry carries (its signing date), not the player's oldest signing
+    base = signed_record(writer.load("career/Dwyane_Wade/Contracts/contract_records.json")["records"], name,
+                         entry.get("signed_date"))
     if base:
         archive_contract(writer, {**entry, "contract_id": base["contract_id"], "ended_on": day}, day, event="released",
                          source=str(GUARANTEES), player_id=base["player_id"])

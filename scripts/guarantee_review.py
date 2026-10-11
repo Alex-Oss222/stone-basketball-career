@@ -21,7 +21,7 @@ sys.path.insert(0, str(ROOT))
 
 from runtime import roster_moves, signing                             # noqa: E402
 from runtime.camp import GUARANTEE_DATE                               # noqa: E402
-from runtime.contract_archive import archive_contract                 # noqa: E402
+from runtime.contract_archive import archive_contract, signed_record  # noqa: E402
 from runtime.gm import FrontOffice                                    # noqa: E402
 from runtime.season_market import for_date as Market                  # noqa: E402
 from scripts.refresh_career_views import refresh_career_views         # noqa: E402
@@ -65,7 +65,7 @@ def review(root, day):
             entry["notes"] = entry.get("notes", "") + f" Guaranteed {GUARANTEE_DATE}: on the roster on the guarantee date."
             reg = next(p for p in roster["players"] if p["name"] == entry["player"])
             reg["control"] = reg["control"].rstrip(".") + f"; guaranteed {GUARANTEE_DATE} (guarantee_review.json)."
-            base = next((r for r in archive["records"] if r["player"] == entry["player"] and r["event"] == "signed"), None)
+            base = signed_record(archive["records"], entry["player"], entry.get("signed_date"))
             if base:
                 archive_contract(writer, {**entry, "contract_id": base["contract_id"]}, GUARANTEE_DATE, event="amended",
                                  source=str(roster_moves.GUARANTEES), player_id=base["player_id"])

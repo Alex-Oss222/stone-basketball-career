@@ -35,6 +35,18 @@ def _player_id(writer, entry, player_id=None):
     return identity
 
 
+def signed_record(records, name, signed_date=None):
+    """The archived signing of the agreement a sheet entry carries: the player's `signed` record with the entry's signing
+    date, else his latest signing. A player Miami signed twice (a voided camp contract, then a new one) has two, and a
+    release or amendment must name the agreement it changes, never the oldest."""
+    signed = [r for r in records if r["player"] == name and r["event"] == "signed"]
+    same = [r for r in signed if signed_date and (r.get("contract") or {}).get("signed_date") == signed_date]
+    if same:
+        return same[-1]
+    return max(signed, key=lambda r: ((r.get("contract") or {}).get("signed_date") or "", r.get("recorded_on") or ""),
+               default=None)
+
+
 def archive_contract(writer, entry, day, *, event, source, player_id=None,
                      signing_team=None, assignment=None, executed_terms=None):
     """Append a dated deep snapshot, retaining the original contract on a trade.
