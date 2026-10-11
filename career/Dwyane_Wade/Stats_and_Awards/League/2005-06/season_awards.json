@@ -198,6 +198,109 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2005-06-mip",
+   "award": "mip",
+   "name": "Most Improved Player",
+   "announced_on": "2006-05-01",
+   "electorate": 124,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.1,
+    0.4
+   ],
+   "evidence_through": "2006-04-19",
+   "winners": [
+    "Kevin Martin"
+   ],
+   "tally": [
+    {
+     "player": "Kevin Martin",
+     "team": "Charlotte Bobcats",
+     "games": 69,
+     "mpg": 33.4,
+     "pts": 16.0,
+     "reb": 4.8,
+     "ast": 1.6,
+     "stl": 1.1,
+     "blk": 0.2,
+     "game_score": 11.79,
+     "prior_game_score": 1.59,
+     "points": 560,
+     "first_place": 94,
+     "votes_by_place": [
+      94,
+      30,
+      0
+     ]
+    },
+    {
+     "player": "Boris Diaw",
+     "team": "Atlanta Hawks",
+     "games": 81,
+     "mpg": 36.8,
+     "pts": 16.7,
+     "reb": 6.3,
+     "ast": 5.0,
+     "stl": 1.0,
+     "blk": 1.1,
+     "game_score": 14.41,
+     "prior_game_score": 4.97,
+     "points": 432,
+     "first_place": 30,
+     "votes_by_place": [
+      30,
+      94,
+      0
+     ]
+    },
+    {
+     "player": "Smush Parker",
+     "team": "Indiana Pacers",
+     "games": 82,
+     "mpg": 36.8,
+     "pts": 13.5,
+     "reb": 4.3,
+     "ast": 3.6,
+     "stl": 1.9,
+     "blk": 0.3,
+     "game_score": 10.38,
+     "prior_game_score": 0.93,
+     "points": 103,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      103
+     ]
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 82,
+     "mpg": 37.5,
+     "pts": 27.6,
+     "reb": 5.9,
+     "ast": 4.2,
+     "stl": 1.8,
+     "blk": 1.2,
+     "game_score": 24.39,
+     "prior_game_score": 19.38,
+     "points": 21,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      21
+     ]
+    }
+   ]
   }
  ]
 }

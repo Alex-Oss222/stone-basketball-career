@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of April 30, 2006: 74 weekly and monthly award decision(s) closed; 2 of 10 season awards decided.
+As of May 1, 2006: 74 weekly and monthly award decision(s) closed; 3 of 10 season awards decided.
 
 ## Individual awards
 
@@ -52,13 +52,13 @@ Announced April 28, 2006 · 123 media · ballot 5-3-1 · [tally](Season_Awards.m
 
 ### Most Improved Player
 
-Vote closes May 1, 2006 · 124 media · ballot 5-3-1.
+Announced May 1, 2006 · 124 media · ballot 5-3-1 · [tally](Season_Awards.md#most-improved-player).
 
 | Rank slot | Player | Team | 1st votes | Points | Status |
 | ---: | --- | --- | ---: | ---: | --- |
-| 1 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 1, 2006) |
-| 2 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 1, 2006) |
-| 3 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 1, 2006) |
+| 1 | Kevin Martin | Charlotte Bobcats | 94 | 560 | **WINNER** |
+| 2 | Boris Diaw | Atlanta Hawks | 30 | 432 | Runner-up |
+| 3 | Smush Parker | Indiana Pacers | 0 | 103 | Third |
 
 ### Coach of the Year
 

@@ -2,9 +2,9 @@
 
 # Contract | Uroš Slokar
 
-Known through: 2006-04-30. [Open interactive contract](slokaur01.html#contract) · [Contract history](slokaur01.html#contract-history)
+Known through: 2006-05-01. [Open interactive contract](slokaur01.html#contract) · [Contract history](slokaur01.html#contract-history)
 
-Uroš Slokar: unsigned draft rights. Evidence cutoff: 2006-04-30.
+Uroš Slokar: unsigned draft rights. Evidence cutoff: 2006-05-01.
 
 ## Current contract
 

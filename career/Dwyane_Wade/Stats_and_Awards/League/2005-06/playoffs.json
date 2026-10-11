@@ -137,7 +137,7 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 2,
+    "Toronto Raptors": 3,
     "Cleveland Cavaliers": 1
    },
    "winner": null,
@@ -178,7 +178,9 @@
      "home": "Cleveland Cavaliers",
      "away": "Toronto Raptors",
      "conditional": false,
-     "event_id": "2006-05-01-toronto-raptors-at-cleveland-cavaliers"
+     "event_id": "2006-05-01-toronto-raptors-at-cleveland-cavaliers",
+     "result": "Toronto Raptors 106, Cleveland Cavaliers 96",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 5,
@@ -306,7 +308,7 @@
    "home_court": "Miami Heat",
    "wins": {
     "Miami Heat": 3,
-    "Orlando Magic": 0
+    "Orlando Magic": 1
    },
    "winner": null,
    "games": [
@@ -346,7 +348,9 @@
      "home": "Orlando Magic",
      "away": "Miami Heat",
      "conditional": false,
-     "event_id": "2006-05-01-miami-heat-at-orlando-magic"
+     "event_id": "2006-05-01-miami-heat-at-orlando-magic",
+     "result": "Miami Heat 102, Orlando Magic 105",
+     "winner": "Orlando Magic"
     },
     {
      "game": 5,
@@ -558,7 +562,7 @@
    ],
    "home_court": "San Antonio Spurs",
    "wins": {
-    "San Antonio Spurs": 1,
+    "San Antonio Spurs": 2,
     "Sacramento Kings": 2
    },
    "winner": null,
@@ -599,7 +603,9 @@
      "home": "Sacramento Kings",
      "away": "San Antonio Spurs",
      "conditional": false,
-     "event_id": "2006-05-01-san-antonio-spurs-at-sacramento-kings"
+     "event_id": "2006-05-01-san-antonio-spurs-at-sacramento-kings",
+     "result": "San Antonio Spurs 106, Sacramento Kings 97",
+     "winner": "San Antonio Spurs"
     },
     {
      "game": 5,
@@ -730,7 +736,7 @@
    ],
    "home_court": "Dallas Mavericks",
    "wins": {
-    "Dallas Mavericks": 1,
+    "Dallas Mavericks": 2,
     "New Orleans/Oklahoma City Hornets": 2
    },
    "winner": null,
@@ -771,7 +777,9 @@
      "home": "New Orleans/Oklahoma City Hornets",
      "away": "Dallas Mavericks",
      "conditional": false,
-     "event_id": "2006-05-01-dallas-mavericks-at-new-orleans-oklahoma-city-hornets"
+     "event_id": "2006-05-01-dallas-mavericks-at-new-orleans-oklahoma-city-hornets",
+     "result": "Dallas Mavericks 103, New Orleans/Oklahoma City Hornets 92",
+     "winner": "Dallas Mavericks"
     },
     {
      "game": 5,

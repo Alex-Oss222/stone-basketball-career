@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-04-30**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-05-01**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -278,7 +278,7 @@ Card date: **2006-04-30**. 653 registry players, one Markdown card and one inter
 | [Aaron McKie](mckieaa01.md) | Philadelphia 76ers | 33 | sourced | [open](mckieaa01.html) |
 | [Al Harrington](harrial01.md) | Indiana Pacers | 26 | sourced | [open](harrial01.html) |
 | [Alan Anderson](anderal01.md) | Los Angeles Lakers | 23 | silhouette | [open](anderal01.html) |
-| [Amir Johnson](johnsam01.md) | Free agent | 18 | silhouette | [open](johnsam01.html) |
+| [Amir Johnson](johnsam01.md) | Free agent | 19 | silhouette | [open](johnsam01.html) |
 | [Andrei Kirilenko](kirilan01.md) | Utah Jazz | 25 | sourced | [open](kirilan01.html) |
 | [Andrés Nocioni](andrsnocioni.md) | San Antonio Spurs | 26 | silhouette | [open](andrsnocioni.html) |
 | [Ansu Sesay](sesayan01.md) | Free agent | 29 | silhouette | [open](sesayan01.html) |
@@ -428,7 +428,7 @@ Card date: **2006-04-30**. 653 registry players, one Markdown card and one inter
 | [Anthony Miller](anthonymiller.md) | Free agent | 34 | silhouette | [open](anthonymiller.html) |
 | [Antoine Walker](walkean02.md) | Dallas Mavericks | 29 | sourced | [open](walkean02.html) |
 | [Antonio McDyess](mcdyean01.md) | New Orleans/Oklahoma City Hornets | 31 | silhouette | [open](mcdyean01.html) |
-| [Austin Croshere](croshau01.md) | New York Knicks | 30 | sourced | [open](croshau01.html) |
+| [Austin Croshere](croshau01.md) | New York Knicks | 31 | sourced | [open](croshau01.html) |
 | [Boris Diaw](diawbo01.md) | Atlanta Hawks | 24 | sourced | [open](diawbo01.html) |
 | [Brandon Bass](bassbr01.md) | Milwaukee Bucks | 21 | silhouette | [open](bassbr01.html) |
 | [Brandon Hunter](huntebr01.md) | Free agent | 25 | sourced | [open](huntebr01.html) |

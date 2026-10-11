@@ -2,9 +2,9 @@
 
 # Contract | DeShawn Stevenson
 
-Known through: 2006-04-30. [Open interactive contract](stevede01.html#contract) · [Contract history](stevede01.html#contract-history)
+Known through: 2006-05-01. [Open interactive contract](stevede01.html#contract) · [Contract history](stevede01.html#contract-history)
 
-DeShawn Stevenson: under contract. Evidence cutoff: 2006-04-30.
+DeShawn Stevenson: under contract. Evidence cutoff: 2006-05-01.
 
 ## Current contract
 
