@@ -949,7 +949,7 @@
    "home_court": "Miami Heat",
    "wins": {
     "Miami Heat": 3,
-    "New Jersey Nets": 0
+    "New Jersey Nets": 1
    },
    "winner": null,
    "games": [
@@ -989,7 +989,9 @@
      "home": "New Jersey Nets",
      "away": "Miami Heat",
      "conditional": false,
-     "event_id": "2006-05-14-miami-heat-at-new-jersey-nets"
+     "event_id": "2006-05-14-miami-heat-at-new-jersey-nets",
+     "result": "Miami Heat 111, New Jersey Nets 115",
+     "winner": "New Jersey Nets"
     },
     {
      "game": 5,
