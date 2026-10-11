@@ -409,9 +409,9 @@
    "home_court": "Detroit Pistons",
    "wins": {
     "Detroit Pistons": 3,
-    "New Jersey Nets": 3
+    "New Jersey Nets": 4
    },
-   "winner": null,
+   "winner": "New Jersey Nets",
    "games": [
     {
      "game": 1,
@@ -479,9 +479,12 @@
      "home": "Detroit Pistons",
      "away": "New Jersey Nets",
      "conditional": true,
-     "event_id": "2006-05-06-new-jersey-nets-at-detroit-pistons"
+     "event_id": "2006-05-06-new-jersey-nets-at-detroit-pistons",
+     "result": "New Jersey Nets 110, Detroit Pistons 96",
+     "winner": "New Jersey Nets"
     }
-   ]
+   ],
+   "clinched_on": "2006-05-06"
   },
   {
    "id": "west-1-8",
@@ -914,6 +917,83 @@
      "away": "Boston Celtics",
      "conditional": true,
      "event_id": "2006-05-19-boston-celtics-at-toronto-raptors"
+    }
+   ]
+  },
+  {
+   "id": "east-semi-b",
+   "round": "conference_semifinals",
+   "conference": "East",
+   "seeds": [
+    3,
+    7
+   ],
+   "clubs": [
+    "Miami Heat",
+    "New Jersey Nets"
+   ],
+   "home_court": "Miami Heat",
+   "wins": {
+    "Miami Heat": 0,
+    "New Jersey Nets": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2006-05-08",
+     "home": "Miami Heat",
+     "away": "New Jersey Nets",
+     "conditional": false,
+     "event_id": "2006-05-08-new-jersey-nets-at-miami-heat"
+    },
+    {
+     "game": 2,
+     "date": "2006-05-10",
+     "home": "Miami Heat",
+     "away": "New Jersey Nets",
+     "conditional": false,
+     "event_id": "2006-05-10-new-jersey-nets-at-miami-heat"
+    },
+    {
+     "game": 3,
+     "date": "2006-05-12",
+     "home": "New Jersey Nets",
+     "away": "Miami Heat",
+     "conditional": false,
+     "event_id": "2006-05-12-miami-heat-at-new-jersey-nets"
+    },
+    {
+     "game": 4,
+     "date": "2006-05-14",
+     "home": "New Jersey Nets",
+     "away": "Miami Heat",
+     "conditional": false,
+     "event_id": "2006-05-14-miami-heat-at-new-jersey-nets"
+    },
+    {
+     "game": 5,
+     "date": "2006-05-16",
+     "home": "Miami Heat",
+     "away": "New Jersey Nets",
+     "conditional": true,
+     "event_id": "2006-05-16-new-jersey-nets-at-miami-heat"
+    },
+    {
+     "game": 6,
+     "date": "2006-05-18",
+     "home": "New Jersey Nets",
+     "away": "Miami Heat",
+     "conditional": true,
+     "event_id": "2006-05-18-miami-heat-at-new-jersey-nets"
+    },
+    {
+     "game": 7,
+     "date": "2006-05-20",
+     "home": "Miami Heat",
+     "away": "New Jersey Nets",
+     "conditional": true,
+     "event_id": "2006-05-20-new-jersey-nets-at-miami-heat"
     }
    ]
   }

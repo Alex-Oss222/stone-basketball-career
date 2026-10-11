@@ -44,7 +44,7 @@ EAST
   (3) Miami Heat               4
   (6) Orlando Magic            1   -> Miami Heat
   (2) Detroit Pistons          3
-  (7) New Jersey Nets          3
+  (7) New Jersey Nets          4   -> New Jersey Nets
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
@@ -109,7 +109,7 @@ Home court: Miami Heat. Miami Heat wins 4-1.
 
 ### East: (2) Detroit Pistons vs (7) New Jersey Nets
 
-Home court: Detroit Pistons. Series Detroit Pistons 3, New Jersey Nets 3.
+Home court: Detroit Pistons. New Jersey Nets wins 4-3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Home court: Detroit Pistons. Series Detroit Pistons 3, New Jersey Nets 3.
 | 4 | Sun Apr 30 | New Jersey Nets | Detroit Pistons | Detroit Pistons 84, New Jersey Nets 73 |
 | 5 | Tue May 2 | Detroit Pistons | New Jersey Nets | New Jersey Nets 103, Detroit Pistons 76 |
 | 6 | Thu May 4 | New Jersey Nets | Detroit Pistons | Detroit Pistons 94, New Jersey Nets 88 |
-| 7 | Sat May 6 | Detroit Pistons | New Jersey Nets | if needed |
+| 7 | Sat May 6 | Detroit Pistons | New Jersey Nets | New Jersey Nets 110, Detroit Pistons 96 |
 
 ### West: (1) Phoenix Suns vs (8) Utah Jazz
 
@@ -192,3 +192,17 @@ Home court: Toronto Raptors. Series Toronto Raptors 0, Boston Celtics 0.
 | 5 | Mon May 15 | Toronto Raptors | Boston Celtics | if needed |
 | 6 | Wed May 17 | Boston Celtics | Toronto Raptors | if needed |
 | 7 | Fri May 19 | Toronto Raptors | Boston Celtics | if needed |
+
+### East: (3) Miami Heat vs (7) New Jersey Nets
+
+Home court: Miami Heat. Series Miami Heat 0, New Jersey Nets 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Mon May 8 | Miami Heat | New Jersey Nets |  |
+| 2 | Wed May 10 | Miami Heat | New Jersey Nets |  |
+| 3 | Fri May 12 | New Jersey Nets | Miami Heat |  |
+| 4 | Sun May 14 | New Jersey Nets | Miami Heat |  |
+| 5 | Tue May 16 | Miami Heat | New Jersey Nets | if needed |
+| 6 | Thu May 18 | New Jersey Nets | Miami Heat | if needed |
+| 7 | Sat May 20 | Miami Heat | New Jersey Nets | if needed |
