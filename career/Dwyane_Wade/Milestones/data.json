@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2006-05-10",
+  "as_of": "2006-05-11",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 22,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2006-05-08-new-jersey-nets-at-miami-heat",
+  "current_event": "2006-05-10-new-jersey-nets-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2006-05-10"
+              "2006-05-11"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2006-05-08-new-jersey-nets-at-miami-heat"
+              "2006-05-10-new-jersey-nets-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2006-05-10",
+              "2006-05-11",
               "Current checkpoint",
-              "2006-05-08-new-jersey-nets-at-miami-heat",
+              "2006-05-10-new-jersey-nets-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -824,6 +824,10 @@
           "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -832,7 +836,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-10"
+          "value": "2006-05-11"
         },
         {
           "label": "Team",
@@ -1446,6 +1450,10 @@
           "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1454,7 +1462,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-10"
+          "value": "2006-05-11"
         },
         {
           "label": "Team",
@@ -2105,6 +2113,10 @@
           "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2113,7 +2125,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-10"
+          "value": "2006-05-11"
         },
         {
           "label": "Team",
@@ -2797,6 +2809,10 @@
           "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2805,7 +2821,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-10"
+          "value": "2006-05-11"
         },
         {
           "label": "Team",
@@ -3394,6 +3410,10 @@
           "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3402,7 +3422,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-10"
+          "value": "2006-05-11"
         },
         {
           "label": "Team",
@@ -4034,6 +4054,10 @@
           "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4042,7 +4066,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-10"
+          "value": "2006-05-11"
         },
         {
           "label": "Team",
@@ -4631,6 +4655,10 @@
           "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4639,7 +4667,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-10"
+          "value": "2006-05-11"
         },
         {
           "label": "Team",
@@ -5304,6 +5332,10 @@
           "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -5312,7 +5344,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-10"
+          "value": "2006-05-11"
         },
         {
           "label": "Team",
@@ -5329,7 +5361,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "96 closed game records in 2005-06 through 2006-05-10. Competitions remain separate.",
+      "summary": "97 closed game records in 2005-06 through 2006-05-11. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -5356,12 +5388,12 @@
             ],
             [
               "playoff",
-              6,
-              33.150377778,
-              22.0,
-              5.333333333,
-              4.333333333,
-              2.333333333,
+              7,
+              34.508011905,
+              22.428571429,
+              5.714285714,
+              4.285714286,
+              2.428571429,
               "Complete"
             ],
             [
@@ -5409,12 +5441,12 @@
             ],
             [
               "playoff",
-              50,
-              80,
-              0.625,
+              58,
+              93,
+              0.623655914,
               5,
-              10,
-              0.5
+              12,
+              0.416666667
             ],
             [
               "preseason",
@@ -6406,6 +6438,16 @@
                 "label": "Closed game",
                 "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md"
               }
+            ],
+            [
+              "2006-05-10",
+              "playoff",
+              "New Jersey Nets",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md"
+              }
             ]
           ]
         },
@@ -6915,6 +6957,10 @@
           "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -6923,7 +6969,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-10"
+          "value": "2006-05-11"
         },
         {
           "label": "Team",

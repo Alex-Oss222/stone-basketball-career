@@ -181,13 +181,13 @@ Home court: Dallas Mavericks. Dallas Mavericks wins 4-3.
 
 ### East: (1) Toronto Raptors vs (4) Boston Celtics
 
-Home court: Toronto Raptors. Series Toronto Raptors 1, Boston Celtics 1.
+Home court: Toronto Raptors. Series Toronto Raptors 2, Boston Celtics 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun May 7 | Toronto Raptors | Boston Celtics | Boston Celtics 109, Toronto Raptors 104 |
 | 2 | Tue May 9 | Toronto Raptors | Boston Celtics | Boston Celtics 86, Toronto Raptors 87 |
-| 3 | Thu May 11 | Boston Celtics | Toronto Raptors |  |
+| 3 | Thu May 11 | Boston Celtics | Toronto Raptors | Toronto Raptors 108, Boston Celtics 99 |
 | 4 | Sat May 13 | Boston Celtics | Toronto Raptors |  |
 | 5 | Mon May 15 | Toronto Raptors | Boston Celtics | if needed |
 | 6 | Wed May 17 | Boston Celtics | Toronto Raptors | if needed |
@@ -209,12 +209,12 @@ Home court: Miami Heat. Series Miami Heat 2, New Jersey Nets 0.
 
 ### West: (1) Phoenix Suns vs (4) San Antonio Spurs
 
-Home court: Phoenix Suns. Series Phoenix Suns 1, San Antonio Spurs 0.
+Home court: Phoenix Suns. Series Phoenix Suns 1, San Antonio Spurs 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Tue May 9 | Phoenix Suns | San Antonio Spurs | San Antonio Spurs 102, Phoenix Suns 113 |
-| 2 | Thu May 11 | Phoenix Suns | San Antonio Spurs |  |
+| 2 | Thu May 11 | Phoenix Suns | San Antonio Spurs | San Antonio Spurs 115, Phoenix Suns 109 |
 | 3 | Sat May 13 | San Antonio Spurs | Phoenix Suns |  |
 | 4 | Mon May 15 | San Antonio Spurs | Phoenix Suns |  |
 | 5 | Wed May 17 | Phoenix Suns | San Antonio Spurs | if needed |
@@ -223,12 +223,12 @@ Home court: Phoenix Suns. Series Phoenix Suns 1, San Antonio Spurs 0.
 
 ### West: (3) Minnesota Timberwolves vs (2) Dallas Mavericks
 
-Home court: Dallas Mavericks. Series Minnesota Timberwolves 0, Dallas Mavericks 1.
+Home court: Dallas Mavericks. Series Minnesota Timberwolves 1, Dallas Mavericks 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Tue May 9 | Dallas Mavericks | Minnesota Timberwolves | Minnesota Timberwolves 106, Dallas Mavericks 108 |
-| 2 | Thu May 11 | Dallas Mavericks | Minnesota Timberwolves |  |
+| 2 | Thu May 11 | Dallas Mavericks | Minnesota Timberwolves | Minnesota Timberwolves 95, Dallas Mavericks 93 |
 | 3 | Sat May 13 | Minnesota Timberwolves | Dallas Mavericks |  |
 | 4 | Mon May 15 | Minnesota Timberwolves | Dallas Mavericks |  |
 | 5 | Wed May 17 | Dallas Mavericks | Minnesota Timberwolves | if needed |

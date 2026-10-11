@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of May 10, 2006: 74 weekly and monthly award decision(s) closed; 7 of 10 season awards decided.
+As of May 11, 2006: 74 weekly and monthly award decision(s) closed; 8 of 10 season awards decided.
 
 ## Individual awards
 
@@ -82,12 +82,12 @@ Selection closes May 17, 2006 · 126 media · ballot 5-3-1.
 
 ## All-Defensive teams
 
-Selection closes May 11, 2006 · 30 head coaches, not for their own players · ballot 2-1.
+Announced May 11, 2006 · 30 head coaches, not for their own players · ballot 2-1 · [tally](Season_Awards.md#all-defensive-teams).
 
 | Team | Guard | Guard | Forward | Forward | Center |
 | --- | --- | --- | --- | --- | --- |
-| First | Not selected | Not selected | Not selected | Not selected | Not selected |
-| Second | Not selected | Not selected | Not selected | Not selected | Not selected |
+| First | Manu Ginobili (San Antonio Spurs) | Derek Fisher (Indiana Pacers) | Andrei Kirilenko (Utah Jazz) | Shawn Marion (Phoenix Suns) | Marcus Camby (Minnesota Timberwolves) |
+| Second | Chris Paul (Utah Jazz) | Paul Pierce (Boston Celtics) | Tim Duncan (San Antonio Spurs) | Kevin Garnett (Minnesota Timberwolves) | Ben Wallace (Detroit Pistons) |
 
 ## All-Rookie teams
 

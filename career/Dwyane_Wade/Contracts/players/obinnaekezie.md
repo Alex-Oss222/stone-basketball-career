@@ -2,9 +2,9 @@
 
 # Contract | Obinna Ekezie
 
-Known through: 2006-05-10. [Open interactive contract](obinnaekezie.html#contract) · [Contract history](obinnaekezie.html#contract-history)
+Known through: 2006-05-11. [Open interactive contract](obinnaekezie.html#contract) · [Contract history](obinnaekezie.html#contract-history)
 
-Obinna Ekezie: under contract. Evidence cutoff: 2006-05-10.
+Obinna Ekezie: under contract. Evidence cutoff: 2006-05-11.
 
 ## Current contract
 

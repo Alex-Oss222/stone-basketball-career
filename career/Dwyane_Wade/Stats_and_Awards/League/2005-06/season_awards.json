@@ -872,6 +872,227 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2005-06-all_defensive",
+   "award": "all_defensive",
+   "name": "All-Defensive Teams",
+   "announced_on": "2006-05-11",
+   "electorate": 30,
+   "voters": "head coaches, not for their own players",
+   "ballot": [
+    2,
+    1
+   ],
+   "lens": [
+    0.3,
+    0.6
+   ],
+   "evidence_through": "2006-04-19",
+   "teams": [
+    {
+     "team": "First Team",
+     "players": [
+      {
+       "player": "Manu Ginobili",
+       "team": "San Antonio Spurs",
+       "games": 65,
+       "mpg": 29.4,
+       "pts": 16.3,
+       "reb": 3.3,
+       "ast": 4.3,
+       "stl": 1.4,
+       "blk": 0.7,
+       "game_score": 13.13,
+       "position": "G",
+       "points": 58,
+       "first_team_votes": 29
+      },
+      {
+       "player": "Marcus Camby",
+       "team": "Minnesota Timberwolves",
+       "games": 60,
+       "mpg": 36.9,
+       "pts": 12.7,
+       "reb": 9.8,
+       "ast": 2.6,
+       "stl": 1.8,
+       "blk": 3.1,
+       "game_score": 12.96,
+       "position": "C",
+       "points": 58,
+       "first_team_votes": 29
+      },
+      {
+       "player": "Andrei Kirilenko",
+       "team": "Utah Jazz",
+       "games": 69,
+       "mpg": 39.1,
+       "pts": 15.1,
+       "reb": 8.1,
+       "ast": 4.5,
+       "stl": 2.1,
+       "blk": 3.2,
+       "game_score": 15.08,
+       "position": "F",
+       "points": 57,
+       "first_team_votes": 28
+      },
+      {
+       "player": "Shawn Marion",
+       "team": "Phoenix Suns",
+       "games": 81,
+       "mpg": 39.7,
+       "pts": 20.1,
+       "reb": 11.7,
+       "ast": 1.8,
+       "stl": 2.1,
+       "blk": 2.2,
+       "game_score": 19.24,
+       "position": "F",
+       "points": 43,
+       "first_team_votes": 14
+      },
+      {
+       "player": "Derek Fisher",
+       "team": "Indiana Pacers",
+       "games": 85,
+       "mpg": 32.9,
+       "pts": 11.7,
+       "reb": 3.5,
+       "ast": 4.1,
+       "stl": 2.0,
+       "blk": 0.2,
+       "game_score": 8.93,
+       "position": "G",
+       "points": 42,
+       "first_team_votes": 14
+      }
+     ]
+    },
+    {
+     "team": "Second Team",
+     "players": [
+      {
+       "player": "Tim Duncan",
+       "team": "San Antonio Spurs",
+       "games": 80,
+       "mpg": 35.3,
+       "pts": 18.0,
+       "reb": 9.3,
+       "ast": 2.5,
+       "stl": 1.1,
+       "blk": 2.0,
+       "game_score": 13.72,
+       "position": "F",
+       "points": 40,
+       "first_team_votes": 11
+      },
+      {
+       "player": "Kevin Garnett",
+       "team": "Minnesota Timberwolves",
+       "games": 76,
+       "mpg": 41.4,
+       "pts": 26.4,
+       "reb": 11.5,
+       "ast": 3.6,
+       "stl": 1.8,
+       "blk": 1.2,
+       "game_score": 22.54,
+       "position": "F",
+       "points": 30,
+       "first_team_votes": 7
+      },
+      {
+       "player": "Ben Wallace",
+       "team": "Detroit Pistons",
+       "games": 82,
+       "mpg": 36.2,
+       "pts": 7.2,
+       "reb": 12.0,
+       "ast": 2.2,
+       "stl": 2.0,
+       "blk": 2.2,
+       "game_score": 11.11,
+       "position": "C",
+       "points": 30,
+       "first_team_votes": 1
+      },
+      {
+       "player": "Chris Paul",
+       "team": "Utah Jazz",
+       "games": 78,
+       "mpg": 37.2,
+       "pts": 20.8,
+       "reb": 5.2,
+       "ast": 7.2,
+       "stl": 2.3,
+       "blk": 0.2,
+       "game_score": 18.69,
+       "position": "G",
+       "points": 28,
+       "first_team_votes": 10
+      },
+      {
+       "player": "Paul Pierce",
+       "team": "Boston Celtics",
+       "games": 79,
+       "mpg": 39.9,
+       "pts": 28.5,
+       "reb": 7.1,
+       "ast": 5.1,
+       "stl": 1.7,
+       "blk": 0.4,
+       "game_score": 21.56,
+       "position": "G",
+       "points": 26,
+       "first_team_votes": 3
+      }
+     ]
+    }
+   ],
+   "others": [
+    {
+     "player": "Jerry Stackhouse",
+     "team": "Minnesota Timberwolves",
+     "points": 10
+    },
+    {
+     "player": "Eddie Griffin",
+     "team": "Houston Rockets",
+     "points": 8
+    },
+    {
+     "player": "Smush Parker",
+     "team": "Indiana Pacers",
+     "points": 8
+    },
+    {
+     "player": "T.J. Ford",
+     "team": "Minnesota Timberwolves",
+     "points": 5
+    },
+    {
+     "player": "Jason Kidd",
+     "team": "Milwaukee Bucks",
+     "points": 3
+    },
+    {
+     "player": "Josh Smith",
+     "team": "Utah Jazz",
+     "points": 2
+    },
+    {
+     "player": "Jeff Foster",
+     "team": "Indiana Pacers",
+     "points": 1
+    },
+    {
+     "player": "Samuel Dalembert",
+     "team": "Philadelphia 76ers",
+     "points": 1
+    }
+   ]
   }
  ]
 }

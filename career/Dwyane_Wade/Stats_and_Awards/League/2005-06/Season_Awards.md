@@ -1,6 +1,6 @@
 # 2005-06 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-05-10.
+Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-05-11.
 
 ## Calendar
 
@@ -13,7 +13,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2006-05-07 | Most Valuable Player | 125 media | 10-7-5-3-1 | decided |
 | 2006-05-08 | Defensive Player of the Year | 124 media | 5-3-1 | decided |
 | 2006-05-10 | Rookie of the Year | 125 media | 5-3-1 | decided |
-| 2006-05-11 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | pending |
+| 2006-05-11 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | decided |
 | 2006-05-17 | All-NBA Teams | 126 media | 5-3-1 | pending |
 | the night the Finals are clinched | Finals MVP | 10 media panel | 1 | pending |
 
@@ -114,3 +114,29 @@ Announced 2006-05-10; 125 media, ballot 5-3-1.
 | 3 | Raymond Felton | Dallas Mavericks | 81 | 29.2 | 10.0 | 3.8 | 5.2 | 1.2 | 0.1 | 8.89 | 102 | 0 |
 
 Complete tally: `season_awards.json` (4 receiving votes).
+
+## All-Defensive Teams
+
+Announced 2006-05-11; 30 head coaches, not for their own players, ballot 2-1.
+
+### First Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Manu Ginobili | G | San Antonio Spurs | 65 | 29.4 | 16.3 | 3.3 | 4.3 | 1.4 | 0.7 | 13.13 | 58 | 29 |
+| Marcus Camby | C | Minnesota Timberwolves | 60 | 36.9 | 12.7 | 9.8 | 2.6 | 1.8 | 3.1 | 12.96 | 58 | 29 |
+| Andrei Kirilenko | F | Utah Jazz | 69 | 39.1 | 15.1 | 8.1 | 4.5 | 2.1 | 3.2 | 15.08 | 57 | 28 |
+| Shawn Marion | F | Phoenix Suns | 81 | 39.7 | 20.1 | 11.7 | 1.8 | 2.1 | 2.2 | 19.24 | 43 | 14 |
+| Derek Fisher | G | Indiana Pacers | 85 | 32.9 | 11.7 | 3.5 | 4.1 | 2.0 | 0.2 | 8.93 | 42 | 14 |
+
+### Second Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Tim Duncan | F | San Antonio Spurs | 80 | 35.3 | 18.0 | 9.3 | 2.5 | 1.1 | 2.0 | 13.72 | 40 | 11 |
+| Kevin Garnett | F | Minnesota Timberwolves | 76 | 41.4 | 26.4 | 11.5 | 3.6 | 1.8 | 1.2 | 22.54 | 30 | 7 |
+| Ben Wallace | C | Detroit Pistons | 82 | 36.2 | 7.2 | 12.0 | 2.2 | 2.0 | 2.2 | 11.11 | 30 | 1 |
+| Chris Paul | G | Utah Jazz | 78 | 37.2 | 20.8 | 5.2 | 7.2 | 2.3 | 0.2 | 18.69 | 28 | 10 |
+| Paul Pierce | G | Boston Celtics | 79 | 39.9 | 28.5 | 7.1 | 5.1 | 1.7 | 0.4 | 21.56 | 26 | 3 |
+
+Also receiving votes: Jerry Stackhouse (Minnesota Timberwolves) 10, Eddie Griffin (Houston Rockets) 8, Smush Parker (Indiana Pacers) 8, T.J. Ford (Minnesota Timberwolves) 5, Jason Kidd (Milwaukee Bucks) 3, Josh Smith (Utah Jazz) 2, Jeff Foster (Indiana Pacers) 1, Samuel Dalembert (Philadelphia 76ers) 1.
