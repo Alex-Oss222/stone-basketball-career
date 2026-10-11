@@ -138,7 +138,7 @@
    "home_court": "Toronto Raptors",
    "wins": {
     "Toronto Raptors": 3,
-    "Cleveland Cavaliers": 1
+    "Cleveland Cavaliers": 2
    },
    "winner": null,
    "games": [
@@ -188,7 +188,9 @@
      "home": "Toronto Raptors",
      "away": "Cleveland Cavaliers",
      "conditional": true,
-     "event_id": "2006-05-03-cleveland-cavaliers-at-toronto-raptors"
+     "event_id": "2006-05-03-cleveland-cavaliers-at-toronto-raptors",
+     "result": "Cleveland Cavaliers 99, Toronto Raptors 96",
+     "winner": "Cleveland Cavaliers"
     },
     {
      "game": 6,
@@ -312,10 +314,10 @@
    ],
    "home_court": "Miami Heat",
    "wins": {
-    "Miami Heat": 3,
+    "Miami Heat": 4,
     "Orlando Magic": 1
    },
-   "winner": null,
+   "winner": "Miami Heat",
    "games": [
     {
      "game": 1,
@@ -363,7 +365,9 @@
      "home": "Miami Heat",
      "away": "Orlando Magic",
      "conditional": true,
-     "event_id": "2006-05-03-orlando-magic-at-miami-heat"
+     "event_id": "2006-05-03-orlando-magic-at-miami-heat",
+     "result": "Orlando Magic 97, Miami Heat 124",
+     "winner": "Miami Heat"
     },
     {
      "game": 6,
@@ -371,7 +375,8 @@
      "home": "Orlando Magic",
      "away": "Miami Heat",
      "conditional": true,
-     "event_id": "2006-05-05-miami-heat-at-orlando-magic"
+     "event_id": "2006-05-05-miami-heat-at-orlando-magic",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -379,9 +384,11 @@
      "home": "Miami Heat",
      "away": "Orlando Magic",
      "conditional": true,
-     "event_id": "2006-05-07-orlando-magic-at-miami-heat"
+     "event_id": "2006-05-07-orlando-magic-at-miami-heat",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2006-05-03"
   },
   {
    "id": "east-2-7",
@@ -574,7 +581,7 @@
    ],
    "home_court": "San Antonio Spurs",
    "wins": {
-    "San Antonio Spurs": 2,
+    "San Antonio Spurs": 3,
     "Sacramento Kings": 2
    },
    "winner": null,
@@ -625,7 +632,9 @@
      "home": "San Antonio Spurs",
      "away": "Sacramento Kings",
      "conditional": true,
-     "event_id": "2006-05-03-sacramento-kings-at-san-antonio-spurs"
+     "event_id": "2006-05-03-sacramento-kings-at-san-antonio-spurs",
+     "result": "Sacramento Kings 97, San Antonio Spurs 108",
+     "winner": "San Antonio Spurs"
     },
     {
      "game": 6,
@@ -748,7 +757,7 @@
    ],
    "home_court": "Dallas Mavericks",
    "wins": {
-    "Dallas Mavericks": 2,
+    "Dallas Mavericks": 3,
     "New Orleans/Oklahoma City Hornets": 2
    },
    "winner": null,
@@ -799,7 +808,9 @@
      "home": "Dallas Mavericks",
      "away": "New Orleans/Oklahoma City Hornets",
      "conditional": true,
-     "event_id": "2006-05-03-new-orleans-oklahoma-city-hornets-at-dallas-mavericks"
+     "event_id": "2006-05-03-new-orleans-oklahoma-city-hornets-at-dallas-mavericks",
+     "result": "New Orleans/Oklahoma City Hornets 98, Dallas Mavericks 107",
+     "winner": "Dallas Mavericks"
     },
     {
      "game": 6,
