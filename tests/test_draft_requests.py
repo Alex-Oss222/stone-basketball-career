@@ -1,8 +1,9 @@
 """Wade's draft_prospect scouting requests (`runtime/draft.py` rule 7), forward only from the 2006 draft.
 
-Synthetic classes, clubs and orders in a temporary root: the 2006 class data does not exist yet. Every pick is answered
-by a stand-in for the engine that records the packet and returns the likeliest option (or a scripted answer), so the
-packets Miami's draw would send can be compared with and without Wade's requests.
+Synthetic classes, clubs and orders in a temporary root, so each rule is seen apart from the 2006 class data
+(`tests/test_offseason_2006_data.py` reads that). Every pick is answered by a stand-in for the engine that records the
+packet and returns the likeliest option (or a scripted answer), so the packets Miami's draw would send can be compared
+with and without Wade's requests.
 """
 import copy
 import json

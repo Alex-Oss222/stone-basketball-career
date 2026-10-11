@@ -208,22 +208,31 @@ def calendar(root=ROOT):
     c = _read(Path(root) / CALENDAR)
     sfx = NEW.replace("-", "_")
     charlotte = c.get(f"charlotte_cap_and_floor_{sfx}")
+    published = c.get(f"maximum_salary_{sfx}")              # from the 2006 calendar: the maximums published with the cap
     return {"cap": c[f"salary_cap_{sfx}"]["value"], "tax": c[f"luxury_tax_threshold_{sfx}"]["value"],
             "mle": c[f"mid_level_exception_{sfx}"]["value"],
             "charlotte_cap": charlotte["value"]["cap"] if charlotte else c[f"salary_cap_{sfx}"]["value"],
             "minimum": {int(k.rstrip("+")): v for k, v in c[f"minimum_salary_scale_{sfx}"]["value"].items()},
-            "scale": {r["pick"]: r for r in c[f"rookie_scale_{YEAR}_first_round"]["value"]}}
+            "scale": {r["pick"]: r for r in c[f"rookie_scale_{YEAR}_first_round"]["value"]},
+            **({"maximum": {MAXIMUM_TIERS[k]: v for k, v in published["value"].items()}} if published else {})}
 
 
 def minimum(service, cal):
     return cal["minimum"][min(10, max(0, service or 0))]
 
 
-def maximum(service, cap):
-    """The maximum by years of service under the agreement in force for the market's new season (`runtime/agreement.py`:
-    1999's 25/30/35% of the cap through 2004; the 2005 agreement's fixed 2005-06 figures after). The 105% of prior salary
-    rule is applied by the caller."""
-    from .agreement import maximum as agreement_maximum
+# The calendar's published maximums by years of service, keyed as `runtime/agreement.py` keys its tiers.
+MAXIMUM_TIERS = {"0-6": "0_to_6_years", "7-9": "7_to_9_years", "10+": "10_plus_years"}
+
+
+def maximum(service, cap, published=None):
+    """The maximum by years of service: the figure published with the new season's cap where the year's calendar records
+    it (`published`, `calendar()["maximum"]`: from the 2006 summer, priced with the cap it was published with), else the
+    agreement in force for the market's new season (`runtime/agreement.py`: 1999's 25/30/35% of the cap through 2004;
+    the 2005 agreement's fixed 2005-06 figures after). The 105% of prior salary rule is applied by the caller."""
+    from .agreement import maximum as agreement_maximum, tier
+    if published and published.get(tier(service)):
+        return int(published[tier(service)])
     return agreement_maximum(service, cap, NEW)
 
 
@@ -380,7 +389,7 @@ class Pricing:
 
     def price(self, b, cal, prior=None):
         service = (self.ident.get(b) or {}).get("service", 0)
-        top = max(maximum(service, cal["cap"]), int(round((prior or 0) * 1.05)))
+        top = max(maximum(service, cal["cap"], cal.get("maximum")), int(round((prior or 0) * 1.05)))
         raw = self.comparables_price(self.value(b)) * self.honors.honor_factor(b)
         if (self.evidence.get(b) or {}).get("minutes", 0) < MIN_EVIDENCE_MINUTES:
             raw = minimum(service, cal)                 # too little simulated evidence to price above the minimum

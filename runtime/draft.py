@@ -10,9 +10,12 @@ Medical, work-ethic and basketball-IQ grades are not in any sourced record for t
 (1.0); nothing is invented.
 
 1. Board and translation. Consensus slot = the mean of the eight sources (a first-round-only board that omits a
-   player counts him 31st; a two-round mock, 61st). Median value = MEDIAN_TOP x exp(-MEDIAN_DECAY x (consensus - 1)),
-   moved by the translated college line: shooting = 0.55 FT% + 0.30 3P% + 0.15 three-point volume, defence = steals
-   and blocks per 40 minutes, each as a z-score within the class (SHOOT_WEIGHT, DEF_WEIGHT of the median).
+   player counts him 31st; a two-round mock, 61st). From the 2006 draft (OMISSIONS_FROM) a source that says it left a
+   player out for a reason other than his rank (`omissions_not_judgements` in his pre-draft rankings: SI.com's June 14,
+   2006 mock left out early entrants it expected to withdraw) is left out of his mean instead of counting him unlisted.
+   Median value = MEDIAN_TOP x exp(-MEDIAN_DECAY x (consensus - 1)), moved by the translated college line: shooting =
+   0.55 FT% + 0.30 3P% + 0.15 three-point volume, defence = steals and blocks per 40 minutes, each as a z-score within
+   the class (SHOOT_WEIGHT, DEF_WEIGHT of the median).
 2. Outcome distribution. Spread = SPREAD_BASE x median x (1 + (23 - age) / 4): floor = median - 1.0 spread (not
    below FLOOR_MIN), ceiling = median + 1.6 spread. Younger prospects get wider, higher ceilings.
 3. Risk. Medical and intangible multipliers are 1.0 (no sourced grades).
@@ -95,6 +98,7 @@ SECOND_ONCE_FROM = 2006               # rule 6: from this draft a club that has 
 GROUP = {"PG": "G", "SG": "G", "G": "G", "SF": "F", "PF": "F", "F": "F", "C": "C"}
 TARGET_MINUTES = {"G": 96, "F": 96, "C": 48}
 RESEARCH_MOCKS = {"vitale_espn_2004_06_22": 31, "hrr_2004_06_24": 31, "nbadraft_net_2004_mock": 61}
+OMISSIONS_FROM, OMISSIONS = 2006, "omissions_not_judgements"   # rule 1: a source's stated non-ranking omission is not averaged
 YEAR, SEASON_END = 2004, "2004-04-14"
 # Wade's draft_prospect requests (rule 7): weighed from the 2006 draft, the first draft after his 2005-10-31 request, so the
 # 2004 and 2005 drafts replay unchanged. The lift is no new constant: his draw weight takes the summer market's
@@ -181,9 +185,13 @@ def prospects(root=ROOT):
         pos = p.get("position")
         pos = (pos.get("value") if isinstance(pos, dict) else pos) or "F"
         r = p.get("pre_draft_rankings") or {}
-        ranks = [r[k] if isinstance(r.get(k), (int, float)) else miss for k, miss in RESEARCH_MOCKS.items()]
+        unranked = set(r.get(OMISSIONS) or {}) if YEAR >= OMISSIONS_FROM else set()
+        ranks = [r[k] if isinstance(r.get(k), (int, float)) else miss for k, miss in RESEARCH_MOCKS.items()
+                 if k not in unranked or isinstance(r.get(k), (int, float))]
         for board in boards.values():
-            ranks.append(board["rank_by_player"].get(_board_name(board, p), 31))
+            name = _board_name(board, p)
+            if board.get("id") not in unranked or name is not None:
+                ranks.append(board["rank_by_player"].get(name, 31))
         stats = (p.get("last_pre_draft_season") or {}).get("stats") if isinstance(p.get("last_pre_draft_season"), dict) else None
         stats = stats or (p.get("last_pre_draft_season") if (p.get("last_pre_draft_season") or {}).get("games") else None)
         out[_key(p["player_id"])] = {"player": p["player_id"], "bbr_id": p.get("bbr_id"), "position": pos,

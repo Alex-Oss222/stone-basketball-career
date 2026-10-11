@@ -1,0 +1,238 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "lottery_rules",
+ "draft": "2006",
+ "lottery_date": "2006-05-23",
+ "purpose": "Rules of the 2006 draft lottery (rules only; the real result is never used). runtime/lottery.py applies the same keys to the simulated league: 14 lottery clubs, Charlotte in the lottery like any other non-playoff club (eligible for No. 1, no fixed slot), three picks drawn.",
+ "lottery_clubs": 14,
+ "picks_drawn": 3,
+ "combinations_by_seed": [
+  250,
+  199,
+  156,
+  119,
+  88,
+  63,
+  43,
+  28,
+  17,
+  11,
+  8,
+  7,
+  6,
+  5
+ ],
+ "combinations_status": "the same 14-club table as 2005 (250-199-156-119-88-63-43-28-17-11-8-7-6-5, sum 1,000). The 2006 lottery chances table (Wikipedia, from NBA.com's 2006 probabilities) gives seeds 1 = 250, 2 = 199, 5 = 88 and 10-14 = 11, 8, 7, 6, 5 directly, and the three tied pairs' shares as sums: seeds 3-4 = 275 (156 + 119), 6-7 = 106 (63 + 43), 8-9 = 45 (28 + 17); the split inside each pair is the 2005 derivation (nba_2005_lottery_rules.json)",
+ "ties": "Tied clubs split the combinations of the seeds they occupy evenly; an uneven remainder and the order of tied clubs that do not win a top-3 pick are settled by a drawing (sourced: the 2006 table shows 138/137 and 23/22 splits). In the second round tied clubs pick in the opposite order (derived from the 2003 draft).",
+ "after_the_lottery": "Clubs that do not win a top-3 pick choose in reverse order of record, so no club falls more than three places (sourced for 2006: the worst seed's lowest possible pick is No. 4). Charlotte takes part in the lottery like any other non-playoff club (sourced). Playoff clubs follow in reverse order of record (non-lottery ties by drawing); the second round is in reverse order of record of all 30 clubs, unaffected by the lottery (sourced).",
+ "research": {
+  "topic": "NBA draft lottery rules in force for the 2006 draft lottery (May 23, 2006)",
+  "scope_note": "Rules only. Real 2006 lottery results, real 2005-06 records, real seedings, real tie-break outcomes and real draft order are deliberately omitted (hindsight). The cited 2006 pages also contain those results; the caller must not import them.",
+  "event": {
+   "date": "2006-05-23",
+   "place": "Secaucus, New Jersey",
+   "edition": "22nd annual NBA Draft Lottery (derived: the 2005 lottery was the 21st)",
+   "draft_date": "2006-06-28",
+   "status": "sourced (date and place); derived (edition number)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2006_NBA_draft (Draft lottery: 'The 2006 Draft Lottery was held on May 23, 2006, in Secaucus, New Jersey'; cites NBA.com, 'Ping-Pong Balls, Raptors Rise' and 'Results of 2006 NBA Draft Lottery', both May 23, 2006)"
+   ]
+  },
+  "participants": {
+   "rule": "All clubs that missed the 2006 playoffs. The league had 30 clubs in 2005-06 and 16 made the playoffs, so 14 clubs took part.",
+   "lottery_club_count": 14,
+   "status": "sourced (the 2006 lottery chances table lists 14 clubs)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2006_NBA_draft"
+   ]
+  },
+  "charlotte_expansion": {
+   "rule": "The Charlotte Bobcats' expansion terms fixed their 2004 position only (No. 4). For the 2005 and 2006 drafts Charlotte enters the lottery as an ordinary non-playoff club and is eligible for the No. 1 pick; there is no fixed first- or second-round slot and no cap on how high Charlotte may draw. 2006 is the last draft the expansion terms mention.",
+   "quote": "The new team will be eligible for the No. 1 pick in the 2005 and 2006 drafts.",
+   "status": "sourced",
+   "sources": [
+    "https://www.deseret.com/2002/12/21/19695058/draft-rules-favorable-for-charlotte-franchise/ (Deseret News, Dec 21, 2002)",
+    "library/2005/league/nba_2005_lottery_rules.json (research.charlotte_expansion)"
+   ],
+   "corroboration": "The 2006 lottery chances table shows Charlotte with an ordinary seed share and the full set of possible picks, consistent with no restriction. (Its seed is a real 2005-06 result and is not recorded.)",
+   "second_round": {
+    "rule": "No fixed second-round slot in 2006: Charlotte picks in round 2 by its record like every other club.",
+    "status": "derived (as 2005)"
+   }
+  },
+  "mechanics": {
+   "rule": "14 ping-pong balls numbered 1-14; four drawn; 1,001 combinations regardless of order; 1,000 assigned to the 14 lottery clubs by computer, the one unassigned combination (11-12-13-14) is redrawn. Draw for No. 1, balls returned, repeat for No. 2 and No. 3; a combination belonging to a club that already won a pick is ignored and redrawn.",
+   "status": "sourced (general NBA description, unchanged from 2005); the 2006 NBA.com How It Works page was not retrieved",
+   "sources": [
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery",
+    "library/2005/league/nba_2005_lottery_rules.json (research.mechanics)"
+   ]
+  },
+  "combination_table_14_clubs": {
+   "seeds_worst_first": [
+    {
+     "seed": 1,
+     "combinations": 250,
+     "chance_no1": 0.25,
+     "lowest_possible_pick": 4,
+     "status": "sourced",
+     "note": "2006 lottery chances table: worst seed 250 combinations."
+    },
+    {
+     "seed": 2,
+     "combinations": 199,
+     "chance_no1": 0.199,
+     "lowest_possible_pick": 5,
+     "status": "sourced",
+     "note": "2006 lottery chances table: second seed 199 combinations."
+    },
+    {
+     "seed": 3,
+     "combinations": 156,
+     "chance_no1": 0.156,
+     "lowest_possible_pick": 6,
+     "status": "derived",
+     "note": "2006 lottery chances table: two clubs tied for seeds 3-4 shared 138 + 137 = 275 = 156 + 119; the split between seeds 3 and 4 follows the 2005 table (nba_2005_lottery_rules.json; Wikipedia 2013 third-worst 156)."
+    },
+    {
+     "seed": 4,
+     "combinations": 119,
+     "chance_no1": 0.119,
+     "lowest_possible_pick": 7,
+     "status": "derived",
+     "note": "Part of the 3-4 pair (275); 2005 report: fourth seed 11.9%."
+    },
+    {
+     "seed": 5,
+     "combinations": 88,
+     "chance_no1": 0.088,
+     "lowest_possible_pick": 8,
+     "status": "sourced",
+     "note": "2006 lottery chances table: fifth seed 88 combinations (8.8%)."
+    },
+    {
+     "seed": 6,
+     "combinations": 63,
+     "chance_no1": 0.063,
+     "lowest_possible_pick": 9,
+     "status": "derived",
+     "note": "2006 lottery chances table: two clubs tied for seeds 6-7 shared 53 + 53 = 106 = 63 + 43; 2005 report: sixth seed 6.3%."
+    },
+    {
+     "seed": 7,
+     "combinations": 43,
+     "chance_no1": 0.043,
+     "lowest_possible_pick": 10,
+     "status": "derived",
+     "note": "Part of the 6-7 pair (106)."
+    },
+    {
+     "seed": 8,
+     "combinations": 28,
+     "chance_no1": 0.028,
+     "lowest_possible_pick": 11,
+     "status": "derived",
+     "note": "2006 lottery chances table: two clubs tied for seeds 8-9 shared 23 + 22 = 45 = 28 + 17; Wikipedia: 2011 eighth seed 28."
+    },
+    {
+     "seed": 9,
+     "combinations": 17,
+     "chance_no1": 0.017,
+     "lowest_possible_pick": 12,
+     "status": "derived",
+     "note": "Part of the 8-9 pair (45); Wikipedia: 2008 and 2014 ninth-worst 17."
+    },
+    {
+     "seed": 10,
+     "combinations": 11,
+     "chance_no1": 0.011,
+     "lowest_possible_pick": 13,
+     "status": "sourced",
+     "note": "2006 lottery chances table: tenth seed 11."
+    },
+    {
+     "seed": 11,
+     "combinations": 8,
+     "chance_no1": 0.008,
+     "lowest_possible_pick": 14,
+     "status": "sourced",
+     "note": "2006 lottery chances table: eleventh seed 8."
+    },
+    {
+     "seed": 12,
+     "combinations": 7,
+     "chance_no1": 0.007,
+     "lowest_possible_pick": 14,
+     "status": "sourced",
+     "note": "2006 lottery chances table: twelfth seed 7."
+    },
+    {
+     "seed": 13,
+     "combinations": 6,
+     "chance_no1": 0.006,
+     "lowest_possible_pick": 14,
+     "status": "sourced",
+     "note": "2006 lottery chances table: thirteenth seed 6."
+    },
+    {
+     "seed": 14,
+     "combinations": 5,
+     "chance_no1": 0.005,
+     "lowest_possible_pick": 14,
+     "status": "sourced",
+     "note": "2006 lottery chances table: best lottery club 5."
+    }
+   ],
+   "total": 1000,
+   "status": "sourced (eight seeds directly and three tied pairs as sums, 2006 chances table); derived (the split inside each pair)",
+   "derivation": "Unchanged from 2005: the 13-club 1995-2004 table became 250-199-156-119-88-63-43-28-17-11-8-7-6-5 when the league reached 30 clubs (nba_2005_lottery_rules.json). The 2006 chances table agrees with it seed for seed where a seed stands alone and pair for pair where two clubs tied.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2006_NBA_draft (Draft lottery: 'the chances for each team to get specific picks in the 2006 draft lottery', from NBA.com's probabilities, NBA.com/Raptors PDF dated May 3, 2006)",
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery (lottery winners table with combinations, 2005-2018)",
+    "library/2005/league/nba_2005_lottery_rules.json"
+   ],
+   "chances_no2_no3": "NBA.com also publishes No. 2/No. 3 chances per club; these follow from the drawing procedure (sequential draw without the previous winners) and can be computed from the combination counts."
+  },
+  "ties": {
+   "rule": "Clubs with identical records split the combinations of the seeds they occupy equally (average). If the average is not an integer, a random drawing decides which club gets the extra combination. That same drawing decides which tied club picks earlier if neither wins a top-3 pick, and the order of the tied clubs is reversed in the second round.",
+   "status": "sourced (averaging and drawing: the 2006 table's 138/137 and 23/22 splits); derived (second-round reversal)",
+   "timing": "Ties were broken by random drawing shortly after the regular season, before the lottery: NBA.com, 'Ties Broken for NBA Draft 2006 Order of Selection', dated April 21, 2006 (two days after the 2005-06 regular season ended on April 19). runtime/lottery.py draws simulated ties on the lottery date.",
+   "timing_status": "sourced (release date, through Wikipedia's citation; the release itself was not read)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2006_NBA_draft (reference: 'Ties Broken for NBA Draft 2006 Order of Selection', NBA.com, April 21, 2006)",
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery"
+   ],
+   "second_round_reversal_evidence": "Same evidence as nba_2004_lottery_rules.json and nba_2005_lottery_rules.json (the 2003 draft's tied pair). No 2006-specific rule text found: status derived."
+  },
+  "no_drop_more_than": {
+   "rule": "Clubs not winning a top-3 pick select in inverse order of regular-season record after the three winners, so no club falls more than three places: seed k picks no lower than min(k + 3, 14).",
+   "status": "sourced (the 2006 chances table gives the worst seed picks 1-4 only and every seed at most three places below its rank)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2006_NBA_draft",
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery"
+   ]
+  },
+  "non_lottery_and_second_round": {
+   "first_round_15_on": "Playoff clubs pick after the lottery in inverse order of regular-season record (playoff results do not matter), ties by random drawing. In 2006 these were picks 15-30: the first round had 30 selections (no forfeited pick).",
+   "first_round_status": "sourced (60 selections in two rounds, Wikipedia/BBR 2006 draft tables; no forfeit)",
+   "second_round": "All 30 clubs pick in inverse order of regular-season record; the lottery does not affect round 2. Tied clubs reverse their round-1 order.",
+   "second_round_status": "sourced (Wikipedia 2006 draft: 'The remaining first-round picks and the second-round picks were assigned to teams in reverse order of their win-loss record'); derived (tie reversal)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2006_NBA_draft",
+    "https://www.basketball-reference.com/draft/NBA_2006.html"
+   ]
+  },
+  "traded_picks": {
+   "rule": "A traded lottery pick keeps the original club's seed and combinations; a non-playoff club holding another lottery club's pick gets both seeds' combinations. Protected picks stay with the original club when the drawn or record slot falls inside the protection (nba_2006_pick_ownership.json).",
+   "status": "sourced",
+   "source": "https://en.wikipedia.org/wiki/NBA_draft_lottery"
+  },
+  "larry_coon_cbafaq": {
+   "status": "unverified",
+   "note": "Coon's 2005-CBA Salary Cap FAQ covers draft-pick trading but not lottery odds, tie-breaks or draft order; the lottery is governed by the NBA (Board of Governors), not the CBA. Nothing taken from it."
+  },
+  "researched_on": "2026-10-11",
+  "hindsight_warning": "Wikipedia's 2006 NBA draft and lottery pages and the search results contain the real 2005-06 records, seedings, tie-break outcomes and lottery winners. None of those results is recorded here; the club chances were used only to confirm seed combination counts."
+ }
+}
