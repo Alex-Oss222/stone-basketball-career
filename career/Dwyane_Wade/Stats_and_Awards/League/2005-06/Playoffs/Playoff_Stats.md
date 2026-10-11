@@ -1,35 +1,35 @@
 # 2005-06 playoff statistics
 
-Through 2006-06-11: 82 closed playoff game(s). Playoff games only, from closed results (`runtime/playoff_stats.py`); the regular season is a separate record. Clubs in order of playoff wins; percentages from summed makes and attempts. [Bracket and schedule](../Playoffs.md).
+Through 2006-06-18: 85 closed playoff game(s). Playoff games only, from closed results (`runtime/playoff_stats.py`); the regular season is a separate record. Clubs in order of playoff wins; percentages from summed makes and attempts. [Bracket and schedule](../Playoffs.md).
 
 ## All playoff games
 
 | Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Morris Peterson | Toronto Raptors | 20 | 20 | 38.4 | 15.2 | 4.4 | 3.0 | 1.2 | 0.1 | 1.8 | 111-245 | .453 | 44-89 | .494 | 37-49 | .755 | .568 |
-| Vince Carter | Toronto Raptors | 20 | 20 | 36.9 | 20.9 | 5.8 | 6.7 | 1.4 | 0.8 | 1.5 | 120-308 | .390 | 26-67 | .388 | 152-196 | .776 | .530 |
-| Chris Bosh | Toronto Raptors | 20 | 20 | 34.5 | 18.9 | 9.7 | 2.5 | 0.9 | 1.4 | 2.1 | 144-286 | .503 | 8-19 | .421 | 82-93 | .882 | .578 |
-| Hedo Turkoglu | Toronto Raptors | 20 | 20 | 33.7 | 12.8 | 4.7 | 4.0 | 1.2 | 0.3 | 1.5 | 84-174 | .483 | 16-45 | .356 | 71-85 | .835 | .603 |
-| Primož Brezec | Toronto Raptors | 20 | 20 | 28.0 | 10.6 | 5.2 | 0.9 | 0.1 | 0.4 | 1.4 | 86-159 | .541 | 0-4 | .000 | 39-51 | .765 | .581 |
-| Tyronn Lue | Toronto Raptors | 20 | 0 | 23.3 | 9.8 | 1.6 | 2.8 | 0.6 | 0.0 | 1.6 | 74-166 | .446 | 12-32 | .375 | 36-44 | .818 | .529 |
-| Matt Bonner | Toronto Raptors | 20 | 0 | 21.3 | 9.3 | 3.7 | 0.8 | 0.3 | 0.3 | 0.5 | 63-139 | .453 | 33-70 | .471 | 28-33 | .848 | .609 |
-| Udonis Haslem | Toronto Raptors | 20 | 0 | 18.2 | 6.1 | 3.8 | 1.1 | 0.2 | 0.1 | 0.6 | 52-95 | .547 | 0-1 | .000 | 18-22 | .818 | .583 |
-| DeSagana Diop | Toronto Raptors | 14 | 0 | 3.7 | 0.6 | 1.0 | 0.1 | 0.1 | 0.5 | 0.0 | 4-7 | .571 | 0-0 | N/A | 1-4 | .250 | .514 |
+| Morris Peterson | Toronto Raptors | 23 | 23 | 38.9 | 15.7 | 4.5 | 3.2 | 1.2 | 0.1 | 1.7 | 132-285 | .463 | 51-104 | .490 | 46-61 | .754 | .579 |
+| Vince Carter | Toronto Raptors | 23 | 23 | 37.5 | 21.6 | 5.7 | 6.7 | 1.5 | 0.7 | 1.5 | 149-372 | .401 | 31-83 | .373 | 167-213 | .784 | .533 |
+| Chris Bosh | Toronto Raptors | 23 | 23 | 35.6 | 20.0 | 9.8 | 2.6 | 1.0 | 1.3 | 2.2 | 176-346 | .509 | 11-23 | .478 | 96-110 | .873 | .582 |
+| Hedo Turkoglu | Toronto Raptors | 23 | 23 | 34.0 | 12.1 | 4.7 | 4.2 | 1.2 | 0.3 | 1.6 | 92-197 | .467 | 17-49 | .347 | 78-92 | .848 | .587 |
+| Primož Brezec | Toronto Raptors | 23 | 23 | 28.4 | 11.0 | 5.4 | 1.1 | 0.2 | 0.4 | 1.4 | 102-186 | .548 | 0-4 | .000 | 49-63 | .778 | .592 |
+| Tyronn Lue | Toronto Raptors | 23 | 0 | 23.4 | 9.3 | 1.5 | 2.8 | 0.6 | 0.0 | 1.8 | 82-190 | .432 | 13-38 | .342 | 38-47 | .809 | .510 |
+| Matt Bonner | Toronto Raptors | 23 | 0 | 21.2 | 9.4 | 3.4 | 0.9 | 0.4 | 0.3 | 0.4 | 76-159 | .478 | 36-77 | .468 | 28-33 | .848 | .622 |
+| Udonis Haslem | Toronto Raptors | 23 | 0 | 18.0 | 5.6 | 3.8 | 0.9 | 0.2 | 0.2 | 0.5 | 55-108 | .509 | 0-2 | .000 | 18-22 | .818 | .544 |
+| DeSagana Diop | Toronto Raptors | 15 | 0 | 3.4 | 0.6 | 0.9 | 0.1 | 0.1 | 0.5 | 0.0 | 4-7 | .571 | 0-0 | N/A | 1-4 | .250 | .514 |
 | Scott Padgett | Toronto Raptors | 6 | 0 | 2.7 | 1.3 | 0.3 | 0.3 | 0.0 | 0.0 | 0.2 | 4-8 | .500 | 0-3 | .000 | 0-0 | N/A | .500 |
-| Al Jefferson | Toronto Raptors | 9 | 0 | 2.4 | 1.0 | 0.4 | 0.1 | 0.1 | 0.0 | 0.1 | 4-4 | 1.000 | 0-0 | N/A | 1-1 | 1.000 | 1.000 |
-| simiewa01 | Toronto Raptors | 12 | 0 | 2.2 | 0.4 | 0.3 | 0.1 | 0.1 | 0.0 | 0.0 | 1-6 | .167 | 0-1 | .000 | 3-3 | 1.000 | .342 |
-| Tim Duncan | San Antonio Spurs | 21 | 21 | 35.7 | 17.1 | 8.9 | 2.6 | 0.9 | 2.2 | 2.9 | 141-309 | .456 | 0-5 | .000 | 77-105 | .733 | .505 |
-| Tony Parker | San Antonio Spurs | 21 | 21 | 35.0 | 17.9 | 3.5 | 6.5 | 1.3 | 0.1 | 2.4 | 145-285 | .509 | 4-17 | .235 | 81-101 | .802 | .569 |
-| Kwame Brown | San Antonio Spurs | 21 | 21 | 28.8 | 8.0 | 5.9 | 1.1 | 0.6 | 0.7 | 1.3 | 56-108 | .519 | 1-7 | .143 | 56-91 | .615 | .571 |
-| Manu Ginobili | San Antonio Spurs | 21 | 21 | 28.8 | 17.4 | 3.8 | 5.0 | 1.2 | 0.5 | 1.9 | 108-222 | .486 | 26-53 | .491 | 124-162 | .765 | .624 |
-| Andrés Nocioni | San Antonio Spurs | 21 | 21 | 27.8 | 11.8 | 4.2 | 1.6 | 0.6 | 0.9 | 2.0 | 85-191 | .445 | 22-55 | .400 | 56-68 | .824 | .561 |
-| Kurt Thomas | San Antonio Spurs | 21 | 0 | 24.7 | 8.1 | 5.4 | 1.1 | 0.6 | 1.0 | 1.0 | 68-158 | .430 | 0-5 | .000 | 35-40 | .875 | .487 |
-| Devean George | San Antonio Spurs | 21 | 0 | 20.3 | 6.3 | 3.6 | 0.5 | 1.2 | 0.2 | 1.1 | 54-119 | .454 | 8-38 | .211 | 16-21 | .762 | .515 |
-| Keith Van Horn | San Antonio Spurs | 21 | 0 | 18.9 | 7.6 | 3.0 | 1.0 | 0.4 | 0.4 | 0.6 | 55-148 | .372 | 20-52 | .385 | 29-38 | .763 | .483 |
-| Rasho Nesterovic | San Antonio Spurs | 21 | 0 | 17.6 | 4.7 | 3.7 | 0.5 | 0.5 | 0.8 | 0.8 | 47-78 | .603 | 2-4 | .500 | 3-6 | .500 | .614 |
-| DerMarr Johnson | San Antonio Spurs | 9 | 0 | 3.2 | 1.8 | 0.9 | 0.1 | 0.0 | 0.1 | 0.0 | 7-13 | .538 | 2-3 | .667 | 0-0 | N/A | .615 |
+| Al Jefferson | Toronto Raptors | 10 | 0 | 2.4 | 1.1 | 0.5 | 0.1 | 0.1 | 0.0 | 0.1 | 4-4 | 1.000 | 0-0 | N/A | 3-3 | 1.000 | 1.000 |
+| simiewa01 | Toronto Raptors | 13 | 0 | 2.2 | 0.4 | 0.3 | 0.1 | 0.1 | 0.0 | 0.0 | 1-6 | .167 | 0-1 | .000 | 3-3 | 1.000 | .342 |
+| Tim Duncan | San Antonio Spurs | 24 | 24 | 36.2 | 17.9 | 8.8 | 2.7 | 0.9 | 2.0 | 2.9 | 170-363 | .468 | 0-6 | .000 | 90-121 | .744 | .517 |
+| Tony Parker | San Antonio Spurs | 24 | 24 | 35.3 | 17.6 | 3.4 | 6.8 | 1.2 | 0.2 | 2.5 | 163-320 | .509 | 4-17 | .235 | 93-114 | .816 | .571 |
+| Manu Ginobili | San Antonio Spurs | 24 | 24 | 29.3 | 17.5 | 3.7 | 5.1 | 1.2 | 0.5 | 2.0 | 125-263 | .475 | 27-64 | .422 | 144-185 | .778 | .611 |
+| Kwame Brown | San Antonio Spurs | 24 | 24 | 29.0 | 8.2 | 6.0 | 1.2 | 0.6 | 0.6 | 1.3 | 65-127 | .512 | 1-7 | .143 | 67-106 | .632 | .570 |
+| Andrés Nocioni | San Antonio Spurs | 24 | 24 | 28.3 | 12.7 | 4.8 | 1.5 | 0.7 | 1.0 | 1.7 | 102-223 | .457 | 27-69 | .391 | 73-87 | .839 | .582 |
+| Kurt Thomas | San Antonio Spurs | 24 | 0 | 24.4 | 8.0 | 5.5 | 1.1 | 0.6 | 0.9 | 1.0 | 77-180 | .428 | 0-6 | .000 | 39-45 | .867 | .483 |
+| Devean George | San Antonio Spurs | 24 | 0 | 20.4 | 6.2 | 3.5 | 0.5 | 1.1 | 0.2 | 1.1 | 60-132 | .455 | 12-46 | .261 | 16-22 | .727 | .522 |
+| Keith Van Horn | San Antonio Spurs | 24 | 0 | 18.8 | 8.2 | 2.8 | 0.9 | 0.4 | 0.5 | 0.6 | 66-165 | .400 | 24-59 | .407 | 40-49 | .816 | .525 |
+| Rasho Nesterovic | San Antonio Spurs | 24 | 0 | 17.6 | 4.9 | 3.8 | 0.6 | 0.4 | 0.8 | 0.8 | 56-89 | .629 | 2-4 | .500 | 3-6 | .500 | .638 |
+| DerMarr Johnson | San Antonio Spurs | 11 | 0 | 3.0 | 1.5 | 0.7 | 0.2 | 0.0 | 0.2 | 0.0 | 7-13 | .538 | 2-3 | .667 | 0-2 | .000 | .576 |
 | Travis Diener | San Antonio Spurs | 5 | 0 | 2.5 | 1.6 | 0.2 | 0.2 | 0.0 | 0.0 | 0.0 | 3-7 | .429 | 2-4 | .500 | 0-0 | N/A | .571 |
-| Orien Greene | San Antonio Spurs | 16 | 0 | 2.2 | 0.8 | 0.2 | 0.2 | 0.1 | 0.0 | 0.1 | 3-7 | .429 | 0-0 | N/A | 7-10 | .700 | .570 |
+| Orien Greene | San Antonio Spurs | 19 | 0 | 2.3 | 1.0 | 0.3 | 0.4 | 0.1 | 0.0 | 0.2 | 5-11 | .455 | 0-0 | N/A | 9-12 | .750 | .584 |
 | Antawn Jamison | Dallas Mavericks | 19 | 19 | 40.0 | 13.2 | 6.9 | 2.4 | 0.8 | 0.2 | 1.1 | 96-242 | .397 | 20-56 | .357 | 38-54 | .704 | .470 |
 | Dirk Nowitzki | Dallas Mavericks | 19 | 19 | 39.1 | 25.6 | 7.7 | 3.3 | 1.2 | 0.8 | 3.1 | 172-326 | .528 | 20-54 | .370 | 123-137 | .898 | .630 |
 | Steve Nash | Dallas Mavericks | 19 | 19 | 36.4 | 16.8 | 3.7 | 8.8 | 0.8 | 0.2 | 3.1 | 123-244 | .504 | 30-68 | .441 | 44-50 | .880 | .602 |
@@ -552,24 +552,25 @@ Through 2006-06-11: 82 closed playoff game(s). Playoff games only, from closed r
 
 | Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Morris Peterson | Toronto Raptors | 2 | 2 | 40.3 | 16.5 | 4.0 | 3.0 | 1.0 | 0.0 | 2.5 | 10-21 | .476 | 6-8 | .750 | 7-8 | .875 | .673 |
-| Vince Carter | Toronto Raptors | 2 | 2 | 38.2 | 15.0 | 4.0 | 8.0 | 3.0 | 0.5 | 1.5 | 9-24 | .375 | 2-3 | .667 | 10-19 | .526 | .464 |
-| Hedo Turkoglu | Toronto Raptors | 2 | 2 | 34.8 | 7.5 | 5.0 | 5.0 | 1.5 | 0.0 | 2.5 | 4-10 | .400 | 0-1 | .000 | 7-10 | .700 | .521 |
-| Primož Brezec | Toronto Raptors | 2 | 2 | 30.1 | 13.5 | 1.0 | 1.0 | 0.0 | 0.0 | 0.0 | 9-16 | .562 | 0-0 | N/A | 9-10 | .900 | .662 |
-| Chris Bosh | Toronto Raptors | 2 | 2 | 29.5 | 22.5 | 6.5 | 2.0 | 2.0 | 0.5 | 3.5 | 18-30 | .600 | 1-3 | .333 | 8-9 | .889 | .663 |
-| Tyronn Lue | Toronto Raptors | 2 | 0 | 23.3 | 5.5 | 2.0 | 1.5 | 0.5 | 0.0 | 2.0 | 4-13 | .308 | 0-3 | .000 | 3-5 | .600 | .362 |
-| Matt Bonner | Toronto Raptors | 2 | 0 | 21.7 | 15.0 | 3.5 | 0.0 | 0.5 | 0.0 | 0.0 | 10-16 | .625 | 6-8 | .750 | 4-4 | 1.000 | .845 |
-| Udonis Haslem | Toronto Raptors | 2 | 0 | 18.4 | 3.5 | 2.0 | 0.5 | 0.5 | 0.5 | 0.0 | 3-7 | .429 | 0-0 | N/A | 1-2 | .500 | .444 |
-| simiewa01 | Toronto Raptors | 2 | 0 | 2.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-1 | .000 | 0-0 | N/A | 2-2 | 1.000 | .532 |
-| DeSagana Diop | Toronto Raptors | 2 | 0 | 1.8 | 0.0 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
-| Tim Duncan | San Antonio Spurs | 2 | 2 | 35.2 | 14.5 | 6.5 | 4.0 | 0.5 | 2.0 | 2.0 | 12-29 | .414 | 0-1 | .000 | 5-9 | .556 | .440 |
-| Tony Parker | San Antonio Spurs | 2 | 2 | 34.9 | 16.5 | 3.5 | 5.5 | 1.5 | 0.0 | 4.5 | 14-27 | .519 | 0-2 | .000 | 5-9 | .556 | .533 |
-| Andrés Nocioni | San Antonio Spurs | 2 | 2 | 28.5 | 10.0 | 4.5 | 1.0 | 0.0 | 1.5 | 3.5 | 8-17 | .471 | 1-2 | .500 | 3-4 | .750 | .533 |
-| Manu Ginobili | San Antonio Spurs | 2 | 2 | 27.8 | 17.0 | 4.5 | 2.5 | 2.0 | 0.5 | 2.5 | 10-20 | .500 | 6-8 | .750 | 8-9 | .889 | .710 |
-| Kwame Brown | San Antonio Spurs | 2 | 2 | 26.1 | 10.5 | 6.5 | 1.5 | 0.5 | 0.0 | 1.5 | 6-13 | .462 | 0-0 | N/A | 9-11 | .818 | .589 |
-| Kurt Thomas | San Antonio Spurs | 2 | 0 | 25.4 | 7.5 | 5.0 | 1.0 | 0.0 | 0.5 | 1.0 | 5-8 | .625 | 0-0 | N/A | 5-6 | .833 | .705 |
-| Devean George | San Antonio Spurs | 2 | 0 | 21.2 | 6.0 | 3.0 | 0.0 | 1.5 | 0.0 | 1.5 | 5-8 | .625 | 0-2 | .000 | 2-2 | 1.000 | .676 |
-| Keith Van Horn | San Antonio Spurs | 2 | 0 | 19.6 | 5.0 | 1.5 | 1.5 | 0.0 | 0.5 | 1.5 | 5-10 | .500 | 0-3 | .000 | 0-0 | N/A | .500 |
-| Rasho Nesterovic | San Antonio Spurs | 2 | 0 | 15.8 | 3.0 | 4.0 | 1.0 | 0.0 | 0.0 | 2.5 | 3-4 | .750 | 0-0 | N/A | 0-0 | N/A | .750 |
-| DerMarr Johnson | San Antonio Spurs | 1 | 0 | 4.5 | 2.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1-1 | 1.000 | 0-0 | N/A | 0-0 | N/A | 1.000 |
-| Orien Greene | San Antonio Spurs | 2 | 0 | 3.2 | 0.0 | 0.0 | 0.5 | 0.0 | 0.0 | 0.5 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Morris Peterson | Toronto Raptors | 5 | 5 | 41.5 | 18.2 | 4.8 | 3.8 | 0.8 | 0.2 | 1.6 | 31-61 | .508 | 13-23 | .565 | 16-20 | .800 | .652 |
+| Vince Carter | Toronto Raptors | 5 | 5 | 40.2 | 21.6 | 4.6 | 7.0 | 2.4 | 0.4 | 1.6 | 38-88 | .432 | 7-19 | .368 | 25-36 | .694 | .520 |
+| Chris Bosh | Toronto Raptors | 5 | 5 | 37.6 | 25.2 | 9.2 | 2.6 | 1.8 | 0.8 | 2.8 | 50-90 | .556 | 4-7 | .571 | 22-26 | .846 | .621 |
+| Hedo Turkoglu | Toronto Raptors | 5 | 5 | 35.5 | 7.8 | 4.8 | 5.0 | 1.2 | 0.0 | 2.2 | 12-33 | .364 | 1-5 | .200 | 14-17 | .824 | .482 |
+| Primož Brezec | Toronto Raptors | 5 | 5 | 30.4 | 13.8 | 4.6 | 1.8 | 0.4 | 0.4 | 0.8 | 25-43 | .581 | 0-0 | N/A | 19-22 | .864 | .655 |
+| Tyronn Lue | Toronto Raptors | 5 | 0 | 23.8 | 6.0 | 1.2 | 2.4 | 0.6 | 0.0 | 2.8 | 12-37 | .324 | 1-9 | .111 | 5-8 | .625 | .370 |
+| Matt Bonner | Toronto Raptors | 5 | 0 | 21.1 | 11.8 | 2.4 | 1.2 | 1.0 | 0.0 | 0.2 | 23-36 | .639 | 9-15 | .600 | 4-4 | 1.000 | .781 |
+| Udonis Haslem | Toronto Raptors | 5 | 0 | 17.3 | 2.6 | 3.0 | 0.2 | 0.4 | 0.4 | 0.0 | 6-20 | .300 | 0-1 | .000 | 1-2 | .500 | .311 |
+| Al Jefferson | Toronto Raptors | 1 | 0 | 2.3 | 2.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 2-2 | 1.000 | 1.000 |
+| simiewa01 | Toronto Raptors | 3 | 0 | 2.1 | 0.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-1 | .000 | 0-0 | N/A | 2-2 | 1.000 | .532 |
+| DeSagana Diop | Toronto Raptors | 3 | 0 | 1.2 | 0.0 | 0.3 | 0.3 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Tim Duncan | San Antonio Spurs | 5 | 5 | 37.9 | 20.0 | 7.4 | 3.8 | 0.8 | 1.2 | 2.6 | 41-83 | .494 | 0-2 | .000 | 18-25 | .720 | .532 |
+| Tony Parker | San Antonio Spurs | 5 | 5 | 36.8 | 16.2 | 3.0 | 7.4 | 1.0 | 0.2 | 4.0 | 32-62 | .516 | 0-2 | .000 | 17-22 | .773 | .565 |
+| Manu Ginobili | San Antonio Spurs | 5 | 5 | 31.2 | 17.8 | 3.6 | 4.4 | 1.6 | 0.4 | 2.4 | 27-61 | .443 | 7-19 | .368 | 28-32 | .875 | .593 |
+| Andrés Nocioni | San Antonio Spurs | 5 | 5 | 30.3 | 15.2 | 7.0 | 1.0 | 0.8 | 1.8 | 1.4 | 25-49 | .510 | 6-16 | .375 | 20-23 | .870 | .643 |
+| Kwame Brown | San Antonio Spurs | 5 | 5 | 28.7 | 10.0 | 6.4 | 1.6 | 0.6 | 0.0 | 1.4 | 15-32 | .469 | 0-0 | N/A | 20-26 | .769 | .576 |
+| Kurt Thomas | San Antonio Spurs | 5 | 0 | 23.5 | 7.4 | 5.4 | 1.0 | 0.4 | 0.6 | 1.2 | 14-30 | .467 | 0-1 | .000 | 9-11 | .818 | .531 |
+| Devean George | San Antonio Spurs | 5 | 0 | 21.0 | 5.6 | 2.8 | 0.4 | 0.8 | 0.2 | 1.0 | 11-21 | .524 | 4-10 | .400 | 2-3 | .667 | .627 |
+| Keith Van Horn | San Antonio Spurs | 5 | 0 | 18.9 | 9.4 | 1.4 | 0.8 | 0.2 | 0.8 | 1.0 | 16-27 | .593 | 4-10 | .400 | 11-11 | 1.000 | .738 |
+| Rasho Nesterovic | San Antonio Spurs | 5 | 0 | 17.0 | 4.8 | 4.4 | 1.2 | 0.0 | 0.6 | 1.4 | 12-15 | .800 | 0-0 | N/A | 0-0 | N/A | .800 |
+| Orien Greene | San Antonio Spurs | 5 | 0 | 3.0 | 1.2 | 0.2 | 0.8 | 0.0 | 0.0 | 0.4 | 2-4 | .500 | 0-0 | N/A | 2-2 | 1.000 | .615 |
+| DerMarr Johnson | San Antonio Spurs | 3 | 0 | 2.6 | 0.7 | 0.0 | 0.3 | 0.0 | 0.3 | 0.0 | 1-1 | 1.000 | 0-0 | N/A | 0-2 | .000 | .532 |

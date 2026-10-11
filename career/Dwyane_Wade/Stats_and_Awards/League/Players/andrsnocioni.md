@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `andrsnocioni.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-06-11 · **Club on this date:** San Antonio Spurs · **Basis:** San Antonio Spurs: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-06-18 · **Club on this date:** San Antonio Spurs · **Basis:** San Antonio Spurs: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** Unassigned · **Born:** 1979-11-30 · **Age on card date:** 26  
 **Registry ID:** `andrsnocioni`
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `andrsn
 
 ## Simulated statistics
 
-As of **2006-06-11**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-06-18**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No 2002-03 record in the supplied statistics file. 2005-06 is simulated: 82 closed regular-season games through 2006-06-11. Earlier simulated seasons from their closed results.
+**Coverage:** No 2002-03 record in the supplied statistics file. 2005-06 is simulated: 82 closed regular-season games through 2006-06-18. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -113,16 +113,16 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-06-11 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-06-18 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | San Antonio Spurs | 11 | 0 | 22.8 | 7.1 | 4.5 | 1.8 | 0.3 | 0.3 | 2.2 | 40.0% | 83.3% | 81.8% |
-| 2005-06 | San Antonio Spurs | 21 | 21 | 27.8 | 11.8 | 4.2 | 1.6 | 0.6 | 0.9 | 2.0 | 44.5% | 40.0% | 82.4% |
+| 2005-06 | San Antonio Spurs | 24 | 24 | 28.3 | 12.7 | 4.8 | 1.5 | 0.7 | 1.0 | 1.7 | 45.7% | 39.1% | 83.9% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-06-11, from closed award decisions (1 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-06-18, from closed award decisions (1 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

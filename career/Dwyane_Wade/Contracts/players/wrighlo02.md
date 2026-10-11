@@ -2,9 +2,9 @@
 
 # Contract | Lorenzen Wright
 
-Known through: 2006-06-11. [Open interactive contract](wrighlo02.html#contract) · [Contract history](wrighlo02.html#contract-history)
+Known through: 2006-06-18. [Open interactive contract](wrighlo02.html#contract) · [Contract history](wrighlo02.html#contract-history)
 
-Lorenzen Wright: under contract. Evidence cutoff: 2006-06-11.
+Lorenzen Wright: under contract. Evidence cutoff: 2006-06-18.
 
 ## Current contract
 

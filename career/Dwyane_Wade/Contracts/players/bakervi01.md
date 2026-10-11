@@ -2,9 +2,9 @@
 
 # Contract | Vin Baker
 
-Known through: 2006-06-11. [Open interactive contract](bakervi01.html#contract) · [Contract history](bakervi01.html#contract-history)
+Known through: 2006-06-18. [Open interactive contract](bakervi01.html#contract) · [Contract history](bakervi01.html#contract-history)
 
-Vin Baker: under contract. Evidence cutoff: 2006-06-11.
+Vin Baker: under contract. Evidence cutoff: 2006-06-18.
 
 ## Current contract
 
