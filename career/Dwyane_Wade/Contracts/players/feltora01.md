@@ -2,9 +2,9 @@
 
 # Contract | Raymond Felton
 
-Known through: 2006-04-19. [Open interactive contract](feltora01.html#contract) · [Contract history](feltora01.html#contract-history)
+Known through: 2006-04-20. [Open interactive contract](feltora01.html#contract) · [Contract history](feltora01.html#contract-history)
 
-Raymond Felton: under contract. Evidence cutoff: 2006-04-19.
+Raymond Felton: under contract. Evidence cutoff: 2006-04-20.
 
 ## Current contract
 

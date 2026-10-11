@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: April 15-21, 2006
 
-As of April 17, 2006: 2 award decision(s) closed, announced April 17, 2006.
+As of April 20, 2006: 4 award decision(s) closed, announced April 17, 2006, April 20, 2006.
 
 Official award window and announcement date: listed with each decision below.
 
@@ -23,10 +23,23 @@ The rows below are an internal shortlist, not published NBA vote totals. A calen
 | West | 2 | Dirk Nowitzki | Dallas Mavericks | 4 G, 4-0 in his games, 29.0 PTS, 7.8 REB, 4.5 AST, Game Score 25.47 a game; score 113.9 | Shortlist |
 | West | 3 | Kobe Bryant | Los Angeles Lakers | 3 G, 2-1 in his games, 35.7 PTS, 7.0 REB, 5.7 AST, Game Score 26.03 a game; score 84.1 | Shortlist |
 
+### April 17, 2006 to April 19, 2006 (announced April 20, 2006)
+
+| Conference | Rank slot | Player | Team | Evidence | Result |
+| --- | ---: | --- | --- | --- | --- |
+| East | 1 | Paul Pierce | Boston Celtics | 2 G, 2-0 in his games, 38.0 PTS, 7.5 REB, 5.0 AST, Game Score 30.6 a game; score 67.2 | **WINNER** |
+| East | 2 | Dwyane Wade | Miami Heat | 2 G, 1-1 in his games, 30.5 PTS, 9.5 REB, 3.5 AST, Game Score 29.25 a game; score 61.5 | Shortlist |
+| East | 3 | Michael Redd | Milwaukee Bucks | 2 G, 1-1 in his games, 34.5 PTS, 5.0 REB, 2.0 AST, Game Score 26.55 a game; score 56.1 | Shortlist |
+| West | 1 | Shawn Marion | Phoenix Suns | 2 G, 1-1 in his games, 25.5 PTS, 11.0 REB, 2.5 AST, Game Score 24.65 a game; score 52.3 | **WINNER** |
+| West | 2 | Chris Paul | Utah Jazz | 2 G, 0-2 in his games, 25.0 PTS, 5.0 REB, 8.0 AST, Game Score 21.8 a game; score 43.6 | Shortlist |
+| West | 3 | Rasheed Wallace | Portland Trail Blazers | 2 G, 1-1 in his games, 21.5 PTS, 9.5 REB, 2.0 AST, Game Score 18.3 a game; score 39.6 | Shortlist |
+
 ## Decision record
 
 - East Player of the Week, April 10, 2006 to April 16, 2006, announced April 17, 2006: **LeBron James**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
 - West Player of the Week, April 10, 2006 to April 16, 2006, announced April 17, 2006: **Kevin Garnett**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
+- East Player of the Week, April 17, 2006 to April 19, 2006, announced April 20, 2006: **Paul Pierce**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
+- West Player of the Week, April 17, 2006 to April 19, 2006, announced April 20, 2006: **Shawn Marion**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
 
 
 [Awards procedure and research](../../../README.md) · [Player evidence for this calendar period](League_Stats.md)

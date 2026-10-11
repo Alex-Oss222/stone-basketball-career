@@ -2,11 +2,11 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2006-04-19 · Miami Heat · active
+Career date: 2006-04-20 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
-Dwyane Wade is at 04 Training Camp. All milestone pages remain accessible; inactive pages explain their opening event.
+Dwyane Wade is at 08 Playoffs. All milestone pages remain accessible; inactive pages explain their opening event.
 
 Activation: The authoritative current date and recorded event determine what is open.
 
@@ -14,7 +14,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2006-04-19 |
+| Career date | 2006-04-20 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
@@ -25,10 +25,10 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2006-04-19 | Current checkpoint | 2006-04-19-miami-heat-at-boston-celtics | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2006-04-20 | Current checkpoint | 2006-04-19-miami-heat-at-boston-celtics | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2005-10-04 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2006-04-20 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2006-04-21 | League awards announced: Player of the Month, Rookie of the Month | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
 ## 2005-06 season tracker
@@ -44,7 +44,7 @@ Activation: The authoritative current date and recorded event determine what is 
 | 2006-01-10 | Contracts guaranteed | League calendar | done | [Season](index.html#calendar) |
 | 2006-02-17 | All-Star Weekend | League calendar | done | [Season](index.html#calendar) |
 | 2006-02-23 | Trade deadline | League calendar | done | [Season](index.html#calendar) |
-| 2006-04-19 | Regular season ends | League calendar | today | [Season](index.html#calendar) |
+| 2006-04-19 | Regular season ends | League calendar | done | [Season](index.html#calendar) |
 | 2006-04-22 | Playoffs begin | League calendar | upcoming | [Season](index.html#calendar) |
 
 ## Your recorded requests

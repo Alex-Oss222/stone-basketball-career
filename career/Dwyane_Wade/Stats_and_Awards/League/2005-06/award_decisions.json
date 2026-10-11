@@ -3539,6 +3539,110 @@
     }
    ],
    "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-04-17-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2006-04-17",
+   "period_end": "2006-04-19",
+   "announced_on": "2006-04-20",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/04_April/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 38.0,
+     "reb": 7.5,
+     "ast": 5.0,
+     "game_score": 30.6,
+     "score": 67.2,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 2,
+     "wins": 1,
+     "losses": 1,
+     "pts": 30.5,
+     "reb": 9.5,
+     "ast": 3.5,
+     "game_score": 29.25,
+     "score": 61.5,
+     "rank": 2
+    },
+    {
+     "player": "Michael Redd",
+     "team": "Milwaukee Bucks",
+     "games": 2,
+     "wins": 1,
+     "losses": 1,
+     "pts": 34.5,
+     "reb": 5.0,
+     "ast": 2.0,
+     "game_score": 26.55,
+     "score": 56.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Paul Pierce"
+  },
+  {
+   "id": "2005-06-player_of_week-2006-04-17-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2006-04-17",
+   "period_end": "2006-04-19",
+   "announced_on": "2006-04-20",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/04_April/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 2,
+     "wins": 1,
+     "losses": 1,
+     "pts": 25.5,
+     "reb": 11.0,
+     "ast": 2.5,
+     "game_score": 24.65,
+     "score": 52.3,
+     "rank": 1
+    },
+    {
+     "player": "Chris Paul",
+     "team": "Utah Jazz",
+     "games": 2,
+     "wins": 0,
+     "losses": 2,
+     "pts": 25.0,
+     "reb": 5.0,
+     "ast": 8.0,
+     "game_score": 21.8,
+     "score": 43.6,
+     "rank": 2
+    },
+    {
+     "player": "Rasheed Wallace",
+     "team": "Portland Trail Blazers",
+     "games": 2,
+     "wins": 1,
+     "losses": 1,
+     "pts": 21.5,
+     "reb": 9.5,
+     "ast": 2.0,
+     "game_score": 18.3,
+     "score": 39.6,
+     "rank": 3
+    }
+   ],
+   "winner": "Shawn Marion"
   }
  ]
 }

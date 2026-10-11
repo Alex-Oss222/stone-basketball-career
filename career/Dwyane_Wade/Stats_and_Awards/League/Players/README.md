@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-04-19**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-04-20**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -151,7 +151,7 @@ Card date: **2006-04-19**. 653 registry players, one Markdown card and one inter
 | [Adrian Griffin](griffad01.md) | Denver Nuggets | 31 | sourced | [open](griffad01.html) |
 | [Alex Acker](ackeral01.md) | San Antonio Spurs | 23 | silhouette | [open](ackeral01.html) |
 | [Alex Garcia](garcial01.md) | Free agent | 26 | silhouette | [open](garcial01.html) |
-| [Allan Houston](houstal01.md) | Free agent | 34 | sourced | [open](houstal01.html) |
+| [Allan Houston](houstal01.md) | Free agent | 35 | sourced | [open](houstal01.html) |
 | [Allen Iverson](iversal01.md) | Philadelphia 76ers | 30 | sourced | [open](iversal01.html) |
 | [Andre Emmett](andreemmett.md) | Free agent | 23 | silhouette | [open](andreemmett.html) |
 | [Andre Iguodala](andreiguodala.md) | New York Knicks | 22 | silhouette | [open](andreiguodala.html) |
@@ -298,7 +298,7 @@ Card date: **2006-04-19**. 653 registry players, one Markdown card and one inter
 | [Damien Wilkins](damienwilkins.md) | Los Angeles Lakers | 26 | silhouette | [open](damienwilkins.html) |
 | [Dan Langhi](langhda01.md) | Free agent | 28 | silhouette | [open](langhda01.html) |
 | [Danny Ferry](ferryda01.md) | Free agent | 39 | sourced | [open](ferryda01.html) |
-| [Danny Granger](grangda01.md) | New Orleans/Oklahoma City Hornets | 22 | silhouette | [open](grangda01.html) |
+| [Danny Granger](grangda01.md) | New Orleans/Oklahoma City Hornets | 23 | silhouette | [open](grangda01.html) |
 | [Darius Miles](milesda01.md) | Cleveland Cavaliers | 24 | sourced | [open](milesda01.html) |
 | [DerMarr Johnson](johnsde03.md) | San Antonio Spurs | 25 | silhouette | [open](johnsde03.html) |
 | [Desmond Ferguson](fergude01.md) | Free agent | 28 | silhouette | [open](fergude01.html) |
@@ -339,7 +339,7 @@ Card date: **2006-04-19**. 653 registry players, one Markdown card and one inter
 | [Justin Reed](justinreed.md) | New Orleans/Oklahoma City Hornets | 24 | silhouette | [open](justinreed.html) |
 | [Kedrick Brown](brownke01.md) | Free agent | 25 | sourced | [open](brownke01.html) |
 | [Lamar Odom](odomla01.md) | Golden State Warriors | 26 | sourced | [open](odomla01.html) |
-| [Lamond Murray](murrala01.md) | Utah Jazz | 32 | silhouette | [open](murrala01.html) |
+| [Lamond Murray](murrala01.md) | Utah Jazz | 33 | silhouette | [open](murrala01.html) |
 | [Laron Profit](laronprofit.md) | Boston Celtics | 28 | silhouette | [open](laronprofit.html) |
 | [Latrell Sprewell](sprewla01.md) | Free agent | 35 | silhouette | [open](sprewla01.html) |
 | [LeBron James](jamesle01.md) | Cleveland Cavaliers | 21 | sourced | [open](jamesle01.html) |

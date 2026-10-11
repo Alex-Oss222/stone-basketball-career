@@ -1,10 +1,10 @@
 # NBA awards | 2005-06
 
-[Stats hub](../../README.md) · [Wade](../../2005-06/README.md) · [Miami](../../Team/2005-06/Team_Stats.md) · [NBA players](League_Stats.md) · [All-Star](All_Star.md) · [All-Star games](All_Star_Games.md)
+[Stats hub](../../README.md) · [Wade](../../2005-06/README.md) · [Miami](../../Team/2005-06/Team_Stats.md) · [NBA players](League_Stats.md) · [All-Star](All_Star.md) · [All-Star games](All_Star_Games.md) · [Playoffs](Playoffs.md)
 
 2005-06 · Calendar coverage: 2005-06
 
-As of April 19, 2006: 68 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
+As of April 20, 2006: 70 weekly and monthly award decision(s) closed; 0 of 10 season awards decided.
 
 ## Individual awards
 
@@ -167,7 +167,7 @@ Exhibitions played by the engine; their MVPs are exhibition honors. [All-Star we
 
 ### NBA champion
 
-Not decided yet. The playoffs open April 22, 2006.
+Not decided yet. The playoffs open April 22, 2006. [Playoffs](Playoffs.md)
 
 ### Finals MVP
 
@@ -190,6 +190,6 @@ Weekly and monthly award decisions, each counted on the page it is filed on (the
 | [January 2006](01_January/League_Awards.md) | January 1-31, 2006 | 14 | Decided |
 | [February 2006](02_February/League_Awards.md) | February 1-28, 2006 | 12 | Decided |
 | [March 2006](03_March/League_Awards.md) | March 1-31, 2006 | 12 | Decided |
-| [April 2006](04_April/League_Awards.md) | April 1-30, 2006 | 6 | In progress |
+| [April 2006](04_April/League_Awards.md) | April 1-30, 2006 | 8 | In progress |
 
 [Awards procedure and research](../README.md) · [Player evidence for this calendar period](League_Stats.md)
