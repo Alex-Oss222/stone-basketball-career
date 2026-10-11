@@ -2,9 +2,9 @@
 
 # Contract | Esteban Batista
 
-Known through: 2006-05-28. [Open interactive contract](batises01.html#contract) · [Contract history](batises01.html#contract-history)
+Known through: 2006-06-04. [Open interactive contract](batises01.html#contract) · [Contract history](batises01.html#contract-history)
 
-Esteban Batista: under contract. Evidence cutoff: 2006-05-28.
+Esteban Batista: under contract. Evidence cutoff: 2006-06-04.
 
 ## Current contract
 

@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2006-05-28](../assets/stat_reports/personal_2006-05-28.svg)
+![Player personal information and earned career awards through 2006-06-04](../assets/stat_reports/personal_2006-06-04.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2006-05-28; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2006-06-04; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
@@ -76,7 +76,7 @@ Identity as of 2006-05-28; status snapshot dated 2005-10-26. User-established al
 
 ## Statistics
 
-Career cutoff: **2006-05-28**. Club competitions and national-team events have separate records.
+Career cutoff: **2006-06-04**. Club competitions and national-team events have separate records.
 
 ### NBA regular season
 
@@ -93,7 +93,7 @@ Career cutoff: **2006-05-28**. Club competitions and national-team events have s
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-05-28, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-06-04, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### NBA playoffs
 
@@ -105,12 +105,12 @@ Awards are confirmed through 2006-05-28, filed by the honor's period-end date; t
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [2003-04](../2003-04/08_Playoffs/README.md) | 20 | Miami Heat | NBA | SG / PG | 2 | 2 | 26.0 | 3.5 | 6.5 | .538 | 1.5 | 2.0 | .750 | 2.0 | 4.5 | .444 | .654 | 2.0 | 2.0 | 1.000 | 1.0 | 3.0 | 4.0 | 4.0 | 1.0 | 1.0 | 1.0 | 4.5 | 10.5 | .711 | — |
 | [2004-05](../2004-05/08_Playoffs/README.md) | 21 | Miami Heat | NBA | SG / PG | 12 | 12 | 36.8 | 7.2 | 14.5 | .500 | 1.4 | 3.2 | .436 | 5.8 | 11.2 | .519 | .549 | 4.6 | 4.8 | .948 | 1.2 | 3.6 | 4.8 | 4.9 | 1.8 | 1.3 | 1.1 | 2.8 | 20.5 | .616 | — |
-| [2005-06](../2005-06/08_Playoffs/README.md) | 22 | Miami Heat | NBA | SG / PG | 13 | 13 | 35.3 | 9.2 | 15.6 | .586 | 0.8 | 1.9 | .400 | 8.4 | 13.7 | .612 | .611 | 5.6 | 5.9 | .948 | 1.5 | 4.1 | 5.5 | 3.4 | 0.9 | 1.0 | 2.0 | 2.8 | 24.7 | .678 | — |
-| Career total | 22 | Miami Heat | NBA | SG / PG | 27 | 27 | 35.3 | 7.9 | 14.4 | .546 | 1.1 | 2.5 | .441 | 6.8 | 11.9 | .568 | .585 | 4.9 | 5.1 | .950 | 1.3 | 3.8 | 5.1 | 4.1 | 1.3 | 1.1 | 1.5 | 3.0 | 21.8 | .652 | — |
+| [2005-06](../2005-06/08_Playoffs/README.md) | 22 | Miami Heat | NBA | SG / PG | 17 | 17 | 35.2 | 9.4 | 16.1 | .582 | 0.9 | 2.1 | .457 | 8.4 | 14.0 | .601 | .612 | 6.1 | 6.4 | .954 | 1.4 | 3.9 | 5.3 | 3.5 | 1.2 | 1.1 | 1.7 | 3.1 | 25.7 | .682 | — |
+| Career total | 22 | Miami Heat | NBA | SG / PG | 31 | 31 | 35.2 | 8.2 | 14.8 | .550 | 1.2 | 2.5 | .462 | 7.0 | 12.3 | .568 | .589 | 5.2 | 5.5 | .953 | 1.3 | 3.7 | 5.0 | 4.1 | 1.4 | 1.2 | 1.4 | 3.1 | 22.7 | .658 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-05-28, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-06-04, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Rookie Challenge (exhibition, separate from NBA totals)
 
@@ -126,7 +126,7 @@ Awards are confirmed through 2006-05-28, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-05-28, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-06-04, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### NBA All-Star Game (exhibition, separate from NBA totals)
 
@@ -143,7 +143,7 @@ Awards are confirmed through 2006-05-28, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2006-05-28, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2006-06-04, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Browse
 

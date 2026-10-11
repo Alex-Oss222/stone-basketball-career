@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2006-05-28 · Miami Heat · active
+Career date: 2006-06-04 · Miami Heat · active
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 
@@ -188,4 +188,8 @@ An actual transaction update with its source and applicable player rights.
 - [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_1.md)
 - [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_2.md)
 - [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_3.md)
+- [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_4.md)
+- [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_5.md)
+- [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_6.md)
+- [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_7.md)
 - [Dated milestone working records and player replies](../milestones.json)

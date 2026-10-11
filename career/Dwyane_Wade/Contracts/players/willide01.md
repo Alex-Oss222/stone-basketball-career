@@ -2,9 +2,9 @@
 
 # Contract | Deron Williams
 
-Known through: 2006-05-28. [Open interactive contract](willide01.html#contract) · [Contract history](willide01.html#contract-history)
+Known through: 2006-06-04. [Open interactive contract](willide01.html#contract) · [Contract history](willide01.html#contract-history)
 
-Deron Williams: under contract. Evidence cutoff: 2006-05-28.
+Deron Williams: under contract. Evidence cutoff: 2006-06-04.
 
 ## Current contract
 

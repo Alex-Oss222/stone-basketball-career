@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2006-05-28 · Miami Heat · active
+Career date: 2006-06-04 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,18 +14,18 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2006-05-28 |
+| Career date | 2006-06-04 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2006-05-27-toronto-raptors-at-miami-heat |
+| Last closed event | 2006-06-04-miami-heat-at-toronto-raptors |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2006-05-28 | Current checkpoint | 2006-05-27-toronto-raptors-at-miami-heat | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2006-06-04 | Current checkpoint | 2006-06-04-miami-heat-at-toronto-raptors | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2005-10-04 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
@@ -208,4 +208,8 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_1.md)
 - [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_2.md)
 - [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_3.md)
+- [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_4.md)
+- [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_5.md)
+- [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_6.md)
+- [Closed game](../2005-06/08_Playoffs/Conference_Finals/Game_7.md)
 - [Dated milestone working records and player replies](../milestones.json)

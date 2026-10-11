@@ -2,9 +2,9 @@
 
 # Contract | David Harrison
 
-Known through: 2006-05-28. [Open interactive contract](davidharrison.html#contract) · [Contract history](davidharrison.html#contract-history)
+Known through: 2006-06-04. [Open interactive contract](davidharrison.html#contract) · [Contract history](davidharrison.html#contract-history)
 
-David Harrison: under contract. Evidence cutoff: 2006-05-28.
+David Harrison: under contract. Evidence cutoff: 2006-06-04.
 
 ## Current contract
 

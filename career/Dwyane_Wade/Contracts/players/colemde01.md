@@ -2,9 +2,9 @@
 
 # Contract | Derrick Coleman
 
-Known through: 2006-05-28. [Open interactive contract](colemde01.html#contract) · [Contract history](colemde01.html#contract-history)
+Known through: 2006-06-04. [Open interactive contract](colemde01.html#contract) · [Contract history](colemde01.html#contract-history)
 
-Derrick Coleman: under contract. Evidence cutoff: 2006-05-28.
+Derrick Coleman: under contract. Evidence cutoff: 2006-06-04.
 
 ## Current contract
 

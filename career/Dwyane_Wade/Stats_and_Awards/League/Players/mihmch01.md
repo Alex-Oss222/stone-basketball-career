@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `mihmch01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-05-28 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2005-06 register · **League:** NBA  
+**Card date:** 2006-06-04 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2005-06 register · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #5 · **Born:** 1979-07-16 · **Age on card date:** 26  
 **Registry ID:** `mihmch01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/mihmch01.html) · ESPN ID 549
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mihmch
 
 ## Simulated statistics
 
-As of **2006-05-28**: 78 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-06-04**: 78 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 78 closed regular-season games through 2006-05-28. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 78 closed regular-season games through 2006-06-04. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,16 +115,16 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-28 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-06-04 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2004-05 | Phoenix Suns | 12 | 0 | 22.7 | 8.7 | 4.9 | 0.5 | 0.2 | 0.8 | 1.7 | 49.4% | 0.0% | 68.6% |
-| 2005-06 | Miami Heat | 13 | 13 | 30.9 | 10.8 | 6.1 | 1.7 | 0.3 | 1.1 | 1.6 | 48.1% | 66.7% | 68.0% |
+| 2005-06 | Miami Heat | 17 | 17 | 31.5 | 10.9 | 6.7 | 1.9 | 0.2 | 1.3 | 1.6 | 48.3% | 33.3% | 70.7% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-05-28, from closed award decisions (0 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-06-04, from closed award decisions (0 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

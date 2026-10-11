@@ -2,9 +2,9 @@
 
 # Contract | Jumaine Jones
 
-Known through: 2006-05-28. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
+Known through: 2006-06-04. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
 
-Jumaine Jones: waived. Evidence cutoff: 2006-05-28.
+Jumaine Jones: waived. Evidence cutoff: 2006-06-04.
 
 ## Current contract
 

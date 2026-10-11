@@ -2,9 +2,9 @@
 
 # Contract | Theron Smith
 
-Known through: 2006-05-28. [Open interactive contract](smithth01.html#contract) · [Contract history](smithth01.html#contract-history)
+Known through: 2006-06-04. [Open interactive contract](smithth01.html#contract) · [Contract history](smithth01.html#contract-history)
 
-Theron Smith: under contract. Evidence cutoff: 2006-05-28.
+Theron Smith: under contract. Evidence cutoff: 2006-06-04.
 
 ## Current contract
 

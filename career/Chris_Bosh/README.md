@@ -4,7 +4,7 @@
 
 ![Chris Bosh career overview](assets/career_overview.svg)
 
-Career date: **2006-05-28** · Toronto Raptors · #4 · PF · age 22
+Career date: **2006-06-04** · Toronto Raptors · #4 · PF · age 22
 
 A real player the user follows, not one the user controls: his club decides his moves and the engine plays his games. Every number below comes from closed simulated games and the league's recorded award decisions.
 
@@ -29,7 +29,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [2003-04](2003-04/README.md) | 19 | Toronto Raptors | 75/75 | 35.7 | 13.9 | 7.9 | 1.4 | 1.0 | 1.4 | 47.7 | 42.2 | 71.2 | 53.0 | 42-40 · lost conference semifinals |
 | [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 81/81 | 39.2 | 17.8 | 9.3 | 2.8 | 1.0 | 1.4 | 50.2 | 41.8 | 83.3 | 57.1 | 59-23 · lost finals |
-| [2005-06](2005-06/README.md) | 21 | Toronto Raptors | 70/70 | 37.7 | 21.8 | 10.5 | 3.4 | 0.9 | 1.3 | 51.8 | 35.2 | 89.8 | 59.1 | 61-21 · won conference semifinals |
+| [2005-06](2005-06/README.md) | 21 | Toronto Raptors | 70/70 | 37.7 | 21.8 | 10.5 | 3.4 | 0.9 | 1.3 | 51.8 | 35.2 | 89.8 | 59.1 | 61-21 · won conference finals |
 
 ## Playoffs
 
@@ -37,7 +37,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | 19 | Toronto Raptors | 9/9 | 33.9 | 14.0 | 6.2 | 1.1 | 1.1 | 1.4 | 49.5 | 60.0 | 62.5 | 54.0 | 42-40 · lost conference semifinals |
 | 2004-05 | 20 | Toronto Raptors | 22/22 | 36.0 | 17.0 | 9.7 | 1.9 | 1.0 | 1.6 | 48.3 | 40.0 | 73.5 | 54.3 | 59-23 · lost finals |
-| 2005-06 | 21 | Toronto Raptors | 14/14 | 34.8 | 17.9 | 10.5 | 2.8 | 0.9 | 1.3 | 47.5 | 46.2 | 85.7 | 54.9 | 61-21 · won conference semifinals |
+| 2005-06 | 21 | Toronto Raptors | 18/18 | 35.1 | 18.5 | 10.0 | 2.6 | 0.8 | 1.4 | 49.2 | 43.8 | 88.1 | 56.8 | 61-21 · won conference finals |
 
 ## Awards
 

@@ -2,9 +2,9 @@
 
 # Contract | Kaniel Dickens
 
-Known through: 2006-05-28. [Open interactive contract](dickeka01.html#contract) · [Contract history](dickeka01.html#contract-history)
+Known through: 2006-06-04. [Open interactive contract](dickeka01.html#contract) · [Contract history](dickeka01.html#contract-history)
 
-Kaniel Dickens: under contract. Evidence cutoff: 2006-05-28.
+Kaniel Dickens: under contract. Evidence cutoff: 2006-06-04.
 
 ## Current contract
 

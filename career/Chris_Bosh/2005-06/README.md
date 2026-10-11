@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2006-05-28** · Toronto Raptors · #4 · PF · age 22
+Career date: **2006-06-04** · Toronto Raptors · #4 · PF · age 22
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,7 +14,7 @@ Career date: **2006-05-28** · Toronto Raptors · #4 · PF · age 22
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 70/70 | 37.7 | 21.8 | 10.5 | 3.4 | 0.9 | 1.3 | 51.8 | 35.2 | 89.8 | 59.1 | 61-21 · won conference semifinals |
+| 2005-06 | 21 | Toronto Raptors | 70/70 | 37.7 | 21.8 | 10.5 | 3.4 | 0.9 | 1.3 | 51.8 | 35.2 | 89.8 | 59.1 | 61-21 · won conference finals |
 
 ## The user's target line against the closed games
 
@@ -34,7 +34,7 @@ Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 14/14 | 34.8 | 17.9 | 10.5 | 2.8 | 0.9 | 1.3 | 47.5 | 46.2 | 85.7 | 54.9 | 61-21 · won conference semifinals |
+| 2005-06 | 21 | Toronto Raptors | 18/18 | 35.1 | 18.5 | 10.0 | 2.6 | 0.8 | 1.4 | 49.2 | 43.8 | 88.1 | 56.8 | 61-21 · won conference finals |
 
 ## Season highs (regular season)
 

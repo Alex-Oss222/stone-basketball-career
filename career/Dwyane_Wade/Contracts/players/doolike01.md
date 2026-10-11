@@ -2,9 +2,9 @@
 
 # Contract | Keyon Dooling
 
-Known through: 2006-05-28. [Open interactive contract](doolike01.html#contract) · [Contract history](doolike01.html#contract-history)
+Known through: 2006-06-04. [Open interactive contract](doolike01.html#contract) · [Contract history](doolike01.html#contract-history)
 
-Keyon Dooling: under contract. Evidence cutoff: 2006-05-28.
+Keyon Dooling: under contract. Evidence cutoff: 2006-06-04.
 
 ## Current contract
 
