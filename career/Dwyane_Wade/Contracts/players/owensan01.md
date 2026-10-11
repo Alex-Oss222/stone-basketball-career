@@ -2,9 +2,9 @@
 
 # Contract | Andre Owens
 
-Known through: 2006-05-21. [Open interactive contract](owensan01.html#contract) · [Contract history](owensan01.html#contract-history)
+Known through: 2006-05-28. [Open interactive contract](owensan01.html#contract) · [Contract history](owensan01.html#contract-history)
 
-Andre Owens: under contract. Evidence cutoff: 2006-05-21.
+Andre Owens: under contract. Evidence cutoff: 2006-05-28.
 
 ## Current contract
 

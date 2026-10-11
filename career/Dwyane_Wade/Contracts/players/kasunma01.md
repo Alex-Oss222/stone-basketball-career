@@ -2,9 +2,9 @@
 
 # Contract | Mario Kasun
 
-Known through: 2006-05-21. [Open interactive contract](kasunma01.html#contract) · [Contract history](kasunma01.html#contract-history)
+Known through: 2006-05-28. [Open interactive contract](kasunma01.html#contract) · [Contract history](kasunma01.html#contract-history)
 
-Mario Kasun: under contract. Evidence cutoff: 2006-05-21.
+Mario Kasun: under contract. Evidence cutoff: 2006-05-28.
 
 ## Current contract
 

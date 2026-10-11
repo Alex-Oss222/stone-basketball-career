@@ -2,7 +2,7 @@
 
 # Dwyane Wade | Live milestones
 
-Career date: 2006-05-21. [Open the detailed milestone desk](index.html).
+Career date: 2006-05-28. [Open the detailed milestone desk](index.html).
 
 These are current career views, with activation gates and actual evidence. An inactive view does not imply its event occurred.
 
@@ -17,4 +17,4 @@ These are current career views, with activation gates and actual evidence. An in
 | [Season exit meeting](exit_meeting.md) | inactive | The player's season closes and a dated exit meeting is recorded. |
 | [Training camp](training_camp.md) | complete | The club opens camp and records participation, evaluation or an actual role decision. |
 | [Stats review](stats_review.md) | active | A declared, closed game result supplies observed participation and the player box. |
-| [Career milestones](career_milestones.md) | 26 reached; latest 500 career playoff points on 2006-05-16 at 22 years, 119 days | Each closed game that crosses a career total (1,000 points, 500 rebounds, ...) |
+| [Career milestones](career_milestones.md) | 27 reached; latest 25 career playoff games on 2006-05-23 at 22 years, 126 days | Each closed game that crosses a career total (1,000 points, 500 rebounds, ...) |
