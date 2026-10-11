@@ -38,19 +38,19 @@ Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · [Miam
 EAST
   (1) Toronto Raptors          3
   (8) Cleveland Cavaliers      1
-  (4) Boston Celtics           3
-  (5) Atlanta Hawks            1
+  (4) Boston Celtics           4
+  (5) Atlanta Hawks            1   -> Boston Celtics
         conference semifinal: winners meet
   (3) Miami Heat               3
   (6) Orlando Magic            1
   (2) Detroit Pistons          2
-  (7) New Jersey Nets          2
+  (7) New Jersey Nets          3
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
 WEST
-  (1) Phoenix Suns             3
-  (8) Utah Jazz                1
+  (1) Phoenix Suns             4
+  (8) Utah Jazz                1   -> Phoenix Suns
   (4) San Antonio Spurs        2
   (5) Sacramento Kings         2
         conference semifinal: winners meet
@@ -81,7 +81,7 @@ Home court: Toronto Raptors. Series Toronto Raptors 3, Cleveland Cavaliers 1.
 
 ### East: (4) Boston Celtics vs (5) Atlanta Hawks
 
-Home court: Boston Celtics. Series Boston Celtics 3, Atlanta Hawks 1.
+Home court: Boston Celtics. Boston Celtics wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -89,9 +89,9 @@ Home court: Boston Celtics. Series Boston Celtics 3, Atlanta Hawks 1.
 | 2 | Tue Apr 25 | Boston Celtics | Atlanta Hawks | Atlanta Hawks 87, Boston Celtics 91 |
 | 3 | Fri Apr 28 | Atlanta Hawks | Boston Celtics | Boston Celtics 82, Atlanta Hawks 99 |
 | 4 | Sun Apr 30 | Atlanta Hawks | Boston Celtics | Boston Celtics 92, Atlanta Hawks 84 |
-| 5 | Tue May 2 | Boston Celtics | Atlanta Hawks | if needed |
-| 6 | Thu May 4 | Atlanta Hawks | Boston Celtics | if needed |
-| 7 | Sat May 6 | Boston Celtics | Atlanta Hawks | if needed |
+| 5 | Tue May 2 | Boston Celtics | Atlanta Hawks | Atlanta Hawks 104, Boston Celtics 118 |
+| 6 | Thu May 4 | Atlanta Hawks | Boston Celtics | not needed |
+| 7 | Sat May 6 | Boston Celtics | Atlanta Hawks | not needed |
 
 ### East: (3) Miami Heat vs (6) Orlando Magic
 
@@ -109,7 +109,7 @@ Home court: Miami Heat. Series Miami Heat 3, Orlando Magic 1.
 
 ### East: (2) Detroit Pistons vs (7) New Jersey Nets
 
-Home court: Detroit Pistons. Series Detroit Pistons 2, New Jersey Nets 2.
+Home court: Detroit Pistons. Series Detroit Pistons 2, New Jersey Nets 3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -117,13 +117,13 @@ Home court: Detroit Pistons. Series Detroit Pistons 2, New Jersey Nets 2.
 | 2 | Tue Apr 25 | Detroit Pistons | New Jersey Nets | New Jersey Nets 106, Detroit Pistons 102 |
 | 3 | Fri Apr 28 | New Jersey Nets | Detroit Pistons | Detroit Pistons 95, New Jersey Nets 77 |
 | 4 | Sun Apr 30 | New Jersey Nets | Detroit Pistons | Detroit Pistons 84, New Jersey Nets 73 |
-| 5 | Tue May 2 | Detroit Pistons | New Jersey Nets | if needed |
+| 5 | Tue May 2 | Detroit Pistons | New Jersey Nets | New Jersey Nets 103, Detroit Pistons 76 |
 | 6 | Thu May 4 | New Jersey Nets | Detroit Pistons | if needed |
 | 7 | Sat May 6 | Detroit Pistons | New Jersey Nets | if needed |
 
 ### West: (1) Phoenix Suns vs (8) Utah Jazz
 
-Home court: Phoenix Suns. Series Phoenix Suns 3, Utah Jazz 1.
+Home court: Phoenix Suns. Phoenix Suns wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -131,9 +131,9 @@ Home court: Phoenix Suns. Series Phoenix Suns 3, Utah Jazz 1.
 | 2 | Tue Apr 25 | Phoenix Suns | Utah Jazz | Utah Jazz 87, Phoenix Suns 90 |
 | 3 | Fri Apr 28 | Utah Jazz | Phoenix Suns | Phoenix Suns 107, Utah Jazz 96 |
 | 4 | Sun Apr 30 | Utah Jazz | Phoenix Suns | Phoenix Suns 97, Utah Jazz 84 |
-| 5 | Tue May 2 | Phoenix Suns | Utah Jazz | if needed |
-| 6 | Thu May 4 | Utah Jazz | Phoenix Suns | if needed |
-| 7 | Sat May 6 | Phoenix Suns | Utah Jazz | if needed |
+| 5 | Tue May 2 | Phoenix Suns | Utah Jazz | Utah Jazz 92, Phoenix Suns 105 |
+| 6 | Thu May 4 | Utah Jazz | Phoenix Suns | not needed |
+| 7 | Sat May 6 | Phoenix Suns | Utah Jazz | not needed |
 
 ### West: (4) San Antonio Spurs vs (5) Sacramento Kings
 

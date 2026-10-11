@@ -222,10 +222,10 @@
    ],
    "home_court": "Boston Celtics",
    "wins": {
-    "Boston Celtics": 3,
+    "Boston Celtics": 4,
     "Atlanta Hawks": 1
    },
-   "winner": null,
+   "winner": "Boston Celtics",
    "games": [
     {
      "game": 1,
@@ -273,7 +273,9 @@
      "home": "Boston Celtics",
      "away": "Atlanta Hawks",
      "conditional": true,
-     "event_id": "2006-05-02-atlanta-hawks-at-boston-celtics"
+     "event_id": "2006-05-02-atlanta-hawks-at-boston-celtics",
+     "result": "Atlanta Hawks 104, Boston Celtics 118",
+     "winner": "Boston Celtics"
     },
     {
      "game": 6,
@@ -281,7 +283,8 @@
      "home": "Atlanta Hawks",
      "away": "Boston Celtics",
      "conditional": true,
-     "event_id": "2006-05-04-boston-celtics-at-atlanta-hawks"
+     "event_id": "2006-05-04-boston-celtics-at-atlanta-hawks",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -289,9 +292,11 @@
      "home": "Boston Celtics",
      "away": "Atlanta Hawks",
      "conditional": true,
-     "event_id": "2006-05-06-atlanta-hawks-at-boston-celtics"
+     "event_id": "2006-05-06-atlanta-hawks-at-boston-celtics",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2006-05-02"
   },
   {
    "id": "east-3-6",
@@ -393,7 +398,7 @@
    "home_court": "Detroit Pistons",
    "wins": {
     "Detroit Pistons": 2,
-    "New Jersey Nets": 2
+    "New Jersey Nets": 3
    },
    "winner": null,
    "games": [
@@ -443,7 +448,9 @@
      "home": "Detroit Pistons",
      "away": "New Jersey Nets",
      "conditional": true,
-     "event_id": "2006-05-02-new-jersey-nets-at-detroit-pistons"
+     "event_id": "2006-05-02-new-jersey-nets-at-detroit-pistons",
+     "result": "New Jersey Nets 103, Detroit Pistons 76",
+     "winner": "New Jersey Nets"
     },
     {
      "game": 6,
@@ -477,10 +484,10 @@
    ],
    "home_court": "Phoenix Suns",
    "wins": {
-    "Phoenix Suns": 3,
+    "Phoenix Suns": 4,
     "Utah Jazz": 1
    },
-   "winner": null,
+   "winner": "Phoenix Suns",
    "games": [
     {
      "game": 1,
@@ -528,7 +535,9 @@
      "home": "Phoenix Suns",
      "away": "Utah Jazz",
      "conditional": true,
-     "event_id": "2006-05-02-utah-jazz-at-phoenix-suns"
+     "event_id": "2006-05-02-utah-jazz-at-phoenix-suns",
+     "result": "Utah Jazz 92, Phoenix Suns 105",
+     "winner": "Phoenix Suns"
     },
     {
      "game": 6,
@@ -536,7 +545,8 @@
      "home": "Utah Jazz",
      "away": "Phoenix Suns",
      "conditional": true,
-     "event_id": "2006-05-04-phoenix-suns-at-utah-jazz"
+     "event_id": "2006-05-04-phoenix-suns-at-utah-jazz",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -544,9 +554,11 @@
      "home": "Phoenix Suns",
      "away": "Utah Jazz",
      "conditional": true,
-     "event_id": "2006-05-06-utah-jazz-at-phoenix-suns"
+     "event_id": "2006-05-06-utah-jazz-at-phoenix-suns",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2006-05-02"
   },
   {
    "id": "west-4-5",
