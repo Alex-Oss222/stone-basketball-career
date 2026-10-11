@@ -220,7 +220,7 @@
    ],
    "home_court": "Boston Celtics",
    "wins": {
-    "Boston Celtics": 2,
+    "Boston Celtics": 3,
     "Atlanta Hawks": 1
    },
    "winner": null,
@@ -261,7 +261,9 @@
      "home": "Atlanta Hawks",
      "away": "Boston Celtics",
      "conditional": false,
-     "event_id": "2006-04-30-boston-celtics-at-atlanta-hawks"
+     "event_id": "2006-04-30-boston-celtics-at-atlanta-hawks",
+     "result": "Boston Celtics 92, Atlanta Hawks 84",
+     "winner": "Boston Celtics"
     },
     {
      "game": 5,
@@ -386,7 +388,7 @@
    ],
    "home_court": "Detroit Pistons",
    "wins": {
-    "Detroit Pistons": 1,
+    "Detroit Pistons": 2,
     "New Jersey Nets": 2
    },
    "winner": null,
@@ -427,7 +429,9 @@
      "home": "New Jersey Nets",
      "away": "Detroit Pistons",
      "conditional": false,
-     "event_id": "2006-04-30-detroit-pistons-at-new-jersey-nets"
+     "event_id": "2006-04-30-detroit-pistons-at-new-jersey-nets",
+     "result": "Detroit Pistons 84, New Jersey Nets 73",
+     "winner": "Detroit Pistons"
     },
     {
      "game": 5,
@@ -469,7 +473,7 @@
    ],
    "home_court": "Phoenix Suns",
    "wins": {
-    "Phoenix Suns": 2,
+    "Phoenix Suns": 3,
     "Utah Jazz": 1
    },
    "winner": null,
@@ -510,7 +514,9 @@
      "home": "Utah Jazz",
      "away": "Phoenix Suns",
      "conditional": false,
-     "event_id": "2006-04-30-phoenix-suns-at-utah-jazz"
+     "event_id": "2006-04-30-phoenix-suns-at-utah-jazz",
+     "result": "Phoenix Suns 97, Utah Jazz 84",
+     "winner": "Phoenix Suns"
     },
     {
      "game": 5,
@@ -635,10 +641,10 @@
    ],
    "home_court": "Minnesota Timberwolves",
    "wins": {
-    "Minnesota Timberwolves": 3,
+    "Minnesota Timberwolves": 4,
     "Los Angeles Lakers": 0
    },
-   "winner": null,
+   "winner": "Minnesota Timberwolves",
    "games": [
     {
      "game": 1,
@@ -676,7 +682,9 @@
      "home": "Los Angeles Lakers",
      "away": "Minnesota Timberwolves",
      "conditional": false,
-     "event_id": "2006-04-30-minnesota-timberwolves-at-los-angeles-lakers"
+     "event_id": "2006-04-30-minnesota-timberwolves-at-los-angeles-lakers",
+     "result": "Minnesota Timberwolves 96, Los Angeles Lakers 88",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 5,
@@ -684,7 +692,8 @@
      "home": "Minnesota Timberwolves",
      "away": "Los Angeles Lakers",
      "conditional": true,
-     "event_id": "2006-05-02-los-angeles-lakers-at-minnesota-timberwolves"
+     "event_id": "2006-05-02-los-angeles-lakers-at-minnesota-timberwolves",
+     "not_needed": true
     },
     {
      "game": 6,
@@ -692,7 +701,8 @@
      "home": "Los Angeles Lakers",
      "away": "Minnesota Timberwolves",
      "conditional": true,
-     "event_id": "2006-05-04-minnesota-timberwolves-at-los-angeles-lakers"
+     "event_id": "2006-05-04-minnesota-timberwolves-at-los-angeles-lakers",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -700,9 +710,11 @@
      "home": "Minnesota Timberwolves",
      "away": "Los Angeles Lakers",
      "conditional": true,
-     "event_id": "2006-05-06-los-angeles-lakers-at-minnesota-timberwolves"
+     "event_id": "2006-05-06-los-angeles-lakers-at-minnesota-timberwolves",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2006-04-30"
   },
   {
    "id": "west-2-7",

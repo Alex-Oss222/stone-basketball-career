@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of April 29, 2006: 74 weekly and monthly award decision(s) closed; 2 of 10 season awards decided.
+As of April 30, 2006: 74 weekly and monthly award decision(s) closed; 2 of 10 season awards decided.
 
 ## Individual awards
 
