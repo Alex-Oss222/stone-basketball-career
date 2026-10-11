@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of May 16, 2006: 74 weekly and monthly award decision(s) closed; 8 of 10 season awards decided.
+As of May 17, 2006: 74 weekly and monthly award decision(s) closed; 9 of 10 season awards decided.
 
 ## Individual awards
 
@@ -72,13 +72,13 @@ Announced April 25, 2006 · 124 media · ballot 5-3-1 · [tally](Season_Awards.m
 
 ## All-NBA teams
 
-Selection closes May 17, 2006 · 126 media · ballot 5-3-1.
+Announced May 17, 2006 · 126 media · ballot 5-3-1 · [tally](Season_Awards.md#all-nba-teams).
 
 | Team | Guard | Guard | Forward | Forward | Center |
 | --- | --- | --- | --- | --- | --- |
-| First | Not selected | Not selected | Not selected | Not selected | Not selected |
-| Second | Not selected | Not selected | Not selected | Not selected | Not selected |
-| Third | Not selected | Not selected | Not selected | Not selected | Not selected |
+| First | Dwyane Wade (Miami Heat) | Paul Pierce (Boston Celtics) | Kevin Garnett (Minnesota Timberwolves) | Dirk Nowitzki (Dallas Mavericks) | Shaquille O'Neal (Los Angeles Lakers) |
+| Second | Kobe Bryant (Los Angeles Lakers) | Vince Carter (Toronto Raptors) | Chris Bosh (Toronto Raptors) | LeBron James (Cleveland Cavaliers) | Brad Miller (Sacramento Kings) |
+| Third | Chauncey Billups (Detroit Pistons) | Allen Iverson (Philadelphia 76ers) | Shawn Marion (Phoenix Suns) | Elton Brand (Los Angeles Clippers) | Primož Brezec (Toronto Raptors) |
 
 ## All-Defensive teams
 

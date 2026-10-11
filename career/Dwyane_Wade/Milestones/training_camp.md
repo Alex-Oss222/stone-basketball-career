@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2006-05-14 · Miami Heat · complete
+Career date: 2006-05-17 · Miami Heat · complete
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -197,4 +197,5 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md)
 - [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.md)
 - [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.md)
+- [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

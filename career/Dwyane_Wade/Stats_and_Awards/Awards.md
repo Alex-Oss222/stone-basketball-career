@@ -2,11 +2,11 @@
 
 # Annual awards | Dwyane Wade
 
-Career cutoff: **2006-05-14**. [Open interactive Awards](player_cards.html#awards) · [All earned awards](../Awards.md) · [Full statistics](README.md)
+Career cutoff: **2006-05-17**. [Open interactive Awards](player_cards.html#awards) · [All earned awards](../Awards.md) · [Full statistics](README.md)
 
 ## 2003-04
 
-Only earned annual awards announced on or before 2006-05-14 appear. Weekly, monthly and unclassified recognition remains in the full award register.
+Only earned annual awards announced on or before 2006-05-17 appear. Weekly, monthly and unclassified recognition remains in the full award register.
 
 | Earned award | Season | Announced | Decision record |
 | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ Only earned annual awards announced on or before 2006-05-14 appear. Weekly, mont
 
 ## 2004-05
 
-Only earned annual awards announced on or before 2006-05-14 appear. Weekly, monthly and unclassified recognition remains in the full award register.
+Only earned annual awards announced on or before 2006-05-17 appear. Weekly, monthly and unclassified recognition remains in the full award register.
 
 | Earned award | Season | Announced | Decision record |
 | --- | --- | --- | --- |
@@ -38,13 +38,16 @@ Only earned annual awards announced on or before 2006-05-14 appear. Weekly, mont
 
 ## 2005-06
 
-Only earned annual awards announced on or before 2006-05-14 appear. Weekly, monthly and unclassified recognition remains in the full award register.
+Only earned annual awards announced on or before 2006-05-17 appear. Weekly, monthly and unclassified recognition remains in the full award register.
 
 | Earned award | Season | Announced | Decision record |
 | --- | --- | --- | --- |
 | All-Star | 2005-06 | 2006-02-02 | [Source](League/2005-06/All_Star.md#all-stars) |
 | Most Valuable Player | 2005-06 | 2006-05-07 | [Source](League/2005-06/Season_Awards.md#most-valuable-player) |
+| All-NBA First Team | 2005-06 | 2006-05-17 | [Source](League/2005-06/Season_Awards.md#all-nba-teams) |
 
 ![All-Star](assets/annual_3be1050ce0f2a88c.svg)
 
 ![Most Valuable Player](assets/annual_f2d902aeb44a6467.svg)
+
+![All-NBA First Team](assets/annual_4cd086b7e6184825.svg)

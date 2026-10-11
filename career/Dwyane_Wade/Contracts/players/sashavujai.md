@@ -2,9 +2,9 @@
 
 # Contract | Sasha Vujačić
 
-Known through: 2006-05-14. [Open interactive contract](sashavujai.html#contract) · [Contract history](sashavujai.html#contract-history)
+Known through: 2006-05-17. [Open interactive contract](sashavujai.html#contract) · [Contract history](sashavujai.html#contract-history)
 
-Sasha Vujačić: under contract. Evidence cutoff: 2006-05-14.
+Sasha Vujačić: under contract. Evidence cutoff: 2006-05-17.
 
 ## Current contract
 

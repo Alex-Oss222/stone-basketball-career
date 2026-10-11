@@ -1093,6 +1093,288 @@
      "points": 1
     }
    ]
+  },
+  {
+   "id": "2005-06-all_nba",
+   "award": "all_nba",
+   "name": "All-NBA Teams",
+   "announced_on": "2006-05-17",
+   "electorate": 126,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.2,
+    0.5
+   ],
+   "evidence_through": "2006-04-19",
+   "teams": [
+    {
+     "team": "First Team",
+     "players": [
+      {
+       "player": "Dwyane Wade",
+       "team": "Miami Heat",
+       "games": 82,
+       "mpg": 37.5,
+       "pts": 27.6,
+       "reb": 5.9,
+       "ast": 4.2,
+       "stl": 1.8,
+       "blk": 1.2,
+       "game_score": 24.39,
+       "position": "G",
+       "points": 630,
+       "first_team_votes": 126
+      },
+      {
+       "player": "Kevin Garnett",
+       "team": "Minnesota Timberwolves",
+       "games": 76,
+       "mpg": 41.4,
+       "pts": 26.4,
+       "reb": 11.5,
+       "ast": 3.6,
+       "stl": 1.8,
+       "blk": 1.2,
+       "game_score": 22.54,
+       "position": "F",
+       "points": 630,
+       "first_team_votes": 126
+      },
+      {
+       "player": "Paul Pierce",
+       "team": "Boston Celtics",
+       "games": 79,
+       "mpg": 39.9,
+       "pts": 28.5,
+       "reb": 7.1,
+       "ast": 5.1,
+       "stl": 1.7,
+       "blk": 0.4,
+       "game_score": 21.56,
+       "position": "G",
+       "points": 630,
+       "first_team_votes": 126
+      },
+      {
+       "player": "Shaquille O'Neal",
+       "team": "Los Angeles Lakers",
+       "games": 67,
+       "mpg": 36.4,
+       "pts": 21.8,
+       "reb": 9.6,
+       "ast": 2.7,
+       "stl": 0.6,
+       "blk": 1.6,
+       "game_score": 16.1,
+       "position": "C",
+       "points": 606,
+       "first_team_votes": 119
+      },
+      {
+       "player": "Dirk Nowitzki",
+       "team": "Dallas Mavericks",
+       "games": 81,
+       "mpg": 37.0,
+       "pts": 25.7,
+       "reb": 8.2,
+       "ast": 3.2,
+       "stl": 0.9,
+       "blk": 1.0,
+       "game_score": 20.36,
+       "position": "F",
+       "points": 522,
+       "first_team_votes": 72
+      }
+     ]
+    },
+    {
+     "team": "Second Team",
+     "players": [
+      {
+       "player": "Chris Bosh",
+       "team": "Toronto Raptors",
+       "games": 70,
+       "mpg": 37.7,
+       "pts": 21.8,
+       "reb": 10.5,
+       "ast": 3.4,
+       "stl": 0.9,
+       "blk": 1.3,
+       "game_score": 19.05,
+       "position": "F",
+       "points": 486,
+       "first_team_votes": 54
+      },
+      {
+       "player": "Brad Miller",
+       "team": "Sacramento Kings",
+       "games": 79,
+       "mpg": 35.6,
+       "pts": 16.1,
+       "reb": 6.5,
+       "ast": 4.6,
+       "stl": 0.7,
+       "blk": 0.5,
+       "game_score": 13.04,
+       "position": "C",
+       "points": 370,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Kobe Bryant",
+       "team": "Los Angeles Lakers",
+       "games": 80,
+       "mpg": 40.8,
+       "pts": 30.4,
+       "reb": 5.5,
+       "ast": 5.8,
+       "stl": 1.5,
+       "blk": 0.2,
+       "game_score": 21.76,
+       "position": "G",
+       "points": 362,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Vince Carter",
+       "team": "Toronto Raptors",
+       "games": 76,
+       "mpg": 35.6,
+       "pts": 21.6,
+       "reb": 5.6,
+       "ast": 5.5,
+       "stl": 1.2,
+       "blk": 0.6,
+       "game_score": 16.82,
+       "position": "G",
+       "points": 344,
+       "first_team_votes": 0
+      },
+      {
+       "player": "LeBron James",
+       "team": "Cleveland Cavaliers",
+       "games": 79,
+       "mpg": 40.0,
+       "pts": 27.5,
+       "reb": 6.6,
+       "ast": 5.5,
+       "stl": 1.3,
+       "blk": 0.8,
+       "game_score": 21.05,
+       "position": "F",
+       "points": 254,
+       "first_team_votes": 0
+      }
+     ]
+    },
+    {
+     "team": "Third Team",
+     "players": [
+      {
+       "player": "Shawn Marion",
+       "team": "Phoenix Suns",
+       "games": 81,
+       "mpg": 39.7,
+       "pts": 20.1,
+       "reb": 11.7,
+       "ast": 1.8,
+       "stl": 2.1,
+       "blk": 2.2,
+       "game_score": 19.24,
+       "position": "F",
+       "points": 250,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Chauncey Billups",
+       "team": "Detroit Pistons",
+       "games": 81,
+       "mpg": 37.9,
+       "pts": 20.2,
+       "reb": 3.9,
+       "ast": 7.1,
+       "stl": 1.1,
+       "blk": 0.2,
+       "game_score": 17.78,
+       "position": "G",
+       "points": 142,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Primož Brezec",
+       "team": "Toronto Raptors",
+       "games": 81,
+       "mpg": 27.3,
+       "pts": 11.8,
+       "reb": 5.0,
+       "ast": 1.0,
+       "stl": 0.3,
+       "blk": 0.4,
+       "game_score": 7.98,
+       "position": "C",
+       "points": 112,
+       "first_team_votes": 7
+      },
+      {
+       "player": "Allen Iverson",
+       "team": "Philadelphia 76ers",
+       "games": 72,
+       "mpg": 42.3,
+       "pts": 28.6,
+       "reb": 4.1,
+       "ast": 5.6,
+       "stl": 1.8,
+       "blk": 0.1,
+       "game_score": 18.14,
+       "position": "G",
+       "points": 84,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Elton Brand",
+       "team": "Los Angeles Clippers",
+       "games": 79,
+       "mpg": 36.8,
+       "pts": 21.1,
+       "reb": 7.7,
+       "ast": 2.4,
+       "stl": 0.9,
+       "blk": 2.2,
+       "game_score": 16.87,
+       "position": "F",
+       "points": 57,
+       "first_team_votes": 0
+      }
+     ]
+    }
+   ],
+   "others": [
+    {
+     "player": "Jason Terry",
+     "team": "Atlanta Hawks",
+     "points": 76
+    },
+    {
+     "player": "Hedo Turkoglu",
+     "team": "Toronto Raptors",
+     "points": 50
+    },
+    {
+     "player": "Yao Ming",
+     "team": "Houston Rockets",
+     "points": 46
+    },
+    {
+     "player": "Tim Duncan",
+     "team": "San Antonio Spurs",
+     "points": 19
+    }
+   ]
   }
  ]
 }

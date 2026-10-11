@@ -2,9 +2,9 @@
 
 # Contract | Andray Blatche
 
-Known through: 2006-05-14. [Open interactive contract](blatcan01.html#contract) · [Contract history](blatcan01.html#contract-history)
+Known through: 2006-05-17. [Open interactive contract](blatcan01.html#contract) · [Contract history](blatcan01.html#contract-history)
 
-Andray Blatche: under contract. Evidence cutoff: 2006-05-14.
+Andray Blatche: under contract. Evidence cutoff: 2006-05-17.
 
 ## Current contract
 

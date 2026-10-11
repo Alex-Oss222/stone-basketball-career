@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `garneke01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-05-14 · **Club on this date:** Minnesota Timberwolves · **Basis:** Minnesota Timberwolves: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-05-17 · **Club on this date:** Minnesota Timberwolves · **Basis:** Minnesota Timberwolves: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** PF (Power forward) · **Jersey:** #21 · **Born:** 1976-05-19 · **Age on card date:** 29  
 **Registry ID:** `garneke01` · [Basketball-Reference page](https://www.basketball-reference.com/players/g/garneke01.html) · ESPN ID 261
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `garnek
 
 ## Simulated statistics
 
-As of **2006-05-14**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-05-17**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 82 closed regular-season games through 2006-05-14. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 82 closed regular-season games through 2006-05-17. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,17 +115,17 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-14 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-17 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Minnesota Timberwolves | 21 | 21 | 39.3 | 23.0 | 13.0 | 6.0 | 1.4 | 1.6 | 2.6 | 51.9% | 22.2% | 73.4% |
 | 2004-05 | Minnesota Timberwolves | 16 | 16 | 37.3 | 20.2 | 11.9 | 6.0 | 2.0 | 0.9 | 2.3 | 47.8% | 10.0% | 84.8% |
-| 2005-06 | Minnesota Timberwolves | 7 | 7 | 39.2 | 27.3 | 9.7 | 4.6 | 2.3 | 0.6 | 3.3 | 56.1% | 0.0% | 82.7% |
+| 2005-06 | Minnesota Timberwolves | 8 | 8 | 37.7 | 26.6 | 9.5 | 4.2 | 2.0 | 0.5 | 3.0 | 56.2% | 0.0% | 84.5% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-05-14, from closed award decisions (39 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-05-17, from closed award decisions (40 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -200,3 +200,4 @@ Simulated honors and shortlist placings through 2006-05-14, from closed award de
 | West Player of the Month | 2006-04-01 to 2006-04-19 | 2006-04-21 | Shortlist, No. 3 | [Decision](../2005-06/04_April/League_Awards.md) |
 | Most Valuable Player | 2005-11-01 to 2006-04-19 | 2006-05-07 | No. 3 in the vote | [Decision](../2005-06/Season_Awards.md) |
 | All-Defensive Second Team | 2005-11-01 to 2006-04-19 | 2006-05-11 | **Selected** | [Decision](../2005-06/Season_Awards.md) |
+| All-NBA First Team | 2005-11-01 to 2006-04-19 | 2006-05-17 | **Selected** | [Decision](../2005-06/Season_Awards.md) |

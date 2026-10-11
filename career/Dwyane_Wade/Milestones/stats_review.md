@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2006-05-14 · Miami Heat · active
+Career date: 2006-05-17 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-99 closed game records in 2005-06 through 2006-05-14. Competitions remain separate.
+100 closed game records in 2005-06 through 2006-05-17. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | all star | 1 | 31.7 | 26.0 | 7.0 | 4.0 | 2.0 | Complete |
-| playoff | 9 | 34.4 | 22.8 | 5.4 | 3.8 | 2.3 | Complete |
+| playoff | 10 | 35.1 | 24.3 | 5.7 | 3.6 | 2.2 | Complete |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
 | regular | 82 | 37.5 | 27.6 | 5.9 | 4.2 | 1.8 | Complete |
 
@@ -26,7 +26,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | all star | 11 | 16 | 0.688 | 0 | 2 | 0.0 |
-| playoff | 74 | 128 | 0.578 | 5 | 15 | 0.333 |
+| playoff | 89 | 153 | 0.582 | 8 | 20 | 0.400 |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
 | regular | 782 | 1375 | 0.569 | 122 | 260 | 0.469 |
 
@@ -133,6 +133,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2006-05-10 | playoff | New Jersey Nets | Played | [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md) |
 | 2006-05-12 | playoff | New Jersey Nets | Played | [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.md) |
 | 2006-05-14 | playoff | New Jersey Nets | Played | [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.md) |
+| 2006-05-16 | playoff | New Jersey Nets | Played | [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_5.md) |
 
 ## Evidence available for decisions
 
@@ -276,4 +277,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_2.md)
 - [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.md)
 - [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.md)
+- [Closed game](../2005-06/08_Playoffs/Conference_Semifinals/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

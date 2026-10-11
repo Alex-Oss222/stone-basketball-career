@@ -209,7 +209,7 @@ Home court: Miami Heat. Miami Heat wins 4-1.
 
 ### West: (1) Phoenix Suns vs (4) San Antonio Spurs
 
-Home court: Phoenix Suns. Series Phoenix Suns 1, San Antonio Spurs 3.
+Home court: Phoenix Suns. San Antonio Spurs wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -217,13 +217,13 @@ Home court: Phoenix Suns. Series Phoenix Suns 1, San Antonio Spurs 3.
 | 2 | Thu May 11 | Phoenix Suns | San Antonio Spurs | San Antonio Spurs 115, Phoenix Suns 109 |
 | 3 | Sat May 13 | San Antonio Spurs | Phoenix Suns | Phoenix Suns 81, San Antonio Spurs 96 |
 | 4 | Mon May 15 | San Antonio Spurs | Phoenix Suns | Phoenix Suns 88, San Antonio Spurs 101 |
-| 5 | Wed May 17 | Phoenix Suns | San Antonio Spurs | if needed |
-| 6 | Fri May 19 | San Antonio Spurs | Phoenix Suns | if needed |
-| 7 | Sun May 21 | Phoenix Suns | San Antonio Spurs | if needed |
+| 5 | Wed May 17 | Phoenix Suns | San Antonio Spurs | San Antonio Spurs 108, Phoenix Suns 97 |
+| 6 | Fri May 19 | San Antonio Spurs | Phoenix Suns | not needed |
+| 7 | Sun May 21 | Phoenix Suns | San Antonio Spurs | not needed |
 
 ### West: (3) Minnesota Timberwolves vs (2) Dallas Mavericks
 
-Home court: Dallas Mavericks. Series Minnesota Timberwolves 1, Dallas Mavericks 3.
+Home court: Dallas Mavericks. Dallas Mavericks wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -231,9 +231,9 @@ Home court: Dallas Mavericks. Series Minnesota Timberwolves 1, Dallas Mavericks 
 | 2 | Thu May 11 | Dallas Mavericks | Minnesota Timberwolves | Minnesota Timberwolves 95, Dallas Mavericks 93 |
 | 3 | Sat May 13 | Minnesota Timberwolves | Dallas Mavericks | Dallas Mavericks 98, Minnesota Timberwolves 95 |
 | 4 | Mon May 15 | Minnesota Timberwolves | Dallas Mavericks | Dallas Mavericks 98, Minnesota Timberwolves 86 |
-| 5 | Wed May 17 | Dallas Mavericks | Minnesota Timberwolves | if needed |
-| 6 | Fri May 19 | Minnesota Timberwolves | Dallas Mavericks | if needed |
-| 7 | Sun May 21 | Dallas Mavericks | Minnesota Timberwolves | if needed |
+| 5 | Wed May 17 | Dallas Mavericks | Minnesota Timberwolves | Minnesota Timberwolves 90, Dallas Mavericks 94 |
+| 6 | Fri May 19 | Minnesota Timberwolves | Dallas Mavericks | not needed |
+| 7 | Sun May 21 | Dallas Mavericks | Minnesota Timberwolves | not needed |
 
 ## Conference finals
 
@@ -250,3 +250,17 @@ Home court: Toronto Raptors. Series Toronto Raptors 0, Miami Heat 0.
 | 5 | Wed May 31 | Toronto Raptors | Miami Heat | if needed |
 | 6 | Fri Jun 2 | Miami Heat | Toronto Raptors | if needed |
 | 7 | Sun Jun 4 | Toronto Raptors | Miami Heat | if needed |
+
+### West: (4) San Antonio Spurs vs (2) Dallas Mavericks
+
+Home court: Dallas Mavericks. Series San Antonio Spurs 0, Dallas Mavericks 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Wed May 24 | Dallas Mavericks | San Antonio Spurs |  |
+| 2 | Fri May 26 | Dallas Mavericks | San Antonio Spurs |  |
+| 3 | Sun May 28 | San Antonio Spurs | Dallas Mavericks |  |
+| 4 | Tue May 30 | San Antonio Spurs | Dallas Mavericks |  |
+| 5 | Thu Jun 1 | Dallas Mavericks | San Antonio Spurs | if needed |
+| 6 | Sat Jun 3 | San Antonio Spurs | Dallas Mavericks | if needed |
+| 7 | Mon Jun 5 | Dallas Mavericks | San Antonio Spurs | if needed |

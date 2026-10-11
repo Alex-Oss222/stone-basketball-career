@@ -1,6 +1,6 @@
 # 2005-06 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-05-11.
+Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-05-17.
 
 ## Calendar
 
@@ -14,7 +14,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2006-05-08 | Defensive Player of the Year | 124 media | 5-3-1 | decided |
 | 2006-05-10 | Rookie of the Year | 125 media | 5-3-1 | decided |
 | 2006-05-11 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | decided |
-| 2006-05-17 | All-NBA Teams | 126 media | 5-3-1 | pending |
+| 2006-05-17 | All-NBA Teams | 126 media | 5-3-1 | decided |
 | the night the Finals are clinched | Finals MVP | 10 media panel | 1 | pending |
 
 ## Coach of the Year
@@ -140,3 +140,39 @@ Announced 2006-05-11; 30 head coaches, not for their own players, ballot 2-1.
 | Paul Pierce | G | Boston Celtics | 79 | 39.9 | 28.5 | 7.1 | 5.1 | 1.7 | 0.4 | 21.56 | 26 | 3 |
 
 Also receiving votes: Jerry Stackhouse (Minnesota Timberwolves) 10, Eddie Griffin (Houston Rockets) 8, Smush Parker (Indiana Pacers) 8, T.J. Ford (Minnesota Timberwolves) 5, Jason Kidd (Milwaukee Bucks) 3, Josh Smith (Utah Jazz) 2, Jeff Foster (Indiana Pacers) 1, Samuel Dalembert (Philadelphia 76ers) 1.
+
+## All-NBA Teams
+
+Announced 2006-05-17; 126 media, ballot 5-3-1.
+
+### First Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dwyane Wade | G | Miami Heat | 82 | 37.5 | 27.6 | 5.9 | 4.2 | 1.8 | 1.2 | 24.39 | 630 | 126 |
+| Kevin Garnett | F | Minnesota Timberwolves | 76 | 41.4 | 26.4 | 11.5 | 3.6 | 1.8 | 1.2 | 22.54 | 630 | 126 |
+| Paul Pierce | G | Boston Celtics | 79 | 39.9 | 28.5 | 7.1 | 5.1 | 1.7 | 0.4 | 21.56 | 630 | 126 |
+| Shaquille O'Neal | C | Los Angeles Lakers | 67 | 36.4 | 21.8 | 9.6 | 2.7 | 0.6 | 1.6 | 16.1 | 606 | 119 |
+| Dirk Nowitzki | F | Dallas Mavericks | 81 | 37.0 | 25.7 | 8.2 | 3.2 | 0.9 | 1.0 | 20.36 | 522 | 72 |
+
+### Second Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Chris Bosh | F | Toronto Raptors | 70 | 37.7 | 21.8 | 10.5 | 3.4 | 0.9 | 1.3 | 19.05 | 486 | 54 |
+| Brad Miller | C | Sacramento Kings | 79 | 35.6 | 16.1 | 6.5 | 4.6 | 0.7 | 0.5 | 13.04 | 370 | 0 |
+| Kobe Bryant | G | Los Angeles Lakers | 80 | 40.8 | 30.4 | 5.5 | 5.8 | 1.5 | 0.2 | 21.76 | 362 | 0 |
+| Vince Carter | G | Toronto Raptors | 76 | 35.6 | 21.6 | 5.6 | 5.5 | 1.2 | 0.6 | 16.82 | 344 | 0 |
+| LeBron James | F | Cleveland Cavaliers | 79 | 40.0 | 27.5 | 6.6 | 5.5 | 1.3 | 0.8 | 21.05 | 254 | 0 |
+
+### Third Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Shawn Marion | F | Phoenix Suns | 81 | 39.7 | 20.1 | 11.7 | 1.8 | 2.1 | 2.2 | 19.24 | 250 | 0 |
+| Chauncey Billups | G | Detroit Pistons | 81 | 37.9 | 20.2 | 3.9 | 7.1 | 1.1 | 0.2 | 17.78 | 142 | 0 |
+| Primož Brezec | C | Toronto Raptors | 81 | 27.3 | 11.8 | 5.0 | 1.0 | 0.3 | 0.4 | 7.98 | 112 | 7 |
+| Allen Iverson | G | Philadelphia 76ers | 72 | 42.3 | 28.6 | 4.1 | 5.6 | 1.8 | 0.1 | 18.14 | 84 | 0 |
+| Elton Brand | F | Los Angeles Clippers | 79 | 36.8 | 21.1 | 7.7 | 2.4 | 0.9 | 2.2 | 16.87 | 57 | 0 |
+
+Also receiving votes: Jason Terry (Atlanta Hawks) 76, Hedo Turkoglu (Toronto Raptors) 50, Yao Ming (Houston Rockets) 46, Tim Duncan (San Antonio Spurs) 19.

@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `smithjo02.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-05-14 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2005-06 register · **League:** NBA  
+**Card date:** 2006-05-17 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2005-06 register · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #32 · **Born:** 1975-07-26 · **Age on card date:** 30  
 **Registry ID:** `smithjo02` · [Basketball-Reference page](https://www.basketball-reference.com/players/s/smithjo02.html) · ESPN ID 788
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `smithj
 
 ## Simulated statistics
 
-As of **2006-05-14**: 79 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-05-17**: 79 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 79 closed regular-season games through 2006-05-14. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 79 closed regular-season games through 2006-05-17. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,13 +115,13 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-14 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-17 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Milwaukee Bucks | 10 | 10 | 30.1 | 11.5 | 7.9 | 1.0 | 0.9 | 1.6 | 0.8 | 39.6% | 16.7% | 89.5% |
-| 2005-06 | Miami Heat | 9 | 9 | 33.2 | 13.9 | 6.3 | 2.0 | 0.9 | 0.6 | 1.0 | 50.0% | 0.0% | 93.1% |
+| 2005-06 | Miami Heat | 10 | 10 | 33.3 | 14.1 | 6.6 | 2.0 | 1.1 | 0.5 | 1.1 | 47.8% | 0.0% | 93.9% |
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2006-05-14. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2006-05-17. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
