@@ -2,9 +2,9 @@
 
 # Contract | Tommy Smith
 
-Known through: 2006-06-04. [Open interactive contract](smithto03.html#contract) · [Contract history](smithto03.html#contract-history)
+Known through: 2006-06-11. [Open interactive contract](smithto03.html#contract) · [Contract history](smithto03.html#contract-history)
 
-Tommy Smith: No verified contract record. Evidence cutoff: 2006-06-04.
+Tommy Smith: No verified contract record. Evidence cutoff: 2006-06-11.
 
 ## Current contract
 

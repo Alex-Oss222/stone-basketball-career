@@ -2,9 +2,9 @@
 
 # Contract | Darvin Ham
 
-Known through: 2006-06-04. [Open interactive contract](hamda01.html#contract) · [Contract history](hamda01.html#contract-history)
+Known through: 2006-06-11. [Open interactive contract](hamda01.html#contract) · [Contract history](hamda01.html#contract-history)
 
-Darvin Ham: under contract. Evidence cutoff: 2006-06-04.
+Darvin Ham: under contract. Evidence cutoff: 2006-06-11.
 
 ## Current contract
 

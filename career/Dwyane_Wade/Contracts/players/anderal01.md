@@ -2,9 +2,9 @@
 
 # Contract | Alan Anderson
 
-Known through: 2006-06-04. [Open interactive contract](anderal01.html#contract) · [Contract history](anderal01.html#contract-history)
+Known through: 2006-06-11. [Open interactive contract](anderal01.html#contract) · [Contract history](anderal01.html#contract-history)
 
-Alan Anderson: under contract. Evidence cutoff: 2006-06-04.
+Alan Anderson: under contract. Evidence cutoff: 2006-06-11.
 
 ## Current contract
 

@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2006-06-04** · Toronto Raptors · #4 · PF · age 22
+Career date: **2006-06-11** · Toronto Raptors · #4 · PF · age 22
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -34,7 +34,7 @@ Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 18/18 | 35.1 | 18.5 | 10.0 | 2.6 | 0.8 | 1.4 | 49.2 | 43.8 | 88.1 | 56.8 | 61-21 · won conference finals |
+| 2005-06 | 21 | Toronto Raptors | 20/20 | 34.5 | 18.9 | 9.7 | 2.5 | 0.9 | 1.4 | 50.3 | 42.1 | 88.2 | 57.8 | 61-21 · won conference finals |
 
 ## Season highs (regular season)
 
@@ -71,3 +71,5 @@ Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-
 | 2,000 career rebounds | 2006-04-07 | 22 years, 14 days | New Orleans/Oklahoma City Hornets |
 | 4,000 career points | 2006-04-19 | 22 years, 26 days | Chicago Bulls |
 | 500 career playoff points | 2006-04-23 | 22 years, 30 days | Cleveland Cavaliers |
+| 100 career playoff assists | 2006-06-08 | 22 years, 76 days | San Antonio Spurs |
+| 50 career playoff games | 2006-06-08 | 22 years, 76 days | San Antonio Spurs |

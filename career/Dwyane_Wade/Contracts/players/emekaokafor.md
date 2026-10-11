@@ -2,9 +2,9 @@
 
 # Contract | Emeka Okafor
 
-Known through: 2006-06-04. [Open interactive contract](emekaokafor.html#contract) · [Contract history](emekaokafor.html#contract-history)
+Known through: 2006-06-11. [Open interactive contract](emekaokafor.html#contract) · [Contract history](emekaokafor.html#contract-history)
 
-Emeka Okafor: under contract. Evidence cutoff: 2006-06-04.
+Emeka Okafor: under contract. Evidence cutoff: 2006-06-11.
 
 ## Current contract
 

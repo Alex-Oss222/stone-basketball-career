@@ -4,7 +4,7 @@
 
 NBA regular season · January 8-14, 2006
 
-407 tracked players · 52 closed games in this record · Through June 4, 2006.
+407 tracked players · 52 closed games in this record · Through June 11, 2006.
 
 ## Leaders
 

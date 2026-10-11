@@ -2,9 +2,9 @@
 
 # Contract | Geno Carlisle
 
-Known through: 2006-06-04. [Open interactive contract](carlige01.html#contract) · [Contract history](carlige01.html#contract-history)
+Known through: 2006-06-11. [Open interactive contract](carlige01.html#contract) · [Contract history](carlige01.html#contract-history)
 
-Geno Carlisle: No verified contract record. Evidence cutoff: 2006-06-04.
+Geno Carlisle: No verified contract record. Evidence cutoff: 2006-06-11.
 
 ## Current contract
 

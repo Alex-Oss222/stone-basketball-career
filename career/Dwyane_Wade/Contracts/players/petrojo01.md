@@ -2,9 +2,9 @@
 
 # Contract | Johan Petro
 
-Known through: 2006-06-04. [Open interactive contract](petrojo01.html#contract) · [Contract history](petrojo01.html#contract-history)
+Known through: 2006-06-11. [Open interactive contract](petrojo01.html#contract) · [Contract history](petrojo01.html#contract-history)
 
-Johan Petro: under contract. Evidence cutoff: 2006-06-04.
+Johan Petro: under contract. Evidence cutoff: 2006-06-11.
 
 ## Current contract
 

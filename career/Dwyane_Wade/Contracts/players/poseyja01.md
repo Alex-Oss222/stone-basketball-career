@@ -2,9 +2,9 @@
 
 # Contract | James Posey
 
-Known through: 2006-06-04. [Open interactive contract](poseyja01.html#contract) · [Contract history](poseyja01.html#contract-history)
+Known through: 2006-06-11. [Open interactive contract](poseyja01.html#contract) · [Contract history](poseyja01.html#contract-history)
 
-James Posey: under contract. Evidence cutoff: 2006-06-04.
+James Posey: under contract. Evidence cutoff: 2006-06-11.
 
 ## Current contract
 

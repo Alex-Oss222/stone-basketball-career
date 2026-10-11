@@ -4,7 +4,7 @@
 
 ![Chris Bosh career overview](assets/career_overview.svg)
 
-Career date: **2006-06-04** · Toronto Raptors · #4 · PF · age 22
+Career date: **2006-06-11** · Toronto Raptors · #4 · PF · age 22
 
 A real player the user follows, not one the user controls: his club decides his moves and the engine plays his games. Every number below comes from closed simulated games and the league's recorded award decisions.
 
@@ -37,7 +37,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | 19 | Toronto Raptors | 9/9 | 33.9 | 14.0 | 6.2 | 1.1 | 1.1 | 1.4 | 49.5 | 60.0 | 62.5 | 54.0 | 42-40 · lost conference semifinals |
 | 2004-05 | 20 | Toronto Raptors | 22/22 | 36.0 | 17.0 | 9.7 | 1.9 | 1.0 | 1.6 | 48.3 | 40.0 | 73.5 | 54.3 | 59-23 · lost finals |
-| 2005-06 | 21 | Toronto Raptors | 18/18 | 35.1 | 18.5 | 10.0 | 2.6 | 0.8 | 1.4 | 49.2 | 43.8 | 88.1 | 56.8 | 61-21 · won conference finals |
+| 2005-06 | 21 | Toronto Raptors | 20/20 | 34.5 | 18.9 | 9.7 | 2.5 | 0.9 | 1.4 | 50.3 | 42.1 | 88.2 | 57.8 | 61-21 · won conference finals |
 
 ## Awards
 
@@ -92,6 +92,8 @@ A real player the user follows, not one the user controls: his club decides his 
 | 25 career playoff games | 2005-06-02 | 21 years, 70 days | 2004-05 | 25 | Atlanta Hawks |
 | 250 career playoff rebounds | 2005-06-12 | 21 years, 80 days | 2004-05 | 29 | Sacramento Kings |
 | 500 career playoff points | 2006-04-23 | 22 years, 30 days | 2005-06 | 32 | Cleveland Cavaliers |
+| 100 career playoff assists | 2006-06-08 | 22 years, 76 days | 2005-06 | 50 | San Antonio Spurs |
+| 50 career playoff games | 2006-06-08 | 22 years, 76 days | 2005-06 | 50 | San Antonio Spurs |
 
 ## Next milestones
 
