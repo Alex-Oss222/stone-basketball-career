@@ -1407,7 +1407,7 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 2,
+    "Toronto Raptors": 3,
     "San Antonio Spurs": 1
    },
    "winner": null,
@@ -1448,7 +1448,9 @@
      "home": "San Antonio Spurs",
      "away": "Toronto Raptors",
      "conditional": false,
-     "event_id": "2006-06-15-toronto-raptors-at-san-antonio-spurs"
+     "event_id": "2006-06-15-toronto-raptors-at-san-antonio-spurs",
+     "result": "Toronto Raptors 109, San Antonio Spurs 107 (1OT)",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 5,
