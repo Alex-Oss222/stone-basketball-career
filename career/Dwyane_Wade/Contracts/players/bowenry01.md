@@ -2,9 +2,9 @@
 
 # Contract | Ryan Bowen
 
-Known through: 2006-05-08. [Open interactive contract](bowenry01.html#contract) · [Contract history](bowenry01.html#contract-history)
+Known through: 2006-05-10. [Open interactive contract](bowenry01.html#contract) · [Contract history](bowenry01.html#contract-history)
 
-Ryan Bowen: under contract. Evidence cutoff: 2006-05-08.
+Ryan Bowen: under contract. Evidence cutoff: 2006-05-10.
 
 ## Current contract
 

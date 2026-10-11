@@ -2,9 +2,9 @@
 
 # Contract | Manu Ginobili
 
-Known through: 2006-05-08. [Open interactive contract](ginobma01.html#contract) · [Contract history](ginobma01.html#contract-history)
+Known through: 2006-05-10. [Open interactive contract](ginobma01.html#contract) · [Contract history](ginobma01.html#contract-history)
 
-Manu Ginobili: under contract. Evidence cutoff: 2006-05-08.
+Manu Ginobili: under contract. Evidence cutoff: 2006-05-10.
 
 ## Current contract
 

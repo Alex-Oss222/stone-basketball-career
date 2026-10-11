@@ -195,12 +195,12 @@ Home court: Toronto Raptors. Series Toronto Raptors 1, Boston Celtics 1.
 
 ### East: (3) Miami Heat vs (7) New Jersey Nets
 
-Home court: Miami Heat. Series Miami Heat 1, New Jersey Nets 0.
+Home court: Miami Heat. Series Miami Heat 2, New Jersey Nets 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Mon May 8 | Miami Heat | New Jersey Nets | New Jersey Nets 105, Miami Heat 109 |
-| 2 | Wed May 10 | Miami Heat | New Jersey Nets |  |
+| 2 | Wed May 10 | Miami Heat | New Jersey Nets | New Jersey Nets 111, Miami Heat 112 |
 | 3 | Fri May 12 | New Jersey Nets | Miami Heat |  |
 | 4 | Sun May 14 | New Jersey Nets | Miami Heat |  |
 | 5 | Tue May 16 | Miami Heat | New Jersey Nets | if needed |

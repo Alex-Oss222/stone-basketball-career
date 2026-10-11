@@ -769,6 +769,109 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2005-06-roy",
+   "award": "roy",
+   "name": "Rookie of the Year",
+   "announced_on": "2006-05-10",
+   "electorate": 125,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.0,
+    0.25
+   ],
+   "evidence_through": "2006-04-19",
+   "winners": [
+    "Chris Paul"
+   ],
+   "tally": [
+    {
+     "player": "Chris Paul",
+     "team": "Utah Jazz",
+     "games": 78,
+     "mpg": 37.2,
+     "pts": 20.8,
+     "reb": 5.2,
+     "ast": 7.2,
+     "stl": 2.3,
+     "blk": 0.2,
+     "game_score": 18.69,
+     "club_pct": 0.5,
+     "points": 625,
+     "first_place": 125,
+     "votes_by_place": [
+      125,
+      0,
+      0
+     ]
+    },
+    {
+     "player": "Charlie Villanueva",
+     "team": "Memphis Grizzlies",
+     "games": 80,
+     "mpg": 29.2,
+     "pts": 12.8,
+     "reb": 6.5,
+     "ast": 1.4,
+     "stl": 0.8,
+     "blk": 0.8,
+     "game_score": 9.73,
+     "club_pct": 0.427,
+     "points": 349,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      112,
+      13
+     ]
+    },
+    {
+     "player": "Raymond Felton",
+     "team": "Dallas Mavericks",
+     "games": 81,
+     "mpg": 29.2,
+     "pts": 10.0,
+     "reb": 3.8,
+     "ast": 5.2,
+     "stl": 1.2,
+     "blk": 0.1,
+     "game_score": 8.89,
+     "club_pct": 0.646,
+     "points": 102,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      13,
+      63
+     ]
+    },
+    {
+     "player": "Deron Williams",
+     "team": "New York Knicks",
+     "games": 80,
+     "mpg": 30.7,
+     "pts": 12.8,
+     "reb": 2.9,
+     "ast": 4.6,
+     "stl": 0.9,
+     "blk": 0.2,
+     "game_score": 8.46,
+     "club_pct": 0.305,
+     "points": 49,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      49
+     ]
+    }
+   ]
   }
  ]
 }

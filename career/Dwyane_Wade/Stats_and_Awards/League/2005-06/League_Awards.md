@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of May 9, 2006: 74 weekly and monthly award decision(s) closed; 6 of 10 season awards decided.
+As of May 10, 2006: 74 weekly and monthly award decision(s) closed; 7 of 10 season awards decided.
 
 ## Individual awards
 
@@ -22,13 +22,13 @@ Announced May 7, 2006 · 125 media · ballot 10-7-5-3-1 · [tally](Season_Awards
 
 ### Rookie of the Year
 
-Vote closes May 10, 2006 · 125 media · ballot 5-3-1.
+Announced May 10, 2006 · 125 media · ballot 5-3-1 · [tally](Season_Awards.md#rookie-of-the-year).
 
 | Rank slot | Player | Team | 1st votes | Points | Status |
 | ---: | --- | --- | ---: | ---: | --- |
-| 1 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 10, 2006) |
-| 2 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 10, 2006) |
-| 3 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 10, 2006) |
+| 1 | Chris Paul | Utah Jazz | 125 | 625 | **WINNER** |
+| 2 | Charlie Villanueva | Memphis Grizzlies | 0 | 349 | Runner-up |
+| 3 | Raymond Felton | Dallas Mavericks | 0 | 102 | Third |
 
 ### Defensive Player of the Year
 

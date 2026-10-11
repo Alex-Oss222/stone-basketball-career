@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-05-08**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-05-10**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -186,7 +186,7 @@ Card date: **2006-05-08**. 653 registry players, one Markdown card and one inter
 | [Dion Glover](glovedi01.md) | Free agent | 27 | silhouette | [open](glovedi01.html) |
 | [Donell Taylor](taylodo01.md) | Sacramento Kings | 23 | silhouette | [open](taylodo01.html) |
 | [Donta Smith](dontasmith.md) | Washington Wizards | 22 | silhouette | [open](dontasmith.html) |
-| [Doug Christie](chrisdo01.md) | Houston Rockets | 35 | sourced | [open](chrisdo01.html) |
+| [Doug Christie](chrisdo01.md) | Houston Rockets | 36 | sourced | [open](chrisdo01.html) |
 | [Dwyane Wade](wadedw01.md) | Miami Heat | 22 | sourced | [open](wadedw01.html) |
 | [Eddie House](houseed01.md) | Boston Celtics | 27 | sourced | [open](houseed01.html) |
 | [Eddie Jones](jonesed02.md) | Miami Heat | 34 | silhouette | [open](jonesed02.html) |
@@ -475,7 +475,7 @@ Card date: **2006-05-08**. 653 registry players, one Markdown card and one inter
 | [Jason Maxiell](maxieja01.md) | Memphis Grizzlies | 23 | silhouette | [open](maxieja01.html) |
 | [Jermaine O'Neal](onealje01.md) | Indiana Pacers | 27 | sourced | [open](onealje01.html) |
 | [Jerome Beasley](beaslje01.md) | Free agent | 25 | sourced | [open](beaslje01.html) |
-| [Jerome Williams](willije01.md) | Free agent | 32 | sourced | [open](willije01.html) |
+| [Jerome Williams](willije01.md) | Free agent | 33 | sourced | [open](willije01.html) |
 | [John Wallace](wallajo01.md) | Free agent | 32 | silhouette | [open](wallajo01.html) |
 | [Josh Davis](davisjo02.md) | Phoenix Suns | 25 | silhouette | [open](davisjo02.html) |
 | [Josh Powell](poweljo01.md) | Detroit Pistons | 23 | silhouette | [open](poweljo01.html) |
@@ -679,7 +679,7 @@ Card date: **2006-05-08**. 653 registry players, one Markdown card and one inter
 | [Ronny Turiaf](turiaro01.md) | Boston Celtics | 23 | silhouette | [open](turiaro01.html) |
 | [Ruben Boumtje-Boumtje](boumtru01.md) | Free agent | 27 | silhouette | [open](boumtru01.html) |
 | [Samaki Walker](walkesa01.md) | Portland Trail Blazers | 30 | sourced | [open](walkesa01.html) |
-| [Samuel Dalembert](dalemsa01.md) | Philadelphia 76ers | 24 | silhouette | [open](dalemsa01.html) |
+| [Samuel Dalembert](dalemsa01.md) | Philadelphia 76ers | 25 | silhouette | [open](dalemsa01.html) |
 | [Scot Pollard](pollasc01.md) | Boston Celtics | 31 | sourced | [open](pollasc01.html) |
 | [Scott Williams](willisc01.md) | Free agent | 38 | sourced | [open](willisc01.html) |
 | [Sean Rooks](rooksse01.md) | Free agent | 36 | sourced | [open](rooksse01.html) |

@@ -2,9 +2,9 @@
 
 # Contract | Sebastian Telfair
 
-Known through: 2006-05-08. [Open interactive contract](sebastiantelfair.html#contract) · [Contract history](sebastiantelfair.html#contract-history)
+Known through: 2006-05-10. [Open interactive contract](sebastiantelfair.html#contract) · [Contract history](sebastiantelfair.html#contract-history)
 
-Sebastian Telfair: under rookie contract. Evidence cutoff: 2006-05-08.
+Sebastian Telfair: under rookie contract. Evidence cutoff: 2006-05-10.
 
 ## Current contract
 
