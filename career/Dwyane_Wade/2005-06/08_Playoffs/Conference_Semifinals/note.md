@@ -15,5 +15,6 @@ round: conference_semifinals
 - 2006-05-10: New Jersey Nets 111 at Miami Heat 112 — Miami Heat W 112-111 ([Game 2](Game_2.md), event `2006-05-10-new-jersey-nets-at-miami-heat`)
 - 2006-05-12: Miami Heat 106 at New Jersey Nets 83 — Miami Heat W 106-83 ([Game 3](Game_3.md), event `2006-05-12-miami-heat-at-new-jersey-nets`)
 - 2006-05-14: Miami Heat 111 at New Jersey Nets 115 — Miami Heat L 111-115 ([Game 4](Game_4.md), event `2006-05-14-miami-heat-at-new-jersey-nets`)
+- 2006-05-16: New Jersey Nets 102 at Miami Heat 108 — Miami Heat W 108-102 ([Game 5](Game_5.md), event `2006-05-16-new-jersey-nets-at-miami-heat`)
 
 ## Consequences

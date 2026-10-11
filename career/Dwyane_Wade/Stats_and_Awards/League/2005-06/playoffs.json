@@ -953,10 +953,10 @@
    ],
    "home_court": "Miami Heat",
    "wins": {
-    "Miami Heat": 3,
+    "Miami Heat": 4,
     "New Jersey Nets": 1
    },
-   "winner": null,
+   "winner": "Miami Heat",
    "games": [
     {
      "game": 1,
@@ -1004,7 +1004,9 @@
      "home": "Miami Heat",
      "away": "New Jersey Nets",
      "conditional": true,
-     "event_id": "2006-05-16-new-jersey-nets-at-miami-heat"
+     "event_id": "2006-05-16-new-jersey-nets-at-miami-heat",
+     "result": "New Jersey Nets 102, Miami Heat 108",
+     "winner": "Miami Heat"
     },
     {
      "game": 6,
@@ -1012,7 +1014,8 @@
      "home": "New Jersey Nets",
      "away": "Miami Heat",
      "conditional": true,
-     "event_id": "2006-05-18-miami-heat-at-new-jersey-nets"
+     "event_id": "2006-05-18-miami-heat-at-new-jersey-nets",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -1020,9 +1023,11 @@
      "home": "Miami Heat",
      "away": "New Jersey Nets",
      "conditional": true,
-     "event_id": "2006-05-20-new-jersey-nets-at-miami-heat"
+     "event_id": "2006-05-20-new-jersey-nets-at-miami-heat",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2006-05-16"
   },
   {
    "id": "west-semi-a",
@@ -1191,6 +1196,83 @@
      "away": "Minnesota Timberwolves",
      "conditional": true,
      "event_id": "2006-05-21-minnesota-timberwolves-at-dallas-mavericks"
+    }
+   ]
+  },
+  {
+   "id": "east-final",
+   "round": "conference_finals",
+   "conference": "East",
+   "seeds": [
+    1,
+    3
+   ],
+   "clubs": [
+    "Toronto Raptors",
+    "Miami Heat"
+   ],
+   "home_court": "Toronto Raptors",
+   "wins": {
+    "Toronto Raptors": 0,
+    "Miami Heat": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2006-05-23",
+     "home": "Toronto Raptors",
+     "away": "Miami Heat",
+     "conditional": false,
+     "event_id": "2006-05-23-miami-heat-at-toronto-raptors"
+    },
+    {
+     "game": 2,
+     "date": "2006-05-25",
+     "home": "Toronto Raptors",
+     "away": "Miami Heat",
+     "conditional": false,
+     "event_id": "2006-05-25-miami-heat-at-toronto-raptors"
+    },
+    {
+     "game": 3,
+     "date": "2006-05-27",
+     "home": "Miami Heat",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2006-05-27-toronto-raptors-at-miami-heat"
+    },
+    {
+     "game": 4,
+     "date": "2006-05-29",
+     "home": "Miami Heat",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2006-05-29-toronto-raptors-at-miami-heat"
+    },
+    {
+     "game": 5,
+     "date": "2006-05-31",
+     "home": "Toronto Raptors",
+     "away": "Miami Heat",
+     "conditional": true,
+     "event_id": "2006-05-31-miami-heat-at-toronto-raptors"
+    },
+    {
+     "game": 6,
+     "date": "2006-06-02",
+     "home": "Miami Heat",
+     "away": "Toronto Raptors",
+     "conditional": true,
+     "event_id": "2006-06-02-toronto-raptors-at-miami-heat"
+    },
+    {
+     "game": 7,
+     "date": "2006-06-04",
+     "home": "Toronto Raptors",
+     "away": "Miami Heat",
+     "conditional": true,
+     "event_id": "2006-06-04-miami-heat-at-toronto-raptors"
     }
    ]
   }

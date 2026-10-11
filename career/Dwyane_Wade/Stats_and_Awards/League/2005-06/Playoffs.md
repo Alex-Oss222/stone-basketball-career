@@ -195,7 +195,7 @@ Home court: Toronto Raptors. Toronto Raptors wins 4-1.
 
 ### East: (3) Miami Heat vs (7) New Jersey Nets
 
-Home court: Miami Heat. Series Miami Heat 3, New Jersey Nets 1.
+Home court: Miami Heat. Miami Heat wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -203,9 +203,9 @@ Home court: Miami Heat. Series Miami Heat 3, New Jersey Nets 1.
 | 2 | Wed May 10 | Miami Heat | New Jersey Nets | New Jersey Nets 111, Miami Heat 112 |
 | 3 | Fri May 12 | New Jersey Nets | Miami Heat | Miami Heat 106, New Jersey Nets 83 |
 | 4 | Sun May 14 | New Jersey Nets | Miami Heat | Miami Heat 111, New Jersey Nets 115 |
-| 5 | Tue May 16 | Miami Heat | New Jersey Nets | if needed |
-| 6 | Thu May 18 | New Jersey Nets | Miami Heat | if needed |
-| 7 | Sat May 20 | Miami Heat | New Jersey Nets | if needed |
+| 5 | Tue May 16 | Miami Heat | New Jersey Nets | New Jersey Nets 102, Miami Heat 108 |
+| 6 | Thu May 18 | New Jersey Nets | Miami Heat | not needed |
+| 7 | Sat May 20 | Miami Heat | New Jersey Nets | not needed |
 
 ### West: (1) Phoenix Suns vs (4) San Antonio Spurs
 
@@ -234,3 +234,19 @@ Home court: Dallas Mavericks. Series Minnesota Timberwolves 1, Dallas Mavericks 
 | 5 | Wed May 17 | Dallas Mavericks | Minnesota Timberwolves | if needed |
 | 6 | Fri May 19 | Minnesota Timberwolves | Dallas Mavericks | if needed |
 | 7 | Sun May 21 | Dallas Mavericks | Minnesota Timberwolves | if needed |
+
+## Conference finals
+
+### East: (1) Toronto Raptors vs (3) Miami Heat
+
+Home court: Toronto Raptors. Series Toronto Raptors 0, Miami Heat 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Tue May 23 | Toronto Raptors | Miami Heat |  |
+| 2 | Thu May 25 | Toronto Raptors | Miami Heat |  |
+| 3 | Sat May 27 | Miami Heat | Toronto Raptors |  |
+| 4 | Mon May 29 | Miami Heat | Toronto Raptors |  |
+| 5 | Wed May 31 | Toronto Raptors | Miami Heat | if needed |
+| 6 | Fri Jun 2 | Miami Heat | Toronto Raptors | if needed |
+| 7 | Sun Jun 4 | Toronto Raptors | Miami Heat | if needed |
