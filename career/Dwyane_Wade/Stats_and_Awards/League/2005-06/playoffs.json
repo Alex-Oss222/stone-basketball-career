@@ -1302,7 +1302,7 @@
    ],
    "home_court": "Dallas Mavericks",
    "wins": {
-    "San Antonio Spurs": 0,
+    "San Antonio Spurs": 1,
     "Dallas Mavericks": 0
    },
    "winner": null,
@@ -1313,7 +1313,9 @@
      "home": "Dallas Mavericks",
      "away": "San Antonio Spurs",
      "conditional": false,
-     "event_id": "2006-05-24-san-antonio-spurs-at-dallas-mavericks"
+     "event_id": "2006-05-24-san-antonio-spurs-at-dallas-mavericks",
+     "result": "San Antonio Spurs 112, Dallas Mavericks 101",
+     "winner": "San Antonio Spurs"
     },
     {
      "game": 2,

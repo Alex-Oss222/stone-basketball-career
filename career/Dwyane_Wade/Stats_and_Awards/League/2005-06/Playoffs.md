@@ -253,11 +253,11 @@ Home court: Toronto Raptors. Series Toronto Raptors 1, Miami Heat 0.
 
 ### West: (4) San Antonio Spurs vs (2) Dallas Mavericks
 
-Home court: Dallas Mavericks. Series San Antonio Spurs 0, Dallas Mavericks 0.
+Home court: Dallas Mavericks. Series San Antonio Spurs 1, Dallas Mavericks 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Wed May 24 | Dallas Mavericks | San Antonio Spurs |  |
+| 1 | Wed May 24 | Dallas Mavericks | San Antonio Spurs | San Antonio Spurs 112, Dallas Mavericks 101 |
 | 2 | Fri May 26 | Dallas Mavericks | San Antonio Spurs |  |
 | 3 | Sun May 28 | San Antonio Spurs | Dallas Mavericks |  |
 | 4 | Tue May 30 | San Antonio Spurs | Dallas Mavericks |  |
