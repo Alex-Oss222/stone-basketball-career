@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2006-05-04**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2006-05-07**. 653 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 130 players</summary>
@@ -32,7 +32,7 @@ Card date: **2006-05-04**. 653 registry players, one Markdown card and one inter
 | [Carlos Arroyo](arroyca01.md) | Dallas Mavericks | 26 | sourced | [open](arroyca01.html) |
 | [Charlie Ward](wardch01.md) | Free agent | 35 | sourced | [open](wardch01.html) |
 | [Chauncey Billups](billuch01.md) | Detroit Pistons | 29 | sourced | [open](billuch01.html) |
-| [Chris Paul](paulch01.md) | Utah Jazz | 20 | silhouette | [open](paulch01.html) |
+| [Chris Paul](paulch01.md) | Utah Jazz | 21 | silhouette | [open](paulch01.html) |
 | [Chris Whitney](whitnch01.md) | Free agent | 34 | silhouette | [open](whitnch01.html) |
 | [Chucky Atkins](atkinch01.md) | Los Angeles Lakers | 31 | sourced | [open](atkinch01.html) |
 | [Courtney Alexander](alexaco02.md) | Free agent | 29 | silhouette | [open](alexaco02.html) |
@@ -95,7 +95,7 @@ Card date: **2006-05-04**. 653 registry players, one Markdown card and one inter
 | [Mickael Pietrus](pietrmi01.md) | Charlotte Bobcats | 24 | sourced | [open](pietrmi01.html) |
 | [Mike Bibby](bibbymi01.md) | Sacramento Kings | 27 | sourced | [open](bibbymi01.html) |
 | [Mike James](jamesmi01.md) | Miami Heat | 30 | sourced | [open](jamesmi01.html) |
-| [Mike Wilks](wilksmi01.md) | Miami Heat | 26 | sourced | [open](wilksmi01.html) |
+| [Mike Wilks](wilksmi01.md) | Miami Heat | 27 | sourced | [open](wilksmi01.html) |
 | [Milt Palacio](palacmi01.md) | New York Knicks | 28 | sourced | [open](palacmi01.html) |
 | [Mo Williams](willima01.md) | Cleveland Cavaliers | 23 | sourced | [open](willima01.html) |
 | [Moochie Norris](norrimo01.md) | Charlotte Bobcats | 32 | sourced | [open](norrimo01.html) |
@@ -300,7 +300,7 @@ Card date: **2006-05-04**. 653 registry players, one Markdown card and one inter
 | [Danny Ferry](ferryda01.md) | Free agent | 39 | sourced | [open](ferryda01.html) |
 | [Danny Granger](grangda01.md) | New Orleans/Oklahoma City Hornets | 23 | silhouette | [open](grangda01.html) |
 | [Darius Miles](milesda01.md) | Cleveland Cavaliers | 24 | sourced | [open](milesda01.html) |
-| [DerMarr Johnson](johnsde03.md) | San Antonio Spurs | 25 | silhouette | [open](johnsde03.html) |
+| [DerMarr Johnson](johnsde03.md) | San Antonio Spurs | 26 | silhouette | [open](johnsde03.html) |
 | [Desmond Ferguson](fergude01.md) | Free agent | 28 | silhouette | [open](fergude01.html) |
 | [Desmond Mason](masonde01.md) | Milwaukee Bucks | 28 | sourced | [open](masonde01.html) |
 | [Devean George](georgde01.md) | San Antonio Spurs | 28 | sourced | [open](georgde01.html) |
@@ -384,7 +384,7 @@ Card date: **2006-05-04**. 653 registry players, one Markdown card and one inter
 | [Sergei Monia](moniase01.md) | Atlanta Hawks | 23 | silhouette | [open](moniase01.html) |
 | [Shandon Anderson](andersh01.md) | New York Knicks | 32 | sourced | [open](andersh01.html) |
 | [Shane Battier](battish01.md) | New Orleans/Oklahoma City Hornets | 27 | sourced | [open](battish01.html) |
-| [Shawn Marion](mariosh01.md) | Phoenix Suns | 27 | sourced | [open](mariosh01.html) |
+| [Shawn Marion](mariosh01.md) | Phoenix Suns | 28 | sourced | [open](mariosh01.html) |
 | [Tayshaun Prince](princta01.md) | Golden State Warriors | 26 | sourced | [open](princta01.html) |
 | [Terence Morris](morrite01.md) | Philadelphia 76ers | 27 | sourced | [open](morrite01.html) |
 | [Theron Smith](smithth01.md) | Free agent | 25 | silhouette | [open](smithth01.html) |
@@ -397,7 +397,7 @@ Card date: **2006-05-04**. 653 registry players, one Markdown card and one inter
 | [Wally Szczerbiak](szczewa02.md) | New Jersey Nets | 29 | sourced | [open](szczewa02.html) |
 | [Walt Williams](williwa02.md) | Free agent | 36 | silhouette | [open](williwa02.html) |
 | [Walter McCarty](mccarwa01.md) | Boston Celtics | 32 | silhouette | [open](mccarwa01.html) |
-| [Yaroslav Korolev](korolya01.md) | Denver Nuggets | 18 | silhouette | [open](korolya01.html) |
+| [Yaroslav Korolev](korolya01.md) | Denver Nuggets | 19 | silhouette | [open](korolya01.html) |
 | [Zarko Cabarkapa](cabarza01.md) | Portland Trail Blazers | 24 | sourced | [open](cabarza01.html) |
 | [fitchge01](fitchge01.md) | Free agent | 23 | silhouette | [open](fitchge01.html) |
 | [walshma01](walshma01.md) | Free agent | 23 | silhouette | [open](walshma01.html) |
@@ -487,7 +487,7 @@ Card date: **2006-05-04**. 653 registry players, one Markdown card and one inter
 | [Kenyon Martin](martike01.md) | New Jersey Nets | 28 | sourced | [open](martike01.html) |
 | [Kevin Garnett](garneke01.md) | Minnesota Timberwolves | 29 | sourced | [open](garneke01.html) |
 | [Kris Humphries](krishumphries.md) | Utah Jazz | 21 | silhouette | [open](krishumphries.html) |
-| [LaPhonso Ellis](ellisla01.md) | Free agent | 35 | sourced | [open](ellisla01.html) |
+| [LaPhonso Ellis](ellisla01.md) | Free agent | 36 | sourced | [open](ellisla01.html) |
 | [Lawrence Funderburke](fundela01.md) | Free agent | 35 | silhouette | [open](fundela01.html) |
 | [Linas Kleiza](kleizli01.md) | New Jersey Nets | 21 | silhouette | [open](kleizli01.html) |
 | [Maceo Baston](bastoma01.md) | Free agent | 30 | sourced | [open](bastoma01.html) |
@@ -578,7 +578,7 @@ Card date: **2006-05-04**. 653 registry players, one Markdown card and one inter
 | [Brian Grant](grantbr01.md) | New Orleans/Oklahoma City Hornets | 34 | silhouette | [open](grantbr01.html) |
 | [Britton Johnsen](johnsbr01.md) | Free agent | 26 | silhouette | [open](johnsbr01.html) |
 | [Bruno Šundov](sundobr01.md) | Free agent | 26 | silhouette | [open](sundobr01.html) |
-| [Calvin Booth](boothca01.md) | Golden State Warriors | 29 | sourced | [open](boothca01.html) |
+| [Calvin Booth](boothca01.md) | Golden State Warriors | 30 | sourced | [open](boothca01.html) |
 | [Cezary Trybanski](trybace01.md) | Free agent | 26 | sourced | [open](trybace01.html) |
 | [Channing Frye](fryech01.md) | New Jersey Nets | 22 | silhouette | [open](fryech01.html) |
 | [Charles Oakley](oaklech01.md) | Free agent | 42 | sourced | [open](oaklech01.html) |

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2006-05-04",
+  "as_of": "2006-05-07",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2006-05-04"
+              "2006-05-07"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2006-05-04",
+              "2006-05-07",
               "Current checkpoint",
               "2006-05-03-orlando-magic-at-miami-heat",
               "Recorded",
@@ -828,7 +828,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-04"
+          "value": "2006-05-07"
         },
         {
           "label": "Team",
@@ -1446,7 +1446,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-04"
+          "value": "2006-05-07"
         },
         {
           "label": "Team",
@@ -2101,7 +2101,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-04"
+          "value": "2006-05-07"
         },
         {
           "label": "Team",
@@ -2789,7 +2789,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-04"
+          "value": "2006-05-07"
         },
         {
           "label": "Team",
@@ -3382,7 +3382,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-04"
+          "value": "2006-05-07"
         },
         {
           "label": "Team",
@@ -4018,7 +4018,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-04"
+          "value": "2006-05-07"
         },
         {
           "label": "Team",
@@ -4611,7 +4611,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-04"
+          "value": "2006-05-07"
         },
         {
           "label": "Team",
@@ -5280,7 +5280,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-04"
+          "value": "2006-05-07"
         },
         {
           "label": "Team",
@@ -5297,7 +5297,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "95 closed game records in 2005-06 through 2006-05-04. Competitions remain separate.",
+      "summary": "95 closed game records in 2005-06 through 2006-05-07. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -6877,7 +6877,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-04"
+          "value": "2006-05-07"
         },
         {
           "label": "Team",

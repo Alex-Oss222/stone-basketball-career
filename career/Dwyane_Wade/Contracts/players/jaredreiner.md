@@ -2,9 +2,9 @@
 
 # Contract | Jared Reiner
 
-Known through: 2006-05-04. [Open interactive contract](jaredreiner.html#contract) · [Contract history](jaredreiner.html#contract-history)
+Known through: 2006-05-07. [Open interactive contract](jaredreiner.html#contract) · [Contract history](jaredreiner.html#contract-history)
 
-Jared Reiner: under contract. Evidence cutoff: 2006-05-04.
+Jared Reiner: under contract. Evidence cutoff: 2006-05-07.
 
 ## Current contract
 

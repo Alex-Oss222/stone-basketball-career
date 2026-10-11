@@ -2,9 +2,9 @@
 
 # Contract | Linas Kleiza
 
-Known through: 2006-05-04. [Open interactive contract](kleizli01.html#contract) · [Contract history](kleizli01.html#contract-history)
+Known through: 2006-05-07. [Open interactive contract](kleizli01.html#contract) · [Contract history](kleizli01.html#contract-history)
 
-Linas Kleiza: under contract. Evidence cutoff: 2006-05-04.
+Linas Kleiza: under contract. Evidence cutoff: 2006-05-07.
 
 ## Current contract
 

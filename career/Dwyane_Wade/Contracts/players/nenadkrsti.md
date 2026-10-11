@@ -2,9 +2,9 @@
 
 # Contract | Nenad Krstić
 
-Known through: 2006-05-04. [Open interactive contract](nenadkrsti.html#contract) · [Contract history](nenadkrsti.html#contract-history)
+Known through: 2006-05-07. [Open interactive contract](nenadkrsti.html#contract) · [Contract history](nenadkrsti.html#contract-history)
 
-Nenad Krstić: under contract. Evidence cutoff: 2006-05-04.
+Nenad Krstić: under contract. Evidence cutoff: 2006-05-07.
 
 ## Current contract
 

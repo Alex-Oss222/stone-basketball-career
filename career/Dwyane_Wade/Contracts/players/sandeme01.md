@@ -2,9 +2,9 @@
 
 # Contract | Melvin Sanders
 
-Known through: 2006-05-04. [Open interactive contract](sandeme01.html#contract) · [Contract history](sandeme01.html#contract-history)
+Known through: 2006-05-07. [Open interactive contract](sandeme01.html#contract) · [Contract history](sandeme01.html#contract-history)
 
-Melvin Sanders: under contract. Evidence cutoff: 2006-05-04.
+Melvin Sanders: under contract. Evidence cutoff: 2006-05-07.
 
 ## Current contract
 

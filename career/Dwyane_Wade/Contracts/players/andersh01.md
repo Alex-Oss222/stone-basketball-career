@@ -2,9 +2,9 @@
 
 # Contract | Shandon Anderson
 
-Known through: 2006-05-04. [Open interactive contract](andersh01.html#contract) · [Contract history](andersh01.html#contract-history)
+Known through: 2006-05-07. [Open interactive contract](andersh01.html#contract) · [Contract history](andersh01.html#contract-history)
 
-Shandon Anderson: under contract. Evidence cutoff: 2006-05-04.
+Shandon Anderson: under contract. Evidence cutoff: 2006-05-07.
 
 ## Current contract
 

@@ -590,10 +590,10 @@
    ],
    "home_court": "San Antonio Spurs",
    "wins": {
-    "San Antonio Spurs": 3,
+    "San Antonio Spurs": 4,
     "Sacramento Kings": 3
    },
-   "winner": null,
+   "winner": "San Antonio Spurs",
    "games": [
     {
      "game": 1,
@@ -661,9 +661,12 @@
      "home": "San Antonio Spurs",
      "away": "Sacramento Kings",
      "conditional": true,
-     "event_id": "2006-05-07-sacramento-kings-at-san-antonio-spurs"
+     "event_id": "2006-05-07-sacramento-kings-at-san-antonio-spurs",
+     "result": "Sacramento Kings 87, San Antonio Spurs 90",
+     "winner": "San Antonio Spurs"
     }
-   ]
+   ],
+   "clinched_on": "2006-05-07"
   },
   {
    "id": "west-3-6",
@@ -768,10 +771,10 @@
    ],
    "home_court": "Dallas Mavericks",
    "wins": {
-    "Dallas Mavericks": 3,
+    "Dallas Mavericks": 4,
     "New Orleans/Oklahoma City Hornets": 3
    },
-   "winner": null,
+   "winner": "Dallas Mavericks",
    "games": [
     {
      "game": 1,
@@ -839,9 +842,12 @@
      "home": "Dallas Mavericks",
      "away": "New Orleans/Oklahoma City Hornets",
      "conditional": true,
-     "event_id": "2006-05-07-new-orleans-oklahoma-city-hornets-at-dallas-mavericks"
+     "event_id": "2006-05-07-new-orleans-oklahoma-city-hornets-at-dallas-mavericks",
+     "result": "New Orleans/Oklahoma City Hornets 81, Dallas Mavericks 102",
+     "winner": "Dallas Mavericks"
     }
-   ]
+   ],
+   "clinched_on": "2006-05-07"
   },
   {
    "id": "east-semi-a",
@@ -858,7 +864,7 @@
    "home_court": "Toronto Raptors",
    "wins": {
     "Toronto Raptors": 0,
-    "Boston Celtics": 0
+    "Boston Celtics": 1
    },
    "winner": null,
    "games": [
@@ -868,7 +874,9 @@
      "home": "Toronto Raptors",
      "away": "Boston Celtics",
      "conditional": false,
-     "event_id": "2006-05-07-boston-celtics-at-toronto-raptors"
+     "event_id": "2006-05-07-boston-celtics-at-toronto-raptors",
+     "result": "Boston Celtics 109, Toronto Raptors 104",
+     "winner": "Boston Celtics"
     },
     {
      "game": 2,
@@ -994,6 +1002,160 @@
      "away": "New Jersey Nets",
      "conditional": true,
      "event_id": "2006-05-20-new-jersey-nets-at-miami-heat"
+    }
+   ]
+  },
+  {
+   "id": "west-semi-a",
+   "round": "conference_semifinals",
+   "conference": "West",
+   "seeds": [
+    1,
+    4
+   ],
+   "clubs": [
+    "Phoenix Suns",
+    "San Antonio Spurs"
+   ],
+   "home_court": "Phoenix Suns",
+   "wins": {
+    "Phoenix Suns": 0,
+    "San Antonio Spurs": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2006-05-09",
+     "home": "Phoenix Suns",
+     "away": "San Antonio Spurs",
+     "conditional": false,
+     "event_id": "2006-05-09-san-antonio-spurs-at-phoenix-suns"
+    },
+    {
+     "game": 2,
+     "date": "2006-05-11",
+     "home": "Phoenix Suns",
+     "away": "San Antonio Spurs",
+     "conditional": false,
+     "event_id": "2006-05-11-san-antonio-spurs-at-phoenix-suns"
+    },
+    {
+     "game": 3,
+     "date": "2006-05-13",
+     "home": "San Antonio Spurs",
+     "away": "Phoenix Suns",
+     "conditional": false,
+     "event_id": "2006-05-13-phoenix-suns-at-san-antonio-spurs"
+    },
+    {
+     "game": 4,
+     "date": "2006-05-15",
+     "home": "San Antonio Spurs",
+     "away": "Phoenix Suns",
+     "conditional": false,
+     "event_id": "2006-05-15-phoenix-suns-at-san-antonio-spurs"
+    },
+    {
+     "game": 5,
+     "date": "2006-05-17",
+     "home": "Phoenix Suns",
+     "away": "San Antonio Spurs",
+     "conditional": true,
+     "event_id": "2006-05-17-san-antonio-spurs-at-phoenix-suns"
+    },
+    {
+     "game": 6,
+     "date": "2006-05-19",
+     "home": "San Antonio Spurs",
+     "away": "Phoenix Suns",
+     "conditional": true,
+     "event_id": "2006-05-19-phoenix-suns-at-san-antonio-spurs"
+    },
+    {
+     "game": 7,
+     "date": "2006-05-21",
+     "home": "Phoenix Suns",
+     "away": "San Antonio Spurs",
+     "conditional": true,
+     "event_id": "2006-05-21-san-antonio-spurs-at-phoenix-suns"
+    }
+   ]
+  },
+  {
+   "id": "west-semi-b",
+   "round": "conference_semifinals",
+   "conference": "West",
+   "seeds": [
+    3,
+    2
+   ],
+   "clubs": [
+    "Minnesota Timberwolves",
+    "Dallas Mavericks"
+   ],
+   "home_court": "Dallas Mavericks",
+   "wins": {
+    "Minnesota Timberwolves": 0,
+    "Dallas Mavericks": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2006-05-09",
+     "home": "Dallas Mavericks",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2006-05-09-minnesota-timberwolves-at-dallas-mavericks"
+    },
+    {
+     "game": 2,
+     "date": "2006-05-11",
+     "home": "Dallas Mavericks",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2006-05-11-minnesota-timberwolves-at-dallas-mavericks"
+    },
+    {
+     "game": 3,
+     "date": "2006-05-13",
+     "home": "Minnesota Timberwolves",
+     "away": "Dallas Mavericks",
+     "conditional": false,
+     "event_id": "2006-05-13-dallas-mavericks-at-minnesota-timberwolves"
+    },
+    {
+     "game": 4,
+     "date": "2006-05-15",
+     "home": "Minnesota Timberwolves",
+     "away": "Dallas Mavericks",
+     "conditional": false,
+     "event_id": "2006-05-15-dallas-mavericks-at-minnesota-timberwolves"
+    },
+    {
+     "game": 5,
+     "date": "2006-05-17",
+     "home": "Dallas Mavericks",
+     "away": "Minnesota Timberwolves",
+     "conditional": true,
+     "event_id": "2006-05-17-minnesota-timberwolves-at-dallas-mavericks"
+    },
+    {
+     "game": 6,
+     "date": "2006-05-19",
+     "home": "Minnesota Timberwolves",
+     "away": "Dallas Mavericks",
+     "conditional": true,
+     "event_id": "2006-05-19-dallas-mavericks-at-minnesota-timberwolves"
+    },
+    {
+     "game": 7,
+     "date": "2006-05-21",
+     "home": "Dallas Mavericks",
+     "away": "Minnesota Timberwolves",
+     "conditional": true,
+     "event_id": "2006-05-21-minnesota-timberwolves-at-dallas-mavericks"
     }
    ]
   }

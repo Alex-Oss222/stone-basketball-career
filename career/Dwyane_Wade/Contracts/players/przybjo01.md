@@ -2,9 +2,9 @@
 
 # Contract | Joel Przybilla
 
-Known through: 2006-05-04. [Open interactive contract](przybjo01.html#contract) · [Contract history](przybjo01.html#contract-history)
+Known through: 2006-05-07. [Open interactive contract](przybjo01.html#contract) · [Contract history](przybjo01.html#contract-history)
 
-Joel Przybilla: under contract. Evidence cutoff: 2006-05-04.
+Joel Przybilla: under contract. Evidence cutoff: 2006-05-07.
 
 ## Current contract
 

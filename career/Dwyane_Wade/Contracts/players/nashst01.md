@@ -2,9 +2,9 @@
 
 # Contract | Steve Nash
 
-Known through: 2006-05-04. [Open interactive contract](nashst01.html#contract) · [Contract history](nashst01.html#contract-history)
+Known through: 2006-05-07. [Open interactive contract](nashst01.html#contract) · [Contract history](nashst01.html#contract-history)
 
-Steve Nash: under contract. Evidence cutoff: 2006-05-04.
+Steve Nash: under contract. Evidence cutoff: 2006-05-07.
 
 ## Current contract
 

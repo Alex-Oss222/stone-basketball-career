@@ -51,13 +51,13 @@ EAST
 WEST
   (1) Phoenix Suns             4
   (8) Utah Jazz                1   -> Phoenix Suns
-  (4) San Antonio Spurs        3
-  (5) Sacramento Kings         3
+  (4) San Antonio Spurs        4
+  (5) Sacramento Kings         3   -> San Antonio Spurs
         conference semifinal: winners meet
   (3) Minnesota Timberwolves   4
   (6) Los Angeles Lakers       0   -> Minnesota Timberwolves
-  (2) Dallas Mavericks         3
-  (7) New Orleans/Oklahoma City Hornets 3
+  (2) Dallas Mavericks         4
+  (7) New Orleans/Oklahoma City Hornets 3   -> Dallas Mavericks
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
@@ -137,7 +137,7 @@ Home court: Phoenix Suns. Phoenix Suns wins 4-1.
 
 ### West: (4) San Antonio Spurs vs (5) Sacramento Kings
 
-Home court: San Antonio Spurs. Series San Antonio Spurs 3, Sacramento Kings 3.
+Home court: San Antonio Spurs. San Antonio Spurs wins 4-3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -147,7 +147,7 @@ Home court: San Antonio Spurs. Series San Antonio Spurs 3, Sacramento Kings 3.
 | 4 | Mon May 1 | Sacramento Kings | San Antonio Spurs | San Antonio Spurs 106, Sacramento Kings 97 |
 | 5 | Wed May 3 | San Antonio Spurs | Sacramento Kings | Sacramento Kings 97, San Antonio Spurs 108 |
 | 6 | Fri May 5 | Sacramento Kings | San Antonio Spurs | San Antonio Spurs 99, Sacramento Kings 107 |
-| 7 | Sun May 7 | San Antonio Spurs | Sacramento Kings | if needed |
+| 7 | Sun May 7 | San Antonio Spurs | Sacramento Kings | Sacramento Kings 87, San Antonio Spurs 90 |
 
 ### West: (3) Minnesota Timberwolves vs (6) Los Angeles Lakers
 
@@ -165,7 +165,7 @@ Home court: Minnesota Timberwolves. Minnesota Timberwolves wins 4-0.
 
 ### West: (2) Dallas Mavericks vs (7) New Orleans/Oklahoma City Hornets
 
-Home court: Dallas Mavericks. Series Dallas Mavericks 3, New Orleans/Oklahoma City Hornets 3.
+Home court: Dallas Mavericks. Dallas Mavericks wins 4-3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -175,17 +175,17 @@ Home court: Dallas Mavericks. Series Dallas Mavericks 3, New Orleans/Oklahoma Ci
 | 4 | Mon May 1 | New Orleans/Oklahoma City Hornets | Dallas Mavericks | Dallas Mavericks 103, New Orleans/Oklahoma City Hornets 92 |
 | 5 | Wed May 3 | Dallas Mavericks | New Orleans/Oklahoma City Hornets | New Orleans/Oklahoma City Hornets 98, Dallas Mavericks 107 |
 | 6 | Fri May 5 | New Orleans/Oklahoma City Hornets | Dallas Mavericks | Dallas Mavericks 84, New Orleans/Oklahoma City Hornets 85 |
-| 7 | Sun May 7 | Dallas Mavericks | New Orleans/Oklahoma City Hornets | if needed |
+| 7 | Sun May 7 | Dallas Mavericks | New Orleans/Oklahoma City Hornets | New Orleans/Oklahoma City Hornets 81, Dallas Mavericks 102 |
 
 ## Conference semifinals
 
 ### East: (1) Toronto Raptors vs (4) Boston Celtics
 
-Home court: Toronto Raptors. Series Toronto Raptors 0, Boston Celtics 0.
+Home court: Toronto Raptors. Series Toronto Raptors 0, Boston Celtics 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sun May 7 | Toronto Raptors | Boston Celtics |  |
+| 1 | Sun May 7 | Toronto Raptors | Boston Celtics | Boston Celtics 109, Toronto Raptors 104 |
 | 2 | Tue May 9 | Toronto Raptors | Boston Celtics |  |
 | 3 | Thu May 11 | Boston Celtics | Toronto Raptors |  |
 | 4 | Sat May 13 | Boston Celtics | Toronto Raptors |  |
@@ -206,3 +206,31 @@ Home court: Miami Heat. Series Miami Heat 0, New Jersey Nets 0.
 | 5 | Tue May 16 | Miami Heat | New Jersey Nets | if needed |
 | 6 | Thu May 18 | New Jersey Nets | Miami Heat | if needed |
 | 7 | Sat May 20 | Miami Heat | New Jersey Nets | if needed |
+
+### West: (1) Phoenix Suns vs (4) San Antonio Spurs
+
+Home court: Phoenix Suns. Series Phoenix Suns 0, San Antonio Spurs 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Tue May 9 | Phoenix Suns | San Antonio Spurs |  |
+| 2 | Thu May 11 | Phoenix Suns | San Antonio Spurs |  |
+| 3 | Sat May 13 | San Antonio Spurs | Phoenix Suns |  |
+| 4 | Mon May 15 | San Antonio Spurs | Phoenix Suns |  |
+| 5 | Wed May 17 | Phoenix Suns | San Antonio Spurs | if needed |
+| 6 | Fri May 19 | San Antonio Spurs | Phoenix Suns | if needed |
+| 7 | Sun May 21 | Phoenix Suns | San Antonio Spurs | if needed |
+
+### West: (3) Minnesota Timberwolves vs (2) Dallas Mavericks
+
+Home court: Dallas Mavericks. Series Minnesota Timberwolves 0, Dallas Mavericks 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Tue May 9 | Dallas Mavericks | Minnesota Timberwolves |  |
+| 2 | Thu May 11 | Dallas Mavericks | Minnesota Timberwolves |  |
+| 3 | Sat May 13 | Minnesota Timberwolves | Dallas Mavericks |  |
+| 4 | Mon May 15 | Minnesota Timberwolves | Dallas Mavericks |  |
+| 5 | Wed May 17 | Dallas Mavericks | Minnesota Timberwolves | if needed |
+| 6 | Fri May 19 | Minnesota Timberwolves | Dallas Mavericks | if needed |
+| 7 | Sun May 21 | Dallas Mavericks | Minnesota Timberwolves | if needed |

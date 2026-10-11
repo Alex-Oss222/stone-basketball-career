@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of May 6, 2006: 74 weekly and monthly award decision(s) closed; 4 of 10 season awards decided.
+As of May 7, 2006: 74 weekly and monthly award decision(s) closed; 5 of 10 season awards decided.
 
 ## Individual awards
 
@@ -12,13 +12,13 @@ Each award shows its top three once its vote has closed on the real announcement
 
 ### Most Valuable Player
 
-Vote closes May 7, 2006 · 125 media · ballot 10-7-5-3-1.
+Announced May 7, 2006 · 125 media · ballot 10-7-5-3-1 · [tally](Season_Awards.md#most-valuable-player).
 
 | Rank slot | Player | Team | 1st votes | Points | Status |
 | ---: | --- | --- | ---: | ---: | --- |
-| 1 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 7, 2006) |
-| 2 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 7, 2006) |
-| 3 | Pending | N/A | N/A | N/A | Awaiting vote (closes May 7, 2006) |
+| 1 | Dwyane Wade | Miami Heat | 125 | 1250 | **WINNER** |
+| 2 | Paul Pierce | Boston Celtics | 0 | 861 | Runner-up |
+| 3 | Kevin Garnett | Minnesota Timberwolves | 0 | 457 | Third |
 
 ### Rookie of the Year
 

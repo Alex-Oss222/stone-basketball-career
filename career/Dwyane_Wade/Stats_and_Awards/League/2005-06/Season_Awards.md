@@ -1,6 +1,6 @@
 # 2005-06 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-05-04.
+Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-05-07.
 
 ## Calendar
 
@@ -10,7 +10,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2006-04-28 | Sixth Man of the Year | 123 media | 5-3-1 | decided |
 | 2006-05-01 | Most Improved Player | 124 media | 5-3-1 | decided |
 | 2006-05-04 | All-Rookie Teams | 30 head coaches, not for their own players | 2-1 | decided |
-| 2006-05-07 | Most Valuable Player | 125 media | 10-7-5-3-1 | pending |
+| 2006-05-07 | Most Valuable Player | 125 media | 10-7-5-3-1 | decided |
 | 2006-05-08 | Defensive Player of the Year | 124 media | 5-3-1 | pending |
 | 2006-05-10 | Rookie of the Year | 125 media | 5-3-1 | pending |
 | 2006-05-11 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | pending |
@@ -78,3 +78,15 @@ Announced 2006-05-04; 30 head coaches, not for their own players, ballot 2-1.
 | Rashad McCants | G | Washington Wizards | 82 | 19.5 | 9.5 | 2.5 | 1.1 | 0.7 | 0.2 | 6.31 | 22 | 0 |
 
 Also receiving votes: Šarūnas Jasikevičius (Cleveland Cavaliers) 17.
+
+## Most Valuable Player
+
+Announced 2006-05-07; 125 media, ballot 10-7-5-3-1.
+
+| # | Player | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WINNER | Dwyane Wade | Miami Heat | 82 | 37.5 | 27.6 | 5.9 | 4.2 | 1.8 | 1.2 | 24.39 | 1250 | 125 |
+| 2 | Paul Pierce | Boston Celtics | 79 | 39.9 | 28.5 | 7.1 | 5.1 | 1.7 | 0.4 | 21.56 | 861 | 0 |
+| 3 | Kevin Garnett | Minnesota Timberwolves | 76 | 41.4 | 26.4 | 11.5 | 3.6 | 1.8 | 1.2 | 22.54 | 457 | 0 |
+
+Complete tally: `season_awards.json` (7 receiving votes).
