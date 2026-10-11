@@ -43,7 +43,7 @@ EAST
         conference semifinal: winners meet
   (3) Miami Heat               4
   (6) Orlando Magic            1   -> Miami Heat
-  (2) Detroit Pistons          2
+  (2) Detroit Pistons          3
   (7) New Jersey Nets          3
         conference semifinal: winners meet
     conference final, then the NBA Finals
@@ -109,7 +109,7 @@ Home court: Miami Heat. Miami Heat wins 4-1.
 
 ### East: (2) Detroit Pistons vs (7) New Jersey Nets
 
-Home court: Detroit Pistons. Series Detroit Pistons 2, New Jersey Nets 3.
+Home court: Detroit Pistons. Series Detroit Pistons 3, New Jersey Nets 3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -118,7 +118,7 @@ Home court: Detroit Pistons. Series Detroit Pistons 2, New Jersey Nets 3.
 | 3 | Fri Apr 28 | New Jersey Nets | Detroit Pistons | Detroit Pistons 95, New Jersey Nets 77 |
 | 4 | Sun Apr 30 | New Jersey Nets | Detroit Pistons | Detroit Pistons 84, New Jersey Nets 73 |
 | 5 | Tue May 2 | Detroit Pistons | New Jersey Nets | New Jersey Nets 103, Detroit Pistons 76 |
-| 6 | Thu May 4 | New Jersey Nets | Detroit Pistons | if needed |
+| 6 | Thu May 4 | New Jersey Nets | Detroit Pistons | Detroit Pistons 94, New Jersey Nets 88 |
 | 7 | Sat May 6 | Detroit Pistons | New Jersey Nets | if needed |
 
 ### West: (1) Phoenix Suns vs (8) Utah Jazz

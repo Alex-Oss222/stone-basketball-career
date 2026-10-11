@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `howarjo01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-05-01 · **Club on this date:** Dallas Mavericks · **Basis:** Dallas Mavericks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-05-04 · **Club on this date:** Dallas Mavericks · **Basis:** Dallas Mavericks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #5 · **Born:** 1980-04-28 · **Age on card date:** 26  
 **Registry ID:** `howarjo01` · [Basketball-Reference page](https://www.basketball-reference.com/players/h/howarjo01.html) · ESPN ID 2006
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `howarj
 
 ## Simulated statistics
 
-As of **2006-05-01**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-05-04**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2005-06 is simulated: 82 closed regular-season games through 2006-05-01. Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2005-06 is simulated: 82 closed regular-season games through 2006-05-04. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -114,17 +114,17 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-01 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-04 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Dallas Mavericks | 9 | 0 | 22.8 | 6.4 | 4.3 | 1.3 | 0.3 | 0.7 | 1.0 | 40.8% | 0.0% | 75.0% |
 | 2004-05 | Dallas Mavericks | 5 | 0 | 27.2 | 14.2 | 6.0 | 1.8 | 1.0 | 0.8 | 1.2 | 57.4% | 57.1% | 71.4% |
-| 2005-06 | Dallas Mavericks | 3 | 3 | 25.7 | 13.0 | 4.7 | 2.7 | 0.3 | 0.3 | 0.7 | 51.5% | 20.0% | 100.0% |
+| 2005-06 | Dallas Mavericks | 5 | 5 | 29.2 | 13.8 | 4.4 | 2.4 | 0.2 | 0.4 | 1.0 | 52.0% | 33.3% | 88.2% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-05-01, from closed award decisions (2 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-05-04, from closed award decisions (2 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

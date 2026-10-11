@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `kirilan01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-05-01 · **Club on this date:** Utah Jazz · **Basis:** Utah Jazz: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-05-04 · **Club on this date:** Utah Jazz · **Basis:** Utah Jazz: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #47 · **Born:** 1981-02-18 · **Age on card date:** 25  
 **Registry ID:** `kirilan01` · [Basketball-Reference page](https://www.basketball-reference.com/players/k/kirilan01.html) · ESPN ID 434
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `kirila
 
 ## Simulated statistics
 
-As of **2006-05-01**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-05-04**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 82 closed regular-season games through 2006-05-01. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 82 closed regular-season games through 2006-05-04. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,15 +115,15 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-01 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-04 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | Utah Jazz | 4 | 4 | 35.0 | 14.0 | 7.5 | 4.2 | 2.0 | 1.0 | 2.8 | 54.1% | 50.0% | 75.0% |
+| 2005-06 | Utah Jazz | 5 | 5 | 35.3 | 13.0 | 8.0 | 4.2 | 2.0 | 1.4 | 3.8 | 48.8% | 50.0% | 73.3% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-05-01, from closed award decisions (3 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-05-04, from closed award decisions (3 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

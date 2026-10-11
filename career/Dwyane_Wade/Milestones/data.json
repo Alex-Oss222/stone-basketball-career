@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2006-05-01",
+  "as_of": "2006-05-04",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 22,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2006-04-29-miami-heat-at-orlando-magic",
+  "current_event": "2006-05-03-orlando-magic-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2006-05-01"
+              "2006-05-04"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2006-04-29-miami-heat-at-orlando-magic"
+              "2006-05-03-orlando-magic-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2006-05-01",
+              "2006-05-04",
               "Current checkpoint",
-              "2006-04-29-miami-heat-at-orlando-magic",
+              "2006-05-03-orlando-magic-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -812,6 +812,14 @@
           "href": "../2005-06/08_Playoffs/First_Round/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -820,7 +828,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-01"
+          "value": "2006-05-04"
         },
         {
           "label": "Team",
@@ -1422,6 +1430,14 @@
           "href": "../2005-06/08_Playoffs/First_Round/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1430,7 +1446,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-01"
+          "value": "2006-05-04"
         },
         {
           "label": "Team",
@@ -2069,6 +2085,14 @@
           "href": "../2005-06/08_Playoffs/First_Round/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2077,7 +2101,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-01"
+          "value": "2006-05-04"
         },
         {
           "label": "Team",
@@ -2749,6 +2773,14 @@
           "href": "../2005-06/08_Playoffs/First_Round/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2757,7 +2789,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-01"
+          "value": "2006-05-04"
         },
         {
           "label": "Team",
@@ -3334,6 +3366,14 @@
           "href": "../2005-06/08_Playoffs/First_Round/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3342,7 +3382,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-01"
+          "value": "2006-05-04"
         },
         {
           "label": "Team",
@@ -3962,6 +4002,14 @@
           "href": "../2005-06/08_Playoffs/First_Round/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3970,7 +4018,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-01"
+          "value": "2006-05-04"
         },
         {
           "label": "Team",
@@ -4547,6 +4595,14 @@
           "href": "../2005-06/08_Playoffs/First_Round/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4555,7 +4611,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-01"
+          "value": "2006-05-04"
         },
         {
           "label": "Team",
@@ -5208,6 +5264,14 @@
           "href": "../2005-06/08_Playoffs/First_Round/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -5216,7 +5280,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-01"
+          "value": "2006-05-04"
         },
         {
           "label": "Team",
@@ -5233,7 +5297,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "93 closed game records in 2005-06 through 2006-05-01. Competitions remain separate.",
+      "summary": "95 closed game records in 2005-06 through 2006-05-04. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -5260,12 +5324,12 @@
             ],
             [
               "playoff",
-              3,
-              28.150055556,
-              18.666666667,
-              4.333333333,
-              2.0,
-              1.666666667,
+              5,
+              32.98326,
+              20.6,
+              5.6,
+              4.0,
+              2.2,
               "Complete"
             ],
             [
@@ -5313,12 +5377,12 @@
             ],
             [
               "playoff",
-              21,
-              33,
-              0.636363636,
-              3,
-              4,
-              0.75
+              40,
+              66,
+              0.606060606,
+              5,
+              8,
+              0.625
             ],
             [
               "preseason",
@@ -6280,6 +6344,26 @@
                 "label": "Closed game",
                 "href": "../2005-06/08_Playoffs/First_Round/Game_3.md"
               }
+            ],
+            [
+              "2006-05-01",
+              "playoff",
+              "Orlando Magic",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/08_Playoffs/First_Round/Game_4.md"
+              }
+            ],
+            [
+              "2006-05-03",
+              "playoff",
+              "Orlando Magic",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2005-06/08_Playoffs/First_Round/Game_5.md"
+              }
             ]
           ]
         },
@@ -6777,6 +6861,14 @@
           "href": "../2005-06/08_Playoffs/First_Round/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2005-06/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -6785,7 +6877,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-01"
+          "value": "2006-05-04"
         },
         {
           "label": "Team",

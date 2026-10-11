@@ -1,6 +1,6 @@
 # 2005-06 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-05-01.
+Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-05-04.
 
 ## Calendar
 
@@ -9,7 +9,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2006-04-25 | Coach of the Year | 124 media | 5-3-1 | decided |
 | 2006-04-28 | Sixth Man of the Year | 123 media | 5-3-1 | decided |
 | 2006-05-01 | Most Improved Player | 124 media | 5-3-1 | decided |
-| 2006-05-04 | All-Rookie Teams | 30 head coaches, not for their own players | 2-1 | pending |
+| 2006-05-04 | All-Rookie Teams | 30 head coaches, not for their own players | 2-1 | decided |
 | 2006-05-07 | Most Valuable Player | 125 media | 10-7-5-3-1 | pending |
 | 2006-05-08 | Defensive Player of the Year | 124 media | 5-3-1 | pending |
 | 2006-05-10 | Rookie of the Year | 125 media | 5-3-1 | pending |
@@ -52,3 +52,29 @@ Announced 2006-05-01; 124 media, ballot 5-3-1.
 | 3 | Smush Parker | Indiana Pacers | 82 | 36.8 | 13.5 | 4.3 | 3.6 | 1.9 | 0.3 | 10.38 | 103 | 0 |
 
 Complete tally: `season_awards.json` (4 receiving votes).
+
+## All-Rookie Teams
+
+Announced 2006-05-04; 30 head coaches, not for their own players, ballot 2-1.
+
+### First Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Channing Frye | C | New Jersey Nets | 64 | 25.2 | 11.8 | 6.2 | 1.1 | 0.4 | 0.6 | 8.14 | 58 | 29 |
+| Charlie Villanueva | F | Memphis Grizzlies | 80 | 29.2 | 12.8 | 6.5 | 1.4 | 0.8 | 0.8 | 9.73 | 58 | 29 |
+| Chris Paul | G | Utah Jazz | 78 | 37.2 | 20.8 | 5.2 | 7.2 | 2.3 | 0.2 | 18.69 | 58 | 29 |
+| Deron Williams | G | New York Knicks | 80 | 30.7 | 12.8 | 2.9 | 4.6 | 0.9 | 0.2 | 8.46 | 58 | 29 |
+| Raymond Felton | G | Dallas Mavericks | 81 | 29.2 | 10.0 | 3.8 | 5.2 | 1.2 | 0.1 | 8.89 | 58 | 29 |
+
+### Second Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Andrew Bogut | F | Los Angeles Clippers | 82 | 25.8 | 9.6 | 5.4 | 1.8 | 0.7 | 0.7 | 7.29 | 34 | 5 |
+| Danny Granger | F | New Orleans/Oklahoma City Hornets | 80 | 27.1 | 8.3 | 5.6 | 2.2 | 0.9 | 0.7 | 7.38 | 29 | 0 |
+| Ike Diogu | F | Charlotte Bobcats | 70 | 19.0 | 10.2 | 4.3 | 0.5 | 0.3 | 0.7 | 6.74 | 29 | 0 |
+| Marvin Williams | F | Orlando Magic | 79 | 25.6 | 8.6 | 4.8 | 1.1 | 0.7 | 0.4 | 5.69 | 29 | 0 |
+| Rashad McCants | G | Washington Wizards | 82 | 19.5 | 9.5 | 2.5 | 1.1 | 0.7 | 0.2 | 6.31 | 22 | 0 |
+
+Also receiving votes: Šarūnas Jasikevičius (Cleveland Cavaliers) 17.

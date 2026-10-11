@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of May 3, 2006: 74 weekly and monthly award decision(s) closed; 3 of 10 season awards decided.
+As of May 4, 2006: 74 weekly and monthly award decision(s) closed; 4 of 10 season awards decided.
 
 ## Individual awards
 
@@ -91,12 +91,12 @@ Selection closes May 11, 2006 · 30 head coaches, not for their own players · b
 
 ## All-Rookie teams
 
-Selection closes May 4, 2006 · 30 head coaches, not for their own players · ballot 2-1.
+Announced May 4, 2006 · 30 head coaches, not for their own players · ballot 2-1 · [tally](Season_Awards.md#all-rookie-teams).
 
 | Team | Player 1 | Player 2 | Player 3 | Player 4 | Player 5 |
 | --- | --- | --- | --- | --- | --- |
-| First | Not selected | Not selected | Not selected | Not selected | Not selected |
-| Second | Not selected | Not selected | Not selected | Not selected | Not selected |
+| First | Channing Frye (New Jersey Nets) | Charlie Villanueva (Memphis Grizzlies) | Chris Paul (Utah Jazz) | Deron Williams (New York Knicks) | Raymond Felton (Dallas Mavericks) |
+| Second | Andrew Bogut (Los Angeles Clippers) | Danny Granger (New Orleans/Oklahoma City Hornets) | Ike Diogu (Charlotte Bobcats) | Marvin Williams (Orlando Magic) | Rashad McCants (Washington Wizards) |
 
 <details>
 <summary>Voting procedure and eligibility</summary>

@@ -2,9 +2,9 @@
 
 # Contract | Clifford Robinson
 
-Known through: 2006-05-01. [Open interactive contract](robincl02.html#contract) · [Contract history](robincl02.html#contract-history)
+Known through: 2006-05-04. [Open interactive contract](robincl02.html#contract) · [Contract history](robincl02.html#contract-history)
 
-Clifford Robinson: under contract unverified. Evidence cutoff: 2006-05-01.
+Clifford Robinson: under contract unverified. Evidence cutoff: 2006-05-04.
 
 ## Current contract
 

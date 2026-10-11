@@ -404,7 +404,7 @@
    ],
    "home_court": "Detroit Pistons",
    "wins": {
-    "Detroit Pistons": 2,
+    "Detroit Pistons": 3,
     "New Jersey Nets": 3
    },
    "winner": null,
@@ -465,7 +465,9 @@
      "home": "New Jersey Nets",
      "away": "Detroit Pistons",
      "conditional": true,
-     "event_id": "2006-05-04-detroit-pistons-at-new-jersey-nets"
+     "event_id": "2006-05-04-detroit-pistons-at-new-jersey-nets",
+     "result": "Detroit Pistons 94, New Jersey Nets 88",
+     "winner": "Detroit Pistons"
     },
     {
      "game": 7,

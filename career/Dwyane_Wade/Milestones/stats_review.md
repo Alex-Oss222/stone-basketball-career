@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2006-05-01 · Miami Heat · active
+Career date: 2006-05-04 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-93 closed game records in 2005-06 through 2006-05-01. Competitions remain separate.
+95 closed game records in 2005-06 through 2006-05-04. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | all star | 1 | 31.7 | 26.0 | 7.0 | 4.0 | 2.0 | Complete |
-| playoff | 3 | 28.2 | 18.7 | 4.3 | 2.0 | 1.7 | Complete |
+| playoff | 5 | 33.0 | 20.6 | 5.6 | 4.0 | 2.2 | Complete |
 | preseason | 7 | 29.6 | 25.0 | 3.7 | 2.6 | 1.4 | Complete |
 | regular | 82 | 37.5 | 27.6 | 5.9 | 4.2 | 1.8 | Complete |
 
@@ -26,7 +26,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | all star | 11 | 16 | 0.688 | 0 | 2 | 0.0 |
-| playoff | 21 | 33 | 0.636 | 3 | 4 | 0.750 |
+| playoff | 40 | 66 | 0.606 | 5 | 8 | 0.625 |
 | preseason | 57 | 109 | 0.523 | 7 | 17 | 0.412 |
 | regular | 782 | 1375 | 0.569 | 122 | 260 | 0.469 |
 
@@ -127,6 +127,8 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2006-04-23 | playoff | Orlando Magic | Played | [Closed game](../2005-06/08_Playoffs/First_Round/Game_1.md) |
 | 2006-04-26 | playoff | Orlando Magic | Played | [Closed game](../2005-06/08_Playoffs/First_Round/Game_2.md) |
 | 2006-04-29 | playoff | Orlando Magic | Played | [Closed game](../2005-06/08_Playoffs/First_Round/Game_3.md) |
+| 2006-05-01 | playoff | Orlando Magic | Played | [Closed game](../2005-06/08_Playoffs/First_Round/Game_4.md) |
+| 2006-05-03 | playoff | Orlando Magic | Played | [Closed game](../2005-06/08_Playoffs/First_Round/Game_5.md) |
 
 ## Evidence available for decisions
 
@@ -264,4 +266,6 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2005-06/08_Playoffs/First_Round/Game_1.md)
 - [Closed game](../2005-06/08_Playoffs/First_Round/Game_2.md)
 - [Closed game](../2005-06/08_Playoffs/First_Round/Game_3.md)
+- [Closed game](../2005-06/08_Playoffs/First_Round/Game_4.md)
+- [Closed game](../2005-06/08_Playoffs/First_Round/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

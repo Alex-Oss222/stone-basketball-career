@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `williaa01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-05-01 · **Club on this date:** New Jersey Nets · **Basis:** New Jersey Nets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-05-04 · **Club on this date:** New Jersey Nets · **Basis:** New Jersey Nets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #34 · **Born:** 1971-10-02 · **Age on card date:** 34  
 **Registry ID:** `williaa01` · [Basketball-Reference page](https://www.basketball-reference.com/players/w/williaa01.html) · ESPN ID 923
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willia
 
 ## Simulated statistics
 
-As of **2006-05-01**: 54 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-05-04**: 54 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 54 closed regular-season games through 2006-05-01. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 54 closed regular-season games through 2006-05-04. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,13 +115,13 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-01 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-04 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | New Jersey Nets | 23 | 0 | 18.1 | 6.3 | 3.3 | 1.5 | 0.7 | 0.3 | 1.1 | 60.4% | 42.9% | 63.6% |
-| 2005-06 | New Jersey Nets | 4 | 0 | 13.6 | 3.8 | 2.5 | 0.2 | 0.2 | 0.5 | 0.2 | 53.8% | N/A | 25.0% |
+| 2005-06 | New Jersey Nets | 5 | 0 | 14.5 | 4.6 | 3.0 | 0.4 | 0.2 | 0.4 | 0.4 | 52.6% | 0.0% | 50.0% |
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2006-05-01. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2006-05-04. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

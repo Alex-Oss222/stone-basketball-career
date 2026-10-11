@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `terryja01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-05-01 · **Club on this date:** Atlanta Hawks · **Basis:** Atlanta Hawks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-05-04 · **Club on this date:** Atlanta Hawks · **Basis:** Atlanta Hawks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #31 · **Born:** 1977-09-15 · **Age on card date:** 28  
 **Registry ID:** `terryja01` · [Basketball-Reference page](https://www.basketball-reference.com/players/t/terryja01.html) · ESPN ID 841
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `terryj
 
 ## Simulated statistics
 
-As of **2006-05-01**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-05-04**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 82 closed regular-season games through 2006-05-01. Earlier simulated seasons from their closed results.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2005-06 is simulated: 82 closed regular-season games through 2006-05-04. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,17 +115,17 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-01 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-05-04 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Atlanta Hawks | 5 | 5 | 39.8 | 18.2 | 5.6 | 6.0 | 1.2 | 0.0 | 4.2 | 42.2% | 27.6% | 50.0% |
 | 2004-05 | Atlanta Hawks | 20 | 20 | 30.7 | 12.2 | 3.0 | 5.6 | 1.1 | 0.2 | 2.0 | 52.8% | 52.5% | 70.3% |
-| 2005-06 | Atlanta Hawks | 4 | 4 | 35.8 | 19.0 | 2.0 | 4.8 | 0.5 | 0.0 | 2.5 | 50.0% | 44.8% | 81.8% |
+| 2005-06 | Atlanta Hawks | 5 | 5 | 36.2 | 20.0 | 1.6 | 4.6 | 0.8 | 0.0 | 2.0 | 50.0% | 48.6% | 81.8% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-05-01, from closed award decisions (2 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-05-04, from closed award decisions (2 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

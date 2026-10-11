@@ -301,6 +301,192 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2005-06-all_rookie",
+   "award": "all_rookie",
+   "name": "All-Rookie Teams",
+   "announced_on": "2006-05-04",
+   "electorate": 30,
+   "voters": "head coaches, not for their own players",
+   "ballot": [
+    2,
+    1
+   ],
+   "lens": [
+    0.0,
+    0.25
+   ],
+   "evidence_through": "2006-04-19",
+   "teams": [
+    {
+     "team": "First Team",
+     "players": [
+      {
+       "player": "Channing Frye",
+       "team": "New Jersey Nets",
+       "games": 64,
+       "mpg": 25.2,
+       "pts": 11.8,
+       "reb": 6.2,
+       "ast": 1.1,
+       "stl": 0.4,
+       "blk": 0.6,
+       "game_score": 8.14,
+       "position": "C",
+       "points": 58,
+       "first_team_votes": 29
+      },
+      {
+       "player": "Charlie Villanueva",
+       "team": "Memphis Grizzlies",
+       "games": 80,
+       "mpg": 29.2,
+       "pts": 12.8,
+       "reb": 6.5,
+       "ast": 1.4,
+       "stl": 0.8,
+       "blk": 0.8,
+       "game_score": 9.73,
+       "position": "F",
+       "points": 58,
+       "first_team_votes": 29
+      },
+      {
+       "player": "Chris Paul",
+       "team": "Utah Jazz",
+       "games": 78,
+       "mpg": 37.2,
+       "pts": 20.8,
+       "reb": 5.2,
+       "ast": 7.2,
+       "stl": 2.3,
+       "blk": 0.2,
+       "game_score": 18.69,
+       "position": "G",
+       "points": 58,
+       "first_team_votes": 29
+      },
+      {
+       "player": "Deron Williams",
+       "team": "New York Knicks",
+       "games": 80,
+       "mpg": 30.7,
+       "pts": 12.8,
+       "reb": 2.9,
+       "ast": 4.6,
+       "stl": 0.9,
+       "blk": 0.2,
+       "game_score": 8.46,
+       "position": "G",
+       "points": 58,
+       "first_team_votes": 29
+      },
+      {
+       "player": "Raymond Felton",
+       "team": "Dallas Mavericks",
+       "games": 81,
+       "mpg": 29.2,
+       "pts": 10.0,
+       "reb": 3.8,
+       "ast": 5.2,
+       "stl": 1.2,
+       "blk": 0.1,
+       "game_score": 8.89,
+       "position": "G",
+       "points": 58,
+       "first_team_votes": 29
+      }
+     ]
+    },
+    {
+     "team": "Second Team",
+     "players": [
+      {
+       "player": "Andrew Bogut",
+       "team": "Los Angeles Clippers",
+       "games": 82,
+       "mpg": 25.8,
+       "pts": 9.6,
+       "reb": 5.4,
+       "ast": 1.8,
+       "stl": 0.7,
+       "blk": 0.7,
+       "game_score": 7.29,
+       "position": "F",
+       "points": 34,
+       "first_team_votes": 5
+      },
+      {
+       "player": "Danny Granger",
+       "team": "New Orleans/Oklahoma City Hornets",
+       "games": 80,
+       "mpg": 27.1,
+       "pts": 8.3,
+       "reb": 5.6,
+       "ast": 2.2,
+       "stl": 0.9,
+       "blk": 0.7,
+       "game_score": 7.38,
+       "position": "F",
+       "points": 29,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Ike Diogu",
+       "team": "Charlotte Bobcats",
+       "games": 70,
+       "mpg": 19.0,
+       "pts": 10.2,
+       "reb": 4.3,
+       "ast": 0.5,
+       "stl": 0.3,
+       "blk": 0.7,
+       "game_score": 6.74,
+       "position": "F",
+       "points": 29,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Marvin Williams",
+       "team": "Orlando Magic",
+       "games": 79,
+       "mpg": 25.6,
+       "pts": 8.6,
+       "reb": 4.8,
+       "ast": 1.1,
+       "stl": 0.7,
+       "blk": 0.4,
+       "game_score": 5.69,
+       "position": "F",
+       "points": 29,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Rashad McCants",
+       "team": "Washington Wizards",
+       "games": 82,
+       "mpg": 19.5,
+       "pts": 9.5,
+       "reb": 2.5,
+       "ast": 1.1,
+       "stl": 0.7,
+       "blk": 0.2,
+       "game_score": 6.31,
+       "position": "G",
+       "points": 22,
+       "first_team_votes": 0
+      }
+     ]
+    }
+   ],
+   "others": [
+    {
+     "player": "Šarūnas Jasikevičius",
+     "team": "Cleveland Cavaliers",
+     "points": 17
+    }
+   ]
   }
  ]
 }
