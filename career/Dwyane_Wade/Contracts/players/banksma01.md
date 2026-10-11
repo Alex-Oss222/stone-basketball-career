@@ -2,9 +2,9 @@
 
 # Contract | Marcus Banks
 
-Known through: 2006-05-17. [Open interactive contract](banksma01.html#contract) · [Contract history](banksma01.html#contract-history)
+Known through: 2006-05-21. [Open interactive contract](banksma01.html#contract) · [Contract history](banksma01.html#contract-history)
 
-Marcus Banks: No verified contract record. Evidence cutoff: 2006-05-17.
+Marcus Banks: No verified contract record. Evidence cutoff: 2006-05-21.
 
 ## Current contract
 

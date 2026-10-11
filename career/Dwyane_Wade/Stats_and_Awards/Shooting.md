@@ -2,7 +2,7 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2006-05-17**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2006-05-21**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
@@ -6955,7 +6955,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2005-02-18 | Rookies | Played | [Game](../2004-05/11_All_Star/Rookie_Challenge/Game_1.md) | [Result](../2004-05/11_All_Star/Rookie_Challenge/Game_1.result.json) | [Simulated engine shot locations](../2004-05/11_All_Star/Rookie_Challenge/Game_1.result.json) |
 
-## 2005-06 · NBA regular season · through 2006-05-17
+## 2005-06 · NBA regular season · through 2006-05-21
 
 [Open this period](player_cards.html?period=regular-2005-06-season#shooting)
 
@@ -9635,7 +9635,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2006-04-19 | Boston Celtics | Played | [Game](../2005-06/06_Regular_Season/04_April/Week_3/Game_3.md) | [Result](../2005-06/06_Regular_Season/04_April/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2005-06/06_Regular_Season/04_April/Week_3/Game_3.result.json) |
 
-## 2005-06 · NBA All-Star Game · through 2006-05-17
+## 2005-06 · NBA All-Star Game · through 2006-05-21
 
 [Open this period](player_cards.html?period=all_star-2005-06-season#shooting)
 
@@ -9723,7 +9723,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2006-02-19 | West | Played | [Game](../2005-06/11_All_Star/All_Star_Game/Game_1.md) | [Result](../2005-06/11_All_Star/All_Star_Game/Game_1.result.json) | [Simulated engine shot locations](../2005-06/11_All_Star/All_Star_Game/Game_1.result.json) |
 
-## 2005-06 · NBA playoffs · through 2006-05-17
+## 2005-06 · NBA playoffs · through 2006-05-21
 
 [Open this period](player_cards.html?period=playoff-2005-06-season#shooting)
 
@@ -9878,7 +9878,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2006-05-12 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_3.result.json) |
 | 2006-05-14 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_4.result.json) |
 
-## 2006-05-15 to 2006-05-17 · NBA playoffs
+## 2006-05-15 to 2006-05-21 · NBA playoffs
 
 [Open this period](player_cards.html?period=playoff-2005-06-week-2006-05-15#shooting)
 
@@ -10120,7 +10120,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2006-05-16 | New Jersey Nets | Played | [Game](../2005-06/08_Playoffs/Conference_Semifinals/Game_5.md) | [Result](../2005-06/08_Playoffs/Conference_Semifinals/Game_5.result.json) | [Simulated engine shot locations](../2005-06/08_Playoffs/Conference_Semifinals/Game_5.result.json) |
 
-## 2005-06 · NBA preseason · through 2006-05-17
+## 2005-06 · NBA preseason · through 2006-05-21
 
 [Open this period](player_cards.html?period=preseason-2005-06-season#shooting)
 

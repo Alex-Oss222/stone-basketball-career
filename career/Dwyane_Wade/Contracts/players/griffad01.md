@@ -2,9 +2,9 @@
 
 # Contract | Adrian Griffin
 
-Known through: 2006-05-17. [Open interactive contract](griffad01.html#contract) · [Contract history](griffad01.html#contract-history)
+Known through: 2006-05-21. [Open interactive contract](griffad01.html#contract) · [Contract history](griffad01.html#contract-history)
 
-Adrian Griffin: under contract. Evidence cutoff: 2006-05-17.
+Adrian Griffin: under contract. Evidence cutoff: 2006-05-21.
 
 ## Current contract
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2006-05-17",
+  "as_of": "2006-05-21",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2006-05-17"
+              "2006-05-21"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2006-05-17",
+              "2006-05-21",
               "Current checkpoint",
               "2006-05-16-new-jersey-nets-at-miami-heat",
               "Recorded",
@@ -848,7 +848,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-17"
+          "value": "2006-05-21"
         },
         {
           "label": "Team",
@@ -1486,7 +1486,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-17"
+          "value": "2006-05-21"
         },
         {
           "label": "Team",
@@ -2161,7 +2161,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-17"
+          "value": "2006-05-21"
         },
         {
           "label": "Team",
@@ -2869,7 +2869,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-17"
+          "value": "2006-05-21"
         },
         {
           "label": "Team",
@@ -3482,7 +3482,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-17"
+          "value": "2006-05-21"
         },
         {
           "label": "Team",
@@ -4138,7 +4138,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-17"
+          "value": "2006-05-21"
         },
         {
           "label": "Team",
@@ -4751,7 +4751,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-17"
+          "value": "2006-05-21"
         },
         {
           "label": "Team",
@@ -5444,7 +5444,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-17"
+          "value": "2006-05-21"
         },
         {
           "label": "Team",
@@ -5461,7 +5461,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "100 closed game records in 2005-06 through 2006-05-17. Competitions remain separate.",
+      "summary": "100 closed game records in 2005-06 through 2006-05-21. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -7111,7 +7111,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-05-17"
+          "value": "2006-05-21"
         },
         {
           "label": "Team",

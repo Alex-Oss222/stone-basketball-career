@@ -2,9 +2,9 @@
 
 # Contract | Mark Jones
 
-Known through: 2006-05-17. [Open interactive contract](markjones.html#contract) · [Contract history](markjones.html#contract-history)
+Known through: 2006-05-21. [Open interactive contract](markjones.html#contract) · [Contract history](markjones.html#contract-history)
 
-Mark Jones: under contract. Evidence cutoff: 2006-05-17.
+Mark Jones: under contract. Evidence cutoff: 2006-05-21.
 
 ## Current contract
 

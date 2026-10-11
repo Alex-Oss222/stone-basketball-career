@@ -2,9 +2,9 @@
 
 # Contract | Kris Humphries
 
-Known through: 2006-05-17. [Open interactive contract](krishumphries.html#contract) · [Contract history](krishumphries.html#contract-history)
+Known through: 2006-05-21. [Open interactive contract](krishumphries.html#contract) · [Contract history](krishumphries.html#contract-history)
 
-Kris Humphries: under contract. Evidence cutoff: 2006-05-17.
+Kris Humphries: under contract. Evidence cutoff: 2006-05-21.
 
 ## Current contract
 

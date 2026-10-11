@@ -2,9 +2,9 @@
 
 # Contract | Luol Deng
 
-Known through: 2006-05-17. [Open interactive contract](luoldeng.html#contract) · [Contract history](luoldeng.html#contract-history)
+Known through: 2006-05-21. [Open interactive contract](luoldeng.html#contract) · [Contract history](luoldeng.html#contract-history)
 
-Luol Deng: under contract. Evidence cutoff: 2006-05-17.
+Luol Deng: under contract. Evidence cutoff: 2006-05-21.
 
 ## Current contract
 

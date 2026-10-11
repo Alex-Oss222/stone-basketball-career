@@ -2,9 +2,9 @@
 
 # Contract | Mehmet Okur
 
-Known through: 2006-05-17. [Open interactive contract](okurme01.html#contract) · [Contract history](okurme01.html#contract-history)
+Known through: 2006-05-21. [Open interactive contract](okurme01.html#contract) · [Contract history](okurme01.html#contract-history)
 
-Mehmet Okur: under contract. Evidence cutoff: 2006-05-17.
+Mehmet Okur: under contract. Evidence cutoff: 2006-05-21.
 
 ## Current contract
 
