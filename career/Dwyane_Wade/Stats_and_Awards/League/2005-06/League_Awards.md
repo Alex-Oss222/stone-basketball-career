@@ -4,7 +4,7 @@
 
 2005-06 · Calendar coverage: 2005-06
 
-As of June 20, 2006: 74 weekly and monthly award decision(s) closed; 9 of 10 season awards decided.
+As of June 20, 2006: 74 weekly and monthly award decision(s) closed; 10 of 10 season awards decided.
 
 ## Individual awards
 
@@ -167,17 +167,17 @@ Exhibitions played by the engine; their MVPs are exhibition honors. [All-Star we
 
 ### NBA champion
 
-Not decided yet. [Playoffs](Playoffs.md)
+**Toronto Raptors**, Finals clinched June 20, 2006 over the San Antonio Spurs, 4-2. [Playoffs](Playoffs.md)
 
 ### Finals MVP
 
-Vote closes the night the Finals are clinched · 10 media panel · ballot 1.
+Announced June 20, 2006 · 10 media panel · ballot 1 · [tally](Season_Awards.md#finals-mvp).
 
 | Rank slot | Player | Team | 1st votes | Points | Status |
 | ---: | --- | --- | ---: | ---: | --- |
-| 1 | Pending | N/A | N/A | N/A | Awaiting vote (closes the night the Finals are clinched) |
-| 2 | Pending | N/A | N/A | N/A | Awaiting vote (closes the night the Finals are clinched) |
-| 3 | Pending | N/A | N/A | N/A | Awaiting vote (closes the night the Finals are clinched) |
+| 1 | Chris Bosh | Toronto Raptors | 10 | 10 | **WINNER** |
+| 2 | No further vote-getter | N/A | N/A | N/A | N/A |
+| 3 | No further vote-getter | N/A | N/A | N/A | N/A |
 
 ## By month
 

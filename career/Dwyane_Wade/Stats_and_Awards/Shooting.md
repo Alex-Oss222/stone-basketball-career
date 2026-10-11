@@ -10637,3 +10637,23 @@ Simulated engine shot locations come from the original closed game results. Part
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2005-10-25 | New Orleans/Oklahoma City Hornets | Played | [Game](../2005-06/05_Preseason/Game_7.md) | [Result](../2005-06/05_Preseason/Game_7.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_7.result.json) |
+
+## 2006-07 · NBA regular season · through 2006-06-20
+
+[Open this period](player_cards.html?period=regular-2006-07-season#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 / 0 | N/A | 0 / 0 | 0 | complete |
+
+No closed games in this competition at the current career checkpoint. No appearance or shot sample is implied.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | 0 | 0 | N/A | N/A | N/A | 0 |
+| Three-point range | 0 | 0 | N/A | N/A | N/A | 0 |
+
+No closed source games in this period. Zero appearances do not establish a 0.0% shooting percentage.

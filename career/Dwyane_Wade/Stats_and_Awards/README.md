@@ -80,7 +80,7 @@ Career cutoff: **2006-06-20**. Club competitions and national-team events have s
 
 ### NBA regular season
 
-[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2005-06-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
+[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2006-07-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
 
 [Shooting detail](Shooting.md) · [Current contract](Contract.md#current-contract) · [Contract history](Contract.md#contract-history) · [Annual award record](Awards.md)
 
@@ -97,7 +97,7 @@ Awards are confirmed through 2006-06-20, filed by the honor's period-end date; t
 
 ### NBA playoffs
 
-[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2005-06-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
+[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2006-07-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
 
 [Shooting detail](Shooting.md) · [Current contract](Contract.md#current-contract) · [Contract history](Contract.md#contract-history) · [Annual award record](Awards.md)
 
@@ -114,7 +114,7 @@ Awards are confirmed through 2006-06-20, filed by the honor's period-end date; t
 
 ### Rookie Challenge (exhibition, separate from NBA totals)
 
-[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2005-06-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
+[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2006-07-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
 
 [Shooting detail](Shooting.md) · [Current contract](Contract.md#current-contract) · [Contract history](Contract.md#contract-history) · [Annual award record](Awards.md)
 
@@ -130,7 +130,7 @@ Awards are confirmed through 2006-06-20, filed by the honor's period-end date; t
 
 ### NBA All-Star Game (exhibition, separate from NBA totals)
 
-[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2005-06-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
+[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2006-07-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
 
 [Shooting detail](Shooting.md) · [Current contract](Contract.md#current-contract) · [Contract history](Contract.md#contract-history) · [Annual award record](Awards.md)
 
