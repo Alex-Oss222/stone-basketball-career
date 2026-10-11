@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `fryech01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-04-20 · **Club on this date:** New Jersey Nets · **Basis:** New Jersey Nets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-04-21 · **Club on this date:** New Jersey Nets · **Basis:** New Jersey Nets: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #7 · **Born:** 1983-05-17 · **Age on card date:** 22  
 **Registry ID:** `fryech01`
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `fryech
 
 ## Simulated statistics
 
-As of **2006-04-20**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-04-21**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No 2002-03 record in the supplied statistics file. 2005-06 is simulated: 82 closed regular-season games through 2006-04-20. Earlier simulated seasons from their closed results.
+**Coverage:** No 2002-03 record in the supplied statistics file. 2005-06 is simulated: 82 closed regular-season games through 2006-04-21. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -120,7 +120,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-04-20, from closed award decisions (2 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-04-21, from closed award decisions (2 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -128,3 +128,4 @@ Simulated honors and shortlist placings through 2006-04-20, from closed award de
 | East Rookie of the Month | 2005-12-01 to 2005-12-31 | 2006-01-02 | Shortlist, No. 2 | [Decision](../2005-06/12_December/League_Awards.md) |
 | East Rookie of the Month | 2006-01-01 to 2006-01-31 | 2006-02-02 | **Winner** | [Decision](../2005-06/01_January/League_Awards.md) |
 | East Rookie of the Month | 2006-03-01 to 2006-03-31 | 2006-04-02 | **Winner** | [Decision](../2005-06/03_March/League_Awards.md) |
+| East Rookie of the Month | 2006-04-01 to 2006-04-19 | 2006-04-21 | Shortlist, No. 3 | [Decision](../2005-06/04_April/League_Awards.md) |

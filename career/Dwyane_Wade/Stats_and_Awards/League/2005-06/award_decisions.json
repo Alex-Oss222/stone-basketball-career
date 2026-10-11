@@ -3643,6 +3643,214 @@
     }
    ],
    "winner": "Shawn Marion"
+  },
+  {
+   "id": "2005-06-player_of_month-2006-04-01-east",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "East",
+   "period_start": "2006-04-01",
+   "period_end": "2006-04-19",
+   "announced_on": "2006-04-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 10,
+     "wins": 9,
+     "losses": 1,
+     "pts": 30.9,
+     "reb": 8.5,
+     "ast": 5.8,
+     "game_score": 23.44,
+     "score": 34.24,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 11,
+     "wins": 6,
+     "losses": 5,
+     "pts": 30.4,
+     "reb": 5.5,
+     "ast": 4.3,
+     "game_score": 26.19,
+     "score": 32.736,
+     "rank": 2
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 11,
+     "wins": 7,
+     "losses": 4,
+     "pts": 29.7,
+     "reb": 7.0,
+     "ast": 6.3,
+     "game_score": 24.09,
+     "score": 31.727,
+     "rank": 3
+    }
+   ],
+   "winner": "Paul Pierce"
+  },
+  {
+   "id": "2005-06-player_of_month-2006-04-01-west",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "West",
+   "period_start": "2006-04-01",
+   "period_end": "2006-04-19",
+   "announced_on": "2006-04-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 8,
+     "wins": 6,
+     "losses": 2,
+     "pts": 34.4,
+     "reb": 5.6,
+     "ast": 5.1,
+     "game_score": 25.44,
+     "score": 34.438,
+     "rank": 1
+    },
+    {
+     "player": "Dirk Nowitzki",
+     "team": "Dallas Mavericks",
+     "games": 9,
+     "wins": 7,
+     "losses": 2,
+     "pts": 27.7,
+     "reb": 8.1,
+     "ast": 3.9,
+     "game_score": 24.36,
+     "score": 33.689,
+     "rank": 2
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 9,
+     "wins": 4,
+     "losses": 5,
+     "pts": 30.0,
+     "reb": 11.9,
+     "ast": 2.9,
+     "game_score": 25.92,
+     "score": 31.256,
+     "rank": 3
+    }
+   ],
+   "winner": "Kobe Bryant"
+  },
+  {
+   "id": "2005-06-rookie_of_month-2006-04-01-east",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "East",
+   "period_start": "2006-04-01",
+   "period_end": "2006-04-19",
+   "announced_on": "2006-04-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Deron Williams",
+     "team": "New York Knicks",
+     "games": 10,
+     "wins": 3,
+     "losses": 7,
+     "pts": 16.3,
+     "reb": 3.6,
+     "ast": 4.4,
+     "game_score": 10.54,
+     "score": 11.74,
+     "rank": 1
+    },
+    {
+     "player": "Ike Diogu",
+     "team": "Charlotte Bobcats",
+     "games": 8,
+     "wins": 3,
+     "losses": 5,
+     "pts": 13.1,
+     "reb": 5.5,
+     "ast": 0.5,
+     "game_score": 9.76,
+     "score": 11.262,
+     "rank": 2
+    },
+    {
+     "player": "Channing Frye",
+     "team": "New Jersey Nets",
+     "games": 10,
+     "wins": 7,
+     "losses": 3,
+     "pts": 11.6,
+     "reb": 6.3,
+     "ast": 1.4,
+     "game_score": 8.38,
+     "score": 11.18,
+     "rank": 3
+    }
+   ],
+   "winner": "Deron Williams"
+  },
+  {
+   "id": "2005-06-rookie_of_month-2006-04-01-west",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "West",
+   "period_start": "2006-04-01",
+   "period_end": "2006-04-19",
+   "announced_on": "2006-04-21",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2005-06/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Chris Paul",
+     "team": "Utah Jazz",
+     "games": 9,
+     "wins": 4,
+     "losses": 5,
+     "pts": 23.4,
+     "reb": 4.2,
+     "ast": 7.0,
+     "game_score": 20.13,
+     "score": 21.911,
+     "rank": 1
+    },
+    {
+     "player": "Danny Granger",
+     "team": "New Orleans/Oklahoma City Hornets",
+     "games": 11,
+     "wins": 6,
+     "losses": 5,
+     "pts": 11.0,
+     "reb": 6.6,
+     "ast": 2.3,
+     "game_score": 10.17,
+     "score": 12.355,
+     "rank": 2
+    },
+    {
+     "player": "Charlie Villanueva",
+     "team": "Memphis Grizzlies",
+     "games": 9,
+     "wins": 4,
+     "losses": 5,
+     "pts": 13.1,
+     "reb": 6.0,
+     "ast": 1.8,
+     "game_score": 9.48,
+     "score": 11.256,
+     "rank": 3
+    }
+   ],
+   "winner": "Chris Paul"
   }
  ]
 }

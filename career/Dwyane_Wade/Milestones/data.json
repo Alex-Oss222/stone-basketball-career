@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2006-04-20",
+  "as_of": "2006-04-21",
   "season": "2005-06",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2006-04-20"
+              "2006-04-21"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2006-04-20",
+              "2006-04-21",
               "Current checkpoint",
               "2006-04-19-miami-heat-at-boston-celtics",
               "Recorded",
@@ -91,16 +91,6 @@
               {
                 "label": "Training camp",
                 "href": "#training_camp"
-              }
-            ],
-            [
-              "2006-04-21",
-              "League awards announced: Player of the Month, Rookie of the Month",
-              "League (closed results only)",
-              "Scheduled",
-              {
-                "label": "Awards",
-                "href": "#calendar"
               }
             ],
             [
@@ -818,7 +808,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-20"
+          "value": "2006-04-21"
         },
         {
           "label": "Team",
@@ -1416,7 +1406,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-20"
+          "value": "2006-04-21"
         },
         {
           "label": "Team",
@@ -2051,7 +2041,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-20"
+          "value": "2006-04-21"
         },
         {
           "label": "Team",
@@ -2719,7 +2709,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-20"
+          "value": "2006-04-21"
         },
         {
           "label": "Team",
@@ -3292,7 +3282,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-20"
+          "value": "2006-04-21"
         },
         {
           "label": "Team",
@@ -3908,7 +3898,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-20"
+          "value": "2006-04-21"
         },
         {
           "label": "Team",
@@ -4481,7 +4471,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-20"
+          "value": "2006-04-21"
         },
         {
           "label": "Team",
@@ -5130,7 +5120,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-20"
+          "value": "2006-04-21"
         },
         {
           "label": "Team",
@@ -5147,7 +5137,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "90 closed game records in 2005-06 through 2006-04-20. Competitions remain separate.",
+      "summary": "90 closed game records in 2005-06 through 2006-04-21. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -6638,7 +6628,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2006-04-20"
+          "value": "2006-04-21"
         },
         {
           "label": "Team",
