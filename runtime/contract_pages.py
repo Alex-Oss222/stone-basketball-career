@@ -144,6 +144,15 @@ def profile_identity(profile, registry, clock):
 DIRECTORY_CSS = """:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0b0d12;color:#f0f0f2;font:14px/1.6 system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:30px 24px 70px}a{color:#ec9cac}nav{display:flex;flex-wrap:wrap;gap:24px;margin-bottom:36px}h1{font-size:clamp(32px,5vw,54px);line-height:1.1;margin:0 0 16px;letter-spacing:-1px}h2{margin-top:32px;font-size:18px}.eyebrow{color:#ed758e;text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:2px}.lead{max-width:820px;color:#b8bbc5}.facts{display:flex;gap:14px;flex-wrap:wrap;margin:25px 0}.fact{border:1px solid #48303a;border-radius:9px;background:#20151c;padding:16px 25px}.fact strong{display:block;font-size:26px}.fact span{color:#d5bac3;font-size:11px}.controls{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px;margin:24px 0}label{font-size:12px;color:#c3c3cb}input,select{display:block;width:100%;margin-top:7px;min-height:44px;background:#171a23;color:white;border:1px solid #45434e;border-radius:6px;padding:9px 12px;font:inherit}.table-scroll{overflow:auto;max-width:100%;border:1px solid #39303a;border-radius:9px}table{border-collapse:collapse;width:100%;min-width:870px}th,td{padding:15px;text-align:left;border-bottom:1px solid #302c34}th{background:#421b29;color:#f3d6dd;font-size:11px;text-transform:uppercase;letter-spacing:.5px}td{font-size:12px;vertical-align:top}td:first-child a{font-weight:750;color:#f5eef0;font-size:14px}small{display:block;color:#989da9;font-size:11px;max-width:280px}tr:hover{background:#18171f}.result{color:#a5a8b2;font-size:12px;margin:12px 0}a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #e8bb63;outline-offset:4px}footer{margin-top:35px;font-size:12px;color:#a9a9b4}#empty{padding:24px;background:#20151c;border:1px solid #48303a}@media(max-width:650px){main{padding:24px 16px}.controls{grid-template-columns:1fr}.facts{gap:8px}.fact{padding:12px 16px}.fact strong{font-size:22px}}[hidden]{display:none!important}@media print{.controls{display:none}body{background:white;color:black}a,td:first-child a{color:black}main{max-width:none;padding:0}.table-scroll{overflow:visible}table{min-width:0}th{background:#eee;color:black}small{color:#444}}"""
 
 
+def orphan_pages(player, outputs):
+    """Player contract pages on disk that the build no longer writes (their id left the catalog): a stale page nobody
+    regenerates, which the refresh removes and the freshness check reports."""
+    folder = Path(player) / "Contracts" / "players"
+    written = {Path(p).resolve() for p in outputs}
+    return sorted(p for p in folder.glob("*") if p.suffix in (".md", ".html") and p.resolve() not in written) \
+        if folder.is_dir() else []
+
+
 def build_contract_pages(root, player, clock, *, catalog=None):
     catalog = catalog or build_contract_catalog(root, player, clock)
     folder = player / "Contracts"

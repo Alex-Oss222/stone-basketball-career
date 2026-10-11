@@ -571,6 +571,9 @@ def report_errors(root: Path, player: Path) -> list[str]:
         return [f"player statistics source error: {exc}"]
     errors = [f"stale/missing player report: {p.relative_to(root)}; run scripts/update_player_reports.py"
               for p, text in expected.items() if not p.is_file() or p.read_text(encoding="utf-8") != text]
+    from .contract_pages import orphan_pages
+    errors += [f"orphan contract page (its player left the catalog): {p.relative_to(root)}; run scripts/update_player_reports.py"
+               for p in orphan_pages(player, expected)]
     for page, text in expected.items():
         for href in re.findall(r"\[[^\]\n]+\]\(([^)\s]+)\)", text):
             if "://" in href or href.startswith("#"):

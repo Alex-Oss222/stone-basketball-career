@@ -94,6 +94,46 @@ A `voided` or `released` record must identify an existing agreement; it closes i
 
 Both the record's knowledge date and a new agreement's signing date must have been reached before that signing enters the live view. Later outcomes within an agreement still retain their own date gates. Optional unsupported or unknown detail is left absent or explicitly unavailable according to validation; do not invent a value merely to fill a column. The workflow may preserve an `executed_terms` snapshot for an actual new signing; that original snapshot must not be replaced by a later remaining-salary fragment.
 
+### Dated league events on the pages
+
+The catalog reads the simulation's own dated records as well as the contract records above. Each is read only; nothing
+here changes a ledger, a roster or a decision.
+
+- **Option decisions.** Every applied decision in `<season>/League/option_decisions.json` (`runtime/options.py`) is shown on
+  the agreement whose option it decides, with its deadline, outcome and outcome date: the agreement naming that option
+  season (an option amount kind, an `options` list or Miami's `team_option_season` with its `fourth_year_option_deadline`
+  or `option_deadline`), else the earlier agreement whose schedule holds the season (Miami's sheet turns an exercised
+  option into contract salary). A team or player option is `exercised` or `declined`; an early termination option is
+  `exercised` (the player leaves) or `not exercised`. A declined option, an opt-out or an exercised early termination
+  ends the agreement with the season before it; the salary row stays, marked not part of the contract.
+- **League contract ledger.** A contract `<season>/League/contracts.json` carries for a club other than Miami that no
+  dated record shows for that season (a 2003 first-round scale contract, a contract the first ledger reconstructed from
+  the season's salaries) is its own agreement, known from the rollover that wrote the ledger, with the remaining seasons
+  and option seasons the ledger gives. A salary fragment whose end its own record leaves open ends with its last recorded
+  season when the next ledger does not carry the player.
+- **Holder changes, in date order.** Summer-market trades, Miami's completed trades, the expansion draft, the real
+  league's trades and waivers before the symmetric league, and the dated league moves (`<season>/League/league_moves.json`)
+  all act on the agreement in force on their date (the newest begun agreement no dated event or final season has closed;
+  an extension signed and not begun travels with it). A trade or waiver claim is an assignment; a 10-day or
+  rest-of-season contract is a new agreement (a rest-of-season contract runs to June 30 of its season, the move's
+  `until` being the last regular-season day); a waiver, an expired 10-day contract or a retirement closes the agreement
+  on its date (`Ended on`), and a claim reopens the agreement its waiver closed. An agreement's assigned club is its
+  latest assignment's; an agreement still in force names a renamed club by its current name (`seasons.club_name`).
+- **Miami's sheet and archive** carry an agreement's whole schedule, so its last scheduled season ends it.
+- **Status.** The profile status is the current agreement's; an agreement past its expiry reads `expired`. Without one in
+  force on the cutoff, a status that claimed a contract becomes `rostered; no contract in force in the dated records`
+  (the dated club has him), or `unsigned free agent (...)` / `out of the league (...)` with how the last agreement
+  ended. A player whose real career has ended while a club still owes his contract reads
+  `out of the league (contract on the books)`. Miami's register names a "signs with" club only for a player who has no
+  dated club; a registry player's club is always `league_cards.club_on` on the cutoff.
+- Two records of one agreement match when their recorded amounts agree; an unrecorded amount is unknown, not different.
+  Records that share seasons with no amount recorded on both sides match only when one names the agreement by its
+  signing date alone and the other by its contract id alone (a reported signing and the sheet row a trade brought in).
+
+A page whose player id has left the catalog is removed by the rebuild, and `scripts/update_player_reports.py --check`
+reports one left on disk. A `released` record (`roster_moves.waive`) names the agreement the waived sheet entry carries,
+matched by its signing date (`contract_archive.signed_record`), never the player's oldest signing.
+
 These records are an evidence-maintenance interface, not an alternative execution engine. Use an executed signing source for a new signed agreement, or an attributed source correction for an amendment. `runtime/contract_archive.py` preserves reached signing and assignment evidence from the normal execution writers. Changing a display record does not itself change the roster, cap ledger, eligibility, negotiation acceptance or career clock. Normal executed transaction workflows remain responsible for those changes.
 
 Existing executed paths have different evidence:

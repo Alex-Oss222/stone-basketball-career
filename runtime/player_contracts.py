@@ -16,10 +16,18 @@ SIGNED = {"under_contract", "under_rookie_contract", "under_contract_guarantee_a
           "team_option_exercised", "player_option_exercised", "free_agent_expiring",
           "team_option_declined", "player_option_declined", "traded", "released",
           "retired_salary_on_books", "signed", "expired", "camp_contract",
-          "expiring_contract", "signed_elsewhere", "renounced", "voided", "waived"}
+          "expiring_contract", "signed_elsewhere", "renounced", "voided", "waived", "retired"}
 CLOSED = {"team_option_declined", "player_option_declined", "released", "expired",
-          "retired_salary_on_books", "signed_elsewhere", "renounced", "voided", "waived"}
+          "retired_salary_on_books", "signed_elsewhere", "renounced", "voided", "waived", "retired"}
+DECLINED = {"team_option_declined", "player_option_declined"}    # closed only from the declined season on
+# A status that says a contract is in force, and the control statuses that claim one: shown only while an agreement is.
+IN_FORCE = SIGNED - CLOSED - {"traded", "signed"}
+CLAIMS = IN_FORCE | {"traded", "signed", "under_contract_unverified", "minimum_contract_unverified"}
 NON_SALARY = {"draft_hold", "unsigned_rights"}
+OPTION_KINDS = ("team_option", "player_option", "early_termination_option")
+# A dated league move (`<season>/League/league_moves.json`): an assignment, a new agreement or the agreement's end.
+MOVE_ASSIGN, MOVE_SIGN, MOVE_CLOSE = ("trade", "claim"), ("ten_day", "rest_of_season"), {
+    "waive": "waived", "clear": "waived", "expire": "expired", "retire": "retired"}
 MONEY_FIELDS = ("base_salary", "cap_hit", "guaranteed", "likely_incentives",
                 "unlikely_incentives", "signing_bonus", "dead_cap", "buyout")
 TERM_FIELDS = ("trade_clauses", "trade_kicker", "no_trade_clause", "trade_consent",
@@ -125,7 +133,125 @@ def _same_contract(old, new):
     if old.get("status") not in SIGNED or new.get("status") not in SIGNED:
         return False
     shared = set(old.get("schedule", {})) & set(new.get("schedule", {}))
-    return bool(shared) and all(old["schedule"][s] == new["schedule"][s] for s in shared)
+    # An unrecorded amount is unknown, not a different salary: only two recorded amounts can disagree. Without one
+    # recorded on both sides the seasons prove nothing, unless the two records name the agreement in the two ways that
+    # cannot be compared (one by its signing date only, the other by its contract id only: a reported signing and the
+    # sheet row a trade brought in under its baseline id).
+    known = [s for s in shared if old["schedule"][s] is not None and new["schedule"][s] is not None]
+    if known:
+        return all(old["schedule"][s] == new["schedule"][s] for s in known)
+    named = lambda e: (bool(e.get("signed_date")), bool(e.get("contract_id")))
+    return bool(shared) and {named(old), named(new)} == {(True, False), (False, True)}
+
+
+def _season_before(season):
+    return f"{int(season[:4]) - 1}-{season[2:4]}"
+
+
+def _june_30(season):
+    return f"{int(season[:4]) + 1}-06-30"
+
+
+def _outcome(kind, decision):
+    """An applied option decision (`runtime/options.py`: exercise/decline, stay/leave) as the option's outcome, and
+    whether it removes the season (a declined option, an opt-out, an exercised early termination)."""
+    if kind == "early_termination_option":
+        return ("exercised", True) if decision == "leave" else ("not exercised", False)
+    return ("exercised", False) if decision in ("exercise", "stay") else ("declined", True)
+
+
+def _option_rows(entry):
+    """The agreement's options: recorded option lists, option amount kinds, the sheet's `team_option_season`, each with
+    its applied decision (`League/option_decisions.json`) laid over it."""
+    schedule = entry.get("schedule", {})
+    options = deepcopy(entry.get("options", [])) if isinstance(entry.get("options"), list) else []
+    kinds = dict(entry.get("amount_kind", {}))
+    if entry.get("team_option_season") and not kinds.get(entry["team_option_season"]) in OPTION_KINDS:
+        kinds[entry["team_option_season"]] = "team_option"      # an exercised option's season reads contract_salary
+    for season, kind in sorted(kinds.items()):
+        if kind not in OPTION_KINDS or any(o.get("season") == season for o in options):
+            continue
+        # a rookie-scale fourth-year option names its deadline; so does an extension's option (runtime/extensions.py)
+        option = {"season": season, "type": kind, "amount": _number(schedule.get(season)),
+                  "deadline": (entry.get("option_deadline") or entry.get("fourth_year_option_deadline")) if kind == "team_option" else None,
+                  "outcome": None, "outcome_date": None}
+        if entry.get("status") in (f"{kind}_exercised", f"{kind}_declined"):
+            option.update(outcome=entry["status"].split("_")[-1],
+                          outcome_date=entry.get("option_decision_date"), evidence_as_of=entry.get("_as_of"))
+        options.append(option)
+    for d in entry.get("_option_decisions", []):
+        option = next((o for o in options if o.get("season") == d["option_season"] and o.get("type") == d["kind"]), None)
+        if option is None:
+            option = {"season": d["option_season"], "type": d["kind"], "amount": None, "deadline": None}
+            options.append(option)
+        outcome, removes = _outcome(d["kind"], d["decision"])
+        option.update(amount=option.get("amount") if option.get("amount") is not None else _number(d.get("salary")),
+                      deadline=option.get("deadline") or d.get("deadline"), outcome=outcome,
+                      outcome_date=d.get("applied") or d.get("recorded_on"), decided_by=d.get("decider"),
+                      removes_season=removes)
+    return sorted(options, key=lambda o: o.get("season") or "")
+
+
+def _last_season(entry):
+    """The agreement's final season when its own record establishes it: a recorded end, the last season of a schedule
+    that is the whole agreement (Miami's authoritative sheet and archive, an executed signing, the league contract
+    ledger, a league move), cut short by an option that removed its season. None for a partial salary fragment."""
+    schedule = entry.get("schedule", {})
+    seasons = sorted(s for s in schedule if entry.get("amount_kind", {}).get(s) not in NON_SALARY)
+    end = entry.get("end_season") if isinstance(entry.get("end_season"), str) else None
+    if end is None and seasons and (entry.get("_whole_schedule") or entry.get("full_original_schedule") is True):
+        end = seasons[-1]
+    end = end or entry.get("_ledger_end")
+    removed = [o["season"] for o in _option_rows(entry) if o.get("removes_season")
+               or (o.get("outcome") == "declined" and o.get("type") != "early_termination_option")]
+    if removed:
+        cut = _season_before(min(removed))
+        end = min(end, cut) if end else cut
+    return end
+
+
+def _expiry(entry):
+    expiry = entry.get("expiry_date")
+    end = _last_season(entry)
+    if end and re.fullmatch(r"\d{4}-\d{2}", end):
+        expiry = min(expiry, _june_30(end)) if expiry else _june_30(end)
+    return expiry
+
+
+def _started(entry, day):
+    if entry.get("signed_date") and entry["signed_date"] > day:
+        return False
+    first = entry.get("start_season")
+    return not first or first[:4] + "-07-01" <= day
+
+
+def _ended(entry, day):
+    """True once the agreement is no longer in force on `day`: closed by a dated event, a closing status without a
+    date, or past its expiry."""
+    if entry.get("_ended_on"):
+        if entry["_ended_on"] <= day:
+            return True
+    elif entry.get("status") in CLOSED - DECLINED:
+        return True
+    elif entry.get("status") in DECLINED and not any(o.get("outcome") == "declined" for o in _option_rows(entry)):
+        return True
+    expiry = _expiry(entry)
+    return bool(expiry and expiry < day)
+
+
+def _start_key(entry):
+    first = entry.get("start_season") or min(entry.get("schedule") or {"": None})
+    return entry.get("signed_date") or (first[:4] + "-07-01" if first else "")
+
+
+def _holding(entries, day):
+    """The agreements a holder change on `day` moves: the newest agreement in force, with every agreement signed by then
+    that has not begun (an extension travels with the contract it extends)."""
+    live = [e for e in entries if _started(e, day) and not _ended(e, day)]
+    newest = max(live, key=lambda e: (_start_key(e), e.get("_as_of") or ""), default=None)
+    future = [e for e in entries if e.get("signed_date") and e["signed_date"] <= day and not _started(e, day)
+              and not _ended(e, day)]
+    return ([newest] if newest else []) + future
 
 
 def _normal_contract(player_id, entry, cutoff, caps):
@@ -155,21 +281,14 @@ def _normal_contract(player_id, entry, cutoff, caps):
         row["cap_percent"] = round(100 * row["cap_hit"] / cap, 4) if cap and row["cap_hit"] is not None else None
         row["salary_cap_percent"] = round(100 * row["salary"] / cap, 4) if cap and row["salary"] is not None else None
         rows.append(row)
-    options = deepcopy(entry.get("options", []))
-    for season, kind in entry.get("amount_kind", {}).items():
-        if kind not in ("team_option", "player_option", "early_termination_option") or any(o.get("season") == season for o in options):
-            continue
-        # a rookie-scale fourth-year option names its deadline; so does an extension's option (runtime/extensions.py)
-        option = {"season": season, "type": kind, "amount": _number(schedule.get(season)),
-                  "deadline": (entry.get("option_deadline") or entry.get("fourth_year_option_deadline")) if kind == "team_option" else None,
-                  "outcome": None, "outcome_date": None}
-        if entry.get("status") in (f"{kind}_exercised", f"{kind}_declined"):
-            option.update(outcome=entry["status"].split("_")[-1],
-                          outcome_date=entry.get("option_decision_date"), evidence_as_of=entry.get("_as_of"))
-        options.append(option)
+    options = _option_rows(entry)
     for option in options:
         if option.get("outcome") is not None and option.get("outcome_date") and not _known(option["outcome_date"], cutoff):
-            option.update(outcome=None, outcome_date=None)
+            option.update(outcome=None, outcome_date=None, removes_season=False)
+        row = next((r for r in rows if r["season"] == option.get("season") and r["amount_kind"] != "prior_season_salary_reference"), None)
+        if row is not None and option.get("outcome") and option.get("outcome_date") and not row["condition"]:
+            row["condition"] = (f"{option['type'].replace('_', ' ').capitalize()} {option['outcome']} {option['outcome_date']}"
+                                + ("; not part of the contract." if option.get("removes_season") else "."))
     total = entry.get("reported_total")
     total = deepcopy(total) if isinstance(total, dict) else {"amount": _number(total), "precision": None}
     scheduled = [r["salary"] for r in rows if r["amount_kind"] != "prior_season_salary_reference"]
@@ -179,13 +298,16 @@ def _normal_contract(player_id, entry, cutoff, caps):
     term = entry.get("original_term_seasons")
     original_aav = (total.get("amount") / term if complete and type(term) is int and term == len(scheduled) and term > 0
                     and total.get("amount") is not None else None)
-    expiry = entry.get("expiry_date")
-    if not expiry and isinstance(entry.get("end_season"), str) and re.fullmatch(r"\d{4}-\d{2}", entry["end_season"]):
-        expiry = f"{int(entry['end_season'][:4]) + 1}-06-30"
-    return {"id": _contract_key(player_id, entry), "status": entry.get("status"),
+    # a dated closing (a waiver, an expired ten-day, a Miami release or void) ends the agreement on its date; one past
+    # its own expiry reads expired, never under contract
+    ended = entry.get("_ended_on") if _known(entry.get("_ended_on"), cutoff) else None
+    status, expiry = entry.get("_close_status") if ended and entry.get("_close_status") else entry.get("status"), _expiry(entry)
+    if cutoff and not ended and status in IN_FORCE and expiry and expiry < cutoff:
+        status = "expired"
+    return {"id": _contract_key(player_id, entry), "status": status,
         "team": entry.get("_team"), "signing_team": entry.get("signing_team"),
         "signed_on": entry.get("signed_date"), "start_season": entry.get("start_season"),
-        "end_season": entry.get("end_season"), "expiry_date": expiry,
+        "end_season": _last_season(entry), "expiry_date": expiry, "ended_on": ended,
         "type": entry.get("route") or entry.get("basis") or "Existing contract record",
         "original_term_seasons": term, "reported_total": total, "original_aav": original_aav,
         "scheduled_subtotal": sum(v for v in scheduled if v is not None) if scheduled else None,
@@ -193,7 +315,7 @@ def _normal_contract(player_id, entry, cutoff, caps):
         "salary_rows": rows, "options": options, "guarantee": deepcopy(entry.get("guarantee")),
         "terms": {key: deepcopy(entry.get(key)) for key in TERM_FIELDS},
         "notes": entry.get("notes"), "contract_text": entry.get("contract_text"),
-        "assignment_history": deepcopy(entry.get("_assignments", [])),
+        "assignment_history": sorted(deepcopy(entry.get("_assignments", [])), key=lambda a: a["date"]),
         "sources": deepcopy(entry.get("_sources", [])), "record_as_of": entry.get("_as_of")}
 
 
@@ -201,14 +323,14 @@ from .league_book import SYMMETRIC_FROM                                       # 
 MARKET_SIGNINGS = ("signing", "re_sign", "offer_sheet_matched", "qualifying_offer_accepted", "camp_signing", "rookie_scale_signing")
 
 
-def _market_contracts(root, player, cutoff, add, profiles, match, protagonist):
-    """Every completed summer market's contracts (2004 onward), oldest first."""
+def _market_contracts(root, player, cutoff, add, match, protagonist, moves):
+    """Every completed summer market's contracts (2004 onward), oldest first; its trades join `moves`."""
     for path in sorted(Path(root).glob("career/Dwyane_Wade/????-??/10_Free_Agency/free_agency_????.json")):
         year = int(path.stem[-4:])
-        _market_year_contracts(root, player, cutoff, add, profiles, match, protagonist, path, f"{year}-{str(year + 1)[-2:]}")
+        _market_year_contracts(root, player, cutoff, add, match, protagonist, path, f"{year}-{str(year + 1)[-2:]}", moves)
 
 
-def _market_year_contracts(root, player, cutoff, add, profiles, match, protagonist, path, NEW):
+def _market_year_contracts(root, player, cutoff, add, match, protagonist, path, NEW, moves):
     from .extensions import base_schedule
     from .league_contracts import read as read_ledger, schedule_for
     from .seasons import dates
@@ -241,18 +363,228 @@ def _market_year_contracts(root, player, cutoff, add, profiles, match, protagoni
             add(entry, e["club"], source, e["date"], path.parent, False)
         elif e["kind"] == "trade":
             key = match({"player": e["player"], "bbr_id": e["bbr_id"]})
+            if key:
+                moves.append({"date": e["date"], "key": key, "kind": "trade", "from": e.get("from"), "to": e["club"],
+                              "id": e.get("deal"), "source": source, "order": (0, path.as_posix(), 0)})
+
+
+def _ledger_contracts(root, player, cutoff, add, match, profiles, protagonist):
+    """The league contract ledger's carried contracts (`<season>/League/contracts.json`, `runtime/league_contracts.py`)
+    that no dated record shows for the ledger's season: a 2003 first-round scale contract, or a contract the first ledger
+    reconstructed from the season's salaries. Each is an agreement from the ledger, known from the rollover that wrote
+    it, with the remaining seasons and option seasons the ledger carries; its option decision and later moves land on it.
+    Miami's rows stay its own sheet's, and a new summer-market contract is already its own agreement."""
+    from .extensions import without_extension
+    for season, path, ledger, as_of in _ledgers(player, cutoff):
+        source = _source(path, root, "League contract ledger (simulated league)")
+        for c in ledger["contracts"]:
+            if c.get("club") in (None, "Miami Heat") or c.get("kind") != "existing" or not c.get("schedule"):
+                continue
+            key = match({"player": c.get("player"), "bbr_id": c.get("bbr_id")})
+            if not key or profiles[key]["name"] == protagonist:
+                continue
+            if any(season in (e.get("schedule") or {}) for e in profiles[key]["_entries"]):
+                continue
+            schedule = without_extension(c)["schedule"]      # an extension's seasons are its own agreement
+            options = c.get("options") or {}
+            rookie = bool(c.get("rookie_scale"))
+            row = {"player": c["player"], "bbr_id": c["bbr_id"], "status": "under_rookie_contract" if rookie else "under_contract",
+                   "route": ("rookie scale" if rookie else "existing contract") + " (league contract ledger)",
+                   "schedule": dict(schedule), "_whole_schedule": True,
+                   "amount_kind": {s: options.get(s) if options.get(s) in OPTION_KINDS else "contract_salary" for s in schedule},
+                   "notes": (f"Carried by the {season} league contract ledger ({c.get('source') or 'source not recorded'}): the "
+                             f"seasons from {season} on. Its signing date and earlier seasons are not in the dated records.")}
+            add(row, c["club"], source, as_of, path.parent.parent, False)
+
+
+def _ledgers(player, cutoff):
+    """[(season, path, ledger, as_of)] for each league contract ledger known on the cutoff: the rollover writes it on
+    the closed season's last career date (that season's state stops there)."""
+    out = []
+    for folder in sorted(player.glob("????-??")):
+        path = folder / "League/contracts.json"
+        ledger = _read(path)
+        as_of = _read(player / _season_before(folder.name) / "current_state.json").get("current_date") or f"{folder.name[:4]}-10-01"
+        if ledger.get("contracts") and _known(as_of, cutoff):
+            out.append((folder.name, path, ledger, as_of))
+    return out
+
+
+def _ledger_ends(player, cutoff, profiles):
+    """A salary fragment's final season when the league contract ledger settles it: an agreement whose end its own record
+    leaves open, and which the first ledger after its last recorded season does not carry (the player has no contract
+    in that ledger, Miami's sheet included), ended with that recorded season."""
+    carried = {season: {c.get("bbr_id") for c in ledger["contracts"]} for season, _, ledger, _ in _ledgers(player, cutoff)}
+    for profile in profiles.values():
+        bbr = (profile.get("identity") or {}).get("bbr_id")
+        for entry in profile["_entries"]:
+            seasons = sorted(s for s in entry.get("schedule") or {} if entry.get("amount_kind", {}).get(s) not in NON_SALARY)
+            if not bbr or not seasons or entry.get("_league_move") or _last_season(entry) or entry.get("expiry_date"):
+                continue
+            after = f"{int(seasons[-1][:4]) + 1}-{str(int(seasons[-1][:4]) + 2)[-2:]}"
+            if after in carried and bbr not in carried[after]:
+                entry["_ledger_end"] = seasons[-1]
+
+
+def _attach_option_decisions(player, cutoff, match, profiles):
+    """Every applied option decision (`<season>/League/option_decisions.json`, `runtime/options.py`) on each agreement
+    whose option it decides: the one naming that option season (amount kind, option list or the sheet's
+    `team_option_season`), else the earlier agreement whose schedule holds the season (Miami's sheet turns an exercised
+    option into contract salary). `_option_rows` lays the outcome and its date over the option."""
+    for path in sorted(player.glob("????-??/League/option_decisions.json")):
+        for d in _read(path).get("decisions", []):
+            day = d.get("applied")
+            if not d.get("decision") or not _known(day, cutoff):
+                continue
+            key = match({"player_id": d.get("bbr_id"), "player": d.get("player"), "bbr_id": d.get("bbr_id")})
             if not key:
                 continue
-            profile = profiles[key]
-            eligible = [x for x in profile["_entries"] if not x.get("signed_date") or x["signed_date"] <= e["date"]]
-            if eligible:
-                entry = max(eligible, key=lambda x: (x.get("signed_date") or "", x.get("_as_of") or ""))
-                entry.setdefault("_assignments", []).append({"date": e["date"], "from": e.get("from"), "to": e["club"],
-                                                             "kind": "trade", "transaction_id": e.get("deal"), "source": source})
-                entry["_team"] = e["club"]
-                entry["_sources"].append(source)
-            if e["date"] >= profile["_team_date"]:
-                profile["team"], profile["_team_date"] = e["club"], e["date"]
+            entries = profiles[key]["_entries"]
+            s, kind = d["option_season"], d["kind"]
+            marked = [e for e in entries if any(o.get("season") == s and o.get("type") == kind for o in _option_rows(e))]
+            if not marked:
+                marked = [e for e in entries if s in (e.get("schedule") or {}) and _start_key(e) < s[:4] + "-07-01"
+                          and (not e.get("signed_date") or e["signed_date"] <= day)]
+            for e in marked:
+                if all(x.get("id") != d.get("id") for x in e.get("_option_decisions", [])):
+                    e.setdefault("_option_decisions", []).append(d)
+
+
+def _league_moves(player, cutoff, match, profiles, protagonist, root, moves):
+    """Every dated league move (`<season>/League/league_moves.json`) as a holder event; Miami's own moves are its records'."""
+    for path in sorted(player.glob("????-??/League/league_moves.json")):
+        record = _read(path)
+        source = _source(path, root, "Dated league move")
+        for i, m in enumerate(record.get("entries", [])):
+            if not _known(m.get("date"), cutoff) or "Miami Heat" in (m.get("from"), m.get("to")):
+                continue
+            key = match({"player": m.get("player"), "bbr_id": m.get("bbr_id")})
+            if key and profiles[key]["name"] != protagonist:
+                moves.append(dict(m, key=key, season=record.get("season") or path.parts[-3], source=source,
+                                  id=m.get("id") or m.get("deal"), order=(1, path.as_posix(), i)))
+
+
+def _world_moves(root, cutoff, match, profiles, protagonist, moves):
+    """The real league's dated trades and waivers before the symmetric league (rule 1 skips any involving Miami), the
+    moves `league_cards.world_moves` gives a registry player's club: draft rights, picks and a sign-and-trade's signing
+    (its own agreement, above) are not contract assignments."""
+    for path in sorted((root / "library").glob("*/league/nba_*_offseason_transactions.json")):
+        data = _read(path)
+        source = _source(path, root, "Dated real transaction (before the symmetric league)")
+        for i, t in enumerate(data.get("trades", [])):
+            if t.get("involves_miami") or not _known(t.get("date"), cutoff) or t["date"] >= SYMMETRIC_FROM:
+                continue
+            for club, sides in t.get("clubs", {}).items():
+                for item in sides.get("in", []):
+                    key = None if "(" in item else match({"player": item})
+                    if not key or profiles[key]["name"] == protagonist:
+                        continue
+                    origin = next((c for c, s in t["clubs"].items() if c != club and item in s.get("out", [])), None)
+                    moves.append({"date": t["date"], "key": key, "kind": "trade", "from": origin, "to": club,
+                                  "id": None, "source": source, "order": (-1, path.as_posix(), i)})
+        for i, w in enumerate(data.get("waivers", [])):
+            if (w.get("involves_miami") or w.get("club") == "Miami Heat" or not _known(w.get("date"), cutoff)
+                    or w["date"] >= SYMMETRIC_FROM):
+                continue
+            key = match({"player": w.get("player"), "bbr_id": w.get("bbr_id")})
+            if key and profiles[key]["name"] != protagonist:
+                moves.append({"date": w["date"], "key": key, "kind": "waive", "from": w.get("club"), "to": None,
+                              "id": f"{path.stem}-waiver-{i}", "source": source, "order": (-1, path.as_posix(), 100 + i)})
+
+
+def _expansion_moves(player, cutoff, match, profiles, protagonist, root, moves):
+    """Each expansion-draft selection (`<season>/09_Draft/expansion_<year>.json`): the contract assigned to the new club."""
+    for path in sorted(player.glob("????-??/09_Draft/expansion_????.json")):
+        record = _read(path)
+        if not _known(record.get("date"), cutoff):
+            continue
+        source = _source(path, root, "Expansion draft")
+        for i, s in enumerate(record.get("selections", [])):
+            key = match({"player": s.get("player"), "bbr_id": s.get("bbr_id")})
+            if key and profiles[key]["name"] != protagonist:
+                moves.append({"date": record["date"], "key": key, "kind": "trade", "from": s.get("from"),
+                              "to": record["club"], "id": None, "label": "expansion draft", "source": source,
+                              "order": (0, path.as_posix(), i)})
+
+
+def _apply_moves(moves, profiles, add, player):
+    """Holder changes in date order. A trade or waiver claim assigns the agreement in force (an extension signed and not
+    begun travels with it); a 10-day or rest-of-season contract is a new agreement; a waiver, an expired 10-day contract
+    or a retirement closes the agreement in force on its date, and a claim reopens the agreement its waiver closed."""
+    waivers = {m["id"]: m for m in moves if m["kind"] == "waive"}
+    for m in sorted(moves, key=lambda m: (m["date"], m["order"])):
+        profile, day, kind = profiles[m["key"]], m["date"], m["kind"]
+        entries = profile["_entries"]
+
+        def assign(targets, origin, label):
+            for entry in targets:
+                # one assignment per holder change: the transaction document replaces an archive of the same change
+                entry["_assignments"] = [a for a in entry.get("_assignments", [])
+                                         if (a["date"], a["from"], a["to"]) != (day, origin, m["to"])]
+                entry["_assignments"].append({"date": day, "from": origin, "to": m["to"], "kind": label,
+                                              "transaction_id": m.get("id"), "source": m["source"]})
+                if m["source"] not in entry["_sources"]:
+                    entry["_sources"].append(m["source"])
+        if kind == "trade":
+            targets = _holding(entries, day)
+            if not targets and m.get("fallback"):
+                # Miami's completed trade always moves a contract: the newest begun agreement no dated event closed
+                begun = [e for e in entries if _started(e, day) and not (e.get("_ended_on") and e["_ended_on"] <= day)]
+                targets = [max(begun, key=lambda e: (_start_key(e), e.get("_as_of") or ""))] if begun else []
+            assign(targets, m.get("from"), m.get("label") or "trade")
+        elif kind == "claim":
+            waived = [e for e in entries if e.get("_closed_by") and e["_closed_by"] == m.get("waiver")]
+            for e in waived:
+                for field in ("_ended_on", "_close_status", "_closed_by"):
+                    e.pop(field, None)
+                if e.get("_league_move") and (m.get("contract") or {}).get("until"):
+                    e["expiry_date"] = _june_30(m["season"])        # a claimed contract runs the rest of the season
+            assign(waived or _holding(entries, day), (waivers.get(m.get("waiver")) or {}).get("from"), "waiver claim")
+        elif kind in MOVE_SIGN:
+            season, rest = m["season"], kind == "rest_of_season"
+            terms = m.get("contract") or {}
+            row = {"player": m["player"], "bbr_id": m.get("bbr_id"), "status": "under_contract",
+                   "contract_id": f"{m['key']}-{day}-{kind.replace('_', '-')}", "signed_date": day, "signing_team": m["to"],
+                   "route": "rest-of-season contract" if rest else "10-day contract", "original_term_seasons": 1,
+                   "start_season": season, "end_season": season, "schedule": {season: None},
+                   "amount_kind": {season: "contract_salary"},
+                   "amount_precision": {season: f"{terms.get('salary') or 'salary'}; amount not recorded"},
+                   "expiry_date": _june_30(season) if rest else terms.get("until"), "_league_move": True,
+                   "notes": (f"League market {kind.replace('_', '-')} contract with {m['to']} on {day} ({m.get('note') or 'no note'}). "
+                             + (f"The move runs it through {terms.get('until')}, the last day of the regular season; a "
+                                f"contract for the rest of the season ends with the league year on {_june_30(season)}."
+                                if rest else f"It ends on {terms.get('until')}."))}
+            add(row, m["to"], m["source"], day, player, False)
+        elif kind in MOVE_CLOSE:
+            if not (kind == "clear" and any(e.get("_closed_by") == m.get("waiver") for e in entries)):
+                # a clear normally finds the agreement its waiver already closed on the waiver's date
+                for e in _holding(entries, day):
+                    e.update(_ended_on=day, _close_status=MOVE_CLOSE[kind], _closed_by=m.get("id"))
+                    if m["source"] not in e["_sources"]:
+                        e["_sources"].append(m["source"])
+        if kind in MOVE_ASSIGN + MOVE_SIGN and m.get("to") and day >= profile["_team_date"]:
+            profile["team"], profile["_team_date"] = m["to"], day
+
+
+def _display_status(profile, current, contracts, control_status, club_basis):
+    """The profile's status on the cutoff, from the agreement in force: never a contract status without one."""
+    out = str(club_basis or "").startswith("out of the league")
+    if current:
+        if out:
+            return "out of the league (contract on the books)"     # his real career ended; the club still owes it
+        return current["status"] if current["status"] in IN_FORCE else "under_contract"
+    # the 2003 expiry rule's "on the 2003-04 roster" holds for that season only
+    dated = str(control_status).startswith("on the 2003-04 roster") and profile["as_of"] > "2004-06-30"
+    if control_status not in CLAIMS and not dated:
+        return control_status
+    team = profile.get("team")
+    if team and team not in ("Free agent", "Retired", "Abroad"):
+        return "rostered; no contract in force in the dated records"
+    where = "out of the league" if out else "unsigned free agent"
+    last = contracts[0] if contracts else None
+    if last and last.get("ended_on"):
+        return f"{where} ({str(last['status']).replace('_', ' ')})"      # the agreement's history dates it
+    return f"{where} (contract ended)" if last else f"{where} (no contract in force)"
 
 
 def build_contract_catalog(root, player, clock=None):
@@ -306,6 +638,10 @@ def build_contract_catalog(root, player, clock=None):
         profile = profiles[key]
         entry = deepcopy(row)
         entry.update(_team=team, _as_of=as_of, _sources=_sources(row, source, season, root))
+        if authoritative:
+            entry["_whole_schedule"] = True     # Miami's sheet and archive carry the agreement's whole schedule
+        if row.get("status") == "waived" and _day(row.get("waived_date")):
+            entry["_ended_on"] = row["waived_date"]
         previous_control = profile["_control"]
         if (previous_control is None or as_of > previous_control["_as_of"] or
                 authoritative and as_of == previous_control["_as_of"]):
@@ -441,6 +777,8 @@ def build_contract_catalog(root, player, clock=None):
             continue
         if event != "signed" and existing is not None:
             row = _merge(existing, row)
+        if event in ("voided", "released"):
+            row["_ended_on"] = row.get("ended_on") or record["recorded_on"]
         row["sources"] = list(row.get("sources", []))
         if record.get("source"):
             row["sources"].append(record["source"])
@@ -460,8 +798,10 @@ def build_contract_catalog(root, player, clock=None):
             _source(supplemental, root, "Dated signed-contract archive"), record["recorded_on"], player, True)
     # The simulated summer market's contracts for every club (`runtime/free_agency_2004.py`), each on its signing date,
     # with the schedule the league contract ledger gives it (raises by route, rookie scale); a summer trade assigns the
-    # contract to its new club. These are simulated contracts, labelled so; Miami's own sheet stays authoritative.
-    _market_contracts(root, player, cutoff, add, profiles, match, protagonist)
+    # contract to its new club (below, with every holder change). These are simulated contracts, labelled so; Miami's own
+    # sheet stays authoritative.
+    moves = []
+    _market_contracts(root, player, cutoff, add, match, protagonist, moves)
     # Every signed contract extension (runtime/extensions.py) is its own agreement from its signing date; the agreement
     # it extends stays current until July 1 of the extension's first season (see "current" below).
     from .extensions import catalog_rows
@@ -470,6 +810,9 @@ def build_contract_catalog(root, player, clock=None):
         if key:
             row["contract_id"] = f"{key}-{row['signed_date']}"
             add(row, club, _source(record_path, root, "Signed contract extension"), as_of, record_path.parent, False)
+    _ledger_contracts(root, player, cutoff, add, match, profiles, protagonist)
+    _ledger_ends(player, cutoff, profiles)
+    _attach_option_decisions(player, cutoff, match, profiles)
     trades = [(path, _read(path)) for path in player.glob("????-??/00_Team/Transactions/Trades/*.json")]
     for path, rec in sorted(trades, key=lambda pair: (str(pair[1].get("applied") or ""), pair[0].name)):
         applied = rec.get("applied")
@@ -479,25 +822,21 @@ def build_contract_catalog(root, player, clock=None):
         for side, destination, origin in (("miami_out", trade.get("partner"), "Miami Heat"),
                                            ("miami_in", "Miami Heat", trade.get("partner"))):
             for name in trade.get(side, []):
-                key = by_name.get(name)
-                if not key:
-                    continue
-                profile = profiles[key]
-                eligible = [e for e in profile["_entries"] if not e.get("signed_date") or e["signed_date"] <= applied]
-                if eligible:
-                    entry = max(eligible, key=lambda e: (e.get("signed_date") or "", e.get("_as_of") or ""))
-                    assignment = {"date": applied, "from": origin, "to": destination,
-                                  "kind": rec.get("kind", "trade"), "transaction_id": rec.get("trade_id"),
-                                  "source": _source(path, root, "Completed contract assignment")}
-                    # Prefer the transaction document to an archive of the same assignment.
-                    entry["_assignments"] = [a for a in entry.get("_assignments", []) if
-                        (a["date"], a["from"], a["to"]) != (applied, origin, destination)]
-                    entry["_assignments"].append(assignment)
-                    entry["_team"] = destination
-                    entry["_sources"].append(assignment["source"])
-                if applied >= profile["_team_date"]:
-                    profile["team"] = destination
-                    profile["_team_date"] = applied
+                if by_name.get(name):
+                    moves.append({"date": applied, "key": by_name[name], "kind": "trade", "from": origin, "to": destination,
+                                  "id": rec.get("trade_id"), "label": rec.get("kind", "trade"), "fallback": True,
+                                  "source": _source(path, root, "Completed contract assignment"), "order": (0, path.name, 0)})
+    # The dated league moves of every club (`runtime/league_market.py`, the league's trades), the real league's trades
+    # and waivers before the symmetric league and the expansion draft: with the summer and Miami trades above, applied in
+    # date order to the agreement in force on each date.
+    _league_moves(player, cutoff, match, profiles, protagonist, root, moves)
+    _world_moves(root, cutoff, match, profiles, protagonist, moves)
+    _expansion_moves(player, cutoff, match, profiles, protagonist, root, moves)
+    _apply_moves(moves, profiles, add, player)
+    for profile in profiles.values():
+        for entry in profile["_entries"]:
+            if entry.get("_assignments"):    # an agreement's club is its latest assignment's, whatever source came last
+                entry["_team"] = sorted(entry["_assignments"], key=lambda a: a["date"])[-1]["to"]
     # Each registry player's recorded team is his dated club on the career date (`league_cards.club_on`: real moves to
     # the date, Miami's holdings and departures), the same answer his league card gives.
     from .league_cards import club_on
@@ -509,6 +848,7 @@ def build_contract_catalog(root, player, clock=None):
             except (KeyError, ValueError, TypeError):
                 continue
             profile["team"] = on.get("club") or "Free agent"
+            profile["_club_basis"] = on.get("basis") or ""
     # An expired 2002-03 contract after June 30: researched status first (retired, abroad, unsigned), then the club whose
     # real 2003-04 roster carries him with terms not in the dated records, else a free agent.
     statuses = {}
@@ -543,58 +883,65 @@ def build_contract_catalog(root, player, clock=None):
             else:
                 profile["team"], control["status"] = "Free agent", "unsigned free agent"
     # Miami's register decides its own former and unsigned players: a free agent who signed elsewhere is with that
-    # club, and one whose rights Miami keeps is an unsigned free agent with Miami's rights noted.
-    for path in sorted(player.glob("????-??/00_Team/Team/Roster/roster.json")):
-        roster = _read(path)
-        if not _snapshot(roster, cutoff):
-            continue
+    # club, and one whose rights Miami keeps is an unsigned free agent with Miami's rights noted. A register snapshot is
+    # never newer than the dated club a registry player already has (`club_on` answers on the career date itself), so
+    # its "signs with" club names only a player without one; Miami's rights are its latest snapshot's.
+    rosters = [(path, _read(path)) for path in sorted(player.glob("????-??/00_Team/Team/Roster/roster.json"))]
+    rosters = [(path, roster) for path, roster in rosters if _snapshot(roster, cutoff)]
+    for i, (path, roster) in enumerate(rosters):
         for row in roster.get("players", []):
             key = by_bbr.get(row.get("bbr_id")) or by_name.get(row["name"])
             if not key or row["name"] == protagonist:
                 continue
             profile = profiles[key]
             control = profile.get("_control") or {}
+            dated = "_club_basis" in profile
             if row.get("status") == "signed_elsewhere":
                 found = re.search(r"signs with ([A-Z][A-Za-z0-9 .'-]+?) \(", row.get("control", ""))
-                if found:
+                if found and not dated:
                     profile["team"] = found.group(1)
                     if control.get("status") in ("free_agent_expiring", "expiring_contract", None) or "Miami" in str(control.get("status")):
                         control["status"] = "signed elsewhere; contract terms not in the dated records"
                         profile["_control"] = control or {"status": control.get("status")}
-            elif row.get("status") == "free_agent_rights_held":
-                profile["team"] = "Free agent"
+            elif row.get("status") == "free_agent_rights_held" and (not dated or i == len(rosters) - 1):
+                if not dated:
+                    profile["team"] = "Free agent"
                 control["status"] = "unsigned free agent; Miami holds his rights"
                 profile["_control"] = control
+    from .seasons import club_name, live_season_on
+    live = live_season_on(cutoff, root) if cutoff >= "2003-07-01" else "2003-04"
     output = []
     for profile in profiles.values():
         entries = profile.pop("_entries")
         control = profile.pop("_control") or {}
-        profile["status"] = control.get("status", profile["status"])
+        club_basis = profile.pop("_club_basis", None)
         profile["control"] = {k: deepcopy(control.get(k)) for k in ("status", "current_cap_hold", "rookie_scale_reference",
                               "schedule", "amount_kind", "notes", "candidate_2003_04")}
         profile["control"]["rights"] = profile.pop("_rights")
         profile["control"]["unsigned_responses"] = profile.pop("_offers")
         profile["sources"] = profile.pop("_sources")
         profile.pop("_team_date")
-        contracts = [_normal_contract(profile["id"], e, cutoff, caps) for e in entries]
-        contracts.sort(key=lambda c: (c["signed_on"] or "", c["record_as_of"] or "", c["id"]), reverse=True)
+        # A signed future extension does not replace the agreement still in force; the newest begun agreement is the
+        # current one while it is in force (a dated closing, its final season, an option that removed its season).
+        live_entries = {id(e) for e in entries if _started(e, cutoff) and not _ended(e, cutoff)}
+        contracts = [(_normal_contract(profile["id"], e, cutoff, caps), id(e) in live_entries, _started(e, cutoff)) for e in entries]
+        contracts.sort(key=lambda t: (t[0]["signed_on"] or ((t[0]["start_season"] or min([r["season"] for r in t[0]["salary_rows"]] or [""]))[:4] + "-07-01"),
+                                      t[0]["record_as_of"] or "", t[0]["id"]), reverse=True)
+        commenced = [t for t in contracts if t[2]]
+        current = commenced[0][0] if commenced and commenced[0][1] else None
+        for c, in_force, _ in contracts:
+            if in_force and c["team"]:     # a club renamed since (seasons.club_name) holds the agreement under its name now
+                c["team"] = club_name(c["team"], live)
+        contracts = [t[0] for t in contracts]
         profile["history"] = contracts
-        # A signed future extension does not replace the agreement still in force.
-        commenced = [c for c in contracts if not c["start_season"] or c["start_season"][:4] + "-07-01" <= cutoff]
-        current = commenced[0] if commenced else None
-        if current and current["status"] in ("team_option_declined", "player_option_declined"):
-            declined = [o["season"] for o in current["options"] if o.get("outcome") == "declined"]
-            # Declining a later option leaves earlier base seasons in force.
-            if declined and cutoff <= min(declined)[:4] + "-06-30":
-                pass
-            else:
-                current = None
-        elif current and (current["status"] in CLOSED or (current["expiry_date"] and current["expiry_date"] < cutoff)):
-            current = None
         profile["current"] = current
+        profile["status"] = _display_status(profile, current, contracts, control.get("status") or profile["status"], club_basis)
+        stale = profile["control"]["status"] in CLAIMS | CLOSED or str(profile["control"]["status"]).startswith("on the 2003-04 roster")
+        if stale and profile["status"] != profile["control"]["status"]:
+            profile["control"]["status"] = profile["status"]       # the control row reads the cutoff's position too
         profile["coverage"] = {"history_complete": False, "recorded_contract_count": len(contracts),
             "current_contract_verified": profile["current"] is not None, "as_of": cutoff,
-            "note": "Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed."}
+            "note": "Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed."}
         output.append(profile)
     return {"schema_version": 1, "as_of": cutoff, "default_player_id": by_name.get(protagonist),
             "players": sorted(output, key=lambda p: (p["name"], p["id"]))}
@@ -646,13 +993,14 @@ def contract_payload(profile, *, page, root):
                 ["Contract ID", c["id"]], ["Signing route / evidence basis", _text(c["type"])],
                 ["Signing date", _text(c["signed_on"])], ["Verified first season", _text(c["start_season"])],
                 ["Verified final season", _text(c["end_season"])], ["Verified expiry date", _text(c["expiry_date"])],
+                ["Ended on (dated event)", _text(c.get("ended_on"))],
                 ["Status", _text(c["status"])], ["Contract wording", _text(c["contract_text"])]]),
             _table("Salary by season", ["Season", "Recorded salary", "Base salary", "Cap hit", "Guaranteed",
                 "Likely incentives", "Unlikely incentives", "Published season cap", "Cap hit / cap", "Amount kind", "Precision", "Condition"],
                 financial, notice="Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed."),
             _table("Options and decision deadlines", ["Season", "Option", "Amount", "Decision deadline", "Outcome", "Outcome date"],
                 [[_money(o.get(k)) if k == "amount" else _text(o.get(k)) for k in ("season", "type", "amount", "deadline", "outcome", "outcome_date")] for o in c["options"]],
-                notice="An option amount is conditional. No exercise or decline is assumed."),
+                notice="An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed."),
             _table("Additional recorded annual compensation", ["Season", "Signing bonus", "Dead cap", "Buyout"],
                 [[r["season"], _money(r["signing_bonus"]), _money(r["dead_cap"]), _money(r["buyout"])] for r in c["salary_rows"]],
                 notice="Missing bonus, dead-cap and buyout fields do not establish zero liability or payment."),
