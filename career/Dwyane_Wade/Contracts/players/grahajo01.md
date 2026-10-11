@@ -2,9 +2,9 @@
 
 # Contract | Joey Graham
 
-Known through: 2006-06-18. [Open interactive contract](grahajo01.html#contract) · [Contract history](grahajo01.html#contract-history)
+Known through: 2006-06-20. [Open interactive contract](grahajo01.html#contract) · [Contract history](grahajo01.html#contract-history)
 
-Joey Graham: under contract. Evidence cutoff: 2006-06-18.
+Joey Graham: under contract. Evidence cutoff: 2006-06-20.
 
 ## Current contract
 

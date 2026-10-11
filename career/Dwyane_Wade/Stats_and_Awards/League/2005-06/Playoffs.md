@@ -63,6 +63,8 @@ WEST
 
 ```
 
+**2006 NBA champion: Toronto Raptors**
+
 ## First round
 
 ### East: (1) Toronto Raptors vs (8) Cleveland Cavaliers
@@ -269,7 +271,7 @@ Home court: Dallas Mavericks. San Antonio Spurs wins 4-3.
 
 ### Finals: (1) Toronto Raptors vs (4) San Antonio Spurs
 
-Home court: Toronto Raptors. Series Toronto Raptors 3, San Antonio Spurs 2.
+Home court: Toronto Raptors. Toronto Raptors wins 4-2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -278,5 +280,5 @@ Home court: Toronto Raptors. Series Toronto Raptors 3, San Antonio Spurs 2.
 | 3 | Tue Jun 13 | San Antonio Spurs | Toronto Raptors | Toronto Raptors 111, San Antonio Spurs 118 |
 | 4 | Thu Jun 15 | San Antonio Spurs | Toronto Raptors | Toronto Raptors 109, San Antonio Spurs 107 (1OT) |
 | 5 | Sun Jun 18 | San Antonio Spurs | Toronto Raptors | Toronto Raptors 119, San Antonio Spurs 133 (1OT) |
-| 6 | Tue Jun 20 | Toronto Raptors | San Antonio Spurs | if needed |
-| 7 | Thu Jun 22 | Toronto Raptors | San Antonio Spurs | if needed |
+| 6 | Tue Jun 20 | Toronto Raptors | San Antonio Spurs | San Antonio Spurs 88, Toronto Raptors 108 |
+| 7 | Thu Jun 22 | Toronto Raptors | San Antonio Spurs | not needed |

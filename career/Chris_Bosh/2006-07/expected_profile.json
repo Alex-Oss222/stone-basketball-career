@@ -1,0 +1,45 @@
+{
+ "schema_version": 1,
+ "model_version": "protagonist-2004.1",
+ "as_of": "2006-06-20",
+ "season": "2006-07",
+ "source_sha256": "79f4217e2d246ddb895c6a45c8c1fd11dc1f034e48edd06b70a7d766e6662eb2",
+ "players": {
+  "boshch01": {
+   "player_name": "Chris Bosh",
+   "bbr_id": "boshch01",
+   "season_end_year": 2007,
+   "sample": {
+    "games": 70,
+    "minutes": 2638.3
+   },
+   "estimated": {
+    "two_point_pct": 0.5246344471193686,
+    "three_point_pct": 0.38137501033753074,
+    "free_throw_pct": 0.9054461908887937,
+    "usage_pct": 0.2904620024356444,
+    "assist_pct": 0.15788291542888047,
+    "offensive_rebound_pct": 0.12021603791662658,
+    "defensive_rebound_pct": 0.21039251593437377,
+    "steal_pct": 0.01340611946869971,
+    "block_pct": 0.026133841958537216,
+    "three_point_attempt_rate": 0.048122009816241026,
+    "free_throw_attempt_rate": 0.33971723253555597,
+    "turnovers_per_fga": 0.13856111117334566,
+    "fouls_per_minute": 0.07218159598271026
+   },
+   "target_rates": {},
+   "profile_weight": 1.0,
+   "basis": "runtime/protagonist.py build_alternate_profile: previous expectation + closed simulated season + age step + the user's development profile target line at PROFILE_WEIGHT",
+   "role_growth": {
+    "true_shooting": 0.5908,
+    "league_true_shooting": 0.5292,
+    "excess_shrunk": 0.047,
+    "usage_before": 0.2599,
+    "usage_after": 0.2905,
+    "accuracy_factor": 0.9878
+   },
+   "defense": 0.44661921708185054
+  }
+ }
+}

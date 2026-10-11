@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2005-06 season overview](../assets/season_overview_2005-06.svg)
 
-Career date: **2006-06-18** · Toronto Raptors · #4 · PF · age 22
+Career date: **2006-06-20** · Toronto Raptors · #4 · PF · age 22
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,7 +14,7 @@ Career date: **2006-06-18** · Toronto Raptors · #4 · PF · age 22
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 70/70 | 37.7 | 21.8 | 10.5 | 3.4 | 0.9 | 1.3 | 51.8 | 35.2 | 89.8 | 59.1 | 61-21 · won conference finals |
+| 2005-06 | 21 | Toronto Raptors | 70/70 | 37.7 | 21.8 | 10.5 | 3.4 | 0.9 | 1.3 | 51.8 | 35.2 | 89.8 | 59.1 | 61-21 · won finals |
 
 ## The user's target line against the closed games
 
@@ -34,7 +34,7 @@ Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 23/23 | 35.6 | 20.0 | 9.8 | 2.6 | 1.0 | 1.3 | 50.9 | 47.8 | 87.3 | 58.2 | 61-21 · won conference finals |
+| 2005-06 | 21 | Toronto Raptors | 24/24 | 35.6 | 20.0 | 9.8 | 2.6 | 1.0 | 1.3 | 50.4 | 50.0 | 87.9 | 58.0 | 61-21 · won finals |
 
 ## Season highs (regular season)
 
@@ -57,6 +57,7 @@ Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-
 | 2006-02-09 | All-Star (East, reserve) |
 | 2006-03-06 | East Player of the Week (2006-02-27 to 2006-03-05) |
 | 2006-05-17 | All-NBA Team: Second Team |
+| 2006-06-20 | Finals MVP |
 
 ## Milestones this season
 
@@ -73,3 +74,4 @@ Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-
 | 500 career playoff points | 2006-04-23 | 22 years, 30 days | Cleveland Cavaliers |
 | 100 career playoff assists | 2006-06-08 | 22 years, 76 days | San Antonio Spurs |
 | 50 career playoff games | 2006-06-08 | 22 years, 76 days | San Antonio Spurs |
+| 500 career playoff rebounds | 2006-06-20 | 22 years, 88 days | San Antonio Spurs |

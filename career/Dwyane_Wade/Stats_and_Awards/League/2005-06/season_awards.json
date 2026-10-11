@@ -1375,6 +1375,48 @@
      "points": 19
     }
    ]
+  },
+  {
+   "id": "2005-06-finals_mvp",
+   "award": "finals_mvp",
+   "name": "Finals MVP",
+   "announced_on": "2006-06-20",
+   "electorate": 10,
+   "voters": "media panel",
+   "ballot": [
+    1
+   ],
+   "lens": [
+    0.3,
+    0.6
+   ],
+   "evidence_through": "2006-06-20",
+   "competition": "playoff",
+   "finals_games": 6,
+   "period_start": "2006-06-08",
+   "winners": [
+    "Chris Bosh"
+   ],
+   "tally": [
+    {
+     "player": "Chris Bosh",
+     "team": "Toronto Raptors",
+     "games": 6,
+     "mpg": 37.2,
+     "pts": 24.5,
+     "reb": 9.2,
+     "ast": 2.8,
+     "stl": 1.7,
+     "blk": 0.8,
+     "game_score": 19.33,
+     "champion": true,
+     "points": 10,
+     "first_place": 10,
+     "votes_by_place": [
+      10
+     ]
+    }
+   ]
   }
  ]
 }

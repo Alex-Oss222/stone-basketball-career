@@ -1407,10 +1407,10 @@
    ],
    "home_court": "Toronto Raptors",
    "wins": {
-    "Toronto Raptors": 3,
+    "Toronto Raptors": 4,
     "San Antonio Spurs": 2
    },
-   "winner": null,
+   "winner": "Toronto Raptors",
    "games": [
     {
      "game": 1,
@@ -1468,7 +1468,9 @@
      "home": "Toronto Raptors",
      "away": "San Antonio Spurs",
      "conditional": true,
-     "event_id": "2006-06-20-san-antonio-spurs-at-toronto-raptors"
+     "event_id": "2006-06-20-san-antonio-spurs-at-toronto-raptors",
+     "result": "San Antonio Spurs 88, Toronto Raptors 108",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 7,
@@ -1476,10 +1478,12 @@
      "home": "Toronto Raptors",
      "away": "San Antonio Spurs",
      "conditional": true,
-     "event_id": "2006-06-22-san-antonio-spurs-at-toronto-raptors"
+     "event_id": "2006-06-22-san-antonio-spurs-at-toronto-raptors",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2006-06-20"
   }
  ],
- "champion": null
+ "champion": "Toronto Raptors"
 }

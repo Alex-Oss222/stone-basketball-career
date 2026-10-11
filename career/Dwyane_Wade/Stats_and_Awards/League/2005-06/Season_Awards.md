@@ -1,6 +1,6 @@
 # 2005-06 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-05-17.
+Decided on each award's real announcement date from closed simulated results through 2006-04-19 (`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2006-06-20.
 
 ## Calendar
 
@@ -15,7 +15,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2006-05-10 | Rookie of the Year | 125 media | 5-3-1 | decided |
 | 2006-05-11 | All-Defensive Teams | 30 head coaches, not for their own players | 2-1 | decided |
 | 2006-05-17 | All-NBA Teams | 126 media | 5-3-1 | decided |
-| the night the Finals are clinched | Finals MVP | 10 media panel | 1 | pending |
+| the night the Finals are clinched | Finals MVP | 10 media panel | 1 | decided |
 
 ## Coach of the Year
 
@@ -176,3 +176,13 @@ Announced 2006-05-17; 126 media, ballot 5-3-1.
 | Elton Brand | F | Los Angeles Clippers | 79 | 36.8 | 21.1 | 7.7 | 2.4 | 0.9 | 2.2 | 16.87 | 57 | 0 |
 
 Also receiving votes: Jason Terry (Atlanta Hawks) 76, Hedo Turkoglu (Toronto Raptors) 50, Yao Ming (Houston Rockets) 46, Tim Duncan (San Antonio Spurs) 19.
+
+## Finals MVP
+
+Announced 2006-06-20; 10 media panel, ballot 1.
+
+| # | Player | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WINNER | Chris Bosh | Toronto Raptors | 6 | 37.2 | 24.5 | 9.2 | 2.8 | 1.7 | 0.8 | 19.33 | 10 | 10 |
+
+Complete tally: `season_awards.json` (1 receiving votes).

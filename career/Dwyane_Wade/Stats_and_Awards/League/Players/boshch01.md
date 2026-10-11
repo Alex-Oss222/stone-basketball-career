@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `boshch01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2006-06-18 · **Club on this date:** Toronto Raptors · **Basis:** Toronto Raptors: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
+**Card date:** 2006-06-20 · **Club on this date:** Toronto Raptors · **Basis:** Toronto Raptors: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
 **Position:** PF (Power forward) · **Jersey:** #4 · **Born:** 1984-03-24 · **Age on card date:** 22  
 **Registry ID:** `boshch01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/boshch01.html) · ESPN ID 1977
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `boshch
 
 ## Simulated statistics
 
-As of **2006-06-18**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -104,7 +104,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2005-06 is simulated: 82 closed regular-season games through 2006-06-18. Earlier simulated seasons from their closed results.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2005-06 is simulated: 82 closed regular-season games through 2006-06-20. Earlier simulated seasons from their closed results.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -114,17 +114,17 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2005-06 playoffs from closed playoff results through 2006-06-18 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2005-06 playoffs from closed playoff results through 2006-06-20 ([bracket](../2005-06/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | Toronto Raptors | 9 | 9 | 33.9 | 14.0 | 6.2 | 1.1 | 1.1 | 1.4 | 1.9 | 49.5% | 60.0% | 62.5% |
 | 2004-05 | Toronto Raptors | 22 | 22 | 36.0 | 17.0 | 9.7 | 1.9 | 1.0 | 1.6 | 2.1 | 48.3% | 40.0% | 73.5% |
-| 2005-06 | Toronto Raptors | 23 | 23 | 35.6 | 20.0 | 9.8 | 2.6 | 1.0 | 1.3 | 2.2 | 50.9% | 47.8% | 87.3% |
+| 2005-06 | Toronto Raptors | 24 | 24 | 35.6 | 20.0 | 9.8 | 2.6 | 1.0 | 1.3 | 2.2 | 50.4% | 50.0% | 87.9% |
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2006-06-18, from closed award decisions (8 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2006-06-20, from closed award decisions (9 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
@@ -145,3 +145,4 @@ Simulated honors and shortlist placings through 2006-06-18, from closed award de
 | East Player of the Month | 2006-02-01 to 2006-02-28 | 2006-03-02 | Shortlist, No. 3 | [Decision](../2005-06/02_February/League_Awards.md) |
 | East Player of the Week | 2006-02-27 to 2006-03-05 | 2006-03-06 | **Winner** | [Decision](../2005-06/03_March/Week_1/League_Awards.md) |
 | All-NBA Second Team | 2005-11-01 to 2006-04-19 | 2006-05-17 | **Selected** | [Decision](../2005-06/Season_Awards.md) |
+| Finals MVP | 2006-06-08 to 2006-06-20 | 2006-06-20 | **Winner** | [Decision](../2005-06/Season_Awards.md) |

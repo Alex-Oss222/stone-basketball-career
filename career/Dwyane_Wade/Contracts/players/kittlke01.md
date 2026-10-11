@@ -2,9 +2,9 @@
 
 # Contract | Kerry Kittles
 
-Known through: 2006-06-18. [Open interactive contract](kittlke01.html#contract) · [Contract history](kittlke01.html#contract-history)
+Known through: 2006-06-20. [Open interactive contract](kittlke01.html#contract) · [Contract history](kittlke01.html#contract-history)
 
-Kerry Kittles: under contract. Evidence cutoff: 2006-06-18.
+Kerry Kittles: under contract. Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
