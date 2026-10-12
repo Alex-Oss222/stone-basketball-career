@@ -1,0 +1,32 @@
+From bc89fa96871416ccfb6724decef2b512b1f08f8e Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 12 Oct 2026 00:46:21 +0000
+Subject: [PATCH] Audit fix c: checkpoint copies restate the league hub
+
+The league hub now links every season's pages; a checkpoint copy keeps
+only 2003-04, so pin() restates the hub's navigation and counts from the
+copy (season_pages.hub) as it already does the statistics pages.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01ExmaEeFA7X8K2pJG6n4PLH
+---
+ tests/checkpoint.py | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/tests/checkpoint.py b/tests/checkpoint.py
+index 6ef58fe97b0..8ef528bcbd2 100644
+--- a/tests/checkpoint.py
++++ b/tests/checkpoint.py
+@@ -147,6 +147,9 @@ def pin(root):
+     if (root / "library").is_dir():
+         from runtime.write_back import write_statistics_pages
+         write_statistics_pages(root)             # Miami's not-started pages list the checkpoint register
++        from runtime.season_pages import hub
++        for path, text in hub(root).items():     # the league hub links only the seasons the copy holds
++            path.write_text(text, encoding="utf-8")
+     return root
+ 
+ 
+-- 
+2.43.0
+

@@ -1,0 +1,127 @@
+From 056970aac6c168881c234e5aa12df26725428a19 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Sun, 11 Oct 2026 23:28:00 +0000
+Subject: [PATCH] Audit fix a: a release names the agreement it closes
+
+roster_moves.waive and the guarantee review took the player's oldest signed
+record, so Jumaine Jones's 2006-01-07 release was filed under his voided
+2003-09-30 camp contract and merged his 2005 terms into it. Both now use
+contract_archive.signed_record: the signing whose date is the sheet entry's,
+else the latest. The one misfiled record is corrected to name the 2005-10-04
+agreement (record and contract ids), with a correction note; the 2003
+agreement stays voided on 2003-10-27. No decision or game input reads a
+released record's contract id (signings() and the extension check read only
+signed records).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01ExmaEeFA7X8K2pJG6n4PLH
+---
+ career/Dwyane_Wade/Contracts/contract_records.json |  7 ++++---
+ runtime/contract_archive.py                        | 12 ++++++++++++
+ runtime/roster_moves.py                            |  7 ++++---
+ scripts/guarantee_review.py                        |  4 ++--
+ 4 files changed, 22 insertions(+), 8 deletions(-)
+
+diff --git a/career/Dwyane_Wade/Contracts/contract_records.json b/career/Dwyane_Wade/Contracts/contract_records.json
+index f8bb6330931..9a6b0a94baf 100644
+--- a/career/Dwyane_Wade/Contracts/contract_records.json
++++ b/career/Dwyane_Wade/Contracts/contract_records.json
+@@ -2111,13 +2111,14 @@
+    }
+   },
+   {
+-   "record_id": "jonesju01-2003-09-30-released-2006-01-07",
++   "record_id": "jonesju01-2005-10-04-released-2006-01-07",
+    "recorded_on": "2006-01-07",
+    "player_id": "jonesju01",
+    "player": "Jumaine Jones",
+-   "contract_id": "jonesju01-2003-09-30",
++   "contract_id": "jonesju01-2005-10-04",
+    "event": "released",
+    "source": "career/Dwyane_Wade/2005-06/00_Team/Transactions/guarantee_review.json",
++   "correction": "Filed on 2006-01-07 under his voided 2003-09-30 camp contract (roster_moves.waive took his oldest signing); the release closes the 2005-10-04 camp contract, so its record and contract ids name that agreement (audit, career date 2006-06-20).",
+    "contract": {
+     "player": "Jumaine Jones",
+     "bbr_id": "jonesju01",
+@@ -2145,7 +2146,7 @@
+     "cap_amount": {
+      "2005-06": 354902
+     },
+-    "contract_id": "jonesju01-2003-09-30",
++    "contract_id": "jonesju01-2005-10-04",
+     "ended_on": "2006-01-07"
+    }
+   },
+diff --git a/runtime/contract_archive.py b/runtime/contract_archive.py
+index abc22a91955..b4dd971c2fb 100644
+--- a/runtime/contract_archive.py
++++ b/runtime/contract_archive.py
+@@ -35,6 +35,18 @@ def _player_id(writer, entry, player_id=None):
+     return identity
+ 
+ 
++def signed_record(records, name, signed_date=None):
++    """The archived signing of the agreement a sheet entry carries: the player's `signed` record with the entry's signing
++    date, else his latest signing. A player Miami signed twice (a voided camp contract, then a new one) has two, and a
++    release or amendment must name the agreement it changes, never the oldest."""
++    signed = [r for r in records if r["player"] == name and r["event"] == "signed"]
++    same = [r for r in signed if signed_date and (r.get("contract") or {}).get("signed_date") == signed_date]
++    if same:
++        return same[-1]
++    return max(signed, key=lambda r: ((r.get("contract") or {}).get("signed_date") or "", r.get("recorded_on") or ""),
++               default=None)
++
++
+ def archive_contract(writer, entry, day, *, event, source, player_id=None,
+                      signing_team=None, assignment=None, executed_terms=None):
+     """Append a dated deep snapshot, retaining the original contract on a trade.
+diff --git a/runtime/roster_moves.py b/runtime/roster_moves.py
+index 5b60bf33b20..2d257e5f232 100644
+--- a/runtime/roster_moves.py
++++ b/runtime/roster_moves.py
+@@ -27,7 +27,7 @@ import json
+ from pathlib import Path
+ 
+ from .camp import playable
+-from .contract_archive import archive_contract
++from .contract_archive import archive_contract, signed_record
+ from .contracts import counted_amount
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+@@ -225,8 +225,9 @@ def waive(writer, name, day, reason, note_rel):
+             names.remove(name)
+     depth.setdefault("departed", []).append({"name": name, "date": day, "status": "waived"})
+     depth["as_of"] = roster["as_of"] = day
+-    base = next((r for r in (writer.load("career/Dwyane_Wade/Contracts/contract_records.json")["records"])
+-                 if r["player"] == name and r["event"] == "signed"), None)
++    # the release closes the agreement this sheet entry carries (its signing date), not the player's oldest signing
++    base = signed_record(writer.load("career/Dwyane_Wade/Contracts/contract_records.json")["records"], name,
++                         entry.get("signed_date"))
+     if base:
+         archive_contract(writer, {**entry, "contract_id": base["contract_id"], "ended_on": day}, day, event="released",
+                          source=str(GUARANTEES), player_id=base["player_id"])
+diff --git a/scripts/guarantee_review.py b/scripts/guarantee_review.py
+index 3e825b43576..e3c9ae6da7c 100644
+--- a/scripts/guarantee_review.py
++++ b/scripts/guarantee_review.py
+@@ -21,7 +21,7 @@ sys.path.insert(0, str(ROOT))
+ 
+ from runtime import roster_moves, signing                             # noqa: E402
+ from runtime.camp import GUARANTEE_DATE                               # noqa: E402
+-from runtime.contract_archive import archive_contract                 # noqa: E402
++from runtime.contract_archive import archive_contract, signed_record  # noqa: E402
+ from runtime.gm import FrontOffice                                    # noqa: E402
+ from runtime.season_market import for_date as Market                  # noqa: E402
+ from scripts.refresh_career_views import refresh_career_views         # noqa: E402
+@@ -65,7 +65,7 @@ def review(root, day):
+             entry["notes"] = entry.get("notes", "") + f" Guaranteed {GUARANTEE_DATE}: on the roster on the guarantee date."
+             reg = next(p for p in roster["players"] if p["name"] == entry["player"])
+             reg["control"] = reg["control"].rstrip(".") + f"; guaranteed {GUARANTEE_DATE} (guarantee_review.json)."
+-            base = next((r for r in archive["records"] if r["player"] == entry["player"] and r["event"] == "signed"), None)
++            base = signed_record(archive["records"], entry["player"], entry.get("signed_date"))
+             if base:
+                 archive_contract(writer, {**entry, "contract_id": base["contract_id"]}, GUARANTEE_DATE, event="amended",
+                                  source=str(roster_moves.GUARANTEES), player_id=base["player_id"])
+-- 
+2.43.0
+

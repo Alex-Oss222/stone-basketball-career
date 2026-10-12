@@ -1,0 +1,1757 @@
+From cbf5f8110a55df78a70d448b5a6baea4e4a30776 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 12 Oct 2026 00:24:21 +0000
+Subject: [PATCH] Audit fix c: registry names, card-line clubs and league hub
+ text
+
+player_registry.json: the three rows named by their raw id take their
+careers-file names (simiewa01 Wayne Simien, walshma01 Matt Walsh,
+fitchge01 Gerald Fitch), each with a dated name_corrected note; their
+closed results still match by id and their stat lines are unchanged. The
+eight rows of clubs the 2003 baselines lack get their code (CHA, NOK).
+
+card_lines.json (2003-04, 2004-05): each regular row's Team(s) cell is
+rewritten from the season's closed results (league_cards
+.repair_card_lines: the clubs of his appearances, in stint order); every
+other cell is as written at the close.
+
+League/README.md: the hand-maintained text no longer says unregistered
+players are never added or that the club column is a source label; the
+navigation and counts are generated (season_pages.hub).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01ExmaEeFA7X8K2pJG6n4PLH
+---
+ .../League/2003-04/card_lines.json            | 144 ++++++-------
+ .../League/2004-05/card_lines.json            | 202 +++++++++---------
+ .../Stats_and_Awards/League/README.md         |  10 +-
+ .../League/player_registry.json               |  43 ++--
+ 4 files changed, 207 insertions(+), 192 deletions(-)
+
+diff --git a/career/Dwyane_Wade/Stats_and_Awards/League/2003-04/card_lines.json b/career/Dwyane_Wade/Stats_and_Awards/League/2003-04/card_lines.json
+index b8f4a324db1..2bbadf0082c 100644
+--- a/career/Dwyane_Wade/Stats_and_Awards/League/2003-04/card_lines.json
++++ b/career/Dwyane_Wade/Stats_and_Awards/League/2003-04/card_lines.json
+@@ -229,7 +229,7 @@
+   "knighbr01": {
+    "regular": [
+     "2003-04",
+-    "PHX",
++    "PHX/WSH",
+     "65",
+     "0",
+     "10.5",
+@@ -921,7 +921,7 @@
+   "mcinnje01": {
+    "regular": [
+     "2003-04",
+-    "POR",
++    "POR/NO",
+     "67",
+     "67",
+     "35.3",
+@@ -1183,7 +1183,7 @@
+   "jacksma01": {
+    "regular": [
+     "2003-04",
+-    "HOU",
++    "HOU/MIL",
+     "16",
+     "0",
+     "14.3",
+@@ -1321,7 +1321,7 @@
+   "palacmi01": {
+    "regular": [
+     "2003-04",
+-    "TOR",
++    "TOR/NY",
+     "62",
+     "5",
+     "21.2",
+@@ -1427,7 +1427,7 @@
+   "brunsri01": {
+    "regular": [
+     "2003-04",
+-    "TOR",
++    "TOR/CHI/DEN/MIL",
+     "45",
+     "0",
+     "6.5",
+@@ -1533,7 +1533,7 @@
+   "parkesm01": {
+    "regular": [
+     "2003-04",
+-    "CLE",
++    "IND",
+     "52",
+     "0",
+     "12.5",
+@@ -1741,7 +1741,7 @@
+   "delkto01": {
+    "regular": [
+     "2003-04",
+-    "DAL",
++    "DAL/DEN",
+     "30",
+     "0",
+     "17.1",
+@@ -1913,7 +1913,7 @@
+   "harriad01": {
+    "regular": [
+     "2003-04",
+-    "DEN",
++    "DAL/PHI/LAC/NJ/NO",
+     "11",
+     "0",
+     "3.3",
+@@ -2055,7 +2055,7 @@
+   "surabo01": {
+    "regular": [
+     "2003-04",
+-    "DET",
++    "DET/NY",
+     "79",
+     "13",
+     "19.6",
+@@ -2091,7 +2091,7 @@
+   "wellsbo01": {
+    "regular": [
+     "2003-04",
+-    "POR",
++    "POR/MEM",
+     "73",
+     "67",
+     "28.2",
+@@ -2125,7 +2125,7 @@
+   "barrybr01": {
+    "regular": [
+     "2003-04",
+-    "SEA",
++    "SEA/LAL",
+     "66",
+     "66",
+     "31.3",
+@@ -2283,7 +2283,7 @@
+   "wesleda01": {
+    "regular": [
+     "2003-04",
+-    "NO",
++    "NO/POR",
+     "66",
+     "66",
+     "35.6",
+@@ -2319,7 +2319,7 @@
+   "glovedi01": {
+    "regular": [
+     "2003-04",
+-    "SA",
++    "ATL",
+     "70",
+     "61",
+     "29.9",
+@@ -2491,7 +2491,7 @@
+   "hoibefr01": {
+    "regular": [
+     "2003-04",
+-    "MIN",
++    "MIN/DEN",
+     "77",
+     "77",
+     "26.2",
+@@ -2839,7 +2839,7 @@
+   "postela01": {
+    "regular": [
+     "2003-04",
+-    "NY",
++    "SA",
+     "5",
+     "0",
+     "3.2",
+@@ -2977,7 +2977,7 @@
+   "vanexni01": {
+    "regular": [
+     "2003-04",
+-    "GS",
++    "GS/SA",
+     "40",
+     "40",
+     "33.1",
+@@ -3219,7 +3219,7 @@
+   "mercero01": {
+    "regular": [
+     "2003-04",
+-    "SA",
++    "SA/GS",
+     "39",
+     "0",
+     "9.6",
+@@ -3463,7 +3463,7 @@
+   "lenarvo01": {
+    "regular": [
+     "2003-04",
+-    "DEN",
++    "DEN/DAL",
+     "74",
+     "74",
+     "31.0",
+@@ -3531,7 +3531,7 @@
+   "greenwi01": {
+    "regular": [
+     "2003-04",
+-    "PHI",
++    "PHI/WSH",
+     "27",
+     "0",
+     "10.2",
+@@ -3843,7 +3843,7 @@
+   "jeffech01": {
+    "regular": [
+     "2003-04",
+-    "TOR",
++    "CHI",
+     "40",
+     "0",
+     "3.9",
+@@ -4243,7 +4243,7 @@
+   "roseja01": {
+    "regular": [
+     "2003-04",
+-    "CHI",
++    "CHI/TOR/NY/BOS",
+     "66",
+     "66",
+     "37.5",
+@@ -4989,7 +4989,7 @@
+   "foxri01": {
+    "regular": [
+     "2003-04",
+-    "LAL",
++    "LAL/SEA",
+     "40",
+     "30",
+     "23.7",
+@@ -5007,7 +5007,7 @@
+   "masonro01": {
+    "regular": [
+     "2003-04",
+-    "CHI",
++    "CHI/TOR",
+     "69",
+     "0",
+     "6.7",
+@@ -5163,7 +5163,7 @@
+   "andersh01": {
+    "regular": [
+     "2003-04",
+-    "NY",
++    "NY/DET/GS",
+     "85",
+     "56",
+     "26.2",
+@@ -5249,7 +5249,7 @@
+   "princta01": {
+    "regular": [
+     "2003-04",
+-    "DET",
++    "DET/GS",
+     "85",
+     "85",
+     "34.0",
+@@ -5335,7 +5335,7 @@
+   "fowlktr01": {
+    "regular": [
+     "2003-04",
+-    "LAC",
++    "DET",
+     "60",
+     "0",
+     "4.3",
+@@ -6011,7 +6011,7 @@
+   "willije01": {
+    "regular": [
+     "2003-04",
+-    "TOR",
++    "TOR/CHI",
+     "65",
+     "32",
+     "26.1",
+@@ -6047,7 +6047,7 @@
+   "malonka01": {
+    "regular": [
+     "2003-04",
+-    "LAL",
++    "LAL/SEA",
+     "41",
+     "41",
+     "31.7",
+@@ -6203,7 +6203,7 @@
+   "lampema01": {
+    "regular": [
+     "2003-04",
+-    "NY",
++    "PHX",
+     "49",
+     "0",
+     "3.7",
+@@ -6481,7 +6481,7 @@
+   "woodsqy01": {
+    "regular": [
+     "2003-04",
+-    "POR",
++    "POR/NO",
+     "64",
+     "0",
+     "7.4",
+@@ -6551,7 +6551,7 @@
+   "archiro01": {
+    "regular": [
+     "2003-04",
+-    "PHX",
++    "PHX/TOR",
+     "68",
+     "0",
+     "5.0",
+@@ -6569,7 +6569,7 @@
+   "horryro01": {
+    "regular": [
+     "2003-04",
+-    "SA",
++    "SA/GS",
+     "80",
+     "0",
+     "14.0",
+@@ -6911,7 +6911,7 @@
+   "hillty01": {
+    "regular": [
+     "2003-04",
+-    "FA",
++    "PHI",
+     "56",
+     "14",
+     "23.4",
+@@ -7071,7 +7071,7 @@
+   "davisan01": {
+    "regular": [
+     "2003-04",
+-    "TOR",
++    "TOR/CHI",
+     "79",
+     "79",
+     "34.5",
+@@ -7297,7 +7297,7 @@
+   "anderch01": {
+    "regular": [
+     "2003-04",
+-    "DEN",
++    "DEN/DAL",
+     "77",
+     "0",
+     "13.3",
+@@ -7525,7 +7525,7 @@
+   "dampier01": {
+    "regular": [
+     "2003-04",
+-    "GS",
++    "GS/DET",
+     "68",
+     "68",
+     "34.7",
+@@ -7611,7 +7611,7 @@
+   "whiteja01": {
+    "regular": [
+     "2003-04",
+-    "WSH",
++    "WSH/PHX",
+     "73",
+     "3",
+     "8.1",
+@@ -7783,7 +7783,7 @@
+   "mccoyje01": {
+    "regular": [
+     "2003-04",
+-    "TOR",
++    "CLE",
+     "1",
+     "0",
+     "3.2",
+@@ -7923,7 +7923,7 @@
+   "clarkke01": {
+    "regular": [
+     "2003-04",
+-    "UTAH",
++    "CHI",
+     "14",
+     "0",
+     "3.2",
+@@ -7995,7 +7995,7 @@
+   "baxtelo01": {
+    "regular": [
+     "2003-04",
+-    "CHI",
++    "CHI/TOR",
+     "75",
+     "2",
+     "11.4",
+@@ -8063,7 +8063,7 @@
+   "ndiayma02": {
+    "regular": [
+     "2003-04",
+-    "DAL",
++    "DAL/ATL",
+     "62",
+     "0",
+     "4.9",
+@@ -8115,7 +8115,7 @@
+   "cambyma01": {
+    "regular": [
+     "2003-04",
+-    "DEN",
++    "DEN/MIN",
+     "76",
+     "76",
+     "30.5",
+@@ -8203,7 +8203,7 @@
+   "mooremi01": {
+    "regular": [
+     "2003-04",
+-    "NJ",
++    "UTAH",
+     "62",
+     "0",
+     "4.9",
+@@ -8479,7 +8479,7 @@
+   "rooksse01": {
+    "regular": [
+     "2003-04",
+-    "NO",
++    "NO/MIL",
+     "22",
+     "0",
+     "6.5",
+@@ -8757,7 +8757,7 @@
+   "zhizhwa01": {
+    "regular": [
+     "2003-04",
+-    "LAC",
++    "GS",
+     "1",
+     "0",
+     "5.9",
+@@ -9017,7 +9017,7 @@
+   "udokaim01": {
+    "regular": [
+     "2003-04",
+-    "LAL",
++    "LAL/NO",
+     "17",
+     "0",
+     "2.5",
+@@ -9035,7 +9035,7 @@
+   "sampsja01": {
+    "regular": [
+     "2003-04",
+-    "LAL",
++    "HOU",
+     "3",
+     "0",
+     "13.5",
+@@ -9121,7 +9121,7 @@
+   "cartema01": {
+    "regular": [
+     "2003-04",
+-    "LAL",
++    "LAL/PHI",
+     "32",
+     "0",
+     "3.5",
+@@ -9261,7 +9261,7 @@
+   "mcdyean01": {
+    "regular": [
+     "2003-04",
+-    "NY",
++    "NY/TOR",
+     "47",
+     "26",
+     "24.3",
+@@ -9433,7 +9433,7 @@
+   "sundobr01": {
+    "regular": [
+     "2003-04",
+-    "CLE",
++    "CLE/PHX",
+     "24",
+     "0",
+     "3.4",
+@@ -9571,7 +9571,7 @@
+   "brownda02": {
+    "regular": [
+     "2003-04",
+-    "NJ",
++    "NJ/POR/LAC",
+     "7",
+     "0",
+     "4.0",
+@@ -9589,7 +9589,7 @@
+   "langhda01": {
+    "regular": [
+     "2003-04",
+-    "SA",
++    "GS",
+     "18",
+     "0",
+     "2.9",
+@@ -9607,7 +9607,7 @@
+   "barroda01": {
+    "regular": [
+     "2003-04",
+-    "BOS",
++    "BOS/DEN",
+     "21",
+     "0",
+     "2.9",
+@@ -9693,7 +9693,7 @@
+   "martida01": {
+    "regular": [
+     "2003-04",
+-    "MIN",
++    "MIN/POR",
+     "20",
+     "1",
+     "11.0",
+@@ -9711,7 +9711,7 @@
+   "johnsde03": {
+    "regular": [
+     "2003-04",
+-    "FA",
++    "NY",
+     "23",
+     "0",
+     "5.2",
+@@ -9747,7 +9747,7 @@
+   "penigde01": {
+    "regular": [
+     "2003-04",
+-    "ORL",
++    "ORL/GS/MIN/LAC/DEN/MIL",
+     "18",
+     "0",
+     "2.6",
+@@ -9765,7 +9765,7 @@
+   "marshdo01": {
+    "regular": [
+     "2003-04",
+-    "CHI",
++    "CHI/TOR",
+     "82",
+     "82",
+     "36.6",
+@@ -9799,7 +9799,7 @@
+   "overtdo01": {
+    "regular": [
+     "2003-04",
+-    "NJ",
++    "NJ/LAC/SAC",
+     "58",
+     "1",
+     "14.9",
+@@ -9971,7 +9971,7 @@
+   "fullehi01": {
+    "regular": [
+     "2003-04",
+-    "ATL",
++    "ATL/SA",
+     "45",
+     "0",
+     "3.4",
+@@ -10005,7 +10005,7 @@
+   "davishu01": {
+    "regular": [
+     "2003-04",
+-    "DET",
++    "DET/NJ",
+     "19",
+     "0",
+     "3.5",
+@@ -10057,7 +10057,7 @@
+   "breweja01": {
+    "regular": [
+     "2003-04",
+-    "IND",
++    "IND/BOS",
+     "49",
+     "0",
+     "3.5",
+@@ -10145,7 +10145,7 @@
+   "davisjo02": {
+    "regular": [
+     "2003-04",
+-    "ATL",
++    "ATL/BOS",
+     "13",
+     "0",
+     "2.1",
+@@ -10163,7 +10163,7 @@
+   "dickeka01": {
+    "regular": [
+     "2003-04",
+-    "POR",
++    "POR/TOR/DAL",
+     "8",
+     "0",
+     "6.3",
+@@ -10323,7 +10323,7 @@
+   "olowomi01": {
+    "regular": [
+     "2003-04",
+-    "MIN",
++    "MIN/DEN",
+     "34",
+     "2",
+     "21.8",
+@@ -10481,7 +10481,7 @@
+   "shirlpa01": {
+    "regular": [
+     "2003-04",
+-    "CHI",
++    "DET",
+     "28",
+     "0",
+     "3.4",
+@@ -10517,7 +10517,7 @@
+   "lewisqu01": {
+    "regular": [
+     "2003-04",
+-    "MIN",
++    "MIN/PHX",
+     "37",
+     "0",
+     "2.7",
+@@ -10589,7 +10589,7 @@
+   "boumtru01": {
+    "regular": [
+     "2003-04",
+-    "POR",
++    "LAC",
+     "21",
+     "0",
+     "3.5",
+@@ -10641,7 +10641,7 @@
+   "murratr01": {
+    "regular": [
+     "2003-04",
+-    "POR",
++    "POR/SA",
+     "27",
+     "0",
+     "2.9",
+@@ -10677,7 +10677,7 @@
+   "bakervi01": {
+    "regular": [
+     "2003-04",
+-    "BOS",
++    "BOS/NY",
+     "54",
+     "49",
+     "28.2",
+@@ -10695,7 +10695,7 @@
+   "fordal02": {
+    "regular": [
+     "2003-04",
+-    "ORL",
++    "HOU",
+     "26",
+     "0",
+     "3.4",
+@@ -10803,7 +10803,7 @@
+   "livinra01": {
+    "regular": [
+     "2003-04",
+-    "LAC",
++    "HOU",
+     "27",
+     "0",
+     "3.3",
+@@ -10925,7 +10925,7 @@
+   "smithth01": {
+    "regular": [
+     "2003-04",
+-    "MEM",
++    "MEM/ATL",
+     "29",
+     "0",
+     "3.3",
+diff --git a/career/Dwyane_Wade/Stats_and_Awards/League/2004-05/card_lines.json b/career/Dwyane_Wade/Stats_and_Awards/League/2004-05/card_lines.json
+index 9db5c4db1c3..9974193f194 100644
+--- a/career/Dwyane_Wade/Stats_and_Awards/League/2004-05/card_lines.json
++++ b/career/Dwyane_Wade/Stats_and_Awards/League/2004-05/card_lines.json
+@@ -25,7 +25,7 @@
+   "johnsan02": {
+    "regular": [
+     "2004-05",
+-    "IND",
++    "UTAH/IND",
+     "66",
+     "32",
+     "29.2",
+@@ -113,7 +113,7 @@
+   "arroyca01": {
+    "regular": [
+     "2004-05",
+-    "MIL",
++    "UTAH/MIL",
+     "76",
+     "1",
+     "20.8",
+@@ -199,7 +199,7 @@
+   "atkinch01": {
+    "regular": [
+     "2004-05",
+-    "LAL",
++    "DET/LAL",
+     "83",
+     "83",
+     "40.4",
+@@ -353,7 +353,7 @@
+   "fishede01": {
+    "regular": [
+     "2004-05",
+-    "DET",
++    "UTAH/DET",
+     "79",
+     "79",
+     "31.0",
+@@ -457,7 +457,7 @@
+   "willifr02": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "CHA",
+     "62",
+     "0",
+     "8.9",
+@@ -475,7 +475,7 @@
+   "paytoga01": {
+    "regular": [
+     "2004-05",
+-    "DET",
++    "LAL/DET",
+     "77",
+     "77",
+     "37.6",
+@@ -527,7 +527,7 @@
+   "eisleho01": {
+    "regular": [
+     "2004-05",
+-    "POR",
++    "NY/POR",
+     "75",
+     "16",
+     "19.3",
+@@ -647,7 +647,7 @@
+   "pargoja01": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "CHA",
+     "31",
+     "3",
+     "21.4",
+@@ -977,7 +977,7 @@
+   "ridnolu01": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "CHA",
+     "82",
+     "82",
+     "39.3",
+@@ -1029,7 +1029,7 @@
+   "pietrmi01": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "GS/CHA",
+     "69",
+     "56",
+     "29.6",
+@@ -1115,7 +1115,7 @@
+   "wilksmi01": {
+    "regular": [
+     "2004-05",
+-    "PHI",
++    "CHI",
+     "1",
+     "0",
+     "0.6",
+@@ -1201,7 +1201,7 @@
+   "norrimo01": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "CHA",
+     "48",
+     "2",
+     "16.8",
+@@ -1271,7 +1271,7 @@
+   "brunsri01": {
+    "regular": [
+     "2004-05",
+-    "CHI",
++    "CHA/POR/CHI",
+     "9",
+     "2",
+     "24.3",
+@@ -1305,7 +1305,7 @@
+   "stricro02": {
+    "regular": [
+     "2004-05",
+-    "FA",
++    "CHI",
+     "59",
+     "0",
+     "4.4",
+@@ -1443,7 +1443,7 @@
+   "blakest01": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "CHA",
+     "53",
+     "12",
+     "23.6",
+@@ -1615,7 +1615,7 @@
+   "hudsotr01": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "CHA",
+     "80",
+     "80",
+     "35.4",
+@@ -1633,7 +1633,7 @@
+   "luety01": {
+    "regular": [
+     "2004-05",
+-    "MIN",
++    "ORL/MIN",
+     "70",
+     "70",
+     "31.0",
+@@ -1685,7 +1685,7 @@
+   "houstal01": {
+    "regular": [
+     "2004-05",
+-    "DEN",
++    "NY/DEN",
+     "19",
+     "19",
+     "28.7",
+@@ -1737,7 +1737,7 @@
+   "hardaan01": {
+    "regular": [
+     "2004-05",
+-    "NY",
++    "DEN/NY",
+     "33",
+     "18",
+     "24.5",
+@@ -1791,7 +1791,7 @@
+   "surabo01": {
+    "regular": [
+     "2004-05",
+-    "IND",
++    "UTAH/IND",
+     "57",
+     "40",
+     "32.4",
+@@ -1845,7 +1845,7 @@
+   "barrybr01": {
+    "regular": [
+     "2004-05",
+-    "GS",
++    "WSH/GS",
+     "77",
+     "4",
+     "21.2",
+@@ -2089,7 +2089,7 @@
+   "chrisdo01": {
+    "regular": [
+     "2004-05",
+-    "NO",
++    "SAC/NO",
+     "43",
+     "34",
+     "32.8",
+@@ -2177,7 +2177,7 @@
+   "stricer01": {
+    "regular": [
+     "2004-05",
+-    "UTAH",
++    "MIL/UTAH",
+     "74",
+     "0",
+     "13.9",
+@@ -2231,7 +2231,7 @@
+   "buckngr01": {
+    "regular": [
+     "2004-05",
+-    "CLE",
++    "PHI/CLE",
+     "68",
+     "33",
+     "26.0",
+@@ -2299,7 +2299,7 @@
+   "stackje01": {
+    "regular": [
+     "2004-05",
+-    "MIN",
++    "CLE/MIN",
+     "56",
+     "56",
+     "32.2",
+@@ -2403,7 +2403,7 @@
+   "gillke01": {
+    "regular": [
+     "2004-05",
+-    "UTAH",
++    "MIA/UTAH",
+     "67",
+     "31",
+     "17.2",
+@@ -2439,7 +2439,7 @@
+   "doolike01": {
+    "regular": [
+     "2004-05",
+-    "UTAH",
++    "ATL/UTAH",
+     "51",
+     "6",
+     "20.2",
+@@ -2491,7 +2491,7 @@
+   "korveky01": {
+    "regular": [
+     "2004-05",
+-    "NO",
++    "CHA/SAC/NO",
+     "80",
+     "80",
+     "37.2",
+@@ -2613,7 +2613,7 @@
+   "vanexni01": {
+    "regular": [
+     "2004-05",
+-    "BOS",
++    "SA/NY/BOS",
+     "54",
+     "54",
+     "31.3",
+@@ -2681,7 +2681,7 @@
+   "bellra01": {
+    "regular": [
+     "2004-05",
+-    "MIA",
++    "UTAH/MIA",
+     "73",
+     "36",
+     "17.6",
+@@ -2733,7 +2733,7 @@
+   "millere01": {
+    "regular": [
+     "2004-05",
+-    "BOS",
++    "IND/BOS",
+     "72",
+     "72",
+     "32.7",
+@@ -2871,7 +2871,7 @@
+   "augmost01": {
+    "regular": [
+     "2004-05",
+-    "NJ",
++    "CHI/LAC/NJ",
+     "41",
+     "0",
+     "10.8",
+@@ -2923,7 +2923,7 @@
+   "slayta01": {
+    "regular": [
+     "2004-05",
+-    "PHX",
++    "ATL/NJ/MEM/CHI/LAL/HOU/PHI",
+     "31",
+     "0",
+     "5.3",
+@@ -2959,7 +2959,7 @@
+   "hassetr01": {
+    "regular": [
+     "2004-05",
+-    "CLE",
++    "MIN/CLE",
+     "81",
+     "68",
+     "28.9",
+@@ -3095,7 +3095,7 @@
+   "planizo01": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "CHA",
+     "38",
+     "0",
+     "20.1",
+@@ -3217,7 +3217,7 @@
+   "nachbbo01": {
+    "regular": [
+     "2004-05",
+-    "UTAH",
++    "HOU/UTAH",
+     "73",
+     "0",
+     "17.6",
+@@ -3355,7 +3355,7 @@
+   "willico02": {
+    "regular": [
+     "2004-05",
+-    "CHI",
++    "DET/CHI",
+     "72",
+     "9",
+     "21.4",
+@@ -3579,7 +3579,7 @@
+   "robingl01": {
+    "regular": [
+     "2004-05",
+-    "UTAH",
++    "PHI/CLE/HOU",
+     "5",
+     "1",
+     "22.6",
+@@ -3649,7 +3649,7 @@
+   "newblir01": {
+    "regular": [
+     "2004-05",
+-    "HOU",
++    "CLE/HOU",
+     "72",
+     "30",
+     "26.9",
+@@ -3667,7 +3667,7 @@
+   "roseja01": {
+    "regular": [
+     "2004-05",
+-    "IND",
++    "BOS/IND",
+     "79",
+     "79",
+     "35.8",
+@@ -3685,7 +3685,7 @@
+   "jonesja02": {
+    "regular": [
+     "2004-05",
+-    "ORL",
++    "CHA/ORL",
+     "76",
+     "2",
+     "16.3",
+@@ -3739,7 +3739,7 @@
+   "kaponja01": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "CHA",
+     "81",
+     "58",
+     "29.5",
+@@ -3949,7 +3949,7 @@
+   "sprewla01": {
+    "regular": [
+     "2004-05",
+-    "ORL",
++    "MIN/ORL",
+     "81",
+     "81",
+     "31.1",
+@@ -4053,7 +4053,7 @@
+   "harprma01": {
+    "regular": [
+     "2004-05",
+-    "MIA",
++    "UTAH/MIA",
+     "77",
+     "77",
+     "32.7",
+@@ -4553,7 +4553,7 @@
+   "szczewa02": {
+    "regular": [
+     "2004-05",
+-    "NJ",
++    "DEN/NJ",
+     "82",
+     "82",
+     "36.8",
+@@ -4605,7 +4605,7 @@
+   "cabarza01": {
+    "regular": [
+     "2004-05",
+-    "POR",
++    "ATL/POR",
+     "68",
+     "0",
+     "6.6",
+@@ -4741,7 +4741,7 @@
+   "croshau01": {
+    "regular": [
+     "2004-05",
+-    "NY",
++    "IND/BOS/NY",
+     "77",
+     "71",
+     "27.0",
+@@ -4793,7 +4793,7 @@
+   "huntebr01": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "CHA",
+     "82",
+     "78",
+     "20.7",
+@@ -4845,7 +4845,7 @@
+   "scalabr01": {
+    "regular": [
+     "2004-05",
+-    "DEN",
++    "NJ/DEN",
+     "47",
+     "26",
+     "26.8",
+@@ -5037,7 +5037,7 @@
+   "robincl02": {
+    "regular": [
+     "2004-05",
+-    "WSH",
++    "GS/WSH",
+     "74",
+     "12",
+     "22.8",
+@@ -5247,7 +5247,7 @@
+   "willije01": {
+    "regular": [
+     "2004-05",
+-    "DET",
++    "CHI/DET",
+     "71",
+     "0",
+     "14.4",
+@@ -5281,7 +5281,7 @@
+   "howarju01": {
+    "regular": [
+     "2004-05",
+-    "GS",
++    "ORL/CHA/GS",
+     "50",
+     "24",
+     "27.8",
+@@ -5435,7 +5435,7 @@
+   "lampema01": {
+    "regular": [
+     "2004-05",
+-    "ATL",
++    "PHX/ATL",
+     "79",
+     "0",
+     "8.5",
+@@ -5469,7 +5469,7 @@
+   "allenma01": {
+    "regular": [
+     "2004-05",
+-    "FA",
++    "LAL",
+     "3",
+     "3",
+     "28.0",
+@@ -5487,7 +5487,7 @@
+   "rosema01": {
+    "regular": [
+     "2004-05",
+-    "POR",
++    "SA/NY/POR",
+     "80",
+     "34",
+     "22.5",
+@@ -5591,7 +5591,7 @@
+   "bradlmi01": {
+    "regular": [
+     "2004-05",
+-    "FA",
++    "HOU/IND/NO",
+     "13",
+     "0",
+     "5.3",
+@@ -5663,7 +5663,7 @@
+   "brownpj01": {
+    "regular": [
+     "2004-05",
+-    "SAC",
++    "NO/SAC",
+     "82",
+     "82",
+     "36.8",
+@@ -5733,7 +5733,7 @@
+   "woodsqy01": {
+    "regular": [
+     "2004-05",
+-    "LAL",
++    "CHA/LAL",
+     "78",
+     "3",
+     "14.1",
+@@ -5819,7 +5819,7 @@
+   "horryro01": {
+    "regular": [
+     "2004-05",
+-    "SEA",
++    "NJ/SEA",
+     "75",
+     "4",
+     "19.4",
+@@ -5837,7 +5837,7 @@
+   "rogerro01": {
+    "regular": [
+     "2004-05",
+-    "DET",
++    "UTAH/DET",
+     "60",
+     "3",
+     "17.2",
+@@ -5889,7 +5889,7 @@
+   "padgesc01": {
+    "regular": [
+     "2004-05",
+-    "TOR",
++    "MIA/TOR",
+     "79",
+     "0",
+     "12.4",
+@@ -6217,7 +6217,7 @@
+   "hendeal01": {
+    "regular": [
+     "2004-05",
+-    "UTAH",
++    "ATL/UTAH",
+     "78",
+     "27",
+     "18.0",
+@@ -6321,7 +6321,7 @@
+   "outlabo01": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "CHA",
+     "82",
+     "0",
+     "18.9",
+@@ -6529,7 +6529,7 @@
+   "davisda01": {
+    "regular": [
+     "2004-05",
+-    "NY",
++    "POR/NY",
+     "62",
+     "24",
+     "22.5",
+@@ -6931,7 +6931,7 @@
+   "moisoje01": {
+    "regular": [
+     "2004-05",
+-    "Charlotte Bobcats",
++    "CHA",
+     "54",
+     "0",
+     "15.6",
+@@ -6983,7 +6983,7 @@
+   "catoke01": {
+    "regular": [
+     "2004-05",
+-    "CLE",
++    "HOU/CLE",
+     "69",
+     "49",
+     "26.7",
+@@ -7035,7 +7035,7 @@
+   "thomaku01": {
+    "regular": [
+     "2004-05",
+-    "SA",
++    "NY/SA",
+     "80",
+     "80",
+     "35.4",
+@@ -7207,7 +7207,7 @@
+   "blounma01": {
+    "regular": [
+     "2004-05",
+-    "MEM",
++    "BOS/MEM",
+     "79",
+     "59",
+     "28.4",
+@@ -7331,7 +7331,7 @@
+   "lafrera01": {
+    "regular": [
+     "2004-05",
+-    "ATL",
++    "UTAH/ATL",
+     "81",
+     "56",
+     "29.9",
+@@ -7573,7 +7573,7 @@
+   "battito01": {
+    "regular": [
+     "2004-05",
+-    "DEN",
++    "BOS/NY/DEN",
+     "80",
+     "34",
+     "25.1",
+@@ -7695,7 +7695,7 @@
+   "ilgauzy01": {
+    "regular": [
+     "2004-05",
+-    "PHI",
++    "CLE/PHI",
+     "79",
+     "79",
+     "35.9",
+@@ -7763,7 +7763,7 @@
+   "brownde02": {
+    "regular": [
+     "2004-05",
+-    "BOS",
++    "SA/NY/BOS",
+     "70",
+     "2",
+     "18.2",
+@@ -7797,7 +7797,7 @@
+   "jonesed02": {
+    "regular": [
+     "2004-05",
+-    "UTAH",
++    "MIA/UTAH",
+     "76",
+     "46",
+     "23.3",
+@@ -7935,7 +7935,7 @@
+   "mournal01": {
+    "regular": [
+     "2004-05",
+-    "SEA",
++    "NJ/SEA",
+     "20",
+     "20",
+     "26.5",
+@@ -7953,7 +7953,7 @@
+   "goldwan01": {
+    "regular": [
+     "2004-05",
+-    "GS",
++    "UTAH/CHA/GS",
+     "32",
+     "1",
+     "14.9",
+@@ -8005,7 +8005,7 @@
+   "handlbe01": {
+    "regular": [
+     "2004-05",
+-    "FA",
++    "POR/CHI",
+     "56",
+     "0",
+     "5.4",
+@@ -8093,7 +8093,7 @@
+   "borchcu01": {
+    "regular": [
+     "2004-05",
+-    "PHI",
++    "BOS/PHI",
+     "47",
+     "0",
+     "12.5",
+@@ -8215,7 +8215,7 @@
+   "martida01": {
+    "regular": [
+     "2004-05",
+-    "NY",
++    "POR/NY",
+     "11",
+     "0",
+     "9.8",
+@@ -8267,7 +8267,7 @@
+   "marshdo01": {
+    "regular": [
+     "2004-05",
+-    "MIA",
++    "TOR/MIA",
+     "72",
+     "47",
+     "28.6",
+@@ -8301,7 +8301,7 @@
+   "gilled01": {
+    "regular": [
+     "2004-05",
+-    "FA",
++    "CHI",
+     "3",
+     "0",
+     "6.3",
+@@ -8389,7 +8389,7 @@
+   "jonesfr01": {
+    "regular": [
+     "2004-05",
+-    "HOU",
++    "IND/UTAH/HOU",
+     "79",
+     "77",
+     "30.5",
+@@ -8407,7 +8407,7 @@
+   "breweja01": {
+    "regular": [
+     "2004-05",
+-    "SA",
++    "PHI/ATL/MIL/MEM/SA",
+     "28",
+     "0",
+     "5.9",
+@@ -8581,7 +8581,7 @@
+   "murrala01": {
+    "regular": [
+     "2004-05",
+-    "MIA",
++    "TOR/MIA",
+     "77",
+     "0",
+     "8.0",
+@@ -8615,7 +8615,7 @@
+   "johnsli01": {
+    "regular": [
+     "2004-05",
+-    "FA",
++    "PHI/DET/IND/NJ/HOU/SA",
+     "22",
+     "0",
+     "5.8",
+@@ -8651,7 +8651,7 @@
+   "popema01": {
+    "regular": [
+     "2004-05",
+-    "FA",
++    "LAL/CHI",
+     "49",
+     "0",
+     "6.6",
+@@ -8687,7 +8687,7 @@
+   "carroma01": {
+    "regular": [
+     "2004-05",
+-    "CHI",
++    "PHI/SA/CHI",
+     "5",
+     "0",
+     "7.9",
+@@ -8791,7 +8791,7 @@
+   "shirlpa01": {
+    "regular": [
+     "2004-05",
+-    "FA",
++    "MEM/NJ/PHI/DET",
+     "17",
+     "0",
+     "5.8",
+@@ -8845,7 +8845,7 @@
+   "buforro01": {
+    "regular": [
+     "2004-05",
+-    "FA",
++    "DET",
+     "2",
+     "0",
+     "15.3",
+@@ -8897,7 +8897,7 @@
+   "bowenry01": {
+    "regular": [
+     "2004-05",
+-    "FA",
++    "CHI",
+     "9",
+     "0",
+     "9.2",
+@@ -8985,7 +8985,7 @@
+   "tayloma01": {
+    "regular": [
+     "2004-05",
+-    "CLE",
++    "HOU/CLE",
+     "60",
+     "10",
+     "21.1",
+@@ -9073,7 +9073,7 @@
+   "wrighlo02": {
+    "regular": [
+     "2004-05",
+-    "BOS",
++    "MEM/BOS",
+     "82",
+     "82",
+     "30.4",
+@@ -9125,7 +9125,7 @@
+   "smithth01": {
+    "regular": [
+     "2004-05",
+-    "POR",
++    "ATL/POR",
+     "67",
+     "0",
+     "7.3",
+@@ -9159,7 +9159,7 @@
+   "hasleud01": {
+    "regular": [
+     "2004-05",
+-    "TOR",
++    "MIA/TOR",
+     "78",
+     "53",
+     "25.1",
+@@ -9333,7 +9333,7 @@
+   "krishumphries": {
+    "regular": [
+     "2004-05",
+-    "UTAH",
++    "DET/UTAH",
+     "49",
+     "0",
+     "11.4",
+@@ -9473,7 +9473,7 @@
+   "sebastiantelfair": {
+    "regular": [
+     "2004-05",
+-    "UTAH",
++    "DET/UTAH",
+     "68",
+     "6",
+     "19.5",
+@@ -9491,7 +9491,7 @@
+   "trevorariza": {
+    "regular": [
+     "2004-05",
+-    "LAL",
++    "DET/LAL",
+     "78",
+     "35",
+     "21.0",
+@@ -9749,7 +9749,7 @@
+   "anthonymiller": {
+    "regular": [
+     "2004-05",
+-    "FA",
++    "SA",
+     "44",
+     "0",
+     "4.0",
+@@ -10047,7 +10047,7 @@
+   "hillgr01": {
+    "regular": [
+     "2004-05",
+-    "MIN",
++    "ORL/MIN",
+     "64",
+     "64",
+     "37.3",
+@@ -10135,7 +10135,7 @@
+   "jrsmith": {
+    "regular": [
+     "2004-05",
+-    "BOS",
++    "MEM/BOS",
+     "77",
+     "28",
+     "24.1",
+@@ -10607,7 +10607,7 @@
+   "tonyallen": {
+    "regular": [
+     "2004-05",
+-    "NY",
++    "SA/NY",
+     "84",
+     "2",
+     "17.8",
+@@ -10625,7 +10625,7 @@
+   "shaunlivingston": {
+    "regular": [
+     "2004-05",
+-    null,
++    "CHA",
+     "29",
+     "29",
+     "31.4",
+diff --git a/career/Dwyane_Wade/Stats_and_Awards/League/README.md b/career/Dwyane_Wade/Stats_and_Awards/League/README.md
+index 4b6dea5af88..494555244b4 100644
+--- a/career/Dwyane_Wade/Stats_and_Awards/League/README.md
++++ b/career/Dwyane_Wade/Stats_and_Awards/League/README.md
+@@ -4,19 +4,19 @@
+ [Current contracts and contract history for every tracked player](../../Contracts/index.html)
+ <!-- contract-navigation:end -->
+ 
+-[Stats hub](../README.md) · [2003-04 players](2003-04/League_Stats.md) · [2003-04 awards](2003-04/League_Awards.md) · [2003-04 standings](2003-04/Standings.md) · [2004 playoffs](2003-04/Playoffs.md) · [Player registry](player_registry.json) · [Player cards](Players/README.md)
++[Stats hub](../README.md) · [2003-04 players](2003-04/League_Stats.md) · [2003-04 awards](2003-04/League_Awards.md) · [2003-04 standings](2003-04/Standings.md) · [2004 playoffs](2003-04/Playoffs.md) · [2004-05 players](2004-05/League_Stats.md) · [2004-05 awards](2004-05/League_Awards.md) · [2004-05 standings](2004-05/Standings.md) · [2005 playoffs](2004-05/Playoffs.md) · [2005-06 players](2005-06/League_Stats.md) · [2005-06 awards](2005-06/League_Awards.md) · [2005-06 standings](2005-06/Standings.md) · [2006 playoffs](2005-06/Playoffs.md) · [Player registry](player_registry.json) · [Player cards](Players/README.md)
+ 
+-The league pages cover 407 registered players. All entries remain available in six position groups, with the complete per-game table in the same order as the player pages. A closed group keeps the page short; opening it reveals every player in that position, alphabetically.
++The league pages cover 653 registered players. All entries remain available in six position groups, with the complete per-game table in the same order as the player pages. A closed group keeps the page short; opening it reveals every player in that position, alphabetically.
+ 
+ ![NBA per-game statistics](assets/per_game.svg)
+ 
+-Season, month and week pages include age, recorded club or draft rights, league, position, games, starts, minutes, all shooting makes and attempts, shooting efficiency, offensive and defensive rebounds, assists, steals, blocks, turnovers, fouls and points. G and GS are counts; the other counting columns are per appearance. Shooting uses .500 = 50.0%. Identity comes from the dated registry; its birth dates are available in the registry link. The red-and-black section header has no awards banner; award decisions remain in their linked records.
++Season, month and week pages include age on the page's label date (the period's end, or the career date while it runs), the dated club (the clubs he played for in the period, in stint order, else his club on the label date; `—` before he reached the league) or draft rights, league, position, games, starts, minutes, all shooting makes and attempts, shooting efficiency, offensive and defensive rebounds, assists, steals, blocks, turnovers, fouls and points. G and GS are counts; the other counting columns are per appearance. Shooting uses .500 = 50.0%. Identity comes from the dated registry; its birth dates are available in the registry link. The red-and-black section header has no awards banner; award decisions remain in their linked records.
+ 
+-An unavailable column stays N/A until closed branch game evidence supplies it. The presentation formatter (`scripts/format_league_reports.py`) preserves existing period values and navigation; it does not collect engine results, reconstruct attempts from rounded averages, or populate leaders. The write-back (`scripts/write_back_results.py`, [rules](../../../../docs/player_statistics.md#write-back)) aggregates the closed results into these pages and fills the period comparison under Leaders; unregistered players in a result are reported, never added.
++An unavailable column stays N/A until closed branch game evidence supplies it. The presentation formatter (`scripts/format_league_reports.py`) preserves existing period values and navigation; it does not collect engine results, reconstruct attempts from rounded averages, or populate leaders. The write-back (`scripts/write_back_results.py`, [rules](../../../../docs/player_statistics.md#write-back)) aggregates the closed results into these pages and fills the period comparison under Leaders; a player in a closed result who is not yet registered is added, dated by his first appearance (`write_back.extend_registry`). The navigation above, the player count and the cohort counts below are restated from the season list and the registry on every full write-back (`season_pages.hub`), and a closed season's pages follow the registry's names and the dated club rule ([player cards guide](../../../../docs/player_cards.md)).
+ 
+ ## Coverage and rankings
+ 
+-The registry combines 349 prior-season roster identities and 58 draft entries. A source club or draft-rights label does not establish an active contract, availability or an opening-night team. The 428-player historical rating dataset is separate. Roster membership changes only through dated branch records.
++The registry combines 349 prior-season roster identities, 58 2003 draft entries and 246 players added at their first closed appearance in any season (cohort `2003_04_appearance`). The dated club or draft-rights label does not establish an active contract, availability or an opening-night team. The 428-player historical rating dataset is separate. Roster membership changes only through dated branch records.
+ 
+ G is appearances. Averages and percentages need valid denominators. Publish period leaders with G and relevant attempts, and verify the 2003-04 qualification rule before declaring an official season leader. Weekly and monthly leaders are period comparisons; they are not automatically qualified season leaders. No closed games means no leader, not a tie at zero.
+ 
+diff --git a/career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json b/career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json
+index bf84d5a6423..035dd27ab93 100644
+--- a/career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json
++++ b/career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json
+@@ -7323,7 +7323,7 @@
+       "name": "Shaun Livingston",
+       "position": "PG",
+       "team_name": "Charlotte Bobcats",
+-      "team_code": null,
++      "team_code": "CHA",
+       "conference": "East",
+       "cohort": "2003_04_appearance",
+       "bbr_id": "livinsh01",
+@@ -7475,7 +7475,7 @@
+       "name": "Danny Granger",
+       "position": "SF",
+       "team_name": "New Orleans/Oklahoma City Hornets",
+-      "team_code": null,
++      "team_code": "NOK",
+       "conference": "West",
+       "cohort": "2003_04_appearance",
+       "bbr_id": "grangda01",
+@@ -7587,7 +7587,7 @@
+       "name": "Randy Holcomb",
+       "position": "SF",
+       "team_name": "New Orleans/Oklahoma City Hornets",
+-      "team_code": null,
++      "team_code": "NOK",
+       "conference": "West",
+       "cohort": "2003_04_appearance",
+       "bbr_id": "holcora01",
+@@ -7682,10 +7682,10 @@
+       "added_basis": "first closed 2005-06 appearance, Denver Nuggets, 2005-11-01-denver-nuggets-at-san-antonio-spurs"
+     },
+     {
+-      "name": "fitchge01",
++      "name": "Gerald Fitch",
+       "position": "SF",
+       "team_name": "New Orleans/Oklahoma City Hornets",
+-      "team_code": null,
++      "team_code": "NOK",
+       "conference": "West",
+       "cohort": "2003_04_appearance",
+       "bbr_id": "fitchge01",
+@@ -7697,7 +7697,12 @@
+       "position_basis": "unknown",
+       "position_before": "SF",
+       "position_basis_before": null,
+-      "position_corrected_on": "2005-12-31"
++      "position_corrected_on": "2005-12-31",
++      "name_corrected": {
++        "on": "2006-06-21",
++        "from": "fitchge01",
++        "source": "library/careers/nba_player_careers.json (player_name); the row had taken the id a 2005 summer market record named him by"
++      }
+     },
+     {
+       "name": "Aaron Miles",
+@@ -7745,7 +7750,7 @@
+       "name": "Andray Blatche",
+       "position": "PF",
+       "team_name": "Charlotte Bobcats",
+-      "team_code": null,
++      "team_code": "CHA",
+       "conference": "East",
+       "cohort": "2003_04_appearance",
+       "bbr_id": "blatcan01",
+@@ -8333,7 +8338,7 @@
+       "name": "Rawle Marshall",
+       "position": "SF",
+       "team_name": "Charlotte Bobcats",
+-      "team_code": null,
++      "team_code": "CHA",
+       "conference": "East",
+       "cohort": "2003_04_appearance",
+       "bbr_id": "marshra01",
+@@ -8445,7 +8450,7 @@
+       "name": "Shavlik Randolph",
+       "position": "PF",
+       "team_name": "Charlotte Bobcats",
+-      "team_code": null,
++      "team_code": "CHA",
+       "conference": "East",
+       "cohort": "2003_04_appearance",
+       "bbr_id": "randosh01",
+@@ -8470,7 +8475,7 @@
+       "added_basis": "first closed 2005-06 appearance, Indiana Pacers, 2005-11-02-indiana-pacers-at-orlando-magic"
+     },
+     {
+-      "name": "simiewa01",
++      "name": "Wayne Simien",
+       "position": "F",
+       "team_name": "Toronto Raptors",
+       "team_code": "TOR",
+@@ -8485,13 +8490,18 @@
+       "position_basis": "library/2005/league/nba_2005_draft_class.json",
+       "position_before": "SF",
+       "position_basis_before": null,
+-      "position_corrected_on": "2005-12-31"
++      "position_corrected_on": "2005-12-31",
++      "name_corrected": {
++        "on": "2006-06-21",
++        "from": "simiewa01",
++        "source": "library/careers/nba_player_careers.json (player_name); the row had taken the id a 2005 summer market record named him by"
++      }
+     },
+     {
+-      "name": "walshma01",
++      "name": "Matt Walsh",
+       "position": "SF",
+       "team_name": "Charlotte Bobcats",
+-      "team_code": null,
++      "team_code": "CHA",
+       "conference": "East",
+       "cohort": "2003_04_appearance",
+       "bbr_id": "walshma01",
+@@ -8503,7 +8513,12 @@
+       "position_basis": "unknown",
+       "position_before": "SF",
+       "position_basis_before": null,
+-      "position_corrected_on": "2005-12-31"
++      "position_corrected_on": "2005-12-31",
++      "name_corrected": {
++        "on": "2006-06-21",
++        "from": "walshma01",
++        "source": "library/careers/nba_player_careers.json (player_name); the row had taken the id a 2005 summer market record named him by"
++      }
+     },
+     {
+       "name": "Šarūnas Jasikevičius",
+-- 
+2.43.0
+

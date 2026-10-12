@@ -1,0 +1,1107 @@
+From fb71a4f906252925fb2c6cc744899e9d662e20e3 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 12 Oct 2026 01:08:59 +0000
+Subject: [PATCH] Audit fix d (work in progress): identity role, availability,
+ notes, jerseys, Bosh ages
+
+Saved when the run was stopped, before this group's final test pass and
+review. Code, tests, docs, phase notes and current_state changes for:
+card live seasons, Wade's identity role from the rotation in force,
+availability from the injured-list ledger, inactive DNP reasons,
+missing-box win/loss splits, closed phase notes and draft notes,
+current_note following the clock, jersey numbers and Bosh row ages.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01ExmaEeFA7X8K2pJG6n4PLH
+---
+ .../2003-04/01_Free_Agency/note.md            |   2 +-
+ .../2003-04/02_Summer_League/note.md          |   2 +-
+ .../Dwyane_Wade/2003-04/03_Offseason/note.md  |   2 +-
+ .../2003-04/04_Training_Camp/note.md          |   2 +-
+ career/Dwyane_Wade/2003-04/09_Draft/note.md   |   5 +-
+ .../Dwyane_Wade/2004-05/03_Offseason/note.md  |   2 +-
+ .../2004-05/04_Training_Camp/note.md          |   2 +-
+ career/Dwyane_Wade/2004-05/09_Draft/note.md   |   3 +-
+ career/Dwyane_Wade/2004-05/current_state.json |   2 +-
+ .../2005-06/04_Training_Camp/note.md          |   2 +-
+ career/Dwyane_Wade/2005-06/current_state.json |   2 +-
+ docs/player_cards.md                          |   2 +-
+ docs/player_statistics.md                     |   6 +-
+ runtime/career_stats.py                       |  71 ++++++-
+ runtime/continuity.py                         |   6 +-
+ runtime/draft.py                              |  40 ++++
+ runtime/followed_players.py                   |  13 +-
+ runtime/jerseys.py                            | 181 +++++++++++++----
+ runtime/player_cards.py                       |   7 +-
+ runtime/player_milestones.py                  |   7 +-
+ runtime/player_reports.py                     |   3 +-
+ runtime/write_back.py                         |  39 +++-
+ scripts/advance.py                            |   5 +-
+ tests/test_audit_d.py                         | 187 ++++++++++++++++++
+ 24 files changed, 519 insertions(+), 74 deletions(-)
+ create mode 100644 tests/test_audit_d.py
+
+diff --git a/career/Dwyane_Wade/2003-04/01_Free_Agency/note.md b/career/Dwyane_Wade/2003-04/01_Free_Agency/note.md
+index 6a6b7769e0a..6ce59ef46b1 100644
+--- a/career/Dwyane_Wade/2003-04/01_Free_Agency/note.md
++++ b/career/Dwyane_Wade/2003-04/01_Free_Agency/note.md
+@@ -1,6 +1,6 @@
+ ---
+ type: phase
+-status: active
++status: complete
+ ---
+ 
+ # Free Agency
+diff --git a/career/Dwyane_Wade/2003-04/02_Summer_League/note.md b/career/Dwyane_Wade/2003-04/02_Summer_League/note.md
+index 6922d13421b..206d63a2644 100644
+--- a/career/Dwyane_Wade/2003-04/02_Summer_League/note.md
++++ b/career/Dwyane_Wade/2003-04/02_Summer_League/note.md
+@@ -1,6 +1,6 @@
+ ---
+ type: phase
+-status: not_started
++status: complete
+ ---
+ 
+ # Summer League
+diff --git a/career/Dwyane_Wade/2003-04/03_Offseason/note.md b/career/Dwyane_Wade/2003-04/03_Offseason/note.md
+index 75669f57de3..8428d84ea91 100644
+--- a/career/Dwyane_Wade/2003-04/03_Offseason/note.md
++++ b/career/Dwyane_Wade/2003-04/03_Offseason/note.md
+@@ -1,6 +1,6 @@
+ ---
+ type: phase
+-status: active
++status: complete
+ ---
+ 
+ # Offseason
+diff --git a/career/Dwyane_Wade/2003-04/04_Training_Camp/note.md b/career/Dwyane_Wade/2003-04/04_Training_Camp/note.md
+index 1c452d827fa..3d9832725ef 100644
+--- a/career/Dwyane_Wade/2003-04/04_Training_Camp/note.md
++++ b/career/Dwyane_Wade/2003-04/04_Training_Camp/note.md
+@@ -1,6 +1,6 @@
+ ---
+ type: phase
+-status: active
++status: complete
+ ---
+ 
+ # Training Camp
+diff --git a/career/Dwyane_Wade/2003-04/09_Draft/note.md b/career/Dwyane_Wade/2003-04/09_Draft/note.md
+index ff110925321..f1057d95567 100644
+--- a/career/Dwyane_Wade/2003-04/09_Draft/note.md
++++ b/career/Dwyane_Wade/2003-04/09_Draft/note.md
+@@ -1,7 +1,7 @@
+ ---
+ type: phase
+ status: complete
+-through: 2003-06-26
++through: 2004-06-24
+ ---
+ 
+ # 2003 NBA Draft
+@@ -18,6 +18,9 @@ Wade is now controlled by Miami through NBA draft rights. No professional contra
+ 
+ No new player decision is recorded in this event.
+ 
++## Events
++- 2004-06-24: The 2004 NBA Draft was held: 59 picks, 6 draft-night trade(s). Miami selected Dorell Wright (SF) at No. 23 (round 1), Bernard Robinson (SF) at No. 51 (round 2) and Christian Drejer (SF) at No. 54 (round 2). Record: `draft_2004.json`.
++
+ ## Consequences
+ 
+ - Team: Miami Heat
+diff --git a/career/Dwyane_Wade/2004-05/03_Offseason/note.md b/career/Dwyane_Wade/2004-05/03_Offseason/note.md
+index 9a77d62877a..ad3b10451cd 100644
+--- a/career/Dwyane_Wade/2004-05/03_Offseason/note.md
++++ b/career/Dwyane_Wade/2004-05/03_Offseason/note.md
+@@ -1,6 +1,6 @@
+ ---
+ type: phase
+-status: active
++status: complete
+ ---
+ 
+ # Offseason
+diff --git a/career/Dwyane_Wade/2004-05/04_Training_Camp/note.md b/career/Dwyane_Wade/2004-05/04_Training_Camp/note.md
+index 8368518d18f..f9febe5ca7e 100644
+--- a/career/Dwyane_Wade/2004-05/04_Training_Camp/note.md
++++ b/career/Dwyane_Wade/2004-05/04_Training_Camp/note.md
+@@ -1,6 +1,6 @@
+ ---
+ type: phase
+-status: active
++status: complete
+ ---
+ 
+ # Training Camp
+diff --git a/career/Dwyane_Wade/2004-05/09_Draft/note.md b/career/Dwyane_Wade/2004-05/09_Draft/note.md
+index 1684eea8cdf..107dd30a888 100644
+--- a/career/Dwyane_Wade/2004-05/09_Draft/note.md
++++ b/career/Dwyane_Wade/2004-05/09_Draft/note.md
+@@ -1,6 +1,6 @@
+ ---
+ type: phase
+-status: not_started
++status: complete
+ ---
+ 
+ # Draft
+@@ -8,5 +8,6 @@ status: not_started
+ ## Player decisions
+ 
+ ## Events
++- 2005-06-28: The 2005 NBA Draft was held: 60 picks, 6 draft-night trade(s). Miami selected Uroš Slokar (F) at No. 58 (round 2). Record: `draft_2005.json`.
+ 
+ ## Consequences
+diff --git a/career/Dwyane_Wade/2004-05/current_state.json b/career/Dwyane_Wade/2004-05/current_state.json
+index 56d61c9997d..90951d129d2 100644
+--- a/career/Dwyane_Wade/2004-05/current_state.json
++++ b/career/Dwyane_Wade/2004-05/current_state.json
+@@ -4,7 +4,7 @@
+  "season": "2004-05",
+  "current_date": "2005-10-01",
+  "current_area": "08_Playoffs",
+- "current_note": "04_Training_Camp/note.md",
++ "current_note": "06_Regular_Season/04_April/Week_3/note.md",
+  "team": "Miami Heat",
+  "team_abbreviation": "MIA",
+  "draft": {
+diff --git a/career/Dwyane_Wade/2005-06/04_Training_Camp/note.md b/career/Dwyane_Wade/2005-06/04_Training_Camp/note.md
+index 85bc299cbde..b0c315ed04e 100644
+--- a/career/Dwyane_Wade/2005-06/04_Training_Camp/note.md
++++ b/career/Dwyane_Wade/2005-06/04_Training_Camp/note.md
+@@ -1,6 +1,6 @@
+ ---
+ type: phase
+-status: active
++status: complete
+ ---
+ 
+ # Training Camp
+diff --git a/career/Dwyane_Wade/2005-06/current_state.json b/career/Dwyane_Wade/2005-06/current_state.json
+index 22292b72e45..1530ada4973 100644
+--- a/career/Dwyane_Wade/2005-06/current_state.json
++++ b/career/Dwyane_Wade/2005-06/current_state.json
+@@ -4,7 +4,7 @@
+  "season": "2005-06",
+  "current_date": "2006-06-20",
+  "current_area": "08_Playoffs",
+- "current_note": "04_Training_Camp/note.md",
++ "current_note": "06_Regular_Season/04_April/Week_3/note.md",
+  "team": "Miami Heat",
+  "team_abbreviation": "MIA",
+  "draft": {
+diff --git a/docs/player_cards.md b/docs/player_cards.md
+index bbde0143176..40469555438 100644
+--- a/docs/player_cards.md
++++ b/docs/player_cards.md
+@@ -12,7 +12,7 @@ A card shows only evidence dated on or before its date, which is the career cloc
+ | --- | --- | --- |
+ | Header image | Club-colour SVG with name, jersey, position and the club holding the player on the card date | `assets/<registry_id>_header.svg`, built from the colour file below |
+ | Photo | Sourced headshot with credit and licence, or the shared neutral silhouette (`assets/silhouette.svg`) | `headshot_*` fields of `library/2003/league/nba_2003_end_of_season.json`, then `nba_2003_draft_class.json`; a photo URL is never invented |
+-| Identity | Position, jersey, birth date, age on the card date, registry id, Basketball-Reference page, ESPN id; Wade's measurements and prior program come from his career profile | Registry and the baseline roster entry; `professional_identity.json` for Wade |
++| Identity | Position, jersey, birth date, age on the card date, registry id, Basketball-Reference page, ESPN id; Wade's measurements and prior program come from his career profile | Registry and the baseline roster entry; `professional_identity.json` for Wade. Numbers (`runtime/jerseys.py`): Miami's from its register (a continuing player keeps his previous Miami number, Wade's settled number stays his); another club's assigned over its effective roster on the card date in tenure order, so no club shows a number twice |
+ | Contract/control | Terms that already existed at the checkpoint, or the unsigned draft rights and their pick | `library/2003/league/nba_2003_contracts.json` (status legend in that file) |
+ | Prior season | Recorded 2002-03 line, or the 2003 draft entry for the 58 rookies | `nba_2002_03_player_stats.json`; draft rights from the contract inventory |
+ | Simulated statistics | Season, month and week per-game tables in the repository's column order, N/A until closed games exist, never zero | Closed regular-season results written into the career record by the write-back (`runtime.write_back.closed_lines`: Miami's played notes and the league slate results, matched by bbr_id then name) |
+diff --git a/docs/player_statistics.md b/docs/player_statistics.md
+index 791a5e1a687..62775bf4743 100644
+--- a/docs/player_statistics.md
++++ b/docs/player_statistics.md
+@@ -83,6 +83,8 @@ Weeks retain the repository's established **days 1-7, 8-14, 15-21 and 22-month e
+ 
+ `professional_identity.json` is the structured companion to the established player profile. Append a dated snapshot when team, jersey, role, contract or national status changes. Do not replace earlier snapshots with today's state. Each report uses the latest snapshot on or before its cutoff. Measurements have their own recorded date.
+ 
++Two identity fields follow their own dated records between snapshots (`career_stats.attach_status`, read by `identity_at`). **Role** is the staff rotation in force on the cutoff: the latest fortnightly review (`00_Team/Team/Depth_Chart/Reviews/<date>/rotation.json`) that lists Wade, as "Starting SG; staff plan 40 minutes" (the milestone desk's wording), in force until the next season's camp decision. A snapshot that sets a new role after it (training camp, the rollover's carried-over role) takes precedence until the next review; a snapshot that only copies the role forward with a number or a contract never does, and with no review in force the snapshot's role stands. **Availability** on a cutoff inside a stint on Miami's dated injured list (`00_Team/Transactions/injured_list.json`, placed on or before the cutoff and not yet activated) reads "Injured list since <date>" with the recorded injury and reason; otherwise the snapshot's text stands. Neither reads the activation date or any other later record.
++
+ From 2005-06 a snapshot's `contract` names the agreement only (the signing, extension or other contract event that wrote it); the season's part of the line is derived (`runtime/identity_contract.py`). A page inside a season's folders adds that season's salary from Miami's cap sheet (`00_Team/Finances/contract_schedules.json`, Wade's row) and each later option season with its status on the page's cutoff: open with its deadline until the season's option record (`League/option_decisions.json`) applied the decision, then exercised or declined on that date. An option an extension added appears only from the extension's signing date, so a page dated before the signing never shows it. A career page reads the season the rollover had opened by its cutoff. Seasons before 2005-06 keep the line their snapshots recorded, except that a season page never names another season's salary: the 2003-04 season pages, dated on the 2004-05 rollover day, read the agreement only, as the 2003-04 game notes do. Validation refuses a snapshot dated from the 2005-06 rollover on that writes a season's salary into its contract line, because the next season would copy it forward stale.
+ 
+ The compact identity includes name, age at cutoff, team/league, position, jersey and roster status. `Professional_Identity.md` adds birth date, physical measurements, shooting hand, entry, prior program, contract, role, debut and national eligibility/selection. Unknown eligibility and an unassigned jersey remain explicit. The supplied alternate-history identity, including the 1984 birth date and UConn background, takes precedence over historical Wade's biography. Update measurements only with dated evidence.
+@@ -111,7 +113,7 @@ These repository reporting definitions are implemented in `runtime/career_stats.
+ 
+ Recompute rates from raw totals, never averages of percentages. Comparisons use each period's own sample and cutoff; month-to-date never includes later weeks. NBA regular season, NBA playoffs and national competitions never share an additive total.
+ 
+-An empty scope has G = 0, counting totals = 0 and rates = N/A. Missing player coverage in a closed game makes full-period G, totals and rates N/A; known games stay visible. An absent player row is not a DNP. An explicit inactive entry or a zero-time, zero-stat nonappearance is required. A true subsecond appearance may supply `appeared: true` even if reported seconds are zero. Scheduled/canceled games are not appearances.
++An empty scope has G = 0, counting totals = 0 and rates = N/A. Missing player coverage in a closed game makes full-period G, totals and rates N/A; known games stay visible. An absent player row is not a DNP. An explicit inactive entry or a zero-time, zero-stat nonappearance is required; an inactive DNP names the result's own absence kind ("DNP: inactive (illness or personal)"), or "reason not specified" without one. A game without his box row is still a win or a loss for his club (the note's `player_team` against the result's score, or the note's own result label without a result file), so a Wins or Losses split that contains one reads N/A, like the full period, rather than a complete-looking G = 0. A true subsecond appearance may supply `appeared: true` even if reported seconds are zero. Scheduled/canceled games are not appearances.
+ 
+ The engine supplies traditional boxes, exact seconds and a `started` boolean for each player in newly played games, fixed from the actual opening five after availability and injury replacements. Every recorded start counts equally, including Wade starting while another player is injured. GS updates when the game becomes a closed career record. Wade's standing still uses closed-season totals under `runtime/standing.py`; a midseason injury start does not bypass that timing. Later rotations never change a played game's starts, and historical boxes without `started` keep GS unavailable instead of inferring it from minutes or today's depth chart.
+ 
+@@ -152,7 +154,7 @@ The reader checks event uniqueness, aliases, season/date/folder agreement, compl
+ 2. **Phase note and injuries.** The game is appended to the owning phase note (`05_Preseason/note.md`, Events) or week note (`Games and events`) with its score, result, link and injuries. Each Miami injury is appended to the player's Miami card under "Changes and coaching notes" with the date, the event and the games out; a player without a card is reported, and the phase-note line stands as his record. The game builder reads the injury from the result (`injured_out`), not from the card.
+ 3. **Wade's reports.** The reporter above rebuilds the game, week, month, season and competition pages from the played notes, with the per-game columns and the pooled percentages of this document.
+ 4. **Miami and league pages.** `Stats_and_Awards/Team/<season>/...` and `Stats_and_Awards/League/<season>/...` are aggregated from the closed regular-season results: Miami's from its played notes, the other clubs' from `Stats_and_Awards/League/<season>/Games/<game_id>.result.json`. Week and month pages summarize the closed games in their calendar buckets, the season page the whole season; every percentage is recomputed from summed makes and attempts; a player without an appearance keeps G = 0 and N/A, never zero; GS counts recorded starts when every appearance has an observed `started` value and otherwise stays N/A. Players are matched to the registry by bbr_id (from the request or the real roster file), then by name; a player in a result who is not in the registry is added as a dated registry entry (cohort `2003_04_appearance`, identity from the real rosters and the careers file only; the 407 original entries are never changed). The Miami pages keep every row that is there (departures stay) and add any Miami player who appeared. The dated "not started" lines are kept until a period has a closed game.
+-5. **Dated records on the clock.** Week and month note statuses (`not_started`, `active`, `complete`) and `current_note` follow the clock (`sync_note_statuses`); Miami's personnel cards get their role, injured-list line, 2003-04 row and rotation notes (`runtime/miami_cards.py`); the team desk's dated blocks (register availability, injured starters, record, cap position) and the conference standings page are regenerated (`runtime/team_status.py`). Validation refuses any of them stale.
++5. **Dated records on the clock.** Week and month note statuses (`not_started`, `active`, `complete`), `current_area` and `current_note` follow the clock (`sync_note_statuses`, also run by `scripts/advance.py` at the start of each regular-season day): from opening night the area is `06_Regular_Season` and the note the clock's week note, and after the regular season the playoff area keeps the last week note (the 2003-04 precedent). Phase notes close with their phase: the summer market, summer league and training-camp notes by opening night, the draft's note once its draft record exists (the draft writes its dated event, Miami's picks and draft-night trades, `runtime/draft.py`), and every phase note of an earlier season (the `03_Offseason` note owns the summer after its season, so it closes with the season); Miami's personnel cards get their role, injured-list line, 2003-04 row and rotation notes (`runtime/miami_cards.py`); the team desk's dated blocks (register availability, injured starters, record, cap position) and the conference standings page are regenerated (`runtime/team_status.py`). Validation refuses any of them stale.
+ 6. **League cards.** `scripts/build_league_cards.py --write` runs last; the cards read the same closed results and validated engine shot events. Older games remain untracked; a separate tracked-games cohort supplies complete regional rates without changing full-period totals.
+ 
+ The write-back never runs the engine, never advances time, never edits a request or a result, and never invents data (no starts, locations, tracking or results it was not given). A result dated after the clock waits and is listed as waiting. Re-running changes nothing. Validation: an existing result beside a scheduled note dated on or before the clock is an error ("unwritten result"); a played note must have its result file, its label must match the score, its result block must be present, its game must be logged in the phase note and each injury on the player's card; the Miami and league pages must match a fresh aggregation. Playoff notes under `08_Playoffs` are written back like regular-season notes (`runtime/playoffs.py` builds them); Play-In does not exist before 2019-20. Weekly, monthly and season awards close through `scripts/decide_awards.py`; the season-award voter panel, its criteria and eligibility are in the `runtime/season_awards.py` docstring and recorded with each decision in `League/2003-04/season_awards.json`.
+diff --git a/runtime/career_stats.py b/runtime/career_stats.py
+index 20365c88edf..2402443485d 100644
+--- a/runtime/career_stats.py
++++ b/runtime/career_stats.py
+@@ -54,6 +54,24 @@ def identity_at(identity: dict, as_of: str, season: str | None = None) -> dict:
+     birth = date.fromisoformat(identity["date_of_birth"])
+     age = cutoff.year - birth.year - ((cutoff.month, cutoff.day) < (birth.month, birth.day))
+     out = {**identity, **snapshot, "age": age, "report_as_of": as_of}
++    # The staff's role and the injured list on the cutoff, from their own dated records (`attach_status`). A snapshot
++    # sets a role when its text changes (training camp, the rollover's carried-over role); a later staff review in
++    # force on the cutoff replaces it. A snapshot that only copies the role forward (a number, a contract) never does.
++    ordered = sorted(snapshots, key=lambda s: s["as_of"])
++    role_set = ordered[0]["as_of"]
++    for before, after in zip(ordered, ordered[1:]):
++        if after.get("role") != before.get("role"):
++            role_set = after["as_of"]
++    review = max((r for r in identity.get("staff_roles", ()) if role_set <= r["as_of"] <= as_of
++                  and (not r.get("until") or as_of < r["until"]) and r["team"] == out.get("team")),
++                 key=lambda r: r["as_of"], default=None)
++    if review:
++        out["role"] = review["role"]
++    stint = next((e for e in identity.get("injured_list", ())
++                  if e["placed"] <= as_of and (not e.get("activated") or as_of < e["activated"])), None)
++    if stint:
++        out["availability"] = (f"Injured list since {stint['placed']}: "
++                               + "; ".join(x for x in (stint.get("injury"), stint.get("reason")) if x))
+     if "contract_terms" in identity:
+         # the season's salary and option status from its contract record (runtime/identity_contract.py)
+         from .identity_contract import line
+@@ -61,6 +79,43 @@ def identity_at(identity: dict, as_of: str, season: str | None = None) -> dict:
+     return out
+ 
+ 
++def staff_role(rotation: dict, name: str) -> str:
++    """The role a dated staff rotation gives the player: "Starting SG; staff plan 40 minutes"."""
++    minutes = next((p.get("minutes", 0) for p in rotation["players"] if p["player_id"] == name), 0)
++    positions = [pos for pos, n in rotation.get("starters", {}).items() if n == name]
++    assignment = "Starting " + "/".join(positions) if positions else "Rotation" if minutes else "Outside current rotation"
++    return f"{assignment}; staff plan {minutes:g} minutes"
++
++
++def attach_status(identity: dict, player: Path) -> dict:
++    """A copy of the identity carrying the dated records `identity_at` reads between snapshots (the audit of June 2006
++    on the career clock: every page from the 2004-11-25 review on still said "staff plan 34 minutes", and pages dated
++    on the injured list said "No current restriction"):
++    - `staff_roles`: each fortnightly staff review (`00_Team/Team/Depth_Chart/Reviews/<date>/rotation.json`) that lists
++      the player, in force from its date until the next season's camp decision (`Depth_Chart/rotation.json`), whose
++      role the camp snapshot records;
++    - `injured_list`: his stints on Miami's dated injured list (`00_Team/Transactions/injured_list.json`).
++    Read-only: it writes no record and changes no snapshot."""
++    player = Path(player)
++    name = identity.get("display_name") or identity["full_name"]
++    aliases = set(identity.get("aliases", [])) | {identity["player_id"], name}
++    seasons = sorted(p for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)
++                     and (p / "current_state.json").is_file())
++    roles, stints = [], []
++    for i, season in enumerate(seasons):
++        camp = seasons[i + 1] / "00_Team/Team/Depth_Chart/rotation.json" if i + 1 < len(seasons) else None
++        until = json.loads(camp.read_text(encoding="utf-8"))["as_of"] if camp and camp.is_file() else None
++        for path in sorted((season / "00_Team/Team/Depth_Chart/Reviews").glob("*/rotation.json")):
++            rotation = json.loads(path.read_text(encoding="utf-8"))
++            if any(p["player_id"] == name for p in rotation.get("players", [])):
++                roles.append(dict(as_of=rotation["as_of"], until=until, team=rotation.get("team"),
++                                  role=staff_role(rotation, name), source=path.relative_to(player).as_posix()))
++        ledger = season / "00_Team/Transactions/injured_list.json"
++        if ledger.is_file():
++            stints += [e for e in json.loads(ledger.read_text(encoding="utf-8")).get("entries", []) if e["player"] in aliases]
++    return {**identity, "staff_roles": roles, "injured_list": stints}
++
++
+ def normalize_line(row: dict, *, weighted_free_throws=False) -> dict:
+     """Normalize engine box fields while keeping unavailable optional values null."""
+     line = {}
+@@ -208,6 +263,9 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
+         record.update(coverage="missing_box", appearance="Unknown: missing player box")
+         result_file = meta.get("result_file")
+         if not result_file:
++            label = re.fullmatch(r"([WL]) \d+-\d+", meta.get("result") or "")
++            if label:
++                record["win"] = label.group(1) == "W"      # the note's score still classifies a game without a box
+             records.append(record)
+             continue
+         source = (note.parent / result_file).resolve()
+@@ -258,6 +316,14 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
+             record.update(team=raw[side], opponent=raw[other], venue="neutral" if raw.get("venue") == "neutral" else side,
+                           result=result_label,
+                           win=scores[side] > scores[other])
++        elif meta.get("player_team") in (raw.get("home"), raw.get("away")):
++            # Missing from the box (2003-04 preseason Games 3-7): his club's score still makes the game a win or a loss,
++            # so the Wins/Losses splits read N/A like every other split instead of a complete-looking G = 0.
++            own = "home" if raw["home"] == meta["player_team"] else "away"
++            other = "away" if own == "home" else "home"
++            if meta["result"] != f"{'W' if scores[own] > scores[other] else 'L'} {scores[own]}-{scores[other]}":
++                raise ValueError(f"{note}: score disagrees with result")
++            record["win"] = scores[own] > scores[other]
+         if matches:
+             line = normalize_line(matches[0][1], weighted_free_throws=raw.get("free_throw_mode") == "weighted")
+             if line["seconds"] > raw["game_seconds"] + .01:
+@@ -266,7 +332,10 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
+         elif inactive and listed:
+             record.update(coverage="complete", appearance=f"DNP: injured list since {listed['placed']}")
+         elif inactive:
+-            record.update(coverage="complete", appearance="DNP: inactive (reason not specified)")
++            # The result's absence entry names why he was inactive (an engine draw: "illness or personal", an injury).
++            kind = next((a.get("kind") for a in raw.get("absences", []) or []
++                         if a.get("player_id") in aliases and a.get("side") == inactive[0]), None)
++            record.update(coverage="complete", appearance=f"DNP: inactive ({kind or 'reason not specified'})")
+         # An absent player row is not evidence of either an appearance or a DNP.
+         records.append(record)
+     return sorted(records, key=lambda r: (r["date"], str(r["note"])))
+diff --git a/runtime/continuity.py b/runtime/continuity.py
+index 189c0180d7f..8c7631936ca 100644
+--- a/runtime/continuity.py
++++ b/runtime/continuity.py
+@@ -21,7 +21,8 @@ Players
+ - A player on both seasons' Miami registers keeps his identity (Basketball-Reference id and date of birth).
+ Numbers
+ - Every active Miami player has a uniform number and no two share one; Wade's number on the register is the one
+-  his dated identity carries, and it changes between seasons only through a jersey record.
++  his dated identity carries, and it changes between seasons only through a jersey record. A register without a
++  number for Wade while his dated identity carries one is a break too (a settled number stays his, `runtime/jerseys.py`).
+ 
+ `errors(root)` returns the problems (validation and the rollover's finish refuse them);
+ `python scripts/audit_continuity.py` prints them with a summary.
+@@ -180,6 +181,9 @@ def number_errors(root, season, day):
+         latest = max(snaps, key=lambda s: s["as_of"]).get("jersey")
+         if numbers.get(WADE) and latest and str(latest) != str(numbers[WADE]):
+             errors.append(f"{season}: Wade wears #{numbers[WADE]} on the register but his dated identity says #{latest}")
++        if not numbers.get(WADE) and latest:
++            # A settled number stays his (runtime/jerseys.py): a register without it would show another player in it.
++            errors.append(f"{season}: Wade has no number on the register but his dated identity says #{latest}")
+     return errors
+ 
+ 
+diff --git a/runtime/draft.py b/runtime/draft.py
+index 76c7c823293..ef2eb1b074b 100644
+--- a/runtime/draft.py
++++ b/runtime/draft.py
+@@ -755,9 +755,49 @@ def run(root=ROOT, clock=None):
+     (root / RECORD).parent.mkdir(parents=True, exist_ok=True)
+     (root / RECORD).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+     _miami_pick_ledger(root, trades)
++    phase_note(root, record, FOLDER, RECORD.name)
+     return record
+ 
+ 
++def phase_event(record, record_name):
++    """The draft's dated line for the season's phase note: the draft, Miami's picks and its draft-night trades, read from
++    the record."""
++    year = int(record["draft"][:4])
++    picks = [f"{p['player']} ({p['position']}) at No. {p['pick']} (round {p['round']})" for p in record["picks"] if p["club"] == MIAMI]
++    text = (f"The {record['draft']} was held: {len(record['picks'])} picks, {len(record['trades'])} draft-night trade(s). "
++            + ("Miami selected " + (", ".join(picks[:-1]) + " and " + picks[-1] if len(picks) > 1 else picks[0]) + "."
++               if picks else "Miami made no selection."))
++    for t in record["trades"]:
++        if t["from"] == MIAMI:
++            text += f" Miami traded No. {t['slot']} to {t['to']} for No. {t['for_slot']} and the {t['plus']}."
++        elif t["to"] == MIAMI:
++            text += f" Miami moved up to No. {t['slot']} from No. {t['for_slot']} with {t['from']}, adding its {year + 1} second-round pick."
++    calls = (record.get("keep_picks") or {}).get("calls") or []
++    if calls:
++        text += f" While Wade's keep_picks request stood Miami declined {len(calls)} trade call(s) (runtime/keep_picks.py)."
++    return text + f" Record: `{record_name}`."
++
++
++def phase_note(root, record, folder, record_name):
++    """The draft closes its phase (the audit of June 2006: the 2004 and 2005 drafts never reached their notes): a dated
++    event in `09_Draft/note.md` under '## Events' (added when missing), its status complete and a `through` date
++    moved to the draft. Idempotent."""
++    import re
++    path = Path(root) / folder / "note.md"
++    if not path.is_file():
++        return
++    text = path.read_text(encoding="utf-8")
++    line = f"- {record['date']}: {phase_event(record, record_name)}\n"
++    if line not in text:
++        head, sep, tail = text.partition("## Consequences")
++        if not re.search(r"^## Events\s*$", head, re.M):
++            head = head.rstrip() + "\n\n## Events\n"
++        text = head.rstrip() + "\n" + line + "\n" + sep + tail
++    text = re.sub(r"^status: \S+$", "status: complete", text, count=1, flags=re.M)
++    text = re.sub(r"^through: \S+$", f"through: {record['date']}", text, count=1, flags=re.M)
++    path.write_text(text, encoding="utf-8")
++
++
+ def _miami_pick_ledger(root, trades):
+     """A draft-night trade that sends Miami's next-year second-round pick away is recorded in Miami's pick ledger."""
+     path = Path(root) / f"career/Dwyane_Wade/{SEASON}/00_Team/Finances/draft_picks.json"
+diff --git a/runtime/followed_players.py b/runtime/followed_players.py
+index c9d939d0852..8cd09c5c4d0 100644
+--- a/runtime/followed_players.py
++++ b/runtime/followed_players.py
+@@ -5,7 +5,8 @@ Read-only projections of canonical records, rebuilt with the player reports. Eac
+ `foundation/followed_players.json` gets `career/<folder>/README.md` (every season) and `career/<folder>/<season>/README.md`:
+ - identity from the league player registry; club and number on the career date (`league_cards.club_on`, `jerseys.number_for`);
+ - regular-season and playoff lines from closed game results only (`write_back.closed_results`,
+-  `playoff_stats.closed_playoff_results`), with his club's record and playoff exit;
++  `playoff_stats.closed_playoff_results`), with his club's record and playoff exit, each row with his age at its own
++  cutoff (the regular season's end capped at the career date; the playoff games' dates);
+ - honors from the league's recorded award decisions, only once announced on or before the career date, and his FIBA
+   team medals from the closed tournaments' medal registers (`national_medals.medals_for`, by NBA id, from the close,
+   or by a medal's dated link to his registry row from the link date);
+@@ -222,13 +223,17 @@ def build(root=ROOT, as_of=None):
+             regular = [g for g in lines if g["competition"] == "regular"]
+             playoff = [g for g in lines if g["competition"] == "playoff"]
+             teams = sorted({g["team"] for g in regular}) or [club]
+-            s_age = str(age_on(birth, season[:4] + "-11-01")[0]) if birth else "N/A"
++            # Ages at each row's own cutoff (the audit of June 2006: a November 1 age read a year young): the regular
++            # season's end capped at the career date, and the playoff games' span (both ages when a birthday falls in it).
++            s_age = str(age_on(birth, min(as_of, _season_end(root, season)))[0]) if birth else "N/A"
++            p_ages = sorted({age_on(birth, g["date"])[0] for g in playoff}) if birth and playoff else []
++            p_age = "-".join(str(a) for a in p_ages) if p_ages else "N/A"
+             result = " / ".join(team_result(root, t, season, as_of) for t in teams if t)
+             page = folder / season / "README.md"
+             row = _row(f"[{season}]({season}/README.md)", s_age, " / ".join(t or "N/A" for t in teams), aggregate(regular), result)
+             reg_rows.append(row)
+             if playoff:
+-                po_rows.append(_row(season, s_age, playoff[0]["team"], aggregate(playoff), team_result(root, playoff[0]["team"], season, as_of)))
++                po_rows.append(_row(season, p_age, playoff[0]["team"], aggregate(playoff), team_result(root, playoff[0]["team"], season, as_of)))
+             season_honors = [[day, h] for day, h in honors(root, name, season, as_of)]
+             honor_rows += [[season, *h] for h in season_honors]
+             data = career_milestones(all_games, birth)
+@@ -246,7 +251,7 @@ def build(root=ROOT, as_of=None):
+             text += f"**Ability model this season:** {_model(entry, season)}\n\n"
+             text += "## Regular season\n\n" + _table(HEADERS, [_row(season, s_age, row[2], aggregate(regular), result)]) + "\n"
+             text += _targets(entry, season, regular)
+-            text += "## Playoffs\n\n" + (_table(HEADERS, [_row(season, s_age, playoff[0]["team"], aggregate(playoff), team_result(root, playoff[0]["team"], season, as_of))])
++            text += "## Playoffs\n\n" + (_table(HEADERS, [_row(season, p_age, playoff[0]["team"], aggregate(playoff), team_result(root, playoff[0]["team"], season, as_of))])
+                                          if playoff else "No playoff games closed.\n") + "\n"
+             text += "## Season highs (regular season)\n\n" + (_table(["Stat", "High", "Game"], _highs(regular)) if regular else "No games closed.\n") + "\n"
+             text += "## Honors\n\n" + _table(["Announced", "Honor"], season_honors, "No recorded honors this season.") + "\n"
+diff --git a/runtime/jerseys.py b/runtime/jerseys.py
+index 51f0a53336b..319c94b27e0 100644
+--- a/runtime/jerseys.py
++++ b/runtime/jerseys.py
+@@ -6,17 +6,25 @@
+   (`nba_2003_end_of_season.json`), when it is free there.
+ - Within a club a number is held once: the player already there keeps it; a later arrival whose numbers are all
+   taken takes the lowest number from 0 to 55 not in use (the equipment manager's choice; judgement, documented).
++  Another club's numbers are assigned over its effective roster on the date (`league_moves.effective_roster`) in
++  tenure order: on the club since the season's opening book first, then each arrival by the date he joined; among
++  players there equally long, one whose real number for the season is with this club goes first (the audit of June
++  2006: 38 numbers were shown twice at 24 clubs when every card took its first preference).
++- A Miami player who was on Miami's register the season before keeps his Miami number from that season before any
++  real-club number (numbers carry across seasons, AGENTS.md); the continuing players are seated first.
+ - The simulated Wade has no real number: his is set by his own request and, when another player holds it, that
+   player's answer, an engine decision draw (`Wade_Jersey/`). After a decline Wade may choose to wait for the number
+   (`Wade_Jersey/wade_choice.json`): he takes it the first date no other Miami player holds it. Until a number is
+-  settled he is "not assigned". A settled number stays his in later seasons; his requests and choice are searched
+-  from the live season back.
++  settled he is "not assigned". A settled number stays his in later seasons: the choice settles in the first season,
++  from its own on, whose register has no other holder, and is never re-checked after (the audit of June 2006: Caron
++  Butler's real 2005-06 Washington #3 had displaced it). His requests and choice are searched from the live season back.
+ """
+ import json
+ from pathlib import Path
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ BASELINE = Path("library/2003/league/nba_2003_end_of_season.json")
++REGISTRY = Path("career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json")
+ MIAMI = "Miami Heat"
+ WADE = "Dwyane Wade"
+ GONE = ("released", "traded", "signed_elsewhere", "voided", "waived", "renounced", "declined")
+@@ -32,31 +40,31 @@ def _season(root=None):
+     return active(root or ROOT)
+ 
+ 
+-def register_path(root=ROOT):
+-    return Path(f"career/Dwyane_Wade/{_season(root)}/00_Team/Team/Roster/roster.json")
++def register_path(root=ROOT, season=None):
++    return Path(f"career/Dwyane_Wade/{season or _season(root)}/00_Team/Team/Roster/roster.json")
+ 
+ 
+-def request_dirs(root=ROOT):
+-    """Wade's jersey folders, the live season first, then earlier seasons."""
++def request_dirs(root=ROOT, season=None):
++    """Wade's jersey folders, the live season (or `season`) first, then earlier seasons."""
+     from .seasons import live_seasons
+-    live = _season(root)
++    live = season or _season(root)
+     seasons = [s for s in reversed(live_seasons(root) if (Path(root) / "career/Dwyane_Wade").is_dir() else []) if s <= live] or [live]
+     return [Path(f"career/Dwyane_Wade/{s}/00_Team/Team/Roster/Wade_Jersey") for s in seasons]
+ 
+ 
+-def _jersey_files(root):
+-    """The live season's jersey file, then earlier seasons', newest first."""
++def _jersey_files(root, season=None):
++    """The live season's (or `season`'s) jersey file, then earlier seasons', newest first."""
+     from .seasons import path, previous_season
+-    season, out = _season(root), []
++    season, out = season or _season(root), []
+     while int(season[:4]) >= 2003:
+         out.append(path(season, "jerseys"))
+         season = previous_season(season)
+     return out
+ 
+ 
+-def candidates(bbr, club, root=ROOT):
++def candidates(bbr, club, root=ROOT, season=None):
+     """His numbers in order of preference for this club."""
+-    files = [_read(f, root).get("players", {}).get(bbr, []) for f in _jersey_files(root)]
++    files = [_read(f, root).get("players", {}).get(bbr, []) for f in _jersey_files(root, season)]
+     real = files[0] if files else []
+     out = [r["number"].split(",")[-1].strip() for r in real if r["club"] == club]
+     out += [r["number"].split(",")[-1].strip() for r in real if r["club"] != club]
+@@ -76,26 +84,61 @@ def candidates(bbr, club, root=ROOT):
+ CHOICE_NAME = "wade_choice.json"
+ 
+ 
+-def wade_number(root=ROOT):
++def _active(register):
++    return [p for p in register if not any(w in (p.get("status") or "") for w in GONE)]
++
++
++def _seasons_from(first, season):
++    """The seasons from `first` to `season`, oldest first."""
++    from .seasons import previous_season
++    out = [season]
++    while out[-1] > first:
++        out.append(previous_season(out[-1]))
++    return out[::-1]
++
++
++def _preferences(p, root, season, previous):
++    """A Miami player's numbers in order: his number on Miami's register the season before, when he was on it, then
++    his candidates for the season."""
++    kept = [previous[p["name"]]] if previous.get(p["name"]) else []
++    return kept + [n for n in candidates(p.get("bbr_id"), MIAMI, root, season) if n not in kept]
++
++
++def _previous_numbers(root, season):
++    """Miami's numbers on the previous season's register ({} for the first season or without that register)."""
++    from .seasons import previous_season
++    prev = previous_season(season)
++    if int(prev[:4]) < 2003 or not (Path(root) / register_path(root, prev)).is_file():
++        return {}
++    return miami_numbers(root, prev)
++
++
++def wade_number(root=ROOT, season=None):
+     """(number or None, the decision that settled it or None): an accepted request, else Wade's recorded choice to wait
+-    for a number, once no other player on Miami's register holds it."""
+-    number, source = _requested_number(root)
++    for a number, settled in the first season from the choice's own whose register has no other player holding it
++    (first preference) and his in every later season."""
++    season = season or _season(root)
++    number, source = _requested_number(root, season)
+     if number:
+         return number, source
+-    for folder in request_dirs(root):
++    for folder in request_dirs(root, season):
+         choice = _read(folder / CHOICE_NAME, root)
+         if choice.get("number"):
+-            register = _read(register_path(root), root).get("players", [])
+-            holders = [p for p in register if p["name"] != WADE and not any(w in (p.get("status") or "") for w in GONE)
+-                       and choice["number"] in candidates(p.get("bbr_id"), MIAMI, root)[:1]]
+-            if not holders:
+-                return choice["number"], CHOICE_NAME
++            for s in _seasons_from(folder.parts[2], season):
++                if not (Path(root) / register_path(root, s)).is_file():
++                    continue
++                register = _read(register_path(root, s), root).get("players", [])
++                previous = _previous_numbers(root, s)
++                holders = [p for p in _active(register) if p["name"] != WADE
++                           and choice["number"] in _preferences(p, root, s, previous)[:1]]
++                if not holders:
++                    return choice["number"], CHOICE_NAME
+             return None, None
+     return None, None
+ 
+ 
+-def _requested_number(root=ROOT):
+-    for rel in request_dirs(root):
++def _requested_number(root=ROOT, season=None):
++    for rel in request_dirs(root, season):
+         number, source = _requested_in(Path(root) / rel)
+         if number:
+             return number, source
+@@ -113,15 +156,19 @@ def _requested_in(folder):
+     return None, None
+ 
+ 
+-def assign(players, root=ROOT, fixed=None):
+-    """{key: number or None} for a club's players in tenure order: [(key, bbr, club)]. `fixed` pre-assigns keys."""
++def assign(players, root=ROOT, fixed=None, season=None, prefer=None):
++    """{key: number or None} for a club's players in tenure order: [(key, bbr, club)]. `fixed` pre-assigns keys;
++    `prefer` gives a key's own preference list in place of his candidates."""
+     fixed = dict(fixed or {})
+     taken = {n for n in fixed.values() if n}
+     out = dict(fixed)
+     for key, bbr, club in players:
+         if key in out:
+             continue
+-        number = next((n for n in candidates(bbr, club, root) if n not in taken), None) if bbr else None
++        own = (prefer or {}).get(key)
++        if own is None:
++            own = candidates(bbr, club, root, season) if bbr else []
++        number = next((n for n in own if n not in taken), None)
+         if number is None:
+             number = next(str(n) for n in range(0, 56) if str(n) not in taken)
+         out[key] = number
+@@ -129,37 +176,95 @@ def assign(players, root=ROOT, fixed=None):
+     return out
+ 
+ 
+-def miami_numbers(root=ROOT):
+-    """Miami's register on the career date: {name: number or None}; Wade only from his settled request."""
+-    register = _read(register_path(root), root).get("players", [])
+-    active = [p for p in register if not any(w in (p.get("status") or "") for w in GONE)]
+-    wade, _ = wade_number(root)
++def miami_numbers(root=ROOT, season=None):
++    """Miami's register on the career date (or `season`'s register): {name: number or None}; Wade only from his
++    settled request. Continuing players are seated first with their previous Miami number."""
++    season = season or _season(root)
++    register = _read(register_path(root, season), root).get("players", [])
++    active = _active(register)
++    previous = _previous_numbers(root, season)
++    prefer = {p["name"]: _preferences(p, root, season, previous) for p in active if p["name"] != WADE}
++    wade, _ = wade_number(root, season)
+     fixed = {WADE: wade}
+     if wade:
+-        holder = next((p["name"] for p in active if p["name"] != WADE and wade in candidates(p.get("bbr_id"), MIAMI, root)[:1]), None)
++        holder = next((p["name"] for p in active if p["name"] != WADE and wade in prefer[p["name"]][:1]), None)
+         if holder:
+             fixed[holder] = None                                        # he gave it up: a new number below
+     order = [(p["name"], p.get("bbr_id"), MIAMI) for p in active if p["name"] != WADE]
++    order.sort(key=lambda x: x[0] not in previous)                      # stable: the continuing players are there first
+     numbers = assign([x for x in order if x[0] not in fixed or fixed[x[0]] is not None], root,
+-                     {k: v for k, v in fixed.items() if v})
++                     {k: v for k, v in fixed.items() if v}, season, prefer)
+     if wade:
+         for name, value in fixed.items():
+             if value is None and name != WADE:
+-                bbr = next(p.get("bbr_id") for p in active if p["name"] == name)
+                 taken = {v for v in numbers.values() if v}
+-                numbers[name] = next((n for n in candidates(bbr, MIAMI, root) if n not in taken and n != wade),
++                numbers[name] = next((n for n in prefer[name] if n not in taken and n != wade),
+                                      next(str(n) for n in range(0, 56) if str(n) not in taken))
+     numbers.setdefault(WADE, wade)
+     return numbers
+ 
+ 
+-def number_for(bbr, club, root=ROOT):
+-    """A league card's number: Miami's from its register, others' first preference (their real club's number)."""
++_CLUBS = {}
++
++
++def club_numbers(club, on=None, root=ROOT):
++    """{bbr_id: number} for a club other than Miami on the date (default the career date), from its effective roster
++    in tenure order (`assign`): the season's opening book first, then each arrival by the date he joined (a league move,
++    a Miami departure or a disturbed club's replacement); among players there equally long, one with a real number for
++    the season with this club first, then the roster's order. None before the symmetric league, whose rosters are the
++    real ones."""
++    from .league_book import active as league_active
++    from .seasons import state
++    season = _season(root)
++    try:
++        on = on or state(season, root)["current_date"]
++    except OSError:                                         # a scaffold without the season's state
++        return None
++    if not league_active(on):
++        return None
++    key = (str(Path(root).resolve()), club, on)
++    if key not in _CLUBS:
++        from .club_replacements import read as replacements
++        from .league_moves import effective_roster, read as moves
++        from .rotations import departures_path
++        joined = {}
++        for e in _read(departures_path(season), root).get("entries", []) + replacements(season, root)["entries"]:
++            if e["club"] == club and e["from"] <= on:
++                joined[e["bbr_id"]] = max(joined.get(e["bbr_id"], ""), e["from"])
++        for e in moves(season, root)["entries"]:
++            if e.get("to") == club and e["date"] <= on:
++                joined[e["bbr_id"]] = max(joined.get(e["bbr_id"], ""), e["date"])
++        real = _read(_jersey_files(root, season)[0], root).get("players", {})
++        roster = [p for p in effective_roster(club, on, season, root) if p.get("bbr_id")]
++        order = sorted(range(len(roster)), key=lambda i: (joined.get(roster[i]["bbr_id"], ""),
++                                                          not any(r["club"] == club for r in real.get(roster[i]["bbr_id"], [])), i))
++        _CLUBS[key] = assign([(roster[i]["bbr_id"], roster[i]["bbr_id"], club) for i in order], root, season=season)
++    return _CLUBS[key]
++
++
++def _nba_id(key, root):
++    """A league registry id's NBA (Basketball-Reference) id: a later registry entry is keyed by name, not by the NBA id."""
++    ids = {p["registry_id"]: p.get("bbr_id") for p in _read(REGISTRY, root).get("players", [])}
++    return ids.get(key) or key
++
++
++def number_for(bbr, club, root=ROOT, on=None):
++    """A league card's number by the player's NBA id (or registry id): Miami's from its register; another club's from
++    its numbers on the date (`club_numbers`; a player the club holds off its roster, out for the season under contract,
++    takes his first number still free there), else, before the symmetric league, his first preference (his real club's
++    number)."""
+     if club == MIAMI:
+         # Wade's register entry carries no Basketball-Reference id (alternate history): his card's id is wadedw01.
+         register = {p.get("bbr_id") or ("wadedw01" if p["name"] == WADE else None): p["name"]
+                     for p in _read(register_path(root), root).get("players", [])}
+-        return miami_numbers(root).get(register.get(bbr))
++        return miami_numbers(root).get(register.get(bbr) or register.get(_nba_id(bbr, root)))
++    numbers = club_numbers(club, on, root)
++    if numbers is not None and bbr:
++        if bbr not in numbers:
++            bbr = _nba_id(bbr, root)
++        if bbr not in numbers:      # held off the roster (out for the season under contract): after the roster's players
++            numbers.update(assign([(bbr, bbr, club)], root, fixed=dict(numbers)))
++        return numbers[bbr]
+     pref = candidates(bbr, club, root)
+     return pref[0] if pref else None
+ 
+diff --git a/runtime/player_cards.py b/runtime/player_cards.py
+index e9689f3603a..bf36a66f201 100644
+--- a/runtime/player_cards.py
++++ b/runtime/player_cards.py
+@@ -219,8 +219,11 @@ def player_cards_data(player, identity, records, awards, clock):
+     page = player / "Stats_and_Awards/player_cards.html"
+     closed = [r for r in records if r["status"] == "played" and r["date"] <= clock]
+     shots, shot_sources = load_recorded_shots(player, identity, closed, clock)
+-    seasons = sorted({p.name for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)
+-                      and p.name[:4] + "-06-01" <= clock})
++    folders = [p for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name) and p.name[:4] + "-06-01" <= clock]
++    # A season is live once it has a current state (`player_reports.build_reports`): the season close writes the next
++    # season's expectations into its folder in June, before that season exists to report. A scaffold without any
++    # state (a test fixture) keeps every reached folder.
++    seasons = sorted({p.name for p in folders if (p / "current_state.json").is_file()} or {p.name for p in folders})
+     if not seasons:
+         seasons = sorted({r["season"] for r in closed if re.fullmatch(r"\d{4}-\d{2}", r["season"])})
+     if not seasons:
+diff --git a/runtime/player_milestones.py b/runtime/player_milestones.py
+index 7cbf55bb8a2..9ccbe51e44d 100644
+--- a/runtime/player_milestones.py
++++ b/runtime/player_milestones.py
+@@ -13,7 +13,7 @@ from pathlib import Path
+ import re
+ 
+ from .stable_json import stable
+-from .career_stats import aggregate, identity_at
++from .career_stats import aggregate, identity_at, staff_role
+ from .rookie_contract import rookie_terms
+ 
+ GENERATED = "<!-- Generated live career view; edit canonical event records and rebuild. -->\n"
+@@ -337,10 +337,7 @@ def _basketball_views(c, contract):
+                   if p.get("name", p.get("player")) == c.name]
+     role = "Unassigned rookie; staff role decision pending" if unassigned else _text(c.identity.get("role"))
+     if reviewed:
+-        minutes = next((p.get("minutes", 0) for p in rotation["players"] if p["player_id"] == c.name), 0)
+-        positions = [pos for pos, name in rotation.get("starters", {}).items() if name == c.name]
+-        assignment = "Starting " + "/".join(positions) if positions else "Rotation" if minutes else "Outside current rotation"
+-        role = f"{assignment}; staff plan {minutes:g} minutes"
++        role = staff_role(rotation, c.name)
+     offseason, camp_phase = c.phase("03_Offseason"), c.phase("04_Training_Camp")
+     c.source(offseason["path"], "Offseason player decisions and events")
+     c.source(camp_phase["path"], "Training-camp events and player response")
+diff --git a/runtime/player_reports.py b/runtime/player_reports.py
+index 25244b319fb..aab4ddf1c58 100644
+--- a/runtime/player_reports.py
++++ b/runtime/player_reports.py
+@@ -9,7 +9,7 @@ from datetime import date
+ from functools import partial
+ from pathlib import Path
+ 
+-from .career_stats import ALL_STAR_FOLDER, ALL_STAR_PATHS, NATIONAL_PATHS, aggregate, collect_games, identity_at, select
++from .career_stats import ALL_STAR_FOLDER, ALL_STAR_PATHS, NATIONAL_PATHS, aggregate, attach_status, collect_games, identity_at, select
+ from .career_dashboard import career_overview
+ from . import identity_contract
+ from .award_records import load_awards, honors_in_scope
+@@ -251,6 +251,7 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
+     config = json.loads((root / "foundation/season_structure.json").read_text(encoding="utf-8"))
+     identity = json.loads((player / "professional_identity.json").read_text(encoding="utf-8"))
+     identity = identity_contract.attach(identity, root, player)       # each season's contract terms from its record
++    identity = attach_status(identity, player)                         # staff reviews and injured list between snapshots
+     # A season is live once it has a current state; the next season's folder can exist earlier (the season close
+     # writes its expectations there) and is not a season to report yet.
+     seasons = sorted(p for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)
+diff --git a/runtime/write_back.py b/runtime/write_back.py
+index 636b68f9de3..9cda6bc2137 100644
+--- a/runtime/write_back.py
++++ b/runtime/write_back.py
+@@ -857,9 +857,16 @@ def week_span(note_path):
+     return f"{year}-{month:02d}-{first:02d}", f"{year}-{month:02d}-{last:02d}"
+ 
+ 
++CLOSED_BY_OPENING = ("01_Free_Agency", "02_Summer_League", "04_Training_Camp")
++
++
+ def expected_statuses(root=ROOT, season=None):
+     """{note path: status} for the season's preseason and regular-season week notes on the career clock:
+-    complete once the period has passed, active while the clock is inside it, not_started before it."""
++    complete once the period has passed, active while the clock is inside it, not_started before it. Phase notes close
++    with their phase (the audit of June 2006 found eight left open): the summer market, summer league and training camp
++    by opening night; the draft's once its draft record is in the folder (`runtime/draft.py` writes the event); and every
++    phase note of an earlier season, closed by the rollover. The 03_Offseason note owns the summer after its season, so
++    it closes with the season."""
+     season = season or _active_season(root)
+     root = Path(root)
+     now = clock(root)
+@@ -868,12 +875,23 @@ def expected_statuses(root=ROOT, season=None):
+     for note in sorted((base / "06_Regular_Season").glob("*/Week_*/note.md")):
+         first, last = week_span(note)
+         out[note] = "complete" if last < now else "active" if first <= now else "not_started"
+-    pre = base / "05_Preseason/note.md"
+-    if pre.is_file():
+-        from .seasons import dates
++    from .seasons import dates, live_seasons
++    pre, phases = base / "05_Preseason/note.md", []
++    if pre.is_file() or any((base / folder / "note.md").is_file() for folder in CLOSED_BY_OPENING):
+         gates = dates(season, root)
+         opening, preseason = gates["opening_night"], gates["preseason"] or gates["opening_night"]
+-        out[pre] = "complete" if now >= opening else "active" if now >= preseason else "not_started"
++        if pre.is_file():
++            out[pre] = "complete" if now >= opening else "active" if now >= preseason else "not_started"
++        if now >= opening:
++            phases += [base / folder / "note.md" for folder in CLOSED_BY_OPENING]
++    end_year = int(season[:4]) + 1
++    if (base / f"09_Draft/draft_{end_year}.json").is_file():
++        phases.append(base / "09_Draft/note.md")
++    for earlier in (s for s in live_seasons(root) if s < season):
++        phases += sorted((root / season_base(earlier)).glob("[0-9][0-9]_*/note.md"))
++    for note in phases:
++        if note.is_file() and re.search(r"^type: phase$", note.read_text(encoding="utf-8"), re.M):
++            out[note] = "complete"
+     return out
+ 
+ 
+@@ -887,7 +905,9 @@ def current_week_note(root=ROOT, season=None):
+ 
+ 
+ def sync_note_statuses(root=ROOT, season=None, write=True):
+-    """Set each period note's status and current_state.current_note to the clock. Returns the changed paths."""
++    """Set each period and phase note's status, and current_state's area and current_note, to the clock: from opening
++    night the area is the regular season and the note its week note; after the regular season the playoff area keeps the
++    last week note (the 2003-04 precedent). Returns the changed paths."""
+     season = season or _active_season(root)
+     import re
+     changed = []
+@@ -902,8 +922,13 @@ def sync_note_statuses(root=ROOT, season=None, write=True):
+     state_path = Path(root) / season_base(season) / "current_state.json"
+     if current and state_path.is_file():
+         state = read_json(state_path)
+-        if state.get("current_area") == "06_Regular_Season" and state.get("current_note") != current:
++        before = dict(state)
++        from .seasons import dates
++        if state.get("current_area") in ("04_Training_Camp", "05_Preseason") and clock(root) >= dates(season, root)["opening_night"]:
++            state["current_area"] = "06_Regular_Season"      # opening night: the week notes own the clock
++        if state.get("current_area") == "06_Regular_Season":
+             state["current_note"] = current
++        if state != before:
+             changed.append(state_path)
+             if write:
+                 state_path.write_text(json.dumps(state, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+diff --git a/scripts/advance.py b/scripts/advance.py
+index 45258533478..08ba9780049 100644
+--- a/scripts/advance.py
++++ b/scripts/advance.py
+@@ -5,7 +5,8 @@
+     python scripts/advance.py --until-champion          the playoffs to the end: stop the day the NBA Finals are decided
+ 
+ Each day runs the dated systems in order, each idempotent, so a stopped day can simply be run again:
+-  1. the clock moves to the day; the January 7 and 10 guarantee steps run on their dates;
++  1. the clock moves to the day and the note statuses, area and current note follow it (`write_back.sync_note_statuses`:
++     from opening night the regular season's week note); the January 7 and 10 guarantee steps run on their dates;
+   2. a due fortnightly staff rotation review is written, its close starting battles drawn by the engine, and
+      the review completed;
+   3. the league's market day (waivers, claims, 10-day contracts) and, on Mondays to the deadline, the trade scan,
+@@ -544,6 +545,8 @@ def advance_day(day):
+         if day >= (gates["training_camp_opens"] or day):
+             camp_day(day)
+         return close_day(day)
++    from runtime.write_back import sync_note_statuses
++    sync_note_statuses(ROOT)                             # opening night: the regular season's week note owns the day's events
+     moves = roster_moves.ctx(ROOT, day)
+     extension_day(day)                                   # an October 31 deadline after opening night
+     if day in (moves.waive_by, moves.guarantee):
+diff --git a/tests/test_audit_d.py b/tests/test_audit_d.py
+new file mode 100644
+index 00000000000..d37e7cbe5f5
+--- /dev/null
++++ b/tests/test_audit_d.py
+@@ -0,0 +1,187 @@
++"""The June 2006 audit of Wade's records (group D): the card's live season, the identity's role and availability, the
++win/loss classification of a game without a box row, the inactive label, phase and draft notes, the current note,
++uniform numbers and a followed player's row ages."""
++from copy import deepcopy
++import json
++from pathlib import Path
++import tempfile
++import unittest
++from unittest import mock
++
++from tests import live_season
++from runtime import jerseys
++from runtime.career_stats import aggregate, attach_status, collect_games, identity_at, select
++
++ROOT = Path(__file__).resolve().parents[1]
++PLAYER = ROOT / "career/Dwyane_Wade"
++IDENTITY = json.loads((PLAYER / "professional_identity.json").read_text(encoding="utf-8"))
++
++
++def write(path, text):
++    path.parent.mkdir(parents=True, exist_ok=True)
++    path.write_text(text if isinstance(text, str) else json.dumps(text), encoding="utf-8")
++    return path
++
++
++def front_matter(path):
++    head = path.read_text(encoding="utf-8").split("---\n", 2)[1]
++    return dict(line.split(": ", 1) for line in head.splitlines() if ": " in line)
++
++
++class CardSeasonTests(unittest.TestCase):
++    def test_a_season_folder_without_a_current_state_is_not_a_card_season(self):
++        from runtime.player_cards import player_cards_data
++        with tempfile.TemporaryDirectory() as tmp:
++            player = Path(tmp) / "career/Dwyane_Wade"
++            write(player / "2003-04/current_state.json", {"current_date": "2004-06-20"})
++            write(player / "2004-05/wade_expected_profile.json", {})      # the season close writes the next folder early
++            data = player_cards_data(player, deepcopy(IDENTITY), [], [], "2004-06-20")
++        self.assertEqual(data["default_period"], "regular-2003-04-season")
++        self.assertEqual(data["awards"]["default_scenario"], "2003-04")
++        self.assertEqual({p["season"] for p in data["periods"]}, {"2003-04"})
++
++
++class IdentityTests(unittest.TestCase):
++    identity = attach_status(deepcopy(IDENTITY), PLAYER)
++
++    def role(self, day):
++        return identity_at(self.identity, day)["role"]
++
++    def test_the_role_follows_the_staff_review_in_force(self):
++        self.assertEqual(self.role("2004-11-24"), "Starting SG; staff plan 34 minutes")
++        self.assertEqual(self.role("2004-11-25"), "Starting SG; staff plan 38.76 minutes")
++        self.assertEqual(self.role("2005-07-01"), "Starting SG; staff plan 39.04 minutes")    # the 2005 summer
++        self.assertEqual(self.role("2005-11-09"), "Starting SG; staff plan 40 minutes")
++        self.assertEqual(self.role("2006-06-20"), "Starting SG; staff plan 40 minutes")
++
++    def test_a_snapshot_that_sets_a_role_stands_until_the_next_review(self):
++        self.assertEqual(self.role("2003-11-06"), "Rotation; staff plan 20 minutes")         # camp
++        self.assertEqual(self.role("2004-10-01"), self.identity["snapshots"][6]["role"])     # the rollover's carried-over role
++        self.assertEqual(self.role("2005-10-27"), "Starting SG; staff plan 34 minutes")      # the 2005-06 camp
++        self.assertEqual(self.role("2003-12-02"), "Starting SG; staff plan 34 minutes")      # a copied snapshot sets nothing
++
++    def test_without_derived_records_the_snapshot_stands(self):
++        self.assertEqual(identity_at(IDENTITY, "2005-11-09")["role"], "Starting SG; staff plan 34 minutes")
++
++    def test_availability_reads_the_dated_injured_list(self):
++        on_list = identity_at(self.identity, "2004-12-25")["availability"]
++        self.assertTrue(on_list.startswith("Injured list since 2004-12-23: Fractured tibia"), on_list)
++        self.assertIn("since 2004-02-23", identity_at(self.identity, "2004-03-05")["availability"])
++        self.assertEqual(identity_at(self.identity, "2004-03-06")["availability"], IDENTITY["snapshots"][-1]["availability"])
++        self.assertNotIn("Injured", identity_at(self.identity, "2006-06-20")["availability"])
++
++
++class GameRecordTests(unittest.TestCase):
++    records = collect_games(PLAYER, IDENTITY, "2006-06-20")
++
++    def test_a_game_without_his_box_row_is_still_a_win_or_a_loss(self):
++        missing = [r for r in self.records if r["coverage"] == "missing_box"]
++        self.assertEqual(len(missing), 5)
++        self.assertTrue(all(r["win"] is False for r in missing))
++        losses = [r for r in select(self.records, competition="preseason", season="2003-04") if r.get("win") is False]
++        self.assertIsNone(aggregate(losses)["gp"])                  # the Losses split reads N/A, never G = 0
++
++    def test_an_inactive_game_names_the_results_absence_kind(self):
++        game = next(r for r in self.records if r["date"] == "2004-11-23")
++        self.assertEqual(game["appearance"], "DNP: inactive (illness or personal)")
++
++
++class NoteTests(unittest.TestCase):
++    def test_the_draft_closes_its_phase_note(self):
++        from runtime.draft import phase_note
++        record = json.loads((PLAYER / "2004-05/09_Draft/draft_2005.json").read_text(encoding="utf-8"))
++        with tempfile.TemporaryDirectory() as tmp:
++            note = write(Path(tmp) / "09_Draft/note.md", "---\ntype: phase\nstatus: not_started\nthrough: 2003-06-26\n---\n\n"
++                                                         "# Draft\n\n## Player decisions\n\nNone.\n\n## Consequences\n")
++            phase_note(tmp, record, Path("09_Draft"), "draft_2005.json")
++            phase_note(tmp, record, Path("09_Draft"), "draft_2005.json")
++            text, meta = note.read_text(encoding="utf-8"), front_matter(note)
++        self.assertEqual((meta["status"], meta["through"]), ("complete", "2005-06-28"))
++        self.assertEqual(text.count("- 2005-06-28: The 2005 NBA Draft was held"), 1)
++        self.assertIn("## Events\n- 2005-06-28:", text)
++        self.assertIn("Miami selected Uroš Slokar (F) at No. 58 (round 2).", text)
++
++    def test_the_recorded_drafts_and_closed_phases(self):
++        for season in ("2003-04", "2004-05"):
++            for folder in ("01_Free_Agency", "02_Summer_League", "03_Offseason", "04_Training_Camp", "05_Preseason", "09_Draft"):
++                self.assertEqual(front_matter(PLAYER / season / folder / "note.md")["status"], "complete", f"{season}/{folder}")
++        self.assertEqual(front_matter(PLAYER / "2005-06/04_Training_Camp/note.md")["status"], "complete")
++        self.assertIn("Dorell Wright (SF) at No. 23", (PLAYER / "2003-04/09_Draft/note.md").read_text(encoding="utf-8"))
++        self.assertIn("Uroš Slokar (F) at No. 58", (PLAYER / "2004-05/09_Draft/note.md").read_text(encoding="utf-8"))
++        for season in ("2004-05", "2005-06"):
++            state = json.loads((PLAYER / season / "current_state.json").read_text(encoding="utf-8"))
++            self.assertEqual(state["current_note"], "06_Regular_Season/04_April/Week_3/note.md")
++
++    def test_opening_night_moves_the_area_and_the_note_and_closes_the_phases(self):
++        from runtime.seasons import path as season_path
++        from runtime.write_back import sync_note_statuses
++        with tempfile.TemporaryDirectory() as tmp:
++            root = Path(tmp)
++            player = root / "career/Dwyane_Wade"
++            write(root / season_path("2005-06", "schedule"), {"games": [{"date": "2005-11-01"}, {"date": "2006-04-19"}]})
++            write(player / "2004-05/current_state.json", {"current_date": "2005-10-01"})
++            old = write(player / "2004-05/04_Training_Camp/note.md", "---\ntype: phase\nstatus: active\n---\n\n# Camp\n")
++            write(player / "2005-06/current_state.json", {"current_date": "2005-11-03", "current_area": "04_Training_Camp",
++                                                          "current_note": "04_Training_Camp/note.md"})
++            camp = write(player / "2005-06/04_Training_Camp/note.md", "---\ntype: phase\nstatus: active\n---\n\n# Camp\n")
++            draft = write(player / "2005-06/09_Draft/note.md", "---\ntype: phase\nstatus: not_started\n---\n\n# Draft\n")
++            week = write(player / "2005-06/06_Regular_Season/11_November/Week_1/note.md",
++                         "---\ntype: regular_season_week\nstatus: not_started\n---\n\n# Week\n")
++            sync_note_statuses(root, "2005-06")
++            state = json.loads((player / "2005-06/current_state.json").read_text(encoding="utf-8"))
++            self.assertEqual((state["current_area"], state["current_note"]),
++                             ("06_Regular_Season", "06_Regular_Season/11_November/Week_1/note.md"))
++            self.assertEqual([front_matter(p)["status"] for p in (week, camp, old, draft)],
++                             ["active", "complete", "complete", "not_started"])
++            self.assertEqual(sync_note_statuses(root, "2005-06", write=False), [])
++
++
++class JerseyTests(unittest.TestCase):
++    def test_wades_settled_number_stays_his(self):
++        self.assertEqual(jerseys.wade_number(ROOT, "2005-06"), ("3", jerseys.CHOICE_NAME))
++        numbers = jerseys.miami_numbers(ROOT, "2005-06")
++        self.assertEqual(numbers["Dwyane Wade"], "3")
++        held = [n for n in numbers.values() if n]
++        self.assertEqual(len(held), len(set(held)))
++
++    def test_a_continuing_player_keeps_his_miami_number(self):
++        before, after = jerseys.miami_numbers(ROOT, "2004-05"), jerseys.miami_numbers(ROOT, "2005-06")
++        for name in ("Caron Butler", "Donyell Marshall", "Mike James"):
++            self.assertEqual(after[name], before[name], name)
++        self.assertEqual(before["Brian Grant"], jerseys.miami_numbers(ROOT, "2003-04")["Brian Grant"])
++
++    def test_continuity_flags_a_register_without_wades_number(self):
++        from runtime.continuity import number_errors
++        with mock.patch("runtime.jerseys.miami_numbers", return_value={"Dwyane Wade": None, "Caron Butler": "3"}):
++            errors = number_errors(ROOT, "2005-06", "2006-06-20")
++        self.assertTrue(any("Wade has no number" in e for e in errors), errors)
++        with live_season():
++            self.assertEqual(number_errors(ROOT, "2005-06", "2006-06-20"), [])
++
++    def test_no_club_shows_a_number_twice(self):
++        from runtime.club_truth import rosters_on
++        with live_season():
++            clubs = sorted(set(rosters_on("2006-06-20", ROOT).values()))
++            for club in clubs:
++                numbers = jerseys.club_numbers(club, "2006-06-20", ROOT)
++                self.assertEqual(len(set(numbers.values())), len(numbers), club)
++            self.assertEqual(jerseys.number_for("jamesle01", "Cleveland Cavaliers", ROOT), "23")
++            self.assertNotEqual(jerseys.number_for("milesda01", "Cleveland Cavaliers", ROOT), "23")
++            # a registry id that is not the NBA id reads the NBA id's number
++            self.assertEqual(jerseys.number_for("sebastiantelfair", "Miami Heat", ROOT), jerseys.miami_numbers(ROOT)["Sebastian Telfair"])
++            self.assertEqual(jerseys.number_for("andreiguodala", "New York Knicks", ROOT), jerseys.number_for("iguodan01", "New York Knicks", ROOT))
++            # held off the roster (out for the season under contract): a number still free at his club
++            self.assertNotEqual(jerseys.number_for("jacobca01", "Phoenix Suns", ROOT), jerseys.number_for("stoudam01", "Phoenix Suns", ROOT))
++
++
++class FollowedAgeTests(unittest.TestCase):
++    def test_bosh_rows_use_their_own_cutoff_ages(self):
++        from runtime.followed_players import build
++        with live_season():
++            text = build(ROOT, "2006-06-20")[ROOT / "career/Chris_Bosh/README.md"]
++        rows = [line.split(" | ")[:2] for line in text.splitlines() if line.startswith(("| [200", "| 200"))][:6]
++        self.assertEqual([r[1] for r in rows], ["20", "21", "22", "20", "21", "22"])
++
++
++if __name__ == "__main__":
++    unittest.main()
+-- 
+2.43.0
+

@@ -1,0 +1,87 @@
+{
+ "schema_version": 1,
+ "kind": "audit_fix_groups",
+ "as_of": "2006-06-20",
+ "groups": {
+  "A_contracts": [
+   "wade-stats/WADE-STATS-01",
+   "cards-contracts/F7",
+   "cards-contracts/F4",
+   "cards-contracts/F5",
+   "cards-contracts/F6",
+   "cards-contracts/F8",
+   "cards-contracts/F9",
+   "cards-contracts/F10",
+   "ages-identity/ID-04",
+   "ages-identity/ID-07"
+  ],
+  "B_miami": [
+   "miami-stats/MIA-1",
+   "cards-contracts/F1",
+   "miami-stats/MIA-3",
+   "miami-stats/MIA-4",
+   "miami-stats/MIA-5",
+   "miami-stats/MIA-6",
+   "miami-stats/MIA-7",
+   "miami-stats/MIA-8",
+   "miami-stats/MIA-9",
+   "miami-stats/MIA-10",
+   "ages-identity/ID-03",
+   "miami-stats/MIA-11",
+   "ages-identity/AGE-02",
+   "miami-stats/MIA-12"
+  ],
+  "C_league": [
+   "league-stats/LS-1",
+   "cards-contracts/F3",
+   "league-stats/LS-3",
+   "league-stats/LS-2",
+   "ages-identity/ID-08",
+   "cards-contracts/F14",
+   "league-stats/LS-5",
+   "ages-identity/ID-05",
+   "awards-standings/F6",
+   "league-stats/LS-6",
+   "ages-identity/AGE-04",
+   "awards-standings/F7",
+   "ages-identity/ID-06",
+   "ages-identity/AGE-01",
+   "cards-contracts/F16",
+   "cards-contracts/F2",
+   "awards-standings/F2",
+   "cards-contracts/F11",
+   "cards-contracts/F15",
+   "league-stats/LS-7",
+   "awards-standings/F3",
+   "awards-standings/F9"
+  ],
+  "D_wade": [
+   "wade-stats/WADE-STATS-03",
+   "wade-stats/WADE-STATS-04",
+   "ages-identity/ID-01",
+   "wade-stats/WADE-STATS-06",
+   "wade-stats/WADE-STATS-07",
+   "wade-stats/WADE-STATS-08",
+   "wade-stats/WADE-STATS-09",
+   "critic/COMP-02",
+   "ages-identity/ID-02",
+   "miami-stats/MIA-2",
+   "cards-contracts/F12",
+   "cards-contracts/F13",
+   "ages-identity/AGE-03"
+  ],
+  "E_records": [
+   "awards-standings/F4",
+   "awards-standings/F5",
+   "awards-standings/F1",
+   "awards-standings/F8",
+   "league-stats/LS-4",
+   "critic/COMP-01",
+   "wade-stats/WADE-STATS-02",
+   "ages-identity/BIRTH-01"
+  ]
+ },
+ "not_assigned": {
+  "wade-stats/WADE-STATS-05": "refuted: follows the documented row-cutoff convention"
+ }
+}

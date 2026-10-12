@@ -1,0 +1,2074 @@
+From ad59d80a48479ff425a3a14d4fd9150faf3ab397 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 12 Oct 2026 00:22:36 +0000
+Subject: [PATCH] Audit fix b: Miami cards, register, team desk and Team pages
+
+Miami personnel cards (runtime/miami_cards.py): every season's cards are
+refreshed through their own date. The yearly statistics block is generated
+whole: imported 2002-03 rows kept (added from the league file when
+missing), each simulated season's Miami row from closed results plus the
+season with every club for split seasons, one playoff row per season and
+club from closed playoff results, a coverage line for every row and one
+percentage format. Honors come from awards.json for Wade and from the
+closed award records (rank 1) for everyone else. Ages at assessment come
+from the register's birth date; unsigned draft rights get no role. The
+register's contract term clauses follow the contract sheet (Brian Grant
+and Caron Butler, 2004-05). Each later season gets a Player_Cards index.
+
+Team desk (runtime/team_status.py): unsigned draft rights are not counted
+under contract and have no role; contracts ending June 30 are labelled
+after the regular season, with the rookie-scale qualifying-offer note.
+Stats_and_Awards/Team/README.md is generated with every season.
+
+Team pages (runtime/write_back.py team_page, period_rows): only players
+Miami held under contract in a period are listed; rights holders are named
+on not-started pages; an ended period with no game reads complete / No
+games. Closed seasons' Team pages are rebuilt by the same rules as of
+their stated date. Season Team pages state Miami's playoff record and
+link the playoff page (runtime/playoff_stats.py).
+
+Dated register facts (runtime/miami_register.py), forward-only from
+2006-06-21: Telfair's PG correction (played games keep SF), read by game
+building, rotation reviews, the need score, the desk and cards; carried
+by the 2006 rollover. Birth dates back-filled on eight register rows with
+date_of_birth_from 2006-06-21 (frozen injury ages stay null). The SF
+position guesses in rollover, signing, camp, refill and gm raise from
+2006-06-21. signing.league_identity and the rollover identity lookup read
+the prospect evidence and the researched births.
+
+team_config 2005-06 records the effective $61,700,000 ceiling with
+payroll_ceiling_through_2004_05 kept for earlier dates; gm.payroll_ceiling
+gives the same answer for every date.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01ExmaEeFA7X8K2pJG6n4PLH
+---
+ AGENTS.md                                     |   2 +
+ .../2004-05/00_Team/Team/Roster/roster.json   |  39 +-
+ .../2004-05/00_Team/team_config.json          |   2 +-
+ .../2005-06/00_Team/Team/Roster/roster.json   |  12 +-
+ .../2005-06/00_Team/team_config.json          |   5 +-
+ docs/HOW_IT_WORKS.md                          |   2 +-
+ docs/front_office_design.md                   |   2 +-
+ docs/player_statistics.md                     |   4 +-
+ runtime/camp.py                               |   3 +-
+ runtime/gm.py                                 |  13 +-
+ runtime/miami_cards.py                        | 521 +++++++++++++++---
+ runtime/miami_register.py                     |  54 ++
+ runtime/playoff_stats.py                      |  49 +-
+ runtime/refill.py                             |   3 +-
+ runtime/rollover.py                           |  78 ++-
+ runtime/rotation_reviews.py                   |   3 +-
+ runtime/season_games.py                       |   2 +
+ runtime/season_pages.py                       |   4 +-
+ runtime/signing.py                            |  70 ++-
+ runtime/team_status.py                        | 125 ++++-
+ runtime/trades.py                             |   7 +-
+ runtime/write_back.py                         | 114 +++-
+ scripts/validate_repository.py                |   2 +-
+ tests/checkpoint.py                           |   7 +-
+ tests/test_audit_b.py                         | 215 ++++++++
+ 25 files changed, 1185 insertions(+), 153 deletions(-)
+ create mode 100644 runtime/miami_register.py
+ create mode 100644 tests/test_audit_b.py
+
+diff --git a/AGENTS.md b/AGENTS.md
+index 4969440b5ca..041ea4415c5 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -42,6 +42,8 @@ Organization files record basketball decision makers only. Business-side staff a
+ 
+ Roster means the current team-control register at the stated date. Expiring contracts, pending options, draft rights and unavailable players must be labeled rather than silently treated as guaranteed active players.
+ 
++A register fact found wrong after games were played is never rewritten in place: the row keeps what those games read and carries the correction with its effective date (`date_of_birth_from`, `positions_corrected` from `positions_corrected_from`; `runtime/miami_register.py`), and a missing position stops the writer instead of being guessed from 2006-06-21.
++
+ Contracts, clubs, players and uniform numbers carry across seasons intact (`runtime/continuity.py`, `python scripts/audit_continuity.py`): a carried contract keeps its signed schedule and is never re-dated, no player under contract disappears without a record, no player is on two clubs, identities stay fixed, and every active Miami player has a unique number with Wade's matching his dated identity. Validation and the rollover refuse any break.
+ 
+ Depth chart is a working basketball view, not a user choice and not a promise of minutes. At the June 26 checkpoint it carries the just-completed 2002-03 positional order and leaves the two new draft picks unassigned until the coaching staff makes a new decision.
+diff --git a/career/Dwyane_Wade/2004-05/00_Team/Team/Roster/roster.json b/career/Dwyane_Wade/2004-05/00_Team/Team/Roster/roster.json
+index a81c409a765..bcf09bd073c 100644
+--- a/career/Dwyane_Wade/2004-05/00_Team/Team/Roster/roster.json
++++ b/career/Dwyane_Wade/2004-05/00_Team/Team/Roster/roster.json
+@@ -36,7 +36,7 @@
+    "date_of_birth": "1972-03-05",
+    "college": "Xavier",
+    "status": "under_contract",
+-   "control": "Existing contract: 1 season(s) from 2004-05, $13,233,434 scheduled ($13,233,434 in 2004-05).",
++   "control": "Existing contract: 3 season(s) from 2004-05, $43,008,660 scheduled ($13,233,434 in 2004-05).",
+    "working_role": "Starter at C, staff plan 34 minutes (rotation 2005-04-14)",
+    "player_card": "../Player_Cards/brian_grant.md",
+    "bbr_id": "grantbr01"
+@@ -110,7 +110,7 @@
+    "date_of_birth": "1980-03-13",
+    "college": "UConn",
+    "status": "under_contract",
+-   "control": "Existing contract: 1 season(s) from 2004-05, $1,930,680 scheduled ($1,930,680 in 2004-05).",
++   "control": "Existing contract: 2 season(s) from 2004-05, $4,392,297 scheduled ($1,930,680 in 2004-05).",
+    "working_role": "Rotation at SF, staff plan 11 minutes (rotation 2005-04-14)",
+    "player_card": "../Player_Cards/caron_butler.md",
+    "bbr_id": "butleca01"
+@@ -138,7 +138,10 @@
+    "player_card": "../Player_Cards/dorell_wright.md",
+    "bbr_id": "wrighdo01",
+    "status": "under_contract",
+-   "control": "Signed July 1, 2004 (rookie_scale): 3 season(s) from 2004-05, $3,156,240 scheduled ($978,720 in 2004-05)."
++   "control": "Signed July 1, 2004 (rookie_scale): 3 season(s) from 2004-05, $3,156,240 scheduled ($978,720 in 2004-05).",
++   "date_of_birth": "1985-12-02",
++   "date_of_birth_from": "2006-06-21",
++   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/2004/league/nba_2004_prospect_evidence.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
+   },
+   {
+    "id": "john_thomas",
+@@ -150,7 +153,10 @@
+    "player_card": "../Player_Cards/john_thomas.md",
+    "bbr_id": "thomajo02",
+    "status": "under_contract",
+-   "control": "Signed August 19, 2004 (minimum): 1 season(s) from 2004-05, $932,546 scheduled ($932,546 in 2004-05)."
++   "control": "Signed August 19, 2004 (minimum): 1 season(s) from 2004-05, $932,546 scheduled ($932,546 in 2004-05).",
++   "date_of_birth": "1975-09-08",
++   "date_of_birth_from": "2006-06-21",
++   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/careers/nba_player_births.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
+   },
+   {
+    "id": "maurice_evans",
+@@ -162,7 +168,10 @@
+    "player_card": "../Player_Cards/maurice_evans.md",
+    "bbr_id": "evansma01",
+    "status": "under_contract",
+-   "control": "Signed August 5, 2004 (minimum): 1 season(s) from 2004-05, $720,046 scheduled ($720,046 in 2004-05)."
++   "control": "Signed August 5, 2004 (minimum): 1 season(s) from 2004-05, $720,046 scheduled ($720,046 in 2004-05).",
++   "date_of_birth": "1978-11-08",
++   "date_of_birth_from": "2006-06-21",
++   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/careers/nba_player_births.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
+   },
+   {
+    "id": "udonis_haslem",
+@@ -187,7 +196,10 @@
+    "player_card": "../Player_Cards/maurice_baker.md",
+    "bbr_id": "bakerma01",
+    "status": "under_contract",
+-   "control": "Signed July 15, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05)."
++   "control": "Signed July 15, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05).",
++   "date_of_birth": "1979-07-28",
++   "date_of_birth_from": "2006-06-21",
++   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/careers/nba_player_births.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
+   },
+   {
+    "id": "john_edwards",
+@@ -199,7 +211,10 @@
+    "player_card": "../Player_Cards/john_edwards.md",
+    "bbr_id": "edwarjo01",
+    "status": "under_contract",
+-   "control": "Signed July 22, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05)."
++   "control": "Signed July 22, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05).",
++   "date_of_birth": "1981-07-31",
++   "date_of_birth_from": "2006-06-21",
++   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/careers/nba_player_births.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
+   },
+   {
+    "id": "bernard_robinson",
+@@ -211,7 +226,10 @@
+    "player_card": "../Player_Cards/bernard_robinson.md",
+    "bbr_id": "robinbe01",
+    "status": "rights_released",
+-   "control": "June 28, 2005: Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40). He is no longer under Miami's control."
++   "control": "June 28, 2005: Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40). He is no longer under Miami's control.",
++   "date_of_birth": "1980-12-26",
++   "date_of_birth_from": "2006-06-21",
++   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/2004/league/nba_2004_prospect_evidence.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
+   },
+   {
+    "id": "christian_drejer",
+@@ -223,7 +241,10 @@
+    "player_card": "../Player_Cards/christian_drejer.md",
+    "bbr_id": "drejech01",
+    "status": "rights_released",
+-   "control": "June 28, 2005: Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40). He is no longer under Miami's control."
++   "control": "June 28, 2005: Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40). He is no longer under Miami's control.",
++   "date_of_birth": "1982-12-08",
++   "date_of_birth_from": "2006-06-21",
++   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from library/2004/league/nba_2004_prospect_evidence.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
+   },
+   {
+    "id": "stephen_jackson",
+diff --git a/career/Dwyane_Wade/2004-05/00_Team/team_config.json b/career/Dwyane_Wade/2004-05/00_Team/team_config.json
+index 709a73f28ea..0cab864e57a 100644
+--- a/career/Dwyane_Wade/2004-05/00_Team/team_config.json
++++ b/career/Dwyane_Wade/2004-05/00_Team/team_config.json
+@@ -28,7 +28,7 @@
+  "budget": {
+   "payroll_ceiling": 57000000,
+   "tax_tolerance": "none",
+-  "basis": "Judgement (docs/front_office_design.md 5.2): the owner holds 2003-04 payroll at the July 2003 luxury-tax projection and pays no tax."
++  "basis": "Judgement (docs/front_office_design.md 5.2): the owner holds payroll at the July 2003 luxury-tax projection and pays no tax; runtime/gm.FrontOffice.payroll_ceiling applies it through 2004-05 (from 2005-06 the season's tax line)."
+  },
+  "projection": {
+   "wins": null,
+diff --git a/career/Dwyane_Wade/2005-06/00_Team/Team/Roster/roster.json b/career/Dwyane_Wade/2005-06/00_Team/Team/Roster/roster.json
+index 228a8abdfc8..aef4f8b2279 100644
+--- a/career/Dwyane_Wade/2005-06/00_Team/Team/Roster/roster.json
++++ b/career/Dwyane_Wade/2005-06/00_Team/Team/Roster/roster.json
+@@ -165,7 +165,12 @@
+    "player_card": "../Player_Cards/sebastian_telfair.md",
+    "bbr_id": "telfase01",
+    "status": "under_contract",
+-   "control": "Existing contract: 2 season(s) from 2005-06, $2,090,520 scheduled ($1,010,040 in 2005-06)."
++   "control": "Existing contract: 2 season(s) from 2005-06, $2,090,520 scheduled ($1,010,040 in 2005-06).",
++   "positions_corrected": [
++    "PG"
++   ],
++   "positions_corrected_from": "2006-06-21",
++   "positions_correction_basis": "The SF was the registry's appearance placeholder when he joined at the 2005-10-01 rollover; the registry corrected him to PG on 2005-12-31 (player_registry.json sebastiantelfair, library/2004/league/nba_2004_05_team_rosters.json; library/2005/league/nba_2005_06_team_rosters.json also lists PG). Miami's games, reviews and decisions through 2006-06-20 read SF and keep it as played; PG is in force from 2006-06-21 (runtime/miami_register.py)."
+   },
+   {
+    "id": "eddie_gill",
+@@ -216,7 +221,10 @@
+    "player_card": "../Player_Cards/uros_slokar.md",
+    "bbr_id": "slokaur01",
+    "status": "unsigned_draft_rights",
+-   "control": "Unsigned draft rights: No. 58 pick of the 2005 draft."
++   "control": "Unsigned draft rights: No. 58 pick of the 2005 draft.",
++   "date_of_birth": "1983-05-14",
++   "date_of_birth_from": "2006-06-21",
++   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from library/2005/league/nba_2005_prospect_evidence.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
+   },
+   {
+    "id": "theo_ratliff",
+diff --git a/career/Dwyane_Wade/2005-06/00_Team/team_config.json b/career/Dwyane_Wade/2005-06/00_Team/team_config.json
+index 1332d4eb80f..615672f7908 100644
+--- a/career/Dwyane_Wade/2005-06/00_Team/team_config.json
++++ b/career/Dwyane_Wade/2005-06/00_Team/team_config.json
+@@ -26,9 +26,10 @@
+   "Do not import the later 2003 coaching change before its event date."
+  ],
+  "budget": {
+-  "payroll_ceiling": 57000000,
++  "payroll_ceiling": 61700000,
+   "tax_tolerance": "none",
+-  "basis": "Judgement (docs/front_office_design.md 5.2): the owner holds 2003-04 payroll at the July 2003 luxury-tax projection and pays no tax."
++  "basis": "Judgement (docs/front_office_design.md 5.2): the owner pays no luxury tax. From 2005-06 the ceiling is the season's tax line, $61,700,000 for 2005-06 (library/2005/league/nba_2005_06_cap_rules.json, luxury_tax_line; runtime/gm.FrontOffice.payroll_ceiling); payroll_ceiling_through_2004_05 is the July 2003 luxury-tax projection that held 2003-04 and 2004-05 payroll. Recorded on the 2006-06-20 audit: the rollover had copied the 2003-04 figure forward; gm.py already applied the tax line for every 2005-06 date, so no decision changes.",
++  "payroll_ceiling_through_2004_05": 57000000
+  },
+  "projection": {
+   "wins": null,
+diff --git a/docs/HOW_IT_WORKS.md b/docs/HOW_IT_WORKS.md
+index 8bfdb37202d..d671912e0d9 100644
+--- a/docs/HOW_IT_WORKS.md
++++ b/docs/HOW_IT_WORKS.md
+@@ -66,7 +66,7 @@ Commit in batches, about every couple of weeks of career time or at any stop tha
+   - Contention and role come from every club's roster **on the date, with him on it**.
+   - Weights depend on age and on a drawn trait. The gap between the two scores sets the accept, counter and reject odds, and the engine draws the answer.
+ - **Miami's GM** (`runtime/gm.py`).
+-  - **Ceiling.** Plans under a $57M owner payroll ceiling with no tax.
++  - **Ceiling.** Plans under the owner's payroll ceiling with no tax: the July 2003 $57M projection through 2004-05, each season's luxury-tax line from 2005-06 (recorded in that season's `team_config.json` by the rollover).
+   - **Holds and exceptions.** Handles cap holds, the mid-level exception and Bird rights.
+   - **Later seasons.** Every later season of an offer must also fit under the ceiling.
+   - **Valuation.** Walks away above its valuation.
+diff --git a/docs/front_office_design.md b/docs/front_office_design.md
+index e2562bd27fc..77cee455d63 100644
+--- a/docs/front_office_design.md
++++ b/docs/front_office_design.md
+@@ -107,7 +107,7 @@ The cap sheet (`00_Team/Finances/finance.json`, `contract_schedules.json`, `free
+ 
+ ### 5.2 Budget
+ 
+-`team_config.json` gains the owner's **payroll ceiling** for the season and a **tax tolerance** (whether the club will pay the dollar-for-dollar tax at all). For 2003, Miami's evidence is a club cutting payroll with about $7 million of room before June 30 (*judgement*: ceiling at the projected tax line, no tax).
++`team_config.json` gains the owner's **payroll ceiling** for the season and a **tax tolerance** (whether the club will pay the dollar-for-dollar tax at all). For 2003, Miami's evidence is a club cutting payroll with about $7 million of room before June 30 (*judgement*: ceiling at the projected tax line, no tax). From 2005-06 the ceiling is the season's own luxury-tax line (`gm.FrontOffice.payroll_ceiling`); the rollover records it as the season's `payroll_ceiling`, and the July 2003 figure the earlier seasons used stays as `payroll_ceiling_through_2004_05` (`rollover.season_budget`).
+ 
+ ### 5.2a Standing roster and payroll rules
+ 
+diff --git a/docs/player_statistics.md b/docs/player_statistics.md
+index 791a5e1a687..fc9445628b5 100644
+--- a/docs/player_statistics.md
++++ b/docs/player_statistics.md
+@@ -151,8 +151,8 @@ The reader checks event uniqueness, aliases, season/date/folder agreement, compl
+ 1. **Game notes.** Every Miami note under `05_Preseason` and `06_Regular_Season/<month>/Week_N` whose `result_file` exists beside it, whose status is still `scheduled` and whose date is on or before the career clock becomes `played`: `result` gets the label from Miami's side (`W 95-90`), the body gets a `<!-- game-result -->` block with the score, opponent, venue, the plain-text box score (`runtime/boxscore.py`), the result file reference and the Miami injuries the result reports with games out. `simulation_source`, `event_id` and `result_file` stay; the request and result files are never edited. A preseason result is marked as evidence for the preseason record and the camp decisions only; it never enters regular-season statistics.
+ 2. **Phase note and injuries.** The game is appended to the owning phase note (`05_Preseason/note.md`, Events) or week note (`Games and events`) with its score, result, link and injuries. Each Miami injury is appended to the player's Miami card under "Changes and coaching notes" with the date, the event and the games out; a player without a card is reported, and the phase-note line stands as his record. The game builder reads the injury from the result (`injured_out`), not from the card.
+ 3. **Wade's reports.** The reporter above rebuilds the game, week, month, season and competition pages from the played notes, with the per-game columns and the pooled percentages of this document.
+-4. **Miami and league pages.** `Stats_and_Awards/Team/<season>/...` and `Stats_and_Awards/League/<season>/...` are aggregated from the closed regular-season results: Miami's from its played notes, the other clubs' from `Stats_and_Awards/League/<season>/Games/<game_id>.result.json`. Week and month pages summarize the closed games in their calendar buckets, the season page the whole season; every percentage is recomputed from summed makes and attempts; a player without an appearance keeps G = 0 and N/A, never zero; GS counts recorded starts when every appearance has an observed `started` value and otherwise stays N/A. Players are matched to the registry by bbr_id (from the request or the real roster file), then by name; a player in a result who is not in the registry is added as a dated registry entry (cohort `2003_04_appearance`, identity from the real rosters and the careers file only; the 407 original entries are never changed). The Miami pages keep every row that is there (departures stay) and add any Miami player who appeared. The dated "not started" lines are kept until a period has a closed game.
+-5. **Dated records on the clock.** Week and month note statuses (`not_started`, `active`, `complete`) and `current_note` follow the clock (`sync_note_statuses`); Miami's personnel cards get their role, injured-list line, 2003-04 row and rotation notes (`runtime/miami_cards.py`); the team desk's dated blocks (register availability, injured starters, record, cap position) and the conference standings page are regenerated (`runtime/team_status.py`). Validation refuses any of them stale.
++4. **Miami and league pages.** `Stats_and_Awards/Team/<season>/...` and `Stats_and_Awards/League/<season>/...` are aggregated from the closed regular-season results: Miami's from its played notes, the other clubs' from `Stats_and_Awards/League/<season>/Games/<game_id>.result.json`. Week and month pages summarize the closed games in their calendar buckets, the season page the whole season; every percentage is recomputed from summed makes and attempts; a player without an appearance keeps G = 0 and N/A, never zero; GS counts recorded starts when every appearance has an observed `started` value and otherwise stays N/A. Players are matched to the registry by bbr_id (from the request or the real roster file), then by name; a player in a result who is not in the registry is added as a dated registry entry (cohort `2003_04_appearance`, identity from the real rosters and the careers file only; the 407 original entries are never changed). The Miami pages keep every row that is there of a player Miami held under contract in the period (departures stay for their games) and add any Miami player who appeared; a row of a player Miami never held under contract in the period (a free agent whose rights it kept, an unsigned or never-signed draft pick, a voided camp contract) is dropped (`write_back.contract_holdings`, from `Roster/holdings.json`). A period that has not started lists the register's players under contract and names, in its status line, the rights Miami holds without a contract; an ended period with no Miami game reads "complete; no Miami game" and lists the players Miami held under contract in it, and period tables call it "No games", never "Not started". Closed seasons' Team pages are rebuilt by the same rules as of the date their season page states (`write_back.closed_team_pages`). Each season's Team page states Miami's playoff record in its Playoffs section and links `Playoffs/Team_Playoff_Stats.md` (`playoff_stats.team_season_section`); `Stats_and_Awards/Team/README.md` lists every season with its records (`team_status.team_stats_readme`).
++5. **Dated records on the clock.** Week and month note statuses (`not_started`, `active`, `complete`) and `current_note` follow the clock (`sync_note_statuses`); Miami's personnel cards, every season's, are refreshed from the records (`runtime/miami_cards.py`): the live season's register players get their role, injured-list line and rotation notes (a player holding unsigned draft rights has no role); every card gets its yearly statistics block generated whole through its date (the imported 2002-03 row, then each simulated season's Miami row from closed results and, for an earlier season he did not spend whole with Miami, his line with every club from the league's season totals; one playoff row per season and club from closed playoff results, the playoff pages' aggregation; a coverage line naming every row; one percentage format), its honors (Wade's from `awards.json`, everyone else's from the closed award records at rank 1), the age at assessment from the register's birth date, a position under a dated register correction and a changed control line. A departed player's card, and every card of a closed season, keeps the date it states; a card never refreshed since its import stands as written. The register's contract term clauses follow the contract sheet (`miami_cards.refresh_control_texts`). The team desk's dated blocks (register availability, injured starters, record, cap position, contracts ending June 30 after the regular season with a rookie-scale qualifying-offer note; rights held without a contract are neither counted under contract nor given a role) and the conference standings page are regenerated (`runtime/team_status.py`). Validation refuses any of them stale.
+ 6. **League cards.** `scripts/build_league_cards.py --write` runs last; the cards read the same closed results and validated engine shot events. Older games remain untracked; a separate tracked-games cohort supplies complete regional rates without changing full-period totals.
+ 
+ The write-back never runs the engine, never advances time, never edits a request or a result, and never invents data (no starts, locations, tracking or results it was not given). A result dated after the clock waits and is listed as waiting. Re-running changes nothing. Validation: an existing result beside a scheduled note dated on or before the clock is an error ("unwritten result"); a played note must have its result file, its label must match the score, its result block must be present, its game must be logged in the phase note and each injury on the player's card; the Miami and league pages must match a fresh aggregation. Playoff notes under `08_Playoffs` are written back like regular-season notes (`runtime/playoffs.py` builds them); Play-In does not exist before 2019-20. Weekly, monthly and season awards close through `scripts/decide_awards.py`; the season-award voter panel, its criteria and eligibility are in the `runtime/season_awards.py` docstring and recorded with each decision in `League/2003-04/season_awards.json`.
+diff --git a/runtime/camp.py b/runtime/camp.py
+index 942d4c4e363..6506a50825c 100644
+--- a/runtime/camp.py
++++ b/runtime/camp.py
+@@ -15,6 +15,7 @@ import json
+ from pathlib import Path
+ 
+ from .kernel import POSITIONS
++from .miami_register import required_position
+ from .valuation import REPLACEMENT_EFF_PER_GAME, age_on, read
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+@@ -96,7 +97,7 @@ def invite(on, front_office, market, root=ROOT):
+             continue
+         if value < INVITE_MIN_VALUE and not (age is not None and age <= INVITE_YOUNG_AGE and value >= REPLACEMENT_EFF_PER_GAME):
+             continue
+-        pos = positions.get(bbr, "SF")
++        pos = required_position(positions.get(bbr), on, p["player"])
+         rows.append({"player": p["player"], "bbr_id": bbr, "position": pos, "age": age, "value": round(value, 2),
+                      "fit": front_office.fit(pos, needs), "score": round(value * front_office.fit(pos, needs), 3),
+                      "salary": market.valuation.signing_minimum(p.get("nba_seasons_before_2003_04")),
+diff --git a/runtime/gm.py b/runtime/gm.py
+index b80d26c0f94..6fda99af40b 100644
+--- a/runtime/gm.py
++++ b/runtime/gm.py
+@@ -11,6 +11,7 @@ import json
+ from pathlib import Path
+ 
+ from .contracts import counted_amount
++from .miami_register import required_position, with_positions_on
+ from .standing import STANDING_WEIGHT
+ from .trades import SIGN_AND_TRADE_RIGHTS
+ from .valuation import read
+@@ -46,7 +47,9 @@ class FrontOffice:
+         self.config = read(TEAM / "team_config.json", root)
+         self.sheet = read(TEAM / "Finances/contract_schedules.json", root)
+         self.rights = read(TEAM / "Finances/free_agent_rights.json", root)
+-        self.roster = read(TEAM / "Team/Roster/roster.json", root)
++        roster = read(TEAM / "Team/Roster/roster.json", root)
++        # a dated position correction counts from its date (`miami_register.positions_on`): earlier needs read as made
++        self.roster = dict(roster, players=with_positions_on(roster["players"], on))
+         self.depth = read(TEAM / "Team/Depth_Chart/depth_chart.json", root)
+         self.budget = self.config.get("budget", {})
+ 
+@@ -123,14 +126,16 @@ class FrontOffice:
+     def payroll_ceiling(self):
+         """The owner's ceiling: no luxury tax (`team_config.budget`, tax_tolerance "none"). Through 2004-05 the July 2003
+         projection as recorded; from 2005-06 the season's own tax line, which the 2005 agreement fixes before the season
+-        (`cap_rules.luxury_tax_line`; the season-change audit found the 2003 figure carried forever)."""
++        (`cap_rules.luxury_tax_line`; the season-change audit found the 2003 figure carried forever). A config from 2005-06
++        on records the season's effective ceiling as `payroll_ceiling` and keeps the July 2003 figure, which a date in an
++        earlier season still reads, as `payroll_ceiling_through_2004_05` (the audit of 2006-06-20; no answer changes)."""
+         from .seasons import live_season_on, path as season_path
+         season = live_season_on(self.on, self.root)
+         if self.budget.get("tax_tolerance", "none") == "none" and season >= "2005-06":
+             line = read(season_path(season, "cap_rules"), self.root).get("luxury_tax_line")
+             if line:
+                 return int(line)
+-        return self.budget.get("payroll_ceiling", 57000000)
++        return self.budget.get("payroll_ceiling_through_2004_05", self.budget.get("payroll_ceiling", 57000000))
+ 
+     # -- needs ---------------------------------------------------------------------------------
+     def roster_values(self):
+@@ -206,7 +211,7 @@ class FrontOffice:
+             if own is None:
+                 continue
+             ask = self.market.asking(bbr, self.on)
+-            pos = positions.get(bbr, "SF")
++            pos = required_position(positions.get(bbr), self.on, p["player"])
+             surplus = (own - ask["first_year"]) / max(ask["first_year"], 1)
+             weight = round(self.fit(pos, needs) * self.skill_fit(bbr), 3)
+             # Contribution above replacement per dollar, with a star premium (quality^1.5): one star
+diff --git a/runtime/miami_cards.py b/runtime/miami_cards.py
+index cec6362fb23..0f098f6c0e8 100644
+--- a/runtime/miami_cards.py
++++ b/runtime/miami_cards.py
+@@ -1,20 +1,41 @@
+ """Keep Miami's personnel cards current with the season (Player_Cards/*.md).
+ 
+-The cards were written at the June 26, 2003 import. Through the season this refresh rewrites only the dated,
+-record-owned parts of each card on Miami's register, from the owning records:
+-- **Role** and "Not yet established": the latest dated rotation (camp `Depth_Chart/rotation.json`, then each
+-  `Depth_Chart/Reviews/<date>/rotation.json`) and the injured list (`Transactions/injured_list.json`);
+-- the header's "Statistics through" date and the 2003-04 row of the regular-season table: closed results
+-  (`write_back.miami_lines`), the same evidence as the Team pages;
+-- the coverage sentence, and one "Changes and coaching notes" row per rotation review that set his role.
+-Grades, scouting text, sources and the history of earlier rows are never touched. A player no longer on the
+-register keeps his card as it stood.
++The cards were written at the June 26, 2003 import, at each rollover and on each arrival. This refresh rewrites only the
++dated, record-owned parts of each card, from the owning records, for every season on file:
++
++- **Role** and "Not yet established" (the live season's register players only): the latest dated rotation (camp
++  `Depth_Chart/rotation.json`, then each `Depth_Chart/Reviews/<date>/rotation.json`) and the injured list
++  (`Transactions/injured_list.json`), with one "Changes and coaching notes" row per rotation review that set his role.
++  A player whose draft rights are unsigned is not on the roster and has no role.
++- the header: the "Statistics through" date (the live season's register players), a position under a dated register
++  correction (`miami_register.positions_on`), the age at the opening assessment from the register's birth date, and
++  the Contract/control line when the register's control text has changed (`signing.card_control_line`);
++- the yearly statistics block, generated whole: earlier real rows kept as imported (the 2002-03 line added from the
++  league's statistics file when the card lacks it), then every simulated season to the card's: his Miami row from closed
++  Miami results (`write_back.miami_lines`) and, for an earlier season he did not spend whole with Miami, his line with
++  every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`); one
++  playoff row per season and club from closed playoff results (`playoff_stats.player_lines`, the playoff pages'
++  aggregation); a coverage line naming every row; one percentage format (45.2%);
++- **Awards and honors**: honors earned in the simulated league through the card date: Wade's from `awards.json`, every
++  other player's from the closed award decisions, All-Star selections and FIBA medal registers (the league cards'
++  honors at rank 1, `league_cards.CardContext`).
++
++The card date is the career date for the live season's register players. A player no longer on the register, and every
++card of a closed season, keeps the date the card states: only its header facts, statistics and honors are regenerated
++through that date. A card never refreshed since its import (a date written as "June 26, 2003") stands as written.
++Grades, scouting text, sources and coaching notes are never touched. `refresh` also keeps each register's contract term
++clauses equal to its contract sheet (`refresh_control_texts`) and writes each later season's card index
++(`Player_Cards/README.md`; the 2003-04 one is the import's).
+ """
++from datetime import date
+ import json
++import os
+ from pathlib import Path
+ import re
+ 
+ ROOT = Path(__file__).resolve().parents[1]
++FIRST_SIMULATED = "2003-04"
++MIAMI = "Miami Heat"
+ 
+ 
+ def _season(root=None):
+@@ -25,6 +46,12 @@ def _season(root=None):
+ def team_dir(season):
+     return Path(f"career/Dwyane_Wade/{season}/00_Team/Team")
+ GONE = ("released", "traded", "signed_elsewhere", "voided", "waived", "renounced", "declined")
++COLUMNS = ["Season", "Team(s)", "G", "GS", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TOV", "FG%", "3P%", "FT%"]
++START, END = "<!-- yearly-statistics:start -->", "<!-- yearly-statistics:end -->"
++SIMULATED_SOURCE = ("Simulated seasons from closed results: Miami's games (MIA rows), and an earlier season's line with every "
++                    "club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).")
++PRIOR_SOURCE = "2002-03 from the [league statistics file](../../../../../../library/2003/league/nba_2002_03_player_stats.json)."
++RIGHTS_ROLE = "not on the roster (unsigned draft rights); no rotation role"
+ 
+ 
+ def _read(path):
+@@ -90,76 +117,430 @@ def season_row(records, season):
+             per("blk"), per("tov"), _pct(t("fgm"), t("fga")), _pct(t("tpm"), t("tpa")), _pct(t("ftm"), t("fta"))]
+ 
+ 
++def totals_row(season, label, t):
++    """A row from a season-totals record (the league's closed season totals, or the 2002-03 statistics file)."""
++    g = t.get("games") or 0
++    per = lambda v: "N/A" if not g else f"{(v or 0) / g:.1f}"
++    three_m = t.get("three_point_field_goals_made", t.get("three_pointers_made"))
++    three_a = t.get("three_point_field_goals_attempted", t.get("three_pointers_attempted"))
++    return [season, label, str(g), str(t["games_started"]) if t.get("games_started") is not None else "N/A",
++            per(t.get("minutes")), per(t.get("points")), per((t.get("offensive_rebounds") or 0) + (t.get("defensive_rebounds") or 0)),
++            per(t.get("assists")), per(t.get("steals")), per(t.get("blocks")), per(t.get("turnovers")),
++            _pct(t.get("field_goals_made") or 0, t.get("field_goals_attempted")), _pct(three_m or 0, three_a),
++            _pct(t.get("free_throws_made") or 0, t.get("free_throws_attempted"))]
++
++
++def percent_cell(cell):
++    """One percentage format in the FG%, 3P% and FT% columns: an imported decimal (0.461, .461, 1.000) as 46.1%;
++    anything else unchanged."""
++    if re.fullmatch(r"[01]?\.\d+", cell or "") and float(cell) <= 1:
++        return f"{100 * float(cell):.1f}%"
++    return cell
++
++
++def _iso(text):
++    """An ISO date from a card's date cell ('2006-06-20' or 'October 1, 2004'), else None."""
++    text = (text or "").strip()
++    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", text):
++        return text
++    m = re.fullmatch(r"([A-Z][a-z]+) (\d{1,2}), (\d{4})", text)
++    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
++              "November", "December"]
++    if m and m.group(1) in months:
++        return f"{m.group(3)}-{months.index(m.group(1)) + 1:02d}-{int(m.group(2)):02d}"
++    return None
++
++
++def _age(born, on):
++    b, d = date.fromisoformat(born), date.fromisoformat(on)
++    return d.year - b.year - ((d.month, d.day) < (b.month, b.day))
++
++
++def _key(name):
++    from .write_back import _key as key
++    return key(name)
++
++
++def _table(rows):
++    return "\n".join(["| " + " | ".join(COLUMNS) + " |", "| " + " | ".join(["---", "---"] + ["---:"] * 12) + " |"]
++                     + ["| " + " | ".join(r) + " |" for r in rows])
++
++
++class Sources:
++    """Closed results and records the cards read, loaded once per run (each season's in full, cut by card date)."""
++
++    def __init__(self, root):
++        from .seasons import live_seasons
++        self.root = Path(root)
++        self.live = _season(root)
++        self.seasons = [s for s in live_seasons(root) if FIRST_SIMULATED <= s <= self.live] or [self.live]
++        self._lines, self._playoffs, self._totals, self._honors, self._prior = {}, {}, {}, None, None
++
++    def miami(self, season):
++        """{name key: [records]} of Miami's closed regular-season games of the season."""
++        if season not in self._lines:
++            from .write_back import miami_lines
++            lines, _ = miami_lines(self.root, season, "9999-12-31")
++            out = {}
++            for name, records in lines.items():
++                out.setdefault(_key(name), []).extend(records)
++            self._lines[season] = out
++        return self._lines[season]
++
++    def playoffs(self, season):
++        """{name key: {club: [records]}} of the season's closed playoff games, every club's."""
++        if season not in self._playoffs:
++            out = {}
++            try:
++                from .playoff_stats import closed_playoff_results, player_lines
++                for (name, club), records in player_lines(closed_playoff_results(self.root, season, "9999-12-31"),
++                                                          self.root, season).items():
++                    out.setdefault(_key(name), {}).setdefault(club, []).extend(records)
++            except (OSError, KeyError):
++                pass
++            self._playoffs[season] = out
++        return self._playoffs[season]
++
++    def totals(self, season):
++        """{bbr_id: record} of a closed season's simulated totals, else {}."""
++        if season not in self._totals:
++            from .season_evidence import totals_path
++            path = self.root / totals_path(season)
++            self._totals[season] = {r["bbr_id"]: r for r in _read(path)["records"]} if path.is_file() else {}
++        return self._totals[season]
++
++    def prior(self, bbr):
++        """His 2002-03 record from the league's statistics file, or None."""
++        if self._prior is None:
++            path = self.root / "library/2003/league/nba_2002_03_player_stats.json"
++            self._prior = {r["bbr_id"]: r for r in _read(path)["records"]} if path.is_file() else {}
++        return self._prior.get(bbr)
++
++    def honors(self, name, through):
++        """[(season, label, announced, source path from the repository root)] earned through `through`, by date."""
++        if name == "Dwyane Wade":
++            path = self.root / "career/Dwyane_Wade/awards.json"
++            awards = _read(path)["awards"] if path.is_file() else []
++            out = [(a["season"], f"{a['name']} ({a['period_start']} to {a['period_end']})", a["awarded_on"],
++                    "career/Dwyane_Wade/" + a["source"]) for a in awards
++                   if a.get("status") == "earned" and a["awarded_on"] <= through]
++            return sorted(out, key=lambda h: (h[2], h[1]))
++        if self._honors is None:
++            from .league_cards import CardContext
++            try:
++                self._honors = CardContext(self.root).honors
++            except (OSError, KeyError, ValueError):
++                self._honors = {}
++        from .seasons import season_of_date
++        out = []
++        for h in self._honors.get(_key(name), []):
++            if h.get("rank") != 1 or h.get("superseded") or h["announced_on"] > through:
++                continue
++            label = f"{h.get('conference', '')} {h['name']}".strip()
++            if h.get("medal"):
++                label += f" ({h['medal']['country']})"
++            elif h.get("period_start") != h.get("period_end"):
++                label += f" ({h['period_start']} to {h['period_end']})"
++            out.append((season_of_date(h["announced_on"]), label, h["announced_on"],
++                        h["filed_on"] + (f"#{h['anchor']}" if h.get("anchor") else "")))
++        return sorted(out, key=lambda h: (h[2], h[1]))
++
++
++def _rows_in(block):
++    """The rows of the first statistics table (Season, Team(s), ...) in `block`; the veteran details table is not one."""
++    m = re.search(r"^\| Season \| Team\(s\) \|[^\n]*\n\| ---[^\n]*\n((?:\|[^\n]*\n?)*)", block, flags=re.M)
++    return [[c.strip() for c in line.strip().strip("|").split("|")] for line in (m.group(1).splitlines() if m else [])
++            if re.match(r"^\| \d{4}-\d{2} \|", line)]
++
++
++def _source_line(old, simulated, added_prior):
++    """The regular-season Source line: the imported part of the card's own line (one with a library link), the
++    2002-03 file when this refresh added that row, then the simulated seasons."""
++    text = old[len("Source: "):] if old.startswith("Source: ") else ""
++    added_prior = added_prior or PRIOR_SOURCE in text                    # added by an earlier refresh
++    text = text.split(PRIOR_SOURCE)[-1].split("Simulated seasons from closed results")[0]
++    pre = text.split(";")[0].strip().rstrip(".")
++    parts = ([pre + "."] if "](" in pre else []) + ([PRIOR_SOURCE] if added_prior else []) + ([SIMULATED_SOURCE] if simulated else [])
++    return "Source: " + " ".join(parts) if parts else old
++
++
++def yearly_block(src, player, text, season, through, wade=False):
++    """The card's yearly statistics block (between the markers), generated from closed results through `through`."""
++    from .career_stats import aggregate
++    from .seasons import dates, read as season_file
++    block = text[text.index(START) + len(START):text.index(END)]
++    regular = block.split("## Playoff statistics by year")[0]
++    details = re.search(r"<!-- veteran-details:start -->.*?<!-- veteran-details:end -->", regular, flags=re.S)
++    source = next((line for line in regular.splitlines() if line.startswith("Source: ")), "")
++    key, bbr = _key(player["name"]), player.get("bbr_id") or ("wadedw01" if wade else None)
++    rows = [r[:11] + [percent_cell(c) for c in r[11:]] for r in _rows_in(regular) if r[0] < FIRST_SIMULATED]
++    added_prior = False
++    if not rows and not wade and bbr and src.prior(bbr):
++        line = src.prior(bbr)
++        rows.append(totals_row("2002-03", "/".join(line.get("team_codes") or []) or "N/A", line["totals"]))
++        added_prior = True
++    if wade:
++        cover = ["No NBA season before 2003-04 (the alternate-history Wade; the historical Wade's statistics are never imported)"]
++    elif rows and rows[0][2] not in ("0", "N/A"):
++        cover = [f"{rows[0][0]} regular season from the league record; earlier seasons are not imported"]
++    elif rows:
++        cover = [f"{rows[0][0]}: no appearance in the league record; earlier seasons are not imported"]
++    else:
++        cover = ["No 2002-03 NBA record on this card"]
++    simulated = False
++    for s in [x for x in src.seasons if x <= season]:
++        upto = through if s == season else "9999-12-31"
++        mia = season_row([r for r in src.miami(s).get(key, []) if r["date"] <= upto], s)
++        # his season with every club: an earlier season's, or the card's own once its regular season is over
++        ended = s < season or through > dates(s, src.root)["regular_season_end"]
++        league = src.totals(s).get(bbr) if ended and bbr else None
++        clubs = ", ".join(league.get("team_codes") or []) if league else ""
++        whole = bool(league) and (not mia or (league["totals"].get("games") or 0) > int(mia[2]))
++        simulated = simulated or bool(mia) or whole
++        if mia:
++            rows.append(mia)
++        if whole:
++            rows.append(totals_row(s, clubs + (" (season, every club)" if mia else ""), league["totals"]))
++        if s == season:
++            if through < dates(s, src.root)["opening_night"]:
++                cover.append(f"{s} had not started on {through}")
++            elif mia:
++                cover.append(f"{s}: {mia[2]} closed Miami game(s) through {through}"
++                             + (f", and his season with every club ({clubs}) from the league record" if whole else ""))
++            elif whole:
++                cover.append(f"{s}: no Miami appearance through {through}; {clubs} from the league record")
++            else:
++                cover.append(f"{s}: no Miami appearance through {through}")
++            if not mia and not whole:
++                rows.append([s, "MIA", "0"] + ["N/A"] * 11)        # G 0: an empty appearance record from Miami's results
++                simulated = True
++        elif mia and whole:
++            cover.append(f"{s}: {mia[2]} Miami game(s), and his season with every club ({clubs}) from the league record")
++        elif mia:
++            cover.append(f"{s}: {mia[2]} Miami game(s) from closed results")
++        elif whole:
++            cover.append(f"{s}: {clubs} from the league record")
++    out = ["", "## Regular-season statistics by year", "",
++           "G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided "
++           "by total attempts.", "", f"**Coverage:** {'; '.join(cover)}.", "", _table(rows), ""]
++    if details:
++        out += [details.group(0), ""]
++    new_source = _source_line(source, simulated, added_prior)
++    if new_source:
++        out += [new_source, ""]
++    out += ["## Playoff statistics by year", ""]
++    prow = []
++    pct = lambda v: "N/A" if v is None else f"{v:.1%}"
++    n = lambda v, k=1: "N/A" if v is None else f"{v:.{k}f}"
++    for s in [x for x in src.seasons if x <= season]:
++        upto = through if s == season else "9999-12-31"
++        for club, records in sorted(src.playoffs(s).get(key, {}).items(), key=lambda kv: (kv[0] != MIAMI, kv[0])):
++            a = aggregate([r for r in records if r["date"] <= upto])
++            if not a["gp"]:
++                continue
++            pg, rt = a["pg"], a["rates"]
++            prow.append([s, club, str(a["gp"]), n(a["gs"], 0), n(pg["minutes"]), n(pg["pts"]), n(pg["reb"]), n(pg["ast"]),
++                         n(pg["stl"]), n(pg["blk"]), n(pg["tov"]), pct(rt["fg_pct"]), pct(rt["three_pct"]), pct(rt["ft_pct"])])
++    try:
++        openers = min(season_file(season, "playoff_rules", src.root)["calendar"]["first_round"]["openers"])
++    except (OSError, KeyError, ValueError):
++        openers = None
++    waiting = f" The {season} playoffs had not started on {through}." if openers and through < openers else ""
++    if prow:
++        out += [f"**Coverage:** playoff games from closed results through {through}, every club's (`runtime/playoff_stats.py`, "
++                f"the playoff pages' aggregation); playoff history before 2003-04 is not imported.{waiting}", "",
++                _table(prow), ""]
++    else:
++        out += [f"**Coverage:** no appearance in a closed simulated playoff game through {through}; playoff history before "
++                f"2003-04 is not imported.{waiting}", ""]
++    return "\n".join(out) + "\n"
++
++
++def awards_section(src, player, through, card_dir):
++    """The card's last section: honors earned in the simulated league through `through`."""
++    honors = src.honors(player["name"], through)
++    basis = ("`awards.json`" if player["name"] == "Dwyane Wade" else
++             "the league's closed award decisions, All-Star selections and FIBA medal registers")
++    head = ["## Awards and honors", ""]
++    if not honors:
++        return "\n".join(head + [f"No honor earned in the simulated league through {through} (from {basis}). Awards "
++                                 "before 2003-04 are not imported.", ""])
++    rows = ["| Season / year | Award or honor | Announced | Source |", "| --- | --- | --- | --- |"]
++    for season, label, announced, path in honors:
++        target, _, anchor = path.partition("#")
++        link = Path(os.path.relpath(src.root / target, card_dir)).as_posix() + (f"#{anchor}" if anchor else "")
++        rows.append(f"| {season} | {label} | {announced} | [Record]({link}) |")
++    return "\n".join(head + [f"{len(honors)} honor(s) earned in the simulated league through {through}, from {basis}. "
++                             "Awards before 2003-04 are not imported.", ""] + rows + [""])
++
++
++def _role_lines(new, root, season, now, p, rots):
++    """The live season's Role, "Not yet established" and rotation notes for a register player."""
++    name = p["name"]
++    rights = p.get("status") == "unsigned_draft_rights"
++    latest = [r for r in rots if r[0] <= now]
++    if not latest:
++        return new
++    day, rot, src = latest[-1]
++    if rights:
++        new = re.sub(r"^\*\*Role:\*\*.*$", lambda _: f"**Role:** {RIGHTS_ROLE[0].upper() + RIGHTS_ROLE[1:]} (register, {now}).",
++                     new, count=1, flags=re.M)
++        new = re.sub(r"^- \*\*Not yet established:\*\*.*$",
++                     "- **Not yet established:** a contract; the staff assigns no role while his draft rights are unsigned.",
++                     new, count=1, flags=re.M)
++        # The staff's rotations never planned him: their earlier notes named him a reserve.
++        new = re.sub(r"^(\| (\d{4}-\d{2}-\d{2}) \| Staff rotation of \2: )[^|]*\.( \| \[Rotation\]\([^)]*\) \|)$",
++                     lambda m: m.group(1) + RIGHTS_ROLE + "." + m.group(3), new, flags=re.M)
++    else:
++        role = role_in(rot, name)
++        hurt = injured_on(root, name, now, season)
++        extra = (f" On the injured list since {hurt['placed']} ({hurt['reason']})." if hurt else "")
++        new = re.sub(r"^\*\*Role:\*\*.*$",
++                     lambda _: f"**Role:** {role[0].upper() + role[1:]} (staff rotation dated {day}, [record]({src})).{extra}",
++                     new, count=1, flags=re.M)
++        new = re.sub(r"^- \*\*Not yet established:\*\*.*$",
++                     f"- **Not yet established:** closing role and Miami staff grades beyond the camp review. "
++                     f"Rotation role and minute target: staff rotation dated {day}.", new, count=1, flags=re.M)
++    # One dated note per staff rotation that set his role (idempotent: a date already noted is skipped).
++    for rday, rrot, rsrc in latest:
++        marker = f"Staff rotation of {rday}"
++        if marker in new or "## Changes and coaching notes" not in new:
++            continue
++        note = f"| {rday} | {marker}: {RIGHTS_ROLE if rights else role_in(rrot, name)}. | [Rotation]({rsrc}) |"
++        new = re.sub(r"(## Changes and coaching notes\n\n\| Date \|[^\n]*\n\| ---[^\n]*\n(?:\|[^\n]*\n)*)",
++                     lambda m: m.group(1) + note + "\n", new, count=1)
++    return new
++
++
++def _header(new, p, through, roster_as_of):
++    """Header facts from the register: a dated position correction, the age at assessment, the control line."""
++    from .miami_register import positions_on
++    from .signing import card_control_line
++    if p.get("positions_corrected_from"):
++        pos = " / ".join(positions_on(p, through))
++        new = re.sub(r"(\*\*Position:\*\* )[^\n]*?( {2})?$", lambda m: m.group(1) + pos + (m.group(2) or ""), new, count=1, flags=re.M)
++    opened = _iso((re.search(r"\*\*Opening assessment:\*\* ([^·\n]*)", new) or [None, ""])[1])
++    if p.get("date_of_birth") and opened and "**Age at assessment:** N/A" in new:
++        new = new.replace("**Age at assessment:** N/A", f"**Age at assessment:** {_age(p['date_of_birth'], opened)}", 1)
++    m = re.search(r"^\*\*Contract/control:\*\* (.*?) \(register, [^)]*\) \[Finance record\]", new, flags=re.M)
++    if p.get("control") and m and m.group(1) != p["control"]:
++        new = re.sub(r"^\*\*Contract/control:\*\*[^\n]*$", lambda _: card_control_line(p["control"], roster_as_of), new,
++                     count=1, flags=re.M)
++    return new
++
++
++def control_texts(root, season):
++    """(register, names changed): the season's register with each contract term clause ('N season(s) from S, $T
++    scheduled ($X in S)', `rollover.contract_head`) recomputed from the season's contract sheet. A schedule repaired after
++    the rollover wrote the text left it short (Brian Grant's and Caron Butler's 2004-05 rows, found by the audit of
++    2006-06-20). Text only: no decision reads it."""
++    from .rollover import CONTRACT_HEAD, contract_head
++    base = Path(root) / f"career/Dwyane_Wade/{season}/00_Team"
++    path, sheet_path = base / "Team/Roster/roster.json", base / "Finances/contract_schedules.json"
++    if not path.is_file():
++        return None, []
++    register = _read(path)
++    if not sheet_path.is_file():
++        return register, []
++    sheet = _read(sheet_path)["players"]
++    by_id = {c["bbr_id"]: c for c in sheet if c.get("bbr_id")}
++    by_name = {c["player"]: c for c in sheet}
++    changed = []
++    for p in register["players"]:
++        m = CONTRACT_HEAD.search(p.get("control") or "")
++        entry = (by_id.get(p.get("bbr_id")) if p.get("bbr_id") else None) or by_name.get(p["name"])
++        if not m or not entry:
++            continue
++        head = contract_head(entry.get("schedule") or {}, m.group(2))
++        if head != m.group(0):
++            p["control"] = p["control"].replace(m.group(0), head, 1)
++            changed.append(p["name"])
++    return register, changed
++
++
++def refresh_control_texts(root=ROOT, season=None, write=True):
++    """`control_texts` written to the register. Returns the names changed."""
++    season = season or _season(root)
++    register, changed = control_texts(root, season)
++    if changed and write:
++        path = Path(root) / team_dir(season) / "Roster/roster.json"
++        path.write_text(json.dumps(register, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
++    return changed
++
++
++def card_index(root, season, roster, on):
++    """`Player_Cards/README.md` of a season: every card on its register with its position on `on` and control status
++    (generated)."""
++    from .miami_register import positions_on
++    rows = []
++    for p in roster["players"]:
++        card = Path(p.get("player_card", "")).name
++        if (Path(root) / team_dir(season) / "Player_Cards" / card).is_file():
++            rows.append(f"| [{p['name']}]({card}) | {'/'.join(positions_on(p, on))} | {(p.get('status') or '').replace('_', ' ')} |")
++    return "\n".join([f"# Miami Heat player cards | {season}", "",
++                      "<!-- contract-navigation:start -->",
++                      "[Current contracts and contract history for every tracked player](../../../../Contracts/index.html)",
++                      "<!-- contract-navigation:end -->", "",
++                      f"Every player on the {season} team-control [register](../Roster/roster.json) has a personnel card in the "
++                      "[template](TEMPLATE.md)'s section order: scouting report, player grades, changes and coaching notes, "
++                      "sources and uncertainty, regular-season statistics, playoff statistics, then awards. A player who left "
++                      "keeps his card as it stood on his last date; statistics and honors come from closed results and award "
++                      "records only (`runtime/miami_cards.py`). Pos and control are the register's.", "",
++                      "| Player | Pos | Control |", "| --- | --- | --- |", *rows, ""])
++
++
+ def refresh(root=ROOT, write=True):
+-    """Refresh every register player's card. Returns the changed card paths."""
++    """Refresh every season's register cards, control texts and card index. Returns the changed paths."""
+     root = Path(root)
+-    from .write_back import clock, miami_lines
++    from .write_back import clock
+     now = clock(root)
+-    season = _season(root)
+-    TEAM = team_dir(season)
+-    roster = _read(root / TEAM / "Roster/roster.json")
+-    lines, games = miami_lines(root, season, now)
+-    rots = rotations(root, season)
++    src = Sources(root)
+     changed = []
+-    for p in roster["players"]:
+-        if any(w in (p.get("status") or "") for w in GONE):
+-            continue
+-        card = root / TEAM / "Player_Cards" / Path(p.get("player_card", "")).name
+-        if not card.is_file():
++    for season in src.seasons:
++        TEAM = team_dir(season)
++        roster, fixed = control_texts(root, season)
++        if roster is None:
+             continue
+-        name = p["name"]
+-        text = card.read_text(encoding="utf-8")
+-        new = text
+-        latest = [r for r in rots if r[0] <= now]
+-        if latest:
+-            day, rot, src = latest[-1]
+-            role = role_in(rot, name)
+-            hurt = injured_on(root, name, now)
+-            extra = (f" On the injured list since {hurt['placed']} ({hurt['reason']})." if hurt else "")
+-            new = re.sub(r"^\*\*Role:\*\*.*$",
+-                         f"**Role:** {role[0].upper() + role[1:]} (staff rotation dated {day}, [record]({src})).{extra}",
+-                         new, count=1, flags=re.M)
+-            new = re.sub(r"^- \*\*Not yet established:\*\*.*$",
+-                         f"- **Not yet established:** closing role and Miami staff grades beyond the camp review. "
+-                         f"Rotation role and minute target: staff rotation dated {day}.", new, count=1, flags=re.M)
+-            # One dated note per staff rotation that set his role (idempotent: a date already noted is skipped).
+-            for rday, rrot, rsrc in latest:
+-                marker = f"Staff rotation of {rday}"
+-                if marker in new or "## Changes and coaching notes" not in new:
+-                    continue
+-                note = f"| {rday} | {marker}: {role_in(rrot, name)}. | [Rotation]({rsrc}) |"
+-                new = re.sub(r"(## Changes and coaching notes\n\n\| Date \|[^\n]*\n\| ---[^\n]*\n(?:\|[^\n]*\n)*)",
+-                             lambda m: m.group(1) + note + "\n", new, count=1)
+-        new = re.sub(r"\*\*Statistics through:\*\* [^\n·]*", f"**Statistics through:** {now} ", new, count=1)
+-        row = season_row(lines.get(name, []), season)
+-        cells = row or [season, "Miami Heat", "0"] + ["N/A"] * 11
+-        line = "| " + " | ".join(cells) + " |"
+-        if re.search(rf"^\| {season} \|", new, flags=re.M):
+-            new = re.sub(rf"^\| {season} \|[^\n]*$", line, new, count=1, flags=re.M)
+-        else:                                                         # a new season's row goes after the last one
+-            new = re.sub(r"(## Regular-season statistics by year\n(?:(?!\n## )[\s\S])*?\| Season \|[^\n]*\n\| ---[^\n]*\n(?:\|[^\n]*\n)*)",
+-                         lambda m: m.group(1) + line + "\n", new, count=1)
+-        tail = (f"{season}: {row[2]} closed Miami game(s) through {now}." if row else
+-                f"{season}: no Miami appearance through {now}.")
+-        # The generated coverage line only: the 2003 import's wording, or "Closed Miami results" on later cards.
+-        cov = re.search(r"^\*\*Coverage:\*\* (?:2002-03 regular season imported\.|Closed Miami results)[^\n]*$", new, flags=re.M)
+-        if cov:
+-            text_cov = cov.group(0)
+-            if f"; {season}:" in text_cov:
+-                updated = text_cov[:text_cov.index(f"; {season}:")] + "; " + tail
+-            else:
+-                updated = text_cov.rstrip(".") + "; " + tail if text_cov.endswith(".") else text_cov + "; " + tail
+-            new = new[:cov.start()] + updated + new[cov.end():]
+-        if new != text:
+-            changed.append(card)
++        if fixed:
++            changed.append(root / TEAM / "Roster/roster.json")
+             if write:
+-                card.write_text(new, encoding="utf-8")
++                refresh_control_texts(root, season)
++        rots = rotations(root, season) if season == src.live else []
++        for p in roster["players"]:
++            card = root / TEAM / "Player_Cards" / Path(p.get("player_card", "")).name
++            if not card.is_file() or card.name in ("TEMPLATE.md", "README.md"):
++                continue
++            text = card.read_text(encoding="utf-8")
++            if START not in text or END not in text or "## Awards and honors" not in text:
++                continue
++            new = text
++            if season == src.live and not any(w in (p.get("status") or "") for w in GONE):
++                through = now
++                new = _role_lines(new, root, season, now, p, rots)
++                new = re.sub(r"\*\*Statistics through:\*\* [^\n·]*", f"**Statistics through:** {now} ", new, count=1)
++            else:
++                stated = re.search(r"\*\*Statistics through:\*\* ([^\n·]*)", text)
++                through = stated.group(1).strip() if stated else ""
++                if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", through):
++                    continue                           # never refreshed since its import: it stands as written
++            new = _header(new, p, through, roster.get("as_of"))
++            new = (new[:new.index(START) + len(START)] + "\n" + yearly_block(src, p, new, season, through, p["name"] == "Dwyane Wade")
++                   + new[new.index(END):])
++            new = new[:new.index("## Awards and honors")] + awards_section(src, p, through, card.parent)
++            if new != text:
++                changed.append(card)
++                if write:
++                    card.write_text(new, encoding="utf-8")
++        index = root / TEAM / "Player_Cards/README.md"
++        if season != FIRST_SIMULATED:
++            text = card_index(root, season, roster, now)
++            if not index.is_file() or index.read_text(encoding="utf-8") != text:
++                changed.append(index)
++                if write:
++                    index.write_text(text, encoding="utf-8")
+     return changed
+ 
+ 
+-GONE = ("released", "traded", "signed_elsewhere", "voided", "waived", "renounced", "declined")
+-
+-
+ def sync_register_roles(root=ROOT, write=True, season=None):
+     """Miami's register `working_role` follows the staff's latest dated rotation and the injured list on the career date
+     (the user's request, October 2026: no stale arrival or camp labels once the staff has set roles). Returns the names
+diff --git a/runtime/miami_register.py b/runtime/miami_register.py
+new file mode 100644
+index 00000000000..7dc675716f0
+--- /dev/null
++++ b/runtime/miami_register.py
+@@ -0,0 +1,54 @@
++"""Dated facts on Miami's register rows (`<season>/00_Team/Team/Roster/roster.json`).
++
++A register row is read by played games' frozen inputs (`game_requests.freeze`), the staff's rotation reviews and the
++front office's need score, so a fact found wrong after games were played is never rewritten in place: the row keeps
++the value those games read and carries the correction with the date it takes effect, the way `date_of_birth_from`
++already does for a birth date recorded later (`injuries.simulated_ages`). Every reader that selects by position asks
++`positions_on(row, day)`; a reader with no date (a page) asks it with the career date.
++
++- **Position corrections:** `positions_corrected` (the corrected list), `positions_corrected_from` (the first date it is
++  in force) and `positions_correction_basis`. Before that date the row's `positions` stand; from it, the correction.
++  The season rollover carries the corrected list into the next season's register (`rollover.Rollover.register`).
++- **Missing positions:** a reader that once filled a missing position with "SF" (an arrival's register row, a camp or
++  refill candidate, a free-agent target, a departing player's previous share) asks `required_position`: through
++  POSITION_GUESS_UNTIL it still answers "SF", so every recorded decision replays unchanged; from the day after, a
++  missing position stops the writer with the player's name instead of being guessed (the audit of 2006-06-20).
++"""
++from __future__ import annotations
++
++POSITION_GUESS_UNTIL = "2006-06-20"       # the last career date on which a missing position was filled with "SF"
++GUESSED_POSITION = "SF"
++
++
++def positions_on(row, day):
++    """The row's positions on `day` (ISO date): its dated correction from `positions_corrected_from`, else `positions`."""
++    start = row.get("positions_corrected_from")
++    if start and day and day >= start and row.get("positions_corrected"):
++        return list(row["positions_corrected"])
++    return list(row.get("positions") or [])
++
++
++def with_positions_on(rows, day):
++    """Register rows with each row's `positions` as they stand on `day` (copies; the rows themselves are unchanged)."""
++    return [dict(r, positions=positions_on(r, day)) if r.get("positions_corrected_from") else r for r in rows]
++
++
++def carried(row, day):
++    """A register row carried into a new season on `day`: a correction in force by then becomes its `positions`."""
++    out = dict(row)
++    if row.get("positions_corrected_from") and day >= row["positions_corrected_from"]:
++        out["positions"] = positions_on(row, day)
++        for key in ("positions_corrected", "positions_corrected_from", "positions_correction_basis"):
++            out.pop(key, None)
++    return out
++
++
++def required_position(value, day, who):
++    """`value` when a source gave one; on or before POSITION_GUESS_UNTIL the old "SF" guess (recorded decisions replay
++    as they were made); later a ValueError naming the player, so the gap is filled from a source instead of guessed."""
++    if value:
++        return value
++    if day and day <= POSITION_GUESS_UNTIL:
++        return GUESSED_POSITION
++    raise ValueError(f"{who}: no position in any identity source on {day}; record his position (registry, rosters or "
++                     "prospect evidence) instead of guessing one")
+diff --git a/runtime/playoff_stats.py b/runtime/playoff_stats.py
+index 5186a4587b1..fc124e7ef7f 100644
+--- a/runtime/playoff_stats.py
++++ b/runtime/playoff_stats.py
+@@ -16,6 +16,7 @@ from __future__ import annotations
+ from collections import defaultdict
+ import json
+ from pathlib import Path
++import re
+ 
+ from .career_stats import aggregate
+ 
+@@ -204,8 +205,48 @@ def team_page(root=ROOT, season=None, now=None):
+     return "\n".join(out).rstrip() + "\n"
+ 
+ 
++def season_team_page_path(season):
++    return PLAYER_DIR / f"Stats_and_Awards/Team/{season}/Team_Stats.md"
++
++
++PLAYOFF_SECTION = re.compile(r"^## Playoffs\n\n.*?\n\n(?=Departures retain|\[)", re.M | re.S)
++
++
++def team_season_section(root=ROOT, season=None, now=None):
++    """The '## Playoffs' section of Miami's season Team page: its playoff record from the bracket and the closed Miami
++    playoff games, linked to the playoff statistics page (the regular-season tables above never take playoff games)."""
++    season = season or _active_season(root)
++    from .playoffs import read
++    root = Path(root)
++    record = read(root, season)
++    rows = [r["result"] for r in closed_playoff_results(root, season, now) if MIAMI in (r["result"]["home"], r["result"]["away"])]
++    wins = sum(1 for g in rows if g["final_score"]["home" if g["home"] == MIAMI else "away"]
++               > g["final_score"]["away" if g["home"] == MIAMI else "home"])
++    series = [s for s in (record or {}).get("series", []) if MIAMI in s["clubs"]]
++    links = (f"[Miami's playoff statistics](Playoffs/Team_Playoff_Stats.md) (series, games and players) · "
++             f"[bracket](../../League/{season}/Playoffs.md). Playoff games stay out of the regular-season tables above.")
++    if not series:                                      # a bracket without Miami: it did not qualify
++        if (record or {}).get("series"):
++            return f"## Playoffs\n\nMiami did not qualify for the {season} playoffs.\n\n"
++        return f"## Playoffs\n\nThe {season} playoffs have not started. {links}\n\n"
++    parts = []
++    for s in series:
++        other = next(c for c in s["clubs"] if c != MIAMI)
++        state = (f"{'won' if s['winner'] == MIAMI else 'lost'} {s['wins'][MIAMI]}-{s['wins'][other]} against {other}"
++                 if s.get("winner") else f"{s['wins'][MIAMI]}-{s['wins'][other]} against {other}, in progress")
++        parts.append(f"{ROUND_LABELS[s['round']]} {state}")
++    champion = " Miami won the NBA championship." if (record or {}).get("champion") == MIAMI else ""
++    return (f"## Playoffs\n\n{len(rows)} closed Miami playoff game(s), {wins}-{len(rows) - wins}: " + "; ".join(parts)
++            + f".{champion} {links}\n\n")
++
++
++def with_team_section(text, section):
++    """The season Team page with its Playoffs section replaced (the page's tables are the write-back's)."""
++    return PLAYOFF_SECTION.sub(lambda _: section, text, count=1)
++
++
+ def pages(root=ROOT, season=None, now=None):
+-    """{path: text} for both pages, or {} before the playoffs are seeded."""
++    """{path: text} for both pages and the season Team page's Playoffs section, or {} before the playoffs are seeded."""
+     season = season or _active_season(root)
+     from .playoffs import read
+     root = Path(root)
+@@ -215,7 +256,11 @@ def pages(root=ROOT, season=None, now=None):
+     if close.is_file():                     # a closed season's pages stand as of its close, whatever the clock says
+         from .write_back import clock
+         now = min(now or clock(root), json.loads(close.read_text(encoding="utf-8"))["close_date"])
+-    return {root / league_page_path(season): league_page(root, season, now), root / team_page_path(season): team_page(root, season, now)}
++    out = {root / league_page_path(season): league_page(root, season, now), root / team_page_path(season): team_page(root, season, now)}
++    season_page = root / season_team_page_path(season)
++    if season_page.is_file():
++        out[season_page] = with_team_section(season_page.read_text(encoding="utf-8"), team_season_section(root, season, now))
++    return out
+ 
+ 
+ def write_pages(root=ROOT, season=None):
+diff --git a/runtime/refill.py b/runtime/refill.py
+index b94df5b4cd4..1d4b8a2b79a 100644
+--- a/runtime/refill.py
++++ b/runtime/refill.py
+@@ -20,6 +20,7 @@ from pathlib import Path
+ 
+ from .camp import ROSTER_MAX, playable
+ from .front_office import request_override
++from .miami_register import required_position
+ from .player_stats import alias
+ from .valuation import REPLACEMENT_EFF_PER_GAME, read
+ 
+@@ -79,7 +80,7 @@ def candidates(on, front_office, market, positions, root=ROOT, requested=()):
+         value = market.valuation.value(bbr)
+         known = value is not None
+         value = value if known else REPLACEMENT_EFF_PER_GAME
+-        pos = positions.get(bbr, "SF")
++        pos = required_position(positions.get(bbr), on, p["player"])
+         fit = front_office.fit(pos, needs)
+         rows.append({"player": p["player"], "bbr_id": bbr, "position": pos, "value": round(value, 2), "value_known": known,
+                      "fit": fit, "score": round(value * fit, 3), "unattached": bool(p.get("unattached")),
+diff --git a/runtime/rollover.py b/runtime/rollover.py
+index 31a7e51a456..61d4af6b5bf 100644
+--- a/runtime/rollover.py
++++ b/runtime/rollover.py
+@@ -112,6 +112,24 @@ class Rollover:
+                 if p.get("bbr_id"):
+                     out.setdefault(p["bbr_id"], {"name": p["player"], "position": p.get("position"), "birth_date": p.get("birth_date")})
+                     out[p["bbr_id"]].update(draft_pick=p["pick"], draft_round=p["round"], college=p.get("college"))
++        # What those sources leave open: a birth date from the researched births and the draft classes' prospect
++        # evidence (`signing.league_identity`'s sources), a position from the prospect evidence. A registry row whose
++        # position no source records holds only its page slot, which is no position (`write_back.known_position`).
++        from .signing import prospect_identities
++        from .write_back import UNKNOWN_BASIS, identity_sources
++        births, prospects = identity_sources(self.root)[1], prospect_identities(self.root)
++        registry = self.root / PLAYER / "Stats_and_Awards/League/player_registry.json"
++        unknown = {r["bbr_id"] for r in (_read(registry)["players"] if registry.is_file() else [])
++                   if r.get("bbr_id") and r.get("position_basis") == UNKNOWN_BASIS}
++        picked = {p["bbr_id"]: p.get("position") for p in (_read(draft)["picks"] if draft.is_file() else []) if p.get("bbr_id")}
++        for b, e in out.items():
++            found = prospects.get(b, {})
++            if b in unknown:
++                e["position"] = picked.get(b)
++            if not e.get("position") and found.get("position"):
++                e["position"] = found["position"]
++            if not e.get("birth_date") and (births.get(b) or found.get("birth_date")):
++                e["birth_date"] = births.get(b) or found["birth_date"]
+         for p in _read(self.old_team / "Team/Roster/roster.json")["players"]:
+             key = p.get("bbr_id") or p["id"]
+             e = out.setdefault(key, {})
+@@ -261,9 +279,7 @@ class Rollover:
+         s = entry.get("schedule") or {}
+         if entry["status"] == "unsigned_draft_rights":
+             return f"Unsigned draft rights: No. {entry.get('draft_pick')} pick of the {self.year} draft."
+-        years = [k for k in sorted(s) if k >= self.new and s[k]]
+-        total = sum(s[k] for k in years)
+-        head = f"{len(years)} season(s) from {self.new}, ${total:,} scheduled (${s.get(self.new, 0):,} in {self.new})"
++        head = contract_head(s, self.new)
+         if entry["status"] == "camp_contract":
+             return f"Camp contract signed {_long(entry['signed_date'])}: {head}; non-guaranteed until {entry.get('guarantee_date')}."
+         if entry.get("route") in (None, "existing") or "signed_date" not in entry or entry["signed_date"] < f"{self.new[:4]}-07-01":
+@@ -271,6 +287,7 @@ class Rollover:
+         return f"Signed {_long(entry['signed_date'])} ({entry.get('route')}): {head}."
+ 
+     def register(self, entries, ids):
++        from .miami_register import carried, required_position
+         old = {p.get("bbr_id") or p["id"]: p for p in _read(self.old_team / "Team/Roster/roster.json")["players"]}
+         players = []
+         for e in entries:
+@@ -278,9 +295,12 @@ class Rollover:
+             ident = ids.get(key, {})
+             prev = old.get(key)
+             if prev:
+-                p = deepcopy(prev)
++                # a dated position correction in force by the rollover is the new season's position (`miami_register`)
++                p = carried(deepcopy(prev), self.day)
++                if not p.get("date_of_birth") and ident.get("birth_date"):
++                    p["date_of_birth"] = ident["birth_date"]          # known before the new season's first game
+             else:
+-                pos = ident.get("position") or "SF"
++                pos = required_position(ident.get("position"), self.day, e["player"])
+                 p = {"id": slug(e["player"]), "name": e["player"], "positions": [x.strip() for x in str(pos).replace("-", "/").split("/") if x.strip()],
+                      "date_of_birth": ident.get("birth_date"), "college": ident.get("college"), "working_role": "Unassigned arrival",
+                      "player_card": f"../Player_Cards/{slug(e['player'])}.md", "bbr_id": key}
+@@ -418,6 +438,7 @@ class Rollover:
+                 shutil.copy2(src, dst)
+         config = _read(self.old_team / "team_config.json")
+         config.update(season=self.new, as_of=self.day)
++        config["budget"] = season_budget(config.get("budget") or {}, self.old, self.new, self.root)
+         config["projection"] = {"wins": None, "basis": "Set by the staff at training camp from the new roster."}
+         _dump(self.team / "team_config.json", config)
+         sheet = _read(self.old_team / "Finances/contract_schedules.json")
+@@ -487,6 +508,39 @@ class Rollover:
+                              and h.get("basis", "").endswith("summer market")]}
+ 
+ 
++def season_budget(budget, old, new, root=ROOT):
++    """The owner's budget carried into the new season's `team_config.json`, recording the ceiling `gm.payroll_ceiling`
++    applies in it: with no tax tolerated, from 2005-06 the season's luxury-tax line (`cap_rules.luxury_tax_line`);
++    the July 2003 figure the earlier seasons read stays as `payroll_ceiling_through_2004_05`."""
++    from .seasons import path as season_path
++    out = dict(budget)
++    if out.get("tax_tolerance", "none") != "none" or new < "2005-06":
++        return out
++    rules = Path(root) / season_path(new, "cap_rules")
++    line = _read(rules).get("luxury_tax_line") if rules.is_file() else None
++    if not line:
++        return out
++    out.setdefault("payroll_ceiling_through_2004_05", out.get("payroll_ceiling", 57000000))   # set once, from 2004-05's
++    out["payroll_ceiling"] = int(line)
++    out["basis"] = (f"Judgement (docs/front_office_design.md 5.2): the owner pays no luxury tax. From 2005-06 the ceiling is "
++                    f"the season's tax line, ${int(line):,} for {new} ({season_path(new, 'cap_rules').as_posix()}, "
++                    "luxury_tax_line; runtime/gm.FrontOffice.payroll_ceiling); payroll_ceiling_through_2004_05 is the July 2003 "
++                    "luxury-tax projection that held 2003-04 and 2004-05 payroll.")
++    return out
++
++
++# The term clause of a register control text (`Rollover.control_text`): every scheduled season from the register's.
++CONTRACT_HEAD = re.compile(r"(\d+) season\(s\) from (\d{4}-\d{2}), \$([\d,]+) scheduled \(\$([\d,]+) in (\d{4}-\d{2})\)")
++
++
++def contract_head(schedule, season):
++    """'N season(s) from <season>, $T scheduled ($X in <season>)' from a contract schedule: the seasons from `season` on
++    with a scheduled amount (option seasons included), their total and the first."""
++    years = [k for k in sorted(schedule) if k >= season and schedule[k]]
++    total = sum(schedule[k] for k in years)
++    return f"{len(years)} season(s) from {season}, ${total:,} scheduled (${schedule.get(season, 0):,} in {season})"
++
++
+ def arrival_card(name, ident, day, control, source_rel, prior, season, how):
+     """A new Miami player's card in the template's section order; grades stay unassessed until evidence exists.
+     `prior` is his previous season's record (simulated totals once the career has played it)."""
+@@ -502,7 +556,7 @@ def arrival_card(name, ident, day, control, source_rel, prior, season, how):
+         g = max(t.get("games") or 0, 1)
+ 
+         def pct(m, a):
+-            return f"{t[m] / t[a]:.3f}" if t.get(a) else "N/A"
++            return f"{100 * t[m] / t[a]:.1f}%" if t.get(a) else "N/A"           # one format with the Miami rows
+         rows = (f"| {old} | {', '.join(prior.get('team_codes') or []) or 'N/A'} | {t.get('games', 0)} | {t.get('games_started', 'N/A')} | "
+                 f"{t['minutes'] / g:.1f} | {t['points'] / g:.1f} | {(t['offensive_rebounds'] + t['defensive_rebounds']) / g:.1f} | "
+                 f"{t['assists'] / g:.1f} | {t['steals'] / g:.1f} | {t['blocks'] / g:.1f} | {t['turnovers'] / g:.1f} | "
+@@ -545,25 +599,23 @@ Unassessed.
+ 
+ G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
+ 
+-**Coverage:** {old + ' from the simulated league record; ' if prior else ''}{season} not started.
++**Coverage:** {old + ': ' + (', '.join(prior.get('team_codes') or []) or 'his clubs') + ' from the league record; ' if prior else ''}{season} had not started on {day}.
+ 
+ | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+ | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+-{rows}| {season} | Miami Heat | 0 | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
++{rows}| {season} | MIA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+ 
+-Source: {old} from closed simulated results (`Stats_and_Awards/League/{old}/season_totals.json`); {season} from closed Miami game results.
++Source: Simulated seasons from closed results: Miami's games (MIA rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
+ 
+ ## Playoff statistics by year
+ 
+-**Coverage:** No playoff appearances recorded for Miami.
++**Coverage:** no appearance in a closed simulated playoff game through {day}; playoff history before 2003-04 is not imported. The {season} playoffs had not started on {day}.
+ 
+ <!-- yearly-statistics:end -->
+ 
+ ## Awards and honors
+ 
+-| Season / year | Award or honor | Source |
+-| --- | --- | --- |
+-| — | No verified awards or honors recorded on this card. | — |
++No honor recorded on this card through {day}; the write-back fills honors earned in the simulated league from the award records (`runtime/miami_cards.py`). Awards before 2003-04 are not imported.
+ """
+ 
+ 
+diff --git a/runtime/rotation_reviews.py b/runtime/rotation_reviews.py
+index d53a2a5176c..7d4dd84a132 100644
+--- a/runtime/rotation_reviews.py
++++ b/runtime/rotation_reviews.py
+@@ -322,7 +322,8 @@ def review_input(on, root=ROOT, season=None):
+     roster = read_json(base / "00_Team/Team/Roster/roster.json")
+     if roster.get("as_of", "") > on:
+         raise ValueError("cannot reconstruct a past staff review from a later roster")
+-    players = [{"player": p["name"], "positions": p["positions"], "bbr_id": p.get("bbr_id"), "status": "roster"}
++    from .miami_register import positions_on
++    players = [{"player": p["name"], "positions": positions_on(p, on), "bbr_id": p.get("bbr_id"), "status": "roster"}
+                for p in roster["players"] if camp.playable(p.get("status"))]
+     players.sort(key=lambda p: p["player"])
+     if len(players) < 5:
+diff --git a/runtime/season_games.py b/runtime/season_games.py
+index f5da9a8164a..10644cd0fb7 100644
+--- a/runtime/season_games.py
++++ b/runtime/season_games.py
+@@ -361,6 +361,8 @@ def miami_side(game_date, root=ROOT, season=None, with_lists=False):
+     roster = read_json(team / "Roster/roster.json")
+     if roster.get("as_of", "") > game_date:
+         raise ValueError("no historical roster for this game; the available register is dated after it")
++    from .miami_register import with_positions_on
++    roster = dict(roster, players=with_positions_on(roster["players"], game_date))   # a dated correction from its date
+     from .camp import playable
+     from . import roster_moves
+     waiting = roster_moves.required_before(game_date, root)
+diff --git a/runtime/season_pages.py b/runtime/season_pages.py
+index 50836732d3e..1977755eeb5 100644
+--- a/runtime/season_pages.py
++++ b/runtime/season_pages.py
+@@ -162,7 +162,9 @@ class Builder:
+             head = (f"# Miami Heat | {s}\n\n[Stats hub](../../README.md) · [Wade](../../{s}/README.md) · "
+                     f"[NBA players](../../League/{s}/League_Stats.md) · [NBA awards](../../League/{s}/League_Awards.md)\n\nNBA regular season · {s}\n\n")
+             period = ("## By month\n\n" + _period_table([(self.cal.month_label(m), f"{m[3]}/Team_Stats.md", self.cal.month_dates(m)) for m in self.cal.months], "games")
+-                      + "\n## Playoffs\n\nNo playoff games recorded. Use a separate playoff ledger; do not add postseason games to the regular-season totals.\n\n")
++                      + f"\n## Playoffs\n\nThe {s} playoffs have not started. Once the bracket is seeded this section states Miami's "
++                      "playoff record and links its playoff statistics page (`playoff_stats.team_season_section`); playoff games "
++                      "never enter the regular-season tables above.\n\n")
+             nav = ""
+         elif level == "month":
+             label = self.cal.month_label(month)
+diff --git a/runtime/signing.py b/runtime/signing.py
+index b9f8bab2fcc..0b95338e88d 100644
+--- a/runtime/signing.py
++++ b/runtime/signing.py
+@@ -17,6 +17,7 @@ from pathlib import Path
+ from .valuation import read
+ from .contract_archive import archive_contract, archive_previous_contract
+ from .contracts import counted_amount
++from .miami_register import required_position
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ from .seasons import active as _live_season, label as _label
+@@ -109,14 +110,35 @@ def set_state(writer, day, area="01_Free_Agency", note="01_Free_Agency/note.md",
+ 
+ 
+ def league_identity(root, bbr_id):
+-    """Identity from the league baseline (position, birth date, jersey, photo) for a new Miami player."""
++    """Identity from the league baseline (position, birth date, jersey, photo) for a new Miami player. A birth date or
++    position the first source lacks comes from the draft classes' prospect evidence (`prospect_identities`) and the
++    researched birth dates (`write_back.identity_sources`, which reads `library/careers/nba_player_births.json`); a
++    registry row whose position no source records gives none (`write_back.known_position`), never its page slot."""
++    found = _baseline_identity(root, bbr_id)
++    if not bbr_id:
++        return found
++    prospect = prospect_identities(root).get(bbr_id, {})
++    if not found and prospect:
++        found = dict(prospect, club=None)
++    if found and not found.get("birth_date"):
++        from .write_back import identity_sources
++        born = identity_sources(root)[1].get(bbr_id) or prospect.get("birth_date")
++        if born:
++            found["birth_date"] = born
++    if found and not found.get("position") and prospect.get("position"):
++        found["position"] = prospect["position"]
++    return found
++
++
++def _baseline_identity(root, bbr_id):
+     for club, entry in read("library/2003/league/nba_2003_end_of_season.json", root)["clubs"].items():
+         for p in entry["players"]:
+             if p.get("bbr_id") == bbr_id:
+                 return dict(p, club=club)
++    from .write_back import known_position
+     for p in read("career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json", root)["players"]:
+         if p.get("bbr_id") == bbr_id:
+-            return {"player_id": p["name"], "position": p.get("position"), "birth_date": p.get("birth_date"), "club": p.get("team_name")}
++            return {"player_id": p["name"], "position": known_position(p), "birth_date": p.get("birth_date"), "club": p.get("team_name")}
+     extra = Path(root) / "library/2003/league/nba_2003_unattached_identities.json"
+     if extra.is_file():
+         for p in json.loads(extra.read_text(encoding="utf-8"))["players"]:
+@@ -125,6 +147,24 @@ def league_identity(root, bbr_id):
+     return {}
+ 
+ 
++def prospect_identities(root):
++    """{bbr_id: {"player_id", "position", "birth_date"}} from every draft class's prospect evidence
++    (`library/<year>/league/nba_<year>_prospect_evidence.json`, drafted and undrafted): draft-night identity, so a pick
++    who never played an NBA game (Drejer, Slokar) still has his birth date and listed position."""
++    out = {}
++    for path in sorted(Path(root).glob("library/*/league/nba_*_prospect_evidence.json")):
++        data = json.loads(path.read_text(encoding="utf-8"))
++        groups = [data.get("players_drafted"), data.get("undrafted_candidates")]
++        rows = [r for g in groups for r in (g if isinstance(g, list) else (g or {}).get("players", []) if isinstance(g, dict) else [])]
++        for p in rows:
++            if not isinstance(p, dict) or not p.get("bbr_id"):
++                continue
++            pos = p.get("position")
++            pos = pos.get("value") if isinstance(pos, dict) else pos
++            out.setdefault(p["bbr_id"], {"player_id": p.get("player_id"), "position": pos or None, "birth_date": p.get("birth_date")})
++    return out
++
++
+ def player_card(name, identity, day, control, source_rel, prior_stats=None):
+     """A new Miami player card in the template's section order; grades stay unassessed until evidence exists."""
+     pos = (identity.get("position") or "N/A").replace("-", " / ")
+@@ -138,9 +178,9 @@ def player_card(name, identity, day, control, source_rel, prior_stats=None):
+     if prior_stats:
+         t = prior_stats["totals"]
+         g = max(t["games"], 1)
+-        fg = f"{t['field_goals_made'] / t['field_goals_attempted']:.3f}" if t["field_goals_attempted"] else "N/A"
+-        tp = f"{t['three_pointers_made'] / t['three_pointers_attempted']:.3f}" if t.get("three_pointers_attempted") else "N/A"
+-        ft = f"{t['free_throws_made'] / t['free_throws_attempted']:.3f}" if t["free_throws_attempted"] else "N/A"
++        fg = f"{100 * t['field_goals_made'] / t['field_goals_attempted']:.1f}%" if t["field_goals_attempted"] else "N/A"   # 45.2%, as Miami's rows
++        tp = f"{100 * t['three_pointers_made'] / t['three_pointers_attempted']:.1f}%" if t.get("three_pointers_attempted") else "N/A"
++        ft = f"{100 * t['free_throws_made'] / t['free_throws_attempted']:.1f}%" if t["free_throws_attempted"] else "N/A"
+         stats = (f"| 2002-03 | {prior_stats.get('team', identity.get('club', 'N/A'))} | {t['games']} | N/A | {t['minutes'] / g:.1f} | {t['points'] / g:.1f} | "
+                  f"{(t['offensive_rebounds'] + t['defensive_rebounds']) / g:.1f} | {t['assists'] / g:.1f} | {t['steals'] / g:.1f} | {t['blocks'] / g:.1f} | "
+                  f"{t['turnovers'] / g:.1f} | {fg} | {tp} | {ft} |\n")
+@@ -181,25 +221,23 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with
+ 
+ G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
+ 
+-**Coverage:** {'2002-03 from the league record; ' if stats else ''}2003-04 not started.
++**Coverage:** {'2002-03 regular season from the league record; earlier seasons are not imported; ' if stats else ''}{SEASON}: no Miami appearance through {day}.
+ 
+ | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+ | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+-{stats}| {SEASON} | Miami Heat | 0 | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
++{stats}| {SEASON} | MIA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+ 
+-Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
++Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (MIA rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
+ 
+ ## Playoff statistics by year
+ 
+-**Coverage:** No playoff appearances recorded for Miami.
++**Coverage:** no appearance in a closed simulated playoff game through {day}; playoff history before 2003-04 is not imported.
+ 
+ <!-- yearly-statistics:end -->
+ 
+ ## Awards and honors
+ 
+-| Season / year | Award or honor | Source |
+-| --- | --- | --- |
+-| — | No verified awards or honors recorded on this card. | — |
++No honor recorded on this card through {day}; the write-back fills honors earned in the simulated league from the award records (`runtime/miami_cards.py`). Awards before 2003-04 are not imported.
+ """
+ 
+ 
+@@ -370,7 +408,8 @@ def sign(writer, negotiation, day, *, via_trade=None, cap=None):
+     if existing:
+         existing.update(status="re_signed", control=control)
+     else:
+-        roster["players"].append({"id": slug(name), "name": name, "positions": [x for x in (identity.get("position") or "SF").replace("/", "-").split("-")],
++        position = required_position(identity.get("position"), day, name)
++        roster["players"].append({"id": slug(name), "name": name, "positions": [x for x in position.replace("/", "-").split("-")],
+                                  "date_of_birth": identity.get("birth_date"), "status": "signed_free_agent", "control": control,
+                                  "working_role": "Unassigned arrival", "player_card": f"../Player_Cards/{slug(name)}.md", "bbr_id": bbr})
+         stats = next((r for r in read("library/2003/league/nba_2002_03_player_stats.json", writer.root)["records"] if r["bbr_id"] == bbr), None)
+@@ -899,7 +938,7 @@ def apply_trade(writer, record, day, desk=None):
+         prior = stats.get(bbr, {}).get("totals", {})
+         identity = league_identity(writer.root, bbr)
+         departures["entries"].append({"player": name, "bbr_id": bbr, "club": club, "from": day, "until": None,
+-                                      "position": (identity.get("position") or "SF").split("-")[0],
++                                      "position": required_position(identity.get("position"), day, name).split("-")[0],
+                                       "games": prior.get("games", 0), "minutes": prior.get("minutes", 0),
+                                       "basis": f"traded {day} ({record['trade_id']}); previous share from {prior_label} totals"})
+     # Miami's incoming players (a sign-and-trade acquisition was written by `sign` from the agreed terms)
+@@ -931,7 +970,8 @@ def apply_trade(writer, record, day, desk=None):
+         identity = league_identity(writer.root, bbr)
+         salary = p["schedule"].get(SEASON) or 0
+         control = f"Acquired by trade from {club} on {long_date(day)}: ${salary:,} in {SEASON}; contract through {max(s for s, v in p['schedule'].items() if v)}."
+-        roster["players"].append({"id": slug(name), "name": name, "positions": [x for x in (identity.get("position") or "SF").replace("/", "-").split("-")],
++        position = required_position(identity.get("position"), day, name)
++        roster["players"].append({"id": slug(name), "name": name, "positions": [x for x in position.replace("/", "-").split("-")],
+                                  "date_of_birth": identity.get("birth_date"), "status": "under_contract", "control": control,
+                                  "working_role": "Unassigned arrival", "player_card": f"../Player_Cards/{slug(name)}.md", "bbr_id": bbr})
+         writer.text(TEAM / f"Team/Player_Cards/{slug(name)}.md", arrival_card_for_trade(writer.root, name, identity, day, control, record_rel, bbr, club)
+diff --git a/runtime/team_status.py b/runtime/team_status.py
+index 0890e08a2e0..3b9a64d7376 100644
+--- a/runtime/team_status.py
++++ b/runtime/team_status.py
+@@ -75,9 +75,16 @@ def migrate(text, patterns, block):
+     return re.sub(r"\n{3,}", "\n\n", text)
+ 
+ 
++# Rights Miami holds without a contract: on the register, never under contract, available or in a rotation role.
++RIGHTS_ONLY = ("free_agent_rights_held", "unsigned_draft_rights")
++
++
+ def register(root, on, season=None):
+-    """Miami's current register on the date: [(roster entry, availability, role)]."""
++    """Miami's current register on the date: [(roster entry, availability, role)]. A rights holder without a contract
++    (RIGHTS_ONLY) is labelled as such and has no role; positions are the register's on the date
++    (`miami_register.positions_on`)."""
+     from .miami_cards import injured_on, role_in
++    from .miami_register import positions_on
+     from .rotation_reviews import rotation_in_force
+     season = season or _season(root)
+     roster = _read(Path(root) / team_dir(season) / "Team/Roster/roster.json")
+@@ -89,19 +96,52 @@ def register(root, on, season=None):
+     for p in roster["players"]:
+         if any(w in (p.get("status") or "") for w in GONE):
+             continue
+-        hurt = injured_on(root, p["name"], on)
++        p = dict(p, positions=positions_on(p, on))
++        hurt = injured_on(root, p["name"], on, season)
+         if hurt:
+             kind = "injured" if hurt["reason"].startswith("injury") else "inactive reserve"
+             avail = f"Injured list since {hurt['placed']}, {kind}"
+         elif p.get("status") == "free_agent_rights_held":
+             avail = "Unsigned; Miami holds his free-agent rights"
++        elif p.get("status") == "unsigned_draft_rights":
++            avail = "Unsigned draft rights; not on the roster"
+         else:
+             avail = "Available"
+-        role = role_in(rotation, p["name"]) if rotation and p.get("status") != "free_agent_rights_held" else "N/A"
++        role = role_in(rotation, p["name"]) if rotation and p.get("status") not in RIGHTS_ONLY else "N/A"
+         out.append((p, avail, role))
+     return out
+ 
+ 
++def expiring(root, on, season=None):
++    """{player: label} for the register's contracts that end on June 30 of the season, from the day after the regular
++    season (`seasons.dates`) through June 30: a contract with no salary after the season in the contract sheet
++    (`Finances/contract_schedules.json`). A rookie-scale contract ending is labelled with the club's qualifying-offer
++    decision, which makes him a restricted free agent if tendered. The register's `status` is never changed (the front
++    office reads it); this is a label on the desk only."""
++    from .seasons import dates, next_season
++    season = season or _season(root)
++    end_year = int(season[:4]) + 1
++    if not (dates(season, root)["regular_season_end"] < on <= f"{end_year}-06-30"):
++        return {}
++    path = Path(root) / team_dir(season) / "Finances/contract_schedules.json"
++    if not path.is_file():
++        return {}
++    later = lambda s: s > season
++    out = {}
++    for c in _read(path)["players"]:
++        if any(w in (c.get("status") or "") for w in GONE) or "unsigned" in (c.get("status") or ""):
++            continue
++        sched = c.get("schedule") or {}
++        if not sched.get(season) or any(v for s, v in sched.items() if later(s)):
++            continue
++        label = f"expiring June 30, {end_year}"
++        if c.get("status") == "under_rookie_contract":
++            label += (f"; rookie scale: Miami's qualifying-offer decision is due by June 30, {end_year} (tendered, he is a "
++                      f"restricted free agent for {next_season(season)})")
++        out[c["player"]] = label
++    return out
++
++
+ def standings_rows(root, on, season=None):
+     from .seasons import conferences
+     from .standings import standings_on
+@@ -140,20 +180,25 @@ def blocks(root, on):
+     place = east.index("Miami Heat") + 1 if "Miami Heat" in east else None
+     ordinal = lambda n: f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
+     record = f"{mia['wins']}-{mia['losses']}" + (f", {ordinal(place)} in the East" if place else "")
+-    signed = [r for r in reg if r[0].get("status") != "free_agent_rights_held"]
++    signed = [r for r in reg if r[0].get("status") not in RIGHTS_ONLY]
+     listed = [r for r in signed if r[1].startswith("Injured list")]
++    ending = expiring(root, on, season)
++    ends = (f" {len(ending)} of the contracts end on June 30, {int(season[:4]) + 1} (labelled on the register)."
++            if ending else "")
+     standings_link = lambda frm: Path("../" * len(frm.parent.parts)).joinpath(STANDINGS).as_posix()
+     team_readme = TEAM / "README.md"
+     out = {}
+     out[team_readme] = (f"**Status on {on}** (generated from dated records): Miami {record} "
+                         f"([standings]({standings_link(team_readme)})). {len(signed)} players under contract, "
+-                        f"{len(listed)} on the injured list. Head coach {_read(root / TEAM / 'team_config.json').get('head_coach', 'N/A')}; the staff rotation in force and "
++                        f"{len(listed)} on the injured list.{ends} Head coach {_read(root / TEAM / 'team_config.json').get('head_coach', 'N/A')}; the staff rotation in force and "
+                         f"the register are in [Team](Team/README.md).")
+     out[TEAM / "Team/README.md"] = (
+         f"**Status on {on}:** {len(signed)} under contract ({len(signed) - len(listed)} active, {len(listed)} on the "
+-        f"injured list), Miami {record}. The [register](Roster/README.md) labels every player's control and "
+-        f"availability; expired, released and voided contracts stay on it as history.")
+-    rows = [[f"[{p['name']}]({p['player_card']})", "/".join(p.get("positions") or []), p["status"].replace("_", " "), a, role]
++        f"injured list), Miami {record}.{ends} The [register](Roster/README.md) labels every player's control and "
++        f"availability; expired, released and voided contracts stay on it as history. Rights held without a contract are "
++        f"not counted.")
++    rows = [[f"[{p['name']}]({p['player_card']})", "/".join(p.get("positions") or []),
++             p["status"].replace("_", " ") + (f", {ending[p['name']]}" if p["name"] in ending else ""), a, role]
+             for p, a, role in reg]
+     out[TEAM / "Team/Roster/README.md"] = (
+         f"[roster.json](roster.json) is the machine-readable register (team-control record dated {_read(root / TEAM / 'Team/Roster/roster.json')['as_of']}). "
+@@ -178,6 +223,64 @@ def blocks(root, on):
+     return out
+ 
+ 
++TEAM_STATS = Path("career/Dwyane_Wade/Stats_and_Awards/Team")
++
++
++def team_stats_readme(root):
++    """`Stats_and_Awards/Team/README.md`: the hub of Miami's statistics, with a row for every season on file, its
++    regular-season and playoff records from Miami's played game notes (`write_back.miami_notes`, whose results
++    validation ties to the result files) and the bracket (`playoffs.json`)."""
++    from .playoff_stats import ROUND_LABELS
++    from .playoffs import read as bracket
++    from .seasons import live_seasons
++    from .write_back import miami_notes
++    root = Path(root)
++    seasons = [s for s in live_seasons(root) if (root / TEAM_STATS / s / "Team_Stats.md").is_file()]
++    rows = []
++    for season in seasons:
++        played = [(i["kind"], str(i["meta"].get("result", ""))[:1]) for i in miami_notes(root, season)
++                  if i["meta"].get("status") == "played"]
++        rw, rl, pw, pl = (played.count((kind, x)) for kind in ("regular", "playoff") for x in ("W", "L"))
++        series = [s for s in ((bracket(root, season) or {}).get("series") or []) if "Miami Heat" in s["clubs"]]
++        if series:
++            last = series[-1]
++            reach = (f"{'won' if last['winner'] == 'Miami Heat' else 'lost'} in the {ROUND_LABELS[last['round']].lower()}"
++                     if last.get("winner") else f"{ROUND_LABELS[last['round']].lower()} in progress")
++            if (bracket(root, season) or {}).get("champion") == "Miami Heat":
++                reach = "NBA champion"
++            playoffs = f"[{pw}-{pl}, {reach}]({season}/Playoffs/Team_Playoff_Stats.md)"
++        elif (bracket(root, season) or {}).get("series"):
++            playoffs = "Did not qualify"
++        else:
++            playoffs = "Not started"
++        rows.append([f"[{season}]({season}/Team_Stats.md)", f"{rw}-{rl}" if rw + rl else "Not started", playoffs,
++                     f"[roster.json](../../{season}/00_Team/Team/Roster/roster.json)"])
++    live = seasons[-1] if seasons else _season(root)
++    return "\n".join([
++        "# Miami Heat | Team statistics", "",
++        f"[Stats hub](../README.md) · [{live} team record]({live}/Team_Stats.md) · "
++        f"[Roster and control](../../{live}/00_Team/Team/Roster/roster.json)", "",
++        "Miami's year, month and week pages separate player production from shooting detail. The team record sits first. "
++        "Per-game columns are labeled explicitly, and player cards and control status are available in the detail section.", "",
++        "## Seasons", "",
++        "Records from Miami's played game notes and the playoff bracket (generated, `runtime/team_status.py`); each playoff "
++        "record links Miami's playoff statistics page.", "",
++        _table(["Season", "Regular season", "Playoffs", "Register"], rows), "",
++        "## Coverage", "",
++        "Each season's register is a team-control record, not a finalized active roster: it labels contracts, options, "
++        "rights held without a contract and departures. Only closed Miami games enter these tables, and a period's page "
++        "lists only the players Miami held under contract in it; a not-started page lists the register's players under "
++        "contract and names the rights it holds.", "",
++        "Preserve departures on earlier pages and on the season line for their Miami games. Add arrivals from their first "
++        "applicable period. A team record counts each game once; summing player G would overcount games. Keep playoffs "
++        "separate: each season's playoff games are on its playoff page.", "",
++        "## Updating", "",
++        "Use the [shared statistics rules](../README.md) for denominators, DNPs and weighted rollups. Reconcile team scoring "
++        "with the player lines. Where the kernel records unassigned team turnovers, team TOV includes those in addition to "
++        "individual TOV; never attribute them to a player to force a match. Averages with no appearances and percentages "
++        "with no attempts remain N/A.", ""])
++
++
+ def refresh(root=ROOT, write=True, on=None):
+     """Rewrite every generated block on the clock. Returns the changed paths."""
+     root = Path(root)
+@@ -185,6 +288,12 @@ def refresh(root=ROOT, write=True, on=None):
+         from .write_back import clock
+         on = clock(root)
+     changed = []
++    readme = root / TEAM_STATS / "README.md"
++    text = team_stats_readme(root)
++    if readme.parent.is_dir() and (not readme.is_file() or readme.read_text(encoding="utf-8") != text):
++        changed.append(readme)
++        if write:
++            readme.write_text(text, encoding="utf-8")
+     standings = standings_page(_season(root))
+     for rel, block in blocks(root, on).items():
+         path = root / rel
+diff --git a/runtime/trades.py b/runtime/trades.py
+index 64d3a63a260..efdd65058a7 100644
+--- a/runtime/trades.py
++++ b/runtime/trades.py
+@@ -413,8 +413,8 @@ class Assets:
+         term = max(CONTRACT_TERM_LIMITS[0], min(CONTRACT_TERM_LIMITS[1], term))
+         total = production + term
+         age = self.valuation.age(bbr) if bbr else None
+-        if age is None and player.get("date_of_birth"):
+-            from .valuation import age_on
++        if age is None and player.get("date_of_birth") and player.get("date_of_birth_from", self.on) <= self.on:
++            from .valuation import age_on      # a birth date recorded later counts from its date (injuries.simulated_ages)
+             age = age_on(player["date_of_birth"], self.on)
+         relief = 0.0
+         if for_club and years == 1 and self.payroll(for_club) and self.payroll(for_club) > self.tax_line:
+@@ -756,7 +756,8 @@ class TradeDesk:
+         p = next((p for p in self.fo.sheet["players"] if p["player"] == name), None)
+         r = next((r for r in self.fo.roster["players"] if r["name"] == name), None)
+         if p is not None and r is not None:
+-            p = dict(p, bbr_id=p.get("bbr_id") or r.get("bbr_id"), date_of_birth=r.get("date_of_birth"))
++            p = dict(p, bbr_id=p.get("bbr_id") or r.get("bbr_id"), date_of_birth=r.get("date_of_birth"),
++                     **({"date_of_birth_from": r["date_of_birth_from"]} if r.get("date_of_birth_from") else {}))
+         return p, r
+ 
+     def partner_player(self, club, name):
+diff --git a/runtime/write_back.py b/runtime/write_back.py
+index 636b68f9de3..473c6f2022a 100644
+--- a/runtime/write_back.py
++++ b/runtime/write_back.py
+@@ -1008,7 +1008,9 @@ def period_rows(text, page, now, games_in):
+             target = (page.parent / m.group(1)).resolve() if m else page
+             scope = scope_for(target, [], now)
+             n = games_in(scope)
+-            status = "Not started" if not n else ("Complete" if scope["end"] < now else f"Through {long_date(now)}")
++            # An ended period with no closed game is complete, not "not started" (the audit of 2006-06-20).
++            status = ("Complete" if scope["end"] < now else f"Through {long_date(now)}") if n else \
++                ("No games" if scope["end"] < now else "Not started")
+             out.append([row[0], row[1], str(n), status])
+         return _table(headers, out, aligns=[False, False, True, False])
+     return _replace_tables(text, replacer)
+@@ -1088,38 +1090,80 @@ def team_record(games, scope):
+ # Register statuses of players who are no longer Miami's: they leave the not-started pages (completed
+ # pages keep them for the games they played).
+ REGISTER_GONE = ("signed_elsewhere", "traded", "waived", "released", "renounced", "option_declined", "cut", "voided")
++# Rights Miami holds without a contract (`team_status.RIGHTS_ONLY`): named on a not-started page, never a player row.
++REGISTER_RIGHTS = ("free_agent_rights_held", "unsigned_draft_rights")
+ 
+ 
+ def register_names(players):
+-    """The control register's current Miami players, in register order."""
+-    return [p["name"] for p in players if not any(word in (p.get("status") or "") for word in REGISTER_GONE)]
++    """The control register's current Miami players under contract, in register order (rights holders excluded)."""
++    return [p["name"] for p in players if not any(word in (p.get("status") or "") for word in REGISTER_GONE)
++            and p.get("status") not in REGISTER_RIGHTS]
+ 
+ 
+-def team_page(text, page, lines, games, positions, now, register=None):
++def register_rights(players):
++    """[(name, label)] of the register's rights held without a contract, in register order."""
++    return [(p["name"], p["status"].replace("_", " ")) for p in players if p.get("status") in REGISTER_RIGHTS]
++
++
++def contract_holdings(players, holdings):
++    """{name: [(from, until)]} of the holdings (`Roster/holdings.json`) in which Miami held a player under contract:
++    a voided camp contract (never Miami's), unsigned draft rights and draft rights never signed (a renounced or
++    released pick, a rights holder) are not one. Wade's draft-rights entry runs on into his contract."""
++    status = {p["name"]: p.get("status") or "" for p in players}
++    out = {}
++    for e in holdings:
++        basis = e.get("basis") or ""
++        never_signed = basis.startswith("draft rights") and (
++            status.get(e["player"]) in REGISTER_RIGHTS or any(w in status.get(e["player"], "") for w in ("renounced", "rights_released")))
++        if e.get("void") or "unsigned" in basis or never_signed:
++            continue
++        out.setdefault(e["player"], []).append((e["from"], e.get("until")))
++    return out
++
++
++def team_page(text, page, lines, games, positions, now, register=None, held=None, rights=()):
+     """One Team_Stats.md page rebuilt from Miami's closed results.
+ 
+-    A period that has not started lists the control register as it stands on the career date, so
+-    signings, camp invites and departures reach every future page; a period with games lists the
+-    players who appeared plus the rows it already carried."""
++    A period that has not started lists the players under contract on the control register as it stands on the
++    career date, so signings, camp invites and departures reach every future page; rights Miami holds without a
++    contract (`rights`: [(name, label)]) are named in its status line, never as player rows. An ended period with no
++    Miami game is complete and lists the players Miami held under contract in it (`held`: `contract_holdings`). A
++    period with games lists the players who appeared plus the rows it already carried of players Miami held under
++    contract in the period: a free agent whose rights Miami kept or an unsigned pick never was (the audit of
++    2006-06-20)."""
+     scope = scope_for(page, [], now)
+     summaries = {name: aggregate([r for r in records if _in(r, scope)]) for name, records in lines.items()}
+     present = sorted(name for name, s in summaries.items() if s["closed"])
+     n = len([g for g in games if scope["start"] <= g["game_date"] <= scope["end"]])
+-    future = not n and register is not None          # no closed Miami game in the period yet
++    ended = scope["end"] < now
++    emptied = not n and ended and held is not None   # the period is over and Miami played no game in it
++    future = not n and register is not None and not emptied   # no closed Miami game in the period yet
++
++    def in_period(name):
++        return held is None or any(f <= scope["end"] and (u is None or u >= scope["start"]) for f, u in held.get(name, []))
+     if n:
+         status = f"As of {long_date(now)}: {_plural(n, 'closed Miami game')} in this period. Rows cover Miami's closed games only."
+         text = re.sub(r"^As of [^\n]*$", lambda _: status, text, count=1, flags=re.M)
++    elif emptied:
++        status = (f"As of {long_date(now)}: complete; no Miami game in this period. Rows list the players Miami held under "
++                  "contract in it.")
++        text = re.sub(r"^As of [^\n]*$", lambda _: status, text, count=1, flags=re.M)
+     elif future:
+         k = len(register)
+-        status = (f"As of {long_date(now)}: not started. The {k}-player control register includes contracts, options, "
+-                  f"camp contracts and unsigned rights; it is not a {k}-player active roster.")
++        named = "; ".join(f"{name} ({label})" for name, label in rights)
++        status = (f"As of {long_date(now)}: not started. The {k} players under contract on the control register are listed "
++                  f"(contracts, options and camp contracts); it is not a {k}-player active roster."
++                  + (f" Rights held without a contract, not listed: {named}." if named else ""))
+         text = re.sub(r"^As of [^\n]*$", lambda _: status, text, count=1, flags=re.M)
+     empty = aggregate([])
+ 
+     def listed(rows):
+         if future:
+             return list(register)
+-        return [r[0] for r in rows] + [p for p in present if p not in {r[0] for r in rows}]
++        if emptied:
++            return [name for name in held if in_period(name)]
++        carried = [r[0] for r in rows if r[0] in present or in_period(r[0])]
++        return carried + [p for p in present if p not in carried]
+ 
+     def replacer(headers, rows):
+         if headers == TEAM_RECORD:
+@@ -1168,7 +1212,10 @@ def statistics_pages(root=ROOT, season=None):
+     team_lines, games = miami_lines(root, season, now)
+     roster = root / season_base(season) / "00_Team/Team/Roster/roster.json"
+     players = read_json(roster)["players"] if roster.is_file() else []
+-    positions = {p["name"]: "/".join(p["positions"]) for p in players}
++    from .miami_register import positions_on
++    positions = {p["name"]: "/".join(positions_on(p, now)) for p in players}     # a dated correction from its date
++    holdings = roster.with_name("holdings.json")
++    held = contract_holdings(players, read_json(holdings)["entries"]) if holdings.is_file() else None
+     for row in closed_results(root, season, now):
+         if row["request"]:
+             side = row["request"].get("home") if row["request"]["home"].get("team") == MIAMI else row["request"].get("away")
+@@ -1176,7 +1223,41 @@ def statistics_pages(root=ROOT, season=None):
+                 positions.setdefault(p["player_id"], p.get("position", "N/A"))
+     team = root / PLAYER_DIR / "Stats_and_Awards/Team" / season
+     for page in sorted(team.rglob("Team_Stats.md")):
+-        outputs[page] = team_page(page.read_text(encoding="utf-8"), page, team_lines, games, positions, now, register_names(players))
++        outputs[page] = team_page(page.read_text(encoding="utf-8"), page, team_lines, games, positions, now, register_names(players),
++                                  held, register_rights(players))
++    return outputs
++
++
++def closed_team_pages(root=ROOT):
++    """{path: text} for the Team_Stats.md pages of every closed season, rebuilt by the live season's rules (`team_page`)
++    as of the date the season page states: a closed season's pages stand as of their last rebuild, so only what the
++    rules list changes (a rights holder's row, an ended period with no game; the audit of 2006-06-20)."""
++    from .seasons import live_seasons
++    root = Path(root)
++    live, outputs = _active_season(root), {}
++    for season in live_seasons(root):
++        base = root / PLAYER_DIR / "Stats_and_Awards/Team" / season
++        if season >= live or not (base / "Team_Stats.md").is_file():
++            continue
++        m = re.search(r"^As of ([A-Z][a-z]+ \d{1,2}, \d{4}):", (base / "Team_Stats.md").read_text(encoding="utf-8"), re.M)
++        if not m:
++            continue
++        from datetime import datetime
++        now = datetime.strptime(m.group(1), "%B %d, %Y").date().isoformat()
++        team_lines, games = miami_lines(root, season, now)
++        roster = root / season_base(season) / "00_Team/Team/Roster/roster.json"
++        players = read_json(roster)["players"] if roster.is_file() else []
++        positions = {p["name"]: "/".join(p["positions"]) for p in players}
++        for row in closed_results(root, season, now):
++            if row["request"]:
++                side = row["request"].get("home") if row["request"]["home"].get("team") == MIAMI else row["request"].get("away")
++                for p in side.get("players", []):
++                    positions.setdefault(p["player_id"], p.get("position", "N/A"))
++        holdings = roster.with_name("holdings.json")
++        held = contract_holdings(players, read_json(holdings)["entries"]) if holdings.is_file() else None
++        for page in sorted(base.rglob("Team_Stats.md")):
++            outputs[page] = team_page(page.read_text(encoding="utf-8"), page, team_lines, games, positions, now,
++                                      register_names(players), held, register_rights(players))
+     return outputs
+ 
+ 
+@@ -1229,6 +1310,10 @@ def run(root=ROOT, season=None, write=False, pages=True):
+         from .season_games import refresh_reports
+         report["reports"] = refresh_reports(root)
+         report["pages"] += write_statistics_pages(root, season)
++        for page, text in closed_team_pages(root).items():     # closed seasons' Team pages, as of their own date
++            if page.read_text(encoding="utf-8") != text:
++                page.write_text(text, encoding="utf-8")
++                report["pages"] += 1
+         from .playoff_stats import write_pages as write_playoff_pages
+         report["pages"] += write_playoff_pages(root, season)
+         from .seasons import live_seasons
+@@ -1289,6 +1374,9 @@ def write_back_errors(root=ROOT, season=None, cards=False):
+         for page, text in statistics_pages(root, season).items():
+             if page.read_text(encoding="utf-8") != text:
+                 errors.append(f"{page.relative_to(root)}: stale statistics page; run scripts/write_back_results.py --write")
++        for page, text in closed_team_pages(root).items():
++            if page.read_text(encoding="utf-8") != text:
++                errors.append(f"{page.relative_to(root)}: stale closed-season Team page; run scripts/write_back_results.py --write")
+     except (OSError, ValueError, KeyError) as exc:
+         errors.append(f"write-back: cannot aggregate the statistics pages: {exc}")
+     if not cards:
+diff --git a/scripts/validate_repository.py b/scripts/validate_repository.py
+index cd7a5563a29..6e693f1260a 100644
+--- a/scripts/validate_repository.py
++++ b/scripts/validate_repository.py
+@@ -695,7 +695,7 @@ def validate():
+ 
+     from runtime.miami_cards import refresh as refresh_miami_cards
+     for card in refresh_miami_cards(ROOT, write=False):
+-        errors.append(f"{card.relative_to(ROOT)}: role, 2003-04 statistics or rotation notes are stale (python scripts/write_back_results.py --write)")
++        errors.append(f"{card.relative_to(ROOT)}: role, statistics, playoff rows, honors, header facts or rotation notes are stale (python scripts/write_back_results.py --write)")
+ 
+     from runtime.team_status import refresh as refresh_team_status
+     for page in refresh_team_status(ROOT, write=False):
+diff --git a/tests/checkpoint.py b/tests/checkpoint.py
+index 6ef58fe97b0..a39de1f3b36 100644
+--- a/tests/checkpoint.py
++++ b/tests/checkpoint.py
+@@ -108,11 +108,14 @@ def pin(root):
+         if card.name not in ("README.md", "TEMPLATE.md") and card.stem not in ids:
+             card.unlink()                        # personnel cards of players who joined after the checkpoint
+         elif card.name not in ("README.md", "TEMPLATE.md"):
+-            # A checkpoint player's card keeps no row sourced from a game the fixture removed (an injury, say).
++            # A checkpoint player's card keeps no row sourced from a game the fixture removed (an injury, say), nor an
++            # honor row announced after the checkpoint (`miami_cards.awards_section`: Season, Award, Announced, Source).
+             text = card.read_text(encoding="utf-8")
++            later = re.compile(r"^\| \d{4}-\d{2} \| [^|]+ \| (\d{4}-\d{2}-\d{2}) \| \[Record\]")
+             kept = [line for line in text.splitlines(keepends=True)
+                     if "06_Regular_Season/" not in line and "05_Preseason/Game_" not in line
+-                    and "Depth_Chart/Reviews/" not in line]
++                    and "Depth_Chart/Reviews/" not in line
++                    and not (later.match(line) and later.match(line).group(1) > CHECKPOINT)]
+             if len(kept) != len(text.splitlines(keepends=True)):
+                 card.write_text("".join(kept), encoding="utf-8")
+     # Dated registry additions (first 2003-04 appearances) come after the checkpoint.
+diff --git a/tests/test_audit_b.py b/tests/test_audit_b.py
+new file mode 100644
+index 00000000000..e58a2f81a8f
+--- /dev/null
++++ b/tests/test_audit_b.py
+@@ -0,0 +1,215 @@
++"""Audit of 2006-06-20, group B (Miami's desk): personnel cards, the register, the team desk and the Team pages.
++
++The record tests read the repository's committed records (read-only) for the career's real live season; the unit tests
++use small inputs. Each fails on the code and records before the audit's fixes.
++"""
++import json
++from pathlib import Path
++from types import SimpleNamespace
++import unittest
++from unittest import mock
++
++from tests import live_season
++
++ROOT = Path(__file__).resolve().parents[1]
++CAREER = ROOT / "career/Dwyane_Wade"
++
++
++def register(season):
++    return {p["name"]: p for p in json.loads((CAREER / season / "00_Team/Team/Roster/roster.json").read_text(encoding="utf-8"))["players"]}
++
++
++def card(season, name):
++    return (CAREER / season / "00_Team/Team/Player_Cards" / f"{name}.md").read_text(encoding="utf-8")
++
++
++class DatedRegisterFacts(unittest.TestCase):
++    """Played games froze Telfair at SF and eight Miami players without a birth date: corrections count from 2006-06-21."""
++
++    def test_position_correction_counts_from_its_date(self):
++        from runtime.miami_register import carried, positions_on, with_positions_on
++        row = register("2005-06")["Sebastian Telfair"]
++        self.assertEqual(row["positions"], ["SF"])                      # what every played game read
++        self.assertEqual(positions_on(row, "2006-06-20"), ["SF"])
++        self.assertEqual(positions_on(row, "2006-06-21"), ["PG"])
++        self.assertEqual(with_positions_on([row], "2006-04-12")[0]["positions"], ["SF"])
++        nxt = carried(row, "2006-10-01")                                  # the 2006 rollover's register row
++        self.assertEqual(nxt["positions"], ["PG"])
++        self.assertNotIn("positions_corrected_from", nxt)
++
++    def test_a_missing_position_is_guessed_only_through_the_clock(self):
++        from runtime.miami_register import required_position
++        self.assertEqual(required_position("PG", "2006-07-01", "X"), "PG")
++        self.assertEqual(required_position(None, "2006-06-20", "X"), "SF")      # recorded decisions replay as made
++        with self.assertRaises(ValueError):
++            required_position(None, "2006-06-21", "X")
++
++    def test_need_score_reads_the_correction_from_its_date(self):
++        from runtime import gm
++        market = SimpleNamespace(valuation=SimpleNamespace(value=lambda b: None))
++        with mock.patch.object(gm, "TEAM", Path("career/Dwyane_Wade/2005-06/00_Team")), mock.patch.object(gm, "SEASON", "2005-06"):
++            before = gm.FrontOffice("2006-06-20", market, ROOT).roster_values()["Sebastian Telfair"]["position"]
++            after = gm.FrontOffice("2006-06-21", market, ROOT).roster_values()["Sebastian Telfair"]["position"]
++        self.assertEqual((before, after), ("SF", "PG"))
++
++    def test_birth_dates_back_filled_without_changing_played_games(self):
++        from runtime.injuries import simulated_ages
++        rows = register("2004-05")
++        born = {n: rows[n].get("date_of_birth") for n in ("Dorell Wright", "John Thomas", "Maurice Evans", "Maurice Baker",
++                                                          "John Edwards", "Bernard Robinson", "Christian Drejer")}
++        self.assertEqual(born["Dorell Wright"], "1985-12-02")
++        self.assertEqual(born["Christian Drejer"], "1982-12-08")
++        self.assertTrue(all(born.values()), born)
++        self.assertTrue(all(rows[n]["date_of_birth_from"] == "2006-06-21" for n in born))
++        self.assertEqual(register("2005-06")["Uroš Slokar"]["date_of_birth"], "1983-05-14")
++        self.assertNotIn("dorell_wright", simulated_ages("2004-05", "2004-11-03", ROOT))   # the frozen null age stands
++        self.assertEqual(simulated_ages("2004-05", "2006-07-01", ROOT).get("dorell_wright"), 20)
++
++    def test_identity_lookups_read_prospect_evidence_and_researched_births(self):
++        from runtime import signing
++        self.assertEqual(signing.league_identity(ROOT, "drejech01")["birth_date"], "1982-12-08")
++        self.assertEqual(signing.league_identity(ROOT, "slokaur01")["birth_date"], "1983-05-14")
++        self.assertEqual(signing.prospect_identities(ROOT)["slokaur01"]["position"], "F")
++
++
++class TeamDesk(unittest.TestCase):
++    def test_unsigned_rights_are_not_a_contract_and_have_no_role(self):
++        from runtime import team_status
++        reg = {p["name"]: (a, role) for p, a, role in team_status.register(ROOT, "2006-06-20", "2005-06")}
++        self.assertEqual(reg["Uroš Slokar"], ("Unsigned draft rights; not on the roster", "N/A"))
++        with live_season():
++            blocks = team_status.blocks(ROOT, "2006-06-20")
++        team = next(v for k, v in blocks.items() if str(k).endswith("00_Team/Team/README.md"))
++        self.assertIn("15 under contract (12 active, 3 on the injured list)", team)
++
++    def test_contracts_ending_june_30_are_labelled_after_the_regular_season(self):
++        from runtime import team_status
++        ending = team_status.expiring(ROOT, "2006-06-20", "2005-06")
++        self.assertEqual(set(ending), {"Mike James", "Caron Butler", "Eddie Gill", "Mike Wilks", "Matt Carroll"})
++        self.assertIn("qualifying-offer decision", ending["Caron Butler"])
++        self.assertEqual(team_status.expiring(ROOT, "2006-03-01", "2005-06"), {})       # in season: no label
++
++    def test_register_term_clauses_follow_the_contract_sheet(self):
++        from runtime.miami_cards import control_texts
++        from runtime.rollover import contract_head
++        rows = register("2004-05")
++        self.assertIn("3 season(s) from 2004-05, $43,008,660 scheduled", rows["Brian Grant"]["control"])
++        self.assertIn("2 season(s) from 2004-05, $4,392,297 scheduled", rows["Caron Butler"]["control"])
++        self.assertEqual(control_texts(ROOT, "2004-05")[1], [])
++        self.assertEqual(contract_head({"2004-05": 1930680, "2005-06": 2461617}, "2004-05"),
++                         "2 season(s) from 2004-05, $4,392,297 scheduled ($1,930,680 in 2004-05)")
++        self.assertIn("3 season(s) from 2004-05, $43,008,660", card("2004-05", "brian_grant"))
++
++    def test_payroll_ceiling_recorded_without_changing_a_decision(self):
++        from runtime import gm
++        from runtime.rollover import season_budget
++        cfg = json.loads((CAREER / "2005-06/00_Team/team_config.json").read_text(encoding="utf-8"))["budget"]
++        self.assertEqual((cfg["payroll_ceiling"], cfg["payroll_ceiling_through_2004_05"]), (61700000, 57000000))
++        market = SimpleNamespace(valuation=SimpleNamespace(value=lambda b: None))
++        with mock.patch.object(gm, "TEAM", Path("career/Dwyane_Wade/2005-06/00_Team")), mock.patch.object(gm, "SEASON", "2005-06"):
++            self.assertEqual(gm.FrontOffice("2005-03-01", market, ROOT).payroll_ceiling(), 57000000)   # a 2004-05 date
++            self.assertEqual(gm.FrontOffice("2006-01-07", market, ROOT).payroll_ceiling(), 61700000)
++        nxt = season_budget(cfg, "2005-06", "2006-07", ROOT)
++        self.assertEqual(nxt["payroll_ceiling_through_2004_05"], 57000000)
++        self.assertGreater(nxt["payroll_ceiling"], 61700000)
++
++
++class PersonnelCards(unittest.TestCase):
++    def test_wade_card_has_his_playoffs_and_honors(self):
++        text = card("2005-06", "dwyane_wade")
++        self.assertIn("| 2003-04 | Miami Heat | 2 | 2 | 26.0 | 10.5 |", text)
++        self.assertIn("| 2004-05 | Miami Heat | 12 | 12 | 36.8 |", text)
++        self.assertIn("| 2005-06 | Miami Heat | 17 | 17 | 35.2 |", text)
++        self.assertIn("36 honor(s) earned", text)
++        self.assertIn("Most Valuable Player", text)
++        self.assertNotIn("has not started", text)
++
++    def test_arrivals_get_every_season_and_one_percentage_format(self):
++        okur = card("2005-06", "mehmet_okur")
++        self.assertIn("| 2004-05 | Miami Heat | 12 | 0 | 19.1 |", okur)
++        self.assertIn("| 2005-06 | Miami Heat | 17 | 17 | 33.6 |", okur)
++        self.assertIn("| 2003-04 | Detroit Pistons | 70 | 40 | 24.4 | 9.7 | 5.5 | 1.2 | 0.5 | 0.8 | 1.3 | 45.3% | 46.7% | 75.7% |", okur)
++        self.assertNotIn("not started", okur.split("## Regular-season statistics by year")[1])
++        brown = card("2005-06", "pj_brown")
++        self.assertIn("| 2003-04 |", brown)
++        self.assertIn("| 2004-05 |", brown)
++        self.assertIn("2 honor(s) earned", card("2005-06", "mike_james"))
++
++    def test_rights_holder_card_and_ages(self):
++        slokar = card("2005-06", "uros_slokar")
++        self.assertIn("**Role:** Not on the roster (unsigned draft rights)", slokar)
++        self.assertIn("**Age at assessment:** 22", slokar)
++        self.assertIn("**Age at assessment:** 18", card("2004-05", "dorell_wright"))
++
++    def test_percent_cells_only_in_the_shooting_columns(self):
++        from runtime.miami_cards import percent_cell
++        self.assertEqual(percent_cell("0.461"), "46.1%")
++        self.assertEqual(percent_cell(".381"), "38.1%")
++        self.assertEqual(percent_cell("N/A"), "N/A")
++        self.assertEqual(percent_cell("45.2%"), "45.2%")
++
++    def test_cards_are_current_and_each_season_has_a_card_index(self):
++        from runtime import miami_cards
++        with live_season():
++            self.assertEqual(miami_cards.refresh(ROOT, write=False), [])
++        for season in ("2004-05", "2005-06"):
++            self.assertTrue((CAREER / season / "00_Team/Team/Player_Cards/README.md").is_file())
++
++    def test_arrival_template_uses_one_format_and_no_stale_coverage(self):
++        from runtime.rollover import arrival_card
++        prior = {"team_codes": ["Utah Jazz"], "totals": {"games": 10, "games_started": 0, "minutes": 100, "points": 50,
++                 "offensive_rebounds": 5, "defensive_rebounds": 10, "assists": 5, "steals": 1, "blocks": 1, "turnovers": 3,
++                 "field_goals_made": 9, "field_goals_attempted": 20, "three_point_field_goals_made": 1,
++                 "three_point_field_goals_attempted": 4, "free_throws_made": 3, "free_throws_attempted": 4}}
++        text = arrival_card("Test Player", {"position": "PG"}, "2006-10-01", "Existing contract.", "x", prior, "2006-07", "Joined")
++        self.assertIn("| 45.0% | 25.0% | 75.0% |", text)
++        self.assertNotIn("not started.", text)
++        self.assertNotIn("No playoff appearances recorded", text)
++
++
++class TeamPages(unittest.TestCase):
++    def test_closed_pages_list_only_players_held_and_an_empty_week_is_complete(self):
++        from runtime import write_back
++        with live_season():
++            pages = write_back.closed_team_pages(ROOT)
++        week = next(t for p, t in pages.items() if p.as_posix().endswith("Team/2003-04/10_October/Week_3/Team_Stats.md"))
++        self.assertIn("complete; no Miami game in this period", week)
++        for name in ("Malik Allen", "Cherokee Parks", "Udonis Haslem", "John Wallace"):     # production rows; the dated
++            self.assertNotRegex(week, rf"\| {name} \| [A-Z/]+ \| \d")                    # June 26 table stays as labelled
++        month = next(t for p, t in pages.items() if p.as_posix().endswith("Team/2003-04/10_October/Team_Stats.md"))
++        self.assertIn("| October 15-21, 2003 | 0 | No games |", month)
++        season = next(t for p, t in pages.items() if p.as_posix().endswith("Team/2004-05/Team_Stats.md"))
++        self.assertNotRegex(season, r"\| (Bernard Robinson|Christian Drejer) \| [A-Z/]+ \| \d")
++
++    def test_live_pages_drop_unsigned_rights(self):
++        text = (CAREER / "Stats_and_Awards/Team/2005-06/Team_Stats.md").read_text(encoding="utf-8")
++        self.assertNotIn("| Uroš Slokar |", text)
++
++    def test_contract_holdings_exclude_rights_and_voids(self):
++        from runtime.write_back import contract_holdings, register_names
++        players = [{"name": "A", "status": "under_contract"}, {"name": "B", "status": "unsigned_draft_rights"},
++                   {"name": "C", "status": "renounced"}, {"name": "D", "status": "under_contract"}]
++        held = contract_holdings(players, [
++            {"player": "A", "from": "2003-06-26", "until": None, "basis": "draft rights"},
++            {"player": "B", "from": "2005-06-28", "until": None, "basis": "draft rights (No. 58 pick), unsigned"},
++            {"player": "C", "from": "2003-06-26", "until": "2003-11-11", "basis": "draft rights"},
++            {"player": "D", "from": "2003-09-30", "until": "2003-10-27", "basis": "camp contract", "void": True}])
++        self.assertEqual(list(held), ["A"])
++        self.assertEqual(register_names(players), ["A", "D"])
++
++    def test_season_pages_state_the_playoff_record_and_the_hub_lists_every_season(self):
++        from runtime import playoff_stats, team_status
++        section = playoff_stats.team_season_section(ROOT, "2005-06", "2006-06-20")
++        self.assertIn("17 closed Miami playoff game(s), 11-6", section)
++        self.assertIn("(Playoffs/Team_Playoff_Stats.md)", section)
++        text = (CAREER / "Stats_and_Awards/Team/2003-04/Team_Stats.md").read_text(encoding="utf-8")
++        self.assertIn("5 closed Miami playoff game(s), 1-4", text)
++        self.assertNotIn("No playoff games recorded", text)
++        hub = team_status.team_stats_readme(ROOT)
++        for season in ("2003-04", "2004-05", "2005-06"):
++            self.assertIn(f"[{season}]({season}/Team_Stats.md)", hub)
++        self.assertNotIn("June 26 checkpoint", hub)
++
++
++if __name__ == "__main__":
++    unittest.main()
+-- 
+2.43.0
+

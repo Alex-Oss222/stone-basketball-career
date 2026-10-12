@@ -1,0 +1,10 @@
+import sys, json, collections, pickle; sys.path.insert(0, '/home/user/stone-basketball-career')
+from runtime import write_back
+lines, unmatched = write_back.closed_lines(season="2005-06")
+print(len(lines), "players; unmatched", len(unmatched), unmatched[:20])
+pickle.dump(lines, open("lines_2005_06.pkl","wb"))
+r = lines.get("jonesju01", [])
+print(len(r))
+print(r[0].keys())
+c = collections.Counter((x.get("team") or x.get("club"), x["date"][:7]) for x in r)
+for k,v in sorted(c.items(), key=lambda kv: (kv[0][1], str(kv[0][0]))): print(k, v)
