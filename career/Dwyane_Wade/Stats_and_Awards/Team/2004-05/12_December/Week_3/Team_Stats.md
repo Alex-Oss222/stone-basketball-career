@@ -32,8 +32,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Udonis Haslem | PF | 3 | 17.4 | 5.0 | 3.7 | 0.7 | 0.0 | 0.3 | 1.0 |
 | Maurice Baker | PG | 4 | 8.9 | 4.0 | 0.5 | 0.8 | 0.0 | 0.2 | 1.0 |
 | John Edwards | C | 2 | 8.8 | 2.5 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Bernard Robinson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Christian Drejer | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Rafer Alston | PG | 4 | 12.7 | 3.0 | 1.2 | 2.5 | 1.0 | 0.0 | 1.0 |
 | Donyell Marshall | PF | 1 | 4.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
@@ -58,8 +56,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Udonis Haslem | 0 | 7/9 | .778 | 0/0 | N/A | 1/1 | 1.000 | 3 | 8 |
 | Maurice Baker | 0 | 5/17 | .294 | 2/6 | .333 | 4/7 | .571 | 0 | 2 |
 | John Edwards | 0 | 2/7 | .286 | 0/1 | .000 | 1/2 | .500 | 0 | 2 |
-| Bernard Robinson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Christian Drejer | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Rafer Alston | 0 | 4/22 | .182 | 1/9 | .111 | 3/4 | .750 | 2 | 3 |
 | Donyell Marshall | 0 | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 

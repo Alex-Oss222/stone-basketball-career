@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `bynumwi01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Phoenix Suns · **Basis:** Phoenix Suns: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #3 · **Born:** 1983-01-04 · **Age on card date:** 23  
+**Position:** PG (Point guard) · **Jersey:** #0 · **Born:** 1983-01-04 · **Age on card date:** 23  
 **Registry ID:** `bynumwi01`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
@@ -41,8 +41,8 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 23 | PHX | NBA | PG | 13 | 0 | 8.1 | 1.1 | 2.5 | .438 | 0.2 | 0.5 | .429 | 0.8 | 1.9 | .440 | .484 | 0.7 | 1.0 | .692 | 0.2 | 0.8 | 1.1 | 0.7 | 0.2 | 0.2 | 0.8 | 0.8 | 3.1 | .530 | — |
-| [December 2005](../2005-06/12_December/League_Stats.md) | 23 | PHX | NBA | PG | 5 | 0 | 15.1 | 2.8 | 5.4 | .519 | 0.4 | 1.0 | .400 | 2.4 | 4.4 | .545 | .556 | 2.0 | 3.2 | .625 | 0.4 | 0.8 | 1.2 | 1.2 | 0.8 | 0.4 | 1.0 | 2.0 | 8.0 | .588 | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 22 | PHX | NBA | PG | 13 | 0 | 8.1 | 1.1 | 2.5 | .438 | 0.2 | 0.5 | .429 | 0.8 | 1.9 | .440 | .484 | 0.7 | 1.0 | .692 | 0.2 | 0.8 | 1.1 | 0.7 | 0.2 | 0.2 | 0.8 | 0.8 | 3.1 | .530 | — |
+| [December 2005](../2005-06/12_December/League_Stats.md) | 22 | PHX | NBA | PG | 5 | 0 | 15.1 | 2.8 | 5.4 | .519 | 0.4 | 1.0 | .400 | 2.4 | 4.4 | .545 | .556 | 2.0 | 3.2 | .625 | 0.4 | 0.8 | 1.2 | 1.2 | 0.8 | 0.4 | 1.0 | 2.0 | 8.0 | .588 | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 23 | PHX | NBA | PG | 2 | 0 | 11.6 | 0.0 | 2.0 | .000 | 0.0 | 0.5 | .000 | 0.0 | 1.5 | .000 | .000 | 2.0 | 3.0 | .667 | 0.0 | 0.5 | 0.5 | 0.5 | 0.0 | 0.0 | 0.5 | 0.5 | 2.0 | .301 | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 23 | PHX | NBA | PG | 3 | 0 | 12.1 | 2.0 | 5.0 | .400 | 0.3 | 0.7 | .500 | 1.7 | 4.3 | .385 | .433 | 1.0 | 1.0 | 1.000 | 0.7 | 0.0 | 0.7 | 1.3 | 0.0 | 0.0 | 0.0 | 0.7 | 5.3 | .490 | — |
 | [March 2006](../2005-06/03_March/League_Stats.md) | 23 | PHX | NBA | PG | 4 | 0 | 13.4 | 1.5 | 4.2 | .353 | 0.2 | 0.2 | 1.000 | 1.2 | 4.0 | .312 | .382 | 1.5 | 2.0 | .750 | 0.0 | 1.0 | 1.0 | 1.0 | 0.8 | 0.2 | 1.0 | 2.2 | 4.8 | .463 | — |
@@ -57,14 +57,14 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 23 | PHX | NBA | PG | 4 | 0 | 8.6 | 1.0 | 2.5 | .400 | 0.2 | 0.8 | .333 | 0.8 | 1.8 | .429 | .450 | 0.8 | 1.0 | .750 | 0.8 | 1.0 | 1.8 | 0.8 | 0.2 | 0.0 | 1.5 | 1.2 | 3.0 | .510 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 23 | PHX | NBA | PG | 2 | 0 | 8.0 | 1.5 | 3.5 | .429 | 0.0 | 0.0 | N/A | 1.5 | 3.5 | .429 | .429 | 0.0 | 1.0 | .000 | 0.0 | 1.5 | 1.5 | 1.0 | 0.5 | 0.5 | 0.0 | 0.5 | 3.0 | .381 | — |
-| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 23 | PHX | NBA | PG | 3 | 0 | 9.7 | 1.7 | 3.3 | .500 | 0.3 | 0.7 | .500 | 1.3 | 2.7 | .500 | .550 | 1.3 | 1.3 | 1.000 | 0.0 | 0.7 | 0.7 | 1.3 | 0.0 | 0.3 | 1.0 | 1.0 | 5.0 | .638 | — |
-| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 23 | PHX | NBA | PG | 4 | 0 | 6.4 | 0.5 | 1.2 | .400 | 0.2 | 0.5 | .500 | 0.2 | 0.8 | .333 | .500 | 0.5 | 0.8 | .667 | 0.0 | 0.5 | 0.5 | 0.0 | 0.2 | 0.2 | 0.5 | 0.2 | 1.8 | .554 | — |
-| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 23 | PHX | NBA | PG | 3 | 0 | 12.9 | 2.7 | 4.3 | .615 | 0.3 | 0.3 | 1.000 | 2.3 | 4.0 | .583 | .654 | 1.7 | 3.0 | .556 | 0.0 | 1.0 | 1.0 | 1.3 | 0.0 | 0.3 | 1.0 | 2.3 | 7.3 | .649 | — |
-| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 23 | PHX | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 23 | PHX | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 23 | PHX | NBA | PG | 2 | 0 | 18.4 | 3.0 | 7.0 | .429 | 0.5 | 2.0 | .250 | 2.5 | 5.0 | .500 | .464 | 2.5 | 3.5 | .714 | 1.0 | 0.5 | 1.5 | 1.0 | 2.0 | 0.5 | 1.0 | 1.5 | 9.0 | .527 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 22 | PHX | NBA | PG | 4 | 0 | 8.6 | 1.0 | 2.5 | .400 | 0.2 | 0.8 | .333 | 0.8 | 1.8 | .429 | .450 | 0.8 | 1.0 | .750 | 0.8 | 1.0 | 1.8 | 0.8 | 0.2 | 0.0 | 1.5 | 1.2 | 3.0 | .510 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 22 | PHX | NBA | PG | 2 | 0 | 8.0 | 1.5 | 3.5 | .429 | 0.0 | 0.0 | N/A | 1.5 | 3.5 | .429 | .429 | 0.0 | 1.0 | .000 | 0.0 | 1.5 | 1.5 | 1.0 | 0.5 | 0.5 | 0.0 | 0.5 | 3.0 | .381 | — |
+| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 22 | PHX | NBA | PG | 3 | 0 | 9.7 | 1.7 | 3.3 | .500 | 0.3 | 0.7 | .500 | 1.3 | 2.7 | .500 | .550 | 1.3 | 1.3 | 1.000 | 0.0 | 0.7 | 0.7 | 1.3 | 0.0 | 0.3 | 1.0 | 1.0 | 5.0 | .638 | — |
+| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 22 | PHX | NBA | PG | 4 | 0 | 6.4 | 0.5 | 1.2 | .400 | 0.2 | 0.5 | .500 | 0.2 | 0.8 | .333 | .500 | 0.5 | 0.8 | .667 | 0.0 | 0.5 | 0.5 | 0.0 | 0.2 | 0.2 | 0.5 | 0.2 | 1.8 | .554 | — |
+| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 22 | PHX | NBA | PG | 3 | 0 | 12.9 | 2.7 | 4.3 | .615 | 0.3 | 0.3 | 1.000 | 2.3 | 4.0 | .583 | .654 | 1.7 | 3.0 | .556 | 0.0 | 1.0 | 1.0 | 1.3 | 0.0 | 0.3 | 1.0 | 2.3 | 7.3 | .649 | — |
+| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 22 | PHX | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 22 | PHX | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 22 | PHX | NBA | PG | 2 | 0 | 18.4 | 3.0 | 7.0 | .429 | 0.5 | 2.0 | .250 | 2.5 | 5.0 | .500 | .464 | 2.5 | 3.5 | .714 | 1.0 | 0.5 | 1.5 | 1.0 | 2.0 | 0.5 | 1.0 | 1.5 | 9.0 | .527 | — |
 | [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 23 | PHX | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 23 | PHX | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 23 | PHX | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |

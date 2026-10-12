@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `andrsnocioni.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** San Antonio Spurs · **Basis:** San Antonio Spurs: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** Unassigned · **Born:** 1979-11-30 · **Age on card date:** 26  
+**Position:** SF (Small forward) · **Jersey:** #5 · **Born:** 1979-11-30 · **Age on card date:** 26  
 **Registry ID:** `andrsnocioni`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
@@ -57,9 +57,9 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 26 | SA | NBA | SF | 4 | 4 | 29.6 | 5.5 | 13.0 | .423 | 1.0 | 4.0 | .250 | 4.5 | 9.0 | .500 | .462 | 3.5 | 4.0 | .875 | 0.0 | 5.8 | 5.8 | 1.2 | 0.5 | 0.5 | 2.0 | 3.0 | 15.5 | .525 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 26 | SA | NBA | SF | 3 | 3 | 24.1 | 2.3 | 8.3 | .280 | 0.3 | 1.7 | .200 | 2.0 | 6.7 | .300 | .300 | 2.7 | 2.7 | 1.000 | 1.0 | 5.7 | 6.7 | 1.0 | 0.0 | 1.3 | 1.0 | 3.0 | 7.7 | .403 | — |
-| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 26 | SA | NBA | SF | 4 | 4 | 28.9 | 4.0 | 9.2 | .432 | 1.0 | 3.0 | .333 | 3.0 | 6.2 | .480 | .486 | 0.8 | 1.0 | .750 | 0.5 | 4.8 | 5.2 | 1.5 | 0.2 | 1.0 | 1.8 | 1.8 | 9.8 | .503 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 25 | SA | NBA | SF | 4 | 4 | 29.6 | 5.5 | 13.0 | .423 | 1.0 | 4.0 | .250 | 4.5 | 9.0 | .500 | .462 | 3.5 | 4.0 | .875 | 0.0 | 5.8 | 5.8 | 1.2 | 0.5 | 0.5 | 2.0 | 3.0 | 15.5 | .525 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 25 | SA | NBA | SF | 3 | 3 | 24.1 | 2.3 | 8.3 | .280 | 0.3 | 1.7 | .200 | 2.0 | 6.7 | .300 | .300 | 2.7 | 2.7 | 1.000 | 1.0 | 5.7 | 6.7 | 1.0 | 0.0 | 1.3 | 1.0 | 3.0 | 7.7 | .403 | — |
+| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 25 | SA | NBA | SF | 4 | 4 | 28.9 | 4.0 | 9.2 | .432 | 1.0 | 3.0 | .333 | 3.0 | 6.2 | .480 | .486 | 0.8 | 1.0 | .750 | 0.5 | 4.8 | 5.2 | 1.5 | 0.2 | 1.0 | 1.8 | 1.8 | 9.8 | .503 | — |
 | [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 26 | SA | NBA | SF | 3 | 3 | 28.4 | 3.7 | 10.0 | .367 | 1.3 | 3.3 | .400 | 2.3 | 6.7 | .350 | .433 | 2.7 | 3.0 | .889 | 1.3 | 6.7 | 8.0 | 1.3 | 1.0 | 1.0 | 1.0 | 2.7 | 11.3 | .501 | — |
 | [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 26 | SA | NBA | SF | 4 | 4 | 25.2 | 4.2 | 9.8 | .436 | 0.8 | 2.0 | .375 | 3.5 | 7.8 | .452 | .474 | 2.2 | 2.5 | .900 | 0.5 | 3.0 | 3.5 | 2.8 | 0.8 | 0.2 | 1.8 | 3.0 | 11.5 | .530 | — |
 | [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 26 | SA | NBA | SF | 3 | 3 | 28.3 | 5.3 | 12.3 | .432 | 2.0 | 4.7 | .429 | 3.3 | 7.7 | .435 | .514 | 2.7 | 2.7 | 1.000 | 0.7 | 4.3 | 5.0 | 2.0 | 1.3 | 0.7 | 1.7 | 1.0 | 15.3 | .568 | — |

@@ -18,7 +18,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | 7 seasons |  |
 | Reported original value | $122,000,000 | reported total |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 7 |  |
 
 ### Contract identity and execution
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2003-04 |
 | Verified final season | 2009-10 |
 | Verified expiry date | 2010-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -52,7 +53,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -111,7 +112,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 early termination option after 2007-08
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -128,7 +129,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -182,7 +183,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | 7 seasons |  |
 | Reported original value | $122,000,000 | reported total |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 7 |  |
 
 ### Contract identity and execution
@@ -197,6 +198,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2003-04 |
 | Verified final season | 2009-10 |
 | Verified expiry date | 2010-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -216,7 +218,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -275,7 +277,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 early termination option after 2007-08
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -304,9 +306,10 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | contract_history |
 | Signing date | 2000-08-01 |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | player_option_pending |
+| Verified final season | 2003-04 |
+| Verified expiry date | 2004-06-30 |
+| Ended on (dated event) | Not recorded |
+| Status | expired |
 | Contract wording | Re-signed by San Antonio Spurs to a four-year, $45,875,500 contract. Included player option for 2003/04. |
 
 ### Salary by season
@@ -320,7 +323,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -375,7 +378,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Later option decisions exist in the contract history and are not applied.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

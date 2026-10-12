@@ -132,26 +132,67 @@ Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.105. Pressure concerns affect t
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2003-04 has not started. No prior NBA season is recorded for this player in the current card.
+**Coverage:** No NBA season before 2003-04 (the alternate-history Wade; the historical Wade's statistics are never imported); 2003-04: 75 Miami game(s) from closed results; 2004-05: 76 Miami game(s) from closed results; 2005-06: 82 closed Miami game(s) through 2006-06-20.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2003-04 | MIA | 75 | 70 | 35.0 | 17.9 | 4.8 | 4.5 | 1.6 | 1.0 | 1.1 | 52.0% | 39.7% | 90.9% |
-| 2004-05 | MIA | 76 | 76 | 36.2 | 21.3 | 5.4 | 4.0 | 1.4 | 1.2 | 1.3 | 53.0% | 42.9% | 93.2% |
-| 2005-06 | MIA | 82 | 82 | 37.5 | 27.6 | 5.9 | 4.2 | 1.8 | 1.2 | 1.8 | 56.9% | 46.9% | 94.1% |
+| 2003-04 | Miami Heat | 75 | 70 | 35.0 | 17.9 | 4.8 | 4.5 | 1.6 | 1.0 | 1.1 | 52.0% | 39.7% | 90.9% |
+| 2004-05 | Miami Heat | 76 | 76 | 36.2 | 21.3 | 5.4 | 4.0 | 1.4 | 1.2 | 1.3 | 53.0% | 42.9% | 93.2% |
+| 2005-06 | Miami Heat | 82 | 82 | 37.5 | 27.6 | 5.9 | 4.2 | 1.8 | 1.2 | 1.8 | 56.9% | 46.9% | 94.1% |
 
-Source: [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json) for roster status; detailed historical statistical lines have not yet been imported.
+Source: [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json) for roster status. Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** 2003-04 playoffs have not started. Prior playoff statistical history has not yet been imported into this card.
+**Coverage:** playoff games from closed results through 2006-06-20, every club's (`runtime/playoff_stats.py`, the playoff pages' aggregation); playoff history before 2003-04 is not imported.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2003-04 | Miami Heat | 2 | 2 | 26.0 | 10.5 | 4.0 | 4.0 | 1.0 | 1.0 | 1.0 | 53.8% | 75.0% | 100.0% |
+| 2004-05 | Miami Heat | 12 | 12 | 36.8 | 20.5 | 4.8 | 4.9 | 1.8 | 1.3 | 1.1 | 50.0% | 43.6% | 94.8% |
+| 2005-06 | Miami Heat | 17 | 17 | 35.2 | 25.7 | 5.3 | 3.5 | 1.2 | 1.1 | 1.7 | 58.2% | 45.7% | 95.4% |
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-No verified awards or honors have been imported into this card through June 26, 2003.
+36 honor(s) earned in the simulated league through 2006-06-20, from `awards.json`. Awards before 2003-04 are not imported.
+
+| Season / year | Award or honor | Announced | Source |
+| --- | --- | --- | --- |
+| 2003-04 | Eastern Conference Rookie of the Month (2003-10-28 to 2003-11-30) | 2003-12-02 | [Record](../../../../Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
+| 2003-04 | Eastern Conference Player of the Week (2003-12-15 to 2003-12-21) | 2003-12-22 | [Record](../../../../Stats_and_Awards/League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week) |
+| 2003-04 | Eastern Conference Player of the Month (2003-12-01 to 2003-12-31) | 2004-01-02 | [Record](../../../../Stats_and_Awards/League/2003-04/12_December/League_Awards.md#player-of-the-month) |
+| 2003-04 | Eastern Conference Rookie of the Month (2003-12-01 to 2003-12-31) | 2004-01-02 | [Record](../../../../Stats_and_Awards/League/2003-04/12_December/League_Awards.md#rookie-of-the-month) |
+| 2003-04 | Eastern Conference Player of the Week (2003-12-29 to 2004-01-04) | 2004-01-05 | [Record](../../../../Stats_and_Awards/League/2003-04/01_January/Week_1/League_Awards.md#player-of-the-week) |
+| 2003-04 | Eastern Conference Player of the Month (2004-01-01 to 2004-01-31) | 2004-02-02 | [Record](../../../../Stats_and_Awards/League/2003-04/01_January/League_Awards.md#player-of-the-month) |
+| 2003-04 | Eastern Conference Rookie of the Month (2004-01-01 to 2004-01-31) | 2004-02-02 | [Record](../../../../Stats_and_Awards/League/2003-04/01_January/League_Awards.md#rookie-of-the-month) |
+| 2003-04 | All-Star (2003-10-28 to 2004-02-03) | 2004-02-03 | [Record](../../../../Stats_and_Awards/League/2003-04/All_Star.md#all-stars) |
+| 2003-04 | Eastern Conference Rookie of the Month (2004-02-01 to 2004-02-29) | 2004-03-02 | [Record](../../../../Stats_and_Awards/League/2003-04/02_February/League_Awards.md#rookie-of-the-month) |
+| 2003-04 | Eastern Conference Player of the Week (2004-03-08 to 2004-03-14) | 2004-03-15 | [Record](../../../../Stats_and_Awards/League/2003-04/03_March/Week_2/League_Awards.md#player-of-the-week) |
+| 2003-04 | Eastern Conference Player of the Month (2004-03-01 to 2004-03-31) | 2004-04-02 | [Record](../../../../Stats_and_Awards/League/2003-04/03_March/League_Awards.md#player-of-the-month) |
+| 2003-04 | Eastern Conference Rookie of the Month (2004-03-01 to 2004-03-31) | 2004-04-02 | [Record](../../../../Stats_and_Awards/League/2003-04/03_March/League_Awards.md#rookie-of-the-month) |
+| 2003-04 | Eastern Conference Rookie of the Month (2004-04-01 to 2004-04-14) | 2004-04-16 | [Record](../../../../Stats_and_Awards/League/2003-04/04_April/League_Awards.md#rookie-of-the-month) |
+| 2003-04 | Rookie of the Year (2003-10-28 to 2004-04-14) | 2004-04-20 | [Record](../../../../Stats_and_Awards/League/2003-04/Season_Awards.md#rookie-of-the-year) |
+| 2003-04 | All-NBA First Team (2003-10-28 to 2004-04-14) | 2004-04-25 | [Record](../../../../Stats_and_Awards/League/2003-04/Season_Awards.md#all-nba-teams) |
+| 2003-04 | All-Rookie First Team (2003-10-28 to 2004-04-14) | 2004-04-27 | [Record](../../../../Stats_and_Awards/League/2003-04/Season_Awards.md#all-rookie-teams) |
+| 2004-05 | Eastern Conference Player of the Month (2004-12-01 to 2004-12-31) | 2005-01-02 | [Record](../../../../Stats_and_Awards/League/2004-05/12_December/League_Awards.md#player-of-the-month) |
+| 2004-05 | Eastern Conference Player of the Week (2005-01-24 to 2005-01-30) | 2005-01-31 | [Record](../../../../Stats_and_Awards/League/2004-05/01_January/Week_4/League_Awards.md#player-of-the-week) |
+| 2004-05 | All-Star (2004-11-02 to 2005-02-08) | 2005-02-08 | [Record](../../../../Stats_and_Awards/League/2004-05/All_Star.md#all-stars) |
+| 2004-05 | Rookie Challenge / Rising Stars MVP (2005-02-18 to 2005-02-18) | 2005-02-18 | [Record](../../../../Stats_and_Awards/League/2004-05/All_Star_Games.md#rookie-challenge-mvp) |
+| 2004-05 | Eastern Conference Player of the Month (2005-03-01 to 2005-03-31) | 2005-04-02 | [Record](../../../../Stats_and_Awards/League/2004-05/03_March/League_Awards.md#player-of-the-month) |
+| 2004-05 | Eastern Conference Player of the Month (2005-04-01 to 2005-04-20) | 2005-04-22 | [Record](../../../../Stats_and_Awards/League/2004-05/04_April/League_Awards.md#player-of-the-month) |
+| 2004-05 | All-NBA First Team (2004-11-02 to 2005-04-20) | 2005-05-18 | [Record](../../../../Stats_and_Awards/League/2004-05/Season_Awards.md#all-nba-teams) |
+| 2005-06 | Eastern Conference Player of the Week (2005-11-07 to 2005-11-13) | 2005-11-14 | [Record](../../../../Stats_and_Awards/League/2005-06/11_November/Week_2/League_Awards.md#player-of-the-week) |
+| 2005-06 | Eastern Conference Player of the Week (2005-11-14 to 2005-11-20) | 2005-11-21 | [Record](../../../../Stats_and_Awards/League/2005-06/11_November/Week_3/League_Awards.md#player-of-the-week) |
+| 2005-06 | Eastern Conference Player of the Month (2005-11-01 to 2005-11-30) | 2005-12-02 | [Record](../../../../Stats_and_Awards/League/2005-06/11_November/League_Awards.md#player-of-the-month) |
+| 2005-06 | Eastern Conference Player of the Week (2005-11-28 to 2005-12-04) | 2005-12-05 | [Record](../../../../Stats_and_Awards/League/2005-06/12_December/Week_1/League_Awards.md#player-of-the-week) |
+| 2005-06 | Eastern Conference Player of the Week (2005-12-05 to 2005-12-11) | 2005-12-12 | [Record](../../../../Stats_and_Awards/League/2005-06/12_December/Week_2/League_Awards.md#player-of-the-week) |
+| 2005-06 | Eastern Conference Player of the Week (2005-12-26 to 2006-01-01) | 2006-01-02 | [Record](../../../../Stats_and_Awards/League/2005-06/01_January/Week_1/League_Awards.md#player-of-the-week) |
+| 2005-06 | All-Star (2005-11-01 to 2006-02-02) | 2006-02-02 | [Record](../../../../Stats_and_Awards/League/2005-06/All_Star.md#all-stars) |
+| 2005-06 | Eastern Conference Player of the Month (2006-01-01 to 2006-01-31) | 2006-02-02 | [Record](../../../../Stats_and_Awards/League/2005-06/01_January/League_Awards.md#player-of-the-month) |
+| 2005-06 | Eastern Conference Player of the Month (2006-02-01 to 2006-02-28) | 2006-03-02 | [Record](../../../../Stats_and_Awards/League/2005-06/02_February/League_Awards.md#player-of-the-month) |
+| 2005-06 | Eastern Conference Player of the Week (2006-03-13 to 2006-03-19) | 2006-03-20 | [Record](../../../../Stats_and_Awards/League/2005-06/03_March/Week_3/League_Awards.md#player-of-the-week) |
+| 2005-06 | Eastern Conference Player of the Month (2006-03-01 to 2006-03-31) | 2006-04-02 | [Record](../../../../Stats_and_Awards/League/2005-06/03_March/League_Awards.md#player-of-the-month) |
+| 2005-06 | Most Valuable Player (2005-11-01 to 2006-04-19) | 2006-05-07 | [Record](../../../../Stats_and_Awards/League/2005-06/Season_Awards.md#most-valuable-player) |
+| 2005-06 | All-NBA First Team (2005-11-01 to 2006-04-19) | 2006-05-17 | [Record](../../../../Stats_and_Awards/League/2005-06/Season_Awards.md#all-nba-teams) |

@@ -18,14 +18,14 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | 6 seasons |  |
 | Reported original value | $103,670,000 | reported total |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 6 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | New Jersey Nets |
+| Assigned club | Milwaukee Bucks |
 | Signing club | New Jersey Nets |
 | Contract ID | kiddja01-2003-07-16 |
 | Signing route / evidence basis | re sign |
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2003-04 |
 | Verified final season | 2008-09 |
 | Verified expiry date | 2009-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -51,7 +52,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -104,16 +105,18 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-11-14 | New Jersey Nets | Milwaukee Bucks | 2005-06-league-trade-2005-11-14-fortsda01-kiddja01-mooremi01-thomati01 | [Dated league move](../../2005-06/League/league_moves.json) |
 
 ### Evidence and coverage
 
 agreed July 11 at $99M, raised to $103.67M by the cap figure (30% maximum, 12.5% raises)
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Dated league move](../../2005-06/League/league_moves.json)
 
 ### Current control and contract coverage
 
@@ -126,7 +129,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -180,14 +183,14 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | 6 seasons |  |
 | Reported original value | $103,670,000 | reported total |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 6 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | New Jersey Nets |
+| Assigned club | Milwaukee Bucks |
 | Signing club | New Jersey Nets |
 | Contract ID | kiddja01-2003-07-16 |
 | Signing route / evidence basis | re sign |
@@ -195,6 +198,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2003-04 |
 | Verified final season | 2008-09 |
 | Verified expiry date | 2009-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -213,7 +217,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -266,16 +270,18 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-11-14 | New Jersey Nets | Milwaukee Bucks | 2005-06-league-trade-2005-11-14-fortsda01-kiddja01-mooremi01-thomati01 | [Dated league move](../../2005-06/League/league_moves.json) |
 
 ### Evidence and coverage
 
 agreed July 11 at $99M, raised to $103.67M by the cap figure (30% maximum, 12.5% raises)
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Dated league move](../../2005-06/League/league_moves.json)
 
 ### Jason Kidd · existing contract; signing date not recorded
 
@@ -302,7 +308,8 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | free_agent_expiring |
+| Ended on (dated event) | Not recorded |
+| Status | expired |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -315,7 +322,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -368,7 +375,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

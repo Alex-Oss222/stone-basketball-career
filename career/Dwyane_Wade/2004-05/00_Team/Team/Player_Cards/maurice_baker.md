@@ -1,7 +1,7 @@
 # Maurice Baker | 2004-05 Player Profile
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
-**Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
+**Age at assessment:** 25 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** October 1, 2004 · **Statistics through:** 2005-09-30 
 
 **Contract/control:** Signed July 15, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05). (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
@@ -54,22 +54,24 @@ Unassessed.
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2004-05 not started.
+**Coverage:** No 2002-03 NBA record on this card; 2004-05: 51 closed Miami game(s) through 2005-09-30.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2004-05 | MIA | 51 | 0 | 4.7 | 1.7 | 0.7 | 0.3 | 0.2 | 0.1 | 0.4 | 40.2% | 31.8% | 59.1% |
+| 2004-05 | Miami Heat | 51 | 0 | 4.7 | 1.7 | 0.7 | 0.3 | 0.2 | 0.1 | 0.4 | 40.2% | 31.8% | 59.1% |
 
-Source: 2003-04 from closed simulated results (`Stats_and_Awards/League/2003-04/season_totals.json`); 2004-05 from closed Miami game results.
+Source: Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** playoff games from closed results through 2005-09-30, every club's (`runtime/playoff_stats.py`, the playoff pages' aggregation); playoff history before 2003-04 is not imported.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2004-05 | Miami Heat | 9 | 0 | 2.2 | 0.4 | 0.3 | 0.3 | 0.0 | 0.0 | 0.0 | 33.3% | N/A | 0.0% |
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2005-09-30 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

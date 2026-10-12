@@ -18,7 +18,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Malik Allen | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Caron Butler | SF | 3 | 32.3 | 12.0 | 6.3 | 2.7 | 0.7 | 0.3 | 1.7 |
 | Rasual Butler | SG/SF | 3 | 4.1 | 1.7 | 0.0 | 0.3 | 0.0 | 0.0 | 0.3 |
 | Anthony Carter | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -28,7 +27,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Eddie Jones | SG/SF | 3 | 37.4 | 22.3 | 4.0 | 1.7 | 0.7 | 0.3 | 3.0 |
 | Sean Lampley | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Dwyane Wade | SG/PG | 3 | 19.4 | 9.3 | 2.7 | 1.7 | 1.0 | 0.3 | 0.3 |
-| Jerome Beasley | PF/C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Stephen Jackson | SG | 3 | 15.8 | 9.3 | 2.0 | 1.7 | 1.0 | 0.0 | 1.3 |
 | Shawn Kemp | C | 3 | 13.2 | 7.0 | 4.3 | 1.0 | 0.3 | 0.0 | 0.0 |
 | Scott Padgett | PF | 3 | 33.8 | 14.7 | 10.0 | 2.7 | 1.0 | 0.7 | 2.3 |
@@ -43,7 +41,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Malik Allen | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Caron Butler | 3 | 16/39 | .410 | 0/2 | .000 | 4/7 | .571 | 6 | 13 |
 | Rasual Butler | 0 | 2/5 | .400 | 1/2 | .500 | 0/0 | N/A | 0 | 0 |
 | Anthony Carter | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
@@ -53,7 +50,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Eddie Jones | 3 | 23/58 | .397 | 13/30 | .433 | 8/13 | .615 | 3 | 9 |
 | Sean Lampley | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Dwyane Wade | 0 | 8/17 | .471 | 1/3 | .333 | 11/11 | 1.000 | 5 | 3 |
-| Jerome Beasley | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Stephen Jackson | 0 | 9/17 | .529 | 2/5 | .400 | 8/9 | .889 | 2 | 4 |
 | Shawn Kemp | 0 | 8/14 | .571 | 0/0 | N/A | 5/7 | .714 | 4 | 9 |
 | Scott Padgett | 3 | 15/37 | .405 | 6/15 | .400 | 8/12 | .667 | 11 | 19 |

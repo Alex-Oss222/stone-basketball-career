@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Golden State Warriors |
+| Assigned club | Boston Celtics |
 | Signing club | Not recorded |
 | Contract ID | welscji01-existing-68346913c64d |
 | Signing route / evidence basis | rookie_scale_rule |
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_rookie_contract |
 | Contract wording | Not recorded |
 
@@ -45,15 +46,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,234,080 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $1,326,600 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,419,240 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,177,114 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | season_salary_list | Fourth-year team option under the rookie scale; no decision recorded on or before 2003-06-26. |
+| 2005-06 | $2,177,114 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | season_salary_list | Fourth-year team option under the rookie scale; no decision recorded on or before 2003-06-26. Team option exercised 2004-11-23. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2005-06 | team_option | $2,177,114 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | team_option | $2,177,114 | 2004-10-31 | exercised | 2004-11-23 |
 
 ### Additional recorded annual compensation
 
@@ -101,12 +102,14 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2003-08-18 | Golden State Warriors | Dallas Mavericks | Not recorded | [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json) |
+| 2003-10-20 | Dallas Mavericks | Boston Celtics | Not recorded | [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json) |
 
 ### Evidence and coverage
 
 2002 first-round pick No. 16. Term set by the rookie scale rule (three seasons plus a fourth-year team option); no contract history page was available.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -116,6 +119,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 
 ### Current control and contract coverage
 
@@ -128,7 +132,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -189,7 +193,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Golden State Warriors |
+| Assigned club | Boston Celtics |
 | Signing club | Not recorded |
 | Contract ID | welscji01-existing-68346913c64d |
 | Signing route / evidence basis | rookie_scale_rule |
@@ -197,6 +201,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_rookie_contract |
 | Contract wording | Not recorded |
 
@@ -209,15 +214,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,234,080 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $1,326,600 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,419,240 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,177,114 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | season_salary_list | Fourth-year team option under the rookie scale; no decision recorded on or before 2003-06-26. |
+| 2005-06 | $2,177,114 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | season_salary_list | Fourth-year team option under the rookie scale; no decision recorded on or before 2003-06-26. Team option exercised 2004-11-23. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2005-06 | team_option | $2,177,114 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | team_option | $2,177,114 | 2004-10-31 | exercised | 2004-11-23 |
 
 ### Additional recorded annual compensation
 
@@ -265,12 +270,14 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2003-08-18 | Golden State Warriors | Dallas Mavericks | Not recorded | [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json) |
+| 2003-10-20 | Dallas Mavericks | Boston Celtics | Not recorded | [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json) |
 
 ### Evidence and coverage
 
 2002 first-round pick No. 16. Term set by the rookie scale rule (three seasons plus a fourth-year team option); no contract history page was available.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -280,6 +287,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 
 ## Source records
 

@@ -6,7 +6,7 @@ Career date: 2006-06-20 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
-Dwyane Wade is at 08 Playoffs. All milestone pages remain accessible; inactive pages explain their opening event.
+Dwyane Wade is at 03 Offseason. All milestone pages remain accessible; inactive pages explain their opening event.
 
 Activation: The authoritative current date and recorded event determine what is open.
 
@@ -25,7 +25,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2006-06-20 | Current checkpoint | 2006-06-04-miami-heat-at-toronto-raptors | Recorded | [Owning event](../2005-06/04_Training_Camp/note.md) |
+| 2006-06-20 | Current checkpoint | 2006-06-04-miami-heat-at-toronto-raptors | Recorded | [Owning event](../2005-06/03_Offseason/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2005-10-04 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
@@ -80,7 +80,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 ## Available response paths
 
-- [Open the current event](../2005-06/04_Training_Camp/note.md): Read the owning career note and record the player's actual response when one is due.
+- [Open the current event](../2005-06/03_Offseason/note.md): Read the owning career note and record the player's actual response when one is due.
 - [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
@@ -92,14 +92,14 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Authoritative career checkpoint](../2005-06/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2005-06/04_Training_Camp/note.md)
+- [Owning event](../2005-06/03_Offseason/note.md)
 - [Current contract and cap-control record](../2005-06/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2005-06/04_Training_Camp/wade_requests.json)
 - [Recorded request](../2005-06/09_Draft/wade_requests.json)
 - [Recorded request](../2005-06/10_Free_Agency/wade_requests.json)
 - [Dated staff rotation review](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-04-12/review.json)
 - [Current dated staff depth chart](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-04-12/depth_chart.json)
-- [Offseason player decisions and events](../2005-06/03_Offseason/note.md)
+- [Training-camp events and player response](../2005-06/04_Training_Camp/note.md)
 - [Recorded camp roster](../2005-06/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2005-06/00_Team/Team/Depth_Chart/Reviews/2006-04-12/rotation.json)
 - [Owning dated record](../2005-06/04_Training_Camp/Wade_Extension_Outlook_2005-10-31.md)

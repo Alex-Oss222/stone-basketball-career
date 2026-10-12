@@ -42,23 +42,26 @@ Unassessed.
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2003-04 from the simulated league record; 2004-05 not started.
+**Coverage:** 2002-03 regular season from the league record; earlier seasons are not imported; 2003-04: Los Angeles Lakers from the league record; 2004-05 had not started on 2004-10-31.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2003-04 | Los Angeles Lakers | 82 | 24 | 22.2 | 7.3 | 2.3 | 2.4 | 1.7 | 0.2 | 1.0 | 0.387 | 0.309 | 0.824 |
+| 2002-03 | Los Angeles Lakers | 82 | 82 | 34.5 | 10.5 | 2.9 | 3.6 | 1.1 | 0.2 | 1.1 | 43.7% | 40.1% | 80.0% |
+| 2003-04 | Los Angeles Lakers | 82 | 24 | 22.2 | 7.3 | 2.3 | 2.4 | 1.7 | 0.2 | 1.0 | 38.7% | 30.9% | 82.4% |
 | 2004-05 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
-Source: 2003-04 from closed simulated results (`Stats_and_Awards/League/2003-04/season_totals.json`); 2004-05 from closed Miami game results.
+Source: 2002-03 from the [league statistics file](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** playoff games from closed results through 2004-10-31, every club's (`runtime/playoff_stats.py`, the playoff pages' aggregation); playoff history before 2003-04 is not imported. The 2004-05 playoffs had not started on 2004-10-31.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Los Angeles Lakers | 17 | 0 | 20.8 | 7.1 | 1.8 | 1.9 | 0.9 | 0.4 | 1.1 | 39.3% | 45.2% | 76.7% |
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2004-10-31 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

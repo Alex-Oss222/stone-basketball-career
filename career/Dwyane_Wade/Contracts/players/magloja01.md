@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2005-06 |
 | Verified final season | 2008-09 |
 | Verified expiry date | 2009-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -49,7 +50,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -105,7 +106,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Simulated 2005 summer market: signing on 2005-08-19, from New Orleans Hornets. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -122,7 +123,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -191,6 +192,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2005-06 |
 | Verified final season | 2008-09 |
 | Verified expiry date | 2009-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -207,7 +209,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -263,7 +265,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Simulated 2005 summer market: signing on 2005-08-19, from New Orleans Hornets. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -279,7 +281,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | 4 seasons |  |
 | Reported original value | $4,871,131 | exact |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $1,726,771 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | $10,260,104 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
@@ -292,9 +294,10 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | contract_history |
 | Signing date | 2000-07-18 |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | under_rookie_contract |
+| Verified final season | 2004-05 |
+| Verified expiry date | 2005-06-30 |
+| Ended on (dated event) | Not recorded |
+| Status | expired |
 | Contract wording | Signed four-year, $4,871,131 rookie scale contract with Charlotte. Included team option for 2003/04. |
 
 ### Salary by season
@@ -305,10 +308,11 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | $1,121,280 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $1,726,771 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
+| 2004-05 | $8,533,333 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -321,6 +325,7 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 | --- | --- | --- | --- |
 | 2002-03 | Not recorded | Not recorded | Not recorded |
 | 2003-04 | Not recorded | Not recorded | Not recorded |
+| 2004-05 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -360,9 +365,9 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Carried by the 2004-05 league contract ledger (library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move)): the seasons from 2004-05 on.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -370,6 +375,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.shamsports.com/players/jamaal-magloire)
+- [League contract ledger (simulated league)](../../2004-05/League/contracts.json)
 
 ## Source records
 

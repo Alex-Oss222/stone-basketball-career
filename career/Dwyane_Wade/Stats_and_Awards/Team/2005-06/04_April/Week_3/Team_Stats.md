@@ -30,7 +30,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Eddie Gill | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Mike Wilks | PG | 1 | 2.8 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 |
 | Matt Carroll | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Uroš Slokar | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Joe Smith | SF | 3 | 32.8 | 17.3 | 6.0 | 2.0 | 1.3 | 0.7 | 2.0 |
 | P.J. Brown | PF | 3 | 14.3 | 2.7 | 2.0 | 0.3 | 1.3 | 0.0 | 0.3 |
 | Chris Mihm | C | 3 | 34.7 | 8.0 | 6.0 | 3.3 | 0.3 | 0.7 | 1.0 |
@@ -54,7 +53,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Eddie Gill | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Mike Wilks | 0 | 0/1 | .000 | 0/1 | .000 | 0/0 | N/A | 0 | 0 |
 | Matt Carroll | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Uroš Slokar | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Joe Smith | 3 | 18/31 | .581 | 0/0 | N/A | 16/19 | .842 | 4 | 14 |
 | P.J. Brown | 0 | 3/6 | .500 | 0/0 | N/A | 2/4 | .500 | 4 | 2 |
 | Chris Mihm | 3 | 10/27 | .370 | 0/0 | N/A | 4/4 | 1.000 | 4 | 14 |

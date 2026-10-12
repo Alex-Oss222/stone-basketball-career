@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Signed a four-year, $24,035,000 extension with Indiana Pacers. |
 
@@ -49,7 +50,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -105,7 +106,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -127,7 +128,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -196,6 +197,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Signed a four-year, $24,035,000 extension with Indiana Pacers. |
 
@@ -212,7 +214,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -268,7 +270,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

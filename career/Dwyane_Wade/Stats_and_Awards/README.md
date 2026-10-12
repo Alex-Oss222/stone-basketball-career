@@ -20,7 +20,7 @@
 | Wingspan / standing reach | 6 ft 11.5 in / 8 ft 7.5 in |
 | Shooting hand | Right |
 | Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option (2005-06: $2,526,600; 2006-07 team option exercised 2005-10-31 at $3,201,202) |
-| Role | Starting SG; staff plan 34 minutes |
+| Role | Starting SG; staff plan 40 minutes |
 | NBA debut | October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
 | Nationality | United States (born in the Chicago area; Robbins, Illinois home community, per the player profile) |
 | National team | No selection recorded |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2005-10-26 |
 
-Identity as of 2006-06-20; status snapshot dated 2005-10-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2006-06-20; status snapshot dated 2005-10-26; role from the staff review dated 2006-04-12. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
@@ -80,7 +80,7 @@ Career cutoff: **2006-06-20**. Club competitions and national-team events have s
 
 ### NBA regular season
 
-[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2006-07-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
+[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2005-06-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
 
 [Shooting detail](Shooting.md) · [Current contract](Contract.md#current-contract) · [Contract history](Contract.md#contract-history) · [Annual award record](Awards.md)
 
@@ -97,7 +97,7 @@ Awards are confirmed through 2006-06-20, filed by the honor's period-end date; t
 
 ### NBA playoffs
 
-[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2006-07-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
+[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2005-06-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
 
 [Shooting detail](Shooting.md) · [Current contract](Contract.md#current-contract) · [Contract history](Contract.md#contract-history) · [Annual award record](Awards.md)
 
@@ -114,7 +114,7 @@ Awards are confirmed through 2006-06-20, filed by the honor's period-end date; t
 
 ### Rookie Challenge (exhibition, separate from NBA totals)
 
-[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2006-07-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
+[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2005-06-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
 
 [Shooting detail](Shooting.md) · [Current contract](Contract.md#current-contract) · [Contract history](Contract.md#contract-history) · [Annual award record](Awards.md)
 
@@ -130,7 +130,7 @@ Awards are confirmed through 2006-06-20, filed by the honor's period-end date; t
 
 ### NBA All-Star Game (exhibition, separate from NBA totals)
 
-[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2006-07-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
+[![Shooting](assets/shooting_link.svg)](player_cards.html?period=regular-2005-06-season#shooting) [![Contract](assets/contract_link.svg)](player_cards.html#contract) [![Awards](assets/awards_link.svg)](player_cards.html#awards)
 
 [Shooting detail](Shooting.md) · [Current contract](Contract.md#current-contract) · [Contract history](Contract.md#contract-history) · [Annual award record](Awards.md)
 

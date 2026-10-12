@@ -4,7 +4,7 @@
 
 Known through: 2006-06-20. [Open interactive contract](willije01.html#contract) · [Contract history](willije01.html#contract-history)
 
-Jerome Williams: under contract. Evidence cutoff: 2006-06-20.
+Jerome Williams: out of the league (contract on the books). Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Toronto Raptors |
+| Assigned club | Detroit Pistons |
 | Signing club | Not recorded |
 | Contract ID | willije01-2001-07-18 |
 | Signing route / evidence basis | contract_history |
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Re-signed by Toronto Raptors to a partially guaranteed seven-year, $40.8 million contract. Included player option for 2007/08. |
 
@@ -51,7 +52,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -105,18 +106,20 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-12-27 | Chicago Bulls | Detroit Pistons | 2004-05-league-trade-2004-12-27-willico02-willije01 | [Dated league move](../../2004-05/League/league_moves.json) |
 
 ### Evidence and coverage
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.shamsports.com/players/jerome-williams)
+- [Dated league move](../../2004-05/League/league_moves.json)
 
 ### Current control and contract coverage
 
@@ -126,10 +129,10 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Jerome Williams |
 | Club / rights baseline | Free agent |
-| Control status | under_contract |
+| Control status | out of the league (contract on the books) |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -190,7 +193,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Toronto Raptors |
+| Assigned club | Detroit Pistons |
 | Signing club | Not recorded |
 | Contract ID | willije01-2001-07-18 |
 | Signing route / evidence basis | contract_history |
@@ -198,6 +201,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Re-signed by Toronto Raptors to a partially guaranteed seven-year, $40.8 million contract. Included player option for 2007/08. |
 
@@ -216,7 +220,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -270,18 +274,20 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-12-27 | Chicago Bulls | Detroit Pistons | 2004-05-league-trade-2004-12-27-willico02-willije01 | [Dated league move](../../2004-05/League/league_moves.json) |
 
 ### Evidence and coverage
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.shamsports.com/players/jerome-williams)
+- [Dated league move](../../2004-05/League/league_moves.json)
 
 ## Source records
 

@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Signed a six-year, $16.875 million contract with Phoenix Suns. |
 
@@ -49,7 +50,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -100,13 +101,15 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2003-10-20 | Boston Celtics | Dallas Mavericks | Not recorded | [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json) |
+| 2004-01-19 | Dallas Mavericks | Denver Nuggets | 2003-04-league-trade-2004-01-19-anderch01-delkto01-lenarvo01 | [Dated league move](../../2003-04/League/league_moves.json) |
 | 2004-07-15 | Denver Nuggets | Minnesota Timberwolves | 2004-summer-trade-2004-07-15-delkto01-madsema01-szczewa02 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
 
 ### Evidence and coverage
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -115,6 +118,8 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.shamsports.com/players/tony-delk)
+- [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Dated league move](../../2003-04/League/league_moves.json)
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
@@ -128,7 +133,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -197,6 +202,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Signed a six-year, $16.875 million contract with Phoenix Suns. |
 
@@ -213,7 +219,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -264,13 +270,15 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2003-10-20 | Boston Celtics | Dallas Mavericks | Not recorded | [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json) |
+| 2004-01-19 | Dallas Mavericks | Denver Nuggets | 2003-04-league-trade-2004-01-19-anderch01-delkto01-lenarvo01 | [Dated league move](../../2003-04/League/league_moves.json) |
 | 2004-07-15 | Denver Nuggets | Minnesota Timberwolves | 2004-summer-trade-2004-07-15-delkto01-madsema01-szczewa02 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
 
 ### Evidence and coverage
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -279,6 +287,8 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.shamsports.com/players/tony-delk)
+- [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Dated league move](../../2003-04/League/league_moves.json)
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ## Source records

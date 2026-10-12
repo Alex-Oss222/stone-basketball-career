@@ -32,7 +32,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Eddie Gill | PG | 5 | 2.8 | 2.2 | 1.0 | 0.2 | 0.2 | 0.0 | 0.4 |
 | Mike Wilks | PG | 15 | 5.3 | 1.5 | 0.7 | 0.7 | 0.4 | 0.1 | 0.6 |
 | Matt Carroll | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Uroš Slokar | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Jumaine Jones | SF | 11 | 7.9 | 2.7 | 1.3 | 0.6 | 0.4 | 0.0 | 0.6 |
 
 <details>
@@ -56,7 +55,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Eddie Gill | 0 | 4/11 | .364 | 0/2 | .000 | 3/4 | .750 | 2 | 3 |
 | Mike Wilks | 0 | 9/18 | .500 | 1/3 | .333 | 4/5 | .800 | 5 | 5 |
 | Matt Carroll | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Uroš Slokar | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Jumaine Jones | 0 | 12/26 | .462 | 5/14 | .357 | 1/2 | .500 | 4 | 10 |
 
 </details>

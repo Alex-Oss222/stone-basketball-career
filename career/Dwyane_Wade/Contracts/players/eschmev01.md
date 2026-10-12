@@ -4,7 +4,7 @@
 
 Known through: 2006-06-20. [Open interactive contract](eschmev01.html#contract) · [Contract history](eschmev01.html#contract-history)
 
-Evan Eschmeyer: under contract. Evidence cutoff: 2006-06-20.
+Evan Eschmeyer: out of the league (contract on the books). Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Dallas Mavericks |
+| Assigned club | Golden State Warriors |
 | Signing club | Not recorded |
 | Contract ID | eschmev01-2001-08-08 |
 | Signing route / evidence basis | contract_history |
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Signed a six-year, $19,164,600 offer sheet with Dallas Mavericks. |
 
@@ -50,7 +51,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -102,18 +103,20 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2003-08-18 | Dallas Mavericks | Golden State Warriors | Not recorded | [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json) |
 
 ### Evidence and coverage
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.shamsports.com/players/evan-eschmeyer)
+- [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 
 ### Current control and contract coverage
 
@@ -123,10 +126,10 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Evan Eschmeyer |
 | Club / rights baseline | Free agent |
-| Control status | under_contract |
+| Control status | out of the league (contract on the books) |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -187,7 +190,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Dallas Mavericks |
+| Assigned club | Golden State Warriors |
 | Signing club | Not recorded |
 | Contract ID | eschmev01-2001-08-08 |
 | Signing route / evidence basis | contract_history |
@@ -195,6 +198,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Signed a six-year, $19,164,600 offer sheet with Dallas Mavericks. |
 
@@ -212,7 +216,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -264,18 +268,20 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2003-08-18 | Dallas Mavericks | Golden State Warriors | Not recorded | [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json) |
 
 ### Evidence and coverage
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.shamsports.com/players/evan-eschmeyer)
+- [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 
 ## Source records
 

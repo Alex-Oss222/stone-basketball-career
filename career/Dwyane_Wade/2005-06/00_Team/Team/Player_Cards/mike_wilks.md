@@ -54,23 +54,28 @@ Unassessed.
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2004-05 from the simulated league record; 2005-06 not started.
+**Coverage:** 2002-03 regular season from the league record; earlier seasons are not imported; 2003-04: Houston Rockets from the league record; 2004-05: Chicago Bulls from the league record; 2005-06: 65 closed Miami game(s) through 2006-06-20.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2002-03 | Atlanta Hawks, Minnesota Timberwolves | 46 | 7 | 15.0 | 3.2 | 1.5 | 2.0 | 0.6 | 0.1 | 0.6 | 33.8% | 28.6% | 78.7% |
+| 2003-04 | Houston Rockets | 67 | 0 | 3.8 | 1.4 | 0.5 | 0.4 | 0.1 | 0.0 | 0.1 | 39.7% | 38.5% | 84.4% |
 | 2004-05 | Chicago Bulls | 1 | 0 | 0.6 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | N/A | N/A | N/A |
-| 2005-06 | MIA | 65 | 0 | 4.4 | 1.0 | 0.6 | 0.4 | 0.2 | 0.0 | 0.4 | 35.4% | 28.6% | 81.2% |
+| 2005-06 | Miami Heat | 65 | 0 | 4.4 | 1.0 | 0.6 | 0.4 | 0.2 | 0.0 | 0.4 | 35.4% | 28.6% | 81.2% |
 
-Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
+Source: 2002-03 from the [league statistics file](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** playoff games from closed results through 2006-06-20, every club's (`runtime/playoff_stats.py`, the playoff pages' aggregation); playoff history before 2003-04 is not imported.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2004-05 | Philadelphia 76ers | 3 | 0 | 2.3 | 1.7 | 0.7 | 0.0 | 0.3 | 0.0 | 0.3 | 20.0% | 25.0% | 100.0% |
+| 2005-06 | Miami Heat | 12 | 0 | 3.0 | 0.2 | 0.4 | 0.3 | 0.1 | 0.0 | 0.0 | 12.5% | N/A | N/A |
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2006-06-20 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

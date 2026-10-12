@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `gilled01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2005-06 register · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #4 · **Born:** 1978-08-16 · **Age on card date:** 27  
+**Position:** PG (Point guard) · **Jersey:** #1 · **Born:** 1978-08-16 · **Age on card date:** 27  
 **Registry ID:** `gilled01`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
@@ -109,7 +109,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | POR | 72 | 1 | 5.6 | 1.9 | 1.0 | 0.6 | 0.3 | 0.1 | 0.5 | 40.8% | 40.7% | 92.6% |
-| 2004-05 | FA | 3 | 0 | 6.3 | 5.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 66.7% | 50.0% | 100.0% |
+| 2004-05 | CHI | 3 | 0 | 6.3 | 5.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 66.7% | 50.0% | 100.0% |
 | 2005-06 | MIA | 24 | 0 | 3.8 | 2.0 | 0.6 | 0.5 | 0.1 | 0.0 | 0.2 | 44.1% | 28.6% | 68.2% |
 
 ## Playoff statistics by year

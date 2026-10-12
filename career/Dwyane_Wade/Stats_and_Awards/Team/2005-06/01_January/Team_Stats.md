@@ -31,7 +31,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Eddie Gill | PG | 9 | 4.8 | 2.3 | 0.4 | 0.3 | 0.1 | 0.1 | 0.1 |
 | Mike Wilks | PG | 15 | 4.8 | 0.9 | 0.6 | 0.5 | 0.1 | 0.0 | 0.2 |
 | Matt Carroll | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Uroš Slokar | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Jumaine Jones | SF | 3 | 9.2 | 1.7 | 1.0 | 0.3 | 0.7 | 0.3 | 0.3 |
 | Joe Smith | SF | 15 | 25.5 | 9.7 | 4.9 | 0.7 | 0.8 | 0.9 | 1.2 |
 | Chris Mihm | C | 7 | 31.9 | 12.9 | 6.6 | 2.0 | 0.1 | 0.9 | 1.0 |
@@ -57,7 +56,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Eddie Gill | 0 | 8/15 | .533 | 2/3 | .667 | 3/4 | .750 | 2 | 2 |
 | Mike Wilks | 0 | 5/16 | .312 | 2/3 | .667 | 2/3 | .667 | 3 | 6 |
 | Matt Carroll | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Uroš Slokar | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Jumaine Jones | 0 | 2/13 | .154 | 1/9 | .111 | 0/0 | N/A | 3 | 0 |
 | Joe Smith | 7 | 54/115 | .470 | 0/6 | .000 | 37/49 | .755 | 24 | 49 |
 | Chris Mihm | 7 | 31/64 | .484 | 0/1 | .000 | 28/38 | .737 | 15 | 31 |

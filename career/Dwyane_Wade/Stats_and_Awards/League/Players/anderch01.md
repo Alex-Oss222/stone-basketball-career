@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `anderch01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Orlando Magic · **Basis:** Orlando Magic: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #12 · **Born:** 1978-07-07 · **Age on card date:** 27  
+**Position:** C (Center) · **Jersey:** #15 · **Born:** 1978-07-07 · **Age on card date:** 27  
 **Registry ID:** `anderch01` · [Basketball-Reference page](https://www.basketball-reference.com/players/a/anderch01.html) · ESPN ID 1135
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
@@ -109,7 +109,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | DEN | 59 | 3 | 15.4 | 5.2 | 4.6 | 0.5 | 0.5 | 1.0 | 1.0 | 40.0% | 0.0% | 55.0% |
-| 2003-04 | DEN | 77 | 0 | 13.3 | 3.4 | 3.4 | 0.5 | 0.4 | 1.3 | 0.6 | 41.8% | 0.0% | 60.0% |
+| 2003-04 | DEN/DAL | 77 | 0 | 13.3 | 3.4 | 3.4 | 0.5 | 0.4 | 1.3 | 0.6 | 41.8% | 0.0% | 60.0% |
 | 2004-05 | ORL | 69 | 4 | 19.0 | 5.5 | 4.6 | 1.4 | 0.2 | 1.3 | 0.8 | 44.1% | 11.1% | 66.1% |
 | 2005-06 | ORL | 33 | 0 | 16.6 | 5.2 | 4.3 | 0.9 | 0.3 | 1.0 | 1.0 | 46.8% | 55.6% | 60.6% |
 

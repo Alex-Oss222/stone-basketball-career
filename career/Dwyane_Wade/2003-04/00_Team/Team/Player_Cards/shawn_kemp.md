@@ -62,23 +62,25 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 from the league record; 2003-04 not started.
+**Coverage:** 2002-03 regular season from the league record; earlier seasons are not imported; 2003-04: 69 closed Miami game(s) through 2004-09-30.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2002-03 | Orlando Magic | 79 | N/A | 20.7 | 6.8 | 5.7 | 0.7 | 0.8 | 0.4 | 1.3 | 0.418 | 0.000 | 0.742 |
-| 2003-04 | MIA | 69 | 34 | 26.4 | 9.3 | 7.2 | 1.1 | 0.9 | 0.6 | 1.6 | 42.0% | 40.0% | 68.2% |
+| 2002-03 | Orlando Magic | 79 | 55 | 20.7 | 6.8 | 5.7 | 0.7 | 0.8 | 0.4 | 1.3 | 41.8% | 0.0% | 74.2% |
+| 2003-04 | Miami Heat | 69 | 34 | 26.4 | 9.3 | 7.2 | 1.1 | 0.9 | 0.6 | 1.6 | 42.0% | 40.0% | 68.2% |
 
-Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
+Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** playoff games from closed results through 2004-09-30, every club's (`runtime/playoff_stats.py`, the playoff pages' aggregation); playoff history before 2003-04 is not imported.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Miami Heat | 5 | 5 | 29.0 | 10.0 | 6.4 | 2.0 | 0.0 | 0.8 | 2.0 | 40.0% | 50.0% | 71.4% |
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2004-09-30 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

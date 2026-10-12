@@ -4,110 +4,11 @@
 
 Known through: 2006-06-20. [Open interactive contract](wallajo01.html#contract) · [Contract history](wallajo01.html#contract-history)
 
-John Wallace: camp contract. Evidence cutoff: 2006-06-20.
+John Wallace: out of the league (contract ended). Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
-### John Wallace · 2003-10-27
-
-Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
-
-| Contract term | Recorded value | Basis |
-| --- | --- | --- |
-| Signing date | 2003-10-27 |  |
-| Original term | Not recorded |  |
-| Reported original value | Not recorded | Not recorded |
-| Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $813,679 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 0 |  |
-
-### Contract identity and execution
-
-| Field | Recorded detail |
-| --- | --- |
-| Assigned club | Miami Heat |
-| Signing club | Miami Heat |
-| Contract ID | wallajo01-2003-10-27 |
-| Signing route / evidence basis | minimum |
-| Signing date | 2003-10-27 |
-| Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | camp_contract |
-| Contract wording | Not recorded |
-
-### Salary by season
-
-Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
-
-| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | $813,679 | Not recorded | Not recorded | $813,679 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-
-### Options and decision deadlines
-
-An option amount is conditional. No exercise or decline is assumed.
-
-| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
-| --- | --- | --- | --- | --- | --- |
-
-### Additional recorded annual compensation
-
-Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
-
-| Season | Signing bonus | Dead cap | Buyout |
-| --- | --- | --- | --- |
-| 2003-04 | Not recorded | Not recorded | Not recorded |
-
-### Guarantees, incentives and payment terms
-
-| Term | Recorded detail |
-| --- | --- |
-| Guarantee rider / amendment | Not recorded |
-| Guarantee triggers | Not recorded |
-| Guarantee date | 2004-01-10 |
-| Waiver deadline | Not recorded |
-| Bonus terms | Not recorded |
-| Payment schedule | Not recorded |
-| Buyout terms | Not recorded |
-| Promise | Not recorded |
-| Percent of scale | Not recorded |
-
-### Free agency, Bird rights and trade terms
-
-No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
-
-| Term | Recorded detail |
-| --- | --- |
-| Free agency | Not recorded |
-| Bird rights | Not recorded |
-| No trade clause | Not recorded |
-| Trade consent | Not recorded |
-| Trade restrictions | Not recorded |
-| Trade kicker | Not recorded |
-| Trade clauses | Not recorded |
-| Base year compensation | Not recorded |
-
-### Assignment history
-
-A trade assigns this contract; it does not create a duplicate signing.
-
-| Date | From | To | Transaction | Source |
-| --- | --- | --- | --- | --- |
-
-### Evidence and coverage
-
-Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 6 years of service is $813,679 (was $366,931); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest). Guaranteed 2004-01-10: on the roster on the guarantee date.
-
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
-
-#### Agreement evidence
-
-- [Dated signed-contract archive](../contract_records.json)
-- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/00_Team/Transactions/guarantee_review.json)
+No verified current signed agreement is available in the dated record. The control and evidence sections below explain the recorded status.
 
 ### Current control and contract coverage
 
@@ -117,17 +18,18 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | John Wallace |
 | Club / rights baseline | Free agent |
-| Control status | camp_contract |
-| Executed current contract | Recorded |
+| Control status | out of the league (contract ended) |
+| Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
-Current signed salary detail appears in the contract below.
+Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 6 years of service is $813,679 (was $366,931); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest). Guaranteed 2004-01-10: on the roster on the guarantee date.
 
 | Season | Amount | Record kind |
 | --- | --- | --- |
+| 2003-04 | $813,679 | contract_salary |
 
 ### Draft-rights scale reference
 
@@ -187,9 +89,10 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | minimum |
 | Signing date | 2003-10-27 |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | camp_contract |
+| Verified final season | 2003-04 |
+| Verified expiry date | 2004-06-30 |
+| Ended on (dated event) | Not recorded |
+| Status | expired |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -202,7 +105,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -255,7 +158,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 6 years of service is $813,679 (was $366,931); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest). Guaranteed 2004-01-10: on the roster on the guarantee date.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

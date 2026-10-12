@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `nachbbo01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Utah Jazz · **Basis:** Utah Jazz: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #7 · **Born:** 1980-07-03 · **Age on card date:** 25  
+**Position:** SF (Small forward) · **Jersey:** #10 · **Born:** 1980-07-03 · **Age on card date:** 25  
 **Registry ID:** `nachbbo01` · [Basketball-Reference page](https://www.basketball-reference.com/players/n/nachbbo01.html) · ESPN ID 1723
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,396,440) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
@@ -110,7 +110,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | HOU | 14 | 1 | 5.5 | 2.1 | 0.8 | 0.2 | 0.1 | 0.1 | 0.4 | 35.5% | 20.0% | 50.0% |
 | 2003-04 | HOU | 75 | 0 | 6.3 | 2.5 | 0.9 | 0.4 | 0.3 | 0.2 | 0.4 | 45.9% | 45.7% | 82.1% |
-| 2004-05 | UTAH | 73 | 0 | 17.6 | 6.3 | 2.6 | 0.9 | 0.4 | 0.3 | 1.3 | 38.4% | 37.2% | 68.9% |
+| 2004-05 | HOU/UTAH | 73 | 0 | 17.6 | 6.3 | 2.6 | 0.9 | 0.4 | 0.3 | 1.3 | 38.4% | 37.2% | 68.9% |
 | 2005-06 | UTAH | 82 | 1 | 8.2 | 3.3 | 1.3 | 0.4 | 0.2 | 0.1 | 0.6 | 38.3% | 33.3% | 66.7% |
 
 ## Playoff statistics by year

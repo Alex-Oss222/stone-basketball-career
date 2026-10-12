@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `trevorariza.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Los Angeles Lakers · **Basis:** Los Angeles Lakers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** Unassigned · **Born:** 1985-06-30 · **Age on card date:** 20  
+**Position:** SF (Small forward) · **Jersey:** #1 · **Born:** 1985-06-30 · **Age on card date:** 20  
 **Registry ID:** `trevorariza`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
@@ -108,7 +108,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | LAL | 78 | 35 | 21.0 | 6.5 | 4.0 | 1.4 | 0.7 | 0.3 | 1.2 | 41.4% | 17.4% | 65.5% |
+| 2004-05 | DET/LAL | 78 | 35 | 21.0 | 6.5 | 4.0 | 1.4 | 0.7 | 0.3 | 1.2 | 41.4% | 17.4% | 65.5% |
 | 2005-06 | LAL | 82 | 0 | 13.5 | 2.7 | 2.7 | 1.1 | 0.7 | 0.2 | 0.8 | 35.7% | 0.0% | 52.6% |
 
 ## Playoff statistics by year

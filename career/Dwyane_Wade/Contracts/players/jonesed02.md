@@ -25,14 +25,15 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Utah Jazz |
+| Assigned club | Miami Heat |
 | Signing club | Not recorded |
 | Contract ID | jonesed02-2000-08-01 |
 | Signing route / evidence basis | salary_pattern |
 | Signing date | 2000-08-01 |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2006-07 |
+| Verified expiry date | 2007-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -50,7 +51,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -102,14 +103,15 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
-| 2005-08-05 | Utah Jazz | Miami Heat | 2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 | 2005-01-24 | Miami Heat | Utah Jazz | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
+| 2005-01-31 | Utah Jazz | Houston Rockets | 2004-05-league-trade-2005-01-31-jonesed02-jonesfr01-nachbbo01-robingl01 | [Dated league move](../../2004-05/League/league_moves.json) |
+| 2005-08-05 | Utah Jazz | Miami Heat | 2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
 Existing contract ends in 2006-07. The later report is used only to verify the original final-year amount; subsequent transactions are not applied.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -126,8 +128,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
-- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Dated league move](../../2004-05/League/league_moves.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -140,7 +143,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -201,14 +204,15 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Utah Jazz |
+| Assigned club | Miami Heat |
 | Signing club | Not recorded |
 | Contract ID | jonesed02-2000-08-01 |
 | Signing route / evidence basis | salary_pattern |
 | Signing date | 2000-08-01 |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2006-07 |
+| Verified expiry date | 2007-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -226,7 +230,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -278,14 +282,15 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
-| 2005-08-05 | Utah Jazz | Miami Heat | 2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 | 2005-01-24 | Miami Heat | Utah Jazz | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
+| 2005-01-31 | Utah Jazz | Houston Rockets | 2004-05-league-trade-2005-01-31-jonesed02-jonesfr01-nachbbo01-robingl01 | [Dated league move](../../2004-05/League/league_moves.json) |
+| 2005-08-05 | Utah Jazz | Miami Heat | 2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
 Existing contract ends in 2006-07. The later report is used only to verify the original final-year amount; subsequent transactions are not applied.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -302,8 +307,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
-- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
+- [Dated league move](../../2004-05/League/league_moves.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ## Source records
 

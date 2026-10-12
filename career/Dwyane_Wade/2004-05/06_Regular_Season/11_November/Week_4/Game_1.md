@@ -104,7 +104,7 @@ Did not dress: Dwyane Wade (illness or personal, this game only).
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2004-11-23; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-11-23; status snapshot dated 2004-10-28; role from the staff review dated 2004-11-11. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2004-05 awards
 
@@ -216,7 +216,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Date / source | Opponent | Venue | Result | Participation | MIN | PTS | REB | AST | STL | BLK | TOV |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2004-11-23](Game_1.md) | Portland Trail Blazers | home | L 95-97 | DNP: inactive (reason not specified) | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [2004-11-23](Game_1.md) | Portland Trail Blazers | home | L 95-97 | DNP: inactive (illness or personal) | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### Additional data needed
 

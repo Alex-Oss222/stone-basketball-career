@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `blounma01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Memphis Grizzlies · **Basis:** Memphis Grizzlies: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #30 · **Born:** 1975-11-30 · **Age on card date:** 30  
+**Position:** C (Center) · **Jersey:** #0 · **Born:** 1975-11-30 · **Age on card date:** 30  
 **Registry ID:** `blounma01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/blounma01.html) · ESPN ID 70
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
@@ -57,9 +57,9 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 30 | MEM | NBA | C | 3 | 3 | 26.4 | 4.0 | 8.0 | .500 | 0.0 | 0.0 | N/A | 4.0 | 8.0 | .500 | .500 | 2.7 | 3.3 | .800 | 2.7 | 4.0 | 6.7 | 2.7 | 0.7 | 1.3 | 2.0 | 4.0 | 10.7 | .563 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 30 | MEM | NBA | C | 5 | 5 | 27.0 | 4.0 | 8.2 | .488 | 0.2 | 0.4 | .500 | 3.8 | 7.8 | .487 | .500 | 2.0 | 2.6 | .769 | 1.6 | 2.2 | 3.8 | 2.4 | 0.8 | 0.4 | 3.2 | 4.8 | 10.2 | .546 | — |
-| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 30 | MEM | NBA | C | 3 | 3 | 23.7 | 4.3 | 8.0 | .542 | 0.7 | 0.7 | 1.000 | 3.7 | 7.3 | .500 | .583 | 2.0 | 2.3 | .857 | 1.7 | 3.0 | 4.7 | 0.3 | 0.7 | 0.7 | 3.7 | 3.7 | 11.3 | .628 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 29 | MEM | NBA | C | 3 | 3 | 26.4 | 4.0 | 8.0 | .500 | 0.0 | 0.0 | N/A | 4.0 | 8.0 | .500 | .500 | 2.7 | 3.3 | .800 | 2.7 | 4.0 | 6.7 | 2.7 | 0.7 | 1.3 | 2.0 | 4.0 | 10.7 | .563 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 29 | MEM | NBA | C | 5 | 5 | 27.0 | 4.0 | 8.2 | .488 | 0.2 | 0.4 | .500 | 3.8 | 7.8 | .487 | .500 | 2.0 | 2.6 | .769 | 1.6 | 2.2 | 3.8 | 2.4 | 0.8 | 0.4 | 3.2 | 4.8 | 10.2 | .546 | — |
+| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 29 | MEM | NBA | C | 3 | 3 | 23.7 | 4.3 | 8.0 | .542 | 0.7 | 0.7 | 1.000 | 3.7 | 7.3 | .500 | .583 | 2.0 | 2.3 | .857 | 1.7 | 3.0 | 4.7 | 0.3 | 0.7 | 0.7 | 3.7 | 3.7 | 11.3 | .628 | — |
 | [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 30 | MEM | NBA | C | 4 | 4 | 31.4 | 4.8 | 11.2 | .422 | 0.0 | 0.2 | .000 | 4.8 | 11.0 | .432 | .422 | 4.2 | 4.8 | .895 | 1.2 | 3.5 | 4.8 | 1.8 | 1.0 | 1.0 | 1.8 | 1.8 | 13.8 | .515 | — |
 | [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 30 | MEM | NBA | C | 3 | 3 | 26.2 | 5.3 | 10.0 | .533 | 0.3 | 0.7 | .500 | 5.0 | 9.3 | .536 | .550 | 1.3 | 2.3 | .571 | 1.7 | 3.0 | 4.7 | 2.3 | 0.0 | 2.3 | 3.3 | 3.7 | 12.3 | .559 | — |
 | [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 30 | MEM | NBA | C | 3 | 3 | 28.1 | 4.7 | 8.3 | .560 | 0.0 | 0.0 | N/A | 4.7 | 8.3 | .560 | .560 | 4.3 | 5.0 | .867 | 1.3 | 2.0 | 3.3 | 1.3 | 0.0 | 1.7 | 4.0 | 3.0 | 13.7 | .649 | — |
@@ -110,7 +110,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | DEN/BOS | 81 | 31 | 17.3 | 5.0 | 3.8 | 0.7 | 0.5 | 0.8 | 1.3 | 43.2% | N/A | 72.7% |
 | 2003-04 | BOS | 82 | 82 | 33.0 | 12.4 | 8.5 | 1.0 | 1.2 | 1.1 | 2.2 | 54.5% | 50.0% | 74.1% |
-| 2004-05 | MEM | 79 | 59 | 28.4 | 12.1 | 5.7 | 1.7 | 0.5 | 0.6 | 1.9 | 50.8% | 3.6% | 73.4% |
+| 2004-05 | BOS/MEM | 79 | 59 | 28.4 | 12.1 | 5.7 | 1.7 | 0.5 | 0.6 | 1.9 | 50.8% | 3.6% | 73.4% |
 | 2005-06 | MEM | 81 | 81 | 28.3 | 11.1 | 4.5 | 1.5 | 0.5 | 0.9 | 2.6 | 47.7% | 42.9% | 77.1% |
 
 ## Playoff statistics by year

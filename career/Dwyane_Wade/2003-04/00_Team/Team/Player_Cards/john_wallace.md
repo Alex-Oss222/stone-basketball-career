@@ -54,22 +54,20 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2003-04 not started.
+**Coverage:** No 2002-03 NBA record on this card; 2003-04: 15 closed Miami game(s) through 2004-09-30.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2003-04 | MIA | 15 | 0 | 5.4 | 1.5 | 1.1 | 0.3 | 0.0 | 0.0 | 0.4 | 47.1% | 33.3% | 100.0% |
+| 2003-04 | Miami Heat | 15 | 0 | 5.4 | 1.5 | 1.1 | 0.3 | 0.0 | 0.0 | 0.4 | 47.1% | 33.3% | 100.0% |
 
-Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
+Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** no appearance in a closed simulated playoff game through 2004-09-30; playoff history before 2003-04 is not imported.
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2004-09-30 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

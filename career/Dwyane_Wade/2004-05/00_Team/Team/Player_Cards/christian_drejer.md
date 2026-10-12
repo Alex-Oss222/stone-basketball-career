@@ -1,10 +1,10 @@
 # Christian Drejer | 2004-05 Player Profile
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
-**Age at assessment:** N/A · **Height:** N/A · **Weight:** N/A  
+**Age at assessment:** 21 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** October 1, 2004 · **Statistics through:** 2005-06-27 
 
-**Contract/control:** Unsigned draft rights: No. 54 pick of the 2004 draft. (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** June 28, 2005: Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40). He is no longer under Miami's control. (register, 2005-06-28) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/drejech01.html#contract) · [Contract history](../../../../Contracts/players/drejech01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
@@ -54,22 +54,20 @@ Unassessed.
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2004-05 not started.
+**Coverage:** No 2002-03 NBA record on this card; 2004-05: no Miami appearance through 2005-06-27.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2004-05 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
-Source: 2003-04 from closed simulated results (`Stats_and_Awards/League/2003-04/season_totals.json`); 2004-05 from closed Miami game results.
+Source: Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** no appearance in a closed simulated playoff game through 2005-06-27; playoff history before 2003-04 is not imported.
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2005-06-27 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

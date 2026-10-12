@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `hodgeju01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Phoenix Suns · **Basis:** Phoenix Suns: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #32 · **Born:** 1983-11-18 · **Age on card date:** 22  
+**Position:** SG (Shooting guard) · **Jersey:** #4 · **Born:** 1983-11-18 · **Age on card date:** 22  
 **Registry ID:** `hodgeju01`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
@@ -57,8 +57,8 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 22 | PHX | NBA | SG | 4 | 0 | 7.1 | 1.0 | 2.2 | .444 | 0.0 | 0.0 | N/A | 1.0 | 2.2 | .444 | .444 | 0.5 | 0.8 | .667 | 0.0 | 0.5 | 0.5 | 0.8 | 0.2 | 0.2 | 0.2 | 0.5 | 2.5 | .484 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 22 | PHX | NBA | SG | 2 | 0 | 6.2 | 1.5 | 2.5 | .600 | 0.5 | 1.0 | .500 | 1.0 | 1.5 | .667 | .700 | 0.0 | 1.5 | .000 | 0.5 | 0.0 | 0.5 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 3.5 | .554 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 21 | PHX | NBA | SG | 4 | 0 | 7.1 | 1.0 | 2.2 | .444 | 0.0 | 0.0 | N/A | 1.0 | 2.2 | .444 | .444 | 0.5 | 0.8 | .667 | 0.0 | 0.5 | 0.5 | 0.8 | 0.2 | 0.2 | 0.2 | 0.5 | 2.5 | .484 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 21 | PHX | NBA | SG | 2 | 0 | 6.2 | 1.5 | 2.5 | .600 | 0.5 | 1.0 | .500 | 1.0 | 1.5 | .667 | .700 | 0.0 | 1.5 | .000 | 0.5 | 0.0 | 0.5 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 3.5 | .554 | — |
 | [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 22 | PHX | NBA | SG | 2 | 0 | 8.7 | 1.5 | 3.5 | .429 | 0.0 | 0.0 | N/A | 1.5 | 3.5 | .429 | .429 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 0.5 | 0.5 | 0.0 | 0.5 | 1.5 | 3.0 | .429 | — |
 | [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 22 | PHX | NBA | SG | 4 | 0 | 4.9 | 1.0 | 1.2 | .800 | 0.0 | 0.0 | N/A | 1.0 | 1.2 | .800 | .800 | 1.0 | 1.0 | 1.000 | 0.2 | 0.2 | 0.5 | 0.8 | 0.0 | 0.2 | 0.2 | 0.8 | 3.0 | .888 | — |
 | [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 22 | PHX | NBA | SG | 4 | 0 | 5.6 | 0.2 | 0.8 | .333 | 0.0 | 0.2 | .000 | 0.2 | 0.5 | .500 | .333 | 1.2 | 2.2 | .556 | 0.8 | 0.8 | 1.5 | 0.8 | 0.2 | 0.5 | 0.5 | 0.8 | 1.8 | .503 | — |

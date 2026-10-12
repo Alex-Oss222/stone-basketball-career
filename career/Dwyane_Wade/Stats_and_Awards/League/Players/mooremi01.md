@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `mooremi01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Milwaukee Bucks · **Basis:** Milwaukee Bucks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #33 · **Born:** 1975-11-04 · **Age on card date:** 30  
+**Position:** C (Center) · **Jersey:** #45 · **Born:** 1975-11-04 · **Age on card date:** 30  
 **Registry ID:** `mooremi01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/mooremi01.html) · ESPN ID 575
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
@@ -32,7 +32,7 @@ As of **2006-06-20**: 84 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 30 | MIL | NBA | C | 46 | 20 | 16.1 | 1.4 | 3.5 | .405 | 0.1 | 0.5 | .208 | 1.3 | 3.0 | .439 | .420 | 1.5 | 2.1 | .722 | 1.3 | 2.8 | 4.0 | 1.2 | 0.3 | 0.3 | 0.8 | 2.3 | 4.5 | .503 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 30 | NJ/MIL | NBA | C | 46 | 20 | 16.1 | 1.4 | 3.5 | .405 | 0.1 | 0.5 | .208 | 1.3 | 3.0 | .439 | .420 | 1.5 | 2.1 | .722 | 1.3 | 2.8 | 4.0 | 1.2 | 0.3 | 0.3 | 0.8 | 2.3 | 4.5 | .503 | — |
 
 ### Month
 
@@ -41,7 +41,7 @@ As of **2006-06-20**: 84 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 30 | MIL | NBA | C | 9 | 1 | 13.3 | 0.9 | 2.8 | .320 | 0.1 | 0.4 | .250 | 0.8 | 2.3 | .333 | .340 | 1.2 | 1.6 | .786 | 1.0 | 2.2 | 3.2 | 1.4 | 0.3 | 0.3 | 0.4 | 2.0 | 3.1 | .449 | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 30 | NJ/MIL | NBA | C | 9 | 1 | 13.3 | 0.9 | 2.8 | .320 | 0.1 | 0.4 | .250 | 0.8 | 2.3 | .333 | .340 | 1.2 | 1.6 | .786 | 1.0 | 2.2 | 3.2 | 1.4 | 0.3 | 0.3 | 0.4 | 2.0 | 3.1 | .449 | — |
 | [December 2005](../2005-06/12_December/League_Stats.md) | 30 | MIL | NBA | C | 6 | 1 | 14.9 | 0.7 | 2.2 | .308 | 0.0 | 0.2 | .000 | 0.7 | 2.0 | .333 | .308 | 3.0 | 3.5 | .857 | 1.5 | 1.8 | 3.3 | 1.2 | 0.3 | 0.3 | 0.3 | 1.8 | 4.3 | .585 | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 30 | MIL | NBA | C | 8 | 8 | 20.1 | 3.0 | 5.9 | .511 | 0.1 | 0.8 | .167 | 2.9 | 5.1 | .561 | .521 | 2.2 | 3.2 | .692 | 1.5 | 3.0 | 4.5 | 1.0 | 0.5 | 0.4 | 0.9 | 3.8 | 8.4 | .573 | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 30 | MIL | NBA | C | 6 | 4 | 16.9 | 1.5 | 4.0 | .375 | 0.0 | 0.5 | .000 | 1.5 | 3.5 | .429 | .375 | 0.5 | 1.0 | .500 | 0.8 | 3.3 | 4.2 | 1.5 | 0.3 | 0.5 | 1.5 | 2.8 | 3.5 | .394 | — |
@@ -57,8 +57,8 @@ As of **2006-06-20**: 84 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 30 | MIL | NBA | C | 3 | 0 | 10.9 | 0.7 | 1.7 | .400 | 0.3 | 0.7 | .500 | 0.3 | 1.0 | .333 | .500 | 1.3 | 1.7 | .800 | 0.7 | 2.0 | 2.7 | 0.7 | 0.0 | 0.0 | 0.3 | 2.0 | 3.0 | .625 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 30 | MIL | NBA | C | 2 | 0 | 13.6 | 1.0 | 2.5 | .400 | 0.0 | 0.0 | N/A | 1.0 | 2.5 | .400 | .400 | 1.5 | 1.5 | 1.000 | 1.5 | 2.5 | 4.0 | 2.5 | 0.5 | 0.5 | 0.0 | 1.0 | 3.5 | .554 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 30 | NJ | NBA | C | 3 | 0 | 10.9 | 0.7 | 1.7 | .400 | 0.3 | 0.7 | .500 | 0.3 | 1.0 | .333 | .500 | 1.3 | 1.7 | .800 | 0.7 | 2.0 | 2.7 | 0.7 | 0.0 | 0.0 | 0.3 | 2.0 | 3.0 | .625 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 30 | NJ | NBA | C | 2 | 0 | 13.6 | 1.0 | 2.5 | .400 | 0.0 | 0.0 | N/A | 1.0 | 2.5 | .400 | .400 | 1.5 | 1.5 | 1.000 | 1.5 | 2.5 | 4.0 | 2.5 | 0.5 | 0.5 | 0.0 | 1.0 | 3.5 | .554 | — |
 | [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 30 | MIL | NBA | C | 2 | 1 | 18.3 | 1.5 | 4.5 | .333 | 0.0 | 1.0 | .000 | 1.5 | 3.5 | .429 | .333 | 1.0 | 2.0 | .500 | 1.5 | 3.0 | 4.5 | 2.0 | 0.0 | 0.5 | 1.0 | 3.5 | 4.0 | .372 | — |
 | [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 30 | MIL | NBA | C | 2 | 0 | 11.4 | 0.5 | 3.0 | .167 | 0.0 | 0.0 | N/A | 0.5 | 3.0 | .167 | .167 | 1.0 | 1.0 | 1.000 | 0.5 | 1.5 | 2.0 | 1.0 | 1.0 | 0.5 | 0.5 | 1.5 | 2.0 | .291 | — |
 | [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 30 | MIL | NBA | C | 2 | 1 | 18.6 | 1.5 | 4.0 | .375 | 0.0 | 0.5 | .000 | 1.5 | 3.5 | .429 | .375 | 3.5 | 4.5 | .778 | 1.0 | 4.0 | 5.0 | 1.0 | 0.0 | 1.0 | 0.0 | 3.5 | 6.5 | .543 | — |
@@ -109,8 +109,8 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | BOS/ATL | 8 | 0 | 5.4 | 2.2 | 1.0 | 0.4 | 0.0 | 0.5 | 0.2 | 38.5% | N/A | 80.0% |
-| 2003-04 | NJ | 62 | 0 | 4.9 | 1.8 | 1.0 | 0.3 | 0.1 | 0.2 | 0.3 | 41.0% | 50.0% | 87.1% |
-| 2005-06 | MIL | 46 | 20 | 16.1 | 4.5 | 4.0 | 1.2 | 0.3 | 0.3 | 0.8 | 40.5% | 20.8% | 72.2% |
+| 2003-04 | UTAH | 62 | 0 | 4.9 | 1.8 | 1.0 | 0.3 | 0.1 | 0.2 | 0.3 | 41.0% | 50.0% | 87.1% |
+| 2005-06 | NJ/MIL | 46 | 20 | 16.1 | 4.5 | 4.0 | 1.2 | 0.3 | 0.3 | 0.8 | 40.5% | 20.8% | 72.2% |
 
 ## Playoff statistics by year
 

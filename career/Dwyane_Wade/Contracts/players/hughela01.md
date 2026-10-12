@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Washington Wizards |
+| Assigned club | Boston Celtics |
 | Signing club | Washington Wizards |
 | Contract ID | hughela01-2005-08-02 |
 | Signing route / evidence basis | bird |
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2005-06 |
 | Verified final season | 2009-10 |
 | Verified expiry date | 2010-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -50,7 +51,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -102,16 +103,19 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-11-14 | Washington Wizards | Indiana Pacers | 2005-06-league-trade-2005-11-14-hughela01-mccanra01-roseja01-snower01 | [Dated league move](../../2005-06/League/league_moves.json) |
+| 2006-02-20 | Indiana Pacers | Boston Celtics | 2005-06-league-trade-2006-02-20-fishede01-hillgr01-hughela01-pollasc01 | [Dated league move](../../2005-06/League/league_moves.json) |
 
 ### Evidence and coverage
 
 Simulated 2005 summer market: re sign on 2005-08-02. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Dated league move](../../2005-06/League/league_moves.json)
 
 ### Current control and contract coverage
 
@@ -124,7 +128,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -185,7 +189,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Washington Wizards |
+| Assigned club | Boston Celtics |
 | Signing club | Washington Wizards |
 | Contract ID | hughela01-2005-08-02 |
 | Signing route / evidence basis | bird |
@@ -193,6 +197,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2005-06 |
 | Verified final season | 2009-10 |
 | Verified expiry date | 2010-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -210,7 +215,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -262,16 +267,19 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-11-14 | Washington Wizards | Indiana Pacers | 2005-06-league-trade-2005-11-14-hughela01-mccanra01-roseja01-snower01 | [Dated league move](../../2005-06/League/league_moves.json) |
+| 2006-02-20 | Indiana Pacers | Boston Celtics | 2005-06-league-trade-2006-02-20-fishede01-hillgr01-hughela01-pollasc01 | [Dated league move](../../2005-06/League/league_moves.json) |
 
 ### Evidence and coverage
 
 Simulated 2005 summer market: re sign on 2005-08-02. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Dated league move](../../2005-06/League/league_moves.json)
 
 ### Larry Hughes · 2002-07-18
 
@@ -296,9 +304,10 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | contract_history |
 | Signing date | 2002-07-18 |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | under_contract |
+| Verified final season | 2004-05 |
+| Verified expiry date | 2005-06-30 |
+| Ended on (dated event) | Not recorded |
+| Status | expired |
 | Contract wording | Signed a three-year, $15,001,200 contract with Washington. |
 
 ### Salary by season
@@ -313,7 +322,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -368,7 +377,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

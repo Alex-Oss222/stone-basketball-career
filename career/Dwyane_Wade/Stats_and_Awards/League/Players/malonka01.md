@@ -105,7 +105,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | UTA | 81 | 81 | 36.2 | 20.6 | 7.8 | 4.7 | 1.7 | 0.4 | 2.6 | 46.2% | 21.4% | 76.3% |
-| 2003-04 | LAL | 41 | 41 | 31.7 | 12.8 | 7.9 | 3.4 | 0.9 | 0.5 | 2.4 | 47.1% | 16.7% | 73.6% |
+| 2003-04 | LAL/SEA | 41 | 41 | 31.7 | 12.8 | 7.9 | 3.4 | 0.9 | 0.5 | 2.4 | 47.1% | 16.7% | 73.6% |
 | 2005-06 | FA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Playoff statistics by year

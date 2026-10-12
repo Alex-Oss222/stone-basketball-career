@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `joshsmith.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Utah Jazz · **Basis:** Utah Jazz: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** Unassigned · **Born:** 1985-12-05 · **Age on card date:** 20  
+**Position:** SF (Small forward) · **Jersey:** #5 · **Born:** 1985-12-05 · **Age on card date:** 20  
 **Registry ID:** `joshsmith`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
@@ -41,7 +41,7 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 20 | UTAH | NBA | SF | 14 | 14 | 33.6 | 4.2 | 9.9 | .424 | 0.5 | 1.6 | .318 | 3.7 | 8.4 | .444 | .450 | 2.0 | 2.4 | .824 | 2.6 | 4.7 | 7.4 | 2.2 | 1.3 | 2.6 | 2.5 | 3.5 | 10.9 | .497 | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 19 | UTAH | NBA | SF | 14 | 14 | 33.6 | 4.2 | 9.9 | .424 | 0.5 | 1.6 | .318 | 3.7 | 8.4 | .444 | .450 | 2.0 | 2.4 | .824 | 2.6 | 4.7 | 7.4 | 2.2 | 1.3 | 2.6 | 2.5 | 3.5 | 10.9 | .497 | — |
 | [December 2005](../2005-06/12_December/League_Stats.md) | 20 | UTAH | NBA | SF | 15 | 15 | 36.4 | 3.9 | 10.0 | .387 | 0.3 | 1.2 | .278 | 3.5 | 8.8 | .402 | .403 | 2.3 | 3.1 | .739 | 2.9 | 4.9 | 7.7 | 3.2 | 1.4 | 2.0 | 2.3 | 3.2 | 10.3 | .455 | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 20 | UTAH | NBA | SF | 14 | 14 | 34.2 | 3.5 | 9.4 | .371 | 0.3 | 1.0 | .286 | 3.2 | 8.4 | .381 | .386 | 2.8 | 3.4 | .812 | 2.2 | 4.5 | 6.7 | 2.1 | 1.3 | 3.3 | 2.1 | 3.8 | 10.1 | .460 | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 20 | UTAH | NBA | SF | 11 | 11 | 34.1 | 3.6 | 8.8 | .412 | 0.9 | 1.6 | .556 | 2.7 | 7.2 | .380 | .464 | 2.1 | 3.0 | .697 | 1.9 | 5.3 | 7.2 | 2.0 | 0.8 | 1.5 | 2.3 | 3.6 | 10.3 | .507 | — |
@@ -57,10 +57,10 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 20 | UTAH | NBA | SF | 4 | 4 | 33.3 | 4.2 | 7.8 | .548 | 1.0 | 1.8 | .571 | 3.2 | 6.0 | .542 | .613 | 3.8 | 3.8 | 1.000 | 2.0 | 5.0 | 7.0 | 2.2 | 1.8 | 4.5 | 2.8 | 4.0 | 13.2 | .705 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 20 | UTAH | NBA | SF | 3 | 3 | 34.8 | 4.0 | 12.0 | .333 | 0.3 | 1.7 | .200 | 3.7 | 10.3 | .355 | .347 | 3.0 | 4.0 | .750 | 2.7 | 4.7 | 7.3 | 1.3 | 0.7 | 2.3 | 2.3 | 3.0 | 11.3 | .412 | — |
-| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 20 | UTAH | NBA | SF | 4 | 4 | 32.9 | 4.2 | 11.2 | .378 | 0.5 | 1.5 | .333 | 3.8 | 9.8 | .385 | .400 | 0.8 | 1.5 | .500 | 2.5 | 3.8 | 6.2 | 1.8 | 0.8 | 2.0 | 1.8 | 2.8 | 9.8 | .409 | — |
-| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 20 | UTAH | NBA | SF | 3 | 3 | 33.8 | 4.3 | 9.0 | .481 | 0.0 | 1.3 | .000 | 4.3 | 7.7 | .565 | .481 | 0.3 | 0.3 | 1.000 | 3.7 | 5.7 | 9.3 | 3.7 | 2.0 | 1.3 | 3.3 | 4.3 | 9.0 | .492 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 19 | UTAH | NBA | SF | 4 | 4 | 33.3 | 4.2 | 7.8 | .548 | 1.0 | 1.8 | .571 | 3.2 | 6.0 | .542 | .613 | 3.8 | 3.8 | 1.000 | 2.0 | 5.0 | 7.0 | 2.2 | 1.8 | 4.5 | 2.8 | 4.0 | 13.2 | .705 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 19 | UTAH | NBA | SF | 3 | 3 | 34.8 | 4.0 | 12.0 | .333 | 0.3 | 1.7 | .200 | 3.7 | 10.3 | .355 | .347 | 3.0 | 4.0 | .750 | 2.7 | 4.7 | 7.3 | 1.3 | 0.7 | 2.3 | 2.3 | 3.0 | 11.3 | .412 | — |
+| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 19 | UTAH | NBA | SF | 4 | 4 | 32.9 | 4.2 | 11.2 | .378 | 0.5 | 1.5 | .333 | 3.8 | 9.8 | .385 | .400 | 0.8 | 1.5 | .500 | 2.5 | 3.8 | 6.2 | 1.8 | 0.8 | 2.0 | 1.8 | 2.8 | 9.8 | .409 | — |
+| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 19 | UTAH | NBA | SF | 3 | 3 | 33.8 | 4.3 | 9.0 | .481 | 0.0 | 1.3 | .000 | 4.3 | 7.7 | .565 | .481 | 0.3 | 0.3 | 1.000 | 3.7 | 5.7 | 9.3 | 3.7 | 2.0 | 1.3 | 3.3 | 4.3 | 9.0 | .492 | — |
 | [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 20 | UTAH | NBA | SF | 4 | 4 | 37.2 | 4.5 | 10.0 | .450 | 0.0 | 1.0 | .000 | 4.5 | 9.0 | .500 | .450 | 2.0 | 2.5 | .800 | 2.0 | 4.5 | 6.5 | 3.8 | 1.2 | 2.8 | 1.2 | 2.8 | 11.0 | .495 | — |
 | [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 20 | UTAH | NBA | SF | 3 | 3 | 36.3 | 3.0 | 10.0 | .300 | 0.0 | 0.7 | .000 | 3.0 | 9.3 | .321 | .300 | 3.3 | 5.7 | .588 | 2.0 | 4.7 | 6.7 | 2.7 | 2.0 | 1.7 | 3.3 | 2.3 | 9.3 | .374 | — |
 | [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 20 | UTAH | NBA | SF | 4 | 4 | 37.2 | 3.2 | 9.5 | .342 | 0.5 | 1.5 | .333 | 2.8 | 8.0 | .344 | .368 | 2.2 | 3.0 | .750 | 4.0 | 5.5 | 9.5 | 2.5 | 1.5 | 1.5 | 2.8 | 3.5 | 9.2 | .427 | — |

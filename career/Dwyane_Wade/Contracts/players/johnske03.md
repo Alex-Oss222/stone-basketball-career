@@ -21,7 +21,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | team_option_declined |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -89,8 +89,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | contract_history |
 | Signing date | 2002-09-25 |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2002-03 |
+| Verified expiry date | 2003-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | team_option_declined |
 | Contract wording | Signed a partially guaranteed two-year minimum salary contract with Miami Heat. Included team option for 2003/04. |
 
@@ -101,11 +102,11 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | $349,458 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $563,679 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | team_option | minimum_scale | Team option; June 30 decision pending at this checkpoint. Exercise does not establish a fully guaranteed salary. |
+| 2003-04 | $563,679 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | team_option | minimum_scale | Team option; June 30 decision pending at this checkpoint. Exercise does not establish a fully guaranteed salary. Team option declined; not part of the contract. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -160,7 +161,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Option salary derived from the historical minimum scale, not a later signing or an assumed exercise.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

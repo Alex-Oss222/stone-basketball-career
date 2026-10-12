@@ -1,12 +1,12 @@
-![fitchge01: Free agent, Small forward](assets/fitchge01_header.svg)
+![Gerald Fitch: Free agent, Small forward](assets/fitchge01_header.svg)
 
 <!-- photo -->
-<img src="assets/silhouette.svg" alt="No sourced photo of fitchge01" width="160">
+<img src="assets/silhouette.svg" alt="No sourced photo of Gerald Fitch" width="160">
 
 *No sourced photo in the league baseline; a neutral silhouette is shown. Photos are never invented.*
 <!-- /photo -->
 
-# fitchge01 | NBA player card
+# Gerald Fitch | NBA player card
 
 [Interactive card](fitchge01.html) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 

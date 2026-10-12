@@ -31,8 +31,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | rookie_scale |
 | Signing date | 2003-07-21 |
 | Verified first season | 2003-04 |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2006-07 |
+| Verified expiry date | 2007-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -45,14 +46,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2003-04 | $2,197,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2004-05 | $2,361,800 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2005-06 | $2,526,600 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2006-07 | $3,201,202 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $3,201,202 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Team option exercised 2005-10-31. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
+| 2006-07 | team_option | $3,201,202 | 2005-10-31 | exercised | 2005-10-31 |
 
 ### Additional recorded annual compensation
 
@@ -105,7 +107,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Rookie-scale contract signed July 21, 2003: 80% of the No. 5 scale as protected Current Cash Compensation plus incentives to 120%; the scheduled amounts are the counted Salary (protected cash, included incentives and bonuses classified Likely); Unlikely bonuses count only when earned. Three seasons plus a team option for 2006-07 at the third season's Salary raised 26.7%, to be exercised by 2005-10-31. The draft hold ends with the signing.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -131,7 +133,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -201,8 +203,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | rookie_scale |
 | Signing date | 2003-07-21 |
 | Verified first season | 2003-04 |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2006-07 |
+| Verified expiry date | 2007-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -215,14 +218,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2003-04 | $2,197,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2004-05 | $2,361,800 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 | 2005-06 | $2,526,600 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2006-07 | $3,201,202 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $3,201,202 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Team option exercised 2005-10-31. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
+| 2006-07 | team_option | $3,201,202 | 2005-10-31 | exercised | 2005-10-31 |
 
 ### Additional recorded annual compensation
 
@@ -275,7 +279,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Rookie-scale contract signed July 21, 2003: 80% of the No. 5 scale as protected Current Cash Compensation plus incentives to 120%; the scheduled amounts are the counted Salary (protected cash, included incentives and bonuses classified Likely); Unlikely bonuses count only when earned. Three seasons plus a team option for 2006-07 at the third season's Salary raised 26.7%, to be exercised by 2005-10-31. The draft hold ends with the signing.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

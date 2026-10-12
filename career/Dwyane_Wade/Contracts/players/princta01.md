@@ -4,7 +4,7 @@
 
 Known through: 2006-06-20. [Open interactive contract](princta01.html#contract) · [Contract history](princta01.html#contract-history)
 
-Tayshaun Prince: under contract. Evidence cutoff: 2006-06-20.
+Tayshaun Prince: under rookie contract. Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Detroit Pistons |
+| Assigned club | Golden State Warriors |
 | Signing club | Not recorded |
 | Contract ID | princta01-2002-07-02 |
 | Signing route / evidence basis | contract_history |
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_rookie_contract |
 | Contract wording | Signed four-year, $4,676,595 rookie scale contract with Detroit Pistons. Included team option for 2005/06. |
 
@@ -45,15 +46,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $903,360 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $971,160 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,038,960 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $1,763,115 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | season_salary_list | Team option; no decision recorded on or before 2003-06-26. |
+| 2005-06 | $1,763,115 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | season_salary_list | Team option; no decision recorded on or before 2003-06-26. Team option exercised 2004-11-23. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2005-06 | team_option | $1,763,115 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | team_option | $1,763,115 | 2004-10-31 | exercised | 2004-11-23 |
 
 ### Additional recorded annual compensation
 
@@ -101,12 +102,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-02-09 | Detroit Pistons | Golden State Warriors | 2003-04-league-trade-2004-02-09-andersh01-dampier01-princta01 | [Dated league move](../../2003-04/League/league_moves.json) |
 
 ### Evidence and coverage
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -116,6 +118,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.shamsports.com/players/tayshaun-prince)
+- [Dated league move](../../2003-04/League/league_moves.json)
 
 ### Current control and contract coverage
 
@@ -125,10 +128,10 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Tayshaun Prince |
 | Club / rights baseline | Golden State Warriors |
-| Control status | under_contract |
+| Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -197,6 +200,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2006-07 |
 | Verified final season | 2010-11 |
 | Verified expiry date | 2011-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -214,7 +218,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -271,7 +275,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Rookie scale extension signed 2005-10-31 with Golden State Warriors: 5 seasons, $8,344,730 rising $876,196 a season. It follows the agreement ending with 2005-06 (contract signed 2002-07-02 (June 2003 contract inventory)), which stays in force until then (runtime/extensions.py).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -294,7 +298,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Detroit Pistons |
+| Assigned club | Golden State Warriors |
 | Signing club | Not recorded |
 | Contract ID | princta01-2002-07-02 |
 | Signing route / evidence basis | contract_history |
@@ -302,6 +306,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_rookie_contract |
 | Contract wording | Signed four-year, $4,676,595 rookie scale contract with Detroit Pistons. Included team option for 2005/06. |
 
@@ -314,15 +319,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $903,360 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $971,160 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,038,960 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $1,763,115 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | season_salary_list | Team option; no decision recorded on or before 2003-06-26. |
+| 2005-06 | $1,763,115 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | season_salary_list | Team option; no decision recorded on or before 2003-06-26. Team option exercised 2004-11-23. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2005-06 | team_option | $1,763,115 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | team_option | $1,763,115 | 2004-10-31 | exercised | 2004-11-23 |
 
 ### Additional recorded annual compensation
 
@@ -370,12 +375,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-02-09 | Detroit Pistons | Golden State Warriors | 2003-04-league-trade-2004-02-09-andersh01-dampier01-princta01 | [Dated league move](../../2003-04/League/league_moves.json) |
 
 ### Evidence and coverage
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -385,6 +391,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.shamsports.com/players/tayshaun-prince)
+- [Dated league move](../../2003-04/League/league_moves.json)
 
 ## Source records
 

@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `carroma01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Miami Heat · **Basis:** on Miami's 2005-06 register · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #1 · **Born:** 1980-08-28 · **Age on card date:** 25  
+**Position:** SG (Shooting guard) · **Jersey:** #2 · **Born:** 1980-08-28 · **Age on card date:** 25  
 **Registry ID:** `carroma01`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
@@ -105,7 +105,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | POR | 67 | 0 | 4.3 | 1.7 | 0.8 | 0.3 | 0.1 | 0.1 | 0.2 | 41.3% | 36.4% | 89.5% |
-| 2004-05 | CHI | 5 | 0 | 7.9 | 3.2 | 0.8 | 0.0 | 0.2 | 0.4 | 0.6 | 38.1% | 0.0% | N/A |
+| 2004-05 | PHI/SA/CHI | 5 | 0 | 7.9 | 3.2 | 0.8 | 0.0 | 0.2 | 0.4 | 0.6 | 38.1% | 0.0% | N/A |
 | 2005-06 | MIA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Playoff statistics by year

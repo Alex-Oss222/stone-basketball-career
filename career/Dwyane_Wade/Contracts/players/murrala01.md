@@ -25,14 +25,15 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Utah Jazz |
 | Signing club | Not recorded |
 | Contract ID | murrala01-baseline-2003-06-26 |
 | Signing route / evidence basis | salary_pattern |
 | Signing date | Not recorded |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2005-06 |
+| Verified expiry date | 2006-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -49,7 +50,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -100,14 +101,14 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
-| 2005-09-02 | Miami Heat | Utah Jazz | 2005-summer-trade-2005-09-02-murrala01-stevede01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 | 2004-12-20 | Toronto Raptors | Miami Heat | 2004-12-20-be4b6043a0 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) |
+| 2005-09-02 | Miami Heat | Utah Jazz | 2005-summer-trade-2005-09-02-murrala01-stevede01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
 Acquired from Toronto Raptors on December 20, 2004 by trade (2004-12-20-be4b6043a0); contract carried as the inventory records it (under_contract).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -119,8 +120,8 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
 
@@ -133,7 +134,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -194,14 +195,15 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Miami Heat |
+| Assigned club | Utah Jazz |
 | Signing club | Not recorded |
 | Contract ID | murrala01-baseline-2003-06-26 |
 | Signing route / evidence basis | salary_pattern |
 | Signing date | Not recorded |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2005-06 |
+| Verified expiry date | 2006-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -218,7 +220,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -269,14 +271,14 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
-| 2005-09-02 | Miami Heat | Utah Jazz | 2005-summer-trade-2005-09-02-murrala01-stevede01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 | 2004-12-20 | Toronto Raptors | Miami Heat | 2004-12-20-be4b6043a0 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json) |
+| 2005-09-02 | Miami Heat | Utah Jazz | 2005-summer-trade-2005-09-02-murrala01-stevede01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
 
 Acquired from Toronto Raptors on December 20, 2004 by trade (2004-12-20-be4b6043a0); contract carried as the inventory records it (under_contract).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -288,8 +290,8 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
+- [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ## Source records
 

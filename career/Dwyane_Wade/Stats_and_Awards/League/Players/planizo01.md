@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `planizo01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Orlando Magic · **Basis:** Orlando Magic: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #10 · **Born:** 1982-09-12 · **Age on card date:** 23  
+**Position:** SG (Shooting guard) · **Jersey:** #0 · **Born:** 1982-09-12 · **Age on card date:** 23  
 **Registry ID:** `planizo01` · [Basketball-Reference page](https://www.basketball-reference.com/players/p/planizo01.html) · ESPN ID 2174
 
 **Contract/control:** Under contract with Orlando Magic: on the Orlando Magic roster in a closed game on 2005-11-02; signing date not recorded. The world data does not record this rookie contract's terms.
@@ -109,7 +109,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | NJ | 64 | 0 | 5.7 | 2.5 | 0.7 | 0.5 | 0.2 | 0.2 | 0.3 | 43.0% | 24.2% | 70.0% |
-| 2004-05 | Charlotte Bobcats | 38 | 0 | 20.1 | 7.3 | 3.7 | 1.5 | 0.7 | 0.1 | 1.3 | 37.5% | 28.6% | 63.1% |
+| 2004-05 | CHA | 38 | 0 | 20.1 | 7.3 | 3.7 | 1.5 | 0.7 | 0.1 | 1.3 | 37.5% | 28.6% | 63.1% |
 | 2005-06 | ORL | 78 | 6 | 13.0 | 4.9 | 1.9 | 1.3 | 0.4 | 0.2 | 0.9 | 37.4% | 23.7% | 73.6% |
 
 ## Playoff statistics by year

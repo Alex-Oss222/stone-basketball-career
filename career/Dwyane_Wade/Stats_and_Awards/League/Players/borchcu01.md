@@ -105,7 +105,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2003-04 | UTAH | 55 | 0 | 3.9 | 1.1 | 0.6 | 0.2 | 0.0 | 0.2 | 0.7 | 37.3% | 16.7% | 66.7% |
-| 2004-05 | PHI | 47 | 0 | 12.5 | 3.3 | 2.8 | 0.7 | 0.1 | 0.4 | 0.8 | 39.9% | 40.0% | 84.6% |
+| 2004-05 | BOS/PHI | 47 | 0 | 12.5 | 3.3 | 2.8 | 0.7 | 0.1 | 0.4 | 0.8 | 39.9% | 40.0% | 84.6% |
 | 2005-06 | FA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Playoff statistics by year

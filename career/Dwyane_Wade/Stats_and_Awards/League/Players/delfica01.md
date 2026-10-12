@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `delfica01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Dallas Mavericks · **Basis:** Dallas Mavericks: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #20 · **Born:** 1982-08-29 · **Age on card date:** 23  
+**Position:** SG (Shooting guard) · **Jersey:** #1 · **Born:** 1982-08-29 · **Age on card date:** 23  
 **Registry ID:** `delfica01` · [Basketball-Reference page](https://www.basketball-reference.com/players/d/delfica01.html) · ESPN ID 1999
 
 **Contract/control:** Under contract with Dallas Mavericks: on the Dallas Mavericks roster in a closed game on 2005-11-01; signing date not recorded. The world data does not record this rookie contract's terms.

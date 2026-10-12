@@ -4,7 +4,7 @@
 
 Known through: 2006-06-20. [Open interactive contract](rogerro01.html#contract) · [Contract history](rogerro01.html#contract-history)
 
-Rodney Rogers: under contract unverified. Evidence cutoff: 2006-06-20.
+Rodney Rogers: out of the league (contract ended). Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
@@ -18,18 +18,18 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Rodney Rogers |
 | Club / rights baseline | Free agent |
-| Control status | under_contract_unverified |
+| Control status | out of the league (contract ended) |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
-Term inferred from a constant annual raise in the season salary lists; no contract history page was available, so options and the true final season are not established. The 2003-04 salary does not continue the 2001-02 to 2002-03 raise, so this may be an extension, a rookie-scale step, or a contract signed after June 2003.
+League market rest-of-season contract with Utah Jazz on 2004-11-04 (value 6.8 x fit). The move runs it through 2005-04-20, the last day of the regular season; a contract for the rest of the season ends with the league year on 2005-06-30.
 
 | Season | Amount | Record kind |
 | --- | --- | --- |
-| 2003-04 | $3,075,600 | contract_salary |
+| 2004-05 | Not recorded | contract_salary |
 
 ### Draft-rights scale reference
 
@@ -64,7 +64,106 @@ An offer, counteroffer or acceptance is not an executed contract.
 
 ## Contract history
 
-No executed agreement is recorded in the available contract history.
+The register preserves distinct agreements. An assignment by trade is part of the same agreement.
+
+### Rodney Rogers · 2004-11-04
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | 2004-11-04 |  |
+| Original term | 1 seasons |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 1 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Detroit Pistons |
+| Signing club | Utah Jazz |
+| Contract ID | rogerro01-2004-11-04-rest-of-season |
+| Signing route / evidence basis | rest-of-season contract |
+| Signing date | 2004-11-04 |
+| Verified first season | 2004-05 |
+| Verified final season | 2004-05 |
+| Verified expiry date | 2005-06-30 |
+| Ended on (dated event) | Not recorded |
+| Status | expired |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | pro-rated minimum; amount not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2004-05 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+| 2004-12-06 | Utah Jazz | Detroit Pistons | 2004-05-league-trade-2004-12-06-fishede01-humphkr01-rogerro01-telfase01 | [Dated league move](../../2004-05/League/league_moves.json) |
+
+### Evidence and coverage
+
+League market rest-of-season contract with Utah Jazz on 2004-11-04 (value 6.8 x fit). The move runs it through 2005-04-20, the last day of the regular season; a contract for the rest of the season ends with the league year on 2005-06-30.
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
+
+#### Agreement evidence
+
+- [Dated league move](../../2004-05/League/league_moves.json)
 
 ## Source records
 
@@ -72,3 +171,4 @@ No executed agreement is recorded in the available contract history.
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
+- [Dated league move](../../2004-05/League/league_moves.json)

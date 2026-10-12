@@ -51,9 +51,3 @@ Only earned annual awards announced on or before 2006-06-20 appear. Weekly, mont
 ![Most Valuable Player](assets/annual_f2d902aeb44a6467.svg)
 
 ![All-NBA First Team](assets/annual_4cd086b7e6184825.svg)
-
-## 2006-07
-
-Only earned annual awards announced on or before 2006-06-20 appear. Weekly, monthly and unclassified recognition remains in the full award register.
-
-No earned annual awards are recorded by this season's displayed cutoff. Nominations, pending decisions and historical Wade awards are not earned career awards.

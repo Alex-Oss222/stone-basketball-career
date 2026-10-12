@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Re-signed by Houston Rockets to a six-year, $30,893,625 contract. Included early termination option after 2004/05 season. |
 
@@ -45,15 +46,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $4,903,750 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $5,394,125 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $5,884,500 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $6,374,875 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | early_termination_option | extrapolated_constant_raise | Contract year subject to the player's early termination option after 2004-05. |
+| 2005-06 | $6,374,875 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | early_termination_option | extrapolated_constant_raise | Contract year subject to the player's early termination option after 2004-05. Early termination option not exercised 2005-06-29. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2005-06 | early_termination_option | $6,374,875 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | early_termination_option | $6,374,875 | 2005-06-29 | not exercised | 2005-06-29 |
 
 ### Additional recorded annual compensation
 
@@ -106,7 +107,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -127,7 +128,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -196,6 +197,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Re-signed by Houston Rockets to a six-year, $30,893,625 contract. Included early termination option after 2004/05 season. |
 
@@ -208,15 +210,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $4,903,750 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $5,394,125 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $5,884,500 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $6,374,875 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | early_termination_option | extrapolated_constant_raise | Contract year subject to the player's early termination option after 2004-05. |
+| 2005-06 | $6,374,875 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | early_termination_option | extrapolated_constant_raise | Contract year subject to the player's early termination option after 2004-05. Early termination option not exercised 2005-06-29. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2005-06 | early_termination_option | $6,374,875 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | early_termination_option | $6,374,875 | 2005-06-29 | not exercised | 2005-06-29 |
 
 ### Additional recorded annual compensation
 
@@ -269,7 +271,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Not recorded
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

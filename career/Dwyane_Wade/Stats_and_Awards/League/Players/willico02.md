@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `willico02.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Chicago Bulls · **Basis:** Chicago Bulls: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #34 · **Born:** 1973-12-04 · **Age on card date:** 32  
+**Position:** SF (Small forward) · **Jersey:** #14 · **Born:** 1973-12-04 · **Age on card date:** 32  
 **Registry ID:** `willico02` · [Basketball-Reference page](https://www.basketball-reference.com/players/w/willico02.html) · ESPN ID 936
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $5,000,000) (league contract inventory status `under_contract`, as of June 26, 2003).
@@ -41,7 +41,7 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 32 | CHI | NBA | SF | 13 | 1 | 7.2 | 0.7 | 1.8 | .391 | 0.2 | 0.2 | .667 | 0.5 | 1.5 | .350 | .435 | 0.9 | 1.2 | .750 | 0.2 | 0.7 | 0.9 | 0.2 | 0.2 | 0.2 | 0.6 | 1.0 | 2.5 | .533 | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 31 | CHI | NBA | SF | 13 | 1 | 7.2 | 0.7 | 1.8 | .391 | 0.2 | 0.2 | .667 | 0.5 | 1.5 | .350 | .435 | 0.9 | 1.2 | .750 | 0.2 | 0.7 | 0.9 | 0.2 | 0.2 | 0.2 | 0.6 | 1.0 | 2.5 | .533 | — |
 | [December 2005](../2005-06/12_December/League_Stats.md) | 32 | CHI | NBA | SF | 16 | 0 | 5.9 | 1.2 | 1.6 | .731 | 0.3 | 0.4 | .833 | 0.9 | 1.2 | .700 | .827 | 0.8 | 0.9 | .800 | 0.4 | 1.0 | 1.4 | 0.2 | 0.1 | 0.0 | 0.4 | 0.8 | 3.4 | .844 | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 32 | CHI | NBA | SF | 15 | 0 | 6.9 | 0.7 | 1.9 | .357 | 0.1 | 0.2 | .667 | 0.5 | 1.7 | .320 | .393 | 0.5 | 0.7 | .700 | 0.5 | 0.6 | 1.1 | 0.3 | 0.2 | 0.1 | 0.5 | 0.7 | 1.9 | .448 | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 32 | CHI | NBA | SF | 12 | 0 | 7.1 | 1.0 | 2.2 | .462 | 0.2 | 0.2 | .667 | 0.8 | 1.9 | .435 | .500 | 0.4 | 0.5 | .833 | 0.3 | 1.1 | 1.4 | 0.2 | 0.0 | 0.1 | 0.7 | 1.0 | 2.6 | .541 | — |
@@ -57,10 +57,10 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 32 | CHI | NBA | SF | 3 | 1 | 12.1 | 2.0 | 3.7 | .545 | 0.3 | 0.7 | .500 | 1.7 | 3.0 | .556 | .591 | 1.3 | 2.0 | .667 | 0.7 | 0.7 | 1.3 | 0.3 | 0.3 | 0.0 | 0.7 | 1.7 | 5.7 | .623 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 32 | CHI | NBA | SF | 3 | 0 | 5.9 | 1.0 | 2.3 | .429 | 0.3 | 0.3 | 1.000 | 0.7 | 2.0 | .333 | .500 | 1.0 | 1.3 | .750 | 0.3 | 0.7 | 1.0 | 0.0 | 0.3 | 0.3 | 0.7 | 1.0 | 3.3 | .571 | — |
-| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 32 | CHI | NBA | SF | 3 | 0 | 5.4 | 0.0 | 0.7 | .000 | 0.0 | 0.0 | N/A | 0.0 | 0.7 | .000 | .000 | 1.3 | 1.3 | 1.000 | 0.0 | 1.3 | 1.3 | 0.3 | 0.0 | 0.0 | 0.0 | 0.7 | 1.3 | .532 | — |
-| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 32 | CHI | NBA | SF | 4 | 0 | 6.0 | 0.0 | 0.8 | .000 | 0.0 | 0.0 | N/A | 0.0 | 0.8 | .000 | .000 | 0.2 | 0.5 | .500 | 0.0 | 0.2 | 0.2 | 0.2 | 0.2 | 0.2 | 1.0 | 0.8 | 0.2 | .129 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 31 | CHI | NBA | SF | 3 | 1 | 12.1 | 2.0 | 3.7 | .545 | 0.3 | 0.7 | .500 | 1.7 | 3.0 | .556 | .591 | 1.3 | 2.0 | .667 | 0.7 | 0.7 | 1.3 | 0.3 | 0.3 | 0.0 | 0.7 | 1.7 | 5.7 | .623 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 31 | CHI | NBA | SF | 3 | 0 | 5.9 | 1.0 | 2.3 | .429 | 0.3 | 0.3 | 1.000 | 0.7 | 2.0 | .333 | .500 | 1.0 | 1.3 | .750 | 0.3 | 0.7 | 1.0 | 0.0 | 0.3 | 0.3 | 0.7 | 1.0 | 3.3 | .571 | — |
+| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 31 | CHI | NBA | SF | 3 | 0 | 5.4 | 0.0 | 0.7 | .000 | 0.0 | 0.0 | N/A | 0.0 | 0.7 | .000 | .000 | 1.3 | 1.3 | 1.000 | 0.0 | 1.3 | 1.3 | 0.3 | 0.0 | 0.0 | 0.0 | 0.7 | 1.3 | .532 | — |
+| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 31 | CHI | NBA | SF | 4 | 0 | 6.0 | 0.0 | 0.8 | .000 | 0.0 | 0.0 | N/A | 0.0 | 0.8 | .000 | .000 | 0.2 | 0.5 | .500 | 0.0 | 0.2 | 0.2 | 0.2 | 0.2 | 0.2 | 1.0 | 0.8 | 0.2 | .129 | — |
 | [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 32 | CHI | NBA | SF | 4 | 0 | 6.2 | 1.2 | 1.8 | .714 | 0.5 | 0.5 | 1.000 | 0.8 | 1.2 | .600 | .857 | 0.2 | 0.2 | 1.000 | 0.2 | 0.5 | 0.8 | 0.0 | 0.2 | 0.0 | 0.5 | 0.8 | 3.2 | .874 | — |
 | [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 32 | CHI | NBA | SF | 4 | 0 | 5.3 | 2.0 | 2.2 | .889 | 0.5 | 0.5 | 1.000 | 1.5 | 1.8 | .857 | 1.000 | 0.2 | 0.5 | .500 | 0.5 | 1.5 | 2.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0.5 | 4.8 | .962 | — |
 | [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 32 | CHI | NBA | SF | 3 | 0 | 6.8 | 0.3 | 0.7 | .500 | 0.3 | 0.3 | 1.000 | 0.0 | 0.3 | .000 | .750 | 1.3 | 1.3 | 1.000 | 0.7 | 1.0 | 1.7 | 0.3 | 0.3 | 0.0 | 0.7 | 1.3 | 2.3 | .931 | — |
@@ -110,7 +110,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | DET | 82 | 1 | 25.1 | 12.0 | 4.4 | 1.3 | 0.5 | 0.3 | 1.5 | 45.3% | 18.2% | 79.0% |
 | 2003-04 | DET | 79 | 5 | 20.7 | 10.2 | 3.4 | 0.8 | 0.5 | 0.2 | 1.8 | 47.4% | 55.6% | 81.5% |
-| 2004-05 | CHI | 72 | 9 | 21.4 | 9.7 | 3.9 | 1.0 | 0.4 | 0.3 | 1.3 | 43.3% | 5.3% | 84.9% |
+| 2004-05 | DET/CHI | 72 | 9 | 21.4 | 9.7 | 3.9 | 1.0 | 0.4 | 0.3 | 1.3 | 43.3% | 5.3% | 84.9% |
 | 2005-06 | CHI | 82 | 1 | 7.0 | 2.8 | 1.3 | 0.3 | 0.2 | 0.1 | 0.6 | 48.2% | 77.3% | 78.6% |
 
 ## Playoff statistics by year

@@ -42,23 +42,23 @@ Unassessed.
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2004-05 from the simulated league record; 2005-06 not started.
+**Coverage:** 2002-03 regular season from the league record; earlier seasons are not imported; 2003-04: Washington Wizards from the league record; 2004-05: Washington Wizards from the league record; 2005-06 had not started on 2005-10-30.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2004-05 | Washington Wizards | 41 | 6 | 18.7 | 4.8 | 4.7 | 0.8 | 0.7 | 0.3 | 1.2 | 0.431 | 0.333 | 0.607 |
+| 2002-03 | Washington Wizards | 80 | 20 | 22.2 | 7.4 | 5.3 | 0.7 | 0.6 | 1.0 | 1.4 | 44.6% | 0.0% | 66.8% |
+| 2003-04 | Washington Wizards | 74 | 74 | 32.4 | 11.1 | 6.7 | 1.6 | 0.9 | 0.8 | 1.9 | 47.8% | 33.3% | 70.8% |
+| 2004-05 | Washington Wizards | 41 | 6 | 18.7 | 4.8 | 4.7 | 0.8 | 0.7 | 0.3 | 1.2 | 43.1% | 33.3% | 60.7% |
 | 2005-06 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
-Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
+Source: 2002-03 from the [league statistics file](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** no appearance in a closed simulated playoff game through 2005-10-30; playoff history before 2003-04 is not imported. The 2005-06 playoffs had not started on 2005-10-30.
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2005-10-30 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

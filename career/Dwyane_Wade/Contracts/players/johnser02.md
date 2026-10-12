@@ -4,113 +4,11 @@
 
 Known through: 2006-06-20. [Open interactive contract](johnser02.html#contract) · [Contract history](johnser02.html#contract-history)
 
-Ervin Johnson: under contract. Evidence cutoff: 2006-06-20.
+Ervin Johnson: unsigned free agent (waived). Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
-### Ervin Johnson · existing contract; signing date not recorded
-
-Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
-
-| Contract term | Recorded value | Basis |
-| --- | --- | --- |
-| Signing date | Not recorded |  |
-| Original term | Not recorded |  |
-| Reported original value | Not recorded | Not recorded |
-| Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $9,255,789 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 0 |  |
-
-### Contract identity and execution
-
-| Field | Recorded detail |
-| --- | --- |
-| Assigned club | Milwaukee Bucks |
-| Signing club | Not recorded |
-| Contract ID | johnser02-existing-d23ec1018463 |
-| Signing route / evidence basis | salary_pattern |
-| Signing date | Not recorded |
-| Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | under_contract |
-| Contract wording | Not recorded |
-
-### Salary by season
-
-Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
-
-| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2002-03 | $3,998,679 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $4,418,156 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2004-05 | $4,837,633 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-
-### Options and decision deadlines
-
-An option amount is conditional. No exercise or decline is assumed.
-
-| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
-| --- | --- | --- | --- | --- | --- |
-
-### Additional recorded annual compensation
-
-Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
-
-| Season | Signing bonus | Dead cap | Buyout |
-| --- | --- | --- | --- |
-| 2002-03 | Not recorded | Not recorded | Not recorded |
-| 2003-04 | Not recorded | Not recorded | Not recorded |
-| 2004-05 | Not recorded | Not recorded | Not recorded |
-
-### Guarantees, incentives and payment terms
-
-| Term | Recorded detail |
-| --- | --- |
-| Guarantee rider / amendment | Not recorded |
-| Guarantee triggers | Not recorded |
-| Guarantee date | Not recorded |
-| Waiver deadline | Not recorded |
-| Bonus terms | Not recorded |
-| Payment schedule | Not recorded |
-| Buyout terms | Not recorded |
-| Promise | Not recorded |
-| Percent of scale | Not recorded |
-
-### Free agency, Bird rights and trade terms
-
-No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
-
-| Term | Recorded detail |
-| --- | --- |
-| Free agency | Not recorded |
-| Bird rights | Not recorded |
-| No trade clause | Not recorded |
-| Trade consent | Not recorded |
-| Trade restrictions | Not recorded |
-| Trade kicker | Not recorded |
-| Trade clauses | Not recorded |
-| Base year compensation | Not recorded |
-
-### Assignment history
-
-A trade assigns this contract; it does not create a duplicate signing.
-
-| Date | From | To | Transaction | Source |
-| --- | --- | --- | --- | --- |
-
-### Evidence and coverage
-
-Term inferred from a constant annual raise in the season salary lists; no contract history page was available, so options and the true final season are not established.
-
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
-
-#### Agreement evidence
-
-- [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
-- [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
-- [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
-- [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
+No verified current signed agreement is available in the dated record. The control and evidence sections below explain the recorded status.
 
 ### Current control and contract coverage
 
@@ -120,17 +18,18 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Ervin Johnson |
 | Club / rights baseline | Free agent |
-| Control status | under_contract |
-| Executed current contract | Recorded |
+| Control status | unsigned free agent (waived) |
+| Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
-Current signed salary detail appears in the contract below.
+League market ten-day contract with Sacramento Kings on 2006-03-30 (value 2.62 x fit). It ends on 2006-04-09.
 
 | Season | Amount | Record kind |
 | --- | --- | --- |
+| 2005-06 | Not recorded | contract_salary |
 
 ### Draft-rights scale reference
 
@@ -167,6 +66,400 @@ An offer, counteroffer or acceptance is not an executed contract.
 
 The register preserves distinct agreements. An assignment by trade is part of the same agreement.
 
+### Ervin Johnson · 2006-03-30
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | 2006-03-30 |  |
+| Original term | 1 seasons |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 1 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Sacramento Kings |
+| Signing club | Sacramento Kings |
+| Contract ID | johnser02-2006-03-30-ten-day |
+| Signing route / evidence basis | 10-day contract |
+| Signing date | 2006-03-30 |
+| Verified first season | 2005-06 |
+| Verified final season | 2005-06 |
+| Verified expiry date | 2006-04-09 |
+| Ended on (dated event) | 2006-04-08 |
+| Status | waived |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | pro-rated minimum; amount not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+
+### Evidence and coverage
+
+League market ten-day contract with Sacramento Kings on 2006-03-30 (value 2.62 x fit). It ends on 2006-04-09.
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
+
+#### Agreement evidence
+
+- [Dated league move](../../2005-06/League/league_moves.json)
+
+### Ervin Johnson · 2006-01-25
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | 2006-01-25 |  |
+| Original term | 1 seasons |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 1 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Cleveland Cavaliers |
+| Signing club | Portland Trail Blazers |
+| Contract ID | johnser02-2006-01-25-ten-day |
+| Signing route / evidence basis | 10-day contract |
+| Signing date | 2006-01-25 |
+| Verified first season | 2005-06 |
+| Verified final season | 2005-06 |
+| Verified expiry date | 2006-06-30 |
+| Ended on (dated event) | 2006-02-24 |
+| Status | waived |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | pro-rated minimum; amount not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+| 2006-01-28 | Portland Trail Blazers | Atlanta Hawks | 2005-06-market-2006-01-28-claim-johnser02 | [Dated league move](../../2005-06/League/league_moves.json) |
+| 2006-02-04 | Atlanta Hawks | Cleveland Cavaliers | 2005-06-market-2006-02-04-claim-johnser02 | [Dated league move](../../2005-06/League/league_moves.json) |
+
+### Evidence and coverage
+
+League market ten-day contract with Portland Trail Blazers on 2006-01-25 (value 2.38 x fit). It ends on 2006-02-04.
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
+
+#### Agreement evidence
+
+- [Dated league move](../../2005-06/League/league_moves.json)
+
+### Ervin Johnson · 2006-01-21
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | 2006-01-21 |  |
+| Original term | 1 seasons |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 1 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Golden State Warriors |
+| Signing club | Golden State Warriors |
+| Contract ID | johnser02-2006-01-21-ten-day |
+| Signing route / evidence basis | 10-day contract |
+| Signing date | 2006-01-21 |
+| Verified first season | 2005-06 |
+| Verified final season | 2005-06 |
+| Verified expiry date | 2006-01-31 |
+| Ended on (dated event) | 2006-01-23 |
+| Status | waived |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | pro-rated minimum; amount not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+
+### Evidence and coverage
+
+League market ten-day contract with Golden State Warriors on 2006-01-21 (value 2.49 x fit). It ends on 2006-01-31.
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
+
+#### Agreement evidence
+
+- [Dated league move](../../2005-06/League/league_moves.json)
+
+### Ervin Johnson · 2006-01-11
+
+Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
+
+| Contract term | Recorded value | Basis |
+| --- | --- | --- |
+| Signing date | 2006-01-11 |  |
+| Original term | 1 seasons |  |
+| Reported original value | Not recorded | Not recorded |
+| Original AAV | Not recorded | Requires complete original schedule and term. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 1 |  |
+
+### Contract identity and execution
+
+| Field | Recorded detail |
+| --- | --- |
+| Assigned club | Denver Nuggets |
+| Signing club | Denver Nuggets |
+| Contract ID | johnser02-2006-01-11-ten-day |
+| Signing route / evidence basis | 10-day contract |
+| Signing date | 2006-01-11 |
+| Verified first season | 2005-06 |
+| Verified final season | 2005-06 |
+| Verified expiry date | 2006-01-21 |
+| Ended on (dated event) | 2006-01-21 |
+| Status | expired |
+| Contract wording | Not recorded |
+
+### Salary by season
+
+Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
+
+| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | pro-rated minimum; amount not recorded | Not recorded |
+
+### Options and decision deadlines
+
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
+
+| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
+| --- | --- | --- | --- | --- | --- |
+
+### Additional recorded annual compensation
+
+Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
+
+| Season | Signing bonus | Dead cap | Buyout |
+| --- | --- | --- | --- |
+| 2005-06 | Not recorded | Not recorded | Not recorded |
+
+### Guarantees, incentives and payment terms
+
+| Term | Recorded detail |
+| --- | --- |
+| Guarantee rider / amendment | Not recorded |
+| Guarantee triggers | Not recorded |
+| Guarantee date | Not recorded |
+| Waiver deadline | Not recorded |
+| Bonus terms | Not recorded |
+| Payment schedule | Not recorded |
+| Buyout terms | Not recorded |
+| Promise | Not recorded |
+| Percent of scale | Not recorded |
+
+### Free agency, Bird rights and trade terms
+
+No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
+
+| Term | Recorded detail |
+| --- | --- |
+| Free agency | Not recorded |
+| Bird rights | Not recorded |
+| No trade clause | Not recorded |
+| Trade consent | Not recorded |
+| Trade restrictions | Not recorded |
+| Trade kicker | Not recorded |
+| Trade clauses | Not recorded |
+| Base year compensation | Not recorded |
+
+### Assignment history
+
+A trade assigns this contract; it does not create a duplicate signing.
+
+| Date | From | To | Transaction | Source |
+| --- | --- | --- | --- | --- |
+
+### Evidence and coverage
+
+League market ten-day contract with Denver Nuggets on 2006-01-11 (value 2.7 x fit). It ends on 2006-01-21.
+
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
+
+#### Agreement evidence
+
+- [Dated league move](../../2005-06/League/league_moves.json)
+
 ### Ervin Johnson · existing contract; signing date not recorded
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
@@ -184,15 +477,16 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Milwaukee Bucks |
+| Assigned club | Minnesota Timberwolves |
 | Signing club | Not recorded |
 | Contract ID | johnser02-existing-d23ec1018463 |
 | Signing route / evidence basis | salary_pattern |
 | Signing date | Not recorded |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | under_contract |
+| Verified final season | 2004-05 |
+| Verified expiry date | 2005-06-30 |
+| Ended on (dated event) | Not recorded |
+| Status | expired |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -207,7 +501,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -257,12 +551,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2003-06-27 | Milwaukee Bucks | Minnesota Timberwolves | Not recorded | [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json) |
 
 ### Evidence and coverage
 
 Term inferred from a constant annual raise in the season salary lists; no contract history page was available, so options and the true final season are not established.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -270,6 +565,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
+- [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 
 ## Source records
 
@@ -277,3 +573,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
+- [Dated league move](../../2005-06/League/league_moves.json)

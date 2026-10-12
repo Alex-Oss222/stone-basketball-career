@@ -105,7 +105,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | DAL/DEN | 19 | 0 | 5.8 | 1.6 | 0.4 | 0.6 | 0.1 | 0.1 | 0.1 | 29.7% | 35.7% | 75.0% |
-| 2003-04 | DEN | 11 | 0 | 3.3 | 1.2 | 0.4 | 0.5 | 0.1 | 0.0 | 0.2 | 37.5% | 0.0% | 50.0% |
+| 2003-04 | DAL/PHI/LAC/NJ/NO | 11 | 0 | 3.3 | 1.2 | 0.4 | 0.5 | 0.1 | 0.0 | 0.2 | 37.5% | 0.0% | 50.0% |
 | 2005-06 | FA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Playoff statistics by year

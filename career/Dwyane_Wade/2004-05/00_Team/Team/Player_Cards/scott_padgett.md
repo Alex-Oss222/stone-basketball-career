@@ -60,24 +60,26 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 from the league record; 2003-04 not started.
+**Coverage:** 2002-03 regular season from the league record; earlier seasons are not imported; 2003-04: 68 Miami game(s) from closed results; 2004-05: 25 closed Miami game(s) through 2004-12-19.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2002-03 | Utah Jazz | 82 | N/A | 16.1 | 5.7 | 3.3 | 1.0 | 0.5 | 0.3 | 0.9 | 0.402 | 0.338 | 0.757 |
-| 2003-04 | MIA | 68 | 68 | 34.4 | 13.8 | 8.7 | 2.4 | 0.8 | 0.7 | 1.8 | 43.7% | 37.4% | 78.6% |
-| 2004-05 | MIA | 25 | 0 | 21.3 | 6.4 | 4.0 | 1.6 | 1.1 | 0.2 | 0.9 | 38.2% | 33.9% | 78.4% |
+| 2002-03 | Utah Jazz | 82 | 2 | 16.1 | 5.7 | 3.3 | 1.0 | 0.5 | 0.3 | 0.9 | 40.2% | 33.8% | 75.7% |
+| 2003-04 | Miami Heat | 68 | 68 | 34.4 | 13.8 | 8.7 | 2.4 | 0.8 | 0.7 | 1.8 | 43.7% | 37.4% | 78.6% |
+| 2004-05 | Miami Heat | 25 | 0 | 21.3 | 6.4 | 4.0 | 1.6 | 1.1 | 0.2 | 0.9 | 38.2% | 33.9% | 78.4% |
 
-Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
+Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** playoff games from closed results through 2004-12-19, every club's (`runtime/playoff_stats.py`, the playoff pages' aggregation); playoff history before 2003-04 is not imported. The 2004-05 playoffs had not started on 2004-12-19.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Miami Heat | 5 | 5 | 36.4 | 14.4 | 7.2 | 2.6 | 0.4 | 1.0 | 1.8 | 45.3% | 43.8% | 68.0% |
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2004-12-19 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

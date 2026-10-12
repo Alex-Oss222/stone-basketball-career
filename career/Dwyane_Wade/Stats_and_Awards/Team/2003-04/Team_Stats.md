@@ -18,7 +18,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Malik Allen | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Caron Butler | SF | 67 | 34.6 | 12.2 | 5.5 | 1.6 | 1.3 | 0.2 | 1.6 |
 | Rasual Butler | SG/SF | 66 | 5.6 | 2.3 | 0.6 | 0.3 | 0.1 | 0.1 | 0.3 |
 | Anthony Carter | PG | 69 | 7.0 | 2.1 | 1.0 | 0.6 | 0.4 | 0.1 | 0.5 |
@@ -28,7 +27,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Eddie Jones | SG/SF | 81 | 17.4 | 8.7 | 2.0 | 1.6 | 0.5 | 0.2 | 0.9 |
 | Sean Lampley | SF | 25 | 5.8 | 2.3 | 1.3 | 0.4 | 0.0 | 0.2 | 0.4 |
 | Dwyane Wade | SG/PG | 75 | 35.0 | 17.9 | 4.8 | 4.5 | 1.6 | 1.0 | 1.1 |
-| Jerome Beasley | PF/C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Stephen Jackson | SG | 78 | 18.6 | 10.0 | 2.7 | 1.3 | 1.0 | 0.2 | 1.6 |
 | Shawn Kemp | C | 69 | 26.4 | 9.3 | 7.2 | 1.1 | 0.9 | 0.6 | 1.6 |
 | Scott Padgett | PF | 68 | 34.4 | 13.8 | 8.7 | 2.4 | 0.8 | 0.7 | 1.8 |
@@ -43,7 +41,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Malik Allen | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Caron Butler | 67 | 332/859 | .386 | 19/74 | .257 | 134/184 | .728 | 104 | 266 |
 | Rasual Butler | 0 | 57/137 | .416 | 22/50 | .440 | 13/22 | .591 | 8 | 32 |
 | Anthony Carter | 3 | 56/170 | .329 | 4/37 | .108 | 31/36 | .861 | 20 | 51 |
@@ -53,7 +50,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Eddie Jones | 21 | 241/599 | .402 | 98/234 | .419 | 127/182 | .698 | 29 | 130 |
 | Sean Lampley | 0 | 21/49 | .429 | 1/6 | .167 | 14/20 | .700 | 8 | 25 |
 | Dwyane Wade | 70 | 457/879 | .520 | 71/179 | .397 | 360/396 | .909 | 102 | 257 |
-| Jerome Beasley | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Stephen Jackson | 6 | 285/660 | .432 | 71/199 | .357 | 141/175 | .806 | 69 | 139 |
 | Shawn Kemp | 34 | 256/609 | .420 | 2/5 | .400 | 131/192 | .682 | 162 | 334 |
 | Scott Padgett | 68 | 341/780 | .437 | 91/243 | .374 | 165/210 | .786 | 196 | 395 |
@@ -102,7 +98,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 ## Playoffs
 
-No playoff games recorded. Use a separate playoff ledger; do not add postseason games to the regular-season totals.
+5 closed Miami playoff game(s), 1-4: First round lost 1-4 against Milwaukee Bucks. [Miami's playoff statistics](Playoffs/Team_Playoff_Stats.md) (series, games and players) · [bracket](../../League/2003-04/Playoffs.md). Playoff games stay out of the regular-season tables above.
 
 Departures retain their completed Miami appearances. Arrivals enter from their first applicable period. Team wins and losses count games once, not once per player.
 

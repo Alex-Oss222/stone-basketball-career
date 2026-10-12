@@ -2,7 +2,7 @@
 
 Seeded 2006-04-19 from closed simulated regular-season results only ([standings](Standings.md); rules and sources: `library/2005/league/nba_2005_06_playoff_rules.json`, `runtime/playoffs.py`). Real 2006 seeds, matchups and results are never used.
 
-Division winners take seeds 1 and 2; seeds 3 to 8 are the next six records. Ties: the 2005-06 tiebreak procedure, an engine drawing if it cannot separate them. Best of seven; home court to the better record; 2-2-1-1-1 in the conference rounds, 2-3-2 in the Finals. Games 5 to 7 are played only if needed.
+The three division winners take seeds 1, 2 and 3, ordered by record among themselves, whether or not they have one of the conference's eight best records; seeds 4 to 8 are the next five records in the conference. Ties: the 2005-06 tiebreak procedure, an engine drawing if it cannot separate them. Best of seven; home court to the better record; 2-2-1-1-1 in the conference rounds, 2-3-2 in the Finals. Games 5 to 7 are played only if needed.
 
 Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · [Miami's playoff statistics](../../Team/2005-06/Playoffs/Team_Playoff_Stats.md).
 

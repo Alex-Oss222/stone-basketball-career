@@ -104,7 +104,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | ORL | 18 | 0 | 2.6 | 1.0 | 0.3 | 0.2 | 0.1 | 0.2 | 0.2 | 36.8% | 57.1% | N/A |
+| 2003-04 | ORL/GS/MIN/LAC/DEN/MIL | 18 | 0 | 2.6 | 1.0 | 0.3 | 0.2 | 0.1 | 0.2 | 0.2 | 36.8% | 57.1% | N/A |
 | 2005-06 | FA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Playoff statistics by year

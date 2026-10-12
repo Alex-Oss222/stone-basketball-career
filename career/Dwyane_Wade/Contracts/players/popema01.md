@@ -4,7 +4,7 @@
 
 Known through: 2006-06-20. [Open interactive contract](popema01.html#contract) · [Contract history](popema01.html#contract-history)
 
-Mark Pope: under contract. Evidence cutoff: 2006-06-20.
+Mark Pope: out of the league (waived). Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
@@ -18,10 +18,10 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Mark Pope |
 | Club / rights baseline | Free agent |
-| Control status | under_contract |
+| Control status | out of the league (waived) |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -83,7 +83,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Los Angeles Lakers |
+| Assigned club | Chicago Bulls |
 | Signing club | Los Angeles Lakers |
 | Contract ID | popema01-2004-07-29 |
 | Signing route / evidence basis | minimum |
@@ -91,7 +91,8 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2004-05 |
 | Verified final season | 2004-05 |
 | Verified expiry date | 2005-06-30 |
-| Status | under_contract |
+| Ended on (dated event) | 2005-04-14 |
+| Status | waived |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -104,7 +105,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -152,16 +153,18 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2005-03-17 | Los Angeles Lakers | Chicago Bulls | 2004-05-market-2005-03-17-claim-popema01 | [Dated league move](../../2004-05/League/league_moves.json) |
 
 ### Evidence and coverage
 
 Simulated 2004 summer market: signing on 2004-07-29. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Dated league move](../../2004-05/League/league_moves.json)
 
 ### Mark Pope · 2003-09-20
 
@@ -173,7 +176,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | Not recorded |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 1 |  |
 
 ### Contract identity and execution
@@ -188,7 +191,8 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2003-04 |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
-| Status | under_contract |
+| Ended on (dated event) | 2003-12-05 |
+| Status | waived |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -201,7 +205,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -254,11 +258,12 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 undisclosed
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Dated league move](../../2003-04/League/league_moves.json)
 
 ### Mark Pope · existing contract; signing date not recorded
 
@@ -285,7 +290,8 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | free_agent_expiring |
+| Ended on (dated event) | Not recorded |
+| Status | expired |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -298,7 +304,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -351,7 +357,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

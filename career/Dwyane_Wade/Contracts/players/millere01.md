@@ -4,7 +4,7 @@
 
 Known through: 2006-06-20. [Open interactive contract](millere01.html#contract) · [Contract history](millere01.html#contract-history)
 
-Reggie Miller: under contract. Evidence cutoff: 2006-06-20.
+Reggie Miller: out of the league (contract on the books). Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
@@ -18,14 +18,14 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | 3 seasons |  |
 | Reported original value | $16,500,000 | reported total |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 3 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Indiana Pacers |
+| Assigned club | Boston Celtics |
 | Signing club | Indiana Pacers |
 | Contract ID | millere01-2003-08-21 |
 | Signing route / evidence basis | re sign |
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2003-04 |
 | Verified final season | 2005-06 |
 | Verified expiry date | 2006-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -48,7 +49,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -98,16 +99,18 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-11-15 | Indiana Pacers | Boston Celtics | 2004-05-league-trade-2004-11-15-croshau01-millere01-roseja01 | [Dated league move](../../2004-05/League/league_moves.json) |
 
 ### Evidence and coverage
 
 date approximate; amount from a snippet
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Dated league move](../../2004-05/League/league_moves.json)
 
 ### Current control and contract coverage
 
@@ -117,10 +120,10 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Reggie Miller |
 | Club / rights baseline | Free agent |
-| Control status | under_contract |
+| Control status | out of the league (contract on the books) |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -174,14 +177,14 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | 3 seasons |  |
 | Reported original value | $16,500,000 | reported total |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 3 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Indiana Pacers |
+| Assigned club | Boston Celtics |
 | Signing club | Indiana Pacers |
 | Contract ID | millere01-2003-08-21 |
 | Signing route / evidence basis | re sign |
@@ -189,6 +192,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2003-04 |
 | Verified final season | 2005-06 |
 | Verified expiry date | 2006-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -204,7 +208,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -254,16 +258,18 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-11-15 | Indiana Pacers | Boston Celtics | 2004-05-league-trade-2004-11-15-croshau01-millere01-roseja01 | [Dated league move](../../2004-05/League/league_moves.json) |
 
 ### Evidence and coverage
 
 date approximate; amount from a snippet
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Dated league move](../../2004-05/League/league_moves.json)
 
 ### Reggie Miller · existing contract; signing date not recorded
 
@@ -290,7 +296,8 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | free_agent_expiring |
+| Ended on (dated event) | Not recorded |
+| Status | expired |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -303,7 +310,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -356,7 +363,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

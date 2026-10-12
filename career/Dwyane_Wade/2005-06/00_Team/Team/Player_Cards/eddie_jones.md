@@ -103,14 +103,15 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 81 closed Miami game(s) through 2004-09-30; 2004-05: 37 closed Miami game(s) through 2005-01-23; 2005-06: 44 closed Miami game(s) through 2006-06-20.
+**Coverage:** 2002-03 regular season from the league record; earlier seasons are not imported; 2003-04: 81 Miami game(s) from closed results; 2004-05: 37 Miami game(s), and his season with every club (Miami Heat, Utah Jazz) from the league record; 2005-06: 44 closed Miami game(s) through 2006-06-20.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2002-03 | MIA | 47 | 47 | 38.1 | 18.5 | 4.8 | 3.7 | 1.4 | 0.7 | 1.8 | 42.3% | 40.7% | 82.2% |
-| 2003-04 | MIA | 81 | 21 | 17.4 | 8.7 | 2.0 | 1.6 | 0.5 | 0.2 | 0.9 | 40.2% | 41.9% | 69.8% |
-| 2004-05 | MIA | 37 | 7 | 8.4 | 2.7 | 0.9 | 0.5 | 0.5 | 0.2 | 0.4 | 37.1% | 25.0% | 63.3% |
-| 2005-06 | MIA | 44 | 0 | 8.0 | 2.9 | 1.4 | 0.6 | 0.6 | 0.2 | 0.4 | 55.6% | 60.0% | 90.0% |
+| 2002-03 | Miami Heat | 47 | 47 | 38.1 | 18.5 | 4.8 | 3.7 | 1.4 | 0.7 | 1.8 | 42.3% | 40.7% | 82.2% |
+| 2003-04 | Miami Heat | 81 | 21 | 17.4 | 8.7 | 2.0 | 1.6 | 0.5 | 0.2 | 0.9 | 40.2% | 41.9% | 69.8% |
+| 2004-05 | Miami Heat | 37 | 7 | 8.4 | 2.7 | 0.9 | 0.5 | 0.5 | 0.2 | 0.4 | 37.1% | 25.0% | 63.3% |
+| 2004-05 | Miami Heat, Utah Jazz (season, every club) | 76 | 46 | 23.3 | 7.7 | 3.1 | 1.7 | 1.0 | 0.4 | 1.0 | 41.4% | 35.6% | 75.5% |
+| 2005-06 | Miami Heat | 44 | 0 | 8.0 | 2.9 | 1.4 | 0.6 | 0.6 | 0.2 | 0.4 | 55.6% | 60.0% | 90.0% |
 
 <!-- veteran-details:start -->
 ### Additional statistics
@@ -120,18 +121,19 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | 2002-03 | 6.2 | 14.6 | 2.1 | 5.1 | 4.0 | 4.9 | 0.7 | 4.1 | 2.9 |
 <!-- veteran-details:end -->
 
-Source: [2002-03 totals and advanced rates](../../../../../../library/2003/league/nba_2002_03_player_stats.json), `jonesed02`. Team codes are Basketball-Reference codes.
+Source: [2002-03 totals and advanced rates](../../../../../../library/2003/league/nba_2002_03_player_stats.json), `jonesed02`. Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** 2003-04 playoffs have not started. Prior playoff statistical history has not yet been imported into this card.
+**Coverage:** playoff games from closed results through 2006-06-20, every club's (`runtime/playoff_stats.py`, the playoff pages' aggregation); playoff history before 2003-04 is not imported.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2003-04 | Miami Heat | 5 | 0 | 13.8 | 2.8 | 2.0 | 1.2 | 0.4 | 0.2 | 0.8 | 19.2% | 9.1% | 50.0% |
+| 2005-06 | Miami Heat | 17 | 0 | 10.6 | 2.7 | 1.1 | 0.7 | 0.5 | 0.1 | 0.5 | 37.2% | 31.2% | 69.2% |
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-No verified awards or honors have been imported into this card through June 26, 2003.
+No honor earned in the simulated league through 2006-06-20 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

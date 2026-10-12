@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `haseungjin.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Chicago Bulls · **Basis:** Chicago Bulls: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** Unassigned · **Born:** 1985-08-04 · **Age on card date:** 20  
+**Position:** C (Center) · **Jersey:** #5 · **Born:** 1985-08-04 · **Age on card date:** 20  
 **Registry ID:** `haseungjin`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.

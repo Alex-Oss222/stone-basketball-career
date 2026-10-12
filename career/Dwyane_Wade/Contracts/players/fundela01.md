@@ -4,7 +4,7 @@
 
 Known through: 2006-06-20. [Open interactive contract](fundela01.html#contract) · [Contract history](fundela01.html#contract-history)
 
-Lawrence Funderburke: under contract unverified. Evidence cutoff: 2006-06-20.
+Lawrence Funderburke: out of the league (no contract in force). Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
@@ -18,10 +18,10 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Lawrence Funderburke |
 | Club / rights baseline | Free agent |
-| Control status | under_contract_unverified |
+| Control status | out of the league (no contract in force) |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 

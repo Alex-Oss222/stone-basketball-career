@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `mcinnje01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Orlando Magic · **Basis:** Orlando Magic: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #0 · **Born:** 1974-10-22 · **Age on card date:** 31  
+**Position:** PG (Point guard) · **Jersey:** #5 · **Born:** 1974-10-22 · **Age on card date:** 31  
 **Registry ID:** `mcinnje01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/mcinnje01.html) · ESPN ID 535
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $3,300,000) (league contract inventory status `under_contract`, as of June 26, 2003).
@@ -109,7 +109,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | POR | 75 | 1 | 17.5 | 5.8 | 1.3 | 2.3 | 0.3 | 0.0 | 1.0 | 44.4% | 17.1% | 74.6% |
-| 2003-04 | POR | 67 | 67 | 35.3 | 12.2 | 3.1 | 5.6 | 1.4 | 0.2 | 2.3 | 46.3% | 29.2% | 80.3% |
+| 2003-04 | POR/NO | 67 | 67 | 35.3 | 12.2 | 3.1 | 5.6 | 1.4 | 0.2 | 2.3 | 46.3% | 29.2% | 80.3% |
 | 2004-05 | NO | 75 | 75 | 41.1 | 13.5 | 3.3 | 4.4 | 0.9 | 0.1 | 1.8 | 41.1% | 30.4% | 76.2% |
 | 2005-06 | ORL | 28 | 8 | 20.7 | 7.6 | 1.9 | 2.2 | 0.6 | 0.3 | 1.1 | 44.2% | 33.3% | 74.1% |
 

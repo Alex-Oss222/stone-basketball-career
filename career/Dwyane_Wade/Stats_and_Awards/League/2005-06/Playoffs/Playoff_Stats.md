@@ -17,7 +17,7 @@ Through 2006-06-20: 86 closed playoff game(s). Playoff games only, from closed r
 | DeSagana Diop | Toronto Raptors | 16 | 0 | 3.4 | 0.6 | 1.0 | 0.2 | 0.2 | 0.4 | 0.1 | 4-7 | .571 | 0-0 | N/A | 1-4 | .250 | .514 |
 | Scott Padgett | Toronto Raptors | 7 | 0 | 2.8 | 1.1 | 0.3 | 0.3 | 0.0 | 0.0 | 0.1 | 4-8 | .500 | 0-3 | .000 | 0-0 | N/A | .500 |
 | Al Jefferson | Toronto Raptors | 11 | 0 | 2.5 | 1.4 | 0.5 | 0.2 | 0.1 | 0.0 | 0.1 | 6-6 | 1.000 | 0-0 | N/A | 3-5 | .600 | .915 |
-| simiewa01 | Toronto Raptors | 14 | 0 | 2.3 | 0.4 | 0.3 | 0.1 | 0.1 | 0.0 | 0.0 | 1-6 | .167 | 0-1 | .000 | 3-3 | 1.000 | .342 |
+| Wayne Simien | Toronto Raptors | 14 | 0 | 2.3 | 0.4 | 0.3 | 0.1 | 0.1 | 0.0 | 0.0 | 1-6 | .167 | 0-1 | .000 | 3-3 | 1.000 | .342 |
 | Tim Duncan | San Antonio Spurs | 25 | 25 | 36.2 | 17.8 | 8.8 | 2.8 | 0.9 | 2.0 | 2.9 | 175-370 | .473 | 0-6 | .000 | 94-125 | .752 | .522 |
 | Tony Parker | San Antonio Spurs | 25 | 25 | 35.3 | 17.5 | 3.4 | 6.7 | 1.2 | 0.2 | 2.5 | 168-328 | .512 | 4-17 | .235 | 98-121 | .810 | .574 |
 | Manu Ginobili | San Antonio Spurs | 25 | 25 | 29.3 | 17.4 | 3.6 | 4.9 | 1.2 | 0.5 | 1.9 | 128-273 | .469 | 29-66 | .439 | 151-192 | .786 | .610 |
@@ -214,7 +214,7 @@ Through 2006-06-20: 86 closed playoff game(s). Playoff games only, from closed r
 | DeSagana Diop | Toronto Raptors | 2 | 0 | 2.9 | 1.0 | 0.5 | 0.5 | 0.0 | 1.0 | 0.0 | 1-1 | 1.000 | 0-0 | N/A | 0-0 | N/A | 1.000 |
 | Scott Padgett | Toronto Raptors | 1 | 0 | 2.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-1 | .000 | 0-0 | N/A | 0-0 | N/A | .000 |
 | Al Jefferson | Toronto Raptors | 2 | 0 | 1.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
-| simiewa01 | Toronto Raptors | 2 | 0 | 1.2 | 0.0 | 0.5 | 0.0 | 0.5 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Wayne Simien | Toronto Raptors | 2 | 0 | 1.2 | 0.0 | 0.5 | 0.0 | 0.5 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Tim Duncan | San Antonio Spurs | 7 | 7 | 35.7 | 16.1 | 8.3 | 2.6 | 0.7 | 2.7 | 3.6 | 45-98 | .459 | 0-1 | .000 | 23-33 | .697 | .502 |
 | Tony Parker | San Antonio Spurs | 7 | 7 | 34.1 | 17.4 | 3.6 | 6.0 | 0.9 | 0.1 | 2.1 | 45-87 | .517 | 2-5 | .400 | 30-37 | .811 | .591 |
 | Kwame Brown | San Antonio Spurs | 7 | 7 | 29.1 | 6.3 | 4.7 | 1.4 | 0.3 | 0.9 | 0.7 | 15-31 | .484 | 0-3 | .000 | 14-23 | .609 | .535 |
@@ -409,7 +409,7 @@ Through 2006-06-20: 86 closed playoff game(s). Playoff games only, from closed r
 | DeSagana Diop | Toronto Raptors | 4 | 0 | 4.7 | 0.5 | 1.2 | 0.0 | 0.5 | 0.2 | 0.0 | 1-4 | .250 | 0-0 | N/A | 0-2 | .000 | .205 |
 | Al Jefferson | Toronto Raptors | 2 | 0 | 2.7 | 1.5 | 0.5 | 0.0 | 0.0 | 0.0 | 0.5 | 1-1 | 1.000 | 0-0 | N/A | 1-1 | 1.000 | 1.000 |
 | Scott Padgett | Toronto Raptors | 2 | 0 | 2.3 | 1.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1-1 | 1.000 | 0-0 | N/A | 0-0 | N/A | 1.000 |
-| simiewa01 | Toronto Raptors | 3 | 0 | 2.2 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1-2 | .500 | 0-1 | .000 | 1-1 | 1.000 | .615 |
+| Wayne Simien | Toronto Raptors | 3 | 0 | 2.2 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1-2 | .500 | 0-1 | .000 | 1-1 | 1.000 | .615 |
 | Tim Duncan | San Antonio Spurs | 5 | 5 | 35.3 | 18.6 | 9.2 | 1.6 | 1.0 | 2.6 | 2.6 | 37-77 | .481 | 0-1 | .000 | 19-24 | .792 | .531 |
 | Tony Parker | San Antonio Spurs | 5 | 5 | 34.6 | 20.0 | 2.4 | 5.6 | 1.6 | 0.2 | 2.4 | 41-82 | .500 | 1-5 | .200 | 17-20 | .850 | .551 |
 | Manu Ginobili | San Antonio Spurs | 5 | 5 | 28.7 | 15.8 | 4.6 | 5.2 | 0.8 | 0.8 | 1.4 | 16-47 | .340 | 3-9 | .333 | 44-56 | .786 | .551 |
@@ -510,7 +510,7 @@ Through 2006-06-20: 86 closed playoff game(s). Playoff games only, from closed r
 | DeSagana Diop | Toronto Raptors | 6 | 0 | 3.9 | 0.8 | 1.2 | 0.0 | 0.0 | 0.7 | 0.0 | 2-2 | 1.000 | 0-0 | N/A | 1-2 | .500 | .868 |
 | Scott Padgett | Toronto Raptors | 3 | 0 | 2.9 | 2.0 | 0.0 | 0.7 | 0.0 | 0.0 | 0.3 | 3-6 | .500 | 0-3 | .000 | 0-0 | N/A | .500 |
 | Al Jefferson | Toronto Raptors | 5 | 0 | 2.8 | 1.2 | 0.6 | 0.2 | 0.2 | 0.0 | 0.0 | 3-3 | 1.000 | 0-0 | N/A | 0-0 | N/A | 1.000 |
-| simiewa01 | Toronto Raptors | 5 | 0 | 2.8 | 0.0 | 0.6 | 0.2 | 0.0 | 0.0 | 0.0 | 0-3 | .000 | 0-0 | N/A | 0-0 | N/A | .000 |
+| Wayne Simien | Toronto Raptors | 5 | 0 | 2.8 | 0.0 | 0.6 | 0.2 | 0.0 | 0.0 | 0.0 | 0-3 | .000 | 0-0 | N/A | 0-0 | N/A | .000 |
 | Tim Duncan | San Antonio Spurs | 7 | 7 | 36.2 | 17.7 | 10.0 | 2.9 | 1.0 | 1.4 | 2.6 | 47-105 | .448 | 0-2 | .000 | 30-39 | .769 | .508 |
 | Tony Parker | San Antonio Spurs | 7 | 7 | 36.0 | 17.1 | 4.1 | 7.9 | 1.4 | 0.1 | 2.0 | 45-89 | .506 | 1-5 | .200 | 29-35 | .829 | .575 |
 | Manu Ginobili | San Antonio Spurs | 7 | 7 | 30.1 | 18.0 | 3.1 | 5.4 | 1.4 | 0.4 | 1.9 | 41-81 | .506 | 8-17 | .471 | 36-50 | .720 | .612 |
@@ -562,7 +562,7 @@ Through 2006-06-20: 86 closed playoff game(s). Playoff games only, from closed r
 | Udonis Haslem | Toronto Raptors | 6 | 0 | 17.6 | 3.8 | 2.7 | 0.2 | 0.7 | 0.3 | 0.0 | 9-26 | .346 | 0-1 | .000 | 5-8 | .625 | .390 |
 | Scott Padgett | Toronto Raptors | 1 | 0 | 3.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Al Jefferson | Toronto Raptors | 2 | 0 | 3.1 | 3.0 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 | 2-2 | 1.000 | 0-0 | N/A | 2-4 | .500 | .798 |
-| simiewa01 | Toronto Raptors | 4 | 0 | 2.4 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-1 | .000 | 0-0 | N/A | 2-2 | 1.000 | .532 |
+| Wayne Simien | Toronto Raptors | 4 | 0 | 2.4 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-1 | .000 | 0-0 | N/A | 2-2 | 1.000 | .532 |
 | DeSagana Diop | Toronto Raptors | 4 | 0 | 1.8 | 0.0 | 0.8 | 0.5 | 0.2 | 0.0 | 0.2 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Tim Duncan | San Antonio Spurs | 6 | 6 | 37.4 | 19.0 | 7.5 | 3.8 | 1.0 | 1.3 | 2.7 | 46-90 | .511 | 0-2 | .000 | 22-29 | .759 | .555 |
 | Tony Parker | San Antonio Spurs | 6 | 6 | 36.3 | 16.0 | 3.3 | 7.0 | 1.0 | 0.2 | 3.5 | 37-70 | .529 | 0-2 | .000 | 22-29 | .759 | .580 |

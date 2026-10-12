@@ -105,7 +105,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | CHI | 17 | 0 | 6.6 | 1.8 | 0.7 | 0.7 | 0.2 | 0.0 | 0.3 | 35.5% | 33.3% | 100.0% |
-| 2003-04 | CHI | 69 | 0 | 6.7 | 2.4 | 1.0 | 0.7 | 0.3 | 0.1 | 0.6 | 37.6% | 28.9% | 65.8% |
+| 2003-04 | CHI/TOR | 69 | 0 | 6.7 | 2.4 | 1.0 | 0.7 | 0.3 | 0.1 | 0.6 | 37.6% | 28.9% | 65.8% |
 | 2005-06 | FA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Playoff statistics by year

@@ -1,12 +1,12 @@
-![simiewa01: Toronto Raptors, Forward](assets/simiewa01_header.svg)
+![Wayne Simien: Toronto Raptors, Forward](assets/simiewa01_header.svg)
 
 <!-- photo -->
-<img src="assets/silhouette.svg" alt="No sourced photo of simiewa01" width="160">
+<img src="assets/silhouette.svg" alt="No sourced photo of Wayne Simien" width="160">
 
 *No sourced photo in the league baseline; a neutral silhouette is shown. Photos are never invented.*
 <!-- /photo -->
 
-# simiewa01 | NBA player card
+# Wayne Simien | NBA player card
 
 [Interactive card](simiewa01.html) · [2005-06 league statistics](../2005-06/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
@@ -41,10 +41,10 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 23 | TOR | NBA | F | 1 | 0 | 18.6 | 3.0 | 5.0 | .600 | 0.0 | 1.0 | .000 | 3.0 | 4.0 | .750 | .600 | 0.0 | 0.0 | N/A | 0.0 | 3.0 | 3.0 | 2.0 | 1.0 | 0.0 | 1.0 | 3.0 | 6.0 | .600 | — |
-| [December 2005](../2005-06/12_December/League_Stats.md) | 23 | TOR | NBA | F | 4 | 0 | 11.6 | 2.8 | 4.8 | .579 | 0.0 | 0.2 | .000 | 2.8 | 4.5 | .611 | .579 | 0.2 | 0.5 | .500 | 0.2 | 0.0 | 0.2 | 0.8 | 0.2 | 0.0 | 1.2 | 1.5 | 5.8 | .578 | — |
-| [January 2006](../2005-06/01_January/League_Stats.md) | 23 | TOR | NBA | F | 3 | 0 | 9.8 | 3.7 | 5.0 | .733 | 0.3 | 0.3 | 1.000 | 3.3 | 4.7 | .714 | .767 | 1.3 | 1.3 | 1.000 | 1.3 | 0.7 | 2.0 | 0.7 | 0.0 | 0.0 | 1.0 | 1.3 | 9.0 | .805 | — |
-| [February 2006](../2005-06/02_February/League_Stats.md) | 23 | TOR | NBA | F | 3 | 0 | 12.0 | 1.0 | 2.7 | .375 | 0.0 | 0.0 | N/A | 1.0 | 2.7 | .375 | .375 | 2.0 | 2.7 | .750 | 0.3 | 1.7 | 2.0 | 0.7 | 1.0 | 0.0 | 0.7 | 1.3 | 4.0 | .521 | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 22 | TOR | NBA | F | 1 | 0 | 18.6 | 3.0 | 5.0 | .600 | 0.0 | 1.0 | .000 | 3.0 | 4.0 | .750 | .600 | 0.0 | 0.0 | N/A | 0.0 | 3.0 | 3.0 | 2.0 | 1.0 | 0.0 | 1.0 | 3.0 | 6.0 | .600 | — |
+| [December 2005](../2005-06/12_December/League_Stats.md) | 22 | TOR | NBA | F | 4 | 0 | 11.6 | 2.8 | 4.8 | .579 | 0.0 | 0.2 | .000 | 2.8 | 4.5 | .611 | .579 | 0.2 | 0.5 | .500 | 0.2 | 0.0 | 0.2 | 0.8 | 0.2 | 0.0 | 1.2 | 1.5 | 5.8 | .578 | — |
+| [January 2006](../2005-06/01_January/League_Stats.md) | 22 | TOR | NBA | F | 3 | 0 | 9.8 | 3.7 | 5.0 | .733 | 0.3 | 0.3 | 1.000 | 3.3 | 4.7 | .714 | .767 | 1.3 | 1.3 | 1.000 | 1.3 | 0.7 | 2.0 | 0.7 | 0.0 | 0.0 | 1.0 | 1.3 | 9.0 | .805 | — |
+| [February 2006](../2005-06/02_February/League_Stats.md) | 22 | TOR | NBA | F | 3 | 0 | 12.0 | 1.0 | 2.7 | .375 | 0.0 | 0.0 | N/A | 1.0 | 2.7 | .375 | .375 | 2.0 | 2.7 | .750 | 0.3 | 1.7 | 2.0 | 0.7 | 1.0 | 0.0 | 0.7 | 1.3 | 4.0 | .521 | — |
 | [March 2006](../2005-06/03_March/League_Stats.md) | 23 | TOR | NBA | F | 5 | 0 | 16.2 | 2.4 | 4.8 | .500 | 0.2 | 0.6 | .333 | 2.2 | 4.2 | .524 | .521 | 2.2 | 2.2 | 1.000 | 0.2 | 2.6 | 2.8 | 1.0 | 0.4 | 0.2 | 0.8 | 1.6 | 7.2 | .624 | — |
 | [April 2006](../2005-06/04_April/League_Stats.md) | 23 | TOR | NBA | F | 3 | 0 | 10.0 | 0.7 | 2.3 | .286 | 0.0 | 0.0 | N/A | 0.7 | 2.3 | .286 | .286 | 0.3 | 0.7 | .500 | 0.3 | 0.3 | 0.7 | 0.7 | 0.0 | 0.0 | 0.0 | 1.3 | 1.7 | .317 | — |
 
@@ -57,23 +57,23 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 23 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 23 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 23 | TOR | NBA | F | 1 | 0 | 18.6 | 3.0 | 5.0 | .600 | 0.0 | 1.0 | .000 | 3.0 | 4.0 | .750 | .600 | 0.0 | 0.0 | N/A | 0.0 | 3.0 | 3.0 | 2.0 | 1.0 | 0.0 | 1.0 | 3.0 | 6.0 | .600 | — |
-| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 23 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 23 | TOR | NBA | F | 1 | 0 | 3.3 | 1.0 | 2.0 | .500 | 0.0 | 0.0 | N/A | 1.0 | 2.0 | .500 | .500 | 1.0 | 2.0 | .500 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 3.0 | .521 | — |
-| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 23 | TOR | NBA | F | 1 | 0 | 0.6 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | N/A | — |
-| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 23 | TOR | NBA | F | 1 | 0 | 21.1 | 3.0 | 9.0 | .333 | 0.0 | 1.0 | .000 | 3.0 | 8.0 | .375 | .333 | 0.0 | 0.0 | N/A | 1.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 2.0 | 4.0 | 6.0 | .333 | — |
-| [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 23 | TOR | NBA | F | 1 | 0 | 21.5 | 7.0 | 8.0 | .875 | 0.0 | 0.0 | N/A | 7.0 | 8.0 | .875 | .875 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 3.0 | 1.0 | 0.0 | 3.0 | 2.0 | 14.0 | .875 | — |
-| [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 23 | TOR | NBA | F | 1 | 0 | 3.7 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 4.0 | 4.0 | 1.000 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 1.0 | 0.0 | 4.0 | 1.136 | — |
-| [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 23 | TOR | NBA | F | 2 | 0 | 12.9 | 5.5 | 7.5 | .733 | 0.5 | 0.5 | 1.000 | 5.0 | 7.0 | .714 | .767 | 0.0 | 0.0 | N/A | 2.0 | 1.0 | 3.0 | 0.5 | 0.0 | 0.0 | 1.0 | 2.0 | 11.5 | .767 | — |
-| [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 23 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [January 2006 week 4 (22 to 31)](../2005-06/01_January/Week_4/League_Stats.md) | 23 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006 week 1 (01 to 07)](../2005-06/02_February/Week_1/League_Stats.md) | 23 | TOR | NBA | F | 1 | 0 | 0.4 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | N/A | — |
-| [February 2006 week 2 (08 to 14)](../2005-06/02_February/Week_2/League_Stats.md) | 23 | TOR | NBA | F | 2 | 0 | 17.8 | 1.5 | 4.0 | .375 | 0.0 | 0.0 | N/A | 1.5 | 4.0 | .375 | .375 | 3.0 | 4.0 | .750 | 0.5 | 2.5 | 3.0 | 1.0 | 1.5 | 0.0 | 1.0 | 2.0 | 6.0 | .521 | — |
-| [February 2006 week 3 (15 to 21)](../2005-06/02_February/Week_3/League_Stats.md) | 23 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 23 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [March 2006 week 1 (01 to 07)](../2005-06/03_March/Week_1/League_Stats.md) | 23 | TOR | NBA | F | 2 | 0 | 18.2 | 2.0 | 5.0 | .400 | 0.0 | 1.0 | .000 | 2.0 | 4.0 | .500 | .400 | 2.0 | 2.0 | 1.000 | 0.5 | 2.0 | 2.5 | 2.0 | 0.5 | 0.5 | 0.5 | 1.5 | 6.0 | .510 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 22 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 22 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 22 | TOR | NBA | F | 1 | 0 | 18.6 | 3.0 | 5.0 | .600 | 0.0 | 1.0 | .000 | 3.0 | 4.0 | .750 | .600 | 0.0 | 0.0 | N/A | 0.0 | 3.0 | 3.0 | 2.0 | 1.0 | 0.0 | 1.0 | 3.0 | 6.0 | .600 | — |
+| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 22 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 22 | TOR | NBA | F | 1 | 0 | 3.3 | 1.0 | 2.0 | .500 | 0.0 | 0.0 | N/A | 1.0 | 2.0 | .500 | .500 | 1.0 | 2.0 | .500 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 3.0 | .521 | — |
+| [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 22 | TOR | NBA | F | 1 | 0 | 0.6 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | N/A | — |
+| [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 22 | TOR | NBA | F | 1 | 0 | 21.1 | 3.0 | 9.0 | .333 | 0.0 | 1.0 | .000 | 3.0 | 8.0 | .375 | .333 | 0.0 | 0.0 | N/A | 1.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 2.0 | 4.0 | 6.0 | .333 | — |
+| [December 2005 week 4 (22 to 31)](../2005-06/12_December/Week_4/League_Stats.md) | 22 | TOR | NBA | F | 1 | 0 | 21.5 | 7.0 | 8.0 | .875 | 0.0 | 0.0 | N/A | 7.0 | 8.0 | .875 | .875 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 3.0 | 1.0 | 0.0 | 3.0 | 2.0 | 14.0 | .875 | — |
+| [January 2006 week 1 (01 to 07)](../2005-06/01_January/Week_1/League_Stats.md) | 22 | TOR | NBA | F | 1 | 0 | 3.7 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 4.0 | 4.0 | 1.000 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 1.0 | 0.0 | 4.0 | 1.136 | — |
+| [January 2006 week 2 (08 to 14)](../2005-06/01_January/Week_2/League_Stats.md) | 22 | TOR | NBA | F | 2 | 0 | 12.9 | 5.5 | 7.5 | .733 | 0.5 | 0.5 | 1.000 | 5.0 | 7.0 | .714 | .767 | 0.0 | 0.0 | N/A | 2.0 | 1.0 | 3.0 | 0.5 | 0.0 | 0.0 | 1.0 | 2.0 | 11.5 | .767 | — |
+| [January 2006 week 3 (15 to 21)](../2005-06/01_January/Week_3/League_Stats.md) | 22 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [January 2006 week 4 (22 to 31)](../2005-06/01_January/Week_4/League_Stats.md) | 22 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 1 (01 to 07)](../2005-06/02_February/Week_1/League_Stats.md) | 22 | TOR | NBA | F | 1 | 0 | 0.4 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | N/A | — |
+| [February 2006 week 2 (08 to 14)](../2005-06/02_February/Week_2/League_Stats.md) | 22 | TOR | NBA | F | 2 | 0 | 17.8 | 1.5 | 4.0 | .375 | 0.0 | 0.0 | N/A | 1.5 | 4.0 | .375 | .375 | 3.0 | 4.0 | .750 | 0.5 | 2.5 | 3.0 | 1.0 | 1.5 | 0.0 | 1.0 | 2.0 | 6.0 | .521 | — |
+| [February 2006 week 3 (15 to 21)](../2005-06/02_February/Week_3/League_Stats.md) | 22 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [February 2006 week 4 (22 to 28)](../2005-06/02_February/Week_4/League_Stats.md) | 22 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2006 week 1 (01 to 07)](../2005-06/03_March/Week_1/League_Stats.md) | 22 | TOR | NBA | F | 2 | 0 | 18.2 | 2.0 | 5.0 | .400 | 0.0 | 1.0 | .000 | 2.0 | 4.0 | .500 | .400 | 2.0 | 2.0 | 1.000 | 0.5 | 2.0 | 2.5 | 2.0 | 0.5 | 0.5 | 0.5 | 1.5 | 6.0 | .510 | — |
 | [March 2006 week 2 (08 to 14)](../2005-06/03_March/Week_2/League_Stats.md) | 23 | TOR | NBA | F | 2 | 0 | 12.3 | 1.0 | 2.5 | .400 | 0.0 | 0.0 | N/A | 1.0 | 2.5 | .400 | .400 | 3.0 | 3.0 | 1.000 | 0.0 | 1.0 | 1.0 | 0.0 | 0.5 | 0.0 | 1.0 | 1.0 | 5.0 | .654 | — |
 | [March 2006 week 3 (15 to 21)](../2005-06/03_March/Week_3/League_Stats.md) | 23 | TOR | NBA | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [March 2006 week 4 (22 to 31)](../2005-06/03_March/Week_4/League_Stats.md) | 23 | TOR | NBA | F | 1 | 0 | 19.9 | 6.0 | 9.0 | .667 | 1.0 | 1.0 | 1.000 | 5.0 | 8.0 | .625 | .722 | 1.0 | 1.0 | 1.000 | 0.0 | 7.0 | 7.0 | 1.0 | 0.0 | 0.0 | 1.0 | 3.0 | 14.0 | .742 | — |

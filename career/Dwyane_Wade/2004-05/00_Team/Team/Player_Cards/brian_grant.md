@@ -4,7 +4,7 @@
 **Age at assessment:** 31 · **Height:** 6-9 · **Weight:** 254 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** 2005-09-30 
 
-**Contract/control:** Existing contract: 1 season(s) from 2004-05, $13,233,434 scheduled ($13,233,434 in 2004-05). (register, 2005-01-24) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing contract: 3 season(s) from 2004-05, $43,008,660 scheduled ($13,233,434 in 2004-05). (register, 2005-06-28) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/grantbr01.html#contract) · [Contract history](../../../../Contracts/players/grantbr01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
@@ -98,13 +98,13 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 74 closed Miami game(s) through 2004-09-30; 2004-05: 81 closed Miami game(s) through 2005-09-30.
+**Coverage:** 2002-03 regular season from the league record; earlier seasons are not imported; 2003-04: 74 Miami game(s) from closed results; 2004-05: 81 closed Miami game(s) through 2005-09-30.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2002-03 | MIA | 82 | 82 | 32.2 | 10.3 | 10.2 | 1.3 | 0.8 | 0.6 | 1.6 | 50.9% | N/A | 77.1% |
-| 2003-04 | MIA | 74 | 52 | 29.1 | 10.3 | 6.8 | 1.3 | 0.9 | 0.5 | 1.4 | 45.8% | 6.2% | 80.8% |
-| 2004-05 | MIA | 81 | 81 | 31.7 | 8.8 | 6.2 | 1.6 | 0.7 | 0.5 | 1.2 | 46.2% | 52.6% | 67.5% |
+| 2002-03 | Miami Heat | 82 | 82 | 32.2 | 10.3 | 10.2 | 1.3 | 0.8 | 0.6 | 1.6 | 50.9% | N/A | 77.1% |
+| 2003-04 | Miami Heat | 74 | 52 | 29.1 | 10.3 | 6.8 | 1.3 | 0.9 | 0.5 | 1.4 | 45.8% | 6.2% | 80.8% |
+| 2004-05 | Miami Heat | 81 | 81 | 31.7 | 8.8 | 6.2 | 1.6 | 0.7 | 0.5 | 1.2 | 46.2% | 52.6% | 67.5% |
 
 <!-- veteran-details:start -->
 ### Additional statistics
@@ -114,18 +114,19 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | 2002-03 | 4.2 | 8.2 | 0.0 | 0.0 | 1.9 | 2.5 | 2.9 | 7.3 | 3.7 |
 <!-- veteran-details:end -->
 
-Source: [2002-03 totals and advanced rates](../../../../../../library/2003/league/nba_2002_03_player_stats.json), `grantbr01`. Team codes are Basketball-Reference codes.
+Source: [2002-03 totals and advanced rates](../../../../../../library/2003/league/nba_2002_03_player_stats.json), `grantbr01`. Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** 2003-04 playoffs have not started. Prior playoff statistical history has not yet been imported into this card.
+**Coverage:** playoff games from closed results through 2005-09-30, every club's (`runtime/playoff_stats.py`, the playoff pages' aggregation); playoff history before 2003-04 is not imported.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2003-04 | Miami Heat | 5 | 0 | 18.5 | 7.6 | 5.2 | 0.2 | 0.4 | 0.0 | 0.6 | 60.7% | N/A | 66.7% |
+| 2004-05 | Miami Heat | 12 | 12 | 27.1 | 9.0 | 4.4 | 2.2 | 1.2 | 0.3 | 0.7 | 50.6% | 60.0% | 75.8% |
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-No verified awards or honors have been imported into this card through June 26, 2003.
+No honor earned in the simulated league through 2005-09-30 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

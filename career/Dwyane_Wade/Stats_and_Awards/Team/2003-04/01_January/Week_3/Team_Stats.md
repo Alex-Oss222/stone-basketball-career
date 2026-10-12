@@ -18,7 +18,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Malik Allen | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Caron Butler | SF | 4 | 34.1 | 9.5 | 5.0 | 1.0 | 1.8 | 0.2 | 1.2 |
 | Rasual Butler | SG/SF | 4 | 1.8 | 0.0 | 0.2 | 0.5 | 0.0 | 0.0 | 0.0 |
 | Anthony Carter | PG | 4 | 10.3 | 3.0 | 1.8 | 1.2 | 0.5 | 0.5 | 1.0 |
@@ -42,7 +41,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Malik Allen | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Caron Butler | 4 | 13/51 | .255 | 0/3 | .000 | 12/14 | .857 | 4 | 16 |
 | Rasual Butler | 0 | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 1 |
 | Anthony Carter | 0 | 3/11 | .273 | 0/2 | .000 | 6/8 | .750 | 0 | 7 |

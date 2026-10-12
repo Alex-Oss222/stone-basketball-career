@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `anderde01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Washington Wizards · **Basis:** Washington Wizards: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #8 · **Born:** 1974-07-18 · **Age on card date:** 31  
+**Position:** PG (Point guard) · **Jersey:** #4 · **Born:** 1974-07-18 · **Age on card date:** 31  
 **Registry ID:** `anderde01` · [Basketball-Reference page](https://www.basketball-reference.com/players/a/anderde01.html) · ESPN ID 18
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $7,794,000) (league contract inventory status `under_contract`, as of June 26, 2003).
@@ -32,7 +32,7 @@ As of **2006-06-20**: 81 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 31 | WSH | NBA | PG | 19 | 19 | 31.3 | 3.1 | 9.8 | .312 | 0.6 | 3.6 | .159 | 2.5 | 6.2 | .402 | .341 | 2.0 | 2.6 | .760 | 0.9 | 4.4 | 5.3 | 2.4 | 0.8 | 0.2 | 1.7 | 3.3 | 8.7 | .397 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 31 | POR/WSH | NBA | PG | 19 | 19 | 31.3 | 3.1 | 9.8 | .312 | 0.6 | 3.6 | .159 | 2.5 | 6.2 | .402 | .341 | 2.0 | 2.6 | .760 | 0.9 | 4.4 | 5.3 | 2.4 | 0.8 | 0.2 | 1.7 | 3.3 | 8.7 | .397 | — |
 
 ### Month
 
@@ -41,7 +41,7 @@ As of **2006-06-20**: 81 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 31 | WSH | NBA | PG | 4 | 4 | 34.1 | 2.8 | 10.0 | .275 | 1.2 | 3.8 | .333 | 1.5 | 6.2 | .240 | .338 | 2.2 | 2.2 | 1.000 | 0.2 | 5.0 | 5.2 | 4.2 | 0.8 | 0.0 | 1.8 | 2.8 | 9.0 | .409 | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 31 | POR/WSH | NBA | PG | 4 | 4 | 34.1 | 2.8 | 10.0 | .275 | 1.2 | 3.8 | .333 | 1.5 | 6.2 | .240 | .338 | 2.2 | 2.2 | 1.000 | 0.2 | 5.0 | 5.2 | 4.2 | 0.8 | 0.0 | 1.8 | 2.8 | 9.0 | .409 | — |
 | [December 2005](../2005-06/12_December/League_Stats.md) | 31 | WSH | NBA | PG | 3 | 3 | 34.8 | 3.3 | 11.3 | .294 | 1.0 | 5.0 | .200 | 2.3 | 6.3 | .368 | .338 | 2.3 | 3.0 | .778 | 0.7 | 5.7 | 6.3 | 2.0 | 0.3 | 0.0 | 2.0 | 3.3 | 10.0 | .395 | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 31 | WSH | NBA | PG | 4 | 4 | 31.4 | 3.5 | 7.8 | .452 | 0.2 | 1.8 | .143 | 3.2 | 6.0 | .542 | .468 | 2.5 | 3.0 | .833 | 0.5 | 3.2 | 3.8 | 2.0 | 1.0 | 0.2 | 2.0 | 2.0 | 9.8 | .537 | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 31 | WSH | NBA | PG | 4 | 4 | 29.0 | 4.8 | 12.8 | .373 | 0.2 | 5.0 | .050 | 4.5 | 7.8 | .581 | .382 | 2.2 | 3.5 | .643 | 1.8 | 5.0 | 6.8 | 2.0 | 1.0 | 0.5 | 2.0 | 4.5 | 12.0 | .420 | — |
@@ -57,10 +57,10 @@ As of **2006-06-20**: 81 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 31 | WSH | NBA | PG | 1 | 1 | 37.4 | 2.0 | 9.0 | .222 | 2.0 | 4.0 | .500 | 0.0 | 5.0 | .000 | .333 | 1.0 | 1.0 | 1.000 | 0.0 | 4.0 | 4.0 | 3.0 | 0.0 | 0.0 | 1.0 | 1.0 | 7.0 | .371 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 31 | WSH | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 31 | WSH | NBA | PG | 1 | 1 | 31.5 | 1.0 | 8.0 | .125 | 0.0 | 2.0 | .000 | 1.0 | 6.0 | .167 | .125 | 2.0 | 2.0 | 1.000 | 1.0 | 4.0 | 5.0 | 5.0 | 1.0 | 0.0 | 4.0 | 2.0 | 4.0 | .225 | — |
-| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 31 | WSH | NBA | PG | 2 | 2 | 33.7 | 4.0 | 11.5 | .348 | 1.5 | 4.5 | .333 | 2.5 | 7.0 | .357 | .413 | 3.0 | 3.0 | 1.000 | 0.0 | 6.0 | 6.0 | 4.5 | 1.0 | 0.0 | 1.0 | 4.0 | 12.5 | .488 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 31 | POR | NBA | PG | 1 | 1 | 37.4 | 2.0 | 9.0 | .222 | 2.0 | 4.0 | .500 | 0.0 | 5.0 | .000 | .333 | 1.0 | 1.0 | 1.000 | 0.0 | 4.0 | 4.0 | 3.0 | 0.0 | 0.0 | 1.0 | 1.0 | 7.0 | .371 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 31 | POR | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 31 | POR | NBA | PG | 1 | 1 | 31.5 | 1.0 | 8.0 | .125 | 0.0 | 2.0 | .000 | 1.0 | 6.0 | .167 | .125 | 2.0 | 2.0 | 1.000 | 1.0 | 4.0 | 5.0 | 5.0 | 1.0 | 0.0 | 4.0 | 2.0 | 4.0 | .225 | — |
+| [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 31 | POR/WSH | NBA | PG | 2 | 2 | 33.7 | 4.0 | 11.5 | .348 | 1.5 | 4.5 | .333 | 2.5 | 7.0 | .357 | .413 | 3.0 | 3.0 | 1.000 | 0.0 | 6.0 | 6.0 | 4.5 | 1.0 | 0.0 | 1.0 | 4.0 | 12.5 | .488 | — |
 | [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 31 | WSH | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [December 2005 week 2 (08 to 14)](../2005-06/12_December/Week_2/League_Stats.md) | 31 | WSH | NBA | PG | 1 | 1 | 29.3 | 2.0 | 7.0 | .286 | 1.0 | 4.0 | .250 | 1.0 | 3.0 | .333 | .357 | 0.0 | 0.0 | N/A | 0.0 | 8.0 | 8.0 | 0.0 | 0.0 | 0.0 | 2.0 | 1.0 | 5.0 | .357 | — |
 | [December 2005 week 3 (15 to 21)](../2005-06/12_December/Week_3/League_Stats.md) | 31 | WSH | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -111,7 +111,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | 2002-03 | POR | 76 | 76 | 33.6 | 13.9 | 3.5 | 4.3 | 1.2 | 0.2 | 1.7 | 42.7% | 35.0% | 85.9% |
 | 2003-04 | POR | 46 | 46 | 37.8 | 14.3 | 4.8 | 4.2 | 1.2 | 0.3 | 1.8 | 39.4% | 34.4% | 86.4% |
 | 2004-05 | POR | 47 | 25 | 27.7 | 8.7 | 3.7 | 2.4 | 0.7 | 0.1 | 1.5 | 36.9% | 36.6% | 78.0% |
-| 2005-06 | WSH | 19 | 19 | 31.3 | 8.7 | 5.3 | 2.4 | 0.8 | 0.2 | 1.7 | 31.2% | 15.9% | 76.0% |
+| 2005-06 | POR/WSH | 19 | 19 | 31.3 | 8.7 | 5.3 | 2.4 | 0.8 | 0.2 | 1.7 | 31.2% | 15.9% | 76.0% |
 
 ## Playoff statistics by year
 

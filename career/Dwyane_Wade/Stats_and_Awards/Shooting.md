@@ -3403,7 +3403,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-11-17 | Milwaukee Bucks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) |
 | 2004-11-19 | Utah Jazz | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) |
 | 2004-11-21 | Philadelphia 76ers | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) |
-| 2004-11-23 | Portland Trail Blazers | DNP: inactive (reason not specified) | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) |
+| 2004-11-23 | Portland Trail Blazers | DNP: inactive (illness or personal) | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) |
 | 2004-11-24 | Atlanta Hawks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.result.json) |
 | 2004-11-26 | Detroit Pistons | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.result.json) |
 | 2004-11-28 | Boston Celtics | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.result.json) |
@@ -3506,7 +3506,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-11-17 | Milwaukee Bucks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json) |
 | 2004-11-19 | Utah Jazz | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json) |
 | 2004-11-21 | Philadelphia 76ers | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) |
-| 2004-11-23 | Portland Trail Blazers | DNP: inactive (reason not specified) | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) |
+| 2004-11-23 | Portland Trail Blazers | DNP: inactive (illness or personal) | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) |
 | 2004-11-24 | Atlanta Hawks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.result.json) |
 | 2004-11-26 | Detroit Pistons | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.result.json) |
 | 2004-11-28 | Boston Celtics | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.result.json) |
@@ -3606,7 +3606,7 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
-| 2004-11-23 | Portland Trail Blazers | DNP: inactive (reason not specified) | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) |
+| 2004-11-23 | Portland Trail Blazers | DNP: inactive (illness or personal) | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) |
 | 2004-11-24 | Atlanta Hawks | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.result.json) |
 | 2004-11-26 | Detroit Pistons | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.result.json) |
 | 2004-11-28 | Boston Celtics | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.result.json) |
@@ -4490,7 +4490,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-11-21 | Philadelphia 76ers | Played | [Game](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json) |
 
-## 2004-11-23 vs Portland Trail Blazers · DNP: inactive (reason not specified) · NBA regular season
+## 2004-11-23 vs Portland Trail Blazers · DNP: inactive (illness or personal) · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2004-05-game-f535290ccb8e9390#shooting)
 
@@ -4510,7 +4510,7 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
-| 2004-11-23 | Portland Trail Blazers | DNP: inactive (reason not specified) | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) |
+| 2004-11-23 | Portland Trail Blazers | DNP: inactive (illness or personal) | [Game](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.md) | [Result](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json) |
 
 ## 2004-11-24 at Atlanta Hawks · Played · NBA regular season
 
@@ -10637,23 +10637,3 @@ Simulated engine shot locations come from the original closed game results. Part
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2005-10-25 | New Orleans/Oklahoma City Hornets | Played | [Game](../2005-06/05_Preseason/Game_7.md) | [Result](../2005-06/05_Preseason/Game_7.result.json) | [Simulated engine shot locations](../2005-06/05_Preseason/Game_7.result.json) |
-
-## 2006-07 · NBA regular season · through 2006-06-20
-
-[Open this period](player_cards.html?period=regular-2006-07-season#shooting)
-
-| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 0 | 0 | 0 / 0 | N/A | 0 / 0 | 0 | complete |
-
-No closed games in this competition at the current career checkpoint. No appearance or shot sample is implied.
-
-| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
-| --- | --- | --- | --- | --- | --- | --- |
-| Paint | 0 | 0 | N/A | N/A | N/A | 0 |
-| Outside paint, under 12 ft | 0 | 0 | N/A | N/A | N/A | 0 |
-| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | N/A | N/A | 0 |
-| 18 ft to the three-point line | 0 | 0 | N/A | N/A | N/A | 0 |
-| Three-point range | 0 | 0 | N/A | N/A | N/A | 0 |
-
-No closed source games in this period. Zero appearances do not establish a 0.0% shooting percentage.

@@ -32,7 +32,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Eddie Gill | PG | 24 | 3.8 | 2.0 | 0.6 | 0.5 | 0.1 | 0.0 | 0.2 |
 | Mike Wilks | PG | 65 | 4.4 | 1.0 | 0.6 | 0.4 | 0.2 | 0.0 | 0.4 |
 | Matt Carroll | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Uroš Slokar | F | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Jumaine Jones | SF | 30 | 8.8 | 2.6 | 1.2 | 0.5 | 0.4 | 0.1 | 0.3 |
 | Joe Smith | SF | 57 | 24.0 | 10.2 | 5.1 | 1.3 | 0.9 | 0.6 | 1.1 |
 | Chris Mihm | C | 43 | 30.4 | 10.7 | 6.2 | 2.0 | 0.3 | 1.2 | 1.4 |
@@ -59,7 +58,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Eddie Gill | 0 | 15/34 | .441 | 2/7 | .286 | 15/22 | .682 | 6 | 9 |
 | Mike Wilks | 0 | 23/65 | .354 | 4/14 | .286 | 13/16 | .812 | 17 | 22 |
 | Matt Carroll | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Uroš Slokar | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Jumaine Jones | 0 | 32/87 | .368 | 12/41 | .293 | 2/4 | .500 | 11 | 25 |
 | Joe Smith | 22 | 224/436 | .514 | 2/28 | .071 | 134/166 | .807 | 92 | 198 |
 | Chris Mihm | 43 | 173/350 | .494 | 5/10 | .500 | 108/156 | .692 | 83 | 185 |
@@ -80,7 +78,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 ## Playoffs
 
-No playoff games recorded. Use a separate playoff ledger; do not add postseason games to the regular-season totals.
+17 closed Miami playoff game(s), 11-6: First round won 4-1 against Orlando Magic; Conference semifinals won 4-1 against New Jersey Nets; Conference finals lost 3-4 against Toronto Raptors. [Miami's playoff statistics](Playoffs/Team_Playoff_Stats.md) (series, games and players) · [bracket](../../League/2005-06/Playoffs.md). Playoff games stay out of the regular-season tables above.
 
 Departures retain their completed Miami appearances. Arrivals enter from their first applicable period. Team wins and losses count games once, not once per player.
 

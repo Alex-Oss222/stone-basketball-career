@@ -18,14 +18,14 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | 3 seasons |  |
 | Reported original value | $16,200,000 | reported total |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 3 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Phoenix Suns |
+| Assigned club | Detroit Pistons |
 | Signing club | Minnesota Timberwolves |
 | Contract ID | olowomi01-2003-07-16 |
 | Signing route / evidence basis | signing |
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2003-04 |
 | Verified final season | 2005-06 |
 | Verified expiry date | 2006-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -48,7 +49,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -98,18 +99,22 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-02-16 | Minnesota Timberwolves | Denver Nuggets | 2003-04-league-trade-2004-02-16-cambyma01-hoibefr01-olowomi01 | [Dated league move](../../2003-04/League/league_moves.json) |
 | 2004-07-22 | Denver Nuggets | Phoenix Suns | 2004-summer-trade-2004-07-22-hardaan01-olowomi01-tskitni01 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
+| 2005-12-05 | Phoenix Suns | Detroit Pistons | 2005-06-league-trade-2005-12-05-barbole01-brownpj01-olowomi01-voskuja01 | [Dated league move](../../2005-06/League/league_moves.json) |
 
 ### Evidence and coverage
 
 full mid-level for three years
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Dated league move](../../2003-04/League/league_moves.json)
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Dated league move](../../2005-06/League/league_moves.json)
 
 ### Current control and contract coverage
 
@@ -122,7 +127,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -176,14 +181,14 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | 3 seasons |  |
 | Reported original value | $16,200,000 | reported total |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | Not recorded | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 3 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Phoenix Suns |
+| Assigned club | Detroit Pistons |
 | Signing club | Minnesota Timberwolves |
 | Contract ID | olowomi01-2003-07-16 |
 | Signing route / evidence basis | signing |
@@ -191,6 +196,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2003-04 |
 | Verified final season | 2005-06 |
 | Verified expiry date | 2006-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -206,7 +212,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -256,18 +262,22 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-02-16 | Minnesota Timberwolves | Denver Nuggets | 2003-04-league-trade-2004-02-16-cambyma01-hoibefr01-olowomi01 | [Dated league move](../../2003-04/League/league_moves.json) |
 | 2004-07-22 | Denver Nuggets | Phoenix Suns | 2004-summer-trade-2004-07-22-hardaan01-olowomi01-tskitni01 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
+| 2005-12-05 | Phoenix Suns | Detroit Pistons | 2005-06-league-trade-2005-12-05-barbole01-brownpj01-olowomi01-voskuja01 | [Dated league move](../../2005-06/League/league_moves.json) |
 
 ### Evidence and coverage
 
 full mid-level for three years
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Dated league move](../../2003-04/League/league_moves.json)
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Dated league move](../../2005-06/League/league_moves.json)
 
 ### Michael Olowokandi · existing contract; signing date not recorded
 
@@ -294,7 +304,8 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | free_agent_expiring |
+| Ended on (dated event) | Not recorded |
+| Status | expired |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -307,7 +318,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -360,7 +371,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

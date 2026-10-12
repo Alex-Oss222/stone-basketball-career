@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `atkinch01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Los Angeles Lakers · **Basis:** Los Angeles Lakers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #32 · **Born:** 1974-08-14 · **Age on card date:** 31  
+**Position:** PG (Point guard) · **Jersey:** #7 · **Born:** 1974-08-14 · **Age on card date:** 31  
 **Registry ID:** `atkinch01` · [Basketball-Reference page](https://www.basketball-reference.com/players/a/atkinch01.html) · ESPN ID 26
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $3,900,000) (league contract inventory status `under_contract`, as of June 26, 2003).
@@ -110,7 +110,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | DET | 65 | 7 | 21.5 | 7.1 | 1.5 | 2.7 | 0.4 | 0.1 | 1.2 | 36.1% | 35.5% | 81.6% |
 | 2003-04 | DET | 66 | 46 | 25.4 | 7.7 | 1.8 | 2.7 | 0.9 | 0.1 | 1.6 | 37.4% | 32.3% | 77.1% |
-| 2004-05 | LAL | 83 | 83 | 40.4 | 12.7 | 3.3 | 4.4 | 0.9 | 0.2 | 1.9 | 43.2% | 39.0% | 77.5% |
+| 2004-05 | DET/LAL | 83 | 83 | 40.4 | 12.7 | 3.3 | 4.4 | 0.9 | 0.2 | 1.9 | 43.2% | 39.0% | 77.5% |
 | 2005-06 | LAL | 76 | 76 | 28.4 | 9.3 | 3.1 | 3.3 | 0.9 | 0.1 | 1.1 | 40.0% | 33.8% | 82.2% |
 
 ## Playoff statistics by year

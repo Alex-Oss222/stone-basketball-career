@@ -4,7 +4,7 @@
 
 Known through: 2006-06-20. [Open interactive contract](hilarne01.html#contract) · [Contract history](hilarne01.html#contract-history)
 
-Nene: under contract. Evidence cutoff: 2006-06-20.
+Nene: under rookie contract. Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_rookie_contract |
 | Contract wording | Signed four-year, $9,348,529 rookie scale contract with Dennver. Included team option for 2005/06. |
 
@@ -45,15 +46,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,945,520 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $2,102,840 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $2,260,280 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,870,556 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | extrapolated_rookie_option_formula | Team option; no decision recorded on or before 2003-06-26. |
+| 2005-06 | $2,870,556 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | extrapolated_rookie_option_formula | Team option; no decision recorded on or before 2003-06-26. Team option exercised 2004-11-23. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2005-06 | team_option | $2,870,556 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | team_option | $2,870,556 | 2004-10-31 | exercised | 2004-11-23 |
 
 ### Additional recorded annual compensation
 
@@ -106,7 +107,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Later option decisions exist in the contract history and are not applied.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -124,10 +125,10 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Nene |
 | Club / rights baseline | Denver Nuggets |
-| Control status | under_contract |
+| Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -196,6 +197,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2006-07 |
 | Verified final season | 2010-11 |
 | Verified expiry date | 2011-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -213,7 +215,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -270,7 +272,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Rookie scale extension signed 2005-10-31 with Denver Nuggets: 5 seasons, $5,355,118 rising $562,287 a season. It follows the agreement ending with 2005-06 (contract signed 2002-07-23 (June 2003 contract inventory)), which stays in force until then (runtime/extensions.py).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -301,6 +303,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_rookie_contract |
 | Contract wording | Signed four-year, $9,348,529 rookie scale contract with Dennver. Included team option for 2005/06. |
 
@@ -313,15 +316,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,945,520 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $2,102,840 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $2,260,280 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,870,556 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | extrapolated_rookie_option_formula | Team option; no decision recorded on or before 2003-06-26. |
+| 2005-06 | $2,870,556 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | team_option | extrapolated_rookie_option_formula | Team option; no decision recorded on or before 2003-06-26. Team option exercised 2004-11-23. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2005-06 | team_option | $2,870,556 | Not recorded | Not recorded | Not recorded |
+| 2005-06 | team_option | $2,870,556 | 2004-10-31 | exercised | 2004-11-23 |
 
 ### Additional recorded annual compensation
 
@@ -374,7 +377,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 Later option decisions exist in the contract history and are not applied.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

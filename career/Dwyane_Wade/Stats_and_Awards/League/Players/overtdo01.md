@@ -104,7 +104,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | NJ | 58 | 1 | 14.9 | 3.3 | 1.7 | 2.1 | 0.4 | 0.1 | 1.1 | 39.2% | 5.0% | 81.1% |
+| 2003-04 | NJ/LAC/SAC | 58 | 1 | 14.9 | 3.3 | 1.7 | 2.1 | 0.4 | 0.1 | 1.1 | 39.2% | 5.0% | 81.1% |
 | 2005-06 | FA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Playoff statistics by year

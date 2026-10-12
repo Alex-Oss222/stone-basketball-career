@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Chicago Bulls |
+| Assigned club | Washington Wizards |
 | Signing club | Not recorded |
 | Contract ID | roseja01-existing-6434280dd7b3 |
 | Signing route / evidence basis | salary_pattern |
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -50,7 +51,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -102,12 +103,16 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2003-12-08 | Toronto Raptors | New York Knicks | 2003-04-league-trade-2003-12-08-mcdyean01-palacmi01-roseja01 | [Dated league move](../../2003-04/League/league_moves.json) |
+| 2003-12-29 | New York Knicks | Boston Celtics | 2003-04-league-trade-2003-12-29-bakervi01-roseja01 | [Dated league move](../../2003-04/League/league_moves.json) |
+| 2004-11-15 | Boston Celtics | Indiana Pacers | 2004-05-league-trade-2004-11-15-croshau01-millere01-roseja01 | [Dated league move](../../2004-05/League/league_moves.json) |
+| 2005-11-14 | Indiana Pacers | Washington Wizards | 2005-06-league-trade-2005-11-14-hughela01-mccanra01-roseja01-snower01 | [Dated league move](../../2005-06/League/league_moves.json) |
 
 ### Evidence and coverage
 
 Term inferred from a constant annual raise in the season salary lists; no contract history page was available, so options and the true final season are not established.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -116,6 +121,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Dated league move](../../2003-04/League/league_moves.json)
+- [Dated league move](../../2004-05/League/league_moves.json)
+- [Dated league move](../../2005-06/League/league_moves.json)
 
 ### Current control and contract coverage
 
@@ -128,7 +136,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -189,7 +197,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Chicago Bulls |
+| Assigned club | Washington Wizards |
 | Signing club | Not recorded |
 | Contract ID | roseja01-existing-6434280dd7b3 |
 | Signing route / evidence basis | salary_pattern |
@@ -197,6 +205,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -214,7 +223,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -266,12 +275,16 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2003-12-08 | Toronto Raptors | New York Knicks | 2003-04-league-trade-2003-12-08-mcdyean01-palacmi01-roseja01 | [Dated league move](../../2003-04/League/league_moves.json) |
+| 2003-12-29 | New York Knicks | Boston Celtics | 2003-04-league-trade-2003-12-29-bakervi01-roseja01 | [Dated league move](../../2003-04/League/league_moves.json) |
+| 2004-11-15 | Boston Celtics | Indiana Pacers | 2004-05-league-trade-2004-11-15-croshau01-millere01-roseja01 | [Dated league move](../../2004-05/League/league_moves.json) |
+| 2005-11-14 | Indiana Pacers | Washington Wizards | 2005-06-league-trade-2005-11-14-hughela01-mccanra01-roseja01-snower01 | [Dated league move](../../2005-06/League/league_moves.json) |
 
 ### Evidence and coverage
 
 Term inferred from a constant annual raise in the season salary lists; no contract history page was available, so options and the true final season are not established.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -280,6 +293,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Dated league move](../../2003-04/League/league_moves.json)
+- [Dated league move](../../2004-05/League/league_moves.json)
+- [Dated league move](../../2005-06/League/league_moves.json)
 
 ## Source records
 

@@ -60,23 +60,28 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 from the league record; 2003-04 not started.
+**Coverage:** 2002-03 regular season from the league record; earlier seasons are not imported; 2003-04: Milwaukee Bucks from the league record; 2004-05: Milwaukee Bucks from the league record; 2005-06: 57 closed Miami game(s) through 2006-06-20.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2002-03 | Minnesota Timberwolves | 74 | N/A | 30.6 | 11.0 | 7.3 | 0.9 | 0.6 | 0.5 | 1.1 | 0.514 | 0.000 | 0.768 |
-| 2005-06 | MIA | 57 | 22 | 24.0 | 10.2 | 5.1 | 1.3 | 0.9 | 0.6 | 1.1 | 51.4% | 7.1% | 80.7% |
+| 2002-03 | Minnesota Timberwolves | 54 | 21 | 20.7 | 7.5 | 5.0 | 0.7 | 0.3 | 1.0 | 0.8 | 46.0% | 0.0% | 77.9% |
+| 2003-04 | Milwaukee Bucks | 76 | 76 | 30.6 | 11.9 | 7.8 | 1.0 | 0.9 | 1.2 | 1.4 | 43.3% | 17.9% | 90.1% |
+| 2004-05 | Milwaukee Bucks | 74 | 74 | 34.4 | 12.6 | 8.3 | 1.4 | 0.9 | 0.8 | 1.3 | 48.1% | 0.0% | 78.0% |
+| 2005-06 | Miami Heat | 57 | 22 | 24.0 | 10.2 | 5.1 | 1.3 | 0.9 | 0.6 | 1.1 | 51.4% | 7.1% | 80.7% |
 
-Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
+Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** playoff games from closed results through 2006-06-20, every club's (`runtime/playoff_stats.py`, the playoff pages' aggregation); playoff history before 2003-04 is not imported.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Milwaukee Bucks | 10 | 10 | 30.1 | 11.5 | 7.9 | 1.0 | 0.9 | 1.6 | 0.8 | 39.6% | 16.7% | 89.5% |
+| 2005-06 | Miami Heat | 17 | 17 | 32.2 | 13.4 | 6.8 | 1.8 | 0.6 | 0.3 | 1.1 | 48.3% | 10.0% | 87.3% |
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2006-06-20 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

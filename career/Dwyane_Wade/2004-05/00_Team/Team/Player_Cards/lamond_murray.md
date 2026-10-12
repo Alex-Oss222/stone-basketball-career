@@ -54,23 +54,27 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 from the league record; 2003-04 not started.
+**Coverage:** 2002-03: no appearance in the league statistics file; earlier seasons are not imported; 2003-04: Toronto Raptors from the league record; 2004-05: 51 closed Miami game(s) through 2005-09-30, and his season with every club (Toronto Raptors, Miami Heat) from the league record.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2002-03 | Toronto Raptors | 33 | N/A | 15.7 | 6.0 | 2.7 | 0.8 | 0.5 | 0.2 | 1.2 | 0.353 | 0.350 | 0.686 |
-| 2004-05 | MIA | 51 | 0 | 5.0 | 1.8 | 0.7 | 0.2 | 0.2 | 0.1 | 0.4 | 37.0% | 40.0% | 93.8% |
+| 2003-04 | Toronto Raptors | 30 | 0 | 14.2 | 7.3 | 2.3 | 0.7 | 0.6 | 0.2 | 1.4 | 39.6% | 40.4% | 72.9% |
+| 2004-05 | Miami Heat | 51 | 0 | 5.0 | 1.8 | 0.7 | 0.2 | 0.2 | 0.1 | 0.4 | 37.0% | 40.0% | 93.8% |
+| 2004-05 | Toronto Raptors, Miami Heat (season, every club) | 77 | 0 | 8.0 | 2.7 | 1.3 | 0.3 | 0.2 | 0.1 | 0.5 | 37.1% | 30.4% | 78.4% |
 
-Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
+Source: 2002-03: no record in the [league statistics file](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** playoff games from closed results through 2005-09-30, every club's (`runtime/playoff_stats.py`, the playoff pages' aggregation); playoff history before 2003-04 is not imported.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Toronto Raptors | 9 | 0 | 14.3 | 7.1 | 2.9 | 0.3 | 1.1 | 0.1 | 1.7 | 38.5% | 30.8% | 66.7% |
+| 2004-05 | Miami Heat | 12 | 0 | 5.8 | 1.4 | 1.2 | 0.0 | 0.1 | 0.3 | 0.4 | 34.8% | 20.0% | N/A |
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2005-09-30 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

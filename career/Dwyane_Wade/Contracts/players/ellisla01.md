@@ -4,111 +4,11 @@
 
 Known through: 2006-06-20. [Open interactive contract](ellisla01.html#contract) · [Contract history](ellisla01.html#contract-history)
 
-LaPhonso Ellis: under contract guarantee amended. Evidence cutoff: 2006-06-20.
+LaPhonso Ellis: out of the league (contract ended). Evidence cutoff: 2006-06-20.
 
 ## Current contract
 
-### LaPhonso Ellis · 2001-07-28
-
-Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
-
-| Contract term | Recorded value | Basis |
-| --- | --- | --- |
-| Signing date | 2001-07-28 |  |
-| Original term | 3 seasons |  |
-| Reported original value | Not recorded | Not recorded |
-| Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $3,600,000 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 0 |  |
-
-### Contract identity and execution
-
-| Field | Recorded detail |
-| --- | --- |
-| Assigned club | Miami Heat |
-| Signing club | Not recorded |
-| Contract ID | ellisla01-2001-07-28 |
-| Signing route / evidence basis | Existing contract record |
-| Signing date | 2001-07-28 |
-| Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | under_contract_guarantee_amended |
-| Contract wording | Not recorded |
-
-### Salary by season
-
-Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
-
-| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2002-03 | $3,100,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $3,600,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | reported_rounded | Existing final contract year remains scheduled until an actual transaction. Guarantee amendment is not recorded as a formal team option. |
-
-### Options and decision deadlines
-
-An option amount is conditional. No exercise or decline is assumed.
-
-| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
-| --- | --- | --- | --- | --- | --- |
-
-### Additional recorded annual compensation
-
-Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
-
-| Season | Signing bonus | Dead cap | Buyout |
-| --- | --- | --- | --- |
-| 2002-03 | Not recorded | Not recorded | Not recorded |
-| 2003-04 | Not recorded | Not recorded | Not recorded |
-
-### Guarantees, incentives and payment terms
-
-| Term | Recorded detail |
-| --- | --- |
-| Guarantee rider / amendment | status: guarantee_trigger_amended; amendment report date: 2003-01-31; protected amount 2003 04: Not recorded; note: Contemporary report describes removal of the February 14 active-roster guarantee trigger. Exact amended protection and waiver deadline require the contract rider. |
-| Guarantee triggers | Not recorded |
-| Guarantee date | Not recorded |
-| Waiver deadline | Not recorded |
-| Bonus terms | Not recorded |
-| Payment schedule | Not recorded |
-| Buyout terms | Not recorded |
-| Promise | Not recorded |
-| Percent of scale | Not recorded |
-
-### Free agency, Bird rights and trade terms
-
-No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
-
-| Term | Recorded detail |
-| --- | --- |
-| Free agency | Not recorded |
-| Bird rights | Not recorded |
-| No trade clause | Not recorded |
-| Trade consent | Not recorded |
-| Trade restrictions | Not recorded |
-| Trade kicker | Not recorded |
-| Trade clauses | Not recorded |
-| Base year compensation | Not recorded |
-
-### Assignment history
-
-A trade assigns this contract; it does not create a duplicate signing.
-
-| Date | From | To | Transaction | Source |
-| --- | --- | --- | --- | --- |
-
-### Evidence and coverage
-
-The published $3.6 million is rounded reporting, not a verified dollar-exact salary. Subtotals containing it inherit that limitation. Not an expired contract or free-agent hold on June 26.
-
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
-
-#### Agreement evidence
-
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Contract source document](https://www.deseret.com/2001/7/29/19598721/laphonso-ellis-inks-3-year-deal-with-heat/)
-- [Contract source document](https://basketball.realgm.com/wiretap/151255/Likely-dilemma-Zo-or-Grant)
-- [Contract source document](https://www.rotowire.com/basketball/player/laphonso-ellis-1443)
+No verified current signed agreement is available in the dated record. The control and evidence sections below explain the recorded status.
 
 ### Current control and contract coverage
 
@@ -118,17 +18,18 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | LaPhonso Ellis |
 | Club / rights baseline | Free agent |
-| Control status | under_contract_guarantee_amended |
-| Executed current contract | Recorded |
+| Control status | out of the league (contract ended) |
+| Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
-Current signed salary detail appears in the contract below.
+The published $3.6 million is rounded reporting, not a verified dollar-exact salary. Subtotals containing it inherit that limitation. Not an expired contract or free-agent hold on June 26.
 
 | Season | Amount | Record kind |
 | --- | --- | --- |
+| 2003-04 | $3,600,000 | contract_salary |
 
 ### Draft-rights scale reference
 
@@ -188,9 +89,10 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | Existing contract record |
 | Signing date | 2001-07-28 |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | under_contract_guarantee_amended |
+| Verified final season | 2003-04 |
+| Verified expiry date | 2004-06-30 |
+| Ended on (dated event) | Not recorded |
+| Status | expired |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -204,7 +106,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -258,7 +160,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 The published $3.6 million is rounded reporting, not a verified dollar-exact salary. Subtotals containing it inherit that limitation. Not an expired contract or free-agent hold on June 26.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

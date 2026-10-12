@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `mccanra01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Washington Wizards · **Basis:** Washington Wizards: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #1 · **Born:** 1984-09-25 · **Age on card date:** 21  
+**Position:** SG (Shooting guard) · **Jersey:** #2 · **Born:** 1984-09-25 · **Age on card date:** 21  
 **Registry ID:** `mccanra01`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
@@ -32,7 +32,7 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2005-06 regular season](../2005-06/League_Stats.md) | 21 | WSH | NBA | SG | 82 | 4 | 19.5 | 3.6 | 7.4 | .485 | 0.9 | 2.0 | .446 | 2.7 | 5.3 | .500 | .547 | 1.5 | 2.0 | .721 | 0.6 | 2.0 | 2.5 | 1.1 | 0.7 | 0.2 | 1.1 | 2.0 | 9.5 | .576 | — |
+| [2005-06 regular season](../2005-06/League_Stats.md) | 21 | IND/WSH | NBA | SG | 82 | 4 | 19.5 | 3.6 | 7.4 | .485 | 0.9 | 2.0 | .446 | 2.7 | 5.3 | .500 | .547 | 1.5 | 2.0 | .721 | 0.6 | 2.0 | 2.5 | 1.1 | 0.7 | 0.2 | 1.1 | 2.0 | 9.5 | .576 | — |
 
 ### Month
 
@@ -41,7 +41,7 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005](../2005-06/11_November/League_Stats.md) | 21 | WSH | NBA | SG | 14 | 4 | 21.5 | 4.1 | 8.2 | .496 | 0.9 | 1.9 | .481 | 3.1 | 6.3 | .500 | .552 | 2.0 | 2.7 | .737 | 0.8 | 2.4 | 3.1 | 1.0 | 0.7 | 0.1 | 1.4 | 2.3 | 11.1 | .588 | — |
+| [November 2005](../2005-06/11_November/League_Stats.md) | 21 | IND/WSH | NBA | SG | 14 | 4 | 21.5 | 4.1 | 8.2 | .496 | 0.9 | 1.9 | .481 | 3.1 | 6.3 | .500 | .552 | 2.0 | 2.7 | .737 | 0.8 | 2.4 | 3.1 | 1.0 | 0.7 | 0.1 | 1.4 | 2.3 | 11.1 | .588 | — |
 | [December 2005](../2005-06/12_December/League_Stats.md) | 21 | WSH | NBA | SG | 14 | 0 | 18.9 | 3.4 | 7.8 | .431 | 1.1 | 2.8 | .410 | 2.2 | 5.0 | .443 | .505 | 1.4 | 1.7 | .833 | 0.3 | 1.6 | 1.9 | 0.9 | 0.8 | 0.2 | 1.0 | 2.3 | 9.3 | .544 | — |
 | [January 2006](../2005-06/01_January/League_Stats.md) | 21 | WSH | NBA | SG | 15 | 0 | 19.7 | 3.4 | 7.2 | .472 | 1.1 | 2.1 | .516 | 2.3 | 5.1 | .455 | .546 | 1.6 | 2.1 | .750 | 0.5 | 1.7 | 2.3 | 1.4 | 0.7 | 0.1 | 0.9 | 1.5 | 9.5 | .582 | — |
 | [February 2006](../2005-06/02_February/League_Stats.md) | 21 | WSH | NBA | SG | 12 | 0 | 19.2 | 3.9 | 8.8 | .443 | 0.9 | 2.4 | .379 | 3.0 | 6.4 | .468 | .495 | 1.2 | 1.7 | .700 | 0.7 | 1.9 | 2.6 | 0.9 | 0.8 | 0.2 | 1.3 | 2.3 | 9.9 | .518 | — |
@@ -57,8 +57,8 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 21 | WSH | NBA | SG | 3 | 3 | 30.4 | 7.0 | 13.7 | .512 | 2.0 | 3.7 | .545 | 5.0 | 10.0 | .500 | .585 | 2.3 | 3.3 | .700 | 1.3 | 3.0 | 4.3 | 0.7 | 0.7 | 0.0 | 2.3 | 3.7 | 18.3 | .606 | — |
-| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 21 | WSH | NBA | SG | 3 | 1 | 26.0 | 4.0 | 9.0 | .444 | 0.7 | 2.3 | .286 | 3.3 | 6.7 | .500 | .481 | 2.3 | 2.7 | .875 | 0.7 | 3.0 | 3.7 | 1.7 | 2.0 | 0.3 | 2.3 | 2.0 | 11.0 | .541 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 21 | IND | NBA | SG | 3 | 3 | 30.4 | 7.0 | 13.7 | .512 | 2.0 | 3.7 | .545 | 5.0 | 10.0 | .500 | .585 | 2.3 | 3.3 | .700 | 1.3 | 3.0 | 4.3 | 0.7 | 0.7 | 0.0 | 2.3 | 3.7 | 18.3 | .606 | — |
+| [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 21 | IND | NBA | SG | 3 | 1 | 26.0 | 4.0 | 9.0 | .444 | 0.7 | 2.3 | .286 | 3.3 | 6.7 | .500 | .481 | 2.3 | 2.7 | .875 | 0.7 | 3.0 | 3.7 | 1.7 | 2.0 | 0.3 | 2.3 | 2.0 | 11.0 | .541 | — |
 | [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 21 | WSH | NBA | SG | 3 | 0 | 16.0 | 1.7 | 4.3 | .385 | 0.7 | 1.3 | .500 | 1.0 | 3.0 | .333 | .462 | 2.0 | 3.3 | .600 | 0.3 | 1.7 | 2.0 | 0.7 | 0.3 | 0.3 | 0.0 | 2.3 | 6.0 | .517 | — |
 | [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 21 | WSH | NBA | SG | 5 | 0 | 16.9 | 3.8 | 6.8 | .559 | 0.6 | 1.0 | .600 | 3.2 | 5.8 | .552 | .603 | 1.6 | 2.0 | .800 | 0.8 | 2.0 | 2.8 | 1.0 | 0.2 | 0.0 | 1.0 | 1.6 | 9.8 | .638 | — |
 | [December 2005 week 1 (01 to 07)](../2005-06/12_December/Week_1/League_Stats.md) | 21 | WSH | NBA | SG | 2 | 0 | 17.1 | 1.0 | 4.0 | .250 | 0.5 | 2.5 | .200 | 0.5 | 1.5 | .333 | .312 | 2.0 | 2.0 | 1.000 | 0.0 | 0.5 | 0.5 | 1.5 | 0.0 | 0.0 | 1.5 | 5.0 | 4.5 | .461 | — |
@@ -108,7 +108,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | WSH | 82 | 4 | 19.5 | 9.5 | 2.5 | 1.1 | 0.7 | 0.2 | 1.1 | 48.5% | 44.6% | 72.1% |
+| 2005-06 | IND/WSH | 82 | 4 | 19.5 | 9.5 | 2.5 | 1.1 | 0.7 | 0.2 | 1.1 | 48.5% | 44.6% | 72.1% |
 
 ## Playoff statistics by year
 

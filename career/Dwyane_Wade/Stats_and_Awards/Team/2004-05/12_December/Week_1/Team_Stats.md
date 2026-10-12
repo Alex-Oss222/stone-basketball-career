@@ -32,8 +32,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Udonis Haslem | PF | 3 | 19.7 | 8.0 | 4.7 | 1.3 | 0.3 | 0.0 | 0.3 |
 | Maurice Baker | PG | 3 | 6.9 | 2.7 | 1.7 | 0.3 | 0.3 | 0.0 | 1.0 |
 | John Edwards | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Bernard Robinson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Christian Drejer | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Rafer Alston | PG | 2 | 15.6 | 9.0 | 0.5 | 2.0 | 1.5 | 0.0 | 2.5 |
 
 <details>
@@ -57,8 +55,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Udonis Haslem | 0 | 7/14 | .500 | 0/0 | N/A | 10/12 | .833 | 7 | 7 |
 | Maurice Baker | 0 | 4/6 | .667 | 0/1 | .000 | 0/0 | N/A | 2 | 3 |
 | John Edwards | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Bernard Robinson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Christian Drejer | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Rafer Alston | 0 | 5/15 | .333 | 1/6 | .167 | 7/8 | .875 | 1 | 0 |
 
 </details>

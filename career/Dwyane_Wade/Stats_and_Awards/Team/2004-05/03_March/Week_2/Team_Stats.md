@@ -28,8 +28,6 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Maurice Evans | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Maurice Baker | PG | 1 | 2.8 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | John Edwards | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Bernard Robinson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Christian Drejer | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Rafer Alston | PG | 3 | 36.0 | 12.7 | 2.7 | 5.7 | 2.0 | 0.0 | 1.7 |
 | Donyell Marshall | PF | 3 | 35.4 | 16.0 | 7.3 | 2.7 | 0.7 | 1.0 | 1.0 |
 | Lamond Murray | SF | 3 | 4.4 | 3.0 | 0.7 | 0.0 | 0.0 | 0.0 | 0.3 |
@@ -53,8 +51,6 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Maurice Evans | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Maurice Baker | 0 | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 1 | 0 |
 | John Edwards | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Bernard Robinson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Christian Drejer | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Rafer Alston | 3 | 11/33 | .333 | 2/13 | .154 | 14/17 | .824 | 0 | 8 |
 | Donyell Marshall | 3 | 16/33 | .485 | 7/15 | .467 | 9/9 | 1.000 | 2 | 20 |
 | Lamond Murray | 0 | 3/7 | .429 | 1/2 | .500 | 2/3 | .667 | 0 | 2 |

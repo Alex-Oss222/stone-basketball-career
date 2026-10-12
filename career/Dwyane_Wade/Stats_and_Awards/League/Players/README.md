@@ -313,6 +313,7 @@ Card date: **2006-06-20**. 653 registry players, one Markdown card and one inter
 | [Erik Daniels](erikdaniels.md) | Free agent | 24 | silhouette | [open](erikdaniels.html) |
 | [Francisco García](garcifr01.md) | Portland Trail Blazers | 24 | silhouette | [open](garcifr01.html) |
 | [Gary Trent](trentga01.md) | Free agent | 31 | silhouette | [open](trentga01.html) |
+| [Gerald Fitch](fitchge01.md) | Free agent | 23 | silhouette | [open](fitchge01.html) |
 | [Gerald Wallace](wallage01.md) | Sacramento Kings | 23 | sourced | [open](wallage01.html) |
 | [Glen Rice](ricegl01.md) | Free agent | 39 | sourced | [open](ricegl01.html) |
 | [Glenn Robinson](robingl01.md) | Free agent | 33 | sourced | [open](robingl01.html) |
@@ -354,6 +355,7 @@ Card date: **2006-06-20**. 653 registry players, one Markdown card and one inter
 | [Martell Webster](webstma02.md) | Washington Wizards | 19 | silhouette | [open](webstma02.html) |
 | [Matt Barnes](barnema02.md) | Memphis Grizzlies | 26 | silhouette | [open](barnema02.html) |
 | [Matt Harpring](harprma01.md) | Milwaukee Bucks | 30 | sourced | [open](harprma01.html) |
+| [Matt Walsh](walshma01.md) | Free agent | 23 | silhouette | [open](walshma01.html) |
 | [Michael Curry](currymi01.md) | Free agent | 37 | silhouette | [open](currymi01.html) |
 | [Michael Finley](finlemi01.md) | Dallas Mavericks | 33 | sourced | [open](finlemi01.html) |
 | [Michael Jordan](jordami01.md) | Free agent | 43 | sourced | [open](jordami01.html) |
@@ -399,8 +401,6 @@ Card date: **2006-06-20**. 653 registry players, one Markdown card and one inter
 | [Walter McCarty](mccarwa01.md) | Boston Celtics | 32 | silhouette | [open](mccarwa01.html) |
 | [Yaroslav Korolev](korolya01.md) | Denver Nuggets | 19 | silhouette | [open](korolya01.html) |
 | [Zarko Cabarkapa](cabarza01.md) | Portland Trail Blazers | 25 | sourced | [open](cabarza01.html) |
-| [fitchge01](fitchge01.md) | Free agent | 23 | silhouette | [open](fitchge01.html) |
-| [walshma01](walshma01.md) | Free agent | 23 | silhouette | [open](walshma01.html) |
 
 </details>
 
@@ -410,7 +410,7 @@ Card date: **2006-06-20**. 653 registry players, one Markdown card and one inter
 | Player | Club on card date | Age | Photo | Interactive |
 | --- | --- | --- | --- | --- |
 | [Matt Bonner](bonnema01.md) | Toronto Raptors | 26 | sourced | [open](bonnema01.html) |
-| [simiewa01](simiewa01.md) | Toronto Raptors | 23 | silhouette | [open](simiewa01.html) |
+| [Wayne Simien](simiewa01.md) | Toronto Raptors | 23 | silhouette | [open](simiewa01.html) |
 
 </details>
 

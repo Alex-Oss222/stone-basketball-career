@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `evansma01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Golden State Warriors · **Basis:** Golden State Warriors: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #5 · **Born:** 1978-11-08 · **Age on card date:** 27  
+**Position:** SG (Shooting guard) · **Jersey:** #0 · **Born:** 1978-11-08 · **Age on card date:** 27  
 **Registry ID:** `evansma01`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
@@ -57,7 +57,7 @@ As of **2006-06-20**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 27 | GS | NBA | SG | 3 | 0 | 2.7 | 0.7 | 0.7 | 1.000 | 0.0 | 0.0 | N/A | 0.7 | 0.7 | 1.000 | 1.000 | 0.0 | 0.0 | N/A | 0.3 | 0.7 | 1.0 | 0.3 | 0.0 | 0.3 | 0.0 | 0.3 | 1.3 | 1.000 | — |
+| [November 2005 week 1 (01 to 07)](../2005-06/11_November/Week_1/League_Stats.md) | 26 | GS | NBA | SG | 3 | 0 | 2.7 | 0.7 | 0.7 | 1.000 | 0.0 | 0.0 | N/A | 0.7 | 0.7 | 1.000 | 1.000 | 0.0 | 0.0 | N/A | 0.3 | 0.7 | 1.0 | 0.3 | 0.0 | 0.3 | 0.0 | 0.3 | 1.3 | 1.000 | — |
 | [November 2005 week 2 (08 to 14)](../2005-06/11_November/Week_2/League_Stats.md) | 27 | GS | NBA | SG | 4 | 0 | 5.5 | 0.5 | 1.2 | .400 | 0.0 | 0.0 | N/A | 0.5 | 1.2 | .400 | .400 | 0.5 | 0.5 | 1.000 | 0.0 | 0.8 | 0.8 | 0.2 | 0.2 | 0.0 | 0.5 | 0.5 | 1.5 | .510 | — |
 | [November 2005 week 3 (15 to 21)](../2005-06/11_November/Week_3/League_Stats.md) | 27 | GS | NBA | SG | 4 | 0 | 3.1 | 0.5 | 1.5 | .333 | 0.0 | 0.5 | .000 | 0.5 | 1.0 | .500 | .333 | 0.2 | 0.5 | .500 | 0.2 | 0.2 | 0.5 | 0.0 | 0.2 | 0.0 | 0.2 | 0.5 | 1.2 | .363 | — |
 | [November 2005 week 4 (22 to 30)](../2005-06/11_November/Week_4/League_Stats.md) | 27 | GS | NBA | SG | 5 | 0 | 2.4 | 0.4 | 1.2 | .333 | 0.2 | 0.4 | .500 | 0.2 | 0.8 | .250 | .417 | 0.0 | 0.0 | N/A | 0.4 | 0.0 | 0.4 | 0.2 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | .417 | — |

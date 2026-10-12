@@ -14,7 +14,7 @@ Career date: **2006-06-20** · Toronto Raptors · #4 · PF · age 22
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 70/70 | 37.7 | 21.8 | 10.5 | 3.4 | 0.9 | 1.3 | 51.8 | 35.2 | 89.8 | 59.1 | 61-21 · won finals |
+| 2005-06 | 22 | Toronto Raptors | 70/70 | 37.7 | 21.8 | 10.5 | 3.4 | 0.9 | 1.3 | 51.8 | 35.2 | 89.8 | 59.1 | 61-21 · won finals |
 
 ## The user's target line against the closed games
 
@@ -34,7 +34,7 @@ Targets from Development_Profile_2004-10-01.md, Long-term statistical arc, 2005-
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2005-06 | 21 | Toronto Raptors | 24/24 | 35.6 | 20.0 | 9.8 | 2.6 | 1.0 | 1.3 | 50.4 | 50.0 | 87.9 | 58.0 | 61-21 · won finals |
+| 2005-06 | 22 | Toronto Raptors | 24/24 | 35.6 | 20.0 | 9.8 | 2.6 | 1.0 | 1.3 | 50.4 | 50.0 | 87.9 | 58.0 | 61-21 · won finals |
 
 ## Season highs (regular season)
 

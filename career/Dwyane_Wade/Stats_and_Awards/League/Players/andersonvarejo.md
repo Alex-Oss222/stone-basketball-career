@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `andersonvarejo.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Golden State Warriors · **Basis:** Golden State Warriors: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** Unassigned · **Born:** 1982-09-28 · **Age on card date:** 23  
+**Position:** PF (Power forward) · **Jersey:** #17 · **Born:** 1982-09-28 · **Age on card date:** 23  
 **Registry ID:** `andersonvarejo`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.

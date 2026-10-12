@@ -31,8 +31,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | contract_history |
 | Signing date | 2002-07-02 |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2005-06 |
+| Verified expiry date | 2006-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_rookie_contract |
 | Contract wording | Signed four-year, $7,875,777 rookie scale contract with Miami Heat. Included team option for 2005/06. |
 
@@ -45,14 +46,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,678,800 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $1,804,680 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,930,680 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,461,617 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | season_salary_list | Fourth-year team option, not an unconditional June 26, 2003 commitment. |
+| 2005-06 | $2,461,617 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | season_salary_list | Fourth-year team option, not an unconditional June 26, 2003 commitment. Team option exercised 2004-11-23. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
+| 2005-06 | team_option | $2,461,617 | 2004-10-31 | exercised | 2004-11-23 |
 
 ### Additional recorded annual compensation
 
@@ -105,7 +107,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 2002 No. 10 rookie-scale contract at 120%: three signed seasons, followed by a fourth-year team option. No later extension is scheduled.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -133,7 +135,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -200,8 +202,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | contract_history |
 | Signing date | 2002-07-02 |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2005-06 |
+| Verified expiry date | 2006-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_rookie_contract |
 | Contract wording | Signed four-year, $7,875,777 rookie scale contract with Miami Heat. Included team option for 2005/06. |
 
@@ -214,14 +217,15 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | 2002-03 | $1,678,800 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
 | 2003-04 | $1,804,680 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,930,680 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
-| 2005-06 | $2,461,617 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | season_salary_list | Fourth-year team option, not an unconditional June 26, 2003 commitment. |
+| 2005-06 | $2,461,617 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $49,500,000 | Not recorded | contract_salary | season_salary_list | Fourth-year team option, not an unconditional June 26, 2003 commitment. Team option exercised 2004-11-23. |
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
+| 2005-06 | team_option | $2,461,617 | 2004-10-31 | exercised | 2004-11-23 |
 
 ### Additional recorded annual compensation
 
@@ -274,7 +278,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 2002 No. 10 rookie-scale contract at 120%: three signed seasons, followed by a fourth-year team option. No later extension is scheduled.
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 

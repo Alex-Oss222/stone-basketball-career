@@ -22,7 +22,7 @@
 | Wingspan / standing reach | 6 ft 11.5 in / 8 ft 7.5 in |
 | Shooting hand | Right |
 | Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option (2004-05: $2,361,800) |
-| Role | Starting SG; staff plan 34 minutes |
+| Role | Starting SG; staff plan 38.76 minutes |
 | NBA debut | October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
 | Nationality | United States (born in the Chicago area; Robbins, Illinois home community, per the player profile) |
 | National team | No selection recorded |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2004-11-30; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-11-30; status snapshot dated 2004-10-28; role from the staff review dated 2004-11-25. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2004-05 awards
 
@@ -162,7 +162,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Date / source | Opponent | Venue | Result | Participation | MIN | PTS | REB | AST | STL | BLK | TOV |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2004-11-23](Game_1.md) | Portland Trail Blazers | home | L 95-97 | DNP: inactive (reason not specified) | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [2004-11-23](Game_1.md) | Portland Trail Blazers | home | L 95-97 | DNP: inactive (illness or personal) | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [2004-11-24](Game_2.md) | Atlanta Hawks | away | L 84-108 | Played | 33.1 | 12 | 6 | 4 | 2 | 2 | 1 |
 | [2004-11-26](Game_3.md) | Detroit Pistons | away | W 98-88 | Played | 39.9 | 10 | 9 | 5 | 4 | 2 | 0 |
 | [2004-11-28](Game_4.md) | Boston Celtics | home | W 108-87 | Played | 38.4 | 10 | 3 | 6 | 2 | 3 | 2 |

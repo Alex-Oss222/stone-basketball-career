@@ -31,8 +31,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | salary_pattern |
 | Signing date | Not recorded |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2006-07 |
+| Verified expiry date | 2007-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -50,7 +51,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -102,13 +103,14 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2003-06-27 | Minnesota Timberwolves | Milwaukee Bucks | Not recorded | [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json) |
 | 2005-12-19 | Milwaukee Bucks | Miami Heat | 2005-12-19-aaa5cfaab5 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json) |
 
 ### Evidence and coverage
 
 Acquired from Milwaukee Bucks on December 19, 2005 by trade (2005-12-19-aaa5cfaab5); contract carried as the inventory records it (under_contract).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -121,6 +123,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries07.txt)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 - [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 
 ### Current control and contract coverage
@@ -134,7 +137,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -201,8 +204,9 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Signing route / evidence basis | salary_pattern |
 | Signing date | Not recorded |
 | Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2006-07 |
+| Verified expiry date | 2007-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -220,7 +224,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -272,13 +276,14 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2003-06-27 | Minnesota Timberwolves | Milwaukee Bucks | Not recorded | [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json) |
 | 2005-12-19 | Milwaukee Bucks | Miami Heat | 2005-12-19-aaa5cfaab5 | [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json) |
 
 ### Evidence and coverage
 
 Acquired from Milwaukee Bucks on December 19, 2005 by trade (2005-12-19-aaa5cfaab5); contract carried as the inventory records it (under_contract).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
@@ -291,6 +296,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries07.txt)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
+- [Dated real transaction (before the symmetric league)](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 - [Completed contract assignment](../../2005-06/00_Team/Transactions/Trades/2005-12-19-aaa5cfaab5.json)
 
 ## Source records

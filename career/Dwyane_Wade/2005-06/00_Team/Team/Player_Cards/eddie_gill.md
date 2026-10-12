@@ -54,23 +54,22 @@ Unassessed.
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2004-05 from the simulated league record; 2005-06 not started.
+**Coverage:** No 2002-03 NBA record on this card; 2003-04: Portland Trail Blazers from the league record; 2004-05: Chicago Bulls from the league record; 2005-06: 24 closed Miami game(s) through 2006-06-20.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2004-05 | Chicago Bulls | 3 | 0 | 6.3 | 5.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.667 | 0.500 | 1.000 |
-| 2005-06 | MIA | 24 | 0 | 3.8 | 2.0 | 0.6 | 0.5 | 0.1 | 0.0 | 0.2 | 44.1% | 28.6% | 68.2% |
+| 2003-04 | Portland Trail Blazers | 72 | 1 | 5.6 | 1.9 | 1.0 | 0.6 | 0.3 | 0.1 | 0.5 | 40.8% | 40.7% | 92.6% |
+| 2004-05 | Chicago Bulls | 3 | 0 | 6.3 | 5.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 66.7% | 50.0% | 100.0% |
+| 2005-06 | Miami Heat | 24 | 0 | 3.8 | 2.0 | 0.6 | 0.5 | 0.1 | 0.0 | 0.2 | 44.1% | 28.6% | 68.2% |
 
-Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
+Source: Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** no appearance in a closed simulated playoff game through 2006-06-20; playoff history before 2003-04 is not imported.
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2006-06-20 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

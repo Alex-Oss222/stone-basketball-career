@@ -104,7 +104,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | POR | 8 | 0 | 6.3 | 1.9 | 1.5 | 0.1 | 0.1 | 0.1 | 0.0 | 26.7% | 20.0% | 75.0% |
+| 2003-04 | POR/TOR/DAL | 8 | 0 | 6.3 | 1.9 | 1.5 | 0.1 | 0.1 | 0.1 | 0.0 | 26.7% | 20.0% | 75.0% |
 | 2004-05 | SAC | 26 | 0 | 2.9 | 1.0 | 0.7 | 0.2 | 0.1 | 0.0 | 0.2 | 39.1% | 66.7% | 100.0% |
 | 2005-06 | FA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 

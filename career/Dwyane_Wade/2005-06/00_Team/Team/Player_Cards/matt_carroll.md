@@ -54,23 +54,26 @@ Unassessed.
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2004-05 from the simulated league record; 2005-06 not started.
+**Coverage:** No 2002-03 NBA record on this card; 2003-04: Portland Trail Blazers from the league record; 2004-05: Philadelphia 76ers, San Antonio Spurs, Chicago Bulls from the league record; 2005-06: no Miami appearance through 2006-06-20.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2004-05 | Philadelphia 76ers, San Antonio Spurs, Chicago Bulls | 5 | 0 | 8.0 | 3.2 | 0.8 | 0.0 | 0.2 | 0.4 | 0.6 | 0.381 | 0.000 | N/A |
+| 2003-04 | Portland Trail Blazers | 67 | 0 | 4.3 | 1.7 | 0.8 | 0.3 | 0.1 | 0.1 | 0.2 | 41.3% | 36.4% | 89.5% |
+| 2004-05 | Philadelphia 76ers, San Antonio Spurs, Chicago Bulls | 5 | 0 | 8.0 | 3.2 | 0.8 | 0.0 | 0.2 | 0.4 | 0.6 | 38.1% | 0.0% | N/A |
 | 2005-06 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
-Source: 2004-05 from closed simulated results (`Stats_and_Awards/League/2004-05/season_totals.json`); 2005-06 from closed Miami game results.
+Source: Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** playoff games from closed results through 2006-06-20, every club's (`runtime/playoff_stats.py`, the playoff pages' aggregation); playoff history before 2003-04 is not imported.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2004-05 | Chicago Bulls | 1 | 0 | 3.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | N/A | N/A | N/A |
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor earned in the simulated league through 2006-06-20 (from the league's closed award decisions, All-Star selections and FIBA medal registers). Awards before 2003-04 are not imported.

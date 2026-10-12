@@ -104,8 +104,8 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | MEM | 29 | 0 | 3.3 | 0.6 | 0.9 | 0.1 | 0.0 | 0.1 | 0.3 | 23.8% | 0.0% | 100.0% |
-| 2004-05 | POR | 67 | 0 | 7.3 | 1.9 | 1.4 | 0.4 | 0.1 | 0.0 | 0.5 | 35.3% | 33.3% | 78.9% |
+| 2003-04 | MEM/ATL | 29 | 0 | 3.3 | 0.6 | 0.9 | 0.1 | 0.0 | 0.1 | 0.3 | 23.8% | 0.0% | 100.0% |
+| 2004-05 | ATL/POR | 67 | 0 | 7.3 | 1.9 | 1.4 | 0.4 | 0.1 | 0.0 | 0.5 | 35.3% | 33.3% | 78.9% |
 | 2005-06 | FA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Playoff statistics by year

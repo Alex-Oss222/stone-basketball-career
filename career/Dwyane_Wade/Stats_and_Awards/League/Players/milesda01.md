@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `milesda01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2006-06-20 · **Club on this date:** Cleveland Cavaliers · **Basis:** Cleveland Cavaliers: the 2005-06 opening rosters and the league's dated moves (runtime/club_truth.py) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #23 · **Born:** 1981-10-09 · **Age on card date:** 24  
+**Position:** SF (Small forward) · **Jersey:** #21 · **Born:** 1981-10-09 · **Age on card date:** 24  
 **Registry ID:** `milesda01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/milesda01.html) · ESPN ID 550
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $4,130,701) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).

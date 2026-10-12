@@ -2,7 +2,7 @@
 
 <!-- team-status:start -->
 
-**Status on 2006-06-20:** 16 under contract (13 active, 3 on the injured list), Miami 56-26, 3rd in the East. The [register](Roster/README.md) labels every player's control and availability; expired, released and voided contracts stay on it as history.
+**Status on 2006-06-20:** 15 under contract (12 active, 3 on the injured list), Miami 56-26, 3rd in the East. 5 of the contracts end on June 30, 2006 (labelled on the register). The [register](Roster/README.md) labels every player's control and availability; expired, released and voided contracts stay on it as history. Rights held without a contract are not counted.
 
 <!-- team-status:end -->
 

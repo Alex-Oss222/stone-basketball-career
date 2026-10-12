@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Golden State Warriors |
+| Assigned club | Los Angeles Clippers |
 | Signing club | Denver Nuggets |
 | Contract ID | bogutan01-2005-07-01 |
 | Signing route / evidence basis | rookie scale |
@@ -33,6 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2005-06 |
 | Verified final season | 2007-08 |
 | Verified expiry date | 2008-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -48,7 +49,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -99,16 +100,18 @@ A trade assigns this contract; it does not create a duplicate signing.
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
 | 2005-08-19 | Denver Nuggets | Golden State Warriors | 2005-summer-trade-2005-08-19-battito01-bogutan01-grahajo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
+| 2005-11-07 | Golden State Warriors | Los Angeles Clippers | 2005-06-league-trade-2005-11-07-bogutan01-howarju01-odomla01-wesleda01 | [Dated league move](../../2005-06/League/league_moves.json) |
 
 ### Evidence and coverage
 
 Simulated 2005 summer market: rookie scale signing on 2005-07-01. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Dated league move](../../2005-06/League/league_moves.json)
 
 ### Current control and contract coverage
 
@@ -121,7 +124,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
-| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
+| Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
@@ -182,7 +185,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Golden State Warriors |
+| Assigned club | Los Angeles Clippers |
 | Signing club | Denver Nuggets |
 | Contract ID | bogutan01-2005-07-01 |
 | Signing route / evidence basis | rookie scale |
@@ -190,6 +193,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2005-06 |
 | Verified final season | 2007-08 |
 | Verified expiry date | 2008-06-30 |
+| Ended on (dated event) | Not recorded |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -205,7 +209,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 ### Options and decision deadlines
 
-An option amount is conditional. No exercise or decline is assumed.
+An option amount is conditional. An outcome appears only from its dated decision (League/option_decisions.json or the club's record); no exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
@@ -256,16 +260,18 @@ A trade assigns this contract; it does not create a duplicate signing.
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
 | 2005-08-19 | Denver Nuggets | Golden State Warriors | 2005-summer-trade-2005-08-19-battito01-bogutan01-grahajo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
+| 2005-11-07 | Golden State Warriors | Los Angeles Clippers | 2005-06-league-trade-2005-11-07-bogutan01-howarju01-odomla01-wesleda01 | [Dated league move](../../2005-06/League/league_moves.json) |
 
 ### Evidence and coverage
 
 Simulated 2005 summer market: rookie scale signing on 2005-07-01. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
+Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and league transactions outside the dated records are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
+- [Dated league move](../../2005-06/League/league_moves.json)
 
 ## Source records
 
