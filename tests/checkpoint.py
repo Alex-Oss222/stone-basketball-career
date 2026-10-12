@@ -150,6 +150,9 @@ def pin(root):
     if (root / "library").is_dir():
         from runtime.write_back import write_statistics_pages
         write_statistics_pages(root)             # Miami's not-started pages list the checkpoint register
+        from runtime.season_pages import hub
+        for path, text in hub(root).items():     # the league hub links only the seasons the copy holds
+            path.write_text(text, encoding="utf-8")
     return root
 
 
