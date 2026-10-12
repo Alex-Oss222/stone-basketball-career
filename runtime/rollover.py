@@ -10,7 +10,8 @@ in the shapes the in-season pipelines read.
 1. League: the closed season's simulated totals (`season_evidence.write_totals`) and card lines; the new season's
    contract ledger (`league_contracts.write`) and opening rosters (`offseason.write`).
 2. Miami (`<season>/00_Team`): the register, contracts, holdings, depth chart and cards of every player the market
-   left with Miami; the club's unsigned draft picks as rights; the organization, team config and cap history carried
+   left with Miami; the club's unsigned draft picks as rights (a pick without an NBA id keyed by his name,
+   `entry_key`); the organization, team config and cap history carried
    over; departed players' holdings closed in the previous season's record on the day they left.
 3. The season's folders: phase notes, a week note for every week of its calendar (`seasons.structure`), and the new
    `current_state.json`, which makes the season live (`seasons.active`). The previous season keeps its state.
@@ -53,6 +54,28 @@ def slug(name):
     card and every link to it agree."""
     from .signing import fold
     return re.sub(r"[^a-z0-9]+", "_", fold(name).lower()).strip("_")
+
+
+def entry_key(e):
+    """The key of a contract-sheet entry or holding ({"player", "bbr_id"}) in the rollover's identities, register and
+    cards: his NBA id; Wade's register id for Wade (alternate history: no NBA id); else his name as a file key. A pick
+    drafted without an NBA id (21 of the 2006 class's 88 prospects have none) is keyed by his name, never as Wade, and
+    the name key is never written as his bbr_id."""
+    return e.get("bbr_id") or (WADE_ID if e.get("player") == "Dwyane Wade" else slug(e["player"]))
+
+
+def unidentified_prospects(root, year):
+    """{folded name: prospect-evidence row} for the `year` draft class's prospects without an NBA id
+    (`library/<year>/league/nba_<year>_prospect_evidence.json`, drafted and undrafted): a pick's birth date by his name,
+    which `signing.prospect_identities` (keyed by NBA id) cannot give."""
+    from .signing import fold
+    path = Path(root) / f"library/{year}/league/nba_{year}_prospect_evidence.json"
+    if not path.is_file():
+        return {}
+    data = _read(path)
+    groups = [data.get("players_drafted"), data.get("undrafted_candidates")]
+    rows = [r for g in groups for r in (g if isinstance(g, list) else (g or {}).get("players", []) if isinstance(g, dict) else [])]
+    return {fold(r["player_id"]).lower(): r for r in rows if isinstance(r, dict) and r.get("player_id") and not r.get("bbr_id")}
 
 
 class Rollover:
@@ -108,10 +131,18 @@ class Rollover:
         out = {b: dict(e) for b, e in identity(self.root, self.year).items()}   # the closing summer's identity
         draft = self.old_dir / f"09_Draft/draft_{self.year}.json"
         if draft.is_file():
+            from .signing import fold
             for p in _read(draft)["picks"]:
                 if p.get("bbr_id"):
                     out.setdefault(p["bbr_id"], {"name": p["player"], "position": p.get("position"), "birth_date": p.get("birth_date")})
                     out[p["bbr_id"]].update(draft_pick=p["pick"], draft_round=p["round"], college=p.get("college"))
+                elif p["club"] == MIAMI:
+                    # Miami's pick without an NBA id, keyed by his name (`entry_key`): the position as the draft record
+                    # writes it ("G", as Slokar's row carries "F"), the birth date from the prospect evidence by name.
+                    found = unidentified_prospects(self.root, self.year).get(fold(p["player"]).lower(), {})
+                    out.setdefault(slug(p["player"]), {"name": p["player"], "position": p.get("position"),
+                                                       "birth_date": p.get("birth_date") or found.get("birth_date")})
+                    out[slug(p["player"])].update(draft_pick=p["pick"], draft_round=p["round"], college=p.get("college"))
         # What those sources leave open: a birth date from the researched births and the draft classes' prospect
         # evidence (`signing.league_identity`'s sources), a position from the prospect evidence. A registry row whose
         # position no source records holds only its page slot, which is no position (`write_back.known_position`).
@@ -179,7 +210,8 @@ class Rollover:
             return []
         signed = {r["bbr_id"] for r in self.record["clubs"][MIAMI]}
         elsewhere = {r["bbr_id"] for c, rows in self.record["clubs"].items() if c != MIAMI for r in rows}
-        return [p for p in _read(draft)["picks"] if p["club"] == MIAMI and p.get("bbr_id") not in signed | elsewhere]
+        # A pick without an NBA id never enters the market (`draft.drafted_clubs`): he is still Miami's, unsigned.
+        return [p for p in _read(draft)["picks"] if p["club"] == MIAMI and (not p.get("bbr_id") or p["bbr_id"] not in signed | elsewhere)]
 
     def contract_entries(self, ledger):
         # The old sheet may lack a player's bbr_id (the register carries it): key each entry by the register's id, so a
@@ -256,7 +288,7 @@ class Rollover:
             return []
         earned = []
         for e in entries:
-            if not e.get("bbr_id") and e.get("incentives"):
+            if e["player"] == "Dwyane Wade" and e.get("incentives"):
                 e["bonus_evaluation"] = bonus_evaluation(e, self.day, self.root)
                 earned += earned_unlikely(e, self.old, self.day, self.root)
         return earned
@@ -307,7 +339,7 @@ class Rollover:
         old = {p.get("bbr_id") or p["id"]: p for p in _read(self.old_team / "Team/Roster/roster.json")["players"]}
         players = []
         for e in entries:
-            key = e.get("bbr_id") or WADE_ID
+            key = entry_key(e)
             ident = ids.get(key, {})
             prev = old.get(key)
             if prev:
@@ -319,7 +351,7 @@ class Rollover:
                 pos = required_position(ident.get("position"), self.day, e["player"])
                 p = {"id": slug(e["player"]), "name": e["player"], "positions": [x.strip() for x in str(pos).replace("-", "/").split("/") if x.strip()],
                      "date_of_birth": ident.get("birth_date"), "college": ident.get("college"), "working_role": "Unassigned arrival",
-                     "player_card": f"../Player_Cards/{slug(e['player'])}.md", "bbr_id": key}
+                     "player_card": f"../Player_Cards/{slug(e['player'])}.md", "bbr_id": e.get("bbr_id")}   # a name key is no id
                 p = {k: v for k, v in p.items() if v is not None}
             p["status"] = {"under_rookie_contract": "under_contract", "team_option_exercised": "team_option_exercised",
                            "player_option_exercised": "player_option_exercised"}.get(e["status"], e["status"])
@@ -332,25 +364,27 @@ class Rollover:
     def holdings(self, entries):
         """The new season's holdings, and the old record with every departed player's holding closed."""
         old = _read(self.old_team / "Team/Roster/holdings.json")
-        keep = {e.get("bbr_id") for e in entries if e["status"] != "unsigned_draft_rights"}
+        # Keyed as the register keys them (`entry_key`): a holding without an NBA id is Wade's or a pick's, by name.
+        keep = {entry_key(e) for e in entries if e["status"] != "unsigned_draft_rights"}
         events = {e["bbr_id"]: e for e in self.record["events"] if e.get("bbr_id")}
         new_entries = []
         for h in old["entries"]:
             if h.get("until") is not None or h.get("void"):
                 continue
-            if h.get("bbr_id") in keep:
+            if entry_key(h) in keep:
                 new_entries.append(dict(h))
             else:
                 left = events.get(h.get("bbr_id"))
                 h["until"] = left["date"] if left and left.get("club") != MIAMI else f"{self.new[:4]}-07-01"
                 h["basis"] = (h.get("basis", "") + f"; left Miami in the {self.new} summer market").lstrip("; ")
-        held = {h.get("bbr_id") for h in new_entries}
+        held = {entry_key(h) for h in new_entries}
         for e in entries:
-            if e.get("bbr_id") in held or not e.get("bbr_id"):
+            if entry_key(e) in held or (not e.get("bbr_id") and e["status"] != "unsigned_draft_rights"):
                 continue
             if e["status"] == "unsigned_draft_rights":
-                # Miami holds his rights from the draft: he plays for no other club (world rule 2).
-                new_entries.append({"player": e["player"], "bbr_id": e["bbr_id"], "from": self.draft_date(), "until": None,
+                # Miami holds his rights from the draft: he plays for no other club (world rule 2). A pick without an NBA
+                # id is held by name (`rotations.miami_holds`, `draft_rights.end_rights` read him so).
+                new_entries.append({"player": e["player"], "bbr_id": e.get("bbr_id"), "from": self.draft_date(), "until": None,
                                     "basis": f"draft rights (No. {e.get('draft_pick')} pick), unsigned"})
                 continue
             if e.get("acquired_by") == "trade":
@@ -381,6 +415,22 @@ class Rollover:
                 "unassigned_arrivals": [{"name": p["name"], "positions": p["positions"], "status": p["status"], "date": self.day}
                                         for p in register["players"] if p["name"] in names - placed],
                 "unavailable": [], "departed": [], "corrections": []}
+
+    def write_cards(self, entries, register, ids, prior):
+        """Every register player's card in the new season: last season's card carried, else an arrival card from his
+        identity and previous season's record, both by his key (`entry_key`: a pick without an NBA id by his name)."""
+        cards = self.team / "Team/Player_Cards"
+        cards.mkdir(parents=True, exist_ok=True)
+        for e, p in zip(entries, register["players"]):
+            src = self.old_team / "Team/Player_Cards" / f"{p['id']}.md"
+            dst = cards / f"{p['id']}.md"
+            if src.is_file():
+                text = self._repoint(src.read_text(encoding="utf-8"), src, dst)
+                text = re.sub(r"^(# .*? \| )\d{4}-\d{2}( Player Profile)$", lambda m: m.group(1) + self.new + m.group(2), text, count=1, flags=re.M)
+                dst.write_text(text, encoding="utf-8")
+            else:
+                key = entry_key(e)
+                dst.write_text(self.card(e, ids.get(key, {}), prior.get(key)), encoding="utf-8")
 
     def card(self, entry, ident, prior):
         source = f"../../../../../../{self.record_path.relative_to(self.root).as_posix()}"
@@ -483,19 +533,7 @@ class Rollover:
         finance.pop("earned_unlikely_bonuses", None)
         finance.update(as_of=self.day, season=self.new, pending_control_items=[], draft_rights=[])
         _dump(self.team / "Finances/finance.json", finance)
-        prior = season_records(self.old, self.root)
-        cards = self.team / "Team/Player_Cards"
-        cards.mkdir(parents=True, exist_ok=True)
-        for e, p in zip(entries, register["players"]):
-            src = self.old_team / "Team/Player_Cards" / f"{p['id']}.md"
-            dst = cards / f"{p['id']}.md"
-            if src.is_file():
-                text = self._repoint(src.read_text(encoding="utf-8"), src, dst)
-                text = re.sub(r"^(# .*? \| )\d{4}-\d{2}( Player Profile)$", lambda m: m.group(1) + self.new + m.group(2), text, count=1, flags=re.M)
-                dst.write_text(text, encoding="utf-8")
-            else:
-                key = e.get("bbr_id") or WADE_ID
-                dst.write_text(self.card(e, ids.get(key, {}), prior.get(key)), encoding="utf-8")
+        self.write_cards(entries, register, ids, season_records(self.old, self.root))
         # 3. folders and state
         for folder, title in self.PHASES.items():
             note = self.new_dir / folder / "note.md"
@@ -512,7 +550,7 @@ class Rollover:
                     note.parent.mkdir(parents=True, exist_ok=True)
                     note.write_text(self.week_note(month, week), encoding="utf-8")
         old_state = _read(self.old_dir / "current_state.json")
-        wade = next(e for e in entries if not e.get("bbr_id"))
+        wade = next(e for e in entries if e["player"] == "Dwyane Wade")
         state = {"schema_version": 1, "initialized": True, "season": self.new, "current_date": self.day,
                  "current_area": "04_Training_Camp", "current_note": "04_Training_Camp/note.md", "team": MIAMI,
                  "team_abbreviation": old_state.get("team_abbreviation", "MIA"), "draft": old_state.get("draft"),
