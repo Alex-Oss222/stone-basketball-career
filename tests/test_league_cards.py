@@ -94,8 +94,11 @@ class ClubOnTests(unittest.TestCase):
         self.assertEqual(cell(box, "2003-10-31"), ("CHI", "NBA"))           # listed by his club: under contract
         self.assertEqual(cell(box, "2003-10-19"), ("CHI rights", "NBA"))
         self.assertEqual(cell((), "2003-11-11"), ("CHI rights", "NBA"))
-        self.assertEqual(club_cell(self.vet, (), {"start": "2003-11-01", "end": "2003-11-11"}, "2003-11-11", {}, ROOT, sources),
-                         ("BOS", "NBA"))
+        # A 2002-03 source club shows only while the season's real roster has him there (the engine's world on the date).
+        scope = {"start": "2003-11-01", "end": "2003-11-11"}
+        self.assertEqual(club_cell(self.vet, (), scope, "2003-11-11", {}, ROOT, sources), ("FA", "NBA"))
+        pierce = dict(self.vet, name="Paul Pierce", bbr_id="piercpa01", registry_id="piercpa01")
+        self.assertEqual(club_cell(pierce, (), scope, "2003-11-11", {}, ROOT, sources), ("BOS", "NBA"))
 
 
 class ColorTests(unittest.TestCase):

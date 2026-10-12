@@ -16,11 +16,10 @@ sys.path.insert(0, str(ROOT))
 
 from runtime.stat_layout import RED, PER_GAME_COLUMNS, link, markdown_table, rect, scope_for, svg_start, svg_text
 from runtime.contract_navigation import contract_player_link, plain_player_name
-from runtime.write_back import league_caption
+from runtime.write_back import CARD_LINK, league_caption, name_order
 
 COLUMNS = ["Player", "Age", "Club / rights", "Lg", *PER_GAME_COLUMNS[4:-1]]
 LINK = re.compile(r"^\[([^\]]+)\]\([^)]+\)$")
-CARD = re.compile(r"^\[[^\]]*\]\((?:[^)]*/)?Players/([^/)]+)\.md\)$")
 
 
 def player_name(cell):
@@ -32,7 +31,7 @@ def player_name(cell):
 def row_name(cell, by_id):
     """The registry name of a Player cell: the player its card link names (`by_id`: registry id -> name), so a corrected
     registry name renames his row; else the cell's own name."""
-    match = CARD.match(cell.strip())
+    match = CARD_LINK.match(cell.strip())
     return by_id[match.group(1)] if match and match.group(1) in by_id else player_name(cell)
 
 
@@ -102,7 +101,7 @@ def format_page(text, page, registry, as_of, asset, league_dir=None):
             production[name] = {key: "N/A" for key in COLUMNS}
             production[name].update({"Player": name, "G": "0"})
         rows = []
-        for name, old in sorted(production.items()):
+        for name, old in sorted(production.items(), key=lambda item: name_order(item[0])):
             old = {**shooting.get(name, {}), **old}
             p = players[name]
             if p.get("birth_date"):

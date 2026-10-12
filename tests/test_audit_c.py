@@ -5,12 +5,13 @@ import json
 import os
 from pathlib import Path
 import tempfile
+from types import SimpleNamespace
 import unittest
 from unittest import mock
 
-from runtime import league_cards, offseason, playoffs, write_back
-from runtime.league_cards import (CardContext, NOT_IN_LEAGUE, appearance_clubs, card_data, club_code, period_label,
-                                  period_rows, repair_card_lines, roster_cache)
+from runtime import free_agency_2004, league_cards, offseason, playoffs, season_awards, write_back
+from runtime.league_cards import (CardContext, NOT_IN_LEAGUE, appearance_clubs, card_data, club_code, dated_label,
+                                  period_label, period_rows, repair_card_lines, roster_cache)
 from runtime.season_pages import hub
 from scripts.format_league_reports import format_page
 
@@ -34,8 +35,9 @@ class DatedClubTests(unittest.TestCase):
         self.assertEqual(period_label(VET, records, "2003-12-01", "2003-12-31", "2003-12-31", root=ROOT, **EMPTY), ("TOR", "NBA"))
 
     def test_without_an_appearance_the_club_on_the_label_date(self):
-        # 2003-04: the club_on rules (here the registry's source club), never a later season's first club.
-        self.assertEqual(period_label(VET, (), "2003-11-01", "2003-11-07", "2003-11-07", root=ROOT, **EMPTY), ("BOS", "NBA"))
+        # 2003-04: a registry source club no real roster carries is no club (the engine's world on the date), never a
+        # later season's first club; with no club and no record or holding yet, no league either.
+        self.assertEqual(period_label(VET, (), "2003-11-01", "2003-11-07", "2003-11-07", root=ROOT, **EMPTY), ("FA", "NBA"))
         later = dict(VET, added_on="2004-11-03", cohort="2003_04_appearance")
         self.assertEqual(period_label(later, (), "2003-11-01", "2003-11-07", "2003-11-07", root=ROOT, **EMPTY),
                          (NOT_IN_LEAGUE, NOT_IN_LEAGUE))
@@ -53,8 +55,41 @@ class DatedClubTests(unittest.TestCase):
         self.assertEqual(club_code("Charlotte Bobcats"), "CHA")
         self.assertEqual(club_code("New Orleans/Oklahoma City Hornets"), "NOK")
         self.assertEqual((club_code("Golden State Warriors"), club_code("New Orleans Hornets"), club_code(None)), ("GS", "NO", None))
-        null = {"team_name": "Charlotte Bobcats", "team_code": None}
-        self.assertEqual(league_cards._code("Charlotte Bobcats", {}, null), "CHA")
+
+
+class HeldClubTests(unittest.TestCase):
+    """A club that holds a player comes before the "not reached" dash (the review of the group C branch): the registry
+    `added_on` is a first appearance, not a first holding."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.players = {p["name"]: p for p in write_back.registry(ROOT)["players"]}
+
+    def label(self, name, on):
+        with roster_cache():
+            return dated_label(self.players[name], on, (), root=ROOT, signed=league_cards.signings(ROOT))
+
+    def test_a_club_holding_him_before_his_first_appearance_is_shown(self):
+        self.assertEqual(self.label("Udonis Haslem", "2003-10-31"), ("MIA", "NBA"))       # Miami's refill of 2003-10-27
+        self.assertEqual(self.label("Eddie Jones", "2003-10-26"), ("MIA", "NBA"))
+        self.assertEqual(self.label("Maurice Evans", "2004-11-30"), ("MIA", "NBA"))
+        self.assertEqual(self.label("Bernard Robinson", "2005-04-30"), ("MIA rights", "NBA"))
+        self.assertEqual(self.label("Bernard Robinson", "2004-06-30"), ("MIA rights", "NBA"))   # the June pick, before the rollover
+        self.assertEqual(self.label("Bernard Robinson", "2006-01-31"), ("MIL", "NBA"))
+
+    def test_a_player_held_before_and_unsigned_now_is_a_free_agent(self):
+        self.assertEqual(self.label("Bernard Robinson", "2005-11-30"), ("FA", "NBA"))     # waived by Seattle on 2005-11-02
+        self.assertEqual(self.label("Royal Ivey", "2005-01-31"), ("FA", "NBA"))           # placed in the 2004-05 opening book
+
+    def test_the_league_had_not_reached_him(self):
+        self.assertEqual(self.label("Chris Paul", "2003-10-31"), (NOT_IN_LEAGUE, NOT_IN_LEAGUE))
+        self.assertEqual(self.label("Dwight Howard", "2004-06-30"), (NOT_IN_LEAGUE, NOT_IN_LEAGUE))
+
+    def test_a_2003_04_page_shows_the_engines_world_not_the_2002_03_club(self):
+        self.assertEqual(self.label("John Stockton", "2004-06-30"), ("FA", "NBA"))        # retired: club_truth.holder
+        self.assertEqual(self.label("John Stockton", "2003-10-31"), ("FA", "NBA"))        # no real 2003-04 stint
+        self.assertEqual(self.label("Jelani McCoy", "2003-11-07"), ("CLE", "NBA"))        # his real stint, not Toronto
+        self.assertEqual(league_cards.club_on(self.players["John Stockton"], "2004-06-30")["club"], "Utah Jazz")  # unchanged
 
 
 class LeaguePageTests(unittest.TestCase):
@@ -81,7 +116,7 @@ class LeaguePageTests(unittest.TestCase):
         self.assertNotIn("2003-06-26", text)
         rows = [line for line in text.splitlines() if line.startswith("| [")]
         self.assertEqual([r.split("]")[0][3:] for r in rows], ["Example Veteran", "Later Rookie", "Zed Named"])   # renamed, sorted
-        self.assertIn("| [Example Veteran](../../../Players/examve01.md) | 19 | BOS | NBA | PG |", rows[0])
+        self.assertIn("| [Example Veteran](../../../Players/examve01.md) | 19 | FA | NBA | PG |", rows[0])
         self.assertIn(f"| {NOT_IN_LEAGUE} | {NOT_IN_LEAGUE} | PG |", rows[1])
         self.assertEqual(text, write_back.league_page(text, self.PAGE, {}, "2006-06-20", [], {}, players, ROOT, EMPTY, live=False))
 
@@ -96,6 +131,13 @@ class LeaguePageTests(unittest.TestCase):
         self.assertIn("[Example Veteran](../../../Players/examve01.md)", out)
 
 
+class NameOrderTests(unittest.TestCase):
+    def test_accents_and_case_do_not_move_a_name_out_of_order(self):
+        names = ["Will Bynum", "Šarūnas Jasikevičius", "Andrés Nocioni", "Andre Barrett", "DeShawn Stevenson"]
+        self.assertEqual(sorted(names, key=write_back.name_order),
+                         ["Andre Barrett", "Andrés Nocioni", "DeShawn Stevenson", "Šarūnas Jasikevičius", "Will Bynum"])
+
+
 class RegistryNameTests(unittest.TestCase):
     def test_no_registry_row_is_named_by_its_id_and_its_results_still_match(self):
         players = write_back.registry(ROOT)["players"]
@@ -105,6 +147,37 @@ class RegistryNameTests(unittest.TestCase):
         lines, unmatched = write_back.closed_lines(ROOT, "2005-06", "2006-06-20")
         self.assertEqual(unmatched, [])
         self.assertEqual((len(lines["simiewa01"]), len(lines["walshma01"]), len(lines["fitchge01"])), (82, 21, 2))
+
+    def test_an_id_keyed_result_still_reaches_his_award_identity(self):
+        ids = season_awards.identities(ROOT, "2005-06")
+        self.assertEqual(ids["simiewa01"], ("simiewa01", "simiewa01", "F"))      # the answer before the rename
+        self.assertEqual(ids["Wayne Simien"][1:], ("simiewa01", "F"))
+        # Only a renamed row keeps its id: Malik Allen's id-keyed 2004-05 games stay unmatched, as the 2005 market read them.
+        self.assertNotIn("allenma01", season_awards.identities(ROOT, "2004-05"))
+
+    def test_the_market_names_an_unregistered_id_from_the_2006_summer(self):
+        names = {"zzsynth01": "Synthetic Player"}
+        with mock.patch("runtime.write_back.id_names", return_value=names):
+            market = SimpleNamespace(ident={"knownpl01": {"name": "Known Player"}}, root=ROOT)
+            with mock.patch.object(free_agency_2004, "YEAR", 2005):
+                self.assertEqual(free_agency_2004.Market.name(market, "zzsynth01"), "zzsynth01")   # 2005 replays as written
+            with mock.patch.object(free_agency_2004, "YEAR", 2006):
+                self.assertEqual(free_agency_2004.Market.name(market, "zzsynth01"), "Synthetic Player")
+                self.assertEqual(free_agency_2004.Market.name(market, "knownpl01"), "Known Player")
+                self.assertEqual(free_agency_2004.Market.name(market, "zznone01"), "zznone01")
+
+    def test_the_market_identity_names_an_id_keyed_roster_player_from_2006(self):
+        from runtime import rotations
+        real = rotations.load_rosters
+
+        def rosters(season, root=ROOT):
+            out = dict(real(season, root))
+            out["Synthetic Club"] = {"players": [{"player_id": "zzsynth01", "bbr_id": "zzsynth01", "position": "SF"}]}
+            return out
+        with mock.patch.object(rotations, "load_rosters", rosters), \
+                mock.patch("runtime.write_back.id_names", return_value={"zzsynth01": "Synthetic Player"}):
+            self.assertEqual(free_agency_2004.identity(ROOT, year=2005)["zzsynth01"]["name"], "zzsynth01")
+            self.assertEqual(free_agency_2004.identity(ROOT, year=2006)["zzsynth01"]["name"], "Synthetic Player")
 
     def test_an_addition_keyed_by_its_id_takes_the_careers_name(self):
         row = {"result": {"home": "Toronto Raptors", "away": "Boston Celtics", "game_date": "2006-11-01", "event_id": "e1"}}
@@ -138,8 +211,11 @@ class CardRowTests(unittest.TestCase):
             dict(id="month-11", kind="month", start="2005-11-01", end="2005-11-30", folder="2005-06/11_November")])
         records = [played("2005-11-02", "Miami Heat"), played("2006-01-20", "Boston Celtics")]
         rows = period_rows(ctx, VET, records)
-        self.assertEqual(rows["month-11"], (21, "MIA"))                    # born 1984-01-17: 21 on November 30, 2005
-        self.assertEqual(rows["season"], (22, "MIA/BOS"))                  # the season page's date: the career date
+        self.assertEqual(rows["month-11"], (21, "MIA", "NBA"))             # born 1984-01-17: 21 on November 30, 2005
+        self.assertEqual(rows["season"], (22, "MIA/BOS", "NBA"))           # the season page's date: the career date
+        later = dict(VET, added_on="2006-02-01", cohort="2003_04_appearance")
+        with roster_cache():
+            self.assertEqual(period_rows(ctx, later, ())["month-11"], (21, NOT_IN_LEAGUE, NOT_IN_LEAGUE))   # Lg as the page
 
     def test_closed_seasons_card_lines_name_the_clubs_of_their_appearances(self):
         for season in ("2003-04", "2004-05"):
@@ -168,7 +244,7 @@ class CardDataTests(unittest.TestCase):
 
     def test_a_club_without_a_registry_code_has_a_code(self):
         data = self.card("shaunlivingston")
-        self.assertNotIn(None, [team for _, team in data["rows"].values()])
+        self.assertNotIn(None, [team for _, team, _ in data["rows"].values()])
         self.assertIsNotNone(data["club_label"])
 
     def test_playoff_rows_of_an_id_keyed_result_reach_the_registry_name(self):

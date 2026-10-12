@@ -988,6 +988,14 @@ def _cell_name(cell):
     return m.group(1) if m else cell.strip()
 
 
+def name_order(name):
+    """The alphabetical sort key of a player's name on the league pages: accents folded and case ignored (Šarūnas
+    Jasikevičius sorts with the S names), the name itself breaking a tie."""
+    import unicodedata
+    folded = unicodedata.normalize("NFKD", str(name)).encode("ascii", "ignore").decode("ascii").casefold()
+    return folded, str(name)
+
+
 def _table(headers, rows, aligns=None):
     """A pipe table; `aligns` right-aligns the columns it marks True (the team pages' convention)."""
     body = "".join("| " + " | ".join(str(v) for v in row) + " |\n" for row in rows)
@@ -1123,7 +1131,7 @@ def league_page(text, page, lines, now, results, signed=None, players=None, root
                 age = age_on(player.get("birth_date"), label_on)
                 out.append([cell, str(age) if age is not None else row[1], club, league, row[4],
                             *stat_cells(summaries.get(player["name"], empty))])
-            out.sort(key=lambda r: _cell_name(r[0]))
+            out.sort(key=lambda r: name_order(_cell_name(r[0])))
             listed.extend(out)
             return _table(headers, out)
         body = _replace_tables(body, replacer)

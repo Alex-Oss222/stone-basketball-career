@@ -103,6 +103,14 @@ def identities(root, season=None):
         out[name] = (names.get(name, name), bbr or entry.get("bbr_id"), GROUP.get(known_position(entry) or "", None))
     for name, entry in by_name.items():
         out.setdefault(name, (name, entry.get("bbr_id"), GROUP.get(known_position(entry) or "", None)))
+    # A registry row renamed by a dated correction keeps its earlier name as a key: the June 2006 audit named three rows
+    # the 2005 market had keyed by NBA id (`name_corrected`), and a result that names him so is that player, as before.
+    # Only those rows: an id-keyed row of an earlier season (Malik Allen's three 2004-05 games) stays unmatched, as the
+    # 2005 market and every recorded decision read it.
+    for entry in registry:
+        old = (entry.get("name_corrected") or {}).get("from")
+        if old:
+            out.setdefault(old, (old, entry.get("bbr_id"), GROUP.get(known_position(entry) or "", None)))
     return out
 
 

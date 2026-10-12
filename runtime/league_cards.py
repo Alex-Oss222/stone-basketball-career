@@ -38,6 +38,8 @@ PLAYER_DIR = Path("career/Dwyane_Wade")
 LEAGUE_DIR = PLAYER_DIR / "Stats_and_Awards/League"
 CARDS_DIR = LEAGUE_DIR / "Players"
 FIRST_SEASON = "2003-04"                     # the season the registry was imported for (its club and rights labels)
+SOURCE_BASIS = "end-of-2002-03 club (registry source)"   # `club_on`'s 2003-04 answer when no dated record places him
+WORLD_DATA = "(world data)"                  # the end of a `club_on` basis taken from the world's dated real moves
 
 
 def _season(root=None):
@@ -136,10 +138,10 @@ def world_moves(player, transactions):
         if row.get("to") == MIAMI:
             # Rule 1: a real move to Miami never happens; he stays where he was.
             continue
-        moves.append((row["date"], row["to"], f'{row["kind"]} to {row["to"]} on {row["date"]} (world data)', False))
+        moves.append((row["date"], row["to"], f'{row["kind"]} to {row["to"]} on {row["date"]} {WORLD_DATA}', False))
     for row in transactions.get("waivers", []):
         if row.get("club") != MIAMI and _matches(player, bbr_id=row.get("bbr_id"), name=row.get("player")):
-            moves.append((row["date"], None, f'waived by {row["club"]} on {row["date"]} (world data)', False))
+            moves.append((row["date"], None, f'waived by {row["club"]} on {row["date"]} {WORLD_DATA}', False))
     for trade in transactions.get("trades", []):
         if trade.get("involves_miami"):
             continue  # rule 1
@@ -147,7 +149,7 @@ def world_moves(player, transactions):
             for item in sides.get("in", []):
                 item_name = re.sub(r"\s*\((draft rights|sign-and-trade)\)$", "", item)
                 if _matches(player, name=item_name):
-                    moves.append((trade["date"], club, f'traded to {club} on {trade["date"]} (world data)', item.endswith("(draft rights)")))
+                    moves.append((trade["date"], club, f'traded to {club} on {trade["date"]} {WORLD_DATA}', item.endswith("(draft rights)")))
     return sorted(moves, key=lambda m: m[0])
 
 
@@ -201,7 +203,7 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
         transactions = _read(root, TRANSACTIONS) if (Path(root) / TRANSACTIONS).is_file() else {}
     rights = player.get("cohort") == "2003_draft_rights"
     club = player.get("team_name")
-    basis = "2003 draft rights" if rights else "end-of-2002-03 club (registry source)"
+    basis = "2003 draft rights" if rights else SOURCE_BASIS
     # A Miami holding that has ended leaves him a free agent until a move dated after the release;
     # real moves skipped while Miami held him (rule 2) do not come back.
     released = max((e["until"] for e in holdings.get("entries", [])
@@ -234,14 +236,14 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
         rights = entry.get("basis") == "draft rights"
     if rights and signed and signed[0] <= on:
         rights, basis = False, ("held by Miami; " if club == MIAMI else "under contract: ") + signed[1]
-    return {"club": club, "code": _code(club, transactions, player), "basis": basis, "rights": rights}
+    return {"club": club, "code": club_code(club), "basis": basis, "rights": rights}
 
 
 def _club_in_book(player, on, season, root, transactions=None):
     """A season after the first: the one answer every reader shares (`runtime/club_truth.py`), the engine's own rosters."""
     from .club_truth import holder
     club, basis = holder(player.get("bbr_id"), player.get("name"), on, root)
-    return {"club": club, "code": ("MIA" if club == MIAMI else _code(club, transactions or {}, player)) if club else None,
+    return {"club": club, "code": ("MIA" if club == MIAMI else club_code(club)) if club else None,
             "basis": basis, "rights": False}
 
 
@@ -295,10 +297,6 @@ def club_code(club):
     return _CODES.get(club, club)
 
 
-def _code(club, transactions, player):
-    return club_code(club)
-
-
 # -- dated labels: the league pages' Club / rights cells and the cards' period rows ------------------------
 NOT_IN_LEAGUE = "—"          # the Club / rights and Lg cells of a player the league has not reached yet
 
@@ -334,19 +332,107 @@ def holds_rights(player, on, held, signed=None, root=ROOT):
     return bool(entry and str(entry.get("basis", "")).startswith("draft rights"))
 
 
+def _first_season_rules(on, root=ROOT):
+    """True when `club_on` answers `on` with its 2003-04 rules (no later season's opening book governs the date)."""
+    from .league_moves import book_path
+    from .seasons import live_season_on
+    season = live_season_on(on, root) if on >= "2003-07-01" else FIRST_SEASON
+    return season == FIRST_SEASON or not (Path(root) / book_path(season)).is_file()
+
+
+def first_season_display(player, on, held, root=ROOT):
+    """The club a 2003-04 page or card row shows for a player without an appearance on `on`, given `club_on`'s answer
+    `held` (display only: `club_on` keeps its answers for its decision readers). `club_on`'s 2003-04 rules cannot see a
+    retirement, a release or an in-season move, so the engine's own world on the date replaces them: from the symmetric
+    league's switch (`league_book.SYMMETRIC_FROM`) `club_truth.holder`, the effective rosters every game read; before
+    it, for an answer taken from the registry's 2002-03 source club or the world's dated real moves, the real roster's
+    stint covering the date (option D's game input, `_real_stint_club`). Unsigned draft rights stay `club_on`'s, since
+    no roster records them, and so do Miami's records before the switch."""
+    from .league_book import SYMMETRIC_FROM
+    if held["rights"]:
+        return held["club"]
+    if SYMMETRIC_FROM and on >= SYMMETRIC_FROM:
+        from .club_truth import holder
+        return holder(player.get("bbr_id"), player.get("name"), on, root)[0]
+    if held["basis"] == SOURCE_BASIS or held["basis"].endswith(WORLD_DATA):
+        return _real_stint_club(player, on, root)
+    return held["club"]
+
+
+_MEMO = None          # set by `roster_cache` while a build runs: `league_record` is read once, not once per row
+
+
+def league_record(root=ROOT):
+    """({season: Miami's holdings recorded with it, void ones left out}, {bbr_id: the first date a club held him}) from
+    the dated records: every season's Miami holdings, opening book (from its league year's July 1), league move to a
+    club, disturbed-club replacement and Miami departure, and the 2003-04 activation (`league_book.SYMMETRIC_FROM`).
+    The first dates tell a player who has been in the league (a free agent now) from one the league has not reached."""
+    key = ("league_record", str(Path(root).resolve()))
+    if _MEMO is not None and key in _MEMO:
+        return _MEMO[key]
+    from .club_replacements import read as read_replacements
+    from .league_book import SYMMETRIC_FROM
+    from .league_moves import clubs_at_activation, opening_book, read as read_moves
+    from .seasons import live_seasons
+    holdings, first = {}, {}
+
+    def held(bbr, on):
+        if bbr and on and (bbr not in first or on < first[bbr]):
+            first[bbr] = on
+    for season in live_seasons(root):
+        path = Path(root) / holdings_path(season)
+        for e in (_read(root, holdings_path(season))["entries"] if path.is_file() else []):
+            if not e.get("void"):
+                holdings.setdefault(season, []).append(e)
+                held(e.get("bbr_id"), e.get("from"))
+        book = opening_book(season, root)
+        opening = max(str((book or {}).get("as_of") or ""), f"{season[:4]}-07-01")     # the book's league year
+        for rows in (book or {}).get("clubs", {}).values():
+            for row in rows:
+                held(row.get("bbr_id"), opening)
+        for e in read_moves(season, root)["entries"]:
+            if e.get("to"):
+                held(e.get("bbr_id"), e.get("date"))
+        for e in read_replacements(season, root)["entries"]:
+            held(e.get("bbr_id"), e.get("from"))
+        path = Path(root) / departures_path(season)
+        for e in (_read(root, departures_path(season))["entries"] if path.is_file() else []):
+            held(e.get("bbr_id"), e.get("from"))
+        if season == FIRST_SEASON and SYMMETRIC_FROM:
+            for bbr in clubs_at_activation(season, root):
+                held(bbr, SYMMETRIC_FROM)
+    out = (holdings, first)
+    if _MEMO is not None:
+        _MEMO[key] = out
+    return out
+
+
 def dated_label(player, on, records=(), *, root=ROOT, signed=None, **sources):
     """(Club / rights cell, Lg cell) of a registry player without an appearance in a period, on the period's label date
-    `on`: no club and no league (NOT_IN_LEAGUE) before he reached the league (his registry `added_on` is later and no
-    closed record of his is dated by then); else his club on the date (`club_on`: the 2003-04 rules, then
-    `club_truth.holder`), "<code> rights" while that club holds only his unsigned draft rights (`holds_rights`), "FA"
-    when no club holds him. `records` are his closed records of the season (they date a pick's contract), `signed` the
-    career's contract signings (`signings`), `sources` the 2003-04 holdings, departures and transactions when read once."""
-    if player.get("added_on") and player["added_on"] > on and not any(r["date"] <= on for r in records):
-        return NOT_IN_LEAGUE, NOT_IN_LEAGUE
+    `on`. A club that holds him comes first, so a player signed or held before his first appearance shows it: his club
+    on the date (`club_on`: from 2004-05 `club_truth.holder`; in 2003-04 `first_season_display`; a June pick that
+    Miami's next-season holdings record is Miami's from the draft), "<code> rights" while that club holds only his
+    unsigned draft rights (`holds_rights`). With no club: "FA", or no club and no league (NOT_IN_LEAGUE) before he
+    reached the league (his registry `added_on` is later, and no closed record of his and no club's holding of him,
+    `league_record`, is dated by then). `records` are his closed records of the season (they date a pick's contract),
+    `signed` the career's contract signings (`signings`), `sources` the 2003-04 holdings, departures and transactions
+    when read once."""
     evidence = signed_evidence(player["name"], on, records, signed)
     held = club_on(player, on, root=root, signed=evidence, **sources)
+    if _first_season_rules(on, root):
+        held = dict(held, club=first_season_display(player, on, held, root))
     if held["club"] is None:
-        return "FA", "NBA"
+        holdings, first = league_record(root)
+        # A June pick is recorded with the next season's holdings; he is Miami's from the draft, before that rollover.
+        from .seasons import live_season_on
+        live = live_season_on(on, root) if on >= "2003-07-01" else FIRST_SEASON
+        entry = _any_holding(player, {"entries": [e for season, rows in holdings.items() if season > live for e in rows]}, on)
+        if entry:
+            held = dict(held, club=MIAMI, rights=str(entry.get("basis", "")).startswith("draft rights"))
+    if held["club"] is None:
+        reached = not player.get("added_on") or player["added_on"] <= on or any(r["date"] <= on for r in records) \
+            or first.get(player.get("bbr_id"), "9999") <= on
+        return ("FA", "NBA") if reached else (NOT_IN_LEAGUE, NOT_IN_LEAGUE)
     code = club_code(held["club"])
     return (f"{code} rights" if holds_rights(player, on, held, evidence, root) else code), "NBA"
 
@@ -355,11 +441,13 @@ def dated_label(player, on, records=(), *, root=ROOT, signed=None, **sources):
 def roster_cache():
     """While pages and cards are built (no record changes meanwhile): each season's real roles and activation holders
     are read once, not once per club and label date, by every `club_truth.holder` the build asks
-    (`league_moves.season_roles` and `clubs_at_activation`, memoized; each call gets its own copy). Every answer is
-    the uncached one."""
+    (`league_moves.season_roles` and `clubs_at_activation`, memoized; each call gets its own copy), and the dated
+    league record behind every Club / rights cell once (`league_record`). Every answer is the uncached one."""
+    global _MEMO
     from . import league_moves
     originals = league_moves.season_roles, league_moves.clubs_at_activation
     memo = {}
+    outer, _MEMO = _MEMO, {}
 
     def cached(fn, kind):
         def call(season=None, root=ROOT, *args, **kw):
@@ -374,6 +462,7 @@ def roster_cache():
         yield
     finally:
         league_moves.season_roles, league_moves.clubs_at_activation = originals
+        _MEMO = outer
 
 
 def period_label(player, records, start, end, on, *, root=ROOT, signed=None, **sources):
@@ -539,10 +628,10 @@ def _ratio(value):
     return "N/A" if value is None else f"{value:.3f}".removeprefix("0")
 
 
-def per_game_row(label, age, team, pos, summary):
+def per_game_row(label, age, team, pos, summary, league="NBA"):
     a = summary
     pg, rates = a["pg"], a["rates"]
-    return [label, age, team, "NBA", pos, _n(a["gp"], 0), _n(a["gs"], 0), _n(pg["minutes"]),
+    return [label, age, team, league, pos, _n(a["gp"], 0), _n(a["gs"], 0), _n(pg["minutes"]),
             _n(pg["fgm"]), _n(pg["fga"]), _ratio(rates["fg_pct"]), _n(pg["tpm"]), _n(pg["tpa"]), _ratio(rates["three_pct"]),
             _n(pg["two_pm"]), _n(pg["two_pa"]), _ratio(rates["two_pct"]), _ratio(rates["efg_pct"]),
             _n(pg["ftm"]), _n(pg["fta"]), _ratio(rates["ft_pct"]),
@@ -862,19 +951,19 @@ def card_data(ctx, player, records=(), shots=()):
 
 
 def period_rows(ctx, player, records):
-    """{period id: (Age cell, Team cell)} of a card's Season, Month and Week rows, as the League_Stats page each row
-    links to shows the player: his age on that page's label date (its period's end on the page, capped at the card
-    date) and the clubs he appeared for in the period, in stint order (joined "/"), else his dated club on the label
-    date (`period_label`)."""
+    """{period id: (Age cell, Team cell, Lg cell)} of a card's Season, Month and Week rows, as the League_Stats page each
+    row links to shows the player: his age on that page's label date (its period's end on the page, capped at the card
+    date) and the clubs he appeared for in the period, in stint order (joined "/"), else his dated club and league on
+    the label date (`period_label`: no league before he reached it)."""
     from .stat_layout import scope_for
     sources = {k: getattr(ctx, k) for k in ("holdings", "departures", "transactions") if hasattr(ctx, k)} \
         if ctx.season == FIRST_SEASON else {}                    # the 2003-04 rules' records, read once by the context
     out = {}
     for period in ctx.periods:
         on = min(scope_for(ctx.root / LEAGUE_DIR / period["folder"] / "League_Stats.md", [], ctx.on)["end"], ctx.on)
-        team, _ = period_label(player, records, period["start"], period["end"], on, root=ctx.root, signed=ctx.signed, **sources)
+        team, league = period_label(player, records, period["start"], period["end"], on, root=ctx.root, signed=ctx.signed, **sources)
         age = age_on(player.get("birth_date"), on)
-        out[period["id"]] = ("N/A" if age is None else age, team)
+        out[period["id"]] = ("N/A" if age is None else age, team, league)
     return out
 
 
@@ -962,7 +1051,6 @@ def markdown_card(ctx, data):
     lines.append(f'**Colours:** header uses {data["club"]["club"] or "the free-agent placeholder"} colours ({data["colors"]["primary"]} / {data["colors"]["secondary"]}) for the season starting {ctx.season[:4]}; presentation only.\n')
     lines.append("## Simulated statistics\n")
     lines.append(f'As of **{ctx.on}**: {data["closed"]} closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.\n')
-    team = data["club_label"]
     pos = p["position"]
     for kind, heading in (("season", "Season"), ("month", "Month"), ("week", "Week")):
         rows = []
@@ -971,8 +1059,8 @@ def markdown_card(ctx, data):
                 continue
             page = ctx.root / LEAGUE_DIR / period["folder"] / "League_Stats.md"
             label = f'[{period["label"]}]({_rel(card_dir, page)})' if page.is_file() else period["label"]
-            age, cell = data["rows"][period["id"]]
-            rows.append(per_game_row(label, age, cell, pos, data["stats"][period["id"]]["summary"]))
+            age, cell, league = data["rows"][period["id"]]
+            rows.append(per_game_row(label, age, cell, pos, data["stats"][period["id"]]["summary"], league))
         lines.append(f"### {heading}\n")
         if kind != "season":
             lines.append(f"<details>\n<summary>{heading} rows: {len(rows)} periods</summary>\n")
@@ -1034,7 +1122,7 @@ def markdown_card(ctx, data):
         started = ctx.on >= min(openers)                    # the season's first-round opening day
         lines.append(f"**Coverage:** {ctx.season} playoffs " + (f"([bracket]({bracket})): no playoff appearance through {ctx.on}."
                      if started else "have not started.") + " Prior playoff history is not imported into this card.\n")
-        prow = [ctx.season, team, "0", *["N/A"] * (len(hist) - 3)]
+        prow = [ctx.season, data["club_label"], "0", *["N/A"] * (len(hist) - 3)]
     earlier = [ctx.history[x].get(data["id"], {}).get("playoff") for x in sorted(ctx.history)]
     lines.append(markdown_table(hist, [r for r in earlier if r] + [prow]).rstrip() + "\n")
     lines += awards_lines(ctx, p)

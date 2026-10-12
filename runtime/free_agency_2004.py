@@ -122,6 +122,8 @@ RENOUNCE_FOR_REQUEST_FROM = 2006        # from this summer Miami renounces lesse
 REQUEST_ANSWERS_CONSULTATION_FROM = 2006  # from this summer Wade's own pursue request answers the franchise consultation for that player
 LINE_LABELS_FROM = 2006                 # from this summer a consultation's line names the season priced (before: "2003-04" every summer)
 LOST_BIRD_FROM = 2006                   # the first summer after a consent trade could happen (trades.CONSENT_FROM, 2005-12-01)
+ID_NAMES_FROM = 2006                    # from this summer a player no identity source names takes his careers-file name, never
+                                        # his NBA id (the June 2006 audit: the 2005 market wrote three rookies by id)
 REQUESTS = FOLDER / "wade_requests.json"
 UNTOUCHABLE = {"dwyane_wade"}           # Miami's AI/GM keeps its franchise cornerstone off the market (judgement)
 HOLD_SHARE = 1.5                        # cap hold: 150% of the prior salary
@@ -299,6 +301,12 @@ def identity(root=ROOT, year=None, on=None):
                     e = out.setdefault(p["bbr_id"], {"name": p["player_id"], "birth_date": p.get("birth_date"), "position": p.get("position")})
                     e["birth_date"] = e.get("birth_date") or p.get("birth_date")
                     e["position"] = e.get("position") or p.get("position")
+    if YEAR >= ID_NAMES_FROM:
+        from .write_back import id_names
+        named = id_names(root)
+        for b, e in out.items():
+            if e.get("name") in (None, b):
+                e["name"] = named.get(b, e.get("name"))
     careers = _read(root / CAREERS)["players"]
     sourced = {}
     if YEAR != 2004:                       # a later summer: the year's service file, else the real seasons played before
@@ -676,7 +684,16 @@ class Market:
         return out
 
     def name(self, b):
-        return (self.ident.get(b) or {}).get("name", b)
+        """A player's name in the summer's records: his identity's, else (from ID_NAMES_FROM) the careers file's or the
+        researched births file's (`write_back.id_names`: a player on no registry row and no real roster, as real Miami's
+        players are), and only then his NBA id."""
+        name = (self.ident.get(b) or {}).get("name", b)
+        if YEAR >= ID_NAMES_FROM and name in (None, b):
+            if getattr(self, "_id_names", None) is None:
+                from .write_back import id_names
+                self._id_names = id_names(self.root)
+            name = self._id_names.get(b, name)
+        return name
 
     def group(self, b):
         pos = (self.ident.get(b) or {}).get("position") or "F"
