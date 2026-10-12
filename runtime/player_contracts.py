@@ -531,16 +531,23 @@ def _attach_option_decisions(player, cutoff, match, profiles):
 
 
 def _league_moves(player, cutoff, match, profiles, protagonist, root, moves):
-    """Every dated league move (`<season>/League/league_moves.json`) as a holder event; Miami's own moves are its records'."""
+    """Every dated league move (`<season>/League/league_moves.json`) as a holder event; Miami's own moves are its records'.
+    A trade or claim of a player the engine pins to his club on its date (`league_moves.pinned`: Miami sent him there, or
+    a disturbed club's replacement) was never applied and assigns nothing (Eddie Jones in the 2005-01-31 Utah-Houston
+    trade); a move that ends an agreement is never skipped."""
+    from .league_moves import pinned
     for path in sorted(player.glob("????-??/League/league_moves.json")):
         record = _read(path)
         source = _source(path, root, "Dated league move")
+        season = record.get("season") or path.parts[-3]
         for i, m in enumerate(record.get("entries", [])):
             if not _known(m.get("date"), cutoff) or "Miami Heat" in (m.get("from"), m.get("to")):
                 continue
+            if m.get("kind") in MOVE_ASSIGN and m.get("bbr_id") and m["bbr_id"] in pinned(season, m["date"], root):
+                continue
             key = match({"player": m.get("player"), "bbr_id": m.get("bbr_id")})
             if key and profiles[key]["name"] != protagonist:
-                moves.append(dict(m, key=key, season=record.get("season") or path.parts[-3], source=source,
+                moves.append(dict(m, key=key, season=season, source=source,
                                   id=m.get("id") or m.get("deal"), order=(1, path.as_posix(), i)))
 
 

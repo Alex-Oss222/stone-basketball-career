@@ -28,7 +28,7 @@ import json
 from pathlib import Path
 
 from .league_book import LeagueBook, active
-from .league_moves import activation_free_agents, effective_roster, ledger_path, read as read_moves
+from .league_moves import PINNED_FROM, activation_free_agents, effective_roster, ledger_path, pinned, read as read_moves
 from .trades import Assets, MIAMI
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -92,6 +92,8 @@ RETIREMENT_FROM = "2004-11-24"     # the user's request (October 2026); earlier 
 
 
 class LeagueMarket:
+    pinned = frozenset()                    # players kept out of the candidates (`league_moves.pinned`), from PINNED_FROM
+
     def __init__(self, day, market, root=ROOT):
         if not active(day):
             raise ValueError("the symmetric league is not active on this date")
@@ -106,6 +108,9 @@ class LeagueMarket:
         self.moves = read_moves(self.season, root)
         self.clubs = sorted(c for c in self.book.inventory if c != MIAMI)
         self.rosters = {c: effective_roster(c, day, self.season, root) for c in self.clubs}
+        # from PINNED_FROM a player the engine keeps where Miami sent him (`league_moves.pinned`) counts on his club's
+        # roster but is never waived, cut or retired here: the move would be recorded and never applied
+        self.pinned = pinned(self.season, day, root) if day >= PINNED_FROM else frozenset()
         from .league_moves import _protected_contracts
         self.protected = _protected_contracts(root, self.season)
         from .standings import worst_first
@@ -202,8 +207,10 @@ class LeagueMarket:
         return self._add(kind, bbr, role, None, club, {"type": kind, "until": min(until, self.rules["season_end"]), "salary": "pro-rated minimum"},
                          note=f"value {round(self.fit_value(club, bbr), 2)} x fit")
 
-    def _weakest(self, club):
-        cands = [p for p in self.rosters[club] if p["bbr_id"] not in self.protected]
+    def _weakest(self, club, waiving=False):
+        """The club's weakest unprotected player: the one a claim must beat, or (`waiving`) the one it would waive, never a
+        pinned player (`self.pinned`)."""
+        cands = [p for p in self.rosters[club] if p["bbr_id"] not in self.protected and not (waiving and p["bbr_id"] in self.pinned)]
         return min(cands, key=lambda p: (self.value(p["bbr_id"]), p["bbr_id"])) if cands else None
 
     def _waive(self, club, player, pool):
@@ -254,7 +261,7 @@ class LeagueMarket:
             from .availability import status
             for club in self.clubs:
                 for p in list(self.rosters[club]):
-                    if status(p["bbr_id"], self.season, self.root) == "retired":
+                    if p["bbr_id"] not in self.pinned and status(p["bbr_id"], self.season, self.root) == "retired":
                         role = {k: p.get(k) for k in ("player_id", "bbr_id", "position", "games", "minutes")}
                         self._add("retire", p["bbr_id"], role, club, None,
                                   note=f"retired: his real career ended before {self.season} (career continuity)")
@@ -306,7 +313,7 @@ class LeagueMarket:
             if self.day == self.rules["cut_day"]:
                 ranked = sorted(self.rosters[club], key=lambda q: (-self.value(q["bbr_id"]), q["bbr_id"]))
                 for q in ranked[GUARANTEE_CUT_KEEP:]:
-                    if q["bbr_id"] in self.protected or not pool:
+                    if q["bbr_id"] in self.protected or q["bbr_id"] in self.pinned or not pool:
                         continue
                     best = max(pool, key=lambda b: (self.fit_value(club, b), b))
                     if self.fit_value(club, best) >= GUARANTEE_CUT_MARGIN * max(0.5, self.value(q["bbr_id"])):
@@ -314,7 +321,7 @@ class LeagueMarket:
                         self._sign(club, pool, "ten_day" if ten_open else "rest_of_season")
             # 5. an upgrade at fifteen
             if len(self.rosters[club]) >= self.rules["max"] and pool:
-                weakest = self._weakest(club)
+                weakest = self._weakest(club, waiving=True)
                 best = max(pool, key=lambda b: (self.fit_value(club, b), b))
                 if weakest and self.fit_value(club, best) > UPGRADE_MARGIN * max(0.5, self.value(weakest["bbr_id"])):
                     self._waive(club, weakest, pool)

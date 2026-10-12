@@ -125,7 +125,10 @@ here changes a ledger, a roster or a decision.
   an extension signed and not begun travels with it). A trade or waiver claim is an assignment; a 10-day or
   rest-of-season contract is a new agreement (a rest-of-season contract runs to June 30 of its season, the move's
   `until` being the last regular-season day); a waiver, an expired 10-day contract or a retirement closes the agreement
-  on its date (`Ended on`), and a claim reopens the agreement its waiver closed. An agreement's assigned club is its
+  on its date (`Ended on`), and a claim reopens the agreement its waiver closed. A league trade or claim of a player the
+  engine pins to his club on its date (`league_moves.pinned`: Miami sent him there, or a disturbed club's replacement)
+  was never applied and assigns nothing: Eddie Jones has no 2005-01-31 Utah-Houston assignment
+  (`docs/symmetric_league_design.md`, Pinned players). An agreement's assigned club is its
   latest assignment's; an agreement still in force names a renamed club by its current name (`seasons.club_name`).
 - **Miami's sheet and archive** carry an agreement's whole schedule, so its last scheduled season ends it.
 - **Status.** The profile status is the current agreement's; an agreement past its expiry reads `expired`. Without one in

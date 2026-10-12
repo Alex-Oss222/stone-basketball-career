@@ -36,6 +36,12 @@ On the activation date each club holds the players whose real stint covers it. A
 
 The first rule signed a 10-day whenever one regular was injured: 20 in the first 14 days, about 2.5 times the real 2003-04 rate (about 60 from January 5 to the season's end). From January 20 a 10-day is an emergency fill: a club signs one only when its healthy players under contract fall below twelve (`NEED_RULE_FROM`). When a 10-day ends, a player who averaged `CONTRIBUTOR_MINUTES` (10, judgement) per club game is kept for the rest of the season; otherwise he gets a second 10-day only while the club is still short, or goes. Moves before January 20 stand.
 
+## Pinned players (the audit of 2006-06-20)
+
+A player Miami sent to a real club (`<season>/00_Team/Team/Roster/departures.json`, rule 2) and a disturbed club's replacement stay where Miami's records put them for their window: `effective_roster` takes them off every club and adds them back at their recorded club after every dated league move (`league_moves.pinned`). A league trade, claim or waiver of one of them is recorded in `league_moves.json` and never applied. It happened once: the 2005-01-31 Utah-Houston trade (`2004-05-league-trade-2005-01-31-jonesed02-jonesfr01-nachbbo01-robingl01`) sent Eddie Jones, whom Miami had traded to Utah on 2005-01-24, and Fred Jones to Houston for Bostjan Nachbar and Glenn Robinson. The deal stands as played: three of its four players moved, Eddie Jones played every later 2004-05 game for Utah until Miami traded for him again on 2005-08-05, and Houston received Fred Jones alone. His contract page has no Utah-Houston assignment (`player_contracts._league_moves` skips a trade or claim of a pinned player; a move that ends an agreement is never skipped).
+
+From 2006-06-21 (`league_moves.PINNED_FROM`, forward-only) the trade desk leaves a pinned player out of its packages (`LeagueTradeDesk.blocked`), and the market never waives, cuts or retires one (`LeagueMarket._weakest(waiving=True)`, the guarantee cut, retirements); he still counts on his club's roster, and a waiver claim still has to beat him. Every market day and trade scan up to 2006-06-20 builds the same candidates as before.
+
 ## Calibration (against `nba_1999_in_season_rules.json`, calibration_2003_04)
 
 These are volume targets only, never decisions.

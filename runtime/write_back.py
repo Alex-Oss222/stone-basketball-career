@@ -1178,7 +1178,7 @@ def league_page(text, page, lines, now, results, signed=None, players=None, root
     on the page's label date (the period's end, or the career date while it runs) from his registry birth date (without
     one the cell keeps what it carried); its Club / rights and Lg cells are `club_cell`'s. The tracked-player count and
     each group's count are the rows' own, and the caption states the label date. A closed season's page (`live` False)
-    keeps the dated "Through" line it was closed with."""
+    keeps the dated "Through" line it was closed with; an ended period without a closed game reads complete on either."""
     from .league_cards import age_on
     scope = scope_for(page, [], now)
     label_on = min(scope["end"], now)
@@ -1192,9 +1192,13 @@ def league_page(text, page, lines, now, results, signed=None, players=None, root
         summaries[name] = aggregate([r for r in records if _in(r, scope)])
     empty = aggregate([])
     n = games_in(scope)
-    if n and live:   # a period with no closed game keeps its dated "not started" line
+    if n and live:   # a period with no closed game that has not ended keeps its dated "not started" line
         text = re.sub(r"^(\d+) tracked players · \d+ closed games? in this record · [^\n]*$",
                       lambda m: f"{m.group(1)} tracked players · {_plural(n, 'closed game')} in this record · Through {long_date(now)}.",
+                      text, count=1, flags=re.M)
+    elif not n and scope["end"] < now:   # an ended period without a game, live or closed (as `team_page` and `period_rows`)
+        text = re.sub(r"^(\d+) tracked players · \d+ closed games? in this record · [^\n]*$",
+                      lambda m: f"{m.group(1)} tracked players · 0 closed games in this record · Complete; no NBA game in this period.",
                       text, count=1, flags=re.M)
     text = re.sub(r"(## Leaders\n\n).*?(\n\n## Players by position)", lambda m: m.group(1) + leaders_text(summaries, scope) + m.group(2), text, count=1, flags=re.S)
     tracked = []

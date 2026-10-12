@@ -32,7 +32,7 @@ import json
 from pathlib import Path
 
 from .league_book import LeagueBook, active
-from .league_moves import effective_roster, ledger_path, read as read_moves
+from .league_moves import PINNED_FROM, effective_roster, ledger_path, pinned, read as read_moves
 from .trades import (ACCEPT_FLOOR, CBA_PATH, CONSENT_FROM, MIAMI, SEARCH_MIN_ACCEPT, SEASON_LABELS_FROM, STANCE_WEIGHTS,
                      UNDER_CONTRACT, UNTOUCHABLE_MARGIN, Assets, ConsentBook, acceptance, consent_basis, consent_chance, consent_options,
                      consent_question, in_season_signings, market_signings, read_json, signing_block)
@@ -83,6 +83,8 @@ def scan_days(start, until=None):
 
 
 class LeagueTradeDesk:
+    pinned = frozenset()                    # players kept out of the candidates (`league_moves.pinned`), from PINNED_FROM
+
     def __init__(self, on, market, root=ROOT):
         if not active(on):
             raise ValueError("the symmetric league is not active on this date")
@@ -100,13 +102,19 @@ class LeagueTradeDesk:
         self._needs_cache, self._value_cache = {}, {}
         self.consent = ConsentBook(on, root) if on >= CONSENT_FROM else None      # forward-only: earlier deals replay unchanged
         self.signings = {}                                  # the newly signed restriction, from NEWLY_SIGNED_FROM (Miami's desk's rule)
+        # from PINNED_FROM a player the engine keeps where Miami sent him is no candidate (`league_moves.pinned`): a deal
+        # with him would move only its other players, as the 2005-01-31 Utah-Houston trade did; earlier scans replay unchanged
+        self.pinned = pinned(self.season, on, root) if on >= PINNED_FROM else frozenset()
         if on >= NEWLY_SIGNED_FROM:
             self.cba = read_json(CBA_PATH, root)
             self.signings = dict(market_signings(self.season, on, root, exclude=MIAMI), **in_season_signings(self.season, on, root, MIAMI))
 
     def blocked(self, bbr):
         """Why the player cannot be traded on the date (newly signed or a signed first-round pick: `trades.signing_block`,
-        as Miami's desk reads a partner's player), or None; always None before NEWLY_SIGNED_FROM."""
+        as Miami's desk reads a partner's player; from PINNED_FROM, pinned to his club by Miami's records), or None;
+        always None before NEWLY_SIGNED_FROM."""
+        if bbr in self.pinned:
+            return "pinned to his club by Miami's records (league_moves.pinned)"
         row = self.signings.get(bbr)
         return signing_block(row, self.on, self.season, self.cba) if row else None
 
@@ -158,7 +166,7 @@ class LeagueTradeDesk:
         from itertools import combinations
         ids = [p["bbr_id"] for p in self.rosters[club][:ROTATION_CANDIDATES]]
         pay = {x: int((self.contracts.get(x) or {}).get("schedule", {}).get(self.season) or 0) for x in ids}
-        ids = [x for x in ids if pay[x] and not self.blocked(x)]   # a player without a salary this season, or newly signed, is not tradable here
+        ids = [x for x in ids if pay[x] and not self.blocked(x)]   # a player without a salary this season, newly signed or pinned, is not tradable here
         groups = [list(c) for n in (1, 2) for c in combinations(ids, n)]
         groups += [list(c) for c in combinations(ids[:TRIPLE_CANDIDATES], 3)]
         return [(g, sum(pay[x] for x in g)) for g in groups]

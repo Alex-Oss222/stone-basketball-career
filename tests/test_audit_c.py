@@ -110,7 +110,7 @@ class LeaguePageTests(unittest.TestCase):
                    "laterro01": dict(VET, name="Later Rookie", bbr_id="laterro01", registry_id="laterro01",
                                      added_on="2005-11-01", cohort="2003_04_appearance")}
         text = write_back.league_page(self.page(), self.PAGE, {}, "2006-06-20", [], {}, players, ROOT, EMPTY, live=False)
-        self.assertIn("3 tracked players · 0 closed games in this record · Not started.", text)
+        self.assertIn("3 tracked players · 0 closed games in this record · Complete; no NBA game in this period.", text)
         self.assertIn("<summary>PG · Point guards · 3 players</summary>", text)
         self.assertIn("Age is each player's age on 2003-11-07", text)
         self.assertNotIn("2003-06-26", text)

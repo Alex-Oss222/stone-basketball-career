@@ -212,6 +212,22 @@ def simulated_club(club, game_date, season=None, root=ROOT, start=None):
     return {"players": players}
 
 
+# From this date (forward-only, the audit of 2006-06-20) the league's desks leave a pinned player (`pinned`) out of their
+# trade and waiver candidates. Before it, the 2005-01-31 Utah-Houston trade moved Eddie Jones, whom Miami had sent to
+# Utah: the deal stands as played, three of its four players moved, and every earlier market day and scan replays unchanged.
+PINNED_FROM = "2006-06-21"
+
+
+def pinned(season, day, root=ROOT):
+    """Players `effective_roster` keeps where Miami's records put them on the date, whatever a dated league move says:
+    Miami's departures (rule 2) and the disturbed clubs' replacements. A league trade, claim or waiver of one of them is
+    recorded and never applied, so the contract catalog skips its assignment and, from PINNED_FROM, the league's trade
+    desk and market never choose him."""
+    from .club_replacements import held as replacements_held
+    from .rotations import miami_departed
+    return frozenset(miami_departed(season, day, root)) | frozenset(replacements_held(season, day, root))
+
+
 def effective_roster(club, game_date, season=None, root=ROOT, start=None):
     """The club as its games and its front office see it: the simulated roster with Miami's rules 2 and 3 and
     the disturbed-club replacements applied, exactly as `game_requests._club` builds the game input."""
