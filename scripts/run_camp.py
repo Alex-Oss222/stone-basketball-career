@@ -101,7 +101,7 @@ class CampRun:
             else:
                 from runtime.rollover import arrival_card
                 card = arrival_card(r["player"], identity, day, control, "../../../04_Training_Camp/camp_roster.json",
-                                    stats.get(r["bbr_id"]), camp.SEASON, "Camp invitee")
+                                    stats.get(r["bbr_id"]), camp.SEASON, "Camp invitee", self.root)
             self.writer.text(signing.TEAM / f"Team/Player_Cards/{signing.slug(r['player'])}.md", card)
             holdings["entries"].append({"player": r["player"], "bbr_id": r["bbr_id"], "from": day, "until": None, "basis": f"camp contract {day} (camp_roster.json)"})
         sheet["as_of"] = roster["as_of"] = day

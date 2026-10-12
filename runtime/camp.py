@@ -15,7 +15,7 @@ import json
 from pathlib import Path
 
 from .kernel import POSITIONS
-from .miami_register import required_position
+from .miami_register import ranked_position
 from .valuation import REPLACEMENT_EFF_PER_GAME, age_on, read
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -97,7 +97,9 @@ def invite(on, front_office, market, root=ROOT):
             continue
         if value < INVITE_MIN_VALUE and not (age is not None and age <= INVITE_YOUNG_AGE and value >= REPLACEMENT_EFF_PER_GAME):
             continue
-        pos = required_position(positions.get(bbr), on, p["player"])
+        pos = ranked_position(positions.get(bbr), on)
+        if pos is None:
+            continue          # no recorded position: not ranked by fit (`miami_register.ranked_position`)
         rows.append({"player": p["player"], "bbr_id": bbr, "position": pos, "age": age, "value": round(value, 2),
                      "fit": front_office.fit(pos, needs), "score": round(value * front_office.fit(pos, needs), 3),
                      "salary": market.valuation.signing_minimum(p.get("nba_seasons_before_2003_04")),

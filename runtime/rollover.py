@@ -369,7 +369,7 @@ class Rollover:
     def card(self, entry, ident, prior):
         source = f"../../../../../../{self.record_path.relative_to(self.root).as_posix()}"
         return arrival_card(entry["player"], ident, self.day, self.control_text(entry), source, prior, self.new,
-                            f"Joined Miami for {self.new}. Card opened from the summer market record")
+                            f"Joined Miami for {self.new}. Card opened from the summer market record", self.root)
 
     @staticmethod
     def _repoint(text, src, dst):
@@ -541,11 +541,15 @@ def contract_head(schedule, season):
     return f"{len(years)} season(s) from {season}, ${total:,} scheduled (${schedule.get(season, 0):,} in {season})"
 
 
-def arrival_card(name, ident, day, control, source_rel, prior, season, how):
+def arrival_card(name, ident, day, control, source_rel, prior, season, how, root=ROOT):
     """A new Miami player's card in the template's section order; grades stay unassessed until evidence exists.
-    `prior` is his previous season's record (simulated totals once the career has played it)."""
-    from .seasons import previous_season
+    `prior` is his previous season's record (simulated totals once the career has played it). The coverage line says
+    the season had not started only before its opening night; an in-season arrival (a trade, `signing.
+    arrival_card_for_trade`) has no Miami appearance yet, as the write-back's refresh words it."""
+    from .seasons import dates, previous_season
     old = previous_season(season)
+    started = day >= dates(season, root)["opening_night"]
+    current = f"{season}: no Miami appearance through {day}" if started else f"{season} had not started on {day}"
     pos = " / ".join(ident.get("position", "N/A").replace("-", "/").split("/")) if ident.get("position") else "N/A"
     born = ident.get("birth_date")
     d = date.fromisoformat(day)
@@ -599,13 +603,13 @@ Unassessed.
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** {old + ': ' + (', '.join(prior.get('team_codes') or []) or 'his clubs') + ' from the league record; ' if prior else ''}{season} had not started on {day}.
+**Coverage:** {old + ': ' + (', '.join(prior.get('team_codes') or []) or 'his clubs') + ' from the league record; ' if prior else ''}{current}.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-{rows}| {season} | MIA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+{rows}| {season} | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
-Source: Simulated seasons from closed results: Miami's games (MIA rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
+Source: Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 

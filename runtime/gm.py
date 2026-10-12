@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 from .contracts import counted_amount
-from .miami_register import required_position, with_positions_on
+from .miami_register import POSITION_GUESS_UNTIL, ranked_position, with_positions_on
 from .standing import STANDING_WEIGHT
 from .trades import SIGN_AND_TRADE_RIGHTS
 from .valuation import read
@@ -211,7 +211,9 @@ class FrontOffice:
             if own is None:
                 continue
             ask = self.market.asking(bbr, self.on)
-            pos = required_position(positions.get(bbr), self.on, p["player"])
+            pos = ranked_position(positions.get(bbr), self.on)
+            if pos is None:
+                continue                 # no recorded position: not ranked by fit (`miami_register.ranked_position`)
             surplus = (own - ask["first_year"]) / max(ask["first_year"], 1)
             weight = round(self.fit(pos, needs) * self.skill_fit(bbr), 3)
             # Contribution above replacement per dollar, with a star premium (quality^1.5): one star
@@ -230,15 +232,19 @@ class FrontOffice:
         return rows[:limit]
 
     def _positions(self):
-        """bbr_id -> listed position from the end-of-season roster file, then the league registry."""
+        """bbr_id -> listed position from the end-of-season roster file, then the league registry. After
+        POSITION_GUESS_UNTIL a registry row whose position no source records (`write_back.known_position`) gives none:
+        its `position` is a page slot, not a position."""
+        from .write_back import known_position
         out = {}
+        registry_position = (lambda p: p.get("position")) if self.on <= POSITION_GUESS_UNTIL else known_position
         for club in read("library/2003/league/nba_2003_end_of_season.json", self.root)["clubs"].values():
             for p in club["players"]:
                 if p.get("bbr_id") and p.get("position"):
                     out[p["bbr_id"]] = p["position"].split("-")[0].split("/")[0]
         for p in read("career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json", self.root)["players"]:
-            if p.get("bbr_id") and p.get("position"):
-                out.setdefault(p["bbr_id"], p["position"].split("-")[0].split("/")[0])
+            if p.get("bbr_id") and registry_position(p):
+                out.setdefault(p["bbr_id"], registry_position(p).split("-")[0].split("/")[0])
         # Last: the listed position on a 2003-04 club roster (identity only, never minutes or results),
         # for a player outside the 2002-03 baseline, so no signing falls back to a guessed position.
         for club in read("library/2003/league/nba_2003_04_team_rosters.json", self.root)["clubs"].values():

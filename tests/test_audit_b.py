@@ -44,6 +44,24 @@ class DatedRegisterFacts(unittest.TestCase):
         with self.assertRaises(ValueError):
             required_position(None, "2006-06-21", "X")
 
+    def test_a_ranking_leaves_an_unknown_position_unranked_after_the_clock(self):
+        from runtime.miami_register import ranked_position
+        self.assertEqual(ranked_position("C", "2006-07-01"), "C")
+        self.assertEqual(ranked_position(None, "2006-06-20"), "SF")             # recorded rankings replay as made
+        self.assertIsNone(ranked_position(None, "2006-06-21"))
+
+    def test_front_office_position_table_drops_registry_slots_after_the_clock(self):
+        """Gerald Fitch and Matt Walsh have no recorded position: their registry `position` is a page slot."""
+        from runtime import gm
+        market = SimpleNamespace(valuation=SimpleNamespace(value=lambda b: None))
+        with mock.patch.object(gm, "TEAM", Path("career/Dwyane_Wade/2005-06/00_Team")), mock.patch.object(gm, "SEASON", "2005-06"):
+            before = gm.FrontOffice("2006-06-20", market, ROOT)._positions()
+            after = gm.FrontOffice("2006-07-01", market, ROOT)._positions()
+        self.assertEqual((before.get("fitchge01"), before.get("walshma01")), ("SF", "SF"))
+        self.assertNotIn("fitchge01", after)
+        self.assertNotIn("walshma01", after)
+        self.assertEqual({k: v for k, v in before.items() if k not in ("fitchge01", "walshma01")}, after)
+
     def test_need_score_reads_the_correction_from_its_date(self):
         from runtime import gm
         market = SimpleNamespace(valuation=SimpleNamespace(value=lambda b: None))
@@ -165,6 +183,54 @@ class PersonnelCards(unittest.TestCase):
         self.assertIn("| 45.0% | 25.0% | 75.0% |", text)
         self.assertNotIn("not started.", text)
         self.assertNotIn("No playoff appearances recorded", text)
+        self.assertIn("2006-07 had not started on 2006-10-01", text)
+        self.assertIn("| 2006-07 | Miami Heat | 0 |", text)
+        traded = arrival_card("Test Player", {"position": "PG"}, "2007-01-15", "Existing contract.", "x", prior, "2006-07",
+                              "Acquired by trade")                    # an in-season arrival: the season has started
+        self.assertIn("2006-07: no Miami appearance through 2007-01-15", traded)
+        self.assertNotIn("2006-07 had not started", traded)
+
+    def test_2002_03_rows_come_from_the_league_statistics_file(self):
+        """Cards written before the dated label fix carried a later season's line under 2002-03 (review of the audit)."""
+        from runtime.miami_cards import START, END, _rows_in, club_names, percent_cell, totals_row
+        lib = {r["bbr_id"]: r for r in json.loads((ROOT / "library/2003/league/nba_2002_03_player_stats.json")
+                                                  .read_text(encoding="utf-8"))["records"]}
+        checked = 0
+        for season in ("2003-04", "2004-05", "2005-06"):
+            for name, p in register(season).items():
+                path = CAREER / season / "00_Team/Team/Player_Cards" / Path(p.get("player_card", "")).name
+                if not path.is_file() or path.name in ("TEMPLATE.md", "README.md") or not p.get("bbr_id"):
+                    continue
+                text = path.read_text(encoding="utf-8")
+                if START not in text or "**Statistics through:** 20" not in text:
+                    continue                                  # a card never refreshed since its import stands as written
+                block = text[text.index(START):text.index(END)].split("## Playoff statistics by year")[0]
+                rows = [r[:11] + [percent_cell(c) for c in r[11:]] for r in _rows_in(block) if r[0] == "2002-03"]
+                line = lib.get(p["bbr_id"])
+                # the file's line, or (no record of him) at most an empty G 0 record
+                expected = ([totals_row("2002-03", club_names(line["team_codes"]), line["totals"])] if line
+                            else [r for r in rows if r[2] == "0"])
+                self.assertEqual(rows, expected, f"{season} {name}")
+                checked += 1
+        self.assertGreater(checked, 40)
+        mihm = card("2005-06", "chris_mihm")
+        self.assertIn("| 2002-03 | Cleveland Cavaliers | 52 | 0 | 15.6 | 5.9 |", mihm)
+        murray = card("2004-05", "lamond_murray")
+        self.assertNotIn("| 2002-03 |", murray)
+        self.assertIn("2002-03: no record in the [league statistics file]", murray)
+
+    def test_one_club_label_style(self):
+        """Full club names in every Team(s) cell: Miami's regular-season rows read as its playoff rows do."""
+        james = card("2005-06", "mike_james")
+        self.assertIn("| 2005-06 | Miami Heat | 82 | 82 |", james)
+        self.assertNotRegex(james, r"\| \d{4}-\d{2} \| MIA \|")
+        self.assertNotIn("Team codes are Basketball-Reference codes", james)
+
+    def test_a_broken_honor_record_is_not_an_empty_section(self):
+        from runtime import league_cards, miami_cards
+        with mock.patch.object(league_cards, "CardContext", side_effect=KeyError("decisions")):
+            with self.assertRaises(KeyError):
+                miami_cards.Sources(ROOT).honors("Mike James", "2006-06-20")
 
 
 class TeamPages(unittest.TestCase):
@@ -180,6 +246,26 @@ class TeamPages(unittest.TestCase):
         self.assertIn("| October 15-21, 2003 | 0 | No games |", month)
         season = next(t for p, t in pages.items() if p.as_posix().endswith("Team/2004-05/Team_Stats.md"))
         self.assertNotRegex(season, r"\| (Bernard Robinson|Christian Drejer) \| [A-Z/]+ \| \d")
+
+    def test_a_previous_league_years_contract_is_not_held_in_the_season(self):
+        """Malik Allen's 2002-03 contract (held 2003-06-26 until 2003-07-01) overlaps the 2003-04 season page's scope
+        from June 1, not its league year from July 1."""
+        from runtime import write_back
+        text = (CAREER / "Stats_and_Awards/Team/2003-04/Team_Stats.md").read_text(encoding="utf-8")
+        self.assertNotRegex(text, r"\| Malik Allen \| (PF|N/A) \|")     # the dated June 26 control table stays
+        with live_season():
+            pages = write_back.closed_team_pages(ROOT)
+        season = next(t for p, t in pages.items() if p.as_posix().endswith("Team/2003-04/Team_Stats.md"))
+        self.assertEqual(season, text)
+
+    def test_live_and_closed_team_pages_read_positions_by_date(self):
+        """One builder for the live and the closed rebuild: the register's positions on the page's date."""
+        from runtime import write_back
+        before = write_back.team_pages(ROOT, "2005-06", "2006-06-20")
+        after = write_back.team_pages(ROOT, "2005-06", "2006-06-21")
+        page = next(p for p in before if p.as_posix().endswith("Team/2005-06/Team_Stats.md"))
+        self.assertRegex(before[page], r"\| Sebastian Telfair \| SF \|")
+        self.assertRegex(after[page], r"\| Sebastian Telfair \| PG \|")
 
     def test_live_pages_drop_unsigned_rights(self):
         text = (CAREER / "Stats_and_Awards/Team/2005-06/Team_Stats.md").read_text(encoding="utf-8")

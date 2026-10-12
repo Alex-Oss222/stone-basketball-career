@@ -6,16 +6,18 @@ dated, record-owned parts of each card, from the owning records, for every seaso
 - **Role** and "Not yet established" (the live season's register players only): the latest dated rotation (camp
   `Depth_Chart/rotation.json`, then each `Depth_Chart/Reviews/<date>/rotation.json`) and the injured list
   (`Transactions/injured_list.json`), with one "Changes and coaching notes" row per rotation review that set his role.
-  A player whose draft rights are unsigned is not on the roster and has no role.
+  A player whose draft rights are unsigned is not on the roster and has no role: his earlier "Staff rotation of ..."
+  rows, which named him a reserve, are rewritten to "not on the roster" (the one coaching-note rewrite).
 - the header: the "Statistics through" date (the live season's register players), a position under a dated register
   correction (`miami_register.positions_on`), the age at the opening assessment from the register's birth date, and
   the Contract/control line when the register's control text has changed (`signing.card_control_line`);
-- the yearly statistics block, generated whole: earlier real rows kept as imported (the 2002-03 line added from the
-  league's statistics file when the card lacks it), then every simulated season to the card's: his Miami row from closed
-  Miami results (`write_back.miami_lines`) and, for an earlier season he did not spend whole with Miami, his line with
-  every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`); one
-  playoff row per season and club from closed playoff results (`playoff_stats.player_lines`, the playoff pages'
-  aggregation); a coverage line naming every row; one percentage format (45.2%);
+- the yearly statistics block, generated whole: for a card with a Basketball-Reference id the 2002-03 row from the
+  league's statistics file (`prior_rows`; a card line the file has no record of is dropped), other earlier rows kept as
+  imported; then every simulated season to the card's: his Miami row from closed Miami results
+  (`write_back.miami_lines`) and, for an earlier season he did not spend whole with Miami, his line with every club
+  from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`); one playoff row per
+  season and club from closed playoff results (`playoff_stats.player_lines`, the playoff pages' aggregation); a
+  coverage line naming every row; full club names in the Team(s) column and one percentage format (45.2%);
 - **Awards and honors**: honors earned in the simulated league through the card date: Wade's from `awards.json`, every
   other player's from the closed award decisions, All-Star selections and FIBA medal registers (the league cards'
   honors at rank 1, `league_cards.CardContext`).
@@ -23,7 +25,7 @@ dated, record-owned parts of each card, from the owning records, for every seaso
 The card date is the career date for the live season's register players. A player no longer on the register, and every
 card of a closed season, keeps the date the card states: only its header facts, statistics and honors are regenerated
 through that date. A card never refreshed since its import (a date written as "June 26, 2003") stands as written.
-Grades, scouting text, sources and coaching notes are never touched. `refresh` also keeps each register's contract term
+Grades, scouting text and sources are never touched, nor are coaching notes apart from a rights holder's rotation rows. `refresh` also keeps each register's contract term
 clauses equal to its contract sheet (`refresh_control_texts`) and writes each later season's card index
 (`Player_Cards/README.md`; the 2003-04 one is the import's).
 """
@@ -48,9 +50,13 @@ def team_dir(season):
 GONE = ("released", "traded", "signed_elsewhere", "voided", "waived", "renounced", "declined")
 COLUMNS = ["Season", "Team(s)", "G", "GS", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TOV", "FG%", "3P%", "FT%"]
 START, END = "<!-- yearly-statistics:start -->", "<!-- yearly-statistics:end -->"
-SIMULATED_SOURCE = ("Simulated seasons from closed results: Miami's games (MIA rows), and an earlier season's line with every "
-                    "club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).")
-PRIOR_SOURCE = "2002-03 from the [league statistics file](../../../../../../library/2003/league/nba_2002_03_player_stats.json)."
+SIMULATED_SOURCE = ("Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with "
+                    "every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).")
+PRIOR_SEASON, PRIOR_FILE = "2002-03", "nba_2002_03_player_stats.json"
+PRIOR_SOURCE = f"2002-03 from the [league statistics file](../../../../../../library/2003/league/{PRIOR_FILE})."
+NO_PRIOR_SOURCE = f"2002-03: no record in the [league statistics file](../../../../../../library/2003/league/{PRIOR_FILE})."
+# The June 2003 veteran import's label clause; every Team(s) cell now carries club names.
+CODES_CLAUSE = ". Team codes are Basketball-Reference codes"
 RIGHTS_ROLE = "not on the roster (unsigned draft rights); no rotation role"
 
 
@@ -113,8 +119,15 @@ def season_row(records, season):
     t = lambda k: sum(r["line"].get(k) or 0 for r in played)
     gs = sum(1 for r in played if r["line"].get("started"))
     per = lambda k: f"{t(k) / g:.1f}"
-    return [season, "MIA", str(g), str(gs), f"{t('seconds') / 60 / g:.1f}", per("pts"), per("reb"), per("ast"), per("stl"),
+    return [season, MIAMI, str(g), str(gs), f"{t('seconds') / 60 / g:.1f}", per("pts"), per("reb"), per("ast"), per("stl"),
             per("blk"), per("tov"), _pct(t("fgm"), t("fga")), _pct(t("tpm"), t("tpa")), _pct(t("ftm"), t("fta"))]
+
+
+def club_names(codes):
+    """The Team(s) cell for a list of clubs: full names (a library code such as 'SAC' through `schedule.ALIASES`),
+    joined as the league's season totals join them."""
+    from .schedule import ALIASES
+    return ", ".join(ALIASES.get(c, c) for c in codes or []) or "N/A"
 
 
 def totals_row(season, label, t):
@@ -151,11 +164,6 @@ def _iso(text):
     return None
 
 
-def _age(born, on):
-    b, d = date.fromisoformat(born), date.fromisoformat(on)
-    return d.year - b.year - ((d.month, d.day) < (b.month, b.day))
-
-
 def _key(name):
     from .write_back import _key as key
     return key(name)
@@ -190,14 +198,12 @@ class Sources:
     def playoffs(self, season):
         """{name key: {club: [records]}} of the season's closed playoff games, every club's."""
         if season not in self._playoffs:
+            # A season without playoff results reads empty; a broken record raises (never an empty card section).
+            from .playoff_stats import closed_playoff_results, player_lines
             out = {}
-            try:
-                from .playoff_stats import closed_playoff_results, player_lines
-                for (name, club), records in player_lines(closed_playoff_results(self.root, season, "9999-12-31"),
-                                                          self.root, season).items():
-                    out.setdefault(_key(name), {}).setdefault(club, []).extend(records)
-            except (OSError, KeyError):
-                pass
+            for (name, club), records in player_lines(closed_playoff_results(self.root, season, "9999-12-31"),
+                                                      self.root, season).items():
+                out.setdefault(_key(name), {}).setdefault(club, []).extend(records)
             self._playoffs[season] = out
         return self._playoffs[season]
 
@@ -227,10 +233,7 @@ class Sources:
             return sorted(out, key=lambda h: (h[2], h[1]))
         if self._honors is None:
             from .league_cards import CardContext
-            try:
-                self._honors = CardContext(self.root).honors
-            except (OSError, KeyError, ValueError):
-                self._honors = {}
+            self._honors = CardContext(self.root).honors      # a broken award record raises: no card loses its honors
         from .seasons import season_of_date
         out = []
         for h in self._honors.get(_key(name), []):
@@ -253,15 +256,32 @@ def _rows_in(block):
             if re.match(r"^\| \d{4}-\d{2} \|", line)]
 
 
-def _source_line(old, simulated, added_prior):
-    """The regular-season Source line: the imported part of the card's own line (one with a library link), the
-    2002-03 file when this refresh added that row, then the simulated seasons."""
+def _source_line(old, simulated, prior_note):
+    """The regular-season Source line: the imported part of the card's own line (one with a library link), the 2002-03
+    note (`PRIOR_SOURCE` when the row comes from the league statistics file and the imported part does not already link
+    it, `NO_PRIOR_SOURCE` when the file has no record of him), then the simulated seasons."""
     text = old[len("Source: "):] if old.startswith("Source: ") else ""
-    added_prior = added_prior or PRIOR_SOURCE in text                    # added by an earlier refresh
-    text = text.split(PRIOR_SOURCE)[-1].split("Simulated seasons from closed results")[0]
-    pre = text.split(";")[0].strip().rstrip(".")
-    parts = ([pre + "."] if "](" in pre else []) + ([PRIOR_SOURCE] if added_prior else []) + ([SIMULATED_SOURCE] if simulated else [])
+    text = text.split(PRIOR_SOURCE)[-1].split(NO_PRIOR_SOURCE)[-1].split("Simulated seasons from closed results")[0]
+    pre = text.split(";")[0].strip().rstrip(".").replace(CODES_CLAUSE, "")
+    keep = "](" in pre and not (prior_note == NO_PRIOR_SOURCE and PRIOR_FILE in pre)   # no credit for a dropped row
+    note = prior_note if prior_note and not (prior_note == PRIOR_SOURCE and keep and PRIOR_FILE in pre) else None
+    parts = ([pre + "."] if keep else []) + ([note] if note else []) + ([SIMULATED_SOURCE] if simulated else [])
     return "Source: " + " ".join(parts) if parts else old
+
+
+def prior_rows(src, imported, bbr, source):
+    """(rows, note) of the seasons before 2003-04 for a card with a Basketball-Reference id. The 2002-03 row is the
+    league statistics file's line (`totals_row`, club names): cards written before the dated label fix carried a later
+    season's line under the 2002-03 label (Mihm, Joe Smith, P.J. Brown, Marshall, Harpring, Raja Bell, Lamond Murray;
+    the review of the audit of 2006-06-20). A card line the file has no record of is dropped, unless it is an empty
+    (G 0) record; earlier imported seasons stand."""
+    rows = [r for r in imported if r[0] < PRIOR_SEASON]
+    line = src.prior(bbr)
+    if line:
+        return rows + [totals_row(PRIOR_SEASON, club_names(line.get("team_codes")), line["totals"])], PRIOR_SOURCE
+    kept = [r for r in imported if r[0] == PRIOR_SEASON and r[2] == "0"]
+    dropped = len(kept) < len([r for r in imported if r[0] == PRIOR_SEASON])
+    return rows + kept, (NO_PRIOR_SOURCE if dropped or NO_PRIOR_SOURCE in source else None)
 
 
 def yearly_block(src, player, text, season, through, wade=False):
@@ -274,17 +294,17 @@ def yearly_block(src, player, text, season, through, wade=False):
     source = next((line for line in regular.splitlines() if line.startswith("Source: ")), "")
     key, bbr = _key(player["name"]), player.get("bbr_id") or ("wadedw01" if wade else None)
     rows = [r[:11] + [percent_cell(c) for c in r[11:]] for r in _rows_in(regular) if r[0] < FIRST_SIMULATED]
-    added_prior = False
-    if not rows and not wade and bbr and src.prior(bbr):
-        line = src.prior(bbr)
-        rows.append(totals_row("2002-03", "/".join(line.get("team_codes") or []) or "N/A", line["totals"]))
-        added_prior = True
+    prior_note = None
+    if not wade and bbr:
+        rows, prior_note = prior_rows(src, rows, bbr, source)
     if wade:
         cover = ["No NBA season before 2003-04 (the alternate-history Wade; the historical Wade's statistics are never imported)"]
     elif rows and rows[0][2] not in ("0", "N/A"):
         cover = [f"{rows[0][0]} regular season from the league record; earlier seasons are not imported"]
     elif rows:
         cover = [f"{rows[0][0]}: no appearance in the league record; earlier seasons are not imported"]
+    elif prior_note == NO_PRIOR_SOURCE:
+        cover = ["2002-03: no appearance in the league statistics file; earlier seasons are not imported"]
     else:
         cover = ["No 2002-03 NBA record on this card"]
     simulated = False
@@ -294,7 +314,7 @@ def yearly_block(src, player, text, season, through, wade=False):
         # his season with every club: an earlier season's, or the card's own once its regular season is over
         ended = s < season or through > dates(s, src.root)["regular_season_end"]
         league = src.totals(s).get(bbr) if ended and bbr else None
-        clubs = ", ".join(league.get("team_codes") or []) if league else ""
+        clubs = club_names(league.get("team_codes")) if league else ""
         whole = bool(league) and (not mia or (league["totals"].get("games") or 0) > int(mia[2]))
         simulated = simulated or bool(mia) or whole
         if mia:
@@ -312,7 +332,7 @@ def yearly_block(src, player, text, season, through, wade=False):
             else:
                 cover.append(f"{s}: no Miami appearance through {through}")
             if not mia and not whole:
-                rows.append([s, "MIA", "0"] + ["N/A"] * 11)        # G 0: an empty appearance record from Miami's results
+                rows.append([s, MIAMI, "0"] + ["N/A"] * 11)        # G 0: an empty appearance record from Miami's results
                 simulated = True
         elif mia and whole:
             cover.append(f"{s}: {mia[2]} Miami game(s), and his season with every club ({clubs}) from the league record")
@@ -325,7 +345,7 @@ def yearly_block(src, player, text, season, through, wade=False):
            "by total attempts.", "", f"**Coverage:** {'; '.join(cover)}.", "", _table(rows), ""]
     if details:
         out += [details.group(0), ""]
-    new_source = _source_line(source, simulated, added_prior)
+    new_source = _source_line(source, simulated, prior_note)
     if new_source:
         out += [new_source, ""]
     out += ["## Playoff statistics by year", ""]
@@ -416,12 +436,13 @@ def _header(new, p, through, roster_as_of):
     """Header facts from the register: a dated position correction, the age at assessment, the control line."""
     from .miami_register import positions_on
     from .signing import card_control_line
+    from .valuation import age_on
     if p.get("positions_corrected_from"):
         pos = " / ".join(positions_on(p, through))
         new = re.sub(r"(\*\*Position:\*\* )[^\n]*?( {2})?$", lambda m: m.group(1) + pos + (m.group(2) or ""), new, count=1, flags=re.M)
     opened = _iso((re.search(r"\*\*Opening assessment:\*\* ([^·\n]*)", new) or [None, ""])[1])
     if p.get("date_of_birth") and opened and "**Age at assessment:** N/A" in new:
-        new = new.replace("**Age at assessment:** N/A", f"**Age at assessment:** {_age(p['date_of_birth'], opened)}", 1)
+        new = new.replace("**Age at assessment:** N/A", f"**Age at assessment:** {age_on(p['date_of_birth'], opened)}", 1)
     m = re.search(r"^\*\*Contract/control:\*\* (.*?) \(register, [^)]*\) \[Finance record\]", new, flags=re.M)
     if p.get("control") and m and m.group(1) != p["control"]:
         new = re.sub(r"^\*\*Contract/control:\*\*[^\n]*$", lambda _: card_control_line(p["control"], roster_as_of), new,

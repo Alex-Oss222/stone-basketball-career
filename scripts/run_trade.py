@@ -33,6 +33,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime import consultations, signing              # noqa: E402
 from runtime.gm import FrontOffice                      # noqa: E402
+from runtime.miami_register import required_position    # noqa: E402
 from runtime.season_market import for_date as Market    # noqa: E402  the season's own market (2003 Market in 2003-04)
 from runtime.standing import standing_on                # noqa: E402
 from runtime.trades import TradeDesk, consent_report    # noqa: E402
@@ -251,7 +252,8 @@ def shop(day, root=ROOT):
         if n.outside() or n.status not in ("agreed", "trade_pending"):
             continue
         rights = next((p for p in fo.rights["players"] if p["player"] == rec["player"]), {})
-        row = {"player": rec["player"], "bbr_id": rec["bbr_id"], "position": rec["plan"].get("position") or positions.get(rec["bbr_id"], "SF"),
+        row = {"player": rec["player"], "bbr_id": rec["bbr_id"],
+               "position": rec["plan"].get("position") or required_position(positions.get(rec["bbr_id"]), day, rec["player"]),
                "bird_status": rights.get("bird_status"), "route": rec["agreement"]["route"], "agreed": rec["agreement"]["date"]}
         trade = rec.get("trade")
         if trade:

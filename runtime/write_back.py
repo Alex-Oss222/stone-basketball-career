@@ -38,6 +38,7 @@ import re
 
 from .boxscore import render
 from .career_stats import aggregate, normalize_line
+from .miami_register import RIGHTS_ONLY
 from .rosters import SIMULATED_CLUB
 from .rotations import load_rosters
 from .season_games import PLAYER_DIR, note_meta, read_json, season_base, slate_dir
@@ -1090,19 +1091,17 @@ def team_record(games, scope):
 # Register statuses of players who are no longer Miami's: they leave the not-started pages (completed
 # pages keep them for the games they played).
 REGISTER_GONE = ("signed_elsewhere", "traded", "waived", "released", "renounced", "option_declined", "cut", "voided")
-# Rights Miami holds without a contract (`team_status.RIGHTS_ONLY`): named on a not-started page, never a player row.
-REGISTER_RIGHTS = ("free_agent_rights_held", "unsigned_draft_rights")
 
 
 def register_names(players):
     """The control register's current Miami players under contract, in register order (rights holders excluded)."""
     return [p["name"] for p in players if not any(word in (p.get("status") or "") for word in REGISTER_GONE)
-            and p.get("status") not in REGISTER_RIGHTS]
+            and p.get("status") not in RIGHTS_ONLY]
 
 
 def register_rights(players):
     """[(name, label)] of the register's rights held without a contract, in register order."""
-    return [(p["name"], p["status"].replace("_", " ")) for p in players if p.get("status") in REGISTER_RIGHTS]
+    return [(p["name"], p["status"].replace("_", " ")) for p in players if p.get("status") in RIGHTS_ONLY]
 
 
 def contract_holdings(players, holdings):
@@ -1114,7 +1113,7 @@ def contract_holdings(players, holdings):
     for e in holdings:
         basis = e.get("basis") or ""
         never_signed = basis.startswith("draft rights") and (
-            status.get(e["player"]) in REGISTER_RIGHTS or any(w in status.get(e["player"], "") for w in ("renounced", "rights_released")))
+            status.get(e["player"]) in RIGHTS_ONLY or any(w in status.get(e["player"], "") for w in ("renounced", "rights_released")))
         if e.get("void") or "unsigned" in basis or never_signed:
             continue
         out.setdefault(e["player"], []).append((e["from"], e.get("until")))
@@ -1139,8 +1138,13 @@ def team_page(text, page, lines, games, positions, now, register=None, held=None
     emptied = not n and ended and held is not None   # the period is over and Miami played no game in it
     future = not n and register is not None and not emptied   # no closed Miami game in the period yet
 
+    # A holding counts from the season's own league year (July 1): a previous year's contract that ran into June is not
+    # one (Malik Allen's 2002-03 contract on the 2003-04 season page). `until` is the day he left, as in every holdings
+    # reader.
+    held_from = max(scope["start"], f"{scope['season'][:4]}-07-01") if scope.get("season") else scope["start"]
+
     def in_period(name):
-        return held is None or any(f <= scope["end"] and (u is None or u >= scope["start"]) for f, u in held.get(name, []))
+        return held is None or any(f <= scope["end"] and (u is None or u > held_from) for f, u in held.get(name, []))
     if n:
         status = f"As of {long_date(now)}: {_plural(n, 'closed Miami game')} in this period. Rows cover Miami's closed games only."
         text = re.sub(r"^As of [^\n]*$", lambda _: status, text, count=1, flags=re.M)
@@ -1209,11 +1213,20 @@ def statistics_pages(root=ROOT, season=None):
     births = {p["name"]: p.get("birth_date") for p in reg["players"]}
     for page in sorted(league.rglob("League_Stats.md")):
         outputs[page] = league_page(page.read_text(encoding="utf-8"), page, by_name, now, results, signed, births)
+    outputs.update(team_pages(root, season, now))
+    return outputs
+
+
+def team_pages(root, season, now):
+    """{path: text} for every Team_Stats.md page of the season rebuilt as of `now` (`team_page`): Miami's closed lines,
+    the register's positions on `now` (a dated correction counts from its date, `miami_register.positions_on`), then the
+    positions the played requests carried, the contract holdings and the rights held without a contract."""
+    from .miami_register import positions_on
+    root = Path(root)
     team_lines, games = miami_lines(root, season, now)
     roster = root / season_base(season) / "00_Team/Team/Roster/roster.json"
     players = read_json(roster)["players"] if roster.is_file() else []
-    from .miami_register import positions_on
-    positions = {p["name"]: "/".join(positions_on(p, now)) for p in players}     # a dated correction from its date
+    positions = {p["name"]: "/".join(positions_on(p, now)) for p in players}
     holdings = roster.with_name("holdings.json")
     held = contract_holdings(players, read_json(holdings)["entries"]) if holdings.is_file() else None
     for row in closed_results(root, season, now):
@@ -1221,8 +1234,8 @@ def statistics_pages(root=ROOT, season=None):
             side = row["request"].get("home") if row["request"]["home"].get("team") == MIAMI else row["request"].get("away")
             for p in side.get("players", []):
                 positions.setdefault(p["player_id"], p.get("position", "N/A"))
-    team = root / PLAYER_DIR / "Stats_and_Awards/Team" / season
-    for page in sorted(team.rglob("Team_Stats.md")):
+    outputs = {}
+    for page in sorted((root / PLAYER_DIR / "Stats_and_Awards/Team" / season).rglob("Team_Stats.md")):
         outputs[page] = team_page(page.read_text(encoding="utf-8"), page, team_lines, games, positions, now, register_names(players),
                                   held, register_rights(players))
     return outputs
@@ -1243,21 +1256,7 @@ def closed_team_pages(root=ROOT):
         if not m:
             continue
         from datetime import datetime
-        now = datetime.strptime(m.group(1), "%B %d, %Y").date().isoformat()
-        team_lines, games = miami_lines(root, season, now)
-        roster = root / season_base(season) / "00_Team/Team/Roster/roster.json"
-        players = read_json(roster)["players"] if roster.is_file() else []
-        positions = {p["name"]: "/".join(p["positions"]) for p in players}
-        for row in closed_results(root, season, now):
-            if row["request"]:
-                side = row["request"].get("home") if row["request"]["home"].get("team") == MIAMI else row["request"].get("away")
-                for p in side.get("players", []):
-                    positions.setdefault(p["player_id"], p.get("position", "N/A"))
-        holdings = roster.with_name("holdings.json")
-        held = contract_holdings(players, read_json(holdings)["entries"]) if holdings.is_file() else None
-        for page in sorted(base.rglob("Team_Stats.md")):
-            outputs[page] = team_page(page.read_text(encoding="utf-8"), page, team_lines, games, positions, now,
-                                      register_names(players), held, register_rights(players))
+        outputs.update(team_pages(root, season, datetime.strptime(m.group(1), "%B %d, %Y").date().isoformat()))
     return outputs
 
 

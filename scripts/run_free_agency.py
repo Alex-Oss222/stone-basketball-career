@@ -25,6 +25,7 @@ from runtime.front_office import rookie_offer                # noqa: E402
 from runtime.rookie_contract import layered_errors, layered_terms   # noqa: E402
 from runtime.gm import MAX_ROUNDS, FrontOffice               # noqa: E402
 from runtime.market import PATIENCE_ROUNDS, Market           # noqa: E402
+from runtime.miami_register import required_position        # noqa: E402
 from runtime.negotiation import FOLDER, Negotiation, slug    # noqa: E402
 from runtime.trades import PARTNER_LOCATION, TradeDesk       # noqa: E402
 from runtime.valuation import read                           # noqa: E402
@@ -263,7 +264,7 @@ class Run:
                 continue
             ask = self.market.asking(bbr, day)
             own = self.fo.valuation_of(bbr)
-            position = self.fo._positions().get(bbr, "SF")
+            position = required_position(self.fo._positions().get(bbr), day, r["player"])
             role_cap = self.fo.role_ceiling(position)
             if own is None or ask["first_year"] > own * 1.25 or (role_cap is not None and ask["first_year"] > role_cap * 1.1):
                 continue
@@ -388,7 +389,7 @@ class Run:
         rights = next((p for p in self.fo.rights["players"] if p["player"] == rec["player"]), {})
         if rights.get("bird_status") != "larry_bird":
             return False
-        position = rec["plan"].get("position") or self.fo._positions().get(rec["bbr_id"], "SF")
+        position = rec["plan"].get("position") or required_position(self.fo._positions().get(rec["bbr_id"]), self.fo.on, rec["player"])
         return self.fo.resign_and_trade(rec["bbr_id"], position)
 
     def shop_own(self, n, day):

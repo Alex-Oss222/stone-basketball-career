@@ -9,15 +9,21 @@ already does for a birth date recorded later (`injuries.simulated_ages`). Every 
 - **Position corrections:** `positions_corrected` (the corrected list), `positions_corrected_from` (the first date it is
   in force) and `positions_correction_basis`. Before that date the row's `positions` stand; from it, the correction.
   The season rollover carries the corrected list into the next season's register (`rollover.Rollover.register`).
-- **Missing positions:** a reader that once filled a missing position with "SF" (an arrival's register row, a camp or
-  refill candidate, a free-agent target, a departing player's previous share) asks `required_position`: through
+- **Missing positions:** a writer that once filled a missing position with "SF" (an arrival's register row, a
+  departing player's previous share, a re-signing or sign-and-trade plan) asks `required_position`: through
   POSITION_GUESS_UNTIL it still answers "SF", so every recorded decision replays unchanged; from the day after, a
-  missing position stops the writer with the player's name instead of being guessed (the audit of 2006-06-20).
+  missing position stops the writer with the player's name instead of being guessed (the audit of 2006-06-20). A
+  ranking by positional fit (free-agent targets, refill and camp candidates) asks `ranked_position`, which leaves such
+  a candidate unranked instead; the front office's position table (`gm.FrontOffice._positions`) reads a registry row
+  with no recorded position (`write_back.known_position`) as none from the same day.
 """
 from __future__ import annotations
 
 POSITION_GUESS_UNTIL = "2006-06-20"       # the last career date on which a missing position was filled with "SF"
 GUESSED_POSITION = "SF"
+# Register statuses of rights Miami holds without a contract: on the register, never under contract, available, in a
+# rotation role or a Team-page player row (`team_status.register`, `write_back.team_page`).
+RIGHTS_ONLY = ("free_agent_rights_held", "unsigned_draft_rights")
 
 
 def positions_on(row, day):
@@ -41,6 +47,16 @@ def carried(row, day):
         for key in ("positions_corrected", "positions_corrected_from", "positions_correction_basis"):
             out.pop(key, None)
     return out
+
+
+def ranked_position(value, day):
+    """A candidate's position in a ranking by positional fit (the front office's free-agent targets, refill and camp
+    candidates): `value`; on or before POSITION_GUESS_UNTIL the old "SF" guess (recorded rankings replay as made); later
+    None, and the ranking leaves him out: fit needs a position, and one pool player without a source must not stop a
+    summer or reach a negotiation that `required_position` would stop at signing."""
+    if value:
+        return value
+    return GUESSED_POSITION if day and day <= POSITION_GUESS_UNTIL else None
 
 
 def required_position(value, day, who):

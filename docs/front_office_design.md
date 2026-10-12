@@ -127,6 +127,7 @@ These rules run without anyone's input, and validation checks them every time it
 - **Refill.** Open spots are filled at the minimum, non-guaranteed until January 10, 2004 (`runtime/refill.py`).
   - Candidates are unrestricted free agents available on the date, plus unattached players. An unattached player has no previous NBA club and his only real 2003 club was Miami, so rule 1 leaves him unsigned.
   - The rule ranks candidates by 2002-03 production value times positional fit. A player with no NBA line counts at replacement level.
+  - Positional fit needs a recorded position. Through 2006-06-20 a candidate without one was ranked as an SF, and recorded decisions replay that way. From 2006-06-21 the refill, camp invites and free-agent targets leave him unranked (`miami_register.ranked_position`). A writer that records a position (an arrival, a re-signing or sign-and-trade plan, a departure) stops instead (`required_position`).
   - Equal scores are broken by Wade's requests, because the front office is indifferent between those players.
   - A request for a candidate the rule does not pick is drawn at standing weight times one minus the margin.
   - Each player's answer is an engine draw.

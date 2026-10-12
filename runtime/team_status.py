@@ -13,6 +13,8 @@ import json
 from pathlib import Path
 import re
 
+from .miami_register import RIGHTS_ONLY      # rights Miami holds without a contract
+
 ROOT = Path(__file__).resolve().parents[1]
 FIRST_SEASON = "2003-04"                     # the season whose June 26, 2003 import text the first refresh migrated
 
@@ -75,8 +77,6 @@ def migrate(text, patterns, block):
     return re.sub(r"\n{3,}", "\n\n", text)
 
 
-# Rights Miami holds without a contract: on the register, never under contract, available or in a rotation role.
-RIGHTS_ONLY = ("free_agent_rights_held", "unsigned_draft_rights")
 
 
 def register(root, on, season=None):

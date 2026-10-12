@@ -225,9 +225,9 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-{stats}| {SEASON} | MIA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+{stats}| {SEASON} | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
-Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (MIA rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
+Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (Miami Heat rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
@@ -895,7 +895,7 @@ def arrival_card_for_trade(root, name, identity, day, control, record_rel, bbr, 
     from .rollover import arrival_card
     from .season_evidence import prior_records
     return arrival_card(name, identity, day, control, f"../../../{record_rel}", prior_records(SEASON, root).get(bbr), SEASON,
-                        f"Acquired by trade from {club}")
+                        f"Acquired by trade from {club}", root)
 
 
 def apply_trade(writer, record, day, desk=None):
