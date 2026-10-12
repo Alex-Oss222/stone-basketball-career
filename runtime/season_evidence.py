@@ -7,6 +7,15 @@ career has played a season, its closed simulated results are the evidence for th
 
 The simulated totals are written once when a season closes (`Stats_and_Awards/League/<season>/season_totals.json`)
 and recomputed from closed results when that file is absent.
+
+From the 2005-06 season (APPEARANCE_RULE_FROM, the audit of October 2026) the totals count a game as the league pages
+do: an appearance is `career_stats.normalize_line`'s (an explicit `appeared`, else playing time or any box-score
+contribution, so a stint of a few seconds rounded to 0.0 minutes still counts), and a result row whose player_id is
+itself a registry bbr_id is that player. The 2003-04 and 2004-05 files were written under the earlier rule (rounded
+minutes above zero, the season's named identities only) and stay as the evidence the decisions of their summers and
+seasons read: 6 and 13 players there are a game short of the pages, and Malik Allen's three 2004-05 games are absent.
+No decision read the 2005-06 totals before the correction (they became the evidence when the season closed on
+2006-06-20, and the summer's first reader is the June 28 draft).
 """
 from __future__ import annotations
 
@@ -16,6 +25,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PLAYER = Path("career/Dwyane_Wade")
+APPEARANCE_RULE_FROM = "2005-06"      # normalize_line's appearance and the bbr-named row from this season's totals
 KEYS = {"games": None, "games_started": None, "minutes": "minutes", "points": "pts", "field_goals_made": "fgm",
         "field_goals_attempted": "fga", "three_point_field_goals_made": "tpm", "three_point_field_goals_attempted": "tpa",
         "free_throws_made": "ftm", "free_throws_attempted": "fta", "offensive_rebounds": "orb", "defensive_rebounds": "drb",
@@ -31,23 +41,37 @@ def simulated(season, root=ROOT):
     return (Path(root) / PLAYER / season / "season_close.json").is_file()
 
 
+def _registry_names(root):
+    """{bbr_id: registry name} (a result row named by its bbr_id is that registry player)."""
+    reg = json.loads((Path(root) / PLAYER / "Stats_and_Awards/League/player_registry.json").read_text(encoding="utf-8"))
+    return {p["bbr_id"]: p["name"] for p in (reg["players"] if isinstance(reg, dict) else reg) if p.get("bbr_id")}
+
+
 def compute_totals(season, root=ROOT):
-    """{bbr_id: record} over the season's closed regular-season results."""
+    """{bbr_id: record} over the season's closed regular-season results. From APPEARANCE_RULE_FROM a game counts by
+    `career_stats.normalize_line`'s appearance and a bbr-named row maps to its registry player; earlier seasons keep the
+    rule their written files were made under (rounded minutes above zero, named identities only)."""
+    from .career_stats import normalize_line
     from .seasons import dates
     from .season_awards import identities
     from .write_back import closed_results
     root = Path(root)
     end = dates(season, root)["regular_season_end"]
     ids = identities(root, season)
+    current = season >= APPEARANCE_RULE_FROM
+    by_bbr = _registry_names(root) if current else {}
     sums = defaultdict(lambda: defaultdict(float))
     clubs = defaultdict(list)
     for row in closed_results(root, season, end):
         r = row["result"]
+        weighted = r.get("free_throw_mode") == "weighted"
         for side in ("home", "away"):
             for p in r["player_stats"][side]:
-                if not p.get("minutes", 0) > 0:
+                if not (normalize_line(p, weighted_free_throws=weighted)["appeared"] if current else p.get("minutes", 0) > 0):
                     continue
                 bbr = ids.get(p["player_id"], (None, None, None))[1] or ("wadedw01" if p["player_id"] == "Dwyane Wade" else None)
+                if not bbr and p["player_id"] in by_bbr:
+                    bbr = p["player_id"]                       # a row the engine named by its bbr_id
                 if not bbr:
                     continue
                 t = sums[bbr]
@@ -58,7 +82,7 @@ def compute_totals(season, root=ROOT):
                         t[key] += p.get(src) or 0
                 if not clubs[bbr] or clubs[bbr][-1] != r[side]:
                     clubs[bbr].append(r[side])
-                t["_name"] = p["player_id"]
+                t["_name"] = by_bbr[p["player_id"]] if p["player_id"] == bbr and bbr in by_bbr else p["player_id"]
     out = {}
     for bbr, t in sums.items():
         name = t.pop("_name")

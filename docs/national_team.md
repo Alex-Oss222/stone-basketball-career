@@ -47,7 +47,7 @@ The user's premises, December 31, 2004 on the career clock (`career/Dwyane_Wade/
    - Second rounds that carry over earlier results (the Americas championships) are supported.
    - Knockout slots fill from the tables and from game winners and losers.
 6. **Close.** After the last game (`closed`, `closed_on`, `ranking` and `medal_identities` in the tournament record):
-   - **Final ranking:** medal and classification games first, then second-round and group places.
+   - **Final ranking:** medal and classification games first, then the group rounds, later rounds first. The teams a round leaves to place are ordered across its groups by group place, then record (win share, then point difference), then name, so two fifth-placed first-round teams rank by their records (`national.final_ranking`). The 2005 Americas ranking, written before this rule with Uruguay (0-4) ninth above Venezuela (1-3), was rewritten (October 2026, the audit; places 9 and 10 only, no medal or qualification place changes).
    - **MVP and All-Tournament Team:** Game Score per game times the team's finish (1.0, 0.85, 0.75 for the medallists, 0.6 for the rest), with at least three games.
    - **Medals:** the medal register (below) for every player on the top three teams' locked rosters.
    - **Wade's honors and medal** go to `awards.json`.
@@ -83,7 +83,7 @@ The user's rule (2005 offseason framework, section 6), in `runtime/national_meda
   - The research id matters because a source conflict can split the birth dates. For García, the squad page gives 1980-12-31 and basketball-reference 1981-12-31 (the research conflicts in `library/2005/fiba/fiba_2005_americas_championship.json`). The row his first closed appearance writes carries the second date, so the research id links him.
   - A medal that already has an NBA id keeps its link by that id.
 - **Where medals show.**
-  - The tournament page: the final ranking and each medal team's locked roster, with any player who did not play marked.
+  - The tournament page: the final ranking and each medal team's locked roster, with any player who did not play marked. A played game's row takes its home and away sides from its result (the host plays at home whatever the schedule's order), so each score sits with the team that scored it.
   - The league player card's awards section, for a registry player matched by NBA id or by a dated link. A linked medal is marked as won under his FIBA identity, with the date it reached the card.
   - A followed player's career honors (`runtime/followed_players.py`), on the same terms.
   - Wade's medal stays in `awards.json` exactly as before (`national.record_wade_honors`, id `<edition_id>-<medal>`).

@@ -122,27 +122,57 @@ def close(season=None, root=ROOT, write=True):
     return record
 
 
+# From the feedback the 2005-06 season writes (for 2006-07), a player is matched as the league pages match him
+# (`write_back.closed_lines`) and by the frozen inputs of his own game; the files written before stand as history,
+# because the games of the seasons they applied to read them (each frozen profile carries their `feedback_sha256`).
+FEEDBACK_MATCH_FROM = "2005-06"
+
+
+def frozen_ids(request):
+    """{(side, name key): bbr_id} from a frozen-format request's own inputs (every game from 2004-01-22): the
+    `stat_profile` the engine played each player on."""
+    from .write_back import _key
+    out = {}
+    for side in ("home", "away"):
+        for p in (((request or {}).get("frozen") or {}).get(side) or {}).get("players", []):
+            bbr = (p.get("stat_profile") or {}).get("bbr_id")
+            if bbr:
+                out[(side, _key(p["player_id"]))] = bbr
+    return out
+
+
 def feedback(root=ROOT, season=None, next_season="2004-05", on=None):
     """Real players' capped 20% feedback for the next season (`trajectories.season_feedback`) from every closed
-    regular-season result of the season: each player's box lines against the rates the engine expected for him."""
+    regular-season result of the season: each player's box lines against the rates the engine expected for him.
+    From FEEDBACK_MATCH_FROM a row is matched by its game's frozen inputs, then as `write_back.closed_lines` matches it
+    (the real roster on its club, a player_id that is a registry bbr_id, a name that identifies one player in the world's
+    identity sources, the registry name); earlier seasons keep the matcher their written files were made with."""
     season = season or _active_season(root)
     from .player_stats import SEASON_SOURCES, read_json
     from .trajectories import load_trajectories, season_feedback
-    from .write_back import _key, bbr_lookup, closed_results, game_records, registry
+    from .write_back import _key, bbr_lookup, closed_results, game_records, identity_sources, registry
     root = Path(root)
     lookup = bbr_lookup(root, season)
     by_name = {}
     for p in registry(root)["players"]:
         if p.get("bbr_id"):
             by_name.setdefault(_key(p["name"]), p["bbr_id"])
+    current = season >= FEEDBACK_MATCH_FROM
+    known = {p["bbr_id"] for p in registry(root)["players"] if p.get("bbr_id")} if current else set()
+    unique_names = identity_sources(root)[0] if current else {}
     baselines = read_json(root / SEASON_SOURCES[season]["ratings"])["rate_baselines"]
     trajectories = load_trajectories(root, season)
     lines = {}
     for row in closed_results(root, season, on):
         r = row["result"]
         raw = {(side, p["player_id"]): p for side in ("home", "away") for p in r["player_stats"][side]}
+        frozen = frozen_ids(row["request"]) if current else {}
         for side, pid, bbr, _record in game_records(row, root, season):
-            bbr = bbr or lookup.get((r[side], _key(pid))) or by_name.get(_key(pid))
+            if current:
+                bbr = (bbr or frozen.get((side, _key(pid))) or lookup.get((r[side], _key(pid)))
+                       or (pid if pid in known else None) or unique_names.get(_key(pid)) or by_name.get(_key(pid)))
+            else:
+                bbr = bbr or lookup.get((r[side], _key(pid))) or by_name.get(_key(pid))
             line = raw.get((side, pid))
             if bbr and line and line.get("seconds"):
                 lines.setdefault(bbr, []).append(line)

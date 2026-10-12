@@ -245,6 +245,18 @@ class Rollover:
                         "sources": [f"{self.old}/09_Draft/draft_{self.year}.json"]})
         return out
 
+    def bonus_records(self, entries):
+        """Wade's incentives evaluated on the rollover date (`incentives.bonus_evaluation`: every closed season of the
+        contract, with the dated corrections in force) on his new contract-sheet row; returns the Unlikely bonuses he
+        earned in the season closing, for its finance summary. Classifications and counted salaries are not touched."""
+        from .incentives import bonus_evaluation, earned_unlikely
+        earned = []
+        for e in entries:
+            if not e.get("bbr_id") and e.get("incentives"):
+                e["bonus_evaluation"] = bonus_evaluation(e, self.day, self.root)
+                earned += earned_unlikely(e, self.old, self.day, self.root)
+        return earned
+
     def traded_in(self, key, name, row, event, lg, sched):
         """A contract Miami acquired in the summer by trade: an assignment of the existing agreement, never a new signing.
         It keeps its signed schedule and its original signing date (from the summer market record that dated it, else
@@ -426,6 +438,7 @@ class Rollover:
         # 2. Miami
         ids = self.identities()
         entries = self.contract_entries(ledger)
+        earned = self.bonus_records(entries)
         register = self.register(entries, ids)
         self.team.mkdir(parents=True, exist_ok=True)
         for rel in ("Organization", "Team/Player_Cards/TEMPLATE.md", "Finances/league_cap_history.json", "Finances/README.md",
@@ -461,6 +474,9 @@ class Rollover:
         picks.update(as_of=self.day, picks=[p for p in picks["picks"] if p["year"] > int(self.new[:4])])
         _dump(self.team / "Finances/draft_picks.json", picks)
         finance = _read(self.old_team / "Finances/finance.json")
+        if earned:                                 # the closed season's Team Salary at its end counts them
+            _dump(self.old_team / "Finances/finance.json", dict(finance, earned_unlikely_bonuses=earned))
+        finance.pop("earned_unlikely_bonuses", None)
         finance.update(as_of=self.day, season=self.new, pending_control_items=[], draft_rights=[])
         _dump(self.team / "Finances/finance.json", finance)
         prior = season_records(self.old, self.root)

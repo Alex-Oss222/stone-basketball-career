@@ -94,8 +94,11 @@ def page(e, rec, root=ROOT):
         rows = []
         for g in games:
             r = closed.get(int(g["number"]))
-            home = g.get("home") or g.get("home_slot")
-            away = g.get("away") or g.get("away_slot")
+            if r:                                      # the result's sides: a host plays at home, whatever the schedule's order
+                home, away = r["home"], r["away"]
+            else:
+                home = g.get("home") or g.get("home_slot")
+                away = g.get("away") or g.get("away_slot")
             score = f"{r['home_score']}-{r['away_score']}" if r else ""
             link = ""
             if r:

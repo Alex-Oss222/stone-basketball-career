@@ -1,20 +1,16 @@
-"""The 2004 draft lottery and draft order from the simulated league (the user's decision, October 2026).
+"""The draft lottery and draft order from the simulated league (the user's decision, October 2026).
 
-On the lottery date the 13 clubs that missed the simulated playoffs are seeded by their simulated records (worst
-first); an exact tie in record is ordered by an engine drawing. Picks 1 to 3 are three engine draws, each weighted by
-the lottery combinations of the clubs not yet drawn (tied clubs split their seeds' combinations; a drawing orders
-them and takes any remainder) (`library/2004/league/nba_2004_lottery_rules.json`). Charlotte,
-the expansion club, holds No. 4 in each round and is not in the lottery. The other lottery clubs take picks 5 to 14
-in seed order; the playoff clubs take the rest of the first round by record, worst first (Minnesota's first-round pick
-is forfeited by a pre-career sanction); the second round runs in reverse record of all 29 clubs, Charlotte at No. 33.
-Every chance answer is an engine draw, journaled and never re-rolled. Pick ownership follows
-`library/2004/league/nba_2004_pick_ownership.json`. The result is `09_Draft/draft_order_2004.json`.
-
-Every later draft (R5, October 2026) runs the same way from its own year's files (`library/<year>/league/
+On the lottery date the clubs that missed the simulated playoffs are seeded by their simulated records (worst first);
+an exact tie in record is ordered by an engine drawing. The drawn picks are engine draws, each weighted by the lottery
+combinations of the clubs not yet drawn (tied clubs split their seeds' combinations; a drawing orders them and takes
+any remainder). The other lottery clubs follow in seed order and the playoff clubs take the rest of the first round
+by record, worst first; the second round runs in reverse record of every club. Every chance answer is an engine draw,
+journaled and never re-rolled. Each draft runs from its own year's files (`library/<year>/league/
 nba_<year>_lottery_rules.json` and `nba_<year>_pick_ownership.json`), its season's simulated record and playoff field,
 into `career/Dwyane_Wade/<season>/09_Draft/draft_order_<year>.json`: every non-playoff club enters the lottery unless
-the ownership file fixes an expansion slot, a club the rules file makes ineligible for a pick (`ineligible`:
-{code: [picks]}) is left out of that pick's draw, and forfeited picks are skipped.
+the ownership file fixes an expansion slot (2004: Charlotte at No. 4 in each round, outside the lottery), a club the
+rules file makes ineligible for a pick (`ineligible`: {code: [picks]}) is left out of that pick's draw, and forfeited
+picks are skipped (2004: Minnesota's first-round pick, a pre-career sanction).
 
 From the 2006 draft (SIMULATED_SECONDS_FROM) the order also conveys the second-round picks clubs gave on the previous
 simulated draft night (`draft_<year - 1>.json` `trades`: a club moving up adds its next-year second-rounder for the club
@@ -22,6 +18,11 @@ moving down), after the ownership file (a pick an earlier real trade had already
 Miami's pick ledger; the record lists them under `draft_night_seconds`. An order written before this rule gains them on
 the next offseason day before its draft. The 2005 order, which left the 2005 seconds given on the 2004 draft night with
 their clubs, stands as recorded.
+
+Each record states the rule of its own year (`rule_text`: its lottery field, drawn picks, expansion slots, forfeits and
+files). The earlier code stored this docstring, whose first paragraph described the 2004 draft, in every year's record;
+`repair_rules` rewrote that field of the 2005 and 2006 orders (metadata only: no seed, draw or pick changes). The 2004
+order keeps the text it was written with, which is its own.
 """
 from __future__ import annotations
 
@@ -263,9 +264,97 @@ def build(root=ROOT, year=2004):
                           "owner_club": names.get(owner, owner)})
     seconds = convey_draft_night_seconds(slots, root, year, code, names)      # a pick Miami's ledger moved stays moved
     return {"schema_version": 1, "kind": "draft_order", "draft": f"{year} NBA Draft", "lottery_date": date,
-            "rule": __doc__.split("\n\n", 1)[1].strip(), "lottery_seeds": [{"seed": i + 1, "club": c, "record":
+            "rule": rule_text(root, year, len(seeds), len(clubs)), "lottery_seeds": [{"seed": i + 1, "club": c, "record":
             f"{table[c]['wins']}-{table[c]['losses']}", "combinations": chances[c]} for i, c in enumerate(seeds)],
             "lottery_winners": winners, "picks": slots, **({"draft_night_seconds": seconds} if seconds else {})}
+
+
+WORDS = {1: "one", 2: "two", 3: "three", 4: "four"}
+
+
+def _clubs(names):
+    return ", ".join(names[:-1]) + " and " + names[-1] if len(names) > 1 else names[0]
+
+
+def rule_text(root=ROOT, year=2004, lottery_clubs=None, clubs=None):
+    """The rule a year's order is decided under, from that year's files: its lottery field and drawn picks (the rules
+    file, or the counts `build` used), the expansion slots and forfeits of its ownership file, and the draft-night
+    seconds from SIMULATED_SECONDS_FROM. A written order states it as its `rule`."""
+    import textwrap
+    root, year = Path(root), int(year)
+    y = None if year == 2004 else Year(year, root)
+    rules_path, own_path = (y.rules_path, y.ownership_path) if y else (RULES, OWNERSHIP)
+    rules, own = _read(root / rules_path), _read(root / own_path)
+    season = y.season if y else SEASON
+    n = lottery_clubs or rules.get("lottery_clubs") or len(rules["combinations_by_seed"])
+    total = clubs or len(records(root, y))
+    k = rules["picks_drawn"]
+    exp = own.get("expansion") or {}
+    slot_1, slot_2 = exp.get("round_1_slot"), exp.get("round_2_slot")
+    name = exp.get("name", "Charlotte Bobcats").split()[0] if exp else ""
+    text = (f"On the lottery date the {n} clubs that missed the simulated {season} playoffs are seeded by their simulated "
+            f"records (worst first); an exact tie in record is ordered by an engine drawing. Picks 1 to {k} are "
+            f"{WORDS.get(k, k)} engine "
+            "draws, each weighted by the lottery combinations of the clubs not yet drawn (tied clubs split their seeds' "
+            f"combinations; a drawing orders them and takes any remainder) (`{rules_path.as_posix()}`)")
+    ineligible = rules.get("ineligible") or {}
+    if ineligible:
+        text += "; a club the rules file makes ineligible for a pick is left out of that pick's draw (" + "; ".join(
+            f"{c}: No. " + ", ".join(map(str, picks)) for c, picks in sorted(ineligible.items())) + ")"
+    text += ". "
+    if slot_1:
+        text += (f"{name}, the expansion club, holds No. {slot_1} in the first round"
+                 + (f" and No. {slot_2} in the second" if slot_2 else "") + " and is not in the lottery. ")
+    elif exp:
+        text += f"{name}, the expansion club, enters the lottery like any other non-playoff club; no slot is fixed. "
+    first = k + 1 + (slot_1 == k + 1)
+    last = n + (1 if slot_1 and slot_1 <= n + 1 else 0)
+    forfeit = own.get("forfeited") or {}
+    gone = [f"{c}'s first-round pick" for c in forfeit.get("round_1", [])] + [f"{c}'s second-round pick" for c in forfeit.get("round_2", [])]
+    text += (f"The other lottery clubs take picks {first} to {last} in seed order; the playoff clubs take the rest of the "
+             "first round by record, worst first ("
+             + (f"forfeited and skipped: {_clubs(gone)}" if gone else "no pick is forfeited")
+             + f"); the second round runs in reverse record of all {total} clubs. Every chance answer is an engine draw, "
+             f"journaled and never re-rolled. Pick ownership follows `{own_path.as_posix()}`, and Miami's pick ledger for a "
+             f"pick simulated Miami traded. The result is `09_Draft/draft_order_{year}.json`.")
+    if year < SIMULATED_SECONDS_FROM:
+        text += (f" Second-round picks given on the {year - 1} draft night stay with their clubs (the draft-night seconds "
+                 f"are conveyed from the {SIMULATED_SECONDS_FROM} draft).")
+    else:
+        text += (f" The order also conveys the {year} second-round picks clubs gave on the {year - 1} simulated draft night "
+                 f"(`draft_{year - 1}.json` `trades`: a club moving up adds its next-year second-rounder for the club moving "
+                 "down), after the ownership file and before Miami's pick ledger; the record lists them under "
+                 "`draft_night_seconds`.")
+    return textwrap.fill(text, width=116, break_long_words=False, break_on_hyphens=False)
+
+
+def states_own_rule(rule, year):
+    """Whether a stored rule's opening paragraph names its own year's lottery rules file and record: the 2004 order's
+    does; a later order the earlier code wrote with the 2004 paragraph does not."""
+    head = " ".join((rule or "").split("\n\n")[0].split())
+    return f"nba_{int(year)}_lottery_rules.json" in head and f"draft_order_{int(year)}.json" in head
+
+
+def repair_rules(root=ROOT, years=None):
+    """Rewrite the stated rule of a written order whose opening paragraph is not its own year's (`states_own_rule`) with
+    `rule_text`, its seed count and club count read from the record and its season's standings. Metadata only: the
+    'rule' field is the one value written; every seed, draw, pick and conveyed second is kept byte for byte. Returns
+    the records rewritten."""
+    root = Path(root)
+    changed = []
+    found = sorted(int(p.stem.rsplit("_", 1)[1]) for p in (root / "career/Dwyane_Wade").glob("*/09_Draft/draft_order_*.json"))
+    for year in (years or found):
+        rel = RECORD if int(year) == 2004 else Year(year, root).record
+        path = root / rel
+        if not path.is_file():
+            continue
+        record = _read(path)
+        if states_own_rule(record.get("rule"), year):
+            continue
+        record["rule"] = rule_text(root, year, len(record["lottery_seeds"]))
+        path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        changed.append(rel.as_posix())
+    return changed
 
 
 def _names(root, y):
@@ -285,7 +374,7 @@ def _convey_written(root, y):
     record = _read(path)
     seconds = convey_draft_night_seconds(record["picks"], root, y.year, codes(root, y), _names(root, y))
     if seconds:
-        record["rule"] = __doc__.split("\n\n", 1)[1].strip()
+        record["rule"] = rule_text(root, y.year)
         record["draft_night_seconds"] = record.get("draft_night_seconds", []) + seconds
         path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return seconds

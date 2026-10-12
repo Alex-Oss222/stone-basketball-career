@@ -657,6 +657,8 @@ def validate():
     from runtime.standing import season_close_errors, standing_errors
     errors.extend(standing_errors(ROOT))
     errors.extend(season_close_errors(ROOT))
+    from runtime.incentives import incentive_errors                    # dated corrections of closed incentive evaluations
+    errors.extend(incentive_errors(ROOT))
     from runtime.consultations import consultation_errors
     errors.extend(consultation_errors(ROOT))
     from runtime.keep_picks import request_errors as keep_picks_errors

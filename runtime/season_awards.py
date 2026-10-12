@@ -1,9 +1,38 @@
 """End-of-season NBA awards for the live season, decided on their real announcement dates from closed simulated results.
 
-The calendar, electorates and ballot scoring are researched per season (`library/<year>/league/nba_<season>_season_awards.json`,
-read through `runtime/seasons.py`); no real winner, vote or ballot is read. Each award closes on its announcement date. Its ballots use only closed
-regular-season results (`write_back.closed_results`, through April 14), standings from those results, the 2002-03
-season as the prior-year baseline (Most Improved, Coach of the Year), and the season's head coaches.
+The rule is `RULE`. Each season's `season_awards.json` states it with that season's own calendar file, last
+regular-season day and prior-year baseline (`rule_text`), so a later season's record never carries the 2003-04
+evidence dates; `repair_rules` rewrites only that field, and only of a record whose stated evidence end or baseline
+is not its own (`states_own_rule`: the 2003-04 record keeps the rule its decisions were made under). Metadata: no
+decision, tally, page or award register changes.
+"""
+from __future__ import annotations
+
+from collections import defaultdict
+from datetime import date
+import json
+from pathlib import Path
+import re
+from statistics import mean, pstdev
+import textwrap
+
+ROOT = Path(__file__).resolve().parents[1]
+PLAYER = Path("career/Dwyane_Wade")
+WADE = "Dwyane Wade"
+GROUP = {"PG": "G", "SG": "G", "G": "G", "SF": "F", "PF": "F", "F": "F", "C": "C"}
+LENS = {"mvp": (0.20, 0.50), "roy": (0.0, 0.25), "dpoy": (0.30, 0.60), "smoy": (0.10, 0.30), "mip": (0.10, 0.40),
+        "coy": (0.20, 0.50), "finals_mvp": (0.30, 0.60), "all_nba": (0.20, 0.50), "all_defensive": (0.30, 0.60), "all_rookie": (0.0, 0.25)}
+MIN_GAMES, MIN_ROOKIE_GAMES, MIN_ALL_ROOKIE_GAMES, MIN_PRIOR_GAMES = 55, 41, 30, 25
+DEF_MINUTES, FULL_MINUTES, FULL_GAMES = 24.0, 32.0, 70
+TEAM_NAMES = {1: "First Team", 2: "Second Team", 3: "Third Team"}
+
+# The stated rule (`rule_text` fills the season's calendar file, last regular-season day and prior-year baseline).
+EVIDENCE = ("The calendar, electorates and ballot scoring are researched per season (`{calendar}`, read through "
+            "`runtime/seasons.py`); no real winner, vote or ballot is read. Each award closes on its announcement date. "
+            "Its ballots use only closed regular-season results (`write_back.closed_results`, through {end}), standings "
+            "from those results, the {baseline} as the prior-year baseline (Most Improved, Coach of the Year), and the "
+            "season's head coaches.")
+RULE = """{evidence}
 
 Voters (design choice, documented here and in `docs/player_statistics.md`): every voter in the real electorate files a
 ballot. Voters differ only in how much they weigh two published criteria, spread evenly across a fixed range, so the
@@ -15,8 +44,8 @@ among the eligible candidates; a voter ranks candidates by (1 - t) x first crite
   ROY          production x durability                          club win share             0.00-0.25    first-season player, 41+ games
   DPOY         defensive box stocks per 36 x minutes factor     club defensive rating      0.30-0.60    55+ games, 24+ minutes
   6MOY         production                                       club win share             0.10-0.30    55+ games, more off the bench than started
-  MIP          rise in Game Score per game over 2002-03         Game Score per game        0.10-0.40    55+ games, 25+ games in 2002-03, not a rookie
-  COY          club win share above its 2002-03 expectation      club win share             0.20-0.50    head coach for at least half the season and at its end
+  MIP          rise in Game Score per game over {prev}         Game Score per game        0.10-0.40    55+ games, 25+ games in {prev}, not a rookie
+  COY          club win share above its {prev} expectation      club win share             0.20-0.50    head coach for at least half the season and at its end
   All-NBA      the MVP score, by position (2 G, 2 F, 1 C a team)                           MVP lens     55+ games
   All-Defense  the DPOY score, by position; a coach never votes for his own players         DPOY lens    55+ games, 24+ minutes
   All-Rookie   the ROY score, five a team regardless of position; not his own players       ROY lens     first-season player, 30+ games
@@ -24,31 +53,14 @@ among the eligible candidates; a voter ranks candidates by (1 - t) x first crite
 Production = the mean of the z-scores of Game Score per game and points per game (voters weigh scoring);
 durability = min(1, games / 70); minutes factor = min(1, minutes per game / 32); defensive box stocks = steals + blocks
 + 0.3 x defensive rebounds; club defensive rating = points allowed per 100 opponent possessions (lower is better);
-2002-03 expectation = 0.5 + 0.6 x (2002-03 win share - 0.5). Positions are the registry's primary positions
+{prev} expectation = 0.5 + 0.6 x ({prev} win share - 0.5). Positions are the registry's primary positions
 (PG/SG -> G, SF/PF/F -> F, C -> C).
 
 Ballots score as published (5-3-1, 10-7-5-3-1, or team points 5/3/1 and 2/1). The highest total wins; first-place
 votes break a points tie; a tie that remains names co-winners, as the NBA did (1994-95 and 1999-2000 Rookie of the
 Year). A team spot tied at the cut names both players, as the league did when ballots tied. Every rule applies to
 every player alike; Wade gets no bonus. Decisions are recorded once in `season_awards.json` and never recomputed;
-a Wade honor is added to `awards.json`.
-"""
-from __future__ import annotations
-
-from collections import defaultdict
-import json
-from pathlib import Path
-from statistics import mean, pstdev
-
-ROOT = Path(__file__).resolve().parents[1]
-PLAYER = Path("career/Dwyane_Wade")
-WADE = "Dwyane Wade"
-GROUP = {"PG": "G", "SG": "G", "G": "G", "SF": "F", "PF": "F", "F": "F", "C": "C"}
-LENS = {"mvp": (0.20, 0.50), "roy": (0.0, 0.25), "dpoy": (0.30, 0.60), "smoy": (0.10, 0.30), "mip": (0.10, 0.40),
-        "coy": (0.20, 0.50), "finals_mvp": (0.30, 0.60), "all_nba": (0.20, 0.50), "all_defensive": (0.30, 0.60), "all_rookie": (0.0, 0.25)}
-MIN_GAMES, MIN_ROOKIE_GAMES, MIN_ALL_ROOKIE_GAMES, MIN_PRIOR_GAMES = 55, 41, 30, 25
-DEF_MINUTES, FULL_MINUTES, FULL_GAMES = 24.0, 32.0, 70
-TEAM_NAMES = {1: "First Team", 2: "Second Team", 3: "Third Team"}
+a Wade honor is added to `awards.json`."""
 
 
 def C(root=ROOT, season=None):
@@ -443,12 +455,69 @@ def decide_one(award, rows, root):
                 if not any(p in t for t in teams)][:10])
 
 
+def _day(text):
+    d = date.fromisoformat(text)
+    return f"{d.strftime('%B')} {d.day}, {d.year}"
+
+
+def rule_text(season, root=ROOT):
+    """`RULE` with the season's own calendar file, last regular-season day (every decision's `evidence_through`) and
+    prior-year baseline: the previous season's closed simulated results when the career played it (`prior_rates`,
+    `prior_records`), else the library's real totals and standings. Written into the season's record when it starts,
+    so each record states the evidence it was decided on."""
+    ctx = C(root, season)
+    baseline = (f"simulated {ctx.previous} season (its closed results and the standings from them)" if ctx.simulated_previous
+                else f"real {ctx.previous} season (the library's totals and standings)")
+    evidence = textwrap.fill(EVIDENCE.format(calendar=ctx.calendar.as_posix(), end=_day(ctx.end), baseline=baseline),
+                             width=116, break_long_words=False, break_on_hyphens=False)
+    return RULE.format(evidence=evidence, prev=ctx.previous)
+
+
+def states_own_rule(rule, season, root=ROOT):
+    """Whether a stored rule names the season's own evidence end and prior-year baseline: the month and day after
+    'through' (and the year where it gives one) are the season's last regular-season day, and the Most Improved line
+    measures the rise over the season before. The 2003-04 record ('through April 14', 'over 2002-03') states its own;
+    a later record the earlier code started with that same text does not."""
+    text = " ".join((rule or "").split())
+    ctx = C(root, season)
+    named = re.search(r"closed_results`, through ([A-Z][a-z]+) (\d{1,2})(?:, (\d{4}))?\)", text)
+    if not named or f"Game Score per game over {ctx.previous} " not in text:
+        return False
+    end = date.fromisoformat(ctx.end)
+    month, day, year = named.groups()
+    return (month, int(day)) == (end.strftime("%B"), end.day) and (year is None or int(year) == end.year)
+
+
+def repair_rules(root=ROOT, seasons=None):
+    """Rewrite the stated rule of an existing season-award record whose evidence end or baseline is not its own
+    (`states_own_rule`) with the season's own (`rule_text`). A record started by the earlier code carried the 2003-04
+    text (evidence through April 14, the 2002-03 season as the baseline) whatever its season; that is the defect
+    repaired. A record that already states its own is kept as written (the 2003-04 record). Metadata only: the 'rule'
+    field is the one value written; every decision, tally and winner is kept byte for byte, and no page or award
+    register is touched. Returns the records rewritten."""
+    root = Path(root)
+    found = sorted(path.parent.name for path in (root / PLAYER / "Stats_and_Awards/League").glob("*/season_awards.json"))
+    changed = []
+    for season in (seasons or found):
+        path = root / C(root, season).record
+        if not path.is_file():
+            continue
+        record = _read(path)
+        rule = rule_text(season, root)
+        if record.get("rule") == rule or states_own_rule(record.get("rule"), season, root):
+            continue
+        record["rule"] = rule                                      # the key keeps its place in the record
+        path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        changed.append(C(root, season).record.as_posix())
+    return changed
+
+
 def read_record(root=ROOT):
     path = Path(root) / C(root).record
     if path.is_file():
         return _read(path)
     return {"schema_version": 1, "season": C(root).season, "kind": "season_awards",
-            "rule": __doc__.split("\n\n", 1)[1].strip(), "calendar": C(root).calendar.as_posix(), "decisions": []}
+            "rule": rule_text(C(root).season, root), "calendar": C(root).calendar.as_posix(), "decisions": []}
 
 
 def announced_on(award, root=ROOT):

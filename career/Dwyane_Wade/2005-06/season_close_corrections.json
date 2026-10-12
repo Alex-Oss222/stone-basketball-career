@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "season": "2005-06",
+ "kind": "season_close_correction",
+ "corrected_on": "2006-06-21",
+ "source": "2005-06/season_close.json",
+ "reason": "audit (October 2026): the season close's evaluator did not read a scoring benchmark and closed the clause unrecorded; the closed regular-season results decide it",
+ "incentive_evaluation": [
+  {
+   "id": "achievement",
+   "status": "met",
+   "evidence": "2,260 closed regular-season points in 82 games, 27.56 per game (career_stats, through 2006-06-20)",
+   "superseded": {
+    "status": "unrecorded",
+    "evidence": "benchmark not machine-readable; needs a recorded evaluation"
+   }
+  }
+ ]
+}

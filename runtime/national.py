@@ -107,9 +107,23 @@ def new_record(e):
 
 
 # -- the field ------------------------------------------------------------------------------------------------------
+def _round_depth(groups):
+    """{group: its group round}: 0 for a first-round group, one more than the deepest group a second round carries from."""
+    depth = {}
+    def of(group):
+        if group not in depth:
+            depth[group] = 1 + max((of(c) for c in groups[group].get("carry_from") or [] if c in groups), default=-1)
+        return depth[group]
+    for group in groups:
+        of(group)
+    return depth
+
+
 def final_ranking(e, rec, root=ROOT):
-    """A closed edition's final places, best first: the medal and classification games, then a second group round's
-    table, then the remaining teams by their group place and record (ties of the last places: alphabetical)."""
+    """A closed edition's final places, best first: the medal and classification games, then the group rounds, later
+    rounds first. The teams a round leaves to place are ordered across its groups by their group place, then record
+    (win share, then point difference), then name: two fifth-placed first-round teams rank by their records, whichever
+    group they played in."""
     closed = results(e, rec, root)
     placed = []
     def outcome(stage):
@@ -122,10 +136,11 @@ def final_ranking(e, rec, root=ROOT):
     for stage in ("final", "third_place", "fifth_place", "seventh_place"):
         placed += [t for t in outcome(stage) if t not in placed]
     states, done = group_states(e, rec, closed)
-    for group in reversed(list(rec["groups"])):           # later group rounds first
-        for row in done.get(group) or []:
-            if row["team"] not in placed:
-                placed.append(row["team"])
+    depth = _round_depth(rec["groups"])
+    for level in sorted(set(depth.values()), reverse=True):              # later group rounds first
+        rows = [r for g in rec["groups"] if depth[g] == level for r in done.get(g) or [] if r["team"] not in placed]
+        rows.sort(key=lambda r: (r["position"] or 99, -r["w"] / max(1, r["w"] + r["l"]), r["pa"] - r["pf"], r["team"]))
+        placed += [r["team"] for r in rows if r["team"] not in placed]
     rest = sorted({t for g in rec["games"].values() for t in (g.get("home"), g.get("away")) if t} - set(placed))
     return placed + rest
 
