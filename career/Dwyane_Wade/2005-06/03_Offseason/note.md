@@ -1,6 +1,6 @@
 ---
 type: phase
-status: complete
+status: active
 ---
 
 # Offseason

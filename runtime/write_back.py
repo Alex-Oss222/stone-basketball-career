@@ -884,8 +884,8 @@ def expected_statuses(root=ROOT, season=None):
     complete once the period has passed, active while the clock is inside it, not_started before it. Phase notes close
     with their phase (the audit of June 2006 found eight left open): the summer market, summer league and training camp
     by opening night; the draft's once its draft record is in the folder (`runtime/draft.py` writes the event); and every
-    phase note of an earlier season, closed by the rollover. The 03_Offseason note owns the summer after its season, so
-    it closes with the season."""
+    phase note of an earlier season, closed by the rollover. The 03_Offseason note owns the summer after its season: it
+    is active from the day after Miami's last game (`expected_place`) and closes with the season."""
     season = season or _active_season(root)
     root = Path(root)
     now = clock(root)
@@ -906,27 +906,83 @@ def expected_statuses(root=ROOT, season=None):
     end_year = int(season[:4]) + 1
     if (base / f"09_Draft/draft_{end_year}.json").is_file():
         phases.append(base / "09_Draft/note.md")
-    for earlier in (s for s in live_seasons(root) if s < season):
+    closed = _closed(root, season)
+    for earlier in (s for s in live_seasons(root) if s < season or (s == season and closed)):
         phases += sorted((root / season_base(earlier)).glob("[0-9][0-9]_*/note.md"))
     for note in phases:
         if note.is_file() and re.search(r"^type: phase$", note.read_text(encoding="utf-8"), re.M):
             out[note] = "complete"
+    if not closed and (expected_place(root, season) or ("",))[0] == "03_Offseason":
+        out[base / OFFSEASON_NOTE] = "active"           # from the day after Miami's last game until the rollover
     return out
+
+
+def _closed(root, season):
+    """The rollover closed the season (`current_state.closed`): its phase notes are complete and its place is its last
+    day's, whichever season a caller passes (the suite pins 2003-04 as its live season on the real repository)."""
+    path = Path(root) / season_base(season) / "current_state.json"
+    return path.is_file() and bool(read_json(path).get("closed"))
 
 
 def current_week_note(root=ROOT, season=None):
     """The week note (relative to the season folder) containing the career clock, or None outside the season."""
     season = season or _active_season(root)
-    for note, status in expected_statuses(root, season).items():
-        if status == "active" and note.parent.name.startswith("Week_"):
-            return note.relative_to(Path(root) / season_base(season)).as_posix()
+    base, now = Path(root) / season_base(season), clock(root)
+    for note in sorted((base / "06_Regular_Season").glob("*/Week_*/note.md")):
+        first, last = week_span(note)
+        if first <= now <= last:
+            return note.relative_to(base).as_posix()
     return None
 
 
+OFFSEASON_NOTE = "03_Offseason/note.md"
+
+
+def expected_place(root=ROOT, season=None):
+    """(current_area, current_note) owning the career clock in the live season, or None before opening night (training
+    camp and the preseason set their own); a note of None keeps the recorded one:
+    - from opening night through the regular season: `06_Regular_Season` and the clock's week note;
+    - after the regular season, while Miami plays: `08_Playoffs` and its latest playoff round's note (before the bracket
+      or the round's first game the recorded note stands);
+    - from the day after Miami's last game (eliminated, champion, or out of a bracket that is set): `03_Offseason` and
+      its note, which owns the summer after its season (the June 29 extension day, summer trades) until the rollover;
+    - a season the rollover closed keeps that place.
+    Reads the clock, the schedule and the playoff record with its closed results only. current_note feeds no game input
+    and no decision, only the writers of dated phase-note lines (`signing.phase_note_for`, `extensions._miami_note`)."""
+    season = season or _active_season(root)
+    base = Path(root) / season_base(season)
+    if _closed(root, season):
+        return ("03_Offseason", OFFSEASON_NOTE) if (base / OFFSEASON_NOTE).is_file() else None
+    from .seasons import dates
+    now, gates = clock(root), dates(season, root)
+    if now < gates["opening_night"]:
+        return None
+    if now <= gates["regular_season_end"]:
+        return "06_Regular_Season", current_week_note(root, season)
+    from copy import deepcopy
+    from . import playoffs
+    record = playoffs.read(root, season)
+    if record is None:
+        return "08_Playoffs", None
+    record = playoffs.apply_results(deepcopy(record), root, season)       # the closed results, not the day's stored copy
+    order = [key for key, _, _ in playoffs.ROUNDS]
+    mine = sorted((s for s in record["series"] if playoffs.MIAMI in s["clubs"]), key=lambda s: order.index(s["round"]))
+    if mine:
+        last = mine[-1]
+        over = last["winner"] is not None and (last["winner"] != playoffs.MIAMI or last["round"] == "finals")
+        if not over or now <= last["clinched_on"]:
+            started = [s for s in mine if min(g["date"] for g in s["games"]) <= now] or mine[:1]
+            note = next((rel for rel in (f"08_Playoffs/{playoffs.FOLDERS[s['round']]}/note.md" for s in reversed(started))
+                         if (base / rel).is_file()), None)
+            return "08_Playoffs", note
+    return ("03_Offseason", OFFSEASON_NOTE) if (base / OFFSEASON_NOTE).is_file() else ("08_Playoffs", None)
+
+
 def sync_note_statuses(root=ROOT, season=None, write=True):
-    """Set each period and phase note's status, and current_state's area and current_note, to the clock: from opening
-    night the area is the regular season and the note its week note; after the regular season the playoff area keeps the
-    last week note (the 2003-04 precedent). Returns the changed paths."""
+    """Set each period and phase note's status, and current_state's area and current_note, to the clock
+    (`expected_place`): from opening night the regular season's week note, after it the playoff round note while Miami
+    plays, then the season's offseason note. A closed season keeps the place of its last live day, its offseason note
+    (the rollover leaves the closed state as it was). Returns the changed paths."""
     season = season or _active_season(root)
     import re
     changed = []
@@ -937,16 +993,20 @@ def sync_note_statuses(root=ROOT, season=None, write=True):
             changed.append(note)
             if write:
                 note.write_text(new, encoding="utf-8")
-    current = current_week_note(root, season)
-    state_path = Path(root) / season_base(season) / "current_state.json"
-    if current and state_path.is_file():
+    from .seasons import live_seasons
+    places = {season: expected_place(root, season)}
+    for earlier in (s for s in live_seasons(root) if s < season):
+        if (Path(root) / season_base(earlier) / OFFSEASON_NOTE).is_file():
+            places[earlier] = ("03_Offseason", OFFSEASON_NOTE)
+    for each, place in places.items():
+        state_path = Path(root) / season_base(each) / "current_state.json"
+        if place is None or not state_path.is_file():
+            continue
         state = read_json(state_path)
         before = dict(state)
-        from .seasons import dates
-        if state.get("current_area") in ("04_Training_Camp", "05_Preseason") and clock(root) >= dates(season, root)["opening_night"]:
-            state["current_area"] = "06_Regular_Season"      # opening night: the week notes own the clock
-        if state.get("current_area") == "06_Regular_Season":
-            state["current_note"] = current
+        state["current_area"] = place[0]
+        if place[1]:
+            state["current_note"] = place[1]
         if state != before:
             changed.append(state_path)
             if write:

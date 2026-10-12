@@ -6,7 +6,8 @@
 
 Each day runs the dated systems in order, each idempotent, so a stopped day can simply be run again:
   1. the clock moves to the day and the note statuses, area and current note follow it (`write_back.sync_note_statuses`:
-     from opening night the regular season's week note); the January 7 and 10 guarantee steps run on their dates;
+     from opening night the regular season's week note, after it the playoff round note while Miami plays, then the
+     season's 03_Offseason note until the rollover); the January 7 and 10 guarantee steps run on their dates;
   2. a due fortnightly staff rotation review is written, its close starting battles drawn by the engine, and
      the review completed;
   3. the league's market day (waivers, claims, 10-day contracts) and, on Mondays to the deadline, the trade scan,
@@ -343,10 +344,11 @@ def seed_playoffs(day):
 
 def playoff_day(day):
     """After the regular season: awards, the day's playoff games, then the bracket. The market, trade scan and staff
-    reviews are closed (the rotation in force carries into the playoffs)."""
-    data = state()
-    data["current_area"] = "08_Playoffs"
-    write_state(data)
+    reviews are closed (the rotation in force carries into the playoffs). The area and current note follow the clock
+    first: the playoff round note while Miami plays, the 03_Offseason note from the day after its last game, so the
+    June 29 extension day and the summer's Miami lines go to the summer's note."""
+    from runtime.write_back import sync_note_statuses
+    sync_note_statuses(ROOT)
     extension_day(day)                                  # veteran extensions on June 29 (runtime/extensions.py)
     option_day(day)                                     # veteran options at the end of June, before the summer market
     run("scripts/decide_awards.py", "--write", ok=(0, 1))

@@ -60,6 +60,13 @@ class IdentityTests(unittest.TestCase):
         self.assertEqual(self.role("2005-10-27"), "Starting SG; staff plan 34 minutes")      # the 2005-06 camp
         self.assertEqual(self.role("2003-12-02"), "Starting SG; staff plan 34 minutes")      # a copied snapshot sets nothing
 
+    def test_the_footer_names_the_review_and_the_injured_list(self):
+        from runtime.player_reports import identity_block
+        text = identity_block(self.identity, "2006-06-20")
+        self.assertIn("role from the staff review dated 2006-04-12", text)
+        self.assertNotIn("injured list (placed", text)
+        self.assertIn("availability from Miami's injured list (placed 2004-12-23)", identity_block(self.identity, "2004-12-25"))
+
     def test_without_derived_records_the_snapshot_stands(self):
         self.assertEqual(identity_at(IDENTITY, "2005-11-09")["role"], "Starting SG; staff plan 34 minutes")
 
@@ -73,8 +80,9 @@ class IdentityTests(unittest.TestCase):
 
     def test_availability_reads_the_dated_injured_list(self):
         on_list = identity_at(self.identity, "2004-12-25")["availability"]
-        self.assertTrue(on_list.startswith("Injured list since 2004-12-23: Fractured tibia"), on_list)
-        self.assertIn("since 2004-02-23", identity_at(self.identity, "2004-03-05")["availability"])
+        self.assertEqual(on_list, "Injured list since 2004-12-23: Fractured tibia, fibula or leg (incl. stress fracture)")
+        self.assertEqual(identity_at(self.identity, "2005-01-01")["availability"], on_list)     # no stale games-out count
+        self.assertEqual(identity_at(self.identity, "2004-03-05")["availability"], "Injured list since 2004-02-23: injury")
         self.assertEqual(identity_at(self.identity, "2004-03-06")["availability"], IDENTITY["snapshots"][-1]["availability"])
         self.assertNotIn("Injured", identity_at(self.identity, "2006-06-20")["availability"])
 
@@ -116,9 +124,10 @@ class NoteTests(unittest.TestCase):
         self.assertEqual(front_matter(PLAYER / "2005-06/04_Training_Camp/note.md")["status"], "complete")
         self.assertIn("Dorell Wright (SF) at No. 23", (PLAYER / "2003-04/09_Draft/note.md").read_text(encoding="utf-8"))
         self.assertIn("Uroš Slokar (F) at No. 58", (PLAYER / "2004-05/09_Draft/note.md").read_text(encoding="utf-8"))
-        for season in ("2004-05", "2005-06"):
+        for season in ("2003-04", "2004-05", "2005-06"):        # Miami's last game was 2006-06-04: the summer's note
             state = json.loads((PLAYER / season / "current_state.json").read_text(encoding="utf-8"))
-            self.assertEqual(state["current_note"], "06_Regular_Season/04_April/Week_3/note.md")
+            self.assertEqual((state["current_area"], state["current_note"]), ("03_Offseason", "03_Offseason/note.md"))
+        self.assertEqual(front_matter(PLAYER / "2005-06/03_Offseason/note.md")["status"], "active")
 
     def test_opening_night_moves_the_area_and_the_note_and_closes_the_phases(self):
         from runtime.seasons import path as season_path
@@ -142,6 +151,67 @@ class NoteTests(unittest.TestCase):
             self.assertEqual([front_matter(p)["status"] for p in (week, camp, old, draft)],
                              ["active", "complete", "complete", "not_started"])
             self.assertEqual(sync_note_statuses(root, "2005-06", write=False), [])
+
+
+    def test_after_the_regular_season_the_round_note_then_the_offseason_note(self):
+        from runtime import playoffs
+        from runtime.seasons import path as season_path
+        from runtime.write_back import sync_note_statuses
+        week = "06_Regular_Season/04_April/Week_3/note.md"
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            player = root / "career/Dwyane_Wade"
+            write(root / season_path("2005-06", "schedule"), {"games": [{"date": "2005-11-01"}, {"date": "2006-04-19"}]})
+            write(player / "2005-06" / week, "---\ntype: regular_season_week\nstatus: active\n---\n\n# Week\n")
+            offseason = write(player / "2005-06/03_Offseason/note.md", "---\ntype: phase\nstatus: complete\n---\n\n# Offseason\n")
+            old = write(player / "2004-05/03_Offseason/note.md", "---\ntype: phase\nstatus: active\n---\n\n# Offseason\n")
+            write(player / "2004-05/current_state.json", {"current_date": "2005-10-01", "current_area": "08_Playoffs",
+                                                          "current_note": week, "closed": True})
+            path = player / "2005-06/current_state.json"
+
+            def place(day):
+                state = json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {"current_note": week}
+                write(path, {**state, "current_date": day})
+                sync_note_statuses(root, "2005-06")
+                state = json.loads(path.read_text(encoding="utf-8"))
+                return state["current_area"], state["current_note"]
+
+            self.assertEqual(place("2006-04-19"), ("06_Regular_Season", week))
+            self.assertEqual(place("2006-04-20"), ("08_Playoffs", week))           # no bracket yet: the note stands
+            games = [{"game": n, "date": f"2006-04-{20 + 2 * n}", "home": playoffs.MIAMI, "away": "Detroit Pistons",
+                      "event_id": f"g{n}"} for n in range(1, 5)]
+            series = {"id": "east-1-8", "round": "first_round", "conference": "East", "clubs": [playoffs.MIAMI, "Detroit Pistons"],
+                      "wins": {}, "winner": None, "games": games}
+            write(root / playoffs.record_path("2005-06"), {"season": "2005-06", "series": [series]})
+            write(player / "2005-06/08_Playoffs/First_Round/note.md", playoffs.phase_note(series, "2005-06"))
+            self.assertEqual(place("2006-04-21"), ("08_Playoffs", "08_Playoffs/First_Round/note.md"))
+            for g in games:                                                       # swept: his last game is April 28
+                _, _, result = playoffs.miami_paths(series, g, root, "2005-06")
+                write(result, {"terminated": True, "home": g["home"], "away": g["away"], "final_score": {"home": 90, "away": 99}})
+            self.assertEqual(place("2006-04-28"), ("08_Playoffs", "08_Playoffs/First_Round/note.md"))
+            self.assertEqual(front_matter(offseason)["status"], "complete")
+            self.assertEqual(place("2006-04-29"), ("03_Offseason", "03_Offseason/note.md"))
+            self.assertEqual(front_matter(offseason)["status"], "active")         # the summer's note owns June 29
+            closed = json.loads((player / "2004-05/current_state.json").read_text(encoding="utf-8"))
+            self.assertEqual((closed["current_area"], closed["current_note"]), ("03_Offseason", "03_Offseason/note.md"))
+            self.assertEqual(front_matter(old)["status"], "complete")
+            self.assertEqual(sync_note_statuses(root, "2005-06", write=False), [])
+            # a closed season passed as the live one (the suite pins 2003-04) keeps its place and its closed notes
+            self.assertEqual(sync_note_statuses(root, "2004-05", write=False), [])
+
+
+    def test_the_june_29_extension_line_goes_to_the_summers_note(self):
+        from runtime.extensions import _miami_note
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for rel in ("2005-06/current_state.json", "2005-06/03_Offseason/note.md", "2005-06/06_Regular_Season/04_April/Week_3/note.md"):
+                write(root / "career/Dwyane_Wade" / rel, (PLAYER / rel).read_text(encoding="utf-8"))
+            _miami_note(root, "2005-06", "2006-06-29", "Veteran extension day: no Miami offer.")
+            summer = (root / "career/Dwyane_Wade/2005-06/03_Offseason/note.md").read_text(encoding="utf-8")
+            week = (root / "career/Dwyane_Wade/2005-06/06_Regular_Season/04_April/Week_3/note.md").read_text(encoding="utf-8")
+        self.assertIn("## Events\n- 2005-10-01: Wade's 2005 summer is recorded in `../../2004-05/03_Offseason/`.\n"
+                      "- 2006-06-29: Veteran extension day: no Miami offer.\n", summer)
+        self.assertEqual(week, (PLAYER / "2005-06/06_Regular_Season/04_April/Week_3/note.md").read_text(encoding="utf-8"))
 
 
 class JerseyTests(unittest.TestCase):
@@ -178,8 +248,18 @@ class JerseyTests(unittest.TestCase):
             # a registry id that is not the NBA id reads the NBA id's number
             self.assertEqual(jerseys.number_for("sebastiantelfair", "Miami Heat", ROOT), jerseys.miami_numbers(ROOT)["Sebastian Telfair"])
             self.assertEqual(jerseys.number_for("andreiguodala", "New York Knicks", ROOT), jerseys.number_for("iguodan01", "New York Knicks", ROOT))
-            # held off the roster (out for the season under contract): a number still free at his club
-            self.assertNotEqual(jerseys.number_for("jacobca01", "Phoenix Suns", ROOT), jerseys.number_for("stoudam01", "Phoenix Suns", ROOT))
+            # held off the roster (out for the season under contract): seated after the roster, a number still free there
+            suns = jerseys.club_numbers("Phoenix Suns", "2006-06-20", ROOT)
+            self.assertIn("jacobca01", suns)
+            self.assertEqual(jerseys.number_for("jacobca01", "Phoenix Suns", ROOT), suns["jacobca01"])
+            self.assertNotEqual(suns["jacobca01"], suns["stoudam01"])
+
+    def test_a_lookup_never_changes_a_clubs_numbers(self):
+        with live_season():
+            before = jerseys.club_numbers("Cleveland Cavaliers", "2006-06-20", ROOT)
+            jerseys.number_for("nowitdi01", "Cleveland Cavaliers", ROOT)          # not his club: read, never kept
+            self.assertEqual(jerseys.club_numbers("Cleveland Cavaliers", "2006-06-20", ROOT), before)
+            self.assertNotIn("nowitdi01", before)
 
 
 class FollowedAgeTests(unittest.TestCase):

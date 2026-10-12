@@ -9,7 +9,9 @@
   Another club's numbers are assigned over its effective roster on the date (`league_moves.effective_roster`) in
   tenure order: on the club since the season's opening book first, then each arrival by the date he joined; among
   players there equally long, one whose real number for the season is with this club goes first (the audit of June
-  2006: 38 numbers were shown twice at 24 clubs when every card took its first preference).
+  2006: 38 numbers were shown twice at 24 clubs when every card took its first preference). The players a club holds
+  off its roster (out for the season under contract, `club_truth.holder`) follow, in registry order. A card's lookup
+  (`number_for`) only reads these numbers; they are memoized per process while the roster records are unchanged.
 - A Miami player who was on Miami's register the season before keeps his Miami number from that season before any
   real-club number (numbers carry across seasons, AGENTS.md); the continuing players are seated first.
 - The simulated Wade has no real number: his is set by his own request and, when another player holds it, that
@@ -19,6 +21,7 @@
   from its own on, whose register has no other holder, and is never re-checked after (the audit of June 2006: Caron
   Butler's real 2005-06 Washington #3 had displaced it). His requests and choice are searched from the live season back.
 """
+from functools import lru_cache
 import json
 from pathlib import Path
 
@@ -113,11 +116,39 @@ def _previous_numbers(root, season):
     return miami_numbers(root, prev)
 
 
+def _stamp(root, season):
+    """The modification times of the Miami records the numbers of a season read (every register and jersey folder up
+    to it), so a memoized answer is reused only while they are unchanged."""
+    out = []
+    for s in _seasons_from("2003-04", season):
+        register = Path(root) / register_path(root, s)
+        out.append(register.stat().st_mtime_ns if register.is_file() else None)
+        folder = Path(root) / f"career/Dwyane_Wade/{s}/00_Team/Team/Roster/Wade_Jersey"
+        out += [(f.name, f.stat().st_mtime_ns) for f in sorted(folder.iterdir())] if folder.is_dir() else []
+    return tuple(out)
+
+
+_MEMO = {}
+
+
+def _memo(kind, compute, root, season):
+    """One answer per process for a season's Miami numbers or Wade's number, while the records they read are unchanged
+    (each recursed through every earlier season: a card build asks for them once per Miami player)."""
+    key = (kind, str(Path(root).resolve()), season, _stamp(root, season))
+    if key not in _MEMO:
+        _MEMO[key] = compute(root, season)
+    return _MEMO[key]
+
+
 def wade_number(root=ROOT, season=None):
     """(number or None, the decision that settled it or None): an accepted request, else Wade's recorded choice to wait
     for a number, settled in the first season from the choice's own whose register has no other player holding it
     (first preference) and his in every later season."""
     season = season or _season(root)
+    return _memo("wade", _wade_number, root, season)
+
+
+def _wade_number(root, season):
     number, source = _requested_number(root, season)
     if number:
         return number, source
@@ -180,6 +211,10 @@ def miami_numbers(root=ROOT, season=None):
     """Miami's register on the career date (or `season`'s register): {name: number or None}; Wade only from his
     settled request. Continuing players are seated first with their previous Miami number."""
     season = season or _season(root)
+    return dict(_memo("miami", _miami_numbers, root, season))
+
+
+def _miami_numbers(root, season):
     register = _read(register_path(root, season), root).get("players", [])
     active = _active(register)
     previous = _previous_numbers(root, season)
@@ -222,7 +257,7 @@ def club_numbers(club, on=None, root=ROOT):
         return None
     if not league_active(on):
         return None
-    key = (str(Path(root).resolve()), club, on)
+    key = (str(Path(root).resolve()), club, on, _roster_stamp(root, season))
     if key not in _CLUBS:
         from .club_replacements import read as replacements
         from .league_moves import effective_roster, read as moves
@@ -238,21 +273,57 @@ def club_numbers(club, on=None, root=ROOT):
         roster = [p for p in effective_roster(club, on, season, root) if p.get("bbr_id")]
         order = sorted(range(len(roster)), key=lambda i: (joined.get(roster[i]["bbr_id"], ""),
                                                           not any(r["club"] == club for r in real.get(roster[i]["bbr_id"], [])), i))
-        _CLUBS[key] = assign([(roster[i]["bbr_id"], roster[i]["bbr_id"], club) for i in order], root, season=season)
-    return _CLUBS[key]
+        on_roster = {p["bbr_id"] for p in roster}
+        players = [(roster[i]["bbr_id"], roster[i]["bbr_id"], club) for i in order]
+        players += [(b, b, club) for b in _held_off_roster(club, on, season, on_roster, root)]
+        _CLUBS[key] = assign(players, root, season=season)
+    return dict(_CLUBS[key])
+
+
+def _roster_stamp(root, season):
+    """The modification times of the dated roster records a club's numbers read (league moves, disturbed clubs'
+    replacements, Miami's departures and holdings), so a roster change later in the same process is seen."""
+    from .club_replacements import path_for
+    from .league_moves import ledger_path
+    from .rotations import departures_path, holdings_path
+    paths = (Path(root) / rel for rel in (ledger_path(season), path_for(season), departures_path(season), holdings_path(season)))
+    return tuple(p.stat().st_mtime_ns if p.is_file() else None for p in paths)
+
+
+def _held_off_roster(club, on, season, on_roster, root):
+    """The players the club holds off its roster on the date (out for the season under contract, `club_truth.holder`),
+    in registry order: they take numbers after the roster's players."""
+    from .club_truth import holder
+    from .league_moves import clubs_at_activation, read as moves
+    clubs = dict(clubs_at_activation(season, root))
+    for e in sorted(moves(season, root)["entries"], key=lambda e: e["date"]):
+        if e["date"] <= on:
+            clubs[e["bbr_id"]] = e["to"]
+    held = {b for b, c in clubs.items() if c == club and b and b not in on_roster and holder(b, None, on, root)[0] == club}
+    rank = {b: i for i, b in enumerate(_registry_ids(str(Path(root).resolve()), _mtime(Path(root) / REGISTRY)).values())}
+    return sorted(held, key=lambda b: (rank.get(b, len(rank)), b))
+
+
+def _mtime(path):
+    return path.stat().st_mtime_ns if path.is_file() else None
+
+
+@lru_cache(maxsize=4)
+def _registry_ids(root, mtime):
+    """{registry id: NBA id} from the league registry, read once per registry version."""
+    return {p["registry_id"]: p.get("bbr_id") for p in _read(REGISTRY, root).get("players", [])}
 
 
 def _nba_id(key, root):
     """A league registry id's NBA (Basketball-Reference) id: a later registry entry is keyed by name, not by the NBA id."""
-    ids = {p["registry_id"]: p.get("bbr_id") for p in _read(REGISTRY, root).get("players", [])}
-    return ids.get(key) or key
+    return _registry_ids(str(Path(root).resolve()), _mtime(Path(root) / REGISTRY)).get(key) or key
 
 
 def number_for(bbr, club, root=ROOT, on=None):
     """A league card's number by the player's NBA id (or registry id): Miami's from its register; another club's from
-    its numbers on the date (`club_numbers`; a player the club holds off its roster, out for the season under contract,
-    takes his first number still free there), else, before the symmetric league, his first preference (his real club's
-    number)."""
+    its numbers on the date (`club_numbers`, which seats the players a club holds off its roster after the roster's),
+    else, before the symmetric league, his first preference (his real club's number). Read-only: it never changes the
+    club's numbers."""
     if club == MIAMI:
         # Wade's register entry carries no Basketball-Reference id (alternate history): his card's id is wadedw01.
         register = {p.get("bbr_id") or ("wadedw01" if p["name"] == WADE else None): p["name"]
@@ -262,8 +333,8 @@ def number_for(bbr, club, root=ROOT, on=None):
     if numbers is not None and bbr:
         if bbr not in numbers:
             bbr = _nba_id(bbr, root)
-        if bbr not in numbers:      # held off the roster (out for the season under contract): after the roster's players
-            numbers.update(assign([(bbr, bbr, club)], root, fixed=dict(numbers)))
+        if bbr not in numbers:      # on neither list (no holder on the date): his first number free there, nothing kept
+            return assign([(bbr, bbr, club)], root, fixed=numbers)[bbr]
         return numbers[bbr]
     pref = candidates(bbr, club, root)
     return pref[0] if pref else None

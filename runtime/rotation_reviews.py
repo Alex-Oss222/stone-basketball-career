@@ -78,6 +78,26 @@ def pending_reviews(until, root=ROOT, season=None):
                        for name in ("review.json", "depth_chart.json", "rotation.json"))]
 
 
+def camp_decision_date(root=ROOT, season=None):
+    """The date of the season's camp decision (`Depth_Chart/rotation.json`), or None before it is written."""
+    season = season or _active_season(root)
+    path = depth_dir(root, season) / "rotation.json"
+    return read_json(path)["as_of"] if path.is_file() else None
+
+
+def reviews_listing(name, root=ROOT, season=None):
+    """The season's dated staff reviews that list the player, oldest first: [(rotation, path)], from the records
+    `rotation_in_force` chooses among (`Reviews/<date>/rotation.json`). Each is in force from its date until the next,
+    the season's last until the next season's camp decision (`camp_decision_date`). Read-only; no decision reads it."""
+    season = season or _active_season(root)
+    out = []
+    for path in sorted((depth_dir(root, season) / "Reviews").glob("*/rotation.json")):
+        rotation = read_json(path)
+        if any(p["player_id"] == name for p in rotation.get("players", [])):
+            out.append((rotation, path))
+    return out
+
+
 def rotation_in_force(on, root=ROOT, season=None, require_review=True):
     """The dated rotation and depth chart, without changing the camp baseline."""
     season = season or _active_season(root)

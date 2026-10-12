@@ -66,12 +66,15 @@ def identity_at(identity: dict, as_of: str, season: str | None = None) -> dict:
                   and (not r.get("until") or as_of < r["until"]) and r["team"] == out.get("team")),
                  key=lambda r: r["as_of"], default=None)
     if review:
-        out["role"] = review["role"]
+        out.update(role=review["role"], role_source=review["as_of"])
     stint = next((e for e in identity.get("injured_list", ())
                   if e["placed"] <= as_of and (not e.get("activated") or as_of < e["activated"])), None)
     if stint:
-        out["availability"] = (f"Injured list since {stint['placed']}: "
-                               + "; ".join(x for x in (stint.get("injury"), stint.get("reason")) if x))
+        # The named injury, else the placement reason's kind ("injury", "illness"): the games-out count the ledger
+        # recorded at placement is left out, since the stint can run longer (the injury pause) or shorter.
+        what = stint.get("injury") or (stint.get("reason") or "").split(":")[0].strip()
+        out.update(availability=f"Injured list since {stint['placed']}" + (f": {what}" if what else ""),
+                   availability_source=stint["placed"])
     if "contract_terms" in identity:
         # the season's salary and option status from its contract record (runtime/identity_contract.py)
         from .identity_contract import line
@@ -91,29 +94,34 @@ def attach_status(identity: dict, player: Path) -> dict:
     """A copy of the identity carrying the dated records `identity_at` reads between snapshots (the audit of June 2006
     on the career clock: every page from the 2004-11-25 review on still said "staff plan 34 minutes", and pages dated
     on the injured list said "No current restriction"):
-    - `staff_roles`: each fortnightly staff review (`00_Team/Team/Depth_Chart/Reviews/<date>/rotation.json`) that lists
-      the player, in force from its date until the next season's camp decision (`Depth_Chart/rotation.json`), whose
-      role the camp snapshot records;
-    - `injured_list`: his stints on Miami's dated injured list (`00_Team/Transactions/injured_list.json`).
+    - `staff_roles`: each fortnightly staff review that lists the player (`rotation_reviews.reviews_listing`), in force
+      from its date until the next season's camp decision (`rotation_reviews.camp_decision_date`), whose role the camp
+      snapshot records;
+    - `injured_list`: his stints on Miami's dated injured list (`injured_list_stints`).
     Read-only: it writes no record and changes no snapshot."""
+    from .rotation_reviews import camp_decision_date, reviews_listing
     player = Path(player)
+    root = player.parents[1]
     name = identity.get("display_name") or identity["full_name"]
     aliases = set(identity.get("aliases", [])) | {identity["player_id"], name}
-    seasons = sorted(p for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)
+    seasons = sorted(p.name for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)
                      and (p / "current_state.json").is_file())
     roles, stints = [], []
     for i, season in enumerate(seasons):
-        camp = seasons[i + 1] / "00_Team/Team/Depth_Chart/rotation.json" if i + 1 < len(seasons) else None
-        until = json.loads(camp.read_text(encoding="utf-8"))["as_of"] if camp and camp.is_file() else None
-        for path in sorted((season / "00_Team/Team/Depth_Chart/Reviews").glob("*/rotation.json")):
-            rotation = json.loads(path.read_text(encoding="utf-8"))
-            if any(p["player_id"] == name for p in rotation.get("players", [])):
-                roles.append(dict(as_of=rotation["as_of"], until=until, team=rotation.get("team"),
-                                  role=staff_role(rotation, name), source=path.relative_to(player).as_posix()))
-        ledger = season / "00_Team/Transactions/injured_list.json"
-        if ledger.is_file():
-            stints += [e for e in json.loads(ledger.read_text(encoding="utf-8")).get("entries", []) if e["player"] in aliases]
+        until = camp_decision_date(root, seasons[i + 1]) if i + 1 < len(seasons) else None
+        roles += [dict(as_of=rotation["as_of"], until=until, team=rotation.get("team"), role=staff_role(rotation, name),
+                       source=path.relative_to(player).as_posix()) for rotation, path in reviews_listing(name, root, season)]
+        stints += injured_list_stints(player / season, aliases)
     return {**identity, "staff_roles": roles, "injured_list": stints}
+
+
+def injured_list_stints(season_dir, aliases) -> list[dict]:
+    """The player's stints on a season's Miami injured list (`00_Team/Transactions/injured_list.json`, the ledger
+    `runtime/roster_moves.py` writes), in ledger order; [] without the ledger."""
+    ledger = Path(season_dir) / "00_Team/Transactions/injured_list.json"
+    if not ledger.is_file():
+        return []
+    return [e for e in json.loads(ledger.read_text(encoding="utf-8")).get("entries", []) if e["player"] in aliases]
 
 
 def normalize_line(row: dict, *, weighted_free_throws=False) -> dict:
@@ -333,9 +341,9 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
             record.update(coverage="complete", appearance=f"DNP: injured list since {listed['placed']}")
         elif inactive:
             # The result's absence entry names why he was inactive (an engine draw: "illness or personal", an injury).
-            kind = next((a.get("kind") for a in raw.get("absences", []) or []
-                         if a.get("player_id") in aliases and a.get("side") == inactive[0]), None)
-            record.update(coverage="complete", appearance=f"DNP: inactive ({kind or 'reason not specified'})")
+            absence = next((a.get("kind") for a in raw.get("absences", []) or []
+                            if a.get("player_id") in aliases and a.get("side") == inactive[0]), None)
+            record.update(coverage="complete", appearance=f"DNP: inactive ({absence or 'reason not specified'})")
         # An absent player row is not evidence of either an appearance or a DNP.
         records.append(record)
     return sorted(records, key=lambda r: (r["date"], str(r["note"])))
@@ -344,14 +352,10 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
 def _injured_list_entry(note, aliases, game_date):
     """The dated injured-list entry covering `game_date` for the player, from the season's Miami ledger, or None."""
     season = next((p for p in note.parents if p.parent.name == "Dwyane_Wade" and p.name[:2] in ("19", "20")), None)
-    ledger = season / "00_Team/Transactions/injured_list.json" if season else None
-    if not ledger or not game_date or not ledger.is_file():
+    if not season or not game_date:
         return None
-    import json as _json
-    for e in _json.loads(ledger.read_text(encoding="utf-8")).get("entries", []):
-        if e["player"] in aliases and e["placed"] <= game_date and (e.get("activated") is None or game_date < e["activated"]):
-            return {**e, "club": "Miami Heat"}
-    return None
+    return next(({**e, "club": "Miami Heat"} for e in injured_list_stints(season, aliases)
+                 if e["placed"] <= game_date and (e.get("activated") is None or game_date < e["activated"])), None)
 
 
 def ratio(numerator, denominator):

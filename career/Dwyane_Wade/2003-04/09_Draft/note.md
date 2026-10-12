@@ -4,9 +4,9 @@ status: complete
 through: 2004-06-24
 ---
 
-# 2003 NBA Draft
+# Draft
 
-## Result
+## 2003 NBA Draft
 
 On June 26, 2003, the Miami Heat selected Dwyane Wade with the fifth overall pick in the first round.
 

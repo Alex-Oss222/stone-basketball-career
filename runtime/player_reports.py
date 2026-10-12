@@ -91,7 +91,12 @@ def identity_block(identity, as_of, profile_link=None, full=False, *, style=None
             ["National team", p["national_team"] or "No selection recorded"],
             ["National-team eligibility", p["national_team_eligibility"]], ["Availability", p["availability"]],
             ["Physical measurements recorded", p["physical_profile_as_of"]], ["Professional status effective", p["as_of"]]])
-    text += f"Identity as of {as_of}; status snapshot dated {p['as_of']}. "
+    sources = [f"status snapshot dated {p['as_of']}"]
+    if p.get("role_source"):
+        sources.append(f"role from the staff review dated {p['role_source']}")
+    if p.get("availability_source"):
+        sources.append(f"availability from Miami's injured list (placed {p['availability_source']})")
+    text += f"Identity as of {as_of}; {'; '.join(sources)}. "
     text += ("Illustrative player identity; not a canonical career record.\n\n" if p.get("record_type") == "illustrative"
              else "User-established alternate-history player; historical Wade's biography and results are not this record.\n\n")
     if profile_link:
