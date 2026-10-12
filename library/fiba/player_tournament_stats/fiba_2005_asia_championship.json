@@ -5312,6 +5312,8 @@
    "team": "Qatar",
    "team_code": "QAT",
    "birth_date": "1980-10-09",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 2718); FIBA's 2006 World Championship history page (library/2006/fiba/fiba_2006_world_championship.json) gives 1980-09-10",
    "bbr_id": null,
    "fiba_id": 162159,
    "games": 5,
@@ -6956,7 +6958,9 @@
   "notes": [
    "FIBA's record of this tournament holds only points, free throws made/attempted, personal fouls and appearances per player and game: minutes, field goals, three-pointers, rebounds, assists, steals, blocks and turnovers are zero in every row, i.e. not recorded. They are null here. No other reachable source with complete box totals was found: archive.fiba.com no longer serves the old pages, the Wayback Machine (web.archive.org) is unreachable from this environment, and the asia-basket.com archive shows no per-player tournament table. Appearances may be undercounted for players who scored no points and committed no foul in a game, if FIBA omitted such rows."
   ],
-  "conflicts": [],
+  "conflicts": [
+   "Birth date of Khalid Masoud Al Nasr (FIBA id 162159): FIBA's player record gives 1980-10-09; FIBA's 2006 World Championship history page (library/2006/fiba/fiba_2006_world_championship.json) gives 1980-09-10. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it."
+  ],
   "unresolved": [
    "83 players have no birth date in FIBA's record (birth_date null): Wen Ting Chen Tseng (TPE); Yu Ming Yang (TPE); Chung Chin (TPE); Che Yi Yang (TPE); Hsueh Lin Lee (TPE); Chin Nien Chen (TPE); Kwok Shing Leong (HKG); Chun Hung Leung (HKG); Man Tak Yung (HKG); S. Robinson (IND); X. Riyazuddin (IND); Jagdeep Singh (IND); Talwinider Singh (IND); Shiv Kumar (IND); Mihir Pandey (IND); Sambhaji Kadam Birlyn (IND); Yadwinder Singh (IND); M. Anoop (IND); Sanjay Raj (IND); Murli Krishna (IND); Julius Achmad Faisal (INA); Hantono Riko (INA); Zandi Iman (IRI); Nikkhah Bahram Aidin (IRI); Sohrabnejad Hamad (IRI); Shahsovand Mohamad (IRI); Amini Amir (IRI); Jabershina Saeed (IRI); Naoto Nakamura (JPN); Satoru Ruruta (JPN); Shingo Kajiyama (JPN); Takuya Tawamura (JPN); Al naser Nasser (JOR); Alnajjar Fadel (JOR); Jamal Maayta (JOR); Abdalla Abu Ouora (JOR); Francis Irefiei (JOR); Vyacheslav Rosnovskiy (KAZ); Sergey Vdovin (KAZ); Ivan Nechaev (KAZ); Vyacheslav Pashkevich (KAZ); Ahmad Samater (KSA); Ahmad Eisa Fallata (KSA); Fayez Al Haji (KSA); Khalid Falatah (KSA); Mustafa Al Hwasawi (KSA); Fahad Salah Al Qubaiee (KSA); Abdul  Haleem Al naser (KSA); Jamal Darwish (KSA); Saleh Takroni (KSA); Ibrahim Yahya (KSA); Abdullah Al Kuraish (KSA); Hoon June (KOR); Abdullah Alsarraf (KUW); H.Hasan Saoera (KUW); Fahad Alrobah (KUW); Abdul Aziz Alrabiah (KUW); Abdul Aziz Mohammad (KUW); Yousef Mohammed (KUW); Mohammad Alrashidi (KUW); Ali Jawdat (LBN); Ali Toufic Mohmoud (LBN); Jean Mounir (LBN); Chze Hian Chai (MAS); K. Satyaseelan (MAS); Ban Sin Ool (MAS); Francis L.H. Won (MAS); Choon Siong Chin (MAS); Chen Heong Tan (MAS); Shee Hong Loh (MAS); Jiasong Zhang (CHN); Ziengdong Tay (CHN); Yun Song Zhang (CHN); Yaseen Ismail Musa (QAT); Mohammed Saleem (QAT); Turki Ali Ali (QAT); Saad Abdulrahman Ali (QAT); Hammam Omer Ismail (QAT); Hurmatjon Nuraliyev (UZB); Sergey Kuchin (UZB); Vladimir Istochnikov (UZB); Anton Martinenko (UZB); Ildar Safarov (UZB)"
   ],

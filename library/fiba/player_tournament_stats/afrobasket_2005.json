@@ -3032,6 +3032,8 @@
    "team": "Nigeria",
    "team_code": "NGR",
    "birth_date": "1971-01-05",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 3772); basketball-reference nwosuju01 (library/2006/fiba/fiba_2006_world_championship.json) gives 1971-05-01",
    "bbr_id": null,
    "fiba_id": 118060,
    "games": 8,
@@ -3182,6 +3184,8 @@
    "team": "Senegal",
    "team_code": "SEN",
    "birth_date": "1977-09-03",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 3772); basketball-reference ndongbo01 (library/careers/nba_player_births.json, the league registry) gives 1977-03-09",
    "bbr_id": "ndongbo01",
    "fiba_id": 134269,
    "games": 8,
@@ -4646,7 +4650,10 @@
   "notes": [
    "12 team-games record zero team blocks while other categories are recorded; kept as real zeros (a team can finish a game without a block), not as missing data."
   ],
-  "conflicts": [],
+  "conflicts": [
+   "Birth date of Boniface Ndong (FIBA id 134269): FIBA's player record gives 1977-09-03; basketball-reference ndongbo01 (library/careers/nba_player_births.json, the league registry) gives 1977-03-09. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it.",
+   "Birth date of Julius Nwosu (FIBA id 118060): FIBA's player record gives 1971-01-05; basketball-reference nwosuju01 (library/2006/fiba/fiba_2006_world_championship.json) gives 1971-05-01. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it."
+  ],
   "unresolved": [],
   "minutes_reconciliation": "FIBA rounds each player's minutes to whole minutes, so a team's game total can be 1-2 minutes off 200 (or 225/250 with overtime). Every team's minutes reconcile to 200 a game plus whole overtime periods within rounding."
  }

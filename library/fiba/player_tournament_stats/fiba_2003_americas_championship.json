@@ -2927,6 +2927,8 @@
    "team": "Venezuela",
    "team_code": "VEN",
    "birth_date": "1968-02-04",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 2681); the 2005 FIBA Americas squad page (library/2005/fiba/fiba_2005_americas_championship.json) gives 1968-04-02",
    "bbr_id": null,
    "fiba_id": 141612,
    "games": 8,
@@ -3020,6 +3022,8 @@
    "team": "Venezuela",
    "team_code": "VEN",
    "birth_date": "1980-12-06",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 2681); the 2005 FIBA Americas squad page (library/2005/fiba/fiba_2005_americas_championship.json) gives 1980-06-12",
    "bbr_id": null,
    "fiba_id": 132336,
    "games": 8,
@@ -3940,7 +3944,9 @@
    "8 team-games record zero team blocks while other categories are recorded; kept as real zeros (a team can finish a game without a block), not as missing data."
   ],
   "conflicts": [
-   "FIBA's team statistics endpoint reports a larger totalGamesPlayed for some teams than the games it actually lists (e.g. teams that played in more than one round); its player and points totals agree with the per-game rows. games here = games in the schedule."
+   "FIBA's team statistics endpoint reports a larger totalGamesPlayed for some teams than the games it actually lists (e.g. teams that played in more than one round); its player and points totals agree with the per-game rows. games here = games in the schedule.",
+   "Birth date of Luis Julio (FIBA id 132336): FIBA's player record gives 1980-12-06; the 2005 FIBA Americas squad page (library/2005/fiba/fiba_2005_americas_championship.json) gives 1980-06-12. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it.",
+   "Birth date of Victor Diaz (FIBA id 141612): FIBA's player record gives 1968-02-04; the 2005 FIBA Americas squad page (library/2005/fiba/fiba_2005_americas_championship.json) gives 1968-04-02. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it."
   ],
   "unresolved": [],
   "minutes_reconciliation": "FIBA rounds each player's minutes to whole minutes, so a team's game total can be 1-2 minutes off 200 (or 225/250 with overtime). Every team's minutes reconcile to 200 a game plus whole overtime periods within rounding."

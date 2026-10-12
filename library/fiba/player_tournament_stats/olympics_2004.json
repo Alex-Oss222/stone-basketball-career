@@ -3163,6 +3163,8 @@
    "team": "Puerto Rico",
    "team_code": "PUR",
    "birth_date": "1985-05-23",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 2714); basketball-reference ramospe01 (library/2004/league/nba_2004_prospect_evidence.json, the league registry) gives 1985-05-13",
    "bbr_id": "ramospe01",
    "fiba_id": 141570,
    "games": 4,
@@ -4754,7 +4756,8 @@
    "United States roster is the real-history 2004 Olympic team, including the real Dwyane Wade (protagonist_real_history). The career's Wade is alternate history; his row here is world data only and must never feed the simulated Wade."
   ],
   "conflicts": [
-   "Basketball-Reference's 2004 Olympic totals table (143 rows) agrees with FIBA for 134 of the 143 matched players in every category; the 9 small differences (one or two counts, or an appearance FIBA lists with zero minutes vs. a BBR appearance) are listed in cross_check.differences. FIBA's values are kept. Peter Ramos (Puerto Rico; FIBA: 4 games, 33 minutes, 7 points) is missing from the Basketball-Reference table."
+   "Basketball-Reference's 2004 Olympic totals table (143 rows) agrees with FIBA for 134 of the 143 matched players in every category; the 9 small differences (one or two counts, or an appearance FIBA lists with zero minutes vs. a BBR appearance) are listed in cross_check.differences. FIBA's values are kept. Peter Ramos (Puerto Rico; FIBA: 4 games, 33 minutes, 7 points) is missing from the Basketball-Reference table.",
+   "Birth date of Peter Ramos (FIBA id 141570): FIBA's player record gives 1985-05-23; basketball-reference ramospe01 (library/2004/league/nba_2004_prospect_evidence.json, the league registry) gives 1985-05-13. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it."
   ],
   "unresolved": [],
   "cross_check": {

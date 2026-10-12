@@ -512,6 +512,8 @@
    "team": "Croatia",
    "team_code": "CRO",
    "birth_date": "1980-07-02",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 1836); basketball-reference bagarda01 (library/2003/league/nba_2003_end_of_season.json, the league registry) gives 1980-02-07",
    "bbr_id": null,
    "fiba_id": 121542,
    "games": 4,
@@ -5084,6 +5086,8 @@
    "team": "Turkey",
    "team_code": "TUR",
    "birth_date": "1974-01-07",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 1836); basketball-reference kutluib01 (library/careers/nba_player_births.json, the league registry) gives 1974-07-01",
    "bbr_id": "kutluib01",
    "fiba_id": 107766,
    "games": 4,
@@ -6229,7 +6233,10 @@
   "notes": [
    "7 team-games record zero team blocks while other categories are recorded; kept as real zeros (a team can finish a game without a block), not as missing data."
   ],
-  "conflicts": [],
+  "conflicts": [
+   "Birth date of Ibrahim Kutluay (FIBA id 107766): FIBA's player record gives 1974-01-07; basketball-reference kutluib01 (library/careers/nba_player_births.json, the league registry) gives 1974-07-01. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it.",
+   "Birth date of Dalibor Bagaric (FIBA id 121542): FIBA's player record gives 1980-07-02; basketball-reference bagarda01 (library/2003/league/nba_2003_end_of_season.json, the league registry) gives 1980-02-07. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it."
+  ],
   "unresolved": [],
   "minutes_reconciliation": "FIBA rounds each player's minutes to whole minutes, so a team's game total can be 1-2 minutes off 200 (or 225/250 with overtime). Teams whose totals are off by more than rounding plus whole overtimes: France: 1195 minutes in 6 games (-5 vs 200 a game); Italy: 1406 minutes in 7 games (+6 vs 200 a game); Serbia and Montenegro: 1397 minutes in 7 games (-3 vs 200 a game); Slovenia: 807 minutes in 4 games (+7 vs 200 a game); Spain: 1195 minutes in 6 games (-5 vs 200 a game); Ukraine: 605 minutes in 3 games (+5 vs 200 a game)"
  }

@@ -1707,7 +1707,11 @@
           "number": "14",
           "name": "Sebastián Izaguirre",
           "position": "F",
-          "birth_date": "1985-04-12",
+          "birth_date": {
+            "value": "1985-04-12",
+            "status": "unverified",
+            "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads; the 2005 squad page and FIBA's 2005 player record give 1985-12-04"
+          },
           "club": "Paysandú",
           "status": "sourced",
           "source": "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads",
@@ -2834,6 +2838,15 @@
           "https://en.wikipedia.org/wiki/Dwight_Howard (player article)": "1985-12-08"
         },
         "resolution": "recorded 1985-12-08 (player article agrees with basketball-reference)"
+      },
+      {
+        "item": "2007 FIBA Americas: Sebastián Izaguirre birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/2007_FIBA_Americas_Championship_squads": "1985-04-12",
+          "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship_squads": "1985-12-04",
+          "FIBA getgdapplayerinfobycompetitionid (competition 2720, library/fiba/player_tournament_stats/fiba_2005_americas_championship.json)": "1985-12-04"
+        },
+        "resolution": "unresolved (October 2026 audit (BIRTH-01)); 2007 squad value kept and marked unverified"
       }
     ],
     "unresolved": [

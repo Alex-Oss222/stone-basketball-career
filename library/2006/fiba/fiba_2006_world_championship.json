@@ -5891,8 +5891,9 @@
       "bbr_id": null,
       "field_sources": {
        "birth_date": {
-        "status": "sourced",
-        "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/players"
+        "status": "unverified",
+        "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/players",
+        "note": "The 2005 FIBA Americas squad page (library/2005/fiba/fiba_2005_americas_championship.json) gives 1968-04-02; FIBA's 2002, 2003 and 2005 player records give 1968-02-04. Day/month conflict unresolved."
        },
        "height_cm": {
         "status": "unresolved",
@@ -14724,8 +14725,9 @@
       "bbr_id": null,
       "field_sources": {
        "birth_date": {
-        "status": "sourced",
-        "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/players"
+        "status": "unverified",
+        "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/players",
+        "note": "FIBA's 2005 Asia Championship player record (library/fiba/player_tournament_stats/fiba_2005_asia_championship.json) gives 1980-10-09. Day/month conflict unresolved."
        },
        "height_cm": {
         "status": "unresolved",
@@ -15927,7 +15929,7 @@
        "birth_date": {
         "status": "unverified",
         "source": "https://www.fiba.basketball/en/history/201-fiba-basketball-world-cup/2941/players",
-        "note": "Wikipedia article gives 1974-12-07."
+        "note": "Wikipedia article gives 1974-12-07; basketball-reference kutluib01 (library/careers/nba_player_births.json, the league registry) gives 1974-07-01. Day/month conflict unresolved."
        },
        "height_cm": {
         "status": "sourced",
@@ -21209,7 +21211,8 @@
    "China: Yi Jianlian (FIBA 1987-10-27; reports of 1984) and Wang Zhizhi (FIBA 1979-07-08; NBA/bbr 1977-07-08) age discrepancies.",
    "Julius Nwosu: FIBA/Wikipedia 1971-01-05 vs bbr 1971-05-01. Peter John Ramos: FIBA/Wikipedia 1985-05-23 vs bbr 1985-05-13. bbr value recorded as unverified.",
    "Tiebreak: Wikipedia lists head-to-head points scored as a 4th criterion; the 2004 FIBA rule text uses goal average of all group games instead. Rule text used.",
-   "Turkey #5 is registered by FIBA as \"Ermal Kurtoglu\" (Wikipedia article title: Ermal Kuqo)."
+   "Turkey #5 is registered by FIBA as \"Ermal Kurtoglu\" (Wikipedia article title: Ermal Kuqo).",
+   "Birth dates, day/month conflicts with other library sources (October 2026 audit (BIRTH-01)), each kept and marked unverified: İbrahim Kutluay FIBA 1974-01-07 vs basketball-reference 1974-07-01; Víctor David Díaz FIBA 1968-02-04 vs the 2005 Americas squad page 1968-04-02; Khalid Masoud Al Nasr FIBA history 1980-09-10 vs FIBA's 2005 Asia record 1980-10-09."
   ],
   "unresolved": [
    "Official draw positions/seeding (A1-A6 etc.) from the 15 January 2006 draw: not found (FIBA archive and web.archive.org were not reachable from this environment).",

@@ -122,6 +122,8 @@
    "team": "Bosnia and Herzegovina",
    "team_code": "BIH",
    "birth_date": "1985-09-17",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 2725); basketball-reference teletmi01 (library/careers/nba_player_births.json) gives 1985-09-18",
    "bbr_id": null,
    "fiba_id": 141718,
    "games": 3,
@@ -872,6 +874,8 @@
    "team": "Croatia",
    "team_code": "CRO",
    "birth_date": "1980-07-02",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 2725); basketball-reference bagarda01 (library/2003/league/nba_2003_end_of_season.json, the league registry) gives 1980-02-07",
    "bbr_id": null,
    "fiba_id": 121542,
    "games": 7,
@@ -902,6 +906,8 @@
    "team": "Croatia",
    "team_code": "CRO",
    "birth_date": "1984-12-05",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 2725); basketball-reference ukicro01 (library/2005/league/nba_2005_prospect_evidence.json) gives 1984-05-12",
    "bbr_id": null,
    "fiba_id": 131709,
    "games": 6,
@@ -5267,6 +5273,8 @@
    "team": "Turkey",
    "team_code": "TUR",
    "birth_date": "1974-01-07",
+   "birth_date_status": "unverified",
+   "birth_date_source": "FIBA getgdapplayerinfobycompetitionid (competition 2725); basketball-reference kutluib01 (library/careers/nba_player_births.json, the league registry) gives 1974-07-01",
    "bbr_id": "kutluib01",
    "fiba_id": 107766,
    "games": 2,
@@ -6262,7 +6270,11 @@
    "10 team-games record zero team blocks while other categories are recorded; kept as real zeros (a team can finish a game without a block), not as missing data."
   ],
   "conflicts": [
-   "Spain's minutes include Rudy Fernandez's rows recorded in seconds (the only non-whole-minute rows) and the Spain v Serbia and Montenegro preliminary game (2005-09-16) sums to only 189.7 Spanish player-minutes: some minutes are missing from that game's FIBA rows. Totals kept as recorded."
+   "Spain's minutes include Rudy Fernandez's rows recorded in seconds (the only non-whole-minute rows) and the Spain v Serbia and Montenegro preliminary game (2005-09-16) sums to only 189.7 Spanish player-minutes: some minutes are missing from that game's FIBA rows. Totals kept as recorded.",
+   "Birth date of Roko Leni Ukic (FIBA id 131709): FIBA's player record gives 1984-12-05; basketball-reference ukicro01 (library/2005/league/nba_2005_prospect_evidence.json) gives 1984-05-12. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it.",
+   "Birth date of Ibrahim Kutluay (FIBA id 107766): FIBA's player record gives 1974-01-07; basketball-reference kutluib01 (library/careers/nba_player_births.json, the league registry) gives 1974-07-01. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it.",
+   "Birth date of Dalibor Bagaric (FIBA id 121542): FIBA's player record gives 1980-07-02; basketball-reference bagarda01 (library/2003/league/nba_2003_end_of_season.json, the league registry) gives 1980-02-07. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it.",
+   "Birth date of Mirza Teletovic (FIBA id 141718): FIBA's player record gives 1985-09-17; basketball-reference teletmi01 (library/careers/nba_player_births.json) gives 1985-09-18. Unresolved (October 2026 audit (BIRTH-01)); the FIBA value is kept and marked unverified (birth_date_status), as no source settles it."
   ],
   "unresolved": [],
   "minutes_reconciliation": "FIBA rounds each player's minutes to whole minutes, so a team's game total can be 1-2 minutes off 200 (or 225/250 with overtime). Teams whose totals are off by more than rounding plus whole overtimes: Bulgaria: 628 minutes in 3 games (+28 vs 200 a game); Greece: 1403 minutes in 7 games (+3 vs 200 a game); Israel: 803 minutes in 4 games (+3 vs 200 a game); Spain: 1237.97 minutes in 6 games (+37.97 vs 200 a game)"
