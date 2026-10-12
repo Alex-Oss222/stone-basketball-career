@@ -104,7 +104,6 @@ A trade assigns this contract; it does not create a duplicate signing.
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
 | 2005-01-24 | Miami Heat | Utah Jazz | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
-| 2005-01-31 | Utah Jazz | Houston Rockets | 2004-05-league-trade-2005-01-31-jonesed02-jonesfr01-nachbbo01-robingl01 | [Dated league move](../../2004-05/League/league_moves.json) |
 | 2005-08-05 | Utah Jazz | Miami Heat | 2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
@@ -129,7 +128,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
-- [Dated league move](../../2004-05/League/league_moves.json)
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ### Current control and contract coverage
@@ -283,7 +281,6 @@ A trade assigns this contract; it does not create a duplicate signing.
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
 | 2005-01-24 | Miami Heat | Utah Jazz | 2005-01-24-64ef582bc5 | [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json) |
-| 2005-01-31 | Utah Jazz | Houston Rockets | 2004-05-league-trade-2005-01-31-jonesed02-jonesfr01-nachbbo01-robingl01 | [Dated league move](../../2004-05/League/league_moves.json) |
 | 2005-08-05 | Utah Jazz | Miami Heat | 2005-summer-trade-2005-08-05-jonesed02-telfase01-wrighdo01 | [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json) |
 
 ### Evidence and coverage
@@ -308,7 +305,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Authoritative club contract schedule](../../2005-06/00_Team/Finances/contract_schedules.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2005-01-24-64ef582bc5.json)
-- [Dated league move](../../2004-05/League/league_moves.json)
 - [Simulated summer market (every club)](../../2004-05/10_Free_Agency/free_agency_2005.json)
 
 ## Source records

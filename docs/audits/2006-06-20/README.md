@@ -2,7 +2,9 @@
 
 The user asked, after the 2006 Finals: "make sure peoples stats are updated and ages correct ect check for errors". This folder saves that audit and its unfinished fixes. The run was stopped at the user's request ("create a proper save point and stop") before the fixes were reviewed and merged.
 
-**State of the career:** unchanged. `milestone-1` holds the validated 2006-06-20 checkpoint (`e01d1427ac`, Toronto champion). No fix in this folder is applied, so the engine and every career record are exactly as they were. The clock must not advance past 2006-06-20 until the fixes are merged or deliberately set aside: several of them change what the 2006 summer reads (see "Fixes that act on later dates").
+**Merged (later the same career date):** every group was finished, reviewed and merged onto `milestone-1`, followed by an integration review and a final fix round; ROADMAP item A2 records what landed. The patches below are kept as the record of each group's source changes and are already applied. The rest of this page describes the save point as it was written.
+
+**State of the career at the save point:** unchanged. `milestone-1` holds the validated 2006-06-20 checkpoint (`e01d1427ac`, Toronto champion). No fix in this folder is applied, so the engine and every career record are exactly as they were. The clock must not advance past 2006-06-20 until the fixes are merged or deliberately set aside: several of them change what the 2006 summer reads (see "Fixes that act on later dates").
 
 ## What was checked and is correct
 
