@@ -1,20 +1,24 @@
 """Final audit fix 2 (the 2006-06-20 integration review, summer role): R1, a Miami draft pick without an NBA id through
-the rollover and the draft-rights records.
+the rollover and the draft-rights records; R4, the driver stops on the rollover day when the next season cannot open.
 
 R1: 21 of the 2006 class's 88 prospects have no NBA id, clustered around Miami's No. 58 pick. The rollover keyed every
 entry by `bbr_id or WADE_ID`, so such a pick became a second "Dwyane Wade" row and was lost (no holding, no card, the
 draft-rights check refusing "Dwyane Wade"). He is keyed by his name now (`rollover.entry_key`), never written with a
 name as his bbr_id. The stand-in pick is Curtis Stinson, the scratch draft's modal choice at No. 58, written exactly as
 `runtime/draft.py` writes a pick (bbr_id None, position "G")."""
+import contextlib
+import io
 import json
 from pathlib import Path
 import shutil
 import tempfile
 import unittest
+from unittest import mock
 
-from runtime import draft_rights
+from runtime import draft_rights, rollover as R
 from runtime.free_agency_2004 import record_for
 from runtime.rollover import Rollover, WADE_ID, entry_key
+import scripts.advance as A
 from tests import live_season
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -176,6 +180,77 @@ class DraftNightTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp, draft.year_context(2006, ROOT):
             _put(Path(tmp) / draft.RECORD, {"picks": [PICK, OTHER]})
             self.assertEqual(draft.drafted_clubs(tmp), {})        # the market covers picks with an NBA id only
+
+
+class RolloverDayTests(unittest.TestCase):
+    """R4: `scripts/advance.rollover_day` waits (False) only while the summer market runs or before the rollover's date;
+    from that date, with the market's record written, every blocker left stops the run."""
+
+    class Fake:
+        def __init__(self, record, blockers):
+            self.record, self._blockers = record, blockers
+            self.old, self.new, self.day = "2005-06", "2006-07", "2006-10-01"
+
+        def blockers(self, day):
+            return list(self._blockers) + ([f"the rollover is dated {self.day}; the clock is {day}"] if day < self.day else [])
+
+    DATA = ["2006-07 data missing: library/2006/league/nba_2006_07_calendar.json",
+            "2006-07 data missing: runtime/era.py SEASON_RULES row for 2006-07"]
+
+    def call(self, day, record, blockers):
+        with mock.patch.object(R, "Rollover", lambda root: self.Fake(record, blockers)), \
+                mock.patch.object(A, "run", return_value="rolled over") as run, \
+                contextlib.redirect_stdout(io.StringIO()):
+            return A.rollover_day(day), run
+
+    def test_the_summer_waits_while_the_market_runs_or_before_the_date(self):
+        open_market = ["the summer market has not closed (career/Dwyane_Wade/2005-06/10_Free_Agency/free_agency_2006.json)"]
+        self.assertFalse(self.call("2006-10-05", None, open_market + self.DATA)[0])
+        self.assertFalse(self.call("2006-09-30", {"events": []}, self.DATA)[0])
+
+    def test_the_rollover_day_stops_with_every_blocker(self):
+        with self.assertRaises(A.Stop) as stop:
+            self.call("2006-10-01", {"events": []}, self.DATA)
+        self.assertIn("rollover is due on 2006-10-01", str(stop.exception))
+        for b in self.DATA:
+            self.assertIn(b, str(stop.exception))
+        with self.assertRaises(A.Stop):
+            self.call("2006-10-12", {"events": []}, self.DATA)      # a later day stops the same way
+
+    def test_a_clear_rollover_day_rolls_over(self):
+        done, run = self.call("2006-10-01", {"events": []}, [])
+        self.assertTrue(done)
+        run.assert_called_once_with("scripts/rollover.py", "--write", show=False)
+
+    def test_the_repository_rollover_with_a_stand_in_record(self):
+        """The real blockers of the repository's next rollover, once a stand-in market record exists: on its date the
+        driver stops and names each of them (the next season's library data among them while it is missing)."""
+        from runtime.extensions import ExtensionError
+        with live_season():
+            ro = Rollover(ROOT)
+            if ro.record is not None:
+                self.skipTest("the next rollover's market record exists: no stand-in is needed")
+            stand_in = {"events": [], "clubs": {MIAMI: []}, "to": f"{ro.year}-09-30", "unsigned_pool": []}
+            ro.record = stand_in
+            try:
+                expected = ro.blockers(ro.day)
+            except ExtensionError as e:                          # only an extension is left: the same stop
+                expected = [str(e)]
+        if not expected:
+            self.skipTest("the next rollover has no blocker left: the driver would run it")
+        real_init = Rollover.__init__
+
+        def init(this, root=ROOT):
+            real_init(this, root)
+            this.record = stand_in
+        with live_season(), mock.patch.object(Rollover, "__init__", init), mock.patch.object(A, "run") as run, \
+                contextlib.redirect_stdout(io.StringIO()):
+            self.assertFalse(A.rollover_day(f"{ro.year}-09-30"))     # the day before: still the summer
+            with self.assertRaises(A.Stop) as stop:
+                A.rollover_day(ro.day)
+            run.assert_not_called()
+        for b in expected:
+            self.assertIn(b, str(stop.exception))
 
 
 if __name__ == "__main__":

@@ -53,7 +53,8 @@ A day is never decided late or ahead of the clock. `extensions.run` refuses (`Ex
 The rollover out of a league year waits for every extension of it to be settled (`extensions.rollover_blockers`). While
 other gates still hold the rollover back the extension items are listed with them; once the rollover is due they are
 raised (`Rollover.blockers`), so a missed or unresolved extension stops the driver visibly instead of holding the season
-in the summer.
+in the summer. From the rollover's date with the summer market's record written, any other gate left (the next season's
+library data) stops the driver the same way, every item listed with the extensions (`scripts/advance.rollover_day`).
 
 ## Eligibility
 

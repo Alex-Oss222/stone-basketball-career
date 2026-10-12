@@ -22,7 +22,8 @@ Before opening night a day is training camp and the preseason (`scripts/run_camp
 its draws by the engine, its games played). After the regular season a day is: season awards announced that morning, the day's playoff games built
 (`scripts/playoff_day.py`, Miami's one at a time) and played, then the bracket brought up to date; the market,
 trade scan and staff reviews are closed. The day the summer market's record exists and the rollover is dated, the
-next season becomes live (`scripts/rollover.py`), and its own calendar (`runtime/seasons.py`) routes every later day.
+next season becomes live (`scripts/rollover.py`), and its own calendar (`runtime/seasons.py`) routes every later day;
+anything still holding the rollover back on that day (the next season's library data) stops the run, listed.
 
 Every chance answer is an engine draw; nothing here chooses an outcome. Each day writes results back lightly (notes,
 injuries, registry, team records). Every Sunday the full write-back, page rebuild and repository validation run;
@@ -372,14 +373,21 @@ def playoff_day(day):
 
 
 def rollover_day(day):
-    """The day the summer market's record exists and the rollover is dated: the next season becomes live."""
+    """The day the summer market's record exists and the rollover is dated: the next season becomes live. Only a summer
+    still running (no market record yet) or a day before the rollover's date waits (False); from that date, with the
+    record written, any blocker left (the next season's library data, an extension, an unclosed season) stops the run
+    with every one listed, instead of running summer days past the rollover without a word."""
     from runtime.extensions import ExtensionError
     from runtime.rollover import Rollover
+    ro = Rollover(ROOT)
     try:
-        if Rollover(ROOT).blockers(day):
-            return False
+        blockers = ro.blockers(day)
     except ExtensionError as e:                          # a missed or unresolved extension day blocks the rollover
         raise Stop(str(e))
+    if blockers and (ro.record is None or day < ro.day):
+        return False
+    if blockers:
+        raise Stop(f"the {ro.old} to {ro.new} rollover is due on {ro.day} but: " + "; ".join(blockers))
     say("    " + run("scripts/rollover.py", "--write", show=False).splitlines()[-1][:200])
     return True
 
