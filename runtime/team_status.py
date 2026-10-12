@@ -81,7 +81,8 @@ def migrate(text, patterns, block):
 
 def register(root, on, season=None):
     """Miami's current register on the date: [(roster entry, availability, role)]. A rights holder without a contract
-    (RIGHTS_ONLY) is labelled as such and has no role; positions are the register's on the date
+    (RIGHTS_ONLY) is labelled as such and has no role, and so, from July 1, is a player whose contract ended on June 30
+    (`ended`), whatever the injured list still shows; positions are the register's on the date
     (`miami_register.positions_on`)."""
     from .miami_cards import injured_on, role_in
     from .miami_register import positions_on
@@ -92,11 +93,15 @@ def register(root, on, season=None):
         rotation, _depth = rotation_in_force(on, root, season, require_review=False)
     except (OSError, ValueError, KeyError):
         rotation = {}
+    over = ended(root, on, season)
     out = []
     for p in roster["players"]:
         if any(w in (p.get("status") or "") for w in GONE):
             continue
         p = dict(p, positions=positions_on(p, on))
+        if p["name"] in over:
+            out.append((p, f"Contract ended June 30, {int(season[:4]) + 1}", "N/A"))
+            continue
         hurt = injured_on(root, p["name"], on, season)
         if hurt:
             kind = "injured" if hurt["reason"].startswith("injury") else "inactive reserve"
@@ -112,32 +117,125 @@ def register(root, on, season=None):
     return out
 
 
-def expiring(root, on, season=None):
-    """{player: label} for the register's contracts that end on June 30 of the season, from the day after the regular
-    season (`seasons.dates`) through June 30: a contract with no salary after the season in the contract sheet
-    (`Finances/contract_schedules.json`). A rookie-scale contract ending is labelled with the club's qualifying-offer
-    decision, which makes him a restricted free agent if tendered. The register's `status` is never changed (the front
-    office reads it); this is a label on the desk only."""
-    from .seasons import dates, next_season
-    season = season or _season(root)
-    end_year = int(season[:4]) + 1
-    if not (dates(season, root)["regular_season_end"] < on <= f"{end_year}-06-30"):
-        return {}
+def _ending(root, on, season):
+    """The contract-sheet rows of the register's contracts that end on June 30 of the season, from the day after the
+    regular season (`seasons.dates`): a contract with no salary after the season in `Finances/contract_schedules.json`.
+    In season, and without a contract sheet, there are none."""
+    from .seasons import dates
+    if on <= dates(season, root)["regular_season_end"]:
+        return []
     path = Path(root) / team_dir(season) / "Finances/contract_schedules.json"
     if not path.is_file():
-        return {}
-    later = lambda s: s > season
-    out = {}
+        return []
+    out = []
     for c in _read(path)["players"]:
         if any(w in (c.get("status") or "") for w in GONE) or "unsigned" in (c.get("status") or ""):
             continue
         sched = c.get("schedule") or {}
-        if not sched.get(season) or any(v for s, v in sched.items() if later(s)):
+        if not sched.get(season) or any(v for s, v in sched.items() if s > season):
             continue
-        label = f"expiring June 30, {end_year}"
-        if c.get("status") == "under_rookie_contract":
-            label += (f"; rookie scale: Miami's qualifying-offer decision is due by June 30, {end_year} (tendered, he is a "
-                      f"restricted free agent for {next_season(season)})")
+        out.append(c)
+    return out
+
+
+def ended(root, on, season=None):
+    """Names whose contract ended on June 30 of the season, from July 1 until the rollover makes the next season live
+    (the last date this season's desk is shown): no longer under contract, so neither counted nor listed as injured."""
+    season = season or _season(root)
+    return set() if on <= f"{int(season[:4]) + 1}-06-30" else {c["player"] for c in _ending(root, on, season)}
+
+
+ROUTES = {"bird": "Bird rights", "early_bird": "Early Bird rights", "non_bird": "Non-Bird rights",
+          "mid_level": "mid-level exception", "cap_room": "cap room", "minimum": "minimum"}
+
+
+def _terms(e):
+    years = e.get("years")
+    return (f"${e['salary']:,}" + (f" x {years} season{'s' if years != 1 else ''}" if years else "")
+            + (f", {ROUTES.get(e['route'], e['route'].replace('_', ' '))}" if e.get("route") else ""))
+
+
+SUMMER = {
+    "qualifying_offer": lambda e: f"{e['club']} tendered a ${e['amount']:,} qualifying offer on {e['date']} (restricted free agent)",
+    "qualifying_offer_accepted": lambda e: f"accepted {e['club']}'s ${e['salary']:,} qualifying offer on {e['date']} (one season)",
+    "offer_sheet": lambda e: f"signed an offer sheet with {e['club']} on {e['date']} ({_terms(e)})",
+    "offer_sheet_matched": lambda e: f"{e['club']} matched it",
+    "offer_sheet_not_matched": lambda e: f"{e['club']} did not match; he joined {e['to']}",
+    "re_sign": lambda e: f"re-signed with {e['club']} on {e['date']} ({_terms(e)})",
+    "signing": lambda e: f"signed with {e['club']} on {e['date']} ({_terms(e)})",
+    "camp_signing": lambda e: f"signed with {e['club']} at the {e['date']} roster fill ({_terms(e)})",
+    "renounce": lambda e: f"{e['club']} renounced his rights on {e['date']}"
+                          + (" and withdrew its qualifying offer" if e.get("qualifying_offer_withdrawn") else ""),
+    "trade": lambda e: f"traded to {e['club']} on {e['date']}",
+}
+
+
+def summer_outcomes(root, season, on):
+    """{bbr_id and name: the summer's outcome} from the closed market record that opened the next season
+    (`free_agency_2004.record_for`): each of the player's market events dated on or before `on`, in order, then where the
+    close left him (the unsigned pool, out of the league). None until that record exists and `on` has reached its close:
+    the market writes it once, on its September 30 close, and a page never replays the market."""
+    from .free_agency_2004 import record_for
+    from .seasons import next_season
+    path = Path(root) / record_for(next_season(season))
+    if not path.is_file():
+        return None
+    record = _read(path)
+    if on < record["to"]:
+        return None
+    out = {}
+
+    def add(row, text):
+        for key in {row.get("bbr_id"), row.get("player")} - {None}:
+            out.setdefault(key, []).append(text)
+    for e in record["events"]:
+        if e["date"] <= on:
+            add(e, SUMMER.get(e["kind"], lambda e: f"{e['kind'].replace('_', ' ')} on {e['date']}")(e))
+    for p in record.get("unsigned_pool") or []:
+        add(p, f"unsigned when the market closed on {record['to']}; "
+               + (f"{p['rights']} holds his rights" if p.get("rights") else "no club holds his rights"))
+    for p in record.get("left_the_league") or []:
+        add(p, f"left the league ({p['basis']})")
+    return {k: "; ".join(v) for k, v in out.items()}
+
+
+def expiring(root, on, season=None):
+    """{player: label} for the register's contracts that end on June 30 of the season (`_ending`), from the day after the
+    regular season. Through June 30 the label reads "expiring"; a rookie-scale contract ending is labelled with the club's
+    qualifying-offer decision, which makes him a restricted free agent if tendered. From July 1 until the rollover the
+    contract has ended (the final audit, R3): "contract ended June 30; free agent", then the summer's outcome from the
+    closed market record (`summer_outcomes`: re-signed, qualifying offer, offer sheet matched, signed elsewhere, unsigned)
+    once the market has closed, before that a line saying it is recorded at the close. The register's `status` is never
+    changed (the front office reads it); this is a label on the desk only."""
+    from .seasons import next_season
+    season = season or _season(root)
+    end_year = int(season[:4]) + 1
+    close = f"{end_year}-06-30"
+    rows = _ending(root, on, season)
+    if not rows:
+        return {}
+    if on > close:
+        outcomes = summer_outcomes(root, season, on)
+        reg = Path(root) / team_dir(season) / "Team/Roster/roster.json"
+        bbr = {p["name"]: p.get("bbr_id") for p in (_read(reg)["players"] if reg.is_file() else [])}
+    out = {}
+    for c in rows:
+        rookie = c.get("status") == "under_rookie_contract"
+        if on <= close:
+            label = f"expiring June 30, {end_year}"
+            if rookie:
+                label += (f"; rookie scale: Miami's qualifying-offer decision is due by June 30, {end_year} (tendered, he is a "
+                          f"restricted free agent for {next_season(season)})")
+        elif outcomes is None:
+            label = (f"contract ended June 30, {end_year}; free agent; "
+                     + ("rookie scale: Miami's June 30 qualifying-offer decision and his summer outcome are" if rookie
+                        else "his summer outcome is") + f" recorded when the summer market closes ({end_year}-09-30)")
+        else:
+            told = (outcomes.get(c.get("bbr_id") or bbr.get(c["player"]) or c["player"]) or outcomes.get(c["player"])
+                    or "no summer market event recorded")
+            if rookie and "qualifying offer" not in told:
+                told = "rookie scale: Miami made no qualifying offer (unrestricted); " + told
+            label = f"contract ended June 30, {end_year}; free agent; {told}"
         out[c["player"]] = label
     return out
 
@@ -166,10 +264,12 @@ def _table(headers, rows):
                      + ["| " + " | ".join(r) + " |" for r in rows])
 
 
-def blocks(root, on):
+def blocks(root, on, season=None):
+    """{page: generated block} on the date, for the live season or, to regenerate a closed season's frozen blocks once,
+    the season named."""
     from .seasons import dates, start_year
     root = Path(root)
-    season = _season(root)
+    season = season or _season(root)
     TEAM, STANDINGS = team_dir(season), standings_page(season)
     LEAGUE_DIR = STANDINGS.parent
     gates = dates(season, root)
@@ -180,11 +280,13 @@ def blocks(root, on):
     place = east.index("Miami Heat") + 1 if "Miami Heat" in east else None
     ordinal = lambda n: f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
     record = f"{mia['wins']}-{mia['losses']}" + (f", {ordinal(place)} in the East" if place else "")
-    signed = [r for r in reg if r[0].get("status") not in RIGHTS_ONLY]
+    over = ended(root, on, season)
+    signed = [r for r in reg if r[0].get("status") not in RIGHTS_ONLY and r[0]["name"] not in over]
     listed = [r for r in signed if r[1].startswith("Injured list")]
     ending = expiring(root, on, season)
-    ends = (f" {len(ending)} of the contracts end on June 30, {int(season[:4]) + 1} (labelled on the register)."
-            if ending else "")
+    end = int(season[:4]) + 1
+    ends = (f" {len(over)} contracts ended on June 30, {end}; they are not counted (labelled on the register)." if over
+            else f" {len(ending)} of the contracts end on June 30, {end} (labelled on the register)." if ending else "")
     standings_link = lambda frm: Path("../" * len(frm.parent.parts)).joinpath(STANDINGS).as_posix()
     team_readme = TEAM / "README.md"
     out = {}
@@ -198,6 +300,7 @@ def blocks(root, on):
         f"availability; expired, released and voided contracts stay on it as history. Rights held without a contract are "
         f"not counted.")
     rows = [[f"[{p['name']}]({p['player_card']})", "/".join(p.get("positions") or []),
+             ending[p["name"]] if p["name"] in over else
              p["status"].replace("_", " ") + (f", {ending[p['name']]}" if p["name"] in ending else ""), a, role]
             for p, a, role in reg]
     out[TEAM / "Team/Roster/README.md"] = (
@@ -221,6 +324,29 @@ def blocks(root, on):
         page += [f"## {conf}ern Conference", "", _table(["#", "Club", "W", "L", "Pct", "GB"], crows), ""]
     out[STANDINGS] = "\n".join(page)
     return out
+
+
+# A closed season's register blocks, which `refresh` (the live season only) leaves as its last live day wrote them.
+REGISTER_PAGES = ("README.md", "Team/README.md", "Team/Roster/README.md")
+
+
+def regenerate_closed(root, season, on, write=True):
+    """Rewrite a closed season's register blocks (REGISTER_PAGES) through `blocks` as of `on`, its last live day (the
+    rollover's eve). Run once by hand for a season whose frozen blocks predate a fix: the final audit (R3) regenerated
+    2004-05's as of 2005-09-30, which had counted the eight contracts that ended on June 30, 2005 as under contract.
+    Returns the changed paths."""
+    root = Path(root)
+    changed = []
+    for rel, block in blocks(root, on, season).items():
+        if rel not in {team_dir(season) / page for page in REGISTER_PAGES} or not (root / rel).is_file():
+            continue
+        old = (root / rel).read_text(encoding="utf-8")
+        new = put(old, block)
+        if new is not None and new != old:
+            changed.append(root / rel)
+            if write:
+                (root / rel).write_text(new, encoding="utf-8")
+    return changed
 
 
 TEAM_STATS = Path("career/Dwyane_Wade/Stats_and_Awards/Team")
