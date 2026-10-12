@@ -264,6 +264,16 @@ Real clubs follow history (option D), so a club Miami takes a rotation player fr
 Records live in `career/Dwyane_Wade/<season>/League/club_replacements.json`. Run `python scripts/club_replacements.py --write` after any Miami acquisition; validation refuses a disturbed club without a replacement while the pool has one. Undisturbed clubs keep following history.
 
 
+## Qualifying offers in the summer market (from the 2006 summer)
+
+On June 30 the summer market (`runtime/free_agency_2004.py`) tenders a restricted free agent a qualifying offer when his price reaches the offer and 1.5 times his minimum. The offer is the larger of 125% of his prior salary and his minimum plus $175,000 (cbafaq05 Q37), except for a first-round pick finishing his rookie-scale contract. From the 2006 summer (`SCALE_QO_FROM`, the June 2006 integration review) he is offered the rookie scale's amount for his draft position: his fourth-season salary raised 30.0% at No. 1 up to 50.0% at No. 29 and No. 30, rounded half up to the dollar (`qualifying_amount`). Both agreements price his offer this way, with the same percentages: the 1999 FAQ, Q34 ("based on the player's draft position"), and the 2005 FAQ, Q37 and Q42. The research, the table by pick and the quoted evidence are in `library/2006/league/nba_2006_rookie_scale_qualifying_offers.json`.
+
+- **Who.** `scale_qualifying_picks` takes the first round of the draft four summers back: `library/<year>/league/nba_<year>_first_round.json` for 2002 and 2003, the career's own draft record from 2004 (`first_round`; a draft with neither is refused). It keeps the picks whose closed-season ledger row is a rookie-scale contract ending that season, not a later contract a summer market signed. A pick whose third- or fourth-year option was declined ends a season early and keeps the general offer.
+- **2006.** The 2002 class's restricted free agents. Caron Butler (No. 10) is offered $3,352,722 rather than $3,077,021. Yao Ming, Mike Dunleavy, Chris Wilcox, Jared Jeffries, Fred Jones, Juan Dixon and John Salmons are each offered their scale amount. Dan Dickau (No. 28) stays below his bar under either offer. No tender decision changes.
+- **Readers.** The tender bar, the `qualifying_offer` event (with `rookie_scale_pick`), the September 30 placement of a player still unsigned at his offer, a renouncement's withdrawn offer and the Non-Bird limit of a player who lost his Bird rights all read the amount. Cap holds (150% of the prior salary) and offer-sheet matching (price and need) do not.
+- **Earlier summers.** The rule existed in 1999, but the 2004 and 2005 summers tendered 125%. Their recorded offers stand, and `scale_qualifying_picks` is empty before 2006. The in-season consent model's Non-Bird estimate (`trades.non_bird_reach`) keeps the general offer, so every recorded consent replays unchanged.
+
+
 ## Contract options for every club (October 2026)
 
 `runtime/options.py`, run every career day by `scripts/advance.py` (`scripts/option_day.py --write <date>`). Team options,

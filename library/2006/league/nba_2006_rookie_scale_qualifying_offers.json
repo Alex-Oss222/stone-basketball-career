@@ -1,0 +1,306 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "rookie_scale_qualifying_offer_rule",
+ "prepared_on": "2026-10-12",
+ "purpose": "The qualifying offer of a first-round pick finishing his rookie-scale contract: his fourth-season salary raised by a percentage set by his draft position, in place of the general 125% / minimum-plus offer. Read by runtime/free_agency_2004.qualifying_amount from the 2006 summer (SCALE_QO_FROM; the June 30, 2006 tenders); the 2004 and 2005 summers' recorded offers stand as they were made.",
+ "status": "sourced",
+ "status_legend": {
+  "sourced": "Stated by a cited source, with the quoted words.",
+  "unverified": "No source found that settles it; the repository does not act on it."
+ },
+ "hindsight_warning": "The percentages were fixed when each agreement was written (1999 and 2005). The 2006 newspaper amounts below are evidence of how the rule was applied, never an input to the simulation.",
+ "sources": [
+  {
+   "id": "cbafaq99_extract",
+   "path": "library/2003/league/cba_1999_salary_cap_faq_extract.txt",
+   "url": "http://www.cbafaq.com/salarycap99.htm",
+   "title": "Larry Coon, NBA Salary Cap FAQ (1999 agreement), Questions 34 and 38, as extracted 2026-10-02"
+  },
+  {
+   "id": "cbafaq05",
+   "url": "http://www.cbafaq.com/salarycap05.htm",
+   "title": "Larry Coon, NBA Salary Cap FAQ (2005 agreement), Questions 37 and 42, as recorded in library/2005/league/nba_2005_cba_rules.json (retrieved 2026-10-05); the site answered 503 on 2026-10-12 and web.archive.org is unreachable through the session proxy"
+  },
+  {
+   "id": "salaryswish_2002_03",
+   "url": "https://www.salaryswish.com/rookie-scale/2003",
+   "title": "SalarySwish, rookie scale table for the 2002-03 season (1999 agreement), retrieved 2026-10-12: columns 'Year 4 Option' and 'Qualifying Offer' (percentage and amount, 80%-120% range)"
+  },
+  {
+   "id": "salaryswish_2005_06",
+   "url": "https://www.salaryswish.com/rookie-scale/2006",
+   "title": "SalarySwish, rookie scale table for the 2005-06 season (2005 agreement), retrieved 2026-10-12"
+  },
+  {
+   "id": "calendar_2004",
+   "path": "library/2004/league/nba_2004_offseason_calendar.json",
+   "title": "rookie_scale_2004_first_round (1999 agreement; sources http://www.cbafaq.com/scale99.htm and salarycap99.htm)"
+  },
+  {
+   "id": "calendar_2006",
+   "path": "library/2006/league/nba_2006_offseason_calendar.json",
+   "title": "rookie_scale_2006_first_round (2005 agreement; SalarySwish 2006-07 transcription of CBA Exhibit B, pick 1 cross-checked against cbafaq05 Q42)"
+  },
+  {
+   "id": "abj_20060711",
+   "url": "https://www2.kusports.com/news/2006/jul/11/gooden_focus_cavs/",
+   "title": "Akron Beacon Journal (republished by KUSports.com), 'Gooden focus for Cavs', July 11, 2006"
+  },
+  {
+   "id": "wt_20060713_14",
+   "url": "https://www.washingtontimes.com/news/2006/jul/14/20060714-120649-6550r/",
+   "title": "Washington Times notes, July 13 and July 14, 2006 (read through search excerpts; the page answered 403)"
+  }
+ ],
+ "questions": {
+  "a_percentage_by_pick": {
+   "question": "The qualifying offer's raise over the fourth-season salary for every pick 1-30.",
+   "status": "sourced",
+   "answer": "30.0% at No. 1 rising to 50.0% at No. 29 (and No. 30 under the 2005 agreement); every pick in `table`. The 1999 table (picks 1-29) and the 2005 table (picks 1-30) give the same percentage at every pick both list.",
+   "evidence": [
+    {
+     "source": "salaryswish_2002_03",
+     "quote": "| 10 | $1,399,000 ($1,119,200 - $1,678,800) | ... | +27.5% $2,051,347 ($1,641,078 - $2,461,617) | +36.2% $2,793,935 ($2,235,148 - $3,352,722) |",
+     "note": "Pick 10 of the 2002-03 table: the 120% fourth-season amount, $2,461,617, is Caron Butler's recorded 2005-06 salary, and the 120% qualifying offer is $3,352,722 (36.2% over it)."
+    },
+    {
+     "source": "salaryswish_2005_06",
+     "quote": "| 1 | Bogut, Andrew (120%) | $3,617,100 ... | +26.1% ($5,245,256) ... | +30% ($6,818,833) ... |",
+     "note": "No. 1 of the 2005-06 table; No. 30 reads '+80.5% ... | +50% ($2,235,042)'."
+    },
+    {
+     "source": "cbafaq05",
+     "quote": "qualifying_offer_pct_over_fourth: 30.0% (No. 1) scaling to 50.0% (No. 30)",
+     "note": "As recorded from Q42 in library/2005/league/nba_2005_cba_rules.json rookie_scale.option_year_raises."
+    }
+   ]
+  },
+  "b_2002_draft_class": {
+   "question": "Did the draft-position offer apply to players drafted under the 1999 agreement whose rookie-scale contracts ended in 2006 (the 2002 draft class)?",
+   "status": "sourced",
+   "answer": "Yes. The 1999 agreement, under which the 2002 class signed, already priced a rookie-scale player's qualifying offer by draft position, with the same percentages the 2005 agreement kept, so the 2002 class's offer is the scale offer whichever agreement governs the tender. A 2006 report of Drew Gooden's (2002 No. 4) one-year offer matches the scale offer and not the 125% rule.",
+   "evidence": [
+    {
+     "source": "cbafaq99_extract",
+     "quote": "Qualifying offer amount, rookie scale players: \"based on the player's draft position\" (see Question 38 and the rookie scale table).",
+     "note": "Question 34; the next line gives the general rule for 'other players': \"125% of the player's previous salary, or the player's minimum salary plus $150,000, whichever is greater\"."
+    },
+    {
+     "source": "cbafaq05",
+     "quote": "125% of previous salary or minimum salary + $175,000, whichever is greater (rookie-scale QOs by draft position)",
+     "note": "Question 37 as recorded in library/2005/league/nba_2005_cba_rules.json restricted_free_agency.qualifying_offer."
+    },
+    {
+     "source": "salaryswish_2002_03",
+     "quote": "QUALIFYING OFFER",
+     "note": "The 2002-03 rookie scale carries the qualifying-offer column for the 2002 class (pick 10: +36.2%)."
+    },
+    {
+     "source": "abj_20060711",
+     "quote": "playing on a one-year, $5.4 million contract that would make him an unrestricted free agent next summer",
+     "note": "Drew Gooden, a restricted free agent in July 2006. His 2005-06 salary was $4,065,811 (library/2003/league/nba_2003_contracts.json): the scale offer at No. 4 (+31.9%) is $5,362,805; the 125% rule would give $5,082,264."
+    },
+    {
+     "source": "wt_20060713_14",
+     "quote": "Jeffries was strongly considering signing the team's one-year qualifying offer of $2.8 million (July 14); Jeffries will consider signing a one-year qualifying offer from the Wizards for just less than $3 million (July 13)",
+     "note": "Jared Jeffries (2002 No. 11). Matches neither rule on his recorded 2005-06 salary of $2,433,824 (scale +36.9%: $3,331,905; 125%: $3,042,280); the two notes also disagree with each other. Recorded as an unreconciled report, not used."
+    }
+   ]
+  },
+  "c_general_floor": {
+   "question": "Does the scale offer combine with the 125% / minimum-plus-$175,000 floor?",
+   "status": "sourced (two separate rules); a combination is unverified",
+   "answer": "Both FAQs state the rookie-scale offer and the general offer as separate rules for separate players; no source found that takes the greater of the two. The repository applies the scale offer alone. The question changes no amount on record: every scale raise (30.0%-50.0%) exceeds the 25% of the general rule, and the smallest possible 2002-class scale offer (No. 28 at 80% of scale, $1,601,836 per the 2002-03 table) is above the 2006-07 minimum plus $175,000 for four seasons of service ($798,112 + $175,000 = $973,112).",
+   "evidence": [
+    {
+     "source": "cbafaq99_extract",
+     "quote": "Qualifying offer amount, rookie scale players: \"based on the player's draft position\" ... Qualifying offer amount, other players: \"125% of the player's previous salary, or the player's minimum salary plus $150,000, whichever is greater\"."
+    }
+   ]
+  }
+ },
+ "rule": "From the 2006 summer, a first-round pick whose rookie-scale contract ends with the closed season after its four seasons (the draft four summers back; the 1999 agreement's three seasons and fourth-year option, the 2005 agreement's two seasons and two options) is tendered his fourth-season salary raised by `qualifying_offer_raise_pct` for his pick, rounded to the dollar. His pick comes from the draft's first round: library/2002/league/nba_2002_first_round.json, library/2003/league/nba_2003_first_round.json, then the career's own draft records (runtime/draft.py, from 2004) with the percentages of that year's rookie scale. Every other restricted free agent keeps the general offer.",
+ "table": [
+  {
+   "pick": 1,
+   "qualifying_offer_raise_pct": 30.0,
+   "agreement_1999": 30.0,
+   "agreement_2005": 30.0
+  },
+  {
+   "pick": 2,
+   "qualifying_offer_raise_pct": 30.5,
+   "agreement_1999": 30.5,
+   "agreement_2005": 30.5
+  },
+  {
+   "pick": 3,
+   "qualifying_offer_raise_pct": 31.2,
+   "agreement_1999": 31.2,
+   "agreement_2005": 31.2
+  },
+  {
+   "pick": 4,
+   "qualifying_offer_raise_pct": 31.9,
+   "agreement_1999": 31.9,
+   "agreement_2005": 31.9
+  },
+  {
+   "pick": 5,
+   "qualifying_offer_raise_pct": 32.6,
+   "agreement_1999": 32.6,
+   "agreement_2005": 32.6
+  },
+  {
+   "pick": 6,
+   "qualifying_offer_raise_pct": 33.4,
+   "agreement_1999": 33.4,
+   "agreement_2005": 33.4
+  },
+  {
+   "pick": 7,
+   "qualifying_offer_raise_pct": 34.1,
+   "agreement_1999": 34.1,
+   "agreement_2005": 34.1
+  },
+  {
+   "pick": 8,
+   "qualifying_offer_raise_pct": 34.8,
+   "agreement_1999": 34.8,
+   "agreement_2005": 34.8
+  },
+  {
+   "pick": 9,
+   "qualifying_offer_raise_pct": 35.5,
+   "agreement_1999": 35.5,
+   "agreement_2005": 35.5
+  },
+  {
+   "pick": 10,
+   "qualifying_offer_raise_pct": 36.2,
+   "agreement_1999": 36.2,
+   "agreement_2005": 36.2
+  },
+  {
+   "pick": 11,
+   "qualifying_offer_raise_pct": 36.9,
+   "agreement_1999": 36.9,
+   "agreement_2005": 36.9
+  },
+  {
+   "pick": 12,
+   "qualifying_offer_raise_pct": 37.6,
+   "agreement_1999": 37.6,
+   "agreement_2005": 37.6
+  },
+  {
+   "pick": 13,
+   "qualifying_offer_raise_pct": 38.3,
+   "agreement_1999": 38.3,
+   "agreement_2005": 38.3
+  },
+  {
+   "pick": 14,
+   "qualifying_offer_raise_pct": 39.1,
+   "agreement_1999": 39.1,
+   "agreement_2005": 39.1
+  },
+  {
+   "pick": 15,
+   "qualifying_offer_raise_pct": 39.8,
+   "agreement_1999": 39.8,
+   "agreement_2005": 39.8
+  },
+  {
+   "pick": 16,
+   "qualifying_offer_raise_pct": 40.5,
+   "agreement_1999": 40.5,
+   "agreement_2005": 40.5
+  },
+  {
+   "pick": 17,
+   "qualifying_offer_raise_pct": 41.2,
+   "agreement_1999": 41.2,
+   "agreement_2005": 41.2
+  },
+  {
+   "pick": 18,
+   "qualifying_offer_raise_pct": 41.9,
+   "agreement_1999": 41.9,
+   "agreement_2005": 41.9
+  },
+  {
+   "pick": 19,
+   "qualifying_offer_raise_pct": 42.6,
+   "agreement_1999": 42.6,
+   "agreement_2005": 42.6
+  },
+  {
+   "pick": 20,
+   "qualifying_offer_raise_pct": 43.3,
+   "agreement_1999": 43.3,
+   "agreement_2005": 43.3
+  },
+  {
+   "pick": 21,
+   "qualifying_offer_raise_pct": 44.1,
+   "agreement_1999": 44.1,
+   "agreement_2005": 44.1
+  },
+  {
+   "pick": 22,
+   "qualifying_offer_raise_pct": 44.8,
+   "agreement_1999": 44.8,
+   "agreement_2005": 44.8
+  },
+  {
+   "pick": 23,
+   "qualifying_offer_raise_pct": 45.5,
+   "agreement_1999": 45.5,
+   "agreement_2005": 45.5
+  },
+  {
+   "pick": 24,
+   "qualifying_offer_raise_pct": 46.2,
+   "agreement_1999": 46.2,
+   "agreement_2005": 46.2
+  },
+  {
+   "pick": 25,
+   "qualifying_offer_raise_pct": 46.9,
+   "agreement_1999": 46.9,
+   "agreement_2005": 46.9
+  },
+  {
+   "pick": 26,
+   "qualifying_offer_raise_pct": 47.6,
+   "agreement_1999": 47.6,
+   "agreement_2005": 47.6
+  },
+  {
+   "pick": 27,
+   "qualifying_offer_raise_pct": 48.3,
+   "agreement_1999": 48.3,
+   "agreement_2005": 48.3
+  },
+  {
+   "pick": 28,
+   "qualifying_offer_raise_pct": 49.0,
+   "agreement_1999": 49.0,
+   "agreement_2005": 49.0
+  },
+  {
+   "pick": 29,
+   "qualifying_offer_raise_pct": 50.0,
+   "agreement_1999": 50.0,
+   "agreement_2005": 50.0
+  },
+  {
+   "pick": 30,
+   "qualifying_offer_raise_pct": 50.0,
+   "agreement_1999": null,
+   "agreement_2005": 50.0
+  }
+ ]
+}

@@ -1,0 +1,255 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "draft_first_round",
+ "draft": "2003 NBA draft (June 26, 2003)",
+ "purpose": "The first round of the career's opening draft, which the career did not simulate: each pick's position prices the qualifying offer of a first-round pick finishing his rookie-scale contract four summers later (the 2007 summer; runtime/free_agency_2004.first_round and qualifying_amount).",
+ "status": "sourced (derived from the repository's sourced 2003 records)",
+ "sources": [
+  {
+   "id": "nba_2003_contracts",
+   "path": "library/2003/league/nba_2003_contracts.json",
+   "use": "Each club's `draft_rights` rows with status unsigned_first_round_draft_rights: pick, player, drafting club after draft-night trades, and `rookie_scale_reference.qualifying_offer_increase_percent` (sources there: https://en.wikipedia.org/wiki/2003_NBA_draft, https://basketball.realgm.com/nba/info/rookie_scale/2004)"
+  },
+  {
+   "id": "nba_2003_draft_class",
+   "path": "library/2003/league/nba_2003_draft_class.json",
+   "use": "Basketball-Reference ids, matched by name (T. J. Ford's dotted spelling included)"
+  }
+ ],
+ "note": "Twenty-nine selections (Minnesota's pick forfeited). Built once from the two files named in `sources`; `club` is the club holding the rights after draft-night trades, as those files record it.",
+ "picks": [
+  {
+   "pick": 1,
+   "round": 1,
+   "player": "LeBron James",
+   "bbr_id": "jamesle01",
+   "club": "Cleveland Cavaliers",
+   "qualifying_offer_raise_pct": 30.0
+  },
+  {
+   "pick": 2,
+   "round": 1,
+   "player": "Darko Milicic",
+   "bbr_id": "milicda01",
+   "club": "Detroit Pistons",
+   "qualifying_offer_raise_pct": 30.5
+  },
+  {
+   "pick": 3,
+   "round": 1,
+   "player": "Carmelo Anthony",
+   "bbr_id": "anthoca01",
+   "club": "Denver Nuggets",
+   "qualifying_offer_raise_pct": 31.2
+  },
+  {
+   "pick": 4,
+   "round": 1,
+   "player": "Chris Bosh",
+   "bbr_id": "boshch01",
+   "club": "Toronto Raptors",
+   "qualifying_offer_raise_pct": 31.9
+  },
+  {
+   "pick": 5,
+   "round": 1,
+   "player": "Dwyane Wade",
+   "bbr_id": "wadedw01",
+   "club": "Miami Heat",
+   "qualifying_offer_raise_pct": 32.6
+  },
+  {
+   "pick": 6,
+   "round": 1,
+   "player": "Chris Kaman",
+   "bbr_id": "kamanch01",
+   "club": "Los Angeles Clippers",
+   "qualifying_offer_raise_pct": 33.4
+  },
+  {
+   "pick": 7,
+   "round": 1,
+   "player": "Kirk Hinrich",
+   "bbr_id": "hinriki01",
+   "club": "Chicago Bulls",
+   "qualifying_offer_raise_pct": 34.1
+  },
+  {
+   "pick": 8,
+   "round": 1,
+   "player": "T. J. Ford",
+   "bbr_id": "fordtj01",
+   "club": "Milwaukee Bucks",
+   "qualifying_offer_raise_pct": 34.8
+  },
+  {
+   "pick": 9,
+   "round": 1,
+   "player": "Michael Sweetney",
+   "bbr_id": "sweetmi01",
+   "club": "New York Knicks",
+   "qualifying_offer_raise_pct": 35.5
+  },
+  {
+   "pick": 10,
+   "round": 1,
+   "player": "Jarvis Hayes",
+   "bbr_id": "hayesja01",
+   "club": "Washington Wizards",
+   "qualifying_offer_raise_pct": 36.2
+  },
+  {
+   "pick": 11,
+   "round": 1,
+   "player": "Mickael Pietrus",
+   "bbr_id": "pietrmi01",
+   "club": "Golden State Warriors",
+   "qualifying_offer_raise_pct": 36.9
+  },
+  {
+   "pick": 12,
+   "round": 1,
+   "player": "Nick Collison",
+   "bbr_id": "collini01",
+   "club": "Seattle SuperSonics",
+   "qualifying_offer_raise_pct": 37.6
+  },
+  {
+   "pick": 13,
+   "round": 1,
+   "player": "Marcus Banks",
+   "bbr_id": "banksma01",
+   "club": "Boston Celtics",
+   "qualifying_offer_raise_pct": 38.3
+  },
+  {
+   "pick": 14,
+   "round": 1,
+   "player": "Luke Ridnour",
+   "bbr_id": "ridnolu01",
+   "club": "Seattle SuperSonics",
+   "qualifying_offer_raise_pct": 39.1
+  },
+  {
+   "pick": 15,
+   "round": 1,
+   "player": "Reece Gaines",
+   "bbr_id": "gainere01",
+   "club": "Orlando Magic",
+   "qualifying_offer_raise_pct": 39.8
+  },
+  {
+   "pick": 16,
+   "round": 1,
+   "player": "Troy Bell",
+   "bbr_id": "belltr01",
+   "club": "Memphis Grizzlies",
+   "qualifying_offer_raise_pct": 40.5
+  },
+  {
+   "pick": 17,
+   "round": 1,
+   "player": "Zarko Cabarkapa",
+   "bbr_id": "cabarza01",
+   "club": "Phoenix Suns",
+   "qualifying_offer_raise_pct": 41.2
+  },
+  {
+   "pick": 18,
+   "round": 1,
+   "player": "David West",
+   "bbr_id": "westda01",
+   "club": "New Orleans Hornets",
+   "qualifying_offer_raise_pct": 41.9
+  },
+  {
+   "pick": 19,
+   "round": 1,
+   "player": "Sasha Pavlovic",
+   "bbr_id": "pavloal01",
+   "club": "Utah Jazz",
+   "qualifying_offer_raise_pct": 42.6
+  },
+  {
+   "pick": 20,
+   "round": 1,
+   "player": "Dahntay Jones",
+   "bbr_id": "jonesda02",
+   "club": "Memphis Grizzlies",
+   "qualifying_offer_raise_pct": 43.3
+  },
+  {
+   "pick": 21,
+   "round": 1,
+   "player": "Boris Diaw",
+   "bbr_id": "diawbo01",
+   "club": "Atlanta Hawks",
+   "qualifying_offer_raise_pct": 44.1
+  },
+  {
+   "pick": 22,
+   "round": 1,
+   "player": "Zoran Planinic",
+   "bbr_id": "planizo01",
+   "club": "New Jersey Nets",
+   "qualifying_offer_raise_pct": 44.8
+  },
+  {
+   "pick": 23,
+   "round": 1,
+   "player": "Travis Outlaw",
+   "bbr_id": "outlatr01",
+   "club": "Portland Trail Blazers",
+   "qualifying_offer_raise_pct": 45.5
+  },
+  {
+   "pick": 24,
+   "round": 1,
+   "player": "Brian Cook",
+   "bbr_id": "cookbr01",
+   "club": "Los Angeles Lakers",
+   "qualifying_offer_raise_pct": 46.2
+  },
+  {
+   "pick": 25,
+   "round": 1,
+   "player": "Carlos Delfino",
+   "bbr_id": "delfica01",
+   "club": "Detroit Pistons",
+   "qualifying_offer_raise_pct": 46.9
+  },
+  {
+   "pick": 26,
+   "round": 1,
+   "player": "Ndudi Ebi",
+   "bbr_id": "ebind01",
+   "club": "Minnesota Timberwolves",
+   "qualifying_offer_raise_pct": 47.6
+  },
+  {
+   "pick": 27,
+   "round": 1,
+   "player": "Kendrick Perkins",
+   "bbr_id": "perkike01",
+   "club": "Boston Celtics",
+   "qualifying_offer_raise_pct": 48.3
+  },
+  {
+   "pick": 28,
+   "round": 1,
+   "player": "Leandro Barbosa",
+   "bbr_id": "barbole01",
+   "club": "Phoenix Suns",
+   "qualifying_offer_raise_pct": 49.0
+  },
+  {
+   "pick": 29,
+   "round": 1,
+   "player": "Josh Howard",
+   "bbr_id": "howarjo01",
+   "club": "Dallas Mavericks",
+   "qualifying_offer_raise_pct": 50.0
+  }
+ ]
+}

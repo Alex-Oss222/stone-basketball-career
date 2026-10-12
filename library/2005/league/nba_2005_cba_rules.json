@@ -727,6 +727,13 @@
    "source_ref": "Q37",
    "note": "1999 repo file: minimum + $150,000."
   },
+  "rookie_scale_qualifying_offer": {
+   "value": "A first-round pick finishing his rookie-scale contract is tendered his fourth-season salary raised by a percentage set by his draft position: 30.0% (No. 1) to 50.0% (No. 29 and No. 30), the same percentages as the 1999 agreement's table; the general 125% / minimum-plus offer is a separate rule for every other restricted free agent.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q37, Q42; library/2006/league/nba_2006_rookie_scale_qualifying_offers.json (table by pick, the 2002 class, quoted evidence)",
+   "note": "Applied by the summer market from the 2006 summer (free_agency_2004.SCALE_QO_FROM); the 2004 and 2005 summers' recorded 125% offers stand."
+  },
   "arenas_provision": {
    "value": "Offer sheets to RFAs with one or two years of service are limited to the average salary in year 1, 8% raise in year 2, then year 3 may jump to what the unrestricted amount would have been; later raises limited to 6.9% of year 3.",
    "status": "sourced",

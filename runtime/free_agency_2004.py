@@ -19,7 +19,10 @@ Club decisions are judgement rules with no chance element; a player's answers ar
 - June 30: a club exercises a team option when the market price is at least TEAM_OPTION_SHARE of the option salary.
   A player or early-termination option is the player's draw: P(opt out) rises with his price over the option salary.
   A club tenders a qualifying offer (the larger of 125% of the prior salary and the minimum plus $175,000) when his
-  price is at least the offer and 1.5 times his minimum; the player is then restricted. When Wade has asked Miami to
+  price is at least the offer and 1.5 times his minimum; the player is then restricted. From the 2006 summer
+  (SCALE_QO_FROM) a first-round pick finishing his rookie-scale contract is offered the scale's amount for his draft
+  position instead, his fourth-season salary raised 30.0% (No. 1) to 50.0% (No. 29 and 30), the rule of both agreements
+  (`library/2006/league/nba_2006_rookie_scale_qualifying_offers.json`); the 2004 and 2005 summers' 125% offers stand. When Wade has asked Miami to
   keep a player the rule would let go, the tender is an engine draw at his standing weight x (1 - the rule's margin). An offer sheet is matched
   when the holder values him at the offer (price x need) and can pay it.
 - First-round picks sign on July 1 at 120% of the 2004 rookie scale (era practice). Second-round and undrafted
@@ -122,6 +125,8 @@ RENOUNCE_FOR_REQUEST_FROM = 2006        # from this summer Miami renounces lesse
 REQUEST_ANSWERS_CONSULTATION_FROM = 2006  # from this summer Wade's own pursue request answers the franchise consultation for that player
 LINE_LABELS_FROM = 2006                 # from this summer a consultation's line names the season priced (before: "2003-04" every summer)
 LOST_BIRD_FROM = 2006                   # the first summer after a consent trade could happen (trades.CONSENT_FROM, 2005-12-01)
+SCALE_QO_FROM = 2006                    # from this summer a first-round pick finishing his rookie-scale contract is tendered the scale's
+                                        # offer by draft position (both agreements' rule; the 2004 and 2005 summers' 125% offers stand)
 ID_NAMES_FROM = 2006                    # from this summer a player no identity source names takes his careers-file name, never
                                         # his NBA id (the June 2006 audit: the 2005 market wrote three rookies by id)
 UNATTACHED_FROM = 2006                  # from this summer the identity also reads the unattached identities recorded for the
@@ -607,8 +612,54 @@ def rookie_scale_players(root=ROOT):
     return out
 
 
-def qualifying_amount(prior, service, cal):
+def qualifying_amount(prior, service, cal, scale_pct=None):
+    """A restricted free agent's qualifying offer: the larger of 125% of his prior salary and his minimum plus
+    QO_MINIMUM_PLUS. `scale_pct` (from SCALE_QO_FROM, `scale_qualifying_picks`): a first-round pick finishing his
+    rookie-scale contract is offered his fourth-season salary raised by the scale's percentage for his draft position
+    instead, rounded half up to the dollar (1999 FAQ Q34, cbafaq05 Q37 and Q42; no source combines it with the general
+    floor, which no scale offer falls below: library/2006/league/nba_2006_rookie_scale_qualifying_offers.json)."""
+    if scale_pct is not None:
+        return ((prior or 0) * (1000 + int(round(scale_pct * 10))) + 500) // 1000
     return int(max(round((prior or 0) * 1.25), minimum(service, cal) + QO_MINIMUM_PLUS))
+
+
+def first_round(year, root=ROOT):
+    """{bbr_id: {"pick", "qualifying_offer_raise_pct"}} for the first round of the `year` draft: the library's first
+    round of a draft the career did not simulate (`library/<year>/league/nba_<year>_first_round.json`: 2002 and 2003),
+    else the career's own draft record (`runtime/draft.py`, from 2004) with that year's rookie-scale percentages
+    (`rookie_scale_<year>_first_round` in its offseason calendar). A draft with neither is refused, so a missing round
+    never falls back to the general offer."""
+    root = Path(root)
+    path = root / f"library/{year}/league/nba_{year}_first_round.json"
+    if path.is_file():
+        return {r["bbr_id"]: {"pick": r["pick"], "qualifying_offer_raise_pct": r["qualifying_offer_raise_pct"]}
+                for r in _read(path)["picks"] if r.get("bbr_id")}
+    from .draft import year_context as draft_year
+    with draft_year(year, root):
+        from . import draft as _draft
+        record = root / _draft.RECORD
+    if not record.is_file():
+        raise ValueError(f"no recorded first round for the {year} draft (library/{year}/league/nba_{year}_first_round.json "
+                         f"or {record.relative_to(root).as_posix()}): a rookie-scale qualifying offer needs the pick")
+    scale = _read(root / f"library/{year}/league/nba_{year}_offseason_calendar.json")[f"rookie_scale_{year}_first_round"]["value"]
+    pct = {r["pick"]: r["qualifying_offer_raise_pct"] for r in scale}
+    return {p["bbr_id"]: {"pick": p["pick"], "qualifying_offer_raise_pct": pct[p["pick"]]}
+            for p in _read(record)["picks"] if p["round"] == 1 and p.get("bbr_id")}
+
+
+def scale_qualifying_picks(root=ROOT):
+    """{bbr_id: {"pick", "qualifying_offer_raise_pct"}} of the first-round picks finishing their rookie-scale contract
+    this summer (from SCALE_QO_FROM; earlier summers {}): drafted four summers back (the 1999 agreement's three seasons
+    and fourth-year option, the 2005 agreement's two seasons and two options), on a rookie-scale contract in the closed
+    season's ledger (not a later contract a summer market signed) that runs no further. A pick whose option was
+    declined ends a season early and keeps the general offer, as does every other restricted free agent."""
+    if YEAR < SCALE_QO_FROM:
+        return {}
+    from .league_contracts import read as read_ledger
+    picks = first_round(YEAR - 4, root)
+    return {b: picks[b] for b, c in (read_ledger(SEASON, root) or {}).items()
+            if b in picks and (c.get("rookie_scale") or c.get("kind") == "rookie_scale") and c.get("kind") != "new"
+            and not c["schedule"].get(NEW)}
 
 
 def _sigmoid(x):
@@ -827,10 +878,11 @@ class Market:
                            if b not in self.contracts and b in self.roles and b != "dwyane_wade")
         self.price = {b: self.price_of(b) for b in self.pool}
         self.qualifying = {}
+        scale = scale_qualifying_picks(self.root)        # from SCALE_QO_FROM: the rookie-scale offer by draft position
         for b in self.pool:
             club = self.rights.get(b)
             if club and rfa_eligible(b, self.ident, self.rookie_scale) and b not in drafted:
-                qo = qualifying_amount(self.prior.get(b), self.service(b), self.cal)
+                qo = qualifying_amount(self.prior.get(b), self.service(b), self.cal, (scale.get(b) or {}).get("qualifying_offer_raise_pct"))
                 bar = max(QO_SHARE * qo, QO_MIN_PRICE * minimum(self.service(b), self.cal))
                 tender = self.price[b] >= bar
                 kept = self.requested(OPTIONS_DATE, ("re_sign",)) if club == MIAMI else {}
@@ -842,6 +894,8 @@ class Market:
                     self.qualifying[b] = {"club": club, "amount": qo}
                     self.events.append({"date": OPTIONS_DATE, "kind": "qualifying_offer", "player": self.name(b), "bbr_id": b,
                                         "club": club, "amount": qo, "price": self.price[b]})
+                    if b in scale:
+                        self.events[-1]["rookie_scale_pick"] = scale[b]["pick"]
         if self.pending:
             return None
         for b in self.pool:

@@ -1,0 +1,255 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "draft_first_round",
+ "draft": "2002 NBA draft (June 26, 2002)",
+ "purpose": "The first round of a draft the career did not simulate: each pick's position prices the qualifying offer of a first-round pick finishing his rookie-scale contract four summers later (the 2006 summer; runtime/free_agency_2004.first_round and qualifying_amount). Real draft results from before the career's first date: no hindsight.",
+ "status": "sourced",
+ "sources": [
+  {
+   "id": "wiki_2002_draft",
+   "url": "https://en.wikipedia.org/wiki/2002_NBA_draft",
+   "use": "Picks, selecting clubs (draft-night trades not applied: `club` is the club that made the selection) and the forfeited pick",
+   "retrieved": "2026-10-12"
+  },
+  {
+   "id": "bbr_2002_draft",
+   "url": "https://www.basketball-reference.com/draft/NBA_2002.html",
+   "use": "Basketball-Reference player ids, cross-checked pick by pick against the Wikipedia list",
+   "retrieved": "2026-10-12"
+  },
+  {
+   "id": "salaryswish_2002_03_scale",
+   "url": "https://www.salaryswish.com/rookie-scale/2003",
+   "use": "The 2002-03 rookie scale (1999 agreement; the table under which the 2002 class signed): the qualifying offer's raise over the fourth-season salary by pick",
+   "retrieved": "2026-10-12"
+  }
+ ],
+ "note": "Twenty-eight selections: Minnesota's pick (No. 29) was forfeited for the Joe Smith salary-cap violation (Wikipedia: 'Pick forfeited due to salary-cap violations'). `qualifying_offer_raise_pct` is the 2002-03 rookie scale's 'Qualifying Offer' column (SalarySwish), the same percentages the repository already records for the 1999 agreement (library/2003/league/nba_2003_04_cap_rules.json rookie_scale, library/2004/league/nba_2004_offseason_calendar.json rookie_scale_2004_first_round) and for the 2005 agreement (library/2005 and library/2006 offseason calendars) at every pick from 1 to 29. Cross-check: the SalarySwish 2002-03 table's 120% fourth-season amounts equal the recorded 2005-06 salaries of Caron Butler (No. 10, $2,461,617), Chris Wilcox (No. 8, $2,812,239), Mike Dunleavy (No. 3, $4,506,261) and Yao Ming (No. 1, $5,594,906) in library/2003/league/nba_2003_contracts.json.",
+ "picks": [
+  {
+   "pick": 1,
+   "round": 1,
+   "player": "Yao Ming",
+   "bbr_id": "mingya01",
+   "club": "Houston Rockets",
+   "qualifying_offer_raise_pct": 30.0
+  },
+  {
+   "pick": 2,
+   "round": 1,
+   "player": "Jay Williams",
+   "bbr_id": "willija03",
+   "club": "Chicago Bulls",
+   "qualifying_offer_raise_pct": 30.5
+  },
+  {
+   "pick": 3,
+   "round": 1,
+   "player": "Mike Dunleavy",
+   "bbr_id": "dunlemi02",
+   "club": "Golden State Warriors",
+   "qualifying_offer_raise_pct": 31.2
+  },
+  {
+   "pick": 4,
+   "round": 1,
+   "player": "Drew Gooden",
+   "bbr_id": "goodedr01",
+   "club": "Memphis Grizzlies",
+   "qualifying_offer_raise_pct": 31.9
+  },
+  {
+   "pick": 5,
+   "round": 1,
+   "player": "Nikoloz Tskitishvili",
+   "bbr_id": "tskitni01",
+   "club": "Denver Nuggets",
+   "qualifying_offer_raise_pct": 32.6
+  },
+  {
+   "pick": 6,
+   "round": 1,
+   "player": "Dajuan Wagner",
+   "bbr_id": "wagneda02",
+   "club": "Cleveland Cavaliers",
+   "qualifying_offer_raise_pct": 33.4
+  },
+  {
+   "pick": 7,
+   "round": 1,
+   "player": "Nene Hilario",
+   "bbr_id": "hilarne01",
+   "club": "New York Knicks",
+   "qualifying_offer_raise_pct": 34.1
+  },
+  {
+   "pick": 8,
+   "round": 1,
+   "player": "Chris Wilcox",
+   "bbr_id": "wilcoch01",
+   "club": "Los Angeles Clippers",
+   "qualifying_offer_raise_pct": 34.8
+  },
+  {
+   "pick": 9,
+   "round": 1,
+   "player": "Amare Stoudemire",
+   "bbr_id": "stoudam01",
+   "club": "Phoenix Suns",
+   "qualifying_offer_raise_pct": 35.5
+  },
+  {
+   "pick": 10,
+   "round": 1,
+   "player": "Caron Butler",
+   "bbr_id": "butleca01",
+   "club": "Miami Heat",
+   "qualifying_offer_raise_pct": 36.2
+  },
+  {
+   "pick": 11,
+   "round": 1,
+   "player": "Jared Jeffries",
+   "bbr_id": "jeffrja01",
+   "club": "Washington Wizards",
+   "qualifying_offer_raise_pct": 36.9
+  },
+  {
+   "pick": 12,
+   "round": 1,
+   "player": "Melvin Ely",
+   "bbr_id": "elyme01",
+   "club": "Los Angeles Clippers",
+   "qualifying_offer_raise_pct": 37.6
+  },
+  {
+   "pick": 13,
+   "round": 1,
+   "player": "Marcus Haislip",
+   "bbr_id": "haislma01",
+   "club": "Milwaukee Bucks",
+   "qualifying_offer_raise_pct": 38.3
+  },
+  {
+   "pick": 14,
+   "round": 1,
+   "player": "Fred Jones",
+   "bbr_id": "jonesfr01",
+   "club": "Indiana Pacers",
+   "qualifying_offer_raise_pct": 39.1
+  },
+  {
+   "pick": 15,
+   "round": 1,
+   "player": "Bostjan Nachbar",
+   "bbr_id": "nachbbo01",
+   "club": "Houston Rockets",
+   "qualifying_offer_raise_pct": 39.8
+  },
+  {
+   "pick": 16,
+   "round": 1,
+   "player": "Jiri Welsch",
+   "bbr_id": "welscji01",
+   "club": "Philadelphia 76ers",
+   "qualifying_offer_raise_pct": 40.5
+  },
+  {
+   "pick": 17,
+   "round": 1,
+   "player": "Juan Dixon",
+   "bbr_id": "dixonju01",
+   "club": "Washington Wizards",
+   "qualifying_offer_raise_pct": 41.2
+  },
+  {
+   "pick": 18,
+   "round": 1,
+   "player": "Curtis Borchardt",
+   "bbr_id": "borchcu01",
+   "club": "Orlando Magic",
+   "qualifying_offer_raise_pct": 41.9
+  },
+  {
+   "pick": 19,
+   "round": 1,
+   "player": "Ryan Humphrey",
+   "bbr_id": "humphry01",
+   "club": "Utah Jazz",
+   "qualifying_offer_raise_pct": 42.6
+  },
+  {
+   "pick": 20,
+   "round": 1,
+   "player": "Kareem Rush",
+   "bbr_id": "rushka01",
+   "club": "Toronto Raptors",
+   "qualifying_offer_raise_pct": 43.3
+  },
+  {
+   "pick": 21,
+   "round": 1,
+   "player": "Qyntel Woods",
+   "bbr_id": "woodsqy01",
+   "club": "Portland Trail Blazers",
+   "qualifying_offer_raise_pct": 44.1
+  },
+  {
+   "pick": 22,
+   "round": 1,
+   "player": "Casey Jacobsen",
+   "bbr_id": "jacobca01",
+   "club": "Phoenix Suns",
+   "qualifying_offer_raise_pct": 44.8
+  },
+  {
+   "pick": 23,
+   "round": 1,
+   "player": "Tayshaun Prince",
+   "bbr_id": "princta01",
+   "club": "Detroit Pistons",
+   "qualifying_offer_raise_pct": 45.5
+  },
+  {
+   "pick": 24,
+   "round": 1,
+   "player": "Nenad Krstic",
+   "bbr_id": "krstine01",
+   "club": "New Jersey Nets",
+   "qualifying_offer_raise_pct": 46.2
+  },
+  {
+   "pick": 25,
+   "round": 1,
+   "player": "Frank Williams",
+   "bbr_id": "willifr02",
+   "club": "Denver Nuggets",
+   "qualifying_offer_raise_pct": 46.9
+  },
+  {
+   "pick": 26,
+   "round": 1,
+   "player": "John Salmons",
+   "bbr_id": "salmojo01",
+   "club": "San Antonio Spurs",
+   "qualifying_offer_raise_pct": 47.6
+  },
+  {
+   "pick": 27,
+   "round": 1,
+   "player": "Chris Jefferies",
+   "bbr_id": "jeffech01",
+   "club": "Los Angeles Lakers",
+   "qualifying_offer_raise_pct": 48.3
+  },
+  {
+   "pick": 28,
+   "round": 1,
+   "player": "Dan Dickau",
+   "bbr_id": "dickada01",
+   "club": "Sacramento Kings",
+   "qualifying_offer_raise_pct": 49.0
+  }
+ ]
+}
