@@ -13,7 +13,8 @@ do: an appearance is `career_stats.normalize_line`'s (an explicit `appeared`, el
 contribution, so a stint of a few seconds rounded to 0.0 minutes still counts), and a result row whose player_id is
 itself a registry bbr_id is that player. The 2003-04 and 2004-05 files were written under the earlier rule (rounded
 minutes above zero, the season's named identities only) and stay as the evidence the decisions of their summers and
-seasons read: 6 and 13 players there are a game short of the pages, and Malik Allen's three 2004-05 games are absent.
+seasons read: 6 (2003-04) and 12 (2004-05) players there are a game short of the pages (Antonio Burks also 2 points
+and 1 field-goal attempt short), and Malik Allen's three 2004-05 games are absent.
 No decision read the 2005-06 totals before the correction (they became the evidence when the season closed on
 2006-06-20, and the summer's first reader is the June 28 draft).
 """

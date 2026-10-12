@@ -136,12 +136,16 @@ def corrections_path(season):
 def correction_record(season, root=ROOT, on=CORRECTED_FROM):
     """The dated correction of a closed season's evaluation, or None: each performance clause the close recorded as
     `unrecorded` that the evaluator now decides from the evidence of the close date (the corrected and the superseded
-    values side by side). The close itself is never rewritten."""
+    values side by side). The clauses are those of the contract the season was played under (Wade's row on that
+    season's contract sheet; his latest signed contract only when the sheet has no row), so a later contract never
+    changes a closed season's correction. The close itself is never rewritten."""
     root = Path(root)
     close = _read(root / close_path(season))
-    from .season_close import wade_contract
-    contract = wade_contract(root) or {}
-    clauses = {c["id"]: c for c in contract.get("incentives", [])}
+    entry = wade_entry(season, root)
+    if entry is None:
+        from .season_close import wade_contract
+        entry = wade_contract(root) or {}
+    clauses = {c["id"]: c for c in entry.get("incentives", [])}
     items = []
     for e in close.get("incentive_evaluation", []):
         if e["status"] != "unrecorded" or e["kind"] != "performance" or e["id"] not in clauses:
@@ -204,14 +208,16 @@ def bonus_evaluation(entry, on, root=ROOT):
 
 
 def earned_unlikely(entry, season, on, root=ROOT):
-    """[{player, season, clause, amount, evaluated_on, source, corrected_on?}] for the Unlikely bonuses an entry earned in
-    the season (`corrected_on`: the clause was met by a dated correction of its close)."""
+    """[{player, season, clause, amount, evaluated_on, source, corrected_on?, correction_source?}] for the Unlikely
+    bonuses an entry earned in the season (`corrected_on`: the clause was met by a dated correction of its close, whose
+    evidence is in `correction_source`; `source` stays the close that recorded the superseded value)."""
     evaluation = bonus_evaluation(entry, on, root).get(season)
     if not evaluation:
         return []
+    fixed = corrections_path(season).relative_to(PLAYER).as_posix()
     return [{"player": entry["player"], "season": season, "clause": c["id"], "amount": c["amount"],
              "evaluated_on": evaluation["evaluated_on"], "source": evaluation["source"],
-             **({"corrected_on": c["corrected_on"]} if c.get("corrected_on") else {})}
+             **({"corrected_on": c["corrected_on"], "correction_source": fixed} if c.get("corrected_on") else {})}
             for c in evaluation["clauses"] if c["classification"] == "unlikely" and c["status"] == "met"]
 
 

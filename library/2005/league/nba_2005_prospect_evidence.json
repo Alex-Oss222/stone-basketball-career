@@ -4694,6 +4694,7 @@
    "birth_date": "1984-05-12",
    "birth_date_status": "sourced",
    "birth_date_source": "https://www.basketball-reference.com/players/u/ukicro01.html",
+   "birth_date_conflict": "Unresolved (October 2026 audit, BIRTH-01): FIBA's player record (library/fiba/player_tournament_stats/eurobasket_2005.json) and the 2008 squad pages and Wikipedia article (library/2008/fiba/olympics_2008.json) give 1984-12-05. The basketball-reference value above is kept, as no source settles it; the 2005 draft board read it (age_on_draft_day 21, 20 on the other date).",
    "age_on_draft_day": 21,
    "age_status": "derived: from birth_date to 2005-06-28",
    "birth_country_code": "hr",

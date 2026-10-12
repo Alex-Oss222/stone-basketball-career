@@ -66,6 +66,8 @@ class DraftOrderRuleTests(unittest.TestCase):
                 self.assertIn("enters the lottery like any other non-playoff club", rule)
                 self.assertTrue(lottery.states_own_rule(record["rule"], year))
                 self.assertEqual(record["rule"], lottery.rule_text(ROOT, year, seeds))
+        with mock.patch.object(lottery, "codes", lambda root=ROOT, y=None: {"Carolina Test Club": "CHA"}):
+            self.assertIn("Carolina, the expansion club, enters the lottery", one_line(lottery.rule_text(ROOT, 2006, 14, 30)))
         rule_2004 = one_line(lottery.rule_text(ROOT, 2004, 13, 29))
         self.assertIn("the 13 clubs", rule_2004)
         self.assertIn("holds No. 4 in the first round and No. 33 in the second", rule_2004)
@@ -195,6 +197,18 @@ class IncentiveTests(unittest.TestCase):
                 self.assertEqual(after["achievement"]["correction"]["corrected_on"], "2006-06-21")
                 self.assertEqual(after["minutes"]["status"], "met")
 
+    def test_a_correction_reads_the_contract_its_season_was_played_under(self):
+        """A later contract with other incentives never changes a closed season's correction."""
+        from runtime import season_close
+        later = {"incentives": [{"id": "achievement", "kind": "performance", "classification": "unlikely",
+                                 "benchmarks": {}, "amounts": {}}]}
+        with mock.patch.object(season_close, "wade_contract", lambda root=ROOT: later):
+            self.assertEqual(self.inc.incentive_errors(ROOT), [])
+            for season in ("2004-05", "2005-06"):
+                with self.subTest(season=season):
+                    self.assertEqual(self.inc.correction_record(season, ROOT),
+                                     read(PLAYER / season / "season_close_corrections.json"))
+
     def test_a_correction_that_differs_from_the_evaluator_is_refused(self):
         real = read(PLAYER / "2005-06/season_close_corrections.json")
         bad = deepcopy(real)
@@ -230,7 +244,9 @@ class IncentiveTests(unittest.TestCase):
         self.assertNotIn("Earned Unlikely bonuses", plain)
         self.assertIn("Earned Unlikely bonuses", text)
         self.assertIn("$505,320", text)
-        self.assertIn("corrected June 21, 2006", text)
+        self.assertIn("corrected June 21, 2006, [2005-06/season_close_corrections.json](../../../2005-06/season_close_corrections.json)",
+                      text)                                          # the corrected value's evidence, beside the close
+        self.assertEqual(text.count("[2005-06/season_close.json]"), 2)
         self.assertEqual(plain.split("## Eight-season commitments")[1].split("## Payroll notes")[0],
                          text.split("## Eight-season commitments")[1].split("## Payroll notes")[0])
         for heading in ("## Current cap position", "## Eight-season commitments", "## Payroll notes", "## Cap reconciliation"):
@@ -318,6 +334,11 @@ class BirthDateConflictTests(unittest.TestCase):
         izaguirre = next(p for p in uru if p["name"] == "Sebastián Izaguirre")
         self.assertEqual((izaguirre["birth_date"]["value"], izaguirre["birth_date"]["status"]), ("1985-04-12", "unverified"))
         self.assertIn("1985-12-04", izaguirre["birth_date"]["source"])
+        ukic = next(p for p in read(ROOT / "library/2005/league/nba_2005_prospect_evidence.json")["players_drafted"]
+                    if p.get("bbr_id") == "ukicro01")                     # the date the 2005 draft board read stands
+        self.assertEqual((ukic["birth_date"], ukic["birth_date_status"], ukic["age_on_draft_day"]), ("1984-05-12", "sourced", 21))
+        self.assertIn("1984-12-05", ukic["birth_date_conflict"])
+        self.assertIn("Unresolved", ukic["birth_date_conflict"])
         births = read(ROOT / "library/careers/nba_player_births.json")["players"]        # basketball-reference stands
         self.assertEqual((births["kutluib01"]["birth_date"], births["ndongbo01"]["birth_date"]), ("1974-07-01", "1977-03-09"))
         registry = {p.get("bbr_id"): p for p in read(LEAGUE / "player_registry.json")["players"]}

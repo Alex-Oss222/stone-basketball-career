@@ -291,14 +291,14 @@ def rule_text(root=ROOT, year=2004, lottery_clubs=None, clubs=None):
     k = rules["picks_drawn"]
     exp = own.get("expansion") or {}
     slot_1, slot_2 = exp.get("round_1_slot"), exp.get("round_2_slot")
-    name = exp.get("name", "Charlotte Bobcats").split()[0] if exp else ""
+    club = {v: k for k, v in codes(root, y).items()}                    # a code's club as the rosters name it
+    named = lambda c: club.get(c, c)
+    name = (exp.get("name") or named(exp["club"])).split()[0] if exp else ""
     text = (f"On the lottery date the {n} clubs that missed the simulated {season} playoffs are seeded by their simulated "
             f"records (worst first); an exact tie in record is ordered by an engine drawing. Picks 1 to {k} are "
             f"{WORDS.get(k, k)} engine "
             "draws, each weighted by the lottery combinations of the clubs not yet drawn (tied clubs split their seeds' "
             f"combinations; a drawing orders them and takes any remainder) (`{rules_path.as_posix()}`)")
-    club = {v: k for k, v in codes(root, y).items()}                    # a code's club as the rosters name it
-    named = lambda c: club.get(c, c)
     ineligible = rules.get("ineligible") or {}
     if ineligible:
         text += "; a club the rules file makes ineligible for a pick is left out of that pick's draw (" + "; ".join(

@@ -698,9 +698,11 @@ def earned_text(earned):
     in the committed salary or the counted totals above."""
     if not earned:
         return ""
-    lines = [f"- {e['player']}, {e['season']} `{e['clause']}` clause: ${e['amount']:,} (evaluated {long_date(e['evaluated_on'])}"
-             + (f", corrected {long_date(e['corrected_on'])}" if e.get("corrected_on") else "")
-             + f", [{e['source']}](../../../{e['source']}))" for e in earned]
+    lines = [f"- {e['player']}, {e['season']} `{e['clause']}` clause: ${e['amount']:,} (evaluated {long_date(e['evaluated_on'])}, "
+             f"[{e['source']}](../../../{e['source']})"
+             + (f"; corrected {long_date(e['corrected_on'])}" if e.get("corrected_on") else "")
+             + (f", [{e['correction_source']}](../../../{e['correction_source']})" if e.get("correction_source") else "")
+             + ")" for e in earned]
     seasons = sorted({e["season"] for e in earned})
     return ("\nEarned Unlikely bonuses (`runtime/incentives.py`; " + ", ".join(seasons) + f" Team Salary at its end, ${sum(e['amount'] for e in earned):,}; "
             "not in the committed salary or the counted totals above):\n\n" + "\n".join(lines) + "\n")
