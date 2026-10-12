@@ -297,10 +297,12 @@ def rule_text(root=ROOT, year=2004, lottery_clubs=None, clubs=None):
             f"{WORDS.get(k, k)} engine "
             "draws, each weighted by the lottery combinations of the clubs not yet drawn (tied clubs split their seeds' "
             f"combinations; a drawing orders them and takes any remainder) (`{rules_path.as_posix()}`)")
+    club = {v: k for k, v in codes(root, y).items()}                    # a code's club as the rosters name it
+    named = lambda c: club.get(c, c)
     ineligible = rules.get("ineligible") or {}
     if ineligible:
         text += "; a club the rules file makes ineligible for a pick is left out of that pick's draw (" + "; ".join(
-            f"{c}: No. " + ", ".join(map(str, picks)) for c, picks in sorted(ineligible.items())) + ")"
+            f"the {named(c)}: No. " + ", ".join(map(str, picks)) for c, picks in sorted(ineligible.items())) + ")"
     text += ". "
     if slot_1:
         text += (f"{name}, the expansion club, holds No. {slot_1} in the first round"
@@ -310,7 +312,8 @@ def rule_text(root=ROOT, year=2004, lottery_clubs=None, clubs=None):
     first = k + 1 + (slot_1 == k + 1)
     last = n + (1 if slot_1 and slot_1 <= n + 1 else 0)
     forfeit = own.get("forfeited") or {}
-    gone = [f"{c}'s first-round pick" for c in forfeit.get("round_1", [])] + [f"{c}'s second-round pick" for c in forfeit.get("round_2", [])]
+    gone = ([f"the first-round pick of the {named(c)}" for c in forfeit.get("round_1", [])]
+            + [f"the second-round pick of the {named(c)}" for c in forfeit.get("round_2", [])])
     text += (f"The other lottery clubs take picks {first} to {last} in seed order; the playoff clubs take the rest of the "
              "first round by record, worst first ("
              + (f"forfeited and skipped: {_clubs(gone)}" if gone else "no pick is forfeited")
@@ -374,7 +377,8 @@ def _convey_written(root, y):
     record = _read(path)
     seconds = convey_draft_night_seconds(record["picks"], root, y.year, codes(root, y), _names(root, y))
     if seconds:
-        record["rule"] = rule_text(root, y.year)
+        if not states_own_rule(record.get("rule"), y.year):     # a year's own rule already states the conveyance
+            record["rule"] = rule_text(root, y.year, len(record["lottery_seeds"]))
         record["draft_night_seconds"] = record.get("draft_night_seconds", []) + seconds
         path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return seconds

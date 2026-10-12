@@ -599,7 +599,14 @@ def refresh_finance(writer, front_office, day):
         outcome = outcomes.get(status.get(item["player"], ""))
         if outcome and item.get("status") != outcome:
             item.update(status=outcome, decided=item.get("deadline"))
-    writer.text(TEAM / "Finances/cap_sheet.md", cap_sheet_text(sheet, writer.load(TEAM / "Finances/free_agent_rights.json"), room, day))
+    from .incentives import finance_bonuses                         # earned at the closed season's end, from 2006-06-21
+    earned = finance_bonuses(SEASON, day, writer.root)
+    if earned:
+        finance["earned_unlikely_bonuses"] = earned
+    else:
+        finance.pop("earned_unlikely_bonuses", None)
+    writer.text(TEAM / "Finances/cap_sheet.md", cap_sheet_text(sheet, writer.load(TEAM / "Finances/free_agent_rights.json"), room, day,
+                                                               earned))
 
 
 CONTROL_LINE = re.compile(r"^\*\*Contract/control:\*\*[^\n]*$", re.M)
@@ -628,7 +635,9 @@ def sync_cards(writer, day):
             writer.text(rel, updated)
 
 
-def cap_sheet_text(sheet, rights, room, day):
+def cap_sheet_text(sheet, rights, room, day, earned=()):
+    """The cap sheet on the date; `earned`: the closed season's earned Unlikely bonuses (`incentives.finance_bonuses`),
+    listed under the payroll notes, outside the committed salary and the counted totals."""
     rows = []
     totals = {s: 0 for s in HORIZON}
     for p in sorted(sheet["players"], key=lambda p: -(p["schedule"].get(SEASON) or 0)):
@@ -677,11 +686,24 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 ## Payroll notes
 
 Signings and renouncements are dated in the free-agency note (`../../01_Free_Agency/note.md`) and the negotiation records. Renounced players keep no hold or Bird rights until the next June 30.
-
+{earned_text(earned)}
 ## Cap reconciliation
 
 Figures are recomputed from `contract_schedules.json` and `free_agent_rights.json` by `runtime/signing.py` on every transaction; `finance.json` carries the same totals for the date.
 """
+
+
+def earned_text(earned):
+    """The cap sheet's lines for earned Unlikely bonuses: they count in the closed season's Team Salary at its end, never
+    in the committed salary or the counted totals above."""
+    if not earned:
+        return ""
+    lines = [f"- {e['player']}, {e['season']} `{e['clause']}` clause: ${e['amount']:,} (evaluated {long_date(e['evaluated_on'])}"
+             + (f", corrected {long_date(e['corrected_on'])}" if e.get("corrected_on") else "")
+             + f", [{e['source']}](../../../{e['source']}))" for e in earned]
+    seasons = sorted({e["season"] for e in earned})
+    return ("\nEarned Unlikely bonuses (`runtime/incentives.py`; " + ", ".join(seasons) + f" Team Salary at its end, ${sum(e['amount'] for e in earned):,}; "
+            "not in the committed salary or the counted totals above):\n\n" + "\n".join(lines) + "\n")
 
 
 # -- validation ------------------------------------------------------------------------------------
@@ -728,6 +750,10 @@ def ledger_errors(root=ROOT):
         for pick in finance.get("draft_rights", []):
             if pick["player"] in signed and pick.get("contract_status") != "signed":
                 errors.append(f"finance.json: {pick['player']} signed but still listed as unsigned draft rights")
+    from .incentives import finance_bonuses                         # [] before 2006-06-21: no earlier summary changes
+    if finance.get("earned_unlikely_bonuses", []) != finance_bonuses(SEASON, state["current_date"], root):
+        errors.append("finance.json: earned_unlikely_bonuses does not match the season's incentive evaluation on the "
+                      "career date (runtime/incentives.finance_bonuses)")
     by_name = {p["player"]: p for p in sheet["players"]}
     for p in roster["players"]:
         if p["status"] not in ("signed_free_agent", "re_signed"):

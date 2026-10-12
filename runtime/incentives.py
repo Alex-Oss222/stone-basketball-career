@@ -19,6 +19,15 @@ clauses, closed as `unrecorded` before the scoring benchmark was read, were both
 amounts) on Wade's new contract-sheet row, and the earned Unlikely bonuses of the season it closes on that season's
 finance summary (`earned_unlikely_bonuses`): an Unlikely bonus counts in Team Salary only once earned, at its season's
 end. Classifications already recorded and the cap decisions taken on them stand.
+
+Where an earned bonus flows, from BONUS_FLOW_FROM (the day the corrections take effect; every record written before
+stands, and the 2004 and 2005 rollovers replay unchanged): the live season's finance summary and cap sheet
+(`finance_bonuses`, written by `signing.refresh_finance` and checked by `signing.ledger_errors`, so
+`scripts/reconcile.py` rebuilds a summary that lacks them), and the rollover (`Rollover.bonus_records`). It never
+enters the counted salary the cap room, the payrolls and the trade rules read: those count a season's Salary while it
+is played, and an earned bonus belongs to the closed season's end. No decision reads it: Wade's 2006-07 option year
+carries no incentives, so no later Likely/Unlikely classification depends on it, and the career keeps no record of
+cash paid (Wade's earnings).
 """
 from __future__ import annotations
 
@@ -32,6 +41,7 @@ SCORING = re.compile(r"At least ([\d.]+) points per game while appearing in at l
 CORRECTED_FROM = "2006-06-21"      # the audit's corrections of closed evaluations take effect the day after the clock
 CORRECTION_REASON = ("audit (October 2026): the season close's evaluator did not read a scoring benchmark and closed the "
                      "clause unrecorded; the closed regular-season results decide it")
+BONUS_FLOW_FROM = CORRECTED_FROM   # the normal writers carry earned bonuses from this date (finance summary, rollover)
 HONOR_WORDS = (("All-Rookie", "All-Rookie"), ("All-NBA", "All-NBA"), ("All-Star", "All-Star"),
                ("Most Valuable Player", "Most Valuable Player"), ("Rookie of the Year", "Rookie of the Year"))
 
@@ -194,13 +204,33 @@ def bonus_evaluation(entry, on, root=ROOT):
 
 
 def earned_unlikely(entry, season, on, root=ROOT):
-    """[{player, season, clause, amount, evaluated_on, source}] for the Unlikely bonuses an entry earned in the season."""
+    """[{player, season, clause, amount, evaluated_on, source, corrected_on?}] for the Unlikely bonuses an entry earned in
+    the season (`corrected_on`: the clause was met by a dated correction of its close)."""
     evaluation = bonus_evaluation(entry, on, root).get(season)
     if not evaluation:
         return []
     return [{"player": entry["player"], "season": season, "clause": c["id"], "amount": c["amount"],
-             "evaluated_on": evaluation["evaluated_on"], "source": evaluation["source"]}
+             "evaluated_on": evaluation["evaluated_on"], "source": evaluation["source"],
+             **({"corrected_on": c["corrected_on"]} if c.get("corrected_on") else {})}
             for c in evaluation["clauses"] if c["classification"] == "unlikely" and c["status"] == "met"]
+
+
+def wade_entry(season, root=ROOT):
+    """Wade's row with incentive clauses on a season's contract sheet, or None."""
+    path = Path(root) / PLAYER / season / "00_Team/Finances/contract_schedules.json"
+    if not path.is_file():
+        return None
+    return next((e for e in _read(path)["players"] if e.get("player") == "Dwyane Wade" and e.get("incentives")), None)
+
+
+def finance_bonuses(season, on, root=ROOT):
+    """The earned Unlikely bonuses a season's finance summary dated `on` carries (`earned_unlikely_bonuses`): Wade's
+    bonuses earned in that season as its evaluation stands on the date, corrections in force included; [] before
+    BONUS_FLOW_FROM, before the season's close, or for a season with no clause."""
+    if on < BONUS_FLOW_FROM:
+        return []
+    entry = wade_entry(season, root)
+    return earned_unlikely(entry, season, on, root) if entry else []
 
 
 def incentive_errors(root=ROOT):

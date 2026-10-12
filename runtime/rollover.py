@@ -248,8 +248,12 @@ class Rollover:
     def bonus_records(self, entries):
         """Wade's incentives evaluated on the rollover date (`incentives.bonus_evaluation`: every closed season of the
         contract, with the dated corrections in force) on his new contract-sheet row; returns the Unlikely bonuses he
-        earned in the season closing, for its finance summary. Classifications and counted salaries are not touched."""
-        from .incentives import bonus_evaluation, earned_unlikely
+        earned in the season closing, for its finance summary. Classifications and counted salaries are not touched.
+        From `incentives.BONUS_FLOW_FROM` (the 2006 rollover on): the 2004 and 2005 rollovers wrote neither, and replay
+        unchanged (Wade's rows keep the placeholder text)."""
+        from .incentives import BONUS_FLOW_FROM, bonus_evaluation, earned_unlikely
+        if self.day < BONUS_FLOW_FROM:
+            return []
         earned = []
         for e in entries:
             if not e.get("bbr_id") and e.get("incentives"):
