@@ -17,7 +17,7 @@ from pathlib import Path
 from .valuation import read
 from .contract_archive import archive_contract, archive_previous_contract
 from .contracts import counted_amount
-from .miami_register import required_position
+from .miami_register import guess_in_force, positions_on, required_position
 
 ROOT = Path(__file__).resolve().parents[1]
 from .seasons import active as _live_season, label as _label
@@ -109,25 +109,47 @@ def set_state(writer, day, area="01_Free_Agency", note="01_Free_Agency/note.md",
     return state
 
 
-def league_identity(root, bbr_id):
+def league_identity(root, bbr_id, on=None):
     """Identity from the league baseline (position, birth date, jersey, photo) for a new Miami player. A birth date or
     position the first source lacks comes from the draft classes' prospect evidence (`prospect_identities`) and the
     researched birth dates (`write_back.identity_sources`, which reads `library/careers/nba_player_births.json`); a
-    registry row whose position no source records gives none (`write_back.known_position`), never its page slot."""
+    registry row whose position no source records gives none (`write_back.known_position`), never its page slot.
+
+    After POSITION_GUESS_UNTIL (the reading date `on`, else the career clock) a position still missing comes from the
+    live season's position sources (`write_back.position_sources`: its real rosters, Miami's registers, the draft
+    classes, the unattached identities, earlier seasons' rosters and expiring lists, nothing past the live season), so a
+    writer's `required_position` stops only for a player no source records (the final audit of 2006-06-20, R6). Through
+    it the answer is the one every recorded decision read."""
     found = _baseline_identity(root, bbr_id)
     if not bbr_id:
         return found
     prospect = prospect_identities(root).get(bbr_id, {})
     if not found and prospect:
         found = dict(prospect, club=None)
+    position = (found or {}).get("position") or prospect.get("position")
+    if not position and not guess_in_force(root, on):
+        from .write_back import id_names
+        name = (found or {}).get("player_id") or id_names(root).get(bbr_id)
+        position = _sourced_position(root, bbr_id, name)
+        if position and not found:
+            found = {"player_id": name, "club": None}
     if found and not found.get("birth_date"):
         from .write_back import identity_sources
         born = identity_sources(root)[1].get(bbr_id) or prospect.get("birth_date")
         if born:
             found["birth_date"] = born
-    if found and not found.get("position") and prospect.get("position"):
-        found["position"] = prospect["position"]
+    if found and position:
+        found["position"] = position
     return found
+
+
+def _sourced_position(root, bbr_id, name=None):
+    """The player's position in the live season's position sources (`write_back.position_sources` through the live
+    season, read by bbr_id, then by a name one source gives one position), or None."""
+    from .seasons import active
+    from .write_back import position_sources, registry_position
+    live = active(root)
+    return registry_position(position_sources(root, live, through=live), bbr_id, name)[0]
 
 
 def _baseline_identity(root, bbr_id):
@@ -139,8 +161,10 @@ def _baseline_identity(root, bbr_id):
     for p in read("career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json", root)["players"]:
         if p.get("bbr_id") == bbr_id:
             return {"player_id": p["name"], "position": known_position(p), "birth_date": p.get("birth_date"), "club": p.get("team_name")}
-    extra = Path(root) / "library/2003/league/nba_2003_unattached_identities.json"
-    if extra.is_file():
+    # Every summer's unattached identities (`library/<year>/league/nba_<year>_unattached_identities.json`): players no
+    # baseline, roster or registry row lists, such as real Miami's players rule 1 leaves unsigned (2003: Haslem; 2006:
+    # Barron, Hite, Quinn in the summer pool).
+    for extra in sorted(Path(root).glob("library/*/league/nba_*_unattached_identities.json")):
         for p in json.loads(extra.read_text(encoding="utf-8"))["players"]:
             if p.get("bbr_id") == bbr_id:
                 return dict(p, club=None)
@@ -403,7 +427,7 @@ def sign(writer, negotiation, day, *, via_trade=None, cap=None):
     control = f"Signed {long_date(day)}: {terms['years']} seasons, ${sum(terms['schedule']):,} (${terms['first_year']:,} in 2003-04), ${terms['guaranteed']:,} guaranteed; route {route}."
     if acquired:
         control = f"Acquired by sign-and-trade from {via_trade['trade']['partner']} on {long_date(day)}: " + control[len("Signed "):]
-    identity = league_identity(writer.root, bbr)
+    identity = league_identity(writer.root, bbr, on=day)
     existing = next((p for p in roster["players"] if p["name"] == name), None)
     if existing:
         existing.update(status="re_signed", control=control)
@@ -926,6 +950,17 @@ def arrival_card_for_trade(root, name, identity, day, control, record_rel, bbr, 
                         f"Acquired by trade from {club}", root)
 
 
+def departure_position(root, roster, name, bbr, day):
+    """A player Miami sends out, as the departures ledger records him: his register row's first position on `day` (a
+    dated correction counts from its date, `miami_register.positions_on`), else the league identity's
+    (`required_position`). Every recorded trade's departure reads the same from his row (the final audit of
+    2006-06-20, R6)."""
+    row = next((r for r in roster["players"] if r["name"] == name), None)
+    position = next(iter(positions_on(row, day)), None) if row else None
+    position = position or required_position(league_identity(root, bbr, on=day).get("position"), day, name)
+    return position.split("-")[0]
+
+
 def apply_trade(writer, record, day, desk=None):
     """Write an accepted trade: Miami's side into every record, the partner's side into the departures ledger.
 
@@ -964,9 +999,8 @@ def apply_trade(writer, record, day, desk=None):
             if e["player"] == name and e["until"] is None:
                 e["until"] = day
         prior = stats.get(bbr, {}).get("totals", {})
-        identity = league_identity(writer.root, bbr)
         departures["entries"].append({"player": name, "bbr_id": bbr, "club": club, "from": day, "until": None,
-                                      "position": required_position(identity.get("position"), day, name).split("-")[0],
+                                      "position": departure_position(writer.root, roster, name, bbr, day),
                                       "games": prior.get("games", 0), "minutes": prior.get("minutes", 0),
                                       "basis": f"traded {day} ({record['trade_id']}); previous share from {prior_label} totals"})
     # Miami's incoming players (a sign-and-trade acquisition was written by `sign` from the agreed terms)
@@ -995,7 +1029,7 @@ def apply_trade(writer, record, day, desk=None):
             if p.get(field):
                 entry[field] = p[field]
         sheet["players"] = [x for x in sheet["players"] if x["player"] != name] + [entry]
-        identity = league_identity(writer.root, bbr)
+        identity = league_identity(writer.root, bbr, on=day)
         salary = p["schedule"].get(SEASON) or 0
         control = f"Acquired by trade from {club} on {long_date(day)}: ${salary:,} in {SEASON}; contract through {max(s for s, v in p['schedule'].items() if v)}."
         position = required_position(identity.get("position"), day, name)

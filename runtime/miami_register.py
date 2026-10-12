@@ -15,7 +15,10 @@ already does for a birth date recorded later (`injuries.simulated_ages`). Every 
   missing position stops the writer with the player's name instead of being guessed (the audit of 2006-06-20). A
   ranking by positional fit (free-agent targets, refill and camp candidates) asks `ranked_position`, which leaves such
   a candidate unranked instead; the front office's position table (`gm.FrontOffice._positions`) reads a registry row
-  with no recorded position (`write_back.known_position`) as none from the same day.
+  with no recorded position (`write_back.known_position`) as none from the same day, and so does the summer market's
+  identity (`free_agency_2004.identity`). A writer's position comes from the player's register row (a departure,
+  `signing.departure_position`), else `signing.league_identity`, which from the same day also reads the live season's
+  position sources, so only a player no source records stops it (the final audit of 2006-06-20).
 """
 from __future__ import annotations
 
@@ -57,6 +60,19 @@ def ranked_position(value, day):
     if value:
         return value
     return GUESSED_POSITION if day and day <= POSITION_GUESS_UNTIL else None
+
+
+def guess_in_force(root, on=None):
+    """Whether a reader reading on `on` (else the career clock) is on or before POSITION_GUESS_UNTIL, when a registry
+    row's page slot still counted as a position and recorded decisions read as made. A root with no season state (a test
+    scaffold) reads as before the clock, as every such reader did."""
+    if not on:
+        from .write_back import clock
+        try:
+            on = clock(root)
+        except ValueError:                       # no current_state.json under the root
+            return True
+    return on <= POSITION_GUESS_UNTIL
 
 
 def required_position(value, day, who):

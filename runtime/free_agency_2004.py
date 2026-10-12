@@ -124,6 +124,10 @@ LINE_LABELS_FROM = 2006                 # from this summer a consultation's line
 LOST_BIRD_FROM = 2006                   # the first summer after a consent trade could happen (trades.CONSENT_FROM, 2005-12-01)
 ID_NAMES_FROM = 2006                    # from this summer a player no identity source names takes his careers-file name, never
                                         # his NBA id (the June 2006 audit: the 2005 market wrote three rookies by id)
+UNATTACHED_FROM = 2006                  # from this summer the identity also reads the unattached identities recorded for the
+                                        # summers from it to its own (`library/<year>/league/nba_<year>_unattached_identities.json`):
+                                        # a pool player no registry row or roster lists takes his position and birth date from
+                                        # them (the final audit of 2006-06-20, R2: Barron, Hite, Quinn had no position)
 REQUESTS = FOLDER / "wade_requests.json"
 UNTOUCHABLE = {"dwyane_wade"}           # Miami's AI/GM keeps its franchise cornerstone off the market (judgement)
 HOLD_SHARE = 1.5                        # cap hold: 150% of the prior salary
@@ -277,7 +281,10 @@ def identity(root=ROOT, year=None, on=None):
     `year_context`), else the summer that opened the career's live season (the season-change audit: outside a context
     this used the 2004 rules in every later season, one season of service short and without the new draftees).
     With `on`, the registry is read as it stood that day: a row added later (`added_on`, a debut written by the season's
-    games) was unknown then, so a replay of a closed summer reads the inputs the summer itself read."""
+    games) was unknown then, so a replay of a closed summer reads the inputs the summer itself read. After
+    POSITION_GUESS_UNTIL (the reading date `on`, else the career clock) a registry row whose position no source records
+    has none, not its page slot (`write_back.known_position`, as `signing.league_identity` and the front office's
+    position table read it; the final audit of 2006-06-20, X-5); every recorded summer read on its own dates, unchanged."""
     root = Path(root)
     if year is None and not _IN_CONTEXT:
         from .seasons import active
@@ -285,20 +292,34 @@ def identity(root=ROOT, year=None, on=None):
     if year is not None and int(year) != YEAR:
         with year_context(int(year), root):
             return identity(root, on=on)
+    from .miami_register import guess_in_force
     from .rotations import load_rosters
-    from .write_back import position_on              # a corrected position reads as it stood on the day (dated replay)
-    out = {}
+    from .write_back import UNKNOWN_BASIS, position_on   # a corrected position reads as it stood on the day (dated replay)
+    out, slot_counts = {}, None                     # slot_counts: an unsourced row's page slot still reads as his position
     registry = _read(root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json")
     for p in registry["players"] if isinstance(registry, dict) else registry:
         if on is not None and (p.get("added_on") or "") > on:
             continue
         if p.get("bbr_id"):
-            out[p["bbr_id"]] = {"name": p["name"], "birth_date": p.get("birth_date"), "position": position_on(p, on)}
+            position = position_on(p, on)
+            if p.get("position_basis") == UNKNOWN_BASIS:
+                slot_counts = guess_in_force(root, on) if slot_counts is None else slot_counts
+                position = position if slot_counts else None
+            out[p["bbr_id"]] = {"name": p["name"], "birth_date": p.get("birth_date"), "position": position}
     for season in (SEASON, NEW):
         for club in load_rosters(season, root).values():
             for p in club["players"]:
                 if p.get("bbr_id"):
                     e = out.setdefault(p["bbr_id"], {"name": p["player_id"], "birth_date": p.get("birth_date"), "position": p.get("position")})
+                    e["birth_date"] = e.get("birth_date") or p.get("birth_date")
+                    e["position"] = e.get("position") or p.get("position")
+    if YEAR >= UNATTACHED_FROM:
+        for path in sorted(root.glob("library/*/league/nba_*_unattached_identities.json")):
+            if not UNATTACHED_FROM <= int(path.parts[-3]) <= YEAR:
+                continue
+            for p in _read(path)["players"]:
+                if p.get("bbr_id"):
+                    e = out.setdefault(p["bbr_id"], {"name": p.get("player_id") or p.get("name"), "birth_date": None, "position": None})
                     e["birth_date"] = e.get("birth_date") or p.get("birth_date")
                     e["position"] = e.get("position") or p.get("position")
     if YEAR >= ID_NAMES_FROM:

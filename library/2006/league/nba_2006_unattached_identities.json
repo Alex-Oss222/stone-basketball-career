@@ -1,0 +1,59 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2006-07",
+ "kind": "player_identities",
+ "purpose": "Identity for players in the 2006 summer pool whom no identity source the summer reads positions: no registry row, no prospect evidence, and no roster file before 2006-07 that lists them (rule 1 takes real Miami's players off the real rosters). Position, birth date and years of NBA service before 2006-07, read from Basketball-Reference player pages. Identity only: no results, contracts or later seasons. Read by the summer market from 2006 (`free_agency_2004.identity`, `UNATTACHED_FROM`), by `signing.league_identity` and by `write_back.position_sources` for 2006-07 and later.",
+ "researched_on": "2026-10-12",
+ "position_rule": "`position` is the first position the player page lists (`position_listed` quotes the page), as the registry and `write_back.position_sources` read a source's label.",
+ "players": [
+  {
+   "player_id": "Earl Barron",
+   "name": "Earl Barron",
+   "bbr_id": "barroea01",
+   "position": "C",
+   "position_listed": "Center",
+   "position_status": "verified",
+   "birth_date": "1981-08-14",
+   "height": "7-0",
+   "college": "Memphis",
+   "pre_2006_path": "College at Memphis; one NBA season before 2006-07 (2005-06, his first).",
+   "nba_seasons_before_2006_07": 1,
+   "service_basis": "One NBA season before 2006-07: 2005-06, his first (Basketball-Reference player page; `nba_2006_service_years.json` seasons_through_2005_06 = 1).",
+   "nba_history": true,
+   "page_url": "https://www.basketball-reference.com/players/b/barroea01.html"
+  },
+  {
+   "player_id": "Robert Hite",
+   "name": "Robert Hite",
+   "bbr_id": "hitero01",
+   "position": "SG",
+   "position_listed": "Shooting Guard",
+   "position_status": "verified",
+   "birth_date": "1984-01-12",
+   "height": "6-2",
+   "college": "Miami (FL)",
+   "pre_2006_path": "College at Miami (FL); no NBA season before 2006-07.",
+   "nba_seasons_before_2006_07": 0,
+   "service_basis": "No NBA season before 2006-07.",
+   "nba_history": false,
+   "page_url": "https://www.basketball-reference.com/players/h/hitero01.html"
+  },
+  {
+   "player_id": "Chris Quinn",
+   "name": "Chris Quinn",
+   "bbr_id": "quinnch01",
+   "position": "PG",
+   "position_listed": "Point Guard and Shooting Guard",
+   "position_status": "verified",
+   "birth_date": "1983-09-27",
+   "height": "6-2",
+   "college": "Notre Dame",
+   "pre_2006_path": "College at Notre Dame; no NBA season before 2006-07.",
+   "nba_seasons_before_2006_07": 0,
+   "service_basis": "No NBA season before 2006-07.",
+   "nba_history": false,
+   "page_url": "https://www.basketball-reference.com/players/q/quinnch01.html"
+  }
+ ]
+}

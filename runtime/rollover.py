@@ -144,11 +144,14 @@ class Rollover:
                                                        "birth_date": p.get("birth_date") or found.get("birth_date")})
                     out[slug(p["player"])].update(draft_pick=p["pick"], draft_round=p["round"], college=p.get("college"))
         # What those sources leave open: a birth date from the researched births and the draft classes' prospect
-        # evidence (`signing.league_identity`'s sources), a position from the prospect evidence. A registry row whose
-        # position no source records holds only its page slot, which is no position (`write_back.known_position`).
+        # evidence (`signing.league_identity`'s sources), a position from the prospect evidence, then from the new
+        # season's position sources (`write_back.position_sources` through it: its real rosters, the draft classes, the
+        # unattached identities, Miami's registers; the final audit of 2006-06-20, R2). A registry row whose position no
+        # source records holds only its page slot, which is no position (`write_back.known_position`).
         from .signing import prospect_identities
-        from .write_back import UNKNOWN_BASIS, identity_sources
+        from .write_back import UNKNOWN_BASIS, identity_sources, position_sources, registry_position
         births, prospects = identity_sources(self.root)[1], prospect_identities(self.root)
+        sources = None                                   # read once, and only when a position is still missing
         registry = self.root / PLAYER / "Stats_and_Awards/League/player_registry.json"
         unknown = {r["bbr_id"] for r in (_read(registry)["players"] if registry.is_file() else [])
                    if r.get("bbr_id") and r.get("position_basis") == UNKNOWN_BASIS}
@@ -159,6 +162,9 @@ class Rollover:
                 e["position"] = picked.get(b)
             if not e.get("position") and found.get("position"):
                 e["position"] = found["position"]
+            if not e.get("position"):
+                sources = position_sources(self.root, self.new, through=self.new) if sources is None else sources
+                e["position"] = registry_position(sources, b, e.get("name"))[0]
             if not e.get("birth_date") and (births.get(b) or found.get("birth_date")):
                 e["birth_date"] = births.get(b) or found["birth_date"]
         for p in _read(self.old_team / "Team/Roster/roster.json")["players"]:
