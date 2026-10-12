@@ -13,7 +13,7 @@ from pathlib import Path
 import re
 
 from .stable_json import stable
-from .career_stats import aggregate, identity_at
+from .career_stats import aggregate, identity_at, staff_role
 from .rookie_contract import rookie_terms
 
 GENERATED = "<!-- Generated live career view; edit canonical event records and rebuild. -->\n"
@@ -337,10 +337,8 @@ def _basketball_views(c, contract):
                   if p.get("name", p.get("player")) == c.name]
     role = "Unassigned rookie; staff role decision pending" if unassigned else _text(c.identity.get("role"))
     if reviewed:
-        minutes = next((p.get("minutes", 0) for p in rotation["players"] if p["player_id"] == c.name), 0)
-        positions = [pos for pos, name in rotation.get("starters", {}).items() if name == c.name]
-        assignment = "Starting " + "/".join(positions) if positions else "Rotation" if minutes else "Outside current rotation"
-        role = f"{assignment}; staff plan {minutes:g} minutes"
+        role = staff_role(rotation, c.name)
+    c.role = role                   # the trade update's "Staff role after a move" reads the same dated role
     offseason, camp_phase = c.phase("03_Offseason"), c.phase("04_Training_Camp")
     c.source(offseason["path"], "Offseason player decisions and events")
     c.source(camp_phase["path"], "Training-camp events and player response")
@@ -655,7 +653,7 @@ def build_milestone_payload(player: Path, identity: dict, records: list, *, root
             _table("Actual transaction register", ["Proposed", "Known status", "Partner", "Miami sends", "Miami receives", "Applied", "Outcome / reason", "Source"], trades),
             _table("What this changes for you", ["Item", "Current evidence"], [
                 ["Current club", c.state.get("team")], ["Trade involving Wade", _text(player_trades, "Not established by a transaction record")],
-                ["Staff role after a move", _text(c.identity.get("role"))],
+                ["Staff role after a move", _text(c.role)],
                 ["Report / travel deadline", "No actual assignment notice supplied"],
                 ["Physical or reporting requirements", "Use the dated notice; no timer invented"],
                 ["Contract or guarantees", "Inspect executed transaction and contract records; no automatic rewrite"]]),

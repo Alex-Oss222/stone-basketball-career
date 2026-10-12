@@ -54,11 +54,66 @@ def identity_at(identity: dict, as_of: str, season: str | None = None) -> dict:
     birth = date.fromisoformat(identity["date_of_birth"])
     age = cutoff.year - birth.year - ((cutoff.month, cutoff.day) < (birth.month, birth.day))
     out = {**identity, **snapshot, "age": age, "report_as_of": as_of}
+    # The staff's role and the injured list on the cutoff, from their own dated records (`attach_status`). A snapshot
+    # sets a role when its text changes (training camp, the rollover's carried-over role); a later staff review in
+    # force on the cutoff replaces it. A snapshot that only copies the role forward (a number, a contract) never does.
+    ordered = sorted(snapshots, key=lambda s: s["as_of"])
+    role_set = ordered[0]["as_of"]
+    for before, after in zip(ordered, ordered[1:]):
+        if after.get("role") != before.get("role"):
+            role_set = after["as_of"]
+    review = max((r for r in identity.get("staff_roles", ()) if role_set <= r["as_of"] <= as_of
+                  and (not r.get("until") or as_of < r["until"]) and r["team"] == out.get("team")),
+                 key=lambda r: r["as_of"], default=None)
+    if review:
+        out["role"] = review["role"]
+    stint = next((e for e in identity.get("injured_list", ())
+                  if e["placed"] <= as_of and (not e.get("activated") or as_of < e["activated"])), None)
+    if stint:
+        out["availability"] = (f"Injured list since {stint['placed']}: "
+                               + "; ".join(x for x in (stint.get("injury"), stint.get("reason")) if x))
     if "contract_terms" in identity:
         # the season's salary and option status from its contract record (runtime/identity_contract.py)
         from .identity_contract import line
         out["contract"] = line(identity["contract_terms"], snapshot.get("contract"), as_of, season)
     return out
+
+
+def staff_role(rotation: dict, name: str) -> str:
+    """The role a dated staff rotation gives the player: "Starting SG; staff plan 40 minutes"."""
+    minutes = next((p.get("minutes", 0) for p in rotation["players"] if p["player_id"] == name), 0)
+    positions = [pos for pos, n in rotation.get("starters", {}).items() if n == name]
+    assignment = "Starting " + "/".join(positions) if positions else "Rotation" if minutes else "Outside current rotation"
+    return f"{assignment}; staff plan {minutes:g} minutes"
+
+
+def attach_status(identity: dict, player: Path) -> dict:
+    """A copy of the identity carrying the dated records `identity_at` reads between snapshots (the audit of June 2006
+    on the career clock: every page from the 2004-11-25 review on still said "staff plan 34 minutes", and pages dated
+    on the injured list said "No current restriction"):
+    - `staff_roles`: each fortnightly staff review (`00_Team/Team/Depth_Chart/Reviews/<date>/rotation.json`) that lists
+      the player, in force from its date until the next season's camp decision (`Depth_Chart/rotation.json`), whose
+      role the camp snapshot records;
+    - `injured_list`: his stints on Miami's dated injured list (`00_Team/Transactions/injured_list.json`).
+    Read-only: it writes no record and changes no snapshot."""
+    player = Path(player)
+    name = identity.get("display_name") or identity["full_name"]
+    aliases = set(identity.get("aliases", [])) | {identity["player_id"], name}
+    seasons = sorted(p for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)
+                     and (p / "current_state.json").is_file())
+    roles, stints = [], []
+    for i, season in enumerate(seasons):
+        camp = seasons[i + 1] / "00_Team/Team/Depth_Chart/rotation.json" if i + 1 < len(seasons) else None
+        until = json.loads(camp.read_text(encoding="utf-8"))["as_of"] if camp and camp.is_file() else None
+        for path in sorted((season / "00_Team/Team/Depth_Chart/Reviews").glob("*/rotation.json")):
+            rotation = json.loads(path.read_text(encoding="utf-8"))
+            if any(p["player_id"] == name for p in rotation.get("players", [])):
+                roles.append(dict(as_of=rotation["as_of"], until=until, team=rotation.get("team"),
+                                  role=staff_role(rotation, name), source=path.relative_to(player).as_posix()))
+        ledger = season / "00_Team/Transactions/injured_list.json"
+        if ledger.is_file():
+            stints += [e for e in json.loads(ledger.read_text(encoding="utf-8")).get("entries", []) if e["player"] in aliases]
+    return {**identity, "staff_roles": roles, "injured_list": stints}
 
 
 def normalize_line(row: dict, *, weighted_free_throws=False) -> dict:
@@ -208,6 +263,9 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
         record.update(coverage="missing_box", appearance="Unknown: missing player box")
         result_file = meta.get("result_file")
         if not result_file:
+            label = re.fullmatch(r"([WL]) \d+-\d+", meta.get("result") or "")
+            if label:
+                record["win"] = label.group(1) == "W"      # the note's score still classifies a game without a box
             records.append(record)
             continue
         source = (note.parent / result_file).resolve()
@@ -258,6 +316,14 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
             record.update(team=raw[side], opponent=raw[other], venue="neutral" if raw.get("venue") == "neutral" else side,
                           result=result_label,
                           win=scores[side] > scores[other])
+        elif meta.get("player_team") in (raw.get("home"), raw.get("away")):
+            # Missing from the box (2003-04 preseason Games 3-7): his club's score still makes the game a win or a loss,
+            # so the Wins/Losses splits read N/A like every other split instead of a complete-looking G = 0.
+            own = "home" if raw["home"] == meta["player_team"] else "away"
+            other = "away" if own == "home" else "home"
+            if meta["result"] != f"{'W' if scores[own] > scores[other] else 'L'} {scores[own]}-{scores[other]}":
+                raise ValueError(f"{note}: score disagrees with result")
+            record["win"] = scores[own] > scores[other]
         if matches:
             line = normalize_line(matches[0][1], weighted_free_throws=raw.get("free_throw_mode") == "weighted")
             if line["seconds"] > raw["game_seconds"] + .01:
@@ -266,7 +332,10 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
         elif inactive and listed:
             record.update(coverage="complete", appearance=f"DNP: injured list since {listed['placed']}")
         elif inactive:
-            record.update(coverage="complete", appearance="DNP: inactive (reason not specified)")
+            # The result's absence entry names why he was inactive (an engine draw: "illness or personal", an injury).
+            kind = next((a.get("kind") for a in raw.get("absences", []) or []
+                         if a.get("player_id") in aliases and a.get("side") == inactive[0]), None)
+            record.update(coverage="complete", appearance=f"DNP: inactive ({kind or 'reason not specified'})")
         # An absent player row is not evidence of either an appearance or a DNP.
         records.append(record)
     return sorted(records, key=lambda r: (r["date"], str(r["note"])))

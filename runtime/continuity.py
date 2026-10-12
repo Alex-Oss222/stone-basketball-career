@@ -21,7 +21,8 @@ Players
 - A player on both seasons' Miami registers keeps his identity (Basketball-Reference id and date of birth).
 Numbers
 - Every active Miami player has a uniform number and no two share one; Wade's number on the register is the one
-  his dated identity carries, and it changes between seasons only through a jersey record.
+  his dated identity carries, and it changes between seasons only through a jersey record. A register without a
+  number for Wade while his dated identity carries one is a break too (a settled number stays his, `runtime/jerseys.py`).
 
 `errors(root)` returns the problems (validation and the rollover's finish refuse them);
 `python scripts/audit_continuity.py` prints them with a summary.
@@ -180,6 +181,9 @@ def number_errors(root, season, day):
         latest = max(snaps, key=lambda s: s["as_of"]).get("jersey")
         if numbers.get(WADE) and latest and str(latest) != str(numbers[WADE]):
             errors.append(f"{season}: Wade wears #{numbers[WADE]} on the register but his dated identity says #{latest}")
+        if not numbers.get(WADE) and latest:
+            # A settled number stays his (runtime/jerseys.py): a register without it would show another player in it.
+            errors.append(f"{season}: Wade has no number on the register but his dated identity says #{latest}")
     return errors
 
 

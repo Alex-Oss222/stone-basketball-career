@@ -755,7 +755,47 @@ def run(root=ROOT, clock=None):
     (root / RECORD).parent.mkdir(parents=True, exist_ok=True)
     (root / RECORD).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     _miami_pick_ledger(root, trades)
+    phase_note(root, record, FOLDER, RECORD.name)
     return record
+
+
+def phase_event(record, record_name):
+    """The draft's dated line for the season's phase note: the draft, Miami's picks and its draft-night trades, read from
+    the record."""
+    year = int(record["draft"][:4])
+    picks = [f"{p['player']} ({p['position']}) at No. {p['pick']} (round {p['round']})" for p in record["picks"] if p["club"] == MIAMI]
+    text = (f"The {record['draft']} was held: {len(record['picks'])} picks, {len(record['trades'])} draft-night trade(s). "
+            + ("Miami selected " + (", ".join(picks[:-1]) + " and " + picks[-1] if len(picks) > 1 else picks[0]) + "."
+               if picks else "Miami made no selection."))
+    for t in record["trades"]:
+        if t["from"] == MIAMI:
+            text += f" Miami traded No. {t['slot']} to {t['to']} for No. {t['for_slot']} and the {t['plus']}."
+        elif t["to"] == MIAMI:
+            text += f" Miami moved up to No. {t['slot']} from No. {t['for_slot']} with {t['from']}, adding its {year + 1} second-round pick."
+    calls = (record.get("keep_picks") or {}).get("calls") or []
+    if calls:
+        text += f" While Wade's keep_picks request stood Miami declined {len(calls)} trade call(s) (runtime/keep_picks.py)."
+    return text + f" Record: `{record_name}`."
+
+
+def phase_note(root, record, folder, record_name):
+    """The draft closes its phase (the audit of June 2006: the 2004 and 2005 drafts never reached their notes): a dated
+    event in `09_Draft/note.md` under '## Events' (added when missing), its status complete and a `through` date
+    moved to the draft. Idempotent."""
+    import re
+    path = Path(root) / folder / "note.md"
+    if not path.is_file():
+        return
+    text = path.read_text(encoding="utf-8")
+    line = f"- {record['date']}: {phase_event(record, record_name)}\n"
+    if line not in text:
+        head, sep, tail = text.partition("## Consequences")
+        if not re.search(r"^## Events\s*$", head, re.M):
+            head = head.rstrip() + "\n\n## Events\n"
+        text = head.rstrip() + "\n" + line + "\n" + sep + tail
+    text = re.sub(r"^status: \S+$", "status: complete", text, count=1, flags=re.M)
+    text = re.sub(r"^through: \S+$", f"through: {record['date']}", text, count=1, flags=re.M)
+    path.write_text(text, encoding="utf-8")
 
 
 def _miami_pick_ledger(root, trades):

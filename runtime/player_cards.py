@@ -219,8 +219,11 @@ def player_cards_data(player, identity, records, awards, clock):
     page = player / "Stats_and_Awards/player_cards.html"
     closed = [r for r in records if r["status"] == "played" and r["date"] <= clock]
     shots, shot_sources = load_recorded_shots(player, identity, closed, clock)
-    seasons = sorted({p.name for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)
-                      and p.name[:4] + "-06-01" <= clock})
+    folders = [p for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name) and p.name[:4] + "-06-01" <= clock]
+    # A season is live once it has a current state (`player_reports.build_reports`): the season close writes the next
+    # season's expectations into its folder in June, before that season exists to report. A scaffold without any
+    # state (a test fixture) keeps every reached folder.
+    seasons = sorted({p.name for p in folders if (p / "current_state.json").is_file()} or {p.name for p in folders})
     if not seasons:
         seasons = sorted({r["season"] for r in closed if re.fullmatch(r"\d{4}-\d{2}", r["season"])})
     if not seasons:

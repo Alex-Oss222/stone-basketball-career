@@ -5,7 +5,8 @@ Read-only projections of canonical records, rebuilt with the player reports. Eac
 `foundation/followed_players.json` gets `career/<folder>/README.md` (every season) and `career/<folder>/<season>/README.md`:
 - identity from the league player registry; club and number on the career date (`league_cards.club_on`, `jerseys.number_for`);
 - regular-season and playoff lines from closed game results only (`write_back.closed_results`,
-  `playoff_stats.closed_playoff_results`), with his club's record and playoff exit;
+  `playoff_stats.closed_playoff_results`), with his club's record and playoff exit, each row with his age at its own
+  cutoff (the regular season's end capped at the career date; the playoff games' dates);
 - honors from the league's recorded award decisions, only once announced on or before the career date, and his FIBA
   team medals from the closed tournaments' medal registers (`national_medals.medals_for`, by NBA id, from the close,
   or by a medal's dated link to his registry row from the link date);
@@ -222,13 +223,17 @@ def build(root=ROOT, as_of=None):
             regular = [g for g in lines if g["competition"] == "regular"]
             playoff = [g for g in lines if g["competition"] == "playoff"]
             teams = sorted({g["team"] for g in regular}) or [club]
-            s_age = str(age_on(birth, season[:4] + "-11-01")[0]) if birth else "N/A"
+            # Ages at each row's own cutoff (the audit of June 2006: a November 1 age read a year young): the regular
+            # season's end capped at the career date, and the playoff games' span (both ages when a birthday falls in it).
+            s_age = str(age_on(birth, min(as_of, _season_end(root, season)))[0]) if birth else "N/A"
+            p_ages = sorted({age_on(birth, g["date"])[0] for g in playoff}) if birth and playoff else []
+            p_age = "-".join(str(a) for a in p_ages) if p_ages else "N/A"
             result = " / ".join(team_result(root, t, season, as_of) for t in teams if t)
             page = folder / season / "README.md"
             row = _row(f"[{season}]({season}/README.md)", s_age, " / ".join(t or "N/A" for t in teams), aggregate(regular), result)
             reg_rows.append(row)
             if playoff:
-                po_rows.append(_row(season, s_age, playoff[0]["team"], aggregate(playoff), team_result(root, playoff[0]["team"], season, as_of)))
+                po_rows.append(_row(season, p_age, playoff[0]["team"], aggregate(playoff), team_result(root, playoff[0]["team"], season, as_of)))
             season_honors = [[day, h] for day, h in honors(root, name, season, as_of)]
             honor_rows += [[season, *h] for h in season_honors]
             data = career_milestones(all_games, birth)
@@ -246,7 +251,7 @@ def build(root=ROOT, as_of=None):
             text += f"**Ability model this season:** {_model(entry, season)}\n\n"
             text += "## Regular season\n\n" + _table(HEADERS, [_row(season, s_age, row[2], aggregate(regular), result)]) + "\n"
             text += _targets(entry, season, regular)
-            text += "## Playoffs\n\n" + (_table(HEADERS, [_row(season, s_age, playoff[0]["team"], aggregate(playoff), team_result(root, playoff[0]["team"], season, as_of))])
+            text += "## Playoffs\n\n" + (_table(HEADERS, [_row(season, p_age, playoff[0]["team"], aggregate(playoff), team_result(root, playoff[0]["team"], season, as_of))])
                                          if playoff else "No playoff games closed.\n") + "\n"
             text += "## Season highs (regular season)\n\n" + (_table(["Stat", "High", "Game"], _highs(regular)) if regular else "No games closed.\n") + "\n"
             text += "## Honors\n\n" + _table(["Announced", "Honor"], season_honors, "No recorded honors this season.") + "\n"

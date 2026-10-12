@@ -5,7 +5,8 @@
     python scripts/advance.py --until-champion          the playoffs to the end: stop the day the NBA Finals are decided
 
 Each day runs the dated systems in order, each idempotent, so a stopped day can simply be run again:
-  1. the clock moves to the day; the January 7 and 10 guarantee steps run on their dates;
+  1. the clock moves to the day and the note statuses, area and current note follow it (`write_back.sync_note_statuses`:
+     from opening night the regular season's week note); the January 7 and 10 guarantee steps run on their dates;
   2. a due fortnightly staff rotation review is written, its close starting battles drawn by the engine, and
      the review completed;
   3. the league's market day (waivers, claims, 10-day contracts) and, on Mondays to the deadline, the trade scan,
@@ -544,6 +545,8 @@ def advance_day(day):
         if day >= (gates["training_camp_opens"] or day):
             camp_day(day)
         return close_day(day)
+    from runtime.write_back import sync_note_statuses
+    sync_note_statuses(ROOT)                             # opening night: the regular season's week note owns the day's events
     moves = roster_moves.ctx(ROOT, day)
     extension_day(day)                                   # an October 31 deadline after opening night
     if day in (moves.waive_by, moves.guarantee):

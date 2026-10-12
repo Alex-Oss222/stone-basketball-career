@@ -9,7 +9,7 @@ from datetime import date
 from functools import partial
 from pathlib import Path
 
-from .career_stats import ALL_STAR_FOLDER, ALL_STAR_PATHS, NATIONAL_PATHS, aggregate, collect_games, identity_at, select
+from .career_stats import ALL_STAR_FOLDER, ALL_STAR_PATHS, NATIONAL_PATHS, aggregate, attach_status, collect_games, identity_at, select
 from .career_dashboard import career_overview
 from . import identity_contract
 from .award_records import load_awards, honors_in_scope
@@ -251,6 +251,7 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
     config = json.loads((root / "foundation/season_structure.json").read_text(encoding="utf-8"))
     identity = json.loads((player / "professional_identity.json").read_text(encoding="utf-8"))
     identity = identity_contract.attach(identity, root, player)       # each season's contract terms from its record
+    identity = attach_status(identity, player)                         # staff reviews and injured list between snapshots
     # A season is live once it has a current state; the next season's folder can exist earlier (the season close
     # writes its expectations there) and is not a season to report yet.
     seasons = sorted(p for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)

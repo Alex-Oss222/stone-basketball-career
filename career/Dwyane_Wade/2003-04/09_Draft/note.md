@@ -1,7 +1,7 @@
 ---
 type: phase
 status: complete
-through: 2003-06-26
+through: 2004-06-24
 ---
 
 # 2003 NBA Draft
@@ -17,6 +17,9 @@ Wade is now controlled by Miami through NBA draft rights. No professional contra
 ## Player decisions
 
 No new player decision is recorded in this event.
+
+## Events
+- 2004-06-24: The 2004 NBA Draft was held: 59 picks, 6 draft-night trade(s). Miami selected Dorell Wright (SF) at No. 23 (round 1), Bernard Robinson (SF) at No. 51 (round 2) and Christian Drejer (SF) at No. 54 (round 2). Record: `draft_2004.json`.
 
 ## Consequences
 

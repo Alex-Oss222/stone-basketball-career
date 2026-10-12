@@ -1,6 +1,6 @@
 ---
 type: phase
-status: not_started
+status: complete
 ---
 
 # Summer League

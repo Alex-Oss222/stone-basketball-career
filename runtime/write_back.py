@@ -876,9 +876,16 @@ def week_span(note_path):
     return f"{year}-{month:02d}-{first:02d}", f"{year}-{month:02d}-{last:02d}"
 
 
+CLOSED_BY_OPENING = ("01_Free_Agency", "02_Summer_League", "04_Training_Camp")
+
+
 def expected_statuses(root=ROOT, season=None):
     """{note path: status} for the season's preseason and regular-season week notes on the career clock:
-    complete once the period has passed, active while the clock is inside it, not_started before it."""
+    complete once the period has passed, active while the clock is inside it, not_started before it. Phase notes close
+    with their phase (the audit of June 2006 found eight left open): the summer market, summer league and training camp
+    by opening night; the draft's once its draft record is in the folder (`runtime/draft.py` writes the event); and every
+    phase note of an earlier season, closed by the rollover. The 03_Offseason note owns the summer after its season, so
+    it closes with the season."""
     season = season or _active_season(root)
     root = Path(root)
     now = clock(root)
@@ -887,12 +894,23 @@ def expected_statuses(root=ROOT, season=None):
     for note in sorted((base / "06_Regular_Season").glob("*/Week_*/note.md")):
         first, last = week_span(note)
         out[note] = "complete" if last < now else "active" if first <= now else "not_started"
-    pre = base / "05_Preseason/note.md"
-    if pre.is_file():
-        from .seasons import dates
+    from .seasons import dates, live_seasons
+    pre, phases = base / "05_Preseason/note.md", []
+    if pre.is_file() or any((base / folder / "note.md").is_file() for folder in CLOSED_BY_OPENING):
         gates = dates(season, root)
         opening, preseason = gates["opening_night"], gates["preseason"] or gates["opening_night"]
-        out[pre] = "complete" if now >= opening else "active" if now >= preseason else "not_started"
+        if pre.is_file():
+            out[pre] = "complete" if now >= opening else "active" if now >= preseason else "not_started"
+        if now >= opening:
+            phases += [base / folder / "note.md" for folder in CLOSED_BY_OPENING]
+    end_year = int(season[:4]) + 1
+    if (base / f"09_Draft/draft_{end_year}.json").is_file():
+        phases.append(base / "09_Draft/note.md")
+    for earlier in (s for s in live_seasons(root) if s < season):
+        phases += sorted((root / season_base(earlier)).glob("[0-9][0-9]_*/note.md"))
+    for note in phases:
+        if note.is_file() and re.search(r"^type: phase$", note.read_text(encoding="utf-8"), re.M):
+            out[note] = "complete"
     return out
 
 
@@ -906,7 +924,9 @@ def current_week_note(root=ROOT, season=None):
 
 
 def sync_note_statuses(root=ROOT, season=None, write=True):
-    """Set each period note's status and current_state.current_note to the clock. Returns the changed paths."""
+    """Set each period and phase note's status, and current_state's area and current_note, to the clock: from opening
+    night the area is the regular season and the note its week note; after the regular season the playoff area keeps the
+    last week note (the 2003-04 precedent). Returns the changed paths."""
     season = season or _active_season(root)
     import re
     changed = []
@@ -921,8 +941,13 @@ def sync_note_statuses(root=ROOT, season=None, write=True):
     state_path = Path(root) / season_base(season) / "current_state.json"
     if current and state_path.is_file():
         state = read_json(state_path)
-        if state.get("current_area") == "06_Regular_Season" and state.get("current_note") != current:
+        before = dict(state)
+        from .seasons import dates
+        if state.get("current_area") in ("04_Training_Camp", "05_Preseason") and clock(root) >= dates(season, root)["opening_night"]:
+            state["current_area"] = "06_Regular_Season"      # opening night: the week notes own the clock
+        if state.get("current_area") == "06_Regular_Season":
             state["current_note"] = current
+        if state != before:
             changed.append(state_path)
             if write:
                 state_path.write_text(json.dumps(state, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
