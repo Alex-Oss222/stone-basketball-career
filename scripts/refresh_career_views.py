@@ -41,10 +41,8 @@ def refresh_career_views(root: Path) -> list[Path]:
             page.parent.mkdir(parents=True, exist_ok=True)
             page.write_text(text, encoding="utf-8")
             changed.append(page)
-    from runtime.contract_pages import orphan_pages
+    from runtime.contract_pages import prune_orphan_pages
     for player in sorted((Path(root) / "career").iterdir()):
         if player.is_dir() and (player / "professional_identity.json").is_file():
-            for page in orphan_pages(player, outputs):   # a contract page whose player left the catalog
-                page.unlink()
-                changed.append(page)
+            changed += prune_orphan_pages(player, outputs)   # a contract page whose player left the catalog
     return changed

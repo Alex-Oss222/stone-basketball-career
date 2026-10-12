@@ -4,6 +4,7 @@ from pathlib import Path
 import unittest
 
 from runtime.cba import minimum_cap_amount, minimum_salary
+from runtime.player_contracts import CLAIMS, IN_FORCE, build_contract_catalog
 from runtime.contracts import counted_amount
 from runtime.signing import ledger_aggregates
 from runtime.valuation import Valuation
@@ -67,19 +68,22 @@ class LiveLedgerTests(unittest.TestCase):
 
     def test_voided_and_released_camp_contracts_are_not_current(self):
         catalog = json.loads((ROOT / "career/Dwyane_Wade/Contracts/catalog.json").read_text())
+        built = {p["id"]: p for p in build_contract_catalog(ROOT, ROOT / "career/Dwyane_Wade", catalog["as_of"])["players"]}
         ended = {p["player"]: p for p in self.sheet["players"] if p["status"] in ("voided", "released")}
         rows = [p for p in catalog["players"] if p["name"] in ended]
         self.assertTrue(rows)
         for row in rows:
             current = row["current_contract_id"]
+            self.assertEqual(current, (built[row["player_id"]]["current"] or {}).get("id"), row["name"])
             if current is None:
-                # His latest contract ended too: voided, released, or waived at a guarantee review (Jumaine Jones,
-                # January 7, 2006).
-                self.assertIn(row["status"], ("voided", "released", "waived"))
+                # His latest agreement ended too (voided, released, waived, or a later one closed by retirement): the
+                # status claims no contract in force.
+                self.assertNotIn(row["status"], IN_FORCE | CLAIMS, row["name"])
+                self.assertFalse(row["status"].startswith("under"), row["name"])
                 continue
-            # A later contract may be current, with another club (a summer signing) or with Miami again (Jumaine Jones's
-            # 2005 camp invitation); the ended Miami one never is.
-            self.assertGreater(current.rsplit("-", 3)[-3:], ended[row["name"]]["signed_date"].split("-"), row["name"])
+            # A later contract may be current, with another club (a summer signing, a rest-of-season deal) or with Miami
+            # again (Jumaine Jones's 2005 camp invitation); the ended Miami one never is.
+            self.assertGreater(built[row["player_id"]]["current"]["signed_on"], ended[row["name"]]["signed_date"], row["name"])
 
 
 if __name__ == "__main__":

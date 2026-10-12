@@ -80,6 +80,12 @@ def _slug(value):
     return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
 
 
+def register_contract_id(row):
+    """The contract page id of a Miami register row whose name the league registry does not carry. The catalog and the
+    personnel cards' contract links (runtime/contract_navigation.py) both name it this way."""
+    return row.get("bbr_id") or row.get("registry_id") or row.get("id") or _slug(row["name"])
+
+
 def _source(path, root, label=None):
     path = Path(path).resolve()
     return {"label": label or path.name, "path": path.relative_to(root).as_posix()}
@@ -148,6 +154,10 @@ def _season_before(season):
     return f"{int(season[:4]) - 1}-{season[2:4]}"
 
 
+def _season_after(season):
+    return f"{int(season[:4]) + 1}-{str(int(season[:4]) + 2)[-2:]}"
+
+
 def _june_30(season):
     return f"{int(season[:4]) + 1}-06-30"
 
@@ -201,13 +211,30 @@ def _last_season(entry):
     end = entry.get("end_season") if isinstance(entry.get("end_season"), str) else None
     if end is None and seasons and (entry.get("_whole_schedule") or entry.get("full_original_schedule") is True):
         end = seasons[-1]
-    end = end or entry.get("_ledger_end")
+    end = end or entry.get("_ledger_end") or entry.get("_superseded_end")
     removed = [o["season"] for o in _option_rows(entry) if o.get("removes_season")
                or (o.get("outcome") == "declined" and o.get("type") != "early_termination_option")]
+    if entry.get("_ledger_cut"):
+        removed.append(entry["_ledger_cut"])      # the next league contract ledger does not carry the agreement
     if removed:
         cut = _season_before(min(removed))
         end = min(end, cut) if end else cut
     return end
+
+
+def _salary_seasons(entry):
+    return sorted(s for s in entry.get("schedule") or {} if entry.get("amount_kind", {}).get(s) not in NON_SALARY)
+
+
+def _open_fragment(entry):
+    """A salary fragment whose end its own record leaves open: no final season, expiry or dated closing."""
+    return bool(_salary_seasons(entry) and not entry.get("_league_move") and not entry.get("expiry_date")
+                and not entry.get("_ended_on") and entry.get("status") not in CLOSED and _last_season(entry) is None)
+
+
+def _season_of(day):
+    year = int(day[:4]) - (day[5:7] < "07")
+    return f"{year}-{str(year + 1)[-2:]}"
 
 
 def _expiry(entry):
@@ -281,14 +308,28 @@ def _normal_contract(player_id, entry, cutoff, caps):
         row["cap_percent"] = round(100 * row["cap_hit"] / cap, 4) if cap and row["cap_hit"] is not None else None
         row["salary_cap_percent"] = round(100 * row["salary"] / cap, 4) if cap and row["salary"] is not None else None
         rows.append(row)
+    after = [(entry["_ledger_cut"], f"Not carried by the {entry['_ledger_cut']} league contract ledger; not part of the contract.")
+             ] if entry.get("_ledger_cut") else []
+    if entry.get("_superseded_end"):
+        after.append((_season_after(entry["_superseded_end"]),
+                      f"A later agreement began in {entry['_superseded_by']}; not part of this contract."))
+    for first, outcome in after:          # recorded seasons the agreement did not reach keep their row, so marked
+        for row in rows:
+            if row["season"] >= first and row["amount_kind"] != "prior_season_salary_reference":
+                row["condition"] = f"{row['condition'].rstrip()} {outcome}" if row["condition"] else outcome
     options = _option_rows(entry)
     for option in options:
         if option.get("outcome") is not None and option.get("outcome_date") and not _known(option["outcome_date"], cutoff):
             option.update(outcome=None, outcome_date=None, removes_season=False)
         row = next((r for r in rows if r["season"] == option.get("season") and r["amount_kind"] != "prior_season_salary_reference"), None)
-        if row is not None and option.get("outcome") and option.get("outcome_date") and not row["condition"]:
-            row["condition"] = (f"{option['type'].replace('_', ' ').capitalize()} {option['outcome']} {option['outcome_date']}"
-                                + ("; not part of the contract." if option.get("removes_season") else "."))
+        if row is not None and option.get("outcome"):
+            # the season's own condition is dated evidence (often "no decision recorded on or before ..."): the outcome
+            # follows it, and a season the decision removed says so
+            removes = option.get("removes_season") or (option["outcome"] == "declined" and option.get("type") != "early_termination_option")
+            outcome = (" ".join(filter(None, [option["type"].replace("_", " ").capitalize(), option["outcome"], option.get("outcome_date")]))
+                       + ("; not part of the contract." if removes else "."))
+            if outcome not in (row["condition"] or ""):
+                row["condition"] = f"{row['condition'].rstrip()} {outcome}" if row["condition"] else outcome
     total = entry.get("reported_total")
     total = deepcopy(total) if isinstance(total, dict) else {"amount": _number(total), "precision": None}
     scheduled = [r["salary"] for r in rows if r["amount_kind"] != "prior_season_salary_reference"]
@@ -310,7 +351,7 @@ def _normal_contract(player_id, entry, cutoff, caps):
         "end_season": _last_season(entry), "expiry_date": expiry, "ended_on": ended,
         "type": entry.get("route") or entry.get("basis") or "Existing contract record",
         "original_term_seasons": term, "reported_total": total, "original_aav": original_aav,
-        "scheduled_subtotal": sum(v for v in scheduled if v is not None) if scheduled else None,
+        "scheduled_subtotal": sum(v for v in scheduled if v is not None) if any(v is not None for v in scheduled) else None,
         "scheduled_unknown_count": sum(v is None for v in scheduled), "full_original_schedule": complete,
         "salary_rows": rows, "options": options, "guarantee": deepcopy(entry.get("guarantee")),
         "terms": {key: deepcopy(entry.get(key)) for key in TERM_FIELDS},
@@ -375,6 +416,7 @@ def _ledger_contracts(root, player, cutoff, add, match, profiles, protagonist):
     it, with the remaining seasons and option seasons the ledger carries; its option decision and later moves land on it.
     Miami's rows stay its own sheet's, and a new summer-market contract is already its own agreement."""
     from .extensions import without_extension
+    from .seasons import club_name
     for season, path, ledger, as_of in _ledgers(player, cutoff):
         source = _source(path, root, "League contract ledger (simulated league)")
         for c in ledger["contracts"]:
@@ -387,13 +429,27 @@ def _ledger_contracts(root, player, cutoff, add, match, profiles, protagonist):
                 continue
             schedule = without_extension(c)["schedule"]      # an extension's seasons are its own agreement
             options = c.get("options") or {}
+            kinds = {s: options.get(s) if options.get(s) in OPTION_KINDS else "contract_salary" for s in schedule}
+            carried = f"Carried by the {season} league contract ledger ({c.get('source') or 'source not recorded'}): the seasons from {season} on."
+            same_club = lambda e: club_name(e.get("_team") or "", season) == club_name(c["club"], season)
+            fragment = max((e for e in profiles[key]["_entries"] if _open_fragment(e) and same_club(e)
+                            and _salary_seasons(e)[-1] == _season_before(season)), key=_start_key, default=None)
+            if fragment is not None:
+                # the ledger carries on the contract an open fragment at the same club records up to the season before:
+                # its later seasons, not another signing (the agreement keeps the fragment's id)
+                fragment["contract_id"] = _contract_key(key, fragment)
+                fragment["schedule"] = {**fragment.get("schedule", {}), **schedule}
+                fragment["amount_kind"] = {**fragment.get("amount_kind", {}), **kinds}
+                fragment.update(_whole_schedule=True, _ledger_season=season,
+                                notes=f"{fragment['notes']} {carried}" if fragment.get("notes") else carried)
+                if source not in fragment["_sources"]:
+                    fragment["_sources"].append(source)
+                continue
             rookie = bool(c.get("rookie_scale"))
             row = {"player": c["player"], "bbr_id": c["bbr_id"], "status": "under_rookie_contract" if rookie else "under_contract",
                    "route": ("rookie scale" if rookie else "existing contract") + " (league contract ledger)",
-                   "schedule": dict(schedule), "_whole_schedule": True,
-                   "amount_kind": {s: options.get(s) if options.get(s) in OPTION_KINDS else "contract_salary" for s in schedule},
-                   "notes": (f"Carried by the {season} league contract ledger ({c.get('source') or 'source not recorded'}): the "
-                             f"seasons from {season} on. Its signing date and earlier seasons are not in the dated records.")}
+                   "schedule": dict(schedule), "_whole_schedule": True, "_ledger_season": season, "amount_kind": kinds,
+                   "notes": carried + " Its signing date and earlier seasons are not in the dated records."}
             add(row, c["club"], source, as_of, path.parent.parent, False)
 
 
@@ -413,17 +469,41 @@ def _ledgers(player, cutoff):
 def _ledger_ends(player, cutoff, profiles):
     """A salary fragment's final season when the league contract ledger settles it: an agreement whose end its own record
     leaves open, and which the first ledger after its last recorded season does not carry (the player has no contract
-    in that ledger, Miami's sheet included), ended with that recorded season."""
-    carried = {season: {c.get("bbr_id") for c in ledger["contracts"]} for season, _, ledger, _ in _ledgers(player, cutoff)}
+    in that ledger, Miami's sheet included), ended with that recorded season. An agreement a ledger carries ends with
+    that ledger's season when the next ledger carries no existing contract for the player (a new signing, or none)."""
+    ledgers = _ledgers(player, cutoff)
+    carried = {season: {c.get("bbr_id") for c in ledger["contracts"]} for season, _, ledger, _ in ledgers}
+    existing = {season: {c.get("bbr_id") for c in ledger["contracts"] if c.get("kind") == "existing"}
+                for season, _, ledger, _ in ledgers}
     for profile in profiles.values():
         bbr = (profile.get("identity") or {}).get("bbr_id")
         for entry in profile["_entries"]:
-            seasons = sorted(s for s in entry.get("schedule") or {} if entry.get("amount_kind", {}).get(s) not in NON_SALARY)
+            following = entry.get("_ledger_season") and _season_after(entry["_ledger_season"])
+            if bbr and following in existing and bbr not in existing[following]:
+                entry["_ledger_cut"] = following
+            seasons = _salary_seasons(entry)
             if not bbr or not seasons or entry.get("_league_move") or _last_season(entry) or entry.get("expiry_date"):
                 continue
-            after = f"{int(seasons[-1][:4]) + 1}-{str(int(seasons[-1][:4]) + 2)[-2:]}"
+            after = _season_after(seasons[-1])
             if after in carried and bbr not in carried[after]:
                 entry["_ledger_end"] = seasons[-1]
+
+
+def _superseded_ends(profiles, cutoff):
+    """An open salary fragment ends once a later agreement has begun (the player cannot be under both): with its last
+    recorded season, or the season before the later agreement's first when that comes sooner, never before its own
+    first season or the season of its latest dated assignment (which shows it still in force then)."""
+    for profile in profiles.values():
+        entries = profile["_entries"]
+        for entry in [e for e in entries if _open_fragment(e)]:
+            seasons = _salary_seasons(entry)
+            later = [e.get("start_season") or (_salary_seasons(e) or [""])[0] for e in entries
+                     if e is not entry and _started(e, cutoff) and _start_key(e) > _start_key(entry)]
+            later = [season for season in later if season]
+            if later:
+                held = [_season_of(a["date"]) for a in entry.get("_assignments", [])]
+                entry["_superseded_end"] = max([min(seasons[-1], _season_before(min(later))), seasons[0], *held])
+                entry["_superseded_by"] = min(later)
 
 
 def _attach_option_decisions(player, cutoff, match, profiles):
@@ -610,7 +690,7 @@ def build_contract_catalog(root, player, clock=None):
         if _snapshot(roster, cutoff):
             for row in roster.get("players", []):
                 if not any(p["name"] == row["name"] for p in players):
-                    players.append({"registry_id": row.get("bbr_id") or row.get("id") or _slug(row["name"]),
+                    players.append({"registry_id": register_contract_id(row),
                                     "bbr_id": row.get("bbr_id"), "name": row["name"],
                                     "team_name": roster.get("team"), "position": "/".join(row.get("positions", [])),
                                     "birth_date": row.get("date_of_birth")})
@@ -833,6 +913,7 @@ def build_contract_catalog(root, player, clock=None):
     _world_moves(root, cutoff, match, profiles, protagonist, moves)
     _expansion_moves(player, cutoff, match, profiles, protagonist, root, moves)
     _apply_moves(moves, profiles, add, player)
+    _superseded_ends(profiles, cutoff)
     for profile in profiles.values():
         for entry in profile["_entries"]:
             if entry.get("_assignments"):    # an agreement's club is its latest assignment's, whatever source came last

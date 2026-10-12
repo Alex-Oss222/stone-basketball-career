@@ -558,14 +558,16 @@ def miami_check(until, root=ROOT, season=None):
 def refresh_reports(root=ROOT):
     """Rebuild the generated player report pages after notes were written (scripts/update_player_reports.py)."""
     from .player_reports import build_reports
+    from .contract_pages import prune_orphan_pages
     player = Path(root) / PLAYER_DIR
     changed = 0
-    for page, text in build_reports(Path(root), player).items():
+    outputs = build_reports(Path(root), player)
+    for page, text in outputs.items():
         if not page.is_file() or page.read_text(encoding="utf-8") != text:
             page.parent.mkdir(parents=True, exist_ok=True)
             page.write_text(text, encoding="utf-8")
             changed += 1
-    return changed
+    return changed + len(prune_orphan_pages(player, outputs))     # a contract page whose player left the catalog
 
 
 # -- the league slate -----------------------------------------------------------------------------

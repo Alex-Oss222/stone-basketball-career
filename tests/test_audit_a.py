@@ -7,7 +7,8 @@ import tempfile
 import unittest
 
 from runtime.contract_archive import signed_record
-from runtime.contract_pages import orphan_pages
+from runtime.contract_navigation import END, START, build_contract_navigation
+from runtime.contract_pages import orphan_pages, prune_orphan_pages
 from runtime.player_contracts import build_contract_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -91,6 +92,21 @@ class OptionDecisionTests(CatalogFixture):
         self.assertEqual("2005-06-30", agreement["expiry_date"])
         self.assertIsNone(p["current"])                       # no "under contract" status without a contract in force
         self.assertNotIn(p["status"], ("under_contract", "team_option_pending"))
+
+    def test_the_salary_row_keeps_its_evidence_and_states_the_outcome(self):
+        self.vet["conditions"] = {"2005-06": "Team option; no decision recorded on or before 2003-06-26."}
+        self.write("library/2003/league/nba_2003_contracts.json",
+                   {"as_of": "2003-06-26", "clubs": {"Other Club": {"players": [self.vet, self.bench]}}})
+        self.write("career/Dwyane_Wade/2004-05/League/option_decisions.json", {"decisions": [
+            self.decision("Veteran Player", "vet01", "Other Club", "2005-06", "team_option", "decline",
+                          "2004-10-31", "2004-11-23", 3400000)]})
+        rows = {r["season"]: r["condition"] for r in self.profile("Veteran Player")["history"][0]["salary_rows"]}
+        self.assertEqual("Team option; no decision recorded on or before 2003-06-26. "
+                         "Team option declined 2004-11-23; not part of the contract.", rows["2005-06"])
+        self.assertIsNone(rows["2004-05"])
+        before = build_contract_catalog(self.root, self.player, "2004-11-22")["players"]    # the day before the decision
+        rows = {r["season"]: r["condition"] for r in next(p for p in before if p["id"] == "vet01")["history"][0]["salary_rows"]}
+        self.assertEqual("Team option; no decision recorded on or before 2003-06-26.", rows["2005-06"])
 
     def test_draft_pick_contract_from_the_ledger_carries_its_option_decision(self):
         self.write("career/Dwyane_Wade/2004-05/League/contracts.json", {"contracts": [
@@ -200,6 +216,67 @@ class AgreementTests(CatalogFixture):
         self.assertNotEqual("2003-09-30", (p["current"] or {}).get("signed_on"))
 
 
+class LedgerTests(CatalogFixture):
+    """The league contract ledger and later agreements settle where an agreement whose end its record leaves open ends."""
+
+    def ledger(self, season, contracts):
+        self.write(f"career/Dwyane_Wade/{season}/League/contracts.json", {"season": season, "contracts": contracts})
+
+    def test_a_ledger_agreement_the_next_ledger_does_not_carry_ends(self):
+        # T.J. Ford: carried as a Milwaukee scale contract in 2004-05, a new minimum elsewhere in the 2005-06 ledger
+        self.ledger("2004-05", [{"player": "Draft Pick", "bbr_id": "pick01", "club": "Other Club", "kind": "existing",
+                                 "schedule": {"2004-05": 2000000, "2005-06": 2100000, "2006-07": 2700000},
+                                 "options": {"2006-07": "team_option"}, "rookie_scale": True, "source": "fixture"}])
+        self.ledger("2005-06", [{"player": "Draft Pick", "bbr_id": "pick01", "club": "New Club", "kind": "new",
+                                 "schedule": {"2005-06": 700000}, "source": "fixture"}])
+        p = self.profile("Draft Pick")
+        agreement = p["history"][0]
+        self.assertEqual(("2004-05", "2005-06-30", "expired"), (agreement["end_season"], agreement["expiry_date"], agreement["status"]))
+        rows = {r["season"]: r["condition"] for r in agreement["salary_rows"]}
+        self.assertIsNone(rows["2004-05"])
+        for season in ("2005-06", "2006-07"):
+            self.assertEqual("Not carried by the 2005-06 league contract ledger; not part of the contract.", rows[season])
+        self.assertIsNone(p["current"])
+        # carried on as an existing contract (any club: a trade assigns it), the agreement runs on
+        self.ledger("2005-06", [{"player": "Draft Pick", "bbr_id": "pick01", "club": "New Club", "kind": "existing",
+                                 "schedule": {"2005-06": 2100000, "2006-07": 2700000}, "source": "fixture"}])
+        self.assertEqual("2006-07", self.profile("Draft Pick")["history"][0]["end_season"])
+
+    def test_the_ledger_continues_an_open_fragment_at_the_same_club(self):
+        self.bench["schedule"] = {"2002-03": 900000, "2003-04": 1000000}
+        self.bench["amount_kind"] = {"2002-03": "contract_salary", "2003-04": "contract_salary"}
+        self.write("library/2003/league/nba_2003_contracts.json",
+                   {"as_of": "2003-06-26", "clubs": {"Other Club": {"players": [self.vet, self.bench]}}})
+        fragment = self.profile("Bench Player")["history"][0]["id"]
+        self.ledger("2004-05", [{"player": "Bench Player", "bbr_id": "bench01", "club": "Other Club", "kind": "existing",
+                                 "schedule": {"2004-05": 1100000, "2005-06": 1200000}, "source": "fixture"}])
+        history = self.profile("Bench Player")["history"]
+        self.assertEqual([fragment], [c["id"] for c in history])          # one agreement, its id kept
+        self.assertEqual({"2002-03": 900000, "2003-04": 1000000, "2004-05": 1100000, "2005-06": 1200000},
+                         {r["season"]: r["salary"] for r in history[0]["salary_rows"]})
+        self.assertEqual("2005-06", history[0]["end_season"])
+        # at another club the ledger's contract is its own agreement, and the fragment ends with its last recorded season
+        self.ledger("2004-05", [{"player": "Bench Player", "bbr_id": "bench01", "club": "Third Club", "kind": "existing",
+                                 "schedule": {"2004-05": 1100000, "2005-06": 1200000}, "source": "fixture"}])
+        history = {c["id"]: c for c in self.profile("Bench Player")["history"]}
+        self.assertEqual(2, len(history))
+        self.assertEqual(("2003-04", "2004-06-30"), (history[fragment]["end_season"], history[fragment]["expiry_date"]))
+
+    def test_a_later_agreement_ends_an_open_fragment(self):
+        self.moves("2004-05", [
+            {"id": "t1", "date": "2005-01-10", "kind": "ten_day", "player": "Veteran Player", "bbr_id": "vet01",
+             "from": None, "to": "Ten Club", "contract": {"type": "ten_day", "until": "2005-01-20", "salary": "pro-rated minimum"}}])
+        p = self.profile("Veteran Player")
+        old = next(c for c in p["history"] if c["signed_on"] == "2001-07-20")
+        self.assertEqual(("2003-04", "2004-06-30", "expired"), (old["end_season"], old["expiry_date"], old["status"]))
+        rows = {r["season"]: r["condition"] for r in old["salary_rows"]}
+        self.assertEqual("A later agreement began in 2004-05; not part of this contract.", rows["2004-05"])
+        self.assertTrue(rows["2005-06"].endswith("A later agreement began in 2004-05; not part of this contract."))
+        ten_day = next(c for c in p["history"] if c["type"] == "10-day contract")
+        self.assertIsNone(ten_day["scheduled_subtotal"])                 # no amount recorded: not $0
+        self.assertEqual(1, ten_day["scheduled_unknown_count"])
+
+
 class ArchiveAndPageTests(unittest.TestCase):
     def test_release_names_the_agreement_with_the_entry_signing_date(self):
         records = [{"player": "Jumaine Jones", "event": "signed", "contract_id": "jonesju01-2003-09-30",
@@ -220,8 +297,99 @@ class ArchiveAndPageTests(unittest.TestCase):
             folder.mkdir(parents=True)
             for name in ("kept01.md", "kept01.html", "gone01.md", "gone01.html"):
                 (folder / name).write_text("x", encoding="utf-8")
-            outputs = {folder / "kept01.md": "x", folder / "kept01.html": "x"}
+            outputs = {folder / "kept01.md": "x", folder / "kept01.html": "x", player / "README.md": "x"}
             self.assertEqual(["gone01.html", "gone01.md"], [p.name for p in orphan_pages(player, outputs)])
+            self.assertEqual(["gone01.html", "gone01.md"], [p.name for p in prune_orphan_pages(player, outputs)])
+            self.assertEqual(["kept01.html", "kept01.md"], sorted(p.name for p in folder.iterdir()))
+            self.assertEqual([], prune_orphan_pages(player, outputs))
+
+    def test_every_page_refresher_prunes_through_the_shared_helper(self):
+        for path in ("scripts/refresh_career_views.py", "runtime/season_games.py"):
+            self.assertIn("prune_orphan_pages(", (ROOT / path).read_text(encoding="utf-8"), path)
+
+
+class NavigationTests(unittest.TestCase):
+    """A Miami personnel card links the contract page the catalog writes for its player, or carries no contract links."""
+
+    def setUp(self):
+        temp = tempfile.TemporaryDirectory()
+        self.addCleanup(temp.cleanup)
+        self.root = Path(temp.name)
+        self.player = self.root / "career/Dwyane_Wade"
+        team = self.player / "2003-04/00_Team/Team"
+        for path, value in (
+                ("2003-04/current_state.json", {"current_date": "2003-06-26"}),
+                ("professional_identity.json", {"display_name": "Dwyane Wade", "player_id": "dwyane_wade"}),
+                ("Stats_and_Awards/League/player_registry.json", {"as_of": "2003-06-26", "players": [
+                    {"name": "Dwyane Wade", "registry_id": "wadedw01", "bbr_id": "wadedw01"}]}),
+                ("2003-04/00_Team/Team/Roster/roster.json", {"as_of": "2003-06-26", "team": "Miami Heat", "players": [
+                    {"name": "Dwyane Wade", "id": "dwyane_wade", "positions": ["SG"]},
+                    {"name": "Register Only", "id": "register_only", "bbr_id": None, "positions": ["C"]},
+                    {"name": "Bbr Only", "id": "bbr_only", "bbr_id": "bbronly01", "positions": ["PF"]}]})):
+            (self.player / path).parent.mkdir(parents=True, exist_ok=True)
+            (self.player / path).write_text(json.dumps(value), encoding="utf-8")
+        self.cards = {}
+        for name, stem in (("Register Only", "register_only"), ("Bbr Only", "bbr_only")):
+            card = team / f"Player_Cards/{stem}.md"
+            card.parent.mkdir(parents=True, exist_ok=True)
+            card.write_text(f"# {name} | Miami Heat Player Profile\n\n**Contract/control:** Unsigned.\n\n## Scouting report\nUnassessed.\n",
+                            encoding="utf-8")
+            self.cards[name] = card
+
+    def links(self, text):
+        import re
+        return {Path(href.split("#")[0]).stem for href in re.findall(r"\]\(([^)\s]+)\)", text) if "Contracts/players/" in href}
+
+    def test_register_only_cards_link_the_catalog_id(self):
+        ids = {p["id"] for p in build_contract_catalog(self.root, self.player)["players"]}
+        outputs = build_contract_navigation(self.root, self.player, pages=ids)
+        self.assertEqual({"register_only"}, self.links(outputs[self.cards["Register Only"]]))
+        self.assertEqual({"bbronly01"}, self.links(outputs[self.cards["Bbr Only"]]))
+        self.assertLessEqual({"register_only", "bbronly01"}, ids)
+
+    def test_a_card_without_a_catalog_page_drops_its_links(self):
+        first = build_contract_navigation(self.root, self.player, pages={"register_only", "bbronly01"})
+        for card, text in first.items():
+            card.write_text(text, encoding="utf-8")
+        # a roster snapshot dated after the clock is not on the catalog: the card loses its links, not a link to nothing
+        roster = self.player / "2003-04/00_Team/Team/Roster/roster.json"
+        data = json.loads(roster.read_text())
+        data["as_of"] = "2003-10-24"
+        roster.write_text(json.dumps(data), encoding="utf-8")
+        ids = {p["id"] for p in build_contract_catalog(self.root, self.player)["players"]}
+        self.assertNotIn("register_only", ids)
+        text = build_contract_navigation(self.root, self.player, pages=ids)[self.cards["Register Only"]]
+        self.assertNotIn(START, text)
+        self.assertNotIn(END, text)
+        self.assertEqual(self.cards["Register Only"].read_text().split(START)[0].rstrip("\n") +
+                         self.cards["Register Only"].read_text().split(END)[1], text)
+
+
+class PinnedCheckpointNavigationTests(unittest.TestCase):
+    def test_every_miami_card_contract_link_opens_a_catalog_page(self):
+        import re
+        import shutil
+        from tests import checkpoint
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            for folder in ("library", "career", "foundation", "docs"):
+                shutil.copytree(ROOT / folder, root / folder)
+            checkpoint.pin(root)
+            player = root / "career/Dwyane_Wade"
+            roster = player / "2003-04/00_Team/Team/Roster/roster.json"
+            for as_of in (None, "2003-10-24"):       # as pinned; then a camp register dated after the pinned clock
+                if as_of:
+                    data = json.loads(roster.read_text())
+                    data["as_of"] = as_of
+                    roster.write_text(json.dumps(data), encoding="utf-8")
+                ids = {p["id"] for p in build_contract_catalog(root, player)["players"]}
+                outputs = build_contract_navigation(root, player, pages=ids)
+                cards = [page for page in outputs if page.parent.name == "Player_Cards" and page.name != "README.md"]
+                self.assertTrue(cards)
+                for page in cards:
+                    for href in re.findall(r"\]\(([^)\s]+)\)", outputs[page]):
+                        if "Contracts/players/" in href:
+                            self.assertTrue(Path(href.split("#")[0]).stem in ids, (as_of, page.name, href))
 
 
 class LiveCareerTests(unittest.TestCase):

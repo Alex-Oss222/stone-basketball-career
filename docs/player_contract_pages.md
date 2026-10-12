@@ -61,7 +61,7 @@ An accepted proposal is not automatically a registered contract. An unsigned opt
 
 Show an option's holder, affected season, salary, sourced deadline, actual exercise decision and decision date separately. Before an outcome exists, preserve the conditional branch. Early termination provisions are distinct from options that add a season. Do not auto-exercise either type because a date has passed.
 
-The ending year of a recorded salary fragment does not establish the agreement's true expiry. A projected exit status needs its conditions shown. Actual UFA/RFA classification follows the applicable contract, service, option and qualifying-offer records. An unsigned drafted rookie is neither UFA nor RFA merely because the tab needs a status label.
+The ending year of a recorded salary fragment does not establish the agreement's true expiry, unless a later league contract ledger or a later agreement settles it (see Dated league events on the pages). A projected exit status needs its conditions shown. Actual UFA/RFA classification follows the applicable contract, service, option and qualifying-offer records. An unsigned drafted rookie is neither UFA nor RFA merely because the tab needs a status label.
 
 Use signing dates, effective dates and knowledge dates for their respective purposes. A future salary already fixed in a valid existing agreement may be displayed as a scheduled obligation. A later option choice, signing, guarantee amendment or trade outcome may not be revealed early. A missing publication date blocks a cap-derived percentage even if the raw historical cap file contains the number.
 
@@ -105,12 +105,20 @@ here changes a ledger, a roster or a decision.
   or `option_deadline`), else the earlier agreement whose schedule holds the season (Miami's sheet turns an exercised
   option into contract salary). A team or player option is `exercised` or `declined`; an early termination option is
   `exercised` (the player leaves) or `not exercised`. A declined option, an opt-out or an exercised early termination
-  ends the agreement with the season before it; the salary row stays, marked not part of the contract.
+  ends the agreement with the season before it; the salary row stays, marked not part of the contract. The season's
+  salary row keeps its own dated condition (often "no decision recorded on or before 2003-06-26") and adds the outcome
+  after it, from the outcome date on.
 - **League contract ledger.** A contract `<season>/League/contracts.json` carries for a club other than Miami that no
   dated record shows for that season (a 2003 first-round scale contract, a contract the first ledger reconstructed from
   the season's salaries) is its own agreement, known from the rollover that wrote the ledger, with the remaining seasons
-  and option seasons the ledger gives. A salary fragment whose end its own record leaves open ends with its last recorded
-  season when the next ledger does not carry the player.
+  and option seasons the ledger gives. When an open salary fragment at the same club (`seasons.club_name`) records the
+  player up to the season before, the ledger's seasons continue that fragment instead (one agreement, its id kept). An
+  agreement a ledger carries ends with that ledger's season when the next ledger carries no existing contract for the
+  player (a new signing, or none); its later rows say so. A salary fragment whose end its own record leaves open ends
+  with its last recorded season when the next ledger does not carry the player.
+- **A later agreement.** An open salary fragment ends once a later agreement of the player's has begun: with its last
+  recorded season, or the season before the later agreement's first when that comes sooner (never before its own first
+  season or the season of its latest dated assignment); rows past its end say a later agreement began.
 - **Holder changes, in date order.** Summer-market trades, Miami's completed trades, the expansion draft, the real
   league's trades and waivers before the symmetric league, and the dated league moves (`<season>/League/league_moves.json`)
   all act on the agreement in force on their date (the newest begun agreement no dated event or final season has closed;
@@ -130,8 +138,14 @@ here changes a ledger, a roster or a decision.
   Records that share seasons with no amount recorded on both sides match only when one names the agreement by its
   signing date alone and the other by its contract id alone (a reported signing and the sheet row a trade brought in).
 
-A page whose player id has left the catalog is removed by the rebuild, and `scripts/update_player_reports.py --check`
-reports one left on disk. A `released` record (`roster_moves.waive`) names the agreement the waived sheet entry carries,
+A recorded schedule subtotal sums only recorded amounts; with none recorded (a league 10-day or rest-of-season
+contract) it reads `Not recorded`, never $0.
+
+A page whose player id has left the catalog is removed by every page refresher (`scripts/refresh_career_views.py` and
+`runtime/season_games.refresh_reports`, through `contract_pages.prune_orphan_pages`), and
+`scripts/update_player_reports.py --check` reports one left on disk. A Miami personnel card links the page the catalog
+writes for its player (a register player the league registry does not name takes `player_contracts.register_contract_id`
+in both); a card whose player has no page on the career date carries no contract links. A `released` record (`roster_moves.waive`) names the agreement the waived sheet entry carries,
 matched by its signing date (`contract_archive.signed_record`), never the player's oldest signing.
 
 These records are an evidence-maintenance interface, not an alternative execution engine. Use an executed signing source for a new signed agreement, or an attributed source correction for an amendment. `runtime/contract_archive.py` preserves reached signing and assignment evidence from the normal execution writers. Changing a display record does not itself change the roster, cap ledger, eligibility, negotiation acceptance or career clock. Normal executed transaction workflows remain responsible for those changes.

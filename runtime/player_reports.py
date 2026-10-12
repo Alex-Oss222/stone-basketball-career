@@ -556,7 +556,7 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
     from .milestone_records import build_phase_navigation
     outputs.update(build_phase_navigation(root, player))
     from .contract_navigation import build_contract_navigation
-    contract_navigation = build_contract_navigation(root, player)
+    contract_navigation = build_contract_navigation(root, player, pages={p["id"] for p in contract_catalog["players"]})
     outputs.update(contract_navigation)
     for page in (player / "README.md", stats / "README.md", *(s / "README.md" for s in seasons)):
         if page in outputs:

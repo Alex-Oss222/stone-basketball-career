@@ -148,9 +148,20 @@ def orphan_pages(player, outputs):
     """Player contract pages on disk that the build no longer writes (their id left the catalog): a stale page nobody
     regenerates, which the refresh removes and the freshness check reports."""
     folder = Path(player) / "Contracts" / "players"
-    written = {Path(p).resolve() for p in outputs}
-    return sorted(p for p in folder.glob("*") if p.suffix in (".md", ".html") and p.resolve() not in written) \
-        if folder.is_dir() else []
+    if not folder.is_dir():
+        return []
+    # only this folder's outputs are compared, so a whole career's page set costs one resolve per contract page
+    written = {Path(p).resolve() for p in outputs if Path(p).parent.name == "players" and Path(p).parent.parent.name == "Contracts"}
+    return sorted(p for p in folder.glob("*") if p.suffix in (".md", ".html") and p.resolve() not in written)
+
+
+def prune_orphan_pages(player, outputs):
+    """Delete the contract pages the build no longer writes and return them. Every refresher that writes the build's
+    pages calls this after writing (scripts/refresh_career_views.py, runtime/season_games.refresh_reports)."""
+    pages = orphan_pages(player, outputs)
+    for page in pages:
+        page.unlink()
+    return pages
 
 
 def build_contract_pages(root, player, clock, *, catalog=None):

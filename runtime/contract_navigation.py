@@ -69,13 +69,24 @@ def navigation_block(text: str, body: str, *, after: str) -> str:
     return text
 
 
-def build_contract_navigation(root: Path, player: Path) -> dict[Path, str]:
+def drop_navigation_block(text: str) -> str:
+    """Remove a card's contract links (and the blank line navigation_block put before them)."""
+    if text.count(START) != 1 or text.count(END) != 1:
+        raise ValueError("Malformed contract navigation block")
+    return re.sub(r"\n*" + re.escape(START) + r".*?" + re.escape(END), "", text, count=1, flags=re.S)
+
+
+def build_contract_navigation(root: Path, player: Path, *, pages=None) -> dict[Path, str]:
     """Build link updates for every known personnel card and league period.
 
     The contract catalog supplies one page per registry ID, including unsigned
     players and records with incomplete terms. Historical personnel cards keep
     their original assessments; their links explicitly open the current record.
+    `pages` is the set of ids the contract build writes (the catalog's, from
+    player_reports.build_reports): a card whose player has no page on the
+    career date carries no contract links rather than a link to a missing page.
     """
+    from .player_contracts import register_contract_id
     player = Path(player)
     registry_path = player / "Stats_and_Awards/League/player_registry.json"
     if not registry_path.is_file():
@@ -90,9 +101,7 @@ def build_contract_navigation(root: Path, player: Path) -> dict[Path, str]:
         roster = json.loads(roster_path.read_text(encoding="utf-8"))
         for entry in roster["players"]:
             if entry["name"] not in names:
-                identity = entry.get("bbr_id") or entry.get("registry_id") or entry.get("id")
-                if identity:
-                    names[entry["name"]] = {"name": entry["name"], "registry_id": identity}
+                names[entry["name"]] = {"name": entry["name"], "registry_id": register_contract_id(entry)}
     for entry in names.values():
         contract_page(player, entry["registry_id"])
     outputs = {}
@@ -100,6 +109,10 @@ def build_contract_navigation(root: Path, player: Path) -> dict[Path, str]:
         text = page.read_text(encoding="utf-8")
         heading = re.search(r"^# (.*?) \| .* Player Profile$", text, re.M)
         if not heading or heading.group(1) not in names:
+            continue
+        if pages is not None and names[heading.group(1)]["registry_id"] not in pages:
+            if START in text or END in text:
+                outputs[page] = drop_navigation_block(text)
             continue
         target = contract_page(player, names[heading.group(1)]["registry_id"])
         body = (relative_link(page, target, "Current contract", "contract") + " · " +
