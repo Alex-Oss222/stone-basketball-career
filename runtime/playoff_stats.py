@@ -16,6 +16,7 @@ from __future__ import annotations
 from collections import defaultdict
 import json
 from pathlib import Path
+import re
 
 from .career_stats import aggregate
 
@@ -204,8 +205,48 @@ def team_page(root=ROOT, season=None, now=None):
     return "\n".join(out).rstrip() + "\n"
 
 
+def season_team_page_path(season):
+    return PLAYER_DIR / f"Stats_and_Awards/Team/{season}/Team_Stats.md"
+
+
+PLAYOFF_SECTION = re.compile(r"^## Playoffs\n\n.*?\n\n(?=Departures retain|\[)", re.M | re.S)
+
+
+def team_season_section(root=ROOT, season=None, now=None):
+    """The '## Playoffs' section of Miami's season Team page: its playoff record from the bracket and the closed Miami
+    playoff games, linked to the playoff statistics page (the regular-season tables above never take playoff games)."""
+    season = season or _active_season(root)
+    from .playoffs import read
+    root = Path(root)
+    record = read(root, season)
+    rows = [r["result"] for r in closed_playoff_results(root, season, now) if MIAMI in (r["result"]["home"], r["result"]["away"])]
+    wins = sum(1 for g in rows if g["final_score"]["home" if g["home"] == MIAMI else "away"]
+               > g["final_score"]["away" if g["home"] == MIAMI else "home"])
+    series = [s for s in (record or {}).get("series", []) if MIAMI in s["clubs"]]
+    links = (f"[Miami's playoff statistics](Playoffs/Team_Playoff_Stats.md) (series, games and players) · "
+             f"[bracket](../../League/{season}/Playoffs.md). Playoff games stay out of the regular-season tables above.")
+    if not series:                                      # a bracket without Miami: it did not qualify
+        if (record or {}).get("series"):
+            return f"## Playoffs\n\nMiami did not qualify for the {season} playoffs.\n\n"
+        return f"## Playoffs\n\nThe {season} playoffs have not started. {links}\n\n"
+    parts = []
+    for s in series:
+        other = next(c for c in s["clubs"] if c != MIAMI)
+        state = (f"{'won' if s['winner'] == MIAMI else 'lost'} {s['wins'][MIAMI]}-{s['wins'][other]} against {other}"
+                 if s.get("winner") else f"{s['wins'][MIAMI]}-{s['wins'][other]} against {other}, in progress")
+        parts.append(f"{ROUND_LABELS[s['round']]} {state}")
+    champion = " Miami won the NBA championship." if (record or {}).get("champion") == MIAMI else ""
+    return (f"## Playoffs\n\n{len(rows)} closed Miami playoff game(s), {wins}-{len(rows) - wins}: " + "; ".join(parts)
+            + f".{champion} {links}\n\n")
+
+
+def with_team_section(text, section):
+    """The season Team page with its Playoffs section replaced (the page's tables are the write-back's)."""
+    return PLAYOFF_SECTION.sub(lambda _: section, text, count=1)
+
+
 def pages(root=ROOT, season=None, now=None):
-    """{path: text} for both pages, or {} before the playoffs are seeded."""
+    """{path: text} for both pages and the season Team page's Playoffs section, or {} before the playoffs are seeded."""
     season = season or _active_season(root)
     from .playoffs import read
     root = Path(root)
@@ -215,7 +256,11 @@ def pages(root=ROOT, season=None, now=None):
     if close.is_file():                     # a closed season's pages stand as of its close, whatever the clock says
         from .write_back import clock
         now = min(now or clock(root), json.loads(close.read_text(encoding="utf-8"))["close_date"])
-    return {root / league_page_path(season): league_page(root, season, now), root / team_page_path(season): team_page(root, season, now)}
+    out = {root / league_page_path(season): league_page(root, season, now), root / team_page_path(season): team_page(root, season, now)}
+    season_page = root / season_team_page_path(season)
+    if season_page.is_file():
+        out[season_page] = with_team_section(season_page.read_text(encoding="utf-8"), team_season_section(root, season, now))
+    return out
 
 
 def write_pages(root=ROOT, season=None):

@@ -413,8 +413,8 @@ class Assets:
         term = max(CONTRACT_TERM_LIMITS[0], min(CONTRACT_TERM_LIMITS[1], term))
         total = production + term
         age = self.valuation.age(bbr) if bbr else None
-        if age is None and player.get("date_of_birth"):
-            from .valuation import age_on
+        if age is None and player.get("date_of_birth") and player.get("date_of_birth_from", self.on) <= self.on:
+            from .valuation import age_on      # a birth date recorded later counts from its date (injuries.simulated_ages)
             age = age_on(player["date_of_birth"], self.on)
         relief = 0.0
         if for_club and years == 1 and self.payroll(for_club) and self.payroll(for_club) > self.tax_line:
@@ -756,7 +756,8 @@ class TradeDesk:
         p = next((p for p in self.fo.sheet["players"] if p["player"] == name), None)
         r = next((r for r in self.fo.roster["players"] if r["name"] == name), None)
         if p is not None and r is not None:
-            p = dict(p, bbr_id=p.get("bbr_id") or r.get("bbr_id"), date_of_birth=r.get("date_of_birth"))
+            p = dict(p, bbr_id=p.get("bbr_id") or r.get("bbr_id"), date_of_birth=r.get("date_of_birth"),
+                     **({"date_of_birth_from": r["date_of_birth_from"]} if r.get("date_of_birth_from") else {}))
         return p, r
 
     def partner_player(self, club, name):

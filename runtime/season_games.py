@@ -361,6 +361,8 @@ def miami_side(game_date, root=ROOT, season=None, with_lists=False):
     roster = read_json(team / "Roster/roster.json")
     if roster.get("as_of", "") > game_date:
         raise ValueError("no historical roster for this game; the available register is dated after it")
+    from .miami_register import with_positions_on
+    roster = dict(roster, players=with_positions_on(roster["players"], game_date))   # a dated correction from its date
     from .camp import playable
     from . import roster_moves
     waiting = roster_moves.required_before(game_date, root)

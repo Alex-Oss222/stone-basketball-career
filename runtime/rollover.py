@@ -112,6 +112,24 @@ class Rollover:
                 if p.get("bbr_id"):
                     out.setdefault(p["bbr_id"], {"name": p["player"], "position": p.get("position"), "birth_date": p.get("birth_date")})
                     out[p["bbr_id"]].update(draft_pick=p["pick"], draft_round=p["round"], college=p.get("college"))
+        # What those sources leave open: a birth date from the researched births and the draft classes' prospect
+        # evidence (`signing.league_identity`'s sources), a position from the prospect evidence. A registry row whose
+        # position no source records holds only its page slot, which is no position (`write_back.known_position`).
+        from .signing import prospect_identities
+        from .write_back import UNKNOWN_BASIS, identity_sources
+        births, prospects = identity_sources(self.root)[1], prospect_identities(self.root)
+        registry = self.root / PLAYER / "Stats_and_Awards/League/player_registry.json"
+        unknown = {r["bbr_id"] for r in (_read(registry)["players"] if registry.is_file() else [])
+                   if r.get("bbr_id") and r.get("position_basis") == UNKNOWN_BASIS}
+        picked = {p["bbr_id"]: p.get("position") for p in (_read(draft)["picks"] if draft.is_file() else []) if p.get("bbr_id")}
+        for b, e in out.items():
+            found = prospects.get(b, {})
+            if b in unknown:
+                e["position"] = picked.get(b)
+            if not e.get("position") and found.get("position"):
+                e["position"] = found["position"]
+            if not e.get("birth_date") and (births.get(b) or found.get("birth_date")):
+                e["birth_date"] = births.get(b) or found["birth_date"]
         for p in _read(self.old_team / "Team/Roster/roster.json")["players"]:
             key = p.get("bbr_id") or p["id"]
             e = out.setdefault(key, {})
@@ -261,9 +279,7 @@ class Rollover:
         s = entry.get("schedule") or {}
         if entry["status"] == "unsigned_draft_rights":
             return f"Unsigned draft rights: No. {entry.get('draft_pick')} pick of the {self.year} draft."
-        years = [k for k in sorted(s) if k >= self.new and s[k]]
-        total = sum(s[k] for k in years)
-        head = f"{len(years)} season(s) from {self.new}, ${total:,} scheduled (${s.get(self.new, 0):,} in {self.new})"
+        head = contract_head(s, self.new)
         if entry["status"] == "camp_contract":
             return f"Camp contract signed {_long(entry['signed_date'])}: {head}; non-guaranteed until {entry.get('guarantee_date')}."
         if entry.get("route") in (None, "existing") or "signed_date" not in entry or entry["signed_date"] < f"{self.new[:4]}-07-01":
@@ -271,6 +287,7 @@ class Rollover:
         return f"Signed {_long(entry['signed_date'])} ({entry.get('route')}): {head}."
 
     def register(self, entries, ids):
+        from .miami_register import carried, required_position
         old = {p.get("bbr_id") or p["id"]: p for p in _read(self.old_team / "Team/Roster/roster.json")["players"]}
         players = []
         for e in entries:
@@ -278,9 +295,12 @@ class Rollover:
             ident = ids.get(key, {})
             prev = old.get(key)
             if prev:
-                p = deepcopy(prev)
+                # a dated position correction in force by the rollover is the new season's position (`miami_register`)
+                p = carried(deepcopy(prev), self.day)
+                if not p.get("date_of_birth") and ident.get("birth_date"):
+                    p["date_of_birth"] = ident["birth_date"]          # known before the new season's first game
             else:
-                pos = ident.get("position") or "SF"
+                pos = required_position(ident.get("position"), self.day, e["player"])
                 p = {"id": slug(e["player"]), "name": e["player"], "positions": [x.strip() for x in str(pos).replace("-", "/").split("/") if x.strip()],
                      "date_of_birth": ident.get("birth_date"), "college": ident.get("college"), "working_role": "Unassigned arrival",
                      "player_card": f"../Player_Cards/{slug(e['player'])}.md", "bbr_id": key}
@@ -418,6 +438,7 @@ class Rollover:
                 shutil.copy2(src, dst)
         config = _read(self.old_team / "team_config.json")
         config.update(season=self.new, as_of=self.day)
+        config["budget"] = season_budget(config.get("budget") or {}, self.old, self.new, self.root)
         config["projection"] = {"wins": None, "basis": "Set by the staff at training camp from the new roster."}
         _dump(self.team / "team_config.json", config)
         sheet = _read(self.old_team / "Finances/contract_schedules.json")
@@ -487,6 +508,39 @@ class Rollover:
                              and h.get("basis", "").endswith("summer market")]}
 
 
+def season_budget(budget, old, new, root=ROOT):
+    """The owner's budget carried into the new season's `team_config.json`, recording the ceiling `gm.payroll_ceiling`
+    applies in it: with no tax tolerated, from 2005-06 the season's luxury-tax line (`cap_rules.luxury_tax_line`);
+    the July 2003 figure the earlier seasons read stays as `payroll_ceiling_through_2004_05`."""
+    from .seasons import path as season_path
+    out = dict(budget)
+    if out.get("tax_tolerance", "none") != "none" or new < "2005-06":
+        return out
+    rules = Path(root) / season_path(new, "cap_rules")
+    line = _read(rules).get("luxury_tax_line") if rules.is_file() else None
+    if not line:
+        return out
+    out.setdefault("payroll_ceiling_through_2004_05", out.get("payroll_ceiling", 57000000))   # set once, from 2004-05's
+    out["payroll_ceiling"] = int(line)
+    out["basis"] = (f"Judgement (docs/front_office_design.md 5.2): the owner pays no luxury tax. From 2005-06 the ceiling is "
+                    f"the season's tax line, ${int(line):,} for {new} ({season_path(new, 'cap_rules').as_posix()}, "
+                    "luxury_tax_line; runtime/gm.FrontOffice.payroll_ceiling); payroll_ceiling_through_2004_05 is the July 2003 "
+                    "luxury-tax projection that held 2003-04 and 2004-05 payroll.")
+    return out
+
+
+# The term clause of a register control text (`Rollover.control_text`): every scheduled season from the register's.
+CONTRACT_HEAD = re.compile(r"(\d+) season\(s\) from (\d{4}-\d{2}), \$([\d,]+) scheduled \(\$([\d,]+) in (\d{4}-\d{2})\)")
+
+
+def contract_head(schedule, season):
+    """'N season(s) from <season>, $T scheduled ($X in <season>)' from a contract schedule: the seasons from `season` on
+    with a scheduled amount (option seasons included), their total and the first."""
+    years = [k for k in sorted(schedule) if k >= season and schedule[k]]
+    total = sum(schedule[k] for k in years)
+    return f"{len(years)} season(s) from {season}, ${total:,} scheduled (${schedule.get(season, 0):,} in {season})"
+
+
 def arrival_card(name, ident, day, control, source_rel, prior, season, how):
     """A new Miami player's card in the template's section order; grades stay unassessed until evidence exists.
     `prior` is his previous season's record (simulated totals once the career has played it)."""
@@ -502,7 +556,7 @@ def arrival_card(name, ident, day, control, source_rel, prior, season, how):
         g = max(t.get("games") or 0, 1)
 
         def pct(m, a):
-            return f"{t[m] / t[a]:.3f}" if t.get(a) else "N/A"
+            return f"{100 * t[m] / t[a]:.1f}%" if t.get(a) else "N/A"           # one format with the Miami rows
         rows = (f"| {old} | {', '.join(prior.get('team_codes') or []) or 'N/A'} | {t.get('games', 0)} | {t.get('games_started', 'N/A')} | "
                 f"{t['minutes'] / g:.1f} | {t['points'] / g:.1f} | {(t['offensive_rebounds'] + t['defensive_rebounds']) / g:.1f} | "
                 f"{t['assists'] / g:.1f} | {t['steals'] / g:.1f} | {t['blocks'] / g:.1f} | {t['turnovers'] / g:.1f} | "
@@ -545,25 +599,23 @@ Unassessed.
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** {old + ' from the simulated league record; ' if prior else ''}{season} not started.
+**Coverage:** {old + ': ' + (', '.join(prior.get('team_codes') or []) or 'his clubs') + ' from the league record; ' if prior else ''}{season} had not started on {day}.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-{rows}| {season} | Miami Heat | 0 | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+{rows}| {season} | MIA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
-Source: {old} from closed simulated results (`Stats_and_Awards/League/{old}/season_totals.json`); {season} from closed Miami game results.
+Source: Simulated seasons from closed results: Miami's games (MIA rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** no appearance in a closed simulated playoff game through {day}; playoff history before 2003-04 is not imported. The {season} playoffs had not started on {day}.
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor recorded on this card through {day}; the write-back fills honors earned in the simulated league from the award records (`runtime/miami_cards.py`). Awards before 2003-04 are not imported.
 """
 
 

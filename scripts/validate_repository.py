@@ -695,7 +695,7 @@ def validate():
 
     from runtime.miami_cards import refresh as refresh_miami_cards
     for card in refresh_miami_cards(ROOT, write=False):
-        errors.append(f"{card.relative_to(ROOT)}: role, 2003-04 statistics or rotation notes are stale (python scripts/write_back_results.py --write)")
+        errors.append(f"{card.relative_to(ROOT)}: role, statistics, playoff rows, honors, header facts or rotation notes are stale (python scripts/write_back_results.py --write)")
 
     from runtime.team_status import refresh as refresh_team_status
     for page in refresh_team_status(ROOT, write=False):

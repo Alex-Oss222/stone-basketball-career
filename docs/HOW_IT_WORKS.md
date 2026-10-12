@@ -66,7 +66,7 @@ Commit in batches, about every couple of weeks of career time or at any stop tha
   - Contention and role come from every club's roster **on the date, with him on it**.
   - Weights depend on age and on a drawn trait. The gap between the two scores sets the accept, counter and reject odds, and the engine draws the answer.
 - **Miami's GM** (`runtime/gm.py`).
-  - **Ceiling.** Plans under a $57M owner payroll ceiling with no tax.
+  - **Ceiling.** Plans under the owner's payroll ceiling with no tax: the July 2003 $57M projection through 2004-05, each season's luxury-tax line from 2005-06 (recorded in that season's `team_config.json` by the rollover).
   - **Holds and exceptions.** Handles cap holds, the mid-level exception and Bird rights.
   - **Later seasons.** Every later season of an offer must also fit under the ceiling.
   - **Valuation.** Walks away above its valuation.

@@ -107,7 +107,7 @@ The cap sheet (`00_Team/Finances/finance.json`, `contract_schedules.json`, `free
 
 ### 5.2 Budget
 
-`team_config.json` gains the owner's **payroll ceiling** for the season and a **tax tolerance** (whether the club will pay the dollar-for-dollar tax at all). For 2003, Miami's evidence is a club cutting payroll with about $7 million of room before June 30 (*judgement*: ceiling at the projected tax line, no tax).
+`team_config.json` gains the owner's **payroll ceiling** for the season and a **tax tolerance** (whether the club will pay the dollar-for-dollar tax at all). For 2003, Miami's evidence is a club cutting payroll with about $7 million of room before June 30 (*judgement*: ceiling at the projected tax line, no tax). From 2005-06 the ceiling is the season's own luxury-tax line (`gm.FrontOffice.payroll_ceiling`); the rollover records it as the season's `payroll_ceiling`, and the July 2003 figure the earlier seasons used stays as `payroll_ceiling_through_2004_05` (`rollover.season_budget`).
 
 ### 5.2a Standing roster and payroll rules
 

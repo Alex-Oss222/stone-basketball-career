@@ -26,9 +26,10 @@
   "Do not import the later 2003 coaching change before its event date."
  ],
  "budget": {
-  "payroll_ceiling": 57000000,
+  "payroll_ceiling": 61700000,
   "tax_tolerance": "none",
-  "basis": "Judgement (docs/front_office_design.md 5.2): the owner holds 2003-04 payroll at the July 2003 luxury-tax projection and pays no tax."
+  "basis": "Judgement (docs/front_office_design.md 5.2): the owner pays no luxury tax. From 2005-06 the ceiling is the season's tax line, $61,700,000 for 2005-06 (library/2005/league/nba_2005_06_cap_rules.json, luxury_tax_line; runtime/gm.FrontOffice.payroll_ceiling); payroll_ceiling_through_2004_05 is the July 2003 luxury-tax projection that held 2003-04 and 2004-05 payroll. Recorded on the 2006-06-20 audit: the rollover had copied the 2003-04 figure forward; gm.py already applied the tax line for every 2005-06 date, so no decision changes.",
+  "payroll_ceiling_through_2004_05": 57000000
  },
  "projection": {
   "wins": null,

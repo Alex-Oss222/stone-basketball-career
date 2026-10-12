@@ -36,7 +36,7 @@
    "date_of_birth": "1972-03-05",
    "college": "Xavier",
    "status": "under_contract",
-   "control": "Existing contract: 1 season(s) from 2004-05, $13,233,434 scheduled ($13,233,434 in 2004-05).",
+   "control": "Existing contract: 3 season(s) from 2004-05, $43,008,660 scheduled ($13,233,434 in 2004-05).",
    "working_role": "Starter at C, staff plan 34 minutes (rotation 2005-04-14)",
    "player_card": "../Player_Cards/brian_grant.md",
    "bbr_id": "grantbr01"
@@ -110,7 +110,7 @@
    "date_of_birth": "1980-03-13",
    "college": "UConn",
    "status": "under_contract",
-   "control": "Existing contract: 1 season(s) from 2004-05, $1,930,680 scheduled ($1,930,680 in 2004-05).",
+   "control": "Existing contract: 2 season(s) from 2004-05, $4,392,297 scheduled ($1,930,680 in 2004-05).",
    "working_role": "Rotation at SF, staff plan 11 minutes (rotation 2005-04-14)",
    "player_card": "../Player_Cards/caron_butler.md",
    "bbr_id": "butleca01"
@@ -138,7 +138,10 @@
    "player_card": "../Player_Cards/dorell_wright.md",
    "bbr_id": "wrighdo01",
    "status": "under_contract",
-   "control": "Signed July 1, 2004 (rookie_scale): 3 season(s) from 2004-05, $3,156,240 scheduled ($978,720 in 2004-05)."
+   "control": "Signed July 1, 2004 (rookie_scale): 3 season(s) from 2004-05, $3,156,240 scheduled ($978,720 in 2004-05).",
+   "date_of_birth": "1985-12-02",
+   "date_of_birth_from": "2006-06-21",
+   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/2004/league/nba_2004_prospect_evidence.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
   },
   {
    "id": "john_thomas",
@@ -150,7 +153,10 @@
    "player_card": "../Player_Cards/john_thomas.md",
    "bbr_id": "thomajo02",
    "status": "under_contract",
-   "control": "Signed August 19, 2004 (minimum): 1 season(s) from 2004-05, $932,546 scheduled ($932,546 in 2004-05)."
+   "control": "Signed August 19, 2004 (minimum): 1 season(s) from 2004-05, $932,546 scheduled ($932,546 in 2004-05).",
+   "date_of_birth": "1975-09-08",
+   "date_of_birth_from": "2006-06-21",
+   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/careers/nba_player_births.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
   },
   {
    "id": "maurice_evans",
@@ -162,7 +168,10 @@
    "player_card": "../Player_Cards/maurice_evans.md",
    "bbr_id": "evansma01",
    "status": "under_contract",
-   "control": "Signed August 5, 2004 (minimum): 1 season(s) from 2004-05, $720,046 scheduled ($720,046 in 2004-05)."
+   "control": "Signed August 5, 2004 (minimum): 1 season(s) from 2004-05, $720,046 scheduled ($720,046 in 2004-05).",
+   "date_of_birth": "1978-11-08",
+   "date_of_birth_from": "2006-06-21",
+   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/careers/nba_player_births.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
   },
   {
    "id": "udonis_haslem",
@@ -187,7 +196,10 @@
    "player_card": "../Player_Cards/maurice_baker.md",
    "bbr_id": "bakerma01",
    "status": "under_contract",
-   "control": "Signed July 15, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05)."
+   "control": "Signed July 15, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05).",
+   "date_of_birth": "1979-07-28",
+   "date_of_birth_from": "2006-06-21",
+   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/careers/nba_player_births.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
   },
   {
    "id": "john_edwards",
@@ -199,7 +211,10 @@
    "player_card": "../Player_Cards/john_edwards.md",
    "bbr_id": "edwarjo01",
    "status": "under_contract",
-   "control": "Signed July 22, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05)."
+   "control": "Signed July 22, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05).",
+   "date_of_birth": "1981-07-31",
+   "date_of_birth_from": "2006-06-21",
+   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/careers/nba_player_births.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
   },
   {
    "id": "bernard_robinson",
@@ -211,7 +226,10 @@
    "player_card": "../Player_Cards/bernard_robinson.md",
    "bbr_id": "robinbe01",
    "status": "rights_released",
-   "control": "June 28, 2005: Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40). He is no longer under Miami's control."
+   "control": "June 28, 2005: Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40). He is no longer under Miami's control.",
+   "date_of_birth": "1980-12-26",
+   "date_of_birth_from": "2006-06-21",
+   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json, library/2004/league/nba_2004_prospect_evidence.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
   },
   {
    "id": "christian_drejer",
@@ -223,7 +241,10 @@
    "player_card": "../Player_Cards/christian_drejer.md",
    "bbr_id": "drejech01",
    "status": "rights_released",
-   "control": "June 28, 2005: Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40). He is no longer under Miami's control."
+   "control": "June 28, 2005: Miami's exclusive rights ended unsigned at the 2005 draft (1999 CBA Art. X §3(a); 1999 FAQ Q40). He is no longer under Miami's control.",
+   "date_of_birth": "1982-12-08",
+   "date_of_birth_from": "2006-06-21",
+   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from library/2004/league/nba_2004_prospect_evidence.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
   },
   {
    "id": "stephen_jackson",

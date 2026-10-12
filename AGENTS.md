@@ -42,6 +42,8 @@ Organization files record basketball decision makers only. Business-side staff a
 
 Roster means the current team-control register at the stated date. Expiring contracts, pending options, draft rights and unavailable players must be labeled rather than silently treated as guaranteed active players.
 
+A register fact found wrong after games were played is never rewritten in place: the row keeps what those games read and carries the correction with its effective date (`date_of_birth_from`, `positions_corrected` from `positions_corrected_from`; `runtime/miami_register.py`), and a missing position stops the writer instead of being guessed from 2006-06-21.
+
 Contracts, clubs, players and uniform numbers carry across seasons intact (`runtime/continuity.py`, `python scripts/audit_continuity.py`): a carried contract keeps its signed schedule and is never re-dated, no player under contract disappears without a record, no player is on two clubs, identities stay fixed, and every active Miami player has a unique number with Wade's matching his dated identity. Validation and the rollover refuse any break.
 
 Depth chart is a working basketball view, not a user choice and not a promise of minutes. At the June 26 checkpoint it carries the just-completed 2002-03 positional order and leaves the two new draft picks unassigned until the coaching staff makes a new decision.

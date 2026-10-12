@@ -322,7 +322,8 @@ def review_input(on, root=ROOT, season=None):
     roster = read_json(base / "00_Team/Team/Roster/roster.json")
     if roster.get("as_of", "") > on:
         raise ValueError("cannot reconstruct a past staff review from a later roster")
-    players = [{"player": p["name"], "positions": p["positions"], "bbr_id": p.get("bbr_id"), "status": "roster"}
+    from .miami_register import positions_on
+    players = [{"player": p["name"], "positions": positions_on(p, on), "bbr_id": p.get("bbr_id"), "status": "roster"}
                for p in roster["players"] if camp.playable(p.get("status"))]
     players.sort(key=lambda p: p["player"])
     if len(players) < 5:

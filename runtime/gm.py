@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 
 from .contracts import counted_amount
+from .miami_register import required_position, with_positions_on
 from .standing import STANDING_WEIGHT
 from .trades import SIGN_AND_TRADE_RIGHTS
 from .valuation import read
@@ -46,7 +47,9 @@ class FrontOffice:
         self.config = read(TEAM / "team_config.json", root)
         self.sheet = read(TEAM / "Finances/contract_schedules.json", root)
         self.rights = read(TEAM / "Finances/free_agent_rights.json", root)
-        self.roster = read(TEAM / "Team/Roster/roster.json", root)
+        roster = read(TEAM / "Team/Roster/roster.json", root)
+        # a dated position correction counts from its date (`miami_register.positions_on`): earlier needs read as made
+        self.roster = dict(roster, players=with_positions_on(roster["players"], on))
         self.depth = read(TEAM / "Team/Depth_Chart/depth_chart.json", root)
         self.budget = self.config.get("budget", {})
 
@@ -123,14 +126,16 @@ class FrontOffice:
     def payroll_ceiling(self):
         """The owner's ceiling: no luxury tax (`team_config.budget`, tax_tolerance "none"). Through 2004-05 the July 2003
         projection as recorded; from 2005-06 the season's own tax line, which the 2005 agreement fixes before the season
-        (`cap_rules.luxury_tax_line`; the season-change audit found the 2003 figure carried forever)."""
+        (`cap_rules.luxury_tax_line`; the season-change audit found the 2003 figure carried forever). A config from 2005-06
+        on records the season's effective ceiling as `payroll_ceiling` and keeps the July 2003 figure, which a date in an
+        earlier season still reads, as `payroll_ceiling_through_2004_05` (the audit of 2006-06-20; no answer changes)."""
         from .seasons import live_season_on, path as season_path
         season = live_season_on(self.on, self.root)
         if self.budget.get("tax_tolerance", "none") == "none" and season >= "2005-06":
             line = read(season_path(season, "cap_rules"), self.root).get("luxury_tax_line")
             if line:
                 return int(line)
-        return self.budget.get("payroll_ceiling", 57000000)
+        return self.budget.get("payroll_ceiling_through_2004_05", self.budget.get("payroll_ceiling", 57000000))
 
     # -- needs ---------------------------------------------------------------------------------
     def roster_values(self):
@@ -206,7 +211,7 @@ class FrontOffice:
             if own is None:
                 continue
             ask = self.market.asking(bbr, self.on)
-            pos = positions.get(bbr, "SF")
+            pos = required_position(positions.get(bbr), self.on, p["player"])
             surplus = (own - ask["first_year"]) / max(ask["first_year"], 1)
             weight = round(self.fit(pos, needs) * self.skill_fit(bbr), 3)
             # Contribution above replacement per dollar, with a star premium (quality^1.5): one star

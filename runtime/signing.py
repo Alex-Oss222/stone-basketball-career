@@ -17,6 +17,7 @@ from pathlib import Path
 from .valuation import read
 from .contract_archive import archive_contract, archive_previous_contract
 from .contracts import counted_amount
+from .miami_register import required_position
 
 ROOT = Path(__file__).resolve().parents[1]
 from .seasons import active as _live_season, label as _label
@@ -109,20 +110,59 @@ def set_state(writer, day, area="01_Free_Agency", note="01_Free_Agency/note.md",
 
 
 def league_identity(root, bbr_id):
-    """Identity from the league baseline (position, birth date, jersey, photo) for a new Miami player."""
+    """Identity from the league baseline (position, birth date, jersey, photo) for a new Miami player. A birth date or
+    position the first source lacks comes from the draft classes' prospect evidence (`prospect_identities`) and the
+    researched birth dates (`write_back.identity_sources`, which reads `library/careers/nba_player_births.json`); a
+    registry row whose position no source records gives none (`write_back.known_position`), never its page slot."""
+    found = _baseline_identity(root, bbr_id)
+    if not bbr_id:
+        return found
+    prospect = prospect_identities(root).get(bbr_id, {})
+    if not found and prospect:
+        found = dict(prospect, club=None)
+    if found and not found.get("birth_date"):
+        from .write_back import identity_sources
+        born = identity_sources(root)[1].get(bbr_id) or prospect.get("birth_date")
+        if born:
+            found["birth_date"] = born
+    if found and not found.get("position") and prospect.get("position"):
+        found["position"] = prospect["position"]
+    return found
+
+
+def _baseline_identity(root, bbr_id):
     for club, entry in read("library/2003/league/nba_2003_end_of_season.json", root)["clubs"].items():
         for p in entry["players"]:
             if p.get("bbr_id") == bbr_id:
                 return dict(p, club=club)
+    from .write_back import known_position
     for p in read("career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json", root)["players"]:
         if p.get("bbr_id") == bbr_id:
-            return {"player_id": p["name"], "position": p.get("position"), "birth_date": p.get("birth_date"), "club": p.get("team_name")}
+            return {"player_id": p["name"], "position": known_position(p), "birth_date": p.get("birth_date"), "club": p.get("team_name")}
     extra = Path(root) / "library/2003/league/nba_2003_unattached_identities.json"
     if extra.is_file():
         for p in json.loads(extra.read_text(encoding="utf-8"))["players"]:
             if p.get("bbr_id") == bbr_id:
                 return dict(p, club=None)
     return {}
+
+
+def prospect_identities(root):
+    """{bbr_id: {"player_id", "position", "birth_date"}} from every draft class's prospect evidence
+    (`library/<year>/league/nba_<year>_prospect_evidence.json`, drafted and undrafted): draft-night identity, so a pick
+    who never played an NBA game (Drejer, Slokar) still has his birth date and listed position."""
+    out = {}
+    for path in sorted(Path(root).glob("library/*/league/nba_*_prospect_evidence.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        groups = [data.get("players_drafted"), data.get("undrafted_candidates")]
+        rows = [r for g in groups for r in (g if isinstance(g, list) else (g or {}).get("players", []) if isinstance(g, dict) else [])]
+        for p in rows:
+            if not isinstance(p, dict) or not p.get("bbr_id"):
+                continue
+            pos = p.get("position")
+            pos = pos.get("value") if isinstance(pos, dict) else pos
+            out.setdefault(p["bbr_id"], {"player_id": p.get("player_id"), "position": pos or None, "birth_date": p.get("birth_date")})
+    return out
 
 
 def player_card(name, identity, day, control, source_rel, prior_stats=None):
@@ -138,9 +178,9 @@ def player_card(name, identity, day, control, source_rel, prior_stats=None):
     if prior_stats:
         t = prior_stats["totals"]
         g = max(t["games"], 1)
-        fg = f"{t['field_goals_made'] / t['field_goals_attempted']:.3f}" if t["field_goals_attempted"] else "N/A"
-        tp = f"{t['three_pointers_made'] / t['three_pointers_attempted']:.3f}" if t.get("three_pointers_attempted") else "N/A"
-        ft = f"{t['free_throws_made'] / t['free_throws_attempted']:.3f}" if t["free_throws_attempted"] else "N/A"
+        fg = f"{100 * t['field_goals_made'] / t['field_goals_attempted']:.1f}%" if t["field_goals_attempted"] else "N/A"   # 45.2%, as Miami's rows
+        tp = f"{100 * t['three_pointers_made'] / t['three_pointers_attempted']:.1f}%" if t.get("three_pointers_attempted") else "N/A"
+        ft = f"{100 * t['free_throws_made'] / t['free_throws_attempted']:.1f}%" if t["free_throws_attempted"] else "N/A"
         stats = (f"| 2002-03 | {prior_stats.get('team', identity.get('club', 'N/A'))} | {t['games']} | N/A | {t['minutes'] / g:.1f} | {t['points'] / g:.1f} | "
                  f"{(t['offensive_rebounds'] + t['defensive_rebounds']) / g:.1f} | {t['assists'] / g:.1f} | {t['steals'] / g:.1f} | {t['blocks'] / g:.1f} | "
                  f"{t['turnovers'] / g:.1f} | {fg} | {tp} | {ft} |\n")
@@ -181,25 +221,23 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** {'2002-03 from the league record; ' if stats else ''}2003-04 not started.
+**Coverage:** {'2002-03 regular season from the league record; earlier seasons are not imported; ' if stats else ''}{SEASON}: no Miami appearance through {day}.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-{stats}| {SEASON} | Miami Heat | 0 | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+{stats}| {SEASON} | MIA | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
-Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
+Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json). Simulated seasons from closed results: Miami's games (MIA rows), and an earlier season's line with every club from the league's closed season totals (`Stats_and_Awards/League/<season>/season_totals.json`).
 
 ## Playoff statistics by year
 
-**Coverage:** No playoff appearances recorded for Miami.
+**Coverage:** no appearance in a closed simulated playoff game through {day}; playoff history before 2003-04 is not imported.
 
 <!-- yearly-statistics:end -->
 
 ## Awards and honors
 
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
+No honor recorded on this card through {day}; the write-back fills honors earned in the simulated league from the award records (`runtime/miami_cards.py`). Awards before 2003-04 are not imported.
 """
 
 
@@ -370,7 +408,8 @@ def sign(writer, negotiation, day, *, via_trade=None, cap=None):
     if existing:
         existing.update(status="re_signed", control=control)
     else:
-        roster["players"].append({"id": slug(name), "name": name, "positions": [x for x in (identity.get("position") or "SF").replace("/", "-").split("-")],
+        position = required_position(identity.get("position"), day, name)
+        roster["players"].append({"id": slug(name), "name": name, "positions": [x for x in position.replace("/", "-").split("-")],
                                  "date_of_birth": identity.get("birth_date"), "status": "signed_free_agent", "control": control,
                                  "working_role": "Unassigned arrival", "player_card": f"../Player_Cards/{slug(name)}.md", "bbr_id": bbr})
         stats = next((r for r in read("library/2003/league/nba_2002_03_player_stats.json", writer.root)["records"] if r["bbr_id"] == bbr), None)
@@ -899,7 +938,7 @@ def apply_trade(writer, record, day, desk=None):
         prior = stats.get(bbr, {}).get("totals", {})
         identity = league_identity(writer.root, bbr)
         departures["entries"].append({"player": name, "bbr_id": bbr, "club": club, "from": day, "until": None,
-                                      "position": (identity.get("position") or "SF").split("-")[0],
+                                      "position": required_position(identity.get("position"), day, name).split("-")[0],
                                       "games": prior.get("games", 0), "minutes": prior.get("minutes", 0),
                                       "basis": f"traded {day} ({record['trade_id']}); previous share from {prior_label} totals"})
     # Miami's incoming players (a sign-and-trade acquisition was written by `sign` from the agreed terms)
@@ -931,7 +970,8 @@ def apply_trade(writer, record, day, desk=None):
         identity = league_identity(writer.root, bbr)
         salary = p["schedule"].get(SEASON) or 0
         control = f"Acquired by trade from {club} on {long_date(day)}: ${salary:,} in {SEASON}; contract through {max(s for s, v in p['schedule'].items() if v)}."
-        roster["players"].append({"id": slug(name), "name": name, "positions": [x for x in (identity.get("position") or "SF").replace("/", "-").split("-")],
+        position = required_position(identity.get("position"), day, name)
+        roster["players"].append({"id": slug(name), "name": name, "positions": [x for x in position.replace("/", "-").split("-")],
                                  "date_of_birth": identity.get("birth_date"), "status": "under_contract", "control": control,
                                  "working_role": "Unassigned arrival", "player_card": f"../Player_Cards/{slug(name)}.md", "bbr_id": bbr})
         writer.text(TEAM / f"Team/Player_Cards/{slug(name)}.md", arrival_card_for_trade(writer.root, name, identity, day, control, record_rel, bbr, club)

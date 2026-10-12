@@ -20,6 +20,7 @@ from pathlib import Path
 
 from .camp import ROSTER_MAX, playable
 from .front_office import request_override
+from .miami_register import required_position
 from .player_stats import alias
 from .valuation import REPLACEMENT_EFF_PER_GAME, read
 
@@ -79,7 +80,7 @@ def candidates(on, front_office, market, positions, root=ROOT, requested=()):
         value = market.valuation.value(bbr)
         known = value is not None
         value = value if known else REPLACEMENT_EFF_PER_GAME
-        pos = positions.get(bbr, "SF")
+        pos = required_position(positions.get(bbr), on, p["player"])
         fit = front_office.fit(pos, needs)
         rows.append({"player": p["player"], "bbr_id": bbr, "position": pos, "value": round(value, 2), "value_known": known,
                      "fit": fit, "score": round(value * fit, 3), "unattached": bool(p.get("unattached")),

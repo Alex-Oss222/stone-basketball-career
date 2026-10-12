@@ -162,7 +162,9 @@ class Builder:
             head = (f"# Miami Heat | {s}\n\n[Stats hub](../../README.md) · [Wade](../../{s}/README.md) · "
                     f"[NBA players](../../League/{s}/League_Stats.md) · [NBA awards](../../League/{s}/League_Awards.md)\n\nNBA regular season · {s}\n\n")
             period = ("## By month\n\n" + _period_table([(self.cal.month_label(m), f"{m[3]}/Team_Stats.md", self.cal.month_dates(m)) for m in self.cal.months], "games")
-                      + "\n## Playoffs\n\nNo playoff games recorded. Use a separate playoff ledger; do not add postseason games to the regular-season totals.\n\n")
+                      + f"\n## Playoffs\n\nThe {s} playoffs have not started. Once the bracket is seeded this section states Miami's "
+                      "playoff record and links its playoff statistics page (`playoff_stats.team_season_section`); playoff games "
+                      "never enter the regular-season tables above.\n\n")
             nav = ""
         elif level == "month":
             label = self.cal.month_label(month)

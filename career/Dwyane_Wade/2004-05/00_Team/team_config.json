@@ -28,7 +28,7 @@
  "budget": {
   "payroll_ceiling": 57000000,
   "tax_tolerance": "none",
-  "basis": "Judgement (docs/front_office_design.md 5.2): the owner holds 2003-04 payroll at the July 2003 luxury-tax projection and pays no tax."
+  "basis": "Judgement (docs/front_office_design.md 5.2): the owner holds payroll at the July 2003 luxury-tax projection and pays no tax; runtime/gm.FrontOffice.payroll_ceiling applies it through 2004-05 (from 2005-06 the season's tax line)."
  },
  "projection": {
   "wins": null,

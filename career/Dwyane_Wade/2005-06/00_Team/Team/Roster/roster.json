@@ -165,7 +165,12 @@
    "player_card": "../Player_Cards/sebastian_telfair.md",
    "bbr_id": "telfase01",
    "status": "under_contract",
-   "control": "Existing contract: 2 season(s) from 2005-06, $2,090,520 scheduled ($1,010,040 in 2005-06)."
+   "control": "Existing contract: 2 season(s) from 2005-06, $2,090,520 scheduled ($1,010,040 in 2005-06).",
+   "positions_corrected": [
+    "PG"
+   ],
+   "positions_corrected_from": "2006-06-21",
+   "positions_correction_basis": "The SF was the registry's appearance placeholder when he joined at the 2005-10-01 rollover; the registry corrected him to PG on 2005-12-31 (player_registry.json sebastiantelfair, library/2004/league/nba_2004_05_team_rosters.json; library/2005/league/nba_2005_06_team_rosters.json also lists PG). Miami's games, reviews and decisions through 2006-06-20 read SF and keep it as played; PG is in force from 2006-06-21 (runtime/miami_register.py)."
   },
   {
    "id": "eddie_gill",
@@ -216,7 +221,10 @@
    "player_card": "../Player_Cards/uros_slokar.md",
    "bbr_id": "slokaur01",
    "status": "unsigned_draft_rights",
-   "control": "Unsigned draft rights: No. 58 pick of the 2005 draft."
+   "control": "Unsigned draft rights: No. 58 pick of the 2005 draft.",
+   "date_of_birth": "1983-05-14",
+   "date_of_birth_from": "2006-06-21",
+   "date_of_birth_basis": "Recorded on the 2006-06-20 audit from library/2005/league/nba_2005_prospect_evidence.json; engine inputs use it only from date_of_birth_from (runtime/injuries.simulated_ages), so games played before it keep the null age they were frozen with."
   },
   {
    "id": "theo_ratliff",

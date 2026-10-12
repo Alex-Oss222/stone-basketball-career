@@ -108,11 +108,14 @@ def pin(root):
         if card.name not in ("README.md", "TEMPLATE.md") and card.stem not in ids:
             card.unlink()                        # personnel cards of players who joined after the checkpoint
         elif card.name not in ("README.md", "TEMPLATE.md"):
-            # A checkpoint player's card keeps no row sourced from a game the fixture removed (an injury, say).
+            # A checkpoint player's card keeps no row sourced from a game the fixture removed (an injury, say), nor an
+            # honor row announced after the checkpoint (`miami_cards.awards_section`: Season, Award, Announced, Source).
             text = card.read_text(encoding="utf-8")
+            later = re.compile(r"^\| \d{4}-\d{2} \| [^|]+ \| (\d{4}-\d{2}-\d{2}) \| \[Record\]")
             kept = [line for line in text.splitlines(keepends=True)
                     if "06_Regular_Season/" not in line and "05_Preseason/Game_" not in line
-                    and "Depth_Chart/Reviews/" not in line]
+                    and "Depth_Chart/Reviews/" not in line
+                    and not (later.match(line) and later.match(line).group(1) > CHECKPOINT)]
             if len(kept) != len(text.splitlines(keepends=True)):
                 card.write_text("".join(kept), encoding="utf-8")
     # Dated registry additions (first 2003-04 appearances) come after the checkpoint.
