@@ -88,11 +88,14 @@ class ClubOnTests(unittest.TestCase):
         self.assertIsNone(signed_evidence("T.J. Rookie", "2003-07-20", (), {_key("T.J. Rookie"): "2003-07-21"}))
 
     def test_league_page_club_cell_drops_rights_once_signed(self):
-        box = [{"date": "2003-10-29", "team": "Denver Nuggets", "appearance": "Played"}]
-        self.assertEqual(club_cell("DEN rights", "Carmelo Anthony", box, "2003-10-31", {}), "DEN")
-        self.assertEqual(club_cell("DEN rights", "Carmelo Anthony", box, "2003-10-19", {}), "DEN rights")
-        self.assertEqual(club_cell("CHI rights", "Mario Austin", (), "2003-11-11", {}), "CHI rights")
-        self.assertEqual(club_cell("BOS", "Example Veteran", (), "2003-11-11", {}), "BOS")
+        sources = dict(holdings=self.empty, departures=self.empty, transactions={})
+        box = [{"date": "2003-10-29", "team": "Chicago Bulls", "appearance": "DNP: active", "line": {"appeared": False}}]
+        cell = lambda records, on: club_cell(self.rookie, records, {"start": on[:8] + "01", "end": on}, on, {}, ROOT, sources)
+        self.assertEqual(cell(box, "2003-10-31"), ("CHI", "NBA"))           # listed by his club: under contract
+        self.assertEqual(cell(box, "2003-10-19"), ("CHI rights", "NBA"))
+        self.assertEqual(cell((), "2003-11-11"), ("CHI rights", "NBA"))
+        self.assertEqual(club_cell(self.vet, (), {"start": "2003-11-01", "end": "2003-11-11"}, "2003-11-11", {}, ROOT, sources),
+                         ("BOS", "NBA"))
 
 
 class ColorTests(unittest.TestCase):
@@ -210,9 +213,13 @@ class PageLinkTests(unittest.TestCase):
         self.assertEqual(rows[0]["Player"], "[Example Player](../../../Players/exampl01.md)")
         self.assertEqual(player_name(rows[0]["Player"]), "Example Player")
         self.assertEqual(result, format_page(result, page, registry, "2003-11-12", league / "assets/per_game.svg", league))
+        # A row is the registry player its card link names: a corrected registry name renames the row.
+        renamed = format_page(result.replace("[Example Player]", "[exampl01]"), page, registry, "2003-11-12",
+                              league / "assets/per_game.svg", league)
+        self.assertEqual(renamed, result)
         with self.assertRaises(ValueError):
-            format_page(result.replace("[Example Player]", "[Someone Else]"), page, registry, "2003-11-12",
-                        league / "assets/per_game.svg", league)
+            format_page(result.replace("[Example Player](../../../Players/exampl01.md)", "[Someone Else](../../../Players/someon01.md)"),
+                        page, registry, "2003-11-12", league / "assets/per_game.svg", league)
 
     def test_live_league_pages_link_every_registry_player(self):
         league = ROOT / "career/Dwyane_Wade/Stats_and_Awards/League"

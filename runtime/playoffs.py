@@ -1,11 +1,13 @@
-"""The 2004 playoffs: seeding, tiebreakers, the bracket and each series' calendar (roadmap item 14).
+"""The playoffs: seeding, tiebreakers, the bracket and each series' calendar (roadmap item 14).
 
-Everything is decided from closed simulated regular-season results only, by the researched 2003-04 rules
-(`library/2003/league/nba_2003_04_playoff_rules.json`); real 2004 seeds, matchups and results are never read.
+Everything is decided from closed simulated regular-season results only, by the season's researched rules (its
+`playoff_rules` file, `library/2003/league/nba_2003_04_playoff_rules.json` for 2004); real seeds, matchups and results
+are never read.
 
-- Seeding: in each conference the two division winners take seeds 1 and 2 by record; seeds 3 to 8 are the next six
-  records. Ties go through the tiebreak procedure in the rules file (two-team and multi-team lists, restarting once
-  a team is separated); a tie the procedure cannot break is an engine decision draw (`Playoff_Draws/`), never chosen.
+- Seeding: by the rules file's `qualification.seeding`, which the page states (`seeding`): in 2003-04 the two division
+  winners take seeds 1 and 2 by record and seeds 3 to 8 are the next six records; from 2004-05 the three division
+  winners take seeds 1 to 3 and seeds 4 to 8 are the next five. Ties go through the tiebreak procedure in the rules
+  file (two-team and multi-team lists, restarting once a team is separated); a tie the procedure cannot break is an engine decision draw (`Playoff_Draws/`), never chosen.
 - Bracket: 1-8, 4-5, 3-6, 2-7 in each conference, fixed, no reseeding; best of seven.
 - Home court: the better regular-season record (equal records by the tiebreak procedure); 2-2-1-1-1 in the
   conference rounds, 2-3-2 in the Finals.
@@ -186,7 +188,7 @@ class Ranker:
             path.write_text(json.dumps({"event_id": event, "date": rules(self.root, season)["calendar"]["regular_season_last_day"],
                                         "question": f"Tiebreak drawing: who ranks first among {', '.join(sorted(tied))}?",
                                         "decider": "NBA drawing (engine draw)", "options": equal_shares(sorted(tied)),
-                                        "basis": "every tiebreak step in the 2003-04 procedure left them level (runtime/playoffs.py)"},
+                                        "basis": f"every tiebreak step in the {season} procedure left them level (runtime/playoffs.py)"},
                                        indent=1) + "\n", encoding="utf-8")
             load_decision(path)
         self.pending.append(event)
@@ -303,12 +305,33 @@ def _d(day):
     return f"{d:%a} {d:%b} {d.day}"
 
 
+def seeding(record, root=ROOT):
+    """The season's seeding rule as its rules file states it (`qualification.seeding`): two division winners in 2003-04,
+    three from 2004-05."""
+    return json.loads((Path(root) / record["rules"]).read_text(encoding="utf-8"))["qualification"]["seeding"]
+
+
+def bracket_pages(root=ROOT):
+    """{path: text} of the bracket page of every season through the live one that has a playoff record: each page
+    states its own season's rules, from its own record (the write-back restates them; `write` writes the live one with
+    its record)."""
+    from .seasons import live_seasons
+    root = Path(root)
+    live = _active_season(root)
+    out = {}
+    for season in live_seasons(root):
+        record = read(root, season) if season <= live else None
+        if record is not None and (root / page_path(season)).is_file():
+            out[root / page_path(season)] = page(record, root)
+    return out
+
+
 def page(record, root=ROOT):
     lines = [f"# {record['season']} NBA playoffs", "",
              f"Seeded {record['seeded_on']} from closed simulated regular-season results only "
              f"([standings](Standings.md); rules and sources: `{record['rules']}`, `runtime/playoffs.py`). "
              f"Real {int(record['season'][:4]) + 1} seeds, matchups and results are never used.", "",
-             "Division winners take seeds 1 and 2; seeds 3 to 8 are the next six records. Ties: the " f"{record['season']} tiebreak "
+             f"{seeding(record, root)} Ties: the {record['season']} tiebreak "
              "procedure, an engine drawing if it cannot separate them. Best of seven; home court to the better record; "
              "2-2-1-1-1 in the conference rounds, 2-3-2 in the Finals. Games 5 to 7 are played only if needed.", "",
              "Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · "

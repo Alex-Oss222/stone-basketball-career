@@ -16,15 +16,24 @@ sys.path.insert(0, str(ROOT))
 
 from runtime.stat_layout import RED, PER_GAME_COLUMNS, link, markdown_table, rect, scope_for, svg_start, svg_text
 from runtime.contract_navigation import contract_player_link, plain_player_name
+from runtime.write_back import league_caption
 
 COLUMNS = ["Player", "Age", "Club / rights", "Lg", *PER_GAME_COLUMNS[4:-1]]
 LINK = re.compile(r"^\[([^\]]+)\]\([^)]+\)$")
+CARD = re.compile(r"^\[[^\]]*\]\((?:[^)]*/)?Players/([^/)]+)\.md\)$")
 
 
 def player_name(cell):
     """The player's name from a Player cell, whether or not it is already a card link."""
     match = LINK.match(cell.strip())
     return match.group(1) if match else cell.strip()
+
+
+def row_name(cell, by_id):
+    """The registry name of a Player cell: the player its card link names (`by_id`: registry id -> name), so a corrected
+    registry name renames his row; else the cell's own name."""
+    match = CARD.match(cell.strip())
+    return by_id[match.group(1)] if match and match.group(1) in by_id else player_name(cell)
 
 
 def card_link(page, registry_player, league_dir):
@@ -71,13 +80,14 @@ def format_page(text, page, registry, as_of, asset, league_dir=None):
     cutoff = scope_for(page, [], as_of)["identity_date"]
     league_dir = league_dir or asset.parent.parent
     players = {p["name"]: p for p in registry["players"]}
+    by_id = {p["registry_id"]: p["name"] for p in registry["players"] if p.get("registry_id")}
     def position(match):
         pos, summary, body = match.groups()
         production, shooting = {}, {}
         for headers, rows in read_tables(body):
             target = production if "PPG" in headers or "PTS" in headers else shooting
             for row in rows:
-                name = row["Player"] = player_name(row["Player"])
+                name = row["Player"] = row_name(row["Player"], by_id)
                 if name in target:
                     raise ValueError(f"{page}: duplicate {name} row")
                 target[name] = row
@@ -86,14 +96,13 @@ def format_page(text, page, registry, as_of, asset, league_dir=None):
             raise ValueError(f"{page}: {pos} has rows for players outside the registry")
         if shooting and set(shooting) != set(production):
             raise ValueError(f"{page}: {pos} shooting coverage differs from production")
-        # A registry entry the page does not show yet (a dated 2003-04 addition) gets an empty row; the write-back fills
-        # it from closed results. Its club label is the club of his first appearance.
+        # A registry entry the page does not show yet (a dated addition) gets an empty row; the write-back fills it from
+        # closed results, with his dated club (`write_back.club_cell`), never a club this migration decides.
         for name in sorted(expected - set(production)):
-            p = players[name]
             production[name] = {key: "N/A" for key in COLUMNS}
-            production[name].update({"Player": name, "G": "0", "Club / rights": p.get("team_code") or p.get("team_name") or "N/A"})
+            production[name].update({"Player": name, "G": "0"})
         rows = []
-        for name, old in production.items():
+        for name, old in sorted(production.items()):
             old = {**shooting.get(name, {}), **old}
             p = players[name]
             if p.get("birth_date"):
@@ -107,26 +116,21 @@ def format_page(text, page, registry, as_of, asset, league_dir=None):
                           Age=recorded_age if recorded_age not in (None, "N/A") else str(age),
                           Lg=old.get("Lg") if old.get("Lg") not in (None, "N/A") else "NBA",
                           Pos=old.get("Pos") if old.get("Pos") not in (None, "N/A") else pos)
-            # The club/rights cell is an existing dated label, never a new roster decision.
+            # The club/rights cell is an existing dated label (the write-back's), never a new roster decision.
             values["Club / rights"] = old["Club / rights"]
             for key in ("FG%", "3P%", "2P%", "eFG%", "FT%", "TS% (est.)"):
                 # Three-point value makes eFG and true shooting exceed 100% in
                 # small samples; ordinary make/attempt percentages cannot.
                 values[key] = ratio(values[key], maximum=1.5 if key in ("eFG%", "TS% (est.)") else 1.0)
             rows.append([values[key] for key in COLUMNS])
+        summary = re.sub(r" · \d+ players$", f" · {len(rows)} players", summary)
         return f"<details>\n<summary>{pos} ·{summary}</summary>\n\n### {pos}: per game\n\n" + markdown_table(COLUMNS, rows).rstrip() + "\n\n</details>"
     text, count = re.subn(r"<details>\n<summary>(PG|SG|SF|F|PF|C) ·(.*?)</summary>(.*?)</details>", position, text, flags=re.S)
     if count != len(registry["positions"]):
         raise ValueError(f"{page}: expected every position group")
-    old_caption = "Open a position to see every tracked player. Production is per appearance; the shooting table keeps GS and percentages separate. Team labels show the source club or draft rights, not a finalized opening-night roster."
-    caption = (f"Open a position to see every tracked player. G and GS are counts; MP and counting statistics are per appearance. "
-               f"Shooting uses .500 = 50.0%. Scroll horizontally for all columns. Age is recorded at the period's identity cutoff ({cutoff}); "
-               "birth dates and identity references are in the linked player registry. Each player name opens his league card. Club / rights is the recorded source label, not proof of an active roster spot. "
-               "Unrecorded starts, attempts, splits and fouls stay N/A; they cannot be reconstructed from rounded averages.")
-    previous_caption = caption.replace("Each player name opens his league card. ", "")
-    for old in (old_caption, previous_caption):
-        if old in text:
-            text = text.replace(old, caption)
+    # The caption states the date the Age and Club / rights cells are read on, the page's own label date (every earlier
+    # wording, including one frozen at another page's date, is replaced).
+    text = re.sub(r"^Open a position to see every tracked player[^\n]*$", lambda _: league_caption(cutoff), text, count=1, flags=re.M)
     image = "!" + link(page, asset, "NBA per-game statistics: identity, shooting, rebounding, playmaking and defense") + "\n\n"
     if image not in text:
         text = text.replace("## Players by position\n\n", "## Players by position\n\n" + image)

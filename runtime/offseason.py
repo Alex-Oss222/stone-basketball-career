@@ -196,15 +196,30 @@ def book_for(season):
     return book_path(season)
 
 
+# A summer market record names a few players by their NBA id (the 2005 record: simiewa01, walshma01, fitchge01 among
+# them), and a book row copied it as the player's name, so his requests, box scores and registry row did too. A book
+# from 2006-07 on names him from the careers table (`write_back.id_names`). The 2005-06 book stands as written: its
+# rows are the played 2005-06 games' inputs.
+BOOK_NAMES_FROM = "2006-07"
+
+
 def later_book(season, root=ROOT):
     """A later season's opening book (R5): the simulated summer market alone places every player (rules 7 and 8). Each
     club keeps its fifteen with the most real minutes for the season; the rest, and every real player the market left
     unsigned, start in the free-agent pool unless his real career has ended (runtime/availability.py: a retired player
     never comes back; one who sits the season out is not in the pool)."""
+    # The docstring is the book's stored `rule`: a book's rule text changes only with its rules (the name rule above
+    # is BOOK_NAMES_FROM's comment).
     from .availability import status
     from .free_agency_2004 import market_year, record_path
     root = Path(root)
     record = _read(root / record_path(market_year(season)))
+    if season >= BOOK_NAMES_FROM:
+        from .write_back import id_names
+        names = id_names(root)
+    else:
+        names = {}
+    named = lambda r: names.get(r["player"], r["player"])
     new = real_clubs(season, root)
     role = lambda b: (new.get(b) or (None, None, {}))[2]
     clubs, pool, held, counts = defaultdict(list), [], set(), Counter()
@@ -216,7 +231,7 @@ def later_book(season, root=ROOT):
             if not b:
                 continue
             held.add(b)
-            row = dict(bbr_id=b, player_id=r["player"], club=club, rule="7_contract_after_the_summer_market",
+            row = dict(bbr_id=b, player_id=named(r), club=club, rule="7_contract_after_the_summer_market",
                        from_club=r.get("from"), games=role(b).get("games", 0), minutes=role(b).get("minutes", 0),
                        position=role(b).get("position") or r.get("position"))
             counts[row["rule"]] += 1
@@ -232,7 +247,7 @@ def later_book(season, root=ROOT):
         if not b or b in held or status(b, season, root) != "available":
             continue
         counts["8_unsigned_after_the_summer_market"] += 1
-        pool.append(dict(bbr_id=b, player_id=p["player"], club=None, rule="8_unsigned_after_the_summer_market+pool_unsigned",
+        pool.append(dict(bbr_id=b, player_id=named(p), club=None, rule="8_unsigned_after_the_summer_market+pool_unsigned",
                          from_club=p.get("rights"), games=role(b).get("games", 0), minutes=role(b).get("minutes", 0),
                          position=role(b).get("position") or p.get("position")))
     return {"schema_version": 1, "season": season, "kind": "opening_rosters", "as_of": f"{market_year(season)}-09-30",

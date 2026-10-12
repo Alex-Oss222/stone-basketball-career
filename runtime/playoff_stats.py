@@ -136,6 +136,19 @@ def _section(lines, keep=lambda rec: True, clubs_order=None):
     return [_row(name, club, s) for club, name, s in rows]
 
 
+def _registry_named(lines, root=ROOT):
+    """`player_lines` with a player a result keys by his NBA id (simiewa01 in the 2006 playoffs: a summer market record
+    named him so) shown under his registry name; `player_lines` itself keeps the results' keys (the Finals MVP reads
+    them)."""
+    path = Path(root) / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json"
+    ids = {p["bbr_id"]: p["name"] for p in json.loads(path.read_text(encoding="utf-8"))["players"] if p.get("bbr_id")} \
+        if path.is_file() else {}
+    out = defaultdict(list)
+    for (name, club), recs in lines.items():
+        out[(ids.get(name, name), club)].extend(recs)
+    return out
+
+
 def league_page(root=ROOT, season=None, now=None):
     season = season or _active_season(root)
     from .playoffs import read
@@ -144,7 +157,7 @@ def league_page(root=ROOT, season=None, now=None):
     now = now or clock(root)
     record = read(root, season)
     rows = closed_playoff_results(root, season, now)
-    lines = player_lines(rows, root, season)
+    lines = _registry_named(player_lines(rows, root, season), root)
     rounds = _round_of(record)
     wins = defaultdict(int)
     for s in (record or {}).get("series", []):

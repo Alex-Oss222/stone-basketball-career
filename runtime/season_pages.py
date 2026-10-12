@@ -236,6 +236,39 @@ class Builder:
         return out
 
 
+def hub(root=ROOT):
+    """{path: text} for the league hub (`Stats_and_Awards/League/README.md`) with its generated parts restated: the
+    navigation line (each live season's players, awards, standings and playoff pages that exist, then the registry and
+    the cards) and the registry's size and cohorts. The rest of the hub is hand-maintained. Nothing without a hub."""
+    import json
+    from collections import Counter
+    from .seasons import live_seasons
+    root = Path(root)
+    league = root / STATS / "League"
+    path = league / "README.md"
+    if not path.is_file():
+        return {}
+    text = path.read_text(encoding="utf-8")
+    links = ["[Stats hub](../README.md)"]
+    for s in live_seasons(root):
+        for name, label in (("League_Stats.md", f"{s} players"), ("League_Awards.md", f"{s} awards"),
+                            ("Standings.md", f"{s} standings"), ("Playoffs.md", f"{int(s[:4]) + 1} playoffs")):
+            if (league / s / name).is_file():
+                links.append(f"[{label}]({s}/{name})")
+    links += ["[Player registry](player_registry.json)", "[Player cards](Players/README.md)"]
+    text = re.sub(r"^\[Stats hub\]\(\.\./README\.md\) · [^\n]*$", lambda _: " · ".join(links), text, count=1, flags=re.M)
+    registry = league / "player_registry.json"
+    if registry.is_file():
+        players = json.loads(registry.read_text(encoding="utf-8"))["players"]
+        cohorts = Counter(p.get("cohort") for p in players)
+        text = re.sub(r"The league pages cover \d+ registered players\.", f"The league pages cover {len(players)} registered players.", text)
+        text = re.sub(r"The registry combines [^.]*\.", lambda _: (
+            f"The registry combines {cohorts['end_2002_03_roster']} prior-season roster identities, "
+            f"{cohorts['2003_draft_rights']} 2003 draft entries and {cohorts['2003_04_appearance']} players added at their "
+            "first closed appearance in any season (cohort `2003_04_appearance`)."), text, count=1)
+    return {path: text}
+
+
 def write(season, clock, root=ROOT):
     """Write every not-started page that does not exist yet, then pass each through its rewriter. Returns the paths."""
     root = Path(root)

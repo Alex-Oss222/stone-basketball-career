@@ -21,8 +21,10 @@ only once it is written into the career record. This module does that, in order:
    results: Miami's from its played notes, the other clubs' from the league slate results.
    Percentages are recomputed from summed makes and attempts; a player without an
    appearance keeps G = 0 and N/A, never zero. Players are matched to the registry by
-   bbr_id, then by name; a player in a result who is not in the registry is reported,
-   never added.
+   bbr_id, then by name; a player in a result who is not in the registry is added as a
+   dated registry entry (`extend_registry`). A league row's Club / rights cell is a dated
+   club (`club_cell`), and closed seasons' league pages follow the registry
+   (`league_records`).
 5. The league player cards are regenerated with the closed results.
 
 A result dated after the career clock waits: the write-back never advances time, never
@@ -458,6 +460,19 @@ def identity_sources(root=ROOT):
     return {k: next(iter(v)) for k, v in names.items() if len(v) == 1}, births
 
 
+def id_names(root=ROOT):
+    """{bbr_id: name} from the real careers table, then the researched births file: the name of a player a record keys
+    by his NBA id."""
+    root = Path(root)
+    out = {}
+    for rel, field in (("library/careers/nba_player_careers.json", "player_name"), ("library/careers/nba_player_births.json", "name")):
+        if (root / rel).is_file():
+            for b, e in read_json(root / rel)["players"].items():
+                if e.get(field):
+                    out.setdefault(b, e[field])
+    return out
+
+
 def _researched_births(root):
     """Birth dates researched for registry players no other source dates (`library/careers/nba_player_births.json`)."""
     path = Path(root) / "library/careers/nba_player_births.json"
@@ -768,14 +783,16 @@ def registry_additions(root=ROOT, season=None, now=None):
     """Players in closed results who are not in the registry, as dated registry entries (cohort APPEARANCE_COHORT):
     identity from the season's rosters, Miami's register and the dated identity records; club and date of his first
     closed appearance; position and its basis from `position_sources` (by bbr_id, else by club and name), never a
-    placeholder: a player no source records takes UNKNOWN_SLOT marked UNKNOWN_BASIS. The 407 original entries are never
-    changed."""
+    placeholder: a player no source records takes UNKNOWN_SLOT marked UNKNOWN_BASIS. A result that keys a player by his
+    NBA id (a summer market record named a few rookies by id, so their books and box scores did too) registers him under
+    his name from the careers table or the researched births file (`id_names`), never the id. The 407 original entries
+    are never changed."""
+    from .league_cards import club_code
     season = season or _active_season(root)
     reg = registry(root)
     by_bbr = {p["bbr_id"] for p in reg["players"] if p.get("bbr_id")}
     by_name = {_key(p["name"]) for p in reg["players"]}
-    codes = {p["team_name"]: p["team_code"] for p in reg["players"] if p.get("team_code")}
-    codes.setdefault(MIAMI, "MIA")
+    named = id_names(root)
     from .seasons import path as season_path
     conf_path = Path(root) / season_path(season, "conferences")
     conference = {t: c for c, ts in read_json(conf_path)["conferences"].items() for t in ts} if conf_path.is_file() else {}
@@ -819,8 +836,9 @@ def registry_additions(root=ROOT, season=None, now=None):
                 continue
             sources = position_sources(root, season) if sources is None else sources
             pos, basis = registry_position(sources, bbr, pid, club)
-            added[key] = {"name": pid, "position": pos or UNKNOWN_SLOT, "position_basis": basis or UNKNOWN_BASIS,
-                          "team_name": club, "team_code": codes.get(club),
+            added[key] = {"name": named.get(pid, pid),        # an NBA id is a careers key; a name never is
+                          "position": pos or UNKNOWN_SLOT, "position_basis": basis or UNKNOWN_BASIS,
+                          "team_name": club, "team_code": club_code(club),
                           "conference": conference.get(club), "cohort": APPEARANCE_COHORT, "bbr_id": bbr, "espn_id": None,
                           "birth_date": births.get(bbr), "registry_id": bbr or _key(pid).replace(" ", "_"),
                           "added_on": row["result"]["game_date"],
@@ -1031,49 +1049,89 @@ def leaders_text(summaries, scope):
             + _table(["Category", "1", "2", "3"], rows).rstrip("\n"))
 
 
-def club_cell(cell, name, records, on, signed):
-    """The Club / rights cell on `on`: a 2003 pick's "rights" label ends once he is under contract."""
-    from .league_cards import signed_evidence
-    if cell.endswith(" rights") and signed_evidence(name, on, records, signed):
-        return cell[:-len(" rights")]
-    return cell
+def club_cell(player, records, scope, on, signed=None, root=ROOT, sources=None):
+    """The Club / rights and Lg cells of one League_Stats row (a dated club, the user's design change of October 2026;
+    before it the cell kept the registry's 2002-03 source label): the club or clubs he appeared for in the period's
+    closed results, in stint order and joined with "/"; without an appearance, his club on the page's label date `on`
+    (`league_cards.dated_label`: "<code> rights" only while a club holds his unsigned draft rights, "FA" for no club, no
+    club and no league before he reached the NBA). `records` are his closed records of the season."""
+    from .league_cards import period_label
+    return period_label(player, records, scope["start"], scope["end"], on, root=root, signed=signed, **(sources or {}))
 
 
-def league_page(text, page, lines, now, results, signed=None, births=None):
-    """One League_Stats.md page rebuilt from the closed results: header, leaders, position tables, period table. The Age
-    cell is each player's age on the page's cutoff (the period's end, or the career date while it runs) from his registry
-    birth date (`births`: name -> date); without a birth date the cell keeps what it carried."""
+def league_caption(on):
+    """The caption over a League_Stats page's position tables, dated by the page's label date `on`."""
+    from .league_cards import NOT_IN_LEAGUE
+    return ("Open a position to see every tracked player, listed alphabetically. G and GS are counts; MP and counting statistics "
+            "are per appearance. Shooting uses .500 = 50.0%. Scroll horizontally for all columns. "
+            f"Age is each player's age on {on}, the period's end (the career date while the period runs); birth dates and "
+            "identity references are in the linked player registry. Each player name opens his league card. "
+            "Club / rights names the club or clubs he played for in the period's closed results, in stint order; a player "
+            f"without an appearance shows his club on {on} (FA when no club holds him, \"rights\" while a club holds only his "
+            f"unsigned draft rights, {NOT_IN_LEAGUE} with no league before he reached the NBA). It is not proof of an "
+            "active roster spot. Unrecorded starts, attempts, splits and fouls stay N/A; they cannot be reconstructed from "
+            "rounded averages.")
+
+
+CAPTION = re.compile(r"^Open a position to see every tracked player[^\n]*$", re.M)
+CARD_LINK = re.compile(r"^\[[^\]]*\]\((?:[^)]*/)?Players/([^/)]+)\.md\)$")
+
+
+def league_page(text, page, lines, now, results, signed=None, players=None, root=ROOT, sources=None, live=True):
+    """One League_Stats.md page rebuilt from the closed results: header, leaders, position tables, period table.
+
+    Each row is the registry player its card link names (`players` and `lines` are keyed by registry id; a row without a
+    link is read by name), shown under his registry name and listed alphabetically in its group. Its Age cell is his age
+    on the page's label date (the period's end, or the career date while it runs) from his registry birth date (without
+    one the cell keeps what it carried); its Club / rights and Lg cells are `club_cell`'s. The tracked-player count and
+    each group's count are the rows' own, and the caption states the label date. A closed season's page (`live` False)
+    keeps the dated "Through" line it was closed with."""
     from .league_cards import age_on
     scope = scope_for(page, [], now)
     label_on = min(scope["end"], now)
-    births = births or {}
+    players = players or {}
+    by_name = {p["name"]: rid for rid, p in players.items()}
     def games_in(sc):
         return sum(1 for r in results if sc["start"] <= r["game_date"] <= sc["end"])
     summaries = {}
-    for name, records in lines.items():
+    for rid, records in lines.items():
+        name = players[rid]["name"] if rid in players else rid
         summaries[name] = aggregate([r for r in records if _in(r, scope)])
     empty = aggregate([])
     n = games_in(scope)
-    if n:   # a period with no closed game keeps its dated "not started" line
+    if n and live:   # a period with no closed game keeps its dated "not started" line
         text = re.sub(r"^(\d+) tracked players · \d+ closed games? in this record · [^\n]*$",
                       lambda m: f"{m.group(1)} tracked players · {_plural(n, 'closed game')} in this record · Through {long_date(now)}.",
                       text, count=1, flags=re.M)
     text = re.sub(r"(## Leaders\n\n).*?(\n\n## Players by position)", lambda m: m.group(1) + leaders_text(summaries, scope) + m.group(2), text, count=1, flags=re.S)
+    tracked = []
 
     def position(match):
         head, body, tail = match.groups()
+        listed = []
         def replacer(headers, rows):
             if headers != LEAGUE_COLUMNS:
                 raise ValueError(f"{page}: league table columns are not the shared layout")
             out = []
             for row in rows:
-                name = _cell_name(row[0])
-                club = club_cell(row[2], name, lines.get(name, ()), label_on, signed)
-                age = age_on(births.get(name), label_on)
-                out.append([row[0], str(age) if age is not None else row[1], club, *row[3:5], *stat_cells(summaries.get(name, empty))])
+                link = CARD_LINK.match(row[0])
+                rid = link.group(1) if link and link.group(1) in players else by_name.get(_cell_name(row[0]))
+                player = players.get(rid) or {"name": _cell_name(row[0])}
+                cell = re.sub(r"^\[[^\]]*\]", lambda _: f"[{player['name']}]", row[0]) if link else player["name"]
+                records = lines.get(rid, ())
+                club, league = club_cell(player, records, scope, label_on, signed, root, sources)
+                age = age_on(player.get("birth_date"), label_on)
+                out.append([cell, str(age) if age is not None else row[1], club, league, row[4],
+                            *stat_cells(summaries.get(player["name"], empty))])
+            out.sort(key=lambda r: _cell_name(r[0]))
+            listed.extend(out)
             return _table(headers, out)
-        return head + _replace_tables(body, replacer) + tail
+        body = _replace_tables(body, replacer)
+        tracked.append(len(listed))
+        return re.sub(r" · \d+ players</summary>", f" · {len(listed)} players</summary>", head, count=1) + body + tail
     text = re.sub(r"(<details>\n<summary>(?:PG|SG|SF|F|PF|C) ·[^\n]*</summary>\n)(.*?)(</details>)", position, text, flags=re.S)
+    text = re.sub(r"^\d+ tracked players · ", f"{sum(tracked)} tracked players · ", text, count=1, flags=re.M)
+    text = CAPTION.sub(lambda _: league_caption(label_on), text, count=1)
     return period_rows(text, page, now, games_in)
 
 
@@ -1196,23 +1254,45 @@ def team_page(text, page, lines, games, positions, now, register=None, held=None
     return period_rows(text, page, now, lambda sc: sum(1 for g in games if sc["start"] <= g["game_date"] <= sc["end"]))
 
 
+def league_pages(root=ROOT, season=None, live=True):
+    """Every League_Stats.md page of the season rebuilt from closed results: {path: text}. A closed season's pages
+    (`live` False) follow the registry (names, counts, the dated club rule) and keep the dated line they closed with."""
+    season = season or _active_season(root)
+    root = Path(root)
+    now = clock(root)
+    players = {p["registry_id"]: p for p in registry(root)["players"]}
+    lines, _ = closed_lines(root, season, now)
+    results = [row["result"] for row in closed_results(root, season, now)]
+    league = root / PLAYER_DIR / "Stats_and_Awards/League" / season
+    from .league_cards import FIRST_SEASON, TRANSACTIONS, departures_path, holdings_path, signings
+    signed = signings(root)
+    sources = {}
+    if season == FIRST_SEASON:              # the 2003-04 dated club reads these on every label date: read them once
+        for key, rel in (("holdings", holdings_path(season)), ("departures", departures_path(season)), ("transactions", TRANSACTIONS)):
+            sources[key] = read_json(root / rel) if (root / rel).is_file() else ({} if key == "transactions" else {"entries": []})
+    from .league_cards import roster_cache
+    with roster_cache():
+        return {page: league_page(page.read_text(encoding="utf-8"), page, lines, now, results, signed, players, root, sources, live)
+                for page in sorted(league.rglob("League_Stats.md"))}
+
+
+def closed_league_pages(root=ROOT):
+    """The League_Stats.md pages of every season before the live one (`league_pages` with `live` False)."""
+    from .seasons import live_seasons
+    season = _active_season(root)
+    out = {}
+    for closed in live_seasons(root):
+        if closed < season:
+            out.update(league_pages(root, closed, live=False))
+    return out
+
+
 def statistics_pages(root=ROOT, season=None):
     """Every League_Stats.md and Team_Stats.md page of the season rebuilt from closed results: {path: text}."""
     season = season or _active_season(root)
     root = Path(root)
     now = clock(root)
-    reg = registry(root)
-    names = {p["registry_id"]: p["name"] for p in reg["players"]}
-    lines, _ = closed_lines(root, season, now)
-    by_name = {names[pid]: records for pid, records in lines.items() if pid in names}
-    results = [row["result"] for row in closed_results(root, season, now)]
-    outputs = {}
-    league = root / PLAYER_DIR / "Stats_and_Awards/League" / season
-    from .league_cards import signings
-    signed = signings(root)
-    births = {p["name"]: p.get("birth_date") for p in reg["players"]}
-    for page in sorted(league.rglob("League_Stats.md")):
-        outputs[page] = league_page(page.read_text(encoding="utf-8"), page, by_name, now, results, signed, births)
+    outputs = league_pages(root, season)
     outputs.update(team_pages(root, season, now))
     return outputs
 
@@ -1270,6 +1350,29 @@ def write_statistics_pages(root=ROOT, season=None):
     return changed
 
 
+def league_records(root=ROOT, with_hub=True):
+    """{path: text} of the league records that follow the registry and the season list across seasons: every closed
+    season's League_Stats pages (`closed_league_pages`), every season's bracket page (`playoffs.bracket_pages`), and
+    with `with_hub` the league hub's navigation and counts (`season_pages.hub`; like the award pages it is checked by
+    the script's --check only, since a checkpoint copy keeps the repository's hub)."""
+    from .playoffs import bracket_pages
+    out = closed_league_pages(root)
+    out.update(bracket_pages(root))
+    if with_hub:
+        from .season_pages import hub
+        out.update(hub(root))
+    return out
+
+
+def write_league_records(root=ROOT):
+    changed = 0
+    for page, text in league_records(root).items():
+        if page.read_text(encoding="utf-8") != text:
+            page.write_text(text, encoding="utf-8")
+            changed += 1
+    return changed
+
+
 # -- the run and the checks ------------------------------------------------------------------------
 def run(root=ROOT, season=None, write=False, pages=True):
     """The write-back. With write=False nothing is touched; the report says what a run would do."""
@@ -1313,6 +1416,7 @@ def run(root=ROOT, season=None, write=False, pages=True):
             if page.read_text(encoding="utf-8") != text:
                 page.write_text(text, encoding="utf-8")
                 report["pages"] += 1
+        report["pages"] += write_league_records(root)
         from .playoff_stats import write_pages as write_playoff_pages
         report["pages"] += write_playoff_pages(root, season)
         from .seasons import live_seasons
@@ -1376,6 +1480,9 @@ def write_back_errors(root=ROOT, season=None, cards=False):
         for page, text in closed_team_pages(root).items():
             if page.read_text(encoding="utf-8") != text:
                 errors.append(f"{page.relative_to(root)}: stale closed-season Team page; run scripts/write_back_results.py --write")
+        for page, text in league_records(root, with_hub=cards).items():
+            if page.read_text(encoding="utf-8") != text:
+                errors.append(f"{page.relative_to(root)}: stale league page; run scripts/write_back_results.py --write")
     except (OSError, ValueError, KeyError) as exc:
         errors.append(f"write-back: cannot aggregate the statistics pages: {exc}")
     if not cards:

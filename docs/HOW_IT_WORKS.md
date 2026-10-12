@@ -26,7 +26,7 @@ An alternate-history NBA career simulation of **Dwyane Wade**, starting at the J
 | `career/Dwyane_Wade/2003-04/00_Team/` | Miami's records (simulation-owned): roster register, depth chart, rotation, finances, cards |
 | `career/Dwyane_Wade/2003-04/01_Free_Agency/` | Negotiations, plans, Wade's requests (`wade_requests.json`), Wade's rookie contract |
 | `career/Dwyane_Wade/2003-04/04_Training_Camp/` | Camp roster, decisions, the October 27 correction (`signing_corrections.json`) |
-| `career/Dwyane_Wade/Stats_and_Awards/` | Generated statistics pages: Wade, Miami (`Team/`) and league (`League/`), plus 407 league player cards |
+| `career/Dwyane_Wade/Stats_and_Awards/` | Generated statistics pages: Wade, Miami (`Team/`) and league (`League/`), plus a league player card for every registry player |
 | `library/<year>/league/` | Real-world data: rosters, contracts, transactions, schedules, cap rules, colours, player stats |
 | `library/careers/nba_player_careers.json` | Real players' season rates, used by the engine for their ability |
 | `runtime/` | All logic (Python, standard library only) |
