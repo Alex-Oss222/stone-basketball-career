@@ -887,4 +887,6 @@ def national_errors(root=ROOT):
                 errors.append(f"{e['edition_id']}: Wade's MVP is not in awards.json")
     from .national_medals import medal_errors
     errors += medal_errors(root, clock)
+    from .national_pages import stale_pages
+    errors += [f"{path.relative_to(root)}: stale tournament page; run scripts/reconcile.py" for path, _ in stale_pages(root)]
     return errors

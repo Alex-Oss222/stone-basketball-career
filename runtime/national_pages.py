@@ -175,3 +175,20 @@ def write(e, rec, root=ROOT):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(page(e, rec, root), encoding="utf-8")
     (Path(root) / WORLD / "README.md").write_text(hub(root), encoding="utf-8")
+
+
+def stale_pages(root=ROOT):
+    """[(path, text)] for every recorded edition's page and the FIBA hub that no longer read as `write` renders them
+    from the tournament record: a renderer change reaches the pages through `scripts/reconcile.py`, and validation
+    refuses a stale one (`national.national_errors`)."""
+    from .national import WORLD, editions, folder, read_record
+    root = Path(root)
+    pages = {}
+    for e in editions(root).values():
+        rec = read_record(e, root)
+        if rec is not None:
+            pages[root / folder(e) / "README.md"] = page(e, rec, root)
+    if pages:
+        pages[root / WORLD / "README.md"] = hub(root)
+    return [(path, text) for path, text in pages.items()
+            if not path.is_file() or path.read_text(encoding="utf-8") != text]

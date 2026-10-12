@@ -76,13 +76,13 @@ Status: **closed**.
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
 | 11 | 2005-08-24 | Argentina | Mexico | 87-82 | [box](Games/fiba-amc05-g11.result.json) |
-| 12 | 2005-08-24 | Uruguay | Dominican Republic | 72-70 | [box](Games/fiba-amc05-g12.result.json) |
+| 12 | 2005-08-24 | Dominican Republic | Uruguay | 72-70 | [box](Games/fiba-amc05-g12.result.json) |
 | 13 | 2005-08-25 | Mexico | Uruguay | 73-71 | [box](Games/fiba-amc05-g13.result.json) |
 | 14 | 2005-08-25 | Puerto Rico | Argentina | 76-71 | [box](Games/fiba-amc05-g14.result.json) |
 | 15 | 2005-08-26 | Uruguay | Puerto Rico | 89-93 | [box](Games/fiba-amc05-g15.result.json) |
 | 16 | 2005-08-26 | Dominican Republic | Mexico | 77-65 | [box](Games/fiba-amc05-g16.result.json) |
 | 17 | 2005-08-27 | Argentina | Uruguay | 93-78 | [box](Games/fiba-amc05-g17.result.json) |
-| 18 | 2005-08-27 | Puerto Rico | Dominican Republic | 71-69 | [box](Games/fiba-amc05-g18.result.json) |
+| 18 | 2005-08-27 | Dominican Republic | Puerto Rico | 71-69 | [box](Games/fiba-amc05-g18.result.json) |
 | 19 | 2005-08-28 | Mexico | Puerto Rico | 91-76 | [box](Games/fiba-amc05-g19.result.json) |
 | 20 | 2005-08-28 | Dominican Republic | Argentina | 91-81 | [box](Games/fiba-amc05-g20.result.json) |
 
@@ -96,14 +96,14 @@ Status: **closed**.
 | 24 | 2005-08-30 | Mexico | Brazil | 63-68 | [box](Games/fiba-amc05-g24.result.json) |
 | 25 | 2005-08-31 | Puerto Rico | Canada | 91-82 | [box](Games/fiba-amc05-g25.result.json) |
 | 26 | 2005-08-31 | Argentina | United States | 86-93 | [box](Games/fiba-amc05-g26.result.json) |
-| 27 | 2005-08-31 | Brazil | Dominican Republic | 87-103 | [box](Games/fiba-amc05-g27.result.json) |
+| 27 | 2005-08-31 | Dominican Republic | Brazil | 87-103 | [box](Games/fiba-amc05-g27.result.json) |
 | 28 | 2005-08-31 | Panama | Mexico | 88-86 | [box](Games/fiba-amc05-g28.result.json) |
 | 29 | 2005-09-01 | Dominican Republic | Canada | 63-82 | [box](Games/fiba-amc05-g29.result.json) |
 | 30 | 2005-09-01 | Puerto Rico | Brazil | 74-86 | [box](Games/fiba-amc05-g30.result.json) |
 | 31 | 2005-09-01 | Argentina | Panama | 68-85 | [box](Games/fiba-amc05-g31.result.json) |
 | 32 | 2005-09-01 | Mexico | United States | 71-66 | [box](Games/fiba-amc05-g32.result.json) |
 | 33 | 2005-09-02 | Panama | Puerto Rico | 78-72 | [box](Games/fiba-amc05-g33.result.json) |
-| 34 | 2005-09-02 | United States | Dominican Republic | 64-77 | [box](Games/fiba-amc05-g34.result.json) |
+| 34 | 2005-09-02 | Dominican Republic | United States | 64-77 | [box](Games/fiba-amc05-g34.result.json) |
 | 35 | 2005-09-02 | Brazil | Argentina | 88-78 | [box](Games/fiba-amc05-g35.result.json) |
 | 36 | 2005-09-02 | Canada | Mexico | 65-83 | [box](Games/fiba-amc05-g36.result.json) |
 
@@ -111,14 +111,14 @@ Status: **closed**.
 
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
-| 37 | 2005-09-03 | United States | Dominican Republic | 66-73 | [box](Games/fiba-amc05-g37.result.json) |
+| 37 | 2005-09-03 | Dominican Republic | United States | 66-73 | [box](Games/fiba-amc05-g37.result.json) |
 | 38 | 2005-09-03 | Brazil | Panama | 88-77 | [box](Games/fiba-amc05-g38.result.json) |
 
 ### Third-place game
 
 | Game | Date | Home | Away | Score | Result |
 | --- | --- | --- | --- | --- | --- |
-| 39 | 2005-09-04 | Panama | Dominican Republic | 82-68 | [box](Games/fiba-amc05-g39.result.json) |
+| 39 | 2005-09-04 | Dominican Republic | Panama | 82-68 | [box](Games/fiba-amc05-g39.result.json) |
 
 ### Final
 
@@ -156,8 +156,8 @@ Rule: Game Score per game x team finish (champion 1.0, runner-up 0.85, third 0.7
 | 6 | Puerto Rico | None |
 | 7 | Argentina | None |
 | 8 | Canada | None |
-| 9 | Uruguay | None |
-| 10 | Venezuela | None |
+| 9 | Venezuela | None |
+| 10 | Uruguay | None |
 
 ### Medals
 

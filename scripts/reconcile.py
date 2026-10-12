@@ -69,6 +69,17 @@ def run(script, *args):
     return out.returncode, (out.stdout + out.stderr).strip()
 
 
+def tournament_pages(root, write):
+    """FIBA tournament pages and their hub, rendered from each edition's record (`national_pages.stale_pages`)."""
+    from runtime.national_pages import stale_pages
+    stale = stale_pages(root)
+    if write:
+        for path, text in stale:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(text, encoding="utf-8")
+    return [path for path, _ in stale]
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--check", action="store_true")
@@ -86,6 +97,10 @@ def main():
     if moved:
         stale.append("league contract holders")
     print(f"league contract holders: {f'{len(moved)} stale' if moved else 'current'}")
+    pages = tournament_pages(ROOT, not args.check)
+    if pages:
+        stale.append("FIBA tournament pages")
+    print(f"FIBA tournament pages: {f'{len(pages)} stale' if pages else 'current'}")
     for label, mode in (("results into notes, statistics pages, Miami and league cards", "scripts/write_back_results.py"),
                         ("career views", "scripts/update_player_reports.py")):
         code, out = run(mode, "--check") if args.check else run(mode, *(("--write",) if "write_back" in mode else ()))

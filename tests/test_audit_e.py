@@ -110,6 +110,25 @@ class FibaAmericasTests(unittest.TestCase):
         self.assertEqual(national.final_ranking(e, rec, ROOT), rec["ranking"])
         self.assertEqual(rec["ranking"][:4], ["Brazil", "United States", "Dominican Republic", "Panama"])   # medals, places
 
+    def test_a_stale_tournament_page_is_refused_and_rebuilt_by_reconcile(self):
+        """The merge of 2006-06-20 left the old page in place: no rebuild rendered tournament pages, and validation passed.
+        Now a page that no longer reads as its record renders is a validation error and a reconcile step."""
+        import importlib.util
+        from runtime import national, national_pages
+        self.assertEqual(national_pages.stale_pages(ROOT), [])
+        readme = self.FOLDER / "README.md"
+        rendered = lambda e, rec, root=ROOT: "rendered by a changed renderer\n"
+        with mock.patch.object(national_pages, "page", rendered):
+            stale = [path for path, _ in national_pages.stale_pages(ROOT)]
+            self.assertIn(readme, stale)
+            self.assertIn(f"{readme.relative_to(ROOT)}: stale tournament page; run scripts/reconcile.py",
+                          national.national_errors(ROOT))
+            spec = importlib.util.spec_from_file_location("reconcile_script", ROOT / "scripts/reconcile.py")
+            script = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(script)
+            self.assertIn(readme, script.tournament_pages(ROOT, write=False))     # --check reports, writes nothing
+        self.assertEqual(national_pages.stale_pages(ROOT), [])
+
 
 class SeasonEvidenceTests(unittest.TestCase):
     """league-stats/LS-4: from 2005-06 the prior-season totals count every appearance; earlier files stand."""
